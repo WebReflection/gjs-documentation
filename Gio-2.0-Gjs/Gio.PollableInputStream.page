@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<page id="Gio.PollableInputStream"
+      type="guide"
+      style="interface"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="interface" type="guide"/>
+  </info>
+  <title>Gio.PollableInputStream</title>
+  <synopsis><code>
+const Gio = imports.gi.Gio;
+
+let pollable_input_stream = new Gio.PollableInputStream();
+  </code></synopsis>
+  <p><link xref="Gio.PollableInputStream"/> is implemented by #GInputStreams that
+can be polled for readiness to read. This can be used when
+interfacing with a non-GIO API that expects
+UNIX-file-descriptor-style asynchronous I/O rather than GIO-style.</p>
+  <p>Since 2.28</p>
+  <synopsis>
+    <title>Prerequisites</title>
+    <p>PollableInputStream requires Gio.InputStream</p>
+  </synopsis>
+  <synopsis>
+    <title>Known Implementations</title>
+    <p>%s is implemented by ConverterInputStream,MemoryInputStream and UnixInputStream</p>
+  </synopsis>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="property" style="linklist">
+    <title>Properties</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="signal" style="linklist">
+    <title>Signals</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="vfunc" style="linklist">
+    <title>Virtual functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

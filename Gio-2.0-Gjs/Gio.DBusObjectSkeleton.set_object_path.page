@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusObjectSkeleton.set_object_path"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusObjectSkeleton" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_dbus_object_skeleton_set_object_path</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>object_path</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DBusObjectSkeleton.prototype.set_object_path</title>
+  <synopsis><code mime="text/x-gjs">
+function set_object_path(object_path: String): void {
+    // Gjs wrapper for g_dbus_object_skeleton_set_object_path()
+}
+  </code></synopsis>
+  <p>Sets the object path for <code>object</code>.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>object_path</code></title>
+  <p>A valid D-Bus object path.</p>
+</item>
+</terms>
+
+</page>

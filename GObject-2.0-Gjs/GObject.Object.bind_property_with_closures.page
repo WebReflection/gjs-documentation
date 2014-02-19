@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<page id="GObject.Object.bind_property_with_closures"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.Object" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GObject.Binding</api:type>
+      </api:returns>
+      <api:name>g_object_bind_property_with_closures</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>source_property</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Object</api:type>
+        <api:name>target</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>target_property</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.BindingFlags</api:type>
+        <api:name>flags</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Closure</api:type>
+        <api:name>transform_to</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Closure</api:type>
+        <api:name>transform_from</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.Object.prototype.bind_property_with_closures</title>
+  <synopsis><code mime="text/x-gjs">
+function bind_property_with_closures(source_property: String, target: GObject.Object, target_property: String, flags: GObject.BindingFlags, transform_to: GObject.Closure, transform_from: GObject.Closure): GObject.Binding {
+    // Gjs wrapper for g_object_bind_property_with_closures()
+}
+  </code></synopsis>
+  <p>Creates a binding between <code>source_property</code> on <code>source</code> and <code>target_property</code>
+on <code>target</code>, allowing you to set the transformation functions to be used by
+the binding.</p>  <p>This function is the language bindings friendly version of
+<link xref="GObject.Object.bind_property_full"/>, using #GClosures instead of
+function pointers.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>source_property</code></title>
+  <p>the property on <code>source</code> to bind</p>
+</item>
+<item>
+<title><code>target</code></title>
+  <p>the target <link xref="GObject.Object"/></p>
+</item>
+<item>
+<title><code>target_property</code></title>
+  <p>the property on <code>target</code> to bind</p>
+</item>
+<item>
+<title><code>flags</code></title>
+  <p>flags to pass to <link xref="GObject.Binding"/></p>
+</item>
+<item>
+<title><code>transform_to</code></title>
+  <p>a <link xref="GObject.Closure"/> wrapping the transformation function
+    from the <code>source</code> to the <code>target</code>, or <code>null</code> to use the default</p>
+</item>
+<item>
+<title><code>transform_from</code></title>
+  <p>a <link xref="GObject.Closure"/> wrapping the transformation function
+    from the <code>target</code> to the <code>source</code>, or <code>null</code> to use the default</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

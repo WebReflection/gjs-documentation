@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Gio.AppInfo.equal"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.AppInfo" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_app_info_equal</api:name>
+      <api:arg>
+        <api:type>Gio.AppInfo</api:type>
+        <api:name>appinfo2</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.AppInfo.prototype.equal</title>
+  <synopsis><code mime="text/x-gjs">
+function equal(appinfo2: Gio.AppInfo): Boolean {
+    // Gjs wrapper for g_app_info_equal()
+}
+  </code></synopsis>
+  <p>Checks if two #GAppInfos are equal.</p>
+
+<terms>
+<item>
+<title><code>appinfo2</code></title>
+  <p>the second <link xref="Gio.AppInfo"/>.</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.Task.had_error"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Task" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_task_had_error</api:name>
+    </api:function>
+  </info>
+  <title>Gio.Task.prototype.had_error</title>
+  <synopsis><code mime="text/x-gjs">
+function had_error(): Boolean {
+    // Gjs wrapper for g_task_had_error()
+}
+  </code></synopsis>
+  <p>Tests if <code>task</code> resulted in an error.</p>
+  <p>Since 2.36</p>
+<terms>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

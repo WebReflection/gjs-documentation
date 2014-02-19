@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="GLib.MainContext.prepare"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.MainContext" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_main_context_prepare</api:name>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>priority</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.MainContext.prototype.prepare</title>
+  <synopsis><code mime="text/x-gjs">
+function prepare(priority: Number): Boolean {
+    // Gjs wrapper for g_main_context_prepare()
+}
+  </code></synopsis>
+  <p>Prepares to poll sources within a main loop. The resulting information
+for polling is determined by calling g_main_context_query ().</p>
+
+<terms>
+<item>
+<title><code>priority</code></title>
+  <p>location to store priority of highest priority
+           source already ready.</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

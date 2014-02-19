@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusProxyTypeFunc"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Gio.DBusProxyTypeFunc</title>
+  <synopsis><code mime="text/x-gjs">
+function onDBusProxyTypeFunc(manager: Gio.DBusObjectManagerClient, object_path: String, interface_name: String): GType {
+}
+  </code></synopsis>
+  <p>Function signature for a function used to determine the <link xref="GLib.Type"/> to
+use for an interface proxy (if <code>interface_name</code> is not <code>null</code>) or
+object proxy (if <code>interface_name</code> is <code>null</code>).</p>  <p>This function is called in the
+&lt;link linkend="g-main-context-push-thread-default"&gt;thread-default main loop&lt;/link&gt;
+that <code>manager</code> was constructed in.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>manager</code></title>
+  <p>A <link xref="Gio.DBusObjectManagerClient"/>.</p>
+</item>
+<item>
+<title><code>object_path</code></title>
+  <p>The object path of the remote object.</p>
+</item>
+<item>
+<title><code>interface_name</code></title>
+  <p>The interface name of the remote object or <code>null</code> if a <link xref="Gio.DBusObjectProxy"/> <link xref="GLib.Type"/> is requested.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

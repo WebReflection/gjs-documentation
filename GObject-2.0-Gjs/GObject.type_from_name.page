@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<page id="GObject.type_from_name"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GType</api:type>
+      </api:returns>
+      <api:name>g_type_from_name</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.type_from_name</title>
+  <synopsis><code mime="text/x-gjs">
+function type_from_name(name: String): GType {
+    // Gjs wrapper for g_type_from_name()
+}
+  </code></synopsis>
+  <p>Lookup the type ID from a given type name, returning 0 if no type
+has been registered under this name (this is the preferred method
+to find out by name whether a specific type has been registered
+yet).</p>
+
+<terms>
+<item>
+<title><code>name</code></title>
+  <p>type name to lookup</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

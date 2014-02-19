@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gio.SocketConnection.get_remote_address"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.SocketConnection" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.SocketAddress</api:type>
+      </api:returns>
+      <api:name>g_socket_connection_get_remote_address</api:name>
+    </api:function>
+  </info>
+  <title>Gio.SocketConnection.prototype.get_remote_address</title>
+  <synopsis><code mime="text/x-gjs">
+function get_remote_address(): Gio.SocketAddress {
+    // Gjs wrapper for g_socket_connection_get_remote_address()
+}
+  </code></synopsis>
+  <p>Try to get the remote address of a socket connection.</p>  <p>Since GLib 2.40, when used with <link xref="Gio.SocketClient.connect"/> or
+<link xref="Gio.SocketClient.connect_async"/>, during emission of
+<link xref="Gio.SocketClientEvent"/>.connecting, this function will return the remote
+address that will be used for the connection.  This allows
+applications to print e.g. "Connecting to example.com
+(10.42.77.3)...".</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

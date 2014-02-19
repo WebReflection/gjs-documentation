@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="GLib.Scanner-position"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Scanner" group="field" type="guide"/>
+    <title type="link" role="topic">position</title>
+  </info>
+  <title>GLib.Scanner.position</title>
+  <synopsis><code mime="text/x-gjs">
+Scanner.position: Number (Read / Write)
+  </code></synopsis>
+  <p>char number of the last token from <link xref="GLib.get_next_token"/></p>
+
+</page>

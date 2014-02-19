@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.SocketClient-tls-validation-flags"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.SocketClient" group="property" type="guide"/>
+    <title type="link" role="topic">tls-validation-flags</title>
+  </info>
+  <title>Gio.SocketClient.tls_validation_flags</title>
+  <synopsis><code mime="text/x-gjs">
+SocketClient.tls_validation_flags: Gio.TlsCertificateFlags (Read / Write / Construct)
+  </code></synopsis>
+
+
+</page>

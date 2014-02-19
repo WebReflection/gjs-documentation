@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page id="GLib.GNUC_PRETTY_FUNCTION"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>GLib.GNUC_PRETTY_FUNCTION</title>
+  <p>Expands to "" on all modern compilers, and to __PRETTY_FUNCTION__
+on gcc version 2.x. Don't use it.</p>
+
+</page>

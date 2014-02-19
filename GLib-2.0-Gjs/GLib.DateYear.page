@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="GLib.DateYear"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>GLib.DateYear</title>
+  <p>Integer representing a year; #G_DATE_BAD_YEAR is the invalid
+value. The year must be 1 or higher; negative (BC) years are not
+allowed. The year is represented with four digits.</p>
+
+</page>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusMessage.get_flags"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusMessage" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.DBusMessageFlags</api:type>
+      </api:returns>
+      <api:name>g_dbus_message_get_flags</api:name>
+    </api:function>
+  </info>
+  <title>Gio.DBusMessage.prototype.get_flags</title>
+  <synopsis><code mime="text/x-gjs">
+function get_flags(): Gio.DBusMessageFlags {
+    // Gjs wrapper for g_dbus_message_get_flags()
+}
+  </code></synopsis>
+  <p>Gets the flags for <code>message</code>.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

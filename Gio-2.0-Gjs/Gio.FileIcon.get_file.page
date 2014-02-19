@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.FileIcon.get_file"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.FileIcon" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.File</api:type>
+      </api:returns>
+      <api:name>g_file_icon_get_file</api:name>
+    </api:function>
+  </info>
+  <title>Gio.FileIcon.prototype.get_file</title>
+  <synopsis><code mime="text/x-gjs">
+function get_file(): Gio.File {
+    // Gjs wrapper for g_file_icon_get_file()
+}
+  </code></synopsis>
+  <p>Gets the <link xref="Gio.File"/> associated with the given <code>icon</code>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

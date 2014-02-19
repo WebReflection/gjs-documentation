@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<page id="GLib.MarkupParseContext.parse"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.MarkupParseContext" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_markup_parse_context_parse</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>text</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gssize</api:type>
+        <api:name>text_len</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.MarkupParseContext.prototype.parse</title>
+  <synopsis><code mime="text/x-gjs">
+function parse(text: String, text_len: gssize): Boolean {
+    // Gjs wrapper for g_markup_parse_context_parse()
+}
+  </code></synopsis>
+  <p>Feed some data to the <link xref="GLib.MarkupParseContext"/>.</p>  <p>The data need not be valid UTF-8; an error will be signaled if
+it's invalid. The data need not be an entire document; you can
+feed a document into the parser incrementally, via multiple calls
+to this function. Typically, as you receive data from a network
+connection or file, you feed each received chunk of data into this
+function, aborting the process if an error occurs. Once an error
+is reported, no further data may be fed to the <link xref="GLib.MarkupParseContext"/>;
+all errors are fatal.</p>
+
+<terms>
+<item>
+<title><code>text</code></title>
+  <p>chunk of text to parse</p>
+</item>
+<item>
+<title><code>text_len</code></title>
+  <p>length of <code>text</code> in bytes</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

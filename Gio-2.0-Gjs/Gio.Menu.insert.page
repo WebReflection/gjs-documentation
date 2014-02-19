@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<page id="Gio.Menu.insert"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Menu" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_menu_insert</api:name>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>position</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>label</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>detailed_action</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.Menu.prototype.insert</title>
+  <synopsis><code mime="text/x-gjs">
+function insert(position: Number, label: String, detailed_action: String): void {
+    // Gjs wrapper for g_menu_insert()
+}
+  </code></synopsis>
+  <p>Convenience function for inserting a normal menu item into <code>menu</code>.
+Combine <link xref="Gio.new"/> and <link xref="Gio.insert_item"/> for a more flexible
+alternative.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>position</code></title>
+  <p>the position at which to insert the item</p>
+</item>
+<item>
+<title><code>label</code></title>
+  <p>the section label, or <code>null</code></p>
+</item>
+<item>
+<title><code>detailed_action</code></title>
+  <p>the detailed action string, or <code>null</code></p>
+</item>
+</terms>
+
+</page>

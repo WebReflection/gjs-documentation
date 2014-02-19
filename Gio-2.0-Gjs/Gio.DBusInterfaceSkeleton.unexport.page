@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusInterfaceSkeleton.unexport"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusInterfaceSkeleton" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_dbus_interface_skeleton_unexport</api:name>
+    </api:function>
+  </info>
+  <title>Gio.DBusInterfaceSkeleton.prototype.unexport</title>
+  <synopsis><code mime="text/x-gjs">
+function unexport(): void {
+    // Gjs wrapper for g_dbus_interface_skeleton_unexport()
+}
+  </code></synopsis>
+  <p>Stops exporting <code>interface_</code> on all connections it is exported on.</p>  <p>To unexport <code>interface_</code> from only a single connection, use
+<link xref="Gio.unexport_from_connection"/></p>
+  <p>Since 2.30</p>
+
+</page>

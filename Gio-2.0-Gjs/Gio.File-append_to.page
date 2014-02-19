@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="Gio.File-append_to"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.File" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.File::append_to</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_append_to(flags: Gio.FileCreateFlags, cancellable: Gio.Cancellable): Gio.FileOutputStream {
+}
+  </code></synopsis>
+  <p>Gets an output stream for appending data to the file.
+If the file doesn't already exist it is created.</p>  <p>By default files created are generally readable by everyone,
+but if you pass #G_FILE_CREATE_PRIVATE in <code>flags</code> the file
+will be made readable only to the current user, to the level that
+is supported on the target filesystem.</p>  <p>If <code>cancellable</code> is not <code>null</code>, then the operation can be cancelled
+by triggering the cancellable object from another thread. If the
+operation was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be
+returned.</p>  <p>Some file systems don't allow all file names, and may return an
+<link xref="Gio.IOErrorEnum"/>.invalid_filename error. If the file is a directory the
+<link xref="Gio.IOErrorEnum"/>.is_directory error will be returned. Other errors are
+possible too, and depend on what kind of filesystem the file is on.</p>
+
+<terms>
+<item>
+<title><code>flags</code></title>
+  <p>a set of <link xref="Gio.FileCreateFlags"/></p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional <link xref="Gio.Cancellable"/> object,
+    <code>null</code> to ignore</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link xref="Gio.FileOutputStream"/>, or <code>null</code> on error.
+    Free the returned object with <link xref="GObject.unref"/>.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<page id="GLib.TraverseType"
+      type="topic"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>GLib.TraverseType</title>
+  <p>Specifies the type of traveral performed by <link xref="GLib.traverse"/>,
+<link xref="GLib.traverse"/> and <link xref="GLib.find"/>. The different orders are
+illustrated here:
+- In order: A, B, C, D, E, F, G, H, I
+  ![](Sorted_binary_tree_inorder.svg)
+- Pre order: F, B, A, D, C, E, G, I, H
+  ![](Sorted_binary_tree_preorder.svg)
+- Post order: A, C, E, D, B, H, I, G, F
+  ![](Sorted_binary_tree_postorder.svg)
+- Level order: F, B, G, A, D, I, C, E, H
+  ![](Sorted_binary_tree_breadth-first_traversal.svg)</p>
+
+<terms>
+<item>
+<title><code>TraverseType.IN_ORDER</code></title>
+  <p>vists a node's left child first, then the node itself,
+             then its right child. This is the one to use if you
+             want the output sorted according to the compare
+             function.</p>
+</item>
+<item>
+<title><code>TraverseType.PRE_ORDER</code></title>
+  <p>visits a node, then its children.</p>
+</item>
+<item>
+<title><code>TraverseType.POST_ORDER</code></title>
+  <p>visits the node's children, then the node itself.</p>
+</item>
+<item>
+<title><code>TraverseType.LEVEL_ORDER</code></title>
+  <p>is not implemented for
+             [balanced binary trees][glib-Balanced-Binary-Trees].
+             For [n-ary trees][glib-N-ary-Trees], it
+             vists the root node first, then its children, then
+             its grandchildren, and so on. Note that this is less
+             efficient than the other orders.</p>
+</item>
+</terms>
+
+</page>

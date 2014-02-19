@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gio.Application.get_is_remote"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Application" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_application_get_is_remote</api:name>
+    </api:function>
+  </info>
+  <title>Gio.Application.prototype.get_is_remote</title>
+  <synopsis><code mime="text/x-gjs">
+function get_is_remote(): Boolean {
+    // Gjs wrapper for g_application_get_is_remote()
+}
+  </code></synopsis>
+  <p>Checks if <code>application</code> is remote.</p>  <p>If <code>application</code> is remote then it means that another instance of
+application already exists (the 'primary' instance).  Calls to
+perform actions on <code>application</code> will result in the actions being
+performed by the primary instance.</p>  <p>The value of this property cannot be accessed before
+<link xref="Gio.register"/> has been called.  See
+<link xref="Gio.Application.get_is_registered"/>.</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

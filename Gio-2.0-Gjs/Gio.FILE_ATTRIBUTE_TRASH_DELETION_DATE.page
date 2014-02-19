@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Gio.FILE_ATTRIBUTE_TRASH_DELETION_DATE"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>Gio.FILE_ATTRIBUTE_TRASH_DELETION_DATE</title>
+  <p>A key in the "trash" namespace.  When requested against
+items in "trash:///", will return the date and time when the file
+was trashed. The format of the returned string is YYYY-MM-DDThh:mm:ss.
+Corresponding <link xref="Gio.FileAttributeType"/> is <link xref="Gio.FileAttributeType"/>.string.</p>
+  <p>Since 2.24.</p>
+</page>

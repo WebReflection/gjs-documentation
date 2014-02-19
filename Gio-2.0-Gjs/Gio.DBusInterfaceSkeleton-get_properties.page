@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusInterfaceSkeleton-get_properties"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusInterfaceSkeleton" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.DBusInterfaceSkeleton::get_properties</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_get_properties(): GLib.Variant {
+}
+  </code></synopsis>
+  <p>Gets all D-Bus properties for <code>interface_</code>.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>A <link xref="GLib.Variant"/> of type
+['a{sv}'][G-VARIANT-TYPE-VARDICT:CAPS].
+Free with <link xref="GLib.unref"/>.</p>
+</item>
+</terms>
+
+</page>

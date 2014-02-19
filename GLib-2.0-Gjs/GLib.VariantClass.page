@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<page id="GLib.VariantClass"
+      type="topic"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>GLib.VariantClass</title>
+  <p>The range of possible top-level types of <link xref="GLib.Variant"/> instances.</p>
+  <p>Since 2.24</p>
+<terms>
+<item>
+<title><code>VariantClass.BOOLEAN</code></title>
+  <p>The <link xref="GLib.Variant"/> is a boolean.</p>
+</item>
+<item>
+<title><code>VariantClass.BYTE</code></title>
+  <p>The <link xref="GLib.Variant"/> is a byte.</p>
+</item>
+<item>
+<title><code>VariantClass.INT16</code></title>
+  <p>The <link xref="GLib.Variant"/> is a signed 16 bit integer.</p>
+</item>
+<item>
+<title><code>VariantClass.UINT16</code></title>
+  <p>The <link xref="GLib.Variant"/> is an unsigned 16 bit integer.</p>
+</item>
+<item>
+<title><code>VariantClass.INT32</code></title>
+  <p>The <link xref="GLib.Variant"/> is a signed 32 bit integer.</p>
+</item>
+<item>
+<title><code>VariantClass.UINT32</code></title>
+  <p>The <link xref="GLib.Variant"/> is an unsigned 32 bit integer.</p>
+</item>
+<item>
+<title><code>VariantClass.INT64</code></title>
+  <p>The <link xref="GLib.Variant"/> is a signed 64 bit integer.</p>
+</item>
+<item>
+<title><code>VariantClass.UINT64</code></title>
+  <p>The <link xref="GLib.Variant"/> is an unsigned 64 bit integer.</p>
+</item>
+<item>
+<title><code>VariantClass.HANDLE</code></title>
+  <p>The <link xref="GLib.Variant"/> is a file handle index.</p>
+</item>
+<item>
+<title><code>VariantClass.DOUBLE</code></title>
+  <p>The <link xref="GLib.Variant"/> is a double precision floating
+                         point value.</p>
+</item>
+<item>
+<title><code>VariantClass.STRING</code></title>
+  <p>The <link xref="GLib.Variant"/> is a normal string.</p>
+</item>
+<item>
+<title><code>VariantClass.OBJECT_PATH</code></title>
+  <p>The <link xref="GLib.Variant"/> is a D-Bus object path
+                              string.</p>
+</item>
+<item>
+<title><code>VariantClass.SIGNATURE</code></title>
+  <p>The <link xref="GLib.Variant"/> is a D-Bus signature string.</p>
+</item>
+<item>
+<title><code>VariantClass.VARIANT</code></title>
+  <p>The <link xref="GLib.Variant"/> is a variant.</p>
+</item>
+<item>
+<title><code>VariantClass.MAYBE</code></title>
+  <p>The <link xref="GLib.Variant"/> is a maybe-typed value.</p>
+</item>
+<item>
+<title><code>VariantClass.ARRAY</code></title>
+  <p>The <link xref="GLib.Variant"/> is an array.</p>
+</item>
+<item>
+<title><code>VariantClass.TUPLE</code></title>
+  <p>The <link xref="GLib.Variant"/> is a tuple.</p>
+</item>
+<item>
+<title><code>VariantClass.DICT_ENTRY</code></title>
+  <p>The <link xref="GLib.Variant"/> is a dictionary entry.</p>
+</item>
+</terms>
+
+</page>

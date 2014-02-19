@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.AppInfo.dup"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.AppInfo" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.AppInfo</api:type>
+      </api:returns>
+      <api:name>g_app_info_dup</api:name>
+    </api:function>
+  </info>
+  <title>Gio.AppInfo.prototype.dup</title>
+  <synopsis><code mime="text/x-gjs">
+function dup(): Gio.AppInfo {
+    // Gjs wrapper for g_app_info_dup()
+}
+  </code></synopsis>
+  <p>Creates a duplicate of a <link xref="Gio.AppInfo"/>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

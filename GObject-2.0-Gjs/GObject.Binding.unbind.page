@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<page id="GObject.Binding.unbind"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.Binding" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_binding_unbind</api:name>
+    </api:function>
+  </info>
+  <title>GObject.Binding.prototype.unbind</title>
+  <synopsis><code mime="text/x-gjs">
+function unbind(): void {
+    // Gjs wrapper for g_binding_unbind()
+}
+  </code></synopsis>
+  <p>Explicitly releases the binding between the source and the target
+property expressed by <code>binding</code>.</p>  <p>This function will release the reference that is being held on
+the <code>binding</code> instance; if you want to hold on to the <link xref="GObject.Binding"/> instance
+after calling <link xref="GObject.Binding.unbind"/>, you will need to hold a reference
+to it.</p>
+  <p>Since 2.38</p>
+
+</page>

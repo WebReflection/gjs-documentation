@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<page id="GLib.ascii_formatd"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_ascii_formatd</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>buffer</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>buf_len</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>format</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>d</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.ascii_formatd</title>
+  <synopsis><code mime="text/x-gjs">
+function ascii_formatd(buffer: String, buf_len: Number, format: String, d: Number): String {
+    // Gjs wrapper for g_ascii_formatd()
+}
+  </code></synopsis>
+  <p>Converts a #gdouble to a string, using the '.' as
+decimal point. To format the number you pass in
+a printf()-style format string. Allowed conversion
+specifiers are 'e', 'E', 'f', 'F', 'g' and 'G'.</p>  <p>If you just want to want to serialize the value into a
+string, use <link xref="GLib.ascii_dtostr"/>.</p>
+
+<terms>
+<item>
+<title><code>buffer</code></title>
+  <p>A buffer to place the resulting string in</p>
+</item>
+<item>
+<title><code>buf_len</code></title>
+  <p>The length of the buffer.</p>
+</item>
+<item>
+<title><code>format</code></title>
+  <p>The printf()-style format to use for the
+         code to use for converting.</p>
+</item>
+<item>
+<title><code>d</code></title>
+  <p>The #gdouble to convert</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

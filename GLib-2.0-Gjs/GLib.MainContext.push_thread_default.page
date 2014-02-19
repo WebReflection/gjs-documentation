@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<page id="GLib.MainContext.push_thread_default"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.MainContext" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_main_context_push_thread_default</api:name>
+    </api:function>
+  </info>
+  <title>GLib.MainContext.prototype.push_thread_default</title>
+  <synopsis><code mime="text/x-gjs">
+function push_thread_default(): void {
+    // Gjs wrapper for g_main_context_push_thread_default()
+}
+  </code></synopsis>
+  <p>Acquires <code>context</code> and sets it as the thread-default context for the
+current thread. This will cause certain asynchronous operations
+(such as most [gio][gio]-based I/O) which are
+started in this thread to run under <code>context</code> and deliver their
+results to its main loop, rather than running under the global
+default context in the main thread. Note that calling this function
+changes the context returned by <link xref="GLib.main_context_get_thread_default"/>,
+not the one returned by <link xref="GLib.main_context_default"/>, so it does not affect
+the context used by functions like <link xref="GLib.idle_add"/>.</p>  <p>Normally you would call this function shortly after creating a new
+thread, passing it a <link xref="GLib.MainContext"/> which will be run by a
+<link xref="GLib.MainLoop"/> in that thread, to set a new default context for all
+async operations in that thread. (In this case, you don't need to
+ever call <link xref="GLib.MainContext.pop_thread_default"/>.) In some cases
+however, you may want to schedule a single operation in a
+non-default context, or temporarily use a non-default context in
+the main thread. In that case, you can wrap the call to the
+asynchronous operation inside a
+<link xref="GLib.MainContext.push_thread_default"/> /
+<link xref="GLib.MainContext.pop_thread_default"/> pair, but it is up to you to
+ensure that no other asynchronous operations accidentally get
+started while the non-default context is active.</p>  <p>Beware that libraries that predate this function may not correctly
+handle being used from a thread with a thread-default context. Eg,
+see g_file_supports_thread_contexts().</p>
+  <p>Since 2.22</p>
+
+</page>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.DataInputStream-newline-type"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DataInputStream" group="property" type="guide"/>
+    <title type="link" role="topic">newline-type</title>
+  </info>
+  <title>Gio.DataInputStream.newline_type</title>
+  <synopsis><code mime="text/x-gjs">
+DataInputStream.newline_type: Gio.DataStreamNewlineType (Read / Write)
+  </code></synopsis>
+
+
+</page>

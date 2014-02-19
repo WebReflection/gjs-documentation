@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Gio.AppInfo-get_id"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.AppInfo" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.AppInfo::get_id</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_get_id(): String {
+}
+  </code></synopsis>
+  <p>Gets the ID of an application. An id is a string that
+identifies the application. The exact format of the id is
+platform dependent. For instance, on Unix this is the
+desktop file id from the xdg menu specification.</p>  <p>Note that the returned ID may be <code>null</code>, depending on how
+the <code>appinfo</code> has been constructed.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a string containing the application's ID.</p>
+</item>
+</terms>
+
+</page>

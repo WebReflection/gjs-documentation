@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusInterfaceSkeleton.set_flags"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusInterfaceSkeleton" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_dbus_interface_skeleton_set_flags</api:name>
+      <api:arg>
+        <api:type>Gio.DBusInterfaceSkeletonFlags</api:type>
+        <api:name>flags</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DBusInterfaceSkeleton.prototype.set_flags</title>
+  <synopsis><code mime="text/x-gjs">
+function set_flags(flags: Gio.DBusInterfaceSkeletonFlags): void {
+    // Gjs wrapper for g_dbus_interface_skeleton_set_flags()
+}
+  </code></synopsis>
+  <p>Sets flags describing what the behavior of @skeleton should be.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>flags</code></title>
+  <p>Flags from the <link xref="Gio.DBusInterfaceSkeletonFlags"/> enumeration.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusObjectManager.get_objects"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusObjectManager" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(Gio.DBusObject)</api:type>
+      </api:returns>
+      <api:name>g_dbus_object_manager_get_objects</api:name>
+    </api:function>
+  </info>
+  <title>Gio.DBusObjectManager.prototype.get_objects</title>
+  <synopsis><code mime="text/x-gjs">
+function get_objects(): Array(Gio.DBusObject) {
+    // Gjs wrapper for g_dbus_object_manager_get_objects()
+}
+  </code></synopsis>
+  <p>Gets all <link xref="Gio.DBusObject"/> objects known to <code>manager</code>.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="GLib.KeyFile.remove_group"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.KeyFile" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_key_file_remove_group</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>group_name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.KeyFile.prototype.remove_group</title>
+  <synopsis><code mime="text/x-gjs">
+function remove_group(group_name: String): Boolean {
+    // Gjs wrapper for g_key_file_remove_group()
+}
+  </code></synopsis>
+  <p>Removes the specified group, <code>group_name</code>,
+from the key file.</p>
+  <p>Since 2.6</p>
+<terms>
+<item>
+<title><code>group_name</code></title>
+  <p>a group name</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="Gio.dbus_gvariant_to_gvalue"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_dbus_gvariant_to_gvalue</api:name>
+      <api:arg>
+        <api:type>GLib.Variant</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.dbus_gvariant_to_gvalue</title>
+  <synopsis><code mime="text/x-gjs">
+function dbus_gvariant_to_gvalue(value: GLib.Variant): GObject.Value {
+    // Gjs wrapper for g_dbus_gvariant_to_gvalue()
+}
+  </code></synopsis>
+  <p>Converts a <link xref="GLib.Variant"/> to a <link xref="GObject.Value"/>. If <code>value</code> is floating, it is consumed.</p>  <p>The rules specified in the <link xref="Gio.dbus_gvalue_to_gvariant"/> function are
+used - this function is essentially its reverse form.</p>  <p>The conversion never fails - a valid <link xref="GObject.Value"/> is always returned in
+<code>out_gvalue</code>.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>value</code></title>
+  <p>A <link xref="GLib.Variant"/>.</p>
+</item>
+<item>
+<title><code>out_gvalue</code></title>
+  <p>Return location pointing to a zero-filled (uninitialized) <link xref="GObject.Value"/>.</p>
+</item>
+</terms>
+
+</page>

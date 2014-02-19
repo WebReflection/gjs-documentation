@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Gio.IOStream-close_finish"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.IOStream" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.IOStream::close_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_close_finish(result: Gio.AsyncResult): Boolean {
+}
+  </code></synopsis>
+  <p>Closes a stream.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>a <link xref="Gio.AsyncResult"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if stream was successfully closed, <code>false</code> otherwise.</p>
+</item>
+</terms>
+
+</page>

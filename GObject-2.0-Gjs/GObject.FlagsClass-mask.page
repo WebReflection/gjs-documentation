@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="GObject.FlagsClass-mask"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.FlagsClass" group="field" type="guide"/>
+    <title type="link" role="topic">mask</title>
+  </info>
+  <title>GObject.FlagsClass.mask</title>
+  <synopsis><code mime="text/x-gjs">
+FlagsClass.mask: Number (Read / Write)
+  </code></synopsis>
+  <p>a mask covering all possible values.</p>
+
+</page>

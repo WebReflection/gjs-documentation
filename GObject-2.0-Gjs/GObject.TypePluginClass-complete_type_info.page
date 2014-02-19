@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<page id="GObject.TypePluginClass-complete_type_info"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.TypePluginClass" group="field" type="guide"/>
+    <title type="link" role="topic">complete_type_info</title>
+  </info>
+  <title>GObject.TypePluginClass.complete_type_info</title>
+  <synopsis><code mime="text/x-gjs">
+TypePluginClass.complete_type_info: GObject.TypePluginCompleteTypeInfo (Read)
+  </code></synopsis>
+  <p>Fills in the <link xref="GObject.TypeInfo"/> and
+ <link xref="GObject.TypeValueTable"/> structs for the type. The structs are initialized
+ with &lt;literal&gt;memset(s, 0, sizeof (s))&lt;/literal&gt; before calling
+ this function.</p>
+
+</page>

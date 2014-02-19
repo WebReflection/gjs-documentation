@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="Gio.io_scheduler_cancel_all_jobs"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_io_scheduler_cancel_all_jobs</api:name>
+    </api:function>
+  </info>
+  <title>Gio.io_scheduler_cancel_all_jobs</title>
+  <synopsis><code mime="text/x-gjs">
+function io_scheduler_cancel_all_jobs(): void {
+    // Gjs wrapper for g_io_scheduler_cancel_all_jobs()
+}
+  </code></synopsis>
+  <p>Cancels all cancellable I/O jobs.</p>  <p>A job is cancellable if a <link xref="Gio.Cancellable"/> was passed into
+<link xref="Gio.io_scheduler_push_job"/>.</p>
+
+
+</page>

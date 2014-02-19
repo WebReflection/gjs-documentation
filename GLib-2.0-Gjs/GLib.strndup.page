@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<page id="GLib.strndup"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_strndup</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>str</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gsize</api:type>
+        <api:name>n</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.strndup</title>
+  <synopsis><code mime="text/x-gjs">
+function strndup(str: String, n: gsize): String {
+    // Gjs wrapper for g_strndup()
+}
+  </code></synopsis>
+  <p>Duplicates the first <code>n</code> bytes of a string, returning a newly-allocated
+buffer <code>n</code> + 1 bytes long which will always be nul-terminated. If <code>str</code>
+is less than <code>n</code> bytes long the buffer is padded with nuls. If <code>str</code> is
+<code>null</code> it returns <code>null</code>. The returned value should be freed when no longer
+needed.</p>  <p>To copy a number of characters from a UTF-8 encoded string,
+use <link xref="GLib.utf8_strncpy"/> instead.</p>
+
+<terms>
+<item>
+<title><code>str</code></title>
+  <p>the string to duplicate</p>
+</item>
+<item>
+<title><code>n</code></title>
+  <p>the maximum number of bytes to copy from <code>str</code></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

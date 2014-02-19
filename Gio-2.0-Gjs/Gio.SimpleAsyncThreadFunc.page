@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="Gio.SimpleAsyncThreadFunc"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Gio.SimpleAsyncThreadFunc</title>
+  <synopsis><code mime="text/x-gjs">
+function onSimpleAsyncThreadFunc(res: Gio.SimpleAsyncResult, object: GObject.Object, cancellable: Gio.Cancellable): void {
+}
+  </code></synopsis>
+  <p>Simple thread function that runs an asynchronous operation and
+checks for cancellation.</p>
+
+<terms>
+<item>
+<title><code>res</code></title>
+  <p>a <link xref="Gio.SimpleAsyncResult"/>.</p>
+</item>
+<item>
+<title><code>object</code></title>
+  <p>a <link xref="GObject.Object"/>.</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional <link xref="Gio.Cancellable"/> object, <code>null</code> to ignore.</p>
+</item>
+</terms>
+
+</page>

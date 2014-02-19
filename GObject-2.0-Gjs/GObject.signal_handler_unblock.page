@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<page id="GObject.signal_handler_unblock"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_signal_handler_unblock</api:name>
+      <api:arg>
+        <api:type>GObject.Object</api:type>
+        <api:name>instance</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>handler_id</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.signal_handler_unblock</title>
+  <synopsis><code mime="text/x-gjs">
+function signal_handler_unblock(instance: GObject.Object, handler_id: Number): void {
+    // Gjs wrapper for g_signal_handler_unblock()
+}
+  </code></synopsis>
+  <p>Undoes the effect of a previous <link xref="GObject.signal_handler_block"/> call.  A
+blocked handler is skipped during signal emissions and will not be
+invoked, unblocking it (for exactly the amount of times it has been
+blocked before) reverts its "blocked" state, so the handler will be
+recognized by the signal system and is called upon future or
+currently ongoing signal emissions (since the order in which
+handlers are called during signal emissions is deterministic,
+whether the unblocked handler in question is called as part of a
+currently ongoing emission depends on how far that emission has
+proceeded yet).</p>  <p>The <code>handler_id</code> has to be a valid id of a signal handler that is
+connected to a signal of <code>instance</code> and is currently blocked.</p>
+
+<terms>
+<item>
+<title><code>instance</code></title>
+  <p>The instance to unblock the signal handler of.</p>
+</item>
+<item>
+<title><code>handler_id</code></title>
+  <p>Handler id of the handler to be unblocked.</p>
+</item>
+</terms>
+
+</page>

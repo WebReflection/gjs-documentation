@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Gio.File.is_native"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.File" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_file_is_native</api:name>
+    </api:function>
+  </info>
+  <title>Gio.File.prototype.is_native</title>
+  <synopsis><code mime="text/x-gjs">
+function is_native(): Boolean {
+    // Gjs wrapper for g_file_is_native()
+}
+  </code></synopsis>
+  <p>Checks to see if a file is native to the platform.</p>  <p>A native file s one expressed in the platform-native filename format,
+e.g. "C:\Windows" or "/usr/bin/". This does not mean the file is local,
+as it might be on a locally mounted remote filesystem.</p>  <p>On some systems non-native files may be available using the native
+filesystem via a userspace filesystem (FUSE), in these cases this call
+will return <code>false</code>, but <link xref="Gio.File.get_path"/> will still return a native path.</p>  <p>This call does no blocking I/O.</p>
+
+<terms>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

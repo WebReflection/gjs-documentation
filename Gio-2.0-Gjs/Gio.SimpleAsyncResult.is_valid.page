@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<page id="Gio.SimpleAsyncResult.is_valid"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.SimpleAsyncResult" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_simple_async_result_is_valid</api:name>
+      <api:arg>
+        <api:type>Gio.AsyncResult</api:type>
+        <api:name>result</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Object</api:type>
+        <api:name>source</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>source_tag</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.SimpleAsyncResult.is_valid</title>
+  <synopsis><code mime="text/x-gjs">
+function is_valid(result: Gio.AsyncResult, source: GObject.Object, source_tag: gpointer): Boolean {
+    // Gjs wrapper for g_simple_async_result_is_valid()
+}
+  </code></synopsis>
+  <p>Ensures that the data passed to the _finish function of an async
+operation is consistent.  Three checks are performed.</p>  <p>First, <code>result</code> is checked to ensure that it is really a
+<link xref="Gio.SimpleAsyncResult"/>.  Second, <code>source</code> is checked to ensure that it
+matches the source object of <code>result</code>.  Third, <code>source_tag</code> is
+checked to ensure that it is equal to the <code>source_tag</code> argument given
+to <link xref="Gio.new"/> (which, by convention, is a pointer
+to the _async function corresponding to the _finish function from
+which this function is called).  (Alternatively, if either
+<code>source_tag</code> or <code>result</code>'s source tag is <code>null</code>, then the source tag
+check is skipped.)</p>
+  <p>Since 2.20</p>
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>the <link xref="Gio.AsyncResult"/> passed to the _finish function.</p>
+</item>
+<item>
+<title><code>source</code></title>
+  <p>the <link xref="GObject.Object"/> passed to the _finish function.</p>
+</item>
+<item>
+<title><code>source_tag</code></title>
+  <p>the asynchronous function.</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

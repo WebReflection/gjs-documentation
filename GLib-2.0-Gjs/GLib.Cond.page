@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<page id="GLib.Cond"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>GLib.Cond</title>
+  <synopsis><code>
+const GLib = imports.gi.GLib;
+
+let cond = new GLib.Cond();
+  </code></synopsis>
+  <p>The <link xref="GLib.Cond"/> struct is an opaque data structure that represents a
+condition. Threads can block on a <link xref="GLib.Cond"/> if they find a certain
+condition to be false. If other threads change the state of this
+condition they signal the <link xref="GLib.Cond"/>, and that causes the waiting
+threads to be woken up.</p>  <p>Consider the following example of a shared variable.  One or more
+threads can wait for data to be published to the variable and when
+another thread publishes the data, it can signal one of the waiting
+threads to wake up to collect the data.</p>  <p>Here is an example for using GCond to block a thread until a condition
+is satisfied:
+|[&lt;!-- language="C" --&gt;
+  gpointer current_data = NULL;
+  GMutex data_mutex;
+  GCond data_cond;</p>  <p>  void
+  push_data (gpointer data)
+  {
+    g_mutex_lock (&amp;data_mutex);
+    current_data = data;
+    g_cond_signal (&amp;data_cond);
+    g_mutex_unlock (&amp;data_mutex);
+  }</p>  <p>  gpointer
+  pop_data (void)
+  {
+    gpointer data;</p>  <p>    g_mutex_lock (&amp;data_mutex);
+    while (!current_data)
+      g_cond_wait (&amp;data_cond, &amp;data_mutex);
+    data = current_data;
+    current_data = NULL;
+    g_mutex_unlock (&amp;data_mutex);</p>  <p>    return data;
+  }
+]|
+Whenever a thread calls pop_data() now, it will wait until
+current_data is non-<code>null</code>, i.e. until some other thread
+has called push_data().</p>  <p>The example shows that use of a condition variable must always be
+paired with a mutex.  Without the use of a mutex, there would be a
+race between the check of @current_data by the while loop in
+pop_data() and waiting. Specifically, another thread could set
+@current_data after the check, and signal the cond (with nobody
+waiting on it) before the first thread goes to sleep. <link xref="GLib.Cond"/> is
+specifically useful for its ability to release the mutex and go
+to sleep atomically.</p>  <p>It is also important to use the <link xref="GLib.wait"/> and <link xref="GLib.wait_until"/>
+functions only inside a loop which checks for the condition to be
+true.  See <link xref="GLib.wait"/> for an explanation of why the condition may
+not be true even after it returns.</p>  <p>If a <link xref="GLib.Cond"/> is allocated in static storage then it can be used
+without initialisation.  Otherwise, you should call <link xref="GLib.init"/>
+on it and <link xref="GLib.clear"/> when done.</p>  <p>A <link xref="GLib.Cond"/> should only be accessed via the g_cond_ functions.</p>
+
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

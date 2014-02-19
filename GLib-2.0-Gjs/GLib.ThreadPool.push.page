@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<page id="GLib.ThreadPool.push"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.ThreadPool" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_thread_pool_push</api:name>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>data</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.ThreadPool.prototype.push</title>
+  <synopsis><code mime="text/x-gjs">
+function push(data: gpointer): Boolean {
+    // Gjs wrapper for g_thread_pool_push()
+}
+  </code></synopsis>
+  <p>Inserts <code>data</code> into the list of tasks to be executed by <code>pool</code>.</p>  <p>When the number of currently running threads is lower than the
+maximal allowed number of threads, a new thread is started (or
+reused) with the properties given to <link xref="GLib.new"/>.
+Otherwise, <code>data</code> stays in the queue until a thread in this pool
+finishes its previous task and processes <code>data</code>.</p>  <p>@error can be <code>null</code> to ignore errors, or non-<code>null</code> to report
+errors. An error can only occur when a new thread couldn't be
+created. In that case <code>data</code> is simply appended to the queue of
+work to do.</p>  <p>Before version 2.32, this function did not return a success status.</p>
+
+<terms>
+<item>
+<title><code>data</code></title>
+  <p>a new task for <code>pool</code></p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<page id="GLib.LOG_DOMAIN"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>GLib.LOG_DOMAIN</title>
+  <p>Defines the log domain.</p>  <p>For applications, this is typically left as the default <code>null</code>
+(or "") domain. Libraries should define this so that any messages
+which they log can be differentiated from messages from other
+libraries and application code. But be careful not to define
+it in any public header files.</p>  <p>For example, GTK+ uses this in its Makefile.am:
+|[
+INCLUDES = -DG_LOG_DOMAIN=\"Gtk\"
+]|</p>
+
+</page>

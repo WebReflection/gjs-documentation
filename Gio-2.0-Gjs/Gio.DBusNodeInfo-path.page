@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusNodeInfo-path"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusNodeInfo" group="field" type="guide"/>
+    <title type="link" role="topic">path</title>
+  </info>
+  <title>Gio.DBusNodeInfo.path</title>
+  <synopsis><code mime="text/x-gjs">
+DBusNodeInfo.path: String (Read)
+  </code></synopsis>
+  <p>The path of the node or <code>null</code> if omitted. Note that this may be a relative path. See the D-Bus specification for more details.</p>
+
+</page>

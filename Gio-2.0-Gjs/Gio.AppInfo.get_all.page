@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gio.AppInfo.get_all"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.AppInfo" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(Gio.AppInfo)</api:type>
+      </api:returns>
+      <api:name>g_app_info_get_all</api:name>
+    </api:function>
+  </info>
+  <title>Gio.AppInfo.get_all</title>
+  <synopsis><code mime="text/x-gjs">
+function get_all(): Array(Gio.AppInfo) {
+    // Gjs wrapper for g_app_info_get_all()
+}
+  </code></synopsis>
+  <p>Gets a list of all of the applications currently registered
+on this system.</p>  <p>For desktop files, this includes applications that have
+`NoDisplay=true` set or are excluded from display by means
+of `OnlyShowIn` or `NotShowIn`. See <link xref="Gio.AppInfo.should_show"/>.
+The returned list does not include applications which have
+the `Hidden` key set.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<page id="GLib.KeyFile.load_from_dirs"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.KeyFile" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_key_file_load_from_dirs</api:name>
+      <api:arg>
+        <api:type>filename</api:type>
+        <api:name>file</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Array(filename)</api:type>
+        <api:name>search_dirs</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.KeyFileFlags</api:type>
+        <api:name>flags</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.KeyFile.prototype.load_from_dirs</title>
+  <synopsis><code mime="text/x-gjs">
+function load_from_dirs(file: filename, search_dirs: Array(filename), flags: GLib.KeyFileFlags): [ok: Boolean, full_path: filename] {
+    // Gjs wrapper for g_key_file_load_from_dirs()
+}
+  </code></synopsis>
+  <p>This function looks for a key file named <code>file</code> in the paths
+specified in <code>search_dirs</code>, loads the file into <code>key_file</code> and
+returns the file's full path in <code>full_path</code>.  If the file could not
+be loaded then an %error is set to either a <link xref="GLib.FileError"/> or
+<link xref="GLib.KeyFileError"/>.</p>
+  <p>Since 2.14</p>
+<terms>
+<item>
+<title><code>file</code></title>
+  <p>a relative path to a filename to open and parse</p>
+</item>
+<item>
+<title><code>search_dirs</code></title>
+  <p><code>null</code>-terminated array of directories to search</p>
+</item>
+<item>
+<title><code>flags</code></title>
+  <p>flags from <link xref="GLib.KeyFileFlags"/></p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+<item>
+<title><code>full_path</code></title>
+  <p>return location for a string containing the full path
+  of the file, or <code>null</code></p>
+</item>
+</terms>
+
+</page>

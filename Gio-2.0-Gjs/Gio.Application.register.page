@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<page id="Gio.Application.register"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Application" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_application_register</api:name>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.Application.prototype.register</title>
+  <synopsis><code mime="text/x-gjs">
+function register(cancellable: Gio.Cancellable): Boolean {
+    // Gjs wrapper for g_application_register()
+}
+  </code></synopsis>
+  <p>Attempts registration of the application.</p>  <p>This is the point at which the application discovers if it is the
+primary instance or merely acting as a remote for an already-existing
+primary instance.  This is implemented by attempting to acquire the
+application identifier as a unique bus name on the session bus using
+GDBus.</p>  <p>If there is no application ID or if <link xref="Gio.ApplicationFlags"/>.non_unique was
+given, then this process will always become the primary instance.</p>  <p>Due to the internal architecture of GDBus, method calls can be
+dispatched at any time (even if a main loop is not running).  For
+this reason, you must ensure that any object paths that you wish to
+register are registered before calling this function.</p>  <p>If the application has already been registered then <code>true</code> is
+returned with no work performed.</p>  <p>The <link xref="Gio.startup"/> signal is emitted if registration succeeds
+and <code>application</code> is the primary instance (including the non-unique
+case).</p>  <p>In the event of an error (such as <code>cancellable</code> being cancelled, or a
+failure to connect to the session bus), <code>false</code> is returned and @error
+is set appropriately.</p>  <p>Note: the return value of this function is not an indicator that this
+instance is or is not the primary instance of the application.  See
+<link xref="Gio.Application.get_is_remote"/> for that.</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>cancellable</code></title>
+  <p>a <link xref="Gio.Cancellable"/>, or <code>null</code></p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

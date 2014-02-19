@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="Gio.File-set_display_name_async"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.File" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.File::set_display_name_async</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_set_display_name_async(display_name: String, io_priority: Number, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+}
+  </code></synopsis>
+  <p>Asynchronously sets the display name for a given <link xref="Gio.File"/>.</p>  <p>For more details, see <link xref="Gio.File.set_display_name"/> which is
+the synchronous version of this call.</p>  <p>When the operation is finished, <code>callback</code> will be called.
+You can then call <link xref="Gio.File.set_display_name_finish"/> to get
+the result of the operation.</p>
+
+<terms>
+<item>
+<title><code>display_name</code></title>
+  <p>a string</p>
+</item>
+<item>
+<title><code>io_priority</code></title>
+  <p>the [I/O priority][io-priority] of the request</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional <link xref="Gio.Cancellable"/> object,
+    <code>null</code> to ignore</p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>a <link xref="Gio.AsyncReadyCallback"/> to call
+    when the request is satisfied</p>
+</item>
+</terms>
+
+</page>

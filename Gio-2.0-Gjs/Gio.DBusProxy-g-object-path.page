@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusProxy-g-object-path"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusProxy" group="property" type="guide"/>
+    <title type="link" role="topic">g-object-path</title>
+  </info>
+  <title>Gio.DBusProxy.g_object_path</title>
+  <synopsis><code mime="text/x-gjs">
+DBusProxy.g_object_path: String (Read / Write / Construct Only)
+  </code></synopsis>
+  <p>The object path the proxy is for.</p>
+  <p>Since 2.26</p>
+</page>

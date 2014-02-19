@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.Mount.can_eject"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Mount" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_mount_can_eject</api:name>
+    </api:function>
+  </info>
+  <title>Gio.Mount.prototype.can_eject</title>
+  <synopsis><code mime="text/x-gjs">
+function can_eject(): Boolean {
+    // Gjs wrapper for g_mount_can_eject()
+}
+  </code></synopsis>
+  <p>Checks if <code>mount</code> can be eject.</p>
+
+<terms>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

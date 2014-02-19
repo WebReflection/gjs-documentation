@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gio.Application.get_is_registered"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Application" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_application_get_is_registered</api:name>
+    </api:function>
+  </info>
+  <title>Gio.Application.prototype.get_is_registered</title>
+  <synopsis><code mime="text/x-gjs">
+function get_is_registered(): Boolean {
+    // Gjs wrapper for g_application_get_is_registered()
+}
+  </code></synopsis>
+  <p>Checks if <code>application</code> is registered.</p>  <p>An application is registered if <link xref="Gio.register"/> has been
+successfully called.</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

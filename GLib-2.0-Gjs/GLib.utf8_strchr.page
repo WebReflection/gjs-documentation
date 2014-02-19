@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<page id="GLib.utf8_strchr"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_utf8_strchr</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>p</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gssize</api:type>
+        <api:name>len</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>c</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.utf8_strchr</title>
+  <synopsis><code mime="text/x-gjs">
+function utf8_strchr(p: String, len: gssize, c: String): String {
+    // Gjs wrapper for g_utf8_strchr()
+}
+  </code></synopsis>
+  <p>Finds the leftmost occurrence of the given Unicode character
+in a UTF-8 encoded string, while limiting the search to <code>len</code> bytes.
+If <code>len</code> is -1, allow unbounded search.</p>
+
+<terms>
+<item>
+<title><code>p</code></title>
+  <p>a nul-terminated UTF-8 encoded string</p>
+</item>
+<item>
+<title><code>len</code></title>
+  <p>the maximum length of <code>p</code></p>
+</item>
+<item>
+<title><code>c</code></title>
+  <p>a Unicode character</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

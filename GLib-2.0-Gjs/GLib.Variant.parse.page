@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<page id="GLib.Variant.parse"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Variant" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.Variant</api:type>
+      </api:returns>
+      <api:name>g_variant_parse</api:name>
+      <api:arg>
+        <api:type>GLib.VariantType</api:type>
+        <api:name>type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>text</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>limit</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>endptr</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.Variant.parse</title>
+  <synopsis><code mime="text/x-gjs">
+function parse(type: GLib.VariantType, text: String, limit: String, endptr: String): GLib.Variant {
+    // Gjs wrapper for g_variant_parse()
+}
+  </code></synopsis>
+  <p>Parses a <link xref="GLib.Variant"/> from a text representation.</p>  <p>A single <link xref="GLib.Variant"/> is parsed from the content of <code>text</code>.</p>  <p>The format is described [here][gvariant-text].</p>  <p>The memory at <code>limit</code> will never be accessed and the parser behaves as
+if the character at <code>limit</code> is the nul terminator.  This has the
+effect of bounding <code>text</code>.</p>  <p>If <code>endptr</code> is non-<code>null</code> then <code>text</code> is permitted to contain data
+following the value that this function parses and <code>endptr</code> will be
+updated to point to the first character past the end of the text
+parsed by this function.  If <code>endptr</code> is <code>null</code> and there is extra data
+then an error is returned.</p>  <p>If <code>type</code> is non-<code>null</code> then the value will be parsed to have that
+type.  This may result in additional parse errors (in the case that
+the parsed value doesn't fit the type) but may also result in fewer
+errors (in the case that the type would have been ambiguous, such as
+with empty arrays).</p>  <p>In the event that the parsing is successful, the resulting <link xref="GLib.Variant"/>
+is returned.</p>  <p>In case of any error, <code>null</code> will be returned.  If @error is non-<code>null</code>
+then it will be set to reflect the error that occurred.</p>  <p>Officially, the language understood by the parser is "any string
+produced by <link xref="GLib.Variant.print"/>".</p>
+
+<terms>
+<item>
+<title><code>type</code></title>
+  <p>a <link xref="GLib.VariantType"/>, or <code>null</code></p>
+</item>
+<item>
+<title><code>text</code></title>
+  <p>a string containing a GVariant in text form</p>
+</item>
+<item>
+<title><code>limit</code></title>
+  <p>a pointer to the end of <code>text</code>, or <code>null</code></p>
+</item>
+<item>
+<title><code>endptr</code></title>
+  <p>a location to store the end pointer, or <code>null</code></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

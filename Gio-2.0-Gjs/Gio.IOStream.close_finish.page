@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Gio.IOStream.close_finish"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.IOStream" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_io_stream_close_finish</api:name>
+      <api:arg>
+        <api:type>Gio.AsyncResult</api:type>
+        <api:name>result</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.IOStream.prototype.close_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function close_finish(result: Gio.AsyncResult): Boolean {
+    // Gjs wrapper for g_io_stream_close_finish()
+}
+  </code></synopsis>
+  <p>Closes a stream.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>a <link xref="Gio.AsyncResult"/></p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

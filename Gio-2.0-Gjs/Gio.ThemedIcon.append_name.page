@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gio.ThemedIcon.append_name"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.ThemedIcon" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_themed_icon_append_name</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>iconname</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.ThemedIcon.prototype.append_name</title>
+  <synopsis><code mime="text/x-gjs">
+function append_name(iconname: String): void {
+    // Gjs wrapper for g_themed_icon_append_name()
+}
+  </code></synopsis>
+  <p>Append a name to the list of icons from within <code>icon</code>.</p>  <p>Note that doing so invalidates the hash computed by prior calls
+to <link xref="Gio.icon_hash"/>.</p>
+
+<terms>
+<item>
+<title><code>iconname</code></title>
+  <p>name of icon to append to list of icons from within <code>icon</code>.</p>
+</item>
+</terms>
+
+</page>

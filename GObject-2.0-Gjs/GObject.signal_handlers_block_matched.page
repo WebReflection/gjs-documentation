@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<page id="GObject.signal_handlers_block_matched"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number</api:type>
+      </api:returns>
+      <api:name>g_signal_handlers_block_matched</api:name>
+      <api:arg>
+        <api:type>GObject.Object</api:type>
+        <api:name>instance</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.SignalMatchType</api:type>
+        <api:name>mask</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>signal_id</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.Quark</api:type>
+        <api:name>detail</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Closure</api:type>
+        <api:name>closure</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>func</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>data</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.signal_handlers_block_matched</title>
+  <synopsis><code mime="text/x-gjs">
+function signal_handlers_block_matched(instance: GObject.Object, mask: GObject.SignalMatchType, signal_id: Number, detail: GLib.Quark, closure: GObject.Closure, func: gpointer, data: gpointer): Number {
+    // Gjs wrapper for g_signal_handlers_block_matched()
+}
+  </code></synopsis>
+  <p>Blocks all handlers on an instance that match a certain selection criteria.
+The criteria mask is passed as an OR-ed combination of <link xref="GObject.SignalMatchType"/>
+flags, and the criteria values are passed as arguments.
+Passing at least one of the <link xref="GObject.SignalMatchType"/>.closure, <link xref="GObject.SignalMatchType"/>.func
+or <link xref="GObject.SignalMatchType"/>.data match flags is required for successful matches.
+If no handlers were found, 0 is returned, the number of blocked handlers
+otherwise.</p>
+
+<terms>
+<item>
+<title><code>instance</code></title>
+  <p>The instance to block handlers from.</p>
+</item>
+<item>
+<title><code>mask</code></title>
+  <p>Mask indicating which of <code>signal_id</code>, <code>detail</code>, <code>closure</code>, <code>func</code>
+ and/or <code>data</code> the handlers have to match.</p>
+</item>
+<item>
+<title><code>signal_id</code></title>
+  <p>Signal the handlers have to be connected to.</p>
+</item>
+<item>
+<title><code>detail</code></title>
+  <p>Signal detail the handlers have to be connected to.</p>
+</item>
+<item>
+<title><code>closure</code></title>
+  <p>The closure the handlers will invoke.</p>
+</item>
+<item>
+<title><code>func</code></title>
+  <p>The C closure callback of the handlers (useless for non-C closures).</p>
+</item>
+<item>
+<title><code>data</code></title>
+  <p>The closure data of the handlers' closures.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

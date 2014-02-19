@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusAuthObserver-authorize-authenticated-peer"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusAuthObserver" group="signal" type="guide"/>
+    <title type="link" role="topic">authorize-authenticated-peer</title>
+  </info>
+  <title>Gio.DBusAuthObserver::authorize-authenticated-peer</title>
+  <synopsis><code mime="text/x-gjs">
+connect('authorize-authenticated-peer', function (dBusAuthObserver, stream: Gio.IOStream, credentials: Gio.Credentials, ): Boolean);
+  </code></synopsis>
+  <p>Emitted to check if a peer that is successfully authenticated
+is authorized.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>dBusAuthObserver</code></title>
+<p>instance of <link xref="Gio.DBusAuthObserver"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>stream</code></title>
+  <p>A <link xref="Gio.IOStream"/> for the <link xref="Gio.DBusConnection"/>.</p>
+</item>
+<item>
+<title><code>credentials</code></title>
+  <p>Credentials received from the peer or <code>null</code>.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if the peer is authorized, <code>false</code> if not.</p>
+</item>
+</terms>
+
+</page>

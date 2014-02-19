@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="Gio.io_modules_load_all_in_directory"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(Gio.IOModule)</api:type>
+      </api:returns>
+      <api:name>g_io_modules_load_all_in_directory</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>dirname</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.io_modules_load_all_in_directory</title>
+  <synopsis><code mime="text/x-gjs">
+function io_modules_load_all_in_directory(dirname: String): Array(Gio.IOModule) {
+    // Gjs wrapper for g_io_modules_load_all_in_directory()
+}
+  </code></synopsis>
+  <p>Loads all the modules in the specified directory.</p>  <p>If don't require all modules to be initialized (and thus registering
+all gtypes) then you can use <link xref="Gio.io_modules_scan_all_in_directory"/>
+which allows delayed/lazy loading of modules.</p>
+
+<terms>
+<item>
+<title><code>dirname</code></title>
+  <p>pathname for a directory containing modules to load.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="Gio.SettingsSchemaSource.get_default"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.SettingsSchemaSource" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.SettingsSchemaSource</api:type>
+      </api:returns>
+      <api:name>g_settings_schema_source_get_default</api:name>
+    </api:function>
+  </info>
+  <title>Gio.SettingsSchemaSource.get_default</title>
+  <synopsis><code mime="text/x-gjs">
+function get_default(): Gio.SettingsSchemaSource {
+    // Gjs wrapper for g_settings_schema_source_get_default()
+}
+  </code></synopsis>
+  <p>Gets the default system schema source.</p>  <p>This function is not required for normal uses of <link xref="Gio.Settings"/> but it
+may be useful to authors of plugin management systems or to those who
+want to introspect the content of schemas.</p>  <p>If no schemas are installed, <code>null</code> will be returned.</p>  <p>The returned source may actually consist of multiple schema sources
+from different directories, depending on which directories were given
+in `XDG_DATA_DIRS` and `GSETTINGS_SCHEMA_DIR`. For this reason, all
+lookups performed against the default source should probably be done
+recursively.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

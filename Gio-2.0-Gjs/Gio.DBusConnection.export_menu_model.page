@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusConnection.export_menu_model"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusConnection" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number</api:type>
+      </api:returns>
+      <api:name>g_dbus_connection_export_menu_model</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>object_path</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.MenuModel</api:type>
+        <api:name>menu</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DBusConnection.prototype.export_menu_model</title>
+  <synopsis><code mime="text/x-gjs">
+function export_menu_model(object_path: String, menu: Gio.MenuModel): Number {
+    // Gjs wrapper for g_dbus_connection_export_menu_model()
+}
+  </code></synopsis>
+  <p>Exports <code>menu</code> on <code>connection</code> at <code>object_path</code>.</p>  <p>The implemented D-Bus API should be considered private.
+It is subject to change in the future.</p>  <p>An object path can only have one menu model exported on it. If this
+constraint is violated, the export will fail and 0 will be
+returned (with @error set accordingly).</p>  <p>You can unexport the menu model using
+<link xref="Gio.unexport_menu_model"/> with the return value of
+this function.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>object_path</code></title>
+  <p>a D-Bus object path</p>
+</item>
+<item>
+<title><code>menu</code></title>
+  <p>a <link xref="Gio.MenuModel"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

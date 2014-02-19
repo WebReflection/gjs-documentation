@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<page id="GObject.signal_has_handler_pending"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_signal_has_handler_pending</api:name>
+      <api:arg>
+        <api:type>GObject.Object</api:type>
+        <api:name>instance</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>signal_id</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.Quark</api:type>
+        <api:name>detail</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Boolean</api:type>
+        <api:name>may_be_blocked</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.signal_has_handler_pending</title>
+  <synopsis><code mime="text/x-gjs">
+function signal_has_handler_pending(instance: GObject.Object, signal_id: Number, detail: GLib.Quark, may_be_blocked: Boolean): Boolean {
+    // Gjs wrapper for g_signal_has_handler_pending()
+}
+  </code></synopsis>
+  <p>Returns whether there are any handlers connected to <code>instance</code> for the
+given signal id and detail.</p>  <p>One example of when you might use this is when the arguments to the
+signal are difficult to compute. A class implementor may opt to not
+emit the signal if no one is attached anyway, thus saving the cost
+of building the arguments.</p>
+
+<terms>
+<item>
+<title><code>instance</code></title>
+  <p>the object whose signal handlers are sought.</p>
+</item>
+<item>
+<title><code>signal_id</code></title>
+  <p>the signal id.</p>
+</item>
+<item>
+<title><code>detail</code></title>
+  <p>the detail.</p>
+</item>
+<item>
+<title><code>may_be_blocked</code></title>
+  <p>whether blocked handlers should count as match.</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

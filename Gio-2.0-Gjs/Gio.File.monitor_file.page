@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<page id="Gio.File.monitor_file"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.File" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.FileMonitor</api:type>
+      </api:returns>
+      <api:name>g_file_monitor_file</api:name>
+      <api:arg>
+        <api:type>Gio.FileMonitorFlags</api:type>
+        <api:name>flags</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.File.prototype.monitor_file</title>
+  <synopsis><code mime="text/x-gjs">
+function monitor_file(flags: Gio.FileMonitorFlags, cancellable: Gio.Cancellable): Gio.FileMonitor {
+    // Gjs wrapper for g_file_monitor_file()
+}
+  </code></synopsis>
+  <p>Obtains a file monitor for the given file. If no file notification
+mechanism exists, then regular polling of the file is used.</p>  <p>If <code>cancellable</code> is not <code>null</code>, then the operation can be cancelled by
+triggering the cancellable object from another thread. If the operation
+was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be returned.</p>  <p>If <code>flags</code> contains <link xref="Gio.FileMonitorFlags"/>.watch_hard_links then the monitor
+will also attempt to report changes made to the file via another
+filename (ie, a hard link). Without this flag, you can only rely on
+changes made through the filename contained in <code>file</code> to be
+reported. Using this flag may result in an increase in resource
+usage, and may not have any effect depending on the <link xref="Gio.FileMonitor"/>
+backend and/or filesystem type.</p>
+
+<terms>
+<item>
+<title><code>flags</code></title>
+  <p>a set of <link xref="Gio.FileMonitorFlags"/></p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional <link xref="Gio.Cancellable"/> object,
+    <code>null</code> to ignore</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

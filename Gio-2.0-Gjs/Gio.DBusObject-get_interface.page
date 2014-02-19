@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusObject-get_interface"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusObject" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.DBusObject::get_interface</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_get_interface(interface_name: String): Gio.DBusInterface {
+}
+  </code></synopsis>
+  <p>Gets the D-Bus interface with name <code>interface_name</code> associated with
+<code>object</code>, if any.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>interface_name</code></title>
+  <p>A D-Bus interface name.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>null</code> if not found, otherwise a
+  <link xref="Gio.DBusInterface"/> that must be freed with <link xref="GObject.unref"/>.</p>
+</item>
+</terms>
+
+</page>

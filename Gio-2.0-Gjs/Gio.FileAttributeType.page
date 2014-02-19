@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<page id="Gio.FileAttributeType"
+      type="topic"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Gio.FileAttributeType</title>
+  <p>The data types for file attributes.</p>
+
+<terms>
+<item>
+<title><code>FileAttributeType.INVALID</code></title>
+  <p>indicates an invalid or uninitalized type.</p>
+</item>
+<item>
+<title><code>FileAttributeType.STRING</code></title>
+  <p>a null terminated UTF8 string.</p>
+</item>
+<item>
+<title><code>FileAttributeType.BYTE_STRING</code></title>
+  <p>a zero terminated string of non-zero bytes.</p>
+</item>
+<item>
+<title><code>FileAttributeType.BOOLEAN</code></title>
+  <p>a boolean value.</p>
+</item>
+<item>
+<title><code>FileAttributeType.UINT32</code></title>
+  <p>an unsigned 4-byte/32-bit integer.</p>
+</item>
+<item>
+<title><code>FileAttributeType.INT32</code></title>
+  <p>a signed 4-byte/32-bit integer.</p>
+</item>
+<item>
+<title><code>FileAttributeType.UINT64</code></title>
+  <p>an unsigned 8-byte/64-bit integer.</p>
+</item>
+<item>
+<title><code>FileAttributeType.INT64</code></title>
+  <p>a signed 8-byte/64-bit integer.</p>
+</item>
+<item>
+<title><code>FileAttributeType.OBJECT</code></title>
+  <p>a <link xref="GObject.Object"/>.</p>
+</item>
+<item>
+<title><code>FileAttributeType.STRINGV</code></title>
+  <p>a <code>null</code> terminated char **. Since 2.22</p>
+</item>
+</terms>
+
+</page>

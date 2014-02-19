@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusActionGroup.get"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusActionGroup" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.DBusActionGroup</api:type>
+      </api:returns>
+      <api:name>g_dbus_action_group_get</api:name>
+      <api:arg>
+        <api:type>Gio.DBusConnection</api:type>
+        <api:name>connection</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>bus_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>object_path</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DBusActionGroup.get</title>
+  <synopsis><code mime="text/x-gjs">
+function get(connection: Gio.DBusConnection, bus_name: String, object_path: String): Gio.DBusActionGroup {
+    // Gjs wrapper for g_dbus_action_group_get()
+}
+  </code></synopsis>
+  <p>Obtains a <link xref="Gio.DBusActionGroup"/> for the action group which is exported at
+the given <code>bus_name</code> and <code>object_path</code>.</p>  <p>The thread default main context is taken at the time of this call.
+All signals on the menu model (and any linked models) are reported
+with respect to this context.  All calls on the returned menu model
+(and linked models) must also originate from this same context, with
+the thread default main context unchanged.</p>  <p>This call is non-blocking.  The returned action group may or may not
+already be filled in.  The correct thing to do is connect the signals
+for the action group to monitor for changes and then to call
+<link xref="Gio.ActionGroup.list_actions"/> to get the initial list.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>connection</code></title>
+  <p>A <link xref="Gio.DBusConnection"/></p>
+</item>
+<item>
+<title><code>bus_name</code></title>
+  <p>the bus name which exports the action group</p>
+</item>
+<item>
+<title><code>object_path</code></title>
+  <p>the object path at which the action group is exported</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

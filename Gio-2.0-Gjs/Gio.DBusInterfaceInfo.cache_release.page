@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusInterfaceInfo.cache_release"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusInterfaceInfo" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_dbus_interface_info_cache_release</api:name>
+    </api:function>
+  </info>
+  <title>Gio.DBusInterfaceInfo.prototype.cache_release</title>
+  <synopsis><code mime="text/x-gjs">
+function cache_release(): void {
+    // Gjs wrapper for g_dbus_interface_info_cache_release()
+}
+  </code></synopsis>
+  <p>Decrements the usage count for the cache for <code>info</code> built by
+<link xref="Gio.DBusInterfaceInfo.cache_build"/> (if any) and frees the
+resources used by the cache if the usage count drops to zero.</p>
+  <p>Since 2.30</p>
+
+</page>

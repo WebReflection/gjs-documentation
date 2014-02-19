@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="Gio.ActionGroup-query_action"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.ActionGroup" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.ActionGroup::query_action</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_query_action(action_name: String): [ok: Boolean, enabled: Boolean, parameter_type: GLib.VariantType, state_type: GLib.VariantType, state_hint: GLib.Variant, state: GLib.Variant] {
+}
+  </code></synopsis>
+  <p>Queries all aspects of the named action within an <code>action_group</code>.</p>  <p>This function acquires the information available from
+<link xref="Gio.ActionGroup.has_action"/>, <link xref="Gio.ActionGroup.get_action_enabled"/>,
+<link xref="Gio.ActionGroup.get_action_parameter_type"/>,
+<link xref="Gio.ActionGroup.get_action_state_type"/>,
+<link xref="Gio.ActionGroup.get_action_state_hint"/> and
+<link xref="Gio.ActionGroup.get_action_state"/> with a single function call.</p>  <p>This provides two main benefits.</p>  <p>The first is the improvement in efficiency that comes with not having
+to perform repeated lookups of the action in order to discover
+different things about it.  The second is that implementing
+<link xref="Gio.ActionGroup"/> can now be done by only overriding this one virtual
+function.</p>  <p>The interface provides a default implementation of this function that
+calls the individual functions, as required, to fetch the
+information.  The interface also provides default implementations of
+those functions that call this function.  All implementations,
+therefore, must override either this function or all of the others.</p>  <p>If the action exists, <code>true</code> is returned and any of the requested
+fields (as indicated by having a non-<code>null</code> reference passed in) are
+filled.  If the action doesn't exist, <code>false</code> is returned and the
+fields may or may not have been modified.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>action_name</code></title>
+  <p>the name of an action in the group</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if the action exists, else <code>false</code></p>
+</item>
+</terms>
+
+</page>

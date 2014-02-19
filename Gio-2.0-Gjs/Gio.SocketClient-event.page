@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<page id="Gio.SocketClient-event"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.SocketClient" group="signal" type="guide"/>
+    <title type="link" role="topic">event</title>
+  </info>
+  <title>Gio.SocketClient::event</title>
+  <synopsis><code mime="text/x-gjs">
+connect('event', function (socketClient, event: Gio.SocketClientEvent, connectable: Gio.SocketConnectable, connection: Gio.IOStream, ): void);
+  </code></synopsis>
+  <p>Emitted when @client's activity on <code>connectable</code> changes state.
+Among other things, this can be used to provide progress
+information about a network connection in the UI. The meanings of
+the different <code>event</code> values are as follows:</p>  <p>- <link xref="Gio.SocketClientEvent"/>.resolving: @client is about to look up <code>connectable</code>
+  in DNS. <code>connection</code> will be <code>null</code>.</p>  <p>- <link xref="Gio.SocketClientEvent"/>.resolved:  @client has successfully resolved
+  <code>connectable</code> in DNS. <code>connection</code> will be <code>null</code>.</p>  <p>- <link xref="Gio.SocketClientEvent"/>.connecting: @client is about to make a connection
+  to a remote host; either a proxy server or the destination server
+  itself. <code>connection</code> is the <link xref="Gio.SocketConnection"/>, which is not yet
+  connected.  Since GLib 2.40, you can access the remote
+  address via <link xref="Gio.get_remote_address"/>.</p>  <p>- <link xref="Gio.SocketClientEvent"/>.connected: @client has successfully connected
+  to a remote host. <code>connection</code> is the connected <link xref="Gio.SocketConnection"/>.</p>  <p>- <link xref="Gio.SocketClientEvent"/>.proxy_negotiating: @client is about to negotiate
+  with a proxy to get it to connect to <code>connectable</code>. <code>connection</code> is
+  the <link xref="Gio.SocketConnection"/> to the proxy server.</p>  <p>- <link xref="Gio.SocketClientEvent"/>.proxy_negotiated: @client has negotiated a
+  connection to <code>connectable</code> through a proxy server. <code>connection</code> is
+  the stream returned from <link xref="Gio.Proxy.connect"/>, which may or may not
+  be a <link xref="Gio.SocketConnection"/>.</p>  <p>- <link xref="Gio.SocketClientEvent"/>.tls_handshaking: @client is about to begin a TLS
+  handshake. <code>connection</code> is a <link xref="Gio.TlsClientConnection"/>.</p>  <p>- <link xref="Gio.SocketClientEvent"/>.tls_handshaked: @client has successfully completed
+  the TLS handshake. <code>connection</code> is a <link xref="Gio.TlsClientConnection"/>.</p>  <p>- <link xref="Gio.SocketClientEvent"/>.complete: @client has either successfully connected
+  to <code>connectable</code> (in which case <code>connection</code> is the <link xref="Gio.SocketConnection"/>
+  that it will be returning to the caller) or has failed (in which
+  case <code>connection</code> is <code>null</code> and the client is about to return an error).</p>  <p>Each event except <link xref="Gio.SocketClientEvent"/>.complete may be emitted
+multiple times (or not at all) for a given connectable (in
+particular, if @client ends up attempting to connect to more than
+one address). However, if @client emits the <link xref="Gio.SocketClient-event"/>
+signal at all for a given connectable, that it will always emit
+it with <link xref="Gio.SocketClientEvent"/>.complete when it is done.</p>  <p>Note that there may be additional <link xref="Gio.SocketClientEvent"/> values in
+the future; unrecognized <code>event</code> values should be ignored.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>socketClient</code></title>
+<p>instance of <link xref="Gio.SocketClient"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>event</code></title>
+  <p>the event that is occurring</p>
+</item>
+<item>
+<title><code>connectable</code></title>
+  <p>the <link xref="Gio.SocketConnectable"/> that <code>event</code> is occurring on</p>
+</item>
+<item>
+<title><code>connection</code></title>
+  <p>the current representation of the connection</p>
+</item>
+</terms>
+
+</page>

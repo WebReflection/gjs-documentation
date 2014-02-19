@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<page id="GLib.PollFD-events"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.PollFD" group="field" type="guide"/>
+    <title type="link" role="topic">events</title>
+  </info>
+  <title>GLib.PollFD.events</title>
+  <synopsis><code mime="text/x-gjs">
+PollFD.events: gushort (Read / Write)
+  </code></synopsis>
+  <p>a bitwise combination from <link xref="GLib.IOCondition"/>, specifying which
+    events should be polled for. Typically for reading from a file
+    descriptor you would use <link xref="GLib.IOCondition"/>.in | <link xref="GLib.IOCondition"/>.hup | <link xref="GLib.IOCondition"/>.err, and
+    for writing you would use <link xref="GLib.IOCondition"/>.out | <link xref="GLib.IOCondition"/>.err.</p>
+
+</page>

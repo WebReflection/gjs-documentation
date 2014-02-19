@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<page id="Gio.File.open_readwrite_async"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.File" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_file_open_readwrite_async</api:name>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>io_priority</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.AsyncReadyCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.File.prototype.open_readwrite_async</title>
+  <synopsis><code mime="text/x-gjs">
+function open_readwrite_async(io_priority: Number, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+    // Gjs wrapper for g_file_open_readwrite_async()
+}
+  </code></synopsis>
+  <p>Asynchronously opens <code>file</code> for reading and writing.</p>  <p>For more details, see <link xref="Gio.File.open_readwrite"/> which is
+the synchronous version of this call.</p>  <p>When the operation is finished, <code>callback</code> will be called.
+You can then call <link xref="Gio.open_readwrite_finish"/> to get
+the result of the operation.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>io_priority</code></title>
+  <p>the [I/O priority][io-priority] of the request</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional <link xref="Gio.Cancellable"/> object,
+    <code>null</code> to ignore</p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>a <link xref="Gio.AsyncReadyCallback"/> to call
+    when the request is satisfied</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gio.ConverterResult"
+      type="topic"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Gio.ConverterResult</title>
+  <p>Results returned from <link xref="Gio.Converter.convert"/>.</p>
+  <p>Since 2.24</p>
+<terms>
+<item>
+<title><code>ConverterResult.ERROR</code></title>
+  <p>There was an error during conversion.</p>
+</item>
+<item>
+<title><code>ConverterResult.CONVERTED</code></title>
+  <p>Some data was consumed or produced</p>
+</item>
+<item>
+<title><code>ConverterResult.FINISHED</code></title>
+  <p>The conversion is finished</p>
+</item>
+<item>
+<title><code>ConverterResult.FLUSHED</code></title>
+  <p>Flushing is finished</p>
+</item>
+</terms>
+
+</page>

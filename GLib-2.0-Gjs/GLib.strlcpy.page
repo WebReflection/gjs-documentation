@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<page id="GLib.strlcpy"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>gsize</api:type>
+      </api:returns>
+      <api:name>g_strlcpy</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>dest</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>src</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gsize</api:type>
+        <api:name>dest_size</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.strlcpy</title>
+  <synopsis><code mime="text/x-gjs">
+function strlcpy(dest: String, src: String, dest_size: gsize): gsize {
+    // Gjs wrapper for g_strlcpy()
+}
+  </code></synopsis>
+  <p>Portability wrapper that calls strlcpy() on systems which have it,
+and emulates strlcpy() otherwise. Copies <code>src</code> to <code>dest</code>; <code>dest</code> is
+guaranteed to be nul-terminated; <code>src</code> must be nul-terminated;
+<code>dest_size</code> is the buffer size, not the number of bytes to copy.</p>  <p>At most <code>dest_size</code> - 1 characters will be copied. Always nul-terminates
+(unless <code>dest_size</code> is 0). This function does not allocate memory. Unlike
+strncpy(), this function doesn't pad <code>dest</code> (so it's often faster). It
+returns the size of the attempted result, strlen (src), so if
+@retval &gt;= <code>dest_size</code>, truncation occurred.</p>  <p>Caveat: strlcpy() is supposedly more secure than strcpy() or strncpy(),
+but if you really want to avoid screwups, <link xref="GLib.strdup"/> is an even better
+idea.</p>
+
+<terms>
+<item>
+<title><code>dest</code></title>
+  <p>destination buffer</p>
+</item>
+<item>
+<title><code>src</code></title>
+  <p>source buffer</p>
+</item>
+<item>
+<title><code>dest_size</code></title>
+  <p>length of <code>dest</code> in bytes</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

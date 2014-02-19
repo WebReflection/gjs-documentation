@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Gio.SocketType"
+      type="topic"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Gio.SocketType</title>
+  <p>Flags used when creating a <link xref="Gio.Socket"/>. Some protocols may not implement
+all the socket types.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>SocketType.INVALID</code></title>
+  <p>Type unknown or wrong</p>
+</item>
+<item>
+<title><code>SocketType.STREAM</code></title>
+  <p>Reliable connection-based byte streams (e.g. TCP).</p>
+</item>
+<item>
+<title><code>SocketType.DATAGRAM</code></title>
+  <p>Connectionless, unreliable datagram passing.
+    (e.g. UDP)</p>
+</item>
+<item>
+<title><code>SocketType.SEQPACKET</code></title>
+  <p>Reliable connection-based passing of datagrams
+    of fixed maximum length (e.g. SCTP).</p>
+</item>
+</terms>
+
+</page>

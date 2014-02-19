@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="GObject.VALUE_NOCOPY_CONTENTS"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>GObject.VALUE_NOCOPY_CONTENTS</title>
+  <p>If passed to G_VALUE_COLLECT(), allocated data won't be copied
+but used verbatim. This does not affect ref-counted types like
+objects.</p>
+
+</page>

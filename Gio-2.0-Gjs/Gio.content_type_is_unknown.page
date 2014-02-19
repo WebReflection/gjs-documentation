@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="Gio.content_type_is_unknown"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_content_type_is_unknown</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>type</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.content_type_is_unknown</title>
+  <synopsis><code mime="text/x-gjs">
+function content_type_is_unknown(type: String): Boolean {
+    // Gjs wrapper for g_content_type_is_unknown()
+}
+  </code></synopsis>
+  <p>Checks if the content type is the generic "unknown" type.
+On UNIX this is the "application/octet-stream" mimetype,
+while on win32 it is "*".</p>
+
+<terms>
+<item>
+<title><code>type</code></title>
+  <p>a content type string</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

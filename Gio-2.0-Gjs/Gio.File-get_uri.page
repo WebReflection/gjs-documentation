@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="Gio.File-get_uri"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.File" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.File::get_uri</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_get_uri(): String {
+}
+  </code></synopsis>
+  <p>Gets the URI for the <code>file</code>.</p>  <p>This call does no blocking I/O.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a string containing the <link xref="Gio.File"/>'s URI.
+    The returned string should be freed with <link xref="GLib.free"/>
+    when no longer needed.</p>
+</item>
+</terms>
+
+</page>

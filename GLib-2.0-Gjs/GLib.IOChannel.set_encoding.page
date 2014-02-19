@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<page id="GLib.IOChannel.set_encoding"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.IOChannel" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.IOStatus</api:type>
+      </api:returns>
+      <api:name>g_io_channel_set_encoding</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>encoding</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.IOChannel.prototype.set_encoding</title>
+  <synopsis><code mime="text/x-gjs">
+function set_encoding(encoding: String): GLib.IOStatus {
+    // Gjs wrapper for g_io_channel_set_encoding()
+}
+  </code></synopsis>
+  <p>Sets the encoding for the input/output of the channel.
+The internal encoding is always UTF-8. The default encoding
+for the external file is UTF-8.</p>  <p>The encoding <code>null</code> is safe to use with binary data.</p>  <p>The encoding can only be set if one of the following conditions
+is true:</p>  <p>- The channel was just created, and has not been written to or read from yet.</p>  <p>- The channel is write-only.</p>  <p>- The channel is a file, and the file pointer was just repositioned
+  by a call to <link xref="GLib.IOChannel.seek_position"/>. (This flushes all the
+  internal buffers.)</p>  <p>- The current encoding is <code>null</code> or UTF-8.</p>  <p>- One of the (new API) read functions has just returned <link xref="GLib.IOStatus"/>.eof
+  (or, in the case of <link xref="GLib.IOChannel.read_to_end"/>, <link xref="GLib.IOStatus"/>.normal).</p>  <p>-  One of the functions <link xref="GLib.IOChannel.read_chars"/> or
+   <link xref="GLib.IOChannel.read_unichar"/> has returned <link xref="GLib.IOStatus"/>.again or
+   <link xref="GLib.IOStatus"/>.error. This may be useful in the case of
+   <link xref="GLib.ConvertError"/>.illegal_sequence.
+   Returning one of these statuses from <link xref="GLib.IOChannel.read_line"/>,
+   <link xref="GLib.IOChannel.read_line_string"/>, or <link xref="GLib.IOChannel.read_to_end"/>
+   does not guarantee that the encoding can be changed.</p>  <p>Channels which do not meet one of the above conditions cannot call
+<link xref="GLib.IOChannel.seek_position"/> with an offset of <link xref="GLib.SeekType"/>.cur, and, if
+they are "seekable", cannot call <link xref="GLib.write_chars"/> after
+calling one of the API "read" functions.</p>
+
+<terms>
+<item>
+<title><code>encoding</code></title>
+  <p>the encoding type</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="Gio.SimpleAsyncResult.set_check_cancellable"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.SimpleAsyncResult" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_simple_async_result_set_check_cancellable</api:name>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>check_cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.SimpleAsyncResult.prototype.set_check_cancellable</title>
+  <synopsis><code mime="text/x-gjs">
+function set_check_cancellable(check_cancellable: Gio.Cancellable): void {
+    // Gjs wrapper for g_simple_async_result_set_check_cancellable()
+}
+  </code></synopsis>
+  <p>Sets a <link xref="Gio.Cancellable"/> to check before dispatching results.</p>  <p>This function has one very specific purpose: the provided cancellable
+is checked at the time of <link xref="Gio.SimpleAsyncResult.propagate_error"/> If
+it is cancelled, these functions will return an "Operation was
+cancelled" error (<link xref="Gio.IOErrorEnum"/>.cancelled).</p>  <p>Implementors of cancellable asynchronous functions should use this in
+order to provide a guarantee to their callers that cancelling an
+async operation will reliably result in an error being returned for
+that operation (even if a positive result for the operation has
+already been sent as an idle to the main context to be dispatched).</p>  <p>The checking described above is done regardless of any call to the
+unrelated <link xref="Gio.set_handle_cancellation"/> function.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>check_cancellable</code></title>
+  <p>a <link xref="Gio.Cancellable"/> to check, or <code>null</code> to unset</p>
+</item>
+</terms>
+
+</page>

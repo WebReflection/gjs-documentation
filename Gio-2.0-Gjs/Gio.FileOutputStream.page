@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<page id="Gio.FileOutputStream"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>Gio.FileOutputStream</title>
+  <synopsis><code>
+const Gio = imports.gi.Gio;
+
+let fileOutputStream = new Gio.FileOutputStream();
+  </code></synopsis>
+  <p>GFileOutputStream provides output streams that write their
+content to a file.</p>  <p>GFileOutputStream implements <link xref="Gio.Seekable"/>, which allows the output
+stream to jump to arbitrary positions in the file and to truncate
+the file, provided the filesystem of the file supports these
+operations.</p>  <p>To find the position of a file output stream, use <link xref="Gio.tell"/>.
+To find out if a file output stream supports seeking, use
+<link xref="Gio.can_seek"/>.To position a file output stream, use
+<link xref="Gio.seek"/>. To find out if a file output stream supports
+truncating, use <link xref="Gio.can_truncate"/>. To truncate a file output
+stream, use <link xref="Gio.truncate"/>.</p>
+
+  <synopsis>
+    <title>Hierarchy</title>
+    <tree>
+      <item>
+        <code>GObject.Object</code>
+      <item>
+        <code>Gio.OutputStream</code>
+      <item>
+        <code>Gio.FileOutputStream</code>
+      </item>
+      </item>
+      </item>
+    </tree>
+  </synopsis>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="property" style="linklist">
+    <title>Properties</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="signal" style="linklist">
+    <title>Signals</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="vfunc" style="linklist">
+    <title>Virtual functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

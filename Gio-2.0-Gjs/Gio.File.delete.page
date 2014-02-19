@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="Gio.File.delete"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.File" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_file_delete</api:name>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.File.prototype.delete</title>
+  <synopsis><code mime="text/x-gjs">
+function delete(cancellable: Gio.Cancellable): Boolean {
+    // Gjs wrapper for g_file_delete()
+}
+  </code></synopsis>
+  <p>Deletes a file. If the <code>file</code> is a directory, it will only be
+deleted if it is empty. This has the same semantics as <link xref="GLib.unlink"/>.</p>  <p>If <code>cancellable</code> is not <code>null</code>, then the operation can be cancelled by
+triggering the cancellable object from another thread. If the operation
+was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be returned.</p>
+
+<terms>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional <link xref="Gio.Cancellable"/> object,
+    <code>null</code> to ignore</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

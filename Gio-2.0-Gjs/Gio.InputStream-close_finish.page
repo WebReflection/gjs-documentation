@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Gio.InputStream-close_finish"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.InputStream" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.InputStream::close_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_close_finish(result: Gio.AsyncResult): Boolean {
+}
+  </code></synopsis>
+  <p>Finishes closing a stream asynchronously, started from <link xref="Gio.InputStream.close_async"/>.</p>
+
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>a <link xref="Gio.AsyncResult"/>.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if the stream was closed successfully.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="GLib.DateTime.new_from_timeval_local"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.DateTime" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.DateTime</api:type>
+      </api:returns>
+      <api:name>g_date_time_new_from_timeval_local</api:name>
+      <api:arg>
+        <api:type>GLib.TimeVal</api:type>
+        <api:name>tv</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.DateTime.new_from_timeval_local</title>
+  <synopsis><code mime="text/x-gjs">
+function new_from_timeval_local(tv: GLib.TimeVal): GLib.DateTime {
+    // Gjs wrapper for g_date_time_new_from_timeval_local()
+}
+  </code></synopsis>
+  <p>Creates a <link xref="GLib.DateTime"/> corresponding to the given <link xref="GLib.TimeVal"/> <code>tv</code> in the
+local time zone.</p>  <p>The time contained in a <link xref="GLib.TimeVal"/> is always stored in the form of
+seconds elapsed since 1970-01-01 00:00:00 UTC, regardless of the
+local time offset.</p>  <p>This call can fail (returning <code>null</code>) if <code>tv</code> represents a time outside
+of the supported range of <link xref="GLib.DateTime"/>.</p>  <p>You should release the return value by calling <link xref="GLib.unref"/>
+when you are done with it.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>tv</code></title>
+  <p>a <link xref="GLib.TimeVal"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

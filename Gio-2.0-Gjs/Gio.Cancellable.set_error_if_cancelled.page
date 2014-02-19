@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gio.Cancellable.set_error_if_cancelled"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Cancellable" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_cancellable_set_error_if_cancelled</api:name>
+    </api:function>
+  </info>
+  <title>Gio.Cancellable.prototype.set_error_if_cancelled</title>
+  <synopsis><code mime="text/x-gjs">
+function set_error_if_cancelled(): Boolean {
+    // Gjs wrapper for g_cancellable_set_error_if_cancelled()
+}
+  </code></synopsis>
+  <p>If the <code>cancellable</code> is cancelled, sets the error to notify
+that the operation was cancelled.</p>
+
+<terms>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

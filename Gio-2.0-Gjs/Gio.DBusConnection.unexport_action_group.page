@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusConnection.unexport_action_group"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusConnection" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_dbus_connection_unexport_action_group</api:name>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>export_id</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DBusConnection.prototype.unexport_action_group</title>
+  <synopsis><code mime="text/x-gjs">
+function unexport_action_group(export_id: Number): void {
+    // Gjs wrapper for g_dbus_connection_unexport_action_group()
+}
+  </code></synopsis>
+  <p>Reverses the effect of a previous call to
+<link xref="Gio.DBusConnection.export_action_group"/>.</p>  <p>It is an error to call this function with an ID that wasn't returned
+from <link xref="Gio.DBusConnection.export_action_group"/> or to call it with the
+same ID more than once.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>export_id</code></title>
+  <p>the ID from <link xref="Gio.DBusConnection.export_action_group"/></p>
+</item>
+</terms>
+
+</page>

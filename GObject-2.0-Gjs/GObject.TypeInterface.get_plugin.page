@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<page id="GObject.TypeInterface.get_plugin"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.TypeInterface" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GObject.TypePlugin</api:type>
+      </api:returns>
+      <api:name>g_type_interface_get_plugin</api:name>
+      <api:arg>
+        <api:type>GType</api:type>
+        <api:name>instance_type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GType</api:type>
+        <api:name>interface_type</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.TypeInterface.get_plugin</title>
+  <synopsis><code mime="text/x-gjs">
+function get_plugin(instance_type: GType, interface_type: GType): GObject.TypePlugin {
+    // Gjs wrapper for g_type_interface_get_plugin()
+}
+  </code></synopsis>
+  <p>Returns the <link xref="GObject.TypePlugin"/> structure for the dynamic interface
+<code>interface_type</code> which has been added to <code>instance_type</code>, or <code>null</code>
+if <code>interface_type</code> has not been added to <code>instance_type</code> or does
+not have a <link xref="GObject.TypePlugin"/> structure. See <link xref="GObject.type_add_interface_dynamic"/>.</p>
+
+<terms>
+<item>
+<title><code>instance_type</code></title>
+  <p><link xref="GLib.Type"/> of an instantiatable type</p>
+</item>
+<item>
+<title><code>interface_type</code></title>
+  <p><link xref="GLib.Type"/> of an interface type</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

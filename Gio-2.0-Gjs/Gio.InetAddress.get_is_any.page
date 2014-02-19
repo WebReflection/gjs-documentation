@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.InetAddress.get_is_any"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.InetAddress" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_inet_address_get_is_any</api:name>
+    </api:function>
+  </info>
+  <title>Gio.InetAddress.prototype.get_is_any</title>
+  <synopsis><code mime="text/x-gjs">
+function get_is_any(): Boolean {
+    // Gjs wrapper for g_inet_address_get_is_any()
+}
+  </code></synopsis>
+  <p>Tests whether <code>address</code> is the "any" address for its family.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

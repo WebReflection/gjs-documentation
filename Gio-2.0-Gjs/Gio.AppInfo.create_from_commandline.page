@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<page id="Gio.AppInfo.create_from_commandline"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.AppInfo" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.AppInfo</api:type>
+      </api:returns>
+      <api:name>g_app_info_create_from_commandline</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>commandline</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>application_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.AppInfoCreateFlags</api:type>
+        <api:name>flags</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.AppInfo.create_from_commandline</title>
+  <synopsis><code mime="text/x-gjs">
+function create_from_commandline(commandline: String, application_name: String, flags: Gio.AppInfoCreateFlags): Gio.AppInfo {
+    // Gjs wrapper for g_app_info_create_from_commandline()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="Gio.AppInfo"/> from the given information.</p>  <p>Note that for <code>commandline</code>, the quoting rules of the Exec key of the
+[freedesktop.org Desktop Entry Specification](http://freedesktop.org/Standards/desktop-entry-spec)
+are applied. For example, if the <code>commandline</code> contains
+percent-encoded URIs, the percent-character must be doubled in order to prevent it from
+being swallowed by Exec key unquoting. See the specification for exact quoting rules.</p>
+
+<terms>
+<item>
+<title><code>commandline</code></title>
+  <p>the commandline to use</p>
+</item>
+<item>
+<title><code>application_name</code></title>
+  <p>the application name, or <code>null</code> to use <code>commandline</code></p>
+</item>
+<item>
+<title><code>flags</code></title>
+  <p>flags that can specify details of the created <link xref="Gio.AppInfo"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

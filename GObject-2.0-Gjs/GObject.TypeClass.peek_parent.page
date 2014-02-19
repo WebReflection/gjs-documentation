@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="GObject.TypeClass.peek_parent"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.TypeClass" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GObject.TypeClass</api:type>
+      </api:returns>
+      <api:name>g_type_class_peek_parent</api:name>
+    </api:function>
+  </info>
+  <title>GObject.TypeClass.prototype.peek_parent</title>
+  <synopsis><code mime="text/x-gjs">
+function peek_parent(): GObject.TypeClass {
+    // Gjs wrapper for g_type_class_peek_parent()
+}
+  </code></synopsis>
+  <p>This is a convenience function often needed in class initializers.
+It returns the class structure of the immediate parent type of the
+class passed in.  Since derived classes hold a reference count on
+their parent classes as long as they are instantiated, the returned
+class will always exist.</p>  <p>This function is essentially equivalent to:
+g_type_class_peek (g_type_parent (G_TYPE_FROM_CLASS (g_class)))</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

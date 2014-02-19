@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="GObject.type_qname"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.Quark</api:type>
+      </api:returns>
+      <api:name>g_type_qname</api:name>
+      <api:arg>
+        <api:type>GType</api:type>
+        <api:name>type</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.type_qname</title>
+  <synopsis><code mime="text/x-gjs">
+function type_qname(type: GType): GLib.Quark {
+    // Gjs wrapper for g_type_qname()
+}
+  </code></synopsis>
+  <p>Get the corresponding quark of the type IDs name.</p>
+
+<terms>
+<item>
+<title><code>type</code></title>
+  <p>type to return quark of type name for</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

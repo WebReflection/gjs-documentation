@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<page id="GObject.signal_override_class_closure"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_signal_override_class_closure</api:name>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>signal_id</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GType</api:type>
+        <api:name>instance_type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Closure</api:type>
+        <api:name>class_closure</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.signal_override_class_closure</title>
+  <synopsis><code mime="text/x-gjs">
+function signal_override_class_closure(signal_id: Number, instance_type: GType, class_closure: GObject.Closure): void {
+    // Gjs wrapper for g_signal_override_class_closure()
+}
+  </code></synopsis>
+  <p>Overrides the class closure (i.e. the default handler) for the given signal
+for emissions on instances of <code>instance_type</code>. <code>instance_type</code> must be derived
+from the type to which the signal belongs.</p>  <p>See <link xref="GObject.signal_chain_from_overridden"/> and
+<link xref="GObject.signal_chain_from_overridden_handler"/> for how to chain up to the
+parent class closure from inside the overridden one.</p>
+
+<terms>
+<item>
+<title><code>signal_id</code></title>
+  <p>the signal id</p>
+</item>
+<item>
+<title><code>instance_type</code></title>
+  <p>the instance type on which to override the class closure
+ for the signal.</p>
+</item>
+<item>
+<title><code>class_closure</code></title>
+  <p>the closure.</p>
+</item>
+</terms>
+
+</page>

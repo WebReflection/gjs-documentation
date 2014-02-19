@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="Gio.UnixFDList.get"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.UnixFDList" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number</api:type>
+      </api:returns>
+      <api:name>g_unix_fd_list_get</api:name>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>index_</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.UnixFDList.prototype.get</title>
+  <synopsis><code mime="text/x-gjs">
+function get(index_: Number): Number {
+    // Gjs wrapper for g_unix_fd_list_get()
+}
+  </code></synopsis>
+  <p>Gets a file descriptor out of <code>list</code>.</p>  <p><code>index_</code> specifies the index of the file descriptor to get.  It is a
+programmer error for <code>index_</code> to be out of range; see
+<link xref="Gio.get_length"/>.</p>  <p>The file descriptor is duplicated using dup() and set as
+close-on-exec before being returned.  You must call close() on it
+when you are done.</p>  <p>A possible cause of failure is exceeding the per-process or
+system-wide file descriptor limit.</p>
+  <p>Since 2.24</p>
+<terms>
+<item>
+<title><code>index_</code></title>
+  <p>the index into the list</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

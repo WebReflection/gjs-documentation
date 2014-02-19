@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="Gio.File-set_attributes_from_info"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.File" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.File::set_attributes_from_info</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_set_attributes_from_info(info: Gio.FileInfo, flags: Gio.FileQueryInfoFlags, cancellable: Gio.Cancellable): Boolean {
+}
+  </code></synopsis>
+  <p>Tries to set all attributes in the <link xref="Gio.FileInfo"/> on the target
+values, not stopping on the first error.</p>  <p>If there is any error during this operation then @error will
+be set to the first error. Error on particular fields are flagged
+by setting the "status" field in the attribute value to
+<link xref="Gio.FileAttributeStatus"/>.error_setting, which means you can
+also detect further errors.</p>  <p>If <code>cancellable</code> is not <code>null</code>, then the operation can be cancelled by
+triggering the cancellable object from another thread. If the operation
+was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be returned.</p>
+
+<terms>
+<item>
+<title><code>info</code></title>
+  <p>a <link xref="Gio.FileInfo"/></p>
+</item>
+<item>
+<title><code>flags</code></title>
+  <p><link xref="Gio.FileQueryInfoFlags"/></p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional <link xref="Gio.Cancellable"/> object,
+    <code>null</code> to ignore</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>false</code> if there was any error, <code>true</code> otherwise.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gio.SocketClient.set_family"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.SocketClient" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_socket_client_set_family</api:name>
+      <api:arg>
+        <api:type>Gio.SocketFamily</api:type>
+        <api:name>family</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.SocketClient.prototype.set_family</title>
+  <synopsis><code mime="text/x-gjs">
+function set_family(family: Gio.SocketFamily): void {
+    // Gjs wrapper for g_socket_client_set_family()
+}
+  </code></synopsis>
+  <p>Sets the socket family of the socket client.
+If this is set to something other than <link xref="Gio.SocketFamily"/>.invalid
+then the sockets created by this object will be of the specified
+family.</p>  <p>This might be useful for instance if you want to force the local
+connection to be an ipv4 socket, even though the address might
+be an ipv6 mapped to ipv4 address.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>family</code></title>
+  <p>a <link xref="Gio.SocketFamily"/></p>
+</item>
+</terms>
+
+</page>

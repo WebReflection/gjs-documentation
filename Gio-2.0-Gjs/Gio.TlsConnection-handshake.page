@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="Gio.TlsConnection-handshake"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.TlsConnection" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.TlsConnection::handshake</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_handshake(cancellable: Gio.Cancellable): Boolean {
+}
+  </code></synopsis>
+  <p>Attempts a TLS handshake on <code>conn</code>.</p>  <p>On the client side, it is never necessary to call this method;
+although the connection needs to perform a handshake after
+connecting (or after sending a "STARTTLS"-type command) and may
+need to rehandshake later if the server requests it,
+<link xref="Gio.TlsConnection"/> will handle this for you automatically when you try
+to send or receive data on the connection. However, you can call
+<link xref="Gio.TlsConnection.handshake"/> manually if you want to know for sure
+whether the initial handshake succeeded or failed (as opposed to
+just immediately trying to write to <code>conn</code>'s output stream, in which
+case if it fails, it may not be possible to tell if it failed
+before or after completing the handshake).</p>  <p>Likewise, on the server side, although a handshake is necessary at
+the beginning of the communication, you do not need to call this
+function explicitly unless you want clearer error reporting.
+However, you may call <link xref="Gio.TlsConnection.handshake"/> later on to
+renegotiate parameters (encryption methods, etc) with the client.</p>  <p>#GTlsConnection::accept_certificate may be emitted during the
+handshake.</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>cancellable</code></title>
+  <p>a <link xref="Gio.Cancellable"/>, or <code>null</code></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>success or failure</p>
+</item>
+</terms>
+
+</page>

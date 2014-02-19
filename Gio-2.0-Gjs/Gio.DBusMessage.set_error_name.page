@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusMessage.set_error_name"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusMessage" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_dbus_message_set_error_name</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DBusMessage.prototype.set_error_name</title>
+  <synopsis><code mime="text/x-gjs">
+function set_error_name(value: String): void {
+    // Gjs wrapper for g_dbus_message_set_error_name()
+}
+  </code></synopsis>
+  <p>Convenience setter for the <link xref="Gio.DBusMessageHeaderField"/>.error_name header field.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>value</code></title>
+  <p>The value to set.</p>
+</item>
+</terms>
+
+</page>

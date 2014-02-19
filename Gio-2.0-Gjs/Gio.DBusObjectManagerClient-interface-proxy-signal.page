@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusObjectManagerClient-interface-proxy-signal"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusObjectManagerClient" group="signal" type="guide"/>
+    <title type="link" role="topic">interface-proxy-signal</title>
+  </info>
+  <title>Gio.DBusObjectManagerClient::interface-proxy-signal</title>
+  <synopsis><code mime="text/x-gjs">
+connect('interface-proxy-signal', function (dBusObjectManagerClient, object_proxy: Gio.DBusObjectProxy, interface_proxy: Gio.DBusProxy, sender_name: String, signal_name: String, parameters: GLib.Variant, ): void);
+  </code></synopsis>
+  <p>Emitted when a D-Bus signal is received on <code>interface_proxy</code>.</p>  <p>This signal exists purely as a convenience to avoid having to
+connect signals to all interface proxies managed by @manager.</p>  <p>This signal is emitted in the
+[thread-default main context][g-main-context-push-thread-default]
+that @manager was constructed in.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>dBusObjectManagerClient</code></title>
+<p>instance of <link xref="Gio.DBusObjectManagerClient"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>object_proxy</code></title>
+  <p>The <link xref="Gio.DBusObjectProxy"/> on which an interface is emitting a D-Bus signal.</p>
+</item>
+<item>
+<title><code>interface_proxy</code></title>
+  <p>The <link xref="Gio.DBusProxy"/> that is emitting a D-Bus signal.</p>
+</item>
+<item>
+<title><code>sender_name</code></title>
+  <p>The sender of the signal or NULL if the connection is not a bus connection.</p>
+</item>
+<item>
+<title><code>signal_name</code></title>
+  <p>The signal name.</p>
+</item>
+<item>
+<title><code>parameters</code></title>
+  <p>A <link xref="GLib.Variant"/> tuple with parameters for the signal.</p>
+</item>
+</terms>
+
+</page>

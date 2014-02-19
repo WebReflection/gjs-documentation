@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusServer-active"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusServer" group="property" type="guide"/>
+    <title type="link" role="topic">active</title>
+  </info>
+  <title>Gio.DBusServer.active</title>
+  <synopsis><code mime="text/x-gjs">
+DBusServer.active: Boolean (Read)
+  </code></synopsis>
+  <p>Whether the server is currently active.</p>
+  <p>Since 2.26</p>
+</page>

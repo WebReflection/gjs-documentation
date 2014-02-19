@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<page id="Gio.File-copy"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.File" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.File::copy</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_copy(destination: Gio.File, flags: Gio.FileCopyFlags, cancellable: Gio.Cancellable, progress_callback: Gio.FileProgressCallback): Boolean {
+}
+  </code></synopsis>
+  <p>Copies the file <code>source</code> to the location specified by <code>destination</code>.
+Can not handle recursive copies of directories.</p>  <p>If the flag #G_FILE_COPY_OVERWRITE is specified an already
+existing <code>destination</code> file is overwritten.</p>  <p>If the flag #G_FILE_COPY_NOFOLLOW_SYMLINKS is specified then symlinks
+will be copied as symlinks, otherwise the target of the
+<code>source</code> symlink will be copied.</p>  <p>If <code>cancellable</code> is not <code>null</code>, then the operation can be cancelled by
+triggering the cancellable object from another thread. If the operation
+was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be returned.</p>  <p>If <code>progress_callback</code> is not <code>null</code>, then the operation can be monitored
+by setting this to a <link xref="Gio.FileProgressCallback"/> function.
+<code>progress_callback_data</code> will be passed to this function. It is guaranteed
+that this callback will be called after all data has been transferred with
+the total number of bytes copied during the operation.</p>  <p>If the <code>source</code> file does not exist, then the <link xref="Gio.IOErrorEnum"/>.not_found error
+is returned, independent on the status of the <code>destination</code>.</p>  <p>If #G_FILE_COPY_OVERWRITE is not specified and the target exists, then
+the error <link xref="Gio.IOErrorEnum"/>.exists is returned.</p>  <p>If trying to overwrite a file over a directory, the <link xref="Gio.IOErrorEnum"/>.is_directory
+error is returned. If trying to overwrite a directory with a directory the
+<link xref="Gio.IOErrorEnum"/>.would_merge error is returned.</p>  <p>If the source is a directory and the target does not exist, or
+#G_FILE_COPY_OVERWRITE is specified and the target is a file, then the
+<link xref="Gio.IOErrorEnum"/>.would_recurse error is returned.</p>  <p>If you are interested in copying the <link xref="Gio.File"/> object itself (not the on-disk
+file), see <link xref="Gio.File.dup"/>.</p>
+
+<terms>
+<item>
+<title><code>destination</code></title>
+  <p>destination <link xref="Gio.File"/></p>
+</item>
+<item>
+<title><code>flags</code></title>
+  <p>set of <link xref="Gio.FileCopyFlags"/></p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional <link xref="Gio.Cancellable"/> object,
+    <code>null</code> to ignore</p>
+</item>
+<item>
+<title><code>progress_callback</code></title>
+  <p>function to callback with
+    progress information, or <code>null</code> if progress information is not needed</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> on success, <code>false</code> otherwise.</p>
+</item>
+</terms>
+
+</page>

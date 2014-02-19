@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<page id="Gio.BusNameLostCallback"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Gio.BusNameLostCallback</title>
+  <synopsis><code mime="text/x-gjs">
+function onBusNameLostCallback(connection: Gio.DBusConnection, name: String): void {
+}
+  </code></synopsis>
+  <p>Invoked when the name is lost or <code>connection</code> has been closed.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>connection</code></title>
+  <p>The <link xref="Gio.DBusConnection"/> on which to acquire the name or <code>null</code> if
+the connection was disconnected.</p>
+</item>
+<item>
+<title><code>name</code></title>
+  <p>The name being owned.</p>
+</item>
+</terms>
+
+</page>

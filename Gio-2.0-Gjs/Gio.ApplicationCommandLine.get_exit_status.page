@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gio.ApplicationCommandLine.get_exit_status"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.ApplicationCommandLine" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number</api:type>
+      </api:returns>
+      <api:name>g_application_command_line_get_exit_status</api:name>
+    </api:function>
+  </info>
+  <title>Gio.ApplicationCommandLine.prototype.get_exit_status</title>
+  <synopsis><code mime="text/x-gjs">
+function get_exit_status(): Number {
+    // Gjs wrapper for g_application_command_line_get_exit_status()
+}
+  </code></synopsis>
+  <p>Gets the exit status of <code>cmdline</code>.  See
+<link xref="Gio.set_exit_status"/> for more information.</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

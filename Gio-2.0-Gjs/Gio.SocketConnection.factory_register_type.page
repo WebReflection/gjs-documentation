@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<page id="Gio.SocketConnection.factory_register_type"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.SocketConnection" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_socket_connection_factory_register_type</api:name>
+      <api:arg>
+        <api:type>GType</api:type>
+        <api:name>g_type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.SocketFamily</api:type>
+        <api:name>family</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.SocketType</api:type>
+        <api:name>type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>protocol</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.SocketConnection.factory_register_type</title>
+  <synopsis><code mime="text/x-gjs">
+function factory_register_type(g_type: GType, family: Gio.SocketFamily, type: Gio.SocketType, protocol: Number): void {
+    // Gjs wrapper for g_socket_connection_factory_register_type()
+}
+  </code></synopsis>
+  <p>Looks up the <link xref="GLib.Type"/> to be used when creating socket connections on
+sockets with the specified <code>family</code>, <code>type</code> and <code>protocol</code>.</p>  <p>If no type is registered, the <link xref="Gio.SocketConnection"/> base type is returned.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>g_type</code></title>
+  <p>a <link xref="GLib.Type"/>, inheriting from %G_TYPE_SOCKET_CONNECTION</p>
+</item>
+<item>
+<title><code>family</code></title>
+  <p>a <link xref="Gio.SocketFamily"/></p>
+</item>
+<item>
+<title><code>type</code></title>
+  <p>a <link xref="Gio.SocketType"/></p>
+</item>
+<item>
+<title><code>protocol</code></title>
+  <p>a protocol id</p>
+</item>
+</terms>
+
+</page>

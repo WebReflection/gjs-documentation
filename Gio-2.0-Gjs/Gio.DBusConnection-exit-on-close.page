@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusConnection-exit-on-close"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusConnection" group="property" type="guide"/>
+    <title type="link" role="topic">exit-on-close</title>
+  </info>
+  <title>Gio.DBusConnection.exit_on_close</title>
+  <synopsis><code mime="text/x-gjs">
+DBusConnection.exit_on_close: Boolean (Read / Write)
+  </code></synopsis>
+  <p>A boolean specifying whether the process will be terminated (by
+calling `raise(SIGTERM)`) if the connection is closed by the
+remote peer.</p>  <p>Note that <link xref="Gio.DBusConnection"/> objects returned by <link xref="Gio.bus_get_finish"/>
+and <link xref="Gio.bus_get_sync"/> will (usually) have this property set to <code>true</code>.</p>
+  <p>Since 2.26</p>
+</page>

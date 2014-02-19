@@ -1,0 +1,441 @@
+<?xml version="1.0"?>
+<page id="GLib.UnicodeScript"
+      type="topic"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>GLib.UnicodeScript</title>
+  <p>The <link xref="GLib.UnicodeScript"/> enumeration identifies different writing
+systems. The values correspond to the names as defined in the
+Unicode standard. The enumeration has been added in GLib 2.14,
+and is interchangeable with #PangoScript.</p>  <p>Note that new types may be added in the future. Applications
+should be ready to handle unknown values.
+See &lt;ulink
+url="http://www.unicode.org/reports/tr24/"&gt;Unicode Standard Annex
+#24: Script names&lt;/ulink&gt;.</p>
+
+<terms>
+<item>
+<title><code>UnicodeScript.INVALID_CODE</code></title>
+  <p>a value never returned from <link xref="GLib.unichar_get_script"/></p>
+</item>
+<item>
+<title><code>UnicodeScript.COMMON</code></title>
+  <p>a character used by multiple different scripts</p>
+</item>
+<item>
+<title><code>UnicodeScript.INHERITED</code></title>
+  <p>a mark glyph that takes its script from the
+i                             base glyph to which it is attached</p>
+</item>
+<item>
+<title><code>UnicodeScript.ARABIC</code></title>
+  <p>Arabic</p>
+</item>
+<item>
+<title><code>UnicodeScript.ARMENIAN</code></title>
+  <p>Armenian</p>
+</item>
+<item>
+<title><code>UnicodeScript.BENGALI</code></title>
+  <p>Bengali</p>
+</item>
+<item>
+<title><code>UnicodeScript.BOPOMOFO</code></title>
+  <p>Bopomofo</p>
+</item>
+<item>
+<title><code>UnicodeScript.CHEROKEE</code></title>
+  <p>Cherokee</p>
+</item>
+<item>
+<title><code>UnicodeScript.COPTIC</code></title>
+  <p>Coptic</p>
+</item>
+<item>
+<title><code>UnicodeScript.CYRILLIC</code></title>
+  <p>Cyrillic</p>
+</item>
+<item>
+<title><code>UnicodeScript.DESERET</code></title>
+  <p>Deseret</p>
+</item>
+<item>
+<title><code>UnicodeScript.DEVANAGARI</code></title>
+  <p>Devanagari</p>
+</item>
+<item>
+<title><code>UnicodeScript.ETHIOPIC</code></title>
+  <p>Ethiopic</p>
+</item>
+<item>
+<title><code>UnicodeScript.GEORGIAN</code></title>
+  <p>Georgian</p>
+</item>
+<item>
+<title><code>UnicodeScript.GOTHIC</code></title>
+  <p>Gothic</p>
+</item>
+<item>
+<title><code>UnicodeScript.GREEK</code></title>
+  <p>Greek</p>
+</item>
+<item>
+<title><code>UnicodeScript.GUJARATI</code></title>
+  <p>Gujarati</p>
+</item>
+<item>
+<title><code>UnicodeScript.GURMUKHI</code></title>
+  <p>Gurmukhi</p>
+</item>
+<item>
+<title><code>UnicodeScript.HAN</code></title>
+  <p>Han</p>
+</item>
+<item>
+<title><code>UnicodeScript.HANGUL</code></title>
+  <p>Hangul</p>
+</item>
+<item>
+<title><code>UnicodeScript.HEBREW</code></title>
+  <p>Hebrew</p>
+</item>
+<item>
+<title><code>UnicodeScript.HIRAGANA</code></title>
+  <p>Hiragana</p>
+</item>
+<item>
+<title><code>UnicodeScript.KANNADA</code></title>
+  <p>Kannada</p>
+</item>
+<item>
+<title><code>UnicodeScript.KATAKANA</code></title>
+  <p>Katakana</p>
+</item>
+<item>
+<title><code>UnicodeScript.KHMER</code></title>
+  <p>Khmer</p>
+</item>
+<item>
+<title><code>UnicodeScript.LAO</code></title>
+  <p>Lao</p>
+</item>
+<item>
+<title><code>UnicodeScript.LATIN</code></title>
+  <p>Latin</p>
+</item>
+<item>
+<title><code>UnicodeScript.MALAYALAM</code></title>
+  <p>Malayalam</p>
+</item>
+<item>
+<title><code>UnicodeScript.MONGOLIAN</code></title>
+  <p>Mongolian</p>
+</item>
+<item>
+<title><code>UnicodeScript.MYANMAR</code></title>
+  <p>Myanmar</p>
+</item>
+<item>
+<title><code>UnicodeScript.OGHAM</code></title>
+  <p>Ogham</p>
+</item>
+<item>
+<title><code>UnicodeScript.OLD_ITALIC</code></title>
+  <p>Old Italic</p>
+</item>
+<item>
+<title><code>UnicodeScript.ORIYA</code></title>
+  <p>Oriya</p>
+</item>
+<item>
+<title><code>UnicodeScript.RUNIC</code></title>
+  <p>Runic</p>
+</item>
+<item>
+<title><code>UnicodeScript.SINHALA</code></title>
+  <p>Sinhala</p>
+</item>
+<item>
+<title><code>UnicodeScript.SYRIAC</code></title>
+  <p>Syriac</p>
+</item>
+<item>
+<title><code>UnicodeScript.TAMIL</code></title>
+  <p>Tamil</p>
+</item>
+<item>
+<title><code>UnicodeScript.TELUGU</code></title>
+  <p>Telugu</p>
+</item>
+<item>
+<title><code>UnicodeScript.THAANA</code></title>
+  <p>Thaana</p>
+</item>
+<item>
+<title><code>UnicodeScript.THAI</code></title>
+  <p>Thai</p>
+</item>
+<item>
+<title><code>UnicodeScript.TIBETAN</code></title>
+  <p>Tibetan</p>
+</item>
+<item>
+<title><code>UnicodeScript.CANADIAN_ABORIGINAL</code></title>
+  <p>Canadian Aboriginal</p>
+</item>
+<item>
+<title><code>UnicodeScript.YI</code></title>
+  <p>Yi</p>
+</item>
+<item>
+<title><code>UnicodeScript.TAGALOG</code></title>
+  <p>Tagalog</p>
+</item>
+<item>
+<title><code>UnicodeScript.HANUNOO</code></title>
+  <p>Hanunoo</p>
+</item>
+<item>
+<title><code>UnicodeScript.BUHID</code></title>
+  <p>Buhid</p>
+</item>
+<item>
+<title><code>UnicodeScript.TAGBANWA</code></title>
+  <p>Tagbanwa</p>
+</item>
+<item>
+<title><code>UnicodeScript.BRAILLE</code></title>
+  <p>Braille</p>
+</item>
+<item>
+<title><code>UnicodeScript.CYPRIOT</code></title>
+  <p>Cypriot</p>
+</item>
+<item>
+<title><code>UnicodeScript.LIMBU</code></title>
+  <p>Limbu</p>
+</item>
+<item>
+<title><code>UnicodeScript.OSMANYA</code></title>
+  <p>Osmanya</p>
+</item>
+<item>
+<title><code>UnicodeScript.SHAVIAN</code></title>
+  <p>Shavian</p>
+</item>
+<item>
+<title><code>UnicodeScript.LINEAR_B</code></title>
+  <p>Linear B</p>
+</item>
+<item>
+<title><code>UnicodeScript.TAI_LE</code></title>
+  <p>Tai Le</p>
+</item>
+<item>
+<title><code>UnicodeScript.UGARITIC</code></title>
+  <p>Ugaritic</p>
+</item>
+<item>
+<title><code>UnicodeScript.NEW_TAI_LUE</code></title>
+  <p>New Tai Lue</p>
+</item>
+<item>
+<title><code>UnicodeScript.BUGINESE</code></title>
+  <p>Buginese</p>
+</item>
+<item>
+<title><code>UnicodeScript.GLAGOLITIC</code></title>
+  <p>Glagolitic</p>
+</item>
+<item>
+<title><code>UnicodeScript.TIFINAGH</code></title>
+  <p>Tifinagh</p>
+</item>
+<item>
+<title><code>UnicodeScript.SYLOTI_NAGRI</code></title>
+  <p>Syloti Nagri</p>
+</item>
+<item>
+<title><code>UnicodeScript.OLD_PERSIAN</code></title>
+  <p>Old Persian</p>
+</item>
+<item>
+<title><code>UnicodeScript.KHAROSHTHI</code></title>
+  <p>Kharoshthi</p>
+</item>
+<item>
+<title><code>UnicodeScript.UNKNOWN</code></title>
+  <p>an unassigned code point</p>
+</item>
+<item>
+<title><code>UnicodeScript.BALINESE</code></title>
+  <p>Balinese</p>
+</item>
+<item>
+<title><code>UnicodeScript.CUNEIFORM</code></title>
+  <p>Cuneiform</p>
+</item>
+<item>
+<title><code>UnicodeScript.PHOENICIAN</code></title>
+  <p>Phoenician</p>
+</item>
+<item>
+<title><code>UnicodeScript.PHAGS_PA</code></title>
+  <p>Phags-pa</p>
+</item>
+<item>
+<title><code>UnicodeScript.NKO</code></title>
+  <p>N'Ko</p>
+</item>
+<item>
+<title><code>UnicodeScript.KAYAH_LI</code></title>
+  <p>Kayah Li. Since 2.16.3</p>
+</item>
+<item>
+<title><code>UnicodeScript.LEPCHA</code></title>
+  <p>Lepcha. Since 2.16.3</p>
+</item>
+<item>
+<title><code>UnicodeScript.REJANG</code></title>
+  <p>Rejang. Since 2.16.3</p>
+</item>
+<item>
+<title><code>UnicodeScript.SUNDANESE</code></title>
+  <p>Sundanese. Since 2.16.3</p>
+</item>
+<item>
+<title><code>UnicodeScript.SAURASHTRA</code></title>
+  <p>Saurashtra. Since 2.16.3</p>
+</item>
+<item>
+<title><code>UnicodeScript.CHAM</code></title>
+  <p>Cham. Since 2.16.3</p>
+</item>
+<item>
+<title><code>UnicodeScript.OL_CHIKI</code></title>
+  <p>Ol Chiki. Since 2.16.3</p>
+</item>
+<item>
+<title><code>UnicodeScript.VAI</code></title>
+  <p>Vai. Since 2.16.3</p>
+</item>
+<item>
+<title><code>UnicodeScript.CARIAN</code></title>
+  <p>Carian. Since 2.16.3</p>
+</item>
+<item>
+<title><code>UnicodeScript.LYCIAN</code></title>
+  <p>Lycian. Since 2.16.3</p>
+</item>
+<item>
+<title><code>UnicodeScript.LYDIAN</code></title>
+  <p>Lydian. Since 2.16.3</p>
+</item>
+<item>
+<title><code>UnicodeScript.AVESTAN</code></title>
+  <p>Avestan. Since 2.26</p>
+</item>
+<item>
+<title><code>UnicodeScript.BAMUM</code></title>
+  <p>Bamum. Since 2.26</p>
+</item>
+<item>
+<title><code>UnicodeScript.EGYPTIAN_HIEROGLYPHS</code></title>
+  <p>Egyptian Hieroglpyhs. Since 2.26</p>
+</item>
+<item>
+<title><code>UnicodeScript.IMPERIAL_ARAMAIC</code></title>
+  <p>Imperial Aramaic. Since 2.26</p>
+</item>
+<item>
+<title><code>UnicodeScript.INSCRIPTIONAL_PAHLAVI</code></title>
+  <p>Inscriptional Pahlavi. Since 2.26</p>
+</item>
+<item>
+<title><code>UnicodeScript.INSCRIPTIONAL_PARTHIAN</code></title>
+  <p>Inscriptional Parthian. Since 2.26</p>
+</item>
+<item>
+<title><code>UnicodeScript.JAVANESE</code></title>
+  <p>Javanese. Since 2.26</p>
+</item>
+<item>
+<title><code>UnicodeScript.KAITHI</code></title>
+  <p>Kaithi. Since 2.26</p>
+</item>
+<item>
+<title><code>UnicodeScript.LISU</code></title>
+  <p>Lisu. Since 2.26</p>
+</item>
+<item>
+<title><code>UnicodeScript.MEETEI_MAYEK</code></title>
+  <p>Meetei Mayek. Since 2.26</p>
+</item>
+<item>
+<title><code>UnicodeScript.OLD_SOUTH_ARABIAN</code></title>
+  <p>Old South Arabian. Since 2.26</p>
+</item>
+<item>
+<title><code>UnicodeScript.OLD_TURKIC</code></title>
+  <p>Old Turkic. Since 2.28</p>
+</item>
+<item>
+<title><code>UnicodeScript.SAMARITAN</code></title>
+  <p>Samaritan. Since 2.26</p>
+</item>
+<item>
+<title><code>UnicodeScript.TAI_THAM</code></title>
+  <p>Tai Tham. Since 2.26</p>
+</item>
+<item>
+<title><code>UnicodeScript.TAI_VIET</code></title>
+  <p>Tai Viet. Since 2.26</p>
+</item>
+<item>
+<title><code>UnicodeScript.BATAK</code></title>
+  <p>Batak. Since 2.28</p>
+</item>
+<item>
+<title><code>UnicodeScript.BRAHMI</code></title>
+  <p>Brahmi. Since 2.28</p>
+</item>
+<item>
+<title><code>UnicodeScript.MANDAIC</code></title>
+  <p>Mandaic. Since 2.28</p>
+</item>
+<item>
+<title><code>UnicodeScript.CHAKMA</code></title>
+  <p>Chakma. Since: 2.32</p>
+</item>
+<item>
+<title><code>UnicodeScript.MEROITIC_CURSIVE</code></title>
+  <p>Meroitic Cursive. Since: 2.32</p>
+</item>
+<item>
+<title><code>UnicodeScript.MEROITIC_HIEROGLYPHS</code></title>
+  <p>Meroitic Hieroglyphs. Since: 2.32</p>
+</item>
+<item>
+<title><code>UnicodeScript.MIAO</code></title>
+  <p>Miao. Since: 2.32</p>
+</item>
+<item>
+<title><code>UnicodeScript.SHARADA</code></title>
+  <p>Sharada. Since: 2.32</p>
+</item>
+<item>
+<title><code>UnicodeScript.SORA_SOMPENG</code></title>
+  <p>Sora Sompeng. Since: 2.32</p>
+</item>
+<item>
+<title><code>UnicodeScript.TAKRI</code></title>
+  <p>Takri. Since: 2.32</p>
+</item>
+</terms>
+
+</page>

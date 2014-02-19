@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<page id="Gio.Icon.new_for_string"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Icon" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.Icon</api:type>
+      </api:returns>
+      <api:name>g_icon_new_for_string</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>str</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.Icon.new_for_string</title>
+  <synopsis><code mime="text/x-gjs">
+function new_for_string(str: String): Gio.Icon {
+    // Gjs wrapper for g_icon_new_for_string()
+}
+  </code></synopsis>
+  <p>Generate a <link xref="Gio.Icon"/> instance from <code>str</code>. This function can fail if
+<code>str</code> is not valid - see <link xref="Gio.Icon.to_string"/> for discussion.</p>  <p>If your application or library provides one or more <link xref="Gio.Icon"/>
+implementations you need to ensure that each <link xref="GLib.Type"/> is registered
+with the type system prior to calling <link xref="Gio.icon_new_for_string"/>.</p>
+  <p>Since 2.20</p>
+<terms>
+<item>
+<title><code>str</code></title>
+  <p>A string obtained via <link xref="Gio.Icon.to_string"/>.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page id="GLib.TIME_SPAN_MINUTE"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>GLib.TIME_SPAN_MINUTE</title>
+  <p>Evaluates to a time span of one minute.</p>
+  <p>Since 2.26</p>
+</page>

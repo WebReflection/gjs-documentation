@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gio.ProxyResolver-lookup_finish"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.ProxyResolver" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.ProxyResolver::lookup_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_lookup_finish(result: Gio.AsyncResult): Array(String) {
+}
+  </code></synopsis>
+  <p>Call this function to obtain the array of proxy URIs when
+<link xref="Gio.ProxyResolver.lookup_async"/> is complete. See
+<link xref="Gio.ProxyResolver.lookup"/> for more details.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>the result passed to your <link xref="Gio.AsyncReadyCallback"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>A
+              NULL-terminated array of proxy URIs. Must be freed
+              with <link xref="GLib.strfreev"/>.</p>
+</item>
+</terms>
+
+</page>

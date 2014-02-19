@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.InputVector-buffer"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.InputVector" group="field" type="guide"/>
+    <title type="link" role="topic">buffer</title>
+  </info>
+  <title>Gio.InputVector.buffer</title>
+  <synopsis><code mime="text/x-gjs">
+InputVector.buffer: gpointer (Read)
+  </code></synopsis>
+  <p>Pointer to a buffer where data will be written.</p>
+
+</page>

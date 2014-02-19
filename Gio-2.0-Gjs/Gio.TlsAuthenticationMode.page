@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Gio.TlsAuthenticationMode"
+      type="topic"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Gio.TlsAuthenticationMode</title>
+  <p>The client authentication mode for a <link xref="Gio.TlsServerConnection"/>.</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>TlsAuthenticationMode.NONE</code></title>
+  <p>client authentication not required</p>
+</item>
+<item>
+<title><code>TlsAuthenticationMode.REQUESTED</code></title>
+  <p>client authentication is requested</p>
+</item>
+<item>
+<title><code>TlsAuthenticationMode.REQUIRED</code></title>
+  <p>client authentication is required</p>
+</item>
+</terms>
+
+</page>

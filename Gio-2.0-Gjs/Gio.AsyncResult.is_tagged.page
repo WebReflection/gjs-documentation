@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gio.AsyncResult.is_tagged"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.AsyncResult" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_async_result_is_tagged</api:name>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>source_tag</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.AsyncResult.prototype.is_tagged</title>
+  <synopsis><code mime="text/x-gjs">
+function is_tagged(source_tag: gpointer): Boolean {
+    // Gjs wrapper for g_async_result_is_tagged()
+}
+  </code></synopsis>
+  <p>Checks if <code>res</code> has the given <code>source_tag</code> (generally a function
+pointer indicating the function <code>res</code> was created by).</p>
+  <p>Since 2.34</p>
+<terms>
+<item>
+<title><code>source_tag</code></title>
+  <p>an application-defined tag</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

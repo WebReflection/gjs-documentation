@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusServer"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>Gio.DBusServer</title>
+  <synopsis><code>
+const Gio = imports.gi.Gio;
+
+let dBusServer = new Gio.DBusServer({
+    <link xref='Gio.DBusServer-address'>address</link>: value,
+    <link xref='Gio.DBusServer-authentication-observer'>authentication_observer</link>: value,
+    <link xref='Gio.DBusServer-flags'>flags</link>: value,
+    <link xref='Gio.DBusServer-guid'>guid</link>: value,
+});
+  </code></synopsis>
+  <p><link xref="Gio.DBusServer"/> is a helper for listening to and accepting D-Bus
+connections. This can be used to create a new D-Bus server, allowing two
+peers to use the D-Bus protocol for their own specialized communication.
+A server instance provided in this way will not perform message routing or
+implement the org.freedesktop.DBus interface.</p>  <p>To just export an object on a well-known name on a message bus, such as the
+session or system bus, you should instead use <link xref="Gio.bus_own_name"/>.</p>  <p>An example of peer-to-peer communication with G-DBus can be found
+in [gdbus-example-peer.c](https://git.gnome.org/browse/glib/tree/gio/tests/gdbus-example-peer.c).</p>
+  <p>Since 2.26</p>
+  <synopsis>
+    <title>Hierarchy</title>
+    <tree>
+      <item>
+        <code>GObject.Object</code>
+      <item>
+        <code>Gio.DBusServer</code>
+      </item>
+      </item>
+    </tree>
+  </synopsis>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="property" style="linklist">
+    <title>Properties</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="signal" style="linklist">
+    <title>Signals</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="vfunc" style="linklist">
+    <title>Virtual functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

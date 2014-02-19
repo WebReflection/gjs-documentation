@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusObjectManagerServer-connection"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusObjectManagerServer" group="property" type="guide"/>
+    <title type="link" role="topic">connection</title>
+  </info>
+  <title>Gio.DBusObjectManagerServer.connection</title>
+  <synopsis><code mime="text/x-gjs">
+DBusObjectManagerServer.connection: Gio.DBusConnection (Read / Write)
+  </code></synopsis>
+  <p>The <link xref="Gio.DBusConnection"/> to export objects on.</p>
+  <p>Since 2.30</p>
+</page>

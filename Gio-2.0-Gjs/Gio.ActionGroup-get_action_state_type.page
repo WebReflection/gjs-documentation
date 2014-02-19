@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="Gio.ActionGroup-get_action_state_type"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.ActionGroup" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.ActionGroup::get_action_state_type</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_get_action_state_type(action_name: String): GLib.VariantType {
+}
+  </code></synopsis>
+  <p>Queries the type of the state of the named action within
+<code>action_group</code>.</p>  <p>If the action is stateful then this function returns the
+<link xref="GLib.VariantType"/> of the state.  All calls to
+<link xref="Gio.ActionGroup.change_action_state"/> must give a <link xref="GLib.Variant"/> of this
+type and <link xref="Gio.ActionGroup.get_action_state"/> will return a <link xref="GLib.Variant"/>
+of the same type.</p>  <p>If the action is not stateful then this function will return <code>null</code>.
+In that case, <link xref="Gio.ActionGroup.get_action_state"/> will return <code>null</code>
+and you must not call <link xref="Gio.ActionGroup.change_action_state"/>.</p>  <p>The state type of a particular action will never change but it is
+possible for an action to be removed and for a new action to be added
+with the same name but a different state type.</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>action_name</code></title>
+  <p>the name of the action to query</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the state type, if the action is stateful</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<page id="Gio.TlsDatabase.lookup_certificate_for_handle_async"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.TlsDatabase" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_tls_database_lookup_certificate_for_handle_async</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>handle</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.TlsInteraction</api:type>
+        <api:name>interaction</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.TlsDatabaseLookupFlags</api:type>
+        <api:name>flags</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.AsyncReadyCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.TlsDatabase.prototype.lookup_certificate_for_handle_async</title>
+  <synopsis><code mime="text/x-gjs">
+function lookup_certificate_for_handle_async(handle: String, interaction: Gio.TlsInteraction, flags: Gio.TlsDatabaseLookupFlags, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+    // Gjs wrapper for g_tls_database_lookup_certificate_for_handle_async()
+}
+  </code></synopsis>
+  <p>Asynchronously lookup a certificate by its handle in the database. See
+<link xref="Gio.TlsDatabase.lookup_certificate_for_handle"/> for more information.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>handle</code></title>
+  <p>a certificate handle</p>
+</item>
+<item>
+<title><code>interaction</code></title>
+  <p>used to interact with the user if necessary</p>
+</item>
+<item>
+<title><code>flags</code></title>
+  <p>Flags which affect the lookup.</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>a <link xref="Gio.Cancellable"/>, or <code>null</code></p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>callback to call when the operation completes</p>
+</item>
+</terms>
+
+</page>

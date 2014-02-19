@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.FileAttributeInfo-type"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.FileAttributeInfo" group="field" type="guide"/>
+    <title type="link" role="topic">type</title>
+  </info>
+  <title>Gio.FileAttributeInfo.type</title>
+  <synopsis><code mime="text/x-gjs">
+FileAttributeInfo.type: Gio.FileAttributeType (Read / Write)
+  </code></synopsis>
+  <p>the <link xref="Gio.FileAttributeType"/> type of the attribute.</p>
+
+</page>

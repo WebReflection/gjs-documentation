@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Gio.SocketConnectable.proxy_enumerate"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.SocketConnectable" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.SocketAddressEnumerator</api:type>
+      </api:returns>
+      <api:name>g_socket_connectable_proxy_enumerate</api:name>
+    </api:function>
+  </info>
+  <title>Gio.SocketConnectable.prototype.proxy_enumerate</title>
+  <synopsis><code mime="text/x-gjs">
+function proxy_enumerate(): Gio.SocketAddressEnumerator {
+    // Gjs wrapper for g_socket_connectable_proxy_enumerate()
+}
+  </code></synopsis>
+  <p>Creates a <link xref="Gio.SocketAddressEnumerator"/> for <code>connectable</code> that will
+return #GProxyAddresses for addresses that you must connect
+to via a proxy.</p>  <p>If <code>connectable</code> does not implement
+<link xref="Gio.SocketConnectable.proxy_enumerate"/>, this will fall back to
+calling <link xref="Gio.SocketConnectable.enumerate"/>.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

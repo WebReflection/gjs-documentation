@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<page id="GObject.TypePlugin.use"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.TypePlugin" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_type_plugin_use</api:name>
+    </api:function>
+  </info>
+  <title>GObject.TypePlugin.prototype.use</title>
+  <synopsis><code mime="text/x-gjs">
+function use(): void {
+    // Gjs wrapper for g_type_plugin_use()
+}
+  </code></synopsis>
+  <p>Calls the @use_plugin function from the <link xref="GObject.TypePluginClass"/> of
+<code>plugin</code>.  There should be no need to use this function outside of
+the GObject type system itself.</p>
+
+
+</page>

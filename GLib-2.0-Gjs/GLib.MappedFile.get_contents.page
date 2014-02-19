@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="GLib.MappedFile.get_contents"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.MappedFile" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_mapped_file_get_contents</api:name>
+    </api:function>
+  </info>
+  <title>GLib.MappedFile.prototype.get_contents</title>
+  <synopsis><code mime="text/x-gjs">
+function get_contents(): String {
+    // Gjs wrapper for g_mapped_file_get_contents()
+}
+  </code></synopsis>
+  <p>Returns the contents of a <link xref="GLib.MappedFile"/>.</p>  <p>Note that the contents may not be zero-terminated,
+even if the <link xref="GLib.MappedFile"/> is backed by a text file.</p>  <p>If the file is empty then <code>null</code> is returned.</p>
+  <p>Since 2.8</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

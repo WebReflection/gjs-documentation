@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page id="GObject.TypeInfo-class_finalize"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.TypeInfo" group="field" type="guide"/>
+    <title type="link" role="topic">class_finalize</title>
+  </info>
+  <title>GObject.TypeInfo.class_finalize</title>
+  <synopsis><code mime="text/x-gjs">
+TypeInfo.class_finalize: GObject.ClassFinalizeFunc (Read)
+  </code></synopsis>
+  <p>Location of the class finalization function for
+ classed and instantiatable types. Location fo the default vtable
+ finalization function for interface types. (optional)</p>
+
+</page>

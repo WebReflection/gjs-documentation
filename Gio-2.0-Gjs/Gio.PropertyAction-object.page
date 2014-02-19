@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.PropertyAction-object"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.PropertyAction" group="property" type="guide"/>
+    <title type="link" role="topic">object</title>
+  </info>
+  <title>Gio.PropertyAction.object</title>
+  <synopsis><code mime="text/x-gjs">
+PropertyAction.object: GObject.Object (Write / Construct Only)
+  </code></synopsis>
+  <p>The object to wrap a property on.</p>  <p>The object must be a non-<code>null</code> <link xref="GObject.Object"/> with properties.</p>
+  <p>Since 2.38</p>
+</page>

@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<page id="GObject.param_value_validate"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_param_value_validate</api:name>
+      <api:arg>
+        <api:type>GObject.ParamSpec</api:type>
+        <api:name>pspec</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Value</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.param_value_validate</title>
+  <synopsis><code mime="text/x-gjs">
+function param_value_validate(pspec: GObject.ParamSpec, value: GObject.Value): Boolean {
+    // Gjs wrapper for g_param_value_validate()
+}
+  </code></synopsis>
+  <p>Ensures that the contents of <code>value</code> comply with the specifications
+set out by <code>pspec</code>. For example, a <link xref="GObject.ParamSpecInt"/> might require
+that integers stored in <code>value</code> may not be smaller than -42 and not be
+greater than +42. If <code>value</code> contains an integer outside of this range,
+it is modified accordingly, so the resulting value will fit into the
+range -42 .. +42.</p>
+
+<terms>
+<item>
+<title><code>pspec</code></title>
+  <p>a valid <link xref="GObject.ParamSpec"/></p>
+</item>
+<item>
+<title><code>value</code></title>
+  <p>a <link xref="GObject.Value"/> of correct type for <code>pspec</code></p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

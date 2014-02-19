@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.FileInfo.get_is_hidden"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.FileInfo" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_file_info_get_is_hidden</api:name>
+    </api:function>
+  </info>
+  <title>Gio.FileInfo.prototype.get_is_hidden</title>
+  <synopsis><code mime="text/x-gjs">
+function get_is_hidden(): Boolean {
+    // Gjs wrapper for g_file_info_get_is_hidden()
+}
+  </code></synopsis>
+  <p>Checks if a file is hidden.</p>
+
+<terms>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<page id="GObject.type_get_qdata"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>gpointer</api:type>
+      </api:returns>
+      <api:name>g_type_get_qdata</api:name>
+      <api:arg>
+        <api:type>GType</api:type>
+        <api:name>type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.Quark</api:type>
+        <api:name>quark</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.type_get_qdata</title>
+  <synopsis><code mime="text/x-gjs">
+function type_get_qdata(type: GType, quark: GLib.Quark): gpointer {
+    // Gjs wrapper for g_type_get_qdata()
+}
+  </code></synopsis>
+  <p>Obtains data which has previously been attached to <code>type</code>
+with <link xref="GObject.type_set_qdata"/>.</p>  <p>Note that this does not take subtyping into account; data
+attached to one type with <link xref="GObject.type_set_qdata"/> cannot
+be retrieved from a subtype using <link xref="GObject.type_get_qdata"/>.</p>
+
+<terms>
+<item>
+<title><code>type</code></title>
+  <p>a <link xref="GLib.Type"/></p>
+</item>
+<item>
+<title><code>quark</code></title>
+  <p>a <link xref="GLib.Quark"/> id to identify the data</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

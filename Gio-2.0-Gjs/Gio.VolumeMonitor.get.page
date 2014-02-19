@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.VolumeMonitor.get"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.VolumeMonitor" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.VolumeMonitor</api:type>
+      </api:returns>
+      <api:name>g_volume_monitor_get</api:name>
+    </api:function>
+  </info>
+  <title>Gio.VolumeMonitor.get</title>
+  <synopsis><code mime="text/x-gjs">
+function get(): Gio.VolumeMonitor {
+    // Gjs wrapper for g_volume_monitor_get()
+}
+  </code></synopsis>
+  <p>Gets the volume monitor used by gio.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="GLib.unichar_digit_value"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number</api:type>
+      </api:returns>
+      <api:name>g_unichar_digit_value</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>c</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.unichar_digit_value</title>
+  <synopsis><code mime="text/x-gjs">
+function unichar_digit_value(c: String): Number {
+    // Gjs wrapper for g_unichar_digit_value()
+}
+  </code></synopsis>
+  <p>Determines the numeric value of a character as a decimal
+digit.</p>
+
+<terms>
+<item>
+<title><code>c</code></title>
+  <p>a Unicode character</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

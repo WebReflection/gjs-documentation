@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<page id="GLib.file_test"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_file_test</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>filename</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.FileTest</api:type>
+        <api:name>test</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.file_test</title>
+  <synopsis><code mime="text/x-gjs">
+function file_test(filename: String, test: GLib.FileTest): Boolean {
+    // Gjs wrapper for g_file_test()
+}
+  </code></synopsis>
+  <p>Returns <code>true</code> if any of the tests in the bitfield <code>test</code> are
+<code>true</code>. For example, `(G_FILE_TEST_EXISTS | G_FILE_TEST_IS_DIR)`
+will return <code>true</code> if the file exists; the check whether it's a
+directory doesn't matter since the existence test is <code>true</code>. With
+the current set of available tests, there's no point passing in
+more than one test at a time.</p>  <p>Apart from <link xref="GLib.FileTest"/>.is_symlink all tests follow symbolic links,
+so for a symbolic link to a regular file <link xref="GLib.file_test"/> will return
+<code>true</code> for both <link xref="GLib.FileTest"/>.is_symlink and <link xref="GLib.FileTest"/>.is_regular.</p>  <p>Note, that for a dangling symbolic link <link xref="GLib.file_test"/> will return
+<code>true</code> for <link xref="GLib.FileTest"/>.is_symlink and <code>false</code> for all other flags.</p>  <p>You should never use <link xref="GLib.file_test"/> to test whether it is safe
+to perform an operation, because there is always the possibility
+of the condition changing before you actually perform the operation.
+For example, you might think you could use <link xref="GLib.FileTest"/>.is_symlink
+to know whether it is safe to write to a file without being
+tricked into writing into a different location. It doesn't work!
+|[&lt;!-- language="C" --&gt;
+ // DON'T DO THIS
+ if (!g_file_test (filename, G_FILE_TEST_IS_SYMLINK))
+   {
+     fd = g_open (filename, O_WRONLY);
+     // write to fd
+   }
+]|</p>  <p>Another thing to note is that <link xref="GLib.FileTest"/>.exists and
+<link xref="GLib.FileTest"/>.is_executable are implemented using the access()
+system call. This usually doesn't matter, but if your program
+is setuid or setgid it means that these tests will give you
+the answer for the real user ID and group ID, rather than the
+effective user ID and group ID.</p>  <p>On Windows, there are no symlinks, so testing for
+<link xref="GLib.FileTest"/>.is_symlink will always return <code>false</code>. Testing for
+<link xref="GLib.FileTest"/>.is_executable will just check that the file exists and
+its name indicates that it is executable, checking for well-known
+extensions and those listed in the `PATHEXT` environment variable.</p>
+
+<terms>
+<item>
+<title><code>filename</code></title>
+  <p>a filename to test in the GLib file name encoding</p>
+</item>
+<item>
+<title><code>test</code></title>
+  <p>bitfield of <link xref="GLib.FileTest"/> flags</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

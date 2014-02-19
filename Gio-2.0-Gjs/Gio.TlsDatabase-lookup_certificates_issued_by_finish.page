@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<page id="Gio.TlsDatabase-lookup_certificates_issued_by_finish"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.TlsDatabase" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.TlsDatabase::lookup_certificates_issued_by_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_lookup_certificates_issued_by_finish(result: Gio.AsyncResult): Array(Gio.TlsCertificate) {
+}
+  </code></synopsis>
+  <p>Finish an asynchronous lookup of certificates. See
+<link xref="Gio.TlsDatabase.lookup_certificates_issued_by"/> for more information.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>a <link xref="Gio.AsyncResult"/>.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a newly allocated list of <link xref="Gio.TlsCertificate"/>
+objects. Use <link xref="GObject.unref"/> on each certificate, and <link xref="GLib.free"/> on the release the list.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<page id="GLib.HFunc"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>GLib.HFunc</title>
+  <synopsis><code mime="text/x-gjs">
+function onHFunc(key: gpointer, value: gpointer): void {
+}
+  </code></synopsis>
+  <p>Specifies the type of the function passed to <link xref="GLib.foreach"/>.
+It is called with each key/value pair, together with the <code>user_data</code>
+parameter which is passed to <link xref="GLib.foreach"/>.</p>
+
+<terms>
+<item>
+<title><code>key</code></title>
+  <p>a key</p>
+</item>
+<item>
+<title><code>value</code></title>
+  <p>the value corresponding to the key</p>
+</item>
+</terms>
+
+</page>

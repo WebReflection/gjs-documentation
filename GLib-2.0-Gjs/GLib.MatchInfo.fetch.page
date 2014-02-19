@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<page id="GLib.MatchInfo.fetch"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.MatchInfo" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_match_info_fetch</api:name>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>match_num</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.MatchInfo.prototype.fetch</title>
+  <synopsis><code mime="text/x-gjs">
+function fetch(match_num: Number): String {
+    // Gjs wrapper for g_match_info_fetch()
+}
+  </code></synopsis>
+  <p>Retrieves the text matching the <code>match_num</code>'th capturing
+parentheses. 0 is the full text of the match, 1 is the first paren
+set, 2 the second, and so on.</p>  <p>If <code>match_num</code> is a valid sub pattern but it didn't match anything
+(e.g. sub pattern 1, matching "b" against "(a)?b") then an empty
+string is returned.</p>  <p>If the match was obtained using the DFA algorithm, that is using
+<link xref="GLib.match_all"/> or <link xref="GLib.match_all_full"/>, the retrieved
+string is not that of a set of parentheses but that of a matched
+substring. Substrings are matched in reverse order of length, so
+0 is the longest match.</p>  <p>The string is fetched from the string passed to the match function,
+so you cannot call this function after freeing the string.</p>
+  <p>Since 2.14</p>
+<terms>
+<item>
+<title><code>match_num</code></title>
+  <p>number of the sub expression</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

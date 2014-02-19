@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="GLib.unicode_script_from_iso15924"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.UnicodeScript</api:type>
+      </api:returns>
+      <api:name>g_unicode_script_from_iso15924</api:name>
+      <api:arg>
+        <api:type>guint32</api:type>
+        <api:name>iso15924</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.unicode_script_from_iso15924</title>
+  <synopsis><code mime="text/x-gjs">
+function unicode_script_from_iso15924(iso15924: guint32): GLib.UnicodeScript {
+    // Gjs wrapper for g_unicode_script_from_iso15924()
+}
+  </code></synopsis>
+  <p>Looks up the Unicode script for <code>iso15924</code>.  ISO 15924 assigns four-letter
+codes to scripts.  For example, the code for Arabic is 'Arab'.
+This function accepts four letter codes encoded as a @guint32 in a
+big-endian fashion.  That is, the code expected for Arabic is
+0x41726162 (0x41 is ASCII code for 'A', 0x72 is ASCII code for 'r', etc).</p>  <p>See
+[Codes for the representation of names of scripts](http://unicode.org/iso15924/codelists.html)
+for details.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>iso15924</code></title>
+  <p>a Unicode script</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

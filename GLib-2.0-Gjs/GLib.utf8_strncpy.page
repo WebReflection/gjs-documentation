@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<page id="GLib.utf8_strncpy"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_utf8_strncpy</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>dest</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>src</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gsize</api:type>
+        <api:name>n</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.utf8_strncpy</title>
+  <synopsis><code mime="text/x-gjs">
+function utf8_strncpy(dest: String, src: String, n: gsize): String {
+    // Gjs wrapper for g_utf8_strncpy()
+}
+  </code></synopsis>
+  <p>Like the standard C strncpy() function, but copies a given number
+of characters instead of a given number of bytes. The <code>src</code> string
+must be valid UTF-8 encoded text. (Use <link xref="GLib.utf8_validate"/> on all
+text before trying to use UTF-8 utility functions with it.)</p>
+
+<terms>
+<item>
+<title><code>dest</code></title>
+  <p>buffer to fill with characters from <code>src</code></p>
+</item>
+<item>
+<title><code>src</code></title>
+  <p>UTF-8 encoded string</p>
+</item>
+<item>
+<title><code>n</code></title>
+  <p>character count</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

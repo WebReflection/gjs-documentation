@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<page id="GLib.poll"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number</api:type>
+      </api:returns>
+      <api:name>g_poll</api:name>
+      <api:arg>
+        <api:type>GLib.PollFD</api:type>
+        <api:name>fds</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>nfds</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>timeout</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.poll</title>
+  <synopsis><code mime="text/x-gjs">
+function poll(fds: GLib.PollFD, nfds: Number, timeout: Number): Number {
+    // Gjs wrapper for g_poll()
+}
+  </code></synopsis>
+  <p>Polls <code>fds</code>, as with the poll() system call, but portably. (On
+systems that don't have poll(), it is emulated using select().)
+This is used internally by <link xref="GLib.MainContext"/>, but it can be called
+directly if you need to block until a file descriptor is ready, but
+don't want to run the full main loop.</p>  <p>Each element of <code>fds</code> is a <link xref="GLib.PollFD"/> describing a single file
+descriptor to poll. The %fd field indicates the file descriptor,
+and the %events field indicates the events to poll for. On return,
+the %revents fields will be filled with the events that actually
+occurred.</p>  <p>On POSIX systems, the file descriptors in <code>fds</code> can be any sort of
+file descriptor, but the situation is much more complicated on
+Windows. If you need to use <link xref="GLib.poll"/> in code that has to run on
+Windows, the easiest solution is to construct all of your
+#GPollFDs with g_io_channel_win32_make_pollfd().</p>
+  <p>Since 2.20</p>
+<terms>
+<item>
+<title><code>fds</code></title>
+  <p>file descriptors to poll</p>
+</item>
+<item>
+<title><code>nfds</code></title>
+  <p>the number of file descriptors in <code>fds</code></p>
+</item>
+<item>
+<title><code>timeout</code></title>
+  <p>amount of time to wait, in milliseconds, or -1 to wait forever</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

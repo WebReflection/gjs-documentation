@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gio.MenuItem.set_label"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.MenuItem" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_menu_item_set_label</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>label</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.MenuItem.prototype.set_label</title>
+  <synopsis><code mime="text/x-gjs">
+function set_label(label: String): void {
+    // Gjs wrapper for g_menu_item_set_label()
+}
+  </code></synopsis>
+  <p>Sets or unsets the "label" attribute of <code>menu_item</code>.</p>  <p>If <code>label</code> is non-<code>null</code> it is used as the label for the menu item.  If
+it is <code>null</code> then the label attribute is unset.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>label</code></title>
+  <p>the label to set, or <code>null</code> to unset</p>
+</item>
+</terms>
+
+</page>

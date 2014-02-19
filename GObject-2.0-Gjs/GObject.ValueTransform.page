@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<page id="GObject.ValueTransform"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>GObject.ValueTransform</title>
+  <synopsis><code mime="text/x-gjs">
+function onValueTransform(src_value: GObject.Value, dest_value: GObject.Value): void {
+}
+  </code></synopsis>
+  <p>The type of value transformation functions which can be registered with
+<link xref="GObject.value_register_transform_func"/>.</p>
+
+<terms>
+<item>
+<title><code>src_value</code></title>
+  <p>Source value.</p>
+</item>
+<item>
+<title><code>dest_value</code></title>
+  <p>Target value.</p>
+</item>
+</terms>
+
+</page>

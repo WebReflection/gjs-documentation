@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusSubtreeVTable-introspect"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusSubtreeVTable" group="field" type="guide"/>
+    <title type="link" role="topic">introspect</title>
+  </info>
+  <title>Gio.DBusSubtreeVTable.introspect</title>
+  <synopsis><code mime="text/x-gjs">
+DBusSubtreeVTable.introspect: Gio.DBusSubtreeIntrospectFunc (Read)
+  </code></synopsis>
+  <p>Function for introspecting a child node.</p>
+
+</page>

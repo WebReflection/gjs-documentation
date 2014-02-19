@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<page id="GObject.signal_type_cclosure_new"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GObject.Closure</api:type>
+      </api:returns>
+      <api:name>g_signal_type_cclosure_new</api:name>
+      <api:arg>
+        <api:type>GType</api:type>
+        <api:name>itype</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>struct_offset</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.signal_type_cclosure_new</title>
+  <synopsis><code mime="text/x-gjs">
+function signal_type_cclosure_new(itype: GType, struct_offset: Number): GObject.Closure {
+    // Gjs wrapper for g_signal_type_cclosure_new()
+}
+  </code></synopsis>
+  <p>Creates a new closure which invokes the function found at the offset
+<code>struct_offset</code> in the class structure of the interface or classed type
+identified by <code>itype</code>.</p>
+
+<terms>
+<item>
+<title><code>itype</code></title>
+  <p>the <link xref="GLib.Type"/> identifier of an interface or classed type</p>
+</item>
+<item>
+<title><code>struct_offset</code></title>
+  <p>the offset of the member function of <code>itype</code>'s class
+ structure which is to be invoked by the new closure</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

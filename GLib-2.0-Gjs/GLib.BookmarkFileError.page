@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<page id="GLib.BookmarkFileError"
+      type="topic"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>GLib.BookmarkFileError</title>
+  <p>Error codes returned by bookmark file parsing.</p>
+
+<terms>
+<item>
+<title><code>BookmarkFileError.INVALID_URI</code></title>
+  <p>URI was ill-formed</p>
+</item>
+<item>
+<title><code>BookmarkFileError.INVALID_VALUE</code></title>
+  <p>a requested field was not found</p>
+</item>
+<item>
+<title><code>BookmarkFileError.APP_NOT_REGISTERED</code></title>
+  <p>a requested application did
+    not register a bookmark</p>
+</item>
+<item>
+<title><code>BookmarkFileError.URI_NOT_FOUND</code></title>
+  <p>a requested URI was not found</p>
+</item>
+<item>
+<title><code>BookmarkFileError.READ</code></title>
+  <p>document was ill formed</p>
+</item>
+<item>
+<title><code>BookmarkFileError.UNKNOWN_ENCODING</code></title>
+  <p>the text being parsed was
+    in an unknown encoding</p>
+</item>
+<item>
+<title><code>BookmarkFileError.WRITE</code></title>
+  <p>an error occurred while writing</p>
+</item>
+<item>
+<title><code>BookmarkFileError.FILE_NOT_FOUND</code></title>
+  <p>requested file was not found</p>
+</item>
+</terms>
+
+</page>

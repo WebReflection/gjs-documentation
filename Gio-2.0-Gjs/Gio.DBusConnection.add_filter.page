@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusConnection.add_filter"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusConnection" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number</api:type>
+      </api:returns>
+      <api:name>g_dbus_connection_add_filter</api:name>
+      <api:arg>
+        <api:type>Gio.DBusMessageFilterFunction</api:type>
+        <api:name>filter_function</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DBusConnection.prototype.add_filter</title>
+  <synopsis><code mime="text/x-gjs">
+function add_filter(filter_function: Gio.DBusMessageFilterFunction): Number {
+    // Gjs wrapper for g_dbus_connection_add_filter()
+}
+  </code></synopsis>
+  <p>Adds a message filter. Filters are handlers that are run on all
+incoming and outgoing messages, prior to standard dispatch. Filters
+are run in the order that they were added.  The same handler can be
+added as a filter more than once, in which case it will be run more
+than once.  Filters added during a filter callback won't be run on
+the message being processed. Filter functions are allowed to modify
+and even drop messages.</p>  <p>Note that filters are run in a dedicated message handling thread so
+they can't block and, generally, can't do anything but signal a
+worker thread. Also note that filters are rarely needed - use API
+such as <link xref="Gio.send_message_with_reply"/>,
+<link xref="Gio.signal_subscribe"/> or <link xref="Gio.call"/> instead.</p>  <p>If a filter consumes an incoming message the message is not
+dispatched anywhere else - not even the standard dispatch machinery
+(that API such as <link xref="Gio.signal_subscribe"/> and
+<link xref="Gio.send_message_with_reply"/> relies on) will see the
+message. Similary, if a filter consumes an outgoing message, the
+message will not be sent to the other peer.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>filter_function</code></title>
+  <p>a filter function</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="Gio.AppInfo-launch_uris"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.AppInfo" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.AppInfo::launch_uris</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_launch_uris(uris: Array(String), launch_context: Gio.AppLaunchContext): Boolean {
+}
+  </code></synopsis>
+  <p>Launches the application. This passes the <code>uris</code> to the launched application
+as arguments, using the optional <code>launch_context</code> to get information
+about the details of the launcher (like what screen it is on).
+On error, @error will be set accordingly.</p>  <p>To launch the application without arguments pass a <code>null</code> <code>uris</code> list.</p>  <p>Note that even if the launch is successful the application launched
+can fail to start if it runs into problems during startup. There is
+no way to detect this.</p>
+
+<terms>
+<item>
+<title><code>uris</code></title>
+  <p>a <link xref="GLib.List"/> containing URIs to launch.</p>
+</item>
+<item>
+<title><code>launch_context</code></title>
+  <p>a <link xref="Gio.AppLaunchContext"/> or <code>null</code></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> on successful launch, <code>false</code> otherwise.</p>
+</item>
+</terms>
+
+</page>

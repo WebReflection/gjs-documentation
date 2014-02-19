@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<page id="Gio.MenuItem.set_action_and_target_value"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.MenuItem" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_menu_item_set_action_and_target_value</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>action</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.Variant</api:type>
+        <api:name>target_value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.MenuItem.prototype.set_action_and_target_value</title>
+  <synopsis><code mime="text/x-gjs">
+function set_action_and_target_value(action: String, target_value: GLib.Variant): void {
+    // Gjs wrapper for g_menu_item_set_action_and_target_value()
+}
+  </code></synopsis>
+  <p>Sets or unsets the "action" and "target" attributes of <code>menu_item</code>.</p>  <p>If <code>action</code> is <code>null</code> then both the "action" and "target" attributes
+are unset (and <code>target_value</code> is ignored).</p>  <p>If <code>action</code> is non-<code>null</code> then the "action" attribute is set.  The
+"target" attribute is then set to the value of <code>target_value</code> if it is
+non-<code>null</code> or unset otherwise.</p>  <p>Normal menu items (ie: not submenu, section or other custom item
+types) are expected to have the "action" attribute set to identify
+the action that they are associated with.  The state type of the
+action help to determine the disposition of the menu item.  See
+<link xref="Gio.Action"/> and <link xref="Gio.ActionGroup"/> for an overview of actions.</p>  <p>In general, clicking on the menu item will result in activation of
+the named action with the "target" attribute given as the parameter
+to the action invocation.  If the "target" attribute is not set then
+the action is invoked with no parameter.</p>  <p>If the action has no state then the menu item is usually drawn as a
+plain menu item (ie: with no additional decoration).</p>  <p>If the action has a boolean state then the menu item is usually drawn
+as a toggle menu item (ie: with a checkmark or equivalent
+indication).  The item should be marked as 'toggled' or 'checked'
+when the boolean state is <code>true</code>.</p>  <p>If the action has a string state then the menu item is usually drawn
+as a radio menu item (ie: with a radio bullet or equivalent
+indication).  The item should be marked as 'selected' when the string
+state is equal to the value of the @target property.</p>  <p>See <link xref="Gio.set_action_and_target"/> or
+<link xref="Gio.set_detailed_action"/> for two equivalent calls that are
+probably more convenient for most uses.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>action</code></title>
+  <p>the name of the action for this item</p>
+</item>
+<item>
+<title><code>target_value</code></title>
+  <p>a <link xref="GLib.Variant"/> to use as the action target</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Gio.MENU_LINK_SECTION"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>Gio.MENU_LINK_SECTION</title>
+  <p>The name of the link that associates a menu item with a section.  The linked
+menu will usually be shown in place of the menu item, using the item's label
+as a header.</p>  <p>See also <link xref="Gio.set_link"/>.</p>
+  <p>Since 2.32</p>
+</page>

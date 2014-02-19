@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page id="Gio.Seekable-can_truncate"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Seekable" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.Seekable::can_truncate</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_can_truncate(): Boolean {
+}
+  </code></synopsis>
+  <p>Tests if the stream can be truncated.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if the stream can be truncated, <code>false</code> otherwise.</p>
+</item>
+</terms>
+
+</page>

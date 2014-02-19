@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<page id="GLib.Func"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>GLib.Func</title>
+  <synopsis><code mime="text/x-gjs">
+function onFunc(data: gpointer): void {
+}
+  </code></synopsis>
+  <p>Specifies the type of functions passed to <link xref="GLib.foreach"/> and
+<link xref="GLib.foreach"/>.</p>
+
+<terms>
+<item>
+<title><code>data</code></title>
+  <p>the element's data</p>
+</item>
+</terms>
+
+</page>

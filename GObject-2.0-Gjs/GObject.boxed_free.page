@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="GObject.boxed_free"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_boxed_free</api:name>
+      <api:arg>
+        <api:type>GType</api:type>
+        <api:name>boxed_type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>boxed</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.boxed_free</title>
+  <synopsis><code mime="text/x-gjs">
+function boxed_free(boxed_type: GType, boxed: gpointer): void {
+    // Gjs wrapper for g_boxed_free()
+}
+  </code></synopsis>
+  <p>Free the boxed structure <code>boxed</code> which is of type <code>boxed_type</code>.</p>
+
+<terms>
+<item>
+<title><code>boxed_type</code></title>
+  <p>The type of <code>boxed</code>.</p>
+</item>
+<item>
+<title><code>boxed</code></title>
+  <p>The boxed structure to be freed.</p>
+</item>
+</terms>
+
+</page>

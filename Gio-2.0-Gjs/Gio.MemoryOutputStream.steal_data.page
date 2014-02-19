@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="Gio.MemoryOutputStream.steal_data"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.MemoryOutputStream" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>gpointer</api:type>
+      </api:returns>
+      <api:name>g_memory_output_stream_steal_data</api:name>
+    </api:function>
+  </info>
+  <title>Gio.MemoryOutputStream.prototype.steal_data</title>
+  <synopsis><code mime="text/x-gjs">
+function steal_data(): gpointer {
+    // Gjs wrapper for g_memory_output_stream_steal_data()
+}
+  </code></synopsis>
+  <p>Gets any loaded data from the <code>ostream</code>. Ownership of the data
+is transferred to the caller; when no longer needed it must be
+freed using the free function set in <code>ostream</code>'s
+<link xref="Gio.destroy-function"/> property.</p>  <p><code>ostream</code> must be closed before calling this function.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

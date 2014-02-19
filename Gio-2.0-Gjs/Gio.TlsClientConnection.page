@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<page id="Gio.TlsClientConnection"
+      type="guide"
+      style="interface"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="interface" type="guide"/>
+  </info>
+  <title>Gio.TlsClientConnection</title>
+  <synopsis><code>
+const Gio = imports.gi.Gio;
+
+let tls_client_connection = new Gio.TlsClientConnection({
+    <link xref='Gio.TlsClientConnection-server-identity'>server_identity</link>: value,
+    <link xref='Gio.TlsClientConnection-use-ssl3'>use_ssl3</link>: value,
+    <link xref='Gio.TlsClientConnection-validation-flags'>validation_flags</link>: value,
+});
+  </code></synopsis>
+  <p><link xref="Gio.TlsClientConnection"/> is the client-side subclass of
+<link xref="Gio.TlsConnection"/>, representing a client-side TLS connection.</p>
+  <p>Since 2.28</p>
+  <synopsis>
+    <title>Prerequisites</title>
+    <p>TlsClientConnection requires Gio.TlsConnection</p>
+  </synopsis>
+  <synopsis>
+    <title>Known Implementations</title>
+    <p>None</p>
+  </synopsis>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="property" style="linklist">
+    <title>Properties</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="signal" style="linklist">
+    <title>Signals</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="vfunc" style="linklist">
+    <title>Virtual functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Gio.SocketListener.set_backlog"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.SocketListener" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_socket_listener_set_backlog</api:name>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>listen_backlog</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.SocketListener.prototype.set_backlog</title>
+  <synopsis><code mime="text/x-gjs">
+function set_backlog(listen_backlog: Number): void {
+    // Gjs wrapper for g_socket_listener_set_backlog()
+}
+  </code></synopsis>
+  <p>Sets the listen backlog on the sockets in the listener.</p>  <p>See <link xref="Gio.Socket.set_listen_backlog"/> for details</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>listen_backlog</code></title>
+  <p>an integer</p>
+</item>
+</terms>
+
+</page>

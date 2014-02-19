@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="GLib.Node.n_nodes"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Node" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number</api:type>
+      </api:returns>
+      <api:name>g_node_n_nodes</api:name>
+      <api:arg>
+        <api:type>GLib.TraverseFlags</api:type>
+        <api:name>flags</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.Node.prototype.n_nodes</title>
+  <synopsis><code mime="text/x-gjs">
+function n_nodes(flags: GLib.TraverseFlags): Number {
+    // Gjs wrapper for g_node_n_nodes()
+}
+  </code></synopsis>
+  <p>Gets the number of nodes in a tree.</p>
+
+<terms>
+<item>
+<title><code>flags</code></title>
+  <p>which types of children are to be counted, one of
+    <link xref="GLib.TraverseFlags"/>.all, <link xref="GLib.TraverseFlags"/>.leaves and <link xref="GLib.TraverseFlags"/>.non_leaves</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

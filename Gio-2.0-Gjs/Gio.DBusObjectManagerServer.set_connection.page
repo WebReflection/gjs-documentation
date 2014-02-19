@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusObjectManagerServer.set_connection"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusObjectManagerServer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_dbus_object_manager_server_set_connection</api:name>
+      <api:arg>
+        <api:type>Gio.DBusConnection</api:type>
+        <api:name>connection</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DBusObjectManagerServer.prototype.set_connection</title>
+  <synopsis><code mime="text/x-gjs">
+function set_connection(connection: Gio.DBusConnection): void {
+    // Gjs wrapper for g_dbus_object_manager_server_set_connection()
+}
+  </code></synopsis>
+  <p>Exports all objects managed by <code>manager</code> on <code>connection</code>. If
+<code>connection</code> is <code>null</code>, stops exporting objects.</p>
+
+<terms>
+<item>
+<title><code>connection</code></title>
+  <p>A <link xref="Gio.DBusConnection"/> or <code>null</code>.</p>
+</item>
+</terms>
+
+</page>

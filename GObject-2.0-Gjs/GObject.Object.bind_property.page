@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<page id="GObject.Object.bind_property"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.Object" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GObject.Binding</api:type>
+      </api:returns>
+      <api:name>g_object_bind_property</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>source_property</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Object</api:type>
+        <api:name>target</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>target_property</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.BindingFlags</api:type>
+        <api:name>flags</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.Object.prototype.bind_property</title>
+  <synopsis><code mime="text/x-gjs">
+function bind_property(source_property: String, target: GObject.Object, target_property: String, flags: GObject.BindingFlags): GObject.Binding {
+    // Gjs wrapper for g_object_bind_property()
+}
+  </code></synopsis>
+  <p>Creates a binding between <code>source_property</code> on <code>source</code> and <code>target_property</code>
+on <code>target</code>. Whenever the <code>source_property</code> is changed the <code>target_property</code> is
+updated using the same value. For instance:</p>  <p>|[
+  g_object_bind_property (action, "active", widget, "sensitive", 0);
+]|</p>  <p>Will result in the "sensitive" property of the widget <link xref="GObject.Object"/> instance to be
+updated with the same value of the "active" property of the action <link xref="GObject.Object"/>
+instance.</p>  <p>If <code>flags</code> contains <link xref="GObject.BindingFlags"/>.bidirectional then the binding will be mutual:
+if <code>target_property</code> on <code>target</code> changes then the <code>source_property</code> on <code>source</code>
+will be updated as well.</p>  <p>The binding will automatically be removed when either the <code>source</code> or the
+<code>target</code> instances are finalized. To remove the binding without affecting the
+<code>source</code> and the <code>target</code> you can just call <link xref="GObject.unref"/> on the returned
+<link xref="GObject.Binding"/> instance.</p>  <p>A <link xref="GObject.Object"/> can have multiple bindings.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>source_property</code></title>
+  <p>the property on <code>source</code> to bind</p>
+</item>
+<item>
+<title><code>target</code></title>
+  <p>the target <link xref="GObject.Object"/></p>
+</item>
+<item>
+<title><code>target_property</code></title>
+  <p>the property on <code>target</code> to bind</p>
+</item>
+<item>
+<title><code>flags</code></title>
+  <p>flags to pass to <link xref="GObject.Binding"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

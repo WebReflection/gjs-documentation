@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="GLib.Date-dmy"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Date" group="field" type="guide"/>
+    <title type="link" role="topic">dmy</title>
+  </info>
+  <title>GLib.Date.dmy</title>
+  <synopsis><code mime="text/x-gjs">
+Date.dmy: Number (Read / Write)
+  </code></synopsis>
+  <p>this is set if @day, @month and @year are valid</p>
+
+</page>

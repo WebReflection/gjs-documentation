@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="Gio.SocketSourceFunc"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Gio.SocketSourceFunc</title>
+  <synopsis><code mime="text/x-gjs">
+function onSocketSourceFunc(socket: Gio.Socket, condition: GLib.IOCondition): Boolean {
+}
+  </code></synopsis>
+  <p>This is the function type of the callback used for the <link xref="GLib.Source"/>
+returned by <link xref="Gio.create_source"/>.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>socket</code></title>
+  <p>the <link xref="Gio.Socket"/></p>
+</item>
+<item>
+<title><code>condition</code></title>
+  <p>the current condition at the source fired.</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

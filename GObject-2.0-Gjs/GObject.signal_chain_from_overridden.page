@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<page id="GObject.signal_chain_from_overridden"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_signal_chain_from_overridden</api:name>
+      <api:arg>
+        <api:type>Array(GObject.Value)</api:type>
+        <api:name>instance_and_params</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Value</api:type>
+        <api:name>return_value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.signal_chain_from_overridden</title>
+  <synopsis><code mime="text/x-gjs">
+function signal_chain_from_overridden(instance_and_params: Array(GObject.Value), return_value: GObject.Value): void {
+    // Gjs wrapper for g_signal_chain_from_overridden()
+}
+  </code></synopsis>
+  <p>Calls the original class closure of a signal. This function should only
+be called from an overridden class closure; see
+<link xref="GObject.signal_override_class_closure"/> and
+<link xref="GObject.signal_override_class_handler"/>.</p>
+
+<terms>
+<item>
+<title><code>instance_and_params</code></title>
+  <p>the argument list of the signal emission.
+ The first element in the array is a <link xref="GObject.Value"/> for the instance the signal
+ is being emitted on. The rest are any arguments to be passed to the signal.</p>
+</item>
+<item>
+<title><code>return_value</code></title>
+  <p>Location for the return value.</p>
+</item>
+</terms>
+
+</page>

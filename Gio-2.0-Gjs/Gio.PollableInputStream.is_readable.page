@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gio.PollableInputStream.is_readable"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.PollableInputStream" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_pollable_input_stream_is_readable</api:name>
+    </api:function>
+  </info>
+  <title>Gio.PollableInputStream.prototype.is_readable</title>
+  <synopsis><code mime="text/x-gjs">
+function is_readable(): Boolean {
+    // Gjs wrapper for g_pollable_input_stream_is_readable()
+}
+  </code></synopsis>
+  <p>Checks if <code>stream</code> can be read.</p>  <p>Note that some stream types may not be able to implement this 100%
+reliably, and it is possible that a call to <link xref="Gio.InputStream.read"/>
+after this returns <code>true</code> would still block. To guarantee
+non-blocking behavior, you should always use
+<link xref="Gio.read_nonblocking"/>, which will return a
+<link xref="Gio.IOErrorEnum"/>.would_block error rather than blocking.</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.File-enumerate_children_finish"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.File" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.File::enumerate_children_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_enumerate_children_finish(res: Gio.AsyncResult): Gio.FileEnumerator {
+}
+  </code></synopsis>
+  <p>Finishes an async enumerate children operation.
+See <link xref="Gio.File.enumerate_children_async"/>.</p>
+
+<terms>
+<item>
+<title><code>res</code></title>
+  <p>a <link xref="Gio.AsyncResult"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link xref="Gio.FileEnumerator"/> or <code>null</code>
+    if an error occurred.
+    Free the returned object with <link xref="GObject.unref"/>.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.Seekable.can_truncate"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Seekable" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_seekable_can_truncate</api:name>
+    </api:function>
+  </info>
+  <title>Gio.Seekable.prototype.can_truncate</title>
+  <synopsis><code mime="text/x-gjs">
+function can_truncate(): Boolean {
+    // Gjs wrapper for g_seekable_can_truncate()
+}
+  </code></synopsis>
+  <p>Tests if the stream can be truncated.</p>
+
+<terms>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<page id="GLib.DateTime.new_from_unix_utc"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.DateTime" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.DateTime</api:type>
+      </api:returns>
+      <api:name>g_date_time_new_from_unix_utc</api:name>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>t</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.DateTime.new_from_unix_utc</title>
+  <synopsis><code mime="text/x-gjs">
+function new_from_unix_utc(t: Number): GLib.DateTime {
+    // Gjs wrapper for g_date_time_new_from_unix_utc()
+}
+  </code></synopsis>
+  <p>Creates a <link xref="GLib.DateTime"/> corresponding to the given Unix time <code>t</code> in UTC.</p>  <p>Unix time is the number of seconds that have elapsed since 1970-01-01
+00:00:00 UTC.</p>  <p>This call can fail (returning <code>null</code>) if <code>t</code> represents a time outside
+of the supported range of <link xref="GLib.DateTime"/>.</p>  <p>You should release the return value by calling <link xref="GLib.unref"/>
+when you are done with it.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>t</code></title>
+  <p>the Unix time</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

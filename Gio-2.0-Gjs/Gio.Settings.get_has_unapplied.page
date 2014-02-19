@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gio.Settings.get_has_unapplied"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Settings" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_settings_get_has_unapplied</api:name>
+    </api:function>
+  </info>
+  <title>Gio.Settings.prototype.get_has_unapplied</title>
+  <synopsis><code mime="text/x-gjs">
+function get_has_unapplied(): Boolean {
+    // Gjs wrapper for g_settings_get_has_unapplied()
+}
+  </code></synopsis>
+  <p>Returns whether the <link xref="Gio.Settings"/> object has any unapplied
+changes.  This can only be the case if it is in 'delayed-apply' mode.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

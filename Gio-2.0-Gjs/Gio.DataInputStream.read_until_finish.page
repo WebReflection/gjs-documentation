@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="Gio.DataInputStream.read_until_finish"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DataInputStream" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_data_input_stream_read_until_finish</api:name>
+      <api:arg>
+        <api:type>Gio.AsyncResult</api:type>
+        <api:name>result</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DataInputStream.prototype.read_until_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function read_until_finish(result: Gio.AsyncResult): [return_value: String, length: gsize] {
+    // Gjs wrapper for g_data_input_stream_read_until_finish()
+}
+  </code></synopsis>
+  <p>Finish an asynchronous call started by
+<link xref="Gio.DataInputStream.read_until_async"/>.</p>
+  <p>Since 2.20</p>
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>the <link xref="Gio.AsyncResult"/> that was provided to the callback.</p>
+</item>
+<item>
+<title><code>return_value</code></title>
+
+</item>
+<item>
+<title><code>length</code></title>
+  <p>a #gsize to get the length of the data read in.</p>
+</item>
+</terms>
+
+</page>

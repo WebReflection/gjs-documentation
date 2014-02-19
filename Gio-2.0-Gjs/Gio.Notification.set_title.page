@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Gio.Notification.set_title"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Notification" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_notification_set_title</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>title</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.Notification.prototype.set_title</title>
+  <synopsis><code mime="text/x-gjs">
+function set_title(title: String): void {
+    // Gjs wrapper for g_notification_set_title()
+}
+  </code></synopsis>
+  <p>Sets the title of <code>notification</code> to <code>title</code>.</p>
+  <p>Since 2.40</p>
+<terms>
+<item>
+<title><code>title</code></title>
+  <p>the new title for <code>notification</code></p>
+</item>
+</terms>
+
+</page>

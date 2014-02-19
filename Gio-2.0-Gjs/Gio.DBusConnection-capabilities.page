@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusConnection-capabilities"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusConnection" group="property" type="guide"/>
+    <title type="link" role="topic">capabilities</title>
+  </info>
+  <title>Gio.DBusConnection.capabilities</title>
+  <synopsis><code mime="text/x-gjs">
+DBusConnection.capabilities: Gio.DBusCapabilityFlags (Read)
+  </code></synopsis>
+  <p>Flags from the <link xref="Gio.DBusCapabilityFlags"/> enumeration
+representing connection features negotiated with the other peer.</p>
+  <p>Since 2.26</p>
+</page>

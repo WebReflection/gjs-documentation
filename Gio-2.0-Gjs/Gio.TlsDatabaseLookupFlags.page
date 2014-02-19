@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<page id="Gio.TlsDatabaseLookupFlags"
+      type="topic"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Gio.TlsDatabaseLookupFlags</title>
+  <p>Flags for g_tls_database_lookup_certificate_handle(),
+<link xref="Gio.TlsDatabase.lookup_certificate_issuer"/>,
+and <link xref="Gio.TlsDatabase.lookup_certificates_issued_by"/>.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>TlsDatabaseLookupFlags.NONE</code></title>
+  <p>No lookup flags</p>
+</item>
+<item>
+<title><code>TlsDatabaseLookupFlags.KEYPAIR</code></title>
+  <p>Restrict lookup to certificates that have
+    a private key.</p>
+</item>
+</terms>
+
+</page>

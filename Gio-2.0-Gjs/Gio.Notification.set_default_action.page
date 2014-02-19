@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="Gio.Notification.set_default_action"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Notification" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_notification_set_default_action</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>detailed_action</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.Notification.prototype.set_default_action</title>
+  <synopsis><code mime="text/x-gjs">
+function set_default_action(detailed_action: String): void {
+    // Gjs wrapper for g_notification_set_default_action()
+}
+  </code></synopsis>
+  <p>Sets the default action of <code>notification</code> to <code>detailed_action</code>. This
+action is activated when the notification is clicked on.</p>  <p>The action in <code>detailed_action</code> must be an application-wide action (it
+must start with "app."). If <code>detailed_action</code> contains a target, the
+given action will be activated with that target as its parameter.
+See <link xref="Gio.action_parse_detailed_name"/> for a description of the format
+for <code>detailed_action</code>.</p>  <p>When no default action is set, the application that the notification
+was sent on is activated.</p>
+  <p>Since 2.40</p>
+<terms>
+<item>
+<title><code>detailed_action</code></title>
+  <p>a detailed action name</p>
+</item>
+</terms>
+
+</page>

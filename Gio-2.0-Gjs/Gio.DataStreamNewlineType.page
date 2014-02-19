@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gio.DataStreamNewlineType"
+      type="topic"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Gio.DataStreamNewlineType</title>
+  <p><link xref="Gio.DataStreamNewlineType"/> is used when checking for or setting the line endings for a given file.</p>
+
+<terms>
+<item>
+<title><code>DataStreamNewlineType.LF</code></title>
+  <p>Selects "LF" line endings, common on most modern UNIX platforms.</p>
+</item>
+<item>
+<title><code>DataStreamNewlineType.CR</code></title>
+  <p>Selects "CR" line endings.</p>
+</item>
+<item>
+<title><code>DataStreamNewlineType.CR_LF</code></title>
+  <p>Selects "CR, LF" line ending, common on Microsoft Windows.</p>
+</item>
+<item>
+<title><code>DataStreamNewlineType.ANY</code></title>
+  <p>Automatically try to handle any line ending type.</p>
+</item>
+</terms>
+
+</page>

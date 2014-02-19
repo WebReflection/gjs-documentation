@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="GLib.random_int"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>guint32</api:type>
+      </api:returns>
+      <api:name>g_random_int</api:name>
+    </api:function>
+  </info>
+  <title>GLib.random_int</title>
+  <synopsis><code mime="text/x-gjs">
+function random_int(): guint32 {
+    // Gjs wrapper for g_random_int()
+}
+  </code></synopsis>
+  <p>Return a random #guint32 equally distributed over the range
+[0..2^32-1].</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

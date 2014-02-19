@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<page id="GLib.mkstemp_full"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number</api:type>
+      </api:returns>
+      <api:name>g_mkstemp_full</api:name>
+      <api:arg>
+        <api:type>filename</api:type>
+        <api:name>tmpl</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>flags</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>mode</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.mkstemp_full</title>
+  <synopsis><code mime="text/x-gjs">
+function mkstemp_full(tmpl: filename, flags: Number, mode: Number): Number {
+    // Gjs wrapper for g_mkstemp_full()
+}
+  </code></synopsis>
+  <p>Opens a temporary file. See the mkstemp() documentation
+on most UNIX-like systems.</p>  <p>The parameter is a string that should follow the rules for
+mkstemp() templates, i.e. contain the string "XXXXXX".
+<link xref="GLib.mkstemp_full"/> is slightly more flexible than mkstemp()
+in that the sequence does not have to occur at the very end of the
+template and you can pass a <code>mode</code> and additional <code>flags</code>. The X
+string will be modified to form the name of a file that didn't exist.
+The string should be in the GLib file name encoding. Most importantly,
+on Windows it should be in UTF-8.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>tmpl</code></title>
+  <p>template filename</p>
+</item>
+<item>
+<title><code>flags</code></title>
+  <p>flags to pass to an open() call in addition to O_EXCL
+    and O_CREAT, which are passed automatically</p>
+</item>
+<item>
+<title><code>mode</code></title>
+  <p>permissions to create the temporary file with</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

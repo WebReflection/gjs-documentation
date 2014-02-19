@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="GObject.Object.get_data"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.Object" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>gpointer</api:type>
+      </api:returns>
+      <api:name>g_object_get_data</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>key</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.Object.prototype.get_data</title>
+  <synopsis><code mime="text/x-gjs">
+function get_data(key: String): gpointer {
+    // Gjs wrapper for g_object_get_data()
+}
+  </code></synopsis>
+  <p>Gets a named field from the objects table of associations (see <link xref="GObject.set_data"/>).</p>
+
+<terms>
+<item>
+<title><code>key</code></title>
+  <p>name of the key for that association</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

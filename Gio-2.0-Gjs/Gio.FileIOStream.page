@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<page id="Gio.FileIOStream"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>Gio.FileIOStream</title>
+  <synopsis><code>
+const Gio = imports.gi.Gio;
+
+let fileIOStream = new Gio.FileIOStream();
+  </code></synopsis>
+  <p>GFileIOStream provides io streams that both read and write to the same
+file handle.</p>  <p>GFileIOStream implements <link xref="Gio.Seekable"/>, which allows the io
+stream to jump to arbitrary positions in the file and to truncate
+the file, provided the filesystem of the file supports these
+operations.</p>  <p>To find the position of a file io stream, use
+<link xref="Gio.tell"/>.</p>  <p>To find out if a file io stream supports seeking, use <link xref="Gio.can_seek"/>.
+To position a file io stream, use <link xref="Gio.seek"/>.
+To find out if a file io stream supports truncating, use
+<link xref="Gio.can_truncate"/>. To truncate a file io
+stream, use <link xref="Gio.truncate"/>.</p>  <p>The default implementation of all the <link xref="Gio.FileIOStream"/> operations
+and the implementation of <link xref="Gio.Seekable"/> just call into the same operations
+on the output stream.</p>
+
+  <synopsis>
+    <title>Hierarchy</title>
+    <tree>
+      <item>
+        <code>GObject.Object</code>
+      <item>
+        <code>Gio.IOStream</code>
+      <item>
+        <code>Gio.FileIOStream</code>
+      </item>
+      </item>
+      </item>
+    </tree>
+  </synopsis>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="property" style="linklist">
+    <title>Properties</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="signal" style="linklist">
+    <title>Signals</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="vfunc" style="linklist">
+    <title>Virtual functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

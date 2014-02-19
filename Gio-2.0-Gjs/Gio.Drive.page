@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<page id="Gio.Drive"
+      type="guide"
+      style="interface"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="interface" type="guide"/>
+  </info>
+  <title>Gio.Drive</title>
+  <synopsis><code>
+const Gio = imports.gi.Gio;
+
+let drive = new Gio.Drive();
+  </code></synopsis>
+  <p><link xref="Gio.Drive"/> - this represent a piece of hardware connected to the machine.
+It's generally only created for removable hardware or hardware with
+removable media.</p>  <p><link xref="Gio.Drive"/> is a container class for <link xref="Gio.Volume"/> objects that stem from
+the same piece of media. As such, <link xref="Gio.Drive"/> abstracts a drive with
+(or without) removable media and provides operations for querying
+whether media is available, determining whether media change is
+automatically detected and ejecting the media.</p>  <p>If the <link xref="Gio.Drive"/> reports that media isn't automatically detected, one
+can poll for media; typically one should not do this periodically
+as a poll for media operation is potententially expensive and may
+spin up the drive creating noise.</p>  <p><link xref="Gio.Drive"/> supports starting and stopping drives with authentication
+support for the former. This can be used to support a diverse set
+of use cases including connecting/disconnecting iSCSI devices,
+powering down external disk enclosures and starting/stopping
+multi-disk devices such as RAID devices. Note that the actual
+semantics and side-effects of starting/stopping a <link xref="Gio.Drive"/> may vary
+according to implementation. To choose the correct verbs in e.g. a
+file manager, use <link xref="Gio.get_start_stop_type"/>.</p>  <p>For porting from GnomeVFS note that there is no equivalent of
+<link xref="Gio.Drive"/> in that API.</p>
+
+  <synopsis>
+    <title>Prerequisites</title>
+    <p>Drive requires GObject.Object</p>
+  </synopsis>
+  <synopsis>
+    <title>Known Implementations</title>
+    <p>None</p>
+  </synopsis>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="property" style="linklist">
+    <title>Properties</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="signal" style="linklist">
+    <title>Signals</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="vfunc" style="linklist">
+    <title>Virtual functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

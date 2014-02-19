@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="GObject.TypeFundamentalInfo-type_flags"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.TypeFundamentalInfo" group="field" type="guide"/>
+    <title type="link" role="topic">type_flags</title>
+  </info>
+  <title>GObject.TypeFundamentalInfo.type_flags</title>
+  <synopsis><code mime="text/x-gjs">
+TypeFundamentalInfo.type_flags: GObject.TypeFundamentalFlags (Read)
+  </code></synopsis>
+  <p><link xref="GObject.TypeFundamentalFlags"/> describing the characteristics of the fundamental type</p>
+
+</page>

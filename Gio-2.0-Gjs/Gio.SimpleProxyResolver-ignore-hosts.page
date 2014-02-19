@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="Gio.SimpleProxyResolver-ignore-hosts"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.SimpleProxyResolver" group="property" type="guide"/>
+    <title type="link" role="topic">ignore-hosts</title>
+  </info>
+  <title>Gio.SimpleProxyResolver.ignore_hosts</title>
+  <synopsis><code mime="text/x-gjs">
+SimpleProxyResolver.ignore_hosts: Array(String) (Read / Write)
+  </code></synopsis>
+  <p>A list of hostnames and IP addresses that the resolver should
+allow direct connections to.</p>  <p>Entries can be in one of 4 formats:</p>  <p>- A hostname, such as "example.com", ".example.com", or
+  "*.example.com", any of which match "example.com" or
+  any subdomain of it.</p>  <p>- An IPv4 or IPv6 address, such as "192.168.1.1",
+  which matches only that address.</p>  <p>- A hostname or IP address followed by a port, such as
+  "example.com:80", which matches whatever the hostname or IP
+  address would match, but only for URLs with the (explicitly)
+  indicated port. In the case of an IPv6 address, the address
+  part must appear in brackets: "[::1]:443"</p>  <p>- An IP address range, given by a base address and prefix length,
+  such as "fe80::/10", which matches any address in that range.</p>  <p>Note that when dealing with Unicode hostnames, the matching is
+done against the ASCII form of the name.</p>  <p>Also note that hostname exclusions apply only to connections made
+to hosts identified by name, and IP address exclusions apply only
+to connections made to hosts identified by address. That is, if
+example.com has an address of 192.168.1.1, and the :ignore-hosts list
+contains only "192.168.1.1", then a connection to "example.com"
+(eg, via a <link xref="Gio.NetworkAddress"/>) will use the proxy, and a connection to
+"192.168.1.1" (eg, via a <link xref="Gio.InetSocketAddress"/>) will not.</p>  <p>These rules match the "ignore-hosts"/"noproxy" rules most
+commonly used by other applications.</p>
+
+</page>

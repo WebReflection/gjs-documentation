@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gio.SocketClient.set_proxy_resolver"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.SocketClient" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_socket_client_set_proxy_resolver</api:name>
+      <api:arg>
+        <api:type>Gio.ProxyResolver</api:type>
+        <api:name>proxy_resolver</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.SocketClient.prototype.set_proxy_resolver</title>
+  <synopsis><code mime="text/x-gjs">
+function set_proxy_resolver(proxy_resolver: Gio.ProxyResolver): void {
+    // Gjs wrapper for g_socket_client_set_proxy_resolver()
+}
+  </code></synopsis>
+  <p>Overrides the <link xref="Gio.ProxyResolver"/> used by <code>client</code>. You can call this if
+you want to use specific proxies, rather than using the system
+default proxy settings.</p>  <p>Note that whether or not the proxy resolver is actually used
+depends on the setting of <link xref="Gio.enable-proxy"/>, which is not
+changed by this function (but which is <code>true</code> by default)</p>
+  <p>Since 2.36</p>
+<terms>
+<item>
+<title><code>proxy_resolver</code></title>
+  <p>a <link xref="Gio.ProxyResolver"/>, or <code>null</code> for the
+  default.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<page id="GLib.find_program_in_path"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_find_program_in_path</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>program</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.find_program_in_path</title>
+  <synopsis><code mime="text/x-gjs">
+function find_program_in_path(program: String): String {
+    // Gjs wrapper for g_find_program_in_path()
+}
+  </code></synopsis>
+  <p>Locates the first executable named <code>program</code> in the user's path, in the
+same way that execvp() would locate it. Returns an allocated string
+with the absolute path name, or <code>null</code> if the program is not found in
+the path. If <code>program</code> is already an absolute path, returns a copy of
+<code>program</code> if <code>program</code> exists and is executable, and <code>null</code> otherwise.
+ 
+On Windows, if <code>program</code> does not have a file type suffix, tries
+with the suffixes .exe, .cmd, .bat and .com, and the suffixes in
+the `PATHEXT` environment variable.</p>  <p>On Windows, it looks for the file in the same way as CreateProcess()
+would. This means first in the directory where the executing
+program was loaded from, then in the current directory, then in the
+Windows 32-bit system directory, then in the Windows directory, and
+finally in the directories in the `PATH` environment variable. If
+the program is found, the return value contains the full name
+including the type suffix.</p>
+
+<terms>
+<item>
+<title><code>program</code></title>
+  <p>a program name in the GLib file name encoding</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

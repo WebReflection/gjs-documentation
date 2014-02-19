@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="GLib.DATALIST_FLAGS_MASK"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>GLib.DATALIST_FLAGS_MASK</title>
+  <p>A bitmask that restricts the possible flags passed to
+<link xref="GLib.datalist_set_flags"/>. Passing a flags value where
+flags &amp; ~G_DATALIST_FLAGS_MASK != 0 is an error.</p>
+
+</page>

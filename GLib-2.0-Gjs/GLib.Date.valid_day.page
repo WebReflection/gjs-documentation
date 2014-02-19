@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="GLib.Date.valid_day"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Date" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_date_valid_day</api:name>
+      <api:arg>
+        <api:type>GLib.DateDay</api:type>
+        <api:name>day</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.Date.valid_day</title>
+  <synopsis><code mime="text/x-gjs">
+function valid_day(day: GLib.DateDay): Boolean {
+    // Gjs wrapper for g_date_valid_day()
+}
+  </code></synopsis>
+  <p>Returns <code>true</code> if the day of the month is valid (a day is valid if it's
+between 1 and 31 inclusive).</p>
+
+<terms>
+<item>
+<title><code>day</code></title>
+  <p>day to check</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

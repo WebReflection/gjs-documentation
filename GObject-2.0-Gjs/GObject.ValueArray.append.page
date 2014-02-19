@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="GObject.ValueArray.append"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.ValueArray" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GObject.ValueArray</api:type>
+      </api:returns>
+      <api:name>g_value_array_append</api:name>
+      <api:arg>
+        <api:type>GObject.Value</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.ValueArray.prototype.append</title>
+  <synopsis><code mime="text/x-gjs">
+function append(value: GObject.Value): GObject.ValueArray {
+    // Gjs wrapper for g_value_array_append()
+}
+  </code></synopsis>
+  <p>Insert a copy of <code>value</code> as last element of <code>value_array</code>. If <code>value</code> is
+<code>null</code>, an uninitialized value is appended.</p>
+
+<terms>
+<item>
+<title><code>value</code></title>
+  <p><link xref="GObject.Value"/> to copy into <link xref="GObject.ValueArray"/>, or <code>null</code></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page id="Gio.FilenameCompleter-got-completion-data"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.FilenameCompleter" group="signal" type="guide"/>
+    <title type="link" role="topic">got-completion-data</title>
+  </info>
+  <title>Gio.FilenameCompleter::got-completion-data</title>
+  <synopsis><code mime="text/x-gjs">
+connect('got-completion-data', function (filenameCompleter, ): void);
+  </code></synopsis>
+  <p>Emitted when the file name completion information comes available.</p>
+
+<terms>
+<item>
+<title><code>filenameCompleter</code></title>
+<p>instance of <link xref="Gio.FilenameCompleter"/> that is emitting the signal</p>
+</item>
+</terms>
+
+</page>

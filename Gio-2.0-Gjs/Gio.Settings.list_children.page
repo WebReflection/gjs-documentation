@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="Gio.Settings.list_children"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Settings" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(String)</api:type>
+      </api:returns>
+      <api:name>g_settings_list_children</api:name>
+    </api:function>
+  </info>
+  <title>Gio.Settings.prototype.list_children</title>
+  <synopsis><code mime="text/x-gjs">
+function list_children(): Array(String) {
+    // Gjs wrapper for g_settings_list_children()
+}
+  </code></synopsis>
+  <p>Gets the list of children on <code>settings</code>.</p>  <p>The list is exactly the list of strings for which it is not an error
+to call <link xref="Gio.Settings.get_child"/>.</p>  <p>For GSettings objects that are lists, this value can change at any
+time and you should connect to the "children-changed" signal to watch
+for those changes.  Note that there is a race condition here: you may
+request a child after listing it only for it to have been destroyed
+in the meantime.  For this reason, <link xref="Gio.Settings.get_child"/> may return
+<code>null</code> even for a child that was listed by this function.</p>  <p>For GSettings objects that are not lists, you should probably not be
+calling this function from "normal" code (since you should already
+know what children are in your schema).  This function may still be
+useful there for introspection reasons, however.</p>  <p>You should free the return value with <link xref="GLib.strfreev"/> when you are done
+with it.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

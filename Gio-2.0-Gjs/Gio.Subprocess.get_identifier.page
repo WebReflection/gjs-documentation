@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gio.Subprocess.get_identifier"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Subprocess" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_subprocess_get_identifier</api:name>
+    </api:function>
+  </info>
+  <title>Gio.Subprocess.prototype.get_identifier</title>
+  <synopsis><code mime="text/x-gjs">
+function get_identifier(): String {
+    // Gjs wrapper for g_subprocess_get_identifier()
+}
+  </code></synopsis>
+  <p>On UNIX, returns the process ID as a decimal string.  On Windows,
+returns the result of GetProcessId() also as a string.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

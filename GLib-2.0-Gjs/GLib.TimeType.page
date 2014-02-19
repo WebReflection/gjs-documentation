@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="GLib.TimeType"
+      type="topic"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>GLib.TimeType</title>
+  <p>Disambiguates a given time in two ways.</p>  <p>First, specifies if the given time is in universal or local time.</p>  <p>Second, if the time is in local time, specifies if it is local
+standard time or local daylight time.  This is important for the case
+where the same local time occurs twice (during daylight savings time
+transitions, for example).</p>
+
+<terms>
+<item>
+<title><code>TimeType.STANDARD</code></title>
+  <p>the time is in local standard time</p>
+</item>
+<item>
+<title><code>TimeType.DAYLIGHT</code></title>
+  <p>the time is in local daylight time</p>
+</item>
+<item>
+<title><code>TimeType.UNIVERSAL</code></title>
+  <p>the time is in UTC</p>
+</item>
+</terms>
+
+</page>

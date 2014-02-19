@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusServer-client-address"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusServer" group="property" type="guide"/>
+    <title type="link" role="topic">client-address</title>
+  </info>
+  <title>Gio.DBusServer.client_address</title>
+  <synopsis><code mime="text/x-gjs">
+DBusServer.client_address: String (Read)
+  </code></synopsis>
+  <p>The D-Bus address that clients can use.</p>
+  <p>Since 2.26</p>
+</page>

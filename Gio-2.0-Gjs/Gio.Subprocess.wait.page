@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<page id="Gio.Subprocess.wait"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Subprocess" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_subprocess_wait</api:name>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.Subprocess.prototype.wait</title>
+  <synopsis><code mime="text/x-gjs">
+function wait(cancellable: Gio.Cancellable): Boolean {
+    // Gjs wrapper for g_subprocess_wait()
+}
+  </code></synopsis>
+  <p>Synchronously wait for the subprocess to terminate.</p>  <p>After the process terminates you can query its exit status with
+functions such as <link xref="Gio.Subprocess.get_if_exited"/> and
+<link xref="Gio.Subprocess.get_exit_status"/>.</p>  <p>This function does not fail in the case of the subprocess having
+abnormal termination.  See <link xref="Gio.wait_check"/> for that.</p>
+  <p>Since 2.40</p>
+<terms>
+<item>
+<title><code>cancellable</code></title>
+  <p>a <link xref="Gio.Cancellable"/></p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

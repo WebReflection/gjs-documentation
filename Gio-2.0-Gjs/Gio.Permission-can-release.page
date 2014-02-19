@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="Gio.Permission-can-release"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Permission" group="property" type="guide"/>
+    <title type="link" role="topic">can-release</title>
+  </info>
+  <title>Gio.Permission.can_release</title>
+  <synopsis><code mime="text/x-gjs">
+Permission.can_release: Boolean (Read)
+  </code></synopsis>
+  <p><code>true</code> if it is generally possible to release the permission by calling
+<link xref="Gio.Permission.release"/>.</p>
+
+</page>

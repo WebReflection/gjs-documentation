@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="GObject.ParamSpecTypeInfo-n_preallocs"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.ParamSpecTypeInfo" group="field" type="guide"/>
+    <title type="link" role="topic">n_preallocs</title>
+  </info>
+  <title>GObject.ParamSpecTypeInfo.n_preallocs</title>
+  <synopsis><code mime="text/x-gjs">
+ParamSpecTypeInfo.n_preallocs: guint16 (Read / Write)
+  </code></synopsis>
+  <p>Prior to GLib 2.10, it specified the number of pre-allocated (cached) instances to reserve memory for (0 indicates no caching). Since GLib 2.10, it is ignored, since instances are allocated with the &lt;link linkend="glib-Memory-Slices"&gt;slice allocator&lt;/link&gt; now.</p>
+
+</page>

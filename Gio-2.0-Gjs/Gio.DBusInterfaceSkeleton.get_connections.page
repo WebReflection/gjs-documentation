@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusInterfaceSkeleton.get_connections"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusInterfaceSkeleton" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(Gio.DBusConnection)</api:type>
+      </api:returns>
+      <api:name>g_dbus_interface_skeleton_get_connections</api:name>
+    </api:function>
+  </info>
+  <title>Gio.DBusInterfaceSkeleton.prototype.get_connections</title>
+  <synopsis><code mime="text/x-gjs">
+function get_connections(): Array(Gio.DBusConnection) {
+    // Gjs wrapper for g_dbus_interface_skeleton_get_connections()
+}
+  </code></synopsis>
+  <p>Gets a list of the connections that <code>interface_</code> is exported on.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

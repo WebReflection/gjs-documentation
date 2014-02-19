@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="GLib.HookList-hooks"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.HookList" group="field" type="guide"/>
+    <title type="link" role="topic">hooks</title>
+  </info>
+  <title>GLib.HookList.hooks</title>
+  <synopsis><code mime="text/x-gjs">
+HookList.hooks: GLib.Hook (Read)
+  </code></synopsis>
+  <p>the first <link xref="GLib.Hook"/> element in the list</p>
+
+</page>

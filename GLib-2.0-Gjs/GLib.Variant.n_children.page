@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="GLib.Variant.n_children"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Variant" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>gsize</api:type>
+      </api:returns>
+      <api:name>g_variant_n_children</api:name>
+    </api:function>
+  </info>
+  <title>GLib.Variant.prototype.n_children</title>
+  <synopsis><code mime="text/x-gjs">
+function n_children(): gsize {
+    // Gjs wrapper for g_variant_n_children()
+}
+  </code></synopsis>
+  <p>Determines the number of children in a container <link xref="GLib.Variant"/> instance.
+This includes variants, maybes, arrays, tuples and dictionary
+entries.  It is an error to call this function on any other type of
+<link xref="GLib.Variant"/>.</p>  <p>For variants, the return value is always 1.  For values with maybe
+types, it is always zero or one.  For arrays, it is the length of the
+array.  For tuples it is the number of tuple items (which depends
+only on the type).  For dictionary entries, it is always 2</p>  <p>This function is O(1).</p>
+  <p>Since 2.24</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

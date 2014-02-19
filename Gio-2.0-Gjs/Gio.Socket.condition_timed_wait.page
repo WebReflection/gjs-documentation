@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<page id="Gio.Socket.condition_timed_wait"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Socket" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_socket_condition_timed_wait</api:name>
+      <api:arg>
+        <api:type>GLib.IOCondition</api:type>
+        <api:name>condition</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>timeout</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.Socket.prototype.condition_timed_wait</title>
+  <synopsis><code mime="text/x-gjs">
+function condition_timed_wait(condition: GLib.IOCondition, timeout: Number, cancellable: Gio.Cancellable): Boolean {
+    // Gjs wrapper for g_socket_condition_timed_wait()
+}
+  </code></synopsis>
+  <p>Waits for up to <code>timeout</code> microseconds for <code>condition</code> to become true
+on <code>socket</code>. If the condition is met, <code>true</code> is returned.</p>  <p>If <code>cancellable</code> is cancelled before the condition is met, or if
+<code>timeout</code> (or the socket's <link xref="Gio.timeout"/>) is reached before the
+condition is met, then <code>false</code> is returned and @error, if non-<code>null</code>,
+is set to the appropriate value (<link xref="Gio.IOErrorEnum"/>.cancelled or
+<link xref="Gio.IOErrorEnum"/>.timed_out).</p>  <p>If you don't want a timeout, use <link xref="Gio.condition_wait"/>.
+(Alternatively, you can pass -1 for <code>timeout</code>.)</p>  <p>Note that although <code>timeout</code> is in microseconds for consistency with
+other GLib APIs, this function actually only has millisecond
+resolution, and the behavior is undefined if <code>timeout</code> is not an
+exact number of milliseconds.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>condition</code></title>
+  <p>a <link xref="GLib.IOCondition"/> mask to wait for</p>
+</item>
+<item>
+<title><code>timeout</code></title>
+  <p>the maximum time (in microseconds) to wait, or -1</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>a <link xref="Gio.Cancellable"/>, or <code>null</code></p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

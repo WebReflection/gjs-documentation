@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusMessage.set_flags"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusMessage" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_dbus_message_set_flags</api:name>
+      <api:arg>
+        <api:type>Gio.DBusMessageFlags</api:type>
+        <api:name>flags</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DBusMessage.prototype.set_flags</title>
+  <synopsis><code mime="text/x-gjs">
+function set_flags(flags: Gio.DBusMessageFlags): void {
+    // Gjs wrapper for g_dbus_message_set_flags()
+}
+  </code></synopsis>
+  <p>Sets the flags to set on <code>message</code>.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>flags</code></title>
+  <p>Flags for <code>message</code> that are set (typically values from the <link xref="Gio.DBusMessageFlags"/>
+enumeration bitwise ORed together).</p>
+</item>
+</terms>
+
+</page>

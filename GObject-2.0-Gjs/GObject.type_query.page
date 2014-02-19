@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="GObject.type_query"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_type_query</api:name>
+      <api:arg>
+        <api:type>GType</api:type>
+        <api:name>type</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.type_query</title>
+  <synopsis><code mime="text/x-gjs">
+function type_query(type: GType): GObject.TypeQuery {
+    // Gjs wrapper for g_type_query()
+}
+  </code></synopsis>
+  <p>Queries the type system for information about a specific type.
+This function will fill in a user-provided structure to hold
+type-specific information. If an invalid <link xref="GLib.Type"/> is passed in, the
+<code>type</code> member of the <link xref="GObject.TypeQuery"/> is 0. All members filled into the
+<link xref="GObject.TypeQuery"/> structure should be considered constant and have to be
+left untouched.</p>
+
+<terms>
+<item>
+<title><code>type</code></title>
+  <p><link xref="GLib.Type"/> of a static, classed type</p>
+</item>
+<item>
+<title><code>query</code></title>
+  <p>a user provided structure that is
+    filled in with constant values upon success</p>
+</item>
+</terms>
+
+</page>

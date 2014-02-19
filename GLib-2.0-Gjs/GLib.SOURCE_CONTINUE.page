@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page id="GLib.SOURCE_CONTINUE"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>GLib.SOURCE_CONTINUE</title>
+  <p>Use this macro as the return value of a <link xref="GLib.SourceFunc"/> to leave
+the <link xref="GLib.Source"/> in the main loop.</p>
+  <p>Since 2.32</p>
+</page>

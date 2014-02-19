@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Gio.Mount.unshadow"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Mount" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_mount_unshadow</api:name>
+    </api:function>
+  </info>
+  <title>Gio.Mount.prototype.unshadow</title>
+  <synopsis><code mime="text/x-gjs">
+function unshadow(): void {
+    // Gjs wrapper for g_mount_unshadow()
+}
+  </code></synopsis>
+  <p>Decrements the shadow count on <code>mount</code>. Usually used by
+<link xref="Gio.VolumeMonitor"/> implementations when destroying a shadow mount for
+<code>mount</code>, see <link xref="Gio.Mount.is_shadowed"/> for more information. The caller
+will need to emit the <link xref="Gio.changed"/> signal on <code>mount</code> manually.</p>
+  <p>Since 2.20</p>
+
+</page>

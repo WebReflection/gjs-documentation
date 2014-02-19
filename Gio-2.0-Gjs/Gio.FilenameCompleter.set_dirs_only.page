@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gio.FilenameCompleter.set_dirs_only"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.FilenameCompleter" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_filename_completer_set_dirs_only</api:name>
+      <api:arg>
+        <api:type>Boolean</api:type>
+        <api:name>dirs_only</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.FilenameCompleter.prototype.set_dirs_only</title>
+  <synopsis><code mime="text/x-gjs">
+function set_dirs_only(dirs_only: Boolean): void {
+    // Gjs wrapper for g_filename_completer_set_dirs_only()
+}
+  </code></synopsis>
+  <p>If <code>dirs_only</code> is <code>true</code>, <code>completer</code> will only
+complete directory names, and not file names.</p>
+
+<terms>
+<item>
+<title><code>dirs_only</code></title>
+  <p>a #gboolean.</p>
+</item>
+</terms>
+
+</page>

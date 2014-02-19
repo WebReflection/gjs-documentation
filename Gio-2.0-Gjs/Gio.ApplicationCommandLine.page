@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<page id="Gio.ApplicationCommandLine"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>Gio.ApplicationCommandLine</title>
+  <synopsis><code>
+const Gio = imports.gi.Gio;
+
+let applicationCommandLine = new Gio.ApplicationCommandLine({
+    <link xref='Gio.ApplicationCommandLine-arguments'>arguments</link>: value,
+    <link xref='Gio.ApplicationCommandLine-options'>options</link>: value,
+    <link xref='Gio.ApplicationCommandLine-platform-data'>platform_data</link>: value,
+});
+  </code></synopsis>
+  <p><link xref="Gio.ApplicationCommandLine"/> represents a command-line invocation of
+an application.  It is created by <link xref="Gio.Application"/> and emitted
+in the <link xref="Gio.Application-command-line"/> signal and virtual function.</p>  <p>The class contains the list of arguments that the program was invoked
+with.  It is also possible to query if the commandline invocation was
+local (ie: the current process is running in direct response to the
+invocation) or remote (ie: some other process forwarded the
+commandline to this process).</p>  <p>The GApplicationCommandLine object can provide the @argc and @argv
+parameters for use with the <link xref="GLib.OptionContext"/> command-line parsing API,
+with the <link xref="Gio.get_arguments"/> function. See
+[gapplication-example-cmdline3.c][gapplication-example-cmdline3]
+for an example.</p>  <p>The exit status of the originally-invoked process may be set and
+messages can be printed to stdout or stderr of that process.  The
+lifecycle of the originally-invoked process is tied to the lifecycle
+of this object (ie: the process exits when the last reference is
+dropped).</p>  <p>The main use for <link xref="Gio.ApplicationCommandLine"/> (and the
+<link xref="Gio.Application-command-line"/> signal) is 'Emacs server' like use cases:
+You can set the `EDITOR` environment variable to have e.g. git use
+your favourite editor to edit commit messages, and if you already
+have an instance of the editor running, the editing will happen
+in the running instance, instead of opening a new one. An important
+aspect of this use case is that the process that gets started by git
+does not return until the editing is done.</p>  <p>Normally, the commandline is completely handled in the
+<link xref="Gio.Application-command-line"/> handler. The launching instance exits
+once the signal handler in the primary instance has returned, and
+the return value of the signal handler becomes the exit status
+of the launching instance.
+|[&lt;!-- language="C" --&gt;
+static int
+command_line (GApplication            *application,
+              GApplicationCommandLine *cmdline)
+{
+  gchar **argv;
+  gint argc;
+  gint i;</p>  <p>  argv = g_application_command_line_get_arguments (cmdline, &amp;argc);</p>  <p>  g_application_command_line_print (cmdline,
+                                    "This text is written back\n"
+                                    "to stdout of the caller\n");</p>  <p>  for (i = 0; i &lt; argc; i++)
+    g_print ("argument %d: %s\n", i, argv[i]);</p>  <p>  g_strfreev (argv);</p>  <p>  return 0;
+}
+]|
+The complete example can be found here:
+[gapplication-example-cmdline.c](https://git.gnome.org/browse/glib/tree/gio/tests/gapplication-example-cmdline.c)</p>  <p>In more complicated cases, the handling of the comandline can be
+split between the launcher and the primary instance.
+|[&lt;!-- language="C" --&gt;
+static gboolean
+ test_local_cmdline (GApplication   *application,
+                     gchar        ***arguments,
+                     gint           *exit_status)
+{
+  gint i, j;
+  gchar **argv;</p>  <p>  argv = *arguments;</p>  <p>  i = 1;
+  while (argv[i])
+    {
+      if (g_str_has_prefix (argv[i], "--local-"))
+        {
+          g_print ("handling argument %s locally\n", argv[i]);
+          g_free (argv[i]);
+          for (j = i; argv[j]; j++)
+            argv[j] = argv[j + 1];
+        }
+      else
+        {
+          g_print ("not handling argument %s locally\n", argv[i]);
+          i++;
+        }
+    }</p>  <p>  *exit_status = 0;</p>  <p>  return FALSE;
+}</p>  <p>static void
+test_application_class_init (TestApplicationClass *class)
+{
+  G_APPLICATION_CLASS (class)-&gt;local_command_line = test_local_cmdline;</p>  <p>  ...
+}
+]|
+In this example of split commandline handling, options that start
+with `--local-` are handled locally, all other options are passed
+to the <link xref="Gio.Application-command-line"/> handler which runs in the primary
+instance.</p>  <p>The complete example can be found here:
+[gapplication-example-cmdline2.c](https://git.gnome.org/browse/glib/tree/gio/tests/gapplication-example-cmdline2.c)</p>  <p>If handling the commandline requires a lot of work, it may
+be better to defer it.
+|[&lt;!-- language="C" --&gt;
+static gboolean
+my_cmdline_handler (gpointer data)
+{
+  GApplicationCommandLine *cmdline = data;</p>  <p>  // do the heavy lifting in an idle</p>  <p>  g_application_command_line_set_exit_status (cmdline, 0);
+  g_object_unref (cmdline); // this releases the application</p>  <p>  return G_SOURCE_REMOVE;
+}</p>  <p>static int
+command_line (GApplication            *application,
+              GApplicationCommandLine *cmdline)
+{
+  // keep the application running until we are done with this commandline
+  g_application_hold (application);</p>  <p>  g_object_set_data_full (G_OBJECT (cmdline),
+                          "application", application,
+                          (GDestroyNotify)g_application_release);</p>  <p>  g_object_ref (cmdline);
+  g_idle_add (my_cmdline_handler, cmdline);</p>  <p>  return 0;
+}
+]|
+In this example the commandline is not completely handled before
+the <link xref="Gio.Application-command-line"/> handler returns. Instead, we keep
+a reference to the <link xref="Gio.ApplicationCommandLine"/> object and handle it
+later (in this example, in an idle). Note that it is necessary to
+hold the application until you are done with the commandline.</p>  <p>The complete example can be found here:
+[gapplication-example-cmdline3.c](https://git.gnome.org/browse/glib/tree/gio/tests/gapplication-example-cmdline3.c)</p>
+
+  <synopsis>
+    <title>Hierarchy</title>
+    <tree>
+      <item>
+        <code>GObject.Object</code>
+      <item>
+        <code>Gio.ApplicationCommandLine</code>
+      </item>
+      </item>
+    </tree>
+  </synopsis>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="property" style="linklist">
+    <title>Properties</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="signal" style="linklist">
+    <title>Signals</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="vfunc" style="linklist">
+    <title>Virtual functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

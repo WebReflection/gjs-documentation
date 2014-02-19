@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="GLib.Hook-prev"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Hook" group="field" type="guide"/>
+    <title type="link" role="topic">prev</title>
+  </info>
+  <title>GLib.Hook.prev</title>
+  <synopsis><code mime="text/x-gjs">
+Hook.prev: GLib.Hook (Read)
+  </code></synopsis>
+  <p>pointer to the previous hook in the list</p>
+
+</page>

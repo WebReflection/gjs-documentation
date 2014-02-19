@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="GLib.String.free_to_bytes"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.String" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.Bytes</api:type>
+      </api:returns>
+      <api:name>g_string_free_to_bytes</api:name>
+    </api:function>
+  </info>
+  <title>GLib.String.prototype.free_to_bytes</title>
+  <synopsis><code mime="text/x-gjs">
+function free_to_bytes(): GLib.Bytes {
+    // Gjs wrapper for g_string_free_to_bytes()
+}
+  </code></synopsis>
+  <p>Transfers ownership of the contents of <code>string</code> to a newly allocated
+<link xref="GLib.Bytes"/>.  The <link xref="GLib.String"/> structure itself is deallocated, and it is
+therefore invalid to use <code>string</code> after invoking this function.</p>  <p>Note that while <link xref="GLib.String"/> ensures that its buffer always has a
+trailing nul character (not reflected in its "len"), the returned
+<link xref="GLib.Bytes"/> does not include this extra nul; i.e. it has length exactly
+equal to the "len" member.</p>
+  <p>Since 2.34</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

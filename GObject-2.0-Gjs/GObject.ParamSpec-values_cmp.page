@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="GObject.ParamSpec-values_cmp"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.ParamSpec" group="vfunc" type="guide"/>
+  </info>
+  <title>GObject.ParamSpec::values_cmp</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_values_cmp(value1: GObject.Value, value2: GObject.Value): Number {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>value1</code></title>
+
+</item>
+<item>
+<title><code>value2</code></title>
+
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

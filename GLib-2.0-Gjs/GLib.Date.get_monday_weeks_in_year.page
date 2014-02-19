@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="GLib.Date.get_monday_weeks_in_year"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Date" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>guint8</api:type>
+      </api:returns>
+      <api:name>g_date_get_monday_weeks_in_year</api:name>
+      <api:arg>
+        <api:type>GLib.DateYear</api:type>
+        <api:name>year</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.Date.get_monday_weeks_in_year</title>
+  <synopsis><code mime="text/x-gjs">
+function get_monday_weeks_in_year(year: GLib.DateYear): guint8 {
+    // Gjs wrapper for g_date_get_monday_weeks_in_year()
+}
+  </code></synopsis>
+  <p>Returns the number of weeks in the year, where weeks
+are taken to start on Monday. Will be 52 or 53. The
+date must be valid. (Years always have 52 7-day periods,
+plus 1 or 2 extra days depending on whether it's a leap
+year. This function is basically telling you how many
+Mondays are in the year, i.e. there are 53 Mondays if
+one of the extra days happens to be a Monday.)</p>
+
+<terms>
+<item>
+<title><code>year</code></title>
+  <p>a year</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

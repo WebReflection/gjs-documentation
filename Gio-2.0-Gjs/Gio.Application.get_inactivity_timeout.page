@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gio.Application.get_inactivity_timeout"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Application" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number</api:type>
+      </api:returns>
+      <api:name>g_application_get_inactivity_timeout</api:name>
+    </api:function>
+  </info>
+  <title>Gio.Application.prototype.get_inactivity_timeout</title>
+  <synopsis><code mime="text/x-gjs">
+function get_inactivity_timeout(): Number {
+    // Gjs wrapper for g_application_get_inactivity_timeout()
+}
+  </code></synopsis>
+  <p>Gets the current inactivity timeout for the application.</p>  <p>This is the amount of time (in milliseconds) after the last call to
+<link xref="Gio.release"/> before the application stops running.</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

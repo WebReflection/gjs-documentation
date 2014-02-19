@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Gio.Task.set_priority"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Task" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_task_set_priority</api:name>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>priority</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.Task.prototype.set_priority</title>
+  <synopsis><code mime="text/x-gjs">
+function set_priority(priority: Number): void {
+    // Gjs wrapper for g_task_set_priority()
+}
+  </code></synopsis>
+  <p>Sets <code>task</code>'s priority. If you do not call this, it will default to
+%G_PRIORITY_DEFAULT.</p>  <p>This will affect the priority of #GSources created with
+<link xref="Gio.attach_source"/> and the scheduling of tasks run in threads,
+and can also be explicitly retrieved later via
+<link xref="Gio.Task.get_priority"/>.</p>
+  <p>Since 2.36</p>
+<terms>
+<item>
+<title><code>priority</code></title>
+  <p>the [priority][io-priority] of the request</p>
+</item>
+</terms>
+
+</page>

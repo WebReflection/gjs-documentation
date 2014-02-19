@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusObjectManager-object_removed"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusObjectManager" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.DBusObjectManager::object_removed</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_object_removed(object: Gio.DBusObject): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>object</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.Task.get_priority"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Task" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number</api:type>
+      </api:returns>
+      <api:name>g_task_get_priority</api:name>
+    </api:function>
+  </info>
+  <title>Gio.Task.prototype.get_priority</title>
+  <synopsis><code mime="text/x-gjs">
+function get_priority(): Number {
+    // Gjs wrapper for g_task_get_priority()
+}
+  </code></synopsis>
+  <p>Gets <code>task</code>'s priority</p>
+  <p>Since 2.36</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

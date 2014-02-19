@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Gio.AppInfo-set_as_default_for_extension"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.AppInfo" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.AppInfo::set_as_default_for_extension</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_set_as_default_for_extension(extension: String): Boolean {
+}
+  </code></synopsis>
+  <p>Sets the application as the default handler for the given file extension.</p>
+
+<terms>
+<item>
+<title><code>extension</code></title>
+  <p>a string containing the file extension (without the dot).</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> on success, <code>false</code> on error.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="GObject.TypeModule.use"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.TypeModule" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_type_module_use</api:name>
+    </api:function>
+  </info>
+  <title>GObject.TypeModule.prototype.use</title>
+  <synopsis><code mime="text/x-gjs">
+function use(): Boolean {
+    // Gjs wrapper for g_type_module_use()
+}
+  </code></synopsis>
+  <p>Increases the use count of a <link xref="GObject.TypeModule"/> by one. If the
+use count was zero before, the plugin will be loaded.
+If loading the plugin fails, the use count is reset to
+its prior value.</p>
+
+<terms>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

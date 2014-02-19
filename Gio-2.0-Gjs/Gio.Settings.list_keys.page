@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="Gio.Settings.list_keys"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Settings" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(String)</api:type>
+      </api:returns>
+      <api:name>g_settings_list_keys</api:name>
+    </api:function>
+  </info>
+  <title>Gio.Settings.prototype.list_keys</title>
+  <synopsis><code mime="text/x-gjs">
+function list_keys(): Array(String) {
+    // Gjs wrapper for g_settings_list_keys()
+}
+  </code></synopsis>
+  <p>Introspects the list of keys on <code>settings</code>.</p>  <p>You should probably not be calling this function from "normal" code
+(since you should already know what keys are in your schema).  This
+function is intended for introspection reasons.</p>  <p>You should free the return value with <link xref="GLib.strfreev"/> when you are done
+with it.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

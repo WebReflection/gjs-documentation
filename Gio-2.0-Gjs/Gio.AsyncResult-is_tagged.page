@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<page id="Gio.AsyncResult-is_tagged"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.AsyncResult" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.AsyncResult::is_tagged</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_is_tagged(source_tag: gpointer): Boolean {
+}
+  </code></synopsis>
+  <p>Checks if <code>res</code> has the given <code>source_tag</code> (generally a function
+pointer indicating the function <code>res</code> was created by).</p>
+  <p>Since 2.34</p>
+<terms>
+<item>
+<title><code>source_tag</code></title>
+  <p>an application-defined tag</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if <code>res</code> has the indicated <code>source_tag</code>, <code>false</code> if
+  not.</p>
+</item>
+</terms>
+
+</page>

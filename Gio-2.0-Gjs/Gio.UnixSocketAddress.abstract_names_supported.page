@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.UnixSocketAddress.abstract_names_supported"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.UnixSocketAddress" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_unix_socket_address_abstract_names_supported</api:name>
+    </api:function>
+  </info>
+  <title>Gio.UnixSocketAddress.abstract_names_supported</title>
+  <synopsis><code mime="text/x-gjs">
+function abstract_names_supported(): Boolean {
+    // Gjs wrapper for g_unix_socket_address_abstract_names_supported()
+}
+  </code></synopsis>
+  <p>Checks if abstract UNIX domain socket names are supported.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

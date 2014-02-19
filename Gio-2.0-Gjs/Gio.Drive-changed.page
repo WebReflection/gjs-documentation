@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page id="Gio.Drive-changed"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Drive" group="signal" type="guide"/>
+    <title type="link" role="topic">changed</title>
+  </info>
+  <title>Gio.Drive::changed</title>
+  <synopsis><code mime="text/x-gjs">
+connect('changed', function (drive, ): void);
+  </code></synopsis>
+  <p>Emitted when the drive's state has changed.</p>
+
+<terms>
+<item>
+<title><code>drive</code></title>
+<p>instance of <link xref="Gio.Drive"/> that is emitting the signal</p>
+</item>
+</terms>
+
+</page>

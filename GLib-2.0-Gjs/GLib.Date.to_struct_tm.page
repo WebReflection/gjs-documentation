@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="GLib.Date.to_struct_tm"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Date" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_date_to_struct_tm</api:name>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>tm</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.Date.prototype.to_struct_tm</title>
+  <synopsis><code mime="text/x-gjs">
+function to_struct_tm(tm: gpointer): void {
+    // Gjs wrapper for g_date_to_struct_tm()
+}
+  </code></synopsis>
+  <p>Fills in the date-related bits of a struct tm using the <code>date</code> value.
+Initializes the non-date parts with something sane but meaningless.</p>
+
+<terms>
+<item>
+<title><code>tm</code></title>
+  <p>struct tm to fill</p>
+</item>
+</terms>
+
+</page>

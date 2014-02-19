@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="GLib.Cond.wait"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Cond" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_cond_wait</api:name>
+      <api:arg>
+        <api:type>GLib.Mutex</api:type>
+        <api:name>mutex</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.Cond.prototype.wait</title>
+  <synopsis><code mime="text/x-gjs">
+function wait(mutex: GLib.Mutex): void {
+    // Gjs wrapper for g_cond_wait()
+}
+  </code></synopsis>
+  <p>Atomically releases <code>mutex</code> and waits until <code>cond</code> is signalled.
+When this function returns, <code>mutex</code> is locked again and owned by the
+calling thread.</p>  <p>When using condition variables, it is possible that a spurious wakeup
+may occur (ie: <link xref="GLib.Cond.wait"/> returns even though <link xref="GLib.Cond.signal"/> was
+not called).  It's also possible that a stolen wakeup may occur.
+This is when <link xref="GLib.Cond.signal"/> is called, but another thread acquires
+<code>mutex</code> before this thread and modifies the state of the program in
+such a way that when <link xref="GLib.Cond.wait"/> is able to return, the expected
+condition is no longer met.</p>  <p>For this reason, <link xref="GLib.Cond.wait"/> must always be used in a loop.  See
+the documentation for <link xref="GLib.Cond"/> for a complete example.</p>
+
+<terms>
+<item>
+<title><code>mutex</code></title>
+  <p>a <link xref="GLib.Mutex"/> that is currently locked</p>
+</item>
+</terms>
+
+</page>

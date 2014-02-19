@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<page id="Gio.File.query_filesystem_info"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.File" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.FileInfo</api:type>
+      </api:returns>
+      <api:name>g_file_query_filesystem_info</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>attributes</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.File.prototype.query_filesystem_info</title>
+  <synopsis><code mime="text/x-gjs">
+function query_filesystem_info(attributes: String, cancellable: Gio.Cancellable): Gio.FileInfo {
+    // Gjs wrapper for g_file_query_filesystem_info()
+}
+  </code></synopsis>
+  <p>Similar to <link xref="Gio.query_info"/>, but obtains information
+about the filesystem the <code>file</code> is on, rather than the file itself.
+For instance the amount of space available and the type of
+the filesystem.</p>  <p>The <code>attributes</code> value is a string that specifies the attributes
+that should be gathered. It is not an error if it's not possible
+to read a particular requested attribute from a file - it just
+won't be set. <code>attributes</code> should be a comma-separated list of
+attributes or attribute wildcards. The wildcard "*" means all
+attributes, and a wildcard like "filesystem::*" means all attributes
+in the filesystem namespace. The standard namespace for filesystem
+attributes is "filesystem". Common attributes of interest are
+#G_FILE_ATTRIBUTE_FILESYSTEM_SIZE (the total size of the filesystem
+in bytes), #G_FILE_ATTRIBUTE_FILESYSTEM_FREE (number of bytes available),
+and #G_FILE_ATTRIBUTE_FILESYSTEM_TYPE (type of the filesystem).</p>  <p>If <code>cancellable</code> is not <code>null</code>, then the operation can be cancelled
+by triggering the cancellable object from another thread. If the
+operation was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be
+returned.</p>  <p>If the file does not exist, the <link xref="Gio.IOErrorEnum"/>.not_found error will
+be returned. Other errors are possible too, and depend on what
+kind of filesystem the file is on.</p>
+
+<terms>
+<item>
+<title><code>attributes</code></title>
+  <p>an attribute query string</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional <link xref="Gio.Cancellable"/> object,
+    <code>null</code> to ignore</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

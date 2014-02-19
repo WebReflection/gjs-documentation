@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<page id="Gio.PropertyAction"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>Gio.PropertyAction</title>
+  <synopsis><code>
+const Gio = imports.gi.Gio;
+
+let propertyAction = new Gio.PropertyAction({
+    <link xref='Gio.PropertyAction-name'>name</link>: value,
+    <link xref='Gio.PropertyAction-object'>object</link>: value,
+    <link xref='Gio.PropertyAction-property-name'>property_name</link>: value,
+});
+  </code></synopsis>
+  <p>A <link xref="Gio.PropertyAction"/> is a way to get a <link xref="Gio.Action"/> with a state value
+reflecting and controlling the value of a <link xref="GObject.Object"/> property.</p>  <p>The state of the action will correspond to the value of the property.
+Changing it will change the property (assuming the requested value
+matches the requirements as specified in the <link xref="GObject.ParamSpec"/>).</p>  <p>Only the most common types are presently supported.  Booleans are
+mapped to booleans, strings to strings, signed/unsigned integers to
+int32/uint32 and floats and doubles to doubles.</p>  <p>If the property is an enum then the state will be string-typed and
+conversion will automatically be performed between the enum value and
+"nick" string as per the <link xref="GObject.EnumValue"/> table.</p>  <p>Flags types are not currently supported.</p>  <p>Properties of object types, boxed types and pointer types are not
+supported and probably never will be.</p>  <p>Properties of <link xref="GLib.Variant"/> types are not currently supported.</p>  <p>If the property is boolean-valued then the action will have a NULL
+parameter type, and activating the action (with no parameter) will
+toggle the value of the property.</p>  <p>In all other cases, the parameter type will correspond to the type of
+the property.</p>  <p>The general idea here is to reduce the number of locations where a
+particular piece of state is kept (and therefore has to be synchronised
+between). <link xref="Gio.PropertyAction"/> does not have a separate state that is kept
+in sync with the property value -- its state is the property value.</p>  <p>For example, it might be useful to create a <link xref="Gio.Action"/> corresponding to
+the "visible-child-name" property of a #GtkStack so that the current
+page can be switched from a menu.  The active radio indication in the
+menu is then directly determined from the active page of the
+#GtkStack.</p>  <p>An anti-example would be binding the "active-id" property on a
+#GtkComboBox.  This is because the state of the combobox itself is
+probably uninteresting and is actually being used to control
+something else.</p>  <p>Another anti-example would be to bind to the "visible-child-name"
+property of a #GtkStack if this value is actually stored in
+<link xref="Gio.Settings"/>.  In that case, the real source of the value is
+<link xref="Gio.Settings"/>.  If you want a <link xref="Gio.Action"/> to control a setting stored in
+<link xref="Gio.Settings"/>, see <link xref="Gio.create_action"/> instead, and possibly
+combine its use with <link xref="Gio.bind"/>.</p>
+  <p>Since 2.38</p>
+  <synopsis>
+    <title>Hierarchy</title>
+    <tree>
+      <item>
+        <code>GObject.Object</code>
+      <item>
+        <code>Gio.PropertyAction</code>
+      </item>
+      </item>
+    </tree>
+  </synopsis>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="property" style="linklist">
+    <title>Properties</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="signal" style="linklist">
+    <title>Signals</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="vfunc" style="linklist">
+    <title>Virtual functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

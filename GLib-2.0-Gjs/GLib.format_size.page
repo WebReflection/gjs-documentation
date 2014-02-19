@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="GLib.format_size"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_format_size</api:name>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>size</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.format_size</title>
+  <synopsis><code mime="text/x-gjs">
+function format_size(size: Number): String {
+    // Gjs wrapper for g_format_size()
+}
+  </code></synopsis>
+  <p>Formats a size (for example the size of a file) into a human readable
+string.  Sizes are rounded to the nearest size prefix (kB, MB, GB)
+and are displayed rounded to the nearest tenth. E.g. the file size
+3292528 bytes will be converted into the string "3.2 MB".</p>  <p>The prefix units base is 1000 (i.e. 1 kB is 1000 bytes).</p>  <p>This string should be freed with <link xref="GLib.free"/> when not needed any longer.</p>  <p>See <link xref="GLib.format_size_full"/> for more options about how the size might be
+formatted.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>size</code></title>
+  <p>a size in bytes</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

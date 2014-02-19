@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusObjectManagerClient-interface_proxy_signal"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusObjectManagerClient" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.DBusObjectManagerClient::interface_proxy_signal</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_interface_proxy_signal(object_proxy: Gio.DBusObjectProxy, interface_proxy: Gio.DBusProxy, sender_name: String, signal_name: String, parameters: GLib.Variant): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>object_proxy</code></title>
+
+</item>
+<item>
+<title><code>interface_proxy</code></title>
+
+</item>
+<item>
+<title><code>sender_name</code></title>
+
+</item>
+<item>
+<title><code>signal_name</code></title>
+
+</item>
+<item>
+<title><code>parameters</code></title>
+
+</item>
+</terms>
+
+</page>

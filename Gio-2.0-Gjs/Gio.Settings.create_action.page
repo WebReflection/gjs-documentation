@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<page id="Gio.Settings.create_action"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Settings" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.Action</api:type>
+      </api:returns>
+      <api:name>g_settings_create_action</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>key</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.Settings.prototype.create_action</title>
+  <synopsis><code mime="text/x-gjs">
+function create_action(key: String): Gio.Action {
+    // Gjs wrapper for g_settings_create_action()
+}
+  </code></synopsis>
+  <p>Creates a <link xref="Gio.Action"/> corresponding to a given <link xref="Gio.Settings"/> key.</p>  <p>The action has the same name as the key.</p>  <p>The value of the key becomes the state of the action and the action
+is enabled when the key is writable.  Changing the state of the
+action results in the key being written to.  Changes to the value or
+writability of the key cause appropriate change notifications to be
+emitted for the action.</p>  <p>For boolean-valued keys, action activations take no parameter and
+result in the toggling of the value.  For all other types,
+activations take the new value for the key (which must have the
+correct type).</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>key</code></title>
+  <p>the name of a key in <code>settings</code></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

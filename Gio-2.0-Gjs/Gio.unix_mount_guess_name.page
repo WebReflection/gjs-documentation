@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gio.unix_mount_guess_name"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_unix_mount_guess_name</api:name>
+      <api:arg>
+        <api:type>Gio.UnixMountEntry</api:type>
+        <api:name>mount_entry</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.unix_mount_guess_name</title>
+  <synopsis><code mime="text/x-gjs">
+function unix_mount_guess_name(mount_entry: Gio.UnixMountEntry): String {
+    // Gjs wrapper for g_unix_mount_guess_name()
+}
+  </code></synopsis>
+  <p>Guesses the name of a Unix mount.
+The result is a translated string.</p>
+
+<terms>
+<item>
+<title><code>mount_entry</code></title>
+  <p>a <link xref="Gio.UnixMountEntry"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

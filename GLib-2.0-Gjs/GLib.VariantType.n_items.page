@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="GLib.VariantType.n_items"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.VariantType" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>gsize</api:type>
+      </api:returns>
+      <api:name>g_variant_type_n_items</api:name>
+    </api:function>
+  </info>
+  <title>GLib.VariantType.prototype.n_items</title>
+  <synopsis><code mime="text/x-gjs">
+function n_items(): gsize {
+    // Gjs wrapper for g_variant_type_n_items()
+}
+  </code></synopsis>
+  <p>Determines the number of items contained in a tuple or
+dictionary entry type.</p>  <p>This function may only be used with tuple or dictionary entry types,
+but must not be used with the generic tuple type
+%G_VARIANT_TYPE_TUPLE.</p>  <p>In the case of a dictionary entry type, this function will always
+return 2.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

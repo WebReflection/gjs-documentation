@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<page id="GLib.OptionEntry-short_name"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.OptionEntry" group="field" type="guide"/>
+    <title type="link" role="topic">short_name</title>
+  </info>
+  <title>GLib.OptionEntry.short_name</title>
+  <synopsis><code mime="text/x-gjs">
+OptionEntry.short_name: String (Read / Write)
+  </code></synopsis>
+  <p>If an option has a short name, it can be specified
+ -&lt;replaceable&gt;short_name&lt;/replaceable&gt; in a commandline. @short_name must be
+ a printable ASCII character different from '-', or zero if the option has no
+ short name.</p>
+
+</page>

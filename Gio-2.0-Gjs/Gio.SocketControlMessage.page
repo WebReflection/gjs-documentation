@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<page id="Gio.SocketControlMessage"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>Gio.SocketControlMessage</title>
+  <synopsis><code>
+const Gio = imports.gi.Gio;
+
+let socketControlMessage = new Gio.SocketControlMessage();
+  </code></synopsis>
+  <p>A <link xref="Gio.SocketControlMessage"/> is a special-purpose utility message that
+can be sent to or received from a <link xref="Gio.Socket"/>. These types of
+messages are often called "ancillary data".</p>  <p>The message can represent some sort of special instruction to or
+information from the socket or can represent a special kind of
+transfer to the peer (for example, sending a file descriptor over
+a UNIX socket).</p>  <p>These messages are sent with <link xref="Gio.Socket.send_message"/> and received
+with <link xref="Gio.Socket.receive_message"/>.</p>  <p>To extend the set of control message that can be sent, subclass this
+class and override the get_size, get_level, get_type and serialize
+methods.</p>  <p>To extend the set of control messages that can be received, subclass
+this class and implement the deserialize method. Also, make sure your
+class is registered with the GType typesystem before calling
+<link xref="Gio.Socket.receive_message"/> to read such a message.</p>
+
+  <synopsis>
+    <title>Hierarchy</title>
+    <tree>
+      <item>
+        <code>GObject.Object</code>
+      <item>
+        <code>Gio.SocketControlMessage</code>
+      </item>
+      </item>
+    </tree>
+  </synopsis>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="property" style="linklist">
+    <title>Properties</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="signal" style="linklist">
+    <title>Signals</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="vfunc" style="linklist">
+    <title>Virtual functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

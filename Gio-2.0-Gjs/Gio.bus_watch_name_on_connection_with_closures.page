@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<page id="Gio.bus_watch_name_on_connection_with_closures"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number</api:type>
+      </api:returns>
+      <api:name>g_bus_watch_name_on_connection_with_closures</api:name>
+      <api:arg>
+        <api:type>Gio.DBusConnection</api:type>
+        <api:name>connection</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.BusNameWatcherFlags</api:type>
+        <api:name>flags</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Closure</api:type>
+        <api:name>name_appeared_closure</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Closure</api:type>
+        <api:name>name_vanished_closure</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.bus_watch_name_on_connection_with_closures</title>
+  <synopsis><code mime="text/x-gjs">
+function bus_watch_name_on_connection_with_closures(connection: Gio.DBusConnection, name: String, flags: Gio.BusNameWatcherFlags, name_appeared_closure: GObject.Closure, name_vanished_closure: GObject.Closure): Number {
+    // Gjs wrapper for g_bus_watch_name_on_connection_with_closures()
+}
+  </code></synopsis>
+  <p>Version of <link xref="Gio.bus_watch_name_on_connection"/> using closures instead of callbacks for
+easier binding in other languages.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>connection</code></title>
+  <p>A <link xref="Gio.DBusConnection"/>.</p>
+</item>
+<item>
+<title><code>name</code></title>
+  <p>The name (well-known or unique) to watch.</p>
+</item>
+<item>
+<title><code>flags</code></title>
+  <p>Flags from the <link xref="Gio.BusNameWatcherFlags"/> enumeration.</p>
+</item>
+<item>
+<title><code>name_appeared_closure</code></title>
+  <p><link xref="GObject.Closure"/> to invoke when <code>name</code> is known
+to exist or <code>null</code>.</p>
+</item>
+<item>
+<title><code>name_vanished_closure</code></title>
+  <p><link xref="GObject.Closure"/> to invoke when <code>name</code> is known
+to not exist or <code>null</code>.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

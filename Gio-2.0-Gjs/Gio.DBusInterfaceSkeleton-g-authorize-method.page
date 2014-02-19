@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusInterfaceSkeleton-g-authorize-method"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusInterfaceSkeleton" group="signal" type="guide"/>
+    <title type="link" role="topic">g-authorize-method</title>
+  </info>
+  <title>Gio.DBusInterfaceSkeleton::g-authorize-method</title>
+  <synopsis><code mime="text/x-gjs">
+connect('g-authorize-method', function (dBusInterfaceSkeleton, invocation: Gio.DBusMethodInvocation, ): Boolean);
+  </code></synopsis>
+  <p>Emitted when a method is invoked by a remote caller and used to
+determine if the method call is authorized.</p>  <p>Note that this signal is emitted in a thread dedicated to
+handling the method call so handlers are allowed to perform
+blocking IO. This means that it is appropriate to call e.g.
+[polkit_authority_check_authorization_sync()](http://hal.freedesktop.org/docs/polkit/PolkitAuthority.html#polkit-authority-check-authorization-sync)
+with the
+[POLKIT_CHECK_AUTHORIZATION_FLAGS_ALLOW_USER_INTERACTION](http://hal.freedesktop.org/docs/polkit/PolkitAuthority.html#POLKIT-CHECK-AUTHORIZATION-FLAGS-ALLOW-USER-INTERACTION:CAPS)
+flag set.</p>  <p>If <code>false</code> is returned then no further handlers are run and the
+signal handler must take a reference to <code>invocation</code> and finish
+handling the call (e.g. return an error via
+<link xref="Gio.return_error"/>).</p>  <p>Otherwise, if <code>true</code> is returned, signal emission continues. If no
+handlers return <code>false</code>, then the method is dispatched. If
+@interface has an enclosing <link xref="Gio.DBusObjectSkeleton"/>, then the
+<link xref="Gio.authorize-method"/> signal handlers run before
+the handlers for this signal.</p>  <p>The default class handler just returns <code>true</code>.</p>  <p>Please note that the common case is optimized: if no signals
+handlers are connected and the default class handler isn't
+overridden (for both @interface and the enclosing
+<link xref="Gio.DBusObjectSkeleton"/>, if any) and <link xref="Gio.g-flags"/> does
+not have the
+<link xref="Gio.DBusInterfaceSkeletonFlags"/>.handle_method_invocations_in_thread
+flags set, no dedicated thread is ever used and the call will be
+handled in the same thread as the object that @interface belongs
+to was exported in.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>dBusInterfaceSkeleton</code></title>
+<p>instance of <link xref="Gio.DBusInterfaceSkeleton"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>invocation</code></title>
+  <p>A <link xref="Gio.DBusMethodInvocation"/>.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if the call is authorized, <code>false</code> otherwise.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.ProxyAddressEnumerator-proxy-resolver"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.ProxyAddressEnumerator" group="property" type="guide"/>
+    <title type="link" role="topic">proxy-resolver</title>
+  </info>
+  <title>Gio.ProxyAddressEnumerator.proxy_resolver</title>
+  <synopsis><code mime="text/x-gjs">
+ProxyAddressEnumerator.proxy_resolver: Gio.ProxyResolver (Read / Write / Construct)
+  </code></synopsis>
+  <p>The proxy resolver to use.</p>
+  <p>Since 2.36</p>
+</page>

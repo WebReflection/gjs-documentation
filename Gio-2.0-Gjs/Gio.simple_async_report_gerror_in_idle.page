@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<page id="Gio.simple_async_report_gerror_in_idle"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_simple_async_report_gerror_in_idle</api:name>
+      <api:arg>
+        <api:type>GObject.Object</api:type>
+        <api:name>object</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.AsyncReadyCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.Error</api:type>
+        <api:name>error</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.simple_async_report_gerror_in_idle</title>
+  <synopsis><code mime="text/x-gjs">
+function simple_async_report_gerror_in_idle(object: GObject.Object, callback: Gio.AsyncReadyCallback, error: GLib.Error): void {
+    // Gjs wrapper for g_simple_async_report_gerror_in_idle()
+}
+  </code></synopsis>
+  <p>Reports an error in an idle function. Similar to
+<link xref="Gio.simple_async_report_error_in_idle"/>, but takes a <link xref="GLib.Error"/> rather
+than building a new one.</p>
+
+<terms>
+<item>
+<title><code>object</code></title>
+  <p>a <link xref="GObject.Object"/>, or <code>null</code></p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>a <link xref="Gio.AsyncReadyCallback"/>.</p>
+</item>
+<item>
+<title><code>error</code></title>
+  <p>the <link xref="GLib.Error"/> to report</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.SrvTarget.copy"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.SrvTarget" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.SrvTarget</api:type>
+      </api:returns>
+      <api:name>g_srv_target_copy</api:name>
+    </api:function>
+  </info>
+  <title>Gio.SrvTarget.prototype.copy</title>
+  <synopsis><code mime="text/x-gjs">
+function copy(): Gio.SrvTarget {
+    // Gjs wrapper for g_srv_target_copy()
+}
+  </code></synopsis>
+  <p>Copies <code>target</code></p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

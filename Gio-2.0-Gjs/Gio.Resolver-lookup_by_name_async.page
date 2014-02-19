@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Gio.Resolver-lookup_by_name_async"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Resolver" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.Resolver::lookup_by_name_async</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_lookup_by_name_async(hostname: String, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+}
+  </code></synopsis>
+  <p>Begins asynchronously resolving <code>hostname</code> to determine its
+associated IP address(es), and eventually calls <code>callback</code>, which
+must call <link xref="Gio.Resolver.lookup_by_name_finish"/> to get the result.
+See <link xref="Gio.Resolver.lookup_by_name"/> for more details.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>hostname</code></title>
+  <p>the hostname to look up the address of</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>a <link xref="Gio.Cancellable"/>, or <code>null</code></p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>callback to call after resolution completes</p>
+</item>
+</terms>
+
+</page>

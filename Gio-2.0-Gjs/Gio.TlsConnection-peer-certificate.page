@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<page id="Gio.TlsConnection-peer-certificate"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.TlsConnection" group="property" type="guide"/>
+    <title type="link" role="topic">peer-certificate</title>
+  </info>
+  <title>Gio.TlsConnection.peer_certificate</title>
+  <synopsis><code mime="text/x-gjs">
+TlsConnection.peer_certificate: Gio.TlsCertificate (Read)
+  </code></synopsis>
+  <p>The connection's peer's certificate, after the TLS handshake has
+completed and the certificate has been accepted. Note in
+particular that this is not yet set during the emission of
+<link xref="Gio.TlsConnection-accept-certificate"/>.</p>  <p>(You can watch for a <link xref="GObject.notify"/> signal on this property to
+detect when a handshake has occurred.)</p>
+  <p>Since 2.28</p>
+</page>

@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<page id="Gio.RemoteActionGroup"
+      type="guide"
+      style="interface"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="interface" type="guide"/>
+  </info>
+  <title>Gio.RemoteActionGroup</title>
+  <synopsis><code>
+const Gio = imports.gi.Gio;
+
+let remote_action_group = new Gio.RemoteActionGroup();
+  </code></synopsis>
+  <p>The GRemoteActionGroup interface is implemented by <link xref="Gio.ActionGroup"/>
+instances that either transmit action invocations to other processes
+or receive action invocations in the local process from other
+processes.</p>  <p>The interface has `_full` variants of the two
+methods on <link xref="Gio.ActionGroup"/> used to activate actions:
+<link xref="Gio.ActionGroup.activate_action"/> and
+<link xref="Gio.ActionGroup.change_action_state"/>. These variants allow a
+"platform data" <link xref="GLib.Variant"/> to be specified: a dictionary providing
+context for the action invocation (for example: timestamps, startup
+notification IDs, etc).</p>  <p><link xref="Gio.DBusActionGroup"/> implements <link xref="Gio.RemoteActionGroup"/>.  This provides a
+mechanism to send platform data for action invocations over D-Bus.</p>  <p>Additionally, <link xref="Gio.DBusConnection.export_action_group"/> will check if
+the exported <link xref="Gio.ActionGroup"/> implements <link xref="Gio.RemoteActionGroup"/> and use the
+`_full` variants of the calls if available.  This
+provides a mechanism by which to receive platform data for action
+invocations that arrive by way of D-Bus.</p>
+
+  <synopsis>
+    <title>Prerequisites</title>
+    <p>RemoteActionGroup requires Gio.ActionGroup</p>
+  </synopsis>
+  <synopsis>
+    <title>Known Implementations</title>
+    <p>%s is implemented by DBusActionGroup</p>
+  </synopsis>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="property" style="linklist">
+    <title>Properties</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="signal" style="linklist">
+    <title>Signals</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="vfunc" style="linklist">
+    <title>Virtual functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusMethodInfo.ref"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusMethodInfo" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.DBusMethodInfo</api:type>
+      </api:returns>
+      <api:name>g_dbus_method_info_ref</api:name>
+    </api:function>
+  </info>
+  <title>Gio.DBusMethodInfo.prototype.ref</title>
+  <synopsis><code mime="text/x-gjs">
+function ref(): Gio.DBusMethodInfo {
+    // Gjs wrapper for g_dbus_method_info_ref()
+}
+  </code></synopsis>
+  <p>If <code>info</code> is statically allocated does nothing. Otherwise increases
+the reference count.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

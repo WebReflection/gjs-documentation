@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page id="GLib.GINT64_FORMAT"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>GLib.GINT64_FORMAT</title>
+  <p>This is the platform dependent conversion specifier for scanning
+and printing values of type #gint64. See also #G_GINT16_FORMAT.</p>  <p>Some platforms do not support scanning and printing 64-bit integers,
+even though the types are supported. On such platforms %G_GINT64_FORMAT
+is not defined. Note that scanf() may not support 64-bit integers, even
+if %G_GINT64_FORMAT is defined. Due to its weak error handling, scanf()
+is not recommended for parsing anyway; consider using <link xref="GLib.ascii_strtoull"/>
+instead.</p>
+
+</page>

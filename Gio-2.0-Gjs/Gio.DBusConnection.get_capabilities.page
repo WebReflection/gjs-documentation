@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusConnection.get_capabilities"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusConnection" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.DBusCapabilityFlags</api:type>
+      </api:returns>
+      <api:name>g_dbus_connection_get_capabilities</api:name>
+    </api:function>
+  </info>
+  <title>Gio.DBusConnection.prototype.get_capabilities</title>
+  <synopsis><code mime="text/x-gjs">
+function get_capabilities(): Gio.DBusCapabilityFlags {
+    // Gjs wrapper for g_dbus_connection_get_capabilities()
+}
+  </code></synopsis>
+  <p>Gets the capabilities negotiated with the remote peer</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

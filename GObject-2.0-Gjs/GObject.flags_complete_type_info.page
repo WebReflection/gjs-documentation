@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<page id="GObject.flags_complete_type_info"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_flags_complete_type_info</api:name>
+      <api:arg>
+        <api:type>GType</api:type>
+        <api:name>g_flags_type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.FlagsValue</api:type>
+        <api:name>const_values</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.flags_complete_type_info</title>
+  <synopsis><code mime="text/x-gjs">
+function flags_complete_type_info(g_flags_type: GType, const_values: GObject.FlagsValue): GObject.TypeInfo {
+    // Gjs wrapper for g_flags_complete_type_info()
+}
+  </code></synopsis>
+  <p>This function is meant to be called from the complete_type_info()
+function of a <link xref="GObject.TypePlugin"/> implementation, see the example for
+<link xref="GObject.enum_complete_type_info"/> above.</p>
+
+<terms>
+<item>
+<title><code>g_flags_type</code></title>
+  <p>the type identifier of the type being completed</p>
+</item>
+<item>
+<title><code>const_values</code></title>
+  <p>An array of <link xref="GObject.FlagsValue"/> structs for the possible
+ enumeration values. The array is terminated by a struct with all
+ members being 0.</p>
+</item>
+<item>
+<title><code>info</code></title>
+  <p>the <link xref="GObject.TypeInfo"/> struct to be filled in</p>
+</item>
+</terms>
+
+</page>

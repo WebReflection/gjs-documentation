@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="Gio.TlsInteraction.request_certificate_finish"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.TlsInteraction" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.TlsInteractionResult</api:type>
+      </api:returns>
+      <api:name>g_tls_interaction_request_certificate_finish</api:name>
+      <api:arg>
+        <api:type>Gio.AsyncResult</api:type>
+        <api:name>result</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.TlsInteraction.prototype.request_certificate_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function request_certificate_finish(result: Gio.AsyncResult): Gio.TlsInteractionResult {
+    // Gjs wrapper for g_tls_interaction_request_certificate_finish()
+}
+  </code></synopsis>
+  <p>Complete an request certificate user interaction request. This should be once
+the <link xref="Gio.TlsInteraction.request_certificate_async"/> completion callback is called.</p>  <p>If <link xref="Gio.TlsInteractionResult"/>.handled is returned, then the <link xref="Gio.TlsConnection"/>
+passed to <link xref="Gio.TlsInteraction.request_certificate_async"/> will have had its
+<link xref="Gio.TlsConnection-certificate"/> filled in.</p>  <p>If the interaction is cancelled by the cancellation object, or by the
+user then <link xref="Gio.TlsInteractionResult"/>.failed will be returned with an error that
+contains a <link xref="Gio.IOErrorEnum"/>.cancelled error code.</p>
+  <p>Since 2.40</p>
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>the result passed to the callback</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<page id="Gio.TlsConnection.set_database"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.TlsConnection" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_tls_connection_set_database</api:name>
+      <api:arg>
+        <api:type>Gio.TlsDatabase</api:type>
+        <api:name>database</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.TlsConnection.prototype.set_database</title>
+  <synopsis><code mime="text/x-gjs">
+function set_database(database: Gio.TlsDatabase): void {
+    // Gjs wrapper for g_tls_connection_set_database()
+}
+  </code></synopsis>
+  <p>Sets the certificate database that is used to verify peer certificates.
+This is set to the default database by default. See
+<link xref="Gio.TlsBackend.get_default_database"/>. If set to <code>null</code>, then
+peer certificate validation will always set the
+<link xref="Gio.TlsCertificateFlags"/>.unknown_ca error (meaning
+<link xref="Gio.accept-certificate"/> will always be emitted on
+client-side connections, unless that bit is not set in
+<link xref="Gio.validation-flags"/>).</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>database</code></title>
+  <p>a <link xref="Gio.TlsDatabase"/></p>
+</item>
+</terms>
+
+</page>

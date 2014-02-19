@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<page id="GLib.utf16_to_utf8"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_utf16_to_utf8</api:name>
+      <api:arg>
+        <api:type>guint16</api:type>
+        <api:name>str</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>len</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>items_read</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>items_written</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.utf16_to_utf8</title>
+  <synopsis><code mime="text/x-gjs">
+function utf16_to_utf8(str: guint16, len: Number, items_read: Number, items_written: Number): String {
+    // Gjs wrapper for g_utf16_to_utf8()
+}
+  </code></synopsis>
+  <p>Convert a string from UTF-16 to UTF-8. The result will be
+terminated with a 0 byte.</p>  <p>Note that the input is expected to be already in native endianness,
+an initial byte-order-mark character is not handled specially.
+<link xref="GLib.convert"/> can be used to convert a byte buffer of UTF-16 data of
+ambiguous endianess.</p>  <p>Further note that this function does not validate the result
+string; it may e.g. include embedded NUL characters. The only
+validation done by this function is to ensure that the input can
+be correctly interpreted as UTF-16, i.e. it doesn't contain
+things unpaired surrogates.</p>
+
+<terms>
+<item>
+<title><code>str</code></title>
+  <p>a UTF-16 encoded string</p>
+</item>
+<item>
+<title><code>len</code></title>
+  <p>the maximum length (number of #gunichar2) of <code>str</code> to use.
+    If <code>len</code> &lt; 0, then the string is nul-terminated.</p>
+</item>
+<item>
+<title><code>items_read</code></title>
+  <p>location to store number of words read,
+    or <code>null</code>. If <code>null</code>, then <link xref="GLib.ConvertError"/>.partial_input will be
+    returned in case <code>str</code> contains a trailing partial character. If
+    an error occurs then the index of the invalid input is stored here.</p>
+</item>
+<item>
+<title><code>items_written</code></title>
+  <p>location to store number of bytes written,
+    or <code>null</code>. The value stored here does not include the trailing 0 byte.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

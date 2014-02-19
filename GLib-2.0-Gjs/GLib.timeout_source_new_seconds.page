@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="GLib.timeout_source_new_seconds"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.Source</api:type>
+      </api:returns>
+      <api:name>g_timeout_source_new_seconds</api:name>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>interval</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.timeout_source_new_seconds</title>
+  <synopsis><code mime="text/x-gjs">
+function timeout_source_new_seconds(interval: Number): GLib.Source {
+    // Gjs wrapper for g_timeout_source_new_seconds()
+}
+  </code></synopsis>
+  <p>Creates a new timeout source.</p>  <p>The source will not initially be associated with any <link xref="GLib.MainContext"/>
+and must be added to one with <link xref="GLib.Source.attach"/> before it will be
+executed.</p>  <p>The scheduling granularity/accuracy of this timeout source will be
+in seconds.</p>  <p>The interval given in terms of monotonic time, not wall clock time.
+See <link xref="GLib.get_monotonic_time"/>.</p>
+  <p>Since 2.14</p>
+<terms>
+<item>
+<title><code>interval</code></title>
+  <p>the timeout interval in seconds</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

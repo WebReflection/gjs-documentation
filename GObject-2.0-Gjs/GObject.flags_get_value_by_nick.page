@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<page id="GObject.flags_get_value_by_nick"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GObject.FlagsValue</api:type>
+      </api:returns>
+      <api:name>g_flags_get_value_by_nick</api:name>
+      <api:arg>
+        <api:type>GObject.FlagsClass</api:type>
+        <api:name>flags_class</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>nick</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.flags_get_value_by_nick</title>
+  <synopsis><code mime="text/x-gjs">
+function flags_get_value_by_nick(flags_class: GObject.FlagsClass, nick: String): GObject.FlagsValue {
+    // Gjs wrapper for g_flags_get_value_by_nick()
+}
+  </code></synopsis>
+  <p>Looks up a <link xref="GObject.FlagsValue"/> by nickname.</p>
+
+<terms>
+<item>
+<title><code>flags_class</code></title>
+  <p>a <link xref="GObject.FlagsClass"/></p>
+</item>
+<item>
+<title><code>nick</code></title>
+  <p>the nickname to look up</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

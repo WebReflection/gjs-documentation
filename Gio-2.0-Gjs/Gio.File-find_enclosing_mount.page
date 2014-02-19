@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Gio.File-find_enclosing_mount"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.File" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.File::find_enclosing_mount</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_find_enclosing_mount(cancellable: Gio.Cancellable): Gio.Mount {
+}
+  </code></synopsis>
+  <p>Gets a <link xref="Gio.Mount"/> for the <link xref="Gio.File"/>.</p>  <p>If the <link xref="Gio.FileIface"/> for <code>file</code> does not have a mount (e.g.
+possibly a remote share), @error will be set to <link xref="Gio.IOErrorEnum"/>.not_found
+and <code>null</code> will be returned.</p>  <p>If <code>cancellable</code> is not <code>null</code>, then the operation can be cancelled by
+triggering the cancellable object from another thread. If the operation
+was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be returned.</p>
+
+<terms>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional <link xref="Gio.Cancellable"/> object,
+    <code>null</code> to ignore</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link xref="Gio.Mount"/> where the <code>file</code> is located
+    or <code>null</code> on error.
+    Free the returned object with <link xref="GObject.unref"/>.</p>
+</item>
+</terms>
+
+</page>

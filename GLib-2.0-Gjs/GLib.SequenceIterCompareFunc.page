@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="GLib.SequenceIterCompareFunc"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>GLib.SequenceIterCompareFunc</title>
+  <synopsis><code mime="text/x-gjs">
+function onSequenceIterCompareFunc(a: GLib.SequenceIter, b: GLib.SequenceIter, data: gpointer): Number {
+}
+  </code></synopsis>
+  <p>A <link xref="GLib.SequenceIterCompareFunc"/> is a function used to compare iterators.
+It must return zero if the iterators compare equal, a negative value
+if <code>a</code> comes before <code>b</code>, and a positive value if <code>b</code> comes before <code>a</code>.</p>
+
+<terms>
+<item>
+<title><code>a</code></title>
+  <p>a <link xref="GLib.SequenceIter"/></p>
+</item>
+<item>
+<title><code>b</code></title>
+  <p>a <link xref="GLib.SequenceIter"/></p>
+</item>
+<item>
+<title><code>data</code></title>
+  <p>user data</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

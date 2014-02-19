@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="Gio.TlsConnection-rehandshake-mode"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.TlsConnection" group="property" type="guide"/>
+    <title type="link" role="topic">rehandshake-mode</title>
+  </info>
+  <title>Gio.TlsConnection.rehandshake_mode</title>
+  <synopsis><code mime="text/x-gjs">
+TlsConnection.rehandshake_mode: Gio.TlsRehandshakeMode (Read / Write / Construct)
+  </code></synopsis>
+  <p>The rehandshaking mode. See
+<link xref="Gio.TlsConnection.set_rehandshake_mode"/>.</p>
+  <p>Since 2.28</p>
+</page>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="GObject.Value.peek_pointer"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.Value" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>gpointer</api:type>
+      </api:returns>
+      <api:name>g_value_peek_pointer</api:name>
+    </api:function>
+  </info>
+  <title>GObject.Value.prototype.peek_pointer</title>
+  <synopsis><code mime="text/x-gjs">
+function peek_pointer(): gpointer {
+    // Gjs wrapper for g_value_peek_pointer()
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

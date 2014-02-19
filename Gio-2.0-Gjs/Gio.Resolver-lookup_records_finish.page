@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="Gio.Resolver-lookup_records_finish"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Resolver" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.Resolver::lookup_records_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_lookup_records_finish(result: Gio.AsyncResult): Array(GLib.Variant) {
+}
+  </code></synopsis>
+  <p>Retrieves the result of a previous call to
+<link xref="Gio.Resolver.lookup_records_async"/>. Returns a list of records as <link xref="GLib.Variant"/>
+tuples. See <link xref="Gio.ResolverRecordType"/> for information on what the records contain.</p>  <p>If the DNS resolution failed, @error (if non-<code>null</code>) will be set to
+a value from <link xref="Gio.ResolverError"/>. If the operation was cancelled,
+@error will be set to <link xref="Gio.IOErrorEnum"/>.cancelled.</p>
+  <p>Since 2.34</p>
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>the result passed to your <link xref="Gio.AsyncReadyCallback"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link xref="GLib.List"/> of <link xref="GLib.Variant"/>,
+or <code>null</code> on error. You must free each of the records and the list when you are
+done with it. (You can use <link xref="GLib.free_full"/> with <link xref="GLib.unref"/> to do this.)</p>
+</item>
+</terms>
+
+</page>

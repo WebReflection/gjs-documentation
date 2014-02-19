@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Gio.FILE_ATTRIBUTE_TIME_CREATED"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>Gio.FILE_ATTRIBUTE_TIME_CREATED</title>
+  <p>A key in the "time" namespace for getting the time the file was created.
+Corresponding <link xref="Gio.FileAttributeType"/> is <link xref="Gio.FileAttributeType"/>.uint64,
+and contains the UNIX time since the file was created.</p>  <p>This corresponds to the NTFS ctime.</p>
+
+</page>

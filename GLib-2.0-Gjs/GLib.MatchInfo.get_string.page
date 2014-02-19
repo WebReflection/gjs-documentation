@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="GLib.MatchInfo.get_string"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.MatchInfo" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_match_info_get_string</api:name>
+    </api:function>
+  </info>
+  <title>GLib.MatchInfo.prototype.get_string</title>
+  <synopsis><code mime="text/x-gjs">
+function get_string(): String {
+    // Gjs wrapper for g_match_info_get_string()
+}
+  </code></synopsis>
+  <p>Returns the string searched with <code>match_info</code>. This is the
+string passed to <link xref="GLib.match"/> or <link xref="GLib.replace"/> so
+you may not free it before calling this function.</p>
+  <p>Since 2.14</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

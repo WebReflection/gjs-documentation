@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="Gio.EmblemOrigin"
+      type="topic"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Gio.EmblemOrigin</title>
+  <p>GEmblemOrigin is used to add information about the origin of the emblem
+to <link xref="Gio.Emblem"/>.</p>
+  <p>Since 2.18</p>
+<terms>
+<item>
+<title><code>EmblemOrigin.UNKNOWN</code></title>
+  <p>Emblem of unknown origin</p>
+</item>
+<item>
+<title><code>EmblemOrigin.DEVICE</code></title>
+  <p>Emblem adds device-specific information</p>
+</item>
+<item>
+<title><code>EmblemOrigin.LIVEMETADATA</code></title>
+  <p>Emblem depicts live metadata, such as "readonly"</p>
+</item>
+<item>
+<title><code>EmblemOrigin.TAG</code></title>
+  <p>Emblem comes from a user-defined tag, e.g. set by nautilus (in the future)</p>
+</item>
+</terms>
+
+</page>

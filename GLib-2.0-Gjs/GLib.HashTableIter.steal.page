@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<page id="GLib.HashTableIter.steal"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.HashTableIter" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_hash_table_iter_steal</api:name>
+    </api:function>
+  </info>
+  <title>GLib.HashTableIter.prototype.steal</title>
+  <synopsis><code mime="text/x-gjs">
+function steal(): void {
+    // Gjs wrapper for g_hash_table_iter_steal()
+}
+  </code></synopsis>
+  <p>Removes the key/value pair currently pointed to by the
+iterator from its associated <link xref="GLib.HashTable"/>, without calling
+the key and value destroy functions. Can only be called
+after <link xref="GLib.HashTableIter.next"/> returned <code>true</code>, and cannot
+be called more than once for the same key/value pair.</p>
+  <p>Since 2.16</p>
+
+</page>

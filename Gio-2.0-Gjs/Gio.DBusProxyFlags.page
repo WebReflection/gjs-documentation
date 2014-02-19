@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusProxyFlags"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>Gio.DBusProxyFlags</title>
+  <p>Flags used when constructing an instance of a <link xref="Gio.DBusProxy"/> derived class.</p>
+  <p>Since 2.26</p>
+</page>

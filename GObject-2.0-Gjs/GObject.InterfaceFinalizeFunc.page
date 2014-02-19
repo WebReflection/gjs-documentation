@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<page id="GObject.InterfaceFinalizeFunc"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>GObject.InterfaceFinalizeFunc</title>
+  <synopsis><code mime="text/x-gjs">
+function onInterfaceFinalizeFunc(g_iface: gpointer, iface_data: gpointer): void {
+}
+  </code></synopsis>
+  <p>A callback function used by the type system to finalize an interface.
+This function should destroy any internal data and release any resources
+allocated by the corresponding GInterfaceInitFunc() function.</p>
+
+<terms>
+<item>
+<title><code>g_iface</code></title>
+  <p>The interface structure to finalize.</p>
+</item>
+<item>
+<title><code>iface_data</code></title>
+  <p>The @interface_data supplied via the <link xref="GObject.InterfaceInfo"/> structure.</p>
+</item>
+</terms>
+
+</page>

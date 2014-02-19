@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<page id="GLib.KeyFile.get_locale_string_list"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.KeyFile" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(String)</api:type>
+      </api:returns>
+      <api:name>g_key_file_get_locale_string_list</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>group_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>key</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>locale</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.KeyFile.prototype.get_locale_string_list</title>
+  <synopsis><code mime="text/x-gjs">
+function get_locale_string_list(group_name: String, key: String, locale: String): [return_value: Array(String), length: gsize] {
+    // Gjs wrapper for g_key_file_get_locale_string_list()
+}
+  </code></synopsis>
+  <p>Returns the values associated with <code>key</code> under <code>group_name</code>
+translated in the given <code>locale</code> if available.  If <code>locale</code> is
+<code>null</code> then the current locale is assumed.</p>  <p>If <code>key</code> cannot be found then <code>null</code> is returned and @error is set
+to #G_KEY_FILE_ERROR_KEY_NOT_FOUND. If the values associated
+with <code>key</code> cannot be interpreted or no suitable translations
+can be found then the untranslated values are returned. The
+returned array is <code>null</code>-terminated, so <code>length</code> may optionally
+be <code>null</code>.</p>
+  <p>Since 2.6</p>
+<terms>
+<item>
+<title><code>group_name</code></title>
+  <p>a group name</p>
+</item>
+<item>
+<title><code>key</code></title>
+  <p>a key</p>
+</item>
+<item>
+<title><code>locale</code></title>
+  <p>a locale identifier or <code>null</code></p>
+</item>
+<item>
+<title><code>return_value</code></title>
+
+</item>
+<item>
+<title><code>length</code></title>
+  <p>return location for the number of returned strings or <code>null</code></p>
+</item>
+</terms>
+
+</page>

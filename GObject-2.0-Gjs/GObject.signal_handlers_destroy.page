@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="GObject.signal_handlers_destroy"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_signal_handlers_destroy</api:name>
+      <api:arg>
+        <api:type>GObject.Object</api:type>
+        <api:name>instance</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.signal_handlers_destroy</title>
+  <synopsis><code mime="text/x-gjs">
+function signal_handlers_destroy(instance: GObject.Object): void {
+    // Gjs wrapper for g_signal_handlers_destroy()
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>instance</code></title>
+  <p>The instance where a signal handler is sought.</p>
+</item>
+</terms>
+
+</page>

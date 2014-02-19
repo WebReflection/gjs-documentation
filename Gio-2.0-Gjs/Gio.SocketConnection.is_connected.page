@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gio.SocketConnection.is_connected"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.SocketConnection" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_socket_connection_is_connected</api:name>
+    </api:function>
+  </info>
+  <title>Gio.SocketConnection.prototype.is_connected</title>
+  <synopsis><code mime="text/x-gjs">
+function is_connected(): Boolean {
+    // Gjs wrapper for g_socket_connection_is_connected()
+}
+  </code></synopsis>
+  <p>Checks if <code>connection</code> is connected. This is equivalent to calling
+<link xref="Gio.Socket.is_connected"/> on <code>connection</code>'s underlying <link xref="Gio.Socket"/>.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

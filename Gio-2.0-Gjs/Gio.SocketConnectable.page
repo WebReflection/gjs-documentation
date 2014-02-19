@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<page id="Gio.SocketConnectable"
+      type="guide"
+      style="interface"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="interface" type="guide"/>
+  </info>
+  <title>Gio.SocketConnectable</title>
+  <synopsis><code>
+const Gio = imports.gi.Gio;
+
+let socket_connectable = new Gio.SocketConnectable();
+  </code></synopsis>
+  <p>Objects that describe one or more potential socket endpoints
+implement <link xref="Gio.SocketConnectable"/>. Callers can then use
+<link xref="Gio.enumerate"/> to get a <link xref="Gio.SocketAddressEnumerator"/>
+to try out each socket address in turn until one succeeds, as shown
+in the sample code below.</p>  <p>|[&lt;!-- language="C" --&gt;
+MyConnectionType *
+connect_to_host (const char    *hostname,
+                 guint16        port,
+                 GCancellable  *cancellable,
+                 GError       **error)
+{
+  MyConnection *conn = NULL;
+  GSocketConnectable *addr;
+  GSocketAddressEnumerator *enumerator;
+  GSocketAddress *sockaddr;
+  GError *conn_error = NULL;</p>  <p>  addr = g_network_address_new (hostname, port);
+  enumerator = g_socket_connectable_enumerate (addr);
+  g_object_unref (addr);</p>  <p>  // Try each sockaddr until we succeed. Record the first connection error,
+  // but not any further ones (since they'll probably be basically the same
+  // as the first).
+  while (!conn &amp;&amp; (sockaddr = g_socket_address_enumerator_next (enumerator, cancellable, error))
+    {
+      conn = connect_to_sockaddr (sockaddr, conn_error ? NULL : &amp;conn_error);
+      g_object_unref (sockaddr);
+    }
+  g_object_unref (enumerator);</p>  <p>  if (conn)
+    {
+      if (conn_error)
+        {
+          // We couldn't connect to the first address, but we succeeded
+          // in connecting to a later address.
+          g_error_free (conn_error);
+        }
+      return conn;
+    }
+  else if (error)
+    {
+      /// Either initial lookup failed, or else the caller cancelled us.
+      if (conn_error)
+        g_error_free (conn_error);
+      return NULL;
+    }
+  else
+    {
+      g_error_propagate (error, conn_error);
+      return NULL;
+    }
+}
+]|</p>
+
+  <synopsis>
+    <title>Prerequisites</title>
+    <p>SocketConnectable requires GObject.Object</p>
+  </synopsis>
+  <synopsis>
+    <title>Known Implementations</title>
+    <p>%s is implemented by InetSocketAddress,NetworkAddress,NetworkService,ProxyAddress,SocketAddress and UnixSocketAddress</p>
+  </synopsis>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="property" style="linklist">
+    <title>Properties</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="signal" style="linklist">
+    <title>Signals</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="vfunc" style="linklist">
+    <title>Virtual functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

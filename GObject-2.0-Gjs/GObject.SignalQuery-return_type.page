@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="GObject.SignalQuery-return_type"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.SignalQuery" group="field" type="guide"/>
+    <title type="link" role="topic">return_type</title>
+  </info>
+  <title>GObject.SignalQuery.return_type</title>
+  <synopsis><code mime="text/x-gjs">
+SignalQuery.return_type: GType (Read / Write)
+  </code></synopsis>
+  <p>The return type for user callbacks.</p>
+
+</page>

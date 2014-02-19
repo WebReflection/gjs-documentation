@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<page id="Gio.SimpleProxyResolver.set_uri_proxy"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.SimpleProxyResolver" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_simple_proxy_resolver_set_uri_proxy</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>uri_scheme</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>proxy</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.SimpleProxyResolver.prototype.set_uri_proxy</title>
+  <synopsis><code mime="text/x-gjs">
+function set_uri_proxy(uri_scheme: String, proxy: String): void {
+    // Gjs wrapper for g_simple_proxy_resolver_set_uri_proxy()
+}
+  </code></synopsis>
+  <p>Adds a URI-scheme-specific proxy to <code>resolver</code>; URIs whose scheme
+matches <code>uri_scheme</code> (and which don't match
+<link xref="Gio.ignore-hosts"/>) will be proxied via <code>proxy</code>.</p>  <p>As with <link xref="Gio.default-proxy"/>, if <code>proxy</code> starts with
+"socks://", <link xref="Gio.SimpleProxyResolver"/> will treat it
+as referring to all three of the socks5, socks4a, and socks4 proxy
+types.</p>
+  <p>Since 2.36</p>
+<terms>
+<item>
+<title><code>uri_scheme</code></title>
+  <p>the URI scheme to add a proxy for</p>
+</item>
+<item>
+<title><code>proxy</code></title>
+  <p>the proxy to use for <code>uri_scheme</code></p>
+</item>
+</terms>
+
+</page>

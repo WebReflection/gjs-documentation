@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="GObject.SignalCMarshaller"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>GObject.SignalCMarshaller</title>
+  <p>This is the signature of marshaller functions, required to marshall
+arrays of parameter values to signal emissions into C language callback
+invocations. It is merely an alias to <link xref="GObject.ClosureMarshal"/> since the <link xref="GObject.Closure"/>
+mechanism takes over responsibility of actual function invocation for the
+signal system.</p>
+
+</page>

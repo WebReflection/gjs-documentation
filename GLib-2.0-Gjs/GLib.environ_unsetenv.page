@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<page id="GLib.environ_unsetenv"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(String)</api:type>
+      </api:returns>
+      <api:name>g_environ_unsetenv</api:name>
+      <api:arg>
+        <api:type>Array(String)</api:type>
+        <api:name>envp</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>variable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.environ_unsetenv</title>
+  <synopsis><code mime="text/x-gjs">
+function environ_unsetenv(envp: Array(String), variable: String): Array(String) {
+    // Gjs wrapper for g_environ_unsetenv()
+}
+  </code></synopsis>
+  <p>Removes the environment variable <code>variable</code> from the provided
+environment <code>envp</code>.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>envp</code></title>
+  <p>an environment
+    list that can be freed using <link xref="GLib.strfreev"/> (e.g., as returned from <link xref="GLib.get_environ"/>),
+    or <code>null</code> for an empty environment list</p>
+</item>
+<item>
+<title><code>variable</code></title>
+  <p>the environment variable to remove, must not contain '='</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

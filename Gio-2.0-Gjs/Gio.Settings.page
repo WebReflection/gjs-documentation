@@ -1,0 +1,187 @@
+<?xml version="1.0"?>
+<page id="Gio.Settings"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>Gio.Settings</title>
+  <synopsis><code>
+const Gio = imports.gi.Gio;
+
+let settings = new Gio.Settings({
+    <link xref='Gio.Settings-backend'>backend</link>: value,
+    <link xref='Gio.Settings-path'>path</link>: value,
+    <link xref='Gio.Settings-schema'>schema</link>: value,
+    <link xref='Gio.Settings-schema-id'>schema_id</link>: value,
+    <link xref='Gio.Settings-settings-schema'>settings_schema</link>: value,
+});
+  </code></synopsis>
+  <p>The <link xref="Gio.Settings"/> class provides a convenient API for storing and retrieving
+application settings.</p>  <p>Reads and writes can be considered to be non-blocking.  Reading
+settings with <link xref="Gio.Settings"/> is typically extremely fast: on
+approximately the same order of magnitude (but slower than) a
+<link xref="GLib.HashTable"/> lookup.  Writing settings is also extremely fast in terms
+of time to return to your application, but can be extremely expensive
+for other threads and other processes.  Many settings backends
+(including dconf) have lazy initialisation which means in the common
+case of the user using their computer without modifying any settings
+a lot of work can be avoided.  For dconf, the D-Bus service doesn't
+even need to be started in this case.  For this reason, you should
+only ever modify <link xref="Gio.Settings"/> keys in response to explicit user action.
+Particular care should be paid to ensure that modifications are not
+made during startup -- for example, when setting the initial value
+of preferences widgets.  The built-in <link xref="Gio.bind"/> functionality
+is careful not to write settings in response to notify signals as a
+result of modifications that it makes to widgets.</p>  <p>When creating a GSettings instance, you have to specify a schema
+that describes the keys in your settings and their types and default
+values, as well as some other information.</p>  <p>Normally, a schema has as fixed path that determines where the settings
+are stored in the conceptual global tree of settings. However, schemas
+can also be 'relocatable', i.e. not equipped with a fixed path. This is
+useful e.g. when the schema describes an 'account', and you want to be
+able to store a arbitrary number of accounts.</p>  <p>Paths must start with and end with a forward slash character ('/')
+and must not contain two sequential slash characters.  Paths should
+be chosen based on a domain name associated with the program or
+library to which the settings belong.  Examples of paths are
+"/org/gtk/settings/file-chooser/" and "/ca/desrt/dconf-editor/".
+Paths should not start with "/apps/", "/desktop/" or "/system/" as
+they often did in GConf.</p>  <p>Unlike other configuration systems (like GConf), GSettings does not
+restrict keys to basic types like strings and numbers. GSettings stores
+values as <link xref="GLib.Variant"/>, and allows any <link xref="GLib.VariantType"/> for keys. Key names
+are restricted to lowercase characters, numbers and '-'. Furthermore,
+the names must begin with a lowercase character, must not end
+with a '-', and must not contain consecutive dashes.</p>  <p>Similar to GConf, the default values in GSettings schemas can be
+localized, but the localized values are stored in gettext catalogs
+and looked up with the domain that is specified in the
+gettext-domain attribute of the &lt;schemalist&gt; or &lt;schema&gt;
+elements and the category that is specified in the l10n attribute of
+the &lt;key&gt; element.</p>  <p>GSettings uses schemas in a compact binary form that is created
+by the [glib-compile-schemas][glib-compile-schemas]
+utility. The input is a schema description in an XML format.</p>  <p>A DTD for the gschema XML format can be found here:
+[gschema.dtd](https://git.gnome.org/browse/glib/tree/gio/gschema.dtd)</p>  <p>The [glib-compile-schemas][glib-compile-schemas] tool expects schema
+files to have the extension `.gschema.xml`.</p>  <p>At runtime, schemas are identified by their id (as specified in the
+id attribute of the &lt;schema&gt; element). The convention for schema
+ids is to use a dotted name, similar in style to a D-Bus bus name,
+e.g. "org.gnome.SessionManager". In particular, if the settings are
+for a specific service that owns a D-Bus bus name, the D-Bus bus name
+and schema id should match. For schemas which deal with settings not
+associated with one named application, the id should not use
+StudlyCaps, e.g. "org.gnome.font-rendering".</p>  <p>In addition to <link xref="GLib.Variant"/> types, keys can have types that have
+enumerated types. These can be described by a &lt;choice&gt;,
+&lt;enum&gt; or &lt;flags&gt; element, as seen in the
+[example][schema-enumerated]. The underlying type of such a key
+is string, but you can use <link xref="Gio.get_enum"/>, <link xref="Gio.set_enum"/>,
+<link xref="Gio.get_flags"/>, <link xref="Gio.set_flags"/> access the numeric values
+corresponding to the string value of enum and flags keys.</p>  <p>An example for default value:
+|[
+&lt;schemalist&gt;
+  &lt;schema id="org.gtk.Test" path="/org/gtk/Test/" gettext-domain="test"&gt;</p>  <p>    &lt;key name="greeting" type="s"&gt;
+      &lt;default l10n="messages"&gt;"Hello, earthlings"&lt;/default&gt;
+      &lt;summary&gt;A greeting&lt;/summary&gt;
+      &lt;description&gt;
+        Greeting of the invading martians
+      &lt;/description&gt;
+    &lt;/key&gt;</p>  <p>    &lt;key name="box" type="(ii)"&gt;
+      &lt;default&gt;(20,30)&lt;/default&gt;
+    &lt;/key&gt;</p>  <p>  &lt;/schema&gt;
+&lt;/schemalist&gt;
+]|</p>  <p>An example for ranges, choices and enumerated types:
+|[
+&lt;schemalist&gt;</p>  <p>  &lt;enum id="org.gtk.Test.myenum"&gt;
+    &lt;value nick="first" value="1"/&gt;
+    &lt;value nick="second" value="2"/&gt;
+  &lt;/enum&gt;</p>  <p>  &lt;flags id="org.gtk.Test.myflags"&gt;
+    &lt;value nick="flag1" value="1"/&gt;
+    &lt;value nick="flag2" value="2"/&gt;
+    &lt;value nick="flag3" value="4"/&gt;
+  &lt;/flags&gt;</p>  <p>  &lt;schema id="org.gtk.Test"&gt;</p>  <p>    &lt;key name="key-with-range" type="i"&gt;
+      &lt;range min="1" max="100"/&gt;
+      &lt;default&gt;10&lt;/default&gt;
+    &lt;/key&gt;</p>  <p>    &lt;key name="key-with-choices" type="s"&gt;
+      &lt;choices&gt;
+        &lt;choice value='Elisabeth'/&gt;
+        &lt;choice value='Annabeth'/&gt;
+        &lt;choice value='Joe'/&gt;
+      &lt;/choices&gt;
+      &lt;aliases&gt;
+        &lt;alias value='Anna' target='Annabeth'/&gt;
+        &lt;alias value='Beth' target='Elisabeth'/&gt;
+      &lt;/aliases&gt;
+      &lt;default&gt;'Joe'&lt;/default&gt;
+    &lt;/key&gt;</p>  <p>    &lt;key name='enumerated-key' enum='org.gtk.Test.myenum'&gt;
+      &lt;default&gt;'first'&lt;/default&gt;
+    &lt;/key&gt;</p>  <p>    &lt;key name='flags-key' flags='org.gtk.Test.myflags'&gt;
+      &lt;default&gt;["flag1",flag2"]&lt;/default&gt;
+    &lt;/key&gt;
+  &lt;/schema&gt;
+&lt;/schemalist&gt;
+]|</p>  <p>## Vendor overrides</p>  <p>Default values are defined in the schemas that get installed by
+an application. Sometimes, it is necessary for a vendor or distributor
+to adjust these defaults. Since patching the XML source for the schema
+is inconvenient and error-prone,
+[glib-compile-schemas][glib-compile-schemas] reads so-called vendor
+override' files. These are keyfiles in the same directory as the XML
+schema sources which can override default values. The schema id serves
+as the group name in the key file, and the values are expected in
+serialized GVariant form, as in the following example:
+|[
+    [org.gtk.Example]
+    key1='string'
+    key2=1.5
+]|</p>  <p>glib-compile-schemas expects schema files to have the extension
+`.gschema.override`.</p>  <p>## Binding</p>  <p>A very convenient feature of GSettings lets you bind <link xref="GObject.Object"/> properties
+directly to settings, using <link xref="Gio.bind"/>. Once a GObject property
+has been bound to a setting, changes on either side are automatically
+propagated to the other side. GSettings handles details like mapping
+between GObject and GVariant types, and preventing infinite cycles.</p>  <p>This makes it very easy to hook up a preferences dialog to the
+underlying settings. To make this even more convenient, GSettings
+looks for a boolean property with the name "sensitivity" and
+automatically binds it to the writability of the bound setting.
+If this 'magic' gets in the way, it can be suppressed with the
+#G_SETTINGS_BIND_NO_SENSITIVITY flag.</p>
+
+  <synopsis>
+    <title>Hierarchy</title>
+    <tree>
+      <item>
+        <code>GObject.Object</code>
+      <item>
+        <code>Gio.Settings</code>
+      </item>
+      </item>
+    </tree>
+  </synopsis>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="property" style="linklist">
+    <title>Properties</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="signal" style="linklist">
+    <title>Signals</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="vfunc" style="linklist">
+    <title>Virtual functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

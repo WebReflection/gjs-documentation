@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="Gio.pollable_source_new"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.Source</api:type>
+      </api:returns>
+      <api:name>g_pollable_source_new</api:name>
+      <api:arg>
+        <api:type>GObject.Object</api:type>
+        <api:name>pollable_stream</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.pollable_source_new</title>
+  <synopsis><code mime="text/x-gjs">
+function pollable_source_new(pollable_stream: GObject.Object): GLib.Source {
+    // Gjs wrapper for g_pollable_source_new()
+}
+  </code></synopsis>
+  <p>Utility method for <link xref="Gio.PollableInputStream"/> and <link xref="Gio.PollableOutputStream"/>
+implementations. Creates a new <link xref="GLib.Source"/> that expects a callback of
+type <link xref="Gio.PollableSourceFunc"/>. The new source does not actually do
+anything on its own; use <link xref="GLib.add_child_source"/> to add other
+sources to it to cause it to trigger.</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>pollable_stream</code></title>
+  <p>the stream associated with the new source</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

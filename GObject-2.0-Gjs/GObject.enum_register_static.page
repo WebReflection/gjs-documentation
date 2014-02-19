@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<page id="GObject.enum_register_static"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GType</api:type>
+      </api:returns>
+      <api:name>g_enum_register_static</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.EnumValue</api:type>
+        <api:name>const_static_values</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.enum_register_static</title>
+  <synopsis><code mime="text/x-gjs">
+function enum_register_static(name: String, const_static_values: GObject.EnumValue): GType {
+    // Gjs wrapper for g_enum_register_static()
+}
+  </code></synopsis>
+  <p>Registers a new static enumeration type with the name <code>name</code>.</p>  <p>It is normally more convenient to let [glib-mkenums][glib-mkenums],
+generate a my_enum_get_type() function from a usual C enumeration
+definition  than to write one yourself using <link xref="GObject.enum_register_static"/>.</p>
+
+<terms>
+<item>
+<title><code>name</code></title>
+  <p>A nul-terminated string used as the name of the new type.</p>
+</item>
+<item>
+<title><code>const_static_values</code></title>
+  <p>An array of <link xref="GObject.EnumValue"/> structs for the possible
+ enumeration values. The array is terminated by a struct with all
+ members being 0. GObject keeps a reference to the data, so it cannot
+ be stack-allocated.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

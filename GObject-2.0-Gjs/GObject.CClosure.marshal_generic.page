@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<page id="GObject.CClosure.marshal_generic"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.CClosure" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_cclosure_marshal_generic</api:name>
+      <api:arg>
+        <api:type>GObject.Closure</api:type>
+        <api:name>closure</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Value</api:type>
+        <api:name>return_gvalue</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>n_param_values</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Value</api:type>
+        <api:name>param_values</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>invocation_hint</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>marshal_data</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.CClosure.marshal_generic</title>
+  <synopsis><code mime="text/x-gjs">
+function marshal_generic(closure: GObject.Closure, return_gvalue: GObject.Value, n_param_values: Number, param_values: GObject.Value, invocation_hint: gpointer, marshal_data: gpointer): void {
+    // Gjs wrapper for g_cclosure_marshal_generic()
+}
+  </code></synopsis>
+  <p>A generic marshaller function implemented via
+[libffi](http://sourceware.org/libffi/).</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>closure</code></title>
+  <p>A <link xref="GObject.Closure"/>.</p>
+</item>
+<item>
+<title><code>return_gvalue</code></title>
+  <p>A <link xref="GObject.Value"/> to store the return value. May be <code>null</code>
+  if the callback of closure doesn't return a value.</p>
+</item>
+<item>
+<title><code>n_param_values</code></title>
+  <p>The length of the <code>param_values</code> array.</p>
+</item>
+<item>
+<title><code>param_values</code></title>
+  <p>An array of #GValues holding the arguments
+  on which to invoke the callback of closure.</p>
+</item>
+<item>
+<title><code>invocation_hint</code></title>
+  <p>The invocation hint given as the last argument to
+  <link xref="GObject.invoke"/>.</p>
+</item>
+<item>
+<title><code>marshal_data</code></title>
+  <p>Additional data specified when registering the
+  marshaller, see <link xref="GObject.set_marshal"/> and
+  <link xref="GObject.set_meta_marshal"/></p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="GLib.Scanner.cur_position"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Scanner" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number</api:type>
+      </api:returns>
+      <api:name>g_scanner_cur_position</api:name>
+    </api:function>
+  </info>
+  <title>GLib.Scanner.prototype.cur_position</title>
+  <synopsis><code mime="text/x-gjs">
+function cur_position(): Number {
+    // Gjs wrapper for g_scanner_cur_position()
+}
+  </code></synopsis>
+  <p>Returns the current position in the current line (counting
+from 0). This is the position of the last token parsed via
+<link xref="GLib.get_next_token"/>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

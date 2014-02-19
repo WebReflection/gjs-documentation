@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<page id="GLib.UserDirectory"
+      type="topic"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>GLib.UserDirectory</title>
+  <p>These are logical ids for special directories which are defined
+depending on the platform used. You should use <link xref="GLib.get_user_special_dir"/>
+to retrieve the full path associated to the logical id.</p>  <p>The <link xref="GLib.UserDirectory"/> enumeration can be extended at later date. Not
+every platform has a directory for every logical id in this
+enumeration.</p>
+  <p>Since 2.14</p>
+<terms>
+<item>
+<title><code>UserDirectory.DIRECTORY_DESKTOP</code></title>
+  <p>the user's Desktop directory</p>
+</item>
+<item>
+<title><code>UserDirectory.DIRECTORY_DOCUMENTS</code></title>
+  <p>the user's Documents directory</p>
+</item>
+<item>
+<title><code>UserDirectory.DIRECTORY_DOWNLOAD</code></title>
+  <p>the user's Downloads directory</p>
+</item>
+<item>
+<title><code>UserDirectory.DIRECTORY_MUSIC</code></title>
+  <p>the user's Music directory</p>
+</item>
+<item>
+<title><code>UserDirectory.DIRECTORY_PICTURES</code></title>
+  <p>the user's Pictures directory</p>
+</item>
+<item>
+<title><code>UserDirectory.DIRECTORY_PUBLIC_SHARE</code></title>
+  <p>the user's shared directory</p>
+</item>
+<item>
+<title><code>UserDirectory.DIRECTORY_TEMPLATES</code></title>
+  <p>the user's Templates directory</p>
+</item>
+<item>
+<title><code>UserDirectory.DIRECTORY_VIDEOS</code></title>
+  <p>the user's Movies directory</p>
+</item>
+<item>
+<title><code>UserDirectory.N_DIRECTORIES</code></title>
+  <p>the number of enum values</p>
+</item>
+</terms>
+
+</page>

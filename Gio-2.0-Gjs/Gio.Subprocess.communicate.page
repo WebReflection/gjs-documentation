@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<page id="Gio.Subprocess.communicate"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Subprocess" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_subprocess_communicate</api:name>
+      <api:arg>
+        <api:type>GLib.Bytes</api:type>
+        <api:name>stdin_buf</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.Subprocess.prototype.communicate</title>
+  <synopsis><code mime="text/x-gjs">
+function communicate(stdin_buf: GLib.Bytes, cancellable: Gio.Cancellable): [ok: Boolean, stdout_buf: GLib.Bytes, stderr_buf: GLib.Bytes] {
+    // Gjs wrapper for g_subprocess_communicate()
+}
+  </code></synopsis>
+  <p>Communicate with the subprocess until it terminates, and all input
+and output has been completed.</p>  <p>If <code>stdin_buf</code> is given, the subprocess must have been created with
+<link xref="Gio.SubprocessFlags"/>.stdin_pipe.  The given data is fed to the
+stdin of the subprocess and the pipe is closed (ie: EOF).</p>  <p>At the same time (as not to cause blocking when dealing with large
+amounts of data), if <link xref="Gio.SubprocessFlags"/>.stdout_pipe or
+<link xref="Gio.SubprocessFlags"/>.stderr_pipe were used, reads from those
+streams.  The data that was read is returned in @stdout and/or
+the @stderr.</p>  <p>If the subprocess was created with <link xref="Gio.SubprocessFlags"/>.stdout_pipe,
+<code>stdout_buf</code> will contain the data read from stdout.  Otherwise, for
+subprocesses not created with <link xref="Gio.SubprocessFlags"/>.stdout_pipe,
+<code>stdout_buf</code> will be set to <code>null</code>.  Similar provisions apply to
+<code>stderr_buf</code> and <link xref="Gio.SubprocessFlags"/>.stderr_pipe.</p>  <p>As usual, any output variable may be given as <code>null</code> to ignore it.</p>  <p>If you desire the stdout and stderr data to be interleaved, create
+the subprocess with <link xref="Gio.SubprocessFlags"/>.stdout_pipe and
+<link xref="Gio.SubprocessFlags"/>.stderr_merge.  The merged result will be returned
+in <code>stdout_buf</code> and <code>stderr_buf</code> will be set to <code>null</code>.</p>  <p>In case of any error (including cancellation), <code>false</code> will be
+returned with @error set.  Some or all of the stdin data may have
+been written.  Any stdout or stderr data that has been read will be
+discarded. None of the out variables (aside from @error) will have
+been set to anything in particular and should not be inspected.</p>  <p>In the case that <code>true</code> is returned, the subprocess has exited and the
+exit status inspection APIs (eg: <link xref="Gio.get_if_exited"/>,
+<link xref="Gio.get_exit_status"/>) may be used.</p>  <p>You should not attempt to use any of the subprocess pipes after
+starting this function, since they may be left in strange states,
+even if the operation was cancelled.  You should especially not
+attempt to interact with the pipes while the operation is in progress
+(either from another thread or if using the asynchronous version).</p>
+  <p>Since 2.40</p>
+<terms>
+<item>
+<title><code>stdin_buf</code></title>
+  <p>data to send to the stdin of the subprocess, or <code>null</code></p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>a <link xref="Gio.Cancellable"/></p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+<item>
+<title><code>stdout_buf</code></title>
+  <p>data read from the subprocess stdout</p>
+</item>
+<item>
+<title><code>stderr_buf</code></title>
+  <p>data read from the subprocess stderr</p>
+</item>
+</terms>
+
+</page>

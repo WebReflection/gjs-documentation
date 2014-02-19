@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusMethodInvocation.get_parameters"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusMethodInvocation" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.Variant</api:type>
+      </api:returns>
+      <api:name>g_dbus_method_invocation_get_parameters</api:name>
+    </api:function>
+  </info>
+  <title>Gio.DBusMethodInvocation.prototype.get_parameters</title>
+  <synopsis><code mime="text/x-gjs">
+function get_parameters(): GLib.Variant {
+    // Gjs wrapper for g_dbus_method_invocation_get_parameters()
+}
+  </code></synopsis>
+  <p>Gets the parameters of the method invocation. If there are no input
+parameters then this will return a GVariant with 0 children rather than NULL.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<page id="Gio.SocketClient.add_application_proxy"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.SocketClient" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_socket_client_add_application_proxy</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>protocol</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.SocketClient.prototype.add_application_proxy</title>
+  <synopsis><code mime="text/x-gjs">
+function add_application_proxy(protocol: String): void {
+    // Gjs wrapper for g_socket_client_add_application_proxy()
+}
+  </code></synopsis>
+  <p>Enable proxy protocols to be handled by the application. When the
+indicated proxy protocol is returned by the <link xref="Gio.ProxyResolver"/>,
+<link xref="Gio.SocketClient"/> will consider this protocol as supported but will
+not try to find a <link xref="Gio.Proxy"/> instance to handle handshaking. The
+application must check for this case by calling
+<link xref="Gio.get_remote_address"/> on the returned
+<link xref="Gio.SocketConnection"/>, and seeing if it's a <link xref="Gio.ProxyAddress"/> of the
+appropriate type, to determine whether or not it needs to handle
+the proxy handshaking itself.</p>  <p>This should be used for proxy protocols that are dialects of
+another protocol such as HTTP proxy. It also allows cohabitation of
+proxy protocols that are reused between protocols. A good example
+is HTTP. It can be used to proxy HTTP, FTP and Gopher and can also
+be use as generic socket proxy through the HTTP CONNECT method.</p>  <p>When the proxy is detected as being an application proxy, TLS handshake
+will be skipped. This is required to let the application do the proxy
+specific handshake.</p>
+
+<terms>
+<item>
+<title><code>protocol</code></title>
+  <p>The proxy protocol</p>
+</item>
+</terms>
+
+</page>

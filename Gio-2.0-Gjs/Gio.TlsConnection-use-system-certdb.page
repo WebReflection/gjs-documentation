@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page id="Gio.TlsConnection-use-system-certdb"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.TlsConnection" group="property" type="guide"/>
+    <title type="link" role="topic">use-system-certdb</title>
+  </info>
+  <title>Gio.TlsConnection.use_system_certdb</title>
+  <synopsis><code mime="text/x-gjs">
+TlsConnection.use_system_certdb: Boolean (Read / Write / Construct)
+  </code></synopsis>
+  <p>Whether or not the system certificate database will be used to
+verify peer certificates. See
+<link xref="Gio.TlsConnection.set_use_system_certdb"/>.</p>
+
+</page>

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<page id="GObject.signal_stop_emission"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_signal_stop_emission</api:name>
+      <api:arg>
+        <api:type>GObject.Object</api:type>
+        <api:name>instance</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>signal_id</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.Quark</api:type>
+        <api:name>detail</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.signal_stop_emission</title>
+  <synopsis><code mime="text/x-gjs">
+function signal_stop_emission(instance: GObject.Object, signal_id: Number, detail: GLib.Quark): void {
+    // Gjs wrapper for g_signal_stop_emission()
+}
+  </code></synopsis>
+  <p>Stops a signal's current emission.</p>  <p>This will prevent the default method from running, if the signal was
+<link xref="GObject.SignalFlags"/>.run_last and you connected normally (i.e. without the "after"
+flag).</p>  <p>Prints a warning if used on a signal which isn't being emitted.</p>
+
+<terms>
+<item>
+<title><code>instance</code></title>
+  <p>the object whose signal handlers you wish to stop.</p>
+</item>
+<item>
+<title><code>signal_id</code></title>
+  <p>the signal identifier, as returned by <link xref="GObject.signal_lookup"/>.</p>
+</item>
+<item>
+<title><code>detail</code></title>
+  <p>the detail which the signal was emitted with.</p>
+</item>
+</terms>
+
+</page>

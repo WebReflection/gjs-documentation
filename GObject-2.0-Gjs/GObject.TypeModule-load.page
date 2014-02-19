@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page id="GObject.TypeModule-load"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.TypeModule" group="vfunc" type="guide"/>
+  </info>
+  <title>GObject.TypeModule::load</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_load(): Boolean {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

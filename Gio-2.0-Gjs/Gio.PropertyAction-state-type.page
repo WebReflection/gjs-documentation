@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="Gio.PropertyAction-state-type"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.PropertyAction" group="property" type="guide"/>
+    <title type="link" role="topic">state-type</title>
+  </info>
+  <title>Gio.PropertyAction.state_type</title>
+  <synopsis><code mime="text/x-gjs">
+PropertyAction.state_type: GLib.VariantType (Read)
+  </code></synopsis>
+  <p>The <link xref="GLib.VariantType"/> of the state that the action has, or <code>null</code> if the
+action is stateless.</p>
+  <p>Since 2.38</p>
+</page>

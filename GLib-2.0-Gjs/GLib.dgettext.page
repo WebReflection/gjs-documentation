@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<page id="GLib.dgettext"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_dgettext</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>domain</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>msgid</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.dgettext</title>
+  <synopsis><code mime="text/x-gjs">
+function dgettext(domain: String, msgid: String): String {
+    // Gjs wrapper for g_dgettext()
+}
+  </code></synopsis>
+  <p>This function is a wrapper of dgettext() which does not translate
+the message if the default domain as set with textdomain() has no
+translations for the current locale.</p>  <p>The advantage of using this function over dgettext() proper is that
+libraries using this function (like GTK+) will not use translations
+if the application using the library does not have translations for
+the current locale.  This results in a consistent English-only
+interface instead of one having partial translations.  For this
+feature to work, the call to textdomain() and setlocale() should
+precede any <link xref="GLib.dgettext"/> invocations.  For GTK+, it means calling
+textdomain() before gtk_init or its variants.</p>  <p>This function disables translations if and only if upon its first
+call all the following conditions hold:</p>  <p>- <code>domain</code> is not <code>null</code></p>  <p>- textdomain() has been called to set a default text domain</p>  <p>- there is no translations available for the default text domain
+  and the current locale</p>  <p>- current locale is not "C" or any English locales (those
+  starting with "en_")</p>  <p>Note that this behavior may not be desired for example if an application
+has its untranslated messages in a language other than English. In those
+cases the application should call textdomain() after initializing GTK+.</p>  <p>Applications should normally not use this function directly,
+but use the _() macro for translations.</p>
+  <p>Since 2.18</p>
+<terms>
+<item>
+<title><code>domain</code></title>
+  <p>the translation domain to use, or <code>null</code> to use
+  the domain set with textdomain()</p>
+</item>
+<item>
+<title><code>msgid</code></title>
+  <p>message to translate</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

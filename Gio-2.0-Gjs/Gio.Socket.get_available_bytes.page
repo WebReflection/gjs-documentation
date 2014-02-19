@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="Gio.Socket.get_available_bytes"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Socket" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>gssize</api:type>
+      </api:returns>
+      <api:name>g_socket_get_available_bytes</api:name>
+    </api:function>
+  </info>
+  <title>Gio.Socket.prototype.get_available_bytes</title>
+  <synopsis><code mime="text/x-gjs">
+function get_available_bytes(): gssize {
+    // Gjs wrapper for g_socket_get_available_bytes()
+}
+  </code></synopsis>
+  <p>Get the amount of data pending in the OS input buffer.</p>  <p>If <code>socket</code> is a UDP or SCTP socket, this will return the size of
+just the next packet, even if additional packets are buffered after
+that one.</p>  <p>Note that on Windows, this function is rather inefficient in the
+UDP case, and so if you know any plausible upper bound on the size
+of the incoming packet, it is better to just do a
+<link xref="Gio.receive"/> with a buffer of that size, rather than calling
+<link xref="Gio.Socket.get_available_bytes"/> first and then doing a receive of
+exactly the right size.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

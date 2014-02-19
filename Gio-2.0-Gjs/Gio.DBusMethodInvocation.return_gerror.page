@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusMethodInvocation.return_gerror"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusMethodInvocation" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_dbus_method_invocation_return_gerror</api:name>
+      <api:arg>
+        <api:type>GLib.Error</api:type>
+        <api:name>error</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DBusMethodInvocation.prototype.return_gerror</title>
+  <synopsis><code mime="text/x-gjs">
+function return_gerror(error: GLib.Error): void {
+    // Gjs wrapper for g_dbus_method_invocation_return_gerror()
+}
+  </code></synopsis>
+  <p>Like <link xref="Gio.return_error"/> but takes a <link xref="GLib.Error"/>
+instead of the error domain, error code and message.</p>  <p>This method will free <code>invocation</code>, you cannot use it afterwards.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>error</code></title>
+  <p>A <link xref="GLib.Error"/>.</p>
+</item>
+</terms>
+
+</page>

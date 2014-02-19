@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="GObject.type_check_instance"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_type_check_instance</api:name>
+      <api:arg>
+        <api:type>GObject.TypeInstance</api:type>
+        <api:name>instance</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.type_check_instance</title>
+  <synopsis><code mime="text/x-gjs">
+function type_check_instance(instance: GObject.TypeInstance): Boolean {
+    // Gjs wrapper for g_type_check_instance()
+}
+  </code></synopsis>
+  <p>Private helper function to aid implementation of the
+G_TYPE_CHECK_INSTANCE() macro.</p>
+
+<terms>
+<item>
+<title><code>instance</code></title>
+  <p>a valid <link xref="GObject.TypeInstance"/> structure</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

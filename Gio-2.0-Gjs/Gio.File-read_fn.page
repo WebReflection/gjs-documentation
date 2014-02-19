@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Gio.File-read_fn"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.File" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.File::read_fn</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_read_fn(cancellable: Gio.Cancellable): Gio.FileInputStream {
+}
+  </code></synopsis>
+  <p>Opens a file for reading. The result is a <link xref="Gio.FileInputStream"/> that
+can be used to read the contents of the file.</p>  <p>If <code>cancellable</code> is not <code>null</code>, then the operation can be cancelled by
+triggering the cancellable object from another thread. If the operation
+was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be returned.</p>  <p>If the file does not exist, the <link xref="Gio.IOErrorEnum"/>.not_found error will be
+returned. If the file is a directory, the <link xref="Gio.IOErrorEnum"/>.is_directory
+error will be returned. Other errors are possible too, and depend
+on what kind of filesystem the file is on.</p>
+
+<terms>
+<item>
+<title><code>cancellable</code></title>
+  <p>a <link xref="Gio.Cancellable"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><link xref="Gio.FileInputStream"/> or <code>null</code> on error.
+    Free the returned object with <link xref="GObject.unref"/>.</p>
+</item>
+</terms>
+
+</page>

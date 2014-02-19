@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="Gio.File-trash_async"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.File" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.File::trash_async</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_trash_async(io_priority: Number, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+}
+  </code></synopsis>
+  <p>Asynchronously sends <code>file</code> to the Trash location, if possible.</p>
+  <p>Since 2.38</p>
+<terms>
+<item>
+<title><code>io_priority</code></title>
+  <p>the [I/O priority][io-priority] of the request</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional <link xref="Gio.Cancellable"/> object,
+    <code>null</code> to ignore</p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>a <link xref="Gio.AsyncReadyCallback"/> to call
+    when the request is satisfied</p>
+</item>
+</terms>
+
+</page>

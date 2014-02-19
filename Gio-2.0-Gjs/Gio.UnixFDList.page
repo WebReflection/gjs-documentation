@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<page id="Gio.UnixFDList"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>Gio.UnixFDList</title>
+  <synopsis><code>
+const Gio = imports.gi.Gio;
+
+let unixFDList = new Gio.UnixFDList();
+  </code></synopsis>
+  <p>A <link xref="Gio.UnixFDList"/> contains a list of file descriptors.  It owns the file
+descriptors that it contains, closing them when finalized.</p>  <p>It may be wrapped in a <link xref="Gio.UnixFDMessage"/> and sent over a <link xref="Gio.Socket"/> in
+the %G_SOCKET_ADDRESS_UNIX family by using <link xref="Gio.Socket.send_message"/>
+and received using <link xref="Gio.Socket.receive_message"/>.</p>  <p>Note that `&lt;gio/gunixfdlist.h&gt;` belongs to the UNIX-specific GIO
+interfaces, thus you have to use the `gio-unix-2.0.pc` pkg-config
+file when using it.</p>
+
+  <synopsis>
+    <title>Hierarchy</title>
+    <tree>
+      <item>
+        <code>GObject.Object</code>
+      <item>
+        <code>Gio.UnixFDList</code>
+      </item>
+      </item>
+    </tree>
+  </synopsis>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="property" style="linklist">
+    <title>Properties</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="signal" style="linklist">
+    <title>Signals</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="vfunc" style="linklist">
+    <title>Virtual functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

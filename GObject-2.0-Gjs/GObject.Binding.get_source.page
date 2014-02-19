@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="GObject.Binding.get_source"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.Binding" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GObject.Object</api:type>
+      </api:returns>
+      <api:name>g_binding_get_source</api:name>
+    </api:function>
+  </info>
+  <title>GObject.Binding.prototype.get_source</title>
+  <synopsis><code mime="text/x-gjs">
+function get_source(): GObject.Object {
+    // Gjs wrapper for g_binding_get_source()
+}
+  </code></synopsis>
+  <p>Retrieves the <link xref="GObject.Object"/> instance used as the source of the binding.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

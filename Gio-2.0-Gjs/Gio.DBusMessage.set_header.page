@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusMessage.set_header"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusMessage" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_dbus_message_set_header</api:name>
+      <api:arg>
+        <api:type>Gio.DBusMessageHeaderField</api:type>
+        <api:name>header_field</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.Variant</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DBusMessage.prototype.set_header</title>
+  <synopsis><code mime="text/x-gjs">
+function set_header(header_field: Gio.DBusMessageHeaderField, value: GLib.Variant): void {
+    // Gjs wrapper for g_dbus_message_set_header()
+}
+  </code></synopsis>
+  <p>Sets a header field on <code>message</code>.</p>  <p>If <code>value</code> is floating, <code>message</code> assumes ownership of <code>value</code>.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>header_field</code></title>
+  <p>A 8-bit unsigned integer (typically a value from the <link xref="Gio.DBusMessageHeaderField"/> enumeration)</p>
+</item>
+<item>
+<title><code>value</code></title>
+  <p>A <link xref="GLib.Variant"/> to set the header field or <code>null</code> to clear the header field.</p>
+</item>
+</terms>
+
+</page>

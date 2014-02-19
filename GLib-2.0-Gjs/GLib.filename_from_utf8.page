@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<page id="GLib.filename_from_utf8"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(guint8)</api:type>
+      </api:returns>
+      <api:name>g_filename_from_utf8</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>utf8string</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gssize</api:type>
+        <api:name>len</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.filename_from_utf8</title>
+  <synopsis><code mime="text/x-gjs">
+function filename_from_utf8(utf8string: String, len: gssize): [return_value: Array(guint8), bytes_read: gsize, bytes_written: gsize] {
+    // Gjs wrapper for g_filename_from_utf8()
+}
+  </code></synopsis>
+  <p>Converts a string from UTF-8 to the encoding GLib uses for
+filenames. Note that on Windows GLib uses UTF-8 for filenames;
+on other platforms, this function indirectly depends on the
+[current locale][setlocale].</p>
+
+<terms>
+<item>
+<title><code>utf8string</code></title>
+  <p>a UTF-8 encoded string.</p>
+</item>
+<item>
+<title><code>len</code></title>
+  <p>the length of the string, or -1 if the string is
+                nul-terminated.</p>
+</item>
+<item>
+<title><code>return_value</code></title>
+
+</item>
+<item>
+<title><code>bytes_read</code></title>
+  <p>location to store the number of bytes in
+                the input string that were successfully converted, or <code>null</code>.
+                Even if the conversion was successful, this may be
+                less than <code>len</code> if there were partial characters
+                at the end of the input. If the error
+                #G_CONVERT_ERROR_ILLEGAL_SEQUENCE occurs, the value
+                stored will the byte offset after the last valid
+                input sequence.</p>
+</item>
+<item>
+<title><code>bytes_written</code></title>
+  <p>the number of bytes stored in the output buffer (not
+                including the terminating nul).</p>
+</item>
+</terms>
+
+</page>

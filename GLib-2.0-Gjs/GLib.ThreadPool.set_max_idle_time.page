@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="GLib.ThreadPool.set_max_idle_time"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.ThreadPool" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_thread_pool_set_max_idle_time</api:name>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>interval</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.ThreadPool.set_max_idle_time</title>
+  <synopsis><code mime="text/x-gjs">
+function set_max_idle_time(interval: Number): void {
+    // Gjs wrapper for g_thread_pool_set_max_idle_time()
+}
+  </code></synopsis>
+  <p>This function will set the maximum <code>interval</code> that a thread
+waiting in the pool for new tasks can be idle for before
+being stopped. This function is similar to calling
+<link xref="GLib.thread_pool_stop_unused_threads"/> on a regular timeout,
+except this is done on a per thread basis.</p>  <p>By setting <code>interval</code> to 0, idle threads will not be stopped.</p>  <p>The default value is 15000 (15 seconds).</p>
+  <p>Since 2.10</p>
+<terms>
+<item>
+<title><code>interval</code></title>
+  <p>the maximum <code>interval</code> (in milliseconds)
+    a thread can be idle</p>
+</item>
+</terms>
+
+</page>

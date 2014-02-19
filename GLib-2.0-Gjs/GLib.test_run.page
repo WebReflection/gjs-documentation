@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<page id="GLib.test_run"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number</api:type>
+      </api:returns>
+      <api:name>g_test_run</api:name>
+    </api:function>
+  </info>
+  <title>GLib.test_run</title>
+  <synopsis><code mime="text/x-gjs">
+function test_run(): Number {
+    // Gjs wrapper for g_test_run()
+}
+  </code></synopsis>
+  <p>Runs all tests under the toplevel suite which can be retrieved
+with <link xref="GLib.test_get_root"/>. Similar to <link xref="GLib.test_run_suite"/>, the test
+cases to be run are filtered according to test path arguments
+(`-p testpath`) as parsed by <link xref="GLib.test_init"/>. <link xref="GLib.test_run_suite"/>
+or <link xref="GLib.test_run"/> may only be called once in a program.</p>  <p>In general, the tests and sub-suites within each suite are run in
+the order in which they are defined. However, note that prior to
+GLib 2.36, there was a bug in the `g_test_add_*`
+functions which caused them to create multiple suites with the same
+name, meaning that if you created tests "/foo/simple",
+"/bar/simple", and "/foo/using-bar" in that order, they would get
+run in that order (since <link xref="GLib.test_run"/> would run the first "/foo"
+suite, then the "/bar" suite, then the second "/foo" suite). As of
+2.36, this bug is fixed, and adding the tests in that order would
+result in a running order of "/foo/simple", "/foo/using-bar",
+"/bar/simple". If this new ordering is sub-optimal (because it puts
+more-complicated tests before simpler ones, making it harder to
+figure out exactly what has failed), you can fix it by changing the
+test paths to group tests by suite in a way that will result in the
+desired running order. Eg, "/simple/foo", "/simple/bar",
+"/complex/foo-using-bar".</p>  <p>However, you should never make the actual result of a test depend
+on the order that tests are run in. If you need to ensure that some
+particular code runs before or after a given test case, use
+g_test_add(), which lets you specify setup and teardown functions.</p>  <p>If all tests are skipped, this function will return 0 if
+producing TAP output, or 77 (treated as "skip test" by Automake) otherwise.</p>
+  <p>Since 2.16</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

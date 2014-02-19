@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<page id="Gio.DataOutputStream.put_byte"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DataOutputStream" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_data_output_stream_put_byte</api:name>
+      <api:arg>
+        <api:type>guint8</api:type>
+        <api:name>data</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DataOutputStream.prototype.put_byte</title>
+  <synopsis><code mime="text/x-gjs">
+function put_byte(data: guint8, cancellable: Gio.Cancellable): Boolean {
+    // Gjs wrapper for g_data_output_stream_put_byte()
+}
+  </code></synopsis>
+  <p>Puts a byte into the output stream.</p>
+
+<terms>
+<item>
+<title><code>data</code></title>
+  <p>a #guchar.</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional <link xref="Gio.Cancellable"/> object, <code>null</code> to ignore.</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

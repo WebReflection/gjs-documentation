@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<page id="GObject.Closure.unref"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.Closure" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_closure_unref</api:name>
+    </api:function>
+  </info>
+  <title>GObject.Closure.prototype.unref</title>
+  <synopsis><code mime="text/x-gjs">
+function unref(): void {
+    // Gjs wrapper for g_closure_unref()
+}
+  </code></synopsis>
+  <p>Decrements the reference count of a closure after it was previously
+incremented by the same caller. If no other callers are using the
+closure, then the closure will be destroyed and freed.</p>
+
+
+</page>

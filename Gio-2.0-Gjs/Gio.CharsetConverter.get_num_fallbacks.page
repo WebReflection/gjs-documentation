@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.CharsetConverter.get_num_fallbacks"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.CharsetConverter" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number</api:type>
+      </api:returns>
+      <api:name>g_charset_converter_get_num_fallbacks</api:name>
+    </api:function>
+  </info>
+  <title>Gio.CharsetConverter.prototype.get_num_fallbacks</title>
+  <synopsis><code mime="text/x-gjs">
+function get_num_fallbacks(): Number {
+    // Gjs wrapper for g_charset_converter_get_num_fallbacks()
+}
+  </code></synopsis>
+  <p>Gets the number of fallbacks that <code>converter</code> has applied so far.</p>
+  <p>Since 2.24</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

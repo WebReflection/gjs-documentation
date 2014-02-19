@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.SubprocessLauncher-flags"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.SubprocessLauncher" group="property" type="guide"/>
+    <title type="link" role="topic">flags</title>
+  </info>
+  <title>Gio.SubprocessLauncher.flags</title>
+  <synopsis><code mime="text/x-gjs">
+SubprocessLauncher.flags: Gio.SubprocessFlags (Write / Construct Only)
+  </code></synopsis>
+
+
+</page>

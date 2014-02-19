@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<page id="Gio.File.replace_contents"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.File" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_file_replace_contents</api:name>
+      <api:arg>
+        <api:type>Array(guint8)</api:type>
+        <api:name>contents</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>etag</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Boolean</api:type>
+        <api:name>make_backup</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.FileCreateFlags</api:type>
+        <api:name>flags</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.File.prototype.replace_contents</title>
+  <synopsis><code mime="text/x-gjs">
+function replace_contents(contents: Array(guint8), etag: String, make_backup: Boolean, flags: Gio.FileCreateFlags, cancellable: Gio.Cancellable): [ok: Boolean, new_etag: String] {
+    // Gjs wrapper for g_file_replace_contents()
+}
+  </code></synopsis>
+  <p>Replaces the contents of <code>file</code> with <code>contents</code> of <code>length</code> bytes.</p>  <p>If <code>etag</code> is specified (not <code>null</code>), any existing file must have that etag,
+or the error <link xref="Gio.IOErrorEnum"/>.wrong_etag will be returned.</p>  <p>If <code>make_backup</code> is <code>true</code>, this function will attempt to make a backup
+of <code>file</code>.</p>  <p>If <code>cancellable</code> is not <code>null</code>, then the operation can be cancelled by
+triggering the cancellable object from another thread. If the operation
+was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be returned.</p>  <p>The returned <code>new_etag</code> can be used to verify that the file hasn't
+changed the next time it is saved over.</p>
+
+<terms>
+<item>
+<title><code>contents</code></title>
+  <p>a string containing the new contents for <code>file</code></p>
+</item>
+<item>
+<title><code>etag</code></title>
+  <p>the old [entity-tag][gfile-etag] for the document,
+    or <code>null</code></p>
+</item>
+<item>
+<title><code>make_backup</code></title>
+  <p><code>true</code> if a backup should be created</p>
+</item>
+<item>
+<title><code>flags</code></title>
+  <p>a set of <link xref="Gio.FileCreateFlags"/></p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional <link xref="Gio.Cancellable"/> object, <code>null</code> to ignore</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+<item>
+<title><code>new_etag</code></title>
+  <p>a location to a new [entity tag][gfile-etag]
+     for the document. This should be freed with <link xref="GLib.free"/> when no longer
+     needed, or <code>null</code></p>
+</item>
+</terms>
+
+</page>

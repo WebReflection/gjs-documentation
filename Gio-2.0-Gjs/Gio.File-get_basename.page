@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gio.File-get_basename"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.File" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.File::get_basename</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_get_basename(): String {
+}
+  </code></synopsis>
+  <p>Gets the base name (the last component of the path) for a given <link xref="Gio.File"/>.</p>  <p>If called for the top level of a system (such as the filesystem root
+or a uri like sftp://host/) it will return a single directory separator
+(and on Windows, possibly a drive letter).</p>  <p>The base name is a byte string (not UTF-8). It has no defined encoding
+or rules other than it may not contain zero bytes.  If you want to use
+filenames in a user interface you should use the display name that you
+can get by requesting the %G_FILE_ATTRIBUTE_STANDARD_DISPLAY_NAME
+attribute with <link xref="Gio.File.query_info"/>.</p>  <p>This call does no blocking I/O.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>string containing the <link xref="Gio.File"/>'s base name, or <code>null</code>
+    if given <link xref="Gio.File"/> is invalid. The returned string should be
+    freed with <link xref="GLib.free"/> when no longer needed.</p>
+</item>
+</terms>
+
+</page>

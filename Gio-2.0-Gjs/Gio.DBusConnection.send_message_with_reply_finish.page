@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusConnection.send_message_with_reply_finish"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusConnection" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.DBusMessage</api:type>
+      </api:returns>
+      <api:name>g_dbus_connection_send_message_with_reply_finish</api:name>
+      <api:arg>
+        <api:type>Gio.AsyncResult</api:type>
+        <api:name>res</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DBusConnection.prototype.send_message_with_reply_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function send_message_with_reply_finish(res: Gio.AsyncResult): Gio.DBusMessage {
+    // Gjs wrapper for g_dbus_connection_send_message_with_reply_finish()
+}
+  </code></synopsis>
+  <p>Finishes an operation started with <link xref="Gio.DBusConnection.send_message_with_reply"/>.</p>  <p>Note that @error is only set if a local in-process error
+occurred. That is to say that the returned <link xref="Gio.DBusMessage"/> object may
+be of type <link xref="Gio.DBusMessageType"/>.error. Use
+<link xref="Gio.to_gerror"/> to transcode this to a <link xref="GLib.Error"/>.</p>  <p>See this [server][gdbus-server] and [client][gdbus-unix-fd-client]
+for an example of how to use this low-level API to send and receive
+UNIX file descriptors.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>res</code></title>
+  <p>a <link xref="Gio.AsyncResult"/> obtained from the <link xref="Gio.AsyncReadyCallback"/> passed to
+    <link xref="Gio.DBusConnection.send_message_with_reply"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

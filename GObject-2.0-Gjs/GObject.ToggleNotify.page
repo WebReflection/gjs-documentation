@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="GObject.ToggleNotify"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>GObject.ToggleNotify</title>
+  <synopsis><code mime="text/x-gjs">
+function onToggleNotify(data: gpointer, object: GObject.Object, is_last_ref: Boolean): void {
+}
+  </code></synopsis>
+  <p>A callback function used for notification when the state
+of a toggle reference changes. See <link xref="GObject.add_toggle_ref"/>.</p>
+
+<terms>
+<item>
+<title><code>data</code></title>
+  <p>Callback data passed to <link xref="GObject.add_toggle_ref"/></p>
+</item>
+<item>
+<title><code>object</code></title>
+  <p>The object on which <link xref="GObject.add_toggle_ref"/> was called.</p>
+</item>
+<item>
+<title><code>is_last_ref</code></title>
+  <p><code>true</code> if the toggle reference is now the
+ last reference to the object. <code>false</code> if the toggle
+ reference was the last reference and there are now other
+ references.</p>
+</item>
+</terms>
+
+</page>

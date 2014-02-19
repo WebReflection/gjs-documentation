@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="Gio.SubprocessLauncher.set_cwd"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.SubprocessLauncher" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_subprocess_launcher_set_cwd</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>cwd</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.SubprocessLauncher.prototype.set_cwd</title>
+  <synopsis><code mime="text/x-gjs">
+function set_cwd(cwd: String): void {
+    // Gjs wrapper for g_subprocess_launcher_set_cwd()
+}
+  </code></synopsis>
+  <p>Sets the current working directory that processes will be launched
+with.</p>  <p>By default processes are launched with the current working directory
+of the launching process at the time of launch.</p>
+  <p>Since 2.40</p>
+<terms>
+<item>
+<title><code>cwd</code></title>
+  <p>the cwd for launched processes</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Gio.InputStream.read_bytes_finish"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.InputStream" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.Bytes</api:type>
+      </api:returns>
+      <api:name>g_input_stream_read_bytes_finish</api:name>
+      <api:arg>
+        <api:type>Gio.AsyncResult</api:type>
+        <api:name>result</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.InputStream.prototype.read_bytes_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function read_bytes_finish(result: Gio.AsyncResult): GLib.Bytes {
+    // Gjs wrapper for g_input_stream_read_bytes_finish()
+}
+  </code></synopsis>
+  <p>Finishes an asynchronous stream read-into-<link xref="GLib.Bytes"/> operation.</p>
+
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>a <link xref="Gio.AsyncResult"/>.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

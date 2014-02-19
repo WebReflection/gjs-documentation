@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gio.AppLaunchContext.unsetenv"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.AppLaunchContext" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_app_launch_context_unsetenv</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>variable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.AppLaunchContext.prototype.unsetenv</title>
+  <synopsis><code mime="text/x-gjs">
+function unsetenv(variable: String): void {
+    // Gjs wrapper for g_app_launch_context_unsetenv()
+}
+  </code></synopsis>
+  <p>Arranges for <code>variable</code> to be unset in the child's environment
+when <code>context</code> is used to launch an application.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>variable</code></title>
+  <p>the environment variable to remove</p>
+</item>
+</terms>
+
+</page>

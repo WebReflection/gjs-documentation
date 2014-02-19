@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.Vfs-parse_name"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Vfs" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.Vfs::parse_name</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_parse_name(parse_name: String): Gio.File {
+}
+  </code></synopsis>
+  <p>This operation never fails, but the returned object might
+not support any I/O operations if the <code>parse_name</code> cannot
+be parsed by the <link xref="Gio.Vfs"/> module.</p>
+
+<terms>
+<item>
+<title><code>parse_name</code></title>
+  <p>a string to be parsed by the VFS module.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link xref="Gio.File"/> for the given <code>parse_name</code>.
+    Free the returned object with <link xref="GObject.unref"/>.</p>
+</item>
+</terms>
+
+</page>

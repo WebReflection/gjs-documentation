@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.MenuModel.get_n_items"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.MenuModel" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number</api:type>
+      </api:returns>
+      <api:name>g_menu_model_get_n_items</api:name>
+    </api:function>
+  </info>
+  <title>Gio.MenuModel.prototype.get_n_items</title>
+  <synopsis><code mime="text/x-gjs">
+function get_n_items(): Number {
+    // Gjs wrapper for g_menu_model_get_n_items()
+}
+  </code></synopsis>
+  <p>Query the number of items in <code>model</code>.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

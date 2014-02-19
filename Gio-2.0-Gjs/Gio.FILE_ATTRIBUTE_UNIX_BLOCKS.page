@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Gio.FILE_ATTRIBUTE_UNIX_BLOCKS"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>Gio.FILE_ATTRIBUTE_UNIX_BLOCKS</title>
+  <p>A key in the "unix" namespace for getting the number of blocks allocated
+for the file. This attribute is only available for UNIX file systems.
+Corresponding <link xref="Gio.FileAttributeType"/> is <link xref="Gio.FileAttributeType"/>.uint64.</p>
+
+</page>

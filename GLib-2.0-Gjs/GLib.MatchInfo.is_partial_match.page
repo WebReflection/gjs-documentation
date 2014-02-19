@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<page id="GLib.MatchInfo.is_partial_match"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.MatchInfo" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_match_info_is_partial_match</api:name>
+    </api:function>
+  </info>
+  <title>GLib.MatchInfo.prototype.is_partial_match</title>
+  <synopsis><code mime="text/x-gjs">
+function is_partial_match(): Boolean {
+    // Gjs wrapper for g_match_info_is_partial_match()
+}
+  </code></synopsis>
+  <p>Usually if the string passed to g_regex_match*() matches as far as
+it goes, but is too short to match the entire pattern, <code>false</code> is
+returned. There are circumstances where it might be helpful to
+distinguish this case from other cases in which there is no match.</p>  <p>Consider, for example, an application where a human is required to
+type in data for a field with specific formatting requirements. An
+example might be a date in the form ddmmmyy, defined by the pattern
+"^\d?\d(jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\d\d$".
+If the application sees the user’s keystrokes one by one, and can
+check that what has been typed so far is potentially valid, it is
+able to raise an error as soon as a mistake is made.</p>  <p>GRegex supports the concept of partial matching by means of the
+#G_REGEX_MATCH_PARTIAL_SOFT and #G_REGEX_MATCH_PARTIAL_HARD flags.
+When they are used, the return code for
+<link xref="GLib.match"/> or <link xref="GLib.match_full"/> is, as usual, <code>true</code>
+for a complete match, <code>false</code> otherwise. But, when these functions
+return <code>false</code>, you can check if the match was partial calling
+<link xref="GLib.MatchInfo.is_partial_match"/>.</p>  <p>The difference between #G_REGEX_MATCH_PARTIAL_SOFT and
+#G_REGEX_MATCH_PARTIAL_HARD is that when a partial match is encountered
+with #G_REGEX_MATCH_PARTIAL_SOFT, matching continues to search for a
+possible complete match, while with #G_REGEX_MATCH_PARTIAL_HARD matching
+stops at the partial match.
+When both #G_REGEX_MATCH_PARTIAL_SOFT and #G_REGEX_MATCH_PARTIAL_HARD
+are set, the latter takes precedence.</p>  <p>There were formerly some restrictions on the pattern for partial matching.
+The restrictions no longer apply.</p>  <p>See pcrepartial(3) for more information on partial matching.</p>
+  <p>Since 2.14</p>
+<terms>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

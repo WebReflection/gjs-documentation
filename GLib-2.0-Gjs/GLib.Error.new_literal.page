@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<page id="GLib.Error.new_literal"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Error" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.Error</api:type>
+      </api:returns>
+      <api:name>g_error_new_literal</api:name>
+      <api:arg>
+        <api:type>GLib.Quark</api:type>
+        <api:name>domain</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>code</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>message</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.Error.new_literal</title>
+  <synopsis><code mime="text/x-gjs">
+function new_literal(domain: GLib.Quark, code: Number, message: String): GLib.Error {
+    // Gjs wrapper for g_error_new_literal()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="GLib.Error"/>; unlike <link xref="GLib.new"/>, <code>message</code> is
+not a printf()-style format string. Use this function if
+<code>message</code> contains text you don't have control over,
+that could include printf() escape sequences.</p>
+
+<terms>
+<item>
+<title><code>domain</code></title>
+  <p>error domain</p>
+</item>
+<item>
+<title><code>code</code></title>
+  <p>error code</p>
+</item>
+<item>
+<title><code>message</code></title>
+  <p>error message</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

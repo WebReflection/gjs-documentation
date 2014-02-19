@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="GLib.Error-code"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Error" group="field" type="guide"/>
+    <title type="link" role="topic">code</title>
+  </info>
+  <title>GLib.Error.code</title>
+  <synopsis><code mime="text/x-gjs">
+Error.code: Number (Read / Write)
+  </code></synopsis>
+  <p>error code, e.g. <link xref="GLib.FileError"/>.noent</p>
+
+</page>

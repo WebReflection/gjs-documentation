@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="GObject.Value.copy"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.Value" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_value_copy</api:name>
+      <api:arg>
+        <api:type>GObject.Value</api:type>
+        <api:name>dest_value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.Value.prototype.copy</title>
+  <synopsis><code mime="text/x-gjs">
+function copy(dest_value: GObject.Value): void {
+    // Gjs wrapper for g_value_copy()
+}
+  </code></synopsis>
+  <p>Copies the value of <code>src_value</code> into <code>dest_value</code>.</p>
+
+<terms>
+<item>
+<title><code>dest_value</code></title>
+  <p>An initialized <link xref="GObject.Value"/> structure of the same type as <code>src_value</code>.</p>
+</item>
+</terms>
+
+</page>

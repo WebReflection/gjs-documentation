@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusConnection-guid"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusConnection" group="property" type="guide"/>
+    <title type="link" role="topic">guid</title>
+  </info>
+  <title>Gio.DBusConnection.guid</title>
+  <synopsis><code mime="text/x-gjs">
+DBusConnection.guid: String (Read / Write / Construct Only)
+  </code></synopsis>
+  <p>The GUID of the peer performing the role of server when
+authenticating.</p>  <p>If you are constructing a <link xref="Gio.DBusConnection"/> and pass
+<link xref="Gio.DBusConnectionFlags"/>.authentication_server in the
+<link xref="Gio.DBusConnection-flags"/> property then you MUST also set this
+property to a valid guid.</p>  <p>If you are constructing a <link xref="Gio.DBusConnection"/> and pass
+<link xref="Gio.DBusConnectionFlags"/>.authentication_client in the
+<link xref="Gio.DBusConnection-flags"/> property you will be able to read the GUID
+of the other peer here after the connection has been successfully
+initialized.</p>
+  <p>Since 2.26</p>
+</page>

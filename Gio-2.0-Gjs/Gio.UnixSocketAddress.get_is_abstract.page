@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.UnixSocketAddress.get_is_abstract"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.UnixSocketAddress" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_unix_socket_address_get_is_abstract</api:name>
+    </api:function>
+  </info>
+  <title>Gio.UnixSocketAddress.prototype.get_is_abstract</title>
+  <synopsis><code mime="text/x-gjs">
+function get_is_abstract(): Boolean {
+    // Gjs wrapper for g_unix_socket_address_get_is_abstract()
+}
+  </code></synopsis>
+  <p>Tests if <code>address</code> is abstract.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

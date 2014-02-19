@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="GLib.Variant.store"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Variant" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_variant_store</api:name>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>data</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.Variant.prototype.store</title>
+  <synopsis><code mime="text/x-gjs">
+function store(data: gpointer): void {
+    // Gjs wrapper for g_variant_store()
+}
+  </code></synopsis>
+  <p>Stores the serialised form of <code>value</code> at <code>data</code>.  <code>data</code> should be
+large enough.  See <link xref="GLib.Variant.get_size"/>.</p>  <p>The stored data is in machine native byte order but may not be in
+fully-normalised form if read from an untrusted source.  See
+<link xref="GLib.Variant.get_normal_form"/> for a solution.</p>  <p>As with <link xref="GLib.Variant.get_data"/>, to be able to deserialise the
+serialised variant successfully, its type and (if the destination
+machine might be different) its endianness must also be available.</p>  <p>This function is approximately O(n) in the size of <code>data</code>.</p>
+  <p>Since 2.24</p>
+<terms>
+<item>
+<title><code>data</code></title>
+  <p>the location to store the serialised data at</p>
+</item>
+</terms>
+
+</page>

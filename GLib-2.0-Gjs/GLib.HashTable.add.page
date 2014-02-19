@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<page id="GLib.HashTable.add"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.HashTable" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_hash_table_add</api:name>
+      <api:arg>
+        <api:type>{gpointer: gpointer}</api:type>
+        <api:name>hash_table</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>key</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.HashTable.add</title>
+  <synopsis><code mime="text/x-gjs">
+function add(hash_table: {gpointer: gpointer}, key: gpointer): Boolean {
+    // Gjs wrapper for g_hash_table_add()
+}
+  </code></synopsis>
+  <p>This is a convenience function for using a <link xref="GLib.HashTable"/> as a set.  It
+is equivalent to calling <link xref="GLib.hash_table_replace"/> with <code>key</code> as both the
+key and the value.</p>  <p>When a hash table only ever contains keys that have themselves as the
+corresponding value it is able to be stored more efficiently.  See
+the discussion in the section description.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>hash_table</code></title>
+  <p>a <link xref="GLib.HashTable"/></p>
+</item>
+<item>
+<title><code>key</code></title>
+  <p>a key to insert</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

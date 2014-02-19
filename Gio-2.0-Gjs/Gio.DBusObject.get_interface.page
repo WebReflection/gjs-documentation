@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusObject.get_interface"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusObject" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.DBusInterface</api:type>
+      </api:returns>
+      <api:name>g_dbus_object_get_interface</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>interface_name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DBusObject.prototype.get_interface</title>
+  <synopsis><code mime="text/x-gjs">
+function get_interface(interface_name: String): Gio.DBusInterface {
+    // Gjs wrapper for g_dbus_object_get_interface()
+}
+  </code></synopsis>
+  <p>Gets the D-Bus interface with name <code>interface_name</code> associated with
+<code>object</code>, if any.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>interface_name</code></title>
+  <p>A D-Bus interface name.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

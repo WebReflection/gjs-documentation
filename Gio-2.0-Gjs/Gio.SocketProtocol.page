@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gio.SocketProtocol"
+      type="topic"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Gio.SocketProtocol</title>
+  <p>A protocol identifier is specified when creating a <link xref="Gio.Socket"/>, which is a
+family/type specific identifier, where 0 means the default protocol for
+the particular family/type.</p>  <p>This enum contains a set of commonly available and used protocols. You
+can also pass any other identifiers handled by the platform in order to
+use protocols not listed here.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>SocketProtocol.UNKNOWN</code></title>
+  <p>The protocol type is unknown</p>
+</item>
+<item>
+<title><code>SocketProtocol.DEFAULT</code></title>
+  <p>The default protocol for the family/type</p>
+</item>
+<item>
+<title><code>SocketProtocol.TCP</code></title>
+  <p>TCP over IP</p>
+</item>
+<item>
+<title><code>SocketProtocol.UDP</code></title>
+  <p>UDP over IP</p>
+</item>
+<item>
+<title><code>SocketProtocol.SCTP</code></title>
+  <p>SCTP over IP</p>
+</item>
+</terms>
+
+</page>

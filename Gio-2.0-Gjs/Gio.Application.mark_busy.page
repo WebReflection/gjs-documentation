@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Gio.Application.mark_busy"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Application" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_application_mark_busy</api:name>
+    </api:function>
+  </info>
+  <title>Gio.Application.prototype.mark_busy</title>
+  <synopsis><code mime="text/x-gjs">
+function mark_busy(): void {
+    // Gjs wrapper for g_application_mark_busy()
+}
+  </code></synopsis>
+  <p>Increases the busy count of <code>application</code>.</p>  <p>Use this function to indicate that the application is busy, for instance
+while a long running operation is pending.</p>  <p>The busy state will be exposed to other processes, so a session shell will
+use that information to indicate the state to the user (e.g. with a
+spinner).</p>  <p>To cancel the busy indication, use <link xref="Gio.unmark_busy"/>.</p>
+  <p>Since 2.38</p>
+
+</page>

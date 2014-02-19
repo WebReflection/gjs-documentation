@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Gio.BusAcquiredCallback"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Gio.BusAcquiredCallback</title>
+  <synopsis><code mime="text/x-gjs">
+function onBusAcquiredCallback(connection: Gio.DBusConnection, name: String): void {
+}
+  </code></synopsis>
+  <p>Invoked when a connection to a message bus has been obtained.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>connection</code></title>
+  <p>The <link xref="Gio.DBusConnection"/> to a message bus.</p>
+</item>
+<item>
+<title><code>name</code></title>
+  <p>The name that is requested to be owned.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,79 @@
+<?xml version="1.0"?>
+<page id="GLib.Regex.split_full"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Regex" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(String)</api:type>
+      </api:returns>
+      <api:name>g_regex_split_full</api:name>
+      <api:arg>
+        <api:type>Array(String)</api:type>
+        <api:name>string</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>start_position</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.RegexMatchFlags</api:type>
+        <api:name>match_options</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>max_tokens</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.Regex.prototype.split_full</title>
+  <synopsis><code mime="text/x-gjs">
+function split_full(string: Array(String), start_position: Number, match_options: GLib.RegexMatchFlags, max_tokens: Number): Array(String) {
+    // Gjs wrapper for g_regex_split_full()
+}
+  </code></synopsis>
+  <p>Breaks the string on the pattern, and returns an array of the tokens.
+If the pattern contains capturing parentheses, then the text for each
+of the substrings will also be returned. If the pattern does not match
+anywhere in the string, then the whole string is returned as the first
+token.</p>  <p>As a special case, the result of splitting the empty string "" is an
+empty vector, not a vector containing a single string. The reason for
+this special case is that being able to represent a empty vector is
+typically more useful than consistent handling of empty elements. If
+you do need to represent empty elements, you'll need to check for the
+empty string before calling this function.</p>  <p>A pattern that can match empty strings splits <code>string</code> into separate
+characters wherever it matches the empty string between characters.
+For example splitting "ab c" using as a separator "\s*", you will get
+"a", "b" and "c".</p>  <p>Setting <code>start_position</code> differs from just passing over a shortened
+string and setting #G_REGEX_MATCH_NOTBOL in the case of a pattern
+that begins with any kind of lookbehind assertion, such as "\b".</p>
+  <p>Since 2.14</p>
+<terms>
+<item>
+<title><code>string</code></title>
+  <p>the string to split with the pattern</p>
+</item>
+<item>
+<title><code>start_position</code></title>
+  <p>starting index of the string to match</p>
+</item>
+<item>
+<title><code>match_options</code></title>
+  <p>match time option flags</p>
+</item>
+<item>
+<title><code>max_tokens</code></title>
+  <p>the maximum number of tokens to split <code>string</code> into.
+  If this is less than 1, the string is split completely</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

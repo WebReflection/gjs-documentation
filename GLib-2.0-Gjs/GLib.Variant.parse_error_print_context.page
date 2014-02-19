@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<page id="GLib.Variant.parse_error_print_context"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Variant" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_variant_parse_error_print_context</api:name>
+      <api:arg>
+        <api:type>GLib.Error</api:type>
+        <api:name>error</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>source_str</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.Variant.parse_error_print_context</title>
+  <synopsis><code mime="text/x-gjs">
+function parse_error_print_context(error: GLib.Error, source_str: String): String {
+    // Gjs wrapper for g_variant_parse_error_print_context()
+}
+  </code></synopsis>
+  <p>Pretty-prints a message showing the context of a <link xref="GLib.Variant"/> parse
+error within the string for which parsing was attempted.</p>  <p>The resulting string is suitable for output to the console or other
+monospace media where newlines are treated in the usual way.</p>  <p>The message will typically look something like one of the following:</p>  <p>|[
+unterminated string constant:
+  (1, 2, 3, 'abc
+            ^^^^
+]|</p>  <p>or</p>  <p>|[
+unable to find a common type:
+  [1, 2, 3, 'str']
+   ^        ^^^^^
+]|</p>  <p>The format of the message may change in a future version.</p>  <p><code>error</code> must have come from a failed attempt to <link xref="GLib.variant_parse"/> and
+<code>source_str</code> must be exactly the same string that caused the error.
+If <code>source_str</code> was not nul-terminated when you passed it to
+<link xref="GLib.variant_parse"/> then you must add nul termination before using this
+function.</p>
+  <p>Since 2.40</p>
+<terms>
+<item>
+<title><code>error</code></title>
+  <p>a <link xref="GLib.Error"/> from the <link xref="GLib.VariantParseError"/> domain</p>
+</item>
+<item>
+<title><code>source_str</code></title>
+  <p>the string that was given to the parser</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

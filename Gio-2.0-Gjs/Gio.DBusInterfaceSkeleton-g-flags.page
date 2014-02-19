@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusInterfaceSkeleton-g-flags"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusInterfaceSkeleton" group="property" type="guide"/>
+    <title type="link" role="topic">g-flags</title>
+  </info>
+  <title>Gio.DBusInterfaceSkeleton.g_flags</title>
+  <synopsis><code mime="text/x-gjs">
+DBusInterfaceSkeleton.g_flags: Gio.DBusInterfaceSkeletonFlags (Read / Write)
+  </code></synopsis>
+  <p>Flags from the <link xref="Gio.DBusInterfaceSkeletonFlags"/> enumeration.</p>
+  <p>Since 2.30</p>
+</page>

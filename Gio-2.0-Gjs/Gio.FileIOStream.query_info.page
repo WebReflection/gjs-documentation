@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<page id="Gio.FileIOStream.query_info"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.FileIOStream" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.FileInfo</api:type>
+      </api:returns>
+      <api:name>g_file_io_stream_query_info</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>attributes</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.FileIOStream.prototype.query_info</title>
+  <synopsis><code mime="text/x-gjs">
+function query_info(attributes: String, cancellable: Gio.Cancellable): Gio.FileInfo {
+    // Gjs wrapper for g_file_io_stream_query_info()
+}
+  </code></synopsis>
+  <p>Queries a file io stream for the given <code>attributes</code>.
+This function blocks while querying the stream. For the asynchronous
+version of this function, see <link xref="Gio.query_info_async"/>.
+While the stream is blocked, the stream will set the pending flag
+internally, and any other operations on the stream will fail with
+<link xref="Gio.IOErrorEnum"/>.pending.</p>  <p>Can fail if the stream was already closed (with @error being set to
+<link xref="Gio.IOErrorEnum"/>.closed), the stream has pending operations (with @error being
+set to <link xref="Gio.IOErrorEnum"/>.pending), or if querying info is not supported for
+the stream's interface (with @error being set to <link xref="Gio.IOErrorEnum"/>.not_supported). I
+all cases of failure, <code>null</code> will be returned.</p>  <p>If <code>cancellable</code> is not <code>null</code>, then the operation can be cancelled by
+triggering the cancellable object from another thread. If the operation
+was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be set, and <code>null</code> will
+be returned.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>attributes</code></title>
+  <p>a file attribute query string.</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional <link xref="Gio.Cancellable"/> object, <code>null</code> to ignore.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

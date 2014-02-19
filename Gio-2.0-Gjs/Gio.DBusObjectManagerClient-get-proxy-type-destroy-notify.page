@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusObjectManagerClient-get-proxy-type-destroy-notify"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusObjectManagerClient" group="property" type="guide"/>
+    <title type="link" role="topic">get-proxy-type-destroy-notify</title>
+  </info>
+  <title>Gio.DBusObjectManagerClient.get_proxy_type_destroy_notify</title>
+  <synopsis><code mime="text/x-gjs">
+DBusObjectManagerClient.get_proxy_type_destroy_notify: gpointer (Read / Write / Construct Only)
+  </code></synopsis>
+  <p>A <link xref="GLib.DestroyNotify"/> for the #gpointer user_data in <link xref="Gio.get-proxy-type-user-data"/>.</p>
+  <p>Since 2.30</p>
+</page>

@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<page id="GLib.DateTime.new_utc"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.DateTime" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.DateTime</api:type>
+      </api:returns>
+      <api:name>g_date_time_new_utc</api:name>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>year</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>month</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>day</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>hour</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>minute</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>seconds</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.DateTime.new_utc</title>
+  <synopsis><code mime="text/x-gjs">
+function new_utc(year: Number, month: Number, day: Number, hour: Number, minute: Number, seconds: Number): GLib.DateTime {
+    // Gjs wrapper for g_date_time_new_utc()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="GLib.DateTime"/> corresponding to the given date and time in
+UTC.</p>  <p>This call is equivalent to calling <link xref="GLib.new"/> with the time
+zone returned by <link xref="GLib.new_utc"/>.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>year</code></title>
+  <p>the year component of the date</p>
+</item>
+<item>
+<title><code>month</code></title>
+  <p>the month component of the date</p>
+</item>
+<item>
+<title><code>day</code></title>
+  <p>the day component of the date</p>
+</item>
+<item>
+<title><code>hour</code></title>
+  <p>the hour component of the date</p>
+</item>
+<item>
+<title><code>minute</code></title>
+  <p>the minute component of the date</p>
+</item>
+<item>
+<title><code>seconds</code></title>
+  <p>the number of seconds past the minute</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

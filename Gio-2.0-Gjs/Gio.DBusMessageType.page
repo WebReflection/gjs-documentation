@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusMessageType"
+      type="topic"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Gio.DBusMessageType</title>
+  <p>Message types used in <link xref="Gio.DBusMessage"/>.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>DBusMessageType.INVALID</code></title>
+  <p>Message is of invalid type.</p>
+</item>
+<item>
+<title><code>DBusMessageType.METHOD_CALL</code></title>
+  <p>Method call.</p>
+</item>
+<item>
+<title><code>DBusMessageType.METHOD_RETURN</code></title>
+  <p>Method reply.</p>
+</item>
+<item>
+<title><code>DBusMessageType.ERROR</code></title>
+  <p>Error reply.</p>
+</item>
+<item>
+<title><code>DBusMessageType.SIGNAL</code></title>
+  <p>Signal emission.</p>
+</item>
+</terms>
+
+</page>

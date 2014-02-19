@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="GObject.FlagsValue-value"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.FlagsValue" group="field" type="guide"/>
+    <title type="link" role="topic">value</title>
+  </info>
+  <title>GObject.FlagsValue.value</title>
+  <synopsis><code mime="text/x-gjs">
+FlagsValue.value: Number (Read / Write)
+  </code></synopsis>
+  <p>the flags value</p>
+
+</page>

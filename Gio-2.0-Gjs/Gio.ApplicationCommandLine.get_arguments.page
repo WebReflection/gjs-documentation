@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Gio.ApplicationCommandLine.get_arguments"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.ApplicationCommandLine" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(String)</api:type>
+      </api:returns>
+      <api:name>g_application_command_line_get_arguments</api:name>
+    </api:function>
+  </info>
+  <title>Gio.ApplicationCommandLine.prototype.get_arguments</title>
+  <synopsis><code mime="text/x-gjs">
+function get_arguments(): [return_value: Array(String), argc: Number] {
+    // Gjs wrapper for g_application_command_line_get_arguments()
+}
+  </code></synopsis>
+  <p>Gets the list of arguments that was passed on the command line.</p>  <p>The strings in the array may contain non-UTF-8 data on UNIX (such as
+filenames or arguments given in the system locale) but are always in
+UTF-8 on Windows.</p>  <p>If you wish to use the return value with <link xref="GLib.OptionContext"/>, you must
+use <link xref="GLib.parse_strv"/>.</p>  <p>The return value is <code>null</code>-terminated and should be freed using
+<link xref="GLib.strfreev"/>.</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>return_value</code></title>
+
+</item>
+<item>
+<title><code>argc</code></title>
+  <p>the length of the arguments array, or <code>null</code></p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<page id="Gio.Vfs-get_file_for_path"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Vfs" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.Vfs::get_file_for_path</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_get_file_for_path(path: String): Gio.File {
+}
+  </code></synopsis>
+  <p>Gets a <link xref="Gio.File"/> for <code>path</code>.</p>
+
+<terms>
+<item>
+<title><code>path</code></title>
+  <p>a string containing a VFS path.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link xref="Gio.File"/>.
+    Free the returned object with <link xref="GObject.unref"/>.</p>
+</item>
+</terms>
+
+</page>

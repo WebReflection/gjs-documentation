@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.Resolver.set_default"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Resolver" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_resolver_set_default</api:name>
+    </api:function>
+  </info>
+  <title>Gio.Resolver.prototype.set_default</title>
+  <synopsis><code mime="text/x-gjs">
+function set_default(): void {
+    // Gjs wrapper for g_resolver_set_default()
+}
+  </code></synopsis>
+  <p>Sets <code>resolver</code> to be the application's default resolver (reffing
+<code>resolver</code>, and unreffing the previous default resolver, if any).
+Future calls to <link xref="Gio.get_default"/> will return this resolver.</p>  <p>This can be used if an application wants to perform any sort of DNS
+caching or "pinning"; it can implement its own <link xref="Gio.Resolver"/> that
+calls the original default resolver for DNS operations, and
+implements its own cache policies on top of that, and then set
+itself as the default resolver for all later code to use.</p>
+  <p>Since 2.22</p>
+
+</page>

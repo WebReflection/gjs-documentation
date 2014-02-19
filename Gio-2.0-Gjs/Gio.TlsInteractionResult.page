@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gio.TlsInteractionResult"
+      type="topic"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Gio.TlsInteractionResult</title>
+  <p><link xref="Gio.TlsInteractionResult"/> is returned by various functions in <link xref="Gio.TlsInteraction"/>
+when finishing an interaction request.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>TlsInteractionResult.UNHANDLED</code></title>
+  <p>The interaction was unhandled (i.e. not
+    implemented).</p>
+</item>
+<item>
+<title><code>TlsInteractionResult.HANDLED</code></title>
+  <p>The interaction completed, and resulting data
+    is available.</p>
+</item>
+<item>
+<title><code>TlsInteractionResult.FAILED</code></title>
+  <p>The interaction has failed, or was cancelled.
+    and the operation should be aborted.</p>
+</item>
+</terms>
+
+</page>

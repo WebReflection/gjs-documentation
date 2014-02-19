@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Gio.VolumeMonitor.get_mount_for_uuid"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.VolumeMonitor" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.Mount</api:type>
+      </api:returns>
+      <api:name>g_volume_monitor_get_mount_for_uuid</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>uuid</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.VolumeMonitor.prototype.get_mount_for_uuid</title>
+  <synopsis><code mime="text/x-gjs">
+function get_mount_for_uuid(uuid: String): Gio.Mount {
+    // Gjs wrapper for g_volume_monitor_get_mount_for_uuid()
+}
+  </code></synopsis>
+  <p>Finds a <link xref="Gio.Mount"/> object by its UUID (see <link xref="Gio.Mount.get_uuid"/>)</p>
+
+<terms>
+<item>
+<title><code>uuid</code></title>
+  <p>the UUID to look for</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

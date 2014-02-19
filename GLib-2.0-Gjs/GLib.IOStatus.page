@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="GLib.IOStatus"
+      type="topic"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>GLib.IOStatus</title>
+  <p>Stati returned by most of the <link xref="GLib.IOFuncs"/> functions.</p>
+
+<terms>
+<item>
+<title><code>IOStatus.ERROR</code></title>
+  <p>An error occurred.</p>
+</item>
+<item>
+<title><code>IOStatus.NORMAL</code></title>
+  <p>Success.</p>
+</item>
+<item>
+<title><code>IOStatus.EOF</code></title>
+  <p>End of file.</p>
+</item>
+<item>
+<title><code>IOStatus.AGAIN</code></title>
+  <p>Resource temporarily unavailable.</p>
+</item>
+</terms>
+
+</page>

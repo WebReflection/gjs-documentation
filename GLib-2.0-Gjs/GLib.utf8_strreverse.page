@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<page id="GLib.utf8_strreverse"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_utf8_strreverse</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>str</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gssize</api:type>
+        <api:name>len</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.utf8_strreverse</title>
+  <synopsis><code mime="text/x-gjs">
+function utf8_strreverse(str: String, len: gssize): String {
+    // Gjs wrapper for g_utf8_strreverse()
+}
+  </code></synopsis>
+  <p>Reverses a UTF-8 string. <code>str</code> must be valid UTF-8 encoded text.
+(Use <link xref="GLib.utf8_validate"/> on all text before trying to use UTF-8
+utility functions with it.)</p>  <p>This function is intended for programmatic uses of reversed strings.
+It pays no attention to decomposed characters, combining marks, byte
+order marks, directional indicators (LRM, LRO, etc) and similar
+characters which might need special handling when reversing a string
+for display purposes.</p>  <p>Note that unlike <link xref="GLib.strreverse"/>, this function returns
+newly-allocated memory, which should be freed with <link xref="GLib.free"/> when
+no longer needed.</p>
+  <p>Since 2.2</p>
+<terms>
+<item>
+<title><code>str</code></title>
+  <p>a UTF-8 encoded string</p>
+</item>
+<item>
+<title><code>len</code></title>
+  <p>the maximum length of <code>str</code> to use, in bytes. If <code>len</code> &lt; 0,
+    then the string is nul-terminated.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

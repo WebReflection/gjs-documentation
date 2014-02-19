@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<page id="Gio.VOLUME_IDENTIFIER_KIND_CLASS"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>Gio.VOLUME_IDENTIFIER_KIND_CLASS</title>
+  <p>The string used to obtain the volume &lt;emphasis&gt;class&lt;/emphasis&gt;
+with <link xref="Gio.get_identifier"/>.</p>  <p>Known volume classes include &lt;literal&gt;device&lt;/literal&gt; and
+&lt;literal&gt;network&lt;/literal&gt;. Other classes may be added in the
+future.</p>  <p>This is intended to be used by applications to classify <link xref="Gio.Volume"/>
+instances into different sections - for example a file manager or
+file chooser can use this information to show
+&lt;literal&gt;network&lt;/literal&gt; volumes under a "Network" heading and
+&lt;literal&gt;device&lt;/literal&gt; volumes under a "Devices" heading.</p>
+
+</page>

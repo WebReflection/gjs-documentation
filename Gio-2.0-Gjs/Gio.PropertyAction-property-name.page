@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="Gio.PropertyAction-property-name"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.PropertyAction" group="property" type="guide"/>
+    <title type="link" role="topic">property-name</title>
+  </info>
+  <title>Gio.PropertyAction.property_name</title>
+  <synopsis><code mime="text/x-gjs">
+PropertyAction.property_name: String (Write / Construct Only)
+  </code></synopsis>
+  <p>The name of the property to wrap on the object.</p>  <p>The property must exist on the passed-in object and it must be
+readable and writable (and not construct-only).</p>
+  <p>Since 2.38</p>
+</page>

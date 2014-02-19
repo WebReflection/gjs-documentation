@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<page id="Gio.Socket.send"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Socket" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>gssize</api:type>
+      </api:returns>
+      <api:name>g_socket_send</api:name>
+      <api:arg>
+        <api:type>Array(guint8)</api:type>
+        <api:name>buffer</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.Socket.prototype.send</title>
+  <synopsis><code mime="text/x-gjs">
+function send(buffer: Array(guint8), cancellable: Gio.Cancellable): gssize {
+    // Gjs wrapper for g_socket_send()
+}
+  </code></synopsis>
+  <p>Tries to send <code>size</code> bytes from <code>buffer</code> on the socket. This is
+mainly used by connection-oriented sockets; it is identical to
+<link xref="Gio.send_to"/> with @address set to <code>null</code>.</p>  <p>If the socket is in blocking mode the call will block until there is
+space for the data in the socket queue. If there is no space available
+and the socket is in non-blocking mode a <link xref="Gio.IOErrorEnum"/>.would_block error
+will be returned. To be notified when space is available, wait for the
+<link xref="GLib.IOCondition"/>.out condition. Note though that you may still receive
+<link xref="Gio.IOErrorEnum"/>.would_block from <link xref="Gio.Socket.send"/> even if you were previously
+notified of a <link xref="GLib.IOCondition"/>.out condition. (On Windows in particular, this is
+very common due to the way the underlying APIs work.)</p>  <p>On error -1 is returned and @error is set accordingly.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>buffer</code></title>
+  <p>the buffer
+    containing the data to send.</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>a %GCancellable or <code>null</code></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="GLib.strfreev"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_strfreev</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>str_array</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.strfreev</title>
+  <synopsis><code mime="text/x-gjs">
+function strfreev(str_array: String): void {
+    // Gjs wrapper for g_strfreev()
+}
+  </code></synopsis>
+  <p>Frees a <code>null</code>-terminated array of strings, and the array itself.
+If called on a <code>null</code> value, <link xref="GLib.strfreev"/> simply returns.</p>
+
+<terms>
+<item>
+<title><code>str_array</code></title>
+  <p>a <code>null</code>-terminated array of strings to free</p>
+</item>
+</terms>
+
+</page>

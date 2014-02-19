@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<page id="Gio.AppInfo-get_executable"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.AppInfo" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.AppInfo::get_executable</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_get_executable(): String {
+}
+  </code></synopsis>
+  <p>Gets the executable's name for the installed application.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a string containing the <code>appinfo</code>'s application
+binaries name</p>
+</item>
+</terms>
+
+</page>

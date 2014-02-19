@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="GLib.Variant.unref"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Variant" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_variant_unref</api:name>
+    </api:function>
+  </info>
+  <title>GLib.Variant.prototype.unref</title>
+  <synopsis><code mime="text/x-gjs">
+function unref(): void {
+    // Gjs wrapper for g_variant_unref()
+}
+  </code></synopsis>
+  <p>Decreases the reference count of <code>value</code>.  When its reference count
+drops to 0, the memory used by the variant is freed.</p>
+  <p>Since 2.24</p>
+
+</page>

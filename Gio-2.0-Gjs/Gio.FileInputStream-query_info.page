@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gio.FileInputStream-query_info"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.FileInputStream" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.FileInputStream::query_info</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_query_info(attributes: String, cancellable: Gio.Cancellable): Gio.FileInfo {
+}
+  </code></synopsis>
+  <p>Queries a file input stream the given <code>attributes</code>. This function blocks
+while querying the stream. For the asynchronous (non-blocking) version
+of this function, see <link xref="Gio.FileInputStream.query_info_async"/>. While the
+stream is blocked, the stream will set the pending flag internally, and
+any other operations on the stream will fail with <link xref="Gio.IOErrorEnum"/>.pending.</p>
+
+<terms>
+<item>
+<title><code>attributes</code></title>
+  <p>a file attribute query string.</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional <link xref="Gio.Cancellable"/> object, <code>null</code> to ignore.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link xref="Gio.FileInfo"/>, or <code>null</code> on error.</p>
+</item>
+</terms>
+
+</page>

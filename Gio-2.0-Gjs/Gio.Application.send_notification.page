@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<page id="Gio.Application.send_notification"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Application" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_application_send_notification</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>id</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Notification</api:type>
+        <api:name>notification</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.Application.prototype.send_notification</title>
+  <synopsis><code mime="text/x-gjs">
+function send_notification(id: String, notification: Gio.Notification): void {
+    // Gjs wrapper for g_application_send_notification()
+}
+  </code></synopsis>
+  <p>Sends a notification on behalf of <code>application</code> to the desktop shell.
+There is no guarantee that the notification is displayed immediately,
+or even at all.</p>  <p>Notifications may persist after the application exits. It will be
+D-Bus-activated when the notification or one of its actions is
+activated.</p>  <p>Modifying <code>notification</code> after this call has no effect. However, the
+object can be reused for a later call to this function.</p>  <p><code>id</code> may be any string that uniquely identifies the event for the
+application. It does not need to be in any special format. For
+example, "new-message" might be appropriate for a notification about
+new messages.</p>  <p>If a previous notification was sent with the same <code>id</code>, it will be
+replaced with <code>notification</code> and shown again as if it was a new
+notification. This works even for notifications sent from a previous
+execution of the application, as long as <code>id</code> is the same string.</p>  <p><code>id</code> may be <code>null</code>, but it is impossible to replace or withdraw
+notifications without an id.</p>  <p>If <code>notification</code> is no longer relevant, it can be withdrawn with
+<link xref="Gio.withdraw_notification"/>.</p>
+  <p>Since 2.40</p>
+<terms>
+<item>
+<title><code>id</code></title>
+  <p>id of the notification, or <code>null</code></p>
+</item>
+<item>
+<title><code>notification</code></title>
+  <p>the <link xref="Gio.Notification"/> to send</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="GObject.Closure.invalidate"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.Closure" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_closure_invalidate</api:name>
+    </api:function>
+  </info>
+  <title>GObject.Closure.prototype.invalidate</title>
+  <synopsis><code mime="text/x-gjs">
+function invalidate(): void {
+    // Gjs wrapper for g_closure_invalidate()
+}
+  </code></synopsis>
+  <p>Sets a flag on the closure to indicate that its calling
+environment has become invalid, and thus causes any future
+invocations of <link xref="GObject.invoke"/> on this <code>closure</code> to be
+ignored. Also, invalidation notifiers installed on the closure will
+be called at this point. Note that unless you are holding a
+reference to the closure yourself, the invalidation notifiers may
+unref the closure and cause it to be destroyed, so if you need to
+access the closure after calling <link xref="GObject.Closure.invalidate"/>, make sure
+that you've previously called <link xref="GObject.ref"/>.</p>  <p>Note that <link xref="GObject.Closure.invalidate"/> will also be called when the
+reference count of a closure drops to zero (unless it has already
+been invalidated before).</p>
+
+
+</page>

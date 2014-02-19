@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="Gio.Application-open"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Application" group="signal" type="guide"/>
+    <title type="link" role="topic">open</title>
+  </info>
+  <title>Gio.Application::open</title>
+  <synopsis><code mime="text/x-gjs">
+connect('open', function (application, files: Array(Gio.File), hint: String, ): void);
+  </code></synopsis>
+  <p>The ::open signal is emitted on the primary instance when there are
+files to open. See <link xref="Gio.Application.open"/> for more information.</p>
+
+<terms>
+<item>
+<title><code>application</code></title>
+<p>instance of <link xref="Gio.Application"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>files</code></title>
+  <p>an array of #GFiles</p>
+</item>
+<item>
+<title><code>hint</code></title>
+  <p>a hint provided by the calling instance</p>
+</item>
+</terms>
+
+</page>

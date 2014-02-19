@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusObject-interface-added"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusObject" group="signal" type="guide"/>
+    <title type="link" role="topic">interface-added</title>
+  </info>
+  <title>Gio.DBusObject::interface-added</title>
+  <synopsis><code mime="text/x-gjs">
+connect('interface-added', function (dBusObject, interface: Gio.DBusInterface, ): void);
+  </code></synopsis>
+  <p>Emitted when <code>interface</code> is added to @object.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>dBusObject</code></title>
+<p>instance of <link xref="Gio.DBusObject"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>interface</code></title>
+  <p>The <link xref="Gio.DBusInterface"/> that was added.</p>
+</item>
+</terms>
+
+</page>

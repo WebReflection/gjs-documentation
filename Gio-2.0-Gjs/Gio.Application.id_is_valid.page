@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="Gio.Application.id_is_valid"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Application" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_application_id_is_valid</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>application_id</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.Application.id_is_valid</title>
+  <synopsis><code mime="text/x-gjs">
+function id_is_valid(application_id: String): Boolean {
+    // Gjs wrapper for g_application_id_is_valid()
+}
+  </code></synopsis>
+  <p>Checks if <code>application_id</code> is a valid application identifier.</p>  <p>A valid ID is required for calls to <link xref="Gio.new"/> and
+<link xref="Gio.Application.set_application_id"/>.</p>  <p>For convenience, the restrictions on application identifiers are
+reproduced here:</p>  <p>- Application identifiers must contain only the ASCII characters
+  "[A-Z][a-z][0-9]_-." and must not begin with a digit.</p>  <p>- Application identifiers must contain at least one '.' (period)
+  character (and thus at least three elements).</p>  <p>- Application identifiers must not begin or end with a '.' (period)
+  character.</p>  <p>- Application identifiers must not contain consecutive '.' (period)
+  characters.</p>  <p>- Application identifiers must not exceed 255 characters.</p>
+
+<terms>
+<item>
+<title><code>application_id</code></title>
+  <p>a potential application identifier</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

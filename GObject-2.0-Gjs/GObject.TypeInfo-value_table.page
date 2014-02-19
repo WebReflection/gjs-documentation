@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="GObject.TypeInfo-value_table"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.TypeInfo" group="field" type="guide"/>
+    <title type="link" role="topic">value_table</title>
+  </info>
+  <title>GObject.TypeInfo.value_table</title>
+  <synopsis><code mime="text/x-gjs">
+TypeInfo.value_table: GObject.TypeValueTable (Read)
+  </code></synopsis>
+  <p>A <link xref="GObject.TypeValueTable"/> function table for generic handling of GValues of this type (usually only
+ useful for fundamental types).</p>
+
+</page>

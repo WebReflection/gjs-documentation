@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="Gio.OutputStream-write_fn"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.OutputStream" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.OutputStream::write_fn</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_write_fn(buffer: Array(guint8), cancellable: Gio.Cancellable): gssize {
+}
+  </code></synopsis>
+  <p>Tries to write <code>count</code> bytes from <code>buffer</code> into the stream. Will block
+during the operation.</p>  <p>If count is 0, returns 0 and does nothing. A value of <code>count</code>
+larger than %G_MAXSSIZE will cause a <link xref="Gio.IOErrorEnum"/>.invalid_argument error.</p>  <p>On success, the number of bytes written to the stream is returned.
+It is not an error if this is not the same as the requested size, as it
+can happen e.g. on a partial I/O error, or if there is not enough
+storage in the stream. All writes block until at least one byte
+is written or an error occurs; 0 is never returned (unless
+<code>count</code> is 0).</p>  <p>If <code>cancellable</code> is not <code>null</code>, then the operation can be cancelled by
+triggering the cancellable object from another thread. If the operation
+was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be returned. If an
+operation was partially finished when the operation was cancelled the
+partial result will be returned, without an error.</p>  <p>On error -1 is returned and @error is set accordingly.</p>
+
+<terms>
+<item>
+<title><code>buffer</code></title>
+  <p>the buffer containing the data to write.</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional cancellable object</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>Number of bytes written, or -1 on error</p>
+</item>
+</terms>
+
+</page>

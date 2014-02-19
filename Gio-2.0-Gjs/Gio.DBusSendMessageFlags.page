@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusSendMessageFlags"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>Gio.DBusSendMessageFlags</title>
+  <p>Flags used when sending <link xref="Gio.DBusMessage"/>&lt;!-- --&gt;s on a <link xref="Gio.DBusConnection"/>.</p>
+  <p>Since 2.26</p>
+</page>

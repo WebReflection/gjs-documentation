@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.ResourceError.quark"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.Quark</api:type>
+      </api:returns>
+      <api:name>g_resource_error_quark</api:name>
+    </api:function>
+  </info>
+  <title>Gio.quark</title>
+  <synopsis><code mime="text/x-gjs">
+function quark(): GLib.Quark {
+    // Gjs wrapper for g_resource_error_quark()
+}
+  </code></synopsis>
+  <p>Gets the <link xref="Gio.Resource"/> Error Quark.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="Gio.Settings-schema-id"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Settings" group="property" type="guide"/>
+    <title type="link" role="topic">schema-id</title>
+  </info>
+  <title>Gio.Settings.schema_id</title>
+  <synopsis><code mime="text/x-gjs">
+Settings.schema_id: String (Read / Write / Construct Only)
+  </code></synopsis>
+  <p>The name of the schema that describes the types of keys
+for this <link xref="Gio.Settings"/> object.</p>
+
+</page>

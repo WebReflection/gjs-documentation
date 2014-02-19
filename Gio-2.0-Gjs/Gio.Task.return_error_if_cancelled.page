@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="Gio.Task.return_error_if_cancelled"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Task" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_task_return_error_if_cancelled</api:name>
+    </api:function>
+  </info>
+  <title>Gio.Task.prototype.return_error_if_cancelled</title>
+  <synopsis><code mime="text/x-gjs">
+function return_error_if_cancelled(): Boolean {
+    // Gjs wrapper for g_task_return_error_if_cancelled()
+}
+  </code></synopsis>
+  <p>Checks if <code>task</code>'s <link xref="Gio.Cancellable"/> has been cancelled, and if so, sets
+<code>task</code>'s error accordingly and completes the task (see
+<link xref="Gio.return_pointer"/> for more discussion of exactly what this
+means).</p>
+  <p>Since 2.36</p>
+<terms>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

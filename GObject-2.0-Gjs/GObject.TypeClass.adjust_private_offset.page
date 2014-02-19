@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="GObject.TypeClass.adjust_private_offset"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.TypeClass" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_type_class_adjust_private_offset</api:name>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>g_class</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>private_size_or_offset</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.TypeClass.adjust_private_offset</title>
+  <synopsis><code mime="text/x-gjs">
+function adjust_private_offset(g_class: gpointer, private_size_or_offset: Number): void {
+    // Gjs wrapper for g_type_class_adjust_private_offset()
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>g_class</code></title>
+
+</item>
+<item>
+<title><code>private_size_or_offset</code></title>
+
+</item>
+</terms>
+
+</page>

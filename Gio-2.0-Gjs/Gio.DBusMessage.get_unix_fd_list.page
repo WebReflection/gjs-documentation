@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusMessage.get_unix_fd_list"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusMessage" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.UnixFDList</api:type>
+      </api:returns>
+      <api:name>g_dbus_message_get_unix_fd_list</api:name>
+    </api:function>
+  </info>
+  <title>Gio.DBusMessage.prototype.get_unix_fd_list</title>
+  <synopsis><code mime="text/x-gjs">
+function get_unix_fd_list(): Gio.UnixFDList {
+    // Gjs wrapper for g_dbus_message_get_unix_fd_list()
+}
+  </code></synopsis>
+  <p>Gets the UNIX file descriptors associated with <code>message</code>, if any.</p>  <p>This method is only available on UNIX.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="Gio.File.has_parent"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.File" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_file_has_parent</api:name>
+      <api:arg>
+        <api:type>Gio.File</api:type>
+        <api:name>parent</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.File.prototype.has_parent</title>
+  <synopsis><code mime="text/x-gjs">
+function has_parent(parent: Gio.File): Boolean {
+    // Gjs wrapper for g_file_has_parent()
+}
+  </code></synopsis>
+  <p>Checks if <code>file</code> has a parent, and optionally, if it is <code>parent</code>.</p>  <p>If <code>parent</code> is <code>null</code> then this function returns <code>true</code> if <code>file</code> has any
+parent at all.  If <code>parent</code> is non-<code>null</code> then <code>true</code> is only returned
+if <code>file</code> is a child of <code>parent</code>.</p>
+  <p>Since 2.24</p>
+<terms>
+<item>
+<title><code>parent</code></title>
+  <p>the parent to check for, or <code>null</code></p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

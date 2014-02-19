@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.BytesIcon.get_bytes"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.BytesIcon" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.Bytes</api:type>
+      </api:returns>
+      <api:name>g_bytes_icon_get_bytes</api:name>
+    </api:function>
+  </info>
+  <title>Gio.BytesIcon.prototype.get_bytes</title>
+  <synopsis><code mime="text/x-gjs">
+function get_bytes(): GLib.Bytes {
+    // Gjs wrapper for g_bytes_icon_get_bytes()
+}
+  </code></synopsis>
+  <p>Gets the <link xref="GLib.Bytes"/> associated with the given <code>icon</code>.</p>
+  <p>Since 2.38</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

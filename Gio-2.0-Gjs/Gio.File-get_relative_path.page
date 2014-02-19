@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.File-get_relative_path"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.File" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.File::get_relative_path</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_get_relative_path(descendant: Gio.File): String {
+}
+  </code></synopsis>
+  <p>Gets the path for <code>descendant</code> relative to <code>parent</code>.</p>  <p>This call does no blocking I/O.</p>
+
+<terms>
+<item>
+<title><code>descendant</code></title>
+  <p>input <link xref="Gio.File"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>string with the relative path from <code>descendant</code>
+    to <code>parent</code>, or <code>null</code> if <code>descendant</code> doesn't have <code>parent</code>
+    as prefix. The returned string should be freed with <link xref="GLib.free"/>
+    when no longer needed.</p>
+</item>
+</terms>
+
+</page>

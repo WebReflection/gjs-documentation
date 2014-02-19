@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="Gio.Menu.prepend_section"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Menu" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_menu_prepend_section</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>label</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.MenuModel</api:type>
+        <api:name>section</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.Menu.prototype.prepend_section</title>
+  <synopsis><code mime="text/x-gjs">
+function prepend_section(label: String, section: Gio.MenuModel): void {
+    // Gjs wrapper for g_menu_prepend_section()
+}
+  </code></synopsis>
+  <p>Convenience function for prepending a section menu item to the start
+of <code>menu</code>.  Combine <link xref="Gio.new_section"/> and <link xref="Gio.Menu.insert_item"/> for
+a more flexible alternative.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>label</code></title>
+  <p>the section label, or <code>null</code></p>
+</item>
+<item>
+<title><code>section</code></title>
+  <p>a <link xref="Gio.MenuModel"/> with the items of the section</p>
+</item>
+</terms>
+
+</page>

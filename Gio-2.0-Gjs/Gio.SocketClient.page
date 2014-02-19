@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<page id="Gio.SocketClient"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>Gio.SocketClient</title>
+  <synopsis><code>
+const Gio = imports.gi.Gio;
+
+let socketClient = new Gio.SocketClient({
+    <link xref='Gio.SocketClient-enable-proxy'>enable_proxy</link>: value,
+    <link xref='Gio.SocketClient-family'>family</link>: value,
+    <link xref='Gio.SocketClient-local-address'>local_address</link>: value,
+    <link xref='Gio.SocketClient-protocol'>protocol</link>: value,
+    <link xref='Gio.SocketClient-proxy-resolver'>proxy_resolver</link>: value,
+    <link xref='Gio.SocketClient-timeout'>timeout</link>: value,
+    <link xref='Gio.SocketClient-tls'>tls</link>: value,
+    <link xref='Gio.SocketClient-tls-validation-flags'>tls_validation_flags</link>: value,
+    <link xref='Gio.SocketClient-type'>type</link>: value,
+});
+  </code></synopsis>
+  <p><link xref="Gio.SocketClient"/> is a lightweight high-level utility class for connecting to
+a network host using a connection oriented socket type.</p>  <p>You create a <link xref="Gio.SocketClient"/> object, set any options you want, and then
+call a sync or async connect operation, which returns a <link xref="Gio.SocketConnection"/>
+subclass on success.</p>  <p>The type of the <link xref="Gio.SocketConnection"/> object returned depends on the type of
+the underlying socket that is in use. For instance, for a TCP/IP connection
+it will be a <link xref="Gio.TcpConnection"/>.</p>  <p>As <link xref="Gio.SocketClient"/> is a lightweight object, you don't need to cache it. You
+can just create a new one any time you need one.</p>
+  <p>Since 2.22</p>
+  <synopsis>
+    <title>Hierarchy</title>
+    <tree>
+      <item>
+        <code>GObject.Object</code>
+      <item>
+        <code>Gio.SocketClient</code>
+      </item>
+      </item>
+    </tree>
+  </synopsis>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="property" style="linklist">
+    <title>Properties</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="signal" style="linklist">
+    <title>Signals</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="vfunc" style="linklist">
+    <title>Virtual functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

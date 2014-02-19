@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.TlsDatabase-lookup_certificate_for_handle_finish"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.TlsDatabase" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.TlsDatabase::lookup_certificate_for_handle_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_lookup_certificate_for_handle_finish(result: Gio.AsyncResult): Gio.TlsCertificate {
+}
+  </code></synopsis>
+  <p>Finish an asynchronous lookup of a certificate by its handle. See
+g_tls_database_lookup_certificate_handle() for more information.</p>  <p>If the handle is no longer valid, or does not point to a certificate in
+this database, then <code>null</code> will be returned.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>a <link xref="Gio.AsyncResult"/>.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a newly allocated <link xref="Gio.TlsCertificate"/> object.
+Use <link xref="GObject.unref"/> to release the certificate.</p>
+</item>
+</terms>
+
+</page>

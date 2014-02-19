@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<page id="Gio.TaskThreadFunc"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Gio.TaskThreadFunc</title>
+  <synopsis><code mime="text/x-gjs">
+function onTaskThreadFunc(task: Gio.Task, source_object: GObject.Object, task_data: gpointer, cancellable: Gio.Cancellable): void {
+}
+  </code></synopsis>
+  <p>The prototype for a task function to be run in a thread via
+<link xref="Gio.run_in_thread"/> or <link xref="Gio.run_in_thread_sync"/>.</p>  <p>If the return-on-cancel flag is set on <code>task</code>, and <code>cancellable</code> gets
+cancelled, then the <link xref="Gio.Task"/> will be completed immediately (as though
+<link xref="Gio.Task.return_error_if_cancelled"/> had been called), without
+waiting for the task function to complete. However, the task
+function will continue running in its thread in the background. The
+function therefore needs to be careful about how it uses
+externally-visible state in this case. See
+<link xref="Gio.Task.set_return_on_cancel"/> for more details.</p>  <p>Other than in that case, <code>task</code> will be completed when the
+<link xref="Gio.TaskThreadFunc"/> returns, not when it calls a
+`g_task_return_` function.</p>
+  <p>Since 2.36</p>
+<terms>
+<item>
+<title><code>task</code></title>
+  <p>the <link xref="Gio.Task"/></p>
+</item>
+<item>
+<title><code>source_object</code></title>
+  <p><code>task</code>'s source object</p>
+</item>
+<item>
+<title><code>task_data</code></title>
+  <p><code>task</code>'s task data</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p><code>task</code>'s <link xref="Gio.Cancellable"/>, or <code>null</code></p>
+</item>
+</terms>
+
+</page>

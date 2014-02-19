@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="GLib.IOChannel.ref"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.IOChannel" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.IOChannel</api:type>
+      </api:returns>
+      <api:name>g_io_channel_ref</api:name>
+    </api:function>
+  </info>
+  <title>GLib.IOChannel.prototype.ref</title>
+  <synopsis><code mime="text/x-gjs">
+function ref(): GLib.IOChannel {
+    // Gjs wrapper for g_io_channel_ref()
+}
+  </code></synopsis>
+  <p>Increments the reference count of a <link xref="GLib.IOChannel"/>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<page id="Gio.AsyncInitable-init_async"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.AsyncInitable" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.AsyncInitable::init_async</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_init_async(io_priority: Number, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+}
+  </code></synopsis>
+  <p>Starts asynchronous initialization of the object implementing the
+interface. This must be done before any real use of the object after
+initial construction. If the object also implements <link xref="Gio.Initable"/> you can
+optionally call <link xref="Gio.init"/> instead.</p>  <p>When the initialization is finished, <code>callback</code> will be called. You can
+then call <link xref="Gio.AsyncInitable.init_finish"/> to get the result of the
+initialization.</p>  <p>Implementations may also support cancellation. If <code>cancellable</code> is not
+<code>null</code>, then initialization can be cancelled by triggering the cancellable
+object from another thread. If the operation was cancelled, the error
+<link xref="Gio.IOErrorEnum"/>.cancelled will be returned. If <code>cancellable</code> is not <code>null</code>, and
+the object doesn't support cancellable initialization, the error
+<link xref="Gio.IOErrorEnum"/>.not_supported will be returned.</p>  <p>As with <link xref="Gio.Initable"/>, if the object is not initialized, or initialization
+returns with an error, then all operations on the object except
+<link xref="GObject.ref"/> and <link xref="GObject.unref"/> are considered to be invalid, and
+have undefined behaviour. They will often fail with g_critical() or
+g_warning(), but this must not be relied on.</p>  <p>Implementations of this method must be idempotent: i.e. multiple calls
+to this function with the same argument should return the same results.
+Only the first call initializes the object; further calls return the result
+of the first call. This is so that it's safe to implement the singleton
+pattern in the GObject constructor function.</p>  <p>For classes that also support the <link xref="Gio.Initable"/> interface, the default
+implementation of this method will run the <link xref="Gio.init"/> function
+in a thread, so if you want to support asynchronous initialization via
+threads, just implement the <link xref="Gio.AsyncInitable"/> interface without overriding
+any interface methods.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>io_priority</code></title>
+  <p>the [I/O priority][io-priority] of the operation</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional <link xref="Gio.Cancellable"/> object, <code>null</code> to ignore.</p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>a <link xref="Gio.AsyncReadyCallback"/> to call when the request is satisfied</p>
+</item>
+</terms>
+
+</page>

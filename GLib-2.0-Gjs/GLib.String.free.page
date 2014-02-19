@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<page id="GLib.String.free"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.String" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_string_free</api:name>
+      <api:arg>
+        <api:type>Boolean</api:type>
+        <api:name>free_segment</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.String.prototype.free</title>
+  <synopsis><code mime="text/x-gjs">
+function free(free_segment: Boolean): String {
+    // Gjs wrapper for g_string_free()
+}
+  </code></synopsis>
+  <p>Frees the memory allocated for the <link xref="GLib.String"/>.
+If <code>free_segment</code> is <code>true</code> it also frees the character data.  If
+it's <code>false</code>, the caller gains ownership of the buffer and must
+free it after use with <link xref="GLib.free"/>.</p>
+
+<terms>
+<item>
+<title><code>free_segment</code></title>
+  <p>if <code>true</code>, the actual character data is freed as well</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

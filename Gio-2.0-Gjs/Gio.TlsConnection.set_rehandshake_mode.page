@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<page id="Gio.TlsConnection.set_rehandshake_mode"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.TlsConnection" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_tls_connection_set_rehandshake_mode</api:name>
+      <api:arg>
+        <api:type>Gio.TlsRehandshakeMode</api:type>
+        <api:name>mode</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.TlsConnection.prototype.set_rehandshake_mode</title>
+  <synopsis><code mime="text/x-gjs">
+function set_rehandshake_mode(mode: Gio.TlsRehandshakeMode): void {
+    // Gjs wrapper for g_tls_connection_set_rehandshake_mode()
+}
+  </code></synopsis>
+  <p>Sets how <code>conn</code> behaves with respect to rehandshaking requests.</p>  <p><link xref="Gio.TlsRehandshakeMode"/>.never means that it will never agree to
+rehandshake after the initial handshake is complete. (For a client,
+this means it will refuse rehandshake requests from the server, and
+for a server, this means it will close the connection with an error
+if the client attempts to rehandshake.)</p>  <p><link xref="Gio.TlsRehandshakeMode"/>.safely means that the connection will allow a
+rehandshake only if the other end of the connection supports the
+TLS `renegotiation_info` extension. This is the default behavior,
+but means that rehandshaking will not work against older
+implementations that do not support that extension.</p>  <p><link xref="Gio.TlsRehandshakeMode"/>.unsafely means that the connection will allow
+rehandshaking even without the `renegotiation_info` extension. On
+the server side in particular, this is not recommended, since it
+leaves the server open to certain attacks. However, this mode is
+necessary if you need to allow renegotiation with older client
+software.</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>mode</code></title>
+  <p>the rehandshaking mode</p>
+</item>
+</terms>
+
+</page>

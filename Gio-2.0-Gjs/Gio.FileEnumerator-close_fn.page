@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Gio.FileEnumerator-close_fn"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.FileEnumerator" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.FileEnumerator::close_fn</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_close_fn(cancellable: Gio.Cancellable): Boolean {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>cancellable</code></title>
+
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

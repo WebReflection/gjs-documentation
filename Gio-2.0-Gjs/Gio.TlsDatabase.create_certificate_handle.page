@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="Gio.TlsDatabase.create_certificate_handle"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.TlsDatabase" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_tls_database_create_certificate_handle</api:name>
+      <api:arg>
+        <api:type>Gio.TlsCertificate</api:type>
+        <api:name>certificate</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.TlsDatabase.prototype.create_certificate_handle</title>
+  <synopsis><code mime="text/x-gjs">
+function create_certificate_handle(certificate: Gio.TlsCertificate): String {
+    // Gjs wrapper for g_tls_database_create_certificate_handle()
+}
+  </code></synopsis>
+  <p>Create a handle string for the certificate. The database will only be able
+to create a handle for certificates that originate from the database. In
+cases where the database cannot create a handle for a certificate, <code>null</code>
+will be returned.</p>  <p>This handle should be stable across various instances of the application,
+and between applications. If a certificate is modified in the database,
+then it is not guaranteed that this handle will continue to point to it.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>certificate</code></title>
+  <p>certificate for which to create a handle.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

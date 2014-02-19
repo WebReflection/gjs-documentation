@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<page id="GLib.RecMutex"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>GLib.RecMutex</title>
+  <synopsis><code>
+const GLib = imports.gi.GLib;
+
+let recMutex = new GLib.RecMutex();
+  </code></synopsis>
+  <p>The GRecMutex struct is an opaque data structure to represent a
+recursive mutex. It is similar to a <link xref="GLib.Mutex"/> with the difference
+that it is possible to lock a GRecMutex multiple times in the same
+thread without deadlock. When doing so, care has to be taken to
+unlock the recursive mutex as often as it has been locked.</p>  <p>If a <link xref="GLib.RecMutex"/> is allocated in static storage then it can be used
+without initialisation.  Otherwise, you should call
+<link xref="GLib.init"/> on it and <link xref="GLib.clear"/> when done.</p>  <p>A GRecMutex should only be accessed with the
+g_rec_mutex_ functions.</p>
+  <p>Since 2.32</p>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

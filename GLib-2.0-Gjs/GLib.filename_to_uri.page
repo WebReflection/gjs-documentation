@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<page id="GLib.filename_to_uri"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_filename_to_uri</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>filename</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>hostname</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.filename_to_uri</title>
+  <synopsis><code mime="text/x-gjs">
+function filename_to_uri(filename: String, hostname: String): String {
+    // Gjs wrapper for g_filename_to_uri()
+}
+  </code></synopsis>
+  <p>Converts an absolute filename to an escaped ASCII-encoded URI, with the path
+component following Section 3.3. of RFC 2396.</p>
+
+<terms>
+<item>
+<title><code>filename</code></title>
+  <p>an absolute filename specified in the GLib file name encoding,
+           which is the on-disk file name bytes on Unix, and UTF-8 on
+           Windows</p>
+</item>
+<item>
+<title><code>hostname</code></title>
+  <p>A UTF-8 encoded hostname, or <code>null</code> for none.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

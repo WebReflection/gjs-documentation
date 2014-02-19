@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="Gio.Mount-get_volume"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Mount" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.Mount::get_volume</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_get_volume(): Gio.Volume {
+}
+  </code></synopsis>
+  <p>Gets the volume for the <code>mount</code>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link xref="Gio.Volume"/> or <code>null</code> if <code>mount</code> is not associated with a volume.
+     The returned object should be unreffed with
+     <link xref="GObject.unref"/> when no longer needed.</p>
+</item>
+</terms>
+
+</page>

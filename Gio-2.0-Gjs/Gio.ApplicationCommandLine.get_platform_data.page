@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="Gio.ApplicationCommandLine.get_platform_data"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.ApplicationCommandLine" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.Variant</api:type>
+      </api:returns>
+      <api:name>g_application_command_line_get_platform_data</api:name>
+    </api:function>
+  </info>
+  <title>Gio.ApplicationCommandLine.prototype.get_platform_data</title>
+  <synopsis><code mime="text/x-gjs">
+function get_platform_data(): GLib.Variant {
+    // Gjs wrapper for g_application_command_line_get_platform_data()
+}
+  </code></synopsis>
+  <p>Gets the platform data associated with the invocation of <code>cmdline</code>.</p>  <p>This is a <link xref="GLib.Variant"/> dictionary containing information about the
+context in which the invocation occurred.  It typically contains
+information like the current working directory and the startup
+notification ID.</p>  <p>For local invocation, it will be <code>null</code>.</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

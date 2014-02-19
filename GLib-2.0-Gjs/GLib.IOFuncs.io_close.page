@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="GLib.IOFuncs.io_close"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>GLib.IOFuncs.io_close</title>
+  <synopsis><code mime="text/x-gjs">
+function onio_close(channel: GLib.IOChannel): GLib.IOStatus {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>channel</code></title>
+
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

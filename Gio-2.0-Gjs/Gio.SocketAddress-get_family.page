@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page id="Gio.SocketAddress-get_family"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.SocketAddress" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.SocketAddress::get_family</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_get_family(): Gio.SocketFamily {
+}
+  </code></synopsis>
+  <p>Gets the socket family type of <code>address</code>.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the socket family type of <code>address</code></p>
+</item>
+</terms>
+
+</page>

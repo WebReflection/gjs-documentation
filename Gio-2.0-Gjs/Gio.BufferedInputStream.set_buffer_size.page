@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="Gio.BufferedInputStream.set_buffer_size"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.BufferedInputStream" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_buffered_input_stream_set_buffer_size</api:name>
+      <api:arg>
+        <api:type>gsize</api:type>
+        <api:name>size</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.BufferedInputStream.prototype.set_buffer_size</title>
+  <synopsis><code mime="text/x-gjs">
+function set_buffer_size(size: gsize): void {
+    // Gjs wrapper for g_buffered_input_stream_set_buffer_size()
+}
+  </code></synopsis>
+  <p>Sets the size of the internal buffer of <code>stream</code> to <code>size</code>, or to the
+size of the contents of the buffer. The buffer can never be resized
+smaller than its current contents.</p>
+
+<terms>
+<item>
+<title><code>size</code></title>
+  <p>a #gsize</p>
+</item>
+</terms>
+
+</page>

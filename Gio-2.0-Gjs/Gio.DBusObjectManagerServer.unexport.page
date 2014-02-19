@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusObjectManagerServer.unexport"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusObjectManagerServer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_dbus_object_manager_server_unexport</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>object_path</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DBusObjectManagerServer.prototype.unexport</title>
+  <synopsis><code mime="text/x-gjs">
+function unexport(object_path: String): Boolean {
+    // Gjs wrapper for g_dbus_object_manager_server_unexport()
+}
+  </code></synopsis>
+  <p>If <code>manager</code> has an object at @path, removes the object. Otherwise
+does nothing.</p>  <p>Note that <code>object_path</code> must be in the hierarchy rooted by the
+object path for <code>manager</code>.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>object_path</code></title>
+  <p>An object path.</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

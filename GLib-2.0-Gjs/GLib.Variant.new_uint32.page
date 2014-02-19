@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="GLib.Variant.new_uint32"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Variant" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.Variant</api:type>
+      </api:returns>
+      <api:name>g_variant_new_uint32</api:name>
+      <api:arg>
+        <api:type>guint32</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.Variant.new_uint32</title>
+  <synopsis><code mime="text/x-gjs">
+function new_uint32(value: guint32): GLib.Variant {
+    // Gjs wrapper for g_variant_new_uint32()
+}
+  </code></synopsis>
+  <p>Creates a new uint32 <link xref="GLib.Variant"/> instance.</p>
+  <p>Since 2.24</p>
+<terms>
+<item>
+<title><code>value</code></title>
+  <p>a #guint32 value</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

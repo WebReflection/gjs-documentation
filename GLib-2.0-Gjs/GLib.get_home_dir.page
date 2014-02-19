@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<page id="GLib.get_home_dir"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_get_home_dir</api:name>
+    </api:function>
+  </info>
+  <title>GLib.get_home_dir</title>
+  <synopsis><code mime="text/x-gjs">
+function get_home_dir(): String {
+    // Gjs wrapper for g_get_home_dir()
+}
+  </code></synopsis>
+  <p>Gets the current user's home directory.</p>  <p>As with most UNIX tools, this function will return the value of the
+`HOME` environment variable if it is set to an existing absolute path
+name, falling back to the `passwd` file in the case that it is unset.</p>  <p>If the path given in `HOME` is non-absolute, does not exist, or is
+not a directory, the result is undefined.</p>  <p>Before version 2.36 this function would ignore the `HOME` environment
+variable, taking the value from the `passwd` database instead. This was
+changed to increase the compatibility of GLib with other programs (and
+the XDG basedir specification) and to increase testability of programs
+based on GLib (by making it easier to run them from test frameworks).</p>  <p>If your program has a strong requirement for either the new or the
+old behaviour (and if you don't wish to increase your GLib
+dependency to ensure that the new behaviour is in effect) then you
+should either directly check the `HOME` environment variable yourself
+or unset it before calling any functions in GLib.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

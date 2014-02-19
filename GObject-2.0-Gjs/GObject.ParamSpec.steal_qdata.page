@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<page id="GObject.ParamSpec.steal_qdata"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.ParamSpec" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>gpointer</api:type>
+      </api:returns>
+      <api:name>g_param_spec_steal_qdata</api:name>
+      <api:arg>
+        <api:type>GLib.Quark</api:type>
+        <api:name>quark</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.ParamSpec.prototype.steal_qdata</title>
+  <synopsis><code mime="text/x-gjs">
+function steal_qdata(quark: GLib.Quark): gpointer {
+    // Gjs wrapper for g_param_spec_steal_qdata()
+}
+  </code></synopsis>
+  <p>Gets back user data pointers stored via <link xref="GObject.ParamSpec.set_qdata"/>
+and removes the @data from <code>pspec</code> without invoking its destroy()
+function (if any was set).  Usually, calling this function is only
+required to update user data pointers with a destroy notifier.</p>
+
+<terms>
+<item>
+<title><code>quark</code></title>
+  <p>a <link xref="GLib.Quark"/>, naming the user data pointer</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

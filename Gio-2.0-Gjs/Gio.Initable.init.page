@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<page id="Gio.Initable.init"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Initable" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_initable_init</api:name>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.Initable.prototype.init</title>
+  <synopsis><code mime="text/x-gjs">
+function init(cancellable: Gio.Cancellable): Boolean {
+    // Gjs wrapper for g_initable_init()
+}
+  </code></synopsis>
+  <p>Initializes the object implementing the interface.</p>  <p>The object must be initialized before any real use after initial
+construction, either with this function or <link xref="Gio.AsyncInitable.init_async"/>.</p>  <p>Implementations may also support cancellation. If <code>cancellable</code> is not <code>null</code>,
+then initialization can be cancelled by triggering the cancellable object
+from another thread. If the operation was cancelled, the error
+<link xref="Gio.IOErrorEnum"/>.cancelled will be returned. If <code>cancellable</code> is not <code>null</code> and
+the object doesn't support cancellable initialization the error
+<link xref="Gio.IOErrorEnum"/>.not_supported will be returned.</p>  <p>If the object is not initialized, or initialization returns with an
+error, then all operations on the object except <link xref="GObject.ref"/> and
+<link xref="GObject.unref"/> are considered to be invalid, and have undefined
+behaviour. See the [introduction][ginitable] for more details.</p>  <p>Implementations of this method must be idempotent, i.e. multiple calls
+to this function with the same argument should return the same results.
+Only the first call initializes the object, further calls return the result
+of the first call. This is so that it's safe to implement the singleton
+pattern in the GObject constructor function.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional <link xref="Gio.Cancellable"/> object, <code>null</code> to ignore.</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

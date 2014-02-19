@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<page id="Gio.io_modules_scan_all_in_directory_with_scope"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_io_modules_scan_all_in_directory_with_scope</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>dirname</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.IOModuleScope</api:type>
+        <api:name>scope</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.io_modules_scan_all_in_directory_with_scope</title>
+  <synopsis><code mime="text/x-gjs">
+function io_modules_scan_all_in_directory_with_scope(dirname: String, scope: Gio.IOModuleScope): void {
+    // Gjs wrapper for g_io_modules_scan_all_in_directory_with_scope()
+}
+  </code></synopsis>
+  <p>Scans all the modules in the specified directory, ensuring that
+any extension point implemented by a module is registered.</p>  <p>This may not actually load and initialize all the types in each
+module, some modules may be lazily loaded and initialized when
+an extension point it implementes is used with e.g.
+<link xref="Gio.get_extensions"/> or
+<link xref="Gio.get_extension_by_name"/>.</p>  <p>If you need to guarantee that all types are loaded in all the modules,
+use <link xref="Gio.io_modules_load_all_in_directory"/>.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>dirname</code></title>
+  <p>pathname for a directory containing modules to scan.</p>
+</item>
+<item>
+<title><code>scope</code></title>
+  <p>a scope to use when scanning the modules</p>
+</item>
+</terms>
+
+</page>

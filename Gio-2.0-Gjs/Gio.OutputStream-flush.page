@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gio.OutputStream-flush"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.OutputStream" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.OutputStream::flush</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_flush(cancellable: Gio.Cancellable): Boolean {
+}
+  </code></synopsis>
+  <p>Forces a write of all user-space buffered data for the given
+<code>stream</code>. Will block during the operation. Closing the stream will
+implicitly cause a flush.</p>  <p>This function is optional for inherited classes.</p>  <p>If <code>cancellable</code> is not <code>null</code>, then the operation can be cancelled by
+triggering the cancellable object from another thread. If the operation
+was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be returned.</p>
+
+<terms>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional cancellable object</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> on success, <code>false</code> on error</p>
+</item>
+</terms>
+
+</page>

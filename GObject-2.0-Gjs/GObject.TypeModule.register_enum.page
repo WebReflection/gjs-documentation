@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<page id="GObject.TypeModule.register_enum"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.TypeModule" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GType</api:type>
+      </api:returns>
+      <api:name>g_type_module_register_enum</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.EnumValue</api:type>
+        <api:name>const_static_values</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.TypeModule.prototype.register_enum</title>
+  <synopsis><code mime="text/x-gjs">
+function register_enum(name: String, const_static_values: GObject.EnumValue): GType {
+    // Gjs wrapper for g_type_module_register_enum()
+}
+  </code></synopsis>
+  <p>Looks up or registers an enumeration that is implemented with a particular
+type plugin. If a type with name @type_name was previously registered,
+the <link xref="GLib.Type"/> identifier for the type is returned, otherwise the type
+is newly registered, and the resulting <link xref="GLib.Type"/> identifier returned.</p>  <p>As long as any instances of the type exist, the type plugin will
+not be unloaded.</p>
+  <p>Since 2.6</p>
+<terms>
+<item>
+<title><code>name</code></title>
+  <p>name for the type</p>
+</item>
+<item>
+<title><code>const_static_values</code></title>
+  <p>an array of <link xref="GObject.EnumValue"/> structs for the
+                      possible enumeration values. The array is
+                      terminated by a struct with all members being
+                      0.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

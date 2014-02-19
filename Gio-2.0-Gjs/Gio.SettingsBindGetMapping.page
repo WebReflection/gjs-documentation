@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="Gio.SettingsBindGetMapping"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Gio.SettingsBindGetMapping</title>
+  <synopsis><code mime="text/x-gjs">
+function onSettingsBindGetMapping(value: GObject.Value, variant: GLib.Variant): Boolean {
+}
+  </code></synopsis>
+  <p>The type for the function that is used to convert from <link xref="Gio.Settings"/> to
+an object property. The <code>value</code> is already initialized to hold values
+of the appropriate type.</p>
+
+<terms>
+<item>
+<title><code>value</code></title>
+  <p>return location for the property value</p>
+</item>
+<item>
+<title><code>variant</code></title>
+  <p>the <link xref="GLib.Variant"/></p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

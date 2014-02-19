@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="Gio.Application.release"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Application" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_application_release</api:name>
+    </api:function>
+  </info>
+  <title>Gio.Application.prototype.release</title>
+  <synopsis><code mime="text/x-gjs">
+function release(): void {
+    // Gjs wrapper for g_application_release()
+}
+  </code></synopsis>
+  <p>Decrease the use count of <code>application</code>.</p>  <p>When the use count reaches zero, the application will stop running.</p>  <p>Never call this function except to cancel the effect of a previous
+call to <link xref="Gio.Application.hold"/>.</p>
+
+
+</page>

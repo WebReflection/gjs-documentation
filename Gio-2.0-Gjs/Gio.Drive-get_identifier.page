@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<page id="Gio.Drive-get_identifier"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Drive" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.Drive::get_identifier</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_get_identifier(kind: String): String {
+}
+  </code></synopsis>
+  <p>Gets the identifier of the given kind for <code>drive</code>.</p>
+
+<terms>
+<item>
+<title><code>kind</code></title>
+  <p>the kind of identifier to return</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a newly allocated string containing the
+    requested identfier, or <code>null</code> if the <link xref="Gio.Drive"/>
+    doesn't have this kind of identifier.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="GLib.Source.set_ready_time"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Source" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_source_set_ready_time</api:name>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>ready_time</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.Source.prototype.set_ready_time</title>
+  <synopsis><code mime="text/x-gjs">
+function set_ready_time(ready_time: Number): void {
+    // Gjs wrapper for g_source_set_ready_time()
+}
+  </code></synopsis>
+  <p>Sets a <link xref="GLib.Source"/> to be dispatched when the given monotonic time is
+reached (or passed).  If the monotonic time is in the past (as it
+always will be if <code>ready_time</code> is 0) then the source will be
+dispatched immediately.</p>  <p>If <code>ready_time</code> is -1 then the source is never woken up on the basis
+of the passage of time.</p>  <p>Dispatching the source does not reset the ready time.  You should do
+so yourself, from the source dispatch function.</p>  <p>Note that if you have a pair of sources where the ready time of one
+suggests that it will be delivered first but the priority for the
+other suggests that it would be delivered first, and the ready time
+for both sources is reached during the same main context iteration
+then the order of dispatch is undefined.</p>
+  <p>Since 2.36</p>
+<terms>
+<item>
+<title><code>ready_time</code></title>
+  <p>the monotonic time at which the source will be ready,
+             0 for "immediately", -1 for "never"</p>
+</item>
+</terms>
+
+</page>

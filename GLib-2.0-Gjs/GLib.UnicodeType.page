@@ -1,0 +1,139 @@
+<?xml version="1.0"?>
+<page id="GLib.UnicodeType"
+      type="topic"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>GLib.UnicodeType</title>
+  <p>These are the possible character classifications from the
+Unicode specification.
+See &lt;ulink url="http://www.unicode.org/Public/UNIDATA/UnicodeData.html"&gt;http://www.unicode.org/Public/UNIDATA/UnicodeData.html&lt;/ulink&gt;.</p>
+
+<terms>
+<item>
+<title><code>UnicodeType.CONTROL</code></title>
+  <p>General category "Other, Control" (Cc)</p>
+</item>
+<item>
+<title><code>UnicodeType.FORMAT</code></title>
+  <p>General category "Other, Format" (Cf)</p>
+</item>
+<item>
+<title><code>UnicodeType.UNASSIGNED</code></title>
+  <p>General category "Other, Not Assigned" (Cn)</p>
+</item>
+<item>
+<title><code>UnicodeType.PRIVATE_USE</code></title>
+  <p>General category "Other, Private Use" (Co)</p>
+</item>
+<item>
+<title><code>UnicodeType.SURROGATE</code></title>
+  <p>General category "Other, Surrogate" (Cs)</p>
+</item>
+<item>
+<title><code>UnicodeType.LOWERCASE_LETTER</code></title>
+  <p>General category "Letter, Lowercase" (Ll)</p>
+</item>
+<item>
+<title><code>UnicodeType.MODIFIER_LETTER</code></title>
+  <p>General category "Letter, Modifier" (Lm)</p>
+</item>
+<item>
+<title><code>UnicodeType.OTHER_LETTER</code></title>
+  <p>General category "Letter, Other" (Lo)</p>
+</item>
+<item>
+<title><code>UnicodeType.TITLECASE_LETTER</code></title>
+  <p>General category "Letter, Titlecase" (Lt)</p>
+</item>
+<item>
+<title><code>UnicodeType.UPPERCASE_LETTER</code></title>
+  <p>General category "Letter, Uppercase" (Lu)</p>
+</item>
+<item>
+<title><code>UnicodeType.SPACING_MARK</code></title>
+  <p>General category "Mark, Spacing" (Mc)</p>
+</item>
+<item>
+<title><code>UnicodeType.ENCLOSING_MARK</code></title>
+  <p>General category "Mark, Enclosing" (Me)</p>
+</item>
+<item>
+<title><code>UnicodeType.NON_SPACING_MARK</code></title>
+  <p>General category "Mark, Nonspacing" (Mn)</p>
+</item>
+<item>
+<title><code>UnicodeType.DECIMAL_NUMBER</code></title>
+  <p>General category "Number, Decimal Digit" (Nd)</p>
+</item>
+<item>
+<title><code>UnicodeType.LETTER_NUMBER</code></title>
+  <p>General category "Number, Letter" (Nl)</p>
+</item>
+<item>
+<title><code>UnicodeType.OTHER_NUMBER</code></title>
+  <p>General category "Number, Other" (No)</p>
+</item>
+<item>
+<title><code>UnicodeType.CONNECT_PUNCTUATION</code></title>
+  <p>General category "Punctuation, Connector" (Pc)</p>
+</item>
+<item>
+<title><code>UnicodeType.DASH_PUNCTUATION</code></title>
+  <p>General category "Punctuation, Dash" (Pd)</p>
+</item>
+<item>
+<title><code>UnicodeType.CLOSE_PUNCTUATION</code></title>
+  <p>General category "Punctuation, Close" (Pe)</p>
+</item>
+<item>
+<title><code>UnicodeType.FINAL_PUNCTUATION</code></title>
+  <p>General category "Punctuation, Final quote" (Pf)</p>
+</item>
+<item>
+<title><code>UnicodeType.INITIAL_PUNCTUATION</code></title>
+  <p>General category "Punctuation, Initial quote" (Pi)</p>
+</item>
+<item>
+<title><code>UnicodeType.OTHER_PUNCTUATION</code></title>
+  <p>General category "Punctuation, Other" (Po)</p>
+</item>
+<item>
+<title><code>UnicodeType.OPEN_PUNCTUATION</code></title>
+  <p>General category "Punctuation, Open" (Ps)</p>
+</item>
+<item>
+<title><code>UnicodeType.CURRENCY_SYMBOL</code></title>
+  <p>General category "Symbol, Currency" (Sc)</p>
+</item>
+<item>
+<title><code>UnicodeType.MODIFIER_SYMBOL</code></title>
+  <p>General category "Symbol, Modifier" (Sk)</p>
+</item>
+<item>
+<title><code>UnicodeType.MATH_SYMBOL</code></title>
+  <p>General category "Symbol, Math" (Sm)</p>
+</item>
+<item>
+<title><code>UnicodeType.OTHER_SYMBOL</code></title>
+  <p>General category "Symbol, Other" (So)</p>
+</item>
+<item>
+<title><code>UnicodeType.LINE_SEPARATOR</code></title>
+  <p>General category "Separator, Line" (Zl)</p>
+</item>
+<item>
+<title><code>UnicodeType.PARAGRAPH_SEPARATOR</code></title>
+  <p>General category "Separator, Paragraph" (Zp)</p>
+</item>
+<item>
+<title><code>UnicodeType.SPACE_SEPARATOR</code></title>
+  <p>General category "Separator, Space" (Zs)</p>
+</item>
+</terms>
+
+</page>

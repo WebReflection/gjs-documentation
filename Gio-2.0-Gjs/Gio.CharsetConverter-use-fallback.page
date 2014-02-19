@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.CharsetConverter-use-fallback"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.CharsetConverter" group="property" type="guide"/>
+    <title type="link" role="topic">use-fallback</title>
+  </info>
+  <title>Gio.CharsetConverter.use_fallback</title>
+  <synopsis><code mime="text/x-gjs">
+CharsetConverter.use_fallback: Boolean (Read / Write / Construct)
+  </code></synopsis>
+
+
+</page>

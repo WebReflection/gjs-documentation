@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<page id="GObject.Closure.new_simple"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.Closure" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GObject.Closure</api:type>
+      </api:returns>
+      <api:name>g_closure_new_simple</api:name>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>sizeof_closure</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>data</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.Closure.new_simple</title>
+  <synopsis><code mime="text/x-gjs">
+function new_simple(sizeof_closure: Number, data: gpointer): GObject.Closure {
+    // Gjs wrapper for g_closure_new_simple()
+}
+  </code></synopsis>
+  <p>Allocates a struct of the given size and initializes the initial
+part as a <link xref="GObject.Closure"/>. This function is mainly useful when
+implementing new types of closures.</p>  <p>|[&lt;!-- language="C" --&gt;
+typedef struct _MyClosure MyClosure;
+struct _MyClosure
+{
+  GClosure closure;
+  // extra data goes here
+};</p>  <p>static void
+my_closure_finalize (gpointer  notify_data,
+                     GClosure *closure)
+{
+  MyClosure *my_closure = (MyClosure *)closure;</p>  <p>  // free extra data here
+}</p>  <p>MyClosure *my_closure_new (gpointer data)
+{
+  GClosure *closure;
+  MyClosure *my_closure;</p>  <p>  closure = g_closure_new_simple (sizeof (MyClosure), data);
+  my_closure = (MyClosure *) closure;</p>  <p>  // initialize extra data here</p>  <p>  g_closure_add_finalize_notifier (closure, notify_data,
+                                   my_closure_finalize);
+  return my_closure;
+}
+]|</p>
+
+<terms>
+<item>
+<title><code>sizeof_closure</code></title>
+  <p>the size of the structure to allocate, must be at least
+                 `sizeof (GClosure)`</p>
+</item>
+<item>
+<title><code>data</code></title>
+  <p>data to store in the <code>data</code> field of the newly allocated <link xref="GObject.Closure"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

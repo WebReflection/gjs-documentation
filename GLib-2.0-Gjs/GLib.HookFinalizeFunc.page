@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<page id="GLib.HookFinalizeFunc"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>GLib.HookFinalizeFunc</title>
+  <synopsis><code mime="text/x-gjs">
+function onHookFinalizeFunc(hook_list: GLib.HookList, hook: GLib.Hook): void {
+}
+  </code></synopsis>
+  <p>Defines the type of function to be called when a hook in a
+list of hooks gets finalized.</p>
+
+<terms>
+<item>
+<title><code>hook_list</code></title>
+  <p>a <link xref="GLib.HookList"/></p>
+</item>
+<item>
+<title><code>hook</code></title>
+  <p>the hook in <code>hook_list</code> that gets finalized</p>
+</item>
+</terms>
+
+</page>

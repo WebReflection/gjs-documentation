@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="GLib.Date.valid_julian"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Date" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_date_valid_julian</api:name>
+      <api:arg>
+        <api:type>guint32</api:type>
+        <api:name>julian_date</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.Date.valid_julian</title>
+  <synopsis><code mime="text/x-gjs">
+function valid_julian(julian_date: guint32): Boolean {
+    // Gjs wrapper for g_date_valid_julian()
+}
+  </code></synopsis>
+  <p>Returns <code>true</code> if the Julian day is valid. Anything greater than zero
+is basically a valid Julian, though there is a 32-bit limit.</p>
+
+<terms>
+<item>
+<title><code>julian_date</code></title>
+  <p>Julian day to check</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

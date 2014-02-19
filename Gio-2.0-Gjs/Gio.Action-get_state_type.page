@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.Action-get_state_type"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Action" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.Action::get_state_type</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_get_state_type(): GLib.VariantType {
+}
+  </code></synopsis>
+  <p>Queries the type of the state of <code>action</code>.</p>  <p>If the action is stateful (e.g. created with
+<link xref="Gio.new_stateful"/>) then this function returns the
+<link xref="GLib.VariantType"/> of the state.  This is the type of the initial value
+given as the state. All calls to <link xref="Gio.Action.change_state"/> must give a
+<link xref="GLib.Variant"/> of this type and <link xref="Gio.Action.get_state"/> will return a
+<link xref="GLib.Variant"/> of the same type.</p>  <p>If the action is not stateful (e.g. created with <link xref="Gio.new"/>)
+then this function will return <code>null</code>. In that case, <link xref="Gio.Action.get_state"/>
+will return <code>null</code> and you must not call <link xref="Gio.Action.change_state"/>.</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the state type, if the action is stateful</p>
+</item>
+</terms>
+
+</page>

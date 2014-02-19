@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="GObject.TypePluginCompleteTypeInfo"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>GObject.TypePluginCompleteTypeInfo</title>
+  <synopsis><code mime="text/x-gjs">
+function onTypePluginCompleteTypeInfo(plugin: GObject.TypePlugin, g_type: GType, info: GObject.TypeInfo, value_table: GObject.TypeValueTable): void {
+}
+  </code></synopsis>
+  <p>The type of the @complete_type_info function of <link xref="GObject.TypePluginClass"/>.</p>
+
+<terms>
+<item>
+<title><code>plugin</code></title>
+  <p>the <link xref="GObject.TypePlugin"/></p>
+</item>
+<item>
+<title><code>g_type</code></title>
+  <p>the <link xref="GLib.Type"/> whose info is completed</p>
+</item>
+<item>
+<title><code>info</code></title>
+  <p>the <link xref="GObject.TypeInfo"/> struct to fill in</p>
+</item>
+<item>
+<title><code>value_table</code></title>
+  <p>the <link xref="GObject.TypeValueTable"/> to fill in</p>
+</item>
+</terms>
+
+</page>

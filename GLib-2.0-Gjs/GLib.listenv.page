@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="GLib.listenv"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(String)</api:type>
+      </api:returns>
+      <api:name>g_listenv</api:name>
+    </api:function>
+  </info>
+  <title>GLib.listenv</title>
+  <synopsis><code mime="text/x-gjs">
+function listenv(): Array(String) {
+    // Gjs wrapper for g_listenv()
+}
+  </code></synopsis>
+  <p>Gets the names of all variables set in the environment.</p>  <p>Programs that want to be portable to Windows should typically use
+this function and <link xref="GLib.getenv"/> instead of using the environ array
+from the C library directly. On Windows, the strings in the environ
+array are in system codepage encoding, while in most of the typical
+use cases for environment variables in GLib-using programs you want
+the UTF-8 encoding that this function and <link xref="GLib.getenv"/> provide.</p>
+  <p>Since 2.8</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

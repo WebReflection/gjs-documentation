@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="GLib.TimeVal-tv_sec"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.TimeVal" group="field" type="guide"/>
+    <title type="link" role="topic">tv_sec</title>
+  </info>
+  <title>GLib.TimeVal.tv_sec</title>
+  <synopsis><code mime="text/x-gjs">
+TimeVal.tv_sec: Number (Read / Write)
+  </code></synopsis>
+  <p>seconds</p>
+
+</page>

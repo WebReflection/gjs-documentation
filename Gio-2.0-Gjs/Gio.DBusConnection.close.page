@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusConnection.close"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusConnection" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_dbus_connection_close</api:name>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.AsyncReadyCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DBusConnection.prototype.close</title>
+  <synopsis><code mime="text/x-gjs">
+function close(cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+    // Gjs wrapper for g_dbus_connection_close()
+}
+  </code></synopsis>
+  <p>Closes <code>connection</code>. Note that this never causes the process to
+exit (this might only happen if the other end of a shared message
+bus connection disconnects, see <link xref="Gio.exit-on-close"/>).</p>  <p>Once the connection is closed, operations such as sending a message
+will return with the error <link xref="Gio.IOErrorEnum"/>.closed. Closing a connection
+will not automatically flush the connection so queued messages may
+be lost. Use <link xref="Gio.flush"/> if you need such guarantees.</p>  <p>If <code>connection</code> is already closed, this method fails with
+<link xref="Gio.IOErrorEnum"/>.closed.</p>  <p>When <code>connection</code> has been closed, the <link xref="Gio.closed"/>
+signal is emitted in the
+[thread-default main context][g-main-context-push-thread-default]
+of the thread that <code>connection</code> was constructed in.</p>  <p>This is an asynchronous method. When the operation is finished,
+<code>callback</code> will be invoked in the
+[thread-default main context][g-main-context-push-thread-default]
+of the thread you are calling this method from. You can
+then call <link xref="Gio.close_finish"/> to get the result of the
+operation. See <link xref="Gio.close_sync"/> for the synchronous
+version.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>cancellable</code></title>
+  <p>a <link xref="Gio.Cancellable"/> or <code>null</code></p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>a <link xref="Gio.AsyncReadyCallback"/> to call when the request is
+    satisfied or <code>null</code> if you don't care about the result</p>
+</item>
+</terms>
+
+</page>

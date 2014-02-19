@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="GLib.TestLogMsg-log_type"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.TestLogMsg" group="field" type="guide"/>
+    <title type="link" role="topic">log_type</title>
+  </info>
+  <title>GLib.TestLogMsg.log_type</title>
+  <synopsis><code mime="text/x-gjs">
+TestLogMsg.log_type: GLib.TestLogType (Read / Write)
+  </code></synopsis>
+
+
+</page>

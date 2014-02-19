@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusInterfaceInfo.lookup_method"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusInterfaceInfo" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.DBusMethodInfo</api:type>
+      </api:returns>
+      <api:name>g_dbus_interface_info_lookup_method</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DBusInterfaceInfo.prototype.lookup_method</title>
+  <synopsis><code mime="text/x-gjs">
+function lookup_method(name: String): Gio.DBusMethodInfo {
+    // Gjs wrapper for g_dbus_interface_info_lookup_method()
+}
+  </code></synopsis>
+  <p>Looks up information about a method.</p>  <p>The cost of this function is O(n) in number of methods unless
+<link xref="Gio.DBusInterfaceInfo.cache_build"/> has been used on <code>info</code>.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>name</code></title>
+  <p>A D-Bus method name (typically in CamelCase)</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

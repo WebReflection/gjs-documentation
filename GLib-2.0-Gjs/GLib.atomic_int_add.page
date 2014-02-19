@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<page id="GLib.atomic_int_add"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number</api:type>
+      </api:returns>
+      <api:name>g_atomic_int_add</api:name>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>atomic</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>val</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.atomic_int_add</title>
+  <synopsis><code mime="text/x-gjs">
+function atomic_int_add(atomic: Number, val: Number): Number {
+    // Gjs wrapper for g_atomic_int_add()
+}
+  </code></synopsis>
+  <p>Atomically adds <code>val</code> to the value of <code>atomic</code>.</p>  <p>Think of this operation as an atomic version of
+`{ tmp = *atomic; *atomic += val; return tmp; }`.</p>  <p>This call acts as a full compiler and hardware memory barrier.</p>  <p>Before version 2.30, this function did not return a value
+(but <link xref="GLib.atomic_int_exchange_and_add"/> did, and had the same meaning).</p>
+  <p>Since 2.4</p>
+<terms>
+<item>
+<title><code>atomic</code></title>
+  <p>a pointer to a #gint or #guint</p>
+</item>
+<item>
+<title><code>val</code></title>
+  <p>the value to add</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

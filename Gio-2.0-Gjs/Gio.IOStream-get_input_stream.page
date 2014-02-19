@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="Gio.IOStream-get_input_stream"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.IOStream" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.IOStream::get_input_stream</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_get_input_stream(): Gio.InputStream {
+}
+  </code></synopsis>
+  <p>Gets the input stream for this object. This is used
+for reading.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link xref="Gio.InputStream"/>, owned by the <link xref="Gio.IOStream"/>.
+Do not free.</p>
+</item>
+</terms>
+
+</page>

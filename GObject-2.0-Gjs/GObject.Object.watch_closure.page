@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="GObject.Object.watch_closure"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.Object" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_object_watch_closure</api:name>
+      <api:arg>
+        <api:type>GObject.Closure</api:type>
+        <api:name>closure</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.Object.prototype.watch_closure</title>
+  <synopsis><code mime="text/x-gjs">
+function watch_closure(closure: GObject.Closure): void {
+    // Gjs wrapper for g_object_watch_closure()
+}
+  </code></synopsis>
+  <p>This function essentially limits the life time of the <code>closure</code> to
+the life time of the object. That is, when the object is finalized,
+the <code>closure</code> is invalidated by calling <link xref="GObject.Closure.invalidate"/> on
+it, in order to prevent invocations of the closure with a finalized
+(nonexisting) object. Also, <link xref="GObject.Object.ref"/> and <link xref="GObject.Object.unref"/> are
+added as marshal guards to the <code>closure</code>, to ensure that an extra
+reference count is held on <code>object</code> during invocation of the
+<code>closure</code>.  Usually, this function will be called on closures that
+use this <code>object</code> as closure data.</p>
+
+<terms>
+<item>
+<title><code>closure</code></title>
+  <p>GClosure to watch</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusConnection.set_exit_on_close"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusConnection" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_dbus_connection_set_exit_on_close</api:name>
+      <api:arg>
+        <api:type>Boolean</api:type>
+        <api:name>exit_on_close</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DBusConnection.prototype.set_exit_on_close</title>
+  <synopsis><code mime="text/x-gjs">
+function set_exit_on_close(exit_on_close: Boolean): void {
+    // Gjs wrapper for g_dbus_connection_set_exit_on_close()
+}
+  </code></synopsis>
+  <p>Sets whether the process should be terminated when <code>connection</code> is
+closed by the remote peer. See <link xref="Gio.exit-on-close"/> for
+more details.</p>  <p>Note that this function should be used with care. Most modern UNIX
+desktops tie the notion of a user session the session bus, and expect
+all of a users applications to quit when their bus connection goes away.
+If you are setting <code>exit_on_close</code> to <code>false</code> for the shared session
+bus connection, you should make sure that your application exits
+when the user session ends.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>exit_on_close</code></title>
+  <p>whether the process should be terminated
+    when <code>connection</code> is closed by the remote peer</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<page id="GObject.type_next_base"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GType</api:type>
+      </api:returns>
+      <api:name>g_type_next_base</api:name>
+      <api:arg>
+        <api:type>GType</api:type>
+        <api:name>leaf_type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GType</api:type>
+        <api:name>root_type</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.type_next_base</title>
+  <synopsis><code mime="text/x-gjs">
+function type_next_base(leaf_type: GType, root_type: GType): GType {
+    // Gjs wrapper for g_type_next_base()
+}
+  </code></synopsis>
+  <p>Given a <code>leaf_type</code> and a <code>root_type</code> which is contained in its
+anchestry, return the type that <code>root_type</code> is the immediate parent
+of. In other words, this function determines the type that is
+derived directly from <code>root_type</code> which is also a base class of
+<code>leaf_type</code>.  Given a root type and a leaf type, this function can
+be used to determine the types and order in which the leaf type is
+descended from the root type.</p>
+
+<terms>
+<item>
+<title><code>leaf_type</code></title>
+  <p>descendant of <code>root_type</code> and the type to be returned</p>
+</item>
+<item>
+<title><code>root_type</code></title>
+  <p>immediate parent of the returned type</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

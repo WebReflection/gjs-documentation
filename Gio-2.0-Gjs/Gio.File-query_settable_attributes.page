@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gio.File-query_settable_attributes"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.File" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.File::query_settable_attributes</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_query_settable_attributes(cancellable: Gio.Cancellable): Gio.FileAttributeInfoList {
+}
+  </code></synopsis>
+  <p>Obtain the list of settable attributes for the file.</p>  <p>Returns the type and full attribute name of all the attributes
+that can be set on this file. This doesn't mean setting it will
+always succeed though, you might get an access failure, or some
+specific file may not support a specific attribute.</p>  <p>If <code>cancellable</code> is not <code>null</code>, then the operation can be cancelled by
+triggering the cancellable object from another thread. If the operation
+was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be returned.</p>
+
+<terms>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional <link xref="Gio.Cancellable"/> object,
+    <code>null</code> to ignore</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link xref="Gio.FileAttributeInfoList"/> describing the settable attributes.
+    When you are done with it, release it with
+    <link xref="Gio.unref"/></p>
+</item>
+</terms>
+
+</page>

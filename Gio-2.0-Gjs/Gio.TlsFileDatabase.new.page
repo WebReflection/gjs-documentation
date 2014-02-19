@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gio.TlsFileDatabase.new"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.TlsFileDatabase" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.TlsFileDatabase</api:type>
+      </api:returns>
+      <api:name>g_tls_file_database_new</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>anchors</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.TlsFileDatabase.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(anchors: String): Gio.TlsFileDatabase {
+    // Gjs wrapper for g_tls_file_database_new()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="Gio.TlsFileDatabase"/> which uses anchor certificate authorities
+in <code>anchors</code> to verify certificate chains.</p>  <p>The certificates in <code>anchors</code> must be PEM encoded.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>anchors</code></title>
+  <p>filename of anchor certificate authorities.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

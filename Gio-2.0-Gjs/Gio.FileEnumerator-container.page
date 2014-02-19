@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.FileEnumerator-container"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.FileEnumerator" group="property" type="guide"/>
+    <title type="link" role="topic">container</title>
+  </info>
+  <title>Gio.FileEnumerator.container</title>
+  <synopsis><code mime="text/x-gjs">
+FileEnumerator.container: Gio.File (Write / Construct Only)
+  </code></synopsis>
+
+
+</page>

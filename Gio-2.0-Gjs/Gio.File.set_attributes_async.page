@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<page id="Gio.File.set_attributes_async"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.File" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_file_set_attributes_async</api:name>
+      <api:arg>
+        <api:type>Gio.FileInfo</api:type>
+        <api:name>info</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.FileQueryInfoFlags</api:type>
+        <api:name>flags</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>io_priority</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.AsyncReadyCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.File.prototype.set_attributes_async</title>
+  <synopsis><code mime="text/x-gjs">
+function set_attributes_async(info: Gio.FileInfo, flags: Gio.FileQueryInfoFlags, io_priority: Number, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+    // Gjs wrapper for g_file_set_attributes_async()
+}
+  </code></synopsis>
+  <p>Asynchronously sets the attributes of <code>file</code> with <code>info</code>.</p>  <p>For more details, see <link xref="Gio.set_attributes_from_info"/>,
+which is the synchronous version of this call.</p>  <p>When the operation is finished, <code>callback</code> will be called.
+You can then call <link xref="Gio.set_attributes_finish"/> to get
+the result of the operation.</p>
+
+<terms>
+<item>
+<title><code>info</code></title>
+  <p>a <link xref="Gio.FileInfo"/></p>
+</item>
+<item>
+<title><code>flags</code></title>
+  <p>a <link xref="Gio.FileQueryInfoFlags"/></p>
+</item>
+<item>
+<title><code>io_priority</code></title>
+  <p>the [I/O priority][io-priority] of the request</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional <link xref="Gio.Cancellable"/> object,
+    <code>null</code> to ignore</p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>a <link xref="Gio.AsyncReadyCallback"/></p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Gio.FILE_ATTRIBUTE_ETAG_VALUE"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>Gio.FILE_ATTRIBUTE_ETAG_VALUE</title>
+  <p>A key in the "etag" namespace for getting the value of the file's
+entity tag. Corresponding <link xref="Gio.FileAttributeType"/> is
+<link xref="Gio.FileAttributeType"/>.string.</p>
+
+</page>

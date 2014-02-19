@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Gio.Application-command_line"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Application" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.Application::command_line</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_command_line(command_line: Gio.ApplicationCommandLine): Number {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>command_line</code></title>
+
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

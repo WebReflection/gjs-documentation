@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<page id="GLib.Mutex.unlock"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Mutex" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_mutex_unlock</api:name>
+    </api:function>
+  </info>
+  <title>GLib.Mutex.prototype.unlock</title>
+  <synopsis><code mime="text/x-gjs">
+function unlock(): void {
+    // Gjs wrapper for g_mutex_unlock()
+}
+  </code></synopsis>
+  <p>Unlocks <code>mutex</code>. If another thread is blocked in a <link xref="GLib.Mutex.lock"/>
+call for <code>mutex</code>, it will become unblocked and can lock <code>mutex</code> itself.</p>  <p>Calling <link xref="GLib.Mutex.unlock"/> on a mutex that is not locked by the
+current thread leads to undefined behaviour.</p>
+
+
+</page>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page id="GLib.Time"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>GLib.Time</title>
+  <p>Simply a replacement for time_t. It has been deprecated
+since it is not equivalent to time_t on 64-bit platforms
+with a 64-bit time_t. Unrelated to <link xref="GLib.Timer"/>.</p>  <p>Note that <link xref="GLib.Time"/> is defined to always be a 32-bit integer,
+unlike time_t which may be 64-bit on some systems. Therefore,
+<link xref="GLib.Time"/> will overflow in the year 2038, and you cannot use the
+address of a <link xref="GLib.Time"/> variable as argument to the UNIX time()
+function.</p>  <p>Instead, do the following:
+|[&lt;!-- language="C" --&gt;
+time_t ttime;
+GTime gtime;</p>  <p>time (&amp;ttime);
+gtime = (GTime)ttime;
+]|</p>
+
+</page>

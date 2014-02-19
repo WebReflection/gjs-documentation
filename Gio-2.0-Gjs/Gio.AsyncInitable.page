@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<page id="Gio.AsyncInitable"
+      type="guide"
+      style="interface"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="interface" type="guide"/>
+  </info>
+  <title>Gio.AsyncInitable</title>
+  <synopsis><code>
+const Gio = imports.gi.Gio;
+
+let async_initable = new Gio.AsyncInitable();
+  </code></synopsis>
+  <p>This is the asynchronous version of <link xref="Gio.Initable"/>; it behaves the same
+in all ways except that initialization is asynchronous. For more details
+see the descriptions on <link xref="Gio.Initable"/>.</p>  <p>A class may implement both the <link xref="Gio.Initable"/> and <link xref="Gio.AsyncInitable"/> interfaces.</p>  <p>Users of objects implementing this are not intended to use the interface
+method directly; instead it will be used automatically in various ways.
+For C applications you generally just call <link xref="Gio.new_async"/>
+directly, or indirectly via a foo_thing_new_async() wrapper. This will call
+<link xref="Gio.init_async"/> under the cover, calling back with <code>null</code> and
+a set %GError on failure.</p>  <p>A typical implementation might look something like this:</p>  <p>|[&lt;!-- language="C" --&gt;
+enum {
+   NOT_INITIALIZED,
+   INITIALIZING,
+   INITIALIZED
+};</p>  <p>static void
+_foo_ready_cb (Foo *self)
+{
+  GList *l;</p>  <p>  self-&gt;priv-&gt;state = INITIALIZED;</p>  <p>  for (l = self-&gt;priv-&gt;init_results; l != NULL; l = l-&gt;next)
+    {
+      GTask *task = l-&gt;data;</p>  <p>      if (self-&gt;priv-&gt;success)
+        g_task_return_boolean (task, TRUE);
+      else
+        g_task_return_new_error (task, ...);
+      g_object_unref (task);
+    }</p>  <p>  g_list_free (self-&gt;priv-&gt;init_results);
+  self-&gt;priv-&gt;init_results = NULL;
+}</p>  <p>static void
+foo_init_async (GAsyncInitable       *initable,
+                int                   io_priority,
+                GCancellable         *cancellable,
+                GAsyncReadyCallback   callback,
+                gpointer              user_data)
+{
+  Foo *self = FOO (initable);
+  GTask *task;</p>  <p>  task = g_task_new (initable, cancellable, callback, user_data);</p>  <p>  switch (self-&gt;priv-&gt;state)
+    {
+      case NOT_INITIALIZED:
+        _foo_get_ready (self);
+        self-&gt;priv-&gt;init_results = g_list_append (self-&gt;priv-&gt;init_results,
+                                                  task);
+        self-&gt;priv-&gt;state = INITIALIZING;
+        break;
+      case INITIALIZING:
+        self-&gt;priv-&gt;init_results = g_list_append (self-&gt;priv-&gt;init_results,
+                                                  task);
+        break;
+      case INITIALIZED:
+        if (!self-&gt;priv-&gt;success)
+          g_task_return_new_error (task, ...);
+        else
+          g_task_return_boolean (task, TRUE);
+        g_object_unref (task);
+        break;
+    }
+}</p>  <p>static gboolean
+foo_init_finish (GAsyncInitable       *initable,
+                 GAsyncResult         *result,
+                 GError              **error)
+{
+  g_return_val_if_fail (g_task_is_valid (result, initable), FALSE);</p>  <p>  return g_task_propagate_boolean (G_TASK (result), error);
+}</p>  <p>static void
+foo_async_initable_iface_init (gpointer g_iface,
+                               gpointer data)
+{
+  GAsyncInitableIface *iface = g_iface;</p>  <p>  iface-&gt;init_async = foo_init_async;
+  iface-&gt;init_finish = foo_init_finish;
+}
+]|</p>
+  <p>Since 2.22</p>
+  <synopsis>
+    <title>Prerequisites</title>
+    <p>AsyncInitable requires GObject.Object</p>
+  </synopsis>
+  <synopsis>
+    <title>Known Implementations</title>
+    <p>%s is implemented by DBusConnection,DBusObjectManagerClient and DBusProxy</p>
+  </synopsis>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="property" style="linklist">
+    <title>Properties</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="signal" style="linklist">
+    <title>Signals</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="vfunc" style="linklist">
+    <title>Virtual functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

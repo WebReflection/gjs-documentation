@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="Gio.TlsConnection-require-close-notify"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.TlsConnection" group="property" type="guide"/>
+    <title type="link" role="topic">require-close-notify</title>
+  </info>
+  <title>Gio.TlsConnection.require_close_notify</title>
+  <synopsis><code mime="text/x-gjs">
+TlsConnection.require_close_notify: Boolean (Read / Write / Construct)
+  </code></synopsis>
+  <p>Whether or not proper TLS close notification is required.
+See <link xref="Gio.TlsConnection.set_require_close_notify"/>.</p>
+  <p>Since 2.28</p>
+</page>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.OutputStream-splice_finish"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.OutputStream" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.OutputStream::splice_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_splice_finish(result: Gio.AsyncResult): gssize {
+}
+  </code></synopsis>
+  <p>Finishes an asynchronous stream splice operation.</p>
+
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>a <link xref="Gio.AsyncResult"/>.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a #gssize of the number of bytes spliced. Note that if the
+    number of bytes spliced is greater than %G_MAXSSIZE, then that
+    will be returned, and there is no way to determine the actual
+    number of bytes spliced.</p>
+</item>
+</terms>
+
+</page>

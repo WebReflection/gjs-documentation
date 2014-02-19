@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="GLib.KEY_FILE_DESKTOP_KEY_TERMINAL"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>GLib.KEY_FILE_DESKTOP_KEY_TERMINAL</title>
+  <p>A key under #G_KEY_FILE_DESKTOP_GROUP, whose value is a boolean
+stating whether the program should be run in a terminal window.
+It is only valid for desktop entries with the
+`Application` type.</p>
+  <p>Since 2.14</p>
+</page>

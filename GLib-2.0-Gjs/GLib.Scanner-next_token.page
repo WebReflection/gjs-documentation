@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="GLib.Scanner-next_token"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Scanner" group="field" type="guide"/>
+    <title type="link" role="topic">next_token</title>
+  </info>
+  <title>GLib.Scanner.next_token</title>
+  <synopsis><code mime="text/x-gjs">
+Scanner.next_token: GLib.TokenType (Read / Write)
+  </code></synopsis>
+  <p>token parsed by the last <link xref="GLib.peek_next_token"/></p>
+
+</page>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="Gio.TlsConnection-certificate"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.TlsConnection" group="property" type="guide"/>
+    <title type="link" role="topic">certificate</title>
+  </info>
+  <title>Gio.TlsConnection.certificate</title>
+  <synopsis><code mime="text/x-gjs">
+TlsConnection.certificate: Gio.TlsCertificate (Read / Write)
+  </code></synopsis>
+  <p>The connection's certificate; see
+<link xref="Gio.TlsConnection.set_certificate"/>.</p>
+  <p>Since 2.28</p>
+</page>

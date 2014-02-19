@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<page id="Gio.ActionGroup-action-removed"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.ActionGroup" group="signal" type="guide"/>
+    <title type="link" role="topic">action-removed</title>
+  </info>
+  <title>Gio.ActionGroup::action-removed</title>
+  <synopsis><code mime="text/x-gjs">
+connect('action-removed', function (actionGroup, action_name: String, ): void);
+  </code></synopsis>
+  <p>Signals that an action is just about to be removed from the group.
+This signal is emitted before the action is removed, so the action
+is still visible and can be queried from the signal handler.</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>actionGroup</code></title>
+<p>instance of <link xref="Gio.ActionGroup"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>action_name</code></title>
+  <p>the name of the action in @action_group</p>
+</item>
+</terms>
+
+</page>

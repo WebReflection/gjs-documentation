@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusObjectManagerServer"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>Gio.DBusObjectManagerServer</title>
+  <synopsis><code>
+const Gio = imports.gi.Gio;
+
+let dBusObjectManagerServer = new Gio.DBusObjectManagerServer({
+    <link xref='Gio.DBusObjectManagerServer-object-path'>object_path</link>: value,
+});
+  </code></synopsis>
+  <p><link xref="Gio.DBusObjectManagerServer"/> is used to export <link xref="Gio.DBusObject"/> instances using
+the standardized
+[org.freedesktop.DBus.ObjectManager](http://dbus.freedesktop.org/doc/dbus-specification.html#standard-interfaces-objectmanager)
+interface. For example, remote D-Bus clients can get all objects
+and properties in a single call. Additionally, any change in the
+object hierarchy is broadcast using signals. This means that D-Bus
+clients can keep caches up to date by only listening to D-Bus
+signals.</p>  <p>See <link xref="Gio.DBusObjectManagerClient"/> for the client-side code that is
+intended to be used with <link xref="Gio.DBusObjectManagerServer"/> or any D-Bus
+object implementing the org.freedesktop.DBus.ObjectManager
+interface.</p>
+  <p>Since 2.30</p>
+  <synopsis>
+    <title>Hierarchy</title>
+    <tree>
+      <item>
+        <code>GObject.Object</code>
+      <item>
+        <code>Gio.DBusObjectManagerServer</code>
+      </item>
+      </item>
+    </tree>
+  </synopsis>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="property" style="linklist">
+    <title>Properties</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="signal" style="linklist">
+    <title>Signals</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="vfunc" style="linklist">
+    <title>Virtual functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

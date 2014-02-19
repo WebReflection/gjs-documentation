@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<page id="GLib.utf8_substring"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_utf8_substring</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>str</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>start_pos</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>end_pos</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.utf8_substring</title>
+  <synopsis><code mime="text/x-gjs">
+function utf8_substring(str: String, start_pos: Number, end_pos: Number): String {
+    // Gjs wrapper for g_utf8_substring()
+}
+  </code></synopsis>
+  <p>Copies a substring out of a UTF-8 encoded string.
+The substring will contain <code>end_pos</code> - <code>start_pos</code> characters.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>str</code></title>
+  <p>a UTF-8 encoded string</p>
+</item>
+<item>
+<title><code>start_pos</code></title>
+  <p>a character offset within <code>str</code></p>
+</item>
+<item>
+<title><code>end_pos</code></title>
+  <p>another character offset within <code>str</code></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

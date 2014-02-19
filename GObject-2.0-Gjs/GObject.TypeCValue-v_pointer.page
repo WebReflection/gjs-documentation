@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="GObject.TypeCValue-v_pointer"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.TypeCValue" group="field" type="guide"/>
+    <title type="link" role="topic">v_pointer</title>
+  </info>
+  <title>GObject.TypeCValue.v_pointer</title>
+  <synopsis><code mime="text/x-gjs">
+TypeCValue.v_pointer: gpointer (Read)
+  </code></synopsis>
+  <p>the field for holding pointers</p>
+
+</page>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusObjectSkeleton.remove_interface"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusObjectSkeleton" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_dbus_object_skeleton_remove_interface</api:name>
+      <api:arg>
+        <api:type>Gio.DBusInterfaceSkeleton</api:type>
+        <api:name>interface_</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DBusObjectSkeleton.prototype.remove_interface</title>
+  <synopsis><code mime="text/x-gjs">
+function remove_interface(interface_: Gio.DBusInterfaceSkeleton): void {
+    // Gjs wrapper for g_dbus_object_skeleton_remove_interface()
+}
+  </code></synopsis>
+  <p>Removes <code>interface_</code> from <code>object</code>.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>interface_</code></title>
+  <p>A <link xref="Gio.DBusInterfaceSkeleton"/>.</p>
+</item>
+</terms>
+
+</page>

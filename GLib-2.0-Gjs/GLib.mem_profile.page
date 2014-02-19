@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<page id="GLib.mem_profile"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_mem_profile</api:name>
+    </api:function>
+  </info>
+  <title>GLib.mem_profile</title>
+  <synopsis><code mime="text/x-gjs">
+function mem_profile(): void {
+    // Gjs wrapper for g_mem_profile()
+}
+  </code></synopsis>
+  <p>Outputs a summary of memory usage.</p>  <p>It outputs the frequency of allocations of different sizes,
+the total number of bytes which have been allocated,
+the total number of bytes which have been freed,
+and the difference between the previous two values, i.e. the number of bytes
+still in use.</p>  <p>Note that this function will not output anything unless you have
+previously installed the #glib_mem_profiler_table with <link xref="GLib.mem_set_vtable"/>.</p>
+
+
+</page>

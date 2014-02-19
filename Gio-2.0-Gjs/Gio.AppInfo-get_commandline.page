@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="Gio.AppInfo-get_commandline"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.AppInfo" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.AppInfo::get_commandline</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_get_commandline(): String {
+}
+  </code></synopsis>
+  <p>Gets the commandline with which the application will be
+started.</p>
+  <p>Since 2.20</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a string containing the <code>appinfo</code>'s commandline,
+    or <code>null</code> if this information is not available</p>
+</item>
+</terms>
+
+</page>

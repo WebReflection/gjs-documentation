@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusMessage.to_blob"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusMessage" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(guint8)</api:type>
+      </api:returns>
+      <api:name>g_dbus_message_to_blob</api:name>
+      <api:arg>
+        <api:type>Gio.DBusCapabilityFlags</api:type>
+        <api:name>capabilities</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DBusMessage.prototype.to_blob</title>
+  <synopsis><code mime="text/x-gjs">
+function to_blob(capabilities: Gio.DBusCapabilityFlags): [return_value: Array(guint8), out_size: gsize] {
+    // Gjs wrapper for g_dbus_message_to_blob()
+}
+  </code></synopsis>
+  <p>Serializes <code>message</code> to a blob. The byte order returned by
+<link xref="Gio.DBusMessage.get_byte_order"/> will be used.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>capabilities</code></title>
+  <p>A <link xref="Gio.DBusCapabilityFlags"/> describing what protocol features are supported.</p>
+</item>
+<item>
+<title><code>return_value</code></title>
+
+</item>
+<item>
+<title><code>out_size</code></title>
+  <p>Return location for size of generated blob.</p>
+</item>
+</terms>
+
+</page>

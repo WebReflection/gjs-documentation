@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Gio.Icon.deserialize"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Icon" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.Icon</api:type>
+      </api:returns>
+      <api:name>g_icon_deserialize</api:name>
+      <api:arg>
+        <api:type>GLib.Variant</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.Icon.deserialize</title>
+  <synopsis><code mime="text/x-gjs">
+function deserialize(value: GLib.Variant): Gio.Icon {
+    // Gjs wrapper for g_icon_deserialize()
+}
+  </code></synopsis>
+  <p>Deserializes a <link xref="Gio.Icon"/> previously serialized using <link xref="Gio.Icon.serialize"/>.</p>
+  <p>Since 2.38</p>
+<terms>
+<item>
+<title><code>value</code></title>
+  <p>a <link xref="GLib.Variant"/> created with <link xref="Gio.Icon.serialize"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

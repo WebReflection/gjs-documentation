@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="GLib.VariantBuilder.end"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.VariantBuilder" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.Variant</api:type>
+      </api:returns>
+      <api:name>g_variant_builder_end</api:name>
+    </api:function>
+  </info>
+  <title>GLib.VariantBuilder.prototype.end</title>
+  <synopsis><code mime="text/x-gjs">
+function end(): GLib.Variant {
+    // Gjs wrapper for g_variant_builder_end()
+}
+  </code></synopsis>
+  <p>Ends the builder process and returns the constructed value.</p>  <p>It is not permissible to use <code>builder</code> in any way after this call
+except for reference counting operations (in the case of a
+heap-allocated <link xref="GLib.VariantBuilder"/>) or by reinitialising it with
+<link xref="GLib.init"/> (in the case of stack-allocated).</p>  <p>It is an error to call this function in any way that would create an
+inconsistent value to be constructed (ie: insufficient number of
+items added to a container with a specific number of children
+required).  It is also an error to call this function if the builder
+was created with an indefinite array or maybe type and no children
+have been added; in this case it is impossible to infer the type of
+the empty array.</p>
+  <p>Since 2.24</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

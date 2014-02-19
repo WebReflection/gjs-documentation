@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page id="Gio.TlsCertificate-certificate-pem"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.TlsCertificate" group="property" type="guide"/>
+    <title type="link" role="topic">certificate-pem</title>
+  </info>
+  <title>Gio.TlsCertificate.certificate_pem</title>
+  <synopsis><code mime="text/x-gjs">
+TlsCertificate.certificate_pem: String (Read / Write / Construct Only)
+  </code></synopsis>
+  <p>The PEM (ASCII) encoded representation of the certificate.
+This property and the <link xref="Gio.TlsCertificate-certificate"/>
+property represent the same data, just in different forms.</p>
+  <p>Since 2.28</p>
+</page>

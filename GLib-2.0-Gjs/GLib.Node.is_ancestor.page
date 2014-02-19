@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="GLib.Node.is_ancestor"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Node" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_node_is_ancestor</api:name>
+      <api:arg>
+        <api:type>GLib.Node</api:type>
+        <api:name>descendant</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.Node.prototype.is_ancestor</title>
+  <synopsis><code mime="text/x-gjs">
+function is_ancestor(descendant: GLib.Node): Boolean {
+    // Gjs wrapper for g_node_is_ancestor()
+}
+  </code></synopsis>
+  <p>Returns <code>true</code> if <code>node</code> is an ancestor of <code>descendant</code>.
+This is true if node is the parent of <code>descendant</code>,
+or if node is the grandparent of <code>descendant</code> etc.</p>
+
+<terms>
+<item>
+<title><code>descendant</code></title>
+  <p>a <link xref="GLib.Node"/></p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

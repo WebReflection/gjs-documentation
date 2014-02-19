@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<page id="Gio.Mount-remount_finish"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Mount" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.Mount::remount_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_remount_finish(result: Gio.AsyncResult): Boolean {
+}
+  </code></synopsis>
+  <p>Finishes remounting a mount. If any errors occurred during the operation,
+@error will be set to contain the errors and <code>false</code> will be returned.</p>
+
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>a <link xref="Gio.AsyncResult"/>.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if the mount was successfully remounted. <code>false</code> otherwise.</p>
+</item>
+</terms>
+
+</page>

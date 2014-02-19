@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="GLib.Variant.get_child_value"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Variant" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.Variant</api:type>
+      </api:returns>
+      <api:name>g_variant_get_child_value</api:name>
+      <api:arg>
+        <api:type>gsize</api:type>
+        <api:name>index_</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.Variant.prototype.get_child_value</title>
+  <synopsis><code mime="text/x-gjs">
+function get_child_value(index_: gsize): GLib.Variant {
+    // Gjs wrapper for g_variant_get_child_value()
+}
+  </code></synopsis>
+  <p>Reads a child item out of a container <link xref="GLib.Variant"/> instance.  This
+includes variants, maybes, arrays, tuples and dictionary
+entries.  It is an error to call this function on any other type of
+<link xref="GLib.Variant"/>.</p>  <p>It is an error if <code>index_</code> is greater than the number of child items
+in the container.  See <link xref="GLib.n_children"/>.</p>  <p>The returned value is never floating.  You should free it with
+<link xref="GLib.unref"/> when you're done with it.</p>  <p>This function is O(1).</p>
+  <p>Since 2.24</p>
+<terms>
+<item>
+<title><code>index_</code></title>
+  <p>the index of the child to fetch</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

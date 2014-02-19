@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<page id="GLib.Scanner.unexp_token"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Scanner" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_scanner_unexp_token</api:name>
+      <api:arg>
+        <api:type>GLib.TokenType</api:type>
+        <api:name>expected_token</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>identifier_spec</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>symbol_spec</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>symbol_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>message</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>is_error</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.Scanner.prototype.unexp_token</title>
+  <synopsis><code mime="text/x-gjs">
+function unexp_token(expected_token: GLib.TokenType, identifier_spec: String, symbol_spec: String, symbol_name: String, message: String, is_error: Number): void {
+    // Gjs wrapper for g_scanner_unexp_token()
+}
+  </code></synopsis>
+  <p>Outputs a message through the scanner's msg_handler,
+resulting from an unexpected token in the input stream.
+Note that you should not call <link xref="GLib.Scanner.peek_next_token"/>
+followed by <link xref="GLib.Scanner.unexp_token"/> without an intermediate
+call to <link xref="GLib.Scanner.get_next_token"/>, as <link xref="GLib.Scanner.unexp_token"/>
+evaluates the scanner's current token (not the peeked token)
+to construct part of the message.</p>
+
+<terms>
+<item>
+<title><code>expected_token</code></title>
+  <p>the expected token</p>
+</item>
+<item>
+<title><code>identifier_spec</code></title>
+  <p>a string describing how the scanner's user
+    refers to identifiers (<code>null</code> defaults to "identifier").
+    This is used if <code>expected_token</code> is <link xref="GLib.TokenType"/>.identifier or
+    <link xref="GLib.TokenType"/>.identifier_null.</p>
+</item>
+<item>
+<title><code>symbol_spec</code></title>
+  <p>a string describing how the scanner's user refers
+    to symbols (<code>null</code> defaults to "symbol"). This is used if
+    <code>expected_token</code> is <link xref="GLib.TokenType"/>.symbol or any token value greater
+    than %G_TOKEN_LAST.</p>
+</item>
+<item>
+<title><code>symbol_name</code></title>
+  <p>the name of the symbol, if the scanner's current
+    token is a symbol.</p>
+</item>
+<item>
+<title><code>message</code></title>
+  <p>a message string to output at the end of the
+    warning/error, or <code>null</code>.</p>
+</item>
+<item>
+<title><code>is_error</code></title>
+  <p>if <code>true</code> it is output as an error. If <code>false</code> it is
+    output as a warning.</p>
+</item>
+</terms>
+
+</page>

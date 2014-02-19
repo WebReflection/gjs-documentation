@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="Gio.File.set_attributes_finish"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.File" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_file_set_attributes_finish</api:name>
+      <api:arg>
+        <api:type>Gio.AsyncResult</api:type>
+        <api:name>result</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.File.prototype.set_attributes_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function set_attributes_finish(result: Gio.AsyncResult): [ok: Boolean, info: Gio.FileInfo] {
+    // Gjs wrapper for g_file_set_attributes_finish()
+}
+  </code></synopsis>
+  <p>Finishes setting an attribute started in <link xref="Gio.File.set_attributes_async"/>.</p>
+
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>a <link xref="Gio.AsyncResult"/></p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+<item>
+<title><code>info</code></title>
+  <p>a <link xref="Gio.FileInfo"/></p>
+</item>
+</terms>
+
+</page>

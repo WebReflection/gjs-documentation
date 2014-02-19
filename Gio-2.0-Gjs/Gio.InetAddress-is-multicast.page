@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="Gio.InetAddress-is-multicast"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.InetAddress" group="property" type="guide"/>
+    <title type="link" role="topic">is-multicast</title>
+  </info>
+  <title>Gio.InetAddress.is_multicast</title>
+  <synopsis><code mime="text/x-gjs">
+InetAddress.is_multicast: Boolean (Read)
+  </code></synopsis>
+  <p>Whether this is a multicast address.
+See <link xref="Gio.InetAddress.get_is_multicast"/>.</p>
+  <p>Since 2.22</p>
+</page>

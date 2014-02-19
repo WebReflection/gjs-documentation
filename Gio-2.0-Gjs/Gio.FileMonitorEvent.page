@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<page id="Gio.FileMonitorEvent"
+      type="topic"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Gio.FileMonitorEvent</title>
+  <p>Specifies what type of event a monitor event is.</p>
+
+<terms>
+<item>
+<title><code>FileMonitorEvent.CHANGED</code></title>
+  <p>a file changed.</p>
+</item>
+<item>
+<title><code>FileMonitorEvent.CHANGES_DONE_HINT</code></title>
+  <p>a hint that this was probably the last change in a set of changes.</p>
+</item>
+<item>
+<title><code>FileMonitorEvent.DELETED</code></title>
+  <p>a file was deleted.</p>
+</item>
+<item>
+<title><code>FileMonitorEvent.CREATED</code></title>
+  <p>a file was created.</p>
+</item>
+<item>
+<title><code>FileMonitorEvent.ATTRIBUTE_CHANGED</code></title>
+  <p>a file attribute was changed.</p>
+</item>
+<item>
+<title><code>FileMonitorEvent.PRE_UNMOUNT</code></title>
+  <p>the file location will soon be unmounted.</p>
+</item>
+<item>
+<title><code>FileMonitorEvent.UNMOUNTED</code></title>
+  <p>the file location was unmounted.</p>
+</item>
+<item>
+<title><code>FileMonitorEvent.MOVED</code></title>
+  <p>the file was moved.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusError.strip_remote_error"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_dbus_error_strip_remote_error</api:name>
+      <api:arg>
+        <api:type>GLib.Error</api:type>
+        <api:name>error</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.strip_remote_error</title>
+  <synopsis><code mime="text/x-gjs">
+function strip_remote_error(error: GLib.Error): Boolean {
+    // Gjs wrapper for g_dbus_error_strip_remote_error()
+}
+  </code></synopsis>
+  <p>Looks for extra information in the error message used to recover
+the D-Bus error name and strips it if found. If stripped, the
+message field in <code>error</code> will correspond exactly to what was
+received on the wire.</p>  <p>This is typically used when presenting errors to the end user.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>error</code></title>
+  <p>A <link xref="GLib.Error"/>.</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

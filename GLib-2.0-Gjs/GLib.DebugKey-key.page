@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="GLib.DebugKey-key"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.DebugKey" group="field" type="guide"/>
+    <title type="link" role="topic">key</title>
+  </info>
+  <title>GLib.DebugKey.key</title>
+  <synopsis><code mime="text/x-gjs">
+DebugKey.key: String (Read)
+  </code></synopsis>
+  <p>the string</p>
+
+</page>

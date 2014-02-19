@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="GLib.get_system_config_dirs"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(String)</api:type>
+      </api:returns>
+      <api:name>g_get_system_config_dirs</api:name>
+    </api:function>
+  </info>
+  <title>GLib.get_system_config_dirs</title>
+  <synopsis><code mime="text/x-gjs">
+function get_system_config_dirs(): Array(String) {
+    // Gjs wrapper for g_get_system_config_dirs()
+}
+  </code></synopsis>
+  <p>Returns an ordered list of base directories in which to access
+system-wide configuration information.</p>  <p>On UNIX platforms this is determined using the mechanisms described
+in the
+[XDG Base Directory Specification](http://www.freedesktop.org/Standards/basedir-spec).
+In this case the list of directories retrieved will be `XDG_CONFIG_DIRS`.</p>  <p>On Windows is the directory that contains application data for all users.
+A typical path is C:\Documents and Settings\All Users\Application Data.
+This folder is used for application data that is not user specific.
+For example, an application can store a spell-check dictionary, a database
+of clip art, or a log file in the CSIDL_COMMON_APPDATA folder.
+This information will not roam and is available to anyone using the computer.</p>
+  <p>Since 2.6</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

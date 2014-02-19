@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<page id="GLib.Cond.clear"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Cond" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_cond_clear</api:name>
+    </api:function>
+  </info>
+  <title>GLib.Cond.prototype.clear</title>
+  <synopsis><code mime="text/x-gjs">
+function clear(): void {
+    // Gjs wrapper for g_cond_clear()
+}
+  </code></synopsis>
+  <p>Frees the resources allocated to a <link xref="GLib.Cond"/> with <link xref="GLib.init"/>.</p>  <p>This function should not be used with a <link xref="GLib.Cond"/> that has been
+statically allocated.</p>  <p>Calling <link xref="GLib.Cond.clear"/> for a <link xref="GLib.Cond"/> on which threads are
+blocking leads to undefined behaviour.</p>
+  <p>Since 2.32</p>
+
+</page>

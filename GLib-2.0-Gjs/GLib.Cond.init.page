@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<page id="GLib.Cond.init"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Cond" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_cond_init</api:name>
+    </api:function>
+  </info>
+  <title>GLib.Cond.prototype.init</title>
+  <synopsis><code mime="text/x-gjs">
+function init(): void {
+    // Gjs wrapper for g_cond_init()
+}
+  </code></synopsis>
+  <p>Initialises a <link xref="GLib.Cond"/> so that it can be used.</p>  <p>This function is useful to initialise a <link xref="GLib.Cond"/> that has been
+allocated as part of a larger structure.  It is not necessary to
+initialise a <link xref="GLib.Cond"/> that has been statically allocated.</p>  <p>To undo the effect of <link xref="GLib.Cond.init"/> when a <link xref="GLib.Cond"/> is no longer
+needed, use <link xref="GLib.Cond.clear"/>.</p>  <p>Calling <link xref="GLib.Cond.init"/> on an already-initialised <link xref="GLib.Cond"/> leads
+to undefined behaviour.</p>
+  <p>Since 2.32</p>
+
+</page>

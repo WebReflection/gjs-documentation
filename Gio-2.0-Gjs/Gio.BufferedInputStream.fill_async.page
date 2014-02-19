@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<page id="Gio.BufferedInputStream.fill_async"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.BufferedInputStream" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_buffered_input_stream_fill_async</api:name>
+      <api:arg>
+        <api:type>gssize</api:type>
+        <api:name>count</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>io_priority</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.AsyncReadyCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.BufferedInputStream.prototype.fill_async</title>
+  <synopsis><code mime="text/x-gjs">
+function fill_async(count: gssize, io_priority: Number, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+    // Gjs wrapper for g_buffered_input_stream_fill_async()
+}
+  </code></synopsis>
+  <p>Reads data into <code>stream</code>'s buffer asynchronously, up to <code>count</code> size.
+<code>io_priority</code> can be used to prioritize reads. For the synchronous
+version of this function, see <link xref="Gio.BufferedInputStream.fill"/>.</p>  <p>If <code>count</code> is -1 then the attempted read size is equal to the number
+of bytes that are required to fill the buffer.</p>
+
+<terms>
+<item>
+<title><code>count</code></title>
+  <p>the number of bytes that will be read from the stream</p>
+</item>
+<item>
+<title><code>io_priority</code></title>
+  <p>the [I/O priority][io-priority] of the request</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional <link xref="Gio.Cancellable"/> object</p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>a <link xref="Gio.AsyncReadyCallback"/></p>
+</item>
+</terms>
+
+</page>

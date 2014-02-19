@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="Gio.Task.set_check_cancellable"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Task" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_task_set_check_cancellable</api:name>
+      <api:arg>
+        <api:type>Boolean</api:type>
+        <api:name>check_cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.Task.prototype.set_check_cancellable</title>
+  <synopsis><code mime="text/x-gjs">
+function set_check_cancellable(check_cancellable: Boolean): void {
+    // Gjs wrapper for g_task_set_check_cancellable()
+}
+  </code></synopsis>
+  <p>Sets or clears <code>task</code>'s check-cancellable flag. If this is <code>true</code>
+(the default), then <link xref="Gio.Task.propagate_pointer"/>, etc, and
+<link xref="Gio.Task.had_error"/> will check the task's <link xref="Gio.Cancellable"/> first, and
+if it has been cancelled, then they will consider the task to have
+returned an "Operation was cancelled" error
+(<link xref="Gio.IOErrorEnum"/>.cancelled), regardless of any other error or return
+value the task may have had.</p>  <p>If <code>check_cancellable</code> is <code>false</code>, then the <link xref="Gio.Task"/> will not check the
+cancellable itself, and it is up to <code>task</code>'s owner to do this (eg,
+via <link xref="Gio.Task.return_error_if_cancelled"/>).</p>  <p>If you are using <link xref="Gio.set_return_on_cancel"/> as well, then
+you must leave check-cancellable set <code>true</code>.</p>
+  <p>Since 2.36</p>
+<terms>
+<item>
+<title><code>check_cancellable</code></title>
+  <p>whether <link xref="Gio.Task"/> will check the state of
+  its <link xref="Gio.Cancellable"/> for you.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<page id="Gio.Action-get_enabled"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Action" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.Action::get_enabled</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_get_enabled(): Boolean {
+}
+  </code></synopsis>
+  <p>Checks if <code>action</code> is currently enabled.</p>  <p>An action must be enabled in order to be activated or in order to
+have its state changed from outside callers.</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>whether the action is enabled</p>
+</item>
+</terms>
+
+</page>

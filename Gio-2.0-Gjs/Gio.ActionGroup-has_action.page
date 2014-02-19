@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Gio.ActionGroup-has_action"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.ActionGroup" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.ActionGroup::has_action</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_has_action(action_name: String): Boolean {
+}
+  </code></synopsis>
+  <p>Checks if the named action exists within <code>action_group</code>.</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>action_name</code></title>
+  <p>the name of the action to check for</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>whether the named action exists</p>
+</item>
+</terms>
+
+</page>

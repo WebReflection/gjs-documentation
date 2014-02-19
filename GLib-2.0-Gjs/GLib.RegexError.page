@@ -1,0 +1,288 @@
+<?xml version="1.0"?>
+<page id="GLib.RegexError"
+      type="topic"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>GLib.RegexError</title>
+  <p>Error codes returned by regular expressions functions.</p>
+  <p>Since 2.14</p>
+<terms>
+<item>
+<title><code>RegexError.COMPILE</code></title>
+  <p>Compilation of the regular expression failed.</p>
+</item>
+<item>
+<title><code>RegexError.OPTIMIZE</code></title>
+  <p>Optimization of the regular expression failed.</p>
+</item>
+<item>
+<title><code>RegexError.REPLACE</code></title>
+  <p>Replacement failed due to an ill-formed replacement
+    string.</p>
+</item>
+<item>
+<title><code>RegexError.MATCH</code></title>
+  <p>The match process failed.</p>
+</item>
+<item>
+<title><code>RegexError.INTERNAL</code></title>
+  <p>Internal error of the regular expression engine.
+    Since 2.16</p>
+</item>
+<item>
+<title><code>RegexError.STRAY_BACKSLASH</code></title>
+  <p>"\\" at end of pattern. Since 2.16</p>
+</item>
+<item>
+<title><code>RegexError.MISSING_CONTROL_CHAR</code></title>
+  <p>"\\c" at end of pattern. Since 2.16</p>
+</item>
+<item>
+<title><code>RegexError.UNRECOGNIZED_ESCAPE</code></title>
+  <p>Unrecognized character follows "\\".
+    Since 2.16</p>
+</item>
+<item>
+<title><code>RegexError.QUANTIFIERS_OUT_OF_ORDER</code></title>
+  <p>Numbers out of order in "{}"
+    quantifier. Since 2.16</p>
+</item>
+<item>
+<title><code>RegexError.QUANTIFIER_TOO_BIG</code></title>
+  <p>Number too big in "{}" quantifier.
+    Since 2.16</p>
+</item>
+<item>
+<title><code>RegexError.UNTERMINATED_CHARACTER_CLASS</code></title>
+  <p>Missing terminating "]" for
+    character class. Since 2.16</p>
+</item>
+<item>
+<title><code>RegexError.INVALID_ESCAPE_IN_CHARACTER_CLASS</code></title>
+  <p>Invalid escape sequence
+    in character class. Since 2.16</p>
+</item>
+<item>
+<title><code>RegexError.RANGE_OUT_OF_ORDER</code></title>
+  <p>Range out of order in character class.
+    Since 2.16</p>
+</item>
+<item>
+<title><code>RegexError.NOTHING_TO_REPEAT</code></title>
+  <p>Nothing to repeat. Since 2.16</p>
+</item>
+<item>
+<title><code>RegexError.UNRECOGNIZED_CHARACTER</code></title>
+  <p>Unrecognized character after "(?",
+    "(?&amp;lt;" or "(?P". Since 2.16</p>
+</item>
+<item>
+<title><code>RegexError.POSIX_NAMED_CLASS_OUTSIDE_CLASS</code></title>
+  <p>POSIX named classes are
+    supported only within a class. Since 2.16</p>
+</item>
+<item>
+<title><code>RegexError.UNMATCHED_PARENTHESIS</code></title>
+  <p>Missing terminating ")" or ")"
+    without opening "(". Since 2.16</p>
+</item>
+<item>
+<title><code>RegexError.INEXISTENT_SUBPATTERN_REFERENCE</code></title>
+  <p>Reference to non-existent
+    subpattern. Since 2.16</p>
+</item>
+<item>
+<title><code>RegexError.UNTERMINATED_COMMENT</code></title>
+  <p>Missing terminating ")" after comment.
+    Since 2.16</p>
+</item>
+<item>
+<title><code>RegexError.EXPRESSION_TOO_LARGE</code></title>
+  <p>Regular expression too large.
+    Since 2.16</p>
+</item>
+<item>
+<title><code>RegexError.MEMORY_ERROR</code></title>
+  <p>Failed to get memory. Since 2.16</p>
+</item>
+<item>
+<title><code>RegexError.VARIABLE_LENGTH_LOOKBEHIND</code></title>
+  <p>Lookbehind assertion is not
+    fixed length. Since 2.16</p>
+</item>
+<item>
+<title><code>RegexError.MALFORMED_CONDITION</code></title>
+  <p>Malformed number or name after "(?(".
+    Since 2.16</p>
+</item>
+<item>
+<title><code>RegexError.TOO_MANY_CONDITIONAL_BRANCHES</code></title>
+  <p>Conditional group contains
+    more than two branches. Since 2.16</p>
+</item>
+<item>
+<title><code>RegexError.ASSERTION_EXPECTED</code></title>
+  <p>Assertion expected after "(?(".
+    Since 2.16</p>
+</item>
+<item>
+<title><code>RegexError.UNKNOWN_POSIX_CLASS_NAME</code></title>
+  <p>Unknown POSIX class name.
+    Since 2.16</p>
+</item>
+<item>
+<title><code>RegexError.POSIX_COLLATING_ELEMENTS_NOT_SUPPORTED</code></title>
+  <p>POSIX collating
+    elements are not supported. Since 2.16</p>
+</item>
+<item>
+<title><code>RegexError.HEX_CODE_TOO_LARGE</code></title>
+  <p>Character value in "\\x{...}" sequence
+    is too large. Since 2.16</p>
+</item>
+<item>
+<title><code>RegexError.INVALID_CONDITION</code></title>
+  <p>Invalid condition "(?(0)". Since 2.16</p>
+</item>
+<item>
+<title><code>RegexError.SINGLE_BYTE_MATCH_IN_LOOKBEHIND</code></title>
+  <p>\\C not allowed in
+    lookbehind assertion. Since 2.16</p>
+</item>
+<item>
+<title><code>RegexError.INFINITE_LOOP</code></title>
+  <p>Recursive call could loop indefinitely.
+    Since 2.16</p>
+</item>
+<item>
+<title><code>RegexError.MISSING_SUBPATTERN_NAME_TERMINATOR</code></title>
+  <p>Missing terminator
+    in subpattern name. Since 2.16</p>
+</item>
+<item>
+<title><code>RegexError.DUPLICATE_SUBPATTERN_NAME</code></title>
+  <p>Two named subpatterns have
+    the same name. Since 2.16</p>
+</item>
+<item>
+<title><code>RegexError.MALFORMED_PROPERTY</code></title>
+  <p>Malformed "\\P" or "\\p" sequence.
+    Since 2.16</p>
+</item>
+<item>
+<title><code>RegexError.UNKNOWN_PROPERTY</code></title>
+  <p>Unknown property name after "\\P" or
+    "\\p". Since 2.16</p>
+</item>
+<item>
+<title><code>RegexError.SUBPATTERN_NAME_TOO_LONG</code></title>
+  <p>Subpattern name is too long
+    (maximum 32 characters). Since 2.16</p>
+</item>
+<item>
+<title><code>RegexError.TOO_MANY_SUBPATTERNS</code></title>
+  <p>Too many named subpatterns (maximum
+    10,000). Since 2.16</p>
+</item>
+<item>
+<title><code>RegexError.INVALID_OCTAL_VALUE</code></title>
+  <p>Octal value is greater than "\\377".
+    Since 2.16</p>
+</item>
+<item>
+<title><code>RegexError.TOO_MANY_BRANCHES_IN_DEFINE</code></title>
+  <p>"DEFINE" group contains more
+    than one branch. Since 2.16</p>
+</item>
+<item>
+<title><code>RegexError.DEFINE_REPETION</code></title>
+  <p>Repeating a "DEFINE" group is not allowed.
+    This error is never raised. Since: 2.16 Deprecated: 2.34</p>
+</item>
+<item>
+<title><code>RegexError.INCONSISTENT_NEWLINE_OPTIONS</code></title>
+  <p>Inconsistent newline options.
+    Since 2.16</p>
+</item>
+<item>
+<title><code>RegexError.MISSING_BACK_REFERENCE</code></title>
+  <p>"\\g" is not followed by a braced,
+     angle-bracketed, or quoted name or number, or by a plain number. Since: 2.16</p>
+</item>
+<item>
+<title><code>RegexError.INVALID_RELATIVE_REFERENCE</code></title>
+  <p>relative reference must not be zero. Since: 2.34</p>
+</item>
+<item>
+<title><code>RegexError.BACKTRACKING_CONTROL_VERB_ARGUMENT_FORBIDDEN</code></title>
+  <p>the backtracing
+    control verb used does not allow an argument. Since: 2.34</p>
+</item>
+<item>
+<title><code>RegexError.UNKNOWN_BACKTRACKING_CONTROL_VERB</code></title>
+  <p>unknown backtracing
+    control verb. Since: 2.34</p>
+</item>
+<item>
+<title><code>RegexError.NUMBER_TOO_BIG</code></title>
+  <p>number is too big in escape sequence. Since: 2.34</p>
+</item>
+<item>
+<title><code>RegexError.MISSING_SUBPATTERN_NAME</code></title>
+  <p>Missing subpattern name. Since: 2.34</p>
+</item>
+<item>
+<title><code>RegexError.MISSING_DIGIT</code></title>
+  <p>Missing digit. Since 2.34</p>
+</item>
+<item>
+<title><code>RegexError.INVALID_DATA_CHARACTER</code></title>
+  <p>In JavaScript compatibility mode,
+    "[" is an invalid data character. Since: 2.34</p>
+</item>
+<item>
+<title><code>RegexError.EXTRA_SUBPATTERN_NAME</code></title>
+  <p>different names for subpatterns of the
+    same number are not allowed. Since: 2.34</p>
+</item>
+<item>
+<title><code>RegexError.BACKTRACKING_CONTROL_VERB_ARGUMENT_REQUIRED</code></title>
+  <p>the backtracing control
+    verb requires an argument. Since: 2.34</p>
+</item>
+<item>
+<title><code>RegexError.INVALID_CONTROL_CHAR</code></title>
+  <p>"\\c" must be followed by an ASCII
+    character. Since: 2.34</p>
+</item>
+<item>
+<title><code>RegexError.MISSING_NAME</code></title>
+  <p>"\\k" is not followed by a braced, angle-bracketed, or
+    quoted name. Since: 2.34</p>
+</item>
+<item>
+<title><code>RegexError.NOT_SUPPORTED_IN_CLASS</code></title>
+  <p>"\\N" is not supported in a class. Since: 2.34</p>
+</item>
+<item>
+<title><code>RegexError.TOO_MANY_FORWARD_REFERENCES</code></title>
+  <p>too many forward references. Since: 2.34</p>
+</item>
+<item>
+<title><code>RegexError.NAME_TOO_LONG</code></title>
+  <p>the name is too long in "(*MARK)", "(*PRUNE)",
+    "(*SKIP)", or "(*THEN)". Since: 2.34</p>
+</item>
+<item>
+<title><code>RegexError.CHARACTER_VALUE_TOO_LARGE</code></title>
+  <p>the character value in the \\u sequence is
+    too large. Since: 2.34</p>
+</item>
+</terms>
+
+</page>

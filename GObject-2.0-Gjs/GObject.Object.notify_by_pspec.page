@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<page id="GObject.Object.notify_by_pspec"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.Object" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_object_notify_by_pspec</api:name>
+      <api:arg>
+        <api:type>GObject.ParamSpec</api:type>
+        <api:name>pspec</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.Object.prototype.notify_by_pspec</title>
+  <synopsis><code mime="text/x-gjs">
+function notify_by_pspec(pspec: GObject.ParamSpec): void {
+    // Gjs wrapper for g_object_notify_by_pspec()
+}
+  </code></synopsis>
+  <p>Emits a "notify" signal for the property specified by <code>pspec</code> on <code>object</code>.</p>  <p>This function omits the property name lookup, hence it is faster than
+<link xref="GObject.Object.notify"/>.</p>  <p>One way to avoid using <link xref="GObject.Object.notify"/> from within the
+class that registered the properties, and using <link xref="GObject.Object.notify_by_pspec"/>
+instead, is to store the GParamSpec used with
+<link xref="GObject.install_property"/> inside a static array, e.g.:</p>  <p>|[&lt;!-- language="C" --&gt;
+  enum
+  {
+    PROP_0,
+    PROP_FOO,
+    PROP_LAST
+  };</p>  <p>  static GParamSpec *properties[PROP_LAST];</p>  <p>  static void
+  my_object_class_init (MyObjectClass *klass)
+  {
+    properties[PROP_FOO] = g_param_spec_int ("foo", "Foo", "The foo",
+                                             0, 100,
+                                             50,
+                                             G_PARAM_READWRITE);
+    g_object_class_install_property (gobject_class,
+                                     PROP_FOO,
+                                     properties[PROP_FOO]);
+  }
+]|</p>  <p>and then notify a change on the "foo" property with:</p>  <p>|[&lt;!-- language="C" --&gt;
+  g_object_notify_by_pspec (self, properties[PROP_FOO]);
+]|</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>pspec</code></title>
+  <p>the <link xref="GObject.ParamSpec"/> of a property installed on the class of <code>object</code>.</p>
+</item>
+</terms>
+
+</page>

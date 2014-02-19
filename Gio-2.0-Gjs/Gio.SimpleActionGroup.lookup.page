@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Gio.SimpleActionGroup.lookup"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.SimpleActionGroup" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.Action</api:type>
+      </api:returns>
+      <api:name>g_simple_action_group_lookup</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>action_name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.SimpleActionGroup.prototype.lookup</title>
+  <synopsis><code mime="text/x-gjs">
+function lookup(action_name: String): Gio.Action {
+    // Gjs wrapper for g_simple_action_group_lookup()
+}
+  </code></synopsis>
+  <p>Looks up the action with the name <code>action_name</code> in the group.</p>  <p>If no such action exists, returns <code>null</code>.</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>action_name</code></title>
+  <p>the name of an action</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

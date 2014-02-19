@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="GLib.hostname_is_non_ascii"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_hostname_is_non_ascii</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>hostname</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.hostname_is_non_ascii</title>
+  <synopsis><code mime="text/x-gjs">
+function hostname_is_non_ascii(hostname: String): Boolean {
+    // Gjs wrapper for g_hostname_is_non_ascii()
+}
+  </code></synopsis>
+  <p>Tests if <code>hostname</code> contains Unicode characters. If this returns
+<code>true</code>, you need to encode the hostname with <link xref="GLib.hostname_to_ascii"/>
+before using it in non-IDN-aware contexts.</p>  <p>Note that a hostname might contain a mix of encoded and unencoded
+segments, and so it is possible for <link xref="GLib.hostname_is_non_ascii"/> and
+<link xref="GLib.hostname_is_ascii_encoded"/> to both return <code>true</code> for a name.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>hostname</code></title>
+  <p>a hostname</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gio.TlsConnection-accept_certificate"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.TlsConnection" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.TlsConnection::accept_certificate</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_accept_certificate(peer_cert: Gio.TlsCertificate, errors: Gio.TlsCertificateFlags): Boolean {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>peer_cert</code></title>
+
+</item>
+<item>
+<title><code>errors</code></title>
+
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

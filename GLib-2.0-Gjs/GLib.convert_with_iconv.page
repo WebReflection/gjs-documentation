@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<page id="GLib.convert_with_iconv"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_convert_with_iconv</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>str</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gssize</api:type>
+        <api:name>len</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.IConv</api:type>
+        <api:name>converter</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gsize</api:type>
+        <api:name>bytes_read</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gsize</api:type>
+        <api:name>bytes_written</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.convert_with_iconv</title>
+  <synopsis><code mime="text/x-gjs">
+function convert_with_iconv(str: String, len: gssize, converter: GLib.IConv, bytes_read: gsize, bytes_written: gsize): String {
+    // Gjs wrapper for g_convert_with_iconv()
+}
+  </code></synopsis>
+  <p>Converts a string from one character set to another.</p>  <p>Note that you should use <link xref="GLib."/> for streaming conversions.
+Despite the fact that @byes_read can return information about partial
+characters, the g_convert_... functions are not generally suitable
+for streaming. If the underlying converter maintains internal state,
+then this won't be preserved across successive calls to <link xref="GLib.convert"/>,
+<link xref="GLib.convert_with_iconv"/> or <link xref="GLib.convert_with_fallback"/>. (An example of
+this is the GNU C converter for CP1255 which does not emit a base
+character until it knows that the next character is not a mark that
+could combine with the base character.)</p>
+
+<terms>
+<item>
+<title><code>str</code></title>
+  <p>the string to convert</p>
+</item>
+<item>
+<title><code>len</code></title>
+  <p>the length of the string, or -1 if the string is
+                nul-terminated (Note that some encodings may allow nul
+                bytes to occur inside strings. In that case, using -1
+                for the <code>len</code> parameter is unsafe)</p>
+</item>
+<item>
+<title><code>converter</code></title>
+  <p>conversion descriptor from <link xref="GLib.open"/></p>
+</item>
+<item>
+<title><code>bytes_read</code></title>
+  <p>location to store the number of bytes in the
+                input string that were successfully converted, or <code>null</code>.
+                Even if the conversion was successful, this may be
+                less than <code>len</code> if there were partial characters
+                at the end of the input. If the error
+                #G_CONVERT_ERROR_ILLEGAL_SEQUENCE occurs, the value
+                stored will the byte offset after the last valid
+                input sequence.</p>
+</item>
+<item>
+<title><code>bytes_written</code></title>
+  <p>the number of bytes stored in the output buffer (not
+                including the terminating nul).</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusNodeInfo-nodes"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusNodeInfo" group="field" type="guide"/>
+    <title type="link" role="topic">nodes</title>
+  </info>
+  <title>Gio.DBusNodeInfo.nodes</title>
+  <synopsis><code mime="text/x-gjs">
+DBusNodeInfo.nodes: Array(Gio.DBusNodeInfo) (Read / Write)
+  </code></synopsis>
+  <p>A pointer to a <code>null</code>-terminated array of pointers to <link xref="Gio.DBusNodeInfo"/> structures or <code>null</code> if there are no nodes.</p>
+
+</page>

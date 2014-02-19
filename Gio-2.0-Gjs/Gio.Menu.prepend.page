@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="Gio.Menu.prepend"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Menu" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_menu_prepend</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>label</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>detailed_action</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.Menu.prototype.prepend</title>
+  <synopsis><code mime="text/x-gjs">
+function prepend(label: String, detailed_action: String): void {
+    // Gjs wrapper for g_menu_prepend()
+}
+  </code></synopsis>
+  <p>Convenience function for prepending a normal menu item to the start
+of <code>menu</code>.  Combine <link xref="Gio.new"/> and <link xref="Gio.Menu.insert_item"/> for a more
+flexible alternative.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>label</code></title>
+  <p>the section label, or <code>null</code></p>
+</item>
+<item>
+<title><code>detailed_action</code></title>
+  <p>the detailed action string, or <code>null</code></p>
+</item>
+</terms>
+
+</page>

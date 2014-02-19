@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<page id="GObject.TypePlugin.complete_type_info"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.TypePlugin" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_type_plugin_complete_type_info</api:name>
+      <api:arg>
+        <api:type>GType</api:type>
+        <api:name>g_type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.TypeInfo</api:type>
+        <api:name>info</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.TypeValueTable</api:type>
+        <api:name>value_table</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.TypePlugin.prototype.complete_type_info</title>
+  <synopsis><code mime="text/x-gjs">
+function complete_type_info(g_type: GType, info: GObject.TypeInfo, value_table: GObject.TypeValueTable): void {
+    // Gjs wrapper for g_type_plugin_complete_type_info()
+}
+  </code></synopsis>
+  <p>Calls the @complete_type_info function from the <link xref="GObject.TypePluginClass"/> of <code>plugin</code>.
+There should be no need to use this function outside of the GObject
+type system itself.</p>
+
+<terms>
+<item>
+<title><code>g_type</code></title>
+  <p>the <link xref="GLib.Type"/> whose info is completed</p>
+</item>
+<item>
+<title><code>info</code></title>
+  <p>the <link xref="GObject.TypeInfo"/> struct to fill in</p>
+</item>
+<item>
+<title><code>value_table</code></title>
+  <p>the <link xref="GObject.TypeValueTable"/> to fill in</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<page id="GLib.file_open_tmp"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number</api:type>
+      </api:returns>
+      <api:name>g_file_open_tmp</api:name>
+      <api:arg>
+        <api:type>filename</api:type>
+        <api:name>tmpl</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.file_open_tmp</title>
+  <synopsis><code mime="text/x-gjs">
+function file_open_tmp(tmpl: filename): [return_value: Number, name_used: filename] {
+    // Gjs wrapper for g_file_open_tmp()
+}
+  </code></synopsis>
+  <p>Opens a file for writing in the preferred directory for temporary
+files (as returned by <link xref="GLib.get_tmp_dir"/>).</p>  <p><code>tmpl</code> should be a string in the GLib file name encoding containing
+a sequence of six 'X' characters, as the parameter to <link xref="GLib.mkstemp"/>.
+However, unlike these functions, the template should only be a
+basename, no directory components are allowed. If template is
+<code>null</code>, a default template is used.</p>  <p>Note that in contrast to <link xref="GLib.mkstemp"/> (and mkstemp()) <code>tmpl</code> is not
+modified, and might thus be a read-only literal string.</p>  <p>Upon success, and if <code>name_used</code> is non-<code>null</code>, the actual name used
+is returned in <code>name_used</code>. This string should be freed with <link xref="GLib.free"/>
+when not needed any longer. The returned name is in the GLib file
+name encoding.</p>
+
+<terms>
+<item>
+<title><code>tmpl</code></title>
+  <p>Template for file name, as in
+    <link xref="GLib.mkstemp"/>, basename only, or <code>null</code> for a default template</p>
+</item>
+<item>
+<title><code>return_value</code></title>
+
+</item>
+<item>
+<title><code>name_used</code></title>
+  <p>location to store actual name used,
+    or <code>null</code></p>
+</item>
+</terms>
+
+</page>

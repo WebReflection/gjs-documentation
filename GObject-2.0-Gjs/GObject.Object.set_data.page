@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="GObject.Object.set_data"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.Object" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_object_set_data</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>key</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>data</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.Object.prototype.set_data</title>
+  <synopsis><code mime="text/x-gjs">
+function set_data(key: String, data: gpointer): void {
+    // Gjs wrapper for g_object_set_data()
+}
+  </code></synopsis>
+  <p>Each object carries around a table of associations from
+strings to pointers.  This function lets you set an association.</p>  <p>If the object already had an association with that name,
+the old association will be destroyed.</p>
+
+<terms>
+<item>
+<title><code>key</code></title>
+  <p>name of the key</p>
+</item>
+<item>
+<title><code>data</code></title>
+  <p>data to associate with that key</p>
+</item>
+</terms>
+
+</page>

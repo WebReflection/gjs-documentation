@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="GLib.Bytes.new_take"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Bytes" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.Bytes</api:type>
+      </api:returns>
+      <api:name>g_bytes_new_take</api:name>
+      <api:arg>
+        <api:type>Array(guint8)</api:type>
+        <api:name>data</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.Bytes.new_take</title>
+  <synopsis><code mime="text/x-gjs">
+function new_take(data: Array(guint8)): GLib.Bytes {
+    // Gjs wrapper for g_bytes_new_take()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="GLib.Bytes"/> from <code>data</code>.</p>  <p>After this call, <code>data</code> belongs to the bytes and may no longer be
+modified by the caller.  <link xref="GLib.free"/> will be called on <code>data</code> when the
+bytes is no longer in use. Because of this <code>data</code> must have been created by
+a call to <link xref="GLib.malloc"/>, <link xref="GLib.malloc0"/> or <link xref="GLib.realloc"/> or by one of the many
+functions that wrap these calls (such as g_new(), <link xref="GLib.strdup"/>, etc).</p>  <p>For creating <link xref="GLib.Bytes"/> with memory from other allocators, see
+<link xref="GLib.new_with_free_func"/>.</p>  <p><code>data</code> may be <code>null</code> if <code>size</code> is 0.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>data</code></title>
+  <p>
+          the data to be used for the bytes</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

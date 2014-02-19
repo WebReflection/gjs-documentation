@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<page id="GLib.convert_with_fallback"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_convert_with_fallback</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>str</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gssize</api:type>
+        <api:name>len</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>to_codeset</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>from_codeset</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>fallback</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gsize</api:type>
+        <api:name>bytes_read</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gsize</api:type>
+        <api:name>bytes_written</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.convert_with_fallback</title>
+  <synopsis><code mime="text/x-gjs">
+function convert_with_fallback(str: String, len: gssize, to_codeset: String, from_codeset: String, fallback: String, bytes_read: gsize, bytes_written: gsize): String {
+    // Gjs wrapper for g_convert_with_fallback()
+}
+  </code></synopsis>
+  <p>Converts a string from one character set to another, possibly
+including fallback sequences for characters not representable
+in the output. Note that it is not guaranteed that the specification
+for the fallback sequences in <code>fallback</code> will be honored. Some
+systems may do an approximate conversion from <code>from_codeset</code>
+to <code>to_codeset</code> in their iconv() functions,
+in which case GLib will simply return that approximate conversion.</p>  <p>Note that you should use <link xref="GLib."/> for streaming conversions.
+Despite the fact that @byes_read can return information about partial
+characters, the g_convert_... functions are not generally suitable
+for streaming. If the underlying converter maintains internal state,
+then this won't be preserved across successive calls to <link xref="GLib.convert"/>,
+<link xref="GLib.convert_with_iconv"/> or <link xref="GLib.convert_with_fallback"/>. (An example of
+this is the GNU C converter for CP1255 which does not emit a base
+character until it knows that the next character is not a mark that
+could combine with the base character.)</p>
+
+<terms>
+<item>
+<title><code>str</code></title>
+  <p>the string to convert</p>
+</item>
+<item>
+<title><code>len</code></title>
+  <p>the length of the string, or -1 if the string is
+                nul-terminated (Note that some encodings may allow nul
+                bytes to occur inside strings. In that case, using -1
+                for the <code>len</code> parameter is unsafe)</p>
+</item>
+<item>
+<title><code>to_codeset</code></title>
+  <p>name of character set into which to convert <code>str</code></p>
+</item>
+<item>
+<title><code>from_codeset</code></title>
+  <p>character set of <code>str</code>.</p>
+</item>
+<item>
+<title><code>fallback</code></title>
+  <p>UTF-8 string to use in place of character not
+               present in the target encoding. (The string must be
+               representable in the target encoding).
+                  If <code>null</code>, characters not in the target encoding will
+                  be represented as Unicode escapes \uxxxx or \Uxxxxyyyy.</p>
+</item>
+<item>
+<title><code>bytes_read</code></title>
+  <p>location to store the number of bytes in the
+               input string that were successfully converted, or <code>null</code>.
+               Even if the conversion was successful, this may be
+               less than <code>len</code> if there were partial characters
+               at the end of the input.</p>
+</item>
+<item>
+<title><code>bytes_written</code></title>
+  <p>the number of bytes stored in the output buffer (not
+               including the terminating nul).</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

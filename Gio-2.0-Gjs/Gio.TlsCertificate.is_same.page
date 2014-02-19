@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="Gio.TlsCertificate.is_same"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.TlsCertificate" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_tls_certificate_is_same</api:name>
+      <api:arg>
+        <api:type>Gio.TlsCertificate</api:type>
+        <api:name>cert_two</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.TlsCertificate.prototype.is_same</title>
+  <synopsis><code mime="text/x-gjs">
+function is_same(cert_two: Gio.TlsCertificate): Boolean {
+    // Gjs wrapper for g_tls_certificate_is_same()
+}
+  </code></synopsis>
+  <p>Check if two <link xref="Gio.TlsCertificate"/> objects represent the same certificate.
+The raw DER byte data of the two certificates are checked for equality.
+This has the effect that two certificates may compare equal even if
+their <link xref="Gio.issuer"/>, <link xref="Gio.private-key"/>, or
+<link xref="Gio.private-key-pem"/> properties differ.</p>
+  <p>Since 2.34</p>
+<terms>
+<item>
+<title><code>cert_two</code></title>
+  <p>second certificate to compare</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

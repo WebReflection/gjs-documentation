@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page id="GLib.USEC_PER_SEC"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>GLib.USEC_PER_SEC</title>
+  <p>Number of microseconds in one second (1 million).
+This macro is provided for code readability.</p>
+
+</page>

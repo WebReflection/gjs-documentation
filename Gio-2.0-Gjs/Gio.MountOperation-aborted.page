@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="Gio.MountOperation-aborted"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.MountOperation" group="signal" type="guide"/>
+    <title type="link" role="topic">aborted</title>
+  </info>
+  <title>Gio.MountOperation::aborted</title>
+  <synopsis><code mime="text/x-gjs">
+connect('aborted', function (mountOperation, ): void);
+  </code></synopsis>
+  <p>Emitted by the backend when e.g. a device becomes unavailable
+while a mount operation is in progress.</p>  <p>Implementations of GMountOperation should handle this signal
+by dismissing open password dialogs.</p>
+  <p>Since 2.20</p>
+<terms>
+<item>
+<title><code>mountOperation</code></title>
+<p>instance of <link xref="Gio.MountOperation"/> that is emitting the signal</p>
+</item>
+</terms>
+
+</page>

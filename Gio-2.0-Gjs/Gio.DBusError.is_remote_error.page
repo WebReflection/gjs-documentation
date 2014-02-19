@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusError.is_remote_error"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_dbus_error_is_remote_error</api:name>
+      <api:arg>
+        <api:type>GLib.Error</api:type>
+        <api:name>error</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.is_remote_error</title>
+  <synopsis><code mime="text/x-gjs">
+function is_remote_error(error: GLib.Error): Boolean {
+    // Gjs wrapper for g_dbus_error_is_remote_error()
+}
+  </code></synopsis>
+  <p>Checks if <code>error</code> represents an error received via D-Bus from a remote peer. If so,
+use <link xref="Gio.dbus_error_get_remote_error"/> to get the name of the error.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>error</code></title>
+  <p>A <link xref="GLib.Error"/>.</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

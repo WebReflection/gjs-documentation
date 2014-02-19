@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Gio.File-get_child_for_display_name"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.File" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.File::get_child_for_display_name</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_get_child_for_display_name(display_name: String): Gio.File {
+}
+  </code></synopsis>
+  <p>Gets the child of <code>file</code> for a given <code>display_name</code> (i.e. a UTF-8
+version of the name). If this function fails, it returns <code>null</code>
+and @error will be set. This is very useful when constructing a
+<link xref="Gio.File"/> for a new file and the user entered the filename in the
+user interface, for instance when you select a directory and
+type a filename in the file selector.</p>  <p>This call does no blocking I/O.</p>
+
+<terms>
+<item>
+<title><code>display_name</code></title>
+  <p>string to a possible child</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link xref="Gio.File"/> to the specified child, or
+    <code>null</code> if the display name couldn't be converted.
+    Free the returned object with <link xref="GObject.unref"/>.</p>
+</item>
+</terms>
+
+</page>

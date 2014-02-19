@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gio.Settings.get_value"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Settings" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.Variant</api:type>
+      </api:returns>
+      <api:name>g_settings_get_value</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>key</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.Settings.prototype.get_value</title>
+  <synopsis><code mime="text/x-gjs">
+function get_value(key: String): GLib.Variant {
+    // Gjs wrapper for g_settings_get_value()
+}
+  </code></synopsis>
+  <p>Gets the value that is stored in <code>settings</code> for <code>key</code>.</p>  <p>It is a programmer error to give a <code>key</code> that isn't contained in the
+schema for <code>settings</code>.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>key</code></title>
+  <p>the key to get the value for</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

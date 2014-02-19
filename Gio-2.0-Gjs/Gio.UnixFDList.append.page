@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="Gio.UnixFDList.append"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.UnixFDList" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number</api:type>
+      </api:returns>
+      <api:name>g_unix_fd_list_append</api:name>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>fd</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.UnixFDList.prototype.append</title>
+  <synopsis><code mime="text/x-gjs">
+function append(fd: Number): Number {
+    // Gjs wrapper for g_unix_fd_list_append()
+}
+  </code></synopsis>
+  <p>Adds a file descriptor to <code>list</code>.</p>  <p>The file descriptor is duplicated using dup(). You keep your copy
+of the descriptor and the copy contained in <code>list</code> will be closed
+when <code>list</code> is finalized.</p>  <p>A possible cause of failure is exceeding the per-process or
+system-wide file descriptor limit.</p>  <p>The index of the file descriptor in the list is returned.  If you use
+this index with <link xref="Gio.get"/> then you will receive back a
+duplicated copy of the same file descriptor.</p>
+  <p>Since 2.24</p>
+<terms>
+<item>
+<title><code>fd</code></title>
+  <p>a valid open file descriptor</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

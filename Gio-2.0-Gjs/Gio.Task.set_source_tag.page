@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gio.Task.set_source_tag"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Task" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_task_set_source_tag</api:name>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>source_tag</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.Task.prototype.set_source_tag</title>
+  <synopsis><code mime="text/x-gjs">
+function set_source_tag(source_tag: gpointer): void {
+    // Gjs wrapper for g_task_set_source_tag()
+}
+  </code></synopsis>
+  <p>Sets <code>task</code>'s source tag. You can use this to tag a task return
+value with a particular pointer (usually a pointer to the function
+doing the tagging) and then later check it using
+<link xref="Gio.Task.get_source_tag"/> (or <link xref="Gio.AsyncResult.is_tagged"/>) in the
+task's "finish" function, to figure out if the response came from a
+particular place.</p>
+  <p>Since 2.36</p>
+<terms>
+<item>
+<title><code>source_tag</code></title>
+  <p>an opaque pointer indicating the source of this task</p>
+</item>
+</terms>
+
+</page>

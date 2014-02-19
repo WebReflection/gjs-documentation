@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="GLib.Node.depth"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Node" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number</api:type>
+      </api:returns>
+      <api:name>g_node_depth</api:name>
+    </api:function>
+  </info>
+  <title>GLib.Node.prototype.depth</title>
+  <synopsis><code mime="text/x-gjs">
+function depth(): Number {
+    // Gjs wrapper for g_node_depth()
+}
+  </code></synopsis>
+  <p>Gets the depth of a <link xref="GLib.Node"/>.</p>  <p>If <code>node</code> is <code>null</code> the depth is 0. The root node has a depth of 1.
+For the children of the root node the depth is 2. And so on.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

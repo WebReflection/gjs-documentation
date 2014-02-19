@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="Gio.InetAddress-is-site-local"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.InetAddress" group="property" type="guide"/>
+    <title type="link" role="topic">is-site-local</title>
+  </info>
+  <title>Gio.InetAddress.is_site_local</title>
+  <synopsis><code mime="text/x-gjs">
+InetAddress.is_site_local: Boolean (Read)
+  </code></synopsis>
+  <p>Whether this is a site-local address.
+See <link xref="Gio.InetAddress.get_is_loopback"/>.</p>
+  <p>Since 2.22</p>
+</page>

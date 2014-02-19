@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<page id="Gio.Vfs-local_file_add_info"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Vfs" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.Vfs::local_file_add_info</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_local_file_add_info(filename: String, device: Number, attribute_matcher: Gio.FileAttributeMatcher, info: Gio.FileInfo, cancellable: Gio.Cancellable, extra_data: gpointer, free_extra_data: GLib.DestroyNotify): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>filename</code></title>
+
+</item>
+<item>
+<title><code>device</code></title>
+
+</item>
+<item>
+<title><code>attribute_matcher</code></title>
+
+</item>
+<item>
+<title><code>info</code></title>
+
+</item>
+<item>
+<title><code>cancellable</code></title>
+
+</item>
+<item>
+<title><code>extra_data</code></title>
+
+</item>
+<item>
+<title><code>free_extra_data</code></title>
+
+</item>
+</terms>
+
+</page>

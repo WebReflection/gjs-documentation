@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="Gio.Mount.guess_content_type_finish"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Mount" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(String)</api:type>
+      </api:returns>
+      <api:name>g_mount_guess_content_type_finish</api:name>
+      <api:arg>
+        <api:type>Gio.AsyncResult</api:type>
+        <api:name>result</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.Mount.prototype.guess_content_type_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function guess_content_type_finish(result: Gio.AsyncResult): Array(String) {
+    // Gjs wrapper for g_mount_guess_content_type_finish()
+}
+  </code></synopsis>
+  <p>Finishes guessing content types of <code>mount</code>. If any errors occurred
+during the operation, @error will be set to contain the errors and
+<code>false</code> will be returned. In particular, you may get an
+<link xref="Gio.IOErrorEnum"/>.not_supported if the mount does not support content
+guessing.</p>
+  <p>Since 2.18</p>
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>a <link xref="Gio.AsyncResult"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<page id="Gio.dbus_address_get_stream_sync"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.IOStream</api:type>
+      </api:returns>
+      <api:name>g_dbus_address_get_stream_sync</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>address</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>out_guid</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.dbus_address_get_stream_sync</title>
+  <synopsis><code mime="text/x-gjs">
+function dbus_address_get_stream_sync(address: String, out_guid: String, cancellable: Gio.Cancellable): Gio.IOStream {
+    // Gjs wrapper for g_dbus_address_get_stream_sync()
+}
+  </code></synopsis>
+  <p>Synchronously connects to an endpoint specified by <code>address</code> and
+sets up the connection so it is in a state to run the client-side
+of the D-Bus authentication conversation.</p>  <p>This is a synchronous failable function. See
+<link xref="Gio.dbus_address_get_stream"/> for the asynchronous version.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>address</code></title>
+  <p>A valid D-Bus address.</p>
+</item>
+<item>
+<title><code>out_guid</code></title>
+  <p><code>null</code> or return location to store the GUID extracted from <code>address</code>, if any.</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>A <link xref="Gio.Cancellable"/> or <code>null</code>.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

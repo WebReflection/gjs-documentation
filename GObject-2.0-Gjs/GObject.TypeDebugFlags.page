@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="GObject.TypeDebugFlags"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>GObject.TypeDebugFlags</title>
+  <p>These flags used to be passed to <link xref="GObject.type_init_with_debug_flags"/> which
+is now deprecated.</p>  <p>If you need to enable debugging features, use the GOBJECT_DEBUG
+environment variable.</p>
+
+</page>

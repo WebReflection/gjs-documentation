@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.TlsError.quark"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.Quark</api:type>
+      </api:returns>
+      <api:name>g_tls_error_quark</api:name>
+    </api:function>
+  </info>
+  <title>Gio.quark</title>
+  <synopsis><code mime="text/x-gjs">
+function quark(): GLib.Quark {
+    // Gjs wrapper for g_tls_error_quark()
+}
+  </code></synopsis>
+  <p>Gets the TLS error quark.</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

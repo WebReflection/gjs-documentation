@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<page id="Gio.TlsCertificate"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>Gio.TlsCertificate</title>
+  <synopsis><code>
+const Gio = imports.gi.Gio;
+
+let tlsCertificate = new Gio.TlsCertificate({
+    <link xref='Gio.TlsCertificate-certificate'>certificate</link>: value,
+    <link xref='Gio.TlsCertificate-certificate-pem'>certificate_pem</link>: value,
+    <link xref='Gio.TlsCertificate-issuer'>issuer</link>: value,
+    <link xref='Gio.TlsCertificate-private-key'>private_key</link>: value,
+    <link xref='Gio.TlsCertificate-private-key-pem'>private_key_pem</link>: value,
+});
+  </code></synopsis>
+  <p>A certificate used for TLS authentication and encryption.
+This can represent either a certificate only (eg, the certificate
+received by a client from a server), or the combination of
+a certificate and a private key (which is needed when acting as a
+<link xref="Gio.TlsServerConnection"/>).</p>
+  <p>Since 2.28</p>
+  <synopsis>
+    <title>Hierarchy</title>
+    <tree>
+      <item>
+        <code>GObject.Object</code>
+      <item>
+        <code>Gio.TlsCertificate</code>
+      </item>
+      </item>
+    </tree>
+  </synopsis>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="property" style="linklist">
+    <title>Properties</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="signal" style="linklist">
+    <title>Signals</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="vfunc" style="linklist">
+    <title>Virtual functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

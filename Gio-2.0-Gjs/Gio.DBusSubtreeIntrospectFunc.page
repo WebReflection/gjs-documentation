@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusSubtreeIntrospectFunc"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Gio.DBusSubtreeIntrospectFunc</title>
+  <synopsis><code mime="text/x-gjs">
+function onDBusSubtreeIntrospectFunc(connection: Gio.DBusConnection, sender: String, object_path: String, node: String): Gio.DBusInterfaceInfo {
+}
+  </code></synopsis>
+  <p>The type of the @introspect function in <link xref="Gio.DBusSubtreeVTable"/>.</p>  <p>Subtrees are flat.  <code>node</code>, if non-<code>null</code>, is always exactly one
+segment of the object path (ie: it never contains a slash).</p>  <p>This function should return <code>null</code> to indicate that there is no object
+at this node.</p>  <p>If this function returns non-<code>null</code>, the return value is expected to
+be a <code>null</code>-terminated array of pointers to <link xref="Gio.DBusInterfaceInfo"/>
+structures describing the interfaces implemented by <code>node</code>.  This
+array will have <link xref="Gio.DBusInterfaceInfo.unref"/> called on each item
+before being freed with <link xref="GLib.free"/>.</p>  <p>The difference between returning <code>null</code> and an array containing zero
+items is that the standard DBus interfaces will returned to the
+remote introspector in the empty array case, but not in the <code>null</code>
+case.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>connection</code></title>
+  <p>A <link xref="Gio.DBusConnection"/>.</p>
+</item>
+<item>
+<title><code>sender</code></title>
+  <p>The unique bus name of the remote caller.</p>
+</item>
+<item>
+<title><code>object_path</code></title>
+  <p>The object path that was registered with <link xref="Gio.DBusConnection.register_subtree"/>.</p>
+</item>
+<item>
+<title><code>node</code></title>
+  <p>A node that is a child of <code>object_path</code> (relative to <code>object_path</code>) or <code>null</code> for the root of the subtree.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

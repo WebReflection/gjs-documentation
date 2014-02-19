@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<page id="Gio.Resolver.lookup_by_name_finish"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Resolver" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(Gio.InetAddress)</api:type>
+      </api:returns>
+      <api:name>g_resolver_lookup_by_name_finish</api:name>
+      <api:arg>
+        <api:type>Gio.AsyncResult</api:type>
+        <api:name>result</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.Resolver.prototype.lookup_by_name_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function lookup_by_name_finish(result: Gio.AsyncResult): Array(Gio.InetAddress) {
+    // Gjs wrapper for g_resolver_lookup_by_name_finish()
+}
+  </code></synopsis>
+  <p>Retrieves the result of a call to
+<link xref="Gio.Resolver.lookup_by_name_async"/>.</p>  <p>If the DNS resolution failed, @error (if non-<code>null</code>) will be set to
+a value from <link xref="Gio.ResolverError"/>. If the operation was cancelled,
+@error will be set to <link xref="Gio.IOErrorEnum"/>.cancelled.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>the result passed to your <link xref="Gio.AsyncReadyCallback"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

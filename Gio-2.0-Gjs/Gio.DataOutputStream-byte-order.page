@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="Gio.DataOutputStream-byte-order"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DataOutputStream" group="property" type="guide"/>
+    <title type="link" role="topic">byte-order</title>
+  </info>
+  <title>Gio.DataOutputStream.byte_order</title>
+  <synopsis><code mime="text/x-gjs">
+DataOutputStream.byte_order: Gio.DataStreamByteOrder (Read / Write)
+  </code></synopsis>
+  <p>Determines the byte ordering that is used when writing
+multi-byte entities (such as integers) to the stream.</p>
+
+</page>

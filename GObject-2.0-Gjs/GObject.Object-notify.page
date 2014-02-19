@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<page id="GObject.Object-notify"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.Object" group="signal" type="guide"/>
+    <title type="link" role="topic">notify</title>
+  </info>
+  <title>GObject.Object::notify</title>
+  <synopsis><code mime="text/x-gjs">
+connect('notify', function (object, pspec: GObject.ParamSpec, ): void);
+  </code></synopsis>
+  <p>The notify signal is emitted on an object when one of its
+properties has been changed. Note that getting this signal
+doesn't guarantee that the value of the property has actually
+changed, it may also be emitted when the setter for the property
+is called to reinstate the previous value.</p>  <p>This signal is typically used to obtain change notification for a
+single property, by specifying the property name as a detail in the
+g_signal_connect() call, like this:
+|[&lt;!-- language="C" --&gt;
+g_signal_connect (text_view-&gt;buffer, "notify::paste-target-list",
+                  G_CALLBACK (gtk_text_view_target_list_notify),
+                  text_view)
+]|
+It is important to note that you must use
+[canonical][canonical-parameter-name] parameter names as
+detail strings for the notify signal.</p>
+
+<terms>
+<item>
+<title><code>object</code></title>
+<p>instance of <link xref="GObject.Object"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>pspec</code></title>
+  <p>the <link xref="GObject.ParamSpec"/> of the property which changed.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<page id="Gio.Icon"
+      type="guide"
+      style="interface"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="interface" type="guide"/>
+  </info>
+  <title>Gio.Icon</title>
+  <synopsis><code>
+const Gio = imports.gi.Gio;
+
+let icon = new Gio.Icon();
+  </code></synopsis>
+  <p><link xref="Gio.Icon"/> is a very minimal interface for icons. It provides functions
+for checking the equality of two icons, hashing of icons and
+serializing an icon to and from strings.</p>  <p><link xref="Gio.Icon"/> does not provide the actual pixmap for the icon as this is out
+of GIO's scope, however implementations of <link xref="Gio.Icon"/> may contain the name
+of an icon (see <link xref="Gio.ThemedIcon"/>), or the path to an icon (see <link xref="Gio.LoadableIcon"/>).</p>  <p>To obtain a hash of a <link xref="Gio.Icon"/>, see <link xref="Gio.icon_hash"/>.</p>  <p>To check if two #GIcons are equal, see <link xref="Gio.equal"/>.</p>  <p>For serializing a <link xref="Gio.Icon"/>, use <link xref="Gio.serialize"/> and
+<link xref="Gio.icon_deserialize"/>.</p>  <p>If you want to consume <link xref="Gio.Icon"/> (for example, in a toolkit) you must
+be prepared to handle at least the three following cases:
+<link xref="Gio.LoadableIcon"/>, <link xref="Gio.ThemedIcon"/> and <link xref="Gio.EmblemedIcon"/>.  It may also make
+sense to have fast-paths for other cases (like handling #GdkPixbuf
+directly, for example) but all compliant <link xref="Gio.Icon"/> implementations
+outside of GIO must implement <link xref="Gio.LoadableIcon"/>.</p>  <p>If your application or library provides one or more <link xref="Gio.Icon"/>
+implementations you need to ensure that your new implementation also
+implements <link xref="Gio.LoadableIcon"/>.  Additionally, you must provide an
+implementation of <link xref="Gio.serialize"/> that gives a result that is
+understood by <link xref="Gio.icon_deserialize"/>, yielding one of the built-in icon
+types.</p>
+
+  <synopsis>
+    <title>Prerequisites</title>
+    <p>Icon requires GObject.Object</p>
+  </synopsis>
+  <synopsis>
+    <title>Known Implementations</title>
+    <p>%s is implemented by BytesIcon,Emblem,EmblemedIcon,FileIcon and ThemedIcon</p>
+  </synopsis>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="property" style="linklist">
+    <title>Properties</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="signal" style="linklist">
+    <title>Signals</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="vfunc" style="linklist">
+    <title>Virtual functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

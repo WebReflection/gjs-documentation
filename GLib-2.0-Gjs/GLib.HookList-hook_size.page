@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="GLib.HookList-hook_size"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.HookList" group="field" type="guide"/>
+    <title type="link" role="topic">hook_size</title>
+  </info>
+  <title>GLib.HookList.hook_size</title>
+  <synopsis><code mime="text/x-gjs">
+HookList.hook_size: Number (Read / Write)
+  </code></synopsis>
+  <p>the size of the <link xref="GLib.HookList"/> elements, in bytes</p>
+
+</page>

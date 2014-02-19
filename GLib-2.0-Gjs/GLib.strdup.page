@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="GLib.strdup"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_strdup</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>str</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.strdup</title>
+  <synopsis><code mime="text/x-gjs">
+function strdup(str: String): String {
+    // Gjs wrapper for g_strdup()
+}
+  </code></synopsis>
+  <p>Duplicates a string. If <code>str</code> is <code>null</code> it returns <code>null</code>.
+The returned string should be freed with <link xref="GLib.free"/>
+when no longer needed.</p>
+
+<terms>
+<item>
+<title><code>str</code></title>
+  <p>the string to duplicate</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

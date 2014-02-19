@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<page id="Gio.TlsError"
+      type="topic"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Gio.TlsError</title>
+  <p>An error code used with %G_TLS_ERROR in a <link xref="GLib.Error"/> returned from a
+TLS-related routine.</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>TlsError.UNAVAILABLE</code></title>
+  <p>No TLS provider is available</p>
+</item>
+<item>
+<title><code>TlsError.MISC</code></title>
+  <p>Miscellaneous TLS error</p>
+</item>
+<item>
+<title><code>TlsError.BAD_CERTIFICATE</code></title>
+  <p>A certificate could not be parsed</p>
+</item>
+<item>
+<title><code>TlsError.NOT_TLS</code></title>
+  <p>The TLS handshake failed because the
+  peer does not seem to be a TLS server.</p>
+</item>
+<item>
+<title><code>TlsError.HANDSHAKE</code></title>
+  <p>The TLS handshake failed because the
+  peer's certificate was not acceptable.</p>
+</item>
+<item>
+<title><code>TlsError.CERTIFICATE_REQUIRED</code></title>
+  <p>The TLS handshake failed because
+  the server requested a client-side certificate, but none was
+  provided. See <link xref="Gio.TlsConnection.set_certificate"/>.</p>
+</item>
+<item>
+<title><code>TlsError.EOF</code></title>
+  <p>The TLS connection was closed without proper
+  notice, which may indicate an attack. See
+  <link xref="Gio.TlsConnection.set_require_close_notify"/>.</p>
+</item>
+</terms>
+
+</page>

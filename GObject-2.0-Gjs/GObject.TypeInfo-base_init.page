@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="GObject.TypeInfo-base_init"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.TypeInfo" group="field" type="guide"/>
+    <title type="link" role="topic">base_init</title>
+  </info>
+  <title>GObject.TypeInfo.base_init</title>
+  <synopsis><code mime="text/x-gjs">
+TypeInfo.base_init: GObject.BaseInitFunc (Read)
+  </code></synopsis>
+  <p>Location of the base initialization function (optional).</p>
+
+</page>

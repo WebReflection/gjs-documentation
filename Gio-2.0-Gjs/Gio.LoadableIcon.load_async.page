@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<page id="Gio.LoadableIcon.load_async"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.LoadableIcon" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_loadable_icon_load_async</api:name>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>size</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.AsyncReadyCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.LoadableIcon.prototype.load_async</title>
+  <synopsis><code mime="text/x-gjs">
+function load_async(size: Number, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+    // Gjs wrapper for g_loadable_icon_load_async()
+}
+  </code></synopsis>
+  <p>Loads an icon asynchronously. To finish this function, see
+<link xref="Gio.load_finish"/>. For the synchronous, blocking
+version of this function, see <link xref="Gio.LoadableIcon.load"/>.</p>
+
+<terms>
+<item>
+<title><code>size</code></title>
+  <p>an integer.</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional <link xref="Gio.Cancellable"/> object, <code>null</code> to ignore.</p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>a <link xref="Gio.AsyncReadyCallback"/> to call when the
+           request is satisfied</p>
+</item>
+</terms>
+
+</page>

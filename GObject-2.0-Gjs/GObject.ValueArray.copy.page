@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="GObject.ValueArray.copy"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.ValueArray" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GObject.ValueArray</api:type>
+      </api:returns>
+      <api:name>g_value_array_copy</api:name>
+    </api:function>
+  </info>
+  <title>GObject.ValueArray.prototype.copy</title>
+  <synopsis><code mime="text/x-gjs">
+function copy(): GObject.ValueArray {
+    // Gjs wrapper for g_value_array_copy()
+}
+  </code></synopsis>
+  <p>Construct an exact copy of a <link xref="GObject.ValueArray"/> by duplicating all its
+contents.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="GLib.VariantType.next"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.VariantType" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.VariantType</api:type>
+      </api:returns>
+      <api:name>g_variant_type_next</api:name>
+    </api:function>
+  </info>
+  <title>GLib.VariantType.prototype.next</title>
+  <synopsis><code mime="text/x-gjs">
+function next(): GLib.VariantType {
+    // Gjs wrapper for g_variant_type_next()
+}
+  </code></synopsis>
+  <p>Determines the next item type of a tuple or dictionary entry
+type.</p>  <p><code>type</code> must be the result of a previous call to
+<link xref="GLib.VariantType.first"/> or <link xref="GLib.VariantType.next"/>.</p>  <p>If called on the key type of a dictionary entry then this call
+returns the value type.  If called on the value type of a dictionary
+entry then this call returns <code>null</code>.</p>  <p>For tuples, <code>null</code> is returned when <code>type</code> is the last item in a tuple.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page id="GObject.BindingFlags"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>GObject.BindingFlags</title>
+  <p>Flags to be passed to <link xref="GObject.bind_property"/> or
+<link xref="GObject.bind_property_full"/>.</p>  <p>This enumeration can be extended at later date.</p>
+  <p>Since 2.26</p>
+</page>

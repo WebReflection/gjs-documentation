@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusMessage.lock"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusMessage" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_dbus_message_lock</api:name>
+    </api:function>
+  </info>
+  <title>Gio.DBusMessage.prototype.lock</title>
+  <synopsis><code mime="text/x-gjs">
+function lock(): void {
+    // Gjs wrapper for g_dbus_message_lock()
+}
+  </code></synopsis>
+  <p>If <code>message</code> is locked, does nothing. Otherwise locks the message.</p>
+  <p>Since 2.26</p>
+
+</page>

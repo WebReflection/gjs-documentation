@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="GLib.dataset_destroy"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_dataset_destroy</api:name>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>dataset_location</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.dataset_destroy</title>
+  <synopsis><code mime="text/x-gjs">
+function dataset_destroy(dataset_location: gpointer): void {
+    // Gjs wrapper for g_dataset_destroy()
+}
+  </code></synopsis>
+  <p>Destroys the dataset, freeing all memory allocated, and calling any
+destroy functions set for data elements.</p>
+
+<terms>
+<item>
+<title><code>dataset_location</code></title>
+  <p>the location identifying the dataset.</p>
+</item>
+</terms>
+
+</page>

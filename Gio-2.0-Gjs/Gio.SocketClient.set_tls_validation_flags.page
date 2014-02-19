@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gio.SocketClient.set_tls_validation_flags"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.SocketClient" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_socket_client_set_tls_validation_flags</api:name>
+      <api:arg>
+        <api:type>Gio.TlsCertificateFlags</api:type>
+        <api:name>flags</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.SocketClient.prototype.set_tls_validation_flags</title>
+  <synopsis><code mime="text/x-gjs">
+function set_tls_validation_flags(flags: Gio.TlsCertificateFlags): void {
+    // Gjs wrapper for g_socket_client_set_tls_validation_flags()
+}
+  </code></synopsis>
+  <p>Sets the TLS validation flags used when creating TLS connections
+via <code>client</code>. The default value is <link xref="Gio.TlsCertificateFlags"/>.validate_all.</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>flags</code></title>
+  <p>the validation flags</p>
+</item>
+</terms>
+
+</page>

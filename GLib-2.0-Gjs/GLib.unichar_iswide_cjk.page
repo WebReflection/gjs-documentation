@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<page id="GLib.unichar_iswide_cjk"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_unichar_iswide_cjk</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>c</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.unichar_iswide_cjk</title>
+  <synopsis><code mime="text/x-gjs">
+function unichar_iswide_cjk(c: String): Boolean {
+    // Gjs wrapper for g_unichar_iswide_cjk()
+}
+  </code></synopsis>
+  <p>Determines if a character is typically rendered in a double-width
+cell under legacy East Asian locales.  If a character is wide according to
+<link xref="GLib.unichar_iswide"/>, then it is also reported wide with this function, but
+the converse is not necessarily true. See the
+[Unicode Standard Annex #11](http://www.unicode.org/reports/tr11/)
+for details.</p>  <p>If a character passes the <link xref="GLib.unichar_iswide"/> test then it will also pass
+this test, but not the other way around.  Note that some characters may
+pas both this test and <link xref="GLib.unichar_iszerowidth"/>.</p>
+  <p>Since 2.12</p>
+<terms>
+<item>
+<title><code>c</code></title>
+  <p>a Unicode character</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

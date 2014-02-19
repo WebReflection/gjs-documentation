@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<page id="GLib.OptionEntry-arg_data"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.OptionEntry" group="field" type="guide"/>
+    <title type="link" role="topic">arg_data</title>
+  </info>
+  <title>GLib.OptionEntry.arg_data</title>
+  <synopsis><code mime="text/x-gjs">
+OptionEntry.arg_data: gpointer (Read)
+  </code></synopsis>
+  <p>If the @arg type is <link xref="GLib.OptionArg"/>.callback, then @arg_data must
+ point to a <link xref="GLib.OptionArgFunc"/> callback function, which will be called to handle
+ the extra argument. Otherwise, @arg_data is a pointer to a location to store
+ the value, the required type of the location depends on the @arg type:
+ &lt;variablelist&gt;
+ &lt;varlistentry&gt;
+ &lt;term&gt;<link xref="GLib.OptionArg"/>.none&lt;/term&gt;
+ &lt;listitem&gt;&lt;para&gt;%gboolean&lt;/para&gt;&lt;/listitem&gt;
+ &lt;/varlistentry&gt;
+ &lt;varlistentry&gt;
+ &lt;term&gt;<link xref="GLib.OptionArg"/>.string&lt;/term&gt;
+ &lt;listitem&gt;&lt;para&gt;%gchar*&lt;/para&gt;&lt;/listitem&gt;
+ &lt;/varlistentry&gt;
+ &lt;varlistentry&gt;
+ &lt;term&gt;<link xref="GLib.OptionArg"/>.int&lt;/term&gt;
+ &lt;listitem&gt;&lt;para&gt;%gint&lt;/para&gt;&lt;/listitem&gt;
+ &lt;/varlistentry&gt;
+ &lt;varlistentry&gt;
+ &lt;term&gt;<link xref="GLib.OptionArg"/>.filename&lt;/term&gt;
+ &lt;listitem&gt;&lt;para&gt;%gchar*&lt;/para&gt;&lt;/listitem&gt;
+ &lt;/varlistentry&gt;
+ &lt;varlistentry&gt;
+ &lt;term&gt;<link xref="GLib.OptionArg"/>.string_array&lt;/term&gt;
+ &lt;listitem&gt;&lt;para&gt;%gchar**&lt;/para&gt;&lt;/listitem&gt;
+ &lt;/varlistentry&gt;
+ &lt;varlistentry&gt;
+ &lt;term&gt;<link xref="GLib.OptionArg"/>.filename_array&lt;/term&gt;
+ &lt;listitem&gt;&lt;para&gt;%gchar**&lt;/para&gt;&lt;/listitem&gt;
+ &lt;/varlistentry&gt;
+ &lt;varlistentry&gt;
+ &lt;term&gt;<link xref="GLib.OptionArg"/>.double&lt;/term&gt;
+ &lt;listitem&gt;&lt;para&gt;%gdouble&lt;/para&gt;&lt;/listitem&gt;
+ &lt;/varlistentry&gt;
+ &lt;/variablelist&gt;
+ If @arg type is <link xref="GLib.OptionArg"/>.string or <link xref="GLib.OptionArg"/>.filename the location
+ will contain a newly allocated string if the option was given. That string
+ needs to be freed by the callee using <link xref="GLib.free"/>. Likewise if @arg type is
+ <link xref="GLib.OptionArg"/>.string_array or <link xref="GLib.OptionArg"/>.filename_array, the data should
+ be freed using <link xref="GLib.strfreev"/>.</p>
+
+</page>

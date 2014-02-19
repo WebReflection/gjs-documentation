@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusProxy-g-signal"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusProxy" group="signal" type="guide"/>
+    <title type="link" role="topic">g-signal</title>
+  </info>
+  <title>Gio.DBusProxy::g-signal</title>
+  <synopsis><code mime="text/x-gjs">
+connect('g-signal', function (dBusProxy, sender_name: String, signal_name: String, parameters: GLib.Variant, ): void);
+  </code></synopsis>
+  <p>Emitted when a signal from the remote object and interface that @proxy is for, has been received.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>dBusProxy</code></title>
+<p>instance of <link xref="Gio.DBusProxy"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>sender_name</code></title>
+  <p>The sender of the signal or <code>null</code> if the connection is not a bus connection.</p>
+</item>
+<item>
+<title><code>signal_name</code></title>
+  <p>The name of the signal.</p>
+</item>
+<item>
+<title><code>parameters</code></title>
+  <p>A <link xref="GLib.Variant"/> tuple with parameters for the signal.</p>
+</item>
+</terms>
+
+</page>

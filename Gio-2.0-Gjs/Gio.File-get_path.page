@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="Gio.File-get_path"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.File" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.File::get_path</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_get_path(): String {
+}
+  </code></synopsis>
+  <p>Gets the local pathname for <link xref="Gio.File"/>, if one exists.</p>  <p>This call does no blocking I/O.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>string containing the <link xref="Gio.File"/>'s path, or <code>null</code> if
+    no such path exists. The returned string should be
+    freed with <link xref="GLib.free"/> when no longer needed.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="GObject.ValueArray-values"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.ValueArray" group="field" type="guide"/>
+    <title type="link" role="topic">values</title>
+  </info>
+  <title>GObject.ValueArray.values</title>
+  <synopsis><code mime="text/x-gjs">
+ValueArray.values: GObject.Value (Read)
+  </code></synopsis>
+  <p>array of values</p>
+
+</page>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<page id="Gio.AsyncReadyCallback"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Gio.AsyncReadyCallback</title>
+  <synopsis><code mime="text/x-gjs">
+function onAsyncReadyCallback(source_object: GObject.Object, res: Gio.AsyncResult): void {
+}
+  </code></synopsis>
+  <p>Type definition for a function that will be called back when an asynchronous
+operation within GIO has been completed.</p>
+
+<terms>
+<item>
+<title><code>source_object</code></title>
+  <p>the object the asynchronous operation was started with.</p>
+</item>
+<item>
+<title><code>res</code></title>
+  <p>a <link xref="Gio.AsyncResult"/>.</p>
+</item>
+</terms>
+
+</page>

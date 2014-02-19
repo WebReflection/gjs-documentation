@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<page id="Gio.DataOutputStream.put_uint32"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DataOutputStream" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_data_output_stream_put_uint32</api:name>
+      <api:arg>
+        <api:type>guint32</api:type>
+        <api:name>data</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DataOutputStream.prototype.put_uint32</title>
+  <synopsis><code mime="text/x-gjs">
+function put_uint32(data: guint32, cancellable: Gio.Cancellable): Boolean {
+    // Gjs wrapper for g_data_output_stream_put_uint32()
+}
+  </code></synopsis>
+  <p>Puts an unsigned 32-bit integer into the stream.</p>
+
+<terms>
+<item>
+<title><code>data</code></title>
+  <p>a #guint32.</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional <link xref="Gio.Cancellable"/> object, <code>null</code> to ignore.</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

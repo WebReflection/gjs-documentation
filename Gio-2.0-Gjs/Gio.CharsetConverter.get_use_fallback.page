@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.CharsetConverter.get_use_fallback"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.CharsetConverter" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_charset_converter_get_use_fallback</api:name>
+    </api:function>
+  </info>
+  <title>Gio.CharsetConverter.prototype.get_use_fallback</title>
+  <synopsis><code mime="text/x-gjs">
+function get_use_fallback(): Boolean {
+    // Gjs wrapper for g_charset_converter_get_use_fallback()
+}
+  </code></synopsis>
+  <p>Gets the <link xref="Gio.use-fallback"/> property.</p>
+  <p>Since 2.24</p>
+<terms>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

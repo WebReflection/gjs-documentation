@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gio.FileInfo.set_modification_time"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.FileInfo" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_file_info_set_modification_time</api:name>
+      <api:arg>
+        <api:type>GLib.TimeVal</api:type>
+        <api:name>mtime</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.FileInfo.prototype.set_modification_time</title>
+  <synopsis><code mime="text/x-gjs">
+function set_modification_time(mtime: GLib.TimeVal): void {
+    // Gjs wrapper for g_file_info_set_modification_time()
+}
+  </code></synopsis>
+  <p>Sets the %G_FILE_ATTRIBUTE_TIME_MODIFIED attribute in the file
+info to the given time value.</p>
+
+<terms>
+<item>
+<title><code>mtime</code></title>
+  <p>a <link xref="GLib.TimeVal"/>.</p>
+</item>
+</terms>
+
+</page>

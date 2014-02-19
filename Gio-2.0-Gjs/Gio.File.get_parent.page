@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="Gio.File.get_parent"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.File" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.File</api:type>
+      </api:returns>
+      <api:name>g_file_get_parent</api:name>
+    </api:function>
+  </info>
+  <title>Gio.File.prototype.get_parent</title>
+  <synopsis><code mime="text/x-gjs">
+function get_parent(): Gio.File {
+    // Gjs wrapper for g_file_get_parent()
+}
+  </code></synopsis>
+  <p>Gets the parent directory for the <code>file</code>.
+If the <code>file</code> represents the root directory of the
+file system, then <code>null</code> will be returned.</p>  <p>This call does no blocking I/O.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

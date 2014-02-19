@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gio.Resource.ref"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Resource" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.Resource</api:type>
+      </api:returns>
+      <api:name>g_resource_ref</api:name>
+    </api:function>
+  </info>
+  <title>Gio.Resource.prototype.ref</title>
+  <synopsis><code mime="text/x-gjs">
+function ref(): Gio.Resource {
+    // Gjs wrapper for g_resource_ref()
+}
+  </code></synopsis>
+  <p>Atomically increments the reference count of @array by one. This
+function is MT-safe and may be called from any thread.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

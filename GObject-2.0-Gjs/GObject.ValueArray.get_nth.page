@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="GObject.ValueArray.get_nth"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.ValueArray" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GObject.Value</api:type>
+      </api:returns>
+      <api:name>g_value_array_get_nth</api:name>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>index_</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.ValueArray.prototype.get_nth</title>
+  <synopsis><code mime="text/x-gjs">
+function get_nth(index_: Number): GObject.Value {
+    // Gjs wrapper for g_value_array_get_nth()
+}
+  </code></synopsis>
+  <p>Return a pointer to the value at <code>index_</code> containd in <code>value_array</code>.</p>
+
+<terms>
+<item>
+<title><code>index_</code></title>
+  <p>index of the value of interest</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

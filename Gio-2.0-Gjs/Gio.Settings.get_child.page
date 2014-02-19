@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<page id="Gio.Settings.get_child"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Settings" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.Settings</api:type>
+      </api:returns>
+      <api:name>g_settings_get_child</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.Settings.prototype.get_child</title>
+  <synopsis><code mime="text/x-gjs">
+function get_child(name: String): Gio.Settings {
+    // Gjs wrapper for g_settings_get_child()
+}
+  </code></synopsis>
+  <p>Creates a child settings object which has a base path of
+`base-path/<code>name</code>`, where `base-path` is the base path of
+<code>settings</code>.</p>  <p>The schema for the child settings object must have been declared
+in the schema of <code>settings</code> using a &lt;child&gt; element.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>name</code></title>
+  <p>the name of the child schema</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Gio.MountOperation-ask-question"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.MountOperation" group="signal" type="guide"/>
+    <title type="link" role="topic">ask-question</title>
+  </info>
+  <title>Gio.MountOperation::ask-question</title>
+  <synopsis><code mime="text/x-gjs">
+connect('ask-question', function (mountOperation, message: String, choices: Array(String), ): void);
+  </code></synopsis>
+  <p>Emitted when asking the user a question and gives a list of
+choices for the user to choose from.</p>  <p>If the message contains a line break, the first line should be
+presented as a heading. For example, it may be used as the
+primary text in a #GtkMessageDialog.</p>
+
+<terms>
+<item>
+<title><code>mountOperation</code></title>
+<p>instance of <link xref="Gio.MountOperation"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>message</code></title>
+  <p>string containing a message to display to the user.</p>
+</item>
+<item>
+<title><code>choices</code></title>
+  <p>an array of strings for each possible choice.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page id="Gio.VolumeMonitor-volume_changed"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.VolumeMonitor" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.VolumeMonitor::volume_changed</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_volume_changed(volume: Gio.Volume): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>volume</code></title>
+
+</item>
+</terms>
+
+</page>

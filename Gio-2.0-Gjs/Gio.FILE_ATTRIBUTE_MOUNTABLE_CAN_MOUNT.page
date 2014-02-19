@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page id="Gio.FILE_ATTRIBUTE_MOUNTABLE_CAN_MOUNT"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>Gio.FILE_ATTRIBUTE_MOUNTABLE_CAN_MOUNT</title>
+  <p>A key in the "mountable" namespace for checking if a file (of type G_FILE_TYPE_MOUNTABLE) is mountable.
+Corresponding <link xref="Gio.FileAttributeType"/> is <link xref="Gio.FileAttributeType"/>.boolean.</p>
+
+</page>

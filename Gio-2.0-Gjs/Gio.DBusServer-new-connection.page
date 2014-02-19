@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusServer-new-connection"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusServer" group="signal" type="guide"/>
+    <title type="link" role="topic">new-connection</title>
+  </info>
+  <title>Gio.DBusServer::new-connection</title>
+  <synopsis><code mime="text/x-gjs">
+connect('new-connection', function (dBusServer, connection: Gio.DBusConnection, ): Boolean);
+  </code></synopsis>
+  <p>Emitted when a new authenticated connection has been made. Use
+<link xref="Gio.DBusConnection.get_peer_credentials"/> to figure out what
+identity (if any), was authenticated.</p>  <p>If you want to accept the connection, take a reference to the
+<code>connection</code> object and return <code>true</code>. When you are done with the
+connection call <link xref="Gio.DBusConnection.close"/> and give up your
+reference. Note that the other peer may disconnect at any time -
+a typical thing to do when accepting a connection is to listen to
+the <link xref="Gio.DBusConnection-closed"/> signal.</p>  <p>If <link xref="Gio.flags"/> contains <link xref="Gio.DBusServerFlags"/>.run_in_thread
+then the signal is emitted in a new thread dedicated to the
+connection. Otherwise the signal is emitted in the
+[thread-default main context][g-main-context-push-thread-default]
+of the thread that @server was constructed in.</p>  <p>You are guaranteed that signal handlers for this signal runs
+before incoming messages on <code>connection</code> are processed. This means
+that it's suitable to call <link xref="Gio.DBusConnection.register_object"/> or
+similar from the signal handler.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>dBusServer</code></title>
+<p>instance of <link xref="Gio.DBusServer"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>connection</code></title>
+  <p>A <link xref="Gio.DBusConnection"/> for the new connection.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> to claim <code>connection</code>, <code>false</code> to let other handlers
+run.</p>
+</item>
+</terms>
+
+</page>

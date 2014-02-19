@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<page id="Gio.FileInfo.set_attribute_status"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.FileInfo" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_file_info_set_attribute_status</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>attribute</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.FileAttributeStatus</api:type>
+        <api:name>status</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.FileInfo.prototype.set_attribute_status</title>
+  <synopsis><code mime="text/x-gjs">
+function set_attribute_status(attribute: String, status: Gio.FileAttributeStatus): Boolean {
+    // Gjs wrapper for g_file_info_set_attribute_status()
+}
+  </code></synopsis>
+  <p>Sets the attribute status for an attribute key. This is only
+needed by external code that implement <link xref="Gio.File.set_attributes_from_info"/>
+or similar functions.</p>  <p>The attribute must exist in <code>info</code> for this to work. Otherwise <code>false</code>
+is returned and <code>info</code> is unchanged.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>attribute</code></title>
+  <p>a file attribute key</p>
+</item>
+<item>
+<title><code>status</code></title>
+  <p>a <link xref="Gio.FileAttributeStatus"/></p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

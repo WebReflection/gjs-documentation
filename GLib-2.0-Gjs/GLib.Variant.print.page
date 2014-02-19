@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="GLib.Variant.print"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Variant" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_variant_print</api:name>
+      <api:arg>
+        <api:type>Boolean</api:type>
+        <api:name>type_annotate</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.Variant.prototype.print</title>
+  <synopsis><code mime="text/x-gjs">
+function print(type_annotate: Boolean): String {
+    // Gjs wrapper for g_variant_print()
+}
+  </code></synopsis>
+  <p>Pretty-prints <code>value</code> in the format understood by <link xref="GLib.variant_parse"/>.</p>  <p>The format is described [here][gvariant-text].</p>  <p>If <code>type_annotate</code> is <code>true</code>, then type information is included in
+the output.</p>
+  <p>Since 2.24</p>
+<terms>
+<item>
+<title><code>type_annotate</code></title>
+  <p><code>true</code> if type information should be included in
+                the output</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

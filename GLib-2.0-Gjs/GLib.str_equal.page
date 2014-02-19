@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<page id="GLib.str_equal"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_str_equal</api:name>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>v1</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>v2</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.str_equal</title>
+  <synopsis><code mime="text/x-gjs">
+function str_equal(v1: gpointer, v2: gpointer): Boolean {
+    // Gjs wrapper for g_str_equal()
+}
+  </code></synopsis>
+  <p>Compares two strings for byte-by-byte equality and returns <code>true</code>
+if they are equal. It can be passed to <link xref="GLib.new"/> as the
+@key_equal_func parameter, when using non-<code>null</code> strings as keys in a
+<link xref="GLib.HashTable"/>.</p>  <p>Note that this function is primarily meant as a hash table comparison
+function. For a general-purpose, <code>null</code>-safe string comparison function,
+see <link xref="GLib.strcmp0"/>.</p>
+
+<terms>
+<item>
+<title><code>v1</code></title>
+  <p>a key</p>
+</item>
+<item>
+<title><code>v2</code></title>
+  <p>a key to compare with <code>v1</code></p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

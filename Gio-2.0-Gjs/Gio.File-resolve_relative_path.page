@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<page id="Gio.File-resolve_relative_path"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.File" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.File::resolve_relative_path</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_resolve_relative_path(relative_path: String): Gio.File {
+}
+  </code></synopsis>
+  <p>Resolves a relative path for <code>file</code> to an absolute path.</p>  <p>This call does no blocking I/O.</p>
+
+<terms>
+<item>
+<title><code>relative_path</code></title>
+  <p>a given relative path string</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><link xref="Gio.File"/> to the resolved path.
+    <code>null</code> if <code>relative_path</code> is <code>null</code> or if <code>file</code> is invalid.
+    Free the returned object with <link xref="GObject.unref"/>.</p>
+</item>
+</terms>
+
+</page>

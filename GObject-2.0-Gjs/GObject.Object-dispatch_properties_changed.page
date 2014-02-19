@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="GObject.Object-dispatch_properties_changed"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.Object" group="vfunc" type="guide"/>
+  </info>
+  <title>GObject.Object::dispatch_properties_changed</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_dispatch_properties_changed(n_pspecs: Number, pspecs: GObject.ParamSpec): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>n_pspecs</code></title>
+
+</item>
+<item>
+<title><code>pspecs</code></title>
+
+</item>
+</terms>
+
+</page>

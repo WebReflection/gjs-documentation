@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="GLib.Variant.get_variant"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Variant" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.Variant</api:type>
+      </api:returns>
+      <api:name>g_variant_get_variant</api:name>
+    </api:function>
+  </info>
+  <title>GLib.Variant.prototype.get_variant</title>
+  <synopsis><code mime="text/x-gjs">
+function get_variant(): GLib.Variant {
+    // Gjs wrapper for g_variant_get_variant()
+}
+  </code></synopsis>
+  <p>Unboxes <code>value</code>.  The result is the <link xref="GLib.Variant"/> instance that was
+contained in <code>value</code>.</p>
+  <p>Since 2.24</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

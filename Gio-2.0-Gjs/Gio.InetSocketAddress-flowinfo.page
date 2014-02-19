@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.InetSocketAddress-flowinfo"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.InetSocketAddress" group="property" type="guide"/>
+    <title type="link" role="topic">flowinfo</title>
+  </info>
+  <title>Gio.InetSocketAddress.flowinfo</title>
+  <synopsis><code mime="text/x-gjs">
+InetSocketAddress.flowinfo: Number (Read / Write / Construct Only)
+  </code></synopsis>
+  <p>The `sin6_flowinfo` field, for IPv6 addresses.</p>
+  <p>Since 2.32</p>
+</page>

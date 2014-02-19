@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="GLib.HOOK_FLAG_USER_SHIFT"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>GLib.HOOK_FLAG_USER_SHIFT</title>
+  <p>The position of the first bit which is not reserved for internal
+use be the <link xref="GLib.Hook"/> implementation, i.e.
+`1 &lt;&lt; G_HOOK_FLAG_USER_SHIFT` is the first
+bit which can be used for application-defined flags.</p>
+
+</page>

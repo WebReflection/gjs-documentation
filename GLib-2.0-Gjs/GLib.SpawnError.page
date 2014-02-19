@@ -1,0 +1,102 @@
+<?xml version="1.0"?>
+<page id="GLib.SpawnError"
+      type="topic"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>GLib.SpawnError</title>
+  <p>Error codes returned by spawning processes.</p>
+
+<terms>
+<item>
+<title><code>SpawnError.FORK</code></title>
+  <p>Fork failed due to lack of memory.</p>
+</item>
+<item>
+<title><code>SpawnError.READ</code></title>
+  <p>Read or select on pipes failed.</p>
+</item>
+<item>
+<title><code>SpawnError.CHDIR</code></title>
+  <p>Changing to working directory failed.</p>
+</item>
+<item>
+<title><code>SpawnError.ACCES</code></title>
+  <p>execv() returned &lt;literal&gt;EACCES&lt;/literal&gt;</p>
+</item>
+<item>
+<title><code>SpawnError.PERM</code></title>
+  <p>execv() returned &lt;literal&gt;EPERM&lt;/literal&gt;</p>
+</item>
+<item>
+<title><code>SpawnError.TOO_BIG</code></title>
+  <p>execv() returned &lt;literal&gt;E2BIG&lt;/literal&gt;</p>
+</item>
+<item>
+<title><code>SpawnError.2BIG</code></title>
+  <p>deprecated alias for <link xref="GLib.SpawnError"/>.too_big</p>
+</item>
+<item>
+<title><code>SpawnError.NOEXEC</code></title>
+  <p>execv() returned &lt;literal&gt;ENOEXEC&lt;/literal&gt;</p>
+</item>
+<item>
+<title><code>SpawnError.NAMETOOLONG</code></title>
+  <p>execv() returned &lt;literal&gt;ENAMETOOLONG&lt;/literal&gt;</p>
+</item>
+<item>
+<title><code>SpawnError.NOENT</code></title>
+  <p>execv() returned &lt;literal&gt;ENOENT&lt;/literal&gt;</p>
+</item>
+<item>
+<title><code>SpawnError.NOMEM</code></title>
+  <p>execv() returned &lt;literal&gt;ENOMEM&lt;/literal&gt;</p>
+</item>
+<item>
+<title><code>SpawnError.NOTDIR</code></title>
+  <p>execv() returned &lt;literal&gt;ENOTDIR&lt;/literal&gt;</p>
+</item>
+<item>
+<title><code>SpawnError.LOOP</code></title>
+  <p>execv() returned &lt;literal&gt;ELOOP&lt;/literal&gt;</p>
+</item>
+<item>
+<title><code>SpawnError.TXTBUSY</code></title>
+  <p>execv() returned &lt;literal&gt;ETXTBUSY&lt;/literal&gt;</p>
+</item>
+<item>
+<title><code>SpawnError.IO</code></title>
+  <p>execv() returned &lt;literal&gt;EIO&lt;/literal&gt;</p>
+</item>
+<item>
+<title><code>SpawnError.NFILE</code></title>
+  <p>execv() returned &lt;literal&gt;ENFILE&lt;/literal&gt;</p>
+</item>
+<item>
+<title><code>SpawnError.MFILE</code></title>
+  <p>execv() returned &lt;literal&gt;EMFILE&lt;/literal&gt;</p>
+</item>
+<item>
+<title><code>SpawnError.INVAL</code></title>
+  <p>execv() returned &lt;literal&gt;EINVAL&lt;/literal&gt;</p>
+</item>
+<item>
+<title><code>SpawnError.ISDIR</code></title>
+  <p>execv() returned &lt;literal&gt;EISDIR&lt;/literal&gt;</p>
+</item>
+<item>
+<title><code>SpawnError.LIBBAD</code></title>
+  <p>execv() returned &lt;literal&gt;ELIBBAD&lt;/literal&gt;</p>
+</item>
+<item>
+<title><code>SpawnError.FAILED</code></title>
+  <p>Some other fatal failure,
+  &lt;literal&gt;error-&amp;gt;message&lt;/literal&gt; should explain.</p>
+</item>
+</terms>
+
+</page>

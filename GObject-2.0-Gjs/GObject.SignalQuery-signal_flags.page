@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="GObject.SignalQuery-signal_flags"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.SignalQuery" group="field" type="guide"/>
+    <title type="link" role="topic">signal_flags</title>
+  </info>
+  <title>GObject.SignalQuery.signal_flags</title>
+  <synopsis><code mime="text/x-gjs">
+SignalQuery.signal_flags: GObject.SignalFlags (Read)
+  </code></synopsis>
+  <p>The signal flags as passed in to <link xref="GObject.signal_new"/>.</p>
+
+</page>

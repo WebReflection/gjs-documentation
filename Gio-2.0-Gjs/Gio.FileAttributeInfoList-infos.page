@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.FileAttributeInfoList-infos"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.FileAttributeInfoList" group="field" type="guide"/>
+    <title type="link" role="topic">infos</title>
+  </info>
+  <title>Gio.FileAttributeInfoList.infos</title>
+  <synopsis><code mime="text/x-gjs">
+FileAttributeInfoList.infos: Gio.FileAttributeInfo (Read)
+  </code></synopsis>
+  <p>an array of <link xref="Gio.FileAttributeInfo"/>&lt;!-- --&gt;s.</p>
+
+</page>

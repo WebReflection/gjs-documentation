@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<page id="Gio.MountOperation"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>Gio.MountOperation</title>
+  <synopsis><code>
+const Gio = imports.gi.Gio;
+
+let mountOperation = new Gio.MountOperation({
+});
+  </code></synopsis>
+  <p><link xref="Gio.MountOperation"/> provides a mechanism for interacting with the user.
+It can be used for authenticating mountable operations, such as loop
+mounting files, hard drive partitions or server locations. It can
+also be used to ask the user questions or show a list of applications
+preventing unmount or eject operations from completing.</p>  <p>Note that <link xref="Gio.MountOperation"/> is used for more than just <link xref="Gio.Mount"/>
+objects – for example it is also used in <link xref="Gio.Drive.start"/> and
+<link xref="Gio.Drive.stop"/>.</p>  <p>Users should instantiate a subclass of this that implements all the
+various callbacks to show the required dialogs, such as
+#GtkMountOperation. If no user interaction is desired (for example
+when automounting filesystems at login time), usually <code>null</code> can be
+passed, see each method taking a <link xref="Gio.MountOperation"/> for details.</p>
+
+  <synopsis>
+    <title>Hierarchy</title>
+    <tree>
+      <item>
+        <code>GObject.Object</code>
+      <item>
+        <code>Gio.MountOperation</code>
+      </item>
+      </item>
+    </tree>
+  </synopsis>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="property" style="linklist">
+    <title>Properties</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="signal" style="linklist">
+    <title>Signals</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="vfunc" style="linklist">
+    <title>Virtual functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

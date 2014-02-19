@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="GLib.set_application_name"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_set_application_name</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>application_name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.set_application_name</title>
+  <synopsis><code mime="text/x-gjs">
+function set_application_name(application_name: String): void {
+    // Gjs wrapper for g_set_application_name()
+}
+  </code></synopsis>
+  <p>Sets a human-readable name for the application. This name should be
+localized if possible, and is intended for display to the user.
+Contrast with <link xref="GLib.set_prgname"/>, which sets a non-localized name.
+<link xref="GLib.set_prgname"/> will be called automatically by gtk_init(),
+but <link xref="GLib.set_application_name"/> will not.</p>  <p>Note that for thread safety reasons, this function can only
+be called once.</p>  <p>The application name will be used in contexts such as error messages,
+or when displaying an application's name in the task list.</p>
+  <p>Since 2.2</p>
+<terms>
+<item>
+<title><code>application_name</code></title>
+  <p>localized name of the application</p>
+</item>
+</terms>
+
+</page>

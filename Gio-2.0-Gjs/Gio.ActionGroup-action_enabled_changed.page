@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Gio.ActionGroup-action_enabled_changed"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.ActionGroup" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.ActionGroup::action_enabled_changed</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_action_enabled_changed(action_name: String, enabled: Boolean): void {
+}
+  </code></synopsis>
+  <p>Emits the <link xref="Gio.action-enabled-changed"/> signal on <code>action_group</code>.</p>  <p>This function should only be called by <link xref="Gio.ActionGroup"/> implementations.</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>action_name</code></title>
+  <p>the name of an action in the group</p>
+</item>
+<item>
+<title><code>enabled</code></title>
+  <p>whether or not the action is now enabled</p>
+</item>
+</terms>
+
+</page>

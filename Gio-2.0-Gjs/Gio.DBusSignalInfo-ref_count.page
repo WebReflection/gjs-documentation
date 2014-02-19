@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusSignalInfo-ref_count"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusSignalInfo" group="field" type="guide"/>
+    <title type="link" role="topic">ref_count</title>
+  </info>
+  <title>Gio.DBusSignalInfo.ref_count</title>
+  <synopsis><code mime="text/x-gjs">
+DBusSignalInfo.ref_count: Number (Read / Write)
+  </code></synopsis>
+  <p>The reference count or -1 if statically allocated.</p>
+
+</page>

@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<page id="GLib.UnicodeBreakType"
+      type="topic"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>GLib.UnicodeBreakType</title>
+  <p>These are the possible line break classifications.</p>  <p>Since new unicode versions may add new types here, applications should be ready
+to handle unknown values. They may be regarded as <link xref="GLib.UnicodeBreakType"/>.unknown.</p>  <p>See &lt;ulink url="http://www.unicode.org/unicode/reports/tr14/"&gt;http://www.unicode.org/unicode/reports/tr14/&lt;/ulink&gt;.</p>
+
+<terms>
+<item>
+<title><code>UnicodeBreakType.MANDATORY</code></title>
+  <p>Mandatory Break (BK)</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.CARRIAGE_RETURN</code></title>
+  <p>Carriage Return (CR)</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.LINE_FEED</code></title>
+  <p>Line Feed (LF)</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.COMBINING_MARK</code></title>
+  <p>Attached Characters and Combining Marks (CM)</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.SURROGATE</code></title>
+  <p>Surrogates (SG)</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.ZERO_WIDTH_SPACE</code></title>
+  <p>Zero Width Space (ZW)</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.INSEPARABLE</code></title>
+  <p>Inseparable (IN)</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.NON_BREAKING_GLUE</code></title>
+  <p>Non-breaking ("Glue") (GL)</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.CONTINGENT</code></title>
+  <p>Contingent Break Opportunity (CB)</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.SPACE</code></title>
+  <p>Space (SP)</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.AFTER</code></title>
+  <p>Break Opportunity After (BA)</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.BEFORE</code></title>
+  <p>Break Opportunity Before (BB)</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.BEFORE_AND_AFTER</code></title>
+  <p>Break Opportunity Before and After (B2)</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.HYPHEN</code></title>
+  <p>Hyphen (HY)</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.NON_STARTER</code></title>
+  <p>Nonstarter (NS)</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.OPEN_PUNCTUATION</code></title>
+  <p>Opening Punctuation (OP)</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.CLOSE_PUNCTUATION</code></title>
+  <p>Closing Punctuation (CL)</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.QUOTATION</code></title>
+  <p>Ambiguous Quotation (QU)</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.EXCLAMATION</code></title>
+  <p>Exclamation/Interrogation (EX)</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.IDEOGRAPHIC</code></title>
+  <p>Ideographic (ID)</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.NUMERIC</code></title>
+  <p>Numeric (NU)</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.INFIX_SEPARATOR</code></title>
+  <p>Infix Separator (Numeric) (IS)</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.SYMBOL</code></title>
+  <p>Symbols Allowing Break After (SY)</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.ALPHABETIC</code></title>
+  <p>Ordinary Alphabetic and Symbol Characters (AL)</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.PREFIX</code></title>
+  <p>Prefix (Numeric) (PR)</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.POSTFIX</code></title>
+  <p>Postfix (Numeric) (PO)</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.COMPLEX_CONTEXT</code></title>
+  <p>Complex Content Dependent (South East Asian) (SA)</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.AMBIGUOUS</code></title>
+  <p>Ambiguous (Alphabetic or Ideographic) (AI)</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.UNKNOWN</code></title>
+  <p>Unknown (XX)</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.NEXT_LINE</code></title>
+  <p>Next Line (NL)</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.WORD_JOINER</code></title>
+  <p>Word Joiner (WJ)</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.HANGUL_L_JAMO</code></title>
+  <p>Hangul L Jamo (JL)</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.HANGUL_V_JAMO</code></title>
+  <p>Hangul V Jamo (JV)</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.HANGUL_T_JAMO</code></title>
+  <p>Hangul T Jamo (JT)</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.HANGUL_LV_SYLLABLE</code></title>
+  <p>Hangul LV Syllable (H2)</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.HANGUL_LVT_SYLLABLE</code></title>
+  <p>Hangul LVT Syllable (H3)</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.CLOSE_PARANTHESIS</code></title>
+  <p>Closing Parenthesis (CP). Since 2.28</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.CONDITIONAL_JAPANESE_STARTER</code></title>
+  <p>Conditional Japanese Starter (CJ). Since: 2.32</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.HEBREW_LETTER</code></title>
+  <p>Hebrew Letter (HL). Since: 2.32</p>
+</item>
+<item>
+<title><code>UnicodeBreakType.REGIONAL_INDICATOR</code></title>
+  <p>Regional Indicator (RI). Since: 2.36</p>
+</item>
+</terms>
+
+</page>

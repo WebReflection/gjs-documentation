@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<page id="GLib.DateMonth"
+      type="topic"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>GLib.DateMonth</title>
+  <p>Enumeration representing a month; values are #G_DATE_JANUARY,
+#G_DATE_FEBRUARY, etc. #G_DATE_BAD_MONTH is the invalid value.</p>
+
+<terms>
+<item>
+<title><code>DateMonth.BAD_MONTH</code></title>
+  <p>invalid value</p>
+</item>
+<item>
+<title><code>DateMonth.JANUARY</code></title>
+  <p>January</p>
+</item>
+<item>
+<title><code>DateMonth.FEBRUARY</code></title>
+  <p>February</p>
+</item>
+<item>
+<title><code>DateMonth.MARCH</code></title>
+  <p>March</p>
+</item>
+<item>
+<title><code>DateMonth.APRIL</code></title>
+  <p>April</p>
+</item>
+<item>
+<title><code>DateMonth.MAY</code></title>
+  <p>May</p>
+</item>
+<item>
+<title><code>DateMonth.JUNE</code></title>
+  <p>June</p>
+</item>
+<item>
+<title><code>DateMonth.JULY</code></title>
+  <p>July</p>
+</item>
+<item>
+<title><code>DateMonth.AUGUST</code></title>
+  <p>August</p>
+</item>
+<item>
+<title><code>DateMonth.SEPTEMBER</code></title>
+  <p>September</p>
+</item>
+<item>
+<title><code>DateMonth.OCTOBER</code></title>
+  <p>October</p>
+</item>
+<item>
+<title><code>DateMonth.NOVEMBER</code></title>
+  <p>November</p>
+</item>
+<item>
+<title><code>DateMonth.DECEMBER</code></title>
+  <p>December</p>
+</item>
+</terms>
+
+</page>

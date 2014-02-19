@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<page id="Gio.SocketConnection"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>Gio.SocketConnection</title>
+  <synopsis><code>
+const Gio = imports.gi.Gio;
+
+let socketConnection = new Gio.SocketConnection({
+    <link xref='Gio.SocketConnection-socket'>socket</link>: value,
+});
+  </code></synopsis>
+  <p><link xref="Gio.SocketConnection"/> is a <link xref="Gio.IOStream"/> for a connected socket. They
+can be created either by <link xref="Gio.SocketClient"/> when connecting to a host,
+or by <link xref="Gio.SocketListener"/> when accepting a new client.</p>  <p>The type of the <link xref="Gio.SocketConnection"/> object returned from these calls
+depends on the type of the underlying socket that is in use. For
+instance, for a TCP/IP connection it will be a <link xref="Gio.TcpConnection"/>.</p>  <p>Choosing what type of object to construct is done with the socket
+connection factory, and it is possible for 3rd parties to register
+custom socket connection types for specific combination of socket
+family/type/protocol using <link xref="Gio.factory_register_type"/>.</p>  <p>To close a <link xref="Gio.SocketConnection"/>, use <link xref="Gio.IOStream.close"/>. Closing both
+substreams of the <link xref="Gio.IOStream"/> separately will not close the underlying
+<link xref="Gio.Socket"/>.</p>
+  <p>Since 2.22</p>
+  <synopsis>
+    <title>Hierarchy</title>
+    <tree>
+      <item>
+        <code>GObject.Object</code>
+      <item>
+        <code>Gio.IOStream</code>
+      <item>
+        <code>Gio.SocketConnection</code>
+      </item>
+      </item>
+      </item>
+    </tree>
+  </synopsis>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="property" style="linklist">
+    <title>Properties</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="signal" style="linklist">
+    <title>Signals</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="vfunc" style="linklist">
+    <title>Virtual functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

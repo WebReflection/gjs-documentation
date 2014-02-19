@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<page id="Gio.SettingsSchemaSource.lookup"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.SettingsSchemaSource" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.SettingsSchema</api:type>
+      </api:returns>
+      <api:name>g_settings_schema_source_lookup</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>schema_id</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Boolean</api:type>
+        <api:name>recursive</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.SettingsSchemaSource.prototype.lookup</title>
+  <synopsis><code mime="text/x-gjs">
+function lookup(schema_id: String, recursive: Boolean): Gio.SettingsSchema {
+    // Gjs wrapper for g_settings_schema_source_lookup()
+}
+  </code></synopsis>
+  <p>Looks up a schema with the identifier <code>schema_id</code> in <code>source</code>.</p>  <p>This function is not required for normal uses of <link xref="Gio.Settings"/> but it
+may be useful to authors of plugin management systems or to those who
+want to introspect the content of schemas.</p>  <p>If the schema isn't found directly in <code>source</code> and <code>recursive</code> is <code>true</code>
+then the parent sources will also be checked.</p>  <p>If the schema isn't found, <code>null</code> is returned.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>schema_id</code></title>
+  <p>a schema ID</p>
+</item>
+<item>
+<title><code>recursive</code></title>
+  <p><code>true</code> if the lookup should be recursive</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

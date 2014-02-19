@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="Gio.bus_get_finish"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.DBusConnection</api:type>
+      </api:returns>
+      <api:name>g_bus_get_finish</api:name>
+      <api:arg>
+        <api:type>Gio.AsyncResult</api:type>
+        <api:name>res</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.bus_get_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function bus_get_finish(res: Gio.AsyncResult): Gio.DBusConnection {
+    // Gjs wrapper for g_bus_get_finish()
+}
+  </code></synopsis>
+  <p>Finishes an operation started with <link xref="Gio.bus_get"/>.</p>  <p>The returned object is a singleton, that is, shared with other
+callers of <link xref="Gio.bus_get"/> and <link xref="Gio.bus_get_sync"/> for @bus_type. In the
+event that you need a private message bus connection, use
+<link xref="Gio.dbus_address_get_for_bus_sync"/> and
+<link xref="Gio.DBusConnection.new_for_address"/>.</p>  <p>Note that the returned <link xref="Gio.DBusConnection"/> object will (usually) have
+the <link xref="Gio.DBusConnection-exit-on-close"/> property set to <code>true</code>.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>res</code></title>
+  <p>a <link xref="Gio.AsyncResult"/> obtained from the <link xref="Gio.AsyncReadyCallback"/> passed
+    to <link xref="Gio.bus_get"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

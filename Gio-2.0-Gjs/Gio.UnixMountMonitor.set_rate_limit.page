@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="Gio.UnixMountMonitor.set_rate_limit"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.UnixMountMonitor" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_unix_mount_monitor_set_rate_limit</api:name>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>limit_msec</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.UnixMountMonitor.prototype.set_rate_limit</title>
+  <synopsis><code mime="text/x-gjs">
+function set_rate_limit(limit_msec: Number): void {
+    // Gjs wrapper for g_unix_mount_monitor_set_rate_limit()
+}
+  </code></synopsis>
+  <p>Sets the rate limit to which the <code>mount_monitor</code> will report
+consecutive change events to the mount and mount point entry files.</p>
+  <p>Since 2.18</p>
+<terms>
+<item>
+<title><code>limit_msec</code></title>
+  <p>a integer with the limit in milliseconds to
+    poll for changes.</p>
+</item>
+</terms>
+
+</page>

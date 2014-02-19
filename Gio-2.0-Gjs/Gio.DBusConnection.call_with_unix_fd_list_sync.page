@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusConnection.call_with_unix_fd_list_sync"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusConnection" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.Variant</api:type>
+      </api:returns>
+      <api:name>g_dbus_connection_call_with_unix_fd_list_sync</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>bus_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>object_path</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>interface_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>method_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.Variant</api:type>
+        <api:name>parameters</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.VariantType</api:type>
+        <api:name>reply_type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.DBusCallFlags</api:type>
+        <api:name>flags</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>timeout_msec</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.UnixFDList</api:type>
+        <api:name>fd_list</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DBusConnection.prototype.call_with_unix_fd_list_sync</title>
+  <synopsis><code mime="text/x-gjs">
+function call_with_unix_fd_list_sync(bus_name: String, object_path: String, interface_name: String, method_name: String, parameters: GLib.Variant, reply_type: GLib.VariantType, flags: Gio.DBusCallFlags, timeout_msec: Number, fd_list: Gio.UnixFDList, cancellable: Gio.Cancellable): [return_value: GLib.Variant, out_fd_list: Gio.UnixFDList] {
+    // Gjs wrapper for g_dbus_connection_call_with_unix_fd_list_sync()
+}
+  </code></synopsis>
+  <p>Like <link xref="Gio.DBusConnection.call_sync"/> but also takes and returns <link xref="Gio.UnixFDList"/> objects.</p>  <p>This method is only available on UNIX.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>bus_name</code></title>
+  <p>a unique or well-known bus name or <code>null</code>
+    if <code>connection</code> is not a message bus connection</p>
+</item>
+<item>
+<title><code>object_path</code></title>
+  <p>path of remote object</p>
+</item>
+<item>
+<title><code>interface_name</code></title>
+  <p>D-Bus interface to invoke method on</p>
+</item>
+<item>
+<title><code>method_name</code></title>
+  <p>the name of the method to invoke</p>
+</item>
+<item>
+<title><code>parameters</code></title>
+  <p>a <link xref="GLib.Variant"/> tuple with parameters for
+    the method or <code>null</code> if not passing parameters</p>
+</item>
+<item>
+<title><code>reply_type</code></title>
+  <p>the expected type of the reply, or <code>null</code></p>
+</item>
+<item>
+<title><code>flags</code></title>
+  <p>flags from the <link xref="Gio.DBusCallFlags"/> enumeration</p>
+</item>
+<item>
+<title><code>timeout_msec</code></title>
+  <p>the timeout in milliseconds, -1 to use the default
+    timeout or %G_MAXINT for no timeout</p>
+</item>
+<item>
+<title><code>fd_list</code></title>
+  <p>a <link xref="Gio.UnixFDList"/> or <code>null</code></p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>a <link xref="Gio.Cancellable"/> or <code>null</code></p>
+</item>
+<item>
+<title><code>return_value</code></title>
+
+</item>
+<item>
+<title><code>out_fd_list</code></title>
+  <p>return location for a <link xref="Gio.UnixFDList"/> or <code>null</code></p>
+</item>
+</terms>
+
+</page>

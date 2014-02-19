@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<page id="GLib.KeyFile.get_string"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.KeyFile" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_key_file_get_string</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>group_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>key</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.KeyFile.prototype.get_string</title>
+  <synopsis><code mime="text/x-gjs">
+function get_string(group_name: String, key: String): String {
+    // Gjs wrapper for g_key_file_get_string()
+}
+  </code></synopsis>
+  <p>Returns the string value associated with <code>key</code> under <code>group_name</code>.
+Unlike <link xref="GLib.get_value"/>, this function handles escape sequences
+like \s.</p>  <p>In the event the key cannot be found, <code>null</code> is returned and
+@error is set to #G_KEY_FILE_ERROR_KEY_NOT_FOUND.  In the
+event that the <code>group_name</code> cannot be found, <code>null</code> is returned
+and @error is set to #G_KEY_FILE_ERROR_GROUP_NOT_FOUND.</p>
+  <p>Since 2.6</p>
+<terms>
+<item>
+<title><code>group_name</code></title>
+  <p>a group name</p>
+</item>
+<item>
+<title><code>key</code></title>
+  <p>a key</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

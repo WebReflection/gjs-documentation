@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page id="GLib.PRIORITY_DEFAULT_IDLE"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>GLib.PRIORITY_DEFAULT_IDLE</title>
+  <p>Use this for default priority idle functions.</p>  <p>In GLib this priority is used when adding idle functions with
+<link xref="GLib.idle_add"/>.</p>
+
+</page>

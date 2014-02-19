@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="GLib.Variant.dup_bytestring_array"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Variant" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(String)</api:type>
+      </api:returns>
+      <api:name>g_variant_dup_bytestring_array</api:name>
+    </api:function>
+  </info>
+  <title>GLib.Variant.prototype.dup_bytestring_array</title>
+  <synopsis><code mime="text/x-gjs">
+function dup_bytestring_array(): [return_value: Array(String), length: gsize] {
+    // Gjs wrapper for g_variant_dup_bytestring_array()
+}
+  </code></synopsis>
+  <p>Gets the contents of an array of array of bytes <link xref="GLib.Variant"/>.  This call
+makes a deep copy; the return result should be released with
+<link xref="GLib.strfreev"/>.</p>  <p>If <code>length</code> is non-<code>null</code> then the number of elements in the result is
+stored there.  In any case, the resulting array will be
+<code>null</code>-terminated.</p>  <p>For an empty array, <code>length</code> will be set to 0 and a pointer to a
+<code>null</code> pointer will be returned.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>return_value</code></title>
+
+</item>
+<item>
+<title><code>length</code></title>
+  <p>the length of the result, or <code>null</code></p>
+</item>
+</terms>
+
+</page>

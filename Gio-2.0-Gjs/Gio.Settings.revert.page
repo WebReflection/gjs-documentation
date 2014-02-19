@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Gio.Settings.revert"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Settings" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_settings_revert</api:name>
+    </api:function>
+  </info>
+  <title>Gio.Settings.prototype.revert</title>
+  <synopsis><code mime="text/x-gjs">
+function revert(): void {
+    // Gjs wrapper for g_settings_revert()
+}
+  </code></synopsis>
+  <p>Reverts all non-applied changes to the settings.  This function
+does nothing unless <code>settings</code> is in 'delay-apply' mode; see
+<link xref="Gio.Settings.delay"/>.  In the normal case settings are always applied
+immediately.</p>  <p>Change notifications will be emitted for affected keys.</p>
+
+
+</page>

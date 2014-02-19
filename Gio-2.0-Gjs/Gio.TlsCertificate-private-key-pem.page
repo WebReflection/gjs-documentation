@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page id="Gio.TlsCertificate-private-key-pem"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.TlsCertificate" group="property" type="guide"/>
+    <title type="link" role="topic">private-key-pem</title>
+  </info>
+  <title>Gio.TlsCertificate.private_key_pem</title>
+  <synopsis><code mime="text/x-gjs">
+TlsCertificate.private_key_pem: String (Write / Construct Only)
+  </code></synopsis>
+  <p>The PEM (ASCII) encoded representation of the certificate's
+private key in either PKCS#1 format ("`BEGIN RSA PRIVATE
+KEY`") or unencrypted PKCS#8 format ("`BEGIN
+PRIVATE KEY`"). This property (or the
+<link xref="Gio.TlsCertificate-private-key"/> property) can be set when
+constructing a key (eg, from a file), but cannot be read.</p>  <p>PKCS#8 format is supported since 2.32; earlier releases only
+support PKCS#1. You can use the `openssl rsa`
+tool to convert PKCS#8 keys to PKCS#1.</p>
+  <p>Since 2.28</p>
+</page>

@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<page id="GLib.TokenType"
+      type="topic"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>GLib.TokenType</title>
+  <p>The possible types of token returned from each
+<link xref="GLib.Scanner.get_next_token"/> call.</p>
+
+<terms>
+<item>
+<title><code>TokenType.EOF</code></title>
+  <p>the end of the file</p>
+</item>
+<item>
+<title><code>TokenType.LEFT_PAREN</code></title>
+  <p>a '(' character</p>
+</item>
+<item>
+<title><code>TokenType.RIGHT_PAREN</code></title>
+  <p>a ')' character</p>
+</item>
+<item>
+<title><code>TokenType.LEFT_CURLY</code></title>
+  <p>a '{' character</p>
+</item>
+<item>
+<title><code>TokenType.RIGHT_CURLY</code></title>
+  <p>a '}' character</p>
+</item>
+<item>
+<title><code>TokenType.LEFT_BRACE</code></title>
+  <p>a '[' character</p>
+</item>
+<item>
+<title><code>TokenType.RIGHT_BRACE</code></title>
+  <p>a ']' character</p>
+</item>
+<item>
+<title><code>TokenType.EQUAL_SIGN</code></title>
+  <p>a '=' character</p>
+</item>
+<item>
+<title><code>TokenType.COMMA</code></title>
+  <p>a ',' character</p>
+</item>
+<item>
+<title><code>TokenType.NONE</code></title>
+  <p>not a token</p>
+</item>
+<item>
+<title><code>TokenType.ERROR</code></title>
+  <p>an error occurred</p>
+</item>
+<item>
+<title><code>TokenType.CHAR</code></title>
+  <p>a character</p>
+</item>
+<item>
+<title><code>TokenType.BINARY</code></title>
+  <p>a binary integer</p>
+</item>
+<item>
+<title><code>TokenType.OCTAL</code></title>
+  <p>an octal integer</p>
+</item>
+<item>
+<title><code>TokenType.INT</code></title>
+  <p>an integer</p>
+</item>
+<item>
+<title><code>TokenType.HEX</code></title>
+  <p>a hex integer</p>
+</item>
+<item>
+<title><code>TokenType.FLOAT</code></title>
+  <p>a floating point number</p>
+</item>
+<item>
+<title><code>TokenType.STRING</code></title>
+  <p>a string</p>
+</item>
+<item>
+<title><code>TokenType.SYMBOL</code></title>
+  <p>a symbol</p>
+</item>
+<item>
+<title><code>TokenType.IDENTIFIER</code></title>
+  <p>an identifier</p>
+</item>
+<item>
+<title><code>TokenType.IDENTIFIER_NULL</code></title>
+  <p>a null identifier</p>
+</item>
+<item>
+<title><code>TokenType.COMMENT_SINGLE</code></title>
+  <p>one line comment</p>
+</item>
+<item>
+<title><code>TokenType.COMMENT_MULTI</code></title>
+  <p>multi line comment</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page id="GLib.TestSubprocessFlags"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>GLib.TestSubprocessFlags</title>
+  <p>Flags to pass to <link xref="GLib.test_trap_subprocess"/> to control input and output.</p>  <p>Note that in contrast with <link xref="GLib.test_trap_fork"/>, the default is to
+not show stdout and stderr.</p>
+
+</page>

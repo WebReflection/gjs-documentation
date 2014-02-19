@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Gio.MemoryOutputStream.get_size"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.MemoryOutputStream" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>gsize</api:type>
+      </api:returns>
+      <api:name>g_memory_output_stream_get_size</api:name>
+    </api:function>
+  </info>
+  <title>Gio.MemoryOutputStream.prototype.get_size</title>
+  <synopsis><code mime="text/x-gjs">
+function get_size(): gsize {
+    // Gjs wrapper for g_memory_output_stream_get_size()
+}
+  </code></synopsis>
+  <p>Gets the size of the currently allocated data area (available from
+<link xref="Gio.MemoryOutputStream.get_data"/>).</p>  <p>You probably don't want to use this function on resizable streams.
+See <link xref="Gio.MemoryOutputStream.get_data_size"/> instead.  For resizable
+streams the size returned by this function is an implementation
+detail and may be change at any time in response to operations on the
+stream.</p>  <p>If the stream is fixed-sized (ie: no realloc was passed to
+<link xref="Gio.new"/>) then this is the maximum size of the
+stream and further writes will return <link xref="Gio.IOErrorEnum"/>.no_space.</p>  <p>In any case, if you want the number of bytes currently written to the
+stream, use <link xref="Gio.MemoryOutputStream.get_data_size"/>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

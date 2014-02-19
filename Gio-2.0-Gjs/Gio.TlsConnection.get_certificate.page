@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gio.TlsConnection.get_certificate"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.TlsConnection" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.TlsCertificate</api:type>
+      </api:returns>
+      <api:name>g_tls_connection_get_certificate</api:name>
+    </api:function>
+  </info>
+  <title>Gio.TlsConnection.prototype.get_certificate</title>
+  <synopsis><code mime="text/x-gjs">
+function get_certificate(): Gio.TlsCertificate {
+    // Gjs wrapper for g_tls_connection_get_certificate()
+}
+  </code></synopsis>
+  <p>Gets <code>conn</code>'s certificate, as set by
+<link xref="Gio.set_certificate"/>.</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<page id="Gio.Resolver.lookup_service_async"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Resolver" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_resolver_lookup_service_async</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>service</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>protocol</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>domain</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.AsyncReadyCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.Resolver.prototype.lookup_service_async</title>
+  <synopsis><code mime="text/x-gjs">
+function lookup_service_async(service: String, protocol: String, domain: String, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+    // Gjs wrapper for g_resolver_lookup_service_async()
+}
+  </code></synopsis>
+  <p>Begins asynchronously performing a DNS SRV lookup for the given
+<code>service</code> and <code>protocol</code> in the given <code>domain</code>, and eventually calls
+<code>callback</code>, which must call <link xref="Gio.lookup_service_finish"/> to
+get the final result. See <link xref="Gio.Resolver.lookup_service"/> for more
+details.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>service</code></title>
+  <p>the service type to look up (eg, "ldap")</p>
+</item>
+<item>
+<title><code>protocol</code></title>
+  <p>the networking protocol to use for <code>service</code> (eg, "tcp")</p>
+</item>
+<item>
+<title><code>domain</code></title>
+  <p>the DNS domain to look up the service in</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>a <link xref="Gio.Cancellable"/>, or <code>null</code></p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>callback to call after resolution completes</p>
+</item>
+</terms>
+
+</page>

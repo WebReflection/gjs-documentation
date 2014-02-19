@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="GLib.Hook-destroy"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Hook" group="field" type="guide"/>
+    <title type="link" role="topic">destroy</title>
+  </info>
+  <title>GLib.Hook.destroy</title>
+  <synopsis><code mime="text/x-gjs">
+Hook.destroy: GLib.DestroyNotify (Read)
+  </code></synopsis>
+  <p>the default @finalize_hook function of a <link xref="GLib.HookList"/> calls
+    this member of the hook that is being finalized</p>
+
+</page>

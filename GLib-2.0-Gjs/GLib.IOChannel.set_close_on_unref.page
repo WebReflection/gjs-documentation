@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="GLib.IOChannel.set_close_on_unref"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.IOChannel" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_io_channel_set_close_on_unref</api:name>
+      <api:arg>
+        <api:type>Boolean</api:type>
+        <api:name>do_close</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.IOChannel.prototype.set_close_on_unref</title>
+  <synopsis><code mime="text/x-gjs">
+function set_close_on_unref(do_close: Boolean): void {
+    // Gjs wrapper for g_io_channel_set_close_on_unref()
+}
+  </code></synopsis>
+  <p>Setting this flag to <code>true</code> for a channel you have already closed
+can cause problems.</p>
+
+<terms>
+<item>
+<title><code>do_close</code></title>
+  <p>Whether to close the channel on the final unref of
+           the GIOChannel data structure. The default value of
+           this is <code>true</code> for channels created by g_io_channel_new_file (),
+           and <code>false</code> for all other channels.</p>
+</item>
+</terms>
+
+</page>

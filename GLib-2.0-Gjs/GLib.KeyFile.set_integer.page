@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<page id="GLib.KeyFile.set_integer"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.KeyFile" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_key_file_set_integer</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>group_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>key</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.KeyFile.prototype.set_integer</title>
+  <synopsis><code mime="text/x-gjs">
+function set_integer(group_name: String, key: String, value: Number): void {
+    // Gjs wrapper for g_key_file_set_integer()
+}
+  </code></synopsis>
+  <p>Associates a new integer value with <code>key</code> under <code>group_name</code>.
+If <code>key</code> cannot be found then it is created.</p>
+  <p>Since 2.6</p>
+<terms>
+<item>
+<title><code>group_name</code></title>
+  <p>a group name</p>
+</item>
+<item>
+<title><code>key</code></title>
+  <p>a key</p>
+</item>
+<item>
+<title><code>value</code></title>
+  <p>an integer value</p>
+</item>
+</terms>
+
+</page>

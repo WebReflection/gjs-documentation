@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="Gio.Seekable-truncate_fn"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Seekable" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.Seekable::truncate_fn</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_truncate_fn(offset: Number, cancellable: Gio.Cancellable): Boolean {
+}
+  </code></synopsis>
+  <p>Truncates a stream with a given #offset.</p>  <p>If <code>cancellable</code> is not <code>null</code>, then the operation can be cancelled by
+triggering the cancellable object from another thread. If the operation
+was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be returned. If an
+operation was partially finished when the operation was cancelled the
+partial result will be returned, without an error.</p>
+
+<terms>
+<item>
+<title><code>offset</code></title>
+  <p>a #goffset.</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional <link xref="Gio.Cancellable"/> object, <code>null</code> to ignore.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if successful. If an error
+    has occurred, this function will return <code>false</code> and set @error
+    appropriately if present.</p>
+</item>
+</terms>
+
+</page>

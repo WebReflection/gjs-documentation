@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="GObject.type_interfaces"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(GType)</api:type>
+      </api:returns>
+      <api:name>g_type_interfaces</api:name>
+      <api:arg>
+        <api:type>GType</api:type>
+        <api:name>type</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.type_interfaces</title>
+  <synopsis><code mime="text/x-gjs">
+function type_interfaces(type: GType): [return_value: Array(GType), n_interfaces: Number] {
+    // Gjs wrapper for g_type_interfaces()
+}
+  </code></synopsis>
+  <p>Return a newly allocated and 0-terminated array of type IDs, listing
+the interface types that <code>type</code> conforms to.</p>
+
+<terms>
+<item>
+<title><code>type</code></title>
+  <p>the type to list interface types for</p>
+</item>
+<item>
+<title><code>return_value</code></title>
+
+</item>
+<item>
+<title><code>n_interfaces</code></title>
+  <p>location to store the length of
+    the returned array, or <code>null</code></p>
+</item>
+</terms>
+
+</page>

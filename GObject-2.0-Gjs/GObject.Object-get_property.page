@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="GObject.Object-get_property"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.Object" group="vfunc" type="guide"/>
+  </info>
+  <title>GObject.Object::get_property</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_get_property(property_id: Number, value: GObject.Value, pspec: GObject.ParamSpec): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>property_id</code></title>
+
+</item>
+<item>
+<title><code>value</code></title>
+
+</item>
+<item>
+<title><code>pspec</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<page id="Gio.File-enumerate_children"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.File" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.File::enumerate_children</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_enumerate_children(attributes: String, flags: Gio.FileQueryInfoFlags, cancellable: Gio.Cancellable): Gio.FileEnumerator {
+}
+  </code></synopsis>
+  <p>Gets the requested information about the files in a directory.
+The result is a <link xref="Gio.FileEnumerator"/> object that will give out
+<link xref="Gio.FileInfo"/> objects for all the files in the directory.</p>  <p>The <code>attributes</code> value is a string that specifies the file
+attributes that should be gathered. It is not an error if
+it's not possible to read a particular requested attribute
+from a file - it just won't be set. <code>attributes</code> should
+be a comma-separated list of attributes or attribute wildcards.
+The wildcard "*" means all attributes, and a wildcard like
+"standard::*" means all attributes in the standard namespace.
+An example attribute query be "standard::*,owner::user".
+The standard attributes are available as defines, like
+#G_FILE_ATTRIBUTE_STANDARD_NAME.</p>  <p>If <code>cancellable</code> is not <code>null</code>, then the operation can be cancelled
+by triggering the cancellable object from another thread. If the
+operation was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be
+returned.</p>  <p>If the file does not exist, the <link xref="Gio.IOErrorEnum"/>.not_found error will
+be returned. If the file is not a directory, the <link xref="Gio.IOErrorEnum"/>.not_directory
+error will be returned. Other errors are possible too.</p>
+
+<terms>
+<item>
+<title><code>attributes</code></title>
+  <p>an attribute query string</p>
+</item>
+<item>
+<title><code>flags</code></title>
+  <p>a set of <link xref="Gio.FileQueryInfoFlags"/></p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional <link xref="Gio.Cancellable"/> object,
+    <code>null</code> to ignore</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>A <link xref="Gio.FileEnumerator"/> if successful,
+    <code>null</code> on error. Free the returned object with <link xref="GObject.unref"/>.</p>
+</item>
+</terms>
+
+</page>

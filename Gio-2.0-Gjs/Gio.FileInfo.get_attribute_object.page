@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gio.FileInfo.get_attribute_object"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.FileInfo" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GObject.Object</api:type>
+      </api:returns>
+      <api:name>g_file_info_get_attribute_object</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>attribute</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.FileInfo.prototype.get_attribute_object</title>
+  <synopsis><code mime="text/x-gjs">
+function get_attribute_object(attribute: String): GObject.Object {
+    // Gjs wrapper for g_file_info_get_attribute_object()
+}
+  </code></synopsis>
+  <p>Gets the value of a <link xref="GObject.Object"/> attribute. If the attribute does
+not contain a <link xref="GObject.Object"/>, <code>null</code> will be returned.</p>
+
+<terms>
+<item>
+<title><code>attribute</code></title>
+  <p>a file attribute key.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

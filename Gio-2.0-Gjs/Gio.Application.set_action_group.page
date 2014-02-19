@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gio.Application.set_action_group"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Application" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_application_set_action_group</api:name>
+      <api:arg>
+        <api:type>Gio.ActionGroup</api:type>
+        <api:name>action_group</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.Application.prototype.set_action_group</title>
+  <synopsis><code mime="text/x-gjs">
+function set_action_group(action_group: Gio.ActionGroup): void {
+    // Gjs wrapper for g_application_set_action_group()
+}
+  </code></synopsis>
+  <p>This used to be how actions were associated with a <link xref="Gio.Application"/>.
+Now there is <link xref="Gio.ActionMap"/> for that.</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>action_group</code></title>
+  <p>a <link xref="Gio.ActionGroup"/>, or <code>null</code></p>
+</item>
+</terms>
+
+</page>

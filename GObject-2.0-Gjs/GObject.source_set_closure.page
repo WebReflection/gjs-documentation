@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="GObject.source_set_closure"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_source_set_closure</api:name>
+      <api:arg>
+        <api:type>GLib.Source</api:type>
+        <api:name>source</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Closure</api:type>
+        <api:name>closure</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.source_set_closure</title>
+  <synopsis><code mime="text/x-gjs">
+function source_set_closure(source: GLib.Source, closure: GObject.Closure): void {
+    // Gjs wrapper for g_source_set_closure()
+}
+  </code></synopsis>
+  <p>Set the callback for a source as a <link xref="GObject.Closure"/>.</p>  <p>If the source is not one of the standard GLib types, the @closure_callback
+and @closure_marshal fields of the <link xref="GLib.SourceFuncs"/> structure must have been
+filled in with pointers to appropriate functions.</p>
+
+<terms>
+<item>
+<title><code>source</code></title>
+  <p>the source</p>
+</item>
+<item>
+<title><code>closure</code></title>
+  <p>a <link xref="GObject.Closure"/></p>
+</item>
+</terms>
+
+</page>

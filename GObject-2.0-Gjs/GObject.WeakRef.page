@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<page id="GObject.WeakRef"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>GObject.WeakRef</title>
+  <synopsis><code>
+const GObject = imports.gi.GObject;
+
+let weakRef = new GObject.WeakRef();
+  </code></synopsis>
+  <p>A structure containing a weak reference to a <link xref="GObject.Object"/>.  It can either
+be empty (i.e. point to <code>null</code>), or point to an object for as long as
+at least one "strong" reference to that object exists. Before the
+object's <link xref="GObject.ObjectClass"/>.dispose method is called, every <link xref="GObject.WeakRef"/>
+associated with becomes empty (i.e. points to <code>null</code>).</p>  <p>Like <link xref="GObject.Value"/>, <link xref="GObject.WeakRef"/> can be statically allocated, stack- or
+heap-allocated, or embedded in larger structures.</p>  <p>Unlike <link xref="GObject.weak_ref"/> and <link xref="GObject.add_weak_pointer"/>, this weak
+reference is thread-safe: converting a weak pointer to a reference is
+atomic with respect to invalidation of weak pointers to destroyed
+objects.</p>  <p>If the object's <link xref="GObject.ObjectClass"/>.dispose method results in additional
+references to the object being held, any #GWeakRefs taken
+before it was disposed will continue to point to <code>null</code>.  If
+#GWeakRefs are taken after the object is disposed and
+re-referenced, they will continue to point to it until its refcount
+goes back to zero, at which point they too will be invalidated.</p>
+
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

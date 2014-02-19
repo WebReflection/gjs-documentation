@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.ThemedIcon-names"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.ThemedIcon" group="property" type="guide"/>
+    <title type="link" role="topic">names</title>
+  </info>
+  <title>Gio.ThemedIcon.names</title>
+  <synopsis><code mime="text/x-gjs">
+ThemedIcon.names: Array(String) (Read / Write / Construct Only)
+  </code></synopsis>
+  <p>A <code>null</code>-terminated array of icon names.</p>
+
+</page>

@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<page id="GLib.uri_escape_string"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_uri_escape_string</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>unescaped</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>reserved_chars_allowed</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Boolean</api:type>
+        <api:name>allow_utf8</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.uri_escape_string</title>
+  <synopsis><code mime="text/x-gjs">
+function uri_escape_string(unescaped: String, reserved_chars_allowed: String, allow_utf8: Boolean): String {
+    // Gjs wrapper for g_uri_escape_string()
+}
+  </code></synopsis>
+  <p>Escapes a string for use in a URI.</p>  <p>Normally all characters that are not "unreserved" (i.e. ASCII alphanumerical
+characters plus dash, dot, underscore and tilde) are escaped.
+But if you specify characters in <code>reserved_chars_allowed</code> they are not
+escaped. This is useful for the "reserved" characters in the URI
+specification, since those are allowed unescaped in some portions of
+a URI.</p>
+  <p>Since 2.16</p>
+<terms>
+<item>
+<title><code>unescaped</code></title>
+  <p>the unescaped input string.</p>
+</item>
+<item>
+<title><code>reserved_chars_allowed</code></title>
+  <p>a string of reserved characters that
+     are allowed to be used, or <code>null</code>.</p>
+</item>
+<item>
+<title><code>allow_utf8</code></title>
+  <p><code>true</code> if the result can include UTF-8 characters.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

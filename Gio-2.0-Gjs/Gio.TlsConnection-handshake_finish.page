@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<page id="Gio.TlsConnection-handshake_finish"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.TlsConnection" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.TlsConnection::handshake_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_handshake_finish(result: Gio.AsyncResult): Boolean {
+}
+  </code></synopsis>
+  <p>Finish an asynchronous TLS handshake operation. See
+<link xref="Gio.TlsConnection.handshake"/> for more information.</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>a <link xref="Gio.AsyncResult"/>.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> on success, <code>false</code> on failure, in which
+case @error will be set.</p>
+</item>
+</terms>
+
+</page>

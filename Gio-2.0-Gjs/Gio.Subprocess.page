@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<page id="Gio.Subprocess"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>Gio.Subprocess</title>
+  <synopsis><code>
+const Gio = imports.gi.Gio;
+
+let subprocess = new Gio.Subprocess({
+    <link xref='Gio.Subprocess-argv'>argv</link>: value,
+    <link xref='Gio.Subprocess-flags'>flags</link>: value,
+});
+  </code></synopsis>
+  <p><link xref="Gio.Subprocess"/> allows the creation of and interaction with child
+processes.</p>  <p>Processes can be communicated with using standard GIO-style APIs (ie:
+<link xref="Gio.InputStream"/>, <link xref="Gio.OutputStream"/>).  There are GIO-style APIs to wait for
+process termination (ie: cancellable and with an asynchronous
+variant).</p>  <p>There is an API to force a process to terminate, as well as a
+race-free API for sending UNIX signals to a subprocess.</p>  <p>One major advantage that GIO brings over the core GLib library is
+comprehensive API for asynchronous I/O, such
+<link xref="Gio.OutputStream.splice_async"/>.  This makes GSubprocess
+significantly more powerful and flexible than equivalent APIs in
+some other languages such as the `subprocess.py`
+included with Python.  For example, using <link xref="Gio.Subprocess"/> one could
+create two child processes, reading standard output from the first,
+processing it, and writing to the input stream of the second, all
+without blocking the main loop.</p>  <p>A powerful <link xref="Gio.communicate"/> API is provided similar to the
+`communicate()` method of `subprocess.py`. This enables very easy
+interaction with a subprocess that has been opened with pipes.</p>  <p><link xref="Gio.Subprocess"/> defaults to tight control over the file descriptors open
+in the child process, avoiding dangling-fd issues that are caused by
+a simple fork()/exec().  The only open file descriptors in the
+spawned process are ones that were explicitly specified by the
+<link xref="Gio.Subprocess"/> API (unless <link xref="Gio.SubprocessFlags"/>.inherit_fds was
+specified).</p>  <p><link xref="Gio.Subprocess"/> will quickly reap all child processes as they exit,
+avoiding "zombie processes" remaining around for long periods of
+time.  <link xref="Gio.wait"/> can be used to wait for this to happen,
+but it will happen even without the call being explicitly made.</p>  <p>As a matter of principle, <link xref="Gio.Subprocess"/> has no API that accepts
+shell-style space-separated strings.  It will, however, match the
+typical shell behaviour of searching the PATH for executables that do
+not contain a directory separator in their name.</p>  <p><link xref="Gio.Subprocess"/> attempts to have a very simple API for most uses (ie:
+spawning a subprocess with arguments and support for most typical
+kinds of input and output redirection).  See <link xref="Gio.new"/>. The
+<link xref="Gio.SubprocessLauncher"/> API is provided for more complicated cases
+(advanced types of redirection, environment variable manipulation,
+change of working directory, child setup functions, etc).</p>  <p>A typical use of <link xref="Gio.Subprocess"/> will involve calling
+<link xref="Gio.new"/>, followed by <link xref="Gio.wait_async"/> or
+<link xref="Gio.wait"/>.  After the process exits, the status can be
+checked using functions such as <link xref="Gio.get_if_exited"/> (which
+are similar to the familiar WIFEXITED-style POSIX macros).</p>
+  <p>Since 2.40</p>
+  <synopsis>
+    <title>Hierarchy</title>
+    <tree>
+      <item>
+        <code>GObject.Object</code>
+      <item>
+        <code>Gio.Subprocess</code>
+      </item>
+      </item>
+    </tree>
+  </synopsis>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="property" style="linklist">
+    <title>Properties</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="signal" style="linklist">
+    <title>Signals</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="vfunc" style="linklist">
+    <title>Virtual functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

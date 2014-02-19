@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<page id="Gio.Socket.receive_with_blocking"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Socket" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>gssize</api:type>
+      </api:returns>
+      <api:name>g_socket_receive_with_blocking</api:name>
+      <api:arg>
+        <api:type>Array(guint8)</api:type>
+        <api:name>buffer</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Boolean</api:type>
+        <api:name>blocking</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.Socket.prototype.receive_with_blocking</title>
+  <synopsis><code mime="text/x-gjs">
+function receive_with_blocking(buffer: Array(guint8), blocking: Boolean, cancellable: Gio.Cancellable): gssize {
+    // Gjs wrapper for g_socket_receive_with_blocking()
+}
+  </code></synopsis>
+  <p>This behaves exactly the same as <link xref="Gio.Socket.receive"/>, except that
+the choice of blocking or non-blocking behavior is determined by
+the <code>blocking</code> argument rather than by <code>socket</code>'s properties.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>buffer</code></title>
+  <p>a buffer to
+    read data into (which should be at least <code>size</code> bytes long).</p>
+</item>
+<item>
+<title><code>blocking</code></title>
+  <p>whether to do blocking or non-blocking I/O</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>a %GCancellable or <code>null</code></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

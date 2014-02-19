@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusConnection.get_guid"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusConnection" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_dbus_connection_get_guid</api:name>
+    </api:function>
+  </info>
+  <title>Gio.DBusConnection.prototype.get_guid</title>
+  <synopsis><code mime="text/x-gjs">
+function get_guid(): String {
+    // Gjs wrapper for g_dbus_connection_get_guid()
+}
+  </code></synopsis>
+  <p>The GUID of the peer performing the role of server when
+authenticating. See <link xref="Gio.guid"/> for more details.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

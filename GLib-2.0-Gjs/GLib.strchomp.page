@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="GLib.strchomp"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_strchomp</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>string</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.strchomp</title>
+  <synopsis><code mime="text/x-gjs">
+function strchomp(string: String): String {
+    // Gjs wrapper for g_strchomp()
+}
+  </code></synopsis>
+  <p>Removes trailing whitespace from a string.</p>  <p>This function doesn't allocate or reallocate any memory;
+it modifies <code>string</code> in place. Therefore, it cannot be used
+on statically allocated strings.</p>  <p>The pointer to <code>string</code> is returned to allow the nesting of functions.</p>  <p>Also see <link xref="GLib.strchug"/> and g_strstrip().</p>
+
+<terms>
+<item>
+<title><code>string</code></title>
+  <p>a string to remove the trailing whitespace from</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

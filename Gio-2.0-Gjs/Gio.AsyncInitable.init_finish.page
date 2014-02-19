@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gio.AsyncInitable.init_finish"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.AsyncInitable" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_async_initable_init_finish</api:name>
+      <api:arg>
+        <api:type>Gio.AsyncResult</api:type>
+        <api:name>res</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.AsyncInitable.prototype.init_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function init_finish(res: Gio.AsyncResult): Boolean {
+    // Gjs wrapper for g_async_initable_init_finish()
+}
+  </code></synopsis>
+  <p>Finishes asynchronous initialization and returns the result.
+See <link xref="Gio.AsyncInitable.init_async"/>.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>res</code></title>
+  <p>a <link xref="Gio.AsyncResult"/>.</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

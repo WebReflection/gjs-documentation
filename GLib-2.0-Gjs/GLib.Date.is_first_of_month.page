@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="GLib.Date.is_first_of_month"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Date" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_date_is_first_of_month</api:name>
+    </api:function>
+  </info>
+  <title>GLib.Date.prototype.is_first_of_month</title>
+  <synopsis><code mime="text/x-gjs">
+function is_first_of_month(): Boolean {
+    // Gjs wrapper for g_date_is_first_of_month()
+}
+  </code></synopsis>
+  <p>Returns <code>true</code> if the date is on the first of a month.
+The date must be valid.</p>
+
+<terms>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

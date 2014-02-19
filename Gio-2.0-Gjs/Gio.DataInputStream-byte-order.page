@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.DataInputStream-byte-order"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DataInputStream" group="property" type="guide"/>
+    <title type="link" role="topic">byte-order</title>
+  </info>
+  <title>Gio.DataInputStream.byte_order</title>
+  <synopsis><code mime="text/x-gjs">
+DataInputStream.byte_order: Gio.DataStreamByteOrder (Read / Write)
+  </code></synopsis>
+
+
+</page>

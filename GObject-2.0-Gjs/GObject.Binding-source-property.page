@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="GObject.Binding-source-property"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.Binding" group="property" type="guide"/>
+    <title type="link" role="topic">source-property</title>
+  </info>
+  <title>GObject.Binding.source_property</title>
+  <synopsis><code mime="text/x-gjs">
+Binding.source_property: String (Read / Write / Construct Only)
+  </code></synopsis>
+  <p>The name of the property of <link xref="GObject.Binding-source"/> that should be used
+as the source of the binding</p>
+  <p>Since 2.26</p>
+</page>

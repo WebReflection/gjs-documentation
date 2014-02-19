@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.FileMonitor-rate-limit"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.FileMonitor" group="property" type="guide"/>
+    <title type="link" role="topic">rate-limit</title>
+  </info>
+  <title>Gio.FileMonitor.rate_limit</title>
+  <synopsis><code mime="text/x-gjs">
+FileMonitor.rate_limit: Number (Read / Write)
+  </code></synopsis>
+
+
+</page>

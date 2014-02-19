@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="GLib.DoubleIEEE754-v_double"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.DoubleIEEE754" group="field" type="guide"/>
+    <title type="link" role="topic">v_double</title>
+  </info>
+  <title>GLib.DoubleIEEE754.v_double</title>
+  <synopsis><code mime="text/x-gjs">
+DoubleIEEE754.v_double: Number (Read / Write)
+  </code></synopsis>
+  <p>the double value</p>
+
+</page>

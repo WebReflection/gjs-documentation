@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Gio.FileInfo.set_attribute_mask"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.FileInfo" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_file_info_set_attribute_mask</api:name>
+      <api:arg>
+        <api:type>Gio.FileAttributeMatcher</api:type>
+        <api:name>mask</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.FileInfo.prototype.set_attribute_mask</title>
+  <synopsis><code mime="text/x-gjs">
+function set_attribute_mask(mask: Gio.FileAttributeMatcher): void {
+    // Gjs wrapper for g_file_info_set_attribute_mask()
+}
+  </code></synopsis>
+  <p>Sets <code>mask</code> on <code>info</code> to match specific attribute types.</p>
+
+<terms>
+<item>
+<title><code>mask</code></title>
+  <p>a <link xref="Gio.FileAttributeMatcher"/>.</p>
+</item>
+</terms>
+
+</page>

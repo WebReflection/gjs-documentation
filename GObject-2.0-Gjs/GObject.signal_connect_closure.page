@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<page id="GObject.signal_connect_closure"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number</api:type>
+      </api:returns>
+      <api:name>g_signal_connect_closure</api:name>
+      <api:arg>
+        <api:type>GObject.Object</api:type>
+        <api:name>instance</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>detailed_signal</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Closure</api:type>
+        <api:name>closure</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Boolean</api:type>
+        <api:name>after</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.signal_connect_closure</title>
+  <synopsis><code mime="text/x-gjs">
+function signal_connect_closure(instance: GObject.Object, detailed_signal: String, closure: GObject.Closure, after: Boolean): Number {
+    // Gjs wrapper for g_signal_connect_closure()
+}
+  </code></synopsis>
+  <p>Connects a closure to a signal for a particular object.</p>
+
+<terms>
+<item>
+<title><code>instance</code></title>
+  <p>the instance to connect to.</p>
+</item>
+<item>
+<title><code>detailed_signal</code></title>
+  <p>a string of the form "signal-name::detail".</p>
+</item>
+<item>
+<title><code>closure</code></title>
+  <p>the closure to connect.</p>
+</item>
+<item>
+<title><code>after</code></title>
+  <p>whether the handler should be called before or after the
+ default handler of the signal.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

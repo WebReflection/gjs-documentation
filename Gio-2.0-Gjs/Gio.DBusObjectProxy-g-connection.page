@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusObjectProxy-g-connection"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusObjectProxy" group="property" type="guide"/>
+    <title type="link" role="topic">g-connection</title>
+  </info>
+  <title>Gio.DBusObjectProxy.g_connection</title>
+  <synopsis><code mime="text/x-gjs">
+DBusObjectProxy.g_connection: Gio.DBusConnection (Read / Write / Construct Only)
+  </code></synopsis>
+  <p>The connection of the proxy.</p>
+  <p>Since 2.30</p>
+</page>

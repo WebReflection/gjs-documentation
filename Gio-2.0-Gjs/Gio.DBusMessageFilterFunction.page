@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusMessageFilterFunction"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Gio.DBusMessageFilterFunction</title>
+  <synopsis><code mime="text/x-gjs">
+function onDBusMessageFilterFunction(connection: Gio.DBusConnection, message: Gio.DBusMessage, incoming: Boolean): Gio.DBusMessage {
+}
+  </code></synopsis>
+  <p>Signature for function used in <link xref="Gio.DBusConnection.add_filter"/>.</p>  <p>A filter function is passed a <link xref="Gio.DBusMessage"/> and expected to return
+a <link xref="Gio.DBusMessage"/> too. Passive filter functions that don't modify the
+message can simply return the <code>message</code> object:
+|[
+static GDBusMessage *
+passive_filter (GDBusConnection *connection
+                GDBusMessage    *message,
+                gboolean         incoming,
+                gpointer         user_data)
+{
+  /&lt;!-- --&gt;* inspect <code>message</code> *&lt;!-- --&gt;/
+  return message;
+}
+]|
+Filter functions that wants to drop a message can simply return <code>null</code>:
+|[
+static GDBusMessage *
+drop_filter (GDBusConnection *connection
+             GDBusMessage    *message,
+             gboolean         incoming,
+             gpointer         user_data)
+{
+  if (should_drop_message)
+    {
+      g_object_unref (message);
+      message = NULL;
+    }
+  return message;
+}
+]|
+Finally, a filter function may modify a message by copying it:
+|[
+static GDBusMessage *
+modifying_filter (GDBusConnection *connection
+                  GDBusMessage    *message,
+                  gboolean         incoming,
+                  gpointer         user_data)
+{
+  GDBusMessage *copy;
+  GError *error;</p>  <p>  error = NULL;
+  copy = g_dbus_message_copy (message, &amp;error);
+  /&lt;!-- --&gt;* handle @error being is set *&lt;!-- --&gt;/
+  g_object_unref (message);</p>  <p>  /&lt;!-- --&gt;* modify @copy *&lt;!-- --&gt;/</p>  <p>  return copy;
+}
+]|
+If the returned <link xref="Gio.DBusMessage"/> is different from <code>message</code> and cannot
+be sent on <code>connection</code> (it could use features, such as file
+descriptors, not compatible with <code>connection</code>), then a warning is
+logged to &lt;emphasis&gt;standard error&lt;/emphasis&gt;. Applications can
+check this ahead of time using <link xref="Gio.DBusMessage.to_blob"/> passing a
+<link xref="Gio.DBusCapabilityFlags"/> value obtained from <code>connection</code>.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>connection</code></title>
+  <p>A <link xref="Gio.DBusConnection"/>.</p>
+</item>
+<item>
+<title><code>message</code></title>
+  <p>A locked <link xref="Gio.DBusMessage"/> that the filter function takes ownership of.</p>
+</item>
+<item>
+<title><code>incoming</code></title>
+  <p><code>true</code> if it is a message received from the other peer, <code>false</code> if it is
+a message to be sent to the other peer.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

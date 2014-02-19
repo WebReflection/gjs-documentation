@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Gio.FileReadMoreCallback"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Gio.FileReadMoreCallback</title>
+  <synopsis><code mime="text/x-gjs">
+function onFileReadMoreCallback(file_contents: String, file_size: Number, callback_data: gpointer): Boolean {
+}
+  </code></synopsis>
+  <p>When loading the partial contents of a file with <link xref="Gio.load_partial_contents_async"/>,
+it may become necessary to determine if any more data from the file should be loaded.
+A <link xref="Gio.FileReadMoreCallback"/> function facilitates this by returning <code>true</code> if more data
+should be read, or <code>false</code> otherwise.</p>
+
+<terms>
+<item>
+<title><code>file_contents</code></title>
+  <p>the data as currently read.</p>
+</item>
+<item>
+<title><code>file_size</code></title>
+  <p>the size of the data currently read.</p>
+</item>
+<item>
+<title><code>callback_data</code></title>
+  <p>data passed to the callback.</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

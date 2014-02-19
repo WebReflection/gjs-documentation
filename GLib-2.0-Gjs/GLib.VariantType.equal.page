@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="GLib.VariantType.equal"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.VariantType" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_variant_type_equal</api:name>
+      <api:arg>
+        <api:type>GLib.VariantType</api:type>
+        <api:name>type2</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.VariantType.prototype.equal</title>
+  <synopsis><code mime="text/x-gjs">
+function equal(type2: GLib.VariantType): Boolean {
+    // Gjs wrapper for g_variant_type_equal()
+}
+  </code></synopsis>
+  <p>Compares <code>type1</code> and <code>type2</code> for equality.</p>  <p>Only returns <code>true</code> if the types are exactly equal.  Even if one type
+is an indefinite type and the other is a subtype of it, <code>false</code> will
+be returned if they are not exactly equal.  If you want to check for
+subtypes, use <link xref="GLib.is_subtype_of"/>.</p>  <p>The argument types of <code>type1</code> and <code>type2</code> are only #gconstpointer to
+allow use with <link xref="GLib.HashTable"/> without function pointer casting.  For
+both arguments, a valid <link xref="GLib.VariantType"/> must be provided.</p>
+
+<terms>
+<item>
+<title><code>type2</code></title>
+  <p>a <link xref="GLib.VariantType"/></p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

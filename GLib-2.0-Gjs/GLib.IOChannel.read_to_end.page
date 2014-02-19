@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="GLib.IOChannel.read_to_end"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.IOChannel" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.IOStatus</api:type>
+      </api:returns>
+      <api:name>g_io_channel_read_to_end</api:name>
+    </api:function>
+  </info>
+  <title>GLib.IOChannel.prototype.read_to_end</title>
+  <synopsis><code mime="text/x-gjs">
+function read_to_end(): [return_value: GLib.IOStatus, str_return: Array(guint8)] {
+    // Gjs wrapper for g_io_channel_read_to_end()
+}
+  </code></synopsis>
+  <p>Reads all the remaining data from the file.</p>
+
+<terms>
+<item>
+<title><code>return_value</code></title>
+
+</item>
+<item>
+<title><code>str_return</code></title>
+  <p>Location to
+             store a pointer to a string holding the remaining data in the
+             <link xref="GLib.IOChannel"/>. This data should be freed with <link xref="GLib.free"/> when no
+             longer needed. This data is terminated by an extra nul
+             character, but there may be other nuls in the intervening data.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="GLib.MainContext.default"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.MainContext" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.MainContext</api:type>
+      </api:returns>
+      <api:name>g_main_context_default</api:name>
+    </api:function>
+  </info>
+  <title>GLib.MainContext.default</title>
+  <synopsis><code mime="text/x-gjs">
+function default(): GLib.MainContext {
+    // Gjs wrapper for g_main_context_default()
+}
+  </code></synopsis>
+  <p>Returns the global default main context. This is the main context
+used for main loop functions when a main loop is not explicitly
+specified, and corresponds to the "main" main loop. See also
+<link xref="GLib.main_context_get_thread_default"/>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

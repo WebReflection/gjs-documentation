@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="Gio.Action.get_state"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Action" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.Variant</api:type>
+      </api:returns>
+      <api:name>g_action_get_state</api:name>
+    </api:function>
+  </info>
+  <title>Gio.Action.prototype.get_state</title>
+  <synopsis><code mime="text/x-gjs">
+function get_state(): GLib.Variant {
+    // Gjs wrapper for g_action_get_state()
+}
+  </code></synopsis>
+  <p>Queries the current state of <code>action</code>.</p>  <p>If the action is not stateful then <code>null</code> will be returned.  If the
+action is stateful then the type of the return value is the type
+given by <link xref="Gio.get_state_type"/>.</p>  <p>The return value (if non-<code>null</code>) should be freed with
+<link xref="GLib.unref"/> when it is no longer required.</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

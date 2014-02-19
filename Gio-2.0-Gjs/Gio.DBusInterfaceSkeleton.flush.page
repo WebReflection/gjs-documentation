@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusInterfaceSkeleton.flush"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusInterfaceSkeleton" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_dbus_interface_skeleton_flush</api:name>
+    </api:function>
+  </info>
+  <title>Gio.DBusInterfaceSkeleton.prototype.flush</title>
+  <synopsis><code mime="text/x-gjs">
+function flush(): void {
+    // Gjs wrapper for g_dbus_interface_skeleton_flush()
+}
+  </code></synopsis>
+  <p>If <code>interface_</code> has outstanding changes, request for these changes to be
+emitted immediately.</p>  <p>For example, an exported D-Bus interface may queue up property
+changes and emit the
+`org.freedesktop.DBus.Properties::Propert``
+signal later (e.g. in an idle handler). This technique is useful
+for collapsing multiple property changes into one.</p>
+  <p>Since 2.30</p>
+
+</page>

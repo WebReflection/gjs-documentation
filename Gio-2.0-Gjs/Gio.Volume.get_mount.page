@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.Volume.get_mount"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Volume" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.Mount</api:type>
+      </api:returns>
+      <api:name>g_volume_get_mount</api:name>
+    </api:function>
+  </info>
+  <title>Gio.Volume.prototype.get_mount</title>
+  <synopsis><code mime="text/x-gjs">
+function get_mount(): Gio.Mount {
+    // Gjs wrapper for g_volume_get_mount()
+}
+  </code></synopsis>
+  <p>Gets the mount for the <code>volume</code>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusPropertyInfo-signature"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusPropertyInfo" group="field" type="guide"/>
+    <title type="link" role="topic">signature</title>
+  </info>
+  <title>Gio.DBusPropertyInfo.signature</title>
+  <synopsis><code mime="text/x-gjs">
+DBusPropertyInfo.signature: String (Read)
+  </code></synopsis>
+  <p>The D-Bus signature of the property (a single complete type).</p>
+
+</page>

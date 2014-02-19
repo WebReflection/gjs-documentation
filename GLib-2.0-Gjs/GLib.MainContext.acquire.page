@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="GLib.MainContext.acquire"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.MainContext" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_main_context_acquire</api:name>
+    </api:function>
+  </info>
+  <title>GLib.MainContext.prototype.acquire</title>
+  <synopsis><code mime="text/x-gjs">
+function acquire(): Boolean {
+    // Gjs wrapper for g_main_context_acquire()
+}
+  </code></synopsis>
+  <p>Tries to become the owner of the specified context.
+If some other thread is the owner of the context,
+returns <code>false</code> immediately. Ownership is properly
+recursive: the owner can require ownership again
+and will release ownership when <link xref="GLib.release"/>
+is called as many times as <link xref="GLib.MainContext.acquire"/>.</p>  <p>You must be the owner of a context before you
+can call <link xref="GLib.prepare"/>, <link xref="GLib.query"/>,
+<link xref="GLib.check"/>, <link xref="GLib.dispatch"/>.</p>
+
+<terms>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

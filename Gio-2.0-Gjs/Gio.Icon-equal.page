@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Gio.Icon-equal"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Icon" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.Icon::equal</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_equal(icon2: Gio.Icon): Boolean {
+}
+  </code></synopsis>
+  <p>Checks if two icons are equal.</p>
+
+<terms>
+<item>
+<title><code>icon2</code></title>
+  <p>pointer to the second <link xref="Gio.Icon"/>.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if <code>icon1</code> is equal to <code>icon2</code>. <code>false</code> otherwise.</p>
+</item>
+</terms>
+
+</page>

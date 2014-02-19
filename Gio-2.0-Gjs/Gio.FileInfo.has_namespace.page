@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gio.FileInfo.has_namespace"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.FileInfo" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_file_info_has_namespace</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>name_space</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.FileInfo.prototype.has_namespace</title>
+  <synopsis><code mime="text/x-gjs">
+function has_namespace(name_space: String): Boolean {
+    // Gjs wrapper for g_file_info_has_namespace()
+}
+  </code></synopsis>
+  <p>Checks if a file info structure has an attribute in the
+specified <code>name_space</code>.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>name_space</code></title>
+  <p>a file attribute namespace.</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

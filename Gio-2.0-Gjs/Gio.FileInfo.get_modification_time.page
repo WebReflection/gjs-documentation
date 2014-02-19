@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gio.FileInfo.get_modification_time"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.FileInfo" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_file_info_get_modification_time</api:name>
+    </api:function>
+  </info>
+  <title>Gio.FileInfo.prototype.get_modification_time</title>
+  <synopsis><code mime="text/x-gjs">
+function get_modification_time(): GLib.TimeVal {
+    // Gjs wrapper for g_file_info_get_modification_time()
+}
+  </code></synopsis>
+  <p>Gets the modification time of the current <code>info</code> and sets it
+in <code>result</code>.</p>
+
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>a <link xref="GLib.TimeVal"/>.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="GObject.signal_query"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_signal_query</api:name>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>signal_id</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.signal_query</title>
+  <synopsis><code mime="text/x-gjs">
+function signal_query(signal_id: Number): GObject.SignalQuery {
+    // Gjs wrapper for g_signal_query()
+}
+  </code></synopsis>
+  <p>Queries the signal system for in-depth information about a
+specific signal. This function will fill in a user-provided
+structure to hold signal-specific information. If an invalid
+signal id is passed in, the <code>signal_id</code> member of the <link xref="GObject.SignalQuery"/>
+is 0. All members filled into the <link xref="GObject.SignalQuery"/> structure should
+be considered constant and have to be left untouched.</p>
+
+<terms>
+<item>
+<title><code>signal_id</code></title>
+  <p>The signal id of the signal to query information for.</p>
+</item>
+<item>
+<title><code>query</code></title>
+  <p>A user provided structure that is
+ filled in with constant values upon success.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<page id="GObject.SignalAccumulator"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>GObject.SignalAccumulator</title>
+  <synopsis><code mime="text/x-gjs">
+function onSignalAccumulator(ihint: GObject.SignalInvocationHint, return_accu: GObject.Value, handler_return: GObject.Value, data: gpointer): Boolean {
+}
+  </code></synopsis>
+  <p>The signal accumulator is a special callback function that can be used
+to collect return values of the various callbacks that are called
+during a signal emission. The signal accumulator is specified at signal
+creation time, if it is left <code>null</code>, no accumulation of callback return
+values is performed. The return value of signal emissions is then the
+value returned by the last callback.</p>
+
+<terms>
+<item>
+<title><code>ihint</code></title>
+  <p>Signal invocation hint, see <link xref="GObject.SignalInvocationHint"/>.</p>
+</item>
+<item>
+<title><code>return_accu</code></title>
+  <p>Accumulator to collect callback return values in, this
+ is the return value of the current signal emission.</p>
+</item>
+<item>
+<title><code>handler_return</code></title>
+  <p>A <link xref="GObject.Value"/> holding the return value of the signal handler.</p>
+</item>
+<item>
+<title><code>data</code></title>
+  <p>Callback data that was specified when creating the signal.</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

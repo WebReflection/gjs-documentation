@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gio.DataInputStream.set_byte_order"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DataInputStream" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_data_input_stream_set_byte_order</api:name>
+      <api:arg>
+        <api:type>Gio.DataStreamByteOrder</api:type>
+        <api:name>order</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DataInputStream.prototype.set_byte_order</title>
+  <synopsis><code mime="text/x-gjs">
+function set_byte_order(order: Gio.DataStreamByteOrder): void {
+    // Gjs wrapper for g_data_input_stream_set_byte_order()
+}
+  </code></synopsis>
+  <p>This function sets the byte order for the given <code>stream</code>. All subsequent
+reads from the <code>stream</code> will be read in the given <code>order</code>.</p>
+
+<terms>
+<item>
+<title><code>order</code></title>
+  <p>a <link xref="Gio.DataStreamByteOrder"/> to set.</p>
+</item>
+</terms>
+
+</page>

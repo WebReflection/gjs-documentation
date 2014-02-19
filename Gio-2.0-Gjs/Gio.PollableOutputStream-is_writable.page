@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gio.PollableOutputStream-is_writable"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.PollableOutputStream" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.PollableOutputStream::is_writable</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_is_writable(): Boolean {
+}
+  </code></synopsis>
+  <p>Checks if <code>stream</code> can be written.</p>  <p>Note that some stream types may not be able to implement this 100%
+reliably, and it is possible that a call to <link xref="Gio.OutputStream.write"/>
+after this returns <code>true</code> would still block. To guarantee
+non-blocking behavior, you should always use
+<link xref="Gio.PollableOutputStream.write_nonblocking"/>, which will return a
+<link xref="Gio.IOErrorEnum"/>.would_block error rather than blocking.</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if <code>stream</code> is writable, <code>false</code> if not. If an error
+  has occurred on <code>stream</code>, this will result in
+  <link xref="Gio.PollableOutputStream.is_writable"/> returning <code>true</code>, and the
+  next attempt to write will return the error.</p>
+</item>
+</terms>
+
+</page>

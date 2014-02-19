@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="GObject.Object.freeze_notify"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.Object" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_object_freeze_notify</api:name>
+    </api:function>
+  </info>
+  <title>GObject.Object.prototype.freeze_notify</title>
+  <synopsis><code mime="text/x-gjs">
+function freeze_notify(): void {
+    // Gjs wrapper for g_object_freeze_notify()
+}
+  </code></synopsis>
+  <p>Increases the freeze count on <code>object</code>. If the freeze count is
+non-zero, the emission of "notify" signals on <code>object</code> is
+stopped. The signals are queued until the freeze count is decreased
+to zero. Duplicate notifications are squashed so that at most one
+<link xref="GObject.notify"/> signal is emitted for each property modified while the
+object is frozen.</p>  <p>This is necessary for accessors that modify multiple properties to prevent
+premature notification while the object is still being modified.</p>
+
+
+</page>

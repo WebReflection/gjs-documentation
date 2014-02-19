@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="Gio.PropertyAction-name"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.PropertyAction" group="property" type="guide"/>
+    <title type="link" role="topic">name</title>
+  </info>
+  <title>Gio.PropertyAction.name</title>
+  <synopsis><code mime="text/x-gjs">
+PropertyAction.name: String (Read / Write / Construct Only)
+  </code></synopsis>
+  <p>The name of the action.  This is mostly meaningful for identifying
+the action once it has been added to a <link xref="Gio.ActionMap"/>.</p>
+  <p>Since 2.38</p>
+</page>

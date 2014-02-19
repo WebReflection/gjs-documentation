@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<page id="Gio.File-set_attribute"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.File" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.File::set_attribute</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_set_attribute(attribute: String, type: Gio.FileAttributeType, value_p: gpointer, flags: Gio.FileQueryInfoFlags, cancellable: Gio.Cancellable): Boolean {
+}
+  </code></synopsis>
+  <p>Sets an attribute in the file with attribute name <code>attribute</code> to @value.</p>  <p>Some attributes can be unset by setting <code>attribute</code> to
+<link xref="Gio.FileAttributeType"/>.invalid and <code>value_p</code> to <code>null</code>.</p>  <p>If <code>cancellable</code> is not <code>null</code>, then the operation can be cancelled by
+triggering the cancellable object from another thread. If the operation
+was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be returned.</p>
+
+<terms>
+<item>
+<title><code>attribute</code></title>
+  <p>a string containing the attribute's name</p>
+</item>
+<item>
+<title><code>type</code></title>
+  <p>The type of the attribute</p>
+</item>
+<item>
+<title><code>value_p</code></title>
+  <p>a pointer to the value (or the pointer
+    itself if the type is a pointer type)</p>
+</item>
+<item>
+<title><code>flags</code></title>
+  <p>a set of <link xref="Gio.FileQueryInfoFlags"/></p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional <link xref="Gio.Cancellable"/> object,
+    <code>null</code> to ignore</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if the attribute was set, <code>false</code> otherwise.</p>
+</item>
+</terms>
+
+</page>

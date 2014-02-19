@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<page id="Gio.ActionGroup.query_action"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.ActionGroup" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_action_group_query_action</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>action_name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.ActionGroup.prototype.query_action</title>
+  <synopsis><code mime="text/x-gjs">
+function query_action(action_name: String): [ok: Boolean, enabled: Boolean, parameter_type: GLib.VariantType, state_type: GLib.VariantType, state_hint: GLib.Variant, state: GLib.Variant] {
+    // Gjs wrapper for g_action_group_query_action()
+}
+  </code></synopsis>
+  <p>Queries all aspects of the named action within an <code>action_group</code>.</p>  <p>This function acquires the information available from
+<link xref="Gio.ActionGroup.has_action"/>, <link xref="Gio.ActionGroup.get_action_enabled"/>,
+<link xref="Gio.ActionGroup.get_action_parameter_type"/>,
+<link xref="Gio.ActionGroup.get_action_state_type"/>,
+<link xref="Gio.ActionGroup.get_action_state_hint"/> and
+<link xref="Gio.ActionGroup.get_action_state"/> with a single function call.</p>  <p>This provides two main benefits.</p>  <p>The first is the improvement in efficiency that comes with not having
+to perform repeated lookups of the action in order to discover
+different things about it.  The second is that implementing
+<link xref="Gio.ActionGroup"/> can now be done by only overriding this one virtual
+function.</p>  <p>The interface provides a default implementation of this function that
+calls the individual functions, as required, to fetch the
+information.  The interface also provides default implementations of
+those functions that call this function.  All implementations,
+therefore, must override either this function or all of the others.</p>  <p>If the action exists, <code>true</code> is returned and any of the requested
+fields (as indicated by having a non-<code>null</code> reference passed in) are
+filled.  If the action doesn't exist, <code>false</code> is returned and the
+fields may or may not have been modified.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>action_name</code></title>
+  <p>the name of an action in the group</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+<item>
+<title><code>enabled</code></title>
+  <p>if the action is presently enabled</p>
+</item>
+<item>
+<title><code>parameter_type</code></title>
+  <p>the parameter type, or <code>null</code> if none needed</p>
+</item>
+<item>
+<title><code>state_type</code></title>
+  <p>the state type, or <code>null</code> if stateless</p>
+</item>
+<item>
+<title><code>state_hint</code></title>
+  <p>the state hint, or <code>null</code> if none</p>
+</item>
+<item>
+<title><code>state</code></title>
+  <p>the current state, or <code>null</code> if stateless</p>
+</item>
+</terms>
+
+</page>

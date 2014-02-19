@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<page id="Gio.Settings.get_default_value"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Settings" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.Variant</api:type>
+      </api:returns>
+      <api:name>g_settings_get_default_value</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>key</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.Settings.prototype.get_default_value</title>
+  <synopsis><code mime="text/x-gjs">
+function get_default_value(key: String): GLib.Variant {
+    // Gjs wrapper for g_settings_get_default_value()
+}
+  </code></synopsis>
+  <p>Gets the "default value" of a key.</p>  <p>This is the value that would be read if <link xref="Gio.reset"/> were to be
+called on the key.</p>  <p>Note that this may be a different value than returned by
+<link xref="Gio.get_default_value"/> if the system administrator
+has provided a default value.</p>  <p>Comparing the return values of <link xref="Gio.Settings.get_default_value"/> and
+<link xref="Gio.get_value"/> is not sufficient for determining if a value
+has been set because the user may have explicitly set the value to
+something that happens to be equal to the default.  The difference
+here is that if the default changes in the future, the user's key
+will still be set.</p>  <p>This function may be useful for adding an indication to a UI of what
+the default value was before the user set it.</p>  <p>It is a programmer error to give a <code>key</code> that isn't contained in the
+schema for <code>settings</code>.</p>
+  <p>Since 2.40</p>
+<terms>
+<item>
+<title><code>key</code></title>
+  <p>the key to get the default value for</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

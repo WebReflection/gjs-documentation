@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gio.FileInfo.set_is_hidden"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.FileInfo" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_file_info_set_is_hidden</api:name>
+      <api:arg>
+        <api:type>Boolean</api:type>
+        <api:name>is_hidden</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.FileInfo.prototype.set_is_hidden</title>
+  <synopsis><code mime="text/x-gjs">
+function set_is_hidden(is_hidden: Boolean): void {
+    // Gjs wrapper for g_file_info_set_is_hidden()
+}
+  </code></synopsis>
+  <p>Sets the "is_hidden" attribute in a <link xref="Gio.FileInfo"/> according to <code>is_hidden</code>.
+See %G_FILE_ATTRIBUTE_STANDARD_IS_HIDDEN.</p>
+
+<terms>
+<item>
+<title><code>is_hidden</code></title>
+  <p>a #gboolean.</p>
+</item>
+</terms>
+
+</page>

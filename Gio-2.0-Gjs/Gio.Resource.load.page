@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="Gio.Resource.load"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Resource" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.Resource</api:type>
+      </api:returns>
+      <api:name>g_resource_load</api:name>
+      <api:arg>
+        <api:type>filename</api:type>
+        <api:name>filename</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.Resource.load</title>
+  <synopsis><code mime="text/x-gjs">
+function load(filename: filename): Gio.Resource {
+    // Gjs wrapper for g_resource_load()
+}
+  </code></synopsis>
+  <p>Loads a binary resource bundle and creates a <link xref="Gio.Resource"/> representation of it, allowing
+you to query it for data.</p>  <p>If you want to use this resource in the global resource namespace you need
+to register it with <link xref="Gio.Resource._register"/>.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>filename</code></title>
+  <p>the path of a filename to load, in the GLib filename encoding</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

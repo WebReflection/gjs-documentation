@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Gio.FILE_ATTRIBUTE_DOS_IS_ARCHIVE"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>Gio.FILE_ATTRIBUTE_DOS_IS_ARCHIVE</title>
+  <p>A key in the "dos" namespace for checking if the file's archive flag
+is set. This attribute is <code>true</code> if the archive flag is set. This attribute
+is only available for DOS file systems. Corresponding <link xref="Gio.FileAttributeType"/>
+is <link xref="Gio.FileAttributeType"/>.boolean.</p>
+
+</page>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page id="Gio.FileIOStream-can_seek"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.FileIOStream" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.FileIOStream::can_seek</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_can_seek(): Boolean {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

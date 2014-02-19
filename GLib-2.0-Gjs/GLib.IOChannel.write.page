@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<page id="GLib.IOChannel.write"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.IOChannel" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.IOError</api:type>
+      </api:returns>
+      <api:name>g_io_channel_write</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>buf</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gsize</api:type>
+        <api:name>count</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gsize</api:type>
+        <api:name>bytes_written</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.IOChannel.prototype.write</title>
+  <synopsis><code mime="text/x-gjs">
+function write(buf: String, count: gsize, bytes_written: gsize): GLib.IOError {
+    // Gjs wrapper for g_io_channel_write()
+}
+  </code></synopsis>
+  <p>Writes data to a <link xref="GLib.IOChannel"/>.</p>
+
+<terms>
+<item>
+<title><code>buf</code></title>
+  <p>the buffer containing the data to write</p>
+</item>
+<item>
+<title><code>count</code></title>
+  <p>the number of bytes to write</p>
+</item>
+<item>
+<title><code>bytes_written</code></title>
+  <p>the number of bytes actually written</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

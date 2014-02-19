@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<page id="GLib.Mutex.lock"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Mutex" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_mutex_lock</api:name>
+    </api:function>
+  </info>
+  <title>GLib.Mutex.prototype.lock</title>
+  <synopsis><code mime="text/x-gjs">
+function lock(): void {
+    // Gjs wrapper for g_mutex_lock()
+}
+  </code></synopsis>
+  <p>Locks <code>mutex</code>. If <code>mutex</code> is already locked by another thread, the
+current thread will block until <code>mutex</code> is unlocked by the other
+thread.</p>  <p><link xref="GLib.Mutex"/> is neither guaranteed to be recursive nor to be
+non-recursive.  As such, calling <link xref="GLib.Mutex.lock"/> on a <link xref="GLib.Mutex"/> that has
+already been locked by the same thread results in undefined behaviour
+(including but not limited to deadlocks).</p>
+
+
+</page>

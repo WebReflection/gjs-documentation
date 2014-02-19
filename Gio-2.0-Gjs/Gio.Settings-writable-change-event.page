@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<page id="Gio.Settings-writable-change-event"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Settings" group="signal" type="guide"/>
+    <title type="link" role="topic">writable-change-event</title>
+  </info>
+  <title>Gio.Settings::writable-change-event</title>
+  <synopsis><code mime="text/x-gjs">
+connect('writable-change-event', function (settings, key: Number, ): Boolean);
+  </code></synopsis>
+  <p>The "writable-change-event" signal is emitted once per writability
+change event that affects this settings object.  You should connect
+to this signal if you are interested in viewing groups of changes
+before they are split out into multiple emissions of the
+"writable-changed" signal.  For most use cases it is more
+appropriate to use the "writable-changed" signal.</p>  <p>In the event that the writability change applies only to a single
+key, <code>key</code> will be set to the <link xref="GLib.Quark"/> for that key.  In the event
+that the writability change affects the entire settings object,
+<code>key</code> will be 0.</p>  <p>The default handler for this signal invokes the "writable-changed"
+and "changed" signals for each affected key.  This is done because
+changes in writability might also imply changes in value (if for
+example, a new mandatory setting is introduced).  If any other
+connected handler returns <code>true</code> then this default functionality
+will be suppressed.</p>
+
+<terms>
+<item>
+<title><code>settings</code></title>
+<p>instance of <link xref="Gio.Settings"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>key</code></title>
+  <p>the quark of the key, or 0</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> to stop other handlers from being invoked for the
+         event. FALSE to propagate the event further.</p>
+</item>
+</terms>
+
+</page>

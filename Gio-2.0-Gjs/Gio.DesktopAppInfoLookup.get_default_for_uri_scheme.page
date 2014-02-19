@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="Gio.DesktopAppInfoLookup.get_default_for_uri_scheme"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DesktopAppInfoLookup" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.AppInfo</api:type>
+      </api:returns>
+      <api:name>g_desktop_app_info_lookup_get_default_for_uri_scheme</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>uri_scheme</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DesktopAppInfoLookup.prototype.get_default_for_uri_scheme</title>
+  <synopsis><code mime="text/x-gjs">
+function get_default_for_uri_scheme(uri_scheme: String): Gio.AppInfo {
+    // Gjs wrapper for g_desktop_app_info_lookup_get_default_for_uri_scheme()
+}
+  </code></synopsis>
+  <p>Gets the default application for launching applications
+using this URI scheme for a particular GDesktopAppInfoLookup
+implementation.</p>  <p>The GDesktopAppInfoLookup interface and this function is used
+to implement <link xref="Gio.app_info_get_default_for_uri_scheme"/> backends
+in a GIO module. There is no reason for applications to use it
+directly. Applications should use <link xref="Gio.app_info_get_default_for_uri_scheme"/>.</p>
+
+<terms>
+<item>
+<title><code>uri_scheme</code></title>
+  <p>a string containing a URI scheme.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

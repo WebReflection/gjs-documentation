@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Gio.FILE_ATTRIBUTE_THUMBNAIL_IS_VALID"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>Gio.FILE_ATTRIBUTE_THUMBNAIL_IS_VALID</title>
+  <p>A key in the "thumbnail" namespace for checking whether the thumbnail is outdated.
+This attribute is <code>true</code> if the thumbnail is up-to-date with the file it represents,
+and <code>false</code> if the file has been modified since the thumbnail was generated.</p>  <p>If %G_FILE_ATTRIBUTE_THUMBNAILING_FAILED is <code>true</code> and this attribute is <code>false</code>,
+it indicates that thumbnailing may be attempted again and may succeed.</p>  <p>Corresponding <link xref="Gio.FileAttributeType"/> is <link xref="Gio.FileAttributeType"/>.boolean.</p>
+  <p>Since 2.40</p>
+</page>

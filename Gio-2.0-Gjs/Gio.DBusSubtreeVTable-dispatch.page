@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusSubtreeVTable-dispatch"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusSubtreeVTable" group="field" type="guide"/>
+    <title type="link" role="topic">dispatch</title>
+  </info>
+  <title>Gio.DBusSubtreeVTable.dispatch</title>
+  <synopsis><code mime="text/x-gjs">
+DBusSubtreeVTable.dispatch: Gio.DBusSubtreeDispatchFunc (Read)
+  </code></synopsis>
+  <p>Function for dispatching a remote call on a child node.</p>
+
+</page>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="GLib.ByteArray.new"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.ByteArray" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(guint8)</api:type>
+      </api:returns>
+      <api:name>g_byte_array_new</api:name>
+    </api:function>
+  </info>
+  <title>GLib.ByteArray.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(): Array(guint8) {
+    // Gjs wrapper for g_byte_array_new()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="GLib.ByteArray"/> with a reference count of 1.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<page id="Gio.NetworkAddress"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>Gio.NetworkAddress</title>
+  <synopsis><code>
+const Gio = imports.gi.Gio;
+
+let networkAddress = new Gio.NetworkAddress({
+    <link xref='Gio.NetworkAddress-hostname'>hostname</link>: value,
+    <link xref='Gio.NetworkAddress-port'>port</link>: value,
+    <link xref='Gio.NetworkAddress-scheme'>scheme</link>: value,
+});
+  </code></synopsis>
+  <p><link xref="Gio.NetworkAddress"/> provides an easy way to resolve a hostname and
+then attempt to connect to that host, handling the possibility of
+multiple IP addresses and multiple address families.</p>  <p>See <link xref="Gio.SocketConnectable"/> for and example of using the connectable
+interface.</p>
+
+  <synopsis>
+    <title>Hierarchy</title>
+    <tree>
+      <item>
+        <code>GObject.Object</code>
+      <item>
+        <code>Gio.NetworkAddress</code>
+      </item>
+      </item>
+    </tree>
+  </synopsis>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="property" style="linklist">
+    <title>Properties</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="signal" style="linklist">
+    <title>Signals</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="vfunc" style="linklist">
+    <title>Virtual functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

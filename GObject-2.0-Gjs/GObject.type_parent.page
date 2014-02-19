@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="GObject.type_parent"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GType</api:type>
+      </api:returns>
+      <api:name>g_type_parent</api:name>
+      <api:arg>
+        <api:type>GType</api:type>
+        <api:name>type</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.type_parent</title>
+  <synopsis><code mime="text/x-gjs">
+function type_parent(type: GType): GType {
+    // Gjs wrapper for g_type_parent()
+}
+  </code></synopsis>
+  <p>Return the direct parent type of the passed in type. If the passed
+in type has no parent, i.e. is a fundamental type, 0 is returned.</p>
+
+<terms>
+<item>
+<title><code>type</code></title>
+  <p>the derived type</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

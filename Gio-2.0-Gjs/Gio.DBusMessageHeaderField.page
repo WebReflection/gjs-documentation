@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusMessageHeaderField"
+      type="topic"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Gio.DBusMessageHeaderField</title>
+  <p>Header fields used in <link xref="Gio.DBusMessage"/>.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>DBusMessageHeaderField.INVALID</code></title>
+  <p>Not a valid header field.</p>
+</item>
+<item>
+<title><code>DBusMessageHeaderField.PATH</code></title>
+  <p>The object path.</p>
+</item>
+<item>
+<title><code>DBusMessageHeaderField.INTERFACE</code></title>
+  <p>The interface name.</p>
+</item>
+<item>
+<title><code>DBusMessageHeaderField.MEMBER</code></title>
+  <p>The method or signal name.</p>
+</item>
+<item>
+<title><code>DBusMessageHeaderField.ERROR_NAME</code></title>
+  <p>The name of the error that occurred.</p>
+</item>
+<item>
+<title><code>DBusMessageHeaderField.REPLY_SERIAL</code></title>
+  <p>The serial number the message is a reply to.</p>
+</item>
+<item>
+<title><code>DBusMessageHeaderField.DESTINATION</code></title>
+  <p>The name the message is intended for.</p>
+</item>
+<item>
+<title><code>DBusMessageHeaderField.SENDER</code></title>
+  <p>Unique name of the sender of the message (filled in by the bus).</p>
+</item>
+<item>
+<title><code>DBusMessageHeaderField.SIGNATURE</code></title>
+  <p>The signature of the message body.</p>
+</item>
+<item>
+<title><code>DBusMessageHeaderField.NUM_UNIX_FDS</code></title>
+  <p>The number of UNIX file descriptors that accompany the message.</p>
+</item>
+</terms>
+
+</page>

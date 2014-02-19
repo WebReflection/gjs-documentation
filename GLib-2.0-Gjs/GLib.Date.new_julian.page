@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="GLib.Date.new_julian"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Date" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.Date</api:type>
+      </api:returns>
+      <api:name>g_date_new_julian</api:name>
+      <api:arg>
+        <api:type>guint32</api:type>
+        <api:name>julian_day</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.Date.new_julian</title>
+  <synopsis><code mime="text/x-gjs">
+function new_julian(julian_day: guint32): GLib.Date {
+    // Gjs wrapper for g_date_new_julian()
+}
+  </code></synopsis>
+  <p>Like <link xref="GLib.new"/>, but also sets the value of the date. Assuming the
+Julian day number you pass in is valid (greater than 0, less than an
+unreasonably large number), the returned date will be valid.</p>
+
+<terms>
+<item>
+<title><code>julian_day</code></title>
+  <p>days since January 1, Year 1</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.UnixOutputStream-fd"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.UnixOutputStream" group="property" type="guide"/>
+    <title type="link" role="topic">fd</title>
+  </info>
+  <title>Gio.UnixOutputStream.fd</title>
+  <synopsis><code mime="text/x-gjs">
+UnixOutputStream.fd: Number (Read / Write / Construct Only)
+  </code></synopsis>
+  <p>The file descriptor that the stream writes to.</p>
+  <p>Since 2.20</p>
+</page>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="GObject.param_value_set_default"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_param_value_set_default</api:name>
+      <api:arg>
+        <api:type>GObject.ParamSpec</api:type>
+        <api:name>pspec</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Value</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.param_value_set_default</title>
+  <synopsis><code mime="text/x-gjs">
+function param_value_set_default(pspec: GObject.ParamSpec, value: GObject.Value): void {
+    // Gjs wrapper for g_param_value_set_default()
+}
+  </code></synopsis>
+  <p>Sets <code>value</code> to its default value as specified in <code>pspec</code>.</p>
+
+<terms>
+<item>
+<title><code>pspec</code></title>
+  <p>a valid <link xref="GObject.ParamSpec"/></p>
+</item>
+<item>
+<title><code>value</code></title>
+  <p>a <link xref="GObject.Value"/> of correct type for <code>pspec</code></p>
+</item>
+</terms>
+
+</page>

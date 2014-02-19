@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<page id="GLib.utf8_casefold"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_utf8_casefold</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>str</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gssize</api:type>
+        <api:name>len</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.utf8_casefold</title>
+  <synopsis><code mime="text/x-gjs">
+function utf8_casefold(str: String, len: gssize): String {
+    // Gjs wrapper for g_utf8_casefold()
+}
+  </code></synopsis>
+  <p>Converts a string into a form that is independent of case. The
+result will not correspond to any particular case, but can be
+compared for equality or ordered with the results of calling
+<link xref="GLib.utf8_casefold"/> on other strings.</p>  <p>Note that calling <link xref="GLib.utf8_casefold"/> followed by <link xref="GLib.utf8_collate"/> is
+only an approximation to the correct linguistic case insensitive
+ordering, though it is a fairly good one. Getting this exactly
+right would require a more sophisticated collation function that
+takes case sensitivity into account. GLib does not currently
+provide such a function.</p>
+
+<terms>
+<item>
+<title><code>str</code></title>
+  <p>a UTF-8 encoded string</p>
+</item>
+<item>
+<title><code>len</code></title>
+  <p>length of <code>str</code>, in bytes, or -1 if <code>str</code> is nul-terminated.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

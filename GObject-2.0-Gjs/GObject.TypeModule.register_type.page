@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<page id="GObject.TypeModule.register_type"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.TypeModule" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GType</api:type>
+      </api:returns>
+      <api:name>g_type_module_register_type</api:name>
+      <api:arg>
+        <api:type>GType</api:type>
+        <api:name>parent_type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>type_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.TypeInfo</api:type>
+        <api:name>type_info</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.TypeFlags</api:type>
+        <api:name>flags</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.TypeModule.prototype.register_type</title>
+  <synopsis><code mime="text/x-gjs">
+function register_type(parent_type: GType, type_name: String, type_info: GObject.TypeInfo, flags: GObject.TypeFlags): GType {
+    // Gjs wrapper for g_type_module_register_type()
+}
+  </code></synopsis>
+  <p>Looks up or registers a type that is implemented with a particular
+type plugin. If a type with name <code>type_name</code> was previously registered,
+the <link xref="GLib.Type"/> identifier for the type is returned, otherwise the type
+is newly registered, and the resulting <link xref="GLib.Type"/> identifier returned.</p>  <p>When reregistering a type (typically because a module is unloaded
+then reloaded, and reinitialized), <code>module</code> and <code>parent_type</code> must
+be the same as they were previously.</p>  <p>As long as any instances of the type exist, the type plugin will
+not be unloaded.</p>
+
+<terms>
+<item>
+<title><code>parent_type</code></title>
+  <p>the type for the parent class</p>
+</item>
+<item>
+<title><code>type_name</code></title>
+  <p>name for the type</p>
+</item>
+<item>
+<title><code>type_info</code></title>
+  <p>type information structure</p>
+</item>
+<item>
+<title><code>flags</code></title>
+  <p>flags field providing details about the type</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<page id="GLib.datalist_id_replace_data"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_datalist_id_replace_data</api:name>
+      <api:arg>
+        <api:type>GLib.Data</api:type>
+        <api:name>datalist</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.Quark</api:type>
+        <api:name>key_id</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>oldval</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>newval</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.DestroyNotify</api:type>
+        <api:name>destroy</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.DestroyNotify</api:type>
+        <api:name>old_destroy</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.datalist_id_replace_data</title>
+  <synopsis><code mime="text/x-gjs">
+function datalist_id_replace_data(datalist: GLib.Data, key_id: GLib.Quark, oldval: gpointer, newval: gpointer, destroy: GLib.DestroyNotify, old_destroy: GLib.DestroyNotify): Boolean {
+    // Gjs wrapper for g_datalist_id_replace_data()
+}
+  </code></synopsis>
+  <p>Compares the member that is associated with <code>key_id</code> in
+<code>datalist</code> to <code>oldval</code>, and if they are the same, replace
+<code>oldval</code> with <code>newval</code>.</p>  <p>This is like a typical atomic compare-and-exchange
+operation, for a member of <code>datalist</code>.</p>  <p>If the previous value was replaced then ownership of the
+old value (<code>oldval</code>) is passed to the caller, including
+the registred destroy notify for it (passed out in <code>old_destroy</code>).
+Its up to the caller to free this as he wishes, which may
+or may not include using <code>old_destroy</code> as sometimes replacement
+should not destroy the object in the normal way.</p>
+  <p>Since 2.34</p>
+<terms>
+<item>
+<title><code>datalist</code></title>
+  <p>location of a datalist</p>
+</item>
+<item>
+<title><code>key_id</code></title>
+  <p>the <link xref="GLib.Quark"/> identifying a data element</p>
+</item>
+<item>
+<title><code>oldval</code></title>
+  <p>the old value to compare against</p>
+</item>
+<item>
+<title><code>newval</code></title>
+  <p>the new value to replace it with</p>
+</item>
+<item>
+<title><code>destroy</code></title>
+  <p>destroy notify for the new value</p>
+</item>
+<item>
+<title><code>old_destroy</code></title>
+  <p>destroy notify for the existing value</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

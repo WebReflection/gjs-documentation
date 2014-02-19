@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.IOStream-closed"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.IOStream" group="property" type="guide"/>
+    <title type="link" role="topic">closed</title>
+  </info>
+  <title>Gio.IOStream.closed</title>
+  <synopsis><code mime="text/x-gjs">
+IOStream.closed: Boolean (Read)
+  </code></synopsis>
+
+
+</page>

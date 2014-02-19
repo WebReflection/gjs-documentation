@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<page id="Gio.NetworkMonitor.can_reach_async"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.NetworkMonitor" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_network_monitor_can_reach_async</api:name>
+      <api:arg>
+        <api:type>Gio.SocketConnectable</api:type>
+        <api:name>connectable</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.AsyncReadyCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.NetworkMonitor.prototype.can_reach_async</title>
+  <synopsis><code mime="text/x-gjs">
+function can_reach_async(connectable: Gio.SocketConnectable, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+    // Gjs wrapper for g_network_monitor_can_reach_async()
+}
+  </code></synopsis>
+  <p>Asynchronously attempts to determine whether or not the host
+pointed to by <code>connectable</code> can be reached, without actually
+trying to connect to it.</p>  <p>For more details, see <link xref="Gio.NetworkMonitor.can_reach"/>.</p>  <p>When the operation is finished, <code>callback</code> will be called.
+You can then call <link xref="Gio.can_reach_finish"/>
+to get the result of the operation.</p>
+
+<terms>
+<item>
+<title><code>connectable</code></title>
+  <p>a <link xref="Gio.SocketConnectable"/></p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>a <link xref="Gio.Cancellable"/>, or <code>null</code></p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>a <link xref="Gio.AsyncReadyCallback"/> to call when the
+    request is satisfied</p>
+</item>
+</terms>
+
+</page>

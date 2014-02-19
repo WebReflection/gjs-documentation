@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Gio.Socket.speaks_ipv4"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Socket" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_socket_speaks_ipv4</api:name>
+    </api:function>
+  </info>
+  <title>Gio.Socket.prototype.speaks_ipv4</title>
+  <synopsis><code mime="text/x-gjs">
+function speaks_ipv4(): Boolean {
+    // Gjs wrapper for g_socket_speaks_ipv4()
+}
+  </code></synopsis>
+  <p>Checks if a socket is capable of speaking IPv4.</p>  <p>IPv4 sockets are capable of speaking IPv4.  On some operating systems
+and under some combinations of circumstances IPv6 sockets are also
+capable of speaking IPv4.  See RFC 3493 section 3.7 for more
+information.</p>  <p>No other types of sockets are currently considered as being capable
+of speaking IPv4.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

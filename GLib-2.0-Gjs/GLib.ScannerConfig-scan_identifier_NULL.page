@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="GLib.ScannerConfig-scan_identifier_NULL"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.ScannerConfig" group="field" type="guide"/>
+    <title type="link" role="topic">scan_identifier_NULL</title>
+  </info>
+  <title>GLib.ScannerConfig.scan_identifier__NULL</title>
+  <synopsis><code mime="text/x-gjs">
+ScannerConfig.scan_identifier__NULL: Number (Read / Write)
+  </code></synopsis>
+  <p>specifies if <code>null</code> is reported as
+    <link xref="GLib.TokenType"/>.identifier_null (the default is <code>false</code>).</p>
+
+</page>

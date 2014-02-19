@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusConnection.close_sync"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusConnection" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_dbus_connection_close_sync</api:name>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DBusConnection.prototype.close_sync</title>
+  <synopsis><code mime="text/x-gjs">
+function close_sync(cancellable: Gio.Cancellable): Boolean {
+    // Gjs wrapper for g_dbus_connection_close_sync()
+}
+  </code></synopsis>
+  <p>Synchronously closees <code>connection</code>. The calling thread is blocked
+until this is done. See <link xref="Gio.DBusConnection.close"/> for the
+asynchronous version of this method and more details about what it
+does.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>cancellable</code></title>
+  <p>a <link xref="Gio.Cancellable"/> or <code>null</code></p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

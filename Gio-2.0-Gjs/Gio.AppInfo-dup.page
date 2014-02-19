@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page id="Gio.AppInfo-dup"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.AppInfo" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.AppInfo::dup</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_dup(): Gio.AppInfo {
+}
+  </code></synopsis>
+  <p>Creates a duplicate of a <link xref="Gio.AppInfo"/>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a duplicate of <code>appinfo</code>.</p>
+</item>
+</terms>
+
+</page>

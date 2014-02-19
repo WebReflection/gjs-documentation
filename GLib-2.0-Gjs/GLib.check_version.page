@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<page id="GLib.check_version"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>glib_check_version</api:name>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>required_major</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>required_minor</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>required_micro</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.check_version</title>
+  <synopsis><code mime="text/x-gjs">
+function check_version(required_major: Number, required_minor: Number, required_micro: Number): String {
+    // Gjs wrapper for glib_check_version()
+}
+  </code></synopsis>
+  <p>Checks that the GLib library in use is compatible with the
+given version. Generally you would pass in the constants
+#GLIB_MAJOR_VERSION, #GLIB_MINOR_VERSION, #GLIB_MICRO_VERSION
+as the three arguments to this function; that produces
+a check that the library in use is compatible with
+the version of GLib the application or module was compiled
+against.</p>  <p>Compatibility is defined by two things: first the version
+of the running library is newer than the version
+<code>required_major</code>.required_minor.<code>required_micro</code>. Second
+the running library must be binary compatible with the
+version <code>required_major</code>.required_minor.<code>required_micro</code>
+(same major version.)</p>
+  <p>Since 2.6</p>
+<terms>
+<item>
+<title><code>required_major</code></title>
+  <p>the required major version</p>
+</item>
+<item>
+<title><code>required_minor</code></title>
+  <p>the required minor version</p>
+</item>
+<item>
+<title><code>required_micro</code></title>
+  <p>the required micro version</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

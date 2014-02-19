@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="Gio.SocketService.is_active"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.SocketService" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_socket_service_is_active</api:name>
+    </api:function>
+  </info>
+  <title>Gio.SocketService.prototype.is_active</title>
+  <synopsis><code mime="text/x-gjs">
+function is_active(): Boolean {
+    // Gjs wrapper for g_socket_service_is_active()
+}
+  </code></synopsis>
+  <p>Check whether the service is active or not. An active
+service will accept new clients that connect, while
+a non-active service will let connecting clients queue
+up until the service is started.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

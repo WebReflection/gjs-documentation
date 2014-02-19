@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page id="Gio.FileDescriptorBased-get_fd"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.FileDescriptorBased" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.FileDescriptorBased::get_fd</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_get_fd(): Number {
+}
+  </code></synopsis>
+  <p>Gets the underlying file descriptor.</p>
+  <p>Since 2.24</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>The file descriptor</p>
+</item>
+</terms>
+
+</page>

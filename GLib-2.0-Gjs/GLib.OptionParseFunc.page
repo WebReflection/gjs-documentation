@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="GLib.OptionParseFunc"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>GLib.OptionParseFunc</title>
+  <synopsis><code mime="text/x-gjs">
+function onOptionParseFunc(context: GLib.OptionContext, group: GLib.OptionGroup, data: gpointer): Boolean {
+}
+  </code></synopsis>
+  <p>The type of function that can be called before and after parsing.</p>
+
+<terms>
+<item>
+<title><code>context</code></title>
+  <p>The active <link xref="GLib.OptionContext"/></p>
+</item>
+<item>
+<title><code>group</code></title>
+  <p>The group to which the function belongs</p>
+</item>
+<item>
+<title><code>data</code></title>
+  <p>User data added to the <link xref="GLib.OptionGroup"/> containing the option when it
+ was created with <link xref="GLib.new"/></p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="GObject.Closure-in_marshal"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.Closure" group="field" type="guide"/>
+    <title type="link" role="topic">in_marshal</title>
+  </info>
+  <title>GObject.Closure.in_marshal</title>
+  <synopsis><code mime="text/x-gjs">
+Closure.in_marshal: Number (Read / Write)
+  </code></synopsis>
+  <p>Indicates whether the closure is currently being invoked with
+ <link xref="GObject.invoke"/></p>
+
+</page>

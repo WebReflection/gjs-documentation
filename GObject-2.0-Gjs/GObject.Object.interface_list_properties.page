@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<page id="GObject.Object.interface_list_properties"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.Object" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(GObject.ParamSpec)</api:type>
+      </api:returns>
+      <api:name>g_object_interface_list_properties</api:name>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>g_iface</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.Object.interface_list_properties</title>
+  <synopsis><code mime="text/x-gjs">
+function interface_list_properties(g_iface: gpointer): [return_value: Array(GObject.ParamSpec), n_properties_p: Number] {
+    // Gjs wrapper for g_object_interface_list_properties()
+}
+  </code></synopsis>
+  <p>Lists the properties of an interface.Generally, the interface
+vtable passed in as <code>g_iface</code> will be the default vtable from
+<link xref="GObject.type_default_interface_ref"/>, or, if you know the interface has
+already been loaded, <link xref="GObject.type_default_interface_peek"/>.</p>
+  <p>Since 2.4</p>
+<terms>
+<item>
+<title><code>g_iface</code></title>
+  <p>any interface vtable for the interface, or the default
+ vtable for the interface</p>
+</item>
+<item>
+<title><code>return_value</code></title>
+
+</item>
+<item>
+<title><code>n_properties_p</code></title>
+  <p>location to store number of properties returned.</p>
+</item>
+</terms>
+
+</page>

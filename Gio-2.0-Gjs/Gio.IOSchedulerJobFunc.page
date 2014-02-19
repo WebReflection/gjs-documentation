@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="Gio.IOSchedulerJobFunc"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Gio.IOSchedulerJobFunc</title>
+  <synopsis><code mime="text/x-gjs">
+function onIOSchedulerJobFunc(job: Gio.IOSchedulerJob, cancellable: Gio.Cancellable): Boolean {
+}
+  </code></synopsis>
+  <p>I/O Job function.</p>  <p>Long-running jobs should periodically check the <code>cancellable</code>
+to see if they have been cancelled.</p>
+
+<terms>
+<item>
+<title><code>job</code></title>
+  <p>a <link xref="Gio.IOSchedulerJob"/>.</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional <link xref="Gio.Cancellable"/> object, <code>null</code> to ignore.</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

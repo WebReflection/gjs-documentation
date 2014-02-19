@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<page id="GLib.utf8_offset_to_pointer"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_utf8_offset_to_pointer</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>str</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>offset</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.utf8_offset_to_pointer</title>
+  <synopsis><code mime="text/x-gjs">
+function utf8_offset_to_pointer(str: String, offset: Number): String {
+    // Gjs wrapper for g_utf8_offset_to_pointer()
+}
+  </code></synopsis>
+  <p>Converts from an integer character offset to a pointer to a position
+within the string.</p>  <p>Since 2.10, this function allows to pass a negative <code>offset</code> to
+step backwards. It is usually worth stepping backwards from the end
+instead of forwards if <code>offset</code> is in the last fourth of the string,
+since moving forward is about 3 times faster than moving backward.</p>  <p>Note that this function doesn't abort when reaching the end of <code>str</code>.
+Therefore you should be sure that <code>offset</code> is within string boundaries
+before calling that function. Call <link xref="GLib.utf8_strlen"/> when unsure.
+This limitation exists as this function is called frequently during
+text rendering and therefore has to be as fast as possible.</p>
+
+<terms>
+<item>
+<title><code>str</code></title>
+  <p>a UTF-8 encoded string</p>
+</item>
+<item>
+<title><code>offset</code></title>
+  <p>a character offset within <code>str</code></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

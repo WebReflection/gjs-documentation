@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page id="Gio.ActionEntry-parameter_type"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.ActionEntry" group="field" type="guide"/>
+    <title type="link" role="topic">parameter_type</title>
+  </info>
+  <title>Gio.ActionEntry.parameter_type</title>
+  <synopsis><code mime="text/x-gjs">
+ActionEntry.parameter_type: String (Read)
+  </code></synopsis>
+  <p>the type of the parameter that must be passed to the
+                 activate function for this action, given as a single
+                 GVariant type string (or <code>null</code> for no parameter)</p>
+
+</page>

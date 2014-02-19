@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<page id="Gio.AppInfoMonitor"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>Gio.AppInfoMonitor</title>
+  <synopsis><code>
+const Gio = imports.gi.Gio;
+
+let appInfoMonitor = new Gio.AppInfoMonitor();
+  </code></synopsis>
+  <p><link xref="Gio.AppInfoMonitor"/> is a very simple object used for monitoring the app
+info database for changes (ie: newly installed or removed
+applications).</p>  <p>Call <link xref="Gio.get"/> to get a <link xref="Gio.AppInfoMonitor"/> and connect
+to the "changed" signal.</p>  <p>In the usual case, applications should try to make note of the change
+(doing things like invalidating caches) but not act on it.  In
+particular, applications should avoid making calls to <link xref="Gio.AppInfo"/> APIs
+in response to the change signal, deferring these until the time that
+the data is actually required.  The exception to this case is when
+application information is actually being displayed on the screen
+(eg: during a search or when the list of all applications is shown).
+The reason for this is that changes to the list of installed
+applications often come in groups (like during system updates) and
+rescanning the list on every change is pointless and expensive.</p>
+  <p>Since 2.40</p>
+  <synopsis>
+    <title>Hierarchy</title>
+    <tree>
+      <item>
+        <code>GObject.Object</code>
+      <item>
+        <code>Gio.AppInfoMonitor</code>
+      </item>
+      </item>
+    </tree>
+  </synopsis>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="property" style="linklist">
+    <title>Properties</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="signal" style="linklist">
+    <title>Signals</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="vfunc" style="linklist">
+    <title>Virtual functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

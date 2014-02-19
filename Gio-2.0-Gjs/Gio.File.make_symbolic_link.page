@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<page id="Gio.File.make_symbolic_link"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.File" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_file_make_symbolic_link</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>symlink_value</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.File.prototype.make_symbolic_link</title>
+  <synopsis><code mime="text/x-gjs">
+function make_symbolic_link(symlink_value: String, cancellable: Gio.Cancellable): Boolean {
+    // Gjs wrapper for g_file_make_symbolic_link()
+}
+  </code></synopsis>
+  <p>Creates a symbolic link named <code>file</code> which contains the string
+<code>symlink_value</code>.</p>  <p>If <code>cancellable</code> is not <code>null</code>, then the operation can be cancelled by
+triggering the cancellable object from another thread. If the operation
+was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be returned.</p>
+
+<terms>
+<item>
+<title><code>symlink_value</code></title>
+  <p>a string with the path for the target of the new symlink</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional <link xref="Gio.Cancellable"/> object,
+    <code>null</code> to ignore</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

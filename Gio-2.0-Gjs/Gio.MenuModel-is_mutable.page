@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="Gio.MenuModel-is_mutable"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.MenuModel" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.MenuModel::is_mutable</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_is_mutable(): Boolean {
+}
+  </code></synopsis>
+  <p>Queries if <code>model</code> is mutable.</p>  <p>An immutable <link xref="Gio.MenuModel"/> will never emit the <link xref="Gio.items-changed"/>
+signal. Consumers of the model may make optimisations accordingly.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if the model is mutable (ie: "items-changed" may be
+    emitted).</p>
+</item>
+</terms>
+
+</page>

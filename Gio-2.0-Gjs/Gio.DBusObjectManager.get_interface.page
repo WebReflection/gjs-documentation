@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusObjectManager.get_interface"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusObjectManager" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.DBusInterface</api:type>
+      </api:returns>
+      <api:name>g_dbus_object_manager_get_interface</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>object_path</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>interface_name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DBusObjectManager.prototype.get_interface</title>
+  <synopsis><code mime="text/x-gjs">
+function get_interface(object_path: String, interface_name: String): Gio.DBusInterface {
+    // Gjs wrapper for g_dbus_object_manager_get_interface()
+}
+  </code></synopsis>
+  <p>Gets the interface proxy for <code>interface_name</code> at <code>object_path</code>, if
+any.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>object_path</code></title>
+  <p>Object path to lookup.</p>
+</item>
+<item>
+<title><code>interface_name</code></title>
+  <p>D-Bus interface name to lookup.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

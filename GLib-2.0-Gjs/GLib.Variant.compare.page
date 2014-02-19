@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<page id="GLib.Variant.compare"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Variant" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number</api:type>
+      </api:returns>
+      <api:name>g_variant_compare</api:name>
+      <api:arg>
+        <api:type>GLib.Variant</api:type>
+        <api:name>two</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.Variant.prototype.compare</title>
+  <synopsis><code mime="text/x-gjs">
+function compare(two: GLib.Variant): Number {
+    // Gjs wrapper for g_variant_compare()
+}
+  </code></synopsis>
+  <p>Compares <code>one</code> and <code>two</code>.</p>  <p>The types of <code>one</code> and <code>two</code> are #gconstpointer only to allow use of
+this function with <link xref="GLib.Tree"/>, <link xref="GLib.PtrArray"/>, etc.  They must each be a
+<link xref="GLib.Variant"/>.</p>  <p>Comparison is only defined for basic types (ie: booleans, numbers,
+strings).  For booleans, <code>false</code> is less than <code>true</code>.  Numbers are
+ordered in the usual way.  Strings are in ASCII lexographical order.</p>  <p>It is a programmer error to attempt to compare container values or
+two values that have types that are not exactly equal.  For example,
+you cannot compare a 32-bit signed integer with a 32-bit unsigned
+integer.  Also note that this function is not particularly
+well-behaved when it comes to comparison of doubles; in particular,
+the handling of incomparable values (ie: NaN) is undefined.</p>  <p>If you only require an equality comparison, <link xref="GLib.equal"/> is more
+general.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>two</code></title>
+  <p>a <link xref="GLib.Variant"/> instance of the same type</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

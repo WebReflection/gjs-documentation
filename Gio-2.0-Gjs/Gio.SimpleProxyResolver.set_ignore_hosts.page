@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="Gio.SimpleProxyResolver.set_ignore_hosts"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.SimpleProxyResolver" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_simple_proxy_resolver_set_ignore_hosts</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>ignore_hosts</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.SimpleProxyResolver.prototype.set_ignore_hosts</title>
+  <synopsis><code mime="text/x-gjs">
+function set_ignore_hosts(ignore_hosts: String): void {
+    // Gjs wrapper for g_simple_proxy_resolver_set_ignore_hosts()
+}
+  </code></synopsis>
+  <p>Sets the list of ignored hosts.</p>  <p>See <link xref="Gio.ignore-hosts"/> for more details on how the
+<code>ignore_hosts</code> argument is interpreted.</p>
+  <p>Since 2.36</p>
+<terms>
+<item>
+<title><code>ignore_hosts</code></title>
+  <p><code>null</code>-terminated list of hosts/IP addresses
+    to not use a proxy for</p>
+</item>
+</terms>
+
+</page>

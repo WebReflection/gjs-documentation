@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page id="GObject.ParamFlags"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>GObject.ParamFlags</title>
+  <p>Through the <link xref="GObject.ParamFlags"/> flag values, certain aspects of parameters
+can be configured. See also #G_PARAM_READWRITE and #G_PARAM_STATIC_STRINGS.</p>
+
+</page>

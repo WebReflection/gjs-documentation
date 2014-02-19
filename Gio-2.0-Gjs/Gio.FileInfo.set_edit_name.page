@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gio.FileInfo.set_edit_name"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.FileInfo" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_file_info_set_edit_name</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>edit_name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.FileInfo.prototype.set_edit_name</title>
+  <synopsis><code mime="text/x-gjs">
+function set_edit_name(edit_name: String): void {
+    // Gjs wrapper for g_file_info_set_edit_name()
+}
+  </code></synopsis>
+  <p>Sets the edit name for the current file.
+See %G_FILE_ATTRIBUTE_STANDARD_EDIT_NAME.</p>
+
+<terms>
+<item>
+<title><code>edit_name</code></title>
+  <p>a string containing an edit name.</p>
+</item>
+</terms>
+
+</page>

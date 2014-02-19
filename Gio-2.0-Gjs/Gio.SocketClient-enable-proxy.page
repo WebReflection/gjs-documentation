@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.SocketClient-enable-proxy"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.SocketClient" group="property" type="guide"/>
+    <title type="link" role="topic">enable-proxy</title>
+  </info>
+  <title>Gio.SocketClient.enable_proxy</title>
+  <synopsis><code mime="text/x-gjs">
+SocketClient.enable_proxy: Boolean (Read / Write / Construct)
+  </code></synopsis>
+
+
+</page>

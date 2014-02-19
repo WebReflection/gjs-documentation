@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<page id="GObject.param_value_convert"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_param_value_convert</api:name>
+      <api:arg>
+        <api:type>GObject.ParamSpec</api:type>
+        <api:name>pspec</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Value</api:type>
+        <api:name>src_value</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Value</api:type>
+        <api:name>dest_value</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Boolean</api:type>
+        <api:name>strict_validation</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.param_value_convert</title>
+  <synopsis><code mime="text/x-gjs">
+function param_value_convert(pspec: GObject.ParamSpec, src_value: GObject.Value, dest_value: GObject.Value, strict_validation: Boolean): Boolean {
+    // Gjs wrapper for g_param_value_convert()
+}
+  </code></synopsis>
+  <p>Transforms <code>src_value</code> into <code>dest_value</code> if possible, and then
+validates <code>dest_value</code>, in order for it to conform to <code>pspec</code>.  If
+<code>strict_validation</code> is <code>true</code> this function will only succeed if the
+transformed <code>dest_value</code> complied to <code>pspec</code> without modifications.</p>  <p>See also <link xref="GObject.value_type_transformable"/>, <link xref="GObject.Value.transform"/> and
+<link xref="GObject.param_value_validate"/>.</p>
+
+<terms>
+<item>
+<title><code>pspec</code></title>
+  <p>a valid <link xref="GObject.ParamSpec"/></p>
+</item>
+<item>
+<title><code>src_value</code></title>
+  <p>souce <link xref="GObject.Value"/></p>
+</item>
+<item>
+<title><code>dest_value</code></title>
+  <p>destination <link xref="GObject.Value"/> of correct type for <code>pspec</code></p>
+</item>
+<item>
+<title><code>strict_validation</code></title>
+  <p><code>true</code> requires <code>dest_value</code> to conform to <code>pspec</code>
+without modifications</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Gio.FILE_ATTRIBUTE_UNIX_IS_MOUNTPOINT"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>Gio.FILE_ATTRIBUTE_UNIX_IS_MOUNTPOINT</title>
+  <p>A key in the "unix" namespace for checking if the file represents a
+UNIX mount point. This attribute is <code>true</code> if the file is a UNIX mount
+point. This attribute is only available for UNIX file systems.
+Corresponding <link xref="Gio.FileAttributeType"/> is <link xref="Gio.FileAttributeType"/>.boolean.</p>
+
+</page>

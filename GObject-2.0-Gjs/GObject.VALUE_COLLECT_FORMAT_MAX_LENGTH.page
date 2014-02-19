@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page id="GObject.VALUE_COLLECT_FORMAT_MAX_LENGTH"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>GObject.VALUE_COLLECT_FORMAT_MAX_LENGTH</title>
+  <p>The maximal number of <link xref="GObject.TypeCValue"/>&lt;!-- --&gt;s which can be collected for a
+single <link xref="GObject.Value"/>.</p>
+
+</page>

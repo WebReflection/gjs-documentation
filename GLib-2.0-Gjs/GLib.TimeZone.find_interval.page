@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<page id="GLib.TimeZone.find_interval"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.TimeZone" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number</api:type>
+      </api:returns>
+      <api:name>g_time_zone_find_interval</api:name>
+      <api:arg>
+        <api:type>GLib.TimeType</api:type>
+        <api:name>type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>time_</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.TimeZone.prototype.find_interval</title>
+  <synopsis><code mime="text/x-gjs">
+function find_interval(type: GLib.TimeType, time_: Number): Number {
+    // Gjs wrapper for g_time_zone_find_interval()
+}
+  </code></synopsis>
+  <p>Finds an the interval within <code>tz</code> that corresponds to the given <code>time_</code>.
+The meaning of <code>time_</code> depends on <code>type</code>.</p>  <p>If <code>type</code> is <link xref="GLib.TimeType"/>.universal then this function will always
+succeed (since universal time is monotonic and continuous).</p>  <p>Otherwise <code>time_</code> is treated is local time.  The distinction between
+<link xref="GLib.TimeType"/>.standard and <link xref="GLib.TimeType"/>.daylight is ignored except in
+the case that the given <code>time_</code> is ambiguous.  In Toronto, for example,
+01:30 on November 7th 2010 occurred twice (once inside of daylight
+savings time and the next, an hour later, outside of daylight savings
+time).  In this case, the different value of <code>type</code> would result in a
+different interval being returned.</p>  <p>It is still possible for this function to fail.  In Toronto, for
+example, 02:00 on March 14th 2010 does not exist (due to the leap
+forward to begin daylight savings time).  -1 is returned in that
+case.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>type</code></title>
+  <p>the <link xref="GLib.TimeType"/> of <code>time_</code></p>
+</item>
+<item>
+<title><code>time_</code></title>
+  <p>a number of seconds since January 1, 1970</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

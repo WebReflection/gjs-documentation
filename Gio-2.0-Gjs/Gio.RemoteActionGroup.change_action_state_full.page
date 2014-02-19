@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<page id="Gio.RemoteActionGroup.change_action_state_full"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.RemoteActionGroup" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_remote_action_group_change_action_state_full</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>action_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.Variant</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.Variant</api:type>
+        <api:name>platform_data</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.RemoteActionGroup.prototype.change_action_state_full</title>
+  <synopsis><code mime="text/x-gjs">
+function change_action_state_full(action_name: String, value: GLib.Variant, platform_data: GLib.Variant): void {
+    // Gjs wrapper for g_remote_action_group_change_action_state_full()
+}
+  </code></synopsis>
+  <p>Changes the state of a remote action.</p>  <p>This is the same as <link xref="Gio.ActionGroup.change_action_state"/> except that
+it allows for provision of "platform data" to be sent along with the
+state change request.  This typically contains details such as the
+user interaction timestamp or startup notification information.</p>  <p><code>platform_data</code> must be non-<code>null</code> and must have the type
+%G_VARIANT_TYPE_VARDICT.  If it is floating, it will be consumed.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>action_name</code></title>
+  <p>the name of the action to change the state of</p>
+</item>
+<item>
+<title><code>value</code></title>
+  <p>the new requested value for the state</p>
+</item>
+<item>
+<title><code>platform_data</code></title>
+  <p>the platform data to send</p>
+</item>
+</terms>
+
+</page>

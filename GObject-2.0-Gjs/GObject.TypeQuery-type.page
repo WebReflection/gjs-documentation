@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="GObject.TypeQuery-type"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.TypeQuery" group="field" type="guide"/>
+    <title type="link" role="topic">type</title>
+  </info>
+  <title>GObject.TypeQuery.type</title>
+  <synopsis><code mime="text/x-gjs">
+TypeQuery.type: GType (Read / Write)
+  </code></synopsis>
+  <p>the <link xref="GLib.Type"/> value of the type.</p>
+
+</page>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.TlsClientConnection.get_server_identity"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.TlsClientConnection" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.SocketConnectable</api:type>
+      </api:returns>
+      <api:name>g_tls_client_connection_get_server_identity</api:name>
+    </api:function>
+  </info>
+  <title>Gio.TlsClientConnection.prototype.get_server_identity</title>
+  <synopsis><code mime="text/x-gjs">
+function get_server_identity(): Gio.SocketConnectable {
+    // Gjs wrapper for g_tls_client_connection_get_server_identity()
+}
+  </code></synopsis>
+  <p>Gets <code>conn</code>'s expected server identity</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<page id="GLib.Source.set_callback_indirect"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Source" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_source_set_callback_indirect</api:name>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>callback_data</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.SourceCallbackFuncs</api:type>
+        <api:name>callback_funcs</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.Source.prototype.set_callback_indirect</title>
+  <synopsis><code mime="text/x-gjs">
+function set_callback_indirect(callback_data: gpointer, callback_funcs: GLib.SourceCallbackFuncs): void {
+    // Gjs wrapper for g_source_set_callback_indirect()
+}
+  </code></synopsis>
+  <p>Sets the callback function storing the data as a refcounted callback
+"object". This is used internally. Note that calling
+<link xref="GLib.Source.set_callback_indirect"/> assumes
+an initial reference count on <code>callback_data</code>, and thus
+<code>callback_funcs</code>-&gt;unref will eventually be called once more
+than <code>callback_funcs</code>-&gt;ref.</p>
+
+<terms>
+<item>
+<title><code>callback_data</code></title>
+  <p>pointer to callback data "object"</p>
+</item>
+<item>
+<title><code>callback_funcs</code></title>
+  <p>functions for reference counting <code>callback_data</code>
+                 and getting the callback and data</p>
+</item>
+</terms>
+
+</page>

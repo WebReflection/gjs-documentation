@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<page id="Gio.Application.open"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Application" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_application_open</api:name>
+      <api:arg>
+        <api:type>Array(Gio.File)</api:type>
+        <api:name>files</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>hint</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.Application.prototype.open</title>
+  <synopsis><code mime="text/x-gjs">
+function open(files: Array(Gio.File), hint: String): void {
+    // Gjs wrapper for g_application_open()
+}
+  </code></synopsis>
+  <p>Opens the given files.</p>  <p>In essence, this results in the <link xref="Gio.open"/> signal being emitted
+in the primary instance.</p>  <p><code>n_files</code> must be greater than zero.</p>  <p><code>hint</code> is simply passed through to the ::open signal.  It is
+intended to be used by applications that have multiple modes for
+opening files (eg: "view" vs "edit", etc).  Unless you have a need
+for this functionality, you should use "".</p>  <p>The application must be registered before calling this function
+and it must have the <link xref="Gio.ApplicationFlags"/>.handles_open flag set.</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>files</code></title>
+  <p>an array of #GFiles to open</p>
+</item>
+<item>
+<title><code>hint</code></title>
+  <p>a hint (or ""), but never <code>null</code></p>
+</item>
+</terms>
+
+</page>

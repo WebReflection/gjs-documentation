@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page id="Gio.TlsDatabaseVerifyFlags"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>Gio.TlsDatabaseVerifyFlags</title>
+  <p>Flags for <link xref="Gio.TlsDatabase.verify_chain"/>.</p>
+  <p>Since 2.30</p>
+</page>

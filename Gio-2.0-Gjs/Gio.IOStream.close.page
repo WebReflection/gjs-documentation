@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<page id="Gio.IOStream.close"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.IOStream" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_io_stream_close</api:name>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.IOStream.prototype.close</title>
+  <synopsis><code mime="text/x-gjs">
+function close(cancellable: Gio.Cancellable): Boolean {
+    // Gjs wrapper for g_io_stream_close()
+}
+  </code></synopsis>
+  <p>Closes the stream, releasing resources related to it. This will also
+closes the individual input and output streams, if they are not already
+closed.</p>  <p>Once the stream is closed, all other operations will return
+<link xref="Gio.IOErrorEnum"/>.closed. Closing a stream multiple times will not
+return an error.</p>  <p>Closing a stream will automatically flush any outstanding buffers
+in the stream.</p>  <p>Streams will be automatically closed when the last reference
+is dropped, but you might want to call this function to make sure
+resources are released as early as possible.</p>  <p>Some streams might keep the backing store of the stream (e.g. a file
+descriptor) open after the stream is closed. See the documentation for
+the individual stream for details.</p>  <p>On failure the first error that happened will be reported, but the
+close operation will finish as much as possible. A stream that failed
+to close will still return <link xref="Gio.IOErrorEnum"/>.closed for all operations.
+Still, it is important to check and report the error to the user,
+otherwise there might be a loss of data as all data might not be written.</p>  <p>If <code>cancellable</code> is not NULL, then the operation can be cancelled by
+triggering the cancellable object from another thread. If the operation
+was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be returned.
+Cancelling a close will still leave the stream closed, but some streams
+can use a faster close that doesn't block to e.g. check errors.</p>  <p>The default implementation of this method just calls close on the
+individual input/output streams.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional <link xref="Gio.Cancellable"/> object, <code>null</code> to ignore</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

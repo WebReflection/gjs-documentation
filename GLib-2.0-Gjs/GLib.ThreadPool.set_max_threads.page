@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<page id="GLib.ThreadPool.set_max_threads"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.ThreadPool" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_thread_pool_set_max_threads</api:name>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>max_threads</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.ThreadPool.prototype.set_max_threads</title>
+  <synopsis><code mime="text/x-gjs">
+function set_max_threads(max_threads: Number): Boolean {
+    // Gjs wrapper for g_thread_pool_set_max_threads()
+}
+  </code></synopsis>
+  <p>Sets the maximal allowed number of threads for <code>pool</code>.
+A value of -1 means that the maximal number of threads
+is unlimited. If <code>pool</code> is an exclusive thread pool, setting
+the maximal number of threads to -1 is not allowed.</p>  <p>Setting <code>max_threads</code> to 0 means stopping all work for <code>pool</code>.
+It is effectively frozen until <code>max_threads</code> is set to a non-zero
+value again.</p>  <p>A thread is never terminated while calling @func, as supplied by
+<link xref="GLib.new"/>. Instead the maximal number of threads only
+has effect for the allocation of new threads in <link xref="GLib.ThreadPool.push"/>.
+A new thread is allocated, whenever the number of currently
+running threads in <code>pool</code> is smaller than the maximal number.</p>  <p>@error can be <code>null</code> to ignore errors, or non-<code>null</code> to report
+errors. An error can only occur when a new thread couldn't be
+created.</p>  <p>Before version 2.32, this function did not return a success status.</p>
+
+<terms>
+<item>
+<title><code>max_threads</code></title>
+  <p>a new maximal number of threads for <code>pool</code>,
+    or -1 for unlimited</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<page id="Gio.File-set_display_name_finish"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.File" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.File::set_display_name_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_set_display_name_finish(res: Gio.AsyncResult): Gio.File {
+}
+  </code></synopsis>
+  <p>Finishes setting a display name started with
+<link xref="Gio.File.set_display_name_async"/>.</p>
+
+<terms>
+<item>
+<title><code>res</code></title>
+  <p>a <link xref="Gio.AsyncResult"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link xref="Gio.File"/> or <code>null</code> on error.
+    Free the returned object with <link xref="GObject.unref"/>.</p>
+</item>
+</terms>
+
+</page>

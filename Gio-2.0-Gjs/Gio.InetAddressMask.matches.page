@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Gio.InetAddressMask.matches"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.InetAddressMask" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_inet_address_mask_matches</api:name>
+      <api:arg>
+        <api:type>Gio.InetAddress</api:type>
+        <api:name>address</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.InetAddressMask.prototype.matches</title>
+  <synopsis><code mime="text/x-gjs">
+function matches(address: Gio.InetAddress): Boolean {
+    // Gjs wrapper for g_inet_address_mask_matches()
+}
+  </code></synopsis>
+  <p>Tests if <code>address</code> falls within the range described by <code>mask</code>.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>address</code></title>
+  <p>a <link xref="Gio.InetAddress"/></p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

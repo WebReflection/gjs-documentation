@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="Gio.SimpleAction-parameter-type"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.SimpleAction" group="property" type="guide"/>
+    <title type="link" role="topic">parameter-type</title>
+  </info>
+  <title>Gio.SimpleAction.parameter_type</title>
+  <synopsis><code mime="text/x-gjs">
+SimpleAction.parameter_type: GLib.VariantType (Read / Write / Construct Only)
+  </code></synopsis>
+  <p>The type of the parameter that must be given when activating the
+action.</p>
+  <p>Since 2.28</p>
+</page>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="GLib.Queue.get_length"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Queue" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number</api:type>
+      </api:returns>
+      <api:name>g_queue_get_length</api:name>
+    </api:function>
+  </info>
+  <title>GLib.Queue.prototype.get_length</title>
+  <synopsis><code mime="text/x-gjs">
+function get_length(): Number {
+    // Gjs wrapper for g_queue_get_length()
+}
+  </code></synopsis>
+  <p>Returns the number of items in <code>queue</code>.</p>
+  <p>Since 2.4</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

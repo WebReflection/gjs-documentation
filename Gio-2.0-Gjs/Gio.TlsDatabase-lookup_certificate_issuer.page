@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="Gio.TlsDatabase-lookup_certificate_issuer"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.TlsDatabase" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.TlsDatabase::lookup_certificate_issuer</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_lookup_certificate_issuer(certificate: Gio.TlsCertificate, interaction: Gio.TlsInteraction, flags: Gio.TlsDatabaseLookupFlags, cancellable: Gio.Cancellable): Gio.TlsCertificate {
+}
+  </code></synopsis>
+  <p>Lookup the issuer of <code>certificate</code> in the database.</p>  <p>The %issuer property
+of <code>certificate</code> is not modified, and the two certificates are not hooked
+into a chain.</p>  <p>This function can block, use <link xref="Gio.TlsDatabase.lookup_certificate_issuer_async"/> to perform
+the lookup operation asynchronously.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>certificate</code></title>
+  <p>a <link xref="Gio.TlsCertificate"/></p>
+</item>
+<item>
+<title><code>interaction</code></title>
+  <p>used to interact with the user if necessary</p>
+</item>
+<item>
+<title><code>flags</code></title>
+  <p>flags which affect the lookup operation</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>a <link xref="Gio.Cancellable"/>, or <code>null</code></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a newly allocated issuer <link xref="Gio.TlsCertificate"/>,
+or <code>null</code>. Use <link xref="GObject.unref"/> to release the certificate.</p>
+</item>
+</terms>
+
+</page>

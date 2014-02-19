@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusInterfaceInfo.generate_xml"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusInterfaceInfo" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_dbus_interface_info_generate_xml</api:name>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>indent</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DBusInterfaceInfo.prototype.generate_xml</title>
+  <synopsis><code mime="text/x-gjs">
+function generate_xml(indent: Number): GLib.String {
+    // Gjs wrapper for g_dbus_interface_info_generate_xml()
+}
+  </code></synopsis>
+  <p>Appends an XML representation of <code>info</code> (and its children) to <code>string_builder</code>.</p>  <p>This function is typically used for generating introspection XML
+documents at run-time for handling the
+`org.freedesktop.DBus.Introspectable.Introspect`
+method.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>indent</code></title>
+  <p>Indentation level.</p>
+</item>
+<item>
+<title><code>string_builder</code></title>
+  <p>A <link xref="GLib.String"/> to to append XML data to.</p>
+</item>
+</terms>
+
+</page>

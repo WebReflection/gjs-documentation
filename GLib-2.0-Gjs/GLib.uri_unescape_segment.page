@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<page id="GLib.uri_unescape_segment"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_uri_unescape_segment</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>escaped_string</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>escaped_string_end</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>illegal_characters</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.uri_unescape_segment</title>
+  <synopsis><code mime="text/x-gjs">
+function uri_unescape_segment(escaped_string: String, escaped_string_end: String, illegal_characters: String): String {
+    // Gjs wrapper for g_uri_unescape_segment()
+}
+  </code></synopsis>
+  <p>Unescapes a segment of an escaped string.</p>  <p>If any of the characters in <code>illegal_characters</code> or the character zero appears
+as an escaped character in <code>escaped_string</code> then that is an error and <code>null</code>
+will be returned. This is useful it you want to avoid for instance having a
+slash being expanded in an escaped path element, which might confuse pathname
+handling.</p>
+  <p>Since 2.16</p>
+<terms>
+<item>
+<title><code>escaped_string</code></title>
+  <p>A string, may be <code>null</code></p>
+</item>
+<item>
+<title><code>escaped_string_end</code></title>
+  <p>Pointer to end of <code>escaped_string</code>, may be <code>null</code></p>
+</item>
+<item>
+<title><code>illegal_characters</code></title>
+  <p>An optional string of illegal characters not to be allowed, may be <code>null</code></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

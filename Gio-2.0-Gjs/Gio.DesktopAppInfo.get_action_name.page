@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<page id="Gio.DesktopAppInfo.get_action_name"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DesktopAppInfo" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_desktop_app_info_get_action_name</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>action_name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DesktopAppInfo.prototype.get_action_name</title>
+  <synopsis><code mime="text/x-gjs">
+function get_action_name(action_name: String): String {
+    // Gjs wrapper for g_desktop_app_info_get_action_name()
+}
+  </code></synopsis>
+  <p>Gets the user-visible display name of the "additional application
+action" specified by <code>action_name</code>.</p>  <p>This corresponds to the "Name" key within the keyfile group for the
+action.</p>
+  <p>Since 2.38</p>
+<terms>
+<item>
+<title><code>action_name</code></title>
+  <p>the name of the action as from
+  <link xref="Gio.list_actions"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

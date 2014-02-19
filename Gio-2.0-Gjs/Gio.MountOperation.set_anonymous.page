@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Gio.MountOperation.set_anonymous"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.MountOperation" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_mount_operation_set_anonymous</api:name>
+      <api:arg>
+        <api:type>Boolean</api:type>
+        <api:name>anonymous</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.MountOperation.prototype.set_anonymous</title>
+  <synopsis><code mime="text/x-gjs">
+function set_anonymous(anonymous: Boolean): void {
+    // Gjs wrapper for g_mount_operation_set_anonymous()
+}
+  </code></synopsis>
+  <p>Sets the mount operation to use an anonymous user if <code>anonymous</code> is <code>true</code>.</p>
+
+<terms>
+<item>
+<title><code>anonymous</code></title>
+  <p>boolean value.</p>
+</item>
+</terms>
+
+</page>

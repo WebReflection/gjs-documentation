@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<page id="GLib.Bytes"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>GLib.Bytes</title>
+  <synopsis><code>
+const GLib = imports.gi.GLib;
+
+let bytes = new GLib.Bytes();
+  </code></synopsis>
+  <p>A simple refcounted data type representing an immutable sequence of zero or
+more bytes from an unspecified origin.</p>  <p>The purpose of a <link xref="GLib.Bytes"/> is to keep the memory region that it holds
+alive for as long as anyone holds a reference to the bytes.  When
+the last reference count is dropped, the memory is released. Multiple
+unrelated callers can use byte data in the <link xref="GLib.Bytes"/> without coordinating
+their activities, resting assured that the byte data will not change or
+move while they hold a reference.</p>  <p>A <link xref="GLib.Bytes"/> can come from many different origins that may have
+different procedures for freeing the memory region.  Examples are
+memory from <link xref="GLib.malloc"/>, from memory slices, from a <link xref="GLib.MappedFile"/> or
+memory from other allocators.</p>  <p><link xref="GLib.Bytes"/> work well as keys in <link xref="GLib.HashTable"/>. Use <link xref="GLib.equal"/> and
+<link xref="GLib.hash"/> as parameters to <link xref="GLib.new"/> or <link xref="GLib.new_full"/>.
+<link xref="GLib.Bytes"/> can also be used as keys in a <link xref="GLib.Tree"/> by passing the <link xref="GLib.compare"/>
+function to <link xref="GLib.new"/>.</p>  <p>The data pointed to by this bytes must not be modified. For a mutable
+array of bytes see <link xref="GLib.ByteArray"/>. Use <link xref="GLib.unref_to_array"/> to create a
+mutable array for a <link xref="GLib.Bytes"/> sequence. To create an immutable <link xref="GLib.Bytes"/> from
+a mutable <link xref="GLib.ByteArray"/>, use the <link xref="GLib.byte_array_free_to_bytes"/> function.</p>
+  <p>Since 2.32</p>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

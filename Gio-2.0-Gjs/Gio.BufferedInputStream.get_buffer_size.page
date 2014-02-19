@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.BufferedInputStream.get_buffer_size"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.BufferedInputStream" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>gsize</api:type>
+      </api:returns>
+      <api:name>g_buffered_input_stream_get_buffer_size</api:name>
+    </api:function>
+  </info>
+  <title>Gio.BufferedInputStream.prototype.get_buffer_size</title>
+  <synopsis><code mime="text/x-gjs">
+function get_buffer_size(): gsize {
+    // Gjs wrapper for g_buffered_input_stream_get_buffer_size()
+}
+  </code></synopsis>
+  <p>Gets the size of the input buffer.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

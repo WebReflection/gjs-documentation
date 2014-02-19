@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="Gio.MenuItem.set_submenu"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.MenuItem" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_menu_item_set_submenu</api:name>
+      <api:arg>
+        <api:type>Gio.MenuModel</api:type>
+        <api:name>submenu</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.MenuItem.prototype.set_submenu</title>
+  <synopsis><code mime="text/x-gjs">
+function set_submenu(submenu: Gio.MenuModel): void {
+    // Gjs wrapper for g_menu_item_set_submenu()
+}
+  </code></synopsis>
+  <p>Sets or unsets the "submenu" link of <code>menu_item</code> to <code>submenu</code>.</p>  <p>If <code>submenu</code> is non-<code>null</code>, it is linked to.  If it is <code>null</code> then the
+link is unset.</p>  <p>The effect of having one menu appear as a submenu of another is
+exactly as it sounds.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>submenu</code></title>
+  <p>a <link xref="Gio.MenuModel"/>, or <code>null</code></p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.NetworkService.get_protocol"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.NetworkService" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_network_service_get_protocol</api:name>
+    </api:function>
+  </info>
+  <title>Gio.NetworkService.prototype.get_protocol</title>
+  <synopsis><code mime="text/x-gjs">
+function get_protocol(): String {
+    // Gjs wrapper for g_network_service_get_protocol()
+}
+  </code></synopsis>
+  <p>Gets <code>srv</code>'s protocol name (eg, "tcp").</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

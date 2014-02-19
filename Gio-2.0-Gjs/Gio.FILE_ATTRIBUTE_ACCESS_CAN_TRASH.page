@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Gio.FILE_ATTRIBUTE_ACCESS_CAN_TRASH"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>Gio.FILE_ATTRIBUTE_ACCESS_CAN_TRASH</title>
+  <p>A key in the "access" namespace for checking trashing privileges.
+Corresponding <link xref="Gio.FileAttributeType"/> is <link xref="Gio.FileAttributeType"/>.boolean.
+This attribute will be <code>true</code> if the user is able to move the file to
+the trash.</p>
+
+</page>

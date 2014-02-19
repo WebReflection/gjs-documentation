@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<page id="Gio.Application.add_option_group"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Application" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_application_add_option_group</api:name>
+      <api:arg>
+        <api:type>GLib.OptionGroup</api:type>
+        <api:name>group</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.Application.prototype.add_option_group</title>
+  <synopsis><code mime="text/x-gjs">
+function add_option_group(group: GLib.OptionGroup): void {
+    // Gjs wrapper for g_application_add_option_group()
+}
+  </code></synopsis>
+  <p>Adds a <link xref="GLib.OptionGroup"/> to the commandline handling of <code>application</code>.</p>  <p>This function is comparable to <link xref="GLib.add_group"/>.</p>  <p>Unlike <link xref="Gio.Application.add_main_option_entries"/>, this function does
+not deal with <code>null</code> @arg_data and never transmits options to the
+primary instance.</p>  <p>The reason for that is because, by the time the options arrive at the
+primary instance, it is typically too late to do anything with them.
+Taking the GTK option group as an example: GTK will already have been
+initialised by the time the <link xref="Gio.command-line"/> handler runs.
+In the case that this is not the first-running instance of the
+application, the existing instance may already have been running for
+a very long time.</p>  <p>This means that the options from <link xref="GLib.OptionGroup"/> are only really usable
+in the case that the instance of the application being run is the
+first instance.  Passing options like `--display=` or `--gdk-debug=`
+on future runs will have no effect on the existing primary instance.</p>  <p>Calling this function will cause the options in the supplied option
+group to be parsed, but it does not cause you to be "opted in" to the
+new functionality whereby unrecognised options are rejected even if
+<link xref="Gio.ApplicationFlags"/>.handles_command_line was given.</p>
+  <p>Since 2.40</p>
+<terms>
+<item>
+<title><code>group</code></title>
+  <p>a <link xref="GLib.OptionGroup"/></p>
+</item>
+</terms>
+
+</page>

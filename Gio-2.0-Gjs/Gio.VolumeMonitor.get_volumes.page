@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gio.VolumeMonitor.get_volumes"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.VolumeMonitor" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(Gio.Volume)</api:type>
+      </api:returns>
+      <api:name>g_volume_monitor_get_volumes</api:name>
+    </api:function>
+  </info>
+  <title>Gio.VolumeMonitor.prototype.get_volumes</title>
+  <synopsis><code mime="text/x-gjs">
+function get_volumes(): Array(Gio.Volume) {
+    // Gjs wrapper for g_volume_monitor_get_volumes()
+}
+  </code></synopsis>
+  <p>Gets a list of the volumes on the system.</p>  <p>The returned list should be freed with <link xref="GLib.free"/>, after
+its elements have been unreffed with <link xref="GObject.unref"/>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

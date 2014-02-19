@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<page id="Gio.Mount-pre-unmount"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Mount" group="signal" type="guide"/>
+    <title type="link" role="topic">pre-unmount</title>
+  </info>
+  <title>Gio.Mount::pre-unmount</title>
+  <synopsis><code mime="text/x-gjs">
+connect('pre-unmount', function (mount, ): void);
+  </code></synopsis>
+  <p>This signal is emitted when the <link xref="Gio.Mount"/> is about to be
+unmounted.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>mount</code></title>
+<p>instance of <link xref="Gio.Mount"/> that is emitting the signal</p>
+</item>
+</terms>
+
+</page>

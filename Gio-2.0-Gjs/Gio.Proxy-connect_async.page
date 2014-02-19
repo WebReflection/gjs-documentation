@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gio.Proxy-connect_async"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Proxy" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.Proxy::connect_async</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_connect_async(connection: Gio.IOStream, proxy_address: Gio.ProxyAddress, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+}
+  </code></synopsis>
+  <p>Asynchronous version of <link xref="Gio.Proxy.connect"/>.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>connection</code></title>
+  <p>a <link xref="Gio.IOStream"/></p>
+</item>
+<item>
+<title><code>proxy_address</code></title>
+  <p>a <link xref="Gio.ProxyAddress"/></p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>a <link xref="Gio.Cancellable"/></p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>a <link xref="Gio.AsyncReadyCallback"/></p>
+</item>
+</terms>
+
+</page>

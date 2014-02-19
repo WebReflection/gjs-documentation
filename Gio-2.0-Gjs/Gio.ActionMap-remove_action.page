@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page id="Gio.ActionMap-remove_action"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.ActionMap" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.ActionMap::remove_action</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_remove_action(action_name: String): void {
+}
+  </code></synopsis>
+  <p>Removes the named action from the action map.</p>  <p>If no action of this name is in the map then nothing happens.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>action_name</code></title>
+  <p>the name of the action</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<page id="GLib.Variant.new_fixed_array"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Variant" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.Variant</api:type>
+      </api:returns>
+      <api:name>g_variant_new_fixed_array</api:name>
+      <api:arg>
+        <api:type>GLib.VariantType</api:type>
+        <api:name>element_type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>elements</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gsize</api:type>
+        <api:name>n_elements</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gsize</api:type>
+        <api:name>element_size</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.Variant.new_fixed_array</title>
+  <synopsis><code mime="text/x-gjs">
+function new_fixed_array(element_type: GLib.VariantType, elements: gpointer, n_elements: gsize, element_size: gsize): GLib.Variant {
+    // Gjs wrapper for g_variant_new_fixed_array()
+}
+  </code></synopsis>
+  <p>Provides access to the serialised data for an array of fixed-sized
+items.</p>  <p>@value must be an array with fixed-sized elements.  Numeric types are
+fixed-size as are tuples containing only other fixed-sized types.</p>  <p><code>element_size</code> must be the size of a single element in the array.
+For example, if calling this function for an array of 32-bit integers,
+you might say sizeof(gint32). This value isn't used except for the purpose
+of a double-check that the form of the serialised data matches the caller's
+expectation.</p>  <p><code>n_elements</code>, which must be non-<code>null</code> is set equal to the number of
+items in the array.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>element_type</code></title>
+  <p>the <link xref="GLib.VariantType"/> of each element</p>
+</item>
+<item>
+<title><code>elements</code></title>
+  <p>a pointer to the fixed array of contiguous elements</p>
+</item>
+<item>
+<title><code>n_elements</code></title>
+  <p>the number of elements</p>
+</item>
+<item>
+<title><code>element_size</code></title>
+  <p>the size of each element</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

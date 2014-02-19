@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.FILE_ATTRIBUTE_STANDARD_ALLOCATED_SIZE"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>Gio.FILE_ATTRIBUTE_STANDARD_ALLOCATED_SIZE</title>
+  <p>A key in the "standard" namespace for getting the amount of disk space
+that is consumed by the file (in bytes).  This will generally be larger
+than the file size (due to block size overhead) but can occasionally be
+smaller (for example, for sparse files).
+Corresponding <link xref="Gio.FileAttributeType"/> is <link xref="Gio.FileAttributeType"/>.uint64.</p>
+  <p>Since 2.20</p>
+</page>

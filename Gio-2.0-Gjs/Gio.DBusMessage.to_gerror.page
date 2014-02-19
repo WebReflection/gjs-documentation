@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusMessage.to_gerror"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusMessage" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_dbus_message_to_gerror</api:name>
+    </api:function>
+  </info>
+  <title>Gio.DBusMessage.prototype.to_gerror</title>
+  <synopsis><code mime="text/x-gjs">
+function to_gerror(): Boolean {
+    // Gjs wrapper for g_dbus_message_to_gerror()
+}
+  </code></synopsis>
+  <p>If <code>message</code> is not of type <link xref="Gio.DBusMessageType"/>.error does
+nothing and returns <code>false</code>.</p>  <p>Otherwise this method encodes the error in <code>message</code> as a <link xref="GLib.Error"/>
+using <link xref="Gio.set_dbus_error"/> using the information in the
+<link xref="Gio.DBusMessageHeaderField"/>.error_name header field of <code>message</code> as
+well as the first string item in <code>message</code>'s body.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

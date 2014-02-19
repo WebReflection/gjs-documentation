@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="GLib.DateTime.add_minutes"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.DateTime" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.DateTime</api:type>
+      </api:returns>
+      <api:name>g_date_time_add_minutes</api:name>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>minutes</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.DateTime.prototype.add_minutes</title>
+  <synopsis><code mime="text/x-gjs">
+function add_minutes(minutes: Number): GLib.DateTime {
+    // Gjs wrapper for g_date_time_add_minutes()
+}
+  </code></synopsis>
+  <p>Creates a copy of <code>datetime</code> adding the specified number of minutes.
+Add negative values to subtract minutes.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>minutes</code></title>
+  <p>the number of minutes to add</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

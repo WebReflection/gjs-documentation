@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Gio.AppLaunchContext-get_startup_notify_id"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.AppLaunchContext" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.AppLaunchContext::get_startup_notify_id</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_get_startup_notify_id(info: Gio.AppInfo, files: Array(Gio.File)): String {
+}
+  </code></synopsis>
+  <p>Initiates startup notification for the application and returns the
+`DESKTOP_STARTUP_ID` for the launched operation, if supported.</p>  <p>Startup notification IDs are defined in the
+[FreeDesktop.Org Startup Notifications standard](http://standards.freedesktop.org/startup-notification-spec/startup-notification-latest.txt").</p>
+
+<terms>
+<item>
+<title><code>info</code></title>
+  <p>a <link xref="Gio.AppInfo"/></p>
+</item>
+<item>
+<title><code>files</code></title>
+  <p>a <link xref="GLib.List"/> of of <link xref="Gio.File"/> objects</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a startup notification ID for the application, or <code>null</code> if
+    not supported.</p>
+</item>
+</terms>
+
+</page>

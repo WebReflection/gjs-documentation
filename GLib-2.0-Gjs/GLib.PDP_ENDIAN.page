@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page id="GLib.PDP_ENDIAN"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>GLib.PDP_ENDIAN</title>
+  <p>Specifies one of the possible types of byte order
+(currently unused). See #G_BYTE_ORDER.</p>
+
+</page>

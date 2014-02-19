@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<page id="GLib.Date.valid_dmy"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Date" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_date_valid_dmy</api:name>
+      <api:arg>
+        <api:type>GLib.DateDay</api:type>
+        <api:name>day</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.DateMonth</api:type>
+        <api:name>month</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.DateYear</api:type>
+        <api:name>year</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.Date.valid_dmy</title>
+  <synopsis><code mime="text/x-gjs">
+function valid_dmy(day: GLib.DateDay, month: GLib.DateMonth, year: GLib.DateYear): Boolean {
+    // Gjs wrapper for g_date_valid_dmy()
+}
+  </code></synopsis>
+  <p>Returns <code>true</code> if the day-month-year triplet forms a valid, existing day
+in the range of days <link xref="GLib.Date"/> understands (Year 1 or later, no more than
+a few thousand years in the future).</p>
+
+<terms>
+<item>
+<title><code>day</code></title>
+  <p>day</p>
+</item>
+<item>
+<title><code>month</code></title>
+  <p>month</p>
+</item>
+<item>
+<title><code>year</code></title>
+  <p>year</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

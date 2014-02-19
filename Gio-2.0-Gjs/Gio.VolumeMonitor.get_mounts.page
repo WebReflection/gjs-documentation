@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gio.VolumeMonitor.get_mounts"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.VolumeMonitor" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(Gio.Mount)</api:type>
+      </api:returns>
+      <api:name>g_volume_monitor_get_mounts</api:name>
+    </api:function>
+  </info>
+  <title>Gio.VolumeMonitor.prototype.get_mounts</title>
+  <synopsis><code mime="text/x-gjs">
+function get_mounts(): Array(Gio.Mount) {
+    // Gjs wrapper for g_volume_monitor_get_mounts()
+}
+  </code></synopsis>
+  <p>Gets a list of the mounts on the system.</p>  <p>The returned list should be freed with <link xref="GLib.free"/>, after
+its elements have been unreffed with <link xref="GObject.unref"/>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

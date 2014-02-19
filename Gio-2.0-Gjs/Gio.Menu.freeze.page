@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Gio.Menu.freeze"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Menu" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_menu_freeze</api:name>
+    </api:function>
+  </info>
+  <title>Gio.Menu.prototype.freeze</title>
+  <synopsis><code mime="text/x-gjs">
+function freeze(): void {
+    // Gjs wrapper for g_menu_freeze()
+}
+  </code></synopsis>
+  <p>Marks <code>menu</code> as frozen.</p>  <p>After the menu is frozen, it is an error to attempt to make any
+changes to it.  In effect this means that the <link xref="Gio.Menu"/> API must no
+longer be used.</p>  <p>This function causes <link xref="Gio.is_mutable"/> to begin returning
+<code>false</code>, which has some positive performance implications.</p>
+  <p>Since 2.32</p>
+
+</page>

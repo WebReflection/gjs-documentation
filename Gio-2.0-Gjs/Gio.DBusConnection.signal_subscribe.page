@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusConnection.signal_subscribe"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusConnection" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number</api:type>
+      </api:returns>
+      <api:name>g_dbus_connection_signal_subscribe</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>sender</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>interface_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>member</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>object_path</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>arg0</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.DBusSignalFlags</api:type>
+        <api:name>flags</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.DBusSignalCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DBusConnection.prototype.signal_subscribe</title>
+  <synopsis><code mime="text/x-gjs">
+function signal_subscribe(sender: String, interface_name: String, member: String, object_path: String, arg0: String, flags: Gio.DBusSignalFlags, callback: Gio.DBusSignalCallback): Number {
+    // Gjs wrapper for g_dbus_connection_signal_subscribe()
+}
+  </code></synopsis>
+  <p>Subscribes to signals on <code>connection</code> and invokes <code>callback</code> with a whenever
+the signal is received. Note that <code>callback</code> will be invoked in the
+[thread-default main context][g-main-context-push-thread-default]
+of the thread you are calling this method from.</p>  <p>If <code>connection</code> is not a message bus connection, <code>sender</code> must be
+<code>null</code>.</p>  <p>If <code>sender</code> is a well-known name note that <code>callback</code> is invoked with
+the unique name for the owner of <code>sender</code>, not the well-known name
+as one would expect. This is because the message bus rewrites the
+name. As such, to avoid certain race conditions, users should be
+tracking the name owner of the well-known name and use that when
+processing the received signal.</p>  <p>If one of <link xref="Gio.DBusSignalFlags"/>.match_arg0_namespace or
+<link xref="Gio.DBusSignalFlags"/>.match_arg0_path are given, <code>arg0</code> is
+interpreted as part of a namespace or path.  The first argument
+of a signal is matched against that part as specified by D-Bus.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>sender</code></title>
+  <p>sender name to match on (unique or well-known name)
+    or <code>null</code> to listen from all senders</p>
+</item>
+<item>
+<title><code>interface_name</code></title>
+  <p>D-Bus interface name to match on or <code>null</code> to
+    match on all interfaces</p>
+</item>
+<item>
+<title><code>member</code></title>
+  <p>D-Bus signal name to match on or <code>null</code> to match on
+    all signals</p>
+</item>
+<item>
+<title><code>object_path</code></title>
+  <p>object path to match on or <code>null</code> to match on
+    all object paths</p>
+</item>
+<item>
+<title><code>arg0</code></title>
+  <p>contents of first string argument to match on or <code>null</code>
+    to match on all kinds of arguments</p>
+</item>
+<item>
+<title><code>flags</code></title>
+  <p>flags describing how to subscribe to the signal (currently unused)</p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>callback to invoke when there is a signal matching the requested data</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="Gio.Subprocess.get_successful"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Subprocess" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_subprocess_get_successful</api:name>
+    </api:function>
+  </info>
+  <title>Gio.Subprocess.prototype.get_successful</title>
+  <synopsis><code mime="text/x-gjs">
+function get_successful(): Boolean {
+    // Gjs wrapper for g_subprocess_get_successful()
+}
+  </code></synopsis>
+  <p>Checks if the process was "successful".  A process is considered
+successful if it exited cleanly with an exit status of 0, either by
+way of the exit() system call or return from main().</p>  <p>It is an error to call this function before <link xref="Gio.wait"/> has
+returned.</p>
+  <p>Since 2.40</p>
+<terms>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<page id="Gio.SocketAddress.to_native"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.SocketAddress" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_socket_address_to_native</api:name>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>dest</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gsize</api:type>
+        <api:name>destlen</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.SocketAddress.prototype.to_native</title>
+  <synopsis><code mime="text/x-gjs">
+function to_native(dest: gpointer, destlen: gsize): Boolean {
+    // Gjs wrapper for g_socket_address_to_native()
+}
+  </code></synopsis>
+  <p>Converts a <link xref="Gio.SocketAddress"/> to a native struct sockaddr, which can
+be passed to low-level functions like connect() or bind().</p>  <p>If not enough space is available, a <link xref="Gio.IOErrorEnum"/>.no_space error
+is returned. If the address type is not known on the system
+then a <link xref="Gio.IOErrorEnum"/>.not_supported error is returned.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>dest</code></title>
+  <p>a pointer to a memory location that will contain the native
+struct sockaddr</p>
+</item>
+<item>
+<title><code>destlen</code></title>
+  <p>the size of <code>dest</code>. Must be at least as large as
+    <link xref="Gio.SocketAddress.get_native_size"/></p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

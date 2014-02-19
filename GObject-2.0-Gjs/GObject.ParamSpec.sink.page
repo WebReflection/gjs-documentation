@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="GObject.ParamSpec.sink"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.ParamSpec" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_param_spec_sink</api:name>
+    </api:function>
+  </info>
+  <title>GObject.ParamSpec.prototype.sink</title>
+  <synopsis><code mime="text/x-gjs">
+function sink(): void {
+    // Gjs wrapper for g_param_spec_sink()
+}
+  </code></synopsis>
+  <p>The initial reference count of a newly created <link xref="GObject.ParamSpec"/> is 1,
+even though no one has explicitly called <link xref="GObject.ref"/> on it
+yet. So the initial reference count is flagged as "floating", until
+someone calls `g_param_spec_ref (pspec); g_param_spec_sink
+(pspec);` in sequence on it, taking over the initial
+reference count (thus ending up with a <code>pspec</code> that has a reference
+count of 1 still, but is not flagged "floating" anymore).</p>
+
+
+</page>

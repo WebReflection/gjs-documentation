@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page id="GLib.URI_RESERVED_CHARS_GENERIC_DELIMITERS"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>GLib.URI_RESERVED_CHARS_GENERIC_DELIMITERS</title>
+  <p>Generic delimiters characters as defined in RFC 3986. Includes ":/?#[]@".</p>
+
+</page>

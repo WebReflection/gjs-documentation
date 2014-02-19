@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Gio.ActionGroup-action_state_changed"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.ActionGroup" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.ActionGroup::action_state_changed</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_action_state_changed(action_name: String, state: GLib.Variant): void {
+}
+  </code></synopsis>
+  <p>Emits the <link xref="Gio.action-state-changed"/> signal on <code>action_group</code>.</p>  <p>This function should only be called by <link xref="Gio.ActionGroup"/> implementations.</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>action_name</code></title>
+  <p>the name of an action in the group</p>
+</item>
+<item>
+<title><code>state</code></title>
+  <p>the new state of the named action</p>
+</item>
+</terms>
+
+</page>

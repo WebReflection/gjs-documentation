@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="Gio.Socket.set_keepalive"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Socket" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_socket_set_keepalive</api:name>
+      <api:arg>
+        <api:type>Boolean</api:type>
+        <api:name>keepalive</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.Socket.prototype.set_keepalive</title>
+  <synopsis><code mime="text/x-gjs">
+function set_keepalive(keepalive: Boolean): void {
+    // Gjs wrapper for g_socket_set_keepalive()
+}
+  </code></synopsis>
+  <p>Sets or unsets the %SO_KEEPALIVE flag on the underlying socket. When
+this flag is set on a socket, the system will attempt to verify that the
+remote socket endpoint is still present if a sufficiently long period of
+time passes with no data being exchanged. If the system is unable to
+verify the presence of the remote endpoint, it will automatically close
+the connection.</p>  <p>This option is only functional on certain kinds of sockets. (Notably,
+<link xref="Gio.SocketProtocol"/>.tcp sockets.)</p>  <p>The exact time between pings is system- and protocol-dependent, but will
+normally be at least two hours. Most commonly, you would set this flag
+on a server socket if you want to allow clients to remain idle for long
+periods of time, but also want to ensure that connections are eventually
+garbage-collected if clients crash or become unreachable.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>keepalive</code></title>
+  <p>Value for the keepalive flag</p>
+</item>
+</terms>
+
+</page>

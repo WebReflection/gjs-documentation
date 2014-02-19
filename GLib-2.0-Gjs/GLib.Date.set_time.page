@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="GLib.Date.set_time"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Date" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_date_set_time</api:name>
+      <api:arg>
+        <api:type>GLib.Time</api:type>
+        <api:name>time_</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.Date.prototype.set_time</title>
+  <synopsis><code mime="text/x-gjs">
+function set_time(time_: GLib.Time): void {
+    // Gjs wrapper for g_date_set_time()
+}
+  </code></synopsis>
+  <p>Sets the value of a date from a <link xref="GLib.Time"/> value.
+The time to date conversion is done using the user's current timezone.</p>
+
+<terms>
+<item>
+<title><code>time_</code></title>
+  <p><link xref="GLib.Time"/> value to set.</p>
+</item>
+</terms>
+
+</page>

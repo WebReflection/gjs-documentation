@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="GLib.VariantBuilder.close"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.VariantBuilder" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_variant_builder_close</api:name>
+    </api:function>
+  </info>
+  <title>GLib.VariantBuilder.prototype.close</title>
+  <synopsis><code mime="text/x-gjs">
+function close(): void {
+    // Gjs wrapper for g_variant_builder_close()
+}
+  </code></synopsis>
+  <p>Closes the subcontainer inside the given <code>builder</code> that was opened by
+the most recent call to <link xref="GLib.open"/>.</p>  <p>It is an error to call this function in any way that would create an
+inconsistent value to be constructed (ie: too few values added to the
+subcontainer).</p>
+  <p>Since 2.24</p>
+
+</page>

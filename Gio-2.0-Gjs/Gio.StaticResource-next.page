@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.StaticResource-next"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.StaticResource" group="field" type="guide"/>
+    <title type="link" role="topic">next</title>
+  </info>
+  <title>Gio.StaticResource.next</title>
+  <synopsis><code mime="text/x-gjs">
+StaticResource.next: Gio.StaticResource (Read)
+  </code></synopsis>
+
+
+</page>

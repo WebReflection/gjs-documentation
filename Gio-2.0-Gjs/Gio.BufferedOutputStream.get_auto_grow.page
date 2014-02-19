@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.BufferedOutputStream.get_auto_grow"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.BufferedOutputStream" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_buffered_output_stream_get_auto_grow</api:name>
+    </api:function>
+  </info>
+  <title>Gio.BufferedOutputStream.prototype.get_auto_grow</title>
+  <synopsis><code mime="text/x-gjs">
+function get_auto_grow(): Boolean {
+    // Gjs wrapper for g_buffered_output_stream_get_auto_grow()
+}
+  </code></synopsis>
+  <p>Checks if the buffer automatically grows as data is added.</p>
+
+<terms>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

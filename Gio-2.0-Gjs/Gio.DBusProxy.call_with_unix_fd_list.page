@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusProxy.call_with_unix_fd_list"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusProxy" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_dbus_proxy_call_with_unix_fd_list</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>method_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.Variant</api:type>
+        <api:name>parameters</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.DBusCallFlags</api:type>
+        <api:name>flags</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>timeout_msec</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.UnixFDList</api:type>
+        <api:name>fd_list</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.AsyncReadyCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DBusProxy.prototype.call_with_unix_fd_list</title>
+  <synopsis><code mime="text/x-gjs">
+function call_with_unix_fd_list(method_name: String, parameters: GLib.Variant, flags: Gio.DBusCallFlags, timeout_msec: Number, fd_list: Gio.UnixFDList, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+    // Gjs wrapper for g_dbus_proxy_call_with_unix_fd_list()
+}
+  </code></synopsis>
+  <p>Like <link xref="Gio.DBusProxy.call"/> but also takes a <link xref="Gio.UnixFDList"/> object.</p>  <p>This method is only available on UNIX.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>method_name</code></title>
+  <p>Name of method to invoke.</p>
+</item>
+<item>
+<title><code>parameters</code></title>
+  <p>A <link xref="GLib.Variant"/> tuple with parameters for the signal or <code>null</code> if not passing parameters.</p>
+</item>
+<item>
+<title><code>flags</code></title>
+  <p>Flags from the <link xref="Gio.DBusCallFlags"/> enumeration.</p>
+</item>
+<item>
+<title><code>timeout_msec</code></title>
+  <p>The timeout in milliseconds (with %G_MAXINT meaning
+               "infinite") or -1 to use the proxy default timeout.</p>
+</item>
+<item>
+<title><code>fd_list</code></title>
+  <p>A <link xref="Gio.UnixFDList"/> or <code>null</code>.</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>A <link xref="Gio.Cancellable"/> or <code>null</code>.</p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>A <link xref="Gio.AsyncReadyCallback"/> to call when the request is satisfied or <code>null</code> if you don't
+care about the result of the method invocation.</p>
+</item>
+</terms>
+
+</page>

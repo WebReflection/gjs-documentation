@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gio.Socket.get_blocking"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Socket" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_socket_get_blocking</api:name>
+    </api:function>
+  </info>
+  <title>Gio.Socket.prototype.get_blocking</title>
+  <synopsis><code mime="text/x-gjs">
+function get_blocking(): Boolean {
+    // Gjs wrapper for g_socket_get_blocking()
+}
+  </code></synopsis>
+  <p>Gets the blocking mode of the socket. For details on blocking I/O,
+see <link xref="Gio.set_blocking"/>.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

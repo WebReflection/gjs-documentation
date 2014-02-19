@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="Gio.BufferedInputStream.read_byte"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.BufferedInputStream" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number</api:type>
+      </api:returns>
+      <api:name>g_buffered_input_stream_read_byte</api:name>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.BufferedInputStream.prototype.read_byte</title>
+  <synopsis><code mime="text/x-gjs">
+function read_byte(cancellable: Gio.Cancellable): Number {
+    // Gjs wrapper for g_buffered_input_stream_read_byte()
+}
+  </code></synopsis>
+  <p>Tries to read a single byte from the stream or the buffer. Will block
+during this read.</p>  <p>On success, the byte read from the stream is returned. On end of stream
+-1 is returned but it's not an exceptional error and @error is not set.</p>  <p>If <code>cancellable</code> is not <code>null</code>, then the operation can be cancelled by
+triggering the cancellable object from another thread. If the operation
+was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be returned. If an
+operation was partially finished when the operation was cancelled the
+partial result will be returned, without an error.</p>  <p>On error -1 is returned and @error is set accordingly.</p>
+
+<terms>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional <link xref="Gio.Cancellable"/> object, <code>null</code> to ignore</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

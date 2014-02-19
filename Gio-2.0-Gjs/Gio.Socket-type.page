@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.Socket-type"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Socket" group="property" type="guide"/>
+    <title type="link" role="topic">type</title>
+  </info>
+  <title>Gio.Socket.type</title>
+  <synopsis><code mime="text/x-gjs">
+Socket.type: Gio.SocketType (Read / Write / Construct Only)
+  </code></synopsis>
+
+
+</page>

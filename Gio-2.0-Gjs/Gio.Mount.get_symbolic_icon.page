@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.Mount.get_symbolic_icon"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Mount" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.Icon</api:type>
+      </api:returns>
+      <api:name>g_mount_get_symbolic_icon</api:name>
+    </api:function>
+  </info>
+  <title>Gio.Mount.prototype.get_symbolic_icon</title>
+  <synopsis><code mime="text/x-gjs">
+function get_symbolic_icon(): Gio.Icon {
+    // Gjs wrapper for g_mount_get_symbolic_icon()
+}
+  </code></synopsis>
+  <p>Gets the symbolic icon for <code>mount</code>.</p>
+  <p>Since 2.34</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<page id="Gio.VolumeMonitor.adopt_orphan_mount"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.VolumeMonitor" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.Volume</api:type>
+      </api:returns>
+      <api:name>g_volume_monitor_adopt_orphan_mount</api:name>
+      <api:arg>
+        <api:type>Gio.Mount</api:type>
+        <api:name>mount</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.VolumeMonitor.adopt_orphan_mount</title>
+  <synopsis><code mime="text/x-gjs">
+function adopt_orphan_mount(mount: Gio.Mount): Gio.Volume {
+    // Gjs wrapper for g_volume_monitor_adopt_orphan_mount()
+}
+  </code></synopsis>
+  <p>This function should be called by any <link xref="Gio.VolumeMonitor"/>
+implementation when a new <link xref="Gio.Mount"/> object is created that is not
+associated with a <link xref="Gio.Volume"/> object. It must be called just before
+emitting the @mount_added signal.</p>  <p>If the return value is not <code>null</code>, the caller must associate the
+returned <link xref="Gio.Volume"/> object with the <link xref="Gio.Mount"/>. This involves returning
+it in its <link xref="Gio.Mount.get_volume"/> implementation. The caller must
+also listen for the "removed" signal on the returned object
+and give up its reference when handling that signal</p>  <p>Similary, if implementing <link xref="Gio.VolumeMonitor.adopt_orphan_mount"/>,
+the implementor must take a reference to <code>mount</code> and return it in
+its <link xref="Gio.Volume.get_mount"/> implemented. Also, the implementor must
+listen for the "unmounted" signal on <code>mount</code> and give up its
+reference upon handling that signal.</p>  <p>There are two main use cases for this function.</p>  <p>One is when implementing a user space file system driver that reads
+blocks of a block device that is already represented by the native
+volume monitor (for example a CD Audio file system driver). Such
+a driver will generate its own <link xref="Gio.Mount"/> object that needs to be
+associated with the <link xref="Gio.Volume"/> object that represents the volume.</p>  <p>The other is for implementing a <link xref="Gio.VolumeMonitor"/> whose sole purpose
+is to return <link xref="Gio.Volume"/> objects representing entries in the users
+"favorite servers" list or similar.</p>
+
+<terms>
+<item>
+<title><code>mount</code></title>
+  <p>a <link xref="Gio.Mount"/> object to find a parent for</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

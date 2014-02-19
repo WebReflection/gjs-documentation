@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<page id="GObject.ValueArray.free"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.ValueArray" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_value_array_free</api:name>
+    </api:function>
+  </info>
+  <title>GObject.ValueArray.prototype.free</title>
+  <synopsis><code mime="text/x-gjs">
+function free(): void {
+    // Gjs wrapper for g_value_array_free()
+}
+  </code></synopsis>
+  <p>Free a <link xref="GObject.ValueArray"/> including its contents.</p>
+
+
+</page>

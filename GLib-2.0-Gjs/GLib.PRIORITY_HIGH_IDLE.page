@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="GLib.PRIORITY_HIGH_IDLE"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>GLib.PRIORITY_HIGH_IDLE</title>
+  <p>Use this for high priority idle functions.</p>  <p>GTK+ uses #G_PRIORITY_HIGH_IDLE + 10 for resizing operations,
+and #G_PRIORITY_HIGH_IDLE + 20 for redrawing operations. (This is
+done to ensure that any pending resizes are processed before any
+pending redraws, so that widgets are not redrawn twice unnecessarily.)</p>
+
+</page>

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<page id="GLib.unichar_get_mirror_char"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_unichar_get_mirror_char</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>ch</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>mirrored_ch</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.unichar_get_mirror_char</title>
+  <synopsis><code mime="text/x-gjs">
+function unichar_get_mirror_char(ch: String, mirrored_ch: String): Boolean {
+    // Gjs wrapper for g_unichar_get_mirror_char()
+}
+  </code></synopsis>
+  <p>In Unicode, some characters are "mirrored". This means that their
+images are mirrored horizontally in text that is laid out from right
+to left. For instance, "(" would become its mirror image, ")", in
+right-to-left text.</p>  <p>If <code>ch</code> has the Unicode mirrored property and there is another unicode
+character that typically has a glyph that is the mirror image of <code>ch</code>'s
+glyph and <code>mirrored_ch</code> is set, it puts that character in the address
+pointed to by <code>mirrored_ch</code>.  Otherwise the original character is put.</p>
+  <p>Since 2.4</p>
+<terms>
+<item>
+<title><code>ch</code></title>
+  <p>a Unicode character</p>
+</item>
+<item>
+<title><code>mirrored_ch</code></title>
+  <p>location to store the mirrored character</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="GLib.Date-year"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Date" group="field" type="guide"/>
+    <title type="link" role="topic">year</title>
+  </info>
+  <title>GLib.Date.year</title>
+  <synopsis><code mime="text/x-gjs">
+Date.year: Number (Read / Write)
+  </code></synopsis>
+  <p>the day of the day-month-year representation of the date</p>
+
+</page>

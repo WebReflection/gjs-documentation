@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="Gio.FileAttributeMatcher.subtract"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.FileAttributeMatcher" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.FileAttributeMatcher</api:type>
+      </api:returns>
+      <api:name>g_file_attribute_matcher_subtract</api:name>
+      <api:arg>
+        <api:type>Gio.FileAttributeMatcher</api:type>
+        <api:name>subtract</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.FileAttributeMatcher.prototype.subtract</title>
+  <synopsis><code mime="text/x-gjs">
+function subtract(subtract: Gio.FileAttributeMatcher): Gio.FileAttributeMatcher {
+    // Gjs wrapper for g_file_attribute_matcher_subtract()
+}
+  </code></synopsis>
+  <p>Subtracts all attributes of <code>subtract</code> from <code>matcher</code> and returns
+a matcher that supports those attributes.</p>  <p>Note that currently it is not possible to remove a single
+attribute when the <code>matcher</code> matches the whole namespace - or remove
+a namespace or attribute when the matcher matches everything. This
+is a limitation of the current implementation, but may be fixed
+in the future.</p>
+
+<terms>
+<item>
+<title><code>subtract</code></title>
+  <p>The matcher to subtract</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

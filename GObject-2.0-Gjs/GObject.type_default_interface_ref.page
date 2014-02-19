@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<page id="GObject.type_default_interface_ref"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GObject.TypeInterface</api:type>
+      </api:returns>
+      <api:name>g_type_default_interface_ref</api:name>
+      <api:arg>
+        <api:type>GType</api:type>
+        <api:name>g_type</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.type_default_interface_ref</title>
+  <synopsis><code mime="text/x-gjs">
+function type_default_interface_ref(g_type: GType): GObject.TypeInterface {
+    // Gjs wrapper for g_type_default_interface_ref()
+}
+  </code></synopsis>
+  <p>Increments the reference count for the interface type <code>g_type</code>,
+and returns the default interface vtable for the type.</p>  <p>If the type is not currently in use, then the default vtable
+for the type will be created and initalized by calling
+the base interface init and default vtable init functions for
+the type (the @base_init and @class_init members of <link xref="GObject.TypeInfo"/>).
+Calling <link xref="GObject.type_default_interface_ref"/> is useful when you
+want to make sure that signals and properties for an interface
+have been installed.</p>
+  <p>Since 2.4</p>
+<terms>
+<item>
+<title><code>g_type</code></title>
+  <p>an interface type</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

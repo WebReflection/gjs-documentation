@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.EmblemedIcon.get_emblems"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.EmblemedIcon" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(Gio.Emblem)</api:type>
+      </api:returns>
+      <api:name>g_emblemed_icon_get_emblems</api:name>
+    </api:function>
+  </info>
+  <title>Gio.EmblemedIcon.prototype.get_emblems</title>
+  <synopsis><code mime="text/x-gjs">
+function get_emblems(): Array(Gio.Emblem) {
+    // Gjs wrapper for g_emblemed_icon_get_emblems()
+}
+  </code></synopsis>
+  <p>Gets the list of emblems for the @icon.</p>
+  <p>Since 2.18</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

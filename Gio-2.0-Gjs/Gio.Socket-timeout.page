@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.Socket-timeout"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Socket" group="property" type="guide"/>
+    <title type="link" role="topic">timeout</title>
+  </info>
+  <title>Gio.Socket.timeout</title>
+  <synopsis><code mime="text/x-gjs">
+Socket.timeout: Number (Read / Write)
+  </code></synopsis>
+  <p>The timeout in seconds on socket I/O</p>
+  <p>Since 2.26</p>
+</page>

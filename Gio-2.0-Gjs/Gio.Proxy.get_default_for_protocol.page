@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gio.Proxy.get_default_for_protocol"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Proxy" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.Proxy</api:type>
+      </api:returns>
+      <api:name>g_proxy_get_default_for_protocol</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>protocol</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.Proxy.get_default_for_protocol</title>
+  <synopsis><code mime="text/x-gjs">
+function get_default_for_protocol(protocol: String): Gio.Proxy {
+    // Gjs wrapper for g_proxy_get_default_for_protocol()
+}
+  </code></synopsis>
+  <p>Lookup "gio-proxy" extension point for a proxy implementation that supports
+specified protocol.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>protocol</code></title>
+  <p>the proxy protocol name (e.g. http, socks, etc)</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

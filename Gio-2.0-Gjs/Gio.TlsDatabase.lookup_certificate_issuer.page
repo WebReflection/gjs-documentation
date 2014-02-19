@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<page id="Gio.TlsDatabase.lookup_certificate_issuer"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.TlsDatabase" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.TlsCertificate</api:type>
+      </api:returns>
+      <api:name>g_tls_database_lookup_certificate_issuer</api:name>
+      <api:arg>
+        <api:type>Gio.TlsCertificate</api:type>
+        <api:name>certificate</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.TlsInteraction</api:type>
+        <api:name>interaction</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.TlsDatabaseLookupFlags</api:type>
+        <api:name>flags</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.TlsDatabase.prototype.lookup_certificate_issuer</title>
+  <synopsis><code mime="text/x-gjs">
+function lookup_certificate_issuer(certificate: Gio.TlsCertificate, interaction: Gio.TlsInteraction, flags: Gio.TlsDatabaseLookupFlags, cancellable: Gio.Cancellable): Gio.TlsCertificate {
+    // Gjs wrapper for g_tls_database_lookup_certificate_issuer()
+}
+  </code></synopsis>
+  <p>Lookup the issuer of <code>certificate</code> in the database.</p>  <p>The %issuer property
+of <code>certificate</code> is not modified, and the two certificates are not hooked
+into a chain.</p>  <p>This function can block, use <link xref="Gio.lookup_certificate_issuer_async"/> to perform
+the lookup operation asynchronously.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>certificate</code></title>
+  <p>a <link xref="Gio.TlsCertificate"/></p>
+</item>
+<item>
+<title><code>interaction</code></title>
+  <p>used to interact with the user if necessary</p>
+</item>
+<item>
+<title><code>flags</code></title>
+  <p>flags which affect the lookup operation</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>a <link xref="Gio.Cancellable"/>, or <code>null</code></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

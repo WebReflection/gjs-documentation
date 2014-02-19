@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusConnection-unique-name"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusConnection" group="property" type="guide"/>
+    <title type="link" role="topic">unique-name</title>
+  </info>
+  <title>Gio.DBusConnection.unique_name</title>
+  <synopsis><code mime="text/x-gjs">
+DBusConnection.unique_name: String (Read)
+  </code></synopsis>
+  <p>The unique name as assigned by the message bus or <code>null</code> if the
+connection is not open or not a message bus connection.</p>
+  <p>Since 2.26</p>
+</page>

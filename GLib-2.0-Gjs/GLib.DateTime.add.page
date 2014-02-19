@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="GLib.DateTime.add"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.DateTime" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.DateTime</api:type>
+      </api:returns>
+      <api:name>g_date_time_add</api:name>
+      <api:arg>
+        <api:type>GLib.TimeSpan</api:type>
+        <api:name>timespan</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.DateTime.prototype.add</title>
+  <synopsis><code mime="text/x-gjs">
+function add(timespan: GLib.TimeSpan): GLib.DateTime {
+    // Gjs wrapper for g_date_time_add()
+}
+  </code></synopsis>
+  <p>Creates a copy of <code>datetime</code> and adds the specified timespan to the copy.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>timespan</code></title>
+  <p>a <link xref="GLib.TimeSpan"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

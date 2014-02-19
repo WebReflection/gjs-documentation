@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<page id="GLib.GINT16_FORMAT"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>GLib.GINT16_FORMAT</title>
+  <p>This is the platform dependent conversion specifier for scanning and
+printing values of type #gint16. It is a string literal, but doesn't
+include the percent-sign, such that you can add precision and length
+modifiers between percent-sign and conversion specifier.</p>  <p>|[&lt;!-- language="C" --&gt;
+gint16 in;
+gint32 out;
+sscanf ("42", "%" G_GINT16_FORMAT, &amp;in)
+out = in * 1000;
+g_print ("%" G_GINT32_FORMAT, out);
+]|</p>
+
+</page>

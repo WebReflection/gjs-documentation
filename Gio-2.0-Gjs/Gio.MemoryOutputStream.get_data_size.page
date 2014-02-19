@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gio.MemoryOutputStream.get_data_size"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.MemoryOutputStream" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>gsize</api:type>
+      </api:returns>
+      <api:name>g_memory_output_stream_get_data_size</api:name>
+    </api:function>
+  </info>
+  <title>Gio.MemoryOutputStream.prototype.get_data_size</title>
+  <synopsis><code mime="text/x-gjs">
+function get_data_size(): gsize {
+    // Gjs wrapper for g_memory_output_stream_get_data_size()
+}
+  </code></synopsis>
+  <p>Returns the number of bytes from the start up to including the last
+byte written in the stream that has not been truncated away.</p>
+  <p>Since 2.18</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

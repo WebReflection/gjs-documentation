@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<page id="Gio.CancellableSourceFunc"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Gio.CancellableSourceFunc</title>
+  <synopsis><code mime="text/x-gjs">
+function onCancellableSourceFunc(cancellable: Gio.Cancellable): Boolean {
+}
+  </code></synopsis>
+  <p>This is the function type of the callback used for the <link xref="GLib.Source"/>
+returned by <link xref="Gio.source_new"/>.</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>cancellable</code></title>
+  <p>the <link xref="Gio.Cancellable"/></p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

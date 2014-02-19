@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.NetworkMonitor.get_default"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.NetworkMonitor" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.NetworkMonitor</api:type>
+      </api:returns>
+      <api:name>g_network_monitor_get_default</api:name>
+    </api:function>
+  </info>
+  <title>Gio.NetworkMonitor.get_default</title>
+  <synopsis><code mime="text/x-gjs">
+function get_default(): Gio.NetworkMonitor {
+    // Gjs wrapper for g_network_monitor_get_default()
+}
+  </code></synopsis>
+  <p>Gets the default <link xref="Gio.NetworkMonitor"/> for the system.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

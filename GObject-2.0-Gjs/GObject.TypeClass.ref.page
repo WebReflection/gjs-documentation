@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="GObject.TypeClass.ref"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.TypeClass" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GObject.TypeClass</api:type>
+      </api:returns>
+      <api:name>g_type_class_ref</api:name>
+      <api:arg>
+        <api:type>GType</api:type>
+        <api:name>type</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.TypeClass.ref</title>
+  <synopsis><code mime="text/x-gjs">
+function ref(type: GType): GObject.TypeClass {
+    // Gjs wrapper for g_type_class_ref()
+}
+  </code></synopsis>
+  <p>Increments the reference count of the class structure belonging to
+<code>type</code>. This function will demand-create the class if it doesn't
+exist already.</p>
+
+<terms>
+<item>
+<title><code>type</code></title>
+  <p>type ID of a classed type</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

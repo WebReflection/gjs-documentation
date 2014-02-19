@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="GObject.FlagsClass-g_type_class"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.FlagsClass" group="field" type="guide"/>
+    <title type="link" role="topic">g_type_class</title>
+  </info>
+  <title>GObject.FlagsClass.g_type_class</title>
+  <synopsis><code mime="text/x-gjs">
+FlagsClass.g_type_class: GObject.TypeClass (Read)
+  </code></synopsis>
+  <p>the parent class</p>
+
+</page>

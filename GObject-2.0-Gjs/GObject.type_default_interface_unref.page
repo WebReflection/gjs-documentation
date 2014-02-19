@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="GObject.type_default_interface_unref"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_type_default_interface_unref</api:name>
+      <api:arg>
+        <api:type>GObject.TypeInterface</api:type>
+        <api:name>g_iface</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.type_default_interface_unref</title>
+  <synopsis><code mime="text/x-gjs">
+function type_default_interface_unref(g_iface: GObject.TypeInterface): void {
+    // Gjs wrapper for g_type_default_interface_unref()
+}
+  </code></synopsis>
+  <p>Decrements the reference count for the type corresponding to the
+interface default vtable <code>g_iface</code>. If the type is dynamic, then
+when no one is using the interface and all references have
+been released, the finalize function for the interface's default
+vtable (the @class_finalize member of <link xref="GObject.TypeInfo"/>) will be called.</p>
+  <p>Since 2.4</p>
+<terms>
+<item>
+<title><code>g_iface</code></title>
+  <p>the default vtable
+    structure for a interface, as returned by <link xref="GObject.type_default_interface_ref"/></p>
+</item>
+</terms>
+
+</page>

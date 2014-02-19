@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page id="GLib.PRIORITY_LOW"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>GLib.PRIORITY_LOW</title>
+  <p>Use this for very low priority background tasks.</p>  <p>It is not used within GLib or GTK+.</p>
+
+</page>

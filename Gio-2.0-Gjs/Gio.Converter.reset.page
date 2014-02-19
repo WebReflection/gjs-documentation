@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<page id="Gio.Converter.reset"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Converter" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_converter_reset</api:name>
+    </api:function>
+  </info>
+  <title>Gio.Converter.prototype.reset</title>
+  <synopsis><code mime="text/x-gjs">
+function reset(): void {
+    // Gjs wrapper for g_converter_reset()
+}
+  </code></synopsis>
+  <p>Resets all internal state in the converter, making it behave
+as if it was just created. If the converter has any internal
+state that would produce output then that output is lost.</p>
+  <p>Since 2.24</p>
+
+</page>

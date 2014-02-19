@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<page id="GObject.signal_emitv"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_signal_emitv</api:name>
+      <api:arg>
+        <api:type>Array(GObject.Value)</api:type>
+        <api:name>instance_and_params</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>signal_id</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.Quark</api:type>
+        <api:name>detail</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Value</api:type>
+        <api:name>return_value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.signal_emitv</title>
+  <synopsis><code mime="text/x-gjs">
+function signal_emitv(instance_and_params: Array(GObject.Value), signal_id: Number, detail: GLib.Quark, return_value: GObject.Value): void {
+    // Gjs wrapper for g_signal_emitv()
+}
+  </code></synopsis>
+  <p>Emits a signal.</p>  <p>Note that <link xref="GObject.signal_emitv"/> doesn't change <code>return_value</code> if no handlers are
+connected, in contrast to <link xref="GObject.signal_emit"/> and <link xref="GObject.signal_emit_valist"/>.</p>
+
+<terms>
+<item>
+<title><code>instance_and_params</code></title>
+  <p>argument list for the signal emission.
+ The first element in the array is a <link xref="GObject.Value"/> for the instance the signal
+ is being emitted on. The rest are any arguments to be passed to the signal.</p>
+</item>
+<item>
+<title><code>signal_id</code></title>
+  <p>the signal id</p>
+</item>
+<item>
+<title><code>detail</code></title>
+  <p>the detail</p>
+</item>
+<item>
+<title><code>return_value</code></title>
+  <p>Location to store the return value of the signal emission.</p>
+</item>
+</terms>
+
+</page>

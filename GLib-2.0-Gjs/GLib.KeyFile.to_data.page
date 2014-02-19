@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="GLib.KeyFile.to_data"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.KeyFile" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_key_file_to_data</api:name>
+    </api:function>
+  </info>
+  <title>GLib.KeyFile.prototype.to_data</title>
+  <synopsis><code mime="text/x-gjs">
+function to_data(): [return_value: String, length: gsize] {
+    // Gjs wrapper for g_key_file_to_data()
+}
+  </code></synopsis>
+  <p>This function outputs <code>key_file</code> as a string.</p>  <p>Note that this function never reports an error,
+so it is safe to pass <code>null</code> as @error.</p>
+  <p>Since 2.6</p>
+<terms>
+<item>
+<title><code>return_value</code></title>
+
+</item>
+<item>
+<title><code>length</code></title>
+  <p>return location for the length of the
+  returned string, or <code>null</code></p>
+</item>
+</terms>
+
+</page>

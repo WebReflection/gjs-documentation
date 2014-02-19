@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="GLib.Error.copy"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Error" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.Error</api:type>
+      </api:returns>
+      <api:name>g_error_copy</api:name>
+    </api:function>
+  </info>
+  <title>GLib.Error.prototype.copy</title>
+  <synopsis><code mime="text/x-gjs">
+function copy(): GLib.Error {
+    // Gjs wrapper for g_error_copy()
+}
+  </code></synopsis>
+  <p>Makes a copy of <code>error</code>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

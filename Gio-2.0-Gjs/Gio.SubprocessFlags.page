@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.SubprocessFlags"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>Gio.SubprocessFlags</title>
+  <p>Flags to define the behaviour of a <link xref="Gio.Subprocess"/>.</p>  <p>Note that the default for stdin is to redirect from /dev/null.  For
+stdout and stderr the default are for them to inherit the
+corresponding descriptor from the calling process.</p>  <p>Note that it is a programmer error to mix 'incompatible' flags.  For
+example, you may not request both <link xref="Gio.SubprocessFlags"/>.stdout_pipe and
+<link xref="Gio.SubprocessFlags"/>.stdout_silence.</p>
+  <p>Since 2.40</p>
+</page>

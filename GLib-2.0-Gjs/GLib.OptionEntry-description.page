@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page id="GLib.OptionEntry-description"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.OptionEntry" group="field" type="guide"/>
+    <title type="link" role="topic">description</title>
+  </info>
+  <title>GLib.OptionEntry.description</title>
+  <synopsis><code mime="text/x-gjs">
+OptionEntry.description: String (Read)
+  </code></synopsis>
+  <p>the description for the option in &lt;option&gt;--help&lt;/option&gt;
+ output. The @description is translated using the @translate_func of the
+ group, see <link xref="GLib.set_translation_domain"/>.</p>
+
+</page>

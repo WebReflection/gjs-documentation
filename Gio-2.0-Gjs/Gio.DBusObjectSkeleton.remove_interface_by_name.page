@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusObjectSkeleton.remove_interface_by_name"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusObjectSkeleton" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_dbus_object_skeleton_remove_interface_by_name</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>interface_name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DBusObjectSkeleton.prototype.remove_interface_by_name</title>
+  <synopsis><code mime="text/x-gjs">
+function remove_interface_by_name(interface_name: String): void {
+    // Gjs wrapper for g_dbus_object_skeleton_remove_interface_by_name()
+}
+  </code></synopsis>
+  <p>Removes the <link xref="Gio.DBusInterface"/> with <code>interface_name</code> from <code>object</code>.</p>  <p>If no D-Bus interface of the given interface exists, this function
+does nothing.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>interface_name</code></title>
+  <p>A D-Bus interface name.</p>
+</item>
+</terms>
+
+</page>

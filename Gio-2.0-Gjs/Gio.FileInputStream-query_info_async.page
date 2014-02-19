@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<page id="Gio.FileInputStream-query_info_async"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.FileInputStream" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.FileInputStream::query_info_async</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_query_info_async(attributes: String, io_priority: Number, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+}
+  </code></synopsis>
+  <p>Queries the stream information asynchronously.
+When the operation is finished <code>callback</code> will be called.
+You can then call <link xref="Gio.FileInputStream.query_info_finish"/>
+to get the result of the operation.</p>  <p>For the synchronous version of this function,
+see <link xref="Gio.FileInputStream.query_info"/>.</p>  <p>If <code>cancellable</code> is not <code>null</code>, then the operation can be cancelled by
+triggering the cancellable object from another thread. If the operation
+was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be set</p>
+
+<terms>
+<item>
+<title><code>attributes</code></title>
+  <p>a file attribute query string.</p>
+</item>
+<item>
+<title><code>io_priority</code></title>
+  <p>the [I/O priority][io-priority] of the request</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional <link xref="Gio.Cancellable"/> object, <code>null</code> to ignore.</p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>callback to call when the request is satisfied</p>
+</item>
+</terms>
+
+</page>

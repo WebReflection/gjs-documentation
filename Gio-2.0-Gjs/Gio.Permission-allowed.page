@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="Gio.Permission-allowed"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Permission" group="property" type="guide"/>
+    <title type="link" role="topic">allowed</title>
+  </info>
+  <title>Gio.Permission.allowed</title>
+  <synopsis><code mime="text/x-gjs">
+Permission.allowed: Boolean (Read)
+  </code></synopsis>
+  <p><code>true</code> if the caller currently has permission to perform the action that
+@permission represents the permission to perform.</p>
+
+</page>

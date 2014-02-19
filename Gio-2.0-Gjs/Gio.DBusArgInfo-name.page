@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusArgInfo-name"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusArgInfo" group="field" type="guide"/>
+    <title type="link" role="topic">name</title>
+  </info>
+  <title>Gio.DBusArgInfo.name</title>
+  <synopsis><code mime="text/x-gjs">
+DBusArgInfo.name: String (Read)
+  </code></synopsis>
+  <p>Name of the argument, e.g. @unix_user_id.</p>
+
+</page>

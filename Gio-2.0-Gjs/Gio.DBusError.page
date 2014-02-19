@@ -1,0 +1,191 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusError"
+      type="topic"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Gio.DBusError</title>
+  <p>Error codes for the %G_DBUS_ERROR error domain.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>DBusError.FAILED</code></title>
+  <p>A generic error; "something went wrong" - see the error message for
+more.</p>
+</item>
+<item>
+<title><code>DBusError.NO_MEMORY</code></title>
+  <p>There was not enough memory to complete an operation.</p>
+</item>
+<item>
+<title><code>DBusError.SERVICE_UNKNOWN</code></title>
+  <p>The bus doesn't know how to launch a service to supply the bus name
+you wanted.</p>
+</item>
+<item>
+<title><code>DBusError.NAME_HAS_NO_OWNER</code></title>
+  <p>The bus name you referenced doesn't exist (i.e. no application owns
+it).</p>
+</item>
+<item>
+<title><code>DBusError.NO_REPLY</code></title>
+  <p>No reply to a message expecting one, usually means a timeout occurred.</p>
+</item>
+<item>
+<title><code>DBusError.IO_ERROR</code></title>
+  <p>Something went wrong reading or writing to a socket, for example.</p>
+</item>
+<item>
+<title><code>DBusError.BAD_ADDRESS</code></title>
+  <p>A D-Bus bus address was malformed.</p>
+</item>
+<item>
+<title><code>DBusError.NOT_SUPPORTED</code></title>
+  <p>Requested operation isn't supported (like ENOSYS on UNIX).</p>
+</item>
+<item>
+<title><code>DBusError.LIMITS_EXCEEDED</code></title>
+  <p>Some limited resource is exhausted.</p>
+</item>
+<item>
+<title><code>DBusError.ACCESS_DENIED</code></title>
+  <p>Security restrictions don't allow doing what you're trying to do.</p>
+</item>
+<item>
+<title><code>DBusError.AUTH_FAILED</code></title>
+  <p>Authentication didn't work.</p>
+</item>
+<item>
+<title><code>DBusError.NO_SERVER</code></title>
+  <p>Unable to connect to server (probably caused by ECONNREFUSED on a
+socket).</p>
+</item>
+<item>
+<title><code>DBusError.TIMEOUT</code></title>
+  <p>Certain timeout errors, possibly ETIMEDOUT on a socket.  Note that
+<link xref="Gio.DBusError"/>.no_reply is used for message reply timeouts. Warning:
+this is confusingly-named given that <link xref="Gio.DBusError"/>.timed_out also
+exists. We can't fix it for compatibility reasons so just be
+careful.</p>
+</item>
+<item>
+<title><code>DBusError.NO_NETWORK</code></title>
+  <p>No network access (probably ENETUNREACH on a socket).</p>
+</item>
+<item>
+<title><code>DBusError.ADDRESS_IN_USE</code></title>
+  <p>Can't bind a socket since its address is in use (i.e. EADDRINUSE).</p>
+</item>
+<item>
+<title><code>DBusError.DISCONNECTED</code></title>
+  <p>The connection is disconnected and you're trying to use it.</p>
+</item>
+<item>
+<title><code>DBusError.INVALID_ARGS</code></title>
+  <p>Invalid arguments passed to a method call.</p>
+</item>
+<item>
+<title><code>DBusError.FILE_NOT_FOUND</code></title>
+  <p>Missing file.</p>
+</item>
+<item>
+<title><code>DBusError.FILE_EXISTS</code></title>
+  <p>Existing file and the operation you're using does not silently overwrite.</p>
+</item>
+<item>
+<title><code>DBusError.UNKNOWN_METHOD</code></title>
+  <p>Method name you invoked isn't known by the object you invoked it on.</p>
+</item>
+<item>
+<title><code>DBusError.TIMED_OUT</code></title>
+  <p>Certain timeout errors, e.g. while starting a service. Warning: this is
+confusingly-named given that <link xref="Gio.DBusError"/>.timeout also exists. We
+can't fix it for compatibility reasons so just be careful.</p>
+</item>
+<item>
+<title><code>DBusError.MATCH_RULE_NOT_FOUND</code></title>
+  <p>Tried to remove or modify a match rule that didn't exist.</p>
+</item>
+<item>
+<title><code>DBusError.MATCH_RULE_INVALID</code></title>
+  <p>The match rule isn't syntactically valid.</p>
+</item>
+<item>
+<title><code>DBusError.SPAWN_EXEC_FAILED</code></title>
+  <p>While starting a new process, the exec() call failed.</p>
+</item>
+<item>
+<title><code>DBusError.SPAWN_FORK_FAILED</code></title>
+  <p>While starting a new process, the fork() call failed.</p>
+</item>
+<item>
+<title><code>DBusError.SPAWN_CHILD_EXITED</code></title>
+  <p>While starting a new process, the child exited with a status code.</p>
+</item>
+<item>
+<title><code>DBusError.SPAWN_CHILD_SIGNALED</code></title>
+  <p>While starting a new process, the child exited on a signal.</p>
+</item>
+<item>
+<title><code>DBusError.SPAWN_FAILED</code></title>
+  <p>While starting a new process, something went wrong.</p>
+</item>
+<item>
+<title><code>DBusError.SPAWN_SETUP_FAILED</code></title>
+  <p>We failed to setup the environment correctly.</p>
+</item>
+<item>
+<title><code>DBusError.SPAWN_CONFIG_INVALID</code></title>
+  <p>We failed to setup the config parser correctly.</p>
+</item>
+<item>
+<title><code>DBusError.SPAWN_SERVICE_INVALID</code></title>
+  <p>Bus name was not valid.</p>
+</item>
+<item>
+<title><code>DBusError.SPAWN_SERVICE_NOT_FOUND</code></title>
+  <p>Service file not found in system-services directory.</p>
+</item>
+<item>
+<title><code>DBusError.SPAWN_PERMISSIONS_INVALID</code></title>
+  <p>Permissions are incorrect on the setuid helper.</p>
+</item>
+<item>
+<title><code>DBusError.SPAWN_FILE_INVALID</code></title>
+  <p>Service file invalid (Name, User or Exec missing).</p>
+</item>
+<item>
+<title><code>DBusError.SPAWN_NO_MEMORY</code></title>
+  <p>Tried to get a UNIX process ID and it wasn't available.</p>
+</item>
+<item>
+<title><code>DBusError.UNIX_PROCESS_ID_UNKNOWN</code></title>
+  <p>Tried to get a UNIX process ID and it wasn't available.</p>
+</item>
+<item>
+<title><code>DBusError.INVALID_SIGNATURE</code></title>
+  <p>A type signature is not valid.</p>
+</item>
+<item>
+<title><code>DBusError.INVALID_FILE_CONTENT</code></title>
+  <p>A file contains invalid syntax or is otherwise broken.</p>
+</item>
+<item>
+<title><code>DBusError.SELINUX_SECURITY_CONTEXT_UNKNOWN</code></title>
+  <p>Asked for SELinux security context and it wasn't available.</p>
+</item>
+<item>
+<title><code>DBusError.ADT_AUDIT_DATA_UNKNOWN</code></title>
+  <p>Asked for ADT audit data and it wasn't available.</p>
+</item>
+<item>
+<title><code>DBusError.OBJECT_PATH_IN_USE</code></title>
+  <p>There's already an object with the requested object path.</p>
+</item>
+</terms>
+
+</page>

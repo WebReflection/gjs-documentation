@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Gio.PollableOutputStream-can_poll"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.PollableOutputStream" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.PollableOutputStream::can_poll</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_can_poll(): Boolean {
+}
+  </code></synopsis>
+  <p>Checks if <code>stream</code> is actually pollable. Some classes may implement
+<link xref="Gio.PollableOutputStream"/> but have only certain instances of that
+class be pollable. If this method returns <code>false</code>, then the behavior
+of other <link xref="Gio.PollableOutputStream"/> methods is undefined.</p>  <p>For any given stream, the value returned by this method is constant;
+a stream cannot switch from pollable to non-pollable or vice versa.</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if <code>stream</code> is pollable, <code>false</code> if not.</p>
+</item>
+</terms>
+
+</page>

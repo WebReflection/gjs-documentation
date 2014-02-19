@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusMessage.get_byte_order"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusMessage" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.DBusMessageByteOrder</api:type>
+      </api:returns>
+      <api:name>g_dbus_message_get_byte_order</api:name>
+    </api:function>
+  </info>
+  <title>Gio.DBusMessage.prototype.get_byte_order</title>
+  <synopsis><code mime="text/x-gjs">
+function get_byte_order(): Gio.DBusMessageByteOrder {
+    // Gjs wrapper for g_dbus_message_get_byte_order()
+}
+  </code></synopsis>
+  <p>Gets the byte order of <code>message</code>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

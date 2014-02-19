@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="GLib.test_incomplete"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_test_incomplete</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>msg</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.test_incomplete</title>
+  <synopsis><code mime="text/x-gjs">
+function test_incomplete(msg: String): void {
+    // Gjs wrapper for g_test_incomplete()
+}
+  </code></synopsis>
+  <p>Indicates that a test failed because of some incomplete
+functionality. This function can be called multiple times
+from the same test.</p>  <p>Calling this function will not stop the test from running, you
+need to return from the test function yourself. So you can
+produce additional diagnostic messages or even continue running
+the test.</p>  <p>If not called from inside a test, this function does nothing.</p>
+  <p>Since 2.38</p>
+<terms>
+<item>
+<title><code>msg</code></title>
+  <p>explanation</p>
+</item>
+</terms>
+
+</page>

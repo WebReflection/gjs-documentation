@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<page id="Gio.MenuModel.get_item_link"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.MenuModel" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.MenuModel</api:type>
+      </api:returns>
+      <api:name>g_menu_model_get_item_link</api:name>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>item_index</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>link</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.MenuModel.prototype.get_item_link</title>
+  <synopsis><code mime="text/x-gjs">
+function get_item_link(item_index: Number, link: String): Gio.MenuModel {
+    // Gjs wrapper for g_menu_model_get_item_link()
+}
+  </code></synopsis>
+  <p>Queries the item at position <code>item_index</code> in <code>model</code> for the link
+specified by <code>link</code>.</p>  <p>If the link exists, the linked <link xref="Gio.MenuModel"/> is returned.  If the link
+does not exist, <code>null</code> is returned.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>item_index</code></title>
+  <p>the index of the item</p>
+</item>
+<item>
+<title><code>link</code></title>
+  <p>the link to query</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

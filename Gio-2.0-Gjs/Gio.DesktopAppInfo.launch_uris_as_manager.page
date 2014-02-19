@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<page id="Gio.DesktopAppInfo.launch_uris_as_manager"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DesktopAppInfo" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_desktop_app_info_launch_uris_as_manager</api:name>
+      <api:arg>
+        <api:type>Array(String)</api:type>
+        <api:name>uris</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.AppLaunchContext</api:type>
+        <api:name>launch_context</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.SpawnFlags</api:type>
+        <api:name>spawn_flags</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DesktopAppInfo.prototype.launch_uris_as_manager</title>
+  <synopsis><code mime="text/x-gjs">
+function launch_uris_as_manager(uris: Array(String), launch_context: Gio.AppLaunchContext, spawn_flags: GLib.SpawnFlags): Boolean {
+    // Gjs wrapper for g_desktop_app_info_launch_uris_as_manager()
+}
+  </code></synopsis>
+  <p>This function performs the equivalent of <link xref="Gio.AppInfo.launch_uris"/>,
+but is intended primarily for operating system components that
+launch applications.  Ordinary applications should use
+<link xref="Gio.AppInfo.launch_uris"/>.</p>  <p>If the application is launched via traditional UNIX fork()/exec()
+then <code>spawn_flags</code>, <code>user_setup</code> and <code>user_setup_data</code> are used for the
+call to <link xref="GLib.spawn_async"/>.  Additionally, <code>pid_callback</code> (with
+<code>pid_callback_data</code>) will be called to inform about the PID of the
+created process.</p>  <p>If application launching occurs via some other mechanism (eg: D-Bus
+activation) then <code>spawn_flags</code>, <code>user_setup</code>, <code>user_setup_data</code>,
+<code>pid_callback</code> and <code>pid_callback_data</code> are ignored.</p>
+
+<terms>
+<item>
+<title><code>uris</code></title>
+  <p>List of URIs</p>
+</item>
+<item>
+<title><code>launch_context</code></title>
+  <p>a <link xref="Gio.AppLaunchContext"/></p>
+</item>
+<item>
+<title><code>spawn_flags</code></title>
+  <p><link xref="GLib.SpawnFlags"/>, used for each process</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

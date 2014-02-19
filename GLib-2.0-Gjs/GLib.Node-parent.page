@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="GLib.Node-parent"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Node" group="field" type="guide"/>
+    <title type="link" role="topic">parent</title>
+  </info>
+  <title>GLib.Node.parent</title>
+  <synopsis><code mime="text/x-gjs">
+Node.parent: GLib.Node (Read)
+  </code></synopsis>
+  <p>points to the parent of the <link xref="GLib.Node"/>, or is <code>null</code> if the
+         <link xref="GLib.Node"/> is the root of the tree.</p>
+
+</page>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<page id="Gio.Action-get_parameter_type"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Action" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.Action::get_parameter_type</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_get_parameter_type(): GLib.VariantType {
+}
+  </code></synopsis>
+  <p>Queries the type of the parameter that must be given when activating
+<code>action</code>.</p>  <p>When activating the action using <link xref="Gio.Action.activate"/>, the <link xref="GLib.Variant"/>
+given to that function must be of the type returned by this function.</p>  <p>In the case that this function returns <code>null</code>, you must not give any
+<link xref="GLib.Variant"/>, but <code>null</code> instead.</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the parameter type</p>
+</item>
+</terms>
+
+</page>

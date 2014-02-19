@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<page id="GLib.file_set_contents"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_file_set_contents</api:name>
+      <api:arg>
+        <api:type>filename</api:type>
+        <api:name>filename</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Array(guint8)</api:type>
+        <api:name>contents</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.file_set_contents</title>
+  <synopsis><code mime="text/x-gjs">
+function file_set_contents(filename: filename, contents: Array(guint8)): Boolean {
+    // Gjs wrapper for g_file_set_contents()
+}
+  </code></synopsis>
+  <p>Writes all of <code>contents</code> to a file named <code>filename</code>, with good error checking.
+If a file called <code>filename</code> already exists it will be overwritten.</p>  <p>This write is atomic in the sense that it is first written to a temporary
+file which is then renamed to the final name. Notes:</p>  <p>- On UNIX, if <code>filename</code> already exists hard links to <code>filename</code> will break.
+  Also since the file is recreated, existing permissions, access control
+  lists, metadata etc. may be lost. If <code>filename</code> is a symbolic link,
+  the link itself will be replaced, not the linked file.</p>  <p>- On Windows renaming a file will not remove an existing file with the
+  new name, so on Windows there is a race condition between the existing
+  file being removed and the temporary file being renamed.</p>  <p>- On Windows there is no way to remove a file that is open to some
+  process, or mapped into memory. Thus, this function will fail if
+  <code>filename</code> already exists and is open.</p>  <p>If the call was successful, it returns <code>true</code>. If the call was not successful,
+it returns <code>false</code> and sets @error. The error domain is #G_FILE_ERROR.
+Possible error codes are those in the <link xref="GLib.FileError"/> enumeration.</p>  <p>Note that the name for the temporary file is constructed by appending up
+to 7 characters to <code>filename</code>.</p>
+  <p>Since 2.8</p>
+<terms>
+<item>
+<title><code>filename</code></title>
+  <p>name of a file to write <code>contents</code> to, in the GLib file name
+  encoding</p>
+</item>
+<item>
+<title><code>contents</code></title>
+  <p>string to write to the file</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gio.ApplicationCommandLine.get_stdin"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.ApplicationCommandLine" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.InputStream</api:type>
+      </api:returns>
+      <api:name>g_application_command_line_get_stdin</api:name>
+    </api:function>
+  </info>
+  <title>Gio.ApplicationCommandLine.prototype.get_stdin</title>
+  <synopsis><code mime="text/x-gjs">
+function get_stdin(): Gio.InputStream {
+    // Gjs wrapper for g_application_command_line_get_stdin()
+}
+  </code></synopsis>
+  <p>Gets the stdin of the invoking process.</p>  <p>The <link xref="Gio.InputStream"/> can be used to read data passed to the standard
+input of the invoking process.
+This doesn't work on all platforms.  Presently, it is only available
+on UNIX when using a DBus daemon capable of passing file descriptors.
+If stdin is not available then <code>null</code> will be returned.  In the
+future, support may be expanded to other platforms.</p>  <p>You must only call this function once per commandline invocation.</p>
+  <p>Since 2.34</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

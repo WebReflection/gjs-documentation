@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="Gio.FileInfo.set_attribute_int64"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.FileInfo" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_file_info_set_attribute_int64</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>attribute</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>attr_value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.FileInfo.prototype.set_attribute_int64</title>
+  <synopsis><code mime="text/x-gjs">
+function set_attribute_int64(attribute: String, attr_value: Number): void {
+    // Gjs wrapper for g_file_info_set_attribute_int64()
+}
+  </code></synopsis>
+  <p>Sets the <code>attribute</code> to contain the given <code>attr_value</code>,
+if possible.</p>
+
+<terms>
+<item>
+<title><code>attribute</code></title>
+  <p>attribute name to set.</p>
+</item>
+<item>
+<title><code>attr_value</code></title>
+  <p>int64 value to set attribute to.</p>
+</item>
+</terms>
+
+</page>

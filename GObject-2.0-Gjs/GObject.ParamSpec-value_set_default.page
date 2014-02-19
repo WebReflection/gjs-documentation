@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page id="GObject.ParamSpec-value_set_default"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.ParamSpec" group="vfunc" type="guide"/>
+  </info>
+  <title>GObject.ParamSpec::value_set_default</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_value_set_default(value: GObject.Value): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>value</code></title>
+
+</item>
+</terms>
+
+</page>

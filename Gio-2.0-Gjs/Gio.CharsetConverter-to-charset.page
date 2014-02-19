@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.CharsetConverter-to-charset"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.CharsetConverter" group="property" type="guide"/>
+    <title type="link" role="topic">to-charset</title>
+  </info>
+  <title>Gio.CharsetConverter.to_charset</title>
+  <synopsis><code mime="text/x-gjs">
+CharsetConverter.to_charset: String (Read / Write / Construct Only)
+  </code></synopsis>
+
+
+</page>

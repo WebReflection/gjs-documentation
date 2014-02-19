@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="GObject.TypePluginCompleteInterfaceInfo"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>GObject.TypePluginCompleteInterfaceInfo</title>
+  <synopsis><code mime="text/x-gjs">
+function onTypePluginCompleteInterfaceInfo(plugin: GObject.TypePlugin, instance_type: GType, interface_type: GType, info: GObject.InterfaceInfo): void {
+}
+  </code></synopsis>
+  <p>The type of the @complete_interface_info function of <link xref="GObject.TypePluginClass"/>.</p>
+
+<terms>
+<item>
+<title><code>plugin</code></title>
+  <p>the <link xref="GObject.TypePlugin"/></p>
+</item>
+<item>
+<title><code>instance_type</code></title>
+  <p>the <link xref="GLib.Type"/> of an instantiable type to which the interface
+ is added</p>
+</item>
+<item>
+<title><code>interface_type</code></title>
+  <p>the <link xref="GLib.Type"/> of the interface whose info is completed</p>
+</item>
+<item>
+<title><code>info</code></title>
+  <p>the <link xref="GObject.InterfaceInfo"/> to fill in</p>
+</item>
+</terms>
+
+</page>

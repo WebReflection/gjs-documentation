@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="Gio.ProxyAddressEnumerator-default-port"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.ProxyAddressEnumerator" group="property" type="guide"/>
+    <title type="link" role="topic">default-port</title>
+  </info>
+  <title>Gio.ProxyAddressEnumerator.default_port</title>
+  <synopsis><code mime="text/x-gjs">
+ProxyAddressEnumerator.default_port: Number (Read / Write / Construct Only)
+  </code></synopsis>
+  <p>The default port to use if <link xref="Gio.uri"/> does not
+specify one.</p>
+  <p>Since 2.38</p>
+</page>

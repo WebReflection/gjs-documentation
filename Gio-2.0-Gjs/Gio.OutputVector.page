@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="Gio.OutputVector"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>Gio.OutputVector</title>
+  <synopsis><code>
+const Gio = imports.gi.Gio;
+
+let outputVector = new Gio.OutputVector({
+    <link xref='Gio.OutputVector-size'>size</link>: value
+});
+  </code></synopsis>
+  <p>Structure used for scatter/gather data output.
+You generally pass in an array of <link xref="Gio.OutputVector"/>&lt;!-- --&gt;s
+and the operation will use all the buffers as if they were
+one buffer.</p>
+  <p>Since 2.22</p>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

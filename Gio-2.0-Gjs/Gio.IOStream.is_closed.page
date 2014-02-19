@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.IOStream.is_closed"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.IOStream" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_io_stream_is_closed</api:name>
+    </api:function>
+  </info>
+  <title>Gio.IOStream.prototype.is_closed</title>
+  <synopsis><code mime="text/x-gjs">
+function is_closed(): Boolean {
+    // Gjs wrapper for g_io_stream_is_closed()
+}
+  </code></synopsis>
+  <p>Checks if a stream is closed.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

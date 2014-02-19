@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<page id="Gio.ActionEntry-state"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.ActionEntry" group="field" type="guide"/>
+    <title type="link" role="topic">state</title>
+  </info>
+  <title>Gio.ActionEntry.state</title>
+  <synopsis><code mime="text/x-gjs">
+ActionEntry.state: String (Read)
+  </code></synopsis>
+  <p>the initial state for this action, given in GVariant text
+        format.  The state is parsed with no extra type information,
+        so type tags must be added to the string if they are
+        necessary.</p>
+
+</page>

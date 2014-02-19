@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.SettingsSchema.get_id"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.SettingsSchema" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_settings_schema_get_id</api:name>
+    </api:function>
+  </info>
+  <title>Gio.SettingsSchema.prototype.get_id</title>
+  <synopsis><code mime="text/x-gjs">
+function get_id(): String {
+    // Gjs wrapper for g_settings_schema_get_id()
+}
+  </code></synopsis>
+  <p>Get the ID of <code>schema</code>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

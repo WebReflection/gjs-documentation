@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<page id="Gio.SocketListener.add_address"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.SocketListener" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_socket_listener_add_address</api:name>
+      <api:arg>
+        <api:type>Gio.SocketAddress</api:type>
+        <api:name>address</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.SocketType</api:type>
+        <api:name>type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.SocketProtocol</api:type>
+        <api:name>protocol</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Object</api:type>
+        <api:name>source_object</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.SocketListener.prototype.add_address</title>
+  <synopsis><code mime="text/x-gjs">
+function add_address(address: Gio.SocketAddress, type: Gio.SocketType, protocol: Gio.SocketProtocol, source_object: GObject.Object): [ok: Boolean, effective_address: Gio.SocketAddress] {
+    // Gjs wrapper for g_socket_listener_add_address()
+}
+  </code></synopsis>
+  <p>Creates a socket of type <code>type</code> and protocol <code>protocol</code>, binds
+it to <code>address</code> and adds it to the set of sockets we're accepting
+sockets from.</p>  <p>Note that adding an IPv6 address, depending on the platform,
+may or may not result in a listener that also accepts IPv4
+connections.  For more deterministic behavior, see
+<link xref="Gio.add_inet_port"/>.</p>  <p><code>source_object</code> will be passed out in the various calls
+to accept to identify this particular source, which is
+useful if you're listening on multiple addresses and do
+different things depending on what address is connected to.</p>  <p>If successful and <code>effective_address</code> is non-<code>null</code> then it will
+be set to the address that the binding actually occurred at.  This
+is helpful for determining the port number that was used for when
+requesting a binding to port 0 (ie: "any port").  This address, if
+requested, belongs to the caller and must be freed.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>address</code></title>
+  <p>a <link xref="Gio.SocketAddress"/></p>
+</item>
+<item>
+<title><code>type</code></title>
+  <p>a <link xref="Gio.SocketType"/></p>
+</item>
+<item>
+<title><code>protocol</code></title>
+  <p>a <link xref="Gio.SocketProtocol"/></p>
+</item>
+<item>
+<title><code>source_object</code></title>
+  <p>Optional <link xref="GObject.Object"/> identifying this source</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+<item>
+<title><code>effective_address</code></title>
+  <p>location to store the address that was bound to, or <code>null</code>.</p>
+</item>
+</terms>
+
+</page>

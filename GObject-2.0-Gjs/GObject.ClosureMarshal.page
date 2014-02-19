@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<page id="GObject.ClosureMarshal"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>GObject.ClosureMarshal</title>
+  <synopsis><code mime="text/x-gjs">
+function onClosureMarshal(closure: GObject.Closure, return_value: GObject.Value, param_values: Array(GObject.Value), invocation_hint: gpointer, marshal_data: gpointer): void {
+}
+  </code></synopsis>
+  <p>The type used for marshaller functions.</p>
+
+<terms>
+<item>
+<title><code>closure</code></title>
+  <p>the <link xref="GObject.Closure"/> to which the marshaller belongs</p>
+</item>
+<item>
+<title><code>return_value</code></title>
+  <p>a <link xref="GObject.Value"/> to store the return
+ value. May be <code>null</code> if the callback of <code>closure</code> doesn't return a
+ value.</p>
+</item>
+<item>
+<title><code>param_values</code></title>
+  <p>an array of
+ <link xref="GObject.Value"/>&lt;!-- --&gt;s holding the arguments on which to invoke the
+ callback of <code>closure</code></p>
+</item>
+<item>
+<title><code>invocation_hint</code></title>
+  <p>the invocation hint given as the
+ last argument to <link xref="GObject.Closure.invoke"/></p>
+</item>
+<item>
+<title><code>marshal_data</code></title>
+  <p>additional data specified when
+ registering the marshaller, see <link xref="GObject.set_marshal"/> and
+ <link xref="GObject.set_meta_marshal"/></p>
+</item>
+</terms>
+
+</page>

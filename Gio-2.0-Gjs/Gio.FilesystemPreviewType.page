@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<page id="Gio.FilesystemPreviewType"
+      type="topic"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Gio.FilesystemPreviewType</title>
+  <p>Indicates a hint from the file system whether files should be
+previewed in a file manager. Returned as the value of the key
+#G_FILE_ATTRIBUTE_FILESYSTEM_USE_PREVIEW.</p>
+
+<terms>
+<item>
+<title><code>FilesystemPreviewType.IF_ALWAYS</code></title>
+  <p>Only preview files if user has explicitly requested it.</p>
+</item>
+<item>
+<title><code>FilesystemPreviewType.IF_LOCAL</code></title>
+  <p>Preview files if user has requested preview of "local" files.</p>
+</item>
+<item>
+<title><code>FilesystemPreviewType.NEVER</code></title>
+  <p>Never preview files.</p>
+</item>
+</terms>
+
+</page>

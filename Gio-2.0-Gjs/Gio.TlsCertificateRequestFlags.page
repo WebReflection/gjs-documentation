@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<page id="Gio.TlsCertificateRequestFlags"
+      type="topic"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Gio.TlsCertificateRequestFlags</title>
+  <p>Flags for <link xref="Gio.request_certificate"/>,
+<link xref="Gio.request_certificate_async"/>, and
+<link xref="Gio.invoke_request_certificate"/>.</p>
+  <p>Since 2.40</p>
+<terms>
+<item>
+<title><code>TlsCertificateRequestFlags.NONE</code></title>
+  <p>No flags</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="Gio.TlsConnection.get_require_close_notify"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.TlsConnection" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_tls_connection_get_require_close_notify</api:name>
+    </api:function>
+  </info>
+  <title>Gio.TlsConnection.prototype.get_require_close_notify</title>
+  <synopsis><code mime="text/x-gjs">
+function get_require_close_notify(): Boolean {
+    // Gjs wrapper for g_tls_connection_get_require_close_notify()
+}
+  </code></synopsis>
+  <p>Tests whether or not <code>conn</code> expects a proper TLS close notification
+when the connection is closed. See
+<link xref="Gio.set_require_close_notify"/> for details.</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

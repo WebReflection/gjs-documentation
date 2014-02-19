@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="GLib.TestFileType"
+      type="topic"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>GLib.TestFileType</title>
+  <p>The type of file to return the filename for, when used with
+<link xref="GLib.test_build_filename"/>.</p>  <p>These two options correspond rather directly to the 'dist' and
+'built' terminology that automake uses and are explicitly used to
+distinguish between the 'srcdir' and 'builddir' being separate.  All
+files in your project should either be dist (in the
+`DIST_EXTRA` or `dist_schema_DATA`
+sense, in which case they will always be in the srcdir) or built (in
+the `BUILT_SOURCES` sense, in which case they will
+always be in the builddir).</p>  <p>Note: as a general rule of automake, files that are generated only as
+part of the build-from-git process (but then are distributed with the
+tarball) always go in srcdir (even if doing a srcdir != builddir
+build from git) and are considered as distributed files.</p>
+  <p>Since 2.38</p>
+<terms>
+<item>
+<title><code>TestFileType.DIST</code></title>
+  <p>a file that was included in the distribution tarball</p>
+</item>
+<item>
+<title><code>TestFileType.BUILT</code></title>
+  <p>a file that was built on the compiling machine</p>
+</item>
+</terms>
+
+</page>

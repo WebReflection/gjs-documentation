@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.Emblem-icon"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Emblem" group="property" type="guide"/>
+    <title type="link" role="topic">icon</title>
+  </info>
+  <title>Gio.Emblem.icon</title>
+  <synopsis><code mime="text/x-gjs">
+Emblem.icon: GObject.Object (Read / Write / Construct Only)
+  </code></synopsis>
+
+
+</page>

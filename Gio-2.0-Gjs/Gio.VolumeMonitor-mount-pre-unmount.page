@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Gio.VolumeMonitor-mount-pre-unmount"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.VolumeMonitor" group="signal" type="guide"/>
+    <title type="link" role="topic">mount-pre-unmount</title>
+  </info>
+  <title>Gio.VolumeMonitor::mount-pre-unmount</title>
+  <synopsis><code mime="text/x-gjs">
+connect('mount-pre-unmount', function (volumeMonitor, mount: Gio.Mount, ): void);
+  </code></synopsis>
+  <p>Emitted when a mount is about to be removed.</p>
+
+<terms>
+<item>
+<title><code>volumeMonitor</code></title>
+<p>instance of <link xref="Gio.VolumeMonitor"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>mount</code></title>
+  <p>a <link xref="Gio.Mount"/> that is being unmounted.</p>
+</item>
+</terms>
+
+</page>

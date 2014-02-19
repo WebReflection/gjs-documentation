@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusAuthObserver"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>Gio.DBusAuthObserver</title>
+  <synopsis><code>
+const Gio = imports.gi.Gio;
+
+let dBusAuthObserver = new Gio.DBusAuthObserver();
+  </code></synopsis>
+  <p>The <link xref="Gio.DBusAuthObserver"/> type provides a mechanism for participating
+in how a <link xref="Gio.DBusServer"/> (or a <link xref="Gio.DBusConnection"/>) authenticates remote
+peers. Simply instantiate a <link xref="Gio.DBusAuthObserver"/> and connect to the
+signals you are interested in. Note that new signals may be added
+in the future</p>  <p>## Controlling Authentication # {#auth-observer}</p>  <p>For example, if you only want to allow D-Bus connections from
+processes owned by the same uid as the server, you would use a
+signal handler like the following:</p>  <p>|[
+static gboolean
+on_authorize_authenticated_peer (GDBusAuthObserver *observer,
+                                 GIOStream         *stream,
+                                 GCredentials      *credentials,
+                                 gpointer           user_data)
+{
+  gboolean authorized;</p>  <p>  authorized = FALSE;
+  if (credentials != NULL)
+    {
+      GCredentials *own_credentials;
+      own_credentials = g_credentials_new ();
+      if (g_credentials_is_same_user (credentials, own_credentials, NULL))
+        authorized = TRUE;
+      g_object_unref (own_credentials);
+    }</p>  <p>  return authorized;
+}
+]|</p>
+  <p>Since 2.26</p>
+  <synopsis>
+    <title>Hierarchy</title>
+    <tree>
+      <item>
+        <code>GObject.Object</code>
+      <item>
+        <code>Gio.DBusAuthObserver</code>
+      </item>
+      </item>
+    </tree>
+  </synopsis>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="property" style="linklist">
+    <title>Properties</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="signal" style="linklist">
+    <title>Signals</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="vfunc" style="linklist">
+    <title>Virtual functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

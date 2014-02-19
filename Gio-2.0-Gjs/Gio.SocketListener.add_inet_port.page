@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<page id="Gio.SocketListener.add_inet_port"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.SocketListener" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_socket_listener_add_inet_port</api:name>
+      <api:arg>
+        <api:type>guint16</api:type>
+        <api:name>port</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Object</api:type>
+        <api:name>source_object</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.SocketListener.prototype.add_inet_port</title>
+  <synopsis><code mime="text/x-gjs">
+function add_inet_port(port: guint16, source_object: GObject.Object): Boolean {
+    // Gjs wrapper for g_socket_listener_add_inet_port()
+}
+  </code></synopsis>
+  <p>Helper function for <link xref="Gio.SocketListener.add_address"/> that
+creates a TCP/IP socket listening on IPv4 and IPv6 (if
+supported) on the specified port on all interfaces.</p>  <p><code>source_object</code> will be passed out in the various calls
+to accept to identify this particular source, which is
+useful if you're listening on multiple addresses and do
+different things depending on what address is connected to.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>port</code></title>
+  <p>an IP port number (non-zero)</p>
+</item>
+<item>
+<title><code>source_object</code></title>
+  <p>Optional <link xref="GObject.Object"/> identifying this source</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

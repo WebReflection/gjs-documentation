@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<page id="GObject.type_set_qdata"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_type_set_qdata</api:name>
+      <api:arg>
+        <api:type>GType</api:type>
+        <api:name>type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.Quark</api:type>
+        <api:name>quark</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>data</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.type_set_qdata</title>
+  <synopsis><code mime="text/x-gjs">
+function type_set_qdata(type: GType, quark: GLib.Quark, data: gpointer): void {
+    // Gjs wrapper for g_type_set_qdata()
+}
+  </code></synopsis>
+  <p>Attaches arbitrary data to a type.</p>
+
+<terms>
+<item>
+<title><code>type</code></title>
+  <p>a <link xref="GLib.Type"/></p>
+</item>
+<item>
+<title><code>quark</code></title>
+  <p>a <link xref="GLib.Quark"/> id to identify the data</p>
+</item>
+<item>
+<title><code>data</code></title>
+  <p>the data</p>
+</item>
+</terms>
+
+</page>

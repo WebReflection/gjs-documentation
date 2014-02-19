@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.Settings.list_relocatable_schemas"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Settings" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(String)</api:type>
+      </api:returns>
+      <api:name>g_settings_list_relocatable_schemas</api:name>
+    </api:function>
+  </info>
+  <title>Gio.Settings.list_relocatable_schemas</title>
+  <synopsis><code mime="text/x-gjs">
+function list_relocatable_schemas(): Array(String) {
+    // Gjs wrapper for g_settings_list_relocatable_schemas()
+}
+  </code></synopsis>
+
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

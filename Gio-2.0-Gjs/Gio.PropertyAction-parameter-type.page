@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="Gio.PropertyAction-parameter-type"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.PropertyAction" group="property" type="guide"/>
+    <title type="link" role="topic">parameter-type</title>
+  </info>
+  <title>Gio.PropertyAction.parameter_type</title>
+  <synopsis><code mime="text/x-gjs">
+PropertyAction.parameter_type: GLib.VariantType (Read)
+  </code></synopsis>
+  <p>The type of the parameter that must be given when activating the
+action.</p>
+  <p>Since 2.38</p>
+</page>

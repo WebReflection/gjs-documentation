@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="GLib.HookCompareFunc"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>GLib.HookCompareFunc</title>
+  <synopsis><code mime="text/x-gjs">
+function onHookCompareFunc(new_hook: GLib.Hook, sibling: GLib.Hook): Number {
+}
+  </code></synopsis>
+  <p>Defines the type of function used to compare <link xref="GLib.Hook"/> elements in
+<link xref="GLib.insert_sorted"/>.</p>
+
+<terms>
+<item>
+<title><code>new_hook</code></title>
+  <p>the <link xref="GLib.Hook"/> being inserted</p>
+</item>
+<item>
+<title><code>sibling</code></title>
+  <p>the <link xref="GLib.Hook"/> to compare with <code>new_hook</code></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

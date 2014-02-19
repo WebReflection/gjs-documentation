@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<page id="Gio.Settings.delay"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Settings" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_settings_delay</api:name>
+    </api:function>
+  </info>
+  <title>Gio.Settings.prototype.delay</title>
+  <synopsis><code mime="text/x-gjs">
+function delay(): void {
+    // Gjs wrapper for g_settings_delay()
+}
+  </code></synopsis>
+  <p>Changes the <link xref="Gio.Settings"/> object into 'delay-apply' mode. In this
+mode, changes to <code>settings</code> are not immediately propagated to the
+backend, but kept locally until <link xref="Gio.Settings.apply"/> is called.</p>
+  <p>Since 2.26</p>
+
+</page>

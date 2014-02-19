@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="GLib.get_monotonic_time"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number</api:type>
+      </api:returns>
+      <api:name>g_get_monotonic_time</api:name>
+    </api:function>
+  </info>
+  <title>GLib.get_monotonic_time</title>
+  <synopsis><code mime="text/x-gjs">
+function get_monotonic_time(): Number {
+    // Gjs wrapper for g_get_monotonic_time()
+}
+  </code></synopsis>
+  <p>Queries the system monotonic time, if available.</p>  <p>On POSIX systems with clock_gettime() and `CLOCK_MONOTONIC` this call
+is a very shallow wrapper for that.  Otherwise, we make a best effort
+that probably involves returning the wall clock time (with at least
+microsecond accuracy, subject to the limitations of the OS kernel).</p>  <p>It's important to note that POSIX `CLOCK_MONOTONIC` does
+not count time spent while the machine is suspended.</p>  <p>On Windows, "limitations of the OS kernel" is a rather substantial
+statement.  Depending on the configuration of the system, the wall
+clock time is updated as infrequently as 64 times a second (which
+is approximately every 16ms). Also, on XP (but not on Vista or later)
+the monotonic clock is locally monotonic, but may differ in exact
+value between processes due to timer wrap handling.</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

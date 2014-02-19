@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.MountOperation.get_choice"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.MountOperation" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number</api:type>
+      </api:returns>
+      <api:name>g_mount_operation_get_choice</api:name>
+    </api:function>
+  </info>
+  <title>Gio.MountOperation.prototype.get_choice</title>
+  <synopsis><code mime="text/x-gjs">
+function get_choice(): Number {
+    // Gjs wrapper for g_mount_operation_get_choice()
+}
+  </code></synopsis>
+  <p>Gets a choice from the mount operation.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<page id="Gio.AppInfo-can_delete"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.AppInfo" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.AppInfo::can_delete</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_can_delete(): Boolean {
+}
+  </code></synopsis>
+  <p>Obtains the information whether the <link xref="Gio.AppInfo"/> can be deleted.
+See <link xref="Gio.AppInfo.delete"/>.</p>
+  <p>Since 2.20</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if <code>appinfo</code> can be deleted</p>
+</item>
+</terms>
+
+</page>

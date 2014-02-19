@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.InputStream.has_pending"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.InputStream" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_input_stream_has_pending</api:name>
+    </api:function>
+  </info>
+  <title>Gio.InputStream.prototype.has_pending</title>
+  <synopsis><code mime="text/x-gjs">
+function has_pending(): Boolean {
+    // Gjs wrapper for g_input_stream_has_pending()
+}
+  </code></synopsis>
+  <p>Checks if an input stream has pending actions.</p>
+
+<terms>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

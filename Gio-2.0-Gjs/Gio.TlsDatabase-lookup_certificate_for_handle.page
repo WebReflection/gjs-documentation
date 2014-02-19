@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<page id="Gio.TlsDatabase-lookup_certificate_for_handle"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.TlsDatabase" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.TlsDatabase::lookup_certificate_for_handle</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_lookup_certificate_for_handle(handle: String, interaction: Gio.TlsInteraction, flags: Gio.TlsDatabaseLookupFlags, cancellable: Gio.Cancellable): Gio.TlsCertificate {
+}
+  </code></synopsis>
+  <p>Lookup a certificate by its handle.</p>  <p>The handle should have been created by calling
+<link xref="Gio.TlsDatabase.create_certificate_handle"/> on a <link xref="Gio.TlsDatabase"/> object of
+the same TLS backend. The handle is designed to remain valid across
+instantiations of the database.</p>  <p>If the handle is no longer valid, or does not point to a certificate in
+this database, then <code>null</code> will be returned.</p>  <p>This function can block, use <link xref="Gio.TlsDatabase.lookup_certificate_for_handle_async"/> to perform
+the lookup operation asynchronously.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>handle</code></title>
+  <p>a certificate handle</p>
+</item>
+<item>
+<title><code>interaction</code></title>
+  <p>used to interact with the user if necessary</p>
+</item>
+<item>
+<title><code>flags</code></title>
+  <p>Flags which affect the lookup.</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>a <link xref="Gio.Cancellable"/>, or <code>null</code></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a newly allocated
+<link xref="Gio.TlsCertificate"/>, or <code>null</code>. Use <link xref="GObject.unref"/> to release the certificate.</p>
+</item>
+</terms>
+
+</page>

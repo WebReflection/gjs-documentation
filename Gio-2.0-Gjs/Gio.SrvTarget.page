@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<page id="Gio.SrvTarget"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>Gio.SrvTarget</title>
+  <synopsis><code>
+const Gio = imports.gi.Gio;
+
+let srvTarget = new Gio.SrvTarget();
+  </code></synopsis>
+  <p>SRV (service) records are used by some network protocols to provide
+service-specific aliasing and load-balancing. For example, XMPP
+(Jabber) uses SRV records to locate the XMPP server for a domain;
+rather than connecting directly to "example.com" or assuming a
+specific server hostname like "xmpp.example.com", an XMPP client
+would look up the "xmpp-client" SRV record for "example.com", and
+then connect to whatever host was pointed to by that record.</p>  <p>You can use <link xref="Gio.Resolver.lookup_service"/> or
+<link xref="Gio.Resolver.lookup_service_async"/> to find the #GSrvTargets
+for a given service. However, if you are simply planning to connect
+to the remote service, you can use <link xref="Gio.NetworkService"/>'s
+<link xref="Gio.SocketConnectable"/> interface and not need to worry about
+<link xref="Gio.SrvTarget"/> at all.</p>
+
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

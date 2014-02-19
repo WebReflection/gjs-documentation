@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="GObject.ClosureNotifyData-notify"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.ClosureNotifyData" group="field" type="guide"/>
+    <title type="link" role="topic">notify</title>
+  </info>
+  <title>GObject.ClosureNotifyData.notify</title>
+  <synopsis><code mime="text/x-gjs">
+ClosureNotifyData.notify: GObject.ClosureNotify (Read)
+  </code></synopsis>
+
+
+</page>

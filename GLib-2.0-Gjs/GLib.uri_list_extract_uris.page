@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="GLib.uri_list_extract_uris"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(String)</api:type>
+      </api:returns>
+      <api:name>g_uri_list_extract_uris</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>uri_list</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.uri_list_extract_uris</title>
+  <synopsis><code mime="text/x-gjs">
+function uri_list_extract_uris(uri_list: String): Array(String) {
+    // Gjs wrapper for g_uri_list_extract_uris()
+}
+  </code></synopsis>
+  <p>Splits an URI list conforming to the text/uri-list
+mime type defined in RFC 2483 into individual URIs,
+discarding any comments. The URIs are not validated.</p>
+  <p>Since 2.6</p>
+<terms>
+<item>
+<title><code>uri_list</code></title>
+  <p>an URI list</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

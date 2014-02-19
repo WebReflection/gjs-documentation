@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="GLib.PtrArray-len"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.PtrArray" group="field" type="guide"/>
+    <title type="link" role="topic">len</title>
+  </info>
+  <title>GLib.PtrArray.len</title>
+  <synopsis><code mime="text/x-gjs">
+PtrArray.len: Number (Read / Write)
+  </code></synopsis>
+  <p>number of pointers in the array</p>
+
+</page>

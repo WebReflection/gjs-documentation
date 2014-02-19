@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<page id="GLib.String.erase"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.String" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.String</api:type>
+      </api:returns>
+      <api:name>g_string_erase</api:name>
+      <api:arg>
+        <api:type>gssize</api:type>
+        <api:name>pos</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gssize</api:type>
+        <api:name>len</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.String.prototype.erase</title>
+  <synopsis><code mime="text/x-gjs">
+function erase(pos: gssize, len: gssize): GLib.String {
+    // Gjs wrapper for g_string_erase()
+}
+  </code></synopsis>
+  <p>Removes <code>len</code> bytes from a <link xref="GLib.String"/>, starting at position <code>pos</code>.
+The rest of the <link xref="GLib.String"/> is shifted down to fill the gap.</p>
+
+<terms>
+<item>
+<title><code>pos</code></title>
+  <p>the position of the content to remove</p>
+</item>
+<item>
+<title><code>len</code></title>
+  <p>the number of bytes to remove, or -1 to remove all
+      following bytes</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

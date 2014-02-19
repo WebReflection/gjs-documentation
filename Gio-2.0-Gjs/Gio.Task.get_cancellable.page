@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.Task.get_cancellable"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Task" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.Cancellable</api:type>
+      </api:returns>
+      <api:name>g_task_get_cancellable</api:name>
+    </api:function>
+  </info>
+  <title>Gio.Task.prototype.get_cancellable</title>
+  <synopsis><code mime="text/x-gjs">
+function get_cancellable(): Gio.Cancellable {
+    // Gjs wrapper for g_task_get_cancellable()
+}
+  </code></synopsis>
+  <p>Gets <code>task</code>'s <link xref="Gio.Cancellable"/></p>
+  <p>Since 2.36</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

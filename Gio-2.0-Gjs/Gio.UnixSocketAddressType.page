@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<page id="Gio.UnixSocketAddressType"
+      type="topic"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Gio.UnixSocketAddressType</title>
+  <p>The type of name used by a <link xref="Gio.UnixSocketAddress"/>.
+<link xref="Gio.UnixSocketAddressType"/>.path indicates a traditional unix domain
+socket bound to a filesystem path. <link xref="Gio.UnixSocketAddressType"/>.anonymous
+indicates a socket not bound to any name (eg, a client-side socket,
+or a socket created with socketpair()).</p>  <p>For abstract sockets, there are two incompatible ways of naming
+them; the man pages suggest using the entire &lt;literal&gt;struct
+sockaddr_un&lt;/literal&gt; as the name, padding the unused parts of the
+%sun_path field with zeroes; this corresponds to
+<link xref="Gio.UnixSocketAddressType"/>.abstract_padded. However, many programs
+instead just use a portion of %sun_path, and pass an appropriate
+smaller length to bind() or connect(). This is
+<link xref="Gio.UnixSocketAddressType"/>.abstract.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>UnixSocketAddressType.INVALID</code></title>
+  <p>invalid</p>
+</item>
+<item>
+<title><code>UnixSocketAddressType.ANONYMOUS</code></title>
+  <p>anonymous</p>
+</item>
+<item>
+<title><code>UnixSocketAddressType.PATH</code></title>
+  <p>a filesystem path</p>
+</item>
+<item>
+<title><code>UnixSocketAddressType.ABSTRACT</code></title>
+  <p>an abstract name</p>
+</item>
+<item>
+<title><code>UnixSocketAddressType.ABSTRACT_PADDED</code></title>
+  <p>an abstract name, 0-padded
+  to the full length of a unix socket name</p>
+</item>
+</terms>
+
+</page>

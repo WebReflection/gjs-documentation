@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusError.encode_gerror"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_dbus_error_encode_gerror</api:name>
+      <api:arg>
+        <api:type>GLib.Error</api:type>
+        <api:name>error</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.encode_gerror</title>
+  <synopsis><code mime="text/x-gjs">
+function encode_gerror(error: GLib.Error): String {
+    // Gjs wrapper for g_dbus_error_encode_gerror()
+}
+  </code></synopsis>
+  <p>Creates a D-Bus error name to use for <code>error</code>. If <code>error</code> matches
+a registered error (cf. <link xref="Gio.dbus_error_register_error"/>), the corresponding
+D-Bus error name will be returned.</p>  <p>Otherwise the a name of the form
+`org.gtk.GDBus.UnmappedGError.Quark._ESCAPED_QUARK_NAME.Code_ERROR_CODE`
+will be used. This allows other GDBus applications to map the error
+on the wire back to a <link xref="GLib.Error"/> using <link xref="Gio.dbus_error_new_for_dbus_error"/>.</p>  <p>This function is typically only used in object mappings to put a
+<link xref="GLib.Error"/> on the wire. Regular applications should not use it.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>error</code></title>
+  <p>A <link xref="GLib.Error"/>.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

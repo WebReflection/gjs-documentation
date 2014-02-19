@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="GLib.VariantType.string_is_valid"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.VariantType" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_variant_type_string_is_valid</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>type_string</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.VariantType.string_is_valid</title>
+  <synopsis><code mime="text/x-gjs">
+function string_is_valid(type_string: String): Boolean {
+    // Gjs wrapper for g_variant_type_string_is_valid()
+}
+  </code></synopsis>
+  <p>Checks if <code>type_string</code> is a valid GVariant type string.  This call is
+equivalent to calling <link xref="GLib.variant_type_string_scan"/> and confirming
+that the following character is a nul terminator.</p>
+
+<terms>
+<item>
+<title><code>type_string</code></title>
+  <p>a pointer to any string</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

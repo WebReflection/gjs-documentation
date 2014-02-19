@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<page id="GObject.signal_lookup"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number</api:type>
+      </api:returns>
+      <api:name>g_signal_lookup</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GType</api:type>
+        <api:name>itype</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.signal_lookup</title>
+  <synopsis><code mime="text/x-gjs">
+function signal_lookup(name: String, itype: GType): Number {
+    // Gjs wrapper for g_signal_lookup()
+}
+  </code></synopsis>
+  <p>Given the name of the signal and the type of object it connects to, gets
+the signal's identifying integer. Emitting the signal by number is
+somewhat faster than using the name each time.</p>  <p>Also tries the ancestors of the given type.</p>  <p>See <link xref="GObject.signal_new"/> for details on allowed signal names.</p>
+
+<terms>
+<item>
+<title><code>name</code></title>
+  <p>the signal's name.</p>
+</item>
+<item>
+<title><code>itype</code></title>
+  <p>the type that the signal operates on.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusMethodInvocation.return_value"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusMethodInvocation" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_dbus_method_invocation_return_value</api:name>
+      <api:arg>
+        <api:type>GLib.Variant</api:type>
+        <api:name>parameters</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DBusMethodInvocation.prototype.return_value</title>
+  <synopsis><code mime="text/x-gjs">
+function return_value(parameters: GLib.Variant): void {
+    // Gjs wrapper for g_dbus_method_invocation_return_value()
+}
+  </code></synopsis>
+  <p>Finishes handling a D-Bus method call by returning <code>parameters</code>.
+If the <code>parameters</code> GVariant is floating, it is consumed.</p>  <p>It is an error if <code>parameters</code> is not of the right format.</p>  <p>This method will free <code>invocation</code>, you cannot use it afterwards.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>parameters</code></title>
+  <p>A <link xref="GLib.Variant"/> tuple with out parameters for the method or <code>null</code> if not passing any parameters.</p>
+</item>
+</terms>
+
+</page>

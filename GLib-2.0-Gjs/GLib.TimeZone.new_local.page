@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="GLib.TimeZone.new_local"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.TimeZone" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.TimeZone</api:type>
+      </api:returns>
+      <api:name>g_time_zone_new_local</api:name>
+    </api:function>
+  </info>
+  <title>GLib.TimeZone.new_local</title>
+  <synopsis><code mime="text/x-gjs">
+function new_local(): GLib.TimeZone {
+    // Gjs wrapper for g_time_zone_new_local()
+}
+  </code></synopsis>
+  <p>Creates a <link xref="GLib.TimeZone"/> corresponding to local time.  The local time
+zone may change between invocations to this function; for example,
+if the system administrator changes it.</p>  <p>This is equivalent to calling <link xref="GLib.new"/> with the value of
+the `TZ` environment variable (including the possibility of <code>null</code>).</p>  <p>You should release the return value by calling <link xref="GLib.unref"/>
+when you are done with it.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<page id="Gio.NetworkMonitor-can_reach"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.NetworkMonitor" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.NetworkMonitor::can_reach</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_can_reach(connectable: Gio.SocketConnectable, cancellable: Gio.Cancellable): Boolean {
+}
+  </code></synopsis>
+  <p>Attempts to determine whether or not the host pointed to by
+<code>connectable</code> can be reached, without actually trying to connect to
+it.</p>  <p>This may return <code>true</code> even when <link xref="Gio.network-available"/>
+is <code>false</code>, if, for example, <code>monitor</code> can determine that
+<code>connectable</code> refers to a host on a local network.</p>  <p>If <code>monitor</code> believes that an attempt to connect to <code>connectable</code>
+will succeed, it will return <code>true</code>. Otherwise, it will return
+<code>false</code> and set @error to an appropriate error (such as
+<link xref="Gio.IOErrorEnum"/>.host_unreachable).</p>  <p>Note that although this does not attempt to connect to
+<code>connectable</code>, it may still block for a brief period of time (eg,
+trying to do multicast DNS on the local network), so if you do not
+want to block, you should use <link xref="Gio.NetworkMonitor.can_reach_async"/>.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>connectable</code></title>
+  <p>a <link xref="Gio.SocketConnectable"/></p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>a <link xref="Gio.Cancellable"/>, or <code>null</code></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if <code>connectable</code> is reachable, <code>false</code> if not.</p>
+</item>
+</terms>
+
+</page>

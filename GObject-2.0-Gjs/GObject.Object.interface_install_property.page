@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<page id="GObject.Object.interface_install_property"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.Object" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_object_interface_install_property</api:name>
+      <api:arg>
+        <api:type>gpointer</api:type>
+        <api:name>g_iface</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.ParamSpec</api:type>
+        <api:name>pspec</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.Object.interface_install_property</title>
+  <synopsis><code mime="text/x-gjs">
+function interface_install_property(g_iface: gpointer, pspec: GObject.ParamSpec): void {
+    // Gjs wrapper for g_object_interface_install_property()
+}
+  </code></synopsis>
+  <p>Add a property to an interface; this is only useful for interfaces
+that are added to GObject-derived types. Adding a property to an
+interface forces all objects classes with that interface to have a
+compatible property. The compatible property could be a newly
+created <link xref="GObject.ParamSpec"/>, but normally
+<link xref="GObject.override_property"/> will be used so that the object
+class only needs to provide an implementation and inherits the
+property description, default value, bounds, and so forth from the
+interface property.</p>  <p>This function is meant to be called from the interface's default
+vtable initialization function (the @class_init member of
+<link xref="GObject.TypeInfo"/>.) It must not be called after after @class_init has
+been called for any object types implementing this interface.</p>
+  <p>Since 2.4</p>
+<terms>
+<item>
+<title><code>g_iface</code></title>
+  <p>any interface vtable for the interface, or the default
+ vtable for the interface.</p>
+</item>
+<item>
+<title><code>pspec</code></title>
+  <p>the <link xref="GObject.ParamSpec"/> for the new property</p>
+</item>
+</terms>
+
+</page>

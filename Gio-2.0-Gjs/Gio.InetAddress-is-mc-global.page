@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="Gio.InetAddress-is-mc-global"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.InetAddress" group="property" type="guide"/>
+    <title type="link" role="topic">is-mc-global</title>
+  </info>
+  <title>Gio.InetAddress.is_mc_global</title>
+  <synopsis><code mime="text/x-gjs">
+InetAddress.is_mc_global: Boolean (Read)
+  </code></synopsis>
+  <p>Whether this is a global multicast address.
+See <link xref="Gio.InetAddress.get_is_mc_global"/>.</p>
+  <p>Since 2.22</p>
+</page>

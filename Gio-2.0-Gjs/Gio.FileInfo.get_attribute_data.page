@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<page id="Gio.FileInfo.get_attribute_data"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.FileInfo" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_file_info_get_attribute_data</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>attribute</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.FileInfo.prototype.get_attribute_data</title>
+  <synopsis><code mime="text/x-gjs">
+function get_attribute_data(attribute: String): [ok: Boolean, type: Gio.FileAttributeType, value_pp: gpointer, status: Gio.FileAttributeStatus] {
+    // Gjs wrapper for g_file_info_get_attribute_data()
+}
+  </code></synopsis>
+  <p>Gets the attribute type, value and status for an attribute key.</p>
+
+<terms>
+<item>
+<title><code>attribute</code></title>
+  <p>a file attribute key</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+<item>
+<title><code>type</code></title>
+  <p>return location for the attribute type, or <code>null</code></p>
+</item>
+<item>
+<title><code>value_pp</code></title>
+  <p>return location for the attribute value, or <code>null</code></p>
+</item>
+<item>
+<title><code>status</code></title>
+  <p>return location for the attribute status, or <code>null</code></p>
+</item>
+</terms>
+
+</page>

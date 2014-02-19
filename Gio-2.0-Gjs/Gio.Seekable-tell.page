@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page id="Gio.Seekable-tell"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Seekable" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.Seekable::tell</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_tell(): Number {
+}
+  </code></synopsis>
+  <p>Tells the current position within the stream.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the offset from the beginning of the buffer.</p>
+</item>
+</terms>
+
+</page>

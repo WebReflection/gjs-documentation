@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="GLib.MainContext.is_owner"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.MainContext" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_main_context_is_owner</api:name>
+    </api:function>
+  </info>
+  <title>GLib.MainContext.prototype.is_owner</title>
+  <synopsis><code mime="text/x-gjs">
+function is_owner(): Boolean {
+    // Gjs wrapper for g_main_context_is_owner()
+}
+  </code></synopsis>
+  <p>Determines whether this thread holds the (recursive)
+ownership of this <link xref="GLib.MainContext"/>. This is useful to
+know before waiting on another thread that may be
+blocking to get ownership of <code>context</code>.</p>
+  <p>Since 2.10</p>
+<terms>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

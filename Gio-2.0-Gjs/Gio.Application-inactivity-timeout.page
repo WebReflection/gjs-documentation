@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.Application-inactivity-timeout"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Application" group="property" type="guide"/>
+    <title type="link" role="topic">inactivity-timeout</title>
+  </info>
+  <title>Gio.Application.inactivity_timeout</title>
+  <synopsis><code mime="text/x-gjs">
+Application.inactivity_timeout: Number (Read / Write)
+  </code></synopsis>
+
+
+</page>

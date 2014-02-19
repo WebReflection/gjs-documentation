@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="GLib.MainLoop.is_running"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.MainLoop" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_main_loop_is_running</api:name>
+    </api:function>
+  </info>
+  <title>GLib.MainLoop.prototype.is_running</title>
+  <synopsis><code mime="text/x-gjs">
+function is_running(): Boolean {
+    // Gjs wrapper for g_main_loop_is_running()
+}
+  </code></synopsis>
+  <p>Checks to see if the main loop is currently being run via <link xref="GLib.run"/>.</p>
+
+<terms>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

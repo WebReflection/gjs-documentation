@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="GLib.Cond.signal"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Cond" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_cond_signal</api:name>
+    </api:function>
+  </info>
+  <title>GLib.Cond.prototype.signal</title>
+  <synopsis><code mime="text/x-gjs">
+function signal(): void {
+    // Gjs wrapper for g_cond_signal()
+}
+  </code></synopsis>
+  <p>If threads are waiting for <code>cond</code>, at least one of them is unblocked.
+If no threads are waiting for <code>cond</code>, this function has no effect.
+It is good practice to hold the same lock as the waiting thread
+while calling this function, though not required.</p>
+
+
+</page>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="GLib.Variant.get_size"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Variant" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>gsize</api:type>
+      </api:returns>
+      <api:name>g_variant_get_size</api:name>
+    </api:function>
+  </info>
+  <title>GLib.Variant.prototype.get_size</title>
+  <synopsis><code mime="text/x-gjs">
+function get_size(): gsize {
+    // Gjs wrapper for g_variant_get_size()
+}
+  </code></synopsis>
+  <p>Determines the number of bytes that would be required to store <code>value</code>
+with <link xref="GLib.store"/>.</p>  <p>If <code>value</code> has a fixed-sized type then this function always returned
+that fixed size.</p>  <p>In the case that <code>value</code> is already in serialised form or the size has
+already been calculated (ie: this function has been called before)
+then this function is O(1).  Otherwise, the size is calculated, an
+operation which is approximately O(n) in the number of values
+involved.</p>
+  <p>Since 2.24</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

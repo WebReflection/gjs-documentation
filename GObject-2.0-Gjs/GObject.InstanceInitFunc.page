@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="GObject.InstanceInitFunc"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>GObject.InstanceInitFunc</title>
+  <synopsis><code mime="text/x-gjs">
+function onInstanceInitFunc(instance: GObject.TypeInstance, g_class: gpointer): void {
+}
+  </code></synopsis>
+  <p>A callback function used by the type system to initialize a new
+instance of a type. This function initializes all instance members and
+allocates any resources required by it.
+Initialization of a derived instance involves calling all its parent
+types instance initializers, so the class member of the instance
+is altered during its initialization to always point to the class that
+belongs to the type the current initializer was introduced for.</p>
+
+<terms>
+<item>
+<title><code>instance</code></title>
+  <p>The instance to initialize.</p>
+</item>
+<item>
+<title><code>g_class</code></title>
+  <p>The class of the type the instance is created for.</p>
+</item>
+</terms>
+
+</page>

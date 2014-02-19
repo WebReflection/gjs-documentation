@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.ApplicationCommandLine-is-remote"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.ApplicationCommandLine" group="property" type="guide"/>
+    <title type="link" role="topic">is-remote</title>
+  </info>
+  <title>Gio.ApplicationCommandLine.is_remote</title>
+  <synopsis><code mime="text/x-gjs">
+ApplicationCommandLine.is_remote: Boolean (Read)
+  </code></synopsis>
+
+
+</page>

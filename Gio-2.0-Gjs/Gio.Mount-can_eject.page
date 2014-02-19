@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page id="Gio.Mount-can_eject"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Mount" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.Mount::can_eject</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_can_eject(): Boolean {
+}
+  </code></synopsis>
+  <p>Checks if <code>mount</code> can be eject.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if the <code>mount</code> can be ejected.</p>
+</item>
+</terms>
+
+</page>

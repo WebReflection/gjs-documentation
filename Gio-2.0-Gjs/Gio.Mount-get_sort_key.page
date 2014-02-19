@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page id="Gio.Mount-get_sort_key"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Mount" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.Mount::get_sort_key</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_get_sort_key(): String {
+}
+  </code></synopsis>
+  <p>Gets the sort key for <code>mount</code>, if any.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>Sorting key for <code>mount</code> or <code>null</code> if no such key is available.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,131 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusObjectManagerClient"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>Gio.DBusObjectManagerClient</title>
+  <synopsis><code>
+const Gio = imports.gi.Gio;
+
+let dBusObjectManagerClient = new Gio.DBusObjectManagerClient({
+    <link xref='Gio.DBusObjectManagerClient-bus-type'>bus_type</link>: value,
+    <link xref='Gio.DBusObjectManagerClient-connection'>connection</link>: value,
+    <link xref='Gio.DBusObjectManagerClient-flags'>flags</link>: value,
+    <link xref='Gio.DBusObjectManagerClient-get-proxy-type-destroy-notify'>get_proxy_type_destroy_notify</link>: value,
+    <link xref='Gio.DBusObjectManagerClient-get-proxy-type-func'>get_proxy_type_func</link>: value,
+    <link xref='Gio.DBusObjectManagerClient-get-proxy-type-user-data'>get_proxy_type_user_data</link>: value,
+    <link xref='Gio.DBusObjectManagerClient-name'>name</link>: value,
+    <link xref='Gio.DBusObjectManagerClient-object-path'>object_path</link>: value,
+});
+  </code></synopsis>
+  <p><link xref="Gio.DBusObjectManagerClient"/> is used to create, monitor and delete object
+proxies for remote objects exported by a <link xref="Gio.DBusObjectManagerServer"/> (or any
+code implementing the
+[org.freedesktop.DBus.ObjectManager](http://dbus.freedesktop.org/doc/dbus-specification.html#standard-interfaces-objectmanager)
+interface).</p>  <p>Once an instance of this type has been created, you can connect to
+the <link xref="Gio.DBusObjectManager-object-added"/> and
+<link xref="Gio.DBusObjectManager-object-removed"/> signals and inspect the
+<link xref="Gio.DBusObjectProxy"/> objects returned by
+<link xref="Gio.DBusObjectManager.get_objects"/>.</p>  <p>If the name for a <link xref="Gio.DBusObjectManagerClient"/> is not owned by anyone at
+object construction time, the default behavior is to request the
+message bus to launch an owner for the name. This behavior can be
+disabled using the <link xref="Gio.DBusObjectManagerClientFlags"/>.do_not_auto_start
+flag. It's also worth noting that this only works if the name of
+interest is activatable in the first place. E.g. in some cases it
+is not possible to launch an owner for the requested name. In this
+case, <link xref="Gio.DBusObjectManagerClient"/> object construction still succeeds but
+there will be no object proxies
+(e.g. <link xref="Gio.DBusObjectManager.get_objects"/> returns the empty list) and
+the <link xref="Gio.name-owner"/> property is <code>null</code>.</p>  <p>The owner of the requested name can come and go (for example
+consider a system service being restarted) – <link xref="Gio.DBusObjectManagerClient"/>
+handles this case too; simply connect to the <link xref="GObject.notify"/>
+signal to watch for changes on the <link xref="Gio.name-owner"/>
+property. When the name owner vanishes, the behavior is that
+<link xref="Gio.name-owner"/> is set to <code>null</code> (this includes
+emission of the <link xref="GObject.notify"/> signal) and then
+<link xref="Gio.DBusObjectManager-object-removed"/> signals are synthesized
+for all currently existing object proxies. Since
+<link xref="Gio.name-owner"/> is <code>null</code> when this happens, you can
+use this information to disambiguate a synthesized signal from a
+genuine signal caused by object removal on the remote
+<link xref="Gio.DBusObjectManager"/>. Similarly, when a new name owner appears,
+<link xref="Gio.DBusObjectManager-object-added"/> signals are synthesized
+while <link xref="Gio.name-owner"/> is still <code>null</code>. Only when all
+object proxies have been added, the <link xref="Gio.name-owner"/>
+is set to the new name owner (this includes emission of the
+<link xref="GObject.notify"/> signal).  Furthermore, you are guaranteed that
+<link xref="Gio.name-owner"/> will alternate between a name owner
+(e.g. `:1.42`) and <code>null</code> even in the case where
+the name of interest is atomically replaced</p>  <p>Ultimately, <link xref="Gio.DBusObjectManagerClient"/> is used to obtain <link xref="Gio.DBusProxy"/>
+instances. All signals (including the
+org.freedesktop.DBus.Properties::PropertiesChanged signal)
+delivered to <link xref="Gio.DBusProxy"/> instances are guaranteed to originate
+from the name owner. This guarantee along with the behavior
+described above, means that certain race conditions including the
+"half the proxy is from the old owner and the other half is from
+the new owner" problem cannot happen.</p>  <p>To avoid having the application connect to signals on the returned
+<link xref="Gio.DBusObjectProxy"/> and <link xref="Gio.DBusProxy"/> objects, the
+<link xref="Gio.DBusObject-interface-added"/>,
+<link xref="Gio.DBusObject-interface-removed"/>,
+<link xref="Gio.g-properties-changed"/> and
+<link xref="Gio.g-signal"/> signals
+are also emitted on the <link xref="Gio.DBusObjectManagerClient"/> instance managing these
+objects. The signals emitted are
+<link xref="Gio.DBusObjectManager-interface-added"/>,
+<link xref="Gio.DBusObjectManager-interface-removed"/>,
+<link xref="Gio.interface-proxy-properties-changed"/> and
+<link xref="Gio.interface-proxy-signal"/>.</p>  <p>Note that all callbacks and signals are emitted in the
+[thread-default main context][g-main-context-push-thread-default]
+that the <link xref="Gio.DBusObjectManagerClient"/> object was constructed
+in. Additionally, the <link xref="Gio.DBusObjectProxy"/> and <link xref="Gio.DBusProxy"/> objects
+originating from the <link xref="Gio.DBusObjectManagerClient"/> object will be created in
+the same context and, consequently, will deliver signals in the
+same main loop.</p>
+  <p>Since 2.30</p>
+  <synopsis>
+    <title>Hierarchy</title>
+    <tree>
+      <item>
+        <code>GObject.Object</code>
+      <item>
+        <code>Gio.DBusObjectManagerClient</code>
+      </item>
+      </item>
+    </tree>
+  </synopsis>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="property" style="linklist">
+    <title>Properties</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="signal" style="linklist">
+    <title>Signals</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="vfunc" style="linklist">
+    <title>Virtual functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

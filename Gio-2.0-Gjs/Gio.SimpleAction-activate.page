@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Gio.SimpleAction-activate"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.SimpleAction" group="signal" type="guide"/>
+    <title type="link" role="topic">activate</title>
+  </info>
+  <title>Gio.SimpleAction::activate</title>
+  <synopsis><code mime="text/x-gjs">
+connect('activate', function (simpleAction, parameter: GLib.Variant, ): void);
+  </code></synopsis>
+  <p>Indicates that the action was just activated.</p>  <p><code>parameter</code> will always be of the expected type.  In the event that
+an incorrect type was given, no signal will be emitted.</p>  <p>Since GLib 2.40, if no handler is connected to this signal then the
+default behaviour for boolean-stated actions with a <code>null</code> parameter
+type is to toggle them via the <link xref="Gio.change-state"/> signal.
+For stateful actions where the state type is equal to the parameter
+type, the default is to forward them directly to
+<link xref="Gio.change-state"/>.  This should allow almost all users
+of <link xref="Gio.SimpleAction"/> to connect only one handler or the other.</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>simpleAction</code></title>
+<p>instance of <link xref="Gio.SimpleAction"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>parameter</code></title>
+  <p>the parameter to the activation</p>
+</item>
+</terms>
+
+</page>

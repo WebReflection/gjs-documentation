@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="Gio.Cancellable.disconnect"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Cancellable" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_cancellable_disconnect</api:name>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>handler_id</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.Cancellable.prototype.disconnect</title>
+  <synopsis><code mime="text/x-gjs">
+function disconnect(handler_id: Number): void {
+    // Gjs wrapper for g_cancellable_disconnect()
+}
+  </code></synopsis>
+  <p>Disconnects a handler from a cancellable instance similar to
+<link xref="GObject.signal_handler_disconnect"/>.  Additionally, in the event that a
+signal handler is currently running, this call will block until the
+handler has finished.  Calling this function from a
+<link xref="Gio.cancelled"/> signal handler will therefore result in a
+deadlock.</p>  <p>This avoids a race condition where a thread cancels at the
+same time as the cancellable operation is finished and the
+signal handler is removed. See <link xref="Gio.cancelled"/> for
+details on how to use this.</p>  <p>If <code>cancellable</code> is <code>null</code> or <code>handler_id</code> is %0 this function does
+nothing.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>handler_id</code></title>
+  <p>Handler id of the handler to be disconnected, or %0.</p>
+</item>
+</terms>
+
+</page>

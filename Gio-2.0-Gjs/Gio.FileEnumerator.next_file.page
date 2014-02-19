@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="Gio.FileEnumerator.next_file"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.FileEnumerator" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.FileInfo</api:type>
+      </api:returns>
+      <api:name>g_file_enumerator_next_file</api:name>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.FileEnumerator.prototype.next_file</title>
+  <synopsis><code mime="text/x-gjs">
+function next_file(cancellable: Gio.Cancellable): Gio.FileInfo {
+    // Gjs wrapper for g_file_enumerator_next_file()
+}
+  </code></synopsis>
+  <p>Returns information for the next file in the enumerated object.
+Will block until the information is available. The <link xref="Gio.FileInfo"/>
+returned from this function will contain attributes that match the
+attribute string that was passed when the <link xref="Gio.FileEnumerator"/> was created.</p>  <p>See the documentation of <link xref="Gio.FileEnumerator"/> for information about the
+order of returned files.</p>  <p>On error, returns <code>null</code> and sets @error to the error. If the
+enumerator is at the end, <code>null</code> will be returned and @error will
+be unset.</p>
+
+<terms>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional <link xref="Gio.Cancellable"/> object, <code>null</code> to ignore.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

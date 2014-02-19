@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<page id="GLib.SeekType"
+      type="topic"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>GLib.SeekType</title>
+  <p>An enumeration specifying the base position for a
+<link xref="GLib.IOChannel.seek_position"/> operation.</p>
+
+<terms>
+<item>
+<title><code>SeekType.CUR</code></title>
+  <p>the current position in the file.</p>
+</item>
+<item>
+<title><code>SeekType.SET</code></title>
+  <p>the start of the file.</p>
+</item>
+<item>
+<title><code>SeekType.END</code></title>
+  <p>the end of the file.</p>
+</item>
+</terms>
+
+</page>

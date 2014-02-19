@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="Gio.File-set_display_name"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.File" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.File::set_display_name</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_set_display_name(display_name: String, cancellable: Gio.Cancellable): Gio.File {
+}
+  </code></synopsis>
+  <p>Renames <code>file</code> to the specified display name.</p>  <p>The display name is converted from UTF-8 to the correct encoding
+for the target filesystem if possible and the <code>file</code> is renamed to this.</p>  <p>If you want to implement a rename operation in the user interface the
+edit name (#G_FILE_ATTRIBUTE_STANDARD_EDIT_NAME) should be used as the
+initial value in the rename widget, and then the result after editing
+should be passed to <link xref="Gio.File.set_display_name"/>.</p>  <p>On success the resulting converted filename is returned.</p>  <p>If <code>cancellable</code> is not <code>null</code>, then the operation can be cancelled by
+triggering the cancellable object from another thread. If the operation
+was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be returned.</p>
+
+<terms>
+<item>
+<title><code>display_name</code></title>
+  <p>a string</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional <link xref="Gio.Cancellable"/> object,
+    <code>null</code> to ignore</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link xref="Gio.File"/> specifying what <code>file</code> was renamed to,
+    or <code>null</code> if there was an error.
+    Free the returned object with <link xref="GObject.unref"/>.</p>
+</item>
+</terms>
+
+</page>

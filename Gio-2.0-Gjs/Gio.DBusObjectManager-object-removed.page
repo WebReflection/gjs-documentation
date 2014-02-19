@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusObjectManager-object-removed"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusObjectManager" group="signal" type="guide"/>
+    <title type="link" role="topic">object-removed</title>
+  </info>
+  <title>Gio.DBusObjectManager::object-removed</title>
+  <synopsis><code mime="text/x-gjs">
+connect('object-removed', function (dBusObjectManager, object: Gio.DBusObject, ): void);
+  </code></synopsis>
+  <p>Emitted when <code>object</code> is removed from @manager.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>dBusObjectManager</code></title>
+<p>instance of <link xref="Gio.DBusObjectManager"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>object</code></title>
+  <p>The <link xref="Gio.DBusObject"/> that was removed.</p>
+</item>
+</terms>
+
+</page>

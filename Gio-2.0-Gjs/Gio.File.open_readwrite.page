@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<page id="Gio.File.open_readwrite"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.File" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.FileIOStream</api:type>
+      </api:returns>
+      <api:name>g_file_open_readwrite</api:name>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.File.prototype.open_readwrite</title>
+  <synopsis><code mime="text/x-gjs">
+function open_readwrite(cancellable: Gio.Cancellable): Gio.FileIOStream {
+    // Gjs wrapper for g_file_open_readwrite()
+}
+  </code></synopsis>
+  <p>Opens an existing file for reading and writing. The result is
+a <link xref="Gio.FileIOStream"/> that can be used to read and write the contents
+of the file.</p>  <p>If <code>cancellable</code> is not <code>null</code>, then the operation can be cancelled
+by triggering the cancellable object from another thread. If the
+operation was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be
+returned.</p>  <p>If the file does not exist, the <link xref="Gio.IOErrorEnum"/>.not_found error will
+be returned. If the file is a directory, the <link xref="Gio.IOErrorEnum"/>.is_directory
+error will be returned. Other errors are possible too, and depend on
+what kind of filesystem the file is on. Note that in many non-local
+file cases read and write streams are not supported, so make sure you
+really need to do read and write streaming, rather than just opening
+for reading or writing.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>cancellable</code></title>
+  <p>a <link xref="Gio.Cancellable"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

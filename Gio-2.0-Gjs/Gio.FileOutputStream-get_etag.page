@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="Gio.FileOutputStream-get_etag"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.FileOutputStream" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.FileOutputStream::get_etag</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_get_etag(): String {
+}
+  </code></synopsis>
+  <p>Gets the entity tag for the file when it has been written.
+This must be called after the stream has been written
+and closed, as the etag can change while writing.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the entity tag for the stream.</p>
+</item>
+</terms>
+
+</page>

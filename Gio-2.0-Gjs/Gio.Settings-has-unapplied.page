@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="Gio.Settings-has-unapplied"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Settings" group="property" type="guide"/>
+    <title type="link" role="topic">has-unapplied</title>
+  </info>
+  <title>Gio.Settings.has_unapplied</title>
+  <synopsis><code mime="text/x-gjs">
+Settings.has_unapplied: Boolean (Read)
+  </code></synopsis>
+  <p>If this property is <code>true</code>, the <link xref="Gio.Settings"/> object has outstanding
+changes that will be applied when <link xref="Gio.Settings.apply"/> is called.</p>
+
+</page>

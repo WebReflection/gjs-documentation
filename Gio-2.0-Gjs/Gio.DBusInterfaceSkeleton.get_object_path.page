@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusInterfaceSkeleton.get_object_path"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusInterfaceSkeleton" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_dbus_interface_skeleton_get_object_path</api:name>
+    </api:function>
+  </info>
+  <title>Gio.DBusInterfaceSkeleton.prototype.get_object_path</title>
+  <synopsis><code mime="text/x-gjs">
+function get_object_path(): String {
+    // Gjs wrapper for g_dbus_interface_skeleton_get_object_path()
+}
+  </code></synopsis>
+  <p>Gets the object path that <code>interface_</code> is exported on, if any.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

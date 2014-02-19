@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.FileEnumerator.is_closed"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.FileEnumerator" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_file_enumerator_is_closed</api:name>
+    </api:function>
+  </info>
+  <title>Gio.FileEnumerator.prototype.is_closed</title>
+  <synopsis><code mime="text/x-gjs">
+function is_closed(): Boolean {
+    // Gjs wrapper for g_file_enumerator_is_closed()
+}
+  </code></synopsis>
+  <p>Checks if the file enumerator has been closed.</p>
+
+<terms>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

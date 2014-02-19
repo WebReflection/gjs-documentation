@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusObjectManager-get_object_path"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusObjectManager" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.DBusObjectManager::get_object_path</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_get_object_path(): String {
+}
+  </code></synopsis>
+  <p>Gets the object path that <code>manager</code> is for.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>A string owned by <code>manager</code>. Do not free.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<page id="GLib.MappedFile.new_from_fd"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.MappedFile" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.MappedFile</api:type>
+      </api:returns>
+      <api:name>g_mapped_file_new_from_fd</api:name>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>fd</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Boolean</api:type>
+        <api:name>writable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.MappedFile.new_from_fd</title>
+  <synopsis><code mime="text/x-gjs">
+function new_from_fd(fd: Number, writable: Boolean): GLib.MappedFile {
+    // Gjs wrapper for g_mapped_file_new_from_fd()
+}
+  </code></synopsis>
+  <p>Maps a file into memory. On UNIX, this is using the mmap() function.</p>  <p>If <code>writable</code> is <code>true</code>, the mapped buffer may be modified, otherwise
+it is an error to modify the mapped buffer. Modifications to the buffer
+are not visible to other processes mapping the same file, and are not
+written back to the file.</p>  <p>Note that modifications of the underlying file might affect the contents
+of the <link xref="GLib.MappedFile"/>. Therefore, mapping should only be used if the file
+will not be modified, or if all modifications of the file are done
+atomically (e.g. using <link xref="GLib.file_set_contents"/>).</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>fd</code></title>
+  <p>The file descriptor of the file to load</p>
+</item>
+<item>
+<title><code>writable</code></title>
+  <p>whether the mapping should be writable</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

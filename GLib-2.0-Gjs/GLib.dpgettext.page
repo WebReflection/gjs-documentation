@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<page id="GLib.dpgettext"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_dpgettext</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>domain</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>msgctxtid</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>gsize</api:type>
+        <api:name>msgidoffset</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.dpgettext</title>
+  <synopsis><code mime="text/x-gjs">
+function dpgettext(domain: String, msgctxtid: String, msgidoffset: gsize): String {
+    // Gjs wrapper for g_dpgettext()
+}
+  </code></synopsis>
+  <p>This function is a variant of <link xref="GLib.dgettext"/> which supports
+a disambiguating message context. GNU gettext uses the
+'\004' character to separate the message context and
+message id in <code>msgctxtid</code>.
+If 0 is passed as <code>msgidoffset</code>, this function will fall back to
+trying to use the deprecated convention of using "|" as a separation
+character.</p>  <p>This uses <link xref="GLib.dgettext"/> internally. See that functions for differences
+with dgettext() proper.</p>  <p>Applications should normally not use this function directly,
+but use the C_() macro for translations with context.</p>
+  <p>Since 2.16</p>
+<terms>
+<item>
+<title><code>domain</code></title>
+  <p>the translation domain to use, or <code>null</code> to use
+  the domain set with textdomain()</p>
+</item>
+<item>
+<title><code>msgctxtid</code></title>
+  <p>a combined message context and message id, separated
+  by a \004 character</p>
+</item>
+<item>
+<title><code>msgidoffset</code></title>
+  <p>the offset of the message id in @msgctxid</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="GObject.SignalFlags"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>GObject.SignalFlags</title>
+  <p>The signal flags are used to specify a signal's behaviour, the overall
+signal description outlines how especially the RUN flags control the
+stages of a signal emission.</p>
+
+</page>

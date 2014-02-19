@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<page id="GLib.FileError"
+      type="topic"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>GLib.FileError</title>
+  <p>Values corresponding to @errno codes returned from file operations
+on UNIX. Unlike @errno codes, GFileError values are available on
+all systems, even Windows. The exact meaning of each code depends
+on what sort of file operation you were performing; the UNIX
+documentation gives more details. The following error code descriptions
+come from the GNU C Library manual, and are under the copyright
+of that manual.</p>  <p>It's not very portable to make detailed assumptions about exactly
+which errors will be returned from a given operation. Some errors
+don't occur on some systems, etc., sometimes there are subtle
+differences in when a system will report a given error, etc.</p>
+
+<terms>
+<item>
+<title><code>FileError.EXIST</code></title>
+  <p>Operation not permitted; only the owner of
+    the file (or other resource) or processes with special privileges
+    can perform the operation.</p>
+</item>
+<item>
+<title><code>FileError.ISDIR</code></title>
+  <p>File is a directory; you cannot open a directory
+    for writing, or create or remove hard links to it.</p>
+</item>
+<item>
+<title><code>FileError.ACCES</code></title>
+  <p>Permission denied; the file permissions do not
+    allow the attempted operation.</p>
+</item>
+<item>
+<title><code>FileError.NAMETOOLONG</code></title>
+  <p>Filename too long.</p>
+</item>
+<item>
+<title><code>FileError.NOENT</code></title>
+  <p>No such file or directory. This is a "file
+    doesn't exist" error for ordinary files that are referenced in
+    contexts where they are expected to already exist.</p>
+</item>
+<item>
+<title><code>FileError.NOTDIR</code></title>
+  <p>A file that isn't a directory was specified when
+    a directory is required.</p>
+</item>
+<item>
+<title><code>FileError.NXIO</code></title>
+  <p>No such device or address. The system tried to
+    use the device represented by a file you specified, and it
+    couldn't find the device. This can mean that the device file was
+    installed incorrectly, or that the physical device is missing or
+    not correctly attached to the computer.</p>
+</item>
+<item>
+<title><code>FileError.NODEV</code></title>
+  <p>The underlying file system of the specified file
+    does not support memory mapping.</p>
+</item>
+<item>
+<title><code>FileError.ROFS</code></title>
+  <p>The directory containing the new link can't be
+    modified because it's on a read-only file system.</p>
+</item>
+<item>
+<title><code>FileError.TXTBSY</code></title>
+  <p>Text file busy.</p>
+</item>
+<item>
+<title><code>FileError.FAULT</code></title>
+  <p>You passed in a pointer to bad memory.
+    (GLib won't reliably return this, don't pass in pointers to bad
+    memory.)</p>
+</item>
+<item>
+<title><code>FileError.LOOP</code></title>
+  <p>Too many levels of symbolic links were encountered
+    in looking up a file name. This often indicates a cycle of symbolic
+    links.</p>
+</item>
+<item>
+<title><code>FileError.NOSPC</code></title>
+  <p>No space left on device; write operation on a
+    file failed because the disk is full.</p>
+</item>
+<item>
+<title><code>FileError.NOMEM</code></title>
+  <p>No memory available. The system cannot allocate
+    more virtual memory because its capacity is full.</p>
+</item>
+<item>
+<title><code>FileError.MFILE</code></title>
+  <p>The current process has too many files open and
+    can't open any more. Duplicate descriptors do count toward this
+    limit.</p>
+</item>
+<item>
+<title><code>FileError.NFILE</code></title>
+  <p>There are too many distinct file openings in the
+    entire system.</p>
+</item>
+<item>
+<title><code>FileError.BADF</code></title>
+  <p>Bad file descriptor; for example, I/O on a
+    descriptor that has been closed or reading from a descriptor open
+    only for writing (or vice versa).</p>
+</item>
+<item>
+<title><code>FileError.INVAL</code></title>
+  <p>Invalid argument. This is used to indicate
+    various kinds of problems with passing the wrong argument to a
+    library function.</p>
+</item>
+<item>
+<title><code>FileError.PIPE</code></title>
+  <p>Broken pipe; there is no process reading from the
+    other end of a pipe. Every library function that returns this
+    error code also generates a 'SIGPIPE' signal; this signal
+    terminates the program if not handled or blocked. Thus, your
+    program will never actually see this code unless it has handled
+    or blocked 'SIGPIPE'.</p>
+</item>
+<item>
+<title><code>FileError.AGAIN</code></title>
+  <p>Resource temporarily unavailable; the call might
+    work if you try again later.</p>
+</item>
+<item>
+<title><code>FileError.INTR</code></title>
+  <p>Interrupted function call; an asynchronous signal
+    occurred and prevented completion of the call. When this
+    happens, you should try the call again.</p>
+</item>
+<item>
+<title><code>FileError.IO</code></title>
+  <p>Input/output error; usually used for physical read
+   or write errors. i.e. the disk or other physical device hardware
+   is returning errors.</p>
+</item>
+<item>
+<title><code>FileError.PERM</code></title>
+  <p>Operation not permitted; only the owner of the
+   file (or other resource) or processes with special privileges can
+   perform the operation.</p>
+</item>
+<item>
+<title><code>FileError.NOSYS</code></title>
+  <p>Function not implemented; this indicates that
+   the system is missing some functionality.</p>
+</item>
+<item>
+<title><code>FileError.FAILED</code></title>
+  <p>Does not correspond to a UNIX error code; this
+   is the standard "failed for unspecified reason" error code present
+   in all <link xref="GLib.Error"/> error code enumerations. Returned if no specific
+   code applies.</p>
+</item>
+</terms>
+
+</page>

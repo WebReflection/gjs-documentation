@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusProxy-g-properties-changed"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusProxy" group="signal" type="guide"/>
+    <title type="link" role="topic">g-properties-changed</title>
+  </info>
+  <title>Gio.DBusProxy::g-properties-changed</title>
+  <synopsis><code mime="text/x-gjs">
+connect('g-properties-changed', function (dBusProxy, changed_properties: GLib.Variant, invalidated_properties: Array(String), ): void);
+  </code></synopsis>
+  <p>Emitted when one or more D-Bus properties on @proxy changes. The
+local cache has already been updated when this signal fires. Note
+that both <code>changed_properties</code> and <code>invalidated_properties</code> are
+guaranteed to never be <code>null</code> (either may be empty though).</p>  <p>If the proxy has the flag
+<link xref="Gio.DBusProxyFlags"/>.get_invalidated_properties set, then
+<code>invalidated_properties</code> will always be empty.</p>  <p>This signal corresponds to the
+`PropertiesChanged` D-Bus signal on the
+`org.freedesktop.DBus.Properties` interface.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>dBusProxy</code></title>
+<p>instance of <link xref="Gio.DBusProxy"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>changed_properties</code></title>
+  <p>A <link xref="GLib.Variant"/> containing the properties that changed</p>
+</item>
+<item>
+<title><code>invalidated_properties</code></title>
+  <p>A <code>null</code> terminated array of properties that was invalidated</p>
+</item>
+</terms>
+
+</page>

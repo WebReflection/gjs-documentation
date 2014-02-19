@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="Gio.Volume-mount_fn"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Volume" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.Volume::mount_fn</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_mount_fn(flags: Gio.MountMountFlags, mount_operation: Gio.MountOperation, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+}
+  </code></synopsis>
+  <p>Mounts a volume. This is an asynchronous operation, and is
+finished by calling <link xref="Gio.Volume.mount_finish"/> with the <code>volume</code>
+and <link xref="Gio.AsyncResult"/> returned in the <code>callback</code>.</p>
+
+<terms>
+<item>
+<title><code>flags</code></title>
+  <p>flags affecting the operation</p>
+</item>
+<item>
+<title><code>mount_operation</code></title>
+  <p>a <link xref="Gio.MountOperation"/> or <code>null</code> to avoid user interaction</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional <link xref="Gio.Cancellable"/> object, <code>null</code> to ignore</p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>a <link xref="Gio.AsyncReadyCallback"/>, or <code>null</code></p>
+</item>
+</terms>
+
+</page>

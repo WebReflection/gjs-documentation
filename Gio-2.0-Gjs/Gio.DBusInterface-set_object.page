@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusInterface-set_object"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusInterface" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.DBusInterface::set_object</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_set_object(object: Gio.DBusObject): void {
+}
+  </code></synopsis>
+  <p>Sets the <link xref="Gio.DBusObject"/> for <code>interface_</code> to <code>object</code>.</p>  <p>Note that <code>interface_</code> will hold a weak reference to <code>object</code>.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>object</code></title>
+  <p>A <link xref="Gio.DBusObject"/> or <code>null</code>.</p>
+</item>
+</terms>
+
+</page>

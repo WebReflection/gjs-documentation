@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusConnection-closed"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusConnection" group="property" type="guide"/>
+    <title type="link" role="topic">closed</title>
+  </info>
+  <title>Gio.DBusConnection.closed</title>
+  <synopsis><code mime="text/x-gjs">
+DBusConnection.closed: Boolean (Read)
+  </code></synopsis>
+  <p>A boolean specifying whether the connection has been closed.</p>
+  <p>Since 2.26</p>
+</page>

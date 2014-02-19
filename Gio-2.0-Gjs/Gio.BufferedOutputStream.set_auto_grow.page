@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="Gio.BufferedOutputStream.set_auto_grow"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.BufferedOutputStream" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_buffered_output_stream_set_auto_grow</api:name>
+      <api:arg>
+        <api:type>Boolean</api:type>
+        <api:name>auto_grow</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.BufferedOutputStream.prototype.set_auto_grow</title>
+  <synopsis><code mime="text/x-gjs">
+function set_auto_grow(auto_grow: Boolean): void {
+    // Gjs wrapper for g_buffered_output_stream_set_auto_grow()
+}
+  </code></synopsis>
+  <p>Sets whether or not the <code>stream</code>'s buffer should automatically grow.
+If <code>auto_grow</code> is true, then each write will just make the buffer
+larger, and you must manually flush the buffer to actually write out
+the data to the underlying stream.</p>
+
+<terms>
+<item>
+<title><code>auto_grow</code></title>
+  <p>a #gboolean.</p>
+</item>
+</terms>
+
+</page>

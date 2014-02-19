@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gio.File.get_uri_scheme"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.File" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_file_get_uri_scheme</api:name>
+    </api:function>
+  </info>
+  <title>Gio.File.prototype.get_uri_scheme</title>
+  <synopsis><code mime="text/x-gjs">
+function get_uri_scheme(): String {
+    // Gjs wrapper for g_file_get_uri_scheme()
+}
+  </code></synopsis>
+  <p>Gets the URI scheme for a <link xref="Gio.File"/>.
+RFC 3986 decodes the scheme as:
+|[
+URI = scheme ":" hier-part [ "?" query ] [ "#" fragment ]
+]|
+Common schemes include "file", "http", "ftp", etc.</p>  <p>This call does no blocking I/O.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

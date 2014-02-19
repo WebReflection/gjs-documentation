@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusMethodInvocation.get_interface_name"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusMethodInvocation" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_dbus_method_invocation_get_interface_name</api:name>
+    </api:function>
+  </info>
+  <title>Gio.DBusMethodInvocation.prototype.get_interface_name</title>
+  <synopsis><code mime="text/x-gjs">
+function get_interface_name(): String {
+    // Gjs wrapper for g_dbus_method_invocation_get_interface_name()
+}
+  </code></synopsis>
+  <p>Gets the name of the D-Bus interface the method was invoked on.</p>  <p>If this method call is a property Get, Set or GetAll call that has
+been redirected to the method call handler then
+"org.freedesktop.DBus.Properties" will be returned.  See
+<link xref="Gio.DBusInterfaceVTable"/> for more information.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

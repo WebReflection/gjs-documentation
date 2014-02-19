@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="GLib.MINOR_VERSION"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>GLib.MINOR_VERSION</title>
+  <p>The minor version number of the GLib library.</p>  <p>Like #gtk_minor_version, but from the headers used at
+application compile time, rather than from the library
+linked against at application run time.</p>
+
+</page>

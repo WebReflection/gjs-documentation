@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="Gio.TlsConnection.set_interaction"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.TlsConnection" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_tls_connection_set_interaction</api:name>
+      <api:arg>
+        <api:type>Gio.TlsInteraction</api:type>
+        <api:name>interaction</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.TlsConnection.prototype.set_interaction</title>
+  <synopsis><code mime="text/x-gjs">
+function set_interaction(interaction: Gio.TlsInteraction): void {
+    // Gjs wrapper for g_tls_connection_set_interaction()
+}
+  </code></synopsis>
+  <p>Set the object that will be used to interact with the user. It will be used
+for things like prompting the user for passwords.</p>  <p>The <code>interaction</code> argument will normally be a derived subclass of
+<link xref="Gio.TlsInteraction"/>. <code>null</code> can also be provided if no user interaction
+should occur for this connection.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>interaction</code></title>
+  <p>an interaction object, or <code>null</code></p>
+</item>
+</terms>
+
+</page>

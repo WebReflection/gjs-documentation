@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="Gio.ApplicationCommandLine.get_cwd"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.ApplicationCommandLine" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_application_command_line_get_cwd</api:name>
+    </api:function>
+  </info>
+  <title>Gio.ApplicationCommandLine.prototype.get_cwd</title>
+  <synopsis><code mime="text/x-gjs">
+function get_cwd(): String {
+    // Gjs wrapper for g_application_command_line_get_cwd()
+}
+  </code></synopsis>
+  <p>Gets the working directory of the command line invocation.
+The string may contain non-utf8 data.</p>  <p>It is possible that the remote application did not send a working
+directory, so this may be <code>null</code>.</p>  <p>The return value should not be modified or freed and is valid for as
+long as <code>cmdline</code> exists.</p>
+  <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="GObject.TypeInterface.peek_parent"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.TypeInterface" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GObject.TypeInterface</api:type>
+      </api:returns>
+      <api:name>g_type_interface_peek_parent</api:name>
+    </api:function>
+  </info>
+  <title>GObject.TypeInterface.prototype.peek_parent</title>
+  <synopsis><code mime="text/x-gjs">
+function peek_parent(): GObject.TypeInterface {
+    // Gjs wrapper for g_type_interface_peek_parent()
+}
+  </code></synopsis>
+  <p>Returns the corresponding <link xref="GObject.TypeInterface"/> structure of the parent type
+of the instance type to which <code>g_iface</code> belongs. This is useful when
+deriving the implementation of an interface from the parent type and
+then possibly overriding some methods.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

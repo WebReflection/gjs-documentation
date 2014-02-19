@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<page id="GLib.str_match_string"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_str_match_string</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>search_term</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>potential_hit</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Boolean</api:type>
+        <api:name>accept_alternates</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.str_match_string</title>
+  <synopsis><code mime="text/x-gjs">
+function str_match_string(search_term: String, potential_hit: String, accept_alternates: Boolean): Boolean {
+    // Gjs wrapper for g_str_match_string()
+}
+  </code></synopsis>
+  <p>Checks if a search conducted for <code>search_term</code> should match
+<code>potential_hit</code>.</p>  <p>This function calls <link xref="GLib.str_tokenize_and_fold"/> on both
+<code>search_term</code> and <code>potential_hit</code>.  ASCII alternates are never taken
+for <code>search_term</code> but will be taken for <code>potential_hit</code> according to
+the value of <code>accept_alternates</code>.</p>  <p>A hit occurs when each folded token in <code>search_term</code> is a prefix of a
+folded token from <code>potential_hit</code>.</p>  <p>Depending on how you're performing the search, it will typically be
+faster to call <link xref="GLib.str_tokenize_and_fold"/> on each string in
+your corpus and build an index on the returned folded tokens, then
+call <link xref="GLib.str_tokenize_and_fold"/> on the search term and
+perform lookups into that index.</p>  <p>As some examples, searching for "fred" would match the potential hit
+"Smith, Fred" and also "Frédéric".  Searching for "Fréd" would match
+"Frédéric" but not "Frederic" (due to the one-directional nature of
+accent matching).  Searching "fo" would match "Foo" and "Bar Foo
+Baz", but not "SFO" (because no word as "fo" as a prefix).</p>
+  <p>Since 2.40</p>
+<terms>
+<item>
+<title><code>search_term</code></title>
+  <p>the search term from the user</p>
+</item>
+<item>
+<title><code>potential_hit</code></title>
+  <p>the text that may be a hit</p>
+</item>
+<item>
+<title><code>accept_alternates</code></title>
+  <p><code>true</code> to accept ASCII alternates</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

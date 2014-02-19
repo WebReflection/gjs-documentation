@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<page id="Gio.Proxy-supports_hostname"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Proxy" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.Proxy::supports_hostname</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_supports_hostname(): Boolean {
+}
+  </code></synopsis>
+  <p>Some proxy protocols expect to be passed a hostname, which they
+will resolve to an IP address themselves. Others, like SOCKS4, do
+not allow this. This function will return <code>false</code> if <code>proxy</code> is
+implementing such a protocol. When <code>false</code> is returned, the caller
+should resolve the destination hostname first, and then pass a
+<link xref="Gio.ProxyAddress"/> containing the stringified IP address to
+<link xref="Gio.Proxy.connect"/> or <link xref="Gio.Proxy.connect_async"/>.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if hostname resolution is supported.</p>
+</item>
+</terms>
+
+</page>

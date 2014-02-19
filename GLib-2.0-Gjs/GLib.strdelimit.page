@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<page id="GLib.strdelimit"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_strdelimit</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>string</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>delimiters</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>new_delimiter</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.strdelimit</title>
+  <synopsis><code mime="text/x-gjs">
+function strdelimit(string: String, delimiters: String, new_delimiter: String): String {
+    // Gjs wrapper for g_strdelimit()
+}
+  </code></synopsis>
+  <p>Converts any delimiter characters in <code>string</code> to <code>new_delimiter</code>.
+Any characters in <code>string</code> which are found in <code>delimiters</code> are
+changed to the <code>new_delimiter</code> character. Modifies <code>string</code> in place,
+and returns <code>string</code> itself, not a copy. The return value is to
+allow nesting such as
+|[&lt;!-- language="C" --&gt;
+  g_ascii_strup (g_strdelimit (str, "abc", '?'))
+]|</p>
+
+<terms>
+<item>
+<title><code>string</code></title>
+  <p>the string to convert</p>
+</item>
+<item>
+<title><code>delimiters</code></title>
+  <p>a string containing the current delimiters,
+    or <code>null</code> to use the standard delimiters defined in #G_STR_DELIMITERS</p>
+</item>
+<item>
+<title><code>new_delimiter</code></title>
+  <p>the new delimiter character</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

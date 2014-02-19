@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusObjectManager-get_objects"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusObjectManager" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.DBusObjectManager::get_objects</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_get_objects(): Array(Gio.DBusObject) {
+}
+  </code></synopsis>
+  <p>Gets all <link xref="Gio.DBusObject"/> objects known to <code>manager</code>.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>A list of
+  <link xref="Gio.DBusObject"/> objects. The returned list should be freed with
+  <link xref="GLib.free"/> after each element has been freed with
+  <link xref="GObject.unref"/>.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<page id="Gio.Permission-release_finish"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Permission" group="vfunc" type="guide"/>
+  </info>
+  <title>Gio.Permission::release_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_release_finish(result: Gio.AsyncResult): Boolean {
+}
+  </code></synopsis>
+  <p>Collects the result of attempting to release the permission
+represented by <code>permission</code>.</p>  <p>This is the second half of the asynchronous version of
+<link xref="Gio.Permission.release"/>.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>the <link xref="Gio.AsyncResult"/> given to the <link xref="Gio.AsyncReadyCallback"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if the permission was successfully released</p>
+</item>
+</terms>
+
+</page>

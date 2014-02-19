@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="GObject.EnumClass-minimum"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.EnumClass" group="field" type="guide"/>
+    <title type="link" role="topic">minimum</title>
+  </info>
+  <title>GObject.EnumClass.minimum</title>
+  <synopsis><code mime="text/x-gjs">
+EnumClass.minimum: Number (Read / Write)
+  </code></synopsis>
+  <p>the smallest possible value.</p>
+
+</page>

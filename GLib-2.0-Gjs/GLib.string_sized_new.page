@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="GLib.string_sized_new"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.String</api:type>
+      </api:returns>
+      <api:name>g_string_sized_new</api:name>
+      <api:arg>
+        <api:type>gsize</api:type>
+        <api:name>dfl_size</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.string_sized_new</title>
+  <synopsis><code mime="text/x-gjs">
+function string_sized_new(dfl_size: gsize): GLib.String {
+    // Gjs wrapper for g_string_sized_new()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="GLib.String"/>, with enough space for <code>dfl_size</code>
+bytes. This is useful if you are going to add a lot of
+text to the string and don't want it to be reallocated
+too often.</p>
+
+<terms>
+<item>
+<title><code>dfl_size</code></title>
+  <p>the default size of the space allocated to
+    hold the string</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

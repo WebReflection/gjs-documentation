@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<page id="GLib.unichar_compose"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_unichar_compose</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>a</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>b</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>ch</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.unichar_compose</title>
+  <synopsis><code mime="text/x-gjs">
+function unichar_compose(a: String, b: String, ch: String): Boolean {
+    // Gjs wrapper for g_unichar_compose()
+}
+  </code></synopsis>
+  <p>Performs a single composition step of the
+Unicode canonical composition algorithm.</p>  <p>This function includes algorithmic Hangul Jamo composition,
+but it is not exactly the inverse of <link xref="GLib.unichar_decompose"/>.
+No composition can have either of <code>a</code> or <code>b</code> equal to zero.
+To be precise, this function composes if and only if
+there exists a Primary Composite P which is canonically
+equivalent to the sequence &lt;<code>a</code>,<code>b</code>&gt;.  See the Unicode
+Standard for the definition of Primary Composite.</p>  <p>If <code>a</code> and <code>b</code> do not compose a new character, <code>ch</code> is set to zero.</p>  <p>See
+[UAX#15](http://unicode.org/reports/tr15/)
+for details.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>a</code></title>
+  <p>a Unicode character</p>
+</item>
+<item>
+<title><code>b</code></title>
+  <p>a Unicode character</p>
+</item>
+<item>
+<title><code>ch</code></title>
+  <p>return location for the composed character</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

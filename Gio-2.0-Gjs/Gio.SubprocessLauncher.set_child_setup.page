@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Gio.SubprocessLauncher.set_child_setup"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.SubprocessLauncher" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_subprocess_launcher_set_child_setup</api:name>
+      <api:arg>
+        <api:type>GLib.SpawnChildSetupFunc</api:type>
+        <api:name>child_setup</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.SubprocessLauncher.prototype.set_child_setup</title>
+  <synopsis><code mime="text/x-gjs">
+function set_child_setup(child_setup: GLib.SpawnChildSetupFunc): void {
+    // Gjs wrapper for g_subprocess_launcher_set_child_setup()
+}
+  </code></synopsis>
+  <p>Sets up a child setup function.</p>  <p>The child setup function will be called after fork() but before
+exec() on the child's side.</p>  <p><code>destroy_notify</code> will not be automatically called on the child's side
+of the fork().  It will only be called when the last reference on the
+<link xref="Gio.SubprocessLauncher"/> is dropped or when a new child setup function is
+given.</p>  <p><code>null</code> can be given as <code>child_setup</code> to disable the functionality.</p>  <p>Child setup functions are only available on UNIX.</p>
+  <p>Since 2.40</p>
+<terms>
+<item>
+<title><code>child_setup</code></title>
+  <p>a <link xref="GLib.SpawnChildSetupFunc"/> to use as the child setup function</p>
+</item>
+</terms>
+
+</page>

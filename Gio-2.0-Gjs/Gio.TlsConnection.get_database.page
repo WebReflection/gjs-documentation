@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gio.TlsConnection.get_database"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.TlsConnection" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.TlsDatabase</api:type>
+      </api:returns>
+      <api:name>g_tls_connection_get_database</api:name>
+    </api:function>
+  </info>
+  <title>Gio.TlsConnection.prototype.get_database</title>
+  <synopsis><code mime="text/x-gjs">
+function get_database(): Gio.TlsDatabase {
+    // Gjs wrapper for g_tls_connection_get_database()
+}
+  </code></synopsis>
+  <p>Gets the certificate database that <code>conn</code> uses to verify
+peer certificates. See <link xref="Gio.set_database"/>.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="GObject.ValueArray.prepend"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.ValueArray" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GObject.ValueArray</api:type>
+      </api:returns>
+      <api:name>g_value_array_prepend</api:name>
+      <api:arg>
+        <api:type>GObject.Value</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.ValueArray.prototype.prepend</title>
+  <synopsis><code mime="text/x-gjs">
+function prepend(value: GObject.Value): GObject.ValueArray {
+    // Gjs wrapper for g_value_array_prepend()
+}
+  </code></synopsis>
+  <p>Insert a copy of <code>value</code> as first element of <code>value_array</code>. If <code>value</code> is
+<code>null</code>, an uninitialized value is prepended.</p>
+
+<terms>
+<item>
+<title><code>value</code></title>
+  <p><link xref="GObject.Value"/> to copy into <link xref="GObject.ValueArray"/>, or <code>null</code></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

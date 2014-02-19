@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<page id="GLib.ScannerConfig-cpair_comment_single"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.ScannerConfig" group="field" type="guide"/>
+    <title type="link" role="topic">cpair_comment_single</title>
+  </info>
+  <title>GLib.ScannerConfig.cpair_comment_single</title>
+  <synopsis><code mime="text/x-gjs">
+ScannerConfig.cpair_comment_single: String (Read)
+  </code></synopsis>
+  <p>specifies the characters at the start and
+    end of single-line comments. The default is "#\n" which means
+    that single-line comments start with a '#' and continue until
+    a '\n' (end of line).</p>
+
+</page>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusServer-flags"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusServer" group="property" type="guide"/>
+    <title type="link" role="topic">flags</title>
+  </info>
+  <title>Gio.DBusServer.flags</title>
+  <synopsis><code mime="text/x-gjs">
+DBusServer.flags: Gio.DBusServerFlags (Read / Write / Construct Only)
+  </code></synopsis>
+  <p>Flags from the <link xref="Gio.DBusServerFlags"/> enumeration.</p>
+  <p>Since 2.26</p>
+</page>

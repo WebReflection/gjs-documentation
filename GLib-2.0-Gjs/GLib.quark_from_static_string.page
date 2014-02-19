@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<page id="GLib.quark_from_static_string"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.Quark</api:type>
+      </api:returns>
+      <api:name>g_quark_from_static_string</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>string</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.quark_from_static_string</title>
+  <synopsis><code mime="text/x-gjs">
+function quark_from_static_string(string: String): GLib.Quark {
+    // Gjs wrapper for g_quark_from_static_string()
+}
+  </code></synopsis>
+  <p>Gets the <link xref="GLib.Quark"/> identifying the given (static) string. If the
+string does not currently have an associated <link xref="GLib.Quark"/>, a new <link xref="GLib.Quark"/>
+is created, linked to the given string.</p>  <p>Note that this function is identical to <link xref="GLib.quark_from_string"/> except
+that if a new <link xref="GLib.Quark"/> is created the string itself is used rather
+than a copy. This saves memory, but can only be used if the string
+will continue to exist until the program terminates. It can be used
+with statically allocated strings in the main program, but not with
+statically allocated memory in dynamically loaded modules, if you
+expect to ever unload the module again (e.g. do not use this
+function in GTK+ theme engines).</p>
+
+<terms>
+<item>
+<title><code>string</code></title>
+  <p>a string</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

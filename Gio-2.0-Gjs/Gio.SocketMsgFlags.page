@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gio.SocketMsgFlags"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>Gio.SocketMsgFlags</title>
+  <p>Flags used in <link xref="Gio.Socket.receive_message"/> and <link xref="Gio.Socket.send_message"/>.
+The flags listed in the enum are some commonly available flags, but the
+values used for them are the same as on the platform, and any other flags
+are passed in/out as is. So to use a platform specific flag, just include
+the right system header and pass in the flag.</p>
+  <p>Since 2.22</p>
+</page>

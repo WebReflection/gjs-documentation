@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gio.BusType"
+      type="topic"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Gio.BusType</title>
+  <p>An enumeration for well-known message buses.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>BusType.STARTER</code></title>
+  <p>An alias for the message bus that activated the process, if any.</p>
+</item>
+<item>
+<title><code>BusType.NONE</code></title>
+  <p>Not a message bus.</p>
+</item>
+<item>
+<title><code>BusType.SYSTEM</code></title>
+  <p>The system-wide message bus.</p>
+</item>
+<item>
+<title><code>BusType.SESSION</code></title>
+  <p>The login session message bus.</p>
+</item>
+</terms>
+
+</page>

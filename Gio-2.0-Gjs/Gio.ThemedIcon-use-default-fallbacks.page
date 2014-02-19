@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<page id="Gio.ThemedIcon-use-default-fallbacks"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.ThemedIcon" group="property" type="guide"/>
+    <title type="link" role="topic">use-default-fallbacks</title>
+  </info>
+  <title>Gio.ThemedIcon.use_default_fallbacks</title>
+  <synopsis><code mime="text/x-gjs">
+ThemedIcon.use_default_fallbacks: Boolean (Read / Write / Construct Only)
+  </code></synopsis>
+  <p>Whether to use the default fallbacks found by shortening the icon name
+at '-' characters. If the "names" array has more than one element,
+ignores any past the first.</p>  <p>For example, if the icon name was "gnome-dev-cdrom-audio", the array
+would become
+|[&lt;!-- language="C" --&gt;
+{
+  "gnome-dev-cdrom-audio",
+  "gnome-dev-cdrom",
+  "gnome-dev",
+  "gnome",
+  NULL
+};
+]|</p>
+
+</page>

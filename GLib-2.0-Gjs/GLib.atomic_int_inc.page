@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="GLib.atomic_int_inc"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_atomic_int_inc</api:name>
+      <api:arg>
+        <api:type>Number</api:type>
+        <api:name>atomic</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.atomic_int_inc</title>
+  <synopsis><code mime="text/x-gjs">
+function atomic_int_inc(atomic: Number): void {
+    // Gjs wrapper for g_atomic_int_inc()
+}
+  </code></synopsis>
+  <p>Increments the value of <code>atomic</code> by 1.</p>  <p>Think of this operation as an atomic version of `{ *atomic += 1; }`.</p>  <p>This call acts as a full compiler and hardware memory barrier.</p>
+  <p>Since 2.4</p>
+<terms>
+<item>
+<title><code>atomic</code></title>
+  <p>a pointer to a #gint or #guint</p>
+</item>
+</terms>
+
+</page>
