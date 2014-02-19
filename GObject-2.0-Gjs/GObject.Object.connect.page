@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<page id="GObject.Object.connect"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.Object" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GObject.Object</api:type>
+      </api:returns>
+      <api:name>g_signal_connect</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>signal_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Callback</api:type>
+        <api:name>handler</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.Object.prototype.connect</title>
+  <synopsis><code mime="text/x-gjs">
+function connect(signal_name: String, handler: Function): Number {
+    // Gjs wrapper for g_signal_connect()
+}
+  </code></synopsis>
+  <p>
+    Connects <code>handler</code> to <code>signal_name</code> on the
+    object on which this method is invoked, and returns an integer ID
+    different than 0 that can be passed to <link xref="GObject.Object.disconnect"/>
+  </p>
+  <p>
+    <code>handler</code> must have the proper signature for <code>signal_name</code>,
+    as described in the individual signal documentations, although this
+    is not checked until the signal is first emitted.
+  </p>
+  <p>
+    When the signal is emitted by the object implementation, <code>handler</code>
+    will be invoked, with a null <code>this</code> object and the emitting object
+    as the first argument always.
+  </p>
+<terms>
+<item>
+<title><code>signal_name</code></title>
+  <p>the signal to connect to</p>
+</item>
+<item>
+<title><code>handler</code></title>
+  <p>the function handling the signal</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the signal connection ID</p>
+</item>
+</terms>
+
+</page>
