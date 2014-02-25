@@ -34,7 +34,7 @@ function lookup_by_address_async(address: <link xref="Gio.InetAddress">Gio.InetA
   </code></synopsis>
   <p>Begins asynchronously reverse-resolving <code>address</code> to determine its
 associated hostname, and eventually calls <code>callback</code>, which must
-call <link xref="Gio.lookup_by_address_finish"/> to get the final result.</p>
+call <link xref="Gio.Resolver.lookup_by_address_finish"/> to get the final result.</p>
   <p>Since 2.22</p>
 <terms>
 <item>

@@ -11,8 +11,8 @@
   <title>Gio.TlsCertificateFlags</title>
   <p>A set of flags describing TLS certification validation. This can be
 used to set which validation steps to perform (eg, with
-<link xref="Gio.set_validation_flags"/>), or to describe why
+<link xref="Gio.TlsClientConnection.set_validation_flags"/>), or to describe why
 a particular certificate was rejected (eg, in
-<link xref="Gio.accept-certificate"/>).</p>
+<link xref="Gio.TlsConnection-accept-certificate"/>).</p>
   <p>Since 2.28</p>
 </page>

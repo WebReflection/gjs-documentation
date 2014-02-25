@@ -27,7 +27,7 @@ function get_show_in(desktop_env: String): Boolean {
   <p>Checks if the application info should be shown in menus that list available
 applications for a specific name of the desktop, based on the
 `OnlyShowIn` and `NotShowIn` keys.</p>  <p>If <code>desktop_env</code> is <code>null</code>, then the name of the desktop set with
-<link xref="Gio.set_desktop_env"/> is used.</p>  <p>Note that <link xref="Gio.AppInfo.should_show"/> for <code>info</code> will include this check (with
+<link xref="Gio.DesktopAppInfo.set_desktop_env"/> is used.</p>  <p>Note that <link xref="Gio.AppInfo.should_show"/> for <code>info</code> will include this check (with
 <code>null</code> for <code>desktop_env</code>) as well as additional checks.</p>
   <p>Since 2.30</p>
 <terms>

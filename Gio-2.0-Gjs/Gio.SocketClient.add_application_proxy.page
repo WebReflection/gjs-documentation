@@ -29,7 +29,7 @@ indicated proxy protocol is returned by the <link xref="Gio.ProxyResolver"/>,
 <link xref="Gio.SocketClient"/> will consider this protocol as supported but will
 not try to find a <link xref="Gio.Proxy"/> instance to handle handshaking. The
 application must check for this case by calling
-<link xref="Gio.get_remote_address"/> on the returned
+<link xref="Gio.SocketConnection.get_remote_address"/> on the returned
 <link xref="Gio.SocketConnection"/>, and seeing if it's a <link xref="Gio.ProxyAddress"/> of the
 appropriate type, to determine whether or not it needs to handle
 the proxy handshaking itself.</p>  <p>This should be used for proxy protocols that are dialects of

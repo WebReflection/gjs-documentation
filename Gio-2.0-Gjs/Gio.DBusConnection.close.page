@@ -30,19 +30,19 @@ function close(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>,
   </code></synopsis>
   <p>Closes <code>connection</code>. Note that this never causes the process to
 exit (this might only happen if the other end of a shared message
-bus connection disconnects, see <link xref="Gio.exit-on-close"/>).</p>  <p>Once the connection is closed, operations such as sending a message
+bus connection disconnects, see <link xref="Gio.DBusConnection-exit-on-close"/>).</p>  <p>Once the connection is closed, operations such as sending a message
 will return with the error <link xref="Gio.IOErrorEnum"/>.closed. Closing a connection
 will not automatically flush the connection so queued messages may
-be lost. Use <link xref="Gio.flush"/> if you need such guarantees.</p>  <p>If <code>connection</code> is already closed, this method fails with
-<link xref="Gio.IOErrorEnum"/>.closed.</p>  <p>When <code>connection</code> has been closed, the <link xref="Gio.closed"/>
+be lost. Use <link xref="Gio.DBusConnection.flush"/> if you need such guarantees.</p>  <p>If <code>connection</code> is already closed, this method fails with
+<link xref="Gio.IOErrorEnum"/>.closed.</p>  <p>When <code>connection</code> has been closed, the <link xref="Gio.DBusConnection-closed"/>
 signal is emitted in the
 [thread-default main context][g-main-context-push-thread-default]
 of the thread that <code>connection</code> was constructed in.</p>  <p>This is an asynchronous method. When the operation is finished,
 <code>callback</code> will be invoked in the
 [thread-default main context][g-main-context-push-thread-default]
 of the thread you are calling this method from. You can
-then call <link xref="Gio.close_finish"/> to get the result of the
-operation. See <link xref="Gio.close_sync"/> for the synchronous
+then call <link xref="Gio.DBusConnection.close_finish"/> to get the result of the
+operation. See <link xref="Gio.DBusConnection.close_sync"/> for the synchronous
 version.</p>
   <p>Since 2.26</p>
 <terms>

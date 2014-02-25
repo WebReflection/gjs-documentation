@@ -48,7 +48,7 @@ function param_spec_int64(name: String, nick: String, blurb: String, minimum: Nu
     // Gjs wrapper for g_param_spec_int64()
 }
   </code></synopsis>
-  <p>Creates a new <link xref="GObject.ParamSpecInt64"/> instance specifying a %G_TYPE_INT64 property.</p>  <p>See <link xref="GObject.internal"/> for details on property names.</p>
+  <p>Creates a new <link xref="GObject.ParamSpecInt64"/> instance specifying a %G_TYPE_INT64 property.</p>  <p>See <link xref="GObject.ParamSpec.internal"/> for details on property names.</p>
 
 <terms>
 <item>

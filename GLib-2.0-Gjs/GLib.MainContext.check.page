@@ -38,7 +38,7 @@ function check(max_priority: Number(gint), fds: Array(<link xref="GLib.PollFD">G
 <item>
 <title><code>fds</code></title>
   <p>array of <link xref="GLib.PollFD"/>'s that was passed to
-      the last call to <link xref="GLib.query"/></p>
+      the last call to <link xref="GLib.MainContext.query"/></p>
 </item>
 <item>
 <title><code>Returns</code></title>

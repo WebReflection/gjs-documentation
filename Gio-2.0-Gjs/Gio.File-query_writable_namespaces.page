@@ -29,7 +29,7 @@ was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be return
 <title><code>Returns</code></title>
   <p>a <link xref="Gio.FileAttributeInfoList"/> describing the writable namespaces.
     When you are done with it, release it with
-    <link xref="Gio.unref"/></p>
+    <link xref="Gio.FileAttributeInfoList.unref"/></p>
 </item>
 </terms>
 

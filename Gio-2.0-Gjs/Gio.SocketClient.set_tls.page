@@ -30,11 +30,11 @@ and perform a TLS handshake when connecting.</p>  <p>Note that since <link xref=
 but <link xref="Gio.TlsClientConnection"/> is not a <link xref="Gio.SocketConnection"/>, this
 actually wraps the resulting <link xref="Gio.TlsClientConnection"/> in a
 <link xref="Gio.TcpWrapperConnection"/> when returning it. You can use
-<link xref="Gio.get_base_io_stream"/> on the return value
+<link xref="Gio.TcpWrapperConnection.get_base_io_stream"/> on the return value
 to extract the <link xref="Gio.TlsClientConnection"/>.</p>  <p>If you need to modify the behavior of the TLS handshake (eg, by
 setting a client-side certificate to use, or connecting to the
-<link xref="Gio.accept-certificate"/> signal), you can connect to
-<code>client</code>'s <link xref="Gio.event"/> signal and wait for it to be
+<link xref="Gio.TlsConnection-accept-certificate"/> signal), you can connect to
+<code>client</code>'s <link xref="Gio.SocketClient-event"/> signal and wait for it to be
 emitted with <link xref="Gio.SocketClientEvent"/>.tls_handshaking, which will give you
 a chance to see the <link xref="Gio.TlsClientConnection"/> before the handshake
 starts.</p>

@@ -25,7 +25,7 @@ function update(data: ByteArray): void {
 }
   </code></synopsis>
   <p>Feeds <code>data</code> into an existing <link xref="GLib.Checksum"/>. The checksum must still be
-open, that is <link xref="GLib.Checksum.get_string"/> or <link xref="GLib.get_digest"/> must
+open, that is <link xref="GLib.Checksum.get_string"/> or <link xref="GLib.Checksum.get_digest"/> must
 not have been called on <code>checksum</code>.</p>
   <p>Since 2.16</p>
 <terms>

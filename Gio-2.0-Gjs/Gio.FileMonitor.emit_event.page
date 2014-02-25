@@ -32,7 +32,7 @@ function emit_event(child: <link xref="Gio.File">Gio.File</link>, other_file: <l
     // Gjs wrapper for g_file_monitor_emit_event()
 }
   </code></synopsis>
-  <p>Emits the <link xref="Gio.changed"/> signal if a change
+  <p>Emits the <link xref="Gio.FileMonitor-changed"/> signal if a change
 has taken place. Should be called from file monitor
 implementations only.</p>  <p>The signal will be emitted from an idle handler (in the
 [thread-default main context][g-main-context-push-thread-default]).</p>

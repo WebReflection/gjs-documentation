@@ -34,7 +34,7 @@ function lookup_by_name_async(hostname: String, cancellable: <link xref="Gio.Can
   </code></synopsis>
   <p>Begins asynchronously resolving <code>hostname</code> to determine its
 associated IP address(es), and eventually calls <code>callback</code>, which
-must call <link xref="Gio.lookup_by_name_finish"/> to get the result.
+must call <link xref="Gio.Resolver.lookup_by_name_finish"/> to get the result.
 See <link xref="Gio.Resolver.lookup_by_name"/> for more details.</p>
   <p>Since 2.22</p>
 <terms>

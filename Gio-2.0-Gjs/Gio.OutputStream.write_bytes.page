@@ -34,7 +34,7 @@ bindings or in other cases where the refcounted nature of <link xref="GLib.Bytes
 is helpful over a bare pointer interface.</p>  <p>However, note that this function may still perform partial writes,
 just like <link xref="Gio.OutputStream.write"/>.  If that occurs, to continue
 writing, you will need to create a new <link xref="GLib.Bytes"/> containing just the
-remaining bytes, using <link xref="GLib.new_from_bytes"/>. Passing the same
+remaining bytes, using <link xref="GLib.Bytes.new_from_bytes"/>. Passing the same
 <link xref="GLib.Bytes"/> instance multiple times potentially can result in duplicated
 data in the output stream.</p>
 

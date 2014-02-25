@@ -37,7 +37,7 @@ operation is consistent.  Three checks are performed.</p>  <p>First, <code>resul
 <link xref="Gio.SimpleAsyncResult"/>.  Second, <code>source</code> is checked to ensure that it
 matches the source object of <code>result</code>.  Third, <code>source_tag</code> is
 checked to ensure that it is equal to the <code>source_tag</code> argument given
-to <link xref="Gio.new"/> (which, by convention, is a pointer
+to <link xref="Gio.SimpleAsyncResult.new"/> (which, by convention, is a pointer
 to the _async function corresponding to the _finish function from
 which this function is called).  (Alternatively, if either
 <code>source_tag</code> or <code>result</code>'s source tag is <code>null</code>, then the source tag

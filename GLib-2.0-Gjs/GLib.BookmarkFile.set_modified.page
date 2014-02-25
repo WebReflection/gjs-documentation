@@ -31,7 +31,7 @@ function set_modified(uri: String, modified: Number(glong)): void {
   <p>Sets the last time the bookmark for <code>uri</code> was last modified.</p>  <p>If no bookmark for <code>uri</code> is found then it is created.</p>  <p>The "modified" time should only be set when the bookmark's meta-data
 was actually changed.  Every function of <link xref="GLib.BookmarkFile"/> that
 modifies a bookmark also changes the modification time, except for
-<link xref="GLib.set_visited"/>.</p>
+<link xref="GLib.BookmarkFile.set_visited"/>.</p>
   <p>Since 2.12</p>
 <terms>
 <item>

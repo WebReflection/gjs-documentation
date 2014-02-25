@@ -22,7 +22,7 @@ function get_peer_certificate(): <link xref="Gio.TlsCertificate">Gio.TlsCertific
   </code></synopsis>
   <p>Gets <code>conn</code>'s peer's certificate after the handshake has completed.
 (It is not set during the emission of
-<link xref="Gio.accept-certificate"/>.)</p>
+<link xref="Gio.TlsConnection-accept-certificate"/>.)</p>
   <p>Since 2.28</p>
 <terms>
 <item>

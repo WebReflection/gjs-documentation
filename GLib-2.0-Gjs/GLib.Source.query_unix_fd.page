@@ -31,7 +31,7 @@ is called from the check or dispatch functions for <code>source</code>.</p>  <p>
 <terms>
 <item>
 <title><code>tag</code></title>
-  <p>the tag from <link xref="GLib.add_unix_fd"/></p>
+  <p>the tag from <link xref="GLib.Source.add_unix_fd"/></p>
 </item>
 <item>
 <title><code>Returns</code></title>

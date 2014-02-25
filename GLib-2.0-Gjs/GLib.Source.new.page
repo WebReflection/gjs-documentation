@@ -32,7 +32,7 @@ function new(source_funcs: <link xref="GLib.SourceFuncs">GLib.SourceFuncs</link>
 allow creating structures derived from <link xref="GLib.Source"/> that contain
 additional data. The size passed in must be at least
 `sizeof (GSource)`.</p>  <p>The source will not initially be associated with any <link xref="GLib.MainContext"/>
-and must be added to one with <link xref="GLib.attach"/> before it will be
+and must be added to one with <link xref="GLib.Source.attach"/> before it will be
 executed.</p>
 
 <terms>

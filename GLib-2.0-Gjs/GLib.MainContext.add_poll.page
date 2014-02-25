@@ -30,7 +30,7 @@ function add_poll(fd: <link xref="GLib.PollFD">GLib.PollFD</link>, priority: Num
   </code></synopsis>
   <p>Adds a file descriptor to the set of file descriptors polled for
 this context. This will very seldom be used directly. Instead
-a typical event source will use <link xref="GLib.add_unix_fd"/> instead.</p>
+a typical event source will use <link xref="GLib.Source.add_unix_fd"/> instead.</p>
 
 <terms>
 <item>
@@ -41,7 +41,7 @@ a typical event source will use <link xref="GLib.add_unix_fd"/> instead.</p>
 <item>
 <title><code>priority</code></title>
   <p>the priority for this file descriptor which should be
-     the same as the priority used for <link xref="GLib.attach"/> to ensure that the
+     the same as the priority used for <link xref="GLib.Source.attach"/> to ensure that the
      file descriptor is polled whenever the results may be needed.</p>
 </item>
 </terms>

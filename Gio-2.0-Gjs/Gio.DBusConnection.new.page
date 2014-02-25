@@ -48,11 +48,11 @@ function new(stream: <link xref="Gio.IOStream">Gio.IOStream</link>, guid: String
 with the end represented by <code>stream</code>.</p>  <p>If <code>stream</code> is a <link xref="Gio.SocketConnection"/>, then the corresponding <link xref="Gio.Socket"/>
 will be put into non-blocking mode.</p>  <p>The D-Bus connection will interact with <code>stream</code> from a worker thread.
 As a result, the caller should not interact with <code>stream</code> after this
-method has been called, except by calling <link xref="GObject.unref"/> on it.</p>  <p>If <code>observer</code> is not <code>null</code> it may be used to control the
+method has been called, except by calling <link xref="GObject.Object.unref"/> on it.</p>  <p>If <code>observer</code> is not <code>null</code> it may be used to control the
 authentication process.</p>  <p>When the operation is finished, <code>callback</code> will be invoked. You can
-then call <link xref="Gio.new_finish"/> to get the result of the
+then call <link xref="Gio.DBusConnection.new_finish"/> to get the result of the
 operation.</p>  <p>This is a asynchronous failable constructor. See
-<link xref="Gio.new_sync"/> for the synchronous
+<link xref="Gio.DBusConnection.new_sync"/> for the synchronous
 version.</p>
   <p>Since 2.26</p>
 <terms>

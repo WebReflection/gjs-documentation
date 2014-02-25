@@ -21,7 +21,7 @@ function get_help_enabled(): Boolean {
 }
   </code></synopsis>
   <p>Returns whether automatic `--help` generation
-is turned on for <code>context</code>. See <link xref="GLib.set_help_enabled"/>.</p>
+is turned on for <code>context</code>. See <link xref="GLib.OptionContext.set_help_enabled"/>.</p>
   <p>Since 2.6</p>
 <terms>
 <item>

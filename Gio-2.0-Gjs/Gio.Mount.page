@@ -21,13 +21,13 @@ mount, but you can still access the files on it if you use GIO. Might or
 might not be related to a volume object.</p>  <p>Unmounting a <link xref="Gio.Mount"/> instance is an asynchronous operation. For
 more information about asynchronous operations, see <link xref="Gio.AsyncResult"/>
 and <link xref="Gio.Task"/>. To unmount a <link xref="Gio.Mount"/> instance, first call
-<link xref="Gio.unmount_with_operation"/> with (at least) the <link xref="Gio.Mount"/> instance and a
+<link xref="Gio.Mount.unmount_with_operation"/> with (at least) the <link xref="Gio.Mount"/> instance and a
 <link xref="Gio.AsyncReadyCallback"/>.  The callback will be fired when the
 operation has resolved (either with success or failure), and a
 #GAsyncReady structure will be passed to the callback.  That
-callback should then call <link xref="Gio.unmount_with_operation_finish"/> with the <link xref="Gio.Mount"/>
+callback should then call <link xref="Gio.Mount.unmount_with_operation_finish"/> with the <link xref="Gio.Mount"/>
 and the #GAsyncReady data to see if the operation was completed
-successfully.  If an @error is present when <link xref="Gio.unmount_with_operation_finish"/>
+successfully.  If an @error is present when <link xref="Gio.Mount.unmount_with_operation_finish"/>
 is called, then it will be filled with any error information.</p>
 
   <synopsis>

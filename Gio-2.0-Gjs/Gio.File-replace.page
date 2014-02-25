@@ -29,9 +29,9 @@ returned.</p>  <p>If you pass in a non-<code>null</code> <code>etag</code> value
 compared to the current entity tag of the file, and if they differ
 an <link xref="Gio.IOErrorEnum"/>.wrong_etag error is returned. This generally means
 that the file has been changed since you last read it. You can get
-the new etag from <link xref="Gio.get_etag"/> after you've
+the new etag from <link xref="Gio.FileOutputStream.get_etag"/> after you've
 finished writing and closed the <link xref="Gio.FileOutputStream"/>. When you load
-a new file you can use <link xref="Gio.query_info"/> to get
+a new file you can use <link xref="Gio.FileInputStream.query_info"/> to get
 the etag of the file.</p>  <p>If <code>make_backup</code> is <code>true</code>, this function will attempt to make a
 backup of the current file before overwriting it. If this fails
 a <link xref="Gio.IOErrorEnum"/>.cant_create_backup error will be returned. If you
@@ -65,7 +65,7 @@ possible too, and depend on what kind of filesystem the file is on.</p>
 <item>
 <title><code>Returns</code></title>
   <p>a <link xref="Gio.FileOutputStream"/> or <code>null</code> on error.
-    Free the returned object with <link xref="GObject.unref"/>.</p>
+    Free the returned object with <link xref="GObject.Object.unref"/>.</p>
 </item>
 </terms>
 

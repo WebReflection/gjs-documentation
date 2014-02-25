@@ -27,7 +27,7 @@ function new_from_data(data: ByteArray): <link xref="Gio.Resource">Gio.Resource<
   <p>Creates a GResource from a reference to the binary resource bundle.
 This will keep a reference to <code>data</code> while the resource lives, so
 the data should not be modified or freed.</p>  <p>If you want to use this resource in the global resource namespace you need
-to register it with <link xref="Gio._register"/>.</p>
+to register it with <link xref="Gio.Resource._register"/>.</p>
   <p>Since 2.32</p>
 <terms>
 <item>

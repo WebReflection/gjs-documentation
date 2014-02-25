@@ -25,7 +25,7 @@ function new_maybe(element: <link xref="GLib.VariantType">GLib.VariantType</link
 }
   </code></synopsis>
   <p>Constructs the type corresponding to a maybe instance containing
-type @type or Nothing.</p>  <p>It is appropriate to call <link xref="GLib.free"/> on the return value.</p>
+type @type or Nothing.</p>  <p>It is appropriate to call <link xref="GLib.VariantType.free"/> on the return value.</p>
 
 <terms>
 <item>

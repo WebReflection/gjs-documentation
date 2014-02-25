@@ -16,7 +16,7 @@ let proxy_resolver = new Gio.ProxyResolver();
   </code></synopsis>
   <p><link xref="Gio.ProxyResolver"/> provides synchronous and asynchronous network proxy
 resolution. <link xref="Gio.ProxyResolver"/> is used within <link xref="Gio.SocketClient"/> through
-the method <link xref="Gio.proxy_enumerate"/>.</p>
+the method <link xref="Gio.SocketConnectable.proxy_enumerate"/>.</p>
   <p>Since 2.26</p>
   <synopsis>
     <title>Prerequisites</title>

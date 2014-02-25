@@ -31,7 +31,7 @@ function bind(address: <link xref="Gio.SocketAddress">Gio.SocketAddress</link>, 
   <p>When a socket is created it is attached to an address family, but it
 doesn't have an address in this family. <link xref="Gio.Socket.bind"/> assigns the
 address (sometimes called name) of the socket.</p>  <p>It is generally required to bind to a local address before you can
-receive connections. (See <link xref="Gio.listen"/> and <link xref="Gio.Socket.accept"/> ).
+receive connections. (See <link xref="Gio.Socket.listen"/> and <link xref="Gio.Socket.accept"/> ).
 In certain situations, you may also want to bind a socket that will be
 used to initiate connections, though this is not normally required.</p>  <p>If <code>socket</code> is a TCP socket, then <code>allow_reuse</code> controls the setting
 of the `SO_REUSEADDR` socket option; normally it should be <code>true</code> for

@@ -19,7 +19,7 @@ let fileMonitor = new Gio.FileMonitor({
   <p>Monitors a file or directory for changes.</p>  <p>To obtain a <link xref="Gio.FileMonitor"/> for a file or directory, use
 <link xref="Gio.File.monitor"/>, <link xref="Gio.File.monitor_file"/>, or
 <link xref="Gio.File.monitor_directory"/>.</p>  <p>To get informed about changes to the file or directory you are
-monitoring, connect to the <link xref="Gio.changed"/> signal. The
+monitoring, connect to the <link xref="Gio.FileMonitor-changed"/> signal. The
 signal will be emitted in the
 [thread-default main context][g-main-context-push-thread-default]
 of the thread that the monitor was created in

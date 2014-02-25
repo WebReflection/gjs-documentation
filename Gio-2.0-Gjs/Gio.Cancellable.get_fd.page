@@ -24,9 +24,9 @@ function get_fd(): Number(gint) {
 implement cancellable operations on Unix systems. The returned fd will
 turn readable when <code>cancellable</code> is cancelled.</p>  <p>You are not supposed to read from the fd yourself, just check for
 readable status. Reading to unset the readable status is done
-with <link xref="Gio.reset"/>.</p>  <p>After a successful return from this function, you should use
-<link xref="Gio.release_fd"/> to free up resources allocated for
-the returned file descriptor.</p>  <p>See also <link xref="Gio.make_pollfd"/>.</p>
+with <link xref="Gio.Cancellable.reset"/>.</p>  <p>After a successful return from this function, you should use
+<link xref="Gio.Cancellable.release_fd"/> to free up resources allocated for
+the returned file descriptor.</p>  <p>See also <link xref="Gio.Cancellable.make_pollfd"/>.</p>
 
 <terms>
 <item>

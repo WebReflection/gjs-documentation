@@ -20,15 +20,15 @@ function get_next(): [ok: Boolean, out_name: String, value: <link href="../GLib-
     // Gjs wrapper for g_menu_attribute_iter_get_next()
 }
   </code></synopsis>
-  <p>This function combines <link xref="Gio.next"/> with
-<link xref="Gio.MenuAttributeIter.get_name"/> and <link xref="Gio.get_value"/>.</p>  <p>First the iterator is advanced to the next (possibly first) attribute.
+  <p>This function combines <link xref="Gio.MenuAttributeIter.next"/> with
+<link xref="Gio.MenuAttributeIter.get_name"/> and <link xref="Gio.MenuAttributeIter.get_value"/>.</p>  <p>First the iterator is advanced to the next (possibly first) attribute.
 If that fails, then <code>false</code> is returned and there are no other
 effects.</p>  <p>If successful, @name and <code>value</code> are set to the name and value of the
 attribute that has just been advanced to.  At this point,
-<link xref="Gio.MenuAttributeIter.get_name"/> and <link xref="Gio.get_value"/> will
+<link xref="Gio.MenuAttributeIter.get_name"/> and <link xref="Gio.MenuAttributeIter.get_value"/> will
 return the same values again.</p>  <p>The value returned in @name remains valid for as long as the iterator
 remains at the current position.  The value returned in <code>value</code> must
-be unreffed using <link xref="GLib.unref"/> when it is no longer in use.</p>
+be unreffed using <link xref="GLib.Variant.unref"/> when it is no longer in use.</p>
   <p>Since 2.32</p>
 <terms>
 <item>

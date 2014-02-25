@@ -15,6 +15,6 @@ DBusObjectManagerClient.name_owner: String (Read)
   </code></synopsis>
   <p>The unique name that owns <link xref="Gio.DBusObjectManagerClient-name"/> or <code>null</code> if
 no-one is currently owning the name. Connect to the
-<link xref="GObject.notify"/> signal to track changes to this property.</p>
+<link xref="GObject.Object-notify"/> signal to track changes to this property.</p>
   <p>Since 2.30</p>
 </page>

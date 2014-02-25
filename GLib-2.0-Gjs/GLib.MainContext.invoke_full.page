@@ -29,7 +29,7 @@ function invoke_full(priority: Number(gint), function: <link xref="GLib.SourceFu
 }
   </code></synopsis>
   <p>Invokes a function in such a way that <code>context</code> is owned during the
-invocation of <code>function</code>.</p>  <p>This function is the same as <link xref="GLib.invoke"/> except that it
+invocation of <code>function</code>.</p>  <p>This function is the same as <link xref="GLib.MainContext.invoke"/> except that it
 lets you specify the priority incase <code>function</code> ends up being
 scheduled as an idle and also lets you give a <link xref="GLib.DestroyNotify"/> for <code>data</code>.</p>  <p><code>notify</code> should not assume that it is called from any particular
 thread or with any particular context acquired.</p>

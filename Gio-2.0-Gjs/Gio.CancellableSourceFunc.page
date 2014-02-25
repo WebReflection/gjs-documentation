@@ -14,7 +14,7 @@ function onCancellableSourceFunc(cancellable: <link xref="Gio.Cancellable">Gio.C
 }
   </code></synopsis>
   <p>This is the function type of the callback used for the <link xref="GLib.Source"/>
-returned by <link xref="Gio.source_new"/>.</p>
+returned by <link xref="Gio.Cancellable.source_new"/>.</p>
   <p>Since 2.28</p>
 <terms>
 <item>

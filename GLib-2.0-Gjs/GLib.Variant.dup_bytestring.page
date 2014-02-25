@@ -20,7 +20,7 @@ function dup_bytestring(): [return_value: ByteArray, length: Number(gsize)] {
     // Gjs wrapper for g_variant_dup_bytestring()
 }
   </code></synopsis>
-  <p>Similar to <link xref="GLib.get_bytestring"/> except that instead of
+  <p>Similar to <link xref="GLib.Variant.get_bytestring"/> except that instead of
 returning a constant string, the string is duplicated.</p>  <p>The return value must be freed using <link xref="GLib.free"/>.</p>
   <p>Since 2.26</p>
 <terms>

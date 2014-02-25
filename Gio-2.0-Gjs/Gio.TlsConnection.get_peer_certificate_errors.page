@@ -22,7 +22,7 @@ function get_peer_certificate_errors(): <link xref="Gio.TlsCertificateFlags">Gio
   </code></synopsis>
   <p>Gets the errors associated with validating <code>conn</code>'s peer's
 certificate, after the handshake has completed. (It is not set
-during the emission of <link xref="Gio.accept-certificate"/>.)</p>
+during the emission of <link xref="Gio.TlsConnection-accept-certificate"/>.)</p>
   <p>Since 2.28</p>
 <terms>
 <item>

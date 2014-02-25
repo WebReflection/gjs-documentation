@@ -30,7 +30,7 @@ function set_uri_proxy(uri_scheme: String, proxy: String): void {
   </code></synopsis>
   <p>Adds a URI-scheme-specific proxy to <code>resolver</code>; URIs whose scheme
 matches <code>uri_scheme</code> (and which don't match
-<link xref="Gio.ignore-hosts"/>) will be proxied via <code>proxy</code>.</p>  <p>As with <link xref="Gio.default-proxy"/>, if <code>proxy</code> starts with
+<link xref="Gio.SimpleProxyResolver-ignore-hosts"/>) will be proxied via <code>proxy</code>.</p>  <p>As with <link xref="Gio.SimpleProxyResolver-default-proxy"/>, if <code>proxy</code> starts with
 "socks://", <link xref="Gio.SimpleProxyResolver"/> will treat it
 as referring to all three of the socks5, socks4a, and socks4 proxy
 types.</p>

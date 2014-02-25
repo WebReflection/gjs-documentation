@@ -26,7 +26,7 @@ See <link xref="Gio.MemoryOutputStream.get_data_size"/> instead.  For resizable
 streams the size returned by this function is an implementation
 detail and may be change at any time in response to operations on the
 stream.</p>  <p>If the stream is fixed-sized (ie: no realloc was passed to
-<link xref="Gio.new"/>) then this is the maximum size of the
+<link xref="Gio.MemoryOutputStream.new"/>) then this is the maximum size of the
 stream and further writes will return <link xref="Gio.IOErrorEnum"/>.no_space.</p>  <p>In any case, if you want the number of bytes currently written to the
 stream, use <link xref="Gio.MemoryOutputStream.get_data_size"/>.</p>
 

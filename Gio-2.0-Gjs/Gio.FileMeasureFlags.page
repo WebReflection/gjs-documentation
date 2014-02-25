@@ -9,6 +9,6 @@
     <link xref="index" group="default" type="guide"/>
   </info>
   <title>Gio.FileMeasureFlags</title>
-  <p>Flags that can be used with <link xref="Gio.measure_disk_usage"/>.</p>
+  <p>Flags that can be used with <link xref="Gio.File.measure_disk_usage"/>.</p>
   <p>Since 2.38</p>
 </page>

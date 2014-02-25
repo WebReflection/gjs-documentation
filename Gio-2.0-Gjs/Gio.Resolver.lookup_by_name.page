@@ -37,7 +37,7 @@ contain duplicates. That is, if using the result to connect to
 <code>hostname</code>, you should attempt to connect to the first address
 first, then the second if the first fails, etc. If you are using
 the result to listen on a socket, it is appropriate to add each
-result using e.g. <link xref="Gio.add_address"/>.</p>  <p>If the DNS resolution fails, @error (if non-<code>null</code>) will be set to a
+result using e.g. <link xref="Gio.SocketListener.add_address"/>.</p>  <p>If the DNS resolution fails, @error (if non-<code>null</code>) will be set to a
 value from <link xref="Gio.ResolverError"/>.</p>  <p>If <code>cancellable</code> is non-<code>null</code>, it can be used to cancel the
 operation, in which case @error (if non-<code>null</code>) will be set to
 <link xref="Gio.IOErrorEnum"/>.cancelled.</p>  <p>If you are planning to connect to a socket on the resolved IP

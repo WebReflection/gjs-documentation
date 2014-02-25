@@ -18,12 +18,12 @@ let fileOutputStream = new Gio.FileOutputStream();
 content to a file.</p>  <p>GFileOutputStream implements <link xref="Gio.Seekable"/>, which allows the output
 stream to jump to arbitrary positions in the file and to truncate
 the file, provided the filesystem of the file supports these
-operations.</p>  <p>To find the position of a file output stream, use <link xref="Gio.tell"/>.
+operations.</p>  <p>To find the position of a file output stream, use <link xref="Gio.Seekable.tell"/>.
 To find out if a file output stream supports seeking, use
-<link xref="Gio.can_seek"/>.To position a file output stream, use
-<link xref="Gio.seek"/>. To find out if a file output stream supports
-truncating, use <link xref="Gio.can_truncate"/>. To truncate a file output
-stream, use <link xref="Gio.truncate"/>.</p>
+<link xref="Gio.Seekable.can_seek"/>.To position a file output stream, use
+<link xref="Gio.Seekable.seek"/>. To find out if a file output stream supports
+truncating, use <link xref="Gio.Seekable.can_truncate"/>. To truncate a file output
+stream, use <link xref="Gio.Seekable.truncate"/>.</p>
 
   <synopsis>
     <title>Hierarchy</title>

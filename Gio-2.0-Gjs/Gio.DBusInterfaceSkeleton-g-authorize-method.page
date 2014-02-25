@@ -23,14 +23,14 @@ with the
 flag set.</p>  <p>If <code>false</code> is returned then no further handlers are run and the
 signal handler must take a reference to <code>invocation</code> and finish
 handling the call (e.g. return an error via
-<link xref="Gio.return_error"/>).</p>  <p>Otherwise, if <code>true</code> is returned, signal emission continues. If no
+<link xref="Gio.DBusMethodInvocation.return_error"/>).</p>  <p>Otherwise, if <code>true</code> is returned, signal emission continues. If no
 handlers return <code>false</code>, then the method is dispatched. If
 @interface has an enclosing <link xref="Gio.DBusObjectSkeleton"/>, then the
-<link xref="Gio.authorize-method"/> signal handlers run before
+<link xref="Gio.DBusObjectSkeleton-authorize-method"/> signal handlers run before
 the handlers for this signal.</p>  <p>The default class handler just returns <code>true</code>.</p>  <p>Please note that the common case is optimized: if no signals
 handlers are connected and the default class handler isn't
 overridden (for both @interface and the enclosing
-<link xref="Gio.DBusObjectSkeleton"/>, if any) and <link xref="Gio.g-flags"/> does
+<link xref="Gio.DBusObjectSkeleton"/>, if any) and <link xref="Gio.DBusInterfaceSkeleton-g-flags"/> does
 not have the
 <link xref="Gio.DBusInterfaceSkeletonFlags"/>.handle_method_invocations_in_thread
 flags set, no dedicated thread is ever used and the call will be

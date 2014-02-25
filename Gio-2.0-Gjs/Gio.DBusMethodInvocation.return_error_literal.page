@@ -32,7 +32,7 @@ function return_error_literal(domain: <link href="../GLib-2.0/GLib.Quark.page">G
     // Gjs wrapper for g_dbus_method_invocation_return_error_literal()
 }
   </code></synopsis>
-  <p>Like <link xref="Gio.return_error"/> but without printf()-style formatting.</p>  <p>This method will free <code>invocation</code>, you cannot use it afterwards.</p>
+  <p>Like <link xref="Gio.DBusMethodInvocation.return_error"/> but without printf()-style formatting.</p>  <p>This method will free <code>invocation</code>, you cannot use it afterwards.</p>
   <p>Since 2.26</p>
 <terms>
 <item>

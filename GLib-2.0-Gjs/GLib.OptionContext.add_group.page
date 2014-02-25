@@ -26,7 +26,7 @@ function add_group(group: <link xref="GLib.OptionGroup">GLib.OptionGroup</link>)
   </code></synopsis>
   <p>Adds a <link xref="GLib.OptionGroup"/> to the <code>context</code>, so that parsing with <code>context</code>
 will recognize the options in the group. Note that the group will
-be freed together with the context when <link xref="GLib.free"/> is
+be freed together with the context when <link xref="GLib.OptionContext.free"/> is
 called, so you must not free the group yourself after adding it
 to a context.</p>
   <p>Since 2.6</p>

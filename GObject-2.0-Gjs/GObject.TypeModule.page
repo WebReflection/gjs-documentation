@@ -18,7 +18,7 @@ let typeModule = new GObject.TypeModule();
 interface. The model of <link xref="GObject.TypeModule"/> is a dynamically loaded module
 which implements some number of types and interface implementations.
 When the module is loaded, it registers its types and interfaces
-using <link xref="GObject.register_type"/> and <link xref="GObject.add_interface"/>.
+using <link xref="GObject.TypeModule.register_type"/> and <link xref="GObject.TypeModule.add_interface"/>.
 As long as any instances of these types and interface implementations
 are in use, the module is kept loaded. When the types and interfaces
 are gone, the module may be unloaded. If the types and interfaces
@@ -28,11 +28,11 @@ caller's code being unloaded before <link xref="GObject.Object.unref"/> returns 
 using a use count - it starts at zero, and whenever it is greater than
 zero, the module is loaded. The use count is maintained internally by
 the type system, but also can be explicitly controlled by
-<link xref="GObject.use"/> and <link xref="GObject.unuse"/>. Typically, when loading
-a module for the first type, <link xref="GObject.use"/> will be used to load
+<link xref="GObject.TypeModule.use"/> and <link xref="GObject.TypeModule.unuse"/>. Typically, when loading
+a module for the first type, <link xref="GObject.TypeModule.use"/> will be used to load
 it so that it can initialize its types. At some later point, when the
 module no longer needs to be loaded except for the type
-implementations it contains, <link xref="GObject.unuse"/> is called.</p>  <p><link xref="GObject.TypeModule"/> does not actually provide any implementation of module
+implementations it contains, <link xref="GObject.TypeModule.unuse"/> is called.</p>  <p><link xref="GObject.TypeModule"/> does not actually provide any implementation of module
 loading and unloading. To create a particular module type you must
 derive from <link xref="GObject.TypeModule"/> and implement the load and unload functions
 in <link xref="GObject.TypeModuleClass"/>.</p>

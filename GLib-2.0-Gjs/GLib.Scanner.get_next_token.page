@@ -20,7 +20,7 @@ function get_next_token(): <link xref="GLib.TokenType">GLib.TokenType</link> {
     // Gjs wrapper for g_scanner_get_next_token()
 }
   </code></synopsis>
-  <p>Parses the next token just like <link xref="GLib.peek_next_token"/>
+  <p>Parses the next token just like <link xref="GLib.Scanner.peek_next_token"/>
 and also removes it from the input stream. The token data is
 placed in the @token, @value, @line, and @position fields of
 the <link xref="GLib.Scanner"/> structure.</p>

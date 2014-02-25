@@ -33,21 +33,21 @@ g_win32_get_command_line() is called internally (for proper support
 of Unicode commandline arguments).</p>  <p><link xref="Gio.Application"/> will attempt to parse the commandline arguments.  You
 can add commandline flags to the list of recognised options by way of
 <link xref="Gio.Application.add_main_option_entries"/>.  After this, the
-<link xref="Gio.handle-local-options"/> signal is emitted, from which the
-application can inspect the values of its #GOptionEntrys.</p>  <p><link xref="Gio.handle-local-options"/> is a good place to handle options
+<link xref="Gio.Application-handle-local-options"/> signal is emitted, from which the
+application can inspect the values of its #GOptionEntrys.</p>  <p><link xref="Gio.Application-handle-local-options"/> is a good place to handle options
 such as `--version`, where an immediate reply from the local process is
 desired (instead of communicating with an already-running instance).
-A <link xref="Gio.handle-local-options"/> handler can stop further processing
+A <link xref="Gio.Application-handle-local-options"/> handler can stop further processing
 by returning a non-negative value, which then becomes the exit status of
 the process.</p>  <p>What happens next depends on the flags: if
 <link xref="Gio.ApplicationFlags"/>.handles_command_line was specified then the remaining
 commandline arguments are sent to the primary instance, where a
-<link xref="Gio.command-line"/> signal is emitted.  Otherwise, the
+<link xref="Gio.Application-command-line"/> signal is emitted.  Otherwise, the
 remaining commandline arguments are assumed to be a list of files.
 If there are no files listed, the application is activated via the
-<link xref="Gio.activate"/> signal.  If there are one or more files, and
+<link xref="Gio.Application-activate"/> signal.  If there are one or more files, and
 <link xref="Gio.ApplicationFlags"/>.handles_open was specified then the files are opened
-via the <link xref="Gio.open"/> signal.</p>  <p>If you are interested in doing more complicated local handling of the
+via the <link xref="Gio.Application-open"/> signal.</p>  <p>If you are interested in doing more complicated local handling of the
 commandline then you should implement your own <link xref="Gio.Application"/> subclass
 and override local_command_line(). In this case, you most likely want
 to return <code>true</code> from your local_command_line() implementation to
@@ -60,7 +60,7 @@ falls to zero, at which point 0 is returned.</p>  <p>If the <link xref="Gio.Appl
 run for as much as 10 seconds with a use count of zero while waiting
 for the message that caused the activation to arrive.  After that,
 if the use count falls to zero the application will exit immediately,
-except in the case that <link xref="Gio.set_inactivity_timeout"/> is in
+except in the case that <link xref="Gio.Application.set_inactivity_timeout"/> is in
 use.</p>  <p>This function sets the prgname (<link xref="GLib.set_prgname"/>), if not already set,
 to the basename of argv[0].  Since 2.38, if <link xref="Gio.ApplicationFlags"/>.is_service
 is specified, the prgname is set to the application ID.  The main

@@ -30,7 +30,7 @@ function export(connection: <link xref="Gio.DBusConnection">Gio.DBusConnection</
   </code></synopsis>
   <p>Exports <code>interface_</code> at <code>object_path</code> on <code>connection</code>.</p>  <p>This can be called multiple times to export the same <code>interface_</code>
 onto multiple connections however the <code>object_path</code> provided must be
-the same for all connections.</p>  <p>Use <link xref="Gio.unexport"/> to unexport the object.</p>
+the same for all connections.</p>  <p>Use <link xref="Gio.DBusInterfaceSkeleton.unexport"/> to unexport the object.</p>
   <p>Since 2.30</p>
 <terms>
 <item>

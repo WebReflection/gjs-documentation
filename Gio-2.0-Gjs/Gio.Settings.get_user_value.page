@@ -24,9 +24,9 @@ function get_user_value(key: String): <link href="../GLib-2.0/GLib.Variant.page"
     // Gjs wrapper for g_settings_get_user_value()
 }
   </code></synopsis>
-  <p>Checks the "user value" of a key, if there is one.</p>  <p>The user value of a key is the last value that was set by the user.</p>  <p>After calling <link xref="Gio.reset"/> this function should always return
+  <p>Checks the "user value" of a key, if there is one.</p>  <p>The user value of a key is the last value that was set by the user.</p>  <p>After calling <link xref="Gio.Settings.reset"/> this function should always return
 <code>null</code> (assuming something is not wrong with the system
-configuration).</p>  <p>It is possible that <link xref="Gio.get_value"/> will return a different
+configuration).</p>  <p>It is possible that <link xref="Gio.Settings.get_value"/> will return a different
 value than this function.  This can happen in the case that the user
 set a value for a key that was subsequently locked down by the system
 administrator -- this function will return the user's old value.</p>  <p>This function may be useful for adding a "reset" option to a UI or

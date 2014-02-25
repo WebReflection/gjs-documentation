@@ -29,7 +29,7 @@ function prepend(label: String, detailed_action: String): void {
 }
   </code></synopsis>
   <p>Convenience function for prepending a normal menu item to the start
-of <code>menu</code>.  Combine <link xref="Gio.new"/> and <link xref="Gio.Menu.insert_item"/> for a more
+of <code>menu</code>.  Combine <link xref="Gio.MenuItem.new"/> and <link xref="Gio.Menu.insert_item"/> for a more
 flexible alternative.</p>
   <p>Since 2.32</p>
 <terms>

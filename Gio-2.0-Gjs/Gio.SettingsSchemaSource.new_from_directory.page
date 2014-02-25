@@ -39,7 +39,7 @@ produced by the [glib-compile-schemas][glib-compile-schemas] tool.</p>  <p>If <c
 corrupted. This assumption has a performance advantage, but can result
 in crashes or inconsistent behaviour in the case of a corrupted file.
 Generally, you should set <code>trusted</code> to <code>true</code> for files installed by the
-system and to <code>false</code> for files in the home directory.</p>  <p>If <code>parent</code> is non-<code>null</code> then there are two effects.</p>  <p>First, if <link xref="Gio.lookup"/> is called with the
+system and to <code>false</code> for files in the home directory.</p>  <p>If <code>parent</code> is non-<code>null</code> then there are two effects.</p>  <p>First, if <link xref="Gio.SettingsSchemaSource.lookup"/> is called with the
 @recursive flag set to <code>true</code> and the schema can not be found in the
 source, the lookup will recurse to the parent.</p>  <p>Second, any references to other schemas specified within this
 source (ie: `child` or `extends`) references may be resolved

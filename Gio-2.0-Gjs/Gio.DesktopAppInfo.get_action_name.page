@@ -32,7 +32,7 @@ action.</p>
 <item>
 <title><code>action_name</code></title>
   <p>the name of the action as from
-  <link xref="Gio.list_actions"/></p>
+  <link xref="Gio.DesktopAppInfo.list_actions"/></p>
 </item>
 <item>
 <title><code>Returns</code></title>

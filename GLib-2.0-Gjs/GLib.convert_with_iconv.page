@@ -64,7 +64,7 @@ could combine with the base character.)</p>
 </item>
 <item>
 <title><code>converter</code></title>
-  <p>conversion descriptor from <link xref="GLib.open"/></p>
+  <p>conversion descriptor from <link xref="GLib.IConv.open"/></p>
 </item>
 <item>
 <title><code>bytes_read</code></title>

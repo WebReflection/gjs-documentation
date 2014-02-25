@@ -41,7 +41,7 @@ of filesystem the file is on.</p>
 <title><code>Returns</code></title>
   <p>a <link xref="Gio.FileOutputStream"/> for the newly created
     file, or <code>null</code> on error.
-    Free the returned object with <link xref="GObject.unref"/>.</p>
+    Free the returned object with <link xref="GObject.Object.unref"/>.</p>
 </item>
 </terms>
 

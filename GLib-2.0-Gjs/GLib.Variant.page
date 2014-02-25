@@ -20,9 +20,9 @@ values is determined by the type.  The type system used by <link xref="GLib.Vari
 is <link xref="GLib.VariantType"/>.</p>  <p><link xref="GLib.Variant"/> instances always have a type and a value (which are given
 at construction time).  The type and value of a <link xref="GLib.Variant"/> instance
 can never change other than by the <link xref="GLib.Variant"/> itself being
-destroyed.  A <link xref="GLib.Variant"/> cannot contain a pointer.</p>  <p><link xref="GLib.Variant"/> is reference counted using <link xref="GLib.ref"/> and
-<link xref="GLib.unref"/>.  <link xref="GLib.Variant"/> also has floating reference counts --
-see <link xref="GLib.ref_sink"/>.</p>  <p><link xref="GLib.Variant"/> is completely threadsafe.  A <link xref="GLib.Variant"/> instance can be
+destroyed.  A <link xref="GLib.Variant"/> cannot contain a pointer.</p>  <p><link xref="GLib.Variant"/> is reference counted using <link xref="GLib.Variant.ref"/> and
+<link xref="GLib.Variant.unref"/>.  <link xref="GLib.Variant"/> also has floating reference counts --
+see <link xref="GLib.Variant.ref_sink"/>.</p>  <p><link xref="GLib.Variant"/> is completely threadsafe.  A <link xref="GLib.Variant"/> instance can be
 concurrently accessed in any way from any number of threads without
 problems.</p>  <p><link xref="GLib.Variant"/> is heavily optimised for dealing with data in serialised
 form.  It works particularly well with data located in memory-mapped
@@ -41,7 +41,7 @@ indicator could be placed at the beginning of a file, network message
 or network stream).</p>  <p>A <link xref="GLib.Variant"/>'s size is limited mainly by any lower level operating
 system constraints, such as the number of bits in #gsize.  For
 example, it is reasonable to have a 2GB file mapped into memory
-with <link xref="GLib.MappedFile"/>, and call <link xref="GLib.new_from_data"/> on it.</p>  <p>For convenience to C programmers, <link xref="GLib.Variant"/> features powerful
+with <link xref="GLib.MappedFile"/>, and call <link xref="GLib.Variant.new_from_data"/> on it.</p>  <p>For convenience to C programmers, <link xref="GLib.Variant"/> features powerful
 varargs-based value construction and destruction.  This feature is
 designed to be embedded in other libraries.</p>  <p>There is a Python-inspired text language for describing <link xref="GLib.Variant"/>
 values.  <link xref="GLib.Variant"/> includes a printer for this language and a parser
@@ -132,7 +132,7 @@ the values, two dictionary entries, plus the dictionary itself),
 only 1 <link xref="GLib.Variant"/> instance exists -- the one referring to the
 dictionary.</p>  <p>If calls are made to start accessing the other values then
 <link xref="GLib.Variant"/> instances will exist for those values only for as long
-as they are in use (ie: until you call <link xref="GLib.unref"/>).  The
+as they are in use (ie: until you call <link xref="GLib.Variant.unref"/>).  The
 type information is shared.  The serialised data and the buffer
 management structure for that serialised data is shared by the
 child.</p>  <p>## Summary</p>  <p>To put the entire example together, for our dictionary mapping
@@ -140,7 +140,7 @@ strings to variants (with two entries, as given above), we are
 using 91 bytes of memory for type information, 29 byes of memory
 for the serialised data, 16 bytes for buffer management and 24
 bytes for the <link xref="GLib.Variant"/> instance, or a total of 160 bytes, plus
-malloc overhead.  If we were to use <link xref="GLib.get_child_value"/> to
+malloc overhead.  If we were to use <link xref="GLib.Variant.get_child_value"/> to
 access the two dictionary entries, we would use an additional 48
 bytes.  If we were to have other dictionaries of the same type, we
 would use more memory for the serialised data and buffer

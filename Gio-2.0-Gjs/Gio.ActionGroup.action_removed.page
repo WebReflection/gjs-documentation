@@ -24,7 +24,7 @@ function action_removed(action_name: String): void {
     // Gjs wrapper for g_action_group_action_removed()
 }
   </code></synopsis>
-  <p>Emits the <link xref="Gio.action-removed"/> signal on <code>action_group</code>.</p>  <p>This function should only be called by <link xref="Gio.ActionGroup"/> implementations.</p>
+  <p>Emits the <link xref="Gio.ActionGroup-action-removed"/> signal on <code>action_group</code>.</p>  <p>This function should only be called by <link xref="Gio.ActionGroup"/> implementations.</p>
   <p>Since 2.28</p>
 <terms>
 <item>

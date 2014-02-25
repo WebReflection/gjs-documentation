@@ -22,8 +22,8 @@ function get_name_owner(): String {
   </code></synopsis>
   <p>The unique name that owns the name that <code>proxy</code> is for or <code>null</code> if
 no-one currently owns that name. You may connect to the
-<link xref="GObject.notify"/> signal to track changes to the
-<link xref="Gio.g-name-owner"/> property.</p>
+<link xref="GObject.Object-notify"/> signal to track changes to the
+<link xref="Gio.DBusProxy-g-name-owner"/> property.</p>
   <p>Since 2.26</p>
 <terms>
 <item>

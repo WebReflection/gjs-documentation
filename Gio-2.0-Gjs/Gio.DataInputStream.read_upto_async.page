@@ -46,7 +46,7 @@ does not consume the stop character. You have to use
 <link xref="Gio.DataInputStream.read_byte"/> to get it before calling
 <link xref="Gio.DataInputStream.read_upto"/> again.</p>  <p>Note that <code>stop_chars</code> may contain '\0' if <code>stop_chars_len</code> is
 specified.</p>  <p>When the operation is finished, <code>callback</code> will be called. You
-can then call <link xref="Gio.read_upto_finish"/> to get
+can then call <link xref="Gio.DataInputStream.read_upto_finish"/> to get
 the result of the operation.</p>
   <p>Since 2.26</p>
 <terms>

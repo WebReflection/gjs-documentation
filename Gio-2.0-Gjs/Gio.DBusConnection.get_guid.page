@@ -21,7 +21,7 @@ function get_guid(): String {
 }
   </code></synopsis>
   <p>The GUID of the peer performing the role of server when
-authenticating. See <link xref="Gio.guid"/> for more details.</p>
+authenticating. See <link xref="Gio.DBusConnection-guid"/> for more details.</p>
   <p>Since 2.26</p>
 <terms>
 <item>

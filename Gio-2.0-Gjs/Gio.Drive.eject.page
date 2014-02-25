@@ -33,7 +33,7 @@ function eject(flags: <link xref="Gio.MountUnmountFlags">Gio.MountUnmountFlags</
 }
   </code></synopsis>
   <p>Asynchronously ejects a drive.</p>  <p>When the operation is finished, <code>callback</code> will be called.
-You can then call <link xref="Gio.eject_finish"/> to obtain the
+You can then call <link xref="Gio.Drive.eject_finish"/> to obtain the
 result of the operation.</p>
 
 <terms>

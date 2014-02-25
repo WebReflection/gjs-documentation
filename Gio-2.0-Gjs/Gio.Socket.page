@@ -26,15 +26,15 @@ network primitives are based. Applications are not typically meant to
 use it directly, but rather through classes like <link xref="Gio.SocketClient"/>,
 <link xref="Gio.SocketService"/> and <link xref="Gio.SocketConnection"/>. However there may be cases where
 direct use of <link xref="Gio.Socket"/> is useful.</p>  <p><link xref="Gio.Socket"/> implements the <link xref="Gio.Initable"/> interface, so if it is manually constructed
-by e.g. <link xref="GObject.new"/> you must call <link xref="Gio.Initable.init"/> and check the
+by e.g. <link xref="GObject.Object.new"/> you must call <link xref="Gio.Initable.init"/> and check the
 results before using the object. This is done automatically in
-<link xref="Gio.new"/> and <link xref="Gio.new_from_fd"/>, so these functions can return
+<link xref="Gio.Socket.new"/> and <link xref="Gio.Socket.new_from_fd"/>, so these functions can return
 <code>null</code>.</p>  <p>Sockets operate in two general modes, blocking or non-blocking. When
 in blocking mode all operations block until the requested operation
 is finished or there is an error. In non-blocking mode all calls that
 would block return immediately with a <link xref="Gio.IOErrorEnum"/>.would_block error.
-To know when a call would successfully run you can call <link xref="Gio.condition_check"/>,
-or <link xref="Gio.condition_wait"/>. You can also use <link xref="Gio.create_source"/> and
+To know when a call would successfully run you can call <link xref="Gio.Socket.condition_check"/>,
+or <link xref="Gio.Socket.condition_wait"/>. You can also use <link xref="Gio.Socket.create_source"/> and
 attach it to a <link xref="GLib.MainContext"/> to get callbacks when I/O is possible.
 Note that all sockets are always set to non blocking mode in the system, and
 blocking mode is emulated in GSocket.</p>  <p>When working in non-blocking mode applications should always be able to

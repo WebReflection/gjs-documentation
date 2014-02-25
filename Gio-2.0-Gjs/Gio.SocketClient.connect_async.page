@@ -33,7 +33,7 @@ function connect_async(connectable: <link xref="Gio.SocketConnectable">Gio.Socke
 }
   </code></synopsis>
   <p>This is the asynchronous version of <link xref="Gio.SocketClient.connect"/>.</p>  <p>When the operation is finished <code>callback</code> will be
-called. You can then call <link xref="Gio.connect_finish"/> to get
+called. You can then call <link xref="Gio.SocketClient.connect_finish"/> to get
 the result of the operation.</p>
   <p>Since 2.22</p>
 <terms>

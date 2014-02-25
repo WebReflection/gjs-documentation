@@ -29,7 +29,7 @@ function parse_uri(uri: String, default_port: Number(guint16)): <link xref="Gio.
 }
   </code></synopsis>
   <p>Creates a new <link xref="Gio.SocketConnectable"/> for connecting to the given
-<code>uri</code>. May fail and return <code>null</code> in case parsing <code>uri</code> fails.</p>  <p>Using this rather than <link xref="Gio.new"/> or
+<code>uri</code>. May fail and return <code>null</code> in case parsing <code>uri</code> fails.</p>  <p>Using this rather than <link xref="Gio.NetworkAddress.new"/> or
 <link xref="Gio.NetworkAddress.parse"/> allows <link xref="Gio.SocketClient"/> to determine
 when to use application-specific proxy protocols.</p>
   <p>Since 2.26</p>

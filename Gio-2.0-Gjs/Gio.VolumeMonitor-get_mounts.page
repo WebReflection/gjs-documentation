@@ -13,8 +13,8 @@
 function vfunc_get_mounts(): Array(<link xref="Gio.Mount">Gio.Mount</link>) {
 }
   </code></synopsis>
-  <p>Gets a list of the mounts on the system.</p>  <p>The returned list should be freed with <link xref="GLib.free"/>, after
-its elements have been unreffed with <link xref="GObject.unref"/>.</p>
+  <p>Gets a list of the mounts on the system.</p>  <p>The returned list should be freed with <link xref="GLib.List.free"/>, after
+its elements have been unreffed with <link xref="GObject.Object.unref"/>.</p>
 
 <terms>
 <item>

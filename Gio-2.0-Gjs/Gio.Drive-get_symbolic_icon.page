@@ -19,7 +19,7 @@ function vfunc_get_symbolic_icon(): <link xref="Gio.Icon">Gio.Icon</link> {
 <item>
 <title><code>Returns</code></title>
   <p>symbolic <link xref="Gio.Icon"/> for the <code>drive</code>.
-   Free the returned object with <link xref="GObject.unref"/>.</p>
+   Free the returned object with <link xref="GObject.Object.unref"/>.</p>
 </item>
 </terms>
 

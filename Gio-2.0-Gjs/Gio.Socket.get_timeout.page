@@ -21,7 +21,7 @@ function get_timeout(): Number(guint) {
 }
   </code></synopsis>
   <p>Gets the timeout setting of the socket. For details on this, see
-<link xref="Gio.set_timeout"/>.</p>
+<link xref="Gio.Socket.set_timeout"/>.</p>
   <p>Since 2.26</p>
 <terms>
 <item>

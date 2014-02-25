@@ -25,7 +25,7 @@ function add_service_dir(path: String): void {
 }
   </code></synopsis>
   <p>Add a path where dbus-daemon will look up .service files. This can't be
-called after <link xref="Gio.up"/>.</p>
+called after <link xref="Gio.TestDBus.up"/>.</p>
 
 <terms>
 <item>

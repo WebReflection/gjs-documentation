@@ -22,7 +22,7 @@ function get_filename(): String {
   </code></synopsis>
   <p>When <code>info</code> was created from a known filename, return it.  In some
 situations such as the <link xref="Gio.DesktopAppInfo"/> returned from
-<link xref="Gio.new_from_keyfile"/>, this function will return <code>null</code>.</p>
+<link xref="Gio.DesktopAppInfo.new_from_keyfile"/>, this function will return <code>null</code>.</p>
   <p>Since 2.24</p>
 <terms>
 <item>

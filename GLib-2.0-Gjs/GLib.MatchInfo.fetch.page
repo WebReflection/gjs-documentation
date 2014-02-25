@@ -29,7 +29,7 @@ parentheses. 0 is the full text of the match, 1 is the first paren
 set, 2 the second, and so on.</p>  <p>If <code>match_num</code> is a valid sub pattern but it didn't match anything
 (e.g. sub pattern 1, matching "b" against "(a)?b") then an empty
 string is returned.</p>  <p>If the match was obtained using the DFA algorithm, that is using
-<link xref="GLib.match_all"/> or <link xref="GLib.match_all_full"/>, the retrieved
+<link xref="GLib.Regex.match_all"/> or <link xref="GLib.Regex.match_all_full"/>, the retrieved
 string is not that of a set of parentheses but that of a matched
 substring. Substrings are matched in reverse order of length, so
 0 is the longest match.</p>  <p>The string is fetched from the string passed to the match function,

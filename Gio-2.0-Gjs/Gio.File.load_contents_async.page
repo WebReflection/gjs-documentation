@@ -31,7 +31,7 @@ function load_contents_async(cancellable: <link xref="Gio.Cancellable">Gio.Cance
   <p>Starts an asynchronous load of the <code>file</code>'s contents.</p>  <p>For more details, see <link xref="Gio.File.load_contents"/> which is
 the synchronous version of this call.</p>  <p>When the load operation has completed, <code>callback</code> will be called
 with @user data. To finish the operation, call
-<link xref="Gio.load_contents_finish"/> with the <link xref="Gio.AsyncResult"/> returned by
+<link xref="Gio.File.load_contents_finish"/> with the <link xref="Gio.AsyncResult"/> returned by
 the <code>callback</code>.</p>  <p>If <code>cancellable</code> is not <code>null</code>, then the operation can be cancelled by
 triggering the cancellable object from another thread. If the operation
 was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be returned.</p>

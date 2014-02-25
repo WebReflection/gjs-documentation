@@ -30,7 +30,7 @@ some other languages such as the `subprocess.py`
 included with Python.  For example, using <link xref="Gio.Subprocess"/> one could
 create two child processes, reading standard output from the first,
 processing it, and writing to the input stream of the second, all
-without blocking the main loop.</p>  <p>A powerful <link xref="Gio.communicate"/> API is provided similar to the
+without blocking the main loop.</p>  <p>A powerful <link xref="Gio.Subprocess.communicate"/> API is provided similar to the
 `communicate()` method of `subprocess.py`. This enables very easy
 interaction with a subprocess that has been opened with pipes.</p>  <p><link xref="Gio.Subprocess"/> defaults to tight control over the file descriptors open
 in the child process, avoiding dangling-fd issues that are caused by
@@ -39,19 +39,19 @@ spawned process are ones that were explicitly specified by the
 <link xref="Gio.Subprocess"/> API (unless <link xref="Gio.SubprocessFlags"/>.inherit_fds was
 specified).</p>  <p><link xref="Gio.Subprocess"/> will quickly reap all child processes as they exit,
 avoiding "zombie processes" remaining around for long periods of
-time.  <link xref="Gio.wait"/> can be used to wait for this to happen,
+time.  <link xref="Gio.Subprocess.wait"/> can be used to wait for this to happen,
 but it will happen even without the call being explicitly made.</p>  <p>As a matter of principle, <link xref="Gio.Subprocess"/> has no API that accepts
 shell-style space-separated strings.  It will, however, match the
 typical shell behaviour of searching the PATH for executables that do
 not contain a directory separator in their name.</p>  <p><link xref="Gio.Subprocess"/> attempts to have a very simple API for most uses (ie:
 spawning a subprocess with arguments and support for most typical
-kinds of input and output redirection).  See <link xref="Gio.new"/>. The
+kinds of input and output redirection).  See <link xref="Gio.Subprocess.new"/>. The
 <link xref="Gio.SubprocessLauncher"/> API is provided for more complicated cases
 (advanced types of redirection, environment variable manipulation,
 change of working directory, child setup functions, etc).</p>  <p>A typical use of <link xref="Gio.Subprocess"/> will involve calling
-<link xref="Gio.new"/>, followed by <link xref="Gio.wait_async"/> or
-<link xref="Gio.wait"/>.  After the process exits, the status can be
-checked using functions such as <link xref="Gio.get_if_exited"/> (which
+<link xref="Gio.Subprocess.new"/>, followed by <link xref="Gio.Subprocess.wait_async"/> or
+<link xref="Gio.Subprocess.wait"/>.  After the process exits, the status can be
+checked using functions such as <link xref="Gio.Subprocess.get_if_exited"/> (which
 are similar to the familiar WIFEXITED-style POSIX macros).</p>
   <p>Since 2.40</p>
   <synopsis>

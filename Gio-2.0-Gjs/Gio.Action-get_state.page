@@ -16,7 +16,7 @@ function vfunc_get_state(): <link href="../GLib-2.0/GLib.Variant.page">GLib.Vari
   <p>Queries the current state of <code>action</code>.</p>  <p>If the action is not stateful then <code>null</code> will be returned.  If the
 action is stateful then the type of the return value is the type
 given by <link xref="Gio.Action.get_state_type"/>.</p>  <p>The return value (if non-<code>null</code>) should be freed with
-<link xref="GLib.unref"/> when it is no longer required.</p>
+<link xref="GLib.Variant.unref"/> when it is no longer required.</p>
   <p>Since 2.28</p>
 <terms>
 <item>

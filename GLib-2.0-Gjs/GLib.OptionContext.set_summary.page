@@ -26,8 +26,8 @@ function set_summary(summary: String): void {
   </code></synopsis>
   <p>Adds a string to be displayed in `--help` output before the list
 of options. This is typically a summary of the program functionality.</p>  <p>Note that the summary is translated (see
-<link xref="GLib.set_translate_func"/> and
-<link xref="GLib.set_translation_domain"/>).</p>
+<link xref="GLib.OptionContext.set_translate_func"/> and
+<link xref="GLib.OptionContext.set_translation_domain"/>).</p>
   <p>Since 2.12</p>
 <terms>
 <item>

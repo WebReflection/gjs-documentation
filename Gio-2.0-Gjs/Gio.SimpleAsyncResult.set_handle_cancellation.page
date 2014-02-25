@@ -26,7 +26,7 @@ function set_handle_cancellation(handle_cancellation: Boolean): void {
   </code></synopsis>
   <p>Sets whether to handle cancellation within the asynchronous operation.</p>  <p>This function has nothing to do with
 <link xref="Gio.SimpleAsyncResult.set_check_cancellable"/>.  It only refers to the
-<link xref="Gio.Cancellable"/> passed to <link xref="Gio.run_in_thread"/>.</p>
+<link xref="Gio.Cancellable"/> passed to <link xref="Gio.SimpleAsyncResult.run_in_thread"/>.</p>
 
 <terms>
 <item>

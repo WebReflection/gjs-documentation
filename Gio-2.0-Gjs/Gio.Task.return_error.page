@@ -25,12 +25,12 @@ function return_error(error: <link href="../GLib-2.0/GLib.Error.page">GLib.Error
 }
   </code></synopsis>
   <p>Sets <code>task</code>'s result to <code>error</code> (which <code>task</code> assumes ownership of)
-and completes the task (see <link xref="Gio.return_pointer"/> for more
+and completes the task (see <link xref="Gio.Task.return_pointer"/> for more
 discussion of exactly what this means).</p>  <p>Note that since the task takes ownership of <code>error</code>, and since the
 task may be completed before returning from <link xref="Gio.Task.return_error"/>,
 you cannot assume that <code>error</code> is still valid after calling this.
-Call <link xref="GLib.copy"/> on the error if you need to keep a local copy
-as well.</p>  <p>See also <link xref="Gio.return_new_error"/>.</p>
+Call <link xref="GLib.Error.copy"/> on the error if you need to keep a local copy
+as well.</p>  <p>See also <link xref="Gio.Task.return_new_error"/>.</p>
   <p>Since 2.36</p>
 <terms>
 <item>

@@ -25,7 +25,7 @@ function receive_fd(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</l
 }
   </code></synopsis>
   <p>Receives a file descriptor from the sending end of the connection.
-The sending end has to call <link xref="Gio.send_fd"/> for this
+The sending end has to call <link xref="Gio.UnixConnection.send_fd"/> for this
 to work.</p>  <p>As well as reading the fd this also reads a single byte from the
 stream, as this is required for fd passing to work on some
 implementations.</p>

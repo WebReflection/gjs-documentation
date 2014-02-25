@@ -14,10 +14,10 @@ const Gio = imports.gi.Gio;
 
 let outputStream = new Gio.OutputStream();
   </code></synopsis>
-  <p><link xref="Gio.OutputStream"/> has functions to write to a stream (<link xref="Gio.write"/>),
-to close a stream (<link xref="Gio.close"/>) and to flush pending writes
-(<link xref="Gio.flush"/>).</p>  <p>To copy the content of an input stream to an output stream without
-manually handling the reads and writes, use <link xref="Gio.splice"/>.</p>  <p>All of these functions have async variants too.</p>
+  <p><link xref="Gio.OutputStream"/> has functions to write to a stream (<link xref="Gio.OutputStream.write"/>),
+to close a stream (<link xref="Gio.OutputStream.close"/>) and to flush pending writes
+(<link xref="Gio.OutputStream.flush"/>).</p>  <p>To copy the content of an input stream to an output stream without
+manually handling the reads and writes, use <link xref="Gio.OutputStream.splice"/>.</p>  <p>All of these functions have async variants too.</p>
 
   <synopsis>
     <title>Hierarchy</title>

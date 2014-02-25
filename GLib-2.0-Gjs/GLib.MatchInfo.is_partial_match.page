@@ -32,7 +32,7 @@ check that what has been typed so far is potentially valid, it is
 able to raise an error as soon as a mistake is made.</p>  <p>GRegex supports the concept of partial matching by means of the
 #G_REGEX_MATCH_PARTIAL_SOFT and #G_REGEX_MATCH_PARTIAL_HARD flags.
 When they are used, the return code for
-<link xref="GLib.match"/> or <link xref="GLib.match_full"/> is, as usual, <code>true</code>
+<link xref="GLib.Regex.match"/> or <link xref="GLib.Regex.match_full"/> is, as usual, <code>true</code>
 for a complete match, <code>false</code> otherwise. But, when these functions
 return <code>false</code>, you can check if the match was partial calling
 <link xref="GLib.MatchInfo.is_partial_match"/>.</p>  <p>The difference between #G_REGEX_MATCH_PARTIAL_SOFT and

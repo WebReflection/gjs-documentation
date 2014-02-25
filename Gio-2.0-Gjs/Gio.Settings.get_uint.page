@@ -24,7 +24,7 @@ function get_uint(key: String): Number(guint) {
     // Gjs wrapper for g_settings_get_uint()
 }
   </code></synopsis>
-  <p>Gets the value that is stored at <code>key</code> in <code>settings</code>.</p>  <p>A convenience variant of <link xref="Gio.get"/> for 32-bit unsigned
+  <p>Gets the value that is stored at <code>key</code> in <code>settings</code>.</p>  <p>A convenience variant of <link xref="Gio.Settings.get"/> for 32-bit unsigned
 integers.</p>  <p>It is a programmer error to give a <code>key</code> that isn't specified as
 having a uint32 type in the schema for <code>settings</code>.</p>
   <p>Since 2.30</p>

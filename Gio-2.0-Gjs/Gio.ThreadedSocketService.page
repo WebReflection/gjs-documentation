@@ -19,11 +19,11 @@ let threadedSocketService = new Gio.ThreadedSocketService({
   <p>A <link xref="Gio.ThreadedSocketService"/> is a simple subclass of <link xref="Gio.SocketService"/>
 that handles incoming connections by creating a worker thread and
 dispatching the connection to it by emitting the
-<link xref="Gio.run"/> signal in the new thread.</p>  <p>The signal handler may perform blocking IO and need not return
+<link xref="Gio.ThreadedSocketService-run"/> signal in the new thread.</p>  <p>The signal handler may perform blocking IO and need not return
 until the connection is closed.</p>  <p>The service is implemented using a thread pool, so there is a
 limited amount of threads available to serve incoming requests.
 The service automatically stops the <link xref="Gio.SocketService"/> from accepting
-new connections when all threads are busy.</p>  <p>As with <link xref="Gio.SocketService"/>, you may connect to <link xref="Gio.run"/>,
+new connections when all threads are busy.</p>  <p>As with <link xref="Gio.SocketService"/>, you may connect to <link xref="Gio.ThreadedSocketService-run"/>,
 or subclass and override the default handler.</p>
   <p>Since 2.22</p>
   <synopsis>

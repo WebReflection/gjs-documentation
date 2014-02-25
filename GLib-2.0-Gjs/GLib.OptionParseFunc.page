@@ -27,7 +27,7 @@ function onOptionParseFunc(context: <link xref="GLib.OptionContext">GLib.OptionC
 <item>
 <title><code>data</code></title>
   <p>User data added to the <link xref="GLib.OptionGroup"/> containing the option when it
- was created with <link xref="GLib.new"/></p>
+ was created with <link xref="GLib.OptionGroup.new"/></p>
 </item>
 <item>
 <title><code>ok</code></title>

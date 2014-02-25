@@ -37,7 +37,7 @@ function unmount_with_operation(flags: <link xref="Gio.MountUnmountFlags">Gio.Mo
 }
   </code></synopsis>
   <p>Unmounts a mount. This is an asynchronous operation, and is
-finished by calling <link xref="Gio.unmount_with_operation_finish"/> with the <code>mount</code>
+finished by calling <link xref="Gio.Mount.unmount_with_operation_finish"/> with the <code>mount</code>
 and <link xref="Gio.AsyncResult"/> data returned in the <code>callback</code>.</p>
   <p>Since 2.22</p>
 <terms>

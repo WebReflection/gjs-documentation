@@ -39,7 +39,7 @@ function create_readwrite_async(flags: <link xref="Gio.FileCreateFlags">Gio.File
   <p>Asynchronously creates a new file and returns a stream
 for reading and writing to it. The file must not already exist.</p>  <p>For more details, see <link xref="Gio.File.create_readwrite"/> which is
 the synchronous version of this call.</p>  <p>When the operation is finished, <code>callback</code> will be called.
-You can then call <link xref="Gio.create_readwrite_finish"/> to get
+You can then call <link xref="Gio.File.create_readwrite_finish"/> to get
 the result of the operation.</p>
   <p>Since 2.22</p>
 <terms>

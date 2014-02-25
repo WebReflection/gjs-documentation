@@ -22,7 +22,7 @@ function get_path(): String {
   </code></synopsis>
   <p>Gets <code>address</code>'s path, or for abstract sockets the "name".</p>  <p>Guaranteed to be zero-terminated, but an abstract socket
 may contain embedded zeros, and thus you should use
-<link xref="Gio.get_path_len"/> to get the true length
+<link xref="Gio.UnixSocketAddress.get_path_len"/> to get the true length
 of this string.</p>
   <p>Since 2.22</p>
 <terms>

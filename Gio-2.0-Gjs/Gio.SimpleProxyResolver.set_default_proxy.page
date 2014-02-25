@@ -25,8 +25,8 @@ function set_default_proxy(default_proxy: String): void {
 }
   </code></synopsis>
   <p>Sets the default proxy on <code>resolver</code>, to be used for any URIs that
-don't match <link xref="Gio.ignore-hosts"/> or a proxy set
-via <link xref="Gio.set_uri_proxy"/>.</p>  <p>If <code>default_proxy</code> starts with "socks://",
+don't match <link xref="Gio.SimpleProxyResolver-ignore-hosts"/> or a proxy set
+via <link xref="Gio.SimpleProxyResolver.set_uri_proxy"/>.</p>  <p>If <code>default_proxy</code> starts with "socks://",
 <link xref="Gio.SimpleProxyResolver"/> will treat it as referring to all three of
 the socks5, socks4a, and socks4 proxy types.</p>
   <p>Since 2.36</p>

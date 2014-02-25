@@ -38,7 +38,7 @@ function query_info_async(attributes: String, io_priority: Number(gint), cancell
   </code></synopsis>
   <p>Asynchronously queries the <code>stream</code> for a <link xref="Gio.FileInfo"/>. When completed,
 <code>callback</code> will be called with a <link xref="Gio.AsyncResult"/> which can be used to
-finish the operation with <link xref="Gio.query_info_finish"/>.</p>  <p>For the synchronous version of this function, see
+finish the operation with <link xref="Gio.FileOutputStream.query_info_finish"/>.</p>  <p>For the synchronous version of this function, see
 <link xref="Gio.FileOutputStream.query_info"/>.</p>
 
 <terms>

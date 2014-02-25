@@ -19,7 +19,7 @@ be empty (i.e. point to <code>null</code>), or point to an object for as long as
 at least one "strong" reference to that object exists. Before the
 object's <link xref="GObject.ObjectClass"/>.dispose method is called, every <link xref="GObject.WeakRef"/>
 associated with becomes empty (i.e. points to <code>null</code>).</p>  <p>Like <link xref="GObject.Value"/>, <link xref="GObject.WeakRef"/> can be statically allocated, stack- or
-heap-allocated, or embedded in larger structures.</p>  <p>Unlike <link xref="GObject.weak_ref"/> and <link xref="GObject.add_weak_pointer"/>, this weak
+heap-allocated, or embedded in larger structures.</p>  <p>Unlike <link xref="GObject.Object.weak_ref"/> and <link xref="GObject.Object.add_weak_pointer"/>, this weak
 reference is thread-safe: converting a weak pointer to a reference is
 atomic with respect to invalidation of weak pointers to destroyed
 objects.</p>  <p>If the object's <link xref="GObject.ObjectClass"/>.dispose method results in additional

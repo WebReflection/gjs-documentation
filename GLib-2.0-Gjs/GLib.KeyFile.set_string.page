@@ -35,7 +35,7 @@ function set_string(group_name: String, key: String, string: String): void {
   <p>Associates a new string value with <code>key</code> under <code>group_name</code>.
 If <code>key</code> cannot be found then it is created.
 If <code>group_name</code> cannot be found then it is created.
-Unlike <link xref="GLib.set_value"/>, this function handles characters
+Unlike <link xref="GLib.KeyFile.set_value"/>, this function handles characters
 that need escaping, such as newlines.</p>
   <p>Since 2.6</p>
 <terms>

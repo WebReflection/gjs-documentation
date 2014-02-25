@@ -20,31 +20,31 @@ program to another, or to the outside world. Action groups are often
 used together with a <link xref="Gio.MenuModel"/> that provides additional
 representation data for displaying the actions to the user, e.g. in
 a menu.</p>  <p>The main way to interact with the actions in a GActionGroup is to
-activate them with <link xref="Gio.activate_action"/>. Activating an
+activate them with <link xref="Gio.ActionGroup.activate_action"/>. Activating an
 action may require a <link xref="GLib.Variant"/> parameter. The required type of the
-parameter can be inquired with <link xref="Gio.get_action_parameter_type"/>.
-Actions may be disabled, see <link xref="Gio.get_action_enabled"/>.
+parameter can be inquired with <link xref="Gio.ActionGroup.get_action_parameter_type"/>.
+Actions may be disabled, see <link xref="Gio.ActionGroup.get_action_enabled"/>.
 Activating a disabled action has no effect.</p>  <p>Actions may optionally have a state in the form of a <link xref="GLib.Variant"/>. The
 current state of an action can be inquired with
-<link xref="Gio.get_action_state"/>. Activating a stateful action may
+<link xref="Gio.ActionGroup.get_action_state"/>. Activating a stateful action may
 change its state, but it is also possible to set the state by calling
-<link xref="Gio.change_action_state"/>.</p>  <p>As typical example, consider a text editing application which has an
+<link xref="Gio.ActionGroup.change_action_state"/>.</p>  <p>As typical example, consider a text editing application which has an
 option to change the current font to 'bold'. A good way to represent
 this would be a stateful action, with a boolean state. Activating the
 action would toggle the state.</p>  <p>Each action in the group has a unique name (which is a string).  All
-method calls, except <link xref="Gio.list_actions"/> take the name of
+method calls, except <link xref="Gio.ActionGroup.list_actions"/> take the name of
 an action as an argument.</p>  <p>The <link xref="Gio.ActionGroup"/> API is meant to be the 'public' API to the action
 group.  The calls here are exactly the interaction that 'external
 forces' (eg: UI, incoming D-Bus messages, etc.) are supposed to have
 with actions.  'Internal' APIs (ie: ones meant only to be accessed by
 the action group implementation) are found on subclasses.  This is
-why you will find - for example - <link xref="Gio.get_action_enabled"/>
+why you will find - for example - <link xref="Gio.ActionGroup.get_action_enabled"/>
 but not an equivalent set() call.</p>  <p>Signals are emitted on the action group in response to state changes
 on individual actions.</p>  <p>Implementations of <link xref="Gio.ActionGroup"/> should provide implementations for
-the virtual functions <link xref="Gio.list_actions"/> and
-<link xref="Gio.query_action"/>.  The other virtual functions should
+the virtual functions <link xref="Gio.ActionGroup.list_actions"/> and
+<link xref="Gio.ActionGroup.query_action"/>.  The other virtual functions should
 not be implemented - their "wrappers" are actually implemented with
-calls to <link xref="Gio.query_action"/>.</p>
+calls to <link xref="Gio.ActionGroup.query_action"/>.</p>
 
   <synopsis>
     <title>Prerequisites</title>

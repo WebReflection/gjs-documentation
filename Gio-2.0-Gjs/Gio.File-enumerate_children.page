@@ -48,7 +48,7 @@ error will be returned. Other errors are possible too.</p>
 <item>
 <title><code>Returns</code></title>
   <p>A <link xref="Gio.FileEnumerator"/> if successful,
-    <code>null</code> on error. Free the returned object with <link xref="GObject.unref"/>.</p>
+    <code>null</code> on error. Free the returned object with <link xref="GObject.Object.unref"/>.</p>
 </item>
 </terms>
 

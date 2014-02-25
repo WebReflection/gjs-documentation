@@ -24,7 +24,7 @@ function is_writable(): Boolean {
 reliably, and it is possible that a call to <link xref="Gio.OutputStream.write"/>
 after this returns <code>true</code> would still block. To guarantee
 non-blocking behavior, you should always use
-<link xref="Gio.write_nonblocking"/>, which will return a
+<link xref="Gio.PollableOutputStream.write_nonblocking"/>, which will return a
 <link xref="Gio.IOErrorEnum"/>.would_block error rather than blocking.</p>
   <p>Since 2.28</p>
 <terms>

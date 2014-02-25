@@ -21,7 +21,7 @@ function unexport(): void {
 }
   </code></synopsis>
   <p>Stops exporting <code>interface_</code> on all connections it is exported on.</p>  <p>To unexport <code>interface_</code> from only a single connection, use
-<link xref="Gio.unexport_from_connection"/></p>
+<link xref="Gio.DBusInterfaceSkeleton.unexport_from_connection"/></p>
   <p>Since 2.30</p>
 
 </page>

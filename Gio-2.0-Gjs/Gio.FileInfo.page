@@ -19,11 +19,11 @@ implements methods for getting information that all files should
 contain, and allows for manipulation of extended attributes.</p>  <p>See [GFileAttribute][gio-GFileAttribute for more information on how
 GIO handles file attributes.</p>  <p>To obtain a <link xref="Gio.FileInfo"/> for a <link xref="Gio.File"/>, use <link xref="Gio.File.query_info"/> (or its
 async variant). To obtain a <link xref="Gio.FileInfo"/> for a file input or output
-stream, use <link xref="Gio.query_info"/> or
-<link xref="Gio.query_info"/> (or their async variants).</p>  <p>To change the actual attributes of a file, you should then set the
+stream, use <link xref="Gio.FileInputStream.query_info"/> or
+<link xref="Gio.FileOutputStream.query_info"/> (or their async variants).</p>  <p>To change the actual attributes of a file, you should then set the
 attribute in the <link xref="Gio.FileInfo"/> and call <link xref="Gio.File.set_attributes_from_info"/>
 or <link xref="Gio.File.set_attributes_async"/> on a GFile.</p>  <p>However, not all attributes can be changed in the file. For instance,
-the actual size of a file cannot be changed via <link xref="Gio.set_size"/>.
+the actual size of a file cannot be changed via <link xref="Gio.FileInfo.set_size"/>.
 You may call <link xref="Gio.File.query_settable_attributes"/> and
 <link xref="Gio.File.query_writable_namespaces"/> to discover the settable attributes
 of a particular file at runtime.</p>  <p><link xref="Gio.FileAttributeMatcher"/> allows for searching through a <link xref="Gio.FileInfo"/> for

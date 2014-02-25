@@ -26,8 +26,8 @@ function new_tuple(children: Array(<link xref="GLib.Variant">GLib.Variant</link>
   </code></synopsis>
   <p>Creates a new tuple <link xref="GLib.Variant"/> out of the items in <code>children</code>.  The
 type is determined from the types of <code>children</code>.  No entry in the
-<code>children</code> array may be <code>null</code>.</p>  <p>If <code>n_children</code> is 0 then the unit tuple is constructed.</p>  <p>If the <code>children</code> are floating references (see <link xref="GLib.ref_sink"/>), the
-new instance takes ownership of them as if via <link xref="GLib.ref_sink"/>.</p>
+<code>children</code> array may be <code>null</code>.</p>  <p>If <code>n_children</code> is 0 then the unit tuple is constructed.</p>  <p>If the <code>children</code> are floating references (see <link xref="GLib.Variant.ref_sink"/>), the
+new instance takes ownership of them as if via <link xref="GLib.Variant.ref_sink"/>.</p>
   <p>Since 2.24</p>
 <terms>
 <item>

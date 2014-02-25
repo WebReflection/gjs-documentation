@@ -40,7 +40,7 @@ function param_spec_string(name: String, nick: String, blurb: String, default_va
     // Gjs wrapper for g_param_spec_string()
 }
   </code></synopsis>
-  <p>Creates a new <link xref="GObject.ParamSpecString"/> instance.</p>  <p>See <link xref="GObject.internal"/> for details on property names.</p>
+  <p>Creates a new <link xref="GObject.ParamSpecString"/> instance.</p>  <p>See <link xref="GObject.ParamSpec.internal"/> for details on property names.</p>
 
 <terms>
 <item>

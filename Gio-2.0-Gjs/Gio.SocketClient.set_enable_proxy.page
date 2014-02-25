@@ -27,7 +27,7 @@ function set_enable_proxy(enable: Boolean): void {
   <p>Sets whether or not <code>client</code> attempts to make connections via a
 proxy server. When enabled (the default), <link xref="Gio.SocketClient"/> will use a
 <link xref="Gio.ProxyResolver"/> to determine if a proxy protocol such as SOCKS is
-needed, and automatically do the necessary proxy negotiation.</p>  <p>See also <link xref="Gio.set_proxy_resolver"/>.</p>
+needed, and automatically do the necessary proxy negotiation.</p>  <p>See also <link xref="Gio.SocketClient.set_proxy_resolver"/>.</p>
   <p>Since 2.26</p>
 <terms>
 <item>

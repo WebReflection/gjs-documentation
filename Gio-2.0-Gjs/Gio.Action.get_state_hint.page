@@ -29,7 +29,7 @@ returned then the tuple specifies the inclusive lower and upper bound
 of valid values for the state.</p>  <p>In any case, the information is merely a hint.  It may be possible to
 have a state value outside of the hinted range and setting a value
 within the range may fail.</p>  <p>The return value (if non-<code>null</code>) should be freed with
-<link xref="GLib.unref"/> when it is no longer required.</p>
+<link xref="GLib.Variant.unref"/> when it is no longer required.</p>
   <p>Since 2.28</p>
 <terms>
 <item>

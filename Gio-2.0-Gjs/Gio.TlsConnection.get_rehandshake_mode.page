@@ -21,7 +21,7 @@ function get_rehandshake_mode(): <link xref="Gio.TlsRehandshakeMode">Gio.TlsReha
 }
   </code></synopsis>
   <p>Gets <code>conn</code> rehandshaking mode. See
-<link xref="Gio.set_rehandshake_mode"/> for details.</p>
+<link xref="Gio.TlsConnection.set_rehandshake_mode"/> for details.</p>
   <p>Since 2.28</p>
 <terms>
 <item>

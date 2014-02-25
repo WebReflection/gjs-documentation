@@ -44,7 +44,7 @@ the data has been fully received.</p>  <p>Note that this only affects the behavi
 connection; when the application calls <link xref="Gio.IOStream.close"/> itself
 on <code>conn</code>, this will send a close notification regardless of the
 setting of this property. If you explicitly want to do an unclean
-close, you can close <code>conn</code>'s <link xref="Gio.base-io-stream"/> rather
+close, you can close <code>conn</code>'s <link xref="Gio.TlsConnection-base-io-stream"/> rather
 than closing <code>conn</code> itself.</p>
   <p>Since 2.28</p>
 <terms>

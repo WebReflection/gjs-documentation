@@ -22,7 +22,7 @@ the different <code>event</code> values are as follows:</p>  <p>- <link xref="Gi
   to a remote host; either a proxy server or the destination server
   itself. <code>connection</code> is the <link xref="Gio.SocketConnection"/>, which is not yet
   connected.  Since GLib 2.40, you can access the remote
-  address via <link xref="Gio.get_remote_address"/>.</p>  <p>- <link xref="Gio.SocketClientEvent"/>.connected: @client has successfully connected
+  address via <link xref="Gio.SocketConnection.get_remote_address"/>.</p>  <p>- <link xref="Gio.SocketClientEvent"/>.connected: @client has successfully connected
   to a remote host. <code>connection</code> is the connected <link xref="Gio.SocketConnection"/>.</p>  <p>- <link xref="Gio.SocketClientEvent"/>.proxy_negotiating: @client is about to negotiate
   with a proxy to get it to connect to <code>connectable</code>. <code>connection</code> is
   the <link xref="Gio.SocketConnection"/> to the proxy server.</p>  <p>- <link xref="Gio.SocketClientEvent"/>.proxy_negotiated: @client has negotiated a

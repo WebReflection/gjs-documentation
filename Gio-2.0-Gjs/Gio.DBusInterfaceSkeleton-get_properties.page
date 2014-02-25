@@ -20,7 +20,7 @@ function vfunc_get_properties(): <link href="../GLib-2.0/GLib.Variant.page">GLib
 <title><code>Returns</code></title>
   <p>A <link xref="GLib.Variant"/> of type
 ['a{sv}'][G-VARIANT-TYPE-VARDICT:CAPS].
-Free with <link xref="GLib.unref"/>.</p>
+Free with <link xref="GLib.Variant.unref"/>.</p>
 </item>
 </terms>
 

@@ -38,7 +38,7 @@ for this key.</p>  <p>This information should not be used by normal programs.  I
 considered to be a hint for introspection purposes.  Normal programs
 should already know what is permitted by their own schema.  The
 format may change in any way in the future -- but particularly, new
-forms may be added to the possibilities described above.</p>  <p>You should free the returned value with <link xref="GLib.unref"/> when it is
+forms may be added to the possibilities described above.</p>  <p>You should free the returned value with <link xref="GLib.Variant.unref"/> when it is
 no longer needed.</p>
   <p>Since 2.40</p>
 <terms>

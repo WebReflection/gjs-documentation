@@ -28,10 +28,10 @@ function disconnect(handler_id: Number(gulong)): void {
 <link xref="GObject.signal_handler_disconnect"/>.  Additionally, in the event that a
 signal handler is currently running, this call will block until the
 handler has finished.  Calling this function from a
-<link xref="Gio.cancelled"/> signal handler will therefore result in a
+<link xref="Gio.Cancellable-cancelled"/> signal handler will therefore result in a
 deadlock.</p>  <p>This avoids a race condition where a thread cancels at the
 same time as the cancellable operation is finished and the
-signal handler is removed. See <link xref="Gio.cancelled"/> for
+signal handler is removed. See <link xref="Gio.Cancellable-cancelled"/> for
 details on how to use this.</p>  <p>If <code>cancellable</code> is <code>null</code> or <code>handler_id</code> is %0 this function does
 nothing.</p>
   <p>Since 2.22</p>

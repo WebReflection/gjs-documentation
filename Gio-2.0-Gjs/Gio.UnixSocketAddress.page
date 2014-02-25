@@ -25,7 +25,7 @@ visible in the filesystem and not affected by the filesystem
 permissions, visibility, etc. Currently this is only supported
 under Linux. If you attempt to use abstract sockets on other
 systems, function calls may return <link xref="Gio.IOErrorEnum"/>.not_supported
-errors. You can use <link xref="Gio.abstract_names_supported"/>
+errors. You can use <link xref="Gio.UnixSocketAddress.abstract_names_supported"/>
 to see if abstract names are supported.</p>  <p>Note that `&lt;gio/gunixsocketaddress.h&gt;` belongs to the UNIX-specific GIO
 interfaces, thus you have to use the `gio-unix-2.0.pc` pkg-config file
 when using it.</p>

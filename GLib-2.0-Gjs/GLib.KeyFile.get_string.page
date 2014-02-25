@@ -29,7 +29,7 @@ function get_string(group_name: String, key: String): String {
 }
   </code></synopsis>
   <p>Returns the string value associated with <code>key</code> under <code>group_name</code>.
-Unlike <link xref="GLib.get_value"/>, this function handles escape sequences
+Unlike <link xref="GLib.KeyFile.get_value"/>, this function handles escape sequences
 like \s.</p>  <p>In the event the key cannot be found, <code>null</code> is returned and
 @error is set to #G_KEY_FILE_ERROR_KEY_NOT_FOUND.  In the
 event that the <code>group_name</code> cannot be found, <code>null</code> is returned

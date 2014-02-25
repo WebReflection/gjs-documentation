@@ -32,7 +32,7 @@ function set_default_action_and_target(action: String, target: <link href="../GL
 activated when the notification is clicked on. It must be an
 application-wide action (start with "app.").</p>  <p>If @target_format is given, it is used to collect remaining
 positional parameters into a GVariant instance, similar to
-<link xref="GLib.new"/>.</p>  <p>If <code>target</code> is non-<code>null</code>, <code>action</code> will be activated with <code>target</code> as
+<link xref="GLib.Variant.new"/>.</p>  <p>If <code>target</code> is non-<code>null</code>, <code>action</code> will be activated with <code>target</code> as
 its parameter.</p>  <p>When no default action is set, the application that the notification
 was sent on is activated.</p>
   <p>Since 2.40</p>

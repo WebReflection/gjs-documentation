@@ -20,7 +20,7 @@ of the link that has just been advanced to.  At this point,
 <link xref="Gio.MenuLinkIter.get_name"/> and <link xref="Gio.MenuLinkIter.get_value"/> will return the
 same values again.</p>  <p>The value returned in <code>out_link</code> remains valid for as long as the iterator
 remains at the current position.  The value returned in <code>value</code> must
-be unreffed using <link xref="GObject.unref"/> when it is no longer in use.</p>
+be unreffed using <link xref="GObject.Object.unref"/> when it is no longer in use.</p>
   <p>Since 2.32</p>
 <terms>
 <item>

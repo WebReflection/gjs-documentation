@@ -41,7 +41,7 @@ function param_spec_param(name: String, nick: String, blurb: String, param_type:
 }
   </code></synopsis>
   <p>Creates a new <link xref="GObject.ParamSpecParam"/> instance specifying a %G_TYPE_PARAM
-property.</p>  <p>See <link xref="GObject.internal"/> for details on property names.</p>
+property.</p>  <p>See <link xref="GObject.ParamSpec.internal"/> for details on property names.</p>
 
 <terms>
 <item>

@@ -20,7 +20,7 @@ function get_timeout(): Number(guint) {
     // Gjs wrapper for g_socket_client_get_timeout()
 }
   </code></synopsis>
-  <p>Gets the I/O timeout time for sockets created by <code>client</code>.</p>  <p>See <link xref="Gio.set_timeout"/> for details.</p>
+  <p>Gets the I/O timeout time for sockets created by <code>client</code>.</p>  <p>See <link xref="Gio.SocketClient.set_timeout"/> for details.</p>
   <p>Since 2.26</p>
 <terms>
 <item>

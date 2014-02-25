@@ -29,8 +29,8 @@ function new_dict_entry(key: <link xref="GLib.Variant">GLib.Variant</link>, valu
 }
   </code></synopsis>
   <p>Creates a new dictionary entry <link xref="GLib.Variant"/>. <code>key</code> and <code>value</code> must be
-non-<code>null</code>. <code>key</code> must be a value of a basic type (ie: not a container).</p>  <p>If the <code>key</code> or <code>value</code> are floating references (see <link xref="GLib.ref_sink"/>),
-the new instance takes ownership of them as if via <link xref="GLib.ref_sink"/>.</p>
+non-<code>null</code>. <code>key</code> must be a value of a basic type (ie: not a container).</p>  <p>If the <code>key</code> or <code>value</code> are floating references (see <link xref="GLib.Variant.ref_sink"/>),
+the new instance takes ownership of them as if via <link xref="GLib.Variant.ref_sink"/>.</p>
   <p>Since 2.24</p>
 <terms>
 <item>

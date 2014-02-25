@@ -25,7 +25,7 @@ be parsed by the <link xref="Gio.Vfs"/> module.</p>
 <item>
 <title><code>Returns</code></title>
   <p>a <link xref="Gio.File"/> for the given <code>parse_name</code>.
-    Free the returned object with <link xref="GObject.unref"/>.</p>
+    Free the returned object with <link xref="GObject.Object.unref"/>.</p>
 </item>
 </terms>
 

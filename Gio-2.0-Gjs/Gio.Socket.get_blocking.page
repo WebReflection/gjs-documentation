@@ -21,7 +21,7 @@ function get_blocking(): Boolean {
 }
   </code></synopsis>
   <p>Gets the blocking mode of the socket. For details on blocking I/O,
-see <link xref="Gio.set_blocking"/>.</p>
+see <link xref="Gio.Socket.set_blocking"/>.</p>
   <p>Since 2.22</p>
 <terms>
 <item>

@@ -21,8 +21,8 @@ function get_locked(): Boolean {
 }
   </code></synopsis>
   <p>Checks whether <code>message</code> is locked. To monitor changes to this
-value, conncet to the <link xref="GObject.notify"/> signal to listen for changes
-on the <link xref="Gio.locked"/> property.</p>
+value, conncet to the <link xref="GObject.Object-notify"/> signal to listen for changes
+on the <link xref="Gio.DBusMessage-locked"/> property.</p>
   <p>Since 2.26</p>
 <terms>
 <item>

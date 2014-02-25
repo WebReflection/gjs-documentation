@@ -32,7 +32,7 @@ function export_action_group(object_path: String, action_group: <link xref="Gio.
 subject to change in the future.</p>  <p>A given object path can only have one action group exported on it.
 If this constraint is violated, the export will fail and 0 will be
 returned (with @error set accordingly).</p>  <p>You can unexport the action group using
-<link xref="Gio.unexport_action_group"/> with the return value of
+<link xref="Gio.DBusConnection.unexport_action_group"/> with the return value of
 this function.</p>  <p>The thread default main context is taken at the time of this call.
 All incoming action activations and state change requests are
 reported from this context.  Any changes on the action group that

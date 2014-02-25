@@ -21,7 +21,7 @@ function set_default(): void {
 }
   </code></synopsis>
   <p>Sets or unsets the default application for the process, as returned
-by <link xref="Gio.get_default"/>.</p>  <p>This function does not take its own reference on <code>application</code>.  If
+by <link xref="Gio.Application.get_default"/>.</p>  <p>This function does not take its own reference on <code>application</code>.  If
 <code>application</code> is destroyed then the default application will revert
 back to <code>null</code>.</p>
   <p>Since 2.32</p>

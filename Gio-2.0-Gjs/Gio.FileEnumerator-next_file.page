@@ -29,7 +29,7 @@ be unset.</p>
 <item>
 <title><code>Returns</code></title>
   <p>A <link xref="Gio.FileInfo"/> or <code>null</code> on error or end of enumerator.
-   Free the returned object with <link xref="GObject.unref"/> when no longer needed.</p>
+   Free the returned object with <link xref="GObject.Object.unref"/> when no longer needed.</p>
 </item>
 </terms>
 

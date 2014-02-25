@@ -51,7 +51,7 @@ as a file installed in /usr/lib alongside your application).  You
 should set trusted to <code>false</code> if <code>data</code> is read from the network, a
 file in the user's home directory, etc.</p>  <p>If <code>data</code> was not stored in this machine's native endianness, any multi-byte
 numeric values in the returned variant will also be in non-native
-endianness. <link xref="GLib.byteswap"/> can be used to recover the original values.</p>  <p><code>notify</code> will be called with <code>user_data</code> when <code>data</code> is no longer
+endianness. <link xref="GLib.Variant.byteswap"/> can be used to recover the original values.</p>  <p><code>notify</code> will be called with <code>user_data</code> when <code>data</code> is no longer
 needed.  The exact time of this call is unspecified and might even be
 before this function returns.</p>
   <p>Since 2.24</p>

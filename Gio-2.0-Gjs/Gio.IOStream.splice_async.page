@@ -43,7 +43,7 @@ function splice_async(stream2: <link xref="Gio.IOStream">Gio.IOStream</link>, fl
   <p>Asyncronously splice the output stream of <code>stream1</code> to the input stream of
 <code>stream2</code>, and splice the output stream of <code>stream2</code> to the input stream of
 <code>stream1</code>.</p>  <p>When the operation is finished <code>callback</code> will be called.
-You can then call <link xref="Gio.splice_finish"/> to get the
+You can then call <link xref="Gio.IOStream.splice_finish"/> to get the
 result of the operation.</p>
   <p>Since 2.28</p>
 <terms>

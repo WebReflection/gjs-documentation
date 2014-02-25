@@ -31,7 +31,7 @@ function send_message(message: <link xref="Gio.DBusMessage">Gio.DBusMessage</lin
   <p>Asynchronously sends <code>message</code> to the peer represented by <code>connection</code>.</p>  <p>Unless <code>flags</code> contain the
 <link xref="Gio.DBusSendMessageFlags"/>.preserve_serial flag, the serial number
 will be assigned by <code>connection</code> and set on <code>message</code> via
-<link xref="Gio.set_serial"/>. If <code>out_serial</code> is not <code>null</code>, then the
+<link xref="Gio.DBusMessage.set_serial"/>. If <code>out_serial</code> is not <code>null</code>, then the
 serial number used will be written to this location prior to
 submitting the message to the underlying transport.</p>  <p>If <code>connection</code> is closed then the operation will fail with
 <link xref="Gio.IOErrorEnum"/>.closed. If <code>message</code> is not well-formed,

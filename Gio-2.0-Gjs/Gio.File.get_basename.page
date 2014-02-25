@@ -26,7 +26,7 @@ or a uri like sftp://host/) it will return a single directory separator
 or rules other than it may not contain zero bytes.  If you want to use
 filenames in a user interface you should use the display name that you
 can get by requesting the %G_FILE_ATTRIBUTE_STANDARD_DISPLAY_NAME
-attribute with <link xref="Gio.query_info"/>.</p>  <p>This call does no blocking I/O.</p>
+attribute with <link xref="Gio.File.query_info"/>.</p>  <p>This call does no blocking I/O.</p>
 
 <terms>
 <item>

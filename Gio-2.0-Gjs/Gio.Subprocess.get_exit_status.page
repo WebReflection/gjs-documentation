@@ -22,8 +22,8 @@ function get_exit_status(): Number(gint) {
   </code></synopsis>
   <p>Check the exit status of the subprocess, given that it exited
 normally.  This is the value passed to the exit() system call or the
-return value from main.</p>  <p>This is equivalent to the system WEXITSTATUS macro.</p>  <p>It is an error to call this function before <link xref="Gio.wait"/> and
-unless <link xref="Gio.get_if_exited"/> returned <code>true</code>.</p>
+return value from main.</p>  <p>This is equivalent to the system WEXITSTATUS macro.</p>  <p>It is an error to call this function before <link xref="Gio.Subprocess.wait"/> and
+unless <link xref="Gio.Subprocess.get_if_exited"/> returned <code>true</code>.</p>
   <p>Since 2.40</p>
 <terms>
 <item>

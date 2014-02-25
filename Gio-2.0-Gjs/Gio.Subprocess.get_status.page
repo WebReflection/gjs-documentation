@@ -23,7 +23,7 @@ function get_status(): Number(gint) {
   <p>Gets the raw status code of the process, as from waitpid().</p>  <p>This value has no particular meaning, but it can be used with the
 macros defined by the system headers such as WIFEXITED.  It can also
 be used with <link xref="GLib.spawn_check_exit_status"/>.</p>  <p>It is more likely that you want to use <link xref="Gio.Subprocess.get_if_exited"/>
-followed by <link xref="Gio.Subprocess.get_exit_status"/>.</p>  <p>It is an error to call this function before <link xref="Gio.wait"/> has
+followed by <link xref="Gio.Subprocess.get_exit_status"/>.</p>  <p>It is an error to call this function before <link xref="Gio.Subprocess.wait"/> has
 returned.</p>
   <p>Since 2.40</p>
 <terms>

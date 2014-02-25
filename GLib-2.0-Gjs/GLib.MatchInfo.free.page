@@ -20,7 +20,7 @@ function free(): void {
     // Gjs wrapper for g_match_info_free()
 }
   </code></synopsis>
-  <p>If <code>match_info</code> is not <code>null</code>, calls <link xref="GLib.unref"/>; otherwise does
+  <p>If <code>match_info</code> is not <code>null</code>, calls <link xref="GLib.MatchInfo.unref"/>; otherwise does
 nothing.</p>
   <p>Since 2.14</p>
 

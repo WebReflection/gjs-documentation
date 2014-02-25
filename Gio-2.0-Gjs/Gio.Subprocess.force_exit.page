@@ -23,7 +23,7 @@ function force_exit(): void {
   <p>Use an operating-system specific method to attempt an immediate,
 forceful termination of the process.  There is no mechanism to
 determine whether or not the request itself was successful;
-however, you can use <link xref="Gio.wait"/> to monitor the status of
+however, you can use <link xref="Gio.Subprocess.wait"/> to monitor the status of
 the process after calling this function.</p>  <p>On Unix, this function sends %SIGKILL.</p>
   <p>Since 2.40</p>
 

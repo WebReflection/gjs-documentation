@@ -47,7 +47,7 @@ function bind_property_full(source_property: String, target: <link xref="GObject
   <p>Creates a binding between <code>source_property</code> on <code>source</code> and <code>target_property</code>
 on <code>target</code>, allowing you to set the transformation functions to be used by
 the binding.</p>  <p>This function is the language bindings friendly version of
-<link xref="GObject.bind_property_full"/>, using #GClosures instead of
+<link xref="GObject.Object.bind_property_full"/>, using #GClosures instead of
 function pointers.</p>
   <p>Since 2.26</p>
 <terms>

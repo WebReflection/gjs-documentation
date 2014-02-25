@@ -31,9 +31,9 @@ function set_cached_property(property_name: String, value: <link href="../GLib-2
   <p>If <code>value</code> is not <code>null</code>, sets the cached value for the property with
 name <code>property_name</code> to the value in <code>value</code>.</p>  <p>If <code>value</code> is <code>null</code>, then the cached value is removed from the
 property cache.</p>  <p>If <code>proxy</code> has an expected interface (see
-<link xref="Gio.g-interface-info"/>) and <code>property_name</code> is referenced by
+<link xref="Gio.DBusProxy-g-interface-info"/>) and <code>property_name</code> is referenced by
 it, then <code>value</code> is checked against the type of the property.</p>  <p>If the <code>value</code> <link xref="GLib.Variant"/> is floating, it is consumed. This allows
-convenient 'inline' use of <link xref="GLib.new"/>, e.g.
+convenient 'inline' use of <link xref="GLib.Variant.new"/>, e.g.
 |[&lt;!-- language="C" --&gt;
  g_dbus_proxy_set_cached_property (proxy,
                                    "SomeProperty",

@@ -23,7 +23,7 @@ function shadow(): void {
   <p>Increments the shadow count on <code>mount</code>. Usually used by
 <link xref="Gio.VolumeMonitor"/> implementations when creating a shadow mount for
 <code>mount</code>, see <link xref="Gio.Mount.is_shadowed"/> for more information. The caller
-will need to emit the <link xref="Gio.changed"/> signal on <code>mount</code> manually.</p>
+will need to emit the <link xref="Gio.Mount-changed"/> signal on <code>mount</code> manually.</p>
   <p>Since 2.20</p>
 
 </page>

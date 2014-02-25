@@ -21,7 +21,7 @@ function close(): void {
 }
   </code></synopsis>
   <p>Closes the subcontainer inside the given <code>builder</code> that was opened by
-the most recent call to <link xref="GLib.open"/>.</p>  <p>It is an error to call this function in any way that would create an
+the most recent call to <link xref="GLib.VariantBuilder.open"/>.</p>  <p>It is an error to call this function in any way that would create an
 inconsistent value to be constructed (ie: too few values added to the
 subcontainer).</p>
   <p>Since 2.24</p>

@@ -21,7 +21,7 @@ function get_use_system_certdb(): Boolean {
 }
   </code></synopsis>
   <p>Gets whether <code>conn</code> uses the system certificate database to verify
-peer certificates. See <link xref="Gio.set_use_system_certdb"/>.</p>
+peer certificates. See <link xref="Gio.TlsConnection.set_use_system_certdb"/>.</p>
 
 <terms>
 <item>

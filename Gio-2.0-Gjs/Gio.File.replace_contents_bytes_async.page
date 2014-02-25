@@ -49,7 +49,7 @@ This function will keep a ref on <code>contents</code> until the operation is do
 Unlike <link xref="Gio.File.replace_contents_async"/> this allows forgetting about the
 content without waiting for the callback.</p>  <p>When this operation has completed, <code>callback</code> will be called with
 @user_user data, and the operation can be finalized with
-<link xref="Gio.replace_contents_finish"/>.</p>
+<link xref="Gio.File.replace_contents_finish"/>.</p>
   <p>Since 2.40</p>
 <terms>
 <item>

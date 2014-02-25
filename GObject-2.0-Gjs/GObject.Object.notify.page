@@ -25,10 +25,10 @@ function notify(property_name: String): void {
 }
   </code></synopsis>
   <p>Emits a "notify" signal for the property <code>property_name</code> on <code>object</code>.</p>  <p>When possible, eg. when signaling a property change from within the class
-that registered the property, you should use <link xref="GObject.notify_by_pspec"/>
+that registered the property, you should use <link xref="GObject.Object.notify_by_pspec"/>
 instead.</p>  <p>Note that emission of the notify signal may be blocked with
 <link xref="GObject.Object.freeze_notify"/>. In this case, the signal emissions are queued
-and will be emitted (in reverse order) when <link xref="GObject.thaw_notify"/> is
+and will be emitted (in reverse order) when <link xref="GObject.Object.thaw_notify"/> is
 called.</p>
 
 <terms>

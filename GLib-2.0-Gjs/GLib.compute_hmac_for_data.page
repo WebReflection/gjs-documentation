@@ -37,7 +37,7 @@ function compute_hmac_for_data(digest_type: <link xref="GLib.ChecksumType">GLib.
 }
   </code></synopsis>
   <p>Computes the HMAC for a binary <code>data</code> of <code>length</code>. This is a
-convenience wrapper for <link xref="GLib.new"/>, <link xref="GLib.Hmac.get_string"/>
+convenience wrapper for <link xref="GLib.Hmac.new"/>, <link xref="GLib.Hmac.get_string"/>
 and <link xref="GLib.Hmac.unref"/>.</p>  <p>The hexadecimal string returned will be in lower case.</p>
   <p>Since 2.30</p>
 <terms>

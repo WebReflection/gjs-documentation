@@ -30,7 +30,7 @@ powering down external disk enclosures and starting/stopping
 multi-disk devices such as RAID devices. Note that the actual
 semantics and side-effects of starting/stopping a <link xref="Gio.Drive"/> may vary
 according to implementation. To choose the correct verbs in e.g. a
-file manager, use <link xref="Gio.get_start_stop_type"/>.</p>  <p>For porting from GnomeVFS note that there is no equivalent of
+file manager, use <link xref="Gio.Drive.get_start_stop_type"/>.</p>  <p>For porting from GnomeVFS note that there is no equivalent of
 <link xref="Gio.Drive"/> in that API.</p>
 
   <synopsis>

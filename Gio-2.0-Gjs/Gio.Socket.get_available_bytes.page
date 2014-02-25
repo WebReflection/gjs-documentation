@@ -25,7 +25,7 @@ just the next packet, even if additional packets are buffered after
 that one.</p>  <p>Note that on Windows, this function is rather inefficient in the
 UDP case, and so if you know any plausible upper bound on the size
 of the incoming packet, it is better to just do a
-<link xref="Gio.receive"/> with a buffer of that size, rather than calling
+<link xref="Gio.Socket.receive"/> with a buffer of that size, rather than calling
 <link xref="Gio.Socket.get_available_bytes"/> first and then doing a receive of
 exactly the right size.</p>
   <p>Since 2.32</p>

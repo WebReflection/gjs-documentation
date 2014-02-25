@@ -40,11 +40,11 @@ function read_until_async(stop_chars: String, io_priority: Number(gint), cancell
 It is an error to have two outstanding calls to this function.</p>  <p>Note that, in contrast to <link xref="Gio.DataInputStream.read_until"/>,
 this function does not consume the stop character that it finds.  You
 must read it for yourself.</p>  <p>When the operation is finished, <code>callback</code> will be called. You
-can then call <link xref="Gio.read_until_finish"/> to get
+can then call <link xref="Gio.DataInputStream.read_until_finish"/> to get
 the result of the operation.</p>  <p>Don't use this function in new code.  Its functionality is
 inconsistent with <link xref="Gio.DataInputStream.read_until"/>.  Both functions
 will be marked as deprecated in a future release.  Use
-<link xref="Gio.read_upto_async"/> instead.</p>
+<link xref="Gio.DataInputStream.read_upto_async"/> instead.</p>
   <p>Since 2.20</p>
 <terms>
 <item>

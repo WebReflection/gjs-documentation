@@ -46,7 +46,7 @@ instance.</p>  <p>If <code>flags</code> contains <link xref="GObject.BindingFlag
 if <code>target_property</code> on <code>target</code> changes then the <code>source_property</code> on <code>source</code>
 will be updated as well.</p>  <p>The binding will automatically be removed when either the <code>source</code> or the
 <code>target</code> instances are finalized. To remove the binding without affecting the
-<code>source</code> and the <code>target</code> you can just call <link xref="GObject.unref"/> on the returned
+<code>source</code> and the <code>target</code> you can just call <link xref="GObject.Object.unref"/> on the returned
 <link xref="GObject.Binding"/> instance.</p>  <p>A <link xref="GObject.Object"/> can have multiple bindings.</p>
   <p>Since 2.26</p>
 <terms>

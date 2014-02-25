@@ -21,10 +21,10 @@ function get_week_numbering_year(): Number(gint) {
 }
   </code></synopsis>
   <p>Returns the ISO 8601 week-numbering year in which the week containing
-<code>datetime</code> falls.</p>  <p>This function, taken together with <link xref="GLib.get_week_of_year"/> and
+<code>datetime</code> falls.</p>  <p>This function, taken together with <link xref="GLib.DateTime.get_week_of_year"/> and
 <link xref="GLib.DateTime.get_day_of_week"/> can be used to determine the full ISO
 week date on which <code>datetime</code> falls.</p>  <p>This is usually equal to the normal Gregorian year (as returned by
-<link xref="GLib.get_year"/>), except as detailed below:</p>  <p>For Thursday, the week-numbering year is always equal to the usual
+<link xref="GLib.DateTime.get_year"/>), except as detailed below:</p>  <p>For Thursday, the week-numbering year is always equal to the usual
 calendar year.  For other days, the number is such that every day
 within a complete week (Monday to Sunday) is contained within the
 same week-numbering year.</p>  <p>For Monday, Tuesday and Wednesday occurring near the end of the year,

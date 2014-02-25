@@ -23,7 +23,7 @@ function vfunc_get_object(object_path: String): <link xref="Gio.DBusObject">Gio.
 <item>
 <title><code>Returns</code></title>
   <p>A <link xref="Gio.DBusObject"/> or <code>null</code>. Free with
-  <link xref="GObject.unref"/>.</p>
+  <link xref="GObject.Object.unref"/>.</p>
 </item>
 </terms>
 

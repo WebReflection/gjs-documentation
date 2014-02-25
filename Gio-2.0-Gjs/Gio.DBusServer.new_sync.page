@@ -42,7 +42,7 @@ function new_sync(address: String, flags: <link xref="Gio.DBusServerFlags">Gio.D
   </code></synopsis>
   <p>Creates a new D-Bus server that listens on the first address in
 <code>address</code> that works.</p>  <p>Once constructed, you can use <link xref="Gio.DBusServer.get_client_address"/> to
-get a D-Bus address string that clients can use to connect.</p>  <p>Connect to the <link xref="Gio.new-connection"/> signal to handle
+get a D-Bus address string that clients can use to connect.</p>  <p>Connect to the <link xref="Gio.DBusServer-new-connection"/> signal to handle
 incoming connections.</p>  <p>The returned <link xref="Gio.DBusServer"/> isn't active - you have to start it with
 <link xref="Gio.DBusServer.start"/>.</p>  <p><link xref="Gio.DBusServer"/> is used in this [example][gdbus-peer-to-peer].</p>  <p>This is a synchronous failable constructor. See
 g_dbus_server_new() for the asynchronous version.</p>

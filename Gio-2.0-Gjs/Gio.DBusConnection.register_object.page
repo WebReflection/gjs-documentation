@@ -60,7 +60,7 @@ and org.freedesktop.Peer, so you don't have to implement those for the
 objects you export. You can implement org.freedesktop.DBus.Properties
 yourself, e.g. to handle getting and setting of properties asynchronously.</p>  <p>Note that the reference count on <code>interface_info</code> will be
 incremented by 1 (unless allocated statically, e.g. if the
-reference count is -1, see <link xref="Gio.ref"/>) for as long
+reference count is -1, see <link xref="Gio.DBusInterfaceInfo.ref"/>) for as long
 as the object is exported. Also note that <code>vtable</code> will be copied.</p>  <p>See this [server][gdbus-server] for an example of how to use this method.</p>
   <p>Since 2.26</p>
 <terms>

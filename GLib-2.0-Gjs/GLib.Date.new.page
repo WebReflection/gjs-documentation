@@ -22,8 +22,8 @@ function new(): <link xref="GLib.Date">GLib.Date</link> {
   </code></synopsis>
   <p>Allocates a <link xref="GLib.Date"/> and initializes
 it to a sane state. The new date will
-be cleared (as if you'd called <link xref="GLib.clear"/>) but invalid (it won't
-represent an existing day). Free the return value with <link xref="GLib.free"/>.</p>
+be cleared (as if you'd called <link xref="GLib.Date.clear"/>) but invalid (it won't
+represent an existing day). Free the return value with <link xref="GLib.Date.free"/>.</p>
 
 <terms>
 <item>

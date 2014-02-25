@@ -25,7 +25,7 @@ function attach(context: <link xref="GLib.MainContext">GLib.MainContext</link>):
 }
   </code></synopsis>
   <p>Adds a <link xref="GLib.Source"/> to a <code>context</code> so that it will be executed within
-that context. Remove it by calling <link xref="GLib.destroy"/>.</p>
+that context. Remove it by calling <link xref="GLib.Source.destroy"/>.</p>
 
 <terms>
 <item>

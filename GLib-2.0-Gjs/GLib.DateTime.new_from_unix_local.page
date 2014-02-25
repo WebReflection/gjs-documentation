@@ -27,7 +27,7 @@ function new_from_unix_local(t: Number(gint64)): <link xref="GLib.DateTime">GLib
   <p>Creates a <link xref="GLib.DateTime"/> corresponding to the given Unix time <code>t</code> in the
 local time zone.</p>  <p>Unix time is the number of seconds that have elapsed since 1970-01-01
 00:00:00 UTC, regardless of the local time offset.</p>  <p>This call can fail (returning <code>null</code>) if <code>t</code> represents a time outside
-of the supported range of <link xref="GLib.DateTime"/>.</p>  <p>You should release the return value by calling <link xref="GLib.unref"/>
+of the supported range of <link xref="GLib.DateTime"/>.</p>  <p>You should release the return value by calling <link xref="GLib.DateTime.unref"/>
 when you are done with it.</p>
   <p>Since 2.26</p>
 <terms>

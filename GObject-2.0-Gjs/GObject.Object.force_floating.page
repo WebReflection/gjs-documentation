@@ -23,7 +23,7 @@ function force_floating(): void {
   <p>This function is intended for <link xref="GObject.Object"/> implementations to re-enforce
 a [floating][floating-ref] object reference. Doing this is seldom
 required: all #GInitiallyUnowneds are created with a floating reference
-which usually just needs to be sunken by calling <link xref="GObject.ref_sink"/>.</p>
+which usually just needs to be sunken by calling <link xref="GObject.Object.ref_sink"/>.</p>
   <p>Since 2.10</p>
 
 </page>

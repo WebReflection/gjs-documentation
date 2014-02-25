@@ -16,17 +16,17 @@ let task = new Gio.Task();
   </code></synopsis>
   <p>A <link xref="Gio.Task"/> represents and manages a cancellable "task".</p>  <p>## Asynchronous operations</p>  <p>The most common usage of <link xref="Gio.Task"/> is as a <link xref="Gio.AsyncResult"/>, to
 manage data during an asynchronous operation. You call
-<link xref="Gio.new"/> in the "start" method, followed by
-<link xref="Gio.set_task_data"/> and the like if you need to keep some
+<link xref="Gio.Task.new"/> in the "start" method, followed by
+<link xref="Gio.Task.set_task_data"/> and the like if you need to keep some
 additional data associated with the task, and then pass the
 task object around through your asynchronous operation.
 Eventually, you will call a method such as
-<link xref="Gio.return_pointer"/> or <link xref="Gio.return_error"/>, which will
+<link xref="Gio.Task.return_pointer"/> or <link xref="Gio.Task.return_error"/>, which will
 save the value you give it and then invoke the task's callback
 function (waiting until the next iteration of the main
 loop first, if necessary). The caller will pass the <link xref="Gio.Task"/> back
 to the operation's finish function (as a <link xref="Gio.AsyncResult"/>), and
-you can use <link xref="Gio.propagate_pointer"/> or the like to extract
+you can use <link xref="Gio.Task.propagate_pointer"/> or the like to extract
 the return value.</p>  <p>Here is an example for using GTask as a GAsyncResult:
 |[&lt;!-- language="C" --&gt;
     typedef struct {
@@ -52,7 +52,7 @@ the return value.</p>  <p>Here is an example for using GTask as a GAsyncResult:
         }</p>  <p>      if (!cake_decorate (cake, decoration-&gt;frosting, decoration-&gt;message, &amp;error))
         {
           g_object_unref (cake);
-          // <link xref="Gio.return_error"/> takes ownership of error
+          // <link xref="Gio.Task.return_error"/> takes ownership of error
           g_task_return_error (task, error);
           g_object_unref (task);
           return;
@@ -98,11 +98,11 @@ the return value.</p>  <p>Here is an example for using GTask as a GAsyncResult:
     }
 ]|</p>  <p>## Chained asynchronous operations</p>  <p><link xref="Gio.Task"/> also tries to simplify asynchronous operations that
 internally chain together several smaller asynchronous
-operations. <link xref="Gio.get_cancellable"/>, <link xref="Gio.get_context"/>,
-and <link xref="Gio.get_priority"/> allow you to get back the task's
+operations. <link xref="Gio.Task.get_cancellable"/>, <link xref="Gio.Task.get_context"/>,
+and <link xref="Gio.Task.get_priority"/> allow you to get back the task's
 <link xref="Gio.Cancellable"/>, <link xref="GLib.MainContext"/>, and [I/O priority][io-priority]
 when starting a new subtask, so you don't have to keep track
-of them yourself. <link xref="Gio.attach_source"/> simplifies the case
+of them yourself. <link xref="Gio.Task.attach_source"/> simplifies the case
 of waiting for a source to fire (automatically using the correct
 <link xref="GLib.MainContext"/> and priority).</p>  <p>Here is an example for chained asynchronous operations:
   |[&lt;!-- language="C" --&gt;
@@ -192,7 +192,7 @@ of waiting for a source to fire (automatically using the correct
     {
       g_return_val_if_fail (g_task_is_valid (result, self), NULL);</p>  <p>      return g_task_propagate_pointer (G_TASK (result), error);
     }
-]|</p>  <p>## Asynchronous operations from synchronous ones</p>  <p>You can use <link xref="Gio.run_in_thread"/> to turn a synchronous
+]|</p>  <p>## Asynchronous operations from synchronous ones</p>  <p>You can use <link xref="Gio.Task.run_in_thread"/> to turn a synchronous
 operation into an asynchronous one, by running it in a thread
 which will then dispatch the result back to the caller's
 <link xref="GLib.MainContext"/> when it completes.</p>  <p>Running a task in a thread:
@@ -249,9 +249,9 @@ which will then dispatch the result back to the caller's
     {
       g_return_val_if_fail (g_task_is_valid (result, self), NULL);</p>  <p>      return g_task_propagate_pointer (G_TASK (result), error);
     }
-]|</p>  <p>## Adding cancellability to uncancellable tasks</p>  <p>Finally, <link xref="Gio.run_in_thread"/> and <link xref="Gio.run_in_thread_sync"/>
+]|</p>  <p>## Adding cancellability to uncancellable tasks</p>  <p>Finally, <link xref="Gio.Task.run_in_thread"/> and <link xref="Gio.Task.run_in_thread_sync"/>
 can be used to turn an uncancellable operation into a
-cancellable one. If you call <link xref="Gio.set_return_on_cancel"/>,
+cancellable one. If you call <link xref="Gio.Task.set_return_on_cancel"/>,
 passing <code>true</code>, then if the task's <link xref="Gio.Cancellable"/> is cancelled,
 it will return control back to the caller immediately, while
 allowing the task thread to continue running in the background
@@ -280,7 +280,7 @@ synchronous variants of blocking APIs.</p>  <p>Cancelling a task:
         }</p>  <p>      // If the task has already been cancelled, then we don't want to add
       // the cake to the cake cache. Likewise, we don't  want to have the
       // task get cancelled in the middle of updating the cache.
-      // <link xref="Gio.set_return_on_cancel"/> will return <code>true</code> here if it managed
+      // <link xref="Gio.Task.set_return_on_cancel"/> will return <code>true</code> here if it managed
       // to disable return-on-cancel, or <code>false</code> if the task was cancelled
       // before it could.
       if (g_task_set_return_on_cancel (task, FALSE))
@@ -329,29 +329,29 @@ synchronous variants of blocking APIs.</p>  <p>Cancelling a task:
     }
 ]|</p>  <p>## Porting from GSimpleAsyncResult</p>  <p><link xref="Gio.Task"/>'s API attempts to be simpler than <link xref="Gio.SimpleAsyncResult"/>'s
 in several ways:
-- You can save task-specific data with <link xref="Gio.set_task_data"/>, and
-  retrieve it later with <link xref="Gio.get_task_data"/>. This replaces the
-  abuse of <link xref="Gio.set_op_res_gpointer"/> for the same
+- You can save task-specific data with <link xref="Gio.Task.set_task_data"/>, and
+  retrieve it later with <link xref="Gio.Task.get_task_data"/>. This replaces the
+  abuse of <link xref="Gio.SimpleAsyncResult.set_op_res_gpointer"/> for the same
   purpose with <link xref="Gio.SimpleAsyncResult"/>.
 - In addition to the task data, <link xref="Gio.Task"/> also keeps track of the
   [priority][io-priority], <link xref="Gio.Cancellable"/>, and
   <link xref="GLib.MainContext"/> associated with the task, so tasks that consist of
   a chain of simpler asynchronous operations will have easy access
   to those values when starting each sub-task.
-- <link xref="Gio.return_error_if_cancelled"/> provides simplified
+- <link xref="Gio.Task.return_error_if_cancelled"/> provides simplified
   handling for cancellation. In addition, cancellation
   overrides any other <link xref="Gio.Task"/> return value by default, like
   <link xref="Gio.SimpleAsyncResult"/> does when
   <link xref="Gio.SimpleAsyncResult.set_check_cancellable"/> is called.
-  (You can use <link xref="Gio.set_check_cancellable"/> to turn off that
-  behavior.) On the other hand, <link xref="Gio.run_in_thread"/>
+  (You can use <link xref="Gio.Task.set_check_cancellable"/> to turn off that
+  behavior.) On the other hand, <link xref="Gio.Task.run_in_thread"/>
   guarantees that it will always run your
   `task_func`, even if the task's <link xref="Gio.Cancellable"/>
   is already cancelled before the task gets a chance to run;
   you can start your `task_func` with a
-  <link xref="Gio.return_error_if_cancelled"/> check if you need the
+  <link xref="Gio.Task.return_error_if_cancelled"/> check if you need the
   old behavior.
-- The "return" methods (eg, <link xref="Gio.return_pointer"/>)
+- The "return" methods (eg, <link xref="Gio.Task.return_pointer"/>)
   automatically cause the task to be "completed" as well, and
   there is no need to worry about the "complete" vs "complete
   in idle" distinction. (<link xref="Gio.Task"/> automatically figures out
@@ -360,8 +360,8 @@ in several ways:
   until the next iteration of the current <link xref="GLib.MainContext"/>.)
 - The "finish" functions for <link xref="Gio.Task"/>-based operations are generally
   much simpler than <link xref="Gio.SimpleAsyncResult"/> ones, normally consisting
-  of only a single call to <link xref="Gio.propagate_pointer"/> or the like.
-  Since <link xref="Gio.propagate_pointer"/> "steals" the return value from
+  of only a single call to <link xref="Gio.Task.propagate_pointer"/> or the like.
+  Since <link xref="Gio.Task.propagate_pointer"/> "steals" the return value from
   the <link xref="Gio.Task"/>, it is not necessary to juggle pointers around to
   prevent it from being freed twice.
 - With <link xref="Gio.SimpleAsyncResult"/>, it was common to call

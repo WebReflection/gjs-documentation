@@ -25,7 +25,7 @@ function read_int32(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</l
 }
   </code></synopsis>
   <p>Reads a signed 32-bit/4-byte value from <code>stream</code>.</p>  <p>In order to get the correct byte order for this read operation,
-see <link xref="Gio.DataInputStream.get_byte_order"/> and <link xref="Gio.set_byte_order"/>.</p>  <p>If <code>cancellable</code> is not <code>null</code>, then the operation can be cancelled by
+see <link xref="Gio.DataInputStream.get_byte_order"/> and <link xref="Gio.DataInputStream.set_byte_order"/>.</p>  <p>If <code>cancellable</code> is not <code>null</code>, then the operation can be cancelled by
 triggering the cancellable object from another thread. If the operation
 was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be returned.</p>
 

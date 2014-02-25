@@ -28,7 +28,7 @@ function new(name: String, parameter_type: <link href="../GLib-2.0/GLib.VariantT
     // Gjs wrapper for g_simple_action_new()
 }
   </code></synopsis>
-  <p>Creates a new action.</p>  <p>The created action is stateless.  See <link xref="Gio.new_stateful"/>.</p>
+  <p>Creates a new action.</p>  <p>The created action is stateless.  See <link xref="Gio.SimpleAction.new_stateful"/>.</p>
   <p>Since 2.28</p>
 <terms>
 <item>

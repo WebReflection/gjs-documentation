@@ -14,7 +14,7 @@
 DBusObjectManagerClient.bus_type: <link xref="Gio.BusType">Gio.BusType</link> (Write / Construct Only)
   </code></synopsis>
   <p>If this property is not <link xref="Gio.BusType"/>.none, then
-<link xref="Gio.connection"/> must be <code>null</code> and will be set to the
+<link xref="Gio.DBusObjectManagerClient-connection"/> must be <code>null</code> and will be set to the
 <link xref="Gio.DBusConnection"/> obtained by calling <link xref="Gio.bus_get"/> with the value
 of this property.</p>
   <p>Since 2.30</p>

@@ -21,7 +21,7 @@ function copy(): <link xref="GLib.VariantType">GLib.VariantType</link> {
 }
   </code></synopsis>
   <p>Makes a copy of a <link xref="GLib.VariantType"/>.  It is appropriate to call
-<link xref="GLib.free"/> on the return value.  <code>type</code> may not be <code>null</code>.</p>
+<link xref="GLib.VariantType.free"/> on the return value.  <code>type</code> may not be <code>null</code>.</p>
 
 <terms>
 <item>

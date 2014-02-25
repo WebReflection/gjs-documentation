@@ -25,7 +25,7 @@ function set_file_info(file_info: <link xref="Gio.FileInfo">Gio.FileInfo</link>)
 }
   </code></synopsis>
   <p>Sets <code>file_info</code> in <code>compressor</code>. If non-<code>null</code>, and <code>compressor</code>'s
-<link xref="Gio.format"/> property is <link xref="Gio.ZlibCompressorFormat"/>.gzip,
+<link xref="Gio.ZlibCompressor-format"/> property is <link xref="Gio.ZlibCompressorFormat"/>.gzip,
 it will be used to set the file name and modification time in
 the GZIP header of the compressed data.</p>  <p>Note: it is an error to call this function while a compression is in
 progress; it may only be called immediately after creation of <code>compressor</code>,

@@ -21,7 +21,7 @@ function get_listen_backlog(): Number(gint) {
 }
   </code></synopsis>
   <p>Gets the listen backlog setting of the socket. For details on this,
-see <link xref="Gio.set_listen_backlog"/>.</p>
+see <link xref="Gio.Socket.set_listen_backlog"/>.</p>
   <p>Since 2.22</p>
 <terms>
 <item>

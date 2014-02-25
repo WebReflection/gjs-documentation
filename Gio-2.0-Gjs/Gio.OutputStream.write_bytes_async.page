@@ -41,7 +41,7 @@ takes a <link xref="GLib.Bytes"/> as input.  Due to the refcounted nature of <li
 this allows the stream to avoid taking a copy of the data.</p>  <p>However, note that this function may still perform partial writes,
 just like <link xref="Gio.OutputStream.write_async"/>. If that occurs, to continue
 writing, you will need to create a new <link xref="GLib.Bytes"/> containing just the
-remaining bytes, using <link xref="GLib.new_from_bytes"/>. Passing the same
+remaining bytes, using <link xref="GLib.Bytes.new_from_bytes"/>. Passing the same
 <link xref="GLib.Bytes"/> instance multiple times potentially can result in duplicated
 data in the output stream.</p>  <p>For the synchronous, blocking version of this function, see
 <link xref="Gio.OutputStream.write_bytes"/>.</p>

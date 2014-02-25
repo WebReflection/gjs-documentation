@@ -39,7 +39,7 @@ triggering the cancellable object from another thread. If the operation
 was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be returned. If an
 operation was partially finished when the operation was cancelled the
 partial result will be returned, without an error.</p>  <p>On error -1 is returned and @error is set accordingly.</p>  <p>For the asynchronous, non-blocking, version of this function, see
-<link xref="Gio.fill_async"/>.</p>
+<link xref="Gio.BufferedInputStream.fill_async"/>.</p>
 
 <terms>
 <item>

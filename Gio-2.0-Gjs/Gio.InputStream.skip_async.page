@@ -38,7 +38,7 @@ function skip_async(count: Number(gsize), io_priority: Number(gint), cancellable
   </code></synopsis>
   <p>Request an asynchronous skip of <code>count</code> bytes from the stream.
 When the operation is finished <code>callback</code> will be called.
-You can then call <link xref="Gio.skip_finish"/> to get the result
+You can then call <link xref="Gio.InputStream.skip_finish"/> to get the result
 of the operation.</p>  <p>During an async request no other sync and async calls are allowed,
 and will result in <link xref="Gio.IOErrorEnum"/>.pending errors.</p>  <p>A value of <code>count</code> larger than %G_MAXSSIZE will cause a <link xref="Gio.IOErrorEnum"/>.invalid_argument error.</p>  <p>On success, the number of bytes skipped will be passed to the callback.
 It is not an error if this is not the same as the requested size, as it

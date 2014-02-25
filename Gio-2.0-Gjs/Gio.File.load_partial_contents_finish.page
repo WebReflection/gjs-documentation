@@ -25,7 +25,7 @@ function load_partial_contents_finish(res: <link xref="Gio.AsyncResult">Gio.Asyn
 }
   </code></synopsis>
   <p>Finishes an asynchronous partial load operation that was started
-with <link xref="Gio.load_partial_contents_async"/>. The data is always
+with <link xref="Gio.File.load_partial_contents_async"/>. The data is always
 zero-terminated, but this is not included in the resultant <code>length</code>.
 The returned @content should be freed with <link xref="GLib.free"/> when no longer
 needed.</p>

@@ -37,7 +37,7 @@ and '-'. Furthermore, the names must begin with a lowercase character,
 must not end with a '-', and must not contain consecutive dashes.</p>  <p>must consist only of lowercase
 ASCII characters, digits and '-'.</p>  <p>If <code>value</code> is non-<code>null</code> then it is used as the new value for the
 attribute.  If <code>value</code> is <code>null</code> then the attribute is unset. If
-the <code>value</code> <link xref="GLib.Variant"/> is floating, it is consumed.</p>  <p>See also <link xref="Gio.set_attribute"/> for a more convenient way to do
+the <code>value</code> <link xref="GLib.Variant"/> is floating, it is consumed.</p>  <p>See also <link xref="Gio.MenuItem.set_attribute"/> for a more convenient way to do
 the same.</p>
   <p>Since 2.32</p>
 <terms>

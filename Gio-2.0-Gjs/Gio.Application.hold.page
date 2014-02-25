@@ -22,7 +22,7 @@ function hold(): void {
   </code></synopsis>
   <p>Increases the use count of <code>application</code>.</p>  <p>Use this function to indicate that the application has a reason to
 continue to run.  For example, <link xref="Gio.Application.hold"/> is called by GTK+
-when a toplevel window is on the screen.</p>  <p>To cancel the hold, call <link xref="Gio.release"/>.</p>
+when a toplevel window is on the screen.</p>  <p>To cancel the hold, call <link xref="Gio.Application.release"/>.</p>
 
 
 </page>

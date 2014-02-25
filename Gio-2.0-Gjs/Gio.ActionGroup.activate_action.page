@@ -31,7 +31,7 @@ function activate_action(action_name: String, parameter: <link href="../GLib-2.0
   <p>Activate the named action within <code>action_group</code>.</p>  <p>If the action is expecting a parameter, then the correct type of
 parameter must be given as <code>parameter</code>.  If the action is expecting no
 parameters then <code>parameter</code> must be <code>null</code>.  See
-<link xref="Gio.get_action_parameter_type"/>.</p>
+<link xref="Gio.ActionGroup.get_action_parameter_type"/>.</p>
   <p>Since 2.28</p>
 <terms>
 <item>

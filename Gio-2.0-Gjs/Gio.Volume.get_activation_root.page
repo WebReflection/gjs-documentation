@@ -23,7 +23,7 @@ function get_activation_root(): <link xref="Gio.File">Gio.File</link> {
   <p>Gets the activation root for a <link xref="Gio.Volume"/> if it is known ahead of
 mount time. Returns <code>null</code> otherwise. If not <code>null</code> and if <code>volume</code>
 is mounted, then the result of <link xref="Gio.Mount.get_root"/> on the
-<link xref="Gio.Mount"/> object obtained from <link xref="Gio.get_mount"/> will always
+<link xref="Gio.Mount"/> object obtained from <link xref="Gio.Volume.get_mount"/> will always
 either be equal or a prefix of what this function returns. In
 other words, in code</p>  <p>|[&lt;!-- language="C" --&gt;
   GMount *mount;

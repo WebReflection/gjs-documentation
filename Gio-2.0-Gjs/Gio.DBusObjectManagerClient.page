@@ -41,25 +41,25 @@ is not possible to launch an owner for the requested name. In this
 case, <link xref="Gio.DBusObjectManagerClient"/> object construction still succeeds but
 there will be no object proxies
 (e.g. <link xref="Gio.DBusObjectManager.get_objects"/> returns the empty list) and
-the <link xref="Gio.name-owner"/> property is <code>null</code>.</p>  <p>The owner of the requested name can come and go (for example
+the <link xref="Gio.DBusObjectManagerClient-name-owner"/> property is <code>null</code>.</p>  <p>The owner of the requested name can come and go (for example
 consider a system service being restarted) – <link xref="Gio.DBusObjectManagerClient"/>
-handles this case too; simply connect to the <link xref="GObject.notify"/>
-signal to watch for changes on the <link xref="Gio.name-owner"/>
+handles this case too; simply connect to the <link xref="GObject.Object-notify"/>
+signal to watch for changes on the <link xref="Gio.DBusObjectManagerClient-name-owner"/>
 property. When the name owner vanishes, the behavior is that
-<link xref="Gio.name-owner"/> is set to <code>null</code> (this includes
-emission of the <link xref="GObject.notify"/> signal) and then
+<link xref="Gio.DBusObjectManagerClient-name-owner"/> is set to <code>null</code> (this includes
+emission of the <link xref="GObject.Object-notify"/> signal) and then
 <link xref="Gio.DBusObjectManager-object-removed"/> signals are synthesized
 for all currently existing object proxies. Since
-<link xref="Gio.name-owner"/> is <code>null</code> when this happens, you can
+<link xref="Gio.DBusObjectManagerClient-name-owner"/> is <code>null</code> when this happens, you can
 use this information to disambiguate a synthesized signal from a
 genuine signal caused by object removal on the remote
 <link xref="Gio.DBusObjectManager"/>. Similarly, when a new name owner appears,
 <link xref="Gio.DBusObjectManager-object-added"/> signals are synthesized
-while <link xref="Gio.name-owner"/> is still <code>null</code>. Only when all
-object proxies have been added, the <link xref="Gio.name-owner"/>
+while <link xref="Gio.DBusObjectManagerClient-name-owner"/> is still <code>null</code>. Only when all
+object proxies have been added, the <link xref="Gio.DBusObjectManagerClient-name-owner"/>
 is set to the new name owner (this includes emission of the
-<link xref="GObject.notify"/> signal).  Furthermore, you are guaranteed that
-<link xref="Gio.name-owner"/> will alternate between a name owner
+<link xref="GObject.Object-notify"/> signal).  Furthermore, you are guaranteed that
+<link xref="Gio.DBusObjectManagerClient-name-owner"/> will alternate between a name owner
 (e.g. `:1.42`) and <code>null</code> even in the case where
 the name of interest is atomically replaced</p>  <p>Ultimately, <link xref="Gio.DBusObjectManagerClient"/> is used to obtain <link xref="Gio.DBusProxy"/>
 instances. All signals (including the
@@ -72,14 +72,14 @@ the new owner" problem cannot happen.</p>  <p>To avoid having the application co
 <link xref="Gio.DBusObjectProxy"/> and <link xref="Gio.DBusProxy"/> objects, the
 <link xref="Gio.DBusObject-interface-added"/>,
 <link xref="Gio.DBusObject-interface-removed"/>,
-<link xref="Gio.g-properties-changed"/> and
-<link xref="Gio.g-signal"/> signals
+<link xref="Gio.DBusProxy-g-properties-changed"/> and
+<link xref="Gio.DBusProxy-g-signal"/> signals
 are also emitted on the <link xref="Gio.DBusObjectManagerClient"/> instance managing these
 objects. The signals emitted are
 <link xref="Gio.DBusObjectManager-interface-added"/>,
 <link xref="Gio.DBusObjectManager-interface-removed"/>,
-<link xref="Gio.interface-proxy-properties-changed"/> and
-<link xref="Gio.interface-proxy-signal"/>.</p>  <p>Note that all callbacks and signals are emitted in the
+<link xref="Gio.DBusObjectManagerClient-interface-proxy-properties-changed"/> and
+<link xref="Gio.DBusObjectManagerClient-interface-proxy-signal"/>.</p>  <p>Note that all callbacks and signals are emitted in the
 [thread-default main context][g-main-context-push-thread-default]
 that the <link xref="Gio.DBusObjectManagerClient"/> object was constructed
 in. Additionally, the <link xref="Gio.DBusObjectProxy"/> and <link xref="Gio.DBusProxy"/> objects

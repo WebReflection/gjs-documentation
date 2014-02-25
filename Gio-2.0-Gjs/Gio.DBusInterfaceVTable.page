@@ -25,7 +25,7 @@ the property does not exist or the permissions do not allow access.
 The same checks are performed for &lt;literal&gt;'Set'&lt;/literal&gt; calls, and
 the provided value is also checked for being the correct type.</p>  <p>For both &lt;literal&gt;'Get'&lt;/literal&gt; and &lt;literal&gt;'Set'&lt;/literal&gt; calls,
 the <link xref="Gio.DBusMethodInvocation"/> passed to the method_call handler can be
-queried with <link xref="Gio.get_property_info"/> to get a
+queried with <link xref="Gio.DBusMethodInvocation.get_property_info"/> to get a
 pointer to the <link xref="Gio.DBusPropertyInfo"/> of the property.</p>  <p>If you have readable properties specified in your interface info, you
 must ensure that you either provide a non-<code>null</code> @get_property()
 function or provide implementations of both the

@@ -26,7 +26,7 @@ function make_directory(cancellable: <link xref="Gio.Cancellable">Gio.Cancellabl
   </code></synopsis>
   <p>Creates a directory. Note that this will only create a child directory
 of the immediate parent directory of the path or URI given by the <link xref="Gio.File"/>.
-To recursively create directories, see <link xref="Gio.make_directory_with_parents"/>.
+To recursively create directories, see <link xref="Gio.File.make_directory_with_parents"/>.
 This function will fail if the parent directory does not exist, setting
 @error to <link xref="Gio.IOErrorEnum"/>.not_found. If the file system doesn't support
 creating directories, this function will fail, setting @error to

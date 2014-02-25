@@ -26,7 +26,7 @@ function set_application_id(application_id: String): void {
   </code></synopsis>
   <p>Sets the unique identifier for <code>application</code>.</p>  <p>The application id can only be modified if <code>application</code> has not yet
 been registered.</p>  <p>If non-<code>null</code>, the application id must be valid.  See
-<link xref="Gio.id_is_valid"/>.</p>
+<link xref="Gio.Application.id_is_valid"/>.</p>
   <p>Since 2.28</p>
 <terms>
 <item>

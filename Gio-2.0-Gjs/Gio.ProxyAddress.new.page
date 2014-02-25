@@ -49,8 +49,8 @@ function new(inetaddr: <link xref="Gio.InetAddress">Gio.InetAddress</link>, port
 }
   </code></synopsis>
   <p>Creates a new <link xref="Gio.ProxyAddress"/> for <code>inetaddr</code> with <code>protocol</code> that should
-tunnel through <code>dest_hostname</code> and <code>dest_port</code>.</p>  <p>(Note that this method doesn't set the <link xref="Gio.uri"/> or
-<link xref="Gio.destination-protocol"/> fields; use <link xref="GObject.new"/>
+tunnel through <code>dest_hostname</code> and <code>dest_port</code>.</p>  <p>(Note that this method doesn't set the <link xref="Gio.ProxyAddress-uri"/> or
+<link xref="Gio.ProxyAddress-destination-protocol"/> fields; use <link xref="GObject.Object.new"/>
 directly if you want to set those.)</p>
   <p>Since 2.26</p>
 <terms>

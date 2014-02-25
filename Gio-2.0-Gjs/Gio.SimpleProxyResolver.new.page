@@ -29,8 +29,8 @@ function new(default_proxy: String, ignore_hosts: String): <link xref="Gio.Proxy
 }
   </code></synopsis>
   <p>Creates a new <link xref="Gio.SimpleProxyResolver"/>. See
-<link xref="Gio.default-proxy"/> and
-<link xref="Gio.ignore-hosts"/> for more details on how the
+<link xref="Gio.SimpleProxyResolver-default-proxy"/> and
+<link xref="Gio.SimpleProxyResolver-ignore-hosts"/> for more details on how the
 arguments are interpreted.</p>
   <p>Since 2.36</p>
 <terms>

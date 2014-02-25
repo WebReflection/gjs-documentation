@@ -30,7 +30,7 @@ function pattern_match_simple(pattern: String, string: String): Boolean {
   </code></synopsis>
   <p>Matches a string against a pattern given as a string. If this
 function is to be called in a loop, it's more efficient to compile
-the pattern once with <link xref="GLib.new"/> and call
+the pattern once with <link xref="GLib.PatternSpec.new"/> and call
 <link xref="GLib.pattern_match_string"/> repeatedly.</p>
 
 <terms>

@@ -43,7 +43,7 @@ streaming, rather than just opening for reading or writing.</p>
 <title><code>Returns</code></title>
   <p>a <link xref="Gio.FileIOStream"/> for the newly created
     file, or <code>null</code> on error.
-    Free the returned object with <link xref="GObject.unref"/>.</p>
+    Free the returned object with <link xref="GObject.Object.unref"/>.</p>
 </item>
 </terms>
 

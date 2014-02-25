@@ -23,7 +23,7 @@ function mark_busy(): void {
   <p>Increases the busy count of <code>application</code>.</p>  <p>Use this function to indicate that the application is busy, for instance
 while a long running operation is pending.</p>  <p>The busy state will be exposed to other processes, so a session shell will
 use that information to indicate the state to the user (e.g. with a
-spinner).</p>  <p>To cancel the busy indication, use <link xref="Gio.unmark_busy"/>.</p>
+spinner).</p>  <p>To cancel the busy indication, use <link xref="Gio.Application.unmark_busy"/>.</p>
   <p>Since 2.38</p>
 
 </page>

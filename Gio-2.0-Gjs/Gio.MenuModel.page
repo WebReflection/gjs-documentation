@@ -51,8 +51,8 @@ and the [GMenuModel exporter][gio-GMenuModel-exporter] do for
 <link xref="Gio.ActionGroup"/> and <link xref="Gio.MenuModel"/>. The client-side counterparts to
 make use of the exported information are <link xref="Gio.DBusActionGroup"/> and
 <link xref="Gio.DBusMenuModel"/>.</p>  <p>The API of <link xref="Gio.MenuModel"/> is very generic, with iterators for the
-attributes and links of an item, see <link xref="Gio.iterate_item_attributes"/>
-and <link xref="Gio.iterate_item_links"/>. The 'standard' attributes and
+attributes and links of an item, see <link xref="Gio.MenuModel.iterate_item_attributes"/>
+and <link xref="Gio.MenuModel.iterate_item_links"/>. The 'standard' attributes and
 link types have predefined names: %G_MENU_ATTRIBUTE_LABEL,
 %G_MENU_ATTRIBUTE_ACTION, %G_MENU_ATTRIBUTE_TARGET, %G_MENU_LINK_SECTION
 and %G_MENU_LINK_SUBMENU.</p>  <p>Items in a <link xref="Gio.MenuModel"/> represent active controls if they refer to

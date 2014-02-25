@@ -20,7 +20,7 @@ function get_enable_proxy(): Boolean {
     // Gjs wrapper for g_socket_client_get_enable_proxy()
 }
   </code></synopsis>
-  <p>Gets the proxy enable state; see <link xref="Gio.set_enable_proxy"/></p>
+  <p>Gets the proxy enable state; see <link xref="Gio.SocketClient.set_enable_proxy"/></p>
   <p>Since 2.26</p>
 <terms>
 <item>

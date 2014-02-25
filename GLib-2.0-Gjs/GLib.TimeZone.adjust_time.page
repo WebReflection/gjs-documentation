@@ -30,9 +30,9 @@ function adjust_time(type: <link xref="GLib.TimeType">GLib.TimeType</link>, time
   </code></synopsis>
   <p>Finds an interval within <code>tz</code> that corresponds to the given <code>time_</code>,
 possibly adjusting <code>time_</code> if required to fit into an interval.
-The meaning of <code>time_</code> depends on <code>type</code>.</p>  <p>This function is similar to <link xref="GLib.find_interval"/>, with the
+The meaning of <code>time_</code> depends on <code>type</code>.</p>  <p>This function is similar to <link xref="GLib.TimeZone.find_interval"/>, with the
 difference that it always succeeds (by making the adjustments
-described below).</p>  <p>In any of the cases where <link xref="GLib.find_interval"/> succeeds then
+described below).</p>  <p>In any of the cases where <link xref="GLib.TimeZone.find_interval"/> succeeds then
 this function returns the same value, without modifying <code>time_</code>.</p>  <p>This function may, however, modify <code>time_</code> in order to deal with
 non-existent times.  If the non-existent local <code>time_</code> of 02:30 were
 requested on March 14th 2010 in Toronto then this function would

@@ -9,9 +9,9 @@
     <link xref="index" group="enum" type="guide"/>
   </info>
   <title>Gio.TlsCertificateRequestFlags</title>
-  <p>Flags for <link xref="Gio.request_certificate"/>,
-<link xref="Gio.request_certificate_async"/>, and
-<link xref="Gio.invoke_request_certificate"/>.</p>
+  <p>Flags for <link xref="Gio.TlsInteraction.request_certificate"/>,
+<link xref="Gio.TlsInteraction.request_certificate_async"/>, and
+<link xref="Gio.TlsInteraction.invoke_request_certificate"/>.</p>
   <p>Since 2.40</p>
 <terms>
 <item>

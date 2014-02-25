@@ -30,7 +30,7 @@ the <link xref="Gio.ApplicationCommandLine"/> documentation for more information
 <item>
 <title><code>Returns</code></title>
   <p>An integer that is set as the exit status for the calling
-  process. See <link xref="Gio.set_exit_status"/>.</p>
+  process. See <link xref="Gio.ApplicationCommandLine.set_exit_status"/>.</p>
 </item>
 </terms>
 

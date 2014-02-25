@@ -26,7 +26,7 @@ function get(index_: Number(gint)): Number(gint) {
   </code></synopsis>
   <p>Gets a file descriptor out of <code>list</code>.</p>  <p><code>index_</code> specifies the index of the file descriptor to get.  It is a
 programmer error for <code>index_</code> to be out of range; see
-<link xref="Gio.get_length"/>.</p>  <p>The file descriptor is duplicated using dup() and set as
+<link xref="Gio.UnixFDList.get_length"/>.</p>  <p>The file descriptor is duplicated using dup() and set as
 close-on-exec before being returned.  You must call close() on it
 when you are done.</p>  <p>A possible cause of failure is exceeding the per-process or
 system-wide file descriptor limit.</p>

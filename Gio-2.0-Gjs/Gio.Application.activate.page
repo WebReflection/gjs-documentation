@@ -20,7 +20,7 @@ function activate(): void {
     // Gjs wrapper for g_application_activate()
 }
   </code></synopsis>
-  <p>Activates the application.</p>  <p>In essence, this results in the <link xref="Gio.activate"/> signal being
+  <p>Activates the application.</p>  <p>In essence, this results in the <link xref="Gio.Application-activate"/> signal being
 emitted in the primary instance.</p>  <p>The application must be registered before calling this function.</p>
   <p>Since 2.28</p>
 

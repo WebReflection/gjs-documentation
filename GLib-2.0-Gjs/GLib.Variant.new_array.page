@@ -33,8 +33,8 @@ child type is determined by inspecting the first element of the
 <code>children</code> array.  If <code>child_type</code> is non-<code>null</code> then it must be a
 definite type.</p>  <p>The items of the array are taken from the <code>children</code> array.  No entry
 in the <code>children</code> array may be <code>null</code>.</p>  <p>All items in the array must have the same type, which must be the
-same as <code>child_type</code>, if given.</p>  <p>If the <code>children</code> are floating references (see <link xref="GLib.ref_sink"/>), the
-new instance takes ownership of them as if via <link xref="GLib.ref_sink"/>.</p>
+same as <code>child_type</code>, if given.</p>  <p>If the <code>children</code> are floating references (see <link xref="GLib.Variant.ref_sink"/>), the
+new instance takes ownership of them as if via <link xref="GLib.Variant.ref_sink"/>.</p>
   <p>Since 2.24</p>
 <terms>
 <item>

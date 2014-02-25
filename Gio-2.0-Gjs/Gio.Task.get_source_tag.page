@@ -20,7 +20,7 @@ function get_source_tag(): void {
     // Gjs wrapper for g_task_get_source_tag()
 }
   </code></synopsis>
-  <p>Gets <code>task</code>'s source tag. See <link xref="Gio.set_source_tag"/>.</p>
+  <p>Gets <code>task</code>'s source tag. See <link xref="Gio.Task.set_source_tag"/>.</p>
   <p>Since 2.36</p>
 <terms>
 <item>

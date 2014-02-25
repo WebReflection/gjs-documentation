@@ -36,7 +36,7 @@ function param_spec_pointer(name: String, nick: String, blurb: String, flags: <l
     // Gjs wrapper for g_param_spec_pointer()
 }
   </code></synopsis>
-  <p>Creates a new <link xref="GObject.ParamSpecPointer"/> instance specifying a pointer property.</p>  <p>See <link xref="GObject.internal"/> for details on property names.</p>
+  <p>Creates a new <link xref="GObject.ParamSpecPointer"/> instance specifying a pointer property.</p>  <p>See <link xref="GObject.ParamSpec.internal"/> for details on property names.</p>
 
 <terms>
 <item>

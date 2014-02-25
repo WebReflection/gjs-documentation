@@ -37,7 +37,7 @@ function connect_to_uri_async(uri: String, default_port: Number(guint16), cancel
 }
   </code></synopsis>
   <p>This is the asynchronous version of <link xref="Gio.SocketClient.connect_to_uri"/>.</p>  <p>When the operation is finished <code>callback</code> will be
-called. You can then call <link xref="Gio.connect_to_uri_finish"/> to get
+called. You can then call <link xref="Gio.SocketClient.connect_to_uri_finish"/> to get
 the result of the operation.</p>
   <p>Since 2.26</p>
 <terms>

@@ -29,7 +29,7 @@ function receive(buffer: ByteArray, cancellable: <link xref="Gio.Cancellable">Gi
 }
   </code></synopsis>
   <p>Receive data (up to <code>size</code> bytes) from a socket. This is mainly used by
-connection-oriented sockets; it is identical to <link xref="Gio.receive_from"/>
+connection-oriented sockets; it is identical to <link xref="Gio.Socket.receive_from"/>
 with @address set to <code>null</code>.</p>  <p>For <link xref="Gio.SocketType"/>.datagram and <link xref="Gio.SocketType"/>.seqpacket sockets,
 <link xref="Gio.Socket.receive"/> will always read either 0 or 1 complete messages from
 the socket. If the received message is too large to fit in <code>buffer</code>, then

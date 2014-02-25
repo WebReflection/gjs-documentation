@@ -27,8 +27,8 @@ function expand_references(string_to_expand: String): String {
   <p>Returns a new string containing the text in <code>string_to_expand</code> with
 references and escape sequences expanded. References refer to the last
 match done with @string against @regex and have the same syntax used by
-<link xref="GLib.replace"/>.</p>  <p>The <code>string_to_expand</code> must be UTF-8 encoded even if #G_REGEX_RAW was
-passed to <link xref="GLib.new"/>.</p>  <p>The backreferences are extracted from the string passed to the match
+<link xref="GLib.Regex.replace"/>.</p>  <p>The <code>string_to_expand</code> must be UTF-8 encoded even if #G_REGEX_RAW was
+passed to <link xref="GLib.Regex.new"/>.</p>  <p>The backreferences are extracted from the string passed to the match
 function, so you cannot call this function after freeing the string.</p>  <p><code>match_info</code> may be <code>null</code> in which case <code>string_to_expand</code> must not
 contain references. For instance "foo\n" does not refer to an actual
 pattern and '\n' merely will be replaced with \n character,

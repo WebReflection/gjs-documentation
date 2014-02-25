@@ -21,7 +21,7 @@ function enumerate_identifiers(): Array(String) {
 }
   </code></synopsis>
   <p>Gets the kinds of identifiers that <code>drive</code> has.
-Use <link xref="Gio.get_identifier"/> to obtain the identifiers
+Use <link xref="Gio.Drive.get_identifier"/> to obtain the identifiers
 themselves.</p>
 
 <terms>

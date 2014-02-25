@@ -22,7 +22,7 @@ function set_default(): void {
   </code></synopsis>
   <p>Sets <code>resolver</code> to be the application's default resolver (reffing
 <code>resolver</code>, and unreffing the previous default resolver, if any).
-Future calls to <link xref="Gio.get_default"/> will return this resolver.</p>  <p>This can be used if an application wants to perform any sort of DNS
+Future calls to <link xref="Gio.Resolver.get_default"/> will return this resolver.</p>  <p>This can be used if an application wants to perform any sort of DNS
 caching or "pinning"; it can implement its own <link xref="Gio.Resolver"/> that
 calls the original default resolver for DNS operations, and
 implements its own cache policies on top of that, and then set

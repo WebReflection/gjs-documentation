@@ -21,7 +21,7 @@ function get_graceful_disconnect(): Boolean {
 }
   </code></synopsis>
   <p>Checks if graceful disconnects are used. See
-<link xref="Gio.set_graceful_disconnect"/>.</p>
+<link xref="Gio.TcpConnection.set_graceful_disconnect"/>.</p>
   <p>Since 2.22</p>
 <terms>
 <item>

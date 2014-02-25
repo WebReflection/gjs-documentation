@@ -21,7 +21,7 @@ function new_now_utc(): <link xref="GLib.DateTime">GLib.DateTime</link> {
 }
   </code></synopsis>
   <p>Creates a <link xref="GLib.DateTime"/> corresponding to this exact instant in UTC.</p>  <p>This is equivalent to calling <link xref="GLib.DateTime.new_now"/> with the time
-zone returned by <link xref="GLib.new_utc"/>.</p>
+zone returned by <link xref="GLib.TimeZone.new_utc"/>.</p>
   <p>Since 2.26</p>
 <terms>
 <item>

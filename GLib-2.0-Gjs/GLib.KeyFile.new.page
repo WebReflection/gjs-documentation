@@ -21,8 +21,8 @@ function new(): <link xref="GLib.KeyFile">GLib.KeyFile</link> {
 }
   </code></synopsis>
   <p>Creates a new empty <link xref="GLib.KeyFile"/> object. Use
-<link xref="GLib.load_from_file"/>, <link xref="GLib.load_from_data"/>,
-<link xref="GLib.load_from_dirs"/> or <link xref="GLib.load_from_data_dirs"/> to
+<link xref="GLib.KeyFile.load_from_file"/>, <link xref="GLib.KeyFile.load_from_data"/>,
+<link xref="GLib.KeyFile.load_from_dirs"/> or <link xref="GLib.KeyFile.load_from_data_dirs"/> to
 read an existing key file.</p>
   <p>Since 2.6</p>
 <terms>

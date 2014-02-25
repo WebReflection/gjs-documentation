@@ -26,8 +26,8 @@ function accept(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>
   </code></synopsis>
   <p>Accept incoming connections on a connection-based socket. This removes
 the first outstanding connection request from the listening socket and
-creates a <link xref="Gio.Socket"/> object for it.</p>  <p>The <code>socket</code> must be bound to a local address with <link xref="Gio.bind"/> and
-must be listening for incoming connections (<link xref="Gio.listen"/>).</p>  <p>If there are no outstanding connections then the operation will block
+creates a <link xref="Gio.Socket"/> object for it.</p>  <p>The <code>socket</code> must be bound to a local address with <link xref="Gio.Socket.bind"/> and
+must be listening for incoming connections (<link xref="Gio.Socket.listen"/>).</p>  <p>If there are no outstanding connections then the operation will block
 or return <link xref="Gio.IOErrorEnum"/>.would_block if non-blocking I/O is enabled.
 To be notified of an incoming connection, wait for the <link xref="GLib.IOCondition"/>.in condition.</p>
   <p>Since 2.22</p>

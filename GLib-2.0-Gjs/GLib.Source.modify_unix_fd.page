@@ -28,13 +28,13 @@ function modify_unix_fd(tag: void, new_events: <link xref="GLib.IOCondition">GLi
     // Gjs wrapper for g_source_modify_unix_fd()
 }
   </code></synopsis>
-  <p>Updates the event mask to watch for the fd identified by <code>tag</code>.</p>  <p><code>tag</code> is the tag returned from <link xref="GLib.add_unix_fd"/>.</p>  <p>If you want to remove a fd, don't set its event mask to zero.
-Instead, call <link xref="GLib.remove_unix_fd"/>.</p>  <p>As the name suggests, this function is not available on Windows.</p>
+  <p>Updates the event mask to watch for the fd identified by <code>tag</code>.</p>  <p><code>tag</code> is the tag returned from <link xref="GLib.Source.add_unix_fd"/>.</p>  <p>If you want to remove a fd, don't set its event mask to zero.
+Instead, call <link xref="GLib.Source.remove_unix_fd"/>.</p>  <p>As the name suggests, this function is not available on Windows.</p>
   <p>Since 2.36</p>
 <terms>
 <item>
 <title><code>tag</code></title>
-  <p>the tag from <link xref="GLib.add_unix_fd"/></p>
+  <p>the tag from <link xref="GLib.Source.add_unix_fd"/></p>
 </item>
 <item>
 <title><code>new_events</code></title>

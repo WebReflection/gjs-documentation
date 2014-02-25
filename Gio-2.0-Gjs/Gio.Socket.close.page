@@ -34,11 +34,11 @@ finished reading all of the data you sent. There is no easy generic
 way to avoid this problem; the easiest fix is to design the network
 protocol such that the client will never send data "out of turn".
 Another solution is for the server to half-close the connection by
-calling <link xref="Gio.shutdown"/> with only the @shutdown_write flag set,
+calling <link xref="Gio.Socket.shutdown"/> with only the @shutdown_write flag set,
 and then wait for the client to notice this and close its side of the
 connection, after which the server can safely call <link xref="Gio.Socket.close"/>.
 (This is what <link xref="Gio.TcpConnection"/> does if you call
-<link xref="Gio.set_graceful_disconnect"/>. But of course, this
+<link xref="Gio.TcpConnection.set_graceful_disconnect"/>. But of course, this
 only works if the client will close its connection after the server
 does.)</p>
   <p>Since 2.22</p>

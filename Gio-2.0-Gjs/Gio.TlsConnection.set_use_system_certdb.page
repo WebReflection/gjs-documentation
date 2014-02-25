@@ -28,9 +28,9 @@ function set_use_system_certdb(use_system_certdb: Boolean): void {
 peer certificates. This is <code>true</code> by default. If set to <code>false</code>, then
 peer certificate validation will always set the
 <link xref="Gio.TlsCertificateFlags"/>.unknown_ca error (meaning
-<link xref="Gio.accept-certificate"/> will always be emitted on
+<link xref="Gio.TlsConnection-accept-certificate"/> will always be emitted on
 client-side connections, unless that bit is not set in
-<link xref="Gio.validation-flags"/>).</p>
+<link xref="Gio.TlsClientConnection-validation-flags"/>).</p>
 
 <terms>
 <item>

@@ -16,11 +16,11 @@ let action = new Gio.Action({
 });
   </code></synopsis>
   <p><link xref="Gio.Action"/> represents a single named action.</p>  <p>The main interface to an action is that it can be activated with
-<link xref="Gio.activate"/>.  This results in the 'activate' signal being
+<link xref="Gio.Action.activate"/>.  This results in the 'activate' signal being
 emitted.  An activation has a <link xref="GLib.Variant"/> parameter (which may be
 <code>null</code>).  The correct type for the parameter is determined by a static
 parameter type (which is given at construction time).</p>  <p>An action may optionally have a state, in which case the state may be
-set with <link xref="Gio.change_state"/>.  This call takes a <link xref="GLib.Variant"/>.  The
+set with <link xref="Gio.Action.change_state"/>.  This call takes a <link xref="GLib.Variant"/>.  The
 correct type for the state is determined by a static state type
 (which is given at construction time).</p>  <p>The state may have a hint associated with it, specifying its valid
 range.</p>  <p><link xref="Gio.Action"/> is merely the interface to the concept of an action, as
@@ -29,7 +29,7 @@ described above.  Various implementations of actions exist, including
 name of the action, the parameter type, the enabled state, the
 optional state type and the state and emitting the appropriate
 signals when these change.  The implementor responsible for filtering
-calls to <link xref="Gio.activate"/> and <link xref="Gio.change_state"/> for type
+calls to <link xref="Gio.Action.activate"/> and <link xref="Gio.Action.change_state"/> for type
 safety and for the state being enabled.</p>  <p>Probably the only useful thing to do with a <link xref="Gio.Action"/> is to put it
 inside of a <link xref="Gio.SimpleActionGroup"/>.</p>
 

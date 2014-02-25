@@ -30,7 +30,7 @@ event source. The event source's check function will typically test
 the @revents field in the <link xref="GLib.PollFD"/> struct and return <code>true</code> if events need
 to be processed.</p>  <p>Using this API forces the linear scanning of event sources on each
 main loop iteration.  Newly-written event sources should try to use
-<link xref="GLib.add_unix_fd"/> instead of this API.</p>
+<link xref="GLib.Source.add_unix_fd"/> instead of this API.</p>
 
 <terms>
 <item>

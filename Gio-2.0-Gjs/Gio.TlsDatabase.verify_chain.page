@@ -56,7 +56,7 @@ which means that the certificate is being used to authenticate a server
 (and we are acting as the client).</p>  <p>The <code>identity</code> is used to check for pinned certificates (trust exceptions)
 in the database. These will override the normal verification process on a
 host by host basis.</p>  <p>Currently there are no <code>flags</code>, and <link xref="Gio.TlsDatabaseVerifyFlags"/>.none should be
-used.</p>  <p>This function can block, use <link xref="Gio.verify_chain_async"/> to perform
+used.</p>  <p>This function can block, use <link xref="Gio.TlsDatabase.verify_chain_async"/> to perform
 the verification operation asynchronously.</p>
   <p>Since 2.30</p>
 <terms>

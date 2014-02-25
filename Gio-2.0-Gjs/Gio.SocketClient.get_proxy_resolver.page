@@ -22,7 +22,7 @@ function get_proxy_resolver(): <link xref="Gio.ProxyResolver">Gio.ProxyResolver<
   </code></synopsis>
   <p>Gets the <link xref="Gio.ProxyResolver"/> being used by <code>client</code>. Normally, this will
 be the resolver returned by <link xref="Gio.proxy_resolver_get_default"/>, but you
-can override it with <link xref="Gio.set_proxy_resolver"/>.</p>
+can override it with <link xref="Gio.SocketClient.set_proxy_resolver"/>.</p>
   <p>Since 2.36</p>
 <terms>
 <item>

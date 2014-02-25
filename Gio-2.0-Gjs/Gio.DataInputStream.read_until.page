@@ -29,11 +29,11 @@ function read_until(stop_chars: String, cancellable: <link xref="Gio.Cancellable
 }
   </code></synopsis>
   <p>Reads a string from the data input stream, up to the first
-occurrence of any of the stop characters.</p>  <p>Note that, in contrast to <link xref="Gio.read_until_async"/>,
+occurrence of any of the stop characters.</p>  <p>Note that, in contrast to <link xref="Gio.DataInputStream.read_until_async"/>,
 this function consumes the stop character that it finds.</p>  <p>Don't use this function in new code.  Its functionality is
-inconsistent with <link xref="Gio.read_until_async"/>.  Both
+inconsistent with <link xref="Gio.DataInputStream.read_until_async"/>.  Both
 functions will be marked as deprecated in a future release.  Use
-<link xref="Gio.read_upto"/> instead, but note that that function
+<link xref="Gio.DataInputStream.read_upto"/> instead, but note that that function
 does not consume the stop character.</p>
 
 <terms>

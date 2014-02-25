@@ -18,7 +18,7 @@ let emblemedIcon = new Gio.EmblemedIcon({
   </code></synopsis>
   <p><link xref="Gio.EmblemedIcon"/> is an implementation of <link xref="Gio.Icon"/> that supports
 adding an emblem to an icon. Adding multiple emblems to an
-icon is ensured via <link xref="Gio.add_emblem"/>.</p>  <p>Note that <link xref="Gio.EmblemedIcon"/> allows no control over the position
+icon is ensured via <link xref="Gio.EmblemedIcon.add_emblem"/>.</p>  <p>Note that <link xref="Gio.EmblemedIcon"/> allows no control over the position
 of the emblems. See also <link xref="Gio.Emblem"/> for more information.</p>
 
   <synopsis>

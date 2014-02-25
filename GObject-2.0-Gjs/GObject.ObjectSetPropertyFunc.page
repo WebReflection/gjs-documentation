@@ -23,7 +23,7 @@ function onObjectSetPropertyFunc(object: <link xref="GObject.Object">GObject.Obj
 <item>
 <title><code>property_id</code></title>
   <p>the numeric id under which the property was registered with
- <link xref="GObject.install_property"/>.</p>
+ <link xref="GObject.ObjectClass.install_property"/>.</p>
 </item>
 <item>
 <title><code>value</code></title>

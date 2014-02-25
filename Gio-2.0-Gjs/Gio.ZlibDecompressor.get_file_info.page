@@ -22,7 +22,7 @@ function get_file_info(): <link xref="Gio.FileInfo">Gio.FileInfo</link> {
   </code></synopsis>
   <p>Retrieves the <link xref="Gio.FileInfo"/> constructed from the GZIP header data
 of compressed data processed by @compressor, or <code>null</code> if <code>decompressor</code>'s
-<link xref="Gio.format"/> property is not <link xref="Gio.ZlibCompressorFormat"/>.gzip,
+<link xref="Gio.ZlibDecompressor-format"/> property is not <link xref="Gio.ZlibCompressorFormat"/>.gzip,
 or the header data was not fully processed yet, or it not present in the
 data stream at all.</p>
   <p>Since 2.26</p>

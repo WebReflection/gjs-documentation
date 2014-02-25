@@ -21,8 +21,8 @@ function to_local(): <link xref="GLib.DateTime">GLib.DateTime</link> {
 }
   </code></synopsis>
   <p>Creates a new <link xref="GLib.DateTime"/> corresponding to the same instant in time as
-<code>datetime</code>, but in the local time zone.</p>  <p>This call is equivalent to calling <link xref="GLib.to_timezone"/> with the
-time zone returned by <link xref="GLib.new_local"/>.</p>
+<code>datetime</code>, but in the local time zone.</p>  <p>This call is equivalent to calling <link xref="GLib.DateTime.to_timezone"/> with the
+time zone returned by <link xref="GLib.TimeZone.new_local"/>.</p>
   <p>Since 2.26</p>
 <terms>
 <item>

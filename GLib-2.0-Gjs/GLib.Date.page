@@ -22,9 +22,9 @@ let date = new GLib.Date({
 });
   </code></synopsis>
   <p>Represents a day between January 1, Year 1 and a few thousand years in
-the future. None of its members should be accessed directly.</p>  <p>If the <link xref="GLib.Date"/>-struct is obtained from <link xref="GLib.new"/>, it will be safe
+the future. None of its members should be accessed directly.</p>  <p>If the <link xref="GLib.Date"/>-struct is obtained from <link xref="GLib.Date.new"/>, it will be safe
 to mutate but invalid and thus not safe for calendrical computations.</p>  <p>If it's declared on the stack, it will contain garbage so must be
-initialized with <link xref="GLib.clear"/>. <link xref="GLib.clear"/> makes the date invalid
+initialized with <link xref="GLib.Date.clear"/>. <link xref="GLib.Date.clear"/> makes the date invalid
 but sane. An invalid date doesn't represent a day, it's "empty." A date
 becomes valid after you set it to a Julian day or you set a day, month,
 and year.</p>

@@ -45,7 +45,7 @@ function param_spec_variant(name: String, nick: String, blurb: String, type: <li
 }
   </code></synopsis>
   <p>Creates a new <link xref="GObject.ParamSpecVariant"/> instance specifying a <link xref="GLib.Variant"/>
-property.</p>  <p>If <code>default_value</code> is floating, it is consumed.</p>  <p>See <link xref="GObject.internal"/> for details on property names.</p>
+property.</p>  <p>If <code>default_value</code> is floating, it is consumed.</p>  <p>See <link xref="GObject.ParamSpec.internal"/> for details on property names.</p>
   <p>Since 2.26</p>
 <terms>
 <item>

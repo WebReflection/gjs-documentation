@@ -9,7 +9,7 @@
     <link xref="index" group="enum" type="guide"/>
   </info>
   <title>Gio.IOModuleScopeFlags</title>
-  <p>Flags for use with <link xref="Gio.new"/>.</p>
+  <p>Flags for use with <link xref="Gio.IOModuleScope.new"/>.</p>
   <p>Since 2.30</p>
 <terms>
 <item>

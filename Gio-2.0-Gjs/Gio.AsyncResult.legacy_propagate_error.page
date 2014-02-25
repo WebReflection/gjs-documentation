@@ -21,7 +21,7 @@ function legacy_propagate_error(): Boolean {
 }
   </code></synopsis>
   <p>If <code>res</code> is a <link xref="Gio.SimpleAsyncResult"/>, this is equivalent to
-<link xref="Gio.propagate_error"/>. Otherwise it returns
+<link xref="Gio.SimpleAsyncResult.propagate_error"/>. Otherwise it returns
 <code>false</code>.</p>  <p>This can be used for legacy error handling in async *_finish()
 wrapper functions that traditionally handled <link xref="Gio.SimpleAsyncResult"/>
 error returns themselves rather than calling into the virtual method.

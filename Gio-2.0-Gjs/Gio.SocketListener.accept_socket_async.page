@@ -29,7 +29,7 @@ function accept_socket_async(cancellable: <link xref="Gio.Cancellable">Gio.Cance
 }
   </code></synopsis>
   <p>This is the asynchronous version of <link xref="Gio.SocketListener.accept_socket"/>.</p>  <p>When the operation is finished <code>callback</code> will be
-called. You can then call <link xref="Gio.accept_socket_finish"/>
+called. You can then call <link xref="Gio.SocketListener.accept_socket_finish"/>
 to get the result of the operation.</p>
   <p>Since 2.22</p>
 <terms>

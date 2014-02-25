@@ -16,10 +16,10 @@ connect('activate', function (simpleAction, parameter: <link href="../GLib-2.0/G
   <p>Indicates that the action was just activated.</p>  <p><code>parameter</code> will always be of the expected type.  In the event that
 an incorrect type was given, no signal will be emitted.</p>  <p>Since GLib 2.40, if no handler is connected to this signal then the
 default behaviour for boolean-stated actions with a <code>null</code> parameter
-type is to toggle them via the <link xref="Gio.change-state"/> signal.
+type is to toggle them via the <link xref="Gio.SimpleAction-change-state"/> signal.
 For stateful actions where the state type is equal to the parameter
 type, the default is to forward them directly to
-<link xref="Gio.change-state"/>.  This should allow almost all users
+<link xref="Gio.SimpleAction-change-state"/>.  This should allow almost all users
 of <link xref="Gio.SimpleAction"/> to connect only one handler or the other.</p>
   <p>Since 2.28</p>
 <terms>

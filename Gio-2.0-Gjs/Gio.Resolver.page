@@ -15,9 +15,9 @@ const Gio = imports.gi.Gio;
 let resolver = new Gio.Resolver();
   </code></synopsis>
   <p><link xref="Gio.Resolver"/> provides cancellable synchronous and asynchronous DNS
-resolution, for hostnames (<link xref="Gio.lookup_by_address"/>,
-<link xref="Gio.lookup_by_name"/> and their async variants) and SRV
-(service) records (<link xref="Gio.lookup_service"/>).</p>  <p><link xref="Gio.NetworkAddress"/> and <link xref="Gio.NetworkService"/> provide wrappers around
+resolution, for hostnames (<link xref="Gio.Resolver.lookup_by_address"/>,
+<link xref="Gio.Resolver.lookup_by_name"/> and their async variants) and SRV
+(service) records (<link xref="Gio.Resolver.lookup_service"/>).</p>  <p><link xref="Gio.NetworkAddress"/> and <link xref="Gio.NetworkService"/> provide wrappers around
 <link xref="Gio.Resolver"/> functionality that also implement <link xref="Gio.SocketConnectable"/>,
 making it easy to connect to a remote host/service.</p>
 

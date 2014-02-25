@@ -21,7 +21,7 @@ function get_exit_status(): Number(gint) {
 }
   </code></synopsis>
   <p>Gets the exit status of <code>cmdline</code>.  See
-<link xref="Gio.set_exit_status"/> for more information.</p>
+<link xref="Gio.ApplicationCommandLine.set_exit_status"/> for more information.</p>
   <p>Since 2.28</p>
 <terms>
 <item>

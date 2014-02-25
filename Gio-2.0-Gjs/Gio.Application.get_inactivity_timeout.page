@@ -21,7 +21,7 @@ function get_inactivity_timeout(): Number(guint) {
 }
   </code></synopsis>
   <p>Gets the current inactivity timeout for the application.</p>  <p>This is the amount of time (in milliseconds) after the last call to
-<link xref="Gio.release"/> before the application stops running.</p>
+<link xref="Gio.Application.release"/> before the application stops running.</p>
   <p>Since 2.28</p>
 <terms>
 <item>

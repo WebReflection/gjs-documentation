@@ -25,7 +25,7 @@ function new_tuple(items: Array(<link xref="GLib.VariantType">GLib.VariantType</
 }
   </code></synopsis>
   <p>Constructs a new tuple type, from <code>items</code>.</p>  <p><code>length</code> is the number of items in <code>items</code>, or -1 to indicate that
-<code>items</code> is <code>null</code>-terminated.</p>  <p>It is appropriate to call <link xref="GLib.free"/> on the return value.</p>
+<code>items</code> is <code>null</code>-terminated.</p>  <p>It is appropriate to call <link xref="GLib.VariantType.free"/> on the return value.</p>
 
 <terms>
 <item>

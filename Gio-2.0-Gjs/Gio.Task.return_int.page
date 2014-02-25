@@ -25,7 +25,7 @@ function return_int(result: Number(gssize)): void {
 }
   </code></synopsis>
   <p>Sets <code>task</code>'s result to <code>result</code> and completes the task (see
-<link xref="Gio.return_pointer"/> for more discussion of exactly what this
+<link xref="Gio.Task.return_pointer"/> for more discussion of exactly what this
 means).</p>
   <p>Since 2.36</p>
 <terms>

@@ -42,7 +42,7 @@ function send_message(address: <link xref="Gio.SocketAddress">Gio.SocketAddress<
   </code></synopsis>
   <p>Send data to <code>address</code> on <code>socket</code>.  This is the most complicated and
 fully-featured version of this call. For easier use, see
-<link xref="Gio.Socket.send"/> and <link xref="Gio.send_to"/>.</p>  <p>If <code>address</code> is <code>null</code> then the message is sent to the default receiver
+<link xref="Gio.Socket.send"/> and <link xref="Gio.Socket.send_to"/>.</p>  <p>If <code>address</code> is <code>null</code> then the message is sent to the default receiver
 (set by <link xref="Gio.Socket.connect"/>).</p>  <p><code>vectors</code> must point to an array of <link xref="Gio.OutputVector"/> structs and
 <code>num_vectors</code> must be the length of this array. (If <code>num_vectors</code> is -1,
 then <code>vectors</code> is assumed to be terminated by a <link xref="Gio.OutputVector"/> with a

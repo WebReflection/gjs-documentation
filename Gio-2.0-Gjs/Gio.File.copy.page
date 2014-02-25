@@ -53,7 +53,7 @@ error is returned. If trying to overwrite a directory with a directory the
 <link xref="Gio.IOErrorEnum"/>.would_merge error is returned.</p>  <p>If the source is a directory and the target does not exist, or
 #G_FILE_COPY_OVERWRITE is specified and the target is a file, then the
 <link xref="Gio.IOErrorEnum"/>.would_recurse error is returned.</p>  <p>If you are interested in copying the <link xref="Gio.File"/> object itself (not the on-disk
-file), see <link xref="Gio.dup"/>.</p>
+file), see <link xref="Gio.File.dup"/>.</p>
 
 <terms>
 <item>

@@ -33,7 +33,7 @@ function insert(position: Number(gint), label: String, detailed_action: String):
 }
   </code></synopsis>
   <p>Convenience function for inserting a normal menu item into <code>menu</code>.
-Combine <link xref="Gio.new"/> and <link xref="Gio.insert_item"/> for a more flexible
+Combine <link xref="Gio.MenuItem.new"/> and <link xref="Gio.Menu.insert_item"/> for a more flexible
 alternative.</p>
   <p>Since 2.32</p>
 <terms>

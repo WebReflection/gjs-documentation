@@ -40,12 +40,12 @@ function bind(key: String, object: <link href="../GObject-2.0/GObject.Object.pag
 and the property <code>property</code> of <code>object</code>.</p>  <p>The binding uses the default GIO mapping functions to map
 between the settings and property values. These functions
 handle booleans, numeric types and string types in a
-straightforward way. Use <link xref="Gio.bind_with_mapping"/> if
+straightforward way. Use <link xref="Gio.Settings.bind_with_mapping"/> if
 you need a custom mapping, or map between types that are not
 supported by the default mapping functions.</p>  <p>Unless the <code>flags</code> include <link xref="Gio.SettingsBindFlags"/>.no_sensitivity, this
 function also establishes a binding between the writability of
 <code>key</code> and the "sensitive" property of <code>object</code> (if <code>object</code> has
-a boolean property by that name). See <link xref="Gio.bind_writable"/>
+a boolean property by that name). See <link xref="Gio.Settings.bind_writable"/>
 for more details about writable bindings.</p>  <p>Note that the lifecycle of the binding is tied to the object,
 and that you can have only one binding per object property.
 If you bind the same property twice on the same object, the second

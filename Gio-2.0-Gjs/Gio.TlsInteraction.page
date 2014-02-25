@@ -18,7 +18,7 @@ let tlsInteraction = new Gio.TlsInteraction();
 code to interact with the user. It can be used to ask the user for passwords.</p>  <p>To use a <link xref="Gio.TlsInteraction"/> with a TLS connection use
 <link xref="Gio.TlsConnection.set_interaction"/>.</p>  <p>Callers should instantiate a derived class that implements the various
 interaction methods to show the required dialogs.</p>  <p>Callers should use the 'invoke' functions like
-<link xref="Gio.invoke_ask_password"/> to run interaction methods. These
+<link xref="Gio.TlsInteraction.invoke_ask_password"/> to run interaction methods. These
 functions make sure that the interaction is invoked in the main loop
 and not in the current thread, if the current thread is not running the
 main loop.</p>  <p>Derived classes can choose to implement whichever interactions methods they'd

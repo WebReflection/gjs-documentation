@@ -25,7 +25,7 @@ and stores them in an array of gchar pointers. The first element in
 the returned array is the match number 0, i.e. the entire matched
 text.</p>  <p>If a sub pattern didn't match anything (e.g. sub pattern 1, matching
 "b" against "(a)?b") then an empty string is inserted.</p>  <p>If the last match was obtained using the DFA algorithm, that is using
-<link xref="GLib.match_all"/> or <link xref="GLib.match_all_full"/>, the retrieved
+<link xref="GLib.Regex.match_all"/> or <link xref="GLib.Regex.match_all_full"/>, the retrieved
 strings are not that matched by sets of parentheses but that of the
 matched substring. Substrings are matched in reverse order of length,
 so the first one is the longest match.</p>  <p>The strings are fetched from the string passed to the match function,

@@ -20,7 +20,7 @@ function down(): void {
     // Gjs wrapper for g_test_dbus_down()
 }
   </code></synopsis>
-  <p>Stop the session bus started by <link xref="Gio.up"/>.</p>  <p>This will wait for the singleton returned by <link xref="Gio.bus_get"/> or <link xref="Gio.bus_get_sync"/>
+  <p>Stop the session bus started by <link xref="Gio.TestDBus.up"/>.</p>  <p>This will wait for the singleton returned by <link xref="Gio.bus_get"/> or <link xref="Gio.bus_get_sync"/>
 is destroyed. This is done to ensure that the next unit test won't get a
 leaked singleton from this test.</p>
 

@@ -15,7 +15,7 @@ TlsConnection.peer_certificate_errors: <link xref="Gio.TlsCertificateFlags">Gio.
   </code></synopsis>
   <p>The errors noticed-and-ignored while verifying
 <link xref="Gio.TlsConnection-peer-certificate"/>. Normally this should be 0, but
-it may not be if <link xref="Gio.validation-flags"/> is not
+it may not be if <link xref="Gio.TlsClientConnection-validation-flags"/> is not
 <link xref="Gio.TlsCertificateFlags"/>.validate_all, or if
 <link xref="Gio.TlsConnection-accept-certificate"/> overrode the default
 behavior.</p>

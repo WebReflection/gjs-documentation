@@ -43,7 +43,7 @@ function send_message_with_reply(message: <link xref="Gio.DBusMessage">Gio.DBusM
   <p>Asynchronously sends <code>message</code> to the peer represented by <code>connection</code>.</p>  <p>Unless <code>flags</code> contain the
 <link xref="Gio.DBusSendMessageFlags"/>.preserve_serial flag, the serial number
 will be assigned by <code>connection</code> and set on <code>message</code> via
-<link xref="Gio.set_serial"/>. If <code>out_serial</code> is not <code>null</code>, then the
+<link xref="Gio.DBusMessage.set_serial"/>. If <code>out_serial</code> is not <code>null</code>, then the
 serial number used will be written to this location prior to
 submitting the message to the underlying transport.</p>  <p>If <code>connection</code> is closed then the operation will fail with
 <link xref="Gio.IOErrorEnum"/>.closed. If <code>cancellable</code> is canceled, the operation will
@@ -52,8 +52,8 @@ the operation fails with <link xref="Gio.IOErrorEnum"/>.invalid_argument.</p>  <
 will be invoked in the
 [thread-default main context][g-main-context-push-thread-default]
 of the thread you are calling this method from. You can then call
-<link xref="Gio.send_message_with_reply_finish"/> to get the result of the operation.
-See <link xref="Gio.send_message_with_reply_sync"/> for the synchronous version.</p>  <p>Note that <code>message</code> must be unlocked, unless <code>flags</code> contain the
+<link xref="Gio.DBusConnection.send_message_with_reply_finish"/> to get the result of the operation.
+See <link xref="Gio.DBusConnection.send_message_with_reply_sync"/> for the synchronous version.</p>  <p>Note that <code>message</code> must be unlocked, unless <code>flags</code> contain the
 <link xref="Gio.DBusSendMessageFlags"/>.preserve_serial flag.</p>  <p>See this [server][gdbus-server] and [client][gdbus-unix-fd-client]
 for an example of how to use this low-level API to send and receive
 UNIX file descriptors.</p>

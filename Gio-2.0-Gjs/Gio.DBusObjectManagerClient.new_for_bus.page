@@ -53,8 +53,8 @@ function new_for_bus(bus_type: <link xref="Gio.BusType">Gio.BusType</link>, flag
 ready, <code>callback</code> will be invoked in the
 [thread-default main loop][g-main-context-push-thread-default]
 of the thread you are calling this method from. You can
-then call <link xref="Gio.new_for_bus_finish"/> to get the result. See
-<link xref="Gio.new_for_bus_sync"/> for the synchronous version.</p>
+then call <link xref="Gio.DBusObjectManagerClient.new_for_bus_finish"/> to get the result. See
+<link xref="Gio.DBusObjectManagerClient.new_for_bus_sync"/> for the synchronous version.</p>
   <p>Since 2.30</p>
 <terms>
 <item>

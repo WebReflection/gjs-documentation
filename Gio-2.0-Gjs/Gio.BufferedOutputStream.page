@@ -17,12 +17,12 @@ let bufferedOutputStream = new Gio.BufferedOutputStream({
 });
   </code></synopsis>
   <p>Buffered output stream implements <link xref="Gio.FilterOutputStream"/> and provides
-for buffered writes.</p>  <p>By default, <link xref="Gio.BufferedOutputStream"/>'s buffer size is set at 4 kilobytes.</p>  <p>To create a buffered output stream, use <link xref="Gio.new"/>,
-or <link xref="Gio.new_sized"/> to specify the buffer's size
+for buffered writes.</p>  <p>By default, <link xref="Gio.BufferedOutputStream"/>'s buffer size is set at 4 kilobytes.</p>  <p>To create a buffered output stream, use <link xref="Gio.BufferedOutputStream.new"/>,
+or <link xref="Gio.BufferedOutputStream.new_sized"/> to specify the buffer's size
 at construction.</p>  <p>To get the size of a buffer within a buffered input stream, use
-<link xref="Gio.get_buffer_size"/>. To change the size of a
+<link xref="Gio.BufferedOutputStream.get_buffer_size"/>. To change the size of a
 buffered output stream's buffer, use
-<link xref="Gio.set_buffer_size"/>. Note that the buffer's
+<link xref="Gio.BufferedOutputStream.set_buffer_size"/>. Note that the buffer's
 size cannot be reduced below the size of the data within the buffer.</p>
 
   <synopsis>

@@ -38,7 +38,7 @@ function new(context: <link xref="GLib.MainContext">GLib.MainContext</link>, is_
 <item>
 <title><code>is_running</code></title>
   <p>set to <code>true</code> to indicate that the loop is running. This
-is not very important since calling <link xref="GLib.run"/> will set this to
+is not very important since calling <link xref="GLib.MainLoop.run"/> will set this to
 <code>true</code> anyway.</p>
 </item>
 <item>

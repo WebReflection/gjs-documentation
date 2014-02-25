@@ -22,7 +22,7 @@ function get_string_length(): Number(gsize) {
   </code></synopsis>
   <p>Returns the length of the type string corresponding to the given
 <code>type</code>.  This function must be used to determine the valid extent of
-the memory region returned by <link xref="GLib.peek_string"/>.</p>
+the memory region returned by <link xref="GLib.VariantType.peek_string"/>.</p>
 
 <terms>
 <item>

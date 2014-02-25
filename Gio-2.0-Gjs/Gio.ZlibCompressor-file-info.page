@@ -13,7 +13,7 @@
   <synopsis><code mime="text/x-gjs">
 ZlibCompressor.file_info: <link xref="Gio.FileInfo">Gio.FileInfo</link> (Read / Write)
   </code></synopsis>
-  <p>If set to a non-<code>null</code> <link xref="Gio.FileInfo"/> object, and <link xref="Gio.format"/> is
+  <p>If set to a non-<code>null</code> <link xref="Gio.FileInfo"/> object, and <link xref="Gio.ZlibCompressor-format"/> is
 <link xref="Gio.ZlibCompressorFormat"/>.gzip, the compressor will write the file name
 and modification time from the file info to the GZIP header.</p>
   <p>Since 2.26</p>

@@ -13,8 +13,8 @@
 function vfunc_get_volumes(): Array(<link xref="Gio.Volume">Gio.Volume</link>) {
 }
   </code></synopsis>
-  <p>Get a list of mountable volumes for <code>drive</code>.</p>  <p>The returned list should be freed with <link xref="GLib.free"/>, after
-its elements have been unreffed with <link xref="GObject.unref"/>.</p>
+  <p>Get a list of mountable volumes for <code>drive</code>.</p>  <p>The returned list should be freed with <link xref="GLib.List.free"/>, after
+its elements have been unreffed with <link xref="GObject.Object.unref"/>.</p>
 
 <terms>
 <item>

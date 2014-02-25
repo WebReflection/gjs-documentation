@@ -15,6 +15,6 @@ OptionEntry.description: String (Read)
   </code></synopsis>
   <p>the description for the option in &lt;option&gt;--help&lt;/option&gt;
  output. The @description is translated using the @translate_func of the
- group, see <link xref="GLib.set_translation_domain"/>.</p>
+ group, see <link xref="GLib.OptionGroup.set_translation_domain"/>.</p>
 
 </page>

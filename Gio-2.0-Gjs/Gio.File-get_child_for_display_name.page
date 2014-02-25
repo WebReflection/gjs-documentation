@@ -29,7 +29,7 @@ type a filename in the file selector.</p>  <p>This call does no blocking I/O.</p
 <title><code>Returns</code></title>
   <p>a <link xref="Gio.File"/> to the specified child, or
     <code>null</code> if the display name couldn't be converted.
-    Free the returned object with <link xref="GObject.unref"/>.</p>
+    Free the returned object with <link xref="GObject.Object.unref"/>.</p>
 </item>
 </terms>
 

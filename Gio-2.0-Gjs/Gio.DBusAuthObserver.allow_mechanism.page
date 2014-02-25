@@ -24,7 +24,7 @@ function allow_mechanism(mechanism: String): Boolean {
     // Gjs wrapper for g_dbus_auth_observer_allow_mechanism()
 }
   </code></synopsis>
-  <p>Emits the <link xref="Gio.allow-mechanism"/> signal on <code>observer</code>.</p>
+  <p>Emits the <link xref="Gio.DBusAuthObserver-allow-mechanism"/> signal on <code>observer</code>.</p>
   <p>Since 2.34</p>
 <terms>
 <item>

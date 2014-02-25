@@ -34,8 +34,8 @@ As such, <code>item</code> itself is not really inserted, but rather, a menu ite
 that is exactly the same as the one presently described by <code>item</code>.</p>  <p>This means that <code>item</code> is essentially useless after the insertion
 occurs.  Any changes you make to it are ignored unless it is inserted
 again (at which point its updated values will be copied).</p>  <p>You should probably just free <code>item</code> once you're done.</p>  <p>There are many convenience functions to take care of common cases.
-See <link xref="Gio.Menu.insert"/>, <link xref="Gio.insert_section"/> and
-<link xref="Gio.insert_submenu"/> as well as "prepend" and "append" variants of
+See <link xref="Gio.Menu.insert"/>, <link xref="Gio.Menu.insert_section"/> and
+<link xref="Gio.Menu.insert_submenu"/> as well as "prepend" and "append" variants of
 each of these functions.</p>
   <p>Since 2.32</p>
 <terms>

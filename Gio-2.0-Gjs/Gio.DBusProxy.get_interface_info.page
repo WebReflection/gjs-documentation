@@ -21,7 +21,7 @@ function get_interface_info(): <link xref="Gio.DBusInterfaceInfo">Gio.DBusInterf
 }
   </code></synopsis>
   <p>Returns the <link xref="Gio.DBusInterfaceInfo"/>, if any, specifying the interface
-that <code>proxy</code> conforms to. See the <link xref="Gio.g-interface-info"/>
+that <code>proxy</code> conforms to. See the <link xref="Gio.DBusProxy-g-interface-info"/>
 property for more details.</p>
   <p>Since 2.26</p>
 <terms>

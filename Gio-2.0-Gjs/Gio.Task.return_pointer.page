@@ -35,7 +35,7 @@ the caller does not take ownership of it with
 it will either invoke the task's callback, or else queue that
 callback to be invoked in the proper <link xref="GLib.MainContext"/>, or in the next
 iteration of the current <link xref="GLib.MainContext"/>. For a task run via
-<link xref="Gio.run_in_thread"/> or <link xref="Gio.run_in_thread_sync"/>, calling this
+<link xref="Gio.Task.run_in_thread"/> or <link xref="Gio.Task.run_in_thread_sync"/>, calling this
 method will save <code>result</code> to be returned to the caller later, but
 the task will not actually be completed until the <link xref="Gio.TaskThreadFunc"/>
 exits.</p>  <p>Note that since the task may be completed before returning from

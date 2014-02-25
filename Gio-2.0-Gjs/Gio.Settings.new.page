@@ -28,7 +28,7 @@ function new(schema_id: String): <link xref="Gio.Settings">Gio.Settings</link> {
 <code>schema_id</code>.</p>  <p>Signals on the newly created <link xref="Gio.Settings"/> object will be dispatched
 via the thread-default <link xref="GLib.MainContext"/> in effect at the time of the
 call to <link xref="Gio.Settings.new"/>.  The new <link xref="Gio.Settings"/> will hold a reference
-on the context.  See <link xref="GLib.push_thread_default"/>.</p>
+on the context.  See <link xref="GLib.MainContext.push_thread_default"/>.</p>
   <p>Since 2.26</p>
 <terms>
 <item>

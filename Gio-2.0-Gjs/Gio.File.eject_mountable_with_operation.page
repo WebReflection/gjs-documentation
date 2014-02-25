@@ -39,7 +39,7 @@ function eject_mountable_with_operation(flags: <link xref="Gio.MountUnmountFlags
   <p>Starts an asynchronous eject on a mountable.
 When this operation has completed, <code>callback</code> will be called with
 @user_user data, and the operation can be finalized with
-<link xref="Gio.eject_mountable_with_operation_finish"/>.</p>  <p>If <code>cancellable</code> is not <code>null</code>, then the operation can be cancelled by
+<link xref="Gio.File.eject_mountable_with_operation_finish"/>.</p>  <p>If <code>cancellable</code> is not <code>null</code>, then the operation can be cancelled by
 triggering the cancellable object from another thread. If the operation
 was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be returned.</p>
   <p>Since 2.22</p>

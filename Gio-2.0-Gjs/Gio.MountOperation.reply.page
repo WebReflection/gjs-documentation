@@ -24,7 +24,7 @@ function reply(result: <link xref="Gio.MountOperationResult">Gio.MountOperationR
     // Gjs wrapper for g_mount_operation_reply()
 }
   </code></synopsis>
-  <p>Emits the <link xref="Gio.reply"/> signal.</p>
+  <p>Emits the <link xref="Gio.MountOperation-reply"/> signal.</p>
 
 <terms>
 <item>

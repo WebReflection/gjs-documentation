@@ -60,7 +60,7 @@ the return value for containing the same as the numbers you gave.</p>  <p>In the
 savings time) then the time falling within standard (ie:
 non-daylight) time is taken.</p>  <p>It not considered a programmer error for the values to this function
 to be out of range, but in the case that they are, the function will
-return <code>null</code>.</p>  <p>You should release the return value by calling <link xref="GLib.unref"/>
+return <code>null</code>.</p>  <p>You should release the return value by calling <link xref="GLib.DateTime.unref"/>
 when you are done with it.</p>
   <p>Since 2.26</p>
 <terms>

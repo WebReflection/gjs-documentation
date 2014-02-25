@@ -32,7 +32,7 @@ function export_menu_model(object_path: String, menu: <link xref="Gio.MenuModel"
 It is subject to change in the future.</p>  <p>An object path can only have one menu model exported on it. If this
 constraint is violated, the export will fail and 0 will be
 returned (with @error set accordingly).</p>  <p>You can unexport the menu model using
-<link xref="Gio.unexport_menu_model"/> with the return value of
+<link xref="Gio.DBusConnection.unexport_menu_model"/> with the return value of
 this function.</p>
   <p>Since 2.32</p>
 <terms>

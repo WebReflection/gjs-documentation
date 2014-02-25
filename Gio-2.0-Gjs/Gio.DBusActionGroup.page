@@ -16,7 +16,7 @@ let dBusActionGroup = new Gio.DBusActionGroup();
   </code></synopsis>
   <p><link xref="Gio.DBusActionGroup"/> is an implementation of the <link xref="Gio.ActionGroup"/>
 interface that can be used as a proxy for an action group
-that is exported over D-Bus with <link xref="Gio.export_action_group"/>.</p>
+that is exported over D-Bus with <link xref="Gio.DBusConnection.export_action_group"/>.</p>
 
   <synopsis>
     <title>Hierarchy</title>

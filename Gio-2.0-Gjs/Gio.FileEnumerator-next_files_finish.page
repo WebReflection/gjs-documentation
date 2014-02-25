@@ -23,7 +23,7 @@ function vfunc_next_files_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncR
 <item>
 <title><code>Returns</code></title>
   <p>a <link xref="GLib.List"/> of <link xref="Gio.FileInfo"/>&lt;!----&gt;s. You must free the list with
-    <link xref="GLib.free"/> and unref the infos with <link xref="GObject.unref"/> when you're
+    <link xref="GLib.List.free"/> and unref the infos with <link xref="GObject.Object.unref"/> when you're
     done with them.</p>
 </item>
 </terms>

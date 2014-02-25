@@ -23,7 +23,7 @@ function steal_data(): void {
   <p>Gets any loaded data from the <code>ostream</code>. Ownership of the data
 is transferred to the caller; when no longer needed it must be
 freed using the free function set in <code>ostream</code>'s
-<link xref="Gio.destroy-function"/> property.</p>  <p><code>ostream</code> must be closed before calling this function.</p>
+<link xref="Gio.MemoryOutputStream-destroy-function"/> property.</p>  <p><code>ostream</code> must be closed before calling this function.</p>
   <p>Since 2.26</p>
 <terms>
 <item>

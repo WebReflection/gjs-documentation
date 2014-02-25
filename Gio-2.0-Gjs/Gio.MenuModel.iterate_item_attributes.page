@@ -25,7 +25,7 @@ function iterate_item_attributes(item_index: Number(gint)): <link xref="Gio.Menu
 }
   </code></synopsis>
   <p>Creates a <link xref="Gio.MenuAttributeIter"/> to iterate over the attributes of
-the item at position <code>item_index</code> in <code>model</code>.</p>  <p>You must free the iterator with <link xref="GObject.unref"/> when you are done.</p>
+the item at position <code>item_index</code> in <code>model</code>.</p>  <p>You must free the iterator with <link xref="GObject.Object.unref"/> when you are done.</p>
   <p>Since 2.32</p>
 <terms>
 <item>

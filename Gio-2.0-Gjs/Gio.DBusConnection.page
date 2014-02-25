@@ -25,22 +25,22 @@ peers such as a message buses. It is a low-level API that offers a
 lot of flexibility. For instance, it lets you establish a connection
 over any transport that can by represented as an <link xref="Gio.IOStream"/>.</p>  <p>This class is rarely used directly in D-Bus clients. If you are writing
 an D-Bus client, it is often easier to use the <link xref="Gio.bus_own_name"/>,
-<link xref="Gio.bus_watch_name"/> or <link xref="Gio.new_for_bus"/> APIs.</p>  <p>As an exception to the usual GLib rule that a particular object must not
+<link xref="Gio.bus_watch_name"/> or <link xref="Gio.DBusProxy.new_for_bus"/> APIs.</p>  <p>As an exception to the usual GLib rule that a particular object must not
 be used by two threads at the same time, <link xref="Gio.DBusConnection"/>'s methods may be
 called from any thread. This is so that <link xref="Gio.bus_get"/> and <link xref="Gio.bus_get_sync"/>
 can safely return the same <link xref="Gio.DBusConnection"/> when called from any thread.</p>  <p>Most of the ways to obtain a <link xref="Gio.DBusConnection"/> automatically initialize it
-(i.e. connect to D-Bus): for instance, <link xref="Gio.new"/> and
+(i.e. connect to D-Bus): for instance, <link xref="Gio.DBusConnection.new"/> and
 <link xref="Gio.bus_get"/>, and the synchronous versions of those methods, give you an
 initialized connection. Language bindings for GIO should use
-<link xref="Gio.new"/> or <link xref="Gio.new_async"/>, which also initialize the
+<link xref="Gio.Initable.new"/> or <link xref="Gio.AsyncInitable.new_async"/>, which also initialize the
 connection.</p>  <p>If you construct an uninitialized <link xref="Gio.DBusConnection"/>, such as via
-<link xref="GObject.new"/>, you must initialize it via <link xref="Gio.init"/> or
+<link xref="GObject.Object.new"/>, you must initialize it via <link xref="Gio.Initable.init"/> or
 <link xref="Gio.AsyncInitable.init_async"/> before using its methods or properties.
 Calling methods or accessing properties on a <link xref="Gio.DBusConnection"/> that has not
 completed initialization successfully is considered to be invalid, and leads
 to undefined behaviour. In particular, if initialization fails with a
 <link xref="GLib.Error"/>, the only valid thing you can do with that <link xref="Gio.DBusConnection"/> is to
-free it with <link xref="GObject.unref"/>.</p>  <p>## An example D-Bus server # {#gdbus-server}</p>  <p>Here is an example for a D-Bus server:
+free it with <link xref="GObject.Object.unref"/>.</p>  <p>## An example D-Bus server # {#gdbus-server}</p>  <p>Here is an example for a D-Bus server:
 [gdbus-example-server.c](https://git.gnome.org/browse/glib/tree/gio/tests/gdbus-example-server.c)</p>  <p>## An example for exporting a subtree # {#gdbus-subtree-server}</p>  <p>Here is an example for exporting a subtree:
 [gdbus-example-subtree.c](https://git.gnome.org/browse/glib/tree/gio/tests/gdbus-example-subtree.c)</p>  <p>## An example for file descriptor passing # {#gdbus-unix-fd-client}</p>  <p>Here is an example for passing UNIX file descriptors:
 [gdbus-unix-fd-client.c](https://git.gnome.org/browse/glib/tree/gio/tests/gdbus-unix-fd-client.c)</p>  <p>## An example for exporting a GObject # {#gdbus-export}</p>  <p>Here is an example for exporting a <link xref="GObject.Object"/>:

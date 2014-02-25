@@ -19,11 +19,11 @@ file handle.</p>  <p>GFileIOStream implements <link xref="Gio.Seekable"/>, which
 stream to jump to arbitrary positions in the file and to truncate
 the file, provided the filesystem of the file supports these
 operations.</p>  <p>To find the position of a file io stream, use
-<link xref="Gio.tell"/>.</p>  <p>To find out if a file io stream supports seeking, use <link xref="Gio.can_seek"/>.
-To position a file io stream, use <link xref="Gio.seek"/>.
+<link xref="Gio.Seekable.tell"/>.</p>  <p>To find out if a file io stream supports seeking, use <link xref="Gio.Seekable.can_seek"/>.
+To position a file io stream, use <link xref="Gio.Seekable.seek"/>.
 To find out if a file io stream supports truncating, use
-<link xref="Gio.can_truncate"/>. To truncate a file io
-stream, use <link xref="Gio.truncate"/>.</p>  <p>The default implementation of all the <link xref="Gio.FileIOStream"/> operations
+<link xref="Gio.Seekable.can_truncate"/>. To truncate a file io
+stream, use <link xref="Gio.Seekable.truncate"/>.</p>  <p>The default implementation of all the <link xref="Gio.FileIOStream"/> operations
 and the implementation of <link xref="Gio.Seekable"/> just call into the same operations
 on the output stream.</p>
 

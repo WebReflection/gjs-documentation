@@ -17,12 +17,12 @@ let bufferedInputStream = new Gio.BufferedInputStream({
 });
   </code></synopsis>
   <p>Buffered input stream implements <link xref="Gio.FilterInputStream"/> and provides
-for buffered reads.</p>  <p>By default, <link xref="Gio.BufferedInputStream"/>'s buffer size is set at 4 kilobytes.</p>  <p>To create a buffered input stream, use <link xref="Gio.new"/>,
-or <link xref="Gio.new_sized"/> to specify the buffer's size at
+for buffered reads.</p>  <p>By default, <link xref="Gio.BufferedInputStream"/>'s buffer size is set at 4 kilobytes.</p>  <p>To create a buffered input stream, use <link xref="Gio.BufferedInputStream.new"/>,
+or <link xref="Gio.BufferedInputStream.new_sized"/> to specify the buffer's size at
 construction.</p>  <p>To get the size of a buffer within a buffered input stream, use
-<link xref="Gio.get_buffer_size"/>. To change the size of a
+<link xref="Gio.BufferedInputStream.get_buffer_size"/>. To change the size of a
 buffered input stream's buffer, use
-<link xref="Gio.set_buffer_size"/>. Note that the buffer's size
+<link xref="Gio.BufferedInputStream.set_buffer_size"/>. Note that the buffer's size
 cannot be reduced below the size of the data within the buffer.</p>
 
   <synopsis>

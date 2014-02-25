@@ -25,7 +25,7 @@ See <link xref="Gio.File.enumerate_children_async"/>.</p>
 <title><code>Returns</code></title>
   <p>a <link xref="Gio.FileEnumerator"/> or <code>null</code>
     if an error occurred.
-    Free the returned object with <link xref="GObject.unref"/>.</p>
+    Free the returned object with <link xref="GObject.Object.unref"/>.</p>
 </item>
 </terms>
 

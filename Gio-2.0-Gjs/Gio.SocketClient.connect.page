@@ -33,10 +33,10 @@ and returned.  The caller owns this new object and must drop their
 reference to it when finished with it.</p>  <p>The type of the <link xref="Gio.SocketConnection"/> object returned depends on the type of
 the underlying socket that is used. For instance, for a TCP/IP connection
 it will be a <link xref="Gio.TcpConnection"/>.</p>  <p>The socket created will be the same family as the address that the
-<code>connectable</code> resolves to, unless family is set with <link xref="Gio.set_family"/>
-or indirectly via <link xref="Gio.set_local_address"/>. The socket type
+<code>connectable</code> resolves to, unless family is set with <link xref="Gio.SocketClient.set_family"/>
+or indirectly via <link xref="Gio.SocketClient.set_local_address"/>. The socket type
 defaults to <link xref="Gio.SocketType"/>.stream but can be set with
-<link xref="Gio.set_socket_type"/>.</p>  <p>If a local address is specified with <link xref="Gio.set_local_address"/> the
+<link xref="Gio.SocketClient.set_socket_type"/>.</p>  <p>If a local address is specified with <link xref="Gio.SocketClient.set_local_address"/> the
 socket will be bound to this address before connecting.</p>
   <p>Since 2.22</p>
 <terms>

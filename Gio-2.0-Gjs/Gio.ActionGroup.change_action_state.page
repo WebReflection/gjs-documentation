@@ -30,9 +30,9 @@ function change_action_state(action_name: String, value: <link href="../GLib-2.0
   </code></synopsis>
   <p>Request for the state of the named action within <code>action_group</code> to be
 changed to <code>value</code>.</p>  <p>The action must be stateful and <code>value</code> must be of the correct type.
-See <link xref="Gio.get_action_state_type"/>.</p>  <p>This call merely requests a change.  The action may refuse to change
+See <link xref="Gio.ActionGroup.get_action_state_type"/>.</p>  <p>This call merely requests a change.  The action may refuse to change
 its state or may change its state to something other than <code>value</code>.
-See <link xref="Gio.get_action_state_hint"/>.</p>  <p>If the <code>value</code> GVariant is floating, it is consumed.</p>
+See <link xref="Gio.ActionGroup.get_action_state_hint"/>.</p>  <p>If the <code>value</code> GVariant is floating, it is consumed.</p>
   <p>Since 2.28</p>
 <terms>
 <item>

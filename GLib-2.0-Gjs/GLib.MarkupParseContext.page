@@ -15,7 +15,7 @@ const GLib = imports.gi.GLib;
 let markupParseContext = new GLib.MarkupParseContext(parser: GLib.MarkupParser, flags: GLib.MarkupParseFlags, user_data: void, user_data_dnotify: GLib.DestroyNotify);
   </code></synopsis>
   <p>A parse context is used to parse a stream of bytes that
-you expect to contain marked-up text.</p>  <p>See <link xref="GLib.new"/>, <link xref="GLib.MarkupParser"/>, and so
+you expect to contain marked-up text.</p>  <p>See <link xref="GLib.MarkupParseContext.new"/>, <link xref="GLib.MarkupParser"/>, and so
 on for more details.</p>
 
   <links type="topic" ui:expanded="true"

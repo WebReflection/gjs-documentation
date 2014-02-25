@@ -21,7 +21,7 @@ function get_multicast_ttl(): Number(guint) {
 }
   </code></synopsis>
   <p>Gets the multicast time-to-live setting on <code>socket</code>; see
-<link xref="Gio.set_multicast_ttl"/> for more details.</p>
+<link xref="Gio.Socket.set_multicast_ttl"/> for more details.</p>
   <p>Since 2.32</p>
 <terms>
 <item>

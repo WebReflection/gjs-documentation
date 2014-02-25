@@ -25,7 +25,7 @@ function new(type_string: String): <link xref="GLib.VariantType">GLib.VariantTyp
 }
   </code></synopsis>
   <p>Creates a new <link xref="GLib.VariantType"/> corresponding to the type string given
-by <code>type_string</code>.  It is appropriate to call <link xref="GLib.free"/> on
+by <code>type_string</code>.  It is appropriate to call <link xref="GLib.VariantType.free"/> on
 the return value.</p>  <p>It is a programmer error to call this function with an invalid type
 string.  Use <link xref="GLib.variant_type_string_is_valid"/> if you are unsure.</p>
   <p>Since 2.24</p>

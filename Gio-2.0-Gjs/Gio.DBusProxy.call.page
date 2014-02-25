@@ -52,7 +52,7 @@ the operation will fail with <link xref="Gio.IOErrorEnum"/>.closed. If
 <link xref="Gio.IOErrorEnum"/>.cancelled. If <code>parameters</code> contains a value not
 compatible with the D-Bus protocol, the operation fails with
 <link xref="Gio.IOErrorEnum"/>.invalid_argument.</p>  <p>If the <code>parameters</code> <link xref="GLib.Variant"/> is floating, it is consumed. This allows
-convenient 'inline' use of <link xref="GLib.new"/>, e.g.:
+convenient 'inline' use of <link xref="GLib.Variant.new"/>, e.g.:
 |[&lt;!-- language="C" --&gt;
  g_dbus_proxy_call (proxy,
                     "TwoStrings",
@@ -65,13 +65,13 @@ convenient 'inline' use of <link xref="GLib.new"/>, e.g.:
                     (GAsyncReadyCallback) two_strings_done,
                     &amp;data);
 ]|</p>  <p>If <code>proxy</code> has an expected interface (see
-<link xref="Gio.g-interface-info"/>) and <code>method_name</code> is referenced by it,
+<link xref="Gio.DBusProxy-g-interface-info"/>) and <code>method_name</code> is referenced by it,
 then the return value is checked against the return type.</p>  <p>This is an asynchronous method. When the operation is finished,
 <code>callback</code> will be invoked in the
 [thread-default main context][g-main-context-push-thread-default]
 of the thread you are calling this method from.
-You can then call <link xref="Gio.call_finish"/> to get the result of
-the operation. See <link xref="Gio.call_sync"/> for the synchronous
+You can then call <link xref="Gio.DBusProxy.call_finish"/> to get the result of
+the operation. See <link xref="Gio.DBusProxy.call_sync"/> for the synchronous
 version of this method.</p>  <p>If <code>callback</code> is <code>null</code> then the D-Bus method call message will be sent with
 the <link xref="Gio.DBusMessageFlags"/>.no_reply_expected flag set.</p>
   <p>Since 2.26</p>

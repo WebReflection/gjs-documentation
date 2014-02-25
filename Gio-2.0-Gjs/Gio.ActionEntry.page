@@ -15,11 +15,11 @@ const Gio = imports.gi.Gio;
 let actionEntry = new Gio.ActionEntry();
   </code></synopsis>
   <p>This struct defines a single action.  It is for use with
-<link xref="Gio.add_action_entries"/>.</p>  <p>The order of the items in the structure are intended to reflect
+<link xref="Gio.ActionMap.add_action_entries"/>.</p>  <p>The order of the items in the structure are intended to reflect
 frequency of use.  It is permissible to use an incomplete initialiser
 in order to leave some of the later values as <code>null</code>.  All values
 after @name are optional.  Additional optional fields may be added in
-the future.</p>  <p>See <link xref="Gio.add_action_entries"/> for an example.</p>
+the future.</p>  <p>See <link xref="Gio.ActionMap.add_action_entries"/> for an example.</p>
 
   <links type="topic" ui:expanded="true"
          api:type="function" api:mime="text/x-gjs"

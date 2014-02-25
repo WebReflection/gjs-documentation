@@ -15,7 +15,7 @@ function vfunc_can_reach(connectable: <link xref="Gio.SocketConnectable">Gio.Soc
   </code></synopsis>
   <p>Attempts to determine whether or not the host pointed to by
 <code>connectable</code> can be reached, without actually trying to connect to
-it.</p>  <p>This may return <code>true</code> even when <link xref="Gio.network-available"/>
+it.</p>  <p>This may return <code>true</code> even when <link xref="Gio.NetworkMonitor-network-available"/>
 is <code>false</code>, if, for example, <code>monitor</code> can determine that
 <code>connectable</code> refers to a host on a local network.</p>  <p>If <code>monitor</code> believes that an attempt to connect to <code>connectable</code>
 will succeed, it will return <code>true</code>. Otherwise, it will return

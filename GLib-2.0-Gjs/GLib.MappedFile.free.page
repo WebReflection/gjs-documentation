@@ -21,7 +21,7 @@ function free(): void {
 }
   </code></synopsis>
   <p>This call existed before <link xref="GLib.MappedFile"/> had refcounting and is currently
-exactly the same as <link xref="GLib.unref"/>.</p>
+exactly the same as <link xref="GLib.MappedFile.unref"/>.</p>
   <p>Since 2.8</p>
 
 </page>

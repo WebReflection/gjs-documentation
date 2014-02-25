@@ -29,7 +29,7 @@ and the underlying authentication mechanism.  In most cases the
 permission will be dropped immediately without further action.</p>  <p>You should check with <link xref="Gio.Permission.get_can_release"/> before calling
 this function.</p>  <p>If the permission is released then <code>true</code> is returned.  Otherwise,
 <code>false</code> is returned and @error is set appropriately.</p>  <p>This call is blocking, likely for a very long time (in the case that
-user interaction is required).  See <link xref="Gio.release_async"/> for
+user interaction is required).  See <link xref="Gio.Permission.release_async"/> for
 the non-blocking version.</p>
   <p>Since 2.26</p>
 <terms>

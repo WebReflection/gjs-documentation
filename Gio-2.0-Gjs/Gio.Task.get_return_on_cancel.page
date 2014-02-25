@@ -21,7 +21,7 @@ function get_return_on_cancel(): Boolean {
 }
   </code></synopsis>
   <p>Gets <code>task</code>'s return-on-cancel flag. See
-<link xref="Gio.set_return_on_cancel"/> for more details.</p>
+<link xref="Gio.Task.set_return_on_cancel"/> for more details.</p>
   <p>Since 2.36</p>
 <terms>
 <item>

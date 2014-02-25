@@ -42,7 +42,7 @@ function lookup_service_async(service: String, protocol: String, domain: String,
   </code></synopsis>
   <p>Begins asynchronously performing a DNS SRV lookup for the given
 <code>service</code> and <code>protocol</code> in the given <code>domain</code>, and eventually calls
-<code>callback</code>, which must call <link xref="Gio.lookup_service_finish"/> to
+<code>callback</code>, which must call <link xref="Gio.Resolver.lookup_service_finish"/> to
 get the final result. See <link xref="Gio.Resolver.lookup_service"/> for more
 details.</p>
   <p>Since 2.22</p>

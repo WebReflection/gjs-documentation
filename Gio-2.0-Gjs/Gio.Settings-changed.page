@@ -14,7 +14,7 @@
 connect('changed', function (settings, key: String, ): void);
   </code></synopsis>
   <p>The "changed" signal is emitted when a key has potentially changed.
-You should call one of the <link xref="Gio.get"/> calls to check the new
+You should call one of the <link xref="Gio.Settings.get"/> calls to check the new
 value.</p>  <p>This signal supports detailed connections.  You can connect to the
 detailed signal "changed::x" in order to only receive callbacks
 when key "x" changes.</p>

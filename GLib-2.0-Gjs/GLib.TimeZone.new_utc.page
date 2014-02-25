@@ -21,7 +21,7 @@ function new_utc(): <link xref="GLib.TimeZone">GLib.TimeZone</link> {
 }
   </code></synopsis>
   <p>Creates a <link xref="GLib.TimeZone"/> corresponding to UTC.</p>  <p>This is equivalent to calling <link xref="GLib.TimeZone.new"/> with a value like
-"Z", "UTC", "+00", etc.</p>  <p>You should release the return value by calling <link xref="GLib.unref"/>
+"Z", "UTC", "+00", etc.</p>  <p>You should release the return value by calling <link xref="GLib.TimeZone.unref"/>
 when you are done with it.</p>
   <p>Since 2.26</p>
 <terms>

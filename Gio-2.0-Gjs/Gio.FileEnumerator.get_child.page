@@ -26,7 +26,7 @@ function get_child(info: <link xref="Gio.FileInfo">Gio.FileInfo</link>): <link x
   </code></synopsis>
   <p>Return a new <link xref="Gio.File"/> which refers to the file named by <code>info</code> in the source
 directory of <code>enumerator</code>.  This function is primarily intended to be used
-inside loops with <link xref="Gio.next_file"/>.</p>  <p>This is a convenience method that's equivalent to:
+inside loops with <link xref="Gio.FileEnumerator.next_file"/>.</p>  <p>This is a convenience method that's equivalent to:
 |[&lt;!-- language="C" --&gt;
   gchar *name = g_file_info_get_name (info);
   GFile *child = g_file_get_child (g_file_enumerator_get_container (enumr),
@@ -36,7 +36,7 @@ inside loops with <link xref="Gio.next_file"/>.</p>  <p>This is a convenience me
 <terms>
 <item>
 <title><code>info</code></title>
-  <p>a <link xref="Gio.FileInfo"/> gotten from <link xref="Gio.next_file"/>
+  <p>a <link xref="Gio.FileInfo"/> gotten from <link xref="Gio.FileEnumerator.next_file"/>
   or the async equivalents.</p>
 </item>
 <item>

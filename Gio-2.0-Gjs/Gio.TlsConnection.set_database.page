@@ -29,9 +29,9 @@ This is set to the default database by default. See
 <link xref="Gio.TlsBackend.get_default_database"/>. If set to <code>null</code>, then
 peer certificate validation will always set the
 <link xref="Gio.TlsCertificateFlags"/>.unknown_ca error (meaning
-<link xref="Gio.accept-certificate"/> will always be emitted on
+<link xref="Gio.TlsConnection-accept-certificate"/> will always be emitted on
 client-side connections, unless that bit is not set in
-<link xref="Gio.validation-flags"/>).</p>
+<link xref="Gio.TlsClientConnection-validation-flags"/>).</p>
   <p>Since 2.30</p>
 <terms>
 <item>

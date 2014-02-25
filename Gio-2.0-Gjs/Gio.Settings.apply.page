@@ -22,7 +22,7 @@ function apply(): void {
   </code></synopsis>
   <p>Applies any changes that have been made to the settings.  This
 function does nothing unless <code>settings</code> is in 'delay-apply' mode;
-see <link xref="Gio.delay"/>.  In the normal case settings are always
+see <link xref="Gio.Settings.delay"/>.  In the normal case settings are always
 applied immediately.</p>
 
 

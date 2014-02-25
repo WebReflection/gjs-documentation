@@ -9,8 +9,8 @@
     <link xref="index" group="enum" type="guide"/>
   </info>
   <title>GLib.TraverseType</title>
-  <p>Specifies the type of traveral performed by <link xref="GLib.traverse"/>,
-<link xref="GLib.traverse"/> and <link xref="GLib.find"/>. The different orders are
+  <p>Specifies the type of traveral performed by <link xref="GLib.Tree.traverse"/>,
+<link xref="GLib.Node.traverse"/> and <link xref="GLib.Node.find"/>. The different orders are
 illustrated here:
 - In order: A, B, C, D, E, F, G, H, I
   ![](Sorted_binary_tree_inorder.svg)

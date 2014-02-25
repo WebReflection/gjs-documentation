@@ -10,7 +10,7 @@
   </info>
   <title>Gio.FILE_ATTRIBUTE_FILESYSTEM_SIZE</title>
   <p>A key in the "filesystem" namespace for getting the total size (in bytes) of the file system,
-used in <link xref="Gio.query_filesystem_info"/>. Corresponding <link xref="Gio.FileAttributeType"/>
+used in <link xref="Gio.File.query_filesystem_info"/>. Corresponding <link xref="Gio.FileAttributeType"/>
 is <link xref="Gio.FileAttributeType"/>.uint64.</p>
 
 </page>

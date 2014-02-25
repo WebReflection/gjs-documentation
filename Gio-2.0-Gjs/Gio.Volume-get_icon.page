@@ -19,7 +19,7 @@ function vfunc_get_icon(): <link xref="Gio.Icon">Gio.Icon</link> {
 <item>
 <title><code>Returns</code></title>
   <p>a <link xref="Gio.Icon"/>.
-    The returned object should be unreffed with <link xref="GObject.unref"/>
+    The returned object should be unreffed with <link xref="GObject.Object.unref"/>
     when no longer needed.</p>
 </item>
 </terms>

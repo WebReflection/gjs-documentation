@@ -25,7 +25,7 @@ function read_uint16(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</
 }
   </code></synopsis>
   <p>Reads an unsigned 16-bit/2-byte value from <code>stream</code>.</p>  <p>In order to get the correct byte order for this read operation,
-see <link xref="Gio.DataInputStream.get_byte_order"/> and <link xref="Gio.set_byte_order"/>.</p>
+see <link xref="Gio.DataInputStream.get_byte_order"/> and <link xref="Gio.DataInputStream.set_byte_order"/>.</p>
 
 <terms>
 <item>

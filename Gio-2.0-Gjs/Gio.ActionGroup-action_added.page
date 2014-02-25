@@ -13,7 +13,7 @@
 function vfunc_action_added(action_name: String): void {
 }
   </code></synopsis>
-  <p>Emits the <link xref="Gio.action-added"/> signal on <code>action_group</code>.</p>  <p>This function should only be called by <link xref="Gio.ActionGroup"/> implementations.</p>
+  <p>Emits the <link xref="Gio.ActionGroup-action-added"/> signal on <code>action_group</code>.</p>  <p>This function should only be called by <link xref="Gio.ActionGroup"/> implementations.</p>
   <p>Since 2.28</p>
 <terms>
 <item>

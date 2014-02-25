@@ -26,7 +26,7 @@ function set_default_timeout(timeout_msec: Number(gint)): void {
   </code></synopsis>
   <p>Sets the timeout to use if -1 (specifying default timeout) is
 passed as <code>timeout_msec</code> in the <link xref="Gio.DBusProxy.call"/> and
-<link xref="Gio.DBusProxy.call_sync"/> functions.</p>  <p>See the <link xref="Gio.g-default-timeout"/> property for more details.</p>
+<link xref="Gio.DBusProxy.call_sync"/> functions.</p>  <p>See the <link xref="Gio.DBusProxy-g-default-timeout"/> property for more details.</p>
   <p>Since 2.26</p>
 <terms>
 <item>

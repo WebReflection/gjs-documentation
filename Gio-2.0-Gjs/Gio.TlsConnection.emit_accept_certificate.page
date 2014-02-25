@@ -29,7 +29,7 @@ function emit_accept_certificate(peer_cert: <link xref="Gio.TlsCertificate">Gio.
 }
   </code></synopsis>
   <p>Used by <link xref="Gio.TlsConnection"/> implementations to emit the
-<link xref="Gio.accept-certificate"/> signal.</p>
+<link xref="Gio.TlsConnection-accept-certificate"/> signal.</p>
   <p>Since 2.28</p>
 <terms>
 <item>

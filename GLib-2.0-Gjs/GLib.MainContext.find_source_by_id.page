@@ -29,7 +29,7 @@ function find_source_by_id(source_id: Number(guint)): <link xref="GLib.Source">G
 <terms>
 <item>
 <title><code>source_id</code></title>
-  <p>the source ID, as returned by <link xref="GLib.get_id"/>.</p>
+  <p>the source ID, as returned by <link xref="GLib.Source.get_id"/>.</p>
 </item>
 <item>
 <title><code>Returns</code></title>

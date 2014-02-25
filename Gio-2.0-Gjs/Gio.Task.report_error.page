@@ -41,7 +41,7 @@ on it. Use this in the wrapper function of an asynchronous method
 when you want to avoid even calling the virtual method. You can
 then use <link xref="Gio.AsyncResult.is_tagged"/> in the finish method wrapper to
 check if the result there is tagged as having been created by the
-wrapper method, and deal with it appropriately if so.</p>  <p>See also <link xref="Gio.report_new_error"/>.</p>
+wrapper method, and deal with it appropriately if so.</p>  <p>See also <link xref="Gio.Task.report_new_error"/>.</p>
   <p>Since 2.36</p>
 <terms>
 <item>

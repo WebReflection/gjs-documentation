@@ -20,14 +20,14 @@ function get_next(): [ok: Boolean, out_link: String, value: <link xref="Gio.Menu
     // Gjs wrapper for g_menu_link_iter_get_next()
 }
   </code></synopsis>
-  <p>This function combines <link xref="Gio.next"/> with
-<link xref="Gio.MenuLinkIter.get_name"/> and <link xref="Gio.get_value"/>.</p>  <p>First the iterator is advanced to the next (possibly first) link.
+  <p>This function combines <link xref="Gio.MenuLinkIter.next"/> with
+<link xref="Gio.MenuLinkIter.get_name"/> and <link xref="Gio.MenuLinkIter.get_value"/>.</p>  <p>First the iterator is advanced to the next (possibly first) link.
 If that fails, then <code>false</code> is returned and there are no other effects.</p>  <p>If successful, <code>out_link</code> and <code>value</code> are set to the name and <link xref="Gio.MenuModel"/>
 of the link that has just been advanced to.  At this point,
-<link xref="Gio.MenuLinkIter.get_name"/> and <link xref="Gio.get_value"/> will return the
+<link xref="Gio.MenuLinkIter.get_name"/> and <link xref="Gio.MenuLinkIter.get_value"/> will return the
 same values again.</p>  <p>The value returned in <code>out_link</code> remains valid for as long as the iterator
 remains at the current position.  The value returned in <code>value</code> must
-be unreffed using <link xref="GObject.unref"/> when it is no longer in use.</p>
+be unreffed using <link xref="GObject.Object.unref"/> when it is no longer in use.</p>
   <p>Since 2.32</p>
 <terms>
 <item>

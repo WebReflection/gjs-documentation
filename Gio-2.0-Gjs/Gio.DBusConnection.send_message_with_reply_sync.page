@@ -42,7 +42,7 @@ timeout is reached. See <link xref="Gio.DBusConnection.send_message_with_reply"/
 for the asynchronous version of this method.</p>  <p>Unless <code>flags</code> contain the
 <link xref="Gio.DBusSendMessageFlags"/>.preserve_serial flag, the serial number
 will be assigned by <code>connection</code> and set on <code>message</code> via
-<link xref="Gio.set_serial"/>. If <code>out_serial</code> is not <code>null</code>, then the
+<link xref="Gio.DBusMessage.set_serial"/>. If <code>out_serial</code> is not <code>null</code>, then the
 serial number used will be written to this location prior to
 submitting the message to the underlying transport.</p>  <p>If <code>connection</code> is closed then the operation will fail with
 <link xref="Gio.IOErrorEnum"/>.closed. If <code>cancellable</code> is canceled, the operation will
@@ -50,7 +50,7 @@ fail with <link xref="Gio.IOErrorEnum"/>.cancelled. If <code>message</code> is n
 the operation fails with <link xref="Gio.IOErrorEnum"/>.invalid_argument.</p>  <p>Note that @error is only set if a local in-process error
 occurred. That is to say that the returned <link xref="Gio.DBusMessage"/> object may
 be of type <link xref="Gio.DBusMessageType"/>.error. Use
-<link xref="Gio.to_gerror"/> to transcode this to a <link xref="GLib.Error"/>.</p>  <p>See this [server][gdbus-server] and [client][gdbus-unix-fd-client]
+<link xref="Gio.DBusMessage.to_gerror"/> to transcode this to a <link xref="GLib.Error"/>.</p>  <p>See this [server][gdbus-server] and [client][gdbus-unix-fd-client]
 for an example of how to use this low-level API to send and receive
 UNIX file descriptors.</p>  <p>Note that <code>message</code> must be unlocked, unless <code>flags</code> contain the
 <link xref="Gio.DBusSendMessageFlags"/>.preserve_serial flag.</p>

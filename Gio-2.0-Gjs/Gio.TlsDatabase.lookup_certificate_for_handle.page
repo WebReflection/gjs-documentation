@@ -40,7 +40,7 @@ function lookup_certificate_for_handle(handle: String, interaction: <link xref="
 <link xref="Gio.TlsDatabase.create_certificate_handle"/> on a <link xref="Gio.TlsDatabase"/> object of
 the same TLS backend. The handle is designed to remain valid across
 instantiations of the database.</p>  <p>If the handle is no longer valid, or does not point to a certificate in
-this database, then <code>null</code> will be returned.</p>  <p>This function can block, use <link xref="Gio.lookup_certificate_for_handle_async"/> to perform
+this database, then <code>null</code> will be returned.</p>  <p>This function can block, use <link xref="Gio.TlsDatabase.lookup_certificate_for_handle_async"/> to perform
 the lookup operation asynchronously.</p>
   <p>Since 2.30</p>
 <terms>

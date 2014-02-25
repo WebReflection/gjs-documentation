@@ -22,7 +22,7 @@ function get_native_size(): Number(gssize) {
   </code></synopsis>
   <p>Gets the size of <code>address</code>'s native struct sockaddr.
 You can use this to allocate memory to pass to
-<link xref="Gio.to_native"/>.</p>
+<link xref="Gio.SocketAddress.to_native"/>.</p>
   <p>Since 2.22</p>
 <terms>
 <item>

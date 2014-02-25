@@ -33,7 +33,7 @@ accordingly. A '--' option is stripped from <code>argv</code>
 unless there are unparsed options before and after it,
 or some of the options after it start with '-'. In case
 of an error, <code>argc</code> and <code>argv</code> are left unmodified.</p>  <p>If automatic `--help` support is enabled
-(see <link xref="GLib.set_help_enabled"/>), and the
+(see <link xref="GLib.OptionContext.set_help_enabled"/>), and the
 <code>argv</code> array contains one of the recognized help options,
 this function will produce help output to stdout and
 call `exit (0)`.</p>  <p>Note that function depends on the [current locale][setlocale] for

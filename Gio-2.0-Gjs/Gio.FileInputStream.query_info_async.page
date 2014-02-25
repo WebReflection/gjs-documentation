@@ -38,7 +38,7 @@ function query_info_async(attributes: String, io_priority: Number(gint), cancell
   </code></synopsis>
   <p>Queries the stream information asynchronously.
 When the operation is finished <code>callback</code> will be called.
-You can then call <link xref="Gio.query_info_finish"/>
+You can then call <link xref="Gio.FileInputStream.query_info_finish"/>
 to get the result of the operation.</p>  <p>For the synchronous version of this function,
 see <link xref="Gio.FileInputStream.query_info"/>.</p>  <p>If <code>cancellable</code> is not <code>null</code>, then the operation can be cancelled by
 triggering the cancellable object from another thread. If the operation

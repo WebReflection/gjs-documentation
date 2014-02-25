@@ -33,7 +33,7 @@ function connect_async(address: <link xref="Gio.SocketAddress">Gio.SocketAddress
 }
   </code></synopsis>
   <p>Asynchronously connect <code>connection</code> to the specified remote address.</p>  <p>This clears the <link xref="Gio.Socket-blocking"/> flag on <code>connection</code>'s underlying
-socket if it is currently set.</p>  <p>Use <link xref="Gio.connect_finish"/> to retrieve the result.</p>
+socket if it is currently set.</p>  <p>Use <link xref="Gio.SocketConnection.connect_finish"/> to retrieve the result.</p>
   <p>Since 2.32</p>
 <terms>
 <item>

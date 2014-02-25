@@ -28,20 +28,20 @@ of dynamically loaded types. It goes as follows:</p>  <p>1. The type is initiall
    where @new_type_plugin is an implementation of the
    <link xref="GObject.TypePlugin"/> interface.</p>  <p>2. The type's implementation is referenced, e.g. through
    <link xref="GObject.type_class_ref"/> or through <link xref="GObject.type_create_instance"/> (this is
-   being called by <link xref="GObject.new"/>) or through one of the above done on
+   being called by <link xref="GObject.Object.new"/>) or through one of the above done on
    a type derived from @new_type_id.</p>  <p>3. This causes the type system to load the type's implementation by
-   calling <link xref="GObject.use"/> and <link xref="GObject.complete_type_info"/>
+   calling <link xref="GObject.TypePlugin.use"/> and <link xref="GObject.TypePlugin.complete_type_info"/>
    on @new_type_plugin.</p>  <p>4. At some point the type's implementation isn't required anymore,
    e.g. after <link xref="GObject.TypeClass.unref"/> or <link xref="GObject.type_free_instance"/> (called
    when the reference count of an instance drops to zero).</p>  <p>5. This causes the type system to throw away the information retrieved
-   from <link xref="GObject.complete_type_info"/> and then it calls
-   <link xref="GObject.unuse"/> on @new_type_plugin.</p>  <p>6. Things may repeat from the second step.</p>  <p>So basically, you need to implement a <link xref="GObject.TypePlugin"/> type that
+   from <link xref="GObject.TypePlugin.complete_type_info"/> and then it calls
+   <link xref="GObject.TypePlugin.unuse"/> on @new_type_plugin.</p>  <p>6. Things may repeat from the second step.</p>  <p>So basically, you need to implement a <link xref="GObject.TypePlugin"/> type that
 carries a use_count, once use_count goes from zero to one, you need
 to load the implementation to successfully handle the upcoming
-<link xref="GObject.complete_type_info"/> call. Later, maybe after
+<link xref="GObject.TypePlugin.complete_type_info"/> call. Later, maybe after
 succeeding use/unuse calls, once use_count drops to zero, you can
 unload the implementation again. The type system makes sure to call
-<link xref="GObject.use"/> and <link xref="GObject.complete_type_info"/> again
+<link xref="GObject.TypePlugin.use"/> and <link xref="GObject.TypePlugin.complete_type_info"/> again
 when the type is needed again.</p>  <p><link xref="GObject.TypeModule"/> is an implementation of <link xref="GObject.TypePlugin"/> that already
 implements most of this except for the actual module loading and
 unloading. It even handles multiple registered types per module.</p>

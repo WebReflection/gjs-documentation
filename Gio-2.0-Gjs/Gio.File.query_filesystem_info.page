@@ -28,7 +28,7 @@ function query_filesystem_info(attributes: String, cancellable: <link xref="Gio.
     // Gjs wrapper for g_file_query_filesystem_info()
 }
   </code></synopsis>
-  <p>Similar to <link xref="Gio.query_info"/>, but obtains information
+  <p>Similar to <link xref="Gio.File.query_info"/>, but obtains information
 about the filesystem the <code>file</code> is on, rather than the file itself.
 For instance the amount of space available and the type of
 the filesystem.</p>  <p>The <code>attributes</code> value is a string that specifies the attributes

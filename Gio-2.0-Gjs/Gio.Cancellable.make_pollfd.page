@@ -28,14 +28,14 @@ function make_pollfd(pollfd: <link href="../GLib-2.0/GLib.PollFD.page">GLib.Poll
 to <link xref="GLib.poll"/> and used to poll for cancellation. This is useful both
 for unix systems without a native poll and for portability to
 windows.</p>  <p>When this function returns <code>true</code>, you should use
-<link xref="Gio.release_fd"/> to free up resources allocated for the
-<code>pollfd</code>. After a <code>false</code> return, do not call <link xref="Gio.release_fd"/>.</p>  <p>If this function returns <code>false</code>, either no <code>cancellable</code> was given or
+<link xref="Gio.Cancellable.release_fd"/> to free up resources allocated for the
+<code>pollfd</code>. After a <code>false</code> return, do not call <link xref="Gio.Cancellable.release_fd"/>.</p>  <p>If this function returns <code>false</code>, either no <code>cancellable</code> was given or
 resource limits prevent this function from allocating the necessary
 structures for polling. (On Linux, you will likely have reached
 the maximum number of file descriptors.) The suggested way to handle
 these cases is to ignore the <code>cancellable</code>.</p>  <p>You are not supposed to read from the fd yourself, just check for
 readable status. Reading to unset the readable status is done
-with <link xref="Gio.reset"/>.</p>
+with <link xref="Gio.Cancellable.reset"/>.</p>
   <p>Since 2.22</p>
 <terms>
 <item>

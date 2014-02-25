@@ -14,7 +14,7 @@ function onTaskThreadFunc(task: <link xref="Gio.Task">Gio.Task</link>, source_ob
 }
   </code></synopsis>
   <p>The prototype for a task function to be run in a thread via
-<link xref="Gio.run_in_thread"/> or <link xref="Gio.run_in_thread_sync"/>.</p>  <p>If the return-on-cancel flag is set on <code>task</code>, and <code>cancellable</code> gets
+<link xref="Gio.Task.run_in_thread"/> or <link xref="Gio.Task.run_in_thread_sync"/>.</p>  <p>If the return-on-cancel flag is set on <code>task</code>, and <code>cancellable</code> gets
 cancelled, then the <link xref="Gio.Task"/> will be completed immediately (as though
 <link xref="Gio.Task.return_error_if_cancelled"/> had been called), without
 waiting for the task function to complete. However, the task

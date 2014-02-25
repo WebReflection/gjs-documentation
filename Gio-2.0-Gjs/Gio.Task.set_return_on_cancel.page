@@ -25,8 +25,8 @@ function set_return_on_cancel(return_on_cancel: Boolean): Boolean {
 }
   </code></synopsis>
   <p>Sets or clears <code>task</code>'s return-on-cancel flag. This is only
-meaningful for tasks run via <link xref="Gio.run_in_thread"/> or
-<link xref="Gio.run_in_thread_sync"/>.</p>  <p>If <code>return_on_cancel</code> is <code>true</code>, then cancelling <code>task</code>'s
+meaningful for tasks run via <link xref="Gio.Task.run_in_thread"/> or
+<link xref="Gio.Task.run_in_thread_sync"/>.</p>  <p>If <code>return_on_cancel</code> is <code>true</code>, then cancelling <code>task</code>'s
 <link xref="Gio.Cancellable"/> will immediately cause it to return, as though the
 task's <link xref="Gio.TaskThreadFunc"/> had called
 <link xref="Gio.Task.return_error_if_cancelled"/> and then returned.</p>  <p>This allows you to create a cancellable wrapper around an
@@ -41,7 +41,7 @@ returning <code>false</code>.</p>  <p>You can disable and re-enable this flag mu
 If the task's <link xref="Gio.Cancellable"/> is cancelled while return-on-cancel is
 <code>false</code>, then calling <link xref="Gio.Task.set_return_on_cancel"/> to set it <code>true</code>
 again will cause the task to be cancelled at that point.</p>  <p>If the task's <link xref="Gio.Cancellable"/> is already cancelled before you call
-<link xref="Gio.run_in_thread"/>/<link xref="Gio.run_in_thread_sync"/>, then the
+<link xref="Gio.Task.run_in_thread"/>/<link xref="Gio.Task.run_in_thread_sync"/>, then the
 <link xref="Gio.TaskThreadFunc"/> will still be run (for consistency), but the task
 will also be completed right away.</p>
   <p>Since 2.36</p>

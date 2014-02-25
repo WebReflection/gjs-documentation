@@ -24,7 +24,7 @@ function set_ignore_hosts(ignore_hosts: String): void {
     // Gjs wrapper for g_simple_proxy_resolver_set_ignore_hosts()
 }
   </code></synopsis>
-  <p>Sets the list of ignored hosts.</p>  <p>See <link xref="Gio.ignore-hosts"/> for more details on how the
+  <p>Sets the list of ignored hosts.</p>  <p>See <link xref="Gio.SimpleProxyResolver-ignore-hosts"/> for more details on how the
 <code>ignore_hosts</code> argument is interpreted.</p>
   <p>Since 2.36</p>
 <terms>

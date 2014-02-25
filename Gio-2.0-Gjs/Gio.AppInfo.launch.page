@@ -36,9 +36,9 @@ can fail to start if it runs into problems during startup. There is
 no way to detect this.</p>  <p>Some URIs can be changed when passed through a GFile (for instance
 unsupported URIs with strange formats like mailto:), so if you have
 a textual URI you want to pass in as argument, consider using
-<link xref="Gio.launch_uris"/> instead.</p>  <p>The launched application inherits the environment of the launching
-process, but it can be modified with <link xref="Gio.setenv"/>
-and <link xref="Gio.unsetenv"/>.</p>  <p>On UNIX, this function sets the `GIO_LAUNCHED_DESKTOP_FILE`
+<link xref="Gio.AppInfo.launch_uris"/> instead.</p>  <p>The launched application inherits the environment of the launching
+process, but it can be modified with <link xref="Gio.AppLaunchContext.setenv"/>
+and <link xref="Gio.AppLaunchContext.unsetenv"/>.</p>  <p>On UNIX, this function sets the `GIO_LAUNCHED_DESKTOP_FILE`
 environment variable with the path of the launched desktop file and
 `GIO_LAUNCHED_DESKTOP_FILE_PID` to the process id of the launched
 process. This can be used to ignore `GIO_LAUNCHED_DESKTOP_FILE`,

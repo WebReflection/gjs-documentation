@@ -22,7 +22,7 @@ function get_exit_on_close(): Boolean {
   </code></synopsis>
   <p>Gets whether the process is terminated when <code>connection</code> is
 closed by the remote peer. See
-<link xref="Gio.exit-on-close"/> for more details.</p>
+<link xref="Gio.DBusConnection-exit-on-close"/> for more details.</p>
   <p>Since 2.26</p>
 <terms>
 <item>

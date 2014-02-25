@@ -22,7 +22,7 @@ function get_can_release(): Boolean {
   </code></synopsis>
   <p>Gets the value of the 'can-release' property.  This property is <code>true</code>
 if it is generally possible to release the permission by calling
-<link xref="Gio.release"/>.</p>
+<link xref="Gio.Permission.release"/>.</p>
   <p>Since 2.26</p>
 <terms>
 <item>

@@ -21,7 +21,7 @@ function push_current(): void {
 }
   </code></synopsis>
   <p>Pushes <code>cancellable</code> onto the cancellable stack. The current
-cancellable can then be received using <link xref="Gio.get_current"/>.</p>  <p>This is useful when implementing cancellable operations in
+cancellable can then be received using <link xref="Gio.Cancellable.get_current"/>.</p>  <p>This is useful when implementing cancellable operations in
 code that does not allow you to pass down the cancellable object.</p>  <p>This is typically called automatically by e.g. <link xref="Gio.File"/> operations,
 so you rarely have to call this yourself.</p>
 

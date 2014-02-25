@@ -32,7 +32,7 @@ returned an "Operation was cancelled" error
 (<link xref="Gio.IOErrorEnum"/>.cancelled), regardless of any other error or return
 value the task may have had.</p>  <p>If <code>check_cancellable</code> is <code>false</code>, then the <link xref="Gio.Task"/> will not check the
 cancellable itself, and it is up to <code>task</code>'s owner to do this (eg,
-via <link xref="Gio.Task.return_error_if_cancelled"/>).</p>  <p>If you are using <link xref="Gio.set_return_on_cancel"/> as well, then
+via <link xref="Gio.Task.return_error_if_cancelled"/>).</p>  <p>If you are using <link xref="Gio.Task.set_return_on_cancel"/> as well, then
 you must leave check-cancellable set <code>true</code>.</p>
   <p>Since 2.36</p>
 <terms>

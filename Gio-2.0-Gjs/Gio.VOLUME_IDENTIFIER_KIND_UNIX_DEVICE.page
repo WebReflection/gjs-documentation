@@ -9,6 +9,6 @@
     <link xref="index" group="default" type="guide"/>
   </info>
   <title>Gio.VOLUME_IDENTIFIER_KIND_UNIX_DEVICE</title>
-  <p>The string used to obtain a Unix device path with <link xref="Gio.get_identifier"/>.</p>
+  <p>The string used to obtain a Unix device path with <link xref="Gio.Volume.get_identifier"/>.</p>
 
 </page>

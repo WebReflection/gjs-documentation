@@ -21,7 +21,7 @@ function get_string(): String {
 }
   </code></synopsis>
   <p>Gets the HMAC as an hexadecimal string.</p>  <p>Once this function has been called the <link xref="GLib.Hmac"/> can no longer be
-updated with <link xref="GLib.update"/>.</p>  <p>The hexadecimal characters will be lower case.</p>
+updated with <link xref="GLib.Hmac.update"/>.</p>  <p>The hexadecimal characters will be lower case.</p>
   <p>Since 2.30</p>
 <terms>
 <item>

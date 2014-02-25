@@ -26,7 +26,7 @@ function get_cached_property(property_name: String): <link href="../GLib-2.0/GLi
   </code></synopsis>
   <p>Looks up the value for a property from the cache. This call does no
 blocking IO.</p>  <p>If <code>proxy</code> has an expected interface (see
-<link xref="Gio.g-interface-info"/>) and <code>property_name</code> is referenced by
+<link xref="Gio.DBusProxy-g-interface-info"/>) and <code>property_name</code> is referenced by
 it, then @value is checked against the type of the property.</p>
   <p>Since 2.26</p>
 <terms>

@@ -25,7 +25,7 @@ function set_exit_on_close(exit_on_close: Boolean): void {
 }
   </code></synopsis>
   <p>Sets whether the process should be terminated when <code>connection</code> is
-closed by the remote peer. See <link xref="Gio.exit-on-close"/> for
+closed by the remote peer. See <link xref="Gio.DBusConnection-exit-on-close"/> for
 more details.</p>  <p>Note that this function should be used with care. Most modern UNIX
 desktops tie the notion of a user session the session bus, and expect
 all of a users applications to quit when their bus connection goes away.

@@ -30,7 +30,7 @@ function send(buffer: ByteArray, cancellable: <link xref="Gio.Cancellable">Gio.C
   </code></synopsis>
   <p>Tries to send <code>size</code> bytes from <code>buffer</code> on the socket. This is
 mainly used by connection-oriented sockets; it is identical to
-<link xref="Gio.send_to"/> with @address set to <code>null</code>.</p>  <p>If the socket is in blocking mode the call will block until there is
+<link xref="Gio.Socket.send_to"/> with @address set to <code>null</code>.</p>  <p>If the socket is in blocking mode the call will block until there is
 space for the data in the socket queue. If there is no space available
 and the socket is in non-blocking mode a <link xref="Gio.IOErrorEnum"/>.would_block error
 will be returned. To be notified when space is available, wait for the

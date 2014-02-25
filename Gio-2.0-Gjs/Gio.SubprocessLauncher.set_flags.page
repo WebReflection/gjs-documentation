@@ -28,8 +28,8 @@ function set_flags(flags: <link xref="Gio.SubprocessFlags">Gio.SubprocessFlags</
 handle a particular stdio stream (eg: specifying both
 <link xref="Gio.SubprocessFlags"/>.stdin_pipe and
 <link xref="Gio.SubprocessFlags"/>.stdin_inherit).</p>  <p>You may also not set a flag that conflicts with a previous call to a
-function like <link xref="Gio.set_stdin_file_path"/> or
-<link xref="Gio.take_stdout_fd"/>.</p>
+function like <link xref="Gio.SubprocessLauncher.set_stdin_file_path"/> or
+<link xref="Gio.SubprocessLauncher.take_stdout_fd"/>.</p>
   <p>Since 2.40</p>
 <terms>
 <item>

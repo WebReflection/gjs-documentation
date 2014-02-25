@@ -21,7 +21,7 @@ function enumerate_identifiers(): Array(String) {
 }
   </code></synopsis>
   <p>Gets the kinds of [identifiers][volume-identifier] that <code>volume</code> has.
-Use <link xref="Gio.get_identifier"/> to obtain the identifiers themselves.</p>
+Use <link xref="Gio.Volume.get_identifier"/> to obtain the identifiers themselves.</p>
 
 <terms>
 <item>

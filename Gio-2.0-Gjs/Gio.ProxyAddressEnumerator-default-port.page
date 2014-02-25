@@ -13,7 +13,7 @@
   <synopsis><code mime="text/x-gjs">
 ProxyAddressEnumerator.default_port: Number(guint) (Read / Write / Construct Only)
   </code></synopsis>
-  <p>The default port to use if <link xref="Gio.uri"/> does not
+  <p>The default port to use if <link xref="Gio.ProxyAddressEnumerator-uri"/> does not
 specify one.</p>
   <p>Since 2.38</p>
 </page>

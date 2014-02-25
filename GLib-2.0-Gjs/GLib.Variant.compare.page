@@ -33,7 +33,7 @@ two values that have types that are not exactly equal.  For example,
 you cannot compare a 32-bit signed integer with a 32-bit unsigned
 integer.  Also note that this function is not particularly
 well-behaved when it comes to comparison of doubles; in particular,
-the handling of incomparable values (ie: NaN) is undefined.</p>  <p>If you only require an equality comparison, <link xref="GLib.equal"/> is more
+the handling of incomparable values (ie: NaN) is undefined.</p>  <p>If you only require an equality comparison, <link xref="GLib.Variant.equal"/> is more
 general.</p>
   <p>Since 2.26</p>
 <terms>

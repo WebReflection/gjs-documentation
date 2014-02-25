@@ -29,7 +29,7 @@ time out if they have not yet completed.</p>  <p>On a blocking socket, this mean
 operation will time out after <code>timeout</code> seconds of inactivity,
 returning <link xref="Gio.IOErrorEnum"/>.timed_out.</p>  <p>On a non-blocking socket, calls to <link xref="Gio.Socket.condition_wait"/> will
 also fail with <link xref="Gio.IOErrorEnum"/>.timed_out after the given time. Sources
-created with <link xref="Gio.create_source"/> will trigger after
+created with <link xref="Gio.Socket.create_source"/> will trigger after
 <code>timeout</code> seconds of inactivity, with the requested condition
 set, at which point calling <link xref="Gio.Socket.receive"/>, <link xref="Gio.Socket.send"/>,
 <link xref="Gio.Socket.check_connect_result"/>, etc, will fail with

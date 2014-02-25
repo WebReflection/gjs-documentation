@@ -41,7 +41,7 @@ function param_spec_gtype(name: String, nick: String, blurb: String, is_a_type: 
 }
   </code></synopsis>
   <p>Creates a new <link xref="GObject.ParamSpecGType"/> instance specifying a
-%G_TYPE_GTYPE property.</p>  <p>See <link xref="GObject.internal"/> for details on property names.</p>
+%G_TYPE_GTYPE property.</p>  <p>See <link xref="GObject.ParamSpec.internal"/> for details on property names.</p>
   <p>Since 2.10</p>
 <terms>
 <item>

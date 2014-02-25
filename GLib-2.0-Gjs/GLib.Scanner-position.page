@@ -13,6 +13,6 @@
   <synopsis><code mime="text/x-gjs">
 Scanner.position: Number(guint) (Read / Write)
   </code></synopsis>
-  <p>char number of the last token from <link xref="GLib.get_next_token"/></p>
+  <p>char number of the last token from <link xref="GLib.Scanner.get_next_token"/></p>
 
 </page>

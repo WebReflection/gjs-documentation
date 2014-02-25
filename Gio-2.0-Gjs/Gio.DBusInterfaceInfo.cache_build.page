@@ -21,11 +21,11 @@ function cache_build(): void {
 }
   </code></synopsis>
   <p>Builds a lookup-cache to speed up
-<link xref="Gio.lookup_method"/>,
-<link xref="Gio.lookup_signal"/> and
-<link xref="Gio.lookup_property"/>.</p>  <p>If this has already been called with <code>info</code>, the existing cache is
+<link xref="Gio.DBusInterfaceInfo.lookup_method"/>,
+<link xref="Gio.DBusInterfaceInfo.lookup_signal"/> and
+<link xref="Gio.DBusInterfaceInfo.lookup_property"/>.</p>  <p>If this has already been called with <code>info</code>, the existing cache is
 used and its use count is increased.</p>  <p>Note that <code>info</code> cannot be modified until
-<link xref="Gio.cache_release"/> is called.</p>
+<link xref="Gio.DBusInterfaceInfo.cache_release"/> is called.</p>
   <p>Since 2.30</p>
 
 </page>

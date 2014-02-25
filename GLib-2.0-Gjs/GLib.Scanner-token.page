@@ -13,6 +13,6 @@
   <synopsis><code mime="text/x-gjs">
 Scanner.token: <link xref="GLib.TokenType">GLib.TokenType</link> (Read / Write)
   </code></synopsis>
-  <p>token parsed by the last <link xref="GLib.get_next_token"/></p>
+  <p>token parsed by the last <link xref="GLib.Scanner.get_next_token"/></p>
 
 </page>

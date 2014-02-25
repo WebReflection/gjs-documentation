@@ -28,7 +28,7 @@ any.</p>
 <item>
 <title><code>Returns</code></title>
   <p>A <link xref="Gio.DBusInterface"/> instance or <code>null</code>. Free
-  with <link xref="GObject.unref"/>.</p>
+  with <link xref="GObject.Object.unref"/>.</p>
 </item>
 </terms>
 

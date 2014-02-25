@@ -33,7 +33,7 @@ function communicate_utf8_async(stdin_buf: String, cancellable: <link xref="Gio.
 }
   </code></synopsis>
   <p>Asynchronous version of g_subprocess_communicate_utf().  Complete
-invocation with <link xref="Gio.communicate_utf8_finish"/>.</p>
+invocation with <link xref="Gio.Subprocess.communicate_utf8_finish"/>.</p>
 
 <terms>
 <item>

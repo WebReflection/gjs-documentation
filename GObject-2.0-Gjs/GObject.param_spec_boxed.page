@@ -41,7 +41,7 @@ function param_spec_boxed(name: String, nick: String, blurb: String, boxed_type:
 }
   </code></synopsis>
   <p>Creates a new <link xref="GObject.ParamSpecBoxed"/> instance specifying a %G_TYPE_BOXED
-derived property.</p>  <p>See <link xref="GObject.internal"/> for details on property names.</p>
+derived property.</p>  <p>See <link xref="GObject.ParamSpec.internal"/> for details on property names.</p>
 
 <terms>
 <item>

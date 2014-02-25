@@ -30,7 +30,7 @@ function query_info(attributes: String, cancellable: <link xref="Gio.Cancellable
   </code></synopsis>
   <p>Queries a file output stream for the given <code>attributes</code>.
 This function blocks while querying the stream. For the asynchronous
-version of this function, see <link xref="Gio.query_info_async"/>.
+version of this function, see <link xref="Gio.FileOutputStream.query_info_async"/>.
 While the stream is blocked, the stream will set the pending flag
 internally, and any other operations on the stream will fail with
 <link xref="Gio.IOErrorEnum"/>.pending.</p>  <p>Can fail if the stream was already closed (with @error being set to

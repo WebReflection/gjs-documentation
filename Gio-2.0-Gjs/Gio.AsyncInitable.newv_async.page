@@ -45,7 +45,7 @@ function newv_async(object_type: GObject.Type, n_parameters: Number(guint), para
 }
   </code></synopsis>
   <p>Helper function for constructing <link xref="Gio.AsyncInitable"/> object. This is
-similar to <link xref="GObject.new"/> but also initializes the object asynchronously.</p>  <p>When the initialization is finished, <code>callback</code> will be called. You can
+similar to <link xref="GObject.Object.new"/> but also initializes the object asynchronously.</p>  <p>When the initialization is finished, <code>callback</code> will be called. You can
 then call <link xref="Gio.AsyncInitable.new_finish"/> to get the new object and check
 for any errors.</p>
   <p>Since 2.22</p>

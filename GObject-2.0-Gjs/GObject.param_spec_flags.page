@@ -45,7 +45,7 @@ function param_spec_flags(name: String, nick: String, blurb: String, flags_type:
 }
   </code></synopsis>
   <p>Creates a new <link xref="GObject.ParamSpecFlags"/> instance specifying a %G_TYPE_FLAGS
-property.</p>  <p>See <link xref="GObject.internal"/> for details on property names.</p>
+property.</p>  <p>See <link xref="GObject.ParamSpec.internal"/> for details on property names.</p>
 
 <terms>
 <item>

@@ -20,8 +20,8 @@ function quit(): void {
     // Gjs wrapper for g_application_quit()
 }
   </code></synopsis>
-  <p>Immediately quits the application.</p>  <p>Upon return to the mainloop, <link xref="Gio.run"/> will return,
-calling only the 'shutdown' function before doing so.</p>  <p>The hold count is ignored.</p>  <p>The result of calling <link xref="Gio.run"/> again after it returns is
+  <p>Immediately quits the application.</p>  <p>Upon return to the mainloop, <link xref="Gio.Application.run"/> will return,
+calling only the 'shutdown' function before doing so.</p>  <p>The hold count is ignored.</p>  <p>The result of calling <link xref="Gio.Application.run"/> again after it returns is
 unspecified.</p>
   <p>Since 2.32</p>
 

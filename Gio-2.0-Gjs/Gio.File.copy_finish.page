@@ -24,7 +24,7 @@ function copy_finish(res: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): 
     // Gjs wrapper for g_file_copy_finish()
 }
   </code></synopsis>
-  <p>Finishes copying the file started with <link xref="Gio.copy_async"/>.</p>
+  <p>Finishes copying the file started with <link xref="Gio.File.copy_async"/>.</p>
 
 <terms>
 <item>

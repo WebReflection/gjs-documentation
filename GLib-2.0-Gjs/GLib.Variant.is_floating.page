@@ -22,8 +22,8 @@ function is_floating(): Boolean {
   </code></synopsis>
   <p>Checks whether <code>value</code> has a floating reference count.</p>  <p>This function should only ever be used to assert that a given variant
 is or is not floating, or for debug purposes. To acquire a reference
-to a variant that might be floating, always use <link xref="GLib.ref_sink"/>
-or <link xref="GLib.take_ref"/>.</p>  <p>See <link xref="GLib.ref_sink"/> for more information about floating reference
+to a variant that might be floating, always use <link xref="GLib.Variant.ref_sink"/>
+or <link xref="GLib.Variant.take_ref"/>.</p>  <p>See <link xref="GLib.Variant.ref_sink"/> for more information about floating reference
 counts.</p>
   <p>Since 2.26</p>
 <terms>

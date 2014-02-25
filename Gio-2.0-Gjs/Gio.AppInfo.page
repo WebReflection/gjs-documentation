@@ -16,7 +16,7 @@ let app_info = new Gio.AppInfo();
   </code></synopsis>
   <p><link xref="Gio.AppInfo"/> and <link xref="Gio.AppLaunchContext"/> are used for describing and launching
 applications installed on the system.</p>  <p>As of GLib 2.20, URIs will always be converted to POSIX paths
-(using <link xref="Gio.get_path"/>) when using <link xref="Gio.launch"/> even if
+(using <link xref="Gio.File.get_path"/>) when using <link xref="Gio.AppInfo.launch"/> even if
 the application requested an URI and not a POSIX path. For example
 for an desktop-file based application with Exec key `totem
 \%U` and a single URI, `sftp://foo/file.avi`, then
@@ -29,10 +29,10 @@ path (in gvfs there's no FUSE mount for it); such URIs will be
 passed unmodified to the application.</p>  <p>Specifically for gvfs 2.26 and later, the POSIX URI will be mapped
 back to the GIO URI in the <link xref="Gio.File"/> constructors (since gvfs
 implements the <link xref="Gio.Vfs"/> extension point). As such, if the application
-needs to examine the URI, it needs to use <link xref="Gio.get_uri"/> or
+needs to examine the URI, it needs to use <link xref="Gio.File.get_uri"/> or
 similar on <link xref="Gio.File"/>. In other words, an application cannot assume
 that the URI passed to e.g. <link xref="Gio.file_new_for_commandline_arg"/> is
-equal to the result of <link xref="Gio.get_uri"/>. The following snippet
+equal to the result of <link xref="Gio.File.get_uri"/>. The following snippet
 illustrates this:</p>  <p>|[
 GFile *f;
 char *uri;</p>  <p>file = g_file_new_for_commandline_arg (uri_from_commandline);</p>  <p>uri = g_file_get_uri (file);

@@ -26,7 +26,7 @@ function set_description(description: String): void {
   </code></synopsis>
   <p>Adds a string to be displayed in `--help` output after the list
 of options. This text often includes a bug reporting address.</p>  <p>Note that the summary is translated (see
-<link xref="GLib.set_translate_func"/>).</p>
+<link xref="GLib.OptionContext.set_translate_func"/>).</p>
   <p>Since 2.12</p>
 <terms>
 <item>

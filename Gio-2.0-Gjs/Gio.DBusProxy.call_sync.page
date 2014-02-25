@@ -48,7 +48,7 @@ the operation will fail with <link xref="Gio.IOErrorEnum"/>.closed. If
 <link xref="Gio.IOErrorEnum"/>.cancelled. If <code>parameters</code> contains a value not
 compatible with the D-Bus protocol, the operation fails with
 <link xref="Gio.IOErrorEnum"/>.invalid_argument.</p>  <p>If the <code>parameters</code> <link xref="GLib.Variant"/> is floating, it is consumed. This allows
-convenient 'inline' use of <link xref="GLib.new"/>, e.g.:
+convenient 'inline' use of <link xref="GLib.Variant.new"/>, e.g.:
 |[&lt;!-- language="C" --&gt;
  g_dbus_proxy_call_sync (proxy,
                          "TwoStrings",
@@ -62,7 +62,7 @@ convenient 'inline' use of <link xref="GLib.new"/>, e.g.:
 ]|</p>  <p>The calling thread is blocked until a reply is received. See
 <link xref="Gio.DBusProxy.call"/> for the asynchronous version of this
 method.</p>  <p>If <code>proxy</code> has an expected interface (see
-<link xref="Gio.g-interface-info"/>) and <code>method_name</code> is referenced by it,
+<link xref="Gio.DBusProxy-g-interface-info"/>) and <code>method_name</code> is referenced by it,
 then the return value is checked against the return type.</p>
   <p>Since 2.26</p>
 <terms>

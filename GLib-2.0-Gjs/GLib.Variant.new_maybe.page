@@ -32,7 +32,7 @@ function new_maybe(child_type: <link xref="GLib.VariantType">GLib.VariantType</l
 maybe container or creates a Nothing instance for the given @type.</p>  <p>At least one of <code>child_type</code> and <code>child</code> must be non-<code>null</code>.
 If <code>child_type</code> is non-<code>null</code> then it must be a definite type.
 If they are both non-<code>null</code> then <code>child_type</code> must be the type
-of <code>child</code>.</p>  <p>If <code>child</code> is a floating reference (see <link xref="GLib.ref_sink"/>), the new
+of <code>child</code>.</p>  <p>If <code>child</code> is a floating reference (see <link xref="GLib.Variant.ref_sink"/>), the new
 instance takes ownership of <code>child</code>.</p>
   <p>Since 2.24</p>
 <terms>

@@ -46,7 +46,7 @@ function new_utc(year: Number(gint), month: Number(gint), day: Number(gint), hou
   </code></synopsis>
   <p>Creates a new <link xref="GLib.DateTime"/> corresponding to the given date and time in
 UTC.</p>  <p>This call is equivalent to calling <link xref="GLib.DateTime.new"/> with the time
-zone returned by <link xref="GLib.new_utc"/>.</p>
+zone returned by <link xref="GLib.TimeZone.new_utc"/>.</p>
   <p>Since 2.26</p>
 <terms>
 <item>

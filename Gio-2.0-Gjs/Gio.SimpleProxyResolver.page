@@ -20,7 +20,7 @@ that handles a single default proxy, multiple URI-scheme-specific
 proxies, and a list of hosts that proxies should not be used for.</p>  <p><link xref="Gio.SimpleProxyResolver"/> is never the default proxy resolver, but it
 can be used as the base class for another proxy resolver
 implementation, or it can be created and used manually, such as
-with <link xref="Gio.set_proxy_resolver"/>.</p>
+with <link xref="Gio.SocketClient.set_proxy_resolver"/>.</p>
 
   <synopsis>
     <title>Hierarchy</title>

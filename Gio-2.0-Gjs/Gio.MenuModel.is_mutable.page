@@ -20,7 +20,7 @@ function is_mutable(): Boolean {
     // Gjs wrapper for g_menu_model_is_mutable()
 }
   </code></synopsis>
-  <p>Queries if <code>model</code> is mutable.</p>  <p>An immutable <link xref="Gio.MenuModel"/> will never emit the <link xref="Gio.items-changed"/>
+  <p>Queries if <code>model</code> is mutable.</p>  <p>An immutable <link xref="Gio.MenuModel"/> will never emit the <link xref="Gio.MenuModel-items-changed"/>
 signal. Consumers of the model may make optimisations accordingly.</p>
   <p>Since 2.32</p>
 <terms>

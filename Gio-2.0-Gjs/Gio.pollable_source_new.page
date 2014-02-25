@@ -27,7 +27,7 @@ function pollable_source_new(pollable_stream: <link href="../GObject-2.0/GObject
   <p>Utility method for <link xref="Gio.PollableInputStream"/> and <link xref="Gio.PollableOutputStream"/>
 implementations. Creates a new <link xref="GLib.Source"/> that expects a callback of
 type <link xref="Gio.PollableSourceFunc"/>. The new source does not actually do
-anything on its own; use <link xref="GLib.add_child_source"/> to add other
+anything on its own; use <link xref="GLib.Source.add_child_source"/> to add other
 sources to it to cause it to trigger.</p>
   <p>Since 2.28</p>
 <terms>

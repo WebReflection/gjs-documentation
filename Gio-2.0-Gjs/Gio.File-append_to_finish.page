@@ -25,7 +25,7 @@ function vfunc_append_to_finish(res: <link xref="Gio.AsyncResult">Gio.AsyncResul
 <title><code>Returns</code></title>
   <p>a valid <link xref="Gio.FileOutputStream"/>
     or <code>null</code> on error.
-    Free the returned object with <link xref="GObject.unref"/>.</p>
+    Free the returned object with <link xref="GObject.Object.unref"/>.</p>
 </item>
 </terms>
 

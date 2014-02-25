@@ -41,7 +41,7 @@ it to <code>address</code> and adds it to the set of sockets we're accepting
 sockets from.</p>  <p>Note that adding an IPv6 address, depending on the platform,
 may or may not result in a listener that also accepts IPv4
 connections.  For more deterministic behavior, see
-<link xref="Gio.add_inet_port"/>.</p>  <p><code>source_object</code> will be passed out in the various calls
+<link xref="Gio.SocketListener.add_inet_port"/>.</p>  <p><code>source_object</code> will be passed out in the various calls
 to accept to identify this particular source, which is
 useful if you're listening on multiple addresses and do
 different things depending on what address is connected to.</p>  <p>If successful and <code>effective_address</code> is non-<code>null</code> then it will

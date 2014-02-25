@@ -47,8 +47,8 @@ returned with @error set.  Some or all of the stdin data may have
 been written.  Any stdout or stderr data that has been read will be
 discarded. None of the out variables (aside from @error) will have
 been set to anything in particular and should not be inspected.</p>  <p>In the case that <code>true</code> is returned, the subprocess has exited and the
-exit status inspection APIs (eg: <link xref="Gio.get_if_exited"/>,
-<link xref="Gio.get_exit_status"/>) may be used.</p>  <p>You should not attempt to use any of the subprocess pipes after
+exit status inspection APIs (eg: <link xref="Gio.Subprocess.get_if_exited"/>,
+<link xref="Gio.Subprocess.get_exit_status"/>) may be used.</p>  <p>You should not attempt to use any of the subprocess pipes after
 starting this function, since they may be left in strange states,
 even if the operation was cancelled.  You should especially not
 attempt to interact with the pipes while the operation is in progress

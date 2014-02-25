@@ -22,7 +22,7 @@ function get_method_info(): <link xref="Gio.DBusMethodInfo">Gio.DBusMethodInfo</
   </code></synopsis>
   <p>Gets information about the method call, if any.</p>  <p>If this method invocation is a property Get, Set or GetAll call that
 has been redirected to the method call handler then <code>null</code> will be
-returned.  See <link xref="Gio.get_property_info"/> and
+returned.  See <link xref="Gio.DBusMethodInvocation.get_property_info"/> and
 <link xref="Gio.DBusInterfaceVTable"/> for more information.</p>
   <p>Since 2.26</p>
 <terms>

@@ -30,7 +30,7 @@ function can_reach(connectable: <link xref="Gio.SocketConnectable">Gio.SocketCon
   </code></synopsis>
   <p>Attempts to determine whether or not the host pointed to by
 <code>connectable</code> can be reached, without actually trying to connect to
-it.</p>  <p>This may return <code>true</code> even when <link xref="Gio.network-available"/>
+it.</p>  <p>This may return <code>true</code> even when <link xref="Gio.NetworkMonitor-network-available"/>
 is <code>false</code>, if, for example, <code>monitor</code> can determine that
 <code>connectable</code> refers to a host on a local network.</p>  <p>If <code>monitor</code> believes that an attempt to connect to <code>connectable</code>
 will succeed, it will return <code>true</code>. Otherwise, it will return
@@ -38,7 +38,7 @@ will succeed, it will return <code>true</code>. Otherwise, it will return
 <link xref="Gio.IOErrorEnum"/>.host_unreachable).</p>  <p>Note that although this does not attempt to connect to
 <code>connectable</code>, it may still block for a brief period of time (eg,
 trying to do multicast DNS on the local network), so if you do not
-want to block, you should use <link xref="Gio.can_reach_async"/>.</p>
+want to block, you should use <link xref="Gio.NetworkMonitor.can_reach_async"/>.</p>
   <p>Since 2.32</p>
 <terms>
 <item>

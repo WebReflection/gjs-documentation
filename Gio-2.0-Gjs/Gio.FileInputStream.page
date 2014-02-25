@@ -18,9 +18,9 @@ let fileInputStream = new Gio.FileInputStream();
 content from a file.</p>  <p>GFileInputStream implements <link xref="Gio.Seekable"/>, which allows the input
 stream to jump to arbitrary positions in the file, provided the
 filesystem of the file allows it. To find the position of a file
-input stream, use <link xref="Gio.tell"/>. To find out if a file input
-stream supports seeking, use <link xref="Gio.can_seek"/>.
-To position a file input stream, use <link xref="Gio.seek"/>.</p>
+input stream, use <link xref="Gio.Seekable.tell"/>. To find out if a file input
+stream supports seeking, use <link xref="Gio.Seekable.can_seek"/>.
+To position a file input stream, use <link xref="Gio.Seekable.seek"/>.</p>
 
   <synopsis>
     <title>Hierarchy</title>

@@ -47,10 +47,10 @@ connections - use <link xref="Gio.DBusConnection.new"/> if you need to act as th
 server. In particular, <code>flags</code> cannot contain the
 <link xref="Gio.DBusConnectionFlags"/>.authentication_server or
 <link xref="Gio.DBusConnectionFlags"/>.authentication_allow_anonymous flags.</p>  <p>When the operation is finished, <code>callback</code> will be invoked. You can
-then call <link xref="Gio.new_finish"/> to get the result of the
+then call <link xref="Gio.DBusConnection.new_finish"/> to get the result of the
 operation.</p>  <p>If <code>observer</code> is not <code>null</code> it may be used to control the
 authentication process.</p>  <p>This is a asynchronous failable constructor. See
-<link xref="Gio.new_for_address_sync"/> for the synchronous
+<link xref="Gio.DBusConnection.new_for_address_sync"/> for the synchronous
 version.</p>
   <p>Since 2.26</p>
 <terms>

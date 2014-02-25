@@ -26,7 +26,7 @@ function new_from_timeval_utc(tv: <link xref="GLib.TimeVal">GLib.TimeVal</link>)
   </code></synopsis>
   <p>Creates a <link xref="GLib.DateTime"/> corresponding to the given <link xref="GLib.TimeVal"/> <code>tv</code> in UTC.</p>  <p>The time contained in a <link xref="GLib.TimeVal"/> is always stored in the form of
 seconds elapsed since 1970-01-01 00:00:00 UTC.</p>  <p>This call can fail (returning <code>null</code>) if <code>tv</code> represents a time outside
-of the supported range of <link xref="GLib.DateTime"/>.</p>  <p>You should release the return value by calling <link xref="GLib.unref"/>
+of the supported range of <link xref="GLib.DateTime"/>.</p>  <p>You should release the return value by calling <link xref="GLib.DateTime.unref"/>
 when you are done with it.</p>
   <p>Since 2.26</p>
 <terms>

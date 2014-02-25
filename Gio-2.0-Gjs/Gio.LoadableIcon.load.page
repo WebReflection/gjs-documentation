@@ -29,7 +29,7 @@ function load(size: Number(gint), cancellable: <link xref="Gio.Cancellable">Gio.
 }
   </code></synopsis>
   <p>Loads a loadable icon. For the asynchronous version of this function,
-see <link xref="Gio.load_async"/>.</p>
+see <link xref="Gio.LoadableIcon.load_async"/>.</p>
 
 <terms>
 <item>

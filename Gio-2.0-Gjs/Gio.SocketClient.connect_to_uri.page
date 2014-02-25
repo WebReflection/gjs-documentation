@@ -34,7 +34,7 @@ function connect_to_uri(uri: String, default_port: Number(guint16), cancellable:
   </code></synopsis>
   <p>This is a helper function for <link xref="Gio.SocketClient.connect"/>.</p>  <p>Attempts to create a TCP connection with a network URI.</p>  <p><code>uri</code> may be any valid URI containing an "authority" (hostname/port)
 component. If a port is not specified in the URI, <code>default_port</code>
-will be used. TLS will be negotiated if <link xref="Gio.tls"/> is <code>true</code>.
+will be used. TLS will be negotiated if <link xref="Gio.SocketClient-tls"/> is <code>true</code>.
 (<link xref="Gio.SocketClient"/> does not know to automatically assume TLS for
 certain URI schemes.)</p>  <p>Using this rather than <link xref="Gio.SocketClient.connect"/> or
 <link xref="Gio.SocketClient.connect_to_host"/> allows <link xref="Gio.SocketClient"/> to

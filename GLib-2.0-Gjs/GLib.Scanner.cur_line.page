@@ -22,7 +22,7 @@ function cur_line(): Number(guint) {
   </code></synopsis>
   <p>Returns the current line in the input stream (counting
 from 1). This is the line of the last token parsed via
-<link xref="GLib.get_next_token"/>.</p>
+<link xref="GLib.Scanner.get_next_token"/>.</p>
 
 <terms>
 <item>

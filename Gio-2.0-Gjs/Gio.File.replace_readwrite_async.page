@@ -48,7 +48,7 @@ function replace_readwrite_async(etag: String, make_backup: Boolean, flags: <lin
 replacing the contents, possibly creating a backup copy
 of the file first.</p>  <p>For more details, see <link xref="Gio.File.replace_readwrite"/> which is
 the synchronous version of this call.</p>  <p>When the operation is finished, <code>callback</code> will be called.
-You can then call <link xref="Gio.replace_readwrite_finish"/> to get
+You can then call <link xref="Gio.File.replace_readwrite_finish"/> to get
 the result of the operation.</p>
   <p>Since 2.22</p>
 <terms>

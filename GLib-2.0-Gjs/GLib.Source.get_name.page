@@ -22,7 +22,7 @@ function get_name(): String {
   </code></synopsis>
   <p>Gets a name for the source, used in debugging and profiling.
 The name may be #NULL if it has never been set with
-<link xref="GLib.set_name"/>.</p>
+<link xref="GLib.Source.set_name"/>.</p>
   <p>Since 2.26</p>
 <terms>
 <item>

@@ -24,10 +24,10 @@ function acquire(): Boolean {
 If some other thread is the owner of the context,
 returns <code>false</code> immediately. Ownership is properly
 recursive: the owner can require ownership again
-and will release ownership when <link xref="GLib.release"/>
+and will release ownership when <link xref="GLib.MainContext.release"/>
 is called as many times as <link xref="GLib.MainContext.acquire"/>.</p>  <p>You must be the owner of a context before you
-can call <link xref="GLib.prepare"/>, <link xref="GLib.query"/>,
-<link xref="GLib.check"/>, <link xref="GLib.dispatch"/>.</p>
+can call <link xref="GLib.MainContext.prepare"/>, <link xref="GLib.MainContext.query"/>,
+<link xref="GLib.MainContext.check"/>, <link xref="GLib.MainContext.dispatch"/>.</p>
 
 <terms>
 <item>

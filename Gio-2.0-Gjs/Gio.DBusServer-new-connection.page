@@ -20,7 +20,7 @@ identity (if any), was authenticated.</p>  <p>If you want to accept the connecti
 connection call <link xref="Gio.DBusConnection.close"/> and give up your
 reference. Note that the other peer may disconnect at any time -
 a typical thing to do when accepting a connection is to listen to
-the <link xref="Gio.DBusConnection-closed"/> signal.</p>  <p>If <link xref="Gio.flags"/> contains <link xref="Gio.DBusServerFlags"/>.run_in_thread
+the <link xref="Gio.DBusConnection-closed"/> signal.</p>  <p>If <link xref="Gio.DBusServer-flags"/> contains <link xref="Gio.DBusServerFlags"/>.run_in_thread
 then the signal is emitted in a new thread dedicated to the
 connection. Otherwise the signal is emitted in the
 [thread-default main context][g-main-context-push-thread-default]

@@ -24,23 +24,23 @@ file. All file content I/O is implemented as streaming operations
 - <link xref="Gio.file_new_for_uri"/> if you have a URI.
 - <link xref="Gio.file_new_for_commandline_arg"/> for a command line argument.
 - <link xref="Gio.file_new_tmp"/> to create a temporary file from a template.
-- <link xref="Gio.file_parse_name"/> from a UTF-8 string gotten from <link xref="Gio.get_parse_name"/>.</p>  <p>One way to think of a <link xref="Gio.File"/> is as an abstraction of a pathname. For
+- <link xref="Gio.file_parse_name"/> from a UTF-8 string gotten from <link xref="Gio.File.get_parse_name"/>.</p>  <p>One way to think of a <link xref="Gio.File"/> is as an abstraction of a pathname. For
 normal files the system pathname is what is stored internally, but as
 #GFiles are extensible it could also be something else that corresponds
 to a pathname in a userspace implementation of a filesystem.</p>  <p>#GFiles make up hierarchies of directories and files that correspond to
 the files on a filesystem. You can move through the file system with
-<link xref="Gio.File"/> using <link xref="Gio.get_parent"/> to get an identifier for the parent
-directory, <link xref="Gio.get_child"/> to get a child within a directory,
-<link xref="Gio.resolve_relative_path"/> to resolve a relative path between two
+<link xref="Gio.File"/> using <link xref="Gio.File.get_parent"/> to get an identifier for the parent
+directory, <link xref="Gio.File.get_child"/> to get a child within a directory,
+<link xref="Gio.File.resolve_relative_path"/> to resolve a relative path between two
 #GFiles. There can be multiple hierarchies, so you may not end up at
-the same root if you repeatedly call <link xref="Gio.get_parent"/> on two different
-files.</p>  <p>All #GFiles have a basename (get with <link xref="Gio.get_basename"/>). These names
+the same root if you repeatedly call <link xref="Gio.File.get_parent"/> on two different
+files.</p>  <p>All #GFiles have a basename (get with <link xref="Gio.File.get_basename"/>). These names
 are byte strings that are used to identify the file on the filesystem
 (relative to its parent directory) and there is no guarantees that they
 have any particular charset encoding or even make any sense at all. If
 you want to use filenames in a user interface you should use the display
 name that you can get by requesting the
-%G_FILE_ATTRIBUTE_STANDARD_DISPLAY_NAME attribute with <link xref="Gio.query_info"/>.
+%G_FILE_ATTRIBUTE_STANDARD_DISPLAY_NAME attribute with <link xref="Gio.File.query_info"/>.
 This is guaranteed to be in UTF-8 and can be used in a user interface.
 But always store the real basename or the <link xref="Gio.File"/> to use to actually
 access the file, because there is no way to go from a display name to
@@ -61,9 +61,9 @@ the operation, producing a GAsyncResult which is then passed to the
 function's matching _finish() operation.</p>  <p>Some <link xref="Gio.File"/> operations do not have synchronous analogs, as they may
 take a very long time to finish, and blocking may leave an application
 unusable. Notable cases include:
-- <link xref="Gio.mount_mountable"/> to mount a mountable file.
-- <link xref="Gio.unmount_mountable_with_operation"/> to unmount a mountable file.
-- <link xref="Gio.eject_mountable_with_operation"/> to eject a mountable file.</p>  <p>## Entity Tags # {#gfile-etag}</p>  <p>One notable feature of #GFiles are entity tags, or "etags" for
+- <link xref="Gio.File.mount_mountable"/> to mount a mountable file.
+- <link xref="Gio.File.unmount_mountable_with_operation"/> to unmount a mountable file.
+- <link xref="Gio.File.eject_mountable_with_operation"/> to eject a mountable file.</p>  <p>## Entity Tags # {#gfile-etag}</p>  <p>One notable feature of #GFiles are entity tags, or "etags" for
 short. Entity tags are somewhat like a more abstract version of the
 traditional mtime, and can be used to quickly determine if the file
 has been modified from the version on the file system. See the

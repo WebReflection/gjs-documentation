@@ -21,7 +21,7 @@ function get_database(): <link xref="Gio.TlsDatabase">Gio.TlsDatabase</link> {
 }
   </code></synopsis>
   <p>Gets the certificate database that <code>conn</code> uses to verify
-peer certificates. See <link xref="Gio.set_database"/>.</p>
+peer certificates. See <link xref="Gio.TlsConnection.set_database"/>.</p>
   <p>Since 2.30</p>
 <terms>
 <item>

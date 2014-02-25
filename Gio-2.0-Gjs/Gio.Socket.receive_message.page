@@ -52,7 +52,7 @@ array of <link xref="Gio.SocketControlMessage"/> instances or <code>null</code> 
 messages was received. These correspond to the control messages
 received from the kernel, one <link xref="Gio.SocketControlMessage"/> per message
 from the kernel. This array is <code>null</code>-terminated and must be freed
-by the caller using <link xref="GLib.free"/> after calling <link xref="GObject.unref"/> on each
+by the caller using <link xref="GLib.free"/> after calling <link xref="GObject.Object.unref"/> on each
 element. If <code>messages</code> is <code>null</code>, any control messages received will
 be discarded.</p>  <p><code>num_messages</code>, if non-<code>null</code>, will be set to the number of control
 messages received.</p>  <p>If both <code>messages</code> and <code>num_messages</code> are non-<code>null</code>, then

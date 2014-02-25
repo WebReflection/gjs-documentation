@@ -14,7 +14,7 @@ function onSocketSourceFunc(socket: <link xref="Gio.Socket">Gio.Socket</link>, c
 }
   </code></synopsis>
   <p>This is the function type of the callback used for the <link xref="GLib.Source"/>
-returned by <link xref="Gio.create_source"/>.</p>
+returned by <link xref="Gio.Socket.create_source"/>.</p>
   <p>Since 2.22</p>
 <terms>
 <item>

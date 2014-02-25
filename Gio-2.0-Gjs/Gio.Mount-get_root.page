@@ -20,7 +20,7 @@ function vfunc_get_root(): <link xref="Gio.File">Gio.File</link> {
 <title><code>Returns</code></title>
   <p>a <link xref="Gio.File"/>.
      The returned object should be unreffed with
-     <link xref="GObject.unref"/> when no longer needed.</p>
+     <link xref="GObject.Object.unref"/> when no longer needed.</p>
 </item>
 </terms>
 

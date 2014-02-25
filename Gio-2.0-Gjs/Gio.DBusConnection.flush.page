@@ -30,15 +30,15 @@ function flush(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>,
   </code></synopsis>
   <p>Asynchronously flushes <code>connection</code>, that is, writes all queued
 outgoing message to the transport and then flushes the transport
-(using <link xref="Gio.flush_async"/>). This is useful in programs
+(using <link xref="Gio.OutputStream.flush_async"/>). This is useful in programs
 that wants to emit a D-Bus signal and then exit immediately. Without
 flushing the connection, there is no guaranteed that the message has
 been sent to the networking buffers in the OS kernel.</p>  <p>This is an asynchronous method. When the operation is finished,
 <code>callback</code> will be invoked in the
 [thread-default main context][g-main-context-push-thread-default]
 of the thread you are calling this method from. You can
-then call <link xref="Gio.flush_finish"/> to get the result of the
-operation. See <link xref="Gio.flush_sync"/> for the synchronous
+then call <link xref="Gio.DBusConnection.flush_finish"/> to get the result of the
+operation. See <link xref="Gio.DBusConnection.flush_sync"/> for the synchronous
 version.</p>
   <p>Since 2.26</p>
 <terms>

@@ -70,7 +70,7 @@ output exactly.</p>  <p>The following format specifiers are supported:</p>  <p>-
    Monday being 1. This works well with \%G and \%V.
 - \%V: the ISO 8601 standard week number of the current year as a decimal
   number, range 01 to 53, where week 1 is the first week that has at
-  least 4 days in the new year. See <link xref="GLib.get_week_of_year"/>.
+  least 4 days in the new year. See <link xref="GLib.DateTime.get_week_of_year"/>.
   This works well with \%G and \%u.
 - \%w: the day of the week as a decimal, range 0 to 6, Sunday being 0.
   This is not the ISO 8601 standard format -- use \%u instead.

@@ -20,7 +20,7 @@ function get_local_address(): <link xref="Gio.SocketAddress">Gio.SocketAddress</
     // Gjs wrapper for g_socket_client_get_local_address()
 }
   </code></synopsis>
-  <p>Gets the local address of the socket client.</p>  <p>See <link xref="Gio.set_local_address"/> for details.</p>
+  <p>Gets the local address of the socket client.</p>  <p>See <link xref="Gio.SocketClient.set_local_address"/> for details.</p>
   <p>Since 2.22</p>
 <terms>
 <item>

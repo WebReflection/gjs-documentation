@@ -31,7 +31,7 @@ function new_from_pem(data: String, length: Number(gssize)): <link xref="Gio.Tls
   <p>Creates a new <link xref="Gio.TlsCertificate"/> from the PEM-encoded data in <code>data</code>.
 If <code>data</code> includes both a certificate and a private key, then the
 returned certificate will include the private key data as well. (See
-the <link xref="Gio.private-key-pem"/> property for information about
+the <link xref="Gio.TlsCertificate-private-key-pem"/> property for information about
 supported formats.)</p>  <p>If <code>data</code> includes multiple certificates, only the first one will be
 parsed.</p>
   <p>Since 2.28</p>

@@ -21,7 +21,7 @@ function get_regex(): <link xref="GLib.Regex">GLib.Regex</link> {
 }
   </code></synopsis>
   <p>Returns <link xref="GLib.Regex"/> object used in <code>match_info</code>. It belongs to Glib
-and must not be freed. Use <link xref="GLib.ref"/> if you need to keep it
+and must not be freed. Use <link xref="GLib.Regex.ref"/> if you need to keep it
 after you free <code>match_info</code> object.</p>
   <p>Since 2.14</p>
 <terms>

@@ -38,7 +38,7 @@ implementations to find the underlying mount to shadow, see
 <item>
 <title><code>Returns</code></title>
   <p>the activation root of <code>volume</code> or <code>null</code>. Use
-    <link xref="GObject.unref"/> to free.</p>
+    <link xref="GObject.Object.unref"/> to free.</p>
 </item>
 </terms>
 

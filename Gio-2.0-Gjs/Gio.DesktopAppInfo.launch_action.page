@@ -29,7 +29,7 @@ function launch_action(action_name: String, launch_context: <link xref="Gio.AppL
 }
   </code></synopsis>
   <p>Activates the named application action.</p>  <p>You may only call this function on action names that were
-returned from <link xref="Gio.list_actions"/>.</p>  <p>Note that if the main entry of the desktop file indicates that the
+returned from <link xref="Gio.DesktopAppInfo.list_actions"/>.</p>  <p>Note that if the main entry of the desktop file indicates that the
 application supports startup notification, and <code>launch_context</code> is
 non-<code>null</code>, then startup notification will be used when activating the
 action (and as such, invocation of the action on the receiving side
@@ -42,7 +42,7 @@ occur while using this function.</p>
 <item>
 <title><code>action_name</code></title>
   <p>the name of the action as from
-  <link xref="Gio.list_actions"/></p>
+  <link xref="Gio.DesktopAppInfo.list_actions"/></p>
 </item>
 <item>
 <title><code>launch_context</code></title>

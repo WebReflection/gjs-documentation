@@ -66,7 +66,7 @@ fails with <link xref="Gio.IOErrorEnum"/>.invalid_argument.</p>  <p>If <code>rep
 this type and an error will be raised if it does not match.  Said
 another way, if you give a <code>reply_type</code> then any non-<code>null</code> return
 value will be of this type.</p>  <p>If the <code>parameters</code> <link xref="GLib.Variant"/> is floating, it is consumed.
-This allows convenient 'inline' use of <link xref="GLib.new"/>, e.g.:
+This allows convenient 'inline' use of <link xref="GLib.Variant.new"/>, e.g.:
 |[&lt;!-- language="C" --&gt;
  g_dbus_connection_call_sync (connection,
                               "org.freedesktop.StringThings",

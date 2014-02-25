@@ -32,7 +32,7 @@ order to provide a guarantee to their callers that cancelling an
 async operation will reliably result in an error being returned for
 that operation (even if a positive result for the operation has
 already been sent as an idle to the main context to be dispatched).</p>  <p>The checking described above is done regardless of any call to the
-unrelated <link xref="Gio.set_handle_cancellation"/> function.</p>
+unrelated <link xref="Gio.SimpleAsyncResult.set_handle_cancellation"/> function.</p>
   <p>Since 2.32</p>
 <terms>
 <item>

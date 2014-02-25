@@ -21,7 +21,7 @@ function sink(): void {
 }
   </code></synopsis>
   <p>The initial reference count of a newly created <link xref="GObject.ParamSpec"/> is 1,
-even though no one has explicitly called <link xref="GObject.ref"/> on it
+even though no one has explicitly called <link xref="GObject.ParamSpec.ref"/> on it
 yet. So the initial reference count is flagged as "floating", until
 someone calls `g_param_spec_ref (pspec); g_param_spec_sink
 (pspec);` in sequence on it, taking over the initial

@@ -37,7 +37,7 @@ function connect_to_host_async(host_and_port: String, default_port: Number(guint
 }
   </code></synopsis>
   <p>This is the asynchronous version of <link xref="Gio.SocketClient.connect_to_host"/>.</p>  <p>When the operation is finished <code>callback</code> will be
-called. You can then call <link xref="Gio.connect_to_host_finish"/> to get
+called. You can then call <link xref="Gio.SocketClient.connect_to_host_finish"/> to get
 the result of the operation.</p>
   <p>Since 2.22</p>
 <terms>

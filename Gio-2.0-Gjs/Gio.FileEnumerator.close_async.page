@@ -35,7 +35,7 @@ function close_async(io_priority: Number(gint), cancellable: <link xref="Gio.Can
   <p>Asynchronously closes the file enumerator.</p>  <p>If <code>cancellable</code> is not <code>null</code>, then the operation can be cancelled by
 triggering the cancellable object from another thread. If the operation
 was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be returned in
-<link xref="Gio.close_finish"/>.</p>
+<link xref="Gio.FileEnumerator.close_finish"/>.</p>
 
 <terms>
 <item>

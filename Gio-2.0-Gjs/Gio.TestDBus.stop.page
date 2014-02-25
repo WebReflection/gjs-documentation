@@ -20,7 +20,7 @@ function stop(): void {
     // Gjs wrapper for g_test_dbus_stop()
 }
   </code></synopsis>
-  <p>Stop the session bus started by <link xref="Gio.up"/>.</p>  <p>Unlike <link xref="Gio.TestDBus.down"/>, this won't verify the <link xref="Gio.DBusConnection"/>
+  <p>Stop the session bus started by <link xref="Gio.TestDBus.up"/>.</p>  <p>Unlike <link xref="Gio.TestDBus.down"/>, this won't verify the <link xref="Gio.DBusConnection"/>
 singleton returned by <link xref="Gio.bus_get"/> or <link xref="Gio.bus_get_sync"/> is destroyed. Unit
 tests wanting to verify behaviour after the session bus has been stopped
 can use this function but should still call <link xref="Gio.TestDBus.down"/> when done.</p>

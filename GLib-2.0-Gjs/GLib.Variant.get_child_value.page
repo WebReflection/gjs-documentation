@@ -28,8 +28,8 @@ function get_child_value(index_: Number(gsize)): <link xref="GLib.Variant">GLib.
 includes variants, maybes, arrays, tuples and dictionary
 entries.  It is an error to call this function on any other type of
 <link xref="GLib.Variant"/>.</p>  <p>It is an error if <code>index_</code> is greater than the number of child items
-in the container.  See <link xref="GLib.n_children"/>.</p>  <p>The returned value is never floating.  You should free it with
-<link xref="GLib.unref"/> when you're done with it.</p>  <p>This function is O(1).</p>
+in the container.  See <link xref="GLib.Variant.n_children"/>.</p>  <p>The returned value is never floating.  You should free it with
+<link xref="GLib.Variant.unref"/> when you're done with it.</p>  <p>This function is O(1).</p>
   <p>Since 2.24</p>
 <terms>
 <item>

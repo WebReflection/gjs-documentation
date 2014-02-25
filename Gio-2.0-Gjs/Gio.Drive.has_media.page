@@ -21,7 +21,7 @@ function has_media(): Boolean {
 }
   </code></synopsis>
   <p>Checks if the <code>drive</code> has media. Note that the OS may not be polling
-the drive for media changes; see <link xref="Gio.is_media_check_automatic"/>
+the drive for media changes; see <link xref="Gio.Drive.is_media_check_automatic"/>
 for more details.</p>
 
 <terms>

@@ -27,10 +27,10 @@ function set_translate_func(func: <link xref="GLib.TranslateFunc">GLib.Translate
   <p>Sets the function which is used to translate the contexts
 user-visible strings, for `--help` output. If <code>func</code> is <code>null</code>,
 strings are not translated.</p>  <p>Note that option groups have their own translation functions,
-this function only affects the @parameter_string (see <link xref="GLib.new"/>),
+this function only affects the @parameter_string (see <link xref="GLib.OptionContext.new"/>),
 the summary (see <link xref="GLib.OptionContext.set_summary"/>) and the description
 (see <link xref="GLib.OptionContext.set_description"/>).</p>  <p>If you are using gettext(), you only need to set the translation
-domain, see <link xref="GLib.set_translation_domain"/>.</p>
+domain, see <link xref="GLib.OptionContext.set_translation_domain"/>.</p>
   <p>Since 2.12</p>
 <terms>
 <item>

@@ -46,7 +46,7 @@ kind of filesystem the file is on.</p>
 <item>
 <title><code>Returns</code></title>
   <p>a <link xref="Gio.FileInfo"/> or <code>null</code> if there was an error.
-    Free the returned object with <link xref="GObject.unref"/>.</p>
+    Free the returned object with <link xref="GObject.Object.unref"/>.</p>
 </item>
 </terms>
 

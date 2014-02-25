@@ -52,8 +52,8 @@ function new(connection: <link xref="Gio.DBusConnection">Gio.DBusConnection</lin
 ready, <code>callback</code> will be invoked in the
 [thread-default main context][g-main-context-push-thread-default]
 of the thread you are calling this method from. You can
-then call <link xref="Gio.new_finish"/> to get the result. See
-<link xref="Gio.new_sync"/> for the synchronous version.</p>
+then call <link xref="Gio.DBusObjectManagerClient.new_finish"/> to get the result. See
+<link xref="Gio.DBusObjectManagerClient.new_sync"/> for the synchronous version.</p>
   <p>Since 2.30</p>
 <terms>
 <item>

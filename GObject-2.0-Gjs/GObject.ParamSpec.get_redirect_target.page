@@ -25,7 +25,7 @@ returns that paramspec. Redirect is used typically for
 providing a new implementation of a property in a derived
 type while preserving all the properties from the parent
 type. Redirection is established by creating a property
-of type <link xref="GObject.ParamSpecOverride"/>. See <link xref="GObject.override_property"/>
+of type <link xref="GObject.ParamSpecOverride"/>. See <link xref="GObject.ObjectClass.override_property"/>
 for an example of the use of this capability.</p>
   <p>Since 2.4</p>
 <terms>

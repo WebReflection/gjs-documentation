@@ -23,7 +23,7 @@ function get_match_count(): Number(gint) {
   <p>Retrieves the number of matched substrings (including substring 0,
 that is the whole matched text), so 1 is returned if the pattern
 has no substrings in it and 0 is returned if the match failed.</p>  <p>If the last match was obtained using the DFA algorithm, that is
-using <link xref="GLib.match_all"/> or <link xref="GLib.match_all_full"/>, the retrieved
+using <link xref="GLib.Regex.match_all"/> or <link xref="GLib.Regex.match_all_full"/>, the retrieved
 count is not that of the number of capturing parentheses but that of
 the number of matched substrings.</p>
   <p>Since 2.14</p>

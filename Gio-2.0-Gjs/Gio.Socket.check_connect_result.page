@@ -21,7 +21,7 @@ function check_connect_result(): Boolean {
 }
   </code></synopsis>
   <p>Checks and resets the pending connect error for the socket.
-This is used to check for errors when <link xref="Gio.connect"/> is
+This is used to check for errors when <link xref="Gio.Socket.connect"/> is
 used in non-blocking mode.</p>
   <p>Since 2.22</p>
 <terms>

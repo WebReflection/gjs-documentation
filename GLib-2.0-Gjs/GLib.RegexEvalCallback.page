@@ -13,9 +13,9 @@
 function onRegexEvalCallback(match_info: <link xref="GLib.MatchInfo">GLib.MatchInfo</link>, result: <link xref="GLib.String">GLib.String</link>): Boolean {
 }
   </code></synopsis>
-  <p>Specifies the type of the function passed to <link xref="GLib.replace_eval"/>.
+  <p>Specifies the type of the function passed to <link xref="GLib.Regex.replace_eval"/>.
 It is called for each occurrence of the pattern in the string passed
-to <link xref="GLib.replace_eval"/>, and it should append the replacement to
+to <link xref="GLib.Regex.replace_eval"/>, and it should append the replacement to
 <code>result</code>.</p>
   <p>Since 2.14</p>
 <terms>

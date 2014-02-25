@@ -10,6 +10,6 @@
   </info>
   <title>GLib.TraverseFlags</title>
   <p>Specifies which nodes are visited during several of the tree
-functions, including <link xref="GLib.traverse"/> and <link xref="GLib.find"/>.</p>
+functions, including <link xref="GLib.Node.traverse"/> and <link xref="GLib.Node.find"/>.</p>
 
 </page>

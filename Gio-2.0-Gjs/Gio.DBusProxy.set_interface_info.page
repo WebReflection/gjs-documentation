@@ -25,7 +25,7 @@ function set_interface_info(info: <link xref="Gio.DBusInterfaceInfo">Gio.DBusInt
 }
   </code></synopsis>
   <p>Ensure that interactions with <code>proxy</code> conform to the given
-interface. See the <link xref="Gio.g-interface-info"/> property for more
+interface. See the <link xref="Gio.DBusProxy-g-interface-info"/> property for more
 details.</p>
   <p>Since 2.26</p>
 <terms>

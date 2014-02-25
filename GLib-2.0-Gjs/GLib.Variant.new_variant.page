@@ -25,7 +25,7 @@ function new_variant(value: <link xref="GLib.Variant">GLib.Variant</link>): <lin
 }
   </code></synopsis>
   <p>Boxes <code>value</code>.  The result is a <link xref="GLib.Variant"/> instance representing a
-variant containing the original value.</p>  <p>If @child is a floating reference (see <link xref="GLib.ref_sink"/>), the new
+variant containing the original value.</p>  <p>If @child is a floating reference (see <link xref="GLib.Variant.ref_sink"/>), the new
 instance takes ownership of @child.</p>
   <p>Since 2.24</p>
 <terms>

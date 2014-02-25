@@ -27,7 +27,7 @@ function new_from_file(file: String): <link xref="Gio.TlsCertificate">Gio.TlsCer
   <p>Creates a <link xref="Gio.TlsCertificate"/> from the PEM-encoded data in <code>file</code>. If
 <code>file</code> cannot be read or parsed, the function will return <code>null</code> and
 set @error. Otherwise, this behaves like
-<link xref="Gio.new_from_pem"/>.</p>
+<link xref="Gio.TlsCertificate.new_from_pem"/>.</p>
   <p>Since 2.28</p>
 <terms>
 <item>

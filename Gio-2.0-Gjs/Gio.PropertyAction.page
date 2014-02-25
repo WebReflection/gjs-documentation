@@ -43,8 +43,8 @@ something else.</p>  <p>Another anti-example would be to bind to the "visible-ch
 property of a #GtkStack if this value is actually stored in
 <link xref="Gio.Settings"/>.  In that case, the real source of the value is
 <link xref="Gio.Settings"/>.  If you want a <link xref="Gio.Action"/> to control a setting stored in
-<link xref="Gio.Settings"/>, see <link xref="Gio.create_action"/> instead, and possibly
-combine its use with <link xref="Gio.bind"/>.</p>
+<link xref="Gio.Settings"/>, see <link xref="Gio.Settings.create_action"/> instead, and possibly
+combine its use with <link xref="Gio.Settings.bind"/>.</p>
   <p>Since 2.38</p>
   <synopsis>
     <title>Hierarchy</title>

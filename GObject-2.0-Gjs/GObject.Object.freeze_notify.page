@@ -24,7 +24,7 @@ function freeze_notify(): void {
 non-zero, the emission of "notify" signals on <code>object</code> is
 stopped. The signals are queued until the freeze count is decreased
 to zero. Duplicate notifications are squashed so that at most one
-<link xref="GObject.notify"/> signal is emitted for each property modified while the
+<link xref="GObject.Object-notify"/> signal is emitted for each property modified while the
 object is frozen.</p>  <p>This is necessary for accessors that modify multiple properties to prevent
 premature notification while the object is still being modified.</p>
 

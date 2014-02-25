@@ -22,9 +22,9 @@ function get_last_serial(): Number(guint32) {
   </code></synopsis>
   <p>Retrieves the last serial number assigned to a <link xref="Gio.DBusMessage"/> on
 the current thread. This includes messages sent via both low-level
-API such as <link xref="Gio.send_message"/> as well as
+API such as <link xref="Gio.DBusConnection.send_message"/> as well as
 high-level API such as <link xref="Gio.DBusConnection.emit_signal"/>,
-<link xref="Gio.DBusConnection.call"/> or <link xref="Gio.call"/>.</p>
+<link xref="Gio.DBusConnection.call"/> or <link xref="Gio.DBusProxy.call"/>.</p>
   <p>Since 2.34</p>
 <terms>
 <item>

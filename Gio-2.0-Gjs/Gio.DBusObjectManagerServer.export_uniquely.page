@@ -27,7 +27,7 @@ function export_uniquely(object: <link xref="Gio.DBusObjectSkeleton">Gio.DBusObj
   <p>Like <link xref="Gio.DBusObjectManagerServer.export"/> but appends a string of
 the form _N (with N being a natural number) to <code>object</code>'s object path
 if an object with the given path already exists. As such, the
-<link xref="Gio.g-object-path"/> property of <code>object</code> may be modified.</p>
+<link xref="Gio.DBusObjectProxy-g-object-path"/> property of <code>object</code> may be modified.</p>
   <p>Since 2.30</p>
 <terms>
 <item>

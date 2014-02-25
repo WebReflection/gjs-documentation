@@ -34,10 +34,10 @@ function condition_timed_wait(condition: <link href="../GLib-2.0/GLib.IOConditio
   </code></synopsis>
   <p>Waits for up to <code>timeout</code> microseconds for <code>condition</code> to become true
 on <code>socket</code>. If the condition is met, <code>true</code> is returned.</p>  <p>If <code>cancellable</code> is cancelled before the condition is met, or if
-<code>timeout</code> (or the socket's <link xref="Gio.timeout"/>) is reached before the
+<code>timeout</code> (or the socket's <link xref="Gio.Socket-timeout"/>) is reached before the
 condition is met, then <code>false</code> is returned and @error, if non-<code>null</code>,
 is set to the appropriate value (<link xref="Gio.IOErrorEnum"/>.cancelled or
-<link xref="Gio.IOErrorEnum"/>.timed_out).</p>  <p>If you don't want a timeout, use <link xref="Gio.condition_wait"/>.
+<link xref="Gio.IOErrorEnum"/>.timed_out).</p>  <p>If you don't want a timeout, use <link xref="Gio.Socket.condition_wait"/>.
 (Alternatively, you can pass -1 for <code>timeout</code>.)</p>  <p>Note that although <code>timeout</code> is in microseconds for consistency with
 other GLib APIs, this function actually only has millisecond
 resolution, and the behavior is undefined if <code>timeout</code> is not an

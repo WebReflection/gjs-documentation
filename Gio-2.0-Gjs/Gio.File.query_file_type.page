@@ -29,13 +29,13 @@ function query_file_type(flags: <link xref="Gio.FileQueryInfoFlags">Gio.FileQuer
 }
   </code></synopsis>
   <p>Utility function to inspect the <link xref="Gio.FileType"/> of a file. This is
-implemented using <link xref="Gio.query_info"/> and as such does blocking I/O.</p>  <p>The primary use case of this method is to check if a file is
+implemented using <link xref="Gio.File.query_info"/> and as such does blocking I/O.</p>  <p>The primary use case of this method is to check if a file is
 a regular file, directory, or symlink.</p>
   <p>Since 2.18</p>
 <terms>
 <item>
 <title><code>flags</code></title>
-  <p>a set of <link xref="Gio.FileQueryInfoFlags"/> passed to <link xref="Gio.query_info"/></p>
+  <p>a set of <link xref="Gio.FileQueryInfoFlags"/> passed to <link xref="Gio.File.query_info"/></p>
 </item>
 <item>
 <title><code>cancellable</code></title>

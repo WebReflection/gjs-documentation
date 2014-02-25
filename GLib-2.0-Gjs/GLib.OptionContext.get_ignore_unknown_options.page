@@ -21,7 +21,7 @@ function get_ignore_unknown_options(): Boolean {
 }
   </code></synopsis>
   <p>Returns whether unknown options are ignored or not. See
-<link xref="GLib.set_ignore_unknown_options"/>.</p>
+<link xref="GLib.OptionContext.set_ignore_unknown_options"/>.</p>
   <p>Since 2.6</p>
 <terms>
 <item>

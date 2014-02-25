@@ -69,7 +69,7 @@ not compatible with the D-Bus protocol, the operation fails with
 <link xref="Gio.IOErrorEnum"/>.invalid_argument.</p>  <p>If <code>reply_type</code> is non-<code>null</code> then the reply will be checked for having this type and an
 error will be raised if it does not match.  Said another way, if you give a <code>reply_type</code>
 then any non-<code>null</code> return value will be of this type.</p>  <p>If the <code>parameters</code> <link xref="GLib.Variant"/> is floating, it is consumed. This allows
-convenient 'inline' use of <link xref="GLib.new"/>, e.g.:
+convenient 'inline' use of <link xref="GLib.Variant.new"/>, e.g.:
 |[&lt;!-- language="C" --&gt;
  g_dbus_connection_call (connection,
                          "org.freedesktop.StringThings",
@@ -89,8 +89,8 @@ convenient 'inline' use of <link xref="GLib.new"/>, e.g.:
 <code>callback</code> will be invoked in the
 [thread-default main context][g-main-context-push-thread-default]
 of the thread you are calling this method from. You can then call
-<link xref="Gio.call_finish"/> to get the result of the operation.
-See <link xref="Gio.call_sync"/> for the synchronous version of this
+<link xref="Gio.DBusConnection.call_finish"/> to get the result of the operation.
+See <link xref="Gio.DBusConnection.call_sync"/> for the synchronous version of this
 function.</p>  <p>If <code>callback</code> is <code>null</code> then the D-Bus method call message will be sent with
 the <link xref="Gio.DBusMessageFlags"/>.no_reply_expected flag set.</p>
   <p>Since 2.26</p>

@@ -23,7 +23,7 @@ depends on the type of the underlying socket that is in use. For
 instance, for a TCP/IP connection it will be a <link xref="Gio.TcpConnection"/>.</p>  <p>Choosing what type of object to construct is done with the socket
 connection factory, and it is possible for 3rd parties to register
 custom socket connection types for specific combination of socket
-family/type/protocol using <link xref="Gio.factory_register_type"/>.</p>  <p>To close a <link xref="Gio.SocketConnection"/>, use <link xref="Gio.IOStream.close"/>. Closing both
+family/type/protocol using <link xref="Gio.SocketConnection.factory_register_type"/>.</p>  <p>To close a <link xref="Gio.SocketConnection"/>, use <link xref="Gio.IOStream.close"/>. Closing both
 substreams of the <link xref="Gio.IOStream"/> separately will not close the underlying
 <link xref="Gio.Socket"/>.</p>
   <p>Since 2.22</p>

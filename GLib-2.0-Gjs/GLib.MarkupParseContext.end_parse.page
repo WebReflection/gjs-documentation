@@ -21,7 +21,7 @@ function end_parse(): Boolean {
 }
   </code></synopsis>
   <p>Signals to the <link xref="GLib.MarkupParseContext"/> that all data has been
-fed into the parse context with <link xref="GLib.parse"/>.</p>  <p>This function reports an error if the document isn't complete,
+fed into the parse context with <link xref="GLib.MarkupParseContext.parse"/>.</p>  <p>This function reports an error if the document isn't complete,
 for example if elements are still open.</p>
 
 <terms>

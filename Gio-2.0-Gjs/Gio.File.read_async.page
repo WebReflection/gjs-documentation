@@ -34,7 +34,7 @@ function read_async(io_priority: Number(gint), cancellable: <link xref="Gio.Canc
   </code></synopsis>
   <p>Asynchronously opens <code>file</code> for reading.</p>  <p>For more details, see <link xref="Gio.File.read"/> which is
 the synchronous version of this call.</p>  <p>When the operation is finished, <code>callback</code> will be called.
-You can then call <link xref="Gio.read_finish"/> to get the result
+You can then call <link xref="Gio.File.read_finish"/> to get the result
 of the operation.</p>
 
 <terms>

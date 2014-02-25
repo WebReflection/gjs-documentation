@@ -33,7 +33,7 @@ given, then this process will always become the primary instance.</p>  <p>Due to
 dispatched at any time (even if a main loop is not running).  For
 this reason, you must ensure that any object paths that you wish to
 register are registered before calling this function.</p>  <p>If the application has already been registered then <code>true</code> is
-returned with no work performed.</p>  <p>The <link xref="Gio.startup"/> signal is emitted if registration succeeds
+returned with no work performed.</p>  <p>The <link xref="Gio.Application-startup"/> signal is emitted if registration succeeds
 and <code>application</code> is the primary instance (including the non-unique
 case).</p>  <p>In the event of an error (such as <code>cancellable</code> being cancelled, or a
 failure to connect to the session bus), <code>false</code> is returned and @error

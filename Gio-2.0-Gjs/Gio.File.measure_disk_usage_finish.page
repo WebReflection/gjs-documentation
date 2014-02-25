@@ -25,7 +25,7 @@ function measure_disk_usage_finish(result: <link xref="Gio.AsyncResult">Gio.Asyn
 }
   </code></synopsis>
   <p>Collects the results from an earlier call to
-<link xref="Gio.measure_disk_usage_async"/>.  See <link xref="Gio.measure_disk_usage"/> for
+<link xref="Gio.File.measure_disk_usage_async"/>.  See <link xref="Gio.File.measure_disk_usage"/> for
 more information.</p>
   <p>Since 2.38</p>
 <terms>

@@ -49,7 +49,7 @@ function param_spec_uint64(name: String, nick: String, blurb: String, minimum: N
 }
   </code></synopsis>
   <p>Creates a new <link xref="GObject.ParamSpecUInt64"/> instance specifying a %G_TYPE_UINT64
-property.</p>  <p>See <link xref="GObject.internal"/> for details on property names.</p>
+property.</p>  <p>See <link xref="GObject.ParamSpec.internal"/> for details on property names.</p>
 
 <terms>
 <item>

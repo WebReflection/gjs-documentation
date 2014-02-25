@@ -28,8 +28,8 @@ function unix_new(fd: Number(gint)): <link xref="GLib.IOChannel">GLib.IOChannel<
 this works for plain files, pipes, and sockets.</p>  <p>The returned <link xref="GLib.IOChannel"/> has a reference count of 1.</p>  <p>The default encoding for <link xref="GLib.IOChannel"/> is UTF-8. If your application
 is reading output from a command using via pipe, you may need to set
 the encoding to the encoding of the current locale (see
-<link xref="GLib.get_charset"/>) with the <link xref="GLib.set_encoding"/> function.</p>  <p>If you want to read raw binary data without interpretation, then
-call the <link xref="GLib.set_encoding"/> function with <code>null</code> for the
+<link xref="GLib.get_charset"/>) with the <link xref="GLib.IOChannel.set_encoding"/> function.</p>  <p>If you want to read raw binary data without interpretation, then
+call the <link xref="GLib.IOChannel.set_encoding"/> function with <code>null</code> for the
 encoding argument.</p>  <p>This function is available in GLib on Windows, too, but you should
 avoid using it on Windows. The domain of file descriptors and
 sockets overlap. There is no way for GLib to know which one you mean

@@ -27,7 +27,7 @@ function to_timezone(tz: <link xref="GLib.TimeZone">GLib.TimeZone</link>): <link
   <p>Create a new <link xref="GLib.DateTime"/> corresponding to the same instant in time as
 <code>datetime</code>, but in the time zone <code>tz</code>.</p>  <p>This call can fail in the case that the time goes out of bounds.  For
 example, converting 0001-01-01 00:00:00 UTC to a time zone west of
-Greenwich will fail (due to the year 0 being out of range).</p>  <p>You should release the return value by calling <link xref="GLib.unref"/>
+Greenwich will fail (due to the year 0 being out of range).</p>  <p>You should release the return value by calling <link xref="GLib.DateTime.unref"/>
 when you are done with it.</p>
   <p>Since 2.26</p>
 <terms>

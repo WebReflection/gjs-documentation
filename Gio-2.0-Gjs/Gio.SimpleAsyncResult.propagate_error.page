@@ -22,7 +22,7 @@ function propagate_error(): Boolean {
   </code></synopsis>
   <p>Propagates an error from within the simple asynchronous result to
 a given destination.</p>  <p>If the <link xref="Gio.Cancellable"/> given to a prior call to
-<link xref="Gio.set_check_cancellable"/> is cancelled then this
+<link xref="Gio.SimpleAsyncResult.set_check_cancellable"/> is cancelled then this
 function will return <code>true</code> with @dest set appropriately.</p>
 
 <terms>

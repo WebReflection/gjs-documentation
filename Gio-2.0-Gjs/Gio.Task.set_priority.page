@@ -26,7 +26,7 @@ function set_priority(priority: Number(gint)): void {
   </code></synopsis>
   <p>Sets <code>task</code>'s priority. If you do not call this, it will default to
 %G_PRIORITY_DEFAULT.</p>  <p>This will affect the priority of #GSources created with
-<link xref="Gio.attach_source"/> and the scheduling of tasks run in threads,
+<link xref="Gio.Task.attach_source"/> and the scheduling of tasks run in threads,
 and can also be explicitly retrieved later via
 <link xref="Gio.Task.get_priority"/>.</p>
   <p>Since 2.36</p>

@@ -25,7 +25,7 @@ function set_detailed_action(detailed_action: String): void {
 }
   </code></synopsis>
   <p>Sets the "action" and possibly the "target" attribute of <code>menu_item</code>.</p>  <p>The format of <code>detailed_action</code> is the same format parsed by
-<link xref="Gio.action_parse_detailed_name"/>.</p>  <p>See <link xref="Gio.set_action_and_target"/> or
+<link xref="Gio.action_parse_detailed_name"/>.</p>  <p>See <link xref="Gio.MenuItem.set_action_and_target"/> or
 <link xref="Gio.MenuItem.set_action_and_target_value"/> for more flexible (but
 slightly less convenient) alternatives.</p>  <p>See also <link xref="Gio.MenuItem.set_action_and_target_value"/> for a description of
 the semantics of the action and target attributes.</p>

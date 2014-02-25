@@ -23,7 +23,7 @@ function listen(): Boolean {
   <p>Marks the socket as a server socket, i.e. a socket that is used
 to accept incoming requests using <link xref="Gio.Socket.accept"/>.</p>  <p>Before calling this the socket must be bound to a local address using
 <link xref="Gio.Socket.bind"/>.</p>  <p>To set the maximum amount of outstanding clients, use
-<link xref="Gio.set_listen_backlog"/>.</p>
+<link xref="Gio.Socket.set_listen_backlog"/>.</p>
   <p>Since 2.22</p>
 <terms>
 <item>

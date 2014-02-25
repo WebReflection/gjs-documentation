@@ -24,7 +24,7 @@ function first(): <link xref="GLib.VariantType">GLib.VariantType</link> {
 type.</p>  <p>This function may only be used with tuple or dictionary entry types,
 but must not be used with the generic tuple type
 %G_VARIANT_TYPE_TUPLE.</p>  <p>In the case of a dictionary entry type, this returns the type of
-the key.</p>  <p><code>null</code> is returned in case of <code>type</code> being %G_VARIANT_TYPE_UNIT.</p>  <p>This call, together with <link xref="GLib.next"/> provides an iterator
+the key.</p>  <p><code>null</code> is returned in case of <code>type</code> being %G_VARIANT_TYPE_UNIT.</p>  <p>This call, together with <link xref="GLib.VariantType.next"/> provides an iterator
 interface over tuple and dictionary entry types.</p>
 
 <terms>

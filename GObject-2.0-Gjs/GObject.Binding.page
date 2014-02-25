@@ -29,7 +29,7 @@ binding:</p>  <p>|[&lt;!-- language="C" --&gt;
                           object2, "property-b",
                           G_BINDING_DEFAULT);
 ]|</p>  <p>will cause the property named "property-b" of @object2 to be updated
-every time <link xref="GObject.set"/> or the specific accessor changes the value of
+every time <link xref="GObject.Object.set"/> or the specific accessor changes the value of
 the property "property-a" of @object1.</p>  <p>It is possible to create a bidirectional binding between two properties
 of two <link xref="GObject.Object"/> instances, so that if either property changes, the
 other is updated as well, for instance:</p>  <p>|[&lt;!-- language="C" --&gt;
@@ -57,14 +57,14 @@ of @adjustment1.</p>  <p>Note that <link xref="GObject.Binding"/> does not resol
   object2:propertyB -&gt; object3:propertyC
   object3:propertyC -&gt; object1:propertyA
 ]|</p>  <p>might lead to an infinite loop. The loop, in this particular case,
-can be avoided if the objects emit the <link xref="GObject.notify"/> signal only
+can be avoided if the objects emit the <link xref="GObject.Object-notify"/> signal only
 if the value has effectively been changed. A binding is implemented
-using the <link xref="GObject.notify"/> signal, so it is susceptible to all the
+using the <link xref="GObject.Object-notify"/> signal, so it is susceptible to all the
 various ways of blocking a signal emission, like <link xref="GObject.signal_stop_emission"/>
 or <link xref="GObject.signal_handler_block"/>.</p>  <p>A binding will be severed, and the resources it allocates freed, whenever
 either one of the <link xref="GObject.Object"/> instances it refers to are finalized, or when
 the <link xref="GObject.Binding"/> instance loses its last reference.</p>  <p>Bindings for languages with garbage collection can use
-<link xref="GObject.unbind"/> to explicitly release a binding between the source
+<link xref="GObject.Binding.unbind"/> to explicitly release a binding between the source
 and target properties, instead of relying on the last reference on the
 binding, source, and target instances to drop.</p>  <p><link xref="GObject.Binding"/> is available since GObject 2.26</p>
   <p>Since 2.26</p>

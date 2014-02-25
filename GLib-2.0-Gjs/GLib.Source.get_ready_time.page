@@ -21,7 +21,7 @@ function get_ready_time(): Number(gint64) {
 }
   </code></synopsis>
   <p>Gets the "ready time" of <code>source</code>, as set by
-<link xref="GLib.set_ready_time"/>.</p>  <p>Any time before the current monotonic time (including 0) is an
+<link xref="GLib.Source.set_ready_time"/>.</p>  <p>Any time before the current monotonic time (including 0) is an
 indication that the source will fire immediately.</p>
 
 <terms>

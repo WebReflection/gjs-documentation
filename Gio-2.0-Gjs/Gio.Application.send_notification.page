@@ -41,7 +41,7 @@ replaced with <code>notification</code> and shown again as if it was a new
 notification. This works even for notifications sent from a previous
 execution of the application, as long as <code>id</code> is the same string.</p>  <p><code>id</code> may be <code>null</code>, but it is impossible to replace or withdraw
 notifications without an id.</p>  <p>If <code>notification</code> is no longer relevant, it can be withdrawn with
-<link xref="Gio.withdraw_notification"/>.</p>
+<link xref="Gio.Application.withdraw_notification"/>.</p>
   <p>Since 2.40</p>
 <terms>
 <item>

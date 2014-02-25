@@ -26,7 +26,7 @@ function set_section(section: <link xref="Gio.MenuModel">Gio.MenuModel</link>): 
   </code></synopsis>
   <p>Sets or unsets the "section" link of <code>menu_item</code> to <code>section</code>.</p>  <p>The effect of having one menu appear as a section of another is
 exactly as it sounds: the items from <code>section</code> become a direct part of
-the menu that <code>menu_item</code> is added to.  See <link xref="Gio.new_section"/>
+the menu that <code>menu_item</code> is added to.  See <link xref="Gio.MenuItem.new_section"/>
 for more information about what it means for a menu item to be a
 section.</p>
   <p>Since 2.32</p>

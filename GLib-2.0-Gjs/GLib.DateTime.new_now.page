@@ -28,7 +28,7 @@ function new_now(tz: <link xref="GLib.TimeZone">GLib.TimeZone</link>): <link xre
 time zone <code>tz</code>.  The time is as accurate as the system allows, to a
 maximum accuracy of 1 microsecond.</p>  <p>This function will always succeed unless the system clock is set to
 truly insane values (or unless GLib is still being used after the
-year 9999).</p>  <p>You should release the return value by calling <link xref="GLib.unref"/>
+year 9999).</p>  <p>You should release the return value by calling <link xref="GLib.DateTime.unref"/>
 when you are done with it.</p>
   <p>Since 2.26</p>
 <terms>

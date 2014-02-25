@@ -37,7 +37,7 @@ operation, in which case @error (if non-<code>null</code>) will be set to
 <title><code>Returns</code></title>
   <p>a <link xref="GLib.List"/> of <link xref="GLib.Variant"/>,
 or <code>null</code> on error. You must free each of the records and the list when you are
-done with it. (You can use <link xref="GLib.free_full"/> with <link xref="GLib.unref"/> to do this.)</p>
+done with it. (You can use <link xref="GLib.List.free_full"/> with <link xref="GLib.Variant.unref"/> to do this.)</p>
 </item>
 </terms>
 

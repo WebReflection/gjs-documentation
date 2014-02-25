@@ -24,14 +24,14 @@ function remove_unix_fd(tag: void): void {
     // Gjs wrapper for g_source_remove_unix_fd()
 }
   </code></synopsis>
-  <p>Reverses the effect of a previous call to <link xref="GLib.add_unix_fd"/>.</p>  <p>You only need to call this if you want to remove an fd from being
+  <p>Reverses the effect of a previous call to <link xref="GLib.Source.add_unix_fd"/>.</p>  <p>You only need to call this if you want to remove an fd from being
 watched while keeping the same source around.  In the normal case you
 will just want to destroy the source.</p>  <p>As the name suggests, this function is not available on Windows.</p>
   <p>Since 2.36</p>
 <terms>
 <item>
 <title><code>tag</code></title>
-  <p>the tag from <link xref="GLib.add_unix_fd"/></p>
+  <p>the tag from <link xref="GLib.Source.add_unix_fd"/></p>
 </item>
 </terms>
 

@@ -38,7 +38,7 @@ function lookup_records_async(rrname: String, record_type: <link xref="Gio.Resol
   </code></synopsis>
   <p>Begins asynchronously performing a DNS lookup for the given
 <code>rrname</code>, and eventually calls <code>callback</code>, which must call
-<link xref="Gio.lookup_records_finish"/> to get the final result. See
+<link xref="Gio.Resolver.lookup_records_finish"/> to get the final result. See
 <link xref="Gio.Resolver.lookup_records"/> for more details.</p>
   <p>Since 2.34</p>
 <terms>

@@ -18,7 +18,7 @@ let icon = new Gio.Icon();
 for checking the equality of two icons, hashing of icons and
 serializing an icon to and from strings.</p>  <p><link xref="Gio.Icon"/> does not provide the actual pixmap for the icon as this is out
 of GIO's scope, however implementations of <link xref="Gio.Icon"/> may contain the name
-of an icon (see <link xref="Gio.ThemedIcon"/>), or the path to an icon (see <link xref="Gio.LoadableIcon"/>).</p>  <p>To obtain a hash of a <link xref="Gio.Icon"/>, see <link xref="Gio.icon_hash"/>.</p>  <p>To check if two #GIcons are equal, see <link xref="Gio.equal"/>.</p>  <p>For serializing a <link xref="Gio.Icon"/>, use <link xref="Gio.serialize"/> and
+of an icon (see <link xref="Gio.ThemedIcon"/>), or the path to an icon (see <link xref="Gio.LoadableIcon"/>).</p>  <p>To obtain a hash of a <link xref="Gio.Icon"/>, see <link xref="Gio.icon_hash"/>.</p>  <p>To check if two #GIcons are equal, see <link xref="Gio.Icon.equal"/>.</p>  <p>For serializing a <link xref="Gio.Icon"/>, use <link xref="Gio.Icon.serialize"/> and
 <link xref="Gio.icon_deserialize"/>.</p>  <p>If you want to consume <link xref="Gio.Icon"/> (for example, in a toolkit) you must
 be prepared to handle at least the three following cases:
 <link xref="Gio.LoadableIcon"/>, <link xref="Gio.ThemedIcon"/> and <link xref="Gio.EmblemedIcon"/>.  It may also make
@@ -27,7 +27,7 @@ directly, for example) but all compliant <link xref="Gio.Icon"/> implementations
 outside of GIO must implement <link xref="Gio.LoadableIcon"/>.</p>  <p>If your application or library provides one or more <link xref="Gio.Icon"/>
 implementations you need to ensure that your new implementation also
 implements <link xref="Gio.LoadableIcon"/>.  Additionally, you must provide an
-implementation of <link xref="Gio.serialize"/> that gives a result that is
+implementation of <link xref="Gio.Icon.serialize"/> that gives a result that is
 understood by <link xref="Gio.icon_deserialize"/>, yielding one of the built-in icon
 types.</p>
 

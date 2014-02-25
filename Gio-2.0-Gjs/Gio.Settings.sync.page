@@ -23,7 +23,7 @@ function sync(): void {
   <p>Ensures that all pending operations for the given are complete for
 the default backend.</p>  <p>Writes made to a <link xref="Gio.Settings"/> are handled asynchronously.  For this
 reason, it is very unlikely that the changes have it to disk by the
-time <link xref="Gio.set"/> returns.</p>  <p>This call will block until all of the writes have made it to the
+time <link xref="Gio.Settings.set"/> returns.</p>  <p>This call will block until all of the writes have made it to the
 backend.  Since the mainloop is not running, no change notifications
 will be dispatched during this call (but some may be queued by the
 time the call is done).</p>

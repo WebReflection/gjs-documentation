@@ -23,7 +23,7 @@ function end(): <link xref="GLib.Variant">GLib.Variant</link> {
   <p>Ends the builder process and returns the constructed value.</p>  <p>It is not permissible to use <code>builder</code> in any way after this call
 except for reference counting operations (in the case of a
 heap-allocated <link xref="GLib.VariantBuilder"/>) or by reinitialising it with
-<link xref="GLib.init"/> (in the case of stack-allocated).</p>  <p>It is an error to call this function in any way that would create an
+<link xref="GLib.VariantBuilder.init"/> (in the case of stack-allocated).</p>  <p>It is an error to call this function in any way that would create an
 inconsistent value to be constructed (ie: insufficient number of
 items added to a container with a specific number of children
 required).  It is also an error to call this function if the builder

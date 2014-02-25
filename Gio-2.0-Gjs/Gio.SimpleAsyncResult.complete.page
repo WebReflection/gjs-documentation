@@ -23,7 +23,7 @@ function complete(): void {
   <p>Completes an asynchronous I/O job immediately. Must be called in
 the thread where the asynchronous result was to be delivered, as it
 invokes the callback directly. If you are in a different thread use
-<link xref="Gio.complete_in_idle"/>.</p>  <p>Calling this function takes a reference to <code>simple</code> for as long as
+<link xref="Gio.SimpleAsyncResult.complete_in_idle"/>.</p>  <p>Calling this function takes a reference to <code>simple</code> for as long as
 is needed to complete the call.</p>
 
 

@@ -24,7 +24,7 @@ function get_int(key: String): Number(gint) {
     // Gjs wrapper for g_settings_get_int()
 }
   </code></synopsis>
-  <p>Gets the value that is stored at <code>key</code> in <code>settings</code>.</p>  <p>A convenience variant of <link xref="Gio.get"/> for 32-bit integers.</p>  <p>It is a programmer error to give a <code>key</code> that isn't specified as
+  <p>Gets the value that is stored at <code>key</code> in <code>settings</code>.</p>  <p>A convenience variant of <link xref="Gio.Settings.get"/> for 32-bit integers.</p>  <p>It is a programmer error to give a <code>key</code> that isn't specified as
 having a int32 type in the schema for <code>settings</code>.</p>
   <p>Since 2.26</p>
 <terms>

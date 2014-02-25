@@ -27,8 +27,8 @@ function is_same(cert_two: <link xref="Gio.TlsCertificate">Gio.TlsCertificate</l
   <p>Check if two <link xref="Gio.TlsCertificate"/> objects represent the same certificate.
 The raw DER byte data of the two certificates are checked for equality.
 This has the effect that two certificates may compare equal even if
-their <link xref="Gio.issuer"/>, <link xref="Gio.private-key"/>, or
-<link xref="Gio.private-key-pem"/> properties differ.</p>
+their <link xref="Gio.TlsCertificate-issuer"/>, <link xref="Gio.TlsCertificate-private-key"/>, or
+<link xref="Gio.TlsCertificate-private-key-pem"/> properties differ.</p>
   <p>Since 2.34</p>
 <terms>
 <item>

@@ -16,6 +16,6 @@ ZlibDecompressor.file_info: <link xref="Gio.FileInfo">Gio.FileInfo</link> (Read)
   <p>A <link xref="Gio.FileInfo"/> containing the information found in the GZIP header
 of the data stream processed, or <code>null</code> if the header was not yet
 fully processed, is not present at all, or the compressor's
-<link xref="Gio.format"/> property is not <link xref="Gio.ZlibCompressorFormat"/>.gzip.</p>
+<link xref="Gio.ZlibDecompressor-format"/> property is not <link xref="Gio.ZlibCompressorFormat"/>.gzip.</p>
   <p>Since 2.26</p>
 </page>

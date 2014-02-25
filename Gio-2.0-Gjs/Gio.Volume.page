@@ -18,7 +18,7 @@ let volume = new Gio.Volume();
 mounted. Note, when porting from GnomeVFS, <link xref="Gio.Volume"/> is the moral
 equivalent of #GnomeVFSDrive.</p>  <p>Mounting a <link xref="Gio.Volume"/> instance is an asynchronous operation. For more
 information about asynchronous operations, see <link xref="Gio.AsyncResult"/> and
-<link xref="Gio.Task"/>. To mount a <link xref="Gio.Volume"/>, first call <link xref="Gio.mount"/> with (at
+<link xref="Gio.Task"/>. To mount a <link xref="Gio.Volume"/>, first call <link xref="Gio.Volume.mount"/> with (at
 least) the <link xref="Gio.Volume"/> instance, optionally a <link xref="Gio.MountOperation"/> object
 and a <link xref="Gio.AsyncReadyCallback"/>.</p>  <p>Typically, one will only want to pass <code>null</code> for the
 <link xref="Gio.MountOperation"/> if automounting all volumes when a desktop session
@@ -26,9 +26,9 @@ starts since it's not desirable to put up a lot of dialogs asking
 for credentials.</p>  <p>The callback will be fired when the operation has resolved (either
 with success or failure), and a #GAsyncReady structure will be
 passed to the callback.  That callback should then call
-<link xref="Gio.mount_finish"/> with the <link xref="Gio.Volume"/> instance and the
+<link xref="Gio.Volume.mount_finish"/> with the <link xref="Gio.Volume"/> instance and the
 #GAsyncReady data to see if the operation was completed
-successfully.  If an @error is present when <link xref="Gio.mount_finish"/>
+successfully.  If an @error is present when <link xref="Gio.Volume.mount_finish"/>
 is called, then it will be filled with any error information.</p>  <p>## Volume Identifiers # {#volume-identifier}</p>  <p>It is sometimes necessary to directly access the underlying
 operating system object behind a volume (e.g. for passing a volume
 to an application via the commandline). For this purpose, GIO
@@ -37,7 +37,7 @@ different kinds of identifiers, such as Hal UDIs, filesystem labels,
 traditional Unix devices (e.g. `/dev/sda2`), UUIDs. GIO uses predefined
 strings as names for the different kinds of identifiers:
 #G_VOLUME_IDENTIFIER_KIND_HAL_UDI, #G_VOLUME_IDENTIFIER_KIND_LABEL, etc.
-Use <link xref="Gio.get_identifier"/> to obtain an identifier for a volume.</p>  <p>
+Use <link xref="Gio.Volume.get_identifier"/> to obtain an identifier for a volume.</p>  <p>
 Note that #G_VOLUME_IDENTIFIER_KIND_HAL_UDI will only be available
 when the gvfs hal volume monitor is in use. Other volume monitors
 will generally be able to provide the #G_VOLUME_IDENTIFIER_KIND_UNIX_DEVICE

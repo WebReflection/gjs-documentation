@@ -13,6 +13,6 @@
   <synopsis><code mime="text/x-gjs">
 Scanner.parse_errors: Number(guint) (Read / Write)
   </code></synopsis>
-  <p><link xref="GLib.error"/> increments this field</p>
+  <p><link xref="GLib.Scanner.error"/> increments this field</p>
 
 </page>

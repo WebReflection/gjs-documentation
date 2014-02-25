@@ -36,7 +36,7 @@ function lookup_certificates_issued_by(issuer_raw_dn: ByteArray, interaction: <l
     // Gjs wrapper for g_tls_database_lookup_certificates_issued_by()
 }
   </code></synopsis>
-  <p>Lookup certificates issued by this issuer in the database.</p>  <p>This function can block, use <link xref="Gio.lookup_certificates_issued_by_async"/> to perform
+  <p>Lookup certificates issued by this issuer in the database.</p>  <p>This function can block, use <link xref="Gio.TlsDatabase.lookup_certificates_issued_by_async"/> to perform
 the lookup operation asynchronously.</p>
   <p>Since 2.30</p>
 <terms>

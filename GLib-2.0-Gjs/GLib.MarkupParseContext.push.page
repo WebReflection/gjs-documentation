@@ -30,17 +30,17 @@ function push(parser: <link xref="GLib.MarkupParser">GLib.MarkupParser</link>, u
   </code></synopsis>
   <p>Temporarily redirects markup data to a sub-parser.</p>  <p>This function may only be called from the start_element handler of
 a <link xref="GLib.MarkupParser"/>. It must be matched with a corresponding call to
-<link xref="GLib.pop"/> in the matching end_element handler
+<link xref="GLib.MarkupParseContext.pop"/> in the matching end_element handler
 (except in the case that the parser aborts due to an error).</p>  <p>All tags, text and other data between the matching tags is
 redirected to the subparser given by <code>parser</code>. <code>user_data</code> is used
 as the user_data for that parser. <code>user_data</code> is also passed to the
 error callback in the event that an error occurs. This includes
 errors that occur in subparsers of the subparser.</p>  <p>The end tag matching the start tag for which this call was made is
 handled by the previous parser (which is given its own user_data)
-which is why <link xref="GLib.pop"/> is provided to allow "one
+which is why <link xref="GLib.MarkupParseContext.pop"/> is provided to allow "one
 last access" to the <code>user_data</code> provided to this function. In the
 case of error, the <code>user_data</code> provided here is passed directly to
-the error callback of the subparser and <link xref="GLib.pop"/>
+the error callback of the subparser and <link xref="GLib.MarkupParseContext.pop"/>
 should not be called. In either case, if <code>user_data</code> was allocated
 then it ought to be freed from both of these locations.</p>  <p>This function is not intended to be directly called by users
 interested in invoking subparsers. Instead, it is intended to be

@@ -20,7 +20,7 @@ function get_file_info(): <link xref="Gio.FileInfo">Gio.FileInfo</link> {
     // Gjs wrapper for g_zlib_compressor_get_file_info()
 }
   </code></synopsis>
-  <p>Returns the <link xref="Gio.file-info"/> property.</p>
+  <p>Returns the <link xref="Gio.ZlibCompressor-file-info"/> property.</p>
   <p>Since 2.26</p>
 <terms>
 <item>

@@ -16,7 +16,7 @@ let socket_connectable = new Gio.SocketConnectable();
   </code></synopsis>
   <p>Objects that describe one or more potential socket endpoints
 implement <link xref="Gio.SocketConnectable"/>. Callers can then use
-<link xref="Gio.enumerate"/> to get a <link xref="Gio.SocketAddressEnumerator"/>
+<link xref="Gio.SocketConnectable.enumerate"/> to get a <link xref="Gio.SocketAddressEnumerator"/>
 to try out each socket address in turn until one succeeds, as shown
 in the sample code below.</p>  <p>|[&lt;!-- language="C" --&gt;
 MyConnectionType *

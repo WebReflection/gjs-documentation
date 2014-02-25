@@ -21,7 +21,7 @@ function get_type_string(): String {
 }
   </code></synopsis>
   <p>Returns the type string of <code>value</code>.  Unlike the result of calling
-<link xref="GLib.peek_string"/>, this string is nul-terminated.  This
+<link xref="GLib.VariantType.peek_string"/>, this string is nul-terminated.  This
 string belongs to <link xref="GLib.Variant"/> and must not be freed.</p>
   <p>Since 2.24</p>
 <terms>

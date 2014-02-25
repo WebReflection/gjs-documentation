@@ -29,7 +29,7 @@ function get_int64(group_name: String, key: String): Number(gint64) {
 }
   </code></synopsis>
   <p>Returns the value associated with <code>key</code> under <code>group_name</code> as a signed
-64-bit integer. This is similar to <link xref="GLib.get_integer"/> but can return
+64-bit integer. This is similar to <link xref="GLib.KeyFile.get_integer"/> but can return
 64-bit results without truncation.</p>
   <p>Since 2.26</p>
 <terms>

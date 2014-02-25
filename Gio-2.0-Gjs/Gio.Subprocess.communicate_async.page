@@ -33,7 +33,7 @@ function communicate_async(stdin_buf: ByteArray, cancellable: <link xref="Gio.Ca
 }
   </code></synopsis>
   <p>Asynchronous version of <link xref="Gio.Subprocess.communicate"/>.  Complete
-invocation with <link xref="Gio.communicate_finish"/>.</p>
+invocation with <link xref="Gio.Subprocess.communicate_finish"/>.</p>
 
 <terms>
 <item>

@@ -21,7 +21,7 @@ function can_delete(): Boolean {
 }
   </code></synopsis>
   <p>Obtains the information whether the <link xref="Gio.AppInfo"/> can be deleted.
-See <link xref="Gio.delete"/>.</p>
+See <link xref="Gio.AppInfo.delete"/>.</p>
   <p>Since 2.20</p>
 <terms>
 <item>

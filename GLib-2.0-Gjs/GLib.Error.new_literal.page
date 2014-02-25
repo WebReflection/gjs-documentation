@@ -32,7 +32,7 @@ function new_literal(domain: <link xref="GLib.Quark">GLib.Quark</link>, code: Nu
     // Gjs wrapper for g_error_new_literal()
 }
   </code></synopsis>
-  <p>Creates a new <link xref="GLib.Error"/>; unlike <link xref="GLib.new"/>, <code>message</code> is
+  <p>Creates a new <link xref="GLib.Error"/>; unlike <link xref="GLib.Error.new"/>, <code>message</code> is
 not a printf()-style format string. Use this function if
 <code>message</code> contains text you don't have control over,
 that could include printf() escape sequences.</p>

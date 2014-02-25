@@ -21,7 +21,7 @@ function cancel(): void {
 }
   </code></synopsis>
   <p>Will set <code>cancellable</code> to cancelled, and will emit the
-<link xref="Gio.cancelled"/> signal. (However, see the warning about
+<link xref="Gio.Cancellable-cancelled"/> signal. (However, see the warning about
 race conditions in the documentation for that signal if you are
 planning to connect to it.)</p>  <p>This function is thread-safe. In other words, you can safely call
 it from a thread other than the one running the operation that was

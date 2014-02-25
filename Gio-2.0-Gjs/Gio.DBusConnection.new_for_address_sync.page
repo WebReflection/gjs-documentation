@@ -39,7 +39,7 @@ function new_for_address_sync(address: String, flags: <link xref="Gio.DBusConnec
   <p>Synchronously connects and sets up a D-Bus client connection for
 exchanging D-Bus messages with an endpoint specified by <code>address</code>
 which must be in the D-Bus address format.</p>  <p>This constructor can only be used to initiate client-side
-connections - use <link xref="Gio.new_sync"/> if you need to act
+connections - use <link xref="Gio.DBusConnection.new_sync"/> if you need to act
 as the server. In particular, <code>flags</code> cannot contain the
 <link xref="Gio.DBusConnectionFlags"/>.authentication_server or
 <link xref="Gio.DBusConnectionFlags"/>.authentication_allow_anonymous flags.</p>  <p>This is a synchronous failable constructor. See

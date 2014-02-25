@@ -30,9 +30,9 @@ function get_property(property_name: String, value: <link xref="GObject.Value">G
   </code></synopsis>
   <p>Gets a property of an object. <code>value</code> must have been initialized to the
 expected type of the property (or a type to which the expected type can be
-transformed) using <link xref="GObject.init"/>.</p>  <p>In general, a copy is made of the property contents and the caller is
-responsible for freeing the memory by calling <link xref="GObject.unset"/>.</p>  <p>Note that <link xref="GObject.Object.get_property"/> is really intended for language
-bindings, <link xref="GObject.get"/> is much more convenient for C programming.</p>
+transformed) using <link xref="GObject.Value.init"/>.</p>  <p>In general, a copy is made of the property contents and the caller is
+responsible for freeing the memory by calling <link xref="GObject.Value.unset"/>.</p>  <p>Note that <link xref="GObject.Object.get_property"/> is really intended for language
+bindings, <link xref="GObject.Object.get"/> is much more convenient for C programming.</p>
 
 <terms>
 <item>

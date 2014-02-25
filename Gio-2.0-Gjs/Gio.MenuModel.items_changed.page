@@ -32,7 +32,7 @@ function items_changed(position: Number(gint), removed: Number(gint), added: Num
     // Gjs wrapper for g_menu_model_items_changed()
 }
   </code></synopsis>
-  <p>Requests emission of the <link xref="Gio.items-changed"/> signal on <code>model</code>.</p>  <p>This function should never be called except by <link xref="Gio.MenuModel"/>
+  <p>Requests emission of the <link xref="Gio.MenuModel-items-changed"/> signal on <code>model</code>.</p>  <p>This function should never be called except by <link xref="Gio.MenuModel"/>
 subclasses.  Any other calls to this function will very likely lead
 to a violation of the interface of the model.</p>  <p>The implementation should update its internal representation of the
 menu before emitting the signal.  The implementation should further

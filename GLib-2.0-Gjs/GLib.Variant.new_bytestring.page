@@ -25,7 +25,7 @@ function new_bytestring(string: ByteArray): <link xref="GLib.Variant">GLib.Varia
 }
   </code></synopsis>
   <p>Creates an array-of-bytes <link xref="GLib.Variant"/> with the contents of <code>string</code>.
-This function is just like <link xref="GLib.new_string"/> except that the
+This function is just like <link xref="GLib.Variant.new_string"/> except that the
 string need not be valid utf8.</p>  <p>The nul terminator character at the end of the string is stored in
 the array.</p>
   <p>Since 2.26</p>

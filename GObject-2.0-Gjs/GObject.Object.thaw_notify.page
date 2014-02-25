@@ -23,7 +23,7 @@ function thaw_notify(): void {
   <p>Reverts the effect of a previous call to
 <link xref="GObject.Object.freeze_notify"/>. The freeze count is decreased on <code>object</code>
 and when it reaches zero, queued "notify" signals are emitted.</p>  <p>Duplicate notifications for each property are squashed so that at most one
-<link xref="GObject.notify"/> signal is emitted for each property, in the reverse order
+<link xref="GObject.Object-notify"/> signal is emitted for each property, in the reverse order
 in which they have been queued.</p>  <p>It is an error to call this function when the freeze count is zero.</p>
 
 

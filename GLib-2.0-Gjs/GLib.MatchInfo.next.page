@@ -21,7 +21,7 @@ function next(): Boolean {
 }
   </code></synopsis>
   <p>Scans for the next match using the same parameters of the previous
-call to <link xref="GLib.match_full"/> or <link xref="GLib.match"/> that returned
+call to <link xref="GLib.Regex.match_full"/> or <link xref="GLib.Regex.match"/> that returned
 <code>match_info</code>.</p>  <p>The match is done on the string passed to the match function, so you
 cannot free it before calling this function.</p>
   <p>Since 2.14</p>

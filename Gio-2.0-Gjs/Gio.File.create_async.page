@@ -39,7 +39,7 @@ function create_async(flags: <link xref="Gio.FileCreateFlags">Gio.FileCreateFlag
   <p>Asynchronously creates a new file and returns an output stream
 for writing to it. The file must not already exist.</p>  <p>For more details, see <link xref="Gio.File.create"/> which is
 the synchronous version of this call.</p>  <p>When the operation is finished, <code>callback</code> will be called.
-You can then call <link xref="Gio.create_finish"/> to get the result
+You can then call <link xref="Gio.File.create_finish"/> to get the result
 of the operation.</p>
 
 <terms>

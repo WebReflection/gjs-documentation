@@ -26,9 +26,9 @@ function create_source(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable
   </code></synopsis>
   <p>Creates a <link xref="GLib.Source"/> that triggers when <code>stream</code> can be read, or
 <code>cancellable</code> is triggered or an error occurs. The callback on the
-source is of the <link xref="Gio.PollableSourceFunc"/> type.</p>  <p>As with <link xref="Gio.is_readable"/>, it is possible that
+source is of the <link xref="Gio.PollableSourceFunc"/> type.</p>  <p>As with <link xref="Gio.PollableInputStream.is_readable"/>, it is possible that
 the stream may not actually be readable even after the source
-triggers, so you should use <link xref="Gio.read_nonblocking"/>
+triggers, so you should use <link xref="Gio.PollableInputStream.read_nonblocking"/>
 rather than <link xref="Gio.InputStream.read"/> from the callback.</p>
   <p>Since 2.28</p>
 <terms>

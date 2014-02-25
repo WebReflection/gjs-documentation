@@ -22,7 +22,7 @@ function return_error_if_cancelled(): Boolean {
   </code></synopsis>
   <p>Checks if <code>task</code>'s <link xref="Gio.Cancellable"/> has been cancelled, and if so, sets
 <code>task</code>'s error accordingly and completes the task (see
-<link xref="Gio.return_pointer"/> for more discussion of exactly what this
+<link xref="Gio.Task.return_pointer"/> for more discussion of exactly what this
 means).</p>
   <p>Since 2.36</p>
 <terms>

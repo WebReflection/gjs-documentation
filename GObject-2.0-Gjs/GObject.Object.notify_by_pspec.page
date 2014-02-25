@@ -28,7 +28,7 @@ function notify_by_pspec(pspec: <link xref="GObject.ParamSpec">GObject.ParamSpec
 <link xref="GObject.Object.notify"/>.</p>  <p>One way to avoid using <link xref="GObject.Object.notify"/> from within the
 class that registered the properties, and using <link xref="GObject.Object.notify_by_pspec"/>
 instead, is to store the GParamSpec used with
-<link xref="GObject.install_property"/> inside a static array, e.g.:</p>  <p>|[&lt;!-- language="C" --&gt;
+<link xref="GObject.ObjectClass.install_property"/> inside a static array, e.g.:</p>  <p>|[&lt;!-- language="C" --&gt;
   enum
   {
     PROP_0,

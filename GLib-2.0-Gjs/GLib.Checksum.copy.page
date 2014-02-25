@@ -21,7 +21,7 @@ function copy(): <link xref="GLib.Checksum">GLib.Checksum</link> {
 }
   </code></synopsis>
   <p>Copies a <link xref="GLib.Checksum"/>. If <code>checksum</code> has been closed, by calling
-<link xref="GLib.get_string"/> or <link xref="GLib.get_digest"/>, the copied
+<link xref="GLib.Checksum.get_string"/> or <link xref="GLib.Checksum.get_digest"/>, the copied
 checksum will be closed as well.</p>
   <p>Since 2.16</p>
 <terms>

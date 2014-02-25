@@ -27,7 +27,7 @@ at this path.  If the application is not the primary instance then
 the result of this function is undefined.</p>  <p>If <link xref="Gio.Application"/> is not using D-Bus then this function will return
 <code>null</code>.  This includes the situation where the D-Bus backend would
 normally be in use but we were unable to connect to the bus.</p>  <p>This function must not be called before the application has been
-registered.  See <link xref="Gio.get_is_registered"/>.</p>
+registered.  See <link xref="Gio.Application.get_is_registered"/>.</p>
   <p>Since 2.34</p>
 <terms>
 <item>

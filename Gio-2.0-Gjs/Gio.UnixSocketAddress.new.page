@@ -25,7 +25,7 @@ function new(path: String): <link xref="Gio.SocketAddress">Gio.SocketAddress</li
 }
   </code></synopsis>
   <p>Creates a new <link xref="Gio.UnixSocketAddress"/> for <code>path</code>.</p>  <p>To create abstract socket addresses, on systems that support that,
-use <link xref="Gio.new_abstract"/>.</p>
+use <link xref="Gio.UnixSocketAddress.new_abstract"/>.</p>
   <p>Since 2.22</p>
 <terms>
 <item>

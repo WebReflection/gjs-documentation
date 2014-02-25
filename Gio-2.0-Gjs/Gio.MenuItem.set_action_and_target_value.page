@@ -45,8 +45,8 @@ indication).  The item should be marked as 'toggled' or 'checked'
 when the boolean state is <code>true</code>.</p>  <p>If the action has a string state then the menu item is usually drawn
 as a radio menu item (ie: with a radio bullet or equivalent
 indication).  The item should be marked as 'selected' when the string
-state is equal to the value of the @target property.</p>  <p>See <link xref="Gio.set_action_and_target"/> or
-<link xref="Gio.set_detailed_action"/> for two equivalent calls that are
+state is equal to the value of the @target property.</p>  <p>See <link xref="Gio.MenuItem.set_action_and_target"/> or
+<link xref="Gio.MenuItem.set_detailed_action"/> for two equivalent calls that are
 probably more convenient for most uses.</p>
   <p>Since 2.32</p>
 <terms>

@@ -34,7 +34,7 @@ function new_with_backend_and_path(schema_id: String, backend: <link xref="Gio.S
   </code></synopsis>
   <p>Creates a new <link xref="Gio.Settings"/> object with the schema specified by
 <code>schema_id</code> and a given <link xref="Gio.SettingsBackend"/> and path.</p>  <p>This is a mix of <link xref="Gio.Settings.new_with_backend"/> and
-<link xref="Gio.new_with_path"/>.</p>
+<link xref="Gio.Settings.new_with_path"/>.</p>
   <p>Since 2.26</p>
 <terms>
 <item>

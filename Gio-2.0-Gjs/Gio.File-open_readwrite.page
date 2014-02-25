@@ -34,7 +34,7 @@ for reading or writing.</p>
 <item>
 <title><code>Returns</code></title>
   <p><link xref="Gio.FileIOStream"/> or <code>null</code> on error.
-    Free the returned object with <link xref="GObject.unref"/>.</p>
+    Free the returned object with <link xref="GObject.Object.unref"/>.</p>
 </item>
 </terms>
 

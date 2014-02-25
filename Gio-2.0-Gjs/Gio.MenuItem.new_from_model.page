@@ -30,7 +30,7 @@ function new_from_model(model: <link xref="Gio.MenuModel">Gio.MenuModel</link>, 
   </code></synopsis>
   <p>Creates a <link xref="Gio.MenuItem"/> as an exact copy of an existing menu item in a
 <link xref="Gio.MenuModel"/>.</p>  <p><code>item_index</code> must be valid (ie: be sure to call
-<link xref="Gio.get_n_items"/> first).</p>
+<link xref="Gio.MenuModel.get_n_items"/> first).</p>
   <p>Since 2.34</p>
 <terms>
 <item>

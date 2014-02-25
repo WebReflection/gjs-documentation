@@ -38,7 +38,7 @@ is true:</p>  <p>- The channel was just created, and has not been written to or 
    <link xref="GLib.IOChannel.read_line_string"/>, or <link xref="GLib.IOChannel.read_to_end"/>
    does not guarantee that the encoding can be changed.</p>  <p>Channels which do not meet one of the above conditions cannot call
 <link xref="GLib.IOChannel.seek_position"/> with an offset of <link xref="GLib.SeekType"/>.cur, and, if
-they are "seekable", cannot call <link xref="GLib.write_chars"/> after
+they are "seekable", cannot call <link xref="GLib.IOChannel.write_chars"/> after
 calling one of the API "read" functions.</p>
 
 <terms>

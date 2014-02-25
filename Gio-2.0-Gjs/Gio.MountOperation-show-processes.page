@@ -17,7 +17,7 @@ connect('show-processes', function (mountOperation, message: String, processes: 
 e.g. unmounting/ejecting a <link xref="Gio.Mount"/> or stopping a <link xref="Gio.Drive"/>.</p>  <p>Note that this signal may be emitted several times to update the
 list of blocking processes as processes close files. The
 application should only respond with <link xref="Gio.MountOperation.reply"/> to
-the latest signal (setting <link xref="Gio.choice"/> to the choice
+the latest signal (setting <link xref="Gio.MountOperation-choice"/> to the choice
 the user made).</p>  <p>If the message contains a line break, the first line should be
 presented as a heading. For example, it may be used as the
 primary text in a #GtkMessageDialog.</p>

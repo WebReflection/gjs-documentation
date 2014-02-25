@@ -21,7 +21,7 @@ function get_if_exited(): Boolean {
 }
   </code></synopsis>
   <p>Check if the given subprocess exited normally (ie: by way of exit()
-or return from main()).</p>  <p>This is equivalent to the system WIFEXITED macro.</p>  <p>It is an error to call this function before <link xref="Gio.wait"/> has
+or return from main()).</p>  <p>This is equivalent to the system WIFEXITED macro.</p>  <p>It is an error to call this function before <link xref="Gio.Subprocess.wait"/> has
 returned.</p>
   <p>Since 2.40</p>
 <terms>

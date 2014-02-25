@@ -26,7 +26,7 @@ function shutdown(flush: Boolean): <link xref="GLib.IOStatus">GLib.IOStatus</lin
   </code></synopsis>
   <p>Close an IO channel. Any pending data to be written will be
 flushed if <code>flush</code> is <code>true</code>. The channel will not be freed until the
-last reference is dropped using <link xref="GLib.unref"/>.</p>
+last reference is dropped using <link xref="GLib.IOChannel.unref"/>.</p>
 
 <terms>
 <item>

@@ -34,7 +34,7 @@ function read_line_async(io_priority: Number(gint), cancellable: <link xref="Gio
   </code></synopsis>
   <p>The asynchronous version of <link xref="Gio.DataInputStream.read_line"/>.  It is
 an error to have two outstanding calls to this function.</p>  <p>When the operation is finished, <code>callback</code> will be called. You
-can then call <link xref="Gio.read_line_finish"/> to get
+can then call <link xref="Gio.DataInputStream.read_line_finish"/> to get
 the result of the operation.</p>
   <p>Since 2.20</p>
 <terms>

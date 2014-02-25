@@ -60,7 +60,7 @@ that the #GtkWindow is a #GtkBin (since #GtkWindow is a subclass of
 #GtkBin).</p>  <p>## GVariant Type Strings</p>  <p>A GVariant type string can be any of the following:</p>  <p>- any basic type string (listed below)</p>  <p>- "v", "r" or "*"</p>  <p>- one of the characters 'a' or 'm', followed by another type string</p>  <p>- the character '(', followed by a concatenation of zero or more other
   type strings, followed by the character ')'</p>  <p>- the character '{', followed by a basic type string (see below),
   followed by another type string, followed by the character '}'</p>  <p>A basic type string describes a basic type (as per
-<link xref="GLib.is_basic"/>) and is always a single character in length.
+<link xref="GLib.VariantType.is_basic"/>) and is always a single character in length.
 The valid basic type strings are "b", "y", "n", "q", "i", "u", "x", "t",
 "h", "d", "s", "o", "g" and "?".</p>  <p>The above definition is recursive to arbitrary depth. "aaaaai" and
 "(ui(nq((y)))s)" are both valid type strings, as is

@@ -21,7 +21,7 @@ function get_string(): String {
 }
   </code></synopsis>
   <p>Returns the string searched with <code>match_info</code>. This is the
-string passed to <link xref="GLib.match"/> or <link xref="GLib.replace"/> so
+string passed to <link xref="GLib.Regex.match"/> or <link xref="GLib.Regex.replace"/> so
 you may not free it before calling this function.</p>
   <p>Since 2.14</p>
 <terms>

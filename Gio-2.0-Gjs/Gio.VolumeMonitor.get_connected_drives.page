@@ -20,8 +20,8 @@ function get_connected_drives(): Array(<link xref="Gio.Drive">Gio.Drive</link>) 
     // Gjs wrapper for g_volume_monitor_get_connected_drives()
 }
   </code></synopsis>
-  <p>Gets a list of drives connected to the system.</p>  <p>The returned list should be freed with <link xref="GLib.free"/>, after
-its elements have been unreffed with <link xref="GObject.unref"/>.</p>
+  <p>Gets a list of drives connected to the system.</p>  <p>The returned list should be freed with <link xref="GLib.List.free"/>, after
+its elements have been unreffed with <link xref="GObject.Object.unref"/>.</p>
 
 <terms>
 <item>

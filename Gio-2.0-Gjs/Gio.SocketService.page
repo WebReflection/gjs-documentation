@@ -16,12 +16,12 @@ let socketService = new Gio.SocketService();
   </code></synopsis>
   <p>A <link xref="Gio.SocketService"/> is an object that represents a service that
 is provided to the network or over local sockets.  When a new
-connection is made to the service the <link xref="Gio.incoming"/>
+connection is made to the service the <link xref="Gio.SocketService-incoming"/>
 signal is emitted.</p>  <p>A <link xref="Gio.SocketService"/> is a subclass of <link xref="Gio.SocketListener"/> and you need
 to add the addresses you want to accept connections on with the
 <link xref="Gio.SocketListener"/> APIs.</p>  <p>There are two options for implementing a network service based on
 <link xref="Gio.SocketService"/>. The first is to create the service using
-<link xref="Gio.new"/> and to connect to the <link xref="Gio.incoming"/>
+<link xref="Gio.SocketService.new"/> and to connect to the <link xref="Gio.SocketService-incoming"/>
 signal. The second is to subclass <link xref="Gio.SocketService"/> and override the
 default signal handler implementation.</p>  <p>In either case, the handler must immediately return, or else it
 will block additional incoming connections from being serviced.

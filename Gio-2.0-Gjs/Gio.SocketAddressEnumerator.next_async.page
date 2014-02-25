@@ -30,7 +30,7 @@ function next_async(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</l
   </code></synopsis>
   <p>Asynchronously retrieves the next <link xref="Gio.SocketAddress"/> from <code>enumerator</code>
 and then calls <code>callback</code>, which must call
-<link xref="Gio.next_finish"/> to get the result.</p>
+<link xref="Gio.SocketAddressEnumerator.next_finish"/> to get the result.</p>
 
 <terms>
 <item>

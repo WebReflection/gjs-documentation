@@ -19,7 +19,7 @@ function vfunc_dup_object(): <link xref="Gio.DBusObject">Gio.DBusObject</link> {
 <item>
 <title><code>Returns</code></title>
   <p>A <link xref="Gio.DBusObject"/> or <code>null</code>. The returned
-reference should be freed with <link xref="GObject.unref"/>.</p>
+reference should be freed with <link xref="GObject.Object.unref"/>.</p>
 </item>
 </terms>
 

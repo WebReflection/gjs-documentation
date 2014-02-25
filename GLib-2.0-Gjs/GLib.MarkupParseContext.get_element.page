@@ -22,7 +22,7 @@ function get_element(): String {
   </code></synopsis>
   <p>Retrieves the name of the currently open element.</p>  <p>If called from the start_element or end_element handlers this will
 give the element_name as passed to those functions. For the parent
-elements, see <link xref="GLib.get_element_stack"/>.</p>
+elements, see <link xref="GLib.MarkupParseContext.get_element_stack"/>.</p>
   <p>Since 2.2</p>
 <terms>
 <item>

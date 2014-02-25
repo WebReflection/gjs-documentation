@@ -20,7 +20,7 @@ function quit(): void {
     // Gjs wrapper for g_main_loop_quit()
 }
   </code></synopsis>
-  <p>Stops a <link xref="GLib.MainLoop"/> from running. Any calls to <link xref="GLib.run"/>
+  <p>Stops a <link xref="GLib.MainLoop"/> from running. Any calls to <link xref="GLib.MainLoop.run"/>
 for the loop will return.</p>  <p>Note that sources that have already been dispatched when
 <link xref="GLib.MainLoop.quit"/> is called will still be executed.</p>
 

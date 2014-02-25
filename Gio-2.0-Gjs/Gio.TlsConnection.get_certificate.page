@@ -21,7 +21,7 @@ function get_certificate(): <link xref="Gio.TlsCertificate">Gio.TlsCertificate</
 }
   </code></synopsis>
   <p>Gets <code>conn</code>'s certificate, as set by
-<link xref="Gio.set_certificate"/>.</p>
+<link xref="Gio.TlsConnection.set_certificate"/>.</p>
   <p>Since 2.28</p>
 <terms>
 <item>

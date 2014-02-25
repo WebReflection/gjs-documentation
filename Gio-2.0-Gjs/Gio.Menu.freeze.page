@@ -22,7 +22,7 @@ function freeze(): void {
   </code></synopsis>
   <p>Marks <code>menu</code> as frozen.</p>  <p>After the menu is frozen, it is an error to attempt to make any
 changes to it.  In effect this means that the <link xref="Gio.Menu"/> API must no
-longer be used.</p>  <p>This function causes <link xref="Gio.is_mutable"/> to begin returning
+longer be used.</p>  <p>This function causes <link xref="Gio.MenuModel.is_mutable"/> to begin returning
 <code>false</code>, which has some positive performance implications.</p>
   <p>Since 2.32</p>
 

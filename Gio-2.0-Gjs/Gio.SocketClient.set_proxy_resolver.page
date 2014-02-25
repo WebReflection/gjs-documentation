@@ -27,7 +27,7 @@ function set_proxy_resolver(proxy_resolver: <link xref="Gio.ProxyResolver">Gio.P
   <p>Overrides the <link xref="Gio.ProxyResolver"/> used by <code>client</code>. You can call this if
 you want to use specific proxies, rather than using the system
 default proxy settings.</p>  <p>Note that whether or not the proxy resolver is actually used
-depends on the setting of <link xref="Gio.enable-proxy"/>, which is not
+depends on the setting of <link xref="Gio.SocketClient-enable-proxy"/>, which is not
 changed by this function (but which is <code>true</code> by default)</p>
   <p>Since 2.36</p>
 <terms>

@@ -27,7 +27,7 @@ function wait(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>):
   <p>Synchronously wait for the subprocess to terminate.</p>  <p>After the process terminates you can query its exit status with
 functions such as <link xref="Gio.Subprocess.get_if_exited"/> and
 <link xref="Gio.Subprocess.get_exit_status"/>.</p>  <p>This function does not fail in the case of the subprocess having
-abnormal termination.  See <link xref="Gio.wait_check"/> for that.</p>
+abnormal termination.  See <link xref="Gio.Subprocess.wait_check"/> for that.</p>
   <p>Since 2.40</p>
 <terms>
 <item>

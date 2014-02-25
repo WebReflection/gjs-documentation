@@ -21,7 +21,7 @@ function get_native_size(): Number(gsize) {
 }
   </code></synopsis>
   <p>Gets the size of the native raw binary address for <code>address</code>. This
-is the size of the data that you get from <link xref="Gio.to_bytes"/>.</p>
+is the size of the data that you get from <link xref="Gio.InetAddress.to_bytes"/>.</p>
   <p>Since 2.22</p>
 <terms>
 <item>

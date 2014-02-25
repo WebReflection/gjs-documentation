@@ -21,7 +21,7 @@ function get_term_sig(): Number(gint) {
 }
   </code></synopsis>
   <p>Get the signal number that caused the subprocess to terminate, given
-that it terminated due to a signal.</p>  <p>This is equivalent to the system WTERMSIG macro.</p>  <p>It is an error to call this function before <link xref="Gio.wait"/> and
+that it terminated due to a signal.</p>  <p>This is equivalent to the system WTERMSIG macro.</p>  <p>It is an error to call this function before <link xref="Gio.Subprocess.wait"/> and
 unless <link xref="Gio.Subprocess.get_if_signaled"/> returned <code>true</code>.</p>
   <p>Since 2.40</p>
 <terms>

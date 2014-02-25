@@ -52,7 +52,7 @@ function new_sync(connection: <link xref="Gio.DBusConnection">Gio.DBusConnection
 at <code>object_path</code> owned by <code>name</code> at <code>connection</code> and synchronously
 loads D-Bus properties unless the
 <link xref="Gio.DBusProxyFlags"/>.do_not_load_properties flag is used.</p>  <p>If the <link xref="Gio.DBusProxyFlags"/>.do_not_connect_signals flag is not set, also sets up
-match rules for signals. Connect to the <link xref="Gio.g-signal"/> signal
+match rules for signals. Connect to the <link xref="Gio.DBusProxy-g-signal"/> signal
 to handle signals from the remote object.</p>  <p>If <code>name</code> is a well-known name and the
 <link xref="Gio.DBusProxyFlags"/>.do_not_auto_start and <link xref="Gio.DBusProxyFlags"/>.do_not_auto_start_at_construction
 flags aren't set and no name owner currently exists, the message bus

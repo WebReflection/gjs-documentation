@@ -29,7 +29,7 @@ function new_dict_entry(key: <link xref="GLib.VariantType">GLib.VariantType</lin
 }
   </code></synopsis>
   <p>Constructs the type corresponding to a dictionary entry with a key
-of type <code>key</code> and a value of type <code>value</code>.</p>  <p>It is appropriate to call <link xref="GLib.free"/> on the return value.</p>
+of type <code>key</code> and a value of type <code>value</code>.</p>  <p>It is appropriate to call <link xref="GLib.VariantType.free"/> on the return value.</p>
 
 <terms>
 <item>

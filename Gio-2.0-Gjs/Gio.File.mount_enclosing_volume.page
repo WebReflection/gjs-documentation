@@ -39,7 +39,7 @@ function mount_enclosing_volume(flags: <link xref="Gio.MountMountFlags">Gio.Moun
   <p>Starts a <code>mount_operation</code>, mounting the volume that contains
 the file <code>location</code>.</p>  <p>When this operation has completed, <code>callback</code> will be called with
 @user_user data, and the operation can be finalized with
-<link xref="Gio.mount_enclosing_volume_finish"/>.</p>  <p>If <code>cancellable</code> is not <code>null</code>, then the operation can be cancelled by
+<link xref="Gio.File.mount_enclosing_volume_finish"/>.</p>  <p>If <code>cancellable</code> is not <code>null</code>, then the operation can be cancelled by
 triggering the cancellable object from another thread. If the operation
 was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be returned.</p>
 

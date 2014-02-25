@@ -18,10 +18,10 @@ let inetAddress = new Gio.InetAddress({
 });
   </code></synopsis>
   <p><link xref="Gio.InetAddress"/> represents an IPv4 or IPv6 internet address. Use
-<link xref="Gio.lookup_by_name"/> or <link xref="Gio.lookup_by_name_async"/> to
+<link xref="Gio.Resolver.lookup_by_name"/> or <link xref="Gio.Resolver.lookup_by_name_async"/> to
 look up the <link xref="Gio.InetAddress"/> for a hostname. Use
-<link xref="Gio.lookup_by_address"/> or
-<link xref="Gio.lookup_by_address_async"/> to look up the hostname for a
+<link xref="Gio.Resolver.lookup_by_address"/> or
+<link xref="Gio.Resolver.lookup_by_address_async"/> to look up the hostname for a
 <link xref="Gio.InetAddress"/>.</p>  <p>To actually connect to a remote host, you will need a
 <link xref="Gio.InetSocketAddress"/> (which includes a <link xref="Gio.InetAddress"/> as well as a
 port number).</p>
