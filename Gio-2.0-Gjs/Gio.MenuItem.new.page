@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<page id="Gio.MenuItem.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.MenuItem" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.MenuItem</api:type>
+      </api:returns>
+      <api:name>g_menu_item_new</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>label</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>detailed_action</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.MenuItem.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(label: String, detailed_action: String): <link xref="Gio.MenuItem">Gio.MenuItem</link> {
+    // Gjs wrapper for g_menu_item_new()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="Gio.MenuItem"/>.</p>  <p>If <code>label</code> is non-<code>null</code> it is used to set the "label" attribute of the
+new item.</p>  <p>If <code>detailed_action</code> is non-<code>null</code> it is used to set the "action" and
+possibly the "target" attribute of the new item.  See
+<link xref="Gio.MenuItem.set_detailed_action"/> for more information.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>label</code></title>
+  <p>the section label, or <code>null</code></p>
+</item>
+<item>
+<title><code>detailed_action</code></title>
+  <p>the detailed action string, or <code>null</code></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

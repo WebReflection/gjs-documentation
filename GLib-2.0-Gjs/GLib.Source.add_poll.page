@@ -25,7 +25,7 @@ function add_poll(fd: <link xref="GLib.PollFD">GLib.PollFD</link>): void {
 }
   </code></synopsis>
   <p>Adds a file descriptor to the set of file descriptors polled for
-this source. This is usually combined with <link xref="GLib.new"/> to add an
+this source. This is usually combined with <link xref="GLib.Source.new"/> to add an
 event source. The event source's check function will typically test
 the @revents field in the <link xref="GLib.PollFD"/> struct and return <code>true</code> if events need
 to be processed.</p>  <p>Using this API forces the linear scanning of event sources on each

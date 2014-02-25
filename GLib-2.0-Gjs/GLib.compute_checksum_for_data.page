@@ -29,7 +29,7 @@ function compute_checksum_for_data(checksum_type: <link xref="GLib.ChecksumType"
 }
   </code></synopsis>
   <p>Computes the checksum for a binary <code>data</code> of <code>length</code>. This is a
-convenience wrapper for <link xref="GLib.new"/>, <link xref="GLib.Checksum.get_string"/>
+convenience wrapper for <link xref="GLib.Checksum.new"/>, <link xref="GLib.Checksum.get_string"/>
 and <link xref="GLib.Checksum.free"/>.</p>  <p>The hexadecimal string returned will be in lower case.</p>
   <p>Since 2.16</p>
 <terms>

@@ -12,7 +12,7 @@
   <synopsis><code>
 const GLib = imports.gi.GLib;
 
-let variantType = new GLib.VariantType();
+let variantType = new GLib.VariantType(type_string: String);
   </code></synopsis>
   <p>This section introduces the GVariant type system. It is based, in
 large part, on the D-Bus type system, with two major changes and

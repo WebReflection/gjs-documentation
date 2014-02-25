@@ -20,7 +20,7 @@ function free(): void {
     // Gjs wrapper for g_date_free()
 }
   </code></synopsis>
-  <p>Frees a <link xref="GLib.Date"/> returned from <link xref="GLib.new"/>.</p>
+  <p>Frees a <link xref="GLib.Date"/> returned from <link xref="GLib.Date.new"/>.</p>
 
 
 </page>

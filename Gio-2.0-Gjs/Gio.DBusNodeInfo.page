@@ -12,12 +12,7 @@
   <synopsis><code>
 const Gio = imports.gi.Gio;
 
-let dBusNodeInfo = new Gio.DBusNodeInfo({
-    <link xref='Gio.DBusNodeInfo-ref_count'>ref_count</link>: value
-    <link xref='Gio.DBusNodeInfo-interfaces'>interfaces</link>: value
-    <link xref='Gio.DBusNodeInfo-nodes'>nodes</link>: value
-    <link xref='Gio.DBusNodeInfo-annotations'>annotations</link>: value
-});
+let dBusNodeInfo = new Gio.DBusNodeInfo(xml_data: String);
   </code></synopsis>
   <p>Information about nodes in a remote object hierarchy.</p>
   <p>Since 2.26</p>

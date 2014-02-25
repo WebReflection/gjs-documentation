@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gio.UnixSocketAddress.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.UnixSocketAddress" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.SocketAddress</api:type>
+      </api:returns>
+      <api:name>g_unix_socket_address_new</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>path</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.UnixSocketAddress.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(path: String): <link xref="Gio.SocketAddress">Gio.SocketAddress</link> {
+    // Gjs wrapper for g_unix_socket_address_new()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="Gio.UnixSocketAddress"/> for <code>path</code>.</p>  <p>To create abstract socket addresses, on systems that support that,
+use <link xref="Gio.new_abstract"/>.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>path</code></title>
+  <p>the socket path</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

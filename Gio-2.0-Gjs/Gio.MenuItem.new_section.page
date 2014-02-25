@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<page id="Gio.MenuItem.new_section"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.MenuItem" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.MenuItem</api:type>
+      </api:returns>
+      <api:name>g_menu_item_new_section</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>label</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.MenuModel</api:type>
+        <api:name>section</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.MenuItem.new_section</title>
+  <synopsis><code mime="text/x-gjs">
+function new_section(label: String, section: <link xref="Gio.MenuModel">Gio.MenuModel</link>): <link xref="Gio.MenuItem">Gio.MenuItem</link> {
+    // Gjs wrapper for g_menu_item_new_section()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="Gio.MenuItem"/> representing a section.</p>  <p>This is a convenience API around <link xref="Gio.MenuItem.new"/> and
+<link xref="Gio.MenuItem.set_section"/>.</p>  <p>The effect of having one menu appear as a section of another is
+exactly as it sounds: the items from <code>section</code> become a direct part of
+the menu that @menu_item is added to.</p>  <p>Visual separation is typically displayed between two non-empty
+sections.  If <code>label</code> is non-<code>null</code> then it will be encorporated into
+this visual indication.  This allows for labeled subsections of a
+menu.</p>  <p>As a simple example, consider a typical "Edit" menu from a simple
+program.  It probably contains an "Undo" and "Redo" item, followed by
+a separator, followed by "Cut", "Copy" and "Paste".</p>  <p>This would be accomplished by creating three <link xref="Gio.Menu"/> instances.  The
+first would be populated with the "Undo" and "Redo" items, and the
+second with the "Cut", "Copy" and "Paste" items.  The first and
+second menus would then be added as submenus of the third.  In XML
+format, this would look something like the following:
+|[
+&lt;menu id='edit-menu'&gt;
+  &lt;section&gt;
+    &lt;item label='Undo'/&gt;
+    &lt;item label='Redo'/&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+    &lt;item label='Cut'/&gt;
+    &lt;item label='Copy'/&gt;
+    &lt;item label='Paste'/&gt;
+  &lt;/section&gt;
+&lt;/menu&gt;
+]|</p>  <p>The following example is exactly equivalent.  It is more illustrative
+of the exact relationship between the menus and items (keeping in
+mind that the 'link' element defines a new menu that is linked to the
+containing one).  The style of the second example is more verbose and
+difficult to read (and therefore not recommended except for the
+purpose of understanding what is really going on).
+|[
+&lt;menu id='edit-menu'&gt;
+  &lt;item&gt;
+    &lt;link name='section'&gt;
+      &lt;item label='Undo'/&gt;
+      &lt;item label='Redo'/&gt;
+    &lt;/link&gt;
+  &lt;/item&gt;
+  &lt;item&gt;
+    &lt;link name='section'&gt;
+      &lt;item label='Cut'/&gt;
+      &lt;item label='Copy'/&gt;
+      &lt;item label='Paste'/&gt;
+    &lt;/link&gt;
+  &lt;/item&gt;
+&lt;/menu&gt;
+]|</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>label</code></title>
+  <p>the section label, or <code>null</code></p>
+</item>
+<item>
+<title><code>section</code></title>
+  <p>a <link xref="Gio.MenuModel"/> with the items of the section</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<page id="Gio.Resource.new_from_data"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Resource" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.Resource</api:type>
+      </api:returns>
+      <api:name>g_resource_new_from_data</api:name>
+      <api:arg>
+        <api:type>ByteArray</api:type>
+        <api:name>data</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.Resource.new_from_data</title>
+  <synopsis><code mime="text/x-gjs">
+function new_from_data(data: ByteArray): <link xref="Gio.Resource">Gio.Resource</link> {
+    // Gjs wrapper for g_resource_new_from_data()
+}
+  </code></synopsis>
+  <p>Creates a GResource from a reference to the binary resource bundle.
+This will keep a reference to <code>data</code> while the resource lives, so
+the data should not be modified or freed.</p>  <p>If you want to use this resource in the global resource namespace you need
+to register it with <link xref="Gio._register"/>.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>data</code></title>
+  <p>A <link xref="GLib.Bytes"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

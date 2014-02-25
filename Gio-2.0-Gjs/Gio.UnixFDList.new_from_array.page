@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<page id="Gio.UnixFDList.new_from_array"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.UnixFDList" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.UnixFDList</api:type>
+      </api:returns>
+      <api:name>g_unix_fd_list_new_from_array</api:name>
+      <api:arg>
+        <api:type>Array(Number(gint))</api:type>
+        <api:name>fds</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.UnixFDList.new_from_array</title>
+  <synopsis><code mime="text/x-gjs">
+function new_from_array(fds: Array(Number(gint))): <link xref="Gio.UnixFDList">Gio.UnixFDList</link> {
+    // Gjs wrapper for g_unix_fd_list_new_from_array()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="Gio.UnixFDList"/> containing the file descriptors given in
+<code>fds</code>.  The file descriptors become the property of the new list and
+may no longer be used by the caller.  The array itself is owned by
+the caller.</p>  <p>Each file descriptor in the array should be set to close-on-exec.</p>  <p>If <code>n_fds</code> is -1 then <code>fds</code> must be terminated with -1.</p>
+  <p>Since 2.24</p>
+<terms>
+<item>
+<title><code>fds</code></title>
+  <p>the initial list of file descriptors</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

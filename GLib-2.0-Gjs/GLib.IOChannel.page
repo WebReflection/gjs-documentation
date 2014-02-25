@@ -12,7 +12,7 @@
   <synopsis><code>
 const GLib = imports.gi.GLib;
 
-let iOChannel = new GLib.IOChannel();
+let iOChannel = new GLib.IOChannel(filename: String, mode: String);
   </code></synopsis>
   <p>A data structure representing an IO Channel. The fields should be
 considered private and should only be accessed with the following

@@ -12,7 +12,7 @@
   <synopsis><code>
 const GLib = imports.gi.GLib;
 
-let variantBuilder = new GLib.VariantBuilder();
+let variantBuilder = new GLib.VariantBuilder(type: GLib.VariantType);
   </code></synopsis>
   <p>A utility type for constructing container-type <link xref="GLib.Variant"/> instances.</p>  <p>This is an opaque structure and may only be accessed using the
 following functions.</p>  <p><link xref="GLib.VariantBuilder"/> is not threadsafe in any way.  Do not attempt to

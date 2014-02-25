@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<page id="Gio.ThemedIcon.new_with_default_fallbacks"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.ThemedIcon" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.ThemedIcon</api:type>
+      </api:returns>
+      <api:name>g_themed_icon_new_with_default_fallbacks</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>iconname</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.ThemedIcon.new_with_default_fallbacks</title>
+  <synopsis><code mime="text/x-gjs">
+function new_with_default_fallbacks(iconname: String): <link xref="Gio.ThemedIcon">Gio.ThemedIcon</link> {
+    // Gjs wrapper for g_themed_icon_new_with_default_fallbacks()
+}
+  </code></synopsis>
+  <p>Creates a new themed icon for <code>iconname</code>, and all the names
+that can be created by shortening <code>iconname</code> at '-' characters.</p>  <p>In the following example, @icon1 and @icon2 are equivalent:
+|[&lt;!-- language="C" --&gt;
+const char *names[] = {
+  "gnome-dev-cdrom-audio",
+  "gnome-dev-cdrom",
+  "gnome-dev",
+  "gnome"
+};</p>  <p>icon1 = g_themed_icon_new_from_names (names, 4);
+icon2 = g_themed_icon_new_with_default_fallbacks ("gnome-dev-cdrom-audio");
+]|</p>
+
+<terms>
+<item>
+<title><code>iconname</code></title>
+  <p>a string containing an icon name</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

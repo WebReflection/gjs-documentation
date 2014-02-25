@@ -21,7 +21,7 @@ function free(): void {
 }
   </code></synopsis>
   <p>Frees a <link xref="GLib.VariantType"/> that was allocated with
-<link xref="GLib.VariantType.copy"/>, <link xref="GLib.new"/> or one of the container
+<link xref="GLib.VariantType.copy"/>, <link xref="GLib.VariantType.new"/> or one of the container
 type constructor functions.</p>  <p>In the case that <code>type</code> is <code>null</code>, this function does nothing.</p>  <p>Since 2.24</p>
 
 

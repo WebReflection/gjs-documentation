@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<page id="Gio.InetSocketAddress.new_from_string"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.InetSocketAddress" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.SocketAddress</api:type>
+      </api:returns>
+      <api:name>g_inet_socket_address_new_from_string</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>address</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint)</api:type>
+        <api:name>port</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.InetSocketAddress.new_from_string</title>
+  <synopsis><code mime="text/x-gjs">
+function new_from_string(address: String, port: Number(guint)): <link xref="Gio.SocketAddress">Gio.SocketAddress</link> {
+    // Gjs wrapper for g_inet_socket_address_new_from_string()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="Gio.InetSocketAddress"/> for <code>address</code> and <code>port</code>.</p>  <p>If <code>address</code> is an IPv6 address, it can also contain a scope ID
+(separated from the address by a "&lt;literal&gt;%&lt;/literal&gt;").</p>
+  <p>Since 2.40</p>
+<terms>
+<item>
+<title><code>address</code></title>
+  <p>the string form of an IP address</p>
+</item>
+<item>
+<title><code>port</code></title>
+  <p>a port number</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

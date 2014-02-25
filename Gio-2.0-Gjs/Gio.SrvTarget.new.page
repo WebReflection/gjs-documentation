@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<page id="Gio.SrvTarget.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.SrvTarget" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.SrvTarget</api:type>
+      </api:returns>
+      <api:name>g_srv_target_new</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>hostname</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint16)</api:type>
+        <api:name>port</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint16)</api:type>
+        <api:name>priority</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint16)</api:type>
+        <api:name>weight</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.SrvTarget.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(hostname: String, port: Number(guint16), priority: Number(guint16), weight: Number(guint16)): <link xref="Gio.SrvTarget">Gio.SrvTarget</link> {
+    // Gjs wrapper for g_srv_target_new()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="Gio.SrvTarget"/> with the given parameters.</p>  <p>You should not need to use this; normally #GSrvTargets are
+created by <link xref="Gio.Resolver"/>.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>hostname</code></title>
+  <p>the host that the service is running on</p>
+</item>
+<item>
+<title><code>port</code></title>
+  <p>the port that the service is running on</p>
+</item>
+<item>
+<title><code>priority</code></title>
+  <p>the target's priority</p>
+</item>
+<item>
+<title><code>weight</code></title>
+  <p>the target's weight</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

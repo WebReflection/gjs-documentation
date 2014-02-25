@@ -41,11 +41,11 @@ the tokens. If the pattern contains capturing parentheses,
 then the text for each of the substrings will also be returned.
 If the pattern does not match anywhere in the string, then the
 whole string is returned as the first token.</p>  <p>This function is equivalent to <link xref="GLib.Regex.split"/> but it does
-not require to compile the pattern with <link xref="GLib.new"/>, avoiding
+not require to compile the pattern with <link xref="GLib.Regex.new"/>, avoiding
 some lines of code when you need just to do a split without
 extracting substrings, capture counts, and so on.</p>  <p>If this function is to be called on the same <code>pattern</code> more than
 once, it's more efficient to compile the pattern once with
-<link xref="GLib.new"/> and then use <link xref="GLib.Regex.split"/>.</p>  <p>As a special case, the result of splitting the empty string ""
+<link xref="GLib.Regex.new"/> and then use <link xref="GLib.Regex.split"/>.</p>  <p>As a special case, the result of splitting the empty string ""
 is an empty vector, not a vector containing a single string.
 The reason for this special case is that being able to represent
 a empty vector is typically more useful than consistent handling

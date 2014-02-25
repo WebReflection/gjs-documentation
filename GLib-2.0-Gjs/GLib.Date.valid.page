@@ -22,7 +22,7 @@ function valid(): Boolean {
   </code></synopsis>
   <p>Returns <code>true</code> if the <link xref="GLib.Date"/> represents an existing day. The date must not
 contain garbage; it should have been initialized with <link xref="GLib.Date.clear"/>
-if it wasn't allocated by one of the <link xref="GLib.new"/> variants.</p>
+if it wasn't allocated by one of the <link xref="GLib.Date.new"/> variants.</p>
 
 <terms>
 <item>

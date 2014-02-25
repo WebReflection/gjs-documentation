@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusServer.new_sync"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusServer" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.DBusServer</api:type>
+      </api:returns>
+      <api:name>g_dbus_server_new_sync</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>address</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.DBusServerFlags</api:type>
+        <api:name>flags</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>guid</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.DBusAuthObserver</api:type>
+        <api:name>observer</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DBusServer.new_sync</title>
+  <synopsis><code mime="text/x-gjs">
+function new_sync(address: String, flags: <link xref="Gio.DBusServerFlags">Gio.DBusServerFlags</link>, guid: String, observer: <link xref="Gio.DBusAuthObserver">Gio.DBusAuthObserver</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): <link xref="Gio.DBusServer">Gio.DBusServer</link> {
+    // Gjs wrapper for g_dbus_server_new_sync()
+}
+  </code></synopsis>
+  <p>Creates a new D-Bus server that listens on the first address in
+<code>address</code> that works.</p>  <p>Once constructed, you can use <link xref="Gio.DBusServer.get_client_address"/> to
+get a D-Bus address string that clients can use to connect.</p>  <p>Connect to the <link xref="Gio.new-connection"/> signal to handle
+incoming connections.</p>  <p>The returned <link xref="Gio.DBusServer"/> isn't active - you have to start it with
+<link xref="Gio.DBusServer.start"/>.</p>  <p><link xref="Gio.DBusServer"/> is used in this [example][gdbus-peer-to-peer].</p>  <p>This is a synchronous failable constructor. See
+g_dbus_server_new() for the asynchronous version.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>address</code></title>
+  <p>A D-Bus address.</p>
+</item>
+<item>
+<title><code>flags</code></title>
+  <p>Flags from the <link xref="Gio.DBusServerFlags"/> enumeration.</p>
+</item>
+<item>
+<title><code>guid</code></title>
+  <p>A D-Bus GUID.</p>
+</item>
+<item>
+<title><code>observer</code></title>
+  <p>A <link xref="Gio.DBusAuthObserver"/> or <code>null</code>.</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>A <link xref="Gio.Cancellable"/> or <code>null</code>.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

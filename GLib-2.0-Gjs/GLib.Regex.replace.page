@@ -48,7 +48,7 @@ replacement, write '\\'.</p>  <p>There are also escapes that changes the case of
 - \L: Convert to lower case till \E
 - \U: Convert to upper case till \E
 - \E: End case modification</p>  <p>If you do not need to use backreferences use <link xref="GLib.replace_literal"/>.</p>  <p>The <code>replacement</code> string must be UTF-8 encoded even if #G_REGEX_RAW was
-passed to <link xref="GLib.new"/>. If you want to use not UTF-8 encoded stings
+passed to <link xref="GLib.Regex.new"/>. If you want to use not UTF-8 encoded stings
 you can use <link xref="GLib.replace_literal"/>.</p>  <p>Setting <code>start_position</code> differs from just passing over a shortened
 string and setting #G_REGEX_MATCH_NOTBOL in the case of a pattern that
 begins with any kind of lookbehind assertion, such as "\b".</p>

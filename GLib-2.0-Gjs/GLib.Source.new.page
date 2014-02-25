@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<page id="GLib.Source.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Source" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.Source</api:type>
+      </api:returns>
+      <api:name>g_source_new</api:name>
+      <api:arg>
+        <api:type>GLib.SourceFuncs</api:type>
+        <api:name>source_funcs</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint)</api:type>
+        <api:name>struct_size</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.Source.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(source_funcs: <link xref="GLib.SourceFuncs">GLib.SourceFuncs</link>, struct_size: Number(guint)): <link xref="GLib.Source">GLib.Source</link> {
+    // Gjs wrapper for g_source_new()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="GLib.Source"/> structure. The size is specified to
+allow creating structures derived from <link xref="GLib.Source"/> that contain
+additional data. The size passed in must be at least
+`sizeof (GSource)`.</p>  <p>The source will not initially be associated with any <link xref="GLib.MainContext"/>
+and must be added to one with <link xref="GLib.attach"/> before it will be
+executed.</p>
+
+<terms>
+<item>
+<title><code>source_funcs</code></title>
+  <p>structure containing functions that implement
+               the sources behavior.</p>
+</item>
+<item>
+<title><code>struct_size</code></title>
+  <p>size of the <link xref="GLib.Source"/> structure to create.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

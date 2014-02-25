@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<page id="Gio.MenuItem.new_submenu"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.MenuItem" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.MenuItem</api:type>
+      </api:returns>
+      <api:name>g_menu_item_new_submenu</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>label</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.MenuModel</api:type>
+        <api:name>submenu</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.MenuItem.new_submenu</title>
+  <synopsis><code mime="text/x-gjs">
+function new_submenu(label: String, submenu: <link xref="Gio.MenuModel">Gio.MenuModel</link>): <link xref="Gio.MenuItem">Gio.MenuItem</link> {
+    // Gjs wrapper for g_menu_item_new_submenu()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="Gio.MenuItem"/> representing a submenu.</p>  <p>This is a convenience API around <link xref="Gio.MenuItem.new"/> and
+<link xref="Gio.MenuItem.set_submenu"/>.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>label</code></title>
+  <p>the section label, or <code>null</code></p>
+</item>
+<item>
+<title><code>submenu</code></title>
+  <p>a <link xref="Gio.MenuModel"/> with the items of the submenu</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

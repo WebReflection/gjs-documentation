@@ -12,7 +12,7 @@
   <synopsis><code>
 const Gio = imports.gi.Gio;
 
-let fileAttributeMatcher = new Gio.FileAttributeMatcher();
+let fileAttributeMatcher = new Gio.FileAttributeMatcher(attributes: String);
   </code></synopsis>
   <p>Determines if a string matches a file attribute.</p>
 

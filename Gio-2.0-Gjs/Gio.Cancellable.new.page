@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="Gio.Cancellable.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Cancellable" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.Cancellable</api:type>
+      </api:returns>
+      <api:name>g_cancellable_new</api:name>
+    </api:function>
+  </info>
+  <title>Gio.Cancellable.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(): <link xref="Gio.Cancellable">Gio.Cancellable</link> {
+    // Gjs wrapper for g_cancellable_new()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="Gio.Cancellable"/> object.</p>  <p>Applications that want to start one or more operations
+that should be cancellable should create a <link xref="Gio.Cancellable"/>
+and pass it to the operations.</p>  <p>One <link xref="Gio.Cancellable"/> can be used in multiple consecutive
+operations or in multiple concurrent operations.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

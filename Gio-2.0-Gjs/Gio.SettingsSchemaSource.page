@@ -12,7 +12,7 @@
   <synopsis><code>
 const Gio = imports.gi.Gio;
 
-let settingsSchemaSource = new Gio.SettingsSchemaSource();
+let settingsSchemaSource = new Gio.SettingsSchemaSource(directory: String, parent: Gio.SettingsSchemaSource, trusted: Boolean);
   </code></synopsis>
   <p>This is an opaque structure type.  You may not access it directly.</p>
   <p>Since 2.32</p>

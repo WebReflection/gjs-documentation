@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<page id="Gio.BufferedInputStream.new_sized"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.BufferedInputStream" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.InputStream</api:type>
+      </api:returns>
+      <api:name>g_buffered_input_stream_new_sized</api:name>
+      <api:arg>
+        <api:type>Gio.InputStream</api:type>
+        <api:name>base_stream</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gsize)</api:type>
+        <api:name>size</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.BufferedInputStream.new_sized</title>
+  <synopsis><code mime="text/x-gjs">
+function new_sized(base_stream: <link xref="Gio.InputStream">Gio.InputStream</link>, size: Number(gsize)): <link xref="Gio.InputStream">Gio.InputStream</link> {
+    // Gjs wrapper for g_buffered_input_stream_new_sized()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="Gio.BufferedInputStream"/> from the given <code>base_stream</code>,
+with a buffer set to <code>size</code>.</p>
+
+<terms>
+<item>
+<title><code>base_stream</code></title>
+  <p>a <link xref="Gio.InputStream"/></p>
+</item>
+<item>
+<title><code>size</code></title>
+  <p>a #gsize</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

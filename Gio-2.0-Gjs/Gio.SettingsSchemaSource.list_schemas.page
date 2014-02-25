@@ -27,8 +27,8 @@ function list_schemas(recursive: Boolean): [non_relocatable: String, relocatable
   <p>Lists the schemas in a given source.</p>  <p>If <code>recursive</code> is <code>true</code> then include parent sources.  If <code>false</code> then
 only include the schemas from one source (ie: one directory).  You
 probably want <code>true</code>.</p>  <p>Non-relocatable schemas are those for which you can call
-<link xref="Gio.new"/>.  Relocatable schemas are those for which you must
-use <link xref="Gio.new_with_path"/>.</p>  <p>Do not call this function from normal programs.  This is designed for
+<link xref="Gio.Settings.new"/>.  Relocatable schemas are those for which you must
+use <link xref="Gio.Settings.new_with_path"/>.</p>  <p>Do not call this function from normal programs.  This is designed for
 use by database editors, commandline tools, etc.</p>
   <p>Since 2.40</p>
 <terms>

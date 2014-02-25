@@ -12,7 +12,7 @@
   <synopsis><code>
 const GLib = imports.gi.GLib;
 
-let mainLoop = new GLib.MainLoop();
+let mainLoop = new GLib.MainLoop(context: GLib.MainContext, is_running: Boolean);
   </code></synopsis>
   <p>The &lt;structname&gt;GMainLoop&lt;/structname&gt; struct is an opaque data type
 representing the main event loop of a GLib or GTK+ application.</p>

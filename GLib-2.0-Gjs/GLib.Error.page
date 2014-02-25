@@ -12,9 +12,7 @@
   <synopsis><code>
 const GLib = imports.gi.GLib;
 
-let error = new GLib.Error({
-    <link xref='GLib.Error-code'>code</link>: value
-});
+let error = new GLib.Error(domain: GLib.Quark, code: Number(gint), message: String);
   </code></synopsis>
   <p>The &lt;structname&gt;GError&lt;/structname&gt; structure contains
 information about an error that has occurred.</p>

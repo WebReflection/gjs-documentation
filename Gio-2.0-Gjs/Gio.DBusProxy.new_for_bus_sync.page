@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusProxy.new_for_bus_sync"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusProxy" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.DBusProxy</api:type>
+      </api:returns>
+      <api:name>g_dbus_proxy_new_for_bus_sync</api:name>
+      <api:arg>
+        <api:type>Gio.BusType</api:type>
+        <api:name>bus_type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.DBusProxyFlags</api:type>
+        <api:name>flags</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.DBusInterfaceInfo</api:type>
+        <api:name>info</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>object_path</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>interface_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DBusProxy.new_for_bus_sync</title>
+  <synopsis><code mime="text/x-gjs">
+function new_for_bus_sync(bus_type: <link xref="Gio.BusType">Gio.BusType</link>, flags: <link xref="Gio.DBusProxyFlags">Gio.DBusProxyFlags</link>, info: <link xref="Gio.DBusInterfaceInfo">Gio.DBusInterfaceInfo</link>, name: String, object_path: String, interface_name: String, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): <link xref="Gio.DBusProxy">Gio.DBusProxy</link> {
+    // Gjs wrapper for g_dbus_proxy_new_for_bus_sync()
+}
+  </code></synopsis>
+  <p>Like <link xref="Gio.new_sync"/> but takes a <link xref="Gio.BusType"/> instead of a <link xref="Gio.DBusConnection"/>.</p>  <p><link xref="Gio.DBusProxy"/> is used in this [example][gdbus-wellknown-proxy].</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>bus_type</code></title>
+  <p>A <link xref="Gio.BusType"/>.</p>
+</item>
+<item>
+<title><code>flags</code></title>
+  <p>Flags used when constructing the proxy.</p>
+</item>
+<item>
+<title><code>info</code></title>
+  <p>A <link xref="Gio.DBusInterfaceInfo"/> specifying the minimal interface
+       that @proxy conforms to or <code>null</code>.</p>
+</item>
+<item>
+<title><code>name</code></title>
+  <p>A bus name (well-known or unique).</p>
+</item>
+<item>
+<title><code>object_path</code></title>
+  <p>An object path.</p>
+</item>
+<item>
+<title><code>interface_name</code></title>
+  <p>A D-Bus interface name.</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>A <link xref="Gio.Cancellable"/> or <code>null</code>.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

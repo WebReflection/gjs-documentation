@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<page id="Gio.ZlibCompressor.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.ZlibCompressor" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.ZlibCompressor</api:type>
+      </api:returns>
+      <api:name>g_zlib_compressor_new</api:name>
+      <api:arg>
+        <api:type>Gio.ZlibCompressorFormat</api:type>
+        <api:name>format</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>level</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.ZlibCompressor.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(format: <link xref="Gio.ZlibCompressorFormat">Gio.ZlibCompressorFormat</link>, level: Number(gint)): <link xref="Gio.ZlibCompressor">Gio.ZlibCompressor</link> {
+    // Gjs wrapper for g_zlib_compressor_new()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="Gio.ZlibCompressor"/>.</p>
+  <p>Since 2.24</p>
+<terms>
+<item>
+<title><code>format</code></title>
+  <p>The format to use for the compressed data</p>
+</item>
+<item>
+<title><code>level</code></title>
+  <p>compression level (0-9), -1 for default</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

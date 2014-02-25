@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<page id="Gio.Task.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Task" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.Task</api:type>
+      </api:returns>
+      <api:name>g_task_new</api:name>
+      <api:arg>
+        <api:type>GObject.Object</api:type>
+        <api:name>source_object</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.AsyncReadyCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.Task.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(source_object: <link href="../GObject-2.0/GObject.Object.page">GObject.Object</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): <link xref="Gio.Task">Gio.Task</link> {
+    // Gjs wrapper for g_task_new()
+}
+  </code></synopsis>
+  <p>Creates a <link xref="Gio.Task"/> acting on <code>source_object</code>, which will eventually be
+used to invoke <code>callback</code> in the current
+[thread-default main context][g-main-context-push-thread-default].</p>  <p>Call this in the "start" method of your asynchronous method, and
+pass the <link xref="Gio.Task"/> around throughout the asynchronous operation. You
+can use <link xref="Gio.Task.set_task_data"/> to attach task-specific data to the
+object, which you can retrieve later via <link xref="Gio.Task.get_task_data"/>.</p>  <p>By default, if <code>cancellable</code> is cancelled, then the return value of
+the task will always be <link xref="Gio.IOErrorEnum"/>.cancelled, even if the task had
+already completed before the cancellation. This allows for
+simplified handling in cases where cancellation may imply that
+other objects that the task depends on have been destroyed. If you
+do not want this behavior, you can use
+<link xref="Gio.Task.set_check_cancellable"/> to change it.</p>
+  <p>Since 2.36</p>
+<terms>
+<item>
+<title><code>source_object</code></title>
+  <p>the <link xref="GObject.Object"/> that owns
+  this task, or <code>null</code>.</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional <link xref="Gio.Cancellable"/> object, <code>null</code> to ignore.</p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>a <link xref="Gio.AsyncReadyCallback"/>.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusObjectManagerClient.new_finish"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusObjectManagerClient" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.DBusObjectManagerClient</api:type>
+      </api:returns>
+      <api:name>g_dbus_object_manager_client_new_finish</api:name>
+      <api:arg>
+        <api:type>Gio.AsyncResult</api:type>
+        <api:name>res</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DBusObjectManagerClient.new_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function new_finish(res: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): <link xref="Gio.DBusObjectManagerClient">Gio.DBusObjectManagerClient</link> {
+    // Gjs wrapper for g_dbus_object_manager_client_new_finish()
+}
+  </code></synopsis>
+  <p>Finishes an operation started with <link xref="Gio.DBusObjectManagerClient.new"/>.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>res</code></title>
+  <p>A <link xref="Gio.AsyncResult"/> obtained from the <link xref="Gio.AsyncReadyCallback"/> passed to <link xref="Gio.DBusObjectManagerClient.new"/>.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

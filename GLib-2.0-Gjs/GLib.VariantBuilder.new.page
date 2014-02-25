@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="GLib.VariantBuilder.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.VariantBuilder" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.VariantBuilder</api:type>
+      </api:returns>
+      <api:name>g_variant_builder_new</api:name>
+      <api:arg>
+        <api:type>GLib.VariantType</api:type>
+        <api:name>type</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.VariantBuilder.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(type: <link xref="GLib.VariantType">GLib.VariantType</link>): <link xref="GLib.VariantBuilder">GLib.VariantBuilder</link> {
+    // Gjs wrapper for g_variant_builder_new()
+}
+  </code></synopsis>
+  <p>Allocates and initialises a new <link xref="GLib.VariantBuilder"/>.</p>  <p>You should call <link xref="GLib.unref"/> on the return value when it
+is no longer needed.  The memory will not be automatically freed by
+any other call.</p>  <p>In most cases it is easier to place a <link xref="GLib.VariantBuilder"/> directly on
+the stack of the calling function and initialise it with
+<link xref="GLib.init"/>.</p>
+  <p>Since 2.24</p>
+<terms>
+<item>
+<title><code>type</code></title>
+  <p>a container type</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

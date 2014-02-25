@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<page id="Gio.Settings.new_with_backend"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Settings" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.Settings</api:type>
+      </api:returns>
+      <api:name>g_settings_new_with_backend</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>schema_id</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.SettingsBackend</api:type>
+        <api:name>backend</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.Settings.new_with_backend</title>
+  <synopsis><code mime="text/x-gjs">
+function new_with_backend(schema_id: String, backend: <link xref="Gio.SettingsBackend">Gio.SettingsBackend</link>): <link xref="Gio.Settings">Gio.Settings</link> {
+    // Gjs wrapper for g_settings_new_with_backend()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="Gio.Settings"/> object with the schema specified by
+<code>schema_id</code> and a given <link xref="Gio.SettingsBackend"/>.</p>  <p>Creating a <link xref="Gio.Settings"/> object with a different backend allows accessing
+settings from a database other than the usual one. For example, it may make
+sense to pass a backend corresponding to the "defaults" settings database on
+the system to get a settings object that modifies the system default
+settings instead of the settings for this user.</p>
+  <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>schema_id</code></title>
+  <p>the id of the schema</p>
+</item>
+<item>
+<title><code>backend</code></title>
+  <p>the <link xref="Gio.SettingsBackend"/> to use</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

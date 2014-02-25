@@ -12,7 +12,7 @@
   <synopsis><code>
 const Gio = imports.gi.Gio;
 
-let srvTarget = new Gio.SrvTarget();
+let srvTarget = new Gio.SrvTarget(hostname: String, port: Number(guint16), priority: Number(guint16), weight: Number(guint16));
   </code></synopsis>
   <p>SRV (service) records are used by some network protocols to provide
 service-specific aliasing and load-balancing. For example, XMPP

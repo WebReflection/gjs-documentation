@@ -12,7 +12,7 @@
   <synopsis><code>
 const GLib = imports.gi.GLib;
 
-let source = new GLib.Source();
+let source = new GLib.Source(source_funcs: GLib.SourceFuncs, struct_size: Number(guint));
   </code></synopsis>
   <p>The &lt;structname&gt;GSource&lt;/structname&gt; struct is an opaque data type
 representing an event source.</p>

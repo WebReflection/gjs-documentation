@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<page id="Gio.NetworkService.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.NetworkService" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.NetworkService</api:type>
+      </api:returns>
+      <api:name>g_network_service_new</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>service</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>protocol</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>domain</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.NetworkService.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(service: String, protocol: String, domain: String): <link xref="Gio.NetworkService">Gio.NetworkService</link> {
+    // Gjs wrapper for g_network_service_new()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="Gio.NetworkService"/> representing the given <code>service</code>,
+<code>protocol</code>, and <code>domain</code>. This will initially be unresolved; use the
+<link xref="Gio.SocketConnectable"/> interface to resolve it.</p>
+  <p>Since 2.22</p>
+<terms>
+<item>
+<title><code>service</code></title>
+  <p>the service type to look up (eg, "ldap")</p>
+</item>
+<item>
+<title><code>protocol</code></title>
+  <p>the networking protocol to use for <code>service</code> (eg, "tcp")</p>
+</item>
+<item>
+<title><code>domain</code></title>
+  <p>the DNS domain to look up the service in</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

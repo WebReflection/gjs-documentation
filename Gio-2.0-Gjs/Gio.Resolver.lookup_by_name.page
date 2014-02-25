@@ -31,7 +31,7 @@ function lookup_by_name(hostname: String, cancellable: <link xref="Gio.Cancellab
   <p>Synchronously resolves <code>hostname</code> to determine its associated IP
 address(es). <code>hostname</code> may be an ASCII-only or UTF-8 hostname, or
 the textual form of an IP address (in which case this just becomes
-a wrapper around <link xref="Gio.new_from_string"/>).</p>  <p>On success, <link xref="Gio.Resolver.lookup_by_name"/> will return a <link xref="GLib.List"/> of
+a wrapper around <link xref="Gio.InetAddress.new_from_string"/>).</p>  <p>On success, <link xref="Gio.Resolver.lookup_by_name"/> will return a <link xref="GLib.List"/> of
 <link xref="Gio.InetAddress"/>, sorted in order of preference and guaranteed to not
 contain duplicates. That is, if using the result to connect to
 <code>hostname</code>, you should attempt to connect to the first address

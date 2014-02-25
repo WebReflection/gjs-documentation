@@ -37,11 +37,11 @@ function match_simple(pattern: String, string: String, compile_options: <link xr
 }
   </code></synopsis>
   <p>Scans for a match in <code>string</code> for <code>pattern</code>.</p>  <p>This function is equivalent to <link xref="GLib.Regex.match"/> but it does not
-require to compile the pattern with <link xref="GLib.new"/>, avoiding some
+require to compile the pattern with <link xref="GLib.Regex.new"/>, avoiding some
 lines of code when you need just to do a match without extracting
 substrings, capture counts, and so on.</p>  <p>If this function is to be called on the same <code>pattern</code> more than
 once, it's more efficient to compile the pattern once with
-<link xref="GLib.new"/> and then use <link xref="GLib.Regex.match"/>.</p>
+<link xref="GLib.Regex.new"/> and then use <link xref="GLib.Regex.match"/>.</p>
   <p>Since 2.14</p>
 <terms>
 <item>

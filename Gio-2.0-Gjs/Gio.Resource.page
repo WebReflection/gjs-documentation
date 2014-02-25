@@ -12,7 +12,7 @@
   <synopsis><code>
 const Gio = imports.gi.Gio;
 
-let resource = new Gio.Resource();
+let resource = new Gio.Resource(data: ByteArray);
   </code></synopsis>
   <p>Applications and libraries often contain binary or textual data that is
 really part of the application, rather than user data. For instance

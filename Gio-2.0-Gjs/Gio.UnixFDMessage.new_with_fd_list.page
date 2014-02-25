@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Gio.UnixFDMessage.new_with_fd_list"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.UnixFDMessage" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.SocketControlMessage</api:type>
+      </api:returns>
+      <api:name>g_unix_fd_message_new_with_fd_list</api:name>
+      <api:arg>
+        <api:type>Gio.UnixFDList</api:type>
+        <api:name>fd_list</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.UnixFDMessage.new_with_fd_list</title>
+  <synopsis><code mime="text/x-gjs">
+function new_with_fd_list(fd_list: <link xref="Gio.UnixFDList">Gio.UnixFDList</link>): <link xref="Gio.SocketControlMessage">Gio.SocketControlMessage</link> {
+    // Gjs wrapper for g_unix_fd_message_new_with_fd_list()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="Gio.UnixFDMessage"/> containing @list.</p>
+  <p>Since 2.24</p>
+<terms>
+<item>
+<title><code>fd_list</code></title>
+  <p>a <link xref="Gio.UnixFDList"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

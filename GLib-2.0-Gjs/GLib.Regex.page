@@ -12,7 +12,7 @@
   <synopsis><code>
 const GLib = imports.gi.GLib;
 
-let regex = new GLib.Regex();
+let regex = new GLib.Regex(pattern: String, compile_options: GLib.RegexCompileFlags, match_options: GLib.RegexMatchFlags);
   </code></synopsis>
   <p>The g_regex_*() functions implement regular
 expression pattern matching using syntax and semantics similar to

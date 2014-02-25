@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<page id="Gio.InetAddressMask.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.InetAddressMask" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.InetAddressMask</api:type>
+      </api:returns>
+      <api:name>g_inet_address_mask_new</api:name>
+      <api:arg>
+        <api:type>Gio.InetAddress</api:type>
+        <api:name>addr</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint)</api:type>
+        <api:name>length</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.InetAddressMask.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(addr: <link xref="Gio.InetAddress">Gio.InetAddress</link>, length: Number(guint)): <link xref="Gio.InetAddressMask">Gio.InetAddressMask</link> {
+    // Gjs wrapper for g_inet_address_mask_new()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="Gio.InetAddressMask"/> representing all addresses whose
+first <code>length</code> bits match <code>addr</code>.</p>
+  <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>addr</code></title>
+  <p>a <link xref="Gio.InetAddress"/></p>
+</item>
+<item>
+<title><code>length</code></title>
+  <p>number of bits of <code>addr</code> to use</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusObjectManagerClient.new_for_bus_sync"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusObjectManagerClient" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.DBusObjectManagerClient</api:type>
+      </api:returns>
+      <api:name>g_dbus_object_manager_client_new_for_bus_sync</api:name>
+      <api:arg>
+        <api:type>Gio.BusType</api:type>
+        <api:name>bus_type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.DBusObjectManagerClientFlags</api:type>
+        <api:name>flags</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>object_path</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.DBusProxyTypeFunc</api:type>
+        <api:name>get_proxy_type_func</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DBusObjectManagerClient.new_for_bus_sync</title>
+  <synopsis><code mime="text/x-gjs">
+function new_for_bus_sync(bus_type: <link xref="Gio.BusType">Gio.BusType</link>, flags: <link xref="Gio.DBusObjectManagerClientFlags">Gio.DBusObjectManagerClientFlags</link>, name: String, object_path: String, get_proxy_type_func: <link xref="Gio.DBusProxyTypeFunc">Gio.DBusProxyTypeFunc</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): <link xref="Gio.DBusObjectManagerClient">Gio.DBusObjectManagerClient</link> {
+    // Gjs wrapper for g_dbus_object_manager_client_new_for_bus_sync()
+}
+  </code></synopsis>
+  <p>Like <link xref="Gio.new_sync"/> but takes a <link xref="Gio.BusType"/> instead
+of a <link xref="Gio.DBusConnection"/>.</p>  <p>This is a synchronous failable constructor - the calling thread is
+blocked until a reply is received. See <link xref="Gio.DBusObjectManagerClient.new_for_bus"/>
+for the asynchronous version.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>bus_type</code></title>
+  <p>A <link xref="Gio.BusType"/>.</p>
+</item>
+<item>
+<title><code>flags</code></title>
+  <p>Zero or more flags from the <link xref="Gio.DBusObjectManagerClientFlags"/> enumeration.</p>
+</item>
+<item>
+<title><code>name</code></title>
+  <p>The owner of the control object (unique or well-known name).</p>
+</item>
+<item>
+<title><code>object_path</code></title>
+  <p>The object path of the control object.</p>
+</item>
+<item>
+<title><code>get_proxy_type_func</code></title>
+  <p>A <link xref="Gio.DBusProxyTypeFunc"/> function or <code>null</code> to always construct <link xref="Gio.DBusProxy"/> proxies.</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>A <link xref="Gio.Cancellable"/> or <code>null</code></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

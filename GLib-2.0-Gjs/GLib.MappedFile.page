@@ -12,7 +12,7 @@
   <synopsis><code>
 const GLib = imports.gi.GLib;
 
-let mappedFile = new GLib.MappedFile();
+let mappedFile = new GLib.MappedFile(filename: String, writable: Boolean);
   </code></synopsis>
   <p>The <link xref="GLib.MappedFile"/> represents a file mapping created with
 <link xref="GLib.new"/>. It has only private members and should

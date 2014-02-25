@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<page id="Gio.MemoryInputStream.new_from_data"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.MemoryInputStream" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.InputStream</api:type>
+      </api:returns>
+      <api:name>g_memory_input_stream_new_from_data</api:name>
+      <api:arg>
+        <api:type>ByteArray</api:type>
+        <api:name>data</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.DestroyNotify</api:type>
+        <api:name>destroy</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.MemoryInputStream.new_from_data</title>
+  <synopsis><code mime="text/x-gjs">
+function new_from_data(data: ByteArray, destroy: <link href="../GLib-2.0/GLib.DestroyNotify.page">GLib.DestroyNotify</link>): <link xref="Gio.InputStream">Gio.InputStream</link> {
+    // Gjs wrapper for g_memory_input_stream_new_from_data()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="Gio.MemoryInputStream"/> with data in memory of a given size.</p>
+
+<terms>
+<item>
+<title><code>data</code></title>
+  <p>input data</p>
+</item>
+<item>
+<title><code>destroy</code></title>
+  <p>function that is called to free <code>data</code>, or <code>null</code></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

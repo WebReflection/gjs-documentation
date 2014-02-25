@@ -21,7 +21,7 @@ function get_pattern(): String {
 }
   </code></synopsis>
   <p>Gets the pattern string associated with <code>regex</code>, i.e. a copy of
-the string passed to <link xref="GLib.new"/>.</p>
+the string passed to <link xref="GLib.Regex.new"/>.</p>
   <p>Since 2.14</p>
 <terms>
 <item>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="Gio.DBusObjectManagerServer.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.DBusObjectManagerServer" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.DBusObjectManagerServer</api:type>
+      </api:returns>
+      <api:name>g_dbus_object_manager_server_new</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>object_path</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gio.DBusObjectManagerServer.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(object_path: String): <link xref="Gio.DBusObjectManagerServer">Gio.DBusObjectManagerServer</link> {
+    // Gjs wrapper for g_dbus_object_manager_server_new()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="Gio.DBusObjectManagerServer"/> object.</p>  <p>The returned server isn't yet exported on any connection. To do so,
+use <link xref="Gio.DBusObjectManagerServer.set_connection"/>. Normally you
+want to export all of your objects before doing so to avoid &lt;ulink
+url="http://dbus.freedesktop.org/doc/dbus-specification.html#standard-interfaces-objectmanager"&gt;InterfacesAdded&lt;/ulink&gt;
+signals being emitted.</p>
+  <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>object_path</code></title>
+  <p>The object path to export the manager object at.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

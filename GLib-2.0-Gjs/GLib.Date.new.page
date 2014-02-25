@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="GLib.Date.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.Date" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.Date</api:type>
+      </api:returns>
+      <api:name>g_date_new</api:name>
+    </api:function>
+  </info>
+  <title>GLib.Date.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(): <link xref="GLib.Date">GLib.Date</link> {
+    // Gjs wrapper for g_date_new()
+}
+  </code></synopsis>
+  <p>Allocates a <link xref="GLib.Date"/> and initializes
+it to a sane state. The new date will
+be cleared (as if you'd called <link xref="GLib.clear"/>) but invalid (it won't
+represent an existing day). Free the return value with <link xref="GLib.free"/>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>
