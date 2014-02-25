@@ -26,7 +26,7 @@ function load(filename: String): <link xref="Gio.Resource">Gio.Resource</link> {
   </code></synopsis>
   <p>Loads a binary resource bundle and creates a <link xref="Gio.Resource"/> representation of it, allowing
 you to query it for data.</p>  <p>If you want to use this resource in the global resource namespace you need
-to register it with <link xref="Gio.Resource._register"/>.</p>
+to register it with <link xref="Gio.resources_register"/>.</p>
   <p>Since 2.32</p>
 <terms>
 <item>

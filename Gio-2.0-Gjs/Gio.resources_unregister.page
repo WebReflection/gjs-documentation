@@ -1,26 +1,36 @@
 <?xml version="1.0"?>
-<page id="Gio.Resource._unregister"
+<page id="Gio.resources_unregister"
       type="topic"
-      style="method"
+      style="function"
       xmlns="http://projectmallard.org/1.0/"
       xmlns:api="http://projectmallard.org/experimental/api/"
       xmlns:ui="http://projectmallard.org/1.0/ui/">
   <info>
-    <link xref="Gio.Resource" group="method" type="guide"/>
+    <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
         <api:type>void</api:type>
       </api:returns>
       <api:name>g_resources_unregister</api:name>
+      <api:arg>
+        <api:type>Gio.Resource</api:type>
+        <api:name>resource</api:name>
+      </api:arg>
     </api:function>
   </info>
-  <title>Gio.Resource.prototype._unregister</title>
+  <title>Gio.resources_unregister</title>
   <synopsis><code mime="text/x-gjs">
-function _unregister(): void {
+function resources_unregister(resource: <link xref="Gio.Resource">Gio.Resource</link>): void {
     // Gjs wrapper for g_resources_unregister()
 }
   </code></synopsis>
   <p>Unregisters the resource from the process-global set of resources.</p>
   <p>Since 2.32</p>
+<terms>
+<item>
+<title><code>resource</code></title>
+  <p>A <link xref="Gio.Resource"/></p>
+</item>
+</terms>
 
 </page>
