@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<page id="GLib.BookmarkFile.set_visited"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.BookmarkFile" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_bookmark_file_set_visited</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>uri</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(glong)</api:type>
+        <api:name>visited</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.BookmarkFile.prototype.set_visited</title>
+  <synopsis><code mime="text/x-gjs">
+function set_visited(uri: String, visited: Number(glong)): void {
+    // Gjs wrapper for g_bookmark_file_set_visited()
+}
+  </code></synopsis>
+  <p>Sets the time the bookmark for <code>uri</code> was last visited.</p>  <p>If no bookmark for <code>uri</code> is found then it is created.</p>  <p>The "visited" time should only be set if the bookmark was launched,
+either using the command line retrieved by <link xref="GLib.BookmarkFile.get_app_info"/>
+or by the default application for the bookmark's MIME type, retrieved
+using <link xref="GLib.BookmarkFile.get_mime_type"/>.  Changing the "visited" time
+does not affect the "modified" time.</p>
+  <p>Since 2.12</p>
+<terms>
+<item>
+<title><code>uri</code></title>
+  <p>a valid URI</p>
+</item>
+<item>
+<title><code>visited</code></title>
+  <p>a timestamp or -1 to use the current time</p>
+</item>
+</terms>
+
+</page>

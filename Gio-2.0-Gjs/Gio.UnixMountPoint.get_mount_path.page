@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.UnixMountPoint.get_mount_path"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.UnixMountPoint" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_unix_mount_point_get_mount_path</api:name>
+    </api:function>
+  </info>
+  <title>Gio.UnixMountPoint.prototype.get_mount_path</title>
+  <synopsis><code mime="text/x-gjs">
+function get_mount_path(): String {
+    // Gjs wrapper for g_unix_mount_point_get_mount_path()
+}
+  </code></synopsis>
+  <p>Gets the mount path for a unix mount point.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

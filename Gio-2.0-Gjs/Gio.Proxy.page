@@ -19,7 +19,7 @@ proxy server. It is implemented by the 'gio-proxy' extension point.
 The extensions are named after their proxy protocol name. As an
 example, a SOCKS5 proxy implementation can be retrieved with the
 name 'socks5' using the function
-<link xref="Gio.get_extension_by_name"/>.</p>
+<link xref="Gio.IOExtensionPoint.get_extension_by_name"/>.</p>
   <p>Since 2.26</p>
   <synopsis>
     <title>Prerequisites</title>

@@ -32,8 +32,8 @@ function io_modules_scan_all_in_directory_with_scope(dirname: String, scope: <li
 any extension point implemented by a module is registered.</p>  <p>This may not actually load and initialize all the types in each
 module, some modules may be lazily loaded and initialized when
 an extension point it implementes is used with e.g.
-<link xref="Gio.get_extensions"/> or
-<link xref="Gio.get_extension_by_name"/>.</p>  <p>If you need to guarantee that all types are loaded in all the modules,
+<link xref="Gio.IOExtensionPoint.get_extensions"/> or
+<link xref="Gio.IOExtensionPoint.get_extension_by_name"/>.</p>  <p>If you need to guarantee that all types are loaded in all the modules,
 use <link xref="Gio.io_modules_load_all_in_directory"/>.</p>
   <p>Since 2.30</p>
 <terms>

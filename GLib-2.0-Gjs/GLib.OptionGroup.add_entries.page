@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="GLib.OptionGroup.add_entries"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.OptionGroup" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_option_group_add_entries</api:name>
+      <api:arg>
+        <api:type>GLib.OptionEntry</api:type>
+        <api:name>entries</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.OptionGroup.prototype.add_entries</title>
+  <synopsis><code mime="text/x-gjs">
+function add_entries(entries: <link xref="GLib.OptionEntry">GLib.OptionEntry</link>): void {
+    // Gjs wrapper for g_option_group_add_entries()
+}
+  </code></synopsis>
+  <p>Adds the options specified in <code>entries</code> to <code>group</code>.</p>
+  <p>Since 2.6</p>
+<terms>
+<item>
+<title><code>entries</code></title>
+  <p>a <code>null</code>-terminated array of #GOptionEntrys</p>
+</item>
+</terms>
+
+</page>

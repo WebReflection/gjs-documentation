@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="GLib.OptionContext.set_description"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.OptionContext" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_option_context_set_description</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>description</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.OptionContext.prototype.set_description</title>
+  <synopsis><code mime="text/x-gjs">
+function set_description(description: String): void {
+    // Gjs wrapper for g_option_context_set_description()
+}
+  </code></synopsis>
+  <p>Adds a string to be displayed in `--help` output after the list
+of options. This text often includes a bug reporting address.</p>  <p>Note that the summary is translated (see
+<link xref="GLib.set_translate_func"/>).</p>
+  <p>Since 2.12</p>
+<terms>
+<item>
+<title><code>description</code></title>
+  <p>a string to be shown in `--help` output
+  after the list of options, or <code>null</code></p>
+</item>
+</terms>
+
+</page>

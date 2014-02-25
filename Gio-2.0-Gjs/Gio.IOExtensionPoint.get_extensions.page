@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gio.IOExtensionPoint.get_extensions"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.IOExtensionPoint" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(Gio.IOExtension)</api:type>
+      </api:returns>
+      <api:name>g_io_extension_point_get_extensions</api:name>
+    </api:function>
+  </info>
+  <title>Gio.IOExtensionPoint.prototype.get_extensions</title>
+  <synopsis><code mime="text/x-gjs">
+function get_extensions(): Array(<link xref="Gio.IOExtension">Gio.IOExtension</link>) {
+    // Gjs wrapper for g_io_extension_point_get_extensions()
+}
+  </code></synopsis>
+  <p>Gets a list of all extensions that implement this extension point.
+The list is sorted by priority, beginning with the highest priority.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

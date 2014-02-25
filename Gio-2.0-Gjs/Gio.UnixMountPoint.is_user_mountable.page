@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.UnixMountPoint.is_user_mountable"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.UnixMountPoint" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_unix_mount_point_is_user_mountable</api:name>
+    </api:function>
+  </info>
+  <title>Gio.UnixMountPoint.prototype.is_user_mountable</title>
+  <synopsis><code mime="text/x-gjs">
+function is_user_mountable(): Boolean {
+    // Gjs wrapper for g_unix_mount_point_is_user_mountable()
+}
+  </code></synopsis>
+  <p>Checks if a unix mount point is mountable by the user.</p>
+
+<terms>
+<item>
+<title><code>ok</code></title>
+
+</item>
+</terms>
+
+</page>

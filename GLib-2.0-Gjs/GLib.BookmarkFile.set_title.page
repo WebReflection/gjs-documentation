@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="GLib.BookmarkFile.set_title"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.BookmarkFile" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_bookmark_file_set_title</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>uri</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>title</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.BookmarkFile.prototype.set_title</title>
+  <synopsis><code mime="text/x-gjs">
+function set_title(uri: String, title: String): void {
+    // Gjs wrapper for g_bookmark_file_set_title()
+}
+  </code></synopsis>
+  <p>Sets <code>title</code> as the title of the bookmark for <code>uri</code> inside the
+bookmark file <code>bookmark</code>.</p>  <p>If <code>uri</code> is <code>null</code>, the title of <code>bookmark</code> is set.</p>  <p>If a bookmark for <code>uri</code> cannot be found then it is created.</p>
+  <p>Since 2.12</p>
+<terms>
+<item>
+<title><code>uri</code></title>
+  <p>a valid URI or <code>null</code></p>
+</item>
+<item>
+<title><code>title</code></title>
+  <p>a UTF-8 encoded string</p>
+</item>
+</terms>
+
+</page>

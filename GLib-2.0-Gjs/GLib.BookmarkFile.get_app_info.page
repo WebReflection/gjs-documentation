@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<page id="GLib.BookmarkFile.get_app_info"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.BookmarkFile" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_bookmark_file_get_app_info</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>uri</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.BookmarkFile.prototype.get_app_info</title>
+  <synopsis><code mime="text/x-gjs">
+function get_app_info(uri: String, name: String): [ok: Boolean, exec: String, count: Number(guint), stamp: Number(glong)] {
+    // Gjs wrapper for g_bookmark_file_get_app_info()
+}
+  </code></synopsis>
+  <p>Gets the registration informations of @app_name for the bookmark for
+<code>uri</code>.  See <link xref="GLib.set_app_info"/> for more informations about
+the returned data.</p>  <p>The string returned in @app_exec must be freed.</p>  <p>In the event the URI cannot be found, <code>false</code> is returned and
+@error is set to #G_BOOKMARK_FILE_ERROR_URI_NOT_FOUND.  In the
+event that no application with name @app_name has registered a bookmark
+for <code>uri</code>,  <code>false</code> is returned and error is set to
+#G_BOOKMARK_FILE_ERROR_APP_NOT_REGISTERED. In the event that unquoting
+the command line fails, an error of the #G_SHELL_ERROR domain is
+set and <code>false</code> is returned.</p>
+  <p>Since 2.12</p>
+<terms>
+<item>
+<title><code>uri</code></title>
+  <p>a valid URI</p>
+</item>
+<item>
+<title><code>name</code></title>
+  <p>an application's name</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+<item>
+<title><code>exec</code></title>
+  <p>return location for the command line of the application, or <code>null</code></p>
+</item>
+<item>
+<title><code>count</code></title>
+  <p>return location for the registration count, or <code>null</code></p>
+</item>
+<item>
+<title><code>stamp</code></title>
+  <p>return location for the last registration time, or <code>null</code></p>
+</item>
+</terms>
+
+</page>

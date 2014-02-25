@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<page id="GLib.OptionContext.get_help"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.OptionContext" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_option_context_get_help</api:name>
+      <api:arg>
+        <api:type>Boolean</api:type>
+        <api:name>main_help</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.OptionGroup</api:type>
+        <api:name>group</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.OptionContext.prototype.get_help</title>
+  <synopsis><code mime="text/x-gjs">
+function get_help(main_help: Boolean, group: <link xref="GLib.OptionGroup">GLib.OptionGroup</link>): String {
+    // Gjs wrapper for g_option_context_get_help()
+}
+  </code></synopsis>
+  <p>Returns a formatted, translated help text for the given context.
+To obtain the text produced by `--help`, call
+`g_option_context_get_help (context, TRUE, NULL)`.
+To obtain the text produced by `--help-all`, call
+`g_option_context_get_help (context, FALSE, NULL)`.
+To obtain the help text for an option group, call
+`g_option_context_get_help (context, FALSE, group)`.</p>
+  <p>Since 2.14</p>
+<terms>
+<item>
+<title><code>main_help</code></title>
+  <p>if <code>true</code>, only include the main group</p>
+</item>
+<item>
+<title><code>group</code></title>
+  <p>the <link xref="GLib.OptionGroup"/> to create help for, or <code>null</code></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

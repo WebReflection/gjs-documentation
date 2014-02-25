@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<page id="GLib.OptionContext.parse_strv"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.OptionContext" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>g_option_context_parse_strv</api:name>
+      <api:arg>
+        <api:type>Array(String)</api:type>
+        <api:name>arguments</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.OptionContext.prototype.parse_strv</title>
+  <synopsis><code mime="text/x-gjs">
+function parse_strv(arguments: Array(String)): [ok: Boolean, arguments: Array(String)] {
+    // Gjs wrapper for g_option_context_parse_strv()
+}
+  </code></synopsis>
+  <p>Parses the command line arguments.</p>  <p>This function is similar to <link xref="GLib.OptionContext.parse"/> except that it
+respects the normal memory rules when dealing with a strv instead of
+assuming that the passed-in array is the argv of the main function.</p>  <p>In particular, strings that are removed from the arguments list will
+be freed using <link xref="GLib.free"/>.</p>  <p>On Windows, the strings are expected to be in UTF-8.  This is in
+contrast to <link xref="GLib.OptionContext.parse"/> which expects them to be in the
+system codepage, which is how they are passed as @argv to main().
+See g_win32_get_command_line() for a solution.</p>  <p>This function is useful if you are trying to use <link xref="GLib.OptionContext"/> with
+#GApplication.</p>
+  <p>Since 2.40</p>
+<terms>
+<item>
+<title><code>arguments</code></title>
+  <p>a pointer to the
+   command line arguments (which must be in UTF-8 on Windows)</p>
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+<item>
+<title><code>arguments (out)</code></title>
+  <p>a pointer to the
+   command line arguments (which must be in UTF-8 on Windows)</p>
+</item>
+</terms>
+
+</page>

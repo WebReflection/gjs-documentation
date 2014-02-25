@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="GLib.OptionContext.set_summary"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.OptionContext" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_option_context_set_summary</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>summary</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.OptionContext.prototype.set_summary</title>
+  <synopsis><code mime="text/x-gjs">
+function set_summary(summary: String): void {
+    // Gjs wrapper for g_option_context_set_summary()
+}
+  </code></synopsis>
+  <p>Adds a string to be displayed in `--help` output before the list
+of options. This is typically a summary of the program functionality.</p>  <p>Note that the summary is translated (see
+<link xref="GLib.set_translate_func"/> and
+<link xref="GLib.set_translation_domain"/>).</p>
+  <p>Since 2.12</p>
+<terms>
+<item>
+<title><code>summary</code></title>
+  <p>a string to be shown in `--help` output
+ before the list of options, or <code>null</code></p>
+</item>
+</terms>
+
+</page>

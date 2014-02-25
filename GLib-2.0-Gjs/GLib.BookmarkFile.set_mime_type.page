@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="GLib.BookmarkFile.set_mime_type"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.BookmarkFile" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_bookmark_file_set_mime_type</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>uri</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>mime_type</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.BookmarkFile.prototype.set_mime_type</title>
+  <synopsis><code mime="text/x-gjs">
+function set_mime_type(uri: String, mime_type: String): void {
+    // Gjs wrapper for g_bookmark_file_set_mime_type()
+}
+  </code></synopsis>
+  <p>Sets <code>mime_type</code> as the MIME type of the bookmark for <code>uri</code>.</p>  <p>If a bookmark for <code>uri</code> cannot be found then it is created.</p>
+  <p>Since 2.12</p>
+<terms>
+<item>
+<title><code>uri</code></title>
+  <p>a valid URI</p>
+</item>
+<item>
+<title><code>mime_type</code></title>
+  <p>a MIME type</p>
+</item>
+</terms>
+
+</page>

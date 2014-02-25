@@ -16,7 +16,7 @@
 <title><code>OptionError.UNKNOWN_OPTION</code></title>
   <p>An option was not known to the parser.
  This error will only be reported, if the parser hasn't been instructed
- to ignore unknown options, see <link xref="GLib.set_ignore_unknown_options"/>.</p>
+ to ignore unknown options, see <link xref="GLib.OptionContext.set_ignore_unknown_options"/>.</p>
 </item>
 <item>
 <title><code>OptionError.BAD_VALUE</code></title>

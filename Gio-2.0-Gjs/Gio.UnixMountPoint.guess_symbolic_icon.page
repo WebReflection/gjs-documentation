@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gio.UnixMountPoint.guess_symbolic_icon"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.UnixMountPoint" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.Icon</api:type>
+      </api:returns>
+      <api:name>g_unix_mount_point_guess_symbolic_icon</api:name>
+    </api:function>
+  </info>
+  <title>Gio.UnixMountPoint.prototype.guess_symbolic_icon</title>
+  <synopsis><code mime="text/x-gjs">
+function guess_symbolic_icon(): <link xref="Gio.Icon">Gio.Icon</link> {
+    // Gjs wrapper for g_unix_mount_point_guess_symbolic_icon()
+}
+  </code></synopsis>
+  <p>Guesses the symbolic icon of a Unix mount point.</p>
+  <p>Since 2.34</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

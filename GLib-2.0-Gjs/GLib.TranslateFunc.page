@@ -24,7 +24,7 @@ strings, for &lt;option&gt;--help&lt;/option&gt; output.</p>
 <item>
 <title><code>data</code></title>
   <p>user data specified when installing the function, e.g.
- in <link xref="GLib.set_translate_func"/></p>
+ in <link xref="GLib.OptionGroup.set_translate_func"/></p>
 </item>
 <item>
 <title><code>Returns</code></title>

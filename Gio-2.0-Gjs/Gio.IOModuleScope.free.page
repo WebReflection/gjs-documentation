@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<page id="Gio.IOModuleScope.free"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.IOModuleScope" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_io_module_scope_free</api:name>
+    </api:function>
+  </info>
+  <title>Gio.IOModuleScope.prototype.free</title>
+  <synopsis><code mime="text/x-gjs">
+function free(): void {
+    // Gjs wrapper for g_io_module_scope_free()
+}
+  </code></synopsis>
+  <p>Free a module scope.</p>
+  <p>Since 2.30</p>
+
+</page>
