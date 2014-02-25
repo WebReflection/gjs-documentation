@@ -42,7 +42,6 @@ NAMESPACES = \
 	EDataServer-1.2		\
 	EBook-1.2		\
 	EBookContacts-1.2	\
-	ECal-1.2		\
 	Gcr-3			\
 	Gck-1			\
 	Secret-1		\
