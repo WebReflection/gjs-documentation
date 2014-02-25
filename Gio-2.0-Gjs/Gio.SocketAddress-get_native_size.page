@@ -10,7 +10,7 @@
   </info>
   <title>Gio.SocketAddress::get_native_size</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_native_size(): gssize {
+function vfunc_get_native_size(): Number(gssize) {
 }
   </code></synopsis>
   <p>Gets the size of <code>address</code>'s native struct sockaddr.

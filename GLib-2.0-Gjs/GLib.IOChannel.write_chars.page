@@ -13,18 +13,18 @@
       </api:returns>
       <api:name>g_io_channel_write_chars</api:name>
       <api:arg>
-        <api:type>Array(guint8)</api:type>
+        <api:type>Array(Number(guint8))</api:type>
         <api:name>buf</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gssize</api:type>
+        <api:type>Number(gssize)</api:type>
         <api:name>count</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.IOChannel.prototype.write_chars</title>
   <synopsis><code mime="text/x-gjs">
-function write_chars(buf: Array(guint8), count: gssize): [return_value: GLib.IOStatus, bytes_written: gsize] {
+function write_chars(buf: Array(Number(guint8)), count: Number(gssize)): [return_value: <link xref="GLib.IOStatus">GLib.IOStatus</link>, bytes_written: Number(gsize)] {
     // Gjs wrapper for g_io_channel_write_chars()
 }
   </code></synopsis>

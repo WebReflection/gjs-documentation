@@ -26,7 +26,7 @@ and <link xref="Gio.DBusObjectManagerServer"/> for the service-side implementati
   </synopsis>
   <synopsis>
     <title>Known Implementations</title>
-    <p>%s is implemented by DBusObjectManagerClient and DBusObjectManagerServer</p>
+    <p>DBusObjectManager is implemented by DBusObjectManagerClient and DBusObjectManagerServer</p>
   </synopsis>
   <links type="topic" ui:expanded="true"
          api:type="function" api:mime="text/x-gjs"

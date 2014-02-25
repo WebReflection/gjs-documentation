@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_utf8_validate</api:name>
       <api:arg>
-        <api:type>Array(guint8)</api:type>
+        <api:type>Array(Number(guint8))</api:type>
         <api:name>str</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.utf8_validate</title>
   <synopsis><code mime="text/x-gjs">
-function utf8_validate(str: Array(guint8)): [ok: Boolean, end: String] {
+function utf8_validate(str: Array(Number(guint8))): [ok: Boolean, end: String] {
     // Gjs wrapper for g_utf8_validate()
 }
   </code></synopsis>

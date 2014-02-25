@@ -11,7 +11,7 @@
   </info>
   <title>GLib.TimeVal.tv_sec</title>
   <synopsis><code mime="text/x-gjs">
-TimeVal.tv_sec: Number (Read / Write)
+TimeVal.tv_sec: Number(glong) (Read / Write)
   </code></synopsis>
   <p>seconds</p>
 

@@ -9,14 +9,14 @@
     <link xref="GLib.VariantType" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>gsize</api:type>
+        <api:type>Number(gsize)</api:type>
       </api:returns>
       <api:name>g_variant_type_get_string_length</api:name>
     </api:function>
   </info>
   <title>GLib.VariantType.prototype.get_string_length</title>
   <synopsis><code mime="text/x-gjs">
-function get_string_length(): gsize {
+function get_string_length(): Number(gsize) {
     // Gjs wrapper for g_variant_type_get_string_length()
 }
   </code></synopsis>

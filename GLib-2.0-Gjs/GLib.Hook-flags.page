@@ -11,7 +11,7 @@
   </info>
   <title>GLib.Hook.flags</title>
   <synopsis><code mime="text/x-gjs">
-Hook.flags: Number (Read / Write)
+Hook.flags: Number(guint) (Read / Write)
   </code></synopsis>
   <p>flags which are set for this hook. See <link xref="GLib.HookFlagMask"/> for
     predefined flags</p>

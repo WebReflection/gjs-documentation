@@ -17,7 +17,7 @@
         <api:name>display_name</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>io_priority</api:name>
       </api:arg>
       <api:arg>
@@ -32,7 +32,7 @@
   </info>
   <title>Gio.File.prototype.set_display_name_async</title>
   <synopsis><code mime="text/x-gjs">
-function set_display_name_async(display_name: String, io_priority: Number, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+function set_display_name_async(display_name: String, io_priority: Number(gint), cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
     // Gjs wrapper for g_file_set_display_name_async()
 }
   </code></synopsis>

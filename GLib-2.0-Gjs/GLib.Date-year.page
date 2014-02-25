@@ -11,7 +11,7 @@
   </info>
   <title>GLib.Date.year</title>
   <synopsis><code mime="text/x-gjs">
-Date.year: Number (Read / Write)
+Date.year: Number(guint) (Read / Write)
   </code></synopsis>
   <p>the day of the day-month-year representation of the date</p>
 

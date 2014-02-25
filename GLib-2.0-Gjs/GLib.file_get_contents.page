@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_file_get_contents</api:name>
       <api:arg>
-        <api:type>filename</api:type>
+        <api:type>String</api:type>
         <api:name>filename</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.file_get_contents</title>
   <synopsis><code mime="text/x-gjs">
-function file_get_contents(filename: filename): [ok: Boolean, contents: Array(guint8)] {
+function file_get_contents(filename: String): [ok: Boolean, contents: Array(Number(guint8))] {
     // Gjs wrapper for g_file_get_contents()
 }
   </code></synopsis>

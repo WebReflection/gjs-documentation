@@ -10,7 +10,7 @@
   </info>
   <title>GLib.HRFunc</title>
   <synopsis><code mime="text/x-gjs">
-function onHRFunc(key: gpointer, value: gpointer): Boolean {
+function onHRFunc(key: void, value: void): Boolean {
 }
   </code></synopsis>
   <p>Specifies the type of the function passed to

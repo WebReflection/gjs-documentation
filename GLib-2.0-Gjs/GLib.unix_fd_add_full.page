@@ -9,15 +9,15 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
       </api:returns>
       <api:name>g_unix_fd_add_full</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>priority</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>fd</api:name>
       </api:arg>
       <api:arg>
@@ -32,7 +32,7 @@
   </info>
   <title>GLib.unix_fd_add_full</title>
   <synopsis><code mime="text/x-gjs">
-function unix_fd_add_full(priority: Number, fd: Number, condition: GLib.IOCondition, function: GLib.UnixFDSourceFunc): Number {
+function unix_fd_add_full(priority: Number(gint), fd: Number(gint), condition: <link xref="GLib.IOCondition">GLib.IOCondition</link>, function: <link xref="GLib.UnixFDSourceFunc">GLib.UnixFDSourceFunc</link>): Number(guint) {
     // Gjs wrapper for g_unix_fd_add_full()
 }
   </code></synopsis>

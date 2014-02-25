@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Proxy::connect</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_connect(connection: Gio.IOStream, proxy_address: Gio.ProxyAddress, cancellable: Gio.Cancellable): Gio.IOStream {
+function vfunc_connect(connection: <link xref="Gio.IOStream">Gio.IOStream</link>, proxy_address: <link xref="Gio.ProxyAddress">Gio.ProxyAddress</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): <link xref="Gio.IOStream">Gio.IOStream</link> {
 }
   </code></synopsis>
   <p>Given <code>connection</code> to communicate with a proxy (eg, a

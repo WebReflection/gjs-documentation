@@ -10,7 +10,7 @@
   </info>
   <title>Gio.TlsConnection::handshake_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_handshake_finish(result: Gio.AsyncResult): Boolean {
+function vfunc_handshake_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): Boolean {
 }
   </code></synopsis>
   <p>Finish an asynchronous TLS handshake operation. See

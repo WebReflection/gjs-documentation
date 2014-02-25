@@ -11,7 +11,7 @@
   </info>
   <title>GLib.Scanner.next_line</title>
   <synopsis><code mime="text/x-gjs">
-Scanner.next_line: Number (Read / Write)
+Scanner.next_line: Number(guint) (Read / Write)
   </code></synopsis>
   <p>line number of the last token from <link xref="GLib.peek_next_token"/></p>
 

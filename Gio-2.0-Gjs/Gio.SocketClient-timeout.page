@@ -11,7 +11,7 @@
   </info>
   <title>Gio.SocketClient.timeout</title>
   <synopsis><code mime="text/x-gjs">
-SocketClient.timeout: Number (Read / Write / Construct)
+SocketClient.timeout: Number(guint) (Read / Write / Construct)
   </code></synopsis>
 
 

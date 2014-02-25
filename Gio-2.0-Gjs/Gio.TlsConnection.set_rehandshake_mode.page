@@ -20,7 +20,7 @@
   </info>
   <title>Gio.TlsConnection.prototype.set_rehandshake_mode</title>
   <synopsis><code mime="text/x-gjs">
-function set_rehandshake_mode(mode: Gio.TlsRehandshakeMode): void {
+function set_rehandshake_mode(mode: <link xref="Gio.TlsRehandshakeMode">Gio.TlsRehandshakeMode</link>): void {
     // Gjs wrapper for g_tls_connection_set_rehandshake_mode()
 }
   </code></synopsis>

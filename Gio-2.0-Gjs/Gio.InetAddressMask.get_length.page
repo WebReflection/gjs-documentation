@@ -9,14 +9,14 @@
     <link xref="Gio.InetAddressMask" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
       </api:returns>
       <api:name>g_inet_address_mask_get_length</api:name>
     </api:function>
   </info>
   <title>Gio.InetAddressMask.prototype.get_length</title>
   <synopsis><code mime="text/x-gjs">
-function get_length(): Number {
+function get_length(): Number(guint) {
     // Gjs wrapper for g_inet_address_mask_get_length()
 }
   </code></synopsis>

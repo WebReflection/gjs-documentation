@@ -10,7 +10,7 @@
   </info>
   <title>GLib.HashFunc</title>
   <synopsis><code mime="text/x-gjs">
-function onHashFunc(key: gpointer): Number {
+function onHashFunc(key: void): Number(guint) {
 }
   </code></synopsis>
   <p>Specifies the type of the hash function which is passed to

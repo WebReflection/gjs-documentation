@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Resolver::lookup_records</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_lookup_records(rrname: String, record_type: Gio.ResolverRecordType, cancellable: Gio.Cancellable): Array(GLib.Variant) {
+function vfunc_lookup_records(rrname: String, record_type: <link xref="Gio.ResolverRecordType">Gio.ResolverRecordType</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Array(<link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>) {
 }
   </code></synopsis>
   <p>Synchronously performs a DNS record lookup for the given <code>rrname</code> and returns

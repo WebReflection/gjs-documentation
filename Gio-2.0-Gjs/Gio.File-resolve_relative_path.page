@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::resolve_relative_path</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_resolve_relative_path(relative_path: String): Gio.File {
+function vfunc_resolve_relative_path(relative_path: String): <link xref="Gio.File">Gio.File</link> {
 }
   </code></synopsis>
   <p>Resolves a relative path for <code>file</code> to an absolute path.</p>  <p>This call does no blocking I/O.</p>

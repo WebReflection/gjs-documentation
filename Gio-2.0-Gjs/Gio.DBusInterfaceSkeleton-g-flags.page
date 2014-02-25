@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusInterfaceSkeleton.g_flags</title>
   <synopsis><code mime="text/x-gjs">
-DBusInterfaceSkeleton.g_flags: Gio.DBusInterfaceSkeletonFlags (Read / Write)
+DBusInterfaceSkeleton.g_flags: <link xref="Gio.DBusInterfaceSkeletonFlags">Gio.DBusInterfaceSkeletonFlags</link> (Read / Write)
   </code></synopsis>
   <p>Flags from the <link xref="Gio.DBusInterfaceSkeletonFlags"/> enumeration.</p>
   <p>Since 2.30</p>

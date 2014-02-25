@@ -16,7 +16,7 @@
   </info>
   <title>GLib.KeyFile.prototype.to_data</title>
   <synopsis><code mime="text/x-gjs">
-function to_data(): [return_value: String, length: gsize] {
+function to_data(): [return_value: String, length: Number(gsize)] {
     // Gjs wrapper for g_key_file_to_data()
 }
   </code></synopsis>

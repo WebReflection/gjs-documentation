@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_type_ensure</api:name>
       <api:arg>
-        <api:type>GType</api:type>
+        <api:type>GObject.Type</api:type>
         <api:name>type</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GObject.type_ensure</title>
   <synopsis><code mime="text/x-gjs">
-function type_ensure(type: GType): void {
+function type_ensure(type: GObject.Type): void {
     // Gjs wrapper for g_type_ensure()
 }
   </code></synopsis>

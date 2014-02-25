@@ -9,18 +9,18 @@
     <link xref="GLib.Queue" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
       </api:returns>
       <api:name>g_queue_remove_all</api:name>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>data</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.Queue.prototype.remove_all</title>
   <synopsis><code mime="text/x-gjs">
-function remove_all(data: gpointer): Number {
+function remove_all(data: void): Number(guint) {
     // Gjs wrapper for g_queue_remove_all()
 }
   </code></synopsis>

@@ -11,7 +11,7 @@
   </info>
   <title>Gio.ApplicationCommandLine.options</title>
   <synopsis><code mime="text/x-gjs">
-ApplicationCommandLine.options: GLib.Variant (Write / Construct Only)
+ApplicationCommandLine.options: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link> (Write / Construct Only)
   </code></synopsis>
 
 

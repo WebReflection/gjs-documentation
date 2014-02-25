@@ -10,7 +10,7 @@
   </info>
   <title>Gio.ActionGroup::get_action_state_type</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_action_state_type(action_name: String): GLib.VariantType {
+function vfunc_get_action_state_type(action_name: String): <link href="../GLib-2.0/GLib.VariantType.page">GLib.VariantType</link> {
 }
   </code></synopsis>
   <p>Queries the type of the state of the named action within

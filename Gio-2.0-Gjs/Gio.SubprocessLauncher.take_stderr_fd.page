@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_subprocess_launcher_take_stderr_fd</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>fd</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>Gio.SubprocessLauncher.prototype.take_stderr_fd</title>
   <synopsis><code mime="text/x-gjs">
-function take_stderr_fd(fd: Number): void {
+function take_stderr_fd(fd: Number(gint)): void {
     // Gjs wrapper for g_subprocess_launcher_take_stderr_fd()
 }
   </code></synopsis>

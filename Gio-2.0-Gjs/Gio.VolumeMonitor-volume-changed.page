@@ -11,7 +11,7 @@
   </info>
   <title>Gio.VolumeMonitor::volume-changed</title>
   <synopsis><code mime="text/x-gjs">
-connect('volume-changed', function (volumeMonitor, volume: Gio.Volume, ): void);
+connect('volume-changed', function (volumeMonitor, volume: <link xref="Gio.Volume">Gio.Volume</link>, ): void);
   </code></synopsis>
   <p>Emitted when mountable volume is changed.</p>
 

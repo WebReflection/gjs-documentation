@@ -16,7 +16,7 @@
   </info>
   <title>GLib.MainLoop.prototype.ref</title>
   <synopsis><code mime="text/x-gjs">
-function ref(): GLib.MainLoop {
+function ref(): <link xref="GLib.MainLoop">GLib.MainLoop</link> {
     // Gjs wrapper for g_main_loop_ref()
 }
   </code></synopsis>

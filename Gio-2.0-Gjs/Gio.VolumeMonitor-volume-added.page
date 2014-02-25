@@ -11,7 +11,7 @@
   </info>
   <title>Gio.VolumeMonitor::volume-added</title>
   <synopsis><code mime="text/x-gjs">
-connect('volume-added', function (volumeMonitor, volume: Gio.Volume, ): void);
+connect('volume-added', function (volumeMonitor, volume: <link xref="Gio.Volume">Gio.Volume</link>, ): void);
   </code></synopsis>
   <p>Emitted when a mountable volume is added to the system.</p>
 

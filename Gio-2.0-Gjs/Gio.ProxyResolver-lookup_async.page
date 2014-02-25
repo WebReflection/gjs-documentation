@@ -10,7 +10,7 @@
   </info>
   <title>Gio.ProxyResolver::lookup_async</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_lookup_async(uri: String, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+function vfunc_lookup_async(uri: String, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
 }
   </code></synopsis>
   <p>Asynchronous lookup of proxy. See <link xref="Gio.ProxyResolver.lookup"/> for more

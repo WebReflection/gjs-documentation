@@ -10,7 +10,7 @@
   </info>
   <title>Gio.SimpleAsyncThreadFunc</title>
   <synopsis><code mime="text/x-gjs">
-function onSimpleAsyncThreadFunc(res: Gio.SimpleAsyncResult, object: GObject.Object, cancellable: Gio.Cancellable): void {
+function onSimpleAsyncThreadFunc(res: <link xref="Gio.SimpleAsyncResult">Gio.SimpleAsyncResult</link>, object: <link href="../GObject-2.0/GObject.Object.page">GObject.Object</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): void {
 }
   </code></synopsis>
   <p>Simple thread function that runs an asynchronous operation and

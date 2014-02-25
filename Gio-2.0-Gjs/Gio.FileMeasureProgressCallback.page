@@ -10,7 +10,7 @@
   </info>
   <title>Gio.FileMeasureProgressCallback</title>
   <synopsis><code mime="text/x-gjs">
-function onFileMeasureProgressCallback(reporting: Boolean, current_size: Number, num_dirs: Number, num_files: Number): void {
+function onFileMeasureProgressCallback(reporting: Boolean, current_size: Number(guint64), num_dirs: Number(guint64), num_files: Number(guint64)): void {
 }
   </code></synopsis>
   <p>This callback type is used by <link xref="Gio.measure_disk_usage"/> to make

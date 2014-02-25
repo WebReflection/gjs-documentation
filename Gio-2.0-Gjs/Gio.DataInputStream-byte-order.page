@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DataInputStream.byte_order</title>
   <synopsis><code mime="text/x-gjs">
-DataInputStream.byte_order: Gio.DataStreamByteOrder (Read / Write)
+DataInputStream.byte_order: <link xref="Gio.DataStreamByteOrder">Gio.DataStreamByteOrder</link> (Read / Write)
   </code></synopsis>
 
 

@@ -16,7 +16,7 @@
   </info>
   <title>Gio.Resolver.get_default</title>
   <synopsis><code mime="text/x-gjs">
-function get_default(): Gio.Resolver {
+function get_default(): <link xref="Gio.Resolver">Gio.Resolver</link> {
     // Gjs wrapper for g_resolver_get_default()
 }
   </code></synopsis>

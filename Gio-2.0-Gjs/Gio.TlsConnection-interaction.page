@@ -11,7 +11,7 @@
   </info>
   <title>Gio.TlsConnection.interaction</title>
   <synopsis><code mime="text/x-gjs">
-TlsConnection.interaction: Gio.TlsInteraction (Read / Write)
+TlsConnection.interaction: <link xref="Gio.TlsInteraction">Gio.TlsInteraction</link> (Read / Write)
   </code></synopsis>
   <p>A <link xref="Gio.TlsInteraction"/> object to be used when the connection or certificate
 database need to interact with the user. This will be used to prompt the

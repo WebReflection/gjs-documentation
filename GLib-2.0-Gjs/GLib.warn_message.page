@@ -21,7 +21,7 @@
         <api:name>file</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>line</api:name>
       </api:arg>
       <api:arg>
@@ -36,7 +36,7 @@
   </info>
   <title>GLib.warn_message</title>
   <synopsis><code mime="text/x-gjs">
-function warn_message(domain: String, file: String, line: Number, func: String, warnexpr: String): void {
+function warn_message(domain: String, file: String, line: Number(gint), func: String, warnexpr: String): void {
     // Gjs wrapper for g_warn_message()
 }
   </code></synopsis>

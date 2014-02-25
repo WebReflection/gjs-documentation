@@ -24,7 +24,7 @@
   </info>
   <title>Gio.Application.prototype.send_notification</title>
   <synopsis><code mime="text/x-gjs">
-function send_notification(id: String, notification: Gio.Notification): void {
+function send_notification(id: String, notification: <link xref="Gio.Notification">Gio.Notification</link>): void {
     // Gjs wrapper for g_application_send_notification()
 }
   </code></synopsis>

@@ -10,7 +10,7 @@
   </info>
   <title>GLib.TestLogFatalFunc</title>
   <synopsis><code mime="text/x-gjs">
-function onTestLogFatalFunc(log_domain: String, log_level: GLib.LogLevelFlags, message: String): Boolean {
+function onTestLogFatalFunc(log_domain: String, log_level: <link xref="GLib.LogLevelFlags">GLib.LogLevelFlags</link>, message: String): Boolean {
 }
   </code></synopsis>
   <p>Specifies the prototype of fatal log handler functions.</p>

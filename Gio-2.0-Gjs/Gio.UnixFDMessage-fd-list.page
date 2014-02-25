@@ -11,7 +11,7 @@
   </info>
   <title>Gio.UnixFDMessage.fd_list</title>
   <synopsis><code mime="text/x-gjs">
-UnixFDMessage.fd_list: Gio.UnixFDList (Read / Write / Construct Only)
+UnixFDMessage.fd_list: <link xref="Gio.UnixFDList">Gio.UnixFDList</link> (Read / Write / Construct Only)
   </code></synopsis>
 
 

@@ -28,7 +28,7 @@
   </info>
   <title>GLib.KeyFile.prototype.get_locale_string_list</title>
   <synopsis><code mime="text/x-gjs">
-function get_locale_string_list(group_name: String, key: String, locale: String): [return_value: Array(String), length: gsize] {
+function get_locale_string_list(group_name: String, key: String, locale: String): [return_value: Array(String), length: Number(gsize)] {
     // Gjs wrapper for g_key_file_get_locale_string_list()
 }
   </code></synopsis>

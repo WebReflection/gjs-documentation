@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusInterfaceVTable.method_call</title>
   <synopsis><code mime="text/x-gjs">
-DBusInterfaceVTable.method_call: Gio.DBusInterfaceMethodCallFunc (Read)
+DBusInterfaceVTable.method_call: <link xref="Gio.DBusInterfaceMethodCallFunc">Gio.DBusInterfaceMethodCallFunc</link> (Read)
   </code></synopsis>
   <p>Function for handling incoming method calls.</p>
 

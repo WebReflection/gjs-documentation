@@ -9,14 +9,14 @@
     <link xref="Gio.Task" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_task_get_priority</api:name>
     </api:function>
   </info>
   <title>Gio.Task.prototype.get_priority</title>
   <synopsis><code mime="text/x-gjs">
-function get_priority(): Number {
+function get_priority(): Number(gint) {
     // Gjs wrapper for g_task_get_priority()
 }
   </code></synopsis>

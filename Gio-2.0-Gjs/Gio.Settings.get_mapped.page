@@ -9,7 +9,7 @@
     <link xref="Gio.Settings" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
       </api:returns>
       <api:name>g_settings_get_mapped</api:name>
       <api:arg>
@@ -24,7 +24,7 @@
   </info>
   <title>Gio.Settings.prototype.get_mapped</title>
   <synopsis><code mime="text/x-gjs">
-function get_mapped(key: String, mapping: Gio.SettingsGetMapping): gpointer {
+function get_mapped(key: String, mapping: <link xref="Gio.SettingsGetMapping">Gio.SettingsGetMapping</link>): void {
     // Gjs wrapper for g_settings_get_mapped()
 }
   </code></synopsis>

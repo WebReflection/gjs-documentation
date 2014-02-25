@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::copy</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_copy(destination: Gio.File, flags: Gio.FileCopyFlags, cancellable: Gio.Cancellable, progress_callback: Gio.FileProgressCallback): Boolean {
+function vfunc_copy(destination: <link xref="Gio.File">Gio.File</link>, flags: <link xref="Gio.FileCopyFlags">Gio.FileCopyFlags</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, progress_callback: <link xref="Gio.FileProgressCallback">Gio.FileProgressCallback</link>): Boolean {
 }
   </code></synopsis>
   <p>Copies the file <code>source</code> to the location specified by <code>destination</code>.

@@ -24,7 +24,7 @@
   </info>
   <title>GLib.Date.prototype.clamp</title>
   <synopsis><code mime="text/x-gjs">
-function clamp(min_date: GLib.Date, max_date: GLib.Date): void {
+function clamp(min_date: <link xref="GLib.Date">GLib.Date</link>, max_date: <link xref="GLib.Date">GLib.Date</link>): void {
     // Gjs wrapper for g_date_clamp()
 }
   </code></synopsis>

@@ -13,18 +13,18 @@
       </api:returns>
       <api:name>g_date_time_equal</api:name>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>dt1</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>dt2</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.DateTime.equal</title>
   <synopsis><code mime="text/x-gjs">
-function equal(dt1: gpointer, dt2: gpointer): Boolean {
+function equal(dt1: void, dt2: void): Boolean {
     // Gjs wrapper for g_date_time_equal()
 }
   </code></synopsis>

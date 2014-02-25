@@ -9,22 +9,22 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>gint32</api:type>
+        <api:type>Number(gint32)</api:type>
       </api:returns>
       <api:name>g_random_int_range</api:name>
       <api:arg>
-        <api:type>gint32</api:type>
+        <api:type>Number(gint32)</api:type>
         <api:name>begin</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gint32</api:type>
+        <api:type>Number(gint32)</api:type>
         <api:name>end</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.random_int_range</title>
   <synopsis><code mime="text/x-gjs">
-function random_int_range(begin: gint32, end: gint32): gint32 {
+function random_int_range(begin: Number(gint32), end: Number(gint32)): Number(gint32) {
     // Gjs wrapper for g_random_int_range()
 }
   </code></synopsis>

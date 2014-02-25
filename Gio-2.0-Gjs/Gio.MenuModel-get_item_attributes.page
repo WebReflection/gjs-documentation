@@ -10,7 +10,7 @@
   </info>
   <title>Gio.MenuModel::get_item_attributes</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_item_attributes(item_index: Number): {String: GLib.Variant} {
+function vfunc_get_item_attributes(item_index: Number(gint)): {String: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>} {
 }
   </code></synopsis>
   <p>Gets all the attributes associated with the item in the menu model.</p>

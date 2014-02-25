@@ -9,18 +9,18 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
       </api:returns>
       <api:name>g_int64_hash</api:name>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>v</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.int64_hash</title>
   <synopsis><code mime="text/x-gjs">
-function int64_hash(v: gpointer): Number {
+function int64_hash(v: void): Number(guint) {
     // Gjs wrapper for g_int64_hash()
 }
   </code></synopsis>

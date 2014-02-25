@@ -16,7 +16,7 @@
   </info>
   <title>Gio.TlsConnection.prototype.get_rehandshake_mode</title>
   <synopsis><code mime="text/x-gjs">
-function get_rehandshake_mode(): Gio.TlsRehandshakeMode {
+function get_rehandshake_mode(): <link xref="Gio.TlsRehandshakeMode">Gio.TlsRehandshakeMode</link> {
     // Gjs wrapper for g_tls_connection_get_rehandshake_mode()
 }
   </code></synopsis>

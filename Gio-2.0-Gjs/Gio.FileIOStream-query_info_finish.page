@@ -10,7 +10,7 @@
   </info>
   <title>Gio.FileIOStream::query_info_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_query_info_finish(result: Gio.AsyncResult): Gio.FileInfo {
+function vfunc_query_info_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): <link xref="Gio.FileInfo">Gio.FileInfo</link> {
 }
   </code></synopsis>
   <p>Finalizes the asynchronous query started

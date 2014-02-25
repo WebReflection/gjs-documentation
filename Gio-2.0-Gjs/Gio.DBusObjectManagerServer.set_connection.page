@@ -20,7 +20,7 @@
   </info>
   <title>Gio.DBusObjectManagerServer.prototype.set_connection</title>
   <synopsis><code mime="text/x-gjs">
-function set_connection(connection: Gio.DBusConnection): void {
+function set_connection(connection: <link xref="Gio.DBusConnection">Gio.DBusConnection</link>): void {
     // Gjs wrapper for g_dbus_object_manager_server_set_connection()
 }
   </code></synopsis>

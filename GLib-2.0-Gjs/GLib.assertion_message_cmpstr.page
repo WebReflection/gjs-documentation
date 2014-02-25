@@ -21,7 +21,7 @@
         <api:name>file</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>line</api:name>
       </api:arg>
       <api:arg>
@@ -48,7 +48,7 @@
   </info>
   <title>GLib.assertion_message_cmpstr</title>
   <synopsis><code mime="text/x-gjs">
-function assertion_message_cmpstr(domain: String, file: String, line: Number, func: String, expr: String, arg1: String, cmp: String, arg2: String): void {
+function assertion_message_cmpstr(domain: String, file: String, line: Number(gint), func: String, expr: String, arg1: String, cmp: String, arg2: String): void {
     // Gjs wrapper for g_assertion_message_cmpstr()
 }
   </code></synopsis>

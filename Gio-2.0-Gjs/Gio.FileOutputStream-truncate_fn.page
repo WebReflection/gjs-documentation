@@ -10,7 +10,7 @@
   </info>
   <title>Gio.FileOutputStream::truncate_fn</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_truncate_fn(size: Number, cancellable: Gio.Cancellable): Boolean {
+function vfunc_truncate_fn(size: Number(gint64), cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Boolean {
 }
   </code></synopsis>
 

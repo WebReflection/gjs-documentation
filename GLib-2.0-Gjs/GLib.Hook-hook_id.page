@@ -11,7 +11,7 @@
   </info>
   <title>GLib.Hook.hook_id</title>
   <synopsis><code mime="text/x-gjs">
-Hook.hook_id: Number (Read / Write)
+Hook.hook_id: Number(gulong) (Read / Write)
   </code></synopsis>
   <p>the id of this hook, which is unique within its list</p>
 

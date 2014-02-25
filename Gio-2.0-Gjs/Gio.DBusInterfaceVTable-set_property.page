@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusInterfaceVTable.set_property</title>
   <synopsis><code mime="text/x-gjs">
-DBusInterfaceVTable.set_property: Gio.DBusInterfaceSetPropertyFunc (Read)
+DBusInterfaceVTable.set_property: <link xref="Gio.DBusInterfaceSetPropertyFunc">Gio.DBusInterfaceSetPropertyFunc</link> (Read)
   </code></synopsis>
   <p>Function for setting a property.</p>
 

@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_key_file_set_list_separator</api:name>
       <api:arg>
-        <api:type>String</api:type>
+        <api:type>Number(gchar)</api:type>
         <api:name>separator</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.KeyFile.prototype.set_list_separator</title>
   <synopsis><code mime="text/x-gjs">
-function set_list_separator(separator: String): void {
+function set_list_separator(separator: Number(gchar)): void {
     // Gjs wrapper for g_key_file_set_list_separator()
 }
   </code></synopsis>

@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Drive::poll_for_media</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_poll_for_media(cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+function vfunc_poll_for_media(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
 }
   </code></synopsis>
   <p>Asynchronously polls <code>drive</code> to see if media has been inserted or removed.</p>  <p>When the operation is finished, <code>callback</code> will be called.

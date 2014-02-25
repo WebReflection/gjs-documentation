@@ -11,7 +11,7 @@
   </info>
   <title>GLib.Once.retval</title>
   <synopsis><code mime="text/x-gjs">
-Once.retval: gpointer (Read)
+Once.retval: void (Read)
   </code></synopsis>
   <p>the value returned by the call to the function, if @status
          is <link xref="GLib.OnceStatus"/>.ready</p>

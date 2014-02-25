@@ -16,7 +16,7 @@
   </info>
   <title>GLib.DateTime.prototype.get_ymd</title>
   <synopsis><code mime="text/x-gjs">
-function get_ymd(): [year: Number, month: Number, day: Number] {
+function get_ymd(): [year: Number(gint), month: Number(gint), day: Number(gint)] {
     // Gjs wrapper for g_date_time_get_ymd()
 }
   </code></synopsis>

@@ -36,7 +36,7 @@
   </info>
   <title>GLib.spawn_async</title>
   <synopsis><code mime="text/x-gjs">
-function spawn_async(working_directory: String, argv: Array(String), envp: Array(String), flags: GLib.SpawnFlags, child_setup: GLib.SpawnChildSetupFunc): [ok: Boolean, child_pid: GLib.Pid] {
+function spawn_async(working_directory: String, argv: Array(String), envp: Array(String), flags: <link xref="GLib.SpawnFlags">GLib.SpawnFlags</link>, child_setup: <link xref="GLib.SpawnChildSetupFunc">GLib.SpawnChildSetupFunc</link>): [ok: Boolean, child_pid: <link xref="GLib.Pid">GLib.Pid</link>] {
     // Gjs wrapper for g_spawn_async()
 }
   </code></synopsis>

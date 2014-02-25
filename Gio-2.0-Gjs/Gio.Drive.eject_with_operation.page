@@ -32,7 +32,7 @@
   </info>
   <title>Gio.Drive.prototype.eject_with_operation</title>
   <synopsis><code mime="text/x-gjs">
-function eject_with_operation(flags: Gio.MountUnmountFlags, mount_operation: Gio.MountOperation, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+function eject_with_operation(flags: <link xref="Gio.MountUnmountFlags">Gio.MountUnmountFlags</link>, mount_operation: <link xref="Gio.MountOperation">Gio.MountOperation</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
     // Gjs wrapper for g_drive_eject_with_operation()
 }
   </code></synopsis>

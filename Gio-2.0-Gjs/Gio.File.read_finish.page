@@ -20,7 +20,7 @@
   </info>
   <title>Gio.File.prototype.read_finish</title>
   <synopsis><code mime="text/x-gjs">
-function read_finish(res: Gio.AsyncResult): Gio.FileInputStream {
+function read_finish(res: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): <link xref="Gio.FileInputStream">Gio.FileInputStream</link> {
     // Gjs wrapper for g_file_read_finish()
 }
   </code></synopsis>

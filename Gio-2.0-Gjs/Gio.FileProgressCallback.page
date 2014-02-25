@@ -10,7 +10,7 @@
   </info>
   <title>Gio.FileProgressCallback</title>
   <synopsis><code mime="text/x-gjs">
-function onFileProgressCallback(current_num_bytes: Number, total_num_bytes: Number): void {
+function onFileProgressCallback(current_num_bytes: Number(gint64), total_num_bytes: Number(gint64)): void {
 }
   </code></synopsis>
   <p>When doing file operations that may take a while, such as moving

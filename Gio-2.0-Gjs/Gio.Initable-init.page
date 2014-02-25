@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Initable::init</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_init(cancellable: Gio.Cancellable): Boolean {
+function vfunc_init(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Boolean {
 }
   </code></synopsis>
   <p>Initializes the object implementing the interface.</p>  <p>The object must be initialized before any real use after initial

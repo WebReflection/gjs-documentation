@@ -11,7 +11,7 @@
   </info>
   <title>GLib.PtrArray.len</title>
   <synopsis><code mime="text/x-gjs">
-PtrArray.len: Number (Read / Write)
+PtrArray.len: Number(guint) (Read / Write)
   </code></synopsis>
   <p>number of pointers in the array</p>
 

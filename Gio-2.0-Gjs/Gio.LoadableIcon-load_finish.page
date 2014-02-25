@@ -10,7 +10,7 @@
   </info>
   <title>Gio.LoadableIcon::load_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_load_finish(res: Gio.AsyncResult): [return_value: Gio.InputStream, type: String] {
+function vfunc_load_finish(res: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): [return_value: <link xref="Gio.InputStream">Gio.InputStream</link>, type: String] {
 }
   </code></synopsis>
   <p>Finishes an asynchronous icon load started in <link xref="Gio.LoadableIcon.load_async"/>.</p>

@@ -11,7 +11,7 @@
   </info>
   <title>GLib.HookList.seq_id</title>
   <synopsis><code mime="text/x-gjs">
-HookList.seq_id: Number (Read / Write)
+HookList.seq_id: Number(gulong) (Read / Write)
   </code></synopsis>
   <p>the next free <link xref="GLib.Hook"/> id</p>
 

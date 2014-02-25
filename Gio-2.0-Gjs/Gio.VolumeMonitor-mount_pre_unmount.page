@@ -10,7 +10,7 @@
   </info>
   <title>Gio.VolumeMonitor::mount_pre_unmount</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_mount_pre_unmount(mount: Gio.Mount): void {
+function vfunc_mount_pre_unmount(mount: <link xref="Gio.Mount">Gio.Mount</link>): void {
 }
   </code></synopsis>
 

@@ -9,14 +9,14 @@
     <link xref="Gio.Socket" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
       </api:returns>
       <api:name>g_socket_get_ttl</api:name>
     </api:function>
   </info>
   <title>Gio.Socket.prototype.get_ttl</title>
   <synopsis><code mime="text/x-gjs">
-function get_ttl(): Number {
+function get_ttl(): Number(guint) {
     // Gjs wrapper for g_socket_get_ttl()
 }
   </code></synopsis>

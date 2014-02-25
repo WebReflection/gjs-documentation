@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusProxy::g-signal</title>
   <synopsis><code mime="text/x-gjs">
-connect('g-signal', function (dBusProxy, sender_name: String, signal_name: String, parameters: GLib.Variant, ): void);
+connect('g-signal', function (dBusProxy, sender_name: String, signal_name: String, parameters: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>, ): void);
   </code></synopsis>
   <p>Emitted when a signal from the remote object and interface that @proxy is for, has been received.</p>
   <p>Since 2.26</p>

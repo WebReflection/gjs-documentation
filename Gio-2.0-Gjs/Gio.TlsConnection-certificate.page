@@ -11,7 +11,7 @@
   </info>
   <title>Gio.TlsConnection.certificate</title>
   <synopsis><code mime="text/x-gjs">
-TlsConnection.certificate: Gio.TlsCertificate (Read / Write)
+TlsConnection.certificate: <link xref="Gio.TlsCertificate">Gio.TlsCertificate</link> (Read / Write)
   </code></synopsis>
   <p>The connection's certificate; see
 <link xref="Gio.TlsConnection.set_certificate"/>.</p>

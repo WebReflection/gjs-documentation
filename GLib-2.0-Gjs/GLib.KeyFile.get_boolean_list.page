@@ -24,7 +24,7 @@
   </info>
   <title>GLib.KeyFile.prototype.get_boolean_list</title>
   <synopsis><code mime="text/x-gjs">
-function get_boolean_list(group_name: String, key: String): [return_value: Array(Boolean), length: gsize] {
+function get_boolean_list(group_name: String, key: String): [return_value: Array(Boolean), length: Number(gsize)] {
     // Gjs wrapper for g_key_file_get_boolean_list()
 }
   </code></synopsis>

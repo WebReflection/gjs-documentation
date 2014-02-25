@@ -11,7 +11,7 @@
   </info>
   <title>GLib.Node.prev</title>
   <synopsis><code mime="text/x-gjs">
-Node.prev: GLib.Node (Read)
+Node.prev: <link xref="GLib.Node">GLib.Node</link> (Read)
   </code></synopsis>
   <p>points to the node's previous sibling.</p>
 

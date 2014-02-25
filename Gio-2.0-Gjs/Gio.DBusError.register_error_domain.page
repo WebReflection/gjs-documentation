@@ -17,7 +17,7 @@
         <api:name>error_domain_quark_name</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gsize</api:type>
+        <api:type>Number(gsize)</api:type>
         <api:name>quark_volatile</api:name>
       </api:arg>
       <api:arg>
@@ -25,14 +25,14 @@
         <api:name>entries</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
         <api:name>num_entries</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>Gio.register_error_domain</title>
   <synopsis><code mime="text/x-gjs">
-function register_error_domain(error_domain_quark_name: String, quark_volatile: gsize, entries: Gio.DBusErrorEntry, num_entries: Number): void {
+function register_error_domain(error_domain_quark_name: String, quark_volatile: Number(gsize), entries: <link xref="Gio.DBusErrorEntry">Gio.DBusErrorEntry</link>, num_entries: Number(guint)): void {
     // Gjs wrapper for g_dbus_error_register_error_domain()
 }
   </code></synopsis>

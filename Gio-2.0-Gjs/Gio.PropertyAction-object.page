@@ -11,7 +11,7 @@
   </info>
   <title>Gio.PropertyAction.object</title>
   <synopsis><code mime="text/x-gjs">
-PropertyAction.object: GObject.Object (Write / Construct Only)
+PropertyAction.object: <link href="../GObject-2.0/GObject.Object.page">GObject.Object</link> (Write / Construct Only)
   </code></synopsis>
   <p>The object to wrap a property on.</p>  <p>The object must be a non-<code>null</code> <link xref="GObject.Object"/> with properties.</p>
   <p>Since 2.38</p>

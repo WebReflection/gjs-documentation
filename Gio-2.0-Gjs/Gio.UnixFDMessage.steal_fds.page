@@ -9,14 +9,14 @@
     <link xref="Gio.UnixFDMessage" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Array(Number)</api:type>
+        <api:type>Array(Number(gint))</api:type>
       </api:returns>
       <api:name>g_unix_fd_message_steal_fds</api:name>
     </api:function>
   </info>
   <title>Gio.UnixFDMessage.prototype.steal_fds</title>
   <synopsis><code mime="text/x-gjs">
-function steal_fds(): [return_value: Array(Number), length: Number] {
+function steal_fds(): [return_value: Array(Number(gint)), length: Number(gint)] {
     // Gjs wrapper for g_unix_fd_message_steal_fds()
 }
   </code></synopsis>

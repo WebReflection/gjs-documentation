@@ -10,7 +10,7 @@
   </info>
   <title>GLib.MarkupParser.end_element</title>
   <synopsis><code mime="text/x-gjs">
-function onend_element(context: GLib.MarkupParseContext, element_name: String): void {
+function onend_element(context: <link xref="GLib.MarkupParseContext">GLib.MarkupParseContext</link>, element_name: String): void {
 }
   </code></synopsis>
 

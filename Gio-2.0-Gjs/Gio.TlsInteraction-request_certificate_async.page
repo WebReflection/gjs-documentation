@@ -10,7 +10,7 @@
   </info>
   <title>Gio.TlsInteraction::request_certificate_async</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_request_certificate_async(connection: Gio.TlsConnection, flags: Gio.TlsCertificateRequestFlags, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+function vfunc_request_certificate_async(connection: <link xref="Gio.TlsConnection">Gio.TlsConnection</link>, flags: <link xref="Gio.TlsCertificateRequestFlags">Gio.TlsCertificateRequestFlags</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
 }
   </code></synopsis>
   <p>Run asynchronous interaction to ask the user for a certificate to use with

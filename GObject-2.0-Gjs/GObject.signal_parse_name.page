@@ -17,7 +17,7 @@
         <api:name>detailed_signal</api:name>
       </api:arg>
       <api:arg>
-        <api:type>GType</api:type>
+        <api:type>GObject.Type</api:type>
         <api:name>itype</api:name>
       </api:arg>
       <api:arg>
@@ -28,7 +28,7 @@
   </info>
   <title>GObject.signal_parse_name</title>
   <synopsis><code mime="text/x-gjs">
-function signal_parse_name(detailed_signal: String, itype: GType, force_detail_quark: Boolean): [ok: Boolean, signal_id_p: Number, detail_p: GLib.Quark] {
+function signal_parse_name(detailed_signal: String, itype: GObject.Type, force_detail_quark: Boolean): [ok: Boolean, signal_id_p: Number(guint), detail_p: <link href="../GLib-2.0/GLib.Quark.page">GLib.Quark</link>] {
     // Gjs wrapper for g_signal_parse_name()
 }
   </code></synopsis>

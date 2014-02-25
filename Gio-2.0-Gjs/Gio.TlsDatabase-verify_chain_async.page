@@ -10,7 +10,7 @@
   </info>
   <title>Gio.TlsDatabase::verify_chain_async</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_verify_chain_async(chain: Gio.TlsCertificate, purpose: String, identity: Gio.SocketConnectable, interaction: Gio.TlsInteraction, flags: Gio.TlsDatabaseVerifyFlags, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+function vfunc_verify_chain_async(chain: <link xref="Gio.TlsCertificate">Gio.TlsCertificate</link>, purpose: String, identity: <link xref="Gio.SocketConnectable">Gio.SocketConnectable</link>, interaction: <link xref="Gio.TlsInteraction">Gio.TlsInteraction</link>, flags: <link xref="Gio.TlsDatabaseVerifyFlags">Gio.TlsDatabaseVerifyFlags</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
 }
   </code></synopsis>
   <p>Asynchronously verify's a certificate chain after looking up and adding

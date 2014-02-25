@@ -13,11 +13,11 @@
       </api:returns>
       <api:name>g_input_stream_read_async</api:name>
       <api:arg>
-        <api:type>Array(guint8)</api:type>
+        <api:type>Array(Number(guint8))</api:type>
         <api:name>buffer</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>io_priority</api:name>
       </api:arg>
       <api:arg>
@@ -32,7 +32,7 @@
   </info>
   <title>Gio.InputStream.prototype.read_async</title>
   <synopsis><code mime="text/x-gjs">
-function read_async(buffer: Array(guint8), io_priority: Number, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+function read_async(buffer: Array(Number(guint8)), io_priority: Number(gint), cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
     // Gjs wrapper for g_input_stream_read_async()
 }
   </code></synopsis>

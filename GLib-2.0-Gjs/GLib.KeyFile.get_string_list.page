@@ -24,7 +24,7 @@
   </info>
   <title>GLib.KeyFile.prototype.get_string_list</title>
   <synopsis><code mime="text/x-gjs">
-function get_string_list(group_name: String, key: String): [return_value: Array(String), length: gsize] {
+function get_string_list(group_name: String, key: String): [return_value: Array(String), length: Number(gsize)] {
     // Gjs wrapper for g_key_file_get_string_list()
 }
   </code></synopsis>

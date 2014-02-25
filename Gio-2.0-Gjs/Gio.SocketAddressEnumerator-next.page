@@ -10,7 +10,7 @@
   </info>
   <title>Gio.SocketAddressEnumerator::next</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_next(cancellable: Gio.Cancellable): Gio.SocketAddress {
+function vfunc_next(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): <link xref="Gio.SocketAddress">Gio.SocketAddress</link> {
 }
   </code></synopsis>
   <p>Retrieves the next <link xref="Gio.SocketAddress"/> from <code>enumerator</code>. Note that this

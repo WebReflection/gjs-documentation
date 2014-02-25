@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Resolver::lookup_by_name</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_lookup_by_name(hostname: String, cancellable: Gio.Cancellable): Array(Gio.InetAddress) {
+function vfunc_lookup_by_name(hostname: String, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Array(<link xref="Gio.InetAddress">Gio.InetAddress</link>) {
 }
   </code></synopsis>
   <p>Synchronously resolves <code>hostname</code> to determine its associated IP

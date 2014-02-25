@@ -11,7 +11,7 @@
   </info>
   <title>Gio.ZlibDecompressor.format</title>
   <synopsis><code mime="text/x-gjs">
-ZlibDecompressor.format: Gio.ZlibCompressorFormat (Read / Write / Construct Only)
+ZlibDecompressor.format: <link xref="Gio.ZlibCompressorFormat">Gio.ZlibCompressorFormat</link> (Read / Write / Construct Only)
   </code></synopsis>
 
 

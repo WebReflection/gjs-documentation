@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusConnection.stream</title>
   <synopsis><code mime="text/x-gjs">
-DBusConnection.stream: Gio.IOStream (Read / Write / Construct Only)
+DBusConnection.stream: <link xref="Gio.IOStream">Gio.IOStream</link> (Read / Write / Construct Only)
   </code></synopsis>
   <p>The underlying <link xref="Gio.IOStream"/> used for I/O.</p>  <p>If this is passed on construction and is a <link xref="Gio.SocketConnection"/>,
 then the corresponding <link xref="Gio.Socket"/> will be put into non-blocking mode.</p>  <p>While the <link xref="Gio.DBusConnection"/> is active, it will interact with this

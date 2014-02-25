@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_unix_mount_monitor_set_rate_limit</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>limit_msec</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>Gio.UnixMountMonitor.prototype.set_rate_limit</title>
   <synopsis><code mime="text/x-gjs">
-function set_rate_limit(limit_msec: Number): void {
+function set_rate_limit(limit_msec: Number(gint)): void {
     // Gjs wrapper for g_unix_mount_monitor_set_rate_limit()
 }
   </code></synopsis>

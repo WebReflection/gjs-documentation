@@ -9,14 +9,14 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_test_run</api:name>
     </api:function>
   </info>
   <title>GLib.test_run</title>
   <synopsis><code mime="text/x-gjs">
-function test_run(): Number {
+function test_run(): Number(gint) {
     // Gjs wrapper for g_test_run()
 }
   </code></synopsis>

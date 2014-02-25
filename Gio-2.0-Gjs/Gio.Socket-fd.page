@@ -11,7 +11,7 @@
   </info>
   <title>Gio.Socket.fd</title>
   <synopsis><code mime="text/x-gjs">
-Socket.fd: Number (Read / Write / Construct Only)
+Socket.fd: Number(gint) (Read / Write / Construct Only)
   </code></synopsis>
 
 

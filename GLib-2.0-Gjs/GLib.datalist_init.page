@@ -20,7 +20,7 @@
   </info>
   <title>GLib.datalist_init</title>
   <synopsis><code mime="text/x-gjs">
-function datalist_init(datalist: GLib.Data): void {
+function datalist_init(datalist: <link xref="GLib.Data">GLib.Data</link>): void {
     // Gjs wrapper for g_datalist_init()
 }
   </code></synopsis>

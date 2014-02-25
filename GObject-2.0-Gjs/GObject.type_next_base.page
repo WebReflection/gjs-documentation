@@ -9,22 +9,22 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>GType</api:type>
+        <api:type>GObject.Type</api:type>
       </api:returns>
       <api:name>g_type_next_base</api:name>
       <api:arg>
-        <api:type>GType</api:type>
+        <api:type>GObject.Type</api:type>
         <api:name>leaf_type</api:name>
       </api:arg>
       <api:arg>
-        <api:type>GType</api:type>
+        <api:type>GObject.Type</api:type>
         <api:name>root_type</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GObject.type_next_base</title>
   <synopsis><code mime="text/x-gjs">
-function type_next_base(leaf_type: GType, root_type: GType): GType {
+function type_next_base(leaf_type: GObject.Type, root_type: GObject.Type): GObject.Type {
     // Gjs wrapper for g_type_next_base()
 }
   </code></synopsis>

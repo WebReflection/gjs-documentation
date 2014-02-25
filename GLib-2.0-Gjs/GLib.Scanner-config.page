@@ -11,7 +11,7 @@
   </info>
   <title>GLib.Scanner.config</title>
   <synopsis><code mime="text/x-gjs">
-Scanner.config: GLib.ScannerConfig (Read)
+Scanner.config: <link xref="GLib.ScannerConfig">GLib.ScannerConfig</link> (Read)
   </code></synopsis>
   <p>link into the scanner configuration</p>
 

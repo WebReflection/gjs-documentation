@@ -13,11 +13,11 @@
       </api:returns>
       <api:name>g_signal_override_class_closure</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
         <api:name>signal_id</api:name>
       </api:arg>
       <api:arg>
-        <api:type>GType</api:type>
+        <api:type>GObject.Type</api:type>
         <api:name>instance_type</api:name>
       </api:arg>
       <api:arg>
@@ -28,7 +28,7 @@
   </info>
   <title>GObject.signal_override_class_closure</title>
   <synopsis><code mime="text/x-gjs">
-function signal_override_class_closure(signal_id: Number, instance_type: GType, class_closure: GObject.Closure): void {
+function signal_override_class_closure(signal_id: Number(guint), instance_type: GObject.Type, class_closure: <link xref="GObject.Closure">GObject.Closure</link>): void {
     // Gjs wrapper for g_signal_override_class_closure()
 }
   </code></synopsis>

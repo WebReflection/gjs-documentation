@@ -9,7 +9,7 @@
     <link xref="GLib.Variant" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_variant_compare</api:name>
       <api:arg>
@@ -20,7 +20,7 @@
   </info>
   <title>GLib.Variant.prototype.compare</title>
   <synopsis><code mime="text/x-gjs">
-function compare(two: GLib.Variant): Number {
+function compare(two: <link xref="GLib.Variant">GLib.Variant</link>): Number(gint) {
     // Gjs wrapper for g_variant_compare()
 }
   </code></synopsis>

@@ -13,7 +13,7 @@
       </api:returns>
       <api:name>g_menu_insert_item</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>position</api:name>
       </api:arg>
       <api:arg>
@@ -24,7 +24,7 @@
   </info>
   <title>Gio.Menu.prototype.insert_item</title>
   <synopsis><code mime="text/x-gjs">
-function insert_item(position: Number, item: Gio.MenuItem): void {
+function insert_item(position: Number(gint), item: <link xref="Gio.MenuItem">Gio.MenuItem</link>): void {
     // Gjs wrapper for g_menu_insert_item()
 }
   </code></synopsis>

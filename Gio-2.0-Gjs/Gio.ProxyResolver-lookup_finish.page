@@ -10,7 +10,7 @@
   </info>
   <title>Gio.ProxyResolver::lookup_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_lookup_finish(result: Gio.AsyncResult): Array(String) {
+function vfunc_lookup_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): Array(String) {
 }
   </code></synopsis>
   <p>Call this function to obtain the array of proxy URIs when

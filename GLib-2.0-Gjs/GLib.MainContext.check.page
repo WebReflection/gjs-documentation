@@ -9,11 +9,11 @@
     <link xref="GLib.MainContext" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_main_context_check</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>max_priority</api:name>
       </api:arg>
       <api:arg>
@@ -24,7 +24,7 @@
   </info>
   <title>GLib.MainContext.prototype.check</title>
   <synopsis><code mime="text/x-gjs">
-function check(max_priority: Number, fds: Array(GLib.PollFD)): Number {
+function check(max_priority: Number(gint), fds: Array(<link xref="GLib.PollFD">GLib.PollFD</link>)): Number(gint) {
     // Gjs wrapper for g_main_context_check()
 }
   </code></synopsis>

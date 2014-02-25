@@ -11,7 +11,7 @@
   </info>
   <title>Gio.SocketClient.proxy_resolver</title>
   <synopsis><code mime="text/x-gjs">
-SocketClient.proxy_resolver: Gio.ProxyResolver (Read / Write / Construct)
+SocketClient.proxy_resolver: <link xref="Gio.ProxyResolver">Gio.ProxyResolver</link> (Read / Write / Construct)
   </code></synopsis>
   <p>The proxy resolver to use</p>
   <p>Since 2.36</p>

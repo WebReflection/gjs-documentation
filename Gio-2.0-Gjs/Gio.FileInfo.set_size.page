@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_file_info_set_size</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint64)</api:type>
         <api:name>size</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>Gio.FileInfo.prototype.set_size</title>
   <synopsis><code mime="text/x-gjs">
-function set_size(size: Number): void {
+function set_size(size: Number(gint64)): void {
     // Gjs wrapper for g_file_info_set_size()
 }
   </code></synopsis>

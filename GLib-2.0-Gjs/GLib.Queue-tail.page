@@ -11,7 +11,7 @@
   </info>
   <title>GLib.Queue.tail</title>
   <synopsis><code mime="text/x-gjs">
-Queue.tail: Array(gpointer) (Read / Write)
+Queue.tail: Array(void) (Read / Write)
   </code></synopsis>
   <p>a pointer to the last element of the queue</p>
 

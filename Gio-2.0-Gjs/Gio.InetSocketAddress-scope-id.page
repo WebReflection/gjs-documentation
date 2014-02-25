@@ -11,7 +11,7 @@
   </info>
   <title>Gio.InetSocketAddress.scope_id</title>
   <synopsis><code mime="text/x-gjs">
-InetSocketAddress.scope_id: Number (Read / Write / Construct Only)
+InetSocketAddress.scope_id: Number(guint) (Read / Write / Construct Only)
   </code></synopsis>
 
 

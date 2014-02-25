@@ -20,7 +20,7 @@
   </info>
   <title>GLib.Source.prototype.remove_child_source</title>
   <synopsis><code mime="text/x-gjs">
-function remove_child_source(child_source: GLib.Source): void {
+function remove_child_source(child_source: <link xref="GLib.Source">GLib.Source</link>): void {
     // Gjs wrapper for g_source_remove_child_source()
 }
   </code></synopsis>

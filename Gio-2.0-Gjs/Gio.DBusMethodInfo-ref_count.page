@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusMethodInfo.ref_count</title>
   <synopsis><code mime="text/x-gjs">
-DBusMethodInfo.ref_count: Number (Read / Write)
+DBusMethodInfo.ref_count: Number(gint) (Read / Write)
   </code></synopsis>
   <p>The reference count or -1 if statically allocated.</p>
 

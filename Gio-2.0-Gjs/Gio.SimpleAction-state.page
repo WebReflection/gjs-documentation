@@ -11,7 +11,7 @@
   </info>
   <title>Gio.SimpleAction.state</title>
   <synopsis><code mime="text/x-gjs">
-SimpleAction.state: GLib.Variant (Read / Write / Construct)
+SimpleAction.state: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link> (Read / Write / Construct)
   </code></synopsis>
   <p>The state of the action, or <code>null</code> if the action is stateless.</p>
   <p>Since 2.28</p>

@@ -11,7 +11,7 @@
   </info>
   <title>GObject.TypeQuery.instance_size</title>
   <synopsis><code mime="text/x-gjs">
-TypeQuery.instance_size: Number (Read / Write)
+TypeQuery.instance_size: Number(guint) (Read / Write)
   </code></synopsis>
   <p>the size of the instance structure.</p>
 

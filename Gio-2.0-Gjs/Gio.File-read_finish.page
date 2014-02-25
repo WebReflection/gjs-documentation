@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::read_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_read_finish(res: Gio.AsyncResult): Gio.FileInputStream {
+function vfunc_read_finish(res: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): <link xref="Gio.FileInputStream">Gio.FileInputStream</link> {
 }
   </code></synopsis>
   <p>Finishes an asynchronous file read operation started with

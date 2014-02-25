@@ -20,7 +20,7 @@
   </info>
   <title>Gio.DBusConnection.prototype.send_message_with_reply_finish</title>
   <synopsis><code mime="text/x-gjs">
-function send_message_with_reply_finish(res: Gio.AsyncResult): Gio.DBusMessage {
+function send_message_with_reply_finish(res: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): <link xref="Gio.DBusMessage">Gio.DBusMessage</link> {
     // Gjs wrapper for g_dbus_connection_send_message_with_reply_finish()
 }
   </code></synopsis>

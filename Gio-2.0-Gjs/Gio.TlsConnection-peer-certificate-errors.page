@@ -11,7 +11,7 @@
   </info>
   <title>Gio.TlsConnection.peer_certificate_errors</title>
   <synopsis><code mime="text/x-gjs">
-TlsConnection.peer_certificate_errors: Gio.TlsCertificateFlags (Read)
+TlsConnection.peer_certificate_errors: <link xref="Gio.TlsCertificateFlags">Gio.TlsCertificateFlags</link> (Read)
   </code></synopsis>
   <p>The errors noticed-and-ignored while verifying
 <link xref="Gio.TlsConnection-peer-certificate"/>. Normally this should be 0, but

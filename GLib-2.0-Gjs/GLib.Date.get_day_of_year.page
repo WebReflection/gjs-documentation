@@ -9,14 +9,14 @@
     <link xref="GLib.Date" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
       </api:returns>
       <api:name>g_date_get_day_of_year</api:name>
     </api:function>
   </info>
   <title>GLib.Date.prototype.get_day_of_year</title>
   <synopsis><code mime="text/x-gjs">
-function get_day_of_year(): Number {
+function get_day_of_year(): Number(guint) {
     // Gjs wrapper for g_date_get_day_of_year()
 }
   </code></synopsis>

@@ -20,7 +20,7 @@
   </info>
   <title>Gio.DBusInterfaceInfo.prototype.lookup_method</title>
   <synopsis><code mime="text/x-gjs">
-function lookup_method(name: String): Gio.DBusMethodInfo {
+function lookup_method(name: String): <link xref="Gio.DBusMethodInfo">Gio.DBusMethodInfo</link> {
     // Gjs wrapper for g_dbus_interface_info_lookup_method()
 }
   </code></synopsis>

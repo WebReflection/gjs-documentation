@@ -28,7 +28,7 @@
   </info>
   <title>Gio.DBusMenuModel.get</title>
   <synopsis><code mime="text/x-gjs">
-function get(connection: Gio.DBusConnection, bus_name: String, object_path: String): Gio.DBusMenuModel {
+function get(connection: <link xref="Gio.DBusConnection">Gio.DBusConnection</link>, bus_name: String, object_path: String): <link xref="Gio.DBusMenuModel">Gio.DBusMenuModel</link> {
     // Gjs wrapper for g_dbus_menu_model_get()
 }
   </code></synopsis>

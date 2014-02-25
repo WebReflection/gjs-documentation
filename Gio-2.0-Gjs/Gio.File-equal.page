@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::equal</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_equal(file2: Gio.File): Boolean {
+function vfunc_equal(file2: <link xref="Gio.File">Gio.File</link>): Boolean {
 }
   </code></synopsis>
   <p>Checks equality of two given #GFiles.</p>  <p>Note that two #GFiles that differ can still refer to the same

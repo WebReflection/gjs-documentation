@@ -10,7 +10,7 @@
   </info>
   <title>Gio.DBusInterfaceSkeleton::get_properties</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_properties(): GLib.Variant {
+function vfunc_get_properties(): <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link> {
 }
   </code></synopsis>
   <p>Gets all D-Bus properties for <code>interface_</code>.</p>

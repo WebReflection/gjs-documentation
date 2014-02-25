@@ -10,7 +10,7 @@
   </info>
   <title>Gio.TlsInteraction::request_certificate_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_request_certificate_finish(result: Gio.AsyncResult): Gio.TlsInteractionResult {
+function vfunc_request_certificate_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): <link xref="Gio.TlsInteractionResult">Gio.TlsInteractionResult</link> {
 }
   </code></synopsis>
   <p>Complete an request certificate user interaction request. This should be once

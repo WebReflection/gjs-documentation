@@ -11,7 +11,7 @@
   </info>
   <title>GLib.Scanner.msg_handler</title>
   <synopsis><code mime="text/x-gjs">
-Scanner.msg_handler: GLib.ScannerMsgFunc (Read)
+Scanner.msg_handler: <link xref="GLib.ScannerMsgFunc">GLib.ScannerMsgFunc</link> (Read)
   </code></synopsis>
   <p>handler function for _warn and _error</p>
 

@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Resolver::lookup_service_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_lookup_service_finish(result: Gio.AsyncResult): Array(Gio.SrvTarget) {
+function vfunc_lookup_service_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): Array(<link xref="Gio.SrvTarget">Gio.SrvTarget</link>) {
 }
   </code></synopsis>
   <p>Retrieves the result of a previous call to

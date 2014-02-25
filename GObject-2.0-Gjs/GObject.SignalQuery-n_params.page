@@ -11,7 +11,7 @@
   </info>
   <title>GObject.SignalQuery.n_params</title>
   <synopsis><code mime="text/x-gjs">
-SignalQuery.n_params: Number (Read / Write)
+SignalQuery.n_params: Number(guint) (Read / Write)
   </code></synopsis>
   <p>The number of parameters that user callbacks take.</p>
 

@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::replace_readwrite_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_replace_readwrite_finish(res: Gio.AsyncResult): Gio.FileIOStream {
+function vfunc_replace_readwrite_finish(res: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): <link xref="Gio.FileIOStream">Gio.FileIOStream</link> {
 }
   </code></synopsis>
   <p>Finishes an asynchronous file replace operation started with

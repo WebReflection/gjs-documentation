@@ -20,7 +20,7 @@
   </info>
   <title>GLib.spawn_close_pid</title>
   <synopsis><code mime="text/x-gjs">
-function spawn_close_pid(pid: GLib.Pid): void {
+function spawn_close_pid(pid: <link xref="GLib.Pid">GLib.Pid</link>): void {
     // Gjs wrapper for g_spawn_close_pid()
 }
   </code></synopsis>

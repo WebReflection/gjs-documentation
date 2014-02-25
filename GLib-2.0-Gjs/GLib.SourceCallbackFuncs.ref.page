@@ -10,7 +10,7 @@
   </info>
   <title>GLib.SourceCallbackFuncs.ref</title>
   <synopsis><code mime="text/x-gjs">
-function onref(cb_data: gpointer): void {
+function onref(cb_data: void): void {
 }
   </code></synopsis>
 

@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_unix_fd_message_append_fd</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>fd</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>Gio.UnixFDMessage.prototype.append_fd</title>
   <synopsis><code mime="text/x-gjs">
-function append_fd(fd: Number): Boolean {
+function append_fd(fd: Number(gint)): Boolean {
     // Gjs wrapper for g_unix_fd_message_append_fd()
 }
   </code></synopsis>

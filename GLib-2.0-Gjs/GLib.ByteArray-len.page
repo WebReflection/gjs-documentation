@@ -11,7 +11,7 @@
   </info>
   <title>GLib.ByteArray.len</title>
   <synopsis><code mime="text/x-gjs">
-ByteArray.len: Number (Read / Write)
+ByteArray.len: Number(guint) (Read / Write)
   </code></synopsis>
   <p>the number of elements in the <link xref="GLib.ByteArray"/></p>
 

@@ -10,7 +10,7 @@
   </info>
   <title>GObject.ParamSpecTypeInfo.value_set_default</title>
   <synopsis><code mime="text/x-gjs">
-function onvalue_set_default(pspec: GObject.ParamSpec, value: GObject.Value): void {
+function onvalue_set_default(pspec: <link xref="GObject.ParamSpec">GObject.ParamSpec</link>, value: <link xref="GObject.Value">GObject.Value</link>): void {
 }
   </code></synopsis>
 

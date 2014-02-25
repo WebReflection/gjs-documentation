@@ -11,7 +11,7 @@
   </info>
   <title>Gio.MemoryOutputStream.data</title>
   <synopsis><code mime="text/x-gjs">
-MemoryOutputStream.data: gpointer (Read / Write / Construct Only)
+MemoryOutputStream.data: void (Read / Write / Construct Only)
   </code></synopsis>
   <p>Pointer to buffer where data will be written.</p>
   <p>Since 2.24</p>

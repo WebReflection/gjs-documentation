@@ -9,14 +9,14 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>GType</api:type>
+        <api:type>GObject.Type</api:type>
       </api:returns>
       <api:name>g_type_fundamental_next</api:name>
     </api:function>
   </info>
   <title>GObject.type_fundamental_next</title>
   <synopsis><code mime="text/x-gjs">
-function type_fundamental_next(): GType {
+function type_fundamental_next(): GObject.Type {
     // Gjs wrapper for g_type_fundamental_next()
 }
   </code></synopsis>

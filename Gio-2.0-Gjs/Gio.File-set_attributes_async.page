@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::set_attributes_async</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_set_attributes_async(info: Gio.FileInfo, flags: Gio.FileQueryInfoFlags, io_priority: Number, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+function vfunc_set_attributes_async(info: <link xref="Gio.FileInfo">Gio.FileInfo</link>, flags: <link xref="Gio.FileQueryInfoFlags">Gio.FileQueryInfoFlags</link>, io_priority: Number(gint), cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
 }
   </code></synopsis>
   <p>Asynchronously sets the attributes of <code>file</code> with <code>info</code>.</p>  <p>For more details, see <link xref="Gio.File.set_attributes_from_info"/>,

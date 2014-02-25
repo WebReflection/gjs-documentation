@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::make_directory</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_make_directory(cancellable: Gio.Cancellable): Boolean {
+function vfunc_make_directory(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Boolean {
 }
   </code></synopsis>
   <p>Creates a directory. Note that this will only create a child directory

@@ -9,7 +9,7 @@
     <link xref="GLib.Source" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
       </api:returns>
       <api:name>g_source_attach</api:name>
       <api:arg>
@@ -20,7 +20,7 @@
   </info>
   <title>GLib.Source.prototype.attach</title>
   <synopsis><code mime="text/x-gjs">
-function attach(context: GLib.MainContext): Number {
+function attach(context: <link xref="GLib.MainContext">GLib.MainContext</link>): Number(guint) {
     // Gjs wrapper for g_source_attach()
 }
   </code></synopsis>

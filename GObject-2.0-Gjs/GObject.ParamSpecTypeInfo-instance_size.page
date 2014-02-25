@@ -11,7 +11,7 @@
   </info>
   <title>GObject.ParamSpecTypeInfo.instance_size</title>
   <synopsis><code mime="text/x-gjs">
-ParamSpecTypeInfo.instance_size: guint16 (Read / Write)
+ParamSpecTypeInfo.instance_size: Number(guint16) (Read / Write)
   </code></synopsis>
   <p>Size of the instance (object) structure.</p>
 

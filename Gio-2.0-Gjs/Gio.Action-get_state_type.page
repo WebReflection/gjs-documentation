@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Action::get_state_type</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_state_type(): GLib.VariantType {
+function vfunc_get_state_type(): <link href="../GLib-2.0/GLib.VariantType.page">GLib.VariantType</link> {
 }
   </code></synopsis>
   <p>Queries the type of the state of <code>action</code>.</p>  <p>If the action is stateful (e.g. created with

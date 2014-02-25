@@ -10,7 +10,7 @@
   </info>
   <title>Gio.DBusObject::interface_removed</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_interface_removed(interface_: Gio.DBusInterface): void {
+function vfunc_interface_removed(interface_: <link xref="Gio.DBusInterface">Gio.DBusInterface</link>): void {
 }
   </code></synopsis>
 

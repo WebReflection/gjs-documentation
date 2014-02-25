@@ -10,7 +10,7 @@
   </info>
   <title>GLib.HookFinalizeFunc</title>
   <synopsis><code mime="text/x-gjs">
-function onHookFinalizeFunc(hook_list: GLib.HookList, hook: GLib.Hook): void {
+function onHookFinalizeFunc(hook_list: <link xref="GLib.HookList">GLib.HookList</link>, hook: <link xref="GLib.Hook">GLib.Hook</link>): void {
 }
   </code></synopsis>
   <p>Defines the type of function to be called when a hook in a

@@ -13,11 +13,11 @@
       </api:returns>
       <api:name>g_type_module_add_interface</api:name>
       <api:arg>
-        <api:type>GType</api:type>
+        <api:type>GObject.Type</api:type>
         <api:name>instance_type</api:name>
       </api:arg>
       <api:arg>
-        <api:type>GType</api:type>
+        <api:type>GObject.Type</api:type>
         <api:name>interface_type</api:name>
       </api:arg>
       <api:arg>
@@ -28,7 +28,7 @@
   </info>
   <title>GObject.TypeModule.prototype.add_interface</title>
   <synopsis><code mime="text/x-gjs">
-function add_interface(instance_type: GType, interface_type: GType, interface_info: GObject.InterfaceInfo): void {
+function add_interface(instance_type: GObject.Type, interface_type: GObject.Type, interface_info: <link xref="GObject.InterfaceInfo">GObject.InterfaceInfo</link>): void {
     // Gjs wrapper for g_type_module_add_interface()
 }
   </code></synopsis>

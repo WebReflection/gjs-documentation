@@ -9,7 +9,7 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
       </api:returns>
       <api:name>g_signal_handlers_unblock_matched</api:name>
       <api:arg>
@@ -21,7 +21,7 @@
         <api:name>mask</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
         <api:name>signal_id</api:name>
       </api:arg>
       <api:arg>
@@ -33,18 +33,18 @@
         <api:name>closure</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>func</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>data</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GObject.signal_handlers_unblock_matched</title>
   <synopsis><code mime="text/x-gjs">
-function signal_handlers_unblock_matched(instance: GObject.Object, mask: GObject.SignalMatchType, signal_id: Number, detail: GLib.Quark, closure: GObject.Closure, func: gpointer, data: gpointer): Number {
+function signal_handlers_unblock_matched(instance: <link xref="GObject.Object">GObject.Object</link>, mask: <link xref="GObject.SignalMatchType">GObject.SignalMatchType</link>, signal_id: Number(guint), detail: <link href="../GLib-2.0/GLib.Quark.page">GLib.Quark</link>, closure: <link xref="GObject.Closure">GObject.Closure</link>, func: void, data: void): Number(guint) {
     // Gjs wrapper for g_signal_handlers_unblock_matched()
 }
   </code></synopsis>

@@ -9,7 +9,7 @@
     <link xref="Gio.SocketConnection" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>GType</api:type>
+        <api:type>GObject.Type</api:type>
       </api:returns>
       <api:name>g_socket_connection_factory_lookup_type</api:name>
       <api:arg>
@@ -21,14 +21,14 @@
         <api:name>type</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>protocol_id</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>Gio.SocketConnection.factory_lookup_type</title>
   <synopsis><code mime="text/x-gjs">
-function factory_lookup_type(family: Gio.SocketFamily, type: Gio.SocketType, protocol_id: Number): GType {
+function factory_lookup_type(family: <link xref="Gio.SocketFamily">Gio.SocketFamily</link>, type: <link xref="Gio.SocketType">Gio.SocketType</link>, protocol_id: Number(gint)): GObject.Type {
     // Gjs wrapper for g_socket_connection_factory_lookup_type()
 }
   </code></synopsis>

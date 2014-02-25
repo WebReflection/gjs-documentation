@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_date_add_months</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
         <api:name>n_months</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.Date.prototype.add_months</title>
   <synopsis><code mime="text/x-gjs">
-function add_months(n_months: Number): void {
+function add_months(n_months: Number(guint)): void {
     // Gjs wrapper for g_date_add_months()
 }
   </code></synopsis>

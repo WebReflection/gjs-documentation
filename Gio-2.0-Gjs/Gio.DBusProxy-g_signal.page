@@ -10,7 +10,7 @@
   </info>
   <title>Gio.DBusProxy::g_signal</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_g_signal(sender_name: String, signal_name: String, parameters: GLib.Variant): void {
+function vfunc_g_signal(sender_name: String, signal_name: String, parameters: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>): void {
 }
   </code></synopsis>
 

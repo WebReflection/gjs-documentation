@@ -11,7 +11,7 @@
   </info>
   <title>GLib.HookList.is_setup</title>
   <synopsis><code mime="text/x-gjs">
-HookList.is_setup: Number (Read / Write)
+HookList.is_setup: Number(guint) (Read / Write)
   </code></synopsis>
   <p>1 if the <link xref="GLib.HookList"/> has been initialized</p>
 

@@ -16,7 +16,7 @@
   </info>
   <title>Gio.Resource.prototype.ref</title>
   <synopsis><code mime="text/x-gjs">
-function ref(): Gio.Resource {
+function ref(): <link xref="Gio.Resource">Gio.Resource</link> {
     // Gjs wrapper for g_resource_ref()
 }
   </code></synopsis>

@@ -11,7 +11,7 @@
   </info>
   <title>GLib.ThreadPool.func</title>
   <synopsis><code mime="text/x-gjs">
-ThreadPool.func: GLib.Func (Read)
+ThreadPool.func: <link xref="GLib.Func">GLib.Func</link> (Read)
   </code></synopsis>
   <p>the function to execute in the threads of this pool</p>
 

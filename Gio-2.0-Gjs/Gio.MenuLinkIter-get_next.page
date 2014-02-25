@@ -10,7 +10,7 @@
   </info>
   <title>Gio.MenuLinkIter::get_next</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_next(): [ok: Boolean, out_link: String, value: Gio.MenuModel] {
+function vfunc_get_next(): [ok: Boolean, out_link: String, value: <link xref="Gio.MenuModel">Gio.MenuModel</link>] {
 }
   </code></synopsis>
   <p>This function combines <link xref="Gio.MenuLinkIter.next"/> with

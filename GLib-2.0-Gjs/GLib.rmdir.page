@@ -9,7 +9,7 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_rmdir</api:name>
       <api:arg>
@@ -20,7 +20,7 @@
   </info>
   <title>GLib.rmdir</title>
   <synopsis><code mime="text/x-gjs">
-function rmdir(filename: String): Number {
+function rmdir(filename: String): Number(gint) {
     // Gjs wrapper for g_rmdir()
 }
   </code></synopsis>

@@ -10,7 +10,7 @@
   </info>
   <title>Gio.BufferedInputStream::fill</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_fill(count: gssize, cancellable: Gio.Cancellable): gssize {
+function vfunc_fill(count: Number(gssize), cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Number(gssize) {
 }
   </code></synopsis>
   <p>Tries to read <code>count</code> bytes from the stream into the buffer.

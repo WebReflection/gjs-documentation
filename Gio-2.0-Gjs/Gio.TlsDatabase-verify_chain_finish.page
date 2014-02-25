@@ -10,7 +10,7 @@
   </info>
   <title>Gio.TlsDatabase::verify_chain_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_verify_chain_finish(result: Gio.AsyncResult): Gio.TlsCertificateFlags {
+function vfunc_verify_chain_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): <link xref="Gio.TlsCertificateFlags">Gio.TlsCertificateFlags</link> {
 }
   </code></synopsis>
   <p>Finish an asynchronous verify chain operation. See

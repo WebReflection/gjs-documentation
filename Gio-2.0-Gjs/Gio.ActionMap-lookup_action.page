@@ -10,7 +10,7 @@
   </info>
   <title>Gio.ActionMap::lookup_action</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_lookup_action(action_name: String): Gio.Action {
+function vfunc_lookup_action(action_name: String): <link xref="Gio.Action">Gio.Action</link> {
 }
   </code></synopsis>
   <p>Looks up the action with the name <code>action_name</code> in <code>action_map</code>.</p>  <p>If no such action exists, returns <code>null</code>.</p>

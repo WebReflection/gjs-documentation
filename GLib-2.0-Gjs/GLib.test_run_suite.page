@@ -9,7 +9,7 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_test_run_suite</api:name>
       <api:arg>
@@ -20,7 +20,7 @@
   </info>
   <title>GLib.test_run_suite</title>
   <synopsis><code mime="text/x-gjs">
-function test_run_suite(suite: GLib.TestSuite): Number {
+function test_run_suite(suite: <link xref="GLib.TestSuite">GLib.TestSuite</link>): Number(gint) {
     // Gjs wrapper for g_test_run_suite()
 }
   </code></synopsis>

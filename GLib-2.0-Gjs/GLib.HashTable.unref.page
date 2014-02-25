@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_hash_table_unref</api:name>
       <api:arg>
-        <api:type>{gpointer: gpointer}</api:type>
+        <api:type>{void: void}</api:type>
         <api:name>hash_table</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.HashTable.unref</title>
   <synopsis><code mime="text/x-gjs">
-function unref(hash_table: {gpointer: gpointer}): void {
+function unref(hash_table: {void: void}): void {
     // Gjs wrapper for g_hash_table_unref()
 }
   </code></synopsis>

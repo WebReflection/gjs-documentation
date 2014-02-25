@@ -11,7 +11,7 @@
   </info>
   <title>Gio.FileAttributeInfoList.infos</title>
   <synopsis><code mime="text/x-gjs">
-FileAttributeInfoList.infos: Gio.FileAttributeInfo (Read)
+FileAttributeInfoList.infos: <link xref="Gio.FileAttributeInfo">Gio.FileAttributeInfo</link> (Read)
   </code></synopsis>
   <p>an array of <link xref="Gio.FileAttributeInfo"/>&lt;!-- --&gt;s.</p>
 

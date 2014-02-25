@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Vfs::local_file_add_info</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_local_file_add_info(filename: String, device: Number, attribute_matcher: Gio.FileAttributeMatcher, info: Gio.FileInfo, cancellable: Gio.Cancellable, extra_data: gpointer, free_extra_data: GLib.DestroyNotify): void {
+function vfunc_local_file_add_info(filename: String, device: Number(guint64), attribute_matcher: <link xref="Gio.FileAttributeMatcher">Gio.FileAttributeMatcher</link>, info: <link xref="Gio.FileInfo">Gio.FileInfo</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, extra_data: void, free_extra_data: <link href="../GLib-2.0/GLib.DestroyNotify.page">GLib.DestroyNotify</link>): void {
 }
   </code></synopsis>
 

@@ -9,7 +9,7 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>guint16</api:type>
+        <api:type>Number(guint16)</api:type>
       </api:returns>
       <api:name>g_utf8_to_utf16</api:name>
       <api:arg>
@@ -17,22 +17,22 @@
         <api:name>str</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(glong)</api:type>
         <api:name>len</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(glong)</api:type>
         <api:name>items_read</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(glong)</api:type>
         <api:name>items_written</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.utf8_to_utf16</title>
   <synopsis><code mime="text/x-gjs">
-function utf8_to_utf16(str: String, len: Number, items_read: Number, items_written: Number): guint16 {
+function utf8_to_utf16(str: String, len: Number(glong), items_read: Number(glong), items_written: Number(glong)): Number(guint16) {
     // Gjs wrapper for g_utf8_to_utf16()
 }
   </code></synopsis>

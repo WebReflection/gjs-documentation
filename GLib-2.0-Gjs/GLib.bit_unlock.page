@@ -13,18 +13,18 @@
       </api:returns>
       <api:name>g_bit_unlock</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>address</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>lock_bit</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.bit_unlock</title>
   <synopsis><code mime="text/x-gjs">
-function bit_unlock(address: Number, lock_bit: Number): void {
+function bit_unlock(address: Number(gint), lock_bit: Number(gint)): void {
     // Gjs wrapper for g_bit_unlock()
 }
   </code></synopsis>

@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_date_time_add_days</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>days</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.DateTime.prototype.add_days</title>
   <synopsis><code mime="text/x-gjs">
-function add_days(days: Number): GLib.DateTime {
+function add_days(days: Number(gint)): <link xref="GLib.DateTime">GLib.DateTime</link> {
     // Gjs wrapper for g_date_time_add_days()
 }
   </code></synopsis>

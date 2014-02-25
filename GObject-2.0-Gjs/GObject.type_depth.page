@@ -9,18 +9,18 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
       </api:returns>
       <api:name>g_type_depth</api:name>
       <api:arg>
-        <api:type>GType</api:type>
+        <api:type>GObject.Type</api:type>
         <api:name>type</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GObject.type_depth</title>
   <synopsis><code mime="text/x-gjs">
-function type_depth(type: GType): Number {
+function type_depth(type: GObject.Type): Number(guint) {
     // Gjs wrapper for g_type_depth()
 }
   </code></synopsis>

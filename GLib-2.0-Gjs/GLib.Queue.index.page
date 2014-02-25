@@ -9,18 +9,18 @@
     <link xref="GLib.Queue" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_queue_index</api:name>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>data</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.Queue.prototype.index</title>
   <synopsis><code mime="text/x-gjs">
-function index(data: gpointer): Number {
+function index(data: void): Number(gint) {
     // Gjs wrapper for g_queue_index()
 }
   </code></synopsis>

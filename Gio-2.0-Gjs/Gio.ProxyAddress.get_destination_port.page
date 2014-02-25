@@ -9,14 +9,14 @@
     <link xref="Gio.ProxyAddress" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>guint16</api:type>
+        <api:type>Number(guint16)</api:type>
       </api:returns>
       <api:name>g_proxy_address_get_destination_port</api:name>
     </api:function>
   </info>
   <title>Gio.ProxyAddress.prototype.get_destination_port</title>
   <synopsis><code mime="text/x-gjs">
-function get_destination_port(): guint16 {
+function get_destination_port(): Number(guint16) {
     // Gjs wrapper for g_proxy_address_get_destination_port()
 }
   </code></synopsis>

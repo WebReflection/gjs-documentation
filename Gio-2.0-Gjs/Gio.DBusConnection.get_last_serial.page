@@ -9,14 +9,14 @@
     <link xref="Gio.DBusConnection" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>guint32</api:type>
+        <api:type>Number(guint32)</api:type>
       </api:returns>
       <api:name>g_dbus_connection_get_last_serial</api:name>
     </api:function>
   </info>
   <title>Gio.DBusConnection.prototype.get_last_serial</title>
   <synopsis><code mime="text/x-gjs">
-function get_last_serial(): guint32 {
+function get_last_serial(): Number(guint32) {
     // Gjs wrapper for g_dbus_connection_get_last_serial()
 }
   </code></synopsis>

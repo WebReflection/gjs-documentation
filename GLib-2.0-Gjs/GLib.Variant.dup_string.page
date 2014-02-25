@@ -16,7 +16,7 @@
   </info>
   <title>GLib.Variant.prototype.dup_string</title>
   <synopsis><code mime="text/x-gjs">
-function dup_string(): [return_value: String, length: gsize] {
+function dup_string(): [return_value: String, length: Number(gsize)] {
     // Gjs wrapper for g_variant_dup_string()
 }
   </code></synopsis>

@@ -11,7 +11,7 @@
   </info>
   <title>Gio.ProxyAddressEnumerator.connectable</title>
   <synopsis><code mime="text/x-gjs">
-ProxyAddressEnumerator.connectable: Gio.SocketConnectable (Read / Write / Construct Only)
+ProxyAddressEnumerator.connectable: <link xref="Gio.SocketConnectable">Gio.SocketConnectable</link> (Read / Write / Construct Only)
   </code></synopsis>
 
 

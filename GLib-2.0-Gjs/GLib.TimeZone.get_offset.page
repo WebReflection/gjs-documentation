@@ -9,18 +9,18 @@
     <link xref="GLib.TimeZone" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>gint32</api:type>
+        <api:type>Number(gint32)</api:type>
       </api:returns>
       <api:name>g_time_zone_get_offset</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>interval</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.TimeZone.prototype.get_offset</title>
   <synopsis><code mime="text/x-gjs">
-function get_offset(interval: Number): gint32 {
+function get_offset(interval: Number(gint)): Number(gint32) {
     // Gjs wrapper for g_time_zone_get_offset()
 }
   </code></synopsis>

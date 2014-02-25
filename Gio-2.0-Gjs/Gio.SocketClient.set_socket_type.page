@@ -20,7 +20,7 @@
   </info>
   <title>Gio.SocketClient.prototype.set_socket_type</title>
   <synopsis><code mime="text/x-gjs">
-function set_socket_type(type: Gio.SocketType): void {
+function set_socket_type(type: <link xref="Gio.SocketType">Gio.SocketType</link>): void {
     // Gjs wrapper for g_socket_client_set_socket_type()
 }
   </code></synopsis>

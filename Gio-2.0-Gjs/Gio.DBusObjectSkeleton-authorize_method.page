@@ -10,7 +10,7 @@
   </info>
   <title>Gio.DBusObjectSkeleton::authorize_method</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_authorize_method(interface_: Gio.DBusInterfaceSkeleton, invocation: Gio.DBusMethodInvocation): Boolean {
+function vfunc_authorize_method(interface_: <link xref="Gio.DBusInterfaceSkeleton">Gio.DBusInterfaceSkeleton</link>, invocation: <link xref="Gio.DBusMethodInvocation">Gio.DBusMethodInvocation</link>): Boolean {
 }
   </code></synopsis>
 

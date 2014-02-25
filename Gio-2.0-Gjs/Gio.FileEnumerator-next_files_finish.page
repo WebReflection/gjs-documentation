@@ -10,7 +10,7 @@
   </info>
   <title>Gio.FileEnumerator::next_files_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_next_files_finish(result: Gio.AsyncResult): Array(Gio.FileInfo) {
+function vfunc_next_files_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): Array(<link xref="Gio.FileInfo">Gio.FileInfo</link>) {
 }
   </code></synopsis>
   <p>Finishes the asynchronous operation started with <link xref="Gio.FileEnumerator.next_files_async"/>.</p>

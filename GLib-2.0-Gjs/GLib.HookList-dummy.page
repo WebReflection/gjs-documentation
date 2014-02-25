@@ -11,7 +11,7 @@
   </info>
   <title>GLib.HookList.dummy</title>
   <synopsis><code mime="text/x-gjs">
-HookList.dummy: Array(gpointer) (Read / Write)
+HookList.dummy: Array(void) (Read / Write)
   </code></synopsis>
   <p>unused</p>
 

@@ -11,7 +11,7 @@
   </info>
   <title>Gio.FileMonitor.rate_limit</title>
   <synopsis><code mime="text/x-gjs">
-FileMonitor.rate_limit: Number (Read / Write)
+FileMonitor.rate_limit: Number(gint) (Read / Write)
   </code></synopsis>
 
 

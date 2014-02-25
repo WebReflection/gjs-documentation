@@ -10,7 +10,7 @@
   </info>
   <title>Gio.IOSchedulerJobFunc</title>
   <synopsis><code mime="text/x-gjs">
-function onIOSchedulerJobFunc(job: Gio.IOSchedulerJob, cancellable: Gio.Cancellable): Boolean {
+function onIOSchedulerJobFunc(job: <link xref="Gio.IOSchedulerJob">Gio.IOSchedulerJob</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Boolean {
 }
   </code></synopsis>
   <p>I/O Job function.</p>  <p>Long-running jobs should periodically check the <code>cancellable</code>

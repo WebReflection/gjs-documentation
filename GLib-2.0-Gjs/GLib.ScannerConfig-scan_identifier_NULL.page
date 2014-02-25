@@ -11,7 +11,7 @@
   </info>
   <title>GLib.ScannerConfig.scan_identifier__NULL</title>
   <synopsis><code mime="text/x-gjs">
-ScannerConfig.scan_identifier__NULL: Number (Read / Write)
+ScannerConfig.scan_identifier__NULL: Number(guint) (Read / Write)
   </code></synopsis>
   <p>specifies if <code>null</code> is reported as
     <link xref="GLib.TokenType"/>.identifier_null (the default is <code>false</code>).</p>

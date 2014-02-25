@@ -10,7 +10,7 @@
   </info>
   <title>Gio.TlsDatabase::verify_chain</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_verify_chain(chain: Gio.TlsCertificate, purpose: String, identity: Gio.SocketConnectable, interaction: Gio.TlsInteraction, flags: Gio.TlsDatabaseVerifyFlags, cancellable: Gio.Cancellable): Gio.TlsCertificateFlags {
+function vfunc_verify_chain(chain: <link xref="Gio.TlsCertificate">Gio.TlsCertificate</link>, purpose: String, identity: <link xref="Gio.SocketConnectable">Gio.SocketConnectable</link>, interaction: <link xref="Gio.TlsInteraction">Gio.TlsInteraction</link>, flags: <link xref="Gio.TlsDatabaseVerifyFlags">Gio.TlsDatabaseVerifyFlags</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): <link xref="Gio.TlsCertificateFlags">Gio.TlsCertificateFlags</link> {
 }
   </code></synopsis>
   <p>Verify's a certificate chain after looking up and adding any missing

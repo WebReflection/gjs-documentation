@@ -16,7 +16,7 @@
   </info>
   <title>Gio.ProxyResolver.get_default</title>
   <synopsis><code mime="text/x-gjs">
-function get_default(): Gio.ProxyResolver {
+function get_default(): <link xref="Gio.ProxyResolver">Gio.ProxyResolver</link> {
     // Gjs wrapper for g_proxy_resolver_get_default()
 }
   </code></synopsis>

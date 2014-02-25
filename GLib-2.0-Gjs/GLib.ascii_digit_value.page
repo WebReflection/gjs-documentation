@@ -9,18 +9,18 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_ascii_digit_value</api:name>
       <api:arg>
-        <api:type>String</api:type>
+        <api:type>Number(gchar)</api:type>
         <api:name>c</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.ascii_digit_value</title>
   <synopsis><code mime="text/x-gjs">
-function ascii_digit_value(c: String): Number {
+function ascii_digit_value(c: Number(gchar)): Number(gint) {
     // Gjs wrapper for g_ascii_digit_value()
 }
   </code></synopsis>

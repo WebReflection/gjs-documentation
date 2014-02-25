@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_io_channel_unix_new</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>fd</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.IOChannel.unix_new</title>
   <synopsis><code mime="text/x-gjs">
-function unix_new(fd: Number): GLib.IOChannel {
+function unix_new(fd: Number(gint)): <link xref="GLib.IOChannel">GLib.IOChannel</link> {
     // Gjs wrapper for g_io_channel_unix_new()
 }
   </code></synopsis>

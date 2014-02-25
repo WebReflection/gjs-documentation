@@ -11,7 +11,7 @@
   </info>
   <title>Gio.SocketConnection.socket</title>
   <synopsis><code mime="text/x-gjs">
-SocketConnection.socket: Gio.Socket (Read / Write / Construct Only)
+SocketConnection.socket: <link xref="Gio.Socket">Gio.Socket</link> (Read / Write / Construct Only)
   </code></synopsis>
 
 

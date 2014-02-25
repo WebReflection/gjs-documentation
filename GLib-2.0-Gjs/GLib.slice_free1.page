@@ -13,18 +13,18 @@
       </api:returns>
       <api:name>g_slice_free1</api:name>
       <api:arg>
-        <api:type>gsize</api:type>
+        <api:type>Number(gsize)</api:type>
         <api:name>block_size</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>mem_block</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.slice_free1</title>
   <synopsis><code mime="text/x-gjs">
-function slice_free1(block_size: gsize, mem_block: gpointer): void {
+function slice_free1(block_size: Number(gsize), mem_block: void): void {
     // Gjs wrapper for g_slice_free1()
 }
   </code></synopsis>

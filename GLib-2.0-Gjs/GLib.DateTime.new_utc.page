@@ -13,34 +13,34 @@
       </api:returns>
       <api:name>g_date_time_new_utc</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>year</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>month</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>day</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>hour</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>minute</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gdouble)</api:type>
         <api:name>seconds</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.DateTime.new_utc</title>
   <synopsis><code mime="text/x-gjs">
-function new_utc(year: Number, month: Number, day: Number, hour: Number, minute: Number, seconds: Number): GLib.DateTime {
+function new_utc(year: Number(gint), month: Number(gint), day: Number(gint), hour: Number(gint), minute: Number(gint), seconds: Number(gdouble)): <link xref="GLib.DateTime">GLib.DateTime</link> {
     // Gjs wrapper for g_date_time_new_utc()
 }
   </code></synopsis>

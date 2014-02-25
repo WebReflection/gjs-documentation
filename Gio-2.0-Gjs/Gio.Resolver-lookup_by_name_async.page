@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Resolver::lookup_by_name_async</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_lookup_by_name_async(hostname: String, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+function vfunc_lookup_by_name_async(hostname: String, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
 }
   </code></synopsis>
   <p>Begins asynchronously resolving <code>hostname</code> to determine its

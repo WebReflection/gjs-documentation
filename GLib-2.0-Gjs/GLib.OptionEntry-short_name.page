@@ -11,7 +11,7 @@
   </info>
   <title>GLib.OptionEntry.short_name</title>
   <synopsis><code mime="text/x-gjs">
-OptionEntry.short_name: String (Read / Write)
+OptionEntry.short_name: Number(gchar) (Read / Write)
   </code></synopsis>
   <p>If an option has a short name, it can be specified
  -&lt;replaceable&gt;short_name&lt;/replaceable&gt; in a commandline. @short_name must be

@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::dup</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_dup(): Gio.File {
+function vfunc_dup(): <link xref="Gio.File">Gio.File</link> {
 }
   </code></synopsis>
   <p>Duplicates a <link xref="Gio.File"/> handle. This operation does not duplicate

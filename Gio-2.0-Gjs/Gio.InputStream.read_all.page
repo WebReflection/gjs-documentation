@@ -13,7 +13,7 @@
       </api:returns>
       <api:name>g_input_stream_read_all</api:name>
       <api:arg>
-        <api:type>Array(guint8)</api:type>
+        <api:type>Array(Number(guint8))</api:type>
         <api:name>buffer</api:name>
       </api:arg>
       <api:arg>
@@ -24,7 +24,7 @@
   </info>
   <title>Gio.InputStream.prototype.read_all</title>
   <synopsis><code mime="text/x-gjs">
-function read_all(buffer: Array(guint8), cancellable: Gio.Cancellable): [ok: Boolean, bytes_read: gsize] {
+function read_all(buffer: Array(Number(guint8)), cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): [ok: Boolean, bytes_read: Number(gsize)] {
     // Gjs wrapper for g_input_stream_read_all()
 }
   </code></synopsis>

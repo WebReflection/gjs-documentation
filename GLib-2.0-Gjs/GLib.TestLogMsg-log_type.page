@@ -11,7 +11,7 @@
   </info>
   <title>GLib.TestLogMsg.log_type</title>
   <synopsis><code mime="text/x-gjs">
-TestLogMsg.log_type: GLib.TestLogType (Read / Write)
+TestLogMsg.log_type: <link xref="GLib.TestLogType">GLib.TestLogType</link> (Read / Write)
   </code></synopsis>
 
 

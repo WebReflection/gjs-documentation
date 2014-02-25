@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::find_enclosing_mount</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_find_enclosing_mount(cancellable: Gio.Cancellable): Gio.Mount {
+function vfunc_find_enclosing_mount(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): <link xref="Gio.Mount">Gio.Mount</link> {
 }
   </code></synopsis>
   <p>Gets a <link xref="Gio.Mount"/> for the <link xref="Gio.File"/>.</p>  <p>If the <link xref="Gio.FileIface"/> for <code>file</code> does not have a mount (e.g.

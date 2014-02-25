@@ -16,7 +16,7 @@
   </info>
   <title>GLib.Regex.prototype.get_match_flags</title>
   <synopsis><code mime="text/x-gjs">
-function get_match_flags(): GLib.RegexMatchFlags {
+function get_match_flags(): <link xref="GLib.RegexMatchFlags">GLib.RegexMatchFlags</link> {
     // Gjs wrapper for g_regex_get_match_flags()
 }
   </code></synopsis>

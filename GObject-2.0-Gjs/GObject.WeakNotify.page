@@ -10,7 +10,7 @@
   </info>
   <title>GObject.WeakNotify</title>
   <synopsis><code mime="text/x-gjs">
-function onWeakNotify(data: gpointer, where_the_object_was: GObject.Object): void {
+function onWeakNotify(data: void, where_the_object_was: <link xref="GObject.Object">GObject.Object</link>): void {
 }
   </code></synopsis>
   <p>A <link xref="GObject.WeakNotify"/> function can be added to an object as a callback that gets

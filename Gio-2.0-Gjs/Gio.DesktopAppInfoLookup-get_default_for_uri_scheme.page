@@ -10,7 +10,7 @@
   </info>
   <title>Gio.DesktopAppInfoLookup::get_default_for_uri_scheme</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_default_for_uri_scheme(uri_scheme: String): Gio.AppInfo {
+function vfunc_get_default_for_uri_scheme(uri_scheme: String): <link xref="Gio.AppInfo">Gio.AppInfo</link> {
 }
   </code></synopsis>
   <p>Gets the default application for launching applications

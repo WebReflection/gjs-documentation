@@ -20,7 +20,7 @@
   </info>
   <title>Gio.MountOperation.prototype.reply</title>
   <synopsis><code mime="text/x-gjs">
-function reply(result: Gio.MountOperationResult): void {
+function reply(result: <link xref="Gio.MountOperationResult">Gio.MountOperationResult</link>): void {
     // Gjs wrapper for g_mount_operation_reply()
 }
   </code></synopsis>

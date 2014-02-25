@@ -10,7 +10,7 @@
   </info>
   <title>GLib.HookFindFunc</title>
   <synopsis><code mime="text/x-gjs">
-function onHookFindFunc(hook: GLib.Hook, data: gpointer): Boolean {
+function onHookFindFunc(hook: <link xref="GLib.Hook">GLib.Hook</link>, data: void): Boolean {
 }
   </code></synopsis>
   <p>Defines the type of the function passed to <link xref="GLib.find"/>.</p>

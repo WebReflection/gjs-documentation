@@ -13,7 +13,7 @@
       </api:returns>
       <api:name>g_mapped_file_new_from_fd</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>fd</api:name>
       </api:arg>
       <api:arg>
@@ -24,7 +24,7 @@
   </info>
   <title>GLib.MappedFile.new_from_fd</title>
   <synopsis><code mime="text/x-gjs">
-function new_from_fd(fd: Number, writable: Boolean): GLib.MappedFile {
+function new_from_fd(fd: Number(gint), writable: Boolean): <link xref="GLib.MappedFile">GLib.MappedFile</link> {
     // Gjs wrapper for g_mapped_file_new_from_fd()
 }
   </code></synopsis>

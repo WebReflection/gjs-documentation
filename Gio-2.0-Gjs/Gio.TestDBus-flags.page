@@ -11,7 +11,7 @@
   </info>
   <title>Gio.TestDBus.flags</title>
   <synopsis><code mime="text/x-gjs">
-TestDBus.flags: Gio.TestDBusFlags (Read / Write / Construct Only)
+TestDBus.flags: <link xref="Gio.TestDBusFlags">Gio.TestDBusFlags</link> (Read / Write / Construct Only)
   </code></synopsis>
   <p><link xref="Gio.TestDBusFlags"/> specifying the behaviour of the D-Bus session.</p>
   <p>Since 2.34</p>

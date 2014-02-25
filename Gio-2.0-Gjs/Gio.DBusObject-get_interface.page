@@ -10,7 +10,7 @@
   </info>
   <title>Gio.DBusObject::get_interface</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_interface(interface_name: String): Gio.DBusInterface {
+function vfunc_get_interface(interface_name: String): <link xref="Gio.DBusInterface">Gio.DBusInterface</link> {
 }
   </code></synopsis>
   <p>Gets the D-Bus interface with name <code>interface_name</code> associated with

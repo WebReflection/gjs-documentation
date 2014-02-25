@@ -11,7 +11,7 @@
   </info>
   <title>GObject.TypePluginClass.complete_type_info</title>
   <synopsis><code mime="text/x-gjs">
-TypePluginClass.complete_type_info: GObject.TypePluginCompleteTypeInfo (Read)
+TypePluginClass.complete_type_info: <link xref="GObject.TypePluginCompleteTypeInfo">GObject.TypePluginCompleteTypeInfo</link> (Read)
   </code></synopsis>
   <p>Fills in the <link xref="GObject.TypeInfo"/> and
  <link xref="GObject.TypeValueTable"/> structs for the type. The structs are initialized

@@ -10,7 +10,7 @@
   </info>
   <title>Gio.SettingsGetMapping</title>
   <synopsis><code mime="text/x-gjs">
-function onSettingsGetMapping(value: GLib.Variant): [ok: Boolean, result: gpointer] {
+function onSettingsGetMapping(value: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>): [ok: Boolean, result: void] {
 }
   </code></synopsis>
   <p>The type of the function that is used to convert from a value stored

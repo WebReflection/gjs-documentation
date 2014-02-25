@@ -9,7 +9,7 @@
     <link xref="Gio.Socket" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>gssize</api:type>
+        <api:type>Number(gssize)</api:type>
       </api:returns>
       <api:name>g_socket_send_message</api:name>
       <api:arg>
@@ -25,7 +25,7 @@
         <api:name>messages</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>flags</api:name>
       </api:arg>
       <api:arg>
@@ -36,7 +36,7 @@
   </info>
   <title>Gio.Socket.prototype.send_message</title>
   <synopsis><code mime="text/x-gjs">
-function send_message(address: Gio.SocketAddress, vectors: Array(Gio.OutputVector), messages: Array(Gio.SocketControlMessage), flags: Number, cancellable: Gio.Cancellable): gssize {
+function send_message(address: <link xref="Gio.SocketAddress">Gio.SocketAddress</link>, vectors: Array(<link xref="Gio.OutputVector">Gio.OutputVector</link>), messages: Array(<link xref="Gio.SocketControlMessage">Gio.SocketControlMessage</link>), flags: Number(gint), cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Number(gssize) {
     // Gjs wrapper for g_socket_send_message()
 }
   </code></synopsis>

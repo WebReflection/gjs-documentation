@@ -20,7 +20,7 @@
   </info>
   <title>Gio.TlsConnection.prototype.set_interaction</title>
   <synopsis><code mime="text/x-gjs">
-function set_interaction(interaction: Gio.TlsInteraction): void {
+function set_interaction(interaction: <link xref="Gio.TlsInteraction">Gio.TlsInteraction</link>): void {
     // Gjs wrapper for g_tls_connection_set_interaction()
 }
   </code></synopsis>

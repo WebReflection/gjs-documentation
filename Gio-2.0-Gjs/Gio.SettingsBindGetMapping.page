@@ -10,7 +10,7 @@
   </info>
   <title>Gio.SettingsBindGetMapping</title>
   <synopsis><code mime="text/x-gjs">
-function onSettingsBindGetMapping(value: GObject.Value, variant: GLib.Variant): Boolean {
+function onSettingsBindGetMapping(value: <link href="../GObject-2.0/GObject.Value.page">GObject.Value</link>, variant: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>): Boolean {
 }
   </code></synopsis>
   <p>The type for the function that is used to convert from <link xref="Gio.Settings"/> to

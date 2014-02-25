@@ -21,7 +21,7 @@
         <api:name>domain</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>code</api:name>
       </api:arg>
       <api:arg>
@@ -32,7 +32,7 @@
   </info>
   <title>GLib.set_error_literal</title>
   <synopsis><code mime="text/x-gjs">
-function set_error_literal(err: GLib.Error, domain: GLib.Quark, code: Number, message: String): void {
+function set_error_literal(err: <link xref="GLib.Error">GLib.Error</link>, domain: <link xref="GLib.Quark">GLib.Quark</link>, code: Number(gint), message: String): void {
     // Gjs wrapper for g_set_error_literal()
 }
   </code></synopsis>

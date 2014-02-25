@@ -20,7 +20,7 @@
   </info>
   <title>Gio.encode_gerror</title>
   <synopsis><code mime="text/x-gjs">
-function encode_gerror(error: GLib.Error): String {
+function encode_gerror(error: <link href="../GLib-2.0/GLib.Error.page">GLib.Error</link>): String {
     // Gjs wrapper for g_dbus_error_encode_gerror()
 }
   </code></synopsis>

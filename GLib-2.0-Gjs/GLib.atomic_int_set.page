@@ -13,18 +13,18 @@
       </api:returns>
       <api:name>g_atomic_int_set</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>atomic</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>newval</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.atomic_int_set</title>
   <synopsis><code mime="text/x-gjs">
-function atomic_int_set(atomic: Number, newval: Number): void {
+function atomic_int_set(atomic: Number(gint), newval: Number(gint)): void {
     // Gjs wrapper for g_atomic_int_set()
 }
   </code></synopsis>

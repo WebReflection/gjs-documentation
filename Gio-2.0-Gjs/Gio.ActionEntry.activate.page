@@ -10,7 +10,7 @@
   </info>
   <title>Gio.ActionEntry.activate</title>
   <synopsis><code mime="text/x-gjs">
-function onactivate(action: Gio.SimpleAction, parameter: GLib.Variant): void {
+function onactivate(action: <link xref="Gio.SimpleAction">Gio.SimpleAction</link>, parameter: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>): void {
 }
   </code></synopsis>
 

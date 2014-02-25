@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusInterfaceInfo.signals</title>
   <synopsis><code mime="text/x-gjs">
-DBusInterfaceInfo.signals: Array(Gio.DBusSignalInfo) (Read / Write)
+DBusInterfaceInfo.signals: Array(<link xref="Gio.DBusSignalInfo">Gio.DBusSignalInfo</link>) (Read / Write)
   </code></synopsis>
   <p>A pointer to a <code>null</code>-terminated array of pointers to <link xref="Gio.DBusSignalInfo"/> structures or <code>null</code> if there are no signals.</p>
 

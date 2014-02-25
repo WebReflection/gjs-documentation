@@ -9,22 +9,22 @@
     <link xref="GLib.DateTime" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_date_time_compare</api:name>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>dt1</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>dt2</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.DateTime.compare</title>
   <synopsis><code mime="text/x-gjs">
-function compare(dt1: gpointer, dt2: gpointer): Number {
+function compare(dt1: void, dt2: void): Number(gint) {
     // Gjs wrapper for g_date_time_compare()
 }
   </code></synopsis>

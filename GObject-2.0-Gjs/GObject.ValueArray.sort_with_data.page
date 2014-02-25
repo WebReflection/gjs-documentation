@@ -20,7 +20,7 @@
   </info>
   <title>GObject.ValueArray.prototype.sort_with_data</title>
   <synopsis><code mime="text/x-gjs">
-function sort_with_data(compare_func: GLib.CompareDataFunc): GObject.ValueArray {
+function sort_with_data(compare_func: <link href="../GLib-2.0/GLib.CompareDataFunc.page">GLib.CompareDataFunc</link>): <link xref="GObject.ValueArray">GObject.ValueArray</link> {
     // Gjs wrapper for g_value_array_sort_with_data()
 }
   </code></synopsis>

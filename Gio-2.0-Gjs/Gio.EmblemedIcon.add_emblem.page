@@ -20,7 +20,7 @@
   </info>
   <title>Gio.EmblemedIcon.prototype.add_emblem</title>
   <synopsis><code mime="text/x-gjs">
-function add_emblem(emblem: Gio.Emblem): void {
+function add_emblem(emblem: <link xref="Gio.Emblem">Gio.Emblem</link>): void {
     // Gjs wrapper for g_emblemed_icon_add_emblem()
 }
   </code></synopsis>

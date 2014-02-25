@@ -10,7 +10,7 @@
   </info>
   <title>Gio.DBusSignalCallback</title>
   <synopsis><code mime="text/x-gjs">
-function onDBusSignalCallback(connection: Gio.DBusConnection, sender_name: String, object_path: String, interface_name: String, signal_name: String, parameters: GLib.Variant): void {
+function onDBusSignalCallback(connection: <link xref="Gio.DBusConnection">Gio.DBusConnection</link>, sender_name: String, object_path: String, interface_name: String, signal_name: String, parameters: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>): void {
 }
   </code></synopsis>
   <p>Signature for callback function used in <link xref="Gio.DBusConnection.signal_subscribe"/>.</p>

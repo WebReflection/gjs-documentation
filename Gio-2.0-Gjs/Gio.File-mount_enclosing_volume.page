@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::mount_enclosing_volume</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_mount_enclosing_volume(flags: Gio.MountMountFlags, mount_operation: Gio.MountOperation, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+function vfunc_mount_enclosing_volume(flags: <link xref="Gio.MountMountFlags">Gio.MountMountFlags</link>, mount_operation: <link xref="Gio.MountOperation">Gio.MountOperation</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
 }
   </code></synopsis>
   <p>Starts a <code>mount_operation</code>, mounting the volume that contains

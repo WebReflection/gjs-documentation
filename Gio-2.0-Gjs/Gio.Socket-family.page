@@ -11,7 +11,7 @@
   </info>
   <title>Gio.Socket.family</title>
   <synopsis><code mime="text/x-gjs">
-Socket.family: Gio.SocketFamily (Read / Write / Construct Only)
+Socket.family: <link xref="Gio.SocketFamily">Gio.SocketFamily</link> (Read / Write / Construct Only)
   </code></synopsis>
 
 

@@ -24,7 +24,7 @@
   </info>
   <title>Gio.DBusConnection.prototype.send_message</title>
   <synopsis><code mime="text/x-gjs">
-function send_message(message: Gio.DBusMessage, flags: Gio.DBusSendMessageFlags): [ok: Boolean, out_serial: guint32] {
+function send_message(message: <link xref="Gio.DBusMessage">Gio.DBusMessage</link>, flags: <link xref="Gio.DBusSendMessageFlags">Gio.DBusSendMessageFlags</link>): [ok: Boolean, out_serial: Number(guint32)] {
     // Gjs wrapper for g_dbus_connection_send_message()
 }
   </code></synopsis>

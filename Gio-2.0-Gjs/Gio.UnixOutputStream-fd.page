@@ -11,7 +11,7 @@
   </info>
   <title>Gio.UnixOutputStream.fd</title>
   <synopsis><code mime="text/x-gjs">
-UnixOutputStream.fd: Number (Read / Write / Construct Only)
+UnixOutputStream.fd: Number(gint) (Read / Write / Construct Only)
   </code></synopsis>
   <p>The file descriptor that the stream writes to.</p>
   <p>Since 2.20</p>

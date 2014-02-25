@@ -9,14 +9,14 @@
     <link xref="Gio.TlsBackend" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>GType</api:type>
+        <api:type>GObject.Type</api:type>
       </api:returns>
       <api:name>g_tls_backend_get_file_database_type</api:name>
     </api:function>
   </info>
   <title>Gio.TlsBackend.prototype.get_file_database_type</title>
   <synopsis><code mime="text/x-gjs">
-function get_file_database_type(): GType {
+function get_file_database_type(): GObject.Type {
     // Gjs wrapper for g_tls_backend_get_file_database_type()
 }
   </code></synopsis>

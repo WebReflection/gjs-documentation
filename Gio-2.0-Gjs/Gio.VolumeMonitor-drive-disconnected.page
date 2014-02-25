@@ -11,7 +11,7 @@
   </info>
   <title>Gio.VolumeMonitor::drive-disconnected</title>
   <synopsis><code mime="text/x-gjs">
-connect('drive-disconnected', function (volumeMonitor, drive: Gio.Drive, ): void);
+connect('drive-disconnected', function (volumeMonitor, drive: <link xref="Gio.Drive">Gio.Drive</link>, ): void);
   </code></synopsis>
   <p>Emitted when a drive is disconnected from the system.</p>
 

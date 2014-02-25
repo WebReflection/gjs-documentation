@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::set_display_name_async</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_set_display_name_async(display_name: String, io_priority: Number, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+function vfunc_set_display_name_async(display_name: String, io_priority: Number(gint), cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
 }
   </code></synopsis>
   <p>Asynchronously sets the display name for a given <link xref="Gio.File"/>.</p>  <p>For more details, see <link xref="Gio.File.set_display_name"/> which is

@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_subprocess_send_signal</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>signal_num</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>Gio.Subprocess.prototype.send_signal</title>
   <synopsis><code mime="text/x-gjs">
-function send_signal(signal_num: Number): void {
+function send_signal(signal_num: Number(gint)): void {
     // Gjs wrapper for g_subprocess_send_signal()
 }
   </code></synopsis>

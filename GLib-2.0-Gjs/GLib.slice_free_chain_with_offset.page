@@ -13,22 +13,22 @@
       </api:returns>
       <api:name>g_slice_free_chain_with_offset</api:name>
       <api:arg>
-        <api:type>gsize</api:type>
+        <api:type>Number(gsize)</api:type>
         <api:name>block_size</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>mem_chain</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gsize</api:type>
+        <api:type>Number(gsize)</api:type>
         <api:name>next_offset</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.slice_free_chain_with_offset</title>
   <synopsis><code mime="text/x-gjs">
-function slice_free_chain_with_offset(block_size: gsize, mem_chain: gpointer, next_offset: gsize): void {
+function slice_free_chain_with_offset(block_size: Number(gsize), mem_chain: void, next_offset: Number(gsize)): void {
     // Gjs wrapper for g_slice_free_chain_with_offset()
 }
   </code></synopsis>

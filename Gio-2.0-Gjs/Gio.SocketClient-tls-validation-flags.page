@@ -11,7 +11,7 @@
   </info>
   <title>Gio.SocketClient.tls_validation_flags</title>
   <synopsis><code mime="text/x-gjs">
-SocketClient.tls_validation_flags: Gio.TlsCertificateFlags (Read / Write / Construct)
+SocketClient.tls_validation_flags: <link xref="Gio.TlsCertificateFlags">Gio.TlsCertificateFlags</link> (Read / Write / Construct)
   </code></synopsis>
 
 

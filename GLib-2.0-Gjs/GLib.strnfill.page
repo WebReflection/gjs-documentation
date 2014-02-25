@@ -13,18 +13,18 @@
       </api:returns>
       <api:name>g_strnfill</api:name>
       <api:arg>
-        <api:type>gsize</api:type>
+        <api:type>Number(gsize)</api:type>
         <api:name>length</api:name>
       </api:arg>
       <api:arg>
-        <api:type>String</api:type>
+        <api:type>Number(gchar)</api:type>
         <api:name>fill_char</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.strnfill</title>
   <synopsis><code mime="text/x-gjs">
-function strnfill(length: gsize, fill_char: String): String {
+function strnfill(length: Number(gsize), fill_char: Number(gchar)): String {
     // Gjs wrapper for g_strnfill()
 }
   </code></synopsis>

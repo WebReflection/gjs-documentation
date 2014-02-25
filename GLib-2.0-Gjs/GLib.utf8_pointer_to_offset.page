@@ -9,7 +9,7 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(glong)</api:type>
       </api:returns>
       <api:name>g_utf8_pointer_to_offset</api:name>
       <api:arg>
@@ -24,7 +24,7 @@
   </info>
   <title>GLib.utf8_pointer_to_offset</title>
   <synopsis><code mime="text/x-gjs">
-function utf8_pointer_to_offset(str: String, pos: String): Number {
+function utf8_pointer_to_offset(str: String, pos: String): Number(glong) {
     // Gjs wrapper for g_utf8_pointer_to_offset()
 }
   </code></synopsis>

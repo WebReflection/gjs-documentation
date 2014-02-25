@@ -11,7 +11,7 @@
   </info>
   <title>GLib.DebugKey.value</title>
   <synopsis><code mime="text/x-gjs">
-DebugKey.value: Number (Read / Write)
+DebugKey.value: Number(guint) (Read / Write)
   </code></synopsis>
   <p>the flag</p>
 

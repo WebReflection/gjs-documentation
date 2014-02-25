@@ -11,7 +11,7 @@
   </info>
   <title>Gio.SocketClient::event</title>
   <synopsis><code mime="text/x-gjs">
-connect('event', function (socketClient, event: Gio.SocketClientEvent, connectable: Gio.SocketConnectable, connection: Gio.IOStream, ): void);
+connect('event', function (socketClient, event: <link xref="Gio.SocketClientEvent">Gio.SocketClientEvent</link>, connectable: <link xref="Gio.SocketConnectable">Gio.SocketConnectable</link>, connection: <link xref="Gio.IOStream">Gio.IOStream</link>, ): void);
   </code></synopsis>
   <p>Emitted when @client's activity on <code>connectable</code> changes state.
 Among other things, this can be used to provide progress

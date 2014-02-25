@@ -9,7 +9,7 @@
     <link xref="GObject.TypeModule" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>GType</api:type>
+        <api:type>GObject.Type</api:type>
       </api:returns>
       <api:name>g_type_module_register_enum</api:name>
       <api:arg>
@@ -24,7 +24,7 @@
   </info>
   <title>GObject.TypeModule.prototype.register_enum</title>
   <synopsis><code mime="text/x-gjs">
-function register_enum(name: String, const_static_values: GObject.EnumValue): GType {
+function register_enum(name: String, const_static_values: <link xref="GObject.EnumValue">GObject.EnumValue</link>): GObject.Type {
     // Gjs wrapper for g_type_module_register_enum()
 }
   </code></synopsis>

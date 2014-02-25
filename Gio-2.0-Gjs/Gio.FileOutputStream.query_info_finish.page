@@ -20,7 +20,7 @@
   </info>
   <title>Gio.FileOutputStream.prototype.query_info_finish</title>
   <synopsis><code mime="text/x-gjs">
-function query_info_finish(result: Gio.AsyncResult): Gio.FileInfo {
+function query_info_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): <link xref="Gio.FileInfo">Gio.FileInfo</link> {
     // Gjs wrapper for g_file_output_stream_query_info_finish()
 }
   </code></synopsis>

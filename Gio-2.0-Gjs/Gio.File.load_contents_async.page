@@ -24,7 +24,7 @@
   </info>
   <title>Gio.File.prototype.load_contents_async</title>
   <synopsis><code mime="text/x-gjs">
-function load_contents_async(cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+function load_contents_async(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
     // Gjs wrapper for g_file_load_contents_async()
 }
   </code></synopsis>

@@ -24,7 +24,7 @@
   </info>
   <title>Gio.Notification.prototype.set_default_action_and_target_value</title>
   <synopsis><code mime="text/x-gjs">
-function set_default_action_and_target_value(action: String, target: GLib.Variant): void {
+function set_default_action_and_target_value(action: String, target: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>): void {
     // Gjs wrapper for g_notification_set_default_action_and_target_value()
 }
   </code></synopsis>

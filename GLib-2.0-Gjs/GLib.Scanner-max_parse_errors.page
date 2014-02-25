@@ -11,7 +11,7 @@
   </info>
   <title>GLib.Scanner.max_parse_errors</title>
   <synopsis><code mime="text/x-gjs">
-Scanner.max_parse_errors: Number (Read / Write)
+Scanner.max_parse_errors: Number(guint) (Read / Write)
   </code></synopsis>
   <p>unused</p>
 

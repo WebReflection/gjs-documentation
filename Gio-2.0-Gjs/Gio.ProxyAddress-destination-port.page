@@ -11,7 +11,7 @@
   </info>
   <title>Gio.ProxyAddress.destination_port</title>
   <synopsis><code mime="text/x-gjs">
-ProxyAddress.destination_port: Number (Read / Write / Construct Only)
+ProxyAddress.destination_port: Number(guint) (Read / Write / Construct Only)
   </code></synopsis>
 
 

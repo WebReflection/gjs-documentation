@@ -11,7 +11,7 @@
   </info>
   <title>Gio.VolumeMonitor::mount-pre-unmount</title>
   <synopsis><code mime="text/x-gjs">
-connect('mount-pre-unmount', function (volumeMonitor, mount: Gio.Mount, ): void);
+connect('mount-pre-unmount', function (volumeMonitor, mount: <link xref="Gio.Mount">Gio.Mount</link>, ): void);
   </code></synopsis>
   <p>Emitted when a mount is about to be removed.</p>
 

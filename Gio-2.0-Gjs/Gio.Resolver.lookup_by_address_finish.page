@@ -20,7 +20,7 @@
   </info>
   <title>Gio.Resolver.prototype.lookup_by_address_finish</title>
   <synopsis><code mime="text/x-gjs">
-function lookup_by_address_finish(result: Gio.AsyncResult): String {
+function lookup_by_address_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): String {
     // Gjs wrapper for g_resolver_lookup_by_address_finish()
 }
   </code></synopsis>

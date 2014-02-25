@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_date_set_time_t</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(glong)</api:type>
         <api:name>timet</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.Date.prototype.set_time_t</title>
   <synopsis><code mime="text/x-gjs">
-function set_time_t(timet: Number): void {
+function set_time_t(timet: Number(glong)): void {
     // Gjs wrapper for g_date_set_time_t()
 }
   </code></synopsis>

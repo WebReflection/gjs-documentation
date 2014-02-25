@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_dbus_connection_remove_filter</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
         <api:name>filter_id</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>Gio.DBusConnection.prototype.remove_filter</title>
   <synopsis><code mime="text/x-gjs">
-function remove_filter(filter_id: Number): void {
+function remove_filter(filter_id: Number(guint)): void {
     // Gjs wrapper for g_dbus_connection_remove_filter()
 }
   </code></synopsis>

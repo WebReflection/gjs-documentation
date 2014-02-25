@@ -13,7 +13,7 @@
       </api:returns>
       <api:name>g_settings_unbind</api:name>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>object</api:name>
       </api:arg>
       <api:arg>
@@ -24,7 +24,7 @@
   </info>
   <title>Gio.Settings.unbind</title>
   <synopsis><code mime="text/x-gjs">
-function unbind(object: gpointer, property: String): void {
+function unbind(object: void, property: String): void {
     // Gjs wrapper for g_settings_unbind()
 }
   </code></synopsis>

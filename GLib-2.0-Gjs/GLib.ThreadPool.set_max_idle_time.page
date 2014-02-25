@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_thread_pool_set_max_idle_time</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
         <api:name>interval</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.ThreadPool.set_max_idle_time</title>
   <synopsis><code mime="text/x-gjs">
-function set_max_idle_time(interval: Number): void {
+function set_max_idle_time(interval: Number(guint)): void {
     // Gjs wrapper for g_thread_pool_set_max_idle_time()
 }
   </code></synopsis>

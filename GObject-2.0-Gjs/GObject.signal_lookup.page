@@ -9,7 +9,7 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
       </api:returns>
       <api:name>g_signal_lookup</api:name>
       <api:arg>
@@ -17,14 +17,14 @@
         <api:name>name</api:name>
       </api:arg>
       <api:arg>
-        <api:type>GType</api:type>
+        <api:type>GObject.Type</api:type>
         <api:name>itype</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GObject.signal_lookup</title>
   <synopsis><code mime="text/x-gjs">
-function signal_lookup(name: String, itype: GType): Number {
+function signal_lookup(name: String, itype: GObject.Type): Number(guint) {
     // Gjs wrapper for g_signal_lookup()
 }
   </code></synopsis>

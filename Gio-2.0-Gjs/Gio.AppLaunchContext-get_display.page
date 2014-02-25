@@ -10,7 +10,7 @@
   </info>
   <title>Gio.AppLaunchContext::get_display</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_display(info: Gio.AppInfo, files: Array(Gio.File)): String {
+function vfunc_get_display(info: <link xref="Gio.AppInfo">Gio.AppInfo</link>, files: Array(<link xref="Gio.File">Gio.File</link>)): String {
 }
   </code></synopsis>
   <p>Gets the display string for the <code>context</code>. This is used to ensure new

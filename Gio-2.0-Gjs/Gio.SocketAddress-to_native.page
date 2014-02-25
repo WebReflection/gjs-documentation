@@ -10,7 +10,7 @@
   </info>
   <title>Gio.SocketAddress::to_native</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_to_native(dest: gpointer, destlen: gsize): Boolean {
+function vfunc_to_native(dest: void, destlen: Number(gsize)): Boolean {
 }
   </code></synopsis>
   <p>Converts a <link xref="Gio.SocketAddress"/> to a native struct sockaddr, which can

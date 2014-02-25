@@ -11,7 +11,7 @@
   </info>
   <title>GLib.Scanner.value</title>
   <synopsis><code mime="text/x-gjs">
-Scanner.value: GLib.TokenValue (Read)
+Scanner.value: <link xref="GLib.TokenValue">GLib.TokenValue</link> (Read)
   </code></synopsis>
   <p>value of the last token from <link xref="GLib.get_next_token"/></p>
 

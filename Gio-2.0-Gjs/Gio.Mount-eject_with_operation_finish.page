@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Mount::eject_with_operation_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_eject_with_operation_finish(result: Gio.AsyncResult): Boolean {
+function vfunc_eject_with_operation_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): Boolean {
 }
   </code></synopsis>
   <p>Finishes ejecting a mount. If any errors occurred during the operation,

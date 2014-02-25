@@ -9,7 +9,7 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>filename</api:type>
+        <api:type>String</api:type>
       </api:returns>
       <api:name>g_filename_from_uri</api:name>
       <api:arg>
@@ -20,7 +20,7 @@
   </info>
   <title>GLib.filename_from_uri</title>
   <synopsis><code mime="text/x-gjs">
-function filename_from_uri(uri: String): [return_value: filename, hostname: String] {
+function filename_from_uri(uri: String): [return_value: String, hostname: String] {
     // Gjs wrapper for g_filename_from_uri()
 }
   </code></synopsis>

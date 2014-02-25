@@ -11,7 +11,7 @@
   </info>
   <title>GLib.ScannerConfig.scan_identifier_1char</title>
   <synopsis><code mime="text/x-gjs">
-ScannerConfig.scan_identifier_1char: Number (Read / Write)
+ScannerConfig.scan_identifier_1char: Number(guint) (Read / Write)
   </code></synopsis>
   <p>specifies if single-character
     identifiers are recognized (the default is <code>false</code>).</p>

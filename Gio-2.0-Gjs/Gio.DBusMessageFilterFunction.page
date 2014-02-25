@@ -10,7 +10,7 @@
   </info>
   <title>Gio.DBusMessageFilterFunction</title>
   <synopsis><code mime="text/x-gjs">
-function onDBusMessageFilterFunction(connection: Gio.DBusConnection, message: Gio.DBusMessage, incoming: Boolean): Gio.DBusMessage {
+function onDBusMessageFilterFunction(connection: <link xref="Gio.DBusConnection">Gio.DBusConnection</link>, message: <link xref="Gio.DBusMessage">Gio.DBusMessage</link>, incoming: Boolean): <link xref="Gio.DBusMessage">Gio.DBusMessage</link> {
 }
   </code></synopsis>
   <p>Signature for function used in <link xref="Gio.DBusConnection.add_filter"/>.</p>  <p>A filter function is passed a <link xref="Gio.DBusMessage"/> and expected to return

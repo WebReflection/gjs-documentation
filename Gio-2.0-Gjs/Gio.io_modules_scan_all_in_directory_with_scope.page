@@ -24,7 +24,7 @@
   </info>
   <title>Gio.io_modules_scan_all_in_directory_with_scope</title>
   <synopsis><code mime="text/x-gjs">
-function io_modules_scan_all_in_directory_with_scope(dirname: String, scope: Gio.IOModuleScope): void {
+function io_modules_scan_all_in_directory_with_scope(dirname: String, scope: <link xref="Gio.IOModuleScope">Gio.IOModuleScope</link>): void {
     // Gjs wrapper for g_io_modules_scan_all_in_directory_with_scope()
 }
   </code></synopsis>

@@ -17,7 +17,7 @@
         <api:name>haystack</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gssize</api:type>
+        <api:type>Number(gssize)</api:type>
         <api:name>haystack_len</api:name>
       </api:arg>
       <api:arg>
@@ -28,7 +28,7 @@
   </info>
   <title>GLib.strstr_len</title>
   <synopsis><code mime="text/x-gjs">
-function strstr_len(haystack: String, haystack_len: gssize, needle: String): String {
+function strstr_len(haystack: String, haystack_len: Number(gssize), needle: String): String {
     // Gjs wrapper for g_strstr_len()
 }
   </code></synopsis>

@@ -17,7 +17,7 @@
         <api:name>str</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gssize</api:type>
+        <api:type>Number(gssize)</api:type>
         <api:name>len</api:name>
       </api:arg>
       <api:arg>
@@ -25,18 +25,18 @@
         <api:name>converter</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gsize</api:type>
+        <api:type>Number(gsize)</api:type>
         <api:name>bytes_read</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gsize</api:type>
+        <api:type>Number(gsize)</api:type>
         <api:name>bytes_written</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.convert_with_iconv</title>
   <synopsis><code mime="text/x-gjs">
-function convert_with_iconv(str: String, len: gssize, converter: GLib.IConv, bytes_read: gsize, bytes_written: gsize): String {
+function convert_with_iconv(str: String, len: Number(gssize), converter: <link xref="GLib.IConv">GLib.IConv</link>, bytes_read: Number(gsize), bytes_written: Number(gsize)): String {
     // Gjs wrapper for g_convert_with_iconv()
 }
   </code></synopsis>

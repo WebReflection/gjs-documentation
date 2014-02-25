@@ -10,7 +10,7 @@
   </info>
   <title>GLib.MarkupParser.text</title>
   <synopsis><code mime="text/x-gjs">
-function ontext(context: GLib.MarkupParseContext, text: String, text_len: gsize): void {
+function ontext(context: <link xref="GLib.MarkupParseContext">GLib.MarkupParseContext</link>, text: String, text_len: Number(gsize)): void {
 }
   </code></synopsis>
 

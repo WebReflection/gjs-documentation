@@ -10,7 +10,7 @@
   </info>
   <title>Gio.SocketConnectable::proxy_enumerate</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_proxy_enumerate(): Gio.SocketAddressEnumerator {
+function vfunc_proxy_enumerate(): <link xref="Gio.SocketAddressEnumerator">Gio.SocketAddressEnumerator</link> {
 }
   </code></synopsis>
   <p>Creates a <link xref="Gio.SocketAddressEnumerator"/> for <code>connectable</code> that will

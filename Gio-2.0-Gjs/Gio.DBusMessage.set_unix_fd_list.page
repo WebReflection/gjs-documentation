@@ -20,7 +20,7 @@
   </info>
   <title>Gio.DBusMessage.prototype.set_unix_fd_list</title>
   <synopsis><code mime="text/x-gjs">
-function set_unix_fd_list(fd_list: Gio.UnixFDList): void {
+function set_unix_fd_list(fd_list: <link xref="Gio.UnixFDList">Gio.UnixFDList</link>): void {
     // Gjs wrapper for g_dbus_message_set_unix_fd_list()
 }
   </code></synopsis>

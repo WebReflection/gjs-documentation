@@ -11,7 +11,7 @@
   </info>
   <title>GLib.Queue.length</title>
   <synopsis><code mime="text/x-gjs">
-Queue.length: Number (Read / Write)
+Queue.length: Number(guint) (Read / Write)
   </code></synopsis>
   <p>the number of elements in the queue</p>
 

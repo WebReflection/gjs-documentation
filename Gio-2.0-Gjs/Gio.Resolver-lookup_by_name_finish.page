@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Resolver::lookup_by_name_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_lookup_by_name_finish(result: Gio.AsyncResult): Array(Gio.InetAddress) {
+function vfunc_lookup_by_name_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): Array(<link xref="Gio.InetAddress">Gio.InetAddress</link>) {
 }
   </code></synopsis>
   <p>Retrieves the result of a call to

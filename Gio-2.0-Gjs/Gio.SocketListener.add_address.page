@@ -32,7 +32,7 @@
   </info>
   <title>Gio.SocketListener.prototype.add_address</title>
   <synopsis><code mime="text/x-gjs">
-function add_address(address: Gio.SocketAddress, type: Gio.SocketType, protocol: Gio.SocketProtocol, source_object: GObject.Object): [ok: Boolean, effective_address: Gio.SocketAddress] {
+function add_address(address: <link xref="Gio.SocketAddress">Gio.SocketAddress</link>, type: <link xref="Gio.SocketType">Gio.SocketType</link>, protocol: <link xref="Gio.SocketProtocol">Gio.SocketProtocol</link>, source_object: <link href="../GObject-2.0/GObject.Object.page">GObject.Object</link>): [ok: Boolean, effective_address: <link xref="Gio.SocketAddress">Gio.SocketAddress</link>] {
     // Gjs wrapper for g_socket_listener_add_address()
 }
   </code></synopsis>

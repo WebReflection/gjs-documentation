@@ -11,7 +11,7 @@
   </info>
   <title>GObject.EnumClass.g_type_class</title>
   <synopsis><code mime="text/x-gjs">
-EnumClass.g_type_class: GObject.TypeClass (Read)
+EnumClass.g_type_class: <link xref="GObject.TypeClass">GObject.TypeClass</link> (Read)
   </code></synopsis>
   <p>the parent class</p>
 

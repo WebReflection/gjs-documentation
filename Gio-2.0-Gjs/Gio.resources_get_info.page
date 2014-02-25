@@ -24,7 +24,7 @@
   </info>
   <title>Gio.resources_get_info</title>
   <synopsis><code mime="text/x-gjs">
-function resources_get_info(path: String, lookup_flags: Gio.ResourceLookupFlags): [ok: Boolean, size: gsize, flags: guint32] {
+function resources_get_info(path: String, lookup_flags: <link xref="Gio.ResourceLookupFlags">Gio.ResourceLookupFlags</link>): [ok: Boolean, size: Number(gsize), flags: Number(guint32)] {
     // Gjs wrapper for g_resources_get_info()
 }
   </code></synopsis>

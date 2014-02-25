@@ -13,18 +13,18 @@
       </api:returns>
       <api:name>g_int_equal</api:name>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>v1</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>v2</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.int_equal</title>
   <synopsis><code mime="text/x-gjs">
-function int_equal(v1: gpointer, v2: gpointer): Boolean {
+function int_equal(v1: void, v2: void): Boolean {
     // Gjs wrapper for g_int_equal()
 }
   </code></synopsis>

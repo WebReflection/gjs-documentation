@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_scanner_input_file</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>input_fd</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.Scanner.prototype.input_file</title>
   <synopsis><code mime="text/x-gjs">
-function input_file(input_fd: Number): void {
+function input_file(input_fd: Number(gint)): void {
     // Gjs wrapper for g_scanner_input_file()
 }
   </code></synopsis>

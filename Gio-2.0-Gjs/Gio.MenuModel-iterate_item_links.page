@@ -10,7 +10,7 @@
   </info>
   <title>Gio.MenuModel::iterate_item_links</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_iterate_item_links(item_index: Number): Gio.MenuLinkIter {
+function vfunc_iterate_item_links(item_index: Number(gint)): <link xref="Gio.MenuLinkIter">Gio.MenuLinkIter</link> {
 }
   </code></synopsis>
   <p>Creates a <link xref="Gio.MenuLinkIter"/> to iterate over the links of the item at

@@ -10,7 +10,7 @@
   </info>
   <title>Gio.DBusObjectManager::get_object</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_object(object_path: String): Gio.DBusObject {
+function vfunc_get_object(object_path: String): <link xref="Gio.DBusObject">Gio.DBusObject</link> {
 }
   </code></synopsis>
   <p>Gets the <link xref="Gio.DBusObjectProxy"/> at <code>object_path</code>, if any.</p>

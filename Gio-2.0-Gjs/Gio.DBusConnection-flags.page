@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusConnection.flags</title>
   <synopsis><code mime="text/x-gjs">
-DBusConnection.flags: Gio.DBusConnectionFlags (Write / Construct Only)
+DBusConnection.flags: <link xref="Gio.DBusConnectionFlags">Gio.DBusConnectionFlags</link> (Write / Construct Only)
   </code></synopsis>
   <p>Flags from the <link xref="Gio.DBusConnectionFlags"/> enumeration.</p>
   <p>Since 2.26</p>

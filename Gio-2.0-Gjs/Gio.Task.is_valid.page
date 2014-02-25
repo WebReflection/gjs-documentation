@@ -24,7 +24,7 @@
   </info>
   <title>Gio.Task.is_valid</title>
   <synopsis><code mime="text/x-gjs">
-function is_valid(result: Gio.AsyncResult, source_object: GObject.Object): Boolean {
+function is_valid(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>, source_object: <link href="../GObject-2.0/GObject.Object.page">GObject.Object</link>): Boolean {
     // Gjs wrapper for g_task_is_valid()
 }
   </code></synopsis>

@@ -13,7 +13,7 @@
       </api:returns>
       <api:name>g_initable_newv</api:name>
       <api:arg>
-        <api:type>GType</api:type>
+        <api:type>GObject.Type</api:type>
         <api:name>object_type</api:name>
       </api:arg>
       <api:arg>
@@ -28,7 +28,7 @@
   </info>
   <title>Gio.Initable.newv</title>
   <synopsis><code mime="text/x-gjs">
-function newv(object_type: GType, parameters: Array(GObject.Parameter), cancellable: Gio.Cancellable): GObject.Object {
+function newv(object_type: GObject.Type, parameters: Array(<link href="../GObject-2.0/GObject.Parameter.page">GObject.Parameter</link>), cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): <link href="../GObject-2.0/GObject.Object.page">GObject.Object</link> {
     // Gjs wrapper for g_initable_newv()
 }
   </code></synopsis>

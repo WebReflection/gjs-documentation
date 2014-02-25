@@ -9,14 +9,14 @@
     <link xref="Gio.ApplicationCommandLine" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_application_command_line_get_exit_status</api:name>
     </api:function>
   </info>
   <title>Gio.ApplicationCommandLine.prototype.get_exit_status</title>
   <synopsis><code mime="text/x-gjs">
-function get_exit_status(): Number {
+function get_exit_status(): Number(gint) {
     // Gjs wrapper for g_application_command_line_get_exit_status()
 }
   </code></synopsis>

@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusObjectManagerServer.connection</title>
   <synopsis><code mime="text/x-gjs">
-DBusObjectManagerServer.connection: Gio.DBusConnection (Read / Write)
+DBusObjectManagerServer.connection: <link xref="Gio.DBusConnection">Gio.DBusConnection</link> (Read / Write)
   </code></synopsis>
   <p>The <link xref="Gio.DBusConnection"/> to export objects on.</p>
   <p>Since 2.30</p>

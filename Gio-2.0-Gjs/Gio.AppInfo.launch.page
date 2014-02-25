@@ -24,7 +24,7 @@
   </info>
   <title>Gio.AppInfo.prototype.launch</title>
   <synopsis><code mime="text/x-gjs">
-function launch(files: Array(Gio.File), launch_context: Gio.AppLaunchContext): Boolean {
+function launch(files: Array(<link xref="Gio.File">Gio.File</link>), launch_context: <link xref="Gio.AppLaunchContext">Gio.AppLaunchContext</link>): Boolean {
     // Gjs wrapper for g_app_info_launch()
 }
   </code></synopsis>

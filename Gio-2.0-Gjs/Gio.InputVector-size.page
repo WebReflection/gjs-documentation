@@ -11,7 +11,7 @@
   </info>
   <title>Gio.InputVector.size</title>
   <synopsis><code mime="text/x-gjs">
-InputVector.size: gsize (Read / Write)
+InputVector.size: Number(gsize) (Read / Write)
   </code></synopsis>
   <p>the available size in @buffer.</p>
 

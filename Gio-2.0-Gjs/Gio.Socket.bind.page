@@ -24,7 +24,7 @@
   </info>
   <title>Gio.Socket.prototype.bind</title>
   <synopsis><code mime="text/x-gjs">
-function bind(address: Gio.SocketAddress, allow_reuse: Boolean): Boolean {
+function bind(address: <link xref="Gio.SocketAddress">Gio.SocketAddress</link>, allow_reuse: Boolean): Boolean {
     // Gjs wrapper for g_socket_bind()
 }
   </code></synopsis>

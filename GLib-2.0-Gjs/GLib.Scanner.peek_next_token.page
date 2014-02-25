@@ -16,7 +16,7 @@
   </info>
   <title>GLib.Scanner.prototype.peek_next_token</title>
   <synopsis><code mime="text/x-gjs">
-function peek_next_token(): GLib.TokenType {
+function peek_next_token(): <link xref="GLib.TokenType">GLib.TokenType</link> {
     // Gjs wrapper for g_scanner_peek_next_token()
 }
   </code></synopsis>

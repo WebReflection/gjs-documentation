@@ -28,7 +28,7 @@
   </info>
   <title>Gio.FileMonitor.prototype.emit_event</title>
   <synopsis><code mime="text/x-gjs">
-function emit_event(child: Gio.File, other_file: Gio.File, event_type: Gio.FileMonitorEvent): void {
+function emit_event(child: <link xref="Gio.File">Gio.File</link>, other_file: <link xref="Gio.File">Gio.File</link>, event_type: <link xref="Gio.FileMonitorEvent">Gio.FileMonitorEvent</link>): void {
     // Gjs wrapper for g_file_monitor_emit_event()
 }
   </code></synopsis>

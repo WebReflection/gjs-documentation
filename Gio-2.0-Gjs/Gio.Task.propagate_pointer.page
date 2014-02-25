@@ -9,14 +9,14 @@
     <link xref="Gio.Task" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
       </api:returns>
       <api:name>g_task_propagate_pointer</api:name>
     </api:function>
   </info>
   <title>Gio.Task.prototype.propagate_pointer</title>
   <synopsis><code mime="text/x-gjs">
-function propagate_pointer(): gpointer {
+function propagate_pointer(): void {
     // Gjs wrapper for g_task_propagate_pointer()
 }
   </code></synopsis>

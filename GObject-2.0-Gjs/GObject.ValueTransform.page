@@ -10,7 +10,7 @@
   </info>
   <title>GObject.ValueTransform</title>
   <synopsis><code mime="text/x-gjs">
-function onValueTransform(src_value: GObject.Value, dest_value: GObject.Value): void {
+function onValueTransform(src_value: <link xref="GObject.Value">GObject.Value</link>, dest_value: <link xref="GObject.Value">GObject.Value</link>): void {
 }
   </code></synopsis>
   <p>The type of value transformation functions which can be registered with

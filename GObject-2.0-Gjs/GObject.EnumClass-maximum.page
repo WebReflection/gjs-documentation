@@ -11,7 +11,7 @@
   </info>
   <title>GObject.EnumClass.maximum</title>
   <synopsis><code mime="text/x-gjs">
-EnumClass.maximum: Number (Read / Write)
+EnumClass.maximum: Number(gint) (Read / Write)
   </code></synopsis>
   <p>the largest possible value.</p>
 

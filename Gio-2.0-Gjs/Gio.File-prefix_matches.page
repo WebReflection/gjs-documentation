@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::prefix_matches</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_prefix_matches(file: Gio.File): Boolean {
+function vfunc_prefix_matches(file: <link xref="Gio.File">Gio.File</link>): Boolean {
 }
   </code></synopsis>
   <p>Checks whether <code>file</code> has the prefix specified by <code>prefix</code>.</p>  <p>In other words, if the names of initial elements of <code>file</code>'s

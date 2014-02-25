@@ -12,16 +12,7 @@
   <synopsis><code>
 const GLib = imports.gi.GLib;
 
-let tokenValue = new GLib.TokenValue({
-    <link xref='GLib.TokenValue-v_binary'>v_binary</link>: value
-    <link xref='GLib.TokenValue-v_octal'>v_octal</link>: value
-    <link xref='GLib.TokenValue-v_int'>v_int</link>: value
-    <link xref='GLib.TokenValue-v_int64'>v_int64</link>: value
-    <link xref='GLib.TokenValue-v_float'>v_float</link>: value
-    <link xref='GLib.TokenValue-v_hex'>v_hex</link>: value
-    <link xref='GLib.TokenValue-v_char'>v_char</link>: value
-    <link xref='GLib.TokenValue-v_error'>v_error</link>: value
-});
+let tokenValue = new GLib.TokenValue();
   </code></synopsis>
   <p>A union holding the value of the token.</p>
 

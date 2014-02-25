@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_byte_array_unref</api:name>
       <api:arg>
-        <api:type>Array(guint8)</api:type>
+        <api:type>Array(Number(guint8))</api:type>
         <api:name>array</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.ByteArray.unref</title>
   <synopsis><code mime="text/x-gjs">
-function unref(array: Array(guint8)): void {
+function unref(array: Array(Number(guint8))): void {
     // Gjs wrapper for g_byte_array_unref()
 }
   </code></synopsis>

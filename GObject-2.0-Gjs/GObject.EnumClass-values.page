@@ -11,7 +11,7 @@
   </info>
   <title>GObject.EnumClass.values</title>
   <synopsis><code mime="text/x-gjs">
-EnumClass.values: GObject.EnumValue (Read)
+EnumClass.values: <link xref="GObject.EnumValue">GObject.EnumValue</link> (Read)
   </code></synopsis>
   <p>an array of <link xref="GObject.EnumValue"/> structs describing the
  individual values.</p>

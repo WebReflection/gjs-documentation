@@ -10,7 +10,7 @@
   </info>
   <title>Gio.IOStream::get_input_stream</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_input_stream(): Gio.InputStream {
+function vfunc_get_input_stream(): <link xref="Gio.InputStream">Gio.InputStream</link> {
 }
   </code></synopsis>
   <p>Gets the input stream for this object. This is used

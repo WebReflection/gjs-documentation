@@ -11,7 +11,7 @@
   </info>
   <title>GObject.FlagsClass.values</title>
   <synopsis><code mime="text/x-gjs">
-FlagsClass.values: GObject.FlagsValue (Read)
+FlagsClass.values: <link xref="GObject.FlagsValue">GObject.FlagsValue</link> (Read)
   </code></synopsis>
   <p>an array of <link xref="GObject.FlagsValue"/> structs describing the
  individual values.</p>

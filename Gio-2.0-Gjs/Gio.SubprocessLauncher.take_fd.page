@@ -13,18 +13,18 @@
       </api:returns>
       <api:name>g_subprocess_launcher_take_fd</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>source_fd</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>target_fd</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>Gio.SubprocessLauncher.prototype.take_fd</title>
   <synopsis><code mime="text/x-gjs">
-function take_fd(source_fd: Number, target_fd: Number): void {
+function take_fd(source_fd: Number(gint), target_fd: Number(gint)): void {
     // Gjs wrapper for g_subprocess_launcher_take_fd()
 }
   </code></synopsis>

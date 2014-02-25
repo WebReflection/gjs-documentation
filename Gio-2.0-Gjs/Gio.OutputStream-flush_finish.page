@@ -10,7 +10,7 @@
   </info>
   <title>Gio.OutputStream::flush_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_flush_finish(result: Gio.AsyncResult): Boolean {
+function vfunc_flush_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): Boolean {
 }
   </code></synopsis>
   <p>Finishes flushing an output stream.</p>

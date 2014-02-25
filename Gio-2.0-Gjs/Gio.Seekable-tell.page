@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Seekable::tell</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_tell(): Number {
+function vfunc_tell(): Number(gint64) {
 }
   </code></synopsis>
   <p>Tells the current position within the stream.</p>

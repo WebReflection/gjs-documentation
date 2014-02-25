@@ -9,14 +9,14 @@
     <link xref="GLib.Variant" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
       </api:returns>
       <api:name>g_variant_get_data</api:name>
     </api:function>
   </info>
   <title>GLib.Variant.prototype.get_data</title>
   <synopsis><code mime="text/x-gjs">
-function get_data(): gpointer {
+function get_data(): void {
     // Gjs wrapper for g_variant_get_data()
 }
   </code></synopsis>

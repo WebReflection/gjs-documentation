@@ -17,14 +17,14 @@
         <api:name>ckey</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint64)</api:type>
         <api:name>value</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.slice_set_config</title>
   <synopsis><code mime="text/x-gjs">
-function slice_set_config(ckey: GLib.SliceConfig, value: Number): void {
+function slice_set_config(ckey: <link xref="GLib.SliceConfig">GLib.SliceConfig</link>, value: Number(gint64)): void {
     // Gjs wrapper for g_slice_set_config()
 }
   </code></synopsis>

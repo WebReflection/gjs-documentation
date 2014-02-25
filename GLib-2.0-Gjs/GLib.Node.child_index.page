@@ -9,18 +9,18 @@
     <link xref="GLib.Node" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_node_child_index</api:name>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>data</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.Node.prototype.child_index</title>
   <synopsis><code mime="text/x-gjs">
-function child_index(data: gpointer): Number {
+function child_index(data: void): Number(gint) {
     // Gjs wrapper for g_node_child_index()
 }
   </code></synopsis>

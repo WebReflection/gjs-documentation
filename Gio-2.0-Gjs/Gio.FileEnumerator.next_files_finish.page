@@ -20,7 +20,7 @@
   </info>
   <title>Gio.FileEnumerator.prototype.next_files_finish</title>
   <synopsis><code mime="text/x-gjs">
-function next_files_finish(result: Gio.AsyncResult): Array(Gio.FileInfo) {
+function next_files_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): Array(<link xref="Gio.FileInfo">Gio.FileInfo</link>) {
     // Gjs wrapper for g_file_enumerator_next_files_finish()
 }
   </code></synopsis>

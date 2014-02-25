@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_date_add_years</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
         <api:name>n_years</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.Date.prototype.add_years</title>
   <synopsis><code mime="text/x-gjs">
-function add_years(n_years: Number): void {
+function add_years(n_years: Number(guint)): void {
     // Gjs wrapper for g_date_add_years()
 }
   </code></synopsis>

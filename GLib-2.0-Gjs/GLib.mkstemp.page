@@ -9,18 +9,18 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_mkstemp</api:name>
       <api:arg>
-        <api:type>filename</api:type>
+        <api:type>String</api:type>
         <api:name>tmpl</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.mkstemp</title>
   <synopsis><code mime="text/x-gjs">
-function mkstemp(tmpl: filename): Number {
+function mkstemp(tmpl: String): Number(gint) {
     // Gjs wrapper for g_mkstemp()
 }
   </code></synopsis>

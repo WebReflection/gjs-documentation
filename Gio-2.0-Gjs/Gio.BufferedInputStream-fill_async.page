@@ -10,7 +10,7 @@
   </info>
   <title>Gio.BufferedInputStream::fill_async</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_fill_async(count: gssize, io_priority: Number, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+function vfunc_fill_async(count: Number(gssize), io_priority: Number(gint), cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
 }
   </code></synopsis>
   <p>Reads data into <code>stream</code>'s buffer asynchronously, up to <code>count</code> size.

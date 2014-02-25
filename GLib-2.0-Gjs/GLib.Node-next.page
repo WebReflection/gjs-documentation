@@ -11,7 +11,7 @@
   </info>
   <title>GLib.Node.next</title>
   <synopsis><code mime="text/x-gjs">
-Node.next: GLib.Node (Read)
+Node.next: <link xref="GLib.Node">GLib.Node</link> (Read)
   </code></synopsis>
   <p>points to the node's next sibling (a sibling is another
        <link xref="GLib.Node"/> with the same parent).</p>

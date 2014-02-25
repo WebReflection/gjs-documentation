@@ -25,14 +25,14 @@
         <api:name>msgid_plural</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gulong)</api:type>
         <api:name>n</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.dngettext</title>
   <synopsis><code mime="text/x-gjs">
-function dngettext(domain: String, msgid: String, msgid_plural: String, n: Number): String {
+function dngettext(domain: String, msgid: String, msgid_plural: String, n: Number(gulong)): String {
     // Gjs wrapper for g_dngettext()
 }
   </code></synopsis>

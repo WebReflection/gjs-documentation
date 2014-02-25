@@ -20,7 +20,7 @@
   </info>
   <title>Gio.Application.prototype.set_flags</title>
   <synopsis><code mime="text/x-gjs">
-function set_flags(flags: Gio.ApplicationFlags): void {
+function set_flags(flags: <link xref="Gio.ApplicationFlags">Gio.ApplicationFlags</link>): void {
     // Gjs wrapper for g_application_set_flags()
 }
   </code></synopsis>

@@ -20,7 +20,7 @@
   </info>
   <title>Gio.MenuItem.prototype.set_submenu</title>
   <synopsis><code mime="text/x-gjs">
-function set_submenu(submenu: Gio.MenuModel): void {
+function set_submenu(submenu: <link xref="Gio.MenuModel">Gio.MenuModel</link>): void {
     // Gjs wrapper for g_menu_item_set_submenu()
 }
   </code></synopsis>

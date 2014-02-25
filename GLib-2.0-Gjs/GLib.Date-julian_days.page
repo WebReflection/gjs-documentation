@@ -11,7 +11,7 @@
   </info>
   <title>GLib.Date.julian_days</title>
   <synopsis><code mime="text/x-gjs">
-Date.julian_days: Number (Read / Write)
+Date.julian_days: Number(guint) (Read / Write)
   </code></synopsis>
   <p>the Julian representation of the date</p>
 

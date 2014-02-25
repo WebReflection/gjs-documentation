@@ -11,7 +11,7 @@
   </info>
   <title>GObject.EnumValue.value</title>
   <synopsis><code mime="text/x-gjs">
-EnumValue.value: Number (Read / Write)
+EnumValue.value: Number(gint) (Read / Write)
   </code></synopsis>
   <p>the enum value</p>
 

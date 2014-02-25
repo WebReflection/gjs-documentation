@@ -9,14 +9,14 @@
     <link xref="Gio.Socket" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>gssize</api:type>
+        <api:type>Number(gssize)</api:type>
       </api:returns>
       <api:name>g_socket_get_available_bytes</api:name>
     </api:function>
   </info>
   <title>Gio.Socket.prototype.get_available_bytes</title>
   <synopsis><code mime="text/x-gjs">
-function get_available_bytes(): gssize {
+function get_available_bytes(): Number(gssize) {
     // Gjs wrapper for g_socket_get_available_bytes()
 }
   </code></synopsis>

@@ -20,7 +20,7 @@
   </info>
   <title>Gio.Settings.prototype.get_value</title>
   <synopsis><code mime="text/x-gjs">
-function get_value(key: String): GLib.Variant {
+function get_value(key: String): <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link> {
     // Gjs wrapper for g_settings_get_value()
 }
   </code></synopsis>

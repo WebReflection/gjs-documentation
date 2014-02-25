@@ -24,7 +24,7 @@
   </info>
   <title>Gio.FileInfo.prototype.set_attribute_object</title>
   <synopsis><code mime="text/x-gjs">
-function set_attribute_object(attribute: String, attr_value: GObject.Object): void {
+function set_attribute_object(attribute: String, attr_value: <link href="../GObject-2.0/GObject.Object.page">GObject.Object</link>): void {
     // Gjs wrapper for g_file_info_set_attribute_object()
 }
   </code></synopsis>

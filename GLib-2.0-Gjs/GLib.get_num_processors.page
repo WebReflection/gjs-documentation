@@ -9,14 +9,14 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
       </api:returns>
       <api:name>g_get_num_processors</api:name>
     </api:function>
   </info>
   <title>GLib.get_num_processors</title>
   <synopsis><code mime="text/x-gjs">
-function get_num_processors(): Number {
+function get_num_processors(): Number(guint) {
     // Gjs wrapper for g_get_num_processors()
 }
   </code></synopsis>

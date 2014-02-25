@@ -20,7 +20,7 @@
   </info>
   <title>Gio.Notification.prototype.set_icon</title>
   <synopsis><code mime="text/x-gjs">
-function set_icon(icon: Gio.Icon): void {
+function set_icon(icon: <link xref="Gio.Icon">Gio.Icon</link>): void {
     // Gjs wrapper for g_notification_set_icon()
 }
   </code></synopsis>

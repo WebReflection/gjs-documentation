@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusProxy.g_default_timeout</title>
   <synopsis><code mime="text/x-gjs">
-DBusProxy.g_default_timeout: Number (Read / Write / Construct)
+DBusProxy.g_default_timeout: Number(gint) (Read / Write / Construct)
   </code></synopsis>
   <p>The timeout to use if -1 (specifying default timeout) is passed
 as @timeout_msec in the <link xref="Gio.DBusProxy.call"/> and

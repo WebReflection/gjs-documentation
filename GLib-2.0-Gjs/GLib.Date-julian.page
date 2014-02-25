@@ -11,7 +11,7 @@
   </info>
   <title>GLib.Date.julian</title>
   <synopsis><code mime="text/x-gjs">
-Date.julian: Number (Read / Write)
+Date.julian: Number(guint) (Read / Write)
   </code></synopsis>
   <p>this bit is set if @julian_days is valid</p>
 

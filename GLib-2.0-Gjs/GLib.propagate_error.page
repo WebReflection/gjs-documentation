@@ -24,7 +24,7 @@
   </info>
   <title>GLib.propagate_error</title>
   <synopsis><code mime="text/x-gjs">
-function propagate_error(dest: GLib.Error, src: GLib.Error): void {
+function propagate_error(dest: <link xref="GLib.Error">GLib.Error</link>, src: <link xref="GLib.Error">GLib.Error</link>): void {
     // Gjs wrapper for g_propagate_error()
 }
   </code></synopsis>

@@ -25,7 +25,7 @@ interfaces.</p>
   </synopsis>
   <synopsis>
     <title>Known Implementations</title>
-    <p>%s is implemented by DBusObjectProxy and DBusObjectSkeleton</p>
+    <p>DBusObject is implemented by DBusObjectProxy and DBusObjectSkeleton</p>
   </synopsis>
   <links type="topic" ui:expanded="true"
          api:type="function" api:mime="text/x-gjs"

@@ -11,7 +11,7 @@
   </info>
   <title>Gio.TlsConnection.peer_certificate</title>
   <synopsis><code mime="text/x-gjs">
-TlsConnection.peer_certificate: Gio.TlsCertificate (Read)
+TlsConnection.peer_certificate: <link xref="Gio.TlsCertificate">Gio.TlsCertificate</link> (Read)
   </code></synopsis>
   <p>The connection's peer's certificate, after the TLS handshake has
 completed and the certificate has been accepted. Note in

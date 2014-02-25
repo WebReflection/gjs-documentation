@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Drive::eject</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_eject(flags: Gio.MountUnmountFlags, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+function vfunc_eject(flags: <link xref="Gio.MountUnmountFlags">Gio.MountUnmountFlags</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
 }
   </code></synopsis>
   <p>Asynchronously ejects a drive.</p>  <p>When the operation is finished, <code>callback</code> will be called.

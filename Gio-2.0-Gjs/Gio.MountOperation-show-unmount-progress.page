@@ -11,7 +11,7 @@
   </info>
   <title>Gio.MountOperation::show-unmount-progress</title>
   <synopsis><code mime="text/x-gjs">
-connect('show-unmount-progress', function (mountOperation, message: String, time_left: Number, bytes_left: Number, ): void);
+connect('show-unmount-progress', function (mountOperation, message: String, time_left: Number(gint64), bytes_left: Number(gint64), ): void);
   </code></synopsis>
   <p>Emitted when an unmount operation has been busy for more than some time
 (typically 1.5 seconds).</p>  <p>When unmounting or ejecting a volume, the kernel might need to flush

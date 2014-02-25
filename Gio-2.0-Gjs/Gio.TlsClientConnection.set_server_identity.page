@@ -20,7 +20,7 @@
   </info>
   <title>Gio.TlsClientConnection.prototype.set_server_identity</title>
   <synopsis><code mime="text/x-gjs">
-function set_server_identity(identity: Gio.SocketConnectable): void {
+function set_server_identity(identity: <link xref="Gio.SocketConnectable">Gio.SocketConnectable</link>): void {
     // Gjs wrapper for g_tls_client_connection_set_server_identity()
 }
   </code></synopsis>

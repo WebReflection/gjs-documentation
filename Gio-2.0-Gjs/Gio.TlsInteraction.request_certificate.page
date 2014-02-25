@@ -28,7 +28,7 @@
   </info>
   <title>Gio.TlsInteraction.prototype.request_certificate</title>
   <synopsis><code mime="text/x-gjs">
-function request_certificate(connection: Gio.TlsConnection, flags: Gio.TlsCertificateRequestFlags, cancellable: Gio.Cancellable): Gio.TlsInteractionResult {
+function request_certificate(connection: <link xref="Gio.TlsConnection">Gio.TlsConnection</link>, flags: <link xref="Gio.TlsCertificateRequestFlags">Gio.TlsCertificateRequestFlags</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): <link xref="Gio.TlsInteractionResult">Gio.TlsInteractionResult</link> {
     // Gjs wrapper for g_tls_interaction_request_certificate()
 }
   </code></synopsis>

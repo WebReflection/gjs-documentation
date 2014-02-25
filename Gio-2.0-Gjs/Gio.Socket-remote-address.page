@@ -11,7 +11,7 @@
   </info>
   <title>Gio.Socket.remote_address</title>
   <synopsis><code mime="text/x-gjs">
-Socket.remote_address: Gio.SocketAddress (Read)
+Socket.remote_address: <link xref="Gio.SocketAddress">Gio.SocketAddress</link> (Read)
   </code></synopsis>
 
 

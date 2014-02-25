@@ -9,14 +9,14 @@
     <link xref="GLib.VariantType" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>gsize</api:type>
+        <api:type>Number(gsize)</api:type>
       </api:returns>
       <api:name>g_variant_type_n_items</api:name>
     </api:function>
   </info>
   <title>GLib.VariantType.prototype.n_items</title>
   <synopsis><code mime="text/x-gjs">
-function n_items(): gsize {
+function n_items(): Number(gsize) {
     // Gjs wrapper for g_variant_type_n_items()
 }
   </code></synopsis>

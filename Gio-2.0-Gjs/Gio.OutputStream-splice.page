@@ -10,7 +10,7 @@
   </info>
   <title>Gio.OutputStream::splice</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_splice(source: Gio.InputStream, flags: Gio.OutputStreamSpliceFlags, cancellable: Gio.Cancellable): gssize {
+function vfunc_splice(source: <link xref="Gio.InputStream">Gio.InputStream</link>, flags: <link xref="Gio.OutputStreamSpliceFlags">Gio.OutputStreamSpliceFlags</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Number(gssize) {
 }
   </code></synopsis>
   <p>Splices an input stream into an output stream.</p>

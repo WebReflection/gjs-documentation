@@ -11,7 +11,7 @@
   </info>
   <title>Gio.VolumeMonitor::drive-connected</title>
   <synopsis><code mime="text/x-gjs">
-connect('drive-connected', function (volumeMonitor, drive: Gio.Drive, ): void);
+connect('drive-connected', function (volumeMonitor, drive: <link xref="Gio.Drive">Gio.Drive</link>, ): void);
   </code></synopsis>
   <p>Emitted when a drive is connected to the system.</p>
 

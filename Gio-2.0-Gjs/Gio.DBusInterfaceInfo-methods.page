@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusInterfaceInfo.methods</title>
   <synopsis><code mime="text/x-gjs">
-DBusInterfaceInfo.methods: Array(Gio.DBusMethodInfo) (Read / Write)
+DBusInterfaceInfo.methods: Array(<link xref="Gio.DBusMethodInfo">Gio.DBusMethodInfo</link>) (Read / Write)
   </code></synopsis>
   <p>A pointer to a <code>null</code>-terminated array of pointers to <link xref="Gio.DBusMethodInfo"/> structures or <code>null</code> if there are no methods.</p>
 

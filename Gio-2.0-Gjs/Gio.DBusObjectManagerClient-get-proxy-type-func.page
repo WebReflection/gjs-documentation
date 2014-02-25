@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusObjectManagerClient.get_proxy_type_func</title>
   <synopsis><code mime="text/x-gjs">
-DBusObjectManagerClient.get_proxy_type_func: gpointer (Read / Write / Construct Only)
+DBusObjectManagerClient.get_proxy_type_func: void (Read / Write / Construct Only)
   </code></synopsis>
   <p>The <link xref="Gio.DBusProxyTypeFunc"/> to use when determining what <link xref="GLib.Type"/> to
 use for interface proxies or <code>null</code>.</p>

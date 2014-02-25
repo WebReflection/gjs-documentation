@@ -9,7 +9,7 @@
     <link xref="GLib.Date" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>gsize</api:type>
+        <api:type>Number(gsize)</api:type>
       </api:returns>
       <api:name>g_date_strftime</api:name>
       <api:arg>
@@ -17,7 +17,7 @@
         <api:name>s</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gsize</api:type>
+        <api:type>Number(gsize)</api:type>
         <api:name>slen</api:name>
       </api:arg>
       <api:arg>
@@ -32,7 +32,7 @@
   </info>
   <title>GLib.Date.strftime</title>
   <synopsis><code mime="text/x-gjs">
-function strftime(s: String, slen: gsize, format: String, date: GLib.Date): gsize {
+function strftime(s: String, slen: Number(gsize), format: String, date: <link xref="GLib.Date">GLib.Date</link>): Number(gsize) {
     // Gjs wrapper for g_date_strftime()
 }
   </code></synopsis>

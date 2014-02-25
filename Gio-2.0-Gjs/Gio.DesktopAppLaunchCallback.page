@@ -10,7 +10,7 @@
   </info>
   <title>Gio.DesktopAppLaunchCallback</title>
   <synopsis><code mime="text/x-gjs">
-function onDesktopAppLaunchCallback(appinfo: Gio.DesktopAppInfo, pid: GLib.Pid): void {
+function onDesktopAppLaunchCallback(appinfo: <link xref="Gio.DesktopAppInfo">Gio.DesktopAppInfo</link>, pid: <link href="../GLib-2.0/GLib.Pid.page">GLib.Pid</link>): void {
 }
   </code></synopsis>
   <p>During invocation, <link xref="Gio.DesktopAppInfo.launch_uris_as_manager"/> may

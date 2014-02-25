@@ -11,7 +11,7 @@
   </info>
   <title>Gio.ConverterOutputStream.converter</title>
   <synopsis><code mime="text/x-gjs">
-ConverterOutputStream.converter: Gio.Converter (Read / Write / Construct Only)
+ConverterOutputStream.converter: <link xref="Gio.Converter">Gio.Converter</link> (Read / Write / Construct Only)
   </code></synopsis>
 
 

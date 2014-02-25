@@ -10,7 +10,7 @@
   </info>
   <title>GLib.FreeFunc</title>
   <synopsis><code mime="text/x-gjs">
-function onFreeFunc(data: gpointer): void {
+function onFreeFunc(data: void): void {
 }
   </code></synopsis>
   <p>Declares a type of function which takes an arbitrary

@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::create_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_create_finish(res: Gio.AsyncResult): Gio.FileOutputStream {
+function vfunc_create_finish(res: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): <link xref="Gio.FileOutputStream">Gio.FileOutputStream</link> {
 }
   </code></synopsis>
   <p>Finishes an asynchronous file create operation started with

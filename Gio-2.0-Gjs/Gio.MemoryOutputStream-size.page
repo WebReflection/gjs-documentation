@@ -11,7 +11,7 @@
   </info>
   <title>Gio.MemoryOutputStream.size</title>
   <synopsis><code mime="text/x-gjs">
-MemoryOutputStream.size: Number (Read / Write / Construct Only)
+MemoryOutputStream.size: Number(gulong) (Read / Write / Construct Only)
   </code></synopsis>
   <p>Current size of the data buffer.</p>
   <p>Since 2.24</p>

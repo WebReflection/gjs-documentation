@@ -24,7 +24,7 @@
   </info>
   <title>Gio.Action.print_detailed_name</title>
   <synopsis><code mime="text/x-gjs">
-function print_detailed_name(action_name: String, target_value: GLib.Variant): String {
+function print_detailed_name(action_name: String, target_value: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>): String {
     // Gjs wrapper for g_action_print_detailed_name()
 }
   </code></synopsis>

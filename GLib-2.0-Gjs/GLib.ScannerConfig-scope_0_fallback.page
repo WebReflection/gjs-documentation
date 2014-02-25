@@ -11,7 +11,7 @@
   </info>
   <title>GLib.ScannerConfig.scope_0_fallback</title>
   <synopsis><code mime="text/x-gjs">
-ScannerConfig.scope_0_fallback: Number (Read / Write)
+ScannerConfig.scope_0_fallback: Number(guint) (Read / Write)
   </code></synopsis>
   <p>specifies if a symbol is searched for in the
     default scope in addition to the current scope (the default is <code>false</code>).</p>

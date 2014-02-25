@@ -17,7 +17,7 @@
         <api:name>bytes</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>io_priority</api:name>
       </api:arg>
       <api:arg>
@@ -32,7 +32,7 @@
   </info>
   <title>Gio.OutputStream.prototype.write_bytes_async</title>
   <synopsis><code mime="text/x-gjs">
-function write_bytes_async(bytes: GLib.Bytes, io_priority: Number, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+function write_bytes_async(bytes: <link href="../GLib-2.0/GLib.Bytes.page">GLib.Bytes</link>, io_priority: Number(gint), cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
     // Gjs wrapper for g_output_stream_write_bytes_async()
 }
   </code></synopsis>

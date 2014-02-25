@@ -24,7 +24,7 @@
   </info>
   <title>Gio.Resource.prototype.lookup_data</title>
   <synopsis><code mime="text/x-gjs">
-function lookup_data(path: String, lookup_flags: Gio.ResourceLookupFlags): GLib.Bytes {
+function lookup_data(path: String, lookup_flags: <link xref="Gio.ResourceLookupFlags">Gio.ResourceLookupFlags</link>): <link href="../GLib-2.0/GLib.Bytes.page">GLib.Bytes</link> {
     // Gjs wrapper for g_resource_lookup_data()
 }
   </code></synopsis>

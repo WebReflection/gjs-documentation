@@ -20,7 +20,7 @@
   </info>
   <title>Gio.MenuItem.prototype.set_section</title>
   <synopsis><code mime="text/x-gjs">
-function set_section(section: Gio.MenuModel): void {
+function set_section(section: <link xref="Gio.MenuModel">Gio.MenuModel</link>): void {
     // Gjs wrapper for g_menu_item_set_section()
 }
   </code></synopsis>

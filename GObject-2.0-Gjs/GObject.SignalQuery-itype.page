@@ -11,7 +11,7 @@
   </info>
   <title>GObject.SignalQuery.itype</title>
   <synopsis><code mime="text/x-gjs">
-SignalQuery.itype: GType (Read / Write)
+SignalQuery.itype: GObject.Type (Read / Write)
   </code></synopsis>
   <p>The interface/instance type that this signal can be emitted for.</p>
 

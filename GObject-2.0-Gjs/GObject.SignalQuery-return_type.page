@@ -11,7 +11,7 @@
   </info>
   <title>GObject.SignalQuery.return_type</title>
   <synopsis><code mime="text/x-gjs">
-SignalQuery.return_type: GType (Read / Write)
+SignalQuery.return_type: GObject.Type (Read / Write)
   </code></synopsis>
   <p>The return type for user callbacks.</p>
 

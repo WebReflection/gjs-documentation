@@ -9,14 +9,14 @@
     <link xref="GLib.Date" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>guint32</api:type>
+        <api:type>Number(guint32)</api:type>
       </api:returns>
       <api:name>g_date_get_julian</api:name>
     </api:function>
   </info>
   <title>GLib.Date.prototype.get_julian</title>
   <synopsis><code mime="text/x-gjs">
-function get_julian(): guint32 {
+function get_julian(): Number(guint32) {
     // Gjs wrapper for g_date_get_julian()
 }
   </code></synopsis>

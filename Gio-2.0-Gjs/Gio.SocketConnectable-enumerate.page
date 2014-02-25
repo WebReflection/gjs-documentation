@@ -10,7 +10,7 @@
   </info>
   <title>Gio.SocketConnectable::enumerate</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_enumerate(): Gio.SocketAddressEnumerator {
+function vfunc_enumerate(): <link xref="Gio.SocketAddressEnumerator">Gio.SocketAddressEnumerator</link> {
 }
   </code></synopsis>
   <p>Creates a <link xref="Gio.SocketAddressEnumerator"/> for <code>connectable</code>.</p>

@@ -20,7 +20,7 @@
   </info>
   <title>Gio.DBusInterfaceSkeleton.prototype.unexport_from_connection</title>
   <synopsis><code mime="text/x-gjs">
-function unexport_from_connection(connection: Gio.DBusConnection): void {
+function unexport_from_connection(connection: <link xref="Gio.DBusConnection">Gio.DBusConnection</link>): void {
     // Gjs wrapper for g_dbus_interface_skeleton_unexport_from_connection()
 }
   </code></synopsis>

@@ -10,7 +10,7 @@
   </info>
   <title>Gio.AppLaunchContext::get_startup_notify_id</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_startup_notify_id(info: Gio.AppInfo, files: Array(Gio.File)): String {
+function vfunc_get_startup_notify_id(info: <link xref="Gio.AppInfo">Gio.AppInfo</link>, files: Array(<link xref="Gio.File">Gio.File</link>)): String {
 }
   </code></synopsis>
   <p>Initiates startup notification for the application and returns the

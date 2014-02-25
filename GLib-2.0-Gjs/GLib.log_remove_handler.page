@@ -17,14 +17,14 @@
         <api:name>log_domain</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
         <api:name>handler_id</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.log_remove_handler</title>
   <synopsis><code mime="text/x-gjs">
-function log_remove_handler(log_domain: String, handler_id: Number): void {
+function log_remove_handler(log_domain: String, handler_id: Number(guint)): void {
     // Gjs wrapper for g_log_remove_handler()
 }
   </code></synopsis>

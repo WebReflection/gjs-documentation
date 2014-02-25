@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusObjectManagerClient.bus_type</title>
   <synopsis><code mime="text/x-gjs">
-DBusObjectManagerClient.bus_type: Gio.BusType (Write / Construct Only)
+DBusObjectManagerClient.bus_type: <link xref="Gio.BusType">Gio.BusType</link> (Write / Construct Only)
   </code></synopsis>
   <p>If this property is not <link xref="Gio.BusType"/>.none, then
 <link xref="Gio.connection"/> must be <code>null</code> and will be set to the

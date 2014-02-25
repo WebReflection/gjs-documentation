@@ -11,7 +11,7 @@
   </info>
   <title>GLib.ScannerConfig.scan_hex</title>
   <synopsis><code mime="text/x-gjs">
-ScannerConfig.scan_hex: Number (Read / Write)
+ScannerConfig.scan_hex: Number(guint) (Read / Write)
   </code></synopsis>
   <p>specifies if hexadecimal numbers are recognized (the
     default is <code>true</code>).</p>

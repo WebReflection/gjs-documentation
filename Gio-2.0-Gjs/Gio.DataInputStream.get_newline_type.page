@@ -16,7 +16,7 @@
   </info>
   <title>Gio.DataInputStream.prototype.get_newline_type</title>
   <synopsis><code mime="text/x-gjs">
-function get_newline_type(): Gio.DataStreamNewlineType {
+function get_newline_type(): <link xref="Gio.DataStreamNewlineType">Gio.DataStreamNewlineType</link> {
     // Gjs wrapper for g_data_input_stream_get_newline_type()
 }
   </code></synopsis>

@@ -11,7 +11,7 @@
   </info>
   <title>GLib.OptionEntry.flags</title>
   <synopsis><code mime="text/x-gjs">
-OptionEntry.flags: Number (Read / Write)
+OptionEntry.flags: Number(gint) (Read / Write)
   </code></synopsis>
   <p>Flags from <link xref="GLib.OptionFlags"/>.</p>
 

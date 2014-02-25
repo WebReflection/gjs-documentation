@@ -9,7 +9,7 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint64)</api:type>
       </api:returns>
       <api:name>g_ascii_strtoll</api:name>
       <api:arg>
@@ -21,14 +21,14 @@
         <api:name>endptr</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
         <api:name>base</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.ascii_strtoll</title>
   <synopsis><code mime="text/x-gjs">
-function ascii_strtoll(nptr: String, endptr: String, base: Number): Number {
+function ascii_strtoll(nptr: String, endptr: String, base: Number(guint)): Number(gint64) {
     // Gjs wrapper for g_ascii_strtoll()
 }
   </code></synopsis>

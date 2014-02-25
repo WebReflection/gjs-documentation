@@ -28,7 +28,7 @@
   </info>
   <title>Gio.Mount.prototype.guess_content_type</title>
   <synopsis><code mime="text/x-gjs">
-function guess_content_type(force_rescan: Boolean, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+function guess_content_type(force_rescan: Boolean, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
     // Gjs wrapper for g_mount_guess_content_type()
 }
   </code></synopsis>

@@ -87,7 +87,7 @@ foo_async_initable_iface_init (gpointer g_iface,
   </synopsis>
   <synopsis>
     <title>Known Implementations</title>
-    <p>%s is implemented by DBusConnection,DBusObjectManagerClient and DBusProxy</p>
+    <p>AsyncInitable is implemented by DBusConnection, DBusObjectManagerClient and DBusProxy</p>
   </synopsis>
   <links type="topic" ui:expanded="true"
          api:type="function" api:mime="text/x-gjs"

@@ -11,7 +11,7 @@
   </info>
   <title>GLib.Node.children</title>
   <synopsis><code mime="text/x-gjs">
-Node.children: GLib.Node (Read)
+Node.children: <link xref="GLib.Node">GLib.Node</link> (Read)
   </code></synopsis>
   <p>points to the first child of the <link xref="GLib.Node"/>.  The other
            children are accessed by using the @next pointer of each

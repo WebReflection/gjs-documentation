@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Resolver::lookup_service_async</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_lookup_service_async(rrname: String, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+function vfunc_lookup_service_async(rrname: String, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
 }
   </code></synopsis>
 

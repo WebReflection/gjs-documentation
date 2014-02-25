@@ -24,7 +24,7 @@
   </info>
   <title>Gio.DataInputStream.prototype.read_until</title>
   <synopsis><code mime="text/x-gjs">
-function read_until(stop_chars: String, cancellable: Gio.Cancellable): [return_value: String, length: gsize] {
+function read_until(stop_chars: String, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): [return_value: String, length: Number(gsize)] {
     // Gjs wrapper for g_data_input_stream_read_until()
 }
   </code></synopsis>

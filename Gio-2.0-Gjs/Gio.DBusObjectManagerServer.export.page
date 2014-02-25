@@ -20,7 +20,7 @@
   </info>
   <title>Gio.DBusObjectManagerServer.prototype.export</title>
   <synopsis><code mime="text/x-gjs">
-function export(object: Gio.DBusObjectSkeleton): void {
+function export(object: <link xref="Gio.DBusObjectSkeleton">Gio.DBusObjectSkeleton</link>): void {
     // Gjs wrapper for g_dbus_object_manager_server_export()
 }
   </code></synopsis>

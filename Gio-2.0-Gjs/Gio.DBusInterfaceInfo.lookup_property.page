@@ -20,7 +20,7 @@
   </info>
   <title>Gio.DBusInterfaceInfo.prototype.lookup_property</title>
   <synopsis><code mime="text/x-gjs">
-function lookup_property(name: String): Gio.DBusPropertyInfo {
+function lookup_property(name: String): <link xref="Gio.DBusPropertyInfo">Gio.DBusPropertyInfo</link> {
     // Gjs wrapper for g_dbus_interface_info_lookup_property()
 }
   </code></synopsis>

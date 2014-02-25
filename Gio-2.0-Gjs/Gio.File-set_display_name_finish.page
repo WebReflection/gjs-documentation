@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::set_display_name_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_set_display_name_finish(res: Gio.AsyncResult): Gio.File {
+function vfunc_set_display_name_finish(res: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): <link xref="Gio.File">Gio.File</link> {
 }
   </code></synopsis>
   <p>Finishes setting a display name started with

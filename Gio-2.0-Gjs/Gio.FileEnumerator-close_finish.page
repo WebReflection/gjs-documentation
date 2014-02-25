@@ -10,7 +10,7 @@
   </info>
   <title>Gio.FileEnumerator::close_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_close_finish(result: Gio.AsyncResult): Boolean {
+function vfunc_close_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): Boolean {
 }
   </code></synopsis>
   <p>Finishes closing a file enumerator, started from <link xref="Gio.FileEnumerator.close_async"/>.</p>  <p>If the file enumerator was already closed when <link xref="Gio.FileEnumerator.close_async"/>

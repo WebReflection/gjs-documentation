@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Icon::serialize</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_serialize(): GLib.Variant {
+function vfunc_serialize(): <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link> {
 }
   </code></synopsis>
   <p>Serializes a <link xref="Gio.Icon"/> into a <link xref="GLib.Variant"/>. An equivalent <link xref="Gio.Icon"/> can be retrieved

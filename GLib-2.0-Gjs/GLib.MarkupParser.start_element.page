@@ -10,7 +10,7 @@
   </info>
   <title>GLib.MarkupParser.start_element</title>
   <synopsis><code mime="text/x-gjs">
-function onstart_element(context: GLib.MarkupParseContext, element_name: String, attribute_names: String, attribute_values: String): void {
+function onstart_element(context: <link xref="GLib.MarkupParseContext">GLib.MarkupParseContext</link>, element_name: String, attribute_names: String, attribute_values: String): void {
 }
   </code></synopsis>
 

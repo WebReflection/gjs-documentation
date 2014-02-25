@@ -10,7 +10,7 @@
   </info>
   <title>GLib.IOFuncs.io_write</title>
   <synopsis><code mime="text/x-gjs">
-function onio_write(channel: GLib.IOChannel, buf: String, count: gsize, bytes_written: gsize): GLib.IOStatus {
+function onio_write(channel: <link xref="GLib.IOChannel">GLib.IOChannel</link>, buf: String, count: Number(gsize), bytes_written: Number(gsize)): <link xref="GLib.IOStatus">GLib.IOStatus</link> {
 }
   </code></synopsis>
 

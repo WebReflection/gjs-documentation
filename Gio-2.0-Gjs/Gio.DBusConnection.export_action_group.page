@@ -9,7 +9,7 @@
     <link xref="Gio.DBusConnection" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
       </api:returns>
       <api:name>g_dbus_connection_export_action_group</api:name>
       <api:arg>
@@ -24,7 +24,7 @@
   </info>
   <title>Gio.DBusConnection.prototype.export_action_group</title>
   <synopsis><code mime="text/x-gjs">
-function export_action_group(object_path: String, action_group: Gio.ActionGroup): Number {
+function export_action_group(object_path: String, action_group: <link xref="Gio.ActionGroup">Gio.ActionGroup</link>): Number(guint) {
     // Gjs wrapper for g_dbus_connection_export_action_group()
 }
   </code></synopsis>

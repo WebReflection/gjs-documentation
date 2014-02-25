@@ -16,7 +16,7 @@
   </info>
   <title>Gio.TlsBackend.prototype.get_default_database</title>
   <synopsis><code mime="text/x-gjs">
-function get_default_database(): Gio.TlsDatabase {
+function get_default_database(): <link xref="Gio.TlsDatabase">Gio.TlsDatabase</link> {
     // Gjs wrapper for g_tls_backend_get_default_database()
 }
   </code></synopsis>

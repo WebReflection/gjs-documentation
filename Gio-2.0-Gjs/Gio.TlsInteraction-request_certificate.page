@@ -10,7 +10,7 @@
   </info>
   <title>Gio.TlsInteraction::request_certificate</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_request_certificate(connection: Gio.TlsConnection, flags: Gio.TlsCertificateRequestFlags, cancellable: Gio.Cancellable): Gio.TlsInteractionResult {
+function vfunc_request_certificate(connection: <link xref="Gio.TlsConnection">Gio.TlsConnection</link>, flags: <link xref="Gio.TlsCertificateRequestFlags">Gio.TlsCertificateRequestFlags</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): <link xref="Gio.TlsInteractionResult">Gio.TlsInteractionResult</link> {
 }
   </code></synopsis>
   <p>Run synchronous interaction to ask the user to choose a certificate to use

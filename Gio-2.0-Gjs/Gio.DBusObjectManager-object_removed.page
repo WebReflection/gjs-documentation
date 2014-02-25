@@ -10,7 +10,7 @@
   </info>
   <title>Gio.DBusObjectManager::object_removed</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_object_removed(object: Gio.DBusObject): void {
+function vfunc_object_removed(object: <link xref="Gio.DBusObject">Gio.DBusObject</link>): void {
 }
   </code></synopsis>
 

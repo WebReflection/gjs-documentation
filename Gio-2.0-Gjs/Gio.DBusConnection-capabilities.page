@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusConnection.capabilities</title>
   <synopsis><code mime="text/x-gjs">
-DBusConnection.capabilities: Gio.DBusCapabilityFlags (Read)
+DBusConnection.capabilities: <link xref="Gio.DBusCapabilityFlags">Gio.DBusCapabilityFlags</link> (Read)
   </code></synopsis>
   <p>Flags from the <link xref="Gio.DBusCapabilityFlags"/> enumeration
 representing connection features negotiated with the other peer.</p>

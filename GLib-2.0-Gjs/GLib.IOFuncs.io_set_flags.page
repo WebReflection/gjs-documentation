@@ -10,7 +10,7 @@
   </info>
   <title>GLib.IOFuncs.io_set_flags</title>
   <synopsis><code mime="text/x-gjs">
-function onio_set_flags(channel: GLib.IOChannel, flags: GLib.IOFlags): GLib.IOStatus {
+function onio_set_flags(channel: <link xref="GLib.IOChannel">GLib.IOChannel</link>, flags: <link xref="GLib.IOFlags">GLib.IOFlags</link>): <link xref="GLib.IOStatus">GLib.IOStatus</link> {
 }
   </code></synopsis>
 

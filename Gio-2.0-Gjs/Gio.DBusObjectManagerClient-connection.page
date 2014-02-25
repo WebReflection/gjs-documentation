@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusObjectManagerClient.connection</title>
   <synopsis><code mime="text/x-gjs">
-DBusObjectManagerClient.connection: Gio.DBusConnection (Read / Write / Construct Only)
+DBusObjectManagerClient.connection: <link xref="Gio.DBusConnection">Gio.DBusConnection</link> (Read / Write / Construct Only)
   </code></synopsis>
   <p>The <link xref="Gio.DBusConnection"/> to use.</p>
   <p>Since 2.30</p>

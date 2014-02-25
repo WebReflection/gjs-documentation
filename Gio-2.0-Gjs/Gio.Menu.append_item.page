@@ -20,7 +20,7 @@
   </info>
   <title>Gio.Menu.prototype.append_item</title>
   <synopsis><code mime="text/x-gjs">
-function append_item(item: Gio.MenuItem): void {
+function append_item(item: <link xref="Gio.MenuItem">Gio.MenuItem</link>): void {
     // Gjs wrapper for g_menu_append_item()
 }
   </code></synopsis>

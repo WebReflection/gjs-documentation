@@ -17,14 +17,14 @@
         <api:name>destroy_func</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>destroy_data</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.test_queue_destroy</title>
   <synopsis><code mime="text/x-gjs">
-function test_queue_destroy(destroy_func: GLib.DestroyNotify, destroy_data: gpointer): void {
+function test_queue_destroy(destroy_func: <link xref="GLib.DestroyNotify">GLib.DestroyNotify</link>, destroy_data: void): void {
     // Gjs wrapper for g_test_queue_destroy()
 }
   </code></synopsis>

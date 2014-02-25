@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::append_to</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_append_to(flags: Gio.FileCreateFlags, cancellable: Gio.Cancellable): Gio.FileOutputStream {
+function vfunc_append_to(flags: <link xref="Gio.FileCreateFlags">Gio.FileCreateFlags</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): <link xref="Gio.FileOutputStream">Gio.FileOutputStream</link> {
 }
   </code></synopsis>
   <p>Gets an output stream for appending data to the file.

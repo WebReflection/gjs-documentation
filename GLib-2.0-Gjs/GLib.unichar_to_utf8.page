@@ -9,7 +9,7 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_unichar_to_utf8</api:name>
       <api:arg>
@@ -24,7 +24,7 @@
   </info>
   <title>GLib.unichar_to_utf8</title>
   <synopsis><code mime="text/x-gjs">
-function unichar_to_utf8(c: String, outbuf: String): Number {
+function unichar_to_utf8(c: String, outbuf: String): Number(gint) {
     // Gjs wrapper for g_unichar_to_utf8()
 }
   </code></synopsis>

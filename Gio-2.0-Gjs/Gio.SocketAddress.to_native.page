@@ -13,18 +13,18 @@
       </api:returns>
       <api:name>g_socket_address_to_native</api:name>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>dest</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gsize</api:type>
+        <api:type>Number(gsize)</api:type>
         <api:name>destlen</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>Gio.SocketAddress.prototype.to_native</title>
   <synopsis><code mime="text/x-gjs">
-function to_native(dest: gpointer, destlen: gsize): Boolean {
+function to_native(dest: void, destlen: Number(gsize)): Boolean {
     // Gjs wrapper for g_socket_address_to_native()
 }
   </code></synopsis>

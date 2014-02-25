@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusSubtreeVTable.dispatch</title>
   <synopsis><code mime="text/x-gjs">
-DBusSubtreeVTable.dispatch: Gio.DBusSubtreeDispatchFunc (Read)
+DBusSubtreeVTable.dispatch: <link xref="Gio.DBusSubtreeDispatchFunc">Gio.DBusSubtreeDispatchFunc</link> (Read)
   </code></synopsis>
   <p>Function for dispatching a remote call on a child node.</p>
 

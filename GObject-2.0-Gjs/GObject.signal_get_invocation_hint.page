@@ -20,7 +20,7 @@
   </info>
   <title>GObject.signal_get_invocation_hint</title>
   <synopsis><code mime="text/x-gjs">
-function signal_get_invocation_hint(instance: GObject.Object): GObject.SignalInvocationHint {
+function signal_get_invocation_hint(instance: <link xref="GObject.Object">GObject.Object</link>): <link xref="GObject.SignalInvocationHint">GObject.SignalInvocationHint</link> {
     // Gjs wrapper for g_signal_get_invocation_hint()
 }
   </code></synopsis>

@@ -11,7 +11,7 @@
   </info>
   <title>Gio.Application.inactivity_timeout</title>
   <synopsis><code mime="text/x-gjs">
-Application.inactivity_timeout: Number (Read / Write)
+Application.inactivity_timeout: Number(guint) (Read / Write)
   </code></synopsis>
 
 

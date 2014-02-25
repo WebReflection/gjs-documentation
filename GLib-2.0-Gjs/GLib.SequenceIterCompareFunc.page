@@ -10,7 +10,7 @@
   </info>
   <title>GLib.SequenceIterCompareFunc</title>
   <synopsis><code mime="text/x-gjs">
-function onSequenceIterCompareFunc(a: GLib.SequenceIter, b: GLib.SequenceIter, data: gpointer): Number {
+function onSequenceIterCompareFunc(a: <link xref="GLib.SequenceIter">GLib.SequenceIter</link>, b: <link xref="GLib.SequenceIter">GLib.SequenceIter</link>, data: void): Number(gint) {
 }
   </code></synopsis>
   <p>A <link xref="GLib.SequenceIterCompareFunc"/> is a function used to compare iterators.

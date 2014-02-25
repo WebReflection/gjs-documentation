@@ -11,7 +11,7 @@
   </info>
   <title>GLib.Scanner.next_token</title>
   <synopsis><code mime="text/x-gjs">
-Scanner.next_token: GLib.TokenType (Read / Write)
+Scanner.next_token: <link xref="GLib.TokenType">GLib.TokenType</link> (Read / Write)
   </code></synopsis>
   <p>token parsed by the last <link xref="GLib.peek_next_token"/></p>
 

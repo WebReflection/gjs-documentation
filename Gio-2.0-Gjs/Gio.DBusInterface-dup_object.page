@@ -10,7 +10,7 @@
   </info>
   <title>Gio.DBusInterface::dup_object</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_dup_object(): Gio.DBusObject {
+function vfunc_dup_object(): <link xref="Gio.DBusObject">Gio.DBusObject</link> {
 }
   </code></synopsis>
   <p>Gets the <link xref="Gio.DBusObject"/> that <code>interface_</code> belongs to, if any.</p>

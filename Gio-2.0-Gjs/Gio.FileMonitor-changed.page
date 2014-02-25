@@ -11,7 +11,7 @@
   </info>
   <title>Gio.FileMonitor::changed</title>
   <synopsis><code mime="text/x-gjs">
-connect('changed', function (fileMonitor, file: Gio.File, other_file: Gio.File, event_type: Gio.FileMonitorEvent, ): void);
+connect('changed', function (fileMonitor, file: <link xref="Gio.File">Gio.File</link>, other_file: <link xref="Gio.File">Gio.File</link>, event_type: <link xref="Gio.FileMonitorEvent">Gio.FileMonitorEvent</link>, ): void);
   </code></synopsis>
   <p>Emitted when <code>file</code> has been changed.</p>  <p>If using #G_FILE_MONITOR_SEND_MOVED flag and <code>event_type</code> is
 #G_FILE_MONITOR_EVENT_MOVED, <code>file</code> will be set to a <link xref="Gio.File"/> containing the

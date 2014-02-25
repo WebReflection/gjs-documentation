@@ -28,7 +28,7 @@
   </info>
   <title>Gio.FileAttributeInfoList.prototype.add</title>
   <synopsis><code mime="text/x-gjs">
-function add(name: String, type: Gio.FileAttributeType, flags: Gio.FileAttributeInfoFlags): void {
+function add(name: String, type: <link xref="Gio.FileAttributeType">Gio.FileAttributeType</link>, flags: <link xref="Gio.FileAttributeInfoFlags">Gio.FileAttributeInfoFlags</link>): void {
     // Gjs wrapper for g_file_attribute_info_list_add()
 }
   </code></synopsis>

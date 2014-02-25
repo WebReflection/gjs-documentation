@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::read_fn</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_read_fn(cancellable: Gio.Cancellable): Gio.FileInputStream {
+function vfunc_read_fn(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): <link xref="Gio.FileInputStream">Gio.FileInputStream</link> {
 }
   </code></synopsis>
   <p>Opens a file for reading. The result is a <link xref="Gio.FileInputStream"/> that

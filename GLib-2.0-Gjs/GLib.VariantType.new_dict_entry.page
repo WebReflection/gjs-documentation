@@ -24,7 +24,7 @@
   </info>
   <title>GLib.VariantType.new_dict_entry</title>
   <synopsis><code mime="text/x-gjs">
-function new_dict_entry(key: GLib.VariantType, value: GLib.VariantType): GLib.VariantType {
+function new_dict_entry(key: <link xref="GLib.VariantType">GLib.VariantType</link>, value: <link xref="GLib.VariantType">GLib.VariantType</link>): <link xref="GLib.VariantType">GLib.VariantType</link> {
     // Gjs wrapper for g_variant_type_new_dict_entry()
 }
   </code></synopsis>

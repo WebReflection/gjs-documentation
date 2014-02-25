@@ -11,7 +11,7 @@
   </info>
   <title>Gio.PropertyAction.state</title>
   <synopsis><code mime="text/x-gjs">
-PropertyAction.state: GLib.Variant (Read)
+PropertyAction.state: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link> (Read)
   </code></synopsis>
   <p>The state of the action, or <code>null</code> if the action is stateless.</p>
   <p>Since 2.38</p>

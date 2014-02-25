@@ -11,7 +11,7 @@
   </info>
   <title>Gio.InetAddress.bytes</title>
   <synopsis><code mime="text/x-gjs">
-InetAddress.bytes: gpointer (Read / Write / Construct Only)
+InetAddress.bytes: void (Read / Write / Construct Only)
   </code></synopsis>
 
 

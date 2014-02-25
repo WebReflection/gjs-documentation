@@ -20,7 +20,7 @@
   </info>
   <title>GLib.Date.prototype.set_year</title>
   <synopsis><code mime="text/x-gjs">
-function set_year(year: GLib.DateYear): void {
+function set_year(year: <link xref="GLib.DateYear">GLib.DateYear</link>): void {
     // Gjs wrapper for g_date_set_year()
 }
   </code></synopsis>

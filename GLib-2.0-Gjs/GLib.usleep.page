@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_usleep</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gulong)</api:type>
         <api:name>microseconds</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.usleep</title>
   <synopsis><code mime="text/x-gjs">
-function usleep(microseconds: Number): void {
+function usleep(microseconds: Number(gulong)): void {
     // Gjs wrapper for g_usleep()
 }
   </code></synopsis>

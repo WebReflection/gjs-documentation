@@ -11,7 +11,7 @@
   </info>
   <title>GObject.TypeQuery.type</title>
   <synopsis><code mime="text/x-gjs">
-TypeQuery.type: GType (Read / Write)
+TypeQuery.type: GObject.Type (Read / Write)
   </code></synopsis>
   <p>the <link xref="GLib.Type"/> value of the type.</p>
 

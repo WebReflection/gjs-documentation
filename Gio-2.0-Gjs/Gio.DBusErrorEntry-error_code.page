@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusErrorEntry.error_code</title>
   <synopsis><code mime="text/x-gjs">
-DBusErrorEntry.error_code: Number (Read / Write)
+DBusErrorEntry.error_code: Number(gint) (Read / Write)
   </code></synopsis>
   <p>An error code.</p>
 

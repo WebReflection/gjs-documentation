@@ -28,7 +28,7 @@
   </info>
   <title>GLib.Date.new_dmy</title>
   <synopsis><code mime="text/x-gjs">
-function new_dmy(day: GLib.DateDay, month: GLib.DateMonth, year: GLib.DateYear): GLib.Date {
+function new_dmy(day: <link xref="GLib.DateDay">GLib.DateDay</link>, month: <link xref="GLib.DateMonth">GLib.DateMonth</link>, year: <link xref="GLib.DateYear">GLib.DateYear</link>): <link xref="GLib.Date">GLib.Date</link> {
     // Gjs wrapper for g_date_new_dmy()
 }
   </code></synopsis>

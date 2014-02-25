@@ -11,7 +11,7 @@
   </info>
   <title>Gio.ZlibDecompressor.file_info</title>
   <synopsis><code mime="text/x-gjs">
-ZlibDecompressor.file_info: Gio.FileInfo (Read)
+ZlibDecompressor.file_info: <link xref="Gio.FileInfo">Gio.FileInfo</link> (Read)
   </code></synopsis>
   <p>A <link xref="Gio.FileInfo"/> containing the information found in the GZIP header
 of the data stream processed, or <code>null</code> if the header was not yet

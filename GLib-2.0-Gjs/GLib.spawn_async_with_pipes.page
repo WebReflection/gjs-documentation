@@ -36,7 +36,7 @@
   </info>
   <title>GLib.spawn_async_with_pipes</title>
   <synopsis><code mime="text/x-gjs">
-function spawn_async_with_pipes(working_directory: String, argv: Array(String), envp: Array(String), flags: GLib.SpawnFlags, child_setup: GLib.SpawnChildSetupFunc): [ok: Boolean, child_pid: GLib.Pid, standard_input: Number, standard_output: Number, standard_error: Number] {
+function spawn_async_with_pipes(working_directory: String, argv: Array(String), envp: Array(String), flags: <link xref="GLib.SpawnFlags">GLib.SpawnFlags</link>, child_setup: <link xref="GLib.SpawnChildSetupFunc">GLib.SpawnChildSetupFunc</link>): [ok: Boolean, child_pid: <link xref="GLib.Pid">GLib.Pid</link>, standard_input: Number(gint), standard_output: Number(gint), standard_error: Number(gint)] {
     // Gjs wrapper for g_spawn_async_with_pipes()
 }
   </code></synopsis>

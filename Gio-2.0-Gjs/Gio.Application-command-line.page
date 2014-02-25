@@ -11,7 +11,7 @@
   </info>
   <title>Gio.Application::command-line</title>
   <synopsis><code mime="text/x-gjs">
-connect('command-line', function (application, command_line: Gio.ApplicationCommandLine, ): Number);
+connect('command-line', function (application, command_line: <link xref="Gio.ApplicationCommandLine">Gio.ApplicationCommandLine</link>, ): Number(gint));
   </code></synopsis>
   <p>The ::command-line signal is emitted on the primary instance when
 a commandline is not handled locally. See <link xref="Gio.Application.run"/> and

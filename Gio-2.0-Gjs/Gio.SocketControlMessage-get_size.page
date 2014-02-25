@@ -10,7 +10,7 @@
   </info>
   <title>Gio.SocketControlMessage::get_size</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_size(): gsize {
+function vfunc_get_size(): Number(gsize) {
 }
   </code></synopsis>
   <p>Returns the space required for the control message, not including

@@ -9,14 +9,14 @@
     <link xref="Gio.Socket" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_socket_get_listen_backlog</api:name>
     </api:function>
   </info>
   <title>Gio.Socket.prototype.get_listen_backlog</title>
   <synopsis><code mime="text/x-gjs">
-function get_listen_backlog(): Number {
+function get_listen_backlog(): Number(gint) {
     // Gjs wrapper for g_socket_get_listen_backlog()
 }
   </code></synopsis>

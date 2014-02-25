@@ -10,7 +10,7 @@
   </info>
   <title>Gio.TlsCertificate::verify</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_verify(identity: Gio.SocketConnectable, trusted_ca: Gio.TlsCertificate): Gio.TlsCertificateFlags {
+function vfunc_verify(identity: <link xref="Gio.SocketConnectable">Gio.SocketConnectable</link>, trusted_ca: <link xref="Gio.TlsCertificate">Gio.TlsCertificate</link>): <link xref="Gio.TlsCertificateFlags">Gio.TlsCertificateFlags</link> {
 }
   </code></synopsis>
   <p>This verifies <code>cert</code> and returns a set of <link xref="Gio.TlsCertificateFlags"/>

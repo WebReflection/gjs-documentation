@@ -16,7 +16,7 @@
   </info>
   <title>GLib.Source.prototype.get_context</title>
   <synopsis><code mime="text/x-gjs">
-function get_context(): GLib.MainContext {
+function get_context(): <link xref="GLib.MainContext">GLib.MainContext</link> {
     // Gjs wrapper for g_source_get_context()
 }
   </code></synopsis>

@@ -16,7 +16,7 @@
   </info>
   <title>GLib.Variant.prototype.get_strv</title>
   <synopsis><code mime="text/x-gjs">
-function get_strv(): [return_value: Array(String), length: gsize] {
+function get_strv(): [return_value: Array(String), length: Number(gsize)] {
     // Gjs wrapper for g_variant_get_strv()
 }
   </code></synopsis>

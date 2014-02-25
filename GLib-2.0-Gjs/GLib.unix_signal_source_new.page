@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_unix_signal_source_new</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>signum</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.unix_signal_source_new</title>
   <synopsis><code mime="text/x-gjs">
-function unix_signal_source_new(signum: Number): GLib.Source {
+function unix_signal_source_new(signum: Number(gint)): <link xref="GLib.Source">GLib.Source</link> {
     // Gjs wrapper for g_unix_signal_source_new()
 }
   </code></synopsis>

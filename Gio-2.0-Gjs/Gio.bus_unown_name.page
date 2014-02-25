@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_bus_unown_name</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
         <api:name>owner_id</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>Gio.bus_unown_name</title>
   <synopsis><code mime="text/x-gjs">
-function bus_unown_name(owner_id: Number): void {
+function bus_unown_name(owner_id: Number(guint)): void {
     // Gjs wrapper for g_bus_unown_name()
 }
   </code></synopsis>

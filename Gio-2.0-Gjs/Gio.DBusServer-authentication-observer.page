@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusServer.authentication_observer</title>
   <synopsis><code mime="text/x-gjs">
-DBusServer.authentication_observer: Gio.DBusAuthObserver (Read / Write / Construct Only)
+DBusServer.authentication_observer: <link xref="Gio.DBusAuthObserver">Gio.DBusAuthObserver</link> (Read / Write / Construct Only)
   </code></synopsis>
   <p>A <link xref="Gio.DBusAuthObserver"/> object to assist in the authentication process or <code>null</code>.</p>
   <p>Since 2.26</p>

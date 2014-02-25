@@ -10,7 +10,7 @@
   </info>
   <title>Gio.ApplicationCommandLine::get_stdin</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_stdin(): Gio.InputStream {
+function vfunc_get_stdin(): <link xref="Gio.InputStream">Gio.InputStream</link> {
 }
   </code></synopsis>
   <p>Gets the stdin of the invoking process.</p>  <p>The <link xref="Gio.InputStream"/> can be used to read data passed to the standard

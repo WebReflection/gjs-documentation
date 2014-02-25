@@ -24,7 +24,7 @@ the method <link xref="Gio.proxy_enumerate"/>.</p>
   </synopsis>
   <synopsis>
     <title>Known Implementations</title>
-    <p>%s is implemented by SimpleProxyResolver</p>
+    <p>ProxyResolver is implemented by SimpleProxyResolver</p>
   </synopsis>
   <links type="topic" ui:expanded="true"
          api:type="function" api:mime="text/x-gjs"

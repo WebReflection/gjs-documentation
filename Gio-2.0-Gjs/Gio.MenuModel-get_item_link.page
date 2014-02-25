@@ -10,7 +10,7 @@
   </info>
   <title>Gio.MenuModel::get_item_link</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_item_link(item_index: Number, link: String): Gio.MenuModel {
+function vfunc_get_item_link(item_index: Number(gint), link: String): <link xref="Gio.MenuModel">Gio.MenuModel</link> {
 }
   </code></synopsis>
   <p>Queries the item at position <code>item_index</code> in <code>model</code> for the link

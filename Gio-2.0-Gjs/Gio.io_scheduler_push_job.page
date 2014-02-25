@@ -17,7 +17,7 @@
         <api:name>job_func</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>io_priority</api:name>
       </api:arg>
       <api:arg>
@@ -28,7 +28,7 @@
   </info>
   <title>Gio.io_scheduler_push_job</title>
   <synopsis><code mime="text/x-gjs">
-function io_scheduler_push_job(job_func: Gio.IOSchedulerJobFunc, io_priority: Number, cancellable: Gio.Cancellable): void {
+function io_scheduler_push_job(job_func: <link xref="Gio.IOSchedulerJobFunc">Gio.IOSchedulerJobFunc</link>, io_priority: Number(gint), cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): void {
     // Gjs wrapper for g_io_scheduler_push_job()
 }
   </code></synopsis>

@@ -9,7 +9,7 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_ascii_strncasecmp</api:name>
       <api:arg>
@@ -21,14 +21,14 @@
         <api:name>s2</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gsize</api:type>
+        <api:type>Number(gsize)</api:type>
         <api:name>n</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.ascii_strncasecmp</title>
   <synopsis><code mime="text/x-gjs">
-function ascii_strncasecmp(s1: String, s2: String, n: gsize): Number {
+function ascii_strncasecmp(s1: String, s2: String, n: Number(gsize)): Number(gint) {
     // Gjs wrapper for g_ascii_strncasecmp()
 }
   </code></synopsis>

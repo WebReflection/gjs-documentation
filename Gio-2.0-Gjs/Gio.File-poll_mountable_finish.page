@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::poll_mountable_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_poll_mountable_finish(result: Gio.AsyncResult): Boolean {
+function vfunc_poll_mountable_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): Boolean {
 }
   </code></synopsis>
   <p>Finishes a poll operation. See <link xref="Gio.File.poll_mountable"/> for details.</p>  <p>Finish an asynchronous poll operation that was polled

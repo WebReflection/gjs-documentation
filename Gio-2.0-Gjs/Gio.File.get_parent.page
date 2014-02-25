@@ -16,7 +16,7 @@
   </info>
   <title>Gio.File.prototype.get_parent</title>
   <synopsis><code mime="text/x-gjs">
-function get_parent(): Gio.File {
+function get_parent(): <link xref="Gio.File">Gio.File</link> {
     // Gjs wrapper for g_file_get_parent()
 }
   </code></synopsis>

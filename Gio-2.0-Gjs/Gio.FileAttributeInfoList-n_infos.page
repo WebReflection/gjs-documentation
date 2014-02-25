@@ -11,7 +11,7 @@
   </info>
   <title>Gio.FileAttributeInfoList.n_infos</title>
   <synopsis><code mime="text/x-gjs">
-FileAttributeInfoList.n_infos: Number (Read / Write)
+FileAttributeInfoList.n_infos: Number(gint) (Read / Write)
   </code></synopsis>
   <p>the number of values in the array.</p>
 

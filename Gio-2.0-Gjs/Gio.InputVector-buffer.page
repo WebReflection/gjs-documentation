@@ -11,7 +11,7 @@
   </info>
   <title>Gio.InputVector.buffer</title>
   <synopsis><code mime="text/x-gjs">
-InputVector.buffer: gpointer (Read)
+InputVector.buffer: void (Read)
   </code></synopsis>
   <p>Pointer to a buffer where data will be written.</p>
 

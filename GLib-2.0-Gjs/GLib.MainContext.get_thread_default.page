@@ -16,7 +16,7 @@
   </info>
   <title>GLib.MainContext.get_thread_default</title>
   <synopsis><code mime="text/x-gjs">
-function get_thread_default(): GLib.MainContext {
+function get_thread_default(): <link xref="GLib.MainContext">GLib.MainContext</link> {
     // Gjs wrapper for g_main_context_get_thread_default()
 }
   </code></synopsis>

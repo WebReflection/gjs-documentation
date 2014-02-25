@@ -10,7 +10,7 @@
   </info>
   <title>GLib.IOFuncs.io_close</title>
   <synopsis><code mime="text/x-gjs">
-function onio_close(channel: GLib.IOChannel): GLib.IOStatus {
+function onio_close(channel: <link xref="GLib.IOChannel">GLib.IOChannel</link>): <link xref="GLib.IOStatus">GLib.IOStatus</link> {
 }
   </code></synopsis>
 

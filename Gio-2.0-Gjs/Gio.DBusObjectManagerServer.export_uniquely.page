@@ -20,7 +20,7 @@
   </info>
   <title>Gio.DBusObjectManagerServer.prototype.export_uniquely</title>
   <synopsis><code mime="text/x-gjs">
-function export_uniquely(object: Gio.DBusObjectSkeleton): void {
+function export_uniquely(object: <link xref="Gio.DBusObjectSkeleton">Gio.DBusObjectSkeleton</link>): void {
     // Gjs wrapper for g_dbus_object_manager_server_export_uniquely()
 }
   </code></synopsis>

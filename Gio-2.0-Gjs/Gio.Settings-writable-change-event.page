@@ -11,7 +11,7 @@
   </info>
   <title>Gio.Settings::writable-change-event</title>
   <synopsis><code mime="text/x-gjs">
-connect('writable-change-event', function (settings, key: Number, ): Boolean);
+connect('writable-change-event', function (settings, key: Number(guint), ): Boolean);
   </code></synopsis>
   <p>The "writable-change-event" signal is emitted once per writability
 change event that affects this settings object.  You should connect

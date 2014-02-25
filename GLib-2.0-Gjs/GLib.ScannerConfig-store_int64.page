@@ -11,7 +11,7 @@
   </info>
   <title>GLib.ScannerConfig.store_int64</title>
   <synopsis><code mime="text/x-gjs">
-ScannerConfig.store_int64: Number (Read / Write)
+ScannerConfig.store_int64: Number(guint) (Read / Write)
   </code></synopsis>
   <p>use value.v_int64 rather than v_int</p>
 

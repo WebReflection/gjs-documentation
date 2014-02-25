@@ -11,7 +11,7 @@
   </info>
   <title>GLib.ScannerConfig.char_2_token</title>
   <synopsis><code mime="text/x-gjs">
-ScannerConfig.char_2_token: Number (Read / Write)
+ScannerConfig.char_2_token: Number(guint) (Read / Write)
   </code></synopsis>
   <p>specifies if characters are reported by setting
     `token = ch` or as <link xref="GLib.TokenType"/>.char (the default is <code>true</code>).</p>

@@ -13,7 +13,7 @@
       </api:returns>
       <api:name>g_scanner_scope_add_symbol</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
         <api:name>scope_id</api:name>
       </api:arg>
       <api:arg>
@@ -21,14 +21,14 @@
         <api:name>symbol</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>value</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.Scanner.prototype.scope_add_symbol</title>
   <synopsis><code mime="text/x-gjs">
-function scope_add_symbol(scope_id: Number, symbol: String, value: gpointer): void {
+function scope_add_symbol(scope_id: Number(guint), symbol: String, value: void): void {
     // Gjs wrapper for g_scanner_scope_add_symbol()
 }
   </code></synopsis>

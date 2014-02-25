@@ -11,7 +11,7 @@
   </info>
   <title>Gio.TlsCertificate.issuer</title>
   <synopsis><code mime="text/x-gjs">
-TlsCertificate.issuer: Gio.TlsCertificate (Read / Write / Construct Only)
+TlsCertificate.issuer: <link xref="Gio.TlsCertificate">Gio.TlsCertificate</link> (Read / Write / Construct Only)
   </code></synopsis>
   <p>A <link xref="Gio.TlsCertificate"/> representing the entity that issued this
 certificate. If <code>null</code>, this means that the certificate is either

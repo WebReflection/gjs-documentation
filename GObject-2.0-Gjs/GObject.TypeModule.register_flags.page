@@ -9,7 +9,7 @@
     <link xref="GObject.TypeModule" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>GType</api:type>
+        <api:type>GObject.Type</api:type>
       </api:returns>
       <api:name>g_type_module_register_flags</api:name>
       <api:arg>
@@ -24,7 +24,7 @@
   </info>
   <title>GObject.TypeModule.prototype.register_flags</title>
   <synopsis><code mime="text/x-gjs">
-function register_flags(name: String, const_static_values: GObject.FlagsValue): GType {
+function register_flags(name: String, const_static_values: <link xref="GObject.FlagsValue">GObject.FlagsValue</link>): GObject.Type {
     // Gjs wrapper for g_type_module_register_flags()
 }
   </code></synopsis>

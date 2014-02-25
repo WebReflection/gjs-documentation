@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusObjectManagerClient.flags</title>
   <synopsis><code mime="text/x-gjs">
-DBusObjectManagerClient.flags: Gio.DBusObjectManagerClientFlags (Read / Write / Construct Only)
+DBusObjectManagerClient.flags: <link xref="Gio.DBusObjectManagerClientFlags">Gio.DBusObjectManagerClientFlags</link> (Read / Write / Construct Only)
   </code></synopsis>
   <p>Flags from the <link xref="Gio.DBusObjectManagerClientFlags"/> enumeration.</p>
   <p>Since 2.30</p>

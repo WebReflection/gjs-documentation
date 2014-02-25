@@ -10,7 +10,7 @@
   </info>
   <title>Gio.MountOperation::show_unmount_progress</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_show_unmount_progress(message: String, time_left: Number, bytes_left: Number): void {
+function vfunc_show_unmount_progress(message: String, time_left: Number(gint64), bytes_left: Number(gint64)): void {
 }
   </code></synopsis>
 

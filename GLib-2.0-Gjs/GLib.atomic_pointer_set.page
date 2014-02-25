@@ -13,18 +13,18 @@
       </api:returns>
       <api:name>g_atomic_pointer_set</api:name>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>atomic</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>newval</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.atomic_pointer_set</title>
   <synopsis><code mime="text/x-gjs">
-function atomic_pointer_set(atomic: gpointer, newval: gpointer): void {
+function atomic_pointer_set(atomic: void, newval: void): void {
     // Gjs wrapper for g_atomic_pointer_set()
 }
   </code></synopsis>

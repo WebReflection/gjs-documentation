@@ -11,7 +11,7 @@
   </info>
   <title>GObject.EnumClass.minimum</title>
   <synopsis><code mime="text/x-gjs">
-EnumClass.minimum: Number (Read / Write)
+EnumClass.minimum: Number(gint) (Read / Write)
   </code></synopsis>
   <p>the smallest possible value.</p>
 

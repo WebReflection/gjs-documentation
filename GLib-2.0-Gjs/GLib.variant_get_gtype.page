@@ -9,14 +9,14 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>GType</api:type>
+        <api:type>GObject.Type</api:type>
       </api:returns>
       <api:name>g_variant_get_gtype</api:name>
     </api:function>
   </info>
   <title>GLib.variant_get_gtype</title>
   <synopsis><code mime="text/x-gjs">
-function variant_get_gtype(): GType {
+function variant_get_gtype(): GObject.Type {
     // Gjs wrapper for g_variant_get_gtype()
 }
   </code></synopsis>

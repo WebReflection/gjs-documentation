@@ -11,7 +11,7 @@
   </info>
   <title>GObject.TypePluginClass.complete_interface_info</title>
   <synopsis><code mime="text/x-gjs">
-TypePluginClass.complete_interface_info: GObject.TypePluginCompleteInterfaceInfo (Read)
+TypePluginClass.complete_interface_info: <link xref="GObject.TypePluginCompleteInterfaceInfo">GObject.TypePluginCompleteInterfaceInfo</link> (Read)
   </code></synopsis>
   <p>Fills in missing parts of the <link xref="GObject.InterfaceInfo"/>
  for the interface. The structs is initialized with

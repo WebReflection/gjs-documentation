@@ -11,7 +11,7 @@
   </info>
   <title>GObject.FlagsValue.value</title>
   <synopsis><code mime="text/x-gjs">
-FlagsValue.value: Number (Read / Write)
+FlagsValue.value: Number(guint) (Read / Write)
   </code></synopsis>
   <p>the flags value</p>
 

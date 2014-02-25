@@ -9,18 +9,18 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>GType</api:type>
+        <api:type>GObject.Type</api:type>
       </api:returns>
       <api:name>g_type_fundamental</api:name>
       <api:arg>
-        <api:type>GType</api:type>
+        <api:type>GObject.Type</api:type>
         <api:name>type_id</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GObject.type_fundamental</title>
   <synopsis><code mime="text/x-gjs">
-function type_fundamental(type_id: GType): GType {
+function type_fundamental(type_id: GObject.Type): GObject.Type {
     // Gjs wrapper for g_type_fundamental()
 }
   </code></synopsis>

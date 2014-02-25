@@ -11,7 +11,7 @@
   </info>
   <title>Gio.Socket.local_address</title>
   <synopsis><code mime="text/x-gjs">
-Socket.local_address: Gio.SocketAddress (Read)
+Socket.local_address: <link xref="Gio.SocketAddress">Gio.SocketAddress</link> (Read)
   </code></synopsis>
 
 

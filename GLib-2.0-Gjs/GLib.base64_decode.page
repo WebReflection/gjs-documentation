@@ -9,7 +9,7 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Array(guint8)</api:type>
+        <api:type>Array(Number(guint8))</api:type>
       </api:returns>
       <api:name>g_base64_decode</api:name>
       <api:arg>
@@ -20,7 +20,7 @@
   </info>
   <title>GLib.base64_decode</title>
   <synopsis><code mime="text/x-gjs">
-function base64_decode(text: String): [return_value: Array(guint8), out_len: gsize] {
+function base64_decode(text: String): [return_value: Array(Number(guint8)), out_len: Number(gsize)] {
     // Gjs wrapper for g_base64_decode()
 }
   </code></synopsis>

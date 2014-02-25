@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Converter::convert</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_convert(inbuf: Array(guint8), outbuf: gpointer, outbuf_size: gsize, flags: Gio.ConverterFlags): [return_value: Gio.ConverterResult, bytes_read: gsize, bytes_written: gsize] {
+function vfunc_convert(inbuf: Array(Number(guint8)), outbuf: void, outbuf_size: Number(gsize), flags: <link xref="Gio.ConverterFlags">Gio.ConverterFlags</link>): [return_value: <link xref="Gio.ConverterResult">Gio.ConverterResult</link>, bytes_read: Number(gsize), bytes_written: Number(gsize)] {
 }
   </code></synopsis>
   <p>This is the main operation used when converting data. It is to be called

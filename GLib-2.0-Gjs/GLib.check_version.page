@@ -13,22 +13,22 @@
       </api:returns>
       <api:name>glib_check_version</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
         <api:name>required_major</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
         <api:name>required_minor</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
         <api:name>required_micro</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.check_version</title>
   <synopsis><code mime="text/x-gjs">
-function check_version(required_major: Number, required_minor: Number, required_micro: Number): String {
+function check_version(required_major: Number(guint), required_minor: Number(guint), required_micro: Number(guint)): String {
     // Gjs wrapper for glib_check_version()
 }
   </code></synopsis>

@@ -11,7 +11,7 @@
   </info>
   <title>Gio.OutputVector.size</title>
   <synopsis><code mime="text/x-gjs">
-OutputVector.size: gsize (Read / Write)
+OutputVector.size: Number(gsize) (Read / Write)
   </code></synopsis>
   <p>the size of @buffer.</p>
 

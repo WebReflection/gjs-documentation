@@ -20,7 +20,7 @@
   </info>
   <title>Gio.Application.prototype.add_option_group</title>
   <synopsis><code mime="text/x-gjs">
-function add_option_group(group: GLib.OptionGroup): void {
+function add_option_group(group: <link href="../GLib-2.0/GLib.OptionGroup.page">GLib.OptionGroup</link>): void {
     // Gjs wrapper for g_application_add_option_group()
 }
   </code></synopsis>

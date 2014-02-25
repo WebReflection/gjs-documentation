@@ -10,7 +10,7 @@
   </info>
   <title>GLib.CompareDataFunc</title>
   <synopsis><code mime="text/x-gjs">
-function onCompareDataFunc(a: gpointer, b: gpointer): Number {
+function onCompareDataFunc(a: void, b: void): Number(gint) {
 }
   </code></synopsis>
   <p>Specifies the type of a comparison function used to compare two

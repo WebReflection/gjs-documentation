@@ -10,7 +10,7 @@
   </info>
   <title>Gio.VolumeMonitor::drive_changed</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_drive_changed(drive: Gio.Drive): void {
+function vfunc_drive_changed(drive: <link xref="Gio.Drive">Gio.Drive</link>): void {
 }
   </code></synopsis>
 

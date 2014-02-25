@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Mount::get_volume</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_volume(): Gio.Volume {
+function vfunc_get_volume(): <link xref="Gio.Volume">Gio.Volume</link> {
 }
   </code></synopsis>
   <p>Gets the volume for the <code>mount</code>.</p>

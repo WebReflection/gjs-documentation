@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Volume::eject_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_eject_finish(result: Gio.AsyncResult): Boolean {
+function vfunc_eject_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): Boolean {
 }
   </code></synopsis>
   <p>Finishes ejecting a volume. If any errors occurred during the operation,

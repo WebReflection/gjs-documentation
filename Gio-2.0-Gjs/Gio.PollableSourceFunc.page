@@ -10,7 +10,7 @@
   </info>
   <title>Gio.PollableSourceFunc</title>
   <synopsis><code mime="text/x-gjs">
-function onPollableSourceFunc(pollable_stream: GObject.Object): Boolean {
+function onPollableSourceFunc(pollable_stream: <link href="../GObject-2.0/GObject.Object.page">GObject.Object</link>): Boolean {
 }
   </code></synopsis>
   <p>This is the function type of the callback used for the <link xref="GLib.Source"/>

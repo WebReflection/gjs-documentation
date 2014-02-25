@@ -10,7 +10,7 @@
   </info>
   <title>GLib.MemVTable.free</title>
   <synopsis><code mime="text/x-gjs">
-function onfree(mem: gpointer): void {
+function onfree(mem: void): void {
 }
   </code></synopsis>
 

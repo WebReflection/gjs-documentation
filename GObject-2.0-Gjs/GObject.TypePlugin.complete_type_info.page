@@ -13,7 +13,7 @@
       </api:returns>
       <api:name>g_type_plugin_complete_type_info</api:name>
       <api:arg>
-        <api:type>GType</api:type>
+        <api:type>GObject.Type</api:type>
         <api:name>g_type</api:name>
       </api:arg>
       <api:arg>
@@ -28,7 +28,7 @@
   </info>
   <title>GObject.TypePlugin.prototype.complete_type_info</title>
   <synopsis><code mime="text/x-gjs">
-function complete_type_info(g_type: GType, info: GObject.TypeInfo, value_table: GObject.TypeValueTable): void {
+function complete_type_info(g_type: GObject.Type, info: <link xref="GObject.TypeInfo">GObject.TypeInfo</link>, value_table: <link xref="GObject.TypeValueTable">GObject.TypeValueTable</link>): void {
     // Gjs wrapper for g_type_plugin_complete_type_info()
 }
   </code></synopsis>

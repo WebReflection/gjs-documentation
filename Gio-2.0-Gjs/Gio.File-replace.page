@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::replace</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_replace(etag: String, make_backup: Boolean, flags: Gio.FileCreateFlags, cancellable: Gio.Cancellable): Gio.FileOutputStream {
+function vfunc_replace(etag: String, make_backup: Boolean, flags: <link xref="Gio.FileCreateFlags">Gio.FileCreateFlags</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): <link xref="Gio.FileOutputStream">Gio.FileOutputStream</link> {
 }
   </code></synopsis>
   <p>Returns an output stream for overwriting the file, possibly

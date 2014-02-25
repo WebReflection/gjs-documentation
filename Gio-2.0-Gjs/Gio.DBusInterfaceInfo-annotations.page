@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusInterfaceInfo.annotations</title>
   <synopsis><code mime="text/x-gjs">
-DBusInterfaceInfo.annotations: Array(Gio.DBusAnnotationInfo) (Read / Write)
+DBusInterfaceInfo.annotations: Array(<link xref="Gio.DBusAnnotationInfo">Gio.DBusAnnotationInfo</link>) (Read / Write)
   </code></synopsis>
   <p>A pointer to a <code>null</code>-terminated array of pointers to <link xref="Gio.DBusAnnotationInfo"/> structures or <code>null</code> if there are no annotations.</p>
 

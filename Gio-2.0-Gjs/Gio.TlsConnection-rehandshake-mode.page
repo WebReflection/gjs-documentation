@@ -11,7 +11,7 @@
   </info>
   <title>Gio.TlsConnection.rehandshake_mode</title>
   <synopsis><code mime="text/x-gjs">
-TlsConnection.rehandshake_mode: Gio.TlsRehandshakeMode (Read / Write / Construct)
+TlsConnection.rehandshake_mode: <link xref="Gio.TlsRehandshakeMode">Gio.TlsRehandshakeMode</link> (Read / Write / Construct)
   </code></synopsis>
   <p>The rehandshaking mode. See
 <link xref="Gio.TlsConnection.set_rehandshake_mode"/>.</p>

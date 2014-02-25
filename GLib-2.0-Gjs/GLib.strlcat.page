@@ -9,7 +9,7 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>gsize</api:type>
+        <api:type>Number(gsize)</api:type>
       </api:returns>
       <api:name>g_strlcat</api:name>
       <api:arg>
@@ -21,14 +21,14 @@
         <api:name>src</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gsize</api:type>
+        <api:type>Number(gsize)</api:type>
         <api:name>dest_size</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.strlcat</title>
   <synopsis><code mime="text/x-gjs">
-function strlcat(dest: String, src: String, dest_size: gsize): gsize {
+function strlcat(dest: String, src: String, dest_size: Number(gsize)): Number(gsize) {
     // Gjs wrapper for g_strlcat()
 }
   </code></synopsis>

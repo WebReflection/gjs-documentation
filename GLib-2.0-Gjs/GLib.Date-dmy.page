@@ -11,7 +11,7 @@
   </info>
   <title>GLib.Date.dmy</title>
   <synopsis><code mime="text/x-gjs">
-Date.dmy: Number (Read / Write)
+Date.dmy: Number(guint) (Read / Write)
   </code></synopsis>
   <p>this is set if @day, @month and @year are valid</p>
 

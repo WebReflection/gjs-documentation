@@ -11,7 +11,7 @@
   </info>
   <title>GLib.ScannerConfig.identifier_2_string</title>
   <synopsis><code mime="text/x-gjs">
-ScannerConfig.identifier_2_string: Number (Read / Write)
+ScannerConfig.identifier_2_string: Number(guint) (Read / Write)
   </code></synopsis>
   <p>specifies if identifiers are reported as strings
     (the default is <code>false</code>).</p>

@@ -20,7 +20,7 @@
   </info>
   <title>Gio.DataInputStream.prototype.read_line_finish_utf8</title>
   <synopsis><code mime="text/x-gjs">
-function read_line_finish_utf8(result: Gio.AsyncResult): [return_value: String, length: gsize] {
+function read_line_finish_utf8(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): [return_value: String, length: Number(gsize)] {
     // Gjs wrapper for g_data_input_stream_read_line_finish_utf8()
 }
   </code></synopsis>

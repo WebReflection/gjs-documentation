@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::set_attribute</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_set_attribute(attribute: String, type: Gio.FileAttributeType, value_p: gpointer, flags: Gio.FileQueryInfoFlags, cancellable: Gio.Cancellable): Boolean {
+function vfunc_set_attribute(attribute: String, type: <link xref="Gio.FileAttributeType">Gio.FileAttributeType</link>, value_p: void, flags: <link xref="Gio.FileQueryInfoFlags">Gio.FileQueryInfoFlags</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Boolean {
 }
   </code></synopsis>
   <p>Sets an attribute in the file with attribute name <code>attribute</code> to @value.</p>  <p>Some attributes can be unset by setting <code>attribute</code> to

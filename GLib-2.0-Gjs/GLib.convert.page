@@ -17,7 +17,7 @@
         <api:name>str</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gssize</api:type>
+        <api:type>Number(gssize)</api:type>
         <api:name>len</api:name>
       </api:arg>
       <api:arg>
@@ -32,7 +32,7 @@
   </info>
   <title>GLib.convert</title>
   <synopsis><code mime="text/x-gjs">
-function convert(str: String, len: gssize, to_codeset: String, from_codeset: String): [return_value: String, bytes_read: gsize, bytes_written: gsize] {
+function convert(str: String, len: Number(gssize), to_codeset: String, from_codeset: String): [return_value: String, bytes_read: Number(gsize), bytes_written: Number(gsize)] {
     // Gjs wrapper for g_convert()
 }
   </code></synopsis>

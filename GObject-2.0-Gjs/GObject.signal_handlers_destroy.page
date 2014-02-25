@@ -20,7 +20,7 @@
   </info>
   <title>GObject.signal_handlers_destroy</title>
   <synopsis><code mime="text/x-gjs">
-function signal_handlers_destroy(instance: GObject.Object): void {
+function signal_handlers_destroy(instance: <link xref="GObject.Object">GObject.Object</link>): void {
     // Gjs wrapper for g_signal_handlers_destroy()
 }
   </code></synopsis>

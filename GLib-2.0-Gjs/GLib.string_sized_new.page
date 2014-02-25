@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_string_sized_new</api:name>
       <api:arg>
-        <api:type>gsize</api:type>
+        <api:type>Number(gsize)</api:type>
         <api:name>dfl_size</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.string_sized_new</title>
   <synopsis><code mime="text/x-gjs">
-function string_sized_new(dfl_size: gsize): GLib.String {
+function string_sized_new(dfl_size: Number(gsize)): <link xref="GLib.String">GLib.String</link> {
     // Gjs wrapper for g_string_sized_new()
 }
   </code></synopsis>

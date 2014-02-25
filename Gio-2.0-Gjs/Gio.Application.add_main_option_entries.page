@@ -20,7 +20,7 @@
   </info>
   <title>Gio.Application.prototype.add_main_option_entries</title>
   <synopsis><code mime="text/x-gjs">
-function add_main_option_entries(entries: GLib.OptionEntry): void {
+function add_main_option_entries(entries: <link href="../GLib-2.0/GLib.OptionEntry.page">GLib.OptionEntry</link>): void {
     // Gjs wrapper for g_application_add_main_option_entries()
 }
   </code></synopsis>

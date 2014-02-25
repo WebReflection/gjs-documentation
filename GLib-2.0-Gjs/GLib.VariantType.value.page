@@ -16,7 +16,7 @@
   </info>
   <title>GLib.VariantType.prototype.value</title>
   <synopsis><code mime="text/x-gjs">
-function value(): GLib.VariantType {
+function value(): <link xref="GLib.VariantType">GLib.VariantType</link> {
     // Gjs wrapper for g_variant_type_value()
 }
   </code></synopsis>

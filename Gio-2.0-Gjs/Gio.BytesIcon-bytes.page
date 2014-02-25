@@ -11,7 +11,7 @@
   </info>
   <title>Gio.BytesIcon.bytes</title>
   <synopsis><code mime="text/x-gjs">
-BytesIcon.bytes: GLib.Bytes (Read / Write / Construct Only)
+BytesIcon.bytes: <link href="../GLib-2.0/GLib.Bytes.page">GLib.Bytes</link> (Read / Write / Construct Only)
   </code></synopsis>
   <p>The bytes containing the icon.</p>
 

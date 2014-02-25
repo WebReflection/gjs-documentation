@@ -10,7 +10,7 @@
   </info>
   <title>Gio.DBusObjectManager::interface_added</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_interface_added(object: Gio.DBusObject, interface_: Gio.DBusInterface): void {
+function vfunc_interface_added(object: <link xref="Gio.DBusObject">Gio.DBusObject</link>, interface_: <link xref="Gio.DBusInterface">Gio.DBusInterface</link>): void {
 }
   </code></synopsis>
 

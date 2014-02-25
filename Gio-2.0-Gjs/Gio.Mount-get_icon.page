@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Mount::get_icon</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_icon(): Gio.Icon {
+function vfunc_get_icon(): <link xref="Gio.Icon">Gio.Icon</link> {
 }
   </code></synopsis>
   <p>Gets the icon for <code>mount</code>.</p>

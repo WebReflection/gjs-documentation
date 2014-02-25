@@ -10,7 +10,7 @@
   </info>
   <title>GObject.ParamSpec::value_validate</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_value_validate(value: GObject.Value): Boolean {
+function vfunc_value_validate(value: <link xref="GObject.Value">GObject.Value</link>): Boolean {
 }
   </code></synopsis>
 

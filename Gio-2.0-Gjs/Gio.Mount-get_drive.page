@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Mount::get_drive</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_drive(): Gio.Drive {
+function vfunc_get_drive(): <link xref="Gio.Drive">Gio.Drive</link> {
 }
   </code></synopsis>
   <p>Gets the drive for the <code>mount</code>.</p>  <p>This is a convenience method for getting the <link xref="Gio.Volume"/> and then

@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::find_enclosing_mount_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_find_enclosing_mount_finish(res: Gio.AsyncResult): Gio.Mount {
+function vfunc_find_enclosing_mount_finish(res: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): <link xref="Gio.Mount">Gio.Mount</link> {
 }
   </code></synopsis>
   <p>Finishes an asynchronous find mount request.

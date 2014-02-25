@@ -20,7 +20,7 @@
   </info>
   <title>GObject.source_set_dummy_callback</title>
   <synopsis><code mime="text/x-gjs">
-function source_set_dummy_callback(source: GLib.Source): void {
+function source_set_dummy_callback(source: <link href="../GLib-2.0/GLib.Source.page">GLib.Source</link>): void {
     // Gjs wrapper for g_source_set_dummy_callback()
 }
   </code></synopsis>

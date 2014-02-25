@@ -11,7 +11,7 @@
   </info>
   <title>GLib.HookList.finalize_hook</title>
   <synopsis><code mime="text/x-gjs">
-HookList.finalize_hook: GLib.HookFinalizeFunc (Read)
+HookList.finalize_hook: <link xref="GLib.HookFinalizeFunc">GLib.HookFinalizeFunc</link> (Read)
   </code></synopsis>
   <p>the function to call to finalize a <link xref="GLib.Hook"/> element.
     The default behaviour is to call the hooks @destroy function</p>

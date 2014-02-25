@@ -11,7 +11,7 @@
   </info>
   <title>Gio.StaticResource.data_len</title>
   <synopsis><code mime="text/x-gjs">
-StaticResource.data_len: gsize (Read / Write)
+StaticResource.data_len: Number(gsize) (Read / Write)
   </code></synopsis>
 
 

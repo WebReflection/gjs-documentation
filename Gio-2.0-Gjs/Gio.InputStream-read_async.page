@@ -10,7 +10,7 @@
   </info>
   <title>Gio.InputStream::read_async</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_read_async(buffer: Array(guint8), io_priority: Number, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+function vfunc_read_async(buffer: Array(Number(guint8)), io_priority: Number(gint), cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
 }
   </code></synopsis>
   <p>Request an asynchronous read of <code>count</code> bytes from the stream into the buffer

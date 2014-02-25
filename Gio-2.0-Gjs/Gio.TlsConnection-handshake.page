@@ -10,7 +10,7 @@
   </info>
   <title>Gio.TlsConnection::handshake</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_handshake(cancellable: Gio.Cancellable): Boolean {
+function vfunc_handshake(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Boolean {
 }
   </code></synopsis>
   <p>Attempts a TLS handshake on <code>conn</code>.</p>  <p>On the client side, it is never necessary to call this method;

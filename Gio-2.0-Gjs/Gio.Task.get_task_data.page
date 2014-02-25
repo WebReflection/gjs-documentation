@@ -9,14 +9,14 @@
     <link xref="Gio.Task" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
       </api:returns>
       <api:name>g_task_get_task_data</api:name>
     </api:function>
   </info>
   <title>Gio.Task.prototype.get_task_data</title>
   <synopsis><code mime="text/x-gjs">
-function get_task_data(): gpointer {
+function get_task_data(): void {
     // Gjs wrapper for g_task_get_task_data()
 }
   </code></synopsis>

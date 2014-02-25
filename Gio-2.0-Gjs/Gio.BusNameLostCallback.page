@@ -10,7 +10,7 @@
   </info>
   <title>Gio.BusNameLostCallback</title>
   <synopsis><code mime="text/x-gjs">
-function onBusNameLostCallback(connection: Gio.DBusConnection, name: String): void {
+function onBusNameLostCallback(connection: <link xref="Gio.DBusConnection">Gio.DBusConnection</link>, name: String): void {
 }
   </code></synopsis>
   <p>Invoked when the name is lost or <code>connection</code> has been closed.</p>

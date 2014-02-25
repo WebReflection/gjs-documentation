@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusServer::new-connection</title>
   <synopsis><code mime="text/x-gjs">
-connect('new-connection', function (dBusServer, connection: Gio.DBusConnection, ): Boolean);
+connect('new-connection', function (dBusServer, connection: <link xref="Gio.DBusConnection">Gio.DBusConnection</link>, ): Boolean);
   </code></synopsis>
   <p>Emitted when a new authenticated connection has been made. Use
 <link xref="Gio.DBusConnection.get_peer_credentials"/> to figure out what

@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusObject::interface-removed</title>
   <synopsis><code mime="text/x-gjs">
-connect('interface-removed', function (dBusObject, interface: Gio.DBusInterface, ): void);
+connect('interface-removed', function (dBusObject, interface: <link xref="Gio.DBusInterface">Gio.DBusInterface</link>, ): void);
   </code></synopsis>
   <p>Emitted when <code>interface</code> is removed from @object.</p>
   <p>Since 2.30</p>

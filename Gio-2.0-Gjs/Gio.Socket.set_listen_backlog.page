@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_socket_set_listen_backlog</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>backlog</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>Gio.Socket.prototype.set_listen_backlog</title>
   <synopsis><code mime="text/x-gjs">
-function set_listen_backlog(backlog: Number): void {
+function set_listen_backlog(backlog: Number(gint)): void {
     // Gjs wrapper for g_socket_set_listen_backlog()
 }
   </code></synopsis>

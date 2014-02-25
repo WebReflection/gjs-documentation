@@ -10,7 +10,7 @@
   </info>
   <title>Gio.VolumeMonitor::get_volume_for_uuid</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_volume_for_uuid(uuid: String): Gio.Volume {
+function vfunc_get_volume_for_uuid(uuid: String): <link xref="Gio.Volume">Gio.Volume</link> {
 }
   </code></synopsis>
   <p>Finds a <link xref="Gio.Volume"/> object by its UUID (see <link xref="Gio.Volume.get_uuid"/>)</p>

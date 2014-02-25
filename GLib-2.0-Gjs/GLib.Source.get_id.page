@@ -9,14 +9,14 @@
     <link xref="GLib.Source" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
       </api:returns>
       <api:name>g_source_get_id</api:name>
     </api:function>
   </info>
   <title>GLib.Source.prototype.get_id</title>
   <synopsis><code mime="text/x-gjs">
-function get_id(): Number {
+function get_id(): Number(guint) {
     // Gjs wrapper for g_source_get_id()
 }
   </code></synopsis>

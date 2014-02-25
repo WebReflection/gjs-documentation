@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DataInputStream.newline_type</title>
   <synopsis><code mime="text/x-gjs">
-DataInputStream.newline_type: Gio.DataStreamNewlineType (Read / Write)
+DataInputStream.newline_type: <link xref="Gio.DataStreamNewlineType">Gio.DataStreamNewlineType</link> (Read / Write)
   </code></synopsis>
 
 

@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_match_info_fetch_pos</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>match_num</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.MatchInfo.prototype.fetch_pos</title>
   <synopsis><code mime="text/x-gjs">
-function fetch_pos(match_num: Number): [ok: Boolean, start_pos: Number, end_pos: Number] {
+function fetch_pos(match_num: Number(gint)): [ok: Boolean, start_pos: Number(gint), end_pos: Number(gint)] {
     // Gjs wrapper for g_match_info_fetch_pos()
 }
   </code></synopsis>

@@ -9,7 +9,7 @@
     <link xref="GLib.KeyFile" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_key_file_get_integer</api:name>
       <api:arg>
@@ -24,7 +24,7 @@
   </info>
   <title>GLib.KeyFile.prototype.get_integer</title>
   <synopsis><code mime="text/x-gjs">
-function get_integer(group_name: String, key: String): Number {
+function get_integer(group_name: String, key: String): Number(gint) {
     // Gjs wrapper for g_key_file_get_integer()
 }
   </code></synopsis>

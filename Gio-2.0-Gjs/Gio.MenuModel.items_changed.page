@@ -13,22 +13,22 @@
       </api:returns>
       <api:name>g_menu_model_items_changed</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>position</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>removed</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>added</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>Gio.MenuModel.prototype.items_changed</title>
   <synopsis><code mime="text/x-gjs">
-function items_changed(position: Number, removed: Number, added: Number): void {
+function items_changed(position: Number(gint), removed: Number(gint), added: Number(gint)): void {
     // Gjs wrapper for g_menu_model_items_changed()
 }
   </code></synopsis>

@@ -11,7 +11,7 @@
   </info>
   <title>Gio.UnixSocketAddress.address_type</title>
   <synopsis><code mime="text/x-gjs">
-UnixSocketAddress.address_type: Gio.UnixSocketAddressType (Read / Write / Construct Only)
+UnixSocketAddress.address_type: <link xref="Gio.UnixSocketAddressType">Gio.UnixSocketAddressType</link> (Read / Write / Construct Only)
   </code></synopsis>
 
 

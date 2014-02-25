@@ -11,7 +11,7 @@
   </info>
   <title>GLib.Queue.head</title>
   <synopsis><code mime="text/x-gjs">
-Queue.head: Array(gpointer) (Read / Write)
+Queue.head: Array(void) (Read / Write)
   </code></synopsis>
   <p>a pointer to the first element of the queue</p>
 

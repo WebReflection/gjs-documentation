@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusObjectSkeleton::authorize-method</title>
   <synopsis><code mime="text/x-gjs">
-connect('authorize-method', function (dBusObjectSkeleton, interface: Gio.DBusInterfaceSkeleton, invocation: Gio.DBusMethodInvocation, ): Boolean);
+connect('authorize-method', function (dBusObjectSkeleton, interface: <link xref="Gio.DBusInterfaceSkeleton">Gio.DBusInterfaceSkeleton</link>, invocation: <link xref="Gio.DBusMethodInvocation">Gio.DBusMethodInvocation</link>, ): Boolean);
   </code></synopsis>
   <p>Emitted when a method is invoked by a remote caller and used to
 determine if the method call is authorized.</p>  <p>This signal is like <link xref="Gio.DBusInterfaceSkeleton"/>'s

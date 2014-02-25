@@ -9,7 +9,7 @@
     <link xref="GLib.TimeZone" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_time_zone_adjust_time</api:name>
       <api:arg>
@@ -17,14 +17,14 @@
         <api:name>type</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint64)</api:type>
         <api:name>time_</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.TimeZone.prototype.adjust_time</title>
   <synopsis><code mime="text/x-gjs">
-function adjust_time(type: GLib.TimeType, time_: Number): Number {
+function adjust_time(type: <link xref="GLib.TimeType">GLib.TimeType</link>, time_: Number(gint64)): Number(gint) {
     // Gjs wrapper for g_time_zone_adjust_time()
 }
   </code></synopsis>

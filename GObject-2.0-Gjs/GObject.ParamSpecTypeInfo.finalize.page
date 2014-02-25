@@ -10,7 +10,7 @@
   </info>
   <title>GObject.ParamSpecTypeInfo.finalize</title>
   <synopsis><code mime="text/x-gjs">
-function onfinalize(pspec: GObject.ParamSpec): void {
+function onfinalize(pspec: <link xref="GObject.ParamSpec">GObject.ParamSpec</link>): void {
 }
   </code></synopsis>
 

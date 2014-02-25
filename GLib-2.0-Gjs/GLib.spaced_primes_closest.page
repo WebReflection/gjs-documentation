@@ -9,18 +9,18 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
       </api:returns>
       <api:name>g_spaced_primes_closest</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
         <api:name>num</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.spaced_primes_closest</title>
   <synopsis><code mime="text/x-gjs">
-function spaced_primes_closest(num: Number): Number {
+function spaced_primes_closest(num: Number(guint)): Number(guint) {
     // Gjs wrapper for g_spaced_primes_closest()
 }
   </code></synopsis>

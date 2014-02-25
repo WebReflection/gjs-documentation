@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusProxy.g_flags</title>
   <synopsis><code mime="text/x-gjs">
-DBusProxy.g_flags: Gio.DBusProxyFlags (Read / Write / Construct Only)
+DBusProxy.g_flags: <link xref="Gio.DBusProxyFlags">Gio.DBusProxyFlags</link> (Read / Write / Construct Only)
   </code></synopsis>
   <p>Flags from the <link xref="Gio.DBusProxyFlags"/> enumeration.</p>
   <p>Since 2.26</p>

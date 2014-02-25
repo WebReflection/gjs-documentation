@@ -9,14 +9,14 @@
     <link xref="GLib.Node" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
       </api:returns>
       <api:name>g_node_n_children</api:name>
     </api:function>
   </info>
   <title>GLib.Node.prototype.n_children</title>
   <synopsis><code mime="text/x-gjs">
-function n_children(): Number {
+function n_children(): Number(guint) {
     // Gjs wrapper for g_node_n_children()
 }
   </code></synopsis>

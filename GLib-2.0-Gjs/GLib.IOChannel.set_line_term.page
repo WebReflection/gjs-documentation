@@ -17,14 +17,14 @@
         <api:name>line_term</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>length</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.IOChannel.prototype.set_line_term</title>
   <synopsis><code mime="text/x-gjs">
-function set_line_term(line_term: String, length: Number): void {
+function set_line_term(line_term: String, length: Number(gint)): void {
     // Gjs wrapper for g_io_channel_set_line_term()
 }
   </code></synopsis>

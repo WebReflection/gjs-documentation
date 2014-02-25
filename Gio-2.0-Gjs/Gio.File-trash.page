@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::trash</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_trash(cancellable: Gio.Cancellable): Boolean {
+function vfunc_trash(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Boolean {
 }
   </code></synopsis>
   <p>Sends <code>file</code> to the "Trashcan", if possible. This is similar to

@@ -11,7 +11,7 @@
   </info>
   <title>GLib.ScannerConfig.scan_string_sq</title>
   <synopsis><code mime="text/x-gjs">
-ScannerConfig.scan_string_sq: Number (Read / Write)
+ScannerConfig.scan_string_sq: Number(guint) (Read / Write)
   </code></synopsis>
   <p>specifies if strings can be enclosed in single
     quotes (the default is <code>true</code>).</p>

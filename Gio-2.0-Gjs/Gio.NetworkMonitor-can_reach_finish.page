@@ -10,7 +10,7 @@
   </info>
   <title>Gio.NetworkMonitor::can_reach_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_can_reach_finish(result: Gio.AsyncResult): Boolean {
+function vfunc_can_reach_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): Boolean {
 }
   </code></synopsis>
   <p>Finishes an async network connectivity test.

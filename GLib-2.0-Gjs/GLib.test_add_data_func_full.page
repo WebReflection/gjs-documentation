@@ -17,7 +17,7 @@
         <api:name>testpath</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>test_data</api:name>
       </api:arg>
       <api:arg>
@@ -28,7 +28,7 @@
   </info>
   <title>GLib.test_add_data_func_full</title>
   <synopsis><code mime="text/x-gjs">
-function test_add_data_func_full(testpath: String, test_data: gpointer, test_func: GLib.TestDataFunc): void {
+function test_add_data_func_full(testpath: String, test_data: void, test_func: <link xref="GLib.TestDataFunc">GLib.TestDataFunc</link>): void {
     // Gjs wrapper for g_test_add_data_func_full()
 }
   </code></synopsis>

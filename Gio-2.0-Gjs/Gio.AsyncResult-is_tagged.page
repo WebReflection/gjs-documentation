@@ -10,7 +10,7 @@
   </info>
   <title>Gio.AsyncResult::is_tagged</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_is_tagged(source_tag: gpointer): Boolean {
+function vfunc_is_tagged(source_tag: void): Boolean {
 }
   </code></synopsis>
   <p>Checks if <code>res</code> has the given <code>source_tag</code> (generally a function

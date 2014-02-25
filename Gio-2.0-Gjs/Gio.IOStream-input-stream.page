@@ -11,7 +11,7 @@
   </info>
   <title>Gio.IOStream.input_stream</title>
   <synopsis><code mime="text/x-gjs">
-IOStream.input_stream: Gio.InputStream (Read)
+IOStream.input_stream: <link xref="Gio.InputStream">Gio.InputStream</link> (Read)
   </code></synopsis>
 
 

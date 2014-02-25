@@ -17,14 +17,14 @@
         <api:name>stack_p</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>data_p</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.TrashStack.push</title>
   <synopsis><code mime="text/x-gjs">
-function push(stack_p: GLib.TrashStack, data_p: gpointer): void {
+function push(stack_p: <link xref="GLib.TrashStack">GLib.TrashStack</link>, data_p: void): void {
     // Gjs wrapper for g_trash_stack_push()
 }
   </code></synopsis>

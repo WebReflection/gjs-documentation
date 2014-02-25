@@ -9,7 +9,7 @@
     <link xref="Gio.Settings" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
       </api:returns>
       <api:name>g_settings_get_flags</api:name>
       <api:arg>
@@ -20,7 +20,7 @@
   </info>
   <title>Gio.Settings.prototype.get_flags</title>
   <synopsis><code mime="text/x-gjs">
-function get_flags(key: String): Number {
+function get_flags(key: String): Number(guint) {
     // Gjs wrapper for g_settings_get_flags()
 }
   </code></synopsis>

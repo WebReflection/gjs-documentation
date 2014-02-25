@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_task_set_source_tag</api:name>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>source_tag</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>Gio.Task.prototype.set_source_tag</title>
   <synopsis><code mime="text/x-gjs">
-function set_source_tag(source_tag: gpointer): void {
+function set_source_tag(source_tag: void): void {
     // Gjs wrapper for g_task_set_source_tag()
 }
   </code></synopsis>

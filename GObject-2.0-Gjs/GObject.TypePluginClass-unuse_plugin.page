@@ -11,7 +11,7 @@
   </info>
   <title>GObject.TypePluginClass.unuse_plugin</title>
   <synopsis><code mime="text/x-gjs">
-TypePluginClass.unuse_plugin: GObject.TypePluginUnuse (Read)
+TypePluginClass.unuse_plugin: <link xref="GObject.TypePluginUnuse">GObject.TypePluginUnuse</link> (Read)
   </code></synopsis>
   <p>Decreases the use count of the plugin.</p>
 

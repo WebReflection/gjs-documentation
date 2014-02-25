@@ -9,7 +9,7 @@
     <link xref="Gio.Settings" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_settings_get_enum</api:name>
       <api:arg>
@@ -20,7 +20,7 @@
   </info>
   <title>Gio.Settings.prototype.get_enum</title>
   <synopsis><code mime="text/x-gjs">
-function get_enum(key: String): Number {
+function get_enum(key: String): Number(gint) {
     // Gjs wrapper for g_settings_get_enum()
 }
   </code></synopsis>

@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::query_writable_namespaces</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_query_writable_namespaces(cancellable: Gio.Cancellable): Gio.FileAttributeInfoList {
+function vfunc_query_writable_namespaces(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): <link xref="Gio.FileAttributeInfoList">Gio.FileAttributeInfoList</link> {
 }
   </code></synopsis>
   <p>Obtain the list of attribute namespaces where new attributes

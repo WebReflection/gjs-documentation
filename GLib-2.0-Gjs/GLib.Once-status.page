@@ -11,7 +11,7 @@
   </info>
   <title>GLib.Once.status</title>
   <synopsis><code mime="text/x-gjs">
-Once.status: GLib.OnceStatus (Read / Write)
+Once.status: <link xref="GLib.OnceStatus">GLib.OnceStatus</link> (Read / Write)
   </code></synopsis>
   <p>the status of the <link xref="GLib.Once"/></p>
 

@@ -10,7 +10,7 @@
   </info>
   <title>Gio.VolumeMonitor::get_volumes</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_volumes(): Array(Gio.Volume) {
+function vfunc_get_volumes(): Array(<link xref="Gio.Volume">Gio.Volume</link>) {
 }
   </code></synopsis>
   <p>Gets a list of the volumes on the system.</p>  <p>The returned list should be freed with <link xref="GLib.free"/>, after

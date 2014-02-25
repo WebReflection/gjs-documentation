@@ -13,18 +13,18 @@
       </api:returns>
       <api:name>g_socket_get_option</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>level</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>optname</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>Gio.Socket.prototype.get_option</title>
   <synopsis><code mime="text/x-gjs">
-function get_option(level: Number, optname: Number): [ok: Boolean, value: Number] {
+function get_option(level: Number(gint), optname: Number(gint)): [ok: Boolean, value: Number(gint)] {
     // Gjs wrapper for g_socket_get_option()
 }
   </code></synopsis>

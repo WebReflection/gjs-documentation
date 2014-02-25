@@ -10,7 +10,7 @@
   </info>
   <title>Gio.NetworkMonitor::can_reach_async</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_can_reach_async(connectable: Gio.SocketConnectable, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+function vfunc_can_reach_async(connectable: <link xref="Gio.SocketConnectable">Gio.SocketConnectable</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
 }
   </code></synopsis>
   <p>Asynchronously attempts to determine whether or not the host

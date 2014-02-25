@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusSignalInfo.args</title>
   <synopsis><code mime="text/x-gjs">
-DBusSignalInfo.args: Array(Gio.DBusArgInfo) (Read / Write)
+DBusSignalInfo.args: Array(<link xref="Gio.DBusArgInfo">Gio.DBusArgInfo</link>) (Read / Write)
   </code></synopsis>
   <p>A pointer to a <code>null</code>-terminated array of pointers to <link xref="Gio.DBusArgInfo"/> structures or <code>null</code> if there are no arguments.</p>
 

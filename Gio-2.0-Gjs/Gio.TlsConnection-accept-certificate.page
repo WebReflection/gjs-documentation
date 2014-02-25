@@ -11,7 +11,7 @@
   </info>
   <title>Gio.TlsConnection::accept-certificate</title>
   <synopsis><code mime="text/x-gjs">
-connect('accept-certificate', function (tlsConnection, peer_cert: Gio.TlsCertificate, errors: Gio.TlsCertificateFlags, ): Boolean);
+connect('accept-certificate', function (tlsConnection, peer_cert: <link xref="Gio.TlsCertificate">Gio.TlsCertificate</link>, errors: <link xref="Gio.TlsCertificateFlags">Gio.TlsCertificateFlags</link>, ): Boolean);
   </code></synopsis>
   <p>Emitted during the TLS handshake after the peer certificate has
 been received. You can examine <code>peer_cert</code>'s certification path by

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<page id="GLib.str_to_ascii"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>g_str_to_ascii</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>str</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>from_locale</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.str_to_ascii</title>
+  <synopsis><code mime="text/x-gjs">
+function str_to_ascii(str: String, from_locale: String): String {
+    // Gjs wrapper for g_str_to_ascii()
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>str</code></title>
+
+</item>
+<item>
+<title><code>from_locale</code></title>
+
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

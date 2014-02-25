@@ -9,22 +9,22 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>gsize</api:type>
+        <api:type>Number(gsize)</api:type>
       </api:returns>
       <api:name>g_atomic_pointer_and</api:name>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>atomic</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gsize</api:type>
+        <api:type>Number(gsize)</api:type>
         <api:name>val</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.atomic_pointer_and</title>
   <synopsis><code mime="text/x-gjs">
-function atomic_pointer_and(atomic: gpointer, val: gsize): gsize {
+function atomic_pointer_and(atomic: void, val: Number(gsize)): Number(gsize) {
     // Gjs wrapper for g_atomic_pointer_and()
 }
   </code></synopsis>

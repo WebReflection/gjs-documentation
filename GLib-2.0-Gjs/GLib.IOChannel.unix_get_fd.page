@@ -9,14 +9,14 @@
     <link xref="GLib.IOChannel" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_io_channel_unix_get_fd</api:name>
     </api:function>
   </info>
   <title>GLib.IOChannel.prototype.unix_get_fd</title>
   <synopsis><code mime="text/x-gjs">
-function unix_get_fd(): Number {
+function unix_get_fd(): Number(gint) {
     // Gjs wrapper for g_io_channel_unix_get_fd()
 }
   </code></synopsis>

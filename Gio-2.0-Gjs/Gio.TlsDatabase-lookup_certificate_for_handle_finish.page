@@ -10,7 +10,7 @@
   </info>
   <title>Gio.TlsDatabase::lookup_certificate_for_handle_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_lookup_certificate_for_handle_finish(result: Gio.AsyncResult): Gio.TlsCertificate {
+function vfunc_lookup_certificate_for_handle_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): <link xref="Gio.TlsCertificate">Gio.TlsCertificate</link> {
 }
   </code></synopsis>
   <p>Finish an asynchronous lookup of a certificate by its handle. See

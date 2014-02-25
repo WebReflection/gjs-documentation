@@ -20,7 +20,7 @@
   </info>
   <title>GLib.Date.prototype.set_time</title>
   <synopsis><code mime="text/x-gjs">
-function set_time(time_: GLib.Time): void {
+function set_time(time_: <link xref="GLib.Time">GLib.Time</link>): void {
     // Gjs wrapper for g_date_set_time()
 }
   </code></synopsis>

@@ -24,7 +24,7 @@
   </info>
   <title>Gio.DesktopAppInfo.prototype.launch_action</title>
   <synopsis><code mime="text/x-gjs">
-function launch_action(action_name: String, launch_context: Gio.AppLaunchContext): void {
+function launch_action(action_name: String, launch_context: <link xref="Gio.AppLaunchContext">Gio.AppLaunchContext</link>): void {
     // Gjs wrapper for g_desktop_app_info_launch_action()
 }
   </code></synopsis>

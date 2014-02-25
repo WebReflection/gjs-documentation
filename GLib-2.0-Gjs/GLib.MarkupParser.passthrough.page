@@ -10,7 +10,7 @@
   </info>
   <title>GLib.MarkupParser.passthrough</title>
   <synopsis><code mime="text/x-gjs">
-function onpassthrough(context: GLib.MarkupParseContext, passthrough_text: String, text_len: gsize): void {
+function onpassthrough(context: <link xref="GLib.MarkupParseContext">GLib.MarkupParseContext</link>, passthrough_text: String, text_len: Number(gsize)): void {
 }
   </code></synopsis>
 

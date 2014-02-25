@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::make_directory_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_make_directory_finish(result: Gio.AsyncResult): Boolean {
+function vfunc_make_directory_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): Boolean {
 }
   </code></synopsis>
   <p>Finishes an asynchronous directory creation, started with

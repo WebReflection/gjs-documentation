@@ -10,7 +10,7 @@
   </info>
   <title>GObject.TypePluginUnuse</title>
   <synopsis><code mime="text/x-gjs">
-function onTypePluginUnuse(plugin: GObject.TypePlugin): void {
+function onTypePluginUnuse(plugin: <link xref="GObject.TypePlugin">GObject.TypePlugin</link>): void {
 }
   </code></synopsis>
   <p>The type of the @unuse_plugin function of <link xref="GObject.TypePluginClass"/>.</p>

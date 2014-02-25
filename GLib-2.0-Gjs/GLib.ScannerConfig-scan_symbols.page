@@ -11,7 +11,7 @@
   </info>
   <title>GLib.ScannerConfig.scan_symbols</title>
   <synopsis><code mime="text/x-gjs">
-ScannerConfig.scan_symbols: Number (Read / Write)
+ScannerConfig.scan_symbols: Number(guint) (Read / Write)
   </code></synopsis>
   <p>specifies if symbols are recognized (the default
     is <code>true</code>).</p>

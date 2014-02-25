@@ -9,14 +9,14 @@
     <link xref="Gio.Seekable" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint64)</api:type>
       </api:returns>
       <api:name>g_seekable_tell</api:name>
     </api:function>
   </info>
   <title>Gio.Seekable.prototype.tell</title>
   <synopsis><code mime="text/x-gjs">
-function tell(): Number {
+function tell(): Number(gint64) {
     // Gjs wrapper for g_seekable_tell()
 }
   </code></synopsis>

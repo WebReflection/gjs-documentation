@@ -9,7 +9,7 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint64)</api:type>
       </api:returns>
       <api:name>g_slice_get_config_state</api:name>
       <api:arg>
@@ -17,18 +17,18 @@
         <api:name>ckey</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint64)</api:type>
         <api:name>address</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
         <api:name>n_values</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.slice_get_config_state</title>
   <synopsis><code mime="text/x-gjs">
-function slice_get_config_state(ckey: GLib.SliceConfig, address: Number, n_values: Number): Number {
+function slice_get_config_state(ckey: <link xref="GLib.SliceConfig">GLib.SliceConfig</link>, address: Number(gint64), n_values: Number(guint)): Number(gint64) {
     // Gjs wrapper for g_slice_get_config_state()
 }
   </code></synopsis>

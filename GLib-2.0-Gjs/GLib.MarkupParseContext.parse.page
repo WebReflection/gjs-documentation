@@ -17,14 +17,14 @@
         <api:name>text</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gssize</api:type>
+        <api:type>Number(gssize)</api:type>
         <api:name>text_len</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.MarkupParseContext.prototype.parse</title>
   <synopsis><code mime="text/x-gjs">
-function parse(text: String, text_len: gssize): Boolean {
+function parse(text: String, text_len: Number(gssize)): Boolean {
     // Gjs wrapper for g_markup_parse_context_parse()
 }
   </code></synopsis>

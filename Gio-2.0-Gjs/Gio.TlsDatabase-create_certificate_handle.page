@@ -10,7 +10,7 @@
   </info>
   <title>Gio.TlsDatabase::create_certificate_handle</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_create_certificate_handle(certificate: Gio.TlsCertificate): String {
+function vfunc_create_certificate_handle(certificate: <link xref="Gio.TlsCertificate">Gio.TlsCertificate</link>): String {
 }
   </code></synopsis>
   <p>Create a handle string for the certificate. The database will only be able

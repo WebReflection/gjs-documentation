@@ -10,7 +10,7 @@
   </info>
   <title>Gio.MenuModel::iterate_item_attributes</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_iterate_item_attributes(item_index: Number): Gio.MenuAttributeIter {
+function vfunc_iterate_item_attributes(item_index: Number(gint)): <link xref="Gio.MenuAttributeIter">Gio.MenuAttributeIter</link> {
 }
   </code></synopsis>
   <p>Creates a <link xref="Gio.MenuAttributeIter"/> to iterate over the attributes of

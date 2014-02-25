@@ -9,7 +9,7 @@
     <link xref="Gio.SocketListener" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>guint16</api:type>
+        <api:type>Number(guint16)</api:type>
       </api:returns>
       <api:name>g_socket_listener_add_any_inet_port</api:name>
       <api:arg>
@@ -20,7 +20,7 @@
   </info>
   <title>Gio.SocketListener.prototype.add_any_inet_port</title>
   <synopsis><code mime="text/x-gjs">
-function add_any_inet_port(source_object: GObject.Object): guint16 {
+function add_any_inet_port(source_object: <link href="../GObject-2.0/GObject.Object.page">GObject.Object</link>): Number(guint16) {
     // Gjs wrapper for g_socket_listener_add_any_inet_port()
 }
   </code></synopsis>

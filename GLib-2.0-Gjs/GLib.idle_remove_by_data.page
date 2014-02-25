@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_idle_remove_by_data</api:name>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>data</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.idle_remove_by_data</title>
   <synopsis><code mime="text/x-gjs">
-function idle_remove_by_data(data: gpointer): Boolean {
+function idle_remove_by_data(data: void): Boolean {
     // Gjs wrapper for g_idle_remove_by_data()
 }
   </code></synopsis>

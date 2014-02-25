@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::replace_readwrite_async</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_replace_readwrite_async(etag: String, make_backup: Boolean, flags: Gio.FileCreateFlags, io_priority: Number, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+function vfunc_replace_readwrite_async(etag: String, make_backup: Boolean, flags: <link xref="Gio.FileCreateFlags">Gio.FileCreateFlags</link>, io_priority: Number(gint), cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
 }
   </code></synopsis>
   <p>Asynchronously overwrites the file in read-write mode,

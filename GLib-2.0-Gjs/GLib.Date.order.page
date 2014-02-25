@@ -20,7 +20,7 @@
   </info>
   <title>GLib.Date.prototype.order</title>
   <synopsis><code mime="text/x-gjs">
-function order(date2: GLib.Date): void {
+function order(date2: <link xref="GLib.Date">GLib.Date</link>): void {
     // Gjs wrapper for g_date_order()
 }
   </code></synopsis>

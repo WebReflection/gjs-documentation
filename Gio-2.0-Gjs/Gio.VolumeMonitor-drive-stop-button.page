@@ -11,7 +11,7 @@
   </info>
   <title>Gio.VolumeMonitor::drive-stop-button</title>
   <synopsis><code mime="text/x-gjs">
-connect('drive-stop-button', function (volumeMonitor, drive: Gio.Drive, ): void);
+connect('drive-stop-button', function (volumeMonitor, drive: <link xref="Gio.Drive">Gio.Drive</link>, ): void);
   </code></synopsis>
   <p>Emitted when the stop button is pressed on <code>drive</code>.</p>
   <p>Since 2.22</p>

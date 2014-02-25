@@ -10,7 +10,7 @@
   </info>
   <title>Gio.NetworkMonitor::can_reach</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_can_reach(connectable: Gio.SocketConnectable, cancellable: Gio.Cancellable): Boolean {
+function vfunc_can_reach(connectable: <link xref="Gio.SocketConnectable">Gio.SocketConnectable</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Boolean {
 }
   </code></synopsis>
   <p>Attempts to determine whether or not the host pointed to by

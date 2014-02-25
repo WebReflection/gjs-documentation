@@ -13,18 +13,18 @@
       </api:returns>
       <api:name>g_once_init_leave</api:name>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>location</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gsize</api:type>
+        <api:type>Number(gsize)</api:type>
         <api:name>result</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.Once.init_leave</title>
   <synopsis><code mime="text/x-gjs">
-function init_leave(location: gpointer, result: gsize): void {
+function init_leave(location: void, result: Number(gsize)): void {
     // Gjs wrapper for g_once_init_leave()
 }
   </code></synopsis>

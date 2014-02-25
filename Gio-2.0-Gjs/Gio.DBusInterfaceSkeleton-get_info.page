@@ -10,7 +10,7 @@
   </info>
   <title>Gio.DBusInterfaceSkeleton::get_info</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_info(): Gio.DBusInterfaceInfo {
+function vfunc_get_info(): <link xref="Gio.DBusInterfaceInfo">Gio.DBusInterfaceInfo</link> {
 }
   </code></synopsis>
   <p>Gets D-Bus introspection information for the D-Bus interface

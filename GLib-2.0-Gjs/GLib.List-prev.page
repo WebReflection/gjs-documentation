@@ -11,7 +11,7 @@
   </info>
   <title>GLib.List.prev</title>
   <synopsis><code mime="text/x-gjs">
-List.prev: Array(gpointer) (Read / Write)
+List.prev: Array(void) (Read / Write)
   </code></synopsis>
   <p>contains the link to the previous element in the list</p>
 

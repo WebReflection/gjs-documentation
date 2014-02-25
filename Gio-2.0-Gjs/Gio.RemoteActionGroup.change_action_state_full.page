@@ -28,7 +28,7 @@
   </info>
   <title>Gio.RemoteActionGroup.prototype.change_action_state_full</title>
   <synopsis><code mime="text/x-gjs">
-function change_action_state_full(action_name: String, value: GLib.Variant, platform_data: GLib.Variant): void {
+function change_action_state_full(action_name: String, value: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>, platform_data: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>): void {
     // Gjs wrapper for g_remote_action_group_change_action_state_full()
 }
   </code></synopsis>

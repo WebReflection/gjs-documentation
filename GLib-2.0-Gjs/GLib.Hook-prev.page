@@ -11,7 +11,7 @@
   </info>
   <title>GLib.Hook.prev</title>
   <synopsis><code mime="text/x-gjs">
-Hook.prev: GLib.Hook (Read)
+Hook.prev: <link xref="GLib.Hook">GLib.Hook</link> (Read)
   </code></synopsis>
   <p>pointer to the previous hook in the list</p>
 

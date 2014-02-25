@@ -11,7 +11,7 @@
   </info>
   <title>Gio.InetAddressMask.address</title>
   <synopsis><code mime="text/x-gjs">
-InetAddressMask.address: Gio.InetAddress (Read / Write)
+InetAddressMask.address: <link xref="Gio.InetAddress">Gio.InetAddress</link> (Read / Write)
   </code></synopsis>
 
 

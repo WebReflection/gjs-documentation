@@ -10,7 +10,7 @@
   </info>
   <title>GLib.IOFuncs.io_free</title>
   <synopsis><code mime="text/x-gjs">
-function onio_free(channel: GLib.IOChannel): void {
+function onio_free(channel: <link xref="GLib.IOChannel">GLib.IOChannel</link>): void {
 }
   </code></synopsis>
 

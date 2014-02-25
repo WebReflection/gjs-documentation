@@ -9,7 +9,7 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_unichar_combining_class</api:name>
       <api:arg>
@@ -20,7 +20,7 @@
   </info>
   <title>GLib.unichar_combining_class</title>
   <synopsis><code mime="text/x-gjs">
-function unichar_combining_class(uc: String): Number {
+function unichar_combining_class(uc: String): Number(gint) {
     // Gjs wrapper for g_unichar_combining_class()
 }
   </code></synopsis>

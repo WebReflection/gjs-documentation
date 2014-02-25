@@ -24,7 +24,7 @@
   </info>
   <title>Gio.File.prototype.monitor</title>
   <synopsis><code mime="text/x-gjs">
-function monitor(flags: Gio.FileMonitorFlags, cancellable: Gio.Cancellable): Gio.FileMonitor {
+function monitor(flags: <link xref="Gio.FileMonitorFlags">Gio.FileMonitorFlags</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): <link xref="Gio.FileMonitor">Gio.FileMonitor</link> {
     // Gjs wrapper for g_file_monitor()
 }
   </code></synopsis>

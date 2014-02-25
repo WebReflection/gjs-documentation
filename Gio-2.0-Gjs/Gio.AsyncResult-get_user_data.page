@@ -10,7 +10,7 @@
   </info>
   <title>Gio.AsyncResult::get_user_data</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_user_data(): gpointer {
+function vfunc_get_user_data(): void {
 }
   </code></synopsis>
   <p>Gets the user data from a <link xref="Gio.AsyncResult"/>.</p>

@@ -11,7 +11,7 @@
   </info>
   <title>GLib.Hook.next</title>
   <synopsis><code mime="text/x-gjs">
-Hook.next: GLib.Hook (Read)
+Hook.next: <link xref="GLib.Hook">GLib.Hook</link> (Read)
   </code></synopsis>
   <p>pointer to the next hook in the list</p>
 

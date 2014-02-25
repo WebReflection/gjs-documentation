@@ -13,7 +13,7 @@
       </api:returns>
       <api:name>g_menu_insert_submenu</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>position</api:name>
       </api:arg>
       <api:arg>
@@ -28,7 +28,7 @@
   </info>
   <title>Gio.Menu.prototype.insert_submenu</title>
   <synopsis><code mime="text/x-gjs">
-function insert_submenu(position: Number, label: String, submenu: Gio.MenuModel): void {
+function insert_submenu(position: Number(gint), label: String, submenu: <link xref="Gio.MenuModel">Gio.MenuModel</link>): void {
     // Gjs wrapper for g_menu_insert_submenu()
 }
   </code></synopsis>

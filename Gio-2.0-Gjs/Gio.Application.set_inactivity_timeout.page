@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_application_set_inactivity_timeout</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
         <api:name>inactivity_timeout</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>Gio.Application.prototype.set_inactivity_timeout</title>
   <synopsis><code mime="text/x-gjs">
-function set_inactivity_timeout(inactivity_timeout: Number): void {
+function set_inactivity_timeout(inactivity_timeout: Number(guint)): void {
     // Gjs wrapper for g_application_set_inactivity_timeout()
 }
   </code></synopsis>

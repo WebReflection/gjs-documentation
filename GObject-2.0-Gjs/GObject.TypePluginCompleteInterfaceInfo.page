@@ -10,7 +10,7 @@
   </info>
   <title>GObject.TypePluginCompleteInterfaceInfo</title>
   <synopsis><code mime="text/x-gjs">
-function onTypePluginCompleteInterfaceInfo(plugin: GObject.TypePlugin, instance_type: GType, interface_type: GType, info: GObject.InterfaceInfo): void {
+function onTypePluginCompleteInterfaceInfo(plugin: <link xref="GObject.TypePlugin">GObject.TypePlugin</link>, instance_type: GObject.Type, interface_type: GObject.Type, info: <link xref="GObject.InterfaceInfo">GObject.InterfaceInfo</link>): void {
 }
   </code></synopsis>
   <p>The type of the @complete_interface_info function of <link xref="GObject.TypePluginClass"/>.</p>

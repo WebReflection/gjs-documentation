@@ -9,7 +9,7 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
       </api:returns>
       <api:name>g_io_add_watch_full</api:name>
       <api:arg>
@@ -17,7 +17,7 @@
         <api:name>channel</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>priority</api:name>
       </api:arg>
       <api:arg>
@@ -32,7 +32,7 @@
   </info>
   <title>GLib.io_add_watch_full</title>
   <synopsis><code mime="text/x-gjs">
-function io_add_watch_full(channel: GLib.IOChannel, priority: Number, condition: GLib.IOCondition, func: GLib.IOFunc): Number {
+function io_add_watch_full(channel: <link xref="GLib.IOChannel">GLib.IOChannel</link>, priority: Number(gint), condition: <link xref="GLib.IOCondition">GLib.IOCondition</link>, func: <link xref="GLib.IOFunc">GLib.IOFunc</link>): Number(guint) {
     // Gjs wrapper for g_io_add_watch_full()
 }
   </code></synopsis>

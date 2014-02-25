@@ -11,7 +11,7 @@
   </info>
   <title>Gio.FileIcon.file</title>
   <synopsis><code mime="text/x-gjs">
-FileIcon.file: Gio.File (Read / Write / Construct Only)
+FileIcon.file: <link xref="Gio.File">Gio.File</link> (Read / Write / Construct Only)
   </code></synopsis>
   <p>The file containing the icon.</p>
 

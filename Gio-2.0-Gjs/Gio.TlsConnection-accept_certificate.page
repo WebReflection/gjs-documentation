@@ -10,7 +10,7 @@
   </info>
   <title>Gio.TlsConnection::accept_certificate</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_accept_certificate(peer_cert: Gio.TlsCertificate, errors: Gio.TlsCertificateFlags): Boolean {
+function vfunc_accept_certificate(peer_cert: <link xref="Gio.TlsCertificate">Gio.TlsCertificate</link>, errors: <link xref="Gio.TlsCertificateFlags">Gio.TlsCertificateFlags</link>): Boolean {
 }
   </code></synopsis>
 

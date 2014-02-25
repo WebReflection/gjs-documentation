@@ -9,11 +9,11 @@
     <link xref="Gio.OutputStream" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>gssize</api:type>
+        <api:type>Number(gssize)</api:type>
       </api:returns>
       <api:name>g_output_stream_write</api:name>
       <api:arg>
-        <api:type>Array(guint8)</api:type>
+        <api:type>Array(Number(guint8))</api:type>
         <api:name>buffer</api:name>
       </api:arg>
       <api:arg>
@@ -24,7 +24,7 @@
   </info>
   <title>Gio.OutputStream.prototype.write</title>
   <synopsis><code mime="text/x-gjs">
-function write(buffer: Array(guint8), cancellable: Gio.Cancellable): gssize {
+function write(buffer: Array(Number(guint8)), cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Number(gssize) {
     // Gjs wrapper for g_output_stream_write()
 }
   </code></synopsis>

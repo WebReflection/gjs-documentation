@@ -17,7 +17,7 @@
         <api:name>data</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gsize</api:type>
+        <api:type>Number(gsize)</api:type>
         <api:name>length</api:name>
       </api:arg>
       <api:arg>
@@ -28,7 +28,7 @@
   </info>
   <title>GLib.KeyFile.prototype.load_from_data</title>
   <synopsis><code mime="text/x-gjs">
-function load_from_data(data: String, length: gsize, flags: GLib.KeyFileFlags): Boolean {
+function load_from_data(data: String, length: Number(gsize), flags: <link xref="GLib.KeyFileFlags">GLib.KeyFileFlags</link>): Boolean {
     // Gjs wrapper for g_key_file_load_from_data()
 }
   </code></synopsis>

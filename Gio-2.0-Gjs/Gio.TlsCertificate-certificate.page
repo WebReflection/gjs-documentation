@@ -11,7 +11,7 @@
   </info>
   <title>Gio.TlsCertificate.certificate</title>
   <synopsis><code mime="text/x-gjs">
-TlsCertificate.certificate: Array(gpointer) (Read / Write / Construct Only)
+TlsCertificate.certificate: Array(void) (Read / Write / Construct Only)
   </code></synopsis>
   <p>The DER (binary) encoded representation of the certificate.
 This property and the <link xref="Gio.certificate-pem"/> property

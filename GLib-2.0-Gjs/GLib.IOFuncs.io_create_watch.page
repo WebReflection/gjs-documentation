@@ -10,7 +10,7 @@
   </info>
   <title>GLib.IOFuncs.io_create_watch</title>
   <synopsis><code mime="text/x-gjs">
-function onio_create_watch(channel: GLib.IOChannel, condition: GLib.IOCondition): GLib.Source {
+function onio_create_watch(channel: <link xref="GLib.IOChannel">GLib.IOChannel</link>, condition: <link xref="GLib.IOCondition">GLib.IOCondition</link>): <link xref="GLib.Source">GLib.Source</link> {
 }
   </code></synopsis>
 

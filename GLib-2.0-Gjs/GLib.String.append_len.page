@@ -17,14 +17,14 @@
         <api:name>val</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gssize</api:type>
+        <api:type>Number(gssize)</api:type>
         <api:name>len</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.String.prototype.append_len</title>
   <synopsis><code mime="text/x-gjs">
-function append_len(val: String, len: gssize): GLib.String {
+function append_len(val: String, len: Number(gssize)): <link xref="GLib.String">GLib.String</link> {
     // Gjs wrapper for g_string_append_len()
 }
   </code></synopsis>

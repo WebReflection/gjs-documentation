@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_date_time_add_hours</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>hours</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.DateTime.prototype.add_hours</title>
   <synopsis><code mime="text/x-gjs">
-function add_hours(hours: Number): GLib.DateTime {
+function add_hours(hours: Number(gint)): <link xref="GLib.DateTime">GLib.DateTime</link> {
     // Gjs wrapper for g_date_time_add_hours()
 }
   </code></synopsis>

@@ -17,14 +17,14 @@
         <api:name>hook_list</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gulong)</api:type>
         <api:name>hook_id</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.Hook.destroy</title>
   <synopsis><code mime="text/x-gjs">
-function destroy(hook_list: GLib.HookList, hook_id: Number): Boolean {
+function destroy(hook_list: <link xref="GLib.HookList">GLib.HookList</link>, hook_id: Number(gulong)): Boolean {
     // Gjs wrapper for g_hook_destroy()
 }
   </code></synopsis>

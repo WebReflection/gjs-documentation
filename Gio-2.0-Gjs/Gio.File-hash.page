@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::hash</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_hash(): Number {
+function vfunc_hash(): Number(guint) {
 }
   </code></synopsis>
   <p>Creates a hash value for a <link xref="Gio.File"/>.</p>  <p>This call does no blocking I/O.</p>

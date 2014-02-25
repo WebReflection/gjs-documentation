@@ -11,7 +11,7 @@
   </info>
   <title>Gio.Settings.settings_schema</title>
   <synopsis><code mime="text/x-gjs">
-Settings.settings_schema: Gio.SettingsSchema (Read / Write / Construct Only)
+Settings.settings_schema: <link xref="Gio.SettingsSchema">Gio.SettingsSchema</link> (Read / Write / Construct Only)
   </code></synopsis>
   <p>The <link xref="Gio.SettingsSchema"/> describing the types of keys for this
 <link xref="Gio.Settings"/> object.</p>  <p>Ideally, this property would be called 'schema'.  <link xref="Gio.SettingsSchema"/>

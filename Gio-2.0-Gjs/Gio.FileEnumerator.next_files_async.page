@@ -13,11 +13,11 @@
       </api:returns>
       <api:name>g_file_enumerator_next_files_async</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>num_files</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>io_priority</api:name>
       </api:arg>
       <api:arg>
@@ -32,7 +32,7 @@
   </info>
   <title>Gio.FileEnumerator.prototype.next_files_async</title>
   <synopsis><code mime="text/x-gjs">
-function next_files_async(num_files: Number, io_priority: Number, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+function next_files_async(num_files: Number(gint), io_priority: Number(gint), cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
     // Gjs wrapper for g_file_enumerator_next_files_async()
 }
   </code></synopsis>

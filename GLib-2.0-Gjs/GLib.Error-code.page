@@ -11,7 +11,7 @@
   </info>
   <title>GLib.Error.code</title>
   <synopsis><code mime="text/x-gjs">
-Error.code: Number (Read / Write)
+Error.code: Number(gint) (Read / Write)
   </code></synopsis>
   <p>error code, e.g. <link xref="GLib.FileError"/>.noent</p>
 

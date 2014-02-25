@@ -17,14 +17,14 @@
         <api:name>string</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gsize</api:type>
+        <api:type>Number(gsize)</api:type>
         <api:name>len</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.unicode_canonical_ordering</title>
   <synopsis><code mime="text/x-gjs">
-function unicode_canonical_ordering(string: String, len: gsize): void {
+function unicode_canonical_ordering(string: String, len: Number(gsize)): void {
     // Gjs wrapper for g_unicode_canonical_ordering()
 }
   </code></synopsis>

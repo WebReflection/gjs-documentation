@@ -24,7 +24,7 @@
   </info>
   <title>Gio.new_for_dbus_error</title>
   <synopsis><code mime="text/x-gjs">
-function new_for_dbus_error(dbus_error_name: String, dbus_error_message: String): GLib.Error {
+function new_for_dbus_error(dbus_error_name: String, dbus_error_message: String): <link href="../GLib-2.0/GLib.Error.page">GLib.Error</link> {
     // Gjs wrapper for g_dbus_error_new_for_dbus_error()
 }
   </code></synopsis>

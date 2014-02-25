@@ -13,18 +13,18 @@
       </api:returns>
       <api:name>g_pointer_bit_trylock</api:name>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>address</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>lock_bit</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.pointer_bit_trylock</title>
   <synopsis><code mime="text/x-gjs">
-function pointer_bit_trylock(address: gpointer, lock_bit: Number): Boolean {
+function pointer_bit_trylock(address: void, lock_bit: Number(gint)): Boolean {
     // Gjs wrapper for g_pointer_bit_trylock()
 }
   </code></synopsis>

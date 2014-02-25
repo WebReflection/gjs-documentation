@@ -17,14 +17,14 @@
         <api:name>mutex</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint64)</api:type>
         <api:name>end_time</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.Cond.prototype.wait_until</title>
   <synopsis><code mime="text/x-gjs">
-function wait_until(mutex: GLib.Mutex, end_time: Number): Boolean {
+function wait_until(mutex: <link xref="GLib.Mutex">GLib.Mutex</link>, end_time: Number(gint64)): Boolean {
     // Gjs wrapper for g_cond_wait_until()
 }
   </code></synopsis>

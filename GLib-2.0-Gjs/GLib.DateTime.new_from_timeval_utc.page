@@ -20,7 +20,7 @@
   </info>
   <title>GLib.DateTime.new_from_timeval_utc</title>
   <synopsis><code mime="text/x-gjs">
-function new_from_timeval_utc(tv: GLib.TimeVal): GLib.DateTime {
+function new_from_timeval_utc(tv: <link xref="GLib.TimeVal">GLib.TimeVal</link>): <link xref="GLib.DateTime">GLib.DateTime</link> {
     // Gjs wrapper for g_date_time_new_from_timeval_utc()
 }
   </code></synopsis>

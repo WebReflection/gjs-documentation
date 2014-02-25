@@ -11,7 +11,7 @@
   </info>
   <title>GObject.SignalInvocationHint.run_type</title>
   <synopsis><code mime="text/x-gjs">
-SignalInvocationHint.run_type: GObject.SignalFlags (Read)
+SignalInvocationHint.run_type: <link xref="GObject.SignalFlags">GObject.SignalFlags</link> (Read)
   </code></synopsis>
   <p>The stage the signal emission is currently in, this
  field will contain one of <link xref="GObject.SignalFlags"/>.run_first,

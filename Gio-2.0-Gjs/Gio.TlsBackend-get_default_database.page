@@ -10,7 +10,7 @@
   </info>
   <title>Gio.TlsBackend::get_default_database</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_default_database(): Gio.TlsDatabase {
+function vfunc_get_default_database(): <link xref="Gio.TlsDatabase">Gio.TlsDatabase</link> {
 }
   </code></synopsis>
   <p>Gets the default <link xref="Gio.TlsDatabase"/> used to verify TLS connections.</p>

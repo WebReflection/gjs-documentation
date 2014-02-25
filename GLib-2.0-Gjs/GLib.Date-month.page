@@ -11,7 +11,7 @@
   </info>
   <title>GLib.Date.month</title>
   <synopsis><code mime="text/x-gjs">
-Date.month: Number (Read / Write)
+Date.month: Number(guint) (Read / Write)
   </code></synopsis>
   <p>the day of the day-month-year representation of the date,
     as a number between 1 and 12</p>

@@ -24,7 +24,7 @@
   </info>
   <title>Gio.Application.prototype.open</title>
   <synopsis><code mime="text/x-gjs">
-function open(files: Array(Gio.File), hint: String): void {
+function open(files: Array(<link xref="Gio.File">Gio.File</link>), hint: String): void {
     // Gjs wrapper for g_application_open()
 }
   </code></synopsis>

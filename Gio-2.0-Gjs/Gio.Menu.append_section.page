@@ -24,7 +24,7 @@
   </info>
   <title>Gio.Menu.prototype.append_section</title>
   <synopsis><code mime="text/x-gjs">
-function append_section(label: String, section: Gio.MenuModel): void {
+function append_section(label: String, section: <link xref="Gio.MenuModel">Gio.MenuModel</link>): void {
     // Gjs wrapper for g_menu_append_section()
 }
   </code></synopsis>

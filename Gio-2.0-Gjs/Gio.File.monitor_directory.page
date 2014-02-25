@@ -24,7 +24,7 @@
   </info>
   <title>Gio.File.prototype.monitor_directory</title>
   <synopsis><code mime="text/x-gjs">
-function monitor_directory(flags: Gio.FileMonitorFlags, cancellable: Gio.Cancellable): Gio.FileMonitor {
+function monitor_directory(flags: <link xref="Gio.FileMonitorFlags">Gio.FileMonitorFlags</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): <link xref="Gio.FileMonitor">Gio.FileMonitor</link> {
     // Gjs wrapper for g_file_monitor_directory()
 }
   </code></synopsis>

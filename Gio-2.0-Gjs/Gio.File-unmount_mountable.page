@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::unmount_mountable</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_unmount_mountable(flags: Gio.MountUnmountFlags, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+function vfunc_unmount_mountable(flags: <link xref="Gio.MountUnmountFlags">Gio.MountUnmountFlags</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
 }
   </code></synopsis>
   <p>Unmounts a file of type G_FILE_TYPE_MOUNTABLE.</p>  <p>If <code>cancellable</code> is not <code>null</code>, then the operation can be cancelled by

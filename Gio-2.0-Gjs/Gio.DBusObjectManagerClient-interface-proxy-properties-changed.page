@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusObjectManagerClient::interface-proxy-properties-changed</title>
   <synopsis><code mime="text/x-gjs">
-connect('interface-proxy-properties-changed', function (dBusObjectManagerClient, object_proxy: Gio.DBusObjectProxy, interface_proxy: Gio.DBusProxy, changed_properties: GLib.Variant, invalidated_properties: Array(String), ): void);
+connect('interface-proxy-properties-changed', function (dBusObjectManagerClient, object_proxy: <link xref="Gio.DBusObjectProxy">Gio.DBusObjectProxy</link>, interface_proxy: <link xref="Gio.DBusProxy">Gio.DBusProxy</link>, changed_properties: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>, invalidated_properties: Array(String), ): void);
   </code></synopsis>
   <p>Emitted when one or more D-Bus properties on proxy changes. The
 local cache has already been updated when this signal fires. Note

@@ -11,7 +11,7 @@
   </info>
   <title>GLib.Scanner.position</title>
   <synopsis><code mime="text/x-gjs">
-Scanner.position: Number (Read / Write)
+Scanner.position: Number(guint) (Read / Write)
   </code></synopsis>
   <p>char number of the last token from <link xref="GLib.get_next_token"/></p>
 

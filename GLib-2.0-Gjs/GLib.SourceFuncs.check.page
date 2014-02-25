@@ -10,7 +10,7 @@
   </info>
   <title>GLib.SourceFuncs.check</title>
   <synopsis><code mime="text/x-gjs">
-function oncheck(source: GLib.Source): Boolean {
+function oncheck(source: <link xref="GLib.Source">GLib.Source</link>): Boolean {
 }
   </code></synopsis>
 

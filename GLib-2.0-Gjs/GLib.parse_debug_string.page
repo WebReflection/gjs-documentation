@@ -9,7 +9,7 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
       </api:returns>
       <api:name>g_parse_debug_string</api:name>
       <api:arg>
@@ -24,7 +24,7 @@
   </info>
   <title>GLib.parse_debug_string</title>
   <synopsis><code mime="text/x-gjs">
-function parse_debug_string(string: String, keys: Array(GLib.DebugKey)): Number {
+function parse_debug_string(string: String, keys: Array(<link xref="GLib.DebugKey">GLib.DebugKey</link>)): Number(guint) {
     // Gjs wrapper for g_parse_debug_string()
 }
   </code></synopsis>

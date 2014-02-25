@@ -10,7 +10,7 @@
   </info>
   <title>Gio.PollableInputStream::read_nonblocking</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_read_nonblocking(buffer: gpointer, count: gsize): gssize {
+function vfunc_read_nonblocking(buffer: void, count: Number(gsize)): Number(gssize) {
 }
   </code></synopsis>
   <p>Attempts to read up to <code>count</code> bytes from <code>stream</code> into <code>buffer</code>, as

@@ -20,7 +20,7 @@
   </info>
   <title>Gio.DataInputStream.prototype.set_newline_type</title>
   <synopsis><code mime="text/x-gjs">
-function set_newline_type(type: Gio.DataStreamNewlineType): void {
+function set_newline_type(type: <link xref="Gio.DataStreamNewlineType">Gio.DataStreamNewlineType</link>): void {
     // Gjs wrapper for g_data_input_stream_set_newline_type()
 }
   </code></synopsis>

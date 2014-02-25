@@ -11,7 +11,7 @@
   </info>
   <title>GLib.Node.parent</title>
   <synopsis><code mime="text/x-gjs">
-Node.parent: GLib.Node (Read)
+Node.parent: <link xref="GLib.Node">GLib.Node</link> (Read)
   </code></synopsis>
   <p>points to the parent of the <link xref="GLib.Node"/>, or is <code>null</code> if the
          <link xref="GLib.Node"/> is the root of the tree.</p>

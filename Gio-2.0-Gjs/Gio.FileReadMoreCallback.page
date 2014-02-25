@@ -10,7 +10,7 @@
   </info>
   <title>Gio.FileReadMoreCallback</title>
   <synopsis><code mime="text/x-gjs">
-function onFileReadMoreCallback(file_contents: String, file_size: Number, callback_data: gpointer): Boolean {
+function onFileReadMoreCallback(file_contents: String, file_size: Number(gint64), callback_data: void): Boolean {
 }
   </code></synopsis>
   <p>When loading the partial contents of a file with <link xref="Gio.load_partial_contents_async"/>,

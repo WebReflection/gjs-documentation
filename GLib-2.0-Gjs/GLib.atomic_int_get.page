@@ -9,18 +9,18 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_atomic_int_get</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>atomic</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.atomic_int_get</title>
   <synopsis><code mime="text/x-gjs">
-function atomic_int_get(atomic: Number): Number {
+function atomic_int_get(atomic: Number(gint)): Number(gint) {
     // Gjs wrapper for g_atomic_int_get()
 }
   </code></synopsis>

@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusNodeInfo.interfaces</title>
   <synopsis><code mime="text/x-gjs">
-DBusNodeInfo.interfaces: Array(Gio.DBusInterfaceInfo) (Read / Write)
+DBusNodeInfo.interfaces: Array(<link xref="Gio.DBusInterfaceInfo">Gio.DBusInterfaceInfo</link>) (Read / Write)
   </code></synopsis>
   <p>A pointer to a <code>null</code>-terminated array of pointers to <link xref="Gio.DBusInterfaceInfo"/> structures or <code>null</code> if there are no interfaces.</p>
 

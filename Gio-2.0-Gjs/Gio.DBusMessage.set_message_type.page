@@ -20,7 +20,7 @@
   </info>
   <title>Gio.DBusMessage.prototype.set_message_type</title>
   <synopsis><code mime="text/x-gjs">
-function set_message_type(type: Gio.DBusMessageType): void {
+function set_message_type(type: <link xref="Gio.DBusMessageType">Gio.DBusMessageType</link>): void {
     // Gjs wrapper for g_dbus_message_set_message_type()
 }
   </code></synopsis>

@@ -9,22 +9,22 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gdouble)</api:type>
       </api:returns>
       <api:name>g_random_double_range</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gdouble)</api:type>
         <api:name>begin</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gdouble)</api:type>
         <api:name>end</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.random_double_range</title>
   <synopsis><code mime="text/x-gjs">
-function random_double_range(begin: Number, end: Number): Number {
+function random_double_range(begin: Number(gdouble), end: Number(gdouble)): Number(gdouble) {
     // Gjs wrapper for g_random_double_range()
 }
   </code></synopsis>

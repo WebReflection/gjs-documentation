@@ -11,7 +11,7 @@
   </info>
   <title>GLib.ByteArray.data</title>
   <synopsis><code mime="text/x-gjs">
-ByteArray.data: guint8 (Read / Write)
+ByteArray.data: Number(guint8) (Read / Write)
   </code></synopsis>
   <p>a pointer to the element data. The data may be moved as
     elements are added to the <link xref="GLib.ByteArray"/></p>

@@ -9,14 +9,14 @@
     <link xref="GLib.DateTime" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_date_time_get_microsecond</api:name>
     </api:function>
   </info>
   <title>GLib.DateTime.prototype.get_microsecond</title>
   <synopsis><code mime="text/x-gjs">
-function get_microsecond(): Number {
+function get_microsecond(): Number(gint) {
     // Gjs wrapper for g_date_time_get_microsecond()
 }
   </code></synopsis>

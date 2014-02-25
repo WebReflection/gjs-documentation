@@ -11,7 +11,7 @@
   </info>
   <title>GLib.Scanner.parse_errors</title>
   <synopsis><code mime="text/x-gjs">
-Scanner.parse_errors: Number (Read / Write)
+Scanner.parse_errors: Number(guint) (Read / Write)
   </code></synopsis>
   <p><link xref="GLib.error"/> increments this field</p>
 

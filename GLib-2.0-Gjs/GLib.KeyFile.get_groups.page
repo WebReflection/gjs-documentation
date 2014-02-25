@@ -16,7 +16,7 @@
   </info>
   <title>GLib.KeyFile.prototype.get_groups</title>
   <synopsis><code mime="text/x-gjs">
-function get_groups(): [return_value: Array(String), length: gsize] {
+function get_groups(): [return_value: Array(String), length: Number(gsize)] {
     // Gjs wrapper for g_key_file_get_groups()
 }
   </code></synopsis>

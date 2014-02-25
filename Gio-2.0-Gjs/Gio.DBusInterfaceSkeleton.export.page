@@ -24,7 +24,7 @@
   </info>
   <title>Gio.DBusInterfaceSkeleton.prototype.export</title>
   <synopsis><code mime="text/x-gjs">
-function export(connection: Gio.DBusConnection, object_path: String): Boolean {
+function export(connection: <link xref="Gio.DBusConnection">Gio.DBusConnection</link>, object_path: String): Boolean {
     // Gjs wrapper for g_dbus_interface_skeleton_export()
 }
   </code></synopsis>

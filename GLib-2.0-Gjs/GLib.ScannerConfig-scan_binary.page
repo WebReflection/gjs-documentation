@@ -11,7 +11,7 @@
   </info>
   <title>GLib.ScannerConfig.scan_binary</title>
   <synopsis><code mime="text/x-gjs">
-ScannerConfig.scan_binary: Number (Read / Write)
+ScannerConfig.scan_binary: Number(guint) (Read / Write)
   </code></synopsis>
   <p>specifies if binary numbers are recognized (the
     default is <code>false</code>).</p>

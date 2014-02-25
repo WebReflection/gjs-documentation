@@ -9,7 +9,7 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
       </api:returns>
       <api:name>g_bus_own_name_on_connection_with_closures</api:name>
       <api:arg>
@@ -36,7 +36,7 @@
   </info>
   <title>Gio.bus_own_name_on_connection_with_closures</title>
   <synopsis><code mime="text/x-gjs">
-function bus_own_name_on_connection_with_closures(connection: Gio.DBusConnection, name: String, flags: Gio.BusNameOwnerFlags, name_acquired_closure: GObject.Closure, name_lost_closure: GObject.Closure): Number {
+function bus_own_name_on_connection_with_closures(connection: <link xref="Gio.DBusConnection">Gio.DBusConnection</link>, name: String, flags: <link xref="Gio.BusNameOwnerFlags">Gio.BusNameOwnerFlags</link>, name_acquired_closure: <link href="../GObject-2.0/GObject.Closure.page">GObject.Closure</link>, name_lost_closure: <link href="../GObject-2.0/GObject.Closure.page">GObject.Closure</link>): Number(guint) {
     // Gjs wrapper for g_bus_own_name_on_connection_with_closures()
 }
   </code></synopsis>

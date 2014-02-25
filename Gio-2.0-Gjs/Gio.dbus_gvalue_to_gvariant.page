@@ -24,7 +24,7 @@
   </info>
   <title>Gio.dbus_gvalue_to_gvariant</title>
   <synopsis><code mime="text/x-gjs">
-function dbus_gvalue_to_gvariant(gvalue: GObject.Value, type: GLib.VariantType): GLib.Variant {
+function dbus_gvalue_to_gvariant(gvalue: <link href="../GObject-2.0/GObject.Value.page">GObject.Value</link>, type: <link href="../GLib-2.0/GLib.VariantType.page">GLib.VariantType</link>): <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link> {
     // Gjs wrapper for g_dbus_gvalue_to_gvariant()
 }
   </code></synopsis>

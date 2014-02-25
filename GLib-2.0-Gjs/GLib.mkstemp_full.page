@@ -9,26 +9,26 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_mkstemp_full</api:name>
       <api:arg>
-        <api:type>filename</api:type>
+        <api:type>String</api:type>
         <api:name>tmpl</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>flags</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>mode</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.mkstemp_full</title>
   <synopsis><code mime="text/x-gjs">
-function mkstemp_full(tmpl: filename, flags: Number, mode: Number): Number {
+function mkstemp_full(tmpl: String, flags: Number(gint), mode: Number(gint)): Number(gint) {
     // Gjs wrapper for g_mkstemp_full()
 }
   </code></synopsis>

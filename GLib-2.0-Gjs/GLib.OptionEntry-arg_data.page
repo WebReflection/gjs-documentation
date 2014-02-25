@@ -11,7 +11,7 @@
   </info>
   <title>GLib.OptionEntry.arg_data</title>
   <synopsis><code mime="text/x-gjs">
-OptionEntry.arg_data: gpointer (Read)
+OptionEntry.arg_data: void (Read)
   </code></synopsis>
   <p>If the @arg type is <link xref="GLib.OptionArg"/>.callback, then @arg_data must
  point to a <link xref="GLib.OptionArgFunc"/> callback function, which will be called to handle

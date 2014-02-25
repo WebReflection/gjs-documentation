@@ -16,7 +16,7 @@
   </info>
   <title>Gio.Emblem.prototype.get_origin</title>
   <synopsis><code mime="text/x-gjs">
-function get_origin(): Gio.EmblemOrigin {
+function get_origin(): <link xref="Gio.EmblemOrigin">Gio.EmblemOrigin</link> {
     // Gjs wrapper for g_emblem_get_origin()
 }
   </code></synopsis>

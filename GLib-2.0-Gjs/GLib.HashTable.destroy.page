@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_hash_table_destroy</api:name>
       <api:arg>
-        <api:type>{gpointer: gpointer}</api:type>
+        <api:type>{void: void}</api:type>
         <api:name>hash_table</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.HashTable.destroy</title>
   <synopsis><code mime="text/x-gjs">
-function destroy(hash_table: {gpointer: gpointer}): void {
+function destroy(hash_table: {void: void}): void {
     // Gjs wrapper for g_hash_table_destroy()
 }
   </code></synopsis>

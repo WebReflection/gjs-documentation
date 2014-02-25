@@ -11,7 +11,7 @@
   </info>
   <title>GLib.ScannerConfig.scan_octal</title>
   <synopsis><code mime="text/x-gjs">
-ScannerConfig.scan_octal: Number (Read / Write)
+ScannerConfig.scan_octal: Number(guint) (Read / Write)
   </code></synopsis>
   <p>specifies if octal numbers are recognized (the
     default is <code>true</code>).</p>

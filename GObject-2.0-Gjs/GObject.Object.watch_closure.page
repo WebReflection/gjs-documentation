@@ -20,7 +20,7 @@
   </info>
   <title>GObject.Object.prototype.watch_closure</title>
   <synopsis><code mime="text/x-gjs">
-function watch_closure(closure: GObject.Closure): void {
+function watch_closure(closure: <link xref="GObject.Closure">GObject.Closure</link>): void {
     // Gjs wrapper for g_object_watch_closure()
 }
   </code></synopsis>

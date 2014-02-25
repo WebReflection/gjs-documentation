@@ -11,7 +11,7 @@
   </info>
   <title>Gio.SocketListener.listen_backlog</title>
   <synopsis><code mime="text/x-gjs">
-SocketListener.listen_backlog: Number (Read / Write / Construct)
+SocketListener.listen_backlog: Number(gint) (Read / Write / Construct)
   </code></synopsis>
 
 

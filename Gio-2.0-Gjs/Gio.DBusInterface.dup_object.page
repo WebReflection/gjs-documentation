@@ -16,7 +16,7 @@
   </info>
   <title>Gio.DBusInterface.prototype.dup_object</title>
   <synopsis><code mime="text/x-gjs">
-function dup_object(): Gio.DBusObject {
+function dup_object(): <link xref="Gio.DBusObject">Gio.DBusObject</link> {
     // Gjs wrapper for g_dbus_interface_dup_object()
 }
   </code></synopsis>

@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::read_async</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_read_async(io_priority: Number, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+function vfunc_read_async(io_priority: Number(gint), cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
 }
   </code></synopsis>
   <p>Asynchronously opens <code>file</code> for reading.</p>  <p>For more details, see <link xref="Gio.File.read"/> which is

@@ -10,7 +10,7 @@
   </info>
   <title>Gio.SocketAddress::get_family</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_family(): Gio.SocketFamily {
+function vfunc_get_family(): <link xref="Gio.SocketFamily">Gio.SocketFamily</link> {
 }
   </code></synopsis>
   <p>Gets the socket family type of <code>address</code>.</p>

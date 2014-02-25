@@ -20,7 +20,7 @@
   </info>
   <title>Gio.DBusInterfaceInfo.prototype.lookup_signal</title>
   <synopsis><code mime="text/x-gjs">
-function lookup_signal(name: String): Gio.DBusSignalInfo {
+function lookup_signal(name: String): <link xref="Gio.DBusSignalInfo">Gio.DBusSignalInfo</link> {
     // Gjs wrapper for g_dbus_interface_info_lookup_signal()
 }
   </code></synopsis>

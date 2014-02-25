@@ -20,7 +20,7 @@
   </info>
   <title>Gio.Mount.prototype.guess_content_type_finish</title>
   <synopsis><code mime="text/x-gjs">
-function guess_content_type_finish(result: Gio.AsyncResult): Array(String) {
+function guess_content_type_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): Array(String) {
     // Gjs wrapper for g_mount_guess_content_type_finish()
 }
   </code></synopsis>

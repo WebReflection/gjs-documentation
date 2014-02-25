@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Icon::hash</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_hash(): Number {
+function vfunc_hash(): Number(guint) {
 }
   </code></synopsis>
   <p>Gets a hash for an icon.</p>

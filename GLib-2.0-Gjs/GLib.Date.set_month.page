@@ -20,7 +20,7 @@
   </info>
   <title>GLib.Date.prototype.set_month</title>
   <synopsis><code mime="text/x-gjs">
-function set_month(month: GLib.DateMonth): void {
+function set_month(month: <link xref="GLib.DateMonth">GLib.DateMonth</link>): void {
     // Gjs wrapper for g_date_set_month()
 }
   </code></synopsis>

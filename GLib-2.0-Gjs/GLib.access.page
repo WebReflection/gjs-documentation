@@ -9,7 +9,7 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_access</api:name>
       <api:arg>
@@ -17,14 +17,14 @@
         <api:name>filename</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>mode</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.access</title>
   <synopsis><code mime="text/x-gjs">
-function access(filename: String, mode: Number): Number {
+function access(filename: String, mode: Number(gint)): Number(gint) {
     // Gjs wrapper for g_access()
 }
   </code></synopsis>

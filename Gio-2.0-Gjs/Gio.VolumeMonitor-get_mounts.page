@@ -10,7 +10,7 @@
   </info>
   <title>Gio.VolumeMonitor::get_mounts</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_mounts(): Array(Gio.Mount) {
+function vfunc_get_mounts(): Array(<link xref="Gio.Mount">Gio.Mount</link>) {
 }
   </code></synopsis>
   <p>Gets a list of the mounts on the system.</p>  <p>The returned list should be freed with <link xref="GLib.free"/>, after

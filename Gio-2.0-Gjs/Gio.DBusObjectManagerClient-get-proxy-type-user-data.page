@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusObjectManagerClient.get_proxy_type_user_data</title>
   <synopsis><code mime="text/x-gjs">
-DBusObjectManagerClient.get_proxy_type_user_data: gpointer (Read / Write / Construct Only)
+DBusObjectManagerClient.get_proxy_type_user_data: void (Read / Write / Construct Only)
   </code></synopsis>
   <p>The #gpointer user_data to pass to <link xref="Gio.DBusObjectManagerClient-get-proxy-type-func"/>.</p>
   <p>Since 2.30</p>

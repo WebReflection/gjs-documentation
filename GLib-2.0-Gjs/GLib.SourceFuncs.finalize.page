@@ -10,7 +10,7 @@
   </info>
   <title>GLib.SourceFuncs.finalize</title>
   <synopsis><code mime="text/x-gjs">
-function onfinalize(source: GLib.Source): void {
+function onfinalize(source: <link xref="GLib.Source">GLib.Source</link>): void {
 }
   </code></synopsis>
 

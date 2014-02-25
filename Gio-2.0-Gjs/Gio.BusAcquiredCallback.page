@@ -10,7 +10,7 @@
   </info>
   <title>Gio.BusAcquiredCallback</title>
   <synopsis><code mime="text/x-gjs">
-function onBusAcquiredCallback(connection: Gio.DBusConnection, name: String): void {
+function onBusAcquiredCallback(connection: <link xref="Gio.DBusConnection">Gio.DBusConnection</link>, name: String): void {
 }
   </code></synopsis>
   <p>Invoked when a connection to a message bus has been obtained.</p>

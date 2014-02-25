@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Drive::start_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_start_finish(result: Gio.AsyncResult): Boolean {
+function vfunc_start_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): Boolean {
 }
   </code></synopsis>
   <p>Finishes starting a drive.</p>

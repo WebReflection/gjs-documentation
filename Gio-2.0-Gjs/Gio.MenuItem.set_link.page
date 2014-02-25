@@ -24,7 +24,7 @@
   </info>
   <title>Gio.MenuItem.prototype.set_link</title>
   <synopsis><code mime="text/x-gjs">
-function set_link(link: String, model: Gio.MenuModel): void {
+function set_link(link: String, model: <link xref="Gio.MenuModel">Gio.MenuModel</link>): void {
     // Gjs wrapper for g_menu_item_set_link()
 }
   </code></synopsis>

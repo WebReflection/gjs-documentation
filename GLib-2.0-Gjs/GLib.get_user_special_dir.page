@@ -20,7 +20,7 @@
   </info>
   <title>GLib.get_user_special_dir</title>
   <synopsis><code mime="text/x-gjs">
-function get_user_special_dir(directory: GLib.UserDirectory): String {
+function get_user_special_dir(directory: <link xref="GLib.UserDirectory">GLib.UserDirectory</link>): String {
     // Gjs wrapper for g_get_user_special_dir()
 }
   </code></synopsis>

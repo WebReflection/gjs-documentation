@@ -16,7 +16,7 @@
   </info>
   <title>Gio.Drive.prototype.get_volumes</title>
   <synopsis><code mime="text/x-gjs">
-function get_volumes(): Array(Gio.Volume) {
+function get_volumes(): Array(<link xref="Gio.Volume">Gio.Volume</link>) {
     // Gjs wrapper for g_drive_get_volumes()
 }
   </code></synopsis>

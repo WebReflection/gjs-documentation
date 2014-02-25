@@ -10,7 +10,7 @@
   </info>
   <title>Gio.VolumeMonitor::get_connected_drives</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_connected_drives(): Array(Gio.Drive) {
+function vfunc_get_connected_drives(): Array(<link xref="Gio.Drive">Gio.Drive</link>) {
 }
   </code></synopsis>
   <p>Gets a list of drives connected to the system.</p>  <p>The returned list should be freed with <link xref="GLib.free"/>, after

@@ -11,7 +11,7 @@
   </info>
   <title>Gio.TlsConnection.database</title>
   <synopsis><code mime="text/x-gjs">
-TlsConnection.database: Gio.TlsDatabase (Read / Write)
+TlsConnection.database: <link xref="Gio.TlsDatabase">Gio.TlsDatabase</link> (Read / Write)
   </code></synopsis>
   <p>The certificate database to use when verifying this TLS connection.
 If no cerificate database is set, then the default database will be

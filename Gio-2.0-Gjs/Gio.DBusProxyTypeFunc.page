@@ -10,7 +10,7 @@
   </info>
   <title>Gio.DBusProxyTypeFunc</title>
   <synopsis><code mime="text/x-gjs">
-function onDBusProxyTypeFunc(manager: Gio.DBusObjectManagerClient, object_path: String, interface_name: String): GType {
+function onDBusProxyTypeFunc(manager: <link xref="Gio.DBusObjectManagerClient">Gio.DBusObjectManagerClient</link>, object_path: String, interface_name: String): GObject.Type {
 }
   </code></synopsis>
   <p>Function signature for a function used to determine the <link xref="GLib.Type"/> to

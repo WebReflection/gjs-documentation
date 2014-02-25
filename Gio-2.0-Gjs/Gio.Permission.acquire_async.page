@@ -24,7 +24,7 @@
   </info>
   <title>Gio.Permission.prototype.acquire_async</title>
   <synopsis><code mime="text/x-gjs">
-function acquire_async(cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+function acquire_async(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
     // Gjs wrapper for g_permission_acquire_async()
 }
   </code></synopsis>

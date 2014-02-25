@@ -11,7 +11,7 @@
   </info>
   <title>Gio.ProxyAddressEnumerator.default_port</title>
   <synopsis><code mime="text/x-gjs">
-ProxyAddressEnumerator.default_port: Number (Read / Write / Construct Only)
+ProxyAddressEnumerator.default_port: Number(guint) (Read / Write / Construct Only)
   </code></synopsis>
   <p>The default port to use if <link xref="Gio.uri"/> does not
 specify one.</p>

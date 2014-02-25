@@ -10,7 +10,7 @@
   </info>
   <title>Gio.DBusObject::get_interfaces</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_interfaces(): Array(Gio.DBusInterface) {
+function vfunc_get_interfaces(): Array(<link xref="Gio.DBusInterface">Gio.DBusInterface</link>) {
 }
   </code></synopsis>
   <p>Gets the D-Bus interfaces associated with <code>object</code>.</p>

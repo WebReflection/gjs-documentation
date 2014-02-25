@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::start_mountable_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_start_mountable_finish(result: Gio.AsyncResult): Boolean {
+function vfunc_start_mountable_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): Boolean {
 }
   </code></synopsis>
   <p>Finishes a start operation. See <link xref="Gio.File.start_mountable"/> for details.</p>  <p>Finish an asynchronous start operation that was started

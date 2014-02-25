@@ -11,7 +11,7 @@
   </info>
   <title>GLib.ScannerConfig.scan_hex_dollar</title>
   <synopsis><code mime="text/x-gjs">
-ScannerConfig.scan_hex_dollar: Number (Read / Write)
+ScannerConfig.scan_hex_dollar: Number(guint) (Read / Write)
   </code></synopsis>
   <p>specifies if '$' is recognized as a prefix for
     hexadecimal numbers (the default is <code>false</code>).</p>

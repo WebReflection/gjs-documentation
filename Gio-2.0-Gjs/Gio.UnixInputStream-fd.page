@@ -11,7 +11,7 @@
   </info>
   <title>Gio.UnixInputStream.fd</title>
   <synopsis><code mime="text/x-gjs">
-UnixInputStream.fd: Number (Read / Write / Construct Only)
+UnixInputStream.fd: Number(gint) (Read / Write / Construct Only)
   </code></synopsis>
   <p>The file descriptor that the stream reads from.</p>
   <p>Since 2.20</p>

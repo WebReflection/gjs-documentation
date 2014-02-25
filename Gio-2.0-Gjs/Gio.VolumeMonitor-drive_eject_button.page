@@ -10,7 +10,7 @@
   </info>
   <title>Gio.VolumeMonitor::drive_eject_button</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_drive_eject_button(drive: Gio.Drive): void {
+function vfunc_drive_eject_button(drive: <link xref="Gio.Drive">Gio.Drive</link>): void {
 }
   </code></synopsis>
 

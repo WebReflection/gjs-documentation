@@ -16,7 +16,7 @@
   </info>
   <title>GLib.Variant.parse_error_quark</title>
   <synopsis><code mime="text/x-gjs">
-function parse_error_quark(): GLib.Quark {
+function parse_error_quark(): <link xref="GLib.Quark">GLib.Quark</link> {
     // Gjs wrapper for g_variant_parse_error_quark()
 }
   </code></synopsis>

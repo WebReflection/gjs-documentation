@@ -10,7 +10,7 @@
   </info>
   <title>Gio.AppInfo::launch_uris</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_launch_uris(uris: Array(String), launch_context: Gio.AppLaunchContext): Boolean {
+function vfunc_launch_uris(uris: Array(String), launch_context: <link xref="Gio.AppLaunchContext">Gio.AppLaunchContext</link>): Boolean {
 }
   </code></synopsis>
   <p>Launches the application. This passes the <code>uris</code> to the launched application

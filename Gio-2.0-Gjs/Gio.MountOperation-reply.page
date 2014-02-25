@@ -11,7 +11,7 @@
   </info>
   <title>Gio.MountOperation::reply</title>
   <synopsis><code mime="text/x-gjs">
-connect('reply', function (mountOperation, result: Gio.MountOperationResult, ): void);
+connect('reply', function (mountOperation, result: <link xref="Gio.MountOperationResult">Gio.MountOperationResult</link>, ): void);
   </code></synopsis>
   <p>Emitted when the user has replied to the mount operation.</p>
 

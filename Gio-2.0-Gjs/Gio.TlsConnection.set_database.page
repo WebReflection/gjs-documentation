@@ -20,7 +20,7 @@
   </info>
   <title>Gio.TlsConnection.prototype.set_database</title>
   <synopsis><code mime="text/x-gjs">
-function set_database(database: Gio.TlsDatabase): void {
+function set_database(database: <link xref="Gio.TlsDatabase">Gio.TlsDatabase</link>): void {
     // Gjs wrapper for g_tls_connection_set_database()
 }
   </code></synopsis>

@@ -10,7 +10,7 @@
   </info>
   <title>GObject.ParamSpec::value_set_default</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_value_set_default(value: GObject.Value): void {
+function vfunc_value_set_default(value: <link xref="GObject.Value">GObject.Value</link>): void {
 }
   </code></synopsis>
 

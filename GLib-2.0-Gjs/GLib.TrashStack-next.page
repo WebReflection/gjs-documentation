@@ -11,7 +11,7 @@
   </info>
   <title>GLib.TrashStack.next</title>
   <synopsis><code mime="text/x-gjs">
-TrashStack.next: GLib.TrashStack (Read)
+TrashStack.next: <link xref="GLib.TrashStack">GLib.TrashStack</link> (Read)
   </code></synopsis>
   <p>pointer to the previous element of the stack,
     gets stored in the first `sizeof (gpointer)`

@@ -20,7 +20,7 @@
   </info>
   <title>Gio.unix_mount_free</title>
   <synopsis><code mime="text/x-gjs">
-function unix_mount_free(mount_entry: Gio.UnixMountEntry): void {
+function unix_mount_free(mount_entry: <link xref="Gio.UnixMountEntry">Gio.UnixMountEntry</link>): void {
     // Gjs wrapper for g_unix_mount_free()
 }
   </code></synopsis>

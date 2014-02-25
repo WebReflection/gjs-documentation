@@ -10,7 +10,7 @@
   </info>
   <title>Gio.CancellableSourceFunc</title>
   <synopsis><code mime="text/x-gjs">
-function onCancellableSourceFunc(cancellable: Gio.Cancellable): Boolean {
+function onCancellableSourceFunc(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Boolean {
 }
   </code></synopsis>
   <p>This is the function type of the callback used for the <link xref="GLib.Source"/>

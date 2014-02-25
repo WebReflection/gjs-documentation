@@ -13,26 +13,26 @@
       </api:returns>
       <api:name>g_utf16_to_utf8</api:name>
       <api:arg>
-        <api:type>guint16</api:type>
+        <api:type>Number(guint16)</api:type>
         <api:name>str</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(glong)</api:type>
         <api:name>len</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(glong)</api:type>
         <api:name>items_read</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(glong)</api:type>
         <api:name>items_written</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.utf16_to_utf8</title>
   <synopsis><code mime="text/x-gjs">
-function utf16_to_utf8(str: guint16, len: Number, items_read: Number, items_written: Number): String {
+function utf16_to_utf8(str: Number(guint16), len: Number(glong), items_read: Number(glong), items_written: Number(glong)): String {
     // Gjs wrapper for g_utf16_to_utf8()
 }
   </code></synopsis>

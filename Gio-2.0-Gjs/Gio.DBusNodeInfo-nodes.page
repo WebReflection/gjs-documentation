@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusNodeInfo.nodes</title>
   <synopsis><code mime="text/x-gjs">
-DBusNodeInfo.nodes: Array(Gio.DBusNodeInfo) (Read / Write)
+DBusNodeInfo.nodes: Array(<link xref="Gio.DBusNodeInfo">Gio.DBusNodeInfo</link>) (Read / Write)
   </code></synopsis>
   <p>A pointer to a <code>null</code>-terminated array of pointers to <link xref="Gio.DBusNodeInfo"/> structures or <code>null</code> if there are no nodes.</p>
 

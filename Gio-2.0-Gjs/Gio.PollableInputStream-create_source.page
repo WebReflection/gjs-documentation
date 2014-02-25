@@ -10,7 +10,7 @@
   </info>
   <title>Gio.PollableInputStream::create_source</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_create_source(cancellable: Gio.Cancellable): GLib.Source {
+function vfunc_create_source(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): <link href="../GLib-2.0/GLib.Source.page">GLib.Source</link> {
 }
   </code></synopsis>
   <p>Creates a <link xref="GLib.Source"/> that triggers when <code>stream</code> can be read, or

@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Drive::poll_for_media_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_poll_for_media_finish(result: Gio.AsyncResult): Boolean {
+function vfunc_poll_for_media_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): Boolean {
 }
   </code></synopsis>
   <p>Finishes an operation started with <link xref="Gio.Drive.poll_for_media"/> on a drive.</p>

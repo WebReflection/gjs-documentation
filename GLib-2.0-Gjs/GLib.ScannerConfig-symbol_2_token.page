@@ -11,7 +11,7 @@
   </info>
   <title>GLib.ScannerConfig.symbol_2_token</title>
   <synopsis><code mime="text/x-gjs">
-ScannerConfig.symbol_2_token: Number (Read / Write)
+ScannerConfig.symbol_2_token: Number(guint) (Read / Write)
   </code></synopsis>
   <p>specifies if symbols are reported by setting
     `token = v_symbol` or as <link xref="GLib.TokenType"/>.symbol (the default is <code>false</code>).</p>

@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_date_subtract_years</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
         <api:name>n_years</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.Date.prototype.subtract_years</title>
   <synopsis><code mime="text/x-gjs">
-function subtract_years(n_years: Number): void {
+function subtract_years(n_years: Number(guint)): void {
     // Gjs wrapper for g_date_subtract_years()
 }
   </code></synopsis>

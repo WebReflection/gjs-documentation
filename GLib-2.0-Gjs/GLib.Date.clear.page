@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_date_clear</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
         <api:name>n_dates</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.Date.prototype.clear</title>
   <synopsis><code mime="text/x-gjs">
-function clear(n_dates: Number): void {
+function clear(n_dates: Number(guint)): void {
     // Gjs wrapper for g_date_clear()
 }
   </code></synopsis>

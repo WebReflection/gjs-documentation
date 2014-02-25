@@ -17,7 +17,7 @@
         <api:name>test_path</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(guint64)</api:type>
         <api:name>usec_timeout</api:name>
       </api:arg>
       <api:arg>
@@ -28,7 +28,7 @@
   </info>
   <title>GLib.test_trap_subprocess</title>
   <synopsis><code mime="text/x-gjs">
-function test_trap_subprocess(test_path: String, usec_timeout: Number, test_flags: GLib.TestSubprocessFlags): void {
+function test_trap_subprocess(test_path: String, usec_timeout: Number(guint64), test_flags: <link xref="GLib.TestSubprocessFlags">GLib.TestSubprocessFlags</link>): void {
     // Gjs wrapper for g_test_trap_subprocess()
 }
   </code></synopsis>

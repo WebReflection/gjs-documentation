@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::create_readwrite</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_create_readwrite(flags: Gio.FileCreateFlags, cancellable: Gio.Cancellable): Gio.FileIOStream {
+function vfunc_create_readwrite(flags: <link xref="Gio.FileCreateFlags">Gio.FileCreateFlags</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): <link xref="Gio.FileIOStream">Gio.FileIOStream</link> {
 }
   </code></synopsis>
   <p>Creates a new file and returns a stream for reading and

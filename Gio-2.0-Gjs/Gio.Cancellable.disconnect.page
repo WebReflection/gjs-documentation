@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_cancellable_disconnect</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gulong)</api:type>
         <api:name>handler_id</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>Gio.Cancellable.prototype.disconnect</title>
   <synopsis><code mime="text/x-gjs">
-function disconnect(handler_id: Number): void {
+function disconnect(handler_id: Number(gulong)): void {
     // Gjs wrapper for g_cancellable_disconnect()
 }
   </code></synopsis>

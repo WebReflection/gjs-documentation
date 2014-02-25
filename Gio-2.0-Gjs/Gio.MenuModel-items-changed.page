@@ -11,7 +11,7 @@
   </info>
   <title>Gio.MenuModel::items-changed</title>
   <synopsis><code mime="text/x-gjs">
-connect('items-changed', function (menuModel, position: Number, removed: Number, added: Number, ): void);
+connect('items-changed', function (menuModel, position: Number(gint), removed: Number(gint), added: Number(gint), ): void);
   </code></synopsis>
   <p>Emitted when a change has occured to the menu.</p>  <p>The only changes that can occur to a menu is that items are removed
 or added.  Items may not change (except by being removed and added

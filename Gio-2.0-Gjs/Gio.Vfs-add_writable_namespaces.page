@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Vfs::add_writable_namespaces</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_add_writable_namespaces(list: Gio.FileAttributeInfoList): void {
+function vfunc_add_writable_namespaces(list: <link xref="Gio.FileAttributeInfoList">Gio.FileAttributeInfoList</link>): void {
 }
   </code></synopsis>
 

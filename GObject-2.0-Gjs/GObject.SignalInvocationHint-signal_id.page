@@ -11,7 +11,7 @@
   </info>
   <title>GObject.SignalInvocationHint.signal_id</title>
   <synopsis><code mime="text/x-gjs">
-SignalInvocationHint.signal_id: Number (Read / Write)
+SignalInvocationHint.signal_id: Number(guint) (Read / Write)
   </code></synopsis>
   <p>The signal id of the signal invoking the callback</p>
 

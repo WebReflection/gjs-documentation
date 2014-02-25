@@ -20,7 +20,7 @@
   </info>
   <title>GLib.KeyFile.prototype.get_keys</title>
   <synopsis><code mime="text/x-gjs">
-function get_keys(group_name: String): [return_value: Array(String), length: gsize] {
+function get_keys(group_name: String): [return_value: Array(String), length: Number(gsize)] {
     // Gjs wrapper for g_key_file_get_keys()
 }
   </code></synopsis>

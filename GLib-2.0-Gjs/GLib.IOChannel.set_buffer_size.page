@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_io_channel_set_buffer_size</api:name>
       <api:arg>
-        <api:type>gsize</api:type>
+        <api:type>Number(gsize)</api:type>
         <api:name>size</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.IOChannel.prototype.set_buffer_size</title>
   <synopsis><code mime="text/x-gjs">
-function set_buffer_size(size: gsize): void {
+function set_buffer_size(size: Number(gsize)): void {
     // Gjs wrapper for g_io_channel_set_buffer_size()
 }
   </code></synopsis>

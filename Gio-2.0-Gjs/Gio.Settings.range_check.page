@@ -24,7 +24,7 @@
   </info>
   <title>Gio.Settings.prototype.range_check</title>
   <synopsis><code mime="text/x-gjs">
-function range_check(key: String, value: GLib.Variant): Boolean {
+function range_check(key: String, value: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>): Boolean {
     // Gjs wrapper for g_settings_range_check()
 }
   </code></synopsis>

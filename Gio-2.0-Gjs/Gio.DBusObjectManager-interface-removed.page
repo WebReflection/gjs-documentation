@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusObjectManager::interface-removed</title>
   <synopsis><code mime="text/x-gjs">
-connect('interface-removed', function (dBusObjectManager, object: Gio.DBusObject, interface: Gio.DBusInterface, ): void);
+connect('interface-removed', function (dBusObjectManager, object: <link xref="Gio.DBusObject">Gio.DBusObject</link>, interface: <link xref="Gio.DBusInterface">Gio.DBusInterface</link>, ): void);
   </code></synopsis>
   <p>Emitted when <code>interface</code> has been removed from <code>object</code>.</p>  <p>This signal exists purely as a convenience to avoid having to
 connect signals to all objects managed by @manager.</p>

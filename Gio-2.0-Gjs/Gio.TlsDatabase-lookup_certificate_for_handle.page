@@ -10,7 +10,7 @@
   </info>
   <title>Gio.TlsDatabase::lookup_certificate_for_handle</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_lookup_certificate_for_handle(handle: String, interaction: Gio.TlsInteraction, flags: Gio.TlsDatabaseLookupFlags, cancellable: Gio.Cancellable): Gio.TlsCertificate {
+function vfunc_lookup_certificate_for_handle(handle: String, interaction: <link xref="Gio.TlsInteraction">Gio.TlsInteraction</link>, flags: <link xref="Gio.TlsDatabaseLookupFlags">Gio.TlsDatabaseLookupFlags</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): <link xref="Gio.TlsCertificate">Gio.TlsCertificate</link> {
 }
   </code></synopsis>
   <p>Lookup a certificate by its handle.</p>  <p>The handle should have been created by calling

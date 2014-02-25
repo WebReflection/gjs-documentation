@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusServer.flags</title>
   <synopsis><code mime="text/x-gjs">
-DBusServer.flags: Gio.DBusServerFlags (Read / Write / Construct Only)
+DBusServer.flags: <link xref="Gio.DBusServerFlags">Gio.DBusServerFlags</link> (Read / Write / Construct Only)
   </code></synopsis>
   <p>Flags from the <link xref="Gio.DBusServerFlags"/> enumeration.</p>
   <p>Since 2.26</p>

@@ -20,7 +20,7 @@
   </info>
   <title>Gio.Application.prototype.set_action_group</title>
   <synopsis><code mime="text/x-gjs">
-function set_action_group(action_group: Gio.ActionGroup): void {
+function set_action_group(action_group: <link xref="Gio.ActionGroup">Gio.ActionGroup</link>): void {
     // Gjs wrapper for g_application_set_action_group()
 }
   </code></synopsis>

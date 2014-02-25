@@ -28,7 +28,7 @@
   </info>
   <title>Gio.File.prototype.enumerate_children</title>
   <synopsis><code mime="text/x-gjs">
-function enumerate_children(attributes: String, flags: Gio.FileQueryInfoFlags, cancellable: Gio.Cancellable): Gio.FileEnumerator {
+function enumerate_children(attributes: String, flags: <link xref="Gio.FileQueryInfoFlags">Gio.FileQueryInfoFlags</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): <link xref="Gio.FileEnumerator">Gio.FileEnumerator</link> {
     // Gjs wrapper for g_file_enumerate_children()
 }
   </code></synopsis>

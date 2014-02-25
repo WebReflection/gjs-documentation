@@ -20,7 +20,7 @@
   </info>
   <title>GLib.MatchInfo.prototype.fetch_named_pos</title>
   <synopsis><code mime="text/x-gjs">
-function fetch_named_pos(name: String): [ok: Boolean, start_pos: Number, end_pos: Number] {
+function fetch_named_pos(name: String): [ok: Boolean, start_pos: Number(gint), end_pos: Number(gint)] {
     // Gjs wrapper for g_match_info_fetch_named_pos()
 }
   </code></synopsis>

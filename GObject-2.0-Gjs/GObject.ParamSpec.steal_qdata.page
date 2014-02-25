@@ -9,7 +9,7 @@
     <link xref="GObject.ParamSpec" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
       </api:returns>
       <api:name>g_param_spec_steal_qdata</api:name>
       <api:arg>
@@ -20,7 +20,7 @@
   </info>
   <title>GObject.ParamSpec.prototype.steal_qdata</title>
   <synopsis><code mime="text/x-gjs">
-function steal_qdata(quark: GLib.Quark): gpointer {
+function steal_qdata(quark: <link href="../GLib-2.0/GLib.Quark.page">GLib.Quark</link>): void {
     // Gjs wrapper for g_param_spec_steal_qdata()
 }
   </code></synopsis>

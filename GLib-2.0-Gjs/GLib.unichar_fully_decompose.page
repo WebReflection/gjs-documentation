@@ -9,7 +9,7 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>gsize</api:type>
+        <api:type>Number(gsize)</api:type>
       </api:returns>
       <api:name>g_unichar_fully_decompose</api:name>
       <api:arg>
@@ -25,14 +25,14 @@
         <api:name>result</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gsize</api:type>
+        <api:type>Number(gsize)</api:type>
         <api:name>result_len</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.unichar_fully_decompose</title>
   <synopsis><code mime="text/x-gjs">
-function unichar_fully_decompose(ch: String, compat: Boolean, result: String, result_len: gsize): gsize {
+function unichar_fully_decompose(ch: String, compat: Boolean, result: String, result_len: Number(gsize)): Number(gsize) {
     // Gjs wrapper for g_unichar_fully_decompose()
 }
   </code></synopsis>

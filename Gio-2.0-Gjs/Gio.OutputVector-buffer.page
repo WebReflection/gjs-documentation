@@ -11,7 +11,7 @@
   </info>
   <title>Gio.OutputVector.buffer</title>
   <synopsis><code mime="text/x-gjs">
-OutputVector.buffer: gpointer (Read)
+OutputVector.buffer: void (Read)
   </code></synopsis>
   <p>Pointer to a buffer of data to read.</p>
 

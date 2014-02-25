@@ -10,7 +10,7 @@
   </info>
   <title>GLib.UnixFDSourceFunc</title>
   <synopsis><code mime="text/x-gjs">
-function onUnixFDSourceFunc(fd: Number, condition: GLib.IOCondition): Boolean {
+function onUnixFDSourceFunc(fd: Number(gint), condition: <link xref="GLib.IOCondition">GLib.IOCondition</link>): Boolean {
 }
   </code></synopsis>
   <p>The type of functions to be called when a UNIX fd watch source

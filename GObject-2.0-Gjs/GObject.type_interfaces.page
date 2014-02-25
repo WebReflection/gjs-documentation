@@ -9,18 +9,18 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Array(GType)</api:type>
+        <api:type>Array(GObject.Type)</api:type>
       </api:returns>
       <api:name>g_type_interfaces</api:name>
       <api:arg>
-        <api:type>GType</api:type>
+        <api:type>GObject.Type</api:type>
         <api:name>type</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GObject.type_interfaces</title>
   <synopsis><code mime="text/x-gjs">
-function type_interfaces(type: GType): [return_value: Array(GType), n_interfaces: Number] {
+function type_interfaces(type: GObject.Type): [return_value: Array(GObject.Type), n_interfaces: Number(guint)] {
     // Gjs wrapper for g_type_interfaces()
 }
   </code></synopsis>

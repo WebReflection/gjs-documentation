@@ -21,7 +21,7 @@
         <api:name>file</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>line</api:name>
       </api:arg>
       <api:arg>
@@ -36,7 +36,7 @@
   </info>
   <title>GLib.assertion_message</title>
   <synopsis><code mime="text/x-gjs">
-function assertion_message(domain: String, file: String, line: Number, func: String, message: String): void {
+function assertion_message(domain: String, file: String, line: Number(gint), func: String, message: String): void {
     // Gjs wrapper for g_assertion_message()
 }
   </code></synopsis>

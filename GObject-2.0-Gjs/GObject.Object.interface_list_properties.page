@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_object_interface_list_properties</api:name>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>g_iface</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GObject.Object.interface_list_properties</title>
   <synopsis><code mime="text/x-gjs">
-function interface_list_properties(g_iface: gpointer): [return_value: Array(GObject.ParamSpec), n_properties_p: Number] {
+function interface_list_properties(g_iface: void): [return_value: Array(<link xref="GObject.ParamSpec">GObject.ParamSpec</link>), n_properties_p: Number(guint)] {
     // Gjs wrapper for g_object_interface_list_properties()
 }
   </code></synopsis>

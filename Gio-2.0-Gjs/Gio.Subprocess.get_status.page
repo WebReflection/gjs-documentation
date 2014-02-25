@@ -9,14 +9,14 @@
     <link xref="Gio.Subprocess" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_subprocess_get_status</api:name>
     </api:function>
   </info>
   <title>Gio.Subprocess.prototype.get_status</title>
   <synopsis><code mime="text/x-gjs">
-function get_status(): Number {
+function get_status(): Number(gint) {
     // Gjs wrapper for g_subprocess_get_status()
 }
   </code></synopsis>

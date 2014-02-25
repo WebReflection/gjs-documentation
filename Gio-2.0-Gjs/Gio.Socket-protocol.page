@@ -11,7 +11,7 @@
   </info>
   <title>Gio.Socket.protocol</title>
   <synopsis><code mime="text/x-gjs">
-Socket.protocol: Gio.SocketProtocol (Read / Write / Construct Only)
+Socket.protocol: <link xref="Gio.SocketProtocol">Gio.SocketProtocol</link> (Read / Write / Construct Only)
   </code></synopsis>
 
 

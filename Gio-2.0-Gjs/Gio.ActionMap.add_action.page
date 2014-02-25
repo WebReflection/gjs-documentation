@@ -20,7 +20,7 @@
   </info>
   <title>Gio.ActionMap.prototype.add_action</title>
   <synopsis><code mime="text/x-gjs">
-function add_action(action: Gio.Action): void {
+function add_action(action: <link xref="Gio.Action">Gio.Action</link>): void {
     // Gjs wrapper for g_action_map_add_action()
 }
   </code></synopsis>

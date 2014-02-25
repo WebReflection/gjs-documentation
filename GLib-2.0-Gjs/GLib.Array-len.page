@@ -11,7 +11,7 @@
   </info>
   <title>GLib.Array.len</title>
   <synopsis><code mime="text/x-gjs">
-Array.len: Number (Read / Write)
+Array.len: Number(guint) (Read / Write)
   </code></synopsis>
   <p>the number of elements in the <link xref="GLib.Array"/> not including the
     possible terminating zero element.</p>

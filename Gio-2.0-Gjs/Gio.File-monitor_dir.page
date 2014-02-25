@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::monitor_dir</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_monitor_dir(flags: Gio.FileMonitorFlags, cancellable: Gio.Cancellable): Gio.FileMonitor {
+function vfunc_monitor_dir(flags: <link xref="Gio.FileMonitorFlags">Gio.FileMonitorFlags</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): <link xref="Gio.FileMonitor">Gio.FileMonitor</link> {
 }
   </code></synopsis>
   <p>Obtains a directory monitor for the given file.

@@ -11,7 +11,7 @@
   </info>
   <title>Gio.SocketService::incoming</title>
   <synopsis><code mime="text/x-gjs">
-connect('incoming', function (socketService, connection: Gio.SocketConnection, source_object: GObject.Object, ): Boolean);
+connect('incoming', function (socketService, connection: <link xref="Gio.SocketConnection">Gio.SocketConnection</link>, source_object: <link href="../GObject-2.0/GObject.Object.page">GObject.Object</link>, ): Boolean);
   </code></synopsis>
   <p>The ::incoming signal is emitted when a new incoming connection
 to @service needs to be handled. The handler must initiate the

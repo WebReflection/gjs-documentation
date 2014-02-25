@@ -11,7 +11,7 @@
   </info>
   <title>GLib.ScannerConfig.numbers_2_int</title>
   <synopsis><code mime="text/x-gjs">
-ScannerConfig.numbers_2_int: Number (Read / Write)
+ScannerConfig.numbers_2_int: Number(guint) (Read / Write)
   </code></synopsis>
   <p>specifies if binary, octal and hexadecimal numbers
     are reported as #G_TOKEN_INT (the default is <code>true</code>).</p>

@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::start_mountable</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_start_mountable(flags: Gio.DriveStartFlags, start_operation: Gio.MountOperation, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+function vfunc_start_mountable(flags: <link xref="Gio.DriveStartFlags">Gio.DriveStartFlags</link>, start_operation: <link xref="Gio.MountOperation">Gio.MountOperation</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
 }
   </code></synopsis>
   <p>Starts a file of type #G_FILE_TYPE_MOUNTABLE.

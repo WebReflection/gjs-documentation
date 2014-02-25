@@ -28,7 +28,7 @@
   </info>
   <title>Gio.Socket.prototype.join_multicast_group</title>
   <synopsis><code mime="text/x-gjs">
-function join_multicast_group(group: Gio.InetAddress, source_specific: Boolean, iface: String): Boolean {
+function join_multicast_group(group: <link xref="Gio.InetAddress">Gio.InetAddress</link>, source_specific: Boolean, iface: String): Boolean {
     // Gjs wrapper for g_socket_join_multicast_group()
 }
   </code></synopsis>

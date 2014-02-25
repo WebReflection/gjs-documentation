@@ -20,7 +20,7 @@
   </info>
   <title>GLib.atexit</title>
   <synopsis><code mime="text/x-gjs">
-function atexit(func: GLib.VoidFunc): void {
+function atexit(func: <link xref="GLib.VoidFunc">GLib.VoidFunc</link>): void {
     // Gjs wrapper for g_atexit()
 }
   </code></synopsis>

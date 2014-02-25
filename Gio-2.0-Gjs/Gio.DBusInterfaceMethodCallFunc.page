@@ -10,7 +10,7 @@
   </info>
   <title>Gio.DBusInterfaceMethodCallFunc</title>
   <synopsis><code mime="text/x-gjs">
-function onDBusInterfaceMethodCallFunc(connection: Gio.DBusConnection, sender: String, object_path: String, interface_name: String, method_name: String, parameters: GLib.Variant, invocation: Gio.DBusMethodInvocation): void {
+function onDBusInterfaceMethodCallFunc(connection: <link xref="Gio.DBusConnection">Gio.DBusConnection</link>, sender: String, object_path: String, interface_name: String, method_name: String, parameters: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>, invocation: <link xref="Gio.DBusMethodInvocation">Gio.DBusMethodInvocation</link>): void {
 }
   </code></synopsis>
   <p>The type of the @method_call function in <link xref="Gio.DBusInterfaceVTable"/>.</p>

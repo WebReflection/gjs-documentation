@@ -17,14 +17,14 @@
         <api:name>key</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
         <api:name>value</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>Gio.Settings.prototype.set_uint</title>
   <synopsis><code mime="text/x-gjs">
-function set_uint(key: String, value: Number): Boolean {
+function set_uint(key: String, value: Number(guint)): Boolean {
     // Gjs wrapper for g_settings_set_uint()
 }
   </code></synopsis>

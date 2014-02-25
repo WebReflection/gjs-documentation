@@ -10,7 +10,7 @@
   </info>
   <title>Gio.ActionGroup::activate_action</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_activate_action(action_name: String, parameter: GLib.Variant): void {
+function vfunc_activate_action(action_name: String, parameter: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>): void {
 }
   </code></synopsis>
   <p>Activate the named action within <code>action_group</code>.</p>  <p>If the action is expecting a parameter, then the correct type of

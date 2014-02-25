@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_once_init_enter</api:name>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>location</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.Once.init_enter</title>
   <synopsis><code mime="text/x-gjs">
-function init_enter(location: gpointer): Boolean {
+function init_enter(location: void): Boolean {
     // Gjs wrapper for g_once_init_enter()
 }
   </code></synopsis>

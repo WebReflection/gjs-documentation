@@ -32,7 +32,7 @@
   </info>
   <title>Gio.File.prototype.replace</title>
   <synopsis><code mime="text/x-gjs">
-function replace(etag: String, make_backup: Boolean, flags: Gio.FileCreateFlags, cancellable: Gio.Cancellable): Gio.FileOutputStream {
+function replace(etag: String, make_backup: Boolean, flags: <link xref="Gio.FileCreateFlags">Gio.FileCreateFlags</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): <link xref="Gio.FileOutputStream">Gio.FileOutputStream</link> {
     // Gjs wrapper for g_file_replace()
 }
   </code></synopsis>

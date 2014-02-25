@@ -11,7 +11,7 @@
   </info>
   <title>Gio.SimpleAction.parameter_type</title>
   <synopsis><code mime="text/x-gjs">
-SimpleAction.parameter_type: GLib.VariantType (Read / Write / Construct Only)
+SimpleAction.parameter_type: <link href="../GLib-2.0/GLib.VariantType.page">GLib.VariantType</link> (Read / Write / Construct Only)
   </code></synopsis>
   <p>The type of the parameter that must be given when activating the
 action.</p>

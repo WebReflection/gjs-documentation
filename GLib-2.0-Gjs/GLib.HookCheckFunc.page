@@ -10,7 +10,7 @@
   </info>
   <title>GLib.HookCheckFunc</title>
   <synopsis><code mime="text/x-gjs">
-function onHookCheckFunc(data: gpointer): Boolean {
+function onHookCheckFunc(data: void): Boolean {
 }
   </code></synopsis>
   <p>Defines the type of a hook function that can be invoked

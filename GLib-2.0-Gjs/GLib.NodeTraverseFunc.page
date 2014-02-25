@@ -10,7 +10,7 @@
   </info>
   <title>GLib.NodeTraverseFunc</title>
   <synopsis><code mime="text/x-gjs">
-function onNodeTraverseFunc(node: GLib.Node, data: gpointer): Boolean {
+function onNodeTraverseFunc(node: <link xref="GLib.Node">GLib.Node</link>, data: void): Boolean {
 }
   </code></synopsis>
   <p>Specifies the type of function passed to <link xref="GLib.traverse"/>. The

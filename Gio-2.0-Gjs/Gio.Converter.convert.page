@@ -13,15 +13,15 @@
       </api:returns>
       <api:name>g_converter_convert</api:name>
       <api:arg>
-        <api:type>Array(guint8)</api:type>
+        <api:type>Array(Number(guint8))</api:type>
         <api:name>inbuf</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>outbuf</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gsize</api:type>
+        <api:type>Number(gsize)</api:type>
         <api:name>outbuf_size</api:name>
       </api:arg>
       <api:arg>
@@ -32,7 +32,7 @@
   </info>
   <title>Gio.Converter.prototype.convert</title>
   <synopsis><code mime="text/x-gjs">
-function convert(inbuf: Array(guint8), outbuf: gpointer, outbuf_size: gsize, flags: Gio.ConverterFlags): [return_value: Gio.ConverterResult, bytes_read: gsize, bytes_written: gsize] {
+function convert(inbuf: Array(Number(guint8)), outbuf: void, outbuf_size: Number(gsize), flags: <link xref="Gio.ConverterFlags">Gio.ConverterFlags</link>): [return_value: <link xref="Gio.ConverterResult">Gio.ConverterResult</link>, bytes_read: Number(gsize), bytes_written: Number(gsize)] {
     // Gjs wrapper for g_converter_convert()
 }
   </code></synopsis>

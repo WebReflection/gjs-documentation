@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusObjectManager::object-removed</title>
   <synopsis><code mime="text/x-gjs">
-connect('object-removed', function (dBusObjectManager, object: Gio.DBusObject, ): void);
+connect('object-removed', function (dBusObjectManager, object: <link xref="Gio.DBusObject">Gio.DBusObject</link>, ): void);
   </code></synopsis>
   <p>Emitted when <code>object</code> is removed from @manager.</p>
   <p>Since 2.30</p>

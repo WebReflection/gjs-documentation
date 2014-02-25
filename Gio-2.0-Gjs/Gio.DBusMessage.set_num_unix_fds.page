@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_dbus_message_set_num_unix_fds</api:name>
       <api:arg>
-        <api:type>guint32</api:type>
+        <api:type>Number(guint32)</api:type>
         <api:name>value</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>Gio.DBusMessage.prototype.set_num_unix_fds</title>
   <synopsis><code mime="text/x-gjs">
-function set_num_unix_fds(value: guint32): void {
+function set_num_unix_fds(value: Number(guint32)): void {
     // Gjs wrapper for g_dbus_message_set_num_unix_fds()
 }
   </code></synopsis>

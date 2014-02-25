@@ -9,7 +9,7 @@
     <link xref="GLib.TrashStack" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
       </api:returns>
       <api:name>g_trash_stack_height</api:name>
       <api:arg>
@@ -20,7 +20,7 @@
   </info>
   <title>GLib.TrashStack.height</title>
   <synopsis><code mime="text/x-gjs">
-function height(stack_p: GLib.TrashStack): Number {
+function height(stack_p: <link xref="GLib.TrashStack">GLib.TrashStack</link>): Number(guint) {
     // Gjs wrapper for g_trash_stack_height()
 }
   </code></synopsis>

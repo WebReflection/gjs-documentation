@@ -10,7 +10,7 @@
   </info>
   <title>Gio.DBusSubtreeIntrospectFunc</title>
   <synopsis><code mime="text/x-gjs">
-function onDBusSubtreeIntrospectFunc(connection: Gio.DBusConnection, sender: String, object_path: String, node: String): Gio.DBusInterfaceInfo {
+function onDBusSubtreeIntrospectFunc(connection: <link xref="Gio.DBusConnection">Gio.DBusConnection</link>, sender: String, object_path: String, node: String): <link xref="Gio.DBusInterfaceInfo">Gio.DBusInterfaceInfo</link> {
 }
   </code></synopsis>
   <p>The type of the @introspect function in <link xref="Gio.DBusSubtreeVTable"/>.</p>  <p>Subtrees are flat.  <code>node</code>, if non-<code>null</code>, is always exactly one

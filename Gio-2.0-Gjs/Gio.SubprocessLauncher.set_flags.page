@@ -20,7 +20,7 @@
   </info>
   <title>Gio.SubprocessLauncher.prototype.set_flags</title>
   <synopsis><code mime="text/x-gjs">
-function set_flags(flags: Gio.SubprocessFlags): void {
+function set_flags(flags: <link xref="Gio.SubprocessFlags">Gio.SubprocessFlags</link>): void {
     // Gjs wrapper for g_subprocess_launcher_set_flags()
 }
   </code></synopsis>

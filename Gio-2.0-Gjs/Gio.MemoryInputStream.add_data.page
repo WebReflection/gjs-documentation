@@ -13,7 +13,7 @@
       </api:returns>
       <api:name>g_memory_input_stream_add_data</api:name>
       <api:arg>
-        <api:type>Array(guint8)</api:type>
+        <api:type>Array(Number(guint8))</api:type>
         <api:name>data</api:name>
       </api:arg>
       <api:arg>
@@ -24,7 +24,7 @@
   </info>
   <title>Gio.MemoryInputStream.prototype.add_data</title>
   <synopsis><code mime="text/x-gjs">
-function add_data(data: Array(guint8), destroy: GLib.DestroyNotify): void {
+function add_data(data: Array(Number(guint8)), destroy: <link href="../GLib-2.0/GLib.DestroyNotify.page">GLib.DestroyNotify</link>): void {
     // Gjs wrapper for g_memory_input_stream_add_data()
 }
   </code></synopsis>

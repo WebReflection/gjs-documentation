@@ -9,14 +9,14 @@
     <link xref="Gio.FileInfo" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>gint32</api:type>
+        <api:type>Number(gint32)</api:type>
       </api:returns>
       <api:name>g_file_info_get_sort_order</api:name>
     </api:function>
   </info>
   <title>Gio.FileInfo.prototype.get_sort_order</title>
   <synopsis><code mime="text/x-gjs">
-function get_sort_order(): gint32 {
+function get_sort_order(): Number(gint32) {
     // Gjs wrapper for g_file_info_get_sort_order()
 }
   </code></synopsis>

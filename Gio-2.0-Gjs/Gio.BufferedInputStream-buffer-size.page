@@ -11,7 +11,7 @@
   </info>
   <title>Gio.BufferedInputStream.buffer_size</title>
   <synopsis><code mime="text/x-gjs">
-BufferedInputStream.buffer_size: Number (Read / Write / Construct)
+BufferedInputStream.buffer_size: Number(guint) (Read / Write / Construct)
   </code></synopsis>
 
 

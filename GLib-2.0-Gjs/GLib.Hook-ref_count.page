@@ -11,7 +11,7 @@
   </info>
   <title>GLib.Hook.ref_count</title>
   <synopsis><code mime="text/x-gjs">
-Hook.ref_count: Number (Read / Write)
+Hook.ref_count: Number(guint) (Read / Write)
   </code></synopsis>
   <p>the reference count of this hook</p>
 

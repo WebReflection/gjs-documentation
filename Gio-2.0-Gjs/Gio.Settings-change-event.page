@@ -11,7 +11,7 @@
   </info>
   <title>Gio.Settings::change-event</title>
   <synopsis><code mime="text/x-gjs">
-connect('change-event', function (settings, keys: Array(GLib.Quark), ): Boolean);
+connect('change-event', function (settings, keys: Array(<link href="../GLib-2.0/GLib.Quark.page">GLib.Quark</link>), ): Boolean);
   </code></synopsis>
   <p>The "change-event" signal is emitted once per change event that
 affects this settings object.  You should connect to this signal

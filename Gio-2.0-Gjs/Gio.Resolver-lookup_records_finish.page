@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Resolver::lookup_records_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_lookup_records_finish(result: Gio.AsyncResult): Array(GLib.Variant) {
+function vfunc_lookup_records_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): Array(<link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>) {
 }
   </code></synopsis>
   <p>Retrieves the result of a previous call to

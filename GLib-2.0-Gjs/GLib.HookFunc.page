@@ -10,7 +10,7 @@
   </info>
   <title>GLib.HookFunc</title>
   <synopsis><code mime="text/x-gjs">
-function onHookFunc(data: gpointer): void {
+function onHookFunc(data: void): void {
 }
   </code></synopsis>
   <p>Defines the type of a hook function that can be invoked

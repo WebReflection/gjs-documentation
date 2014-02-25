@@ -17,14 +17,14 @@
         <api:name>str</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gssize</api:type>
+        <api:type>Number(gssize)</api:type>
         <api:name>len</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.utf8_strdown</title>
   <synopsis><code mime="text/x-gjs">
-function utf8_strdown(str: String, len: gssize): String {
+function utf8_strdown(str: String, len: Number(gssize)): String {
     // Gjs wrapper for g_utf8_strdown()
 }
   </code></synopsis>

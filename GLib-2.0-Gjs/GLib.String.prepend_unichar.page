@@ -20,7 +20,7 @@
   </info>
   <title>GLib.String.prototype.prepend_unichar</title>
   <synopsis><code mime="text/x-gjs">
-function prepend_unichar(wc: String): GLib.String {
+function prepend_unichar(wc: String): <link xref="GLib.String">GLib.String</link> {
     // Gjs wrapper for g_string_prepend_unichar()
 }
   </code></synopsis>

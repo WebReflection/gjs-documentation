@@ -11,7 +11,7 @@
   </info>
   <title>GLib.HookList.hook_size</title>
   <synopsis><code mime="text/x-gjs">
-HookList.hook_size: Number (Read / Write)
+HookList.hook_size: Number(guint) (Read / Write)
   </code></synopsis>
   <p>the size of the <link xref="GLib.HookList"/> elements, in bytes</p>
 

@@ -24,7 +24,7 @@
   </info>
   <title>GLib.Hook.prepend</title>
   <synopsis><code mime="text/x-gjs">
-function prepend(hook_list: GLib.HookList, hook: GLib.Hook): void {
+function prepend(hook_list: <link xref="GLib.HookList">GLib.HookList</link>, hook: <link xref="GLib.Hook">GLib.Hook</link>): void {
     // Gjs wrapper for g_hook_prepend()
 }
   </code></synopsis>

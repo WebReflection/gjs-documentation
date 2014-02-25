@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusInterfaceVTable.get_property</title>
   <synopsis><code mime="text/x-gjs">
-DBusInterfaceVTable.get_property: Gio.DBusInterfaceGetPropertyFunc (Read)
+DBusInterfaceVTable.get_property: <link xref="Gio.DBusInterfaceGetPropertyFunc">Gio.DBusInterfaceGetPropertyFunc</link> (Read)
   </code></synopsis>
   <p>Function for getting a property.</p>
 

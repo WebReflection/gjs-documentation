@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::stop_mountable_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_stop_mountable_finish(result: Gio.AsyncResult): Boolean {
+function vfunc_stop_mountable_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): Boolean {
 }
   </code></synopsis>
   <p>Finishes an stop operation, see <link xref="Gio.File.stop_mountable"/> for details.</p>  <p>Finish an asynchronous stop operation that was started

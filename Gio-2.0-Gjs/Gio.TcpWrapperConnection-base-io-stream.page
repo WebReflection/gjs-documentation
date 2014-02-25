@@ -11,7 +11,7 @@
   </info>
   <title>Gio.TcpWrapperConnection.base_io_stream</title>
   <synopsis><code mime="text/x-gjs">
-TcpWrapperConnection.base_io_stream: Gio.IOStream (Read / Write / Construct Only)
+TcpWrapperConnection.base_io_stream: <link xref="Gio.IOStream">Gio.IOStream</link> (Read / Write / Construct Only)
   </code></synopsis>
 
 

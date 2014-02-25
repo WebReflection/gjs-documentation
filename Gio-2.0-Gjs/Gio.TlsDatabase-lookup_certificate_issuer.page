@@ -10,7 +10,7 @@
   </info>
   <title>Gio.TlsDatabase::lookup_certificate_issuer</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_lookup_certificate_issuer(certificate: Gio.TlsCertificate, interaction: Gio.TlsInteraction, flags: Gio.TlsDatabaseLookupFlags, cancellable: Gio.Cancellable): Gio.TlsCertificate {
+function vfunc_lookup_certificate_issuer(certificate: <link xref="Gio.TlsCertificate">Gio.TlsCertificate</link>, interaction: <link xref="Gio.TlsInteraction">Gio.TlsInteraction</link>, flags: <link xref="Gio.TlsDatabaseLookupFlags">Gio.TlsDatabaseLookupFlags</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): <link xref="Gio.TlsCertificate">Gio.TlsCertificate</link> {
 }
   </code></synopsis>
   <p>Lookup the issuer of <code>certificate</code> in the database.</p>  <p>The %issuer property

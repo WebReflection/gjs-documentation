@@ -24,7 +24,7 @@
   </info>
   <title>GLib.file_test</title>
   <synopsis><code mime="text/x-gjs">
-function file_test(filename: String, test: GLib.FileTest): Boolean {
+function file_test(filename: String, test: <link xref="GLib.FileTest">GLib.FileTest</link>): Boolean {
     // Gjs wrapper for g_file_test()
 }
   </code></synopsis>

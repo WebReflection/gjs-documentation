@@ -11,7 +11,7 @@
   </info>
   <title>Gio.ThreadedSocketService.max_threads</title>
   <synopsis><code mime="text/x-gjs">
-ThreadedSocketService.max_threads: Number (Read / Write / Construct Only)
+ThreadedSocketService.max_threads: Number(gint) (Read / Write / Construct Only)
   </code></synopsis>
 
 

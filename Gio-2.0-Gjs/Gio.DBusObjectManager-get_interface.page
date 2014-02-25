@@ -10,7 +10,7 @@
   </info>
   <title>Gio.DBusObjectManager::get_interface</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_interface(object_path: String, interface_name: String): Gio.DBusInterface {
+function vfunc_get_interface(object_path: String, interface_name: String): <link xref="Gio.DBusInterface">Gio.DBusInterface</link> {
 }
   </code></synopsis>
   <p>Gets the interface proxy for <code>interface_name</code> at <code>object_path</code>, if

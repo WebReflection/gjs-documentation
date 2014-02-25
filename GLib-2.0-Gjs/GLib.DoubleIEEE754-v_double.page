@@ -11,7 +11,7 @@
   </info>
   <title>GLib.DoubleIEEE754.v_double</title>
   <synopsis><code mime="text/x-gjs">
-DoubleIEEE754.v_double: Number (Read / Write)
+DoubleIEEE754.v_double: Number(gdouble) (Read / Write)
   </code></synopsis>
   <p>the double value</p>
 

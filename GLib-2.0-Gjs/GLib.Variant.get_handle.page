@@ -9,14 +9,14 @@
     <link xref="GLib.Variant" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>gint32</api:type>
+        <api:type>Number(gint32)</api:type>
       </api:returns>
       <api:name>g_variant_get_handle</api:name>
     </api:function>
   </info>
   <title>GLib.Variant.prototype.get_handle</title>
   <synopsis><code mime="text/x-gjs">
-function get_handle(): gint32 {
+function get_handle(): Number(gint32) {
     // Gjs wrapper for g_variant_get_handle()
 }
   </code></synopsis>

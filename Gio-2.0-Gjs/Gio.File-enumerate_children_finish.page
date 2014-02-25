@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::enumerate_children_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_enumerate_children_finish(res: Gio.AsyncResult): Gio.FileEnumerator {
+function vfunc_enumerate_children_finish(res: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): <link xref="Gio.FileEnumerator">Gio.FileEnumerator</link> {
 }
   </code></synopsis>
   <p>Finishes an async enumerate children operation.

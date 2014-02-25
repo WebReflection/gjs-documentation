@@ -33,14 +33,14 @@
         <api:name>message</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>is_error</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.Scanner.prototype.unexp_token</title>
   <synopsis><code mime="text/x-gjs">
-function unexp_token(expected_token: GLib.TokenType, identifier_spec: String, symbol_spec: String, symbol_name: String, message: String, is_error: Number): void {
+function unexp_token(expected_token: <link xref="GLib.TokenType">GLib.TokenType</link>, identifier_spec: String, symbol_spec: String, symbol_name: String, message: String, is_error: Number(gint)): void {
     // Gjs wrapper for g_scanner_unexp_token()
 }
   </code></synopsis>

@@ -24,7 +24,7 @@
   </info>
   <title>Gio.File.prototype.make_symbolic_link</title>
   <synopsis><code mime="text/x-gjs">
-function make_symbolic_link(symlink_value: String, cancellable: Gio.Cancellable): Boolean {
+function make_symbolic_link(symlink_value: String, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Boolean {
     // Gjs wrapper for g_file_make_symbolic_link()
 }
   </code></synopsis>

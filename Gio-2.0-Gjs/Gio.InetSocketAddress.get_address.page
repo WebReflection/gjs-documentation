@@ -16,7 +16,7 @@
   </info>
   <title>Gio.InetSocketAddress.prototype.get_address</title>
   <synopsis><code mime="text/x-gjs">
-function get_address(): Gio.InetAddress {
+function get_address(): <link xref="Gio.InetAddress">Gio.InetAddress</link> {
     // Gjs wrapper for g_inet_socket_address_get_address()
 }
   </code></synopsis>

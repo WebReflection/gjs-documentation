@@ -13,18 +13,18 @@
       </api:returns>
       <api:name>g_bytes_new_from_bytes</api:name>
       <api:arg>
-        <api:type>gsize</api:type>
+        <api:type>Number(gsize)</api:type>
         <api:name>offset</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gsize</api:type>
+        <api:type>Number(gsize)</api:type>
         <api:name>length</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.Bytes.prototype.new_from_bytes</title>
   <synopsis><code mime="text/x-gjs">
-function new_from_bytes(offset: gsize, length: gsize): GLib.Bytes {
+function new_from_bytes(offset: Number(gsize), length: Number(gsize)): <link xref="GLib.Bytes">GLib.Bytes</link> {
     // Gjs wrapper for g_bytes_new_from_bytes()
 }
   </code></synopsis>

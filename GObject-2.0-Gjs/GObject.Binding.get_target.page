@@ -16,7 +16,7 @@
   </info>
   <title>GObject.Binding.prototype.get_target</title>
   <synopsis><code mime="text/x-gjs">
-function get_target(): GObject.Object {
+function get_target(): <link xref="GObject.Object">GObject.Object</link> {
     // Gjs wrapper for g_binding_get_target()
 }
   </code></synopsis>

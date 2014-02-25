@@ -10,7 +10,7 @@
   </info>
   <title>Gio.FileInputStream::query_info</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_query_info(attributes: String, cancellable: Gio.Cancellable): Gio.FileInfo {
+function vfunc_query_info(attributes: String, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): <link xref="Gio.FileInfo">Gio.FileInfo</link> {
 }
   </code></synopsis>
   <p>Queries a file input stream the given <code>attributes</code>. This function blocks

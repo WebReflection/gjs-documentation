@@ -24,7 +24,7 @@
   </info>
   <title>Gio.TlsCertificate.prototype.verify</title>
   <synopsis><code mime="text/x-gjs">
-function verify(identity: Gio.SocketConnectable, trusted_ca: Gio.TlsCertificate): Gio.TlsCertificateFlags {
+function verify(identity: <link xref="Gio.SocketConnectable">Gio.SocketConnectable</link>, trusted_ca: <link xref="Gio.TlsCertificate">Gio.TlsCertificate</link>): <link xref="Gio.TlsCertificateFlags">Gio.TlsCertificateFlags</link> {
     // Gjs wrapper for g_tls_certificate_verify()
 }
   </code></synopsis>

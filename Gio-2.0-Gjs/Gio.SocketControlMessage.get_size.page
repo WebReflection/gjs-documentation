@@ -9,14 +9,14 @@
     <link xref="Gio.SocketControlMessage" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>gsize</api:type>
+        <api:type>Number(gsize)</api:type>
       </api:returns>
       <api:name>g_socket_control_message_get_size</api:name>
     </api:function>
   </info>
   <title>Gio.SocketControlMessage.prototype.get_size</title>
   <synopsis><code mime="text/x-gjs">
-function get_size(): gsize {
+function get_size(): Number(gsize) {
     // Gjs wrapper for g_socket_control_message_get_size()
 }
   </code></synopsis>

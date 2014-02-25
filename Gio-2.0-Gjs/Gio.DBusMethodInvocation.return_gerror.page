@@ -20,7 +20,7 @@
   </info>
   <title>Gio.DBusMethodInvocation.prototype.return_gerror</title>
   <synopsis><code mime="text/x-gjs">
-function return_gerror(error: GLib.Error): void {
+function return_gerror(error: <link href="../GLib-2.0/GLib.Error.page">GLib.Error</link>): void {
     // Gjs wrapper for g_dbus_method_invocation_return_gerror()
 }
   </code></synopsis>

@@ -24,7 +24,7 @@
   </info>
   <title>Gio.Socket.prototype.condition_wait</title>
   <synopsis><code mime="text/x-gjs">
-function condition_wait(condition: GLib.IOCondition, cancellable: Gio.Cancellable): Boolean {
+function condition_wait(condition: <link href="../GLib-2.0/GLib.IOCondition.page">GLib.IOCondition</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Boolean {
     // Gjs wrapper for g_socket_condition_wait()
 }
   </code></synopsis>

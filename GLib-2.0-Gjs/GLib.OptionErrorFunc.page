@@ -10,7 +10,7 @@
   </info>
   <title>GLib.OptionErrorFunc</title>
   <synopsis><code mime="text/x-gjs">
-function onOptionErrorFunc(context: GLib.OptionContext, group: GLib.OptionGroup, data: gpointer): void {
+function onOptionErrorFunc(context: <link xref="GLib.OptionContext">GLib.OptionContext</link>, group: <link xref="GLib.OptionGroup">GLib.OptionGroup</link>, data: void): void {
 }
   </code></synopsis>
   <p>The type of function to be used as callback when a parse error occurs.</p>

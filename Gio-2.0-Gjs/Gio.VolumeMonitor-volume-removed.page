@@ -11,7 +11,7 @@
   </info>
   <title>Gio.VolumeMonitor::volume-removed</title>
   <synopsis><code mime="text/x-gjs">
-connect('volume-removed', function (volumeMonitor, volume: Gio.Volume, ): void);
+connect('volume-removed', function (volumeMonitor, volume: <link xref="Gio.Volume">Gio.Volume</link>, ): void);
   </code></synopsis>
   <p>Emitted when a mountable volume is removed from the system.</p>
 

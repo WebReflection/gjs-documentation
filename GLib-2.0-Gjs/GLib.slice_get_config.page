@@ -9,7 +9,7 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint64)</api:type>
       </api:returns>
       <api:name>g_slice_get_config</api:name>
       <api:arg>
@@ -20,7 +20,7 @@
   </info>
   <title>GLib.slice_get_config</title>
   <synopsis><code mime="text/x-gjs">
-function slice_get_config(ckey: GLib.SliceConfig): Number {
+function slice_get_config(ckey: <link xref="GLib.SliceConfig">GLib.SliceConfig</link>): Number(gint64) {
     // Gjs wrapper for g_slice_get_config()
 }
   </code></synopsis>

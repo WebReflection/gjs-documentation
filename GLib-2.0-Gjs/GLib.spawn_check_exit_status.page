@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_spawn_check_exit_status</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>exit_status</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.spawn_check_exit_status</title>
   <synopsis><code mime="text/x-gjs">
-function spawn_check_exit_status(exit_status: Number): Boolean {
+function spawn_check_exit_status(exit_status: Number(gint)): Boolean {
     // Gjs wrapper for g_spawn_check_exit_status()
 }
   </code></synopsis>

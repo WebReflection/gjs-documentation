@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_string_set_size</api:name>
       <api:arg>
-        <api:type>gsize</api:type>
+        <api:type>Number(gsize)</api:type>
         <api:name>len</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.String.prototype.set_size</title>
   <synopsis><code mime="text/x-gjs">
-function set_size(len: gsize): GLib.String {
+function set_size(len: Number(gsize)): <link xref="GLib.String">GLib.String</link> {
     // Gjs wrapper for g_string_set_size()
 }
   </code></synopsis>

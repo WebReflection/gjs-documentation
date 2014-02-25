@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Proxy::connect_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_connect_finish(result: Gio.AsyncResult): Gio.IOStream {
+function vfunc_connect_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): <link xref="Gio.IOStream">Gio.IOStream</link> {
 }
   </code></synopsis>
   <p>See <link xref="Gio.Proxy.connect"/>.</p>

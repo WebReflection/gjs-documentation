@@ -10,7 +10,7 @@
   </info>
   <title>GLib.TestFixtureFunc</title>
   <synopsis><code mime="text/x-gjs">
-function onTestFixtureFunc(fixture: gpointer): void {
+function onTestFixtureFunc(fixture: void): void {
 }
   </code></synopsis>
   <p>The type used for functions that operate on test fixtures.  This is

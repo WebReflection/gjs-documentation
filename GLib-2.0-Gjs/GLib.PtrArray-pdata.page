@@ -11,7 +11,7 @@
   </info>
   <title>GLib.PtrArray.pdata</title>
   <synopsis><code mime="text/x-gjs">
-PtrArray.pdata: gpointer (Read)
+PtrArray.pdata: void (Read)
   </code></synopsis>
   <p>points to the array of pointers, which may be moved when the
     array grows</p>

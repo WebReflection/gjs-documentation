@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::set_display_name</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_set_display_name(display_name: String, cancellable: Gio.Cancellable): Gio.File {
+function vfunc_set_display_name(display_name: String, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): <link xref="Gio.File">Gio.File</link> {
 }
   </code></synopsis>
   <p>Renames <code>file</code> to the specified display name.</p>  <p>The display name is converted from UTF-8 to the correct encoding

@@ -16,7 +16,7 @@
   </info>
   <title>GLib.Source.prototype.ref</title>
   <synopsis><code mime="text/x-gjs">
-function ref(): GLib.Source {
+function ref(): <link xref="GLib.Source">GLib.Source</link> {
     // Gjs wrapper for g_source_ref()
 }
   </code></synopsis>

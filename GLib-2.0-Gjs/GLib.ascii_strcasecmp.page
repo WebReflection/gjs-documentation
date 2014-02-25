@@ -9,7 +9,7 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_ascii_strcasecmp</api:name>
       <api:arg>
@@ -24,7 +24,7 @@
   </info>
   <title>GLib.ascii_strcasecmp</title>
   <synopsis><code mime="text/x-gjs">
-function ascii_strcasecmp(s1: String, s2: String): Number {
+function ascii_strcasecmp(s1: String, s2: String): Number(gint) {
     // Gjs wrapper for g_ascii_strcasecmp()
 }
   </code></synopsis>

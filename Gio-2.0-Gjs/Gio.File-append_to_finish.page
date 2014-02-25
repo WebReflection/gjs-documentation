@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::append_to_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_append_to_finish(res: Gio.AsyncResult): Gio.FileOutputStream {
+function vfunc_append_to_finish(res: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): <link xref="Gio.FileOutputStream">Gio.FileOutputStream</link> {
 }
   </code></synopsis>
   <p>Finishes an asynchronous file append operation started with

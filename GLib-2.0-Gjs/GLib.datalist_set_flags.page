@@ -17,14 +17,14 @@
         <api:name>datalist</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
         <api:name>flags</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.datalist_set_flags</title>
   <synopsis><code mime="text/x-gjs">
-function datalist_set_flags(datalist: GLib.Data, flags: Number): void {
+function datalist_set_flags(datalist: <link xref="GLib.Data">GLib.Data</link>, flags: Number(guint)): void {
     // Gjs wrapper for g_datalist_set_flags()
 }
   </code></synopsis>

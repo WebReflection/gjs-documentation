@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::stop_mountable</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_stop_mountable(flags: Gio.MountUnmountFlags, mount_operation: Gio.MountOperation, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+function vfunc_stop_mountable(flags: <link xref="Gio.MountUnmountFlags">Gio.MountUnmountFlags</link>, mount_operation: <link xref="Gio.MountOperation">Gio.MountOperation</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
 }
   </code></synopsis>
   <p>Stops a file of type #G_FILE_TYPE_MOUNTABLE.</p>  <p>If <code>cancellable</code> is not <code>null</code>, then the operation can be cancelled by

@@ -10,7 +10,7 @@
   </info>
   <title>GLib.HookCompareFunc</title>
   <synopsis><code mime="text/x-gjs">
-function onHookCompareFunc(new_hook: GLib.Hook, sibling: GLib.Hook): Number {
+function onHookCompareFunc(new_hook: <link xref="GLib.Hook">GLib.Hook</link>, sibling: <link xref="GLib.Hook">GLib.Hook</link>): Number(gint) {
 }
   </code></synopsis>
   <p>Defines the type of function used to compare <link xref="GLib.Hook"/> elements in

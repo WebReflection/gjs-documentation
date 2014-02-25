@@ -20,7 +20,7 @@
   </info>
   <title>GObject.type_init_with_debug_flags</title>
   <synopsis><code mime="text/x-gjs">
-function type_init_with_debug_flags(debug_flags: GObject.TypeDebugFlags): void {
+function type_init_with_debug_flags(debug_flags: <link xref="GObject.TypeDebugFlags">GObject.TypeDebugFlags</link>): void {
     // Gjs wrapper for g_type_init_with_debug_flags()
 }
   </code></synopsis>

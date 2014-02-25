@@ -10,7 +10,7 @@
   </info>
   <title>GObject.BindingTransformFunc</title>
   <synopsis><code mime="text/x-gjs">
-function onBindingTransformFunc(binding: GObject.Binding, from_value: GObject.Value, to_value: GObject.Value): Boolean {
+function onBindingTransformFunc(binding: <link xref="GObject.Binding">GObject.Binding</link>, from_value: <link xref="GObject.Value">GObject.Value</link>, to_value: <link xref="GObject.Value">GObject.Value</link>): Boolean {
 }
   </code></synopsis>
   <p>A function to be called to transform <code>from_value</code> to <code>to_value</code>. If

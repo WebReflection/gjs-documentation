@@ -10,7 +10,7 @@
   </info>
   <title>Gio.AppInfo::equal</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_equal(appinfo2: Gio.AppInfo): Boolean {
+function vfunc_equal(appinfo2: <link xref="Gio.AppInfo">Gio.AppInfo</link>): Boolean {
 }
   </code></synopsis>
   <p>Checks if two #GAppInfos are equal.</p>

@@ -11,7 +11,7 @@
   </info>
   <title>GLib.Hook.destroy</title>
   <synopsis><code mime="text/x-gjs">
-Hook.destroy: GLib.DestroyNotify (Read)
+Hook.destroy: <link xref="GLib.DestroyNotify">GLib.DestroyNotify</link> (Read)
   </code></synopsis>
   <p>the default @finalize_hook function of a <link xref="GLib.HookList"/> calls
     this member of the hook that is being finalized</p>

@@ -9,14 +9,14 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint64)</api:type>
       </api:returns>
       <api:name>g_get_real_time</api:name>
     </api:function>
   </info>
   <title>GLib.get_real_time</title>
   <synopsis><code mime="text/x-gjs">
-function get_real_time(): Number {
+function get_real_time(): Number(gint64) {
     // Gjs wrapper for g_get_real_time()
 }
   </code></synopsis>

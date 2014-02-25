@@ -10,7 +10,7 @@
   </info>
   <title>Gio.DBusSubtreeDispatchFunc</title>
   <synopsis><code mime="text/x-gjs">
-function onDBusSubtreeDispatchFunc(connection: Gio.DBusConnection, sender: String, object_path: String, interface_name: String, node: String, out_user_data: gpointer): Gio.DBusInterfaceVTable {
+function onDBusSubtreeDispatchFunc(connection: <link xref="Gio.DBusConnection">Gio.DBusConnection</link>, sender: String, object_path: String, interface_name: String, node: String, out_user_data: void): <link xref="Gio.DBusInterfaceVTable">Gio.DBusInterfaceVTable</link> {
 }
   </code></synopsis>
   <p>The type of the @dispatch function in <link xref="Gio.DBusSubtreeVTable"/>.</p>  <p>Subtrees are flat.  <code>node</code>, if non-<code>null</code>, is always exactly one

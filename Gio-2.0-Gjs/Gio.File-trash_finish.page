@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::trash_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_trash_finish(result: Gio.AsyncResult): Boolean {
+function vfunc_trash_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): Boolean {
 }
   </code></synopsis>
   <p>Finishes an asynchronous file trashing operation, started with

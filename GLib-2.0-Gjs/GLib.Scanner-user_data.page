@@ -11,7 +11,7 @@
   </info>
   <title>GLib.Scanner.user_data</title>
   <synopsis><code mime="text/x-gjs">
-Scanner.user_data: gpointer (Read)
+Scanner.user_data: void (Read)
   </code></synopsis>
   <p>unused</p>
 

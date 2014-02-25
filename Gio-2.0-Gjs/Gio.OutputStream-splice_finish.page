@@ -10,7 +10,7 @@
   </info>
   <title>Gio.OutputStream::splice_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_splice_finish(result: Gio.AsyncResult): gssize {
+function vfunc_splice_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): Number(gssize) {
 }
   </code></synopsis>
   <p>Finishes an asynchronous stream splice operation.</p>

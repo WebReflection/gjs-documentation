@@ -28,7 +28,7 @@
   </info>
   <title>GLib.Variant.new_from_bytes</title>
   <synopsis><code mime="text/x-gjs">
-function new_from_bytes(type: GLib.VariantType, bytes: GLib.Bytes, trusted: Boolean): GLib.Variant {
+function new_from_bytes(type: <link xref="GLib.VariantType">GLib.VariantType</link>, bytes: <link xref="GLib.Bytes">GLib.Bytes</link>, trusted: Boolean): <link xref="GLib.Variant">GLib.Variant</link> {
     // Gjs wrapper for g_variant_new_from_bytes()
 }
   </code></synopsis>

@@ -10,7 +10,7 @@
   </info>
   <title>Gio.AsyncReadyCallback</title>
   <synopsis><code mime="text/x-gjs">
-function onAsyncReadyCallback(source_object: GObject.Object, res: Gio.AsyncResult): void {
+function onAsyncReadyCallback(source_object: <link href="../GObject-2.0/GObject.Object.page">GObject.Object</link>, res: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): void {
 }
   </code></synopsis>
   <p>Type definition for a function that will be called back when an asynchronous

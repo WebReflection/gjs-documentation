@@ -10,7 +10,7 @@
   </info>
   <title>Gio.MenuModel::get_n_items</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_n_items(): Number {
+function vfunc_get_n_items(): Number(gint) {
 }
   </code></synopsis>
   <p>Query the number of items in <code>model</code>.</p>

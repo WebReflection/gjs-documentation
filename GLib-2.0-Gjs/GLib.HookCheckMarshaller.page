@@ -10,7 +10,7 @@
   </info>
   <title>GLib.HookCheckMarshaller</title>
   <synopsis><code mime="text/x-gjs">
-function onHookCheckMarshaller(hook: GLib.Hook, marshal_data: gpointer): Boolean {
+function onHookCheckMarshaller(hook: <link xref="GLib.Hook">GLib.Hook</link>, marshal_data: void): Boolean {
 }
   </code></synopsis>
   <p>Defines the type of function used by <link xref="GLib.marshal_check"/>.</p>

@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Mount::remount_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_remount_finish(result: Gio.AsyncResult): Boolean {
+function vfunc_remount_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): Boolean {
 }
   </code></synopsis>
   <p>Finishes remounting a mount. If any errors occurred during the operation,

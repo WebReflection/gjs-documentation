@@ -11,7 +11,7 @@
   </info>
   <title>GLib.OptionEntry.arg</title>
   <synopsis><code mime="text/x-gjs">
-OptionEntry.arg: GLib.OptionArg (Read / Write)
+OptionEntry.arg: <link xref="GLib.OptionArg">GLib.OptionArg</link> (Read / Write)
   </code></synopsis>
   <p>The type of the option, as a <link xref="GLib.OptionArg"/>.</p>
 

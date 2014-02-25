@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::replace_readwrite</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_replace_readwrite(etag: String, make_backup: Boolean, flags: Gio.FileCreateFlags, cancellable: Gio.Cancellable): Gio.FileIOStream {
+function vfunc_replace_readwrite(etag: String, make_backup: Boolean, flags: <link xref="Gio.FileCreateFlags">Gio.FileCreateFlags</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): <link xref="Gio.FileIOStream">Gio.FileIOStream</link> {
 }
   </code></synopsis>
   <p>Returns an output stream for overwriting the file in readwrite mode,

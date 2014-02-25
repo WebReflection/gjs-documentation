@@ -9,7 +9,7 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
       </api:returns>
       <api:name>g_strv_length</api:name>
       <api:arg>
@@ -20,7 +20,7 @@
   </info>
   <title>GLib.strv_length</title>
   <synopsis><code mime="text/x-gjs">
-function strv_length(str_array: String): Number {
+function strv_length(str_array: String): Number(guint) {
     // Gjs wrapper for g_strv_length()
 }
   </code></synopsis>

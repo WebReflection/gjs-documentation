@@ -36,7 +36,7 @@
   </info>
   <title>GLib.spawn_sync</title>
   <synopsis><code mime="text/x-gjs">
-function spawn_sync(working_directory: String, argv: Array(String), envp: Array(String), flags: GLib.SpawnFlags, child_setup: GLib.SpawnChildSetupFunc): [ok: Boolean, standard_output: Array(guint8), standard_error: Array(guint8), exit_status: Number] {
+function spawn_sync(working_directory: String, argv: Array(String), envp: Array(String), flags: <link xref="GLib.SpawnFlags">GLib.SpawnFlags</link>, child_setup: <link xref="GLib.SpawnChildSetupFunc">GLib.SpawnChildSetupFunc</link>): [ok: Boolean, standard_output: Array(Number(guint8)), standard_error: Array(Number(guint8)), exit_status: Number(gint)] {
     // Gjs wrapper for g_spawn_sync()
 }
   </code></synopsis>

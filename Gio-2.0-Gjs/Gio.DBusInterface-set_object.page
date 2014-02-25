@@ -10,7 +10,7 @@
   </info>
   <title>Gio.DBusInterface::set_object</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_set_object(object: Gio.DBusObject): void {
+function vfunc_set_object(object: <link xref="Gio.DBusObject">Gio.DBusObject</link>): void {
 }
   </code></synopsis>
   <p>Sets the <link xref="Gio.DBusObject"/> for <code>interface_</code> to <code>object</code>.</p>  <p>Note that <code>interface_</code> will hold a weak reference to <code>object</code>.</p>

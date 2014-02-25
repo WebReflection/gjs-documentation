@@ -16,7 +16,7 @@
   </info>
   <title>Gio.FileIcon.prototype.get_file</title>
   <synopsis><code mime="text/x-gjs">
-function get_file(): Gio.File {
+function get_file(): <link xref="Gio.File">Gio.File</link> {
     // Gjs wrapper for g_file_icon_get_file()
 }
   </code></synopsis>

@@ -11,7 +11,7 @@
   </info>
   <title>Gio.InetAddressMask.length</title>
   <synopsis><code mime="text/x-gjs">
-InetAddressMask.length: Number (Read / Write)
+InetAddressMask.length: Number(guint) (Read / Write)
   </code></synopsis>
 
 

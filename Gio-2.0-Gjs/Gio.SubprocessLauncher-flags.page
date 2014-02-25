@@ -11,7 +11,7 @@
   </info>
   <title>Gio.SubprocessLauncher.flags</title>
   <synopsis><code mime="text/x-gjs">
-SubprocessLauncher.flags: Gio.SubprocessFlags (Write / Construct Only)
+SubprocessLauncher.flags: <link xref="Gio.SubprocessFlags">Gio.SubprocessFlags</link> (Write / Construct Only)
   </code></synopsis>
 
 

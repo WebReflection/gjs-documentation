@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Mount::get_default_location</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_default_location(): Gio.File {
+function vfunc_get_default_location(): <link xref="Gio.File">Gio.File</link> {
 }
   </code></synopsis>
   <p>Gets the default location of <code>mount</code>. The default location of the given

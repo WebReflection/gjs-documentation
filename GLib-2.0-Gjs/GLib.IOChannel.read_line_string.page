@@ -17,14 +17,14 @@
         <api:name>buffer</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gsize</api:type>
+        <api:type>Number(gsize)</api:type>
         <api:name>terminator_pos</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.IOChannel.prototype.read_line_string</title>
   <synopsis><code mime="text/x-gjs">
-function read_line_string(buffer: GLib.String, terminator_pos: gsize): GLib.IOStatus {
+function read_line_string(buffer: <link xref="GLib.String">GLib.String</link>, terminator_pos: Number(gsize)): <link xref="GLib.IOStatus">GLib.IOStatus</link> {
     // Gjs wrapper for g_io_channel_read_line_string()
 }
   </code></synopsis>

@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_test_queue_free</api:name>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>gfree_pointer</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.test_queue_free</title>
   <synopsis><code mime="text/x-gjs">
-function test_queue_free(gfree_pointer: gpointer): void {
+function test_queue_free(gfree_pointer: void): void {
     // Gjs wrapper for g_test_queue_free()
 }
   </code></synopsis>

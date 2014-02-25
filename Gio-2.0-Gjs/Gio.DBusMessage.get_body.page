@@ -16,7 +16,7 @@
   </info>
   <title>Gio.DBusMessage.prototype.get_body</title>
   <synopsis><code mime="text/x-gjs">
-function get_body(): GLib.Variant {
+function get_body(): <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link> {
     // Gjs wrapper for g_dbus_message_get_body()
 }
   </code></synopsis>

@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Application::local_command_line</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_local_command_line(arguments: Array(String)): [ok: Boolean, arguments: Array(String), exit_status: Number] {
+function vfunc_local_command_line(arguments: Array(String)): [ok: Boolean, arguments: Array(String), exit_status: Number(gint)] {
 }
   </code></synopsis>
   <p>This virtual function is always invoked in the local instance. It

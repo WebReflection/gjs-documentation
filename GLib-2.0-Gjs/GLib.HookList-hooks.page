@@ -11,7 +11,7 @@
   </info>
   <title>GLib.HookList.hooks</title>
   <synopsis><code mime="text/x-gjs">
-HookList.hooks: GLib.Hook (Read)
+HookList.hooks: <link xref="GLib.Hook">GLib.Hook</link> (Read)
   </code></synopsis>
   <p>the first <link xref="GLib.Hook"/> element in the list</p>
 

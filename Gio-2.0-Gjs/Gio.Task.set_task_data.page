@@ -13,7 +13,7 @@
       </api:returns>
       <api:name>g_task_set_task_data</api:name>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>task_data</api:name>
       </api:arg>
       <api:arg>
@@ -24,7 +24,7 @@
   </info>
   <title>Gio.Task.prototype.set_task_data</title>
   <synopsis><code mime="text/x-gjs">
-function set_task_data(task_data: gpointer, task_data_destroy: GLib.DestroyNotify): void {
+function set_task_data(task_data: void, task_data_destroy: <link href="../GLib-2.0/GLib.DestroyNotify.page">GLib.DestroyNotify</link>): void {
     // Gjs wrapper for g_task_set_task_data()
 }
   </code></synopsis>

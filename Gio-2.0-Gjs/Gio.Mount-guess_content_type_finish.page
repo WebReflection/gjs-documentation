@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Mount::guess_content_type_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_guess_content_type_finish(result: Gio.AsyncResult): Array(String) {
+function vfunc_guess_content_type_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): Array(String) {
 }
   </code></synopsis>
   <p>Finishes guessing content types of <code>mount</code>. If any errors occurred

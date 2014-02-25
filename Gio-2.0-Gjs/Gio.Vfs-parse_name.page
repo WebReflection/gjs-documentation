@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Vfs::parse_name</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_parse_name(parse_name: String): Gio.File {
+function vfunc_parse_name(parse_name: String): <link xref="Gio.File">Gio.File</link> {
 }
   </code></synopsis>
   <p>This operation never fails, but the returned object might

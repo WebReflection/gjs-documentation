@@ -11,7 +11,7 @@
   </info>
   <title>Gio.NetworkAddress.port</title>
   <synopsis><code mime="text/x-gjs">
-NetworkAddress.port: Number (Read / Write / Construct Only)
+NetworkAddress.port: Number(guint) (Read / Write / Construct Only)
   </code></synopsis>
 
 

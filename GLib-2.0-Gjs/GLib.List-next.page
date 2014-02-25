@@ -11,7 +11,7 @@
   </info>
   <title>GLib.List.next</title>
   <synopsis><code mime="text/x-gjs">
-List.next: Array(gpointer) (Read / Write)
+List.next: Array(void) (Read / Write)
   </code></synopsis>
   <p>contains the link to the next element in the list</p>
 

@@ -9,14 +9,14 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_main_depth</api:name>
     </api:function>
   </info>
   <title>GLib.main_depth</title>
   <synopsis><code mime="text/x-gjs">
-function main_depth(): Number {
+function main_depth(): Number(gint) {
     // Gjs wrapper for g_main_depth()
 }
   </code></synopsis>

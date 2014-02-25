@@ -11,7 +11,7 @@
   </info>
   <title>Gio.StaticResource.resource</title>
   <synopsis><code mime="text/x-gjs">
-StaticResource.resource: Gio.Resource (Read)
+StaticResource.resource: <link xref="Gio.Resource">Gio.Resource</link> (Read)
   </code></synopsis>
 
 

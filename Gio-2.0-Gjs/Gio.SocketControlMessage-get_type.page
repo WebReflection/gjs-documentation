@@ -10,7 +10,7 @@
   </info>
   <title>Gio.SocketControlMessage::get_type</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_type(): Number {
+function vfunc_get_type(): Number(gint) {
 }
   </code></synopsis>
 

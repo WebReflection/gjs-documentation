@@ -16,7 +16,7 @@
   </info>
   <title>GLib.Variant.prototype.dup_bytestring_array</title>
   <synopsis><code mime="text/x-gjs">
-function dup_bytestring_array(): [return_value: Array(String), length: gsize] {
+function dup_bytestring_array(): [return_value: Array(String), length: Number(gsize)] {
     // Gjs wrapper for g_variant_dup_bytestring_array()
 }
   </code></synopsis>

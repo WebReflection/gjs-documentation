@@ -13,22 +13,22 @@
       </api:returns>
       <api:name>g_hash_table_insert</api:name>
       <api:arg>
-        <api:type>{gpointer: gpointer}</api:type>
+        <api:type>{void: void}</api:type>
         <api:name>hash_table</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>key</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>value</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.HashTable.insert</title>
   <synopsis><code mime="text/x-gjs">
-function insert(hash_table: {gpointer: gpointer}, key: gpointer, value: gpointer): Boolean {
+function insert(hash_table: {void: void}, key: void, value: void): Boolean {
     // Gjs wrapper for g_hash_table_insert()
 }
   </code></synopsis>

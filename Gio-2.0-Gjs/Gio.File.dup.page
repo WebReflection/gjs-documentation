@@ -16,7 +16,7 @@
   </info>
   <title>Gio.File.prototype.dup</title>
   <synopsis><code mime="text/x-gjs">
-function dup(): Gio.File {
+function dup(): <link xref="Gio.File">Gio.File</link> {
     // Gjs wrapper for g_file_dup()
 }
   </code></synopsis>

@@ -16,7 +16,7 @@
   </info>
   <title>GLib.IOChannel.prototype.read_line</title>
   <synopsis><code mime="text/x-gjs">
-function read_line(): [return_value: GLib.IOStatus, str_return: String, length: gsize, terminator_pos: gsize] {
+function read_line(): [return_value: <link xref="GLib.IOStatus">GLib.IOStatus</link>, str_return: String, length: Number(gsize), terminator_pos: Number(gsize)] {
     // Gjs wrapper for g_io_channel_read_line()
 }
   </code></synopsis>

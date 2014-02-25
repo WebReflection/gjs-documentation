@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DataOutputStream.byte_order</title>
   <synopsis><code mime="text/x-gjs">
-DataOutputStream.byte_order: Gio.DataStreamByteOrder (Read / Write)
+DataOutputStream.byte_order: <link xref="Gio.DataStreamByteOrder">Gio.DataStreamByteOrder</link> (Read / Write)
   </code></synopsis>
   <p>Determines the byte ordering that is used when writing
 multi-byte entities (such as integers) to the stream.</p>

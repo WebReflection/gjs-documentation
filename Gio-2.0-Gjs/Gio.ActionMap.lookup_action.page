@@ -20,7 +20,7 @@
   </info>
   <title>Gio.ActionMap.prototype.lookup_action</title>
   <synopsis><code mime="text/x-gjs">
-function lookup_action(action_name: String): Gio.Action {
+function lookup_action(action_name: String): <link xref="Gio.Action">Gio.Action</link> {
     // Gjs wrapper for g_action_map_lookup_action()
 }
   </code></synopsis>

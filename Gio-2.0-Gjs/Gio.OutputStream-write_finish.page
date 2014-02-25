@@ -10,7 +10,7 @@
   </info>
   <title>Gio.OutputStream::write_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_write_finish(result: Gio.AsyncResult): gssize {
+function vfunc_write_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): Number(gssize) {
 }
   </code></synopsis>
   <p>Finishes a stream write operation.</p>

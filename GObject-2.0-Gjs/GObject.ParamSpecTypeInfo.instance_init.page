@@ -10,7 +10,7 @@
   </info>
   <title>GObject.ParamSpecTypeInfo.instance_init</title>
   <synopsis><code mime="text/x-gjs">
-function oninstance_init(pspec: GObject.ParamSpec): void {
+function oninstance_init(pspec: <link xref="GObject.ParamSpec">GObject.ParamSpec</link>): void {
 }
   </code></synopsis>
 

@@ -16,7 +16,7 @@
   </info>
   <title>Gio.DBusMethodInvocation.prototype.get_property_info</title>
   <synopsis><code mime="text/x-gjs">
-function get_property_info(): Gio.DBusPropertyInfo {
+function get_property_info(): <link xref="Gio.DBusPropertyInfo">Gio.DBusPropertyInfo</link> {
     // Gjs wrapper for g_dbus_method_invocation_get_property_info()
 }
   </code></synopsis>

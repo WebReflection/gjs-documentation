@@ -11,7 +11,7 @@
   </info>
   <title>Gio.SocketClient.type</title>
   <synopsis><code mime="text/x-gjs">
-SocketClient.type: Gio.SocketType (Read / Write / Construct)
+SocketClient.type: <link xref="Gio.SocketType">Gio.SocketType</link> (Read / Write / Construct)
   </code></synopsis>
 
 

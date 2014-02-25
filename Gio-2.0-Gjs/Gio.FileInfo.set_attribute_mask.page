@@ -20,7 +20,7 @@
   </info>
   <title>Gio.FileInfo.prototype.set_attribute_mask</title>
   <synopsis><code mime="text/x-gjs">
-function set_attribute_mask(mask: Gio.FileAttributeMatcher): void {
+function set_attribute_mask(mask: <link xref="Gio.FileAttributeMatcher">Gio.FileAttributeMatcher</link>): void {
     // Gjs wrapper for g_file_info_set_attribute_mask()
 }
   </code></synopsis>

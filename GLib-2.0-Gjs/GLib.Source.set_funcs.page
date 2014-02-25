@@ -20,7 +20,7 @@
   </info>
   <title>GLib.Source.prototype.set_funcs</title>
   <synopsis><code mime="text/x-gjs">
-function set_funcs(funcs: GLib.SourceFuncs): void {
+function set_funcs(funcs: <link xref="GLib.SourceFuncs">GLib.SourceFuncs</link>): void {
     // Gjs wrapper for g_source_set_funcs()
 }
   </code></synopsis>

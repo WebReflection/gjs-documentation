@@ -16,7 +16,7 @@
   </info>
   <title>Gio.ApplicationCommandLine.prototype.get_platform_data</title>
   <synopsis><code mime="text/x-gjs">
-function get_platform_data(): GLib.Variant {
+function get_platform_data(): <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link> {
     // Gjs wrapper for g_application_command_line_get_platform_data()
 }
   </code></synopsis>

@@ -9,7 +9,7 @@
     <link xref="GLib.Hook" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_hook_compare_ids</api:name>
       <api:arg>
@@ -20,7 +20,7 @@
   </info>
   <title>GLib.Hook.prototype.compare_ids</title>
   <synopsis><code mime="text/x-gjs">
-function compare_ids(sibling: GLib.Hook): Number {
+function compare_ids(sibling: <link xref="GLib.Hook">GLib.Hook</link>): Number(gint) {
     // Gjs wrapper for g_hook_compare_ids()
 }
   </code></synopsis>

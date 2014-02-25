@@ -20,7 +20,7 @@
   </info>
   <title>GLib.mem_set_vtable</title>
   <synopsis><code mime="text/x-gjs">
-function mem_set_vtable(vtable: GLib.MemVTable): void {
+function mem_set_vtable(vtable: <link xref="GLib.MemVTable">GLib.MemVTable</link>): void {
     // Gjs wrapper for g_mem_set_vtable()
 }
   </code></synopsis>

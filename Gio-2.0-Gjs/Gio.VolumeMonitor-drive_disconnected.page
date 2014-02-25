@@ -10,7 +10,7 @@
   </info>
   <title>Gio.VolumeMonitor::drive_disconnected</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_drive_disconnected(drive: Gio.Drive): void {
+function vfunc_drive_disconnected(drive: <link xref="Gio.Drive">Gio.Drive</link>): void {
 }
   </code></synopsis>
 

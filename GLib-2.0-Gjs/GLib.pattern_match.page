@@ -17,7 +17,7 @@
         <api:name>pspec</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
         <api:name>string_length</api:name>
       </api:arg>
       <api:arg>
@@ -32,7 +32,7 @@
   </info>
   <title>GLib.pattern_match</title>
   <synopsis><code mime="text/x-gjs">
-function pattern_match(pspec: GLib.PatternSpec, string_length: Number, string: String, string_reversed: String): Boolean {
+function pattern_match(pspec: <link xref="GLib.PatternSpec">GLib.PatternSpec</link>, string_length: Number(guint), string: String, string_reversed: String): Boolean {
     // Gjs wrapper for g_pattern_match()
 }
   </code></synopsis>

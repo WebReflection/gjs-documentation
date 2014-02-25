@@ -9,7 +9,7 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_mkdir_with_parents</api:name>
       <api:arg>
@@ -17,14 +17,14 @@
         <api:name>pathname</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>mode</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.mkdir_with_parents</title>
   <synopsis><code mime="text/x-gjs">
-function mkdir_with_parents(pathname: String, mode: Number): Number {
+function mkdir_with_parents(pathname: String, mode: Number(gint)): Number(gint) {
     // Gjs wrapper for g_mkdir_with_parents()
 }
   </code></synopsis>

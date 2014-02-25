@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Permission::release_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_release_finish(result: Gio.AsyncResult): Boolean {
+function vfunc_release_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): Boolean {
 }
   </code></synopsis>
   <p>Collects the result of attempting to release the permission

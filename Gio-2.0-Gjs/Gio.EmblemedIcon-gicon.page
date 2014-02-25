@@ -11,7 +11,7 @@
   </info>
   <title>Gio.EmblemedIcon.gicon</title>
   <synopsis><code mime="text/x-gjs">
-EmblemedIcon.gicon: Gio.Icon (Read / Write / Construct Only)
+EmblemedIcon.gicon: <link xref="Gio.Icon">Gio.Icon</link> (Read / Write / Construct Only)
   </code></synopsis>
 
 

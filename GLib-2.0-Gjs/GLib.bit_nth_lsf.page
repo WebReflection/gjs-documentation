@@ -9,22 +9,22 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_bit_nth_lsf</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gulong)</api:type>
         <api:name>mask</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>nth_bit</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.bit_nth_lsf</title>
   <synopsis><code mime="text/x-gjs">
-function bit_nth_lsf(mask: Number, nth_bit: Number): Number {
+function bit_nth_lsf(mask: Number(gulong), nth_bit: Number(gint)): Number(gint) {
     // Gjs wrapper for g_bit_nth_lsf()
 }
   </code></synopsis>

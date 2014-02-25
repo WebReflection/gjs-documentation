@@ -9,18 +9,18 @@
     <link xref="GLib.MainContext" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_main_context_query</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>max_priority</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.MainContext.prototype.query</title>
   <synopsis><code mime="text/x-gjs">
-function query(max_priority: Number): [return_value: Number, timeout_: Number, fds: Array(GLib.PollFD)] {
+function query(max_priority: Number(gint)): [return_value: Number(gint), timeout_: Number(gint), fds: Array(<link xref="GLib.PollFD">GLib.PollFD</link>)] {
     // Gjs wrapper for g_main_context_query()
 }
   </code></synopsis>

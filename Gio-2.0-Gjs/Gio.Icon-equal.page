@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Icon::equal</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_equal(icon2: Gio.Icon): Boolean {
+function vfunc_equal(icon2: <link xref="Gio.Icon">Gio.Icon</link>): Boolean {
 }
   </code></synopsis>
   <p>Checks if two icons are equal.</p>

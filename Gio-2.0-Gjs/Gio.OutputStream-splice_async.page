@@ -10,7 +10,7 @@
   </info>
   <title>Gio.OutputStream::splice_async</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_splice_async(source: Gio.InputStream, flags: Gio.OutputStreamSpliceFlags, io_priority: Number, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+function vfunc_splice_async(source: <link xref="Gio.InputStream">Gio.InputStream</link>, flags: <link xref="Gio.OutputStreamSpliceFlags">Gio.OutputStreamSpliceFlags</link>, io_priority: Number(gint), cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
 }
   </code></synopsis>
   <p>Splices a stream asynchronously.

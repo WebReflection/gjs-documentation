@@ -12,9 +12,7 @@
   <synopsis><code>
 const GLib = imports.gi.GLib;
 
-let doubleIEEE754 = new GLib.DoubleIEEE754({
-    <link xref='GLib.DoubleIEEE754-v_double'>v_double</link>: value
-});
+let doubleIEEE754 = new GLib.DoubleIEEE754();
   </code></synopsis>
   <p>The <link xref="GLib.FloatIEEE754"/> and <link xref="GLib.DoubleIEEE754"/> unions are used to access the sign,
 mantissa and exponent of IEEE floats and doubles. These unions are defined

@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_date_subtract_days</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
         <api:name>n_days</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.Date.prototype.subtract_days</title>
   <synopsis><code mime="text/x-gjs">
-function subtract_days(n_days: Number): void {
+function subtract_days(n_days: Number(guint)): void {
     // Gjs wrapper for g_date_subtract_days()
 }
   </code></synopsis>

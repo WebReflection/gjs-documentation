@@ -11,7 +11,7 @@
   </info>
   <title>Gio.UnixSocketAddress.path_as_array</title>
   <synopsis><code mime="text/x-gjs">
-UnixSocketAddress.path_as_array: Array(gpointer) (Read / Write / Construct Only)
+UnixSocketAddress.path_as_array: Array(void) (Read / Write / Construct Only)
   </code></synopsis>
 
 

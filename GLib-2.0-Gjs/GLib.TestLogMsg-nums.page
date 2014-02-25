@@ -11,7 +11,7 @@
   </info>
   <title>GLib.TestLogMsg.nums</title>
   <synopsis><code mime="text/x-gjs">
-TestLogMsg.nums: Number (Read / Write)
+TestLogMsg.nums: Number(glong) (Read / Write)
   </code></synopsis>
 
 

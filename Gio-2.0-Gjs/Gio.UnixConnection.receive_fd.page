@@ -9,7 +9,7 @@
     <link xref="Gio.UnixConnection" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_unix_connection_receive_fd</api:name>
       <api:arg>
@@ -20,7 +20,7 @@
   </info>
   <title>Gio.UnixConnection.prototype.receive_fd</title>
   <synopsis><code mime="text/x-gjs">
-function receive_fd(cancellable: Gio.Cancellable): Number {
+function receive_fd(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Number(gint) {
     // Gjs wrapper for g_unix_connection_receive_fd()
 }
   </code></synopsis>

@@ -16,7 +16,7 @@
   </info>
   <title>GLib.Date.prototype.get_month</title>
   <synopsis><code mime="text/x-gjs">
-function get_month(): GLib.DateMonth {
+function get_month(): <link xref="GLib.DateMonth">GLib.DateMonth</link> {
     // Gjs wrapper for g_date_get_month()
 }
   </code></synopsis>

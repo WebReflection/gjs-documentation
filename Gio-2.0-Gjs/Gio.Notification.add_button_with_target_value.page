@@ -28,7 +28,7 @@
   </info>
   <title>Gio.Notification.prototype.add_button_with_target_value</title>
   <synopsis><code mime="text/x-gjs">
-function add_button_with_target_value(label: String, action: String, target: GLib.Variant): void {
+function add_button_with_target_value(label: String, action: String, target: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>): void {
     // Gjs wrapper for g_notification_add_button_with_target_value()
 }
   </code></synopsis>

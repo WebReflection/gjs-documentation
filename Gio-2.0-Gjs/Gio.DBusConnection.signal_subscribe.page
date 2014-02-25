@@ -9,7 +9,7 @@
     <link xref="Gio.DBusConnection" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
       </api:returns>
       <api:name>g_dbus_connection_signal_subscribe</api:name>
       <api:arg>
@@ -44,7 +44,7 @@
   </info>
   <title>Gio.DBusConnection.prototype.signal_subscribe</title>
   <synopsis><code mime="text/x-gjs">
-function signal_subscribe(sender: String, interface_name: String, member: String, object_path: String, arg0: String, flags: Gio.DBusSignalFlags, callback: Gio.DBusSignalCallback): Number {
+function signal_subscribe(sender: String, interface_name: String, member: String, object_path: String, arg0: String, flags: <link xref="Gio.DBusSignalFlags">Gio.DBusSignalFlags</link>, callback: <link xref="Gio.DBusSignalCallback">Gio.DBusSignalCallback</link>): Number(guint) {
     // Gjs wrapper for g_dbus_connection_signal_subscribe()
 }
   </code></synopsis>

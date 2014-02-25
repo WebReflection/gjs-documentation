@@ -17,14 +17,14 @@
         <api:name>funcs</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>user_data</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.Source.remove_by_funcs_user_data</title>
   <synopsis><code mime="text/x-gjs">
-function remove_by_funcs_user_data(funcs: GLib.SourceFuncs, user_data: gpointer): Boolean {
+function remove_by_funcs_user_data(funcs: <link xref="GLib.SourceFuncs">GLib.SourceFuncs</link>, user_data: void): Boolean {
     // Gjs wrapper for g_source_remove_by_funcs_user_data()
 }
   </code></synopsis>

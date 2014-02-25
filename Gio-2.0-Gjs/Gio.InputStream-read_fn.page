@@ -10,7 +10,7 @@
   </info>
   <title>Gio.InputStream::read_fn</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_read_fn(buffer: gpointer, count: gsize, cancellable: Gio.Cancellable): gssize {
+function vfunc_read_fn(buffer: void, count: Number(gsize), cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Number(gssize) {
 }
   </code></synopsis>
 

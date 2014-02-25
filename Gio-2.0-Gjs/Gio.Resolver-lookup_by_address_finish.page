@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Resolver::lookup_by_address_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_lookup_by_address_finish(result: Gio.AsyncResult): String {
+function vfunc_lookup_by_address_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): String {
 }
   </code></synopsis>
   <p>Retrieves the result of a previous call to

@@ -9,15 +9,15 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
       </api:returns>
       <api:name>g_timeout_add_seconds_full</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>priority</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
         <api:name>interval</api:name>
       </api:arg>
       <api:arg>
@@ -28,7 +28,7 @@
   </info>
   <title>GLib.timeout_add_seconds_full</title>
   <synopsis><code mime="text/x-gjs">
-function timeout_add_seconds_full(priority: Number, interval: Number, function: GLib.SourceFunc): Number {
+function timeout_add_seconds_full(priority: Number(gint), interval: Number(guint), function: <link xref="GLib.SourceFunc">GLib.SourceFunc</link>): Number(guint) {
     // Gjs wrapper for g_timeout_add_seconds_full()
 }
   </code></synopsis>

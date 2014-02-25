@@ -11,7 +11,7 @@
   </info>
   <title>Gio.ZlibCompressor.level</title>
   <synopsis><code mime="text/x-gjs">
-ZlibCompressor.level: Number (Read / Write / Construct Only)
+ZlibCompressor.level: Number(gint) (Read / Write / Construct Only)
   </code></synopsis>
 
 

@@ -10,7 +10,7 @@
   </info>
   <title>GObject.TypePluginUse</title>
   <synopsis><code mime="text/x-gjs">
-function onTypePluginUse(plugin: GObject.TypePlugin): void {
+function onTypePluginUse(plugin: <link xref="GObject.TypePlugin">GObject.TypePlugin</link>): void {
 }
   </code></synopsis>
   <p>The type of the @use_plugin function of <link xref="GObject.TypePluginClass"/>, which gets called

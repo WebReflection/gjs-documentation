@@ -10,7 +10,7 @@
   </info>
   <title>Gio.OutputStream::flush</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_flush(cancellable: Gio.Cancellable): Boolean {
+function vfunc_flush(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Boolean {
 }
   </code></synopsis>
   <p>Forces a write of all user-space buffered data for the given

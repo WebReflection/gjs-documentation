@@ -10,7 +10,7 @@
   </info>
   <title>GLib.SourceCallbackFuncs.unref</title>
   <synopsis><code mime="text/x-gjs">
-function onunref(cb_data: gpointer): void {
+function onunref(cb_data: void): void {
 }
   </code></synopsis>
 

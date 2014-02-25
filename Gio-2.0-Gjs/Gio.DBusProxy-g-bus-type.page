@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusProxy.g_bus_type</title>
   <synopsis><code mime="text/x-gjs">
-DBusProxy.g_bus_type: Gio.BusType (Write / Construct Only)
+DBusProxy.g_bus_type: <link xref="Gio.BusType">Gio.BusType</link> (Write / Construct Only)
   </code></synopsis>
   <p>If this property is not <link xref="Gio.BusType"/>.none, then
 <link xref="Gio.g-connection"/> must be <code>null</code> and will be set to the

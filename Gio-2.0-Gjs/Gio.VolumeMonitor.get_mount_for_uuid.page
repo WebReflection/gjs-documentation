@@ -20,7 +20,7 @@
   </info>
   <title>Gio.VolumeMonitor.prototype.get_mount_for_uuid</title>
   <synopsis><code mime="text/x-gjs">
-function get_mount_for_uuid(uuid: String): Gio.Mount {
+function get_mount_for_uuid(uuid: String): <link xref="Gio.Mount">Gio.Mount</link> {
     // Gjs wrapper for g_volume_monitor_get_mount_for_uuid()
 }
   </code></synopsis>

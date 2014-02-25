@@ -10,7 +10,7 @@
   </info>
   <title>GObject.ObjectSetPropertyFunc</title>
   <synopsis><code mime="text/x-gjs">
-function onObjectSetPropertyFunc(object: GObject.Object, property_id: Number, value: GObject.Value, pspec: GObject.ParamSpec): void {
+function onObjectSetPropertyFunc(object: <link xref="GObject.Object">GObject.Object</link>, property_id: Number(guint), value: <link xref="GObject.Value">GObject.Value</link>, pspec: <link xref="GObject.ParamSpec">GObject.ParamSpec</link>): void {
 }
   </code></synopsis>
   <p>The type of the @set_property function of <link xref="GObject.ObjectClass"/>.</p>

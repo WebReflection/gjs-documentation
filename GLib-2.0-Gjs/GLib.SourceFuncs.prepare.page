@@ -10,7 +10,7 @@
   </info>
   <title>GLib.SourceFuncs.prepare</title>
   <synopsis><code mime="text/x-gjs">
-function onprepare(source: GLib.Source, timeout_: Number): Boolean {
+function onprepare(source: <link xref="GLib.Source">GLib.Source</link>, timeout_: Number(gint)): Boolean {
 }
   </code></synopsis>
 

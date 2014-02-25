@@ -24,7 +24,7 @@
   </info>
   <title>Gio.Menu.prototype.prepend_submenu</title>
   <synopsis><code mime="text/x-gjs">
-function prepend_submenu(label: String, submenu: Gio.MenuModel): void {
+function prepend_submenu(label: String, submenu: <link xref="Gio.MenuModel">Gio.MenuModel</link>): void {
     // Gjs wrapper for g_menu_prepend_submenu()
 }
   </code></synopsis>

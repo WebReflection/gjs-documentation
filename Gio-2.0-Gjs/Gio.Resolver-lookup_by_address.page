@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Resolver::lookup_by_address</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_lookup_by_address(address: Gio.InetAddress, cancellable: Gio.Cancellable): String {
+function vfunc_lookup_by_address(address: <link xref="Gio.InetAddress">Gio.InetAddress</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): String {
 }
   </code></synopsis>
   <p>Synchronously reverse-resolves <code>address</code> to determine its

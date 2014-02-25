@@ -10,7 +10,7 @@
   </info>
   <title>Gio.FileEnumerator::next_file</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_next_file(cancellable: Gio.Cancellable): Gio.FileInfo {
+function vfunc_next_file(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): <link xref="Gio.FileInfo">Gio.FileInfo</link> {
 }
   </code></synopsis>
   <p>Returns information for the next file in the enumerated object.

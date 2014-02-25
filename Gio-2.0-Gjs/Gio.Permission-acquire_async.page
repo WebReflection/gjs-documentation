@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Permission::acquire_async</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_acquire_async(cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+function vfunc_acquire_async(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
 }
   </code></synopsis>
   <p>Attempts to acquire the permission represented by <code>permission</code>.</p>  <p>This is the first half of the asynchronous version of

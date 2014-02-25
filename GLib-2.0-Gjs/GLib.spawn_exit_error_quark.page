@@ -16,7 +16,7 @@
   </info>
   <title>GLib.spawn_exit_error_quark</title>
   <synopsis><code mime="text/x-gjs">
-function spawn_exit_error_quark(): GLib.Quark {
+function spawn_exit_error_quark(): <link xref="GLib.Quark">GLib.Quark</link> {
     // Gjs wrapper for g_spawn_exit_error_quark()
 }
   </code></synopsis>

@@ -11,7 +11,7 @@
   </info>
   <title>Gio.InetAddress.family</title>
   <synopsis><code mime="text/x-gjs">
-InetAddress.family: Gio.SocketFamily (Read / Write / Construct Only)
+InetAddress.family: <link xref="Gio.SocketFamily">Gio.SocketFamily</link> (Read / Write / Construct Only)
   </code></synopsis>
 
 

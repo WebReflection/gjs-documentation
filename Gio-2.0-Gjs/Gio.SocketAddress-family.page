@@ -11,7 +11,7 @@
   </info>
   <title>Gio.SocketAddress.family</title>
   <synopsis><code mime="text/x-gjs">
-SocketAddress.family: Gio.SocketFamily (Read)
+SocketAddress.family: <link xref="Gio.SocketFamily">Gio.SocketFamily</link> (Read)
   </code></synopsis>
 
 

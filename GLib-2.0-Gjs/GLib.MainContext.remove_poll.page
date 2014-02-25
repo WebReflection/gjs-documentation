@@ -20,7 +20,7 @@
   </info>
   <title>GLib.MainContext.prototype.remove_poll</title>
   <synopsis><code mime="text/x-gjs">
-function remove_poll(fd: GLib.PollFD): void {
+function remove_poll(fd: <link xref="GLib.PollFD">GLib.PollFD</link>): void {
     // Gjs wrapper for g_main_context_remove_poll()
 }
   </code></synopsis>

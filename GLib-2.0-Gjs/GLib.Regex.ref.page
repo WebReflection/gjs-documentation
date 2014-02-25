@@ -16,7 +16,7 @@
   </info>
   <title>GLib.Regex.prototype.ref</title>
   <synopsis><code mime="text/x-gjs">
-function ref(): GLib.Regex {
+function ref(): <link xref="GLib.Regex">GLib.Regex</link> {
     // Gjs wrapper for g_regex_ref()
 }
   </code></synopsis>

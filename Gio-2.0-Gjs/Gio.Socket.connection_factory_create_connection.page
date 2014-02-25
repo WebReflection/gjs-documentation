@@ -16,7 +16,7 @@
   </info>
   <title>Gio.Socket.prototype.connection_factory_create_connection</title>
   <synopsis><code mime="text/x-gjs">
-function connection_factory_create_connection(): Gio.SocketConnection {
+function connection_factory_create_connection(): <link xref="Gio.SocketConnection">Gio.SocketConnection</link> {
     // Gjs wrapper for g_socket_connection_factory_create_connection()
 }
   </code></synopsis>

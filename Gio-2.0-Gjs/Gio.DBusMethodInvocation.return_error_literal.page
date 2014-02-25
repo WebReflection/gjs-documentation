@@ -17,7 +17,7 @@
         <api:name>domain</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>code</api:name>
       </api:arg>
       <api:arg>
@@ -28,7 +28,7 @@
   </info>
   <title>Gio.DBusMethodInvocation.prototype.return_error_literal</title>
   <synopsis><code mime="text/x-gjs">
-function return_error_literal(domain: GLib.Quark, code: Number, message: String): void {
+function return_error_literal(domain: <link href="../GLib-2.0/GLib.Quark.page">GLib.Quark</link>, code: Number(gint), message: String): void {
     // Gjs wrapper for g_dbus_method_invocation_return_error_literal()
 }
   </code></synopsis>

@@ -24,7 +24,7 @@
   </info>
   <title>Gio.SocketAddressEnumerator.prototype.next_async</title>
   <synopsis><code mime="text/x-gjs">
-function next_async(cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+function next_async(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
     // Gjs wrapper for g_socket_address_enumerator_next_async()
 }
   </code></synopsis>

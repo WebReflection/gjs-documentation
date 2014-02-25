@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_random_set_seed</api:name>
       <api:arg>
-        <api:type>guint32</api:type>
+        <api:type>Number(guint32)</api:type>
         <api:name>seed</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.random_set_seed</title>
   <synopsis><code mime="text/x-gjs">
-function random_set_seed(seed: guint32): void {
+function random_set_seed(seed: Number(guint32)): void {
     // Gjs wrapper for g_random_set_seed()
 }
   </code></synopsis>

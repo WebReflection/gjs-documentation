@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Mount::guess_content_type</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_guess_content_type(force_rescan: Boolean, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+function vfunc_guess_content_type(force_rescan: Boolean, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
 }
   </code></synopsis>
   <p>Tries to guess the type of content stored on <code>mount</code>. Returns one or

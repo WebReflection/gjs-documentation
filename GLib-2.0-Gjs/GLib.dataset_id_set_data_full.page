@@ -13,7 +13,7 @@
       </api:returns>
       <api:name>g_dataset_id_set_data_full</api:name>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>dataset_location</api:name>
       </api:arg>
       <api:arg>
@@ -21,7 +21,7 @@
         <api:name>key_id</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>data</api:name>
       </api:arg>
       <api:arg>
@@ -32,7 +32,7 @@
   </info>
   <title>GLib.dataset_id_set_data_full</title>
   <synopsis><code mime="text/x-gjs">
-function dataset_id_set_data_full(dataset_location: gpointer, key_id: GLib.Quark, data: gpointer, destroy_func: GLib.DestroyNotify): void {
+function dataset_id_set_data_full(dataset_location: void, key_id: <link xref="GLib.Quark">GLib.Quark</link>, data: void, destroy_func: <link xref="GLib.DestroyNotify">GLib.DestroyNotify</link>): void {
     // Gjs wrapper for g_dataset_id_set_data_full()
 }
   </code></synopsis>

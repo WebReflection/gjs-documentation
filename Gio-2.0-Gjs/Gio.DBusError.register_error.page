@@ -17,7 +17,7 @@
         <api:name>error_domain</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>error_code</api:name>
       </api:arg>
       <api:arg>
@@ -28,7 +28,7 @@
   </info>
   <title>Gio.register_error</title>
   <synopsis><code mime="text/x-gjs">
-function register_error(error_domain: GLib.Quark, error_code: Number, dbus_error_name: String): Boolean {
+function register_error(error_domain: <link href="../GLib-2.0/GLib.Quark.page">GLib.Quark</link>, error_code: Number(gint), dbus_error_name: String): Boolean {
     // Gjs wrapper for g_dbus_error_register_error()
 }
   </code></synopsis>

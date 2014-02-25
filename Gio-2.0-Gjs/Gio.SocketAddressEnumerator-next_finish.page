@@ -10,7 +10,7 @@
   </info>
   <title>Gio.SocketAddressEnumerator::next_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_next_finish(result: Gio.AsyncResult): Gio.SocketAddress {
+function vfunc_next_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): <link xref="Gio.SocketAddress">Gio.SocketAddress</link> {
 }
   </code></synopsis>
   <p>Retrieves the result of a completed call to

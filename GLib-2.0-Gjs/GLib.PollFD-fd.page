@@ -11,7 +11,7 @@
   </info>
   <title>GLib.PollFD.fd</title>
   <synopsis><code mime="text/x-gjs">
-PollFD.fd: Number (Read / Write)
+PollFD.fd: Number(gint) (Read / Write)
   </code></synopsis>
   <p>the file descriptor to poll (or a HANDLE on Win32)</p>
 

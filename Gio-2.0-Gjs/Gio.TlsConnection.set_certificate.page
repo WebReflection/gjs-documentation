@@ -20,7 +20,7 @@
   </info>
   <title>Gio.TlsConnection.prototype.set_certificate</title>
   <synopsis><code mime="text/x-gjs">
-function set_certificate(certificate: Gio.TlsCertificate): void {
+function set_certificate(certificate: <link xref="Gio.TlsCertificate">Gio.TlsCertificate</link>): void {
     // Gjs wrapper for g_tls_connection_set_certificate()
 }
   </code></synopsis>

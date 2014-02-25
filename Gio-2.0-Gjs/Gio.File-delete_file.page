@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::delete_file</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_delete_file(cancellable: Gio.Cancellable): Boolean {
+function vfunc_delete_file(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Boolean {
 }
   </code></synopsis>
   <p>Deletes a file. If the <code>file</code> is a directory, it will only be

@@ -10,7 +10,7 @@
   </info>
   <title>Gio.ActionGroup::change_action_state</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_change_action_state(action_name: String, value: GLib.Variant): void {
+function vfunc_change_action_state(action_name: String, value: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>): void {
 }
   </code></synopsis>
   <p>Request for the state of the named action within <code>action_group</code> to be

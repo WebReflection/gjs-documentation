@@ -10,7 +10,7 @@
   </info>
   <title>Gio.AppInfo::dup</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_dup(): Gio.AppInfo {
+function vfunc_dup(): <link xref="Gio.AppInfo">Gio.AppInfo</link> {
 }
   </code></synopsis>
   <p>Creates a duplicate of a <link xref="Gio.AppInfo"/>.</p>

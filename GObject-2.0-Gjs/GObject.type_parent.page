@@ -9,18 +9,18 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>GType</api:type>
+        <api:type>GObject.Type</api:type>
       </api:returns>
       <api:name>g_type_parent</api:name>
       <api:arg>
-        <api:type>GType</api:type>
+        <api:type>GObject.Type</api:type>
         <api:name>type</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GObject.type_parent</title>
   <synopsis><code mime="text/x-gjs">
-function type_parent(type: GType): GType {
+function type_parent(type: GObject.Type): GObject.Type {
     // Gjs wrapper for g_type_parent()
 }
   </code></synopsis>

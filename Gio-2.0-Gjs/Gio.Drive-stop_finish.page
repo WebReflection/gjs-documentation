@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Drive::stop_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_stop_finish(result: Gio.AsyncResult): Boolean {
+function vfunc_stop_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): Boolean {
 }
   </code></synopsis>
   <p>Finishes stopping a drive.</p>

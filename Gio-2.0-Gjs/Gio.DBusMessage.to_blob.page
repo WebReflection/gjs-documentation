@@ -9,7 +9,7 @@
     <link xref="Gio.DBusMessage" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Array(guint8)</api:type>
+        <api:type>Array(Number(guint8))</api:type>
       </api:returns>
       <api:name>g_dbus_message_to_blob</api:name>
       <api:arg>
@@ -20,7 +20,7 @@
   </info>
   <title>Gio.DBusMessage.prototype.to_blob</title>
   <synopsis><code mime="text/x-gjs">
-function to_blob(capabilities: Gio.DBusCapabilityFlags): [return_value: Array(guint8), out_size: gsize] {
+function to_blob(capabilities: <link xref="Gio.DBusCapabilityFlags">Gio.DBusCapabilityFlags</link>): [return_value: Array(Number(guint8)), out_size: Number(gsize)] {
     // Gjs wrapper for g_dbus_message_to_blob()
 }
   </code></synopsis>

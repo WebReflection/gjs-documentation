@@ -9,14 +9,14 @@
     <link xref="GLib.Scanner" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
       </api:returns>
       <api:name>g_scanner_cur_position</api:name>
     </api:function>
   </info>
   <title>GLib.Scanner.prototype.cur_position</title>
   <synopsis><code mime="text/x-gjs">
-function cur_position(): Number {
+function cur_position(): Number(guint) {
     // Gjs wrapper for g_scanner_cur_position()
 }
   </code></synopsis>

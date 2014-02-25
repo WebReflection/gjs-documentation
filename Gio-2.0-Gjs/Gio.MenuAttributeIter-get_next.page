@@ -10,7 +10,7 @@
   </info>
   <title>Gio.MenuAttributeIter::get_next</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_next(): [ok: Boolean, out_name: String, value: GLib.Variant] {
+function vfunc_get_next(): [ok: Boolean, out_name: String, value: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>] {
 }
   </code></synopsis>
   <p>This function combines <link xref="Gio.MenuAttributeIter.next"/> with

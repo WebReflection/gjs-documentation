@@ -11,7 +11,7 @@
   </info>
   <title>Gio.TlsCertificate.private_key</title>
   <synopsis><code mime="text/x-gjs">
-TlsCertificate.private_key: Array(gpointer) (Write / Construct Only)
+TlsCertificate.private_key: Array(void) (Write / Construct Only)
   </code></synopsis>
   <p>The DER (binary) encoded representation of the certificate's
 private key, in either PKCS#1 format or unencrypted PKCS#8

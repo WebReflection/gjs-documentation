@@ -20,7 +20,7 @@
   </info>
   <title>GLib.datalist_clear</title>
   <synopsis><code mime="text/x-gjs">
-function datalist_clear(datalist: GLib.Data): void {
+function datalist_clear(datalist: <link xref="GLib.Data">GLib.Data</link>): void {
     // Gjs wrapper for g_datalist_clear()
 }
   </code></synopsis>

@@ -11,7 +11,7 @@
   </info>
   <title>GLib.ScannerConfig.int_2_float</title>
   <synopsis><code mime="text/x-gjs">
-ScannerConfig.int_2_float: Number (Read / Write)
+ScannerConfig.int_2_float: Number(guint) (Read / Write)
   </code></synopsis>
   <p>specifies if all numbers are reported as <link xref="GLib.TokenType"/>.float
     (the default is <code>false</code>).</p>

@@ -11,7 +11,7 @@
   </info>
   <title>GLib.List.data</title>
   <synopsis><code mime="text/x-gjs">
-List.data: gpointer (Read)
+List.data: void (Read)
   </code></synopsis>
   <p>holds the element's data, which can be a pointer to any kind
        of data, or any integer value using the

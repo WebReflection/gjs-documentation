@@ -16,7 +16,7 @@
   </info>
   <title>GLib.Error.prototype.copy</title>
   <synopsis><code mime="text/x-gjs">
-function copy(): GLib.Error {
+function copy(): <link xref="GLib.Error">GLib.Error</link> {
     // Gjs wrapper for g_error_copy()
 }
   </code></synopsis>

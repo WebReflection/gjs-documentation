@@ -20,7 +20,7 @@
   </info>
   <title>GLib.DateTime.prototype.add</title>
   <synopsis><code mime="text/x-gjs">
-function add(timespan: GLib.TimeSpan): GLib.DateTime {
+function add(timespan: <link xref="GLib.TimeSpan">GLib.TimeSpan</link>): <link xref="GLib.DateTime">GLib.DateTime</link> {
     // Gjs wrapper for g_date_time_add()
 }
   </code></synopsis>

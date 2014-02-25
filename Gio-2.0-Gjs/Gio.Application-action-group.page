@@ -11,7 +11,7 @@
   </info>
   <title>Gio.Application.action_group</title>
   <synopsis><code mime="text/x-gjs">
-Application.action_group: Gio.ActionGroup (Write)
+Application.action_group: <link xref="Gio.ActionGroup">Gio.ActionGroup</link> (Write)
   </code></synopsis>
 
 

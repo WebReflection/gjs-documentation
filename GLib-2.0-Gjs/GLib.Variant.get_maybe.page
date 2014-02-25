@@ -16,7 +16,7 @@
   </info>
   <title>GLib.Variant.prototype.get_maybe</title>
   <synopsis><code mime="text/x-gjs">
-function get_maybe(): GLib.Variant {
+function get_maybe(): <link xref="GLib.Variant">GLib.Variant</link> {
     // Gjs wrapper for g_variant_get_maybe()
 }
   </code></synopsis>

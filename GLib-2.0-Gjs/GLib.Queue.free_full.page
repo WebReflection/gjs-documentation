@@ -20,7 +20,7 @@
   </info>
   <title>GLib.Queue.prototype.free_full</title>
   <synopsis><code mime="text/x-gjs">
-function free_full(free_func: GLib.DestroyNotify): void {
+function free_full(free_func: <link xref="GLib.DestroyNotify">GLib.DestroyNotify</link>): void {
     // Gjs wrapper for g_queue_free_full()
 }
   </code></synopsis>

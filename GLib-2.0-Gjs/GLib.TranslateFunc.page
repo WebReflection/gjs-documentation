@@ -10,7 +10,7 @@
   </info>
   <title>GLib.TranslateFunc</title>
   <synopsis><code mime="text/x-gjs">
-function onTranslateFunc(str: String, data: gpointer): String {
+function onTranslateFunc(str: String, data: void): String {
 }
   </code></synopsis>
   <p>The type of functions which are used to translate user-visible

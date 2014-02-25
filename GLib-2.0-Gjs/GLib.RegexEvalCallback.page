@@ -10,7 +10,7 @@
   </info>
   <title>GLib.RegexEvalCallback</title>
   <synopsis><code mime="text/x-gjs">
-function onRegexEvalCallback(match_info: GLib.MatchInfo, result: GLib.String): Boolean {
+function onRegexEvalCallback(match_info: <link xref="GLib.MatchInfo">GLib.MatchInfo</link>, result: <link xref="GLib.String">GLib.String</link>): Boolean {
 }
   </code></synopsis>
   <p>Specifies the type of the function passed to <link xref="GLib.replace_eval"/>.

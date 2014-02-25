@@ -10,7 +10,7 @@
   </info>
   <title>Gio.AppInfo::launch</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_launch(files: Array(Gio.File), launch_context: Gio.AppLaunchContext): Boolean {
+function vfunc_launch(files: Array(<link xref="Gio.File">Gio.File</link>), launch_context: <link xref="Gio.AppLaunchContext">Gio.AppLaunchContext</link>): Boolean {
 }
   </code></synopsis>
   <p>Launches the application. Passes <code>files</code> to the launched application

@@ -11,7 +11,7 @@
   </info>
   <title>Gio.Emblem.origin</title>
   <synopsis><code mime="text/x-gjs">
-Emblem.origin: Gio.EmblemOrigin (Read / Write / Construct Only)
+Emblem.origin: <link xref="Gio.EmblemOrigin">Gio.EmblemOrigin</link> (Read / Write / Construct Only)
   </code></synopsis>
 
 

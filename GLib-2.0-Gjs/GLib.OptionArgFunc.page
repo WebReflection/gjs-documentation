@@ -10,7 +10,7 @@
   </info>
   <title>GLib.OptionArgFunc</title>
   <synopsis><code mime="text/x-gjs">
-function onOptionArgFunc(option_name: String, value: String, data: gpointer): Boolean {
+function onOptionArgFunc(option_name: String, value: String, data: void): Boolean {
 }
   </code></synopsis>
   <p>The type of function to be passed as callback for <link xref="GLib.OptionArg"/>.callback

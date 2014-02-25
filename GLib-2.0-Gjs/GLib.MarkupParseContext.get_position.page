@@ -13,18 +13,18 @@
       </api:returns>
       <api:name>g_markup_parse_context_get_position</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>line_number</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>char_number</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.MarkupParseContext.prototype.get_position</title>
   <synopsis><code mime="text/x-gjs">
-function get_position(line_number: Number, char_number: Number): void {
+function get_position(line_number: Number(gint), char_number: Number(gint)): void {
     // Gjs wrapper for g_markup_parse_context_get_position()
 }
   </code></synopsis>

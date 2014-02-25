@@ -17,11 +17,11 @@
         <api:name>stop_chars</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gssize</api:type>
+        <api:type>Number(gssize)</api:type>
         <api:name>stop_chars_len</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>io_priority</api:name>
       </api:arg>
       <api:arg>
@@ -36,7 +36,7 @@
   </info>
   <title>Gio.DataInputStream.prototype.read_upto_async</title>
   <synopsis><code mime="text/x-gjs">
-function read_upto_async(stop_chars: String, stop_chars_len: gssize, io_priority: Number, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+function read_upto_async(stop_chars: String, stop_chars_len: Number(gssize), io_priority: Number(gint), cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
     // Gjs wrapper for g_data_input_stream_read_upto_async()
 }
   </code></synopsis>

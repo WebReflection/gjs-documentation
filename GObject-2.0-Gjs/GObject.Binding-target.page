@@ -11,7 +11,7 @@
   </info>
   <title>GObject.Binding.target</title>
   <synopsis><code mime="text/x-gjs">
-Binding.target: GObject.Object (Read / Write / Construct Only)
+Binding.target: <link xref="GObject.Object">GObject.Object</link> (Read / Write / Construct Only)
   </code></synopsis>
   <p>The <link xref="GObject.Object"/> that should be used as the target of the binding</p>
   <p>Since 2.26</p>

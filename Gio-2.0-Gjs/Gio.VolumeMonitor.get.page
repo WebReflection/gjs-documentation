@@ -16,7 +16,7 @@
   </info>
   <title>Gio.VolumeMonitor.get</title>
   <synopsis><code mime="text/x-gjs">
-function get(): Gio.VolumeMonitor {
+function get(): <link xref="Gio.VolumeMonitor">Gio.VolumeMonitor</link> {
     // Gjs wrapper for g_volume_monitor_get()
 }
   </code></synopsis>

@@ -16,7 +16,7 @@
   </info>
   <title>GLib.Date.prototype.get_weekday</title>
   <synopsis><code mime="text/x-gjs">
-function get_weekday(): GLib.DateWeekday {
+function get_weekday(): <link xref="GLib.DateWeekday">GLib.DateWeekday</link> {
     // Gjs wrapper for g_date_get_weekday()
 }
   </code></synopsis>

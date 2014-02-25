@@ -11,7 +11,7 @@
   </info>
   <title>Gio.StaticResource.next</title>
   <synopsis><code mime="text/x-gjs">
-StaticResource.next: Gio.StaticResource (Read)
+StaticResource.next: <link xref="Gio.StaticResource">Gio.StaticResource</link> (Read)
   </code></synopsis>
 
 

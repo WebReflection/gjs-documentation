@@ -36,7 +36,7 @@ invocations that arrive by way of D-Bus.</p>
   </synopsis>
   <synopsis>
     <title>Known Implementations</title>
-    <p>%s is implemented by DBusActionGroup</p>
+    <p>RemoteActionGroup is implemented by DBusActionGroup</p>
   </synopsis>
   <links type="topic" ui:expanded="true"
          api:type="function" api:mime="text/x-gjs"

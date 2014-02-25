@@ -13,18 +13,18 @@
       </api:returns>
       <api:name>g_file_set_contents</api:name>
       <api:arg>
-        <api:type>filename</api:type>
+        <api:type>String</api:type>
         <api:name>filename</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Array(guint8)</api:type>
+        <api:type>Array(Number(guint8))</api:type>
         <api:name>contents</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.file_set_contents</title>
   <synopsis><code mime="text/x-gjs">
-function file_set_contents(filename: filename, contents: Array(guint8)): Boolean {
+function file_set_contents(filename: String, contents: Array(Number(guint8))): Boolean {
     // Gjs wrapper for g_file_set_contents()
 }
   </code></synopsis>

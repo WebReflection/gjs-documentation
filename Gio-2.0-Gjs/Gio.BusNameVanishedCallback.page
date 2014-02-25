@@ -10,7 +10,7 @@
   </info>
   <title>Gio.BusNameVanishedCallback</title>
   <synopsis><code mime="text/x-gjs">
-function onBusNameVanishedCallback(connection: Gio.DBusConnection, name: String): void {
+function onBusNameVanishedCallback(connection: <link xref="Gio.DBusConnection">Gio.DBusConnection</link>, name: String): void {
 }
   </code></synopsis>
   <p>Invoked when the name being watched is known not to have to have a owner.</p>  <p>This is also invoked when the #GDBusConection on which the watch was

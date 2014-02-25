@@ -24,7 +24,7 @@
   </info>
   <title>Gio.SimpleProxyResolver.new</title>
   <synopsis><code mime="text/x-gjs">
-function new(default_proxy: String, ignore_hosts: String): Gio.ProxyResolver {
+function new(default_proxy: String, ignore_hosts: String): <link xref="Gio.ProxyResolver">Gio.ProxyResolver</link> {
     // Gjs wrapper for g_simple_proxy_resolver_new()
 }
   </code></synopsis>

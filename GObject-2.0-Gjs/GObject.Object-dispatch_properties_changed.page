@@ -10,7 +10,7 @@
   </info>
   <title>GObject.Object::dispatch_properties_changed</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_dispatch_properties_changed(n_pspecs: Number, pspecs: GObject.ParamSpec): void {
+function vfunc_dispatch_properties_changed(n_pspecs: Number(guint), pspecs: <link xref="GObject.ParamSpec">GObject.ParamSpec</link>): void {
 }
   </code></synopsis>
 

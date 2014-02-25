@@ -24,7 +24,7 @@
   </info>
   <title>Gio.AppInfo.prototype.launch_uris</title>
   <synopsis><code mime="text/x-gjs">
-function launch_uris(uris: Array(String), launch_context: Gio.AppLaunchContext): Boolean {
+function launch_uris(uris: Array(String), launch_context: <link xref="Gio.AppLaunchContext">Gio.AppLaunchContext</link>): Boolean {
     // Gjs wrapper for g_app_info_launch_uris()
 }
   </code></synopsis>

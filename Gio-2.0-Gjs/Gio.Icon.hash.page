@@ -9,18 +9,18 @@
     <link xref="Gio.Icon" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
       </api:returns>
       <api:name>g_icon_hash</api:name>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>icon</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>Gio.Icon.hash</title>
   <synopsis><code mime="text/x-gjs">
-function hash(icon: gpointer): Number {
+function hash(icon: void): Number(guint) {
     // Gjs wrapper for g_icon_hash()
 }
   </code></synopsis>

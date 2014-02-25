@@ -28,7 +28,7 @@
   </info>
   <title>Gio.File.prototype.copy_attributes</title>
   <synopsis><code mime="text/x-gjs">
-function copy_attributes(destination: Gio.File, flags: Gio.FileCopyFlags, cancellable: Gio.Cancellable): Boolean {
+function copy_attributes(destination: <link xref="Gio.File">Gio.File</link>, flags: <link xref="Gio.FileCopyFlags">Gio.FileCopyFlags</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Boolean {
     // Gjs wrapper for g_file_copy_attributes()
 }
   </code></synopsis>

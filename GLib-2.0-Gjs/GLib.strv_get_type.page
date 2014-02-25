@@ -9,14 +9,14 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>GType</api:type>
+        <api:type>GObject.Type</api:type>
       </api:returns>
       <api:name>g_strv_get_type</api:name>
     </api:function>
   </info>
   <title>GLib.strv_get_type</title>
   <synopsis><code mime="text/x-gjs">
-function strv_get_type(): GType {
+function strv_get_type(): GObject.Type {
     // Gjs wrapper for g_strv_get_type()
 }
   </code></synopsis>

@@ -9,7 +9,7 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>guint32</api:type>
+        <api:type>Number(guint32)</api:type>
       </api:returns>
       <api:name>g_unicode_script_to_iso15924</api:name>
       <api:arg>
@@ -20,7 +20,7 @@
   </info>
   <title>GLib.unicode_script_to_iso15924</title>
   <synopsis><code mime="text/x-gjs">
-function unicode_script_to_iso15924(script: GLib.UnicodeScript): guint32 {
+function unicode_script_to_iso15924(script: <link xref="GLib.UnicodeScript">GLib.UnicodeScript</link>): Number(guint32) {
     // Gjs wrapper for g_unicode_script_to_iso15924()
 }
   </code></synopsis>

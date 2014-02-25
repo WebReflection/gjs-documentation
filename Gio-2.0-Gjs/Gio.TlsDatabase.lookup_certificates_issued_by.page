@@ -13,7 +13,7 @@
       </api:returns>
       <api:name>g_tls_database_lookup_certificates_issued_by</api:name>
       <api:arg>
-        <api:type>Array(guint8)</api:type>
+        <api:type>Array(Number(guint8))</api:type>
         <api:name>issuer_raw_dn</api:name>
       </api:arg>
       <api:arg>
@@ -32,7 +32,7 @@
   </info>
   <title>Gio.TlsDatabase.prototype.lookup_certificates_issued_by</title>
   <synopsis><code mime="text/x-gjs">
-function lookup_certificates_issued_by(issuer_raw_dn: Array(guint8), interaction: Gio.TlsInteraction, flags: Gio.TlsDatabaseLookupFlags, cancellable: Gio.Cancellable): Array(Gio.TlsCertificate) {
+function lookup_certificates_issued_by(issuer_raw_dn: Array(Number(guint8)), interaction: <link xref="Gio.TlsInteraction">Gio.TlsInteraction</link>, flags: <link xref="Gio.TlsDatabaseLookupFlags">Gio.TlsDatabaseLookupFlags</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Array(<link xref="Gio.TlsCertificate">Gio.TlsCertificate</link>) {
     // Gjs wrapper for g_tls_database_lookup_certificates_issued_by()
 }
   </code></synopsis>

@@ -11,7 +11,7 @@
   </info>
   <title>GLib.String.len</title>
   <synopsis><code mime="text/x-gjs">
-String.len: gsize (Read / Write)
+String.len: Number(gsize) (Read / Write)
   </code></synopsis>
   <p>contains the length of the string, not including the
   terminating nul byte.</p>

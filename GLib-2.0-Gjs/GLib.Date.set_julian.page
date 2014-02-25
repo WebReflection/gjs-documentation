@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_date_set_julian</api:name>
       <api:arg>
-        <api:type>guint32</api:type>
+        <api:type>Number(guint32)</api:type>
         <api:name>julian_date</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.Date.prototype.set_julian</title>
   <synopsis><code mime="text/x-gjs">
-function set_julian(julian_date: guint32): void {
+function set_julian(julian_date: Number(guint32)): void {
     // Gjs wrapper for g_date_set_julian()
 }
   </code></synopsis>

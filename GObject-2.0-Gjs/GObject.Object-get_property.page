@@ -10,7 +10,7 @@
   </info>
   <title>GObject.Object::get_property</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_property(property_id: Number, value: GObject.Value, pspec: GObject.ParamSpec): void {
+function vfunc_get_property(property_id: Number(guint), value: <link xref="GObject.Value">GObject.Value</link>, pspec: <link xref="GObject.ParamSpec">GObject.ParamSpec</link>): void {
 }
   </code></synopsis>
 

@@ -11,7 +11,7 @@
   </info>
   <title>GObject.SignalQuery.param_types</title>
   <synopsis><code mime="text/x-gjs">
-SignalQuery.param_types: Array(GType) (Read / Write)
+SignalQuery.param_types: Array(GObject.Type) (Read / Write)
   </code></synopsis>
   <p>The individual parameter types for
  user callbacks, note that the effective callback signature is:

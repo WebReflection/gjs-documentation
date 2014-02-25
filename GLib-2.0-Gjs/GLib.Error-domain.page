@@ -11,7 +11,7 @@
   </info>
   <title>GLib.Error.domain</title>
   <synopsis><code mime="text/x-gjs">
-Error.domain: GLib.Quark (Read)
+Error.domain: <link xref="GLib.Quark">GLib.Quark</link> (Read)
   </code></synopsis>
   <p>error domain, e.g. #G_FILE_ERROR</p>
 

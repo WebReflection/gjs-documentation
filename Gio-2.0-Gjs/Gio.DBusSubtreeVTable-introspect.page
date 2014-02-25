@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusSubtreeVTable.introspect</title>
   <synopsis><code mime="text/x-gjs">
-DBusSubtreeVTable.introspect: Gio.DBusSubtreeIntrospectFunc (Read)
+DBusSubtreeVTable.introspect: <link xref="Gio.DBusSubtreeIntrospectFunc">Gio.DBusSubtreeIntrospectFunc</link> (Read)
   </code></synopsis>
   <p>Function for introspecting a child node.</p>
 

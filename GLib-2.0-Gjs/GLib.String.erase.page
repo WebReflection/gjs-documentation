@@ -13,18 +13,18 @@
       </api:returns>
       <api:name>g_string_erase</api:name>
       <api:arg>
-        <api:type>gssize</api:type>
+        <api:type>Number(gssize)</api:type>
         <api:name>pos</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gssize</api:type>
+        <api:type>Number(gssize)</api:type>
         <api:name>len</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.String.prototype.erase</title>
   <synopsis><code mime="text/x-gjs">
-function erase(pos: gssize, len: gssize): GLib.String {
+function erase(pos: Number(gssize), len: Number(gssize)): <link xref="GLib.String">GLib.String</link> {
     // Gjs wrapper for g_string_erase()
 }
   </code></synopsis>

@@ -9,14 +9,14 @@
     <link xref="Gio.CharsetConverter" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
       </api:returns>
       <api:name>g_charset_converter_get_num_fallbacks</api:name>
     </api:function>
   </info>
   <title>Gio.CharsetConverter.prototype.get_num_fallbacks</title>
   <synopsis><code mime="text/x-gjs">
-function get_num_fallbacks(): Number {
+function get_num_fallbacks(): Number(guint) {
     // Gjs wrapper for g_charset_converter_get_num_fallbacks()
 }
   </code></synopsis>

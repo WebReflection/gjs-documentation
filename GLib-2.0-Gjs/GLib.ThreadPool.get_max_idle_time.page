@@ -9,14 +9,14 @@
     <link xref="GLib.ThreadPool" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
       </api:returns>
       <api:name>g_thread_pool_get_max_idle_time</api:name>
     </api:function>
   </info>
   <title>GLib.ThreadPool.get_max_idle_time</title>
   <synopsis><code mime="text/x-gjs">
-function get_max_idle_time(): Number {
+function get_max_idle_time(): Number(guint) {
     // Gjs wrapper for g_thread_pool_get_max_idle_time()
 }
   </code></synopsis>

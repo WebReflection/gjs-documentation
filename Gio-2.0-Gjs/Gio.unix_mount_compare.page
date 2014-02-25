@@ -9,7 +9,7 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_unix_mount_compare</api:name>
       <api:arg>
@@ -24,7 +24,7 @@
   </info>
   <title>Gio.unix_mount_compare</title>
   <synopsis><code mime="text/x-gjs">
-function unix_mount_compare(mount1: Gio.UnixMountEntry, mount2: Gio.UnixMountEntry): Number {
+function unix_mount_compare(mount1: <link xref="Gio.UnixMountEntry">Gio.UnixMountEntry</link>, mount2: <link xref="Gio.UnixMountEntry">Gio.UnixMountEntry</link>): Number(gint) {
     // Gjs wrapper for g_unix_mount_compare()
 }
   </code></synopsis>

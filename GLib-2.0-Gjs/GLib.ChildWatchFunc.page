@@ -10,7 +10,7 @@
   </info>
   <title>GLib.ChildWatchFunc</title>
   <synopsis><code mime="text/x-gjs">
-function onChildWatchFunc(pid: GLib.Pid, status: Number): void {
+function onChildWatchFunc(pid: <link xref="GLib.Pid">GLib.Pid</link>, status: Number(gint)): void {
 }
   </code></synopsis>
   <p>Prototype of a #GChildWatchSource callback, called when a child

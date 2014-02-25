@@ -20,7 +20,7 @@
   </info>
   <title>GLib.String.prototype.assign</title>
   <synopsis><code mime="text/x-gjs">
-function assign(rval: String): GLib.String {
+function assign(rval: String): <link xref="GLib.String">GLib.String</link> {
     // Gjs wrapper for g_string_assign()
 }
   </code></synopsis>

@@ -28,7 +28,7 @@
   </info>
   <title>Gio.dbus_address_get_stream</title>
   <synopsis><code mime="text/x-gjs">
-function dbus_address_get_stream(address: String, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+function dbus_address_get_stream(address: String, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
     // Gjs wrapper for g_dbus_address_get_stream()
 }
   </code></synopsis>

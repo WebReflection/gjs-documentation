@@ -9,7 +9,7 @@
     <link xref="GLib.Bytes" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_bytes_compare</api:name>
       <api:arg>
@@ -20,7 +20,7 @@
   </info>
   <title>GLib.Bytes.prototype.compare</title>
   <synopsis><code mime="text/x-gjs">
-function compare(bytes2: GLib.Bytes): Number {
+function compare(bytes2: <link xref="GLib.Bytes">GLib.Bytes</link>): Number(gint) {
     // Gjs wrapper for g_bytes_compare()
 }
   </code></synopsis>

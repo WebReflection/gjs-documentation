@@ -11,7 +11,7 @@
   </info>
   <title>GObject.ValueArray.n_values</title>
   <synopsis><code mime="text/x-gjs">
-ValueArray.n_values: Number (Read / Write)
+ValueArray.n_values: Number(guint) (Read / Write)
   </code></synopsis>
   <p>number of values contained in the array</p>
 

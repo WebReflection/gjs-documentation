@@ -11,7 +11,7 @@
   </info>
   <title>GObject.ValueArray.values</title>
   <synopsis><code mime="text/x-gjs">
-ValueArray.values: GObject.Value (Read)
+ValueArray.values: <link xref="GObject.Value">GObject.Value</link> (Read)
   </code></synopsis>
   <p>array of values</p>
 

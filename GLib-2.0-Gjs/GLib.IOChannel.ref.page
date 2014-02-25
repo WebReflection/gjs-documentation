@@ -16,7 +16,7 @@
   </info>
   <title>GLib.IOChannel.prototype.ref</title>
   <synopsis><code mime="text/x-gjs">
-function ref(): GLib.IOChannel {
+function ref(): <link xref="GLib.IOChannel">GLib.IOChannel</link> {
     // Gjs wrapper for g_io_channel_ref()
 }
   </code></synopsis>

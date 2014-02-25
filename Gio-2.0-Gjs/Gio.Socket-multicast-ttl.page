@@ -11,7 +11,7 @@
   </info>
   <title>Gio.Socket.multicast_ttl</title>
   <synopsis><code mime="text/x-gjs">
-Socket.multicast_ttl: Number (Read / Write)
+Socket.multicast_ttl: Number(guint) (Read / Write)
   </code></synopsis>
   <p>Time-to-live out outgoing multicast packets</p>
   <p>Since 2.32</p>

@@ -9,18 +9,18 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
       </api:returns>
       <api:name>g_bit_storage</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gulong)</api:type>
         <api:name>number</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.bit_storage</title>
   <synopsis><code mime="text/x-gjs">
-function bit_storage(number: Number): Number {
+function bit_storage(number: Number(gulong)): Number(guint) {
     // Gjs wrapper for g_bit_storage()
 }
   </code></synopsis>

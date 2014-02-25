@@ -20,7 +20,7 @@
   </info>
   <title>Gio.Icon.new_for_string</title>
   <synopsis><code mime="text/x-gjs">
-function new_for_string(str: String): Gio.Icon {
+function new_for_string(str: String): <link xref="Gio.Icon">Gio.Icon</link> {
     // Gjs wrapper for g_icon_new_for_string()
 }
   </code></synopsis>

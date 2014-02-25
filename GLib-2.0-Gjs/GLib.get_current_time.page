@@ -20,7 +20,7 @@
   </info>
   <title>GLib.get_current_time</title>
   <synopsis><code mime="text/x-gjs">
-function get_current_time(result: GLib.TimeVal): void {
+function get_current_time(result: <link xref="GLib.TimeVal">GLib.TimeVal</link>): void {
     // Gjs wrapper for g_get_current_time()
 }
   </code></synopsis>

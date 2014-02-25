@@ -16,7 +16,7 @@
   </info>
   <title>Gio.DBusInterfaceSkeleton.prototype.get_flags</title>
   <synopsis><code mime="text/x-gjs">
-function get_flags(): Gio.DBusInterfaceSkeletonFlags {
+function get_flags(): <link xref="Gio.DBusInterfaceSkeletonFlags">Gio.DBusInterfaceSkeletonFlags</link> {
     // Gjs wrapper for g_dbus_interface_skeleton_get_flags()
 }
   </code></synopsis>

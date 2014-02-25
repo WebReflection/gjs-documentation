@@ -16,7 +16,7 @@
   </info>
   <title>Gio.ApplicationCommandLine.prototype.get_arguments</title>
   <synopsis><code mime="text/x-gjs">
-function get_arguments(): [return_value: Array(String), argc: Number] {
+function get_arguments(): [return_value: Array(String), argc: Number(gint)] {
     // Gjs wrapper for g_application_command_line_get_arguments()
 }
   </code></synopsis>

@@ -10,7 +10,7 @@
   </info>
   <title>GLib.IOFuncs.io_read</title>
   <synopsis><code mime="text/x-gjs">
-function onio_read(channel: GLib.IOChannel, buf: String, count: gsize, bytes_read: gsize): GLib.IOStatus {
+function onio_read(channel: <link xref="GLib.IOChannel">GLib.IOChannel</link>, buf: String, count: Number(gsize), bytes_read: Number(gsize)): <link xref="GLib.IOStatus">GLib.IOStatus</link> {
 }
   </code></synopsis>
 

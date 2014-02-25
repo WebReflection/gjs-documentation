@@ -11,7 +11,7 @@
   </info>
   <title>GLib.SList.data</title>
   <synopsis><code mime="text/x-gjs">
-SList.data: gpointer (Read)
+SList.data: void (Read)
   </code></synopsis>
   <p>holds the element's data, which can be a pointer to any kind
        of data, or any integer value using the

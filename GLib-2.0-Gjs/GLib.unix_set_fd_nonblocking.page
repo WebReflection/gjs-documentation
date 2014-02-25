@@ -13,7 +13,7 @@
       </api:returns>
       <api:name>g_unix_set_fd_nonblocking</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>fd</api:name>
       </api:arg>
       <api:arg>
@@ -24,7 +24,7 @@
   </info>
   <title>GLib.unix_set_fd_nonblocking</title>
   <synopsis><code mime="text/x-gjs">
-function unix_set_fd_nonblocking(fd: Number, nonblock: Boolean): Boolean {
+function unix_set_fd_nonblocking(fd: Number(gint), nonblock: Boolean): Boolean {
     // Gjs wrapper for g_unix_set_fd_nonblocking()
 }
   </code></synopsis>

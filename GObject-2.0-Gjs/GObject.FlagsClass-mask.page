@@ -11,7 +11,7 @@
   </info>
   <title>GObject.FlagsClass.mask</title>
   <synopsis><code mime="text/x-gjs">
-FlagsClass.mask: Number (Read / Write)
+FlagsClass.mask: Number(guint) (Read / Write)
   </code></synopsis>
   <p>a mask covering all possible values.</p>
 

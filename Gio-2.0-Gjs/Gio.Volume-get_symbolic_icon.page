@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Volume::get_symbolic_icon</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_symbolic_icon(): Gio.Icon {
+function vfunc_get_symbolic_icon(): <link xref="Gio.Icon">Gio.Icon</link> {
 }
   </code></synopsis>
   <p>Gets the symbolic icon for <code>volume</code>.</p>

@@ -20,7 +20,7 @@
   </info>
   <title>Gio.Action.parse_detailed_name</title>
   <synopsis><code mime="text/x-gjs">
-function parse_detailed_name(detailed_name: String): [ok: Boolean, action_name: String, target_value: GLib.Variant] {
+function parse_detailed_name(detailed_name: String): [ok: Boolean, action_name: String, target_value: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>] {
     // Gjs wrapper for g_action_parse_detailed_name()
 }
   </code></synopsis>

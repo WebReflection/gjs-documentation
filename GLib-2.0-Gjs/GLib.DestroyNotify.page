@@ -10,7 +10,7 @@
   </info>
   <title>GLib.DestroyNotify</title>
   <synopsis><code mime="text/x-gjs">
-function onDestroyNotify(data: gpointer): void {
+function onDestroyNotify(data: void): void {
 }
   </code></synopsis>
   <p>Specifies the type of function which is called when a data element

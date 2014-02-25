@@ -9,14 +9,14 @@
     <link xref="Gio.AsyncResult" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
       </api:returns>
       <api:name>g_async_result_get_user_data</api:name>
     </api:function>
   </info>
   <title>Gio.AsyncResult.prototype.get_user_data</title>
   <synopsis><code mime="text/x-gjs">
-function get_user_data(): gpointer {
+function get_user_data(): void {
     // Gjs wrapper for g_async_result_get_user_data()
 }
   </code></synopsis>

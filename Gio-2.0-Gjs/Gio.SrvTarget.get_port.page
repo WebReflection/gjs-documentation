@@ -9,14 +9,14 @@
     <link xref="Gio.SrvTarget" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>guint16</api:type>
+        <api:type>Number(guint16)</api:type>
       </api:returns>
       <api:name>g_srv_target_get_port</api:name>
     </api:function>
   </info>
   <title>Gio.SrvTarget.prototype.get_port</title>
   <synopsis><code mime="text/x-gjs">
-function get_port(): guint16 {
+function get_port(): Number(guint16) {
     // Gjs wrapper for g_srv_target_get_port()
 }
   </code></synopsis>

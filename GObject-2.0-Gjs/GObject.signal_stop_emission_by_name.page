@@ -24,7 +24,7 @@
   </info>
   <title>GObject.signal_stop_emission_by_name</title>
   <synopsis><code mime="text/x-gjs">
-function signal_stop_emission_by_name(instance: GObject.Object, detailed_signal: String): void {
+function signal_stop_emission_by_name(instance: <link xref="GObject.Object">GObject.Object</link>, detailed_signal: String): void {
     // Gjs wrapper for g_signal_stop_emission_by_name()
 }
   </code></synopsis>

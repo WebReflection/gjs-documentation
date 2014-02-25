@@ -11,7 +11,7 @@
   </info>
   <title>Gio.InetAddressMask.family</title>
   <synopsis><code mime="text/x-gjs">
-InetAddressMask.family: Gio.SocketFamily (Read)
+InetAddressMask.family: <link xref="Gio.SocketFamily">Gio.SocketFamily</link> (Read)
   </code></synopsis>
 
 

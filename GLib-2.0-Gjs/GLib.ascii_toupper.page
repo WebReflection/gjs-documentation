@@ -9,18 +9,18 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>String</api:type>
+        <api:type>Number(gchar)</api:type>
       </api:returns>
       <api:name>g_ascii_toupper</api:name>
       <api:arg>
-        <api:type>String</api:type>
+        <api:type>Number(gchar)</api:type>
         <api:name>c</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.ascii_toupper</title>
   <synopsis><code mime="text/x-gjs">
-function ascii_toupper(c: String): String {
+function ascii_toupper(c: Number(gchar)): Number(gchar) {
     // Gjs wrapper for g_ascii_toupper()
 }
   </code></synopsis>

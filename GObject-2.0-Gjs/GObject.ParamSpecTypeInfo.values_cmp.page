@@ -10,7 +10,7 @@
   </info>
   <title>GObject.ParamSpecTypeInfo.values_cmp</title>
   <synopsis><code mime="text/x-gjs">
-function onvalues_cmp(pspec: GObject.ParamSpec, value1: GObject.Value, value2: GObject.Value): Number {
+function onvalues_cmp(pspec: <link xref="GObject.ParamSpec">GObject.ParamSpec</link>, value1: <link xref="GObject.Value">GObject.Value</link>, value2: <link xref="GObject.Value">GObject.Value</link>): Number(gint) {
 }
   </code></synopsis>
 

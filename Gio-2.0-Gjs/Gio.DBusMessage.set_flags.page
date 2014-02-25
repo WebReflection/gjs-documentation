@@ -20,7 +20,7 @@
   </info>
   <title>Gio.DBusMessage.prototype.set_flags</title>
   <synopsis><code mime="text/x-gjs">
-function set_flags(flags: Gio.DBusMessageFlags): void {
+function set_flags(flags: <link xref="Gio.DBusMessageFlags">Gio.DBusMessageFlags</link>): void {
     // Gjs wrapper for g_dbus_message_set_flags()
 }
   </code></synopsis>

@@ -10,7 +10,7 @@
   </info>
   <title>GLib.IOFunc</title>
   <synopsis><code mime="text/x-gjs">
-function onIOFunc(source: GLib.IOChannel, condition: GLib.IOCondition, data: gpointer): Boolean {
+function onIOFunc(source: <link xref="GLib.IOChannel">GLib.IOChannel</link>, condition: <link xref="GLib.IOCondition">GLib.IOCondition</link>, data: void): Boolean {
 }
   </code></synopsis>
   <p>Specifies the type of function passed to <link xref="GLib.io_add_watch"/> or

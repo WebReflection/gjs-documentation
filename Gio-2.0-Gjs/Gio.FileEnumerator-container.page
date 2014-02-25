@@ -11,7 +11,7 @@
   </info>
   <title>Gio.FileEnumerator.container</title>
   <synopsis><code mime="text/x-gjs">
-FileEnumerator.container: Gio.File (Write / Construct Only)
+FileEnumerator.container: <link xref="Gio.File">Gio.File</link> (Write / Construct Only)
   </code></synopsis>
 
 

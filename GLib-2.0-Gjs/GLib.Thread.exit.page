@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_thread_exit</api:name>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>retval</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.Thread.exit</title>
   <synopsis><code mime="text/x-gjs">
-function exit(retval: gpointer): void {
+function exit(retval: void): void {
     // Gjs wrapper for g_thread_exit()
 }
   </code></synopsis>

@@ -20,7 +20,7 @@
   </info>
   <title>Gio.DBusObjectSkeleton.prototype.remove_interface</title>
   <synopsis><code mime="text/x-gjs">
-function remove_interface(interface_: Gio.DBusInterfaceSkeleton): void {
+function remove_interface(interface_: <link xref="Gio.DBusInterfaceSkeleton">Gio.DBusInterfaceSkeleton</link>): void {
     // Gjs wrapper for g_dbus_object_skeleton_remove_interface()
 }
   </code></synopsis>

@@ -9,7 +9,7 @@
     <link xref="GLib.Node" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_node_child_position</api:name>
       <api:arg>
@@ -20,7 +20,7 @@
   </info>
   <title>GLib.Node.prototype.child_position</title>
   <synopsis><code mime="text/x-gjs">
-function child_position(child: GLib.Node): Number {
+function child_position(child: <link xref="GLib.Node">GLib.Node</link>): Number(gint) {
     // Gjs wrapper for g_node_child_position()
 }
   </code></synopsis>

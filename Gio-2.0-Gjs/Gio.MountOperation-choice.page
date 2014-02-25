@@ -11,7 +11,7 @@
   </info>
   <title>Gio.MountOperation.choice</title>
   <synopsis><code mime="text/x-gjs">
-MountOperation.choice: Number (Read / Write)
+MountOperation.choice: Number(gint) (Read / Write)
   </code></synopsis>
   <p>The index of the user's choice when a question is asked during the
 mount operation. See the <link xref="Gio.MountOperation-ask-question"/> signal.</p>

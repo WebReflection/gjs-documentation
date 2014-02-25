@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_subprocess_launcher_take_stdin_fd</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>fd</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>Gio.SubprocessLauncher.prototype.take_stdin_fd</title>
   <synopsis><code mime="text/x-gjs">
-function take_stdin_fd(fd: Number): void {
+function take_stdin_fd(fd: Number(gint)): void {
     // Gjs wrapper for g_subprocess_launcher_take_stdin_fd()
 }
   </code></synopsis>

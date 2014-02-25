@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::poll_mountable</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_poll_mountable(cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+function vfunc_poll_mountable(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
 }
   </code></synopsis>
   <p>Polls a file of type #G_FILE_TYPE_MOUNTABLE.</p>  <p>If <code>cancellable</code> is not <code>null</code>, then the operation can be cancelled by

@@ -16,7 +16,7 @@
   </info>
   <title>GLib.Regex.prototype.get_compile_flags</title>
   <synopsis><code mime="text/x-gjs">
-function get_compile_flags(): GLib.RegexCompileFlags {
+function get_compile_flags(): <link xref="GLib.RegexCompileFlags">GLib.RegexCompileFlags</link> {
     // Gjs wrapper for g_regex_get_compile_flags()
 }
   </code></synopsis>

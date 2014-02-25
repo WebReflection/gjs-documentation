@@ -13,18 +13,18 @@
       </api:returns>
       <api:name>g_unix_open_pipe</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>fds</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>flags</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.unix_open_pipe</title>
   <synopsis><code mime="text/x-gjs">
-function unix_open_pipe(fds: Number, flags: Number): Boolean {
+function unix_open_pipe(fds: Number(gint), flags: Number(gint)): Boolean {
     // Gjs wrapper for g_unix_open_pipe()
 }
   </code></synopsis>

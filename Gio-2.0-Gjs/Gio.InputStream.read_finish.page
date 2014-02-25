@@ -9,7 +9,7 @@
     <link xref="Gio.InputStream" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>gssize</api:type>
+        <api:type>Number(gssize)</api:type>
       </api:returns>
       <api:name>g_input_stream_read_finish</api:name>
       <api:arg>
@@ -20,7 +20,7 @@
   </info>
   <title>Gio.InputStream.prototype.read_finish</title>
   <synopsis><code mime="text/x-gjs">
-function read_finish(result: Gio.AsyncResult): gssize {
+function read_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): Number(gssize) {
     // Gjs wrapper for g_input_stream_read_finish()
 }
   </code></synopsis>

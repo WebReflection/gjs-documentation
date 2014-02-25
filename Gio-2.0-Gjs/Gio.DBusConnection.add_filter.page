@@ -9,7 +9,7 @@
     <link xref="Gio.DBusConnection" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
       </api:returns>
       <api:name>g_dbus_connection_add_filter</api:name>
       <api:arg>
@@ -20,7 +20,7 @@
   </info>
   <title>Gio.DBusConnection.prototype.add_filter</title>
   <synopsis><code mime="text/x-gjs">
-function add_filter(filter_function: Gio.DBusMessageFilterFunction): Number {
+function add_filter(filter_function: <link xref="Gio.DBusMessageFilterFunction">Gio.DBusMessageFilterFunction</link>): Number(guint) {
     // Gjs wrapper for g_dbus_connection_add_filter()
 }
   </code></synopsis>

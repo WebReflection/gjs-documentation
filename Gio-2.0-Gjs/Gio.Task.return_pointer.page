@@ -13,7 +13,7 @@
       </api:returns>
       <api:name>g_task_return_pointer</api:name>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>result</api:name>
       </api:arg>
       <api:arg>
@@ -24,7 +24,7 @@
   </info>
   <title>Gio.Task.prototype.return_pointer</title>
   <synopsis><code mime="text/x-gjs">
-function return_pointer(result: gpointer, result_destroy: GLib.DestroyNotify): void {
+function return_pointer(result: void, result_destroy: <link href="../GLib-2.0/GLib.DestroyNotify.page">GLib.DestroyNotify</link>): void {
     // Gjs wrapper for g_task_return_pointer()
 }
   </code></synopsis>

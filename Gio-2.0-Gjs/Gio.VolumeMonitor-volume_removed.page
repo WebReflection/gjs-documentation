@@ -10,7 +10,7 @@
   </info>
   <title>Gio.VolumeMonitor::volume_removed</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_volume_removed(volume: Gio.Volume): void {
+function vfunc_volume_removed(volume: <link xref="Gio.Volume">Gio.Volume</link>): void {
 }
   </code></synopsis>
 

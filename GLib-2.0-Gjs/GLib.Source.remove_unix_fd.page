@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_source_remove_unix_fd</api:name>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>tag</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.Source.prototype.remove_unix_fd</title>
   <synopsis><code mime="text/x-gjs">
-function remove_unix_fd(tag: gpointer): void {
+function remove_unix_fd(tag: void): void {
     // Gjs wrapper for g_source_remove_unix_fd()
 }
   </code></synopsis>

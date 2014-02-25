@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_time_zone_is_dst</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>interval</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.TimeZone.prototype.is_dst</title>
   <synopsis><code mime="text/x-gjs">
-function is_dst(interval: Number): Boolean {
+function is_dst(interval: Number(gint)): Boolean {
     // Gjs wrapper for g_time_zone_is_dst()
 }
   </code></synopsis>

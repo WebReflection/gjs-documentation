@@ -10,7 +10,7 @@
   </info>
   <title>Gio.InputStream::skip</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_skip(count: gsize, cancellable: Gio.Cancellable): gssize {
+function vfunc_skip(count: Number(gsize), cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Number(gssize) {
 }
   </code></synopsis>
   <p>Tries to skip <code>count</code> bytes from the stream. Will block during the operation.</p>  <p>This is identical to <link xref="Gio.InputStream.read"/>, from a behaviour standpoint,

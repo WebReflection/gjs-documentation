@@ -20,7 +20,7 @@
   </info>
   <title>Gio.File.prototype.query_default_handler</title>
   <synopsis><code mime="text/x-gjs">
-function query_default_handler(cancellable: Gio.Cancellable): Gio.AppInfo {
+function query_default_handler(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): <link xref="Gio.AppInfo">Gio.AppInfo</link> {
     // Gjs wrapper for g_file_query_default_handler()
 }
   </code></synopsis>

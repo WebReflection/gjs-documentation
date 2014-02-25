@@ -20,7 +20,7 @@
   </info>
   <title>Gio.File.prototype.measure_disk_usage_finish</title>
   <synopsis><code mime="text/x-gjs">
-function measure_disk_usage_finish(result: Gio.AsyncResult): [ok: Boolean, disk_usage: Number, num_dirs: Number, num_files: Number] {
+function measure_disk_usage_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): [ok: Boolean, disk_usage: Number(guint64), num_dirs: Number(guint64), num_files: Number(guint64)] {
     // Gjs wrapper for g_file_measure_disk_usage_finish()
 }
   </code></synopsis>

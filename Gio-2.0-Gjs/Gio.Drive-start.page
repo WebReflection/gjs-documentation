@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Drive::start</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_start(flags: Gio.DriveStartFlags, mount_operation: Gio.MountOperation, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+function vfunc_start(flags: <link xref="Gio.DriveStartFlags">Gio.DriveStartFlags</link>, mount_operation: <link xref="Gio.MountOperation">Gio.MountOperation</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
 }
   </code></synopsis>
   <p>Asynchronously starts a drive.</p>  <p>When the operation is finished, <code>callback</code> will be called.

@@ -9,7 +9,7 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>gsize</api:type>
+        <api:type>Number(gsize)</api:type>
       </api:returns>
       <api:name>g_base64_encode_close</api:name>
       <api:arg>
@@ -17,18 +17,18 @@
         <api:name>break_lines</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>state</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>save</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.base64_encode_close</title>
   <synopsis><code mime="text/x-gjs">
-function base64_encode_close(break_lines: Boolean, state: Number, save: Number): [return_value: gsize, out: Array(guint8), state: Number, save: Number] {
+function base64_encode_close(break_lines: Boolean, state: Number(gint), save: Number(gint)): [return_value: Number(gsize), out: Array(Number(guint8)), state: Number(gint), save: Number(gint)] {
     // Gjs wrapper for g_base64_encode_close()
 }
   </code></synopsis>

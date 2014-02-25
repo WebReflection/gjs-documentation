@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::mount_mountable_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_mount_mountable_finish(result: Gio.AsyncResult): Gio.File {
+function vfunc_mount_mountable_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): <link xref="Gio.File">Gio.File</link> {
 }
   </code></synopsis>
   <p>Finishes a mount operation. See <link xref="Gio.File.mount_mountable"/> for details.</p>  <p>Finish an asynchronous mount operation that was started

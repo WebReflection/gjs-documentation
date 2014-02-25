@@ -16,7 +16,7 @@
   </info>
   <title>GLib.Bytes.prototype.ref</title>
   <synopsis><code mime="text/x-gjs">
-function ref(): GLib.Bytes {
+function ref(): <link xref="GLib.Bytes">GLib.Bytes</link> {
     // Gjs wrapper for g_bytes_ref()
 }
   </code></synopsis>

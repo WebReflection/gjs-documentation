@@ -20,7 +20,7 @@
   </info>
   <title>GLib.quark_from_string</title>
   <synopsis><code mime="text/x-gjs">
-function quark_from_string(string: String): GLib.Quark {
+function quark_from_string(string: String): <link xref="GLib.Quark">GLib.Quark</link> {
     // Gjs wrapper for g_quark_from_string()
 }
   </code></synopsis>

@@ -9,14 +9,14 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>gint32</api:type>
+        <api:type>Number(gint32)</api:type>
       </api:returns>
       <api:name>g_test_rand_int</api:name>
     </api:function>
   </info>
   <title>GLib.test_rand_int</title>
   <synopsis><code mime="text/x-gjs">
-function test_rand_int(): gint32 {
+function test_rand_int(): Number(gint32) {
     // Gjs wrapper for g_test_rand_int()
 }
   </code></synopsis>

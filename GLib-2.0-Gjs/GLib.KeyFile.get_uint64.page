@@ -9,7 +9,7 @@
     <link xref="GLib.KeyFile" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(guint64)</api:type>
       </api:returns>
       <api:name>g_key_file_get_uint64</api:name>
       <api:arg>
@@ -24,7 +24,7 @@
   </info>
   <title>GLib.KeyFile.prototype.get_uint64</title>
   <synopsis><code mime="text/x-gjs">
-function get_uint64(group_name: String, key: String): Number {
+function get_uint64(group_name: String, key: String): Number(guint64) {
     // Gjs wrapper for g_key_file_get_uint64()
 }
   </code></synopsis>

@@ -10,7 +10,7 @@
   </info>
   <title>Gio.BusNameAcquiredCallback</title>
   <synopsis><code mime="text/x-gjs">
-function onBusNameAcquiredCallback(connection: Gio.DBusConnection, name: String): void {
+function onBusNameAcquiredCallback(connection: <link xref="Gio.DBusConnection">Gio.DBusConnection</link>, name: String): void {
 }
   </code></synopsis>
   <p>Invoked when the name is acquired.</p>

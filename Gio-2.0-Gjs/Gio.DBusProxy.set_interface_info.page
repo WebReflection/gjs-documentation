@@ -20,7 +20,7 @@
   </info>
   <title>Gio.DBusProxy.prototype.set_interface_info</title>
   <synopsis><code mime="text/x-gjs">
-function set_interface_info(info: Gio.DBusInterfaceInfo): void {
+function set_interface_info(info: <link xref="Gio.DBusInterfaceInfo">Gio.DBusInterfaceInfo</link>): void {
     // Gjs wrapper for g_dbus_proxy_set_interface_info()
 }
   </code></synopsis>

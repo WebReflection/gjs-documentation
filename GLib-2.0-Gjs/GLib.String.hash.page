@@ -9,14 +9,14 @@
     <link xref="GLib.String" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
       </api:returns>
       <api:name>g_string_hash</api:name>
     </api:function>
   </info>
   <title>GLib.String.prototype.hash</title>
   <synopsis><code mime="text/x-gjs">
-function hash(): Number {
+function hash(): Number(guint) {
     // Gjs wrapper for g_string_hash()
 }
   </code></synopsis>

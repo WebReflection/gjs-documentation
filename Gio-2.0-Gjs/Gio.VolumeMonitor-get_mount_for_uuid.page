@@ -10,7 +10,7 @@
   </info>
   <title>Gio.VolumeMonitor::get_mount_for_uuid</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_mount_for_uuid(uuid: String): Gio.Mount {
+function vfunc_get_mount_for_uuid(uuid: String): <link xref="Gio.Mount">Gio.Mount</link> {
 }
   </code></synopsis>
   <p>Finds a <link xref="Gio.Mount"/> object by its UUID (see <link xref="Gio.Mount.get_uuid"/>)</p>

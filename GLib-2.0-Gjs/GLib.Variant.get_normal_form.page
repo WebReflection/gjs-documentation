@@ -16,7 +16,7 @@
   </info>
   <title>GLib.Variant.prototype.get_normal_form</title>
   <synopsis><code mime="text/x-gjs">
-function get_normal_form(): GLib.Variant {
+function get_normal_form(): <link xref="GLib.Variant">GLib.Variant</link> {
     // Gjs wrapper for g_variant_get_normal_form()
 }
   </code></synopsis>

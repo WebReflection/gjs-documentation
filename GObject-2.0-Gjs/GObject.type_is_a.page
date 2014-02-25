@@ -13,18 +13,18 @@
       </api:returns>
       <api:name>g_type_is_a</api:name>
       <api:arg>
-        <api:type>GType</api:type>
+        <api:type>GObject.Type</api:type>
         <api:name>type</api:name>
       </api:arg>
       <api:arg>
-        <api:type>GType</api:type>
+        <api:type>GObject.Type</api:type>
         <api:name>is_a_type</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GObject.type_is_a</title>
   <synopsis><code mime="text/x-gjs">
-function type_is_a(type: GType, is_a_type: GType): Boolean {
+function type_is_a(type: GObject.Type, is_a_type: GObject.Type): Boolean {
     // Gjs wrapper for g_type_is_a()
 }
   </code></synopsis>

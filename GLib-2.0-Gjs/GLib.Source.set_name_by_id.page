@@ -13,7 +13,7 @@
       </api:returns>
       <api:name>g_source_set_name_by_id</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
         <api:name>tag</api:name>
       </api:arg>
       <api:arg>
@@ -24,7 +24,7 @@
   </info>
   <title>GLib.Source.set_name_by_id</title>
   <synopsis><code mime="text/x-gjs">
-function set_name_by_id(tag: Number, name: String): void {
+function set_name_by_id(tag: Number(guint), name: String): void {
     // Gjs wrapper for g_source_set_name_by_id()
 }
   </code></synopsis>

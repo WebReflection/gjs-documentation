@@ -9,11 +9,11 @@
     <link xref="GObject.TypeModule" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>GType</api:type>
+        <api:type>GObject.Type</api:type>
       </api:returns>
       <api:name>g_type_module_register_type</api:name>
       <api:arg>
-        <api:type>GType</api:type>
+        <api:type>GObject.Type</api:type>
         <api:name>parent_type</api:name>
       </api:arg>
       <api:arg>
@@ -32,7 +32,7 @@
   </info>
   <title>GObject.TypeModule.prototype.register_type</title>
   <synopsis><code mime="text/x-gjs">
-function register_type(parent_type: GType, type_name: String, type_info: GObject.TypeInfo, flags: GObject.TypeFlags): GType {
+function register_type(parent_type: GObject.Type, type_name: String, type_info: <link xref="GObject.TypeInfo">GObject.TypeInfo</link>, flags: <link xref="GObject.TypeFlags">GObject.TypeFlags</link>): GObject.Type {
     // Gjs wrapper for g_type_module_register_type()
 }
   </code></synopsis>

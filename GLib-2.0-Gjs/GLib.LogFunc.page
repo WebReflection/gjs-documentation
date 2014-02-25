@@ -10,7 +10,7 @@
   </info>
   <title>GLib.LogFunc</title>
   <synopsis><code mime="text/x-gjs">
-function onLogFunc(log_domain: String, log_level: GLib.LogLevelFlags, message: String): void {
+function onLogFunc(log_domain: String, log_level: <link xref="GLib.LogLevelFlags">GLib.LogLevelFlags</link>, message: String): void {
 }
   </code></synopsis>
   <p>Specifies the prototype of log handler functions.</p>  <p>The default log handler, <link xref="GLib.log_default_handler"/>, automatically appends a

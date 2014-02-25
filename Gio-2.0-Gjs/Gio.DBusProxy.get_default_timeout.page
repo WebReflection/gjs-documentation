@@ -9,14 +9,14 @@
     <link xref="Gio.DBusProxy" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_dbus_proxy_get_default_timeout</api:name>
     </api:function>
   </info>
   <title>Gio.DBusProxy.prototype.get_default_timeout</title>
   <synopsis><code mime="text/x-gjs">
-function get_default_timeout(): Number {
+function get_default_timeout(): Number(gint) {
     // Gjs wrapper for g_dbus_proxy_get_default_timeout()
 }
   </code></synopsis>

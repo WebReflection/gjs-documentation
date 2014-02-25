@@ -11,7 +11,7 @@
   </info>
   <title>GLib.String.allocated_len</title>
   <synopsis><code mime="text/x-gjs">
-String.allocated_len: gsize (Read / Write)
+String.allocated_len: Number(gsize) (Read / Write)
   </code></synopsis>
   <p>the number of bytes that can be stored in the
   string before it needs to be reallocated. May be larger than @len.</p>

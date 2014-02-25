@@ -11,7 +11,7 @@
   </info>
   <title>Gio.MountOperation::show-processes</title>
   <synopsis><code mime="text/x-gjs">
-connect('show-processes', function (mountOperation, message: String, processes: Array(GLib.Pid), choices: Array(String), ): void);
+connect('show-processes', function (mountOperation, message: String, processes: Array(<link href="../GLib-2.0/GLib.Pid.page">GLib.Pid</link>), choices: Array(String), ): void);
   </code></synopsis>
   <p>Emitted when one or more processes are blocking an operation
 e.g. unmounting/ejecting a <link xref="Gio.Mount"/> or stopping a <link xref="Gio.Drive"/>.</p>  <p>Note that this signal may be emitted several times to update the

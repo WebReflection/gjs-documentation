@@ -10,7 +10,7 @@
   </info>
   <title>GLib.ScannerMsgFunc</title>
   <synopsis><code mime="text/x-gjs">
-function onScannerMsgFunc(scanner: GLib.Scanner, message: String, error: Boolean): void {
+function onScannerMsgFunc(scanner: <link xref="GLib.Scanner">GLib.Scanner</link>, message: String, error: Boolean): void {
 }
   </code></synopsis>
   <p>Specifies the type of the message handler function.</p>

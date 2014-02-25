@@ -11,7 +11,7 @@
   </info>
   <title>Gio.SimpleAction::activate</title>
   <synopsis><code mime="text/x-gjs">
-connect('activate', function (simpleAction, parameter: GLib.Variant, ): void);
+connect('activate', function (simpleAction, parameter: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>, ): void);
   </code></synopsis>
   <p>Indicates that the action was just activated.</p>  <p><code>parameter</code> will always be of the expected type.  In the event that
 an incorrect type was given, no signal will be emitted.</p>  <p>Since GLib 2.40, if no handler is connected to this signal then the

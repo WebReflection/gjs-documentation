@@ -11,7 +11,7 @@
   </info>
   <title>Gio.Application.flags</title>
   <synopsis><code mime="text/x-gjs">
-Application.flags: Gio.ApplicationFlags (Read / Write)
+Application.flags: <link xref="Gio.ApplicationFlags">Gio.ApplicationFlags</link> (Read / Write)
   </code></synopsis>
 
 

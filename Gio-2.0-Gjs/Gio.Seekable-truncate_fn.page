@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Seekable::truncate_fn</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_truncate_fn(offset: Number, cancellable: Gio.Cancellable): Boolean {
+function vfunc_truncate_fn(offset: Number(gint64), cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Boolean {
 }
   </code></synopsis>
   <p>Truncates a stream with a given #offset.</p>  <p>If <code>cancellable</code> is not <code>null</code>, then the operation can be cancelled by

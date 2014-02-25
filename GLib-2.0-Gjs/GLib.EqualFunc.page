@@ -10,7 +10,7 @@
   </info>
   <title>GLib.EqualFunc</title>
   <synopsis><code mime="text/x-gjs">
-function onEqualFunc(a: gpointer, b: gpointer): Boolean {
+function onEqualFunc(a: void, b: void): Boolean {
 }
   </code></synopsis>
   <p>Specifies the type of a function used to test two values for

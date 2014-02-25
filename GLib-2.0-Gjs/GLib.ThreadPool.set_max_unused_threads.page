@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_thread_pool_set_max_unused_threads</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>max_threads</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.ThreadPool.set_max_unused_threads</title>
   <synopsis><code mime="text/x-gjs">
-function set_max_unused_threads(max_threads: Number): void {
+function set_max_unused_threads(max_threads: Number(gint)): void {
     // Gjs wrapper for g_thread_pool_set_max_unused_threads()
 }
   </code></synopsis>

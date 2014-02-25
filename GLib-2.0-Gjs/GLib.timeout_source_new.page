@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_timeout_source_new</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
         <api:name>interval</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.timeout_source_new</title>
   <synopsis><code mime="text/x-gjs">
-function timeout_source_new(interval: Number): GLib.Source {
+function timeout_source_new(interval: Number(guint)): <link xref="GLib.Source">GLib.Source</link> {
     // Gjs wrapper for g_timeout_source_new()
 }
   </code></synopsis>

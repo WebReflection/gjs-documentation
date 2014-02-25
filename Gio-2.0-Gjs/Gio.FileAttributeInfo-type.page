@@ -11,7 +11,7 @@
   </info>
   <title>Gio.FileAttributeInfo.type</title>
   <synopsis><code mime="text/x-gjs">
-FileAttributeInfo.type: Gio.FileAttributeType (Read / Write)
+FileAttributeInfo.type: <link xref="Gio.FileAttributeType">Gio.FileAttributeType</link> (Read / Write)
   </code></synopsis>
   <p>the <link xref="Gio.FileAttributeType"/> type of the attribute.</p>
 

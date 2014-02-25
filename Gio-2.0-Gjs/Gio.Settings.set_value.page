@@ -24,7 +24,7 @@
   </info>
   <title>Gio.Settings.prototype.set_value</title>
   <synopsis><code mime="text/x-gjs">
-function set_value(key: String, value: GLib.Variant): Boolean {
+function set_value(key: String, value: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>): Boolean {
     // Gjs wrapper for g_settings_set_value()
 }
   </code></synopsis>

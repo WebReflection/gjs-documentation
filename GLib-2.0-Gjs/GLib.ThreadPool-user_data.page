@@ -11,7 +11,7 @@
   </info>
   <title>GLib.ThreadPool.user_data</title>
   <synopsis><code mime="text/x-gjs">
-ThreadPool.user_data: gpointer (Read)
+ThreadPool.user_data: void (Read)
   </code></synopsis>
   <p>the user data for the threads of this pool</p>
 

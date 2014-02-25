@@ -11,7 +11,7 @@
   </info>
   <title>GLib.ScannerConfig.skip_comment_multi</title>
   <synopsis><code mime="text/x-gjs">
-ScannerConfig.skip_comment_multi: Number (Read / Write)
+ScannerConfig.skip_comment_multi: Number(guint) (Read / Write)
   </code></synopsis>
   <p>specifies if multi-line comments are skipped
     and not returned as tokens (the default is <code>true</code>).</p>

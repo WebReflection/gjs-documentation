@@ -10,7 +10,7 @@
   </info>
   <title>Gio.IOStream::close_fn</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_close_fn(cancellable: Gio.Cancellable): Boolean {
+function vfunc_close_fn(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Boolean {
 }
   </code></synopsis>
 

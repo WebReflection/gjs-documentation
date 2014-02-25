@@ -20,7 +20,7 @@
   </info>
   <title>Gio.ActionGroup.prototype.get_action_parameter_type</title>
   <synopsis><code mime="text/x-gjs">
-function get_action_parameter_type(action_name: String): GLib.VariantType {
+function get_action_parameter_type(action_name: String): <link href="../GLib-2.0/GLib.VariantType.page">GLib.VariantType</link> {
     // Gjs wrapper for g_action_group_get_action_parameter_type()
 }
   </code></synopsis>

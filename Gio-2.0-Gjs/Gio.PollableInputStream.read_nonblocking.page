@@ -9,15 +9,15 @@
     <link xref="Gio.PollableInputStream" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>gssize</api:type>
+        <api:type>Number(gssize)</api:type>
       </api:returns>
       <api:name>g_pollable_input_stream_read_nonblocking</api:name>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>buffer</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gsize</api:type>
+        <api:type>Number(gsize)</api:type>
         <api:name>count</api:name>
       </api:arg>
       <api:arg>
@@ -28,7 +28,7 @@
   </info>
   <title>Gio.PollableInputStream.prototype.read_nonblocking</title>
   <synopsis><code mime="text/x-gjs">
-function read_nonblocking(buffer: gpointer, count: gsize, cancellable: Gio.Cancellable): gssize {
+function read_nonblocking(buffer: void, count: Number(gsize), cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Number(gssize) {
     // Gjs wrapper for g_pollable_input_stream_read_nonblocking()
 }
   </code></synopsis>

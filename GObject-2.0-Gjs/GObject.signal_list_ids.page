@@ -9,18 +9,18 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Array(Number)</api:type>
+        <api:type>Array(Number(guint))</api:type>
       </api:returns>
       <api:name>g_signal_list_ids</api:name>
       <api:arg>
-        <api:type>GType</api:type>
+        <api:type>GObject.Type</api:type>
         <api:name>itype</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GObject.signal_list_ids</title>
   <synopsis><code mime="text/x-gjs">
-function signal_list_ids(itype: GType): [return_value: Array(Number), n_ids: Number] {
+function signal_list_ids(itype: GObject.Type): [return_value: Array(Number(guint)), n_ids: Number(guint)] {
     // Gjs wrapper for g_signal_list_ids()
 }
   </code></synopsis>

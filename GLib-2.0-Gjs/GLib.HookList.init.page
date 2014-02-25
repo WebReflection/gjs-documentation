@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_hook_list_init</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
         <api:name>hook_size</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.HookList.prototype.init</title>
   <synopsis><code mime="text/x-gjs">
-function init(hook_size: Number): void {
+function init(hook_size: Number(guint)): void {
     // Gjs wrapper for g_hook_list_init()
 }
   </code></synopsis>

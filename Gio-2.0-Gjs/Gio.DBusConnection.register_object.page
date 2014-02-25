@@ -9,7 +9,7 @@
     <link xref="Gio.DBusConnection" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
       </api:returns>
       <api:name>g_dbus_connection_register_object</api:name>
       <api:arg>
@@ -25,7 +25,7 @@
         <api:name>vtable</api:name>
       </api:arg>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>user_data</api:name>
       </api:arg>
       <api:arg>
@@ -36,7 +36,7 @@
   </info>
   <title>Gio.DBusConnection.prototype.register_object</title>
   <synopsis><code mime="text/x-gjs">
-function register_object(object_path: String, interface_info: Gio.DBusInterfaceInfo, vtable: Gio.DBusInterfaceVTable, user_data: gpointer, user_data_free_func: GLib.DestroyNotify): Number {
+function register_object(object_path: String, interface_info: <link xref="Gio.DBusInterfaceInfo">Gio.DBusInterfaceInfo</link>, vtable: <link xref="Gio.DBusInterfaceVTable">Gio.DBusInterfaceVTable</link>, user_data: void, user_data_free_func: <link href="../GLib-2.0/GLib.DestroyNotify.page">GLib.DestroyNotify</link>): Number(guint) {
     // Gjs wrapper for g_dbus_connection_register_object()
 }
   </code></synopsis>

@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Action::get_state_hint</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_state_hint(): GLib.Variant {
+function vfunc_get_state_hint(): <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link> {
 }
   </code></synopsis>
   <p>Requests a hint about the valid range of values for the state of

@@ -11,7 +11,7 @@
   </info>
   <title>GLib.Hook.data</title>
   <synopsis><code mime="text/x-gjs">
-Hook.data: gpointer (Read)
+Hook.data: void (Read)
   </code></synopsis>
   <p>data which is passed to func when this hook is invoked</p>
 

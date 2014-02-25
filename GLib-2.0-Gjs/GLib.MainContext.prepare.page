@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_main_context_prepare</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>priority</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.MainContext.prototype.prepare</title>
   <synopsis><code mime="text/x-gjs">
-function prepare(priority: Number): Boolean {
+function prepare(priority: Number(gint)): Boolean {
     // Gjs wrapper for g_main_context_prepare()
 }
   </code></synopsis>

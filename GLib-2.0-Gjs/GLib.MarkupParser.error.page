@@ -10,7 +10,7 @@
   </info>
   <title>GLib.MarkupParser.error</title>
   <synopsis><code mime="text/x-gjs">
-function onerror(context: GLib.MarkupParseContext, error: GLib.Error): void {
+function onerror(context: <link xref="GLib.MarkupParseContext">GLib.MarkupParseContext</link>, error: <link xref="GLib.Error">GLib.Error</link>): void {
 }
   </code></synopsis>
 

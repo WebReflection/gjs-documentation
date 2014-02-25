@@ -10,7 +10,7 @@
   </info>
   <title>Gio.FileIOStream::tell</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_tell(): Number {
+function vfunc_tell(): Number(gint64) {
 }
   </code></synopsis>
 

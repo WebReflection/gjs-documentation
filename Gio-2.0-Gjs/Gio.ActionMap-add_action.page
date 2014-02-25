@@ -10,7 +10,7 @@
   </info>
   <title>Gio.ActionMap::add_action</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_add_action(action: Gio.Action): void {
+function vfunc_add_action(action: <link xref="Gio.Action">Gio.Action</link>): void {
 }
   </code></synopsis>
   <p>Adds an action to the <code>action_map</code>.</p>  <p>If the action map already contains an action with the same name

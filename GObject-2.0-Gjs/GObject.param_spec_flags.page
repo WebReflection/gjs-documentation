@@ -25,11 +25,11 @@
         <api:name>blurb</api:name>
       </api:arg>
       <api:arg>
-        <api:type>GType</api:type>
+        <api:type>GObject.Type</api:type>
         <api:name>flags_type</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
         <api:name>default_value</api:name>
       </api:arg>
       <api:arg>
@@ -40,7 +40,7 @@
   </info>
   <title>GObject.param_spec_flags</title>
   <synopsis><code mime="text/x-gjs">
-function param_spec_flags(name: String, nick: String, blurb: String, flags_type: GType, default_value: Number, flags: GObject.ParamFlags): GObject.ParamSpec {
+function param_spec_flags(name: String, nick: String, blurb: String, flags_type: GObject.Type, default_value: Number(guint), flags: <link xref="GObject.ParamFlags">GObject.ParamFlags</link>): <link xref="GObject.ParamSpec">GObject.ParamSpec</link> {
     // Gjs wrapper for g_param_spec_flags()
 }
   </code></synopsis>

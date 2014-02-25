@@ -11,7 +11,7 @@
   </info>
   <title>GLib.Scanner.qdata</title>
   <synopsis><code mime="text/x-gjs">
-Scanner.qdata: GLib.Data (Read)
+Scanner.qdata: <link xref="GLib.Data">GLib.Data</link> (Read)
   </code></synopsis>
   <p>quarked data</p>
 

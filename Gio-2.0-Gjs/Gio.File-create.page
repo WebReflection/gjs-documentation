@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::create</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_create(flags: Gio.FileCreateFlags, cancellable: Gio.Cancellable): Gio.FileOutputStream {
+function vfunc_create(flags: <link xref="Gio.FileCreateFlags">Gio.FileCreateFlags</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): <link xref="Gio.FileOutputStream">Gio.FileOutputStream</link> {
 }
   </code></synopsis>
   <p>Creates a new file and returns an output stream for writing to it.

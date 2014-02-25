@@ -20,7 +20,7 @@
   </info>
   <title>Gio.File.prototype.eject_mountable_with_operation_finish</title>
   <synopsis><code mime="text/x-gjs">
-function eject_mountable_with_operation_finish(result: Gio.AsyncResult): Boolean {
+function eject_mountable_with_operation_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): Boolean {
     // Gjs wrapper for g_file_eject_mountable_with_operation_finish()
 }
   </code></synopsis>

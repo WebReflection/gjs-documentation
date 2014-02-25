@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_format_size_for_display</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint64)</api:type>
         <api:name>size</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.format_size_for_display</title>
   <synopsis><code mime="text/x-gjs">
-function format_size_for_display(size: Number): String {
+function format_size_for_display(size: Number(gint64)): String {
     // Gjs wrapper for g_format_size_for_display()
 }
   </code></synopsis>

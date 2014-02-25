@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_dataset_destroy</api:name>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>dataset_location</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.dataset_destroy</title>
   <synopsis><code mime="text/x-gjs">
-function dataset_destroy(dataset_location: gpointer): void {
+function dataset_destroy(dataset_location: void): void {
     // Gjs wrapper for g_dataset_destroy()
 }
   </code></synopsis>

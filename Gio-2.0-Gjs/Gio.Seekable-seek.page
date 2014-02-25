@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Seekable::seek</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_seek(offset: Number, type: GLib.SeekType, cancellable: Gio.Cancellable): Boolean {
+function vfunc_seek(offset: Number(gint64), type: <link href="../GLib-2.0/GLib.SeekType.page">GLib.SeekType</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Boolean {
 }
   </code></synopsis>
   <p>Seeks in the stream by the given <code>offset</code>, modified by <code>type</code>.</p>  <p>Attempting to seek past the end of the stream will have different

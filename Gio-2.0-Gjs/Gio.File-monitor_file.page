@@ -10,7 +10,7 @@
   </info>
   <title>Gio.File::monitor_file</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_monitor_file(flags: Gio.FileMonitorFlags, cancellable: Gio.Cancellable): Gio.FileMonitor {
+function vfunc_monitor_file(flags: <link xref="Gio.FileMonitorFlags">Gio.FileMonitorFlags</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): <link xref="Gio.FileMonitor">Gio.FileMonitor</link> {
 }
   </code></synopsis>
   <p>Obtains a file monitor for the given file. If no file notification

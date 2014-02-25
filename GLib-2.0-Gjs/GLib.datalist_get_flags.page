@@ -9,7 +9,7 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(guint)</api:type>
       </api:returns>
       <api:name>g_datalist_get_flags</api:name>
       <api:arg>
@@ -20,7 +20,7 @@
   </info>
   <title>GLib.datalist_get_flags</title>
   <synopsis><code mime="text/x-gjs">
-function datalist_get_flags(datalist: GLib.Data): Number {
+function datalist_get_flags(datalist: <link xref="GLib.Data">GLib.Data</link>): Number(guint) {
     // Gjs wrapper for g_datalist_get_flags()
 }
   </code></synopsis>

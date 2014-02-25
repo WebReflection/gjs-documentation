@@ -20,7 +20,7 @@
   </info>
   <title>Gio.FileInfo.prototype.set_file_type</title>
   <synopsis><code mime="text/x-gjs">
-function set_file_type(type: Gio.FileType): void {
+function set_file_type(type: <link xref="Gio.FileType">Gio.FileType</link>): void {
     // Gjs wrapper for g_file_info_set_file_type()
 }
   </code></synopsis>

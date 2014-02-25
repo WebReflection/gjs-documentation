@@ -10,7 +10,7 @@
   </info>
   <title>Gio.FileDescriptorBased::get_fd</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_fd(): Number {
+function vfunc_get_fd(): Number(gint) {
 }
   </code></synopsis>
   <p>Gets the underlying file descriptor.</p>

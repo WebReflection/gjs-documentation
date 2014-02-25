@@ -28,7 +28,7 @@
   </info>
   <title>GLib.String.prototype.append_uri_escaped</title>
   <synopsis><code mime="text/x-gjs">
-function append_uri_escaped(unescaped: String, reserved_chars_allowed: String, allow_utf8: Boolean): GLib.String {
+function append_uri_escaped(unescaped: String, reserved_chars_allowed: String, allow_utf8: Boolean): <link xref="GLib.String">GLib.String</link> {
     // Gjs wrapper for g_string_append_uri_escaped()
 }
   </code></synopsis>

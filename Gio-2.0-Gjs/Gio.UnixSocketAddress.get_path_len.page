@@ -9,14 +9,14 @@
     <link xref="Gio.UnixSocketAddress" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>gsize</api:type>
+        <api:type>Number(gsize)</api:type>
       </api:returns>
       <api:name>g_unix_socket_address_get_path_len</api:name>
     </api:function>
   </info>
   <title>Gio.UnixSocketAddress.prototype.get_path_len</title>
   <synopsis><code mime="text/x-gjs">
-function get_path_len(): gsize {
+function get_path_len(): Number(gsize) {
     // Gjs wrapper for g_unix_socket_address_get_path_len()
 }
   </code></synopsis>

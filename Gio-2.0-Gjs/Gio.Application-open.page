@@ -11,7 +11,7 @@
   </info>
   <title>Gio.Application::open</title>
   <synopsis><code mime="text/x-gjs">
-connect('open', function (application, files: Array(Gio.File), hint: String, ): void);
+connect('open', function (application, files: Array(<link xref="Gio.File">Gio.File</link>), hint: String, ): void);
   </code></synopsis>
   <p>The ::open signal is emitted on the primary instance when there are
 files to open. See <link xref="Gio.Application.open"/> for more information.</p>

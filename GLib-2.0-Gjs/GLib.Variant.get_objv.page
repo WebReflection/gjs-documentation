@@ -16,7 +16,7 @@
   </info>
   <title>GLib.Variant.prototype.get_objv</title>
   <synopsis><code mime="text/x-gjs">
-function get_objv(): [return_value: Array(String), length: gsize] {
+function get_objv(): [return_value: Array(String), length: Number(gsize)] {
     // Gjs wrapper for g_variant_get_objv()
 }
   </code></synopsis>

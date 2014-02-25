@@ -9,7 +9,7 @@
     <link xref="Gio.DataInputStream" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>guint16</api:type>
+        <api:type>Number(guint16)</api:type>
       </api:returns>
       <api:name>g_data_input_stream_read_uint16</api:name>
       <api:arg>
@@ -20,7 +20,7 @@
   </info>
   <title>Gio.DataInputStream.prototype.read_uint16</title>
   <synopsis><code mime="text/x-gjs">
-function read_uint16(cancellable: Gio.Cancellable): guint16 {
+function read_uint16(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Number(guint16) {
     // Gjs wrapper for g_data_input_stream_read_uint16()
 }
   </code></synopsis>

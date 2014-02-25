@@ -11,7 +11,7 @@
   </info>
   <title>Gio.FilterOutputStream.base_stream</title>
   <synopsis><code mime="text/x-gjs">
-FilterOutputStream.base_stream: Gio.OutputStream (Read / Write / Construct Only)
+FilterOutputStream.base_stream: <link xref="Gio.OutputStream">Gio.OutputStream</link> (Read / Write / Construct Only)
   </code></synopsis>
 
 

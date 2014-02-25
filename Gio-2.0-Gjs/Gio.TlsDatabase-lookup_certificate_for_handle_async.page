@@ -10,7 +10,7 @@
   </info>
   <title>Gio.TlsDatabase::lookup_certificate_for_handle_async</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_lookup_certificate_for_handle_async(handle: String, interaction: Gio.TlsInteraction, flags: Gio.TlsDatabaseLookupFlags, cancellable: Gio.Cancellable, callback: Gio.AsyncReadyCallback): void {
+function vfunc_lookup_certificate_for_handle_async(handle: String, interaction: <link xref="Gio.TlsInteraction">Gio.TlsInteraction</link>, flags: <link xref="Gio.TlsDatabaseLookupFlags">Gio.TlsDatabaseLookupFlags</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
 }
   </code></synopsis>
   <p>Asynchronously lookup a certificate by its handle in the database. See

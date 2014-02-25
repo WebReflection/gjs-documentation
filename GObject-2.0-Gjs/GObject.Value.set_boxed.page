@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_value_set_boxed</api:name>
       <api:arg>
-        <api:type>gpointer</api:type>
+        <api:type>void</api:type>
         <api:name>v_boxed</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GObject.Value.prototype.set_boxed</title>
   <synopsis><code mime="text/x-gjs">
-function set_boxed(v_boxed: gpointer): void {
+function set_boxed(v_boxed: void): void {
     // Gjs wrapper for g_value_set_boxed()
 }
   </code></synopsis>

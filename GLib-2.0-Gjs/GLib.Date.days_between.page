@@ -9,7 +9,7 @@
     <link xref="GLib.Date" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
       </api:returns>
       <api:name>g_date_days_between</api:name>
       <api:arg>
@@ -20,7 +20,7 @@
   </info>
   <title>GLib.Date.prototype.days_between</title>
   <synopsis><code mime="text/x-gjs">
-function days_between(date2: GLib.Date): Number {
+function days_between(date2: <link xref="GLib.Date">GLib.Date</link>): Number(gint) {
     // Gjs wrapper for g_date_days_between()
 }
   </code></synopsis>

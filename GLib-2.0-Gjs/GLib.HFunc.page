@@ -10,7 +10,7 @@
   </info>
   <title>GLib.HFunc</title>
   <synopsis><code mime="text/x-gjs">
-function onHFunc(key: gpointer, value: gpointer): void {
+function onHFunc(key: void, value: void): void {
 }
   </code></synopsis>
   <p>Specifies the type of the function passed to <link xref="GLib.foreach"/>.

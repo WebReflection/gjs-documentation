@@ -16,7 +16,7 @@
   </info>
   <title>GLib.Thread.self</title>
   <synopsis><code mime="text/x-gjs">
-function self(): GLib.Thread {
+function self(): <link xref="GLib.Thread">GLib.Thread</link> {
     // Gjs wrapper for g_thread_self()
 }
   </code></synopsis>

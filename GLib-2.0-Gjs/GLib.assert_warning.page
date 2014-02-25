@@ -21,7 +21,7 @@
         <api:name>file</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>line</api:name>
       </api:arg>
       <api:arg>
@@ -36,7 +36,7 @@
   </info>
   <title>GLib.assert_warning</title>
   <synopsis><code mime="text/x-gjs">
-function assert_warning(log_domain: String, file: String, line: Number, pretty_function: String, expression: String): void {
+function assert_warning(log_domain: String, file: String, line: Number(gint), pretty_function: String, expression: String): void {
     // Gjs wrapper for g_assert_warning()
 }
   </code></synopsis>

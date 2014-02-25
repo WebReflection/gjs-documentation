@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Mount::unmount_finish</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_unmount_finish(result: Gio.AsyncResult): Boolean {
+function vfunc_unmount_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): Boolean {
 }
   </code></synopsis>
   <p>Finishes unmounting a mount. If any errors occurred during the operation,

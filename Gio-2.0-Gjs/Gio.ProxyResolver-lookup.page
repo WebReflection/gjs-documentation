@@ -10,7 +10,7 @@
   </info>
   <title>Gio.ProxyResolver::lookup</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_lookup(uri: String, cancellable: Gio.Cancellable): Array(String) {
+function vfunc_lookup(uri: String, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Array(String) {
 }
   </code></synopsis>
   <p>Looks into the system proxy configuration to determine what proxy,

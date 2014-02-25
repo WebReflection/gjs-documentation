@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Vfs::local_file_set_attributes</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_local_file_set_attributes(filename: String, info: Gio.FileInfo, flags: Gio.FileQueryInfoFlags, cancellable: Gio.Cancellable): Boolean {
+function vfunc_local_file_set_attributes(filename: String, info: <link xref="Gio.FileInfo">Gio.FileInfo</link>, flags: <link xref="Gio.FileQueryInfoFlags">Gio.FileQueryInfoFlags</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Boolean {
 }
   </code></synopsis>
 

@@ -10,7 +10,7 @@
   </info>
   <title>Gio.VolumeMonitor::volume_added</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_volume_added(volume: Gio.Volume): void {
+function vfunc_volume_added(volume: <link xref="Gio.Volume">Gio.Volume</link>): void {
 }
   </code></synopsis>
 

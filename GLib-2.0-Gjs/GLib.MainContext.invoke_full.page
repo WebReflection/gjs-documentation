@@ -13,7 +13,7 @@
       </api:returns>
       <api:name>g_main_context_invoke_full</api:name>
       <api:arg>
-        <api:type>Number</api:type>
+        <api:type>Number(gint)</api:type>
         <api:name>priority</api:name>
       </api:arg>
       <api:arg>
@@ -24,7 +24,7 @@
   </info>
   <title>GLib.MainContext.prototype.invoke_full</title>
   <synopsis><code mime="text/x-gjs">
-function invoke_full(priority: Number, function: GLib.SourceFunc): void {
+function invoke_full(priority: Number(gint), function: <link xref="GLib.SourceFunc">GLib.SourceFunc</link>): void {
     // Gjs wrapper for g_main_context_invoke_full()
 }
   </code></synopsis>

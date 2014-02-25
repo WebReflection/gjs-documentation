@@ -10,7 +10,7 @@
   </info>
   <title>Gio.DBusInterfaceSetPropertyFunc</title>
   <synopsis><code mime="text/x-gjs">
-function onDBusInterfaceSetPropertyFunc(connection: Gio.DBusConnection, sender: String, object_path: String, interface_name: String, property_name: String, value: GLib.Variant, error: GLib.Error): Boolean {
+function onDBusInterfaceSetPropertyFunc(connection: <link xref="Gio.DBusConnection">Gio.DBusConnection</link>, sender: String, object_path: String, interface_name: String, property_name: String, value: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>, error: <link href="../GLib-2.0/GLib.Error.page">GLib.Error</link>): Boolean {
 }
   </code></synopsis>
   <p>The type of the @set_property function in <link xref="Gio.DBusInterfaceVTable"/>.</p>

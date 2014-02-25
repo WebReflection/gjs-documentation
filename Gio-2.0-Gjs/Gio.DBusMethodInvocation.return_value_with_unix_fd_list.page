@@ -24,7 +24,7 @@
   </info>
   <title>Gio.DBusMethodInvocation.prototype.return_value_with_unix_fd_list</title>
   <synopsis><code mime="text/x-gjs">
-function return_value_with_unix_fd_list(parameters: GLib.Variant, fd_list: Gio.UnixFDList): void {
+function return_value_with_unix_fd_list(parameters: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>, fd_list: <link xref="Gio.UnixFDList">Gio.UnixFDList</link>): void {
     // Gjs wrapper for g_dbus_method_invocation_return_value_with_unix_fd_list()
 }
   </code></synopsis>
