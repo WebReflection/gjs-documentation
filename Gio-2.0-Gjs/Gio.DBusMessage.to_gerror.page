@@ -22,7 +22,7 @@ function to_gerror(): Boolean {
   </code></synopsis>
   <p>If <code>message</code> is not of type <link xref="Gio.DBusMessageType"/>.error does
 nothing and returns <code>false</code>.</p>  <p>Otherwise this method encodes the error in <code>message</code> as a <link href="../GLib-2.0/GLib.Error.html">GLib.Error</link>
-using <link xref="Gio.set_dbus_error"/> using the information in the
+using <link xref="Gio.DBusError.set_dbus_error"/> using the information in the
 <link xref="Gio.DBusMessageHeaderField"/>.error_name header field of <code>message</code> as
 well as the first string item in <code>message</code>'s body.</p>
   <p>Since 2.26</p>

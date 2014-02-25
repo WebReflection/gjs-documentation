@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <page id="Gio.TlsError"
-      type="topic"
+      type="guide"
       style="enum"
       xmlns="http://projectmallard.org/1.0/"
       xmlns:api="http://projectmallard.org/experimental/api/"
@@ -48,5 +48,9 @@ TLS-related routine.</p>
   <link xref="Gio.TlsConnection.set_require_close_notify"/>.</p>
 </item>
 </terms>
-
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
 </page>

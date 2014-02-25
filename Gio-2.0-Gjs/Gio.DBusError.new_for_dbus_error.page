@@ -6,7 +6,7 @@
       xmlns:api="http://projectmallard.org/experimental/api/"
       xmlns:ui="http://projectmallard.org/1.0/ui/">
   <info>
-    <link xref="index" group="function" type="guide"/>
+    <link xref="Gio.DBusError" group="function" type="guide"/>
     <api:function>
       <api:returns>
         <api:type>GLib.Error</api:type>
@@ -22,7 +22,7 @@
       </api:arg>
     </api:function>
   </info>
-  <title>Gio.new_for_dbus_error</title>
+  <title>Gio.DBusError.new_for_dbus_error</title>
   <synopsis><code mime="text/x-gjs">
 function new_for_dbus_error(dbus_error_name: String, dbus_error_message: String): <link href="../GLib-2.0/GLib.Error.html">GLib.Error</link> {
     // Gjs wrapper for g_dbus_error_new_for_dbus_error()

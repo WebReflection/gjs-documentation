@@ -6,7 +6,7 @@
       xmlns:api="http://projectmallard.org/experimental/api/"
       xmlns:ui="http://projectmallard.org/1.0/ui/">
   <info>
-    <link xref="index" group="function" type="guide"/>
+    <link xref="Gio.DBusError" group="function" type="guide"/>
     <api:function>
       <api:returns>
         <api:type>String</api:type>
@@ -18,7 +18,7 @@
       </api:arg>
     </api:function>
   </info>
-  <title>Gio.encode_gerror</title>
+  <title>Gio.DBusError.encode_gerror</title>
   <synopsis><code mime="text/x-gjs">
 function encode_gerror(error: <link href="../GLib-2.0/GLib.Error.html">GLib.Error</link>): String {
     // Gjs wrapper for g_dbus_error_encode_gerror()
