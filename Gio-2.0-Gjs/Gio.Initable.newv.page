@@ -33,7 +33,7 @@ function newv(object_type: GObject.Type, parameters: Array(<link href="../GObjec
 }
   </code></synopsis>
   <p>Helper function for constructing <link xref="Gio.Initable"/> object. This is
-similar to <link xref="GObject.newv"/> but also initializes the object
+similar to <link xref="GObject.new"/> but also initializes the object
 and returns <code>null</code>, setting an error on failure.</p>
   <p>Since 2.22</p>
 <terms>

@@ -14,7 +14,7 @@ function onIOFunc(source: <link xref="GLib.IOChannel">GLib.IOChannel</link>, con
 }
   </code></synopsis>
   <p>Specifies the type of function passed to <link xref="GLib.io_add_watch"/> or
-<link xref="GLib.io_add_watch_full"/>, which is called when the requested condition
+<link xref="GLib.io_add_watch"/>, which is called when the requested condition
 on a <link xref="GLib.IOChannel"/> is satisfied.</p>
 
 <terms>
@@ -28,7 +28,7 @@ on a <link xref="GLib.IOChannel"/> is satisfied.</p>
 </item>
 <item>
 <title><code>data</code></title>
-  <p>user data set in <link xref="GLib.io_add_watch"/> or <link xref="GLib.io_add_watch_full"/></p>
+  <p>user data set in <link xref="GLib.io_add_watch"/> or <link xref="GLib.io_add_watch"/></p>
 </item>
 <item>
 <title><code>ok</code></title>

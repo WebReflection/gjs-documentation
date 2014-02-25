@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<page id="Gio.bus_watch_name_on_connection_with_closures"
+<page id="Gio.bus_watch_name_on_connection"
       type="topic"
       style="function"
       xmlns="http://projectmallard.org/1.0/"
@@ -34,9 +34,9 @@
       </api:arg>
     </api:function>
   </info>
-  <title>Gio.bus_watch_name_on_connection_with_closures</title>
+  <title>Gio.bus_watch_name_on_connection</title>
   <synopsis><code mime="text/x-gjs">
-function bus_watch_name_on_connection_with_closures(connection: <link xref="Gio.DBusConnection">Gio.DBusConnection</link>, name: String, flags: <link xref="Gio.BusNameWatcherFlags">Gio.BusNameWatcherFlags</link>, name_appeared_closure: <link href="../GObject-2.0/GObject.Closure.page">GObject.Closure</link>, name_vanished_closure: <link href="../GObject-2.0/GObject.Closure.page">GObject.Closure</link>): Number(guint) {
+function bus_watch_name_on_connection(connection: <link xref="Gio.DBusConnection">Gio.DBusConnection</link>, name: String, flags: <link xref="Gio.BusNameWatcherFlags">Gio.BusNameWatcherFlags</link>, name_appeared_closure: <link href="../GObject-2.0/GObject.Closure.page">GObject.Closure</link>, name_vanished_closure: <link href="../GObject-2.0/GObject.Closure.page">GObject.Closure</link>): Number(guint) {
     // Gjs wrapper for g_bus_watch_name_on_connection_with_closures()
 }
   </code></synopsis>
