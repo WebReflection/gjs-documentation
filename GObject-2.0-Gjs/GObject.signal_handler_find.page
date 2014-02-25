@@ -44,7 +44,7 @@
   </info>
   <title>GObject.signal_handler_find</title>
   <synopsis><code mime="text/x-gjs">
-function signal_handler_find(instance: <link xref="GObject.Object">GObject.Object</link>, mask: <link xref="GObject.SignalMatchType">GObject.SignalMatchType</link>, signal_id: Number(guint), detail: <link href="../GLib-2.0/GLib.Quark.page">GLib.Quark</link>, closure: <link xref="GObject.Closure">GObject.Closure</link>, func: void, data: void): Number(gulong) {
+function signal_handler_find(instance: <link xref="GObject.Object">GObject.Object</link>, mask: <link xref="GObject.SignalMatchType">GObject.SignalMatchType</link>, signal_id: Number(guint), detail: <link href="../GLib-2.0/GLib.Quark.html">GLib.Quark</link>, closure: <link xref="GObject.Closure">GObject.Closure</link>, func: void, data: void): Number(gulong) {
     // Gjs wrapper for g_signal_handler_find()
 }
   </code></synopsis>

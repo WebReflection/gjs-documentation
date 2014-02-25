@@ -19,8 +19,8 @@ function vfunc_get_interfaces(): Array(<link xref="Gio.DBusInterface">Gio.DBusIn
 <item>
 <title><code>Returns</code></title>
   <p>A list of <link xref="Gio.DBusInterface"/> instances.
-  The returned list must be freed by <link xref="GLib.List.free"/> after each element has been freed
-  with <link xref="GObject.Object.unref"/>.</p>
+  The returned list must be freed by <link href="../GLib-2.0/GLib.List.free.html">GLib.List.free</link> after each element has been freed
+  with <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link>.</p>
 </item>
 </terms>
 

@@ -20,7 +20,7 @@
   </info>
   <title>Gio.Action.prototype.change_state</title>
   <synopsis><code mime="text/x-gjs">
-function change_state(value: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>): void {
+function change_state(value: <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link>): void {
     // Gjs wrapper for g_action_change_state()
 }
   </code></synopsis>

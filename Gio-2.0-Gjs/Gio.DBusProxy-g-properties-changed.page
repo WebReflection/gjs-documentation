@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusProxy::g-properties-changed</title>
   <synopsis><code mime="text/x-gjs">
-connect('g-properties-changed', function (dBusProxy, changed_properties: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>, invalidated_properties: Array(String), ): void);
+connect('g-properties-changed', function (dBusProxy, changed_properties: <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link>, invalidated_properties: Array(String), ): void);
   </code></synopsis>
   <p>Emitted when one or more D-Bus properties on @proxy changes. The
 local cache has already been updated when this signal fires. Note
@@ -29,7 +29,7 @@ guaranteed to never be <code>null</code> (either may be empty though).</p>  <p>I
 </item>
 <item>
 <title><code>changed_properties</code></title>
-  <p>A <link xref="GLib.Variant"/> containing the properties that changed</p>
+  <p>A <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> containing the properties that changed</p>
 </item>
 <item>
 <title><code>invalidated_properties</code></title>

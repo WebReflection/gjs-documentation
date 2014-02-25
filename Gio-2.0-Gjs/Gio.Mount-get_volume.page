@@ -20,7 +20,7 @@ function vfunc_get_volume(): <link xref="Gio.Volume">Gio.Volume</link> {
 <title><code>Returns</code></title>
   <p>a <link xref="Gio.Volume"/> or <code>null</code> if <code>mount</code> is not associated with a volume.
      The returned object should be unreffed with
-     <link xref="GObject.Object.unref"/> when no longer needed.</p>
+     <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link> when no longer needed.</p>
 </item>
 </terms>
 

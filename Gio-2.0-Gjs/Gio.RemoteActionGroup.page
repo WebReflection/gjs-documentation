@@ -21,7 +21,7 @@ processes.</p>  <p>The interface has `_full` variants of the two
 methods on <link xref="Gio.ActionGroup"/> used to activate actions:
 <link xref="Gio.ActionGroup.activate_action"/> and
 <link xref="Gio.ActionGroup.change_action_state"/>. These variants allow a
-"platform data" <link xref="GLib.Variant"/> to be specified: a dictionary providing
+"platform data" <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> to be specified: a dictionary providing
 context for the action invocation (for example: timestamps, startup
 notification IDs, etc).</p>  <p><link xref="Gio.DBusActionGroup"/> implements <link xref="Gio.RemoteActionGroup"/>.  This provides a
 mechanism to send platform data for action invocations over D-Bus.</p>  <p>Additionally, <link xref="Gio.DBusConnection.export_action_group"/> will check if

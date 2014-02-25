@@ -40,7 +40,7 @@
   </info>
   <title>Gio.bus_own_name</title>
   <synopsis><code mime="text/x-gjs">
-function bus_own_name(bus_type: <link xref="Gio.BusType">Gio.BusType</link>, name: String, flags: <link xref="Gio.BusNameOwnerFlags">Gio.BusNameOwnerFlags</link>, bus_acquired_closure: <link href="../GObject-2.0/GObject.Closure.page">GObject.Closure</link>, name_acquired_closure: <link href="../GObject-2.0/GObject.Closure.page">GObject.Closure</link>, name_lost_closure: <link href="../GObject-2.0/GObject.Closure.page">GObject.Closure</link>): Number(guint) {
+function bus_own_name(bus_type: <link xref="Gio.BusType">Gio.BusType</link>, name: String, flags: <link xref="Gio.BusNameOwnerFlags">Gio.BusNameOwnerFlags</link>, bus_acquired_closure: <link href="../GObject-2.0/GObject.Closure.html">GObject.Closure</link>, name_acquired_closure: <link href="../GObject-2.0/GObject.Closure.html">GObject.Closure</link>, name_lost_closure: <link href="../GObject-2.0/GObject.Closure.html">GObject.Closure</link>): Number(guint) {
     // Gjs wrapper for g_bus_own_name_with_closures()
 }
   </code></synopsis>
@@ -62,17 +62,17 @@ easier binding in other languages.</p>
 </item>
 <item>
 <title><code>bus_acquired_closure</code></title>
-  <p><link xref="GObject.Closure"/> to invoke when connected to
+  <p><link href="../GObject-2.0/GObject.Closure.html">GObject.Closure</link> to invoke when connected to
     the bus of type <code>bus_type</code> or <code>null</code></p>
 </item>
 <item>
 <title><code>name_acquired_closure</code></title>
-  <p><link xref="GObject.Closure"/> to invoke when <code>name</code> is
+  <p><link href="../GObject-2.0/GObject.Closure.html">GObject.Closure</link> to invoke when <code>name</code> is
     acquired or <code>null</code></p>
 </item>
 <item>
 <title><code>name_lost_closure</code></title>
-  <p><link xref="GObject.Closure"/> to invoke when <code>name</code> is lost or
+  <p><link href="../GObject-2.0/GObject.Closure.html">GObject.Closure</link> to invoke when <code>name</code> is lost or
     <code>null</code></p>
 </item>
 <item>

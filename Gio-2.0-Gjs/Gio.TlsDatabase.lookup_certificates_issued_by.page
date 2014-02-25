@@ -42,7 +42,7 @@ the lookup operation asynchronously.</p>
 <terms>
 <item>
 <title><code>issuer_raw_dn</code></title>
-  <p>a <link xref="GLib.ByteArray"/> which holds the DER encoded issuer DN.</p>
+  <p>a <link href="../GLib-2.0/GLib.ByteArray.html">GLib.ByteArray</link> which holds the DER encoded issuer DN.</p>
 </item>
 <item>
 <title><code>interaction</code></title>

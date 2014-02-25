@@ -24,7 +24,7 @@
   </info>
   <title>Gio.Task.prototype.return_pointer</title>
   <synopsis><code mime="text/x-gjs">
-function return_pointer(result: void, result_destroy: <link href="../GLib-2.0/GLib.DestroyNotify.page">GLib.DestroyNotify</link>): void {
+function return_pointer(result: void, result_destroy: <link href="../GLib-2.0/GLib.DestroyNotify.html">GLib.DestroyNotify</link>): void {
     // Gjs wrapper for g_task_return_pointer()
 }
   </code></synopsis>
@@ -33,8 +33,8 @@ is not <code>null</code>, then <code>result_destroy</code> will be used to free 
 the caller does not take ownership of it with
 <link xref="Gio.Task.propagate_pointer"/>.</p>  <p>"Completes the task" means that for an ordinary asynchronous task
 it will either invoke the task's callback, or else queue that
-callback to be invoked in the proper <link xref="GLib.MainContext"/>, or in the next
-iteration of the current <link xref="GLib.MainContext"/>. For a task run via
+callback to be invoked in the proper <link href="../GLib-2.0/GLib.MainContext.html">GLib.MainContext</link>, or in the next
+iteration of the current <link href="../GLib-2.0/GLib.MainContext.html">GLib.MainContext</link>. For a task run via
 <link xref="Gio.Task.run_in_thread"/> or <link xref="Gio.Task.run_in_thread_sync"/>, calling this
 method will save <code>result</code> to be returned to the caller later, but
 the task will not actually be completed until the <link xref="Gio.TaskThreadFunc"/>
@@ -51,7 +51,7 @@ reference on it.</p>
 </item>
 <item>
 <title><code>result_destroy</code></title>
-  <p>a <link xref="GLib.DestroyNotify"/> function.</p>
+  <p>a <link href="../GLib-2.0/GLib.DestroyNotify.html">GLib.DestroyNotify</link> function.</p>
 </item>
 </terms>
 

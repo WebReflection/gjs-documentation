@@ -100,11 +100,11 @@ the return value.</p>  <p>Here is an example for using GTask as a GAsyncResult:
 internally chain together several smaller asynchronous
 operations. <link xref="Gio.Task.get_cancellable"/>, <link xref="Gio.Task.get_context"/>,
 and <link xref="Gio.Task.get_priority"/> allow you to get back the task's
-<link xref="Gio.Cancellable"/>, <link xref="GLib.MainContext"/>, and [I/O priority][io-priority]
+<link xref="Gio.Cancellable"/>, <link href="../GLib-2.0/GLib.MainContext.html">GLib.MainContext</link>, and [I/O priority][io-priority]
 when starting a new subtask, so you don't have to keep track
 of them yourself. <link xref="Gio.Task.attach_source"/> simplifies the case
 of waiting for a source to fire (automatically using the correct
-<link xref="GLib.MainContext"/> and priority).</p>  <p>Here is an example for chained asynchronous operations:
+<link href="../GLib-2.0/GLib.MainContext.html">GLib.MainContext</link> and priority).</p>  <p>Here is an example for chained asynchronous operations:
   |[&lt;!-- language="C" --&gt;
     typedef struct {
       Cake *cake;
@@ -195,7 +195,7 @@ of waiting for a source to fire (automatically using the correct
 ]|</p>  <p>## Asynchronous operations from synchronous ones</p>  <p>You can use <link xref="Gio.Task.run_in_thread"/> to turn a synchronous
 operation into an asynchronous one, by running it in a thread
 which will then dispatch the result back to the caller's
-<link xref="GLib.MainContext"/> when it completes.</p>  <p>Running a task in a thread:
+<link href="../GLib-2.0/GLib.MainContext.html">GLib.MainContext</link> when it completes.</p>  <p>Running a task in a thread:
   |[&lt;!-- language="C" --&gt;
     typedef struct {
       guint radius;
@@ -335,7 +335,7 @@ in several ways:
   purpose with <link xref="Gio.SimpleAsyncResult"/>.
 - In addition to the task data, <link xref="Gio.Task"/> also keeps track of the
   [priority][io-priority], <link xref="Gio.Cancellable"/>, and
-  <link xref="GLib.MainContext"/> associated with the task, so tasks that consist of
+  <link href="../GLib-2.0/GLib.MainContext.html">GLib.MainContext</link> associated with the task, so tasks that consist of
   a chain of simpler asynchronous operations will have easy access
   to those values when starting each sub-task.
 - <link xref="Gio.Task.return_error_if_cancelled"/> provides simplified
@@ -356,8 +356,8 @@ in several ways:
   there is no need to worry about the "complete" vs "complete
   in idle" distinction. (<link xref="Gio.Task"/> automatically figures out
   whether the task's callback can be invoked directly, or
-  if it needs to be sent to another <link xref="GLib.MainContext"/>, or delayed
-  until the next iteration of the current <link xref="GLib.MainContext"/>.)
+  if it needs to be sent to another <link href="../GLib-2.0/GLib.MainContext.html">GLib.MainContext</link>, or delayed
+  until the next iteration of the current <link href="../GLib-2.0/GLib.MainContext.html">GLib.MainContext</link>.)
 - The "finish" functions for <link xref="Gio.Task"/>-based operations are generally
   much simpler than <link xref="Gio.SimpleAsyncResult"/> ones, normally consisting
   of only a single call to <link xref="Gio.Task.propagate_pointer"/> or the like.

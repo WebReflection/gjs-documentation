@@ -16,20 +16,20 @@
   </info>
   <title>Gio.Action.prototype.get_state_hint</title>
   <synopsis><code mime="text/x-gjs">
-function get_state_hint(): <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link> {
+function get_state_hint(): <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> {
     // Gjs wrapper for g_action_get_state_hint()
 }
   </code></synopsis>
   <p>Requests a hint about the valid range of values for the state of
 <code>action</code>.</p>  <p>If <code>null</code> is returned it either means that the action is not stateful
 or that there is no hint about the valid range of values for the
-state of the action.</p>  <p>If a <link xref="GLib.Variant"/> array is returned then each item in the array is a
-possible value for the state.  If a <link xref="GLib.Variant"/> pair (ie: two-tuple) is
+state of the action.</p>  <p>If a <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> array is returned then each item in the array is a
+possible value for the state.  If a <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> pair (ie: two-tuple) is
 returned then the tuple specifies the inclusive lower and upper bound
 of valid values for the state.</p>  <p>In any case, the information is merely a hint.  It may be possible to
 have a state value outside of the hinted range and setting a value
 within the range may fail.</p>  <p>The return value (if non-<code>null</code>) should be freed with
-<link xref="GLib.Variant.unref"/> when it is no longer required.</p>
+<link href="../GLib-2.0/GLib.Variant.unref.html">GLib.Variant.prototype.unref</link> when it is no longer required.</p>
   <p>Since 2.28</p>
 <terms>
 <item>

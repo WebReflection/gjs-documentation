@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusObjectManagerClient::interface-proxy-signal</title>
   <synopsis><code mime="text/x-gjs">
-connect('interface-proxy-signal', function (dBusObjectManagerClient, object_proxy: <link xref="Gio.DBusObjectProxy">Gio.DBusObjectProxy</link>, interface_proxy: <link xref="Gio.DBusProxy">Gio.DBusProxy</link>, sender_name: String, signal_name: String, parameters: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>, ): void);
+connect('interface-proxy-signal', function (dBusObjectManagerClient, object_proxy: <link xref="Gio.DBusObjectProxy">Gio.DBusObjectProxy</link>, interface_proxy: <link xref="Gio.DBusProxy">Gio.DBusProxy</link>, sender_name: String, signal_name: String, parameters: <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link>, ): void);
   </code></synopsis>
   <p>Emitted when a D-Bus signal is received on <code>interface_proxy</code>.</p>  <p>This signal exists purely as a convenience to avoid having to
 connect signals to all interface proxies managed by @manager.</p>  <p>This signal is emitted in the
@@ -41,7 +41,7 @@ that @manager was constructed in.</p>
 </item>
 <item>
 <title><code>parameters</code></title>
-  <p>A <link xref="GLib.Variant"/> tuple with parameters for the signal.</p>
+  <p>A <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> tuple with parameters for the signal.</p>
 </item>
 </terms>
 

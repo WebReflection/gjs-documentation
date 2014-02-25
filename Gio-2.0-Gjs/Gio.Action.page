@@ -17,10 +17,10 @@ let action = new Gio.Action({
   </code></synopsis>
   <p><link xref="Gio.Action"/> represents a single named action.</p>  <p>The main interface to an action is that it can be activated with
 <link xref="Gio.Action.activate"/>.  This results in the 'activate' signal being
-emitted.  An activation has a <link xref="GLib.Variant"/> parameter (which may be
+emitted.  An activation has a <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> parameter (which may be
 <code>null</code>).  The correct type for the parameter is determined by a static
 parameter type (which is given at construction time).</p>  <p>An action may optionally have a state, in which case the state may be
-set with <link xref="Gio.Action.change_state"/>.  This call takes a <link xref="GLib.Variant"/>.  The
+set with <link xref="Gio.Action.change_state"/>.  This call takes a <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link>.  The
 correct type for the state is determined by a static state type
 (which is given at construction time).</p>  <p>The state may have a hint associated with it, specifying its valid
 range.</p>  <p><link xref="Gio.Action"/> is merely the interface to the concept of an action, as

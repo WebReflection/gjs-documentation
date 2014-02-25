@@ -24,7 +24,7 @@ Common schemes include "file", "http", "ftp", etc.</p>  <p>This call does no blo
 <item>
 <title><code>Returns</code></title>
   <p>a string containing the URI scheme for the given
-    <link xref="Gio.File"/>. The returned string should be freed with <link xref="GLib.free"/>
+    <link xref="Gio.File"/>. The returned string should be freed with <link href="../GLib-2.0/GLib.free.html">GLib.free</link>
     when no longer needed.</p>
 </item>
 </terms>

@@ -29,7 +29,7 @@ in the meantime.  For this reason, <link xref="Gio.Settings.get_child"/> may ret
 <code>null</code> even for a child that was listed by this function.</p>  <p>For GSettings objects that are not lists, you should probably not be
 calling this function from "normal" code (since you should already
 know what children are in your schema).  This function may still be
-useful there for introspection reasons, however.</p>  <p>You should free the return value with <link xref="GLib.strfreev"/> when you are done
+useful there for introspection reasons, however.</p>  <p>You should free the return value with <link href="../GLib-2.0/GLib.strfreev.html">GLib.strfreev</link> when you are done
 with it.</p>
 
 <terms>

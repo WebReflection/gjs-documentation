@@ -25,7 +25,7 @@ this database, then <code>null</code> will be returned.</p>
 <item>
 <title><code>Returns</code></title>
   <p>a newly allocated <link xref="Gio.TlsCertificate"/> object.
-Use <link xref="GObject.Object.unref"/> to release the certificate.</p>
+Use <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link> to release the certificate.</p>
 </item>
 </terms>
 

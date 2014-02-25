@@ -38,7 +38,7 @@ returned array of proxies.</p>
 <title><code>Returns</code></title>
   <p>A
               NULL-terminated array of proxy URIs. Must be freed
-              with <link xref="GLib.strfreev"/>.</p>
+              with <link href="../GLib-2.0/GLib.strfreev.html">GLib.strfreev</link>.</p>
 </item>
 </terms>
 

@@ -53,7 +53,7 @@ to implement asynchronicity, so they are optional for inheriting
 classes. However, if you override one you must override all.</p>  <p>For the synchronous, blocking version of this function, see
 <link xref="Gio.OutputStream.write"/>.</p>  <p>Note that no copy of <code>buffer</code> will be made, so it must stay valid
 until <code>callback</code> is called. See <link xref="Gio.OutputStream.write_bytes_async"/>
-for a <link xref="GLib.Bytes"/> version that will automatically hold a reference to
+for a <link href="../GLib-2.0/GLib.Bytes.html">GLib.Bytes</link> version that will automatically hold a reference to
 the contents (without copying) for the duration of the call.</p>
 
 <terms>

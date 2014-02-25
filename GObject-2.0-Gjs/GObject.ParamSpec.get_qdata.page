@@ -20,7 +20,7 @@
   </info>
   <title>GObject.ParamSpec.prototype.get_qdata</title>
   <synopsis><code mime="text/x-gjs">
-function get_qdata(quark: <link href="../GLib-2.0/GLib.Quark.page">GLib.Quark</link>): void {
+function get_qdata(quark: <link href="../GLib-2.0/GLib.Quark.html">GLib.Quark</link>): void {
     // Gjs wrapper for g_param_spec_get_qdata()
 }
   </code></synopsis>
@@ -29,7 +29,7 @@ function get_qdata(quark: <link href="../GLib-2.0/GLib.Quark.page">GLib.Quark</l
 <terms>
 <item>
 <title><code>quark</code></title>
-  <p>a <link xref="GLib.Quark"/>, naming the user data pointer</p>
+  <p>a <link href="../GLib-2.0/GLib.Quark.html">GLib.Quark</link>, naming the user data pointer</p>
 </item>
 <item>
 <title><code>Returns</code></title>

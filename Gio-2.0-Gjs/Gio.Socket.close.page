@@ -28,7 +28,7 @@ return an error.</p>  <p>Sockets will be automatically closed when the last refe
 is dropped, but you might want to call this function to make sure
 resources are released as early as possible.</p>  <p>Beware that due to the way that TCP works, it is possible for
 recently-sent data to be lost if either you close a socket while the
-<link xref="GLib.IOCondition"/>.in condition is set, or else if the remote connection tries to
+<link href="../GLib-2.0/GLib.IOCondition.html">GLib.IOCondition</link>.in condition is set, or else if the remote connection tries to
 send something to you after you close the socket but before it has
 finished reading all of the data you sent. There is no easy generic
 way to avoid this problem; the easiest fix is to design the network

@@ -29,7 +29,7 @@ function new_from_bytes(bytes: ByteArray): <link xref="Gio.InputStream">Gio.Inpu
 <terms>
 <item>
 <title><code>bytes</code></title>
-  <p>a <link xref="GLib.Bytes"/></p>
+  <p>a <link href="../GLib-2.0/GLib.Bytes.html">GLib.Bytes</link></p>
 </item>
 <item>
 <title><code>Returns</code></title>

@@ -35,7 +35,7 @@ to main().  g_win32_get_command_line() will return a UTF-8 version of
 the commandline.  <link xref="Gio.Application"/> also uses UTF-8 but
 <link xref="Gio.ApplicationCommandLine.create_file_for_arg"/> may be more useful
 for you there.  It is also always possible to use this function with
-<link xref="GLib.OptionContext"/> arguments of type <link xref="GLib.OptionArg"/>.filename.</p>
+<link href="../GLib-2.0/GLib.OptionContext.html">GLib.OptionContext</link> arguments of type <link href="../GLib-2.0/GLib.OptionArg.html">GLib.OptionArg</link>.filename.</p>
 
 <terms>
 <item>

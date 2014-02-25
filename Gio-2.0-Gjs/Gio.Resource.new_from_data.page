@@ -32,7 +32,7 @@ to register it with <link xref="Gio.Resource._register"/>.</p>
 <terms>
 <item>
 <title><code>data</code></title>
-  <p>A <link xref="GLib.Bytes"/></p>
+  <p>A <link href="../GLib-2.0/GLib.Bytes.html">GLib.Bytes</link></p>
 </item>
 <item>
 <title><code>Returns</code></title>

@@ -19,14 +19,14 @@ let propertyAction = new Gio.PropertyAction({
 });
   </code></synopsis>
   <p>A <link xref="Gio.PropertyAction"/> is a way to get a <link xref="Gio.Action"/> with a state value
-reflecting and controlling the value of a <link xref="GObject.Object"/> property.</p>  <p>The state of the action will correspond to the value of the property.
+reflecting and controlling the value of a <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link> property.</p>  <p>The state of the action will correspond to the value of the property.
 Changing it will change the property (assuming the requested value
-matches the requirements as specified in the <link xref="GObject.ParamSpec"/>).</p>  <p>Only the most common types are presently supported.  Booleans are
+matches the requirements as specified in the <link href="../GObject-2.0/GObject.ParamSpec.html">GObject.ParamSpec</link>).</p>  <p>Only the most common types are presently supported.  Booleans are
 mapped to booleans, strings to strings, signed/unsigned integers to
 int32/uint32 and floats and doubles to doubles.</p>  <p>If the property is an enum then the state will be string-typed and
 conversion will automatically be performed between the enum value and
-"nick" string as per the <link xref="GObject.EnumValue"/> table.</p>  <p>Flags types are not currently supported.</p>  <p>Properties of object types, boxed types and pointer types are not
-supported and probably never will be.</p>  <p>Properties of <link xref="GLib.Variant"/> types are not currently supported.</p>  <p>If the property is boolean-valued then the action will have a NULL
+"nick" string as per the <link href="../GObject-2.0/GObject.EnumValue.html">GObject.EnumValue</link> table.</p>  <p>Flags types are not currently supported.</p>  <p>Properties of object types, boxed types and pointer types are not
+supported and probably never will be.</p>  <p>Properties of <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> types are not currently supported.</p>  <p>If the property is boolean-valued then the action will have a NULL
 parameter type, and activating the action (with no parameter) will
 toggle the value of the property.</p>  <p>In all other cases, the parameter type will correspond to the type of
 the property.</p>  <p>The general idea here is to reduce the number of locations where a

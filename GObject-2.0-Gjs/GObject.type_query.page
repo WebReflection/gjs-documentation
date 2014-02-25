@@ -26,7 +26,7 @@ function type_query(type: GObject.Type): <link xref="GObject.TypeQuery">GObject.
   </code></synopsis>
   <p>Queries the type system for information about a specific type.
 This function will fill in a user-provided structure to hold
-type-specific information. If an invalid <link xref="GLib.Type"/> is passed in, the
+type-specific information. If an invalid <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link> is passed in, the
 <code>type</code> member of the <link xref="GObject.TypeQuery"/> is 0. All members filled into the
 <link xref="GObject.TypeQuery"/> structure should be considered constant and have to be
 left untouched.</p>
@@ -34,7 +34,7 @@ left untouched.</p>
 <terms>
 <item>
 <title><code>type</code></title>
-  <p><link xref="GLib.Type"/> of a static, classed type</p>
+  <p><link href="../GLib-2.0/GLib.Type.html">GLib.Type</link> of a static, classed type</p>
 </item>
 <item>
 <title><code>query</code></title>

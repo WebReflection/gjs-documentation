@@ -34,16 +34,16 @@ can safely return the same <link xref="Gio.DBusConnection"/> when called from an
 initialized connection. Language bindings for GIO should use
 <link xref="Gio.Initable.new"/> or <link xref="Gio.AsyncInitable.new_async"/>, which also initialize the
 connection.</p>  <p>If you construct an uninitialized <link xref="Gio.DBusConnection"/>, such as via
-<link xref="GObject.Object.new"/>, you must initialize it via <link xref="Gio.Initable.init"/> or
+<link href="../GObject-2.0/GObject.Object.new.html">GObject.Object.new</link>, you must initialize it via <link xref="Gio.Initable.init"/> or
 <link xref="Gio.AsyncInitable.init_async"/> before using its methods or properties.
 Calling methods or accessing properties on a <link xref="Gio.DBusConnection"/> that has not
 completed initialization successfully is considered to be invalid, and leads
 to undefined behaviour. In particular, if initialization fails with a
-<link xref="GLib.Error"/>, the only valid thing you can do with that <link xref="Gio.DBusConnection"/> is to
-free it with <link xref="GObject.Object.unref"/>.</p>  <p>## An example D-Bus server # {#gdbus-server}</p>  <p>Here is an example for a D-Bus server:
+<link href="../GLib-2.0/GLib.Error.html">GLib.Error</link>, the only valid thing you can do with that <link xref="Gio.DBusConnection"/> is to
+free it with <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link>.</p>  <p>## An example D-Bus server # {#gdbus-server}</p>  <p>Here is an example for a D-Bus server:
 [gdbus-example-server.c](https://git.gnome.org/browse/glib/tree/gio/tests/gdbus-example-server.c)</p>  <p>## An example for exporting a subtree # {#gdbus-subtree-server}</p>  <p>Here is an example for exporting a subtree:
 [gdbus-example-subtree.c](https://git.gnome.org/browse/glib/tree/gio/tests/gdbus-example-subtree.c)</p>  <p>## An example for file descriptor passing # {#gdbus-unix-fd-client}</p>  <p>Here is an example for passing UNIX file descriptors:
-[gdbus-unix-fd-client.c](https://git.gnome.org/browse/glib/tree/gio/tests/gdbus-unix-fd-client.c)</p>  <p>## An example for exporting a GObject # {#gdbus-export}</p>  <p>Here is an example for exporting a <link xref="GObject.Object"/>:
+[gdbus-unix-fd-client.c](https://git.gnome.org/browse/glib/tree/gio/tests/gdbus-unix-fd-client.c)</p>  <p>## An example for exporting a GObject # {#gdbus-export}</p>  <p>Here is an example for exporting a <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link>:
 [gdbus-example-export.c](https://git.gnome.org/browse/glib/tree/gio/tests/gdbus-example-export.c)</p>
   <p>Since 2.26</p>
   <synopsis>

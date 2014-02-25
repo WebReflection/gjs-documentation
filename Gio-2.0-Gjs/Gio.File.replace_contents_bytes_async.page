@@ -44,7 +44,7 @@ function replace_contents_bytes_async(contents: ByteArray, etag: String, make_ba
     // Gjs wrapper for g_file_replace_contents_bytes_async()
 }
   </code></synopsis>
-  <p>Same as <link xref="Gio.File.replace_contents_async"/> but takes a <link xref="GLib.Bytes"/> input instead.
+  <p>Same as <link xref="Gio.File.replace_contents_async"/> but takes a <link href="../GLib-2.0/GLib.Bytes.html">GLib.Bytes</link> input instead.
 This function will keep a ref on <code>contents</code> until the operation is done.
 Unlike <link xref="Gio.File.replace_contents_async"/> this allows forgetting about the
 content without waiting for the callback.</p>  <p>When this operation has completed, <code>callback</code> will be called with
@@ -54,7 +54,7 @@ content without waiting for the callback.</p>  <p>When this operation has comple
 <terms>
 <item>
 <title><code>contents</code></title>
-  <p>a <link xref="GLib.Bytes"/></p>
+  <p>a <link href="../GLib-2.0/GLib.Bytes.html">GLib.Bytes</link></p>
 </item>
 <item>
 <title><code>etag</code></title>

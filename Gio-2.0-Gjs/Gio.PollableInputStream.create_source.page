@@ -20,11 +20,11 @@
   </info>
   <title>Gio.PollableInputStream.prototype.create_source</title>
   <synopsis><code mime="text/x-gjs">
-function create_source(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): <link href="../GLib-2.0/GLib.Source.page">GLib.Source</link> {
+function create_source(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): <link href="../GLib-2.0/GLib.Source.html">GLib.Source</link> {
     // Gjs wrapper for g_pollable_input_stream_create_source()
 }
   </code></synopsis>
-  <p>Creates a <link xref="GLib.Source"/> that triggers when <code>stream</code> can be read, or
+  <p>Creates a <link href="../GLib-2.0/GLib.Source.html">GLib.Source</link> that triggers when <code>stream</code> can be read, or
 <code>cancellable</code> is triggered or an error occurs. The callback on the
 source is of the <link xref="Gio.PollableSourceFunc"/> type.</p>  <p>As with <link xref="Gio.PollableInputStream.is_readable"/>, it is possible that
 the stream may not actually be readable even after the source

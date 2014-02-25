@@ -20,7 +20,7 @@ function get_bytes(): ByteArray {
     // Gjs wrapper for g_bytes_icon_get_bytes()
 }
   </code></synopsis>
-  <p>Gets the <link xref="GLib.Bytes"/> associated with the given <code>icon</code>.</p>
+  <p>Gets the <link href="../GLib-2.0/GLib.Bytes.html">GLib.Bytes</link> associated with the given <code>icon</code>.</p>
   <p>Since 2.38</p>
 <terms>
 <item>

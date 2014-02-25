@@ -19,7 +19,7 @@ at this node.</p>  <p>If this function returns non-<code>null</code>, the return
 be a <code>null</code>-terminated array of pointers to <link xref="Gio.DBusInterfaceInfo"/>
 structures describing the interfaces implemented by <code>node</code>.  This
 array will have <link xref="Gio.DBusInterfaceInfo.unref"/> called on each item
-before being freed with <link xref="GLib.free"/>.</p>  <p>The difference between returning <code>null</code> and an array containing zero
+before being freed with <link href="../GLib-2.0/GLib.free.html">GLib.free</link>.</p>  <p>The difference between returning <code>null</code> and an array containing zero
 items is that the standard DBus interfaces will returned to the
 remote introspector in the empty array case, but not in the <code>null</code>
 case.</p>

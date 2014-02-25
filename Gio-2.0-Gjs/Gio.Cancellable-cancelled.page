@@ -19,7 +19,7 @@ emitted in the thread that cancelled the operation, not the
 thread that is running the operation.</p>  <p>Note that disconnecting from this signal (or any signal) in a
 multi-threaded program is prone to race conditions. For instance
 it is possible that a signal handler may be invoked even after
-a call to <link xref="GObject.signal_handler_disconnect"/> for that handler has
+a call to <link href="../GObject-2.0/GObject.signal_handler_disconnect.html">GObject.signal_handler_disconnect</link> for that handler has
 already returned.</p>  <p>There is also a problem when cancellation happens right before
 connecting to the signal. If this happens the signal will
 unexpectedly not be emitted, and checking before connecting to

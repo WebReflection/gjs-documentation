@@ -20,7 +20,7 @@ function get_client_connection_type(): GObject.Type {
     // Gjs wrapper for g_tls_backend_get_client_connection_type()
 }
   </code></synopsis>
-  <p>Gets the <link xref="GLib.Type"/> of <code>backend</code>'s <link xref="Gio.TlsClientConnection"/> implementation.</p>
+  <p>Gets the <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link> of <code>backend</code>'s <link xref="Gio.TlsClientConnection"/> implementation.</p>
   <p>Since 2.28</p>
 <terms>
 <item>

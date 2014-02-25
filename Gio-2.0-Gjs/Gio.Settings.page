@@ -24,7 +24,7 @@ let settings = new Gio.Settings({
 application settings.</p>  <p>Reads and writes can be considered to be non-blocking.  Reading
 settings with <link xref="Gio.Settings"/> is typically extremely fast: on
 approximately the same order of magnitude (but slower than) a
-<link xref="GLib.HashTable"/> lookup.  Writing settings is also extremely fast in terms
+<link href="../GLib-2.0/GLib.HashTable.html">GLib.HashTable</link> lookup.  Writing settings is also extremely fast in terms
 of time to return to your application, but can be extremely expensive
 for other threads and other processes.  Many settings backends
 (including dconf) have lazy initialisation which means in the common
@@ -50,7 +50,7 @@ library to which the settings belong.  Examples of paths are
 Paths should not start with "/apps/", "/desktop/" or "/system/" as
 they often did in GConf.</p>  <p>Unlike other configuration systems (like GConf), GSettings does not
 restrict keys to basic types like strings and numbers. GSettings stores
-values as <link xref="GLib.Variant"/>, and allows any <link xref="GLib.VariantType"/> for keys. Key names
+values as <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link>, and allows any <link href="../GLib-2.0/GLib.VariantType.html">GLib.VariantType</link> for keys. Key names
 are restricted to lowercase characters, numbers and '-'. Furthermore,
 the names must begin with a lowercase character, must not end
 with a '-', and must not contain consecutive dashes.</p>  <p>Similar to GConf, the default values in GSettings schemas can be
@@ -69,7 +69,7 @@ e.g. "org.gnome.SessionManager". In particular, if the settings are
 for a specific service that owns a D-Bus bus name, the D-Bus bus name
 and schema id should match. For schemas which deal with settings not
 associated with one named application, the id should not use
-StudlyCaps, e.g. "org.gnome.font-rendering".</p>  <p>In addition to <link xref="GLib.Variant"/> types, keys can have types that have
+StudlyCaps, e.g. "org.gnome.font-rendering".</p>  <p>In addition to <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> types, keys can have types that have
 enumerated types. These can be described by a &lt;choice&gt;,
 &lt;enum&gt; or &lt;flags&gt; element, as seen in the
 [example][schema-enumerated]. The underlying type of such a key
@@ -132,7 +132,7 @@ serialized GVariant form, as in the following example:
     key1='string'
     key2=1.5
 ]|</p>  <p>glib-compile-schemas expects schema files to have the extension
-`.gschema.override`.</p>  <p>## Binding</p>  <p>A very convenient feature of GSettings lets you bind <link xref="GObject.Object"/> properties
+`.gschema.override`.</p>  <p>## Binding</p>  <p>A very convenient feature of GSettings lets you bind <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link> properties
 directly to settings, using <link xref="Gio.Settings.bind"/>. Once a GObject property
 has been bound to a setting, changes on either side are automatically
 propagated to the other side. GSettings handles details like mapping

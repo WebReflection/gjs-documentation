@@ -37,11 +37,11 @@ function read_bytes_async(count: Number(gsize), io_priority: Number(gint), cance
 }
   </code></synopsis>
   <p>Request an asynchronous read of <code>count</code> bytes from the stream into a
-new <link xref="GLib.Bytes"/>. When the operation is finished <code>callback</code> will be
+new <link href="../GLib-2.0/GLib.Bytes.html">GLib.Bytes</link>. When the operation is finished <code>callback</code> will be
 called. You can then call <link xref="Gio.InputStream.read_bytes_finish"/> to get the
 result of the operation.</p>  <p>During an async request no other sync and async calls are allowed
 on <code>stream</code>, and will result in <link xref="Gio.IOErrorEnum"/>.pending errors.</p>  <p>A value of <code>count</code> larger than %G_MAXSSIZE will cause a
-<link xref="Gio.IOErrorEnum"/>.invalid_argument error.</p>  <p>On success, the new <link xref="GLib.Bytes"/> will be passed to the callback. It is
+<link xref="Gio.IOErrorEnum"/>.invalid_argument error.</p>  <p>On success, the new <link href="../GLib-2.0/GLib.Bytes.html">GLib.Bytes</link> will be passed to the callback. It is
 not an error if this is smaller than the requested size, as it can
 happen e.g. near the end of a file, but generally we try to read as
 many bytes as requested. Zero is returned on end of file (or if

@@ -10,7 +10,7 @@
   </info>
   <title>Gio.SettingsGetMapping</title>
   <synopsis><code mime="text/x-gjs">
-function onSettingsGetMapping(value: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>): [ok: Boolean, result: void] {
+function onSettingsGetMapping(value: <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link>): [ok: Boolean, result: void] {
 }
   </code></synopsis>
   <p>The type of the function that is used to convert from a value stored
@@ -23,7 +23,7 @@ must be returned in this case.</p>
 <terms>
 <item>
 <title><code>value</code></title>
-  <p>the <link xref="GLib.Variant"/> to map, or <code>null</code></p>
+  <p>the <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> to map, or <code>null</code></p>
 </item>
 <item>
 <title><code>ok</code></title>

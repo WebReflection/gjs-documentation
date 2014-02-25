@@ -56,7 +56,7 @@
   </info>
   <title>Gio.DBusConnection.prototype.call</title>
   <synopsis><code mime="text/x-gjs">
-function call(bus_name: String, object_path: String, interface_name: String, method_name: String, parameters: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>, reply_type: <link href="../GLib-2.0/GLib.VariantType.page">GLib.VariantType</link>, flags: <link xref="Gio.DBusCallFlags">Gio.DBusCallFlags</link>, timeout_msec: Number(gint), cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
+function call(bus_name: String, object_path: String, interface_name: String, method_name: String, parameters: <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link>, reply_type: <link href="../GLib-2.0/GLib.VariantType.html">GLib.VariantType</link>, flags: <link xref="Gio.DBusCallFlags">Gio.DBusCallFlags</link>, timeout_msec: Number(gint), cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
     // Gjs wrapper for g_dbus_connection_call()
 }
   </code></synopsis>
@@ -68,8 +68,8 @@ fail with <link xref="Gio.IOErrorEnum"/>.cancelled. If <code>parameters</code> c
 not compatible with the D-Bus protocol, the operation fails with
 <link xref="Gio.IOErrorEnum"/>.invalid_argument.</p>  <p>If <code>reply_type</code> is non-<code>null</code> then the reply will be checked for having this type and an
 error will be raised if it does not match.  Said another way, if you give a <code>reply_type</code>
-then any non-<code>null</code> return value will be of this type.</p>  <p>If the <code>parameters</code> <link xref="GLib.Variant"/> is floating, it is consumed. This allows
-convenient 'inline' use of <link xref="GLib.Variant.new"/>, e.g.:
+then any non-<code>null</code> return value will be of this type.</p>  <p>If the <code>parameters</code> <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> is floating, it is consumed. This allows
+convenient 'inline' use of <link href="../GLib-2.0/GLib.Variant.new.html">GLib.Variant.new</link>, e.g.:
 |[&lt;!-- language="C" --&gt;
  g_dbus_connection_call (connection,
                          "org.freedesktop.StringThings",
@@ -114,7 +114,7 @@ the <link xref="Gio.DBusMessageFlags"/>.no_reply_expected flag set.</p>
 </item>
 <item>
 <title><code>parameters</code></title>
-  <p>a <link xref="GLib.Variant"/> tuple with parameters for the method
+  <p>a <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> tuple with parameters for the method
     or <code>null</code> if not passing parameters</p>
 </item>
 <item>

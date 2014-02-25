@@ -21,7 +21,7 @@ function vfunc_hash(): Number(guint) {
   <p>0 if <code>file</code> is not a valid <link xref="Gio.File"/>, otherwise an
     integer that can be used as hash value for the <link xref="Gio.File"/>.
     This function is intended for easily hashing a <link xref="Gio.File"/> to
-    add to a <link xref="GLib.HashTable"/> or similar data structure.</p>
+    add to a <link href="../GLib-2.0/GLib.HashTable.html">GLib.HashTable</link> or similar data structure.</p>
 </item>
 </terms>
 

@@ -25,9 +25,9 @@ function set_environ(env: String): void {
 }
   </code></synopsis>
   <p>Replace the entire environment of processes launched from this
-launcher with the given 'environ' variable.</p>  <p>Typically you will build this variable by using <link xref="GLib.listenv"/> to copy
-the process 'environ' and using the functions <link xref="GLib.environ_setenv"/>,
-<link xref="GLib.environ_unsetenv"/>, etc.</p>  <p>As an alternative, you can use <link xref="Gio.SubprocessLauncher.setenv"/>,
+launcher with the given 'environ' variable.</p>  <p>Typically you will build this variable by using <link href="../GLib-2.0/GLib.listenv.html">GLib.listenv</link> to copy
+the process 'environ' and using the functions <link href="../GLib-2.0/GLib.environ_setenv.html">GLib.environ_setenv</link>,
+<link href="../GLib-2.0/GLib.environ_unsetenv.html">GLib.environ_unsetenv</link>, etc.</p>  <p>As an alternative, you can use <link xref="Gio.SubprocessLauncher.setenv"/>,
 <link xref="Gio.SubprocessLauncher.unsetenv"/>, etc.</p>  <p>All strings in this array are expected to be in the GLib file name
 encoding.  On UNIX, this means that they can be arbitrary byte
 strings.  On Windows, they should be in UTF-8.</p>

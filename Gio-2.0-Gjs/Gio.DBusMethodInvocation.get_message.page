@@ -23,7 +23,7 @@ function get_message(): <link xref="Gio.DBusMessage">Gio.DBusMessage</link> {
   <p>Gets the <link xref="Gio.DBusMessage"/> for the method invocation. This is useful if
 you need to use low-level protocol features, such as UNIX file
 descriptor passing, that cannot be properly expressed in the
-<link xref="GLib.Variant"/> API.</p>  <p>See this [server][gdbus-server] and [client][gdbus-unix-fd-client]
+<link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> API.</p>  <p>See this [server][gdbus-server] and [client][gdbus-unix-fd-client]
 for an example of how to use this low-level API to send and receive
 UNIX file descriptors.</p>
   <p>Since 2.26</p>

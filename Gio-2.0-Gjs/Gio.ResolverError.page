@@ -9,7 +9,7 @@
     <link xref="index" group="enum" type="guide"/>
   </info>
   <title>Gio.ResolverError</title>
-  <p>An error code used with %G_RESOLVER_ERROR in a <link xref="GLib.Error"/> returned
+  <p>An error code used with %G_RESOLVER_ERROR in a <link href="../GLib-2.0/GLib.Error.html">GLib.Error</link> returned
 from a <link xref="Gio.Resolver"/> routine.</p>
   <p>Since 2.22</p>
 <terms>

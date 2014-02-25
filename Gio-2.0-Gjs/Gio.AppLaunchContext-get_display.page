@@ -24,7 +24,7 @@ application, by setting the `DISPLAY` environment variable.</p>
 </item>
 <item>
 <title><code>files</code></title>
-  <p>a <link xref="GLib.List"/> of <link xref="Gio.File"/> objects</p>
+  <p>a <link href="../GLib-2.0/GLib.List.html">GLib.List</link> of <link xref="Gio.File"/> objects</p>
 </item>
 <item>
 <title><code>Returns</code></title>

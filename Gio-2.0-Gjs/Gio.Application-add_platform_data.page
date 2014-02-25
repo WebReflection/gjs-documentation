@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Application::add_platform_data</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_add_platform_data(builder: <link href="../GLib-2.0/GLib.VariantBuilder.page">GLib.VariantBuilder</link>): void {
+function vfunc_add_platform_data(builder: <link href="../GLib-2.0/GLib.VariantBuilder.html">GLib.VariantBuilder</link>): void {
 }
   </code></synopsis>
 

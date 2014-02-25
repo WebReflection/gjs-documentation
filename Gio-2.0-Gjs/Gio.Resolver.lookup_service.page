@@ -40,7 +40,7 @@ function lookup_service(service: String, protocol: String, domain: String, cance
 <code>protocol</code> in the given <code>domain</code> and returns an array of <link xref="Gio.SrvTarget"/>.
 <code>domain</code> may be an ASCII-only or UTF-8 hostname. Note also that the
 <code>service</code> and <code>protocol</code> arguments do not include the leading underscore
-that appears in the actual DNS entry.</p>  <p>On success, <link xref="Gio.Resolver.lookup_service"/> will return a <link xref="GLib.List"/> of
+that appears in the actual DNS entry.</p>  <p>On success, <link xref="Gio.Resolver.lookup_service"/> will return a <link href="../GLib-2.0/GLib.List.html">GLib.List</link> of
 <link xref="Gio.SrvTarget"/>, sorted in order of preference. (That is, you should
 attempt to connect to the first target first, then the second if
 the first fails, etc.)</p>  <p>If the DNS resolution fails, @error (if non-<code>null</code>) will be set to

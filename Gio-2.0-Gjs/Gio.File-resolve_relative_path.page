@@ -24,7 +24,7 @@ function vfunc_resolve_relative_path(relative_path: String): <link xref="Gio.Fil
 <title><code>Returns</code></title>
   <p><link xref="Gio.File"/> to the resolved path.
     <code>null</code> if <code>relative_path</code> is <code>null</code> or if <code>file</code> is invalid.
-    Free the returned object with <link xref="GObject.Object.unref"/>.</p>
+    Free the returned object with <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link>.</p>
 </item>
 </terms>
 

@@ -31,7 +31,7 @@ function resources_enumerate_children(path: String, lookup_flags: <link xref="Gi
   <p>Returns all the names of children at the specified <code>path</code> in the set of
 globally registered resources.
 The return result is a <code>null</code> terminated list of strings which should
-be released with <link xref="GLib.strfreev"/>.</p>  <p><code>lookup_flags</code> controls the behaviour of the lookup.</p>
+be released with <link href="../GLib-2.0/GLib.strfreev.html">GLib.strfreev</link>.</p>  <p><code>lookup_flags</code> controls the behaviour of the lookup.</p>
   <p>Since 2.32</p>
 <terms>
 <item>

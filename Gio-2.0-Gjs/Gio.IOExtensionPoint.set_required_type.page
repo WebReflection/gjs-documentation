@@ -30,7 +30,7 @@ All implementations must henceforth have this type.</p>
 <terms>
 <item>
 <title><code>type</code></title>
-  <p>the <link xref="GLib.Type"/> to require</p>
+  <p>the <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link> to require</p>
 </item>
 </terms>
 

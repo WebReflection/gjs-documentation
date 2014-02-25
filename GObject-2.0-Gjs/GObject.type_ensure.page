@@ -38,7 +38,7 @@ type's _get_type() method is called.</p>
 <terms>
 <item>
 <title><code>type</code></title>
-  <p>a <link xref="GLib.Type"/></p>
+  <p>a <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link></p>
 </item>
 </terms>
 

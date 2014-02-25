@@ -28,18 +28,18 @@
   </info>
   <title>Gio.register_error</title>
   <synopsis><code mime="text/x-gjs">
-function register_error(error_domain: <link href="../GLib-2.0/GLib.Quark.page">GLib.Quark</link>, error_code: Number(gint), dbus_error_name: String): Boolean {
+function register_error(error_domain: <link href="../GLib-2.0/GLib.Quark.html">GLib.Quark</link>, error_code: Number(gint), dbus_error_name: String): Boolean {
     // Gjs wrapper for g_dbus_error_register_error()
 }
   </code></synopsis>
   <p>Creates an association to map between <code>dbus_error_name</code> and
-#GErrors specified by <code>error_domain</code> and <code>error_code</code>.</p>  <p>This is typically done in the routine that returns the <link xref="GLib.Quark"/> for
+#GErrors specified by <code>error_domain</code> and <code>error_code</code>.</p>  <p>This is typically done in the routine that returns the <link href="../GLib-2.0/GLib.Quark.html">GLib.Quark</link> for
 an error domain.</p>
   <p>Since 2.26</p>
 <terms>
 <item>
 <title><code>error_domain</code></title>
-  <p>A <link xref="GLib.Quark"/> for a error domain.</p>
+  <p>A <link href="../GLib-2.0/GLib.Quark.html">GLib.Quark</link> for a error domain.</p>
 </item>
 <item>
 <title><code>error_code</code></title>

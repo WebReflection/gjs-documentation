@@ -10,7 +10,7 @@
   </info>
   <title>Gio.RemoteActionGroup::activate_action_full</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_activate_action_full(action_name: String, parameter: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>, platform_data: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>): void {
+function vfunc_activate_action_full(action_name: String, parameter: <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link>, platform_data: <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link>): void {
 }
   </code></synopsis>
   <p>Activates the remote action.</p>  <p>This is the same as <link xref="Gio.ActionGroup.activate_action"/> except that it

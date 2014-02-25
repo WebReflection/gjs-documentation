@@ -162,7 +162,7 @@
 <item>
 <title><code>IOErrorEnum.DBUS_ERROR</code></title>
   <p>A remote object generated an error that
-    doesn't correspond to a locally registered <link xref="GLib.Error"/> error
+    doesn't correspond to a locally registered <link href="../GLib-2.0/GLib.Error.html">GLib.Error</link> error
     domain. Use <link xref="Gio.dbus_error_get_remote_error"/> to extract the D-Bus
     error name and <link xref="Gio.dbus_error_strip_remote_error"/> to fix up the
     message so it matches what was received on the wire. Since 2.26.</p>

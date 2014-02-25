@@ -38,8 +38,8 @@ function register_type(parent_type: GObject.Type, type_name: String, type_info: 
   </code></synopsis>
   <p>Looks up or registers a type that is implemented with a particular
 type plugin. If a type with name <code>type_name</code> was previously registered,
-the <link xref="GLib.Type"/> identifier for the type is returned, otherwise the type
-is newly registered, and the resulting <link xref="GLib.Type"/> identifier returned.</p>  <p>When reregistering a type (typically because a module is unloaded
+the <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link> identifier for the type is returned, otherwise the type
+is newly registered, and the resulting <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link> identifier returned.</p>  <p>When reregistering a type (typically because a module is unloaded
 then reloaded, and reinitialized), <code>module</code> and <code>parent_type</code> must
 be the same as they were previously.</p>  <p>As long as any instances of the type exist, the type plugin will
 not be unloaded.</p>

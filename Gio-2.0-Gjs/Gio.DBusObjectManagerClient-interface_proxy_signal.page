@@ -10,7 +10,7 @@
   </info>
   <title>Gio.DBusObjectManagerClient::interface_proxy_signal</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_interface_proxy_signal(object_proxy: <link xref="Gio.DBusObjectProxy">Gio.DBusObjectProxy</link>, interface_proxy: <link xref="Gio.DBusProxy">Gio.DBusProxy</link>, sender_name: String, signal_name: String, parameters: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>): void {
+function vfunc_interface_proxy_signal(object_proxy: <link xref="Gio.DBusObjectProxy">Gio.DBusObjectProxy</link>, interface_proxy: <link xref="Gio.DBusProxy">Gio.DBusProxy</link>, sender_name: String, signal_name: String, parameters: <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link>): void {
 }
   </code></synopsis>
 

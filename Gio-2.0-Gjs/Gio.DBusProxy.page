@@ -31,7 +31,7 @@ emitted. This behaviour can be changed by passing suitable
 well-known name, the property cache is flushed when the name owner
 vanishes and reloaded when a name owner appears.</p>  <p>If a <link xref="Gio.DBusProxy"/> is used for a well-known name, the owner of the
 name is tracked and can be read from
-<link xref="Gio.DBusProxy-g-name-owner"/>. Connect to the <link xref="GObject.Object-notify"/> signal to
+<link xref="Gio.DBusProxy-g-name-owner"/>. Connect to the <link href="../GObject-2.0/GObject.Object-notify.html">GObject.Object::notify</link> signal to
 get notified of changes. Additionally, only signals and property
 changes emitted from the current name owner are considered and
 calls are always sent to the current name owner. This avoids a
@@ -46,7 +46,7 @@ Therefore, the recommended way of working with proxies is to subclass
 class. This [example][gdbus-example-gdbus-codegen] shows how this can
 easily be done using the [gdbus-codegen][gdbus-codegen] tool.</p>  <p>A <link xref="Gio.DBusProxy"/> instance can be used from multiple threads but note
 that all signals (e.g. <link xref="Gio.DBusProxy-g-signal"/>, <link xref="Gio.DBusProxy-g-properties-changed"/>
-and <link xref="GObject.Object-notify"/>) are emitted in the
+and <link href="../GObject-2.0/GObject.Object-notify.html">GObject.Object::notify</link>) are emitted in the
 [thread-default main context][g-main-context-push-thread-default]
 of the thread where the instance was constructed.</p>  <p>An example using a proxy for a well-known name can be found in
 [gdbus-example-watch-proxy.c](https://git.gnome.org/browse/glib/tree/gio/tests/gdbus-example-watch-proxy.c)</p>

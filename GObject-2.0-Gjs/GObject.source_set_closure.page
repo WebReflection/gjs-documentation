@@ -24,12 +24,12 @@
   </info>
   <title>GObject.source_set_closure</title>
   <synopsis><code mime="text/x-gjs">
-function source_set_closure(source: <link href="../GLib-2.0/GLib.Source.page">GLib.Source</link>, closure: <link xref="GObject.Closure">GObject.Closure</link>): void {
+function source_set_closure(source: <link href="../GLib-2.0/GLib.Source.html">GLib.Source</link>, closure: <link xref="GObject.Closure">GObject.Closure</link>): void {
     // Gjs wrapper for g_source_set_closure()
 }
   </code></synopsis>
   <p>Set the callback for a source as a <link xref="GObject.Closure"/>.</p>  <p>If the source is not one of the standard GLib types, the @closure_callback
-and @closure_marshal fields of the <link xref="GLib.SourceFuncs"/> structure must have been
+and @closure_marshal fields of the <link href="../GLib-2.0/GLib.SourceFuncs.html">GLib.SourceFuncs</link> structure must have been
 filled in with pointers to appropriate functions.</p>
 
 <terms>

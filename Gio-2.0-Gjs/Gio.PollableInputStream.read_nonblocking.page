@@ -35,7 +35,7 @@ function read_nonblocking(buffer: void, count: Number(gsize), cancellable: <link
   <p>Attempts to read up to <code>count</code> bytes from <code>stream</code> into <code>buffer</code>, as
 with <link xref="Gio.InputStream.read"/>. If <code>stream</code> is not currently readable,
 this will immediately return <link xref="Gio.IOErrorEnum"/>.would_block, and you can
-use <link xref="Gio.PollableInputStream.create_source"/> to create a <link xref="GLib.Source"/>
+use <link xref="Gio.PollableInputStream.create_source"/> to create a <link href="../GLib-2.0/GLib.Source.html">GLib.Source</link>
 that will be triggered when <code>stream</code> is readable.</p>  <p>Note that since this method never blocks, you cannot actually
 use <code>cancellable</code> to cancel it. However, it will return an error
 if <code>cancellable</code> has already been cancelled when you call, which

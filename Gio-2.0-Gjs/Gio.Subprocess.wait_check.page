@@ -24,7 +24,7 @@ function wait_check(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</l
     // Gjs wrapper for g_subprocess_wait_check()
 }
   </code></synopsis>
-  <p>Combines <link xref="Gio.Subprocess.wait"/> with <link xref="GLib.spawn_check_exit_status"/>.</p>
+  <p>Combines <link xref="Gio.Subprocess.wait"/> with <link href="../GLib-2.0/GLib.spawn_check_exit_status.html">GLib.spawn_check_exit_status</link>.</p>
   <p>Since 2.40</p>
 <terms>
 <item>

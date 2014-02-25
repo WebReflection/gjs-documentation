@@ -24,7 +24,7 @@
   </info>
   <title>Gio.MemoryInputStream.new_from_data</title>
   <synopsis><code mime="text/x-gjs">
-function new_from_data(data: ByteArray, destroy: <link href="../GLib-2.0/GLib.DestroyNotify.page">GLib.DestroyNotify</link>): <link xref="Gio.InputStream">Gio.InputStream</link> {
+function new_from_data(data: ByteArray, destroy: <link href="../GLib-2.0/GLib.DestroyNotify.html">GLib.DestroyNotify</link>): <link xref="Gio.InputStream">Gio.InputStream</link> {
     // Gjs wrapper for g_memory_input_stream_new_from_data()
 }
   </code></synopsis>

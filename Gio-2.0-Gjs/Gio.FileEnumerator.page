@@ -24,7 +24,7 @@ of the children within a directory).</p>  <p>To get the next file's information 
 <link xref="Gio.FileEnumerator.next_files_async"/>. Note that the asynchronous
 version will return a list of #GFileInfos, whereas the
 synchronous will only return the next file in the enumerator.</p>  <p>The ordering of returned files is unspecified for non-Unix
-platforms; for more information, see <link xref="GLib.Dir.read_name"/>.  On Unix,
+platforms; for more information, see <link href="../GLib-2.0/GLib.Dir.read_name.html">GLib.Dir.prototype.read_name</link>.  On Unix,
 when operating on local files, returned files will be sorted by
 inode number.  Effectively you can assume that the ordering of
 returned files will be stable between successive calls (and
@@ -33,7 +33,7 @@ modification time, you will have to implement that in your
 application code.</p>  <p>To close a <link xref="Gio.FileEnumerator"/>, use <link xref="Gio.FileEnumerator.close"/>, or
 its asynchronous version, <link xref="Gio.FileEnumerator.close_async"/>. Once
 a <link xref="Gio.FileEnumerator"/> is closed, no further actions may be performed
-on it, and it should be freed with <link xref="GObject.Object.unref"/>.</p>
+on it, and it should be freed with <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link>.</p>
 
   <synopsis>
     <title>Hierarchy</title>

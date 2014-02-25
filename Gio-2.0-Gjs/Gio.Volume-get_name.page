@@ -19,7 +19,7 @@ function vfunc_get_name(): String {
 <item>
 <title><code>Returns</code></title>
   <p>the name for the given <code>volume</code>. The returned string should
-    be freed with <link xref="GLib.free"/> when no longer needed.</p>
+    be freed with <link href="../GLib-2.0/GLib.free.html">GLib.free</link> when no longer needed.</p>
 </item>
 </terms>
 

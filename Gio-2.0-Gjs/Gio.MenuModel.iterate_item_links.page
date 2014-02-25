@@ -25,7 +25,7 @@ function iterate_item_links(item_index: Number(gint)): <link xref="Gio.MenuLinkI
 }
   </code></synopsis>
   <p>Creates a <link xref="Gio.MenuLinkIter"/> to iterate over the links of the item at
-position <code>item_index</code> in <code>model</code>.</p>  <p>You must free the iterator with <link xref="GObject.Object.unref"/> when you are done.</p>
+position <code>item_index</code> in <code>model</code>.</p>  <p>You must free the iterator with <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link> when you are done.</p>
   <p>Since 2.32</p>
 <terms>
 <item>

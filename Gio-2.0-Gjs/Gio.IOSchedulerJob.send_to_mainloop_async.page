@@ -20,7 +20,7 @@
   </info>
   <title>Gio.IOSchedulerJob.prototype.send_to_mainloop_async</title>
   <synopsis><code mime="text/x-gjs">
-function send_to_mainloop_async(func: <link href="../GLib-2.0/GLib.SourceFunc.page">GLib.SourceFunc</link>): void {
+function send_to_mainloop_async(func: <link href="../GLib-2.0/GLib.SourceFunc.html">GLib.SourceFunc</link>): void {
     // Gjs wrapper for g_io_scheduler_job_send_to_mainloop_async()
 }
   </code></synopsis>
@@ -35,7 +35,7 @@ on to this function you have to ensure that it is not freed before
 <terms>
 <item>
 <title><code>func</code></title>
-  <p>a <link xref="GLib.SourceFunc"/> callback that will be called in the original thread</p>
+  <p>a <link href="../GLib-2.0/GLib.SourceFunc.html">GLib.SourceFunc</link> callback that will be called in the original thread</p>
 </item>
 </terms>
 

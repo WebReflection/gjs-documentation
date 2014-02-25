@@ -10,7 +10,7 @@
   </info>
   <title>Gio.RemoteActionGroup::change_action_state_full</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_change_action_state_full(action_name: String, value: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>, platform_data: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>): void {
+function vfunc_change_action_state_full(action_name: String, value: <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link>, platform_data: <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link>): void {
 }
   </code></synopsis>
   <p>Changes the state of a remote action.</p>  <p>This is the same as <link xref="Gio.ActionGroup.change_action_state"/> except that

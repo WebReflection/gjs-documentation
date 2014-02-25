@@ -28,12 +28,12 @@
   </info>
   <title>Gio.pollable_source_new_full</title>
   <synopsis><code mime="text/x-gjs">
-function pollable_source_new_full(pollable_stream: <link href="../GObject-2.0/GObject.Object.page">GObject.Object</link>, child_source: <link href="../GLib-2.0/GLib.Source.page">GLib.Source</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): <link href="../GLib-2.0/GLib.Source.page">GLib.Source</link> {
+function pollable_source_new_full(pollable_stream: <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link>, child_source: <link href="../GLib-2.0/GLib.Source.html">GLib.Source</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): <link href="../GLib-2.0/GLib.Source.html">GLib.Source</link> {
     // Gjs wrapper for g_pollable_source_new_full()
 }
   </code></synopsis>
   <p>Utility method for <link xref="Gio.PollableInputStream"/> and <link xref="Gio.PollableOutputStream"/>
-implementations. Creates a new <link xref="GLib.Source"/>, as with
+implementations. Creates a new <link href="../GLib-2.0/GLib.Source.html">GLib.Source</link>, as with
 <link xref="Gio.pollable_source_new"/>, but also attaching <code>child_source</code> (with a
 dummy callback), and <code>cancellable</code>, if they are non-<code>null</code>.</p>
   <p>Since 2.34</p>

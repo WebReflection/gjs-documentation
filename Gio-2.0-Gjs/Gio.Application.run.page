@@ -61,7 +61,7 @@ run for as much as 10 seconds with a use count of zero while waiting
 for the message that caused the activation to arrive.  After that,
 if the use count falls to zero the application will exit immediately,
 except in the case that <link xref="Gio.Application.set_inactivity_timeout"/> is in
-use.</p>  <p>This function sets the prgname (<link xref="GLib.set_prgname"/>), if not already set,
+use.</p>  <p>This function sets the prgname (<link href="../GLib-2.0/GLib.set_prgname.html">GLib.set_prgname</link>), if not already set,
 to the basename of argv[0].  Since 2.38, if <link xref="Gio.ApplicationFlags"/>.is_service
 is specified, the prgname is set to the application ID.  The main
 impact of this is is that the wmclass of windows created by Gtk+ will

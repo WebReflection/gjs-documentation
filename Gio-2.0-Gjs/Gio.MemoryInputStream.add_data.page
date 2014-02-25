@@ -24,7 +24,7 @@
   </info>
   <title>Gio.MemoryInputStream.prototype.add_data</title>
   <synopsis><code mime="text/x-gjs">
-function add_data(data: ByteArray, destroy: <link href="../GLib-2.0/GLib.DestroyNotify.page">GLib.DestroyNotify</link>): void {
+function add_data(data: ByteArray, destroy: <link href="../GLib-2.0/GLib.DestroyNotify.html">GLib.DestroyNotify</link>): void {
     // Gjs wrapper for g_memory_input_stream_add_data()
 }
   </code></synopsis>

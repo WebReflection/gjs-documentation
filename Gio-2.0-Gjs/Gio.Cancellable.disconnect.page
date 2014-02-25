@@ -25,7 +25,7 @@ function disconnect(handler_id: Number(gulong)): void {
 }
   </code></synopsis>
   <p>Disconnects a handler from a cancellable instance similar to
-<link xref="GObject.signal_handler_disconnect"/>.  Additionally, in the event that a
+<link href="../GObject-2.0/GObject.signal_handler_disconnect.html">GObject.signal_handler_disconnect</link>.  Additionally, in the event that a
 signal handler is currently running, this call will block until the
 handler has finished.  Calling this function from a
 <link xref="Gio.Cancellable-cancelled"/> signal handler will therefore result in a

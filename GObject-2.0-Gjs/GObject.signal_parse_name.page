@@ -28,7 +28,7 @@
   </info>
   <title>GObject.signal_parse_name</title>
   <synopsis><code mime="text/x-gjs">
-function signal_parse_name(detailed_signal: String, itype: GObject.Type, force_detail_quark: Boolean): [ok: Boolean, signal_id_p: Number(guint), detail_p: <link href="../GLib-2.0/GLib.Quark.page">GLib.Quark</link>] {
+function signal_parse_name(detailed_signal: String, itype: GObject.Type, force_detail_quark: Boolean): [ok: Boolean, signal_id_p: Number(guint), detail_p: <link href="../GLib-2.0/GLib.Quark.html">GLib.Quark</link>] {
     // Gjs wrapper for g_signal_parse_name()
 }
   </code></synopsis>
@@ -46,7 +46,7 @@ and @detail quark.</p>
 </item>
 <item>
 <title><code>force_detail_quark</code></title>
-  <p><code>true</code> forces creation of a <link xref="GLib.Quark"/> for the detail.</p>
+  <p><code>true</code> forces creation of a <link href="../GLib-2.0/GLib.Quark.html">GLib.Quark</link> for the detail.</p>
 </item>
 <item>
 <title><code>ok</code></title>

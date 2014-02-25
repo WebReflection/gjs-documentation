@@ -42,7 +42,7 @@ is some data to receive, the connection is closed, or there is an
 error. If there is no data available and the socket is in
 non-blocking mode, a <link xref="Gio.IOErrorEnum"/>.would_block error will be
 returned. To be notified when data is available, wait for the
-<link xref="GLib.IOCondition"/>.in condition.</p>  <p>On error -1 is returned and @error is set accordingly.</p>
+<link href="../GLib-2.0/GLib.IOCondition.html">GLib.IOCondition</link>.in condition.</p>  <p>On error -1 is returned and @error is set accordingly.</p>
   <p>Since 2.22</p>
 <terms>
 <item>

@@ -20,7 +20,7 @@
   </info>
   <title>Gio.Action.parse_detailed_name</title>
   <synopsis><code mime="text/x-gjs">
-function parse_detailed_name(detailed_name: String): [ok: Boolean, action_name: String, target_value: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>] {
+function parse_detailed_name(detailed_name: String): [ok: Boolean, action_name: String, target_value: <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link>] {
     // Gjs wrapper for g_action_parse_detailed_name()
 }
   </code></synopsis>
@@ -34,7 +34,7 @@ separated by a double colon ("::").  For example:
 "app.action::target".</p>  <p>The third format is used to represent an action with any type of
 target value, including strings.  The target value follows the action
 name, surrounded in parens.  For example: "app.action(42)".  The
-target value is parsed using <link xref="GLib.variant_parse"/>.  If a tuple-typed
+target value is parsed using <link href="../GLib-2.0/GLib.variant_parse.html">GLib.variant_parse</link>.  If a tuple-typed
 value is desired, it must be specified in the same way, resulting in
 two sets of parens, for example: "app.action((1,2,3))".  A string
 target can be specified this way as well: "app.action('target')".

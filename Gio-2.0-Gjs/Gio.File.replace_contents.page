@@ -76,7 +76,7 @@ changed the next time it is saved over.</p>
 <item>
 <title><code>new_etag</code></title>
   <p>a location to a new [entity tag][gfile-etag]
-     for the document. This should be freed with <link xref="GLib.free"/> when no longer
+     for the document. This should be freed with <link href="../GLib-2.0/GLib.free.html">GLib.free</link> when no longer
      needed, or <code>null</code></p>
 </item>
 </terms>

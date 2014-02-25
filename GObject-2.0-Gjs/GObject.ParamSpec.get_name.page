@@ -20,7 +20,7 @@ function get_name(): String {
     // Gjs wrapper for g_param_spec_get_name()
 }
   </code></synopsis>
-  <p>Get the name of a <link xref="GObject.ParamSpec"/>.</p>  <p>The name is always an "interned" string (as per <link xref="GLib.intern_string"/>).
+  <p>Get the name of a <link xref="GObject.ParamSpec"/>.</p>  <p>The name is always an "interned" string (as per <link href="../GLib-2.0/GLib.intern_string.html">GLib.intern_string</link>).
 This allows for pointer-value comparisons.</p>
 
 <terms>

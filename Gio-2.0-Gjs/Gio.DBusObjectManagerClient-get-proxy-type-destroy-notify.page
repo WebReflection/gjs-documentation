@@ -13,6 +13,6 @@
   <synopsis><code mime="text/x-gjs">
 DBusObjectManagerClient.get_proxy_type_destroy_notify: void (Read / Write / Construct Only)
   </code></synopsis>
-  <p>A <link xref="GLib.DestroyNotify"/> for the #gpointer user_data in <link xref="Gio.DBusObjectManagerClient-get-proxy-type-user-data"/>.</p>
+  <p>A <link href="../GLib-2.0/GLib.DestroyNotify.html">GLib.DestroyNotify</link> for the #gpointer user_data in <link xref="Gio.DBusObjectManagerClient-get-proxy-type-user-data"/>.</p>
   <p>Since 2.30</p>
 </page>

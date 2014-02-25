@@ -13,7 +13,7 @@
   <synopsis><code mime="text/x-gjs">
 DBusObjectManagerClient.get_proxy_type_func: void (Read / Write / Construct Only)
   </code></synopsis>
-  <p>The <link xref="Gio.DBusProxyTypeFunc"/> to use when determining what <link xref="GLib.Type"/> to
+  <p>The <link xref="Gio.DBusProxyTypeFunc"/> to use when determining what <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link> to
 use for interface proxies or <code>null</code>.</p>
   <p>Since 2.30</p>
 </page>

@@ -20,7 +20,7 @@
   </info>
   <title>Gio.Task.prototype.return_error</title>
   <synopsis><code mime="text/x-gjs">
-function return_error(error: <link href="../GLib-2.0/GLib.Error.page">GLib.Error</link>): void {
+function return_error(error: <link href="../GLib-2.0/GLib.Error.html">GLib.Error</link>): void {
     // Gjs wrapper for g_task_return_error()
 }
   </code></synopsis>
@@ -29,13 +29,13 @@ and completes the task (see <link xref="Gio.Task.return_pointer"/> for more
 discussion of exactly what this means).</p>  <p>Note that since the task takes ownership of <code>error</code>, and since the
 task may be completed before returning from <link xref="Gio.Task.return_error"/>,
 you cannot assume that <code>error</code> is still valid after calling this.
-Call <link xref="GLib.Error.copy"/> on the error if you need to keep a local copy
+Call <link href="../GLib-2.0/GLib.Error.copy.html">GLib.Error.prototype.copy</link> on the error if you need to keep a local copy
 as well.</p>  <p>See also <link xref="Gio.Task.return_new_error"/>.</p>
   <p>Since 2.36</p>
 <terms>
 <item>
 <title><code>error</code></title>
-  <p>the <link xref="GLib.Error"/> result of a task function.</p>
+  <p>the <link href="../GLib-2.0/GLib.Error.html">GLib.Error</link> result of a task function.</p>
 </item>
 </terms>
 

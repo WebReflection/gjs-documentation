@@ -47,7 +47,7 @@ extension point, the existing <link xref="Gio.IOExtension"/> object is returned.
 </item>
 <item>
 <title><code>type</code></title>
-  <p>the <link xref="GLib.Type"/> to register as extension</p>
+  <p>the <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link> to register as extension</p>
 </item>
 <item>
 <title><code>extension_name</code></title>

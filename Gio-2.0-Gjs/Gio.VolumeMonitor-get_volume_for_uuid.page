@@ -23,7 +23,7 @@ function vfunc_get_volume_for_uuid(uuid: String): <link xref="Gio.Volume">Gio.Vo
 <item>
 <title><code>Returns</code></title>
   <p>a <link xref="Gio.Volume"/> or <code>null</code> if no such volume is available.
-    Free the returned object with <link xref="GObject.Object.unref"/>.</p>
+    Free the returned object with <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link>.</p>
 </item>
 </terms>
 

@@ -22,12 +22,12 @@ function onTypePluginCompleteInterfaceInfo(plugin: <link xref="GObject.TypePlugi
 </item>
 <item>
 <title><code>instance_type</code></title>
-  <p>the <link xref="GLib.Type"/> of an instantiable type to which the interface
+  <p>the <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link> of an instantiable type to which the interface
  is added</p>
 </item>
 <item>
 <title><code>interface_type</code></title>
-  <p>the <link xref="GLib.Type"/> of the interface whose info is completed</p>
+  <p>the <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link> of the interface whose info is completed</p>
 </item>
 <item>
 <title><code>info</code></title>

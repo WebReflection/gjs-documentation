@@ -10,7 +10,7 @@
   </info>
   <title>Gio.MenuModel::get_item_attribute_value</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_item_attribute_value(item_index: Number(gint), attribute: String, expected_type: <link href="../GLib-2.0/GLib.VariantType.page">GLib.VariantType</link>): <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link> {
+function vfunc_get_item_attribute_value(item_index: Number(gint), attribute: String, expected_type: <link href="../GLib-2.0/GLib.VariantType.html">GLib.VariantType</link>): <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> {
 }
   </code></synopsis>
   <p>Queries the item at position <code>item_index</code> in <code>model</code> for the attribute

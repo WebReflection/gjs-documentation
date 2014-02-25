@@ -20,8 +20,8 @@ function get_volumes(): Array(<link xref="Gio.Volume">Gio.Volume</link>) {
     // Gjs wrapper for g_drive_get_volumes()
 }
   </code></synopsis>
-  <p>Get a list of mountable volumes for <code>drive</code>.</p>  <p>The returned list should be freed with <link xref="GLib.List.free"/>, after
-its elements have been unreffed with <link xref="GObject.Object.unref"/>.</p>
+  <p>Get a list of mountable volumes for <code>drive</code>.</p>  <p>The returned list should be freed with <link href="../GLib-2.0/GLib.List.free.html">GLib.List.free</link>, after
+its elements have been unreffed with <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link>.</p>
 
 <terms>
 <item>

@@ -28,18 +28,18 @@
   </info>
   <title>Gio.Initable.newv</title>
   <synopsis><code mime="text/x-gjs">
-function newv(object_type: GObject.Type, parameters: Array(<link href="../GObject-2.0/GObject.Parameter.page">GObject.Parameter</link>), cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): <link href="../GObject-2.0/GObject.Object.page">GObject.Object</link> {
+function newv(object_type: GObject.Type, parameters: Array(<link href="../GObject-2.0/GObject.Parameter.html">GObject.Parameter</link>), cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link> {
     // Gjs wrapper for g_initable_newv()
 }
   </code></synopsis>
   <p>Helper function for constructing <link xref="Gio.Initable"/> object. This is
-similar to <link xref="GObject.Object.new"/> but also initializes the object
+similar to <link href="../GObject-2.0/GObject.Object.new.html">GObject.Object.new</link> but also initializes the object
 and returns <code>null</code>, setting an error on failure.</p>
   <p>Since 2.22</p>
 <terms>
 <item>
 <title><code>object_type</code></title>
-  <p>a <link xref="GLib.Type"/> supporting <link xref="Gio.Initable"/>.</p>
+  <p>a <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link> supporting <link xref="Gio.Initable"/>.</p>
 </item>
 <item>
 <title><code>parameters</code></title>

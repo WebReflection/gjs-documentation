@@ -9,7 +9,7 @@
     <link xref="index" group="enum" type="guide"/>
   </info>
   <title>Gio.TlsError</title>
-  <p>An error code used with %G_TLS_ERROR in a <link xref="GLib.Error"/> returned from a
+  <p>An error code used with %G_TLS_ERROR in a <link href="../GLib-2.0/GLib.Error.html">GLib.Error</link> returned from a
 TLS-related routine.</p>
   <p>Since 2.28</p>
 <terms>

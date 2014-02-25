@@ -36,13 +36,13 @@ function factory_register_type(g_type: GObject.Type, family: <link xref="Gio.Soc
     // Gjs wrapper for g_socket_connection_factory_register_type()
 }
   </code></synopsis>
-  <p>Looks up the <link xref="GLib.Type"/> to be used when creating socket connections on
+  <p>Looks up the <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link> to be used when creating socket connections on
 sockets with the specified <code>family</code>, <code>type</code> and <code>protocol</code>.</p>  <p>If no type is registered, the <link xref="Gio.SocketConnection"/> base type is returned.</p>
   <p>Since 2.22</p>
 <terms>
 <item>
 <title><code>g_type</code></title>
-  <p>a <link xref="GLib.Type"/>, inheriting from %G_TYPE_SOCKET_CONNECTION</p>
+  <p>a <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link>, inheriting from %G_TYPE_SOCKET_CONNECTION</p>
 </item>
 <item>
 <title><code>family</code></title>

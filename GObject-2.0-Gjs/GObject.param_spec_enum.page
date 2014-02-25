@@ -62,7 +62,7 @@ property.</p>  <p>See <link xref="GObject.ParamSpec.internal"/> for details on p
 </item>
 <item>
 <title><code>enum_type</code></title>
-  <p>a <link xref="GLib.Type"/> derived from %G_TYPE_ENUM</p>
+  <p>a <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link> derived from %G_TYPE_ENUM</p>
 </item>
 <item>
 <title><code>default_value</code></title>

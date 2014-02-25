@@ -10,7 +10,7 @@
   </info>
   <title>Gio.ActionGroup::action_state_changed</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_action_state_changed(action_name: String, state: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>): void {
+function vfunc_action_state_changed(action_name: String, state: <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link>): void {
 }
   </code></synopsis>
   <p>Emits the <link xref="Gio.ActionGroup-action-state-changed"/> signal on <code>action_group</code>.</p>  <p>This function should only be called by <link xref="Gio.ActionGroup"/> implementations.</p>

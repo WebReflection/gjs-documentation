@@ -24,7 +24,7 @@
   </info>
   <title>Gio.SimpleAction.new</title>
   <synopsis><code mime="text/x-gjs">
-function new(name: String, parameter_type: <link href="../GLib-2.0/GLib.VariantType.page">GLib.VariantType</link>): <link xref="Gio.SimpleAction">Gio.SimpleAction</link> {
+function new(name: String, parameter_type: <link href="../GLib-2.0/GLib.VariantType.html">GLib.VariantType</link>): <link xref="Gio.SimpleAction">Gio.SimpleAction</link> {
     // Gjs wrapper for g_simple_action_new()
 }
   </code></synopsis>

@@ -40,7 +40,7 @@ tag for the document, if present.</p>
 <item>
 <title><code>new_etag</code></title>
   <p>a location of a new [entity tag][gfile-etag]
-    for the document. This should be freed with <link xref="GLib.free"/> when it is no
+    for the document. This should be freed with <link href="../GLib-2.0/GLib.free.html">GLib.free</link> when it is no
     longer needed, or <code>null</code></p>
 </item>
 </terms>

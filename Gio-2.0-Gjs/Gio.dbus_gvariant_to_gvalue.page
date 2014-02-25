@@ -20,22 +20,22 @@
   </info>
   <title>Gio.dbus_gvariant_to_gvalue</title>
   <synopsis><code mime="text/x-gjs">
-function dbus_gvariant_to_gvalue(value: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>): <link href="../GObject-2.0/GObject.Value.page">GObject.Value</link> {
+function dbus_gvariant_to_gvalue(value: <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link>): <link href="../GObject-2.0/GObject.Value.html">GObject.Value</link> {
     // Gjs wrapper for g_dbus_gvariant_to_gvalue()
 }
   </code></synopsis>
-  <p>Converts a <link xref="GLib.Variant"/> to a <link xref="GObject.Value"/>. If <code>value</code> is floating, it is consumed.</p>  <p>The rules specified in the <link xref="Gio.dbus_gvalue_to_gvariant"/> function are
-used - this function is essentially its reverse form.</p>  <p>The conversion never fails - a valid <link xref="GObject.Value"/> is always returned in
+  <p>Converts a <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> to a <link href="../GObject-2.0/GObject.Value.html">GObject.Value</link>. If <code>value</code> is floating, it is consumed.</p>  <p>The rules specified in the <link xref="Gio.dbus_gvalue_to_gvariant"/> function are
+used - this function is essentially its reverse form.</p>  <p>The conversion never fails - a valid <link href="../GObject-2.0/GObject.Value.html">GObject.Value</link> is always returned in
 <code>out_gvalue</code>.</p>
   <p>Since 2.30</p>
 <terms>
 <item>
 <title><code>value</code></title>
-  <p>A <link xref="GLib.Variant"/>.</p>
+  <p>A <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link>.</p>
 </item>
 <item>
 <title><code>out_gvalue</code></title>
-  <p>Return location pointing to a zero-filled (uninitialized) <link xref="GObject.Value"/>.</p>
+  <p>Return location pointing to a zero-filled (uninitialized) <link href="../GObject-2.0/GObject.Value.html">GObject.Value</link>.</p>
 </item>
 </terms>
 

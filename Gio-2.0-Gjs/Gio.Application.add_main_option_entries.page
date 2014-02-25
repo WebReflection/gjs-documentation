@@ -20,16 +20,16 @@
   </info>
   <title>Gio.Application.prototype.add_main_option_entries</title>
   <synopsis><code mime="text/x-gjs">
-function add_main_option_entries(entries: <link href="../GLib-2.0/GLib.OptionEntry.page">GLib.OptionEntry</link>): void {
+function add_main_option_entries(entries: <link href="../GLib-2.0/GLib.OptionEntry.html">GLib.OptionEntry</link>): void {
     // Gjs wrapper for g_application_add_main_option_entries()
 }
   </code></synopsis>
-  <p>Adds main option entries to be handled by <code>application</code>.</p>  <p>This function is comparable to <link xref="GLib.OptionContext.add_main_entries"/>.</p>  <p>After the commandline arguments are parsed, the
+  <p>Adds main option entries to be handled by <code>application</code>.</p>  <p>This function is comparable to <link href="../GLib-2.0/GLib.OptionContext.add_main_entries.html">GLib.OptionContext.prototype.add_main_entries</link>.</p>  <p>After the commandline arguments are parsed, the
 <link xref="Gio.Application-handle-local-options"/> signal will be emitted.  At this
 point, the application can inspect the values pointed to by @arg_data
-in the given #GOptionEntrys.</p>  <p>Unlike <link xref="GLib.OptionContext"/>, <link xref="Gio.Application"/> supports giving a <code>null</code>
-@arg_data for a non-callback <link xref="GLib.OptionEntry"/>.  This results in the
-argument in question being packed into a <link xref="GLib.VariantDict"/> which is also
+in the given #GOptionEntrys.</p>  <p>Unlike <link href="../GLib-2.0/GLib.OptionContext.html">GLib.OptionContext</link>, <link xref="Gio.Application"/> supports giving a <code>null</code>
+@arg_data for a non-callback <link href="../GLib-2.0/GLib.OptionEntry.html">GLib.OptionEntry</link>.  This results in the
+argument in question being packed into a <link href="../GLib-2.0/GLib.VariantDict.html">GLib.VariantDict</link> which is also
 passed to <link xref="Gio.Application-handle-local-options"/>, where it can be
 inspected and modified.  If <link xref="Gio.ApplicationFlags"/>.handles_command_line is
 set, then the resulting dictionary is sent to the primary instance,
@@ -37,10 +37,10 @@ where <link xref="Gio.ApplicationCommandLine.get_options_dict"/> will return it.
 This "packing" is done according to the type of the argument --
 booleans for normal flags, strings for strings, bytestrings for
 filenames, etc.  The packing only occurs if the flag is given (ie: we
-do not pack a "false" <link xref="GLib.Variant"/> in the case that a flag is missing).</p>  <p>In general, it is recommended that all commandline arguments are
+do not pack a "false" <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> in the case that a flag is missing).</p>  <p>In general, it is recommended that all commandline arguments are
 parsed locally.  The options dictionary should then be used to
 transmit the result of the parsing to the primary instance, where
-<link xref="GLib.VariantDict.lookup"/> can be used.  For local options, it is
+<link href="../GLib-2.0/GLib.VariantDict.lookup.html">GLib.VariantDict.prototype.lookup</link> can be used.  For local options, it is
 possible to either use @arg_data in the usual way, or to consult (and
 potentially remove) the option from the options dictionary.</p>  <p>This function is new in GLib 2.40.  Before then, the only real choice
 was to send all of the commandline arguments (options and all) to the

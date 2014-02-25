@@ -24,7 +24,7 @@ function vfunc_lookup_certificates_issued_by_finish(result: <link xref="Gio.Asyn
 <item>
 <title><code>Returns</code></title>
   <p>a newly allocated list of <link xref="Gio.TlsCertificate"/>
-objects. Use <link xref="GObject.Object.unref"/> on each certificate, and <link xref="GLib.List.free"/> on the release the list.</p>
+objects. Use <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link> on each certificate, and <link href="../GLib-2.0/GLib.List.free.html">GLib.List.free</link> on the release the list.</p>
 </item>
 </terms>
 

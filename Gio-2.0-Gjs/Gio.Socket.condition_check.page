@@ -20,7 +20,7 @@
   </info>
   <title>Gio.Socket.prototype.condition_check</title>
   <synopsis><code mime="text/x-gjs">
-function condition_check(condition: <link href="../GLib-2.0/GLib.IOCondition.page">GLib.IOCondition</link>): <link href="../GLib-2.0/GLib.IOCondition.page">GLib.IOCondition</link> {
+function condition_check(condition: <link href="../GLib-2.0/GLib.IOCondition.html">GLib.IOCondition</link>): <link href="../GLib-2.0/GLib.IOCondition.html">GLib.IOCondition</link> {
     // Gjs wrapper for g_socket_condition_check()
 }
   </code></synopsis>
@@ -33,13 +33,13 @@ is returned.</p>  <p>Note that on Windows, it is possible for an operation to re
 writing. Rather than calling <link xref="Gio.Socket.condition_check"/> and then
 writing to the socket if it succeeds, it is generally better to
 simply try writing to the socket right away, and try again later if
-the initial attempt returns <link xref="Gio.IOErrorEnum"/>.would_block.</p>  <p>It is meaningless to specify <link xref="GLib.IOCondition"/>.err or <link xref="GLib.IOCondition"/>.hup in condition;
+the initial attempt returns <link xref="Gio.IOErrorEnum"/>.would_block.</p>  <p>It is meaningless to specify <link href="../GLib-2.0/GLib.IOCondition.html">GLib.IOCondition</link>.err or <link href="../GLib-2.0/GLib.IOCondition.html">GLib.IOCondition</link>.hup in condition;
 these conditions will always be set in the output if they are true.</p>  <p>This call never blocks.</p>
   <p>Since 2.22</p>
 <terms>
 <item>
 <title><code>condition</code></title>
-  <p>a <link xref="GLib.IOCondition"/> mask to check</p>
+  <p>a <link href="../GLib-2.0/GLib.IOCondition.html">GLib.IOCondition</link> mask to check</p>
 </item>
 <item>
 <title><code>Returns</code></title>

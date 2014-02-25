@@ -23,7 +23,7 @@ function steal_fds(): [return_value: Array(Number(gint)), length: Number(gint)] 
   <p>Returns the array of file descriptors that is contained in this
 object.</p>  <p>After this call, the descriptors are no longer contained in
 <code>message</code>. Further calls will return an empty list (unless more
-descriptors have been added).</p>  <p>The return result of this function must be freed with <link xref="GLib.free"/>.
+descriptors have been added).</p>  <p>The return result of this function must be freed with <link href="../GLib-2.0/GLib.free.html">GLib.free</link>.
 The caller is also responsible for closing all of the file
 descriptors.</p>  <p>If <code>length</code> is non-<code>null</code> then it is set to the number of file
 descriptors in the returned array. The returned array is also

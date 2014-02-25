@@ -16,12 +16,12 @@
   </info>
   <title>Gio.SettingsSchemaKey.prototype.get_range</title>
   <synopsis><code mime="text/x-gjs">
-function get_range(): <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link> {
+function get_range(): <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> {
     // Gjs wrapper for g_settings_schema_key_get_range()
 }
   </code></synopsis>
-  <p>Queries the range of a key.</p>  <p>This function will return a <link xref="GLib.Variant"/> that fully describes the range
-of values that are valid for <code>key</code>.</p>  <p>The type of <link xref="GLib.Variant"/> returned is `(sv)`. The string describes
+  <p>Queries the range of a key.</p>  <p>This function will return a <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> that fully describes the range
+of values that are valid for <code>key</code>.</p>  <p>The type of <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> returned is `(sv)`. The string describes
 the type of range restriction in effect. The type and meaning of
 the value contained in the variant depends on the string.</p>  <p>If the string is `'type'` then the variant contains an empty array.
 The element type of that empty array is the expected type of value
@@ -38,7 +38,7 @@ for this key.</p>  <p>This information should not be used by normal programs.  I
 considered to be a hint for introspection purposes.  Normal programs
 should already know what is permitted by their own schema.  The
 format may change in any way in the future -- but particularly, new
-forms may be added to the possibilities described above.</p>  <p>You should free the returned value with <link xref="GLib.Variant.unref"/> when it is
+forms may be added to the possibilities described above.</p>  <p>You should free the returned value with <link href="../GLib-2.0/GLib.Variant.unref.html">GLib.Variant.prototype.unref</link> when it is
 no longer needed.</p>
   <p>Since 2.40</p>
 <terms>

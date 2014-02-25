@@ -35,7 +35,7 @@ was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be return
 <title><code>Returns</code></title>
   <p>a <link xref="Gio.File"/> specifying what <code>file</code> was renamed to,
     or <code>null</code> if there was an error.
-    Free the returned object with <link xref="GObject.Object.unref"/>.</p>
+    Free the returned object with <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link>.</p>
 </item>
 </terms>
 

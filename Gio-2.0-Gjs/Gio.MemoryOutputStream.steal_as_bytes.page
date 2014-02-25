@@ -20,7 +20,7 @@ function steal_as_bytes(): ByteArray {
     // Gjs wrapper for g_memory_output_stream_steal_as_bytes()
 }
   </code></synopsis>
-  <p>Returns data from the <code>ostream</code> as a <link xref="GLib.Bytes"/>. <code>ostream</code> must be
+  <p>Returns data from the <code>ostream</code> as a <link href="../GLib-2.0/GLib.Bytes.html">GLib.Bytes</link>. <code>ostream</code> must be
 closed before calling this function.</p>
   <p>Since 2.34</p>
 <terms>

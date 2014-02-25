@@ -20,7 +20,7 @@ function vfunc_get_drive(): <link xref="Gio.Drive">Gio.Drive</link> {
 <title><code>Returns</code></title>
   <p>a <link xref="Gio.Drive"/> or <code>null</code> if <code>volume</code> is not
     associated with a drive. The returned object should be unreffed
-    with <link xref="GObject.Object.unref"/> when no longer needed.</p>
+    with <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link> when no longer needed.</p>
 </item>
 </terms>
 

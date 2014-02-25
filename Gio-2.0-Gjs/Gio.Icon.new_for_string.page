@@ -26,7 +26,7 @@ function new_for_string(str: String): <link xref="Gio.Icon">Gio.Icon</link> {
   </code></synopsis>
   <p>Generate a <link xref="Gio.Icon"/> instance from <code>str</code>. This function can fail if
 <code>str</code> is not valid - see <link xref="Gio.Icon.to_string"/> for discussion.</p>  <p>If your application or library provides one or more <link xref="Gio.Icon"/>
-implementations you need to ensure that each <link xref="GLib.Type"/> is registered
+implementations you need to ensure that each <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link> is registered
 with the type system prior to calling <link xref="Gio.icon_new_for_string"/>.</p>
   <p>Since 2.20</p>
 <terms>

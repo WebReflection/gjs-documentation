@@ -13,6 +13,6 @@
   <synopsis><code mime="text/x-gjs">
 ParamSpecTypeInfo.value_type: GObject.Type (Read / Write)
   </code></synopsis>
-  <p>The <link xref="GLib.Type"/> of values conforming to this <link xref="GObject.ParamSpec"/></p>
+  <p>The <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link> of values conforming to this <link xref="GObject.ParamSpec"/></p>
 
 </page>

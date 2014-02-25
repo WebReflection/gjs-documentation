@@ -58,7 +58,7 @@ function param_spec_gtype(name: String, nick: String, blurb: String, is_a_type: 
 </item>
 <item>
 <title><code>is_a_type</code></title>
-  <p>a <link xref="GLib.Type"/> whose subtypes are allowed as values
+  <p>a <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link> whose subtypes are allowed as values
  of the property (use %G_TYPE_NONE for any type)</p>
 </item>
 <item>

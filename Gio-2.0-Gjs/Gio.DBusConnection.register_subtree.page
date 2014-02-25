@@ -36,7 +36,7 @@
   </info>
   <title>Gio.DBusConnection.prototype.register_subtree</title>
   <synopsis><code mime="text/x-gjs">
-function register_subtree(object_path: String, vtable: <link xref="Gio.DBusSubtreeVTable">Gio.DBusSubtreeVTable</link>, flags: <link xref="Gio.DBusSubtreeFlags">Gio.DBusSubtreeFlags</link>, user_data: void, user_data_free_func: <link href="../GLib-2.0/GLib.DestroyNotify.page">GLib.DestroyNotify</link>): Number(guint) {
+function register_subtree(object_path: String, vtable: <link xref="Gio.DBusSubtreeVTable">Gio.DBusSubtreeVTable</link>, flags: <link xref="Gio.DBusSubtreeFlags">Gio.DBusSubtreeFlags</link>, user_data: void, user_data_free_func: <link href="../GLib-2.0/GLib.DestroyNotify.html">GLib.DestroyNotify</link>): Number(guint) {
     // Gjs wrapper for g_dbus_connection_register_subtree()
 }
   </code></synopsis>

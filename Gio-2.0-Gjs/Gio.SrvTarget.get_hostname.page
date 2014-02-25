@@ -21,9 +21,9 @@ function get_hostname(): String {
 }
   </code></synopsis>
   <p>Gets <code>target</code>'s hostname (in ASCII form; if you are going to present
-this to the user, you should use <link xref="GLib.hostname_is_ascii_encoded"/> to
+this to the user, you should use <link href="../GLib-2.0/GLib.hostname_is_ascii_encoded.html">GLib.hostname_is_ascii_encoded</link> to
 check if it contains encoded Unicode segments, and use
-<link xref="GLib.hostname_to_unicode"/> to convert it if it does.)</p>
+<link href="../GLib-2.0/GLib.hostname_to_unicode.html">GLib.hostname_to_unicode</link> to convert it if it does.)</p>
   <p>Since 2.22</p>
 <terms>
 <item>

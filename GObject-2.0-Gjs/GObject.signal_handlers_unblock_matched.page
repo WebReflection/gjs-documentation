@@ -44,7 +44,7 @@
   </info>
   <title>GObject.signal_handlers_unblock_matched</title>
   <synopsis><code mime="text/x-gjs">
-function signal_handlers_unblock_matched(instance: <link xref="GObject.Object">GObject.Object</link>, mask: <link xref="GObject.SignalMatchType">GObject.SignalMatchType</link>, signal_id: Number(guint), detail: <link href="../GLib-2.0/GLib.Quark.page">GLib.Quark</link>, closure: <link xref="GObject.Closure">GObject.Closure</link>, func: void, data: void): Number(guint) {
+function signal_handlers_unblock_matched(instance: <link xref="GObject.Object">GObject.Object</link>, mask: <link xref="GObject.SignalMatchType">GObject.SignalMatchType</link>, signal_id: Number(guint), detail: <link href="../GLib-2.0/GLib.Quark.html">GLib.Quark</link>, closure: <link xref="GObject.Closure">GObject.Closure</link>, func: void, data: void): Number(guint) {
     // Gjs wrapper for g_signal_handlers_unblock_matched()
 }
   </code></synopsis>

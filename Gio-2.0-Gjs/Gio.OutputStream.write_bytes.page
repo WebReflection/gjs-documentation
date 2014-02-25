@@ -29,19 +29,19 @@ function write_bytes(bytes: ByteArray, cancellable: <link xref="Gio.Cancellable"
 }
   </code></synopsis>
   <p>A wrapper function for <link xref="Gio.OutputStream.write"/> which takes a
-<link xref="GLib.Bytes"/> as input.  This can be more convenient for use by language
-bindings or in other cases where the refcounted nature of <link xref="GLib.Bytes"/>
+<link href="../GLib-2.0/GLib.Bytes.html">GLib.Bytes</link> as input.  This can be more convenient for use by language
+bindings or in other cases where the refcounted nature of <link href="../GLib-2.0/GLib.Bytes.html">GLib.Bytes</link>
 is helpful over a bare pointer interface.</p>  <p>However, note that this function may still perform partial writes,
 just like <link xref="Gio.OutputStream.write"/>.  If that occurs, to continue
-writing, you will need to create a new <link xref="GLib.Bytes"/> containing just the
-remaining bytes, using <link xref="GLib.Bytes.new_from_bytes"/>. Passing the same
-<link xref="GLib.Bytes"/> instance multiple times potentially can result in duplicated
+writing, you will need to create a new <link href="../GLib-2.0/GLib.Bytes.html">GLib.Bytes</link> containing just the
+remaining bytes, using <link href="../GLib-2.0/GLib.Bytes.new_from_bytes.html">GLib.Bytes.prototype.new_from_bytes</link>. Passing the same
+<link href="../GLib-2.0/GLib.Bytes.html">GLib.Bytes</link> instance multiple times potentially can result in duplicated
 data in the output stream.</p>
 
 <terms>
 <item>
 <title><code>bytes</code></title>
-  <p>the <link xref="GLib.Bytes"/> to write</p>
+  <p>the <link href="../GLib-2.0/GLib.Bytes.html">GLib.Bytes</link> to write</p>
 </item>
 <item>
 <title><code>cancellable</code></title>

@@ -11,7 +11,7 @@
   </info>
   <title>Gio.FileMonitor.context</title>
   <synopsis><code mime="text/x-gjs">
-FileMonitor.context: <link href="../GLib-2.0/GLib.MainContext.page">GLib.MainContext</link> (Write / Construct Only)
+FileMonitor.context: <link href="../GLib-2.0/GLib.MainContext.html">GLib.MainContext</link> (Write / Construct Only)
   </code></synopsis>
 
 

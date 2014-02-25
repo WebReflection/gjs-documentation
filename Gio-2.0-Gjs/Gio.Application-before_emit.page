@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Application::before_emit</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_before_emit(platform_data: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>): void {
+function vfunc_before_emit(platform_data: <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link>): void {
 }
   </code></synopsis>
 

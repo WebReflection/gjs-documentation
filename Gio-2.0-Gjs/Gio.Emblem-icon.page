@@ -11,7 +11,7 @@
   </info>
   <title>Gio.Emblem.icon</title>
   <synopsis><code mime="text/x-gjs">
-Emblem.icon: <link href="../GObject-2.0/GObject.Object.page">GObject.Object</link> (Read / Write / Construct Only)
+Emblem.icon: <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link> (Read / Write / Construct Only)
   </code></synopsis>
 
 

@@ -23,7 +23,7 @@ function get_accepted_cas(): Array(Array(void)) {
   <p>Gets the list of distinguished names of the Certificate Authorities
 that the server will accept certificates from. This will be set
 during the TLS handshake if the server requests a certificate.
-Otherwise, it will be <code>null</code>.</p>  <p>Each item in the list is a <link xref="GLib.ByteArray"/> which contains the complete
+Otherwise, it will be <code>null</code>.</p>  <p>Each item in the list is a <link href="../GLib-2.0/GLib.ByteArray.html">GLib.ByteArray</link> which contains the complete
 subject DN of the certificate authority.</p>
   <p>Since 2.28</p>
 <terms>

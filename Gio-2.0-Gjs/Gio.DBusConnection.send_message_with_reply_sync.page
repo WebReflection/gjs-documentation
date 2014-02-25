@@ -50,7 +50,7 @@ fail with <link xref="Gio.IOErrorEnum"/>.cancelled. If <code>message</code> is n
 the operation fails with <link xref="Gio.IOErrorEnum"/>.invalid_argument.</p>  <p>Note that @error is only set if a local in-process error
 occurred. That is to say that the returned <link xref="Gio.DBusMessage"/> object may
 be of type <link xref="Gio.DBusMessageType"/>.error. Use
-<link xref="Gio.DBusMessage.to_gerror"/> to transcode this to a <link xref="GLib.Error"/>.</p>  <p>See this [server][gdbus-server] and [client][gdbus-unix-fd-client]
+<link xref="Gio.DBusMessage.to_gerror"/> to transcode this to a <link href="../GLib-2.0/GLib.Error.html">GLib.Error</link>.</p>  <p>See this [server][gdbus-server] and [client][gdbus-unix-fd-client]
 for an example of how to use this low-level API to send and receive
 UNIX file descriptors.</p>  <p>Note that <code>message</code> must be unlocked, unless <code>flags</code> contain the
 <link xref="Gio.DBusSendMessageFlags"/>.preserve_serial flag.</p>

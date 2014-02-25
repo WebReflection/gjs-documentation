@@ -19,7 +19,7 @@ function vfunc_hash(): Number(guint) {
 <item>
 <title><code>Returns</code></title>
   <p>a #guint containing a hash for the <code>icon</code>, suitable for
-use in a <link xref="GLib.HashTable"/> or similar data structure.</p>
+use in a <link href="../GLib-2.0/GLib.HashTable.html">GLib.HashTable</link> or similar data structure.</p>
 </item>
 </terms>
 

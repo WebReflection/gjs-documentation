@@ -39,7 +39,7 @@ function get_startup_notify_id(info: <link xref="Gio.AppInfo">Gio.AppInfo</link>
 </item>
 <item>
 <title><code>files</code></title>
-  <p>a <link xref="GLib.List"/> of of <link xref="Gio.File"/> objects</p>
+  <p>a <link href="../GLib-2.0/GLib.List.html">GLib.List</link> of of <link xref="Gio.File"/> objects</p>
 </item>
 <item>
 <title><code>Returns</code></title>

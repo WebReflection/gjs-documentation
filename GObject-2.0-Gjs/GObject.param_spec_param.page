@@ -58,7 +58,7 @@ property.</p>  <p>See <link xref="GObject.ParamSpec.internal"/> for details on p
 </item>
 <item>
 <title><code>param_type</code></title>
-  <p>a <link xref="GLib.Type"/> derived from %G_TYPE_PARAM</p>
+  <p>a <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link> derived from %G_TYPE_PARAM</p>
 </item>
 <item>
 <title><code>flags</code></title>

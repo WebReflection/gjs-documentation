@@ -21,7 +21,7 @@ function get_environ(): Array(String) {
 }
   </code></synopsis>
   <p>Gets the contents of the 'environ' variable of the command line
-invocation, as would be returned by <link xref="GLib.get_environ"/>, ie as a
+invocation, as would be returned by <link href="../GLib-2.0/GLib.get_environ.html">GLib.get_environ</link>, ie as a
 <code>null</code>-terminated list of strings in the form 'NAME=VALUE'.
 The strings may contain non-utf8 data.</p>  <p>The remote application usually does not send an environment.  Use
 <link xref="Gio.ApplicationFlags"/>.send_environment to affect that.  Even with this flag

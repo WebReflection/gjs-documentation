@@ -25,7 +25,7 @@ function new_tmp(tmpl: String): [return_value: <link xref="Gio.File">Gio.File</l
 }
   </code></synopsis>
   <p>Opens a file in the preferred directory for temporary files (as
-returned by <link xref="GLib.get_tmp_dir"/>) and returns a <link xref="Gio.File"/> and
+returned by <link href="../GLib-2.0/GLib.get_tmp_dir.html">GLib.get_tmp_dir</link>) and returns a <link xref="Gio.File"/> and
 <link xref="Gio.FileIOStream"/> pointing to it.</p>  <p><code>tmpl</code> should be a string in the GLib file name encoding
 containing a sequence of six 'X' characters, and containing no
 directory components. If it is <code>null</code>, a default template is used.</p>  <p>Unlike the other <link xref="Gio.File"/> constructors, this will return <code>null</code> if
@@ -35,7 +35,7 @@ a temporary file could not be created.</p>
 <item>
 <title><code>tmpl</code></title>
   <p>Template for the file
-  name, as in <link xref="GLib.file_open_tmp"/>, or <code>null</code> for a default template</p>
+  name, as in <link href="../GLib-2.0/GLib.file_open_tmp.html">GLib.file_open_tmp</link>, or <code>null</code> for a default template</p>
 </item>
 <item>
 <title><code>return_value</code></title>

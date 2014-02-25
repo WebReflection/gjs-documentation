@@ -52,7 +52,7 @@ array of <link xref="Gio.SocketControlMessage"/> instances or <code>null</code> 
 messages was received. These correspond to the control messages
 received from the kernel, one <link xref="Gio.SocketControlMessage"/> per message
 from the kernel. This array is <code>null</code>-terminated and must be freed
-by the caller using <link xref="GLib.free"/> after calling <link xref="GObject.Object.unref"/> on each
+by the caller using <link href="../GLib-2.0/GLib.free.html">GLib.free</link> after calling <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link> on each
 element. If <code>messages</code> is <code>null</code>, any control messages received will
 be discarded.</p>  <p><code>num_messages</code>, if non-<code>null</code>, will be set to the number of control
 messages received.</p>  <p>If both <code>messages</code> and <code>num_messages</code> are non-<code>null</code>, then
@@ -72,7 +72,7 @@ is some data to receive, the connection is closed, or there is an
 error. If there is no data available and the socket is in
 non-blocking mode, a <link xref="Gio.IOErrorEnum"/>.would_block error will be
 returned. To be notified when data is available, wait for the
-<link xref="GLib.IOCondition"/>.in condition.</p>  <p>On error -1 is returned and @error is set accordingly.</p>
+<link href="../GLib-2.0/GLib.IOCondition.html">GLib.IOCondition</link>.in condition.</p>  <p>On error -1 is returned and @error is set accordingly.</p>
   <p>Since 2.22</p>
 <terms>
 <item>

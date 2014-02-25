@@ -25,7 +25,7 @@ function getenv(name: String): String {
 }
   </code></synopsis>
   <p>Gets the value of a particular environment variable of the command
-line invocation, as would be returned by <link xref="GLib.getenv"/>.  The strings may
+line invocation, as would be returned by <link href="../GLib-2.0/GLib.getenv.html">GLib.getenv</link>.  The strings may
 contain non-utf8 data.</p>  <p>The remote application usually does not send an environment.  Use
 <link xref="Gio.ApplicationFlags"/>.send_environment to affect that.  Even with this flag
 set it is possible that the environment is still not available (due

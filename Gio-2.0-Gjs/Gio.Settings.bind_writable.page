@@ -32,7 +32,7 @@
   </info>
   <title>Gio.Settings.prototype.bind_writable</title>
   <synopsis><code mime="text/x-gjs">
-function bind_writable(key: String, object: <link href="../GObject-2.0/GObject.Object.page">GObject.Object</link>, property: String, inverted: Boolean): void {
+function bind_writable(key: String, object: <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link>, property: String, inverted: Boolean): void {
     // Gjs wrapper for g_settings_bind_writable()
 }
   </code></synopsis>
@@ -55,7 +55,7 @@ binding overrides the first one.</p>
 </item>
 <item>
 <title><code>object</code></title>
-  <p>a <link xref="GObject.Object"/></p>
+  <p>a <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link></p>
 </item>
 <item>
 <title><code>property</code></title>

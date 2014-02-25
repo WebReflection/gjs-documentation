@@ -10,7 +10,7 @@
   </info>
   <title>Gio.SimpleAsyncThreadFunc</title>
   <synopsis><code mime="text/x-gjs">
-function onSimpleAsyncThreadFunc(res: <link xref="Gio.SimpleAsyncResult">Gio.SimpleAsyncResult</link>, object: <link href="../GObject-2.0/GObject.Object.page">GObject.Object</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): void {
+function onSimpleAsyncThreadFunc(res: <link xref="Gio.SimpleAsyncResult">Gio.SimpleAsyncResult</link>, object: <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): void {
 }
   </code></synopsis>
   <p>Simple thread function that runs an asynchronous operation and
@@ -23,7 +23,7 @@ checks for cancellation.</p>
 </item>
 <item>
 <title><code>object</code></title>
-  <p>a <link xref="GObject.Object"/>.</p>
+  <p>a <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link>.</p>
 </item>
 <item>
 <title><code>cancellable</code></title>

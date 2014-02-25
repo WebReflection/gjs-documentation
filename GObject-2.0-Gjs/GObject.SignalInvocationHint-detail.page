@@ -11,7 +11,7 @@
   </info>
   <title>GObject.SignalInvocationHint.detail</title>
   <synopsis><code mime="text/x-gjs">
-SignalInvocationHint.detail: <link href="../GLib-2.0/GLib.Quark.page">GLib.Quark</link> (Read)
+SignalInvocationHint.detail: <link href="../GLib-2.0/GLib.Quark.html">GLib.Quark</link> (Read)
   </code></synopsis>
   <p>The detail passed on for this emission</p>
 

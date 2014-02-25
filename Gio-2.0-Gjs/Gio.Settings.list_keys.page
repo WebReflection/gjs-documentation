@@ -22,7 +22,7 @@ function list_keys(): Array(String) {
   </code></synopsis>
   <p>Introspects the list of keys on <code>settings</code>.</p>  <p>You should probably not be calling this function from "normal" code
 (since you should already know what keys are in your schema).  This
-function is intended for introspection reasons.</p>  <p>You should free the return value with <link xref="GLib.strfreev"/> when you are done
+function is intended for introspection reasons.</p>  <p>You should free the return value with <link href="../GLib-2.0/GLib.strfreev.html">GLib.strfreev</link> when you are done
 with it.</p>
 
 <terms>

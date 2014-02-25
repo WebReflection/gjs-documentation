@@ -29,7 +29,7 @@ function lookup_data(path: String, lookup_flags: <link xref="Gio.ResourceLookupF
 }
   </code></synopsis>
   <p>Looks for a file at the specified <code>path</code> in the resource and
-returns a <link xref="GLib.Bytes"/> that lets you directly access the data in
+returns a <link href="../GLib-2.0/GLib.Bytes.html">GLib.Bytes</link> that lets you directly access the data in
 memory.</p>  <p>The data is always followed by a zero byte, so you
 can safely use the data as a C string. However, that byte
 is not included in the size of the GBytes.</p>  <p>For uncompressed resource files this is a pointer directly into

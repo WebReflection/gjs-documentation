@@ -72,7 +72,7 @@ for remote access to exported #GMenuModels.</p>  <p>There is a number of differe
 initialization for all of these in a single place.</p>  <p>Regardless of which of these entry points is used to start the
 application, GApplication passes some "platform data from the
 launching instance to the primary instance, in the form of a
-<link xref="GLib.Variant"/> dictionary mapping strings to variants. To use platform
+<link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> dictionary mapping strings to variants. To use platform
 data, override the @before_emit or @after_emit virtual functions
 in your <link xref="Gio.Application"/> subclass. When dealing with
 <link xref="Gio.ApplicationCommandLine"/> objects, the platform data is

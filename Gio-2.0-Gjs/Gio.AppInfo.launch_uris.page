@@ -38,7 +38,7 @@ no way to detect this.</p>
 <terms>
 <item>
 <title><code>uris</code></title>
-  <p>a <link xref="GLib.List"/> containing URIs to launch.</p>
+  <p>a <link href="../GLib-2.0/GLib.List.html">GLib.List</link> containing URIs to launch.</p>
 </item>
 <item>
 <title><code>launch_context</code></title>

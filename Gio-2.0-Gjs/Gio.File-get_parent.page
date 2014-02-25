@@ -22,7 +22,7 @@ file system, then <code>null</code> will be returned.</p>  <p>This call does no 
 <title><code>Returns</code></title>
   <p>a <link xref="Gio.File"/> structure to the
     parent of the given <link xref="Gio.File"/> or <code>null</code> if there is
-    no parent. Free the returned object with <link xref="GObject.Object.unref"/>.</p>
+    no parent. Free the returned object with <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link>.</p>
 </item>
 </terms>
 

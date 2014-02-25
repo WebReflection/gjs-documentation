@@ -10,7 +10,7 @@
   </info>
   <title>Gio.ActionGroup::query_action</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_query_action(action_name: String): [ok: Boolean, enabled: Boolean, parameter_type: <link href="../GLib-2.0/GLib.VariantType.page">GLib.VariantType</link>, state_type: <link href="../GLib-2.0/GLib.VariantType.page">GLib.VariantType</link>, state_hint: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>, state: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>] {
+function vfunc_query_action(action_name: String): [ok: Boolean, enabled: Boolean, parameter_type: <link href="../GLib-2.0/GLib.VariantType.html">GLib.VariantType</link>, state_type: <link href="../GLib-2.0/GLib.VariantType.html">GLib.VariantType</link>, state_hint: <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link>, state: <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link>] {
 }
   </code></synopsis>
   <p>Queries all aspects of the named action within an <code>action_group</code>.</p>  <p>This function acquires the information available from

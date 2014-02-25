@@ -28,7 +28,7 @@
   </info>
   <title>GObject.signal_stop_emission</title>
   <synopsis><code mime="text/x-gjs">
-function signal_stop_emission(instance: <link xref="GObject.Object">GObject.Object</link>, signal_id: Number(guint), detail: <link href="../GLib-2.0/GLib.Quark.page">GLib.Quark</link>): void {
+function signal_stop_emission(instance: <link xref="GObject.Object">GObject.Object</link>, signal_id: Number(guint), detail: <link href="../GLib-2.0/GLib.Quark.html">GLib.Quark</link>): void {
     // Gjs wrapper for g_signal_stop_emission()
 }
   </code></synopsis>

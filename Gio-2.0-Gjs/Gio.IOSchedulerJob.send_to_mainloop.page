@@ -20,7 +20,7 @@
   </info>
   <title>Gio.IOSchedulerJob.prototype.send_to_mainloop</title>
   <synopsis><code mime="text/x-gjs">
-function send_to_mainloop(func: <link href="../GLib-2.0/GLib.SourceFunc.page">GLib.SourceFunc</link>): Boolean {
+function send_to_mainloop(func: <link href="../GLib-2.0/GLib.SourceFunc.html">GLib.SourceFunc</link>): Boolean {
     // Gjs wrapper for g_io_scheduler_job_send_to_mainloop()
 }
   </code></synopsis>
@@ -31,7 +31,7 @@ blocking the I/O job).</p>
 <terms>
 <item>
 <title><code>func</code></title>
-  <p>a <link xref="GLib.SourceFunc"/> callback that will be called in the original thread</p>
+  <p>a <link href="../GLib-2.0/GLib.SourceFunc.html">GLib.SourceFunc</link> callback that will be called in the original thread</p>
 </item>
 <item>
 <title><code>ok</code></title>

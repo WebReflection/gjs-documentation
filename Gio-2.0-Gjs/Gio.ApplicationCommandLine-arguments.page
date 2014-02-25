@@ -11,7 +11,7 @@
   </info>
   <title>Gio.ApplicationCommandLine.arguments</title>
   <synopsis><code mime="text/x-gjs">
-ApplicationCommandLine.arguments: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link> (Write / Construct Only)
+ApplicationCommandLine.arguments: <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> (Write / Construct Only)
   </code></synopsis>
 
 

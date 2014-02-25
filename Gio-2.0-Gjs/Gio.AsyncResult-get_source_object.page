@@ -10,7 +10,7 @@
   </info>
   <title>Gio.AsyncResult::get_source_object</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_get_source_object(): <link href="../GObject-2.0/GObject.Object.page">GObject.Object</link> {
+function vfunc_get_source_object(): <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link> {
 }
   </code></synopsis>
   <p>Gets the source object from a <link xref="Gio.AsyncResult"/>.</p>

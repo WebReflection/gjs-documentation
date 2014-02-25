@@ -31,8 +31,8 @@ from another thread. If the operation was cancelled, the error
 <link xref="Gio.IOErrorEnum"/>.cancelled will be returned. If <code>cancellable</code> is not <code>null</code> and
 the object doesn't support cancellable initialization the error
 <link xref="Gio.IOErrorEnum"/>.not_supported will be returned.</p>  <p>If the object is not initialized, or initialization returns with an
-error, then all operations on the object except <link xref="GObject.Object.ref"/> and
-<link xref="GObject.Object.unref"/> are considered to be invalid, and have undefined
+error, then all operations on the object except <link href="../GObject-2.0/GObject.Object.ref.html">GObject.Object.prototype.ref</link> and
+<link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link> are considered to be invalid, and have undefined
 behaviour. See the [introduction][ginitable] for more details.</p>  <p>Implementations of this method must be idempotent, i.e. multiple calls
 to this function with the same argument should return the same results.
 Only the first call initializes the object, further calls return the result

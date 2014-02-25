@@ -36,7 +36,7 @@ function register_error_domain(error_domain_quark_name: String, quark_volatile: 
     // Gjs wrapper for g_dbus_error_register_error_domain()
 }
   </code></synopsis>
-  <p>Helper function for associating a <link xref="GLib.Error"/> error domain with D-Bus error names.</p>
+  <p>Helper function for associating a <link href="../GLib-2.0/GLib.Error.html">GLib.Error</link> error domain with D-Bus error names.</p>
   <p>Since 2.26</p>
 <terms>
 <item>
@@ -45,7 +45,7 @@ function register_error_domain(error_domain_quark_name: String, quark_volatile: 
 </item>
 <item>
 <title><code>quark_volatile</code></title>
-  <p>A pointer where to store the <link xref="GLib.Quark"/>.</p>
+  <p>A pointer where to store the <link href="../GLib-2.0/GLib.Quark.html">GLib.Quark</link>.</p>
 </item>
 <item>
 <title><code>entries</code></title>

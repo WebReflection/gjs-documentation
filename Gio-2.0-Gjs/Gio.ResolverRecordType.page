@@ -11,7 +11,7 @@
   <title>Gio.ResolverRecordType</title>
   <p>The type of record that <link xref="Gio.Resolver.lookup_records"/> or
 <link xref="Gio.Resolver.lookup_records_async"/> should retrieve. The records are returned
-as lists of <link xref="GLib.Variant"/> tuples. Each record type has different values in
+as lists of <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> tuples. Each record type has different values in
 the variant tuples returned.</p>  <p><link xref="Gio.ResolverRecordType"/>.srv records are returned as variants with the signature
 '(qqqs)', containing a guint16 with the priority, a guint16 with the
 weight, a guint16 with the port, and a string of the hostname.</p>  <p><link xref="Gio.ResolverRecordType"/>.mx records are returned as variants with the signature

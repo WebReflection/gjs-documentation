@@ -20,7 +20,7 @@
   </info>
   <title>GObject.ParamSpec.prototype.steal_qdata</title>
   <synopsis><code mime="text/x-gjs">
-function steal_qdata(quark: <link href="../GLib-2.0/GLib.Quark.page">GLib.Quark</link>): void {
+function steal_qdata(quark: <link href="../GLib-2.0/GLib.Quark.html">GLib.Quark</link>): void {
     // Gjs wrapper for g_param_spec_steal_qdata()
 }
   </code></synopsis>
@@ -32,7 +32,7 @@ required to update user data pointers with a destroy notifier.</p>
 <terms>
 <item>
 <title><code>quark</code></title>
-  <p>a <link xref="GLib.Quark"/>, naming the user data pointer</p>
+  <p>a <link href="../GLib-2.0/GLib.Quark.html">GLib.Quark</link>, naming the user data pointer</p>
 </item>
 <item>
 <title><code>Returns</code></title>

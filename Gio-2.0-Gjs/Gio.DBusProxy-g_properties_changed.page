@@ -10,7 +10,7 @@
   </info>
   <title>Gio.DBusProxy::g_properties_changed</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_g_properties_changed(changed_properties: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>, invalidated_properties: String): void {
+function vfunc_g_properties_changed(changed_properties: <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link>, invalidated_properties: String): void {
 }
   </code></synopsis>
 

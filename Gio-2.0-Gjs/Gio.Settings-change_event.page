@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Settings::change_event</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_change_event(keys: <link href="../GLib-2.0/GLib.Quark.page">GLib.Quark</link>, n_keys: Number(gint)): Boolean {
+function vfunc_change_event(keys: <link href="../GLib-2.0/GLib.Quark.html">GLib.Quark</link>, n_keys: Number(gint)): Boolean {
 }
   </code></synopsis>
 

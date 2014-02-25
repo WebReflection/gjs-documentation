@@ -15,7 +15,7 @@ function vfunc_delete_file_async(io_priority: Number(gint), cancellable: <link x
   </code></synopsis>
   <p>Asynchronously delete a file. If the <code>file</code> is a directory, it will
 only be deleted if it is empty.  This has the same semantics as
-<link xref="GLib.unlink"/>.</p>
+<link href="../GLib-2.0/GLib.unlink.html">GLib.unlink</link>.</p>
   <p>Since 2.34</p>
 <terms>
 <item>

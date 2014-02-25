@@ -32,7 +32,7 @@ function factory_lookup_type(family: <link xref="Gio.SocketFamily">Gio.SocketFam
     // Gjs wrapper for g_socket_connection_factory_lookup_type()
 }
   </code></synopsis>
-  <p>Looks up the <link xref="GLib.Type"/> to be used when creating socket connections on
+  <p>Looks up the <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link> to be used when creating socket connections on
 sockets with the specified <code>family</code>, <code>type</code> and <code>protocol_id</code>.</p>  <p>If no type is registered, the <link xref="Gio.SocketConnection"/> base type is returned.</p>
   <p>Since 2.22</p>
 <terms>

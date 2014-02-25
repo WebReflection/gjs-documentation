@@ -29,7 +29,7 @@ function type_get_plugin(type: GObject.Type): <link xref="GObject.TypePlugin">GO
 <terms>
 <item>
 <title><code>type</code></title>
-  <p><link xref="GLib.Type"/> to retrieve the plugin for</p>
+  <p><link href="../GLib-2.0/GLib.Type.html">GLib.Type</link> to retrieve the plugin for</p>
 </item>
 <item>
 <title><code>Returns</code></title>

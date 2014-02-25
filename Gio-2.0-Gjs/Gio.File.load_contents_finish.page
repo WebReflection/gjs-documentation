@@ -27,7 +27,7 @@ function load_contents_finish(res: <link xref="Gio.AsyncResult">Gio.AsyncResult<
   <p>Finishes an asynchronous load of the <code>file</code>'s contents.
 The contents are placed in <code>contents</code>, and <code>length</code> is set to the
 size of the <code>contents</code> string. The @content should be freed with
-<link xref="GLib.free"/> when no longer needed. If <code>etag_out</code> is present, it will be
+<link href="../GLib-2.0/GLib.free.html">GLib.free</link> when no longer needed. If <code>etag_out</code> is present, it will be
 set to the new entity tag for the <code>file</code>.</p>
 
 <terms>

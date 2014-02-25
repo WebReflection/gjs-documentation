@@ -20,7 +20,7 @@
   </info>
   <title>Gio.DBusMessage.prototype.set_body</title>
   <synopsis><code mime="text/x-gjs">
-function set_body(body: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>): void {
+function set_body(body: <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link>): void {
     // Gjs wrapper for g_dbus_message_set_body()
 }
   </code></synopsis>
@@ -31,7 +31,7 @@ type string of <code>body</code> (or cleared if <code>body</code> is <code>null<
 <terms>
 <item>
 <title><code>body</code></title>
-  <p>Either <code>null</code> or a <link xref="GLib.Variant"/> that is a tuple.</p>
+  <p>Either <code>null</code> or a <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> that is a tuple.</p>
 </item>
 </terms>
 

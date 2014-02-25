@@ -26,7 +26,7 @@ function load_contents(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable
   </code></synopsis>
   <p>Loads the content of the file into memory. The data is always
 zero-terminated, but this is not included in the resultant <code>length</code>.
-The returned @content should be freed with <link xref="GLib.free"/> when no longer
+The returned @content should be freed with <link href="../GLib-2.0/GLib.free.html">GLib.free</link> when no longer
 needed.</p>  <p>If <code>cancellable</code> is not <code>null</code>, then the operation can be cancelled by
 triggering the cancellable object from another thread. If the operation
 was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be returned.</p>

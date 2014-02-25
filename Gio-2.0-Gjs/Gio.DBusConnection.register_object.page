@@ -36,7 +36,7 @@
   </info>
   <title>Gio.DBusConnection.prototype.register_object</title>
   <synopsis><code mime="text/x-gjs">
-function register_object(object_path: String, interface_info: <link xref="Gio.DBusInterfaceInfo">Gio.DBusInterfaceInfo</link>, vtable: <link xref="Gio.DBusInterfaceVTable">Gio.DBusInterfaceVTable</link>, user_data: void, user_data_free_func: <link href="../GLib-2.0/GLib.DestroyNotify.page">GLib.DestroyNotify</link>): Number(guint) {
+function register_object(object_path: String, interface_info: <link xref="Gio.DBusInterfaceInfo">Gio.DBusInterfaceInfo</link>, vtable: <link xref="Gio.DBusInterfaceVTable">Gio.DBusInterfaceVTable</link>, user_data: void, user_data_free_func: <link href="../GLib-2.0/GLib.DestroyNotify.html">GLib.DestroyNotify</link>): Number(guint) {
     // Gjs wrapper for g_dbus_connection_register_object()
 }
   </code></synopsis>
@@ -44,7 +44,7 @@ function register_object(object_path: String, interface_info: <link xref="Gio.DB
 D-Bus interface that is described in <code>interface_info</code>.</p>  <p>Calls to functions in <code>vtable</code> (and <code>user_data_free_func</code>) will happen
 in the
 [thread-default main context][g-main-context-push-thread-default]
-of the thread you are calling this method from.</p>  <p>Note that all <link xref="GLib.Variant"/> values passed to functions in <code>vtable</code> will match
+of the thread you are calling this method from.</p>  <p>Note that all <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> values passed to functions in <code>vtable</code> will match
 the signature given in <code>interface_info</code> - if a remote caller passes
 incorrect values, the `org.freedesktop.DBus.Error.InvalidArgs`
 is returned to the remote caller.</p>  <p>Additionally, if the remote caller attempts to invoke methods or
@@ -53,7 +53,7 @@ access properties not mentioned in <code>interface_info</code> the
 `org.freedesktop.DBus.Error.InvalidArgs` errors
 are returned to the caller.</p>  <p>It is considered a programming error if the
 <link xref="Gio.DBusInterfaceGetPropertyFunc"/> function in <code>vtable</code> returns a
-<link xref="GLib.Variant"/> of incorrect type.</p>  <p>If an existing callback is already registered at <code>object_path</code> and
+<link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> of incorrect type.</p>  <p>If an existing callback is already registered at <code>object_path</code> and
 @interface_name, then @error is set to #G_IO_ERROR_EXISTS.</p>  <p>GDBus automatically implements the standard D-Bus interfaces
 org.freedesktop.DBus.Properties, org.freedesktop.DBus.Introspectable
 and org.freedesktop.Peer, so you don't have to implement those for the

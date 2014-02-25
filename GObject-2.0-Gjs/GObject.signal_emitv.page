@@ -32,7 +32,7 @@
   </info>
   <title>GObject.signal_emitv</title>
   <synopsis><code mime="text/x-gjs">
-function signal_emitv(instance_and_params: Array(<link xref="GObject.Value">GObject.Value</link>), signal_id: Number(guint), detail: <link href="../GLib-2.0/GLib.Quark.page">GLib.Quark</link>, return_value: <link xref="GObject.Value">GObject.Value</link>): void {
+function signal_emitv(instance_and_params: Array(<link xref="GObject.Value">GObject.Value</link>), signal_id: Number(guint), detail: <link href="../GLib-2.0/GLib.Quark.html">GLib.Quark</link>, return_value: <link xref="GObject.Value">GObject.Value</link>): void {
     // Gjs wrapper for g_signal_emitv()
 }
   </code></synopsis>

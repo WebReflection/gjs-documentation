@@ -10,7 +10,7 @@
   </info>
   <title>Gio.Settings::writable_change_event</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_writable_change_event(key: <link href="../GLib-2.0/GLib.Quark.page">GLib.Quark</link>): Boolean {
+function vfunc_writable_change_event(key: <link href="../GLib-2.0/GLib.Quark.html">GLib.Quark</link>): Boolean {
 }
   </code></synopsis>
 

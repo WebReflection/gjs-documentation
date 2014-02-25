@@ -29,7 +29,7 @@ exist similar to 'mkdir -p'. If the file system does not support
 creating directories, this function will fail, setting @error to
 <link xref="Gio.IOErrorEnum"/>.not_supported. If the directory itself already exists,
 this function will fail setting @error to <link xref="Gio.IOErrorEnum"/>.exists, unlike
-the similar <link xref="GLib.mkdir_with_parents"/>.</p>  <p>For a local <link xref="Gio.File"/> the newly created directories will have the default
+the similar <link href="../GLib-2.0/GLib.mkdir_with_parents.html">GLib.mkdir_with_parents</link>.</p>  <p>For a local <link xref="Gio.File"/> the newly created directories will have the default
 (current) ownership and permissions of the current process.</p>  <p>If <code>cancellable</code> is not <code>null</code>, then the operation can be cancelled by
 triggering the cancellable object from another thread. If the operation
 was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be returned.</p>

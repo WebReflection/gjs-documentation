@@ -30,8 +30,8 @@ function register_enum(name: String, const_static_values: <link xref="GObject.En
   </code></synopsis>
   <p>Looks up or registers an enumeration that is implemented with a particular
 type plugin. If a type with name @type_name was previously registered,
-the <link xref="GLib.Type"/> identifier for the type is returned, otherwise the type
-is newly registered, and the resulting <link xref="GLib.Type"/> identifier returned.</p>  <p>As long as any instances of the type exist, the type plugin will
+the <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link> identifier for the type is returned, otherwise the type
+is newly registered, and the resulting <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link> identifier returned.</p>  <p>As long as any instances of the type exist, the type plugin will
 not be unloaded.</p>
   <p>Since 2.6</p>
 <terms>

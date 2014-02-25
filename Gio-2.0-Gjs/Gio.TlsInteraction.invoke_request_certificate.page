@@ -34,8 +34,8 @@ function invoke_request_certificate(connection: <link xref="Gio.TlsConnection">G
   </code></synopsis>
   <p>Invoke the interaction to ask the user to choose a certificate to
 use with the connection. It invokes this interaction in the main
-loop, specifically the <link xref="GLib.MainContext"/> returned by
-<link xref="GLib.main_context_get_thread_default"/> when the interaction is
+loop, specifically the <link href="../GLib-2.0/GLib.MainContext.html">GLib.MainContext</link> returned by
+<link href="../GLib-2.0/GLib.main_context_get_thread_default.html">GLib.main_context_get_thread_default</link> when the interaction is
 created. This is called by called by <link xref="Gio.TlsConnection"/> when the peer
 requests a certificate during the handshake.</p>  <p>Derived subclasses usually implement a certificate selector,
 although they may also choose to provide a certificate from

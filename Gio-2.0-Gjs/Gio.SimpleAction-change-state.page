@@ -11,7 +11,7 @@
   </info>
   <title>Gio.SimpleAction::change-state</title>
   <synopsis><code mime="text/x-gjs">
-connect('change-state', function (simpleAction, value: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>, ): void);
+connect('change-state', function (simpleAction, value: <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link>, ): void);
   </code></synopsis>
   <p>Indicates that the action just received a request to change its
 state.</p>  <p><code>value</code> will always be of the correct state type.  In the event that

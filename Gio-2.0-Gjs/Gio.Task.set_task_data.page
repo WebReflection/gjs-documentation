@@ -24,7 +24,7 @@
   </info>
   <title>Gio.Task.prototype.set_task_data</title>
   <synopsis><code mime="text/x-gjs">
-function set_task_data(task_data: void, task_data_destroy: <link href="../GLib-2.0/GLib.DestroyNotify.page">GLib.DestroyNotify</link>): void {
+function set_task_data(task_data: void, task_data_destroy: <link href="../GLib-2.0/GLib.DestroyNotify.html">GLib.DestroyNotify</link>): void {
     // Gjs wrapper for g_task_set_task_data()
 }
   </code></synopsis>
@@ -37,7 +37,7 @@ function set_task_data(task_data: void, task_data_destroy: <link href="../GLib-2
 </item>
 <item>
 <title><code>task_data_destroy</code></title>
-  <p><link xref="GLib.DestroyNotify"/> for <code>task_data</code></p>
+  <p><link href="../GLib-2.0/GLib.DestroyNotify.html">GLib.DestroyNotify</link> for <code>task_data</code></p>
 </item>
 </terms>
 

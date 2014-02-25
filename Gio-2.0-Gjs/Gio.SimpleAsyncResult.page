@@ -30,10 +30,10 @@ applications that need better control of how asynchronous operations
 are completed, it is important to understand this functionality.</p>  <p>GSimpleAsyncResults are tagged with the calling function to ensure
 that asynchronous functions and their finishing functions are used
 together correctly.</p>  <p>To create a new <link xref="Gio.SimpleAsyncResult"/>, call <link xref="Gio.SimpleAsyncResult.new"/>.
-If the result needs to be created for a <link xref="GLib.Error"/>, use
+If the result needs to be created for a <link href="../GLib-2.0/GLib.Error.html">GLib.Error</link>, use
 <link xref="Gio.SimpleAsyncResult.new_from_error"/> or
-<link xref="Gio.SimpleAsyncResult.new_take_error"/>. If a <link xref="GLib.Error"/> is not available
-(e.g. the asynchronous operation's doesn't take a <link xref="GLib.Error"/> argument),
+<link xref="Gio.SimpleAsyncResult.new_take_error"/>. If a <link href="../GLib-2.0/GLib.Error.html">GLib.Error</link> is not available
+(e.g. the asynchronous operation's doesn't take a <link href="../GLib-2.0/GLib.Error.html">GLib.Error</link> argument),
 but the result still needs to be created for an error condition, use
 <link xref="Gio.SimpleAsyncResult.new_error"/> (or <link xref="Gio.SimpleAsyncResult.set_error_va"/>
 if your application or binding requires passing a variable argument list
@@ -42,7 +42,7 @@ directly), and the error can then be propagated through the use of
 calling <link xref="Gio.SimpleAsyncResult.set_handle_cancellation"/> with a
 <link xref="Gio.SimpleAsyncResult"/> for the operation and <code>false</code>. This is useful for
 operations that are dangerous to cancel, such as close (which would
-cause a leak if cancelled before being run).</p>  <p>GSimpleAsyncResult can integrate into GLib's event loop, <link xref="GLib.MainLoop"/>,
+cause a leak if cancelled before being run).</p>  <p>GSimpleAsyncResult can integrate into GLib's event loop, <link href="../GLib-2.0/GLib.MainLoop.html">GLib.MainLoop</link>,
 or it can use #GThreads.
 <link xref="Gio.SimpleAsyncResult.complete"/> will finish an I/O task directly
 from the point where it is called. <link xref="Gio.SimpleAsyncResult.complete_in_idle"/>

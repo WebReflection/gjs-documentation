@@ -22,7 +22,7 @@ function onTypePluginCompleteTypeInfo(plugin: <link xref="GObject.TypePlugin">GO
 </item>
 <item>
 <title><code>g_type</code></title>
-  <p>the <link xref="GLib.Type"/> whose info is completed</p>
+  <p>the <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link> whose info is completed</p>
 </item>
 <item>
 <title><code>info</code></title>

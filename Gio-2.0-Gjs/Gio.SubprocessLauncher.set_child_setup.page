@@ -20,7 +20,7 @@
   </info>
   <title>Gio.SubprocessLauncher.prototype.set_child_setup</title>
   <synopsis><code mime="text/x-gjs">
-function set_child_setup(child_setup: <link href="../GLib-2.0/GLib.SpawnChildSetupFunc.page">GLib.SpawnChildSetupFunc</link>): void {
+function set_child_setup(child_setup: <link href="../GLib-2.0/GLib.SpawnChildSetupFunc.html">GLib.SpawnChildSetupFunc</link>): void {
     // Gjs wrapper for g_subprocess_launcher_set_child_setup()
 }
   </code></synopsis>
@@ -33,7 +33,7 @@ given.</p>  <p><code>null</code> can be given as <code>child_setup</code> to dis
 <terms>
 <item>
 <title><code>child_setup</code></title>
-  <p>a <link xref="GLib.SpawnChildSetupFunc"/> to use as the child setup function</p>
+  <p>a <link href="../GLib-2.0/GLib.SpawnChildSetupFunc.html">GLib.SpawnChildSetupFunc</link> to use as the child setup function</p>
 </item>
 </terms>
 

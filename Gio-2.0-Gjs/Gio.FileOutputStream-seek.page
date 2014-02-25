@@ -10,7 +10,7 @@
   </info>
   <title>Gio.FileOutputStream::seek</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_seek(offset: Number(gint64), type: <link href="../GLib-2.0/GLib.SeekType.page">GLib.SeekType</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Boolean {
+function vfunc_seek(offset: Number(gint64), type: <link href="../GLib-2.0/GLib.SeekType.html">GLib.SeekType</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Boolean {
 }
   </code></synopsis>
 

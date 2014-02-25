@@ -38,7 +38,7 @@ possible too, and depend on what kind of filesystem the file is on.</p>
 <item>
 <title><code>Returns</code></title>
   <p>a <link xref="Gio.FileOutputStream"/>, or <code>null</code> on error.
-    Free the returned object with <link xref="GObject.Object.unref"/>.</p>
+    Free the returned object with <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link>.</p>
 </item>
 </terms>
 

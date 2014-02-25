@@ -13,7 +13,7 @@
 function onDBusProxyTypeFunc(manager: <link xref="Gio.DBusObjectManagerClient">Gio.DBusObjectManagerClient</link>, object_path: String, interface_name: String): GObject.Type {
 }
   </code></synopsis>
-  <p>Function signature for a function used to determine the <link xref="GLib.Type"/> to
+  <p>Function signature for a function used to determine the <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link> to
 use for an interface proxy (if <code>interface_name</code> is not <code>null</code>) or
 object proxy (if <code>interface_name</code> is <code>null</code>).</p>  <p>This function is called in the
 &lt;link linkend="g-main-context-push-thread-default"&gt;thread-default main loop&lt;/link&gt;
@@ -30,7 +30,7 @@ that <code>manager</code> was constructed in.</p>
 </item>
 <item>
 <title><code>interface_name</code></title>
-  <p>The interface name of the remote object or <code>null</code> if a <link xref="Gio.DBusObjectProxy"/> <link xref="GLib.Type"/> is requested.</p>
+  <p>The interface name of the remote object or <code>null</code> if a <link xref="Gio.DBusObjectProxy"/> <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link> is requested.</p>
 </item>
 <item>
 <title><code>Returns</code></title>

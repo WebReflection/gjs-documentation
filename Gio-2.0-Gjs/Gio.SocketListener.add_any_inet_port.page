@@ -20,7 +20,7 @@
   </info>
   <title>Gio.SocketListener.prototype.add_any_inet_port</title>
   <synopsis><code mime="text/x-gjs">
-function add_any_inet_port(source_object: <link href="../GObject-2.0/GObject.Object.page">GObject.Object</link>): Number(guint16) {
+function add_any_inet_port(source_object: <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link>): Number(guint16) {
     // Gjs wrapper for g_socket_listener_add_any_inet_port()
 }
   </code></synopsis>
@@ -34,7 +34,7 @@ different things depending on what address is connected to.</p>
 <terms>
 <item>
 <title><code>source_object</code></title>
-  <p>Optional <link xref="GObject.Object"/> identifying this source</p>
+  <p>Optional <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link> identifying this source</p>
 </item>
 <item>
 <title><code>Returns</code></title>

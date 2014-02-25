@@ -38,7 +38,7 @@ It is made available for advanced use-cases (such as plugin systems
 that want to provide access to schemas loaded from custom locations,
 etc).</p>  <p>At the most basic level, a <link xref="Gio.Settings"/> object is a pure composition of
 4 things: a <link xref="Gio.SettingsSchema"/>, a <link xref="Gio.SettingsBackend"/>, a path within that
-backend, and a <link xref="GLib.MainContext"/> to which signals are dispatched.</p>  <p>This constructor therefore gives you full control over constructing
+backend, and a <link href="../GLib-2.0/GLib.MainContext.html">GLib.MainContext</link> to which signals are dispatched.</p>  <p>This constructor therefore gives you full control over constructing
 <link xref="Gio.Settings"/> instances.  The first 4 parameters are given directly as
 <code>schema</code>, <code>backend</code> and <code>path</code>, and the main context is taken from the
 thread-default (as per <link xref="Gio.Settings.new"/>).</p>  <p>If <code>backend</code> is <code>null</code> then the default backend is used.</p>  <p>If <code>path</code> is <code>null</code> then the path from the schema is used.  It is an

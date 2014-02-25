@@ -11,7 +11,7 @@
   </info>
   <title>Gio.AppLaunchContext::launched</title>
   <synopsis><code mime="text/x-gjs">
-connect('launched', function (appLaunchContext, object: <link xref="Gio.AppInfo">Gio.AppInfo</link>, p0: <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link>, ): void);
+connect('launched', function (appLaunchContext, object: <link xref="Gio.AppInfo">Gio.AppInfo</link>, p0: <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link>, ): void);
   </code></synopsis>
 
 

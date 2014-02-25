@@ -19,7 +19,7 @@ from the other peer is ignored. The given <link xref="Gio.DBusInterfaceInfo"/> i
 said to be the "expected interface".</p>  <p>The checks performed are:
 - When completing a method call, if the type signature of
   the reply message isn't what's expected, the reply is
-  discarded and the <link xref="GLib.Error"/> is set to <link xref="Gio.IOErrorEnum"/>.invalid_argument.</p>  <p>- Received signals that have a type signature mismatch are dropped and
+  discarded and the <link href="../GLib-2.0/GLib.Error.html">GLib.Error</link> is set to <link xref="Gio.IOErrorEnum"/>.invalid_argument.</p>  <p>- Received signals that have a type signature mismatch are dropped and
   a warning is logged via g_warning().</p>  <p>- Properties received via the initial `GetAll()` call or via the
   `::PropertiesChanged` signal (on the
   [org.freedesktop.DBus.Properties](http://dbus.freedesktop.org/doc/dbus-specification.html#standard-interfaces-properties)

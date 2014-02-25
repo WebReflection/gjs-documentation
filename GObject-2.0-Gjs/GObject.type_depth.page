@@ -30,7 +30,7 @@ includes the type itself, so that e.g. a fundamental type has depth 1.</p>
 <terms>
 <item>
 <title><code>type</code></title>
-  <p>a <link xref="GLib.Type"/></p>
+  <p>a <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link></p>
 </item>
 <item>
 <title><code>Returns</code></title>

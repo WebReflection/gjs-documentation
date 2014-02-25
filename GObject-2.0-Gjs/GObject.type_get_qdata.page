@@ -24,7 +24,7 @@
   </info>
   <title>GObject.type_get_qdata</title>
   <synopsis><code mime="text/x-gjs">
-function type_get_qdata(type: GObject.Type, quark: <link href="../GLib-2.0/GLib.Quark.page">GLib.Quark</link>): void {
+function type_get_qdata(type: GObject.Type, quark: <link href="../GLib-2.0/GLib.Quark.html">GLib.Quark</link>): void {
     // Gjs wrapper for g_type_get_qdata()
 }
   </code></synopsis>
@@ -36,11 +36,11 @@ be retrieved from a subtype using <link xref="GObject.type_get_qdata"/>.</p>
 <terms>
 <item>
 <title><code>type</code></title>
-  <p>a <link xref="GLib.Type"/></p>
+  <p>a <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link></p>
 </item>
 <item>
 <title><code>quark</code></title>
-  <p>a <link xref="GLib.Quark"/> id to identify the data</p>
+  <p>a <link href="../GLib-2.0/GLib.Quark.html">GLib.Quark</link> id to identify the data</p>
 </item>
 <item>
 <title><code>Returns</code></title>

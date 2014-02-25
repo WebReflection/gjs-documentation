@@ -20,7 +20,7 @@
   </info>
   <title>Gio.DesktopAppInfo.new_from_keyfile</title>
   <synopsis><code mime="text/x-gjs">
-function new_from_keyfile(key_file: <link href="../GLib-2.0/GLib.KeyFile.page">GLib.KeyFile</link>): <link xref="Gio.DesktopAppInfo">Gio.DesktopAppInfo</link> {
+function new_from_keyfile(key_file: <link href="../GLib-2.0/GLib.KeyFile.html">GLib.KeyFile</link>): <link xref="Gio.DesktopAppInfo">Gio.DesktopAppInfo</link> {
     // Gjs wrapper for g_desktop_app_info_new_from_keyfile()
 }
   </code></synopsis>
@@ -29,7 +29,7 @@ function new_from_keyfile(key_file: <link href="../GLib-2.0/GLib.KeyFile.page">G
 <terms>
 <item>
 <title><code>key_file</code></title>
-  <p>an opened <link xref="GLib.KeyFile"/></p>
+  <p>an opened <link href="../GLib-2.0/GLib.KeyFile.html">GLib.KeyFile</link></p>
 </item>
 <item>
 <title><code>Returns</code></title>

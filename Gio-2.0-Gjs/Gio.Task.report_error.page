@@ -32,7 +32,7 @@
   </info>
   <title>Gio.Task.report_error</title>
   <synopsis><code mime="text/x-gjs">
-function report_error(source_object: <link href="../GObject-2.0/GObject.Object.page">GObject.Object</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>, source_tag: void, error: <link href="../GLib-2.0/GLib.Error.page">GLib.Error</link>): void {
+function report_error(source_object: <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>, source_tag: void, error: <link href="../GLib-2.0/GLib.Error.html">GLib.Error</link>): void {
     // Gjs wrapper for g_task_report_error()
 }
   </code></synopsis>
@@ -46,7 +46,7 @@ wrapper method, and deal with it appropriately if so.</p>  <p>See also <link xre
 <terms>
 <item>
 <title><code>source_object</code></title>
-  <p>the <link xref="GObject.Object"/> that owns
+  <p>the <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link> that owns
   this task, or <code>null</code>.</p>
 </item>
 <item>

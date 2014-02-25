@@ -11,7 +11,7 @@
   </info>
   <title>Gio.ThreadedSocketService::run</title>
   <synopsis><code mime="text/x-gjs">
-connect('run', function (threadedSocketService, connection: <link xref="Gio.SocketConnection">Gio.SocketConnection</link>, source_object: <link href="../GObject-2.0/GObject.Object.page">GObject.Object</link>, ): Boolean);
+connect('run', function (threadedSocketService, connection: <link xref="Gio.SocketConnection">Gio.SocketConnection</link>, source_object: <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link>, ): Boolean);
   </code></synopsis>
   <p>The ::run signal is emitted in a worker thread in response to an
 incoming connection. This thread is dedicated to handling

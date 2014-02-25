@@ -10,19 +10,19 @@
   </info>
   <title>Gio.Icon::serialize</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_serialize(): <link href="../GLib-2.0/GLib.Variant.page">GLib.Variant</link> {
+function vfunc_serialize(): <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> {
 }
   </code></synopsis>
-  <p>Serializes a <link xref="Gio.Icon"/> into a <link xref="GLib.Variant"/>. An equivalent <link xref="Gio.Icon"/> can be retrieved
+  <p>Serializes a <link xref="Gio.Icon"/> into a <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link>. An equivalent <link xref="Gio.Icon"/> can be retrieved
 back by calling <link xref="Gio.icon_deserialize"/> on the returned value.
 As serialization will avoid using raw icon data when possible, it only
-makes sense to transfer the <link xref="GLib.Variant"/> between processes on the same machine,
+makes sense to transfer the <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> between processes on the same machine,
 (as opposed to over the network), and within the same file system namespace.</p>
   <p>Since 2.38</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-  <p>a <link xref="GLib.Variant"/>, or <code>null</code> when serialization fails.</p>
+  <p>a <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link>, or <code>null</code> when serialization fails.</p>
 </item>
 </terms>
 

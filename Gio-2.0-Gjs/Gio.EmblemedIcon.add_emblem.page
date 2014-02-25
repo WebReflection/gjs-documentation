@@ -24,7 +24,7 @@ function add_emblem(emblem: <link xref="Gio.Emblem">Gio.Emblem</link>): void {
     // Gjs wrapper for g_emblemed_icon_add_emblem()
 }
   </code></synopsis>
-  <p>Adds <code>emblem</code> to the <link xref="GLib.List"/> of #GEmblems.</p>
+  <p>Adds <code>emblem</code> to the <link href="../GLib-2.0/GLib.List.html">GLib.List</link> of #GEmblems.</p>
   <p>Since 2.18</p>
 <terms>
 <item>

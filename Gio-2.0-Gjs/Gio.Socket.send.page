@@ -34,9 +34,9 @@ mainly used by connection-oriented sockets; it is identical to
 space for the data in the socket queue. If there is no space available
 and the socket is in non-blocking mode a <link xref="Gio.IOErrorEnum"/>.would_block error
 will be returned. To be notified when space is available, wait for the
-<link xref="GLib.IOCondition"/>.out condition. Note though that you may still receive
+<link href="../GLib-2.0/GLib.IOCondition.html">GLib.IOCondition</link>.out condition. Note though that you may still receive
 <link xref="Gio.IOErrorEnum"/>.would_block from <link xref="Gio.Socket.send"/> even if you were previously
-notified of a <link xref="GLib.IOCondition"/>.out condition. (On Windows in particular, this is
+notified of a <link href="../GLib-2.0/GLib.IOCondition.html">GLib.IOCondition</link>.out condition. (On Windows in particular, this is
 very common due to the way the underlying APIs work.)</p>  <p>On error -1 is returned and @error is set accordingly.</p>
   <p>Since 2.22</p>
 <terms>

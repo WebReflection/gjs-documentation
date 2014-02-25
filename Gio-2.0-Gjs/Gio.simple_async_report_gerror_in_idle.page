@@ -28,18 +28,18 @@
   </info>
   <title>Gio.simple_async_report_gerror_in_idle</title>
   <synopsis><code mime="text/x-gjs">
-function simple_async_report_gerror_in_idle(object: <link href="../GObject-2.0/GObject.Object.page">GObject.Object</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>, error: <link href="../GLib-2.0/GLib.Error.page">GLib.Error</link>): void {
+function simple_async_report_gerror_in_idle(object: <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>, error: <link href="../GLib-2.0/GLib.Error.html">GLib.Error</link>): void {
     // Gjs wrapper for g_simple_async_report_gerror_in_idle()
 }
   </code></synopsis>
   <p>Reports an error in an idle function. Similar to
-<link xref="Gio.simple_async_report_error_in_idle"/>, but takes a <link xref="GLib.Error"/> rather
+<link xref="Gio.simple_async_report_error_in_idle"/>, but takes a <link href="../GLib-2.0/GLib.Error.html">GLib.Error</link> rather
 than building a new one.</p>
 
 <terms>
 <item>
 <title><code>object</code></title>
-  <p>a <link xref="GObject.Object"/>, or <code>null</code></p>
+  <p>a <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link>, or <code>null</code></p>
 </item>
 <item>
 <title><code>callback</code></title>
@@ -47,7 +47,7 @@ than building a new one.</p>
 </item>
 <item>
 <title><code>error</code></title>
-  <p>the <link xref="GLib.Error"/> to report</p>
+  <p>the <link href="../GLib-2.0/GLib.Error.html">GLib.Error</link> to report</p>
 </item>
 </terms>
 

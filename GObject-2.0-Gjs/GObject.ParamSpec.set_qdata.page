@@ -24,13 +24,13 @@
   </info>
   <title>GObject.ParamSpec.prototype.set_qdata</title>
   <synopsis><code mime="text/x-gjs">
-function set_qdata(quark: <link href="../GLib-2.0/GLib.Quark.page">GLib.Quark</link>, data: void): void {
+function set_qdata(quark: <link href="../GLib-2.0/GLib.Quark.html">GLib.Quark</link>, data: void): void {
     // Gjs wrapper for g_param_spec_set_qdata()
 }
   </code></synopsis>
   <p>Sets an opaque, named pointer on a <link xref="GObject.ParamSpec"/>. The name is
-specified through a <link xref="GLib.Quark"/> (retrieved e.g. via
-<link xref="GLib.quark_from_static_string"/>), and the pointer can be gotten back
+specified through a <link href="../GLib-2.0/GLib.Quark.html">GLib.Quark</link> (retrieved e.g. via
+<link href="../GLib-2.0/GLib.quark_from_static_string.html">GLib.quark_from_static_string</link>), and the pointer can be gotten back
 from the <code>pspec</code> with <link xref="GObject.ParamSpec.get_qdata"/>.  Setting a
 previously set user data pointer, overrides (frees) the old pointer
 set, using <code>null</code> as pointer essentially removes the data stored.</p>
@@ -38,7 +38,7 @@ set, using <code>null</code> as pointer essentially removes the data stored.</p>
 <terms>
 <item>
 <title><code>quark</code></title>
-  <p>a <link xref="GLib.Quark"/>, naming the user data pointer</p>
+  <p>a <link href="../GLib-2.0/GLib.Quark.html">GLib.Quark</link>, naming the user data pointer</p>
 </item>
 <item>
 <title><code>data</code></title>
