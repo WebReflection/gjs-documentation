@@ -77,6 +77,7 @@ update-mallard: $(MALLARDS)
 html/%: %-Gjs
 	mkdir -p $@
 	yelp-build html -o $@ $<
+	touch $@
 
 upload: all
 	rsync -av --delete html/ master.gnome.org:public_html/docs/
