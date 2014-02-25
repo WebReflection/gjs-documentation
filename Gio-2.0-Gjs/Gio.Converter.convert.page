@@ -13,7 +13,7 @@
       </api:returns>
       <api:name>g_converter_convert</api:name>
       <api:arg>
-        <api:type>Array(Number(guint8))</api:type>
+        <api:type>ByteArray</api:type>
         <api:name>inbuf</api:name>
       </api:arg>
       <api:arg>
@@ -32,7 +32,7 @@
   </info>
   <title>Gio.Converter.prototype.convert</title>
   <synopsis><code mime="text/x-gjs">
-function convert(inbuf: Array(Number(guint8)), outbuf: void, outbuf_size: Number(gsize), flags: <link xref="Gio.ConverterFlags">Gio.ConverterFlags</link>): [return_value: <link xref="Gio.ConverterResult">Gio.ConverterResult</link>, bytes_read: Number(gsize), bytes_written: Number(gsize)] {
+function convert(inbuf: ByteArray, outbuf: void, outbuf_size: Number(gsize), flags: <link xref="Gio.ConverterFlags">Gio.ConverterFlags</link>): [return_value: <link xref="Gio.ConverterResult">Gio.ConverterResult</link>, bytes_read: Number(gsize), bytes_written: Number(gsize)] {
     // Gjs wrapper for g_converter_convert()
 }
   </code></synopsis>

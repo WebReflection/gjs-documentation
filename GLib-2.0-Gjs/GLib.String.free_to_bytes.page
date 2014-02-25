@@ -9,14 +9,14 @@
     <link xref="GLib.String" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>GLib.Bytes</api:type>
+        <api:type>ByteArray</api:type>
       </api:returns>
       <api:name>g_string_free_to_bytes</api:name>
     </api:function>
   </info>
   <title>GLib.String.prototype.free_to_bytes</title>
   <synopsis><code mime="text/x-gjs">
-function free_to_bytes(): <link xref="GLib.Bytes">GLib.Bytes</link> {
+function free_to_bytes(): ByteArray {
     // Gjs wrapper for g_string_free_to_bytes()
 }
   </code></synopsis>

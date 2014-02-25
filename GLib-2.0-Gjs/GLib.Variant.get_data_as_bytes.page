@@ -9,14 +9,14 @@
     <link xref="GLib.Variant" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>GLib.Bytes</api:type>
+        <api:type>ByteArray</api:type>
       </api:returns>
       <api:name>g_variant_get_data_as_bytes</api:name>
     </api:function>
   </info>
   <title>GLib.Variant.prototype.get_data_as_bytes</title>
   <synopsis><code mime="text/x-gjs">
-function get_data_as_bytes(): <link xref="GLib.Bytes">GLib.Bytes</link> {
+function get_data_as_bytes(): ByteArray {
     // Gjs wrapper for g_variant_get_data_as_bytes()
 }
   </code></synopsis>

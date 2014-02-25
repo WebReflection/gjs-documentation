@@ -20,7 +20,7 @@
   </info>
   <title>Gio.File.prototype.load_contents</title>
   <synopsis><code mime="text/x-gjs">
-function load_contents(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): [ok: Boolean, contents: Array(Number(guint8)), etag_out: String] {
+function load_contents(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): [ok: Boolean, contents: ByteArray, etag_out: String] {
     // Gjs wrapper for g_file_load_contents()
 }
   </code></synopsis>

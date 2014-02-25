@@ -10,7 +10,7 @@
   </info>
   <title>Gio.PollableOutputStream::write_nonblocking</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_write_nonblocking(buffer: Array(Number(guint8))): Number(gssize) {
+function vfunc_write_nonblocking(buffer: ByteArray): Number(gssize) {
 }
   </code></synopsis>
   <p>Attempts to write up to <code>count</code> bytes from <code>buffer</code> to <code>stream</code>, as

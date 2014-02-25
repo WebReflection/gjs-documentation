@@ -13,7 +13,7 @@
       </api:returns>
       <api:name>g_base64_decode_step</api:name>
       <api:arg>
-        <api:type>Array(Number(guint8))</api:type>
+        <api:type>ByteArray</api:type>
         <api:name>in</api:name>
       </api:arg>
       <api:arg>
@@ -28,7 +28,7 @@
   </info>
   <title>GLib.base64_decode_step</title>
   <synopsis><code mime="text/x-gjs">
-function base64_decode_step(in: Array(Number(guint8)), state: Number(gint), save: Number(guint)): [return_value: Number(gsize), out: Array(Number(guint8)), state: Number(gint), save: Number(guint)] {
+function base64_decode_step(in: ByteArray, state: Number(gint), save: Number(guint)): [return_value: Number(gsize), out: ByteArray, state: Number(gint), save: Number(guint)] {
     // Gjs wrapper for g_base64_decode_step()
 }
   </code></synopsis>

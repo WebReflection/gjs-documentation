@@ -17,7 +17,7 @@
         <api:name>stream</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Array(Number(guint8))</api:type>
+        <api:type>ByteArray</api:type>
         <api:name>buffer</api:name>
       </api:arg>
       <api:arg>
@@ -32,7 +32,7 @@
   </info>
   <title>Gio.pollable_stream_write_all</title>
   <synopsis><code mime="text/x-gjs">
-function pollable_stream_write_all(stream: <link xref="Gio.OutputStream">Gio.OutputStream</link>, buffer: Array(Number(guint8)), blocking: Boolean, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): [ok: Boolean, bytes_written: Number(gsize)] {
+function pollable_stream_write_all(stream: <link xref="Gio.OutputStream">Gio.OutputStream</link>, buffer: ByteArray, blocking: Boolean, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): [ok: Boolean, bytes_written: Number(gsize)] {
     // Gjs wrapper for g_pollable_stream_write_all()
 }
   </code></synopsis>

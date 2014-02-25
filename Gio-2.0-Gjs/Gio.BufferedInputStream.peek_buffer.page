@@ -9,14 +9,14 @@
     <link xref="Gio.BufferedInputStream" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Array(Number(guint8))</api:type>
+        <api:type>ByteArray</api:type>
       </api:returns>
       <api:name>g_buffered_input_stream_peek_buffer</api:name>
     </api:function>
   </info>
   <title>Gio.BufferedInputStream.prototype.peek_buffer</title>
   <synopsis><code mime="text/x-gjs">
-function peek_buffer(): [return_value: Array(Number(guint8)), count: Number(gsize)] {
+function peek_buffer(): [return_value: ByteArray, count: Number(gsize)] {
     // Gjs wrapper for g_buffered_input_stream_peek_buffer()
 }
   </code></synopsis>

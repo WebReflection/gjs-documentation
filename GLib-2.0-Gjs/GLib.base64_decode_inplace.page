@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_base64_decode_inplace</api:name>
       <api:arg>
-        <api:type>Array(Number(guint8))</api:type>
+        <api:type>ByteArray</api:type>
         <api:name>text</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GLib.base64_decode_inplace</title>
   <synopsis><code mime="text/x-gjs">
-function base64_decode_inplace(text: Array(Number(guint8))): [return_value: Number(guint8), text: Array(Number(guint8))] {
+function base64_decode_inplace(text: ByteArray): [return_value: Number(guint8), text: ByteArray] {
     // Gjs wrapper for g_base64_decode_inplace()
 }
   </code></synopsis>

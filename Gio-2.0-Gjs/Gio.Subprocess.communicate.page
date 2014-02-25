@@ -13,7 +13,7 @@
       </api:returns>
       <api:name>g_subprocess_communicate</api:name>
       <api:arg>
-        <api:type>GLib.Bytes</api:type>
+        <api:type>ByteArray</api:type>
         <api:name>stdin_buf</api:name>
       </api:arg>
       <api:arg>
@@ -24,7 +24,7 @@
   </info>
   <title>Gio.Subprocess.prototype.communicate</title>
   <synopsis><code mime="text/x-gjs">
-function communicate(stdin_buf: <link href="../GLib-2.0/GLib.Bytes.page">GLib.Bytes</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): [ok: Boolean, stdout_buf: <link href="../GLib-2.0/GLib.Bytes.page">GLib.Bytes</link>, stderr_buf: <link href="../GLib-2.0/GLib.Bytes.page">GLib.Bytes</link>] {
+function communicate(stdin_buf: ByteArray, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): [ok: Boolean, stdout_buf: ByteArray, stderr_buf: ByteArray] {
     // Gjs wrapper for g_subprocess_communicate()
 }
   </code></synopsis>

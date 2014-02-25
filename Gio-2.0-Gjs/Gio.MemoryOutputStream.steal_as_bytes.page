@@ -9,14 +9,14 @@
     <link xref="Gio.MemoryOutputStream" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>GLib.Bytes</api:type>
+        <api:type>ByteArray</api:type>
       </api:returns>
       <api:name>g_memory_output_stream_steal_as_bytes</api:name>
     </api:function>
   </info>
   <title>Gio.MemoryOutputStream.prototype.steal_as_bytes</title>
   <synopsis><code mime="text/x-gjs">
-function steal_as_bytes(): <link href="../GLib-2.0/GLib.Bytes.page">GLib.Bytes</link> {
+function steal_as_bytes(): ByteArray {
     // Gjs wrapper for g_memory_output_stream_steal_as_bytes()
 }
   </code></synopsis>

@@ -10,7 +10,7 @@
   </info>
   <title>Gio.OutputStream::write_fn</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_write_fn(buffer: Array(Number(guint8)), cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Number(gssize) {
+function vfunc_write_fn(buffer: ByteArray, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Number(gssize) {
 }
   </code></synopsis>
   <p>Tries to write <code>count</code> bytes from <code>buffer</code> into the stream. Will block

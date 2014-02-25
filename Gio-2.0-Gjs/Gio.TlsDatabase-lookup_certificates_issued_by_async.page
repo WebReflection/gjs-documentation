@@ -10,7 +10,7 @@
   </info>
   <title>Gio.TlsDatabase::lookup_certificates_issued_by_async</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_lookup_certificates_issued_by_async(issuer_raw_dn: Array(Number(guint8)), interaction: <link xref="Gio.TlsInteraction">Gio.TlsInteraction</link>, flags: <link xref="Gio.TlsDatabaseLookupFlags">Gio.TlsDatabaseLookupFlags</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
+function vfunc_lookup_certificates_issued_by_async(issuer_raw_dn: ByteArray, interaction: <link xref="Gio.TlsInteraction">Gio.TlsInteraction</link>, flags: <link xref="Gio.TlsDatabaseLookupFlags">Gio.TlsDatabaseLookupFlags</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>, callback: <link xref="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</link>): void {
 }
   </code></synopsis>
   <p>Asynchronously lookup certificates issued by this issuer in the database. See

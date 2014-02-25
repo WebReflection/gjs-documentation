@@ -16,7 +16,7 @@
   </info>
   <title>GLib.IOChannel.prototype.read_chars</title>
   <synopsis><code mime="text/x-gjs">
-function read_chars(): [return_value: <link xref="GLib.IOStatus">GLib.IOStatus</link>, buf: Array(Number(guint8)), bytes_read: Number(gsize)] {
+function read_chars(): [return_value: <link xref="GLib.IOStatus">GLib.IOStatus</link>, buf: ByteArray, bytes_read: Number(gsize)] {
     // Gjs wrapper for g_io_channel_read_chars()
 }
   </code></synopsis>

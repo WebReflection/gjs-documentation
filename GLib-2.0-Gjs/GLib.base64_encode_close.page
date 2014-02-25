@@ -28,7 +28,7 @@
   </info>
   <title>GLib.base64_encode_close</title>
   <synopsis><code mime="text/x-gjs">
-function base64_encode_close(break_lines: Boolean, state: Number(gint), save: Number(gint)): [return_value: Number(gsize), out: Array(Number(guint8)), state: Number(gint), save: Number(gint)] {
+function base64_encode_close(break_lines: Boolean, state: Number(gint), save: Number(gint)): [return_value: Number(gsize), out: ByteArray, state: Number(gint), save: Number(gint)] {
     // Gjs wrapper for g_base64_encode_close()
 }
   </code></synopsis>

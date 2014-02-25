@@ -9,14 +9,14 @@
     <link xref="GLib.Variant" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Array(Number(guint8))</api:type>
+        <api:type>ByteArray</api:type>
       </api:returns>
       <api:name>g_variant_get_bytestring</api:name>
     </api:function>
   </info>
   <title>GLib.Variant.prototype.get_bytestring</title>
   <synopsis><code mime="text/x-gjs">
-function get_bytestring(): Array(Number(guint8)) {
+function get_bytestring(): ByteArray {
     // Gjs wrapper for g_variant_get_bytestring()
 }
   </code></synopsis>

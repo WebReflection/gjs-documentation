@@ -9,14 +9,14 @@
     <link xref="GLib.MappedFile" group="method" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>GLib.Bytes</api:type>
+        <api:type>ByteArray</api:type>
       </api:returns>
       <api:name>g_mapped_file_get_bytes</api:name>
     </api:function>
   </info>
   <title>GLib.MappedFile.prototype.get_bytes</title>
   <synopsis><code mime="text/x-gjs">
-function get_bytes(): <link xref="GLib.Bytes">GLib.Bytes</link> {
+function get_bytes(): ByteArray {
     // Gjs wrapper for g_mapped_file_get_bytes()
 }
   </code></synopsis>

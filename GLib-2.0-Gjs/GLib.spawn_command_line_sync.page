@@ -20,7 +20,7 @@
   </info>
   <title>GLib.spawn_command_line_sync</title>
   <synopsis><code mime="text/x-gjs">
-function spawn_command_line_sync(command_line: String): [ok: Boolean, standard_output: Array(Number(guint8)), standard_error: Array(Number(guint8)), exit_status: Number(gint)] {
+function spawn_command_line_sync(command_line: String): [ok: Boolean, standard_output: ByteArray, standard_error: ByteArray, exit_status: Number(gint)] {
     // Gjs wrapper for g_spawn_command_line_sync()
 }
   </code></synopsis>

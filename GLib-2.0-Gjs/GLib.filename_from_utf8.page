@@ -9,7 +9,7 @@
     <link xref="index" group="function" type="guide"/>
     <api:function>
       <api:returns>
-        <api:type>Array(Number(guint8))</api:type>
+        <api:type>ByteArray</api:type>
       </api:returns>
       <api:name>g_filename_from_utf8</api:name>
       <api:arg>
@@ -24,7 +24,7 @@
   </info>
   <title>GLib.filename_from_utf8</title>
   <synopsis><code mime="text/x-gjs">
-function filename_from_utf8(utf8string: String, len: Number(gssize)): [return_value: Array(Number(guint8)), bytes_read: Number(gsize), bytes_written: Number(gsize)] {
+function filename_from_utf8(utf8string: String, len: Number(gssize)): [return_value: ByteArray, bytes_read: Number(gsize), bytes_written: Number(gsize)] {
     // Gjs wrapper for g_filename_from_utf8()
 }
   </code></synopsis>

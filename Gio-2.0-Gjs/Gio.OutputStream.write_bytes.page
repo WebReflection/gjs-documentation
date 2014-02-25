@@ -13,7 +13,7 @@
       </api:returns>
       <api:name>g_output_stream_write_bytes</api:name>
       <api:arg>
-        <api:type>GLib.Bytes</api:type>
+        <api:type>ByteArray</api:type>
         <api:name>bytes</api:name>
       </api:arg>
       <api:arg>
@@ -24,7 +24,7 @@
   </info>
   <title>Gio.OutputStream.prototype.write_bytes</title>
   <synopsis><code mime="text/x-gjs">
-function write_bytes(bytes: <link href="../GLib-2.0/GLib.Bytes.page">GLib.Bytes</link>, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Number(gssize) {
+function write_bytes(bytes: ByteArray, cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</link>): Number(gssize) {
     // Gjs wrapper for g_output_stream_write_bytes()
 }
   </code></synopsis>
