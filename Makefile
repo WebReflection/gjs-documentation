@@ -12,6 +12,7 @@ all: $(HTMLS)
 
 $(outdir)%-Gjs: $(girdir)/%.gir
 	g-ir-doc-tool --language=Gjs -o $@ $<
+	touch $@
 
 update-mallard: $(MALLARDS)
 
