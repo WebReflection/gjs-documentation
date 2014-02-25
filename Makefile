@@ -16,7 +16,7 @@ all: $(HTMLS)
 update-mallard: $(MALLARDS)
 
 html/%: %-Gjs
-	mkdir $@
+	mkdir -p $@
 	yelp-build html -o $@ $<
 
 upload: all
