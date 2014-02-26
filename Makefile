@@ -31,12 +31,6 @@ NAMESPACES = \
 	NMClient-1.0		\
 	NetworkManager-1.0	\
 	Soup-2.4		\
-	Rest-0.7		\
-	RestExtras-0.7		\
-	GData-0.0		\
-	GFBGraph-0.2		\
-	Zpj-0.0			\
-	Goa-1.0			\
 	TelepathyGLib-0.12	\
 	TelepathyLogger-0.2	\
 	EDataServer-1.2		\
@@ -46,13 +40,8 @@ NAMESPACES = \
 	Gck-1			\
 	Secret-1		\
 	Gda-6.0			\
-	PackageKitGlib-1.0	\
 	Notify-0.7		\
-	Poppler-0.18		\
-	EvinceDocument-3.0	\
-	EvinceView-3.0		\
 	Polkit-1.0		\
-	PolkitAgent-1.0		\
 	Champlain-0.12		\
 	GtkChamplain-0.12	\
 	GeocodeGlib-1.0		\
