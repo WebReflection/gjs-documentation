@@ -1,12 +1,14 @@
-outdir ?=
+outdir ?= .
 prefix ?= /opt/gnome
 datadir ?= $(prefix)/share
 girdir = $(datadir)/gir-1.0
 
-NAMESPACES = \
+STATIC_NAMESPACES = \
 	GLib-2.0		\
 	Gio-2.0			\
 	GObject-2.0		\
+
+GENERATED_NAMESPACES = \
 	cairo-1.0		\
 	Pango-1.0		\
 	PangoCairo-1.0		\
@@ -50,19 +52,30 @@ NAMESPACES = \
 	GrlNet-0.2		\
 	GrlPls-0.2
 
+NAMESPACES = $(STATIC_NAMESPACES) $(GENERATED_NAMESPACES)
+
 GIRS = $(foreach g,$(NAMESPACES),$(girdir)/$(g).gir)
-MALLARDS = $(foreach g,$(NAMESPACES),$(outdir)$(g)-Gjs)
+MALLARDS = \
+	$(foreach g,$(STATIC_NAMESPACES),$(outdir)/static/$(g)) \
+	$(foreach g,$(GENERATED_NAMESPACES),$(outdir)/generated/$(g))
 HTMLS = $(foreach g,$(NAMESPACES),html/$(g))
 
 all: $(HTMLS)
 
-$(outdir)%-Gjs: $(girdir)/%.gir
+$(outdir)/static/%: $(girdir)/%.gir
+	g-ir-doc-tool --language=Gjs -o $@ $<
+	touch $@
+$(outdir)/generated/%: $(girdir)/%.gir
 	g-ir-doc-tool --language=Gjs -o $@ $<
 	touch $@
 
 update-mallard: $(MALLARDS)
 
-html/%: %-Gjs
+html/%: $(outdir)/static/%
+	mkdir -p $@
+	yelp-build html -o $@ $<
+	touch $@
+html/%: $(outdir)/generated/%
 	mkdir -p $@
 	yelp-build html -o $@ $<
 	touch $@
