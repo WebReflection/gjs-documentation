@@ -34,6 +34,8 @@ function new(type: String, value: Any): <link xref="GLib.Variant">GLib.Variant</
   <code>value</code> must be an appropriate JS primitive value.</p>
   <p>If <code>type</code> is <code>v</code>, then <code>value</code> must
   be a <link xref="GLib.Variant"/>.</p>
+  <p>If <code>type</code> ia a maybe type, then <code>value</code> can
+  be <code>null</code> or a value of the correct type.</p>
   <p>If <code>type</code> is an array type, then <code>value</code> must
   be an array of appropriate values. As a special case, if <code>type</code>
   is <code>ay</code>, then a ByteArray can be used, which can avoid memory
