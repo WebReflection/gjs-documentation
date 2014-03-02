@@ -48,7 +48,7 @@ handshake.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p>success or failure</p>
 </item>
 </terms>
 

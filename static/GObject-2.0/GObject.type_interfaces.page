@@ -34,7 +34,8 @@ the interface types that <code>type</code> conforms to.</p>
 </item>
 <item>
 <title><code>return_value</code></title>
-
+  <p>Newly allocated
+    and 0-terminated array of interface types, free with <link href="../GLib-2.0/GLib.free.html">GLib.free</link></p>
 </item>
 <item>
 <title><code>n_interfaces</code></title>

@@ -26,7 +26,7 @@ function get_timeout(): Number(guint) {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the timeout in seconds</p>
 </item>
 </terms>
 

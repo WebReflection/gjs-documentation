@@ -66,7 +66,7 @@ function signal_connect_closure_by_id(instance: <link xref="GObject.Object">GObj
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the handler id (always greater than 0 for successful connections)</p>
 </item>
 </terms>
 

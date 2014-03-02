@@ -29,7 +29,7 @@ the <code>appinfo</code> has been constructed.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a string containing the application's ID.</p>
 </item>
 </terms>
 

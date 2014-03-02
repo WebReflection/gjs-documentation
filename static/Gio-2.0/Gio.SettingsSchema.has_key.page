@@ -33,7 +33,7 @@ function has_key(name: String): Boolean {
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if such a key exists</p>
 </item>
 </terms>
 

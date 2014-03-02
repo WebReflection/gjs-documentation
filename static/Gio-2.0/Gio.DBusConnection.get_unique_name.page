@@ -27,7 +27,9 @@ message bus connection.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the unique name or <code>null</code> if <code>connection</code> is not a message
+    bus connection. Do not free this string, it is owned by
+    <code>connection</code>.</p>
 </item>
 </terms>
 

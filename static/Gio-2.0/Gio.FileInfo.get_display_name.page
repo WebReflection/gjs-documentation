@@ -25,7 +25,7 @@ function get_display_name(): String {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a string containing the display name.</p>
 </item>
 </terms>
 

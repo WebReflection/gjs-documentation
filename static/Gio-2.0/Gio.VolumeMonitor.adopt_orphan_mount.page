@@ -50,7 +50,8 @@ is to return <link xref="Gio.Volume"/> objects representing entries in the users
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the <link xref="Gio.Volume"/> object that is the parent for <code>mount</code> or <code>null</code>
+if no wants to adopt the <link xref="Gio.Mount"/>.</p>
 </item>
 </terms>
 

@@ -33,7 +33,8 @@ function matches(address: <link xref="Gio.InetAddress">Gio.InetAddress</link>): 
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p>whether <code>address</code> falls within the range described by
+<code>mask</code>.</p>
 </item>
 </terms>
 

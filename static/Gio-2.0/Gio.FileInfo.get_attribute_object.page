@@ -34,7 +34,8 @@ not contain a <link href="../GObject-2.0/GObject.Object.html">GObject.Object</li
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link> associated with the given <code>attribute</code>, or
+<code>null</code> otherwise.</p>
 </item>
 </terms>
 

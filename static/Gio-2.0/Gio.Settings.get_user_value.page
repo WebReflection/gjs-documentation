@@ -40,7 +40,7 @@ schema for <code>settings</code>.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the user's value, if set</p>
 </item>
 </terms>
 

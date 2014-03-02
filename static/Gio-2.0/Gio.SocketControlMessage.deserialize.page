@@ -53,7 +53,7 @@ will be returned.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the deserialized message or <code>null</code></p>
 </item>
 </terms>
 

@@ -27,7 +27,7 @@ RFC 2782.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p><code>target</code>'s priority</p>
 </item>
 </terms>
 

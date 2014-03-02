@@ -42,7 +42,8 @@ must have pollable input and output streams).</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the new
+<link xref="Gio.TlsServerConnection"/>, or <code>null</code> on error</p>
 </item>
 </terms>
 

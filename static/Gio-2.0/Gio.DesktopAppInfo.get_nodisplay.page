@@ -27,7 +27,7 @@ application info should be shown in menus. See
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p>The value of the NoDisplay key</p>
 </item>
 </terms>
 

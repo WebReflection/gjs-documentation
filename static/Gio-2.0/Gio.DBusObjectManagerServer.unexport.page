@@ -35,7 +35,7 @@ object path for <code>manager</code>.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if object at <code>object_path</code> was removed, <code>false</code> otherwise.</p>
 </item>
 </terms>
 

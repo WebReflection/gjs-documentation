@@ -36,7 +36,7 @@ action.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the locale-specific action name</p>
 </item>
 </terms>
 

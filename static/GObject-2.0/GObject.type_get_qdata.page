@@ -44,7 +44,7 @@ be retrieved from a subtype using <link xref="GObject.type_get_qdata"/>.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the data, or <code>null</code> if no data was found</p>
 </item>
 </terms>
 

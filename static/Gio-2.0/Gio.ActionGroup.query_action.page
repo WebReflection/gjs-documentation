@@ -49,7 +49,7 @@ fields may or may not have been modified.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the action exists, else <code>false</code></p>
 </item>
 <item>
 <title><code>enabled</code></title>

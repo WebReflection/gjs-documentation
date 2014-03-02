@@ -42,7 +42,7 @@ with a buffer set to <code>size</code>.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.InputStream"/>.</p>
 </item>
 </terms>
 

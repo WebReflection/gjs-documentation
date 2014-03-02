@@ -53,7 +53,9 @@ will also be completed right away.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>task</code>'s return-on-cancel flag was changed to
+  match <code>return_on_cancel</code>. <code>false</code> if <code>task</code> has already been
+  cancelled.</p>
 </item>
 </terms>
 

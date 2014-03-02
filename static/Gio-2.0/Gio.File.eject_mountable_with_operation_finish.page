@@ -34,7 +34,8 @@ function eject_mountable_with_operation_finish(result: <link xref="Gio.AsyncResu
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the <code>file</code> was ejected successfully.
+    <code>false</code> otherwise.</p>
 </item>
 </terms>
 

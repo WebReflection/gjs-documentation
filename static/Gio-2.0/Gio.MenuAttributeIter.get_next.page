@@ -33,7 +33,8 @@ be unreffed using <link href="../GLib-2.0/GLib.Variant.unref.html">GLib.Variant.
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> on success, or <code>false</code> if there is no additional
+    attribute</p>
 </item>
 <item>
 <title><code>out_name</code></title>

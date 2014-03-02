@@ -25,7 +25,7 @@ function get_num_unix_fds(): Number(guint32) {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>The value.</p>
 </item>
 </terms>
 

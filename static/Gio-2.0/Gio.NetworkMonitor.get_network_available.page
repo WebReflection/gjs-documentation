@@ -28,7 +28,7 @@ reachable. See <link xref="Gio.NetworkMonitor-network-available"/> for more deta
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p>whether the network is available</p>
 </item>
 </terms>
 

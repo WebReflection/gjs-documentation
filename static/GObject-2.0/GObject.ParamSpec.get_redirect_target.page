@@ -31,7 +31,8 @@ for an example of the use of this capability.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>paramspec to which requests on this
+         paramspec should be redirected, or <code>null</code> if none.</p>
 </item>
 </terms>
 

@@ -34,7 +34,7 @@ function eject_with_operation_finish(result: <link xref="Gio.AsyncResult">Gio.As
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the mount was successfully ejected. <code>false</code> otherwise.</p>
 </item>
 </terms>
 

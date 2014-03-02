@@ -34,7 +34,9 @@ See <link xref="Gio.File.enumerate_children_async"/>.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.FileEnumerator"/> or <code>null</code>
+    if an error occurred.
+    Free the returned object with <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link>.</p>
 </item>
 </terms>
 

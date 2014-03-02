@@ -53,7 +53,7 @@ context.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the ID of the export (never zero), or 0 in case of failure</p>
 </item>
 </terms>
 

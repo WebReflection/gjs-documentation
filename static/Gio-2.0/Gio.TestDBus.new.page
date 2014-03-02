@@ -33,7 +33,7 @@ function new(flags: <link xref="Gio.TestDBusFlags">Gio.TestDBusFlags</link>): <l
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.TestDBus"/>.</p>
 </item>
 </terms>
 

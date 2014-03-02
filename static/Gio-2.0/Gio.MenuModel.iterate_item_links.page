@@ -34,7 +34,7 @@ position <code>item_index</code> in <code>model</code>.</p>  <p>You must free th
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.MenuLinkIter"/></p>
 </item>
 </terms>
 

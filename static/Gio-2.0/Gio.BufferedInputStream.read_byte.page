@@ -39,7 +39,7 @@ partial result will be returned, without an error.</p>  <p>On error -1 is return
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the byte read from the <code>stream</code>, or -1 on end of stream or error.</p>
 </item>
 </terms>
 

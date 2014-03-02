@@ -42,7 +42,7 @@ first <code>length</code> bits match <code>addr</code>.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.InetAddressMask"/>, or <code>null</code> on error</p>
 </item>
 </terms>
 

@@ -25,7 +25,7 @@ function new(): <link xref="Gio.FilenameCompleter">Gio.FilenameCompleter</link> 
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.FilenameCompleter"/>.</p>
 </item>
 </terms>
 

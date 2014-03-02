@@ -25,7 +25,7 @@ function get_length(): Number(guint) {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p><code>mask</code>'s length</p>
 </item>
 </terms>
 

@@ -33,7 +33,8 @@ function content_type_get_mime_type(type: String): String {
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the registered mime type for the given <code>type</code>,
+    or <code>null</code> if unknown.</p>
 </item>
 </terms>
 

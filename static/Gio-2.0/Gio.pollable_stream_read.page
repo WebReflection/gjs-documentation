@@ -71,7 +71,7 @@ returns <code>true</code>, or else the behavior is undefined. If <code>blocking<
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the number of bytes read, or -1 on error.</p>
 </item>
 </terms>
 

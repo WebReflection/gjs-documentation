@@ -25,7 +25,7 @@ function get_num_fallbacks(): Number(guint) {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the number of fallbacks that <code>converter</code> has applied</p>
 </item>
 </terms>
 

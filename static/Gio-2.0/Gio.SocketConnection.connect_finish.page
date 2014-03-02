@@ -33,7 +33,7 @@ function connect_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</li
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the connection succeeded, <code>false</code> on error</p>
 </item>
 </terms>
 

@@ -33,7 +33,7 @@ function accept_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</lin
 </item>
 <item>
 <title><code>return_value</code></title>
-
+  <p>a <link xref="Gio.SocketConnection"/> on success, <code>null</code> on error.</p>
 </item>
 <item>
 <title><code>source_object</code></title>

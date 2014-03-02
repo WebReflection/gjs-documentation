@@ -37,7 +37,7 @@ function; there's no need to listen for the 'mount-added' signal on
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code>, <code>false</code> if operation failed</p>
 </item>
 </terms>
 

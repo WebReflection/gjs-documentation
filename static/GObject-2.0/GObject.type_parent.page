@@ -34,7 +34,7 @@ in type has no parent, i.e. is a fundamental type, 0 is returned.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the parent type</p>
 </item>
 </terms>
 

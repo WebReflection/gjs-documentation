@@ -49,7 +49,9 @@ headers.</p>  <p>Note that even for socket options that are a single byte in siz
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p>success or failure. On failure, @error will be set, and
+  the system error value (`errno` or WSAGetLastError()) will still
+  be set to the result of the getsockopt() call.</p>
 </item>
 <item>
 <title><code>value</code></title>

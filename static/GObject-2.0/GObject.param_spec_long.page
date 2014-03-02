@@ -81,7 +81,7 @@ function param_spec_long(name: String, nick: String, blurb: String, minimum: Num
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly created parameter specification</p>
 </item>
 </terms>
 

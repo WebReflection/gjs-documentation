@@ -36,7 +36,7 @@ sure resources are released as early as possible.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p>#TRUE on success or #FALSE on error.</p>
 </item>
 </terms>
 

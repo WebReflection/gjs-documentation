@@ -25,7 +25,9 @@ function get_server_identity(): <link xref="Gio.SocketConnectable">Gio.SocketCon
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.SocketConnectable"/> describing the
+expected server identity, or <code>null</code> if the expected identity is not
+known.</p>
 </item>
 </terms>
 

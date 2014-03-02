@@ -46,7 +46,7 @@ arguments are interpreted.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.SimpleProxyResolver"/></p>
 </item>
 </terms>
 

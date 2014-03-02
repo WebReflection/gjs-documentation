@@ -43,7 +43,7 @@ offset <code>offset</code> bytes.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a #gsize of the number of bytes peeked, or -1 on error.</p>
 </item>
 </terms>
 

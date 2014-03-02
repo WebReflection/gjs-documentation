@@ -26,7 +26,7 @@ closed when the stream is closed.</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the file descriptor is closed when done</p>
 </item>
 </terms>
 

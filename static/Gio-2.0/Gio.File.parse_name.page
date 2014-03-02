@@ -36,7 +36,7 @@ the <code>parse_name</code> cannot be parsed.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.File"/>.</p>
 </item>
 </terms>
 

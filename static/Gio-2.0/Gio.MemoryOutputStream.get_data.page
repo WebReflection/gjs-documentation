@@ -26,7 +26,7 @@ write or truncate operation on the stream.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>pointer to the stream's data</p>
 </item>
 </terms>
 

@@ -25,7 +25,7 @@ function get_service(): String {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p><code>srv</code>'s service name</p>
 </item>
 </terms>
 

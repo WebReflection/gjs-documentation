@@ -25,7 +25,7 @@ function can_truncate(): Boolean {
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the stream can be truncated, <code>false</code> otherwise.</p>
 </item>
 </terms>
 

@@ -50,7 +50,8 @@ to having been cancelled.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the number of bytes written, or -1 on error (including
+  <link xref="Gio.IOErrorEnum"/>.would_block).</p>
 </item>
 </terms>
 

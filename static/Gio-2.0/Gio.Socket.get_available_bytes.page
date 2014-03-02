@@ -32,7 +32,8 @@ exactly the right size.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the number of bytes that can be read from the socket
+without blocking or truncating, or -1 on error.</p>
 </item>
 </terms>
 

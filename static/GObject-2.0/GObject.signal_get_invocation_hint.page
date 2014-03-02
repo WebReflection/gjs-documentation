@@ -33,7 +33,7 @@ function signal_get_invocation_hint(instance: <link xref="GObject.Object">GObjec
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the invocation hint of the innermost signal  emission.</p>
 </item>
 </terms>
 

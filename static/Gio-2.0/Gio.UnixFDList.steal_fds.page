@@ -34,7 +34,8 @@ descriptors contained in <code>list</code>, an empty array is returned.</p>
 <terms>
 <item>
 <title><code>return_value</code></title>
-
+  <p>an array of file
+    descriptors</p>
 </item>
 <item>
 <title><code>length</code></title>

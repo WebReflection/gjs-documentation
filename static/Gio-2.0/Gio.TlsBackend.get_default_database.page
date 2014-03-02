@@ -25,7 +25,8 @@ function get_default_database(): <link xref="Gio.TlsDatabase">Gio.TlsDatabase</l
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the default database, which should be
+              unreffed when done.</p>
 </item>
 </terms>
 

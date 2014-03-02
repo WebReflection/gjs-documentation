@@ -25,7 +25,7 @@ function guess_icon(): <link xref="Gio.Icon">Gio.Icon</link> {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.Icon"/></p>
 </item>
 </terms>
 

@@ -36,7 +36,8 @@ a value from <link xref="Gio.ResolverError"/>. If the operation was cancelled,
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link href="../GLib-2.0/GLib.List.html">GLib.List</link> of <link xref="Gio.SrvTarget"/>,
+or <code>null</code> on error. See <link xref="Gio.Resolver.lookup_service"/> for more details.</p>
 </item>
 </terms>
 

@@ -33,7 +33,7 @@ function write_bytes_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a #gssize containing the number of bytes written to the stream.</p>
 </item>
 </terms>
 

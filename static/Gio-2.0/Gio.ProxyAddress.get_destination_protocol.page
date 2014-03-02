@@ -26,7 +26,7 @@ server; eg, "http" or "ftp".</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the <code>proxy</code>'s destination protocol</p>
 </item>
 </terms>
 

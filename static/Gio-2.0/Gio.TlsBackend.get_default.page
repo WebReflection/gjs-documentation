@@ -25,7 +25,7 @@ function get_default(): <link xref="Gio.TlsBackend">Gio.TlsBackend</link> {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.TlsBackend"/></p>
 </item>
 </terms>
 

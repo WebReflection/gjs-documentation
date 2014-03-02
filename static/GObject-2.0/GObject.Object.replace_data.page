@@ -73,7 +73,8 @@ should not destroy the object in the normal way.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the existing value for <code>key</code> was replaced
+ by <code>newval</code>, <code>false</code> otherwise.</p>
 </item>
 </terms>
 

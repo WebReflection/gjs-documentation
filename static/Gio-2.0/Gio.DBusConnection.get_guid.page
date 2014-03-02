@@ -26,7 +26,8 @@ authenticating. See <link xref="Gio.DBusConnection-guid"/> for more details.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>The GUID. Do not free this string, it is owned by
+    <code>connection</code>.</p>
 </item>
 </terms>
 

@@ -26,7 +26,7 @@ connection-oriented sockets.</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if socket is connected, <code>false</code> otherwise.</p>
 </item>
 </terms>
 

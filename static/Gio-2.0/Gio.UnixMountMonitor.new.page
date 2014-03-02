@@ -28,7 +28,7 @@ point entry files is the default for a <link xref="Gio.FileMonitor"/>. Use
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.UnixMountMonitor"/>.</p>
 </item>
 </terms>
 

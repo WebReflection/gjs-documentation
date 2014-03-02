@@ -43,7 +43,7 @@ be released with <link href="../GLib-2.0/GLib.strfreev.html">GLib.strfreev</link
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>an array of constant strings</p>
 </item>
 </terms>
 

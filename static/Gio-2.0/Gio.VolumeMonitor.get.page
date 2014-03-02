@@ -25,7 +25,8 @@ function get(): <link xref="Gio.VolumeMonitor">Gio.VolumeMonitor</link> {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a reference to the <link xref="Gio.VolumeMonitor"/> used by gio. Call
+   <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link> when done with it.</p>
 </item>
 </terms>
 

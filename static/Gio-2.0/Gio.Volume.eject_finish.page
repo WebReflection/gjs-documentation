@@ -34,7 +34,7 @@ function eject_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code>, <code>false</code> if operation failed</p>
 </item>
 </terms>
 

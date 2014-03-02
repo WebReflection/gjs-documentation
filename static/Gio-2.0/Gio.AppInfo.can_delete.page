@@ -26,7 +26,7 @@ See <link xref="Gio.AppInfo.delete"/>.</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>appinfo</code> can be deleted</p>
 </item>
 </terms>
 

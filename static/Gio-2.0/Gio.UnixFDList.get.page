@@ -38,7 +38,7 @@ system-wide file descriptor limit.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the file descriptor, or -1 in case of error</p>
 </item>
 </terms>
 

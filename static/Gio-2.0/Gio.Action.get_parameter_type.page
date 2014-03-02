@@ -28,7 +28,7 @@ given to that function must be of the type returned by this function.</p>  <p>In
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the parameter type</p>
 </item>
 </terms>
 

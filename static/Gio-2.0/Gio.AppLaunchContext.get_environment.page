@@ -28,7 +28,8 @@ the form `KEY=VALUE`.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the
+    child's environment</p>
 </item>
 </terms>
 

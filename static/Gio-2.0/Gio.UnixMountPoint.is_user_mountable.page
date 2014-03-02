@@ -25,7 +25,7 @@ function is_user_mountable(): Boolean {
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the mount point is user mountable.</p>
 </item>
 </terms>
 

@@ -34,7 +34,7 @@ function flush_finish(res: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>):
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the operation succeeded, <code>false</code> if @error is set</p>
 </item>
 </terms>
 

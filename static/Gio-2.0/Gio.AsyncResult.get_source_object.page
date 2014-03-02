@@ -25,7 +25,8 @@ function get_source_object(): <link href="../GObject-2.0/GObject.Object.html">GO
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new reference to the source object for the <code>res</code>,
+   or <code>null</code> if there is none.</p>
 </item>
 </terms>
 

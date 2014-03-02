@@ -35,7 +35,7 @@ having a uint32 type in the schema for <code>settings</code>.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>an unsigned integer</p>
 </item>
 </terms>
 

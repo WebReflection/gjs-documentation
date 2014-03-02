@@ -68,7 +68,8 @@ to not exist or <code>null</code>.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>An identifier (never 0) that an be used with
+<link xref="Gio.bus_unwatch_name"/> to stop watching the name.</p>
 </item>
 </terms>
 

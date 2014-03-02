@@ -26,7 +26,7 @@ For instance, for UNIX fd passing this would be SCM_RIGHTS.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>an integer describing the type of control message</p>
 </item>
 </terms>
 

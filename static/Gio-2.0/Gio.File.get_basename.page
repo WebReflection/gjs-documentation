@@ -31,7 +31,9 @@ attribute with <link xref="Gio.File.query_info"/>.</p>  <p>This call does no blo
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>string containing the <link xref="Gio.File"/>'s base name, or <code>null</code>
+    if given <link xref="Gio.File"/> is invalid. The returned string should be
+    freed with <link href="../GLib-2.0/GLib.free.html">GLib.free</link> when no longer needed.</p>
 </item>
 </terms>
 

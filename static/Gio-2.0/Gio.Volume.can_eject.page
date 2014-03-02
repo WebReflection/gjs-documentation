@@ -25,7 +25,7 @@ function can_eject(): Boolean {
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the <code>volume</code> can be ejected. <code>false</code> otherwise</p>
 </item>
 </terms>
 

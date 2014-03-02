@@ -51,7 +51,8 @@ an error domain.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the association was created, <code>false</code> if it already
+exists.</p>
 </item>
 </terms>
 

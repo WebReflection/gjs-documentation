@@ -27,7 +27,7 @@ been called yet, <code>null</code> is returned. This can be used with
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the address of the bus, or <code>null</code>.</p>
 </item>
 </terms>
 

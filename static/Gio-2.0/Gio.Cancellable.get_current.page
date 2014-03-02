@@ -25,7 +25,8 @@ function get_current(): <link xref="Gio.Cancellable">Gio.Cancellable</link> {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.Cancellable"/> from the top of the stack, or <code>null</code>
+if the stack is empty.</p>
 </item>
 </terms>
 

@@ -35,7 +35,7 @@ created. Further information about the signals can be acquired through
 </item>
 <item>
 <title><code>return_value</code></title>
-
+  <p>Newly allocated array of signal IDs.</p>
 </item>
 <item>
 <title><code>n_ids</code></title>

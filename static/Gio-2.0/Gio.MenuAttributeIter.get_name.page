@@ -26,7 +26,7 @@ a string.</p>  <p>The iterator is not advanced.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the name of the attribute</p>
 </item>
 </terms>
 

@@ -33,7 +33,7 @@ function close_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the stream was closed successfully.</p>
 </item>
 </terms>
 

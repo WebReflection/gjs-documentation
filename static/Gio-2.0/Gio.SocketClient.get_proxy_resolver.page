@@ -27,7 +27,8 @@ can override it with <link xref="Gio.SocketClient.set_proxy_resolver"/>.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>The <link xref="Gio.ProxyResolver"/> being used by
+  <code>client</code>.</p>
 </item>
 </terms>
 

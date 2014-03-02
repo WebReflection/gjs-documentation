@@ -25,7 +25,9 @@ function get_header_fields(): ByteArray {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>An array of header fields
+terminated by <link xref="Gio.DBusMessageHeaderField"/>.invalid.  Each element
+is a #guchar. Free with <link href="../GLib-2.0/GLib.free.html">GLib.free</link>.</p>
 </item>
 </terms>
 

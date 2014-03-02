@@ -26,7 +26,8 @@ descriptive to the user than the name itself.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the display name of the application for <code>appinfo</code>, or the name if
+no display name is available.</p>
 </item>
 </terms>
 

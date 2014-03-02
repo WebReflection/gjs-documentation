@@ -53,7 +53,7 @@ being swallowed by Exec key unquoting. See the specification for exact quoting r
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>new <link xref="Gio.AppInfo"/> for given command.</p>
 </item>
 </terms>
 

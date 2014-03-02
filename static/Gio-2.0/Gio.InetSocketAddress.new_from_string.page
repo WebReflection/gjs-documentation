@@ -42,7 +42,8 @@ function new_from_string(address: String, port: Number(guint)): <link xref="Gio.
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.InetSocketAddress"/>, or <code>null</code> if <code>address</code> cannot be
+parsed.</p>
 </item>
 </terms>
 

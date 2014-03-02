@@ -55,7 +55,10 @@ address, it may be easier to create a <link xref="Gio.NetworkAddress"/> and use 
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link href="../GLib-2.0/GLib.List.html">GLib.List</link>
+of <link xref="Gio.InetAddress"/>, or <code>null</code> on error. You
+must unref each of the addresses and free the list when you are
+done with it. (You can use <link xref="Gio.Resolver.free_addresses"/> to do this.)</p>
 </item>
 </terms>
 

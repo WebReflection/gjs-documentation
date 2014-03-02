@@ -62,7 +62,7 @@ UNIX File Descriptors:
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A string that should be freed with <link href="../GLib-2.0/GLib.free.html">GLib.free</link>.</p>
 </item>
 </terms>
 

@@ -27,7 +27,7 @@ or <link xref="Gio.SocketListener.add_inet_port"/>.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.SocketListener"/>.</p>
 </item>
 </terms>
 

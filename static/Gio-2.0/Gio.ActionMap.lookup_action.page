@@ -33,7 +33,7 @@ function lookup_action(action_name: String): <link xref="Gio.Action">Gio.Action<
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.Action"/>, or <code>null</code></p>
 </item>
 </terms>
 

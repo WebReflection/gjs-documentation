@@ -69,7 +69,7 @@ need to be a <link xref="Gio.PollableOutputStream"/>.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> on success, <code>false</code> if there was an error</p>
 </item>
 <item>
 <title><code>bytes_written</code></title>

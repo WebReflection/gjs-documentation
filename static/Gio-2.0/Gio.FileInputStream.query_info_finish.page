@@ -33,7 +33,7 @@ function query_info_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult<
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p><link xref="Gio.FileInfo"/>.</p>
 </item>
 </terms>
 

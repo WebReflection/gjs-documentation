@@ -33,7 +33,7 @@ function dbus_is_name(string: String): Boolean {
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if valid, <code>false</code> otherwise.</p>
 </item>
 </terms>
 

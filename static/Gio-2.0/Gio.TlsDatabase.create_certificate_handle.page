@@ -38,7 +38,7 @@ then it is not guaranteed that this handle will continue to point to it.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly allocated string containing the handle.</p>
 </item>
 </terms>
 

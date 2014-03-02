@@ -58,7 +58,9 @@ returned (e.g. 0 for scalar types, the empty string for string types,
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> (never floating) of <link href="../GLib-2.0/GLib.VariantType.html">GLib.VariantType</link> <code>type</code> holding
+    the data from <code>gvalue</code> or <code>null</code> in case of failure. Free with
+    <link href="../GLib-2.0/GLib.Variant.unref.html">GLib.Variant.prototype.unref</link>.</p>
 </item>
 </terms>
 

@@ -26,7 +26,9 @@ The list is sorted by priority, beginning with the highest priority.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link href="../GLib-2.0/GLib.List.html">GLib.List</link> of
+    #GIOExtensions. The list is owned by GIO and should not be
+    modified.</p>
 </item>
 </terms>
 

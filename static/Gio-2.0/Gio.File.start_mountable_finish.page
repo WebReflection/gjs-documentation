@@ -34,7 +34,8 @@ with <link xref="Gio.File.start_mountable"/>.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the operation finished successfully. <code>false</code>
+otherwise.</p>
 </item>
 </terms>
 

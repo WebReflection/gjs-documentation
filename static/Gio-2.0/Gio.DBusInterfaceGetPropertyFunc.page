@@ -42,7 +42,9 @@ function onDBusInterfaceGetPropertyFunc(connection: <link xref="Gio.DBusConnecti
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> with the value for <code>property_name</code> or <code>null</code> if
+    <code>error</code> is set. If the returned <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> is floating, it is
+    consumed - otherwise its reference count is decreased by one.</p>
 </item>
 </terms>
 

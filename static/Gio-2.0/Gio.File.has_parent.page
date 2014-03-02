@@ -35,7 +35,8 @@ if <code>file</code> is a child of <code>parent</code>.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>file</code> is a child of <code>parent</code> (or any parent in the
+         case that <code>parent</code> is <code>null</code>).</p>
 </item>
 </terms>
 

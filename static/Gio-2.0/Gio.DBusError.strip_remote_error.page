@@ -36,7 +36,7 @@ received on the wire.</p>  <p>This is typically used when presenting errors to t
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if information was stripped, <code>false</code> otherwise.</p>
 </item>
 </terms>
 

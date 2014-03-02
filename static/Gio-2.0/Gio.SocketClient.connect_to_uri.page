@@ -59,7 +59,7 @@ accordingly.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.SocketConnection"/> on success, <code>null</code> on error.</p>
 </item>
 </terms>
 

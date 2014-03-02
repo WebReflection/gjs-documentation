@@ -25,7 +25,7 @@ function get_protocol(): <link xref="Gio.SocketProtocol">Gio.SocketProtocol</lin
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.SocketProtocol"/></p>
 </item>
 </terms>
 

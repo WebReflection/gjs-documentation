@@ -26,7 +26,9 @@ using that object to get the <link xref="Gio.Drive"/>.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.Drive"/> or <code>null</code> if <code>mount</code> is not associated with a volume or a drive.
+     The returned object should be unreffed with
+     <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link> when no longer needed.</p>
 </item>
 </terms>
 

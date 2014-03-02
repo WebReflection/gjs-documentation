@@ -27,7 +27,7 @@ no user interaction will occur for this connection.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>The interaction object.</p>
 </item>
 </terms>
 

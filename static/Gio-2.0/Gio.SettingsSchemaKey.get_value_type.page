@@ -25,7 +25,7 @@ function get_value_type(): <link href="../GLib-2.0/GLib.VariantType.html">GLib.V
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the type of <code>key</code></p>
 </item>
 </terms>
 

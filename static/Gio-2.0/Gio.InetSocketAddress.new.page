@@ -41,7 +41,7 @@ function new(address: <link xref="Gio.InetAddress">Gio.InetAddress</link>, port:
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.InetSocketAddress"/></p>
 </item>
 </terms>
 

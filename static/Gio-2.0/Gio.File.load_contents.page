@@ -38,7 +38,8 @@ was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be return
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the <code>file</code>'s contents were successfully loaded.
+    <code>false</code> if there were errors.</p>
 </item>
 <item>
 <title><code>contents</code></title>

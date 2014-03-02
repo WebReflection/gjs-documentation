@@ -27,7 +27,7 @@ for more details.</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>drive</code> has media, <code>false</code> otherwise.</p>
 </item>
 </terms>
 

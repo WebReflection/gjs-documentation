@@ -34,7 +34,7 @@ of the keyfile backing <code>info</code>.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the <code>key</code> exists</p>
 </item>
 </terms>
 

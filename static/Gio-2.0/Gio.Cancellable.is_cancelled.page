@@ -25,7 +25,8 @@ function is_cancelled(): Boolean {
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>cancellable</code> is cancelled,
+FALSE if called with <code>null</code> or if item is not cancelled.</p>
 </item>
 </terms>
 

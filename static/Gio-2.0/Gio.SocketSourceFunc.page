@@ -27,7 +27,7 @@ returned by <link xref="Gio.Socket.create_source"/>.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p>it should return <code>false</code> if the source should be removed.</p>
 </item>
 </terms>
 

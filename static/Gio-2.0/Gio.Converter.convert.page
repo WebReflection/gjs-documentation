@@ -115,7 +115,7 @@ to produce as much output as possible and then return an error
 </item>
 <item>
 <title><code>return_value</code></title>
-
+  <p>a <link xref="Gio.ConverterResult"/>, <link xref="Gio.ConverterResult"/>.error on error.</p>
 </item>
 <item>
 <title><code>bytes_read</code></title>

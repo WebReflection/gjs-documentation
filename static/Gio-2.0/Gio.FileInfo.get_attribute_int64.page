@@ -35,7 +35,7 @@ attribute does not contain an signed 64-bit integer, or is invalid,
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a signed 64-bit integer from the attribute.</p>
 </item>
 </terms>
 

@@ -75,7 +75,7 @@ property.</p>  <p>If <code>default_value</code> is floating, it is consumed.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the newly created <link xref="GObject.ParamSpec"/></p>
 </item>
 </terms>
 

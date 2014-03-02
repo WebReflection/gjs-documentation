@@ -28,7 +28,7 @@ up until the service is started.</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the service is active, <code>false</code> otherwise</p>
 </item>
 </terms>
 

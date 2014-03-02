@@ -25,7 +25,8 @@ function get_executable(): String {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a string containing the <code>appinfo</code>'s application
+binaries name</p>
 </item>
 </terms>
 

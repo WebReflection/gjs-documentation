@@ -26,7 +26,7 @@ set to True.</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if hidden, <code>false</code> otherwise.</p>
 </item>
 </terms>
 

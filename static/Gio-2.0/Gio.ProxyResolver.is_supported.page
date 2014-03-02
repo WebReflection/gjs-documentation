@@ -27,7 +27,7 @@ resolver that returns <code>true</code> for this method.)</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>resolver</code> is supported.</p>
 </item>
 </terms>
 

@@ -28,7 +28,7 @@ of this string.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the path for <code>address</code></p>
 </item>
 </terms>
 

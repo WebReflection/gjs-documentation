@@ -28,7 +28,8 @@ fundamental type identifier.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the next available fundamental type ID to be registered,
+    or 0 if the type system ran out of fundamental type IDs</p>
 </item>
 </terms>
 

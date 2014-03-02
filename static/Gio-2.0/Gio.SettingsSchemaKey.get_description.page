@@ -32,7 +32,7 @@ directory.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the description for <code>key</code>, or <code>null</code></p>
 </item>
 </terms>
 

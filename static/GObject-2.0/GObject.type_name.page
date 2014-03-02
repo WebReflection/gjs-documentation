@@ -37,7 +37,7 @@ not be passed in and will most likely lead to a crash.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>static type name or <code>null</code></p>
 </item>
 </terms>
 

@@ -33,7 +33,9 @@ function mount_enclosing_volume_finish(result: <link xref="Gio.AsyncResult">Gio.
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if successful. If an error has occurred,
+    this function will return <code>false</code> and set @error
+    appropriately if present.</p>
 </item>
 </terms>
 

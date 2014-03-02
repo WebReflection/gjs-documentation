@@ -25,7 +25,7 @@ function should_automount(): Boolean {
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the volume should be automatically mounted</p>
 </item>
 </terms>
 

@@ -26,7 +26,7 @@ parameters then this will return a GVariant with 0 children rather than NULL.</p
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> tuple. Do not unref this because it is owned by <code>invocation</code>.</p>
 </item>
 </terms>
 

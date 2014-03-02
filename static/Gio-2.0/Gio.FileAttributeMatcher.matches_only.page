@@ -34,7 +34,7 @@ returns <code>false</code> if "*" was used when creating the matcher.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the matcher only matches <code>attribute</code>. <code>false</code> otherwise.</p>
 </item>
 </terms>
 

@@ -42,7 +42,7 @@ object path.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.DBusObjectProxy"/></p>
 </item>
 </terms>
 

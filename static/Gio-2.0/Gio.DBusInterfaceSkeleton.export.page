@@ -43,7 +43,8 @@ the same for all connections.</p>  <p>Use <link xref="Gio.DBusInterfaceSkeleton.
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the interface was exported on <code>connection</code>, otherwise <code>false</code> with
+@error set.</p>
 </item>
 </terms>
 

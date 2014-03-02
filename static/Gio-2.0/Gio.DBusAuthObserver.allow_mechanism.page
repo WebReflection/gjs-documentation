@@ -33,7 +33,7 @@ function allow_mechanism(mechanism: String): Boolean {
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>mechanism</code> can be used to authenticate the other peer, <code>false</code> if not.</p>
 </item>
 </terms>
 

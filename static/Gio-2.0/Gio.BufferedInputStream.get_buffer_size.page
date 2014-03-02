@@ -25,7 +25,7 @@ function get_buffer_size(): Number(gsize) {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the current buffer size.</p>
 </item>
 </terms>
 

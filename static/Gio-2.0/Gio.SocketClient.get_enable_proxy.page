@@ -25,7 +25,7 @@ function get_enable_proxy(): Boolean {
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p>whether proxying is enabled</p>
 </item>
 </terms>
 

@@ -25,7 +25,9 @@ function get_issuer(): <link xref="Gio.TlsCertificate">Gio.TlsCertificate</link>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>The certificate of <code>cert</code>'s issuer,
+or <code>null</code> if <code>cert</code> is self-signed or signed with an unknown
+certificate.</p>
 </item>
 </terms>
 

@@ -36,7 +36,7 @@ required to update user data pointers with a destroy notifier.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the user data pointer set, or <code>null</code></p>
 </item>
 </terms>
 

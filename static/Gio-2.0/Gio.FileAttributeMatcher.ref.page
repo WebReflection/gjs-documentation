@@ -25,7 +25,7 @@ function ref(): <link xref="Gio.FileAttributeMatcher">Gio.FileAttributeMatcher</
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.FileAttributeMatcher"/>.</p>
 </item>
 </terms>
 

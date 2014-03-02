@@ -33,7 +33,7 @@ function new(base_stream: <link xref="Gio.OutputStream">Gio.OutputStream</link>)
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p><link xref="Gio.DataOutputStream"/>.</p>
 </item>
 </terms>
 

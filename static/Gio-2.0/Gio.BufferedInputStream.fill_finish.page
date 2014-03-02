@@ -33,7 +33,7 @@ function fill_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a #gssize of the read stream, or %-1 on an error.</p>
 </item>
 </terms>
 

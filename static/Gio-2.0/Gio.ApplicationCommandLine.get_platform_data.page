@@ -28,7 +28,7 @@ notification ID.</p>  <p>For local invocation, it will be <code>null</code>.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the platform data, or <code>null</code></p>
 </item>
 </terms>
 

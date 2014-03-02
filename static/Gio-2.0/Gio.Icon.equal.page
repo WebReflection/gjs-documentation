@@ -33,7 +33,7 @@ function equal(icon2: <link xref="Gio.Icon">Gio.Icon</link>): Boolean {
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>icon1</code> is equal to <code>icon2</code>. <code>false</code> otherwise.</p>
 </item>
 </terms>
 

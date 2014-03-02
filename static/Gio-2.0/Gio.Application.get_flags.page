@@ -25,7 +25,7 @@ function get_flags(): <link xref="Gio.ApplicationFlags">Gio.ApplicationFlags</li
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the flags for <code>application</code></p>
 </item>
 </terms>
 

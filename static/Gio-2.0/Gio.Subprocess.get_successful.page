@@ -28,7 +28,7 @@ returned.</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the process exited cleanly with a exit status of 0</p>
 </item>
 </terms>
 

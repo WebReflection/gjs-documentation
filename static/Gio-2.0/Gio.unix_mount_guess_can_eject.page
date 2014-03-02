@@ -33,7 +33,7 @@ function unix_mount_guess_can_eject(mount_entry: <link xref="Gio.UnixMountEntry"
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>mount_entry</code> is deemed to be ejectable.</p>
 </item>
 </terms>
 

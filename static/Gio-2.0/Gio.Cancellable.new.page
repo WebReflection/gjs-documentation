@@ -28,7 +28,7 @@ operations or in multiple concurrent operations.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.Cancellable"/>.</p>
 </item>
 </terms>
 

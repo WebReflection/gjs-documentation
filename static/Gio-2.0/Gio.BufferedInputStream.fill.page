@@ -52,7 +52,8 @@ partial result will be returned, without an error.</p>  <p>On error -1 is return
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the number of bytes read into <code>stream</code>'s buffer, up to <code>count</code>,
+    or -1 on error.</p>
 </item>
 </terms>
 

@@ -29,7 +29,9 @@ subject DN of the certificate authority.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the list of
+CA DNs. You should unref each element with <link href="../GLib-2.0/GLib.byte_array_unref.html">GLib.byte_array_unref</link> and then
+the free the list with <link href="../GLib-2.0/GLib.List.free.html">GLib.List.free</link>.</p>
 </item>
 </terms>
 

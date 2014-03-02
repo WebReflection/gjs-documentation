@@ -32,7 +32,7 @@ will return <code>null</code> and you must not call <link xref="Gio.Action.chang
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the state type, if the action is stateful</p>
 </item>
 </terms>
 

@@ -27,7 +27,8 @@ g_list_free_full (list, g_free).</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>list of the registered
+    content types</p>
 </item>
 </terms>
 

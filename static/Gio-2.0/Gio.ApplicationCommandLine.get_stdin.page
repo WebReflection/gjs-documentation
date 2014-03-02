@@ -30,7 +30,7 @@ future, support may be expanded to other platforms.</p>  <p>You must only call t
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.InputStream"/> for stdin</p>
 </item>
 </terms>
 

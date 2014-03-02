@@ -51,7 +51,9 @@ returned array of proxies.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A
+              NULL-terminated array of proxy URIs. Must be freed
+              with <link href="../GLib-2.0/GLib.strfreev.html">GLib.strfreev</link>.</p>
 </item>
 </terms>
 

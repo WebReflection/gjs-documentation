@@ -58,7 +58,7 @@ created by <link xref="Gio.Resolver"/>.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.SrvTarget"/>.</p>
 </item>
 </terms>
 

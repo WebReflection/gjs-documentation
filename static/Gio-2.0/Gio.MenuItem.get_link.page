@@ -33,7 +33,7 @@ function get_link(link: String): <link xref="Gio.MenuModel">Gio.MenuModel</link>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the link, or <code>null</code></p>
 </item>
 </terms>
 

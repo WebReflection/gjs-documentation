@@ -55,7 +55,10 @@ specified.</p>
 </item>
 <item>
 <title><code>return_value</code></title>
-
+  <p>a string with the data that was read
+    before encountering any of the stop characters. Set <code>length</code> to
+    a #gsize to get the length of the string. This function will
+    return <code>null</code> on an error</p>
 </item>
 <item>
 <title><code>length</code></title>

@@ -34,7 +34,7 @@ function unmount_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</li
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the mount was successfully unmounted. <code>false</code> otherwise.</p>
 </item>
 </terms>
 

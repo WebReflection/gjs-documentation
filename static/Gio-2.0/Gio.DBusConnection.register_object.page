@@ -86,7 +86,8 @@ as the object is exported. Also note that <code>vtable</code> will be copied.</p
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>0 if @error is set, otherwise a registration id (never 0)
+    that can be used with <link xref="Gio.DBusConnection.unregister_object"/></p>
 </item>
 </terms>
 

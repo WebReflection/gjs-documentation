@@ -27,7 +27,7 @@ if it is generally possible to acquire the permission by calling
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p>the value of the 'can-acquire' property</p>
 </item>
 </terms>
 

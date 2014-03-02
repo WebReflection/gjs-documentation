@@ -25,7 +25,7 @@ function get_mount_path(): String {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a string containing the mount path.</p>
 </item>
 </terms>
 

@@ -25,7 +25,8 @@ function new(): <link xref="Gio.SocketClient">Gio.SocketClient</link> {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.SocketClient"/>.
+    Free the returned object with <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link>.</p>
 </item>
 </terms>
 

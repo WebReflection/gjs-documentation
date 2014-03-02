@@ -27,7 +27,7 @@ passed as @timeout_msec in the <link xref="Gio.DBusProxy.call"/> and
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>Timeout to use for <code>proxy</code>.</p>
 </item>
 </terms>
 

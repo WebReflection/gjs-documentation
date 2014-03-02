@@ -58,7 +58,7 @@ activation) then <code>spawn_flags</code>, <code>user_setup</code>, <code>user_s
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> on successful launch, <code>false</code> otherwise.</p>
 </item>
 </terms>
 

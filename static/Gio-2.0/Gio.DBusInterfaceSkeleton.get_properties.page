@@ -25,7 +25,9 @@ function get_properties(): <link href="../GLib-2.0/GLib.Variant.html">GLib.Varia
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> of type
+['a{sv}'][G-VARIANT-TYPE-VARDICT:CAPS].
+Free with <link href="../GLib-2.0/GLib.Variant.unref.html">GLib.Variant.prototype.unref</link>.</p>
 </item>
 </terms>
 

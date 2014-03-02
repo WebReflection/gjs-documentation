@@ -53,7 +53,7 @@ as appropriate.)</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the appropriate <link xref="Gio.TlsCertificateFlags"/></p>
 </item>
 </terms>
 

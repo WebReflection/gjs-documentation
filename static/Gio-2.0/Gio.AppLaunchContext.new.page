@@ -26,7 +26,7 @@ instead you instantiate a subclass of this, such as #GdkAppLaunchContext.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.AppLaunchContext"/>.</p>
 </item>
 </terms>
 

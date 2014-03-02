@@ -33,7 +33,7 @@ function new_from_bytes(bytes: ByteArray): <link xref="Gio.InputStream">Gio.Inpu
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>new <link xref="Gio.InputStream"/> read from <code>bytes</code></p>
 </item>
 </terms>
 

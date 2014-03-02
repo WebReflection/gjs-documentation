@@ -27,7 +27,7 @@ GUID (for example, D-Bus GUIDs are not RFC-4122 compliant).</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A valid D-Bus GUID. Free with <link href="../GLib-2.0/GLib.free.html">GLib.free</link>.</p>
 </item>
 </terms>
 

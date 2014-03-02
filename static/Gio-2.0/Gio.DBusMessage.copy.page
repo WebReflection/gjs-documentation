@@ -28,7 +28,8 @@ and the per-process or system-wide open files limit is reached.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A new <link xref="Gio.DBusMessage"/> or <code>null</code> if @error is set.
+    Free with <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link>.</p>
 </item>
 </terms>
 

@@ -27,7 +27,7 @@ explicitly listed in the "Actions" key of the [Desktop Entry] group.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a list of strings, always non-<code>null</code></p>
 </item>
 </terms>
 

@@ -25,7 +25,8 @@ function get_arg0(): String {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>The string item or <code>null</code> if the first item in the body of
+<code>message</code> is not a string.</p>
 </item>
 </terms>
 

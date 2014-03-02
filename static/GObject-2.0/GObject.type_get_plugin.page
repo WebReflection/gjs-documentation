@@ -33,7 +33,8 @@ function type_get_plugin(type: GObject.Type): <link xref="GObject.TypePlugin">GO
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the corresponding plugin
+    if <code>type</code> is a dynamic type, <code>null</code> otherwise</p>
 </item>
 </terms>
 

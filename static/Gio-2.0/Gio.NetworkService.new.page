@@ -51,7 +51,7 @@ function new(service: String, protocol: String, domain: String): <link xref="Gio
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.NetworkService"/></p>
 </item>
 </terms>
 

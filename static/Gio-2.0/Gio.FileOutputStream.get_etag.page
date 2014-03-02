@@ -27,7 +27,7 @@ and closed, as the etag can change while writing.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the entity tag for the stream.</p>
 </item>
 </terms>
 

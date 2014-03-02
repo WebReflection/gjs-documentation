@@ -34,7 +34,7 @@ function unregister_subtree(registration_id: Number(guint)): Boolean {
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the subtree was unregistered, <code>false</code> otherwise</p>
 </item>
 </terms>
 

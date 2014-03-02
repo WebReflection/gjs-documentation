@@ -34,7 +34,8 @@ in the following two cases</p>  <p>- If <code>icon</code> is a <link xref="Gio.F
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>An allocated NUL-terminated UTF8 string or <code>null</code> if <code>icon</code> can't
+be serialized. Use <link href="../GLib-2.0/GLib.free.html">GLib.free</link> to free.</p>
 </item>
 </terms>
 

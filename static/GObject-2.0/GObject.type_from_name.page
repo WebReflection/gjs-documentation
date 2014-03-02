@@ -36,7 +36,7 @@ yet).</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>corresponding type ID or 0</p>
 </item>
 </terms>
 

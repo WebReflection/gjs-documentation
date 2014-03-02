@@ -45,7 +45,7 @@ The wildcard "*" may be used to match all keys and namespaces, or
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.FileAttributeMatcher"/></p>
 </item>
 </terms>
 

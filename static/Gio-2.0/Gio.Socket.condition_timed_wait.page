@@ -58,7 +58,7 @@ exact number of milliseconds.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the condition was met, <code>false</code> otherwise</p>
 </item>
 </terms>
 

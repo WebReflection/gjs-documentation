@@ -34,7 +34,9 @@ that <code>manager</code> was constructed in.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link> to use for the remote object. The returned type
+  must be a <link xref="Gio.DBusProxy"/>&lt;!-- --&gt;- or <link xref="Gio.DBusObjectProxy"/>&lt;!-- --&gt;-derived
+  type.</p>
 </item>
 </terms>
 

@@ -34,7 +34,7 @@ array of arguments.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A new <link xref="Gio.Subprocess"/>, or <code>null</code> on error (and @error will be set)</p>
 </item>
 </terms>
 

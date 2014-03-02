@@ -25,7 +25,8 @@ function get_name(): String {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a string containing <code>drive</code>'s name. The returned
+    string should be freed when no longer needed.</p>
 </item>
 </terms>
 

@@ -25,7 +25,8 @@ function get_flags(): <link xref="Gio.DBusObjectManagerClientFlags">Gio.DBusObje
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>Zero of more flags from the <link xref="Gio.DBusObjectManagerClientFlags"/>
+enumeration.</p>
 </item>
 </terms>
 

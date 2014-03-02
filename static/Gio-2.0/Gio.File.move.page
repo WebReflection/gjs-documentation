@@ -79,7 +79,7 @@ move operation isn't available).</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> on successful move, <code>false</code> otherwise.</p>
 </item>
 </terms>
 

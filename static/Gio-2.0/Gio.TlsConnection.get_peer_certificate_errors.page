@@ -27,7 +27,7 @@ during the emission of <link xref="Gio.TlsConnection-accept-certificate"/>.)</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p><code>conn</code>'s peer's certificate errors</p>
 </item>
 </terms>
 

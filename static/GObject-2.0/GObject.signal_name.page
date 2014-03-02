@@ -33,7 +33,7 @@ function signal_name(signal_id: Number(guint)): String {
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the signal name, or <code>null</code> if the signal number was invalid.</p>
 </item>
 </terms>
 

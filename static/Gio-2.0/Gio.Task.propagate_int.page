@@ -27,7 +27,7 @@ error) to the caller, you may only call it once.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the task result, or -1 on error</p>
 </item>
 </terms>
 

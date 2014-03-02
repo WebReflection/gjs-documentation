@@ -27,7 +27,7 @@ function get_stderr_pipe(): <link xref="Gio.InputStream">Gio.InputStream</link> 
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the stderr pipe</p>
 </item>
 </terms>
 

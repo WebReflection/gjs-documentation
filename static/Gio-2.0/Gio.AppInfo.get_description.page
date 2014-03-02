@@ -25,7 +25,8 @@ function get_description(): String {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a string containing a description of the
+application <code>appinfo</code>, or <code>null</code> if none.</p>
 </item>
 </terms>
 

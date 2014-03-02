@@ -33,7 +33,7 @@ function unix_mounts_changed_since(time: Number(guint64)): Boolean {
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the mounts have changed since <code>time</code>.</p>
 </item>
 </terms>
 

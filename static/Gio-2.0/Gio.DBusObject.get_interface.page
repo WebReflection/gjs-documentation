@@ -34,7 +34,8 @@ function get_interface(interface_name: String): <link xref="Gio.DBusInterface">G
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p><code>null</code> if not found, otherwise a
+  <link xref="Gio.DBusInterface"/> that must be freed with <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link>.</p>
 </item>
 </terms>
 

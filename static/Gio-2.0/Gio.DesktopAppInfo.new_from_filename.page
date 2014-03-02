@@ -33,7 +33,7 @@ function new_from_filename(filename: String): <link xref="Gio.DesktopAppInfo">Gi
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.DesktopAppInfo"/> or <code>null</code> on error.</p>
 </item>
 </terms>
 

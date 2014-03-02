@@ -25,7 +25,7 @@ function get_default(): <link xref="Gio.ProxyResolver">Gio.ProxyResolver</link> 
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the default <link xref="Gio.ProxyResolver"/>.</p>
 </item>
 </terms>
 

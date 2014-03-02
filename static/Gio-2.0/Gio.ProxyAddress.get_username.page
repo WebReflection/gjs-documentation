@@ -25,7 +25,7 @@ function get_username(): String {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the <code>proxy</code>'s username</p>
 </item>
 </terms>
 

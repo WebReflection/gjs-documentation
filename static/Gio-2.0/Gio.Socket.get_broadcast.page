@@ -27,7 +27,7 @@ addresses.</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p>the broadcast setting on <code>socket</code></p>
 </item>
 </terms>
 

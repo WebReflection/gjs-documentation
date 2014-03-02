@@ -44,7 +44,7 @@ is returned and <code>info</code> is unchanged.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the status was changed, <code>false</code> if the key was not set.</p>
 </item>
 </terms>
 

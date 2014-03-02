@@ -34,7 +34,8 @@ not contain a byte string, <code>null</code> will be returned.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the contents of the <code>attribute</code> value as a byte string, or
+<code>null</code> otherwise.</p>
 </item>
 </terms>
 

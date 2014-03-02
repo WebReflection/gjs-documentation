@@ -49,7 +49,7 @@ function new_signal(path: String, interface_: String, signal: String): <link xre
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A <link xref="Gio.DBusMessage"/>. Free with <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link>.</p>
 </item>
 </terms>
 

@@ -25,7 +25,8 @@ function get_icon(): <link xref="Gio.Icon">Gio.Icon</link> {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the default <link xref="Gio.Icon"/> for <code>appinfo</code> or <code>null</code>
+if there is no default icon.</p>
 </item>
 </terms>
 

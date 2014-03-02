@@ -63,7 +63,7 @@ handling is needed.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p>standard <link xref="GObject.SignalAccumulator"/> result</p>
 </item>
 </terms>
 

@@ -25,7 +25,9 @@ function get_path(): String {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>string containing the <link xref="Gio.File"/>'s path, or <code>null</code> if
+    no such path exists. The returned string should be
+    freed with <link href="../GLib-2.0/GLib.free.html">GLib.free</link> when no longer needed.</p>
 </item>
 </terms>
 

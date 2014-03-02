@@ -43,7 +43,7 @@ function new_from_bytes(bytes: ByteArray, family: <link xref="Gio.SocketFamily">
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.InetAddress"/> corresponding to <code>family</code> and <code>bytes</code>.</p>
 </item>
 </terms>
 

@@ -41,7 +41,7 @@ function put_byte(data: Number(guint8), cancellable: <link xref="Gio.Cancellable
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>data</code> was successfully added to the <code>stream</code>.</p>
 </item>
 </terms>
 

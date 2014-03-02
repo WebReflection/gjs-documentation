@@ -27,7 +27,7 @@ Internet).</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>address</code> is a link-local address.</p>
 </item>
 </terms>
 

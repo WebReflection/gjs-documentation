@@ -34,7 +34,9 @@ function append_to_finish(res: <link xref="Gio.AsyncResult">Gio.AsyncResult</lin
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a valid <link xref="Gio.FileOutputStream"/>
+    or <code>null</code> on error.
+    Free the returned object with <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link>.</p>
 </item>
 </terms>
 

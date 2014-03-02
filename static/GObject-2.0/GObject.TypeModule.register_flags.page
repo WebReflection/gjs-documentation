@@ -48,7 +48,7 @@ not be unloaded.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the new or existing type ID</p>
 </item>
 </terms>
 

@@ -28,7 +28,7 @@ check if it contains encoded Unicode segments, and use
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p><code>target</code>'s hostname</p>
 </item>
 </terms>
 

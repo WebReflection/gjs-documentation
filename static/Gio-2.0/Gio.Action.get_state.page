@@ -28,7 +28,7 @@ given by <link xref="Gio.Action.get_state_type"/>.</p>  <p>The return value (if 
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the current state of the action</p>
 </item>
 </terms>
 

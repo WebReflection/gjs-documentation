@@ -27,7 +27,8 @@ the stream or filling the buffer.</p>
 <terms>
 <item>
 <title><code>return_value</code></title>
-
+  <p>
+         read-only buffer</p>
 </item>
 <item>
 <title><code>count</code></title>

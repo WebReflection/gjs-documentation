@@ -53,7 +53,7 @@ be returned.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.FileInfo"/> for the <code>stream</code>, or <code>null</code> on error.</p>
 </item>
 </terms>
 

@@ -41,7 +41,7 @@ inside loops with <link xref="Gio.FileEnumerator.next_file"/>.</p>  <p>This is a
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.File"/> for the <link xref="Gio.FileInfo"/> passed it.</p>
 </item>
 </terms>
 

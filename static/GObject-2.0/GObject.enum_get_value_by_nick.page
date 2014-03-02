@@ -41,7 +41,9 @@ function enum_get_value_by_nick(enum_class: <link xref="GObject.EnumClass">GObje
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the <link xref="GObject.EnumValue"/> with nickname <code>nick</code>,
+         or <code>null</code> if the enumeration doesn't have a member
+         with that nickname</p>
 </item>
 </terms>
 

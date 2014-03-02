@@ -36,7 +36,8 @@ a value from <link xref="Gio.ResolverError"/>. If the operation was cancelled,
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a hostname (either ASCII-only, or in ASCII-encoded
+form), or <code>null</code> on error.</p>
 </item>
 </terms>
 

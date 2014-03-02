@@ -43,7 +43,7 @@ case.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A <code>null</code>-terminated array of pointers to <link xref="Gio.DBusInterfaceInfo"/>, or <code>null</code>.</p>
 </item>
 </terms>
 

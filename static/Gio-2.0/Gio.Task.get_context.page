@@ -29,7 +29,7 @@ context is the default <link href="../GLib-2.0/GLib.MainContext.html">GLib.MainC
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p><code>task</code>'s <link href="../GLib-2.0/GLib.MainContext.html">GLib.MainContext</link></p>
 </item>
 </terms>
 

@@ -35,7 +35,7 @@ while on win32 it is "*".</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the type is the unknown type.</p>
 </item>
 </terms>
 

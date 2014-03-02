@@ -61,7 +61,8 @@ of building the arguments.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if a handler is connected to the signal, <code>false</code>
+         otherwise.</p>
 </item>
 </terms>
 

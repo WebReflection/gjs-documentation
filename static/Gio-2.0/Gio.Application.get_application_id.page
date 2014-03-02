@@ -25,7 +25,7 @@ function get_application_id(): String {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the identifier for <code>application</code>, owned by <code>application</code></p>
 </item>
 </terms>
 

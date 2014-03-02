@@ -33,7 +33,8 @@ function wait_check(cancellable: <link xref="Gio.Cancellable">Gio.Cancellable</l
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> on success, <code>false</code> if process exited abnormally, or
+<code>cancellable</code> was cancelled</p>
 </item>
 </terms>
 

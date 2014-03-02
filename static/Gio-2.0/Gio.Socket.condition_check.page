@@ -43,7 +43,7 @@ these conditions will always be set in the output if they are true.</p>  <p>This
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the @GIOCondition mask of the current state</p>
 </item>
 </terms>
 

@@ -25,7 +25,7 @@ function get_byte_order(): <link xref="Gio.DBusMessageByteOrder">Gio.DBusMessage
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>The byte order.</p>
 </item>
 </terms>
 

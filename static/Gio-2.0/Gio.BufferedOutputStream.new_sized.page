@@ -41,7 +41,7 @@ function new_sized(base_stream: <link xref="Gio.OutputStream">Gio.OutputStream</
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.OutputStream"/> with an internal buffer set to <code>size</code>.</p>
 </item>
 </terms>
 

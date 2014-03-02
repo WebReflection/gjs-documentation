@@ -26,7 +26,7 @@ that the operation was cancelled.</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>cancellable</code> was cancelled, <code>false</code> if it was not</p>
 </item>
 </terms>
 

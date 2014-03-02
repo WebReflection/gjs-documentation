@@ -48,7 +48,7 @@ empty or contains characters other than alphanumerics, '-' and '.'.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if successful, else <code>false</code> with @error set</p>
 </item>
 <item>
 <title><code>action_name</code></title>

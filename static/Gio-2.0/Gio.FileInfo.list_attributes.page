@@ -33,7 +33,9 @@ function list_attributes(name_space: String): Array(String) {
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a null-terminated array of strings of all of the
+possible attribute types for the given <code>name_space</code>, or
+<code>null</code> on error.</p>
 </item>
 </terms>
 

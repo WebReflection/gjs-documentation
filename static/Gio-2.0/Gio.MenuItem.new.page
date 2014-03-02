@@ -44,7 +44,7 @@ possibly the "target" attribute of the new item.  See
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.MenuItem"/></p>
 </item>
 </terms>
 

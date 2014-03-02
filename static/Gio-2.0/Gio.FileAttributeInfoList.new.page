@@ -25,7 +25,7 @@ function new(): <link xref="Gio.FileAttributeInfoList">Gio.FileAttributeInfoList
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.FileAttributeInfoList"/>.</p>
 </item>
 </terms>
 

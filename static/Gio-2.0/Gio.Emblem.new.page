@@ -33,7 +33,7 @@ function new(icon: <link xref="Gio.Icon">Gio.Icon</link>): <link xref="Gio.Emble
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.Emblem"/>.</p>
 </item>
 </terms>
 

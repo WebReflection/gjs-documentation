@@ -42,7 +42,7 @@ within the range may fail.</p>  <p>The return value (if non-<code>null</code>) s
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the state range hint</p>
 </item>
 </terms>
 

@@ -38,7 +38,7 @@ contains a <link xref="Gio.IOErrorEnum"/>.cancelled error code.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>The status of the request certificate interaction.</p>
 </item>
 </terms>
 

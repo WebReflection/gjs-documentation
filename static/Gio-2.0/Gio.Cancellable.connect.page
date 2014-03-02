@@ -42,7 +42,8 @@ code that unconditionally invokes e.g. <link xref="Gio.Cancellable.cancel"/>.</p
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>The id of the signal handler or 0 if <code>cancellable</code> has already
+         been cancelled.</p>
 </item>
 </terms>
 

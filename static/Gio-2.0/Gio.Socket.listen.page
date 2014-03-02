@@ -28,7 +28,7 @@ to accept incoming requests using <link xref="Gio.Socket.accept"/>.</p>  <p>Befo
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> on success, <code>false</code> on error.</p>
 </item>
 </terms>
 

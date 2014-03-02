@@ -35,7 +35,8 @@ then those roles are reversed.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the transformation was successful, and <code>false</code>
+  otherwise</p>
 </item>
 </terms>
 

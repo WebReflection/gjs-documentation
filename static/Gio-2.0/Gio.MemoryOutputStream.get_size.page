@@ -33,7 +33,7 @@ stream, use <link xref="Gio.MemoryOutputStream.get_data_size"/>.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the number of bytes allocated for the data buffer</p>
 </item>
 </terms>
 

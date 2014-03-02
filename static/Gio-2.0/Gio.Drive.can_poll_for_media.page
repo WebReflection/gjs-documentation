@@ -25,7 +25,8 @@ function can_poll_for_media(): Boolean {
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the <code>drive</code> can be polled for media changes,
+    <code>false</code> otherwise.</p>
 </item>
 </terms>
 

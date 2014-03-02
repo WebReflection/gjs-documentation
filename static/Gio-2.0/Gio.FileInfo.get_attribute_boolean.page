@@ -34,7 +34,7 @@ contain a boolean value, <code>false</code> will be returned.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p>the boolean value contained within the attribute.</p>
 </item>
 </terms>
 

@@ -25,7 +25,7 @@ function to_string(): String {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a string corresponding to <code>mask</code>.</p>
 </item>
 </terms>
 

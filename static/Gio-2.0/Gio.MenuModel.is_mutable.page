@@ -26,7 +26,8 @@ signal. Consumers of the model may make optimisations accordingly.</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the model is mutable (ie: "items-changed" may be
+    emitted).</p>
 </item>
 </terms>
 

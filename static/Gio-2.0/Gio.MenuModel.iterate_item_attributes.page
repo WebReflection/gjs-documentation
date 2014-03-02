@@ -34,7 +34,7 @@ the item at position <code>item_index</code> in <code>model</code>.</p>  <p>You 
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.MenuAttributeIter"/></p>
 </item>
 </terms>
 

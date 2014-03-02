@@ -51,7 +51,7 @@ respectively.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>-1, 0 or +1, for a less than, equal to or greater than result</p>
 </item>
 </terms>
 

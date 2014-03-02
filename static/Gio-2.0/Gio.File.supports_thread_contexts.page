@@ -28,7 +28,7 @@ If this returns <code>false</code>, you cannot perform asynchronous operations o
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p>Whether or not <code>file</code> supports thread-default contexts.</p>
 </item>
 </terms>
 

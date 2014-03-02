@@ -33,7 +33,7 @@ function set_attributes_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncRes
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the attributes were set correctly, <code>false</code> otherwise.</p>
 </item>
 <item>
 <title><code>info</code></title>

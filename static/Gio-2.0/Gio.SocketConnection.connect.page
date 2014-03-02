@@ -41,7 +41,7 @@ function connect(address: <link xref="Gio.SocketAddress">Gio.SocketAddress</link
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the connection succeeded, <code>false</code> on error</p>
 </item>
 </terms>
 

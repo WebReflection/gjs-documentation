@@ -34,7 +34,7 @@ See <link xref="Gio.NetworkMonitor.can_reach_async"/>.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if network is reachable, <code>false</code> if not.</p>
 </item>
 </terms>
 

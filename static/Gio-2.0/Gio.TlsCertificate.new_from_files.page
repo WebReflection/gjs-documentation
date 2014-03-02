@@ -44,7 +44,7 @@ like <link xref="Gio.TlsCertificate.new_from_pem"/>.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the new certificate, or <code>null</code> on error</p>
 </item>
 </terms>
 

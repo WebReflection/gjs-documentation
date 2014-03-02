@@ -39,7 +39,7 @@ was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be return
 </item>
 <item>
 <title><code>return_value</code></title>
-
+  <p>a <link xref="Gio.SocketConnection"/> on success, <code>null</code> on error.</p>
 </item>
 <item>
 <title><code>source_object</code></title>

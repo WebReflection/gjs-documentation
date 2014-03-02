@@ -50,7 +50,7 @@ sockets with the specified <code>family</code>, <code>type</code> and <code>prot
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link></p>
 </item>
 </terms>
 

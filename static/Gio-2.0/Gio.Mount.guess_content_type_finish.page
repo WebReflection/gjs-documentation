@@ -37,7 +37,8 @@ guessing.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <code>null</code>-terminated array of content types or <code>null</code> on error.
+    Caller should free this array with <link href="../GLib-2.0/GLib.strfreev.html">GLib.strfreev</link> when done with it.</p>
 </item>
 </terms>
 

@@ -59,7 +59,7 @@ extension point, the existing <link xref="Gio.IOExtension"/> object is returned.
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.IOExtension"/> object for <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link></p>
 </item>
 </terms>
 

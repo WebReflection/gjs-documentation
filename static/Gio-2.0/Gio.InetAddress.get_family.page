@@ -25,7 +25,7 @@ function get_family(): <link xref="Gio.SocketFamily">Gio.SocketFamily</link> {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p><code>address</code>'s family</p>
 </item>
 </terms>
 

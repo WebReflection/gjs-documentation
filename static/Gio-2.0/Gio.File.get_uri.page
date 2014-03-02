@@ -25,7 +25,9 @@ function get_uri(): String {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a string containing the <link xref="Gio.File"/>'s URI.
+    The returned string should be freed with <link href="../GLib-2.0/GLib.free.html">GLib.free</link>
+    when no longer needed.</p>
 </item>
 </terms>
 

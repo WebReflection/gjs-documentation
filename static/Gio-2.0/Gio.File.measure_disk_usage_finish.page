@@ -35,7 +35,8 @@ more information.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if successful, with the out parameters set.
+         <code>false</code> otherwise, with @error set.</p>
 </item>
 <item>
 <title><code>disk_usage</code></title>

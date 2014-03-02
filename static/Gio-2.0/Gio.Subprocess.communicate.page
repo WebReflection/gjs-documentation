@@ -65,7 +65,7 @@ attempt to interact with the pipes while the operation is in progress
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if successful</p>
 </item>
 <item>
 <title><code>stdout_buf</code></title>

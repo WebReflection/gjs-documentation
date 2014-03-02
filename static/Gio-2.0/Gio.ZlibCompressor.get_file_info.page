@@ -25,7 +25,7 @@ function get_file_info(): <link xref="Gio.FileInfo">Gio.FileInfo</link> {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.FileInfo"/>, or <code>null</code></p>
 </item>
 </terms>
 

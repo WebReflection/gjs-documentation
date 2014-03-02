@@ -25,7 +25,7 @@ function is_closed(): Boolean {
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the stream is closed.</p>
 </item>
 </terms>
 

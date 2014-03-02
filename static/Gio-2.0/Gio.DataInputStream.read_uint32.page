@@ -36,7 +36,8 @@ was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be return
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>an unsigned 32-bit/4-byte value read from the <code>stream</code> or %0 if
+an error occurred.</p>
 </item>
 </terms>
 

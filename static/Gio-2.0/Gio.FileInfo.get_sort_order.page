@@ -26,7 +26,7 @@ See %G_FILE_ATTRIBUTE_STANDARD_SORT_ORDER.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a #gint32 containing the value of the "standard::sort_order" attribute.</p>
 </item>
 </terms>
 

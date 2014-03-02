@@ -25,7 +25,8 @@ function get_address(): <link xref="Gio.InetAddress">Gio.InetAddress</link> {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the <link xref="Gio.InetAddress"/> for <code>address</code>, which must be
+<link href="../GObject-2.0/GObject.Object.ref.html">GObject.Object.prototype.ref</link>'d if it will be stored</p>
 </item>
 </terms>
 

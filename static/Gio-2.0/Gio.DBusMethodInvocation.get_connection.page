@@ -25,7 +25,7 @@ function get_connection(): <link xref="Gio.DBusConnection">Gio.DBusConnection</l
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A <link xref="Gio.DBusConnection"/>. Do not free, it is owned by <code>invocation</code>.</p>
 </item>
 </terms>
 

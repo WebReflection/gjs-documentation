@@ -36,7 +36,8 @@ parser that only accepts a subset of valid XML documents.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A <link xref="Gio.DBusNodeInfo"/> structure or <code>null</code> if @error is set. Free
+with <link xref="Gio.DBusNodeInfo.unref"/>.</p>
 </item>
 </terms>
 

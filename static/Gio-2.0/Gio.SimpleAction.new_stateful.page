@@ -50,7 +50,7 @@ must have the same <link href="../GLib-2.0/GLib.VariantType.html">GLib.VariantTy
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.SimpleAction"/></p>
 </item>
 </terms>
 

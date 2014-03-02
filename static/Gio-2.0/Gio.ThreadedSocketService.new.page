@@ -35,7 +35,7 @@ must be added with one of the <link xref="Gio.SocketListener"/> "add" methods.</
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.SocketService"/>.</p>
 </item>
 </terms>
 

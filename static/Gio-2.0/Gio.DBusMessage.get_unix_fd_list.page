@@ -25,7 +25,8 @@ function get_unix_fd_list(): <link xref="Gio.UnixFDList">Gio.UnixFDList</link> {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A <link xref="Gio.UnixFDList"/> or <code>null</code> if no file descriptors are
+associated. Do not free, this object is owned by <code>message</code>.</p>
 </item>
 </terms>
 

@@ -25,7 +25,7 @@ function abstract_names_supported(): Boolean {
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if supported, <code>false</code> otherwise</p>
 </item>
 </terms>
 

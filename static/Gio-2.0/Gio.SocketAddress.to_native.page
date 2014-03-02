@@ -46,7 +46,7 @@ struct sockaddr</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>dest</code> was filled in, <code>false</code> on error</p>
 </item>
 </terms>
 

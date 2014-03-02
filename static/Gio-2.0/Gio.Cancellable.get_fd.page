@@ -31,7 +31,8 @@ the returned file descriptor.</p>  <p>See also <link xref="Gio.Cancellable.make_
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A valid file descriptor. %-1 if the file descriptor
+is not supported, or on errors.</p>
 </item>
 </terms>
 

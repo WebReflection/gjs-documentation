@@ -39,7 +39,7 @@ reproduced here:</p>  <p>- Application identifiers must contain only the ASCII c
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>application_id</code> is valid</p>
 </item>
 </terms>
 

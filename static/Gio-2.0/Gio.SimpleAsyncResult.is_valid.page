@@ -58,7 +58,7 @@ check is skipped.)</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p>#TRUE if all checks passed or #FALSE if any failed.</p>
 </item>
 </terms>
 

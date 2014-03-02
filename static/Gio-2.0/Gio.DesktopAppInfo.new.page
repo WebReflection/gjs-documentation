@@ -41,7 +41,7 @@ prefix-to-subdirectory mapping that is described in the
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.DesktopAppInfo"/>, or <code>null</code> if no desktop file with that id</p>
 </item>
 </terms>
 

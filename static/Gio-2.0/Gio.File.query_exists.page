@@ -49,7 +49,8 @@ that can happen due to races when you execute the operation.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the file exists (and can be detected without error),
+    <code>false</code> otherwise (or if cancelled).</p>
 </item>
 </terms>
 

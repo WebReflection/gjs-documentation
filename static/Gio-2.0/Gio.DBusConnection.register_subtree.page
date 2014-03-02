@@ -85,7 +85,8 @@ this method.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>0 if @error is set, otherwise a subtree registration id (never 0)
+that can be used with <link xref="Gio.DBusConnection.unregister_subtree"/> .</p>
 </item>
 </terms>
 

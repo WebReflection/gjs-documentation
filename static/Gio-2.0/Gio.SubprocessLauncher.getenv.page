@@ -36,7 +36,7 @@ be UTF-8.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the value of the environment variable, <code>null</code> if unset</p>
 </item>
 </terms>
 

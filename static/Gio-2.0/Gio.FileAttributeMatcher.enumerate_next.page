@@ -25,7 +25,8 @@ function enumerate_next(): String {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a string containing the next attribute or <code>null</code> if
+no more attribute exist.</p>
 </item>
 </terms>
 

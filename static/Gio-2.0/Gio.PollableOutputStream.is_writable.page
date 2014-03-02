@@ -30,7 +30,10 @@ non-blocking behavior, you should always use
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>stream</code> is writable, <code>false</code> if not. If an error
+  has occurred on <code>stream</code>, this will result in
+  <link xref="Gio.PollableOutputStream.is_writable"/> returning <code>true</code>, and the
+  next attempt to write will return the error.</p>
 </item>
 </terms>
 

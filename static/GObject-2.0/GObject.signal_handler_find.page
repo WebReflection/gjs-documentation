@@ -86,7 +86,7 @@ If no handler was found, 0 is returned.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A valid non-0 signal handler id for a successful match.</p>
 </item>
 </terms>
 

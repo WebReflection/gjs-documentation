@@ -44,7 +44,8 @@ a regular file, directory, or symlink.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>The <link xref="Gio.FileType"/> of the file and #G_FILE_TYPE_UNKNOWN
+    if the file does not exist</p>
 </item>
 </terms>
 

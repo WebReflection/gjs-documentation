@@ -26,7 +26,8 @@ for reading.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.InputStream"/>, owned by the <link xref="Gio.IOStream"/>.
+Do not free.</p>
 </item>
 </terms>
 

@@ -43,7 +43,7 @@ somewhat faster than using the name each time.</p>  <p>Also tries the ancestors 
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the signal's identifying number, or 0 if no signal was found.</p>
 </item>
 </terms>
 

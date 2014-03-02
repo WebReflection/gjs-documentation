@@ -33,7 +33,8 @@ function get_object(object_path: String): <link xref="Gio.DBusObject">Gio.DBusOb
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A <link xref="Gio.DBusObject"/> or <code>null</code>. Free with
+  <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link>.</p>
 </item>
 </terms>
 

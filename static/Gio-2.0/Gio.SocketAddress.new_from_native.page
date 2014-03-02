@@ -42,7 +42,8 @@ struct sockaddr <code>native</code>.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.SocketAddress"/> if <code>native</code> could successfully
+    be converted, otherwise <code>null</code></p>
 </item>
 </terms>
 

@@ -65,7 +65,7 @@ function param_spec_string(name: String, nick: String, blurb: String, default_va
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly created parameter specification</p>
 </item>
 </terms>
 

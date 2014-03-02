@@ -33,7 +33,8 @@ function content_type_get_icon(type: String): <link xref="Gio.Icon">Gio.Icon</li
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p><link xref="Gio.Icon"/> corresponding to the content type. Free the returned
+    object with <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link></p>
 </item>
 </terms>
 

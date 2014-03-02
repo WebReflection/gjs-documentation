@@ -52,7 +52,7 @@ of the D-Bus authentication conversation.</p>  <p>This is a synchronous failable
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A <link xref="Gio.IOStream"/> or <code>null</code> if @error is set.</p>
 </item>
 </terms>
 

@@ -25,7 +25,7 @@ function is_floating(): Boolean {
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>object</code> has a floating reference</p>
 </item>
 </terms>
 

@@ -30,7 +30,7 @@ UNIX file descriptors.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p><link xref="Gio.DBusMessage"/>. Do not free, it is owned by <code>invocation</code>.</p>
 </item>
 </terms>
 

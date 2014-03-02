@@ -27,7 +27,7 @@ situations such as the <link xref="Gio.DesktopAppInfo"/> returned from
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>The full path to the file for <code>info</code>, or <code>null</code> if not known.</p>
 </item>
 </terms>
 

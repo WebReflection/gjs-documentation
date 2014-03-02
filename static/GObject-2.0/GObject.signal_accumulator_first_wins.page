@@ -64,7 +64,7 @@ any further handlers (ie: the first handler "wins").</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p>standard <link xref="GObject.SignalAccumulator"/> result</p>
 </item>
 </terms>
 

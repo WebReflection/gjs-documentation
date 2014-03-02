@@ -90,7 +90,8 @@ then the return value is checked against the return type.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p><code>null</code> if @error is set. Otherwise a <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> tuple with
+return values. Free with <link href="../GLib-2.0/GLib.Variant.unref.html">GLib.Variant.prototype.unref</link>.</p>
 </item>
 </terms>
 

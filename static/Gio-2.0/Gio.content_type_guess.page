@@ -44,7 +44,8 @@ on the other argument.</p>
 </item>
 <item>
 <title><code>return_value</code></title>
-
+  <p>a string indicating a guessed content type for the
+    given data. Free with <link href="../GLib-2.0/GLib.free.html">GLib.free</link></p>
 </item>
 <item>
 <title><code>result_uncertain</code></title>

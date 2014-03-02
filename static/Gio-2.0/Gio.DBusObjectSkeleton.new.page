@@ -33,7 +33,7 @@ function new(object_path: String): <link xref="Gio.DBusObjectSkeleton">Gio.DBusO
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A <link xref="Gio.DBusObjectSkeleton"/>. Free with <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link>.</p>
 </item>
 </terms>
 

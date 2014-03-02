@@ -25,7 +25,7 @@ function copy(): <link xref="Gio.SrvTarget">Gio.SrvTarget</link> {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a copy of <code>target</code></p>
 </item>
 </terms>
 

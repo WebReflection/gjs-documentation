@@ -27,7 +27,7 @@ to the stdin of <code>subprocess</code>.</p>  <p>The process must have been crea
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the stdout pipe</p>
 </item>
 </terms>
 

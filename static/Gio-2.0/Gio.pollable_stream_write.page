@@ -65,7 +65,7 @@ need to be a <link xref="Gio.PollableOutputStream"/>.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the number of bytes written, or -1 on error.</p>
 </item>
 </terms>
 

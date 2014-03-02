@@ -27,7 +27,8 @@ through <code>info</code>.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the startup WM class, or <code>null</code> if none is set
+in the desktop file.</p>
 </item>
 </terms>
 

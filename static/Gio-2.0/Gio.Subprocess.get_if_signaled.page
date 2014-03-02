@@ -26,7 +26,7 @@ returned.</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the case of termination due to a signal</p>
 </item>
 </terms>
 

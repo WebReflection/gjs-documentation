@@ -34,7 +34,8 @@ specified protocol.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>return a <link xref="Gio.Proxy"/> or NULL if protocol
+              is not supported.</p>
 </item>
 </terms>
 

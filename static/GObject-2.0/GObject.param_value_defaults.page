@@ -41,7 +41,7 @@ function param_value_defaults(pspec: <link xref="GObject.ParamSpec">GObject.Para
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p>whether <code>value</code> contains the canonical default for this <code>pspec</code></p>
 </item>
 </terms>
 

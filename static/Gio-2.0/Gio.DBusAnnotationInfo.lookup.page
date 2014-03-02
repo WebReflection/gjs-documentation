@@ -41,7 +41,7 @@ function lookup(annotations: Array(<link xref="Gio.DBusAnnotationInfo">Gio.DBusA
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>The value or <code>null</code> if not found. Do not free, it is owned by <code>annotations</code>.</p>
 </item>
 </terms>
 

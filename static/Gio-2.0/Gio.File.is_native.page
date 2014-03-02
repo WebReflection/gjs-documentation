@@ -29,7 +29,7 @@ will return <code>false</code>, but <link xref="Gio.File.get_path"/> will still 
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>file</code> is native</p>
 </item>
 </terms>
 

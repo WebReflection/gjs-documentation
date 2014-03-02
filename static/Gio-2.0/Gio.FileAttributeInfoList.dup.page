@@ -25,7 +25,7 @@ function dup(): <link xref="Gio.FileAttributeInfoList">Gio.FileAttributeInfoList
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a copy of the given <code>list</code>.</p>
 </item>
 </terms>
 

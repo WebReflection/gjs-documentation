@@ -38,7 +38,8 @@ in the future.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A file attribute matcher matching all attributes of
+    <code>matcher</code> that are not matched by <code>subtract</code></p>
 </item>
 </terms>
 

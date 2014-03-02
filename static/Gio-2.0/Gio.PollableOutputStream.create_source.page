@@ -38,7 +38,7 @@ rather than <link xref="Gio.OutputStream.write"/> from the callback.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link href="../GLib-2.0/GLib.Source.html">GLib.Source</link></p>
 </item>
 </terms>
 

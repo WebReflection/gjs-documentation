@@ -45,7 +45,7 @@ was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be return
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> on the creation of a new symlink, <code>false</code> otherwise.</p>
 </item>
 </terms>
 

@@ -49,7 +49,7 @@ function new_from_error(source_object: <link href="../GObject-2.0/GObject.Object
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.SimpleAsyncResult"/>.</p>
 </item>
 </terms>
 

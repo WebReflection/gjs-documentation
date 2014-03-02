@@ -39,7 +39,8 @@ a temporary file could not be created.</p>
 </item>
 <item>
 <title><code>return_value</code></title>
-
+  <p>a new <link xref="Gio.File"/>.
+    Free the returned object with <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link>.</p>
 </item>
 <item>
 <title><code>iostream</code></title>

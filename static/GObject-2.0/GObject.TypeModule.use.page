@@ -28,7 +28,8 @@ its prior value.</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>false</code> if the plugin needed to be loaded and
+ loading the plugin failed.</p>
 </item>
 </terms>
 

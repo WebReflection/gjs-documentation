@@ -34,7 +34,7 @@ have its state changed from outside callers.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p>whether or not the action is currently enabled</p>
 </item>
 </terms>
 

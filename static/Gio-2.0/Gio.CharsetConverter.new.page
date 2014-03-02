@@ -41,7 +41,7 @@ function new(to_charset: String, from_charset: String): <link xref="Gio.CharsetC
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.CharsetConverter"/> or <code>null</code> on error.</p>
 </item>
 </terms>
 

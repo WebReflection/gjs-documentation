@@ -40,7 +40,7 @@ correct type).</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.Action"/></p>
 </item>
 </terms>
 

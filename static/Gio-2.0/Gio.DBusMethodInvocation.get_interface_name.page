@@ -28,7 +28,7 @@ been redirected to the method call handler then
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A string. Do not free, it is owned by <code>invocation</code>.</p>
 </item>
 </terms>
 

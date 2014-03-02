@@ -37,7 +37,8 @@ set to the new entity tag for the <code>file</code>.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the load was successful. If <code>false</code> and @error is
+    present, it will be set appropriately.</p>
 </item>
 <item>
 <title><code>contents</code></title>

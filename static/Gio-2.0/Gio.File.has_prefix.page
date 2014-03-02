@@ -39,7 +39,8 @@ of <code>prefix</code>.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the @files's parent, grandparent, etc is <code>prefix</code>,
+    <code>false</code> otherwise.</p>
 </item>
 </terms>
 

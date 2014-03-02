@@ -44,7 +44,8 @@ for you there.  It is also always possible to use this function with
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.File"/>.
+   Free the returned object with <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link>.</p>
 </item>
 </terms>
 

@@ -57,7 +57,7 @@ function param_spec_pointer(name: String, nick: String, blurb: String, flags: <l
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly created parameter specification</p>
 </item>
 </terms>
 

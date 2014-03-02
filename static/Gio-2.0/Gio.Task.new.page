@@ -61,7 +61,7 @@ do not want this behavior, you can use
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.Task"/>.</p>
 </item>
 </terms>
 

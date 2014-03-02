@@ -26,7 +26,7 @@ implemented by <code>interface_</code>.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A <link xref="Gio.DBusInterfaceInfo"/>. Do not free.</p>
 </item>
 </terms>
 

@@ -40,7 +40,7 @@ returned.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the close operation has finished successfully.</p>
 </item>
 </terms>
 

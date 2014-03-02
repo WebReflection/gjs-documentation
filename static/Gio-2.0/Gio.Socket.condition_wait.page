@@ -46,7 +46,7 @@ the appropriate value (<link xref="Gio.IOErrorEnum"/>.cancelled or
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the condition was met, <code>false</code> otherwise</p>
 </item>
 </terms>
 

@@ -38,7 +38,7 @@ different things depending on what address is connected to.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the port number, or 0 in case of failure.</p>
 </item>
 </terms>
 

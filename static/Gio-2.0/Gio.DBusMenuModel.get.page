@@ -54,7 +54,8 @@ the thread default main context unchanged.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.DBusMenuModel"/> object. Free with
+    <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link>.</p>
 </item>
 </terms>
 

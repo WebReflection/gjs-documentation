@@ -41,7 +41,7 @@ function new(base_stream: <link xref="Gio.InputStream">Gio.InputStream</link>, c
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.InputStream"/>.</p>
 </item>
 </terms>
 

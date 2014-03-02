@@ -26,7 +26,8 @@ to <code>server</code>.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A D-Bus address string. Do not free, the string is owned
+by <code>server</code>.</p>
 </item>
 </terms>
 

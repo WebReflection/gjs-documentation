@@ -27,7 +27,7 @@ port number of the proxy itself.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the <code>proxy</code>'s destination port</p>
 </item>
 </terms>
 

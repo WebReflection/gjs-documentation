@@ -27,7 +27,8 @@ You can use this to allocate memory to pass to
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the size of the native struct sockaddr that
+    <code>address</code> represents</p>
 </item>
 </terms>
 

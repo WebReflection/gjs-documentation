@@ -41,7 +41,8 @@ function enum_get_value(enum_class: <link xref="GObject.EnumClass">GObject.EnumC
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the <link xref="GObject.EnumValue"/> for <code>value</code>, or <code>null</code>
+         if <code>value</code> is not a member of the enumeration</p>
 </item>
 </terms>
 

@@ -35,7 +35,8 @@ specification for more on the generic icon name.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the registered generic icon name for the given <code>type</code>,
+    or <code>null</code> if unknown. Free with <link href="../GLib-2.0/GLib.free.html">GLib.free</link></p>
 </item>
 </terms>
 

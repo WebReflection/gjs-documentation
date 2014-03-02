@@ -46,7 +46,9 @@ if you know the interface has already been loaded,
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the <link xref="GObject.ParamSpec"/> for the property of the
+         interface with the name <code>property_name</code>, or <code>null</code> if no
+         such property exists.</p>
 </item>
 </terms>
 

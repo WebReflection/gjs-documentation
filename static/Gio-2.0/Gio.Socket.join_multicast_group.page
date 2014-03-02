@@ -55,7 +55,7 @@ with a <link xref="Gio.IOErrorEnum"/>.not_supported error.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> on success, <code>false</code> on error.</p>
 </item>
 </terms>
 

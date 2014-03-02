@@ -38,7 +38,7 @@ directly. Applications should use <link xref="Gio.app_info_get_default_for_uri_s
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p><link xref="Gio.AppInfo"/> for given <code>uri_scheme</code> or <code>null</code> on error.</p>
 </item>
 </terms>
 

@@ -33,7 +33,8 @@ function get_extension_by_name(name: String): <link xref="Gio.IOExtension">Gio.I
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the <link xref="Gio.IOExtension"/> for <code>extension_point</code> that has the
+   given name, or <code>null</code> if there is no extension with that name</p>
 </item>
 </terms>
 

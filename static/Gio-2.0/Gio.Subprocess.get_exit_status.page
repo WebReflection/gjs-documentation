@@ -28,7 +28,7 @@ unless <link xref="Gio.Subprocess.get_if_exited"/> returned <code>true</code>.</
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the exit status</p>
 </item>
 </terms>
 

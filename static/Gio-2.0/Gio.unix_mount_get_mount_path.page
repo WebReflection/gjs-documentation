@@ -33,7 +33,7 @@ function unix_mount_get_mount_path(mount_entry: <link xref="Gio.UnixMountEntry">
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the mount path for <code>mount_entry</code>.</p>
 </item>
 </terms>
 

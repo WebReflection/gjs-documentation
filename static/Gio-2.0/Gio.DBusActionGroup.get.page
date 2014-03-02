@@ -57,7 +57,7 @@ for the action group to monitor for changes and then to call
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.DBusActionGroup"/></p>
 </item>
 </terms>
 

@@ -33,7 +33,7 @@ function equal(appinfo2: <link xref="Gio.AppInfo">Gio.AppInfo</link>): Boolean {
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>appinfo1</code> is equal to <code>appinfo2</code>. <code>false</code> otherwise.</p>
 </item>
 </terms>
 

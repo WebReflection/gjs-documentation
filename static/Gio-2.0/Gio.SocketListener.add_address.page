@@ -69,7 +69,7 @@ requested, belongs to the caller and must be freed.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> on success, <code>false</code> on error.</p>
 </item>
 <item>
 <title><code>effective_address</code></title>

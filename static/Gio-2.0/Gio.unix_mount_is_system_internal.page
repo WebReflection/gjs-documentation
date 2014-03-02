@@ -33,7 +33,7 @@ function unix_mount_is_system_internal(mount_entry: <link xref="Gio.UnixMountEnt
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the unix mount is for a system path.</p>
 </item>
 </terms>
 

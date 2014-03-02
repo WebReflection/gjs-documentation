@@ -62,7 +62,8 @@ the lookup operation asynchronously.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly allocated
+<link xref="Gio.TlsCertificate"/>, or <code>null</code>. Use <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link> to release the certificate.</p>
 </item>
 </terms>
 

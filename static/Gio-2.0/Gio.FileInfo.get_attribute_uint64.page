@@ -35,7 +35,7 @@ attribute does not contain an unsigned 64-bit integer, or is invalid,
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a unsigned 64-bit integer from the attribute.</p>
 </item>
 </terms>
 

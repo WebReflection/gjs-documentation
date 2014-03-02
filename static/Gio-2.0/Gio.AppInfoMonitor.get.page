@@ -29,7 +29,7 @@ the same main context as you created it.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a reference to a <link xref="Gio.AppInfoMonitor"/></p>
 </item>
 </terms>
 

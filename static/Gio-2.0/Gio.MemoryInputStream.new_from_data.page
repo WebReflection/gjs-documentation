@@ -41,7 +41,7 @@ function new_from_data(data: ByteArray, destroy: <link href="../GLib-2.0/GLib.De
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>new <link xref="Gio.InputStream"/> read from <code>data</code> of <code>len</code> bytes.</p>
 </item>
 </terms>
 

@@ -27,7 +27,7 @@ if it is generally possible to release the permission by calling
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p>the value of the 'can-release' property</p>
 </item>
 </terms>
 

@@ -25,7 +25,8 @@ function get_object_path(): String {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A string owned by <code>interface_</code> or <code>null</code> if <code>interface_</code> is not exported
+anywhere. Do not free, the string belongs to <code>interface_</code>.</p>
 </item>
 </terms>
 

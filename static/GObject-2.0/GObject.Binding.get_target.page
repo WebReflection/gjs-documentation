@@ -25,7 +25,7 @@ function get_target(): <link xref="GObject.Object">GObject.Object</link> {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the target <link xref="GObject.Object"/></p>
 </item>
 </terms>
 

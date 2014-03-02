@@ -62,7 +62,7 @@ not support immediate cancellation.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>The status of the certificate request interaction.</p>
 </item>
 </terms>
 

@@ -33,7 +33,7 @@ function io_error_from_errno(err_no: Number(gint)): <link xref="Gio.IOErrorEnum"
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p><link xref="Gio.IOErrorEnum"/> value for the given errno.h error number.</p>
 </item>
 </terms>
 

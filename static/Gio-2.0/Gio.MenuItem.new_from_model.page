@@ -43,7 +43,7 @@ function new_from_model(model: <link xref="Gio.MenuModel">Gio.MenuModel</link>, 
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.MenuItem"/>.</p>
 </item>
 </terms>
 

@@ -29,7 +29,7 @@ a stream cannot switch from pollable to non-pollable or vice versa.</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>stream</code> is pollable, <code>false</code> if not.</p>
 </item>
 </terms>
 

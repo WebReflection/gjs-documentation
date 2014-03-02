@@ -26,7 +26,7 @@ This is different from the file's content type, see <link xref="Gio.FileInfo.get
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.FileType"/> for the given file.</p>
 </item>
 </terms>
 

@@ -77,7 +77,8 @@ easier binding in other languages.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>an identifier (never 0) that an be used with
+    <link xref="Gio.bus_unown_name"/> to stop owning the name.</p>
 </item>
 </terms>
 

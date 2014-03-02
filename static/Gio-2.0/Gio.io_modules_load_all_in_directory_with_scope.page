@@ -43,7 +43,12 @@ which allows delayed/lazy loading of modules.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a list of #GIOModules loaded
+     from the directory,
+     All the modules are loaded into memory, if you want to
+     unload them (enabling on-demand loading) you must call
+     <link href="../GObject-2.0/GObject.TypeModule.unuse.html">GObject.TypeModule.prototype.unuse</link> on all the modules. Free the list
+     with <link href="../GLib-2.0/GLib.List.free.html">GLib.List.free</link>.</p>
 </item>
 </terms>
 

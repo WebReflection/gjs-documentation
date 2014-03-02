@@ -26,7 +26,7 @@ headers or alignment.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>The number of bytes required.</p>
 </item>
 </terms>
 

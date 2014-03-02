@@ -26,7 +26,7 @@ function get_tls(): Boolean {
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p>whether <code>client</code> uses TLS</p>
 </item>
 </terms>
 

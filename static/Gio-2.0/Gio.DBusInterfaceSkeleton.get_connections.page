@@ -25,7 +25,10 @@ function get_connections(): Array(<link xref="Gio.DBusConnection">Gio.DBusConnec
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A list of
+  all the connections that <code>interface_</code> is exported on. The returned
+  list should be freed with <link href="../GLib-2.0/GLib.List.free.html">GLib.List.free</link> after each element has
+  been freed with <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link>.</p>
 </item>
 </terms>
 

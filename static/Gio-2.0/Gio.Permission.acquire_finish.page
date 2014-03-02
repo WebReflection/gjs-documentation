@@ -35,7 +35,7 @@ represented by <code>permission</code>.</p>  <p>This is the second half of the a
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the permission was successfully acquired</p>
 </item>
 </terms>
 

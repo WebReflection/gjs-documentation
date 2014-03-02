@@ -48,7 +48,8 @@ the heap and automatically uncompress the data.</p>  <p><code>lookup_flags</code
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p><link href="../GLib-2.0/GLib.Bytes.html">GLib.Bytes</link> or <code>null</code> on error.
+    Free the returned object with <link href="../GLib-2.0/GLib.Bytes.unref.html">GLib.Bytes.prototype.unref</link></p>
 </item>
 </terms>
 

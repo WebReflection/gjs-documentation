@@ -52,7 +52,9 @@ required, wraps the <link xref="Gio.IOStream"/> to handle proxy payload.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.IOStream"/> that will replace <code>connection</code>. This might
+              be the same as <code>connection</code>, in which case a reference
+              will be added.</p>
 </item>
 </terms>
 

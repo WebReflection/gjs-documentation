@@ -43,7 +43,7 @@ application, by setting the `DISPLAY` environment variable.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a display string for the display.</p>
 </item>
 </terms>
 

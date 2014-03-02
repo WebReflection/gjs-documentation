@@ -60,7 +60,7 @@ its listening socket.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.UnixSocketAddress"/></p>
 </item>
 </terms>
 

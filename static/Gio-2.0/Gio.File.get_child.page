@@ -35,7 +35,8 @@ for instance to create that file.</p>  <p>This call does no blocking I/O.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.File"/> to a child specified by <code>name</code>.
+    Free the returned object with <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link>.</p>
 </item>
 </terms>
 

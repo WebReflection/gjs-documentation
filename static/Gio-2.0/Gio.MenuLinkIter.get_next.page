@@ -32,7 +32,7 @@ be unreffed using <link href="../GObject-2.0/GObject.Object.unref.html">GObject.
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> on success, or <code>false</code> if there is no additional link</p>
 </item>
 <item>
 <title><code>out_link</code></title>

@@ -53,7 +53,7 @@ dummy callback), and <code>cancellable</code>, if they are non-<code>null</code>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the new <link href="../GLib-2.0/GLib.Source.html">GLib.Source</link>.</p>
 </item>
 </terms>
 

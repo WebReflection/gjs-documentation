@@ -51,7 +51,7 @@ partial result will be returned, without an error.</p>  <p>On error -1 is return
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>Number of bytes read, or -1 on error, or 0 on end of file.</p>
 </item>
 </terms>
 

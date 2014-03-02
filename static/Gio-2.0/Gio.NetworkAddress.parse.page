@@ -53,7 +53,7 @@ which is generally quite sparse on platforms other than Linux.)</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the new <link xref="Gio.NetworkAddress"/>, or <code>null</code> on error</p>
 </item>
 </terms>
 

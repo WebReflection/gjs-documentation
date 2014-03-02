@@ -31,7 +31,7 @@ registered.  See <link xref="Gio.Application.get_is_registered"/>.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.DBusConnection"/>, or <code>null</code></p>
 </item>
 </terms>
 

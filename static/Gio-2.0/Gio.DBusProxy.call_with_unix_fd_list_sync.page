@@ -75,7 +75,8 @@ function call_with_unix_fd_list_sync(method_name: String, parameters: <link href
 </item>
 <item>
 <title><code>return_value</code></title>
-
+  <p><code>null</code> if @error is set. Otherwise a <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> tuple with
+return values. Free with <link href="../GLib-2.0/GLib.Variant.unref.html">GLib.Variant.prototype.unref</link>.</p>
 </item>
 <item>
 <title><code>out_fd_list</code></title>

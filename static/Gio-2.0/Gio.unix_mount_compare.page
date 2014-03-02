@@ -41,7 +41,8 @@ function unix_mount_compare(mount1: <link xref="Gio.UnixMountEntry">Gio.UnixMoun
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>1, 0 or -1 if <code>mount1</code> is greater than, equal to,
+or less than <code>mount2</code>, respectively.</p>
 </item>
 </terms>
 

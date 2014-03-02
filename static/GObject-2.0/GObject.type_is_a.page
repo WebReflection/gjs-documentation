@@ -44,7 +44,7 @@ whether <code>type</code> conforms to it.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>type</code> is a <code>is_a_type</code></p>
 </item>
 </terms>
 

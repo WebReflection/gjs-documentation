@@ -25,7 +25,7 @@ function get_value(): <link xref="Gio.MenuModel">Gio.MenuModel</link> {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the <link xref="Gio.MenuModel"/> that is linked to</p>
 </item>
 </terms>
 

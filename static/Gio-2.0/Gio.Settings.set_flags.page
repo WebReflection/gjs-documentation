@@ -47,7 +47,7 @@ bit in <code>value</code>.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code>, if the set succeeds</p>
 </item>
 </terms>
 

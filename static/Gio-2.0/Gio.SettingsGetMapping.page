@@ -27,7 +27,7 @@ must be returned in this case.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the conversion succeeded, <code>false</code> in case of an error</p>
 </item>
 <item>
 <title><code>result</code></title>

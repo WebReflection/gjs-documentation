@@ -25,7 +25,7 @@ function new(): <link xref="Gio.SimpleActionGroup">Gio.SimpleActionGroup</link> 
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.SimpleActionGroup"/></p>
 </item>
 </terms>
 

@@ -36,7 +36,7 @@ resending @notification.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.Notification"/> instance</p>
 </item>
 </terms>
 

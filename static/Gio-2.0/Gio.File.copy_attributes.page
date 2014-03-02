@@ -55,7 +55,8 @@ is useful when implementing move by copy + delete source.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the attributes were copied successfully,
+    <code>false</code> otherwise.</p>
 </item>
 </terms>
 

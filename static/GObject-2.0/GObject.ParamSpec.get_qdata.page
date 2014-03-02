@@ -33,7 +33,7 @@ function get_qdata(quark: <link href="../GLib-2.0/GLib.Quark.html">GLib.Quark</l
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the user data pointer set, or <code>null</code></p>
 </item>
 </terms>
 

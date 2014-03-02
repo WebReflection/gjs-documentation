@@ -89,7 +89,7 @@ not currently blocked.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>The number of handlers that matched.</p>
 </item>
 </terms>
 

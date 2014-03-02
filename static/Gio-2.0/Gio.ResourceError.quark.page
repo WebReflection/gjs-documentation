@@ -25,7 +25,7 @@ function quark(): <link href="../GLib-2.0/GLib.Quark.html">GLib.Quark</link> {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link href="../GLib-2.0/GLib.Quark.html">GLib.Quark</link></p>
 </item>
 </terms>
 

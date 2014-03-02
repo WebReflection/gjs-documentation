@@ -46,7 +46,7 @@ schema for <code>settings</code> or is not marked as an enumerated type, or for
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code>, if the set succeeds</p>
 </item>
 </terms>
 

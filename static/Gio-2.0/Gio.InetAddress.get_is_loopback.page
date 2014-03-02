@@ -25,7 +25,7 @@ function get_is_loopback(): Boolean {
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>address</code> is the loopback address for its family.</p>
 </item>
 </terms>
 

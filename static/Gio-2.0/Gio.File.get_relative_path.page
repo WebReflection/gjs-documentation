@@ -33,7 +33,10 @@ function get_relative_path(descendant: <link xref="Gio.File">Gio.File</link>): S
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>string with the relative path from <code>descendant</code>
+    to <code>parent</code>, or <code>null</code> if <code>descendant</code> doesn't have <code>parent</code>
+    as prefix. The returned string should be freed with <link href="../GLib-2.0/GLib.free.html">GLib.free</link>
+    when no longer needed.</p>
 </item>
 </terms>
 

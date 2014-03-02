@@ -36,7 +36,7 @@ of the URI, up to but not including the ':', e.g. "http",
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p><link xref="Gio.AppInfo"/> for given <code>uri_scheme</code> or <code>null</code> on error.</p>
 </item>
 </terms>
 

@@ -27,7 +27,8 @@ to see if they have been cancelled.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if this function should be called again to
+   complete the job, <code>false</code> if the job is complete (or cancelled)</p>
 </item>
 </terms>
 

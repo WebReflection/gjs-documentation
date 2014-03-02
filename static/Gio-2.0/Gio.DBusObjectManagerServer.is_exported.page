@@ -33,7 +33,7 @@ function is_exported(object: <link xref="Gio.DBusObjectSkeleton">Gio.DBusObjectS
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>object</code> is exported</p>
 </item>
 </terms>
 

@@ -42,7 +42,7 @@ globally registered resources and if found returns information about it.</p>  <p
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the file was found. <code>false</code> if there were errors</p>
 </item>
 <item>
 <title><code>size</code></title>

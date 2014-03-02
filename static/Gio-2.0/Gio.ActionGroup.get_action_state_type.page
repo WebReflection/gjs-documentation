@@ -42,7 +42,7 @@ with the same name but a different state type.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the state type, if the action is stateful</p>
 </item>
 </terms>
 

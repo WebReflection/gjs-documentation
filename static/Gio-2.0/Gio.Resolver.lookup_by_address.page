@@ -45,7 +45,8 @@ operation, in which case @error (if non-<code>null</code>) will be set to
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a hostname (either ASCII-only, or in ASCII-encoded
+    form), or <code>null</code> on error.</p>
 </item>
 </terms>
 

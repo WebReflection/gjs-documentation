@@ -31,7 +31,7 @@ recursively.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the default schema source</p>
 </item>
 </terms>
 

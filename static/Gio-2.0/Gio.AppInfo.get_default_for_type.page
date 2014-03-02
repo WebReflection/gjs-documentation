@@ -42,7 +42,8 @@ function get_default_for_type(content_type: String, must_support_uris: Boolean):
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p><link xref="Gio.AppInfo"/> for given <code>content_type</code> or
+    <code>null</code> on error.</p>
 </item>
 </terms>
 

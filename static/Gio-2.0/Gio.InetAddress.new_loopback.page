@@ -33,7 +33,8 @@ function new_loopback(family: <link xref="Gio.SocketFamily">Gio.SocketFamily</li
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.InetAddress"/> corresponding to the loopback address
+for <code>family</code>.</p>
 </item>
 </terms>
 

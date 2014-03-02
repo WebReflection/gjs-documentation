@@ -25,7 +25,7 @@ function get_flags(): <link xref="Gio.DBusMessageFlags">Gio.DBusMessageFlags</li
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>Flags that are set (typically values from the <link xref="Gio.DBusMessageFlags"/> enumeration bitwise ORed together).</p>
 </item>
 </terms>
 

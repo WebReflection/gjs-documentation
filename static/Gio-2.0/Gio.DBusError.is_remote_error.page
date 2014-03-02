@@ -34,7 +34,8 @@ use <link xref="Gio.dbus_error_get_remote_error"/> to get the name of the error.
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>error</code> represents an error from a remote peer,
+<code>false</code> otherwise.</p>
 </item>
 </terms>
 

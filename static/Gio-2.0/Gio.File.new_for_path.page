@@ -36,7 +36,8 @@ operation if <code>path</code> is malformed.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.File"/> for the given <code>path</code>.
+  Free the returned object with <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link>.</p>
 </item>
 </terms>
 

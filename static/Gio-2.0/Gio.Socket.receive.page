@@ -56,7 +56,8 @@ returned. To be notified when data is available, wait for the
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>Number of bytes read, or 0 if the connection was closed by
+the peer, or -1 on error</p>
 </item>
 </terms>
 

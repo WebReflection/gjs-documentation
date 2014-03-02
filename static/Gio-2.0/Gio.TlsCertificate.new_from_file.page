@@ -36,7 +36,7 @@ set @error. Otherwise, this behaves like
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the new certificate, or <code>null</code> on error</p>
 </item>
 </terms>
 

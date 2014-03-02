@@ -98,7 +98,7 @@ of a signal is matched against that part as specified by D-Bus.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a subscription identifier that can be used with <link xref="Gio.DBusConnection.signal_unsubscribe"/></p>
 </item>
 </terms>
 

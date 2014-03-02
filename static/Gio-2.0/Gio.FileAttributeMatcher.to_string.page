@@ -28,7 +28,8 @@ decide to use a different order or omit needless parts.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a string describing the attributes the matcher matches
+  against or <code>null</code> if <code>matcher</code> was <code>null</code>.</p>
 </item>
 </terms>
 

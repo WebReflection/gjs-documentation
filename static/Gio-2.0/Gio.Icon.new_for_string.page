@@ -36,7 +36,8 @@ with the type system prior to calling <link xref="Gio.icon_new_for_string"/>.</p
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>An object implementing the <link xref="Gio.Icon"/>
+         interface or <code>null</code> if @error is set.</p>
 </item>
 </terms>
 

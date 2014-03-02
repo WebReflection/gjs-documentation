@@ -51,7 +51,7 @@ want to block, you should use <link xref="Gio.NetworkMonitor.can_reach_async"/>.
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>connectable</code> is reachable, <code>false</code> if not.</p>
 </item>
 </terms>
 

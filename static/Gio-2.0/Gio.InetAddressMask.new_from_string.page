@@ -36,7 +36,8 @@ assumed to be the full length of the address.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.InetAddressMask"/> corresponding to @string, or <code>null</code>
+on error.</p>
 </item>
 </terms>
 

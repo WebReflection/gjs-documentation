@@ -41,7 +41,7 @@ function put_int32(data: Number(gint32), cancellable: <link xref="Gio.Cancellabl
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>data</code> was successfully added to the <code>stream</code>.</p>
 </item>
 </terms>
 

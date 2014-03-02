@@ -70,7 +70,8 @@ g_dbus_server_new() for the asynchronous version.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A <link xref="Gio.DBusServer"/> or <code>null</code> if @error is set. Free with
+<link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link>.</p>
 </item>
 </terms>
 

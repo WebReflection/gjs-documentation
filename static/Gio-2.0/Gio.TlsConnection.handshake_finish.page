@@ -34,7 +34,8 @@ function handshake_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> on success, <code>false</code> on failure, in which
+case @error will be set.</p>
 </item>
 </terms>
 

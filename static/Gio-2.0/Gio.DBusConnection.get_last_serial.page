@@ -29,7 +29,8 @@ high-level API such as <link xref="Gio.DBusConnection.emit_signal"/>,
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the last used serial or zero when no message has been sent
+    within the current thread</p>
 </item>
 </terms>
 

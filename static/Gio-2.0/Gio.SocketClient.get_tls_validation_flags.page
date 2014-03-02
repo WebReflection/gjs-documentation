@@ -26,7 +26,7 @@ function get_tls_validation_flags(): <link xref="Gio.TlsCertificateFlags">Gio.Tl
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the TLS validation flags</p>
 </item>
 </terms>
 

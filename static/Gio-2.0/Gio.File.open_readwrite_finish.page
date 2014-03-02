@@ -34,7 +34,8 @@ function open_readwrite_finish(res: <link xref="Gio.AsyncResult">Gio.AsyncResult
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.FileIOStream"/> or <code>null</code> on error.
+    Free the returned object with <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link>.</p>
 </item>
 </terms>
 

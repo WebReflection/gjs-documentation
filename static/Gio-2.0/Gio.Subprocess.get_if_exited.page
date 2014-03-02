@@ -27,7 +27,7 @@ returned.</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the case of a normal exit</p>
 </item>
 </terms>
 

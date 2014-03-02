@@ -41,7 +41,7 @@ function new_with_origin(icon: <link xref="Gio.Icon">Gio.Icon</link>, origin: <l
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.Emblem"/>.</p>
 </item>
 </terms>
 

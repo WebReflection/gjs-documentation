@@ -25,7 +25,7 @@ function get_byte_order(): <link xref="Gio.DataStreamByteOrder">Gio.DataStreamBy
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the <code>stream</code>'s current <link xref="Gio.DataStreamByteOrder"/>.</p>
 </item>
 </terms>
 

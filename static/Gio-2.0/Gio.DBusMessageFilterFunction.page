@@ -81,7 +81,9 @@ a message to be sent to the other peer.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A <link xref="Gio.DBusMessage"/> that will be freed with
+<link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link> or <code>null</code> to drop the message. Passive filter
+functions can simply return the passed <code>message</code> object.</p>
 </item>
 </terms>
 

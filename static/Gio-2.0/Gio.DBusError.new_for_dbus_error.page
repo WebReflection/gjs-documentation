@@ -56,7 +56,7 @@ it.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>An allocated <link href="../GLib-2.0/GLib.Error.html">GLib.Error</link>. Free with <link href="../GLib-2.0/GLib.Error.free.html">GLib.Error.prototype.free</link>.</p>
 </item>
 </terms>
 

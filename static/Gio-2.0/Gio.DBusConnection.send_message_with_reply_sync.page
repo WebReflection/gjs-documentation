@@ -75,7 +75,8 @@ UNIX file descriptors.</p>  <p>Note that <code>message</code> must be unlocked, 
 </item>
 <item>
 <title><code>return_value</code></title>
-
+  <p>a locked <link xref="Gio.DBusMessage"/> that is the reply
+    to <code>message</code> or <code>null</code> if @error is set</p>
 </item>
 <item>
 <title><code>out_serial</code></title>

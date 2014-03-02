@@ -30,7 +30,8 @@ the application.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>
+   a list of content types.</p>
 </item>
 </terms>
 

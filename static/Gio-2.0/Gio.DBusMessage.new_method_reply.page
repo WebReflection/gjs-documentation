@@ -25,7 +25,7 @@ function new_method_reply(): <link xref="Gio.DBusMessage">Gio.DBusMessage</link>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p><link xref="Gio.DBusMessage"/>. Free with <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link>.</p>
 </item>
 </terms>
 

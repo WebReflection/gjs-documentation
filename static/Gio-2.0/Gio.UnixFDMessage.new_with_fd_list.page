@@ -33,7 +33,7 @@ function new_with_fd_list(fd_list: <link xref="Gio.UnixFDList">Gio.UnixFDList</l
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.UnixFDMessage"/></p>
 </item>
 </terms>
 

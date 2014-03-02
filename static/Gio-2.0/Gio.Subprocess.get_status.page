@@ -29,7 +29,7 @@ returned.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the (meaningless) waitpid() exit status from the kernel</p>
 </item>
 </terms>
 

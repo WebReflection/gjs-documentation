@@ -31,7 +31,7 @@ should resolve the destination hostname first, and then pass a
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if hostname resolution is supported.</p>
 </item>
 </terms>
 

@@ -35,7 +35,7 @@ blocking the I/O job).</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p>The return value of <code>func</code></p>
 </item>
 </terms>
 

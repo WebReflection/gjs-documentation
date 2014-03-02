@@ -30,7 +30,7 @@ the `Hidden` key set.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly allocated <link href="../GLib-2.0/GLib.List.html">GLib.List</link> of references to #GAppInfos.</p>
 </item>
 </terms>
 

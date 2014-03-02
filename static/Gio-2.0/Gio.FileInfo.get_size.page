@@ -25,7 +25,7 @@ function get_size(): Number(gint64) {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a #goffset containing the file's size.</p>
 </item>
 </terms>
 

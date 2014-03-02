@@ -41,7 +41,7 @@ function new(name: String, parameter_type: <link href="../GLib-2.0/GLib.VariantT
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.SimpleAction"/></p>
 </item>
 </terms>
 

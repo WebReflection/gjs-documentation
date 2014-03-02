@@ -27,7 +27,7 @@ unless <link xref="Gio.Subprocess.get_if_signaled"/> returned <code>true</code>.
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the signal causing termination</p>
 </item>
 </terms>
 

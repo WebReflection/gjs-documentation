@@ -26,7 +26,7 @@ ASCII-encoded, depending on what <code>srv</code> was created with.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p><code>srv</code>'s domain name</p>
 </item>
 </terms>
 

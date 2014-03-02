@@ -25,7 +25,8 @@ function is_active(): Boolean {
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if construction of the <code>vfs</code> was successful
+    and it is now active.</p>
 </item>
 </terms>
 

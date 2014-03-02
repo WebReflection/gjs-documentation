@@ -34,7 +34,8 @@ calls, returning the created object or <code>null</code> on error.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly created <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link>,
+     or <code>null</code> on error. Free with <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link>.</p>
 </item>
 </terms>
 

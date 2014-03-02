@@ -34,7 +34,8 @@ function verify_chain_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResul
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the appropriate <link xref="Gio.TlsCertificateFlags"/> which represents the
+result of verification.</p>
 </item>
 </terms>
 

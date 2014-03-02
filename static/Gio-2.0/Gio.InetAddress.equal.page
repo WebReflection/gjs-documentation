@@ -33,7 +33,7 @@ function equal(other_address: <link xref="Gio.InetAddress">Gio.InetAddress</link
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>address</code> and <code>other_address</code> are equal, <code>false</code> otherwise.</p>
 </item>
 </terms>
 

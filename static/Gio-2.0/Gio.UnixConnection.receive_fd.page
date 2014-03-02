@@ -37,7 +37,7 @@ implementations.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a file descriptor on success, -1 on error.</p>
 </item>
 </terms>
 

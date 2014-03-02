@@ -34,7 +34,7 @@ function trash_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> on successful trash, <code>false</code> otherwise.</p>
 </item>
 </terms>
 

@@ -90,7 +90,7 @@ what their exit status will be.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the exit status</p>
 </item>
 </terms>
 

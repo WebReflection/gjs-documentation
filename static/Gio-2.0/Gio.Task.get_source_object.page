@@ -26,7 +26,7 @@ function get_source_object(): <link href="../GObject-2.0/GObject.Object.html">GO
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p><code>task</code>'s source object, or <code>null</code></p>
 </item>
 </terms>
 

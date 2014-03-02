@@ -25,7 +25,7 @@ function can_start(): Boolean {
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the <code>drive</code> can be started, <code>false</code> otherwise.</p>
 </item>
 </terms>
 

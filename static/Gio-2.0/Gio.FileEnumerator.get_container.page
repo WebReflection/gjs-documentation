@@ -25,7 +25,7 @@ function get_container(): <link xref="Gio.File">Gio.File</link> {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the <link xref="Gio.File"/> which is being enumerated.</p>
 </item>
 </terms>
 

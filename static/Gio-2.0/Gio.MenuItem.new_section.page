@@ -88,7 +88,7 @@ purpose of understanding what is really going on).
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.MenuItem"/></p>
 </item>
 </terms>
 

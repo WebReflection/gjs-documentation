@@ -44,7 +44,7 @@ when to use application-specific proxy protocols.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the new <link xref="Gio.NetworkAddress"/>, or <code>null</code> on error</p>
 </item>
 </terms>
 

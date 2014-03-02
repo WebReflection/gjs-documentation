@@ -25,7 +25,7 @@ function get_bytes(): ByteArray {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link href="../GLib-2.0/GLib.Bytes.html">GLib.Bytes</link>, or <code>null</code>.</p>
 </item>
 </terms>
 

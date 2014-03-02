@@ -27,7 +27,7 @@ multicast listeners on the same host.</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p>the multicast loopback setting on <code>socket</code></p>
 </item>
 </terms>
 

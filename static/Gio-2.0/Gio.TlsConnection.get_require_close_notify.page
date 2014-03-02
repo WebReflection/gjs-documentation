@@ -27,7 +27,8 @@ when the connection is closed. See
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>conn</code> requires a proper TLS close
+notification.</p>
 </item>
 </terms>
 

@@ -28,7 +28,7 @@ at all).</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> on success, or <code>false</code> when there are no more links</p>
 </item>
 </terms>
 

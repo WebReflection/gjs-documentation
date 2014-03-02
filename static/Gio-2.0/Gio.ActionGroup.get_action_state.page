@@ -36,7 +36,7 @@ given by <link xref="Gio.ActionGroup.get_action_state_type"/>.</p>  <p>The retur
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the current state of the action</p>
 </item>
 </terms>
 

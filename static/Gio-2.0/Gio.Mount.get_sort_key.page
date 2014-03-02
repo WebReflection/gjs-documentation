@@ -25,7 +25,7 @@ function get_sort_key(): String {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>Sorting key for <code>mount</code> or <code>null</code> if no such key is available.</p>
 </item>
 </terms>
 

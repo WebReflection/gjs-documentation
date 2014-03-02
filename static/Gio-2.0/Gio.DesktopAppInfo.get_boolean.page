@@ -33,7 +33,8 @@ function get_boolean(key: String): Boolean {
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p>the boolean value, or <code>false</code> if the key
+    is not found</p>
 </item>
 </terms>
 

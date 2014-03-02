@@ -52,7 +52,8 @@ function send_to(address: <link xref="Gio.SocketAddress">Gio.SocketAddress</link
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>Number of bytes written (which may be less than <code>size</code>), or -1
+on error</p>
 </item>
 </terms>
 

@@ -25,7 +25,7 @@ function can_stop(): Boolean {
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the <code>drive</code> can be stopped, <code>false</code> otherwise.</p>
 </item>
 </terms>
 

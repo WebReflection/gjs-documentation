@@ -25,7 +25,8 @@ function get_object(): <link xref="Gio.DBusObject">Gio.DBusObject</link> {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A <link xref="Gio.DBusObject"/> or <code>null</code>. The returned
+reference should be freed with <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link>.</p>
 </item>
 </terms>
 

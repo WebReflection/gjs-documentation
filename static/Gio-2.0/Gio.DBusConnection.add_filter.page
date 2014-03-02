@@ -48,7 +48,8 @@ message will not be sent to the other peer.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a filter identifier that can be used with
+    <link xref="Gio.DBusConnection.remove_filter"/></p>
 </item>
 </terms>
 

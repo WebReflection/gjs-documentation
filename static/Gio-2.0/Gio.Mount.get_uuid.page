@@ -28,7 +28,9 @@ available.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the UUID for <code>mount</code> or <code>null</code> if no UUID can be computed.
+    The returned string should be freed with <link href="../GLib-2.0/GLib.free.html">GLib.free</link>
+    when no longer needed.</p>
 </item>
 </terms>
 

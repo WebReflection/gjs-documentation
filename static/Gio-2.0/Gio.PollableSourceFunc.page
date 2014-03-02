@@ -24,7 +24,7 @@ returned by <link xref="Gio.PollableInputStream.create_source"/> and
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p>it should return <code>false</code> if the source should be removed.</p>
 </item>
 </terms>
 

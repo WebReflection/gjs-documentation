@@ -43,7 +43,7 @@ icon2 = g_themed_icon_new_with_default_fallbacks ("gnome-dev-cdrom-audio");
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.ThemedIcon"/>.</p>
 </item>
 </terms>
 

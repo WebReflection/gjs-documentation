@@ -26,7 +26,7 @@ function get_etag(): String {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a string containing the value of the "etag:value" attribute.</p>
 </item>
 </terms>
 

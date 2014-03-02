@@ -32,7 +32,7 @@ registered.  See <link xref="Gio.Application.get_is_registered"/>.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the object path, or <code>null</code></p>
 </item>
 </terms>
 

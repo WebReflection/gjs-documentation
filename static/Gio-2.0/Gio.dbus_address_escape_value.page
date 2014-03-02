@@ -38,7 +38,8 @@ which could be used in a D-Bus address like
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a copy of <code>string</code> with all
+    non-optionally-escaped bytes escaped</p>
 </item>
 </terms>
 

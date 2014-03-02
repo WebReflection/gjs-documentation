@@ -41,7 +41,8 @@ function flags_get_value_by_name(flags_class: <link xref="GObject.FlagsClass">GO
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the <link xref="GObject.FlagsValue"/> with name <code>name</code>,
+         or <code>null</code> if there is no flag with that name</p>
 </item>
 </terms>
 

@@ -40,7 +40,8 @@ specification for more on x-content types.</p>  <p>This function is useful in th
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>an <code>null</code>-terminated
+    array of zero or more content types. Free with <link href="../GLib-2.0/GLib.strfreev.html">GLib.strfreev</link></p>
 </item>
 </terms>
 

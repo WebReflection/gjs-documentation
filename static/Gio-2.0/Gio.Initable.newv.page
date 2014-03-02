@@ -51,7 +51,8 @@ and returns <code>null</code>, setting an error on failure.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly allocated
+     <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link>, or <code>null</code> on error</p>
 </item>
 </terms>
 

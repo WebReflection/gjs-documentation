@@ -82,7 +82,7 @@ function new_for_bus_sync(bus_type: <link xref="Gio.BusType">Gio.BusType</link>,
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A <link xref="Gio.DBusProxy"/> or <code>null</code> if error is set. Free with <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link>.</p>
 </item>
 </terms>
 

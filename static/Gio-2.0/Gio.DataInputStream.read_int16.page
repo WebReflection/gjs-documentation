@@ -34,7 +34,8 @@ see <link xref="Gio.DataInputStream.get_byte_order"/> and <link xref="Gio.DataIn
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a signed 16-bit/2-byte value read from <code>stream</code> or %0 if
+an error occurred.</p>
 </item>
 </terms>
 

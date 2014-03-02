@@ -25,7 +25,7 @@ function get_domain(): String {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a string set to the domain.</p>
 </item>
 </terms>
 

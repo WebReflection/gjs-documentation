@@ -46,7 +46,7 @@ range -42 .. +42.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p>whether modifying <code>value</code> was necessary to ensure validity</p>
 </item>
 </terms>
 

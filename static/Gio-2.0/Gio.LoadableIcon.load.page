@@ -42,7 +42,7 @@ see <link xref="Gio.LoadableIcon.load_async"/>.</p>
 </item>
 <item>
 <title><code>return_value</code></title>
-
+  <p>a <link xref="Gio.InputStream"/> to read the icon from.</p>
 </item>
 <item>
 <title><code>type</code></title>

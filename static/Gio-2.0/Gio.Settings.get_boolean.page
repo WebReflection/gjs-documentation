@@ -34,7 +34,7 @@ having a boolean type in the schema for <code>settings</code>.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p>a boolean</p>
 </item>
 </terms>
 

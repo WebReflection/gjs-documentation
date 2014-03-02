@@ -29,7 +29,8 @@ use <link href="../GLib-2.0/GLib.OptionContext.parse_strv.html">GLib.OptionConte
 <terms>
 <item>
 <title><code>return_value</code></title>
-
+  <p>the string array
+containing the arguments (the argv)</p>
 </item>
 <item>
 <title><code>argc</code></title>

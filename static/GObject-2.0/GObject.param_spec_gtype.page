@@ -67,7 +67,7 @@ function param_spec_gtype(name: String, nick: String, blurb: String, is_a_type: 
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly created parameter specification</p>
 </item>
 </terms>
 

@@ -54,7 +54,7 @@ then <code>null</code> is returned.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the value of the attribute</p>
 </item>
 </terms>
 

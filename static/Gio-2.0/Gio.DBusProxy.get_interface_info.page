@@ -27,7 +27,8 @@ property for more details.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A <link xref="Gio.DBusInterfaceInfo"/> or <code>null</code>. Do not unref the returned
+object, it is owned by <code>proxy</code>.</p>
 </item>
 </terms>
 

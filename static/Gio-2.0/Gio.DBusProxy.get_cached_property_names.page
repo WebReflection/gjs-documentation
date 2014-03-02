@@ -25,7 +25,9 @@ function get_cached_property_names(): Array(String) {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A <code>null</code>-terminated array of strings or <code>null</code> if
+         <code>proxy</code> has no cached properties. Free the returned array with
+         <link href="../GLib-2.0/GLib.strfreev.html">GLib.strfreev</link>.</p>
 </item>
 </terms>
 

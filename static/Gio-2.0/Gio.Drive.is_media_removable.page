@@ -25,7 +25,7 @@ function is_media_removable(): Boolean {
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>drive</code> supports removable media, <code>false</code> otherwise.</p>
 </item>
 </terms>
 

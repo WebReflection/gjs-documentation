@@ -25,7 +25,7 @@ function enumerate(): <link xref="Gio.SocketAddressEnumerator">Gio.SocketAddress
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.SocketAddressEnumerator"/>.</p>
 </item>
 </terms>
 

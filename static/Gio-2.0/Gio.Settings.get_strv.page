@@ -34,7 +34,9 @@ having an array of strings type in the schema for <code>settings</code>.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a
+newly-allocated, <code>null</code>-terminated array of strings, the value that
+is stored at <code>key</code> in <code>settings</code>.</p>
 </item>
 </terms>
 

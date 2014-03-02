@@ -25,7 +25,9 @@ function get_symbolic_icon(): <link xref="Gio.Icon">Gio.Icon</link> {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.Icon"/>.
+     The returned object should be unreffed with
+     <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link> when no longer needed.</p>
 </item>
 </terms>
 

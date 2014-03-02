@@ -74,7 +74,7 @@ property.</p>  <p>See <link xref="GObject.ParamSpec.internal"/> for details on p
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly created parameter specification</p>
 </item>
 </terms>
 

@@ -37,7 +37,11 @@ already been loaded, <link xref="GObject.type_default_interface_peek"/>.</p>
 </item>
 <item>
 <title><code>return_value</code></title>
-
+  <p>a
+         pointer to an array of pointers to <link xref="GObject.ParamSpec"/>
+         structures. The paramspecs are owned by GLib, but the
+         array should be freed with <link href="../GLib-2.0/GLib.free.html">GLib.free</link> when you are done with
+         it.</p>
 </item>
 <item>
 <title><code>n_properties_p</code></title>

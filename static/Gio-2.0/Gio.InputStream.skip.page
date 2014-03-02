@@ -48,7 +48,7 @@ partial result will be returned, without an error.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>Number of bytes skipped, or -1 on error</p>
 </item>
 </terms>
 

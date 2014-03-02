@@ -43,7 +43,7 @@ does not exist, <code>null</code> is returned.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the linked <link xref="Gio.MenuModel"/>, or <code>null</code></p>
 </item>
 </terms>
 

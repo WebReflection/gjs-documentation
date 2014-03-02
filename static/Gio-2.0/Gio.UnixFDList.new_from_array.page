@@ -36,7 +36,7 @@ the caller.</p>  <p>Each file descriptor in the array should be set to close-on-
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.UnixFDList"/></p>
 </item>
 </terms>
 

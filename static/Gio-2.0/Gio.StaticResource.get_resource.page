@@ -27,7 +27,7 @@ and is not typically used by other code.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.Resource"/></p>
 </item>
 </terms>
 

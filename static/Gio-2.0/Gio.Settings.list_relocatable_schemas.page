@@ -25,7 +25,9 @@ function list_relocatable_schemas(): Array(String) {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a list of relocatable
+  <link xref="Gio.Settings"/> schemas that are available.  The list must not be
+  modified or freed.</p>
 </item>
 </terms>
 

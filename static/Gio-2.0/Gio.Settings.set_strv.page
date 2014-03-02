@@ -43,7 +43,8 @@ having an array of strings type in the schema for <code>settings</code>.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if setting the key succeeded,
+    <code>false</code> if the key was not writable</p>
 </item>
 </terms>
 

@@ -41,7 +41,8 @@ function flags_get_first_value(flags_class: <link xref="GObject.FlagsClass">GObj
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the first <link xref="GObject.FlagsValue"/> which is set in
+         <code>value</code>, or <code>null</code> if none is set</p>
 </item>
 </terms>
 

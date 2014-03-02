@@ -26,7 +26,7 @@ function get_certificate(): <link xref="Gio.TlsCertificate">Gio.TlsCertificate</
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p><code>conn</code>'s certificate, or <code>null</code></p>
 </item>
 </terms>
 

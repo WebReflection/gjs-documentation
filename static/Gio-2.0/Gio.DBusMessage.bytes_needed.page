@@ -34,7 +34,9 @@ completely deserialize the D-Bus message stored at <code>blob</code>.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>Number of bytes needed or -1 if @error is set (e.g. if
+<code>blob</code> contains invalid data or not enough data is available to
+determine the size).</p>
 </item>
 </terms>
 

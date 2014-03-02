@@ -34,7 +34,7 @@ function lookup_signal(name: String): <link xref="Gio.DBusSignalInfo">Gio.DBusSi
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A <link xref="Gio.DBusSignalInfo"/> or <code>null</code> if not found. Do not free, it is owned by <code>info</code>.</p>
 </item>
 </terms>
 

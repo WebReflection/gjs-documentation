@@ -34,7 +34,7 @@ either always or never allowed.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the <link xref="Gio.SimplePermission"/>, as a <link xref="Gio.Permission"/></p>
 </item>
 </terms>
 

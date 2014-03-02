@@ -25,7 +25,7 @@ function is_readonly(): Boolean {
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if a mount point is read only.</p>
 </item>
 </terms>
 

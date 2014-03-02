@@ -43,7 +43,8 @@ the schema.</p>  <p>If <code>value</code> is floating then this function consume
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if setting the key succeeded,
+    <code>false</code> if the key was not writable</p>
 </item>
 </terms>
 

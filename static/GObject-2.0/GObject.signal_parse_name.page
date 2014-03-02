@@ -50,7 +50,7 @@ and @detail quark.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p>Whether the signal name could successfully be parsed and <code>signal_id_p</code> and <code>detail_p</code> contain valid return values.</p>
 </item>
 <item>
 <title><code>signal_id_p</code></title>

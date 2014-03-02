@@ -25,7 +25,8 @@ function get_auto_grow(): Boolean {
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the <code>stream</code>'s buffer automatically grows,
+<code>false</code> otherwise.</p>
 </item>
 </terms>
 

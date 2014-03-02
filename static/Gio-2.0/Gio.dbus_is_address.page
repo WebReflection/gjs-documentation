@@ -35,7 +35,7 @@ checks.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>string</code> is a valid D-Bus address, <code>false</code> otherwise.</p>
 </item>
 </terms>
 

@@ -29,7 +29,7 @@ relocatable schemas, this function will return <code>null</code>.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the path of the schema, or <code>null</code></p>
 </item>
 </terms>
 

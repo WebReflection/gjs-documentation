@@ -35,7 +35,12 @@ was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be return
 </item>
 <item>
 <title><code>return_value</code></title>
-
+  <p>a NUL terminated UTF-8 string with the
+ line that was read in (without the newlines).  Set <code>length</code> to a
+ #gsize to get the length of the read line.  On an error, it will
+ return <code>null</code> and @error will be set.  For UTF-8 conversion errors,
+ the set error domain is %G_CONVERT_ERROR.  If there's no content to
+ read, it will still return <code>null</code>, but @error won't be set.</p>
 </item>
 <item>
 <title><code>length</code></title>

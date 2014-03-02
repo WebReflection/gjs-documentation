@@ -26,7 +26,7 @@ of <code>interface_</code></p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>One or more flags from the <link xref="Gio.DBusInterfaceSkeletonFlags"/> enumeration.</p>
 </item>
 </terms>
 

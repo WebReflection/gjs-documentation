@@ -34,7 +34,8 @@ in <code>anchors</code> to verify certificate chains.</p>  <p>The certificates i
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the new
+<link xref="Gio.TlsFileDatabase"/>, or <code>null</code> on error</p>
 </item>
 </terms>
 

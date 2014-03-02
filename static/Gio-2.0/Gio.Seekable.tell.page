@@ -25,7 +25,7 @@ function tell(): Number(gint64) {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the offset from the beginning of the buffer.</p>
 </item>
 </terms>
 

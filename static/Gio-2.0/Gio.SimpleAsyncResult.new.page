@@ -54,7 +54,7 @@ this function returns.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.SimpleAsyncResult"/>.</p>
 </item>
 </terms>
 

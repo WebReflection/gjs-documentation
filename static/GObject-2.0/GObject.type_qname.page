@@ -33,7 +33,7 @@ function type_qname(type: GObject.Type): <link href="../GLib-2.0/GLib.Quark.html
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the type names quark or 0</p>
 </item>
 </terms>
 

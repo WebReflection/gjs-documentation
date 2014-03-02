@@ -25,7 +25,7 @@ function new(): <link xref="Gio.MountOperation">Gio.MountOperation</link> {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.MountOperation"/>.</p>
 </item>
 </terms>
 

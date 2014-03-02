@@ -27,7 +27,8 @@ closed by the remote peer. See
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p>whether the process is terminated when <code>connection</code> is
+    closed by the remote peer</p>
 </item>
 </terms>
 

@@ -26,7 +26,7 @@ which must be an IPv6 address.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the scope id field</p>
 </item>
 </terms>
 

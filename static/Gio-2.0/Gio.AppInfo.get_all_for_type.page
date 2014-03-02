@@ -36,7 +36,8 @@ including the recommended and fallback #GAppInfos. See
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p><link href="../GLib-2.0/GLib.List.html">GLib.List</link> of #GAppInfos
+    for given <code>content_type</code> or <code>null</code> on error.</p>
 </item>
 </terms>
 

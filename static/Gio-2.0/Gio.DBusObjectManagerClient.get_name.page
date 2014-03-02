@@ -26,7 +26,8 @@ connection.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A unique or well-known name. Do not free, the string
+belongs to <code>manager</code>.</p>
 </item>
 </terms>
 

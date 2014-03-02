@@ -26,7 +26,7 @@ have its state changed from outside callers.</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p>whether the action is enabled</p>
 </item>
 </terms>
 

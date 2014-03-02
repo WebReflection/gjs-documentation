@@ -36,7 +36,9 @@ was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be return
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.AppInfo"/> if the handle was found,
+    <code>null</code> if there were errors.
+    When you are done with it, release it with <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link></p>
 </item>
 </terms>
 

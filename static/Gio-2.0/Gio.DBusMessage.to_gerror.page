@@ -29,7 +29,7 @@ well as the first string item in <code>message</code>'s body.</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if @error was set, <code>false</code> otherwise.</p>
 </item>
 </terms>
 

@@ -39,7 +39,7 @@ with the same name but a different parameter type.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the parameter type</p>
 </item>
 </terms>
 

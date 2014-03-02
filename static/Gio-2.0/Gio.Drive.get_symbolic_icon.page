@@ -25,7 +25,8 @@ function get_symbolic_icon(): <link xref="Gio.Icon">Gio.Icon</link> {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>symbolic <link xref="Gio.Icon"/> for the <code>drive</code>.
+   Free the returned object with <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link>.</p>
 </item>
 </terms>
 

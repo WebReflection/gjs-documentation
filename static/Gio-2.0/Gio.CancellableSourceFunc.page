@@ -23,7 +23,7 @@ returned by <link xref="Gio.Cancellable.source_new"/>.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p>it should return <code>false</code> if the source should be removed.</p>
 </item>
 </terms>
 

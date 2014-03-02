@@ -34,7 +34,7 @@ g_settings_schema_list_keys().</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the <link xref="Gio.SettingsSchemaKey"/> for <code>name</code></p>
 </item>
 </terms>
 

@@ -33,7 +33,7 @@ function unix_mount_get_fs_type(mount_entry: <link xref="Gio.UnixMountEntry">Gio
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a string containing the file system type.</p>
 </item>
 </terms>
 

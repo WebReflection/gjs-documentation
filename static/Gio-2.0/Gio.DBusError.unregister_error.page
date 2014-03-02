@@ -49,7 +49,7 @@ function unregister_error(error_domain: <link href="../GLib-2.0/GLib.Quark.html"
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the association was destroyed, <code>false</code> if it wasn't found.</p>
 </item>
 </terms>
 

@@ -47,7 +47,7 @@ descended from the root type.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>immediate child of <code>root_type</code> and anchestor of <code>leaf_type</code></p>
 </item>
 </terms>
 

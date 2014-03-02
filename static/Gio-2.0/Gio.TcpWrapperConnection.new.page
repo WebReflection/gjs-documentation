@@ -41,7 +41,7 @@ function new(base_io_stream: <link xref="Gio.IOStream">Gio.IOStream</link>, sock
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the new <link xref="Gio.SocketConnection"/>.</p>
 </item>
 </terms>
 

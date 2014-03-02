@@ -33,7 +33,7 @@ function delete_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</lin
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the file was deleted. <code>false</code> otherwise.</p>
 </item>
 </terms>
 

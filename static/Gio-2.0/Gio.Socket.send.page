@@ -51,7 +51,8 @@ very common due to the way the underlying APIs work.)</p>  <p>On error -1 is ret
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>Number of bytes written (which may be less than <code>size</code>), or -1
+on error</p>
 </item>
 </terms>
 

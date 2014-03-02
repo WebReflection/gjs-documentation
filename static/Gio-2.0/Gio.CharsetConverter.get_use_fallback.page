@@ -25,7 +25,7 @@ function get_use_fallback(): Boolean {
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if fallbacks are used by <code>converter</code></p>
 </item>
 </terms>
 

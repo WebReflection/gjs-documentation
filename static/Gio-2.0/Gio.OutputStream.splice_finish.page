@@ -33,7 +33,10 @@ function splice_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</lin
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a #gssize of the number of bytes spliced. Note that if the
+    number of bytes spliced is greater than %G_MAXSSIZE, then that
+    will be returned, and there is no way to determine the actual
+    number of bytes spliced.</p>
 </item>
 </terms>
 

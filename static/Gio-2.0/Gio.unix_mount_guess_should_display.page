@@ -33,7 +33,7 @@ function unix_mount_guess_should_display(mount_entry: <link xref="Gio.UnixMountE
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>mount_entry</code> is deemed to be displayable.</p>
 </item>
 </terms>
 

@@ -44,7 +44,7 @@ then the parent sources will also be checked.</p>  <p>If the schema isn't found,
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.SettingsSchema"/></p>
 </item>
 </terms>
 

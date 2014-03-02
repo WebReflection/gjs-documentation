@@ -43,7 +43,8 @@ communicate with the server identified by <code>server_identity</code>.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the new
+<link xref="Gio.TlsClientConnection"/>, or <code>null</code> on error</p>
 </item>
 </terms>
 

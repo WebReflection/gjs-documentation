@@ -29,7 +29,7 @@ of speaking IPv4.</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if this socket can be used with IPv4.</p>
 </item>
 </terms>
 

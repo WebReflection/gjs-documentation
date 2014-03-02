@@ -34,7 +34,8 @@ See <link xref="Gio.File.find_enclosing_mount_async"/>.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p><link xref="Gio.Mount"/> for given <code>file</code> or <code>null</code> on error.
+    Free the returned object with <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link>.</p>
 </item>
 </terms>
 

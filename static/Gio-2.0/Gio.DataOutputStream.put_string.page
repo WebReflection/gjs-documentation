@@ -41,7 +41,7 @@ function put_string(str: String, cancellable: <link xref="Gio.Cancellable">Gio.C
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if @string was successfully added to the <code>stream</code>.</p>
 </item>
 </terms>
 

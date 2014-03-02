@@ -44,7 +44,8 @@ source address of the received packet.
 </item>
 <item>
 <title><code>return_value</code></title>
-
+  <p>Number of bytes read, or 0 if the connection was closed by
+the peer, or -1 on error</p>
 </item>
 <item>
 <title><code>address</code></title>

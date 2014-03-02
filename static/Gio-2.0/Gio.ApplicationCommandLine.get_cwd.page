@@ -28,7 +28,7 @@ long as <code>cmdline</code> exists.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the current directory, or <code>null</code></p>
 </item>
 </terms>
 

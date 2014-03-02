@@ -25,7 +25,8 @@ function get_client_connection_type(): GObject.Type {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link> of <code>backend</code>'s <link xref="Gio.TlsClientConnection"/>
+  implementation.</p>
 </item>
 </terms>
 

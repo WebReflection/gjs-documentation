@@ -41,7 +41,8 @@ function content_type_equals(type1: String, type2: String): Boolean {
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the two strings are identical or equivalent,
+    <code>false</code> otherwise.</p>
 </item>
 </terms>
 

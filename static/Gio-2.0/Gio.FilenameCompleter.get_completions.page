@@ -33,7 +33,8 @@ function get_completions(initial_text: String): Array(String) {
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>array of strings with possible completions for <code>initial_text</code>.
+This array must be freed by <link href="../GLib-2.0/GLib.strfreev.html">GLib.strfreev</link> when finished.</p>
 </item>
 </terms>
 

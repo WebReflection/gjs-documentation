@@ -62,7 +62,8 @@ without modifications</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if transformation and validation were successful,
+ <code>false</code> otherwise and <code>dest_value</code> is left untouched.</p>
 </item>
 </terms>
 

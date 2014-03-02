@@ -34,7 +34,8 @@ care") for <code>family</code>.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.InetAddress"/> corresponding to the "any" address
+for <code>family</code>.</p>
 </item>
 </terms>
 

@@ -86,7 +86,7 @@ directly if you want to set those.)</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.ProxyAddress"/></p>
 </item>
 </terms>
 

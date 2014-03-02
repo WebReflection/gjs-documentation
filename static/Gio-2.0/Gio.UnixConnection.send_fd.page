@@ -45,7 +45,7 @@ implementations.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p>a <code>true</code> on success, <code>null</code> on error.</p>
 </item>
 </terms>
 

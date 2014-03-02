@@ -56,7 +56,7 @@ values include 4096 and 8192.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link href="../GLib-2.0/GLib.Bytes.html">GLib.Bytes</link>, or <code>null</code> on error</p>
 </item>
 </terms>
 

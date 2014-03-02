@@ -33,7 +33,7 @@ function copy_finish(res: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>): 
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p>a <code>true</code> on success, <code>false</code> on error.</p>
 </item>
 </terms>
 

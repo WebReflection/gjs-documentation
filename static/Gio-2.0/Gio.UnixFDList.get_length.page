@@ -26,7 +26,7 @@ contained within).</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the length of <code>list</code></p>
 </item>
 </terms>
 

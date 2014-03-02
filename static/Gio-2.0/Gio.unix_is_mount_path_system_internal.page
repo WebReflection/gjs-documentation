@@ -36,7 +36,8 @@ casual user.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>mount_path</code> is considered an implementation detail
+    of the OS.</p>
 </item>
 </terms>
 

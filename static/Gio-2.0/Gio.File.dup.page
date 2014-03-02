@@ -27,7 +27,8 @@ the actual file or directory represented by the <link xref="Gio.File"/>; see
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.File"/> that is a duplicate
+    of the given <link xref="Gio.File"/>.</p>
 </item>
 </terms>
 

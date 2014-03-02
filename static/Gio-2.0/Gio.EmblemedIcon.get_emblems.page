@@ -25,7 +25,8 @@ function get_emblems(): Array(<link xref="Gio.Emblem">Gio.Emblem</link>) {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link href="../GLib-2.0/GLib.List.html">GLib.List</link> of
+    #GEmblems that is owned by <code>emblemed</code></p>
 </item>
 </terms>
 

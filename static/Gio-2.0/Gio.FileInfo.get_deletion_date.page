@@ -27,7 +27,7 @@ G_FILE_ATTRIBUTE_TRASH_DELETION_DATE attribute is unset, <code>null</code> is re
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link href="../GLib-2.0/GLib.DateTime.html">GLib.DateTime</link>, or <code>null</code>.</p>
 </item>
 </terms>
 

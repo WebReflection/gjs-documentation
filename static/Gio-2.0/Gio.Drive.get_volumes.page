@@ -26,7 +26,7 @@ its elements have been unreffed with <link href="../GObject-2.0/GObject.Object.u
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p><link href="../GLib-2.0/GLib.List.html">GLib.List</link> containing any <link xref="Gio.Volume"/> objects on the given <code>drive</code>.</p>
 </item>
 </terms>
 

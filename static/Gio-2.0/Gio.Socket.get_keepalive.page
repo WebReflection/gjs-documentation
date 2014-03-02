@@ -26,7 +26,7 @@ see <link xref="Gio.Socket.set_keepalive"/>.</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if keepalive is active, <code>false</code> otherwise.</p>
 </item>
 </terms>
 

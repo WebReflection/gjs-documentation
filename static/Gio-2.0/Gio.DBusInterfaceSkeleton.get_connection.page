@@ -25,7 +25,8 @@ function get_connection(): <link xref="Gio.DBusConnection">Gio.DBusConnection</l
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A <link xref="Gio.DBusConnection"/> or <code>null</code> if <code>interface_</code> is
+not exported anywhere. Do not free, the object belongs to <code>interface_</code>.</p>
 </item>
 </terms>
 

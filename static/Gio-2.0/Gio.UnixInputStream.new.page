@@ -42,7 +42,7 @@ when the stream is closed.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.UnixInputStream"/></p>
 </item>
 </terms>
 

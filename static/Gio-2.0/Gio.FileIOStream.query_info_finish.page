@@ -34,7 +34,7 @@ by <link xref="Gio.FileIOStream.query_info_async"/>.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A <link xref="Gio.FileInfo"/> for the finished query.</p>
 </item>
 </terms>
 

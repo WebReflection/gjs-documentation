@@ -27,7 +27,7 @@ function get_stdout_pipe(): <link xref="Gio.InputStream">Gio.InputStream</link> 
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the stdout pipe</p>
 </item>
 </terms>
 

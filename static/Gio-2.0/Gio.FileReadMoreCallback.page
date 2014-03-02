@@ -33,7 +33,7 @@ should be read, or <code>false</code> otherwise.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if more data should be read back. <code>false</code> otherwise.</p>
 </item>
 </terms>
 

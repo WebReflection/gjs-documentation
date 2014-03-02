@@ -50,7 +50,7 @@ checked with <link xref="Gio.Socket.check_connect_result"/>.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if connected, <code>false</code> on error.</p>
 </item>
 </terms>
 

@@ -27,7 +27,7 @@ highest-supported version of TLS; see
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p>whether <code>conn</code> will use SSL 3.0</p>
 </item>
 </terms>
 

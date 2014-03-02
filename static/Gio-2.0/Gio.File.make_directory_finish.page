@@ -34,7 +34,7 @@ function make_directory_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncRes
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> on successful directory creation, <code>false</code> otherwise.</p>
 </item>
 </terms>
 

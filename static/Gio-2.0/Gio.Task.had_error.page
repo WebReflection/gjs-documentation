@@ -25,7 +25,7 @@ function had_error(): Boolean {
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the task resulted in an error, <code>false</code> otherwise.</p>
 </item>
 </terms>
 

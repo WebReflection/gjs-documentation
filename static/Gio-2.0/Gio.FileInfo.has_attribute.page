@@ -33,7 +33,8 @@ function has_attribute(attribute: String): Boolean {
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if @Ginfo has an attribute named <code>attribute</code>,
+    <code>false</code> otherwise.</p>
 </item>
 </terms>
 

@@ -27,7 +27,7 @@ the lifetime of <code>message</code>.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the <link xref="Gio.UnixFDList"/> from <code>message</code></p>
 </item>
 </terms>
 

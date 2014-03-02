@@ -35,7 +35,7 @@ to register it with <link xref="Gio.resources_register"/>.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.Resource"/>, or <code>null</code> on error</p>
 </item>
 </terms>
 

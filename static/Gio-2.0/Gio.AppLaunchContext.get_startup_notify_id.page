@@ -43,7 +43,8 @@ function get_startup_notify_id(info: <link xref="Gio.AppInfo">Gio.AppInfo</link>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a startup notification ID for the application, or <code>null</code> if
+    not supported.</p>
 </item>
 </terms>
 

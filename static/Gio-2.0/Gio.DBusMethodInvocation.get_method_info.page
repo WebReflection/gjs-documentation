@@ -28,7 +28,7 @@ returned.  See <link xref="Gio.DBusMethodInvocation.get_property_info"/> and
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A <link xref="Gio.DBusMethodInfo"/> or <code>null</code>. Do not free, it is owned by <code>invocation</code>.</p>
 </item>
 </terms>
 

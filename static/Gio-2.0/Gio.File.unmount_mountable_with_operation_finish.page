@@ -35,7 +35,8 @@ with <link xref="Gio.File.unmount_mountable_with_operation"/>.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the operation finished successfully.
+    <code>false</code> otherwise.</p>
 </item>
 </terms>
 

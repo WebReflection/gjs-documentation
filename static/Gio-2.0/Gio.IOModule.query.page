@@ -37,7 +37,9 @@ lazy loading.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A <code>null</code>-terminated array of strings,
+    listing the supported extension points of the module. The array
+    must be suitable for freeing with <link href="../GLib-2.0/GLib.strfreev.html">GLib.strfreev</link>.</p>
 </item>
 </terms>
 

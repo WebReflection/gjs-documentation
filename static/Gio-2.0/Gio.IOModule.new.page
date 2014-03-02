@@ -34,7 +34,8 @@ shared library when in use.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.IOModule"/> from given <code>filename</code>,
+or <code>null</code> on error.</p>
 </item>
 </terms>
 

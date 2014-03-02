@@ -28,7 +28,7 @@ outgoing Internet connectivity via a NAT or firewall).</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>address</code> is a site-local address.</p>
 </item>
 </terms>
 

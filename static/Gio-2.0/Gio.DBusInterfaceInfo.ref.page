@@ -26,7 +26,7 @@ the reference count.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>The same <code>info</code>.</p>
 </item>
 </terms>
 

@@ -43,7 +43,7 @@ function new(application_id: String, flags: <link xref="Gio.ApplicationFlags">Gi
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.Application"/> instance</p>
 </item>
 </terms>
 

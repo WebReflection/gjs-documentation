@@ -26,7 +26,7 @@ function get_rehandshake_mode(): <link xref="Gio.TlsRehandshakeMode">Gio.TlsReha
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p><code>conn</code>'s rehandshaking mode</p>
 </item>
 </terms>
 

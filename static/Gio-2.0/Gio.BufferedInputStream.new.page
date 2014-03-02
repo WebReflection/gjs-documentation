@@ -34,7 +34,7 @@ a buffer set to the default size (4 kilobytes).</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.InputStream"/> for the given <code>base_stream</code>.</p>
 </item>
 </terms>
 

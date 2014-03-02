@@ -44,7 +44,8 @@ with <link xref="Gio.Cancellable.reset"/>.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>pollfd</code> was successfully initialized, <code>false</code> on
+         failure to prepare the cancellable.</p>
 </item>
 </terms>
 

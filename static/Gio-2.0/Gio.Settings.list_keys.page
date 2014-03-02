@@ -28,7 +28,7 @@ with it.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a list of the keys on <code>settings</code></p>
 </item>
 </terms>
 

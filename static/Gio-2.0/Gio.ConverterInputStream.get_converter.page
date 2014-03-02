@@ -25,7 +25,7 @@ function get_converter(): <link xref="Gio.Converter">Gio.Converter</link> {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the converter of the converter input stream</p>
 </item>
 </terms>
 

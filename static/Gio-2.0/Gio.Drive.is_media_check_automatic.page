@@ -25,7 +25,8 @@ function is_media_check_automatic(): Boolean {
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the <code>drive</code> is capabable of automatically detecting
+    media changes, <code>false</code> otherwise.</p>
 </item>
 </terms>
 

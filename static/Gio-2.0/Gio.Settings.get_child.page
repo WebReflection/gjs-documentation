@@ -36,7 +36,7 @@ in the schema of <code>settings</code> using a &lt;child&gt; element.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a 'child' settings object</p>
 </item>
 </terms>
 

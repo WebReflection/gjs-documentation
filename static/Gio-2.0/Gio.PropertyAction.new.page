@@ -52,7 +52,7 @@ until the action is destroyed.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.PropertyAction"/></p>
 </item>
 </terms>
 

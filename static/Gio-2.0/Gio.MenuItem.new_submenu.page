@@ -42,7 +42,7 @@ function new_submenu(label: String, submenu: <link xref="Gio.MenuModel">Gio.Menu
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.MenuItem"/></p>
 </item>
 </terms>
 

@@ -25,7 +25,8 @@ function get_choice(): Number(gint) {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>an integer containing an index of the user's choice from
+the choice's list, or %0.</p>
 </item>
 </terms>
 

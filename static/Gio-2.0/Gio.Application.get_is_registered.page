@@ -26,7 +26,7 @@ successfully called.</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>application</code> is registered</p>
 </item>
 </terms>
 

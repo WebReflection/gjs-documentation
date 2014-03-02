@@ -28,7 +28,7 @@ function will return <code>true</code> with @dest set appropriately.</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the error was propagated to @dest. <code>false</code> otherwise.</p>
 </item>
 </terms>
 

@@ -43,7 +43,9 @@ ignored.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.SocketAddress"/> (owned by the caller), or <code>null</code> on
+    error (in which case *@error will be set) or if there are no
+    more addresses.</p>
 </item>
 </terms>
 

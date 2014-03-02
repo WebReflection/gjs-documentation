@@ -33,7 +33,7 @@ function has_connection(connection: <link xref="Gio.DBusConnection">Gio.DBusConn
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>interface_</code> is exported on <code>connection</code>, <code>false</code> otherwise.</p>
 </item>
 </terms>
 

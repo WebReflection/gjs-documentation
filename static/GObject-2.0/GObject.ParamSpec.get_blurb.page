@@ -25,7 +25,7 @@ function get_blurb(): String {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the short description of <code>pspec</code>.</p>
 </item>
 </terms>
 

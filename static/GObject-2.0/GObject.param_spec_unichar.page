@@ -67,7 +67,7 @@ property. <link xref="GObject.Value"/> structures for this property can be acces
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly created parameter specification</p>
 </item>
 </terms>
 

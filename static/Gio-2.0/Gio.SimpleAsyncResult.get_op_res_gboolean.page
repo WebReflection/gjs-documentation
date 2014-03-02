@@ -25,7 +25,8 @@ function get_op_res_gboolean(): Boolean {
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the operation's result was <code>true</code>, <code>false</code>
+    if the operation's result was <code>false</code>.</p>
 </item>
 </terms>
 

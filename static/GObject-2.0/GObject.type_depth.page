@@ -34,7 +34,7 @@ includes the type itself, so that e.g. a fundamental type has depth 1.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the depth of <code>type</code></p>
 </item>
 </terms>
 

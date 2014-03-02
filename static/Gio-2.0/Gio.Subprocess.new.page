@@ -41,7 +41,8 @@ function new(argv: Array(String), flags: <link xref="Gio.SubprocessFlags">Gio.Su
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A newly created <link xref="Gio.Subprocess"/>, or <code>null</code> on error (and @error
+  will be set)</p>
 </item>
 </terms>
 

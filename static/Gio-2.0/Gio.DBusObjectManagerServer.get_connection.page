@@ -25,7 +25,9 @@ function get_connection(): <link xref="Gio.DBusConnection">Gio.DBusConnection</l
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A <link xref="Gio.DBusConnection"/> object or <code>null</code> if
+  <code>manager</code> isn't exported on a connection. The returned object should
+  be freed with <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link>.</p>
 </item>
 </terms>
 

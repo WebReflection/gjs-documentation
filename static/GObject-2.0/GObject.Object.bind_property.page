@@ -68,7 +68,9 @@ will be updated as well.</p>  <p>The binding will automatically be removed when 
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the <link xref="GObject.Binding"/> instance representing the
+    binding between the two <link xref="GObject.Object"/> instances. The binding is released
+    whenever the <link xref="GObject.Binding"/> reference count reaches zero.</p>
 </item>
 </terms>
 

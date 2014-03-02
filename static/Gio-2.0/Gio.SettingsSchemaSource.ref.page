@@ -25,7 +25,7 @@ function ref(): <link xref="Gio.SettingsSchemaSource">Gio.SettingsSchemaSource</
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new reference to <code>source</code></p>
 </item>
 </terms>
 

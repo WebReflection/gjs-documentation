@@ -61,7 +61,7 @@ have.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.Settings"/> object</p>
 </item>
 </terms>
 

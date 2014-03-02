@@ -35,7 +35,9 @@ information about volume identifiers.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly allocated string containing the
+    requested identfier, or <code>null</code> if the <link xref="Gio.Volume"/>
+    doesn't have this kind of identifier</p>
 </item>
 </terms>
 

@@ -33,7 +33,7 @@ function lookup_interface(name: String): <link xref="Gio.DBusInterfaceInfo">Gio.
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A <link xref="Gio.DBusInterfaceInfo"/> or <code>null</code> if not found. Do not free, it is owned by <code>info</code>.</p>
 </item>
 </terms>
 

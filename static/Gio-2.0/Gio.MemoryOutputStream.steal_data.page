@@ -28,7 +28,7 @@ freed using the free function set in <code>ostream</code>'s
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the stream's data</p>
 </item>
 </terms>
 

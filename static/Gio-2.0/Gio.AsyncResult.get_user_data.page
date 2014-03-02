@@ -25,7 +25,7 @@ function get_user_data(): void {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the user data for <code>res</code>.</p>
 </item>
 </terms>
 

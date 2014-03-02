@@ -29,7 +29,7 @@ on the socket.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the file descriptor of the socket.</p>
 </item>
 </terms>
 

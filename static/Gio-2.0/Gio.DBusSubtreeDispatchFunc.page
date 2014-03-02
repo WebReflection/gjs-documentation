@@ -43,7 +43,7 @@ segment of the object path (ie: it never contains a slash).</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A <link xref="Gio.DBusInterfaceVTable"/> or <code>null</code> if you don't want to handle the methods.</p>
 </item>
 </terms>
 

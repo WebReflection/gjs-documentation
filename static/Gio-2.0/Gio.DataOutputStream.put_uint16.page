@@ -41,7 +41,7 @@ function put_uint16(data: Number(guint16), cancellable: <link xref="Gio.Cancella
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>data</code> was successfully added to the <code>stream</code>.</p>
 </item>
 </terms>
 

@@ -36,7 +36,9 @@ it, then @value is checked against the type of the property.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A reference to the <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> instance that holds the value
+for <code>property_name</code> or <code>null</code> if the value is not in the cache. The
+returned reference must be freed with <link href="../GLib-2.0/GLib.Variant.unref.html">GLib.Variant.prototype.unref</link>.</p>
 </item>
 </terms>
 

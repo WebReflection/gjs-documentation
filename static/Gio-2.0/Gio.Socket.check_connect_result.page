@@ -27,7 +27,7 @@ used in non-blocking mode.</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if no error, <code>false</code> otherwise, setting @error to the error</p>
 </item>
 </terms>
 

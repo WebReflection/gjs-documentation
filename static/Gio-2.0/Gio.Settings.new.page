@@ -37,7 +37,7 @@ on the context.  See <link href="../GLib-2.0/GLib.MainContext.push_thread_defaul
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="Gio.Settings"/> object</p>
 </item>
 </terms>
 

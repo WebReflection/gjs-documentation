@@ -33,7 +33,7 @@ function is_writable(name: String): Boolean {
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the key <code>name</code> is writable</p>
 </item>
 </terms>
 

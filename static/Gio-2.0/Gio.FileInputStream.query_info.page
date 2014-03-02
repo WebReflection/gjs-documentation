@@ -45,7 +45,7 @@ any other operations on the stream will fail with <link xref="Gio.IOErrorEnum"/>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="Gio.FileInfo"/>, or <code>null</code> on error.</p>
 </item>
 </terms>
 

@@ -26,7 +26,7 @@ is used as scheme.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p><code>srv</code>'s scheme name</p>
 </item>
 </terms>
 

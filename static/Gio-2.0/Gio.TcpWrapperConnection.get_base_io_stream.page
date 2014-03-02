@@ -25,7 +25,7 @@ function get_base_io_stream(): <link xref="Gio.IOStream">Gio.IOStream</link> {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p><code>conn</code>'s base <link xref="Gio.IOStream"/></p>
 </item>
 </terms>
 

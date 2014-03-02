@@ -49,7 +49,7 @@ data in the output stream.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>Number of bytes written, or -1 on error</p>
 </item>
 </terms>
 

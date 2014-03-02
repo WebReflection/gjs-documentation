@@ -26,7 +26,7 @@ function is_connected(): Boolean {
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p>whether <code>connection</code> is connected</p>
 </item>
 </terms>
 

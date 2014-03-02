@@ -27,7 +27,7 @@ the stream directly.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the stream used for IO</p>
 </item>
 </terms>
 

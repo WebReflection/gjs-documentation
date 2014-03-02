@@ -57,7 +57,7 @@ on information provided in <code>launch_context</code>.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> on successful launch, <code>false</code> otherwise.</p>
 </item>
 </terms>
 

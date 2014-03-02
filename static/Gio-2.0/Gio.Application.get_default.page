@@ -27,7 +27,7 @@ this by using <link xref="Gio.Application.set_default"/>.</p>  <p>If there is no
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the default application for this process, or <code>null</code></p>
 </item>
 </terms>
 

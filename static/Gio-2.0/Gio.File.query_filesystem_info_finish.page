@@ -34,7 +34,9 @@ See <link xref="Gio.File.query_filesystem_info_async"/>.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p><link xref="Gio.FileInfo"/> for given <code>file</code>
+    or <code>null</code> on error.
+    Free the returned object with <link href="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</link>.</p>
 </item>
 </terms>
 

@@ -57,7 +57,7 @@ was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be return
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>false</code> if there was any error, <code>true</code> otherwise.</p>
 </item>
 </terms>
 
