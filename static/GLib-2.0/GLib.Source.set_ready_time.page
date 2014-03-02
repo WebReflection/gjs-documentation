@@ -33,7 +33,8 @@ so yourself, from the source dispatch function.</p>  <p>Note that if you have a 
 suggests that it will be delivered first but the priority for the
 other suggests that it would be delivered first, and the ready time
 for both sources is reached during the same main context iteration
-then the order of dispatch is undefined.</p>
+then the order of dispatch is undefined.</p>  <p>This API is only intended to be used by implementations of <link xref="GLib.Source"/>.
+Do not call this API on a <link xref="GLib.Source"/> that you did not create.</p>
   <p>Since 2.36</p>
 <terms>
 <item>

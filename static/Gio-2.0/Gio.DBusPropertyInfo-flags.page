@@ -11,7 +11,7 @@
   </info>
   <title>Gio.DBusPropertyInfo.flags</title>
   <synopsis><code mime="text/x-gjs">
-DBusPropertyInfo.flags: <link xref="Gio.DBusPropertyInfoFlags">Gio.DBusPropertyInfoFlags</link> (Read)
+DBusPropertyInfo.flags: <link xref="Gio.DBusPropertyInfoFlags">Gio.DBusPropertyInfoFlags</link> (Read / Write)
   </code></synopsis>
   <p>Access control flags for the property.</p>
 

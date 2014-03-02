@@ -20,7 +20,8 @@ function dispatch(): void {
     // Gjs wrapper for g_main_context_dispatch()
 }
   </code></synopsis>
-  <p>Dispatches all pending sources.</p>
+  <p>Dispatches all pending sources.</p>  <p>You must have successfully acquired the context with
+<link xref="GLib.MainContext.acquire"/> before you may call this function.</p>
 
 
 </page>

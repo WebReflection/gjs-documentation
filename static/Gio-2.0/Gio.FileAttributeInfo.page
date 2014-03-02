@@ -14,6 +14,7 @@ const Gio = imports.gi.Gio;
 
 let fileAttributeInfo = new Gio.FileAttributeInfo({
     <link xref='Gio.FileAttributeInfo-type'>type</link>: value
+    <link xref='Gio.FileAttributeInfo-flags'>flags</link>: value
 });
   </code></synopsis>
   <p>Information about a specific attribute.</p>

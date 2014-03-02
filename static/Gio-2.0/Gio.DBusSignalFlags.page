@@ -1,14 +1,42 @@
 <?xml version="1.0"?>
 <page id="Gio.DBusSignalFlags"
-      type="topic"
-      style="default"
+      type="guide"
+      style="enum"
       xmlns="http://projectmallard.org/1.0/"
       xmlns:api="http://projectmallard.org/experimental/api/"
       xmlns:ui="http://projectmallard.org/1.0/ui/">
   <info>
-    <link xref="index" group="default" type="guide"/>
+    <link xref="index" group="enum" type="guide"/>
   </info>
   <title>Gio.DBusSignalFlags</title>
   <p>Flags used when subscribing to signals via <link xref="Gio.DBusConnection.signal_subscribe"/>.</p>
   <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>DBusSignalFlags.NONE</code></title>
+  <p>No flags set.</p>
+</item>
+<item>
+<title><code>DBusSignalFlags.NO_MATCH_RULE</code></title>
+  <p>Don't actually send the AddMatch
+D-Bus call for this signal subscription.  This gives you more control
+over which match rules you add (but you must add them manually).</p>
+</item>
+<item>
+<title><code>DBusSignalFlags.MATCH_ARG0_NAMESPACE</code></title>
+  <p>Match first arguments that
+contain a bus or interface name with the given namespace.</p>
+</item>
+<item>
+<title><code>DBusSignalFlags.MATCH_ARG0_PATH</code></title>
+  <p>Match first arguments that
+contain an object path that is either equivalent to the given path,
+or one of the paths is a subpath of the other.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
 </page>

@@ -25,7 +25,8 @@ function prepare(priority: Number(gint)): Boolean {
 }
   </code></synopsis>
   <p>Prepares to poll sources within a main loop. The resulting information
-for polling is determined by calling g_main_context_query ().</p>
+for polling is determined by calling g_main_context_query ().</p>  <p>You must have successfully acquired the context with
+<link xref="GLib.MainContext.acquire"/> before you may call this function.</p>
 
 <terms>
 <item>

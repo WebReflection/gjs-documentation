@@ -1,14 +1,31 @@
 <?xml version="1.0"?>
 <page id="Gio.DBusSubtreeFlags"
-      type="topic"
-      style="default"
+      type="guide"
+      style="enum"
       xmlns="http://projectmallard.org/1.0/"
       xmlns:api="http://projectmallard.org/experimental/api/"
       xmlns:ui="http://projectmallard.org/1.0/ui/">
   <info>
-    <link xref="index" group="default" type="guide"/>
+    <link xref="index" group="enum" type="guide"/>
   </info>
   <title>Gio.DBusSubtreeFlags</title>
   <p>Flags passed to <link xref="Gio.DBusConnection.register_subtree"/>.</p>
   <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>DBusSubtreeFlags.NONE</code></title>
+  <p>No flags set.</p>
+</item>
+<item>
+<title><code>DBusSubtreeFlags.DISPATCH_TO_UNENUMERATED_NODES</code></title>
+  <p>Method calls to objects not in the enumerated range
+                                                      will still be dispatched. This is useful if you want
+                                                      to dynamically spawn objects in the subtree.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
 </page>

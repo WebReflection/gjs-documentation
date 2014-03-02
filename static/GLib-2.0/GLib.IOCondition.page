@@ -1,15 +1,47 @@
 <?xml version="1.0"?>
 <page id="GLib.IOCondition"
-      type="topic"
-      style="default"
+      type="guide"
+      style="enum"
       xmlns="http://projectmallard.org/1.0/"
       xmlns:api="http://projectmallard.org/experimental/api/"
       xmlns:ui="http://projectmallard.org/1.0/ui/">
   <info>
-    <link xref="index" group="default" type="guide"/>
+    <link xref="index" group="enum" type="guide"/>
   </info>
   <title>GLib.IOCondition</title>
   <p>A bitwise combination representing a condition to watch for on an
 event source.</p>
 
+<terms>
+<item>
+<title><code>IOCondition.IN</code></title>
+  <p>There is data to read.</p>
+</item>
+<item>
+<title><code>IOCondition.OUT</code></title>
+  <p>Data can be written (without blocking).</p>
+</item>
+<item>
+<title><code>IOCondition.PRI</code></title>
+  <p>There is urgent data to read.</p>
+</item>
+<item>
+<title><code>IOCondition.ERR</code></title>
+  <p>Error condition.</p>
+</item>
+<item>
+<title><code>IOCondition.HUP</code></title>
+  <p>Hung up (the connection has been broken, usually for
+           pipes and sockets).</p>
+</item>
+<item>
+<title><code>IOCondition.NVAL</code></title>
+  <p>Invalid request. The file descriptor is not open.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
 </page>

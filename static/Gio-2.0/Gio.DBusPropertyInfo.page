@@ -14,6 +14,7 @@ const Gio = imports.gi.Gio;
 
 let dBusPropertyInfo = new Gio.DBusPropertyInfo({
     <link xref='Gio.DBusPropertyInfo-ref_count'>ref_count</link>: value
+    <link xref='Gio.DBusPropertyInfo-flags'>flags</link>: value
     <link xref='Gio.DBusPropertyInfo-annotations'>annotations</link>: value
 });
   </code></synopsis>

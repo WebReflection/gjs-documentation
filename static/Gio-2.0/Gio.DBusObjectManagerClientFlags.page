@@ -1,14 +1,32 @@
 <?xml version="1.0"?>
 <page id="Gio.DBusObjectManagerClientFlags"
-      type="topic"
-      style="default"
+      type="guide"
+      style="enum"
       xmlns="http://projectmallard.org/1.0/"
       xmlns:api="http://projectmallard.org/experimental/api/"
       xmlns:ui="http://projectmallard.org/1.0/ui/">
   <info>
-    <link xref="index" group="default" type="guide"/>
+    <link xref="index" group="enum" type="guide"/>
   </info>
   <title>Gio.DBusObjectManagerClientFlags</title>
   <p>Flags used when constructing a <link xref="Gio.DBusObjectManagerClient"/>.</p>
   <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>DBusObjectManagerClientFlags.NONE</code></title>
+  <p>No flags set.</p>
+</item>
+<item>
+<title><code>DBusObjectManagerClientFlags.DO_NOT_AUTO_START</code></title>
+  <p>If not set and the
+  manager is for a well-known name, then request the bus to launch
+  an owner for the name if no-one owns the name. This flag can only
+  be used in managers for well-known names.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
 </page>

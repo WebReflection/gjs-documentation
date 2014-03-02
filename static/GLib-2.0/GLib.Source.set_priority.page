@@ -27,7 +27,9 @@ function set_priority(priority: Number(gint)): void {
   <p>Sets the priority of a source. While the main loop is being run, a
 source will be dispatched if it is ready to be dispatched and no
 sources at a higher (numerically smaller) priority are ready to be
-dispatched.</p>
+dispatched.</p>  <p>A child source always has the same priority as its parent.  It is not
+permitted to change the priority of a source once it has been added
+as a child of another source.</p>
 
 <terms>
 <item>

@@ -1,12 +1,12 @@
 <?xml version="1.0"?>
 <page id="Gio.TlsCertificateFlags"
-      type="topic"
-      style="default"
+      type="guide"
+      style="enum"
       xmlns="http://projectmallard.org/1.0/"
       xmlns:api="http://projectmallard.org/experimental/api/"
       xmlns:ui="http://projectmallard.org/1.0/ui/">
   <info>
-    <link xref="index" group="default" type="guide"/>
+    <link xref="index" group="enum" type="guide"/>
   </info>
   <title>Gio.TlsCertificateFlags</title>
   <p>A set of flags describing TLS certification validation. This can be
@@ -15,4 +15,50 @@ used to set which validation steps to perform (eg, with
 a particular certificate was rejected (eg, in
 <link xref="Gio.TlsConnection-accept-certificate"/>).</p>
   <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>TlsCertificateFlags.UNKNOWN_CA</code></title>
+  <p>The signing certificate authority is
+  not known.</p>
+</item>
+<item>
+<title><code>TlsCertificateFlags.BAD_IDENTITY</code></title>
+  <p>The certificate does not match the
+  expected identity of the site that it was retrieved from.</p>
+</item>
+<item>
+<title><code>TlsCertificateFlags.NOT_ACTIVATED</code></title>
+  <p>The certificate's activation time
+  is still in the future</p>
+</item>
+<item>
+<title><code>TlsCertificateFlags.EXPIRED</code></title>
+  <p>The certificate has expired</p>
+</item>
+<item>
+<title><code>TlsCertificateFlags.REVOKED</code></title>
+  <p>The certificate has been revoked
+  according to the <link xref="Gio.TlsConnection"/>'s certificate revocation list.</p>
+</item>
+<item>
+<title><code>TlsCertificateFlags.INSECURE</code></title>
+  <p>The certificate's algorithm is
+  considered insecure.</p>
+</item>
+<item>
+<title><code>TlsCertificateFlags.GENERIC_ERROR</code></title>
+  <p>Some other error occurred validating
+  the certificate</p>
+</item>
+<item>
+<title><code>TlsCertificateFlags.VALIDATE_ALL</code></title>
+  <p>the combination of all of the above
+  flags</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
 </page>

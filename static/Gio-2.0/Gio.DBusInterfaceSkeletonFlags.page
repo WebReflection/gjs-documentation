@@ -1,14 +1,32 @@
 <?xml version="1.0"?>
 <page id="Gio.DBusInterfaceSkeletonFlags"
-      type="topic"
-      style="default"
+      type="guide"
+      style="enum"
       xmlns="http://projectmallard.org/1.0/"
       xmlns:api="http://projectmallard.org/experimental/api/"
       xmlns:ui="http://projectmallard.org/1.0/ui/">
   <info>
-    <link xref="index" group="default" type="guide"/>
+    <link xref="index" group="enum" type="guide"/>
   </info>
   <title>Gio.DBusInterfaceSkeletonFlags</title>
   <p>Flags describing the behavior of a <link xref="Gio.DBusInterfaceSkeleton"/> instance.</p>
   <p>Since 2.30</p>
+<terms>
+<item>
+<title><code>DBusInterfaceSkeletonFlags.NONE</code></title>
+  <p>No flags set.</p>
+</item>
+<item>
+<title><code>DBusInterfaceSkeletonFlags.HANDLE_METHOD_INVOCATIONS_IN_THREAD</code></title>
+  <p>Each method invocation is handled in
+  a thread dedicated to the invocation. This means that the method implementation can use blocking IO
+  without blocking any other part of the process. It also means that the method implementation must
+  use locking to access data structures used by other threads.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
 </page>

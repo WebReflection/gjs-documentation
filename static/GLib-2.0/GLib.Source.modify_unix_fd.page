@@ -29,7 +29,8 @@ function modify_unix_fd(tag: void, new_events: <link xref="GLib.IOCondition">GLi
 }
   </code></synopsis>
   <p>Updates the event mask to watch for the fd identified by <code>tag</code>.</p>  <p><code>tag</code> is the tag returned from <link xref="GLib.Source.add_unix_fd"/>.</p>  <p>If you want to remove a fd, don't set its event mask to zero.
-Instead, call <link xref="GLib.Source.remove_unix_fd"/>.</p>  <p>As the name suggests, this function is not available on Windows.</p>
+Instead, call <link xref="GLib.Source.remove_unix_fd"/>.</p>  <p>This API is only intended to be used by implementations of <link xref="GLib.Source"/>.
+Do not call this API on a <link xref="GLib.Source"/> that you did not create.</p>  <p>As the name suggests, this function is not available on Windows.</p>
   <p>Since 2.36</p>
 <terms>
 <item>

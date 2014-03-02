@@ -10,7 +10,7 @@
   </info>
   <title>Gio.SettingsBindSetMapping</title>
   <synopsis><code mime="text/x-gjs">
-function onSettingsBindSetMapping(value: <link href="../GObject-2.0/GObject.Value.html">GObject.Value</link>, expected_type: <link href="../GLib-2.0/GLib.VariantType.html">GLib.VariantType</link>): <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> {
+function onSettingsBindSetMapping(value: Any, expected_type: <link href="../GLib-2.0/GLib.VariantType.html">GLib.VariantType</link>): <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> {
 }
   </code></synopsis>
   <p>The type for the function that is used to convert an object property

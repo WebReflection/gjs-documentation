@@ -1,15 +1,50 @@
 <?xml version="1.0"?>
 <page id="GLib.TraverseFlags"
-      type="topic"
-      style="default"
+      type="guide"
+      style="enum"
       xmlns="http://projectmallard.org/1.0/"
       xmlns:api="http://projectmallard.org/experimental/api/"
       xmlns:ui="http://projectmallard.org/1.0/ui/">
   <info>
-    <link xref="index" group="default" type="guide"/>
+    <link xref="index" group="enum" type="guide"/>
   </info>
   <title>GLib.TraverseFlags</title>
   <p>Specifies which nodes are visited during several of the tree
 functions, including <link xref="GLib.Node.traverse"/> and <link xref="GLib.Node.find"/>.</p>
 
+<terms>
+<item>
+<title><code>TraverseFlags.LEAVES</code></title>
+  <p>only leaf nodes should be visited. This name has
+                    been introduced in 2.6, for older version use
+                    <link xref="GLib.TraverseFlags"/>.leafs.</p>
+</item>
+<item>
+<title><code>TraverseFlags.NON_LEAVES</code></title>
+  <p>only non-leaf nodes should be visited. This
+                        name has been introduced in 2.6, for older
+                        version use <link xref="GLib.TraverseFlags"/>.non_leafs.</p>
+</item>
+<item>
+<title><code>TraverseFlags.ALL</code></title>
+  <p>all nodes should be visited.</p>
+</item>
+<item>
+<title><code>TraverseFlags.MASK</code></title>
+  <p>a mask of all traverse flags.</p>
+</item>
+<item>
+<title><code>TraverseFlags.LEAFS</code></title>
+  <p>identical to <link xref="GLib.TraverseFlags"/>.leaves.</p>
+</item>
+<item>
+<title><code>TraverseFlags.NON_LEAFS</code></title>
+  <p>identical to <link xref="GLib.TraverseFlags"/>.non_leaves.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
 </page>

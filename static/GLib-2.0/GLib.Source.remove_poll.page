@@ -25,7 +25,8 @@ function remove_poll(fd: <link xref="GLib.PollFD">GLib.PollFD</link>): void {
 }
   </code></synopsis>
   <p>Removes a file descriptor from the set of file descriptors polled for
-this source.</p>
+this source.</p>  <p>This API is only intended to be used by implementations of <link xref="GLib.Source"/>.
+Do not call this API on a <link xref="GLib.Source"/> that you did not create.</p>
 
 <terms>
 <item>

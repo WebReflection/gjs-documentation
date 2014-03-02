@@ -40,7 +40,7 @@ function convert_with_iconv(str: String, len: Number(gssize), converter: <link x
     // Gjs wrapper for g_convert_with_iconv()
 }
   </code></synopsis>
-  <p>Converts a string from one character set to another.</p>  <p>Note that you should use <link xref="GLib.IConv."/> for streaming conversions.
+  <p>Converts a string from one character set to another.</p>  <p>Note that you should use <link xref="GLib.iconv"/> for streaming conversions.
 Despite the fact that @byes_read can return information about partial
 characters, the g_convert_... functions are not generally suitable
 for streaming. If the underlying converter maintains internal state,

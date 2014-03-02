@@ -28,7 +28,8 @@ function add_poll(fd: <link xref="GLib.PollFD">GLib.PollFD</link>): void {
 this source. This is usually combined with <link xref="GLib.Source.new"/> to add an
 event source. The event source's check function will typically test
 the @revents field in the <link xref="GLib.PollFD"/> struct and return <code>true</code> if events need
-to be processed.</p>  <p>Using this API forces the linear scanning of event sources on each
+to be processed.</p>  <p>This API is only intended to be used by implementations of <link xref="GLib.Source"/>.
+Do not call this API on a <link xref="GLib.Source"/> that you did not create.</p>  <p>Using this API forces the linear scanning of event sources on each
 main loop iteration.  Newly-written event sources should try to use
 <link xref="GLib.Source.add_unix_fd"/> instead of this API.</p>
 

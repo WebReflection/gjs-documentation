@@ -1,14 +1,50 @@
 <?xml version="1.0"?>
 <page id="Gio.DBusProxyFlags"
-      type="topic"
-      style="default"
+      type="guide"
+      style="enum"
       xmlns="http://projectmallard.org/1.0/"
       xmlns:api="http://projectmallard.org/experimental/api/"
       xmlns:ui="http://projectmallard.org/1.0/ui/">
   <info>
-    <link xref="index" group="default" type="guide"/>
+    <link xref="index" group="enum" type="guide"/>
   </info>
   <title>Gio.DBusProxyFlags</title>
   <p>Flags used when constructing an instance of a <link xref="Gio.DBusProxy"/> derived class.</p>
   <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>DBusProxyFlags.NONE</code></title>
+  <p>No flags set.</p>
+</item>
+<item>
+<title><code>DBusProxyFlags.DO_NOT_LOAD_PROPERTIES</code></title>
+  <p>Don't load properties.</p>
+</item>
+<item>
+<title><code>DBusProxyFlags.DO_NOT_CONNECT_SIGNALS</code></title>
+  <p>Don't connect to signals on the remote object.</p>
+</item>
+<item>
+<title><code>DBusProxyFlags.DO_NOT_AUTO_START</code></title>
+  <p>If not set and the proxy if for a well-known name,
+then request the bus to launch an owner for the name if no-one owns the name. This flag can
+only be used in proxies for well-known names.</p>
+</item>
+<item>
+<title><code>DBusProxyFlags.GET_INVALIDATED_PROPERTIES</code></title>
+  <p>If set, the property value for any &lt;emphasis&gt;invalidated property&lt;/emphasis&gt; will be (asynchronously) retrieved upon receiving the &lt;ulink url="http://dbus.freedesktop.org/doc/dbus-specification.html#standard-interfaces-properties"&gt;PropertiesChanged&lt;/ulink&gt; D-Bus signal and the property will not cause emission of the <link xref="Gio.DBusProxy-g-properties-changed"/> signal. When the value is received the <link xref="Gio.DBusProxy-g-properties-changed"/> signal is emitted for the property along with the retrieved value. Since 2.32.</p>
+</item>
+<item>
+<title><code>DBusProxyFlags.DO_NOT_AUTO_START_AT_CONSTRUCTION</code></title>
+  <p>If the proxy is for a well-known name,
+do not ask the bus to launch an owner during proxy initialization, but allow it to be
+autostarted by a method call. This flag is only meaningful in proxies for well-known names,
+and only if %G_DBUS_PROXY_FLAGS_DO_NOT_AUTOSTART is not also specified.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
 </page>

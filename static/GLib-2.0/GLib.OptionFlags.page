@@ -1,14 +1,63 @@
 <?xml version="1.0"?>
 <page id="GLib.OptionFlags"
-      type="topic"
-      style="default"
+      type="guide"
+      style="enum"
       xmlns="http://projectmallard.org/1.0/"
       xmlns:api="http://projectmallard.org/experimental/api/"
       xmlns:ui="http://projectmallard.org/1.0/ui/">
   <info>
-    <link xref="index" group="default" type="guide"/>
+    <link xref="index" group="enum" type="guide"/>
   </info>
   <title>GLib.OptionFlags</title>
   <p>Flags which modify individual options.</p>
 
+<terms>
+<item>
+<title><code>OptionFlags.HIDDEN</code></title>
+  <p>The option doesn't appear in &lt;option&gt;--help&lt;/option&gt;
+ output.</p>
+</item>
+<item>
+<title><code>OptionFlags.IN_MAIN</code></title>
+  <p>The option appears in the main section of the
+ &lt;option&gt;--help&lt;/option&gt; output, even if it is defined in a group.</p>
+</item>
+<item>
+<title><code>OptionFlags.REVERSE</code></title>
+  <p>For options of the <link xref="GLib.OptionArg"/>.none kind, this flag
+ indicates that the sense of the option is reversed.</p>
+</item>
+<item>
+<title><code>OptionFlags.NO_ARG</code></title>
+  <p>For options of the <link xref="GLib.OptionArg"/>.callback kind,
+ this flag indicates that the callback does not take any argument
+ (like a <link xref="GLib.OptionArg"/>.none option). Since 2.8</p>
+</item>
+<item>
+<title><code>OptionFlags.FILENAME</code></title>
+  <p>For options of the <link xref="GLib.OptionArg"/>.callback
+ kind, this flag indicates that the argument should be passed to the
+ callback in the GLib filename encoding rather than UTF-8. Since 2.8</p>
+</item>
+<item>
+<title><code>OptionFlags.OPTIONAL_ARG</code></title>
+  <p>For options of the <link xref="GLib.OptionArg"/>.callback
+ kind, this flag indicates that the argument supply is optional. If no argument
+ is given then data of %GOptionParseFunc will be set to NULL. Since 2.8</p>
+</item>
+<item>
+<title><code>OptionFlags.NOALIAS</code></title>
+  <p>This flag turns off the automatic conflict resolution
+ which prefixes long option names with &lt;literal&gt;groupname-&lt;/literal&gt; if
+ there is a conflict. This option should only be used in situations where
+ aliasing is necessary to model some legacy commandline interface. It is
+ not safe to use this option, unless all option groups are under your
+ direct control. Since 2.8.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
 </page>

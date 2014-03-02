@@ -24,7 +24,8 @@ function query(max_priority: Number(gint)): [return_value: Number(gint), timeout
     // Gjs wrapper for g_main_context_query()
 }
   </code></synopsis>
-  <p>Determines information necessary to poll this main loop.</p>
+  <p>Determines information necessary to poll this main loop.</p>  <p>You must have successfully acquired the context with
+<link xref="GLib.MainContext.acquire"/> before you may call this function.</p>
 
 <terms>
 <item>

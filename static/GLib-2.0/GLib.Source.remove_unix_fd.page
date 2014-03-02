@@ -26,7 +26,8 @@ function remove_unix_fd(tag: void): void {
   </code></synopsis>
   <p>Reverses the effect of a previous call to <link xref="GLib.Source.add_unix_fd"/>.</p>  <p>You only need to call this if you want to remove an fd from being
 watched while keeping the same source around.  In the normal case you
-will just want to destroy the source.</p>  <p>As the name suggests, this function is not available on Windows.</p>
+will just want to destroy the source.</p>  <p>This API is only intended to be used by implementations of <link xref="GLib.Source"/>.
+Do not call this API on a <link xref="GLib.Source"/> that you did not create.</p>  <p>As the name suggests, this function is not available on Windows.</p>
   <p>Since 2.36</p>
 <terms>
 <item>

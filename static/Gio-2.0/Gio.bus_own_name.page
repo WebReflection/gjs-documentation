@@ -25,22 +25,22 @@
         <api:name>flags</api:name>
       </api:arg>
       <api:arg>
-        <api:type>GObject.Closure</api:type>
+        <api:type>Function</api:type>
         <api:name>bus_acquired_closure</api:name>
       </api:arg>
       <api:arg>
-        <api:type>GObject.Closure</api:type>
+        <api:type>Function</api:type>
         <api:name>name_acquired_closure</api:name>
       </api:arg>
       <api:arg>
-        <api:type>GObject.Closure</api:type>
+        <api:type>Function</api:type>
         <api:name>name_lost_closure</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>Gio.bus_own_name</title>
   <synopsis><code mime="text/x-gjs">
-function bus_own_name(bus_type: <link xref="Gio.BusType">Gio.BusType</link>, name: String, flags: <link xref="Gio.BusNameOwnerFlags">Gio.BusNameOwnerFlags</link>, bus_acquired_closure: <link href="../GObject-2.0/GObject.Closure.html">GObject.Closure</link>, name_acquired_closure: <link href="../GObject-2.0/GObject.Closure.html">GObject.Closure</link>, name_lost_closure: <link href="../GObject-2.0/GObject.Closure.html">GObject.Closure</link>): Number(guint) {
+function bus_own_name(bus_type: <link xref="Gio.BusType">Gio.BusType</link>, name: String, flags: <link xref="Gio.BusNameOwnerFlags">Gio.BusNameOwnerFlags</link>, bus_acquired_closure: Function, name_acquired_closure: Function, name_lost_closure: Function): Number(guint) {
     // Gjs wrapper for g_bus_own_name_with_closures()
 }
   </code></synopsis>

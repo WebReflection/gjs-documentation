@@ -1,14 +1,71 @@
 <?xml version="1.0"?>
 <page id="Gio.ApplicationFlags"
-      type="topic"
-      style="default"
+      type="guide"
+      style="enum"
       xmlns="http://projectmallard.org/1.0/"
       xmlns:api="http://projectmallard.org/experimental/api/"
       xmlns:ui="http://projectmallard.org/1.0/ui/">
   <info>
-    <link xref="index" group="default" type="guide"/>
+    <link xref="index" group="enum" type="guide"/>
   </info>
   <title>Gio.ApplicationFlags</title>
   <p>Flags used to define the behaviour of a <link xref="Gio.Application"/>.</p>
   <p>Since 2.28</p>
+<terms>
+<item>
+<title><code>ApplicationFlags.FLAGS_NONE</code></title>
+  <p>Default</p>
+</item>
+<item>
+<title><code>ApplicationFlags.IS_SERVICE</code></title>
+  <p>Run as a service. In this mode, registration
+     fails if the service is already running, and the application
+     will initially wait up to 10 seconds for an initial activation
+     message to arrive.</p>
+</item>
+<item>
+<title><code>ApplicationFlags.IS_LAUNCHER</code></title>
+  <p>Don't try to become the primary instance.</p>
+</item>
+<item>
+<title><code>ApplicationFlags.HANDLES_OPEN</code></title>
+  <p>This application handles opening files (in
+    the primary instance). Note that this flag only affects the default
+    implementation of local_command_line(), and has no effect if
+    <link xref="Gio.ApplicationFlags"/>.handles_command_line is given.
+    See <link xref="Gio.Application.run"/> for details.</p>
+</item>
+<item>
+<title><code>ApplicationFlags.HANDLES_COMMAND_LINE</code></title>
+  <p>This application handles command line
+    arguments (in the primary instance). Note that this flag only affect
+    the default implementation of local_command_line().
+    See <link xref="Gio.Application.run"/> for details.</p>
+</item>
+<item>
+<title><code>ApplicationFlags.SEND_ENVIRONMENT</code></title>
+  <p>Send the environment of the
+    launching process to the primary instance. Set this flag if your
+    application is expected to behave differently depending on certain
+    environment variables. For instance, an editor might be expected
+    to use the &lt;envar&gt;GIT_COMMITTER_NAME&lt;/envar&gt; environment variable
+    when editing a git commit message. The environment is available
+    to the <link xref="Gio.Application-command-line"/> signal handler, via
+    <link xref="Gio.ApplicationCommandLine.getenv"/>.</p>
+</item>
+<item>
+<title><code>ApplicationFlags.NON_UNIQUE</code></title>
+  <p>Make no attempts to do any of the typical
+    single-instance application negotiation, even if the application
+    ID is given.  The application neither attempts to become the
+    owner of the application ID nor does it check if an existing
+    owner already exists.  Everything occurs in the local process.
+    Since: 2.30.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
 </page>

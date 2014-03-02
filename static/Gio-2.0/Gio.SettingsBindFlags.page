@@ -1,16 +1,52 @@
 <?xml version="1.0"?>
 <page id="Gio.SettingsBindFlags"
-      type="topic"
-      style="default"
+      type="guide"
+      style="enum"
       xmlns="http://projectmallard.org/1.0/"
       xmlns:api="http://projectmallard.org/experimental/api/"
       xmlns:ui="http://projectmallard.org/1.0/ui/">
   <info>
-    <link xref="index" group="default" type="guide"/>
+    <link xref="index" group="enum" type="guide"/>
   </info>
   <title>Gio.SettingsBindFlags</title>
   <p>Flags used when creating a binding. These flags determine in which
 direction the binding works. The default is to synchronize in both
 directions.</p>
 
+<terms>
+<item>
+<title><code>SettingsBindFlags.DEFAULT</code></title>
+  <p>Equivalent to &lt;literal&gt;G_SETTINGS_BIND_GET|G_SETTINGS_BIND_SET&lt;/literal&gt;</p>
+</item>
+<item>
+<title><code>SettingsBindFlags.GET</code></title>
+  <p>Update the <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link> property when the setting changes.
+    It is an error to use this flag if the property is not writable.</p>
+</item>
+<item>
+<title><code>SettingsBindFlags.SET</code></title>
+  <p>Update the setting when the <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link> property changes.
+    It is an error to use this flag if the property is not readable.</p>
+</item>
+<item>
+<title><code>SettingsBindFlags.NO_SENSITIVITY</code></title>
+  <p>Do not try to bind a "sensitivity" property to the writability of the setting</p>
+</item>
+<item>
+<title><code>SettingsBindFlags.GET_NO_CHANGES</code></title>
+  <p>When set in addition to #G_SETTINGS_BIND_GET, set the <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link> property
+    value initially from the setting, but do not listen for changes of the setting</p>
+</item>
+<item>
+<title><code>SettingsBindFlags.INVERT_BOOLEAN</code></title>
+  <p>When passed to <link xref="Gio.Settings.bind"/>, uses a pair of mapping functions that invert
+    the boolean value when mapping between the setting and the property.  The setting and property must both
+    be booleans.  You cannot pass this flag to <link xref="Gio.Settings.bind_with_mapping"/>.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
 </page>

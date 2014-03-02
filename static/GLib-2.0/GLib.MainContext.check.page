@@ -28,7 +28,8 @@ function check(max_priority: Number(gint), fds: Array(<link xref="GLib.PollFD">G
     // Gjs wrapper for g_main_context_check()
 }
   </code></synopsis>
-  <p>Passes the results of polling back to the main loop.</p>
+  <p>Passes the results of polling back to the main loop.</p>  <p>You must have successfully acquired the context with
+<link xref="GLib.MainContext.acquire"/> before you may call this function.</p>
 
 <terms>
 <item>

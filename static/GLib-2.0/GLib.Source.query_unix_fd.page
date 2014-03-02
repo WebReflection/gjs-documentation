@@ -26,7 +26,8 @@ function query_unix_fd(tag: void): <link xref="GLib.IOCondition">GLib.IOConditio
   </code></synopsis>
   <p>Queries the events reported for the fd corresponding to <code>tag</code> on
 <code>source</code> during the last poll.</p>  <p>The return value of this function is only defined when the function
-is called from the check or dispatch functions for <code>source</code>.</p>  <p>As the name suggests, this function is not available on Windows.</p>
+is called from the check or dispatch functions for <code>source</code>.</p>  <p>This API is only intended to be used by implementations of <link xref="GLib.Source"/>.
+Do not call this API on a <link xref="GLib.Source"/> that you did not create.</p>  <p>As the name suggests, this function is not available on Windows.</p>
   <p>Since 2.36</p>
 <terms>
 <item>

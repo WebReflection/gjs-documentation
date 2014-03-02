@@ -1,14 +1,34 @@
 <?xml version="1.0"?>
 <page id="Gio.DBusMessageFlags"
-      type="topic"
-      style="default"
+      type="guide"
+      style="enum"
       xmlns="http://projectmallard.org/1.0/"
       xmlns:api="http://projectmallard.org/experimental/api/"
       xmlns:ui="http://projectmallard.org/1.0/ui/">
   <info>
-    <link xref="index" group="default" type="guide"/>
+    <link xref="index" group="enum" type="guide"/>
   </info>
   <title>Gio.DBusMessageFlags</title>
   <p>Message flags used in <link xref="Gio.DBusMessage"/>.</p>
   <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>DBusMessageFlags.NONE</code></title>
+  <p>No flags set.</p>
+</item>
+<item>
+<title><code>DBusMessageFlags.NO_REPLY_EXPECTED</code></title>
+  <p>A reply is not expected.</p>
+</item>
+<item>
+<title><code>DBusMessageFlags.NO_AUTO_START</code></title>
+  <p>The bus must not launch an
+owner for the destination name in response to this message.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
 </page>
