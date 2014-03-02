@@ -10,7 +10,7 @@
   </info>
   <title>GObject.ParamSpec::values_cmp</title>
   <synopsis><code mime="text/x-gjs">
-function vfunc_values_cmp(value1: <link xref="GObject.Value">GObject.Value</link>, value2: <link xref="GObject.Value">GObject.Value</link>): Number(gint) {
+function vfunc_values_cmp(value1: Any, value2: Any): Number(gint) {
 }
   </code></synopsis>
 

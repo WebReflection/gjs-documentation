@@ -10,7 +10,7 @@
   </info>
   <title>GObject.ParamSpecTypeInfo.value_validate</title>
   <synopsis><code mime="text/x-gjs">
-function onvalue_validate(pspec: <link xref="GObject.ParamSpec">GObject.ParamSpec</link>, value: <link xref="GObject.Value">GObject.Value</link>): Boolean {
+function onvalue_validate(pspec: <link xref="GObject.ParamSpec">GObject.ParamSpec</link>, value: Any): Boolean {
 }
   </code></synopsis>
 

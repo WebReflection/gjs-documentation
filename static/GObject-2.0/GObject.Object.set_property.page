@@ -17,14 +17,14 @@
         <api:name>property_name</api:name>
       </api:arg>
       <api:arg>
-        <api:type>GObject.Value</api:type>
+        <api:type>Any</api:type>
         <api:name>value</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GObject.Object.prototype.set_property</title>
   <synopsis><code mime="text/x-gjs">
-function set_property(property_name: String, value: <link xref="GObject.Value">GObject.Value</link>): void {
+function set_property(property_name: String, value: Any): void {
     // Gjs wrapper for g_object_set_property()
 }
   </code></synopsis>

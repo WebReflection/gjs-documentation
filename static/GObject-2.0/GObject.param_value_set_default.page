@@ -17,14 +17,14 @@
         <api:name>pspec</api:name>
       </api:arg>
       <api:arg>
-        <api:type>GObject.Value</api:type>
+        <api:type>Any</api:type>
         <api:name>value</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GObject.param_value_set_default</title>
   <synopsis><code mime="text/x-gjs">
-function param_value_set_default(pspec: <link xref="GObject.ParamSpec">GObject.ParamSpec</link>, value: <link xref="GObject.Value">GObject.Value</link>): void {
+function param_value_set_default(pspec: <link xref="GObject.ParamSpec">GObject.ParamSpec</link>, value: Any): void {
     // Gjs wrapper for g_param_value_set_default()
 }
   </code></synopsis>

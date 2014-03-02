@@ -17,11 +17,11 @@
         <api:name>ihint</api:name>
       </api:arg>
       <api:arg>
-        <api:type>GObject.Value</api:type>
+        <api:type>Any</api:type>
         <api:name>return_accu</api:name>
       </api:arg>
       <api:arg>
-        <api:type>GObject.Value</api:type>
+        <api:type>Any</api:type>
         <api:name>handler_return</api:name>
       </api:arg>
       <api:arg>
@@ -32,7 +32,7 @@
   </info>
   <title>GObject.signal_accumulator_first_wins</title>
   <synopsis><code mime="text/x-gjs">
-function signal_accumulator_first_wins(ihint: <link xref="GObject.SignalInvocationHint">GObject.SignalInvocationHint</link>, return_accu: <link xref="GObject.Value">GObject.Value</link>, handler_return: <link xref="GObject.Value">GObject.Value</link>, dummy: void): Boolean {
+function signal_accumulator_first_wins(ihint: <link xref="GObject.SignalInvocationHint">GObject.SignalInvocationHint</link>, return_accu: Any, handler_return: Any, dummy: void): Boolean {
     // Gjs wrapper for g_signal_accumulator_first_wins()
 }
   </code></synopsis>

@@ -10,7 +10,7 @@
   </info>
   <title>GObject.SignalEmissionHook</title>
   <synopsis><code mime="text/x-gjs">
-function onSignalEmissionHook(ihint: <link xref="GObject.SignalInvocationHint">GObject.SignalInvocationHint</link>, param_values: Array(<link xref="GObject.Value">GObject.Value</link>), data: void): Boolean {
+function onSignalEmissionHook(ihint: <link xref="GObject.SignalInvocationHint">GObject.SignalInvocationHint</link>, param_values: Array(Any), data: void): Boolean {
 }
   </code></synopsis>
   <p>A simple function pointer to get invoked when the signal is emitted. This
