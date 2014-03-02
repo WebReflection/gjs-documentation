@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<page id="GObject.Long"
+      type="topic"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>GObject.Long</title>
+  <p>GObject.Long represents the <code>glong</code> type in the GObject
+  type system. You can pass this class object to methods taking a
+  <link xref="GObject.Type"/>.
+  </p>
+  <p>A <code>glong</code> value is an integer numeric value whose
+  limits are platform and architecture dependent, although it is
+  guaranteed to be between <code>gint</code> and a <code>gint64</code>.
+  </p>
+  <p>Note that because JS represents numbers in the double-precision
+  floating point format, which only has 52 significant bits, the full
+  range of a <code>glong</code> may not be available.
+  </p>
+  <p>Creating a new object with <code>new GObject.Long</code>
+  returns a <code>Number</code> object with value 0.</p>
+  <p>Calling <code>GObject.Long(arg)</code> will coerce the argument to
+  a number.</p>
+</page>

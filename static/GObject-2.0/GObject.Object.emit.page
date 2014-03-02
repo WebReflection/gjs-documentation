@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<page id="GObject.Object.emit"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GObject.Object" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Any</api:type>
+      </api:returns>
+      <api:name>g_signal_emit</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>signal_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Callback</api:type>
+        <api:name>handler</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GObject.Object.prototype.emit</title>
+  <synopsis><code mime="text/x-gjs">
+function emit(signal_and_detail: String, ...: Any): Any {
+    // Gjs wrapper for g_signal_emit()
+}
+  </code></synopsis>
+  <p>
+    Emits a signal on the instance.
+  </p>
+<terms>
+<item>
+<title><code>signal_and_detail</code></title>
+  <p>the signal name to emit, in the form signal::detail, or just signal if details are not useful</p>
+</item>
+<item>
+<title><code>...</code></title>
+  <p>parameters for the signal (which must be values that can be marshalled to C, such as primitives or JS object wrappers)</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the return value from the signal invocation, which depends on the
+  signal accumulator</p>
+</item>
+</terms>
+
+</page>

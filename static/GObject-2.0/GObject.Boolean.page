@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<page id="GObject.Boolean"
+      type="topic"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>GObject.Boolean</title>
+  <p>GObject.Boolean represents the <code>gboolean</code> type in the GObject
+  type system. You can pass this class object to methods taking a
+  <link xref="GObject.Type"/>.
+  </p>
+  <p>A <code>gboolean</code> value is an integer numeric value between
+  -2147483648 and 214748364887, that is, a signed 32 bit value, but the only
+  meaningful values are 0 (which is false) and non-zero (which is true).
+  In gjs, it is represented as a JS boolean.
+  </p>
+  <p><code>GObject.Boolean</code> is actually an alias to the
+  JS standard <code>Boolean</code> constructor, and whenever you
+  want to represent the <code>gboolean</code> type you can pass
+  <code>Boolean</code> instead.
+  </p>
+  <p>Creating a new object with <code>new GObject.Boolean</code>
+  returns a false <code>Boolean</code> object.</p>
+  <p>Calling <code>GObject.Boolean(arg)</code> will coerce the argument to
+  a boolean.</p>
+</page>

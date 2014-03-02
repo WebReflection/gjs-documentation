@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page id="GObject.TYPE_ENUM"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>GObject.TYPE_ENUM</title>
+  <p>GObject.TYPE_ENUM represents the <code>GEnum</code> type in the GObject
+  type system. You can pass this object to methods taking a
+  <link xref="GObject.Type"/>.
+  </p>
+  <p>The <code>GEnum</code> type is the base type for all enumerations.
+  It is not a value type, so it has no representation in gjs as such,
+  and it cannot be used in signal arguments or property values directly.
+  </p>
+</page>

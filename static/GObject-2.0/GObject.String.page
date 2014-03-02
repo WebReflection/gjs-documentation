@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<page id="GObject.String"
+      type="topic"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>GObject.String</title>
+  <p>GObject.String represents the <code>gchararray</code> type in the GObject
+  type system. You can pass this class object to methods taking a
+  <link xref="GObject.Type"/>.
+  </p>
+  <p>Despite the name, a <code>gchararray</code> is not a generic
+  array of <code>gchar</code> values. It is instead a nul-terminated
+  UTF-8 string, which must be valid. In gjs, it is represented as a
+  JS string (in UTF-16, like all JS strings).
+  </p>
+  <p><code>GObject.String</code> is actually an alias to the
+  JS standard <code>String</code> constructor, and whenever you
+  want to represent the <code>gchararray</code> type you can pass
+  <code>String</code> instead.
+  </p>
+  <p>Creating a new object with <code>new GObject.String</code>
+  returns an empty <code>String</code> object.</p>
+  <p>Calling <code>GObject.String(arg)</code> will coerce the argument to
+  a string.</p>
+</page>

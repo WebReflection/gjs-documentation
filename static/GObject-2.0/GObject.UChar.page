@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<page id="GObject.UChar"
+      type="topic"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>GObject.UChar</title>
+  <p>GObject.UChar represents the <code>guchar</code> type in the GObject
+  type system. You can pass this class object to methods taking a
+  <link xref="GObject.Type"/>.
+  </p>
+  <p>A <code>guchar</code> value is an integer numeric value between
+  0 and 255, that is, an unsigned 8 bit value. It is normally used to
+  store arbitrary bytes of data.
+  </p>
+  <p>Creating a new object with <code>new GObject.UChar</code>
+  returns a <code>Number</code> object with value 0.</p>
+  <p>Calling <code>GObject.UChar(arg)</code> will coerce the argument to
+  a number.</p>
+</page>

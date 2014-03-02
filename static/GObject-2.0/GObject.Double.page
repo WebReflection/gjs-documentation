@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<page id="GObject.Double"
+      type="topic"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>GObject.Double</title>
+  <p>GObject.Double represents the <code>gdouble</code> type in the GObject
+  type system. You can pass this class object to methods taking a
+  <link xref="GObject.Type"/>.
+  </p>
+  <p>A <code>gdouble</code> value is a double-precision floating point
+  number, that is, a normal JS number.
+  </p>
+  <p><code>GObject.Double</code> is actually an alias to the
+  JS standard <code>Number</code> constructor, and whenever you
+  want to represent the <code>gdouble</code> type you can pass
+  <code>Number</code> instead.
+  </p>
+  <p>Creating a new object with <code>new GObject.Double</code>
+  returns a <code>Number</code> object with value 0.</p>
+  <p>Calling <code>GObject.Double(arg)</code> will coerce the argument to
+  a number.</p>
+</page>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="GObject.TYPE_BOXED"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>GObject.TYPE_BOXED</title>
+  <p>GObject.TYPE_BOXED represents the <code>GBoxed</code> type in the GObject
+  type system. You can pass this object to methods taking a
+  <link xref="GObject.Type"/>.
+  </p>
+  <p>The <code>GBoxed</code> type is the base type for all boxed types
+  (structures and unions that are not derived from <link xref="GObject.Object"/>).
+  It is not a value type, so it has no representation in gjs as such,
+  and it cannot be used in signal arguments or property values directly.
+  </p>
+  <p>Not all JS classes are derived from <code>GBoxed</code>, for example
+  they may be new fundamental types. You can check if this is the case
+  with <code>GObject.type_is_a(My.StructType, GObject.TYPE_BOXED)</code>.
+  </p>
+  <p>In JS, boxed types are represented with <em>weak wrappers</em>, which
+  means that every time a boxed type is converted from C to JS (for example
+  as a function call result) a different JS object is created. This means
+  that the same underlying C structure can be represented by multiple
+  objects at times, so JS boxed wrappers should never be compared by value
+  and should not have any JS visible state (for example custom properties),
+  because it can be lost at any time.
+  </p>
+  <p>JS boxed wrappers will be garbage collected independently of the underlying
+  C structure. Additionally, dependening on the implementation of the
+  boxed type (copied value type or reference type), as well as the transfer
+  mode of the function from which the value is obtained, the boxed type
+  may be a copy of the original C structure, so even C visible state (such
+  as method calls that modify the instance) may not affect the right object.
+  </p>
+  <p>In practice, this means that you should treat all boxed types as
+  immutable, unless you are sure of the reference-counting semantics or
+  you created the structure youself with the appropriate constructor.
+  </p>
+</page>

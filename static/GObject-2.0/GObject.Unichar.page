@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="GObject.Unichar"
+      type="topic"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>GObject.Unichar</title>
+  <p>GObject.Unichar represents the <code>gunichar</code> type in the GObject
+  type system. You can pass this class object to methods taking a
+  <link xref="GObject.Type"/>.
+  </p>
+  <p>A <code>gunichar</code> value is an integer numeric value between
+  0 and 4294967295, that is, an unsigned 32 bit value, which is taken
+  to represent a single Unicode code point. In gjs, it is represented
+  as a JS string.
+  </p>
+  <p>Note that because JS strings are in the UTF-16 encoding, a
+  single Unicode code point may require two JS characters, if it
+  falls outside the Basic Multilingual Plane.
+  </p>
+  <p>Creating a new object with <code>new GObject.Unichar</code>
+  returns an empty <code>String</code> object.</p>
+  <p>Calling <code>GObject.Unichar(arg)</code> will coerce the argument to
+  a string.</p>
+</page>

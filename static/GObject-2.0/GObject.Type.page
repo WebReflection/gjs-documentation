@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <page id="GObject.Type"
       type="topic"
-      style="default"
+      style="class"
       xmlns="http://projectmallard.org/1.0/"
       xmlns:api="http://projectmallard.org/experimental/api/"
       xmlns:ui="http://projectmallard.org/1.0/ui/">
@@ -9,7 +9,19 @@
     <link xref="index" group="default" type="guide"/>
   </info>
   <title>GObject.Type</title>
-  <p>A numerical value which represents the unique identifier of a registered
+  <p>An object which represents the unique identifier of a registered
 type.</p>
-
+  <p>GObject.Types are retrieved with <link xref="GObject.type_from_name"/>,
+  but whenever a function or argument requires a GObject.Type it is instead
+  possible to pass the object class instead, so for example one can pass
+  <code>GObject.Object</code> instead of <code>GObject.type_from_name('GObject')</code>, and <code>GObject.VoidType</code> instead of <code>GObject.type_from_name('void')</code>.
+  </p>
+  <p><code>GObject.Type</code> is also the class object representing the <code>GType</code> type
+  in the GObject type system, and as such you can pass it to methods
+  taking a GObject.Type.
+  </p>
+  <p>Calling <code>GObject.Type(name)</code> will return the type object
+  with name <code>name</code>, if such exists, or an invalid object
+  otherwise.
+  </p>
 </page>

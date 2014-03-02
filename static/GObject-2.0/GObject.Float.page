@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<page id="GObject.Float"
+      type="topic"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>GObject.Float</title>
+  <p>GObject.Float represents the <code>gfloat</code> type in the GObject
+  type system. You can pass this class object to methods taking a
+  <link xref="GObject.Type"/>.
+  </p>
+  <p>A <code>gfloat</code> value is a single-precision floating point
+  number.
+  </p>
+  <p>Creating a new object with <code>new GObject.Float</code>
+  returns a <code>Number</code> object with value 0.</p>
+  <p>Calling <code>GObject.Float(arg)</code> will coerce the argument to
+  a number.</p>
+</page>
