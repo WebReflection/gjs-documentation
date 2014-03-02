@@ -1,15 +1,47 @@
 <?xml version="1.0"?>
 <page id="GObject.BindingFlags"
-      type="topic"
-      style="default"
+      type="guide"
+      style="enum"
       xmlns="http://projectmallard.org/1.0/"
       xmlns:api="http://projectmallard.org/experimental/api/"
       xmlns:ui="http://projectmallard.org/1.0/ui/">
   <info>
-    <link xref="index" group="default" type="guide"/>
+    <link xref="index" group="enum" type="guide"/>
   </info>
   <title>GObject.BindingFlags</title>
   <p>Flags to be passed to <link xref="GObject.Object.bind_property"/> or
 <link xref="GObject.Object.bind_property_full"/>.</p>  <p>This enumeration can be extended at later date.</p>
   <p>Since 2.26</p>
+<terms>
+<item>
+<title><code>BindingFlags.DEFAULT</code></title>
+  <p>The default binding; if the source property
+  changes, the target property is updated with its value.</p>
+</item>
+<item>
+<title><code>BindingFlags.BIDIRECTIONAL</code></title>
+  <p>Bidirectional binding; if either the
+  property of the source or the property of the target changes,
+  the other is updated.</p>
+</item>
+<item>
+<title><code>BindingFlags.SYNC_CREATE</code></title>
+  <p>Synchronize the values of the source and
+  target properties when creating the binding; the direction of
+  the synchronization is always from the source to the target.</p>
+</item>
+<item>
+<title><code>BindingFlags.INVERT_BOOLEAN</code></title>
+  <p>If the two properties being bound are
+  booleans, setting one to <code>true</code> will result in the other being
+  set to <code>false</code> and vice versa. This flag will only work for
+  boolean properties, and cannot be used when passing custom
+  transformation functions to <link xref="GObject.Object.bind_property_full"/>.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
 </page>

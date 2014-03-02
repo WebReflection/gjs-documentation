@@ -15,6 +15,7 @@ const GObject = imports.gi.GObject;
 let signalQuery = new GObject.SignalQuery({
     <link xref='GObject.SignalQuery-signal_id'>signal_id</link>: value
     <link xref='GObject.SignalQuery-itype'>itype</link>: value
+    <link xref='GObject.SignalQuery-signal_flags'>signal_flags</link>: value
     <link xref='GObject.SignalQuery-return_type'>return_type</link>: value
     <link xref='GObject.SignalQuery-n_params'>n_params</link>: value
     <link xref='GObject.SignalQuery-param_types'>param_types</link>: value

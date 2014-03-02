@@ -1,16 +1,39 @@
 <?xml version="1.0"?>
 <page id="GObject.TypeDebugFlags"
-      type="topic"
-      style="default"
+      type="guide"
+      style="enum"
       xmlns="http://projectmallard.org/1.0/"
       xmlns:api="http://projectmallard.org/experimental/api/"
       xmlns:ui="http://projectmallard.org/1.0/ui/">
   <info>
-    <link xref="index" group="default" type="guide"/>
+    <link xref="index" group="enum" type="guide"/>
   </info>
   <title>GObject.TypeDebugFlags</title>
   <p>These flags used to be passed to <link xref="GObject.type_init_with_debug_flags"/> which
 is now deprecated.</p>  <p>If you need to enable debugging features, use the GOBJECT_DEBUG
 environment variable.</p>
 
+<terms>
+<item>
+<title><code>TypeDebugFlags.NONE</code></title>
+  <p>Print no messages.</p>
+</item>
+<item>
+<title><code>TypeDebugFlags.OBJECTS</code></title>
+  <p>Print messages about object bookkeeping.</p>
+</item>
+<item>
+<title><code>TypeDebugFlags.SIGNALS</code></title>
+  <p>Print messages about signal emissions.</p>
+</item>
+<item>
+<title><code>TypeDebugFlags.MASK</code></title>
+  <p>Mask covering all debug flags.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
 </page>

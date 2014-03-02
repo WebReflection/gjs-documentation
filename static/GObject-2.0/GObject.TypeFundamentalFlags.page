@@ -1,15 +1,38 @@
 <?xml version="1.0"?>
 <page id="GObject.TypeFundamentalFlags"
-      type="topic"
-      style="default"
+      type="guide"
+      style="enum"
       xmlns="http://projectmallard.org/1.0/"
       xmlns:api="http://projectmallard.org/experimental/api/"
       xmlns:ui="http://projectmallard.org/1.0/ui/">
   <info>
-    <link xref="index" group="default" type="guide"/>
+    <link xref="index" group="enum" type="guide"/>
   </info>
   <title>GObject.TypeFundamentalFlags</title>
   <p>Bit masks used to check or determine specific characteristics of a
 fundamental type.</p>
 
+<terms>
+<item>
+<title><code>TypeFundamentalFlags.CLASSED</code></title>
+  <p>Indicates a classed type.</p>
+</item>
+<item>
+<title><code>TypeFundamentalFlags.INSTANTIATABLE</code></title>
+  <p>Indicates an instantiable type (implies classed).</p>
+</item>
+<item>
+<title><code>TypeFundamentalFlags.DERIVABLE</code></title>
+  <p>Indicates a flat derivable type.</p>
+</item>
+<item>
+<title><code>TypeFundamentalFlags.DEEP_DERIVABLE</code></title>
+  <p>Indicates a deep derivable type (implies derivable).</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
 </page>

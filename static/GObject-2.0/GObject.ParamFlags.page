@@ -1,15 +1,75 @@
 <?xml version="1.0"?>
 <page id="GObject.ParamFlags"
-      type="topic"
-      style="default"
+      type="guide"
+      style="enum"
       xmlns="http://projectmallard.org/1.0/"
       xmlns:api="http://projectmallard.org/experimental/api/"
       xmlns:ui="http://projectmallard.org/1.0/ui/">
   <info>
-    <link xref="index" group="default" type="guide"/>
+    <link xref="index" group="enum" type="guide"/>
   </info>
   <title>GObject.ParamFlags</title>
   <p>Through the <link xref="GObject.ParamFlags"/> flag values, certain aspects of parameters
 can be configured. See also #G_PARAM_READWRITE and #G_PARAM_STATIC_STRINGS.</p>
 
+<terms>
+<item>
+<title><code>ParamFlags.READABLE</code></title>
+  <p>the parameter is readable</p>
+</item>
+<item>
+<title><code>ParamFlags.WRITABLE</code></title>
+  <p>the parameter is writable</p>
+</item>
+<item>
+<title><code>ParamFlags.CONSTRUCT</code></title>
+  <p>the parameter will be set upon object construction</p>
+</item>
+<item>
+<title><code>ParamFlags.CONSTRUCT_ONLY</code></title>
+  <p>the parameter will only be set upon object construction</p>
+</item>
+<item>
+<title><code>ParamFlags.LAX_VALIDATION</code></title>
+  <p>upon parameter conversion (see <link xref="GObject.param_value_convert"/>)
+ strict validation is not required</p>
+</item>
+<item>
+<title><code>ParamFlags.STATIC_NAME</code></title>
+  <p>the string used as name when constructing the
+ parameter is guaranteed to remain valid and
+ unmodified for the lifetime of the parameter.
+ Since 2.8</p>
+</item>
+<item>
+<title><code>ParamFlags.PRIVATE</code></title>
+  <p>internal</p>
+</item>
+<item>
+<title><code>ParamFlags.STATIC_NICK</code></title>
+  <p>the string used as nick when constructing the
+ parameter is guaranteed to remain valid and
+ unmmodified for the lifetime of the parameter.
+ Since 2.8</p>
+</item>
+<item>
+<title><code>ParamFlags.STATIC_BLURB</code></title>
+  <p>the string used as blurb when constructing the
+ parameter is guaranteed to remain valid and
+ unmodified for the lifetime of the parameter.
+ Since 2.8</p>
+</item>
+<item>
+<title><code>ParamFlags.DEPRECATED</code></title>
+  <p>the parameter is deprecated and will be removed
+ in a future version. A warning will be generated if it is used
+ while running with G_ENABLE_DIAGNOSTIC=1.
+ Since 2.26</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
 </page>

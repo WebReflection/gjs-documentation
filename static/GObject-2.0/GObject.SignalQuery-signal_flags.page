@@ -11,7 +11,7 @@
   </info>
   <title>GObject.SignalQuery.signal_flags</title>
   <synopsis><code mime="text/x-gjs">
-SignalQuery.signal_flags: <link xref="GObject.SignalFlags">GObject.SignalFlags</link> (Read)
+SignalQuery.signal_flags: <link xref="GObject.SignalFlags">GObject.SignalFlags</link> (Read / Write)
   </code></synopsis>
   <p>The signal flags as passed in to <link xref="GObject.signal_new"/>.</p>
 

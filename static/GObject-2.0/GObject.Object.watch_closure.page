@@ -13,14 +13,14 @@
       </api:returns>
       <api:name>g_object_watch_closure</api:name>
       <api:arg>
-        <api:type>GObject.Closure</api:type>
+        <api:type>Function</api:type>
         <api:name>closure</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GObject.Object.prototype.watch_closure</title>
   <synopsis><code mime="text/x-gjs">
-function watch_closure(closure: <link xref="GObject.Closure">GObject.Closure</link>): void {
+function watch_closure(closure: Function): void {
     // Gjs wrapper for g_object_watch_closure()
 }
   </code></synopsis>

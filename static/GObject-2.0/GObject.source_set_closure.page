@@ -17,14 +17,14 @@
         <api:name>source</api:name>
       </api:arg>
       <api:arg>
-        <api:type>GObject.Closure</api:type>
+        <api:type>Function</api:type>
         <api:name>closure</api:name>
       </api:arg>
     </api:function>
   </info>
   <title>GObject.source_set_closure</title>
   <synopsis><code mime="text/x-gjs">
-function source_set_closure(source: <link href="../GLib-2.0/GLib.Source.html">GLib.Source</link>, closure: <link xref="GObject.Closure">GObject.Closure</link>): void {
+function source_set_closure(source: <link href="../GLib-2.0/GLib.Source.html">GLib.Source</link>, closure: Function): void {
     // Gjs wrapper for g_source_set_closure()
 }
   </code></synopsis>

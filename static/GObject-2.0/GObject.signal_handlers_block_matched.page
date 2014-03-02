@@ -29,7 +29,7 @@
         <api:name>detail</api:name>
       </api:arg>
       <api:arg>
-        <api:type>GObject.Closure</api:type>
+        <api:type>Function</api:type>
         <api:name>closure</api:name>
       </api:arg>
       <api:arg>
@@ -44,7 +44,7 @@
   </info>
   <title>GObject.signal_handlers_block_matched</title>
   <synopsis><code mime="text/x-gjs">
-function signal_handlers_block_matched(instance: <link xref="GObject.Object">GObject.Object</link>, mask: <link xref="GObject.SignalMatchType">GObject.SignalMatchType</link>, signal_id: Number(guint), detail: <link href="../GLib-2.0/GLib.Quark.html">GLib.Quark</link>, closure: <link xref="GObject.Closure">GObject.Closure</link>, func: void, data: void): Number(guint) {
+function signal_handlers_block_matched(instance: <link xref="GObject.Object">GObject.Object</link>, mask: <link xref="GObject.SignalMatchType">GObject.SignalMatchType</link>, signal_id: Number(guint), detail: <link href="../GLib-2.0/GLib.Quark.html">GLib.Quark</link>, closure: Function, func: void, data: void): Number(guint) {
     // Gjs wrapper for g_signal_handlers_block_matched()
 }
   </code></synopsis>

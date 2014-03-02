@@ -14,6 +14,7 @@ const GObject = imports.gi.GObject;
 
 let signalInvocationHint = new GObject.SignalInvocationHint({
     <link xref='GObject.SignalInvocationHint-signal_id'>signal_id</link>: value
+    <link xref='GObject.SignalInvocationHint-run_type'>run_type</link>: value
 });
   </code></synopsis>
   <p>The <link xref="GObject.SignalInvocationHint"/> structure is used to pass on additional information
