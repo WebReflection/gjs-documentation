@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
-<page id="GObject.param_spec_enum"
+<page id="GObject.ParamSpec.object"
       type="topic"
       style="function"
       xmlns="http://projectmallard.org/1.0/"
       xmlns:api="http://projectmallard.org/experimental/api/"
       xmlns:ui="http://projectmallard.org/1.0/ui/">
   <info>
-    <link xref="index" group="function" type="guide"/>
+    <link xref="GObject.ParamSpec" group="function" type="guide"/>
     <api:function>
       <api:returns>
         <api:type>GObject.ParamSpec</api:type>
       </api:returns>
-      <api:name>g_param_spec_enum</api:name>
+      <api:name>g_param_spec_object</api:name>
       <api:arg>
         <api:type>String</api:type>
         <api:name>name</api:name>
@@ -26,11 +26,7 @@
       </api:arg>
       <api:arg>
         <api:type>GObject.Type</api:type>
-        <api:name>enum_type</api:name>
-      </api:arg>
-      <api:arg>
-        <api:type>Number(gint)</api:type>
-        <api:name>default_value</api:name>
+        <api:name>object_type</api:name>
       </api:arg>
       <api:arg>
         <api:type>GObject.ParamFlags</api:type>
@@ -38,14 +34,14 @@
       </api:arg>
     </api:function>
   </info>
-  <title>GObject.param_spec_enum</title>
+  <title>GObject.ParamSpec.object</title>
   <synopsis><code mime="text/x-gjs">
-function param_spec_enum(name: String, nick: String, blurb: String, enum_type: GObject.Type, default_value: Number(gint), flags: <link xref="GObject.ParamFlags">GObject.ParamFlags</link>): <link xref="GObject.ParamSpec">GObject.ParamSpec</link> {
-    // Gjs wrapper for g_param_spec_enum()
+function object(name: String, nick: String, blurb: String, object_type: GObject.Type, flags: <link xref="GObject.ParamFlags">GObject.ParamFlags</link>): <link xref="GObject.ParamSpec">GObject.ParamSpec</link> {
+    // Gjs wrapper for g_param_spec_object()
 }
   </code></synopsis>
-  <p>Creates a new <link xref="GObject.ParamSpecEnum"/> instance specifying a %G_TYPE_ENUM
-property.</p>  <p>See <link xref="GObject.ParamSpec.internal"/> for details on property names.</p>
+  <p>Creates a new <link xref="GObject.ParamSpecBoxed"/> instance specifying a %G_TYPE_OBJECT
+derived property.</p>  <p>See <link xref="GObject.param_spec_internal"/> for details on property names.</p>
 
 <terms>
 <item>
@@ -61,12 +57,8 @@ property.</p>  <p>See <link xref="GObject.ParamSpec.internal"/> for details on p
   <p>description of the property specified</p>
 </item>
 <item>
-<title><code>enum_type</code></title>
-  <p>a <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link> derived from %G_TYPE_ENUM</p>
-</item>
-<item>
-<title><code>default_value</code></title>
-  <p>default value for the property specified</p>
+<title><code>object_type</code></title>
+  <p>%G_TYPE_OBJECT derived type of this property</p>
 </item>
 <item>
 <title><code>flags</code></title>

@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
-<page id="GObject.param_spec_int"
+<page id="GObject.ParamSpec.enum"
       type="topic"
       style="function"
       xmlns="http://projectmallard.org/1.0/"
       xmlns:api="http://projectmallard.org/experimental/api/"
       xmlns:ui="http://projectmallard.org/1.0/ui/">
   <info>
-    <link xref="index" group="function" type="guide"/>
+    <link xref="GObject.ParamSpec" group="function" type="guide"/>
     <api:function>
       <api:returns>
         <api:type>GObject.ParamSpec</api:type>
       </api:returns>
-      <api:name>g_param_spec_int</api:name>
+      <api:name>g_param_spec_enum</api:name>
       <api:arg>
         <api:type>String</api:type>
         <api:name>name</api:name>
@@ -25,12 +25,8 @@
         <api:name>blurb</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number(gint)</api:type>
-        <api:name>minimum</api:name>
-      </api:arg>
-      <api:arg>
-        <api:type>Number(gint)</api:type>
-        <api:name>maximum</api:name>
+        <api:type>GObject.Type</api:type>
+        <api:name>enum_type</api:name>
       </api:arg>
       <api:arg>
         <api:type>Number(gint)</api:type>
@@ -42,13 +38,14 @@
       </api:arg>
     </api:function>
   </info>
-  <title>GObject.param_spec_int</title>
+  <title>GObject.ParamSpec.enum</title>
   <synopsis><code mime="text/x-gjs">
-function param_spec_int(name: String, nick: String, blurb: String, minimum: Number(gint), maximum: Number(gint), default_value: Number(gint), flags: <link xref="GObject.ParamFlags">GObject.ParamFlags</link>): <link xref="GObject.ParamSpec">GObject.ParamSpec</link> {
-    // Gjs wrapper for g_param_spec_int()
+function enum(name: String, nick: String, blurb: String, enum_type: GObject.Type, default_value: Number(gint), flags: <link xref="GObject.ParamFlags">GObject.ParamFlags</link>): <link xref="GObject.ParamSpec">GObject.ParamSpec</link> {
+    // Gjs wrapper for g_param_spec_enum()
 }
   </code></synopsis>
-  <p>Creates a new <link xref="GObject.ParamSpecInt"/> instance specifying a %G_TYPE_INT property.</p>  <p>See <link xref="GObject.ParamSpec.internal"/> for details on property names.</p>
+  <p>Creates a new <link xref="GObject.ParamSpecEnum"/> instance specifying a %G_TYPE_ENUM
+property.</p>  <p>See <link xref="GObject.param_spec_internal"/> for details on property names.</p>
 
 <terms>
 <item>
@@ -64,12 +61,8 @@ function param_spec_int(name: String, nick: String, blurb: String, minimum: Numb
   <p>description of the property specified</p>
 </item>
 <item>
-<title><code>minimum</code></title>
-  <p>minimum value for the property specified</p>
-</item>
-<item>
-<title><code>maximum</code></title>
-  <p>maximum value for the property specified</p>
+<title><code>enum_type</code></title>
+  <p>a <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link> derived from %G_TYPE_ENUM</p>
 </item>
 <item>
 <title><code>default_value</code></title>

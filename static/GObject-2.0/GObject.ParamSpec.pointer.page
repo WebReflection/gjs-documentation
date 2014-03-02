@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
-<page id="GObject.param_spec_ulong"
+<page id="GObject.ParamSpec.pointer"
       type="topic"
       style="function"
       xmlns="http://projectmallard.org/1.0/"
       xmlns:api="http://projectmallard.org/experimental/api/"
       xmlns:ui="http://projectmallard.org/1.0/ui/">
   <info>
-    <link xref="index" group="function" type="guide"/>
+    <link xref="GObject.ParamSpec" group="function" type="guide"/>
     <api:function>
       <api:returns>
         <api:type>GObject.ParamSpec</api:type>
       </api:returns>
-      <api:name>g_param_spec_ulong</api:name>
+      <api:name>g_param_spec_pointer</api:name>
       <api:arg>
         <api:type>String</api:type>
         <api:name>name</api:name>
@@ -25,31 +25,18 @@
         <api:name>blurb</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number(gulong)</api:type>
-        <api:name>minimum</api:name>
-      </api:arg>
-      <api:arg>
-        <api:type>Number(gulong)</api:type>
-        <api:name>maximum</api:name>
-      </api:arg>
-      <api:arg>
-        <api:type>Number(gulong)</api:type>
-        <api:name>default_value</api:name>
-      </api:arg>
-      <api:arg>
         <api:type>GObject.ParamFlags</api:type>
         <api:name>flags</api:name>
       </api:arg>
     </api:function>
   </info>
-  <title>GObject.param_spec_ulong</title>
+  <title>GObject.ParamSpec.pointer</title>
   <synopsis><code mime="text/x-gjs">
-function param_spec_ulong(name: String, nick: String, blurb: String, minimum: Number(gulong), maximum: Number(gulong), default_value: Number(gulong), flags: <link xref="GObject.ParamFlags">GObject.ParamFlags</link>): <link xref="GObject.ParamSpec">GObject.ParamSpec</link> {
-    // Gjs wrapper for g_param_spec_ulong()
+function pointer(name: String, nick: String, blurb: String, flags: <link xref="GObject.ParamFlags">GObject.ParamFlags</link>): <link xref="GObject.ParamSpec">GObject.ParamSpec</link> {
+    // Gjs wrapper for g_param_spec_pointer()
 }
   </code></synopsis>
-  <p>Creates a new <link xref="GObject.ParamSpecULong"/> instance specifying a %G_TYPE_ULONG
-property.</p>  <p>See <link xref="GObject.ParamSpec.internal"/> for details on property names.</p>
+  <p>Creates a new <link xref="GObject.ParamSpecPointer"/> instance specifying a pointer property.</p>  <p>See <link xref="GObject.param_spec_internal"/> for details on property names.</p>
 
 <terms>
 <item>
@@ -63,18 +50,6 @@ property.</p>  <p>See <link xref="GObject.ParamSpec.internal"/> for details on p
 <item>
 <title><code>blurb</code></title>
   <p>description of the property specified</p>
-</item>
-<item>
-<title><code>minimum</code></title>
-  <p>minimum value for the property specified</p>
-</item>
-<item>
-<title><code>maximum</code></title>
-  <p>maximum value for the property specified</p>
-</item>
-<item>
-<title><code>default_value</code></title>
-  <p>default value for the property specified</p>
 </item>
 <item>
 <title><code>flags</code></title>

@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
-<page id="GObject.param_spec_uint"
+<page id="GObject.ParamSpec.ulong"
       type="topic"
       style="function"
       xmlns="http://projectmallard.org/1.0/"
       xmlns:api="http://projectmallard.org/experimental/api/"
       xmlns:ui="http://projectmallard.org/1.0/ui/">
   <info>
-    <link xref="index" group="function" type="guide"/>
+    <link xref="GObject.ParamSpec" group="function" type="guide"/>
     <api:function>
       <api:returns>
         <api:type>GObject.ParamSpec</api:type>
       </api:returns>
-      <api:name>g_param_spec_uint</api:name>
+      <api:name>g_param_spec_ulong</api:name>
       <api:arg>
         <api:type>String</api:type>
         <api:name>name</api:name>
@@ -25,15 +25,15 @@
         <api:name>blurb</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number(guint)</api:type>
+        <api:type>Number(gulong)</api:type>
         <api:name>minimum</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number(guint)</api:type>
+        <api:type>Number(gulong)</api:type>
         <api:name>maximum</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number(guint)</api:type>
+        <api:type>Number(gulong)</api:type>
         <api:name>default_value</api:name>
       </api:arg>
       <api:arg>
@@ -42,13 +42,14 @@
       </api:arg>
     </api:function>
   </info>
-  <title>GObject.param_spec_uint</title>
+  <title>GObject.ParamSpec.ulong</title>
   <synopsis><code mime="text/x-gjs">
-function param_spec_uint(name: String, nick: String, blurb: String, minimum: Number(guint), maximum: Number(guint), default_value: Number(guint), flags: <link xref="GObject.ParamFlags">GObject.ParamFlags</link>): <link xref="GObject.ParamSpec">GObject.ParamSpec</link> {
-    // Gjs wrapper for g_param_spec_uint()
+function ulong(name: String, nick: String, blurb: String, minimum: Number(gulong), maximum: Number(gulong), default_value: Number(gulong), flags: <link xref="GObject.ParamFlags">GObject.ParamFlags</link>): <link xref="GObject.ParamSpec">GObject.ParamSpec</link> {
+    // Gjs wrapper for g_param_spec_ulong()
 }
   </code></synopsis>
-  <p>Creates a new <link xref="GObject.ParamSpecUInt"/> instance specifying a %G_TYPE_UINT property.</p>  <p>See <link xref="GObject.ParamSpec.internal"/> for details on property names.</p>
+  <p>Creates a new <link xref="GObject.ParamSpecULong"/> instance specifying a %G_TYPE_ULONG
+property.</p>  <p>See <link xref="GObject.param_spec_internal"/> for details on property names.</p>
 
 <terms>
 <item>

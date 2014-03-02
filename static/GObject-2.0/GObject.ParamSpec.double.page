@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
-<page id="GObject.param_spec_pointer"
+<page id="GObject.ParamSpec.double"
       type="topic"
       style="function"
       xmlns="http://projectmallard.org/1.0/"
       xmlns:api="http://projectmallard.org/experimental/api/"
       xmlns:ui="http://projectmallard.org/1.0/ui/">
   <info>
-    <link xref="index" group="function" type="guide"/>
+    <link xref="GObject.ParamSpec" group="function" type="guide"/>
     <api:function>
       <api:returns>
         <api:type>GObject.ParamSpec</api:type>
       </api:returns>
-      <api:name>g_param_spec_pointer</api:name>
+      <api:name>g_param_spec_double</api:name>
       <api:arg>
         <api:type>String</api:type>
         <api:name>name</api:name>
@@ -25,18 +25,31 @@
         <api:name>blurb</api:name>
       </api:arg>
       <api:arg>
+        <api:type>Number(gdouble)</api:type>
+        <api:name>minimum</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gdouble)</api:type>
+        <api:name>maximum</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gdouble)</api:type>
+        <api:name>default_value</api:name>
+      </api:arg>
+      <api:arg>
         <api:type>GObject.ParamFlags</api:type>
         <api:name>flags</api:name>
       </api:arg>
     </api:function>
   </info>
-  <title>GObject.param_spec_pointer</title>
+  <title>GObject.ParamSpec.double</title>
   <synopsis><code mime="text/x-gjs">
-function param_spec_pointer(name: String, nick: String, blurb: String, flags: <link xref="GObject.ParamFlags">GObject.ParamFlags</link>): <link xref="GObject.ParamSpec">GObject.ParamSpec</link> {
-    // Gjs wrapper for g_param_spec_pointer()
+function double(name: String, nick: String, blurb: String, minimum: Number(gdouble), maximum: Number(gdouble), default_value: Number(gdouble), flags: <link xref="GObject.ParamFlags">GObject.ParamFlags</link>): <link xref="GObject.ParamSpec">GObject.ParamSpec</link> {
+    // Gjs wrapper for g_param_spec_double()
 }
   </code></synopsis>
-  <p>Creates a new <link xref="GObject.ParamSpecPointer"/> instance specifying a pointer property.</p>  <p>See <link xref="GObject.ParamSpec.internal"/> for details on property names.</p>
+  <p>Creates a new <link xref="GObject.ParamSpecDouble"/> instance specifying a %G_TYPE_DOUBLE
+property.</p>  <p>See <link xref="GObject.param_spec_internal"/> for details on property names.</p>
 
 <terms>
 <item>
@@ -50,6 +63,18 @@ function param_spec_pointer(name: String, nick: String, blurb: String, flags: <l
 <item>
 <title><code>blurb</code></title>
   <p>description of the property specified</p>
+</item>
+<item>
+<title><code>minimum</code></title>
+  <p>minimum value for the property specified</p>
+</item>
+<item>
+<title><code>maximum</code></title>
+  <p>maximum value for the property specified</p>
+</item>
+<item>
+<title><code>default_value</code></title>
+  <p>default value for the property specified</p>
 </item>
 <item>
 <title><code>flags</code></title>

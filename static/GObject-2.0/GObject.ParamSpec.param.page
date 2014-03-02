@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
-<page id="GObject.param_spec_string"
+<page id="GObject.ParamSpec.param"
       type="topic"
       style="function"
       xmlns="http://projectmallard.org/1.0/"
       xmlns:api="http://projectmallard.org/experimental/api/"
       xmlns:ui="http://projectmallard.org/1.0/ui/">
   <info>
-    <link xref="index" group="function" type="guide"/>
+    <link xref="GObject.ParamSpec" group="function" type="guide"/>
     <api:function>
       <api:returns>
         <api:type>GObject.ParamSpec</api:type>
       </api:returns>
-      <api:name>g_param_spec_string</api:name>
+      <api:name>g_param_spec_param</api:name>
       <api:arg>
         <api:type>String</api:type>
         <api:name>name</api:name>
@@ -25,8 +25,8 @@
         <api:name>blurb</api:name>
       </api:arg>
       <api:arg>
-        <api:type>String</api:type>
-        <api:name>default_value</api:name>
+        <api:type>GObject.Type</api:type>
+        <api:name>param_type</api:name>
       </api:arg>
       <api:arg>
         <api:type>GObject.ParamFlags</api:type>
@@ -34,13 +34,14 @@
       </api:arg>
     </api:function>
   </info>
-  <title>GObject.param_spec_string</title>
+  <title>GObject.ParamSpec.param</title>
   <synopsis><code mime="text/x-gjs">
-function param_spec_string(name: String, nick: String, blurb: String, default_value: String, flags: <link xref="GObject.ParamFlags">GObject.ParamFlags</link>): <link xref="GObject.ParamSpec">GObject.ParamSpec</link> {
-    // Gjs wrapper for g_param_spec_string()
+function param(name: String, nick: String, blurb: String, param_type: GObject.Type, flags: <link xref="GObject.ParamFlags">GObject.ParamFlags</link>): <link xref="GObject.ParamSpec">GObject.ParamSpec</link> {
+    // Gjs wrapper for g_param_spec_param()
 }
   </code></synopsis>
-  <p>Creates a new <link xref="GObject.ParamSpecString"/> instance.</p>  <p>See <link xref="GObject.ParamSpec.internal"/> for details on property names.</p>
+  <p>Creates a new <link xref="GObject.ParamSpecParam"/> instance specifying a %G_TYPE_PARAM
+property.</p>  <p>See <link xref="GObject.param_spec_internal"/> for details on property names.</p>
 
 <terms>
 <item>
@@ -56,8 +57,8 @@ function param_spec_string(name: String, nick: String, blurb: String, default_va
   <p>description of the property specified</p>
 </item>
 <item>
-<title><code>default_value</code></title>
-  <p>default value for the property specified</p>
+<title><code>param_type</code></title>
+  <p>a <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link> derived from %G_TYPE_PARAM</p>
 </item>
 <item>
 <title><code>flags</code></title>

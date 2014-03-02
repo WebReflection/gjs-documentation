@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
-<page id="GObject.param_spec_uchar"
+<page id="GObject.ParamSpec.unichar"
       type="topic"
       style="function"
       xmlns="http://projectmallard.org/1.0/"
       xmlns:api="http://projectmallard.org/experimental/api/"
       xmlns:ui="http://projectmallard.org/1.0/ui/">
   <info>
-    <link xref="index" group="function" type="guide"/>
+    <link xref="GObject.ParamSpec" group="function" type="guide"/>
     <api:function>
       <api:returns>
         <api:type>GObject.ParamSpec</api:type>
       </api:returns>
-      <api:name>g_param_spec_uchar</api:name>
+      <api:name>g_param_spec_unichar</api:name>
       <api:arg>
         <api:type>String</api:type>
         <api:name>name</api:name>
@@ -25,15 +25,7 @@
         <api:name>blurb</api:name>
       </api:arg>
       <api:arg>
-        <api:type>Number(guint8)</api:type>
-        <api:name>minimum</api:name>
-      </api:arg>
-      <api:arg>
-        <api:type>Number(guint8)</api:type>
-        <api:name>maximum</api:name>
-      </api:arg>
-      <api:arg>
-        <api:type>Number(guint8)</api:type>
+        <api:type>String</api:type>
         <api:name>default_value</api:name>
       </api:arg>
       <api:arg>
@@ -42,13 +34,15 @@
       </api:arg>
     </api:function>
   </info>
-  <title>GObject.param_spec_uchar</title>
+  <title>GObject.ParamSpec.unichar</title>
   <synopsis><code mime="text/x-gjs">
-function param_spec_uchar(name: String, nick: String, blurb: String, minimum: Number(guint8), maximum: Number(guint8), default_value: Number(guint8), flags: <link xref="GObject.ParamFlags">GObject.ParamFlags</link>): <link xref="GObject.ParamSpec">GObject.ParamSpec</link> {
-    // Gjs wrapper for g_param_spec_uchar()
+function unichar(name: String, nick: String, blurb: String, default_value: String, flags: <link xref="GObject.ParamFlags">GObject.ParamFlags</link>): <link xref="GObject.ParamSpec">GObject.ParamSpec</link> {
+    // Gjs wrapper for g_param_spec_unichar()
 }
   </code></synopsis>
-  <p>Creates a new <link xref="GObject.ParamSpecUChar"/> instance specifying a %G_TYPE_UCHAR property.</p>
+  <p>Creates a new <link xref="GObject.ParamSpecUnichar"/> instance specifying a %G_TYPE_UINT
+property. <link xref="GObject.Value"/> structures for this property can be accessed with
+<link xref="GObject.Value.set_uint"/> and <link xref="GObject.Value.get_uint"/>.</p>  <p>See <link xref="GObject.param_spec_internal"/> for details on property names.</p>
 
 <terms>
 <item>
@@ -62,14 +56,6 @@ function param_spec_uchar(name: String, nick: String, blurb: String, minimum: Nu
 <item>
 <title><code>blurb</code></title>
   <p>description of the property specified</p>
-</item>
-<item>
-<title><code>minimum</code></title>
-  <p>minimum value for the property specified</p>
-</item>
-<item>
-<title><code>maximum</code></title>
-  <p>maximum value for the property specified</p>
 </item>
 <item>
 <title><code>default_value</code></title>

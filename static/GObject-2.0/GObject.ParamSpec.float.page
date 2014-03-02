@@ -1,17 +1,17 @@
 <?xml version="1.0"?>
-<page id="GObject.param_spec_object"
+<page id="GObject.ParamSpec.float"
       type="topic"
       style="function"
       xmlns="http://projectmallard.org/1.0/"
       xmlns:api="http://projectmallard.org/experimental/api/"
       xmlns:ui="http://projectmallard.org/1.0/ui/">
   <info>
-    <link xref="index" group="function" type="guide"/>
+    <link xref="GObject.ParamSpec" group="function" type="guide"/>
     <api:function>
       <api:returns>
         <api:type>GObject.ParamSpec</api:type>
       </api:returns>
-      <api:name>g_param_spec_object</api:name>
+      <api:name>g_param_spec_float</api:name>
       <api:arg>
         <api:type>String</api:type>
         <api:name>name</api:name>
@@ -25,8 +25,16 @@
         <api:name>blurb</api:name>
       </api:arg>
       <api:arg>
-        <api:type>GObject.Type</api:type>
-        <api:name>object_type</api:name>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>minimum</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>maximum</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>default_value</api:name>
       </api:arg>
       <api:arg>
         <api:type>GObject.ParamFlags</api:type>
@@ -34,14 +42,13 @@
       </api:arg>
     </api:function>
   </info>
-  <title>GObject.param_spec_object</title>
+  <title>GObject.ParamSpec.float</title>
   <synopsis><code mime="text/x-gjs">
-function param_spec_object(name: String, nick: String, blurb: String, object_type: GObject.Type, flags: <link xref="GObject.ParamFlags">GObject.ParamFlags</link>): <link xref="GObject.ParamSpec">GObject.ParamSpec</link> {
-    // Gjs wrapper for g_param_spec_object()
+function float(name: String, nick: String, blurb: String, minimum: Number(gfloat), maximum: Number(gfloat), default_value: Number(gfloat), flags: <link xref="GObject.ParamFlags">GObject.ParamFlags</link>): <link xref="GObject.ParamSpec">GObject.ParamSpec</link> {
+    // Gjs wrapper for g_param_spec_float()
 }
   </code></synopsis>
-  <p>Creates a new <link xref="GObject.ParamSpecBoxed"/> instance specifying a %G_TYPE_OBJECT
-derived property.</p>  <p>See <link xref="GObject.ParamSpec.internal"/> for details on property names.</p>
+  <p>Creates a new <link xref="GObject.ParamSpecFloat"/> instance specifying a %G_TYPE_FLOAT property.</p>  <p>See <link xref="GObject.param_spec_internal"/> for details on property names.</p>
 
 <terms>
 <item>
@@ -57,8 +64,16 @@ derived property.</p>  <p>See <link xref="GObject.ParamSpec.internal"/> for deta
   <p>description of the property specified</p>
 </item>
 <item>
-<title><code>object_type</code></title>
-  <p>%G_TYPE_OBJECT derived type of this property</p>
+<title><code>minimum</code></title>
+  <p>minimum value for the property specified</p>
+</item>
+<item>
+<title><code>maximum</code></title>
+  <p>maximum value for the property specified</p>
+</item>
+<item>
+<title><code>default_value</code></title>
+  <p>default value for the property specified</p>
 </item>
 <item>
 <title><code>flags</code></title>
