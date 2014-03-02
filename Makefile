@@ -24,33 +24,14 @@ GENERATED_NAMESPACES = \
 	WebKit2-3.0		\
 	WebKit2WebExtension-3.0	\
 	Atk-1.0			\
-	Tracker-1.0		\
 	Gst-1.0			\
-	GUPnP-1.0		\
-	GSSDP-1.0		\
-	GUdev-1.0		\
-	GUsb-1.0		\
-	NMClient-1.0		\
-	NetworkManager-1.0	\
 	Soup-2.4		\
 	TelepathyGLib-0.12	\
-	TelepathyLogger-0.2	\
-	EDataServer-1.2		\
-	EBook-1.2		\
-	EBookContacts-1.2	\
 	Gcr-3			\
 	Gck-1			\
 	Secret-1		\
-	Gda-6.0			\
 	Notify-0.7		\
-	Polkit-1.0		\
-	Champlain-0.12		\
-	GtkChamplain-0.12	\
-	GeocodeGlib-1.0		\
-	GWeather-3.0		\
-	Grl-0.2			\
-	GrlNet-0.2		\
-	GrlPls-0.2
+	GWeather-3.0
 
 NAMESPACES = $(STATIC_NAMESPACES) $(GENERATED_NAMESPACES)
 
