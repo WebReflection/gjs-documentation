@@ -25,7 +25,7 @@ function test_timer_last(): Number(gdouble) {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the last result of <link xref="GLib.test_timer_elapsed"/>, as a double</p>
 </item>
 </terms>
 

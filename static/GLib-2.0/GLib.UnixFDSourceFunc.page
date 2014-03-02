@@ -27,7 +27,7 @@ triggers.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>false</code> if the source should be removed</p>
 </item>
 </terms>
 

@@ -36,7 +36,8 @@ so you cannot call this function after freeing the string.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>The matched substring, or <code>null</code> if an error
+    occurred. You have to free the string yourself</p>
 </item>
 </terms>
 

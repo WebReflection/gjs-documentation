@@ -26,7 +26,7 @@ the time zone of <code>datetime</code>.</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if daylight savings time is in effect</p>
 </item>
 </terms>
 

@@ -45,7 +45,7 @@ cases described in the documentation for g_io_channel_set_encoding ().</p>
 </item>
 <item>
 <title><code>return_value</code></title>
-
+  <p>the status of the operation.</p>
 </item>
 <item>
 <title><code>bytes_written</code></title>

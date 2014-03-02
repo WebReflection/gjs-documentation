@@ -30,7 +30,8 @@ the UTF-8 encoding that this function and <link xref="GLib.getenv"/> provide.</p
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <code>null</code>-terminated
+    list of strings which must be freed with <link xref="GLib.strfreev"/>.</p>
 </item>
 </terms>
 

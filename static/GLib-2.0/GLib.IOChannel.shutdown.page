@@ -35,7 +35,7 @@ last reference is dropped using <link xref="GLib.IOChannel.unref"/>.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the status of the operation.</p>
 </item>
 </terms>
 

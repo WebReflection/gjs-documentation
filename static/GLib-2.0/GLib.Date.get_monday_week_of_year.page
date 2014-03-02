@@ -27,7 +27,7 @@ Monday. If the date is before the first Monday of the year, return
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>week of the year</p>
 </item>
 </terms>
 

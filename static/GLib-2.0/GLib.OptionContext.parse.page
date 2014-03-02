@@ -47,7 +47,8 @@ arguments.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the parsing was successful,
+              <code>false</code> if an error occurred</p>
 </item>
 <item>
 <title><code>argv (out)</code></title>

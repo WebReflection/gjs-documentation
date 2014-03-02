@@ -25,7 +25,7 @@ function get_year(): Number(gint) {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the year represented by <code>datetime</code></p>
 </item>
 </terms>
 

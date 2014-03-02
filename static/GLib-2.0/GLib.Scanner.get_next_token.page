@@ -28,7 +28,7 @@ the <link xref="GLib.Scanner"/> structure.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the type of the token</p>
 </item>
 </terms>
 

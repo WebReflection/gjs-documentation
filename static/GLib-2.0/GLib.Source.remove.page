@@ -38,7 +38,7 @@ added to a non-default main context.</p>  <p>It is a programmer error to attempt
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p>For historical reasons, this function always returns <code>true</code></p>
 </item>
 </terms>
 

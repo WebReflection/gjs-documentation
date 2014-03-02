@@ -29,7 +29,7 @@ have a default priority of %G_PRIORITY_DEFAULT.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the newly-created idle source</p>
 </item>
 </terms>
 

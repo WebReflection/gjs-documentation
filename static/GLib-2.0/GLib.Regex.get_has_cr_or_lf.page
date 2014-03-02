@@ -25,7 +25,7 @@ function get_has_cr_or_lf(): Boolean {
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the pattern contains explicit CR or LF references</p>
 </item>
 </terms>
 

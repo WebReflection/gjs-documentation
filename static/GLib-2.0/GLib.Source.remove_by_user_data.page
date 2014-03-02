@@ -35,7 +35,7 @@ data, only one will be destroyed.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if a source was found and removed.</p>
 </item>
 </terms>
 

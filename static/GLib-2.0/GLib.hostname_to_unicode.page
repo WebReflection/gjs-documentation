@@ -37,7 +37,8 @@ the canonical presentation form will be entirely ASCII.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a UTF-8 hostname, which must be freed, or <code>null</code> if
+<code>hostname</code> is in some way invalid.</p>
 </item>
 </terms>
 

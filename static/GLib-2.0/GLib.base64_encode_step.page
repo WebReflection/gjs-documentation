@@ -69,7 +69,7 @@ or certain other protocols.</p>
 </item>
 <item>
 <title><code>return_value</code></title>
-
+  <p>The number of bytes of output that was written</p>
 </item>
 <item>
 <title><code>out</code></title>

@@ -27,7 +27,7 @@ after you free <code>match_info</code> object.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p><link xref="GLib.Regex"/> object used in <code>match_info</code></p>
 </item>
 </terms>
 

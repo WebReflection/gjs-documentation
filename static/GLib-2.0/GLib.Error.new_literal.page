@@ -52,7 +52,7 @@ that could include printf() escape sequences.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="GLib.Error"/></p>
 </item>
 </terms>
 

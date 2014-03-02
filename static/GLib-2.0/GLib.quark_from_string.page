@@ -35,7 +35,7 @@ using a copy of the string.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the <link xref="GLib.Quark"/> identifying the string, or 0 if <code>string</code> is <code>null</code></p>
 </item>
 </terms>
 

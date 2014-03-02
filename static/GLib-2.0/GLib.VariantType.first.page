@@ -30,7 +30,7 @@ interface over tuple and dictionary entry types.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the first item type of <code>type</code>, or <code>null</code></p>  <p>Since 2.24</p>
 </item>
 </terms>
 

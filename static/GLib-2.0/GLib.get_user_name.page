@@ -28,7 +28,7 @@ consistent on a machine. On Windows, it is always UTF-8.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the user name of the current user.</p>
 </item>
 </terms>
 

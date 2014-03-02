@@ -45,7 +45,7 @@ set to either a <link xref="GLib.FileError"/> or <link xref="GLib.KeyFileError"/
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if a key file could be loaded, <code>false</code> othewise</p>
 </item>
 <item>
 <title><code>full_path</code></title>

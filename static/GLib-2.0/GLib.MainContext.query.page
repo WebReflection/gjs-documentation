@@ -34,7 +34,9 @@ function query(max_priority: Number(gint)): [return_value: Number(gint), timeout
 </item>
 <item>
 <title><code>return_value</code></title>
-
+  <p>the number of records actually stored in <code>fds</code>,
+  or, if more than <code>n_fds</code> records need to be stored, the number
+  of records that need to be stored.</p>
 </item>
 <item>
 <title><code>timeout_</code></title>

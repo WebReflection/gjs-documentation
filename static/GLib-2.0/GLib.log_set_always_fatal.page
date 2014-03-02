@@ -39,7 +39,7 @@ the `G_DEBUG` environment variable (see
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the old fatal mask</p>
 </item>
 </terms>
 

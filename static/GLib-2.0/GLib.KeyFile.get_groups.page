@@ -27,7 +27,8 @@ The array of returned groups will be <code>null</code>-terminated, so
 <terms>
 <item>
 <title><code>return_value</code></title>
-
+  <p>a newly-allocated <code>null</code>-terminated array of strings.
+  Use <link xref="GLib.strfreev"/> to free it.</p>
 </item>
 <item>
 <title><code>length</code></title>

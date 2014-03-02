@@ -77,7 +77,7 @@ when you are done with it.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the requested timezone</p>
 </item>
 </terms>
 

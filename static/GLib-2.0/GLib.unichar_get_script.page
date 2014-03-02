@@ -37,7 +37,7 @@ two are interchangeable.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the <link xref="GLib.UnicodeScript"/> for the character.</p>
 </item>
 </terms>
 

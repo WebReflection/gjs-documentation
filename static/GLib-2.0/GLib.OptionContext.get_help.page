@@ -47,7 +47,7 @@ To obtain the help text for an option group, call
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A newly allocated string containing the help text</p>
 </item>
 </terms>
 

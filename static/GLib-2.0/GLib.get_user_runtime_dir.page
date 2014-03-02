@@ -35,7 +35,7 @@ what <link xref="GLib.get_user_config_dir"/> returns.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a string owned by GLib that must not be modified or freed.</p>
 </item>
 </terms>
 

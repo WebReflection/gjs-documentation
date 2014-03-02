@@ -27,7 +27,8 @@ bytes object, because a <link xref="GLib.Bytes"/> should be immutable.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A newly allocated <link xref="GLib.Bytes"/> referencing data
+    from <code>file</code></p>
 </item>
 </terms>
 

@@ -26,7 +26,7 @@ this function from any thread.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the passed in <link xref="GLib.MappedFile"/>.</p>
 </item>
 </terms>
 

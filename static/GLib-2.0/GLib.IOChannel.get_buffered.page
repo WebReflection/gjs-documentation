@@ -25,7 +25,7 @@ function get_buffered(): Boolean {
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the <code>channel</code> is buffered.</p>
 </item>
 </terms>
 

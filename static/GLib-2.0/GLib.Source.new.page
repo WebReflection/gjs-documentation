@@ -47,7 +47,7 @@ executed.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the newly-created <link xref="GLib.Source"/>.</p>
 </item>
 </terms>
 

@@ -46,7 +46,7 @@ instance takes ownership of <code>child</code>.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a floating reference to a new <link xref="GLib.Variant"/> maybe instance</p>
 </item>
 </terms>
 

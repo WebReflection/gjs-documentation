@@ -60,7 +60,7 @@ termination and validates child program outputs.</p>  <p>|[&lt;!-- language="C" 
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> for the forked child and <code>false</code> for the executing parent process.</p>
 </item>
 </terms>
 

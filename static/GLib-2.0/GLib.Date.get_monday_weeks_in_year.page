@@ -39,7 +39,7 @@ one of the extra days happens to be a Monday.)</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>number of Mondays in the year</p>
 </item>
 </terms>
 

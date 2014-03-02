@@ -34,7 +34,7 @@ e.g. if <code>number</code> is 4, 3 bits are needed.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the number of bits used to hold <code>number</code></p>
 </item>
 </terms>
 

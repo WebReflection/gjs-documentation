@@ -25,7 +25,7 @@ function test_trap_reached_timeout(): Boolean {
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the last test subprocess got killed due to a timeout.</p>
 </item>
 </terms>
 

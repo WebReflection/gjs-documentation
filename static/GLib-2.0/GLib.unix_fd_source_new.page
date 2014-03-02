@@ -42,7 +42,7 @@ descriptor.</p>  <p>The source will never close the fd -- you must do it yoursel
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the newly created <link xref="GLib.Source"/></p>
 </item>
 </terms>
 

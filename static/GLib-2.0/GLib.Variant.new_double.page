@@ -33,7 +33,7 @@ function new_double(value: Number(gdouble)): <link xref="GLib.Variant">GLib.Vari
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a floating reference to a new double <link xref="GLib.Variant"/> instance</p>
 </item>
 </terms>
 

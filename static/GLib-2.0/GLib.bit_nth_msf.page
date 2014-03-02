@@ -45,7 +45,7 @@ usually). To start searching from the last bit, set <code>nth_bit</code> to
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the index of the first bit set which is lower than <code>nth_bit</code></p>
 </item>
 </terms>
 

@@ -35,7 +35,10 @@ so it should not be used as a character string.</p>
 </item>
 <item>
 <title><code>return_value</code></title>
-
+  <p>
+              newly allocated buffer containing the binary data
+              that <code>text</code> represents. The returned buffer must
+              be freed with <link xref="GLib.free"/>.</p>
 </item>
 <item>
 <title><code>out_len</code></title>

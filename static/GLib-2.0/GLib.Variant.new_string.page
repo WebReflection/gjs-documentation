@@ -33,7 +33,7 @@ function new_string(string: String): <link xref="GLib.Variant">GLib.Variant</lin
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a floating reference to a new string <link xref="GLib.Variant"/> instance</p>
 </item>
 </terms>
 

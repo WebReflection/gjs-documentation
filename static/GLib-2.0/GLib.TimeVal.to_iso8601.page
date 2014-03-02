@@ -38,7 +38,7 @@ variation of ISO 8601 format is required.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly allocated string containing an ISO 8601 date</p>
 </item>
 </terms>
 

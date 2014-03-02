@@ -70,7 +70,7 @@ does not contain any multibyte characters. GLib offers the
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>string</code> matches <code>pspec</code></p>
 </item>
 </terms>
 

@@ -59,7 +59,8 @@ and <link xref="GLib.Hmac.unref"/>.</p>  <p>The hexadecimal string returned will
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the HMAC of the binary data as a string in hexadecimal.
+  The returned string should be freed with <link xref="GLib.free"/> when done using it.</p>
 </item>
 </terms>
 

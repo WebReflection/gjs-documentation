@@ -54,7 +54,8 @@ change in future versions of GLib.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if child exited successfully, <code>false</code> otherwise (and
+    @error will be set)</p>
 </item>
 </terms>
 

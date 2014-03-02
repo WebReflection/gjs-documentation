@@ -33,7 +33,7 @@ any symbols that may have been added or removed in the new scope.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the type of the token</p>
 </item>
 </terms>
 

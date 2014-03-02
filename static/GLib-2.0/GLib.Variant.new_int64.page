@@ -33,7 +33,7 @@ function new_int64(value: Number(gint64)): <link xref="GLib.Variant">GLib.Varian
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a floating reference to a new int64 <link xref="GLib.Variant"/> instance</p>
 </item>
 </terms>
 

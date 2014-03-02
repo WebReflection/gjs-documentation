@@ -25,7 +25,7 @@ function random_double(): Number(gdouble) {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a random number</p>
 </item>
 </terms>
 

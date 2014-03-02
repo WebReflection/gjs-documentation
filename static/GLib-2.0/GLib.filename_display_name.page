@@ -43,7 +43,8 @@ translation of filenames.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly allocated string containing
+  a rendition of the filename in valid UTF-8</p>
 </item>
 </terms>
 

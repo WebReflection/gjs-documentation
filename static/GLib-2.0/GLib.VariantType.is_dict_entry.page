@@ -28,7 +28,7 @@ definite subtype is a dictionary entry type --
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>type</code> is a dictionary entry type</p>  <p>Since 2.24</p>
 </item>
 </terms>
 

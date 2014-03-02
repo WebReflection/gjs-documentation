@@ -26,7 +26,7 @@ the <link xref="GLib.IOChannel"/>.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the file descriptor of the <link xref="GLib.IOChannel"/>.</p>
 </item>
 </terms>
 

@@ -33,7 +33,7 @@ function new_int16(value: Number(gint16)): <link xref="GLib.Variant">GLib.Varian
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a floating reference to a new int16 <link xref="GLib.Variant"/> instance</p>
 </item>
 </terms>
 

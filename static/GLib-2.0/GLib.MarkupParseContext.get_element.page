@@ -27,7 +27,7 @@ elements, see <link xref="GLib.MarkupParseContext.get_element_stack"/>.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the name of the currently open element, or <code>null</code></p>
 </item>
 </terms>
 

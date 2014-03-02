@@ -56,7 +56,9 @@ be <code>null</code>.</p>
 </item>
 <item>
 <title><code>return_value</code></title>
-
+  <p>a newly allocated <code>null</code>-terminated string array
+  or <code>null</code> if the key isn't found. The string array should be freed
+  with <link xref="GLib.strfreev"/>.</p>
 </item>
 <item>
 <title><code>length</code></title>

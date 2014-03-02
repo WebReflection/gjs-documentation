@@ -36,7 +36,8 @@ separator is returned. If <code>file_name</code> is empty, it gets ".".</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly allocated string containing the last
+   component of the filename</p>
 </item>
 </terms>
 

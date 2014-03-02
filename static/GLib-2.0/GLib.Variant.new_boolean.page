@@ -33,7 +33,7 @@ function new_boolean(value: Boolean): <link xref="GLib.Variant">GLib.Variant</li
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a floating reference to a new boolean <link xref="GLib.Variant"/> instance</p>
 </item>
 </terms>
 

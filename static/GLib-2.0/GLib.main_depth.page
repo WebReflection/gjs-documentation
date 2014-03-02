@@ -101,7 +101,7 @@ following techniques:</p>  <p>1. Use gtk_widget_set_sensitive() or modal dialogs
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>The main loop recursion level in the current thread</p>
 </item>
 </terms>
 

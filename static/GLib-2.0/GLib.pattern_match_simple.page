@@ -44,7 +44,7 @@ the pattern once with <link xref="GLib.PatternSpec.new"/> and call
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>string</code> matches @pspec</p>
 </item>
 </terms>
 

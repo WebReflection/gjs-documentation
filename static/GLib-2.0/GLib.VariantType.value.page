@@ -25,7 +25,7 @@ function value(): <link xref="GLib.VariantType">GLib.VariantType</link> {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the value type of the dictionary entry</p>  <p>Since 2.24</p>
 </item>
 </terms>
 

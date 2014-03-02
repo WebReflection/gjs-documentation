@@ -41,7 +41,7 @@ domain. Free the returned vector with <link xref="GLib.strfreev"/>.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> on success, <code>false</code> if error set</p>
 </item>
 <item>
 <title><code>argvp</code></title>

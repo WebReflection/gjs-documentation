@@ -34,7 +34,8 @@ digit.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>If <code>c</code> is a decimal digit (according to
+<link xref="GLib.unichar_isdigit"/>), its numeric value. Otherwise, -1.</p>
 </item>
 </terms>
 

@@ -31,7 +31,7 @@ been called).</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>human-readable application name. may return <code>null</code></p>
 </item>
 </terms>
 

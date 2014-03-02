@@ -33,7 +33,9 @@ function unichar_tolower(c: String): String {
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the result of converting <code>c</code> to lower case.
+              If <code>c</code> is not an upperlower or titlecase character,
+              or has no lowercase equivalent <code>c</code> is returned unchanged.</p>
 </item>
 </terms>
 

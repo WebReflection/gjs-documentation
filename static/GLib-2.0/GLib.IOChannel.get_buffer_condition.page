@@ -27,7 +27,7 @@ the <link xref="GLib.IOChannel"/>. Only the flags <link xref="GLib.IOCondition"/
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A <link xref="GLib.IOCondition"/></p>
 </item>
 </terms>
 

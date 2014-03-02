@@ -35,7 +35,8 @@ on your system.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>0 if the directory was successfully removed, -1 if an error
+   occurred</p>
 </item>
 </terms>
 

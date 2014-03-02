@@ -32,7 +32,8 @@ on a <link xref="GLib.IOChannel"/> is satisfied.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p>the function should return <code>false</code> if the event source
+         should be removed</p>
 </item>
 </terms>
 

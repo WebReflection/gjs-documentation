@@ -44,7 +44,7 @@ usually). To start searching from the 0th bit, set <code>nth_bit</code> to -1.</
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the index of the first bit set which is higher than <code>nth_bit</code></p>
 </item>
 </terms>
 

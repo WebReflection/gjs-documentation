@@ -28,7 +28,8 @@ strings, for &lt;option&gt;--help&lt;/option&gt; output.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a translation of the string for the current locale.
+ The returned string is owned by GLib and must not be freed.</p>
 </item>
 </terms>
 

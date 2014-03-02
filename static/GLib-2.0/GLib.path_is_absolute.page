@@ -48,7 +48,7 @@ Windows-specific code.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>file_name</code> is absolute</p>
 </item>
 </terms>
 

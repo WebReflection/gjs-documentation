@@ -53,7 +53,10 @@ handling.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>an unescaped version of <code>escaped_string</code> or <code>null</code> on error.
+The returned string should be freed when no longer needed.  As a
+special case if <code>null</code> is given for <code>escaped_string</code>, this function
+will return <code>null</code>.</p>
 </item>
 </terms>
 

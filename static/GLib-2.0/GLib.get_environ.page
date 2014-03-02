@@ -28,7 +28,8 @@ except portable.</p>  <p>The return value is freshly allocated and it should be 
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the list of
+    environment variables</p>
 </item>
 </terms>
 

@@ -28,7 +28,8 @@ by g_io_channel_new_file (), and <code>false</code> for all other channels.</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p>Whether the channel will be closed on the final unref of
+              the GIOChannel data structure.</p>
 </item>
 </terms>
 

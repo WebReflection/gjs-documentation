@@ -43,7 +43,8 @@ on it anymore.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the newly created <link xref="GLib.Checksum"/>, or <code>null</code>.
+  Use <link xref="GLib.Checksum.free"/> to free the memory allocated by it.</p>
 </item>
 </terms>
 

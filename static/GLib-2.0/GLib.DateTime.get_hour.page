@@ -25,7 +25,7 @@ function get_hour(): Number(gint) {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the hour of the day</p>
 </item>
 </terms>
 

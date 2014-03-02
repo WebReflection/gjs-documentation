@@ -44,7 +44,8 @@ component following Section 3.3. of RFC 2396.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly-allocated string holding the resulting
+              URI, or <code>null</code> on an error.</p>
 </item>
 </terms>
 

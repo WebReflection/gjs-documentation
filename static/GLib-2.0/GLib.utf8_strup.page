@@ -45,7 +45,8 @@ German ess-zet will be changed to SS.)</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly allocated string, with all characters
+   converted to uppercase.</p>
 </item>
 </terms>
 

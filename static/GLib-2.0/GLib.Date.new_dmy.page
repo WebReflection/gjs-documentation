@@ -51,7 +51,7 @@ returned date will be valid.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly-allocated <link xref="GLib.Date"/> initialized with <code>day</code>, <code>month</code>, and <code>year</code></p>
 </item>
 </terms>
 

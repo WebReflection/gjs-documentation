@@ -31,7 +31,7 @@ to <link xref="GLib.Regex.replace_eval"/>, and it should append the replacement 
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>false</code> to continue the replacement process, <code>true</code> to stop it</p>
 </item>
 </terms>
 

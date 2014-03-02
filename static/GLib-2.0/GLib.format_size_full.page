@@ -42,7 +42,8 @@ that modify the output. See <link xref="GLib.FormatSizeFlags"/>.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly-allocated formatted string containing a human
+    readable file size</p>
 </item>
 </terms>
 

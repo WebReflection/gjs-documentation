@@ -25,7 +25,7 @@ function read_chars(): [return_value: <link xref="GLib.IOStatus">GLib.IOStatus</
 <terms>
 <item>
 <title><code>return_value</code></title>
-
+  <p>the status of the operation.</p>
 </item>
 <item>
 <title><code>buf</code></title>

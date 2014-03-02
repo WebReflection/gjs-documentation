@@ -36,7 +36,7 @@ character of the string, you must use <link xref="GLib.utf8_find_prev_char"/> in
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a pointer to the found character</p>
 </item>
 </terms>
 

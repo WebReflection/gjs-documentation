@@ -44,7 +44,8 @@ characters in the string changing.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly allocated string, with all characters
+   converted to lowercase.</p>
 </item>
 </terms>
 

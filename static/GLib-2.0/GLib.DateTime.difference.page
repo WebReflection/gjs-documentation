@@ -35,7 +35,8 @@ positive if the first parameter is larger).</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the difference between the two <link xref="GLib.DateTime"/>, as a time
+  span expressed in microseconds.</p>
 </item>
 </terms>
 

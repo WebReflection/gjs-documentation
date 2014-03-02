@@ -25,7 +25,7 @@ function new(): <link xref="GLib.MainContext">GLib.MainContext</link> {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the new <link xref="GLib.MainContext"/></p>
 </item>
 </terms>
 

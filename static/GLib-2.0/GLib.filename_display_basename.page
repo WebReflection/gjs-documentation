@@ -42,7 +42,8 @@ whole path, as it allows translation.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly allocated string containing
+  a rendition of the basename of the filename in valid UTF-8</p>
 </item>
 </terms>
 

@@ -43,7 +43,7 @@ matched against more than one pattern, consider using
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>string</code> matches <code>pspec</code></p>
 </item>
 </terms>
 

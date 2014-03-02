@@ -41,7 +41,8 @@ function unicode_canonical_decomposition(ch: String, result_len: Number(gsize)):
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly allocated string of Unicode characters.
+  <code>result_len</code> is set to the resulting length of the string.</p>
 </item>
 </terms>
 

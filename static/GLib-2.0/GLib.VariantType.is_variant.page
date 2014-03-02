@@ -25,7 +25,7 @@ function is_variant(): Boolean {
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>type</code> is the variant type</p>  <p>Since 2.24</p>
 </item>
 </terms>
 

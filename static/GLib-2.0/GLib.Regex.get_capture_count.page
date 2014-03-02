@@ -25,7 +25,7 @@ function get_capture_count(): Number(gint) {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the number of capturing subpatterns</p>
 </item>
 </terms>
 

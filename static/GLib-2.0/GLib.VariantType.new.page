@@ -36,7 +36,7 @@ string.  Use <link xref="GLib.variant_type_string_is_valid"/> if you are unsure.
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="GLib.VariantType"/></p>
 </item>
 </terms>
 

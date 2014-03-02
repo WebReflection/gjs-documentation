@@ -35,7 +35,8 @@ there's no worry about sign extension if characters are signed.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>If <code>c</code> is a decimal digit (according to g_ascii_isdigit()),
+   its numeric value. Otherwise, -1.</p>
 </item>
 </terms>
 

@@ -60,7 +60,10 @@ version <code>required_major</code>.required_minor.<code>required_micro</code>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p><code>null</code> if the GLib library is compatible with the
+    given version, or a string describing the version mismatch.
+    The returned string is owned by GLib and must not be modified
+    or freed.</p>
 </item>
 </terms>
 

@@ -39,7 +39,8 @@ before passing a possibly non-ASCII character in.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the result of converting <code>c</code> to lower case. If <code>c</code> is
+    not an ASCII upper case letter, <code>c</code> is returned unchanged.</p>
 </item>
 </terms>
 

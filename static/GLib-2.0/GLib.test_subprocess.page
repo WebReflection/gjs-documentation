@@ -26,7 +26,8 @@ program is running under <link xref="GLib.test_trap_subprocess"/>.</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the test program is running under
+<link xref="GLib.test_trap_subprocess"/>.</p>
 </item>
 </terms>
 

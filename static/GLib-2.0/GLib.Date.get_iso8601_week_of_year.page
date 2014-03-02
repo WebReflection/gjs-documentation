@@ -26,7 +26,7 @@ to ISO 8601.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>ISO 8601 week number of the year.</p>
 </item>
 </terms>
 

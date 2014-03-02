@@ -41,7 +41,7 @@ function remove_key(group_name: String, key: String): Boolean {
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the key was removed, <code>false</code> otherwise</p>
 </item>
 </terms>
 

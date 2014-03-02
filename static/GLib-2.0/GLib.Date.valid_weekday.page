@@ -34,7 +34,7 @@ values are the only valid weekdays.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the weekday is valid</p>
 </item>
 </terms>
 

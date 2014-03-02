@@ -84,7 +84,9 @@ could combine with the base character.)</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>If the conversion was successful, a newly allocated
+              nul-terminated string, which must be freed with
+              <link xref="GLib.free"/>. Otherwise <code>null</code> and @error will be set.</p>
 </item>
 </terms>
 

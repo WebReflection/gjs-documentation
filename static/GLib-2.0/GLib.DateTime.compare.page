@@ -42,7 +42,8 @@ as a <link xref="GLib.CompareFunc"/>. Both #GDateTimes must be non-<code>null</c
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>-1, 0 or 1 if <code>dt1</code> is less than, equal to or greater
+  than <code>dt2</code>.</p>
 </item>
 </terms>
 

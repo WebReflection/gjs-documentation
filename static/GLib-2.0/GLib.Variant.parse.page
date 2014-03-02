@@ -70,7 +70,7 @@ produced by <link xref="GLib.Variant.print"/>".</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a reference to a <link xref="GLib.Variant"/>, or <code>null</code></p>
 </item>
 </terms>
 

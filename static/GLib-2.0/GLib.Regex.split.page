@@ -53,7 +53,8 @@ For example splitting "ab c" using as a separator "\s*", you will get
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <code>null</code>-terminated gchar ** array. Free
+it using <link xref="GLib.strfreev"/></p>
 </item>
 </terms>
 

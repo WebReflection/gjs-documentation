@@ -42,7 +42,7 @@ be interrupted for other reasons than an event source becoming ready.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if events were dispatched.</p>
 </item>
 </terms>
 

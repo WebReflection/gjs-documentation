@@ -52,7 +52,7 @@ case.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the interval containing <code>time_</code>, or -1 in case of failure</p>
 </item>
 </terms>
 

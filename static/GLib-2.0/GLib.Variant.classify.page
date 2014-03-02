@@ -25,7 +25,7 @@ function classify(): <link xref="GLib.VariantClass">GLib.VariantClass</link> {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the <link xref="GLib.VariantClass"/> of <code>value</code></p>
 </item>
 </terms>
 

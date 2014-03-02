@@ -26,7 +26,7 @@ the string passed to <link xref="GLib.Regex.new"/>.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the pattern of <code>regex</code></p>
 </item>
 </terms>
 

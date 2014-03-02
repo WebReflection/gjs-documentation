@@ -43,7 +43,7 @@ doing anything else with it.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the text was valid UTF-8</p>
 </item>
 <item>
 <title><code>end</code></title>

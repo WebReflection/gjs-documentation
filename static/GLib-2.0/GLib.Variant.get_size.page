@@ -31,7 +31,7 @@ involved.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the serialised size of <code>value</code></p>
 </item>
 </terms>
 

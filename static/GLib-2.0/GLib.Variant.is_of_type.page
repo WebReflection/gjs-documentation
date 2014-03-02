@@ -33,7 +33,7 @@ function is_of_type(type: <link xref="GLib.VariantType">GLib.VariantType</link>)
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the type of <code>value</code> matches <code>type</code></p>
 </item>
 </terms>
 

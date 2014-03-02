@@ -28,7 +28,7 @@ similar cases.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>Number of schedulable threads, always greater than 0</p>
 </item>
 </terms>
 

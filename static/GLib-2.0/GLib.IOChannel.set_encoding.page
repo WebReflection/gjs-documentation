@@ -48,7 +48,7 @@ calling one of the API "read" functions.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p><link xref="GLib.IOStatus"/>.normal if the encoding was successfully set</p>
 </item>
 </terms>
 

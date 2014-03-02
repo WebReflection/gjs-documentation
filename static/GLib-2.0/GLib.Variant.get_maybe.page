@@ -26,7 +26,7 @@ value is Nothing, then this function returns <code>null</code>.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the contents of <code>value</code>, or <code>null</code></p>
 </item>
 </terms>
 

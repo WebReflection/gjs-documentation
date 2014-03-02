@@ -43,7 +43,8 @@ large positive results without truncation.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the value associated with the key as an unsigned 64-bit integer,
+or 0 if the key was not found or could not be parsed.</p>
 </item>
 </terms>
 

@@ -34,7 +34,7 @@ standard.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the character has an assigned value</p>
 </item>
 </terms>
 

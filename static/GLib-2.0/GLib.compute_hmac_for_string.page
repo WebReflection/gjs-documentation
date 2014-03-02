@@ -57,7 +57,9 @@ function compute_hmac_for_string(digest_type: <link xref="GLib.ChecksumType">GLi
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the HMAC as a hexadecimal string.
+    The returned string should be freed with <link xref="GLib.free"/>
+    when done using it.</p>
 </item>
 </terms>
 

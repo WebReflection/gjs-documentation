@@ -76,7 +76,7 @@ how these functions work on Windows.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> on success, <code>false</code> if an error was set</p>
 </item>
 <item>
 <title><code>standard_output</code></title>

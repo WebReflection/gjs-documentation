@@ -35,7 +35,8 @@ indicates autodetection.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>The line termination string. This value
+  is owned by GLib and must not be freed.</p>
 </item>
 </terms>
 

@@ -50,7 +50,8 @@ to the <link xref="GLib.FileError"/> value #G_FILE_ERROR_INVAL.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly allocated <link xref="GLib.MappedFile"/> which must be unref'd
+   with <link xref="GLib.MappedFile.unref"/>, or <code>null</code> if the mapping failed.</p>
 </item>
 </terms>
 

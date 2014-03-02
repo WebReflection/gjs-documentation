@@ -43,7 +43,7 @@ is not very important since calling <link xref="GLib.MainLoop.run"/> will set th
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="GLib.MainLoop"/>.</p>
 </item>
 </terms>
 

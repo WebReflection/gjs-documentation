@@ -35,7 +35,8 @@ by overwriting the input data.</p>
 </item>
 <item>
 <title><code>return_value</code></title>
-
+  <p>The binary data that <code>text</code> responds. This pointer
+              is the same as the input <code>text</code>.</p>
 </item>
 <item>
 <title><code>text (out)</code></title>

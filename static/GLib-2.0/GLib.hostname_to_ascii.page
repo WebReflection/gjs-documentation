@@ -35,7 +35,8 @@ trailing dot.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>an ASCII hostname, which must be freed, or <code>null</code> if
+<code>hostname</code> is in some way invalid.</p>
 </item>
 </terms>
 

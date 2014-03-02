@@ -28,7 +28,7 @@ a reference to the variant data.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A new <link xref="GLib.Bytes"/> representing the variant data</p>
 </item>
 </terms>
 

@@ -28,7 +28,7 @@ is <link xref="GLib.IOStatus"/>.normal.</p>
 <terms>
 <item>
 <title><code>return_value</code></title>
-
+  <p>the status of the operation.</p>
 </item>
 <item>
 <title><code>str_return</code></title>

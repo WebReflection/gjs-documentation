@@ -41,7 +41,9 @@ function strip_context(msgid: String, msgval: String): String {
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p><code>msgval</code>, unless <code>msgval</code> is identical to <code>msgid</code>
+    and contains a '|' character, in which case a pointer to
+    the substring of msgid after the first '|' character is returned.</p>
 </item>
 </terms>
 

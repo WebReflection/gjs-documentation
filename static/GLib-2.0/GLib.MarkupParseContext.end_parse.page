@@ -27,7 +27,7 @@ for example if elements are still open.</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> on success, <code>false</code> if an error was set</p>
 </item>
 </terms>
 

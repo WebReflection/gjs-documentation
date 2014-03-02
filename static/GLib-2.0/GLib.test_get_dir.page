@@ -35,7 +35,7 @@ but you don't need to free the return value.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the path of the directory, owned by GLib</p>
 </item>
 </terms>
 

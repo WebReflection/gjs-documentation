@@ -34,7 +34,7 @@ contains no bytes with the high bit set.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>str</code> is ASCII</p>
 </item>
 </terms>
 

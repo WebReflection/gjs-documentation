@@ -26,7 +26,9 @@ updated with <link xref="GLib.Hmac.update"/>.</p>  <p>The hexadecimal characters
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the hexadecimal representation of the HMAC. The
+  returned string is owned by the HMAC and should not be modified
+  or freed.</p>
 </item>
 </terms>
 

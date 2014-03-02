@@ -71,7 +71,7 @@ the [current locale][setlocale].</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>The converted string, or <code>null</code> on an error.</p>
 </item>
 </terms>
 

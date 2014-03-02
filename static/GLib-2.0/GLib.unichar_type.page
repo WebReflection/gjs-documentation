@@ -33,7 +33,7 @@ function unichar_type(c: String): <link xref="GLib.UnicodeType">GLib.UnicodeType
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the type of the character.</p>
 </item>
 </terms>
 

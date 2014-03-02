@@ -35,7 +35,7 @@ Both dates must be valid.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the number of days between <code>date1</code> and <code>date2</code></p>
 </item>
 </terms>
 

@@ -67,7 +67,7 @@ where the C library only complies to C89.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>number of characters written to the buffer, or 0 the buffer was too small</p>
 </item>
 </terms>
 

@@ -46,7 +46,8 @@ handling.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>an unescaped version of <code>escaped_string</code>. The returned string
+should be freed when no longer needed.</p>
 </item>
 </terms>
 

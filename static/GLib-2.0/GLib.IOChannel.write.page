@@ -49,7 +49,7 @@ function write(buf: String, count: Number(gsize), bytes_written: Number(gsize)):
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p><link xref="GLib.IOError"/>.none if the operation was successful.</p>
 </item>
 </terms>
 

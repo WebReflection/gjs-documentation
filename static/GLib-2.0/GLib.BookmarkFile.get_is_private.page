@@ -36,7 +36,7 @@ event that the private flag cannot be found, <code>false</code> is returned and
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the private flag is set, <code>false</code> otherwise.</p>
 </item>
 </terms>
 

@@ -43,7 +43,10 @@ name encoding.</p>
 </item>
 <item>
 <title><code>return_value</code></title>
-
+  <p>A file handle (as from open()) to the file opened for
+    reading and writing. The file is opened in binary mode on platforms
+    where there is a difference. The file handle should be closed with
+    close(). In case of errors, -1 is returned and @error will be set.</p>
 </item>
 <item>
 <title><code>name_used</code></title>

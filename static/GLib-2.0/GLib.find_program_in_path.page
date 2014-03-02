@@ -47,7 +47,7 @@ including the type suffix.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly-allocated string with the absolute path, or <code>null</code></p>
 </item>
 </terms>
 

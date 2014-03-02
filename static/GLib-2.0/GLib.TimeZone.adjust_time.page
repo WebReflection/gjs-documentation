@@ -50,7 +50,7 @@ adjusted time.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the interval containing <code>time_</code>, never -1</p>
 </item>
 </terms>
 

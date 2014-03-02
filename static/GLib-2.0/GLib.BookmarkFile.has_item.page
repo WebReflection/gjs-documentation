@@ -33,7 +33,7 @@ function has_item(uri: String): Boolean {
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>uri</code> is inside <code>bookmark</code>, <code>false</code> otherwise</p>
 </item>
 </terms>
 

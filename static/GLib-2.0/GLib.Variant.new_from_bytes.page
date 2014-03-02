@@ -51,7 +51,7 @@ called from various functions in gvariant.c.</p>  <p>A reference is taken on <co
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="GLib.Variant"/> with a floating reference</p>
 </item>
 </terms>
 

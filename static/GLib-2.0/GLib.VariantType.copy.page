@@ -26,7 +26,7 @@ function copy(): <link xref="GLib.VariantType">GLib.VariantType</link> {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="GLib.VariantType"/></p>  <p>Since 2.24</p>
 </item>
 </terms>
 

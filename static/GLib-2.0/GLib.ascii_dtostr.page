@@ -54,7 +54,7 @@ be larger than @G_ASCII_DTOSTR_BUF_SIZE bytes.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>The pointer to the buffer with the converted string.</p>
 </item>
 </terms>
 

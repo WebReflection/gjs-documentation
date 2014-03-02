@@ -59,7 +59,7 @@ but use the C_() macro for translations with context.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>The translated string</p>
 </item>
 </terms>
 

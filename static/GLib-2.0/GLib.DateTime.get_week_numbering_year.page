@@ -41,7 +41,7 @@ Monday, so this function never returns 0.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the ISO 8601 week-numbering year for <code>datetime</code></p>
 </item>
 </terms>
 

@@ -70,7 +70,7 @@ freeing or modifying <code>string</code> then the behaviour is undefined.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> is the string matched, <code>false</code> otherwise</p>
 </item>
 <item>
 <title><code>match_info</code></title>

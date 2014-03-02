@@ -27,7 +27,7 @@ back references.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the number of the highest back reference</p>
 </item>
 </terms>
 

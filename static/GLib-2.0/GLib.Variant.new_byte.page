@@ -33,7 +33,7 @@ function new_byte(value: Number(guint8)): <link xref="GLib.Variant">GLib.Variant
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a floating reference to a new byte <link xref="GLib.Variant"/> instance</p>
 </item>
 </terms>
 

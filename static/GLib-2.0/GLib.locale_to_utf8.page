@@ -71,7 +71,8 @@ system) in the [current locale][setlocale] into a UTF-8 string.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A newly-allocated buffer containing the converted string,
+              or <code>null</code> on an error, and error will be set.</p>
 </item>
 </terms>
 

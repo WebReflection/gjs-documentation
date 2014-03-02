@@ -33,7 +33,7 @@ function set_flags(flags: <link xref="GLib.IOFlags">GLib.IOFlags</link>): <link 
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the status of the operation.</p>
 </item>
 </terms>
 

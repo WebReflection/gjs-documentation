@@ -28,7 +28,7 @@ with D-Bus, you probably don't need them.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a #gint32</p>
 </item>
 </terms>
 

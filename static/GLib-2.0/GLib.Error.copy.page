@@ -25,7 +25,7 @@ function copy(): <link xref="GLib.Error">GLib.Error</link> {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="GLib.Error"/></p>
 </item>
 </terms>
 

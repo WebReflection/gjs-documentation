@@ -41,7 +41,10 @@ function ascii_strup(str: String, len: Number(gssize)): String {
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly allocated string, with all the lower case
+    characters in <code>str</code> converted to upper case, with semantics that
+    exactly match <link xref="GLib.ascii_toupper"/>. (Note that this is unlike the
+    old <link xref="GLib.strup"/>, which modified the string in place.)</p>
 </item>
 </terms>
 

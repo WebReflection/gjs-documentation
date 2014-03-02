@@ -48,7 +48,7 @@ on a system might be in any random encoding or just gibberish.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the filename encoding is UTF-8.</p>
 </item>
 </terms>
 

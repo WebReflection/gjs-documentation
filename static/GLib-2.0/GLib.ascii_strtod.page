@@ -54,7 +54,7 @@ you can reliably detect overflow and underflow.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the #gdouble value.</p>
 </item>
 </terms>
 

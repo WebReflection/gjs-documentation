@@ -43,7 +43,7 @@ function check(max_priority: Number(gint), fds: Array(<link xref="GLib.PollFD">G
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p><code>true</code> if some sources are ready to be dispatched.</p>
 </item>
 </terms>
 

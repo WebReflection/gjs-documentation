@@ -26,7 +26,8 @@ returning a constant string, the string is duplicated.</p>  <p>The return value 
 <terms>
 <item>
 <title><code>return_value</code></title>
-
+  <p>
+         a newly allocated string</p>
 </item>
 <item>
 <title><code>length</code></title>

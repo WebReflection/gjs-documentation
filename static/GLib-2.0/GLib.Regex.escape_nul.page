@@ -43,7 +43,7 @@ In this case the output string will be of course equal to <code>string</code>.</
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly-allocated escaped string</p>
 </item>
 </terms>
 

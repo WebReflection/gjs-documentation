@@ -46,7 +46,7 @@ access the channel after it is closed).</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A <link xref="GLib.IOChannel"/> on success, <code>null</code> on failure.</p>
 </item>
 </terms>
 

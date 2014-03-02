@@ -39,7 +39,7 @@ subpattern) requires valid <link xref="GLib.MatchInfo"/> object.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p>whether <code>replacement</code> is a valid replacement string</p>
 </item>
 <item>
 <title><code>has_references</code></title>

@@ -34,7 +34,7 @@ match the same set of strings.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p>Whether the compiled patterns are equal</p>
 </item>
 </terms>
 

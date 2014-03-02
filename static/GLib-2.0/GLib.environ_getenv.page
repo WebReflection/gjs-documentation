@@ -45,7 +45,10 @@ provided list <code>envp</code>.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the value of the environment variable, or <code>null</code> if
+    the environment variable is not set in <code>envp</code>. The returned
+    string is owned by <code>envp</code>, and will be freed if <code>variable</code> is
+    set or unset again.</p>
 </item>
 </terms>
 

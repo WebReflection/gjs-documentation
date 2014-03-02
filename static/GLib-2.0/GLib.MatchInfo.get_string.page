@@ -27,7 +27,7 @@ you may not free it before calling this function.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the string searched with <code>match_info</code></p>
 </item>
 </terms>
 

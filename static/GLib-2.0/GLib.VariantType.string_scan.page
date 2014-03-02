@@ -47,7 +47,7 @@ see <link xref="GLib.variant_type_string_is_valid"/>.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if a valid type string was found</p>
 </item>
 <item>
 <title><code>endptr</code></title>

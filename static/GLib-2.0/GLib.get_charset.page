@@ -42,7 +42,7 @@ freed.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the returned charset is UTF-8</p>
 </item>
 </terms>
 

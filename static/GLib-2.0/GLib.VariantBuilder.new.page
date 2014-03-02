@@ -37,7 +37,7 @@ the stack of the calling function and initialise it with
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="GLib.VariantBuilder"/></p>
 </item>
 </terms>
 

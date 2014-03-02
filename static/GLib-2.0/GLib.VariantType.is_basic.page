@@ -27,7 +27,7 @@ paths and signatures.</p>  <p>Only a basic type may be used as the key of a dict
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>type</code> is a basic type</p>  <p>Since 2.24</p>
 </item>
 </terms>
 

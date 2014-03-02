@@ -36,7 +36,8 @@ west of GMT, positive numbers for east).</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the number of seconds that should be added to UTC to get the
+         local time in <code>tz</code></p>
 </item>
 </terms>
 

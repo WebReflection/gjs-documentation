@@ -72,7 +72,8 @@ that begins with any kind of lookbehind assertion, such as "\b".</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <code>null</code>-terminated gchar ** array. Free
+it using <link xref="GLib.strfreev"/></p>
 </item>
 </terms>
 

@@ -27,7 +27,8 @@ checksum will be closed as well.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the copy of the passed <link xref="GLib.Checksum"/>. Use <link xref="GLib.Checksum.free"/>
+  when finished using it.</p>
 </item>
 </terms>
 

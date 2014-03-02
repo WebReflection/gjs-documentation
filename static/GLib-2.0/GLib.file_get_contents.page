@@ -40,7 +40,7 @@ codes are those in the <link xref="GLib.FileError"/> enumeration. In the error c
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> on success, <code>false</code> if an error occurred</p>
 </item>
 <item>
 <title><code>contents</code></title>

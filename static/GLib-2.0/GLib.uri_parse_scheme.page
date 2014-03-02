@@ -37,7 +37,8 @@ Common schemes include "file", "http", "svn+ssh", etc.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>The "Scheme" component of the URI, or <code>null</code> on error.
+The returned string should be freed when no longer needed.</p>
 </item>
 </terms>
 

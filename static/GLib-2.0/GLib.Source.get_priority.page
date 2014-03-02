@@ -25,7 +25,7 @@ function get_priority(): Number(gint) {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the priority of the source</p>
 </item>
 </terms>
 

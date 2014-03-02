@@ -42,7 +42,7 @@ them to the same time zone.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>dt1</code> and <code>dt2</code> are equal</p>
 </item>
 </terms>
 

@@ -64,7 +64,9 @@ nul-terminated.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a pointer to a newly allocated UCS-4 string.
+    This value must be freed with <link xref="GLib.free"/>. If an error occurs,
+    <code>null</code> will be returned and @error set.</p>
 </item>
 </terms>
 

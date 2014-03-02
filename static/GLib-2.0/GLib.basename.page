@@ -35,7 +35,8 @@ string.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the name of the file without any leading
+    directory components</p>
 </item>
 </terms>
 

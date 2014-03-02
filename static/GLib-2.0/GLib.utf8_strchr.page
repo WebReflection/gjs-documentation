@@ -51,7 +51,9 @@ If <code>len</code> is -1, allow unbounded search.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p><code>null</code> if the string does not contain the character,
+    otherwise, a pointer to the start of the leftmost occurrence
+    of the character in the string.</p>
 </item>
 </terms>
 

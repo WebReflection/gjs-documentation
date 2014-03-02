@@ -50,7 +50,7 @@ no longer needed.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly-allocated string which is the reverse of <code>str</code></p>
 </item>
 </terms>
 

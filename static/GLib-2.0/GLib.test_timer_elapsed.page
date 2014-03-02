@@ -25,7 +25,7 @@ function test_timer_elapsed(): Number(gdouble) {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the time since the last start of the timer, as a double</p>
 </item>
 </terms>
 

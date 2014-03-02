@@ -43,7 +43,8 @@ function get_int64(group_name: String, key: String): Number(gint64) {
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the value associated with the key as a signed 64-bit integer, or
+0 if the key was not found or could not be parsed.</p>
 </item>
 </terms>
 

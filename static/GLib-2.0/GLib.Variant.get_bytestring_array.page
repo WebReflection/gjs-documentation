@@ -30,7 +30,7 @@ stored there.  In any case, the resulting array will be
 <terms>
 <item>
 <title><code>return_value</code></title>
-
+  <p>an array of constant strings</p>
 </item>
 <item>
 <title><code>length</code></title>

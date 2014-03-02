@@ -34,7 +34,7 @@ is basically a valid Julian, though there is a 32-bit limit.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the Julian day is valid</p>
 </item>
 </terms>
 

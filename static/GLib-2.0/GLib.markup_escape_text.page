@@ -50,7 +50,7 @@ valid XML 1.1 and will be accepted by the GMarkup parser.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly allocated string with the escaped text</p>
 </item>
 </terms>
 

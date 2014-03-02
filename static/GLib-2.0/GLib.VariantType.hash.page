@@ -27,7 +27,7 @@ function hash(): Number(guint) {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the hash value</p>  <p>Since 2.24</p>
 </item>
 </terms>
 

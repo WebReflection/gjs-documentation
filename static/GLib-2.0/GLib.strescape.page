@@ -46,7 +46,8 @@ Characters supplied in <code>exceptions</code> are not escaped.</p>  <p><link xr
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly-allocated copy of <code>source</code> with certain
+    characters escaped. See above.</p>
 </item>
 </terms>
 

@@ -62,7 +62,7 @@ free it and create a new parse context).</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="GLib.MarkupParseContext"/></p>
 </item>
 </terms>
 

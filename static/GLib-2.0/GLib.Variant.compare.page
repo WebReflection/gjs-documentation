@@ -43,7 +43,9 @@ general.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>negative value if a &lt; b;
+         zero if a = b;
+         positive value if a &gt; b.</p>
 </item>
 </terms>
 

@@ -43,7 +43,7 @@ registered by application <code>name</code>.</p>  <p>In the event the URI cannot
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the application <code>name</code> was found</p>
 </item>
 </terms>
 

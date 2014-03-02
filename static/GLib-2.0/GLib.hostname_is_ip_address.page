@@ -34,7 +34,7 @@ function hostname_is_ip_address(hostname: String): Boolean {
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>hostname</code> is an IP address</p>
 </item>
 </terms>
 

@@ -32,7 +32,7 @@ string.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the directory to use for temporary files.</p>
 </item>
 </terms>
 

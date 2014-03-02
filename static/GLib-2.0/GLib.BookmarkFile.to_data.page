@@ -25,7 +25,8 @@ function to_data(): [return_value: String, length: Number(gsize)] {
 <terms>
 <item>
 <title><code>return_value</code></title>
-
+  <p>a newly allocated string holding
+  the contents of the <link xref="GLib.BookmarkFile"/></p>
 </item>
 <item>
 <title><code>length</code></title>

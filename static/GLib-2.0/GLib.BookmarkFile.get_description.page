@@ -34,7 +34,8 @@ function get_description(uri: String): String {
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly allocated string or <code>null</code> if the specified
+  URI cannot be found.</p>
 </item>
 </terms>
 

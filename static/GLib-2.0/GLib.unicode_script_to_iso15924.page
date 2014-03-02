@@ -39,7 +39,9 @@ for details.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the ISO 15924 code for <code>script</code>, encoded as an integer,
+  of zero if <code>script</code> is <link xref="GLib.UnicodeScript"/>.invalid_code or
+  ISO 15924 code 'Zzzz' (script code for UNKNOWN) if <code>script</code> is not understood.</p>
 </item>
 </terms>
 

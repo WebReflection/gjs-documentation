@@ -38,7 +38,8 @@ are open to some process, or mapped into memory.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>0 if the name was successfully deleted, -1 if an error
+   occurred</p>
 </item>
 </terms>
 

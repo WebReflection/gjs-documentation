@@ -34,7 +34,7 @@ type @type.</p>  <p>It is appropriate to call <link xref="GLib.VariantType.free"
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new array <link xref="GLib.VariantType"/></p>  <p>Since 2.24</p>
 </item>
 </terms>
 

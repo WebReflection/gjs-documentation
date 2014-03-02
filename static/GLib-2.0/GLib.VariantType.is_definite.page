@@ -30,7 +30,7 @@ indefinite type like %G_VARIANT_TYPE_ARRAY, however, will result in
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>type</code> is definite</p>  <p>Since 2.24</p>
 </item>
 </terms>
 

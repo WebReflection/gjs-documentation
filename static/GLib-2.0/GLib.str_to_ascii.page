@@ -48,7 +48,7 @@ to be done independently of the currently locale, specify "C" for
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a string in plain ASCII</p>
 </item>
 </terms>
 

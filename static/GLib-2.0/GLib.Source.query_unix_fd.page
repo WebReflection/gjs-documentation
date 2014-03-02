@@ -36,7 +36,7 @@ Do not call this API on a <link xref="GLib.Source"/> that you did not create.</p
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the conditions reported on the fd</p>
 </item>
 </terms>
 

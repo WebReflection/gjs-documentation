@@ -50,7 +50,7 @@ varargs accessors to <link xref="GLib.Variant"/> values of uncertain values (eg:
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>format_string</code> is safe to use</p>
 </item>
 </terms>
 

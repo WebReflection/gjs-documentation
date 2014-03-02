@@ -39,7 +39,7 @@ terminals support zero-width rendering of zero-width marks.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the character has zero width</p>
 </item>
 </terms>
 

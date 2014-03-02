@@ -33,7 +33,7 @@ function find_source_by_id(source_id: Number(guint)): <link xref="GLib.Source">G
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the <link xref="GLib.Source"/> if found, otherwise, <code>null</code></p>
 </item>
 </terms>
 

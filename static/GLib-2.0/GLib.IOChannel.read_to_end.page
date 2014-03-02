@@ -25,7 +25,8 @@ function read_to_end(): [return_value: <link xref="GLib.IOStatus">GLib.IOStatus<
 <terms>
 <item>
 <title><code>return_value</code></title>
-
+  <p><link xref="GLib.IOStatus"/>.normal on success.
+    This function never returns <link xref="GLib.IOStatus"/>.eof.</p>
 </item>
 <item>
 <title><code>str_return</code></title>

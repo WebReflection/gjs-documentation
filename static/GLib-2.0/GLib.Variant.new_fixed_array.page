@@ -64,7 +64,7 @@ items in the array.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a floating reference to a new array <link xref="GLib.Variant"/> instance</p>
 </item>
 </terms>
 

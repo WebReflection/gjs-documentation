@@ -55,7 +55,8 @@ a URI.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>an escaped version of <code>unescaped</code>. The returned string should be
+freed when no longer needed.</p>
 </item>
 </terms>
 

@@ -37,7 +37,7 @@ when you are done with it.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="GLib.DateTime"/>, or <code>null</code></p>
 </item>
 </terms>
 

@@ -31,7 +31,8 @@ function onOptionParseFunc(context: <link xref="GLib.OptionContext">GLib.OptionC
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the function completed successfully, <code>false</code> if an error
+ occurred, in which case @error should be set with <link xref="GLib.set_error"/></p>
 </item>
 </terms>
 

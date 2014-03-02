@@ -34,7 +34,7 @@ though there is a 16-bit limit to what <link xref="GLib.Date"/> will understand.
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the year is valid</p>
 </item>
 </terms>
 

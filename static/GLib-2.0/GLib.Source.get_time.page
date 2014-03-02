@@ -29,7 +29,7 @@ other reasonable alternative otherwise.  See <link xref="GLib.get_monotonic_time
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the monotonic time in microseconds</p>
 </item>
 </terms>
 

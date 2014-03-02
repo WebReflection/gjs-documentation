@@ -48,7 +48,7 @@ new instance takes ownership of them as if via <link xref="GLib.Variant.ref_sink
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a floating reference to a new <link xref="GLib.Variant"/> array</p>
 </item>
 </terms>
 

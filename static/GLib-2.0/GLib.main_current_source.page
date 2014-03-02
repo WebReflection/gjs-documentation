@@ -25,7 +25,7 @@ function main_current_source(): <link xref="GLib.Source">GLib.Source</link> {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>The currently firing source or <code>null</code>.</p>
 </item>
 </terms>
 

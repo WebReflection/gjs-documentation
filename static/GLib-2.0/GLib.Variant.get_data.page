@@ -43,7 +43,7 @@ serialised data).</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the serialised form of <code>value</code>, or <code>null</code></p>
 </item>
 </terms>
 

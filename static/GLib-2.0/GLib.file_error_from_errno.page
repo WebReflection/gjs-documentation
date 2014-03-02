@@ -38,7 +38,7 @@ from a function that manipulates files. So you would use
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p><link xref="GLib.FileError"/> corresponding to the given @errno</p>
 </item>
 </terms>
 

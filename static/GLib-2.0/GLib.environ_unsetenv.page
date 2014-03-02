@@ -44,7 +44,8 @@ environment <code>envp</code>.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the
+    updated environment list. Free it using <link xref="GLib.strfreev"/>.</p>
 </item>
 </terms>
 

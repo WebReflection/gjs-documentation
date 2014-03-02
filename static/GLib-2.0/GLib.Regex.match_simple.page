@@ -62,7 +62,7 @@ once, it's more efficient to compile the pattern once with
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the string matched, <code>false</code> otherwise</p>
 </item>
 </terms>
 

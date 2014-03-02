@@ -34,7 +34,8 @@ function get_icon(uri: String): [ok: Boolean, href: String, mime_type: String] {
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the icon for the bookmark for the URI was found.
+  You should free the returned strings.</p>
 </item>
 <item>
 <title><code>href</code></title>

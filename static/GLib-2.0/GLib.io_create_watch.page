@@ -47,7 +47,7 @@ implementation and unavoidable.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="GLib.Source"/></p>
 </item>
 </terms>
 

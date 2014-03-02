@@ -25,7 +25,7 @@ function element(): <link xref="GLib.VariantType">GLib.VariantType</link> {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the element type of <code>type</code></p>  <p>Since 2.24</p>
 </item>
 </terms>
 

@@ -45,7 +45,7 @@ it starts with an appropriate byte.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a pointer to the found character or <code>null</code>.</p>
 </item>
 </terms>
 

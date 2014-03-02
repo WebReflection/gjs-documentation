@@ -30,7 +30,7 @@ may not always be possible to do this.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the monotonic time, in microseconds</p>
 </item>
 </terms>
 

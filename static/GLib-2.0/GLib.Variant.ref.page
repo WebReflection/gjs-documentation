@@ -25,7 +25,7 @@ function ref(): <link xref="GLib.Variant">GLib.Variant</link> {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the same <code>value</code></p>
 </item>
 </terms>
 

@@ -25,7 +25,7 @@ function get_length(): Number(gsize) {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the length of the contents of <code>file</code>.</p>
 </item>
 </terms>
 

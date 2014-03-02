@@ -25,7 +25,7 @@ function get_weekday(): <link xref="GLib.DateWeekday">GLib.DateWeekday</link> {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>day of the week as a <link xref="GLib.DateWeekday"/>.</p>
 </item>
 </terms>
 

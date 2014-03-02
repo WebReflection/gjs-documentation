@@ -46,7 +46,8 @@ the original strings.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>&lt; 0 if <code>str1</code> compares before <code>str2</code>,
+  0 if they compare equal, &gt; 0 if <code>str1</code> compares after <code>str2</code>.</p>
 </item>
 </terms>
 

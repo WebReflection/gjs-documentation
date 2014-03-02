@@ -27,7 +27,7 @@ the partial matching facilities.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the number of characters in the longest lookbehind assertion.</p>
 </item>
 </terms>
 

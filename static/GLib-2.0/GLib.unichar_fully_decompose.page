@@ -71,7 +71,7 @@ for details.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the length of the full decomposition.</p>
 </item>
 </terms>
 

@@ -25,7 +25,7 @@ function ref(): <link xref="GLib.MainContext">GLib.MainContext</link> {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the <code>context</code> that was passed in (since 2.6)</p>
 </item>
 </terms>
 

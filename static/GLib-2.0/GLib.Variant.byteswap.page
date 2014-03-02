@@ -31,7 +31,7 @@ bytes and containers containing only these things (recursively).</p>  <p>The ret
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the byteswapped form of <code>value</code></p>
 </item>
 </terms>
 

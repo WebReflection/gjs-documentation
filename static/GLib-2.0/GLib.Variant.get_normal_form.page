@@ -32,7 +32,7 @@ output is definitely in normal form.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a trusted <link xref="GLib.Variant"/></p>
 </item>
 </terms>
 

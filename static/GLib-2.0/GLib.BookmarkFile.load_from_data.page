@@ -43,7 +43,7 @@ structure.  If the object cannot be created then @error is set to a
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if a desktop bookmark could be loaded.</p>
 </item>
 </terms>
 

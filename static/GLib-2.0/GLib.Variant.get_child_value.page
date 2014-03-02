@@ -38,7 +38,7 @@ in the container.  See <link xref="GLib.Variant.n_children"/>.</p>  <p>The retur
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the child at the specified index</p>
 </item>
 </terms>
 

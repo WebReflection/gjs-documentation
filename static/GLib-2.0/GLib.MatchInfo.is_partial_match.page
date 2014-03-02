@@ -47,7 +47,7 @@ The restrictions no longer apply.</p>  <p>See pcrepartial(3) for more informatio
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the match was partial, <code>false</code> otherwise</p>
 </item>
 </terms>
 

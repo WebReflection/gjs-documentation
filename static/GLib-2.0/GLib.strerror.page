@@ -37,7 +37,8 @@ not all platforms support the strerror() function.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a UTF-8 string describing the error code. If the error code
+    is unknown, it returns "unknown error (&lt;code&gt;)".</p>
 </item>
 </terms>
 

@@ -35,7 +35,7 @@ is not an absolute path it returns <code>null</code>.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a pointer into <code>file_name</code> after the root component</p>
 </item>
 </terms>
 

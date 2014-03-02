@@ -26,7 +26,7 @@ function get_ignore_unknown_options(): Boolean {
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if unknown options are ignored.</p>
 </item>
 </terms>
 

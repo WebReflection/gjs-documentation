@@ -26,7 +26,7 @@ see <link xref="GLib.Source.set_can_recurse"/>.</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p>whether recursion is allowed.</p>
 </item>
 </terms>
 

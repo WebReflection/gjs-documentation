@@ -36,7 +36,7 @@ or unset it before calling any functions in GLib.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the current user's home directory</p>
 </item>
 </terms>
 

@@ -25,7 +25,7 @@ function error_quark(): <link xref="GLib.Quark">GLib.Quark</link> {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the quark used as %G_IO_CHANNEL_ERROR</p>
 </item>
 </terms>
 

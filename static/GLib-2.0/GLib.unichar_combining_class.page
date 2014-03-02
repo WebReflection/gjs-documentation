@@ -33,7 +33,7 @@ function unichar_combining_class(uc: String): Number(gint) {
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the combining class of the character</p>
 </item>
 </terms>
 

@@ -30,7 +30,7 @@ if it is called from inside a test function.</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the test has failed</p>
 </item>
 </terms>
 

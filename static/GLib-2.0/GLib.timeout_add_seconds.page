@@ -70,7 +70,7 @@ time.  See <link xref="GLib.get_monotonic_time"/>.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the ID (greater than 0) of the event source.</p>
 </item>
 </terms>
 

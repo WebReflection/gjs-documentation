@@ -30,7 +30,7 @@ other than those three.</p>  <p>The return value remains valid as long as <code>
 <terms>
 <item>
 <title><code>return_value</code></title>
-
+  <p>the constant string, utf8 encoded</p>
 </item>
 <item>
 <title><code>length</code></title>

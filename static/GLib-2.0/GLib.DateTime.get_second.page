@@ -25,7 +25,7 @@ function get_second(): Number(gint) {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the second represented by <code>datetime</code></p>
 </item>
 </terms>
 

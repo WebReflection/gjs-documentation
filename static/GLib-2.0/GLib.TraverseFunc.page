@@ -33,7 +33,7 @@ parameter passed to <link xref="GLib.Tree.traverse"/>. If the function returns
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> to stop the traversal</p>
 </item>
 </terms>
 

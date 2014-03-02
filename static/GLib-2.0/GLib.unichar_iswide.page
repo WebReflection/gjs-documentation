@@ -34,7 +34,7 @@ cell.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the character is wide</p>
 </item>
 </terms>
 

@@ -38,7 +38,7 @@ digraph is U+01F2 LATIN CAPITAL LETTTER D WITH SMALL LETTER Z.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the character is titlecase</p>
 </item>
 </terms>
 

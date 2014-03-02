@@ -34,7 +34,8 @@ that context. Remove it by calling <link xref="GLib.Source.destroy"/>.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the ID (greater than 0) for the source within the
+  <link xref="GLib.MainContext"/>.</p>
 </item>
 </terms>
 

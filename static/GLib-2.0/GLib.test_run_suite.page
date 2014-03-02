@@ -38,7 +38,7 @@ in a program.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>0 on success</p>
 </item>
 </terms>
 

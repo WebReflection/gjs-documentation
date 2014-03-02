@@ -43,7 +43,7 @@ function read_line_string(buffer: <link xref="GLib.String">GLib.String</link>, t
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the status of the operation.</p>
 </item>
 </terms>
 

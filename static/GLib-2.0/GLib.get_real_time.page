@@ -29,7 +29,7 @@ measuring intervals.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the number of microseconds since January 1, 1970 UTC.</p>
 </item>
 </terms>
 

@@ -28,7 +28,7 @@ read an existing key file.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>an empty <link xref="GLib.KeyFile"/>.</p>
 </item>
 </terms>
 

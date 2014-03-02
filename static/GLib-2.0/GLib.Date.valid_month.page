@@ -34,7 +34,7 @@ enumeration values are the only valid months.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the month is valid</p>
 </item>
 </terms>
 

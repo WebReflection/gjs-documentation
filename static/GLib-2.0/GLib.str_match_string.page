@@ -62,7 +62,7 @@ Baz", but not "SFO" (because no word as "fo" as a prefix).</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>potential_hit</code> is a hit</p>
 </item>
 </terms>
 

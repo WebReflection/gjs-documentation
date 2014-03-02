@@ -34,7 +34,7 @@ this function with <link xref="GLib.HashTable"/>.  They must each be a <link xre
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>one</code> and <code>two</code> are equal</p>
 </item>
 </terms>
 

@@ -36,7 +36,7 @@ is in effect.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the time zone abbreviation, which belongs to <code>tz</code></p>
 </item>
 </terms>
 

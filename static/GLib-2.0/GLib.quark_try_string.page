@@ -35,7 +35,8 @@ use <link xref="GLib.quark_from_string"/> or <link xref="GLib.quark_from_static_
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the <link xref="GLib.Quark"/> associated with the string, or 0 if <code>string</code> is
+    <code>null</code> or there is no <link xref="GLib.Quark"/> associated with it</p>
 </item>
 </terms>
 

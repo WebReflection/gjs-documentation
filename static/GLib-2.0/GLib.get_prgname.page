@@ -28,7 +28,8 @@ the last component of @argv[0].</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the name of the program. The returned string belongs
+    to GLib and must not be modified or freed.</p>
 </item>
 </terms>
 

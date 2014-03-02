@@ -54,7 +54,8 @@ be found then the untranslated value is returned.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly allocated string or <code>null</code> if the specified
+  key cannot be found.</p>
 </item>
 </terms>
 

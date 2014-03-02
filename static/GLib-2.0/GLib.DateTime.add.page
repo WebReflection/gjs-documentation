@@ -33,7 +33,8 @@ function add(timespan: <link xref="GLib.TimeSpan">GLib.TimeSpan</link>): <link x
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the newly created <link xref="GLib.DateTime"/> which should be freed with
+  <link xref="GLib.DateTime.unref"/>.</p>
 </item>
 </terms>
 

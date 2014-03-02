@@ -27,7 +27,7 @@ the memory region returned by <link xref="GLib.VariantType.peek_string"/>.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the length of the corresponding type string</p>  <p>Since 2.24</p>
 </item>
 </terms>
 

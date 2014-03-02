@@ -48,7 +48,8 @@ producing TAP output, or 77 (treated as "skip test" by Automake) otherwise.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>0 on success, 1 on failure (assuming it returns at all),
+  0 or 77 if all tests were skipped with <link xref="GLib.test_skip"/></p>
 </item>
 </terms>
 

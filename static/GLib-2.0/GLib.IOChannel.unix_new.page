@@ -44,7 +44,7 @@ issued, and GLib assumes that it is the file descriptor you mean.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="GLib.IOChannel"/>.</p>
 </item>
 </terms>
 

@@ -27,7 +27,7 @@ time zone returned by <link xref="GLib.TimeZone.new_local"/>.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the newly created <link xref="GLib.DateTime"/></p>
 </item>
 </terms>
 

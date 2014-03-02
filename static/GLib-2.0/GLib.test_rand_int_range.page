@@ -42,7 +42,7 @@ see <link xref="GLib.test_rand_int"/> for details on test case random numbers.</
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a number with <code>begin</code> &lt;= number &lt; <code>end</code>.</p>
 </item>
 </terms>
 

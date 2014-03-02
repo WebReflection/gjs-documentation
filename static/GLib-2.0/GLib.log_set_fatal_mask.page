@@ -42,7 +42,7 @@ function log_set_fatal_mask(log_domain: String, fatal_mask: <link xref="GLib.Log
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the old fatal mask for the log domain</p>
 </item>
 </terms>
 

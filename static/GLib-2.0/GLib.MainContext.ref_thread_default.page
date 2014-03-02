@@ -30,7 +30,8 @@ is the global default context, this will return that <link xref="GLib.MainContex
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the thread-default <link xref="GLib.MainContext"/>. Unref
+    with <link xref="GLib.MainContext.unref"/> when you are done with it.</p>
 </item>
 </terms>
 

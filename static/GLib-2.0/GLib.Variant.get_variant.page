@@ -26,7 +26,7 @@ contained in <code>value</code>.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the item contained in the variant</p>
 </item>
 </terms>
 

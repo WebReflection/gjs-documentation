@@ -32,7 +32,8 @@ can call <link xref="GLib.MainContext.prepare"/>, <link xref="GLib.MainContext.q
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the operation succeeded, and
+  this thread is now the owner of <code>context</code>.</p>
 </item>
 </terms>
 

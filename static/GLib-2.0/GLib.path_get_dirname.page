@@ -34,7 +34,7 @@ The returned string should be freed when no longer needed.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the directory components of the file</p>
 </item>
 </terms>
 

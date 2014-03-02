@@ -36,7 +36,8 @@ event that the MIME type cannot be found, <code>null</code> is returned and
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly allocated string or <code>null</code> if the specified
+  URI cannot be found.</p>
 </item>
 </terms>
 

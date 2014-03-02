@@ -43,7 +43,7 @@ meant for language bindings.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly-allocated string that must be freed with <link xref="GLib.free"/>.</p>
 </item>
 </terms>
 

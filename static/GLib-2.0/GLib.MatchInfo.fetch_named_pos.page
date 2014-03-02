@@ -35,7 +35,9 @@ then <code>start_pos</code> and <code>end_pos</code> are set to -1 and <code>tru
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the position was fetched, <code>false</code> otherwise.
+    If the position cannot be fetched, <code>start_pos</code> and <code>end_pos</code>
+    are left unchanged.</p>
 </item>
 <item>
 <title><code>start_pos</code></title>

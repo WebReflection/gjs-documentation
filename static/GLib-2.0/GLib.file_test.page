@@ -71,7 +71,7 @@ extensions and those listed in the `PATHEXT` environment variable.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p>whether a test was <code>true</code></p>
 </item>
 </terms>
 

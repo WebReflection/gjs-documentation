@@ -36,7 +36,8 @@ are signed.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>If <code>c</code> is a hex digit (according to g_ascii_isxdigit()),
+    its numeric value. Otherwise, -1.</p>
 </item>
 </terms>
 

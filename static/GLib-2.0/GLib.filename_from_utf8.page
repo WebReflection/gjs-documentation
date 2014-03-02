@@ -45,7 +45,8 @@ on other platforms, this function indirectly depends on the
 </item>
 <item>
 <title><code>return_value</code></title>
-
+  <p>
+              The converted string, or <code>null</code> on an error.</p>
 </item>
 <item>
 <title><code>bytes_read</code></title>

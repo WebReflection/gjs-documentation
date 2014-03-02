@@ -180,7 +180,7 @@ the spawned program opens its windows on the right screen.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> on success, <code>false</code> if an error was set</p>
 </item>
 <item>
 <title><code>child_pid</code></title>

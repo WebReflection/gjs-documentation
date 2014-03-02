@@ -35,7 +35,8 @@ for filenames. Use <link xref="GLib.filename_to_utf8"/> to convert it to UTF-8.<
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A newly-allocated string with the contents of the symbolic link,
+         or <code>null</code> if an error occurred.</p>
 </item>
 </terms>
 

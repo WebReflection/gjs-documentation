@@ -43,7 +43,7 @@ function unichar_to_utf8(c: String, outbuf: String): Number(gint) {
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>number of bytes written</p>
 </item>
 </terms>
 

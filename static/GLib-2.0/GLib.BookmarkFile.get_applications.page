@@ -35,7 +35,8 @@ bookmark for <code>uri</code>.</p>  <p>In the event the URI cannot be found, <co
 </item>
 <item>
 <title><code>return_value</code></title>
-
+  <p>a newly allocated <code>null</code>-terminated array of strings.
+  Use <link xref="GLib.strfreev"/> to free it.</p>
 </item>
 <item>
 <title><code>length</code></title>

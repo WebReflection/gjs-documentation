@@ -30,7 +30,7 @@ the current directory is the target of a symbolic link.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the current directory</p>
 </item>
 </terms>
 

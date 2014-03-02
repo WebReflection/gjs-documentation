@@ -26,7 +26,7 @@ This function cannot be called on a channel with <code>null</code> encoding.</p>
 <terms>
 <item>
 <title><code>return_value</code></title>
-
+  <p>a <link xref="GLib.IOStatus"/></p>
 </item>
 <item>
 <title><code>thechar</code></title>

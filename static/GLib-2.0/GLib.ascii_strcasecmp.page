@@ -49,7 +49,8 @@ strings using this function, you will get false matches.</p>  <p>Both <code>s1</
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>0 if the strings match, a negative value if <code>s1</code> &lt; <code>s2</code>,
+    or a positive value if <code>s1</code> &gt; <code>s2</code>.</p>
 </item>
 </terms>
 

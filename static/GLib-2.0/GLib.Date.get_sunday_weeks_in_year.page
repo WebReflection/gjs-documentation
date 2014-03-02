@@ -39,7 +39,7 @@ one of the extra days happens to be a Sunday.)</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the number of weeks in <code>year</code></p>
 </item>
 </terms>
 

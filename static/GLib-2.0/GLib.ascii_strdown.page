@@ -41,7 +41,10 @@ function ascii_strdown(str: String, len: Number(gssize)): String {
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly-allocated string, with all the upper case
+    characters in <code>str</code> converted to lower case, with semantics that
+    exactly match <link xref="GLib.ascii_tolower"/>. (Note that this is unlike the
+    old <link xref="GLib.strdown"/>, which modified the string in place.)</p>
 </item>
 </terms>
 

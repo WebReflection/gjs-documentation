@@ -33,7 +33,7 @@ function quark_to_string(quark: <link xref="GLib.Quark">GLib.Quark</link>): Stri
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the string associated with the <link xref="GLib.Quark"/></p>
 </item>
 </terms>
 

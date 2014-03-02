@@ -34,7 +34,7 @@ This function cannot be called on a channel with <code>null</code> encoding.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="GLib.IOStatus"/></p>
 </item>
 </terms>
 

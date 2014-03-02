@@ -47,7 +47,7 @@ middle of a character, the last (partial) character is not counted.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the length of the string in characters</p>
 </item>
 </terms>
 

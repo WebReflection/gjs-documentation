@@ -27,7 +27,8 @@ makes the channel safe for binary data.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A string containing the encoding, this string is
+  owned by GLib and must not be freed.</p>
 </item>
 </terms>
 

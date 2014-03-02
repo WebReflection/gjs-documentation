@@ -36,7 +36,8 @@ for polling is determined by calling g_main_context_query ().</p>  <p>You must h
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if some source is ready to be dispatched
+              prior to polling.</p>
 </item>
 </terms>
 

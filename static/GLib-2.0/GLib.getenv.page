@@ -38,7 +38,10 @@ references to other environment variables, they are expanded.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the value of the environment variable, or <code>null</code> if
+    the environment variable is not found. The returned string
+    may be overwritten by the next call to <link xref="GLib.getenv"/>, <link xref="GLib.setenv"/>
+    or <link xref="GLib.unsetenv"/>.</p>
 </item>
 </terms>
 

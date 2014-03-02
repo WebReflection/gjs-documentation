@@ -72,7 +72,7 @@ are different concepts on Windows.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> on success, <code>false</code> if error is set</p>
 </item>
 <item>
 <title><code>child_pid</code></title>

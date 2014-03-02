@@ -25,7 +25,7 @@ function get_day(): <link xref="GLib.DateDay">GLib.DateDay</link> {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>day of the month</p>
 </item>
 </terms>
 

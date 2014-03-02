@@ -35,7 +35,7 @@ unreasonably large number), the returned date will be valid.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly-allocated <link xref="GLib.Date"/> initialized with <code>julian_day</code></p>
 </item>
 </terms>
 

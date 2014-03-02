@@ -31,7 +31,7 @@ only on the type).  For dictionary entries, it is always 2</p>  <p>This function
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the number of children in the container</p>
 </item>
 </terms>
 

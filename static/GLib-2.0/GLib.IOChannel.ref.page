@@ -25,7 +25,7 @@ function ref(): <link xref="GLib.IOChannel">GLib.IOChannel</link> {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the <code>channel</code> that was passed in (since 2.6)</p>
 </item>
 </terms>
 

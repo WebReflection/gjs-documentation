@@ -34,7 +34,7 @@ function new_tuple(items: Array(<link xref="GLib.VariantType">GLib.VariantType</
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new tuple <link xref="GLib.VariantType"/></p>  <p>Since 2.24</p>
 </item>
 </terms>
 

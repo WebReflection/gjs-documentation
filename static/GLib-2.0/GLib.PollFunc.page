@@ -32,7 +32,8 @@ The semantics of the function should match those of the poll() system call.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the number of <link xref="GLib.PollFD"/> elements which have events or errors
+    reported, or -1 if an error occurred.</p>
 </item>
 </terms>
 

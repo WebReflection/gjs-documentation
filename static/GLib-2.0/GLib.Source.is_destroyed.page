@@ -76,7 +76,7 @@ idle_callback (gpointer data)
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the source has been destroyed</p>
 </item>
 </terms>
 

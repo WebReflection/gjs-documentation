@@ -51,7 +51,7 @@ plan to do many lookups then <link xref="GLib.VariantDict"/> may be more efficie
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the value of the dictionary key, or <code>null</code></p>
 </item>
 </terms>
 

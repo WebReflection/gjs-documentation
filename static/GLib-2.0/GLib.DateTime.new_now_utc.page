@@ -26,7 +26,7 @@ zone returned by <link xref="GLib.TimeZone.new_utc"/>.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new <link xref="GLib.DateTime"/>, or <code>null</code></p>
 </item>
 </terms>
 

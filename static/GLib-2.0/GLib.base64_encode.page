@@ -34,7 +34,9 @@ representation.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly allocated, zero-terminated Base-64
+              encoded string representing <code>data</code>. The returned string must
+              be freed with <link xref="GLib.free"/>.</p>
 </item>
 </terms>
 

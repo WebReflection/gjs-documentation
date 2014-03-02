@@ -55,7 +55,8 @@ will be added to the string after the converted text.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a pointer to a newly allocated UCS-4 string.
+    This value must be freed with <link xref="GLib.free"/>.</p>
 </item>
 </terms>
 

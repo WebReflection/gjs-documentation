@@ -61,7 +61,8 @@ function environ_setenv(envp: Array(String), variable: String, value: String, ov
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the
+    updated environment list. Free it using <link xref="GLib.strfreev"/>.</p>
 </item>
 </terms>
 

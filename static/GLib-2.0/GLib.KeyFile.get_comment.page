@@ -44,7 +44,7 @@ If <code>key</code> is <code>null</code> then @comment will be read from above
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a comment that should be freed with <link xref="GLib.free"/></p>
 </item>
 </terms>
 

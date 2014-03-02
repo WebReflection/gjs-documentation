@@ -45,7 +45,10 @@ and @error is set to #G_KEY_FILE_ERROR_INVALID_VALUE.</p>
 </item>
 <item>
 <title><code>return_value</code></title>
-
+  <p>
+    the values associated with the key as a list of integers, or <code>null</code> if
+    the key was not found or could not be parsed. The returned list of
+    integers should be freed with <link xref="GLib.free"/> when no longer needed.</p>
 </item>
 <item>
 <title><code>length</code></title>

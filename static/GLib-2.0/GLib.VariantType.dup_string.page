@@ -27,7 +27,7 @@ call <link xref="GLib.free"/> on the return value.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the corresponding type string</p>  <p>Since 2.24</p>
 </item>
 </terms>
 

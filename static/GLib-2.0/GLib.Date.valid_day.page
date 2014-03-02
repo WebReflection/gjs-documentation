@@ -34,7 +34,7 @@ between 1 and 31 inclusive).</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the day is valid</p>
 </item>
 </terms>
 

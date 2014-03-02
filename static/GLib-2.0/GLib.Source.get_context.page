@@ -30,7 +30,9 @@ whose <link xref="GLib.MainContext"/> has been destroyed is an error.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the <link xref="GLib.MainContext"/> with which the
+              source is associated, or <code>null</code> if the context has not
+              yet been added to a source.</p>
 </item>
 </terms>
 

@@ -62,7 +62,7 @@ assertion, such as "\b".</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly allocated string containing the replacements</p>
 </item>
 </terms>
 

@@ -44,7 +44,7 @@ function seek_position(offset: Number(gint64), type: <link xref="GLib.SeekType">
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the status of the operation.</p>
 </item>
 </terms>
 

@@ -47,7 +47,8 @@ is sorted as "file1" "file5" "file10".</p>  <p>Note that this function depends o
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly allocated string. This string should
+  be freed with <link xref="GLib.free"/> when you are done with it.</p>
 </item>
 </terms>
 

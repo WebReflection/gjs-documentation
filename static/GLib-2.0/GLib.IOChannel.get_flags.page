@@ -31,7 +31,7 @@ the internal values of these flags.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the flags which are set on the channel</p>
 </item>
 </terms>
 

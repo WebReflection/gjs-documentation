@@ -37,7 +37,7 @@ in <code>length</code>.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly-allocated escaped string</p>
 </item>
 </terms>
 

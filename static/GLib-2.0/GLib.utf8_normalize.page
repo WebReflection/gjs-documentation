@@ -69,7 +69,9 @@ less capable Unicode handling.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly allocated string, that is the
+  normalized form of <code>str</code>, or <code>null</code> if <code>str</code> is not
+  valid UTF-8.</p>
 </item>
 </terms>
 

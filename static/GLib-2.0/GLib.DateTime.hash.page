@@ -33,7 +33,7 @@ function hash(datetime: void): Number(guint) {
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a #guint containing the hash</p>
 </item>
 </terms>
 

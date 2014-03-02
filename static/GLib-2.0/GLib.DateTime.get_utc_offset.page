@@ -28,7 +28,8 @@ zones west of GMT, positive numbers for east).</p>  <p>If <code>datetime</code> 
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the number of microseconds that should be added to UTC to
+         get the local time</p>
 </item>
 </terms>
 

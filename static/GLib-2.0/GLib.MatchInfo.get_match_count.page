@@ -30,7 +30,7 @@ the number of matched substrings.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>Number of matched substrings, or -1 if an error occurred</p>
 </item>
 </terms>
 

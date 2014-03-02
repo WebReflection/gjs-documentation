@@ -74,7 +74,8 @@ time in <code>datetime</code>. Add negative values to subtract.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the newly created <link xref="GLib.DateTime"/> that should be freed with
+  <link xref="GLib.DateTime.unref"/>.</p>
 </item>
 </terms>
 

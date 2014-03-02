@@ -35,7 +35,8 @@ be <code>null</code>.</p>
 </item>
 <item>
 <title><code>return_value</code></title>
-
+  <p>a newly allocated <code>null</code>-terminated array of group names.
+  Use <link xref="GLib.strfreev"/> to free it.</p>
 </item>
 <item>
 <title><code>length</code></title>

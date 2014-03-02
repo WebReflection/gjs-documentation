@@ -62,7 +62,7 @@ If the string conversion fails, zero is returned, and <code>endptr</code> return
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the #guint64 value or zero on error.</p>
 </item>
 </terms>
 

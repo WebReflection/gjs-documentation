@@ -36,7 +36,7 @@ is also divisible by 400.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the year is a leap year</p>
 </item>
 </terms>
 

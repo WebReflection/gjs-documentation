@@ -50,7 +50,8 @@ The substring will contain <code>end_pos</code> - <code>start_pos</code> charact
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly allocated copy of the requested
+    substring. Free with <link xref="GLib.free"/> when no longer needed.</p>
 </item>
 </terms>
 

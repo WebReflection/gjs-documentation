@@ -28,7 +28,9 @@ time is in effect.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the time zone abbreviation. The returned
+         string is owned by the <link xref="GLib.DateTime"/> and it should not be
+         modified or freed</p>
 </item>
 </terms>
 

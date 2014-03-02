@@ -45,7 +45,8 @@ try again (once) to become the owner.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the operation succeeded, and
+  this thread is now the owner of <code>context</code>.</p>
 </item>
 </terms>
 

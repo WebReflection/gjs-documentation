@@ -52,7 +52,7 @@ text before trying to use UTF-8 utility functions with it.)</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p><code>dest</code></p>
 </item>
 </terms>
 

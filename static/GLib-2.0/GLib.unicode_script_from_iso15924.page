@@ -39,7 +39,9 @@ for details.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the Unicode script for <code>iso15924</code>, or
+  of <link xref="GLib.UnicodeScript"/>.invalid_code if <code>iso15924</code> is zero and
+  <link xref="GLib.UnicodeScript"/>.unknown if <code>iso15924</code> is unknown.</p>
 </item>
 </terms>
 

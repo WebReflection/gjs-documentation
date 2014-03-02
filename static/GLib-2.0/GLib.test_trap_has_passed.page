@@ -25,7 +25,7 @@ function test_trap_has_passed(): Boolean {
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the last test subprocess terminated successfully.</p>
 </item>
 </terms>
 

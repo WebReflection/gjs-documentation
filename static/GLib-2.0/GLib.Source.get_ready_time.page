@@ -27,7 +27,7 @@ indication that the source will fire immediately.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the monotonic ready time, -1 for "never"</p>
 </item>
 </terms>
 

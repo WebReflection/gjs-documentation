@@ -27,7 +27,7 @@ string belongs to <link xref="GLib.Variant"/> and must not be freed.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the type string for the type of <code>value</code></p>
 </item>
 </terms>
 

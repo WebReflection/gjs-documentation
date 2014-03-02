@@ -34,7 +34,7 @@ current directory of the process to <code>path</code>.</p>  <p>See your C librar
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>0 on success, -1 if an error occurred.</p>
 </item>
 </terms>
 

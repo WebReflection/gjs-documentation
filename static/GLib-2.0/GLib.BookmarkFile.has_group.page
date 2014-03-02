@@ -43,7 +43,7 @@ the bookmark for <code>uri</code> belongs to.</p>  <p>In the event the URI canno
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>group</code> was found.</p>
 </item>
 </terms>
 

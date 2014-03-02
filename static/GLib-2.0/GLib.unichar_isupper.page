@@ -33,7 +33,7 @@ function unichar_isupper(c: String): Boolean {
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>c</code> is an uppercase character</p>
 </item>
 </terms>
 

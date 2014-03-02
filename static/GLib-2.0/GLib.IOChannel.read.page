@@ -50,7 +50,7 @@ function read(buf: String, count: Number(gsize), bytes_read: Number(gsize)): <li
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p><link xref="GLib.IOError"/>.none if the operation was successful.</p>
 </item>
 </terms>
 

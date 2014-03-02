@@ -26,7 +26,8 @@ the file or text buffer.</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the scanner has reached the end of
+    the file or text buffer</p>
 </item>
 </terms>
 

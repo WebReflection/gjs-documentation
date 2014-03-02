@@ -28,7 +28,7 @@ specified, and corresponds to the "main" main loop. See also
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the global default main context.</p>
 </item>
 </terms>
 

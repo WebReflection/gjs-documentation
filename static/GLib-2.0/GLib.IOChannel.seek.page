@@ -45,7 +45,7 @@ library function fseek().</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p><link xref="GLib.IOError"/>.none if the operation was successful.</p>
 </item>
 </terms>
 

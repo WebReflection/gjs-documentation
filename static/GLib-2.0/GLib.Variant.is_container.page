@@ -25,7 +25,7 @@ function is_container(): Boolean {
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>value</code> is a container</p>
 </item>
 </terms>
 

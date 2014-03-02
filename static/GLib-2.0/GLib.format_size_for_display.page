@@ -37,7 +37,8 @@ string "3.1 MB".</p>  <p>The prefix units base is 1024 (i.e. 1 KB is 1024 bytes)
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly-allocated formatted string containing a human
+    readable file size</p>
 </item>
 </terms>
 

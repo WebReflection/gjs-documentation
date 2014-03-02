@@ -35,7 +35,7 @@ that the following character is a nul terminator.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>type_string</code> is exactly one valid type string</p>  <p>Since 2.24</p>
 </item>
 </terms>
 

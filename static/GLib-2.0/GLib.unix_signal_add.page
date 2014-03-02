@@ -52,7 +52,7 @@ using <link xref="GLib.source_remove"/>.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>An ID (greater than 0) for the event source</p>
 </item>
 </terms>
 

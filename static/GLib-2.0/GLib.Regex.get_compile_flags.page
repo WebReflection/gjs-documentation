@@ -25,7 +25,7 @@ function get_compile_flags(): <link xref="GLib.RegexCompileFlags">GLib.RegexComp
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>flags from <link xref="GLib.RegexCompileFlags"/></p>
 </item>
 </terms>
 

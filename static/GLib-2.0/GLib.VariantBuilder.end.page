@@ -34,7 +34,7 @@ the empty array.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new, floating, <link xref="GLib.Variant"/></p>
 </item>
 </terms>
 

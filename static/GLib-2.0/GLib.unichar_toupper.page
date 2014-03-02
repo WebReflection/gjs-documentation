@@ -33,7 +33,9 @@ function unichar_toupper(c: String): String {
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the result of converting <code>c</code> to uppercase.
+              If <code>c</code> is not an lowercase or titlecase character,
+              or has no upper case equivalent <code>c</code> is returned unchanged.</p>
 </item>
 </terms>
 

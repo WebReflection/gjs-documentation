@@ -29,7 +29,8 @@ integer if the first value comes after the second.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>negative value if <code>a</code> &lt; <code>b</code>; zero if <code>a</code> = <code>b</code>; positive
+         value if <code>a</code> &gt; <code>b</code></p>
 </item>
 </terms>
 

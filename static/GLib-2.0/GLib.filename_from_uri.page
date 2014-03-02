@@ -34,7 +34,8 @@ encoding used for filenames.</p>
 </item>
 <item>
 <title><code>return_value</code></title>
-
+  <p>a newly-allocated string holding
+              the resulting filename, or <code>null</code> on an error.</p>
 </item>
 <item>
 <title><code>hostname</code></title>

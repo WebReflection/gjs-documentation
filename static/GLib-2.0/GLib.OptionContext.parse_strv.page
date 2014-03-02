@@ -41,7 +41,8 @@ See g_win32_get_command_line() for a solution.</p>  <p>This function is useful i
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the parsing was successful,
+         <code>false</code> if an error occurred</p>
 </item>
 <item>
 <title><code>arguments (out)</code></title>

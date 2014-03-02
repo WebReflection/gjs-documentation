@@ -44,7 +44,7 @@ be removed above the first group in the file.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the comment was removed, <code>false</code> otherwise</p>
 </item>
 </terms>
 

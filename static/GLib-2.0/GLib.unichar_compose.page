@@ -58,7 +58,7 @@ for details.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the characters could be composed</p>
 </item>
 </terms>
 

@@ -28,7 +28,7 @@ blocking to get ownership of <code>context</code>.</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if current thread is owner of <code>context</code>.</p>
 </item>
 </terms>
 

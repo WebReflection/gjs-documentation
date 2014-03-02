@@ -62,7 +62,7 @@ string, use <link xref="GLib.ascii_dtostr"/>.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>The pointer to the buffer with the converted string.</p>
 </item>
 </terms>
 

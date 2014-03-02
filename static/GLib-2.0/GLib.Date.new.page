@@ -28,7 +28,7 @@ represent an existing day). Free the return value with <link xref="GLib.Date.fre
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly-allocated <link xref="GLib.Date"/></p>
 </item>
 </terms>
 

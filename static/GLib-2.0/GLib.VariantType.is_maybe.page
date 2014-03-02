@@ -28,7 +28,7 @@ example.</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>type</code> is a maybe type</p>  <p>Since 2.24</p>
 </item>
 </terms>
 

@@ -34,7 +34,8 @@ options.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the option was successfully parsed, <code>false</code> if an error
+ occurred, in which case @error should be set with <link xref="GLib.set_error"/></p>
 </item>
 </terms>
 

@@ -30,7 +30,7 @@ function onTestLogFatalFunc(log_domain: String, log_level: <link xref="GLib.LogL
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the program should abort, <code>false</code> otherwise</p>
 </item>
 </terms>
 

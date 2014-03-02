@@ -50,7 +50,8 @@ the initial setup of the <link xref="GLib.Regex"/> structure.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a <link xref="GLib.Regex"/> structure. Call <link xref="GLib.Regex.unref"/> when you
+  are done with it</p>
 </item>
 </terms>
 

@@ -40,7 +40,7 @@ pas both this test and <link xref="GLib.unichar_iszerowidth"/>.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the character is wide in legacy East Asian locales</p>
 </item>
 </terms>
 

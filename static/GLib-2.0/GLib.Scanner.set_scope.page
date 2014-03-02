@@ -33,7 +33,7 @@ function set_scope(scope_id: Number(guint)): Number(guint) {
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the old scope id</p>
 </item>
 </terms>
 

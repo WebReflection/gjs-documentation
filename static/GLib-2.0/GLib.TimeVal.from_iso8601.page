@@ -37,7 +37,7 @@ timestamp is assumed to be in local time.)</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the conversion was successful.</p>
 </item>
 <item>
 <title><code>time_</code></title>

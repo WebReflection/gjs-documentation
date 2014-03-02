@@ -36,7 +36,8 @@ the strsignal() function.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a UTF-8 string describing the signal. If the signal is unknown,
+    it returns "unknown signal (&lt;signum&gt;)".</p>
 </item>
 </terms>
 

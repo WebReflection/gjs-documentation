@@ -37,7 +37,7 @@ spaces. Given some UTF-8 text, obtain a character value with
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>c</code> is printable unless it's a space</p>
 </item>
 </terms>
 

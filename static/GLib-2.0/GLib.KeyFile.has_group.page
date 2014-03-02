@@ -33,7 +33,8 @@ function has_group(group_name: String): Boolean {
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>group_name</code> is a part of <code>key_file</code>, <code>false</code>
+otherwise.</p>
 </item>
 </terms>
 

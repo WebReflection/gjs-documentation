@@ -30,7 +30,7 @@ this function will immediately return <code>true</code>.</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>value</code> is in normal form</p>
 </item>
 </terms>
 

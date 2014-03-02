@@ -42,7 +42,7 @@ years into account.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>number of days in <code>month</code> during the <code>year</code></p>
 </item>
 </terms>
 

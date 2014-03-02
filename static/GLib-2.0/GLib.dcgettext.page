@@ -53,7 +53,7 @@ dcgettext() directly.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the translated string for the given locale category</p>
 </item>
 </terms>
 

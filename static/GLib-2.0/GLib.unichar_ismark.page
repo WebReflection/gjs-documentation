@@ -39,7 +39,7 @@ scripts.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if <code>c</code> is a mark character</p>
 </item>
 </terms>
 

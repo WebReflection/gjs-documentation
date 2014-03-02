@@ -25,7 +25,7 @@ function pending(): Boolean {
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if events are pending.</p>
 </item>
 </terms>
 

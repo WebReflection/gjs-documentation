@@ -35,7 +35,7 @@ if 4 or more days of that week are contained within the new year.</p>
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the ISO 8601 week number for <code>datetime</code>.</p>
 </item>
 </terms>
 

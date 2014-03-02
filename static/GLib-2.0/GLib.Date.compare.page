@@ -34,7 +34,8 @@ Both dates must be valid.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>0 for equal, less than zero if <code>lhs</code> is less than <code>rhs</code>,
+    greater than zero if <code>lhs</code> is greater than <code>rhs</code></p>
 </item>
 </terms>
 

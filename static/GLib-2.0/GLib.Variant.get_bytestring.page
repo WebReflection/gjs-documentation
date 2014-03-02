@@ -31,7 +31,8 @@ array of bytes.</p>  <p>The return value remains valid as long as <code>value</c
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>
+         the constant string</p>
 </item>
 </terms>
 

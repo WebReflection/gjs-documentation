@@ -44,7 +44,9 @@ and @error is set to #G_KEY_FILE_ERROR_GROUP_NOT_FOUND.</p>
 </item>
 <item>
 <title><code>return_value</code></title>
-
+  <p>
+ a <code>null</code>-terminated string array or <code>null</code> if the specified
+ key cannot be found. The array should be freed with <link xref="GLib.strfreev"/>.</p>
 </item>
 <item>
 <title><code>length</code></title>

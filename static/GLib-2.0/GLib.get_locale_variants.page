@@ -38,7 +38,9 @@ use <link xref="GLib.get_language_names"/>.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly
+  allocated array of newly allocated strings with the locale variants. Free with
+  <link xref="GLib.strfreev"/>.</p>
 </item>
 </terms>
 

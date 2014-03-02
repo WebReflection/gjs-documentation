@@ -50,7 +50,7 @@ commas, or <code>null</code>.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the combined set of bit flags.</p>
 </item>
 </terms>
 

@@ -48,7 +48,9 @@ more exactly should use the Win32 API.</p>  <p>See your C library manual for mor
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>zero if the pathname refers to an existing file system
+    object that has all the tested permissions, or -1 otherwise
+    or on error.</p>
 </item>
 </terms>
 

@@ -29,7 +29,7 @@ counts.</p>
 <terms>
 <item>
 <title><code>ok</code></title>
-
+  <p>whether <code>value</code> is floating</p>
 </item>
 </terms>
 

@@ -61,7 +61,9 @@ Windows, the easiest solution is to construct all of your
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the number of entries in <code>fds</code> whose %revents fields
+were filled in, or 0 if the operation timed out, or -1 on error or
+if the call was interrupted.</p>
 </item>
 </terms>
 

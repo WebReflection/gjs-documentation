@@ -50,7 +50,7 @@ known.</p>
 </item>
 <item>
 <title><code>return_value</code></title>
-
+  <p>the folded tokens</p>
 </item>
 <item>
 <title><code>ascii_alternates</code></title>

@@ -48,7 +48,7 @@ all errors are fatal.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>false</code> if an error occurred, <code>true</code> on success</p>
 </item>
 </terms>
 

@@ -25,7 +25,7 @@ function get_minute(): Number(gint) {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the minute of the hour</p>
 </item>
 </terms>
 

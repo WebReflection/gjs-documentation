@@ -34,7 +34,7 @@ function is_dst(interval: Number(gint)): Boolean {
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if daylight savings time is in effect</p>
 </item>
 </terms>
 

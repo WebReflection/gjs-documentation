@@ -38,7 +38,7 @@ as pango_break() instead of caring about break types yourself.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the break type of <code>c</code></p>
 </item>
 </terms>
 

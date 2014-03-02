@@ -43,7 +43,7 @@ on some older ones may use %O_NDELAY.</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if successful</p>
 </item>
 </terms>
 

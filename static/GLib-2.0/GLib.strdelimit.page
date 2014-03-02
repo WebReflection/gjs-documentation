@@ -57,7 +57,7 @@ allow nesting such as
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p><code>string</code></p>
 </item>
 </terms>
 

@@ -25,7 +25,7 @@ function get_year(): <link xref="GLib.DateYear">GLib.DateYear</link> {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>year in which the date falls</p>
 </item>
 </terms>
 

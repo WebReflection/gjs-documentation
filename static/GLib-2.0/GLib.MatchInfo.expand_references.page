@@ -43,7 +43,7 @@ contains references.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the expanded string, or <code>null</code> if an error occurred</p>
 </item>
 </terms>
 

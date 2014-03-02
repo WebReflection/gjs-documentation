@@ -27,7 +27,7 @@ nearest second.</p>  <p>Unix time is the number of seconds that have elapsed sin
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the Unix time corresponding to <code>datetime</code></p>
 </item>
 </terms>
 

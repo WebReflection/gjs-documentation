@@ -35,7 +35,9 @@ discarding any comments. The URIs are not validated.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a newly allocated <code>null</code>-terminated list
+  of strings holding the individual URIs. The array should be freed
+  with <link xref="GLib.strfreev"/>.</p>
 </item>
 </terms>
 

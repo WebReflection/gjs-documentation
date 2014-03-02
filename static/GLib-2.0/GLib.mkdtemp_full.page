@@ -49,7 +49,9 @@ should be in UTF-8.</p>
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>A pointer to <code>tmpl</code>, which has been modified
+    to hold the directory name. In case of errors, <code>null</code> is
+    returned, and %errno will be set.</p>
 </item>
 </terms>
 

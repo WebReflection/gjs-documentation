@@ -51,7 +51,7 @@ a few thousand years in the future).</p>
 </item>
 <item>
 <title><code>ok</code></title>
-
+  <p><code>true</code> if the date is a valid one</p>
 </item>
 </terms>
 

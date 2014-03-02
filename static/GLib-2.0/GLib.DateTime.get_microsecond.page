@@ -25,7 +25,7 @@ function get_microsecond(): Number(gint) {
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the microsecond of the second</p>
 </item>
 </terms>
 

@@ -26,7 +26,7 @@ even if the <link xref="GLib.MappedFile"/> is backed by a text file.</p>  <p>If 
 <terms>
 <item>
 <title><code>Returns</code></title>
-
+  <p>the contents of <code>file</code>, or <code>null</code>.</p>
 </item>
 </terms>
 

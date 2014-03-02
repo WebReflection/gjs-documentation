@@ -42,7 +42,7 @@ of type <code>key</code> and a value of type <code>value</code>.</p>  <p>It is a
 </item>
 <item>
 <title><code>Returns</code></title>
-
+  <p>a new dictionary entry <link xref="GLib.VariantType"/></p>  <p>Since 2.24</p>
 </item>
 </terms>
 
