@@ -36,9 +36,9 @@ GENERATED_NAMESPACES = \
 NAMESPACES = $(STATIC_NAMESPACES) $(GENERATED_NAMESPACES)
 
 GIRS = $(foreach g,$(NAMESPACES),$(girdir)/$(g).gir)
-MALLARDS = \
-	$(foreach g,$(STATIC_NAMESPACES),$(outdir)/static/$(g)) \
-	$(foreach g,$(GENERATED_NAMESPACES),$(outdir)/generated/$(g))
+STATIC_MALLARDS = $(foreach g,$(STATIC_NAMESPACES),$(outdir)/static/$(g))
+GENERATED_MALLARDS = $(foreach g,$(GENERATED_NAMESPACES),$(outdir)/generated/$(g))
+MALLARDS = $(STATIC_MALLARDS) $(GENERATED_MALLARDS)
 HTMLS = $(foreach g,$(NAMESPACES),html/$(g))
 
 all: $(HTMLS)
@@ -66,3 +66,5 @@ upload: all
 
 clean:
 	-rm -fr $(HTMLS)
+maintainerclean:
+	-rm -fr $(GENERATED_MALLARDS)
