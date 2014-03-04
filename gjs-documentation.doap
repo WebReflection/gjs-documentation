@@ -1,0 +1,29 @@
+<Project xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:gnome="http://api.gnome.org/doap-extensions#"
+         xmlns="http://usefulinc.com/ns/doap#">
+
+  <name xml:lang="en">Gjs Documentation</name>
+  <shortdesc xml:lang="en">Library references and tools for GJS</shortdesc>
+  <description>
+    Documentation for the Gjs language binding is generated using
+    the g-ir-doc-tool tool from the gobject-introspection project,
+    but is also hand edited to include the Gjs specific features
+    and manual bindings.
+  </description>
+
+  <homepage rdf:resource="http://wiki.gnome.org/Projects/Gjs/Documentation" />
+  <mailing-list rdf:resource="http://mail.gnome.org/mailman/listinfo/javascript-list" />
+  <!--<download-page rdf:resource="http://download.gnome.org/sources/gnome-shell/" />-->
+  <bug-database rdf:resource="http://bugzilla.gnome.org/browse.cgi?product=gjs" />
+  <category rdf:resource="http://api.gnome.org/doap-extensions#bindings" />
+
+  <maintainer>
+    <foaf:Person>
+      <foaf:name>Giovanni Campagna</foaf:name>
+      <foaf:mbox rdf:resource="mailto:gcampagna@gnome.org" />
+      <gnome:userid>gcampagna</gnome:userid>
+    </foaf:Person>
+  </maintainer>
+</Project>
