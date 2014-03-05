@@ -26,7 +26,7 @@ to see if they have been cancelled.</p>
   <p>optional <link xref="Gio.Cancellable"/> object, <code>null</code> to ignore.</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if this function should be called again to
    complete the job, <code>false</code> if the job is complete (or cancelled)</p>
 </item>

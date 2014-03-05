@@ -31,7 +31,7 @@ to enable subclasses to chain up correctly.</p>
   <p>Since 2.34</p>
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if @error is has been filled in with an error from
   <code>res</code>, <code>false</code> if not.</p>
 </item>

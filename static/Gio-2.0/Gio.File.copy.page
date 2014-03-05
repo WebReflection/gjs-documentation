@@ -75,7 +75,7 @@ file), see <link xref="Gio.File.dup"/>.</p>
     progress information, or <code>null</code> if progress information is not needed</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> on success, <code>false</code> otherwise.</p>
 </item>
 </terms>

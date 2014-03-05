@@ -35,7 +35,7 @@ event that the private flag cannot be found, <code>false</code> is returned and
   <p>a valid URI</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the private flag is set, <code>false</code> otherwise.</p>
 </item>
 </terms>

@@ -24,7 +24,7 @@ function had_error(): Boolean {
   <p>Since 2.36</p>
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the task resulted in an error, <code>false</code> otherwise.</p>
 </item>
 </terms>

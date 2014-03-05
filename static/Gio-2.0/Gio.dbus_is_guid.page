@@ -33,7 +33,7 @@ GUID (for example, D-Bus GUIDs are not RFC-4122 compliant).</p>
   <p>The string to check.</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>string</code> is a guid, <code>false</code> otherwise.</p>
 </item>
 </terms>

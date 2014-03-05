@@ -26,7 +26,7 @@ triggers.</p>
   <p>the IO conditions reported on <code>fd</code></p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>false</code> if the source should be removed</p>
 </item>
 </terms>

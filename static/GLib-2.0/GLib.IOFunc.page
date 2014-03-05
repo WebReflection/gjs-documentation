@@ -31,7 +31,7 @@ on a <link xref="GLib.IOChannel"/> is satisfied.</p>
   <p>user data set in <link xref="GLib.io_add_watch"/> or <link xref="GLib.io_add_watch"/></p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p>the function should return <code>false</code> if the event source
          should be removed</p>
 </item>

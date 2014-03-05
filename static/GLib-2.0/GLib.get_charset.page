@@ -41,7 +41,7 @@ freed.</p>
   <p>return location for character set name</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the returned charset is UTF-8</p>
 </item>
 </terms>

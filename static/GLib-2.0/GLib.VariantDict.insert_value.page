@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="GLib.VariantDict.insert_value"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.VariantDict" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>g_variant_dict_insert_value</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>key</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.Variant</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.VariantDict.prototype.insert_value</title>
+  <synopsis><code mime="text/x-gjs">
+function insert_value(key: String, value: <link xref="GLib.Variant">GLib.Variant</link>): void {
+    // Gjs wrapper for g_variant_dict_insert_value()
+}
+  </code></synopsis>
+  <p>Inserts (or replaces) a key in a <link xref="GLib.VariantDict"/>.</p>  <p><code>value</code> is consumed if it is floating.</p>
+  <p>Since 2.40</p>
+<terms>
+<item>
+<title><code>key</code></title>
+  <p>the key to insert a value for</p>
+</item>
+<item>
+<title><code>value</code></title>
+  <p>the value to insert</p>
+</item>
+</terms>
+
+</page>

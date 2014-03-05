@@ -26,7 +26,7 @@ on the <link xref="Gio.DBusMessage-locked"/> property.</p>
   <p>Since 2.26</p>
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>message</code> is locked, <code>false</code> otherwise.</p>
 </item>
 </terms>

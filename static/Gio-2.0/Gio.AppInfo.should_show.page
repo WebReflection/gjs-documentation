@@ -25,7 +25,7 @@ list available applications.</p>
 
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the <code>appinfo</code> should be shown, <code>false</code> otherwise.</p>
 </item>
 </terms>

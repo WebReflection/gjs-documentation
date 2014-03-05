@@ -33,7 +33,7 @@ use <link xref="Gio.dbus_error_get_remote_error"/> to get the name of the error.
   <p>A <link href="../GLib-2.0/GLib.Error.html">GLib.Error</link>.</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>error</code> represents an error from a remote peer,
 <code>false</code> otherwise.</p>
 </item>

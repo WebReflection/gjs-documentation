@@ -38,7 +38,7 @@ of <code>prefix</code>.</p>
   <p>input <link xref="Gio.File"/></p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the @files's parent, grandparent, etc is <code>prefix</code>,
     <code>false</code> otherwise.</p>
 </item>

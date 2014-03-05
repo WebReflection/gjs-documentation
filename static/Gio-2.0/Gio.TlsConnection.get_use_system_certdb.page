@@ -25,7 +25,7 @@ peer certificates. See <link xref="Gio.TlsConnection.set_use_system_certdb"/>.</
 
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p>whether <code>conn</code> uses the system certificate database</p>
 </item>
 </terms>

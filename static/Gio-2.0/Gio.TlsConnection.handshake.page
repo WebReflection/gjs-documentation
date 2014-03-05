@@ -47,7 +47,7 @@ handshake.</p>
   <p>a <link xref="Gio.Cancellable"/>, or <code>null</code></p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p>success or failure</p>
 </item>
 </terms>

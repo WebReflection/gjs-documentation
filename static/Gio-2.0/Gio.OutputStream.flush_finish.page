@@ -32,7 +32,7 @@ function flush_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link
   <p>a GAsyncResult.</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if flush operation succeeded, <code>false</code> otherwise.</p>
 </item>
 </terms>

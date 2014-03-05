@@ -40,7 +40,7 @@ function param_value_defaults(pspec: <link xref="GObject.ParamSpec">GObject.Para
   <p>a <link xref="GObject.Value"/> of correct type for <code>pspec</code></p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p>whether <code>value</code> contains the canonical default for this <code>pspec</code></p>
 </item>
 </terms>

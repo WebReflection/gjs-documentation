@@ -32,7 +32,7 @@ function unichar_isxdigit(c: String): Boolean {
   <p>a Unicode character.</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the character is a hexadecimal digit</p>
 </item>
 </terms>

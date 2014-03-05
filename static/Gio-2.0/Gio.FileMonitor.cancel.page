@@ -24,7 +24,7 @@ function cancel(): Boolean {
 
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if monitor was cancelled.</p>
 </item>
 </terms>

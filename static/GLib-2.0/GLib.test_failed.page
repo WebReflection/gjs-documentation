@@ -29,7 +29,7 @@ if it is called from inside a test function.</p>
   <p>Since 2.38</p>
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the test has failed</p>
 </item>
 </terms>

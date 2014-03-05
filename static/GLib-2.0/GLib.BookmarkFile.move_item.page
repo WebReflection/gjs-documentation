@@ -43,7 +43,7 @@ existing bookmark for <code>new_uri</code> will be overwritten.  If <code>new_ur
   <p>a valid URI, or <code>null</code></p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the URI was successfully changed</p>
 </item>
 </terms>

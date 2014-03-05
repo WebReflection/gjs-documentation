@@ -46,7 +46,7 @@ bit in <code>value</code>.</p>
   <p>a flags value</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code>, if the set succeeds</p>
 </item>
 </terms>

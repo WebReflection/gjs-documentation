@@ -24,7 +24,7 @@ function can_mount(): Boolean {
 
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the <code>volume</code> can be mounted. <code>false</code> otherwise</p>
 </item>
 </terms>

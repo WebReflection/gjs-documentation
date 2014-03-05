@@ -38,7 +38,7 @@ the non-blocking version.</p>
   <p>a <link xref="Gio.Cancellable"/>, or <code>null</code></p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the permission was successfully released</p>
 </item>
 </terms>

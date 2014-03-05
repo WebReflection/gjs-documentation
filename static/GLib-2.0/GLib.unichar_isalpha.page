@@ -34,7 +34,7 @@ Given some UTF-8 text, obtain a character value with
   <p>a Unicode character</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>c</code> is an alphabetic character</p>
 </item>
 </terms>

@@ -37,7 +37,7 @@ be considered constant and have to be left untouched.</p>
   <p>The signal id of the signal to query information for.</p>
 </item>
 <item>
-<title><code>query</code></title>
+<title><code>Returns</code></title>
   <p>A user provided structure that is
  filled in with constant values upon success.</p>
 </item>

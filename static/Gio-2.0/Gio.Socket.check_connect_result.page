@@ -26,7 +26,7 @@ used in non-blocking mode.</p>
   <p>Since 2.22</p>
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if no error, <code>false</code> otherwise, setting @error to the error</p>
 </item>
 </terms>

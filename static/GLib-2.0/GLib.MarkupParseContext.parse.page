@@ -47,7 +47,7 @@ all errors are fatal.</p>
   <p>length of <code>text</code> in bytes</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>false</code> if an error occurred, <code>true</code> on success</p>
 </item>
 </terms>

@@ -28,7 +28,7 @@ well as the first string item in <code>message</code>'s body.</p>
   <p>Since 2.26</p>
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if @error was set, <code>false</code> otherwise.</p>
 </item>
 </terms>

@@ -44,7 +44,7 @@ does.)</p>
   <p>Since 2.22</p>
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> on success, <code>false</code> on error</p>
 </item>
 </terms>

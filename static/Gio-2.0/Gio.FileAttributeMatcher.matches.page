@@ -34,7 +34,7 @@ will always return <code>true</code>.</p>
   <p>a file attribute key.</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>attribute</code> matches <code>matcher</code>. <code>false</code> otherwise.</p>
 </item>
 </terms>

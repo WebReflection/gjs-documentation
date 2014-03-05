@@ -41,7 +41,7 @@ function emit_accept_certificate(peer_cert: <link xref="Gio.TlsCertificate">Gio.
   <p>the problems with <code>peer_cert</code></p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if one of the signal handlers has returned
     <code>true</code> to accept <code>peer_cert</code></p>
 </item>

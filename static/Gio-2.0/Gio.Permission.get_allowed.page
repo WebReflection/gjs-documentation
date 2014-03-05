@@ -26,7 +26,7 @@ the caller currently has permission to perform the action that
   <p>Since 2.26</p>
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p>the value of the 'allowed' property</p>
 </item>
 </terms>

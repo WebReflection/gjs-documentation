@@ -42,7 +42,7 @@ be returned.</p>
   <p>an error code</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p>whether <code>error</code> has <code>domain</code> and <code>code</code></p>
 </item>
 </terms>

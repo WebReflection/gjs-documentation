@@ -45,7 +45,7 @@ different things depending on what address is connected to.</p>
   <p>Optional <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link> identifying this source</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> on success, <code>false</code> on error.</p>
 </item>
 </terms>

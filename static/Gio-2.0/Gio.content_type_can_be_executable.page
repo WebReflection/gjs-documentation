@@ -33,7 +33,7 @@ things like text files can be executables (i.e. scripts and batch files).</p>
   <p>a content type string</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the file type corresponds to a type that
     can be executable, <code>false</code> otherwise.</p>
 </item>

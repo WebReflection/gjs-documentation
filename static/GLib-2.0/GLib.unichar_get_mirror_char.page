@@ -46,7 +46,7 @@ pointed to by <code>mirrored_ch</code>.  Otherwise the original character is put
   <p>location to store the mirrored character</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>ch</code> has a mirrored character, <code>false</code> otherwise</p>
 </item>
 </terms>

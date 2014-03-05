@@ -38,7 +38,7 @@ errors are those from <link xref="GLib.shell_parse_argv"/> and <link xref="GLib.
   <p>a command line</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> on success, <code>false</code> if error is set</p>
 </item>
 </terms>

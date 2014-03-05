@@ -42,7 +42,7 @@ either a <link xref="GLib.FileError"/> or <link xref="GLib.KeyFileError"/>.</p>
   <p>flags from <link xref="GLib.KeyFileFlags"/></p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if a key file could be loaded, <code>false</code> otherwise</p>
 </item>
 </terms>

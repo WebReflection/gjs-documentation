@@ -60,7 +60,7 @@ of building the arguments.</p>
   <p>whether blocked handlers should count as match.</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if a handler is connected to the signal, <code>false</code>
          otherwise.</p>
 </item>

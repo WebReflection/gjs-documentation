@@ -45,7 +45,7 @@ for fcntl(); these are different on Linux/glibc.</p>
   <p>Bitfield of file descriptor flags, as for fcntl()</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> on success, <code>false</code> if not (and errno will be set).</p>
 </item>
 </terms>

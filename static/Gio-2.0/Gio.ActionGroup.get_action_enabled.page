@@ -33,7 +33,7 @@ have its state changed from outside callers.</p>
   <p>the name of the action to query</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p>whether or not the action is currently enabled</p>
 </item>
 </terms>

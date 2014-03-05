@@ -33,7 +33,7 @@ See <link xref="Gio.AsyncInitable.init_async"/>.</p>
   <p>a <link xref="Gio.AsyncResult"/>.</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if successful. If an error has occurred, this function
 will return <code>false</code> and set @error appropriately if present.</p>
 </item>

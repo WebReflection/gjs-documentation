@@ -45,7 +45,7 @@ no way to detect this.</p>
   <p>a <link xref="Gio.AppLaunchContext"/> or <code>null</code></p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> on successful launch, <code>false</code> otherwise.</p>
 </item>
 </terms>

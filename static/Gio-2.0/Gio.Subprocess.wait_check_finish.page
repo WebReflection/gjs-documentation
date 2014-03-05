@@ -33,7 +33,7 @@ function wait_check_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult<
   <p>the <link xref="Gio.AsyncResult"/> passed to your <link xref="Gio.AsyncReadyCallback"/></p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if successful, or <code>false</code> with @error set</p>
 </item>
 </terms>

@@ -43,7 +43,7 @@ be removed above the first group in the file.</p>
   <p>a key</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the comment was removed, <code>false</code> otherwise</p>
 </item>
 </terms>

@@ -34,7 +34,7 @@ or <link xref="GLib.BookmarkFileError"/>.</p>
   <p>the path of a filename to load, in the GLib file name encoding</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if a desktop bookmark file could be loaded</p>
 </item>
 </terms>

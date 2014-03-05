@@ -35,7 +35,7 @@ sure resources are released as early as possible.</p>
   <p>optional <link xref="Gio.Cancellable"/> object, <code>null</code> to ignore.</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p>#TRUE on success or #FALSE on error.</p>
 </item>
 </terms>

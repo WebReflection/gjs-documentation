@@ -33,7 +33,7 @@ of the keyfile backing <code>info</code>.</p>
   <p>the key to look up</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the <code>key</code> exists</p>
 </item>
 </terms>

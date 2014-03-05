@@ -33,7 +33,7 @@ standard.</p>
   <p>a Unicode character</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the character has an assigned value</p>
 </item>
 </terms>

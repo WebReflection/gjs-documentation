@@ -32,7 +32,7 @@ should be read, or <code>false</code> otherwise.</p>
   <p>data passed to the callback.</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if more data should be read back. <code>false</code> otherwise.</p>
 </item>
 </terms>

@@ -26,7 +26,7 @@ addresses.</p>
   <p>Since 2.32</p>
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p>the broadcast setting on <code>socket</code></p>
 </item>
 </terms>

@@ -54,7 +54,7 @@ headers.</p>
   <p>the value to set the option to</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p>success or failure. On failure, @error will be set, and
   the system error value (`errno` or WSAGetLastError()) will still
   be set to the result of the setsockopt() call.</p>

@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<page id="GLib.VariantDict"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>GLib.VariantDict</title>
+  <synopsis><code>
+const GLib = imports.gi.GLib;
+
+let variantDict = new GLib.VariantDict(from_asv: GLib.Variant);
+  </code></synopsis>
+  <p><link xref="GLib.VariantDict"/> is a mutable interface to <link xref="GLib.Variant"/> dictionaries.</p>  <p>It can be used for doing a sequence of dictionary lookups in an
+efficient way on an existing <link xref="GLib.Variant"/> dictionary or it can be used
+to construct new dictionaries with a hashtable-like interface.  It
+can also be used for taking existing dictionaries and modifying them
+in order to create new ones.</p>  <p><link xref="GLib.VariantDict"/> can only be used with %G_VARIANT_TYPE_VARDICT
+dictionaries.</p>  <p>It is possible to use <link xref="GLib.VariantDict"/> allocated on the stack or on the
+heap.  When using a stack-allocated <link xref="GLib.VariantDict"/>, you begin with a
+call to <link xref="GLib.VariantDict.init"/> and free the resources with a call to
+<link xref="GLib.VariantDict.clear"/>.</p>  <p>Heap-allocated <link xref="GLib.VariantDict"/> follows normal refcounting rules: you
+allocate it with <link xref="GLib.VariantDict.new"/> and use <link xref="GLib.VariantDict.ref"/>
+and <link xref="GLib.VariantDict.unref"/>.</p>  <p><link xref="GLib.VariantDict.end"/> is used to convert the <link xref="GLib.VariantDict"/> back into a
+dictionary-type <link xref="GLib.Variant"/>.  When used with stack-allocated instances,
+this also implicitly frees all associated memory, but for
+heap-allocated instances, you must still call <link xref="GLib.VariantDict.unref"/>
+afterwards.</p>  <p>You will typically want to use a heap-allocated <link xref="GLib.VariantDict"/> when
+you expose it as part of an API.  For most other uses, the
+stack-allocated form will be more convenient.</p>  <p>Consider the following two examples that do the same thing in each
+style: take an existing dictionary and look up the "count" uint32
+key, adding 1 to it if it is found, or returning an error if the
+key is not found.  Each returns the new dictionary as a floating
+<link xref="GLib.Variant"/>.</p>  <p>## Using a stack-allocated GVariantDict</p>  <p>|[
+  GVariant *
+  add_to_count (GVariant  *orig,
+                GError   **error)
+  {
+    GVariantDict dict;
+    guint32 count;</p>  <p>    g_variant_dict_init (&amp;dict, orig);
+    if (!g_variant_dict_lookup (&amp;dict, "count", "u", &amp;count))
+      {
+        g_set_error (...);
+        g_variant_dict_clear (&amp;dict);
+        return NULL;
+      }</p>  <p>    g_variant_dict_insert (&amp;dict, "count", "u", count + 1);</p>  <p>    return g_variant_dict_end (&amp;dict);
+  }
+]|</p>  <p>## Using heap-allocated GVariantDict</p>  <p>|[
+  GVariant *
+  add_to_count (GVariant  *orig,
+                GError   **error)
+  {
+    GVariantDict *dict;
+    GVariant *result;
+    guint32 count;</p>  <p>    dict = g_variant_dict_new (orig);</p>  <p>    if (g_variant_dict_lookup (dict, "count", "u", &amp;count))
+      {
+        g_variant_dict_insert (dict, "count", "u", count + 1);
+        result = g_variant_dict_end (dict);
+      }
+    else
+      {
+        g_set_error (...);
+        result = NULL;
+      }</p>  <p>    g_variant_dict_unref (dict);</p>  <p>    return result;
+  }
+]|</p>
+  <p>Since 2.40</p>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

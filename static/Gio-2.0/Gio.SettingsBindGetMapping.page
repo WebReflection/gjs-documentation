@@ -27,7 +27,7 @@ of the appropriate type.</p>
   <p>the <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link></p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the conversion succeeded, <code>false</code> in case of an error</p>
 </item>
 </terms>

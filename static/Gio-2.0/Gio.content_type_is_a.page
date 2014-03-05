@@ -40,7 +40,7 @@ function content_type_is_a(type: String, supertype: String): Boolean {
   <p>a content type string</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>type</code> is a kind of <code>supertype</code>,
     <code>false</code> otherwise.</p>
 </item>

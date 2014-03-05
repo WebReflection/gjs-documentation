@@ -37,7 +37,7 @@ must contain only the characters "[A-Z][a-z][0-9]_".  No sequence
   <p>a normal C nul-terminated string</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>string</code> is a D-Bus object path</p>
 </item>
 </terms>

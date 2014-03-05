@@ -32,7 +32,7 @@ function equal(mask2: <link xref="Gio.InetAddressMask">Gio.InetAddressMask</link
   <p>another <link xref="Gio.InetAddressMask"/></p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p>whether <code>mask</code> and <code>mask2</code> are the same mask</p>
 </item>
 </terms>

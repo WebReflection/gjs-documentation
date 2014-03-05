@@ -61,7 +61,7 @@ Baz", but not "SFO" (because no word as "fo" as a prefix).</p>
   <p><code>true</code> to accept ASCII alternates</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>potential_hit</code> is a hit</p>
 </item>
 </terms>

@@ -27,7 +27,7 @@ up until the service is started.</p>
   <p>Since 2.22</p>
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the service is active, <code>false</code> otherwise</p>
 </item>
 </terms>

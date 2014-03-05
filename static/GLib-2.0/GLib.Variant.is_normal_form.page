@@ -29,7 +29,7 @@ this function will immediately return <code>true</code>.</p>
   <p>Since 2.24</p>
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>value</code> is in normal form</p>
 </item>
 </terms>

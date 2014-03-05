@@ -32,7 +32,7 @@ emissions of that signal, from any object.</p>  <p>You may not attach these to s
   <p>user data associated with the hook.</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p>whether it wants to stay connected. If it returns <code>false</code>, the signal
  hook is disconnected (and destroyed).</p>
 </item>

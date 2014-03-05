@@ -85,7 +85,7 @@ for <code>uri</code> is found, one is created.</p>
   <p>the time of the last registration for this application</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the application's meta-data was successfully
   changed.</p>
 </item>

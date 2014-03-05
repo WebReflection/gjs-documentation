@@ -24,7 +24,7 @@ function can_seek(): Boolean {
 
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>seekable</code> can be seeked. <code>false</code> otherwise.</p>
 </item>
 </terms>

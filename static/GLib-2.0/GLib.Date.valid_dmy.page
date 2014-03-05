@@ -50,7 +50,7 @@ a few thousand years in the future).</p>
   <p>year</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the date is a valid one</p>
 </item>
 </terms>

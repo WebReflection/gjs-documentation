@@ -28,7 +28,7 @@ of speaking IPv4.</p>
   <p>Since 2.22</p>
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if this socket can be used with IPv4.</p>
 </item>
 </terms>

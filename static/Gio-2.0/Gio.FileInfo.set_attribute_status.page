@@ -43,7 +43,7 @@ is returned and <code>info</code> is unchanged.</p>
   <p>a <link xref="Gio.FileAttributeStatus"/></p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the status was changed, <code>false</code> if the key was not set.</p>
 </item>
 </terms>

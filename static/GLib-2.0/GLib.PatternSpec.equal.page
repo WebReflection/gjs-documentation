@@ -33,7 +33,7 @@ match the same set of strings.</p>
   <p>another <link xref="GLib.PatternSpec"/></p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p>Whether the compiled patterns are equal</p>
 </item>
 </terms>

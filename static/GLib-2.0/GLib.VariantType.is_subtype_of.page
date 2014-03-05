@@ -34,7 +34,7 @@ only indefinite types can have subtypes.</p>
   <p>a <link xref="GLib.VariantType"/></p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>type</code> is a subtype of <code>supertype</code></p>  <p>Since 2.24</p>
 </item>
 </terms>

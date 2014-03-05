@@ -45,7 +45,7 @@ set to either a <link xref="GLib.FileError"/> or <link xref="GLib.BookmarkFileEr
   of the file, or <code>null</code></p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if a key file could be loaded, <code>false</code> otherwise</p>
 </item>
 </terms>

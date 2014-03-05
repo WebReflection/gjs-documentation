@@ -35,7 +35,7 @@ using "*" and namespace is anything.)</p>  <p>TODO: this is awkwardly worded.</p
   <p>a string containing a file attribute namespace.</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the matcher matches all of the entries
 in the given <code>ns</code>, <code>false</code> otherwise.</p>
 </item>

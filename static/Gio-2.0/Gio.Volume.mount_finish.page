@@ -36,7 +36,7 @@ function; there's no need to listen for the 'mount-added' signal on
   <p>a <link xref="Gio.AsyncResult"/></p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code>, <code>false</code> if operation failed</p>
 </item>
 </terms>

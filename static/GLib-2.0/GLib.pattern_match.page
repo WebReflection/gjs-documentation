@@ -69,7 +69,7 @@ does not contain any multibyte characters. GLib offers the
   <p>the reverse of <code>string</code> or <code>null</code></p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>string</code> matches <code>pspec</code></p>
 </item>
 </terms>

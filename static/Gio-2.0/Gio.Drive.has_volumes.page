@@ -24,7 +24,7 @@ function has_volumes(): Boolean {
 
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the <code>drive</code> contains volumes, <code>false</code> otherwise.</p>
 </item>
 </terms>

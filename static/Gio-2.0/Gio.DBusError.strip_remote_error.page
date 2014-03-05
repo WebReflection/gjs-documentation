@@ -35,7 +35,7 @@ received on the wire.</p>  <p>This is typically used when presenting errors to t
   <p>A <link href="../GLib-2.0/GLib.Error.html">GLib.Error</link>.</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if information was stripped, <code>false</code> otherwise.</p>
 </item>
 </terms>

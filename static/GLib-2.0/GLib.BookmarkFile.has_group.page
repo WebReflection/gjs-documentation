@@ -42,7 +42,7 @@ the bookmark for <code>uri</code> belongs to.</p>  <p>In the event the URI canno
   <p>the group name to be searched</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>group</code> was found.</p>
 </item>
 </terms>

@@ -30,7 +30,7 @@ to <link xref="GLib.Regex.replace_eval"/>, and it should append the replacement 
   <p>a <link xref="GLib.String"/> containing the new string</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>false</code> to continue the replacement process, <code>true</code> to stop it</p>
 </item>
 </terms>

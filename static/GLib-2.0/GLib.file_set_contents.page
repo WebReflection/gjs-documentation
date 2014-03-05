@@ -53,7 +53,7 @@ to 7 characters to <code>filename</code>.</p>
   <p>string to write to the file</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> on success, <code>false</code> if an error occurred</p>
 </item>
 </terms>

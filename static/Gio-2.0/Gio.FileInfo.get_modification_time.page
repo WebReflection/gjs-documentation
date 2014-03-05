@@ -21,11 +21,11 @@ function get_modification_time(): <link href="../GLib-2.0/GLib.TimeVal.html">GLi
 }
   </code></synopsis>
   <p>Gets the modification time of the current <code>info</code> and sets it
-in <code>result</code>.</p>
+in @result.</p>
 
 <terms>
 <item>
-<title><code>result</code></title>
+<title><code>Returns</code></title>
   <p>a <link href="../GLib-2.0/GLib.TimeVal.html">GLib.TimeVal</link>.</p>
 </item>
 </terms>

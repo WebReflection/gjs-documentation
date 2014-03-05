@@ -43,7 +43,7 @@ with <link xref="Gio.Cancellable.reset"/>.</p>
   <p>a pointer to a <link href="../GLib-2.0/GLib.PollFD.html">GLib.PollFD</link></p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>pollfd</code> was successfully initialized, <code>false</code> on
          failure to prepare the cancellable.</p>
 </item>

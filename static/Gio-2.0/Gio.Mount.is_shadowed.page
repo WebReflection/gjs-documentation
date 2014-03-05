@@ -40,7 +40,7 @@ activation root on a <link xref="Gio.Volume"/> is set.</p>
   <p>Since 2.20</p>
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>mount</code> is shadowed.</p>
 </item>
 </terms>

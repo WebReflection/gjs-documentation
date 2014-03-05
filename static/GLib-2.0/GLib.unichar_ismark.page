@@ -38,7 +38,7 @@ scripts.</p>
   <p>a Unicode character</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>c</code> is a mark character</p>
 </item>
 </terms>

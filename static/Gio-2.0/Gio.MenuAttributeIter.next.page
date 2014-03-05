@@ -28,7 +28,7 @@ attribute exists at all).</p>
   <p>Since 2.32</p>
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> on success, or <code>false</code> when there are no more attributes</p>
 </item>
 </terms>

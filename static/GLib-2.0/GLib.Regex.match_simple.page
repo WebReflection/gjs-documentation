@@ -61,7 +61,7 @@ once, it's more efficient to compile the pattern once with
   <p>match options, or 0</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the string matched, <code>false</code> otherwise</p>
 </item>
 </terms>

@@ -39,7 +39,7 @@ returned.</p>
   <p>a <link xref="Gio.AsyncResult"/>.</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the close operation has finished successfully.</p>
 </item>
 </terms>

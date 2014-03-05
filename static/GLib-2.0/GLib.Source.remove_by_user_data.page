@@ -34,7 +34,7 @@ data, only one will be destroyed.</p>
   <p>the user_data for the callback.</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if a source was found and removed.</p>
 </item>
 </terms>

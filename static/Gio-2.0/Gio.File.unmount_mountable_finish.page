@@ -33,7 +33,7 @@ with <link xref="Gio.File.unmount_mountable"/>.</p>
   <p>a <link xref="Gio.AsyncResult"/></p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the operation finished successfully.
     <code>false</code> otherwise.</p>
 </item>

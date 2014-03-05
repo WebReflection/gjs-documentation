@@ -25,7 +25,7 @@ function onvalue_validate(pspec: <link xref="GObject.ParamSpec">GObject.ParamSpe
 
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
 
 </item>
 </terms>

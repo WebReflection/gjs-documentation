@@ -44,7 +44,7 @@ In the event no group was defined, <code>false</code> is returned and
   <p>the group name to be removed</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>group</code> was successfully removed.</p>
 </item>
 </terms>

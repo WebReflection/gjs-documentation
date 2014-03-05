@@ -54,7 +54,7 @@ is useful when implementing move by copy + delete source.</p>
     <code>null</code> to ignore</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the attributes were copied successfully,
     <code>false</code> otherwise.</p>
 </item>

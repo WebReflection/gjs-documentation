@@ -36,7 +36,7 @@ applications for a specific name of the desktop, based on the
   <p>a string specifying a desktop name</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the <code>info</code> should be shown in <code>desktop_env</code> according to the
 `OnlyShowIn` and `NotShowIn` keys, <code>false</code>
 otherwise.</p>

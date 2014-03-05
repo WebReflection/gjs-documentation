@@ -53,7 +53,7 @@ change in future versions of GLib.</p>
   <p>An exit code as returned from <link xref="GLib.spawn_sync"/></p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if child exited successfully, <code>false</code> otherwise (and
     @error will be set)</p>
 </item>

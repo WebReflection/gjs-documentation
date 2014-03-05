@@ -27,7 +27,7 @@ returned.</p>
   <p>Since 2.40</p>
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the process exited cleanly with a exit status of 0</p>
 </item>
 </terms>

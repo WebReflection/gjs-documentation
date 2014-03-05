@@ -44,7 +44,7 @@ is returned and @error is set to #G_KEY_FILE_ERROR_INVALID_VALUE.</p>
   <p>a key</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p>the value associated with the key as a boolean,
    or <code>false</code> if the key was not found or could not be parsed.</p>
 </item>

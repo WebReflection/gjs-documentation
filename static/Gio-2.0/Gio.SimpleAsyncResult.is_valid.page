@@ -57,7 +57,7 @@ check is skipped.)</p>
   <p>the asynchronous function.</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p>#TRUE if all checks passed or #FALSE if any failed.</p>
 </item>
 </terms>

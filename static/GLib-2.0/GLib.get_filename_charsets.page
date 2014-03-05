@@ -47,7 +47,7 @@ on a system might be in any random encoding or just gibberish.</p>
   <p>return location for the <code>null</code>-terminated list of encoding names</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the filename encoding is UTF-8.</p>
 </item>
 </terms>

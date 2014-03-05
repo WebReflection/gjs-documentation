@@ -61,7 +61,7 @@ array directly to execvpe(), <link xref="GLib.spawn_async"/>, or the like.</p>
   <p>whether to change the variable if it already exists.</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>false</code> if the environment variable couldn't be set.</p>
 </item>
 </terms>

@@ -40,7 +40,7 @@ function signal_handler_is_connected(instance: <link xref="GObject.Object">GObje
   <p>the handler id.</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p>whether <code>handler_id</code> identifies a handler connected to <code>instance</code>.</p>
 </item>
 </terms>

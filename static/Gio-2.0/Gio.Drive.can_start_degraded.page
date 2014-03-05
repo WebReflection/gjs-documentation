@@ -24,7 +24,7 @@ function can_start_degraded(): Boolean {
   <p>Since 2.22</p>
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the <code>drive</code> can be started degraded, <code>false</code> otherwise.</p>
 </item>
 </terms>

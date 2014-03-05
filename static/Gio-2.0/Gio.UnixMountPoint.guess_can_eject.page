@@ -24,7 +24,7 @@ function guess_can_eject(): Boolean {
 
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>mount_point</code> is deemed to be ejectable.</p>
 </item>
 </terms>

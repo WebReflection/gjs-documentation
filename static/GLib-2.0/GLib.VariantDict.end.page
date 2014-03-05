@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="GLib.VariantDict.end"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.VariantDict" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.Variant</api:type>
+      </api:returns>
+      <api:name>g_variant_dict_end</api:name>
+    </api:function>
+  </info>
+  <title>GLib.VariantDict.prototype.end</title>
+  <synopsis><code mime="text/x-gjs">
+function end(): <link xref="GLib.Variant">GLib.Variant</link> {
+    // Gjs wrapper for g_variant_dict_end()
+}
+  </code></synopsis>
+  <p>Returns the current value of <code>dict</code> as a <link xref="GLib.Variant"/> of type
+%G_VARIANT_TYPE_VARDICT, clearing it in the process.</p>  <p>It is not permissible to use <code>dict</code> in any way after this call except
+for reference counting operations (in the case of a heap-allocated
+<link xref="GLib.VariantDict"/>) or by reinitialising it with <link xref="GLib.VariantDict.init"/> (in
+the case of stack-allocated).</p>
+  <p>Since 2.40</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a new, floating, <link xref="GLib.Variant"/></p>
+</item>
+</terms>
+
+</page>

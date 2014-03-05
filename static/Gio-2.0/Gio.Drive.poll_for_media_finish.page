@@ -32,7 +32,7 @@ function poll_for_media_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncRes
   <p>a <link xref="Gio.AsyncResult"/>.</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the drive has been poll_for_mediaed successfully,
     <code>false</code> otherwise.</p>
 </item>

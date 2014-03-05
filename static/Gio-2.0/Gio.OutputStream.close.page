@@ -48,7 +48,7 @@ data will reach the target.</p>
   <p>optional cancellable object</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> on success, <code>false</code> on failure</p>
 </item>
 </terms>

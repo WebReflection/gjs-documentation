@@ -32,7 +32,7 @@ function dbus_is_interface_name(string: String): Boolean {
   <p>The string to check.</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if valid, <code>false</code> otherwise.</p>
 </item>
 </terms>

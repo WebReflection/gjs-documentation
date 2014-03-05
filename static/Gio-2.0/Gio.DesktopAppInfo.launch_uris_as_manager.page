@@ -57,7 +57,7 @@ activation) then <code>spawn_flags</code>, <code>user_setup</code>, <code>user_s
   <p><link href="../GLib-2.0/GLib.SpawnFlags.html">GLib.SpawnFlags</link>, used for each process</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> on successful launch, <code>false</code> otherwise.</p>
 </item>
 </terms>

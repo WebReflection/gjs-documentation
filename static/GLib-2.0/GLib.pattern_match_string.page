@@ -42,7 +42,7 @@ matched against more than one pattern, consider using
   <p>the UTF-8 encoded string to match</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>string</code> matches <code>pspec</code></p>
 </item>
 </terms>

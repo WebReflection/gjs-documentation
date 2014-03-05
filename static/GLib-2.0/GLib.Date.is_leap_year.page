@@ -35,7 +35,7 @@ is also divisible by 400.</p>
   <p>year to check</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the year is a leap year</p>
 </item>
 </terms>

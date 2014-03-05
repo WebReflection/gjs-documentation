@@ -27,7 +27,7 @@ means).</p>
   <p>Since 2.36</p>
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>task</code> has been cancelled, <code>false</code> if not</p>
 </item>
 </terms>

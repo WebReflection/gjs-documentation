@@ -37,7 +37,7 @@ both arguments, a valid <link xref="GLib.VariantType"/> must be provided.</p>
   <p>a <link xref="GLib.VariantType"/></p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>type1</code> and <code>type2</code> are exactly equal</p>  <p>Since 2.24</p>
 </item>
 </terms>

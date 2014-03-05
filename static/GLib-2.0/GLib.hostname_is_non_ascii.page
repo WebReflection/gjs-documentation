@@ -36,7 +36,7 @@ segments, and so it is possible for <link xref="GLib.hostname_is_non_ascii"/> an
   <p>a hostname</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>hostname</code> contains any non-ASCII characters</p>
 </item>
 </terms>

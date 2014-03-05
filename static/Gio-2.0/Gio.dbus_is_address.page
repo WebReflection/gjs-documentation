@@ -34,7 +34,7 @@ checks.</p>
   <p>A string.</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>string</code> is a valid D-Bus address, <code>false</code> otherwise.</p>
 </item>
 </terms>

@@ -34,7 +34,7 @@ character, though it's normally a string terminator.</p>
   <p>a Unicode character</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>ch</code> is a valid Unicode character</p>
 </item>
 </terms>

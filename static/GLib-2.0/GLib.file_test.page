@@ -70,7 +70,7 @@ extensions and those listed in the `PATHEXT` environment variable.</p>
   <p>bitfield of <link xref="GLib.FileTest"/> flags</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p>whether a test was <code>true</code></p>
 </item>
 </terms>

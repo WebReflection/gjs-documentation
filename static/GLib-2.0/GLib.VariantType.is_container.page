@@ -27,7 +27,7 @@ example.</p>
 
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>type</code> is a container type</p>  <p>Since 2.24</p>
 </item>
 </terms>

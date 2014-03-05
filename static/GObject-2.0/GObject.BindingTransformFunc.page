@@ -34,7 +34,7 @@ then those roles are reversed.</p>
   <p>the <link xref="GObject.Value"/> in which to store the transformed value</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the transformation was successful, and <code>false</code>
   otherwise</p>
 </item>

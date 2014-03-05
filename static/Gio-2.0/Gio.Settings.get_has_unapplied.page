@@ -25,7 +25,7 @@ changes.  This can only be the case if it is in 'delayed-apply' mode.</p>
   <p>Since 2.26</p>
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>settings</code> has unapplied changes</p>
 </item>
 </terms>

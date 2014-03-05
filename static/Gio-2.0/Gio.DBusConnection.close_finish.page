@@ -33,7 +33,7 @@ function close_finish(res: <link xref="Gio.AsyncResult">Gio.AsyncResult</link>):
     to <link xref="Gio.DBusConnection.close"/></p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the operation succeeded, <code>false</code> if @error is set</p>
 </item>
 </terms>

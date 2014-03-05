@@ -26,7 +26,7 @@ closed by the remote peer. See
   <p>Since 2.26</p>
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p>whether the process is terminated when <code>connection</code> is
     closed by the remote peer</p>
 </item>

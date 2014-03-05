@@ -34,7 +34,7 @@ blocking the I/O job).</p>
   <p>a <link href="../GLib-2.0/GLib.SourceFunc.html">GLib.SourceFunc</link> callback that will be called in the original thread</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p>The return value of <code>func</code></p>
 </item>
 </terms>

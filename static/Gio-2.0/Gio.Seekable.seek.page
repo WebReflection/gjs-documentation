@@ -55,7 +55,7 @@ was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be return
   <p>optional <link xref="Gio.Cancellable"/> object, <code>null</code> to ignore.</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if successful. If an error
     has occurred, this function will return <code>false</code> and set @error
     appropriately if present.</p>

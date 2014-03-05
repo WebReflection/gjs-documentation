@@ -45,7 +45,7 @@ function onDBusInterfaceSetPropertyFunc(connection: <link xref="Gio.DBusConnecti
   <p>Return location for error.</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the property was set to <code>value</code>, <code>false</code> if <code>error</code> is set.</p>
 </item>
 </terms>

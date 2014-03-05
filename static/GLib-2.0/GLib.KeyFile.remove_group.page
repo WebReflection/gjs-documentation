@@ -33,7 +33,7 @@ from the key file.</p>
   <p>a group name</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the group was removed, <code>false</code> otherwise</p>
 </item>
 </terms>

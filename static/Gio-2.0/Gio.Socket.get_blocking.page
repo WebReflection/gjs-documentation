@@ -25,7 +25,7 @@ see <link xref="Gio.Socket.set_blocking"/>.</p>
   <p>Since 2.22</p>
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if blocking I/O is used, <code>false</code> otherwise.</p>
 </item>
 </terms>

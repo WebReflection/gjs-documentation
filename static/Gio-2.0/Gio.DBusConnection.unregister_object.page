@@ -33,7 +33,7 @@ function unregister_object(registration_id: Number(guint)): Boolean {
     <link xref="Gio.DBusConnection.register_object"/></p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the object was unregistered, <code>false</code> otherwise</p>
 </item>
 </terms>

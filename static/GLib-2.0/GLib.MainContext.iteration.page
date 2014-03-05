@@ -41,7 +41,7 @@ be interrupted for other reasons than an event source becoming ready.</p>
   <p>whether the call may block.</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if events were dispatched.</p>
 </item>
 </terms>

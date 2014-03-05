@@ -34,7 +34,7 @@ while on win32 it is "*".</p>
   <p>a content type string</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the type is the unknown type.</p>
 </item>
 </terms>

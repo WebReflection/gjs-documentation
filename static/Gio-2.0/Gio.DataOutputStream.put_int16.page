@@ -40,7 +40,7 @@ function put_int16(data: Number(gint16), cancellable: <link xref="Gio.Cancellabl
   <p>optional <link xref="Gio.Cancellable"/> object, <code>null</code> to ignore.</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>data</code> was successfully added to the <code>stream</code>.</p>
 </item>
 </terms>

@@ -42,7 +42,7 @@ the schema.</p>  <p>If <code>value</code> is floating then this function consume
   <p>a <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> of the correct type</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if setting the key succeeded,
     <code>false</code> if the key was not writable</p>
 </item>

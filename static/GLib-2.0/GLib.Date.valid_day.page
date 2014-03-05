@@ -33,7 +33,7 @@ between 1 and 31 inclusive).</p>
   <p>day to check</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the day is valid</p>
 </item>
 </terms>

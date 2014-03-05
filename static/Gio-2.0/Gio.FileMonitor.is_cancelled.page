@@ -24,7 +24,7 @@ function is_cancelled(): Boolean {
 
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if monitor is canceled. <code>false</code> otherwise.</p>
 </item>
 </terms>

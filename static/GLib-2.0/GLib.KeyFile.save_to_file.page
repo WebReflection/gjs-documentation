@@ -34,7 +34,7 @@ function save_to_file(filename: String): Boolean {
   <p>the name of the file to write to</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if successful, else <code>false</code> with @error set</p>
 </item>
 </terms>

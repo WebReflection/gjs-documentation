@@ -33,7 +33,7 @@ guaranteed to be atomic by using <link xref="GLib.file_set_contents"/> internall
   <p>path of the output file</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the file was successfully written.</p>
 </item>
 </terms>

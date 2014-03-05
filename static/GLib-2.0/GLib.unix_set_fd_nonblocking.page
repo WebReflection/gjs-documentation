@@ -42,7 +42,7 @@ on some older ones may use %O_NDELAY.</p>
   <p>If <code>true</code>, set the descriptor to be non-blocking</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if successful</p>
 </item>
 </terms>

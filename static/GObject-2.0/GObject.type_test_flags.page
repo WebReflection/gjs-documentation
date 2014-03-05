@@ -40,7 +40,7 @@ function type_test_flags(type: GObject.Type, flags: Number(guint)): Boolean {
 
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
 
 </item>
 </terms>

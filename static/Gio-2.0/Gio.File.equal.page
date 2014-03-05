@@ -34,7 +34,7 @@ aliasing.</p>  <p>This call does no blocking I/O.</p>
   <p>the second <link xref="Gio.File"/></p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>file1</code> and <code>file2</code> are equal.
     <code>false</code> if either is not a <link xref="Gio.File"/>.</p>
 </item>

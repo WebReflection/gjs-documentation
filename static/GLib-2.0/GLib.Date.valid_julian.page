@@ -33,7 +33,7 @@ is basically a valid Julian, though there is a 32-bit limit.</p>
   <p>Julian day to check</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the Julian day is valid</p>
 </item>
 </terms>

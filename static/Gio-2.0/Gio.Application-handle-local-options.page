@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<page id="Gio.Application-handle-local-options"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gio.Application" group="signal" type="guide"/>
+    <title type="link" role="topic">handle-local-options</title>
+  </info>
+  <title>Gio.Application::handle-local-options</title>
+  <synopsis><code mime="text/x-gjs">
+connect('handle-local-options', function (application, options: <link href="../GLib-2.0/GLib.VariantDict.html">GLib.VariantDict</link>, ): Number(gint));
+  </code></synopsis>
+  <p>The ::handle-local-options signal is emitted on the local instance
+after the parsing of the commandline options has occurred.</p>  <p>You can add options to be recognised during commandline option
+parsing using <link xref="Gio.Application.add_main_option_entries"/> and
+<link xref="Gio.Application.add_option_group"/>.</p>  <p>Signal handlers can inspect <code>options</code> (along with values pointed to
+from the @arg_data of an installed #GOptionEntrys) in order to
+decide to perform certain actions, including direct local handling
+(which may be useful for options like --version).</p>  <p>If the options have been "handled" then a non-negative value should
+be returned.   In this case, the return value is the exit status: 0
+for success and a positive value for failure.  -1 means to continue
+normal processing.</p>  <p>In the event that the application is marked
+<link xref="Gio.ApplicationFlags"/>.handles_command_line the "normal processing" will
+send the @option dictionary to the primary instance where it can be
+read with g_application_command_line_get_options().  The signal
+handler can modify the dictionary before returning, and the
+modified dictionary will be sent.</p>  <p>In the event that <link xref="Gio.ApplicationFlags"/>.handles_command_line is not set,
+"normal processing" will treat the remaining uncollected command
+line arguments as filenames or URIs.  If there are no arguments,
+the application is activated by <link xref="Gio.Application.activate"/>.  One or
+more arguments results in a call to <link xref="Gio.Application.open"/>.</p>  <p>If you want to handle the local commandline arguments for yourself
+by converting them to calls to <link xref="Gio.Application.open"/> or
+<link xref="Gio.ActionGroup.activate_action"/> then you must be sure to register
+the application first.  You should probably not call
+<link xref="Gio.Application.activate"/> for yourself, however: just return -1 and
+allow the default handler to do it for you.  This will ensure that
+the `--gapplication-service` switch works properly (i.e. no activation
+in that case).</p>  <p>Note that this signal is emitted from the default implementation of
+local_command_line().  If you override that function and don't
+chain up then this signal will never be emitted.</p>  <p>You can override local_command_line() if you need more powerful
+capabilities than what is provided here, but this should not
+normally be required.</p>
+  <p>Since 2.40</p>
+<terms>
+<item>
+<title><code>application</code></title>
+<p>instance of <link xref="Gio.Application"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>options</code></title>
+  <p>the options dictionary</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

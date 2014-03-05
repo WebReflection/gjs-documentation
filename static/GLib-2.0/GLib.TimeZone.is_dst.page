@@ -33,7 +33,7 @@ function is_dst(interval: Number(gint)): Boolean {
   <p>an interval within the timezone</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if daylight savings time is in effect</p>
 </item>
 </terms>

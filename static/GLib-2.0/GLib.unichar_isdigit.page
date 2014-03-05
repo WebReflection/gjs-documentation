@@ -34,7 +34,7 @@ some UTF-8 text, obtain a character value with <link xref="GLib.utf8_get_char"/>
   <p>a Unicode character</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>c</code> is a digit</p>
 </item>
 </terms>

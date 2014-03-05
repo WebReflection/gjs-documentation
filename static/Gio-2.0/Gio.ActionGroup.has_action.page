@@ -32,7 +32,7 @@ function has_action(action_name: String): Boolean {
   <p>the name of the action to check for</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p>whether the named action exists</p>
 </item>
 </terms>

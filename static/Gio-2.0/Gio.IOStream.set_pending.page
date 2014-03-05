@@ -26,7 +26,7 @@ already set or <code>stream</code> is closed, it will return <code>false</code> 
   <p>Since 2.22</p>
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if pending was previously unset and is now set.</p>
 </item>
 </terms>

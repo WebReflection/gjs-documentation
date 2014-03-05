@@ -26,7 +26,7 @@ function dbus_gvariant_to_gvalue(value: <link href="../GLib-2.0/GLib.Variant.htm
   </code></synopsis>
   <p>Converts a <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> to a <link href="../GObject-2.0/GObject.Value.html">GObject.Value</link>. If <code>value</code> is floating, it is consumed.</p>  <p>The rules specified in the <link xref="Gio.dbus_gvalue_to_gvariant"/> function are
 used - this function is essentially its reverse form.</p>  <p>The conversion never fails - a valid <link href="../GObject-2.0/GObject.Value.html">GObject.Value</link> is always returned in
-<code>out_gvalue</code>.</p>
+@out_gvalue.</p>
   <p>Since 2.30</p>
 <terms>
 <item>
@@ -34,7 +34,7 @@ used - this function is essentially its reverse form.</p>  <p>The conversion nev
   <p>A <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link>.</p>
 </item>
 <item>
-<title><code>out_gvalue</code></title>
+<title><code>Returns</code></title>
   <p>Return location pointing to a zero-filled (uninitialized) <link href="../GObject-2.0/GObject.Value.html">GObject.Value</link>.</p>
 </item>
 </terms>

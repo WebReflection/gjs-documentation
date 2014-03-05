@@ -34,7 +34,7 @@ plus '-' and '.'.  The empty string is not a valid action name.</p>  <p>It is an
   <p>an potential action name</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>action_name</code> is valid</p>
 </item>
 </terms>

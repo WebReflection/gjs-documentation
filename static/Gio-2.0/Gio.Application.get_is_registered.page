@@ -25,7 +25,7 @@ successfully called.</p>
   <p>Since 2.28</p>
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>application</code> is registered</p>
 </item>
 </terms>

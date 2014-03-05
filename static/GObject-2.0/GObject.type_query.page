@@ -37,7 +37,7 @@ left untouched.</p>
   <p><link href="../GLib-2.0/GLib.Type.html">GLib.Type</link> of a static, classed type</p>
 </item>
 <item>
-<title><code>query</code></title>
+<title><code>Returns</code></title>
   <p>a user provided structure that is
     filled in with constant values upon success</p>
 </item>

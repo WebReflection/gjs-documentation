@@ -41,7 +41,7 @@ was cancelled, the error <link xref="Gio.IOErrorEnum"/>.cancelled will be return
     <code>null</code> to ignore</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if all directories have been successfully created, <code>false</code>
 otherwise.</p>
 </item>

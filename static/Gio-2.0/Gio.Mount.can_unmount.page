@@ -24,7 +24,7 @@ function can_unmount(): Boolean {
 
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the <code>mount</code> can be unmounted.</p>
 </item>
 </terms>

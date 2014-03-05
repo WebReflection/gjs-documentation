@@ -32,7 +32,7 @@ function unix_mount_is_readonly(mount_entry: <link xref="Gio.UnixMountEntry">Gio
   <p>a #GUnixMount.</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>mount_entry</code> is read only.</p>
 </item>
 </terms>

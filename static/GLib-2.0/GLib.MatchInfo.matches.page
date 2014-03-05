@@ -24,7 +24,7 @@ function matches(): Boolean {
   <p>Since 2.14</p>
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the previous match operation succeeded,
   <code>false</code> otherwise</p>
 </item>

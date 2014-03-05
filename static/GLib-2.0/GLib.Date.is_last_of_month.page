@@ -25,7 +25,7 @@ The date must be valid.</p>
 
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the date is the last day of the month</p>
 </item>
 </terms>

@@ -36,7 +36,7 @@ their <link xref="Gio.TlsCertificate-issuer"/>, <link xref="Gio.TlsCertificate-p
   <p>second certificate to compare</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p>whether the same or not</p>
 </item>
 </terms>

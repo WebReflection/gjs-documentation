@@ -32,7 +32,7 @@ parameter passed to <link xref="GLib.Tree.traverse"/>. If the function returns
   <p>user data passed to <link xref="GLib.Tree.traverse"/></p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> to stop the traversal</p>
 </item>
 </terms>

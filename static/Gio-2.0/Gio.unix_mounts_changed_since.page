@@ -32,7 +32,7 @@ function unix_mounts_changed_since(time: Number(guint64)): Boolean {
   <p>guint64 to contain a timestamp.</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the mounts have changed since <code>time</code>.</p>
 </item>
 </terms>

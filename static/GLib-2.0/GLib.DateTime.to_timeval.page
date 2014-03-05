@@ -38,7 +38,7 @@ out of range.</p>  <p>On systems where 'long' is 64bit, this function never fail
   <p>a <link xref="GLib.TimeVal"/> to modify</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if successful, else <code>false</code></p>
 </item>
 </terms>

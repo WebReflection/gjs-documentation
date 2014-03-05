@@ -24,7 +24,7 @@ function can_remove_supports_type(): Boolean {
 
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if it is possible to remove supported
     content types from a given <code>appinfo</code>, <code>false</code> if not.</p>
 </item>

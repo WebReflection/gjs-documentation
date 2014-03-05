@@ -32,7 +32,7 @@ function has_uri_scheme(uri_scheme: String): Boolean {
   <p>a string containing a URI scheme</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <link xref="Gio.File"/>'s backend supports the
     given URI scheme, <code>false</code> if URI scheme is <code>null</code>,
     not supported, or <link xref="Gio.File"/> is invalid.</p>

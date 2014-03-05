@@ -43,7 +43,7 @@ source object). This can be used in g_return_if_fail() checks.</p>
   expected to be associated with the task</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>result</code> and <code>source_object</code> are valid, <code>false</code>
 if not</p>
 </item>

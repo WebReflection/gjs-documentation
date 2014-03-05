@@ -32,7 +32,7 @@ function remove_item(uri: String): Boolean {
   <p>a valid URI</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the bookmark was removed successfully.</p>
 </item>
 </terms>

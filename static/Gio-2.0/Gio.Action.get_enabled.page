@@ -25,7 +25,7 @@ have its state changed from outside callers.</p>
   <p>Since 2.28</p>
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p>whether the action is enabled</p>
 </item>
 </terms>

@@ -27,7 +27,7 @@ If this returns <code>false</code>, you cannot perform asynchronous operations o
   <p>Since 2.22</p>
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p>Whether or not <code>file</code> supports thread-default contexts.</p>
 </item>
 </terms>

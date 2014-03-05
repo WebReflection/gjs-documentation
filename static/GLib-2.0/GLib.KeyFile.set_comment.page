@@ -51,7 +51,7 @@ written above the first group in the file.</p>
   <p>a comment</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the comment was written, <code>false</code> otherwise</p>
 </item>
 </terms>

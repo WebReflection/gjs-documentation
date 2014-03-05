@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="GLib.VariantDict.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GLib.VariantDict" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.VariantDict</api:type>
+      </api:returns>
+      <api:name>g_variant_dict_new</api:name>
+      <api:arg>
+        <api:type>GLib.Variant</api:type>
+        <api:name>from_asv</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GLib.VariantDict.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(from_asv: <link xref="GLib.Variant">GLib.Variant</link>): <link xref="GLib.VariantDict">GLib.VariantDict</link> {
+    // Gjs wrapper for g_variant_dict_new()
+}
+  </code></synopsis>
+  <p>Allocates and initialises a new <link xref="GLib.VariantDict"/>.</p>  <p>You should call <link xref="GLib.VariantDict.unref"/> on the return value when it
+is no longer needed.  The memory will not be automatically freed by
+any other call.</p>  <p>In some cases it may be easier to place a <link xref="GLib.VariantDict"/> directly on
+the stack of the calling function and initialise it with
+<link xref="GLib.VariantDict.init"/>.  This is particularly useful when you are
+using <link xref="GLib.VariantDict"/> to construct a <link xref="GLib.Variant"/>.</p>
+  <p>Since 2.40</p>
+<terms>
+<item>
+<title><code>from_asv</code></title>
+  <p>the <link xref="GLib.Variant"/> with which to initialise the
+  dictionary</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link xref="GLib.VariantDict"/></p>
+</item>
+</terms>
+
+</page>

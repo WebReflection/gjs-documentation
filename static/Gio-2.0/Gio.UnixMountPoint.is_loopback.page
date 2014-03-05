@@ -24,7 +24,7 @@ function is_loopback(): Boolean {
 
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the mount point is a loopback. <code>false</code> otherwise.</p>
 </item>
 </terms>

@@ -33,7 +33,7 @@ cell.</p>
   <p>a Unicode character</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the character is wide</p>
 </item>
 </terms>

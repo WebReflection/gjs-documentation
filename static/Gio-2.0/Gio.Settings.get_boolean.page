@@ -33,7 +33,7 @@ having a boolean type in the schema for <code>settings</code>.</p>
   <p>the key to get the value for</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p>a boolean</p>
 </item>
 </terms>

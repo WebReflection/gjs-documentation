@@ -38,7 +38,7 @@ terminals support zero-width rendering of zero-width marks.</p>
   <p>a Unicode character</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the character has zero width</p>
 </item>
 </terms>

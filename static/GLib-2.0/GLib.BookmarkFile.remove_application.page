@@ -45,7 +45,7 @@ a bookmark for <code>uri</code>,  <code>false</code> is returned and error is se
   <p>the name of the application</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the application was successfully removed.</p>
 </item>
 </terms>

@@ -33,7 +33,7 @@ specified <code>name_space</code>.</p>
   <p>a file attribute namespace.</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if @Ginfo has an attribute in <code>name_space</code>,
     <code>false</code> otherwise.</p>
 </item>

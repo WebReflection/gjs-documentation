@@ -18,7 +18,7 @@ function onSourceFunc(): Boolean {
 
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>false</code> if the source should be removed. #G_SOURCE_CONTINUE and
 #G_SOURCE_REMOVE are more memorable names for the return value.</p>
 </item>

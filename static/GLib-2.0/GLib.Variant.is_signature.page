@@ -35,7 +35,7 @@ strings in sequence.</p>
   <p>a normal C nul-terminated string</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>string</code> is a D-Bus type signature</p>
 </item>
 </terms>

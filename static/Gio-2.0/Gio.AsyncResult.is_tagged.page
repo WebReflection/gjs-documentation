@@ -33,7 +33,7 @@ pointer indicating the function <code>res</code> was created by).</p>
   <p>an application-defined tag</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>res</code> has the indicated <code>source_tag</code>, <code>false</code> if
   not.</p>
 </item>

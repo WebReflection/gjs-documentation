@@ -28,7 +28,7 @@ counts.</p>
   <p>Since 2.26</p>
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p>whether <code>value</code> is floating</p>
 </item>
 </terms>

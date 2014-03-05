@@ -25,7 +25,7 @@ function get_ignore_unknown_options(): Boolean {
   <p>Since 2.6</p>
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if unknown options are ignored.</p>
 </item>
 </terms>

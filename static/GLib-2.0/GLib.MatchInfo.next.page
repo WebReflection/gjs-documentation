@@ -27,7 +27,7 @@ cannot free it before calling this function.</p>
   <p>Since 2.14</p>
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> is the string matched, <code>false</code> otherwise</p>
 </item>
 </terms>

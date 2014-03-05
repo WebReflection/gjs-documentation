@@ -40,7 +40,7 @@ function connect(address: <link xref="Gio.SocketAddress">Gio.SocketAddress</link
   <p>a %GCancellable or <code>null</code></p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the connection succeeded, <code>false</code> on error</p>
 </item>
 </terms>

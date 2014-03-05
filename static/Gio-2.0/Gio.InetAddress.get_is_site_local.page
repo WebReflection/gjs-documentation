@@ -27,7 +27,7 @@ outgoing Internet connectivity via a NAT or firewall).</p>
   <p>Since 2.22</p>
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>address</code> is a site-local address.</p>
 </item>
 </terms>

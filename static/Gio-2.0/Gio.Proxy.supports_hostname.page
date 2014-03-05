@@ -30,7 +30,7 @@ should resolve the destination hostname first, and then pass a
   <p>Since 2.26</p>
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if hostname resolution is supported.</p>
 </item>
 </terms>

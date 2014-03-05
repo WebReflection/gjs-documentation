@@ -24,7 +24,7 @@ function is_running(): Boolean {
 
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the mainloop is currently being run.</p>
 </item>
 </terms>

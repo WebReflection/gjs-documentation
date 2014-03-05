@@ -32,7 +32,7 @@ function start_finish(result: <link xref="Gio.AsyncResult">Gio.AsyncResult</link
   <p>a <link xref="Gio.AsyncResult"/>.</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the drive has been started successfully,
     <code>false</code> otherwise.</p>
 </item>

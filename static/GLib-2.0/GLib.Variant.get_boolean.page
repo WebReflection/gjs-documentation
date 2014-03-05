@@ -25,7 +25,7 @@ other than %G_VARIANT_TYPE_BOOLEAN.</p>
   <p>Since 2.24</p>
 <terms>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> or <code>false</code></p>
 </item>
 </terms>

@@ -43,7 +43,7 @@ function send_message_with_reply(message: <link xref="Gio.DBusMessage">Gio.DBusM
   <p>Asynchronously sends <code>message</code> to the peer represented by <code>connection</code>.</p>  <p>Unless <code>flags</code> contain the
 <link xref="Gio.DBusSendMessageFlags"/>.preserve_serial flag, the serial number
 will be assigned by <code>connection</code> and set on <code>message</code> via
-<link xref="Gio.DBusMessage.set_serial"/>. If <code>out_serial</code> is not <code>null</code>, then the
+<link xref="Gio.DBusMessage.set_serial"/>. If @out_serial is not <code>null</code>, then the
 serial number used will be written to this location prior to
 submitting the message to the underlying transport.</p>  <p>If <code>connection</code> is closed then the operation will fail with
 <link xref="Gio.IOErrorEnum"/>.closed. If <code>cancellable</code> is canceled, the operation will
@@ -82,7 +82,7 @@ UNIX file descriptors.</p>
     is satisfied or <code>null</code> if you don't care about the result</p>
 </item>
 <item>
-<title><code>out_serial</code></title>
+<title><code>Returns</code></title>
   <p>return location for serial number assigned
     to <code>message</code> when sending it or <code>null</code></p>
 </item>

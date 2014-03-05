@@ -44,7 +44,7 @@ can use a faster close that doesn't block to e.g. check errors.</p>
   <p>optional <link xref="Gio.Cancellable"/> object, <code>null</code> to ignore.</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> on success, <code>false</code> on failure</p>
 </item>
 </terms>

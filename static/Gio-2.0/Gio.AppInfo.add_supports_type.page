@@ -33,7 +33,7 @@ application is capable of opening files with the given content type.</p>
   <p>a string.</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> on success, <code>false</code> on error.</p>
 </item>
 </terms>

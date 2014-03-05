@@ -20,8 +20,8 @@ function get_identifier(): String {
     // Gjs wrapper for g_subprocess_get_identifier()
 }
   </code></synopsis>
-  <p>On UNIX, returns the process ID as a decimal string.  On Windows,
-returns the result of GetProcessId() also as a string.</p>
+  <p>On UNIX, returns the process ID as a decimal string.
+On Windows, returns the result of GetProcessId() also as a string.</p>
 
 <terms>
 <item>

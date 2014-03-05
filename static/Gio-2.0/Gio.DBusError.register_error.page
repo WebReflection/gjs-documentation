@@ -50,7 +50,7 @@ an error domain.</p>
   <p>A D-Bus error name.</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if the association was created, <code>false</code> if it already
 exists.</p>
 </item>

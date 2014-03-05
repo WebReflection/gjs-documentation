@@ -41,7 +41,7 @@ permitted range for <code>key</code>.</p>
   <p>the value to check</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>value</code> is valid for <code>key</code></p>
 </item>
 </terms>

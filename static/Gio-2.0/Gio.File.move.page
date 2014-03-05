@@ -78,7 +78,7 @@ move operation isn't available).</p>
     function for updates</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> on successful move, <code>false</code> otherwise.</p>
 </item>
 </terms>

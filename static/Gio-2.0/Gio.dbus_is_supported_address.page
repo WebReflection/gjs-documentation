@@ -34,7 +34,7 @@ are valid.</p>
   <p>A string.</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if <code>string</code> is a valid D-Bus address that is
 supported by this library, <code>false</code> if @error is set.</p>
 </item>

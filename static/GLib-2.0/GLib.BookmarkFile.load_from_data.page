@@ -42,7 +42,7 @@ structure.  If the object cannot be created then @error is set to a
   <p>the length of <code>data</code> in bytes</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if a desktop bookmark could be loaded.</p>
 </item>
 </terms>

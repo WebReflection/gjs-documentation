@@ -45,7 +45,7 @@ range -42 .. +42.</p>
   <p>a <link xref="GObject.Value"/> of correct type for <code>pspec</code></p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p>whether modifying <code>value</code> was necessary to ensure validity</p>
 </item>
 </terms>

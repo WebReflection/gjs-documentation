@@ -41,7 +41,7 @@ having a boolean type in the schema for <code>settings</code>.</p>
   <p>the value to set it to</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> if setting the key succeeded,
     <code>false</code> if the key was not writable</p>
 </item>

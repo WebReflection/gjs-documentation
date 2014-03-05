@@ -43,7 +43,7 @@ required.</p>
   <p>an optional <link xref="Gio.AppLaunchContext"/>.</p>
 </item>
 <item>
-<title><code>ok</code></title>
+<title><code>Returns</code></title>
   <p><code>true</code> on success, <code>false</code> on error.</p>
 </item>
 </terms>
