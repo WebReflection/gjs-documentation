@@ -22,7 +22,6 @@ GENERATED_NAMESPACES = \
 	GtkClutter-1.0		\
 	GtkSource-3.0		\
 	WebKit2-3.0		\
-	WebKit2WebExtension-3.0	\
 	Atk-1.0			\
 	Gst-1.0			\
 	Soup-2.4		\
