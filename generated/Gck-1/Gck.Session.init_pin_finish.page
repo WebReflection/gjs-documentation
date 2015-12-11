@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Gck.Session.init_pin_finish"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Session" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gck_session_init_pin_finish</api:name>
+      <api:arg>
+        <api:type>Gio.AsyncResult</api:type>
+        <api:name>result</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Session.prototype.init_pin_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function init_pin_finish(result: <link href="../Gio-2.0/Gio.AsyncResult.html">Gio.AsyncResult</link>): Boolean {
+    // Gjs wrapper for gck_session_init_pin_finish()
+}
+  </code></synopsis>
+  <p>Get the result of initializing a user's PIN.</p>
+
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>The result passed to the callback.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>Whether the operation was successful or not.</p>
+</item>
+</terms>
+
+</page>

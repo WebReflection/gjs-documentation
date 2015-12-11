@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gck.SlotInfo-slot_description"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.SlotInfo" group="field" type="guide"/>
+    <title type="link" role="topic">slot_description</title>
+  </info>
+  <title>Gck.SlotInfo.slot_description</title>
+  <synopsis><code mime="text/x-gjs">
+SlotInfo.slot_description: String (Read)
+  </code></synopsis>
+  <p>Description of the slot.</p>
+
+</page>

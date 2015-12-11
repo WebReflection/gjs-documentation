@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gck.Attributes.find"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Attributes" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.Attribute</api:type>
+      </api:returns>
+      <api:name>gck_attributes_find</api:name>
+      <api:arg>
+        <api:type>Number(gulong)</api:type>
+        <api:name>attr_type</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Attributes.prototype.find</title>
+  <synopsis><code mime="text/x-gjs">
+function find(attr_type: Number(gulong)): <link xref="Gck.Attribute">Gck.Attribute</link> {
+    // Gjs wrapper for gck_attributes_find()
+}
+  </code></synopsis>
+  <p>Find an attribute with the specified type in the array.</p>
+
+<terms>
+<item>
+<title><code>attr_type</code></title>
+  <p>The type of attribute to find.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the first attribute found with the specified type,
+         or <code>null</code></p>
+</item>
+</terms>
+
+</page>

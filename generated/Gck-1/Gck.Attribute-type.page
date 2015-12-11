@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gck.Attribute-type"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Attribute" group="field" type="guide"/>
+    <title type="link" role="topic">type</title>
+  </info>
+  <title>Gck.Attribute.type</title>
+  <synopsis><code mime="text/x-gjs">
+Attribute.type: Number(gulong) (Read / Write)
+  </code></synopsis>
+  <p>The attribute type, such as CKA_LABEL.</p>
+
+</page>

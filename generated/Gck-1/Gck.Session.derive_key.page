@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<page id="Gck.Session.derive_key"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Session" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.Object</api:type>
+      </api:returns>
+      <api:name>gck_session_derive_key</api:name>
+      <api:arg>
+        <api:type>Gck.Object</api:type>
+        <api:name>base</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gulong)</api:type>
+        <api:name>mech_type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gck.Attributes</api:type>
+        <api:name>attrs</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Session.prototype.derive_key</title>
+  <synopsis><code mime="text/x-gjs">
+function derive_key(base: <link xref="Gck.Object">Gck.Object</link>, mech_type: Number(gulong), attrs: <link xref="Gck.Attributes">Gck.Attributes</link>, cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>): <link xref="Gck.Object">Gck.Object</link> {
+    // Gjs wrapper for gck_session_derive_key()
+}
+  </code></synopsis>
+  <p>Derive a key from another key. This call may block for an
+indefinite period.</p>  <p>If the <code>attrs</code> <link xref="Gck.Attributes"/> is floating, it is consumed.</p>
+
+<terms>
+<item>
+<title><code>base</code></title>
+  <p>The key to derive from.</p>
+</item>
+<item>
+<title><code>mech_type</code></title>
+  <p>The mechanism to use for derivation.</p>
+</item>
+<item>
+<title><code>attrs</code></title>
+  <p>Additional attributes for the derived key.</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>Optional cancellation object, or NULL.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the new derived key or NULL if the operation
+         failed</p>
+</item>
+</terms>
+
+</page>

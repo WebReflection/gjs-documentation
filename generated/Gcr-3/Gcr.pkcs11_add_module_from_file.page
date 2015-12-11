@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<page id="Gcr.pkcs11_add_module_from_file"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gcr_pkcs11_add_module_from_file</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>module_path</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>void</api:type>
+        <api:name>unused</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.pkcs11_add_module_from_file</title>
+  <synopsis><code mime="text/x-gjs">
+function pkcs11_add_module_from_file(module_path: String, unused: void): Boolean {
+    // Gjs wrapper for gcr_pkcs11_add_module_from_file()
+}
+  </code></synopsis>
+  <p>Initialize a PKCS\#11 module and add it to the modules that are
+used by the GCR library. Note that is an error to initialize the same
+PKCS\#11 module twice.</p>  <p>It is not normally necessary to call this function. The available
+PKCS\#11 modules installed on the system are automatically loaded
+by the GCR library.</p>
+
+<terms>
+<item>
+<title><code>module_path</code></title>
+  <p>the full file path of the PKCS\#11 module</p>
+</item>
+<item>
+<title><code>unused</code></title>
+  <p>unused</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>whether the module was sucessfully added.</p>
+</item>
+</terms>
+
+</page>

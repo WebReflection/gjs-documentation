@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Cogl.Quaternion-w"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Quaternion" group="field" type="guide"/>
+    <title type="link" role="topic">w</title>
+  </info>
+  <title>Cogl.Quaternion.w</title>
+  <synopsis><code mime="text/x-gjs">
+Quaternion.w: Number(gfloat) (Read / Write)
+  </code></synopsis>
+  <p>based on the angle of rotation it is cos(𝜃/2)</p>
+
+</page>

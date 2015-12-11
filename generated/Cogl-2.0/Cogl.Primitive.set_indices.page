@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<page id="Cogl.Primitive.set_indices"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Primitive" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_primitive_set_indices</api:name>
+      <api:arg>
+        <api:type>Cogl.Indices</api:type>
+        <api:name>indices</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>n_indices</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Primitive.prototype.set_indices</title>
+  <synopsis><code mime="text/x-gjs">
+function set_indices(indices: <link xref="Cogl.Indices">Cogl.Indices</link>, n_indices: Number(gint)): void {
+    // Gjs wrapper for cogl_primitive_set_indices()
+}
+  </code></synopsis>
+  <p>Associates a sequence of <link xref="Cogl.Indices"/> with the given <code>primitive</code>.</p>  <p><link xref="Cogl.Indices"/> provide a way to virtualize your real vertex data by
+providing a sequence of indices that index into your real vertex
+data. The GPU will walk though the index values to indirectly
+lookup the data for each vertex instead of sequentially walking
+through the data directly. This lets you save memory by indexing
+shared data multiple times instead of duplicating the data.</p>  <p>The value passed as <code>n_indices</code> will simply update the
+<link xref="Cogl.Primitive"/> &lt;structfield&gt;n_vertices&lt;/structfield&gt; property as if
+<link xref="Cogl.Primitive.set_n_vertices"/> were called. This property defines
+the number of vertices to draw or, put another way, how many
+indices should be read from <code>indices</code> when drawing.</p>  <p>&lt;note&gt;The <link xref="Cogl.Primitive"/> &lt;structfield&gt;first_vertex&lt;/structfield&gt; property
+also affects drawing with indices by defining the first entry of the
+indices to start drawing from.&lt;/note&gt;</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>indices</code></title>
+  <p>A <link xref="Cogl.Indices"/> array</p>
+</item>
+<item>
+<title><code>n_indices</code></title>
+  <p>The number of indices to reference when drawing</p>
+</item>
+</terms>
+
+</page>

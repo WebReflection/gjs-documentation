@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gcr.Pkcs11Certificate-attributes"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Pkcs11Certificate" group="property" type="guide"/>
+    <title type="link" role="topic">attributes</title>
+  </info>
+  <title>Gcr.Pkcs11Certificate.attributes</title>
+  <synopsis><code mime="text/x-gjs">
+Pkcs11Certificate.attributes: <link href="../Gck-1/Gck.Attributes.html">Gck.Attributes</link> (Read / Write / Construct Only)
+  </code></synopsis>
+  <p>Automatically loaded attributes for this certificate.</p>
+
+</page>

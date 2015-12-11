@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Notify.Notification.set_urgency"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Notify.Notification" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>notify_notification_set_urgency</api:name>
+      <api:arg>
+        <api:type>Notify.Urgency</api:type>
+        <api:name>urgency</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Notify.Notification.prototype.set_urgency</title>
+  <synopsis><code mime="text/x-gjs">
+function set_urgency(urgency: <link xref="Notify.Urgency">Notify.Urgency</link>): void {
+    // Gjs wrapper for notify_notification_set_urgency()
+}
+  </code></synopsis>
+  <p>Sets the urgency level of this notification.</p>  <p>See: <link xref="Notify.Urgency"/></p>
+
+<terms>
+<item>
+<title><code>urgency</code></title>
+  <p>The urgency level.</p>
+</item>
+</terms>
+
+</page>

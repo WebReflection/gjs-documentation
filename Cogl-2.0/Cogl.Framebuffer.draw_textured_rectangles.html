@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.Framebuffer.prototype.draw_textured_rectangles</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » <a class="trail" href="Cogl.Framebuffer.html" title="Cogl.Framebuffer">Cogl.Framebuffer</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.Framebuffer.prototype.draw_textured_rectangles</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function draw_textured_rectangles(pipeline: <span class="link"><a href="Cogl.Pipeline.html" title="Cogl.Pipeline">Cogl.Pipeline</a></span>, coordinates: Array(Number(gfloat)), n_rectangles: Number(guint)): void {
+    // Gjs wrapper for cogl_framebuffer_draw_textured_rectangles()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Draws a series of rectangles to <span class="code">framebuffer</span> with the given
+<span class="code">pipeline</span> state in the same way that
+<span class="link"><a href="Cogl.Framebuffer.draw_textured_rectangle.html" title="Cogl.Framebuffer.prototype.draw_textured_rectangle">Cogl.Framebuffer.prototype.draw_textured_rectangle</a></span> does.</p>
+<p class="p">&lt;note&gt;The position is the position before the rectangle has been
+transformed by the model-view matrix and the projection
+matrix.&lt;/note&gt;</p>
+<p class="p">This is a high level drawing api that can handle any kind of
+<span class="link"><a href="Cogl.MetaTexture.html" title="Cogl.MetaTexture">Cogl.MetaTexture</a></span> texture such as <span class="link"><a href="Cogl.Texture2DSliced.html" title="Cogl.Texture2DSliced">Cogl.Texture2DSliced</a></span> textures
+which may internally be comprised of multiple low-level textures.
+This is unlike low-level drawing apis such as <span class="link"><a href="Cogl.Primitive.draw.html" title="Cogl.Primitive.prototype.draw">Cogl.Primitive.prototype.draw</a></span>
+which only support low level texture types that are directly
+supported by GPUs such as <span class="link"><a href="Cogl.Texture2D.html" title="Cogl.Texture2D">Cogl.Texture2D</a></span>.</p>
+<p class="p">The top left corner of the first rectangle is positioned at
+(coordinates[0], coordinates[1]) and the bottom right corner is
+positioned at (coordinates[2], coordinates[3]). The top left
+texture coordinate is (coordinates[4], coordinates[5]) and the
+bottom right texture coordinate is (coordinates[6],
+coordinates[7]). The coordinates for subsequent rectangles
+are defined similarly by the subsequent coordinates.</p>
+<p class="p">As a general rule for better performance its recommended to use
+this this API instead of calling
+<span class="link"><a href="Cogl.Framebuffer.draw_textured_rectangle.html" title="Cogl.Framebuffer.prototype.draw_textured_rectangle">Cogl.Framebuffer.prototype.draw_textured_rectangle</a></span> separately for multiple
+rectangles if all of the rectangles will be drawn together with the
+same <span class="code">pipeline</span> state.</p>
+<p class="p">The given texture coordinates should always be normalized such that
+(0, 0) corresponds to the top left and (1, 1) corresponds to the
+bottom right. To map an entire texture across the rectangle pass
+in tex_coords[0]=0, tex_coords[1]=0, tex_coords[2]=1,
+tex_coords[3]=1.</p>
+<p class="p">&lt;note&gt;Even if you have associated a <span class="link"><a href="Cogl.TextureRectangle.html" title="Cogl.TextureRectangle">Cogl.TextureRectangle</a></span> texture
+which normally implies working with non-normalized texture
+coordinates this api should still be passed normalized texture
+coordinates.&lt;/note&gt;</p>
+<p class="p">Since 1.10</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">pipeline</span></dt>
+<dd class="terms"><p class="p">A <span class="link"><a href="Cogl.Pipeline.html" title="Cogl.Pipeline">Cogl.Pipeline</a></span> state object</p></dd>
+<dt class="terms"><span class="code">coordinates</span></dt>
+<dd class="terms"><p class="p">an array containing
+  groups of 8 float values: [x_1, y_1, x_2, y_2, s_1, t_1, s_2, t_2]
+  that have the same meaning as the arguments for
+  <span class="link"><a href="Cogl.Framebuffer.draw_textured_rectangle.html" title="Cogl.Framebuffer.prototype.draw_textured_rectangle">Cogl.Framebuffer.prototype.draw_textured_rectangle</a></span>.</p></dd>
+<dt class="terms"><span class="code">n_rectangles</span></dt>
+<dd class="terms"><p class="p">number of rectangles to <span class="code">coordinates</span> to draw</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.Framebuffer.html" title="Cogl.Framebuffer">Cogl.Framebuffer</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

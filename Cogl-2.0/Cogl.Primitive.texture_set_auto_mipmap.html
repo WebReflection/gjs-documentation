@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.Primitive.texture_set_auto_mipmap</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » <a class="trail" href="Cogl.Primitive.html" title="Cogl.Primitive">Cogl.Primitive</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.Primitive.texture_set_auto_mipmap</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function texture_set_auto_mipmap(primitive_texture: <span class="link"><a href="Cogl.PrimitiveTexture.html" title="Cogl.PrimitiveTexture">Cogl.PrimitiveTexture</a></span>, value: <span class="link"><a href="Cogl.Bool.html" title="Cogl.Bool">Cogl.Bool</a></span>): void {
+    // Gjs wrapper for cogl_primitive_texture_set_auto_mipmap()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Sets whether the texture will automatically update the smaller
+mipmap levels after any part of level 0 is updated. The update will
+only occur whenever the texture is used for drawing with a texture
+filter that requires the lower mipmap levels. An application should
+disable this if it wants to upload its own data for the other
+levels. By default auto mipmapping is enabled.</p>
+<p class="p">Since 2.0</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">primitive_texture</span></dt>
+<dd class="terms"><p class="p">A <span class="link"><a href="Cogl.PrimitiveTexture.html" title="Cogl.PrimitiveTexture">Cogl.PrimitiveTexture</a></span></p></dd>
+<dt class="terms"><span class="code">value</span></dt>
+<dd class="terms"><p class="p">The new value for whether to auto mipmap</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.Primitive.html" title="Cogl.Primitive">Cogl.Primitive</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

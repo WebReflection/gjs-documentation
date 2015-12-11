@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gcr.Collection.get_objects"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Collection" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(GObject.Object)</api:type>
+      </api:returns>
+      <api:name>gcr_collection_get_objects</api:name>
+    </api:function>
+  </info>
+  <title>Gcr.Collection.prototype.get_objects</title>
+  <synopsis><code mime="text/x-gjs">
+function get_objects(): Array(<link href="../GObject-2.0/GObject.Object.html">GObject.Object</link>) {
+    // Gjs wrapper for gcr_collection_get_objects()
+}
+  </code></synopsis>
+  <p>Get a list of the objects in this collection.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a list of the objects
+         in this collection, which should be freed with g_list_free()</p>
+</item>
+</terms>
+
+</page>

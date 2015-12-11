@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gck.Session.get_state"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Session" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gulong)</api:type>
+      </api:returns>
+      <api:name>gck_session_get_state</api:name>
+    </api:function>
+  </info>
+  <title>Gck.Session.prototype.get_state</title>
+  <synopsis><code mime="text/x-gjs">
+function get_state(): Number(gulong) {
+    // Gjs wrapper for gck_session_get_state()
+}
+  </code></synopsis>
+  <p>Get the session state. The state is the various PKCS\#11 CKS_XXX flags.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the session state</p>
+</item>
+</terms>
+
+</page>

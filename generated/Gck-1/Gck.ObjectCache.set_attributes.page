@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Gck.ObjectCache.set_attributes"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.ObjectCache" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gck_object_cache_set_attributes</api:name>
+      <api:arg>
+        <api:type>Gck.Attributes</api:type>
+        <api:name>attrs</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.ObjectCache.prototype.set_attributes</title>
+  <synopsis><code mime="text/x-gjs">
+function set_attributes(attrs: <link xref="Gck.Attributes">Gck.Attributes</link>): void {
+    // Gjs wrapper for gck_object_cache_set_attributes()
+}
+  </code></synopsis>
+  <p>Sets the attributes cached on this object.</p>  <p>If the <code>attrs</code> <link xref="Gck.Attributes"/> is floating, it is consumed.</p>
+
+<terms>
+<item>
+<title><code>attrs</code></title>
+  <p>the attributes to set</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.Bitmap.new_with_size</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » <a class="trail" href="Cogl.Bitmap.html" title="Cogl.Bitmap">Cogl.Bitmap</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.Bitmap.new_with_size</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function new_with_size(context: <span class="link"><a href="Cogl.Context.html" title="Cogl.Context">Cogl.Context</a></span>, width: Number(guint), height: Number(guint), format: <span class="link"><a href="Cogl.PixelFormat.html" title="Cogl.PixelFormat">Cogl.PixelFormat</a></span>): <span class="link"><a href="Cogl.Bitmap.html" title="Cogl.Bitmap">Cogl.Bitmap</a></span> {
+    // Gjs wrapper for cogl_bitmap_new_with_size()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Creates a new <span class="link"><a href="Cogl.Bitmap.html" title="Cogl.Bitmap">Cogl.Bitmap</a></span> with the given width, height and format.
+The initial contents of the bitmap are undefined.</p>
+<p class="p">The data for the bitmap will be stored in a newly created
+<span class="link"><a href="Cogl.PixelBuffer.html" title="Cogl.PixelBuffer">Cogl.PixelBuffer</a></span>. You can get a pointer to the pixel buffer using
+<span class="link"><a href="Cogl.Bitmap.get_buffer.html" title="Cogl.Bitmap.prototype.get_buffer">Cogl.Bitmap.prototype.get_buffer</a></span>. The <span class="link"><a href="Cogl.Buffer.html" title="Cogl.Buffer">Cogl.Buffer</a></span> API can then be
+used to fill the bitmap with data.</p>
+<p class="p">&lt;note&gt;Cogl will try its best to provide a hardware array you can
+map, write into and effectively do a zero copy upload when creating
+a texture from it with cogl_texture_new_from_bitmap(). For various
+reasons, such arrays are likely to have a stride larger than width
+* bytes_per_pixel. The user must take the stride into account when
+writing into it. The stride can be retrieved with
+<span class="link"><a href="Cogl.Bitmap.get_rowstride.html" title="Cogl.Bitmap.prototype.get_rowstride">Cogl.Bitmap.prototype.get_rowstride</a></span>.&lt;/note&gt;</p>
+<p class="p">Since 1.10</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">context</span></dt>
+<dd class="terms"><p class="p">A <span class="link"><a href="Cogl.Context.html" title="Cogl.Context">Cogl.Context</a></span></p></dd>
+<dt class="terms"><span class="code">width</span></dt>
+<dd class="terms"><p class="p">width of the bitmap in pixels</p></dd>
+<dt class="terms"><span class="code">height</span></dt>
+<dd class="terms"><p class="p">height of the bitmap in pixels</p></dd>
+<dt class="terms"><span class="code">format</span></dt>
+<dd class="terms"><p class="p">the format of the pixels the array will store</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="Cogl.PixelBuffer.html" title="Cogl.PixelBuffer">Cogl.PixelBuffer</a></span> representing the
+              newly created array or <span class="code">null</span> on failure</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.Bitmap.html" title="Cogl.Bitmap">Cogl.Bitmap</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

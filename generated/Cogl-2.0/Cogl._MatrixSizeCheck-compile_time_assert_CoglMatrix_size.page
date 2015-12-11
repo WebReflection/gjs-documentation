@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Cogl._MatrixSizeCheck-compile_time_assert_CoglMatrix_size"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl._MatrixSizeCheck" group="field" type="guide"/>
+    <title type="link" role="topic">compile_time_assert_CoglMatrix_size</title>
+  </info>
+  <title>Cogl._MatrixSizeCheck.compile_time_assert__Cogl_Matrix_size</title>
+  <synopsis><code mime="text/x-gjs">
+_MatrixSizeCheck.compile_time_assert__Cogl_Matrix_size: Array(Number(gchar)) (Read / Write)
+  </code></synopsis>
+
+
+</page>

@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<page id="Gst.LogFunction"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Gst.LogFunction</title>
+  <synopsis><code mime="text/x-gjs">
+function onLogFunction(category: <link xref="Gst.DebugCategory">Gst.DebugCategory</link>, level: <link xref="Gst.DebugLevel">Gst.DebugLevel</link>, file: String, function: String, line: Number(gint), object: <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link>, message: <link xref="Gst.DebugMessage">Gst.DebugMessage</link>): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>category</code></title>
+
+</item>
+<item>
+<title><code>level</code></title>
+
+</item>
+<item>
+<title><code>file</code></title>
+
+</item>
+<item>
+<title><code>function</code></title>
+
+</item>
+<item>
+<title><code>line</code></title>
+
+</item>
+<item>
+<title><code>object</code></title>
+
+</item>
+<item>
+<title><code>message</code></title>
+
+</item>
+</terms>
+
+</page>

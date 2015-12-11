@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<page id="Gck.Slot.enumerate_objects"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Slot" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.Enumerator</api:type>
+      </api:returns>
+      <api:name>gck_slot_enumerate_objects</api:name>
+      <api:arg>
+        <api:type>Gck.Attributes</api:type>
+        <api:name>match</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gck.SessionOptions</api:type>
+        <api:name>options</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Slot.prototype.enumerate_objects</title>
+  <synopsis><code mime="text/x-gjs">
+function enumerate_objects(match: <link xref="Gck.Attributes">Gck.Attributes</link>, options: <link xref="Gck.SessionOptions">Gck.SessionOptions</link>): <link xref="Gck.Enumerator">Gck.Enumerator</link> {
+    // Gjs wrapper for gck_slot_enumerate_objects()
+}
+  </code></synopsis>
+  <p>Setup an enumerator for listing matching objects on the slot.</p>  <p>If the <code>match</code> <link xref="Gck.Attributes"/> is floating, it is consumed.</p>  <p>This call will not block but will return an enumerator immediately.</p>
+
+<terms>
+<item>
+<title><code>match</code></title>
+  <p>attributes that the objects must match, or empty for all objects</p>
+</item>
+<item>
+<title><code>options</code></title>
+  <p>options for opening a session</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a new enumerator</p>
+</item>
+</terms>
+
+</page>

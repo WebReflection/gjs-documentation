@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<page id="Gck.Enumerator.next_async"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Enumerator" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gck_enumerator_next_async</api:name>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>max_objects</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.AsyncReadyCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Enumerator.prototype.next_async</title>
+  <synopsis><code mime="text/x-gjs">
+function next_async(max_objects: Number(gint), cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>, callback: <link href="../Gio-2.0/Gio.AsyncReadyCallback.html">Gio.AsyncReadyCallback</link>): void {
+    // Gjs wrapper for gck_enumerator_next_async()
+}
+  </code></synopsis>
+  <p>Get the next set of objects from the enumerator. This operation completes
+asynchronously.The maximum number of objects can be specified with
+<code>max_objects</code>. If -1 is specified, then all the remaining objects will be
+enumerated.</p>
+
+<terms>
+<item>
+<title><code>max_objects</code></title>
+  <p>The maximum number of objects to get</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>A <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link> or <code>null</code></p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>Called when the result is ready</p>
+</item>
+</terms>
+
+</page>

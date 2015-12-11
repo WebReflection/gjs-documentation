@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<page id="Cogl.Onscreen.add_swap_buffers_callback"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Onscreen" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(guint)</api:type>
+      </api:returns>
+      <api:name>cogl_onscreen_add_swap_buffers_callback</api:name>
+      <api:arg>
+        <api:type>Cogl.SwapBuffersNotify</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Onscreen.prototype.add_swap_buffers_callback</title>
+  <synopsis><code mime="text/x-gjs">
+function add_swap_buffers_callback(callback: <link xref="Cogl.SwapBuffersNotify">Cogl.SwapBuffersNotify</link>): Number(guint) {
+    // Gjs wrapper for cogl_onscreen_add_swap_buffers_callback()
+}
+  </code></synopsis>
+  <p>Installs a <code>callback</code> function that should be called whenever a swap buffers
+request (made using <link xref="Cogl.Onscreen.swap_buffers"/>) for the given
+<code>onscreen</code> completes.</p>  <p>&lt;note&gt;Applications should check for the <link xref="Cogl.FeatureID"/>.ogl_feature_id_swap_buffers_event
+feature before using this API. It's currently undefined when and if
+registered callbacks will be called if this feature is not supported.&lt;/note&gt;</p>  <p>We recommend using this mechanism when available to manually throttle your
+applications (in conjunction with  <link xref="Cogl.Onscreen.set_swap_throttled"/>) so
+your application will be able to avoid long blocks in the driver caused by
+throttling when you request to swap buffers too quickly.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>callback</code></title>
+  <p>A callback function to call when a swap
+           has completed</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a unique identifier that can be used to remove to remove
+              the callback later.</p>
+</item>
+</terms>
+
+</page>

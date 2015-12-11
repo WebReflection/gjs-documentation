@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.remove_layer"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_remove_layer</api:name>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>layer_index</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.remove_layer</title>
+  <synopsis><code mime="text/x-gjs">
+function remove_layer(layer_index: Number(gint)): void {
+    // Gjs wrapper for cogl_pipeline_remove_layer()
+}
+  </code></synopsis>
+  <p>This function removes a layer from your pipeline</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>layer_index</code></title>
+  <p>Specifies the layer you want to remove</p>
+</item>
+</terms>
+
+</page>

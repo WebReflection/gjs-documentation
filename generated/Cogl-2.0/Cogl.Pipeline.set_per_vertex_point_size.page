@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.set_per_vertex_point_size"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_set_per_vertex_point_size</api:name>
+      <api:arg>
+        <api:type>Cogl.Bool</api:type>
+        <api:name>enable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.set_per_vertex_point_size</title>
+  <synopsis><code mime="text/x-gjs">
+function set_per_vertex_point_size(enable: <link xref="Cogl.Bool">Cogl.Bool</link>): <link xref="Cogl.Bool">Cogl.Bool</link> {
+    // Gjs wrapper for cogl_pipeline_set_per_vertex_point_size()
+}
+  </code></synopsis>
+  <p>Sets whether to use a per-vertex point size or to use the value set
+by <link xref="Cogl.Pipeline.set_point_size"/>. If per-vertex point size is
+enabled then the point size can be set for an individual point
+either by drawing with a <link xref="Cogl.Attribute"/> with the name
+‘cogl_point_size_in’ or by writing to the GLSL builtin
+‘cogl_point_size_out’ from a vertex shader snippet.</p>  <p>If per-vertex point size is enabled and this attribute is not used
+and cogl_point_size_out is not written to then the results are
+undefined.</p>  <p>Note that enabling this will only work if the
+<link xref="Cogl.FeatureID"/>.ogl_feature_id_per_vertex_point_size feature is available. If
+this is not available then the function will return <code>false</code> and set
+a #CoglError.</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>enable</code></title>
+  <p>whether to enable per-vertex point size</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if the change suceeded or <code>false</code> otherwise</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<page id="Cogl.Display.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Display" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Display</api:type>
+      </api:returns>
+      <api:name>cogl_display_new</api:name>
+      <api:arg>
+        <api:type>Cogl.Renderer</api:type>
+        <api:name>renderer</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.OnscreenTemplate</api:type>
+        <api:name>onscreen_template</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Display.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(renderer: <link xref="Cogl.Renderer">Cogl.Renderer</link>, onscreen_template: <link xref="Cogl.OnscreenTemplate">Cogl.OnscreenTemplate</link>): <link xref="Cogl.Display">Cogl.Display</link> {
+    // Gjs wrapper for cogl_display_new()
+}
+  </code></synopsis>
+  <p>Explicitly allocates a new <link xref="Cogl.Display"/> object to encapsulate the
+common state of the display pipeline that applies to the whole
+application.</p>  <p>&lt;note&gt;Many applications don't need to explicitly use
+<link xref="Cogl.Display.new"/> and can just jump straight to <link xref="Cogl.Context.new"/>
+and pass a <code>null</code> display argument so Cogl will automatically
+connect and setup a renderer and display.&lt;/note&gt;</p>  <p>A @display can only be made for a specific choice of renderer which
+is why this takes the <code>renderer</code> argument.</p>  <p>A common use for explicitly allocating a display object is to
+define a template for allocating onscreen framebuffers which is
+what the <code>onscreen_template</code> argument is for, or alternatively
+you can use <link xref="Cogl.Display.set_onscreen_template"/>.</p>  <p>When a display is first allocated via <link xref="Cogl.Display.new"/> it is in a
+mutable configuration mode. It's designed this way so we can
+extend the apis available for configuring a display without
+requiring huge numbers of constructor arguments.</p>  <p>When you have finished configuring a display object you can
+optionally call <link xref="Cogl.Display.setup"/> to explicitly apply the
+configuration and check for errors. Alternaitvely you can pass the
+display to <link xref="Cogl.Context.new"/> and Cogl will implicitly apply your
+configuration but if there are errors then the application will
+abort with a message. For simple applications with no fallback
+options then relying on the implicit setup can be fine.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>renderer</code></title>
+  <p>A <link xref="Cogl.Renderer"/></p>
+</item>
+<item>
+<title><code>onscreen_template</code></title>
+  <p>A <link xref="Cogl.OnscreenTemplate"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>A newly allocated <link xref="Cogl.Display"/>
+              object in a mutable configuration mode.</p>
+</item>
+</terms>
+
+</page>

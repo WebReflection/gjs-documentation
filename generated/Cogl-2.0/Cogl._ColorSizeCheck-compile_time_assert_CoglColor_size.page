@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Cogl._ColorSizeCheck-compile_time_assert_CoglColor_size"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl._ColorSizeCheck" group="field" type="guide"/>
+    <title type="link" role="topic">compile_time_assert_CoglColor_size</title>
+  </info>
+  <title>Cogl._ColorSizeCheck.compile_time_assert__Cogl_Color_size</title>
+  <synopsis><code mime="text/x-gjs">
+_ColorSizeCheck.compile_time_assert__Cogl_Color_size: Array(Number(gchar)) (Read / Write)
+  </code></synopsis>
+
+
+</page>

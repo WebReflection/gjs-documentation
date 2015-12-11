@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<page id="Gcr.Importer.queue_and_filter_for_parsed"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Importer" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(Gcr.Importer)</api:type>
+      </api:returns>
+      <api:name>gcr_importer_queue_and_filter_for_parsed</api:name>
+      <api:arg>
+        <api:type>Array(Gcr.Importer)</api:type>
+        <api:name>importers</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gcr.Parsed</api:type>
+        <api:name>parsed</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.Importer.queue_and_filter_for_parsed</title>
+  <synopsis><code mime="text/x-gjs">
+function queue_and_filter_for_parsed(importers: Array(<link xref="Gcr.Importer">Gcr.Importer</link>), parsed: <link xref="Gcr.Parsed">Gcr.Parsed</link>): Array(<link xref="Gcr.Importer">Gcr.Importer</link>) {
+    // Gjs wrapper for gcr_importer_queue_and_filter_for_parsed()
+}
+  </code></synopsis>
+  <p>Queues an additional item to be imported in all compattible importers
+in the set. The parsed item is represented by the state of the <link xref="Gcr.Parser"/>
+at the time of calling this method.</p>  <p>If the parsed item is incompatible with an importer, then that the item
+will not be queued on that importer.</p>
+
+<terms>
+<item>
+<title><code>importers</code></title>
+  <p>a set of importers</p>
+</item>
+<item>
+<title><code>parsed</code></title>
+  <p>a parsed item</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a new set of importers
+         that queued the item, which should be freed with <link href="../Gck-1/Gck.list_unref_free.html">Gck.list_unref_free</link></p>
+</item>
+</terms>
+
+</page>

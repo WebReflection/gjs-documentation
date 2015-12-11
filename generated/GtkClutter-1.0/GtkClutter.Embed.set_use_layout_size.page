@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="GtkClutter.Embed.set_use_layout_size"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GtkClutter.Embed" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gtk_clutter_embed_set_use_layout_size</api:name>
+      <api:arg>
+        <api:type>Boolean</api:type>
+        <api:name>use_layout_size</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GtkClutter.Embed.prototype.set_use_layout_size</title>
+  <synopsis><code mime="text/x-gjs">
+function set_use_layout_size(use_layout_size: Boolean): void {
+    // Gjs wrapper for gtk_clutter_embed_set_use_layout_size()
+}
+  </code></synopsis>
+  <p>Changes the way <code>embed</code> requests size. If <code>use_layout_size</code> is
+<code>true</code>, the <code>embed</code> widget will request the size that the
+LayoutManager reports as the preferred size. This means that
+a Gtk+ window will automatically get the natural and minimum
+toplevel window sizes. This is useful when the contents of the
+clutter stage is similar to a traditional UI.</p>  <p>If <code>use_layout_size</code> is <code>false</code> (which is the default) then <code>embed</code>
+will not request any size and its up to the embedder to make sure
+there is some size (by setting a custom size on the widget or a default
+size on the toplevel. This makes more sense when using the <code>embed</code>
+as a viewport into a potentially unlimited clutter space.</p>
+  <p>Since 1.4</p>
+<terms>
+<item>
+<title><code>use_layout_size</code></title>
+  <p>a boolean</p>
+</item>
+</terms>
+
+</page>

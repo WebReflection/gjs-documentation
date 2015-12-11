@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="GtkClutter.Window.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GtkClutter.Window" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gtk.Widget</api:type>
+      </api:returns>
+      <api:name>gtk_clutter_window_new</api:name>
+    </api:function>
+  </info>
+  <title>GtkClutter.Window.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(): <link href="../Gtk-3.0/Gtk.Widget.html">Gtk.Widget</link> {
+    // Gjs wrapper for gtk_clutter_window_new()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="GtkClutter.Window"/> widget.</p>  <p>This window provides a hidden <link href="../Clutter-1.0/Clutter.Stage.html">Clutter.Stage</link> on which the child
+<link href="../Gtk-3.0/Gtk.Widget.html">Gtk.Widget</link>&lt;!-- --&gt;s are placed. This allows other <link href="../Clutter-1.0/Clutter.Actor.html">Clutter.Actor</link>&lt;!-- --&gt;s
+to also be placed on the stage.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the newly created <link xref="GtkClutter.Window"/></p>
+</item>
+</terms>
+
+</page>

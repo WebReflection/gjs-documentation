@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<page id="Cogl.gles2_texture_get_handle"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_gles2_texture_get_handle</api:name>
+      <api:arg>
+        <api:type>Cogl.Texture</api:type>
+        <api:name>texture</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint)</api:type>
+        <api:name>handle</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint)</api:type>
+        <api:name>target</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.gles2_texture_get_handle</title>
+  <synopsis><code mime="text/x-gjs">
+function gles2_texture_get_handle(texture: <link xref="Cogl.Texture">Cogl.Texture</link>, handle: Number(guint), target: Number(guint)): <link xref="Cogl.Bool">Cogl.Bool</link> {
+    // Gjs wrapper for cogl_gles2_texture_get_handle()
+}
+  </code></synopsis>
+  <p>Gets an OpenGL ES 2.0 texture handle for a <link xref="Cogl.Texture"/> that can
+then be referenced by a <link xref="Cogl.GLES2Context"/>. As well as returning
+a texture handle the texture's target (such as GL_TEXTURE_2D) is
+also returned.</p>  <p>If the <link xref="Cogl.Texture"/> can not be shared with a <link xref="Cogl.GLES2Context"/> then
+this function will return <code>false</code>.</p>  <p>This api does not affect the lifetime of the CoglTexture and you
+must take care not to reference the returned handle after the
+original texture has been freed.</p>  <p>&lt;note&gt;This interface is only intended for sharing textures to read
+from.  The behaviour is undefined if the texture is modified by a
+GLES2 context.&lt;/note&gt;</p>  <p>&lt;note&gt;This function will only return <code>true</code> for low-level
+<link xref="Cogl.Texture"/>&lt;!-- --&gt;s such as <link xref="Cogl.Texture2D"/> or <link xref="Cogl.Texture3D"/> but
+not for high level meta textures such as
+<link xref="Cogl.Texture2DSliced"/>&lt;/note&gt;</p>  <p>&lt;note&gt;The handle returned should not be passed directly to a system
+OpenGL ES 2.0 library, the handle is only intended to be used via
+a <link xref="Cogl.GLES2Vtable"/> or via libcogl-gles2.&lt;/note&gt;</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>texture</code></title>
+  <p>A <link xref="Cogl.Texture"/></p>
+</item>
+<item>
+<title><code>handle</code></title>
+  <p>A return location for an OpenGL ES 2.0 texture handle</p>
+</item>
+<item>
+<title><code>target</code></title>
+  <p>A return location for an OpenGL ES 2.0 texture target</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if a handle and target could be returned
+              otherwise <code>false</code> is returned.</p>
+</item>
+</terms>
+
+</page>

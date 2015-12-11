@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="GtkClutter.Window.get_stage"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GtkClutter.Window" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Actor</api:type>
+      </api:returns>
+      <api:name>gtk_clutter_window_get_stage</api:name>
+    </api:function>
+  </info>
+  <title>GtkClutter.Window.prototype.get_stage</title>
+  <synopsis><code mime="text/x-gjs">
+function get_stage(): <link href="../Clutter-1.0/Clutter.Actor.html">Clutter.Actor</link> {
+    // Gjs wrapper for gtk_clutter_window_get_stage()
+}
+  </code></synopsis>
+  <p>Retrieves the <link href="../Clutter-1.0/Clutter.Stage.html">Clutter.Stage</link> that this window is embedding</p>  <p>Use this function if you wish to add other actors to the <link href="../Clutter-1.0/Clutter.Stage.html">Clutter.Stage</link>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the window's <link href="../Clutter-1.0/Clutter.Stage.html">Clutter.Stage</link></p>
+</item>
+</terms>
+
+</page>

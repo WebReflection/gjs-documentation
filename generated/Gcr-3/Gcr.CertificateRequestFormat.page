@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page id="Gcr.CertificateRequestFormat"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Gcr.CertificateRequestFormat</title>
+  <p>The format of a certificate request. Currently only PKCS\#10 is supported.</p>
+
+<terms>
+<item>
+<title><code>CertificateRequestFormat.CERTIFICATE_REQUEST_PKCS10</code></title>
+  <p>certificate request is in PKCS\#10 format</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

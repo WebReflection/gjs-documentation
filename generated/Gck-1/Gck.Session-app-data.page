@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gck.Session-app-data"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Session" group="property" type="guide"/>
+    <title type="link" role="topic">app-data</title>
+  </info>
+  <title>Gck.Session.app_data</title>
+  <synopsis><code mime="text/x-gjs">
+Session.app_data: void (Write / Construct Only)
+  </code></synopsis>
+  <p>Raw PKCS\#11 application data used to open the PKCS\#11 session.</p>
+
+</page>

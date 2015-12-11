@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Cogl.Renderer.connect"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Renderer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_renderer_connect</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Renderer.prototype.connect</title>
+  <synopsis><code mime="text/x-gjs">
+function connect(): <link xref="Cogl.Bool">Cogl.Bool</link> {
+    // Gjs wrapper for cogl_renderer_connect()
+}
+  </code></synopsis>
+  <p>Connects the configured <code>renderer</code>. Renderer connection isn't a
+very active process, it basically just means validating that
+any given constraint criteria can be satisfied and that a
+usable driver and window system backend can be found.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if there was no error while connecting the
+              given <code>renderer</code>. <code>false</code> if there was an error.</p>
+</item>
+</terms>
+
+</page>

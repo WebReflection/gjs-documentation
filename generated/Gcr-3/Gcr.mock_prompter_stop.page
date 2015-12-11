@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="Gcr.mock_prompter_stop"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gcr_mock_prompter_stop</api:name>
+    </api:function>
+  </info>
+  <title>Gcr.mock_prompter_stop</title>
+  <synopsis><code mime="text/x-gjs">
+function mock_prompter_stop(): void {
+    // Gjs wrapper for gcr_mock_prompter_stop()
+}
+  </code></synopsis>
+  <p>Stop the mock prompter. This is often used from the
+&lt;literal&gt;teardown&lt;!-- --&gt;()&lt;/literal&gt; function of tests.</p>
+
+
+</page>

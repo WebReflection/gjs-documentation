@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gck.Module-authenticate-object"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Module" group="signal" type="guide"/>
+    <title type="link" role="topic">authenticate-object</title>
+  </info>
+  <title>Gck.Module::authenticate-object</title>
+  <synopsis><code mime="text/x-gjs">
+connect('authenticate-object', function (module, object: <link xref="Gck.Object">Gck.Object</link>, label: String, password: void, ): Boolean);
+  </code></synopsis>
+  <p>Use <link xref="Gck.Session.set_interaction"/> instead of connecting to this signal.</p>
+
+<terms>
+<item>
+<title><code>module</code></title>
+<p>instance of <link xref="Gck.Module"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>object</code></title>
+  <p>The object to be authenticated.</p>
+</item>
+<item>
+<title><code>label</code></title>
+  <p>A displayable label which describes the object.</p>
+</item>
+<item>
+<title><code>password</code></title>
+  <p>A gchar** where a password should be returned.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

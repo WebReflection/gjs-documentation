@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gcr.SystemPrompt-timeout-seconds"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.SystemPrompt" group="property" type="guide"/>
+    <title type="link" role="topic">timeout-seconds</title>
+  </info>
+  <title>Gcr.SystemPrompt.timeout_seconds</title>
+  <synopsis><code mime="text/x-gjs">
+SystemPrompt.timeout_seconds: Number(gint) (Write / Construct Only)
+  </code></synopsis>
+  <p>The timeout in seconds to wait when opening the prompt.</p>
+
+</page>

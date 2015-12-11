@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="GdkX11.X11Display.get_xdisplay"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GdkX11.X11Display" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>xlib.Display</api:type>
+      </api:returns>
+      <api:name>gdk_x11_display_get_xdisplay</api:name>
+    </api:function>
+  </info>
+  <title>GdkX11.X11Display.prototype.get_xdisplay</title>
+  <synopsis><code mime="text/x-gjs">
+function get_xdisplay(): <link href="../xlib-2.0/xlib.Display.html">xlib.Display</link> {
+    // Gjs wrapper for gdk_x11_display_get_xdisplay()
+}
+  </code></synopsis>
+  <p>Returns the X display of a <link href="../Gdk-3.0/Gdk.Display.html">Gdk.Display</link>.</p>
+  <p>Since 2.2</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>an X display</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Cogl.Framebuffer.get_depth_texture"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Framebuffer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Texture</api:type>
+      </api:returns>
+      <api:name>cogl_framebuffer_get_depth_texture</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Framebuffer.prototype.get_depth_texture</title>
+  <synopsis><code mime="text/x-gjs">
+function get_depth_texture(): <link xref="Cogl.Texture">Cogl.Texture</link> {
+    // Gjs wrapper for cogl_framebuffer_get_depth_texture()
+}
+  </code></synopsis>
+  <p>Retrieves the depth buffer of <code>framebuffer</code> as a <link xref="Cogl.Texture"/>. You need to
+call cogl_framebuffer_get_depth_texture(fb, TRUE); before using this
+function.</p>  <p>&lt;note&gt;Calling this function implicitely allocates the framebuffer.&lt;/note&gt;
+&lt;note&gt;The texture returned stays valid as long as the framebuffer stays
+valid.&lt;/note&gt;</p>
+  <p>Since 1.14</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the depth texture</p>
+</item>
+</terms>
+
+</page>

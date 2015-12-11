@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gcr.CertificateChain.add"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.CertificateChain" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gcr_certificate_chain_add</api:name>
+      <api:arg>
+        <api:type>Gcr.Certificate</api:type>
+        <api:name>certificate</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.CertificateChain.prototype.add</title>
+  <synopsis><code mime="text/x-gjs">
+function add(certificate: <link xref="Gcr.Certificate">Gcr.Certificate</link>): void {
+    // Gjs wrapper for gcr_certificate_chain_add()
+}
+  </code></synopsis>
+  <p>Add <code>certificate</code> to the chain. The order of certificates in the chain are
+important. The first certificate should be the endpoint certificate, and
+then come the signers (certificate authorities) each in turn. If a root
+certificate authority is present, it should come last.</p>  <p>Adding a certificate an already built chain (see
+<link xref="Gcr.CertificateChain.build"/>) resets the type of the certificate chain
+to <link xref="Gcr.CertificateChainStatus"/>.unknown</p>
+
+<terms>
+<item>
+<title><code>certificate</code></title>
+  <p>a <link xref="Gcr.Certificate"/> to add to the chain</p>
+</item>
+</terms>
+
+</page>

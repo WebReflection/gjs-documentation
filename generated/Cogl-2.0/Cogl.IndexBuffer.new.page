@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<page id="Cogl.IndexBuffer.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.IndexBuffer" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.IndexBuffer</api:type>
+      </api:returns>
+      <api:name>cogl_index_buffer_new</api:name>
+      <api:arg>
+        <api:type>Cogl.Context</api:type>
+        <api:name>context</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gsize)</api:type>
+        <api:name>bytes</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.IndexBuffer.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(context: <link xref="Cogl.Context">Cogl.Context</link>, bytes: Number(gsize)): <link xref="Cogl.IndexBuffer">Cogl.IndexBuffer</link> {
+    // Gjs wrapper for cogl_index_buffer_new()
+}
+  </code></synopsis>
+  <p>Declares a new <link xref="Cogl.IndexBuffer"/> of @size bytes to contain vertex
+indices. Once declared, data can be set using
+<link xref="Cogl.buffer_set_data"/> or by mapping it into the application's
+address space using <link xref="Cogl.buffer_map"/>.</p>
+  <p>Since 1.4</p>
+<terms>
+<item>
+<title><code>context</code></title>
+  <p>A <link xref="Cogl.Context"/></p>
+</item>
+<item>
+<title><code>bytes</code></title>
+  <p>The number of bytes to allocate for vertex attribute data.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>A newly allocated <link xref="Cogl.IndexBuffer"/></p>
+</item>
+</terms>
+
+</page>

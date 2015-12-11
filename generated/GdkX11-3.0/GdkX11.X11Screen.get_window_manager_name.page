@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="GdkX11.X11Screen.get_window_manager_name"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GdkX11.X11Screen" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>gdk_x11_screen_get_window_manager_name</api:name>
+    </api:function>
+  </info>
+  <title>GdkX11.X11Screen.prototype.get_window_manager_name</title>
+  <synopsis><code mime="text/x-gjs">
+function get_window_manager_name(): String {
+    // Gjs wrapper for gdk_x11_screen_get_window_manager_name()
+}
+  </code></synopsis>
+  <p>Returns the name of the window manager for <code>screen</code>.</p>
+  <p>Since 2.2</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the name of the window manager screen <code>screen</code>, or
+"unknown" if the window manager is unknown. The string is owned by GDK
+and should not be freed.</p>
+</item>
+</terms>
+
+</page>

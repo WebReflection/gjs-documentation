@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<page id="Gck.Object.set_async"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Object" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gck_object_set_async</api:name>
+      <api:arg>
+        <api:type>Gck.Attributes</api:type>
+        <api:name>attrs</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.AsyncReadyCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Object.prototype.set_async</title>
+  <synopsis><code mime="text/x-gjs">
+function set_async(attrs: <link xref="Gck.Attributes">Gck.Attributes</link>, cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>, callback: <link href="../Gio-2.0/Gio.AsyncReadyCallback.html">Gio.AsyncReadyCallback</link>): void {
+    // Gjs wrapper for gck_object_set_async()
+}
+  </code></synopsis>
+  <p>Set PKCS\#11 attributes on an object. This call will return
+immediately and completes asynchronously.</p>  <p>If the <code>attrs</code> <link xref="Gck.Attributes"/> is floating, it is consumed.</p>
+
+<terms>
+<item>
+<title><code>attrs</code></title>
+  <p>The attributes to set on the object.</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>Optional cancellable object, or NULL to ignore.</p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>Callback which is called when operation completes.</p>
+</item>
+</terms>
+
+</page>

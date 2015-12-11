@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Soup.SocketCallback"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Soup.SocketCallback</title>
+  <synopsis><code mime="text/x-gjs">
+function onSocketCallback(sock: <link xref="Soup.Socket">Soup.Socket</link>, status: Number(guint)): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>sock</code></title>
+
+</item>
+<item>
+<title><code>status</code></title>
+
+</item>
+</terms>
+
+</page>

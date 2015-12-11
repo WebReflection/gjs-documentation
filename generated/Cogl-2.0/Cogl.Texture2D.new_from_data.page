@@ -1,0 +1,98 @@
+<?xml version="1.0"?>
+<page id="Cogl.Texture2D.new_from_data"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Texture2D" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Texture2D</api:type>
+      </api:returns>
+      <api:name>cogl_texture_2d_new_from_data</api:name>
+      <api:arg>
+        <api:type>Cogl.Context</api:type>
+        <api:name>ctx</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>width</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>height</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.PixelFormat</api:type>
+        <api:name>format</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>rowstride</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint8)</api:type>
+        <api:name>data</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Texture2D.new_from_data</title>
+  <synopsis><code mime="text/x-gjs">
+function new_from_data(ctx: <link xref="Cogl.Context">Cogl.Context</link>, width: Number(gint), height: Number(gint), format: <link xref="Cogl.PixelFormat">Cogl.PixelFormat</link>, rowstride: Number(gint), data: Number(guint8)): <link xref="Cogl.Texture2D">Cogl.Texture2D</link> {
+    // Gjs wrapper for cogl_texture_2d_new_from_data()
+}
+  </code></synopsis>
+  <p>Creates a low-level <link xref="Cogl.Texture2D"/> texture based on data residing
+in memory.</p>  <p>&lt;note&gt;This api will always immediately allocate GPU memory for the
+texture and upload the given data so that the <code>data</code> pointer does
+not need to remain valid once this function returns. This means it
+is not possible to configure the texture before it is allocated. If
+you do need to configure the texture before allocation (to specify
+constraints on the internal format for example) then you can
+instead create a <link xref="Cogl.Bitmap"/> for your data and use
+<link xref="Cogl.Texture2D.new_from_bitmap"/> or use
+<link xref="Cogl.Texture2D.new_with_size"/> and then upload data using
+<link xref="Cogl.Texture.set_data"/>&lt;/note&gt;</p>  <p>&lt;note&gt;Many GPUs only support power of two sizes for <link xref="Cogl.Texture2D"/>
+textures. You can check support for non power of two textures by
+checking for the <link xref="Cogl.FeatureID"/>.ogl_feature_id_texture_npot feature via
+<link xref="Cogl.has_feature"/>.&lt;/note&gt;</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>ctx</code></title>
+  <p>A <link xref="Cogl.Context"/></p>
+</item>
+<item>
+<title><code>width</code></title>
+  <p>width of texture in pixels</p>
+</item>
+<item>
+<title><code>height</code></title>
+  <p>height of texture in pixels</p>
+</item>
+<item>
+<title><code>format</code></title>
+  <p>the <link xref="Cogl.PixelFormat"/> the buffer is stored in in RAM</p>
+</item>
+<item>
+<title><code>rowstride</code></title>
+  <p>the memory offset in bytes between the starts of
+   scanlines in <code>data</code>. A value of 0 will make Cogl automatically
+   calculate <code>rowstride</code> from <code>width</code> and <code>format</code>.</p>
+</item>
+<item>
+<title><code>data</code></title>
+  <p>pointer the memory region where the source buffer resides</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>A newly allocated <link xref="Cogl.Texture2D"/>, or if
+         the size is not supported (because it is too large or a
+         non-power-of-two size that the hardware doesn't support)
+         it will return <code>null</code> and set @error.</p>
+</item>
+</terms>
+
+</page>

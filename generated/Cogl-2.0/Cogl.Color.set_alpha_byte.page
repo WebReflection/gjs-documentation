@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Cogl.Color.set_alpha_byte"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Color" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_color_set_alpha_byte</api:name>
+      <api:arg>
+        <api:type>Number(guint8)</api:type>
+        <api:name>alpha</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Color.prototype.set_alpha_byte</title>
+  <synopsis><code mime="text/x-gjs">
+function set_alpha_byte(alpha: Number(guint8)): void {
+    // Gjs wrapper for cogl_color_set_alpha_byte()
+}
+  </code></synopsis>
+  <p>Sets the alpha channel of <code>color</code> to <code>alpha</code>.</p>
+  <p>Since 1.4</p>
+<terms>
+<item>
+<title><code>alpha</code></title>
+  <p>a byte value between 0 and 255</p>
+</item>
+</terms>
+
+</page>

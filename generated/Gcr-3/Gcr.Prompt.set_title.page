@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gcr.Prompt.set_title"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Prompt" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gcr_prompt_set_title</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>title</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.Prompt.prototype.set_title</title>
+  <synopsis><code mime="text/x-gjs">
+function set_title(title: String): void {
+    // Gjs wrapper for gcr_prompt_set_title()
+}
+  </code></synopsis>
+  <p>Sets the title of the prompt.</p>  <p>A prompt implementation may choose not to display the prompt title. The
+prompt message should contain relevant information.</p>
+
+<terms>
+<item>
+<title><code>title</code></title>
+  <p>the prompt title</p>
+</item>
+</terms>
+
+</page>

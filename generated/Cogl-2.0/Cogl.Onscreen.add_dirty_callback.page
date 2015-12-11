@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<page id="Cogl.Onscreen.add_dirty_callback"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Onscreen" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.OnscreenDirtyClosure</api:type>
+      </api:returns>
+      <api:name>cogl_onscreen_add_dirty_callback</api:name>
+      <api:arg>
+        <api:type>Cogl.OnscreenDirtyCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.UserDataDestroyCallback</api:type>
+        <api:name>destroy</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Onscreen.prototype.add_dirty_callback</title>
+  <synopsis><code mime="text/x-gjs">
+function add_dirty_callback(callback: <link xref="Cogl.OnscreenDirtyCallback">Cogl.OnscreenDirtyCallback</link>, destroy: <link xref="Cogl.UserDataDestroyCallback">Cogl.UserDataDestroyCallback</link>): <link xref="Cogl.OnscreenDirtyClosure">Cogl.OnscreenDirtyClosure</link> {
+    // Gjs wrapper for cogl_onscreen_add_dirty_callback()
+}
+  </code></synopsis>
+  <p>Installs a <code>callback</code> function that will be called whenever the
+window system has lost the contents of a region of the onscreen
+buffer and the application should redraw it to repair the buffer.
+For example this may happen in a window system without a compositor
+if a window that was previously covering up the onscreen window has
+been moved causing a region of the onscreen to be exposed.</p>  <p>The <code>callback</code> will be passed a <link xref="Cogl.OnscreenDirtyInfo"/> struct which
+decribes a rectangle containing the newly dirtied region. Note that
+this may be called multiple times to describe a non-rectangular
+region composed of multiple smaller rectangles.</p>  <p>The dirty events are separate from <link xref="Cogl.FrameEvent"/>.sync events so
+the application should also listen for this event before rendering
+the dirty region to ensure that the framebuffer is actually ready
+for rendering.</p>
+  <p>Since 1.16</p>
+<terms>
+<item>
+<title><code>callback</code></title>
+  <p>A callback function to call for dirty events</p>
+</item>
+<item>
+<title><code>destroy</code></title>
+  <p>An optional callback to destroy <code>user_data</code> when the
+          <code>callback</code> is removed or <code>onscreen</code> is freed.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link xref="Cogl.OnscreenDirtyClosure"/> pointer that can be used to
+              remove the callback and associated <code>user_data</code> later.</p>
+</item>
+</terms>
+
+</page>

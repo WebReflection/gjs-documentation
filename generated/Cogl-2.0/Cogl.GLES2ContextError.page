@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Cogl.GLES2ContextError"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Cogl.GLES2ContextError</title>
+  <p>Error codes that relate to the cogl_gles2_context api.</p>
+
+<terms>
+<item>
+<title><code>GLES2ContextError.UNSUPPORTED</code></title>
+  <p>Creating GLES2 contexts
+   isn't supported. Applications should use <link xref="Cogl.has_feature"/> to
+   check for the <link xref="Cogl.FeatureID"/>.ogl_feature_id_gles2_context.</p>
+</item>
+<item>
+<title><code>GLES2ContextError.DRIVER</code></title>
+  <p>An underlying driver error
+   occured.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

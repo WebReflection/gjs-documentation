@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="Gcr.FilterCollection.set_callback"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.FilterCollection" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gcr_filter_collection_set_callback</api:name>
+      <api:arg>
+        <api:type>Gcr.FilterCollectionFunc</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.FilterCollection.prototype.set_callback</title>
+  <synopsis><code mime="text/x-gjs">
+function set_callback(callback: <link xref="Gcr.FilterCollectionFunc">Gcr.FilterCollectionFunc</link>): void {
+    // Gjs wrapper for gcr_filter_collection_set_callback()
+}
+  </code></synopsis>
+  <p>Set the callback used to filter the objects in the underlying collection.
+The callback should return <code>true</code> if an object should appear in the
+filtered collection.</p>  <p>If a <code>null</code> callback is set, then all underlynig objects will appear in the
+filtered collection.</p>  <p>This will refilter the collection.</p>
+
+<terms>
+<item>
+<title><code>callback</code></title>
+  <p>function to call for each object</p>
+</item>
+</terms>
+
+</page>

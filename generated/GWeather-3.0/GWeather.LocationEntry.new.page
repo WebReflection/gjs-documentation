@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="GWeather.LocationEntry.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.LocationEntry" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gtk.Widget</api:type>
+      </api:returns>
+      <api:name>gweather_location_entry_new</api:name>
+      <api:arg>
+        <api:type>GWeather.Location</api:type>
+        <api:name>top</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GWeather.LocationEntry.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(top: <link xref="GWeather.Location">GWeather.Location</link>): <link href="../Gtk-3.0/Gtk.Widget.html">Gtk.Widget</link> {
+    // Gjs wrapper for gweather_location_entry_new()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="GWeather.LocationEntry"/>.</p>  <p><code>top</code> will normally be the location returned from
+<link xref="GWeather.location_get_world"/>, but you can create an entry that
+only accepts a smaller set of locations if you want.</p>
+
+<terms>
+<item>
+<title><code>top</code></title>
+  <p>the top-level location for the entry.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the new <link xref="GWeather.LocationEntry"/></p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="Cogl.Texture.get_gl_texture"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Texture" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_texture_get_gl_texture</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Texture.prototype.get_gl_texture</title>
+  <synopsis><code mime="text/x-gjs">
+function get_gl_texture(): [return_value: <link xref="Cogl.Bool">Cogl.Bool</link>, out_gl_handle: Number(guint), out_gl_target: Number(guint)] {
+    // Gjs wrapper for cogl_texture_get_gl_texture()
+}
+  </code></synopsis>
+  <p>Queries the GL handles for a GPU side texture through its <link xref="Cogl.Texture"/>.</p>  <p>If the texture is spliced the data for the first sub texture will be
+queried.</p>
+
+<terms>
+<item>
+<title><code>return_value</code></title>
+  <p><code>true</code> if the handle was successfully retrieved, <code>false</code>
+  if the handle was invalid</p>
+</item>
+<item>
+<title><code>out_gl_handle</code></title>
+  <p>pointer to return location for the
+  textures GL handle, or <code>null</code>.</p>
+</item>
+<item>
+<title><code>out_gl_target</code></title>
+  <p>pointer to return location for the
+  GL target type, or <code>null</code>.</p>
+</item>
+</terms>
+
+</page>

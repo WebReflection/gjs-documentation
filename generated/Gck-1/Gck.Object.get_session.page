@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="Gck.Object.get_session"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Object" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.Session</api:type>
+      </api:returns>
+      <api:name>gck_object_get_session</api:name>
+    </api:function>
+  </info>
+  <title>Gck.Object.prototype.get_session</title>
+  <synopsis><code mime="text/x-gjs">
+function get_session(): <link xref="Gck.Session">Gck.Session</link> {
+    // Gjs wrapper for gck_object_get_session()
+}
+  </code></synopsis>
+  <p>Get the PKCS\#11 session assigned to make calls on when operating
+on this object.</p>  <p>This will only return a session if it was set explitly on this
+object. By default an object will open and close sessions
+appropriate for its calls.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the assigned session, which must be unreffed after use</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="Cogl.Onscreen.swap_buffers"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Onscreen" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_onscreen_swap_buffers</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Onscreen.prototype.swap_buffers</title>
+  <synopsis><code mime="text/x-gjs">
+function swap_buffers(): void {
+    // Gjs wrapper for cogl_onscreen_swap_buffers()
+}
+  </code></synopsis>
+  <p>Swaps the current back buffer being rendered too, to the front for display.</p>  <p>This function also implicitly discards the contents of the color, depth and
+stencil buffers as if <link xref="Cogl.Framebuffer.discard_buffers"/> were used. The
+significance of the discard is that you should not expect to be able to
+start a new frame that incrementally builds on the contents of the previous
+frame.</p>  <p>&lt;note&gt;It is highly recommended that applications use
+<link xref="Cogl.Onscreen.swap_buffers_with_damage"/> instead whenever possible
+and also use the <link xref="Cogl.Onscreen.get_buffer_age"/> api so they can
+perform incremental updates to older buffers instead of having to
+render a full buffer for every frame.&lt;/note&gt;</p>
+  <p>Since 1.10</p>
+
+</page>

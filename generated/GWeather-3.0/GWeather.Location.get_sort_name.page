@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="GWeather.Location.get_sort_name"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Location" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>gweather_location_get_sort_name</api:name>
+    </api:function>
+  </info>
+  <title>GWeather.Location.prototype.get_sort_name</title>
+  <synopsis><code mime="text/x-gjs">
+function get_sort_name(): String {
+    // Gjs wrapper for gweather_location_get_sort_name()
+}
+  </code></synopsis>
+  <p>Gets <code>loc</code>'s "sort name", which is the name after having
+g_utf8_normalize() (with %G_NORMALIZE_ALL) and g_utf8_casefold()
+called on it. You can use this to sort locations, or to comparing
+user input against a location name.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>loc</code>'s sort name</p>
+</item>
+</terms>
+
+</page>

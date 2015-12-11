@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<page id="Cogl.FeatureID"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Cogl.FeatureID</title>
+  <p>All the capabilities that can vary between different GPUs supported
+by Cogl. Applications that depend on any of these features should explicitly
+check for them using <link xref="Cogl.has_feature"/> or <link xref="Cogl.has_features"/>.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>FeatureID.OGL_FEATURE_ID_TEXTURE_NPOT_BASIC</code></title>
+  <p>The hardware supports non power
+    of two textures, but you also need to check the
+    <link xref="Cogl.FeatureID"/>.ogl_feature_id_texture_npot_mipmap and <link xref="Cogl.FeatureID"/>.ogl_feature_id_texture_npot_repeat
+    features to know if the hardware supports npot texture mipmaps
+    or repeat modes other than
+    <link xref="Cogl.PipelineWrapMode"/>.clamp_to_edge respectively.</p>
+</item>
+<item>
+<title><code>FeatureID.OGL_FEATURE_ID_TEXTURE_NPOT_MIPMAP</code></title>
+  <p>Mipmapping is supported in
+    conjuntion with non power of two textures.</p>
+</item>
+<item>
+<title><code>FeatureID.OGL_FEATURE_ID_TEXTURE_NPOT_REPEAT</code></title>
+  <p>Repeat modes other than
+    <link xref="Cogl.PipelineWrapMode"/>.clamp_to_edge are supported by the
+    hardware.</p>
+</item>
+<item>
+<title><code>FeatureID.OGL_FEATURE_ID_TEXTURE_NPOT</code></title>
+  <p>Non power of two textures are supported
+   by the hardware. This is a equivalent to the
+   <link xref="Cogl.FeatureID"/>.ogl_feature_id_texture_npot_basic, <link xref="Cogl.FeatureID"/>.ogl_feature_id_texture_npot_mipmap
+   and <link xref="Cogl.FeatureID"/>.ogl_feature_id_texture_npot_repeat features combined.</p>
+</item>
+<item>
+<title><code>FeatureID.OGL_FEATURE_ID_TEXTURE_RECTANGLE</code></title>
+  <p>Support for rectangular
+   textures with non-normalized texture coordinates.</p>
+</item>
+<item>
+<title><code>FeatureID.OGL_FEATURE_ID_TEXTURE_3D</code></title>
+  <p>3D texture support</p>
+</item>
+<item>
+<title><code>FeatureID.OGL_FEATURE_ID_GLSL</code></title>
+  <p>GLSL support</p>
+</item>
+<item>
+<title><code>FeatureID.OGL_FEATURE_ID_ARBFP</code></title>
+  <p>ARBFP support</p>
+</item>
+<item>
+<title><code>FeatureID.OGL_FEATURE_ID_OFFSCREEN</code></title>
+  <p>Offscreen rendering support</p>
+</item>
+<item>
+<title><code>FeatureID.OGL_FEATURE_ID_OFFSCREEN_MULTISAMPLE</code></title>
+  <p>Multisample support for
+   offscreen framebuffers</p>
+</item>
+<item>
+<title><code>FeatureID.OGL_FEATURE_ID_ONSCREEN_MULTIPLE</code></title>
+  <p>Multiple onscreen framebuffers
+   supported.</p>
+</item>
+<item>
+<title><code>FeatureID.OGL_FEATURE_ID_UNSIGNED_INT_INDICES</code></title>
+  <p>Set if
+    <link xref="Cogl.IndicesType"/>.int is supported in
+    <link xref="Cogl.Indices.new"/>.</p>
+</item>
+<item>
+<title><code>FeatureID.OGL_FEATURE_ID_DEPTH_RANGE</code></title>
+  <p>cogl_pipeline_set_depth_range() support</p>
+</item>
+<item>
+<title><code>FeatureID.OGL_FEATURE_ID_POINT_SPRITE</code></title>
+  <p>Whether
+    <link xref="Cogl.Pipeline.set_layer_point_sprite_coords_enabled"/> is supported.</p>
+</item>
+<item>
+<title><code>FeatureID.OGL_FEATURE_ID_MAP_BUFFER_FOR_READ</code></title>
+  <p>Whether <link xref="Cogl.buffer_map"/> is
+    supported with CoglBufferAccess including read support.</p>
+</item>
+<item>
+<title><code>FeatureID.OGL_FEATURE_ID_MAP_BUFFER_FOR_WRITE</code></title>
+  <p>Whether <link xref="Cogl.buffer_map"/> is
+    supported with CoglBufferAccess including write support.</p>
+</item>
+<item>
+<title><code>FeatureID.OGL_FEATURE_ID_MIRRORED_REPEAT</code></title>
+  <p>Whether
+   <link xref="Cogl.PipelineWrapMode"/>.mirrored_repeat is supported.</p>
+</item>
+<item>
+<title><code>FeatureID.OGL_FEATURE_ID_SWAP_BUFFERS_EVENT</code></title>
+  <p>Available if the window system supports reporting an event
+    for swap buffer completions.</p>
+</item>
+<item>
+<title><code>FeatureID.OGL_FEATURE_ID_GLES2_CONTEXT</code></title>
+  <p>Whether creating new GLES2 contexts is
+   suported.</p>
+</item>
+<item>
+<title><code>FeatureID.OGL_FEATURE_ID_DEPTH_TEXTURE</code></title>
+  <p>Whether <link xref="Cogl.Framebuffer"/> support rendering
+    the depth buffer to a texture.</p>
+</item>
+<item>
+<title><code>FeatureID.OGL_FEATURE_ID_PRESENTATION_TIME</code></title>
+  <p>Whether frame presentation
+   time stamps will be recorded in <link xref="Cogl.FrameInfo"/> objects.</p>
+</item>
+<item>
+<title><code>FeatureID.OGL_FEATURE_ID_FENCE</code></title>
+
+</item>
+<item>
+<title><code>FeatureID.OGL_FEATURE_ID_PER_VERTEX_POINT_SIZE</code></title>
+  <p>Whether cogl_point_size_in
+    can be used as an attribute to set a per-vertex point size.</p>
+</item>
+<item>
+<title><code>FeatureID.OGL_FEATURE_ID_TEXTURE_RG</code></title>
+  <p>Support for
+   <link xref="Cogl.TextureComponents"/>.rg as the internal components of a
+   texture.</p>
+</item>
+<item>
+<title><code>FeatureID.OGL_FEATURE_ID_BUFFER_AGE</code></title>
+  <p>Available if the age of <link xref="Cogl.Onscreen"/> back
+   buffers are tracked and so <link xref="Cogl.Onscreen.get_buffer_age"/> can be
+   expected to return age values other than 0.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

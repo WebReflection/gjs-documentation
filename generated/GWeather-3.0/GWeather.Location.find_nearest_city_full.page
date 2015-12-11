@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<page id="GWeather.Location.find_nearest_city_full"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Location" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GWeather.Location</api:type>
+      </api:returns>
+      <api:name>gweather_location_find_nearest_city_full</api:name>
+      <api:arg>
+        <api:type>Number(gdouble)</api:type>
+        <api:name>lat</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gdouble)</api:type>
+        <api:name>lon</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GWeather.FilterFunc</api:type>
+        <api:name>func</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GWeather.Location.prototype.find_nearest_city_full</title>
+  <synopsis><code mime="text/x-gjs">
+function find_nearest_city_full(lat: Number(gdouble), lon: Number(gdouble), func: <link xref="GWeather.FilterFunc">GWeather.FilterFunc</link>): <link xref="GWeather.Location">GWeather.Location</link> {
+    // Gjs wrapper for gweather_location_find_nearest_city_full()
+}
+  </code></synopsis>
+  <p>Finds the nearest city to the passed latitude and
+longitude, among the descendants of <code>loc</code>.</p>  <p>Supports the use of own filter function to filter out locations.
+Geocoding should be done on the application side if needed.</p>  <p><code>loc</code> must be at most a <link xref="GWeather.LocationLevel"/>.adm2 location.
+This restriction may be lifted in a future version.</p>
+  <p>Since 3.12</p>
+<terms>
+<item>
+<title><code>lat</code></title>
+  <p>Latitude, in degrees</p>
+</item>
+<item>
+<title><code>lon</code></title>
+  <p>Longitude, in degrees</p>
+</item>
+<item>
+<title><code>func</code></title>
+  <p>returns true to continue check for
+                                      the location and false to filter the location out</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the city closest to (<code>lat</code>, <code>lon</code>), in the
+         region or administrative district of <code>loc</code> with validation of filter function.</p>
+</item>
+</terms>
+
+</page>

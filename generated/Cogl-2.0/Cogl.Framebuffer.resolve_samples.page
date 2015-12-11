@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="Cogl.Framebuffer.resolve_samples"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Framebuffer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_framebuffer_resolve_samples</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Framebuffer.prototype.resolve_samples</title>
+  <synopsis><code mime="text/x-gjs">
+function resolve_samples(): void {
+    // Gjs wrapper for cogl_framebuffer_resolve_samples()
+}
+  </code></synopsis>
+  <p>When point sample rendering (also known as multisample rendering)
+has been enabled via <link xref="Cogl.Framebuffer.set_samples_per_pixel"/>
+then you can optionally call this function (or
+<link xref="Cogl.Framebuffer.resolve_samples_region"/>) to explicitly resolve
+the point samples into values for the final color buffer.</p>  <p>Some GPUs will implicitly resolve the point samples during
+rendering and so this function is effectively a nop, but with other
+architectures it is desirable to defer the resolve step until the
+end of the frame.</p>  <p>Since Cogl will automatically ensure samples are resolved if the
+target color buffer is used as a source this API only needs to be
+used if explicit control is desired - perhaps because you want to
+ensure that the resolve is completed in advance to avoid later
+having to wait for the resolve to complete.</p>  <p>If you are performing incremental updates to a framebuffer you
+should consider using <link xref="Cogl.Framebuffer.resolve_samples_region"/>
+instead to avoid resolving redundant pixels.</p>
+  <p>Since 1.8</p>
+
+</page>

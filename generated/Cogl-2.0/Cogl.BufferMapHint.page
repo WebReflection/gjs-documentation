@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Cogl.BufferMapHint"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Cogl.BufferMapHint</title>
+  <p>Hints to Cogl about how you are planning to modify the data once it
+is mapped.</p>
+  <p>Since 1.4</p>
+<terms>
+<item>
+<title><code>BufferMapHint.</code></title>
+  <p>Tells Cogl that you plan to replace
+   all the buffer's contents. When this flag is used to map a
+   buffer, the entire contents of the buffer become undefined, even
+   if only a subregion of the buffer is mapped.</p>
+</item>
+<item>
+<title><code>BufferMapHint._RANGE</code></title>
+  <p>Tells Cogl that you plan to
+   replace all the contents of the mapped region. The contents of
+   the region specified are undefined after this flag is used to
+   map a buffer.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

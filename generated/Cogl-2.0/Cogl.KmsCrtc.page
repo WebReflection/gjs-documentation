@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="Cogl.KmsCrtc"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>Cogl.KmsCrtc</title>
+  <synopsis><code>
+const Cogl = imports.gi.Cogl;
+
+let kmsCrtc = new Cogl.KmsCrtc({
+    <link xref='Cogl.KmsCrtc-id'>id</link>: value
+    <link xref='Cogl.KmsCrtc-x'>x</link>: value
+    <link xref='Cogl.KmsCrtc-y'>y</link>: value
+    <link xref='Cogl.KmsCrtc-connectors'>connectors</link>: value
+    <link xref='Cogl.KmsCrtc-count'>count</link>: value
+});
+  </code></synopsis>
+
+
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

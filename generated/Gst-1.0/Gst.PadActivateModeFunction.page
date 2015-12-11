@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gst.PadActivateModeFunction"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Gst.PadActivateModeFunction</title>
+  <synopsis><code mime="text/x-gjs">
+function onPadActivateModeFunction(pad: <link xref="Gst.Pad">Gst.Pad</link>, parent: <link xref="Gst.Object">Gst.Object</link>, mode: <link xref="Gst.PadMode">Gst.PadMode</link>, active: Boolean): Boolean {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>pad</code></title>
+
+</item>
+<item>
+<title><code>parent</code></title>
+
+</item>
+<item>
+<title><code>mode</code></title>
+
+</item>
+<item>
+<title><code>active</code></title>
+
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

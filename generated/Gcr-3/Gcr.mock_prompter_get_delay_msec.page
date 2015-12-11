@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gcr.mock_prompter_get_delay_msec"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(guint)</api:type>
+      </api:returns>
+      <api:name>gcr_mock_prompter_get_delay_msec</api:name>
+    </api:function>
+  </info>
+  <title>Gcr.mock_prompter_get_delay_msec</title>
+  <synopsis><code mime="text/x-gjs">
+function mock_prompter_get_delay_msec(): Number(guint) {
+    // Gjs wrapper for gcr_mock_prompter_get_delay_msec()
+}
+  </code></synopsis>
+  <p>Get the delay in milliseconds before the mock prompter completes
+an expected prompt.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the delay</p>
+</item>
+</terms>
+
+</page>

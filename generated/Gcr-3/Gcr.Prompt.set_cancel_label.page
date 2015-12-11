@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gcr.Prompt.set_cancel_label"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Prompt" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gcr_prompt_set_cancel_label</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>cancel_label</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.Prompt.prototype.set_cancel_label</title>
+  <synopsis><code mime="text/x-gjs">
+function set_cancel_label(cancel_label: String): void {
+    // Gjs wrapper for gcr_prompt_set_cancel_label()
+}
+  </code></synopsis>
+  <p>Set the label for the continue button.</p>  <p>This is the button that results in a <link xref="Gcr.PromptReply"/>.cancel reply
+from the prompt.</p>
+
+<terms>
+<item>
+<title><code>cancel_label</code></title>
+  <p>the label</p>
+</item>
+</terms>
+
+</page>

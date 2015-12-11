@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Cogl.Output.get_mm_width"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Output" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gint)</api:type>
+      </api:returns>
+      <api:name>cogl_output_get_mm_width</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Output.prototype.get_mm_width</title>
+  <synopsis><code mime="text/x-gjs">
+function get_mm_width(): Number(gint) {
+    // Gjs wrapper for cogl_output_get_mm_width()
+}
+  </code></synopsis>
+  <p>Gets the physical width of the output. In some cases (such as
+as a projector), the value returned here might correspond to
+nominal resolution rather than the actual physical size of the
+output device.</p>
+  <p>Since 1.14</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the height of the output in millimeters. A value
+ of 0 indicates the width is unknown</p>
+</item>
+</terms>
+
+</page>

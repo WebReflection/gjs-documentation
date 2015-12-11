@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gck.Module.hash"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Module" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(guint)</api:type>
+      </api:returns>
+      <api:name>gck_module_hash</api:name>
+    </api:function>
+  </info>
+  <title>Gck.Module.prototype.hash</title>
+  <synopsis><code mime="text/x-gjs">
+function hash(): Number(guint) {
+    // Gjs wrapper for gck_module_hash()
+}
+  </code></synopsis>
+  <p>Create a hash value for the GckModule.</p>  <p>This function is intended for easily hashing a GckModule to add to
+a GHashTable or similar data structure.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>An integer that can be used as a hash value, or 0 if invalid.</p>
+</item>
+</terms>
+
+</page>

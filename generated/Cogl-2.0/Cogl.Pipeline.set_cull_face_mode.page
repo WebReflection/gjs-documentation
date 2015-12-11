@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.set_cull_face_mode"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_set_cull_face_mode</api:name>
+      <api:arg>
+        <api:type>Cogl.PipelineCullFaceMode</api:type>
+        <api:name>cull_face_mode</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.set_cull_face_mode</title>
+  <synopsis><code mime="text/x-gjs">
+function set_cull_face_mode(cull_face_mode: <link xref="Cogl.PipelineCullFaceMode">Cogl.PipelineCullFaceMode</link>): void {
+    // Gjs wrapper for cogl_pipeline_set_cull_face_mode()
+}
+  </code></synopsis>
+  <p>Sets which faces will be culled when drawing. Face culling can be
+used to increase efficiency by avoiding drawing faces that would
+get overridden. For example, if a model has gaps so that it is
+impossible to see the inside then faces which are facing away from
+the screen will never be seen so there is no point in drawing
+them. This can be acheived by setting the cull face mode to
+<link xref="Cogl.PipelineCullFaceMode"/>.back.</p>  <p>Face culling relies on the primitives being drawn with a specific
+order to represent which faces are facing inside and outside the
+model. This order can be specified by calling
+<link xref="Cogl.Pipeline.set_front_face_winding"/>.</p>  <p>Status: Unstable</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>cull_face_mode</code></title>
+  <p>The new mode to set</p>
+</item>
+</terms>
+
+</page>

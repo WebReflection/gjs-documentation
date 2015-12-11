@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="GWeather.Conditions-phenomenon"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Conditions" group="field" type="guide"/>
+    <title type="link" role="topic">phenomenon</title>
+  </info>
+  <title>GWeather.Conditions.phenomenon</title>
+  <synopsis><code mime="text/x-gjs">
+Conditions.phenomenon: <link xref="GWeather.ConditionPhenomenon">GWeather.ConditionPhenomenon</link> (Read / Write)
+  </code></synopsis>
+  <p>the main weather phenomenon</p>
+
+</page>

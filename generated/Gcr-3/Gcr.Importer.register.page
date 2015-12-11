@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="Gcr.Importer.register"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Importer" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gcr_importer_register</api:name>
+      <api:arg>
+        <api:type>GObject.Type</api:type>
+        <api:name>importer_type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gck.Attributes</api:type>
+        <api:name>attrs</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.Importer.register</title>
+  <synopsis><code mime="text/x-gjs">
+function register(importer_type: GObject.Type, attrs: <link href="../Gck-1/Gck.Attributes.html">Gck.Attributes</link>): void {
+    // Gjs wrapper for gcr_importer_register()
+}
+  </code></synopsis>
+  <p>Register an importer to handle parsed items that match the given attributes.</p>  <p>If <code>attrs</code> are a floating reference, then it is consumed.</p>
+
+<terms>
+<item>
+<title><code>importer_type</code></title>
+  <p>the GType of the importer being registered</p>
+</item>
+<item>
+<title><code>attrs</code></title>
+  <p>the attributes that this importer is compatible with</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<page id="Cogl.TextureComponents"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Cogl.TextureComponents</title>
+  <p>See <link xref="Cogl.Texture.set_components"/>.</p>
+  <p>Since 1.18</p>
+<terms>
+<item>
+<title><code>TextureComponents.A</code></title>
+  <p>Only the alpha component</p>
+</item>
+<item>
+<title><code>TextureComponents.RG</code></title>
+  <p>Red and green components. Note that
+  this can only be used if the <link xref="Cogl.FeatureID"/>.ogl_feature_id_texture_rg feature
+  is advertised.</p>
+</item>
+<item>
+<title><code>TextureComponents.RGB</code></title>
+  <p>Red, green and blue components</p>
+</item>
+<item>
+<title><code>TextureComponents.RGBA</code></title>
+  <p>Red, green, blue and alpha components</p>
+</item>
+<item>
+<title><code>TextureComponents.DEPTH</code></title>
+  <p>Only a depth component</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

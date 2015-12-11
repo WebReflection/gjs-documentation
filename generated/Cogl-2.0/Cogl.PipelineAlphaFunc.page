@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<page id="Cogl.PipelineAlphaFunc"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Cogl.PipelineAlphaFunc</title>
+  <p>Alpha testing happens before blending primitives with the framebuffer and
+gives an opportunity to discard fragments based on a comparison with the
+incoming alpha value and a reference alpha value. The <link xref="Cogl.PipelineAlphaFunc"/>
+determines how the comparison is done.</p>
+
+<terms>
+<item>
+<title><code>PipelineAlphaFunc.NEVER</code></title>
+  <p>Never let the fragment through.</p>
+</item>
+<item>
+<title><code>PipelineAlphaFunc.LESS</code></title>
+  <p>Let the fragment through if the incoming
+  alpha value is less than the reference alpha value</p>
+</item>
+<item>
+<title><code>PipelineAlphaFunc.EQUAL</code></title>
+  <p>Let the fragment through if the incoming
+  alpha value equals the reference alpha value</p>
+</item>
+<item>
+<title><code>PipelineAlphaFunc.LEQUAL</code></title>
+  <p>Let the fragment through if the incoming
+  alpha value is less than or equal to the reference alpha value</p>
+</item>
+<item>
+<title><code>PipelineAlphaFunc.GREATER</code></title>
+  <p>Let the fragment through if the incoming
+  alpha value is greater than the reference alpha value</p>
+</item>
+<item>
+<title><code>PipelineAlphaFunc.NOTEQUAL</code></title>
+  <p>Let the fragment through if the incoming
+  alpha value does not equal the reference alpha value</p>
+</item>
+<item>
+<title><code>PipelineAlphaFunc.GEQUAL</code></title>
+  <p>Let the fragment through if the incoming
+  alpha value is greater than or equal to the reference alpha value.</p>
+</item>
+<item>
+<title><code>PipelineAlphaFunc.ALWAYS</code></title>
+  <p>Always let the fragment through.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

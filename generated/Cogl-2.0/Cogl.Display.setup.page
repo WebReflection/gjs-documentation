@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="Cogl.Display.setup"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Display" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_display_setup</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Display.prototype.setup</title>
+  <synopsis><code mime="text/x-gjs">
+function setup(): <link xref="Cogl.Bool">Cogl.Bool</link> {
+    // Gjs wrapper for cogl_display_setup()
+}
+  </code></synopsis>
+  <p>Explicitly sets up the given <code>display</code> object. Use of this api is
+optional since Cogl will internally setup the display if not done
+explicitly.</p>  <p>When a display is first allocated via <link xref="Cogl.Display.new"/> it is in a
+mutable configuration mode. This allows us to extend the apis
+available for configuring a display without requiring huge numbers
+of constructor arguments.</p>  <p>Its possible to request a configuration that might not be
+supportable on the current system and so this api provides a means
+to apply the configuration explicitly but if it fails then an
+exception will be returned so you can handle the error gracefully
+and perhaps fall back to an alternative configuration.</p>  <p>If you instead rely on Cogl implicitly calling <link xref="Cogl.Display.setup"/>
+for you then if there is an error with the configuration you won't
+get an opportunity to handle that and the application may abort
+with a message.  For simple applications that don't have any
+fallback options this behaviour may be fine.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>Returns <code>true</code> if there was no error, else it returns
+              <code>false</code> and returns an exception via @error.</p>
+</item>
+</terms>
+
+</page>

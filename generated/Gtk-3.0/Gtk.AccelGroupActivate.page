@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gtk.AccelGroupActivate"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Gtk.AccelGroupActivate</title>
+  <synopsis><code mime="text/x-gjs">
+function onAccelGroupActivate(accel_group: <link xref="Gtk.AccelGroup">Gtk.AccelGroup</link>, acceleratable: <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link>, keyval: Number(guint), modifier: <link href="../Gdk-3.0/Gdk.ModifierType.html">Gdk.ModifierType</link>): Boolean {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>accel_group</code></title>
+
+</item>
+<item>
+<title><code>acceleratable</code></title>
+
+</item>
+<item>
+<title><code>keyval</code></title>
+
+</item>
+<item>
+<title><code>modifier</code></title>
+
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Cogl.Snippet.set_replace"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Snippet" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_snippet_set_replace</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>replace</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Snippet.prototype.set_replace</title>
+  <synopsis><code mime="text/x-gjs">
+function set_replace(replace: String): void {
+    // Gjs wrapper for cogl_snippet_set_replace()
+}
+  </code></synopsis>
+  <p>Sets a source string that will be used instead of any generated
+source code or any previous snippets for this hook point. Please
+see the documentation of each hook point in <link xref="Cogl.Pipeline"/> for a
+description of how this string should be used.</p>  <p>This function should only be called before the snippet is attached
+to its first pipeline. After that the snippet should be considered
+immutable.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>replace</code></title>
+  <p>The new source string for the replace section of this snippet.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Cogl.Primitive.foreach_attribute"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Primitive" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_primitive_foreach_attribute</api:name>
+      <api:arg>
+        <api:type>Cogl.PrimitiveAttributeCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Primitive.prototype.foreach_attribute</title>
+  <synopsis><code mime="text/x-gjs">
+function foreach_attribute(callback: <link xref="Cogl.PrimitiveAttributeCallback">Cogl.PrimitiveAttributeCallback</link>): void {
+    // Gjs wrapper for cogl_primitive_foreach_attribute()
+}
+  </code></synopsis>
+  <p>Iterates all the attributes of the given <link xref="Cogl.Primitive"/>.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>callback</code></title>
+  <p>A <link xref="Cogl.PrimitiveAttributeCallback"/> to be
+           called for each attribute</p>
+</item>
+</terms>
+
+</page>

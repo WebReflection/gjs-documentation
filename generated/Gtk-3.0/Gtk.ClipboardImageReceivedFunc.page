@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Gtk.ClipboardImageReceivedFunc"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Gtk.ClipboardImageReceivedFunc</title>
+  <synopsis><code mime="text/x-gjs">
+function onClipboardImageReceivedFunc(clipboard: <link xref="Gtk.Clipboard">Gtk.Clipboard</link>, pixbuf: <link href="../GdkPixbuf-2.0/GdkPixbuf.Pixbuf.html">GdkPixbuf.Pixbuf</link>): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>clipboard</code></title>
+
+</item>
+<item>
+<title><code>pixbuf</code></title>
+
+</item>
+</terms>
+
+</page>

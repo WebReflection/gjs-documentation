@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="Cogl.wayland_renderer_set_foreign_display"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_wayland_renderer_set_foreign_display</api:name>
+      <api:arg>
+        <api:type>Cogl.Renderer</api:type>
+        <api:name>renderer</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>void</api:type>
+        <api:name>display</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.wayland_renderer_set_foreign_display</title>
+  <synopsis><code mime="text/x-gjs">
+function wayland_renderer_set_foreign_display(renderer: <link xref="Cogl.Renderer">Cogl.Renderer</link>, display: void): void {
+    // Gjs wrapper for cogl_wayland_renderer_set_foreign_display()
+}
+  </code></synopsis>
+  <p>Allows you to explicitly control what Wayland display you want Cogl
+to work with instead of leaving Cogl to automatically connect to a
+wayland compositor.</p>
+  <p>Since 1.8</p>
+<terms>
+<item>
+<title><code>renderer</code></title>
+  <p>A <link xref="Cogl.Renderer"/></p>
+</item>
+<item>
+<title><code>display</code></title>
+  <p>A Wayland display</p>
+</item>
+</terms>
+
+</page>

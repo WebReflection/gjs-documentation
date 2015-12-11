@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<page id="Cogl.Framebuffer.read_pixels"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Framebuffer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_framebuffer_read_pixels</api:name>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>y</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>width</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>height</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.PixelFormat</api:type>
+        <api:name>format</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint8)</api:type>
+        <api:name>pixels</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Framebuffer.prototype.read_pixels</title>
+  <synopsis><code mime="text/x-gjs">
+function read_pixels(x: Number(gint), y: Number(gint), width: Number(gint), height: Number(gint), format: <link xref="Cogl.PixelFormat">Cogl.PixelFormat</link>, pixels: Number(guint8)): <link xref="Cogl.Bool">Cogl.Bool</link> {
+    // Gjs wrapper for cogl_framebuffer_read_pixels()
+}
+  </code></synopsis>
+  <p>This is a convenience wrapper around
+<link xref="Cogl.Framebuffer.read_pixels_into_bitmap"/> which allocates a
+temporary <link xref="Cogl.Bitmap"/> to read pixel data directly into the given
+buffer. The rowstride of the buffer is assumed to be the width of
+the region times the bytes per pixel of the format. The source for
+the data is always taken from the color buffer. If you want to use
+any other rowstride or source, please use the
+<link xref="Cogl.Framebuffer.read_pixels_into_bitmap"/> function directly.</p>  <p>The implementation of the function looks like this:</p>  <p>|[
+bitmap = cogl_bitmap_new_for_data (context,
+                                   width, height,
+                                   format,
+                                   /&lt;!-- --&gt;* rowstride *&lt;!-- --&gt;/
+                                   bpp * width,
+                                   pixels);
+cogl_framebuffer_read_pixels_into_bitmap (framebuffer,
+                                          x, y,
+                                          COGL_READ_PIXELS_COLOR_BUFFER,
+                                          bitmap);
+cogl_object_unref (bitmap);
+]|</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>x</code></title>
+  <p>The x position to read from</p>
+</item>
+<item>
+<title><code>y</code></title>
+  <p>The y position to read from</p>
+</item>
+<item>
+<title><code>width</code></title>
+  <p>The width of the region of rectangles to read</p>
+</item>
+<item>
+<title><code>height</code></title>
+  <p>The height of the region of rectangles to read</p>
+</item>
+<item>
+<title><code>format</code></title>
+  <p>The pixel format to store the data in</p>
+</item>
+<item>
+<title><code>pixels</code></title>
+  <p>The address of the buffer to store the data in</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if the read succeeded or <code>false</code> otherwise.</p>
+</item>
+</terms>
+
+</page>

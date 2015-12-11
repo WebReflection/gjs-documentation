@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Gcr.ImportInteraction-supplement_prep"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.ImportInteraction" group="vfunc" type="guide"/>
+  </info>
+  <title>Gcr.ImportInteraction::supplement_prep</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_supplement_prep(builder: <link href="../Gck-1/Gck.Builder.html">Gck.Builder</link>): void {
+}
+  </code></synopsis>
+  <p>Prepare for supplementing the given attributes before import. This means
+prompting the user for things like labels and the like. The attributes
+will contain attributes for values that the importer needs, either empty
+or prefilled with suggested values.</p>  <p>This method does not prompt the user, but rather just prepares the
+interaction that these are the attributes that are needed.</p>
+
+<terms>
+<item>
+<title><code>builder</code></title>
+  <p>attributes to supplement</p>
+</item>
+</terms>
+
+</page>

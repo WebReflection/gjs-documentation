@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<page id="GdkX11.x11_register_standard_event_type"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gdk_x11_register_standard_event_type</api:name>
+      <api:arg>
+        <api:type>GdkX11.X11Display</api:type>
+        <api:name>display</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>event_base</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>n_events</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GdkX11.x11_register_standard_event_type</title>
+  <synopsis><code mime="text/x-gjs">
+function x11_register_standard_event_type(display: <link xref="GdkX11.X11Display">GdkX11.X11Display</link>, event_base: Number(gint), n_events: Number(gint)): void {
+    // Gjs wrapper for gdk_x11_register_standard_event_type()
+}
+  </code></synopsis>
+  <p>Registers interest in receiving extension events with type codes
+between <code>event_base</code> and `event_base + n_events - 1`.
+The registered events must have the window field in the same place
+as core X events (this is not the case for e.g. XKB extension events).</p>  <p>If an event type is registered, events of this type will go through
+global and window-specific filters (see gdk_window_add_filter()).
+Unregistered events will only go through global filters.
+GDK may register the events of some X extensions on its own.</p>  <p>This function should only be needed in unusual circumstances, e.g.
+when filtering XInput extension events on the root window.</p>
+  <p>Since 2.4</p>
+<terms>
+<item>
+<title><code>display</code></title>
+  <p>a <link href="../Gdk-3.0/Gdk.Display.html">Gdk.Display</link></p>
+</item>
+<item>
+<title><code>event_base</code></title>
+  <p>first event type code to register</p>
+</item>
+<item>
+<title><code>n_events</code></title>
+  <p>number of event type codes to register</p>
+</item>
+</terms>
+
+</page>

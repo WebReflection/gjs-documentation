@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gtk.TreeSelectionFunc"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Gtk.TreeSelectionFunc</title>
+  <synopsis><code mime="text/x-gjs">
+function onTreeSelectionFunc(selection: <link xref="Gtk.TreeSelection">Gtk.TreeSelection</link>, model: <link xref="Gtk.TreeModel">Gtk.TreeModel</link>, path: <link xref="Gtk.TreePath">Gtk.TreePath</link>, path_currently_selected: Boolean): Boolean {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>selection</code></title>
+
+</item>
+<item>
+<title><code>model</code></title>
+
+</item>
+<item>
+<title><code>path</code></title>
+
+</item>
+<item>
+<title><code>path_currently_selected</code></title>
+
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

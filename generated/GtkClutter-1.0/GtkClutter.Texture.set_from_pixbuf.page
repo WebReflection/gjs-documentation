@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="GtkClutter.Texture.set_from_pixbuf"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GtkClutter.Texture" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gtk_clutter_texture_set_from_pixbuf</api:name>
+      <api:arg>
+        <api:type>GdkPixbuf.Pixbuf</api:type>
+        <api:name>pixbuf</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GtkClutter.Texture.prototype.set_from_pixbuf</title>
+  <synopsis><code mime="text/x-gjs">
+function set_from_pixbuf(pixbuf: <link href="../GdkPixbuf-2.0/GdkPixbuf.Pixbuf.html">GdkPixbuf.Pixbuf</link>): Boolean {
+    // Gjs wrapper for gtk_clutter_texture_set_from_pixbuf()
+}
+  </code></synopsis>
+  <p>Sets the contents of <code>texture</code> with a copy of <code>pixbuf</code>.</p>
+
+<terms>
+<item>
+<title><code>pixbuf</code></title>
+  <p>a <link href="../GdkPixbuf-2.0/GdkPixbuf.Pixbuf.html">GdkPixbuf.Pixbuf</link></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> on success, <code>false</code> on failure.</p>
+</item>
+</terms>
+
+</page>

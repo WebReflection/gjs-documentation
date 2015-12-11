@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Gcr.Collection-added"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Collection" group="signal" type="guide"/>
+    <title type="link" role="topic">added</title>
+  </info>
+  <title>Gcr.Collection::added</title>
+  <synopsis><code mime="text/x-gjs">
+connect('added', function (collection, object: <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link>, ): void);
+  </code></synopsis>
+  <p>This signal is emitted when an object is added to the collection.</p>
+
+<terms>
+<item>
+<title><code>collection</code></title>
+<p>instance of <link xref="Gcr.Collection"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>object</code></title>
+  <p>object that was added</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Cogl.Framebuffer.get_height"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Framebuffer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gint)</api:type>
+      </api:returns>
+      <api:name>cogl_framebuffer_get_height</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Framebuffer.prototype.get_height</title>
+  <synopsis><code mime="text/x-gjs">
+function get_height(): Number(gint) {
+    // Gjs wrapper for cogl_framebuffer_get_height()
+}
+  </code></synopsis>
+  <p>Queries the current height of the given <code>framebuffer</code>.</p>
+  <p>Since 1.8</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>The height of <code>framebuffer</code>.</p>
+</item>
+</terms>
+
+</page>

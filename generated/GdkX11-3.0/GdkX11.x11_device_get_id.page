@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="GdkX11.x11_device_get_id"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gint)</api:type>
+      </api:returns>
+      <api:name>gdk_x11_device_get_id</api:name>
+      <api:arg>
+        <api:type>GdkX11.X11DeviceCore</api:type>
+        <api:name>device</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GdkX11.x11_device_get_id</title>
+  <synopsis><code mime="text/x-gjs">
+function x11_device_get_id(device: <link xref="GdkX11.X11DeviceCore">GdkX11.X11DeviceCore</link>): Number(gint) {
+    // Gjs wrapper for gdk_x11_device_get_id()
+}
+  </code></synopsis>
+  <p>Returns the device ID as seen by XInput2.</p>  <p>&gt; If gdk_disable_multidevice() has been called, this function
+&gt; will respectively return 2/3 for the core pointer and keyboard,
+&gt; (matching the IDs for the Virtual Core Pointer and Keyboard in
+&gt; XInput 2), but calling this function on any slave devices (i.e.
+&gt; those managed via XInput 1.x), will return 0.</p>
+  <p>Since 3.2</p>
+<terms>
+<item>
+<title><code>device</code></title>
+  <p>a <link href="../Gdk-3.0/Gdk.Device.html">Gdk.Device</link></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the XInput2 device ID.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="GdkX11.x11_atom_to_xatom"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>xlib.Atom</api:type>
+      </api:returns>
+      <api:name>gdk_x11_atom_to_xatom</api:name>
+      <api:arg>
+        <api:type>Gdk.Atom</api:type>
+        <api:name>atom</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GdkX11.x11_atom_to_xatom</title>
+  <synopsis><code mime="text/x-gjs">
+function x11_atom_to_xatom(atom: <link href="../Gdk-3.0/Gdk.Atom.html">Gdk.Atom</link>): <link href="../xlib-2.0/xlib.Atom.html">xlib.Atom</link> {
+    // Gjs wrapper for gdk_x11_atom_to_xatom()
+}
+  </code></synopsis>
+  <p>Converts from a <link href="../Gdk-3.0/Gdk.Atom.html">Gdk.Atom</link> to the X atom for the default GDK display
+with the same string value.</p>
+
+<terms>
+<item>
+<title><code>atom</code></title>
+  <p>A <link href="../Gdk-3.0/Gdk.Atom.html">Gdk.Atom</link></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the X atom corresponding to <code>atom</code>.</p>
+</item>
+</terms>
+
+</page>

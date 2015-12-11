@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gcr.CertificateRequest-private-key"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.CertificateRequest" group="property" type="guide"/>
+    <title type="link" role="topic">private-key</title>
+  </info>
+  <title>Gcr.CertificateRequest.private_key</title>
+  <synopsis><code mime="text/x-gjs">
+CertificateRequest.private_key: <link href="../Gck-1/Gck.Object.html">Gck.Object</link> (Read / Write / Construct Only)
+  </code></synopsis>
+  <p>The private key that this certificate request is for.</p>
+
+</page>

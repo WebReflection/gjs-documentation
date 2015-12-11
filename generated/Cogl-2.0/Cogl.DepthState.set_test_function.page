@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Cogl.DepthState.set_test_function"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.DepthState" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_depth_state_set_test_function</api:name>
+      <api:arg>
+        <api:type>Cogl.DepthTestFunction</api:type>
+        <api:name>function</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.DepthState.prototype.set_test_function</title>
+  <synopsis><code mime="text/x-gjs">
+function set_test_function(function: <link xref="Cogl.DepthTestFunction">Cogl.DepthTestFunction</link>): void {
+    // Gjs wrapper for cogl_depth_state_set_test_function()
+}
+  </code></synopsis>
+  <p>Sets the <link xref="Cogl.DepthTestFunction"/> used to compare the depth value of
+an incoming fragment against the corresponding value in the current
+depth buffer.</p>  <p>By default the depth test function is <link xref="Cogl.DepthTestFunction"/>.less</p>  <p>NB: this won't directly affect the state of the GPU. You have
+to then set the state on a <link xref="Cogl.Pipeline"/> using
+<link xref="Cogl.Pipeline.set_depth_state"/></p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>function</code></title>
+  <p>The <link xref="Cogl.DepthTestFunction"/> to set</p>
+</item>
+</terms>
+
+</page>

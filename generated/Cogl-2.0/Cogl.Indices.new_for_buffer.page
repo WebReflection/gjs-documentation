@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<page id="Cogl.Indices.new_for_buffer"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Indices" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Indices</api:type>
+      </api:returns>
+      <api:name>cogl_indices_new_for_buffer</api:name>
+      <api:arg>
+        <api:type>Cogl.IndicesType</api:type>
+        <api:name>type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.IndexBuffer</api:type>
+        <api:name>buffer</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gsize)</api:type>
+        <api:name>offset</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Indices.new_for_buffer</title>
+  <synopsis><code mime="text/x-gjs">
+function new_for_buffer(type: <link xref="Cogl.IndicesType">Cogl.IndicesType</link>, buffer: <link xref="Cogl.IndexBuffer">Cogl.IndexBuffer</link>, offset: Number(gsize)): <link xref="Cogl.Indices">Cogl.Indices</link> {
+    // Gjs wrapper for cogl_indices_new_for_buffer()
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>type</code></title>
+
+</item>
+<item>
+<title><code>buffer</code></title>
+
+</item>
+<item>
+<title><code>offset</code></title>
+
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

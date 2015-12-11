@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="GWeather.Conditions-significant"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Conditions" group="field" type="guide"/>
+    <title type="link" role="topic">significant</title>
+  </info>
+  <title>GWeather.Conditions.significant</title>
+  <synopsis><code mime="text/x-gjs">
+Conditions.significant: Boolean (Read / Write)
+  </code></synopsis>
+  <p><code>true</code> if the struct contains usable data, <code>false</code> otherwise</p>
+
+</page>

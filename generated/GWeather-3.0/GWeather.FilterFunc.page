@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="GWeather.FilterFunc"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>GWeather.FilterFunc</title>
+  <synopsis><code mime="text/x-gjs">
+function onFilterFunc(location: <link xref="GWeather.Location">GWeather.Location</link>): Boolean {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>location</code></title>
+
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="GWeather.Info.get_value_conditions"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Info" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gweather_info_get_value_conditions</api:name>
+    </api:function>
+  </info>
+  <title>GWeather.Info.prototype.get_value_conditions</title>
+  <synopsis><code mime="text/x-gjs">
+function get_value_conditions(): [ok: Boolean, phenomenon: <link xref="GWeather.ConditionPhenomenon">GWeather.ConditionPhenomenon</link>, qualifier: <link xref="GWeather.ConditionQualifier">GWeather.ConditionQualifier</link>] {
+    // Gjs wrapper for gweather_info_get_value_conditions()
+}
+  </code></synopsis>
+  <p>Fills out <code>phenomenon</code> and <code>qualifier</code> with current weather conditions.</p>
+
+<terms>
+<item>
+<title><code>ok</code></title>
+  <p>TRUE is out arguments are valid, FALSE otherwise.</p>
+</item>
+<item>
+<title><code>phenomenon</code></title>
+  <p>a location for a <link xref="GWeather.ConditionPhenomenon"/>.</p>
+</item>
+<item>
+<title><code>qualifier</code></title>
+  <p>a location for a <link xref="GWeather.ConditionQualifier"/>.</p>
+</item>
+</terms>
+
+</page>

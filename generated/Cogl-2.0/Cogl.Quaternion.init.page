@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<page id="Cogl.Quaternion.init"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Quaternion" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_quaternion_init</api:name>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>angle</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>y</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>z</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Quaternion.prototype.init</title>
+  <synopsis><code mime="text/x-gjs">
+function init(angle: Number(gfloat), x: Number(gfloat), y: Number(gfloat), z: Number(gfloat)): void {
+    // Gjs wrapper for cogl_quaternion_init()
+}
+  </code></synopsis>
+  <p>Initializes a quaternion that rotates <code>angle</code> degrees around the
+axis vector (<code>x</code>, <code>y</code>, <code>z</code>). The axis vector does not need to be
+normalized.</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>angle</code></title>
+  <p>The angle you want to rotate around the given axis</p>
+</item>
+<item>
+<title><code>x</code></title>
+  <p>The x component of your axis vector about which you want to
+rotate.</p>
+</item>
+<item>
+<title><code>y</code></title>
+  <p>The y component of your axis vector about which you want to
+rotate.</p>
+</item>
+<item>
+<title><code>z</code></title>
+  <p>The z component of your axis vector about which you want to
+rotate.</p>
+</item>
+</terms>
+
+</page>

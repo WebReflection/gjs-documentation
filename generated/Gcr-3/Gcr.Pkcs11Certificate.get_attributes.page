@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gcr.Pkcs11Certificate.get_attributes"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Pkcs11Certificate" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.Attributes</api:type>
+      </api:returns>
+      <api:name>gcr_pkcs11_certificate_get_attributes</api:name>
+    </api:function>
+  </info>
+  <title>Gcr.Pkcs11Certificate.prototype.get_attributes</title>
+  <synopsis><code mime="text/x-gjs">
+function get_attributes(): <link href="../Gck-1/Gck.Attributes.html">Gck.Attributes</link> {
+    // Gjs wrapper for gcr_pkcs11_certificate_get_attributes()
+}
+  </code></synopsis>
+  <p>Access the automatically loaded attributes for this certificate.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the certificate attributes</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.get_color_mask"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.ColorMask</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_get_color_mask</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.get_color_mask</title>
+  <synopsis><code mime="text/x-gjs">
+function get_color_mask(): <link xref="Cogl.ColorMask">Cogl.ColorMask</link> {
+    // Gjs wrapper for cogl_pipeline_get_color_mask()
+}
+  </code></synopsis>
+  <p>Gets the current <link xref="Cogl.ColorMask"/> of which channels would be written to the
+current framebuffer. Each bit set in the mask means that the
+corresponding color would be written.</p>
+  <p>Since 1.8</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>A <link xref="Cogl.ColorMask"/></p>
+</item>
+</terms>
+
+</page>

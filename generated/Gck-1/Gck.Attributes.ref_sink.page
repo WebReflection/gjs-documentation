@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="Gck.Attributes.ref_sink"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Attributes" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.Attributes</api:type>
+      </api:returns>
+      <api:name>gck_attributes_ref_sink</api:name>
+    </api:function>
+  </info>
+  <title>Gck.Attributes.prototype.ref_sink</title>
+  <synopsis><code mime="text/x-gjs">
+function ref_sink(): <link xref="Gck.Attributes">Gck.Attributes</link> {
+    // Gjs wrapper for gck_attributes_ref_sink()
+}
+  </code></synopsis>
+  <p><link xref="Gck.Attributes"/> uses a floating reference count system. <link xref="Gck.Builder.end"/>
+and <link xref="Gck.Attributes.new_empty"/> both return floating references.</p>  <p>Calling <link xref="Gck.Attributes.ref_sink"/> on a <link xref="Gck.Attributes"/> with a floating
+reference will convert the floating reference into a full reference.
+Calling <link xref="Gck.Attributes.ref_sink"/> on a non-floating <link xref="Gck.Attributes"/> results
+in an additional normal reference being added.</p>  <p>In other words, if the <code>attrs</code> is floating, then this call "assumes
+ownership" of the floating reference, converting it to a normal
+reference.  If the <code>attrs</code> is not floating, then this call adds a
+new normal reference increasing the reference count by one.</p>  <p>All Gck library functions that assume ownership of floating references
+are documented as such. Essentially any Gck function that performs
+an operation using a <link xref="Gck.Attributes"/> argument rather than operating on the
+atributes themselves, will accept a floating reference.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the referenced attributes</p>
+</item>
+</terms>
+
+</page>

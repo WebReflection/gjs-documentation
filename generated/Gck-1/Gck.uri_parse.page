@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<page id="Gck.uri_parse"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.UriData</api:type>
+      </api:returns>
+      <api:name>gck_uri_parse</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>string</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gck.UriFlags</api:type>
+        <api:name>flags</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.uri_parse</title>
+  <synopsis><code mime="text/x-gjs">
+function uri_parse(string: String, flags: <link xref="Gck.UriFlags">Gck.UriFlags</link>): <link xref="Gck.UriData">Gck.UriData</link> {
+    // Gjs wrapper for gck_uri_parse()
+}
+  </code></synopsis>
+  <p>Parse a PKCS\#11 URI for use in a given context.</p>  <p>The result will contain the fields that are relevant for
+the given context. See <link xref="Gck.UriData"/>  for more info.
+Other fields will be set to <code>null</code>.</p>
+
+<terms>
+<item>
+<title><code>string</code></title>
+  <p>the URI to parse.</p>
+</item>
+<item>
+<title><code>flags</code></title>
+  <p>the context in which the URI will be used.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a newly allocated <link xref="Gck.UriData"/>; which should be
+         freed with <link xref="Gck.UriData.free"/></p>
+</item>
+</terms>
+
+</page>

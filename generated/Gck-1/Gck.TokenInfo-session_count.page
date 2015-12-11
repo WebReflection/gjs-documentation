@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gck.TokenInfo-session_count"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.TokenInfo" group="field" type="guide"/>
+    <title type="link" role="topic">session_count</title>
+  </info>
+  <title>Gck.TokenInfo.session_count</title>
+  <synopsis><code mime="text/x-gjs">
+TokenInfo.session_count: Number(glong) (Read / Write)
+  </code></synopsis>
+  <p>The number of sessions open on this token.</p>
+
+</page>

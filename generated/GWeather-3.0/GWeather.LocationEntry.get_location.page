@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="GWeather.LocationEntry.get_location"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.LocationEntry" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GWeather.Location</api:type>
+      </api:returns>
+      <api:name>gweather_location_entry_get_location</api:name>
+    </api:function>
+  </info>
+  <title>GWeather.LocationEntry.prototype.get_location</title>
+  <synopsis><code mime="text/x-gjs">
+function get_location(): <link xref="GWeather.Location">GWeather.Location</link> {
+    // Gjs wrapper for gweather_location_entry_get_location()
+}
+  </code></synopsis>
+  <p>Gets the location that was set by a previous call to
+<link xref="GWeather.LocationEntry.set_location"/> or was selected by the user.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the selected location
+(which you must unref when you are done with it), or <code>null</code> if no
+location is selected.</p>
+</item>
+</terms>
+
+</page>

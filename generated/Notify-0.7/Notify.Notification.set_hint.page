@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="Notify.Notification.set_hint"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Notify.Notification" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>notify_notification_set_hint</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>key</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.Variant</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Notify.Notification.prototype.set_hint</title>
+  <synopsis><code mime="text/x-gjs">
+function set_hint(key: String, value: <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link>): void {
+    // Gjs wrapper for notify_notification_set_hint()
+}
+  </code></synopsis>
+  <p>Sets a hint for <code>key</code> with value <code>value</code>. If <code>value</code> is <code>null</code>,
+a previously set hint for <code>key</code> is unset.</p>  <p>If <code>value</code> is floating, it is consumed.</p>
+  <p>Since 0.6</p>
+<terms>
+<item>
+<title><code>key</code></title>
+  <p>the hint key</p>
+</item>
+<item>
+<title><code>value</code></title>
+  <p>the hint value, or <code>null</code> to unset the hint</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gst.ValueDeserializeFunc"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Gst.ValueDeserializeFunc</title>
+  <synopsis><code mime="text/x-gjs">
+function onValueDeserializeFunc(dest: Any, s: String): Boolean {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>dest</code></title>
+
+</item>
+<item>
+<title><code>s</code></title>
+
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

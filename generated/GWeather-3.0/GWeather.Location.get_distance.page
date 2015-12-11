@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="GWeather.Location.get_distance"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Location" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gdouble)</api:type>
+      </api:returns>
+      <api:name>gweather_location_get_distance</api:name>
+      <api:arg>
+        <api:type>GWeather.Location</api:type>
+        <api:name>loc2</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GWeather.Location.prototype.get_distance</title>
+  <synopsis><code mime="text/x-gjs">
+function get_distance(loc2: <link xref="GWeather.Location">GWeather.Location</link>): Number(gdouble) {
+    // Gjs wrapper for gweather_location_get_distance()
+}
+  </code></synopsis>
+  <p>Determines the distance in kilometers between <code>loc</code> and <code>loc2</code>.</p>
+
+<terms>
+<item>
+<title><code>loc2</code></title>
+  <p>a second <link xref="GWeather.Location"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the distance between <code>loc</code> and <code>loc2</code>.</p>
+</item>
+</terms>
+
+</page>

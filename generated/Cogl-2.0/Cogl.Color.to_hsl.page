@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Cogl.Color.to_hsl"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Color" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_color_to_hsl</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Color.prototype.to_hsl</title>
+  <synopsis><code mime="text/x-gjs">
+function to_hsl(): [hue: Number(gfloat), saturation: Number(gfloat), luminance: Number(gfloat)] {
+    // Gjs wrapper for cogl_color_to_hsl()
+}
+  </code></synopsis>
+  <p>Converts <code>color</code> to the HLS format.</p>  <p>The <code>hue</code> value is in the 0 .. 360 range. The <code>luminance</code> and
+<code>saturation</code> values are in the 0 .. 1 range.</p>
+  <p>Since 1.16</p>
+<terms>
+<item>
+<title><code>hue</code></title>
+  <p>return location for the hue value or <code>null</code></p>
+</item>
+<item>
+<title><code>saturation</code></title>
+  <p>return location for the saturation value or <code>null</code></p>
+</item>
+<item>
+<title><code>luminance</code></title>
+  <p>return location for the luminance value or <code>null</code></p>
+</item>
+</terms>
+
+</page>

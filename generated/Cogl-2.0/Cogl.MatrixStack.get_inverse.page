@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="Cogl.MatrixStack.get_inverse"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.MatrixStack" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_matrix_stack_get_inverse</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.MatrixStack.prototype.get_inverse</title>
+  <synopsis><code mime="text/x-gjs">
+function get_inverse(): [return_value: <link xref="Cogl.Bool">Cogl.Bool</link>, inverse: <link xref="Cogl.Matrix">Cogl.Matrix</link>] {
+    // Gjs wrapper for cogl_matrix_stack_get_inverse()
+}
+  </code></synopsis>
+  <p>Gets the inverse transform of the current matrix and uses it to
+initialize a new <link xref="Cogl.Matrix"/>.</p>
+
+<terms>
+<item>
+<title><code>return_value</code></title>
+  <p><code>true</code> if the inverse was successfully calculated or <code>false</code>
+  for degenerate transformations that can't be inverted (in this case the
+  <code>inverse</code> matrix will simply be initialized with the identity matrix)</p>
+</item>
+<item>
+<title><code>inverse</code></title>
+  <p>The destination for a 4x4 inverse transformation matrix</p>
+</item>
+</terms>
+
+</page>

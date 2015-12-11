@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.Pipeline.prototype.set_blend</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » <a class="trail" href="Cogl.Pipeline.html" title="Cogl.Pipeline">Cogl.Pipeline</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.Pipeline.prototype.set_blend</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function set_blend(blend_string: String): <span class="link"><a href="Cogl.Bool.html" title="Cogl.Bool">Cogl.Bool</a></span> {
+    // Gjs wrapper for cogl_pipeline_set_blend()
+}
+  </pre></div></div></div></div></div>
+<p class="p">If not already familiar; please refer &lt;link linkend="cogl-Blend-Strings"&gt;here&lt;/link&gt;
+for an overview of what blend strings are, and their syntax.</p>
+<p class="p">Blending occurs after the alpha test function, and combines fragments with
+the framebuffer.</p>
+<p class="p">Currently the only blend function Cogl exposes is ADD(). So any valid
+blend statements will be of the form:</p>
+<p class="p">|[
+  &amp;lt;channel-mask&amp;gt;=ADD(SRC_COLOR*(&amp;lt;factor&amp;gt;), DST_COLOR*(&amp;lt;factor&amp;gt;))
+]|</p>
+<p class="p">This is the list of source-names usable as blend factors:
+&lt;itemizedlist&gt;
+  &lt;listitem&gt;&lt;para&gt;SRC_COLOR: The color of the in comming fragment&lt;/para&gt;&lt;/listitem&gt;
+  &lt;listitem&gt;&lt;para&gt;DST_COLOR: The color of the framebuffer&lt;/para&gt;&lt;/listitem&gt;
+  &lt;listitem&gt;&lt;para&gt;CONSTANT: The constant set via <span class="link"><a href="Cogl.Pipeline.set_blend_constant.html" title="Cogl.Pipeline.prototype.set_blend_constant">Cogl.Pipeline.prototype.set_blend_constant</a></span>&lt;/para&gt;&lt;/listitem&gt;
+&lt;/itemizedlist&gt;</p>
+<p class="p">The source names can be used according to the
+&lt;link linkend="cogl-Blend-String-syntax"&gt;color-source and factor syntax&lt;/link&gt;,
+so for example "(1-SRC_COLOR[A])" would be a valid factor, as would
+"(CONSTANT[RGB])"</p>
+<p class="p">These can also be used as factors:
+&lt;itemizedlist&gt;
+  &lt;listitem&gt;0: (0, 0, 0, 0)&lt;/listitem&gt;
+  &lt;listitem&gt;1: (1, 1, 1, 1)&lt;/listitem&gt;
+  &lt;listitem&gt;SRC_ALPHA_SATURATE_FACTOR: (f,f,f,1) where f = MIN(SRC_COLOR[A],1-DST_COLOR[A])&lt;/listitem&gt;
+&lt;/itemizedlist&gt;</p>
+<p class="p">&lt;note&gt;Remember; all color components are normalized to the range [0, 1]
+before computing the result of blending.&lt;/note&gt;</p>
+<p class="p">&lt;example id="cogl-Blend-Strings-blend-unpremul"&gt;
+  &lt;title&gt;Blend Strings/1&lt;/title&gt;
+  &lt;para&gt;Blend a non-premultiplied source over a destination with
+  premultiplied alpha:&lt;/para&gt;
+  &lt;programlisting&gt;
+"RGB = ADD(SRC_COLOR*(SRC_COLOR[A]), DST_COLOR*(1-SRC_COLOR[A]))"
+"A   = ADD(SRC_COLOR, DST_COLOR*(1-SRC_COLOR[A]))"
+  &lt;/programlisting&gt;
+&lt;/example&gt;</p>
+<p class="p">&lt;example id="cogl-Blend-Strings-blend-premul"&gt;
+  &lt;title&gt;Blend Strings/2&lt;/title&gt;
+  &lt;para&gt;Blend a premultiplied source over a destination with
+  premultiplied alpha&lt;/para&gt;
+  &lt;programlisting&gt;
+"RGBA = ADD(SRC_COLOR, DST_COLOR*(1-SRC_COLOR[A]))"
+  &lt;/programlisting&gt;
+&lt;/example&gt;</p>
+<p class="p">The default blend string is:
+|[
+   RGBA = ADD (SRC_COLOR, DST_COLOR*(1-SRC_COLOR[A]))
+]|</p>
+<p class="p">That gives normal alpha-blending when the calculated color for the pipeline
+is in premultiplied form.</p>
+<p class="p">Since 2.0</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">blend_string</span></dt>
+<dd class="terms"><p class="p">A &lt;link linkend="cogl-Blend-Strings"&gt;Cogl blend string&lt;/link&gt;
+  describing the desired blend function.</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> if the blend string was successfully parsed, and the
+  described blending is supported by the underlying driver/hardware. If
+  there was an error, <span class="code">false</span> is returned and @error is set accordingly (if
+  present).</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.Pipeline.html" title="Cogl.Pipeline">Cogl.Pipeline</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

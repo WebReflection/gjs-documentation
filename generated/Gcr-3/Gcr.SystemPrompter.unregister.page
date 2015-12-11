@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gcr.SystemPrompter.unregister"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.SystemPrompter" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gcr_system_prompter_unregister</api:name>
+      <api:arg>
+        <api:type>Boolean</api:type>
+        <api:name>wait</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.SystemPrompter.prototype.unregister</title>
+  <synopsis><code mime="text/x-gjs">
+function unregister(wait: Boolean): void {
+    // Gjs wrapper for gcr_system_prompter_unregister()
+}
+  </code></synopsis>
+  <p>Unregister this system prompter on the DBus @connection.</p>  <p>The prompter must have previously been registered with <link xref="Gcr.SystemPrompter.register"/>.</p>  <p>If <code>wait</code> is set then this function will wait until all prompts have been closed
+or cancelled. This is usually only used by tests.</p>
+
+<terms>
+<item>
+<title><code>wait</code></title>
+  <p>whether to wait for closing prompts</p>
+</item>
+</terms>
+
+</page>

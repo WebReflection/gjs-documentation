@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gcr.CertificateChainFlags"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Gcr.CertificateChainFlags</title>
+  <p>Flags to be used with the <link xref="Gcr.CertificateChain.build"/> operation.</p>
+
+<terms>
+<item>
+<title><code>CertificateChainFlags.NONE</code></title>
+  <p>no flags</p>
+</item>
+<item>
+<title><code>CertificateChainFlags.NO_LOOKUPS</code></title>
+  <p>If this flag is specified then no
+lookups for anchors or pinned certificates are done, and the resulting chain
+will be neither anchored or pinned. Additionally no missing certificate
+authorities are looked up in PKCS\#11.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

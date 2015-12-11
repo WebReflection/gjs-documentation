@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gck.Object.get_handle"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Object" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gulong)</api:type>
+      </api:returns>
+      <api:name>gck_object_get_handle</api:name>
+    </api:function>
+  </info>
+  <title>Gck.Object.prototype.get_handle</title>
+  <synopsis><code mime="text/x-gjs">
+function get_handle(): Number(gulong) {
+    // Gjs wrapper for gck_object_get_handle()
+}
+  </code></synopsis>
+  <p>Get the raw PKCS\#11 handle of a GckObject.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the raw CK_OBJECT_HANDLE object handle</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="GWeather.Info.get_attribution"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Info" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>gweather_info_get_attribution</api:name>
+    </api:function>
+  </info>
+  <title>GWeather.Info.prototype.get_attribution</title>
+  <synopsis><code mime="text/x-gjs">
+function get_attribution(): String {
+    // Gjs wrapper for gweather_info_get_attribution()
+}
+  </code></synopsis>
+  <p>Some weather services require the application showing the
+data to include an attribution text, possibly including links
+to the service website.
+This must be shown prominently toghether with the data.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the required attribution text, in Pango
+         markup form, or <code>null</code> if not required</p>
+</item>
+</terms>
+
+</page>

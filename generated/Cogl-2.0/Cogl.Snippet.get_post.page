@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Cogl.Snippet.get_post"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Snippet" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>cogl_snippet_get_post</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Snippet.prototype.get_post</title>
+  <synopsis><code mime="text/x-gjs">
+function get_post(): String {
+    // Gjs wrapper for cogl_snippet_get_post()
+}
+  </code></synopsis>
+
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the source string that was set with
+  <link xref="Cogl.Snippet.set_post"/> or <code>null</code> if none was set.</p>
+</item>
+</terms>
+
+</page>

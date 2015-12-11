@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.set_diffuse"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_set_diffuse</api:name>
+      <api:arg>
+        <api:type>Cogl.Color</api:type>
+        <api:name>diffuse</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.set_diffuse</title>
+  <synopsis><code mime="text/x-gjs">
+function set_diffuse(diffuse: <link xref="Cogl.Color">Cogl.Color</link>): void {
+    // Gjs wrapper for cogl_pipeline_set_diffuse()
+}
+  </code></synopsis>
+  <p>Sets the pipeline's diffuse color, in the standard OpenGL lighting
+model. The diffuse color is most intense where the light hits the
+surface directly - perpendicular to the surface.</p>  <p>The default value is (0.8, 0.8, 0.8, 1.0)</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>diffuse</code></title>
+  <p>The components of the desired diffuse color</p>
+</item>
+</terms>
+
+</page>

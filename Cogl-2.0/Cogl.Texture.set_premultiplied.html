@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.Texture.prototype.set_premultiplied</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » <a class="trail" href="Cogl.Texture.html" title="Cogl.Texture">Cogl.Texture</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.Texture.prototype.set_premultiplied</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function set_premultiplied(premultiplied: <span class="link"><a href="Cogl.Bool.html" title="Cogl.Bool">Cogl.Bool</a></span>): void {
+    // Gjs wrapper for cogl_texture_set_premultiplied()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Affects the internal storage format for this texture by specifying
+whether red, green and blue color components should be stored as
+pre-multiplied alpha values.</p>
+<p class="p">This api affects how data is uploaded to the GPU since Cogl will
+convert source data to have premultiplied or unpremultiplied
+components according to this state.</p>
+<p class="p">For example if you create a texture via
+<span class="link"><a href="Cogl.Texture2D.new_with_size.html" title="Cogl.Texture2D.new_with_size">Cogl.Texture2D.new_with_size</a></span> and then upload data via
+<span class="link"><a href="Cogl.Texture.set_data.html" title="Cogl.Texture.prototype.set_data">Cogl.Texture.prototype.set_data</a></span> passing a source format of
+<span class="link"><a href="Cogl.PixelFormat.html" title="Cogl.PixelFormat">Cogl.PixelFormat</a></span>.rgba_8888 then Cogl will internally multiply the
+red, green and blue components of the source data by the alpha
+component, for each pixel so that the internally stored data has
+pre-multiplied alpha components. If you instead upload data that
+already has pre-multiplied components by passing
+<span class="link"><a href="Cogl.PixelFormat.html" title="Cogl.PixelFormat">Cogl.PixelFormat</a></span>.rgba_8888_pre as the source format to
+<span class="link"><a href="Cogl.Texture.set_data.html" title="Cogl.Texture.prototype.set_data">Cogl.Texture.prototype.set_data</a></span> then the data can be uploaded without being
+converted.</p>
+<p class="p">By default the @premultipled state is @TRUE.</p>
+<p class="p">Since 1.18</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">premultiplied</span></dt>
+<dd class="terms"><p class="p">Whether any internally stored red, green or blue
+                components are pre-multiplied by an alpha
+                component.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.Texture.html" title="Cogl.Texture">Cogl.Texture</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gcr.CertificateChain.get_anchor"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.CertificateChain" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gcr.Certificate</api:type>
+      </api:returns>
+      <api:name>gcr_certificate_chain_get_anchor</api:name>
+    </api:function>
+  </info>
+  <title>Gcr.CertificateChain.prototype.get_anchor</title>
+  <synopsis><code mime="text/x-gjs">
+function get_anchor(): <link xref="Gcr.Certificate">Gcr.Certificate</link> {
+    // Gjs wrapper for gcr_certificate_chain_get_anchor()
+}
+  </code></synopsis>
+  <p>If the certificate chain has been built and is of status
+<link xref="Gcr.CertificateChainStatus"/>.anchored, then this will return the anchor
+certificate that was found. This is not necessarily a root certificate
+authority. If an intermediate certificate authority in the chain was
+found to be anchored, then that certificate will be returned.</p>  <p>If an anchor is returned it does not mean that the certificate chain has
+been verified, but merely that an anchor has been found.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the anchor certificate, or NULL if not anchored.</p>
+</item>
+</terms>
+
+</page>

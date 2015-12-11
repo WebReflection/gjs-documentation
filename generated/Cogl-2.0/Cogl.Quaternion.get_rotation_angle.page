@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Cogl.Quaternion.get_rotation_angle"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Quaternion" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gfloat)</api:type>
+      </api:returns>
+      <api:name>cogl_quaternion_get_rotation_angle</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Quaternion.prototype.get_rotation_angle</title>
+  <synopsis><code mime="text/x-gjs">
+function get_rotation_angle(): Number(gfloat) {
+    // Gjs wrapper for cogl_quaternion_get_rotation_angle()
+}
+  </code></synopsis>
+
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

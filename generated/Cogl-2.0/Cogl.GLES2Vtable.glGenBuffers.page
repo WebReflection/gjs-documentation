@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Cogl.GLES2Vtable.glGenBuffers"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Cogl.GLES2Vtable.glGenBuffers</title>
+  <synopsis><code mime="text/x-gjs">
+function onglGenBuffers(n: <link href="../GL-1.0/GL.sizei.html">GL.sizei</link>, buffers: <link href="../GL-1.0/GL.uint.html">GL.uint</link>): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>n</code></title>
+
+</item>
+<item>
+<title><code>buffers</code></title>
+
+</item>
+</terms>
+
+</page>

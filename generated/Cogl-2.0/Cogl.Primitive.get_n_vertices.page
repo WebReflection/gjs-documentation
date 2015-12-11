@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="Cogl.Primitive.get_n_vertices"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Primitive" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gint)</api:type>
+      </api:returns>
+      <api:name>cogl_primitive_get_n_vertices</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Primitive.prototype.get_n_vertices</title>
+  <synopsis><code mime="text/x-gjs">
+function get_n_vertices(): Number(gint) {
+    // Gjs wrapper for cogl_primitive_get_n_vertices()
+}
+  </code></synopsis>
+  <p>Queries the number of vertices to read when drawing the given
+<code>primitive</code>. Usually this value is implicitly set when associating
+vertex data or indices with a <link xref="Cogl.Primitive"/>.</p>  <p>If <link xref="Cogl.Primitive.set_indices"/> has been used to associate a
+sequence of <link xref="Cogl.Indices"/> with the given <code>primitive</code> then the
+number of vertices to read can also be phrased as the number
+of indices to read.</p>  <p>&lt;note&gt;To be clear; it doesn't refer to the number of vertices - in
+terms of data - associated with the primitive it's just the number
+of vertices to read and draw.&lt;/note&gt;</p>
+  <p>Since 1.8</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>The number of vertices to read when drawing.</p>
+</item>
+</terms>
+
+</page>

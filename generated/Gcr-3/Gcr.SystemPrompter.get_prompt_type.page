@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gcr.SystemPrompter.get_prompt_type"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.SystemPrompter" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GObject.Type</api:type>
+      </api:returns>
+      <api:name>gcr_system_prompter_get_prompt_type</api:name>
+    </api:function>
+  </info>
+  <title>Gcr.SystemPrompter.prototype.get_prompt_type</title>
+  <synopsis><code mime="text/x-gjs">
+function get_prompt_type(): GObject.Type {
+    // Gjs wrapper for gcr_system_prompter_get_prompt_type()
+}
+  </code></synopsis>
+  <p>Get the <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link> for prompts created by this prompter.</p>  <p>The returned <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link> will be a <link xref="Gcr.Prompt"/> implementation.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the prompt <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link></p>
+</item>
+</terms>
+
+</page>

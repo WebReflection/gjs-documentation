@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gtk.AccelMapForeach"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Gtk.AccelMapForeach</title>
+  <synopsis><code mime="text/x-gjs">
+function onAccelMapForeach(data: void, accel_path: String, accel_key: Number(guint), accel_mods: <link href="../Gdk-3.0/Gdk.ModifierType.html">Gdk.ModifierType</link>, changed: Boolean): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>data</code></title>
+
+</item>
+<item>
+<title><code>accel_path</code></title>
+
+</item>
+<item>
+<title><code>accel_key</code></title>
+
+</item>
+<item>
+<title><code>accel_mods</code></title>
+
+</item>
+<item>
+<title><code>changed</code></title>
+
+</item>
+</terms>
+
+</page>

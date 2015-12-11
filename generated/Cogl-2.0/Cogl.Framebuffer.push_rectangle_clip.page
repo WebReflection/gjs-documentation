@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<page id="Cogl.Framebuffer.push_rectangle_clip"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Framebuffer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_framebuffer_push_rectangle_clip</api:name>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>x_1</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>y_1</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>x_2</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>y_2</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Framebuffer.prototype.push_rectangle_clip</title>
+  <synopsis><code mime="text/x-gjs">
+function push_rectangle_clip(x_1: Number(gfloat), y_1: Number(gfloat), x_2: Number(gfloat), y_2: Number(gfloat)): void {
+    // Gjs wrapper for cogl_framebuffer_push_rectangle_clip()
+}
+  </code></synopsis>
+  <p>Specifies a modelview transformed rectangular clipping area for all
+subsequent drawing operations. Any drawing commands that extend
+outside the rectangle will be clipped so that only the portion
+inside the rectangle will be displayed. The rectangle dimensions
+are transformed by the current model-view matrix.</p>  <p>The rectangle is intersected with the current clip region. To undo
+the effect of this function, call <link xref="Cogl.Framebuffer.pop_clip"/>.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>x_1</code></title>
+  <p>x coordinate for top left corner of the clip rectangle</p>
+</item>
+<item>
+<title><code>y_1</code></title>
+  <p>y coordinate for top left corner of the clip rectangle</p>
+</item>
+<item>
+<title><code>x_2</code></title>
+  <p>x coordinate for bottom right corner of the clip rectangle</p>
+</item>
+<item>
+<title><code>y_2</code></title>
+  <p>y coordinate for bottom right corner of the clip rectangle</p>
+</item>
+</terms>
+
+</page>

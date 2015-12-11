@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.set_ambient_and_diffuse"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_set_ambient_and_diffuse</api:name>
+      <api:arg>
+        <api:type>Cogl.Color</api:type>
+        <api:name>color</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.set_ambient_and_diffuse</title>
+  <synopsis><code mime="text/x-gjs">
+function set_ambient_and_diffuse(color: <link xref="Cogl.Color">Cogl.Color</link>): void {
+    // Gjs wrapper for cogl_pipeline_set_ambient_and_diffuse()
+}
+  </code></synopsis>
+  <p>Conveniently sets the diffuse and ambient color of <code>pipeline</code> at the same
+time. See <link xref="Cogl.Pipeline.set_ambient"/> and <link xref="Cogl.Pipeline.set_diffuse"/>.</p>  <p>The default ambient color is (0.2, 0.2, 0.2, 1.0)</p>  <p>The default diffuse color is (0.8, 0.8, 0.8, 1.0)</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>color</code></title>
+  <p>The components of the desired ambient and diffuse colors</p>
+</item>
+</terms>
+
+</page>

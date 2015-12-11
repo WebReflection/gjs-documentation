@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="GdkX11.x11_free_compound_text"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gdk_x11_free_compound_text</api:name>
+      <api:arg>
+        <api:type>Number(guint8)</api:type>
+        <api:name>ctext</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GdkX11.x11_free_compound_text</title>
+  <synopsis><code mime="text/x-gjs">
+function x11_free_compound_text(ctext: Number(guint8)): void {
+    // Gjs wrapper for gdk_x11_free_compound_text()
+}
+  </code></synopsis>
+  <p>Frees the data returned from <link xref="GdkX11.X11Display.string_to_compound_text"/>.</p>
+  <p>Since 2.24</p>
+<terms>
+<item>
+<title><code>ctext</code></title>
+  <p>The pointer stored in <code>ctext</code> from a call to
+  <link xref="GdkX11.X11Display.string_to_compound_text"/>.</p>
+</item>
+</terms>
+
+</page>

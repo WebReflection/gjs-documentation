@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<page id="Gcr.ImportInteraction.supplement_async"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.ImportInteraction" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gcr_import_interaction_supplement_async</api:name>
+      <api:arg>
+        <api:type>Gck.Builder</api:type>
+        <api:name>builder</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.AsyncReadyCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.ImportInteraction.prototype.supplement_async</title>
+  <synopsis><code mime="text/x-gjs">
+function supplement_async(builder: <link href="../Gck-1/Gck.Builder.html">Gck.Builder</link>, cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>, callback: <link href="../Gio-2.0/Gio.AsyncReadyCallback.html">Gio.AsyncReadyCallback</link>): void {
+    // Gjs wrapper for gcr_import_interaction_supplement_async()
+}
+  </code></synopsis>
+  <p>Asynchronously supplement attributes before import. This means prompting the
+user for things like labels and the like. The needed attributes will have
+been passed to <link xref="Gcr.ImportInteraction.supplement_prep"/>.</p>  <p>This method prompts the user and fills in the attributes.</p>
+
+<terms>
+<item>
+<title><code>builder</code></title>
+  <p>supplemented attributes</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional cancellable object</p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>called when the operation completes</p>
+</item>
+</terms>
+
+</page>

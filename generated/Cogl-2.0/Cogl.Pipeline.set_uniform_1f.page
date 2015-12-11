@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.set_uniform_1f"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_set_uniform_1f</api:name>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>uniform_location</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.set_uniform_1f</title>
+  <synopsis><code mime="text/x-gjs">
+function set_uniform_1f(uniform_location: Number(gint), value: Number(gfloat)): void {
+    // Gjs wrapper for cogl_pipeline_set_uniform_1f()
+}
+  </code></synopsis>
+  <p>Sets a new value for the uniform at <code>uniform_location</code>. If this
+pipeline has a user program attached and is later used as a source
+for drawing, the given value will be assigned to the uniform which
+can be accessed from the shader's source. The value for
+<code>uniform_location</code> should be retrieved from the string name of the
+uniform by calling <link xref="Cogl.Pipeline.get_uniform_location"/>.</p>  <p>This function should be used to set uniforms that are of type
+float. It can also be used to set a single member of a float array
+uniform.</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>uniform_location</code></title>
+  <p>The uniform's location identifier</p>
+</item>
+<item>
+<title><code>value</code></title>
+  <p>The new value for the uniform</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.Matrix.prototype.view_2d_in_frustum</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » <a class="trail" href="Cogl.Matrix.html" title="Cogl.Matrix">Cogl.Matrix</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.Matrix.prototype.view_2d_in_frustum</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function view_2d_in_frustum(left: Number(gfloat), right: Number(gfloat), bottom: Number(gfloat), top: Number(gfloat), z_near: Number(gfloat), z_2d: Number(gfloat), width_2d: Number(gfloat), height_2d: Number(gfloat)): void {
+    // Gjs wrapper for cogl_matrix_view_2d_in_frustum()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Multiplies <span class="code">matrix</span> by a view transform that maps the 2D coordinates
+(0,0) top left and (<span class="code">width_2d</span>,<span class="code">height_2d</span>) bottom right the full viewport
+size. Geometry at a depth of 0 will now lie on this 2D plane.</p>
+<p class="p">Note: this doesn't multiply the matrix by any projection matrix,
+but it assumes you have a perspective projection as defined by
+passing the corresponding arguments to <span class="link"><a href="Cogl.Matrix.frustum.html" title="Cogl.Matrix.prototype.frustum">Cogl.Matrix.prototype.frustum</a></span>.</p>
+<p class="p">Toolkits such as Clutter that mix 2D and 3D drawing can use this to
+create a 2D coordinate system within a 3D perspective projected
+view frustum.</p>
+<p class="p">Since 1.8</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">left</span></dt>
+<dd class="terms"><p class="p">coord of left vertical clipping plane</p></dd>
+<dt class="terms"><span class="code">right</span></dt>
+<dd class="terms"><p class="p">coord of right vertical clipping plane</p></dd>
+<dt class="terms"><span class="code">bottom</span></dt>
+<dd class="terms"><p class="p">coord of bottom horizontal clipping plane</p></dd>
+<dt class="terms"><span class="code">top</span></dt>
+<dd class="terms"><p class="p">coord of top horizontal clipping plane</p></dd>
+<dt class="terms"><span class="code">z_near</span></dt>
+<dd class="terms"><p class="p">The distance to the near clip plane. Never pass 0 and always pass
+  a positive number.</p></dd>
+<dt class="terms"><span class="code">z_2d</span></dt>
+<dd class="terms"><p class="p">The distance to the 2D plane. (Should always be positive and
+  be between <span class="code">z_near</span> and the z_far value that was passed to
+  <span class="link"><a href="Cogl.Matrix.frustum.html" title="Cogl.Matrix.prototype.frustum">Cogl.Matrix.prototype.frustum</a></span>)</p></dd>
+<dt class="terms"><span class="code">width_2d</span></dt>
+<dd class="terms"><p class="p">The width of the 2D coordinate system</p></dd>
+<dt class="terms"><span class="code">height_2d</span></dt>
+<dd class="terms"><p class="p">The height of the 2D coordinate system</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.Matrix.html" title="Cogl.Matrix">Cogl.Matrix</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

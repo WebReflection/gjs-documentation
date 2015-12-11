@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<page id="Cogl.MatrixStack.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.MatrixStack" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.MatrixStack</api:type>
+      </api:returns>
+      <api:name>cogl_matrix_stack_new</api:name>
+      <api:arg>
+        <api:type>Cogl.Context</api:type>
+        <api:name>ctx</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.MatrixStack.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(ctx: <link xref="Cogl.Context">Cogl.Context</link>): <link xref="Cogl.MatrixStack">Cogl.MatrixStack</link> {
+    // Gjs wrapper for cogl_matrix_stack_new()
+}
+  </code></synopsis>
+  <p>Allocates a new <link xref="Cogl.MatrixStack"/> that can be used to build up
+transformations relating to objects in a scenegraph like hierarchy.
+(See the description of <link xref="Cogl.MatrixStack"/> and <link xref="Cogl.MatrixEntry"/> for
+more details of what a matrix stack is best suited for)</p>  <p>When a <link xref="Cogl.MatrixStack"/> is first allocated it is conceptually
+positioned at the root of your scenegraph hierarchy. As you
+traverse your scenegraph then you should call
+<link xref="Cogl.MatrixStack.push"/> whenever you move down a level and
+<link xref="Cogl.MatrixStack.pop"/> whenever you move back up a level towards
+the root.</p>  <p>Once you have allocated a <link xref="Cogl.MatrixStack"/> you can get a reference
+to the current transformation for the current position in the
+hierarchy by calling <link xref="Cogl.MatrixStack.get_entry"/>.</p>  <p>Once you have allocated a <link xref="Cogl.MatrixStack"/> you can apply operations
+such as rotate, scale and translate to modify the current transform
+for the current position in the hierarchy by calling
+<link xref="Cogl.MatrixStack.rotate"/>, <link xref="Cogl.MatrixStack.scale"/> and
+<link xref="Cogl.MatrixStack.translate"/>.</p>
+
+<terms>
+<item>
+<title><code>ctx</code></title>
+  <p>A <link xref="Cogl.Context"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>A newly allocated <link xref="Cogl.MatrixStack"/></p>
+</item>
+</terms>
+
+</page>

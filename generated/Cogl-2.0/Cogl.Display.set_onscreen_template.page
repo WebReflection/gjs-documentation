@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Cogl.Display.set_onscreen_template"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Display" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_display_set_onscreen_template</api:name>
+      <api:arg>
+        <api:type>Cogl.OnscreenTemplate</api:type>
+        <api:name>onscreen_template</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Display.prototype.set_onscreen_template</title>
+  <synopsis><code mime="text/x-gjs">
+function set_onscreen_template(onscreen_template: <link xref="Cogl.OnscreenTemplate">Cogl.OnscreenTemplate</link>): void {
+    // Gjs wrapper for cogl_display_set_onscreen_template()
+}
+  </code></synopsis>
+  <p>Specifies a template for creating <link xref="Cogl.Onscreen"/> framebuffers.</p>  <p>Depending on the system, the constraints for creating <link xref="Cogl.Onscreen"/>
+framebuffers need to be known before setting up a <link xref="Cogl.Display"/> because the
+final setup of the display may constrain how onscreen framebuffers may be
+allocated. If Cogl knows how an application wants to allocate onscreen
+framebuffers then it can try to make sure to setup the display accordingly.</p>
+  <p>Since 1.16</p>
+<terms>
+<item>
+<title><code>onscreen_template</code></title>
+  <p>A template for creating <link xref="Cogl.Onscreen"/> framebuffers</p>
+</item>
+</terms>
+
+</page>

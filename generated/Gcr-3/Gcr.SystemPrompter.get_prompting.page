@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gcr.SystemPrompter.get_prompting"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.SystemPrompter" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gcr_system_prompter_get_prompting</api:name>
+    </api:function>
+  </info>
+  <title>Gcr.SystemPrompter.prototype.get_prompting</title>
+  <synopsis><code mime="text/x-gjs">
+function get_prompting(): Boolean {
+    // Gjs wrapper for gcr_system_prompter_get_prompting()
+}
+  </code></synopsis>
+  <p>Get whether prompting or not.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>whether prompting or not</p>
+</item>
+</terms>
+
+</page>

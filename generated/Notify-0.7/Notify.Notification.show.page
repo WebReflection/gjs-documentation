@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Notify.Notification.show"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Notify.Notification" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>notify_notification_show</api:name>
+    </api:function>
+  </info>
+  <title>Notify.Notification.prototype.show</title>
+  <synopsis><code mime="text/x-gjs">
+function show(): Boolean {
+    // Gjs wrapper for notify_notification_show()
+}
+  </code></synopsis>
+  <p>Tells the notification server to display the notification on the screen.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if successful. On error, this will return <code>false</code> and set
+         @error.</p>
+</item>
+</terms>
+
+</page>

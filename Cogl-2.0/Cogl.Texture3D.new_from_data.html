@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.Texture3D.new_from_data</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » <a class="trail" href="Cogl.Texture3D.html" title="Cogl.Texture3D">Cogl.Texture3D</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.Texture3D.new_from_data</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function new_from_data(context: <span class="link"><a href="Cogl.Context.html" title="Cogl.Context">Cogl.Context</a></span>, width: Number(gint), height: Number(gint), depth: Number(gint), format: <span class="link"><a href="Cogl.PixelFormat.html" title="Cogl.PixelFormat">Cogl.PixelFormat</a></span>, rowstride: Number(gint), image_stride: Number(gint), data: Number(guint8)): <span class="link"><a href="Cogl.Texture3D.html" title="Cogl.Texture3D">Cogl.Texture3D</a></span> {
+    // Gjs wrapper for cogl_texture_3d_new_from_data()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Creates a low-level 3D texture and initializes it with <span class="code">data</span>. The
+data is assumed to be packed array of <span class="code">depth</span> images. There can be
+padding between the images using <span class="code">image_stride</span>.</p>
+<p class="p">&lt;note&gt;This api will always immediately allocate GPU memory for the
+texture and upload the given data so that the <span class="code">data</span> pointer does
+not need to remain valid once this function returns. This means it
+is not possible to configure the texture before it is allocated. If
+you do need to configure the texture before allocation (to specify
+constraints on the internal format for example) then you can
+instead create a <span class="link"><a href="Cogl.Bitmap.html" title="Cogl.Bitmap">Cogl.Bitmap</a></span> for your data and use
+<span class="link"><a href="Cogl.Texture3D.new_from_bitmap.html" title="Cogl.Texture3D.new_from_bitmap">Cogl.Texture3D.new_from_bitmap</a></span>.&lt;/note&gt;</p>
+<p class="p">Since 1.10</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">context</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="Cogl.Context.html" title="Cogl.Context">Cogl.Context</a></span></p></dd>
+<dt class="terms"><span class="code">width</span></dt>
+<dd class="terms"><p class="p">width of the texture in pixels.</p></dd>
+<dt class="terms"><span class="code">height</span></dt>
+<dd class="terms"><p class="p">height of the texture in pixels.</p></dd>
+<dt class="terms"><span class="code">depth</span></dt>
+<dd class="terms"><p class="p">depth of the texture in pixels.</p></dd>
+<dt class="terms"><span class="code">format</span></dt>
+<dd class="terms"><p class="p">the <span class="link"><a href="Cogl.PixelFormat.html" title="Cogl.PixelFormat">Cogl.PixelFormat</a></span> the buffer is stored in in RAM</p></dd>
+<dt class="terms"><span class="code">rowstride</span></dt>
+<dd class="terms"><p class="p">the memory offset in bytes between the starts of
+   scanlines in <span class="code">data</span> or 0 to infer it from the width and format</p></dd>
+<dt class="terms"><span class="code">image_stride</span></dt>
+<dd class="terms"><p class="p">the number of bytes from one image to the next. This
+   can be used to add padding between the images in a similar way
+   that the rowstride can be used to add padding between
+   rows. Alternatively 0 can be passed to infer the <span class="code">image_stride</span>
+   from the <span class="code">height</span>.</p></dd>
+<dt class="terms"><span class="code">data</span></dt>
+<dd class="terms"><p class="p">pointer the memory region where the source buffer resides</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">the newly created <span class="link"><a href="Cogl.Texture3D.html" title="Cogl.Texture3D">Cogl.Texture3D</a></span> or
+              <span class="code">null</span> if there was an error and an exception will be
+              returned through @error.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.Texture3D.html" title="Cogl.Texture3D">Cogl.Texture3D</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

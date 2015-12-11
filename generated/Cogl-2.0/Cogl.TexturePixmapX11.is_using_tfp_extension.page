@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Cogl.TexturePixmapX11.is_using_tfp_extension"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.TexturePixmapX11" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_texture_pixmap_x11_is_using_tfp_extension</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.TexturePixmapX11.prototype.is_using_tfp_extension</title>
+  <synopsis><code mime="text/x-gjs">
+function is_using_tfp_extension(): <link xref="Cogl.Bool">Cogl.Bool</link> {
+    // Gjs wrapper for cogl_texture_pixmap_x11_is_using_tfp_extension()
+}
+  </code></synopsis>
+  <p>Checks whether the given <code>texture</code> is using the
+GLX_EXT_texture_from_pixmap or similar extension to copy the
+contents of the pixmap to the texture.  This extension is usually
+implemented as zero-copy operation so it implies the updates are
+working efficiently.</p>
+  <p>Since 1.4</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if the texture is using an efficient extension
+  and <code>false</code> otherwise</p>
+</item>
+</terms>
+
+</page>

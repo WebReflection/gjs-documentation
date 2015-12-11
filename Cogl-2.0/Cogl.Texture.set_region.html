@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.Texture.prototype.set_region</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » <a class="trail" href="Cogl.Texture.html" title="Cogl.Texture">Cogl.Texture</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.Texture.prototype.set_region</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function set_region(src_x: Number(gint), src_y: Number(gint), dst_x: Number(gint), dst_y: Number(gint), dst_width: Number(guint), dst_height: Number(guint), width: Number(gint), height: Number(gint), format: <span class="link"><a href="Cogl.PixelFormat.html" title="Cogl.PixelFormat">Cogl.PixelFormat</a></span>, rowstride: Number(guint), data: Number(guint8)): <span class="link"><a href="Cogl.Bool.html" title="Cogl.Bool">Cogl.Bool</a></span> {
+    // Gjs wrapper for cogl_texture_set_region()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Sets the pixels in a rectangular subregion of <span class="code">texture</span> from an in-memory
+buffer containing pixel data.</p>
+<p class="p">&lt;note&gt;The region set can't be larger than the source <span class="code">data</span>&lt;/note&gt;</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">src_x</span></dt>
+<dd class="terms"><p class="p">upper left coordinate to use from source data.</p></dd>
+<dt class="terms"><span class="code">src_y</span></dt>
+<dd class="terms"><p class="p">upper left coordinate to use from source data.</p></dd>
+<dt class="terms"><span class="code">dst_x</span></dt>
+<dd class="terms"><p class="p">upper left destination horizontal coordinate.</p></dd>
+<dt class="terms"><span class="code">dst_y</span></dt>
+<dd class="terms"><p class="p">upper left destination vertical coordinate.</p></dd>
+<dt class="terms"><span class="code">dst_width</span></dt>
+<dd class="terms"><p class="p">width of destination region to write. (Must be less
+  than or equal to <span class="code">width</span>)</p></dd>
+<dt class="terms"><span class="code">dst_height</span></dt>
+<dd class="terms"><p class="p">height of destination region to write. (Must be less
+  than or equal to <span class="code">height</span>)</p></dd>
+<dt class="terms"><span class="code">width</span></dt>
+<dd class="terms"><p class="p">width of source data buffer.</p></dd>
+<dt class="terms"><span class="code">height</span></dt>
+<dd class="terms"><p class="p">height of source data buffer.</p></dd>
+<dt class="terms"><span class="code">format</span></dt>
+<dd class="terms"><p class="p">the <span class="link"><a href="Cogl.PixelFormat.html" title="Cogl.PixelFormat">Cogl.PixelFormat</a></span> used in the source buffer.</p></dd>
+<dt class="terms"><span class="code">rowstride</span></dt>
+<dd class="terms"><p class="p">rowstride of source buffer (computed from width if none
+specified)</p></dd>
+<dt class="terms"><span class="code">data</span></dt>
+<dd class="terms"><p class="p">the actual pixel data.</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> if the subregion upload was successful, and
+  <span class="code">false</span> otherwise</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.Texture.html" title="Cogl.Texture">Cogl.Texture</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

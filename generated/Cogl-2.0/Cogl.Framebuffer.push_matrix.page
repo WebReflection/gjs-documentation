@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="Cogl.Framebuffer.push_matrix"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Framebuffer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_framebuffer_push_matrix</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Framebuffer.prototype.push_matrix</title>
+  <synopsis><code mime="text/x-gjs">
+function push_matrix(): void {
+    // Gjs wrapper for cogl_framebuffer_push_matrix()
+}
+  </code></synopsis>
+  <p>Copies the current model-view matrix onto the matrix stack. The matrix
+can later be restored with <link xref="Cogl.Framebuffer.pop_matrix"/>.</p>
+  <p>Since 1.10</p>
+
+</page>

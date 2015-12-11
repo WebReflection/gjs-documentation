@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.Framebuffer.prototype.discard_buffers</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » <a class="trail" href="Cogl.Framebuffer.html" title="Cogl.Framebuffer">Cogl.Framebuffer</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.Framebuffer.prototype.discard_buffers</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function discard_buffers(buffers: Number(gulong)): void {
+    // Gjs wrapper for cogl_framebuffer_discard_buffers()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Declares that the specified <span class="code">buffers</span> no longer need to be referenced
+by any further rendering commands. This can be an important
+optimization to avoid subsequent frames of rendering depending on
+the results of a previous frame.</p>
+<p class="p">For example; some tile-based rendering GPUs are able to avoid allocating and
+accessing system memory for the depth and stencil buffer so long as these
+buffers are not required as input for subsequent frames and that can save a
+significant amount of memory bandwidth used to save and restore their
+contents to system memory between frames.</p>
+<p class="p">It is currently considered an error to try and explicitly discard the color
+buffer by passing <span class="link"><a href="Cogl.BufferBit.html" title="Cogl.BufferBit">Cogl.BufferBit</a></span>.color. This is because the color buffer is
+already implicitly discard when you finish rendering to a <span class="link"><a href="Cogl.Onscreen.html" title="Cogl.Onscreen">Cogl.Onscreen</a></span>
+framebuffer, and it's not meaningful to try and discard the color buffer of
+a #CoglOffscreen framebuffer since they are single-buffered.</p>
+<p class="p">Since 1.8</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">buffers</span></dt>
+<dd class="terms"><p class="p">A <span class="link"><a href="Cogl.BufferBit.html" title="Cogl.BufferBit">Cogl.BufferBit</a></span> mask of which ancillary buffers you want
+          to discard.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.Framebuffer.html" title="Cogl.Framebuffer">Cogl.Framebuffer</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

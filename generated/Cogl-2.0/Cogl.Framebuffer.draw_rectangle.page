@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<page id="Cogl.Framebuffer.draw_rectangle"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Framebuffer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_framebuffer_draw_rectangle</api:name>
+      <api:arg>
+        <api:type>Cogl.Pipeline</api:type>
+        <api:name>pipeline</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>x_1</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>y_1</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>x_2</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>y_2</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Framebuffer.prototype.draw_rectangle</title>
+  <synopsis><code mime="text/x-gjs">
+function draw_rectangle(pipeline: <link xref="Cogl.Pipeline">Cogl.Pipeline</link>, x_1: Number(gfloat), y_1: Number(gfloat), x_2: Number(gfloat), y_2: Number(gfloat)): void {
+    // Gjs wrapper for cogl_framebuffer_draw_rectangle()
+}
+  </code></synopsis>
+  <p>Draws a rectangle to <code>framebuffer</code> with the given <code>pipeline</code> state
+and with the top left corner positioned at (<code>x_1</code>, <code>y_1</code>) and the
+bottom right corner positioned at (<code>x_2</code>, <code>y_2</code>).</p>  <p>&lt;note&gt;The position is the position before the rectangle has been
+transformed by the model-view matrix and the projection
+matrix.&lt;/note&gt;</p>  <p>&lt;note&gt;If you want to describe a rectangle with a texture mapped on
+it then you can use
+<link xref="Cogl.Framebuffer.draw_textured_rectangle"/>.&lt;/note&gt;</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>pipeline</code></title>
+  <p>A <link xref="Cogl.Pipeline"/> state object</p>
+</item>
+<item>
+<title><code>x_1</code></title>
+  <p>X coordinate of the top-left corner</p>
+</item>
+<item>
+<title><code>y_1</code></title>
+  <p>Y coordinate of the top-left corner</p>
+</item>
+<item>
+<title><code>x_2</code></title>
+  <p>X coordinate of the bottom-right corner</p>
+</item>
+<item>
+<title><code>y_2</code></title>
+  <p>Y coordinate of the bottom-right corner</p>
+</item>
+</terms>
+
+</page>

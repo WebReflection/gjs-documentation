@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gck.Slot.open_session_finish"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Slot" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.Session</api:type>
+      </api:returns>
+      <api:name>gck_slot_open_session_finish</api:name>
+      <api:arg>
+        <api:type>Gio.AsyncResult</api:type>
+        <api:name>result</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Slot.prototype.open_session_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function open_session_finish(result: <link href="../Gio-2.0/Gio.AsyncResult.html">Gio.AsyncResult</link>): <link xref="Gck.Session">Gck.Session</link> {
+    // Gjs wrapper for gck_slot_open_session_finish()
+}
+  </code></synopsis>
+  <p>Get the result of an open session operation. If the 'auto reuse' setting is set,
+then this may be a recycled session with the same flags.</p>
+
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>The result passed to the callback.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the new session or <code>null</code> if an error occurs</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Notify.Notification-closed-reason"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Notify.Notification" group="property" type="guide"/>
+    <title type="link" role="topic">closed-reason</title>
+  </info>
+  <title>Notify.Notification.closed_reason</title>
+  <synopsis><code mime="text/x-gjs">
+Notification.closed_reason: Number(gint) (Read)
+  </code></synopsis>
+
+
+</page>

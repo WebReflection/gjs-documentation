@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gck.modules_initialize_registered"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(Gck.Module)</api:type>
+      </api:returns>
+      <api:name>gck_modules_initialize_registered</api:name>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.modules_initialize_registered</title>
+  <synopsis><code mime="text/x-gjs">
+function modules_initialize_registered(cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>): Array(<link xref="Gck.Module">Gck.Module</link>) {
+    // Gjs wrapper for gck_modules_initialize_registered()
+}
+  </code></synopsis>
+  <p>Load and initialize all the registered modules.</p>
+
+<terms>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional cancellation object</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>A newly allocated list
+of <link xref="Gck.Module"/> objects, which should be released with <link xref="Gck.list_unref_free"/>.</p>
+</item>
+</terms>
+
+</page>

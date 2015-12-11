@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="Cogl.OutputCallback"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Cogl.OutputCallback</title>
+  <synopsis><code mime="text/x-gjs">
+function onOutputCallback(output: <link xref="Cogl.Output">Cogl.Output</link>): void {
+}
+  </code></synopsis>
+  <p>A callback type that can be passed to
+<link xref="Cogl.Renderer.foreach_output"/> for iterating display outputs for a
+given renderer.</p>
+  <p>Since 1.14</p>
+<terms>
+<item>
+<title><code>output</code></title>
+  <p>The current display output being iterated</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.SystemError</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.SystemError</span></h1></div>
+<div class="region">
+<div class="contents">
+<p class="p">Error enumeration for Cogl</p>
+<p class="p">The @COGL_SYSTEM_ERROR_UNSUPPORTED error can be thrown for a
+variety of reasons. For example:</p>
+<p class="p">&lt;itemizedlist&gt;
+ &lt;listitem&gt;&lt;para&gt;You've tried to use a feature that is not
+  advertised by <span class="link"><a href="Cogl.has_feature.html" title="Cogl.has_feature">Cogl.has_feature</a></span>. This could happen if you create
+  a 2d texture with a non-power-of-two size when
+  <span class="link"><a href="Cogl.FeatureID.html" title="Cogl.FeatureID">Cogl.FeatureID</a></span>.ogl_feature_id_texture_npot is not advertised.&lt;/para&gt;&lt;/listitem&gt;
+ &lt;listitem&gt;&lt;para&gt;The GPU can not handle the configuration you have
+  requested. An example might be if you try to use too many texture
+  layers in a single <span class="link"><a href="Cogl.Pipeline.html" title="Cogl.Pipeline">Cogl.Pipeline</a></span>&lt;/para&gt;&lt;/listitem&gt;
+ &lt;listitem&gt;&lt;para&gt;The driver does not support some
+  configuration.&lt;/para&gt;&lt;/listiem&gt;
+&lt;/itemizedlist&gt;</p>
+<p class="p">Currently this is only used by Cogl API marked as experimental so
+this enum should also be considered experimental.</p>
+<p class="p">Since 1.4</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">SystemError.COGL_SYSTEM_ERROR_UNSUPPORTED</span></dt>
+<dd class="terms"><p class="p">You tried to use a feature or
+   configuration not currently available.</p></dd>
+<dt class="terms"><span class="code">SystemError.COGL_SYSTEM_ERROR_NO_MEMORY</span></dt>
+<dd class="terms"><p class="p">You tried to allocate a resource
+   such as a texture and there wasn't enough memory.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Cogl">Cogl</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Cogl.Matrix.get_array"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Matrix" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gfloat)</api:type>
+      </api:returns>
+      <api:name>cogl_matrix_get_array</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Matrix.prototype.get_array</title>
+  <synopsis><code mime="text/x-gjs">
+function get_array(): Number(gfloat) {
+    // Gjs wrapper for cogl_matrix_get_array()
+}
+  </code></synopsis>
+  <p>Casts <code>matrix</code> to a float array which can be directly passed to OpenGL.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a pointer to the float array</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<page id="Gcr.Comparable-compare"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Comparable" group="vfunc" type="guide"/>
+  </info>
+  <title>Gcr.Comparable::compare</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_compare(other: <link xref="Gcr.Comparable">Gcr.Comparable</link>): Number(gint) {
+}
+  </code></synopsis>
+  <p>Compare whether two objects represent the same thing. The return value can
+also be used to sort the objects.</p>
+
+<terms>
+<item>
+<title><code>other</code></title>
+  <p>Another comparable object</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>Zero if the two objects represent the same thing, non-zero if not.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="Cogl.PipelineLayerCallback"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Cogl.PipelineLayerCallback</title>
+  <synopsis><code mime="text/x-gjs">
+function onPipelineLayerCallback(pipeline: <link xref="Cogl.Pipeline">Cogl.Pipeline</link>, layer_index: Number(gint)): <link xref="Cogl.Bool">Cogl.Bool</link> {
+}
+  </code></synopsis>
+  <p>The callback prototype used with <link xref="Cogl.Pipeline.foreach_layer"/> for
+iterating all the layers of a <code>pipeline</code>.</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>pipeline</code></title>
+  <p>The <link xref="Cogl.Pipeline"/> whos layers are being iterated</p>
+</item>
+<item>
+<title><code>layer_index</code></title>
+  <p>The current layer index</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="Cogl.Framebuffer.set_depth_write_enabled"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Framebuffer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_framebuffer_set_depth_write_enabled</api:name>
+      <api:arg>
+        <api:type>Cogl.Bool</api:type>
+        <api:name>depth_write_enabled</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Framebuffer.prototype.set_depth_write_enabled</title>
+  <synopsis><code mime="text/x-gjs">
+function set_depth_write_enabled(depth_write_enabled: <link xref="Cogl.Bool">Cogl.Bool</link>): void {
+    // Gjs wrapper for cogl_framebuffer_set_depth_write_enabled()
+}
+  </code></synopsis>
+  <p>Enables or disables depth buffer writing when rendering to <code>framebuffer</code>.
+If depth writing is enabled for both the framebuffer and the rendering
+pipeline, and the framebuffer has an associated depth buffer, depth
+information will be written to this buffer during rendering.</p>  <p>Depth buffer writing is enabled by default.</p>
+  <p>Since 1.18</p>
+<terms>
+<item>
+<title><code>depth_write_enabled</code></title>
+  <p><code>true</code> to enable depth writing or <code>false</code> to disable</p>
+</item>
+</terms>
+
+</page>

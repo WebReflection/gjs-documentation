@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="Gck.Builder.unref"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Builder" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gck_builder_unref</api:name>
+      <api:arg>
+        <api:type>void</api:type>
+        <api:name>builder</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Builder.unref</title>
+  <synopsis><code mime="text/x-gjs">
+function unref(builder: void): void {
+    // Gjs wrapper for gck_builder_unref()
+}
+  </code></synopsis>
+  <p>Unreferences a builder. If this was the last reference then the builder
+is freed.</p>  <p>It is an error to use this function on builders that were allocated on the
+stack.</p>
+
+<terms>
+<item>
+<title><code>builder</code></title>
+  <p>the builder</p>
+</item>
+</terms>
+
+</page>

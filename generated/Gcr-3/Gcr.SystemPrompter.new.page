@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<page id="Gcr.SystemPrompter.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.SystemPrompter" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gcr.SystemPrompter</api:type>
+      </api:returns>
+      <api:name>gcr_system_prompter_new</api:name>
+      <api:arg>
+        <api:type>Gcr.SystemPrompterMode</api:type>
+        <api:name>mode</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GObject.Type</api:type>
+        <api:name>prompt_type</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.SystemPrompter.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(mode: <link xref="Gcr.SystemPrompterMode">Gcr.SystemPrompterMode</link>, prompt_type: GObject.Type): <link xref="Gcr.SystemPrompter">Gcr.SystemPrompter</link> {
+    // Gjs wrapper for gcr_system_prompter_new()
+}
+  </code></synopsis>
+  <p>Create a new system prompter service. This prompter won't do anything unless
+you connect to its signals and show appropriate prompts.</p>  <p>If <code>prompt_type</code> is zero, then the new-prompt signal must be handled and
+return a valid prompt object implementing the <link xref="Gcr.Prompt"/> interface.</p>  <p>If <code>prompt_type</code> is non-zero then the <link href="../GLib-2.0/GLib.Type.html">GLib.Type</link> must implement the <link xref="Gcr.Prompt"/>
+interface.</p>
+
+<terms>
+<item>
+<title><code>mode</code></title>
+  <p>the mode for the prompt</p>
+</item>
+<item>
+<title><code>prompt_type</code></title>
+  <p>the gobject type for prompts created by this prompter</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a new prompter service</p>
+</item>
+</terms>
+
+</page>

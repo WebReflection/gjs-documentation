@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Cogl.Onscreen.remove_swap_buffers_callback"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Onscreen" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_onscreen_remove_swap_buffers_callback</api:name>
+      <api:arg>
+        <api:type>Number(guint)</api:type>
+        <api:name>id</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Onscreen.prototype.remove_swap_buffers_callback</title>
+  <synopsis><code mime="text/x-gjs">
+function remove_swap_buffers_callback(id: Number(guint)): void {
+    // Gjs wrapper for cogl_onscreen_remove_swap_buffers_callback()
+}
+  </code></synopsis>
+  <p>Removes a callback that was previously registered
+using <link xref="Cogl.Onscreen.add_swap_buffers_callback"/>.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>id</code></title>
+  <p>An identifier returned from <link xref="Cogl.Onscreen.add_swap_buffers_callback"/></p>
+</item>
+</terms>
+
+</page>

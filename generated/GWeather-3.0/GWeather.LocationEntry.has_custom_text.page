@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="GWeather.LocationEntry.has_custom_text"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.LocationEntry" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gweather_location_entry_has_custom_text</api:name>
+    </api:function>
+  </info>
+  <title>GWeather.LocationEntry.prototype.has_custom_text</title>
+  <synopsis><code mime="text/x-gjs">
+function has_custom_text(): Boolean {
+    // Gjs wrapper for gweather_location_entry_has_custom_text()
+}
+  </code></synopsis>
+  <p>Checks whether or not <code>entry</code>'s text has been modified by the user.
+Note that this does not mean that no location is associated with <code>entry</code>.
+<link xref="GWeather.LocationEntry.get_location"/> should be used for this.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if <code>entry</code>'s text was modified by the user, or <code>false</code> if
+it's set to the default text of a location.</p>
+</item>
+</terms>
+
+</page>

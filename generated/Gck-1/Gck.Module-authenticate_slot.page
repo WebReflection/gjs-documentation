@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gck.Module-authenticate_slot"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Module" group="vfunc" type="guide"/>
+  </info>
+  <title>Gck.Module::authenticate_slot</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_authenticate_slot(slot: <link xref="Gck.Slot">Gck.Slot</link>, label: String, password: String): Boolean {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>slot</code></title>
+
+</item>
+<item>
+<title><code>label</code></title>
+
+</item>
+<item>
+<title><code>password</code></title>
+
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

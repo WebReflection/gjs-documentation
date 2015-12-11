@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Cogl.Attribute.get_buffer"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Attribute" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.AttributeBuffer</api:type>
+      </api:returns>
+      <api:name>cogl_attribute_get_buffer</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Attribute.prototype.get_buffer</title>
+  <synopsis><code mime="text/x-gjs">
+function get_buffer(): <link xref="Cogl.AttributeBuffer">Cogl.AttributeBuffer</link> {
+    // Gjs wrapper for cogl_attribute_get_buffer()
+}
+  </code></synopsis>
+
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the <link xref="Cogl.AttributeBuffer"/> that was
+       set with <link xref="Cogl.Attribute.set_buffer"/> or <link xref="Cogl.Attribute.new"/>.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.get_point_size"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gfloat)</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_get_point_size</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.get_point_size</title>
+  <synopsis><code mime="text/x-gjs">
+function get_point_size(): Number(gfloat) {
+    // Gjs wrapper for cogl_pipeline_get_point_size()
+}
+  </code></synopsis>
+  <p>Get the size of points drawn when <link xref="Cogl.VerticesMode"/>.points is
+used with the vertex buffer API.</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the point size of the <code>pipeline</code>.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="GtkClutter.Embed-use-layout-size"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GtkClutter.Embed" group="property" type="guide"/>
+    <title type="link" role="topic">use-layout-size</title>
+  </info>
+  <title>GtkClutter.Embed.use_layout_size</title>
+  <synopsis><code mime="text/x-gjs">
+Embed.use_layout_size: Boolean (Read / Write / Construct)
+  </code></synopsis>
+  <p>The <link href="../Gtk-3.0/Gtk.Widget.html">Gtk.Widget</link> to be embedded into the <link xref="GtkClutter.Actor"/></p>
+  <p>Since 1.4</p>
+</page>

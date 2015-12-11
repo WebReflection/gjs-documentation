@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Cogl.MatrixStack.multiply"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.MatrixStack" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_matrix_stack_multiply</api:name>
+      <api:arg>
+        <api:type>Cogl.Matrix</api:type>
+        <api:name>matrix</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.MatrixStack.prototype.multiply</title>
+  <synopsis><code mime="text/x-gjs">
+function multiply(matrix: <link xref="Cogl.Matrix">Cogl.Matrix</link>): void {
+    // Gjs wrapper for cogl_matrix_stack_multiply()
+}
+  </code></synopsis>
+  <p>Multiplies the current matrix by the given matrix.</p>
+
+<terms>
+<item>
+<title><code>matrix</code></title>
+  <p>the matrix to multiply with the current model-view</p>
+</item>
+</terms>
+
+</page>

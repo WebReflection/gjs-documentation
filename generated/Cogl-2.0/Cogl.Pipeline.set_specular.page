@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.set_specular"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_set_specular</api:name>
+      <api:arg>
+        <api:type>Cogl.Color</api:type>
+        <api:name>specular</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.set_specular</title>
+  <synopsis><code mime="text/x-gjs">
+function set_specular(specular: <link xref="Cogl.Color">Cogl.Color</link>): void {
+    // Gjs wrapper for cogl_pipeline_set_specular()
+}
+  </code></synopsis>
+  <p>Sets the pipeline's specular color, in the standard OpenGL lighting
+model. The intensity of the specular color depends on the viewport
+position, and is brightest along the lines of reflection.</p>  <p>The default value is (0.0, 0.0, 0.0, 1.0)</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>specular</code></title>
+  <p>The components of the desired specular color</p>
+</item>
+</terms>
+
+</page>

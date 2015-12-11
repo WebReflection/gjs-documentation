@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="Notify.Notification.set_timeout"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Notify.Notification" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>notify_notification_set_timeout</api:name>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>timeout</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Notify.Notification.prototype.set_timeout</title>
+  <synopsis><code mime="text/x-gjs">
+function set_timeout(timeout: Number(gint)): void {
+    // Gjs wrapper for notify_notification_set_timeout()
+}
+  </code></synopsis>
+  <p>Sets the timeout of the notification. To set the default time, pass
+%NOTIFY_EXPIRES_DEFAULT as <code>timeout</code>. To set the notification to never
+expire, pass %NOTIFY_EXPIRES_NEVER.</p>  <p>Note that the timeout may be ignored by the server.</p>
+
+<terms>
+<item>
+<title><code>timeout</code></title>
+  <p>The timeout in milliseconds.</p>
+</item>
+</terms>
+
+</page>

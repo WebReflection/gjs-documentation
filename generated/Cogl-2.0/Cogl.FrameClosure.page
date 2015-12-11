@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<page id="Cogl.FrameClosure"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>Cogl.FrameClosure</title>
+  <synopsis><code>
+const Cogl = imports.gi.Cogl;
+
+let frameClosure = new Cogl.FrameClosure();
+  </code></synopsis>
+  <p>An opaque type that tracks a <link xref="Cogl.FrameCallback"/> and associated user
+data. A <link xref="Cogl.FrameClosure"/> pointer will be returned from
+<link xref="Cogl.Onscreen.add_frame_callback"/> and it allows you to remove a
+callback later using <link xref="Cogl.Onscreen.remove_frame_callback"/>.</p>
+  <p>Since 1.14</p>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

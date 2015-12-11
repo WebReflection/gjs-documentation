@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Cogl.UserDataKey-unused"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.UserDataKey" group="field" type="guide"/>
+    <title type="link" role="topic">unused</title>
+  </info>
+  <title>Cogl.UserDataKey.unused</title>
+  <synopsis><code mime="text/x-gjs">
+UserDataKey.unused: Number(gint) (Read / Write)
+  </code></synopsis>
+  <p>ignored.</p>
+
+</page>

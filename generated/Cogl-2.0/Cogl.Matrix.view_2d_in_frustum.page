@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<page id="Cogl.Matrix.view_2d_in_frustum"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Matrix" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_matrix_view_2d_in_frustum</api:name>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>left</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>right</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>bottom</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>top</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>z_near</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>z_2d</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>width_2d</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>height_2d</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Matrix.prototype.view_2d_in_frustum</title>
+  <synopsis><code mime="text/x-gjs">
+function view_2d_in_frustum(left: Number(gfloat), right: Number(gfloat), bottom: Number(gfloat), top: Number(gfloat), z_near: Number(gfloat), z_2d: Number(gfloat), width_2d: Number(gfloat), height_2d: Number(gfloat)): void {
+    // Gjs wrapper for cogl_matrix_view_2d_in_frustum()
+}
+  </code></synopsis>
+  <p>Multiplies <code>matrix</code> by a view transform that maps the 2D coordinates
+(0,0) top left and (<code>width_2d</code>,<code>height_2d</code>) bottom right the full viewport
+size. Geometry at a depth of 0 will now lie on this 2D plane.</p>  <p>Note: this doesn't multiply the matrix by any projection matrix,
+but it assumes you have a perspective projection as defined by
+passing the corresponding arguments to <link xref="Cogl.Matrix.frustum"/>.</p>  <p>Toolkits such as Clutter that mix 2D and 3D drawing can use this to
+create a 2D coordinate system within a 3D perspective projected
+view frustum.</p>
+  <p>Since 1.8</p>
+<terms>
+<item>
+<title><code>left</code></title>
+  <p>coord of left vertical clipping plane</p>
+</item>
+<item>
+<title><code>right</code></title>
+  <p>coord of right vertical clipping plane</p>
+</item>
+<item>
+<title><code>bottom</code></title>
+  <p>coord of bottom horizontal clipping plane</p>
+</item>
+<item>
+<title><code>top</code></title>
+  <p>coord of top horizontal clipping plane</p>
+</item>
+<item>
+<title><code>z_near</code></title>
+  <p>The distance to the near clip plane. Never pass 0 and always pass
+  a positive number.</p>
+</item>
+<item>
+<title><code>z_2d</code></title>
+  <p>The distance to the 2D plane. (Should always be positive and
+  be between <code>z_near</code> and the z_far value that was passed to
+  <link xref="Cogl.Matrix.frustum"/>)</p>
+</item>
+<item>
+<title><code>width_2d</code></title>
+  <p>The width of the 2D coordinate system</p>
+</item>
+<item>
+<title><code>height_2d</code></title>
+  <p>The height of the 2D coordinate system</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<page id="Gcr.Pkcs11Certificate.lookup_issuer"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Pkcs11Certificate" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gcr.Certificate</api:type>
+      </api:returns>
+      <api:name>gcr_pkcs11_certificate_lookup_issuer</api:name>
+      <api:arg>
+        <api:type>Gcr.Certificate</api:type>
+        <api:name>certificate</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.Pkcs11Certificate.lookup_issuer</title>
+  <synopsis><code mime="text/x-gjs">
+function lookup_issuer(certificate: <link xref="Gcr.Certificate">Gcr.Certificate</link>, cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>): <link xref="Gcr.Certificate">Gcr.Certificate</link> {
+    // Gjs wrapper for gcr_pkcs11_certificate_lookup_issuer()
+}
+  </code></synopsis>
+  <p>Lookup a the issuer of a <code>certificate</code> in the PKCS\#11 storage. The
+lookup is done using the issuer DN of the certificate. No certificate chain
+verification is done. Use a crypto library to make trust decisions.</p>  <p>This call may block, see <link xref="Gcr.Pkcs11Certificate.lookup_issuer"/> for the
+non-blocking version.</p>  <p>Will return <code>null</code> if no issuer certificate is found. Use @error to determine
+if an error occurred.</p>
+
+<terms>
+<item>
+<title><code>certificate</code></title>
+  <p>a <link xref="Gcr.Certificate"/></p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>a <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a new <link xref="Gcr.Pkcs11Certificate"/>, or <code>null</code></p>
+</item>
+</terms>
+
+</page>

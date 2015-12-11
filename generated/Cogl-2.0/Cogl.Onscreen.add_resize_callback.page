@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<page id="Cogl.Onscreen.add_resize_callback"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Onscreen" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.OnscreenResizeClosure</api:type>
+      </api:returns>
+      <api:name>cogl_onscreen_add_resize_callback</api:name>
+      <api:arg>
+        <api:type>Cogl.OnscreenResizeCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.UserDataDestroyCallback</api:type>
+        <api:name>destroy</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Onscreen.prototype.add_resize_callback</title>
+  <synopsis><code mime="text/x-gjs">
+function add_resize_callback(callback: <link xref="Cogl.OnscreenResizeCallback">Cogl.OnscreenResizeCallback</link>, destroy: <link xref="Cogl.UserDataDestroyCallback">Cogl.UserDataDestroyCallback</link>): <link xref="Cogl.OnscreenResizeClosure">Cogl.OnscreenResizeClosure</link> {
+    // Gjs wrapper for cogl_onscreen_add_resize_callback()
+}
+  </code></synopsis>
+  <p>Registers a <code>callback</code> with <code>onscreen</code> that will be called whenever
+the <code>onscreen</code> framebuffer changes size.</p>  <p>The <code>callback</code> can be removed using
+<link xref="Cogl.Onscreen.remove_resize_callback"/> passing the returned closure
+pointer.</p>  <p>&lt;note&gt;Since Cogl automatically updates the viewport of an <code>onscreen</code>
+framebuffer that is resized, a resize callback can also be used to
+track when the viewport has been changed automatically by Cogl in
+case your application needs more specialized control over the
+viewport.&lt;/note&gt;</p>  <p>&lt;note&gt;A resize callback will only ever be called while dispatching
+Cogl events from the system mainloop; so for example during
+<link xref="Cogl.poll_renderer_dispatch"/>. This is so that callbacks shouldn't
+occur while an application might have arbitrary locks held for
+example.&lt;/note&gt;</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>callback</code></title>
+  <p>A <link xref="Cogl.OnscreenResizeCallback"/> to call when
+           the <code>onscreen</code> changes size.</p>
+</item>
+<item>
+<title><code>destroy</code></title>
+  <p>An optional callback to destroy <code>user_data</code>
+          when the <code>callback</code> is removed or <code>onscreen</code> is freed.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link xref="Cogl.OnscreenResizeClosure"/> pointer that can be used to
+              remove the callback and associated <code>user_data</code> later.</p>
+</item>
+</terms>
+
+</page>

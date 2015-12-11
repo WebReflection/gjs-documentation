@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<page id="Cogl.Euler"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>Cogl.Euler</title>
+  <synopsis><code>
+const Cogl = imports.gi.Cogl;
+
+let euler = new Cogl.Euler({
+    <link xref='Cogl.Euler-heading'>heading</link>: value
+    <link xref='Cogl.Euler-pitch'>pitch</link>: value
+    <link xref='Cogl.Euler-roll'>roll</link>: value
+});
+  </code></synopsis>
+  <p>Represents an ordered rotation first of @heading degrees around an
+object's y axis, then @pitch degrees around an object's x axis and
+finally @roll degrees around an object's z axis.</p>  <p>&lt;note&gt;It's important to understand the that axis are associated
+with the object being rotated, so the axis also rotate in sequence
+with the rotations being applied.&lt;/note&gt;</p>  <p>The members of a <link xref="Cogl.Euler"/> can be initialized, for example, with
+<link xref="Cogl.Euler.init"/> and cogl_euler_init_from_quaternion ().</p>  <p>You may also want to look at <link xref="Cogl.Quaternion.init_from_euler"/> if
+you want to do interpolation between 3d rotations.</p>
+  <p>Since 2.0</p>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

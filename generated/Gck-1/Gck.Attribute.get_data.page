@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="Gck.Attribute.get_data"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Attribute" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>ByteArray</api:type>
+      </api:returns>
+      <api:name>gck_attribute_get_data</api:name>
+    </api:function>
+  </info>
+  <title>Gck.Attribute.prototype.get_data</title>
+  <synopsis><code mime="text/x-gjs">
+function get_data(): [return_value: ByteArray, length: Number(gsize)] {
+    // Gjs wrapper for gck_attribute_get_data()
+}
+  </code></synopsis>
+  <p>Get the raw value in the attribute.</p>  <p>This is useful from scripting languages. C callers will generally
+access the <link xref="Gck.Attribute"/> struct directly.</p>  <p>This function will <code>null</code> if the attribute contains empty or invalid
+data. The returned data must not be modified and is only valid
+as long as this @attribute.</p>
+
+<terms>
+<item>
+<title><code>return_value</code></title>
+  <p>the value data or <code>null</code></p>
+</item>
+<item>
+<title><code>length</code></title>
+  <p>the length of the returned data</p>
+</item>
+</terms>
+
+</page>

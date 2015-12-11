@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="GWeather.Timezone.get_tzid"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Timezone" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>gweather_timezone_get_tzid</api:name>
+    </api:function>
+  </info>
+  <title>GWeather.Timezone.prototype.get_tzid</title>
+  <synopsis><code mime="text/x-gjs">
+function get_tzid(): String {
+    // Gjs wrapper for gweather_timezone_get_tzid()
+}
+  </code></synopsis>
+  <p>Gets <code>zone</code>'s tzdata identifier, eg "America/New_York".</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>zone</code>'s tzid</p>
+</item>
+</terms>
+
+</page>

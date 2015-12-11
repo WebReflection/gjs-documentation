@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.MatrixStack</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.MatrixStack</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Cogl = imports.gi.Cogl;
+
+let matrixStack = new Cogl.MatrixStack();
+  </pre></div></div></div></div></div>
+<p class="p">Tracks your current position within a hierarchy and lets you build
+up a graph of transformations as you traverse through a hierarchy
+such as a scenegraph.</p>
+<p class="p">A <span class="link"><a href="Cogl.MatrixStack.html" title="Cogl.MatrixStack">Cogl.MatrixStack</a></span> always maintains a reference to a single
+transformation at any point in time, representing the
+transformation at the current position in the hierarchy. You can
+get a reference to the current transformation by calling
+<span class="link"><a href="Cogl.MatrixStack.get_entry.html" title="Cogl.MatrixStack.prototype.get_entry">Cogl.MatrixStack.prototype.get_entry</a></span>.</p>
+<p class="p">When a <span class="link"><a href="Cogl.MatrixStack.html" title="Cogl.MatrixStack">Cogl.MatrixStack</a></span> is first created with
+<span class="link"><a href="Cogl.MatrixStack.new.html" title="Cogl.MatrixStack.new">Cogl.MatrixStack.new</a></span> then it is conceptually positioned at the
+root of your hierarchy and the current transformation simply
+represents an identity transformation.</p>
+<p class="p">As you traverse your object hierarchy (your scenegraph) then you
+should call <span class="link"><a href="Cogl.MatrixStack.push.html" title="Cogl.MatrixStack.prototype.push">Cogl.MatrixStack.prototype.push</a></span> whenever you move down one
+level and call <span class="link"><a href="Cogl.MatrixStack.pop.html" title="Cogl.MatrixStack.prototype.pop">Cogl.MatrixStack.prototype.pop</a></span> whenever you move back up
+one level towards the root.</p>
+<p class="p">At any time you can apply a set of operations, such as "rotate",
+"scale", "translate" on top of the current transformation of a
+<span class="link"><a href="Cogl.MatrixStack.html" title="Cogl.MatrixStack">Cogl.MatrixStack</a></span> using functions such as
+<span class="link"><a href="Cogl.MatrixStack.rotate.html" title="Cogl.MatrixStack.prototype.rotate">Cogl.MatrixStack.prototype.rotate</a></span>, <span class="link"><a href="Cogl.MatrixStack.scale.html" title="Cogl.MatrixStack.prototype.scale">Cogl.MatrixStack.prototype.scale</a></span> and
+<span class="link"><a href="Cogl.MatrixStack.translate.html" title="Cogl.MatrixStack.prototype.translate">Cogl.MatrixStack.prototype.translate</a></span>. These operations will derive a new
+current transformation and will never affect a transformation
+that you have referenced using <span class="link"><a href="Cogl.MatrixStack.get_entry.html" title="Cogl.MatrixStack.prototype.get_entry">Cogl.MatrixStack.prototype.get_entry</a></span>.</p>
+<p class="p">Internally applying operations to a <span class="link"><a href="Cogl.MatrixStack.html" title="Cogl.MatrixStack">Cogl.MatrixStack</a></span> builds up a
+graph of <span class="link"><a href="Cogl.MatrixEntry.html" title="Cogl.MatrixEntry">Cogl.MatrixEntry</a></span> structures which each represent a single
+immutable transform.</p>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
+<div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
+<div>
+        <span class="code">Cogl.Object</span>
+      
+      </div>
+<ul class="tree"><li class="tree"><div>
+        <span class="code">Cogl.MatrixStack</span>
+      </div></li></ul>
+</li></ul></div></div></div></div></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.MatrixStack.new.html" title="Cogl.MatrixStack.new">Cogl.MatrixStack.new</a></li></ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Cogl.MatrixStack.frustum.html" title="Cogl.MatrixStack.prototype.frustum">Cogl.MatrixStack.prototype.frustum</a></li>
+<li class="links "><a href="Cogl.MatrixStack.get.html" title="Cogl.MatrixStack.prototype.get">Cogl.MatrixStack.prototype.get</a></li>
+<li class="links "><a href="Cogl.MatrixStack.get_entry.html" title="Cogl.MatrixStack.prototype.get_entry">Cogl.MatrixStack.prototype.get_entry</a></li>
+<li class="links "><a href="Cogl.MatrixStack.get_inverse.html" title="Cogl.MatrixStack.prototype.get_inverse">Cogl.MatrixStack.prototype.get_inverse</a></li>
+<li class="links "><a href="Cogl.MatrixStack.load_identity.html" title="Cogl.MatrixStack.prototype.load_identity">Cogl.MatrixStack.prototype.load_identity</a></li>
+<li class="links "><a href="Cogl.MatrixStack.multiply.html" title="Cogl.MatrixStack.prototype.multiply">Cogl.MatrixStack.prototype.multiply</a></li>
+<li class="links "><a href="Cogl.MatrixStack.orthographic.html" title="Cogl.MatrixStack.prototype.orthographic">Cogl.MatrixStack.prototype.orthographic</a></li>
+<li class="links "><a href="Cogl.MatrixStack.perspective.html" title="Cogl.MatrixStack.prototype.perspective">Cogl.MatrixStack.prototype.perspective</a></li>
+<li class="links "><a href="Cogl.MatrixStack.pop.html" title="Cogl.MatrixStack.prototype.pop">Cogl.MatrixStack.prototype.pop</a></li>
+<li class="links "><a href="Cogl.MatrixStack.push.html" title="Cogl.MatrixStack.prototype.push">Cogl.MatrixStack.prototype.push</a></li>
+<li class="links "><a href="Cogl.MatrixStack.rotate.html" title="Cogl.MatrixStack.prototype.rotate">Cogl.MatrixStack.prototype.rotate</a></li>
+<li class="links "><a href="Cogl.MatrixStack.rotate_euler.html" title="Cogl.MatrixStack.prototype.rotate_euler">Cogl.MatrixStack.prototype.rotate_euler</a></li>
+<li class="links "><a href="Cogl.MatrixStack.rotate_quaternion.html" title="Cogl.MatrixStack.prototype.rotate_quaternion">Cogl.MatrixStack.prototype.rotate_quaternion</a></li>
+<li class="links "><a href="Cogl.MatrixStack.scale.html" title="Cogl.MatrixStack.prototype.scale">Cogl.MatrixStack.prototype.scale</a></li>
+<li class="links "><a href="Cogl.MatrixStack.set.html" title="Cogl.MatrixStack.prototype.set">Cogl.MatrixStack.prototype.set</a></li>
+<li class="links "><a href="Cogl.MatrixStack.translate.html" title="Cogl.MatrixStack.prototype.translate">Cogl.MatrixStack.prototype.translate</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Cogl">Cogl</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

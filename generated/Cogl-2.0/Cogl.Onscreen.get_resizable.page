@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="Cogl.Onscreen.get_resizable"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Onscreen" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_onscreen_get_resizable</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Onscreen.prototype.get_resizable</title>
+  <synopsis><code mime="text/x-gjs">
+function get_resizable(): <link xref="Cogl.Bool">Cogl.Bool</link> {
+    // Gjs wrapper for cogl_onscreen_get_resizable()
+}
+  </code></synopsis>
+  <p>Lets you query whether <code>onscreen</code> has been marked as resizable via
+the <link xref="Cogl.Onscreen.set_resizable"/> api.</p>  <p>By default, if possible, a <code>onscreen</code> will be created by Cogl
+as non resizable, but it is not guaranteed that this is always
+possible for all window systems.</p>  <p>&lt;note&gt;If cogl_onscreen_set_resizable(<code>onscreen</code>, <code>true</code>) has been
+previously called then this function will return <code>true</code>, but it's
+possible that the current windowing system being used does not
+support window resizing (consider fullscreen windows on a phone or
+a TV). This function is not aware of whether resizing is truly
+meaningful with your window system, only whether the <code>onscreen</code> has
+been marked as resizable.&lt;/note&gt;</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>Returns whether <code>onscreen</code> has been marked as
+              resizable or not.</p>
+</item>
+</terms>
+
+</page>

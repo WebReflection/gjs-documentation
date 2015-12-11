@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<page id="Cogl.Texture.set_premultiplied"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Texture" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_texture_set_premultiplied</api:name>
+      <api:arg>
+        <api:type>Cogl.Bool</api:type>
+        <api:name>premultiplied</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Texture.prototype.set_premultiplied</title>
+  <synopsis><code mime="text/x-gjs">
+function set_premultiplied(premultiplied: <link xref="Cogl.Bool">Cogl.Bool</link>): void {
+    // Gjs wrapper for cogl_texture_set_premultiplied()
+}
+  </code></synopsis>
+  <p>Affects the internal storage format for this texture by specifying
+whether red, green and blue color components should be stored as
+pre-multiplied alpha values.</p>  <p>This api affects how data is uploaded to the GPU since Cogl will
+convert source data to have premultiplied or unpremultiplied
+components according to this state.</p>  <p>For example if you create a texture via
+<link xref="Cogl.Texture2D.new_with_size"/> and then upload data via
+<link xref="Cogl.Texture.set_data"/> passing a source format of
+<link xref="Cogl.PixelFormat"/>.rgba_8888 then Cogl will internally multiply the
+red, green and blue components of the source data by the alpha
+component, for each pixel so that the internally stored data has
+pre-multiplied alpha components. If you instead upload data that
+already has pre-multiplied components by passing
+<link xref="Cogl.PixelFormat"/>.rgba_8888_pre as the source format to
+<link xref="Cogl.Texture.set_data"/> then the data can be uploaded without being
+converted.</p>  <p>By default the @premultipled state is @TRUE.</p>
+  <p>Since 1.18</p>
+<terms>
+<item>
+<title><code>premultiplied</code></title>
+  <p>Whether any internally stored red, green or blue
+                components are pre-multiplied by an alpha
+                component.</p>
+</item>
+</terms>
+
+</page>

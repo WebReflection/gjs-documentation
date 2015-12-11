@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Cogl.OnscreenDirtyInfo-width"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.OnscreenDirtyInfo" group="field" type="guide"/>
+    <title type="link" role="topic">width</title>
+  </info>
+  <title>Cogl.OnscreenDirtyInfo.width</title>
+  <synopsis><code mime="text/x-gjs">
+OnscreenDirtyInfo.width: Number(gint) (Read / Write)
+  </code></synopsis>
+  <p>Width of the dirty rectangle</p>
+
+</page>

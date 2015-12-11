@@ -1,0 +1,115 @@
+<?xml version="1.0"?>
+<page id="Cogl.Matrix.look_at"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Matrix" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_matrix_look_at</api:name>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>eye_position_x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>eye_position_y</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>eye_position_z</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>object_x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>object_y</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>object_z</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>world_up_x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>world_up_y</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>world_up_z</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Matrix.prototype.look_at</title>
+  <synopsis><code mime="text/x-gjs">
+function look_at(eye_position_x: Number(gfloat), eye_position_y: Number(gfloat), eye_position_z: Number(gfloat), object_x: Number(gfloat), object_y: Number(gfloat), object_z: Number(gfloat), world_up_x: Number(gfloat), world_up_y: Number(gfloat), world_up_z: Number(gfloat)): void {
+    // Gjs wrapper for cogl_matrix_look_at()
+}
+  </code></synopsis>
+  <p>Applies a view transform <code>matrix</code> that positions the camera at
+the coordinate (<code>eye_position_x</code>, <code>eye_position_y</code>, <code>eye_position_z</code>)
+looking towards an object at the coordinate (<code>object_x</code>, <code>object_y</code>,
+<code>object_z</code>). The top of the camera is aligned to the given world up
+vector, which is normally simply (0, 1, 0) to map up to the
+positive direction of the y axis.</p>  <p>Because there is a lot of missleading documentation online for
+gluLookAt regarding the up vector we want to try and be a bit
+clearer here.</p>  <p>The up vector should simply be relative to your world coordinates
+and does not need to change as you move the eye and object
+positions.  Many online sources may claim that the up vector needs
+to be perpendicular to the vector between the eye and object
+position (partly because the man page is somewhat missleading) but
+that is not necessary for this function.</p>  <p>&lt;note&gt;You should never look directly along the world-up
+vector.&lt;/note&gt;</p>  <p>&lt;note&gt;It is assumed you are using a typical projection matrix where
+your origin maps to the center of your viewport.&lt;/note&gt;</p>  <p>&lt;note&gt;Almost always when you use this function it should be the first
+transform applied to a new modelview transform&lt;/note&gt;</p>
+  <p>Since 1.8</p>
+<terms>
+<item>
+<title><code>eye_position_x</code></title>
+  <p>The X coordinate to look from</p>
+</item>
+<item>
+<title><code>eye_position_y</code></title>
+  <p>The Y coordinate to look from</p>
+</item>
+<item>
+<title><code>eye_position_z</code></title>
+  <p>The Z coordinate to look from</p>
+</item>
+<item>
+<title><code>object_x</code></title>
+  <p>The X coordinate of the object to look at</p>
+</item>
+<item>
+<title><code>object_y</code></title>
+  <p>The Y coordinate of the object to look at</p>
+</item>
+<item>
+<title><code>object_z</code></title>
+  <p>The Z coordinate of the object to look at</p>
+</item>
+<item>
+<title><code>world_up_x</code></title>
+  <p>The X component of the world's up direction vector</p>
+</item>
+<item>
+<title><code>world_up_y</code></title>
+  <p>The Y component of the world's up direction vector</p>
+</item>
+<item>
+<title><code>world_up_z</code></title>
+  <p>The Z component of the world's up direction vector</p>
+</item>
+</terms>
+
+</page>

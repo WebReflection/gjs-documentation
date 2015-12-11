@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Cogl.Texture.get_premultiplied"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Texture" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_texture_get_premultiplied</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Texture.prototype.get_premultiplied</title>
+  <synopsis><code mime="text/x-gjs">
+function get_premultiplied(): <link xref="Cogl.Bool">Cogl.Bool</link> {
+    // Gjs wrapper for cogl_texture_get_premultiplied()
+}
+  </code></synopsis>
+  <p>Queries the pre-multiplied alpha status for internally stored red,
+green and blue components for the given <code>texture</code> as set by
+<link xref="Cogl.Texture.set_premultiplied"/>.</p>  <p>By default the pre-multipled state is @TRUE.</p>
+  <p>Since 1.18</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if red, green and blue components are
+              internally stored pre-multiplied by the alpha
+              value or <code>false</code> if not.</p>
+</item>
+</terms>
+
+</page>

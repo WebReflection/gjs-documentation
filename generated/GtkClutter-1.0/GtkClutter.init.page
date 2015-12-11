@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<page id="GtkClutter.init"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.InitError</api:type>
+      </api:returns>
+      <api:name>gtk_clutter_init</api:name>
+      <api:arg>
+        <api:type>Array(String)</api:type>
+        <api:name>argv</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GtkClutter.init</title>
+  <synopsis><code mime="text/x-gjs">
+function init(argv: Array(String)): [return_value: <link href="../Clutter-1.0/Clutter.InitError.html">Clutter.InitError</link>, argv: Array(String)] {
+    // Gjs wrapper for gtk_clutter_init()
+}
+  </code></synopsis>
+  <p>This function should be called instead of clutter_init() and
+gtk_init().</p>
+
+<terms>
+<item>
+<title><code>argv</code></title>
+  <p>pointer to the
+  arguments vector, or <code>null</code></p>
+</item>
+<item>
+<title><code>return_value</code></title>
+  <p>%CLUTTER_INIT_SUCCESS on success, a negative integer
+  on failure.</p>
+</item>
+<item>
+<title><code>argv (out)</code></title>
+  <p>pointer to the
+  arguments vector, or <code>null</code></p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="Cogl.kms_renderer_set_kms_fd"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_kms_renderer_set_kms_fd</api:name>
+      <api:arg>
+        <api:type>Cogl.Renderer</api:type>
+        <api:name>renderer</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>fd</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.kms_renderer_set_kms_fd</title>
+  <synopsis><code mime="text/x-gjs">
+function kms_renderer_set_kms_fd(renderer: <link xref="Cogl.Renderer">Cogl.Renderer</link>, fd: Number(gint)): void {
+    // Gjs wrapper for cogl_kms_renderer_set_kms_fd()
+}
+  </code></synopsis>
+  <p>Sets the file descriptor Cogl should use to communicate
+to the kms driver. If -1 (the default), then Cogl will
+open its own FD by trying to open "/dev/dri/card0".</p>
+  <p>Since 1.18</p>
+<terms>
+<item>
+<title><code>renderer</code></title>
+  <p>A <link xref="Cogl.Renderer"/></p>
+</item>
+<item>
+<title><code>fd</code></title>
+  <p>The fd to kms to use</p>
+</item>
+</terms>
+
+</page>

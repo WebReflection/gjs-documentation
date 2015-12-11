@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gcr.Parser.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Parser" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gcr.Parser</api:type>
+      </api:returns>
+      <api:name>gcr_parser_new</api:name>
+    </api:function>
+  </info>
+  <title>Gcr.Parser.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(): <link xref="Gcr.Parser">Gcr.Parser</link> {
+    // Gjs wrapper for gcr_parser_new()
+}
+  </code></synopsis>
+  <p>Create a new <link xref="Gcr.Parser"/></p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a newly allocated <link xref="Gcr.Parser"/></p>
+</item>
+</terms>
+
+</page>

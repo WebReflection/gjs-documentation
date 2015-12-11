@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="GdkX11.x11_get_default_root_xwindow"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>xlib.Window</api:type>
+      </api:returns>
+      <api:name>gdk_x11_get_default_root_xwindow</api:name>
+    </api:function>
+  </info>
+  <title>GdkX11.x11_get_default_root_xwindow</title>
+  <synopsis><code mime="text/x-gjs">
+function x11_get_default_root_xwindow(): <link href="../xlib-2.0/xlib.Window.html">xlib.Window</link> {
+    // Gjs wrapper for gdk_x11_get_default_root_xwindow()
+}
+  </code></synopsis>
+  <p>Gets the root window of the default screen
+(see <link xref="GdkX11.x11_get_default_screen"/>).</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>an Xlib Window.</p>
+</item>
+</terms>
+
+</page>

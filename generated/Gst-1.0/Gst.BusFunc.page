@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gst.BusFunc"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Gst.BusFunc</title>
+  <synopsis><code mime="text/x-gjs">
+function onBusFunc(bus: <link xref="Gst.Bus">Gst.Bus</link>, message: <link xref="Gst.Message">Gst.Message</link>): Boolean {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>bus</code></title>
+
+</item>
+<item>
+<title><code>message</code></title>
+
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

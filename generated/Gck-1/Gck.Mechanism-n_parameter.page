@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gck.Mechanism-n_parameter"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Mechanism" group="field" type="guide"/>
+    <title type="link" role="topic">n_parameter</title>
+  </info>
+  <title>Gck.Mechanism.n_parameter</title>
+  <synopsis><code mime="text/x-gjs">
+Mechanism.n_parameter: Number(gulong) (Read / Write)
+  </code></synopsis>
+  <p>Length of mechanism specific data.</p>
+
+</page>

@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<page id="Gck.Session.verify"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Session" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gck_session_verify</api:name>
+      <api:arg>
+        <api:type>Gck.Object</api:type>
+        <api:name>key</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gulong)</api:type>
+        <api:name>mech_type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>ByteArray</api:type>
+        <api:name>input</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>ByteArray</api:type>
+        <api:name>signature</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Session.prototype.verify</title>
+  <synopsis><code mime="text/x-gjs">
+function verify(key: <link xref="Gck.Object">Gck.Object</link>, mech_type: Number(gulong), input: ByteArray, signature: ByteArray, cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>): Boolean {
+    // Gjs wrapper for gck_session_verify()
+}
+  </code></synopsis>
+  <p>Verify data in a mechanism specific manner. This call may
+block for an indefinite period.</p>
+
+<terms>
+<item>
+<title><code>key</code></title>
+  <p>The key to verify with.</p>
+</item>
+<item>
+<title><code>mech_type</code></title>
+  <p>The mechanism type to use for verifying.</p>
+</item>
+<item>
+<title><code>input</code></title>
+  <p>data to verify</p>
+</item>
+<item>
+<title><code>signature</code></title>
+  <p>the signature</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>Optional cancellation object, or <code>null</code></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>TRUE if the data verified correctly, otherwise a failure or error occurred.</p>
+</item>
+</terms>
+
+</page>

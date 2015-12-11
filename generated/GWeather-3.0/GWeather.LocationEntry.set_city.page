@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<page id="GWeather.LocationEntry.set_city"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.LocationEntry" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gweather_location_entry_set_city</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>city_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>code</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GWeather.LocationEntry.prototype.set_city</title>
+  <synopsis><code mime="text/x-gjs">
+function set_city(city_name: String, code: String): Boolean {
+    // Gjs wrapper for gweather_location_entry_set_city()
+}
+  </code></synopsis>
+  <p>Sets <code>entry</code>'s location to a city with the given <code>code</code>, and given
+<code>city_name</code>, if non-<code>null</code>. If there is no matching city, sets
+<code>entry</code>'s location to <code>null</code>.</p>
+
+<terms>
+<item>
+<title><code>city_name</code></title>
+  <p>the city name, or <code>null</code></p>
+</item>
+<item>
+<title><code>code</code></title>
+  <p>the METAR station code</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if <code>entry</code>'s location could be set to a matching city,
+<code>false</code> otherwise.</p>
+</item>
+</terms>
+
+</page>

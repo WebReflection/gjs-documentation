@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<page id="Cogl.SystemError"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Cogl.SystemError</title>
+  <p>Error enumeration for Cogl</p>  <p>The @COGL_SYSTEM_ERROR_UNSUPPORTED error can be thrown for a
+variety of reasons. For example:</p>  <p>&lt;itemizedlist&gt;
+ &lt;listitem&gt;&lt;para&gt;You've tried to use a feature that is not
+  advertised by <link xref="Cogl.has_feature"/>. This could happen if you create
+  a 2d texture with a non-power-of-two size when
+  <link xref="Cogl.FeatureID"/>.ogl_feature_id_texture_npot is not advertised.&lt;/para&gt;&lt;/listitem&gt;
+ &lt;listitem&gt;&lt;para&gt;The GPU can not handle the configuration you have
+  requested. An example might be if you try to use too many texture
+  layers in a single <link xref="Cogl.Pipeline"/>&lt;/para&gt;&lt;/listitem&gt;
+ &lt;listitem&gt;&lt;para&gt;The driver does not support some
+  configuration.&lt;/para&gt;&lt;/listiem&gt;
+&lt;/itemizedlist&gt;</p>  <p>Currently this is only used by Cogl API marked as experimental so
+this enum should also be considered experimental.</p>
+  <p>Since 1.4</p>
+<terms>
+<item>
+<title><code>SystemError.COGL_SYSTEM_ERROR_UNSUPPORTED</code></title>
+  <p>You tried to use a feature or
+   configuration not currently available.</p>
+</item>
+<item>
+<title><code>SystemError.COGL_SYSTEM_ERROR_NO_MEMORY</code></title>
+  <p>You tried to allocate a resource
+   such as a texture and there wasn't enough memory.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

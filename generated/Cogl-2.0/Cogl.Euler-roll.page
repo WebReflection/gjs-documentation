@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Cogl.Euler-roll"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Euler" group="field" type="guide"/>
+    <title type="link" role="topic">roll</title>
+  </info>
+  <title>Cogl.Euler.roll</title>
+  <synopsis><code mime="text/x-gjs">
+Euler.roll: Number(gfloat) (Read / Write)
+  </code></synopsis>
+  <p>Angle to rotate around an object's z axis</p>
+
+</page>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Cogl.Matrix.rotate_quaternion"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Matrix" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_matrix_rotate_quaternion</api:name>
+      <api:arg>
+        <api:type>Cogl.Quaternion</api:type>
+        <api:name>quaternion</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Matrix.prototype.rotate_quaternion</title>
+  <synopsis><code mime="text/x-gjs">
+function rotate_quaternion(quaternion: <link xref="Cogl.Quaternion">Cogl.Quaternion</link>): void {
+    // Gjs wrapper for cogl_matrix_rotate_quaternion()
+}
+  </code></synopsis>
+  <p>Multiplies <code>matrix</code> with a rotation transformation described by the
+given <link xref="Cogl.Quaternion"/>.</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>quaternion</code></title>
+  <p>A quaternion describing a rotation</p>
+</item>
+</terms>
+
+</page>

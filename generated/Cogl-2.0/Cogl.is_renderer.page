@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Cogl.is_renderer"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_is_renderer</api:name>
+      <api:arg>
+        <api:type>void</api:type>
+        <api:name>object</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.is_renderer</title>
+  <synopsis><code mime="text/x-gjs">
+function is_renderer(object: void): <link xref="Cogl.Bool">Cogl.Bool</link> {
+    // Gjs wrapper for cogl_is_renderer()
+}
+  </code></synopsis>
+  <p>Determines if the given <code>object</code> is a <link xref="Cogl.Renderer"/></p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>object</code></title>
+  <p>A <link xref="Cogl.Object"/> pointer</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if <code>object</code> is a <link xref="Cogl.Renderer"/>, else <code>false</code>.</p>
+</item>
+</terms>
+
+</page>

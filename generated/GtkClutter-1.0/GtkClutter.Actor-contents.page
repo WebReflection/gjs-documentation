@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="GtkClutter.Actor-contents"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GtkClutter.Actor" group="property" type="guide"/>
+    <title type="link" role="topic">contents</title>
+  </info>
+  <title>GtkClutter.Actor.contents</title>
+  <synopsis><code mime="text/x-gjs">
+Actor.contents: <link href="../Gtk-3.0/Gtk.Widget.html">Gtk.Widget</link> (Read / Write / Construct)
+  </code></synopsis>
+  <p>The <link href="../Gtk-3.0/Gtk.Widget.html">Gtk.Widget</link> to be embedded into the <link xref="GtkClutter.Actor"/></p>
+
+</page>

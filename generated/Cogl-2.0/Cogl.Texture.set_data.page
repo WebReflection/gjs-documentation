@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<page id="Cogl.Texture.set_data"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Texture" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_texture_set_data</api:name>
+      <api:arg>
+        <api:type>Cogl.PixelFormat</api:type>
+        <api:name>format</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>rowstride</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint8)</api:type>
+        <api:name>data</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>level</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Texture.prototype.set_data</title>
+  <synopsis><code mime="text/x-gjs">
+function set_data(format: <link xref="Cogl.PixelFormat">Cogl.PixelFormat</link>, rowstride: Number(gint), data: Number(guint8), level: Number(gint)): <link xref="Cogl.Bool">Cogl.Bool</link> {
+    // Gjs wrapper for cogl_texture_set_data()
+}
+  </code></synopsis>
+  <p><code>texture</code> a <link xref="Cogl.Texture"/>.
+Sets all the pixels for a given mipmap <code>level</code> by copying the pixel
+data pointed to by the <code>data</code> argument into the given <code>texture</code>.</p>  <p><code>data</code> should point to the first pixel to copy corresponding
+to the top left of the mipmap <code>level</code> being set.</p>  <p>If <code>rowstride</code> equals 0 then it will be automatically calculated
+from the width of the mipmap level and the bytes-per-pixel for the
+given <code>format</code>.</p>  <p>A mipmap <code>level</code> of 0 corresponds to the largest, base image of a
+texture and <code>level</code> 1 is half the width and height of level 0. If
+dividing any dimension of the previous level by two results in a
+fraction then round the number down (floor()), but clamp to 1
+something like this:</p>  <p>|[
+ next_width = MAX (1, floor (prev_width));
+]|</p>  <p>You can determine the number of mipmap levels for a given texture
+like this:</p>  <p>|[
+ n_levels = 1 + floor (log2 (max_dimension));
+]|</p>  <p>Where %max_dimension is the larger of <link xref="Cogl.Texture.get_width"/> and
+<link xref="Cogl.Texture.get_height"/>.</p>  <p>It is an error to pass a <code>level</code> number &gt;= the number of levels that
+<code>texture</code> can have according to the above calculation.</p>  <p>&lt;note&gt;Since the storage for a <link xref="Cogl.Texture"/> is allocated lazily then
+if the given <code>texture</code> has not previously been allocated then this
+api can return <code>false</code> and throw an exceptional @error if there is
+not enough memory to allocate storage for <code>texture</code>.&lt;/note&gt;</p>
+
+<terms>
+<item>
+<title><code>format</code></title>
+  <p>the <link xref="Cogl.PixelFormat"/> used in the source <code>data</code> buffer.</p>
+</item>
+<item>
+<title><code>rowstride</code></title>
+  <p>rowstride of the source <code>data</code> buffer (computed from
+            the texture width and <code>format</code> if it equals 0)</p>
+</item>
+<item>
+<title><code>data</code></title>
+  <p>the source data, pointing to the first top-left pixel to set</p>
+</item>
+<item>
+<title><code>level</code></title>
+  <p>The mipmap level to update (Normally 0 for the largest,
+        base texture)</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if the data upload was successful, and
+              <code>false</code> otherwise</p>
+</item>
+</terms>
+
+</page>

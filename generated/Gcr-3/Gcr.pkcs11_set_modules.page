@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="Gcr.pkcs11_set_modules"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gcr_pkcs11_set_modules</api:name>
+      <api:arg>
+        <api:type>Array(Gck.Module)</api:type>
+        <api:name>modules</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.pkcs11_set_modules</title>
+  <synopsis><code mime="text/x-gjs">
+function pkcs11_set_modules(modules: Array(<link href="../Gck-1/Gck.Module.html">Gck.Module</link>)): void {
+    // Gjs wrapper for gcr_pkcs11_set_modules()
+}
+  </code></synopsis>
+  <p>Set the list of PKCS\#11 modules that are used by the GCR library.
+Each module in the list is a <link href="../Gck-1/Gck.Module.html">Gck.Module</link> object.</p>  <p>It is not normally necessary to call this function. The available
+PKCS\#11 modules installed on the system are automatically loaded
+by the GCR library.</p>
+
+<terms>
+<item>
+<title><code>modules</code></title>
+  <p>a list of <link href="../Gck-1/Gck.Module.html">Gck.Module</link></p>
+</item>
+</terms>
+
+</page>

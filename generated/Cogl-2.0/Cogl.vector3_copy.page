@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<page id="Cogl.vector3_copy"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gfloat)</api:type>
+      </api:returns>
+      <api:name>cogl_vector3_copy</api:name>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>vector</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.vector3_copy</title>
+  <synopsis><code mime="text/x-gjs">
+function vector3_copy(vector: Number(gfloat)): Number(gfloat) {
+    // Gjs wrapper for cogl_vector3_copy()
+}
+  </code></synopsis>
+  <p>Allocates a new 3 component float vector on the heap initializing
+the components from the given <code>vector</code> and returns a pointer to the
+newly allocated vector. You should free the memory using
+<link xref="Cogl.vector3_free"/></p>
+  <p>Since 1.4</p>
+<terms>
+<item>
+<title><code>vector</code></title>
+  <p>The 3 component vector you want to copy</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>A newly allocated 3 component float vector</p>
+</item>
+</terms>
+
+</page>

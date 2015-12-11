@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gcr.SimpleCollection.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.SimpleCollection" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gcr.SimpleCollection</api:type>
+      </api:returns>
+      <api:name>gcr_simple_collection_new</api:name>
+    </api:function>
+  </info>
+  <title>Gcr.SimpleCollection.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(): <link xref="Gcr.SimpleCollection">Gcr.SimpleCollection</link> {
+    // Gjs wrapper for gcr_simple_collection_new()
+}
+  </code></synopsis>
+  <p>Create a new <link xref="Gcr.SimpleCollection"/>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a newly allocated
+    collection, which should be freed with g_object_unref()</p>
+</item>
+</terms>
+
+</page>

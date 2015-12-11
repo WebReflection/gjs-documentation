@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="GdkX11.X11DeviceManagerXI2-minor"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GdkX11.X11DeviceManagerXI2" group="property" type="guide"/>
+    <title type="link" role="topic">minor</title>
+  </info>
+  <title>GdkX11.X11DeviceManagerXI2.minor</title>
+  <synopsis><code mime="text/x-gjs">
+X11DeviceManagerXI2.minor: Number(gint) (Read / Write / Construct Only)
+  </code></synopsis>
+
+
+</page>

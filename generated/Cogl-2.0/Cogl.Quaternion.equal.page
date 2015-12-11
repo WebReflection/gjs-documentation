@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<page id="Cogl.Quaternion.equal"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Quaternion" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_quaternion_equal</api:name>
+      <api:arg>
+        <api:type>void</api:type>
+        <api:name>v1</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>void</api:type>
+        <api:name>v2</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Quaternion.equal</title>
+  <synopsis><code mime="text/x-gjs">
+function equal(v1: void, v2: void): <link xref="Cogl.Bool">Cogl.Bool</link> {
+    // Gjs wrapper for cogl_quaternion_equal()
+}
+  </code></synopsis>
+  <p>Compares that all the components of quaternions @a and @b are
+equal.</p>  <p>An epsilon value is not used to compare the float components, but
+the == operator is at least used so that 0 and -0 are considered
+equal.</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>v1</code></title>
+  <p>A <link xref="Cogl.Quaternion"/></p>
+</item>
+<item>
+<title><code>v2</code></title>
+  <p>A <link xref="Cogl.Quaternion"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if the quaternions are equal else <code>false</code>.</p>
+</item>
+</terms>
+
+</page>

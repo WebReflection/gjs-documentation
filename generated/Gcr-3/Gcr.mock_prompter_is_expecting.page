@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="Gcr.mock_prompter_is_expecting"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gcr_mock_prompter_is_expecting</api:name>
+    </api:function>
+  </info>
+  <title>Gcr.mock_prompter_is_expecting</title>
+  <synopsis><code mime="text/x-gjs">
+function mock_prompter_is_expecting(): Boolean {
+    // Gjs wrapper for gcr_mock_prompter_is_expecting()
+}
+  </code></synopsis>
+  <p>Check if the mock prompter is expecting a response. This will be <code>true</code>
+when one of the &lt;literal&gt;gcr_mock_prompter_expect_xxx&lt;!-- --&gt;()&lt;/literal&gt;
+functions have been used to queue an expected prompt, but that prompt
+response has not be 'used' yet.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>whether expecting a prompt</p>
+</item>
+</terms>
+
+</page>

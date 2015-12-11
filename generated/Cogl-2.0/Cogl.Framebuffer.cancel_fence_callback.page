@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="Cogl.Framebuffer.cancel_fence_callback"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Framebuffer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_framebuffer_cancel_fence_callback</api:name>
+      <api:arg>
+        <api:type>Cogl.FenceClosure</api:type>
+        <api:name>closure</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Framebuffer.prototype.cancel_fence_callback</title>
+  <synopsis><code mime="text/x-gjs">
+function cancel_fence_callback(closure: <link xref="Cogl.FenceClosure">Cogl.FenceClosure</link>): void {
+    // Gjs wrapper for cogl_framebuffer_cancel_fence_callback()
+}
+  </code></synopsis>
+  <p>Removes a fence previously submitted with
+<link xref="Cogl.Framebuffer.add_fence_callback"/>; the callback will not be
+called.</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>closure</code></title>
+  <p>The <link xref="Cogl.FenceClosure"/> returned from
+          <link xref="Cogl.Framebuffer.add_fence_callback"/></p>
+</item>
+</terms>
+
+</page>

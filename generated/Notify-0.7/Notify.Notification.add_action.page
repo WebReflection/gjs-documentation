@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<page id="Notify.Notification.add_action"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Notify.Notification" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>notify_notification_add_action</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>action</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>label</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Notify.ActionCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Notify.Notification.prototype.add_action</title>
+  <synopsis><code mime="text/x-gjs">
+function add_action(action: String, label: String, callback: <link xref="Notify.ActionCallback">Notify.ActionCallback</link>): void {
+    // Gjs wrapper for notify_notification_add_action()
+}
+  </code></synopsis>
+  <p>Adds an action to a notification. When the action is invoked, the
+specified callback function will be called, along with the value passed
+to <code>user_data</code>.</p>
+
+<terms>
+<item>
+<title><code>action</code></title>
+  <p>The action ID.</p>
+</item>
+<item>
+<title><code>label</code></title>
+  <p>The human-readable action label.</p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>The action's callback function.</p>
+</item>
+</terms>
+
+</page>

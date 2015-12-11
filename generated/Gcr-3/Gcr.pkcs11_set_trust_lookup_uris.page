@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="Gcr.pkcs11_set_trust_lookup_uris"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gcr_pkcs11_set_trust_lookup_uris</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>pkcs11_uris</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.pkcs11_set_trust_lookup_uris</title>
+  <synopsis><code mime="text/x-gjs">
+function pkcs11_set_trust_lookup_uris(pkcs11_uris: String): void {
+    // Gjs wrapper for gcr_pkcs11_set_trust_lookup_uris()
+}
+  </code></synopsis>
+  <p>Set the PKCS\#11 URIs that are used to identify which slots to use for
+lookup of trust assertions.</p>  <p>It is not normally necessary to call this function. The relevant
+PKCS\#11 slots are automatically configured by the GCR library.</p>
+
+<terms>
+<item>
+<title><code>pkcs11_uris</code></title>
+  <p>the uris which identifies trust lookup slots</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<page id="GWeather.LocationLevel"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>GWeather.LocationLevel</title>
+  <p>The size/scope of a particular <link xref="GWeather.Location"/>.</p>  <p>Locations form a hierarchy, with a <link xref="GWeather.LocationLevel"/>.world
+location at the top, divided into regions or countries, and so on.
+Countries may or may not be divided into "adm1"s, and "adm1"s may
+or may not be divided into "adm2"s. A city will have at least one,
+and possibly several, weather stations inside it. Weather stations
+will never appear outside of cities.</p>  <p>Building a database with <link xref="GWeather.location_get_world"/> will never
+create detached instances, but deserializing might.</p>
+
+<terms>
+<item>
+<title><code>LocationLevel.WORLD</code></title>
+  <p>A location representing the entire world.</p>
+</item>
+<item>
+<title><code>LocationLevel.REGION</code></title>
+  <p>A location representing a continent or
+other top-level region.</p>
+</item>
+<item>
+<title><code>LocationLevel.COUNTRY</code></title>
+  <p>A location representing a "country" (or
+other geographic unit that has an ISO-3166 country code)</p>
+</item>
+<item>
+<title><code>LocationLevel.ADM1</code></title>
+  <p>A location representing a "first-level
+administrative division"; ie, a state, province, or similar
+division.</p>
+</item>
+<item>
+<title><code>LocationLevel.ADM2</code></title>
+  <p>A location representing a subdivision of a
+<link xref="GWeather.LocationLevel"/>.adm1 location, or a direct subdivision of
+a country that is not represented in a <link xref="GWeather.LocationEntry"/>.</p>
+</item>
+<item>
+<title><code>LocationLevel.CITY</code></title>
+  <p>A location representing a city</p>
+</item>
+<item>
+<title><code>LocationLevel.WEATHER_STATION</code></title>
+  <p>A location representing a
+weather station.</p>
+</item>
+<item>
+<title><code>LocationLevel.DETACHED</code></title>
+  <p>A location that is detached from the
+database, for example because it was loaded from external storage
+and could not be fully recovered. The parent of this location is
+the nearest weather station.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

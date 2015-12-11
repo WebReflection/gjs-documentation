@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="Cogl.buffer_set_update_hint"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_buffer_set_update_hint</api:name>
+      <api:arg>
+        <api:type>Cogl.Buffer</api:type>
+        <api:name>buffer</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.BufferUpdateHint</api:type>
+        <api:name>hint</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.buffer_set_update_hint</title>
+  <synopsis><code mime="text/x-gjs">
+function buffer_set_update_hint(buffer: <link xref="Cogl.Buffer">Cogl.Buffer</link>, hint: <link xref="Cogl.BufferUpdateHint">Cogl.BufferUpdateHint</link>): void {
+    // Gjs wrapper for cogl_buffer_set_update_hint()
+}
+  </code></synopsis>
+  <p>Sets the update hint on a buffer. See <link xref="Cogl.BufferUpdateHint"/> for a description
+of the available hints.</p>
+  <p>Since 1.2</p>
+<terms>
+<item>
+<title><code>buffer</code></title>
+  <p>a buffer object</p>
+</item>
+<item>
+<title><code>hint</code></title>
+  <p>the new hint</p>
+</item>
+</terms>
+
+</page>

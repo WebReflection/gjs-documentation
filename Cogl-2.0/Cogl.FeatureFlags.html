@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.FeatureFlags</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.FeatureFlags</span></h1></div>
+<div class="region">
+<div class="contents">
+<p class="p">Flags for the supported features.</p>
+<p class="p">Since 0.8</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">FeatureFlags.TEXTURE_RECTANGLE</span></dt>
+<dd class="terms"><p class="p">ARB_texture_rectangle support</p></dd>
+<dt class="terms"><span class="code">FeatureFlags.TEXTURE_NPOT</span></dt>
+<dd class="terms"><p class="p">Non power of two textures are supported
+   by the hardware. This is a equivalent to the
+   <span class="link"><a href="Cogl.FeatureFlags.html" title="Cogl.FeatureFlags">Cogl.FeatureFlags</a></span>.texture_npot_basic, <span class="link"><a href="Cogl.FeatureFlags.html" title="Cogl.FeatureFlags">Cogl.FeatureFlags</a></span>.texture_npot_mipmap
+   and <span class="link"><a href="Cogl.FeatureFlags.html" title="Cogl.FeatureFlags">Cogl.FeatureFlags</a></span>.texture_npot_repeat features combined.</p></dd>
+<dt class="terms"><span class="code">FeatureFlags.TEXTURE_YUV</span></dt>
+<dd class="terms"><p class="p">ycbcr conversion support</p></dd>
+<dt class="terms"><span class="code">FeatureFlags.TEXTURE_READ_PIXELS</span></dt>
+<dd class="terms"><p class="p">glReadPixels() support</p></dd>
+<dt class="terms"><span class="code">FeatureFlags.SHADERS_GLSL</span></dt>
+<dd class="terms"><p class="p">GLSL support</p></dd>
+<dt class="terms"><span class="code">FeatureFlags.OFFSCREEN</span></dt>
+<dd class="terms"><p class="p">FBO support</p></dd>
+<dt class="terms"><span class="code">FeatureFlags.OFFSCREEN_MULTISAMPLE</span></dt>
+<dd class="terms"><p class="p">Multisample support on FBOs</p></dd>
+<dt class="terms"><span class="code">FeatureFlags.OFFSCREEN_BLIT</span></dt>
+<dd class="terms"><p class="p">Blit support on FBOs</p></dd>
+<dt class="terms"><span class="code">FeatureFlags.FOUR_CLIP_PLANES</span></dt>
+<dd class="terms"><p class="p">At least 4 clip planes available</p></dd>
+<dt class="terms"><span class="code">FeatureFlags.STENCIL_BUFFER</span></dt>
+<dd class="terms"><p class="p">Stencil buffer support</p></dd>
+<dt class="terms"><span class="code">FeatureFlags.VBOS</span></dt>
+<dd class="terms"><p class="p">VBO support</p></dd>
+<dt class="terms"><span class="code">FeatureFlags.PBOS</span></dt>
+<dd class="terms"><p class="p">PBO support</p></dd>
+<dt class="terms"><span class="code">FeatureFlags.UNSIGNED_INT_INDICES</span></dt>
+<dd class="terms"><p class="p">Set if
+    <span class="link"><a href="Cogl.IndicesType.html" title="Cogl.IndicesType">Cogl.IndicesType</a></span>.int is supported in
+    cogl_vertex_buffer_indices_new().</p></dd>
+<dt class="terms"><span class="code">FeatureFlags.DEPTH_RANGE</span></dt>
+<dd class="terms"><p class="p">cogl_material_set_depth_range() support</p></dd>
+<dt class="terms"><span class="code">FeatureFlags.TEXTURE_NPOT_BASIC</span></dt>
+<dd class="terms"><p class="p">The hardware supports non power
+    of two textures, but you also need to check the
+    <span class="link"><a href="Cogl.FeatureFlags.html" title="Cogl.FeatureFlags">Cogl.FeatureFlags</a></span>.texture_npot_mipmap and <span class="link"><a href="Cogl.FeatureFlags.html" title="Cogl.FeatureFlags">Cogl.FeatureFlags</a></span>.texture_npot_repeat
+    features to know if the hardware supports npot texture mipmaps
+    or repeat modes other than
+    <span class="link"><a href="Cogl.PipelineWrapMode.html" title="Cogl.PipelineWrapMode">Cogl.PipelineWrapMode</a></span>.clamp_to_edge respectively.</p></dd>
+<dt class="terms"><span class="code">FeatureFlags.TEXTURE_NPOT_MIPMAP</span></dt>
+<dd class="terms"><p class="p">Mipmapping is supported in
+    conjuntion with non power of two textures.</p></dd>
+<dt class="terms"><span class="code">FeatureFlags.TEXTURE_NPOT_REPEAT</span></dt>
+<dd class="terms"><p class="p">Repeat modes other than
+    <span class="link"><a href="Cogl.PipelineWrapMode.html" title="Cogl.PipelineWrapMode">Cogl.PipelineWrapMode</a></span>.clamp_to_edge are supported by the
+    hardware.</p></dd>
+<dt class="terms"><span class="code">FeatureFlags.POINT_SPRITE</span></dt>
+<dd class="terms"><p class="p">Whether
+    cogl_material_set_layer_point_sprite_coords_enabled() is supported.</p></dd>
+<dt class="terms"><span class="code">FeatureFlags.TEXTURE_3D</span></dt>
+<dd class="terms"><p class="p">3D texture support</p></dd>
+<dt class="terms"><span class="code">FeatureFlags.SHADERS_ARBFP</span></dt>
+<dd class="terms"><p class="p">ARBFP support</p></dd>
+<dt class="terms"><span class="code">FeatureFlags.MAP_BUFFER_FOR_READ</span></dt>
+<dd class="terms"><p class="p">Whether <span class="link"><a href="Cogl.buffer_map.html" title="Cogl.buffer_map">Cogl.buffer_map</a></span> is
+    supported with CoglBufferAccess including read support.</p></dd>
+<dt class="terms"><span class="code">FeatureFlags.MAP_BUFFER_FOR_WRITE</span></dt>
+<dd class="terms"><p class="p">Whether <span class="link"><a href="Cogl.buffer_map.html" title="Cogl.buffer_map">Cogl.buffer_map</a></span> is
+    supported with CoglBufferAccess including write support.</p></dd>
+<dt class="terms"><span class="code">FeatureFlags.ONSCREEN_MULTIPLE</span></dt>
+<dd class="terms"></dd>
+<dt class="terms"><span class="code">FeatureFlags.DEPTH_TEXTURE</span></dt>
+<dd class="terms"><p class="p">Whether <span class="link"><a href="Cogl.Framebuffer.html" title="Cogl.Framebuffer">Cogl.Framebuffer</a></span> support rendering the
+    depth buffer to a texture.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Cogl">Cogl</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

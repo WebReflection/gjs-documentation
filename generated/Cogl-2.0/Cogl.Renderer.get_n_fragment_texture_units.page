@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Cogl.Renderer.get_n_fragment_texture_units"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Renderer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gint)</api:type>
+      </api:returns>
+      <api:name>cogl_renderer_get_n_fragment_texture_units</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Renderer.prototype.get_n_fragment_texture_units</title>
+  <synopsis><code mime="text/x-gjs">
+function get_n_fragment_texture_units(): Number(gint) {
+    // Gjs wrapper for cogl_renderer_get_n_fragment_texture_units()
+}
+  </code></synopsis>
+  <p>Queries how many texture units can be used from fragment programs</p>
+  <p>Since 1.8</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the number of texture image units.</p>
+</item>
+</terms>
+
+</page>

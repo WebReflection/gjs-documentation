@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gcr.Parser.get_parsed_format"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Parser" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gcr.DataFormat</api:type>
+      </api:returns>
+      <api:name>gcr_parser_get_parsed_format</api:name>
+    </api:function>
+  </info>
+  <title>Gcr.Parser.prototype.get_parsed_format</title>
+  <synopsis><code mime="text/x-gjs">
+function get_parsed_format(): <link xref="Gcr.DataFormat">Gcr.DataFormat</link> {
+    // Gjs wrapper for gcr_parser_get_parsed_format()
+}
+  </code></synopsis>
+  <p>Get the format of the raw data block that represents this parsed object.
+This corresponds with the data returned from <link xref="Gcr.Parser.get_parsed_block"/>.</p>  <p>This is only valid during the <link xref="Gcr.Parser-parsed"/> signal.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the data format of the currently parsed item</p>
+</item>
+</terms>
+
+</page>

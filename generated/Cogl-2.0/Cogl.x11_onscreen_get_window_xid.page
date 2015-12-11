@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="Cogl.x11_onscreen_get_window_xid"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(guint32)</api:type>
+      </api:returns>
+      <api:name>cogl_x11_onscreen_get_window_xid</api:name>
+      <api:arg>
+        <api:type>Cogl.Onscreen</api:type>
+        <api:name>onscreen</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.x11_onscreen_get_window_xid</title>
+  <synopsis><code mime="text/x-gjs">
+function x11_onscreen_get_window_xid(onscreen: <link xref="Cogl.Onscreen">Cogl.Onscreen</link>): Number(guint32) {
+    // Gjs wrapper for cogl_x11_onscreen_get_window_xid()
+}
+  </code></synopsis>
+  <p>Assuming you know the given <code>onscreen</code> framebuffer is based on an x11 window
+this queries the XID of that window. If
+<link xref="Cogl.x11_onscreen_set_foreign_window_xid"/> was previously called then it
+will return that same XID otherwise it will be the XID of a window Cogl
+created internally. If the window has not been allocated yet and a foreign
+xid has not been set then it's undefined what value will be returned.</p>  <p>It's undefined what this function does if called when not using an x11 based
+renderer.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>onscreen</code></title>
+  <p>A <link xref="Cogl.Onscreen"/> framebuffer</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

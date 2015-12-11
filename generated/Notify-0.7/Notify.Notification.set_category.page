@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Notify.Notification.set_category"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Notify.Notification" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>notify_notification_set_category</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>category</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Notify.Notification.prototype.set_category</title>
+  <synopsis><code mime="text/x-gjs">
+function set_category(category: String): void {
+    // Gjs wrapper for notify_notification_set_category()
+}
+  </code></synopsis>
+  <p>Sets the category of this notification. This can be used by the
+notification server to filter or display the data in a certain way.</p>
+
+<terms>
+<item>
+<title><code>category</code></title>
+  <p>The category.</p>
+</item>
+</terms>
+
+</page>

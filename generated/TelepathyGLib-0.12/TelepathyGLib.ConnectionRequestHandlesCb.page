@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="TelepathyGLib.ConnectionRequestHandlesCb"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>TelepathyGLib.ConnectionRequestHandlesCb</title>
+  <synopsis><code mime="text/x-gjs">
+function onConnectionRequestHandlesCb(connection: <link xref="TelepathyGLib.Connection">TelepathyGLib.Connection</link>, handle_type: <link xref="TelepathyGLib.HandleType">TelepathyGLib.HandleType</link>, handles: Array(Number(guint)), ids: Array(String), error: <link href="../GLib-2.0/GLib.Error.html">GLib.Error</link>, weak_object: <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link>): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>connection</code></title>
+
+</item>
+<item>
+<title><code>handle_type</code></title>
+
+</item>
+<item>
+<title><code>handles</code></title>
+
+</item>
+<item>
+<title><code>ids</code></title>
+
+</item>
+<item>
+<title><code>error</code></title>
+
+</item>
+<item>
+<title><code>weak_object</code></title>
+
+</item>
+</terms>
+
+</page>

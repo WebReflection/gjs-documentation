@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gcr.Collection.get_length"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Collection" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(guint)</api:type>
+      </api:returns>
+      <api:name>gcr_collection_get_length</api:name>
+    </api:function>
+  </info>
+  <title>Gcr.Collection.prototype.get_length</title>
+  <synopsis><code mime="text/x-gjs">
+function get_length(): Number(guint) {
+    // Gjs wrapper for gcr_collection_get_length()
+}
+  </code></synopsis>
+  <p>Get the number of objects in this collection.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>The number of objects.</p>
+</item>
+</terms>
+
+</page>

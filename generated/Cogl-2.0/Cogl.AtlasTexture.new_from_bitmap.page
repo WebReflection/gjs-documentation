@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<page id="Cogl.AtlasTexture.new_from_bitmap"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.AtlasTexture" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.AtlasTexture</api:type>
+      </api:returns>
+      <api:name>cogl_atlas_texture_new_from_bitmap</api:name>
+      <api:arg>
+        <api:type>Cogl.Bitmap</api:type>
+        <api:name>bmp</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.AtlasTexture.new_from_bitmap</title>
+  <synopsis><code mime="text/x-gjs">
+function new_from_bitmap(bmp: <link xref="Cogl.Bitmap">Cogl.Bitmap</link>): <link xref="Cogl.AtlasTexture">Cogl.AtlasTexture</link> {
+    // Gjs wrapper for cogl_atlas_texture_new_from_bitmap()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="Cogl.AtlasTexture"/> texture based on data residing in a
+@bitmap. A <link xref="Cogl.AtlasTexture"/> represents a sub-region within one of
+Cogl's shared texture atlases.</p>  <p>The storage for the texture is not allocated before this function
+returns. You can call <link xref="Cogl.Texture.allocate"/> to explicitly
+allocate the underlying storage or preferably let Cogl
+automatically allocate storage lazily when it may know more about
+how the texture is being used and can optimize how it is allocated.</p>  <p>The texture is still configurable until it has been allocated so
+for example you can influence the internal format of the texture
+using <link xref="Cogl.Texture.set_components"/> and
+<link xref="Cogl.Texture.set_premultiplied"/>.</p>  <p>&lt;note&gt;Allocate call can fail if Cogl considers the internal
+format to be incompatible with the format of its internal
+atlases.&lt;/note&gt;</p>  <p>&lt;note&gt;The returned <link xref="Cogl.AtlasTexture"/> is a high-level meta-texture
+with some limitations. See the documentation for <link xref="Cogl.MetaTexture"/>
+for more details.&lt;/note&gt;</p>
+  <p>Since 1.16</p>
+<terms>
+<item>
+<title><code>bmp</code></title>
+
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>A new <link xref="Cogl.AtlasTexture"/> object.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.set_uniform_matrix"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_set_uniform_matrix</api:name>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>uniform_location</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>dimensions</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>count</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.Bool</api:type>
+        <api:name>transpose</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.set_uniform_matrix</title>
+  <synopsis><code mime="text/x-gjs">
+function set_uniform_matrix(uniform_location: Number(gint), dimensions: Number(gint), count: Number(gint), transpose: <link xref="Cogl.Bool">Cogl.Bool</link>, value: Number(gfloat)): void {
+    // Gjs wrapper for cogl_pipeline_set_uniform_matrix()
+}
+  </code></synopsis>
+  <p>Sets new values for the uniform at <code>uniform_location</code>. If this
+pipeline has a user program attached and is later used as a source
+for drawing, the given values will be assigned to the uniform which
+can be accessed from the shader's source. The value for
+<code>uniform_location</code> should be retrieved from the string name of the
+uniform by calling <link xref="Cogl.Pipeline.get_uniform_location"/>.</p>  <p>This function can be used to set any matrix type uniform, including
+matrix arrays. For example, to set a single mat4 uniform you would
+use 4 for <code>dimensions</code> and 1 for <code>count</code>. To set an array of 8
+mat3 values, you could use 3 for <code>dimensions</code> and 8 for <code>count</code>.</p>  <p>If <code>transpose</code> is <code>false</code> then the matrix is expected to be in
+column-major order or if it is <code>true</code> then the matrix is in
+row-major order. You can pass a <link xref="Cogl.Matrix"/> by calling by passing
+the result of <link xref="Cogl.Matrix.get_array"/> in <code>value</code> and setting
+<code>transpose</code> to <code>false</code>.</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>uniform_location</code></title>
+  <p>The uniform's location identifier</p>
+</item>
+<item>
+<title><code>dimensions</code></title>
+  <p>The size of the matrix</p>
+</item>
+<item>
+<title><code>count</code></title>
+  <p>The number of values to set</p>
+</item>
+<item>
+<title><code>transpose</code></title>
+  <p>Whether to transpose the matrix</p>
+</item>
+<item>
+<title><code>value</code></title>
+  <p>Pointer to the new values to set</p>
+</item>
+</terms>
+
+</page>

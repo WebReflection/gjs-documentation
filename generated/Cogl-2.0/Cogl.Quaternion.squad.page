@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<page id="Cogl.Quaternion.squad"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Quaternion" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_quaternion_squad</api:name>
+      <api:arg>
+        <api:type>Cogl.Quaternion</api:type>
+        <api:name>prev</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.Quaternion</api:type>
+        <api:name>a</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.Quaternion</api:type>
+        <api:name>b</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.Quaternion</api:type>
+        <api:name>next</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>t</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Quaternion.prototype.squad</title>
+  <synopsis><code mime="text/x-gjs">
+function squad(prev: <link xref="Cogl.Quaternion">Cogl.Quaternion</link>, a: <link xref="Cogl.Quaternion">Cogl.Quaternion</link>, b: <link xref="Cogl.Quaternion">Cogl.Quaternion</link>, next: <link xref="Cogl.Quaternion">Cogl.Quaternion</link>, t: Number(gfloat)): void {
+    // Gjs wrapper for cogl_quaternion_squad()
+}
+  </code></synopsis>
+
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>prev</code></title>
+  <p>A <link xref="Cogl.Quaternion"/> used before <code>a</code></p>
+</item>
+<item>
+<title><code>a</code></title>
+  <p>The first <link xref="Cogl.Quaternion"/></p>
+</item>
+<item>
+<title><code>b</code></title>
+  <p>The second <link xref="Cogl.Quaternion"/></p>
+</item>
+<item>
+<title><code>next</code></title>
+  <p>A <link xref="Cogl.Quaternion"/> that will be used after <code>b</code></p>
+</item>
+<item>
+<title><code>t</code></title>
+  <p>The factor in the range [0,1] used to interpolate between
+quaternion <code>a</code> and <code>b</code>.</p>
+</item>
+</terms>
+
+</page>

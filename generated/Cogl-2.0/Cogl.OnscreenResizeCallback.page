@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Cogl.OnscreenResizeCallback"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Cogl.OnscreenResizeCallback</title>
+  <synopsis><code mime="text/x-gjs">
+function onOnscreenResizeCallback(onscreen: <link xref="Cogl.Onscreen">Cogl.Onscreen</link>, width: Number(gint), height: Number(gint)): void {
+}
+  </code></synopsis>
+  <p>Is a callback type used with the
+<link xref="Cogl.Onscreen.add_resize_callback"/> allowing applications to be
+notified whenever an <code>onscreen</code> framebuffer is resized.</p>  <p>&lt;note&gt;Cogl automatically updates the viewport of an <code>onscreen</code>
+framebuffer that is resized so this callback is also an indication
+that the viewport has been modified too&lt;/note&gt;</p>  <p>&lt;note&gt;A resize callback will only ever be called while dispatching
+Cogl events from the system mainloop; so for example during
+<link xref="Cogl.poll_renderer_dispatch"/>. This is so that callbacks shouldn't
+occur while an application might have arbitrary locks held for
+example.&lt;/note&gt;</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>onscreen</code></title>
+  <p>A <link xref="Cogl.Onscreen"/> framebuffer that was resized</p>
+</item>
+<item>
+<title><code>width</code></title>
+  <p>The new width of <code>onscreen</code></p>
+</item>
+<item>
+<title><code>height</code></title>
+  <p>The new height of <code>onscreen</code></p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<page id="Gck.Builder.take_data"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Builder" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gck_builder_take_data</api:name>
+      <api:arg>
+        <api:type>Number(gulong)</api:type>
+        <api:name>attr_type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint8)</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gsize)</api:type>
+        <api:name>length</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Builder.prototype.take_data</title>
+  <synopsis><code mime="text/x-gjs">
+function take_data(attr_type: Number(gulong), value: Number(guint8), length: Number(gsize)): void {
+    // Gjs wrapper for gck_builder_take_data()
+}
+  </code></synopsis>
+  <p>Add a new attribute to the builder with an arbitrary value. Unconditionally
+adds a new attribute, even if one with the same <code>attr_type</code> already exists.</p>  <p>Ownership of the <code>value</code> memory is taken by the builder, may be reallocated,
+and is eventually freed with g_free(). The memory must have been allocated
+using the standard GLib memory allocation routines.</p>  <p><code>null</code> may be specified for the <code>value</code> argument, in which case an empty
+attribute is created. GCK_INVALID may be specified for the length, in
+which case an invalid attribute is created in the PKCS\#11 style.</p>
+
+<terms>
+<item>
+<title><code>attr_type</code></title>
+  <p>the new attribute type</p>
+</item>
+<item>
+<title><code>value</code></title>
+  <p>(array length=length): (allow-none): the new
+        attribute memory</p>
+</item>
+<item>
+<title><code>length</code></title>
+  <p>the length of the memory</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<page id="Gcr.FilterCollection.new_with_callback"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.FilterCollection" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gcr.FilterCollection</api:type>
+      </api:returns>
+      <api:name>gcr_filter_collection_new_with_callback</api:name>
+      <api:arg>
+        <api:type>Gcr.Collection</api:type>
+        <api:name>underlying</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gcr.FilterCollectionFunc</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.FilterCollection.new_with_callback</title>
+  <synopsis><code mime="text/x-gjs">
+function new_with_callback(underlying: <link xref="Gcr.Collection">Gcr.Collection</link>, callback: <link xref="Gcr.FilterCollectionFunc">Gcr.FilterCollectionFunc</link>): <link xref="Gcr.FilterCollection">Gcr.FilterCollection</link> {
+    // Gjs wrapper for gcr_filter_collection_new_with_callback()
+}
+  </code></synopsis>
+  <p>Create a new <link xref="Gcr.FilterCollection"/>.</p>  <p>The callback should return <code>true</code> if an object should appear in the
+filtered collection.</p>  <p>If a <code>null</code> callback is set, then all underlynig objects will appear in the
+filtered collection.</p>
+
+<terms>
+<item>
+<title><code>underlying</code></title>
+  <p>the underlying collection</p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>function to call for each object</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a newly allocated
+         filtered collection, which should be freed with g_object_unref()</p>
+</item>
+</terms>
+
+</page>

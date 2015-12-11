@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="Cogl.DepthState.set_test_enabled"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.DepthState" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_depth_state_set_test_enabled</api:name>
+      <api:arg>
+        <api:type>Cogl.Bool</api:type>
+        <api:name>enable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.DepthState.prototype.set_test_enabled</title>
+  <synopsis><code mime="text/x-gjs">
+function set_test_enabled(enable: <link xref="Cogl.Bool">Cogl.Bool</link>): void {
+    // Gjs wrapper for cogl_depth_state_set_test_enabled()
+}
+  </code></synopsis>
+  <p>Enables or disables depth testing according to the value of
+<code>enable</code>.</p>  <p>If depth testing is enable then the <link xref="Cogl.DepthTestFunction"/> set
+using <link xref="Cogl.DepthState.set_test_function"/> us used to evaluate
+the depth value of incoming fragments against the corresponding
+value stored in the current depth buffer, and if the test passes
+then the fragments depth value is used to update the depth buffer.
+(unless you have disabled depth writing via
+<link xref="Cogl.DepthState.set_write_enabled"/>)</p>  <p>By default depth testing is disabled.</p>  <p>NB: this won't directly affect the state of the GPU. You have
+to then set the state on a <link xref="Cogl.Pipeline"/> using
+<link xref="Cogl.Pipeline.set_depth_state"/></p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>enable</code></title>
+  <p>The enable state you want</p>
+</item>
+</terms>
+
+</page>

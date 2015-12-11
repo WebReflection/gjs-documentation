@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Gcr.Parser.format_supported"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Parser" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gcr_parser_format_supported</api:name>
+      <api:arg>
+        <api:type>Gcr.DataFormat</api:type>
+        <api:name>format</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.Parser.prototype.format_supported</title>
+  <synopsis><code mime="text/x-gjs">
+function format_supported(format: <link xref="Gcr.DataFormat">Gcr.DataFormat</link>): Boolean {
+    // Gjs wrapper for gcr_parser_format_supported()
+}
+  </code></synopsis>
+  <p>Check whether the given format is supported by the parser.</p>
+
+<terms>
+<item>
+<title><code>format</code></title>
+  <p>The format identifier</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>Whether the format is supported.</p>
+</item>
+</terms>
+
+</page>

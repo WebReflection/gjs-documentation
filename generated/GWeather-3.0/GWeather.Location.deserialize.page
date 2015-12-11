@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="GWeather.Location.deserialize"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Location" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GWeather.Location</api:type>
+      </api:returns>
+      <api:name>gweather_location_deserialize</api:name>
+      <api:arg>
+        <api:type>GLib.Variant</api:type>
+        <api:name>serialized</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GWeather.Location.prototype.deserialize</title>
+  <synopsis><code mime="text/x-gjs">
+function deserialize(serialized: <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link>): <link xref="GWeather.Location">GWeather.Location</link> {
+    // Gjs wrapper for gweather_location_deserialize()
+}
+  </code></synopsis>
+  <p>This call undoes the effect of <link xref="GWeather.Location.serialize"/>, that
+is, it turns a <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> into a <link xref="GWeather.Location"/>. The conversion
+happens in the context of <code>world</code> (i.e, for a city or weather station,
+the resulting location will be attached to a administrative division,
+country and region as appropriate).</p>
+
+<terms>
+<item>
+<title><code>serialized</code></title>
+  <p>the <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> representing the <link xref="GWeather.Location"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the deserialized location.</p>
+</item>
+</terms>
+
+</page>

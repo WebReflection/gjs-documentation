@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<page id="Cogl.wayland_onscreen_resize"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_wayland_onscreen_resize</api:name>
+      <api:arg>
+        <api:type>Cogl.Onscreen</api:type>
+        <api:name>onscreen</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>width</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>height</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>offset_x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>offset_y</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.wayland_onscreen_resize</title>
+  <synopsis><code mime="text/x-gjs">
+function wayland_onscreen_resize(onscreen: <link xref="Cogl.Onscreen">Cogl.Onscreen</link>, width: Number(gint), height: Number(gint), offset_x: Number(gint), offset_y: Number(gint)): void {
+    // Gjs wrapper for cogl_wayland_onscreen_resize()
+}
+  </code></synopsis>
+  <p>Resizes the backbuffer of the given <code>onscreen</code> framebuffer to the
+given size. Since a buffer is usually conceptually scaled with a
+center point the <code>offset_x</code> and <code>offset_y</code> arguments allow the newly
+allocated buffer to be positioned relative to the old buffer size.</p>  <p>For example a buffer that is being resized by moving the bottom right
+corner, and the top left corner is remaining static would use x and y
+offsets of (0, 0) since the top-left of the new buffer should have the same
+position as the old buffer. If the center of the old buffer is being zoomed
+into then all the corners of the new buffer move out from the center and the x
+and y offsets would be (-half_x_size_increase, -half_y_size_increase) where
+x/y_size_increase is how many pixels bigger the buffer is on the x and y
+axis.</p>  <p>Note that if some drawing commands have been applied to the
+framebuffer since the last swap buffers then the resize will be
+queued and will only take effect in the next swap buffers.</p>  <p>If multiple calls to <link xref="Cogl.wayland_onscreen_resize"/> get queued
+before the next swap buffers request then the relative x and y
+offsets accumulate instead of being replaced. The <code>width</code> and
+<code>height</code> values superseed the old values.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>onscreen</code></title>
+  <p>A <link xref="Cogl.Onscreen"/> framebuffer</p>
+</item>
+<item>
+<title><code>width</code></title>
+  <p>The desired width of the framebuffer</p>
+</item>
+<item>
+<title><code>height</code></title>
+  <p>The desired height of the framebuffer</p>
+</item>
+<item>
+<title><code>offset_x</code></title>
+  <p>A relative x offset for the new framebuffer</p>
+</item>
+<item>
+<title><code>offset_y</code></title>
+  <p>A relative y offset for the new framebuffer</p>
+</item>
+</terms>
+
+</page>

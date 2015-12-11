@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Cogl.Framebuffer.get_alpha_bits"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Framebuffer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gint)</api:type>
+      </api:returns>
+      <api:name>cogl_framebuffer_get_alpha_bits</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Framebuffer.prototype.get_alpha_bits</title>
+  <synopsis><code mime="text/x-gjs">
+function get_alpha_bits(): Number(gint) {
+    // Gjs wrapper for cogl_framebuffer_get_alpha_bits()
+}
+  </code></synopsis>
+  <p>Retrieves the number of alpha bits of <code>framebuffer</code></p>
+  <p>Since 1.8</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the number of bits</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.get_shininess"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gfloat)</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_get_shininess</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.get_shininess</title>
+  <synopsis><code mime="text/x-gjs">
+function get_shininess(): Number(gfloat) {
+    // Gjs wrapper for cogl_pipeline_get_shininess()
+}
+  </code></synopsis>
+  <p>Retrieves the pipelines current emission color.</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>The pipelines current shininess value</p>
+</item>
+</terms>
+
+</page>

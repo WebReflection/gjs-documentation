@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+<page id="Cogl.Framebuffer.draw_multitextured_rectangle"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Framebuffer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_framebuffer_draw_multitextured_rectangle</api:name>
+      <api:arg>
+        <api:type>Cogl.Pipeline</api:type>
+        <api:name>pipeline</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>x_1</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>y_1</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>x_2</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>y_2</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Array(Number(gfloat))</api:type>
+        <api:name>tex_coords</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>tex_coords_len</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Framebuffer.prototype.draw_multitextured_rectangle</title>
+  <synopsis><code mime="text/x-gjs">
+function draw_multitextured_rectangle(pipeline: <link xref="Cogl.Pipeline">Cogl.Pipeline</link>, x_1: Number(gfloat), y_1: Number(gfloat), x_2: Number(gfloat), y_2: Number(gfloat), tex_coords: Array(Number(gfloat)), tex_coords_len: Number(gint)): void {
+    // Gjs wrapper for cogl_framebuffer_draw_multitextured_rectangle()
+}
+  </code></synopsis>
+  <p>Draws a textured rectangle to <code>framebuffer</code> with the given <code>pipeline</code>
+state with the top left corner positioned at (<code>x_1</code>, <code>y_1</code>) and the
+bottom right corner positioned at (<code>x_2</code>, <code>y_2</code>). As a pipeline may
+contain multiple texture layers this interface lets you supply
+texture coordinates for each layer of the pipeline.</p>  <p>&lt;note&gt;The position is the position before the rectangle has been
+transformed by the model-view matrix and the projection
+matrix.&lt;/note&gt;</p>  <p>This is a high level drawing api that can handle any kind of
+<link xref="Cogl.MetaTexture"/> texture for the first layer such as
+<link xref="Cogl.Texture2DSliced"/> textures which may internally be comprised of
+multiple low-level textures.  This is unlike low-level drawing apis
+such as <link xref="Cogl.Primitive.draw"/> which only support low level texture
+types that are directly supported by GPUs such as <link xref="Cogl.Texture2D"/>.</p>  <p>&lt;note&gt;This api can not currently handle multiple high-level meta
+texture layers. The first layer may be a high level meta texture
+such as <link xref="Cogl.Texture2DSliced"/> but all other layers much be low
+level textures such as <link xref="Cogl.Texture2D"/> and additionally they
+should be textures that can be sampled using normalized coordinates
+(so not <link xref="Cogl.TextureRectangle"/> textures).&lt;/note&gt;</p>  <p>The top left texture coordinate for layer 0 of any pipeline will be
+(tex_coords[0], tex_coords[1]) and the bottom right coordinate will
+be (tex_coords[2], tex_coords[3]). The coordinates for layer 1
+would be (tex_coords[4], tex_coords[5]) (tex_coords[6],
+tex_coords[7]) and so on...</p>  <p>The given texture coordinates should always be normalized such that
+(0, 0) corresponds to the top left and (1, 1) corresponds to the
+bottom right. To map an entire texture across the rectangle pass
+in tex_coords[0]=0, tex_coords[1]=0, tex_coords[2]=1,
+tex_coords[3]=1.</p>  <p>&lt;note&gt;Even if you have associated a <link xref="Cogl.TextureRectangle"/> texture
+which normally implies working with non-normalized texture
+coordinates this api should still be passed normalized texture
+coordinates.&lt;/note&gt;</p>  <p>The first pair of coordinates are for the first layer (with the
+smallest layer index) and if you supply less texture coordinates
+than there are layers in the current source material then default
+texture coordinates (0.0, 0.0, 1.0, 1.0) are generated.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>pipeline</code></title>
+  <p>A <link xref="Cogl.Pipeline"/> state object</p>
+</item>
+<item>
+<title><code>x_1</code></title>
+  <p>x coordinate upper left on screen.</p>
+</item>
+<item>
+<title><code>y_1</code></title>
+  <p>y coordinate upper left on screen.</p>
+</item>
+<item>
+<title><code>x_2</code></title>
+  <p>x coordinate lower right on screen.</p>
+</item>
+<item>
+<title><code>y_2</code></title>
+  <p>y coordinate lower right on screen.</p>
+</item>
+<item>
+<title><code>tex_coords</code></title>
+  <p>An array containing groups of
+  4 float values: [s_1, t_1, s_2, t_2] that are interpreted as two texture
+  coordinates; one for the top left texel, and one for the bottom right
+  texel. Each value should be between 0.0 and 1.0, where the coordinate
+  (0.0, 0.0) represents the top left of the texture, and (1.0, 1.0) the
+  bottom right.</p>
+</item>
+<item>
+<title><code>tex_coords_len</code></title>
+  <p>The length of the <code>tex_coords</code> array. (For one layer
+  and one group of texture coordinates, this would be 4)</p>
+</item>
+</terms>
+
+</page>

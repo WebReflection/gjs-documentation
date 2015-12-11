@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gcr.Prompt.get_choice_chosen"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Prompt" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gcr_prompt_get_choice_chosen</api:name>
+    </api:function>
+  </info>
+  <title>Gcr.Prompt.prototype.get_choice_chosen</title>
+  <synopsis><code mime="text/x-gjs">
+function get_choice_chosen(): Boolean {
+    // Gjs wrapper for gcr_prompt_get_choice_chosen()
+}
+  </code></synopsis>
+  <p>Get whether the additional choice was chosen or not.</p>  <p>The additional choice would have been setup using
+<link xref="Gcr.Prompt.set_choice_label"/>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>whether chosen</p>
+</item>
+</terms>
+
+</page>

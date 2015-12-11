@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gck.Enumerator.get_interaction"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Enumerator" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.TlsInteraction</api:type>
+      </api:returns>
+      <api:name>gck_enumerator_get_interaction</api:name>
+    </api:function>
+  </info>
+  <title>Gck.Enumerator.prototype.get_interaction</title>
+  <synopsis><code mime="text/x-gjs">
+function get_interaction(): <link href="../Gio-2.0/Gio.TlsInteraction.html">Gio.TlsInteraction</link> {
+    // Gjs wrapper for gck_enumerator_get_interaction()
+}
+  </code></synopsis>
+  <p>Get the interaction used when a pin is needed</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the interaction or <code>null</code></p>
+</item>
+</terms>
+
+</page>

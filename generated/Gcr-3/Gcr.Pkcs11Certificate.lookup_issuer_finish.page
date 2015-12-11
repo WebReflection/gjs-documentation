@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="Gcr.Pkcs11Certificate.lookup_issuer_finish"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Pkcs11Certificate" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gcr.Certificate</api:type>
+      </api:returns>
+      <api:name>gcr_pkcs11_certificate_lookup_issuer_finish</api:name>
+      <api:arg>
+        <api:type>Gio.AsyncResult</api:type>
+        <api:name>result</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.Pkcs11Certificate.lookup_issuer_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function lookup_issuer_finish(result: <link href="../Gio-2.0/Gio.AsyncResult.html">Gio.AsyncResult</link>): <link xref="Gcr.Certificate">Gcr.Certificate</link> {
+    // Gjs wrapper for gcr_pkcs11_certificate_lookup_issuer_finish()
+}
+  </code></synopsis>
+  <p>Finishes an asynchronous operation started by
+<link xref="Gcr.Pkcs11Certificate.lookup_issuer_async"/>.</p>  <p>Will return <code>null</code> if no issuer certificate is found. Use @error to determine
+if an error occurred.</p>
+
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>the <link href="../Gio-2.0/Gio.AsyncResult.html">Gio.AsyncResult</link> passed to the callback</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a new <link xref="Gcr.Pkcs11Certificate"/>, or <code>null</code></p>
+</item>
+</terms>
+
+</page>

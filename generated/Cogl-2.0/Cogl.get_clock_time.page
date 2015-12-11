@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<page id="Cogl.get_clock_time"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gint64)</api:type>
+      </api:returns>
+      <api:name>cogl_get_clock_time</api:name>
+      <api:arg>
+        <api:type>Cogl.Context</api:type>
+        <api:name>context</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.get_clock_time</title>
+  <synopsis><code mime="text/x-gjs">
+function get_clock_time(context: <link xref="Cogl.Context">Cogl.Context</link>): Number(gint64) {
+    // Gjs wrapper for cogl_get_clock_time()
+}
+  </code></synopsis>
+  <p>Returns the current time value from Cogl's internal clock. This
+clock is used for measuring times such as the presentation time
+in a <link xref="Cogl.FrameInfo"/>.</p>  <p>This method is meant for converting timestamps retrieved from Cogl
+to other time systems, and is not meant to be used as a standalone
+timing system. For that reason, if this function is called without
+having retrieved a valid (non-zero) timestamp from Cogl first, it
+may return 0 to indicate that Cogl has no active internal clock.</p>
+  <p>Since 1.14</p>
+<terms>
+<item>
+<title><code>context</code></title>
+  <p>a <link xref="Cogl.Context"/> pointer</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the time value for the Cogl clock, in nanoseconds
+ from an arbitrary point in time, or 0 if Cogl doesn't have an
+ active internal clock.</p>
+</item>
+</terms>
+
+</page>

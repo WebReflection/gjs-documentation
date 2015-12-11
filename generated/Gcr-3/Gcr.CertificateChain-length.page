@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gcr.CertificateChain-length"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.CertificateChain" group="property" type="guide"/>
+    <title type="link" role="topic">length</title>
+  </info>
+  <title>Gcr.CertificateChain.length</title>
+  <synopsis><code mime="text/x-gjs">
+CertificateChain.length: Number(guint) (Read)
+  </code></synopsis>
+  <p>The length of the certificate chain.</p>
+
+</page>

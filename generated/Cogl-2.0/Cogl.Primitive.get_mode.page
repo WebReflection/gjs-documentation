@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Cogl.Primitive.get_mode"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Primitive" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.VerticesMode</api:type>
+      </api:returns>
+      <api:name>cogl_primitive_get_mode</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Primitive.prototype.get_mode</title>
+  <synopsis><code mime="text/x-gjs">
+function get_mode(): <link xref="Cogl.VerticesMode">Cogl.VerticesMode</link> {
+    // Gjs wrapper for cogl_primitive_get_mode()
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

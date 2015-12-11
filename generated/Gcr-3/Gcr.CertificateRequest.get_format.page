@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gcr.CertificateRequest.get_format"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.CertificateRequest" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gcr.CertificateRequestFormat</api:type>
+      </api:returns>
+      <api:name>gcr_certificate_request_get_format</api:name>
+    </api:function>
+  </info>
+  <title>Gcr.CertificateRequest.prototype.get_format</title>
+  <synopsis><code mime="text/x-gjs">
+function get_format(): <link xref="Gcr.CertificateRequestFormat">Gcr.CertificateRequestFormat</link> {
+    // Gjs wrapper for gcr_certificate_request_get_format()
+}
+  </code></synopsis>
+  <p>Get the format of this certificate request.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the format</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="GdkX11.X11Keymap.get_group_for_state"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GdkX11.X11Keymap" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gint)</api:type>
+      </api:returns>
+      <api:name>gdk_x11_keymap_get_group_for_state</api:name>
+      <api:arg>
+        <api:type>Number(guint)</api:type>
+        <api:name>state</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GdkX11.X11Keymap.prototype.get_group_for_state</title>
+  <synopsis><code mime="text/x-gjs">
+function get_group_for_state(state: Number(guint)): Number(gint) {
+    // Gjs wrapper for gdk_x11_keymap_get_group_for_state()
+}
+  </code></synopsis>
+  <p>Extracts the group from the state field sent in an X Key event.
+This is only needed for code processing raw X events, since <link href="../Gdk-3.0/Gdk.EventKey.html">Gdk.EventKey</link>
+directly includes an is_modifier field.</p>
+  <p>Since 3.6</p>
+<terms>
+<item>
+<title><code>state</code></title>
+  <p>raw state returned from X</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the index of the active keyboard group for the event</p>
+</item>
+</terms>
+
+</page>

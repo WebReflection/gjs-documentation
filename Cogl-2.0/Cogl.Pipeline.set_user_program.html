@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.Pipeline.prototype.set_user_program</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » <a class="trail" href="Cogl.Pipeline.html" title="Cogl.Pipeline">Cogl.Pipeline</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.Pipeline.prototype.set_user_program</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function set_user_program(program: <span class="link"><a href="Cogl.Handle.html" title="Cogl.Handle">Cogl.Handle</a></span>): void {
+    // Gjs wrapper for cogl_pipeline_set_user_program()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Associates a linked CoglProgram with the given pipeline so that the
+program can take full control of vertex and/or fragment processing.</p>
+<p class="p">This is an example of how it can be used to associate an ARBfp
+program with a <span class="link"><a href="Cogl.Pipeline.html" title="Cogl.Pipeline">Cogl.Pipeline</a></span>:
+|[
+CoglHandle shader;
+CoglHandle program;
+CoglPipeline *pipeline;</p>
+<p class="p">shader = cogl_create_shader (COGL_SHADER_TYPE_FRAGMENT);
+cogl_shader_source (shader,
+                    "!!ARBfp1.0\n"
+                    "MOV result.color,fragment.color;\n"
+                    "END\n");
+cogl_shader_compile (shader);</p>
+<p class="p">program = cogl_create_program ();
+cogl_program_attach_shader (program, shader);
+cogl_program_link (program);</p>
+<p class="p">pipeline = cogl_pipeline_new ();
+cogl_pipeline_set_user_program (pipeline, program);</p>
+<p class="p">cogl_set_source_color4ub (0xff, 0x00, 0x00, 0xff);
+cogl_rectangle (0, 0, 100, 100);
+]|</p>
+<p class="p">It is possibly worth keeping in mind that this API is not part of
+the long term design for how we want to expose shaders to Cogl
+developers (We are planning on deprecating the cogl_program and
+cogl_shader APIs in favour of a "snippet" framework) but in the
+meantime we hope this will handle most practical GLSL and ARBfp
+requirements.</p>
+<p class="p">Also remember you need to check for either the
+<span class="link"><a href="Cogl.FeatureFlags.html" title="Cogl.FeatureFlags">Cogl.FeatureFlags</a></span>.shaders_glsl or <span class="link"><a href="Cogl.FeatureFlags.html" title="Cogl.FeatureFlags">Cogl.FeatureFlags</a></span>.shaders_arbfp before
+using the cogl_program or cogl_shader API.</p>
+<p class="p">Since 2.0</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">program</span></dt>
+<dd class="terms"><p class="p">A <span class="link"><a href="Cogl.Handle.html" title="Cogl.Handle">Cogl.Handle</a></span> to a linked CoglProgram</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.Pipeline.html" title="Cogl.Pipeline">Cogl.Pipeline</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

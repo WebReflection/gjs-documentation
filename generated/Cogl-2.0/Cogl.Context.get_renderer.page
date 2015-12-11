@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="Cogl.Context.get_renderer"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Context" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Renderer</api:type>
+      </api:returns>
+      <api:name>cogl_context_get_renderer</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Context.prototype.get_renderer</title>
+  <synopsis><code mime="text/x-gjs">
+function get_renderer(): <link xref="Cogl.Renderer">Cogl.Renderer</link> {
+    // Gjs wrapper for cogl_context_get_renderer()
+}
+  </code></synopsis>
+  <p>Retrieves the <link xref="Cogl.Renderer"/> that is internally associated with the
+given <code>context</code>. This will return the same <link xref="Cogl.Renderer"/> that was
+passed to <link xref="Cogl.Display.new"/> or if <code>null</code> was passed to
+<link xref="Cogl.Display.new"/> or <link xref="Cogl.Context.new"/> then this function returns
+a pointer to the renderer that was automatically connected
+internally.</p>
+  <p>Since 1.16</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>The <link xref="Cogl.Renderer"/> associated with the
+              given <code>context</code>.</p>
+</item>
+</terms>
+
+</page>

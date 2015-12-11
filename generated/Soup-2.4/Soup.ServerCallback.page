@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Soup.ServerCallback"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Soup.ServerCallback</title>
+  <synopsis><code mime="text/x-gjs">
+function onServerCallback(server: <link xref="Soup.Server">Soup.Server</link>, msg: <link xref="Soup.Message">Soup.Message</link>, path: String, query: {String: String}, client: <link xref="Soup.ClientContext">Soup.ClientContext</link>): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>server</code></title>
+
+</item>
+<item>
+<title><code>msg</code></title>
+
+</item>
+<item>
+<title><code>path</code></title>
+
+</item>
+<item>
+<title><code>query</code></title>
+
+</item>
+<item>
+<title><code>client</code></title>
+
+</item>
+</terms>
+
+</page>

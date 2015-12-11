@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<page id="GWeather.Location.new_detached"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Location" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GWeather.Location</api:type>
+      </api:returns>
+      <api:name>gweather_location_new_detached</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>icao</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gdouble)</api:type>
+        <api:name>latitude</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gdouble)</api:type>
+        <api:name>longitude</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GWeather.Location.new_detached</title>
+  <synopsis><code mime="text/x-gjs">
+function new_detached(name: String, icao: String, latitude: Number(gdouble), longitude: Number(gdouble)): <link xref="GWeather.Location">GWeather.Location</link> {
+    // Gjs wrapper for gweather_location_new_detached()
+}
+  </code></synopsis>
+  <p>Construct a new location from the given data, supplementing
+any missing information from the static database.</p>
+
+<terms>
+<item>
+<title><code>name</code></title>
+  <p>the user visible location name</p>
+</item>
+<item>
+<title><code>icao</code></title>
+  <p>the ICAO code of the location</p>
+</item>
+<item>
+<title><code>latitude</code></title>
+  <p>the latitude of the location</p>
+</item>
+<item>
+<title><code>longitude</code></title>
+  <p>the longitude of the location</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page id="Gst.TypeFindFunction"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Gst.TypeFindFunction</title>
+  <synopsis><code mime="text/x-gjs">
+function onTypeFindFunction(find: <link xref="Gst.TypeFind">Gst.TypeFind</link>): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>find</code></title>
+
+</item>
+</terms>
+
+</page>

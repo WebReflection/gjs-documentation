@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gck.SessionInfo-device_error"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.SessionInfo" group="field" type="guide"/>
+    <title type="link" role="topic">device_error</title>
+  </info>
+  <title>Gck.SessionInfo.device_error</title>
+  <synopsis><code mime="text/x-gjs">
+SessionInfo.device_error: Number(gulong) (Read / Write)
+  </code></synopsis>
+  <p>The last device error that occurred from an operation on this session.</p>
+
+</page>

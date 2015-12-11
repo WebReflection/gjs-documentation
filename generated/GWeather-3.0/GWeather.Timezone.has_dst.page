@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="GWeather.Timezone.has_dst"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Timezone" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gweather_timezone_has_dst</api:name>
+    </api:function>
+  </info>
+  <title>GWeather.Timezone.prototype.has_dst</title>
+  <synopsis><code mime="text/x-gjs">
+function has_dst(): Boolean {
+    // Gjs wrapper for gweather_timezone_has_dst()
+}
+  </code></synopsis>
+  <p>Checks if <code>zone</code> observes daylight/summer time for part of the year.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if <code>zone</code> observes daylight/summer time.</p>
+</item>
+</terms>
+
+</page>

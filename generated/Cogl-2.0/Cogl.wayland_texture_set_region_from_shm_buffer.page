@@ -1,0 +1,114 @@
+<?xml version="1.0"?>
+<page id="Cogl.wayland_texture_set_region_from_shm_buffer"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_wayland_texture_set_region_from_shm_buffer</api:name>
+      <api:arg>
+        <api:type>Cogl.Texture</api:type>
+        <api:name>texture</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>src_x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>src_y</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>width</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>height</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>void</api:type>
+        <api:name>shm_buffer</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>dst_x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>dst_y</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>level</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.wayland_texture_set_region_from_shm_buffer</title>
+  <synopsis><code mime="text/x-gjs">
+function wayland_texture_set_region_from_shm_buffer(texture: <link xref="Cogl.Texture">Cogl.Texture</link>, src_x: Number(gint), src_y: Number(gint), width: Number(gint), height: Number(gint), shm_buffer: void, dst_x: Number(gint), dst_y: Number(gint), level: Number(gint)): <link xref="Cogl.Bool">Cogl.Bool</link> {
+    // Gjs wrapper for cogl_wayland_texture_set_region_from_shm_buffer()
+}
+  </code></synopsis>
+  <p>Sets the pixels in a rectangular subregion of <code>texture</code> from a
+Wayland SHM buffer. Generally this would be used in response to
+wl_surface.damage event in a compositor in order to update the
+texture with the damaged region. This is just a convenience wrapper
+around getting the SHM buffer pointer and calling
+<link xref="Cogl.Texture.set_region"/>. See that function for a description of
+the level parameter.</p>  <p>&lt;note&gt;Since the storage for a <link xref="Cogl.Texture"/> is allocated lazily then
+if the given <code>texture</code> has not previously been allocated then this
+api can return <code>false</code> and throw an exceptional @error if there is
+not enough memory to allocate storage for <code>texture</code>.&lt;/note&gt;</p>
+  <p>Since 1.18</p>
+<terms>
+<item>
+<title><code>texture</code></title>
+  <p>a <link xref="Cogl.Texture"/></p>
+</item>
+<item>
+<title><code>src_x</code></title>
+  <p>The X offset within the source bufer to copy from</p>
+</item>
+<item>
+<title><code>src_y</code></title>
+  <p>The Y offset within the source bufer to copy from</p>
+</item>
+<item>
+<title><code>width</code></title>
+  <p>The width of the region to copy</p>
+</item>
+<item>
+<title><code>height</code></title>
+  <p>The height of the region to copy</p>
+</item>
+<item>
+<title><code>shm_buffer</code></title>
+  <p>The source buffer</p>
+</item>
+<item>
+<title><code>dst_x</code></title>
+  <p>The X offset within the texture to copy to</p>
+</item>
+<item>
+<title><code>dst_y</code></title>
+  <p>The Y offset within the texture to copy to</p>
+</item>
+<item>
+<title><code>level</code></title>
+  <p>The mipmap level of the texture to copy to</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if the subregion upload was successful, and
+  <code>false</code> otherwise</p>
+</item>
+</terms>
+
+</page>

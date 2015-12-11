@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<page id="Cogl.GLES2Vtable.glCompressedTexImage2D"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Cogl.GLES2Vtable.glCompressedTexImage2D</title>
+  <synopsis><code mime="text/x-gjs">
+function onglCompressedTexImage2D(target: <link href="../GL-1.0/GL.enum.html">GL.enum</link>, level: <link href="../GL-1.0/GL.int.html">GL.int</link>, internalformat: <link href="../GL-1.0/GL.enum.html">GL.enum</link>, width: <link href="../GL-1.0/GL.sizei.html">GL.sizei</link>, height: <link href="../GL-1.0/GL.sizei.html">GL.sizei</link>, border: <link href="../GL-1.0/GL.int.html">GL.int</link>, imageSize: <link href="../GL-1.0/GL.sizei.html">GL.sizei</link>, data: <link href="../GL-1.0/GL.void.html">GL.void</link>): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>target</code></title>
+
+</item>
+<item>
+<title><code>level</code></title>
+
+</item>
+<item>
+<title><code>internalformat</code></title>
+
+</item>
+<item>
+<title><code>width</code></title>
+
+</item>
+<item>
+<title><code>height</code></title>
+
+</item>
+<item>
+<title><code>border</code></title>
+
+</item>
+<item>
+<title><code>imageSize</code></title>
+
+</item>
+<item>
+<title><code>data</code></title>
+
+</item>
+</terms>
+
+</page>

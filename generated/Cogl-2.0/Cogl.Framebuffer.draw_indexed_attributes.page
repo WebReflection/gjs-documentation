@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<page id="Cogl.Framebuffer.draw_indexed_attributes"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Framebuffer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_framebuffer_draw_indexed_attributes</api:name>
+      <api:arg>
+        <api:type>Cogl.Pipeline</api:type>
+        <api:name>pipeline</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.VerticesMode</api:type>
+        <api:name>mode</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>first_vertex</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>n_vertices</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.Indices</api:type>
+        <api:name>indices</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.Attribute</api:type>
+        <api:name>attributes</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>n_attributes</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Framebuffer.prototype.draw_indexed_attributes</title>
+  <synopsis><code mime="text/x-gjs">
+function draw_indexed_attributes(pipeline: <link xref="Cogl.Pipeline">Cogl.Pipeline</link>, mode: <link xref="Cogl.VerticesMode">Cogl.VerticesMode</link>, first_vertex: Number(gint), n_vertices: Number(gint), indices: <link xref="Cogl.Indices">Cogl.Indices</link>, attributes: <link xref="Cogl.Attribute">Cogl.Attribute</link>, n_attributes: Number(gint)): void {
+    // Gjs wrapper for cogl_framebuffer_draw_indexed_attributes()
+}
+  </code></synopsis>
+  <p>Behaves the same as <link xref="Cogl.Framebuffer.draw_attributes"/> except that
+instead of reading vertex data sequentially from the specified
+<code>attributes</code> the <code>indices</code> provide an indirection for how the data
+should be indexed allowing a random access order to be
+specified.</p>  <p>For example an indices array of [0, 1, 2, 0, 2, 3] could be used
+used to draw two triangles (<code>mode</code> = <link xref="Cogl.VerticesMode"/>.triangles +
+<code>n_vertices</code> = 6) but only provide attribute data for the 4 corners
+of a rectangle. When the GPU needs to read in each of the 6
+vertices it will read the <code>indices</code> array for each vertex in
+sequence and use the index to look up the vertex attribute data. So
+here you can see that first and fourth vertex will point to the
+same data and third and fifth vertex will also point to shared
+data.</p>  <p>Drawing with indices can be a good way of minimizing the size of a
+mesh by allowing you to avoid data for duplicate vertices because
+multiple entries in the index array can refer back to a single
+shared vertex.</p>  <p>&lt;note&gt;The <code>indices</code> array must be at least as long as <code>first_vertex</code>
++ <code>n_vertices</code> otherwise the GPU will overrun the indices array when
+looking up vertex data.&lt;/note&gt;</p>  <p>Since it's very common to want to draw a run of rectangles using
+indices to avoid duplicating vertex data you can use
+<link xref="Cogl.get_rectangle_indices"/> to get a set of indices that can be
+shared.</p>  <p>This drawing api doesn't support high-level meta texture types such
+as <link xref="Cogl.Texture2DSliced"/> so it is the user's responsibility to
+ensure that only low-level textures that can be directly sampled by
+a GPU such as <link xref="Cogl.Texture2D"/>, <link xref="Cogl.TextureRectangle"/> or
+<link xref="Cogl.Texture3D"/> are associated with layers of the given <code>pipeline</code>.</p>  <p>&lt;note&gt;This api doesn't support any of the legacy global state
+options such as cogl_set_depth_test_enabled(),
+cogl_set_backface_culling_enabled() or cogl_program_use()&lt;/note&gt;</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>pipeline</code></title>
+  <p>A <link xref="Cogl.Pipeline"/> state object</p>
+</item>
+<item>
+<title><code>mode</code></title>
+  <p>The <link xref="Cogl.VerticesMode"/> defining the topology of vertices</p>
+</item>
+<item>
+<title><code>first_vertex</code></title>
+  <p>The vertex offset within the given attributes to draw from</p>
+</item>
+<item>
+<title><code>n_vertices</code></title>
+  <p>The number of vertices to draw from the given attributes</p>
+</item>
+<item>
+<title><code>indices</code></title>
+  <p>The array of indices used by the GPU to lookup attribute
+          data for each vertex.</p>
+</item>
+<item>
+<title><code>attributes</code></title>
+  <p>An array of pointers to <link xref="Cogl.Attribute"/>&lt;-- --&gt;s defining vertex
+             geometry</p>
+</item>
+<item>
+<title><code>n_attributes</code></title>
+  <p>The number of attributes in the <code>attributes</code> array.</p>
+</item>
+</terms>
+
+</page>

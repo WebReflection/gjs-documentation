@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<page id="Cogl.push_gles2_context"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_push_gles2_context</api:name>
+      <api:arg>
+        <api:type>Cogl.Context</api:type>
+        <api:name>ctx</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.GLES2Context</api:type>
+        <api:name>gles2_ctx</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.Framebuffer</api:type>
+        <api:name>read_buffer</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.Framebuffer</api:type>
+        <api:name>write_buffer</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.push_gles2_context</title>
+  <synopsis><code mime="text/x-gjs">
+function push_gles2_context(ctx: <link xref="Cogl.Context">Cogl.Context</link>, gles2_ctx: <link xref="Cogl.GLES2Context">Cogl.GLES2Context</link>, read_buffer: <link xref="Cogl.Framebuffer">Cogl.Framebuffer</link>, write_buffer: <link xref="Cogl.Framebuffer">Cogl.Framebuffer</link>): <link xref="Cogl.Bool">Cogl.Bool</link> {
+    // Gjs wrapper for cogl_push_gles2_context()
+}
+  </code></synopsis>
+  <p>Pushes the given <code>gles2_ctx</code> onto a stack associated with <code>ctx</code> so
+that the OpenGLES 2.0 api can be used instead of the Cogl
+rendering apis to read and write to the specified framebuffers.</p>  <p>Usage of the api available through a <link xref="Cogl.GLES2Vtable"/> is only
+allowed between <link xref="Cogl.push_gles2_context"/> and
+<link xref="Cogl.pop_gles2_context"/> calls.</p>  <p>If there is a runtime problem with switching over to the given
+<code>gles2_ctx</code> then this function will return <code>false</code> and return
+an error through @error.</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>ctx</code></title>
+  <p>A <link xref="Cogl.Context"/></p>
+</item>
+<item>
+<title><code>gles2_ctx</code></title>
+  <p>A <link xref="Cogl.GLES2Context"/> allocated with
+            <link xref="Cogl.GLES2Context.new"/></p>
+</item>
+<item>
+<title><code>read_buffer</code></title>
+  <p>A <link xref="Cogl.Framebuffer"/> to access to read operations
+              such as glReadPixels. (must be a #CoglOffscreen
+              framebuffer currently)</p>
+</item>
+<item>
+<title><code>write_buffer</code></title>
+  <p>A <link xref="Cogl.Framebuffer"/> to access for drawing operations
+               such as glDrawArrays. (must be a #CoglOffscreen
+              framebuffer currently)</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if operation was successfull or <code>false</code>
+              otherwise and @error will be updated.</p>
+</item>
+</terms>
+
+</page>

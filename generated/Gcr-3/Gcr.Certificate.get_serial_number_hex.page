@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gcr.Certificate.get_serial_number_hex"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Certificate" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>gcr_certificate_get_serial_number_hex</api:name>
+    </api:function>
+  </info>
+  <title>Gcr.Certificate.prototype.get_serial_number_hex</title>
+  <synopsis><code mime="text/x-gjs">
+function get_serial_number_hex(): String {
+    // Gjs wrapper for gcr_certificate_get_serial_number_hex()
+}
+  </code></synopsis>
+  <p>Get the serial number of the certificate as a hex string.</p>  <p>The caller should free the returned data using g_free() when
+it is no longer required.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>an allocated string containing the serial number as hex.</p>
+</item>
+</terms>
+
+</page>

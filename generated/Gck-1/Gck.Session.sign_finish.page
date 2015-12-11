@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="Gck.Session.sign_finish"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Session" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>ByteArray</api:type>
+      </api:returns>
+      <api:name>gck_session_sign_finish</api:name>
+      <api:arg>
+        <api:type>Gio.AsyncResult</api:type>
+        <api:name>result</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Session.prototype.sign_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function sign_finish(result: <link href="../Gio-2.0/Gio.AsyncResult.html">Gio.AsyncResult</link>): [return_value: ByteArray, n_result: Number(gsize)] {
+    // Gjs wrapper for gck_session_sign_finish()
+}
+  </code></synopsis>
+  <p>Get the result of an signing operation.</p>
+
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>The result object passed to the callback.</p>
+</item>
+<item>
+<title><code>return_value</code></title>
+  <p>the data that was signed,
+         or <code>null</code> if an error occurred</p>
+</item>
+<item>
+<title><code>n_result</code></title>
+  <p>A location to store the length of the result data.</p>
+</item>
+</terms>
+
+</page>

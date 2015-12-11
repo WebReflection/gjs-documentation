@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gcr.FilterCollection-underlying"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.FilterCollection" group="property" type="guide"/>
+    <title type="link" role="topic">underlying</title>
+  </info>
+  <title>Gcr.FilterCollection.underlying</title>
+  <synopsis><code mime="text/x-gjs">
+FilterCollection.underlying: <link xref="Gcr.Collection">Gcr.Collection</link> (Read / Write / Construct Only)
+  </code></synopsis>
+
+
+</page>

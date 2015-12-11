@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Cogl.VertexP3-z"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.VertexP3" group="field" type="guide"/>
+    <title type="link" role="topic">z</title>
+  </info>
+  <title>Cogl.VertexP3.z</title>
+  <synopsis><code mime="text/x-gjs">
+VertexP3.z: Number(gfloat) (Read / Write)
+  </code></synopsis>
+  <p>The z component of a position attribute</p>
+
+</page>

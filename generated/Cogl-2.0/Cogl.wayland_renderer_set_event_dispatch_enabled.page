@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<page id="Cogl.wayland_renderer_set_event_dispatch_enabled"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_wayland_renderer_set_event_dispatch_enabled</api:name>
+      <api:arg>
+        <api:type>Cogl.Renderer</api:type>
+        <api:name>renderer</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.Bool</api:type>
+        <api:name>enable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.wayland_renderer_set_event_dispatch_enabled</title>
+  <synopsis><code mime="text/x-gjs">
+function wayland_renderer_set_event_dispatch_enabled(renderer: <link xref="Cogl.Renderer">Cogl.Renderer</link>, enable: <link xref="Cogl.Bool">Cogl.Bool</link>): void {
+    // Gjs wrapper for cogl_wayland_renderer_set_event_dispatch_enabled()
+}
+  </code></synopsis>
+  <p>Sets whether Cogl should handle calling wl_display_dispatch() and
+wl_display_flush() as part of its main loop integration via
+<link xref="Cogl.poll_renderer_get_info"/> and <link xref="Cogl.poll_renderer_dispatch"/>.
+The default value is <code>true</code>. When it is enabled the application can
+register listeners for Wayland interfaces and the callbacks will be
+invoked during <link xref="Cogl.poll_renderer_dispatch"/>. If the application
+wants to integrate with its own code that is already handling
+reading from the Wayland display socket, it should disable this to
+avoid having competing code read from the socket.</p>
+  <p>Since 1.16</p>
+<terms>
+<item>
+<title><code>renderer</code></title>
+  <p>A <link xref="Cogl.Renderer"/></p>
+</item>
+<item>
+<title><code>enable</code></title>
+  <p>The new value</p>
+</item>
+</terms>
+
+</page>

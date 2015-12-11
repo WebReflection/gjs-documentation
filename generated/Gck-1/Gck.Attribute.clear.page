@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="Gck.Attribute.clear"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Attribute" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gck_attribute_clear</api:name>
+    </api:function>
+  </info>
+  <title>Gck.Attribute.prototype.clear</title>
+  <synopsis><code mime="text/x-gjs">
+function clear(): void {
+    // Gjs wrapper for gck_attribute_clear()
+}
+  </code></synopsis>
+  <p>Clear allocated memory held by a <link xref="Gck.Attribute"/>.</p>  <p>This attribute must have been allocated by a Gck library function, or
+the results of this method are undefined.</p>  <p>The type of the attribute will remain set.</p>
+
+
+</page>

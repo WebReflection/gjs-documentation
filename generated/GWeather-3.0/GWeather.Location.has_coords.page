@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="GWeather.Location.has_coords"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Location" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gweather_location_has_coords</api:name>
+    </api:function>
+  </info>
+  <title>GWeather.Location.prototype.has_coords</title>
+  <synopsis><code mime="text/x-gjs">
+function has_coords(): Boolean {
+    // Gjs wrapper for gweather_location_has_coords()
+}
+  </code></synopsis>
+  <p>Checks if <code>loc</code> has valid latitude and longitude.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if <code>loc</code> has valid latitude and longitude.</p>
+</item>
+</terms>
+
+</page>

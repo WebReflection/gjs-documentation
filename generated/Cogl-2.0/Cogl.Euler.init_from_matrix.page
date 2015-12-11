@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="Cogl.Euler.init_from_matrix"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Euler" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_euler_init_from_matrix</api:name>
+      <api:arg>
+        <api:type>Cogl.Matrix</api:type>
+        <api:name>matrix</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Euler.prototype.init_from_matrix</title>
+  <synopsis><code mime="text/x-gjs">
+function init_from_matrix(matrix: <link xref="Cogl.Matrix">Cogl.Matrix</link>): void {
+    // Gjs wrapper for cogl_euler_init_from_matrix()
+}
+  </code></synopsis>
+  <p>Extracts a euler rotation from the given <code>matrix</code> and
+initializses <code>euler</code> with the component x, y and z rotation angles.</p>
+
+<terms>
+<item>
+<title><code>matrix</code></title>
+  <p>A <link xref="Cogl.Matrix"/> containing a rotation, but no scaling,
+         mirroring or skewing.</p>
+</item>
+</terms>
+
+</page>

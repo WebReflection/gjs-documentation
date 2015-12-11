@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<page id="Cogl.Euler.equal"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Euler" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_euler_equal</api:name>
+      <api:arg>
+        <api:type>void</api:type>
+        <api:name>v1</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>void</api:type>
+        <api:name>v2</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Euler.equal</title>
+  <synopsis><code mime="text/x-gjs">
+function equal(v1: void, v2: void): <link xref="Cogl.Bool">Cogl.Bool</link> {
+    // Gjs wrapper for cogl_euler_equal()
+}
+  </code></synopsis>
+  <p>Compares the two given euler angles <code>v1</code> and <code>v1</code> and it they are
+equal returns <code>true</code> else <code>false</code>.</p>  <p>&lt;note&gt;This function only checks that all three components rotations
+are numerically equal, it does not consider that some rotations
+can be represented with different component rotations&lt;/note&gt;</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>v1</code></title>
+  <p>The first euler angle to compare</p>
+</item>
+<item>
+<title><code>v2</code></title>
+  <p>The second euler angle to compare</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if <code>v1</code> and <code>v2</code> are equal else <code>false</code>.</p>
+</item>
+</terms>
+
+</page>

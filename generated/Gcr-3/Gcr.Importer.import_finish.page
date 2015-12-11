@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Gcr.Importer.import_finish"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Importer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gcr_importer_import_finish</api:name>
+      <api:arg>
+        <api:type>Gio.AsyncResult</api:type>
+        <api:name>result</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.Importer.prototype.import_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function import_finish(result: <link href="../Gio-2.0/Gio.AsyncResult.html">Gio.AsyncResult</link>): Boolean {
+    // Gjs wrapper for gcr_importer_import_finish()
+}
+  </code></synopsis>
+  <p>Complete an asynchronous operation to import queued items.</p>
+
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>an asynchronous result</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>whether the import succeeded or failed</p>
+</item>
+</terms>
+
+</page>

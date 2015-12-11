@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gck.TokenInfo-manufacturer_id"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.TokenInfo" group="field" type="guide"/>
+    <title type="link" role="topic">manufacturer_id</title>
+  </info>
+  <title>Gck.TokenInfo.manufacturer_id</title>
+  <synopsis><code mime="text/x-gjs">
+TokenInfo.manufacturer_id: String (Read)
+  </code></synopsis>
+  <p>The manufacturer of this slot.</p>
+
+</page>

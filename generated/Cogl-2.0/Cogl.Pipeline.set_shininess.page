@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.set_shininess"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_set_shininess</api:name>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>shininess</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.set_shininess</title>
+  <synopsis><code mime="text/x-gjs">
+function set_shininess(shininess: Number(gfloat)): void {
+    // Gjs wrapper for cogl_pipeline_set_shininess()
+}
+  </code></synopsis>
+  <p>Sets the shininess of the pipeline, in the standard OpenGL lighting
+model, which determines the size of the specular highlights. A
+higher <code>shininess</code> will produce smaller highlights which makes the
+object appear more shiny.</p>  <p>The default value is 0.0</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>shininess</code></title>
+  <p>The desired shininess; must be &gt;= 0.0</p>
+</item>
+</terms>
+
+</page>

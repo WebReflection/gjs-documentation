@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.TextureRectangle.new_from_foreign</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » <a class="trail" href="Cogl.TextureRectangle.html" title="Cogl.TextureRectangle">Cogl.TextureRectangle</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.TextureRectangle.new_from_foreign</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function new_from_foreign(ctx: <span class="link"><a href="Cogl.Context.html" title="Cogl.Context">Cogl.Context</a></span>, gl_handle: Number(guint), width: Number(gint), height: Number(gint), format: <span class="link"><a href="Cogl.PixelFormat.html" title="Cogl.PixelFormat">Cogl.PixelFormat</a></span>): <span class="link"><a href="Cogl.TextureRectangle.html" title="Cogl.TextureRectangle">Cogl.TextureRectangle</a></span> {
+    // Gjs wrapper for cogl_texture_rectangle_new_from_foreign()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Wraps an existing GL_TEXTURE_RECTANGLE texture object as a
+<span class="link"><a href="Cogl.TextureRectangle.html" title="Cogl.TextureRectangle">Cogl.TextureRectangle</a></span>.  This can be used for integrating Cogl with
+software using OpenGL directly.</p>
+<p class="p">&lt;note&gt;Unlike for <span class="link"><a href="Cogl.Texture2D.html" title="Cogl.Texture2D">Cogl.Texture2D</a></span> textures, coordinates for
+<span class="link"><a href="Cogl.TextureRectangle.html" title="Cogl.TextureRectangle">Cogl.TextureRectangle</a></span> textures should not be normalized. So instead
+of using the coordinate (1, 1) to sample the bottom right corner of
+a rectangle texture you would use (<span class="code">width</span>, <span class="code">height</span>) where <span class="code">width</span>
+and <span class="code">height</span> are the width and height of the texture.&lt;/note&gt;</p>
+<p class="p">&lt;note&gt;The results are undefined for passing an invalid <span class="code">gl_handle</span>
+or if <span class="code">width</span> or <span class="code">height</span> don't have the correct texture
+geometry.&lt;/note&gt;</p>
+<p class="p">&lt;note&gt;If you want to sample from a rectangle texture from GLSL you
+should use the sampler2DRect sampler type.&lt;/note&gt;</p>
+<p class="p">&lt;note&gt;Applications wanting to use <span class="link"><a href="Cogl.TextureRectangle.html" title="Cogl.TextureRectangle">Cogl.TextureRectangle</a></span> should
+first check for the <span class="link"><a href="Cogl.FeatureID.html" title="Cogl.FeatureID">Cogl.FeatureID</a></span>.ogl_feature_id_texture_rectangle feature
+using <span class="link"><a href="Cogl.has_feature.html" title="Cogl.has_feature">Cogl.has_feature</a></span>.&lt;/note&gt;</p>
+<p class="p">The texture is still configurable until it has been allocated so
+for example you can declare whether the texture is premultiplied
+with <span class="link"><a href="Cogl.Texture.set_premultiplied.html" title="Cogl.Texture.prototype.set_premultiplied">Cogl.Texture.prototype.set_premultiplied</a></span>.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">ctx</span></dt>
+<dd class="terms"><p class="p">A <span class="link"><a href="Cogl.Context.html" title="Cogl.Context">Cogl.Context</a></span></p></dd>
+<dt class="terms"><span class="code">gl_handle</span></dt>
+<dd class="terms"><p class="p">A GL handle for a GL_TEXTURE_RECTANGLE texture object</p></dd>
+<dt class="terms"><span class="code">width</span></dt>
+<dd class="terms"><p class="p">Width of the foreign GL texture</p></dd>
+<dt class="terms"><span class="code">height</span></dt>
+<dd class="terms"><p class="p">Height of the foreign GL texture</p></dd>
+<dt class="terms"><span class="code">format</span></dt>
+<dd class="terms"><p class="p">The format of the texture</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">A new <span class="link"><a href="Cogl.TextureRectangle.html" title="Cogl.TextureRectangle">Cogl.TextureRectangle</a></span> texture</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.TextureRectangle.html" title="Cogl.TextureRectangle">Cogl.TextureRectangle</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

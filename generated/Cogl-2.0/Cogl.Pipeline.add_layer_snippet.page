@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.add_layer_snippet"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_add_layer_snippet</api:name>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>layer</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.Snippet</api:type>
+        <api:name>snippet</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.add_layer_snippet</title>
+  <synopsis><code mime="text/x-gjs">
+function add_layer_snippet(layer: Number(gint), snippet: <link xref="Cogl.Snippet">Cogl.Snippet</link>): void {
+    // Gjs wrapper for cogl_pipeline_add_layer_snippet()
+}
+  </code></synopsis>
+  <p>Adds a shader snippet that will hook on to the given layer of the
+pipeline. The exact part of the pipeline that the snippet wraps
+around depends on the hook that is given to
+<link xref="Cogl.Snippet.new"/>. Note that some hooks can't be used with a layer
+and need to be added with <link xref="Cogl.Pipeline.add_snippet"/> instead.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>layer</code></title>
+  <p>The layer to hook the snippet to</p>
+</item>
+<item>
+<title><code>snippet</code></title>
+  <p>A <link xref="Cogl.Snippet"/></p>
+</item>
+</terms>
+
+</page>

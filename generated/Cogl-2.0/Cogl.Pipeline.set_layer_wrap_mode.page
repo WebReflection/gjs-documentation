@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.set_layer_wrap_mode"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_set_layer_wrap_mode</api:name>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>layer_index</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.PipelineWrapMode</api:type>
+        <api:name>mode</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.set_layer_wrap_mode</title>
+  <synopsis><code mime="text/x-gjs">
+function set_layer_wrap_mode(layer_index: Number(gint), mode: <link xref="Cogl.PipelineWrapMode">Cogl.PipelineWrapMode</link>): void {
+    // Gjs wrapper for cogl_pipeline_set_layer_wrap_mode()
+}
+  </code></synopsis>
+  <p>Sets the wrap mode for all three coordinates of texture lookups on
+this layer. This is equivalent to calling
+<link xref="Cogl.Pipeline.set_layer_wrap_mode_s"/>,
+<link xref="Cogl.Pipeline.set_layer_wrap_mode_t"/> and
+<link xref="Cogl.Pipeline.set_layer_wrap_mode_p"/> separately.</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>layer_index</code></title>
+  <p>the layer number to change.</p>
+</item>
+<item>
+<title><code>mode</code></title>
+  <p>the new wrap mode</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="GdkX11.X11Cursor.get_xcursor"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GdkX11.X11Cursor" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>xlib.Cursor</api:type>
+      </api:returns>
+      <api:name>gdk_x11_cursor_get_xcursor</api:name>
+    </api:function>
+  </info>
+  <title>GdkX11.X11Cursor.prototype.get_xcursor</title>
+  <synopsis><code mime="text/x-gjs">
+function get_xcursor(): <link href="../xlib-2.0/xlib.Cursor.html">xlib.Cursor</link> {
+    // Gjs wrapper for gdk_x11_cursor_get_xcursor()
+}
+  </code></synopsis>
+  <p>Returns the X cursor belonging to a <link href="../Gdk-3.0/Gdk.Cursor.html">Gdk.Cursor</link>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>an Xlib Cursor.</p>
+</item>
+</terms>
+
+</page>

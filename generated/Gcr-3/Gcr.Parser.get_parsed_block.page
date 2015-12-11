@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="Gcr.Parser.get_parsed_block"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Parser" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>ByteArray</api:type>
+      </api:returns>
+      <api:name>gcr_parser_get_parsed_block</api:name>
+    </api:function>
+  </info>
+  <title>Gcr.Parser.prototype.get_parsed_block</title>
+  <synopsis><code mime="text/x-gjs">
+function get_parsed_block(): [return_value: ByteArray, n_block: Number(gsize)] {
+    // Gjs wrapper for gcr_parser_get_parsed_block()
+}
+  </code></synopsis>
+  <p>Get the raw data block that represents this parsed object. This is only
+valid during the <link xref="Gcr.Parser-parsed"/> signal.</p>
+
+<terms>
+<item>
+<title><code>return_value</code></title>
+  <p>the raw data
+         block of the currently parsed item; the value is owned by the parser
+         and should not be freed</p>
+</item>
+<item>
+<title><code>n_block</code></title>
+  <p>a location to place the size of the block</p>
+</item>
+</terms>
+
+</page>

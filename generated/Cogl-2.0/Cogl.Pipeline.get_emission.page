@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.get_emission"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_get_emission</api:name>
+      <api:arg>
+        <api:type>Cogl.Color</api:type>
+        <api:name>emission</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.get_emission</title>
+  <synopsis><code mime="text/x-gjs">
+function get_emission(emission: <link xref="Cogl.Color">Cogl.Color</link>): void {
+    // Gjs wrapper for cogl_pipeline_get_emission()
+}
+  </code></synopsis>
+  <p>Retrieves the pipelines current emission color.</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>emission</code></title>
+  <p>The location to store the emission color</p>
+</item>
+</terms>
+
+</page>

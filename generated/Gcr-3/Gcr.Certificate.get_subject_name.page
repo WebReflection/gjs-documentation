@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gcr.Certificate.get_subject_name"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Certificate" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>gcr_certificate_get_subject_name</api:name>
+    </api:function>
+  </info>
+  <title>Gcr.Certificate.prototype.get_subject_name</title>
+  <synopsis><code mime="text/x-gjs">
+function get_subject_name(): String {
+    // Gjs wrapper for gcr_certificate_get_subject_name()
+}
+  </code></synopsis>
+  <p>Get a name to represent the subject of this certificate.</p>  <p>This will try to lookup the common name, orianizational unit,
+organization in that order.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the allocated subject name, or NULL if no subject name</p>
+</item>
+</terms>
+
+</page>

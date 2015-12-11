@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="Gcr.Prompt.close"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Prompt" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gcr_prompt_close</api:name>
+    </api:function>
+  </info>
+  <title>Gcr.Prompt.prototype.close</title>
+  <synopsis><code mime="text/x-gjs">
+function close(): void {
+    // Gjs wrapper for gcr_prompt_close()
+}
+  </code></synopsis>
+  <p>Closes the prompt so that in can no longer be used to prompt. The various
+prompt methods will return results as if the user dismissed the prompt.</p>  <p>The prompt may also be closed by the implementor of the <link xref="Gcr.Prompt"/> object.</p>  <p>This emits the GcrPrompt::prompt-close signal on the prompt object.</p>
+
+
+</page>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.TextureRectangle.new_with_size</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » <a class="trail" href="Cogl.TextureRectangle.html" title="Cogl.TextureRectangle">Cogl.TextureRectangle</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.TextureRectangle.new_with_size</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function new_with_size(ctx: <span class="link"><a href="Cogl.Context.html" title="Cogl.Context">Cogl.Context</a></span>, width: Number(gint), height: Number(gint)): <span class="link"><a href="Cogl.TextureRectangle.html" title="Cogl.TextureRectangle">Cogl.TextureRectangle</a></span> {
+    // Gjs wrapper for cogl_texture_rectangle_new_with_size()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Creates a new <span class="link"><a href="Cogl.TextureRectangle.html" title="Cogl.TextureRectangle">Cogl.TextureRectangle</a></span> texture with a given <span class="code">width</span>,
+and <span class="code">height</span>. This texture is a low-level texture that the GPU can
+sample from directly unlike high-level textures such as
+<span class="link"><a href="Cogl.Texture2DSliced.html" title="Cogl.Texture2DSliced">Cogl.Texture2DSliced</a></span> and <span class="link"><a href="Cogl.AtlasTexture.html" title="Cogl.AtlasTexture">Cogl.AtlasTexture</a></span>.</p>
+<p class="p">&lt;note&gt;Unlike for <span class="link"><a href="Cogl.Texture2D.html" title="Cogl.Texture2D">Cogl.Texture2D</a></span> textures, coordinates for
+<span class="link"><a href="Cogl.TextureRectangle.html" title="Cogl.TextureRectangle">Cogl.TextureRectangle</a></span> textures should not be normalized. So instead
+of using the coordinate (1, 1) to sample the bottom right corner of
+a rectangle texture you would use (<span class="code">width</span>, <span class="code">height</span>) where <span class="code">width</span>
+and <span class="code">height</span> are the width and height of the texture.&lt;/note&gt;</p>
+<p class="p">&lt;note&gt;If you want to sample from a rectangle texture from GLSL you
+should use the sampler2DRect sampler type.&lt;/note&gt;</p>
+<p class="p">&lt;note&gt;Applications wanting to use <span class="link"><a href="Cogl.TextureRectangle.html" title="Cogl.TextureRectangle">Cogl.TextureRectangle</a></span> should
+first check for the <span class="link"><a href="Cogl.FeatureID.html" title="Cogl.FeatureID">Cogl.FeatureID</a></span>.ogl_feature_id_texture_rectangle feature
+using <span class="link"><a href="Cogl.has_feature.html" title="Cogl.has_feature">Cogl.has_feature</a></span>.&lt;/note&gt;</p>
+<p class="p">The storage for the texture is not allocated before this function
+returns. You can call <span class="link"><a href="Cogl.Texture.allocate.html" title="Cogl.Texture.prototype.allocate">Cogl.Texture.prototype.allocate</a></span> to explicitly
+allocate the underlying storage or preferably let Cogl
+automatically allocate storage lazily when it may know more about
+how the texture is going to be used and can optimize how it is
+allocated.</p>
+<p class="p">Since 1.10</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">ctx</span></dt>
+<dd class="terms"><p class="p">A <span class="link"><a href="Cogl.Context.html" title="Cogl.Context">Cogl.Context</a></span> pointer</p></dd>
+<dt class="terms"><span class="code">width</span></dt>
+<dd class="terms"><p class="p">The texture width to allocate</p></dd>
+<dt class="terms"><span class="code">height</span></dt>
+<dd class="terms"><p class="p">The texture height to allocate</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">A pointer to a new <span class="link"><a href="Cogl.TextureRectangle.html" title="Cogl.TextureRectangle">Cogl.TextureRectangle</a></span>
+         object with no storage allocated yet.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.TextureRectangle.html" title="Cogl.TextureRectangle">Cogl.TextureRectangle</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

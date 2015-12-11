@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<page id="Gck.Session.create_object_async"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Session" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gck_session_create_object_async</api:name>
+      <api:arg>
+        <api:type>Gck.Attributes</api:type>
+        <api:name>attrs</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.AsyncReadyCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Session.prototype.create_object_async</title>
+  <synopsis><code mime="text/x-gjs">
+function create_object_async(attrs: <link xref="Gck.Attributes">Gck.Attributes</link>, cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>, callback: <link href="../Gio-2.0/Gio.AsyncReadyCallback.html">Gio.AsyncReadyCallback</link>): void {
+    // Gjs wrapper for gck_session_create_object_async()
+}
+  </code></synopsis>
+  <p>Create a new PKCS\#11 object. This call will return immediately
+and complete asynchronously.</p>  <p>If the <code>attrs</code> <link xref="Gck.Attributes"/> is floating, it is consumed.</p>
+
+<terms>
+<item>
+<title><code>attrs</code></title>
+  <p>The attributes to create the object with.</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>Optional cancellation object or NULL.</p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>Called when the operation completes.</p>
+</item>
+</terms>
+
+</page>

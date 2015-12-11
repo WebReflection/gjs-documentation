@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Cogl.VertexP3C4-y"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.VertexP3C4" group="field" type="guide"/>
+    <title type="link" role="topic">y</title>
+  </info>
+  <title>Cogl.VertexP3C4.y</title>
+  <synopsis><code mime="text/x-gjs">
+VertexP3C4.y: Number(gfloat) (Read / Write)
+  </code></synopsis>
+  <p>The y component of a position attribute</p>
+
+</page>

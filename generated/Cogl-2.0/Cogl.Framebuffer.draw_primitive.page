@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<page id="Cogl.Framebuffer.draw_primitive"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Framebuffer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_framebuffer_draw_primitive</api:name>
+      <api:arg>
+        <api:type>Cogl.Pipeline</api:type>
+        <api:name>pipeline</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.Primitive</api:type>
+        <api:name>primitive</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Framebuffer.prototype.draw_primitive</title>
+  <synopsis><code mime="text/x-gjs">
+function draw_primitive(pipeline: <link xref="Cogl.Pipeline">Cogl.Pipeline</link>, primitive: <link xref="Cogl.Primitive">Cogl.Primitive</link>): void {
+    // Gjs wrapper for cogl_framebuffer_draw_primitive()
+}
+  </code></synopsis>
+  <p>Draws the given <code>primitive</code> geometry to the specified destination
+<code>framebuffer</code> using the graphics processing state described by <code>pipeline</code>.</p>  <p>This drawing api doesn't support high-level meta texture types such
+as <link xref="Cogl.Texture2DSliced"/> so it is the user's responsibility to
+ensure that only low-level textures that can be directly sampled by
+a GPU such as <link xref="Cogl.Texture2D"/>, <link xref="Cogl.TextureRectangle"/> or <link xref="Cogl.Texture3D"/>
+are associated with layers of the given <code>pipeline</code>.</p>  <p>&lt;note&gt;This api doesn't support any of the legacy global state options such
+as cogl_set_depth_test_enabled(), cogl_set_backface_culling_enabled() or
+cogl_program_use()&lt;/note&gt;</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>pipeline</code></title>
+  <p>A <link xref="Cogl.Pipeline"/> state object</p>
+</item>
+<item>
+<title><code>primitive</code></title>
+  <p>A <link xref="Cogl.Primitive"/> geometry object</p>
+</item>
+</terms>
+
+</page>

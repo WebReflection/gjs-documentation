@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.DepthTestFunction</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.DepthTestFunction</span></h1></div>
+<div class="region">
+<div class="contents">
+<p class="p">When using depth testing one of these functions is used to compare
+the depth of an incoming fragment against the depth value currently
+stored in the depth buffer. The function is changed using
+<span class="link"><a href="Cogl.DepthState.set_test_function.html" title="Cogl.DepthState.prototype.set_test_function">Cogl.DepthState.prototype.set_test_function</a></span>.</p>
+<p class="p">The test is only done when depth testing is explicitly enabled. (See
+<span class="link"><a href="Cogl.DepthState.set_test_enabled.html" title="Cogl.DepthState.prototype.set_test_enabled">Cogl.DepthState.prototype.set_test_enabled</a></span>)</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">DepthTestFunction.NEVER</span></dt>
+<dd class="terms"><p class="p">Never passes.</p></dd>
+<dt class="terms"><span class="code">DepthTestFunction.LESS</span></dt>
+<dd class="terms"><p class="p">Passes if the fragment's depth
+value is less than the value currently in the depth buffer.</p></dd>
+<dt class="terms"><span class="code">DepthTestFunction.EQUAL</span></dt>
+<dd class="terms"><p class="p">Passes if the fragment's depth
+value is equal to the value currently in the depth buffer.</p></dd>
+<dt class="terms"><span class="code">DepthTestFunction.LEQUAL</span></dt>
+<dd class="terms"><p class="p">Passes if the fragment's depth
+value is less or equal to the value currently in the depth buffer.</p></dd>
+<dt class="terms"><span class="code">DepthTestFunction.GREATER</span></dt>
+<dd class="terms"><p class="p">Passes if the fragment's depth
+value is greater than the value currently in the depth buffer.</p></dd>
+<dt class="terms"><span class="code">DepthTestFunction.NOTEQUAL</span></dt>
+<dd class="terms"><p class="p">Passes if the fragment's depth
+value is not equal to the value currently in the depth buffer.</p></dd>
+<dt class="terms"><span class="code">DepthTestFunction.GEQUAL</span></dt>
+<dd class="terms"><p class="p">Passes if the fragment's depth
+value greater than or equal to the value currently in the depth buffer.</p></dd>
+<dt class="terms"><span class="code">DepthTestFunction.ALWAYS</span></dt>
+<dd class="terms"><p class="p">Always passes.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Cogl">Cogl</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

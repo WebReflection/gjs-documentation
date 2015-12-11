@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gck.Slot.get_mechanism_info"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Slot" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.MechanismInfo</api:type>
+      </api:returns>
+      <api:name>gck_slot_get_mechanism_info</api:name>
+      <api:arg>
+        <api:type>Number(gulong)</api:type>
+        <api:name>mech_type</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Slot.prototype.get_mechanism_info</title>
+  <synopsis><code mime="text/x-gjs">
+function get_mechanism_info(mech_type: Number(gulong)): <link xref="Gck.MechanismInfo">Gck.MechanismInfo</link> {
+    // Gjs wrapper for gck_slot_get_mechanism_info()
+}
+  </code></synopsis>
+  <p>Get information for the specified mechanism.</p>
+
+<terms>
+<item>
+<title><code>mech_type</code></title>
+  <p>The mechanisms type to get info for.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the mechanism information, or NULL if failed; use
+         <link xref="Gck.MechanismInfo.free"/> when done with it</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Cogl.MatrixEntry.is_identity"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.MatrixEntry" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_matrix_entry_is_identity</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.MatrixEntry.prototype.is_identity</title>
+  <synopsis><code mime="text/x-gjs">
+function is_identity(): <link xref="Cogl.Bool">Cogl.Bool</link> {
+    // Gjs wrapper for cogl_matrix_entry_is_identity()
+}
+  </code></synopsis>
+  <p>Determines whether <code>entry</code> is known to represent an identity
+transform.</p>  <p>If this returns <code>true</code> then the entry is definitely the identity
+matrix. If it returns <code>false</code> it may or may not be the identity
+matrix but no expensive comparison is performed to verify it.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if <code>entry</code> is definitely an identity transform,
+              otherwise <code>false</code>.</p>
+</item>
+</terms>
+
+</page>

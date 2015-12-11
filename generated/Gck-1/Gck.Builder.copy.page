@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="Gck.Builder.copy"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Builder" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.Builder</api:type>
+      </api:returns>
+      <api:name>gck_builder_copy</api:name>
+    </api:function>
+  </info>
+  <title>Gck.Builder.prototype.copy</title>
+  <synopsis><code mime="text/x-gjs">
+function copy(): <link xref="Gck.Builder">Gck.Builder</link> {
+    // Gjs wrapper for gck_builder_copy()
+}
+  </code></synopsis>
+  <p>Make a copy of the builder and its state. The new builder is allocated
+with <link xref="Gck.Builder.new"/> and should be freed with <link xref="Gck.builder_unref"/>.</p>  <p>Attribute value memory is automatically shared between the two builders,
+and is only freed when both are gone.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the builder copy, which should be freed with
+         <link xref="Gck.builder_unref"/>.</p>
+</item>
+</terms>
+
+</page>

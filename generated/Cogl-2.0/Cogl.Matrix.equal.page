@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<page id="Cogl.Matrix.equal"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Matrix" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_matrix_equal</api:name>
+      <api:arg>
+        <api:type>void</api:type>
+        <api:name>v1</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>void</api:type>
+        <api:name>v2</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Matrix.equal</title>
+  <synopsis><code mime="text/x-gjs">
+function equal(v1: void, v2: void): <link xref="Cogl.Bool">Cogl.Bool</link> {
+    // Gjs wrapper for cogl_matrix_equal()
+}
+  </code></synopsis>
+  <p>Compares two matrices to see if they represent the same
+transformation. Although internally the matrices may have different
+annotations associated with them and may potentially have a cached
+inverse matrix these are not considered in the comparison.</p>
+  <p>Since 1.4</p>
+<terms>
+<item>
+<title><code>v1</code></title>
+  <p>A 4x4 transformation matrix</p>
+</item>
+<item>
+<title><code>v2</code></title>
+  <p>A 4x4 transformation matrix</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

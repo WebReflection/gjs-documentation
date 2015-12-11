@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gck.TokenInfo-total_private_memory"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.TokenInfo" group="field" type="guide"/>
+    <title type="link" role="topic">total_private_memory</title>
+  </info>
+  <title>Gck.TokenInfo.total_private_memory</title>
+  <synopsis><code mime="text/x-gjs">
+TokenInfo.total_private_memory: Number(glong) (Read / Write)
+  </code></synopsis>
+  <p>The total amount of memory on this token for storing private objects.</p>
+
+</page>

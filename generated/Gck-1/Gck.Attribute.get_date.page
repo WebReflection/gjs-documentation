@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="Gck.Attribute.get_date"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Attribute" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gck_attribute_get_date</api:name>
+      <api:arg>
+        <api:type>GLib.Date</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Attribute.prototype.get_date</title>
+  <synopsis><code mime="text/x-gjs">
+function get_date(value: <link href="../GLib-2.0/GLib.Date.html">GLib.Date</link>): void {
+    // Gjs wrapper for gck_attribute_get_date()
+}
+  </code></synopsis>
+  <p>Get the CK_DATE of a PKCS\#11 attribute. No
+conversion is performed. It is an error to pass an attribute
+to this function unless you're know it's supposed to contain
+a value of the right type.</p>
+
+<terms>
+<item>
+<title><code>value</code></title>
+  <p>The date value to fill in with the parsed date.</p>
+</item>
+</terms>
+
+</page>

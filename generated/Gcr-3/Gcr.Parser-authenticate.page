@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="Gcr.Parser-authenticate"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Parser" group="signal" type="guide"/>
+    <title type="link" role="topic">authenticate</title>
+  </info>
+  <title>Gcr.Parser::authenticate</title>
+  <synopsis><code mime="text/x-gjs">
+connect('authenticate', function (parser, count: Number(gint), ): Boolean);
+  </code></synopsis>
+  <p>This signal is emitted when an item needs to be unlocked or decrypted before
+it can be parsed. The <code>count</code> argument specifies the number of times
+the signal has been emitted for a given item. This can be used to
+display a message saying the previous password was incorrect.</p>  <p>Typically the <link xref="Gcr.Parser.add_password"/> function is called in
+response to this signal.</p>  <p>If <code>false</code> is returned, then the authentication was not handled. If
+no handlers return <code>true</code> then the item is not parsed and an error
+with the code <link xref="Gcr.DataError"/>.cancelled will be raised.</p>
+
+<terms>
+<item>
+<title><code>parser</code></title>
+<p>instance of <link xref="Gcr.Parser"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>count</code></title>
+  <p>the number of times this item has been authenticated</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>Whether the authentication was handled.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Cogl.FenceCallback"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Cogl.FenceCallback</title>
+  <synopsis><code mime="text/x-gjs">
+function onFenceCallback(fence: <link xref="Cogl.Fence">Cogl.Fence</link>): void {
+}
+  </code></synopsis>
+  <p>The callback prototype used with
+<link xref="Cogl.Framebuffer.add_fence_callback"/> for notification of GPU
+command completion.</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>fence</code></title>
+  <p>Unused. In the future this parameter may be used to pass
+  extra information about the fence completion but for now it
+  should be ignored.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Cogl.Framebuffer.get_width"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Framebuffer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gint)</api:type>
+      </api:returns>
+      <api:name>cogl_framebuffer_get_width</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Framebuffer.prototype.get_width</title>
+  <synopsis><code mime="text/x-gjs">
+function get_width(): Number(gint) {
+    // Gjs wrapper for cogl_framebuffer_get_width()
+}
+  </code></synopsis>
+  <p>Queries the current width of the given <code>framebuffer</code>.</p>
+  <p>Since 1.8</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>The width of <code>framebuffer</code>.</p>
+</item>
+</terms>
+
+</page>

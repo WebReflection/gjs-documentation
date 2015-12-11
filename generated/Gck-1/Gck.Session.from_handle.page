@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<page id="Gck.Session.from_handle"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Session" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.Session</api:type>
+      </api:returns>
+      <api:name>gck_session_from_handle</api:name>
+      <api:arg>
+        <api:type>Gck.Slot</api:type>
+        <api:name>slot</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gulong)</api:type>
+        <api:name>session_handle</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gck.SessionOptions</api:type>
+        <api:name>options</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Session.from_handle</title>
+  <synopsis><code mime="text/x-gjs">
+function from_handle(slot: <link xref="Gck.Slot">Gck.Slot</link>, session_handle: Number(gulong), options: <link xref="Gck.SessionOptions">Gck.SessionOptions</link>): <link xref="Gck.Session">Gck.Session</link> {
+    // Gjs wrapper for gck_session_from_handle()
+}
+  </code></synopsis>
+  <p>Initialize a GckSession object from a raw PKCS\#11 session handle.
+Usually one would use the <link xref="Gck.Slot.open_session"/> function to
+create a session.</p>
+
+<terms>
+<item>
+<title><code>slot</code></title>
+  <p>The slot which the session belongs to.</p>
+</item>
+<item>
+<title><code>session_handle</code></title>
+  <p>the raw PKCS\#11 handle of the session</p>
+</item>
+<item>
+<title><code>options</code></title>
+  <p>Session options. Those which are used during opening a session have no effect.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the new GckSession object</p>
+</item>
+</terms>
+
+</page>

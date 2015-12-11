@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<page id="Cogl.Framebuffer.set_depth_texture_enabled"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Framebuffer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_framebuffer_set_depth_texture_enabled</api:name>
+      <api:arg>
+        <api:type>Cogl.Bool</api:type>
+        <api:name>enabled</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Framebuffer.prototype.set_depth_texture_enabled</title>
+  <synopsis><code mime="text/x-gjs">
+function set_depth_texture_enabled(enabled: <link xref="Cogl.Bool">Cogl.Bool</link>): void {
+    // Gjs wrapper for cogl_framebuffer_set_depth_texture_enabled()
+}
+  </code></synopsis>
+  <p>If <code>enabled</code> is #TRUE, the depth buffer used when rendering to <code>framebuffer</code>
+is available as a texture. You can retrieve the texture with
+<link xref="Cogl.Framebuffer.get_depth_texture"/>.</p>  <p>&lt;note&gt;It's possible that your GPU does not support depth textures. You
+should check the <link xref="Cogl.FeatureID"/>.ogl_feature_id_depth_texture feature before using this
+function.&lt;/note&gt;
+&lt;note&gt;It's not valid to call this function after the framebuffer has been
+allocated as the creation of the depth texture is done at allocation time.
+&lt;/note&gt;</p>
+  <p>Since 1.14</p>
+<terms>
+<item>
+<title><code>enabled</code></title>
+  <p>TRUE or FALSE</p>
+</item>
+</terms>
+
+</page>

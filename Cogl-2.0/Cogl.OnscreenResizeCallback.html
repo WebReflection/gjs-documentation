@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.OnscreenResizeCallback</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.OnscreenResizeCallback</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function onOnscreenResizeCallback(onscreen: <span class="link"><a href="Cogl.Onscreen.html" title="Cogl.Onscreen">Cogl.Onscreen</a></span>, width: Number(gint), height: Number(gint)): void {
+}
+  </pre></div></div></div></div></div>
+<p class="p">Is a callback type used with the
+<span class="link"><a href="Cogl.Onscreen.add_resize_callback.html" title="Cogl.Onscreen.prototype.add_resize_callback">Cogl.Onscreen.prototype.add_resize_callback</a></span> allowing applications to be
+notified whenever an <span class="code">onscreen</span> framebuffer is resized.</p>
+<p class="p">&lt;note&gt;Cogl automatically updates the viewport of an <span class="code">onscreen</span>
+framebuffer that is resized so this callback is also an indication
+that the viewport has been modified too&lt;/note&gt;</p>
+<p class="p">&lt;note&gt;A resize callback will only ever be called while dispatching
+Cogl events from the system mainloop; so for example during
+<span class="link"><a href="Cogl.poll_renderer_dispatch.html" title="Cogl.poll_renderer_dispatch">Cogl.poll_renderer_dispatch</a></span>. This is so that callbacks shouldn't
+occur while an application might have arbitrary locks held for
+example.&lt;/note&gt;</p>
+<p class="p">Since 2.0</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">onscreen</span></dt>
+<dd class="terms"><p class="p">A <span class="link"><a href="Cogl.Onscreen.html" title="Cogl.Onscreen">Cogl.Onscreen</a></span> framebuffer that was resized</p></dd>
+<dt class="terms"><span class="code">width</span></dt>
+<dd class="terms"><p class="p">The new width of <span class="code">onscreen</span></p></dd>
+<dt class="terms"><span class="code">height</span></dt>
+<dd class="terms"><p class="p">The new height of <span class="code">onscreen</span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Cogl">Cogl</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

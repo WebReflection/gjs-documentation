@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="Cogl.foreach_feature"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_foreach_feature</api:name>
+      <api:arg>
+        <api:type>Cogl.Context</api:type>
+        <api:name>context</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.FeatureCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.foreach_feature</title>
+  <synopsis><code mime="text/x-gjs">
+function foreach_feature(context: <link xref="Cogl.Context">Cogl.Context</link>, callback: <link xref="Cogl.FeatureCallback">Cogl.FeatureCallback</link>): void {
+    // Gjs wrapper for cogl_foreach_feature()
+}
+  </code></synopsis>
+  <p>Iterates through all the context level features currently supported
+for a given <code>context</code> and for each feature <code>callback</code> is called.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>context</code></title>
+  <p>A <link xref="Cogl.Context"/> pointer</p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>A <link xref="Cogl.FeatureCallback"/> called for each
+           supported feature</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<page id="Cogl.Euler.init"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Euler" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_euler_init</api:name>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>heading</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>pitch</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>roll</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Euler.prototype.init</title>
+  <synopsis><code mime="text/x-gjs">
+function init(heading: Number(gfloat), pitch: Number(gfloat), roll: Number(gfloat)): void {
+    // Gjs wrapper for cogl_euler_init()
+}
+  </code></synopsis>
+  <p>Initializes <code>euler</code> to represent a rotation of @x_angle degrees
+around the x axis, then @y_angle degrees around the y_axis and
+@z_angle degrees around the z axis.</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>heading</code></title>
+  <p>Angle to rotate around an object's y axis</p>
+</item>
+<item>
+<title><code>pitch</code></title>
+  <p>Angle to rotate around an object's x axis</p>
+</item>
+<item>
+<title><code>roll</code></title>
+  <p>Angle to rotate around an object's z axis</p>
+</item>
+</terms>
+
+</page>

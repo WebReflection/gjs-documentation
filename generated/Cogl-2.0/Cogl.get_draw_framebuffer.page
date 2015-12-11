@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Cogl.get_draw_framebuffer"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Framebuffer</api:type>
+      </api:returns>
+      <api:name>cogl_get_draw_framebuffer</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.get_draw_framebuffer</title>
+  <synopsis><code mime="text/x-gjs">
+function get_draw_framebuffer(): <link xref="Cogl.Framebuffer">Cogl.Framebuffer</link> {
+    // Gjs wrapper for cogl_get_draw_framebuffer()
+}
+  </code></synopsis>
+  <p>Gets the current <link xref="Cogl.Framebuffer"/> as set using
+cogl_push_framebuffer()</p>
+  <p>Since 1.8</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>The current <link xref="Cogl.Framebuffer"/></p>
+</item>
+</terms>
+
+</page>

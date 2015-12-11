@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="Gcr.Importer.import_async"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Importer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gcr_importer_import_async</api:name>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.AsyncReadyCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.Importer.prototype.import_async</title>
+  <synopsis><code mime="text/x-gjs">
+function import_async(cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>, callback: <link href="../Gio-2.0/Gio.AsyncReadyCallback.html">Gio.AsyncReadyCallback</link>): void {
+    // Gjs wrapper for gcr_importer_import_async()
+}
+  </code></synopsis>
+  <p>Import the queued items in the importer. This function returns immediately
+and completes asynchronously.</p>
+
+<terms>
+<item>
+<title><code>cancellable</code></title>
+  <p>a <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>, or <code>null</code></p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>called when the operation completes</p>
+</item>
+</terms>
+
+</page>

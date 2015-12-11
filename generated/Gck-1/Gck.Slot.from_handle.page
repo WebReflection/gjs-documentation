@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<page id="Gck.Slot.from_handle"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Slot" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.Slot</api:type>
+      </api:returns>
+      <api:name>gck_slot_from_handle</api:name>
+      <api:arg>
+        <api:type>Gck.Module</api:type>
+        <api:name>module</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gulong)</api:type>
+        <api:name>slot_id</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Slot.from_handle</title>
+  <synopsis><code mime="text/x-gjs">
+function from_handle(module: <link xref="Gck.Module">Gck.Module</link>, slot_id: Number(gulong)): <link xref="Gck.Slot">Gck.Slot</link> {
+    // Gjs wrapper for gck_slot_from_handle()
+}
+  </code></synopsis>
+  <p>Create a new GckSlot object for a raw PKCS\#11 handle.</p>
+
+<terms>
+<item>
+<title><code>module</code></title>
+  <p>The module that this slot is on.</p>
+</item>
+<item>
+<title><code>slot_id</code></title>
+  <p>The raw PKCS\#11 handle or slot id of this slot.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>The new GckSlot object.</p>
+</item>
+</terms>
+
+</page>

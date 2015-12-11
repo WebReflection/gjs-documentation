@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.set_color4f"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_set_color4f</api:name>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>red</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>green</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>blue</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>alpha</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.set_color4f</title>
+  <synopsis><code mime="text/x-gjs">
+function set_color4f(red: Number(gfloat), green: Number(gfloat), blue: Number(gfloat), alpha: Number(gfloat)): void {
+    // Gjs wrapper for cogl_pipeline_set_color4f()
+}
+  </code></synopsis>
+  <p>Sets the basic color of the pipeline, used when no lighting is enabled.</p>  <p>The default value is (1.0, 1.0, 1.0, 1.0)</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>red</code></title>
+  <p>The red component</p>
+</item>
+<item>
+<title><code>green</code></title>
+  <p>The green component</p>
+</item>
+<item>
+<title><code>blue</code></title>
+  <p>The blue component</p>
+</item>
+<item>
+<title><code>alpha</code></title>
+  <p>The alpha component</p>
+</item>
+</terms>
+
+</page>

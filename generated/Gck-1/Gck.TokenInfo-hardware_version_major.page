@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gck.TokenInfo-hardware_version_major"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.TokenInfo" group="field" type="guide"/>
+    <title type="link" role="topic">hardware_version_major</title>
+  </info>
+  <title>Gck.TokenInfo.hardware_version_major</title>
+  <synopsis><code mime="text/x-gjs">
+TokenInfo.hardware_version_major: Number(guint8) (Read / Write)
+  </code></synopsis>
+  <p>The major version of the hardware.</p>
+
+</page>

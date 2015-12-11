@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="GWeather.LocationEntry.set_location"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.LocationEntry" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gweather_location_entry_set_location</api:name>
+      <api:arg>
+        <api:type>GWeather.Location</api:type>
+        <api:name>loc</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GWeather.LocationEntry.prototype.set_location</title>
+  <synopsis><code mime="text/x-gjs">
+function set_location(loc: <link xref="GWeather.Location">GWeather.Location</link>): void {
+    // Gjs wrapper for gweather_location_entry_set_location()
+}
+  </code></synopsis>
+  <p>Sets <code>entry</code>'s location to <code>loc</code>, and updates the text of the
+entry accordingly.
+Note that if the database contains a location that compares
+equal to <code>loc</code>, that will be chosen in place of <code>loc</code>.</p>
+
+<terms>
+<item>
+<title><code>loc</code></title>
+  <p>a <link xref="GWeather.Location"/> in <code>entry</code>, or <code>null</code> to
+clear <code>entry</code></p>
+</item>
+</terms>
+
+</page>

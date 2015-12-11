@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Cogl.Onscreen.remove_dirty_callback"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Onscreen" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_onscreen_remove_dirty_callback</api:name>
+      <api:arg>
+        <api:type>Cogl.OnscreenDirtyClosure</api:type>
+        <api:name>closure</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Onscreen.prototype.remove_dirty_callback</title>
+  <synopsis><code mime="text/x-gjs">
+function remove_dirty_callback(closure: <link xref="Cogl.OnscreenDirtyClosure">Cogl.OnscreenDirtyClosure</link>): void {
+    // Gjs wrapper for cogl_onscreen_remove_dirty_callback()
+}
+  </code></synopsis>
+  <p>Removes a callback and associated user data that were previously
+registered using <link xref="Cogl.Onscreen.add_dirty_callback"/>.</p>  <p>If a destroy callback was passed to
+<link xref="Cogl.Onscreen.add_dirty_callback"/> to destroy the user data then
+this will also get called.</p>
+  <p>Since 1.16</p>
+<terms>
+<item>
+<title><code>closure</code></title>
+  <p>A <link xref="Cogl.OnscreenDirtyClosure"/> returned from
+          <link xref="Cogl.Onscreen.add_dirty_callback"/></p>
+</item>
+</terms>
+
+</page>

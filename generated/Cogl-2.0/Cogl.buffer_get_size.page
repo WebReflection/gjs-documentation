@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Cogl.buffer_get_size"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(guint)</api:type>
+      </api:returns>
+      <api:name>cogl_buffer_get_size</api:name>
+      <api:arg>
+        <api:type>Cogl.Buffer</api:type>
+        <api:name>buffer</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.buffer_get_size</title>
+  <synopsis><code mime="text/x-gjs">
+function buffer_get_size(buffer: <link xref="Cogl.Buffer">Cogl.Buffer</link>): Number(guint) {
+    // Gjs wrapper for cogl_buffer_get_size()
+}
+  </code></synopsis>
+  <p>Retrieves the size of buffer</p>
+  <p>Since 1.2</p>
+<terms>
+<item>
+<title><code>buffer</code></title>
+  <p>a buffer object</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the size of the buffer in bytes</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gcr.pkcs11_get_trust_lookup_uris"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(String)</api:type>
+      </api:returns>
+      <api:name>gcr_pkcs11_get_trust_lookup_uris</api:name>
+    </api:function>
+  </info>
+  <title>Gcr.pkcs11_get_trust_lookup_uris</title>
+  <synopsis><code mime="text/x-gjs">
+function pkcs11_get_trust_lookup_uris(): Array(String) {
+    // Gjs wrapper for gcr_pkcs11_get_trust_lookup_uris()
+}
+  </code></synopsis>
+  <p>Get the PKCS\#11 URIs that are used to identify which slots to use for
+lookup trust assertions.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the uri which identifies trust storage slot</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Cogl.Quaternion.init_from_quaternion"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Quaternion" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_quaternion_init_from_quaternion</api:name>
+      <api:arg>
+        <api:type>Cogl.Quaternion</api:type>
+        <api:name>src</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Quaternion.prototype.init_from_quaternion</title>
+  <synopsis><code mime="text/x-gjs">
+function init_from_quaternion(src: <link xref="Cogl.Quaternion">Cogl.Quaternion</link>): void {
+    // Gjs wrapper for cogl_quaternion_init_from_quaternion()
+}
+  </code></synopsis>
+
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>src</code></title>
+  <p>A <link xref="Cogl.Quaternion"/> with which to initialize <code>quaternion</code></p>
+</item>
+</terms>
+
+</page>

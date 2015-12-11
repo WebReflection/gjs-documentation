@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Notify.ActionCallback"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Notify.ActionCallback</title>
+  <synopsis><code mime="text/x-gjs">
+function onActionCallback(notification: <link xref="Notify.Notification">Notify.Notification</link>, action: String): void {
+}
+  </code></synopsis>
+  <p>An action callback function.</p>
+
+<terms>
+<item>
+<title><code>notification</code></title>
+
+</item>
+<item>
+<title><code>action</code></title>
+
+</item>
+</terms>
+
+</page>

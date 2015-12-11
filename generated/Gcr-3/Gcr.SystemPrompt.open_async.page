@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<page id="Gcr.SystemPrompt.open_async"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.SystemPrompt" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gcr_system_prompt_open_async</api:name>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>timeout_seconds</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.AsyncReadyCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.SystemPrompt.open_async</title>
+  <synopsis><code mime="text/x-gjs">
+function open_async(timeout_seconds: Number(gint), cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>, callback: <link href="../Gio-2.0/Gio.AsyncReadyCallback.html">Gio.AsyncReadyCallback</link>): void {
+    // Gjs wrapper for gcr_system_prompt_open_async()
+}
+  </code></synopsis>
+  <p>Asynchronously open a system prompt with the default system prompter.</p>  <p>Most system prompters only allow showing one prompt at a time, and if
+another prompt is shown then this method will block for up to
+<code>timeout_seconds</code> seconds. If <code>timeout_seconds</code> is equal to -1, then this
+will block indefinitely until the prompt can be opened. If <code>timeout_seconds</code>
+expires, then this operation will fail with a <link xref="Gcr.SystemPromptError"/>.system_prompt_in_progress
+error.</p>
+
+<terms>
+<item>
+<title><code>timeout_seconds</code></title>
+  <p>the number of seconds to wait to access the prompt, or -1</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional cancellation object</p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>called when the operation completes</p>
+</item>
+</terms>
+
+</page>

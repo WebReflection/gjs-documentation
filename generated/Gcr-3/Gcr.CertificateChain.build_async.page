@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<page id="Gcr.CertificateChain.build_async"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.CertificateChain" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gcr_certificate_chain_build_async</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>purpose</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>peer</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint)</api:type>
+        <api:name>flags</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.AsyncReadyCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.CertificateChain.prototype.build_async</title>
+  <synopsis><code mime="text/x-gjs">
+function build_async(purpose: String, peer: String, flags: Number(guint), cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>, callback: <link href="../Gio-2.0/Gio.AsyncReadyCallback.html">Gio.AsyncReadyCallback</link>): void {
+    // Gjs wrapper for gcr_certificate_chain_build_async()
+}
+  </code></synopsis>
+  <p>Complete a certificate chain. Once a certificate chain has been built
+its status can be examined.</p>  <p>This will lookup missing certificates in PKCS\#11
+modules and also that each certificate in the chain is the signer of the
+previous one. If a trust anchor, pinned certificate, or self-signed certificate
+is found, then the chain is considered built. Any extra certificates are
+removed from the chain.</p>  <p>It's important to understand that building of a certificate chain does not
+constitute verifying that chain. This is merely the first step towards
+trust verification.</p>  <p>The <code>purpose</code> is a string like %GCR_PURPOSE_CLIENT_AUTH and is the purpose
+for which the certificate chain will be used. Trust anchors are looked up
+for this purpose. This argument is required.</p>  <p>The <code>peer</code> is usually the host name of the peer whith which this certificate
+chain is being used. It is used to look up pinned certificates that have
+been stored for this peer. If <code>null</code> then no pinned certificates will
+be considered.</p>  <p>If the <link xref="Gcr.CertificateChainFlags"/>.no_lookups flag is specified then no
+lookups for anchors or pinned certificates are done, and the resulting chain
+will be neither anchored or pinned. Additionally no missing certificate
+authorities are looked up in PKCS\#11</p>  <p>When the operation is finished, <code>callback</code> will be called. You can then call
+<link xref="Gcr.CertificateChain.build_finish"/> to get the result of the operation.</p>
+
+<terms>
+<item>
+<title><code>purpose</code></title>
+  <p>the purpose the certificate chain will be used for</p>
+</item>
+<item>
+<title><code>peer</code></title>
+  <p>the peer the certificate chain will be used with, or <code>null</code></p>
+</item>
+<item>
+<title><code>flags</code></title>
+  <p>chain completion flags</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>a <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link> or <code>null</code></p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>this will be called when the operation completes.</p>
+</item>
+</terms>
+
+</page>

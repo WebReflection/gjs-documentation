@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<page id="Gck.Session.set_pin"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Session" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gck_session_set_pin</api:name>
+      <api:arg>
+        <api:type>ByteArray</api:type>
+        <api:name>old_pin</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>ByteArray</api:type>
+        <api:name>new_pin</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Session.prototype.set_pin</title>
+  <synopsis><code mime="text/x-gjs">
+function set_pin(old_pin: ByteArray, new_pin: ByteArray, cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>): Boolean {
+    // Gjs wrapper for gck_session_set_pin()
+}
+  </code></synopsis>
+  <p>Change the user's pin on this slot that this session is opened on.</p>  <p>This call may block for an indefinite period.</p>
+
+<terms>
+<item>
+<title><code>old_pin</code></title>
+  <p>the user's old PIN, or <code>null</code>
+          for protected authentication path.</p>
+</item>
+<item>
+<title><code>new_pin</code></title>
+  <p>the user's new PIN, or <code>null</code>
+          for protected authentication path</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>Optional cancellation object, or NULL.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>Whether successful or not.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Cogl.Framebuffer.get_viewport_width"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Framebuffer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gfloat)</api:type>
+      </api:returns>
+      <api:name>cogl_framebuffer_get_viewport_width</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Framebuffer.prototype.get_viewport_width</title>
+  <synopsis><code mime="text/x-gjs">
+function get_viewport_width(): Number(gfloat) {
+    // Gjs wrapper for cogl_framebuffer_get_viewport_width()
+}
+  </code></synopsis>
+  <p>Queries the width of the viewport as set using <link xref="Cogl.Framebuffer.set_viewport"/>
+or the default value which is the width of the framebuffer.</p>
+  <p>Since 1.8</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>The width of the viewport.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gcr.FilterCollection.get_underlying"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.FilterCollection" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gcr.Collection</api:type>
+      </api:returns>
+      <api:name>gcr_filter_collection_get_underlying</api:name>
+    </api:function>
+  </info>
+  <title>Gcr.FilterCollection.prototype.get_underlying</title>
+  <synopsis><code mime="text/x-gjs">
+function get_underlying(): <link xref="Gcr.Collection">Gcr.Collection</link> {
+    // Gjs wrapper for gcr_filter_collection_get_underlying()
+}
+  </code></synopsis>
+  <p>Get the collection that is being filtered by this filter collection.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the underlying collection</p>
+</item>
+</terms>
+
+</page>

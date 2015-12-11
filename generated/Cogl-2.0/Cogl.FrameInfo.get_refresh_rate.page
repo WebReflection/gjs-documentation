@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Cogl.FrameInfo.get_refresh_rate"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.FrameInfo" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gfloat)</api:type>
+      </api:returns>
+      <api:name>cogl_frame_info_get_refresh_rate</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.FrameInfo.prototype.get_refresh_rate</title>
+  <synopsis><code mime="text/x-gjs">
+function get_refresh_rate(): Number(gfloat) {
+    // Gjs wrapper for cogl_frame_info_get_refresh_rate()
+}
+  </code></synopsis>
+  <p>Gets the refresh rate in Hertz for the output that the frame was on
+at the time the frame was presented.</p>  <p>&lt;note&gt;Some platforms can't associate a <link xref="Cogl.Output"/> with a
+<link xref="Cogl.FrameInfo"/> object but are able to report a refresh rate via
+this api. Therefore if you need this information then this api is
+more reliable than using <link xref="Cogl.FrameInfo.get_output"/> followed by
+<link xref="Cogl.Output.get_refresh_rate"/>.&lt;/note&gt;</p>
+  <p>Since 1.14</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the refresh rate in Hertz</p>
+</item>
+</terms>
+
+</page>

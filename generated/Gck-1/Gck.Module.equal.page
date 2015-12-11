@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gck.Module.equal"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Module" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gck_module_equal</api:name>
+      <api:arg>
+        <api:type>Gck.Module</api:type>
+        <api:name>module2</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Module.prototype.equal</title>
+  <synopsis><code mime="text/x-gjs">
+function equal(module2: <link xref="Gck.Module">Gck.Module</link>): Boolean {
+    // Gjs wrapper for gck_module_equal()
+}
+  </code></synopsis>
+  <p>Checks equality of two modules. Two GckModule objects can point to the same
+underlying PKCS\#11 module.</p>
+
+<terms>
+<item>
+<title><code>module2</code></title>
+  <p>a pointer to the second <link xref="Gck.Module"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>TRUE if module1 and module2 are equal. FALSE if either is not a GckModule.</p>
+</item>
+</terms>
+
+</page>

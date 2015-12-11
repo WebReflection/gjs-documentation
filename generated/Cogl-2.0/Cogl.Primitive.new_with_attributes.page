@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<page id="Cogl.Primitive.new_with_attributes"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Primitive" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Primitive</api:type>
+      </api:returns>
+      <api:name>cogl_primitive_new_with_attributes</api:name>
+      <api:arg>
+        <api:type>Cogl.VerticesMode</api:type>
+        <api:name>mode</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>n_vertices</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.Attribute</api:type>
+        <api:name>attributes</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>n_attributes</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Primitive.new_with_attributes</title>
+  <synopsis><code mime="text/x-gjs">
+function new_with_attributes(mode: <link xref="Cogl.VerticesMode">Cogl.VerticesMode</link>, n_vertices: Number(gint), attributes: <link xref="Cogl.Attribute">Cogl.Attribute</link>, n_attributes: Number(gint)): <link xref="Cogl.Primitive">Cogl.Primitive</link> {
+    // Gjs wrapper for cogl_primitive_new_with_attributes()
+}
+  </code></synopsis>
+  <p>Combines a set of <link xref="Cogl.Attribute"/>&lt;!-- --&gt;s with a specific draw <code>mode</code>
+and defines a vertex count so a <link xref="Cogl.Primitive"/> object can be retained and
+drawn later with no addition information required.</p>  <p>The value passed as <code>n_vertices</code> will simply update the
+<link xref="Cogl.Primitive"/> &lt;structfield&gt;n_vertices&lt;/structfield&gt; property as if
+<link xref="Cogl.Primitive.set_n_vertices"/> were called. This property defines
+the number of vertices to read when drawing.</p>
+  <p>Since 1.6</p>
+<terms>
+<item>
+<title><code>mode</code></title>
+  <p>A <link xref="Cogl.VerticesMode"/> defining how to draw the vertices</p>
+</item>
+<item>
+<title><code>n_vertices</code></title>
+  <p>The number of vertices to process when drawing</p>
+</item>
+<item>
+<title><code>attributes</code></title>
+  <p>An array of CoglAttribute</p>
+</item>
+<item>
+<title><code>n_attributes</code></title>
+  <p>The number of attributes</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>A newly allocated <link xref="Cogl.Primitive"/> object</p>
+</item>
+</terms>
+
+</page>

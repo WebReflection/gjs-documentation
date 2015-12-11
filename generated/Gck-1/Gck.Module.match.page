@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Gck.Module.match"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Module" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gck_module_match</api:name>
+      <api:arg>
+        <api:type>Gck.UriData</api:type>
+        <api:name>uri</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Module.prototype.match</title>
+  <synopsis><code mime="text/x-gjs">
+function match(uri: <link xref="Gck.UriData">Gck.UriData</link>): Boolean {
+    // Gjs wrapper for gck_module_match()
+}
+  </code></synopsis>
+  <p>Check whether the PKCS\#11 URI matches the module</p>
+
+<terms>
+<item>
+<title><code>uri</code></title>
+  <p>the uri to match against the module</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>whether the URI matches or not</p>
+</item>
+</terms>
+
+</page>

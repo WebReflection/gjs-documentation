@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<page id="Cogl.poll_renderer_get_info"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gint)</api:type>
+      </api:returns>
+      <api:name>cogl_poll_renderer_get_info</api:name>
+      <api:arg>
+        <api:type>Cogl.Renderer</api:type>
+        <api:name>renderer</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.PollFD</api:type>
+        <api:name>poll_fds</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>n_poll_fds</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint64)</api:type>
+        <api:name>timeout</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.poll_renderer_get_info</title>
+  <synopsis><code mime="text/x-gjs">
+function poll_renderer_get_info(renderer: <link xref="Cogl.Renderer">Cogl.Renderer</link>, poll_fds: <link xref="Cogl.PollFD">Cogl.PollFD</link>, n_poll_fds: Number(gint), timeout: Number(gint64)): Number(gint) {
+    // Gjs wrapper for cogl_poll_renderer_get_info()
+}
+  </code></synopsis>
+  <p>Is used to integrate Cogl with an application mainloop that is based
+on the unix poll(2) api (or select() or something equivalent). This
+api should be called whenever an application is about to go idle so
+that Cogl has a chance to describe what file descriptor events it
+needs to be woken up for.</p>  <p>&lt;note&gt;If your application is using the Glib mainloop then you
+should jump to the <link xref="Cogl.glib_source_new"/> api as a more convenient
+way of integrating Cogl with the mainloop.&lt;/note&gt;</p>  <p>After the function is called *<code>poll_fds</code> will contain a pointer to
+an array of <link xref="Cogl.PollFD"/> structs describing the file descriptors
+that Cogl expects. The fd and events members will be updated
+accordingly. After the application has completed its idle it is
+expected to either update the revents members directly in this
+array or to create a copy of the array and update them
+there.</p>  <p>When the application mainloop returns from calling poll(2) (or its
+equivalent) then it should call <link xref="Cogl.poll_renderer_dispatch"/>
+passing a pointer the array of CoglPollFD&lt;!-- --&gt;s with updated
+revent values.</p>  <p>When using the <link xref="Cogl.WinsysID"/>.wgl winsys (where file descriptors
+don't make any sense) or <link xref="Cogl.WinsysID"/>.sdl (where the event
+handling functions of SDL don't allow blocking on a file
+descriptor) *n_poll_fds is guaranteed to be zero.</p>  <p><code>timeout</code> will contain a maximum amount of time to wait in
+microseconds before the application should wake up or -1 if the
+application should wait indefinitely. This can also be 0 if
+Cogl needs to be woken up immediately.</p>
+  <p>Since 1.16</p>
+<terms>
+<item>
+<title><code>renderer</code></title>
+  <p>A <link xref="Cogl.Renderer"/></p>
+</item>
+<item>
+<title><code>poll_fds</code></title>
+  <p>A return location for a pointer to an array
+           of <link xref="Cogl.PollFD"/>&lt;!-- --&gt;s</p>
+</item>
+<item>
+<title><code>n_poll_fds</code></title>
+  <p>A return location for the number of entries in *<code>poll_fds</code></p>
+</item>
+<item>
+<title><code>timeout</code></title>
+  <p>A return location for the maximum length of time to wait
+          in microseconds, or -1 to wait indefinitely.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>A "poll fd state age" that changes whenever the set
+              of poll_fds has changed. If this API is being used to
+              integrate with another system mainloop api then
+              knowing if the set of file descriptors and events has
+              really changed can help avoid redundant work
+              depending the api. The age isn't guaranteed to change
+              when the timeout changes.</p>
+</item>
+</terms>
+
+</page>

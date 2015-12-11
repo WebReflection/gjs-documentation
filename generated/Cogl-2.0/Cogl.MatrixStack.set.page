@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="Cogl.MatrixStack.set"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.MatrixStack" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_matrix_stack_set</api:name>
+      <api:arg>
+        <api:type>Cogl.Matrix</api:type>
+        <api:name>matrix</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.MatrixStack.prototype.set</title>
+  <synopsis><code mime="text/x-gjs">
+function set(matrix: <link xref="Cogl.Matrix">Cogl.Matrix</link>): void {
+    // Gjs wrapper for cogl_matrix_stack_set()
+}
+  </code></synopsis>
+  <p>Replaces the current <code>stack</code> matrix value with the value of <code>matrix</code>.
+This effectively discards any other operations that were applied
+since the last time <link xref="Cogl.MatrixStack.push"/> was called or since
+the stack was initialized.</p>
+
+<terms>
+<item>
+<title><code>matrix</code></title>
+  <p>A <link xref="Cogl.Matrix"/> replace the current matrix value with</p>
+</item>
+</terms>
+
+</page>

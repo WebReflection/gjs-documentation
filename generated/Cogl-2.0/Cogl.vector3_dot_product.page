@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<page id="Cogl.vector3_dot_product"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gfloat)</api:type>
+      </api:returns>
+      <api:name>cogl_vector3_dot_product</api:name>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>a</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>b</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.vector3_dot_product</title>
+  <synopsis><code mime="text/x-gjs">
+function vector3_dot_product(a: Number(gfloat), b: Number(gfloat)): Number(gfloat) {
+    // Gjs wrapper for cogl_vector3_dot_product()
+}
+  </code></synopsis>
+  <p>Calculates the dot product of the two 3 component vectors. This
+can be used to determine the magnitude of one vector projected onto
+another. (for example a surface normal)</p>  <p>For example if you have a polygon with a given normal vector and
+some other point for which you want to calculate its distance from
+the polygon, you can create a vector between one of the polygon
+vertices and that point and use the dot product to calculate the
+magnitude for that vector but projected onto the normal of the
+polygon. This way you don't just get the distance from the point to
+the edge of the polygon you get the distance from the point to the
+nearest part of the polygon.</p>  <p>&lt;note&gt;If you don't use a unit length normal in the above example
+then you would then also have to divide the result by the magnitude
+of the normal&lt;/note&gt;</p>  <p>The dot product is calculated as:
+|[
+ (a-&gt;x * b-&gt;x + a-&gt;y * b-&gt;y + a-&gt;z * b-&gt;z)
+]|</p>  <p>For reference, the dot product can also be calculated from the
+angle between two vectors as:
+|[
+ |a||b|cos𝜃
+]|</p>
+  <p>Since 1.4</p>
+<terms>
+<item>
+<title><code>a</code></title>
+  <p>Your first 3 component vector</p>
+</item>
+<item>
+<title><code>b</code></title>
+  <p>Your second 3 component vector</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>The dot product of two vectors.</p>
+</item>
+</terms>
+
+</page>

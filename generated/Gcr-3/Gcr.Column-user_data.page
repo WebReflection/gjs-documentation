@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gcr.Column-user_data"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Column" group="field" type="guide"/>
+    <title type="link" role="topic">user_data</title>
+  </info>
+  <title>Gcr.Column.user_data</title>
+  <synopsis><code mime="text/x-gjs">
+Column.user_data: void (Read)
+  </code></synopsis>
+
+
+</page>

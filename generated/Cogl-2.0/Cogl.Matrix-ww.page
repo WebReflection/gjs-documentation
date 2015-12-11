@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Cogl.Matrix-ww"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Matrix" group="field" type="guide"/>
+    <title type="link" role="topic">ww</title>
+  </info>
+  <title>Cogl.Matrix.ww</title>
+  <synopsis><code mime="text/x-gjs">
+Matrix.ww: Number(gfloat) (Read / Write)
+  </code></synopsis>
+
+
+</page>

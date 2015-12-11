@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Cogl.GLES2Vtable.glBindRenderbuffer"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Cogl.GLES2Vtable.glBindRenderbuffer</title>
+  <synopsis><code mime="text/x-gjs">
+function onglBindRenderbuffer(target: <link href="../GL-1.0/GL.enum.html">GL.enum</link>, renderbuffer: <link href="../GL-1.0/GL.uint.html">GL.uint</link>): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>target</code></title>
+
+</item>
+<item>
+<title><code>renderbuffer</code></title>
+
+</item>
+</terms>
+
+</page>

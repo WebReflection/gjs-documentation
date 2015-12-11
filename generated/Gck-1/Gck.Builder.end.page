@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Gck.Builder.end"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Builder" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.Attributes</api:type>
+      </api:returns>
+      <api:name>gck_builder_end</api:name>
+    </api:function>
+  </info>
+  <title>Gck.Builder.prototype.end</title>
+  <synopsis><code mime="text/x-gjs">
+function end(): <link xref="Gck.Attributes">Gck.Attributes</link> {
+    // Gjs wrapper for gck_builder_end()
+}
+  </code></synopsis>
+  <p>Complete the <link xref="Gck.Builder"/>, and return the attributes contained in the builder.
+The <link xref="Gck.Builder"/> will be cleared after this function call, and it is no
+longer necessary to use <link xref="Gck.Builder.clear"/> on it, although it is also
+permitted. The builder may be used again to build another set of attributes
+after this function call.</p>  <p>The returned set of attributes is floating, and should either be passed to
+another gck library function which consumes this floating reference, or if
+you wish to keep these attributes around you should ref them with
+<link xref="Gck.Attributes.ref_sink"/> and unref them later with <link xref="Gck.attributes_unref"/>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a floating reference to the attributes created
+         in the builder</p>
+</item>
+</terms>
+
+</page>

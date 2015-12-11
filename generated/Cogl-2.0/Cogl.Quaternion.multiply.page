@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<page id="Cogl.Quaternion.multiply"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Quaternion" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_quaternion_multiply</api:name>
+      <api:arg>
+        <api:type>Cogl.Quaternion</api:type>
+        <api:name>left</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.Quaternion</api:type>
+        <api:name>right</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Quaternion.prototype.multiply</title>
+  <synopsis><code mime="text/x-gjs">
+function multiply(left: <link xref="Cogl.Quaternion">Cogl.Quaternion</link>, right: <link xref="Cogl.Quaternion">Cogl.Quaternion</link>): void {
+    // Gjs wrapper for cogl_quaternion_multiply()
+}
+  </code></synopsis>
+  <p>This combines the rotations of two quaternions into <code>result</code>. The
+operation is not commutative so the order is important because AxB
+!= BxA. Cogl follows the standard convention for quaternions here
+so the rotations are applied <code>right</code> to <code>left</code>. This is similar to the
+combining of matrices.</p>  <p>&lt;note&gt;It is possible to multiply the @a quaternion in-place, so
+<code>result</code> can be equal to @a but can't be equal to @b.&lt;/note&gt;</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>left</code></title>
+  <p>The second <link xref="Cogl.Quaternion"/> rotation to apply</p>
+</item>
+<item>
+<title><code>right</code></title>
+  <p>The first <link xref="Cogl.Quaternion"/> rotation to apply</p>
+</item>
+</terms>
+
+</page>

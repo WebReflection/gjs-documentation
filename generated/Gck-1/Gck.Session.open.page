@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<page id="Gck.Session.open"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Session" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.Session</api:type>
+      </api:returns>
+      <api:name>gck_session_open</api:name>
+      <api:arg>
+        <api:type>Gck.Slot</api:type>
+        <api:name>slot</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gck.SessionOptions</api:type>
+        <api:name>options</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.TlsInteraction</api:type>
+        <api:name>interaction</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Session.open</title>
+  <synopsis><code mime="text/x-gjs">
+function open(slot: <link xref="Gck.Slot">Gck.Slot</link>, options: <link xref="Gck.SessionOptions">Gck.SessionOptions</link>, interaction: <link href="../Gio-2.0/Gio.TlsInteraction.html">Gio.TlsInteraction</link>, cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>): <link xref="Gck.Session">Gck.Session</link> {
+    // Gjs wrapper for gck_session_open()
+}
+  </code></synopsis>
+  <p>Open a session on the slot. This call may block for an indefinite period.</p>
+
+<terms>
+<item>
+<title><code>slot</code></title>
+  <p>the slot to open session on</p>
+</item>
+<item>
+<title><code>options</code></title>
+  <p>session options</p>
+</item>
+<item>
+<title><code>interaction</code></title>
+  <p>optional interaction for logins or object authentication</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional cancellation object</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the new session</p>
+</item>
+</terms>
+
+</page>

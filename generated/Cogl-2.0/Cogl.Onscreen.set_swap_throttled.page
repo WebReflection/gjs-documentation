@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="Cogl.Onscreen.set_swap_throttled"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Onscreen" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_onscreen_set_swap_throttled</api:name>
+      <api:arg>
+        <api:type>Cogl.Bool</api:type>
+        <api:name>throttled</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Onscreen.prototype.set_swap_throttled</title>
+  <synopsis><code mime="text/x-gjs">
+function set_swap_throttled(throttled: <link xref="Cogl.Bool">Cogl.Bool</link>): void {
+    // Gjs wrapper for cogl_onscreen_set_swap_throttled()
+}
+  </code></synopsis>
+  <p>Requests that the given <code>onscreen</code> framebuffer should have swap buffer
+requests (made using <link xref="Cogl.Onscreen.swap_buffers"/>) throttled either by a
+displays vblank period or perhaps some other mechanism in a composited
+environment.</p>
+  <p>Since 1.8</p>
+<terms>
+<item>
+<title><code>throttled</code></title>
+  <p>Whether swap throttling is wanted or not.</p>
+</item>
+</terms>
+
+</page>

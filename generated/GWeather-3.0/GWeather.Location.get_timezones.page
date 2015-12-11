@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="GWeather.Location.get_timezones"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Location" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(GWeather.Timezone)</api:type>
+      </api:returns>
+      <api:name>gweather_location_get_timezones</api:name>
+    </api:function>
+  </info>
+  <title>GWeather.Location.prototype.get_timezones</title>
+  <synopsis><code mime="text/x-gjs">
+function get_timezones(): Array(<link xref="GWeather.Timezone">GWeather.Timezone</link>) {
+    // Gjs wrapper for gweather_location_get_timezones()
+}
+  </code></synopsis>
+  <p>Gets an array of all timezones associated with any location under
+<code>loc</code>. You can use <link xref="GWeather.Location.free_timezones"/> to free this
+array.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>an array
+of timezones. May be empty but will not be <code>null</code>.</p>
+</item>
+</terms>
+
+</page>

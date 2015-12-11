@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Gcr.SimpleCollection.add"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.SimpleCollection" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gcr_simple_collection_add</api:name>
+      <api:arg>
+        <api:type>GObject.Object</api:type>
+        <api:name>object</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.SimpleCollection.prototype.add</title>
+  <synopsis><code mime="text/x-gjs">
+function add(object: <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link>): void {
+    // Gjs wrapper for gcr_simple_collection_add()
+}
+  </code></synopsis>
+  <p>Add an object to this collection</p>
+
+<terms>
+<item>
+<title><code>object</code></title>
+  <p>The object to add</p>
+</item>
+</terms>
+
+</page>

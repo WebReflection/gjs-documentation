@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<page id="Cogl.Attribute.new_const_3x3fv"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Attribute" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Attribute</api:type>
+      </api:returns>
+      <api:name>cogl_attribute_new_const_3x3fv</api:name>
+      <api:arg>
+        <api:type>Cogl.Context</api:type>
+        <api:name>context</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>matrix3x3</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.Bool</api:type>
+        <api:name>transpose</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Attribute.new_const_3x3fv</title>
+  <synopsis><code mime="text/x-gjs">
+function new_const_3x3fv(context: <link xref="Cogl.Context">Cogl.Context</link>, name: String, matrix3x3: Number(gfloat), transpose: <link xref="Cogl.Bool">Cogl.Bool</link>): <link xref="Cogl.Attribute">Cogl.Attribute</link> {
+    // Gjs wrapper for cogl_attribute_new_const_3x3fv()
+}
+  </code></synopsis>
+  <p>Creates a new matrix attribute whose value remains constant
+across all the vertices of a primitive without needing to duplicate
+the value for each vertex.</p>  <p><code>matrix3x3</code> represent a square 3 by 3 matrix specified in
+column-major order (each triple of consecutive numbers represents a
+column) which should have a corresponding declaration in GLSL code
+like:</p>  <p>[|
+attribute mat3 name;
+|]</p>  <p>If <code>transpose</code> is <code>true</code> then all matrix components are rotated
+around the diagonal of the matrix such that the first column
+becomes the first row and the second column becomes the second row
+etc.</p>
+
+<terms>
+<item>
+<title><code>context</code></title>
+  <p>A <link xref="Cogl.Context"/></p>
+</item>
+<item>
+<title><code>name</code></title>
+  <p>The name of the attribute (used to reference it from GLSL)</p>
+</item>
+<item>
+<title><code>matrix3x3</code></title>
+  <p>A pointer to a 3 by 3 matrix</p>
+</item>
+<item>
+<title><code>transpose</code></title>
+  <p>Whether the matrix should be transposed on upload or
+            not</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>A newly allocated <link xref="Cogl.Attribute"/>
+         representing the given constant matrix.</p>
+</item>
+</terms>
+
+</page>

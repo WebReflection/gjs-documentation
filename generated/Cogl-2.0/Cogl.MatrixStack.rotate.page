@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<page id="Cogl.MatrixStack.rotate"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.MatrixStack" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_matrix_stack_rotate</api:name>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>angle</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>y</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>z</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.MatrixStack.prototype.rotate</title>
+  <synopsis><code mime="text/x-gjs">
+function rotate(angle: Number(gfloat), x: Number(gfloat), y: Number(gfloat), z: Number(gfloat)): void {
+    // Gjs wrapper for cogl_matrix_stack_rotate()
+}
+  </code></synopsis>
+  <p>Multiplies the current matrix by one that rotates the around the
+axis-vector specified by <code>x</code>, <code>y</code> and <code>z</code>. The rotation follows the
+right-hand thumb rule so for example rotating by 10 degrees about
+the axis-vector (0, 0, 1) causes a small counter-clockwise
+rotation.</p>
+
+<terms>
+<item>
+<title><code>angle</code></title>
+  <p>Angle in degrees to rotate.</p>
+</item>
+<item>
+<title><code>x</code></title>
+  <p>X-component of vertex to rotate around.</p>
+</item>
+<item>
+<title><code>y</code></title>
+  <p>Y-component of vertex to rotate around.</p>
+</item>
+<item>
+<title><code>z</code></title>
+  <p>Z-component of vertex to rotate around.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="Gcr.CertificateChain.get_endpoint"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.CertificateChain" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gcr.Certificate</api:type>
+      </api:returns>
+      <api:name>gcr_certificate_chain_get_endpoint</api:name>
+    </api:function>
+  </info>
+  <title>Gcr.CertificateChain.prototype.get_endpoint</title>
+  <synopsis><code mime="text/x-gjs">
+function get_endpoint(): <link xref="Gcr.Certificate">Gcr.Certificate</link> {
+    // Gjs wrapper for gcr_certificate_chain_get_endpoint()
+}
+  </code></synopsis>
+  <p>Get the endpoint certificate in the chain. This is always the first
+certificate in the chain. The endpoint certificate cannot be anchored.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the endpoint certificate, or <code>null</code> if the chain
+         is empty</p>
+</item>
+</terms>
+
+</page>

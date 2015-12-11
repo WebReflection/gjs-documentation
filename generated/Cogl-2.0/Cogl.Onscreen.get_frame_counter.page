@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="Cogl.Onscreen.get_frame_counter"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Onscreen" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gint64)</api:type>
+      </api:returns>
+      <api:name>cogl_onscreen_get_frame_counter</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Onscreen.prototype.get_frame_counter</title>
+  <synopsis><code mime="text/x-gjs">
+function get_frame_counter(): Number(gint64) {
+    // Gjs wrapper for cogl_onscreen_get_frame_counter()
+}
+  </code></synopsis>
+  <p>Gets the value of the framebuffers frame counter. This is
+a counter that increases by one each time
+<link xref="Cogl.Onscreen.swap_buffers"/> or <link xref="Cogl.Onscreen.swap_region"/>
+is called.</p>
+  <p>Since 1.14</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the current frame counter value</p>
+</item>
+</terms>
+
+</page>

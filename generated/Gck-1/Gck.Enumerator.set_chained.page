@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gck.Enumerator.set_chained"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Enumerator" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gck_enumerator_set_chained</api:name>
+      <api:arg>
+        <api:type>Gck.Enumerator</api:type>
+        <api:name>chained</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Enumerator.prototype.set_chained</title>
+  <synopsis><code mime="text/x-gjs">
+function set_chained(chained: <link xref="Gck.Enumerator">Gck.Enumerator</link>): void {
+    // Gjs wrapper for gck_enumerator_set_chained()
+}
+  </code></synopsis>
+  <p>Set a chained enumerator that will be run after all objects from this one
+are seen.</p>
+
+<terms>
+<item>
+<title><code>chained</code></title>
+  <p>the chained enumerator or <code>null</code></p>
+</item>
+</terms>
+
+</page>

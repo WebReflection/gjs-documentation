@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<page id="Gck.ObjectCache-fill"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.ObjectCache" group="vfunc" type="guide"/>
+  </info>
+  <title>Gck.ObjectCache::fill</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_fill(attrs: <link xref="Gck.Attributes">Gck.Attributes</link>): void {
+}
+  </code></synopsis>
+  <p>Adds the attributes to the set cached on this object. If an attribute is
+already present in the cache it will be overridden by this value.</p>  <p>This will be done in a thread-safe manner.</p>  <p>If the <code>attrs</code> <link xref="Gck.Attributes"/> is floating, it is consumed.</p>
+
+<terms>
+<item>
+<title><code>attrs</code></title>
+  <p>the attributes to cache</p>
+</item>
+</terms>
+
+</page>

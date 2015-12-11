@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.set_emission"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_set_emission</api:name>
+      <api:arg>
+        <api:type>Cogl.Color</api:type>
+        <api:name>emission</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.set_emission</title>
+  <synopsis><code mime="text/x-gjs">
+function set_emission(emission: <link xref="Cogl.Color">Cogl.Color</link>): void {
+    // Gjs wrapper for cogl_pipeline_set_emission()
+}
+  </code></synopsis>
+  <p>Sets the pipeline's emissive color, in the standard OpenGL lighting
+model. It will look like the surface is a light source emitting this
+color.</p>  <p>The default value is (0.0, 0.0, 0.0, 1.0)</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>emission</code></title>
+  <p>The components of the desired emissive color</p>
+</item>
+</terms>
+
+</page>

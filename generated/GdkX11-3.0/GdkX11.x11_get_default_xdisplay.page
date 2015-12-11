@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="GdkX11.x11_get_default_xdisplay"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>xlib.Display</api:type>
+      </api:returns>
+      <api:name>gdk_x11_get_default_xdisplay</api:name>
+    </api:function>
+  </info>
+  <title>GdkX11.x11_get_default_xdisplay</title>
+  <synopsis><code mime="text/x-gjs">
+function x11_get_default_xdisplay(): <link href="../xlib-2.0/xlib.Display.html">xlib.Display</link> {
+    // Gjs wrapper for gdk_x11_get_default_xdisplay()
+}
+  </code></synopsis>
+  <p>Gets the default GTK+ display.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the Xlib Display* for
+the display specified in the `--display` command
+line option or the `DISPLAY` environment variable.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="Gck.Attributes.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Attributes" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.Attributes</api:type>
+      </api:returns>
+      <api:name>gck_attributes_new</api:name>
+      <api:arg>
+        <api:type>Number(gulong)</api:type>
+        <api:name>reserved</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Attributes.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(reserved: Number(gulong)): <link xref="Gck.Attributes">Gck.Attributes</link> {
+    // Gjs wrapper for gck_attributes_new()
+}
+  </code></synopsis>
+  <p>Create a new empty GckAttributes array.</p>  <p>The returned set of attributes is floating, and should either be passed to
+another gck library function which consumes this floating reference, or if
+you wish to keep these attributes around you should ref them with
+<link xref="Gck.Attributes.ref_sink"/> and unref them later with <link xref="Gck.attributes_unref"/>.</p>
+
+<terms>
+<item>
+<title><code>reserved</code></title>
+  <p>Should be set to always be GCK_INVALID</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a floating reference to the new attributes array;
+         when done with the array release it with <link xref="Gck.attributes_unref"/>.</p>
+</item>
+</terms>
+
+</page>

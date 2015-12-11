@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<page id="GWeather.Location"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>GWeather.Location</title>
+  <synopsis><code>
+const GWeather = imports.gi.GWeather;
+
+let location = new GWeather.Location(name: String, icao: String, latitude: Number(gdouble), longitude: Number(gdouble));
+  </code></synopsis>
+  <p>A <link xref="GWeather.Location"/> represents a "location" of some type known to
+libgweather; anything from a single weather station to the entire
+world. See <link xref="GWeather.LocationLevel"/> for information about how the
+hierarchy of locations works.</p>
+
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

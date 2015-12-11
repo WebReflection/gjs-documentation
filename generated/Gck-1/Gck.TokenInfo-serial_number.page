@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gck.TokenInfo-serial_number"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.TokenInfo" group="field" type="guide"/>
+    <title type="link" role="topic">serial_number</title>
+  </info>
+  <title>Gck.TokenInfo.serial_number</title>
+  <synopsis><code mime="text/x-gjs">
+TokenInfo.serial_number: String (Read)
+  </code></synopsis>
+  <p>The token serial number as a string.</p>
+
+</page>

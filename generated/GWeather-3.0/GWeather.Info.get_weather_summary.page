@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="GWeather.Info.get_weather_summary"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Info" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>gweather_info_get_weather_summary</api:name>
+    </api:function>
+  </info>
+  <title>GWeather.Info.prototype.get_weather_summary</title>
+  <synopsis><code mime="text/x-gjs">
+function get_weather_summary(): String {
+    // Gjs wrapper for gweather_info_get_weather_summary()
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a summary for current weather conditions.</p>
+</item>
+</terms>
+
+</page>

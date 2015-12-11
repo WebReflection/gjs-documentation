@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<page id="Notify.Notification.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Notify.Notification" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Notify.Notification</api:type>
+      </api:returns>
+      <api:name>notify_notification_new</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>summary</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>body</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>icon</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Notify.Notification.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(summary: String, body: String, icon: String): <link xref="Notify.Notification">Notify.Notification</link> {
+    // Gjs wrapper for notify_notification_new()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="Notify.Notification"/>. The summary text is required, but
+all other parameters are optional.</p>
+
+<terms>
+<item>
+<title><code>summary</code></title>
+  <p>The required summary text.</p>
+</item>
+<item>
+<title><code>body</code></title>
+  <p>The optional body text.</p>
+</item>
+<item>
+<title><code>icon</code></title>
+  <p>The optional icon theme icon name or filename.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>The new <link xref="Notify.Notification"/>.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gcr.CertificateRequest.get_private_key"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.CertificateRequest" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.Object</api:type>
+      </api:returns>
+      <api:name>gcr_certificate_request_get_private_key</api:name>
+    </api:function>
+  </info>
+  <title>Gcr.CertificateRequest.prototype.get_private_key</title>
+  <synopsis><code mime="text/x-gjs">
+function get_private_key(): <link href="../Gck-1/Gck.Object.html">Gck.Object</link> {
+    // Gjs wrapper for gcr_certificate_request_get_private_key()
+}
+  </code></synopsis>
+  <p>Get the private key this certificate request is for.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the private key,</p>
+</item>
+</terms>
+
+</page>

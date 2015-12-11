@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<page id="Gck.modules_objects_for_uri"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(Gck.Object)</api:type>
+      </api:returns>
+      <api:name>gck_modules_objects_for_uri</api:name>
+      <api:arg>
+        <api:type>Array(Gck.Module)</api:type>
+        <api:name>modules</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>uri</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gck.SessionOptions</api:type>
+        <api:name>session_options</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.modules_objects_for_uri</title>
+  <synopsis><code mime="text/x-gjs">
+function modules_objects_for_uri(modules: Array(<link xref="Gck.Module">Gck.Module</link>), uri: String, session_options: <link xref="Gck.SessionOptions">Gck.SessionOptions</link>): Array(<link xref="Gck.Object">Gck.Object</link>) {
+    // Gjs wrapper for gck_modules_objects_for_uri()
+}
+  </code></synopsis>
+  <p>Find objects that match a URI.</p>  <p>This call can block. Use <link xref="Gck.modules_enumerate_uri"/> for a non-blocking
+version.</p>
+
+<terms>
+<item>
+<title><code>modules</code></title>
+  <p>The modules</p>
+</item>
+<item>
+<title><code>uri</code></title>
+  <p>The URI the objects must match</p>
+</item>
+<item>
+<title><code>session_options</code></title>
+  <p>Options from GckSessionOptions</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>A list of <link xref="Gck.Object"/> which
+should be released with <link xref="Gck.list_unref_free"/>, or <code>null</code> if no matching object
+was found.</p>
+</item>
+</terms>
+
+</page>

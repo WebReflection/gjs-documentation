@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Gtk.ClipboardTargetsReceivedFunc"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Gtk.ClipboardTargetsReceivedFunc</title>
+  <synopsis><code mime="text/x-gjs">
+function onClipboardTargetsReceivedFunc(clipboard: <link xref="Gtk.Clipboard">Gtk.Clipboard</link>, atoms: Array(<link href="../Gdk-3.0/Gdk.Atom.html">Gdk.Atom</link>)): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>clipboard</code></title>
+
+</item>
+<item>
+<title><code>atoms</code></title>
+
+</item>
+</terms>
+
+</page>

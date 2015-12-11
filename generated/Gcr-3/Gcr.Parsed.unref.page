@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Gcr.Parsed.unref"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Parsed" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gcr_parsed_unref</api:name>
+      <api:arg>
+        <api:type>void</api:type>
+        <api:name>parsed</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.Parsed.unref</title>
+  <synopsis><code mime="text/x-gjs">
+function unref(parsed: void): void {
+    // Gjs wrapper for gcr_parsed_unref()
+}
+  </code></synopsis>
+  <p>Unreferences a parsed item which was referenced with <link xref="Gcr.Parsed.ref"/></p>
+
+<terms>
+<item>
+<title><code>parsed</code></title>
+  <p>a parsed item</p>
+</item>
+</terms>
+
+</page>

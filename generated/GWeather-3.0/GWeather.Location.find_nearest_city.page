@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<page id="GWeather.Location.find_nearest_city"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Location" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GWeather.Location</api:type>
+      </api:returns>
+      <api:name>gweather_location_find_nearest_city</api:name>
+      <api:arg>
+        <api:type>Number(gdouble)</api:type>
+        <api:name>lat</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gdouble)</api:type>
+        <api:name>lon</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GWeather.Location.prototype.find_nearest_city</title>
+  <synopsis><code mime="text/x-gjs">
+function find_nearest_city(lat: Number(gdouble), lon: Number(gdouble)): <link xref="GWeather.Location">GWeather.Location</link> {
+    // Gjs wrapper for gweather_location_find_nearest_city()
+}
+  </code></synopsis>
+  <p>Finds the nearest city to the passed latitude and
+longitude, among the descendants of <code>loc</code>.</p>  <p><code>loc</code> must be at most a <link xref="GWeather.LocationLevel"/>.adm2 location.
+This restriction may be lifted in a future version.</p>  <p>Note that this function does not check if (<code>lat</code>, <code>lon</code>) fall inside
+<code>loc</code>, or are in the same region and timezone as the return value.</p>
+  <p>Since 3.12</p>
+<terms>
+<item>
+<title><code>lat</code></title>
+  <p>Latitude, in degrees</p>
+</item>
+<item>
+<title><code>lon</code></title>
+  <p>Longitude, in degrees</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the city closest to (<code>lat</code>, <code>lon</code>), in the
+         region or administrative district of <code>loc</code>.</p>
+</item>
+</terms>
+
+</page>

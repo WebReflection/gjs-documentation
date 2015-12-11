@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.foreach_layer"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_foreach_layer</api:name>
+      <api:arg>
+        <api:type>Cogl.PipelineLayerCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.foreach_layer</title>
+  <synopsis><code mime="text/x-gjs">
+function foreach_layer(callback: <link xref="Cogl.PipelineLayerCallback">Cogl.PipelineLayerCallback</link>): void {
+    // Gjs wrapper for cogl_pipeline_foreach_layer()
+}
+  </code></synopsis>
+  <p>Iterates all the layer indices of the given <code>pipeline</code>.</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>callback</code></title>
+  <p>A <link xref="Cogl.PipelineLayerCallback"/> to be
+           called for each layer index</p>
+</item>
+</terms>
+
+</page>

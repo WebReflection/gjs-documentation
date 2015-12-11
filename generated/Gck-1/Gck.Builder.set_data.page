@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<page id="Gck.Builder.set_data"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Builder" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gck_builder_set_data</api:name>
+      <api:arg>
+        <api:type>Number(gulong)</api:type>
+        <api:name>attr_type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>ByteArray</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Builder.prototype.set_data</title>
+  <synopsis><code mime="text/x-gjs">
+function set_data(attr_type: Number(gulong), value: ByteArray): void {
+    // Gjs wrapper for gck_builder_set_data()
+}
+  </code></synopsis>
+  <p>Set a new attribute to the builder with an arbitrary value. If an attribute
+with <code>attr_type</code> already exists in the builder then it is changed to the new
+value, otherwise an attribute is added.</p>  <p>The memory in <code>value</code> is copied by the builder.</p>  <p><code>null</code> may be specified for the <code>value</code> argument, in which case an empty
+attribute is created. GCK_INVALID may be specified for the length, in
+which case an invalid attribute is created in the PKCS\#11 style.</p>
+
+<terms>
+<item>
+<title><code>attr_type</code></title>
+  <p>the attribute type</p>
+</item>
+<item>
+<title><code>value</code></title>
+  <p>(allow-none): the new attribute memory</p>
+</item>
+</terms>
+
+</page>

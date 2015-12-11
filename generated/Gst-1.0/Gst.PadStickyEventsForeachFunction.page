@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gst.PadStickyEventsForeachFunction"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Gst.PadStickyEventsForeachFunction</title>
+  <synopsis><code mime="text/x-gjs">
+function onPadStickyEventsForeachFunction(pad: <link xref="Gst.Pad">Gst.Pad</link>, event: <link xref="Gst.Event">Gst.Event</link>): Boolean {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>pad</code></title>
+
+</item>
+<item>
+<title><code>event</code></title>
+
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

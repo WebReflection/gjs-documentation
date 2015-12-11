@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gcr.Parser::authenticate</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gcr">Gcr</a> » <a class="trail" href="Gcr.Parser.html" title="Gcr.Parser">Gcr.Parser</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gcr.Parser::authenticate</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">connect('authenticate', function (parser, count: Number(gint), ): Boolean);
+  </pre></div></div></div></div></div>
+<p class="p">This signal is emitted when an item needs to be unlocked or decrypted before
+it can be parsed. The <span class="code">count</span> argument specifies the number of times
+the signal has been emitted for a given item. This can be used to
+display a message saying the previous password was incorrect.</p>
+<p class="p">Typically the <span class="link"><a href="Gcr.Parser.add_password.html" title="Gcr.Parser.prototype.add_password">Gcr.Parser.prototype.add_password</a></span> function is called in
+response to this signal.</p>
+<p class="p">If <span class="code">false</span> is returned, then the authentication was not handled. If
+no handlers return <span class="code">true</span> then the item is not parsed and an error
+with the code <span class="link"><a href="Gcr.DataError.html" title="Gcr.DataError">Gcr.DataError</a></span>.cancelled will be raised.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">parser</span></dt>
+<dd class="terms"><p class="p">instance of <span class="link"><a href="Gcr.Parser.html" title="Gcr.Parser">Gcr.Parser</a></span> that is emitting the signal</p></dd>
+<dt class="terms"><span class="code">count</span></dt>
+<dd class="terms"><p class="p">the number of times this item has been authenticated</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">Whether the authentication was handled.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gcr.Parser.html" title="Gcr.Parser">Gcr.Parser</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

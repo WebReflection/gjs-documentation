@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="GtkClutter.Embed.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GtkClutter.Embed" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gtk.Widget</api:type>
+      </api:returns>
+      <api:name>gtk_clutter_embed_new</api:name>
+    </api:function>
+  </info>
+  <title>GtkClutter.Embed.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(): <link href="../Gtk-3.0/Gtk.Widget.html">Gtk.Widget</link> {
+    // Gjs wrapper for gtk_clutter_embed_new()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="GtkClutter.Embed"/> widget. This widget can be
+used to build a scene using Clutter API into a GTK+ application.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the newly created <link xref="GtkClutter.Embed"/></p>
+</item>
+</terms>
+
+</page>

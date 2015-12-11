@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page id="Gck.Enumerator-interaction"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Enumerator" group="property" type="guide"/>
+    <title type="link" role="topic">interaction</title>
+  </info>
+  <title>Gck.Enumerator.interaction</title>
+  <synopsis><code mime="text/x-gjs">
+Enumerator.interaction: <link href="../Gio-2.0/Gio.TlsInteraction.html">Gio.TlsInteraction</link> (Read / Write)
+  </code></synopsis>
+  <p>Interaction object used to ask the user for pins when opening
+sessions. Used if the session_options of the enumerator have
+<link xref="Gck.SessionOptions"/>.login_user</p>
+
+</page>

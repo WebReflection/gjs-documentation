@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Gck.Session.open_finish"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Session" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.Session</api:type>
+      </api:returns>
+      <api:name>gck_session_open_finish</api:name>
+      <api:arg>
+        <api:type>Gio.AsyncResult</api:type>
+        <api:name>result</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Session.open_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function open_finish(result: <link href="../Gio-2.0/Gio.AsyncResult.html">Gio.AsyncResult</link>): <link xref="Gck.Session">Gck.Session</link> {
+    // Gjs wrapper for gck_session_open_finish()
+}
+  </code></synopsis>
+  <p>Get the result of an open session operation.</p>
+
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>the result passed to the callback</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the new session</p>
+</item>
+</terms>
+
+</page>

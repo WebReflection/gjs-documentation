@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="Cogl.Snippet.set_declarations"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Snippet" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_snippet_set_declarations</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>declarations</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Snippet.prototype.set_declarations</title>
+  <synopsis><code mime="text/x-gjs">
+function set_declarations(declarations: String): void {
+    // Gjs wrapper for cogl_snippet_set_declarations()
+}
+  </code></synopsis>
+  <p>Sets a source string that will be inserted in the global scope of
+the generated shader when this snippet is used on a pipeline. This
+string is typically used to declare uniforms, attributes or
+functions that will be used by the other parts of the snippets.</p>  <p>This function should only be called before the snippet is attached
+to its first pipeline. After that the snippet should be considered
+immutable.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>declarations</code></title>
+  <p>The new source string for the declarations section
+  of this snippet.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gck.SessionInfo.copy"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.SessionInfo" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.SessionInfo</api:type>
+      </api:returns>
+      <api:name>gck_session_info_copy</api:name>
+    </api:function>
+  </info>
+  <title>Gck.SessionInfo.prototype.copy</title>
+  <synopsis><code mime="text/x-gjs">
+function copy(): <link xref="Gck.SessionInfo">Gck.SessionInfo</link> {
+    // Gjs wrapper for gck_session_info_copy()
+}
+  </code></synopsis>
+  <p>Make a new copy of a session info structure.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a new copy of the session info</p>
+</item>
+</terms>
+
+</page>

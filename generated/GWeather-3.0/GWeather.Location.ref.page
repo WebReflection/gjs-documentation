@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="GWeather.Location.ref"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Location" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GWeather.Location</api:type>
+      </api:returns>
+      <api:name>gweather_location_ref</api:name>
+    </api:function>
+  </info>
+  <title>GWeather.Location.prototype.ref</title>
+  <synopsis><code mime="text/x-gjs">
+function ref(): <link xref="GWeather.Location">GWeather.Location</link> {
+    // Gjs wrapper for gweather_location_ref()
+}
+  </code></synopsis>
+  <p>Adds 1 to <code>loc</code>'s reference count.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>loc</code></p>
+</item>
+</terms>
+
+</page>

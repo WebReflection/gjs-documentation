@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<page id="GdkX11.X11Display.error_trap_push"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GdkX11.X11Display" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gdk_x11_display_error_trap_push</api:name>
+    </api:function>
+  </info>
+  <title>GdkX11.X11Display.prototype.error_trap_push</title>
+  <synopsis><code mime="text/x-gjs">
+function error_trap_push(): void {
+    // Gjs wrapper for gdk_x11_display_error_trap_push()
+}
+  </code></synopsis>
+  <p>Begins a range of X requests on <code>display</code> for which X error events
+will be ignored. Unignored errors (when no trap is pushed) will abort
+the application. Use <link xref="GdkX11.X11Display.error_trap_pop"/> or
+<link xref="GdkX11.X11Display.error_trap_pop_ignored"/>to lift a trap pushed
+with this function.</p>  <p>See also gdk_error_trap_push() to push a trap on all displays.</p>
+  <p>Since 3.0</p>
+
+</page>

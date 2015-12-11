@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="Cogl.Framebuffer.allocate"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Framebuffer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_framebuffer_allocate</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Framebuffer.prototype.allocate</title>
+  <synopsis><code mime="text/x-gjs">
+function allocate(): <link xref="Cogl.Bool">Cogl.Bool</link> {
+    // Gjs wrapper for cogl_framebuffer_allocate()
+}
+  </code></synopsis>
+  <p>Explicitly allocates a configured <link xref="Cogl.Framebuffer"/> allowing developers to
+check and handle any errors that might arise from an unsupported
+configuration so that fallback configurations may be tried.</p>  <p>&lt;note&gt;Many applications don't support any fallback options at least when
+they are initially developed and in that case the don't need to use this API
+since Cogl will automatically allocate a framebuffer when it first gets
+used.  The disadvantage of relying on automatic allocation is that the
+program will abort with an error message if there is an error during
+automatic allocation.&lt;/note&gt;</p>
+  <p>Since 1.8</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if there were no error allocating the framebuffer, else <code>false</code>.</p>
+</item>
+</terms>
+
+</page>

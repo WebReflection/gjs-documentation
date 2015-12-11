@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<page id="Cogl.Matrix.init_identity"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Matrix" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_matrix_init_identity</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Matrix.prototype.init_identity</title>
+  <synopsis><code mime="text/x-gjs">
+function init_identity(): void {
+    // Gjs wrapper for cogl_matrix_init_identity()
+}
+  </code></synopsis>
+  <p>Resets matrix to the identity matrix:</p>  <p>|[
+  .xx=1; .xy=0; .xz=0; .xw=0;
+  .yx=0; .yy=1; .yz=0; .yw=0;
+  .zx=0; .zy=0; .zz=1; .zw=0;
+  .wx=0; .wy=0; .wz=0; .ww=1;
+]|</p>
+
+
+</page>

@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<page id="Cogl.TexturePixmapX11.update_area"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.TexturePixmapX11" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_texture_pixmap_x11_update_area</api:name>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>y</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>width</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>height</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.TexturePixmapX11.prototype.update_area</title>
+  <synopsis><code mime="text/x-gjs">
+function update_area(x: Number(gint), y: Number(gint), width: Number(gint), height: Number(gint)): void {
+    // Gjs wrapper for cogl_texture_pixmap_x11_update_area()
+}
+  </code></synopsis>
+  <p>Forces an update of the given <code>texture</code> so that it is refreshed with
+the contents of the pixmap that was given to
+<link xref="Cogl.TexturePixmapX11.new"/>.</p>
+  <p>Since 1.4</p>
+<terms>
+<item>
+<title><code>x</code></title>
+  <p>x coordinate of the area to update</p>
+</item>
+<item>
+<title><code>y</code></title>
+  <p>y coordinate of the area to update</p>
+</item>
+<item>
+<title><code>width</code></title>
+  <p>width of the area to update</p>
+</item>
+<item>
+<title><code>height</code></title>
+  <p>height of the area to update</p>
+</item>
+</terms>
+
+</page>

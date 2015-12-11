@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<page id="Gck.Session.wrap_key"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Session" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>ByteArray</api:type>
+      </api:returns>
+      <api:name>gck_session_wrap_key</api:name>
+      <api:arg>
+        <api:type>Gck.Object</api:type>
+        <api:name>wrapper</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gulong)</api:type>
+        <api:name>mech_type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gck.Object</api:type>
+        <api:name>wrapped</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Session.prototype.wrap_key</title>
+  <synopsis><code mime="text/x-gjs">
+function wrap_key(wrapper: <link xref="Gck.Object">Gck.Object</link>, mech_type: Number(gulong), wrapped: <link xref="Gck.Object">Gck.Object</link>, cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>): [return_value: ByteArray, n_result: Number(gsize)] {
+    // Gjs wrapper for gck_session_wrap_key()
+}
+  </code></synopsis>
+  <p>Wrap a key into a byte stream. This call may block for an
+indefinite period.</p>
+
+<terms>
+<item>
+<title><code>wrapper</code></title>
+  <p>The key to use for wrapping.</p>
+</item>
+<item>
+<title><code>mech_type</code></title>
+  <p>The mechanism type to use for wrapping.</p>
+</item>
+<item>
+<title><code>wrapped</code></title>
+  <p>The key to wrap.</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>A <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link> or <code>null</code></p>
+</item>
+<item>
+<title><code>return_value</code></title>
+  <p>the wrapped data or <code>null</code>
+         if the operation failed</p>
+</item>
+<item>
+<title><code>n_result</code></title>
+  <p>A location in which to return the length of the wrapped data.</p>
+</item>
+</terms>
+
+</page>

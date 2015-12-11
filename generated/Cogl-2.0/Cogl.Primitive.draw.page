@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<page id="Cogl.Primitive.draw"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Primitive" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_primitive_draw</api:name>
+      <api:arg>
+        <api:type>Cogl.Framebuffer</api:type>
+        <api:name>framebuffer</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.Pipeline</api:type>
+        <api:name>pipeline</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Primitive.prototype.draw</title>
+  <synopsis><code mime="text/x-gjs">
+function draw(framebuffer: <link xref="Cogl.Framebuffer">Cogl.Framebuffer</link>, pipeline: <link xref="Cogl.Pipeline">Cogl.Pipeline</link>): void {
+    // Gjs wrapper for cogl_primitive_draw()
+}
+  </code></synopsis>
+  <p>Draws the given <code>primitive</code> geometry to the specified destination
+<code>framebuffer</code> using the graphics processing state described by <code>pipeline</code>.</p>  <p>This drawing api doesn't support high-level meta texture types such
+as <link xref="Cogl.Texture2DSliced"/> so it is the user's responsibility to
+ensure that only low-level textures that can be directly sampled by
+a GPU such as <link xref="Cogl.Texture2D"/>, <link xref="Cogl.TextureRectangle"/> or <link xref="Cogl.Texture3D"/>
+are associated with layers of the given <code>pipeline</code>.</p>
+  <p>Since 1.16</p>
+<terms>
+<item>
+<title><code>framebuffer</code></title>
+  <p>A destination <link xref="Cogl.Framebuffer"/></p>
+</item>
+<item>
+<title><code>pipeline</code></title>
+  <p>A <link xref="Cogl.Pipeline"/> state object</p>
+</item>
+</terms>
+
+</page>

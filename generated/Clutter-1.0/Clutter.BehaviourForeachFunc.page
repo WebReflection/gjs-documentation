@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Clutter.BehaviourForeachFunc"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Clutter.BehaviourForeachFunc</title>
+  <synopsis><code mime="text/x-gjs">
+function onBehaviourForeachFunc(behaviour: <link xref="Clutter.Behaviour">Clutter.Behaviour</link>, actor: <link xref="Clutter.Actor">Clutter.Actor</link>): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>behaviour</code></title>
+
+</item>
+<item>
+<title><code>actor</code></title>
+
+</item>
+</terms>
+
+</page>

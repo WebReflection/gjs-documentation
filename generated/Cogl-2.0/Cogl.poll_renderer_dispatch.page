@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<page id="Cogl.poll_renderer_dispatch"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_poll_renderer_dispatch</api:name>
+      <api:arg>
+        <api:type>Cogl.Renderer</api:type>
+        <api:name>renderer</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.PollFD</api:type>
+        <api:name>poll_fds</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>n_poll_fds</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.poll_renderer_dispatch</title>
+  <synopsis><code mime="text/x-gjs">
+function poll_renderer_dispatch(renderer: <link xref="Cogl.Renderer">Cogl.Renderer</link>, poll_fds: <link xref="Cogl.PollFD">Cogl.PollFD</link>, n_poll_fds: Number(gint)): void {
+    // Gjs wrapper for cogl_poll_renderer_dispatch()
+}
+  </code></synopsis>
+  <p>This should be called whenever an application is woken up from
+going idle in its main loop. The <code>poll_fds</code> array should contain a
+list of file descriptors matched with the events that occurred in
+revents. The events field is ignored. It is safe to pass in extra
+file descriptors that Cogl didn't request when calling
+<link xref="Cogl.poll_renderer_get_info"/> or a shorter array missing some file
+descriptors that Cogl requested.</p>  <p>&lt;note&gt;If your application didn't originally create a <link xref="Cogl.Renderer"/>
+manually then you can easily get a <link xref="Cogl.Renderer"/> pointer by calling
+cogl_get_renderer().&lt;/note&gt;</p>
+  <p>Since 1.16</p>
+<terms>
+<item>
+<title><code>renderer</code></title>
+  <p>A <link xref="Cogl.Renderer"/></p>
+</item>
+<item>
+<title><code>poll_fds</code></title>
+  <p>An array of <link xref="Cogl.PollFD"/>&lt;!-- --&gt;s describing the events
+           that have occurred since the application went idle.</p>
+</item>
+<item>
+<title><code>n_poll_fds</code></title>
+  <p>The length of the <code>poll_fds</code> array.</p>
+</item>
+</terms>
+
+</page>

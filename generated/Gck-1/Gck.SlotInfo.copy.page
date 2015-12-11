@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gck.SlotInfo.copy"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.SlotInfo" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.SlotInfo</api:type>
+      </api:returns>
+      <api:name>gck_slot_info_copy</api:name>
+    </api:function>
+  </info>
+  <title>Gck.SlotInfo.prototype.copy</title>
+  <synopsis><code mime="text/x-gjs">
+function copy(): <link xref="Gck.SlotInfo">Gck.SlotInfo</link> {
+    // Gjs wrapper for gck_slot_info_copy()
+}
+  </code></synopsis>
+  <p>Make a copy of the slot info.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a newly allocated copy slot info</p>
+</item>
+</terms>
+
+</page>

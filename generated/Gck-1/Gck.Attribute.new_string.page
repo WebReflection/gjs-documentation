@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<page id="Gck.Attribute.new_string"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Attribute" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.Attribute</api:type>
+      </api:returns>
+      <api:name>gck_attribute_new_string</api:name>
+      <api:arg>
+        <api:type>Number(gulong)</api:type>
+        <api:name>attr_type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Attribute.new_string</title>
+  <synopsis><code mime="text/x-gjs">
+function new_string(attr_type: Number(gulong), value: String): <link xref="Gck.Attribute">Gck.Attribute</link> {
+    // Gjs wrapper for gck_attribute_new_string()
+}
+  </code></synopsis>
+  <p>Initialize a PKCS\#11 attribute to a string. This will result
+in an attribute containing the text, but not the null terminator.
+The text in the attribute will be of the same encoding as you pass
+to this function.</p>
+
+<terms>
+<item>
+<title><code>attr_type</code></title>
+  <p>the PKCS\#11 attribute type to set on the attribute</p>
+</item>
+<item>
+<title><code>value</code></title>
+  <p>the null-terminated string value of the attribute</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the new attribute; when done with the attribute u
+         <link xref="Gck.Attribute.free"/> to free it</p>
+</item>
+</terms>
+
+</page>

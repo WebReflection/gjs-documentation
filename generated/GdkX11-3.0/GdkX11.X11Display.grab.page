@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="GdkX11.X11Display.grab"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GdkX11.X11Display" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gdk_x11_display_grab</api:name>
+    </api:function>
+  </info>
+  <title>GdkX11.X11Display.prototype.grab</title>
+  <synopsis><code mime="text/x-gjs">
+function grab(): void {
+    // Gjs wrapper for gdk_x11_display_grab()
+}
+  </code></synopsis>
+  <p>Call XGrabServer() on <code>display</code>.
+To ungrab the display again, use <link xref="GdkX11.X11Display.ungrab"/>.</p>  <p><link xref="GdkX11.X11Display.grab"/>/<link xref="GdkX11.X11Display.ungrab"/> calls can be nested.</p>
+  <p>Since 2.2</p>
+
+</page>

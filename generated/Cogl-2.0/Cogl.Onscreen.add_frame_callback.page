@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<page id="Cogl.Onscreen.add_frame_callback"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Onscreen" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.FrameClosure</api:type>
+      </api:returns>
+      <api:name>cogl_onscreen_add_frame_callback</api:name>
+      <api:arg>
+        <api:type>Cogl.FrameCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.UserDataDestroyCallback</api:type>
+        <api:name>destroy</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Onscreen.prototype.add_frame_callback</title>
+  <synopsis><code mime="text/x-gjs">
+function add_frame_callback(callback: <link xref="Cogl.FrameCallback">Cogl.FrameCallback</link>, destroy: <link xref="Cogl.UserDataDestroyCallback">Cogl.UserDataDestroyCallback</link>): <link xref="Cogl.FrameClosure">Cogl.FrameClosure</link> {
+    // Gjs wrapper for cogl_onscreen_add_frame_callback()
+}
+  </code></synopsis>
+  <p>Installs a <code>callback</code> function that will be called for significant
+events relating to the given <code>onscreen</code> framebuffer.</p>  <p>The <code>callback</code> will be used to notify when the system compositor is
+ready for this application to render a new frame. In this case
+<link xref="Cogl.FrameEvent"/>.sync will be passed as the event argument to the
+given <code>callback</code> in addition to the <link xref="Cogl.FrameInfo"/> corresponding to
+the frame beeing acknowledged by the compositor.</p>  <p>The <code>callback</code> will also be called to notify when the frame has
+ended. In this case <link xref="Cogl.FrameEvent"/>.complete will be passed as
+the event argument to the given <code>callback</code> in addition to the
+<link xref="Cogl.FrameInfo"/> corresponding to the newly presented frame.  The
+meaning of "ended" here simply means that no more timing
+information will be collected within the corresponding
+<link xref="Cogl.FrameInfo"/> and so this is a good opportunity to analyse the
+given info. It does not necessarily mean that the GPU has finished
+rendering the corresponding frame.</p>  <p>We highly recommend throttling your application according to
+<link xref="Cogl.FrameEvent"/>.sync events so that your application can avoid
+wasting resources, drawing more frames than your system compositor
+can display.</p>
+  <p>Since 1.14</p>
+<terms>
+<item>
+<title><code>callback</code></title>
+  <p>A callback function to call for frame events</p>
+</item>
+<item>
+<title><code>destroy</code></title>
+  <p>An optional callback to destroy <code>user_data</code>
+          when the <code>callback</code> is removed or <code>onscreen</code> is freed.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link xref="Cogl.FrameClosure"/> pointer that can be used to
+              remove the callback and associated <code>user_data</code> later.</p>
+</item>
+</terms>
+
+</page>

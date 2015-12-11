@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="Cogl.Quaternion-y"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Quaternion" group="field" type="guide"/>
+    <title type="link" role="topic">y</title>
+  </info>
+  <title>Cogl.Quaternion.y</title>
+  <synopsis><code mime="text/x-gjs">
+Quaternion.y: Number(gfloat) (Read / Write)
+  </code></synopsis>
+  <p>based on the angle of rotation and y component of the axis of
+    rotation it is sin(𝜃/2)*axis.y</p>
+
+</page>

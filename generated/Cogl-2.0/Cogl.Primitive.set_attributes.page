@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="Cogl.Primitive.set_attributes"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Primitive" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_primitive_set_attributes</api:name>
+      <api:arg>
+        <api:type>Cogl.Attribute</api:type>
+        <api:name>attributes</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>n_attributes</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Primitive.prototype.set_attributes</title>
+  <synopsis><code mime="text/x-gjs">
+function set_attributes(attributes: <link xref="Cogl.Attribute">Cogl.Attribute</link>, n_attributes: Number(gint)): void {
+    // Gjs wrapper for cogl_primitive_set_attributes()
+}
+  </code></synopsis>
+  <p>Replaces all the attributes of the given <link xref="Cogl.Primitive"/> object.</p>
+  <p>Since 1.6</p>
+<terms>
+<item>
+<title><code>attributes</code></title>
+  <p>an array of <link xref="Cogl.Attribute"/> pointers</p>
+</item>
+<item>
+<title><code>n_attributes</code></title>
+  <p>the number of elements in <code>attributes</code></p>
+</item>
+</terms>
+
+</page>

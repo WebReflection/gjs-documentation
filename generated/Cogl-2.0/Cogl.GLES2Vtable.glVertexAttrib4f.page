@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Cogl.GLES2Vtable.glVertexAttrib4f"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Cogl.GLES2Vtable.glVertexAttrib4f</title>
+  <synopsis><code mime="text/x-gjs">
+function onglVertexAttrib4f(index: <link href="../GL-1.0/GL.uint.html">GL.uint</link>, x: <link href="../GL-1.0/GL.float.html">GL.float</link>, y: <link href="../GL-1.0/GL.float.html">GL.float</link>, z: <link href="../GL-1.0/GL.float.html">GL.float</link>, w: <link href="../GL-1.0/GL.float.html">GL.float</link>): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>index</code></title>
+
+</item>
+<item>
+<title><code>x</code></title>
+
+</item>
+<item>
+<title><code>y</code></title>
+
+</item>
+<item>
+<title><code>z</code></title>
+
+</item>
+<item>
+<title><code>w</code></title>
+
+</item>
+</terms>
+
+</page>

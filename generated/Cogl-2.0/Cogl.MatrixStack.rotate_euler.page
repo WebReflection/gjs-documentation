@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Cogl.MatrixStack.rotate_euler"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.MatrixStack" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_matrix_stack_rotate_euler</api:name>
+      <api:arg>
+        <api:type>Cogl.Euler</api:type>
+        <api:name>euler</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.MatrixStack.prototype.rotate_euler</title>
+  <synopsis><code mime="text/x-gjs">
+function rotate_euler(euler: <link xref="Cogl.Euler">Cogl.Euler</link>): void {
+    // Gjs wrapper for cogl_matrix_stack_rotate_euler()
+}
+  </code></synopsis>
+  <p>Multiplies the current matrix by one that rotates according to the
+rotation described by <code>euler</code>.</p>
+
+<terms>
+<item>
+<title><code>euler</code></title>
+  <p>A <link xref="Cogl.Euler"/></p>
+</item>
+</terms>
+
+</page>

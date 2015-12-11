@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="GdkX11.x11_ungrab_server"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gdk_x11_ungrab_server</api:name>
+    </api:function>
+  </info>
+  <title>GdkX11.x11_ungrab_server</title>
+  <synopsis><code mime="text/x-gjs">
+function x11_ungrab_server(): void {
+    // Gjs wrapper for gdk_x11_ungrab_server()
+}
+  </code></synopsis>
+  <p>Ungrab the default display after it has been grabbed with
+<link xref="GdkX11.x11_grab_server"/>.</p>
+
+
+</page>

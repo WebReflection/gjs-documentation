@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<page id="Cogl.vector3_distance"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gfloat)</api:type>
+      </api:returns>
+      <api:name>cogl_vector3_distance</api:name>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>a</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>b</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.vector3_distance</title>
+  <synopsis><code mime="text/x-gjs">
+function vector3_distance(a: Number(gfloat), b: Number(gfloat)): Number(gfloat) {
+    // Gjs wrapper for cogl_vector3_distance()
+}
+  </code></synopsis>
+  <p>If you consider the two given vectors as (x,y,z) points instead
+then this will compute the distance between those two points.</p>
+  <p>Since 1.4</p>
+<terms>
+<item>
+<title><code>a</code></title>
+  <p>The first point</p>
+</item>
+<item>
+<title><code>b</code></title>
+  <p>The second point</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>The distance between two points given as 3 component
+         vectors.</p>
+</item>
+</terms>
+
+</page>

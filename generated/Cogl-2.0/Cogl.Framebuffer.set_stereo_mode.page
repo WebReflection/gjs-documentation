@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<page id="Cogl.Framebuffer.set_stereo_mode"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Framebuffer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_framebuffer_set_stereo_mode</api:name>
+      <api:arg>
+        <api:type>Cogl.StereoMode</api:type>
+        <api:name>stereo_mode</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Framebuffer.prototype.set_stereo_mode</title>
+  <synopsis><code mime="text/x-gjs">
+function set_stereo_mode(stereo_mode: <link xref="Cogl.StereoMode">Cogl.StereoMode</link>): void {
+    // Gjs wrapper for cogl_framebuffer_set_stereo_mode()
+}
+  </code></synopsis>
+  <p>Sets which stereo buffers should be drawn to. The default
+is <link xref="Cogl.StereoMode"/>.both, which means that both the left and
+right buffers will be affected by drawing. For this to have
+an effect, the display system must support stereo drawables,
+and the framebuffer must have been created with stereo
+enabled. (See <link xref="Cogl.OnscreenTemplate.set_stereo_enabled"/>,
+<link xref="Cogl.Framebuffer.get_is_stereo"/>.)</p>
+  <p>Since 1.20</p>
+<terms>
+<item>
+<title><code>stereo_mode</code></title>
+  <p>A <link xref="Cogl.StereoMode"/> specifying which stereo buffers
+              should be drawn tow.</p>
+</item>
+</terms>
+
+</page>

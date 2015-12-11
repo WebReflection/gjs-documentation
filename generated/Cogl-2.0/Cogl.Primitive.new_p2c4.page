@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<page id="Cogl.Primitive.new_p2c4"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Primitive" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Primitive</api:type>
+      </api:returns>
+      <api:name>cogl_primitive_new_p2c4</api:name>
+      <api:arg>
+        <api:type>Cogl.Context</api:type>
+        <api:name>context</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.VerticesMode</api:type>
+        <api:name>mode</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Array(Cogl.VertexP2C4)</api:type>
+        <api:name>data</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Primitive.new_p2c4</title>
+  <synopsis><code mime="text/x-gjs">
+function new_p2c4(context: <link xref="Cogl.Context">Cogl.Context</link>, mode: <link xref="Cogl.VerticesMode">Cogl.VerticesMode</link>, data: Array(<link xref="Cogl.VertexP2C4">Cogl.VertexP2C4</link>)): <link xref="Cogl.Primitive">Cogl.Primitive</link> {
+    // Gjs wrapper for cogl_primitive_new_p2c4()
+}
+  </code></synopsis>
+  <p>Provides a convenient way to describe a primitive, such as a single
+triangle strip or a triangle fan, that will internally allocate the
+necessary <link xref="Cogl.AttributeBuffer"/> storage, describe the position
+and color attributes with <link xref="Cogl.Attribute"/>&lt;!-- --&gt;s and upload
+your data.</p>  <p>For example to draw a convex polygon with a linear gradient you
+can do:
+|[
+CoglVertexP2C4 triangle[] =
+{
+  { 0,   300,  0xff, 0x00, 0x00, 0xff },
+  { 150, 0,    0x00, 0xff, 0x00, 0xff },
+  { 300, 300,  0xff, 0x00, 0x00, 0xff }
+};
+prim = cogl_primitive_new_p2c4 (COGL_VERTICES_MODE_TRIANGLE_FAN,
+                                3, triangle);
+cogl_primitive_draw (prim);
+]|</p>  <p>The value passed as <code>n_vertices</code> is initially used to determine how
+much can be read from <code>data</code> but it will also be used to update the
+<link xref="Cogl.Primitive"/> &lt;structfield&gt;n_vertices&lt;/structfield&gt; property as if
+<link xref="Cogl.Primitive.set_n_vertices"/> were called. This property defines
+the number of vertices to read when drawing.</p>  <p>&lt;note&gt;The primitive API doesn't support drawing with sliced
+textures (since switching between slices implies changing state and
+so that implies multiple primitives need to be submitted). You
+should pass the <link xref="Cogl.TextureFlags"/>.no_slicing flag to all textures that
+might be used while drawing with this API. If your hardware doesn't
+support non-power of two textures (For example you are using GLES
+1.1) then you will need to make sure your assets are resized to a
+power-of-two size (though they don't have to be square)&lt;/note&gt;</p>
+  <p>Since 1.6</p>
+<terms>
+<item>
+<title><code>context</code></title>
+  <p>A <link xref="Cogl.Context"/></p>
+</item>
+<item>
+<title><code>mode</code></title>
+  <p>A <link xref="Cogl.VerticesMode"/> defining how to draw the vertices</p>
+</item>
+<item>
+<title><code>data</code></title>
+  <p>(type Cogl.VertexP2C4): An array
+       of <link xref="Cogl.VertexP2C4"/> vertices</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>A newly allocated <link xref="Cogl.Primitive"/>
+with a reference of 1. This can be freed using <link xref="Cogl.Object.unref"/>.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page id="Cogl.GLES2Vtable.glClearStencil"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Cogl.GLES2Vtable.glClearStencil</title>
+  <synopsis><code mime="text/x-gjs">
+function onglClearStencil(s: <link href="../GL-1.0/GL.int.html">GL.int</link>): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>s</code></title>
+
+</item>
+</terms>
+
+</page>

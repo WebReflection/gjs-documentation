@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<page id="TelepathyGLib.SimpleObserverObserveChannelsImpl"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>TelepathyGLib.SimpleObserverObserveChannelsImpl</title>
+  <synopsis><code mime="text/x-gjs">
+function onSimpleObserverObserveChannelsImpl(observer: <link xref="TelepathyGLib.SimpleObserver">TelepathyGLib.SimpleObserver</link>, account: <link xref="TelepathyGLib.Account">TelepathyGLib.Account</link>, connection: <link xref="TelepathyGLib.Connection">TelepathyGLib.Connection</link>, channels: Array(<link xref="TelepathyGLib.Channel">TelepathyGLib.Channel</link>), dispatch_operation: <link xref="TelepathyGLib.ChannelDispatchOperation">TelepathyGLib.ChannelDispatchOperation</link>, requests: Array(<link xref="TelepathyGLib.ChannelRequest">TelepathyGLib.ChannelRequest</link>), context: <link xref="TelepathyGLib.ObserveChannelsContext">TelepathyGLib.ObserveChannelsContext</link>): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>observer</code></title>
+
+</item>
+<item>
+<title><code>account</code></title>
+
+</item>
+<item>
+<title><code>connection</code></title>
+
+</item>
+<item>
+<title><code>channels</code></title>
+
+</item>
+<item>
+<title><code>dispatch_operation</code></title>
+
+</item>
+<item>
+<title><code>requests</code></title>
+
+</item>
+<item>
+<title><code>context</code></title>
+
+</item>
+</terms>
+
+</page>

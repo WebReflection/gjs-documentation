@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gst.ControlBindingConvert"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Gst.ControlBindingConvert</title>
+  <synopsis><code mime="text/x-gjs">
+function onControlBindingConvert(binding: <link xref="Gst.ControlBinding">Gst.ControlBinding</link>, src_value: Number(gdouble), dest_value: Any): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>binding</code></title>
+
+</item>
+<item>
+<title><code>src_value</code></title>
+
+</item>
+<item>
+<title><code>dest_value</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<page id="Cogl.vector3_equal_with_epsilon"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_vector3_equal_with_epsilon</api:name>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>vector0</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>vector1</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>epsilon</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.vector3_equal_with_epsilon</title>
+  <synopsis><code mime="text/x-gjs">
+function vector3_equal_with_epsilon(vector0: Number(gfloat), vector1: Number(gfloat), epsilon: Number(gfloat)): <link xref="Cogl.Bool">Cogl.Bool</link> {
+    // Gjs wrapper for cogl_vector3_equal_with_epsilon()
+}
+  </code></synopsis>
+  <p>Compares the components of two vectors using the given epsilon and
+returns TRUE if they are the same, using an internal epsilon for
+comparing the floats.</p>  <p>Each component is compared against the epsilon value in this way:
+|[
+  if (fabsf (vector0-&gt;x - vector1-&gt;x) &lt; epsilon)
+]|</p>
+  <p>Since 1.4</p>
+<terms>
+<item>
+<title><code>vector0</code></title>
+  <p>The first 3 component vector you want to compare</p>
+</item>
+<item>
+<title><code>vector1</code></title>
+  <p>The second 3 component vector you want to compare</p>
+</item>
+<item>
+<title><code>epsilon</code></title>
+  <p>The allowable difference between components to still be
+          considered equal</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>TRUE if the vectors are equal else FALSE.</p>
+</item>
+</terms>
+
+</page>

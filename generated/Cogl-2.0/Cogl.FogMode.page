@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<page id="Cogl.FogMode"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Cogl.FogMode</title>
+  <p>The fog mode determines the equation used to calculate the fogging blend
+factor while fogging is enabled. The simplest <link xref="Cogl.FogMode"/>.linear mode
+determines f as:</p>  <p>|[
+  f = end - eye_distance / end - start
+]|</p>  <p>Where eye_distance is the distance of the current fragment in eye
+coordinates from the origin.</p>
+  <p>Since 1.0</p>
+<terms>
+<item>
+<title><code>FogMode.LINEAR</code></title>
+  <p>Calculates the fog blend factor as:
+|[
+  f = end - eye_distance / end - start
+]|</p>
+</item>
+<item>
+<title><code>FogMode.EXPONENTIAL</code></title>
+  <p>Calculates the fog blend factor as:
+|[
+  f = e ^ -(density * eye_distance)
+]|</p>
+</item>
+<item>
+<title><code>FogMode.EXPONENTIAL_SQUARED</code></title>
+  <p>Calculates the fog blend factor as:
+|[
+  f = e ^ -(density * eye_distance)^2
+]|</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

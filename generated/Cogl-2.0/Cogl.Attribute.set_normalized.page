@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="Cogl.Attribute.set_normalized"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Attribute" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_attribute_set_normalized</api:name>
+      <api:arg>
+        <api:type>Cogl.Bool</api:type>
+        <api:name>normalized</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Attribute.prototype.set_normalized</title>
+  <synopsis><code mime="text/x-gjs">
+function set_normalized(normalized: <link xref="Cogl.Bool">Cogl.Bool</link>): void {
+    // Gjs wrapper for cogl_attribute_set_normalized()
+}
+  </code></synopsis>
+  <p>Sets whether fixed point attribute types are mapped to the range
+0→1. For example when this property is TRUE and a
+<link xref="Cogl.AttributeType"/>.unsigned_byte type is used then the value 255
+will be mapped to 1.0.</p>  <p>The default value of this property depends on the name of the
+attribute. For the builtin properties cogl_color_in and
+cogl_normal_in it will default to TRUE and for all other names it
+will default to FALSE.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>normalized</code></title>
+  <p>The new value for the normalized property.</p>
+</item>
+</terms>
+
+</page>

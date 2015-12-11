@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="Notify.uninit"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>notify_uninit</api:name>
+    </api:function>
+  </info>
+  <title>Notify.uninit</title>
+  <synopsis><code mime="text/x-gjs">
+function uninit(): void {
+    // Gjs wrapper for notify_uninit()
+}
+  </code></synopsis>
+  <p>Uninitialized libnotify.</p>  <p>This should be called when the program no longer needs libnotify for
+the rest of its lifecycle, typically just before exitting.</p>
+
+
+</page>

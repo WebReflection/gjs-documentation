@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gcr.CertificateChain.get_certificate"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.CertificateChain" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gcr.Certificate</api:type>
+      </api:returns>
+      <api:name>gcr_certificate_chain_get_certificate</api:name>
+      <api:arg>
+        <api:type>Number(guint)</api:type>
+        <api:name>index</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.CertificateChain.prototype.get_certificate</title>
+  <synopsis><code mime="text/x-gjs">
+function get_certificate(index: Number(guint)): <link xref="Gcr.Certificate">Gcr.Certificate</link> {
+    // Gjs wrapper for gcr_certificate_chain_get_certificate()
+}
+  </code></synopsis>
+  <p>Get a certificate in the chain. It is an error to call this function
+with an invalid index.</p>
+
+<terms>
+<item>
+<title><code>index</code></title>
+  <p>index of the certificate to get</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the certificate</p>
+</item>
+</terms>
+
+</page>

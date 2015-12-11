@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<page id="Cogl.FilterReturn"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Cogl.FilterReturn</title>
+  <p>Return values for the #CoglXlibFilterFunc and #CoglWin32FilterFunc functions.</p>
+
+<terms>
+<item>
+<title><code>FilterReturn.CONTINUE</code></title>
+  <p>The event was not handled, continues the
+                       processing</p>
+</item>
+<item>
+<title><code>FilterReturn.REMOVE</code></title>
+  <p>Remove the event, stops the processing</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

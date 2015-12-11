@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.poll_renderer_get_info</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.poll_renderer_get_info</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function poll_renderer_get_info(renderer: <span class="link"><a href="Cogl.Renderer.html" title="Cogl.Renderer">Cogl.Renderer</a></span>, poll_fds: <span class="link"><a href="Cogl.PollFD.html" title="Cogl.PollFD">Cogl.PollFD</a></span>, n_poll_fds: Number(gint), timeout: Number(gint64)): Number(gint) {
+    // Gjs wrapper for cogl_poll_renderer_get_info()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Is used to integrate Cogl with an application mainloop that is based
+on the unix poll(2) api (or select() or something equivalent). This
+api should be called whenever an application is about to go idle so
+that Cogl has a chance to describe what file descriptor events it
+needs to be woken up for.</p>
+<p class="p">&lt;note&gt;If your application is using the Glib mainloop then you
+should jump to the <span class="link"><a href="Cogl.glib_source_new.html" title="Cogl.glib_source_new">Cogl.glib_source_new</a></span> api as a more convenient
+way of integrating Cogl with the mainloop.&lt;/note&gt;</p>
+<p class="p">After the function is called *<span class="code">poll_fds</span> will contain a pointer to
+an array of <span class="link"><a href="Cogl.PollFD.html" title="Cogl.PollFD">Cogl.PollFD</a></span> structs describing the file descriptors
+that Cogl expects. The fd and events members will be updated
+accordingly. After the application has completed its idle it is
+expected to either update the revents members directly in this
+array or to create a copy of the array and update them
+there.</p>
+<p class="p">When the application mainloop returns from calling poll(2) (or its
+equivalent) then it should call <span class="link"><a href="Cogl.poll_renderer_dispatch.html" title="Cogl.poll_renderer_dispatch">Cogl.poll_renderer_dispatch</a></span>
+passing a pointer the array of CoglPollFD&lt;!-- --&gt;s with updated
+revent values.</p>
+<p class="p">When using the <span class="link"><a href="Cogl.WinsysID.html" title="Cogl.WinsysID">Cogl.WinsysID</a></span>.wgl winsys (where file descriptors
+don't make any sense) or <span class="link"><a href="Cogl.WinsysID.html" title="Cogl.WinsysID">Cogl.WinsysID</a></span>.sdl (where the event
+handling functions of SDL don't allow blocking on a file
+descriptor) *n_poll_fds is guaranteed to be zero.</p>
+<p class="p"><span class="code">timeout</span> will contain a maximum amount of time to wait in
+microseconds before the application should wake up or -1 if the
+application should wait indefinitely. This can also be 0 if
+Cogl needs to be woken up immediately.</p>
+<p class="p">Since 1.16</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">renderer</span></dt>
+<dd class="terms"><p class="p">A <span class="link"><a href="Cogl.Renderer.html" title="Cogl.Renderer">Cogl.Renderer</a></span></p></dd>
+<dt class="terms"><span class="code">poll_fds</span></dt>
+<dd class="terms"><p class="p">A return location for a pointer to an array
+           of <span class="link"><a href="Cogl.PollFD.html" title="Cogl.PollFD">Cogl.PollFD</a></span>&lt;!-- --&gt;s</p></dd>
+<dt class="terms"><span class="code">n_poll_fds</span></dt>
+<dd class="terms"><p class="p">A return location for the number of entries in *<span class="code">poll_fds</span></p></dd>
+<dt class="terms"><span class="code">timeout</span></dt>
+<dd class="terms"><p class="p">A return location for the maximum length of time to wait
+          in microseconds, or -1 to wait indefinitely.</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">A "poll fd state age" that changes whenever the set
+              of poll_fds has changed. If this API is being used to
+              integrate with another system mainloop api then
+              knowing if the set of file descriptors and events has
+              really changed can help avoid redundant work
+              depending the api. The age isn't guaranteed to change
+              when the timeout changes.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Cogl">Cogl</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

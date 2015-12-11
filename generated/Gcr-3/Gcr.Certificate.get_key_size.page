@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gcr.Certificate.get_key_size"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Certificate" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(guint)</api:type>
+      </api:returns>
+      <api:name>gcr_certificate_get_key_size</api:name>
+    </api:function>
+  </info>
+  <title>Gcr.Certificate.prototype.get_key_size</title>
+  <synopsis><code mime="text/x-gjs">
+function get_key_size(): Number(guint) {
+    // Gjs wrapper for gcr_certificate_get_key_size()
+}
+  </code></synopsis>
+  <p>Get the key size in bits of the public key represented
+by this certificate.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>The key size of the certificate.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<page id="Gck.Session.generate_key_pair_full"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Session" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gck_session_generate_key_pair_full</api:name>
+      <api:arg>
+        <api:type>Gck.Mechanism</api:type>
+        <api:name>mechanism</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gck.Attributes</api:type>
+        <api:name>public_attrs</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gck.Attributes</api:type>
+        <api:name>private_attrs</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Session.prototype.generate_key_pair_full</title>
+  <synopsis><code mime="text/x-gjs">
+function generate_key_pair_full(mechanism: <link xref="Gck.Mechanism">Gck.Mechanism</link>, public_attrs: <link xref="Gck.Attributes">Gck.Attributes</link>, private_attrs: <link xref="Gck.Attributes">Gck.Attributes</link>, cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>): [ok: Boolean, public_key: <link xref="Gck.Object">Gck.Object</link>, private_key: <link xref="Gck.Object">Gck.Object</link>] {
+    // Gjs wrapper for gck_session_generate_key_pair_full()
+}
+  </code></synopsis>
+  <p>Generate a new key pair of public and private keys. This call may block for an
+indefinite period.</p>  <p>If the <code>public_attrs</code> and/or <code>private_attrs</code> <link xref="Gck.Attributes"/> is floating, it is
+consumed.</p>
+
+<terms>
+<item>
+<title><code>mechanism</code></title>
+  <p>The mechanism to use for key generation.</p>
+</item>
+<item>
+<title><code>public_attrs</code></title>
+  <p>Additional attributes for the generated public key.</p>
+</item>
+<item>
+<title><code>private_attrs</code></title>
+  <p>Additional attributes for the generated private key.</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>Optional cancellation object, or NULL.</p>
+</item>
+<item>
+<title><code>ok</code></title>
+  <p>TRUE if the operation succeeded.</p>
+</item>
+<item>
+<title><code>public_key</code></title>
+  <p>a location to return the resulting public key</p>
+</item>
+<item>
+<title><code>private_key</code></title>
+  <p>a location to return the resulting private key</p>
+</item>
+</terms>
+
+</page>

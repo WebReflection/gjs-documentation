@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Atk.PropertyChangeHandler"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Atk.PropertyChangeHandler</title>
+  <synopsis><code mime="text/x-gjs">
+function onPropertyChangeHandler(obj: <link xref="Atk.Object">Atk.Object</link>, vals: <link xref="Atk.PropertyValues">Atk.PropertyValues</link>): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>obj</code></title>
+
+</item>
+<item>
+<title><code>vals</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Cogl.Framebuffer.get_stereo_mode"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Framebuffer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.StereoMode</api:type>
+      </api:returns>
+      <api:name>cogl_framebuffer_get_stereo_mode</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Framebuffer.prototype.get_stereo_mode</title>
+  <synopsis><code mime="text/x-gjs">
+function get_stereo_mode(): <link xref="Cogl.StereoMode">Cogl.StereoMode</link> {
+    // Gjs wrapper for cogl_framebuffer_get_stereo_mode()
+}
+  </code></synopsis>
+  <p>Gets the current <link xref="Cogl.StereoMode"/>, which defines which stereo buffers
+should be drawn to. See <link xref="Cogl.Framebuffer.set_stereo_mode"/>.</p>
+  <p>Since 1.20</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>A <link xref="Cogl.StereoMode"/></p>
+</item>
+</terms>
+
+</page>

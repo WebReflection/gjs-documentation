@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="Gck.Builder.add_all"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Builder" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gck_builder_add_all</api:name>
+      <api:arg>
+        <api:type>Gck.Attributes</api:type>
+        <api:name>attrs</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Builder.prototype.add_all</title>
+  <synopsis><code mime="text/x-gjs">
+function add_all(attrs: <link xref="Gck.Attributes">Gck.Attributes</link>): void {
+    // Gjs wrapper for gck_builder_add_all()
+}
+  </code></synopsis>
+  <p>Add all the <code>attrs</code> attributes to the builder. The attributes are added
+uncondititionally whether or not attributes with the same types already
+exist in the builder.</p>  <p>As an optimization, the attribute memory values are automatically shared
+between the attributes and the builder.</p>
+
+<terms>
+<item>
+<title><code>attrs</code></title>
+  <p>the attributes to add</p>
+</item>
+</terms>
+
+</page>

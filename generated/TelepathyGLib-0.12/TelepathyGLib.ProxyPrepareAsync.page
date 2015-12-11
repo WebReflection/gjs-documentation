@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="TelepathyGLib.ProxyPrepareAsync"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>TelepathyGLib.ProxyPrepareAsync</title>
+  <synopsis><code mime="text/x-gjs">
+function onProxyPrepareAsync(proxy: <link xref="TelepathyGLib.Proxy">TelepathyGLib.Proxy</link>, feature: <link xref="TelepathyGLib.ProxyFeature">TelepathyGLib.ProxyFeature</link>, callback: <link href="../Gio-2.0/Gio.AsyncReadyCallback.html">Gio.AsyncReadyCallback</link>): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>proxy</code></title>
+
+</item>
+<item>
+<title><code>feature</code></title>
+
+</item>
+<item>
+<title><code>callback</code></title>
+
+</item>
+</terms>
+
+</page>

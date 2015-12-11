@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.Primitive.new_with_attributes</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » <a class="trail" href="Cogl.Primitive.html" title="Cogl.Primitive">Cogl.Primitive</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.Primitive.new_with_attributes</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function new_with_attributes(mode: <span class="link"><a href="Cogl.VerticesMode.html" title="Cogl.VerticesMode">Cogl.VerticesMode</a></span>, n_vertices: Number(gint), attributes: <span class="link"><a href="Cogl.Attribute.html" title="Cogl.Attribute">Cogl.Attribute</a></span>, n_attributes: Number(gint)): <span class="link"><a href="Cogl.Primitive.html" title="Cogl.Primitive">Cogl.Primitive</a></span> {
+    // Gjs wrapper for cogl_primitive_new_with_attributes()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Combines a set of <span class="link"><a href="Cogl.Attribute.html" title="Cogl.Attribute">Cogl.Attribute</a></span>&lt;!-- --&gt;s with a specific draw <span class="code">mode</span>
+and defines a vertex count so a <span class="link"><a href="Cogl.Primitive.html" title="Cogl.Primitive">Cogl.Primitive</a></span> object can be retained and
+drawn later with no addition information required.</p>
+<p class="p">The value passed as <span class="code">n_vertices</span> will simply update the
+<span class="link"><a href="Cogl.Primitive.html" title="Cogl.Primitive">Cogl.Primitive</a></span> &lt;structfield&gt;n_vertices&lt;/structfield&gt; property as if
+<span class="link"><a href="Cogl.Primitive.set_n_vertices.html" title="Cogl.Primitive.prototype.set_n_vertices">Cogl.Primitive.prototype.set_n_vertices</a></span> were called. This property defines
+the number of vertices to read when drawing.</p>
+<p class="p">Since 1.6</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">mode</span></dt>
+<dd class="terms"><p class="p">A <span class="link"><a href="Cogl.VerticesMode.html" title="Cogl.VerticesMode">Cogl.VerticesMode</a></span> defining how to draw the vertices</p></dd>
+<dt class="terms"><span class="code">n_vertices</span></dt>
+<dd class="terms"><p class="p">The number of vertices to process when drawing</p></dd>
+<dt class="terms"><span class="code">attributes</span></dt>
+<dd class="terms"><p class="p">An array of CoglAttribute</p></dd>
+<dt class="terms"><span class="code">n_attributes</span></dt>
+<dd class="terms"><p class="p">The number of attributes</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">A newly allocated <span class="link"><a href="Cogl.Primitive.html" title="Cogl.Primitive">Cogl.Primitive</a></span> object</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.Primitive.html" title="Cogl.Primitive">Cogl.Primitive</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

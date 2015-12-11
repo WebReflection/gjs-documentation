@@ -1,0 +1,73 @@
+<?xml version="1.0"?>
+<page id="Cogl.TexturePixmapX11.new_left"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.TexturePixmapX11" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.TexturePixmapX11</api:type>
+      </api:returns>
+      <api:name>cogl_texture_pixmap_x11_new_left</api:name>
+      <api:arg>
+        <api:type>Cogl.Context</api:type>
+        <api:name>context</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint32)</api:type>
+        <api:name>pixmap</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.Bool</api:type>
+        <api:name>automatic_updates</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.TexturePixmapX11.new_left</title>
+  <synopsis><code mime="text/x-gjs">
+function new_left(context: <link xref="Cogl.Context">Cogl.Context</link>, pixmap: Number(guint32), automatic_updates: <link xref="Cogl.Bool">Cogl.Bool</link>): <link xref="Cogl.TexturePixmapX11">Cogl.TexturePixmapX11</link> {
+    // Gjs wrapper for cogl_texture_pixmap_x11_new_left()
+}
+  </code></synopsis>
+  <p>Creates one of a pair of textures to contain the contents of <code>pixmap</code>,
+which has stereo content. (Different images for the right and left eyes.)
+The left image is drawn using this texture; the right image is drawn
+using a texture created by calling
+<link xref="Cogl.TexturePixmapX11.new_right"/> and passing in this texture as an
+argument.</p>  <p>In general, you should not use this function unless you have
+queried the %GLX_STEREO_TREE_EXT attribute of the corresponding
+window using glXQueryDrawable() and determined that the window is
+stereo. Note that this attribute can change over time and
+notification is also provided through events defined in the
+EXT_stereo_tree GLX extension. As long as the system has support for
+stereo content, drawing using the left and right pixmaps will not
+produce an error even if the window doesn't have stereo
+content any more, but drawing with the right pixmap will produce
+undefined output, so you need to listen for these events and
+re-render to avoid race conditions. (Recreating a non-stereo
+pixmap is not necessary, but may save resources.)</p>
+  <p>Since 1.20</p>
+<terms>
+<item>
+<title><code>context</code></title>
+  <p>A <link xref="Cogl.Context"/></p>
+</item>
+<item>
+<title><code>pixmap</code></title>
+  <p>A X11 pixmap ID</p>
+</item>
+<item>
+<title><code>automatic_updates</code></title>
+  <p>Whether to automatically copy the contents of
+the pixmap to the texture.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a new <link xref="Cogl.TexturePixmapX11"/> instance</p>
+</item>
+</terms>
+
+</page>

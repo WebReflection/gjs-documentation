@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="GWeather.Location.serialize"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Location" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.Variant</api:type>
+      </api:returns>
+      <api:name>gweather_location_serialize</api:name>
+    </api:function>
+  </info>
+  <title>GWeather.Location.prototype.serialize</title>
+  <synopsis><code mime="text/x-gjs">
+function serialize(): <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> {
+    // Gjs wrapper for gweather_location_serialize()
+}
+  </code></synopsis>
+  <p>Transforms a <link xref="GWeather.Location"/> into a <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link>, in a way that
+calling <link xref="GWeather.Location.deserialize"/> will hold an equivalent
+<link xref="GWeather.Location"/>.
+The resulting variant can then be stored into GSettings or on disk.
+This call is only valid for cities, weather stations and detached
+locations.
+The format of the resulting <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link> is private to libgweather,
+and it is subject to change. You should use the "v" format in GSettings,
+to ensure maximum compatibility with future versions of the library.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the serialization of @location.</p>
+</item>
+</terms>
+
+</page>

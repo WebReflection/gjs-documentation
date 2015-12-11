@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Gcr.Importer-import_sync"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Importer" group="vfunc" type="guide"/>
+  </info>
+  <title>Gcr.Importer::import_sync</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_import_sync(cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>): Boolean {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>cancellable</code></title>
+
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

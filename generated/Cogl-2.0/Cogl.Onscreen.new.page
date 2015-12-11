@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<page id="Cogl.Onscreen.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Onscreen" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Onscreen</api:type>
+      </api:returns>
+      <api:name>cogl_onscreen_new</api:name>
+      <api:arg>
+        <api:type>Cogl.Context</api:type>
+        <api:name>context</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>width</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>height</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Onscreen.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(context: <link xref="Cogl.Context">Cogl.Context</link>, width: Number(gint), height: Number(gint)): <link xref="Cogl.Onscreen">Cogl.Onscreen</link> {
+    // Gjs wrapper for cogl_onscreen_new()
+}
+  </code></synopsis>
+  <p>Instantiates an "unallocated" <link xref="Cogl.Onscreen"/> framebuffer that may be
+configured before later being allocated, either implicitly when
+it is first used or explicitly via <link xref="Cogl.Framebuffer.allocate"/>.</p>
+  <p>Since 1.8</p>
+<terms>
+<item>
+<title><code>context</code></title>
+  <p>A <link xref="Cogl.Context"/></p>
+</item>
+<item>
+<title><code>width</code></title>
+  <p>The desired framebuffer width</p>
+</item>
+<item>
+<title><code>height</code></title>
+  <p>The desired framebuffer height</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>A newly instantiated <link xref="Cogl.Onscreen"/> framebuffer</p>
+</item>
+</terms>
+
+</page>

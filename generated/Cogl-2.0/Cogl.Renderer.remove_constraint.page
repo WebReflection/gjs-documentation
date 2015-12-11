@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Cogl.Renderer.remove_constraint"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Renderer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_renderer_remove_constraint</api:name>
+      <api:arg>
+        <api:type>Cogl.RendererConstraint</api:type>
+        <api:name>constraint</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Renderer.prototype.remove_constraint</title>
+  <synopsis><code mime="text/x-gjs">
+function remove_constraint(constraint: <link xref="Cogl.RendererConstraint">Cogl.RendererConstraint</link>): void {
+    // Gjs wrapper for cogl_renderer_remove_constraint()
+}
+  </code></synopsis>
+  <p>This removes a renderer selection <code>constraint</code>.</p>  <p>Applications should ideally minimize how many of these constraints they
+depend on to ensure maximum portability.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>constraint</code></title>
+  <p>A <link xref="Cogl.RendererConstraint"/> to remove</p>
+</item>
+</terms>
+
+</page>

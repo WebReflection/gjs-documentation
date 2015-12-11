@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<page id="Gck.Object.get_async"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Object" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gck_object_get_async</api:name>
+      <api:arg>
+        <api:type>Array(Number(gulong))</api:type>
+        <api:name>attr_types</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.AsyncReadyCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Object.prototype.get_async</title>
+  <synopsis><code mime="text/x-gjs">
+function get_async(attr_types: Array(Number(gulong)), cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>, callback: <link href="../Gio-2.0/Gio.AsyncReadyCallback.html">Gio.AsyncReadyCallback</link>): void {
+    // Gjs wrapper for gck_object_get_async()
+}
+  </code></synopsis>
+  <p>Get the specified attributes from the object. The attributes will be cleared
+of their current values, and new attributes will be stored. The attributes
+should not be accessed in any way except for referencing and unreferencing
+them until <link xref="Gck.Object.get_finish"/> is called.</p>  <p>This call returns immediately and completes asynchronously.</p>
+
+<terms>
+<item>
+<title><code>attr_types</code></title>
+  <p>the types of the attributes to get</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional cancellation object, or <code>null</code></p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>A callback which is called when the operation completes.</p>
+</item>
+</terms>
+
+</page>

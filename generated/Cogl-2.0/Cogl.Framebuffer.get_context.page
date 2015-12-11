@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="Cogl.Framebuffer.get_context"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Framebuffer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Context</api:type>
+      </api:returns>
+      <api:name>cogl_framebuffer_get_context</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Framebuffer.prototype.get_context</title>
+  <synopsis><code mime="text/x-gjs">
+function get_context(): <link xref="Cogl.Context">Cogl.Context</link> {
+    // Gjs wrapper for cogl_framebuffer_get_context()
+}
+  </code></synopsis>
+  <p>Can be used to query the <link xref="Cogl.Context"/> a given <code>framebuffer</code> was
+instantiated within. This is the <link xref="Cogl.Context"/> that was passed to
+<link xref="Cogl.Onscreen.new"/> for example.</p>
+  <p>Since 1.8</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>The <link xref="Cogl.Context"/> that the given
+              <code>framebuffer</code> was instantiated within.</p>
+</item>
+</terms>
+
+</page>

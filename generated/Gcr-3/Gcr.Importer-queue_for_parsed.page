@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<page id="Gcr.Importer-queue_for_parsed"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Importer" group="vfunc" type="guide"/>
+  </info>
+  <title>Gcr.Importer::queue_for_parsed</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_queue_for_parsed(parsed: <link xref="Gcr.Parsed">Gcr.Parsed</link>): Boolean {
+}
+  </code></synopsis>
+  <p>Queues an additional item to be imported. The parsed item is represented
+by the state of the <link xref="Gcr.Parser"/> at the time of calling this method.</p>  <p>If the parsed item is incompatible with the importer, then this will
+fail and the item will not be queued.</p>
+
+<terms>
+<item>
+<title><code>parsed</code></title>
+  <p>a parsed item to import</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>whether the item was queued or not</p>
+</item>
+</terms>
+
+</page>

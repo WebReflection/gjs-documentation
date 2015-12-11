@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="GWeather.Conditions-qualifier"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Conditions" group="field" type="guide"/>
+    <title type="link" role="topic">qualifier</title>
+  </info>
+  <title>GWeather.Conditions.qualifier</title>
+  <synopsis><code mime="text/x-gjs">
+Conditions.qualifier: <link xref="GWeather.ConditionQualifier">GWeather.ConditionQualifier</link> (Read / Write)
+  </code></synopsis>
+  <p>a modifier for @phenomenon</p>
+
+</page>

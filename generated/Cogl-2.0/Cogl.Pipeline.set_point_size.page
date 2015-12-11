@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.set_point_size"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_set_point_size</api:name>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>point_size</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.set_point_size</title>
+  <synopsis><code mime="text/x-gjs">
+function set_point_size(point_size: Number(gfloat)): void {
+    // Gjs wrapper for cogl_pipeline_set_point_size()
+}
+  </code></synopsis>
+  <p>Changes the size of points drawn when <link xref="Cogl.VerticesMode"/>.points is
+used with the attribute buffer API. Note that typically the GPU
+will only support a limited minimum and maximum range of point
+sizes. If the chosen point size is outside that range then the
+nearest value within that range will be used instead. The size of a
+point is in screen space so it will be the same regardless of any
+transformations.</p>  <p>If the point size is set to 0.0 then drawing points with the
+pipeline will have undefined results. This is the default value so
+if an application wants to draw points it must make sure to use a
+pipeline that has an explicit point size set on it.</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>point_size</code></title>
+  <p>the new point size.</p>
+</item>
+</terms>
+
+</page>

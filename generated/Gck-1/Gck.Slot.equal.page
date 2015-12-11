@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gck.Slot.equal"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Slot" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gck_slot_equal</api:name>
+      <api:arg>
+        <api:type>Gck.Slot</api:type>
+        <api:name>slot2</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Slot.prototype.equal</title>
+  <synopsis><code mime="text/x-gjs">
+function equal(slot2: <link xref="Gck.Slot">Gck.Slot</link>): Boolean {
+    // Gjs wrapper for gck_slot_equal()
+}
+  </code></synopsis>
+  <p>Checks equality of two slots. Two GckSlot objects can point to the same
+underlying PKCS\#11 slot.</p>
+
+<terms>
+<item>
+<title><code>slot2</code></title>
+  <p>a pointer to the second <link xref="Gck.Slot"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>TRUE if slot1 and slot2 are equal. FALSE if either is not a GckSlot.</p>
+</item>
+</terms>
+
+</page>

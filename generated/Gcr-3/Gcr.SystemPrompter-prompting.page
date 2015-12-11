@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gcr.SystemPrompter-prompting"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.SystemPrompter" group="property" type="guide"/>
+    <title type="link" role="topic">prompting</title>
+  </info>
+  <title>Gcr.SystemPrompter.prompting</title>
+  <synopsis><code mime="text/x-gjs">
+SystemPrompter.prompting: Boolean (Read)
+  </code></synopsis>
+  <p>Whether the prompter is prompting or not.</p>
+
+</page>

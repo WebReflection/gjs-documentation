@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="GWeather.Info-enabled-providers"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Info" group="property" type="guide"/>
+    <title type="link" role="topic">enabled-providers</title>
+  </info>
+  <title>GWeather.Info.enabled_providers</title>
+  <synopsis><code mime="text/x-gjs">
+Info.enabled_providers: <link xref="GWeather.Provider">GWeather.Provider</link> (Read / Write)
+  </code></synopsis>
+
+
+</page>

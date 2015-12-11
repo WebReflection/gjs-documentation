@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<page id="Cogl.Onscreen.set_resizable"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Onscreen" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_onscreen_set_resizable</api:name>
+      <api:arg>
+        <api:type>Cogl.Bool</api:type>
+        <api:name>resizable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Onscreen.prototype.set_resizable</title>
+  <synopsis><code mime="text/x-gjs">
+function set_resizable(resizable: <link xref="Cogl.Bool">Cogl.Bool</link>): void {
+    // Gjs wrapper for cogl_onscreen_set_resizable()
+}
+  </code></synopsis>
+  <p>Lets you request Cogl to mark an <code>onscreen</code> framebuffer as
+resizable or not.</p>  <p>By default, if possible, a <code>onscreen</code> will be created by Cogl
+as non resizable, but it is not guaranteed that this is always
+possible for all window systems.</p>  <p>&lt;note&gt;Cogl does not know whether marking the <code>onscreen</code> framebuffer
+is truly meaningful for your current window system (consider
+applications being run fullscreen on a phone or TV) so this
+function may not have any useful effect. If you are running on a
+multi windowing system such as X11 or Win32 or OSX then Cogl will
+request to the window system that users be allowed to resize the
+<code>onscreen</code>, although it's still possible that some other window
+management policy will block this possibility.&lt;/note&gt;</p>  <p>&lt;note&gt;Whenever an <code>onscreen</code> framebuffer is resized the viewport
+will be automatically updated to match the new size of the
+framebuffer with an origin of (0,0). If your application needs more
+specialized control of the viewport it will need to register a
+resize handler using <link xref="Cogl.Onscreen.add_resize_callback"/> so that it
+can track when the viewport has been changed automatically.&lt;/note&gt;</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>resizable</code></title>
+
+</item>
+</terms>
+
+</page>

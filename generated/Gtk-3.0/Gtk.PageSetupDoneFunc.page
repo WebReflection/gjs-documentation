@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page id="Gtk.PageSetupDoneFunc"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Gtk.PageSetupDoneFunc</title>
+  <synopsis><code mime="text/x-gjs">
+function onPageSetupDoneFunc(page_setup: <link xref="Gtk.PageSetup">Gtk.PageSetup</link>): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>page_setup</code></title>
+
+</item>
+</terms>
+
+</page>

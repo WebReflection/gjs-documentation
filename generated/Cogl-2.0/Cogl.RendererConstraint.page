@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<page id="Cogl.RendererConstraint"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Cogl.RendererConstraint</title>
+  <p>These constraint flags are hard-coded features of the different renderer
+backends. Sometimes a platform may support multiple rendering options which
+Cogl will usually choose from automatically. Some of these features are
+important to higher level applications and frameworks though, such as
+whether a renderer is X11 based because an application might only support
+X11 based input handling. An application might also need to ensure EGL is
+used internally too if they depend on access to an EGLDisplay for some
+purpose.</p>  <p>Applications should ideally minimize how many of these constraints
+they depend on to ensure maximum portability.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>RendererConstraint.USES_X11</code></title>
+  <p>Require the renderer to be X11 based</p>
+</item>
+<item>
+<title><code>RendererConstraint.USES_XLIB</code></title>
+  <p>Require the renderer to be X11
+                                     based and use Xlib</p>
+</item>
+<item>
+<title><code>RendererConstraint.USES_EGL</code></title>
+  <p>Require the renderer to be EGL based</p>
+</item>
+<item>
+<title><code>RendererConstraint.SUPPORTS_COGL_GLES2</code></title>
+  <p>Require that the
+   renderer supports creating a <link xref="Cogl.GLES2Context"/> via
+   <link xref="Cogl.GLES2Context.new"/>. This can be used to integrate GLES 2.0
+   code into Cogl based applications.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gck.Module.get_info"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Module" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.ModuleInfo</api:type>
+      </api:returns>
+      <api:name>gck_module_get_info</api:name>
+    </api:function>
+  </info>
+  <title>Gck.Module.prototype.get_info</title>
+  <synopsis><code mime="text/x-gjs">
+function get_info(): <link xref="Gck.ModuleInfo">Gck.ModuleInfo</link> {
+    // Gjs wrapper for gck_module_get_info()
+}
+  </code></synopsis>
+  <p>Get the info about a PKCS\#11 module.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the module info; release this with <link xref="Gck.ModuleInfo.free"/></p>
+</item>
+</terms>
+
+</page>

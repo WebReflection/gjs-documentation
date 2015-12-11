@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page id="Gcr.Collection-get_length"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Collection" group="vfunc" type="guide"/>
+  </info>
+  <title>Gcr.Collection::get_length</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_get_length(): Number(guint) {
+}
+  </code></synopsis>
+  <p>Get the number of objects in this collection.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>The number of objects.</p>
+</item>
+</terms>
+
+</page>

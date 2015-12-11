@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Cogl.Framebuffer.set_projection_matrix"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Framebuffer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_framebuffer_set_projection_matrix</api:name>
+      <api:arg>
+        <api:type>Cogl.Matrix</api:type>
+        <api:name>matrix</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Framebuffer.prototype.set_projection_matrix</title>
+  <synopsis><code mime="text/x-gjs">
+function set_projection_matrix(matrix: <link xref="Cogl.Matrix">Cogl.Matrix</link>): void {
+    // Gjs wrapper for cogl_framebuffer_set_projection_matrix()
+}
+  </code></synopsis>
+  <p>Sets <code>matrix</code> as the new projection matrix.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>matrix</code></title>
+  <p>the new projection matrix</p>
+</item>
+</terms>
+
+</page>

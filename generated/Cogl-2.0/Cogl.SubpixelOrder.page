@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<page id="Cogl.SubpixelOrder"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Cogl.SubpixelOrder</title>
+  <p>Some output devices (such as LCD panels) display colors
+by making each pixel consist of smaller "subpixels"
+that each have a particular color. By using knowledge
+of the layout of this subpixel components, it is possible
+to create image content with higher resolution than the
+pixel grid.</p>
+  <p>Since 1.14</p>
+<terms>
+<item>
+<title><code>SubpixelOrder.UNKNOWN</code></title>
+  <p>the layout of subpixel
+  components for the device is unknown.</p>
+</item>
+<item>
+<title><code>SubpixelOrder.NONE</code></title>
+  <p>the device displays colors
+  without geometrically-separated subpixel components,
+  or the positioning or colors of the components do not
+  match any of the values in the enumeration.</p>
+</item>
+<item>
+<title><code>SubpixelOrder.HORIZONTAL_RGB</code></title>
+  <p>the device has
+  horizontally arranged components in the order
+  red-green-blue from left to right.</p>
+</item>
+<item>
+<title><code>SubpixelOrder.HORIZONTAL_BGR</code></title>
+  <p>the device has
+  horizontally arranged  components in the order
+  blue-green-red from left to right.</p>
+</item>
+<item>
+<title><code>SubpixelOrder.VERTICAL_RGB</code></title>
+  <p>the device has
+  vertically arranged components in the order
+  red-green-blue from top to bottom.</p>
+</item>
+<item>
+<title><code>SubpixelOrder.VERTICAL_BGR</code></title>
+  <p>the device has
+  vertically arranged components in the order
+  blue-green-red from top to bottom.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

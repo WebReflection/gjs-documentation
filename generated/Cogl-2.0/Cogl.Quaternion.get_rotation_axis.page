@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Cogl.Quaternion.get_rotation_axis"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Quaternion" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_quaternion_get_rotation_axis</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Quaternion.prototype.get_rotation_axis</title>
+  <synopsis><code mime="text/x-gjs">
+function get_rotation_axis(): Number(gfloat) {
+    // Gjs wrapper for cogl_quaternion_get_rotation_axis()
+}
+  </code></synopsis>
+
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>an allocated 3-float array</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Notify.Notification.get_closed_reason"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Notify.Notification" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gint)</api:type>
+      </api:returns>
+      <api:name>notify_notification_get_closed_reason</api:name>
+    </api:function>
+  </info>
+  <title>Notify.Notification.prototype.get_closed_reason</title>
+  <synopsis><code mime="text/x-gjs">
+function get_closed_reason(): Number(gint) {
+    // Gjs wrapper for notify_notification_get_closed_reason()
+}
+  </code></synopsis>
+  <p>Returns the closed reason code for the notification. This is valid only
+after the "closed" signal is emitted.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>The closed reason code.</p>
+</item>
+</terms>
+
+</page>

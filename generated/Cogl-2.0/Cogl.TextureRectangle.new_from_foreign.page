@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<page id="Cogl.TextureRectangle.new_from_foreign"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.TextureRectangle" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.TextureRectangle</api:type>
+      </api:returns>
+      <api:name>cogl_texture_rectangle_new_from_foreign</api:name>
+      <api:arg>
+        <api:type>Cogl.Context</api:type>
+        <api:name>ctx</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint)</api:type>
+        <api:name>gl_handle</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>width</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>height</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.PixelFormat</api:type>
+        <api:name>format</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.TextureRectangle.new_from_foreign</title>
+  <synopsis><code mime="text/x-gjs">
+function new_from_foreign(ctx: <link xref="Cogl.Context">Cogl.Context</link>, gl_handle: Number(guint), width: Number(gint), height: Number(gint), format: <link xref="Cogl.PixelFormat">Cogl.PixelFormat</link>): <link xref="Cogl.TextureRectangle">Cogl.TextureRectangle</link> {
+    // Gjs wrapper for cogl_texture_rectangle_new_from_foreign()
+}
+  </code></synopsis>
+  <p>Wraps an existing GL_TEXTURE_RECTANGLE texture object as a
+<link xref="Cogl.TextureRectangle"/>.  This can be used for integrating Cogl with
+software using OpenGL directly.</p>  <p>&lt;note&gt;Unlike for <link xref="Cogl.Texture2D"/> textures, coordinates for
+<link xref="Cogl.TextureRectangle"/> textures should not be normalized. So instead
+of using the coordinate (1, 1) to sample the bottom right corner of
+a rectangle texture you would use (<code>width</code>, <code>height</code>) where <code>width</code>
+and <code>height</code> are the width and height of the texture.&lt;/note&gt;</p>  <p>&lt;note&gt;The results are undefined for passing an invalid <code>gl_handle</code>
+or if <code>width</code> or <code>height</code> don't have the correct texture
+geometry.&lt;/note&gt;</p>  <p>&lt;note&gt;If you want to sample from a rectangle texture from GLSL you
+should use the sampler2DRect sampler type.&lt;/note&gt;</p>  <p>&lt;note&gt;Applications wanting to use <link xref="Cogl.TextureRectangle"/> should
+first check for the <link xref="Cogl.FeatureID"/>.ogl_feature_id_texture_rectangle feature
+using <link xref="Cogl.has_feature"/>.&lt;/note&gt;</p>  <p>The texture is still configurable until it has been allocated so
+for example you can declare whether the texture is premultiplied
+with <link xref="Cogl.Texture.set_premultiplied"/>.</p>
+
+<terms>
+<item>
+<title><code>ctx</code></title>
+  <p>A <link xref="Cogl.Context"/></p>
+</item>
+<item>
+<title><code>gl_handle</code></title>
+  <p>A GL handle for a GL_TEXTURE_RECTANGLE texture object</p>
+</item>
+<item>
+<title><code>width</code></title>
+  <p>Width of the foreign GL texture</p>
+</item>
+<item>
+<title><code>height</code></title>
+  <p>Height of the foreign GL texture</p>
+</item>
+<item>
+<title><code>format</code></title>
+  <p>The format of the texture</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>A new <link xref="Cogl.TextureRectangle"/> texture</p>
+</item>
+</terms>
+
+</page>

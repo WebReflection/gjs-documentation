@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gcr.UnionCollection.size"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.UnionCollection" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(guint)</api:type>
+      </api:returns>
+      <api:name>gcr_union_collection_size</api:name>
+    </api:function>
+  </info>
+  <title>Gcr.UnionCollection.prototype.size</title>
+  <synopsis><code mime="text/x-gjs">
+function size(): Number(guint) {
+    // Gjs wrapper for gcr_union_collection_size()
+}
+  </code></synopsis>
+  <p>Return the number of collections in this union. This does not reflect
+the number of objects in the combined collection.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>number of collections inlcuded</p>
+</item>
+</terms>
+
+</page>

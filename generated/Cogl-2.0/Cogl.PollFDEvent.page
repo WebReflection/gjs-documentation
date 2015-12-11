@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<page id="Cogl.PollFDEvent"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Cogl.PollFDEvent</title>
+  <p>A bitmask of events that Cogl may need to wake on for a file
+descriptor. Note that these all have the same values as the
+corresponding defines for the poll function call on Unix so they
+may be directly passed to poll.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>PollFDEvent.IN</code></title>
+  <p>there is data to read</p>
+</item>
+<item>
+<title><code>PollFDEvent.PRI</code></title>
+  <p>data can be written (without blocking)</p>
+</item>
+<item>
+<title><code>PollFDEvent.OUT</code></title>
+  <p>there is urgent data to read.</p>
+</item>
+<item>
+<title><code>PollFDEvent.ERR</code></title>
+  <p>error condition</p>
+</item>
+<item>
+<title><code>PollFDEvent.HUP</code></title>
+  <p>hung up (the connection has been broken, usually
+                         for pipes and sockets).</p>
+</item>
+<item>
+<title><code>PollFDEvent.NVAL</code></title>
+  <p>invalid request. The file descriptor is not open.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

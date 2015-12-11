@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="GWeather.Sky.to_string"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Sky" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>gweather_sky_to_string</api:name>
+      <api:arg>
+        <api:type>GWeather.Sky</api:type>
+        <api:name>sky</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GWeather.Sky.to_string</title>
+  <synopsis><code mime="text/x-gjs">
+function to_string(sky: <link xref="GWeather.Sky">GWeather.Sky</link>): String {
+    // Gjs wrapper for gweather_sky_to_string()
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>sky</code></title>
+
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

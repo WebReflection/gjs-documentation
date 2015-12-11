@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<page id="Cogl.Texture2DSliced.new_from_file"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Texture2DSliced" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Texture2DSliced</api:type>
+      </api:returns>
+      <api:name>cogl_texture_2d_sliced_new_from_file</api:name>
+      <api:arg>
+        <api:type>Cogl.Context</api:type>
+        <api:name>ctx</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>filename</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>max_waste</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Texture2DSliced.new_from_file</title>
+  <synopsis><code mime="text/x-gjs">
+function new_from_file(ctx: <link xref="Cogl.Context">Cogl.Context</link>, filename: String, max_waste: Number(gint)): <link xref="Cogl.Texture2DSliced">Cogl.Texture2DSliced</link> {
+    // Gjs wrapper for cogl_texture_2d_sliced_new_from_file()
+}
+  </code></synopsis>
+  <p>Creates a <link xref="Cogl.Texture2DSliced"/> from an image file.</p>  <p>A <link xref="Cogl.Texture2DSliced"/> may internally be comprised of 1 or more
+<link xref="Cogl.Texture2D"/> textures depending on GPU limitations.  For example
+if the GPU only supports power-of-two sized textures then a sliced
+texture will turn a non-power-of-two size into a combination of
+smaller power-of-two sized textures. If the requested texture size
+is larger than is supported by the hardware then the texture will
+be sliced into smaller textures that can be accessed by the
+hardware.</p>  <p><code>max_waste</code> is used as a threshold for recursively slicing the
+right-most or bottom-most slices into smaller sizes until the
+wasted padding at the bottom and right of the textures is less than
+specified. A negative <code>max_waste</code> will disable slicing.</p>  <p>The storage for the texture is not allocated before this function
+returns. You can call <link xref="Cogl.Texture.allocate"/> to explicitly
+allocate the underlying storage or let Cogl automatically allocate
+storage lazily.</p>  <p>&lt;note&gt;It's possible for the allocation of a sliced texture to fail
+later due to impossible slicing constraints if a negative
+<code>max_waste</code> value is given. If the given virtual texture size is
+larger than is supported by the hardware but slicing is disabled
+the texture size would be too large to handle.&lt;/note&gt;</p>
+  <p>Since 1.16</p>
+<terms>
+<item>
+<title><code>ctx</code></title>
+  <p>A <link xref="Cogl.Context"/></p>
+</item>
+<item>
+<title><code>filename</code></title>
+  <p>the file to load</p>
+</item>
+<item>
+<title><code>max_waste</code></title>
+  <p>The threshold of how wide a strip of wasted texels
+            are allowed along the right and bottom textures before
+            they must be sliced to reduce the amount of waste. A
+            negative can be passed to disable slicing.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>A newly created <link xref="Cogl.Texture2DSliced"/>
+              or <code>null</code> on failure and @error will be updated.</p>
+</item>
+</terms>
+
+</page>

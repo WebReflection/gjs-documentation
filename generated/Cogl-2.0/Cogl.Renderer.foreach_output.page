@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="Cogl.Renderer.foreach_output"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Renderer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_renderer_foreach_output</api:name>
+      <api:arg>
+        <api:type>Cogl.OutputCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Renderer.prototype.foreach_output</title>
+  <synopsis><code mime="text/x-gjs">
+function foreach_output(callback: <link xref="Cogl.OutputCallback">Cogl.OutputCallback</link>): void {
+    // Gjs wrapper for cogl_renderer_foreach_output()
+}
+  </code></synopsis>
+  <p>Iterates all known display outputs for the given <code>renderer</code> and
+passes a corresponding <link xref="Cogl.Output"/> pointer to the given <code>callback</code>
+for each one, along with the given <code>user_data</code>.</p>
+  <p>Since 1.14</p>
+<terms>
+<item>
+<title><code>callback</code></title>
+  <p>A <link xref="Cogl.OutputCallback"/> to be called for
+           each display output</p>
+</item>
+</terms>
+
+</page>

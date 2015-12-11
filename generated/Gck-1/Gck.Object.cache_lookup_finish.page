@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gck.Object.cache_lookup_finish"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Object" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.Attributes</api:type>
+      </api:returns>
+      <api:name>gck_object_cache_lookup_finish</api:name>
+      <api:arg>
+        <api:type>Gio.AsyncResult</api:type>
+        <api:name>result</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Object.prototype.cache_lookup_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function cache_lookup_finish(result: <link href="../Gio-2.0/Gio.AsyncResult.html">Gio.AsyncResult</link>): <link xref="Gck.Attributes">Gck.Attributes</link> {
+    // Gjs wrapper for gck_object_cache_lookup_finish()
+}
+  </code></synopsis>
+  <p>Complete an operation to lookup attributes in the cache or retrieve them
+from the object if necessary.</p>
+
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>the asynchrounous result passed to the callback</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the attributes retrieved or <code>null</code> on failure</p>
+</item>
+</terms>
+
+</page>

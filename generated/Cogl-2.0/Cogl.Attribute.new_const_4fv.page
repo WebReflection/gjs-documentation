@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<page id="Cogl.Attribute.new_const_4fv"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Attribute" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Attribute</api:type>
+      </api:returns>
+      <api:name>cogl_attribute_new_const_4fv</api:name>
+      <api:arg>
+        <api:type>Cogl.Context</api:type>
+        <api:name>context</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Attribute.new_const_4fv</title>
+  <synopsis><code mime="text/x-gjs">
+function new_const_4fv(context: <link xref="Cogl.Context">Cogl.Context</link>, name: String, value: Number(gfloat)): <link xref="Cogl.Attribute">Cogl.Attribute</link> {
+    // Gjs wrapper for cogl_attribute_new_const_4fv()
+}
+  </code></synopsis>
+  <p>Creates a new, 4 component, attribute whose value remains
+constant across all the vertices of a primitive without needing to
+duplicate the value for each vertex.</p>  <p>The constants (value[0], value[1], value[2], value[3]) represent a
+4 component float vector which should have a corresponding
+declaration in GLSL code like:</p>  <p>[|
+attribute vec4 name;
+|]</p>  <p>unless one of the built in names "cogl_color_in",
+"cogl_tex_coord0_in or "cogl_tex_coord1_in" etc is being used where
+no explicit GLSL declaration need be made.</p>
+
+<terms>
+<item>
+<title><code>context</code></title>
+  <p>A <link xref="Cogl.Context"/></p>
+</item>
+<item>
+<title><code>name</code></title>
+  <p>The name of the attribute (used to reference it from GLSL)</p>
+</item>
+<item>
+<title><code>value</code></title>
+  <p>A pointer to a 4 component float vector</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>A newly allocated <link xref="Cogl.Attribute"/>
+         representing the given constant vector.</p>
+</item>
+</terms>
+
+</page>

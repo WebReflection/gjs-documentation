@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<page id="Cogl.DepthState.set_range"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.DepthState" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_depth_state_set_range</api:name>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>near_val</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>far_val</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.DepthState.prototype.set_range</title>
+  <synopsis><code mime="text/x-gjs">
+function set_range(near_val: Number(gfloat), far_val: Number(gfloat)): void {
+    // Gjs wrapper for cogl_depth_state_set_range()
+}
+  </code></synopsis>
+  <p>Sets the range to map depth values in normalized device coordinates
+to before writing out to a depth buffer.</p>  <p>After your geometry has be transformed, clipped and had perspective
+division applied placing it in normalized device
+coordinates all depth values between the near and far z clipping
+planes are in the range -1 to 1. Before writing any depth value to
+the depth buffer though the value is mapped into the range [0, 1].</p>  <p>With this function you can change the range which depth values are
+mapped too although the range must still lye within the range [0,
+1].</p>  <p>If your driver does not support this feature (for example you are
+using GLES 1 drivers) then if you don't use the default range
+values you will get an error reported when calling
+cogl_pipeline_set_depth_state (). You can check ahead of time for
+the <link xref="Cogl.FeatureID"/>.ogl_feature_id_depth_range feature with
+<link xref="Cogl.has_feature"/> to know if this function will succeed.</p>  <p>By default normalized device coordinate depth values are mapped to
+the full range of depth buffer values, [0, 1].</p>  <p>NB: this won't directly affect the state of the GPU. You have
+to then set the state on a <link xref="Cogl.Pipeline"/> using
+<link xref="Cogl.Pipeline.set_depth_state"/>.</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>near_val</code></title>
+  <p>The near component of the desired depth range which will be
+clamped to the range [0, 1]</p>
+</item>
+<item>
+<title><code>far_val</code></title>
+  <p>The far component of the desired depth range which will be
+clamped to the range [0, 1]</p>
+</item>
+</terms>
+
+</page>

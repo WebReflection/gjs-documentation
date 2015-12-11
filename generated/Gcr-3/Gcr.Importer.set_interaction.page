@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gcr.Importer.set_interaction"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Importer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gcr_importer_set_interaction</api:name>
+      <api:arg>
+        <api:type>Gio.TlsInteraction</api:type>
+        <api:name>interaction</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.Importer.prototype.set_interaction</title>
+  <synopsis><code mime="text/x-gjs">
+function set_interaction(interaction: <link href="../Gio-2.0/Gio.TlsInteraction.html">Gio.TlsInteraction</link>): void {
+    // Gjs wrapper for gcr_importer_set_interaction()
+}
+  </code></synopsis>
+  <p>Set the interaction used to prompt the user when needed by this
+importer.</p>
+
+<terms>
+<item>
+<title><code>interaction</code></title>
+  <p>the interaction used by the importer</p>
+</item>
+</terms>
+
+</page>

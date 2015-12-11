@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="GWeather.Timezone.get_utc"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Timezone" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GWeather.Timezone</api:type>
+      </api:returns>
+      <api:name>gweather_timezone_get_utc</api:name>
+    </api:function>
+  </info>
+  <title>GWeather.Timezone.get_utc</title>
+  <synopsis><code mime="text/x-gjs">
+function get_utc(): <link xref="GWeather.Timezone">GWeather.Timezone</link> {
+    // Gjs wrapper for gweather_timezone_get_utc()
+}
+  </code></synopsis>
+  <p>Gets the UTC timezone.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link xref="GWeather.Timezone"/> for UTC, or <code>null</code> on error.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<page id="Gck.modules_enumerate_objects"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.Enumerator</api:type>
+      </api:returns>
+      <api:name>gck_modules_enumerate_objects</api:name>
+      <api:arg>
+        <api:type>Array(Gck.Module)</api:type>
+        <api:name>modules</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gck.Attributes</api:type>
+        <api:name>attrs</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gck.SessionOptions</api:type>
+        <api:name>session_options</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.modules_enumerate_objects</title>
+  <synopsis><code mime="text/x-gjs">
+function modules_enumerate_objects(modules: Array(<link xref="Gck.Module">Gck.Module</link>), attrs: <link xref="Gck.Attributes">Gck.Attributes</link>, session_options: <link xref="Gck.SessionOptions">Gck.SessionOptions</link>): <link xref="Gck.Enumerator">Gck.Enumerator</link> {
+    // Gjs wrapper for gck_modules_enumerate_objects()
+}
+  </code></synopsis>
+  <p>Setup an enumerator for listing matching objects on the modules.</p>  <p>This call will not block but will return an enumerator immediately.</p>  <p>If the <code>attrs</code> <link xref="Gck.Attributes"/> is floating, it is consumed.</p>
+
+<terms>
+<item>
+<title><code>modules</code></title>
+  <p>The modules</p>
+</item>
+<item>
+<title><code>attrs</code></title>
+  <p>attributes that the objects must have, or empty for all objects</p>
+</item>
+<item>
+<title><code>session_options</code></title>
+  <p>Options from GckSessionOptions</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>A new enumerator, which should be released
+with g_object_unref().</p>
+</item>
+</terms>
+
+</page>

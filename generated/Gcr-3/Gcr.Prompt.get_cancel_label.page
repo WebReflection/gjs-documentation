@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gcr.Prompt.get_cancel_label"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Prompt" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>gcr_prompt_get_cancel_label</api:name>
+    </api:function>
+  </info>
+  <title>Gcr.Prompt.prototype.get_cancel_label</title>
+  <synopsis><code mime="text/x-gjs">
+function get_cancel_label(): String {
+    // Gjs wrapper for gcr_prompt_get_cancel_label()
+}
+  </code></synopsis>
+  <p>Get the label for the cancel button.</p>  <p>This is the button that results in a <link xref="Gcr.PromptReply"/>.cancel reply
+from the prompt.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a newly allocated string containing the label</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<page id="Cogl.UserDataDestroyCallback"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>Cogl.UserDataDestroyCallback</title>
+  <p>When associating private data with a <link xref="Cogl.Object"/> a callback can be
+given which will be called either if the object is destroyed or if
+<link xref="Cogl.Object.set_user_data"/> is called with NULL user_data for the
+same key.</p>
+
+</page>

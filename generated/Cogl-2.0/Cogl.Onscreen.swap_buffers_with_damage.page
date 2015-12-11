@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<page id="Cogl.Onscreen.swap_buffers_with_damage"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Onscreen" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_onscreen_swap_buffers_with_damage</api:name>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>rectangles</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>n_rectangles</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Onscreen.prototype.swap_buffers_with_damage</title>
+  <synopsis><code mime="text/x-gjs">
+function swap_buffers_with_damage(rectangles: Number(gint), n_rectangles: Number(gint)): void {
+    // Gjs wrapper for cogl_onscreen_swap_buffers_with_damage()
+}
+  </code></synopsis>
+  <p>Swaps the current back buffer being rendered too, to the front for
+display and provides information to any system compositor about
+what regions of the buffer have changed (damage) with respect to
+the last swapped buffer.</p>  <p>This function has the same semantics as
+cogl_framebuffer_swap_buffers() except that it additionally allows
+applications to pass a list of damaged rectangles which may be
+passed on to a compositor so that it can minimize how much of the
+screen is redrawn in response to this applications newly swapped
+front buffer.</p>  <p>For example if your application is only animating a small object in
+the corner of the screen and everything else is remaining static
+then it can help the compositor to know that only the bottom right
+corner of your newly swapped buffer has really changed with respect
+to your previously swapped front buffer.</p>  <p>If <code>n_rectangles</code> is 0 then the whole buffer will implicitly be
+reported as damaged as if <link xref="Cogl.Onscreen.swap_buffers"/> had been
+called.</p>  <p>This function also implicitly discards the contents of the color,
+depth and stencil buffers as if <link xref="Cogl.Framebuffer.discard_buffers"/>
+were used. The significance of the discard is that you should not
+expect to be able to start a new frame that incrementally builds on
+the contents of the previous frame. If you want to perform
+incremental updates to older back buffers then please refer to the
+<link xref="Cogl.Onscreen.get_buffer_age"/> api.</p>  <p>Whenever possible it is recommended that applications use this
+function instead of <link xref="Cogl.Onscreen.swap_buffers"/> to improve
+performance when running under a compositor.</p>  <p>&lt;note&gt;It is highly recommended to use this API in conjunction with
+the <link xref="Cogl.Onscreen.get_buffer_age"/> api so that your application can
+perform incremental rendering based on old back buffers.&lt;/note&gt;</p>
+  <p>Since 1.16</p>
+<terms>
+<item>
+<title><code>rectangles</code></title>
+  <p>An array of integer 4-tuples representing damaged
+             rectangles as (x, y, width, height) tuples.</p>
+</item>
+<item>
+<title><code>n_rectangles</code></title>
+  <p>The number of 4-tuples to be read from <code>rectangles</code></p>
+</item>
+</terms>
+
+</page>

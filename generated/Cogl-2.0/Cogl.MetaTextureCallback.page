@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<page id="Cogl.MetaTextureCallback"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Cogl.MetaTextureCallback</title>
+  <synopsis><code mime="text/x-gjs">
+function onMetaTextureCallback(sub_texture: <link xref="Cogl.Texture">Cogl.Texture</link>, sub_texture_coords: Number(gfloat), meta_coords: Number(gfloat)): void {
+}
+  </code></synopsis>
+  <p>A callback used with <link xref="Cogl.meta_texture_foreach_in_region"/> to
+retrieve details of all the low-level <link xref="Cogl.Texture"/>&lt;!-- --&gt;s that
+make up a given <link xref="Cogl.MetaTexture"/>.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>sub_texture</code></title>
+  <p>A low-level <link xref="Cogl.Texture"/> making up part of a
+              <link xref="Cogl.MetaTexture"/>.</p>
+</item>
+<item>
+<title><code>sub_texture_coords</code></title>
+  <p>A float 4-tuple ordered like
+                     (tx1,ty1,tx2,ty2) defining what region of the
+                     current <code>sub_texture</code> maps to a sub-region of a
+                     <link xref="Cogl.MetaTexture"/>. (tx1,ty1) is the top-left
+                     sub-region coordinate and (tx2,ty2) is the
+                     bottom-right. These are low-level texture
+                     coordinates.</p>
+</item>
+<item>
+<title><code>meta_coords</code></title>
+  <p>A float 4-tuple ordered like (tx1,ty1,tx2,ty2)
+              defining what sub-region of a <link xref="Cogl.MetaTexture"/> this
+              low-level <code>sub_texture</code> maps too. (tx1,ty1) is
+              the top-left sub-region coordinate and (tx2,ty2) is
+              the bottom-right. These are high-level meta-texture
+              coordinates.</p>
+</item>
+</terms>
+
+</page>

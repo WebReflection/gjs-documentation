@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="GWeather.Info.set_location"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Info" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gweather_info_set_location</api:name>
+      <api:arg>
+        <api:type>GWeather.Location</api:type>
+        <api:name>location</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GWeather.Info.prototype.set_location</title>
+  <synopsis><code mime="text/x-gjs">
+function set_location(location: <link xref="GWeather.Location">GWeather.Location</link>): void {
+    // Gjs wrapper for gweather_info_set_location()
+}
+  </code></synopsis>
+  <p>Changes <code>info</code> to report weather for <code>location</code>.
+Note that this will clear any forecast or current conditions from
+<code>info</code>, you must call <link xref="GWeather.Info.update"/> to obtain the new data.</p>
+
+<terms>
+<item>
+<title><code>location</code></title>
+  <p>a location for which weather is desired</p>
+</item>
+</terms>
+
+</page>

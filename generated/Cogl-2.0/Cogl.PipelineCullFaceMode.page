@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="Cogl.PipelineCullFaceMode"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Cogl.PipelineCullFaceMode</title>
+  <p>Specifies which faces should be culled. This can be set on a
+pipeline using <link xref="Cogl.Pipeline.set_cull_face_mode"/>.</p>
+
+<terms>
+<item>
+<title><code>PipelineCullFaceMode.NONE</code></title>
+  <p>Neither face will be
+ culled. This is the default.</p>
+</item>
+<item>
+<title><code>PipelineCullFaceMode.FRONT</code></title>
+  <p>Front faces will be culled.</p>
+</item>
+<item>
+<title><code>PipelineCullFaceMode.BACK</code></title>
+  <p>Back faces will be culled.</p>
+</item>
+<item>
+<title><code>PipelineCullFaceMode.BOTH</code></title>
+  <p>All faces will be culled.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

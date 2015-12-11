@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="Gcr.pkcs11_get_trust_lookup_slots"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(Gck.Slot)</api:type>
+      </api:returns>
+      <api:name>gcr_pkcs11_get_trust_lookup_slots</api:name>
+    </api:function>
+  </info>
+  <title>Gcr.pkcs11_get_trust_lookup_slots</title>
+  <synopsis><code mime="text/x-gjs">
+function pkcs11_get_trust_lookup_slots(): Array(<link href="../Gck-1/Gck.Slot.html">Gck.Slot</link>) {
+    // Gjs wrapper for gcr_pkcs11_get_trust_lookup_slots()
+}
+  </code></synopsis>
+  <p>List all the PKCS\#11 slots that are used by the GCR library for lookup
+of trust assertions. Each slot is a <link href="../Gck-1/Gck.Slot.html">Gck.Slot</link> object.</p>  <p>This will return an empty list if the <link xref="Gcr.pkcs11_initialize"/> function has
+not yet been called.</p>  <p>When done with the list, free it with <link href="../Gck-1/Gck.list_unref_free.html">Gck.list_unref_free</link>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a list of <link href="../Gck-1/Gck.Slot.html">Gck.Slot</link> objects
+         to use for lookup of trust.</p>
+</item>
+</terms>
+
+</page>

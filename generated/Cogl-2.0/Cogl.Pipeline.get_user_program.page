@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.get_user_program"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Handle</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_get_user_program</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.get_user_program</title>
+  <synopsis><code mime="text/x-gjs">
+function get_user_program(): <link xref="Cogl.Handle">Cogl.Handle</link> {
+    // Gjs wrapper for cogl_pipeline_get_user_program()
+}
+  </code></synopsis>
+  <p>Queries what user program has been associated with the given
+<code>pipeline</code> using <link xref="Cogl.Pipeline.set_user_program"/>.</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>The current user program or %COGL_INVALID_HANDLE.</p>
+</item>
+</terms>
+
+</page>

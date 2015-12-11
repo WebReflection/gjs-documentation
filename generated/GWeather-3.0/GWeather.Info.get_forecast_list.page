@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="GWeather.Info.get_forecast_list"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Info" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(GWeather.Info)</api:type>
+      </api:returns>
+      <api:name>gweather_info_get_forecast_list</api:name>
+    </api:function>
+  </info>
+  <title>GWeather.Info.prototype.get_forecast_list</title>
+  <synopsis><code mime="text/x-gjs">
+function get_forecast_list(): Array(<link xref="GWeather.Info">GWeather.Info</link>) {
+    // Gjs wrapper for gweather_info_get_forecast_list()
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>list
+of GWeatherInfo* objects for the forecast.
+The list is owned by the 'info' object thus is alive as long
+as the 'info'. This list is filled only when requested with
+type FORECAST_LIST and if available for given location.
+The 'update' property is the date/time when the forecast info
+is used for.</p>
+</item>
+</terms>
+
+</page>

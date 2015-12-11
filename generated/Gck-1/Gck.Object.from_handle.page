@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<page id="Gck.Object.from_handle"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Object" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.Object</api:type>
+      </api:returns>
+      <api:name>gck_object_from_handle</api:name>
+      <api:arg>
+        <api:type>Gck.Session</api:type>
+        <api:name>session</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gulong)</api:type>
+        <api:name>object_handle</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Object.from_handle</title>
+  <synopsis><code mime="text/x-gjs">
+function from_handle(session: <link xref="Gck.Session">Gck.Session</link>, object_handle: Number(gulong)): <link xref="Gck.Object">Gck.Object</link> {
+    // Gjs wrapper for gck_object_from_handle()
+}
+  </code></synopsis>
+  <p>Initialize a GckObject from a raw PKCS\#11 handle. Normally you would use
+<link xref="Gck.Session.create_object"/> or <link xref="Gck.Session.find_objects"/> to access objects.</p>
+
+<terms>
+<item>
+<title><code>session</code></title>
+  <p>The session through which this object is accessed or created.</p>
+</item>
+<item>
+<title><code>object_handle</code></title>
+  <p>The raw CK_OBJECT_HANDLE of the object.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>The new GckObject. You should use
+              g_object_unref() when done with this object.</p>
+</item>
+</terms>
+
+</page>

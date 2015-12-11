@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gcr.SystemPrompter.get_mode"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.SystemPrompter" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gcr.SystemPrompterMode</api:type>
+      </api:returns>
+      <api:name>gcr_system_prompter_get_mode</api:name>
+    </api:function>
+  </info>
+  <title>Gcr.SystemPrompter.prototype.get_mode</title>
+  <synopsis><code mime="text/x-gjs">
+function get_mode(): <link xref="Gcr.SystemPrompterMode">Gcr.SystemPrompterMode</link> {
+    // Gjs wrapper for gcr_system_prompter_get_mode()
+}
+  </code></synopsis>
+  <p>Get the mode for this prompter.</p>  <p>Most system prompters only display one prompt at a time and therefore
+return <link xref="Gcr.SystemPrompterMode"/>.single.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the prompter mode</p>
+</item>
+</terms>
+
+</page>

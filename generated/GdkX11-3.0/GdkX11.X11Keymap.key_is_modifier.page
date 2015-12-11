@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="GdkX11.X11Keymap.key_is_modifier"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GdkX11.X11Keymap" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gdk_x11_keymap_key_is_modifier</api:name>
+      <api:arg>
+        <api:type>Number(guint)</api:type>
+        <api:name>keycode</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GdkX11.X11Keymap.prototype.key_is_modifier</title>
+  <synopsis><code mime="text/x-gjs">
+function key_is_modifier(keycode: Number(guint)): Boolean {
+    // Gjs wrapper for gdk_x11_keymap_key_is_modifier()
+}
+  </code></synopsis>
+  <p>Determines whether a particular key code represents a key that
+is a modifier. That is, it’s a key that normally just affects
+the keyboard state and the behavior of other keys rather than
+producing a direct effect itself. This is only needed for code
+processing raw X events, since <link href="../Gdk-3.0/Gdk.EventKey.html">Gdk.EventKey</link> directly includes
+an is_modifier field.</p>
+  <p>Since 3.6</p>
+<terms>
+<item>
+<title><code>keycode</code></title>
+  <p>the hardware keycode from a key event</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if the hardware keycode is a modifier key</p>
+</item>
+</terms>
+
+</page>

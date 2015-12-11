@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<page id="GWeather.Info.update"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Info" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gweather_info_update</api:name>
+    </api:function>
+  </info>
+  <title>GWeather.Info.prototype.update</title>
+  <synopsis><code mime="text/x-gjs">
+function update(): void {
+    // Gjs wrapper for gweather_info_update()
+}
+  </code></synopsis>
+  <p>Requests a reload of weather conditions and forecast data from
+enabled network services.
+This call does no synchronous IO: rather, the result is delivered
+by emitting the <link xref="GWeather.Info-updated"/> signal.
+Note that if no network services are enabled, the signal will not
+be emitted. See <link xref="GWeather.Info-enabled-providers"/> for details.</p>
+
+
+</page>

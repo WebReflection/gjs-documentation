@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<page id="Cogl.Matrix.rotate"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Matrix" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_matrix_rotate</api:name>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>angle</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>y</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>z</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Matrix.prototype.rotate</title>
+  <synopsis><code mime="text/x-gjs">
+function rotate(angle: Number(gfloat), x: Number(gfloat), y: Number(gfloat), z: Number(gfloat)): void {
+    // Gjs wrapper for cogl_matrix_rotate()
+}
+  </code></synopsis>
+  <p>Multiplies <code>matrix</code> with a rotation matrix that applies a rotation
+of <code>angle</code> degrees around the specified 3D vector.</p>
+
+<terms>
+<item>
+<title><code>angle</code></title>
+  <p>The angle you want to rotate in degrees</p>
+</item>
+<item>
+<title><code>x</code></title>
+  <p>X component of your rotation vector</p>
+</item>
+<item>
+<title><code>y</code></title>
+  <p>Y component of your rotation vector</p>
+</item>
+<item>
+<title><code>z</code></title>
+  <p>Z component of your rotation vector</p>
+</item>
+</terms>
+
+</page>

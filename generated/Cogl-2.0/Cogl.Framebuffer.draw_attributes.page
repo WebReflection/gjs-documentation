@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<page id="Cogl.Framebuffer.draw_attributes"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Framebuffer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_framebuffer_draw_attributes</api:name>
+      <api:arg>
+        <api:type>Cogl.Pipeline</api:type>
+        <api:name>pipeline</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.VerticesMode</api:type>
+        <api:name>mode</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>first_vertex</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>n_vertices</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.Attribute</api:type>
+        <api:name>attributes</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>n_attributes</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Framebuffer.prototype.draw_attributes</title>
+  <synopsis><code mime="text/x-gjs">
+function draw_attributes(pipeline: <link xref="Cogl.Pipeline">Cogl.Pipeline</link>, mode: <link xref="Cogl.VerticesMode">Cogl.VerticesMode</link>, first_vertex: Number(gint), n_vertices: Number(gint), attributes: <link xref="Cogl.Attribute">Cogl.Attribute</link>, n_attributes: Number(gint)): void {
+    // Gjs wrapper for cogl_framebuffer_draw_attributes()
+}
+  </code></synopsis>
+  <p>First defines a geometry primitive by grouping a set of vertex <code>attributes</code>;
+specifying a <code>first_vertex</code>; a number of vertices (<code>n_vertices</code>) and
+specifying  what kind of topology the vertices have via <code>mode</code>.</p>  <p>Then the function draws the given @primitive geometry to the specified
+destination <code>framebuffer</code> using the graphics processing pipeline described by
+<code>pipeline</code>.</p>  <p>The list of <link xref="Cogl.Attribute"/>&lt;!-- --&gt;s define the attributes of the vertices to
+be drawn, such as positions, colors and normals and the number of attributes
+is given as <code>n_attributes</code>.</p>  <p>This drawing api doesn't support high-level meta texture types such
+as <link xref="Cogl.Texture2DSliced"/> so it is the user's responsibility to
+ensure that only low-level textures that can be directly sampled by
+a GPU such as <link xref="Cogl.Texture2D"/>, <link xref="Cogl.TextureRectangle"/> or <link xref="Cogl.Texture3D"/>
+are associated with layers of the given <code>pipeline</code>.</p>  <p>&lt;note&gt;This api doesn't support any of the legacy global state options such
+as cogl_set_depth_test_enabled(), cogl_set_backface_culling_enabled() or
+cogl_program_use()&lt;/note&gt;</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>pipeline</code></title>
+  <p>A <link xref="Cogl.Pipeline"/> state object</p>
+</item>
+<item>
+<title><code>mode</code></title>
+  <p>The <link xref="Cogl.VerticesMode"/> defining the topology of vertices</p>
+</item>
+<item>
+<title><code>first_vertex</code></title>
+  <p>The vertex offset within the given attributes to draw from</p>
+</item>
+<item>
+<title><code>n_vertices</code></title>
+  <p>The number of vertices to draw from the given attributes</p>
+</item>
+<item>
+<title><code>attributes</code></title>
+  <p>An array of pointers to <link xref="Cogl.Attribute"/>&lt;-- --&gt;s defining vertex
+             geometry</p>
+</item>
+<item>
+<title><code>n_attributes</code></title>
+  <p>The number of attributes in the <code>attributes</code> array.</p>
+</item>
+</terms>
+
+</page>

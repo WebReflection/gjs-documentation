@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="Gck.Builder.set_all"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Builder" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gck_builder_set_all</api:name>
+      <api:arg>
+        <api:type>Gck.Attributes</api:type>
+        <api:name>attrs</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Builder.prototype.set_all</title>
+  <synopsis><code mime="text/x-gjs">
+function set_all(attrs: <link xref="Gck.Attributes">Gck.Attributes</link>): void {
+    // Gjs wrapper for gck_builder_set_all()
+}
+  </code></synopsis>
+  <p>Set all the <code>attrs</code> attributes to the builder. If any attributes with the
+same types are already present in the builder, then those attributes are
+changed to the new values.</p>  <p>As an optimization, the attribute memory values are automatically shared
+between the attributes and the builder.</p>
+
+<terms>
+<item>
+<title><code>attrs</code></title>
+  <p>the attributes to set</p>
+</item>
+</terms>
+
+</page>

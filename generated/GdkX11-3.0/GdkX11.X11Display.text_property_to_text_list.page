@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<page id="GdkX11.X11Display.text_property_to_text_list"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GdkX11.X11Display" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gint)</api:type>
+      </api:returns>
+      <api:name>gdk_x11_display_text_property_to_text_list</api:name>
+      <api:arg>
+        <api:type>Gdk.Atom</api:type>
+        <api:name>encoding</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>format</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint8)</api:type>
+        <api:name>text</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>length</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>list</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GdkX11.X11Display.prototype.text_property_to_text_list</title>
+  <synopsis><code mime="text/x-gjs">
+function text_property_to_text_list(encoding: <link href="../Gdk-3.0/Gdk.Atom.html">Gdk.Atom</link>, format: Number(gint), text: Number(guint8), length: Number(gint), list: String): Number(gint) {
+    // Gjs wrapper for gdk_x11_display_text_property_to_text_list()
+}
+  </code></synopsis>
+  <p>Convert a text string from the encoding as it is stored
+in a property into an array of strings in the encoding of
+the current locale. (The elements of the array represent the
+nul-separated elements of the original text string.)</p>
+  <p>Since 2.24</p>
+<terms>
+<item>
+<title><code>encoding</code></title>
+  <p>an atom representing the encoding. The most
+   common values for this are STRING, or COMPOUND_TEXT.
+   This is value used as the type for the property</p>
+</item>
+<item>
+<title><code>format</code></title>
+  <p>the format of the property</p>
+</item>
+<item>
+<title><code>text</code></title>
+  <p>The text data</p>
+</item>
+<item>
+<title><code>length</code></title>
+  <p>The number of items to transform</p>
+</item>
+<item>
+<title><code>list</code></title>
+  <p>location to store an  array of strings in
+   the encoding of the current locale. This array should be
+   freed using gdk_free_text_list().</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the number of strings stored in list, or 0,
+    if the conversion failed</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<page id="Cogl.Framebuffer.clear"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Framebuffer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_framebuffer_clear</api:name>
+      <api:arg>
+        <api:type>Number(gulong)</api:type>
+        <api:name>buffers</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.Color</api:type>
+        <api:name>color</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Framebuffer.prototype.clear</title>
+  <synopsis><code mime="text/x-gjs">
+function clear(buffers: Number(gulong), color: <link xref="Cogl.Color">Cogl.Color</link>): void {
+    // Gjs wrapper for cogl_framebuffer_clear()
+}
+  </code></synopsis>
+  <p>Clears all the auxiliary buffers identified in the <code>buffers</code> mask, and if
+that includes the color buffer then the specified <code>color</code> is used.</p>
+  <p>Since 1.8</p>
+<terms>
+<item>
+<title><code>buffers</code></title>
+  <p>A mask of <link xref="Cogl.BufferBit"/>&lt;!-- --&gt;'s identifying which auxiliary
+  buffers to clear</p>
+</item>
+<item>
+<title><code>color</code></title>
+  <p>The color to clear the color buffer too if specified in
+        <code>buffers</code>.</p>
+</item>
+</terms>
+
+</page>

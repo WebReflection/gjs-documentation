@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Cogl.OnscreenTemplate.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.OnscreenTemplate" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.OnscreenTemplate</api:type>
+      </api:returns>
+      <api:name>cogl_onscreen_template_new</api:name>
+      <api:arg>
+        <api:type>Cogl.SwapChain</api:type>
+        <api:name>swap_chain</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.OnscreenTemplate.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(swap_chain: <link xref="Cogl.SwapChain">Cogl.SwapChain</link>): <link xref="Cogl.OnscreenTemplate">Cogl.OnscreenTemplate</link> {
+    // Gjs wrapper for cogl_onscreen_template_new()
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>swap_chain</code></title>
+
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Cogl.Color.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Color" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Color</api:type>
+      </api:returns>
+      <api:name>cogl_color_new</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Color.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(): <link xref="Cogl.Color">Cogl.Color</link> {
+    // Gjs wrapper for cogl_color_new()
+}
+  </code></synopsis>
+  <p>Creates a new (empty) color</p>
+  <p>Since 1.0</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a newly-allocated <link xref="Cogl.Color"/>. Use <link xref="Cogl.Color.free"/>
+  to free the allocated resources</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="Gcr.Prompt.confirm_finish"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Prompt" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gcr.PromptReply</api:type>
+      </api:returns>
+      <api:name>gcr_prompt_confirm_finish</api:name>
+      <api:arg>
+        <api:type>Gio.AsyncResult</api:type>
+        <api:name>result</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.Prompt.prototype.confirm_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function confirm_finish(result: <link href="../Gio-2.0/Gio.AsyncResult.html">Gio.AsyncResult</link>): <link xref="Gcr.PromptReply">Gcr.PromptReply</link> {
+    // Gjs wrapper for gcr_prompt_confirm_finish()
+}
+  </code></synopsis>
+  <p>Complete an operation to prompt for confirmation.</p>  <p><link xref="Gcr.PromptReply"/>.continue will be returned if the user confirms the prompt. The
+return value will also be <link xref="Gcr.PromptReply"/>.cancel if the user cancels or if
+an error occurs. Check the @error argument to tell the difference.</p>
+
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>asynchronous result passed to callback</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the reply from the prompt</p>
+</item>
+</terms>
+
+</page>

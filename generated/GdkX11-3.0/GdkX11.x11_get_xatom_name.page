@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="GdkX11.x11_get_xatom_name"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>gdk_x11_get_xatom_name</api:name>
+      <api:arg>
+        <api:type>xlib.Atom</api:type>
+        <api:name>xatom</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GdkX11.x11_get_xatom_name</title>
+  <synopsis><code mime="text/x-gjs">
+function x11_get_xatom_name(xatom: <link href="../xlib-2.0/xlib.Atom.html">xlib.Atom</link>): String {
+    // Gjs wrapper for gdk_x11_get_xatom_name()
+}
+  </code></synopsis>
+  <p>Returns the name of an X atom for GDK’s default display. This
+function is meant mainly for debugging, so for convenience, unlike
+XAtomName() and gdk_atom_name(), the result
+doesn’t need to be freed. Also, this function will never return <code>null</code>,
+even if <code>xatom</code> is invalid.</p>
+
+<terms>
+<item>
+<title><code>xatom</code></title>
+  <p>an X atom for GDK’s default display</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>name of the X atom; this string is owned by GTK+,
+  so it shouldn’t be modifed or freed.</p>
+</item>
+</terms>
+
+</page>

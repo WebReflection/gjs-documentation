@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="GdkX11.X11Window.get_xid"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GdkX11.X11Window" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>xlib.Window</api:type>
+      </api:returns>
+      <api:name>gdk_x11_window_get_xid</api:name>
+    </api:function>
+  </info>
+  <title>GdkX11.X11Window.prototype.get_xid</title>
+  <synopsis><code mime="text/x-gjs">
+function get_xid(): <link href="../xlib-2.0/xlib.Window.html">xlib.Window</link> {
+    // Gjs wrapper for gdk_x11_window_get_xid()
+}
+  </code></synopsis>
+  <p>Returns the X resource (window) belonging to a <link href="../Gdk-3.0/Gdk.Window.html">Gdk.Window</link>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the ID of @drawable’s X resource.</p>
+</item>
+</terms>
+
+</page>

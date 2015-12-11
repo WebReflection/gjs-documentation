@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="Gck.UriData"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>Gck.UriData</title>
+  <synopsis><code>
+const Gck = imports.gi.Gck;
+
+let uriData = new Gck.UriData({
+    <link xref='Gck.UriData-any_unrecognized'>any_unrecognized</link>: value
+});
+  </code></synopsis>
+  <p>Information about the contents of a PKCS\#11 URI. Various fields may be <code>null</code>
+depending on the context that the URI was parsed for.</p>  <p>Since PKCS\#11 URIs represent a set which results from the intersections of
+all of the URI parts, if @any_recognized is set to <code>true</code> then usually the URI
+should be treated as not matching anything.</p>
+
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gck.Session.get_slot"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Session" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.Slot</api:type>
+      </api:returns>
+      <api:name>gck_session_get_slot</api:name>
+    </api:function>
+  </info>
+  <title>Gck.Session.prototype.get_slot</title>
+  <synopsis><code mime="text/x-gjs">
+function get_slot(): <link xref="Gck.Slot">Gck.Slot</link> {
+    // Gjs wrapper for gck_session_get_slot()
+}
+  </code></synopsis>
+  <p>Get the PKCS\#11 slot to which this session belongs.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>The slot, which should be unreffed after use.</p>
+</item>
+</terms>
+
+</page>

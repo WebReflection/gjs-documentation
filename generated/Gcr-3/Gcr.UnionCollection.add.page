@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Gcr.UnionCollection.add"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.UnionCollection" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gcr_union_collection_add</api:name>
+      <api:arg>
+        <api:type>Gcr.Collection</api:type>
+        <api:name>collection</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.UnionCollection.prototype.add</title>
+  <synopsis><code mime="text/x-gjs">
+function add(collection: <link xref="Gcr.Collection">Gcr.Collection</link>): void {
+    // Gjs wrapper for gcr_union_collection_add()
+}
+  </code></synopsis>
+  <p>Add objects from this collection to the union</p>
+
+<terms>
+<item>
+<title><code>collection</code></title>
+  <p>The collection whose objects to add</p>
+</item>
+</terms>
+
+</page>

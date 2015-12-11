@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="Cogl.error_copy"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.Error</api:type>
+      </api:returns>
+      <api:name>cogl_error_copy</api:name>
+      <api:arg>
+        <api:type>GLib.Error</api:type>
+        <api:name>error</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.error_copy</title>
+  <synopsis><code mime="text/x-gjs">
+function error_copy(error: <link href="../GLib-2.0/GLib.Error.html">GLib.Error</link>): <link href="../GLib-2.0/GLib.Error.html">GLib.Error</link> {
+    // Gjs wrapper for cogl_error_copy()
+}
+  </code></synopsis>
+  <p>Makes a copy of <code>error</code> which can later be freed using
+<link xref="Cogl.error_free"/>.</p>
+
+<terms>
+<item>
+<title><code>error</code></title>
+  <p>A #CoglError thrown by the Cogl api</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>A newly allocated #CoglError initialized to match the
+              contents of <code>error</code>.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<page id="Gck.Session.find_handles_async"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Session" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gck_session_find_handles_async</api:name>
+      <api:arg>
+        <api:type>Gck.Attributes</api:type>
+        <api:name>match</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.AsyncReadyCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Session.prototype.find_handles_async</title>
+  <synopsis><code mime="text/x-gjs">
+function find_handles_async(match: <link xref="Gck.Attributes">Gck.Attributes</link>, cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>, callback: <link href="../Gio-2.0/Gio.AsyncReadyCallback.html">Gio.AsyncReadyCallback</link>): void {
+    // Gjs wrapper for gck_session_find_handles_async()
+}
+  </code></synopsis>
+  <p>Find the objects matching the passed attributes. This call will
+return immediately and complete asynchronously.</p>  <p>If the <code>match</code> <link xref="Gck.Attributes"/> is floating, it is consumed.</p>
+
+<terms>
+<item>
+<title><code>match</code></title>
+  <p>the attributes to match against the objects</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional cancellation object or <code>null</code></p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>called when the operation completes</p>
+</item>
+</terms>
+
+</page>

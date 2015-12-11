@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<page id="Gcr.CertificateRequest.prepare"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.CertificateRequest" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gcr.CertificateRequest</api:type>
+      </api:returns>
+      <api:name>gcr_certificate_request_prepare</api:name>
+      <api:arg>
+        <api:type>Gcr.CertificateRequestFormat</api:type>
+        <api:name>format</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gck.Object</api:type>
+        <api:name>private_key</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.CertificateRequest.prepare</title>
+  <synopsis><code mime="text/x-gjs">
+function prepare(format: <link xref="Gcr.CertificateRequestFormat">Gcr.CertificateRequestFormat</link>, private_key: <link href="../Gck-1/Gck.Object.html">Gck.Object</link>): <link xref="Gcr.CertificateRequest">Gcr.CertificateRequest</link> {
+    // Gjs wrapper for gcr_certificate_request_prepare()
+}
+  </code></synopsis>
+  <p>Create a new certificate request, in the given format for the private key.</p>
+
+<terms>
+<item>
+<title><code>format</code></title>
+  <p>the format for the certificate request</p>
+</item>
+<item>
+<title><code>private_key</code></title>
+  <p>the private key the the certificate is being requested for</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a new <link xref="Gcr.Certificate"/> request</p>
+</item>
+</terms>
+
+</page>

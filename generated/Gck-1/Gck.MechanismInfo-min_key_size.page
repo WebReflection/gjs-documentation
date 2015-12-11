@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gck.MechanismInfo-min_key_size"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.MechanismInfo" group="field" type="guide"/>
+    <title type="link" role="topic">min_key_size</title>
+  </info>
+  <title>Gck.MechanismInfo.min_key_size</title>
+  <synopsis><code mime="text/x-gjs">
+MechanismInfo.min_key_size: Number(gulong) (Read / Write)
+  </code></synopsis>
+  <p>The minimum key size that can be used with this mechanism.</p>
+
+</page>

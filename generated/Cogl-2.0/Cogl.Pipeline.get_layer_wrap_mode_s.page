@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.get_layer_wrap_mode_s"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.PipelineWrapMode</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_get_layer_wrap_mode_s</api:name>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>layer_index</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.get_layer_wrap_mode_s</title>
+  <synopsis><code mime="text/x-gjs">
+function get_layer_wrap_mode_s(layer_index: Number(gint)): <link xref="Cogl.PipelineWrapMode">Cogl.PipelineWrapMode</link> {
+    // Gjs wrapper for cogl_pipeline_get_layer_wrap_mode_s()
+}
+  </code></synopsis>
+  <p>Returns the wrap mode for the 's' coordinate of texture lookups on this
+layer.</p>
+  <p>Since 1.6</p>
+<terms>
+<item>
+<title><code>layer_index</code></title>
+  <p>the layer number to change.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the wrap mode for the 's' coordinate of texture lookups on
+this layer.</p>
+</item>
+</terms>
+
+</page>

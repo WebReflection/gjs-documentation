@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<page id="Cogl.glib_renderer_source_new"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.Source</api:type>
+      </api:returns>
+      <api:name>cogl_glib_renderer_source_new</api:name>
+      <api:arg>
+        <api:type>Cogl.Renderer</api:type>
+        <api:name>renderer</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>priority</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.glib_renderer_source_new</title>
+  <synopsis><code mime="text/x-gjs">
+function glib_renderer_source_new(renderer: <link xref="Cogl.Renderer">Cogl.Renderer</link>, priority: Number(gint)): <link href="../GLib-2.0/GLib.Source.html">GLib.Source</link> {
+    // Gjs wrapper for cogl_glib_renderer_source_new()
+}
+  </code></synopsis>
+  <p>Creates a <link href="../GLib-2.0/GLib.Source.html">GLib.Source</link> which handles Cogl's internal system event
+processing. This can be used as a convenience instead of
+<link xref="Cogl.poll_renderer_get_info"/> and <link xref="Cogl.poll_renderer_dispatch"/> in
+applications that are already using the GLib main loop. After this
+is called the <link href="../GLib-2.0/GLib.Source.html">GLib.Source</link> should be attached to the main loop using
+g_source_attach().</p>
+  <p>Since 1.16</p>
+<terms>
+<item>
+<title><code>renderer</code></title>
+  <p>A <link xref="Cogl.Renderer"/></p>
+</item>
+<item>
+<title><code>priority</code></title>
+  <p>The priority of the <link href="../GLib-2.0/GLib.Source.html">GLib.Source</link></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a new <link href="../GLib-2.0/GLib.Source.html">GLib.Source</link></p>
+</item>
+</terms>
+
+</page>

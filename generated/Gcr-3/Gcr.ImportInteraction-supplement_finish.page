@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<page id="Gcr.ImportInteraction-supplement_finish"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.ImportInteraction" group="vfunc" type="guide"/>
+  </info>
+  <title>Gcr.ImportInteraction::supplement_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_supplement_finish(result: <link href="../Gio-2.0/Gio.AsyncResult.html">Gio.AsyncResult</link>): <link href="../Gio-2.0/Gio.TlsInteractionResult.html">Gio.TlsInteractionResult</link> {
+}
+  </code></synopsis>
+  <p>Complete operation to asynchronously supplement attributes before import.</p>  <p>If the user or cancellable cancels the operation the error should be set
+with %G_IO_ERROR_CANCELLED.</p>
+
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>the asynchronous result</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>%G_TLS_INTERACTION_HANDLED if successful or %G_TLS_INTERACTION_FAILED</p>
+</item>
+</terms>
+
+</page>

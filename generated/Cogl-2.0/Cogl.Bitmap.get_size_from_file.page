@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<page id="Cogl.Bitmap.get_size_from_file"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Bitmap" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_bitmap_get_size_from_file</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>filename</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Bitmap.get_size_from_file</title>
+  <synopsis><code mime="text/x-gjs">
+function get_size_from_file(filename: String): [return_value: <link xref="Cogl.Bool">Cogl.Bool</link>, width: Number(gint), height: Number(gint)] {
+    // Gjs wrapper for cogl_bitmap_get_size_from_file()
+}
+  </code></synopsis>
+  <p>Parses an image file enough to extract the width and height
+of the bitmap.</p>
+  <p>Since 1.0</p>
+<terms>
+<item>
+<title><code>filename</code></title>
+  <p>the file to check</p>
+</item>
+<item>
+<title><code>return_value</code></title>
+  <p><code>true</code> if the image was successfully parsed</p>
+</item>
+<item>
+<title><code>width</code></title>
+  <p>return location for the bitmap width, or <code>null</code></p>
+</item>
+<item>
+<title><code>height</code></title>
+  <p>return location for the bitmap height, or <code>null</code></p>
+</item>
+</terms>
+
+</page>

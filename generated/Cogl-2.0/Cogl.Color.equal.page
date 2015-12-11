@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<page id="Cogl.Color.equal"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Color" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_color_equal</api:name>
+      <api:arg>
+        <api:type>void</api:type>
+        <api:name>v1</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>void</api:type>
+        <api:name>v2</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Color.equal</title>
+  <synopsis><code mime="text/x-gjs">
+function equal(v1: void, v2: void): <link xref="Cogl.Bool">Cogl.Bool</link> {
+    // Gjs wrapper for cogl_color_equal()
+}
+  </code></synopsis>
+  <p>Compares two <link xref="Cogl.Color"/>&lt;!-- --&gt;s and checks if they are the same.</p>  <p>This function can be passed to g_hash_table_new() as the @key_equal_func
+parameter, when using <link xref="Cogl.Color"/>&lt;!-- --&gt;s as keys in a <link href="../GLib-2.0/GLib.HashTable.html">GLib.HashTable</link>.</p>
+  <p>Since 1.0</p>
+<terms>
+<item>
+<title><code>v1</code></title>
+  <p>a <link xref="Cogl.Color"/></p>
+</item>
+<item>
+<title><code>v2</code></title>
+  <p>a <link xref="Cogl.Color"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if the two colors are the same.</p>
+</item>
+</terms>
+
+</page>

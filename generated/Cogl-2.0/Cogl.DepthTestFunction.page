@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<page id="Cogl.DepthTestFunction"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Cogl.DepthTestFunction</title>
+  <p>When using depth testing one of these functions is used to compare
+the depth of an incoming fragment against the depth value currently
+stored in the depth buffer. The function is changed using
+<link xref="Cogl.DepthState.set_test_function"/>.</p>  <p>The test is only done when depth testing is explicitly enabled. (See
+<link xref="Cogl.DepthState.set_test_enabled"/>)</p>
+
+<terms>
+<item>
+<title><code>DepthTestFunction.NEVER</code></title>
+  <p>Never passes.</p>
+</item>
+<item>
+<title><code>DepthTestFunction.LESS</code></title>
+  <p>Passes if the fragment's depth
+value is less than the value currently in the depth buffer.</p>
+</item>
+<item>
+<title><code>DepthTestFunction.EQUAL</code></title>
+  <p>Passes if the fragment's depth
+value is equal to the value currently in the depth buffer.</p>
+</item>
+<item>
+<title><code>DepthTestFunction.LEQUAL</code></title>
+  <p>Passes if the fragment's depth
+value is less or equal to the value currently in the depth buffer.</p>
+</item>
+<item>
+<title><code>DepthTestFunction.GREATER</code></title>
+  <p>Passes if the fragment's depth
+value is greater than the value currently in the depth buffer.</p>
+</item>
+<item>
+<title><code>DepthTestFunction.NOTEQUAL</code></title>
+  <p>Passes if the fragment's depth
+value is not equal to the value currently in the depth buffer.</p>
+</item>
+<item>
+<title><code>DepthTestFunction.GEQUAL</code></title>
+  <p>Passes if the fragment's depth
+value greater than or equal to the value currently in the depth buffer.</p>
+</item>
+<item>
+<title><code>DepthTestFunction.ALWAYS</code></title>
+  <p>Always passes.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.add_snippet"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_add_snippet</api:name>
+      <api:arg>
+        <api:type>Cogl.Snippet</api:type>
+        <api:name>snippet</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.add_snippet</title>
+  <synopsis><code mime="text/x-gjs">
+function add_snippet(snippet: <link xref="Cogl.Snippet">Cogl.Snippet</link>): void {
+    // Gjs wrapper for cogl_pipeline_add_snippet()
+}
+  </code></synopsis>
+  <p>Adds a shader snippet to <code>pipeline</code>. The snippet will wrap around or
+replace some part of the pipeline as defined by the hook point in
+<code>snippet</code>. Note that some hook points are specific to a layer and
+must be added with <link xref="Cogl.Pipeline.add_layer_snippet"/> instead.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>snippet</code></title>
+  <p>The <link xref="Cogl.Snippet"/> to add to the vertex processing hook</p>
+</item>
+</terms>
+
+</page>

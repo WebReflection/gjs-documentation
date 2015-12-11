@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gcr.SystemPrompt.open_finish"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.SystemPrompt" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gcr.SystemPrompt</api:type>
+      </api:returns>
+      <api:name>gcr_system_prompt_open_finish</api:name>
+      <api:arg>
+        <api:type>Gio.AsyncResult</api:type>
+        <api:name>result</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.SystemPrompt.open_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function open_finish(result: <link href="../Gio-2.0/Gio.AsyncResult.html">Gio.AsyncResult</link>): <link xref="Gcr.SystemPrompt">Gcr.SystemPrompt</link> {
+    // Gjs wrapper for gcr_system_prompt_open_finish()
+}
+  </code></synopsis>
+  <p>Complete an operation to asynchronously open a system prompt.</p>
+
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>the asynchronous result</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the prompt, or <code>null</code> if
+         prompt could not be opened</p>
+</item>
+</terms>
+
+</page>

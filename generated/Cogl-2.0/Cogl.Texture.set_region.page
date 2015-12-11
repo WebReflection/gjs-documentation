@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<page id="Cogl.Texture.set_region"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Texture" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_texture_set_region</api:name>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>src_x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>src_y</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>dst_x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>dst_y</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint)</api:type>
+        <api:name>dst_width</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint)</api:type>
+        <api:name>dst_height</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>width</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>height</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.PixelFormat</api:type>
+        <api:name>format</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint)</api:type>
+        <api:name>rowstride</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint8)</api:type>
+        <api:name>data</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Texture.prototype.set_region</title>
+  <synopsis><code mime="text/x-gjs">
+function set_region(src_x: Number(gint), src_y: Number(gint), dst_x: Number(gint), dst_y: Number(gint), dst_width: Number(guint), dst_height: Number(guint), width: Number(gint), height: Number(gint), format: <link xref="Cogl.PixelFormat">Cogl.PixelFormat</link>, rowstride: Number(guint), data: Number(guint8)): <link xref="Cogl.Bool">Cogl.Bool</link> {
+    // Gjs wrapper for cogl_texture_set_region()
+}
+  </code></synopsis>
+  <p>Sets the pixels in a rectangular subregion of <code>texture</code> from an in-memory
+buffer containing pixel data.</p>  <p>&lt;note&gt;The region set can't be larger than the source <code>data</code>&lt;/note&gt;</p>
+
+<terms>
+<item>
+<title><code>src_x</code></title>
+  <p>upper left coordinate to use from source data.</p>
+</item>
+<item>
+<title><code>src_y</code></title>
+  <p>upper left coordinate to use from source data.</p>
+</item>
+<item>
+<title><code>dst_x</code></title>
+  <p>upper left destination horizontal coordinate.</p>
+</item>
+<item>
+<title><code>dst_y</code></title>
+  <p>upper left destination vertical coordinate.</p>
+</item>
+<item>
+<title><code>dst_width</code></title>
+  <p>width of destination region to write. (Must be less
+  than or equal to <code>width</code>)</p>
+</item>
+<item>
+<title><code>dst_height</code></title>
+  <p>height of destination region to write. (Must be less
+  than or equal to <code>height</code>)</p>
+</item>
+<item>
+<title><code>width</code></title>
+  <p>width of source data buffer.</p>
+</item>
+<item>
+<title><code>height</code></title>
+  <p>height of source data buffer.</p>
+</item>
+<item>
+<title><code>format</code></title>
+  <p>the <link xref="Cogl.PixelFormat"/> used in the source buffer.</p>
+</item>
+<item>
+<title><code>rowstride</code></title>
+  <p>rowstride of source buffer (computed from width if none
+specified)</p>
+</item>
+<item>
+<title><code>data</code></title>
+  <p>the actual pixel data.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if the subregion upload was successful, and
+  <code>false</code> otherwise</p>
+</item>
+</terms>
+
+</page>

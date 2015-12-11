@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<page id="Cogl.MatrixStack.push"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.MatrixStack" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_matrix_stack_push</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.MatrixStack.prototype.push</title>
+  <synopsis><code mime="text/x-gjs">
+function push(): void {
+    // Gjs wrapper for cogl_matrix_stack_push()
+}
+  </code></synopsis>
+  <p>Saves the current transform and starts a new transform that derives
+from the current transform.</p>  <p>This is usually called while traversing a scenegraph whenever you
+traverse one level deeper. <link xref="Cogl.MatrixStack.pop"/> can then be
+called when going back up one layer to restore the previous
+transform of an ancestor.</p>
+
+
+</page>

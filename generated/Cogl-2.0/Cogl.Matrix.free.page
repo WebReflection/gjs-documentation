@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="Cogl.Matrix.free"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Matrix" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_matrix_free</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Matrix.prototype.free</title>
+  <synopsis><code mime="text/x-gjs">
+function free(): void {
+    // Gjs wrapper for cogl_matrix_free()
+}
+  </code></synopsis>
+  <p>Frees a <link xref="Cogl.Matrix"/> that was previously allocated via a call to
+<link xref="Cogl.Matrix.copy"/>.</p>
+  <p>Since 1.6</p>
+
+</page>

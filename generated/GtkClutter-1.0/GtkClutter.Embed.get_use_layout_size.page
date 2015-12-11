@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="GtkClutter.Embed.get_use_layout_size"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GtkClutter.Embed" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gtk_clutter_embed_get_use_layout_size</api:name>
+    </api:function>
+  </info>
+  <title>GtkClutter.Embed.prototype.get_use_layout_size</title>
+  <synopsis><code mime="text/x-gjs">
+function get_use_layout_size(): Boolean {
+    // Gjs wrapper for gtk_clutter_embed_get_use_layout_size()
+}
+  </code></synopsis>
+  <p>Retrieves whether the embedding uses the layout size, see
+<link xref="GtkClutter.Embed.set_use_layout_size"/> for details.</p>
+  <p>Since 1.4</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if reporting stage size as widget size, <code>false</code> otherwise.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page id="Gtk.Callback"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Gtk.Callback</title>
+  <synopsis><code mime="text/x-gjs">
+function onCallback(widget: <link xref="Gtk.Widget">Gtk.Widget</link>): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>widget</code></title>
+
+</item>
+</terms>
+
+</page>

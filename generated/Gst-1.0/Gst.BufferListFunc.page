@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gst.BufferListFunc"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Gst.BufferListFunc</title>
+  <synopsis><code mime="text/x-gjs">
+function onBufferListFunc(idx: Number(guint)): [ok: Boolean, buffer: <link xref="Gst.Buffer">Gst.Buffer</link>] {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>idx</code></title>
+
+</item>
+<item>
+<title><code>ok</code></title>
+
+</item>
+<item>
+<title><code>buffer</code></title>
+
+</item>
+</terms>
+
+</page>

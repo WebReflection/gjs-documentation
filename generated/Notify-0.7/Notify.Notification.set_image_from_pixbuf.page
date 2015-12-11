@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Notify.Notification.set_image_from_pixbuf"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Notify.Notification" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>notify_notification_set_image_from_pixbuf</api:name>
+      <api:arg>
+        <api:type>GdkPixbuf.Pixbuf</api:type>
+        <api:name>pixbuf</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Notify.Notification.prototype.set_image_from_pixbuf</title>
+  <synopsis><code mime="text/x-gjs">
+function set_image_from_pixbuf(pixbuf: <link href="../GdkPixbuf-2.0/GdkPixbuf.Pixbuf.html">GdkPixbuf.Pixbuf</link>): void {
+    // Gjs wrapper for notify_notification_set_image_from_pixbuf()
+}
+  </code></synopsis>
+  <p>Sets the image in the notification from a <link href="../GdkPixbuf-2.0/GdkPixbuf.Pixbuf.html">GdkPixbuf.Pixbuf</link>.</p>
+
+<terms>
+<item>
+<title><code>pixbuf</code></title>
+  <p>The image.</p>
+</item>
+</terms>
+
+</page>

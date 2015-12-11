@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="Gcr.CertificateRequest.encode"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.CertificateRequest" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>ByteArray</api:type>
+      </api:returns>
+      <api:name>gcr_certificate_request_encode</api:name>
+      <api:arg>
+        <api:type>Boolean</api:type>
+        <api:name>textual</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.CertificateRequest.prototype.encode</title>
+  <synopsis><code mime="text/x-gjs">
+function encode(textual: Boolean): [return_value: ByteArray, length: Number(gsize)] {
+    // Gjs wrapper for gcr_certificate_request_encode()
+}
+  </code></synopsis>
+  <p>Encode the certificate request. It must have been completed with
+<link xref="Gcr.CertificateRequest.complete"/> or <link xref="Gcr.CertificateRequest.complete_async"/></p>  <p>If <code>textual</code> is <code>false</code>, the output is a DER encoded certificate request.</p>  <p>If <code>textual</code> is <code>true</code>, the output is encoded as text. For PKCS\#10 requests this
+is done using the OpenSSL style PEM encoding.</p>
+
+<terms>
+<item>
+<title><code>textual</code></title>
+  <p>whether to encode output as text</p>
+</item>
+<item>
+<title><code>return_value</code></title>
+  <p>the encoded certificate request</p>
+</item>
+<item>
+<title><code>length</code></title>
+  <p>location to place length of returned data</p>
+</item>
+</terms>
+
+</page>

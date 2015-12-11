@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<page id="Cogl.MatrixEntry"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>Cogl.MatrixEntry</title>
+  <synopsis><code>
+const Cogl = imports.gi.Cogl;
+
+let matrixEntry = new Cogl.MatrixEntry();
+  </code></synopsis>
+  <p>Represents a single immutable transformation that was retrieved
+from a <link xref="Cogl.MatrixStack"/> using <link xref="Cogl.MatrixStack.get_entry"/>.</p>  <p>Internally a <link xref="Cogl.MatrixEntry"/> represents a single matrix
+operation (such as "rotate", "scale", "translate") which is applied
+to the transform of a single parent entry.</p>  <p>Using the <link xref="Cogl.MatrixStack"/> api effectively builds up a graph of
+these immutable <link xref="Cogl.MatrixEntry"/> structures whereby operations
+that can be shared between multiple transformations will result
+in shared <link xref="Cogl.MatrixEntry"/> nodes in the graph.</p>  <p>When a <link xref="Cogl.MatrixStack"/> is first created it references one
+<link xref="Cogl.MatrixEntry"/> that represents a single "load identity"
+operation. This serves as the root entry and all operations
+that are then applied to the stack will extend the graph
+starting from this root "load identity" entry.</p>  <p>Given the typical usage model for a <link xref="Cogl.MatrixStack"/> and the way
+the entries are built up while traversing a scenegraph then in most
+cases where an application is interested in comparing two
+transformations for equality then it is enough to simply compare
+two <link xref="Cogl.MatrixEntry"/> pointers directly. Technically this can lead
+to false negatives that could be identified with a deeper
+comparison but often these false negatives are unlikely and
+don't matter anyway so this enables extremely cheap comparisons.</p>  <p>&lt;note&gt;<link xref="Cogl.MatrixEntry"/>&lt;!-- --&gt;s are reference counted using
+<link xref="Cogl.MatrixEntry.ref"/> and <link xref="Cogl.MatrixEntry.unref"/> not with
+<link xref="Cogl.Object.ref"/> and <link xref="Cogl.Object.unref"/>.&lt;/note&gt;</p>
+
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

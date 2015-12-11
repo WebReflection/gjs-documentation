@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="Gck.Attribute.init_copy"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Attribute" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gck_attribute_init_copy</api:name>
+      <api:arg>
+        <api:type>Gck.Attribute</api:type>
+        <api:name>src</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Attribute.prototype.init_copy</title>
+  <synopsis><code mime="text/x-gjs">
+function init_copy(src: <link xref="Gck.Attribute">Gck.Attribute</link>): void {
+    // Gjs wrapper for gck_attribute_init_copy()
+}
+  </code></synopsis>
+  <p>Initialize a PKCS\#11 attribute as a copy of another attribute.
+This copies the value memory as well.</p>  <p>When done with the copied attribute you should use
+<link xref="Gck.Attribute.clear"/> to free the internal memory.</p>
+
+<terms>
+<item>
+<title><code>src</code></title>
+  <p>An attribute to copy.</p>
+</item>
+</terms>
+
+</page>

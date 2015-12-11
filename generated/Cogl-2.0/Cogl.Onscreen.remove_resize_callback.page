@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Cogl.Onscreen.remove_resize_callback"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Onscreen" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_onscreen_remove_resize_callback</api:name>
+      <api:arg>
+        <api:type>Cogl.OnscreenResizeClosure</api:type>
+        <api:name>closure</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Onscreen.prototype.remove_resize_callback</title>
+  <synopsis><code mime="text/x-gjs">
+function remove_resize_callback(closure: <link xref="Cogl.OnscreenResizeClosure">Cogl.OnscreenResizeClosure</link>): void {
+    // Gjs wrapper for cogl_onscreen_remove_resize_callback()
+}
+  </code></synopsis>
+  <p>Removes a resize @callback and @user_data pair that were previously
+associated with <code>onscreen</code> via <link xref="Cogl.Onscreen.add_resize_callback"/>.</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>closure</code></title>
+  <p>An identifier returned from <link xref="Cogl.Onscreen.add_resize_callback"/></p>
+</item>
+</terms>
+
+</page>

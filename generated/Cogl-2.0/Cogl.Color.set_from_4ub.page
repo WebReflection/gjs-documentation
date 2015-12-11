@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<page id="Cogl.Color.set_from_4ub"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Color" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_color_set_from_4ub</api:name>
+      <api:arg>
+        <api:type>Number(guint8)</api:type>
+        <api:name>red</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint8)</api:type>
+        <api:name>green</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint8)</api:type>
+        <api:name>blue</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint8)</api:type>
+        <api:name>alpha</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Color.prototype.set_from_4ub</title>
+  <synopsis><code mime="text/x-gjs">
+function set_from_4ub(red: Number(guint8), green: Number(guint8), blue: Number(guint8), alpha: Number(guint8)): void {
+    // Gjs wrapper for cogl_color_set_from_4ub()
+}
+  </code></synopsis>
+  <p>Sets the values of the passed channels into a <link xref="Cogl.Color"/>.</p>
+  <p>Since 1.0</p>
+<terms>
+<item>
+<title><code>red</code></title>
+  <p>value of the red channel, between 0 and 255</p>
+</item>
+<item>
+<title><code>green</code></title>
+  <p>value of the green channel, between 0 and 255</p>
+</item>
+<item>
+<title><code>blue</code></title>
+  <p>value of the blue channel, between 0 and 255</p>
+</item>
+<item>
+<title><code>alpha</code></title>
+  <p>value of the alpha channel, between 0 and 255</p>
+</item>
+</terms>
+
+</page>

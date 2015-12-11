@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<page id="Gcr.Parser.parse_stream_async"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Parser" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gcr_parser_parse_stream_async</api:name>
+      <api:arg>
+        <api:type>Gio.InputStream</api:type>
+        <api:name>input</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.AsyncReadyCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.Parser.prototype.parse_stream_async</title>
+  <synopsis><code mime="text/x-gjs">
+function parse_stream_async(input: <link href="../Gio-2.0/Gio.InputStream.html">Gio.InputStream</link>, cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>, callback: <link href="../Gio-2.0/Gio.AsyncReadyCallback.html">Gio.AsyncReadyCallback</link>): void {
+    // Gjs wrapper for gcr_parser_parse_stream_async()
+}
+  </code></synopsis>
+  <p>Parse items from the data in a <link href="../Gio-2.0/Gio.InputStream.html">Gio.InputStream</link>. This function completes
+asyncronously and doesn't block.</p>  <p>The <link xref="Gcr.Parser-parsed"/> and <link xref="Gcr.Parser-authenticate"/> signals
+may fire during the parsing.</p>
+
+<terms>
+<item>
+<title><code>input</code></title>
+  <p>The input stream</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>An optional cancellation object</p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>Called when the operation result is ready.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<page id="Cogl.Framebuffer.get_samples_per_pixel"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Framebuffer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gint)</api:type>
+      </api:returns>
+      <api:name>cogl_framebuffer_get_samples_per_pixel</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Framebuffer.prototype.get_samples_per_pixel</title>
+  <synopsis><code mime="text/x-gjs">
+function get_samples_per_pixel(): Number(gint) {
+    // Gjs wrapper for cogl_framebuffer_get_samples_per_pixel()
+}
+  </code></synopsis>
+  <p>Gets the number of points that are sampled per-pixel when
+rasterizing geometry. Usually by default this will return 0 which
+means that single-sample not multisample rendering has been chosen.
+When using a GPU supporting multisample rendering it's possible to
+increase the number of samples per pixel using
+<link xref="Cogl.Framebuffer.set_samples_per_pixel"/>.</p>  <p>Calling <link xref="Cogl.Framebuffer.get_samples_per_pixel"/> before the
+framebuffer has been allocated will simply return the value set
+using <link xref="Cogl.Framebuffer.set_samples_per_pixel"/>. After the
+framebuffer has been allocated the value will reflect the actual
+number of samples that will be made by the GPU.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>The number of point samples made per pixel when
+         rasterizing geometry or 0 if single-sample rendering
+         has been chosen.</p>
+</item>
+</terms>
+
+</page>

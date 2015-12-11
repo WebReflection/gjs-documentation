@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="GWeather.Location.find_by_station_code"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Location" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GWeather.Location</api:type>
+      </api:returns>
+      <api:name>gweather_location_find_by_station_code</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>station_code</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GWeather.Location.prototype.find_by_station_code</title>
+  <synopsis><code mime="text/x-gjs">
+function find_by_station_code(station_code: String): <link xref="GWeather.Location">GWeather.Location</link> {
+    // Gjs wrapper for gweather_location_find_by_station_code()
+}
+  </code></synopsis>
+  <p>Retrieves the weather station identifier by <code>station_code</code>.
+Note that multiple instances of the same weather station can exist
+in the database, and this function will return any of them, so this
+not usually what you want.</p>  <p>See <link xref="GWeather.Location.deserialize"/> to recover a stored <link xref="GWeather.Location"/>.</p>
+
+<terms>
+<item>
+<title><code>station_code</code></title>
+  <p>a 4 letter METAR code</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a weather station level <link xref="GWeather.Location"/> for <code>station_code</code>,
+         or <code>null</code> if none exists in the database.</p>
+</item>
+</terms>
+
+</page>

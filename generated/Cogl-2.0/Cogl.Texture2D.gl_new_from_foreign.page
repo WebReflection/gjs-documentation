@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<page id="Cogl.Texture2D.gl_new_from_foreign"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Texture2D" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Texture2D</api:type>
+      </api:returns>
+      <api:name>cogl_texture_2d_gl_new_from_foreign</api:name>
+      <api:arg>
+        <api:type>Cogl.Context</api:type>
+        <api:name>ctx</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint)</api:type>
+        <api:name>gl_handle</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>width</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>height</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.PixelFormat</api:type>
+        <api:name>format</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Texture2D.gl_new_from_foreign</title>
+  <synopsis><code mime="text/x-gjs">
+function gl_new_from_foreign(ctx: <link xref="Cogl.Context">Cogl.Context</link>, gl_handle: Number(guint), width: Number(gint), height: Number(gint), format: <link xref="Cogl.PixelFormat">Cogl.PixelFormat</link>): <link xref="Cogl.Texture2D">Cogl.Texture2D</link> {
+    // Gjs wrapper for cogl_texture_2d_gl_new_from_foreign()
+}
+  </code></synopsis>
+  <p>Wraps an existing GL_TEXTURE_2D texture object as a <link xref="Cogl.Texture2D"/>.
+This can be used for integrating Cogl with software using OpenGL
+directly.</p>  <p>The texture is still configurable until it has been allocated so
+for example you can declare whether the texture is premultiplied
+with <link xref="Cogl.Texture.set_premultiplied"/>.</p>  <p>&lt;note&gt;The results are undefined for passing an invalid <code>gl_handle</code>
+or if <code>width</code> or <code>height</code> don't have the correct texture
+geometry.&lt;/note&gt;</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>ctx</code></title>
+  <p>A <link xref="Cogl.Context"/></p>
+</item>
+<item>
+<title><code>gl_handle</code></title>
+  <p>A GL handle for a GL_TEXTURE_2D texture object</p>
+</item>
+<item>
+<title><code>width</code></title>
+  <p>Width of the foreign GL texture</p>
+</item>
+<item>
+<title><code>height</code></title>
+  <p>Height of the foreign GL texture</p>
+</item>
+<item>
+<title><code>format</code></title>
+  <p>The format of the texture</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>A newly allocated <link xref="Cogl.Texture2D"/></p>
+</item>
+</terms>
+
+</page>

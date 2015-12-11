@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<page id="Cogl.TexturePixmapX11.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.TexturePixmapX11" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.TexturePixmapX11</api:type>
+      </api:returns>
+      <api:name>cogl_texture_pixmap_x11_new</api:name>
+      <api:arg>
+        <api:type>Cogl.Context</api:type>
+        <api:name>context</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint32)</api:type>
+        <api:name>pixmap</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.Bool</api:type>
+        <api:name>automatic_updates</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.TexturePixmapX11.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(context: <link xref="Cogl.Context">Cogl.Context</link>, pixmap: Number(guint32), automatic_updates: <link xref="Cogl.Bool">Cogl.Bool</link>): <link xref="Cogl.TexturePixmapX11">Cogl.TexturePixmapX11</link> {
+    // Gjs wrapper for cogl_texture_pixmap_x11_new()
+}
+  </code></synopsis>
+  <p>Creates a texture that contains the contents of <code>pixmap</code>. If
+<code>automatic_updates</code> is <code>true</code> then Cogl will attempt to listen for
+damage events on the pixmap and automatically update the texture
+when it changes.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>context</code></title>
+  <p>A <link xref="Cogl.Context"/></p>
+</item>
+<item>
+<title><code>pixmap</code></title>
+  <p>A X11 pixmap ID</p>
+</item>
+<item>
+<title><code>automatic_updates</code></title>
+  <p>Whether to automatically copy the contents of
+the pixmap to the texture.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a new <link xref="Cogl.TexturePixmapX11"/> instance</p>
+</item>
+</terms>
+
+</page>

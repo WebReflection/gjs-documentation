@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<page id="Gck.objects_from_handle_array"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(Gck.Object)</api:type>
+      </api:returns>
+      <api:name>gck_objects_from_handle_array</api:name>
+      <api:arg>
+        <api:type>Gck.Session</api:type>
+        <api:name>session</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Array(Number(gulong))</api:type>
+        <api:name>object_handles</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.objects_from_handle_array</title>
+  <synopsis><code mime="text/x-gjs">
+function objects_from_handle_array(session: <link xref="Gck.Session">Gck.Session</link>, object_handles: Array(Number(gulong))): Array(<link xref="Gck.Object">Gck.Object</link>) {
+    // Gjs wrapper for gck_objects_from_handle_array()
+}
+  </code></synopsis>
+  <p>Initialize a list of GckObject from raw PKCS\#11 handles. The handles argument must contain
+contiguous CK_OBJECT_HANDLE handles in an array.</p>
+
+<terms>
+<item>
+<title><code>session</code></title>
+  <p>The session for these objects</p>
+</item>
+<item>
+<title><code>object_handles</code></title>
+  <p>The raw object handles.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>The list of <link xref="Gck.Object"/>
+         objects. You should use <link xref="Gck.list_unref_free"/> when done with this
+         list.</p>
+</item>
+</terms>
+
+</page>

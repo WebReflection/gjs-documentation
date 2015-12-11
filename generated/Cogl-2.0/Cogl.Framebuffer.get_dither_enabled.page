@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="Cogl.Framebuffer.get_dither_enabled"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Framebuffer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_framebuffer_get_dither_enabled</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Framebuffer.prototype.get_dither_enabled</title>
+  <synopsis><code mime="text/x-gjs">
+function get_dither_enabled(): <link xref="Cogl.Bool">Cogl.Bool</link> {
+    // Gjs wrapper for cogl_framebuffer_get_dither_enabled()
+}
+  </code></synopsis>
+  <p>Returns whether dithering has been requested for the given <code>framebuffer</code>.
+See <link xref="Cogl.Framebuffer.set_dither_enabled"/> for more details about dithering.</p>  <p>&lt;note&gt;This may return <code>true</code> even when the underlying <code>framebuffer</code>
+display pipeline does not support dithering. This value only represents
+the user's request for dithering.&lt;/note&gt;</p>
+  <p>Since 1.8</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if dithering has been requested or <code>false</code> if not.</p>
+</item>
+</terms>
+
+</page>

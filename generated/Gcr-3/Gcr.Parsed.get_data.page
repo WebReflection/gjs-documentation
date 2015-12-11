@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gcr.Parsed.get_data"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Parsed" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>ByteArray</api:type>
+      </api:returns>
+      <api:name>gcr_parsed_get_data</api:name>
+    </api:function>
+  </info>
+  <title>Gcr.Parsed.prototype.get_data</title>
+  <synopsis><code mime="text/x-gjs">
+function get_data(): [return_value: ByteArray, n_data: Number(gsize)] {
+    // Gjs wrapper for gcr_parsed_get_data()
+}
+  </code></synopsis>
+  <p>Get the raw data block for the parsed item.</p>
+
+<terms>
+<item>
+<title><code>return_value</code></title>
+  <p>the raw data of
+         the parsed item, or <code>null</code></p>
+</item>
+<item>
+<title><code>n_data</code></title>
+  <p>location to store size of returned data</p>
+</item>
+</terms>
+
+</page>

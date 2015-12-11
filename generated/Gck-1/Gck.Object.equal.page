@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gck.Object.equal"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Object" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gck_object_equal</api:name>
+      <api:arg>
+        <api:type>Gck.Object</api:type>
+        <api:name>object2</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Object.prototype.equal</title>
+  <synopsis><code mime="text/x-gjs">
+function equal(object2: <link xref="Gck.Object">Gck.Object</link>): Boolean {
+    // Gjs wrapper for gck_object_equal()
+}
+  </code></synopsis>
+  <p>Checks equality of two objects. Two GckObject objects can point to the same
+underlying PKCS\#11 object.</p>
+
+<terms>
+<item>
+<title><code>object2</code></title>
+  <p>a pointer to the second <link xref="Gck.Object"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>TRUE if object1 and object2 are equal. FALSE if either is not a GckObject.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gck.ObjectCache.fill"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.ObjectCache" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gck_object_cache_fill</api:name>
+      <api:arg>
+        <api:type>Gck.Attributes</api:type>
+        <api:name>attrs</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.ObjectCache.prototype.fill</title>
+  <synopsis><code mime="text/x-gjs">
+function fill(attrs: <link xref="Gck.Attributes">Gck.Attributes</link>): void {
+    // Gjs wrapper for gck_object_cache_fill()
+}
+  </code></synopsis>
+  <p>Adds the attributes to the set cached on this object. If an attribute is
+already present in the cache it will be overridden by this value.</p>  <p>This will be done in a thread-safe manner.</p>  <p>If the <code>attrs</code> <link xref="Gck.Attributes"/> is floating, it is consumed.</p>
+
+<terms>
+<item>
+<title><code>attrs</code></title>
+  <p>the attributes to cache</p>
+</item>
+</terms>
+
+</page>

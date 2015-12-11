@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<page id="Gck.Builder.find_boolean"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Builder" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gck_builder_find_boolean</api:name>
+      <api:arg>
+        <api:type>Number(gulong)</api:type>
+        <api:name>attr_type</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Builder.prototype.find_boolean</title>
+  <synopsis><code mime="text/x-gjs">
+function find_boolean(attr_type: Number(gulong)): [ok: Boolean, value: Boolean] {
+    // Gjs wrapper for gck_builder_find_boolean()
+}
+  </code></synopsis>
+  <p>Find a boolean attribute in the builder that has the type <code>attr_type</code>, is
+of the correct boolean size, and is not invalid in the PKCS\#11 sense.
+If multiple attributes exist for the given attribute type, then the first\
+one is returned.</p>
+
+<terms>
+<item>
+<title><code>attr_type</code></title>
+  <p>the type of attribute to find</p>
+</item>
+<item>
+<title><code>ok</code></title>
+  <p>whether a valid boolean attribute was found</p>
+</item>
+<item>
+<title><code>value</code></title>
+  <p>the location to place the found value</p>
+</item>
+</terms>
+
+</page>

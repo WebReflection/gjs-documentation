@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<page id="GdkX11.X11Window.lookup_for_display"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GdkX11.X11Window" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GdkX11.X11Window</api:type>
+      </api:returns>
+      <api:name>gdk_x11_window_lookup_for_display</api:name>
+      <api:arg>
+        <api:type>GdkX11.X11Display</api:type>
+        <api:name>display</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>xlib.Window</api:type>
+        <api:name>window</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GdkX11.X11Window.lookup_for_display</title>
+  <synopsis><code mime="text/x-gjs">
+function lookup_for_display(display: <link xref="GdkX11.X11Display">GdkX11.X11Display</link>, window: <link href="../xlib-2.0/xlib.Window.html">xlib.Window</link>): <link xref="GdkX11.X11Window">GdkX11.X11Window</link> {
+    // Gjs wrapper for gdk_x11_window_lookup_for_display()
+}
+  </code></synopsis>
+  <p>Looks up the <link href="../Gdk-3.0/Gdk.Window.html">Gdk.Window</link> that wraps the given native window handle.</p>
+  <p>Since 2.24</p>
+<terms>
+<item>
+<title><code>display</code></title>
+  <p>the <link href="../Gdk-3.0/Gdk.Display.html">Gdk.Display</link> corresponding to the
+          window handle</p>
+</item>
+<item>
+<title><code>window</code></title>
+  <p>an Xlib Window</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the <link href="../Gdk-3.0/Gdk.Window.html">Gdk.Window</link> wrapper for the native
+   window, or <code>null</code> if there is none.</p>
+</item>
+</terms>
+
+</page>

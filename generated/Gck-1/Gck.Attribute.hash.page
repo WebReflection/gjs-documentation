@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gck.Attribute.hash"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Attribute" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(guint)</api:type>
+      </api:returns>
+      <api:name>gck_attribute_hash</api:name>
+    </api:function>
+  </info>
+  <title>Gck.Attribute.prototype.hash</title>
+  <synopsis><code mime="text/x-gjs">
+function hash(): Number(guint) {
+    // Gjs wrapper for gck_attribute_hash()
+}
+  </code></synopsis>
+  <p>Hash an attribute for use in &lt;code&gt;GHashTable&lt;/code&gt; keys.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the hash code</p>
+</item>
+</terms>
+
+</page>

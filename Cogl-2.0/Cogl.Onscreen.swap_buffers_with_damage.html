@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.Onscreen.prototype.swap_buffers_with_damage</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » <a class="trail" href="Cogl.Onscreen.html" title="Cogl.Onscreen">Cogl.Onscreen</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.Onscreen.prototype.swap_buffers_with_damage</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function swap_buffers_with_damage(rectangles: Number(gint), n_rectangles: Number(gint)): void {
+    // Gjs wrapper for cogl_onscreen_swap_buffers_with_damage()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Swaps the current back buffer being rendered too, to the front for
+display and provides information to any system compositor about
+what regions of the buffer have changed (damage) with respect to
+the last swapped buffer.</p>
+<p class="p">This function has the same semantics as
+cogl_framebuffer_swap_buffers() except that it additionally allows
+applications to pass a list of damaged rectangles which may be
+passed on to a compositor so that it can minimize how much of the
+screen is redrawn in response to this applications newly swapped
+front buffer.</p>
+<p class="p">For example if your application is only animating a small object in
+the corner of the screen and everything else is remaining static
+then it can help the compositor to know that only the bottom right
+corner of your newly swapped buffer has really changed with respect
+to your previously swapped front buffer.</p>
+<p class="p">If <span class="code">n_rectangles</span> is 0 then the whole buffer will implicitly be
+reported as damaged as if <span class="link"><a href="Cogl.Onscreen.swap_buffers.html" title="Cogl.Onscreen.prototype.swap_buffers">Cogl.Onscreen.prototype.swap_buffers</a></span> had been
+called.</p>
+<p class="p">This function also implicitly discards the contents of the color,
+depth and stencil buffers as if <span class="link"><a href="Cogl.Framebuffer.discard_buffers.html" title="Cogl.Framebuffer.prototype.discard_buffers">Cogl.Framebuffer.prototype.discard_buffers</a></span>
+were used. The significance of the discard is that you should not
+expect to be able to start a new frame that incrementally builds on
+the contents of the previous frame. If you want to perform
+incremental updates to older back buffers then please refer to the
+<span class="link"><a href="Cogl.Onscreen.get_buffer_age.html" title="Cogl.Onscreen.prototype.get_buffer_age">Cogl.Onscreen.prototype.get_buffer_age</a></span> api.</p>
+<p class="p">Whenever possible it is recommended that applications use this
+function instead of <span class="link"><a href="Cogl.Onscreen.swap_buffers.html" title="Cogl.Onscreen.prototype.swap_buffers">Cogl.Onscreen.prototype.swap_buffers</a></span> to improve
+performance when running under a compositor.</p>
+<p class="p">&lt;note&gt;It is highly recommended to use this API in conjunction with
+the <span class="link"><a href="Cogl.Onscreen.get_buffer_age.html" title="Cogl.Onscreen.prototype.get_buffer_age">Cogl.Onscreen.prototype.get_buffer_age</a></span> api so that your application can
+perform incremental rendering based on old back buffers.&lt;/note&gt;</p>
+<p class="p">Since 1.16</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">rectangles</span></dt>
+<dd class="terms"><p class="p">An array of integer 4-tuples representing damaged
+             rectangles as (x, y, width, height) tuples.</p></dd>
+<dt class="terms"><span class="code">n_rectangles</span></dt>
+<dd class="terms"><p class="p">The number of 4-tuples to be read from <span class="code">rectangles</span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.Onscreen.html" title="Cogl.Onscreen">Cogl.Onscreen</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

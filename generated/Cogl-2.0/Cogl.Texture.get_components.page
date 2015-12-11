@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Cogl.Texture.get_components"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Texture" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.TextureComponents</api:type>
+      </api:returns>
+      <api:name>cogl_texture_get_components</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Texture.prototype.get_components</title>
+  <synopsis><code mime="text/x-gjs">
+function get_components(): <link xref="Cogl.TextureComponents">Cogl.TextureComponents</link> {
+    // Gjs wrapper for cogl_texture_get_components()
+}
+  </code></synopsis>
+  <p>Queries what components the given <code>texture</code> stores internally as set
+via <link xref="Cogl.Texture.set_components"/>.</p>  <p>For textures created by the ‘_with_size’ constructors the default
+is <link xref="Cogl.TextureComponents"/>.rgba. The other constructors which take
+a %CoglBitmap or a data pointer default to the same components as
+the pixel format of the data.</p>
+  <p>Since 1.18</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

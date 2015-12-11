@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="Notify.Notification.set_app_name"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Notify.Notification" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>notify_notification_set_app_name</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>app_name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Notify.Notification.prototype.set_app_name</title>
+  <synopsis><code mime="text/x-gjs">
+function set_app_name(app_name: String): void {
+    // Gjs wrapper for notify_notification_set_app_name()
+}
+  </code></synopsis>
+  <p>Sets the application name for the notification. If this function is
+not called or if <code>app_name</code> is <code>null</code>, the application name will be
+set from the value used in <link xref="Notify.init"/> or overridden with
+<link xref="Notify.set_app_name"/>.</p>
+  <p>Since 0.7.3</p>
+<terms>
+<item>
+<title><code>app_name</code></title>
+  <p>the localised application name</p>
+</item>
+</terms>
+
+</page>

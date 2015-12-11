@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="Cogl.vector3_normalize"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_vector3_normalize</api:name>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>vector</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.vector3_normalize</title>
+  <synopsis><code mime="text/x-gjs">
+function vector3_normalize(vector: Number(gfloat)): void {
+    // Gjs wrapper for cogl_vector3_normalize()
+}
+  </code></synopsis>
+  <p>Updates the vector so it is a "unit vector" such that the
+<code>vector</code>&lt;!-- --&gt;s magnitude or length is equal to 1.</p>  <p>&lt;note&gt;It's safe to use this function with the [0, 0, 0] vector, it will not
+try to divide components by 0 (its norm) and will leave the vector
+untouched.&lt;/note&gt;</p>
+  <p>Since 1.4</p>
+<terms>
+<item>
+<title><code>vector</code></title>
+  <p>The 3 component vector you want to manipulate</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Soup.ProxyURIResolverCallback"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Soup.ProxyURIResolverCallback</title>
+  <synopsis><code mime="text/x-gjs">
+function onProxyURIResolverCallback(resolver: <link xref="Soup.ProxyURIResolver">Soup.ProxyURIResolver</link>, status: Number(guint), proxy_uri: <link xref="Soup.URI">Soup.URI</link>): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>resolver</code></title>
+
+</item>
+<item>
+<title><code>status</code></title>
+
+</item>
+<item>
+<title><code>proxy_uri</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Cogl.Onscreen.hide"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Onscreen" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_onscreen_hide</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Onscreen.prototype.hide</title>
+  <synopsis><code mime="text/x-gjs">
+function hide(): void {
+    // Gjs wrapper for cogl_onscreen_hide()
+}
+  </code></synopsis>
+  <p>This requests to make <code>onscreen</code> invisible to the user.</p>  <p>Actually the precise semantics of this function depend on the
+window system currently in use, and if you don't have a
+multi-windowining system this function may in-fact do nothing.</p>  <p>This function does not implicitly allocate the given <code>onscreen</code>
+framebuffer before hiding it.</p>  <p>&lt;note&gt;Since Cogl doesn't explicitly track the visibility status of
+onscreen framebuffers it wont try to avoid redundant window system
+requests e.g. to show an already visible window. This also means
+that it's acceptable to alternatively use native APIs to show and
+hide windows without confusing Cogl.&lt;/note&gt;</p>
+  <p>Since 2.0</p>
+
+</page>

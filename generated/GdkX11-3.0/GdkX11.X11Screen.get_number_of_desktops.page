@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="GdkX11.X11Screen.get_number_of_desktops"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GdkX11.X11Screen" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(guint32)</api:type>
+      </api:returns>
+      <api:name>gdk_x11_screen_get_number_of_desktops</api:name>
+    </api:function>
+  </info>
+  <title>GdkX11.X11Screen.prototype.get_number_of_desktops</title>
+  <synopsis><code mime="text/x-gjs">
+function get_number_of_desktops(): Number(guint32) {
+    // Gjs wrapper for gdk_x11_screen_get_number_of_desktops()
+}
+  </code></synopsis>
+  <p>Returns the number of workspaces for <code>screen</code> when running under a
+window manager that supports multiple workspaces, as described
+in the
+[Extended Window Manager Hints](http://www.freedesktop.org/Standards/wm-spec) specification.</p>
+  <p>Since 3.10</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the number of workspaces, or 0 if workspaces are not supported</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gck.SessionInfo-state"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.SessionInfo" group="field" type="guide"/>
+    <title type="link" role="topic">state</title>
+  </info>
+  <title>Gck.SessionInfo.state</title>
+  <synopsis><code mime="text/x-gjs">
+SessionInfo.state: Number(gulong) (Read / Write)
+  </code></synopsis>
+  <p>The user login state of the session.</p>
+
+</page>

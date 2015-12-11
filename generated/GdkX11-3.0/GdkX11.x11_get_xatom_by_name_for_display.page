@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<page id="GdkX11.x11_get_xatom_by_name_for_display"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>xlib.Atom</api:type>
+      </api:returns>
+      <api:name>gdk_x11_get_xatom_by_name_for_display</api:name>
+      <api:arg>
+        <api:type>GdkX11.X11Display</api:type>
+        <api:name>display</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>atom_name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GdkX11.x11_get_xatom_by_name_for_display</title>
+  <synopsis><code mime="text/x-gjs">
+function x11_get_xatom_by_name_for_display(display: <link xref="GdkX11.X11Display">GdkX11.X11Display</link>, atom_name: String): <link href="../xlib-2.0/xlib.Atom.html">xlib.Atom</link> {
+    // Gjs wrapper for gdk_x11_get_xatom_by_name_for_display()
+}
+  </code></synopsis>
+  <p>Returns the X atom for a <link href="../Gdk-3.0/Gdk.Display.html">Gdk.Display</link> corresponding to <code>atom_name</code>.
+This function caches the result, so if called repeatedly it is much
+faster than XInternAtom(), which is a round trip to the server each time.</p>
+  <p>Since 2.2</p>
+<terms>
+<item>
+<title><code>display</code></title>
+  <p>a <link href="../Gdk-3.0/Gdk.Display.html">Gdk.Display</link></p>
+</item>
+<item>
+<title><code>atom_name</code></title>
+  <p>a string</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a X atom for a <link href="../Gdk-3.0/Gdk.Display.html">Gdk.Display</link></p>
+</item>
+</terms>
+
+</page>

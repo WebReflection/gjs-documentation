@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<page id="Cogl.Quaternion"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>Cogl.Quaternion</title>
+  <synopsis><code>
+const Cogl = imports.gi.Cogl;
+
+let quaternion = new Cogl.Quaternion({
+    <link xref='Cogl.Quaternion-w'>w</link>: value
+    <link xref='Cogl.Quaternion-x'>x</link>: value
+    <link xref='Cogl.Quaternion-y'>y</link>: value
+    <link xref='Cogl.Quaternion-z'>z</link>: value
+});
+  </code></synopsis>
+  <p>A quaternion is comprised of a scalar component and a 3D vector
+component. The scalar component is normally referred to as w and the
+vector might either be referred to as v or a (for axis) or expanded
+with the individual components: (x, y, z) A full quaternion would
+then be written as &lt;literal&gt;[w (x, y, z)]&lt;/literal&gt;.</p>  <p>Quaternions can be considered to represent an axis and angle
+pair although sadly these numbers are buried somewhat under some
+maths...</p>  <p>For the curious you can see here that a given axis (a) and angle (𝜃)
+pair are represented in a quaternion as follows:
+|[
+[w=cos(𝜃/2) ( x=sin(𝜃/2)*a.x, y=sin(𝜃/2)*a.y, z=sin(𝜃/2)*a.x )]
+]|</p>  <p>Unit Quaternions:
+When using Quaternions to represent spatial orientations for 3D
+graphics it's always assumed you have a unit quaternion. The
+magnitude of a quaternion is defined as:
+|[
+sqrt (w² + x² + y² + z²)
+]|
+and a unit quaternion satisfies this equation:
+|[
+w² + x² + y² + z² = 1
+]|</p>  <p>Thankfully most of the time we don't actually have to worry about
+the maths that goes on behind the scenes but if you are curious to
+learn more here are some external references:</p>  <p>&lt;itemizedlist&gt;
+&lt;listitem&gt;
+&lt;ulink url="http://mathworld.wolfram.com/Quaternion.html"/&gt;
+&lt;/listitem&gt;
+&lt;listitem&gt;
+&lt;ulink url="http://www.gamedev.net/reference/articles/article1095.asp"/&gt;
+&lt;/listitem&gt;
+&lt;listitem&gt;
+&lt;ulink url="http://www.cprogramming.com/tutorial/3d/quaternions.html"/&gt;
+&lt;/listitem&gt;
+&lt;listitem&gt;
+&lt;ulink url="http://www.isner.com/tutorials/quatSpells/quaternion_spells_12.htm"/&gt;
+&lt;/listitem&gt;
+&lt;listitem&gt;
+3D Maths Primer for Graphics and Game Development ISBN-10: 1556229119
+&lt;/listitem&gt;
+&lt;listitem&gt;
+&lt;ulink url="http://www.cs.caltech.edu/courses/cs171/quatut.pdf"/&gt;
+&lt;/listitem&gt;
+&lt;listitem&gt;
+&lt;ulink url="http://www.j3d.org/matrix_faq/matrfaq_latest.html#Q56"/&gt;
+&lt;/listitem&gt;
+&lt;/itemizedlist&gt;</p>
+
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

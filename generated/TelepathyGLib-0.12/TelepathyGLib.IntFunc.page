@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="TelepathyGLib.IntFunc"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>TelepathyGLib.IntFunc</title>
+  <synopsis><code mime="text/x-gjs">
+function onIntFunc(i: Number(guint), userdata: void): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>i</code></title>
+
+</item>
+<item>
+<title><code>userdata</code></title>
+
+</item>
+</terms>
+
+</page>

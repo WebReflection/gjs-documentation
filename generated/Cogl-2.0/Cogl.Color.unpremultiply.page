@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<page id="Cogl.Color.unpremultiply"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Color" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_color_unpremultiply</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Color.prototype.unpremultiply</title>
+  <synopsis><code mime="text/x-gjs">
+function unpremultiply(): void {
+    // Gjs wrapper for cogl_color_unpremultiply()
+}
+  </code></synopsis>
+  <p>Converts a pre-multiplied color to a non-premultiplied color. For
+example, semi-transparent red is (0.5, 0, 0, 0.5) when premultiplied
+and (1.0, 0, 0, 0.5) when non-premultiplied.</p>
+  <p>Since 1.4</p>
+
+</page>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="GWeather.DistanceUnit"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>GWeather.DistanceUnit</title>
+  <p>The measure unit to use for sky visibility values, when retrieved
+by <link xref="GWeather.Info.get_value_visibility"/>.</p>
+
+<terms>
+<item>
+<title><code>DistanceUnit.INVALID</code></title>
+  <p>invalid unit</p>
+</item>
+<item>
+<title><code>DistanceUnit.DEFAULT</code></title>
+  <p>the user preferred distance unit</p>
+</item>
+<item>
+<title><code>DistanceUnit.METERS</code></title>
+  <p>meters</p>
+</item>
+<item>
+<title><code>DistanceUnit.KM</code></title>
+  <p>kilometers (= 1000 meters)</p>
+</item>
+<item>
+<title><code>DistanceUnit.MILES</code></title>
+  <p>miles</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<page id="Gck.Object.get_data_async"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Object" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gck_object_get_data_async</api:name>
+      <api:arg>
+        <api:type>Number(gulong)</api:type>
+        <api:name>attr_type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gck.Allocator</api:type>
+        <api:name>allocator</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.AsyncReadyCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Object.prototype.get_data_async</title>
+  <synopsis><code mime="text/x-gjs">
+function get_data_async(attr_type: Number(gulong), allocator: <link xref="Gck.Allocator">Gck.Allocator</link>, cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>, callback: <link href="../Gio-2.0/Gio.AsyncReadyCallback.html">Gio.AsyncReadyCallback</link>): void {
+    // Gjs wrapper for gck_object_get_data_async()
+}
+  </code></synopsis>
+  <p>Get the data for the specified attribute from the object.</p>  <p>This call will return immediately and complete asynchronously.</p>
+
+<terms>
+<item>
+<title><code>attr_type</code></title>
+  <p>The attribute to get data for.</p>
+</item>
+<item>
+<title><code>allocator</code></title>
+  <p>An allocator with which to allocate memory for the data, or NULL for default.</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>Optional cancellation object, or NULL.</p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>Called when the operation completes.</p>
+</item>
+</terms>
+
+</page>

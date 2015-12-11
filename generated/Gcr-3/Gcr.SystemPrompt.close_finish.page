@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gcr.SystemPrompt.close_finish"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.SystemPrompt" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gcr_system_prompt_close_finish</api:name>
+      <api:arg>
+        <api:type>Gio.AsyncResult</api:type>
+        <api:name>result</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.SystemPrompt.prototype.close_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function close_finish(result: <link href="../Gio-2.0/Gio.AsyncResult.html">Gio.AsyncResult</link>): Boolean {
+    // Gjs wrapper for gcr_system_prompt_close_finish()
+}
+  </code></synopsis>
+  <p>Complete operation to close this prompt.</p>  <p>Whether or not this function returns <code>true</code>, the system prompt object is
+still closed and may not be further used.</p>
+
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>asynchronous operation result</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>whether close was cleanly completed</p>
+</item>
+</terms>
+
+</page>

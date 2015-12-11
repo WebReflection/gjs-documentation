@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="Cogl.wayland_display_set_compositor_display"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_wayland_display_set_compositor_display</api:name>
+      <api:arg>
+        <api:type>Cogl.Display</api:type>
+        <api:name>display</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>void</api:type>
+        <api:name>wayland_display</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.wayland_display_set_compositor_display</title>
+  <synopsis><code mime="text/x-gjs">
+function wayland_display_set_compositor_display(display: <link xref="Cogl.Display">Cogl.Display</link>, wayland_display: void): void {
+    // Gjs wrapper for cogl_wayland_display_set_compositor_display()
+}
+  </code></synopsis>
+  <p>Informs Cogl of a compositor's Wayland display pointer. This
+enables Cogl to register private wayland extensions required to
+pass buffers between the clients and compositor.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>display</code></title>
+  <p>a <link xref="Cogl.Display"/></p>
+</item>
+<item>
+<title><code>wayland_display</code></title>
+  <p>A compositor's Wayland display pointer</p>
+</item>
+</terms>
+
+</page>

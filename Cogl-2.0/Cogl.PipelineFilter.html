@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.PipelineFilter</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.PipelineFilter</span></h1></div>
+<div class="region">
+<div class="contents">
+<p class="p">Texture filtering is used whenever the current pixel maps either to more
+than one texture element (texel) or less than one. These filter enums
+correspond to different strategies used to come up with a pixel color, by
+possibly referring to multiple neighbouring texels and taking a weighted
+average or simply using the nearest texel.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">PipelineFilter.NEAREST</span></dt>
+<dd class="terms"><p class="p">Measuring in manhatten distance from the,
+  current pixel center, use the nearest texture texel</p></dd>
+<dt class="terms"><span class="code">PipelineFilter.LINEAR</span></dt>
+<dd class="terms"><p class="p">Use the weighted average of the 4 texels
+  nearest the current pixel center</p></dd>
+<dt class="terms"><span class="code">PipelineFilter.NEAREST_MIPMAP_NEAREST</span></dt>
+<dd class="terms"><p class="p">Select the mimap level whose
+  texel size most closely matches the current pixel, and use the
+  <span class="link"><a href="Cogl.PipelineFilter.html" title="Cogl.PipelineFilter">Cogl.PipelineFilter</a></span>.nearest criterion</p></dd>
+<dt class="terms"><span class="code">PipelineFilter.LINEAR_MIPMAP_NEAREST</span></dt>
+<dd class="terms"><p class="p">Select the mimap level whose
+  texel size most closely matches the current pixel, and use the
+  <span class="link"><a href="Cogl.PipelineFilter.html" title="Cogl.PipelineFilter">Cogl.PipelineFilter</a></span>.linear criterion</p></dd>
+<dt class="terms"><span class="code">PipelineFilter.NEAREST_MIPMAP_LINEAR</span></dt>
+<dd class="terms"><p class="p">Select the two mimap levels
+  whose texel size most closely matches the current pixel, use
+  the <span class="link"><a href="Cogl.PipelineFilter.html" title="Cogl.PipelineFilter">Cogl.PipelineFilter</a></span>.nearest criterion on each one and take
+  their weighted average</p></dd>
+<dt class="terms"><span class="code">PipelineFilter.LINEAR_MIPMAP_LINEAR</span></dt>
+<dd class="terms"><p class="p">Select the two mimap levels
+  whose texel size most closely matches the current pixel, use
+  the <span class="link"><a href="Cogl.PipelineFilter.html" title="Cogl.PipelineFilter">Cogl.PipelineFilter</a></span>.linear criterion on each one and take
+  their weighted average</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Cogl">Cogl</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

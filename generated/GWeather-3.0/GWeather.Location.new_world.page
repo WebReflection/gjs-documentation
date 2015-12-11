@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<page id="GWeather.Location.new_world"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Location" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GWeather.Location</api:type>
+      </api:returns>
+      <api:name>gweather_location_new_world</api:name>
+      <api:arg>
+        <api:type>Boolean</api:type>
+        <api:name>use_regions</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GWeather.Location.new_world</title>
+  <synopsis><code mime="text/x-gjs">
+function new_world(use_regions: Boolean): <link xref="GWeather.Location">GWeather.Location</link> {
+    // Gjs wrapper for gweather_location_new_world()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="GWeather.Location"/> of type <link xref="GWeather.LocationLevel"/>.world,
+representing a hierarchy containing all of the locations from
+Locations.xml.</p>
+
+<terms>
+<item>
+<title><code>use_regions</code></title>
+  <p>whether or not to divide the world into regions</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link xref="GWeather.LocationLevel"/>.world location, or
+  <code>null</code> if Locations.xml could not be found or could not be parsed.</p>
+</item>
+</terms>
+
+</page>

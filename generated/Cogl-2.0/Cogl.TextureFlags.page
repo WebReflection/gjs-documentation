@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="Cogl.TextureFlags"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Cogl.TextureFlags</title>
+  <p>Flags to pass to the cogl_texture_new_* family of functions.</p>
+  <p>Since 1.0</p>
+<terms>
+<item>
+<title><code>TextureFlags.NONE</code></title>
+  <p>No flags specified</p>
+</item>
+<item>
+<title><code>TextureFlags.NO_AUTO_MIPMAP</code></title>
+  <p>Disables the automatic generation of
+  the mipmap pyramid from the base level image whenever it is
+  updated. The mipmaps are only generated when the texture is
+  rendered with a mipmap filter so it should be free to leave out
+  this flag when using other filtering modes</p>
+</item>
+<item>
+<title><code>TextureFlags.NO_SLICING</code></title>
+  <p>Disables the slicing of the texture</p>
+</item>
+<item>
+<title><code>TextureFlags.NO_ATLAS</code></title>
+  <p>Disables the insertion of the texture inside
+  the texture atlas used by Cogl</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

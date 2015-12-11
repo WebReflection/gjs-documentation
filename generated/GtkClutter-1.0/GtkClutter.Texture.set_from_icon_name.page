@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<page id="GtkClutter.Texture.set_from_icon_name"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GtkClutter.Texture" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gtk_clutter_texture_set_from_icon_name</api:name>
+      <api:arg>
+        <api:type>Gtk.Widget</api:type>
+        <api:name>widget</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>icon_name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gtk.IconSize</api:type>
+        <api:name>icon_size</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GtkClutter.Texture.prototype.set_from_icon_name</title>
+  <synopsis><code mime="text/x-gjs">
+function set_from_icon_name(widget: <link href="../Gtk-3.0/Gtk.Widget.html">Gtk.Widget</link>, icon_name: String, icon_size: <link href="../Gtk-3.0/Gtk.IconSize.html">Gtk.IconSize</link>): Boolean {
+    // Gjs wrapper for gtk_clutter_texture_set_from_icon_name()
+}
+  </code></synopsis>
+  <p>Sets the contents of <code>texture</code> using the <code>icon_name</code> from the
+current icon theme.</p>
+  <p>Since 1.0</p>
+<terms>
+<item>
+<title><code>widget</code></title>
+  <p>a <link href="../Gtk-3.0/Gtk.Widget.html">Gtk.Widget</link> or <code>null</code></p>
+</item>
+<item>
+<title><code>icon_name</code></title>
+  <p>the name of the icon</p>
+</item>
+<item>
+<title><code>icon_size</code></title>
+  <p>the icon size or -1</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> on success, <code>false</code> on failure</p>
+</item>
+</terms>
+
+</page>

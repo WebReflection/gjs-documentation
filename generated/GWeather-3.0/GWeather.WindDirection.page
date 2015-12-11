@@ -1,0 +1,99 @@
+<?xml version="1.0"?>
+<page id="GWeather.WindDirection"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>GWeather.WindDirection</title>
+  <p>The direction of the prevailing wind. Composite values
+such as north-north-east indicate a direction between the
+two component value (north and north-east).</p>
+
+<terms>
+<item>
+<title><code>WindDirection.INVALID</code></title>
+  <p>value not available</p>
+</item>
+<item>
+<title><code>WindDirection.VARIABLE</code></title>
+  <p>variable throughout the day</p>
+</item>
+<item>
+<title><code>WindDirection.N</code></title>
+  <p>north</p>
+</item>
+<item>
+<title><code>WindDirection.NNE</code></title>
+  <p>north-north-east</p>
+</item>
+<item>
+<title><code>WindDirection.NE</code></title>
+  <p>north-east</p>
+</item>
+<item>
+<title><code>WindDirection.ENE</code></title>
+  <p>east-north-east</p>
+</item>
+<item>
+<title><code>WindDirection.E</code></title>
+  <p>east</p>
+</item>
+<item>
+<title><code>WindDirection.ESE</code></title>
+  <p>east-south-east</p>
+</item>
+<item>
+<title><code>WindDirection.SE</code></title>
+  <p>south-east</p>
+</item>
+<item>
+<title><code>WindDirection.SSE</code></title>
+  <p>south-south-east</p>
+</item>
+<item>
+<title><code>WindDirection.S</code></title>
+  <p>south</p>
+</item>
+<item>
+<title><code>WindDirection.SSW</code></title>
+  <p>south-south-west</p>
+</item>
+<item>
+<title><code>WindDirection.SW</code></title>
+  <p>south-west</p>
+</item>
+<item>
+<title><code>WindDirection.WSW</code></title>
+  <p>west-south-west</p>
+</item>
+<item>
+<title><code>WindDirection.W</code></title>
+  <p>west</p>
+</item>
+<item>
+<title><code>WindDirection.WNW</code></title>
+  <p>west-north-west</p>
+</item>
+<item>
+<title><code>WindDirection.NW</code></title>
+  <p>north-west</p>
+</item>
+<item>
+<title><code>WindDirection.NNW</code></title>
+  <p>north-north-west</p>
+</item>
+<item>
+<title><code>WindDirection.LAST</code></title>
+  <p>maximum value for the enumeration</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

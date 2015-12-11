@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Cogl.vector3_init_zero"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_vector3_init_zero</api:name>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>vector</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.vector3_init_zero</title>
+  <synopsis><code mime="text/x-gjs">
+function vector3_init_zero(vector: Number(gfloat)): void {
+    // Gjs wrapper for cogl_vector3_init_zero()
+}
+  </code></synopsis>
+  <p>Initializes a 3 component, single precision float vector with zero
+for each component.</p>
+  <p>Since 1.4</p>
+<terms>
+<item>
+<title><code>vector</code></title>
+  <p>The 3 component vector you want to initialize</p>
+</item>
+</terms>
+
+</page>

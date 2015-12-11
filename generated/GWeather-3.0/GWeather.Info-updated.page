@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="GWeather.Info-updated"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Info" group="signal" type="guide"/>
+    <title type="link" role="topic">updated</title>
+  </info>
+  <title>GWeather.Info::updated</title>
+  <synopsis><code mime="text/x-gjs">
+connect('updated', function (info, ): void);
+  </code></synopsis>
+  <p>This signal is emitted after the initial fetch of the weather
+data from upstream services, and after every successful call
+to @gweather_info_update().</p>
+
+<terms>
+<item>
+<title><code>info</code></title>
+<p>instance of <link xref="GWeather.Info"/> that is emitting the signal</p>
+</item>
+</terms>
+
+</page>

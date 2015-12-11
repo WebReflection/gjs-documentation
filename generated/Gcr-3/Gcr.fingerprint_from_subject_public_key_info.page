@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<page id="Gcr.fingerprint_from_subject_public_key_info"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>ByteArray</api:type>
+      </api:returns>
+      <api:name>gcr_fingerprint_from_subject_public_key_info</api:name>
+      <api:arg>
+        <api:type>ByteArray</api:type>
+        <api:name>key_info</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GLib.ChecksumType</api:type>
+        <api:name>checksum_type</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.fingerprint_from_subject_public_key_info</title>
+  <synopsis><code mime="text/x-gjs">
+function fingerprint_from_subject_public_key_info(key_info: ByteArray, checksum_type: <link href="../GLib-2.0/GLib.ChecksumType.html">GLib.ChecksumType</link>): [return_value: ByteArray, n_fingerprint: Number(gsize)] {
+    // Gjs wrapper for gcr_fingerprint_from_subject_public_key_info()
+}
+  </code></synopsis>
+  <p>Create a key fingerprint for a DER encoded subjectPublicKeyInfo.</p>
+
+<terms>
+<item>
+<title><code>key_info</code></title>
+  <p>DER encoded subjectPublicKeyInfo structure</p>
+</item>
+<item>
+<title><code>checksum_type</code></title>
+  <p>the type of fingerprint to create</p>
+</item>
+<item>
+<title><code>return_value</code></title>
+  <p>the
+         fingerprint or <code>null</code> if the input was invalid.</p>
+</item>
+<item>
+<title><code>n_fingerprint</code></title>
+  <p>the length of fingerprint returned</p>
+</item>
+</terms>
+
+</page>

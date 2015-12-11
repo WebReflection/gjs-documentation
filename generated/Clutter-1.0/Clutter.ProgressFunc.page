@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Clutter.ProgressFunc"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Clutter.ProgressFunc</title>
+  <synopsis><code mime="text/x-gjs">
+function onProgressFunc(a: Any, b: Any, progress: Number(gdouble), retval: Any): Boolean {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>a</code></title>
+
+</item>
+<item>
+<title><code>b</code></title>
+
+</item>
+<item>
+<title><code>progress</code></title>
+
+</item>
+<item>
+<title><code>retval</code></title>
+
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

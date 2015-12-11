@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.PipelineAlphaFunc</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.PipelineAlphaFunc</span></h1></div>
+<div class="region">
+<div class="contents">
+<p class="p">Alpha testing happens before blending primitives with the framebuffer and
+gives an opportunity to discard fragments based on a comparison with the
+incoming alpha value and a reference alpha value. The <span class="link"><a href="Cogl.PipelineAlphaFunc.html" title="Cogl.PipelineAlphaFunc">Cogl.PipelineAlphaFunc</a></span>
+determines how the comparison is done.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">PipelineAlphaFunc.NEVER</span></dt>
+<dd class="terms"><p class="p">Never let the fragment through.</p></dd>
+<dt class="terms"><span class="code">PipelineAlphaFunc.LESS</span></dt>
+<dd class="terms"><p class="p">Let the fragment through if the incoming
+  alpha value is less than the reference alpha value</p></dd>
+<dt class="terms"><span class="code">PipelineAlphaFunc.EQUAL</span></dt>
+<dd class="terms"><p class="p">Let the fragment through if the incoming
+  alpha value equals the reference alpha value</p></dd>
+<dt class="terms"><span class="code">PipelineAlphaFunc.LEQUAL</span></dt>
+<dd class="terms"><p class="p">Let the fragment through if the incoming
+  alpha value is less than or equal to the reference alpha value</p></dd>
+<dt class="terms"><span class="code">PipelineAlphaFunc.GREATER</span></dt>
+<dd class="terms"><p class="p">Let the fragment through if the incoming
+  alpha value is greater than the reference alpha value</p></dd>
+<dt class="terms"><span class="code">PipelineAlphaFunc.NOTEQUAL</span></dt>
+<dd class="terms"><p class="p">Let the fragment through if the incoming
+  alpha value does not equal the reference alpha value</p></dd>
+<dt class="terms"><span class="code">PipelineAlphaFunc.GEQUAL</span></dt>
+<dd class="terms"><p class="p">Let the fragment through if the incoming
+  alpha value is greater than or equal to the reference alpha value.</p></dd>
+<dt class="terms"><span class="code">PipelineAlphaFunc.ALWAYS</span></dt>
+<dd class="terms"><p class="p">Always let the fragment through.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Cogl">Cogl</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

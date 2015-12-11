@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Gck.Module.initialize_finish"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Module" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.Module</api:type>
+      </api:returns>
+      <api:name>gck_module_initialize_finish</api:name>
+      <api:arg>
+        <api:type>Gio.AsyncResult</api:type>
+        <api:name>result</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Module.initialize_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function initialize_finish(result: <link href="../Gio-2.0/Gio.AsyncResult.html">Gio.AsyncResult</link>): <link xref="Gck.Module">Gck.Module</link> {
+    // Gjs wrapper for gck_module_initialize_finish()
+}
+  </code></synopsis>
+  <p>Finishes the asynchronous initialize operation.</p>
+
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>the asynchronous result</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>The initialized module, or NULL</p>
+</item>
+</terms>
+
+</page>

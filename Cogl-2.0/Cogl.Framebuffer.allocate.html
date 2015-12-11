@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.Framebuffer.prototype.allocate</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » <a class="trail" href="Cogl.Framebuffer.html" title="Cogl.Framebuffer">Cogl.Framebuffer</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.Framebuffer.prototype.allocate</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function allocate(): <span class="link"><a href="Cogl.Bool.html" title="Cogl.Bool">Cogl.Bool</a></span> {
+    // Gjs wrapper for cogl_framebuffer_allocate()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Explicitly allocates a configured <span class="link"><a href="Cogl.Framebuffer.html" title="Cogl.Framebuffer">Cogl.Framebuffer</a></span> allowing developers to
+check and handle any errors that might arise from an unsupported
+configuration so that fallback configurations may be tried.</p>
+<p class="p">&lt;note&gt;Many applications don't support any fallback options at least when
+they are initially developed and in that case the don't need to use this API
+since Cogl will automatically allocate a framebuffer when it first gets
+used.  The disadvantage of relying on automatic allocation is that the
+program will abort with an error message if there is an error during
+automatic allocation.&lt;/note&gt;</p>
+<p class="p">Since 1.8</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> if there were no error allocating the framebuffer, else <span class="code">false</span>.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.Framebuffer.html" title="Cogl.Framebuffer">Cogl.Framebuffer</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

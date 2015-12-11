@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gck.Builder.init_full"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Builder" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gck_builder_init_full</api:name>
+      <api:arg>
+        <api:type>Gck.BuilderFlags</api:type>
+        <api:name>flags</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Builder.prototype.init_full</title>
+  <synopsis><code mime="text/x-gjs">
+function init_full(flags: <link xref="Gck.BuilderFlags">Gck.BuilderFlags</link>): void {
+    // Gjs wrapper for gck_builder_init_full()
+}
+  </code></synopsis>
+  <p>Initialize a stack allocated builder, with the appropriate flags.</p>  <p>If the <link xref="Gck.BuilderFlags"/>.secure_memory flag is specified then non-pageable memory
+will be used for the various values of the attributes in the builder</p>
+
+<terms>
+<item>
+<title><code>flags</code></title>
+  <p>the flags for the new builder</p>
+</item>
+</terms>
+
+</page>

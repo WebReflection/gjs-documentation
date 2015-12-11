@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gck.Object-handle"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Object" group="property" type="guide"/>
+    <title type="link" role="topic">handle</title>
+  </info>
+  <title>Gck.Object.handle</title>
+  <synopsis><code mime="text/x-gjs">
+Object.handle: Number(gulong) (Read / Write / Construct Only)
+  </code></synopsis>
+  <p>The raw PKCS11 handle for this object.</p>
+
+</page>

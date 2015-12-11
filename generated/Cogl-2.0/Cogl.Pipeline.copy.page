@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.copy"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Pipeline</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_copy</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.copy</title>
+  <synopsis><code mime="text/x-gjs">
+function copy(): <link xref="Cogl.Pipeline">Cogl.Pipeline</link> {
+    // Gjs wrapper for cogl_pipeline_copy()
+}
+  </code></synopsis>
+  <p>Creates a new pipeline with the configuration copied from the
+source pipeline.</p>  <p>We would strongly advise developers to always aim to use
+<link xref="Cogl.Pipeline.copy"/> instead of <link xref="Cogl.Pipeline.new"/> whenever there will
+be any similarity between two pipelines. Copying a pipeline helps Cogl
+keep track of a pipelines ancestry which we may use to help minimize GPU
+state changes.</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a pointer to the newly allocated <link xref="Cogl.Pipeline"/></p>
+</item>
+</terms>
+
+</page>

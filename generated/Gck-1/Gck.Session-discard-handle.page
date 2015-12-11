@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="Gck.Session-discard-handle"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Session" group="signal" type="guide"/>
+    <title type="link" role="topic">discard-handle</title>
+  </info>
+  <title>Gck.Session::discard-handle</title>
+  <synopsis><code mime="text/x-gjs">
+connect('discard-handle', function (session, handle: Number(gulong), ): Boolean);
+  </code></synopsis>
+  <p>When a GckSession is being disposed of it emits this signal to allow
+a session pool to pick up the handle and keep it around.</p>  <p>If no signal handler claims the handle, then it is closed.</p>
+
+<terms>
+<item>
+<title><code>session</code></title>
+<p>instance of <link xref="Gck.Session"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>handle</code></title>
+  <p>The handle being discarded.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>Whether or not this handle was claimed.</p>
+</item>
+</terms>
+
+</page>

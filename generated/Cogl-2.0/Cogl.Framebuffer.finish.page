@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Cogl.Framebuffer.finish"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Framebuffer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_framebuffer_finish</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Framebuffer.prototype.finish</title>
+  <synopsis><code mime="text/x-gjs">
+function finish(): void {
+    // Gjs wrapper for cogl_framebuffer_finish()
+}
+  </code></synopsis>
+  <p>This blocks the CPU until all pending rendering associated with the
+specified framebuffer has completed. It's very rare that developers should
+ever need this level of synchronization with the GPU and should never be
+used unless you clearly understand why you need to explicitly force
+synchronization.</p>  <p>One example might be for benchmarking purposes to be sure timing
+measurements reflect the time that the GPU is busy for not just the time it
+takes to queue rendering commands.</p>
+  <p>Since 1.10</p>
+
+</page>

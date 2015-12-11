@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.Onscreen.prototype.swap_buffers</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » <a class="trail" href="Cogl.Onscreen.html" title="Cogl.Onscreen">Cogl.Onscreen</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.Onscreen.prototype.swap_buffers</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function swap_buffers(): void {
+    // Gjs wrapper for cogl_onscreen_swap_buffers()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Swaps the current back buffer being rendered too, to the front for display.</p>
+<p class="p">This function also implicitly discards the contents of the color, depth and
+stencil buffers as if <span class="link"><a href="Cogl.Framebuffer.discard_buffers.html" title="Cogl.Framebuffer.prototype.discard_buffers">Cogl.Framebuffer.prototype.discard_buffers</a></span> were used. The
+significance of the discard is that you should not expect to be able to
+start a new frame that incrementally builds on the contents of the previous
+frame.</p>
+<p class="p">&lt;note&gt;It is highly recommended that applications use
+<span class="link"><a href="Cogl.Onscreen.swap_buffers_with_damage.html" title="Cogl.Onscreen.prototype.swap_buffers_with_damage">Cogl.Onscreen.prototype.swap_buffers_with_damage</a></span> instead whenever possible
+and also use the <span class="link"><a href="Cogl.Onscreen.get_buffer_age.html" title="Cogl.Onscreen.prototype.get_buffer_age">Cogl.Onscreen.prototype.get_buffer_age</a></span> api so they can
+perform incremental updates to older buffers instead of having to
+render a full buffer for every frame.&lt;/note&gt;</p>
+<p class="p">Since 1.10</p>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.Onscreen.html" title="Cogl.Onscreen">Cogl.Onscreen</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

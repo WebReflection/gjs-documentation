@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<page id="Cogl.Texture3D.new_from_data"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Texture3D" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Texture3D</api:type>
+      </api:returns>
+      <api:name>cogl_texture_3d_new_from_data</api:name>
+      <api:arg>
+        <api:type>Cogl.Context</api:type>
+        <api:name>context</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>width</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>height</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>depth</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.PixelFormat</api:type>
+        <api:name>format</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>rowstride</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>image_stride</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint8)</api:type>
+        <api:name>data</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Texture3D.new_from_data</title>
+  <synopsis><code mime="text/x-gjs">
+function new_from_data(context: <link xref="Cogl.Context">Cogl.Context</link>, width: Number(gint), height: Number(gint), depth: Number(gint), format: <link xref="Cogl.PixelFormat">Cogl.PixelFormat</link>, rowstride: Number(gint), image_stride: Number(gint), data: Number(guint8)): <link xref="Cogl.Texture3D">Cogl.Texture3D</link> {
+    // Gjs wrapper for cogl_texture_3d_new_from_data()
+}
+  </code></synopsis>
+  <p>Creates a low-level 3D texture and initializes it with <code>data</code>. The
+data is assumed to be packed array of <code>depth</code> images. There can be
+padding between the images using <code>image_stride</code>.</p>  <p>&lt;note&gt;This api will always immediately allocate GPU memory for the
+texture and upload the given data so that the <code>data</code> pointer does
+not need to remain valid once this function returns. This means it
+is not possible to configure the texture before it is allocated. If
+you do need to configure the texture before allocation (to specify
+constraints on the internal format for example) then you can
+instead create a <link xref="Cogl.Bitmap"/> for your data and use
+<link xref="Cogl.Texture3D.new_from_bitmap"/>.&lt;/note&gt;</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>context</code></title>
+  <p>a <link xref="Cogl.Context"/></p>
+</item>
+<item>
+<title><code>width</code></title>
+  <p>width of the texture in pixels.</p>
+</item>
+<item>
+<title><code>height</code></title>
+  <p>height of the texture in pixels.</p>
+</item>
+<item>
+<title><code>depth</code></title>
+  <p>depth of the texture in pixels.</p>
+</item>
+<item>
+<title><code>format</code></title>
+  <p>the <link xref="Cogl.PixelFormat"/> the buffer is stored in in RAM</p>
+</item>
+<item>
+<title><code>rowstride</code></title>
+  <p>the memory offset in bytes between the starts of
+   scanlines in <code>data</code> or 0 to infer it from the width and format</p>
+</item>
+<item>
+<title><code>image_stride</code></title>
+  <p>the number of bytes from one image to the next. This
+   can be used to add padding between the images in a similar way
+   that the rowstride can be used to add padding between
+   rows. Alternatively 0 can be passed to infer the <code>image_stride</code>
+   from the <code>height</code>.</p>
+</item>
+<item>
+<title><code>data</code></title>
+  <p>pointer the memory region where the source buffer resides</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the newly created <link xref="Cogl.Texture3D"/> or
+              <code>null</code> if there was an error and an exception will be
+              returned through @error.</p>
+</item>
+</terms>
+
+</page>

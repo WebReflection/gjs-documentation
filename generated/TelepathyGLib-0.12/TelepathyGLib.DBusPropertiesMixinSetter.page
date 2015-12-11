@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="TelepathyGLib.DBusPropertiesMixinSetter"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>TelepathyGLib.DBusPropertiesMixinSetter</title>
+  <synopsis><code mime="text/x-gjs">
+function onDBusPropertiesMixinSetter(object: <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link>, iface: <link href="../GLib-2.0/GLib.Quark.html">GLib.Quark</link>, name: <link href="../GLib-2.0/GLib.Quark.html">GLib.Quark</link>, value: Any, setter_data: void): Boolean {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>object</code></title>
+
+</item>
+<item>
+<title><code>iface</code></title>
+
+</item>
+<item>
+<title><code>name</code></title>
+
+</item>
+<item>
+<title><code>value</code></title>
+
+</item>
+<item>
+<title><code>setter_data</code></title>
+
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

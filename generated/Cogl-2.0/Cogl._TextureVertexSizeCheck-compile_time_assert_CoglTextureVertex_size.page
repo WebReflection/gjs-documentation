@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Cogl._TextureVertexSizeCheck-compile_time_assert_CoglTextureVertex_size"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl._TextureVertexSizeCheck" group="field" type="guide"/>
+    <title type="link" role="topic">compile_time_assert_CoglTextureVertex_size</title>
+  </info>
+  <title>Cogl._TextureVertexSizeCheck.compile_time_assert__Cogl_Texture_Vertex_size</title>
+  <synopsis><code mime="text/x-gjs">
+_TextureVertexSizeCheck.compile_time_assert__Cogl_Texture_Vertex_size: Array(Number(gchar)) (Read / Write)
+  </code></synopsis>
+
+
+</page>

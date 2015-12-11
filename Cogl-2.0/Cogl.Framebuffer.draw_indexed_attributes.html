@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.Framebuffer.prototype.draw_indexed_attributes</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » <a class="trail" href="Cogl.Framebuffer.html" title="Cogl.Framebuffer">Cogl.Framebuffer</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.Framebuffer.prototype.draw_indexed_attributes</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function draw_indexed_attributes(pipeline: <span class="link"><a href="Cogl.Pipeline.html" title="Cogl.Pipeline">Cogl.Pipeline</a></span>, mode: <span class="link"><a href="Cogl.VerticesMode.html" title="Cogl.VerticesMode">Cogl.VerticesMode</a></span>, first_vertex: Number(gint), n_vertices: Number(gint), indices: <span class="link"><a href="Cogl.Indices.html" title="Cogl.Indices">Cogl.Indices</a></span>, attributes: <span class="link"><a href="Cogl.Attribute.html" title="Cogl.Attribute">Cogl.Attribute</a></span>, n_attributes: Number(gint)): void {
+    // Gjs wrapper for cogl_framebuffer_draw_indexed_attributes()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Behaves the same as <span class="link"><a href="Cogl.Framebuffer.draw_attributes.html" title="Cogl.Framebuffer.prototype.draw_attributes">Cogl.Framebuffer.prototype.draw_attributes</a></span> except that
+instead of reading vertex data sequentially from the specified
+<span class="code">attributes</span> the <span class="code">indices</span> provide an indirection for how the data
+should be indexed allowing a random access order to be
+specified.</p>
+<p class="p">For example an indices array of [0, 1, 2, 0, 2, 3] could be used
+used to draw two triangles (<span class="code">mode</span> = <span class="link"><a href="Cogl.VerticesMode.html" title="Cogl.VerticesMode">Cogl.VerticesMode</a></span>.triangles +
+<span class="code">n_vertices</span> = 6) but only provide attribute data for the 4 corners
+of a rectangle. When the GPU needs to read in each of the 6
+vertices it will read the <span class="code">indices</span> array for each vertex in
+sequence and use the index to look up the vertex attribute data. So
+here you can see that first and fourth vertex will point to the
+same data and third and fifth vertex will also point to shared
+data.</p>
+<p class="p">Drawing with indices can be a good way of minimizing the size of a
+mesh by allowing you to avoid data for duplicate vertices because
+multiple entries in the index array can refer back to a single
+shared vertex.</p>
+<p class="p">&lt;note&gt;The <span class="code">indices</span> array must be at least as long as <span class="code">first_vertex</span>
++ <span class="code">n_vertices</span> otherwise the GPU will overrun the indices array when
+looking up vertex data.&lt;/note&gt;</p>
+<p class="p">Since it's very common to want to draw a run of rectangles using
+indices to avoid duplicating vertex data you can use
+<span class="link"><a href="Cogl.get_rectangle_indices.html" title="Cogl.get_rectangle_indices">Cogl.get_rectangle_indices</a></span> to get a set of indices that can be
+shared.</p>
+<p class="p">This drawing api doesn't support high-level meta texture types such
+as <span class="link"><a href="Cogl.Texture2DSliced.html" title="Cogl.Texture2DSliced">Cogl.Texture2DSliced</a></span> so it is the user's responsibility to
+ensure that only low-level textures that can be directly sampled by
+a GPU such as <span class="link"><a href="Cogl.Texture2D.html" title="Cogl.Texture2D">Cogl.Texture2D</a></span>, <span class="link"><a href="Cogl.TextureRectangle.html" title="Cogl.TextureRectangle">Cogl.TextureRectangle</a></span> or
+<span class="link"><a href="Cogl.Texture3D.html" title="Cogl.Texture3D">Cogl.Texture3D</a></span> are associated with layers of the given <span class="code">pipeline</span>.</p>
+<p class="p">&lt;note&gt;This api doesn't support any of the legacy global state
+options such as cogl_set_depth_test_enabled(),
+cogl_set_backface_culling_enabled() or cogl_program_use()&lt;/note&gt;</p>
+<p class="p">Since 1.10</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">pipeline</span></dt>
+<dd class="terms"><p class="p">A <span class="link"><a href="Cogl.Pipeline.html" title="Cogl.Pipeline">Cogl.Pipeline</a></span> state object</p></dd>
+<dt class="terms"><span class="code">mode</span></dt>
+<dd class="terms"><p class="p">The <span class="link"><a href="Cogl.VerticesMode.html" title="Cogl.VerticesMode">Cogl.VerticesMode</a></span> defining the topology of vertices</p></dd>
+<dt class="terms"><span class="code">first_vertex</span></dt>
+<dd class="terms"><p class="p">The vertex offset within the given attributes to draw from</p></dd>
+<dt class="terms"><span class="code">n_vertices</span></dt>
+<dd class="terms"><p class="p">The number of vertices to draw from the given attributes</p></dd>
+<dt class="terms"><span class="code">indices</span></dt>
+<dd class="terms"><p class="p">The array of indices used by the GPU to lookup attribute
+          data for each vertex.</p></dd>
+<dt class="terms"><span class="code">attributes</span></dt>
+<dd class="terms"><p class="p">An array of pointers to <span class="link"><a href="Cogl.Attribute.html" title="Cogl.Attribute">Cogl.Attribute</a></span>&lt;-- --&gt;s defining vertex
+             geometry</p></dd>
+<dt class="terms"><span class="code">n_attributes</span></dt>
+<dd class="terms"><p class="p">The number of attributes in the <span class="code">attributes</span> array.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.Framebuffer.html" title="Cogl.Framebuffer">Cogl.Framebuffer</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

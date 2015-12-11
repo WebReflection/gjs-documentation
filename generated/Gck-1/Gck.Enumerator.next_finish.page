@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="Gck.Enumerator.next_finish"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Enumerator" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(Gck.Module)</api:type>
+      </api:returns>
+      <api:name>gck_enumerator_next_finish</api:name>
+      <api:arg>
+        <api:type>Gio.AsyncResult</api:type>
+        <api:name>result</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Enumerator.prototype.next_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function next_finish(result: <link href="../Gio-2.0/Gio.AsyncResult.html">Gio.AsyncResult</link>): Array(<link xref="Gck.Module">Gck.Module</link>) {
+    // Gjs wrapper for gck_enumerator_next_finish()
+}
+  </code></synopsis>
+  <p>Complete an operation to enumerate next objects.</p>  <p><code>null</code> is also returned if the function fails. Use the @error to determine
+whether a failure occurred or not.</p>
+
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>The result passed to the callback</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>The list of objects, which
+should be freed with <link xref="Gck.list_unref_free"/></p>
+</item>
+</terms>
+
+</page>

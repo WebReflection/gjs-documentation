@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="GWeather.LocationEntry-top"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.LocationEntry" group="property" type="guide"/>
+    <title type="link" role="topic">top</title>
+  </info>
+  <title>GWeather.LocationEntry.top</title>
+  <synopsis><code mime="text/x-gjs">
+LocationEntry.top: <link xref="GWeather.Location">GWeather.Location</link> (Write / Construct Only)
+  </code></synopsis>
+
+
+</page>

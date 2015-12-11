@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="Gck.Builder.set_ulong"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Builder" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gck_builder_set_ulong</api:name>
+      <api:arg>
+        <api:type>Number(gulong)</api:type>
+        <api:name>attr_type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gulong)</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Builder.prototype.set_ulong</title>
+  <synopsis><code mime="text/x-gjs">
+function set_ulong(attr_type: Number(gulong), value: Number(gulong)): void {
+    // Gjs wrapper for gck_builder_set_ulong()
+}
+  </code></synopsis>
+  <p>Set an attribute on the builder for the unsigned long <code>value</code>.
+If an attribute with <code>attr_type</code> already exists in the builder then it is
+changed to the new value, otherwise an attribute is added.</p>
+
+<terms>
+<item>
+<title><code>attr_type</code></title>
+  <p>the new attribute type</p>
+</item>
+<item>
+<title><code>value</code></title>
+  <p>the attribute value</p>
+</item>
+</terms>
+
+</page>

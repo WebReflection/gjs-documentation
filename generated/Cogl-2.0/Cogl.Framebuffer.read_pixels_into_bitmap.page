@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<page id="Cogl.Framebuffer.read_pixels_into_bitmap"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Framebuffer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_framebuffer_read_pixels_into_bitmap</api:name>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>y</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.ReadPixelsFlags</api:type>
+        <api:name>source</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.Bitmap</api:type>
+        <api:name>bitmap</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Framebuffer.prototype.read_pixels_into_bitmap</title>
+  <synopsis><code mime="text/x-gjs">
+function read_pixels_into_bitmap(x: Number(gint), y: Number(gint), source: <link xref="Cogl.ReadPixelsFlags">Cogl.ReadPixelsFlags</link>, bitmap: <link xref="Cogl.Bitmap">Cogl.Bitmap</link>): <link xref="Cogl.Bool">Cogl.Bool</link> {
+    // Gjs wrapper for cogl_framebuffer_read_pixels_into_bitmap()
+}
+  </code></synopsis>
+  <p>This reads a rectangle of pixels from the given framebuffer where
+position (0, 0) is the top left. The pixel at (x, y) is the first
+read, and a rectangle of pixels with the same size as the bitmap is
+read right and downwards from that point.</p>  <p>Currently Cogl assumes that the framebuffer is in a premultiplied
+format so if the format of <code>bitmap</code> is non-premultiplied it will
+convert it. To read the pixel values without any conversion you
+should either specify a format that doesn't use an alpha channel or
+use one of the formats ending in PRE.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>x</code></title>
+  <p>The x position to read from</p>
+</item>
+<item>
+<title><code>y</code></title>
+  <p>The y position to read from</p>
+</item>
+<item>
+<title><code>source</code></title>
+  <p>Identifies which auxillary buffer you want to read
+         (only COGL_READ_PIXELS_COLOR_BUFFER supported currently)</p>
+</item>
+<item>
+<title><code>bitmap</code></title>
+  <p>The bitmap to store the results in.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if the read succeeded or <code>false</code> otherwise. The
+ function is only likely to fail if the bitmap points to a pixel
+ buffer and it could not be mapped.</p>
+</item>
+</terms>
+
+</page>

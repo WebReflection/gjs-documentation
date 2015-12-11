@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<page id="Cogl.Texture.get_data"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Texture" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gint)</api:type>
+      </api:returns>
+      <api:name>cogl_texture_get_data</api:name>
+      <api:arg>
+        <api:type>Cogl.PixelFormat</api:type>
+        <api:name>format</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint)</api:type>
+        <api:name>rowstride</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint8)</api:type>
+        <api:name>data</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Texture.prototype.get_data</title>
+  <synopsis><code mime="text/x-gjs">
+function get_data(format: <link xref="Cogl.PixelFormat">Cogl.PixelFormat</link>, rowstride: Number(guint), data: Number(guint8)): Number(gint) {
+    // Gjs wrapper for cogl_texture_get_data()
+}
+  </code></synopsis>
+  <p>Copies the pixel data from a cogl texture to system memory.</p>  <p>&lt;note&gt;Don't pass the value of cogl_texture_get_rowstride() as the
+<code>rowstride</code> argument, the rowstride should be the rowstride you
+want for the destination <code>data</code> buffer not the rowstride of the
+source texture&lt;/note&gt;</p>
+
+<terms>
+<item>
+<title><code>format</code></title>
+  <p>the <link xref="Cogl.PixelFormat"/> to store the texture as.</p>
+</item>
+<item>
+<title><code>rowstride</code></title>
+  <p>the rowstride of <code>data</code> in bytes or pass 0 to calculate
+            from the bytes-per-pixel of <code>format</code> multiplied by the
+            <code>texture</code> width.</p>
+</item>
+<item>
+<title><code>data</code></title>
+  <p>memory location to write the <code>texture</code>'s contents, or <code>null</code>
+to only query the data size through the return value.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the size of the texture data in bytes</p>
+</item>
+</terms>
+
+</page>

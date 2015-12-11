@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<page id="GWeather.ConditionPhenomenon"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>GWeather.ConditionPhenomenon</title>
+  <p>The current or forecasted significant phenomenon.</p>
+
+<terms>
+<item>
+<title><code>ConditionPhenomenon.INVALID</code></title>
+  <p>value not available</p>
+</item>
+<item>
+<title><code>ConditionPhenomenon.NONE</code></title>
+  <p>no significant phenomenon</p>
+</item>
+<item>
+<title><code>ConditionPhenomenon.DRIZZLE</code></title>
+
+</item>
+<item>
+<title><code>ConditionPhenomenon.RAIN</code></title>
+
+</item>
+<item>
+<title><code>ConditionPhenomenon.SNOW</code></title>
+
+</item>
+<item>
+<title><code>ConditionPhenomenon.SNOW_GRAINS</code></title>
+
+</item>
+<item>
+<title><code>ConditionPhenomenon.ICE_CRYSTALS</code></title>
+
+</item>
+<item>
+<title><code>ConditionPhenomenon.ICE_PELLETS</code></title>
+
+</item>
+<item>
+<title><code>ConditionPhenomenon.HAIL</code></title>
+
+</item>
+<item>
+<title><code>ConditionPhenomenon.SMALL_HAIL</code></title>
+
+</item>
+<item>
+<title><code>ConditionPhenomenon.UNKNOWN_PRECIPITATION</code></title>
+
+</item>
+<item>
+<title><code>ConditionPhenomenon.MIST</code></title>
+
+</item>
+<item>
+<title><code>ConditionPhenomenon.FOG</code></title>
+
+</item>
+<item>
+<title><code>ConditionPhenomenon.SMOKE</code></title>
+
+</item>
+<item>
+<title><code>ConditionPhenomenon.VOLCANIC_ASH</code></title>
+
+</item>
+<item>
+<title><code>ConditionPhenomenon.SAND</code></title>
+
+</item>
+<item>
+<title><code>ConditionPhenomenon.HAZE</code></title>
+
+</item>
+<item>
+<title><code>ConditionPhenomenon.SPRAY</code></title>
+
+</item>
+<item>
+<title><code>ConditionPhenomenon.DUST</code></title>
+
+</item>
+<item>
+<title><code>ConditionPhenomenon.SQUALL</code></title>
+
+</item>
+<item>
+<title><code>ConditionPhenomenon.SANDSTORM</code></title>
+
+</item>
+<item>
+<title><code>ConditionPhenomenon.DUSTSTORM</code></title>
+
+</item>
+<item>
+<title><code>ConditionPhenomenon.FUNNEL_CLOUD</code></title>
+
+</item>
+<item>
+<title><code>ConditionPhenomenon.TORNADO</code></title>
+
+</item>
+<item>
+<title><code>ConditionPhenomenon.DUST_WHIRLS</code></title>
+
+</item>
+<item>
+<title><code>ConditionPhenomenon.LAST</code></title>
+
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

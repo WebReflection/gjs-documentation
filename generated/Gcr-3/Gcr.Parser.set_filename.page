@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Gcr.Parser.set_filename"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Parser" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gcr_parser_set_filename</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>filename</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.Parser.prototype.set_filename</title>
+  <synopsis><code mime="text/x-gjs">
+function set_filename(filename: String): void {
+    // Gjs wrapper for gcr_parser_set_filename()
+}
+  </code></synopsis>
+  <p>Sets the filename of the parser item.</p>
+
+<terms>
+<item>
+<title><code>filename</code></title>
+  <p>a string of the filename of the parser item</p>
+</item>
+</terms>
+
+</page>

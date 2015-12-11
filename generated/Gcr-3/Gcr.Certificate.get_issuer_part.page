@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="Gcr.Certificate.get_issuer_part"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Certificate" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>gcr_certificate_get_issuer_part</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>part</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.Certificate.prototype.get_issuer_part</title>
+  <synopsis><code mime="text/x-gjs">
+function get_issuer_part(part: String): String {
+    // Gjs wrapper for gcr_certificate_get_issuer_part()
+}
+  </code></synopsis>
+  <p>Get a part of the DN of the issuer of this certificate.</p>  <p>Examples of a <code>part</code> might be the 'OU' (organizational unit)
+or the 'CN' (common name). Only the value of that part
+of the DN is returned.</p>  <p>The string returned should be freed by the caller when no longer
+required.</p>
+
+<terms>
+<item>
+<title><code>part</code></title>
+  <p>a DN type string or OID.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the allocated part of the issuer DN, or <code>null</code> if no
+         such part is present</p>
+</item>
+</terms>
+
+</page>

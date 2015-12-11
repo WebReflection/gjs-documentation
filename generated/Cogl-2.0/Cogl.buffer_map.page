@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<page id="Cogl.buffer_map"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_buffer_map</api:name>
+      <api:arg>
+        <api:type>Cogl.Buffer</api:type>
+        <api:name>buffer</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.BufferAccess</api:type>
+        <api:name>access</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.BufferMapHint</api:type>
+        <api:name>hints</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.buffer_map</title>
+  <synopsis><code mime="text/x-gjs">
+function buffer_map(buffer: <link xref="Cogl.Buffer">Cogl.Buffer</link>, access: <link xref="Cogl.BufferAccess">Cogl.BufferAccess</link>, hints: <link xref="Cogl.BufferMapHint">Cogl.BufferMapHint</link>): void {
+    // Gjs wrapper for cogl_buffer_map()
+}
+  </code></synopsis>
+  <p>Maps the buffer into the application address space for direct
+access. This is equivalent to calling <link xref="Cogl.buffer_map_range"/> with
+zero as the offset and the size of the entire buffer as the size.</p>  <p>It is strongly recommended that you pass
+<link xref="Cogl.BufferMapHint"/>. as a hint if you are going to replace
+all the buffer's data. This way if the buffer is currently being
+used by the GPU then the driver won't have to stall the CPU and
+wait for the hardware to finish because it can instead allocate a
+new buffer to map.</p>  <p>The behaviour is undefined if you access the buffer in a way
+conflicting with the <code>access</code> mask you pass. It is also an error to
+release your last reference while the buffer is mapped.</p>
+  <p>Since 1.2</p>
+<terms>
+<item>
+<title><code>buffer</code></title>
+  <p>a buffer object</p>
+</item>
+<item>
+<title><code>access</code></title>
+  <p>how the mapped buffer will be used by the application</p>
+</item>
+<item>
+<title><code>hints</code></title>
+  <p>A mask of <link xref="Cogl.BufferMapHint"/>&lt;!-- --&gt;s that tell Cogl how
+  the data will be modified once mapped.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>A pointer to the mapped memory or
+       <code>null</code> is the call fails</p>
+</item>
+</terms>
+
+</page>

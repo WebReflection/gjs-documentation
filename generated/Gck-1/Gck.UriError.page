@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gck.UriError"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Gck.UriError</title>
+  <p>Various error codes used with PKCS\#11 URIs</p>
+
+<terms>
+<item>
+<title><code>UriError.BAD_SCHEME</code></title>
+  <p>invalid URI scheme</p>
+</item>
+<item>
+<title><code>UriError.BAD_ENCODING</code></title>
+  <p>bad URI encoding</p>
+</item>
+<item>
+<title><code>UriError.BAD_SYNTAX</code></title>
+  <p>bad URI syntax</p>
+</item>
+<item>
+<title><code>UriError.BAD_VERSION</code></title>
+  <p>bad URI version component</p>
+</item>
+<item>
+<title><code>UriError.NOT_FOUND</code></title>
+  <p>piece of the URI was not found</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

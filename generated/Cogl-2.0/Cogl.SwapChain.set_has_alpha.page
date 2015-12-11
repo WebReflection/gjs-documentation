@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Cogl.SwapChain.set_has_alpha"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.SwapChain" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_swap_chain_set_has_alpha</api:name>
+      <api:arg>
+        <api:type>Cogl.Bool</api:type>
+        <api:name>has_alpha</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.SwapChain.prototype.set_has_alpha</title>
+  <synopsis><code mime="text/x-gjs">
+function set_has_alpha(has_alpha: <link xref="Cogl.Bool">Cogl.Bool</link>): void {
+    // Gjs wrapper for cogl_swap_chain_set_has_alpha()
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>has_alpha</code></title>
+
+</item>
+</terms>
+
+</page>

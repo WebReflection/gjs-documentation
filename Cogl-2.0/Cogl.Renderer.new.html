@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.Renderer.new</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » <a class="trail" href="Cogl.Renderer.html" title="Cogl.Renderer">Cogl.Renderer</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.Renderer.new</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function new(): <span class="link"><a href="Cogl.Renderer.html" title="Cogl.Renderer">Cogl.Renderer</a></span> {
+    // Gjs wrapper for cogl_renderer_new()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Instantiates a new (unconnected) <span class="link"><a href="Cogl.Renderer.html" title="Cogl.Renderer">Cogl.Renderer</a></span> object. A
+<span class="link"><a href="Cogl.Renderer.html" title="Cogl.Renderer">Cogl.Renderer</a></span> represents a means to render. It encapsulates the
+selection of an underlying driver, such as OpenGL or OpenGL-ES and
+a selection of a window system binding API such as GLX, or EGL or
+WGL.</p>
+<p class="p">While the renderer is unconnected it can be configured so that
+applications may specify backend constraints, such as "must use
+x11" for example via <span class="link"><a href="Cogl.Renderer.add_constraint.html" title="Cogl.Renderer.prototype.add_constraint">Cogl.Renderer.prototype.add_constraint</a></span>.</p>
+<p class="p">There are also some platform specific configuration apis such
+as cogl_xlib_renderer_set_foreign_display() that may also be
+used while the renderer is unconnected.</p>
+<p class="p">Once the renderer has been configured, then it may (optionally) be
+explicitly connected using <span class="link"><a href="Cogl.Renderer.connect.html" title="Cogl.Renderer.prototype.connect">Cogl.Renderer.prototype.connect</a></span> which allows
+errors to be handled gracefully and potentially fallback
+configurations can be tried out if there are initial failures.</p>
+<p class="p">If a renderer is not explicitly connected then <span class="link"><a href="Cogl.Display.new.html" title="Cogl.Display.new">Cogl.Display.new</a></span>
+will automatically connect the renderer for you. If you don't
+have any code to deal with error/fallback situations then its fine
+to just let Cogl do the connection for you.</p>
+<p class="p">Once you have setup your renderer then the next step is to create a
+<span class="link"><a href="Cogl.Display.html" title="Cogl.Display">Cogl.Display</a></span> using <span class="link"><a href="Cogl.Display.new.html" title="Cogl.Display.new">Cogl.Display.new</a></span>.</p>
+<p class="p">&lt;note&gt;Many applications don't need to explicitly use
+<span class="link"><a href="Cogl.Renderer.new.html" title="Cogl.Renderer.new">Cogl.Renderer.new</a></span> or <span class="link"><a href="Cogl.Display.new.html" title="Cogl.Display.new">Cogl.Display.new</a></span> and can just jump
+straight to <span class="link"><a href="Cogl.Context.new.html" title="Cogl.Context.new">Cogl.Context.new</a></span> and pass a <span class="code">null</span> display argument
+so Cogl will automatically connect and setup a renderer and
+display.&lt;/note&gt;</p>
+<p class="p">Since 1.10</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">A newly created <span class="link"><a href="Cogl.Renderer.html" title="Cogl.Renderer">Cogl.Renderer</a></span>.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.Renderer.html" title="Cogl.Renderer">Cogl.Renderer</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

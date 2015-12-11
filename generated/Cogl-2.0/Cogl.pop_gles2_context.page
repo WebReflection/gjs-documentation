@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Cogl.pop_gles2_context"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_pop_gles2_context</api:name>
+      <api:arg>
+        <api:type>Cogl.Context</api:type>
+        <api:name>ctx</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.pop_gles2_context</title>
+  <synopsis><code mime="text/x-gjs">
+function pop_gles2_context(ctx: <link xref="Cogl.Context">Cogl.Context</link>): void {
+    // Gjs wrapper for cogl_pop_gles2_context()
+}
+  </code></synopsis>
+  <p>Restores the previously active <link xref="Cogl.GLES2Context"/> if there
+were nested calls to <link xref="Cogl.push_gles2_context"/> or otherwise
+restores the ability to render with the Cogl api instead
+of OpenGLES 2.0.</p>  <p>The behaviour is undefined if calls to <link xref="Cogl.pop_gles2_context"/>
+are not balenced with the number of corresponding calls to
+<link xref="Cogl.push_gles2_context"/>.</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>ctx</code></title>
+  <p>A <link xref="Cogl.Context"/></p>
+</item>
+</terms>
+
+</page>

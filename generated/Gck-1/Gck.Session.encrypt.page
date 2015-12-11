@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<page id="Gck.Session.encrypt"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Session" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>ByteArray</api:type>
+      </api:returns>
+      <api:name>gck_session_encrypt</api:name>
+      <api:arg>
+        <api:type>Gck.Object</api:type>
+        <api:name>key</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gulong)</api:type>
+        <api:name>mech_type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>ByteArray</api:type>
+        <api:name>input</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Session.prototype.encrypt</title>
+  <synopsis><code mime="text/x-gjs">
+function encrypt(key: <link xref="Gck.Object">Gck.Object</link>, mech_type: Number(gulong), input: ByteArray, cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>): [return_value: ByteArray, n_result: Number(gsize)] {
+    // Gjs wrapper for gck_session_encrypt()
+}
+  </code></synopsis>
+  <p>Encrypt data in a mechanism specific manner. This call may
+block for an indefinite period.</p>
+
+<terms>
+<item>
+<title><code>key</code></title>
+  <p>The key to encrypt with.</p>
+</item>
+<item>
+<title><code>mech_type</code></title>
+  <p>The mechanism type to use for encryption.</p>
+</item>
+<item>
+<title><code>input</code></title>
+  <p>the data to encrypt</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>Optional cancellation object, or <code>null</code></p>
+</item>
+<item>
+<title><code>return_value</code></title>
+  <p>the data that was encrypted,
+         or <code>null</code> if an error occured.</p>
+</item>
+<item>
+<title><code>n_result</code></title>
+  <p>location to store the length of the result data</p>
+</item>
+</terms>
+
+</page>

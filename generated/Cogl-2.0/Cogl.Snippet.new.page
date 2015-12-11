@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<page id="Cogl.Snippet.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Snippet" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Snippet</api:type>
+      </api:returns>
+      <api:name>cogl_snippet_new</api:name>
+      <api:arg>
+        <api:type>Cogl.SnippetHook</api:type>
+        <api:name>hook</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>declarations</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>post</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Snippet.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(hook: <link xref="Cogl.SnippetHook">Cogl.SnippetHook</link>, declarations: String, post: String): <link xref="Cogl.Snippet">Cogl.Snippet</link> {
+    // Gjs wrapper for cogl_snippet_new()
+}
+  </code></synopsis>
+  <p>Allocates and initializes a new snippet with the given source strings.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>hook</code></title>
+  <p>The point in the pipeline that this snippet will wrap around
+  or replace.</p>
+</item>
+<item>
+<title><code>declarations</code></title>
+  <p>The source code for the declarations for this
+  snippet or <code>null</code>. See <link xref="Cogl.Snippet.set_declarations"/>.</p>
+</item>
+<item>
+<title><code>post</code></title>
+  <p>The source code to run after the hook point where this
+  shader snippet is attached or <code>null</code>. See <link xref="Cogl.Snippet.set_post"/>.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a pointer to a new <link xref="Cogl.Snippet"/></p>
+</item>
+</terms>
+
+</page>

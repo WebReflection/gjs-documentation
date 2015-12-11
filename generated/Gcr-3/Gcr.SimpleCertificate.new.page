@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gcr.SimpleCertificate.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.SimpleCertificate" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gcr.SimpleCertificate</api:type>
+      </api:returns>
+      <api:name>gcr_simple_certificate_new</api:name>
+      <api:arg>
+        <api:type>ByteArray</api:type>
+        <api:name>data</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.SimpleCertificate.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(data: ByteArray): <link xref="Gcr.SimpleCertificate">Gcr.SimpleCertificate</link> {
+    // Gjs wrapper for gcr_simple_certificate_new()
+}
+  </code></synopsis>
+  <p>Create a new <link xref="Gcr.SimpleCertificate"/> for the raw DER data. The <code>data</code> memory is
+copied so you can dispose of it after this function returns.</p>
+
+<terms>
+<item>
+<title><code>data</code></title>
+  <p>the raw DER certificate data</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a new <link xref="Gcr.SimpleCertificate"/></p>
+</item>
+</terms>
+
+</page>

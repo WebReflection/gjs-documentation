@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<page id="Cogl.Winding"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Cogl.Winding</title>
+  <p>Enum used to represent the two directions of rotation. This can be
+used to set the front face for culling by calling
+<link xref="Cogl.Pipeline.set_front_face_winding"/>.</p>
+
+<terms>
+<item>
+<title><code>Winding.CLOCKWISE</code></title>
+  <p>Vertices are in a clockwise order</p>
+</item>
+<item>
+<title><code>Winding.COUNTER_CLOCKWISE</code></title>
+  <p>Vertices are in a counter-clockwise order</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

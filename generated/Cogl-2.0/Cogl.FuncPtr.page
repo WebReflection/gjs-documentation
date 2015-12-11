@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<page id="Cogl.FuncPtr"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Cogl.FuncPtr</title>
+  <synopsis><code mime="text/x-gjs">
+function onFuncPtr(): void {
+}
+  </code></synopsis>
+  <p>The type used by cogl for function pointers, note that this type
+is used as a generic catch-all cast for function pointers and the
+actual arguments and return type may be different.</p>
+
+
+</page>

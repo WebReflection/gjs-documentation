@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="Cogl.Output.get_x"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Output" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gint)</api:type>
+      </api:returns>
+      <api:name>cogl_output_get_x</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Output.prototype.get_x</title>
+  <synopsis><code mime="text/x-gjs">
+function get_x(): Number(gint) {
+    // Gjs wrapper for cogl_output_get_x()
+}
+  </code></synopsis>
+  <p>Gets the X position of the output with respect to the coordinate
+system of the screen.</p>
+  <p>Since 1.14</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the X position of the output as a pixel offset
+ from the left side of the screen coordinate space</p>
+</item>
+</terms>
+
+</page>

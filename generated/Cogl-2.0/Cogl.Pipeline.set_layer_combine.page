@@ -1,0 +1,118 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.set_layer_combine"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_set_layer_combine</api:name>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>layer_index</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>blend_string</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.set_layer_combine</title>
+  <synopsis><code mime="text/x-gjs">
+function set_layer_combine(layer_index: Number(gint), blend_string: String): <link xref="Cogl.Bool">Cogl.Bool</link> {
+    // Gjs wrapper for cogl_pipeline_set_layer_combine()
+}
+  </code></synopsis>
+  <p>If not already familiar; you can refer
+&lt;link linkend="cogl-Blend-Strings"&gt;here&lt;/link&gt; for an overview of what blend
+strings are and there syntax.</p>  <p>These are all the functions available for texture combining:
+&lt;itemizedlist&gt;
+  &lt;listitem&gt;REPLACE(arg0) = arg0&lt;/listitem&gt;
+  &lt;listitem&gt;MODULATE(arg0, arg1) = arg0 x arg1&lt;/listitem&gt;
+  &lt;listitem&gt;ADD(arg0, arg1) = arg0 + arg1&lt;/listitem&gt;
+  &lt;listitem&gt;ADD_SIGNED(arg0, arg1) = arg0 + arg1 - 0.5&lt;/listitem&gt;
+  &lt;listitem&gt;INTERPOLATE(arg0, arg1, arg2) = arg0 x arg2 + arg1 x (1 - arg2)&lt;/listitem&gt;
+  &lt;listitem&gt;SUBTRACT(arg0, arg1) = arg0 - arg1&lt;/listitem&gt;
+  &lt;listitem&gt;
+    &lt;programlisting&gt;
+ DOT3_RGB(arg0, arg1) = 4 x ((arg0[R] - 0.5)) * (arg1[R] - 0.5) +
+                             (arg0[G] - 0.5)) * (arg1[G] - 0.5) +
+                             (arg0[B] - 0.5)) * (arg1[B] - 0.5))
+    &lt;/programlisting&gt;
+  &lt;/listitem&gt;
+  &lt;listitem&gt;
+    &lt;programlisting&gt;
+ DOT3_RGBA(arg0, arg1) = 4 x ((arg0[R] - 0.5)) * (arg1[R] - 0.5) +
+                              (arg0[G] - 0.5)) * (arg1[G] - 0.5) +
+                              (arg0[B] - 0.5)) * (arg1[B] - 0.5))
+    &lt;/programlisting&gt;
+  &lt;/listitem&gt;
+&lt;/itemizedlist&gt;</p>  <p>Refer to the
+&lt;link linkend="cogl-Blend-String-syntax"&gt;color-source syntax&lt;/link&gt; for
+describing the arguments. The valid source names for texture combining
+are:
+&lt;variablelist&gt;
+  &lt;varlistentry&gt;
+    &lt;term&gt;TEXTURE&lt;/term&gt;
+    &lt;listitem&gt;Use the color from the current texture layer&lt;/listitem&gt;
+  &lt;/varlistentry&gt;
+  &lt;varlistentry&gt;
+    &lt;term&gt;TEXTURE_0, TEXTURE_1, etc&lt;/term&gt;
+    &lt;listitem&gt;Use the color from the specified texture layer&lt;/listitem&gt;
+  &lt;/varlistentry&gt;
+  &lt;varlistentry&gt;
+    &lt;term&gt;CONSTANT&lt;/term&gt;
+    &lt;listitem&gt;Use the color from the constant given with
+    <link xref="Cogl.Pipeline.set_layer_combine_constant"/>&lt;/listitem&gt;
+  &lt;/varlistentry&gt;
+  &lt;varlistentry&gt;
+    &lt;term&gt;PRIMARY&lt;/term&gt;
+    &lt;listitem&gt;Use the color of the pipeline as set with
+    <link xref="Cogl.Pipeline.set_color"/>&lt;/listitem&gt;
+  &lt;/varlistentry&gt;
+  &lt;varlistentry&gt;
+    &lt;term&gt;PREVIOUS&lt;/term&gt;
+    &lt;listitem&gt;Either use the texture color from the previous layer, or
+    if this is layer 0, use the color of the pipeline as set with
+    <link xref="Cogl.Pipeline.set_color"/>&lt;/listitem&gt;
+  &lt;/varlistentry&gt;
+&lt;/variablelist&gt;</p>  <p>&lt;refsect2 id="cogl-Layer-Combine-Examples"&gt;
+  &lt;title&gt;Layer Combine Examples&lt;/title&gt;
+  &lt;para&gt;This is effectively what the default blending is:&lt;/para&gt;
+  &lt;informalexample&gt;&lt;programlisting&gt;
+  RGBA = MODULATE (PREVIOUS, TEXTURE)
+  &lt;/programlisting&gt;&lt;/informalexample&gt;
+  &lt;para&gt;This could be used to cross-fade between two images, using
+  the alpha component of a constant as the interpolator. The constant
+  color is given by calling
+  <link xref="Cogl.Pipeline.set_layer_combine_constant"/>.&lt;/para&gt;
+  &lt;informalexample&gt;&lt;programlisting&gt;
+  RGBA = INTERPOLATE (PREVIOUS, TEXTURE, CONSTANT[A])
+  &lt;/programlisting&gt;&lt;/informalexample&gt;
+&lt;/refsect2&gt;</p>  <p>&lt;note&gt;You can't give a multiplication factor for arguments as you can
+with blending.&lt;/note&gt;</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>layer_index</code></title>
+  <p>Specifies the layer you want define a combine function for</p>
+</item>
+<item>
+<title><code>blend_string</code></title>
+  <p>A &lt;link linkend="cogl-Blend-Strings"&gt;Cogl blend string&lt;/link&gt;
+   describing the desired texture combine function.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if the blend string was successfully parsed, and the
+  described texture combining is supported by the underlying driver and
+  or hardware. On failure, <code>false</code> is returned and @error is set</p>
+</item>
+</terms>
+
+</page>

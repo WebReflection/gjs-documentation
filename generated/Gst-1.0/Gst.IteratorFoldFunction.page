@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gst.IteratorFoldFunction"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Gst.IteratorFoldFunction</title>
+  <synopsis><code mime="text/x-gjs">
+function onIteratorFoldFunction(item: Any, ret: Any): Boolean {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>item</code></title>
+
+</item>
+<item>
+<title><code>ret</code></title>
+
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

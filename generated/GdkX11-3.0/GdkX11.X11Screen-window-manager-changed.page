@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page id="GdkX11.X11Screen-window-manager-changed"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GdkX11.X11Screen" group="signal" type="guide"/>
+    <title type="link" role="topic">window-manager-changed</title>
+  </info>
+  <title>GdkX11.X11Screen::window-manager-changed</title>
+  <synopsis><code mime="text/x-gjs">
+connect('window-manager-changed', function (x11Screen, ): void);
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>x11Screen</code></title>
+<p>instance of <link xref="GdkX11.X11Screen"/> that is emitting the signal</p>
+</item>
+</terms>
+
+</page>

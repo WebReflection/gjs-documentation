@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Cogl.debug_matrix_entry_print"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_debug_matrix_entry_print</api:name>
+      <api:arg>
+        <api:type>Cogl.MatrixEntry</api:type>
+        <api:name>entry</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.debug_matrix_entry_print</title>
+  <synopsis><code mime="text/x-gjs">
+function debug_matrix_entry_print(entry: <link xref="Cogl.MatrixEntry">Cogl.MatrixEntry</link>): void {
+    // Gjs wrapper for cogl_debug_matrix_entry_print()
+}
+  </code></synopsis>
+  <p>Allows visualizing the operations that build up the given <code>entry</code>
+for debugging purposes by printing to stdout.</p>
+
+<terms>
+<item>
+<title><code>entry</code></title>
+  <p>A <link xref="Cogl.MatrixEntry"/></p>
+</item>
+</terms>
+
+</page>

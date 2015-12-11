@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Pango.FontsetForeachFunc"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Pango.FontsetForeachFunc</title>
+  <synopsis><code mime="text/x-gjs">
+function onFontsetForeachFunc(fontset: <link xref="Pango.Fontset">Pango.Fontset</link>, font: <link xref="Pango.Font">Pango.Font</link>): Boolean {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>fontset</code></title>
+
+</item>
+<item>
+<title><code>font</code></title>
+
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

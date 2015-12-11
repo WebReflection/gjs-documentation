@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Cogl.GLES2Vtable.glGetShaderPrecisionFormat"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Cogl.GLES2Vtable.glGetShaderPrecisionFormat</title>
+  <synopsis><code mime="text/x-gjs">
+function onglGetShaderPrecisionFormat(shadertype: <link href="../GL-1.0/GL.enum.html">GL.enum</link>, precisiontype: <link href="../GL-1.0/GL.enum.html">GL.enum</link>, range: <link href="../GL-1.0/GL.int.html">GL.int</link>, precision: <link href="../GL-1.0/GL.int.html">GL.int</link>): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>shadertype</code></title>
+
+</item>
+<item>
+<title><code>precisiontype</code></title>
+
+</item>
+<item>
+<title><code>range</code></title>
+
+</item>
+<item>
+<title><code>precision</code></title>
+
+</item>
+</terms>
+
+</page>

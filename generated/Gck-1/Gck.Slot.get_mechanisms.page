@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gck.Slot.get_mechanisms"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Slot" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(Number(gulong))</api:type>
+      </api:returns>
+      <api:name>gck_slot_get_mechanisms</api:name>
+    </api:function>
+  </info>
+  <title>Gck.Slot.prototype.get_mechanisms</title>
+  <synopsis><code mime="text/x-gjs">
+function get_mechanisms(): Array(Number(gulong)) {
+    // Gjs wrapper for gck_slot_get_mechanisms()
+}
+  </code></synopsis>
+  <p>Get the available mechanisms for this slot.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a list of the mechanisms
+         for this slot, which should be freed with g_array_free ()</p>
+</item>
+</terms>
+
+</page>

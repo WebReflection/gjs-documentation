@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<page id="Cogl.Bitmap.new_with_size"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Bitmap" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bitmap</api:type>
+      </api:returns>
+      <api:name>cogl_bitmap_new_with_size</api:name>
+      <api:arg>
+        <api:type>Cogl.Context</api:type>
+        <api:name>context</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint)</api:type>
+        <api:name>width</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint)</api:type>
+        <api:name>height</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.PixelFormat</api:type>
+        <api:name>format</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Bitmap.new_with_size</title>
+  <synopsis><code mime="text/x-gjs">
+function new_with_size(context: <link xref="Cogl.Context">Cogl.Context</link>, width: Number(guint), height: Number(guint), format: <link xref="Cogl.PixelFormat">Cogl.PixelFormat</link>): <link xref="Cogl.Bitmap">Cogl.Bitmap</link> {
+    // Gjs wrapper for cogl_bitmap_new_with_size()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="Cogl.Bitmap"/> with the given width, height and format.
+The initial contents of the bitmap are undefined.</p>  <p>The data for the bitmap will be stored in a newly created
+<link xref="Cogl.PixelBuffer"/>. You can get a pointer to the pixel buffer using
+<link xref="Cogl.Bitmap.get_buffer"/>. The <link xref="Cogl.Buffer"/> API can then be
+used to fill the bitmap with data.</p>  <p>&lt;note&gt;Cogl will try its best to provide a hardware array you can
+map, write into and effectively do a zero copy upload when creating
+a texture from it with cogl_texture_new_from_bitmap(). For various
+reasons, such arrays are likely to have a stride larger than width
+* bytes_per_pixel. The user must take the stride into account when
+writing into it. The stride can be retrieved with
+<link xref="Cogl.Bitmap.get_rowstride"/>.&lt;/note&gt;</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>context</code></title>
+  <p>A <link xref="Cogl.Context"/></p>
+</item>
+<item>
+<title><code>width</code></title>
+  <p>width of the bitmap in pixels</p>
+</item>
+<item>
+<title><code>height</code></title>
+  <p>height of the bitmap in pixels</p>
+</item>
+<item>
+<title><code>format</code></title>
+  <p>the format of the pixels the array will store</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link xref="Cogl.PixelBuffer"/> representing the
+              newly created array or <code>null</code> on failure</p>
+</item>
+</terms>
+
+</page>

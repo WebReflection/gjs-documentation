@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<page id="Gcr.Prompt"
+      type="guide"
+      style="interface"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="interface" type="guide"/>
+  </info>
+  <title>Gcr.Prompt</title>
+  <synopsis><code>
+const Gcr = imports.gi.Gcr;
+
+let prompt = new Gcr.Prompt({
+    <link xref='Gcr.Prompt-caller-window'>caller_window</link>: value,
+    <link xref='Gcr.Prompt-cancel-label'>cancel_label</link>: value,
+    <link xref='Gcr.Prompt-choice-label'>choice_label</link>: value,
+    <link xref='Gcr.Prompt-continue-label'>continue_label</link>: value,
+    <link xref='Gcr.Prompt-description'>description</link>: value,
+    <link xref='Gcr.Prompt-message'>message</link>: value,
+    <link xref='Gcr.Prompt-title'>title</link>: value,
+    <link xref='Gcr.Prompt-warning'>warning</link>: value,
+});
+  </code></synopsis>
+  <p>Represents a <link xref="Gcr.Prompt"/> displayed to the user.</p>
+
+  <synopsis>
+    <title>Prerequisites</title>
+    <p>Prompt requires GObject.Object</p>
+  </synopsis>
+  <synopsis>
+    <title>Known Implementations</title>
+    <p>Prompt is implemented by SystemPrompt</p>
+  </synopsis>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="property" style="linklist">
+    <title>Properties</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="signal" style="linklist">
+    <title>Signals</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="vfunc" style="linklist">
+    <title>Virtual functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

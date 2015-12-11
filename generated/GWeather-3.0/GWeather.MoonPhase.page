@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page id="GWeather.MoonPhase"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>GWeather.MoonPhase</title>
+  <p>The current phase of the moon, represented as degrees,
+where 0 is the new moon, 90 is the first quarter, etc.</p>
+
+</page>

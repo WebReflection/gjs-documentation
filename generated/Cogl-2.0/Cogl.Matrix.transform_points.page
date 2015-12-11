@@ -1,0 +1,103 @@
+<?xml version="1.0"?>
+<page id="Cogl.Matrix.transform_points"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Matrix" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_matrix_transform_points</api:name>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>n_components</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gsize)</api:type>
+        <api:name>stride_in</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>void</api:type>
+        <api:name>points_in</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gsize)</api:type>
+        <api:name>stride_out</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>void</api:type>
+        <api:name>points_out</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>n_points</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Matrix.prototype.transform_points</title>
+  <synopsis><code mime="text/x-gjs">
+function transform_points(n_components: Number(gint), stride_in: Number(gsize), points_in: void, stride_out: Number(gsize), points_out: void, n_points: Number(gint)): void {
+    // Gjs wrapper for cogl_matrix_transform_points()
+}
+  </code></synopsis>
+  <p>Transforms an array of input points and writes the result to
+another array of output points. The input points can either have 2
+or 3 components each. The output points always have 3 components.
+The output array can simply point to the input array to do the
+transform in-place.</p>  <p>If you need to transform 4 component points see
+<link xref="Cogl.Matrix.project_points"/>.</p>  <p>Here's an example with differing input/output strides:
+|[
+typedef struct {
+  float x,y;
+  uint8_t r,g,b,a;
+  float s,t,p;
+} MyInVertex;
+typedef struct {
+  uint8_t r,g,b,a;
+  float x,y,z;
+} MyOutVertex;
+MyInVertex vertices[N_VERTICES];
+MyOutVertex results[N_VERTICES];
+CoglMatrix matrix;</p>  <p>my_load_vertices (vertices);
+my_get_matrix (&amp;matrix);</p>  <p>cogl_matrix_transform_points (&amp;matrix,
+                              2,
+                              sizeof (MyInVertex),
+                              &amp;vertices[0].x,
+                              sizeof (MyOutVertex),
+                              &amp;results[0].x,
+                              N_VERTICES);
+]|</p>
+
+<terms>
+<item>
+<title><code>n_components</code></title>
+  <p>The number of position components for each input point.
+               (either 2 or 3)</p>
+</item>
+<item>
+<title><code>stride_in</code></title>
+  <p>The stride in bytes between input points.</p>
+</item>
+<item>
+<title><code>points_in</code></title>
+  <p>A pointer to the first component of the first input point.</p>
+</item>
+<item>
+<title><code>stride_out</code></title>
+  <p>The stride in bytes between output points.</p>
+</item>
+<item>
+<title><code>points_out</code></title>
+  <p>A pointer to the first component of the first output point.</p>
+</item>
+<item>
+<title><code>n_points</code></title>
+  <p>The number of points to transform.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<page id="Cogl.Matrix.init_translation"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Matrix" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_matrix_init_translation</api:name>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>tx</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>ty</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>tz</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Matrix.prototype.init_translation</title>
+  <synopsis><code mime="text/x-gjs">
+function init_translation(tx: Number(gfloat), ty: Number(gfloat), tz: Number(gfloat)): void {
+    // Gjs wrapper for cogl_matrix_init_translation()
+}
+  </code></synopsis>
+  <p>Resets matrix to the (tx, ty, tz) translation matrix:</p>  <p>|[
+  .xx=1; .xy=0; .xz=0; .xw=tx;
+  .yx=0; .yy=1; .yz=0; .yw=ty;
+  .zx=0; .zy=0; .zz=1; .zw=tz;
+  .wx=0; .wy=0; .wz=0; .ww=1;
+]|</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>tx</code></title>
+  <p>x coordinate of the translation vector</p>
+</item>
+<item>
+<title><code>ty</code></title>
+  <p>y coordinate of the translation vector</p>
+</item>
+<item>
+<title><code>tz</code></title>
+  <p>z coordinate of the translation vector</p>
+</item>
+</terms>
+
+</page>

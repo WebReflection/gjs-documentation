@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<page id="Notify.EXPIRES_NEVER"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>Notify.EXPIRES_NEVER</title>
+  <p>The notification never expires. It stays open until closed by the calling API
+or the user.</p>
+
+</page>

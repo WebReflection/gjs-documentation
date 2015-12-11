@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gck.Session-options"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Session" group="property" type="guide"/>
+    <title type="link" role="topic">options</title>
+  </info>
+  <title>Gck.Session.options</title>
+  <synopsis><code mime="text/x-gjs">
+Session.options: <link xref="Gck.SessionOptions">Gck.SessionOptions</link> (Read / Write / Construct Only)
+  </code></synopsis>
+  <p>The options this session was opened with.</p>
+
+</page>

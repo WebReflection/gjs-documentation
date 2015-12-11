@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Cogl.DepthState.get_test_enabled"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.DepthState" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_depth_state_get_test_enabled</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.DepthState.prototype.get_test_enabled</title>
+  <synopsis><code mime="text/x-gjs">
+function get_test_enabled(): <link xref="Cogl.Bool">Cogl.Bool</link> {
+    // Gjs wrapper for cogl_depth_state_get_test_enabled()
+}
+  </code></synopsis>
+  <p>Gets the current depth test enabled state as previously set by
+<link xref="Cogl.DepthState.set_test_enabled"/>.</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>The pipeline's current depth test enabled state.</p>
+</item>
+</terms>
+
+</page>

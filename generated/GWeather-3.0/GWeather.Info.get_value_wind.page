@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<page id="GWeather.Info.get_value_wind"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Info" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gweather_info_get_value_wind</api:name>
+      <api:arg>
+        <api:type>GWeather.SpeedUnit</api:type>
+        <api:name>unit</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GWeather.Info.prototype.get_value_wind</title>
+  <synopsis><code mime="text/x-gjs">
+function get_value_wind(unit: <link xref="GWeather.SpeedUnit">GWeather.SpeedUnit</link>): [ok: Boolean, speed: Number(gdouble), direction: <link xref="GWeather.WindDirection">GWeather.WindDirection</link>] {
+    // Gjs wrapper for gweather_info_get_value_wind()
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>unit</code></title>
+  <p>the desired unit, as a <link xref="GWeather.SpeedUnit"/></p>
+</item>
+<item>
+<title><code>ok</code></title>
+  <p>TRUE if <code>speed</code> and <code>direction</code> are valid, FALSE otherwise.</p>
+</item>
+<item>
+<title><code>speed</code></title>
+  <p>forecasted wind speed</p>
+</item>
+<item>
+<title><code>direction</code></title>
+  <p>forecasted wind direction</p>
+</item>
+</terms>
+
+</page>

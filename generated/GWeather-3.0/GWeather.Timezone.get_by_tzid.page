@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="GWeather.Timezone.get_by_tzid"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Timezone" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GWeather.Timezone</api:type>
+      </api:returns>
+      <api:name>gweather_timezone_get_by_tzid</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>tzid</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GWeather.Timezone.get_by_tzid</title>
+  <synopsis><code mime="text/x-gjs">
+function get_by_tzid(tzid: String): <link xref="GWeather.Timezone">GWeather.Timezone</link> {
+    // Gjs wrapper for gweather_timezone_get_by_tzid()
+}
+  </code></synopsis>
+  <p>Get the <link xref="GWeather.Timezone"/> for <code>tzid</code>.</p>
+  <p>Since 3.12</p>
+<terms>
+<item>
+<title><code>tzid</code></title>
+  <p>A timezone identifier, like "America/New_York" or "Europe/London"</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>A <link xref="GWeather.Timezone"/>. This object
+belongs to GWeather, do not unref it.</p>
+</item>
+</terms>
+
+</page>

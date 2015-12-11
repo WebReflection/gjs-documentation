@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<page id="Cogl.MatrixEntry.calculate_translation"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.MatrixEntry" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_matrix_entry_calculate_translation</api:name>
+      <api:arg>
+        <api:type>Cogl.MatrixEntry</api:type>
+        <api:name>entry1</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.MatrixEntry.prototype.calculate_translation</title>
+  <synopsis><code mime="text/x-gjs">
+function calculate_translation(entry1: <link xref="Cogl.MatrixEntry">Cogl.MatrixEntry</link>): [return_value: <link xref="Cogl.Bool">Cogl.Bool</link>, x: Number(gfloat), y: Number(gfloat), z: Number(gfloat)] {
+    // Gjs wrapper for cogl_matrix_entry_calculate_translation()
+}
+  </code></synopsis>
+  <p>Determines if the only difference between two transforms is a
+translation and if so returns what the <code>x</code>, <code>y</code>, and <code>z</code> components of
+the translation are.</p>  <p>If the difference between the two translations involves anything
+other than a translation then the function returns <code>false</code>.</p>
+
+<terms>
+<item>
+<title><code>entry1</code></title>
+  <p>A second reference transform</p>
+</item>
+<item>
+<title><code>return_value</code></title>
+  <p><code>true</code> if the only difference between the transform of
+               <code>entry0</code> and the transform of <code>entry1</code> is a translation,
+               otherwise <code>false</code>.</p>
+</item>
+<item>
+<title><code>x</code></title>
+  <p>The destination for the x-component of the translation</p>
+</item>
+<item>
+<title><code>y</code></title>
+  <p>The destination for the y-component of the translation</p>
+</item>
+<item>
+<title><code>z</code></title>
+  <p>The destination for the z-component of the translation</p>
+</item>
+</terms>
+
+</page>

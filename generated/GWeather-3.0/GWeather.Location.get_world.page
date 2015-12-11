@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="GWeather.Location.get_world"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Location" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GWeather.Location</api:type>
+      </api:returns>
+      <api:name>gweather_location_get_world</api:name>
+    </api:function>
+  </info>
+  <title>GWeather.Location.get_world</title>
+  <synopsis><code mime="text/x-gjs">
+function get_world(): <link xref="GWeather.Location">GWeather.Location</link> {
+    // Gjs wrapper for gweather_location_get_world()
+}
+  </code></synopsis>
+  <p>Obtains the shared <link xref="GWeather.Location"/> of type <link xref="GWeather.LocationLevel"/>.world,
+representing a hierarchy containing all of the locations from
+Locations.xml.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link xref="GWeather.LocationLevel"/>.world
+location, or <code>null</code> if Locations.xml could not be found or could not be parsed.
+The return value is owned by libgweather and should not be modified or freed.</p>
+</item>
+</terms>
+
+</page>

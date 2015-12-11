@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<page id="Cogl.WinsysID"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Cogl.WinsysID</title>
+  <p>Identifies specific window system backends that Cogl supports.</p>  <p>These can be used to query what backend Cogl is using or to try and
+explicitly select a backend to use.</p>
+
+<terms>
+<item>
+<title><code>WinsysID.ANY</code></title>
+  <p>Implies no preference for which backend is used</p>
+</item>
+<item>
+<title><code>WinsysID.STUB</code></title>
+  <p>Use the no-op stub backend</p>
+</item>
+<item>
+<title><code>WinsysID.GLX</code></title>
+  <p>Use the GLX window system binding API</p>
+</item>
+<item>
+<title><code>WinsysID.EGL_XLIB</code></title>
+  <p>Use EGL with the X window system via XLib</p>
+</item>
+<item>
+<title><code>WinsysID.EGL_NULL</code></title>
+  <p>Use EGL with the PowerVR NULL window system</p>
+</item>
+<item>
+<title><code>WinsysID.EGL_GDL</code></title>
+  <p>Use EGL with the GDL platform</p>
+</item>
+<item>
+<title><code>WinsysID.EGL_WAYLAND</code></title>
+  <p>Use EGL with the Wayland window system</p>
+</item>
+<item>
+<title><code>WinsysID.EGL_KMS</code></title>
+  <p>Use EGL with the KMS platform</p>
+</item>
+<item>
+<title><code>WinsysID.EGL_ANDROID</code></title>
+  <p>Use EGL with the Android platform</p>
+</item>
+<item>
+<title><code>WinsysID.EGL_MIR</code></title>
+  <p>Use EGL with the Mir server</p>
+</item>
+<item>
+<title><code>WinsysID.WGL</code></title>
+  <p>Use the Microsoft Windows WGL binding API</p>
+</item>
+<item>
+<title><code>WinsysID.SDL</code></title>
+  <p>Use the SDL window system</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

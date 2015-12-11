@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<page id="GdkX11.X11Window.foreign_new_for_display"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GdkX11.X11Window" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gdk.Window</api:type>
+      </api:returns>
+      <api:name>gdk_x11_window_foreign_new_for_display</api:name>
+      <api:arg>
+        <api:type>GdkX11.X11Display</api:type>
+        <api:name>display</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>xlib.Window</api:type>
+        <api:name>window</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GdkX11.X11Window.foreign_new_for_display</title>
+  <synopsis><code mime="text/x-gjs">
+function foreign_new_for_display(display: <link xref="GdkX11.X11Display">GdkX11.X11Display</link>, window: <link href="../xlib-2.0/xlib.Window.html">xlib.Window</link>): <link href="../Gdk-3.0/Gdk.Window.html">Gdk.Window</link> {
+    // Gjs wrapper for gdk_x11_window_foreign_new_for_display()
+}
+  </code></synopsis>
+  <p>Wraps a native window in a <link href="../Gdk-3.0/Gdk.Window.html">Gdk.Window</link>. The function will try to
+look up the window using <link xref="GdkX11.X11Window.lookup_for_display"/> first.
+If it does not find it there, it will create a new window.</p>  <p>This may fail if the window has been destroyed. If the window
+was already known to GDK, a new reference to the existing
+<link href="../Gdk-3.0/Gdk.Window.html">Gdk.Window</link> is returned.</p>
+  <p>Since 2.24</p>
+<terms>
+<item>
+<title><code>display</code></title>
+  <p>the <link href="../Gdk-3.0/Gdk.Display.html">Gdk.Display</link> where the window handle comes from.</p>
+</item>
+<item>
+<title><code>window</code></title>
+  <p>an Xlib Window</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link href="../Gdk-3.0/Gdk.Window.html">Gdk.Window</link> wrapper for the native
+  window, or <code>null</code> if the window has been destroyed. The wrapper
+  will be newly created, if one doesn’t exist already.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="Gck.Attribute.get_ulong"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Attribute" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gulong)</api:type>
+      </api:returns>
+      <api:name>gck_attribute_get_ulong</api:name>
+    </api:function>
+  </info>
+  <title>Gck.Attribute.prototype.get_ulong</title>
+  <synopsis><code mime="text/x-gjs">
+function get_ulong(): Number(gulong) {
+    // Gjs wrapper for gck_attribute_get_ulong()
+}
+  </code></synopsis>
+  <p>Get the CK_ULONG value of a PKCS\#11 attribute. No
+conversion is performed. It is an error to pass an attribute
+to this function unless you're know it's supposed to contain
+a value of the right type.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>The ulong value of the attribute.</p>
+</item>
+</terms>
+
+</page>

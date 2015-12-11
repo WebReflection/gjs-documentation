@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="Gck.Allocator"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Gck.Allocator</title>
+  <synopsis><code mime="text/x-gjs">
+function onAllocator(data: void, length: Number(gsize)): void {
+}
+  </code></synopsis>
+  <p>An allocator used to allocate data for the attributes in this GckAttributes set.</p>  <p>This is a function that acts like g_realloc. Specifically it frees when length is
+set to zero, it allocates when data is set to NULL, and it reallocates when both
+are valid.</p>
+
+<terms>
+<item>
+<title><code>data</code></title>
+  <p>Memory to allocate or deallocate.</p>
+</item>
+<item>
+<title><code>length</code></title>
+  <p>New length of memory.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>The allocated memory, or NULL when freeing.</p>
+</item>
+</terms>
+
+</page>

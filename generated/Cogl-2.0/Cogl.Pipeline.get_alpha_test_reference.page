@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.get_alpha_test_reference"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gfloat)</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_get_alpha_test_reference</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.get_alpha_test_reference</title>
+  <synopsis><code mime="text/x-gjs">
+function get_alpha_test_reference(): Number(gfloat) {
+    // Gjs wrapper for cogl_pipeline_get_alpha_test_reference()
+}
+  </code></synopsis>
+
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>The alpha test reference value of <code>pipeline</code>.</p>
+</item>
+</terms>
+
+</page>

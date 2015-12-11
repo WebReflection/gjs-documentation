@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Notify.Notification-app-name"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Notify.Notification" group="property" type="guide"/>
+    <title type="link" role="topic">app-name</title>
+  </info>
+  <title>Notify.Notification.app_name</title>
+  <synopsis><code mime="text/x-gjs">
+Notification.app_name: String (Read / Write)
+  </code></synopsis>
+
+
+</page>

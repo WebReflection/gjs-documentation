@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="Gcr.SystemPrompter.register"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.SystemPrompter" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gcr_system_prompter_register</api:name>
+      <api:arg>
+        <api:type>Gio.DBusConnection</api:type>
+        <api:name>connection</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.SystemPrompter.prototype.register</title>
+  <synopsis><code mime="text/x-gjs">
+function register(connection: <link href="../Gio-2.0/Gio.DBusConnection.html">Gio.DBusConnection</link>): void {
+    // Gjs wrapper for gcr_system_prompter_register()
+}
+  </code></synopsis>
+  <p>Register this system prompter on the DBus <code>connection</code>.</p>  <p>This makes the prompter available for clients to call. The prompter will
+remain registered until <link xref="Gcr.SystemPrompter.unregister"/> is called, or the
+prompter is unreferenced.</p>
+
+<terms>
+<item>
+<title><code>connection</code></title>
+  <p>a DBus connection</p>
+</item>
+</terms>
+
+</page>

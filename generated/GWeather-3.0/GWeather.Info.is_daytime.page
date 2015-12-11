@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="GWeather.Info.is_daytime"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Info" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gweather_info_is_daytime</api:name>
+    </api:function>
+  </info>
+  <title>GWeather.Info.prototype.is_daytime</title>
+  <synopsis><code mime="text/x-gjs">
+function is_daytime(): Boolean {
+    // Gjs wrapper for gweather_info_is_daytime()
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>Whether it is daytime (that is, if the sun is visible)
+  or not at the location and the point of time referred by <code>info</code>.
+  This is mostly equivalent to comparing the return value
+  of <link xref="GWeather.Info.get_value_sunrise"/> and
+  <link xref="GWeather.Info.get_value_sunset"/>, but it accounts also
+  for midnight sun and polar night, for locations within
+  the Artic and Antartic circles.</p>
+</item>
+</terms>
+
+</page>

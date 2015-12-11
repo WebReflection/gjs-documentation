@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.set_ambient"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_set_ambient</api:name>
+      <api:arg>
+        <api:type>Cogl.Color</api:type>
+        <api:name>ambient</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.set_ambient</title>
+  <synopsis><code mime="text/x-gjs">
+function set_ambient(ambient: <link xref="Cogl.Color">Cogl.Color</link>): void {
+    // Gjs wrapper for cogl_pipeline_set_ambient()
+}
+  </code></synopsis>
+  <p>Sets the pipeline's ambient color, in the standard OpenGL lighting
+model. The ambient color affects the overall color of the object.</p>  <p>Since the diffuse color will be intense when the light hits the surface
+directly, the ambient will be most apparent where the light hits at a
+slant.</p>  <p>The default value is (0.2, 0.2, 0.2, 1.0)</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>ambient</code></title>
+  <p>The components of the desired ambient color</p>
+</item>
+</terms>
+
+</page>

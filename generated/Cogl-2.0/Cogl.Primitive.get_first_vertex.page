@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Cogl.Primitive.get_first_vertex"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Primitive" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gint)</api:type>
+      </api:returns>
+      <api:name>cogl_primitive_get_first_vertex</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Primitive.prototype.get_first_vertex</title>
+  <synopsis><code mime="text/x-gjs">
+function get_first_vertex(): Number(gint) {
+    // Gjs wrapper for cogl_primitive_get_first_vertex()
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

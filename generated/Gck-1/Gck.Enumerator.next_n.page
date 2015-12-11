@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<page id="Gck.Enumerator.next_n"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Enumerator" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(Gck.Object)</api:type>
+      </api:returns>
+      <api:name>gck_enumerator_next_n</api:name>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>max_objects</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Enumerator.prototype.next_n</title>
+  <synopsis><code mime="text/x-gjs">
+function next_n(max_objects: Number(gint), cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>): Array(<link xref="Gck.Object">Gck.Object</link>) {
+    // Gjs wrapper for gck_enumerator_next_n()
+}
+  </code></synopsis>
+  <p>Get the next set of objects from the enumerator. The maximum number of
+objects can be specified with <code>max_objects</code>. If -1 is specified, then all
+the remaining objects will be returned.</p>  <p><code>null</code> is also returned if the function fails. Use the @error to determine
+whether a failure occurred or not.</p>
+
+<terms>
+<item>
+<title><code>max_objects</code></title>
+  <p>The maximum amount of objects to enumerate</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>A <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link> or <code>null</code></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>A list of objects, which
+should be freed using <link xref="Gck.list_unref_free"/>.</p>
+</item>
+</terms>
+
+</page>

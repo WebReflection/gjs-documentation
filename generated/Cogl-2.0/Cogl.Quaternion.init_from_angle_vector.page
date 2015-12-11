@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="Cogl.Quaternion.init_from_angle_vector"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Quaternion" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_quaternion_init_from_angle_vector</api:name>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>angle</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>axis3f</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Quaternion.prototype.init_from_angle_vector</title>
+  <synopsis><code mime="text/x-gjs">
+function init_from_angle_vector(angle: Number(gfloat), axis3f: Number(gfloat)): void {
+    // Gjs wrapper for cogl_quaternion_init_from_angle_vector()
+}
+  </code></synopsis>
+  <p>Initializes a quaternion that rotates <code>angle</code> degrees around the
+given @axis vector. The axis vector does not need to be
+normalized.</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>angle</code></title>
+  <p>The angle to rotate around <code>axis3f</code></p>
+</item>
+<item>
+<title><code>axis3f</code></title>
+  <p>your 3 component axis vector about which you want to rotate.</p>
+</item>
+</terms>
+
+</page>

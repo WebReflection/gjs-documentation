@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<page id="Gcr.SystemPromptError"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Gcr.SystemPromptError</title>
+  <p>No error returned by the <link xref="Gcr.SystemPrompt"/> is suitable for display or
+to the user.</p>  <p>If the system prompter can only show one prompt at a time, and there is
+already a prompt being displayed, and the timeout waiting to open the
+prompt expires, then <link xref="Gcr.SystemPromptError"/>.system_prompt_in_progress is returned.</p>
+
+<terms>
+<item>
+<title><code>SystemPromptError.SYSTEM_PROMPT_IN_PROGRESS</code></title>
+  <p>another prompt is already in progress</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

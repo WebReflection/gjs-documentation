@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gck.Module-functions"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Module" group="property" type="guide"/>
+    <title type="link" role="topic">functions</title>
+  </info>
+  <title>Gck.Module.functions</title>
+  <synopsis><code mime="text/x-gjs">
+Module.functions: void (Read / Write / Construct Only)
+  </code></synopsis>
+  <p>The raw PKCS&amp;num;11 function list for the module.</p>  <p>This points to a CK_FUNCTION_LIST structure.</p>
+
+</page>

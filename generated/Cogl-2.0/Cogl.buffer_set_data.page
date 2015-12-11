@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<page id="Cogl.buffer_set_data"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_buffer_set_data</api:name>
+      <api:arg>
+        <api:type>Cogl.Buffer</api:type>
+        <api:name>buffer</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gsize)</api:type>
+        <api:name>offset</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>void</api:type>
+        <api:name>data</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gsize)</api:type>
+        <api:name>size</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.buffer_set_data</title>
+  <synopsis><code mime="text/x-gjs">
+function buffer_set_data(buffer: <link xref="Cogl.Buffer">Cogl.Buffer</link>, offset: Number(gsize), data: void, size: Number(gsize)): <link xref="Cogl.Bool">Cogl.Bool</link> {
+    // Gjs wrapper for cogl_buffer_set_data()
+}
+  </code></synopsis>
+  <p>Updates part of the buffer with new data from <code>data</code>. Where to put this new
+data is controlled by <code>offset</code> and <code>offset</code> + <code>data</code> should be less than the
+buffer size.</p>
+  <p>Since 1.2</p>
+<terms>
+<item>
+<title><code>buffer</code></title>
+  <p>a buffer object</p>
+</item>
+<item>
+<title><code>offset</code></title>
+  <p>destination offset (in bytes) in the buffer</p>
+</item>
+<item>
+<title><code>data</code></title>
+  <p>a pointer to the data to be copied into the buffer</p>
+</item>
+<item>
+<title><code>size</code></title>
+  <p>number of bytes to copy</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> is the operation succeeded, <code>false</code> otherwise</p>
+</item>
+</terms>
+
+</page>

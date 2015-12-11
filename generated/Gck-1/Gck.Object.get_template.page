@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<page id="Gck.Object.get_template"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Object" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.Attributes</api:type>
+      </api:returns>
+      <api:name>gck_object_get_template</api:name>
+      <api:arg>
+        <api:type>Number(gulong)</api:type>
+        <api:name>attr_type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Object.prototype.get_template</title>
+  <synopsis><code mime="text/x-gjs">
+function get_template(attr_type: Number(gulong), cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>): <link xref="Gck.Attributes">Gck.Attributes</link> {
+    // Gjs wrapper for gck_object_get_template()
+}
+  </code></synopsis>
+  <p>Get an attribute template from the object. The attr_type must be for
+an attribute which returns a template.</p>  <p>This call may block for an indefinite period.</p>
+
+<terms>
+<item>
+<title><code>attr_type</code></title>
+  <p>The template attribute type.</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>Optional cancellation object, or NULL.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the resulting PKCS\#11 attribute template, or <code>null</code>
+         if an error occurred</p>
+</item>
+</terms>
+
+</page>

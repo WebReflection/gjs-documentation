@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="GWeather.Location.free_timezones"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Location" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gweather_location_free_timezones</api:name>
+      <api:arg>
+        <api:type>GWeather.Timezone</api:type>
+        <api:name>zones</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GWeather.Location.prototype.free_timezones</title>
+  <synopsis><code mime="text/x-gjs">
+function free_timezones(zones: <link xref="GWeather.Timezone">GWeather.Timezone</link>): void {
+    // Gjs wrapper for gweather_location_free_timezones()
+}
+  </code></synopsis>
+  <p>Frees the array of timezones returned by
+<link xref="GWeather.Location.get_timezones"/>.</p>
+
+<terms>
+<item>
+<title><code>zones</code></title>
+  <p>an array returned from <link xref="GWeather.Location.get_timezones"/></p>
+</item>
+</terms>
+
+</page>

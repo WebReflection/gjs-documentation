@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<page id="Cogl.TexturePixmapX11.set_damage_object"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.TexturePixmapX11" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_texture_pixmap_x11_set_damage_object</api:name>
+      <api:arg>
+        <api:type>Number(guint32)</api:type>
+        <api:name>damage</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.TexturePixmapX11ReportLevel</api:type>
+        <api:name>report_level</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.TexturePixmapX11.prototype.set_damage_object</title>
+  <synopsis><code mime="text/x-gjs">
+function set_damage_object(damage: Number(guint32), report_level: <link xref="Cogl.TexturePixmapX11ReportLevel">Cogl.TexturePixmapX11ReportLevel</link>): void {
+    // Gjs wrapper for cogl_texture_pixmap_x11_set_damage_object()
+}
+  </code></synopsis>
+  <p>Sets the damage object that will be used to track automatic updates
+to the <code>texture</code>. Damage tracking can be disabled by passing 0 for
+<code>damage</code>. Otherwise this damage will replace the one used if <code>true</code>
+was passed for automatic_updates to <link xref="Cogl.TexturePixmapX11.new"/>.</p>  <p>Note that Cogl will subtract from the damage region as it processes
+damage events.</p>
+  <p>Since 1.4</p>
+<terms>
+<item>
+<title><code>damage</code></title>
+  <p>A X11 Damage object or 0</p>
+</item>
+<item>
+<title><code>report_level</code></title>
+  <p>The report level which describes how to interpret
+  the damage events. This should match the level that the damage
+  object was created with.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.AtlasTexture.new_from_bitmap</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » <a class="trail" href="Cogl.AtlasTexture.html" title="Cogl.AtlasTexture">Cogl.AtlasTexture</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.AtlasTexture.new_from_bitmap</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function new_from_bitmap(bmp: <span class="link"><a href="Cogl.Bitmap.html" title="Cogl.Bitmap">Cogl.Bitmap</a></span>): <span class="link"><a href="Cogl.AtlasTexture.html" title="Cogl.AtlasTexture">Cogl.AtlasTexture</a></span> {
+    // Gjs wrapper for cogl_atlas_texture_new_from_bitmap()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Creates a new <span class="link"><a href="Cogl.AtlasTexture.html" title="Cogl.AtlasTexture">Cogl.AtlasTexture</a></span> texture based on data residing in a
+@bitmap. A <span class="link"><a href="Cogl.AtlasTexture.html" title="Cogl.AtlasTexture">Cogl.AtlasTexture</a></span> represents a sub-region within one of
+Cogl's shared texture atlases.</p>
+<p class="p">The storage for the texture is not allocated before this function
+returns. You can call <span class="link"><a href="Cogl.Texture.allocate.html" title="Cogl.Texture.prototype.allocate">Cogl.Texture.prototype.allocate</a></span> to explicitly
+allocate the underlying storage or preferably let Cogl
+automatically allocate storage lazily when it may know more about
+how the texture is being used and can optimize how it is allocated.</p>
+<p class="p">The texture is still configurable until it has been allocated so
+for example you can influence the internal format of the texture
+using <span class="link"><a href="Cogl.Texture.set_components.html" title="Cogl.Texture.prototype.set_components">Cogl.Texture.prototype.set_components</a></span> and
+<span class="link"><a href="Cogl.Texture.set_premultiplied.html" title="Cogl.Texture.prototype.set_premultiplied">Cogl.Texture.prototype.set_premultiplied</a></span>.</p>
+<p class="p">&lt;note&gt;Allocate call can fail if Cogl considers the internal
+format to be incompatible with the format of its internal
+atlases.&lt;/note&gt;</p>
+<p class="p">&lt;note&gt;The returned <span class="link"><a href="Cogl.AtlasTexture.html" title="Cogl.AtlasTexture">Cogl.AtlasTexture</a></span> is a high-level meta-texture
+with some limitations. See the documentation for <span class="link"><a href="Cogl.MetaTexture.html" title="Cogl.MetaTexture">Cogl.MetaTexture</a></span>
+for more details.&lt;/note&gt;</p>
+<p class="p">Since 1.16</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">bmp</span></dt>
+<dd class="terms"></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">A new <span class="link"><a href="Cogl.AtlasTexture.html" title="Cogl.AtlasTexture">Cogl.AtlasTexture</a></span> object.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.AtlasTexture.html" title="Cogl.AtlasTexture">Cogl.AtlasTexture</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

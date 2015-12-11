@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<page id="Gck.URI_FOR_MODULE_WITH_VERSION"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>Gck.URI_FOR_MODULE_WITH_VERSION</title>
+  <p>The URI will match specific version of modules. To be used as a GckUriFlags argument.</p>
+
+</page>

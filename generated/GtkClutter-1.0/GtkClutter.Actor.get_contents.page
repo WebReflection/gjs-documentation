@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="GtkClutter.Actor.get_contents"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GtkClutter.Actor" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gtk.Widget</api:type>
+      </api:returns>
+      <api:name>gtk_clutter_actor_get_contents</api:name>
+    </api:function>
+  </info>
+  <title>GtkClutter.Actor.prototype.get_contents</title>
+  <synopsis><code mime="text/x-gjs">
+function get_contents(): <link href="../Gtk-3.0/Gtk.Widget.html">Gtk.Widget</link> {
+    // Gjs wrapper for gtk_clutter_actor_get_contents()
+}
+  </code></synopsis>
+  <p>Retrieves the child of the <link href="../Gtk-3.0/Gtk.Bin.html">Gtk.Bin</link> used to hold the contents of <code>actor</code>.</p>  <p>This convenience function is the logical equivalent of:</p>  <p>|[
+GtkWidget *bin;</p>  <p>bin = gtk_clutter_actor_get_widget (GTK_CLUTTER_ACTOR (actor));
+return gtk_bin_get_child (GTK_BIN (bin));
+]|</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link href="../Gtk-3.0/Gtk.Widget.html">Gtk.Widget</link>, or <code>null</code> if not content
+  has been set</p>
+</item>
+</terms>
+
+</page>

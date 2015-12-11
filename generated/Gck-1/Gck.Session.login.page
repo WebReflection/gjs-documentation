@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<page id="Gck.Session.login"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Session" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gck_session_login</api:name>
+      <api:arg>
+        <api:type>Number(gulong)</api:type>
+        <api:name>user_type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>ByteArray</api:type>
+        <api:name>pin</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Session.prototype.login</title>
+  <synopsis><code mime="text/x-gjs">
+function login(user_type: Number(gulong), pin: ByteArray, cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>): Boolean {
+    // Gjs wrapper for gck_session_login()
+}
+  </code></synopsis>
+  <p>Login the user on the session. This call may block for
+an indefinite period.</p>
+
+<terms>
+<item>
+<title><code>user_type</code></title>
+  <p>The type of login user.</p>
+</item>
+<item>
+<title><code>pin</code></title>
+  <p>the user's PIN, or <code>null</code> for
+      protected authentication path</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>Optional cancellation object, or NULL.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>Whether successful or not.</p>
+</item>
+</terms>
+
+</page>

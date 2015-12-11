@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gcr.Parser.get_parsed_bytes"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Parser" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>ByteArray</api:type>
+      </api:returns>
+      <api:name>gcr_parser_get_parsed_bytes</api:name>
+    </api:function>
+  </info>
+  <title>Gcr.Parser.prototype.get_parsed_bytes</title>
+  <synopsis><code mime="text/x-gjs">
+function get_parsed_bytes(): ByteArray {
+    // Gjs wrapper for gcr_parser_get_parsed_bytes()
+}
+  </code></synopsis>
+  <p>Get the raw data block that represents this parsed object. This is only
+valid during the <link xref="Gcr.Parser-parsed"/> signal.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the raw data block of the currently parsed item</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<page id="Gck.Session.set_pin_async"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Session" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gck_session_set_pin_async</api:name>
+      <api:arg>
+        <api:type>ByteArray</api:type>
+        <api:name>old_pin</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gsize)</api:type>
+        <api:name>n_old_pin</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>ByteArray</api:type>
+        <api:name>new_pin</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.AsyncReadyCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Session.prototype.set_pin_async</title>
+  <synopsis><code mime="text/x-gjs">
+function set_pin_async(old_pin: ByteArray, n_old_pin: Number(gsize), new_pin: ByteArray, cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>, callback: <link href="../Gio-2.0/Gio.AsyncReadyCallback.html">Gio.AsyncReadyCallback</link>): void {
+    // Gjs wrapper for gck_session_set_pin_async()
+}
+  </code></synopsis>
+  <p>Change the user's pin on this slot that this session is opened on.</p>  <p>This call will return immediately and completes asynchronously.</p>
+
+<terms>
+<item>
+<title><code>old_pin</code></title>
+  <p>the user's old PIN, or <code>null</code>
+          for protected authentication path</p>
+</item>
+<item>
+<title><code>n_old_pin</code></title>
+  <p>the length of the old PIN</p>
+</item>
+<item>
+<title><code>new_pin</code></title>
+  <p>the user's new PIN, or <code>null</code>
+          for protected authentication path</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>Optional cancellation object, or NULL.</p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>Called when the operation completes.</p>
+</item>
+</terms>
+
+</page>

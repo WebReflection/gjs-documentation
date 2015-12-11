@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Cogl.Renderer.add_constraint"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Renderer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_renderer_add_constraint</api:name>
+      <api:arg>
+        <api:type>Cogl.RendererConstraint</api:type>
+        <api:name>constraint</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Renderer.prototype.add_constraint</title>
+  <synopsis><code mime="text/x-gjs">
+function add_constraint(constraint: <link xref="Cogl.RendererConstraint">Cogl.RendererConstraint</link>): void {
+    // Gjs wrapper for cogl_renderer_add_constraint()
+}
+  </code></synopsis>
+  <p>This adds a renderer selection <code>constraint</code>.</p>  <p>Applications should ideally minimize how many of these constraints they
+depend on to ensure maximum portability.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>constraint</code></title>
+  <p>A <link xref="Cogl.RendererConstraint"/> to add</p>
+</item>
+</terms>
+
+</page>

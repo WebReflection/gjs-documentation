@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="Gcr.CertificateChain.get_status"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.CertificateChain" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gcr.CertificateChainStatus</api:type>
+      </api:returns>
+      <api:name>gcr_certificate_chain_get_status</api:name>
+    </api:function>
+  </info>
+  <title>Gcr.CertificateChain.prototype.get_status</title>
+  <synopsis><code mime="text/x-gjs">
+function get_status(): <link xref="Gcr.CertificateChainStatus">Gcr.CertificateChainStatus</link> {
+    // Gjs wrapper for gcr_certificate_chain_get_status()
+}
+  </code></synopsis>
+  <p>Get the status of a certificate chain. If the certificate chain has not
+been built, then the status will be <link xref="Gcr.CertificateChainStatus"/>.unknown.</p>  <p>A status of <link xref="Gcr.CertificateChainStatus"/>.anchored does not mean that the
+certificate chain has been verified, but merely that an anchor has been
+found.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the status of the certificate chain.</p>
+</item>
+</terms>
+
+</page>

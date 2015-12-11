@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<page id="GtkClutter.Texture.set_from_stock"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GtkClutter.Texture" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gtk_clutter_texture_set_from_stock</api:name>
+      <api:arg>
+        <api:type>Gtk.Widget</api:type>
+        <api:name>widget</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>stock_id</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gtk.IconSize</api:type>
+        <api:name>icon_size</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GtkClutter.Texture.prototype.set_from_stock</title>
+  <synopsis><code mime="text/x-gjs">
+function set_from_stock(widget: <link href="../Gtk-3.0/Gtk.Widget.html">Gtk.Widget</link>, stock_id: String, icon_size: <link href="../Gtk-3.0/Gtk.IconSize.html">Gtk.IconSize</link>): Boolean {
+    // Gjs wrapper for gtk_clutter_texture_set_from_stock()
+}
+  </code></synopsis>
+  <p>Sets the contents of <code>texture</code> using the stock icon <code>stock_id</code>, as
+rendered by <code>widget</code>.</p>
+
+<terms>
+<item>
+<title><code>widget</code></title>
+  <p>a <link href="../Gtk-3.0/Gtk.Widget.html">Gtk.Widget</link></p>
+</item>
+<item>
+<title><code>stock_id</code></title>
+  <p>the stock id of the icon</p>
+</item>
+<item>
+<title><code>icon_size</code></title>
+  <p>the size of the icon, or -1</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> on success, <code>false</code> on failure.</p>
+</item>
+</terms>
+
+</page>

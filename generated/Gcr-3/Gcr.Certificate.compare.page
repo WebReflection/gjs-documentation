@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<page id="Gcr.Certificate.compare"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Certificate" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gint)</api:type>
+      </api:returns>
+      <api:name>gcr_certificate_compare</api:name>
+      <api:arg>
+        <api:type>Gcr.Comparable</api:type>
+        <api:name>first</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gcr.Comparable</api:type>
+        <api:name>other</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.Certificate.compare</title>
+  <synopsis><code mime="text/x-gjs">
+function compare(first: <link xref="Gcr.Comparable">Gcr.Comparable</link>, other: <link xref="Gcr.Comparable">Gcr.Comparable</link>): Number(gint) {
+    // Gjs wrapper for gcr_certificate_compare()
+}
+  </code></synopsis>
+  <p>Compare one certificate against another. If the certificates are equal
+then zero is returned. If one certificate is <code>null</code> or not a certificate,
+then a non-zero value is returned.</p>  <p>The return value is useful in a stable sort, but has no user logical
+meaning.</p>
+
+<terms>
+<item>
+<title><code>first</code></title>
+  <p>the certificate to compare</p>
+</item>
+<item>
+<title><code>other</code></title>
+  <p>the certificate to compare against</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>zero if the certificates match, non-zero otherwise.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Gcr.SimpleCollection.remove"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.SimpleCollection" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gcr_simple_collection_remove</api:name>
+      <api:arg>
+        <api:type>GObject.Object</api:type>
+        <api:name>object</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.SimpleCollection.prototype.remove</title>
+  <synopsis><code mime="text/x-gjs">
+function remove(object: <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link>): void {
+    // Gjs wrapper for gcr_simple_collection_remove()
+}
+  </code></synopsis>
+  <p>Remove an object from the collection.</p>
+
+<terms>
+<item>
+<title><code>object</code></title>
+  <p>The object to remove from the collection</p>
+</item>
+</terms>
+
+</page>

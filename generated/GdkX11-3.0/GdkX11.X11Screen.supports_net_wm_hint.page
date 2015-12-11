@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<page id="GdkX11.X11Screen.supports_net_wm_hint"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GdkX11.X11Screen" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gdk_x11_screen_supports_net_wm_hint</api:name>
+      <api:arg>
+        <api:type>Gdk.Atom</api:type>
+        <api:name>property</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GdkX11.X11Screen.prototype.supports_net_wm_hint</title>
+  <synopsis><code mime="text/x-gjs">
+function supports_net_wm_hint(property: <link href="../Gdk-3.0/Gdk.Atom.html">Gdk.Atom</link>): Boolean {
+    // Gjs wrapper for gdk_x11_screen_supports_net_wm_hint()
+}
+  </code></synopsis>
+  <p>This function is specific to the X11 backend of GDK, and indicates
+whether the window manager supports a certain hint from the
+[Extended Window Manager Hints](http://www.freedesktop.org/Standards/wm-spec) specification.</p>  <p>When using this function, keep in mind that the window manager
+can change over time; so you shouldn’t use this function in
+a way that impacts persistent application state. A common bug
+is that your application can start up before the window manager
+does when the user logs in, and before the window manager starts
+<link xref="GdkX11.X11Screen.supports_net_wm_hint"/> will return <code>false</code> for every property.
+You can monitor the window_manager_changed signal on <link href="../Gdk-3.0/Gdk.Screen.html">Gdk.Screen</link> to detect
+a window manager change.</p>
+  <p>Since 2.2</p>
+<terms>
+<item>
+<title><code>property</code></title>
+  <p>a property atom.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if the window manager supports <code>property</code></p>
+</item>
+</terms>
+
+</page>

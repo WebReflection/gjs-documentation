@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<page id="Cogl.MaterialAlphaFunc"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Cogl.MaterialAlphaFunc</title>
+
+
+<terms>
+<item>
+<title><code>MaterialAlphaFunc.NEVER</code></title>
+
+</item>
+<item>
+<title><code>MaterialAlphaFunc.LESS</code></title>
+
+</item>
+<item>
+<title><code>MaterialAlphaFunc.EQUAL</code></title>
+
+</item>
+<item>
+<title><code>MaterialAlphaFunc.LEQUAL</code></title>
+
+</item>
+<item>
+<title><code>MaterialAlphaFunc.GREATER</code></title>
+
+</item>
+<item>
+<title><code>MaterialAlphaFunc.NOTEQUAL</code></title>
+
+</item>
+<item>
+<title><code>MaterialAlphaFunc.GEQUAL</code></title>
+
+</item>
+<item>
+<title><code>MaterialAlphaFunc.ALWAYS</code></title>
+
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

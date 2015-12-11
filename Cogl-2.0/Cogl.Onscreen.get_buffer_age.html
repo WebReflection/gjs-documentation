@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.Onscreen.prototype.get_buffer_age</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » <a class="trail" href="Cogl.Onscreen.html" title="Cogl.Onscreen">Cogl.Onscreen</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.Onscreen.prototype.get_buffer_age</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function get_buffer_age(): Number(gint) {
+    // Gjs wrapper for cogl_onscreen_get_buffer_age()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Gets the current age of the buffer contents.</p>
+<p class="p">This function allows applications to query the age of the current
+back buffer contents for a <span class="link"><a href="Cogl.Onscreen.html" title="Cogl.Onscreen">Cogl.Onscreen</a></span> as the number of frames
+elapsed since the contents were most recently defined.</p>
+<p class="p">These age values exposes enough information to applications about
+how Cogl internally manages back buffers to allow applications to
+re-use the contents of old frames and minimize how much must be
+redrawn for the next frame.</p>
+<p class="p">The back buffer contents can either be reported as invalid (has an
+age of 0) or it may be reported to be the same contents as from n
+frames prior to the current frame.</p>
+<p class="p">The queried value remains valid until the next buffer swap.</p>
+<p class="p">&lt;note&gt;One caveat is that under X11 the buffer age does not reflect
+changes to buffer contents caused by the window systems. X11
+applications must track Expose events to determine what buffer
+regions need to additionally be repaired each frame.&lt;/note&gt;</p>
+<p class="p">The recommended way to take advantage of this buffer age api is to
+build up a circular buffer of length 3 for tracking damage regions
+over the last 3 frames and when starting a new frame look at the
+age of the buffer and combine the damage regions for the current
+frame with the damage regions of previous @age frames so you know
+everything that must be redrawn to update the old contents for the
+new frame.</p>
+<p class="p">&lt;note&gt;If the system doesn't not support being able to track the age
+of back buffers then this function will always return 0 which
+implies that the contents are undefined.&lt;/note&gt;</p>
+<p class="p">&lt;note&gt;The <span class="link"><a href="Cogl.FeatureID.html" title="Cogl.FeatureID">Cogl.FeatureID</a></span>.ogl_feature_id_buffer_age feature can optionally be
+explicitly checked to determine if Cogl is currently tracking the
+age of <span class="link"><a href="Cogl.Onscreen.html" title="Cogl.Onscreen">Cogl.Onscreen</a></span> back buffer contents. If this feature is
+missing then this function will always return 0.&lt;/note&gt;</p>
+<p class="p">Since 1.14</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">The age of the buffer contents or 0 when the buffer
+              contents are undefined.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.Onscreen.html" title="Cogl.Onscreen">Cogl.Onscreen</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

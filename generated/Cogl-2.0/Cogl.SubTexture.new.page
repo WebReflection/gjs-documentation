@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<page id="Cogl.SubTexture.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.SubTexture" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.SubTexture</api:type>
+      </api:returns>
+      <api:name>cogl_sub_texture_new</api:name>
+      <api:arg>
+        <api:type>Cogl.Context</api:type>
+        <api:name>ctx</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.Texture</api:type>
+        <api:name>parent_texture</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>sub_x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>sub_y</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>sub_width</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>sub_height</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.SubTexture.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(ctx: <link xref="Cogl.Context">Cogl.Context</link>, parent_texture: <link xref="Cogl.Texture">Cogl.Texture</link>, sub_x: Number(gint), sub_y: Number(gint), sub_width: Number(gint), sub_height: Number(gint)): <link xref="Cogl.SubTexture">Cogl.SubTexture</link> {
+    // Gjs wrapper for cogl_sub_texture_new()
+}
+  </code></synopsis>
+  <p>Creates a high-level <link xref="Cogl.SubTexture"/> representing a sub-region of
+any other <link xref="Cogl.Texture"/>. The sub-region must strictly lye within the
+bounds of the <code>parent_texture</code>. The returned texture implements the
+<link xref="Cogl.MetaTexture"/> interface because it's not a low level texture
+that hardware can understand natively.</p>  <p>&lt;note&gt;Remember: Unless you are using high level drawing APIs such
+as cogl_rectangle() or other APIs documented to understand the
+<link xref="Cogl.MetaTexture"/> interface then you need to use the
+<link xref="Cogl.MetaTexture"/> interface to resolve a <link xref="Cogl.SubTexture"/> into a
+low-level texture before drawing.&lt;/note&gt;</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>ctx</code></title>
+  <p>A <link xref="Cogl.Context"/> pointer</p>
+</item>
+<item>
+<title><code>parent_texture</code></title>
+  <p>The full texture containing a sub-region you want
+                 to make a <link xref="Cogl.SubTexture"/> from.</p>
+</item>
+<item>
+<title><code>sub_x</code></title>
+  <p>The top-left x coordinate of the parent region to make
+        a texture from.</p>
+</item>
+<item>
+<title><code>sub_y</code></title>
+  <p>The top-left y coordinate of the parent region to make
+        a texture from.</p>
+</item>
+<item>
+<title><code>sub_width</code></title>
+  <p>The width of the parent region to make a texture from.</p>
+</item>
+<item>
+<title><code>sub_height</code></title>
+  <p>The height of the parent region to make a texture
+             from.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>A newly allocated <link xref="Cogl.SubTexture"/>
+         representing a sub-region of <code>parent_texture</code>.</p>
+</item>
+</terms>
+
+</page>

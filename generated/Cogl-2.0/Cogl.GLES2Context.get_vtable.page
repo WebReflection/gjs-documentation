@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="Cogl.GLES2Context.get_vtable"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.GLES2Context" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.GLES2Vtable</api:type>
+      </api:returns>
+      <api:name>cogl_gles2_context_get_vtable</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.GLES2Context.prototype.get_vtable</title>
+  <synopsis><code mime="text/x-gjs">
+function get_vtable(): <link xref="Cogl.GLES2Vtable">Cogl.GLES2Vtable</link> {
+    // Gjs wrapper for cogl_gles2_context_get_vtable()
+}
+  </code></synopsis>
+  <p>Queries the OpenGLES 2.0 api function pointers that should be
+used for rendering with the given <code>gles2_ctx</code>.</p>  <p>&lt;note&gt;You should not try to directly link to and use the symbols
+provided by any system OpenGLES 2.0 driver.&lt;/note&gt;</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>A pointer to a <link xref="Cogl.GLES2Vtable"/> providing pointers
+              to functions for the full OpenGLES 2.0 api.</p>
+</item>
+</terms>
+
+</page>

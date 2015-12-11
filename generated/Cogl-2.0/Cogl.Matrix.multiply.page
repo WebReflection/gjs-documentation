@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="Cogl.Matrix.multiply"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Matrix" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_matrix_multiply</api:name>
+      <api:arg>
+        <api:type>Cogl.Matrix</api:type>
+        <api:name>a</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.Matrix</api:type>
+        <api:name>b</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Matrix.prototype.multiply</title>
+  <synopsis><code mime="text/x-gjs">
+function multiply(a: <link xref="Cogl.Matrix">Cogl.Matrix</link>, b: <link xref="Cogl.Matrix">Cogl.Matrix</link>): void {
+    // Gjs wrapper for cogl_matrix_multiply()
+}
+  </code></synopsis>
+  <p>Multiplies the two supplied matrices together and stores
+the resulting matrix inside <code>result</code>.</p>  <p>&lt;note&gt;It is possible to multiply the <code>a</code> matrix in-place, so
+<code>result</code> can be equal to <code>a</code> but can't be equal to <code>b</code>.&lt;/note&gt;</p>
+
+<terms>
+<item>
+<title><code>a</code></title>
+  <p>A 4x4 transformation matrix</p>
+</item>
+<item>
+<title><code>b</code></title>
+  <p>A 4x4 transformation matrix</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="GWeather.Location.get_parent"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Location" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GWeather.Location</api:type>
+      </api:returns>
+      <api:name>gweather_location_get_parent</api:name>
+    </api:function>
+  </info>
+  <title>GWeather.Location.prototype.get_parent</title>
+  <synopsis><code mime="text/x-gjs">
+function get_parent(): <link xref="GWeather.Location">GWeather.Location</link> {
+    // Gjs wrapper for gweather_location_get_parent()
+}
+  </code></synopsis>
+  <p>Gets <code>loc</code>'s parent location.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>loc</code>'s parent, or <code>null</code>
+if <code>loc</code> is a <link xref="GWeather.LocationLevel"/>.world node.</p>
+</item>
+</terms>
+
+</page>

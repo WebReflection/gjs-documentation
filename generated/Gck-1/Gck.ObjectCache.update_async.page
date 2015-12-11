@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<page id="Gck.ObjectCache.update_async"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.ObjectCache" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gck_object_cache_update_async</api:name>
+      <api:arg>
+        <api:type>Array(Number(gulong))</api:type>
+        <api:name>attr_types</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.AsyncReadyCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.ObjectCache.prototype.update_async</title>
+  <synopsis><code mime="text/x-gjs">
+function update_async(attr_types: Array(Number(gulong)), cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>, callback: <link href="../Gio-2.0/Gio.AsyncReadyCallback.html">Gio.AsyncReadyCallback</link>): void {
+    // Gjs wrapper for gck_object_cache_update_async()
+}
+  </code></synopsis>
+  <p>Update the object cache with given attributes. If an attribute already
+exists in the cache, it will be updated, and if it doesn't it will be added.</p>  <p>This call will return immediately and complete asynchronously.</p>
+
+<terms>
+<item>
+<title><code>attr_types</code></title>
+  <p>the types of attributes to update</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional cancellation object</p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>called when the operation completes</p>
+</item>
+</terms>
+
+</page>

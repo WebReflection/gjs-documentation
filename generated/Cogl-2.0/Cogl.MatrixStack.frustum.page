@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<page id="Cogl.MatrixStack.frustum"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.MatrixStack" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_matrix_stack_frustum</api:name>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>left</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>right</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>bottom</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>top</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>z_near</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>z_far</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.MatrixStack.prototype.frustum</title>
+  <synopsis><code mime="text/x-gjs">
+function frustum(left: Number(gfloat), right: Number(gfloat), bottom: Number(gfloat), top: Number(gfloat), z_near: Number(gfloat), z_far: Number(gfloat)): void {
+    // Gjs wrapper for cogl_matrix_stack_frustum()
+}
+  </code></synopsis>
+  <p>Replaces the current matrix with a perspective matrix for a given
+viewing frustum defined by 4 side clip planes that all cross
+through the origin and 2 near and far clip planes.</p>
+
+<terms>
+<item>
+<title><code>left</code></title>
+  <p>X position of the left clipping plane where it
+  intersects the near clipping plane</p>
+</item>
+<item>
+<title><code>right</code></title>
+  <p>X position of the right clipping plane where it
+  intersects the near clipping plane</p>
+</item>
+<item>
+<title><code>bottom</code></title>
+  <p>Y position of the bottom clipping plane where it
+  intersects the near clipping plane</p>
+</item>
+<item>
+<title><code>top</code></title>
+  <p>Y position of the top clipping plane where it intersects
+  the near clipping plane</p>
+</item>
+<item>
+<title><code>z_near</code></title>
+  <p>The distance to the near clipping plane (Must be positive)</p>
+</item>
+<item>
+<title><code>z_far</code></title>
+  <p>The distance to the far clipping plane (Must be positive)</p>
+</item>
+</terms>
+
+</page>

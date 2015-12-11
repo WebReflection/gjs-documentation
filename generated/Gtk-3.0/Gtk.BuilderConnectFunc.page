@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="Gtk.BuilderConnectFunc"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Gtk.BuilderConnectFunc</title>
+  <synopsis><code mime="text/x-gjs">
+function onBuilderConnectFunc(builder: <link xref="Gtk.Builder">Gtk.Builder</link>, object: <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link>, signal_name: String, handler_name: String, connect_object: <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link>, flags: <link href="../GObject-2.0/GObject.ConnectFlags.html">GObject.ConnectFlags</link>): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>builder</code></title>
+
+</item>
+<item>
+<title><code>object</code></title>
+
+</item>
+<item>
+<title><code>signal_name</code></title>
+
+</item>
+<item>
+<title><code>handler_name</code></title>
+
+</item>
+<item>
+<title><code>connect_object</code></title>
+
+</item>
+<item>
+<title><code>flags</code></title>
+
+</item>
+</terms>
+
+</page>

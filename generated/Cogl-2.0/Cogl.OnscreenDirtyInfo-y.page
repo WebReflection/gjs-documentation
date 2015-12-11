@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Cogl.OnscreenDirtyInfo-y"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.OnscreenDirtyInfo" group="field" type="guide"/>
+    <title type="link" role="topic">y</title>
+  </info>
+  <title>Cogl.OnscreenDirtyInfo.y</title>
+  <synopsis><code mime="text/x-gjs">
+OnscreenDirtyInfo.y: Number(gint) (Read / Write)
+  </code></synopsis>
+  <p>Top edge of the dirty rectangle, measured from the top of the window</p>
+
+</page>

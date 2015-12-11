@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GWeather.Location.prototype.serialize</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GWeather">GWeather</a> » <a class="trail" href="GWeather.Location.html" title="GWeather.Location">GWeather.Location</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GWeather.Location.prototype.serialize</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function serialize(): <span class="link"><a href="../GLib-2.0/GLib.Variant.html" title="../GLib-2.0/GLib.Variant.html">GLib.Variant</a></span> {
+    // Gjs wrapper for gweather_location_serialize()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Transforms a <span class="link"><a href="GWeather.Location.html" title="GWeather.Location">GWeather.Location</a></span> into a <span class="link"><a href="../GLib-2.0/GLib.Variant.html" title="../GLib-2.0/GLib.Variant.html">GLib.Variant</a></span>, in a way that
+calling <span class="link"><a href="GWeather.Location.deserialize.html" title="GWeather.Location.prototype.deserialize">GWeather.Location.prototype.deserialize</a></span> will hold an equivalent
+<span class="link"><a href="GWeather.Location.html" title="GWeather.Location">GWeather.Location</a></span>.
+The resulting variant can then be stored into GSettings or on disk.
+This call is only valid for cities, weather stations and detached
+locations.
+The format of the resulting <span class="link"><a href="../GLib-2.0/GLib.Variant.html" title="../GLib-2.0/GLib.Variant.html">GLib.Variant</a></span> is private to libgweather,
+and it is subject to change. You should use the "v" format in GSettings,
+to ensure maximum compatibility with future versions of the library.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">the serialization of @location.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="GWeather.Location.html" title="GWeather.Location">GWeather.Location</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

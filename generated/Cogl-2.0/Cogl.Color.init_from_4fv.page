@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Cogl.Color.init_from_4fv"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Color" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_color_init_from_4fv</api:name>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>color_array</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Color.prototype.init_from_4fv</title>
+  <synopsis><code mime="text/x-gjs">
+function init_from_4fv(color_array: Number(gfloat)): void {
+    // Gjs wrapper for cogl_color_init_from_4fv()
+}
+  </code></synopsis>
+  <p>Sets the values of the passed channels into a <link xref="Cogl.Color"/></p>
+  <p>Since 1.4</p>
+<terms>
+<item>
+<title><code>color_array</code></title>
+  <p>a pointer to an array of 4 float color components</p>
+</item>
+</terms>
+
+</page>

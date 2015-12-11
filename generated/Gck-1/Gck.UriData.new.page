@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="Gck.UriData.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.UriData" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.UriData</api:type>
+      </api:returns>
+      <api:name>gck_uri_data_new</api:name>
+    </api:function>
+  </info>
+  <title>Gck.UriData.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(): <link xref="Gck.UriData">Gck.UriData</link> {
+    // Gjs wrapper for gck_uri_data_new()
+}
+  </code></synopsis>
+  <p>Allocate a new GckUriData structure. None of the fields
+will be set.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a newly allocated GckUriData, free with
+         <link xref="Gck.UriData.free"/></p>
+</item>
+</terms>
+
+</page>

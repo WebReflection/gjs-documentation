@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page id="Cogl.DebugObjectForeachTypeCallback"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Cogl.DebugObjectForeachTypeCallback</title>
+  <synopsis><code mime="text/x-gjs">
+function onDebugObjectForeachTypeCallback(info: <link xref="Cogl.DebugObjectTypeInfo">Cogl.DebugObjectTypeInfo</link>): void {
+}
+  </code></synopsis>
+  <p>A callback function to use for <link xref="Cogl.debug_object_foreach_type"/>.</p>
+  <p>Since 1.8</p>
+<terms>
+<item>
+<title><code>info</code></title>
+  <p>A pointer to a struct containing information about the type.</p>
+</item>
+</terms>
+
+</page>

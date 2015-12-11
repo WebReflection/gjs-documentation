@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Cogl.Bitmap.get_width"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Bitmap" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gint)</api:type>
+      </api:returns>
+      <api:name>cogl_bitmap_get_width</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Bitmap.prototype.get_width</title>
+  <synopsis><code mime="text/x-gjs">
+function get_width(): Number(gint) {
+    // Gjs wrapper for cogl_bitmap_get_width()
+}
+  </code></synopsis>
+
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the width of the bitmap</p>
+</item>
+</terms>
+
+</page>

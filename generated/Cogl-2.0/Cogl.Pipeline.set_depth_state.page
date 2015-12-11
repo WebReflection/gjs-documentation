@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.set_depth_state"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_set_depth_state</api:name>
+      <api:arg>
+        <api:type>Cogl.DepthState</api:type>
+        <api:name>state</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.set_depth_state</title>
+  <synopsis><code mime="text/x-gjs">
+function set_depth_state(state: <link xref="Cogl.DepthState">Cogl.DepthState</link>): <link xref="Cogl.Bool">Cogl.Bool</link> {
+    // Gjs wrapper for cogl_pipeline_set_depth_state()
+}
+  </code></synopsis>
+  <p>This commits all the depth state configured in <code>state</code> struct to the
+given <code>pipeline</code>. The configuration values are copied into the
+pipeline so there is no requirement to keep the <link xref="Cogl.DepthState"/>
+struct around if you don't need it any more.</p>  <p>Note: Since some platforms do not support the depth range feature
+it is possible for this function to fail and report an @error.</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>state</code></title>
+  <p>A <link xref="Cogl.DepthState"/> struct</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>TRUE if the GPU supports all the given <code>state</code> else <code>false</code>
+         and returns an @error.</p>
+</item>
+</terms>
+
+</page>

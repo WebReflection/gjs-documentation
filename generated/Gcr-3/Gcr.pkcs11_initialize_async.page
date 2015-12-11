@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="Gcr.pkcs11_initialize_async"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gcr_pkcs11_initialize_async</api:name>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.AsyncReadyCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.pkcs11_initialize_async</title>
+  <synopsis><code mime="text/x-gjs">
+function pkcs11_initialize_async(cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>, callback: <link href="../Gio-2.0/Gio.AsyncReadyCallback.html">Gio.AsyncReadyCallback</link>): void {
+    // Gjs wrapper for gcr_pkcs11_initialize_async()
+}
+  </code></synopsis>
+  <p>Asynchronously initialize the registered PKCS\#11 modules.</p>
+
+<terms>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional cancellable used to cancel the operation</p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>callback which will be called when the operation completes</p>
+</item>
+</terms>
+
+</page>

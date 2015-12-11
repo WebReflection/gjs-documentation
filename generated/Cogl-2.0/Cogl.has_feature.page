@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<page id="Cogl.has_feature"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_has_feature</api:name>
+      <api:arg>
+        <api:type>Cogl.Context</api:type>
+        <api:name>context</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.FeatureID</api:type>
+        <api:name>feature</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.has_feature</title>
+  <synopsis><code mime="text/x-gjs">
+function has_feature(context: <link xref="Cogl.Context">Cogl.Context</link>, feature: <link xref="Cogl.FeatureID">Cogl.FeatureID</link>): <link xref="Cogl.Bool">Cogl.Bool</link> {
+    // Gjs wrapper for cogl_has_feature()
+}
+  </code></synopsis>
+  <p>Checks if a given <code>feature</code> is currently available</p>  <p>Cogl does not aim to be a lowest common denominator API, it aims to
+expose all the interesting features of GPUs to application which
+means applications have some responsibility to explicitly check
+that certain features are available before depending on them.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>context</code></title>
+  <p>A <link xref="Cogl.Context"/> pointer</p>
+</item>
+<item>
+<title><code>feature</code></title>
+  <p>A <link xref="Cogl.FeatureID"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if the <code>feature</code> is currently supported or <code>false</code> if
+not.</p>
+</item>
+</terms>
+
+</page>

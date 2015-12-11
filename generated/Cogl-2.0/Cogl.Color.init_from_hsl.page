@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<page id="Cogl.Color.init_from_hsl"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Color" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_color_init_from_hsl</api:name>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>hue</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>saturation</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>luminance</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Color.init_from_hsl</title>
+  <synopsis><code mime="text/x-gjs">
+function init_from_hsl(hue: Number(gfloat), saturation: Number(gfloat), luminance: Number(gfloat)): <link xref="Cogl.Color">Cogl.Color</link> {
+    // Gjs wrapper for cogl_color_init_from_hsl()
+}
+  </code></synopsis>
+  <p>Converts a color expressed in HLS (hue, luminance and saturation)
+values into a <link xref="Cogl.Color"/>.</p>
+  <p>Since 1.16</p>
+<terms>
+<item>
+<title><code>hue</code></title>
+  <p>hue value, in the 0 .. 360 range</p>
+</item>
+<item>
+<title><code>saturation</code></title>
+  <p>saturation value, in the 0 .. 1 range</p>
+</item>
+<item>
+<title><code>luminance</code></title>
+  <p>luminance value, in the 0 .. 1 range</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>return location for a <link xref="Cogl.Color"/></p>
+</item>
+</terms>
+
+</page>

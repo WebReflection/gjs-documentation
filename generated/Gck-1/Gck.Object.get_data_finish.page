@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<page id="Gck.Object.get_data_finish"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Object" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>ByteArray</api:type>
+      </api:returns>
+      <api:name>gck_object_get_data_finish</api:name>
+      <api:arg>
+        <api:type>Gio.AsyncResult</api:type>
+        <api:name>result</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Object.prototype.get_data_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function get_data_finish(result: <link href="../Gio-2.0/Gio.AsyncResult.html">Gio.AsyncResult</link>): [return_value: ByteArray, n_data: Number(gsize)] {
+    // Gjs wrapper for gck_object_get_data_finish()
+}
+  </code></synopsis>
+  <p>Get the result of an operation to get attribute data from
+an object. For convenience the returned data has an extra null terminator,
+not included in the returned length.</p>
+
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>The result passed to the callback.</p>
+</item>
+<item>
+<title><code>return_value</code></title>
+  <p>The PKCS\#11 attribute data
+         or <code>null</code> if an error occurred.</p>
+</item>
+<item>
+<title><code>n_data</code></title>
+  <p>The length of the resulting data.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Cogl.debug_object_print_instances"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_debug_object_print_instances</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.debug_object_print_instances</title>
+  <synopsis><code mime="text/x-gjs">
+function debug_object_print_instances(): void {
+    // Gjs wrapper for cogl_debug_object_print_instances()
+}
+  </code></synopsis>
+  <p>Prints a list of all the object types that Cogl uses along with the
+number of objects of that type that are currently in use. This is
+intended to be used solely for debugging purposes to track down
+issues with objects leaking.</p>
+  <p>Since 1.8</p>
+
+</page>

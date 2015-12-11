@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.get_ambient"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_get_ambient</api:name>
+      <api:arg>
+        <api:type>Cogl.Color</api:type>
+        <api:name>ambient</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.get_ambient</title>
+  <synopsis><code mime="text/x-gjs">
+function get_ambient(ambient: <link xref="Cogl.Color">Cogl.Color</link>): void {
+    // Gjs wrapper for cogl_pipeline_get_ambient()
+}
+  </code></synopsis>
+  <p>Retrieves the current ambient color for <code>pipeline</code></p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>ambient</code></title>
+  <p>The location to store the ambient color</p>
+</item>
+</terms>
+
+</page>

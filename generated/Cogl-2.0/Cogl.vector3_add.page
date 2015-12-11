@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<page id="Cogl.vector3_add"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_vector3_add</api:name>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>result</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>a</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>b</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.vector3_add</title>
+  <synopsis><code mime="text/x-gjs">
+function vector3_add(result: Number(gfloat), a: Number(gfloat), b: Number(gfloat)): void {
+    // Gjs wrapper for cogl_vector3_add()
+}
+  </code></synopsis>
+  <p>Adds each of the corresponding components in vectors <code>a</code> and <code>b</code>
+storing the results in <code>result</code>.</p>
+  <p>Since 1.4</p>
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>Where you want the result written</p>
+</item>
+<item>
+<title><code>a</code></title>
+  <p>The first vector operand</p>
+</item>
+<item>
+<title><code>b</code></title>
+  <p>The second vector operand</p>
+</item>
+</terms>
+
+</page>

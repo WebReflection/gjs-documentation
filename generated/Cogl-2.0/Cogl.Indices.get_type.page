@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Cogl.Indices.get_type"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Indices" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.IndicesType</api:type>
+      </api:returns>
+      <api:name>cogl_indices_get_type</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Indices.prototype.get_type</title>
+  <synopsis><code mime="text/x-gjs">
+function get_type(): <link xref="Cogl.IndicesType">Cogl.IndicesType</link> {
+    // Gjs wrapper for cogl_indices_get_type()
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

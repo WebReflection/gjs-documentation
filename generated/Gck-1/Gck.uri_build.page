@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<page id="Gck.uri_build"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>gck_uri_build</api:name>
+      <api:arg>
+        <api:type>Gck.UriData</api:type>
+        <api:name>uri_data</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gck.UriFlags</api:type>
+        <api:name>flags</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.uri_build</title>
+  <synopsis><code mime="text/x-gjs">
+function uri_build(uri_data: <link xref="Gck.UriData">Gck.UriData</link>, flags: <link xref="Gck.UriFlags">Gck.UriFlags</link>): String {
+    // Gjs wrapper for gck_uri_build()
+}
+  </code></synopsis>
+  <p>Build a PKCS\#11 URI. The various parts relevant to the flags
+specified will be used to build the URI.</p>
+
+<terms>
+<item>
+<title><code>uri_data</code></title>
+  <p>the info to build the URI from.</p>
+</item>
+<item>
+<title><code>flags</code></title>
+  <p>The context that the URI is for</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a newly allocated string containing a PKCS\#11 URI.</p>
+</item>
+</terms>
+
+</page>

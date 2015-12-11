@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="GtkClutter.Actor.get_widget"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GtkClutter.Actor" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gtk.Widget</api:type>
+      </api:returns>
+      <api:name>gtk_clutter_actor_get_widget</api:name>
+    </api:function>
+  </info>
+  <title>GtkClutter.Actor.prototype.get_widget</title>
+  <synopsis><code mime="text/x-gjs">
+function get_widget(): <link href="../Gtk-3.0/Gtk.Widget.html">Gtk.Widget</link> {
+    // Gjs wrapper for gtk_clutter_actor_get_widget()
+}
+  </code></synopsis>
+  <p>Retrieves the <link href="../Gtk-3.0/Gtk.Bin.html">Gtk.Bin</link> used to hold the <link xref="GtkClutter.Actor-contents"/> widget</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link href="../Gtk-3.0/Gtk.Bin.html">Gtk.Bin</link></p>
+</item>
+</terms>
+
+</page>

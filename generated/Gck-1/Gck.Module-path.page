@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="Gck.Module-path"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Module" group="property" type="guide"/>
+    <title type="link" role="topic">path</title>
+  </info>
+  <title>Gck.Module.path</title>
+  <synopsis><code mime="text/x-gjs">
+Module.path: String (Read / Write / Construct Only)
+  </code></synopsis>
+  <p>The PKCS&amp;num;11 module file path.</p>  <p>This may be set to NULL if this object was created from an already
+initialized module via the <link xref="Gck.Module.new"/> function.</p>
+
+</page>

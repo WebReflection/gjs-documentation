@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page id="Cogl.Bool"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>Cogl.Bool</title>
+  <p>A boolean data type used throughout the Cogl C api. This should be
+used in conjunction with the <code>true</code> and <code>false</code> macro defines for
+setting and testing boolean values.</p>
+
+</page>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="Gcr.pkcs11_set_trust_store_uri"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gcr_pkcs11_set_trust_store_uri</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>pkcs11_uri</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.pkcs11_set_trust_store_uri</title>
+  <synopsis><code mime="text/x-gjs">
+function pkcs11_set_trust_store_uri(pkcs11_uri: String): void {
+    // Gjs wrapper for gcr_pkcs11_set_trust_store_uri()
+}
+  </code></synopsis>
+  <p>Set the PKCS\#11 URI that is used to identify which slot to use for
+storing trust assertions.</p>  <p>It is not normally necessary to call this function. The relevant
+PKCS\#11 slot is automatically configured by the GCR library.</p>
+
+<terms>
+<item>
+<title><code>pkcs11_uri</code></title>
+  <p>the uri which identifies trust storage slot</p>
+</item>
+</terms>
+
+</page>

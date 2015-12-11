@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="Cogl.Renderer.check_onscreen_template"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Renderer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_renderer_check_onscreen_template</api:name>
+      <api:arg>
+        <api:type>Cogl.OnscreenTemplate</api:type>
+        <api:name>onscreen_template</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Renderer.prototype.check_onscreen_template</title>
+  <synopsis><code mime="text/x-gjs">
+function check_onscreen_template(onscreen_template: <link xref="Cogl.OnscreenTemplate">Cogl.OnscreenTemplate</link>): <link xref="Cogl.Bool">Cogl.Bool</link> {
+    // Gjs wrapper for cogl_renderer_check_onscreen_template()
+}
+  </code></synopsis>
+  <p>Tests if a given <code>onscreen_template</code> can be supported with the given
+<code>renderer</code>.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>onscreen_template</code></title>
+  <p>A <link xref="Cogl.OnscreenTemplate"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if the <code>onscreen_template</code> can be supported,
+              else <code>false</code>.</p>
+</item>
+</terms>
+
+</page>

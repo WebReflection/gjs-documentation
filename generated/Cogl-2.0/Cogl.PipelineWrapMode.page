@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<page id="Cogl.PipelineWrapMode"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Cogl.PipelineWrapMode</title>
+  <p>The wrap mode specifies what happens when texture coordinates
+outside the range 0→1 are used. Note that if the filter mode is
+anything but <link xref="Cogl.PipelineFilter"/>.nearest then texels outside the
+range 0→1 might be used even when the coordinate is exactly 0 or 1
+because OpenGL will try to sample neighbouring pixels. For example
+if you are trying to render the full texture then you may get
+artifacts around the edges when the pixels from the other side are
+merged in if the wrap mode is set to repeat.</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>PipelineWrapMode.REPEAT</code></title>
+  <p>The texture will be repeated. This
+  is useful for example to draw a tiled background.</p>
+</item>
+<item>
+<title><code>PipelineWrapMode.MIRRORED_REPEAT</code></title>
+
+</item>
+<item>
+<title><code>PipelineWrapMode.CLAMP_TO_EDGE</code></title>
+  <p>The coordinates outside the
+  range 0→1 will sample copies of the edge pixels of the
+  texture. This is useful to avoid artifacts if only one copy of
+  the texture is being rendered.</p>
+</item>
+<item>
+<title><code>PipelineWrapMode.AUTOMATIC</code></title>
+  <p>Cogl will try to automatically
+  decide which of the above two to use. For cogl_rectangle(), it
+  will use repeat mode if any of the texture coordinates are
+  outside the range 0→1, otherwise it will use clamp to edge. For
+  cogl_polygon() it will always use repeat mode. For
+  cogl_vertex_buffer_draw() it will use repeat mode except for
+  layers that have point sprite coordinate generation enabled. This
+  is the default value.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

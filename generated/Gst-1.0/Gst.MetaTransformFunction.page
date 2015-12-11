@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="Gst.MetaTransformFunction"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Gst.MetaTransformFunction</title>
+  <synopsis><code mime="text/x-gjs">
+function onMetaTransformFunction(transbuf: <link xref="Gst.Buffer">Gst.Buffer</link>, meta: <link xref="Gst.Meta">Gst.Meta</link>, buffer: <link xref="Gst.Buffer">Gst.Buffer</link>, type: <link href="../GLib-2.0/GLib.Quark.html">GLib.Quark</link>, data: void): Boolean {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>transbuf</code></title>
+
+</item>
+<item>
+<title><code>meta</code></title>
+
+</item>
+<item>
+<title><code>buffer</code></title>
+
+</item>
+<item>
+<title><code>type</code></title>
+
+</item>
+<item>
+<title><code>data</code></title>
+
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

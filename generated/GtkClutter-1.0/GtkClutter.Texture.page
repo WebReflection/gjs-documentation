@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<page id="GtkClutter.Texture"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>GtkClutter.Texture</title>
+  <synopsis><code>
+const GtkClutter = imports.gi.GtkClutter;
+
+let texture = new GtkClutter.Texture();
+  </code></synopsis>
+  <p>The &lt;structname&gt;GtkClutterTexture&lt;/structname&gt; structure contains
+only private data and should be accessed using the provided API.</p>
+  <p>Since 1.0</p>
+  <synopsis>
+    <title>Hierarchy</title>
+    <tree>
+      <item>
+        <code>GObject.Object</code>
+      <item>
+        <code>GObject.InitiallyUnowned</code>
+      <item>
+        <code>Clutter.Actor</code>
+      <item>
+        <code>Clutter.Texture</code>
+      <item>
+        <code>GtkClutter.Texture</code>
+      </item>
+      </item>
+      </item>
+      </item>
+      </item>
+    </tree>
+  </synopsis>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="property" style="linklist">
+    <title>Properties</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="signal" style="linklist">
+    <title>Signals</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="vfunc" style="linklist">
+    <title>Virtual functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

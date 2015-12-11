@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Gcr.icon_for_token"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.Icon</api:type>
+      </api:returns>
+      <api:name>gcr_icon_for_token</api:name>
+      <api:arg>
+        <api:type>Gck.TokenInfo</api:type>
+        <api:name>token_info</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.icon_for_token</title>
+  <synopsis><code mime="text/x-gjs">
+function icon_for_token(token_info: <link href="../Gck-1/Gck.TokenInfo.html">Gck.TokenInfo</link>): <link href="../Gio-2.0/Gio.Icon.html">Gio.Icon</link> {
+    // Gjs wrapper for gcr_icon_for_token()
+}
+  </code></synopsis>
+  <p>Get an appropriate icon for the token</p>
+
+<terms>
+<item>
+<title><code>token_info</code></title>
+  <p>the token info</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the icon</p>
+</item>
+</terms>
+
+</page>

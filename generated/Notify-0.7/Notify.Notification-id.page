@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Notify.Notification-id"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Notify.Notification" group="property" type="guide"/>
+    <title type="link" role="topic">id</title>
+  </info>
+  <title>Notify.Notification.id</title>
+  <synopsis><code mime="text/x-gjs">
+Notification.id: Number(gint) (Read / Write / Construct)
+  </code></synopsis>
+
+
+</page>

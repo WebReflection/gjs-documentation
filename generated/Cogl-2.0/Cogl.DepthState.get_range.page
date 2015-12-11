@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="Cogl.DepthState.get_range"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.DepthState" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_depth_state_get_range</api:name>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>near_val</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>far_val</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.DepthState.prototype.get_range</title>
+  <synopsis><code mime="text/x-gjs">
+function get_range(near_val: Number(gfloat), far_val: Number(gfloat)): void {
+    // Gjs wrapper for cogl_depth_state_get_range()
+}
+  </code></synopsis>
+  <p>Gets the current range to which normalized depth values are mapped
+before writing to the depth buffer. This corresponds to the range
+set with <link xref="Cogl.DepthState.set_range"/>.</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>near_val</code></title>
+  <p>A pointer to store the near component of the depth range</p>
+</item>
+<item>
+<title><code>far_val</code></title>
+  <p>A pointer to store the far component of the depth range</p>
+</item>
+</terms>
+
+</page>

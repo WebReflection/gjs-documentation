@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page id="Gst.IteratorForeachFunction"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Gst.IteratorForeachFunction</title>
+  <synopsis><code mime="text/x-gjs">
+function onIteratorForeachFunction(item: Any): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>item</code></title>
+
+</item>
+</terms>
+
+</page>

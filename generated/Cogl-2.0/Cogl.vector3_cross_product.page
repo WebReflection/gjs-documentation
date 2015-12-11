@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<page id="Cogl.vector3_cross_product"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_vector3_cross_product</api:name>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>result</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>u</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>v</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.vector3_cross_product</title>
+  <synopsis><code mime="text/x-gjs">
+function vector3_cross_product(result: Number(gfloat), u: Number(gfloat), v: Number(gfloat)): void {
+    // Gjs wrapper for cogl_vector3_cross_product()
+}
+  </code></synopsis>
+  <p>Calculates the cross product between the two vectors <code>u</code> and <code>v</code>.</p>  <p>The cross product is a vector perpendicular to both <code>u</code> and <code>v</code>. This
+can be useful for calculating the normal of a polygon by creating
+two vectors in its plane using the polygons vertices and taking
+their cross product.</p>  <p>If the two vectors are parallel then the cross product is 0.</p>  <p>You can use a right hand rule to determine which direction the
+perpendicular vector will point: If you place the two vectors tail,
+to tail and imagine grabbing the perpendicular line that extends
+through the common tail with your right hand such that you fingers
+rotate in the direction from <code>u</code> to <code>v</code> then the resulting vector
+points along your extended thumb.</p>
+  <p>Since 1.4</p>
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>Where you want the result written</p>
+</item>
+<item>
+<title><code>u</code></title>
+  <p>Your first 3 component vector</p>
+</item>
+<item>
+<title><code>v</code></title>
+  <p>Your second 3 component vector</p>
+</item>
+</terms>
+
+</page>

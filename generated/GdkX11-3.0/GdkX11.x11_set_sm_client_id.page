@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="GdkX11.x11_set_sm_client_id"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gdk_x11_set_sm_client_id</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>sm_client_id</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GdkX11.x11_set_sm_client_id</title>
+  <synopsis><code mime="text/x-gjs">
+function x11_set_sm_client_id(sm_client_id: String): void {
+    // Gjs wrapper for gdk_x11_set_sm_client_id()
+}
+  </code></synopsis>
+  <p>Sets the `SM_CLIENT_ID` property on the application’s leader window so that
+the window manager can save the application’s state using the X11R6 ICCCM
+session management protocol.</p>  <p>See the X Session Management Library documentation for more information on
+session management and the Inter-Client Communication Conventions Manual</p>
+  <p>Since 2.24</p>
+<terms>
+<item>
+<title><code>sm_client_id</code></title>
+  <p>the client id assigned by the session manager when the
+   connection was opened, or <code>null</code> to remove the property.</p>
+</item>
+</terms>
+
+</page>

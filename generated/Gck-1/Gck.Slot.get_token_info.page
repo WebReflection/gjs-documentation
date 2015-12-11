@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gck.Slot.get_token_info"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Slot" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.TokenInfo</api:type>
+      </api:returns>
+      <api:name>gck_slot_get_token_info</api:name>
+    </api:function>
+  </info>
+  <title>Gck.Slot.prototype.get_token_info</title>
+  <synopsis><code mime="text/x-gjs">
+function get_token_info(): <link xref="Gck.TokenInfo">Gck.TokenInfo</link> {
+    // Gjs wrapper for gck_slot_get_token_info()
+}
+  </code></synopsis>
+  <p>Get the token information for this slot.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the token information; when done, use <link xref="Gck.TokenInfo.free"/>
+         to release it</p>
+</item>
+</terms>
+
+</page>

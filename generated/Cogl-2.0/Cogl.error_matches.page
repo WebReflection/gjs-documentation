@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<page id="Cogl.error_matches"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_error_matches</api:name>
+      <api:arg>
+        <api:type>GLib.Error</api:type>
+        <api:name>error</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint32)</api:type>
+        <api:name>domain</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>code</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.error_matches</title>
+  <synopsis><code mime="text/x-gjs">
+function error_matches(error: <link href="../GLib-2.0/GLib.Error.html">GLib.Error</link>, domain: Number(guint32), code: Number(gint)): <link xref="Cogl.Bool">Cogl.Bool</link> {
+    // Gjs wrapper for cogl_error_matches()
+}
+  </code></synopsis>
+  <p>Returns <code>true</code> if error matches <code>domain</code> and <code>code</code>, <code>false</code> otherwise.
+In particular, when error is <code>null</code>, FALSE will be returned.</p>
+
+<terms>
+<item>
+<title><code>error</code></title>
+  <p>A #CoglError thrown by the Cogl api or <code>null</code></p>
+</item>
+<item>
+<title><code>domain</code></title>
+  <p>The error domain</p>
+</item>
+<item>
+<title><code>code</code></title>
+  <p>The error code</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>whether the <code>error</code> corresponds to the given <code>domain</code>
+              and <code>code</code>.</p>
+</item>
+</terms>
+
+</page>

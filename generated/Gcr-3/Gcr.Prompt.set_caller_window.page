@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="Gcr.Prompt.set_caller_window"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Prompt" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gcr_prompt_set_caller_window</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>window_id</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.Prompt.prototype.set_caller_window</title>
+  <synopsis><code mime="text/x-gjs">
+function set_caller_window(window_id: String): void {
+    // Gjs wrapper for gcr_prompt_set_caller_window()
+}
+  </code></synopsis>
+  <p>Set the string handle of the caller's window.</p>  <p>The caller window indicates to the prompt which window is prompting the
+user. The prompt may choose to ignore this information or use it in whatever
+way it sees fit.</p>
+
+<terms>
+<item>
+<title><code>window_id</code></title>
+  <p>the window id</p>
+</item>
+</terms>
+
+</page>

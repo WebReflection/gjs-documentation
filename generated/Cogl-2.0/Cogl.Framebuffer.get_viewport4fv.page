@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Cogl.Framebuffer.get_viewport4fv"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Framebuffer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_framebuffer_get_viewport4fv</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Framebuffer.prototype.get_viewport4fv</title>
+  <synopsis><code mime="text/x-gjs">
+function get_viewport4fv(): Array(Number(gfloat)) {
+    // Gjs wrapper for cogl_framebuffer_get_viewport4fv()
+}
+  </code></synopsis>
+  <p>Queries the x, y, width and height components of the current viewport as set
+using <link xref="Cogl.Framebuffer.set_viewport"/> or the default values which are 0, 0,
+framebuffer_width and framebuffer_height.  The values are written into the
+given @viewport array.</p>
+  <p>Since 1.8</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>A pointer to an
+           array of 4 floats to receive the (x, y, width, height)
+           components of the current viewport.</p>
+</item>
+</terms>
+
+</page>

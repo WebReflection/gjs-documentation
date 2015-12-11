@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.set_layer_matrix"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_set_layer_matrix</api:name>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>layer_index</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.Matrix</api:type>
+        <api:name>matrix</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.set_layer_matrix</title>
+  <synopsis><code mime="text/x-gjs">
+function set_layer_matrix(layer_index: Number(gint), matrix: <link xref="Cogl.Matrix">Cogl.Matrix</link>): void {
+    // Gjs wrapper for cogl_pipeline_set_layer_matrix()
+}
+  </code></synopsis>
+  <p>This function lets you set a matrix that can be used to e.g. translate
+and rotate a single layer of a pipeline used to fill your geometry.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>layer_index</code></title>
+  <p>the index for the layer inside <code>pipeline</code></p>
+</item>
+<item>
+<title><code>matrix</code></title>
+  <p>the transformation matrix for the layer</p>
+</item>
+</terms>
+
+</page>

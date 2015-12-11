@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gck.ModuleInfo-pkcs11_version_major"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.ModuleInfo" group="field" type="guide"/>
+    <title type="link" role="topic">pkcs11_version_major</title>
+  </info>
+  <title>Gck.ModuleInfo.pkcs11_version_major</title>
+  <synopsis><code mime="text/x-gjs">
+ModuleInfo.pkcs11_version_major: Number(guint8) (Read / Write)
+  </code></synopsis>
+  <p>The major version of the module.</p>
+
+</page>

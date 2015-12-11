@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Cogl.OnscreenTemplate.set_stereo_enabled"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.OnscreenTemplate" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_onscreen_template_set_stereo_enabled</api:name>
+      <api:arg>
+        <api:type>Cogl.Bool</api:type>
+        <api:name>enabled</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.OnscreenTemplate.prototype.set_stereo_enabled</title>
+  <synopsis><code mime="text/x-gjs">
+function set_stereo_enabled(enabled: <link xref="Cogl.Bool">Cogl.Bool</link>): void {
+    // Gjs wrapper for cogl_onscreen_template_set_stereo_enabled()
+}
+  </code></synopsis>
+  <p>Sets whether future <link xref="Cogl.Onscreen"/> framebuffers derived from this
+template are attempted to be created with both left and right
+buffers, for use with stereo display. If the display system
+does not support stereo, then creation of the framebuffer will
+fail.</p>
+  <p>Since 1.20</p>
+<terms>
+<item>
+<title><code>enabled</code></title>
+  <p>Whether framebuffers are created with stereo buffers</p>
+</item>
+</terms>
+
+</page>

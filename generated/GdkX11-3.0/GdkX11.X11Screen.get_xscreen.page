@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="GdkX11.X11Screen.get_xscreen"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GdkX11.X11Screen" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>xlib.Screen</api:type>
+      </api:returns>
+      <api:name>gdk_x11_screen_get_xscreen</api:name>
+    </api:function>
+  </info>
+  <title>GdkX11.X11Screen.prototype.get_xscreen</title>
+  <synopsis><code mime="text/x-gjs">
+function get_xscreen(): <link href="../xlib-2.0/xlib.Screen.html">xlib.Screen</link> {
+    // Gjs wrapper for gdk_x11_screen_get_xscreen()
+}
+  </code></synopsis>
+  <p>Returns the screen of a <link href="../Gdk-3.0/Gdk.Screen.html">Gdk.Screen</link>.</p>
+  <p>Since 2.2</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>an Xlib Screen*</p>
+</item>
+</terms>
+
+</page>

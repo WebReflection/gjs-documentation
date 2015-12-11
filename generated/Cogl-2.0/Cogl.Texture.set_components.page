@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<page id="Cogl.Texture.set_components"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Texture" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_texture_set_components</api:name>
+      <api:arg>
+        <api:type>Cogl.TextureComponents</api:type>
+        <api:name>components</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Texture.prototype.set_components</title>
+  <synopsis><code mime="text/x-gjs">
+function set_components(components: <link xref="Cogl.TextureComponents">Cogl.TextureComponents</link>): void {
+    // Gjs wrapper for cogl_texture_set_components()
+}
+  </code></synopsis>
+  <p>Affects the internal storage format for this texture by specifying
+what components will be required for sampling later.</p>  <p>This api affects how data is uploaded to the GPU since unused
+components can potentially be discarded from source data.</p>  <p>For textures created by the ‘_with_size’ constructors the default
+is <link xref="Cogl.TextureComponents"/>.rgba. The other constructors which take
+a %CoglBitmap or a data pointer default to the same components as
+the pixel format of the data.</p>  <p>Note that the <link xref="Cogl.TextureComponents"/>.rg format is not available
+on all drivers. The availability can be determined by checking for
+the <link xref="Cogl.FeatureID"/>.ogl_feature_id_texture_rg feature. If this format is used on
+a driver where it is not available then <link xref="Cogl.TextureError"/>.format
+will be raised when the texture is allocated. Even if the feature
+is not available then <link xref="Cogl.PixelFormat"/>.rg_88 can still be used as
+an image format as long as <link xref="Cogl.TextureComponents"/>.rg isn't used
+as the texture's components.</p>
+  <p>Since 1.18</p>
+<terms>
+<item>
+<title><code>components</code></title>
+
+</item>
+</terms>
+
+</page>

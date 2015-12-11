@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.get_layer_min_filter"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.PipelineFilter</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_get_layer_min_filter</api:name>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>layer_index</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.get_layer_min_filter</title>
+  <synopsis><code mime="text/x-gjs">
+function get_layer_min_filter(layer_index: Number(gint)): <link xref="Cogl.PipelineFilter">Cogl.PipelineFilter</link> {
+    // Gjs wrapper for cogl_pipeline_get_layer_min_filter()
+}
+  </code></synopsis>
+  <p>Retrieves the currently set minification <link xref="Cogl.PipelineFilter"/> set on
+the specified layer. The miniifcation filter determines how the
+layer should be sampled when down-scaled.</p>  <p>The default filter is <link xref="Cogl.PipelineFilter"/>.linear but this can be
+changed using <link xref="Cogl.Pipeline.set_layer_filters"/>.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>layer_index</code></title>
+  <p>the layer number to change.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>The minification <link xref="Cogl.PipelineFilter"/> for the
+              specified layer.</p>
+</item>
+</terms>
+
+</page>

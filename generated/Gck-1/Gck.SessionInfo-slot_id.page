@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gck.SessionInfo-slot_id"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.SessionInfo" group="field" type="guide"/>
+    <title type="link" role="topic">slot_id</title>
+  </info>
+  <title>Gck.SessionInfo.slot_id</title>
+  <synopsis><code mime="text/x-gjs">
+SessionInfo.slot_id: Number(gulong) (Read / Write)
+  </code></synopsis>
+  <p>The handle of the PKCS11 slot that this session is opened on.</p>
+
+</page>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gck.Attributes.at"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Attributes" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.Attribute</api:type>
+      </api:returns>
+      <api:name>gck_attributes_at</api:name>
+      <api:arg>
+        <api:type>Number(guint)</api:type>
+        <api:name>index</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Attributes.prototype.at</title>
+  <synopsis><code mime="text/x-gjs">
+function at(index: Number(guint)): <link xref="Gck.Attribute">Gck.Attribute</link> {
+    // Gjs wrapper for gck_attributes_at()
+}
+  </code></synopsis>
+  <p>Get attribute at the specified index in the attribute array.</p>  <p>Use <link xref="Gck.Attributes.count"/> to determine how many attributes are
+in the array.</p>
+
+<terms>
+<item>
+<title><code>index</code></title>
+  <p>The attribute index to retrieve.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the specified attribute</p>
+</item>
+</terms>
+
+</page>

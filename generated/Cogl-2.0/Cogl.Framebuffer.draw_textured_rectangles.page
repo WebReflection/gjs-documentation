@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<page id="Cogl.Framebuffer.draw_textured_rectangles"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Framebuffer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_framebuffer_draw_textured_rectangles</api:name>
+      <api:arg>
+        <api:type>Cogl.Pipeline</api:type>
+        <api:name>pipeline</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Array(Number(gfloat))</api:type>
+        <api:name>coordinates</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint)</api:type>
+        <api:name>n_rectangles</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Framebuffer.prototype.draw_textured_rectangles</title>
+  <synopsis><code mime="text/x-gjs">
+function draw_textured_rectangles(pipeline: <link xref="Cogl.Pipeline">Cogl.Pipeline</link>, coordinates: Array(Number(gfloat)), n_rectangles: Number(guint)): void {
+    // Gjs wrapper for cogl_framebuffer_draw_textured_rectangles()
+}
+  </code></synopsis>
+  <p>Draws a series of rectangles to <code>framebuffer</code> with the given
+<code>pipeline</code> state in the same way that
+<link xref="Cogl.Framebuffer.draw_textured_rectangle"/> does.</p>  <p>&lt;note&gt;The position is the position before the rectangle has been
+transformed by the model-view matrix and the projection
+matrix.&lt;/note&gt;</p>  <p>This is a high level drawing api that can handle any kind of
+<link xref="Cogl.MetaTexture"/> texture such as <link xref="Cogl.Texture2DSliced"/> textures
+which may internally be comprised of multiple low-level textures.
+This is unlike low-level drawing apis such as <link xref="Cogl.Primitive.draw"/>
+which only support low level texture types that are directly
+supported by GPUs such as <link xref="Cogl.Texture2D"/>.</p>  <p>The top left corner of the first rectangle is positioned at
+(coordinates[0], coordinates[1]) and the bottom right corner is
+positioned at (coordinates[2], coordinates[3]). The top left
+texture coordinate is (coordinates[4], coordinates[5]) and the
+bottom right texture coordinate is (coordinates[6],
+coordinates[7]). The coordinates for subsequent rectangles
+are defined similarly by the subsequent coordinates.</p>  <p>As a general rule for better performance its recommended to use
+this this API instead of calling
+<link xref="Cogl.Framebuffer.draw_textured_rectangle"/> separately for multiple
+rectangles if all of the rectangles will be drawn together with the
+same <code>pipeline</code> state.</p>  <p>The given texture coordinates should always be normalized such that
+(0, 0) corresponds to the top left and (1, 1) corresponds to the
+bottom right. To map an entire texture across the rectangle pass
+in tex_coords[0]=0, tex_coords[1]=0, tex_coords[2]=1,
+tex_coords[3]=1.</p>  <p>&lt;note&gt;Even if you have associated a <link xref="Cogl.TextureRectangle"/> texture
+which normally implies working with non-normalized texture
+coordinates this api should still be passed normalized texture
+coordinates.&lt;/note&gt;</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>pipeline</code></title>
+  <p>A <link xref="Cogl.Pipeline"/> state object</p>
+</item>
+<item>
+<title><code>coordinates</code></title>
+  <p>an array containing
+  groups of 8 float values: [x_1, y_1, x_2, y_2, s_1, t_1, s_2, t_2]
+  that have the same meaning as the arguments for
+  <link xref="Cogl.Framebuffer.draw_textured_rectangle"/>.</p>
+</item>
+<item>
+<title><code>n_rectangles</code></title>
+  <p>number of rectangles to <code>coordinates</code> to draw</p>
+</item>
+</terms>
+
+</page>

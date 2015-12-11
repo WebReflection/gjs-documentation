@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<page id="Cogl.vector3_equal"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_vector3_equal</api:name>
+      <api:arg>
+        <api:type>void</api:type>
+        <api:name>v1</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>void</api:type>
+        <api:name>v2</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.vector3_equal</title>
+  <synopsis><code mime="text/x-gjs">
+function vector3_equal(v1: void, v2: void): <link xref="Cogl.Bool">Cogl.Bool</link> {
+    // Gjs wrapper for cogl_vector3_equal()
+}
+  </code></synopsis>
+  <p>Compares the components of two vectors and returns TRUE if they are
+the same.</p>  <p>The comparison of the components is done with the '==' operator
+such that -0 is considered equal to 0, but otherwise there is no
+fuzziness such as an epsilon to consider vectors that are
+essentially identical except for some minor precision error
+differences due to the way they have been manipulated.</p>
+  <p>Since 1.4</p>
+<terms>
+<item>
+<title><code>v1</code></title>
+  <p>The first 3 component vector you want to compare</p>
+</item>
+<item>
+<title><code>v2</code></title>
+  <p>The second 3 component vector you want to compare</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>TRUE if the vectors are equal else FALSE.</p>
+</item>
+</terms>
+
+</page>

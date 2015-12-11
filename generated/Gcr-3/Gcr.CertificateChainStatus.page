@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<page id="Gcr.CertificateChainStatus"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Gcr.CertificateChainStatus</title>
+  <p>The status of a built certificate chain. Will be set to
+<link xref="Gcr.CertificateChainStatus"/>.unknown for certificate chains that have not been
+built.</p>
+
+<terms>
+<item>
+<title><code>CertificateChainStatus.UNKNOWN</code></title>
+  <p>The certificate chain's status is unknown.
+When a chain is not yet built it has this status. If a chain is modified after
+being built, it has this status.</p>
+</item>
+<item>
+<title><code>CertificateChainStatus.INCOMPLETE</code></title>
+  <p>A full chain could not be loaded. The
+chain does not end with a self-signed certificate, a trusted anchor, or a
+pinned certificate.</p>
+</item>
+<item>
+<title><code>CertificateChainStatus.DISTRUSTED</code></title>
+  <p>The certificate chain contains a revoked
+or otherwise explicitly distrusted certificate. The entire chain should
+be distrusted.</p>
+</item>
+<item>
+<title><code>CertificateChainStatus.SELFSIGNED</code></title>
+  <p>The chain ends with a self-signed
+certificate. No trust anchor was found.</p>
+</item>
+<item>
+<title><code>CertificateChainStatus.PINNED</code></title>
+  <p>The chain represents a pinned certificate. A
+pinned certificate is an exception which trusts a given certificate
+explicitly for a purpose and communication with a certain peer.</p>
+</item>
+<item>
+<title><code>CertificateChainStatus.ANCHORED</code></title>
+  <p>The chain ends with an anchored
+certificate. The anchored certificate is not necessarily self-signed.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

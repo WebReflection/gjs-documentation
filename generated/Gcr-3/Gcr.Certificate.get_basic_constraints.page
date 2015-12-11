@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="Gcr.Certificate.get_basic_constraints"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Certificate" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gcr_certificate_get_basic_constraints</api:name>
+    </api:function>
+  </info>
+  <title>Gcr.Certificate.prototype.get_basic_constraints</title>
+  <synopsis><code mime="text/x-gjs">
+function get_basic_constraints(): [ok: Boolean, is_ca: Boolean, path_len: Number(gint)] {
+    // Gjs wrapper for gcr_certificate_get_basic_constraints()
+}
+  </code></synopsis>
+  <p>Get the basic constraints for the certificate if present. If <code>false</code> is
+returned then no basic constraints are present and the <code>is_ca</code> and
+<code>path_len</code> arguments are not changed.</p>
+
+<terms>
+<item>
+<title><code>ok</code></title>
+  <p>whether basic constraints are present or not</p>
+</item>
+<item>
+<title><code>is_ca</code></title>
+  <p>location to place a <code>true</code> if is an authority</p>
+</item>
+<item>
+<title><code>path_len</code></title>
+  <p>location to place the max path length</p>
+</item>
+</terms>
+
+</page>

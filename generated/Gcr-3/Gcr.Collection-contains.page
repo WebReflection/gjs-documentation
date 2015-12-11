@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Gcr.Collection-contains"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Collection" group="vfunc" type="guide"/>
+  </info>
+  <title>Gcr.Collection::contains</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_contains(object: <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link>): Boolean {
+}
+  </code></synopsis>
+  <p>Check whether the collection contains an object or not.</p>
+
+<terms>
+<item>
+<title><code>object</code></title>
+  <p>object to check</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>whether the collection contains this object</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<page id="Cogl.Matrix"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>Cogl.Matrix</title>
+  <synopsis><code>
+const Cogl = imports.gi.Cogl;
+
+let matrix = new Cogl.Matrix({
+    <link xref='Cogl.Matrix-xx'>xx</link>: value
+    <link xref='Cogl.Matrix-yx'>yx</link>: value
+    <link xref='Cogl.Matrix-zx'>zx</link>: value
+    <link xref='Cogl.Matrix-wx'>wx</link>: value
+    <link xref='Cogl.Matrix-xy'>xy</link>: value
+    <link xref='Cogl.Matrix-yy'>yy</link>: value
+    <link xref='Cogl.Matrix-zy'>zy</link>: value
+    <link xref='Cogl.Matrix-wy'>wy</link>: value
+    <link xref='Cogl.Matrix-xz'>xz</link>: value
+    <link xref='Cogl.Matrix-yz'>yz</link>: value
+    <link xref='Cogl.Matrix-zz'>zz</link>: value
+    <link xref='Cogl.Matrix-wz'>wz</link>: value
+    <link xref='Cogl.Matrix-xw'>xw</link>: value
+    <link xref='Cogl.Matrix-yw'>yw</link>: value
+    <link xref='Cogl.Matrix-zw'>zw</link>: value
+    <link xref='Cogl.Matrix-ww'>ww</link>: value
+});
+  </code></synopsis>
+  <p>A CoglMatrix holds a 4x4 transform matrix. This is a single precision,
+column-major matrix which means it is compatible with what OpenGL expects.</p>  <p>A CoglMatrix can represent transforms such as, rotations, scaling,
+translation, sheering, and linear projections. You can combine these
+transforms by multiplying multiple matrices in the order you want them
+applied.</p>  <p>The transformation of a vertex (x, y, z, w) by a CoglMatrix is given by:</p>  <p>|[
+  x_new = xx * x + xy * y + xz * z + xw * w
+  y_new = yx * x + yy * y + yz * z + yw * w
+  z_new = zx * x + zy * y + zz * z + zw * w
+  w_new = wx * x + wy * y + wz * z + ww * w
+]|</p>  <p>Where w is normally 1</p>  <p>&lt;note&gt;You must consider the members of the CoglMatrix structure read only,
+and all matrix modifications must be done via the cogl_matrix API. This
+allows Cogl to annotate the matrices internally. Violation of this will give
+undefined results. If you need to initialize a matrix with a constant other
+than the identity matrix you can use <link xref="Cogl.Matrix.init_from_array"/>.&lt;/note&gt;</p>
+
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

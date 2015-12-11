@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="Cogl.SubTexture.get_parent"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.SubTexture" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Texture</api:type>
+      </api:returns>
+      <api:name>cogl_sub_texture_get_parent</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.SubTexture.prototype.get_parent</title>
+  <synopsis><code mime="text/x-gjs">
+function get_parent(): <link xref="Cogl.Texture">Cogl.Texture</link> {
+    // Gjs wrapper for cogl_sub_texture_get_parent()
+}
+  </code></synopsis>
+  <p>Retrieves the parent texture that <code>sub_texture</code> derives its content
+from.  This is the texture that was passed to
+<link xref="Cogl.SubTexture.new"/> as the parent_texture argument.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>The parent texture that <code>sub_texture</code>
+              derives its content from.</p>
+</item>
+</terms>
+
+</page>

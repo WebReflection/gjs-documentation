@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<page id="Gck.Session.unwrap_key"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Session" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.Object</api:type>
+      </api:returns>
+      <api:name>gck_session_unwrap_key</api:name>
+      <api:arg>
+        <api:type>Gck.Object</api:type>
+        <api:name>wrapper</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gulong)</api:type>
+        <api:name>mech_type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>ByteArray</api:type>
+        <api:name>input</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gck.Attributes</api:type>
+        <api:name>attrs</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Session.prototype.unwrap_key</title>
+  <synopsis><code mime="text/x-gjs">
+function unwrap_key(wrapper: <link xref="Gck.Object">Gck.Object</link>, mech_type: Number(gulong), input: ByteArray, attrs: <link xref="Gck.Attributes">Gck.Attributes</link>, cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>): <link xref="Gck.Object">Gck.Object</link> {
+    // Gjs wrapper for gck_session_unwrap_key()
+}
+  </code></synopsis>
+  <p>Unwrap a key from a byte stream. This call may block for an
+indefinite period.</p>  <p>If the <code>attrs</code> <link xref="Gck.Attributes"/> is floating, it is consumed.</p>
+
+<terms>
+<item>
+<title><code>wrapper</code></title>
+  <p>The key to use for unwrapping.</p>
+</item>
+<item>
+<title><code>mech_type</code></title>
+  <p>The mechanism to use for unwrapping.</p>
+</item>
+<item>
+<title><code>input</code></title>
+  <p>the wrapped data as a byte stream</p>
+</item>
+<item>
+<title><code>attrs</code></title>
+  <p>Additional attributes for the unwrapped key.</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>Optional cancellation object, or NULL.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the new unwrapped key or NULL if the
+         operation failed</p>
+</item>
+</terms>
+
+</page>

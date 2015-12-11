@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="Cogl.FrameEvent"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Cogl.FrameEvent</title>
+  <p>Identifiers that are passed to <link xref="Cogl.FrameCallback"/> functions
+(registered using <link xref="Cogl.Onscreen.add_frame_callback"/>) that
+mark the progression of a frame in some way which usually
+means that new information will have been accumulated in the
+frame's corresponding <link xref="Cogl.FrameInfo"/> object.</p>  <p>The last event that will be sent for a frame will be a
+@COGL_FRAME_EVENT_COMPLETE event and so these are a good
+opportunity to collect statistics about a frame since the
+<link xref="Cogl.FrameInfo"/> should hold the most data at this point.</p>  <p>&lt;note&gt;A frame may not be completed before the next frame can start
+so applications should avoid needing to collect all statistics for
+a particular frame before they can start a new frame.&lt;/note&gt;</p>
+  <p>Since 1.14</p>
+<terms>
+<item>
+<title><code>FrameEvent.SYNC</code></title>
+  <p>Notifies that the system compositor has
+                        acknowledged a frame and is ready for a
+                        new frame to be created.</p>
+</item>
+<item>
+<title><code>FrameEvent.COMPLETE</code></title>
+  <p>Notifies that a frame has ended. This
+                            is a good time for applications to
+                            collect statistics about the frame
+                            since the <link xref="Cogl.FrameInfo"/> should hold
+                            the most data at this point. No other
+                            events should be expected after a
+                            @COGL_FRAME_EVENT_COMPLETE event.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

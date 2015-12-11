@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="Cogl.Quaternion.copy"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Quaternion" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Quaternion</api:type>
+      </api:returns>
+      <api:name>cogl_quaternion_copy</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Quaternion.prototype.copy</title>
+  <synopsis><code mime="text/x-gjs">
+function copy(): <link xref="Cogl.Quaternion">Cogl.Quaternion</link> {
+    // Gjs wrapper for cogl_quaternion_copy()
+}
+  </code></synopsis>
+  <p>Allocates a new <link xref="Cogl.Quaternion"/> on the stack and initializes it with
+the same values as <code>src</code>.</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>A newly allocated <link xref="Cogl.Quaternion"/> which should be freed
+using <link xref="Cogl.Quaternion.free"/></p>
+</item>
+</terms>
+
+</page>

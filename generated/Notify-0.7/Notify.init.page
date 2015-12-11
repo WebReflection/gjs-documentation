@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Notify.init"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>notify_init</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>app_name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Notify.init</title>
+  <synopsis><code mime="text/x-gjs">
+function init(app_name: String): Boolean {
+    // Gjs wrapper for notify_init()
+}
+  </code></synopsis>
+  <p>Initialized libnotify. This must be called before any other functions.</p>
+
+<terms>
+<item>
+<title><code>app_name</code></title>
+  <p>The name of the application initializing libnotify.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if successful, or <code>false</code> on error.</p>
+</item>
+</terms>
+
+</page>

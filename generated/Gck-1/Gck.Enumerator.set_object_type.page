@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<page id="Gck.Enumerator.set_object_type"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Enumerator" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gck_enumerator_set_object_type_full</api:name>
+      <api:arg>
+        <api:type>GObject.Type</api:type>
+        <api:name>object_type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Array(Number(gulong))</api:type>
+        <api:name>attr_types</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Enumerator.prototype.set_object_type</title>
+  <synopsis><code mime="text/x-gjs">
+function set_object_type(object_type: GObject.Type, attr_types: Array(Number(gulong))): void {
+    // Gjs wrapper for gck_enumerator_set_object_type_full()
+}
+  </code></synopsis>
+  <p>Set the type of objects to be created by this enumerator. The type must
+always be either <link xref="Gck.Object"/> or derived from it.</p>  <p>If <code>attr_types</code> and <code>attr_count</code> are non-NULL and non-zero respectively,
+then the <link xref="Gck.ObjectCache"/> interface is expected to be implemented on the
+derived class, then the enumerator will retrieve attributes for each object.</p>
+
+<terms>
+<item>
+<title><code>object_type</code></title>
+  <p>the type of objects to create</p>
+</item>
+<item>
+<title><code>attr_types</code></title>
+  <p>types of attributes to retrieve for objects</p>
+</item>
+</terms>
+
+</page>

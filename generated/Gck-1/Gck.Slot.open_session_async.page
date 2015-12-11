@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<page id="Gck.Slot.open_session_async"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Slot" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gck_slot_open_session_async</api:name>
+      <api:arg>
+        <api:type>Gck.SessionOptions</api:type>
+        <api:name>options</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.AsyncReadyCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Slot.prototype.open_session_async</title>
+  <synopsis><code mime="text/x-gjs">
+function open_session_async(options: <link xref="Gck.SessionOptions">Gck.SessionOptions</link>, cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>, callback: <link href="../Gio-2.0/Gio.AsyncReadyCallback.html">Gio.AsyncReadyCallback</link>): void {
+    // Gjs wrapper for gck_slot_open_session_async()
+}
+  </code></synopsis>
+  <p>Open a session on the slot. If the 'auto reuse' setting is set,
+then this may be a recycled session with the same flags.</p>  <p>This call will return immediately and complete asynchronously.</p>
+
+<terms>
+<item>
+<title><code>options</code></title>
+  <p>The options to open the new session with.</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>Optional cancellation object, or NULL.</p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>Called when the operation completes.</p>
+</item>
+</terms>
+
+</page>

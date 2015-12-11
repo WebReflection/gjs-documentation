@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<page id="GWeather.Sky"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>GWeather.Sky</title>
+  <p>The sky and cloud visibility. In general it is discouraged to
+use this value directly to compute the forecast icon: applications
+should instead use <link xref="GWeather.Info.get_icon_name"/> or
+<link xref="GWeather.Info.get_symbolic_icon_name"/>.</p>
+
+<terms>
+<item>
+<title><code>Sky.INVALID</code></title>
+  <p>value not available</p>
+</item>
+<item>
+<title><code>Sky.CLEAR</code></title>
+  <p>sky completely clear, no clouds visible</p>
+</item>
+<item>
+<title><code>Sky.BROKEN</code></title>
+  <p>sky mostly clear, few clouds</p>
+</item>
+<item>
+<title><code>Sky.SCATTERED</code></title>
+  <p>sky mostly clear, patches of clouds</p>
+</item>
+<item>
+<title><code>Sky.FEW</code></title>
+  <p>few clouds, sky cloudy but patches of sky visible</p>
+</item>
+<item>
+<title><code>Sky.OVERCAST</code></title>
+  <p>sky completely clouded, sun not visible</p>
+</item>
+<item>
+<title><code>Sky.LAST</code></title>
+  <p>the maximum value for the enumeration</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

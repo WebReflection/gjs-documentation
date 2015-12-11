@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gck.Session.unwrap_key_finish"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Session" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.Object</api:type>
+      </api:returns>
+      <api:name>gck_session_unwrap_key_finish</api:name>
+      <api:arg>
+        <api:type>Gio.AsyncResult</api:type>
+        <api:name>result</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Session.prototype.unwrap_key_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function unwrap_key_finish(result: <link href="../Gio-2.0/Gio.AsyncResult.html">Gio.AsyncResult</link>): <link xref="Gck.Object">Gck.Object</link> {
+    // Gjs wrapper for gck_session_unwrap_key_finish()
+}
+  </code></synopsis>
+  <p>Get the result of a unwrap key operation.</p>
+
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>The async result passed to the callback.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the new unwrapped key or <code>null</code> if the operation
+         failed.</p>
+</item>
+</terms>
+
+</page>

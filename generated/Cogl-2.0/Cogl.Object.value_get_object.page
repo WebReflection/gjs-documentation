@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Cogl.Object.value_get_object"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Object" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_object_value_get_object</api:name>
+      <api:arg>
+        <api:type>Any</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Object.value_get_object</title>
+  <synopsis><code mime="text/x-gjs">
+function value_get_object(value: Any): void {
+    // Gjs wrapper for cogl_object_value_get_object()
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>value</code></title>
+
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

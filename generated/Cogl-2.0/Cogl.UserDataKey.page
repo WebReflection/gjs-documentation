@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<page id="Cogl.UserDataKey"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>Cogl.UserDataKey</title>
+  <synopsis><code>
+const Cogl = imports.gi.Cogl;
+
+let userDataKey = new Cogl.UserDataKey({
+    <link xref='Cogl.UserDataKey-unused'>unused</link>: value
+});
+  </code></synopsis>
+  <p>A <link xref="Cogl.UserDataKey"/> is used to declare a key for attaching data to a
+<link xref="Cogl.Object"/> using cogl_object_set_user_data. The typedef only exists as a
+formality to make code self documenting since only the unique address of a
+<link xref="Cogl.UserDataKey"/> is used.</p>  <p>Typically you would declare a static <link xref="Cogl.UserDataKey"/> and set private data
+on an object something like this:</p>  <p>|[
+static CoglUserDataKey path_private_key;</p>  <p>static void
+destroy_path_private_cb (void *data)
+{
+  g_free (data);
+}</p>  <p>static void
+my_path_set_data (CoglPath *path, void *data)
+{
+  cogl_object_set_user_data (COGL_OBJECT (path),
+                             &amp;private_key,
+                             data,
+                             destroy_path_private_cb);
+}
+]|</p>
+  <p>Since 1.4</p>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Cogl.Attribute.get_normalized"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Attribute" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_attribute_get_normalized</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Attribute.prototype.get_normalized</title>
+  <synopsis><code mime="text/x-gjs">
+function get_normalized(): <link xref="Cogl.Bool">Cogl.Bool</link> {
+    // Gjs wrapper for cogl_attribute_get_normalized()
+}
+  </code></synopsis>
+
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the value of the normalized property set with
+<link xref="Cogl.Attribute.set_normalized"/>.</p>
+</item>
+</terms>
+
+</page>

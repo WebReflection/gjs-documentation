@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Cogl.Framebuffer.get_depth_write_enabled"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Framebuffer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_framebuffer_get_depth_write_enabled</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Framebuffer.prototype.get_depth_write_enabled</title>
+  <synopsis><code mime="text/x-gjs">
+function get_depth_write_enabled(): <link xref="Cogl.Bool">Cogl.Bool</link> {
+    // Gjs wrapper for cogl_framebuffer_get_depth_write_enabled()
+}
+  </code></synopsis>
+  <p>Queries whether depth buffer writing is enabled for <code>framebuffer</code>. This
+can be controlled via <link xref="Cogl.Framebuffer.set_depth_write_enabled"/>.</p>
+  <p>Since 1.18</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if depth writing is enabled or <code>false</code> if not.</p>
+</item>
+</terms>
+
+</page>

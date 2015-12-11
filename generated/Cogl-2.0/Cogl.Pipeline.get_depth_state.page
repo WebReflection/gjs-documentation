@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.get_depth_state"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_get_depth_state</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.get_depth_state</title>
+  <synopsis><code mime="text/x-gjs">
+function get_depth_state(): <link xref="Cogl.DepthState">Cogl.DepthState</link> {
+    // Gjs wrapper for cogl_pipeline_get_depth_state()
+}
+  </code></synopsis>
+  <p>Retrieves the current depth state configuration for the given
+<code>pipeline</code> as previously set using <link xref="Cogl.Pipeline.set_depth_state"/>.</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>A destination <link xref="Cogl.DepthState"/> struct</p>
+</item>
+</terms>
+
+</page>

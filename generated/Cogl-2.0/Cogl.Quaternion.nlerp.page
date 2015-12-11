@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<page id="Cogl.Quaternion.nlerp"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Quaternion" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_quaternion_nlerp</api:name>
+      <api:arg>
+        <api:type>Cogl.Quaternion</api:type>
+        <api:name>a</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.Quaternion</api:type>
+        <api:name>b</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>t</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Quaternion.prototype.nlerp</title>
+  <synopsis><code mime="text/x-gjs">
+function nlerp(a: <link xref="Cogl.Quaternion">Cogl.Quaternion</link>, b: <link xref="Cogl.Quaternion">Cogl.Quaternion</link>, t: Number(gfloat)): void {
+    // Gjs wrapper for cogl_quaternion_nlerp()
+}
+  </code></synopsis>
+  <p>Performs a normalized linear interpolation between two quaternions.
+That is it does a linear interpolation of the quaternion components
+and then normalizes the result. This will follow the shortest arc
+between the two orientations (just like the slerp() function) but
+will not progress at a constant speed. Unlike slerp() nlerp is
+commutative which is useful if you are blending animations
+together. (I.e. nlerp (tmp, a, b) followed by nlerp (result, tmp,
+d) is the same as nlerp (tmp, a, d) followed by nlerp (result, tmp,
+b)). Finally nlerp is cheaper than slerp so it can be a good choice
+if you don't need the constant speed property of the slerp() function.</p>  <p>Notable properties:
+&lt;itemizedlist&gt;
+&lt;listitem&gt;
+commutative: Yes
+&lt;/listitem&gt;
+&lt;listitem&gt;
+constant velocity: No
+&lt;/listitem&gt;
+&lt;listitem&gt;
+torque minimal (travels along the surface of the 4-sphere): Yes
+&lt;/listitem&gt;
+&lt;listitem&gt;
+faster than <link xref="Cogl.Quaternion.slerp"/>
+&lt;/listitem&gt;
+&lt;/itemizedlist&gt;</p>
+
+<terms>
+<item>
+<title><code>a</code></title>
+  <p>The first <link xref="Cogl.Quaternion"/></p>
+</item>
+<item>
+<title><code>b</code></title>
+  <p>The second <link xref="Cogl.Quaternion"/></p>
+</item>
+<item>
+<title><code>t</code></title>
+  <p>The factor in the range [0,1] used to interpolate between
+quaterion <code>a</code> and <code>b</code>.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Gck.Attributes.unref"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Attributes" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gck_attributes_unref</api:name>
+      <api:arg>
+        <api:type>void</api:type>
+        <api:name>attrs</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Attributes.unref</title>
+  <synopsis><code mime="text/x-gjs">
+function unref(attrs: void): void {
+    // Gjs wrapper for gck_attributes_unref()
+}
+  </code></synopsis>
+  <p>Unreference this attribute array.</p>  <p>When all outstanding references are gone, the array will be freed.</p>
+
+<terms>
+<item>
+<title><code>attrs</code></title>
+  <p>(type Gck.Attributes): An attribute array</p>
+</item>
+</terms>
+
+</page>

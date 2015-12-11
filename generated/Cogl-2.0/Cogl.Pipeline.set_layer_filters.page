@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.set_layer_filters"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_set_layer_filters</api:name>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>layer_index</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.PipelineFilter</api:type>
+        <api:name>min_filter</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.PipelineFilter</api:type>
+        <api:name>mag_filter</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.set_layer_filters</title>
+  <synopsis><code mime="text/x-gjs">
+function set_layer_filters(layer_index: Number(gint), min_filter: <link xref="Cogl.PipelineFilter">Cogl.PipelineFilter</link>, mag_filter: <link xref="Cogl.PipelineFilter">Cogl.PipelineFilter</link>): void {
+    // Gjs wrapper for cogl_pipeline_set_layer_filters()
+}
+  </code></synopsis>
+  <p>Changes the decimation and interpolation filters used when a texture is
+drawn at other scales than 100%.</p>  <p>&lt;note&gt;It is an error to pass anything other than
+<link xref="Cogl.PipelineFilter"/>.nearest or <link xref="Cogl.PipelineFilter"/>.linear as
+magnification filters since magnification doesn't ever need to
+reference values stored in the mipmap chain.&lt;/note&gt;</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>layer_index</code></title>
+  <p>the layer number to change.</p>
+</item>
+<item>
+<title><code>min_filter</code></title>
+  <p>the filter used when scaling a texture down.</p>
+</item>
+<item>
+<title><code>mag_filter</code></title>
+  <p>the filter used when magnifying a texture.</p>
+</item>
+</terms>
+
+</page>

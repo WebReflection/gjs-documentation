@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="Gcr.SystemPrompt.close_async"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.SystemPrompt" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gcr_system_prompt_close_async</api:name>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.AsyncReadyCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.SystemPrompt.prototype.close_async</title>
+  <synopsis><code mime="text/x-gjs">
+function close_async(cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>, callback: <link href="../Gio-2.0/Gio.AsyncReadyCallback.html">Gio.AsyncReadyCallback</link>): void {
+    // Gjs wrapper for gcr_system_prompt_close_async()
+}
+  </code></synopsis>
+  <p>Close this prompt asynchronously. After calling this function, no further
+methods may be called on this object. The prompt object is not unreferenced
+by this function, and you must unreference it once done.</p>  <p>This call returns immediately and completes asynchronously.</p>
+
+<terms>
+<item>
+<title><code>cancellable</code></title>
+  <p>an optional cancellation object</p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>called when the operation completes</p>
+</item>
+</terms>
+
+</page>

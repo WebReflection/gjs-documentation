@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Cogl.GLES2Vtable.glBlendColor"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Cogl.GLES2Vtable.glBlendColor</title>
+  <synopsis><code mime="text/x-gjs">
+function onglBlendColor(red: <link href="../GL-1.0/GL.clampf.html">GL.clampf</link>, green: <link href="../GL-1.0/GL.clampf.html">GL.clampf</link>, blue: <link href="../GL-1.0/GL.clampf.html">GL.clampf</link>, alpha: <link href="../GL-1.0/GL.clampf.html">GL.clampf</link>): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>red</code></title>
+
+</item>
+<item>
+<title><code>green</code></title>
+
+</item>
+<item>
+<title><code>blue</code></title>
+
+</item>
+<item>
+<title><code>alpha</code></title>
+
+</item>
+</terms>
+
+</page>

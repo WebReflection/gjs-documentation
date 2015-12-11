@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="Gck.UriFlags"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Gck.UriFlags</title>
+  <p>Which parts of the PKCS\#11 URI will be parsed or formatted. These can be
+combined.</p>
+
+<terms>
+<item>
+<title><code>UriFlags.FOR_OBJECT</code></title>
+  <p>the URI will be used to match objects.</p>
+</item>
+<item>
+<title><code>UriFlags.FOR_TOKEN</code></title>
+  <p>the URI will be used to match tokens.</p>
+</item>
+<item>
+<title><code>UriFlags.FOR_MODULE</code></title>
+  <p>the URI will be used to match modules.</p>
+</item>
+<item>
+<title><code>UriFlags.WITH_VERSION</code></title>
+  <p>the URI has specific version numbers for module and/or token</p>
+</item>
+<item>
+<title><code>UriFlags.FOR_ANY</code></title>
+  <p>parse all recognized components of the URI.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Cogl.PollFD-fd"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.PollFD" group="field" type="guide"/>
+    <title type="link" role="topic">fd</title>
+  </info>
+  <title>Cogl.PollFD.fd</title>
+  <synopsis><code mime="text/x-gjs">
+PollFD.fd: Number(gint) (Read / Write)
+  </code></synopsis>
+  <p>The file descriptor to block on</p>
+
+</page>

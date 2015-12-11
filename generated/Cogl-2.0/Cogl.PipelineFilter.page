@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<page id="Cogl.PipelineFilter"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Cogl.PipelineFilter</title>
+  <p>Texture filtering is used whenever the current pixel maps either to more
+than one texture element (texel) or less than one. These filter enums
+correspond to different strategies used to come up with a pixel color, by
+possibly referring to multiple neighbouring texels and taking a weighted
+average or simply using the nearest texel.</p>
+
+<terms>
+<item>
+<title><code>PipelineFilter.NEAREST</code></title>
+  <p>Measuring in manhatten distance from the,
+  current pixel center, use the nearest texture texel</p>
+</item>
+<item>
+<title><code>PipelineFilter.LINEAR</code></title>
+  <p>Use the weighted average of the 4 texels
+  nearest the current pixel center</p>
+</item>
+<item>
+<title><code>PipelineFilter.NEAREST_MIPMAP_NEAREST</code></title>
+  <p>Select the mimap level whose
+  texel size most closely matches the current pixel, and use the
+  <link xref="Cogl.PipelineFilter"/>.nearest criterion</p>
+</item>
+<item>
+<title><code>PipelineFilter.LINEAR_MIPMAP_NEAREST</code></title>
+  <p>Select the mimap level whose
+  texel size most closely matches the current pixel, and use the
+  <link xref="Cogl.PipelineFilter"/>.linear criterion</p>
+</item>
+<item>
+<title><code>PipelineFilter.NEAREST_MIPMAP_LINEAR</code></title>
+  <p>Select the two mimap levels
+  whose texel size most closely matches the current pixel, use
+  the <link xref="Cogl.PipelineFilter"/>.nearest criterion on each one and take
+  their weighted average</p>
+</item>
+<item>
+<title><code>PipelineFilter.LINEAR_MIPMAP_LINEAR</code></title>
+  <p>Select the two mimap levels
+  whose texel size most closely matches the current pixel, use
+  the <link xref="Cogl.PipelineFilter"/>.linear criterion on each one and take
+  their weighted average</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.PipelineWrapMode</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.PipelineWrapMode</span></h1></div>
+<div class="region">
+<div class="contents">
+<p class="p">The wrap mode specifies what happens when texture coordinates
+outside the range 0→1 are used. Note that if the filter mode is
+anything but <span class="link"><a href="Cogl.PipelineFilter.html" title="Cogl.PipelineFilter">Cogl.PipelineFilter</a></span>.nearest then texels outside the
+range 0→1 might be used even when the coordinate is exactly 0 or 1
+because OpenGL will try to sample neighbouring pixels. For example
+if you are trying to render the full texture then you may get
+artifacts around the edges when the pixels from the other side are
+merged in if the wrap mode is set to repeat.</p>
+<p class="p">Since 2.0</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">PipelineWrapMode.REPEAT</span></dt>
+<dd class="terms"><p class="p">The texture will be repeated. This
+  is useful for example to draw a tiled background.</p></dd>
+<dt class="terms"><span class="code">PipelineWrapMode.MIRRORED_REPEAT</span></dt>
+<dd class="terms"></dd>
+<dt class="terms"><span class="code">PipelineWrapMode.CLAMP_TO_EDGE</span></dt>
+<dd class="terms"><p class="p">The coordinates outside the
+  range 0→1 will sample copies of the edge pixels of the
+  texture. This is useful to avoid artifacts if only one copy of
+  the texture is being rendered.</p></dd>
+<dt class="terms"><span class="code">PipelineWrapMode.AUTOMATIC</span></dt>
+<dd class="terms"><p class="p">Cogl will try to automatically
+  decide which of the above two to use. For cogl_rectangle(), it
+  will use repeat mode if any of the texture coordinates are
+  outside the range 0→1, otherwise it will use clamp to edge. For
+  cogl_polygon() it will always use repeat mode. For
+  cogl_vertex_buffer_draw() it will use repeat mode except for
+  layers that have point sprite coordinate generation enabled. This
+  is the default value.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Cogl">Cogl</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

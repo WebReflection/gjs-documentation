@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Cogl.Quaternion.init_identity"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Quaternion" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_quaternion_init_identity</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Quaternion.prototype.init_identity</title>
+  <synopsis><code mime="text/x-gjs">
+function init_identity(): void {
+    // Gjs wrapper for cogl_quaternion_init_identity()
+}
+  </code></synopsis>
+  <p>Initializes the quaternion with the canonical quaternion identity
+[1 (0, 0, 0)] which represents no rotation. Multiplying a
+quaternion with this identity leaves the quaternion unchanged.</p>  <p>You might also want to consider using
+<link xref="Cogl.get_static_identity_quaternion"/>.</p>
+  <p>Since 2.0</p>
+
+</page>

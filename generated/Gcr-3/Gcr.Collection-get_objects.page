@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<page id="Gcr.Collection-get_objects"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Collection" group="vfunc" type="guide"/>
+  </info>
+  <title>Gcr.Collection::get_objects</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_get_objects(): Array(<link href="../GObject-2.0/GObject.Object.html">GObject.Object</link>) {
+}
+  </code></synopsis>
+  <p>Get a list of the objects in this collection.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a list of the objects
+         in this collection, which should be freed with g_list_free()</p>
+</item>
+</terms>
+
+</page>

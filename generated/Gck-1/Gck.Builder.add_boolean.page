@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="Gck.Builder.add_boolean"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Builder" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gck_builder_add_boolean</api:name>
+      <api:arg>
+        <api:type>Number(gulong)</api:type>
+        <api:name>attr_type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Boolean</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Builder.prototype.add_boolean</title>
+  <synopsis><code mime="text/x-gjs">
+function add_boolean(attr_type: Number(gulong), value: Boolean): void {
+    // Gjs wrapper for gck_builder_add_boolean()
+}
+  </code></synopsis>
+  <p>Add a new attribute to the builder for the boolean <code>value</code>.
+Unconditionally adds a new attribute, even if one with the same <code>attr_type</code>
+already exists.</p>
+
+<terms>
+<item>
+<title><code>attr_type</code></title>
+  <p>the new attribute type</p>
+</item>
+<item>
+<title><code>value</code></title>
+  <p>the attribute value</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<page id="Cogl.Texture.set_region_from_bitmap"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Texture" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_texture_set_region_from_bitmap</api:name>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>src_x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>src_y</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>dst_x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>dst_y</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint)</api:type>
+        <api:name>dst_width</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint)</api:type>
+        <api:name>dst_height</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.Bitmap</api:type>
+        <api:name>bitmap</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Texture.prototype.set_region_from_bitmap</title>
+  <synopsis><code mime="text/x-gjs">
+function set_region_from_bitmap(src_x: Number(gint), src_y: Number(gint), dst_x: Number(gint), dst_y: Number(gint), dst_width: Number(guint), dst_height: Number(guint), bitmap: <link xref="Cogl.Bitmap">Cogl.Bitmap</link>): <link xref="Cogl.Bool">Cogl.Bool</link> {
+    // Gjs wrapper for cogl_texture_set_region_from_bitmap()
+}
+  </code></synopsis>
+  <p>Copies a specified source region from <code>bitmap</code> to the position
+(<code>src_x</code>, <code>src_y</code>) of the given destination texture @handle.</p>  <p>&lt;note&gt;The region updated can't be larger than the source
+bitmap&lt;/note&gt;</p>
+  <p>Since 1.8</p>
+<terms>
+<item>
+<title><code>src_x</code></title>
+  <p>upper left coordinate to use from the source bitmap.</p>
+</item>
+<item>
+<title><code>src_y</code></title>
+  <p>upper left coordinate to use from the source bitmap</p>
+</item>
+<item>
+<title><code>dst_x</code></title>
+  <p>upper left destination horizontal coordinate.</p>
+</item>
+<item>
+<title><code>dst_y</code></title>
+  <p>upper left destination vertical coordinate.</p>
+</item>
+<item>
+<title><code>dst_width</code></title>
+  <p>width of destination region to write. (Must be less
+  than or equal to the bitmap width)</p>
+</item>
+<item>
+<title><code>dst_height</code></title>
+  <p>height of destination region to write. (Must be less
+  than or equal to the bitmap height)</p>
+</item>
+<item>
+<title><code>bitmap</code></title>
+  <p>The source bitmap to read from</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if the subregion upload was successful, and
+  <code>false</code> otherwise</p>
+</item>
+</terms>
+
+</page>

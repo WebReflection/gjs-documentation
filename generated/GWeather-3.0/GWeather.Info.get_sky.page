@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="GWeather.Info.get_sky"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Info" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>gweather_info_get_sky</api:name>
+    </api:function>
+  </info>
+  <title>GWeather.Info.prototype.get_sky</title>
+  <synopsis><code mime="text/x-gjs">
+function get_sky(): String {
+    // Gjs wrapper for gweather_info_get_sky()
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

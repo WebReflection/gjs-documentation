@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<page id="Notify.Notification.update"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Notify.Notification" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>notify_notification_update</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>summary</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>body</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>icon</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Notify.Notification.prototype.update</title>
+  <synopsis><code mime="text/x-gjs">
+function update(summary: String, body: String, icon: String): Boolean {
+    // Gjs wrapper for notify_notification_update()
+}
+  </code></synopsis>
+  <p>Updates the notification text and icon. This won't send the update out
+and display it on the screen. For that, you will need to call
+<link xref="Notify.Notification.show"/>.</p>
+
+<terms>
+<item>
+<title><code>summary</code></title>
+  <p>The new required summary text.</p>
+</item>
+<item>
+<title><code>body</code></title>
+  <p>The optional body text.</p>
+</item>
+<item>
+<title><code>icon</code></title>
+  <p>The optional icon theme icon name or filename.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code>, unless an invalid parameter was passed.</p>
+</item>
+</terms>
+
+</page>

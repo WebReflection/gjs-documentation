@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="Notify.Notification.set_hint_int32"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Notify.Notification" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>notify_notification_set_hint_int32</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>key</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Notify.Notification.prototype.set_hint_int32</title>
+  <synopsis><code mime="text/x-gjs">
+function set_hint_int32(key: String, value: Number(gint)): void {
+    // Gjs wrapper for notify_notification_set_hint_int32()
+}
+  </code></synopsis>
+  <p>Sets a hint with a 32-bit integer value.</p>
+
+<terms>
+<item>
+<title><code>key</code></title>
+  <p>The hint.</p>
+</item>
+<item>
+<title><code>value</code></title>
+  <p>The hint's value.</p>
+</item>
+</terms>
+
+</page>

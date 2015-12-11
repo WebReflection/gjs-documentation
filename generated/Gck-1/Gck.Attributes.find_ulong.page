@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="Gck.Attributes.find_ulong"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Attributes" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gck_attributes_find_ulong</api:name>
+      <api:arg>
+        <api:type>Number(gulong)</api:type>
+        <api:name>attr_type</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Attributes.prototype.find_ulong</title>
+  <synopsis><code mime="text/x-gjs">
+function find_ulong(attr_type: Number(gulong)): [ok: Boolean, value: Number(gulong)] {
+    // Gjs wrapper for gck_attributes_find_ulong()
+}
+  </code></synopsis>
+  <p>Find an attribute with the specified type in the array.</p>  <p>The attribute (if found) must be of the right size to store
+a unsigned long value (ie: CK_ULONG). If the attribute is marked invalid
+then it will be treated as not found.</p>
+
+<terms>
+<item>
+<title><code>attr_type</code></title>
+  <p>The type of attribute to find.</p>
+</item>
+<item>
+<title><code>ok</code></title>
+  <p>Whether a value was found or not.</p>
+</item>
+<item>
+<title><code>value</code></title>
+  <p>The resulting gulong value.</p>
+</item>
+</terms>
+
+</page>

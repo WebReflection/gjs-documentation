@@ -1,0 +1,160 @@
+<?xml version="1.0"?>
+<page id="Cogl.PixelFormat"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Cogl.PixelFormat</title>
+  <p>Pixel formats used by Cogl. For the formats with a byte per
+component, the order of the components specify the order in
+increasing memory addresses. So for example
+<link xref="Cogl.PixelFormat"/>.rgb_888 would have the red component in the
+lowest address, green in the next address and blue after that
+regardless of the endianness of the system.</p>  <p>For the formats with non byte aligned components the component
+order specifies the order within a 16-bit or 32-bit number from
+most significant bit to least significant. So for
+<link xref="Cogl.PixelFormat"/>.rgb_565, the red component would be in bits
+11-15, the green component would be in 6-11 and the blue component
+would be in 1-5. Therefore the order in memory depends on the
+endianness of the system.</p>  <p>When uploading a texture <link xref="Cogl.PixelFormat"/>.any can be used as the
+internal format. Cogl will try to pick the best format to use
+internally and convert the texture data if necessary.</p>
+  <p>Since 0.8</p>
+<terms>
+<item>
+<title><code>PixelFormat.ANY</code></title>
+  <p>Any format</p>
+</item>
+<item>
+<title><code>PixelFormat.A_8</code></title>
+  <p>8 bits alpha mask</p>
+</item>
+<item>
+<title><code>PixelFormat.RGB_565</code></title>
+  <p>RGB, 16 bits</p>
+</item>
+<item>
+<title><code>PixelFormat.RGBA_4444</code></title>
+  <p>RGBA, 16 bits</p>
+</item>
+<item>
+<title><code>PixelFormat.RGBA_5551</code></title>
+  <p>RGBA, 16 bits</p>
+</item>
+<item>
+<title><code>PixelFormat.YUV</code></title>
+  <p>Not currently supported</p>
+</item>
+<item>
+<title><code>PixelFormat.G_8</code></title>
+  <p>Single luminance component</p>
+</item>
+<item>
+<title><code>PixelFormat.RG_88</code></title>
+  <p>RG, 16 bits. Note that red-green textures
+  are only available if <link xref="Cogl.FeatureID"/>.ogl_feature_id_texture_rg is advertised.
+  See <link xref="Cogl.Texture.set_components"/> for details.</p>
+</item>
+<item>
+<title><code>PixelFormat.RGB_888</code></title>
+  <p>RGB, 24 bits</p>
+</item>
+<item>
+<title><code>PixelFormat.BGR_888</code></title>
+  <p>BGR, 24 bits</p>
+</item>
+<item>
+<title><code>PixelFormat.RGBA_8888</code></title>
+  <p>RGBA, 32 bits</p>
+</item>
+<item>
+<title><code>PixelFormat.BGRA_8888</code></title>
+  <p>BGRA, 32 bits</p>
+</item>
+<item>
+<title><code>PixelFormat.ARGB_8888</code></title>
+  <p>ARGB, 32 bits</p>
+</item>
+<item>
+<title><code>PixelFormat.ABGR_8888</code></title>
+  <p>ABGR, 32 bits</p>
+</item>
+<item>
+<title><code>PixelFormat.RGBA_1010102</code></title>
+  <p>RGBA, 32 bits, 10 bpc</p>
+</item>
+<item>
+<title><code>PixelFormat.BGRA_1010102</code></title>
+  <p>BGRA, 32 bits, 10 bpc</p>
+</item>
+<item>
+<title><code>PixelFormat.ARGB_2101010</code></title>
+  <p>ARGB, 32 bits, 10 bpc</p>
+</item>
+<item>
+<title><code>PixelFormat.ABGR_2101010</code></title>
+  <p>ABGR, 32 bits, 10 bpc</p>
+</item>
+<item>
+<title><code>PixelFormat.RGBA_8888_PRE</code></title>
+  <p>Premultiplied RGBA, 32 bits</p>
+</item>
+<item>
+<title><code>PixelFormat.BGRA_8888_PRE</code></title>
+  <p>Premultiplied BGRA, 32 bits</p>
+</item>
+<item>
+<title><code>PixelFormat.ARGB_8888_PRE</code></title>
+  <p>Premultiplied ARGB, 32 bits</p>
+</item>
+<item>
+<title><code>PixelFormat.ABGR_8888_PRE</code></title>
+  <p>Premultiplied ABGR, 32 bits</p>
+</item>
+<item>
+<title><code>PixelFormat.RGBA_4444_PRE</code></title>
+  <p>Premultiplied RGBA, 16 bits</p>
+</item>
+<item>
+<title><code>PixelFormat.RGBA_5551_PRE</code></title>
+  <p>Premultiplied RGBA, 16 bits</p>
+</item>
+<item>
+<title><code>PixelFormat.RGBA_1010102_PRE</code></title>
+  <p>Premultiplied RGBA, 32 bits, 10 bpc</p>
+</item>
+<item>
+<title><code>PixelFormat.BGRA_1010102_PRE</code></title>
+  <p>Premultiplied BGRA, 32 bits, 10 bpc</p>
+</item>
+<item>
+<title><code>PixelFormat.ARGB_2101010_PRE</code></title>
+  <p>Premultiplied ARGB, 32 bits, 10 bpc</p>
+</item>
+<item>
+<title><code>PixelFormat.ABGR_2101010_PRE</code></title>
+  <p>Premultiplied ABGR, 32 bits, 10 bpc</p>
+</item>
+<item>
+<title><code>PixelFormat.DEPTH_16</code></title>
+
+</item>
+<item>
+<title><code>PixelFormat.DEPTH_32</code></title>
+
+</item>
+<item>
+<title><code>PixelFormat.DEPTH_24_STENCIL_8</code></title>
+
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

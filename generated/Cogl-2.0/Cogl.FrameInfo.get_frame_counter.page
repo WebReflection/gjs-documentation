@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Cogl.FrameInfo.get_frame_counter"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.FrameInfo" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gint64)</api:type>
+      </api:returns>
+      <api:name>cogl_frame_info_get_frame_counter</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.FrameInfo.prototype.get_frame_counter</title>
+  <synopsis><code mime="text/x-gjs">
+function get_frame_counter(): Number(gint64) {
+    // Gjs wrapper for cogl_frame_info_get_frame_counter()
+}
+  </code></synopsis>
+  <p>Gets the frame counter for the <link xref="Cogl.Onscreen"/> that corresponds
+to this frame.</p>
+  <p>Since 1.14</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>The frame counter value</p>
+</item>
+</terms>
+
+</page>

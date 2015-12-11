@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.Onscreen.prototype.set_resizable</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » <a class="trail" href="Cogl.Onscreen.html" title="Cogl.Onscreen">Cogl.Onscreen</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.Onscreen.prototype.set_resizable</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function set_resizable(resizable: <span class="link"><a href="Cogl.Bool.html" title="Cogl.Bool">Cogl.Bool</a></span>): void {
+    // Gjs wrapper for cogl_onscreen_set_resizable()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Lets you request Cogl to mark an <span class="code">onscreen</span> framebuffer as
+resizable or not.</p>
+<p class="p">By default, if possible, a <span class="code">onscreen</span> will be created by Cogl
+as non resizable, but it is not guaranteed that this is always
+possible for all window systems.</p>
+<p class="p">&lt;note&gt;Cogl does not know whether marking the <span class="code">onscreen</span> framebuffer
+is truly meaningful for your current window system (consider
+applications being run fullscreen on a phone or TV) so this
+function may not have any useful effect. If you are running on a
+multi windowing system such as X11 or Win32 or OSX then Cogl will
+request to the window system that users be allowed to resize the
+<span class="code">onscreen</span>, although it's still possible that some other window
+management policy will block this possibility.&lt;/note&gt;</p>
+<p class="p">&lt;note&gt;Whenever an <span class="code">onscreen</span> framebuffer is resized the viewport
+will be automatically updated to match the new size of the
+framebuffer with an origin of (0,0). If your application needs more
+specialized control of the viewport it will need to register a
+resize handler using <span class="link"><a href="Cogl.Onscreen.add_resize_callback.html" title="Cogl.Onscreen.prototype.add_resize_callback">Cogl.Onscreen.prototype.add_resize_callback</a></span> so that it
+can track when the viewport has been changed automatically.&lt;/note&gt;</p>
+<p class="p">Since 2.0</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">resizable</span></dt>
+<dd class="terms"></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.Onscreen.html" title="Cogl.Onscreen">Cogl.Onscreen</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

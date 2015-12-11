@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gcr.Prompt.set_warning"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Prompt" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gcr_prompt_set_warning</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>warning</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.Prompt.prototype.set_warning</title>
+  <synopsis><code mime="text/x-gjs">
+function set_warning(warning: String): void {
+    // Gjs wrapper for gcr_prompt_set_warning()
+}
+  </code></synopsis>
+  <p>Set a prompt warning displayed on the prompt.</p>  <p>This is a warning like "The password is incorrect." usually displayed to the
+user about a previous 'unsuccessful' prompt.</p>  <p>If this string is <code>null</code> then no warning is displayed.</p>
+
+<terms>
+<item>
+<title><code>warning</code></title>
+  <p>the warning or <code>null</code></p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<page id="Gcr.Certificate.mixin_emit_notify"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Certificate" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gcr_certificate_mixin_emit_notify</api:name>
+    </api:function>
+  </info>
+  <title>Gcr.Certificate.prototype.mixin_emit_notify</title>
+  <synopsis><code mime="text/x-gjs">
+function mixin_emit_notify(): void {
+    // Gjs wrapper for gcr_certificate_mixin_emit_notify()
+}
+  </code></synopsis>
+  <p>Implementers of the <link xref="Gcr.Certificate"/> mixin should call this function to notify
+when the certificate has changed to emit notifications on the various
+properties.</p>
+
+
+</page>

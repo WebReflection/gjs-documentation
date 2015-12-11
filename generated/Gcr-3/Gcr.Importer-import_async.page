@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<page id="Gcr.Importer-import_async"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Importer" group="vfunc" type="guide"/>
+  </info>
+  <title>Gcr.Importer::import_async</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_import_async(cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>, callback: <link href="../Gio-2.0/Gio.AsyncReadyCallback.html">Gio.AsyncReadyCallback</link>): void {
+}
+  </code></synopsis>
+  <p>Import the queued items in the importer. This function returns immediately
+and completes asynchronously.</p>
+
+<terms>
+<item>
+<title><code>cancellable</code></title>
+  <p>a <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>, or <code>null</code></p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>called when the operation completes</p>
+</item>
+</terms>
+
+</page>

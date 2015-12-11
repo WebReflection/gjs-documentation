@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="GdkX11.x11_get_default_screen"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gint)</api:type>
+      </api:returns>
+      <api:name>gdk_x11_get_default_screen</api:name>
+    </api:function>
+  </info>
+  <title>GdkX11.x11_get_default_screen</title>
+  <synopsis><code mime="text/x-gjs">
+function x11_get_default_screen(): Number(gint) {
+    // Gjs wrapper for gdk_x11_get_default_screen()
+}
+  </code></synopsis>
+  <p>Gets the default GTK+ screen number.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>returns the screen number specified by
+  the --display command line option or the DISPLAY environment
+  variable when gdk_init() calls XOpenDisplay().</p>
+</item>
+</terms>
+
+</page>

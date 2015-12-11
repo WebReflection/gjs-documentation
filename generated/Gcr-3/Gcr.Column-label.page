@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gcr.Column-label"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Column" group="field" type="guide"/>
+    <title type="link" role="topic">label</title>
+  </info>
+  <title>Gcr.Column.label</title>
+  <synopsis><code mime="text/x-gjs">
+Column.label: String (Read)
+  </code></synopsis>
+
+
+</page>

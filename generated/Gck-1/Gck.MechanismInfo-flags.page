@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gck.MechanismInfo-flags"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.MechanismInfo" group="field" type="guide"/>
+    <title type="link" role="topic">flags</title>
+  </info>
+  <title>Gck.MechanismInfo.flags</title>
+  <synopsis><code mime="text/x-gjs">
+MechanismInfo.flags: Number(gulong) (Read / Write)
+  </code></synopsis>
+  <p>Various PKCS11 flags that apply to this mechanism.</p>
+
+</page>

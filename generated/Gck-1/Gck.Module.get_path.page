@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gck.Module.get_path"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Module" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>gck_module_get_path</api:name>
+    </api:function>
+  </info>
+  <title>Gck.Module.prototype.get_path</title>
+  <synopsis><code mime="text/x-gjs">
+function get_path(): String {
+    // Gjs wrapper for gck_module_get_path()
+}
+  </code></synopsis>
+  <p>Get the file path of this module. This may not be an absolute path, and
+usually reflects the path passed to <link xref="Gck.Module.initialize"/>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>The path, do not modify or free this value.</p>
+</item>
+</terms>
+
+</page>

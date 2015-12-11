@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<page id="Cogl.Framebuffer.discard_buffers"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Framebuffer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_framebuffer_discard_buffers</api:name>
+      <api:arg>
+        <api:type>Number(gulong)</api:type>
+        <api:name>buffers</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Framebuffer.prototype.discard_buffers</title>
+  <synopsis><code mime="text/x-gjs">
+function discard_buffers(buffers: Number(gulong)): void {
+    // Gjs wrapper for cogl_framebuffer_discard_buffers()
+}
+  </code></synopsis>
+  <p>Declares that the specified <code>buffers</code> no longer need to be referenced
+by any further rendering commands. This can be an important
+optimization to avoid subsequent frames of rendering depending on
+the results of a previous frame.</p>  <p>For example; some tile-based rendering GPUs are able to avoid allocating and
+accessing system memory for the depth and stencil buffer so long as these
+buffers are not required as input for subsequent frames and that can save a
+significant amount of memory bandwidth used to save and restore their
+contents to system memory between frames.</p>  <p>It is currently considered an error to try and explicitly discard the color
+buffer by passing <link xref="Cogl.BufferBit"/>.color. This is because the color buffer is
+already implicitly discard when you finish rendering to a <link xref="Cogl.Onscreen"/>
+framebuffer, and it's not meaningful to try and discard the color buffer of
+a #CoglOffscreen framebuffer since they are single-buffered.</p>
+  <p>Since 1.8</p>
+<terms>
+<item>
+<title><code>buffers</code></title>
+  <p>A <link xref="Cogl.BufferBit"/> mask of which ancillary buffers you want
+          to discard.</p>
+</item>
+</terms>
+
+</page>

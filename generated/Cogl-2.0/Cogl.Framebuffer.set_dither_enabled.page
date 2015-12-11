@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="Cogl.Framebuffer.set_dither_enabled"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Framebuffer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_framebuffer_set_dither_enabled</api:name>
+      <api:arg>
+        <api:type>Cogl.Bool</api:type>
+        <api:name>dither_enabled</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Framebuffer.prototype.set_dither_enabled</title>
+  <synopsis><code mime="text/x-gjs">
+function set_dither_enabled(dither_enabled: <link xref="Cogl.Bool">Cogl.Bool</link>): void {
+    // Gjs wrapper for cogl_framebuffer_set_dither_enabled()
+}
+  </code></synopsis>
+  <p>Enables or disabled dithering if supported by the hardware.</p>  <p>Dithering is a hardware dependent technique to increase the visible
+color resolution beyond what the underlying hardware supports by playing
+tricks with the colors placed into the framebuffer to give the illusion
+of other colors. (For example this can be compared to half-toning used
+by some news papers to show varying levels of grey even though their may
+only be black and white are available).</p>  <p>If the current display pipeline for <code>framebuffer</code> does not support dithering
+then this has no affect.</p>  <p>Dithering is enabled by default.</p>
+  <p>Since 1.8</p>
+<terms>
+<item>
+<title><code>dither_enabled</code></title>
+  <p><code>true</code> to enable dithering or <code>false</code> to disable</p>
+</item>
+</terms>
+
+</page>

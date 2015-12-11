@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Notify.set_app_name"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>notify_set_app_name</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>app_name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Notify.set_app_name</title>
+  <synopsis><code mime="text/x-gjs">
+function set_app_name(app_name: String): void {
+    // Gjs wrapper for notify_set_app_name()
+}
+  </code></synopsis>
+  <p>Sets the application name.</p>
+
+<terms>
+<item>
+<title><code>app_name</code></title>
+  <p>The name of the application</p>
+</item>
+</terms>
+
+</page>

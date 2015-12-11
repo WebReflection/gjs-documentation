@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<page id="Cogl.Framebuffer.pop_clip"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Framebuffer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_framebuffer_pop_clip</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Framebuffer.prototype.pop_clip</title>
+  <synopsis><code mime="text/x-gjs">
+function pop_clip(): void {
+    // Gjs wrapper for cogl_framebuffer_pop_clip()
+}
+  </code></synopsis>
+  <p>Reverts the clipping region to the state before the last call to
+<link xref="Cogl.Framebuffer.push_scissor_clip"/>, <link xref="Cogl.Framebuffer.push_rectangle_clip"/>
+cogl_framebuffer_push_path_clip(), or <link xref="Cogl.Framebuffer.push_primitive_clip"/>.</p>
+  <p>Since 1.10</p>
+
+</page>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.Matrix</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.Matrix</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Cogl = imports.gi.Cogl;
+
+let matrix = new Cogl.Matrix({
+    <span class="link"><a href="Cogl.Matrix-xx.html" title="Cogl.Matrix.xx">xx</a></span>: value
+    <span class="link"><a href="Cogl.Matrix-yx.html" title="Cogl.Matrix.yx">yx</a></span>: value
+    <span class="link"><a href="Cogl.Matrix-zx.html" title="Cogl.Matrix.zx">zx</a></span>: value
+    <span class="link"><a href="Cogl.Matrix-wx.html" title="Cogl.Matrix.wx">wx</a></span>: value
+    <span class="link"><a href="Cogl.Matrix-xy.html" title="Cogl.Matrix.xy">xy</a></span>: value
+    <span class="link"><a href="Cogl.Matrix-yy.html" title="Cogl.Matrix.yy">yy</a></span>: value
+    <span class="link"><a href="Cogl.Matrix-zy.html" title="Cogl.Matrix.zy">zy</a></span>: value
+    <span class="link"><a href="Cogl.Matrix-wy.html" title="Cogl.Matrix.wy">wy</a></span>: value
+    <span class="link"><a href="Cogl.Matrix-xz.html" title="Cogl.Matrix.xz">xz</a></span>: value
+    <span class="link"><a href="Cogl.Matrix-yz.html" title="Cogl.Matrix.yz">yz</a></span>: value
+    <span class="link"><a href="Cogl.Matrix-zz.html" title="Cogl.Matrix.zz">zz</a></span>: value
+    <span class="link"><a href="Cogl.Matrix-wz.html" title="Cogl.Matrix.wz">wz</a></span>: value
+    <span class="link"><a href="Cogl.Matrix-xw.html" title="Cogl.Matrix.xw">xw</a></span>: value
+    <span class="link"><a href="Cogl.Matrix-yw.html" title="Cogl.Matrix.yw">yw</a></span>: value
+    <span class="link"><a href="Cogl.Matrix-zw.html" title="Cogl.Matrix.zw">zw</a></span>: value
+    <span class="link"><a href="Cogl.Matrix-ww.html" title="Cogl.Matrix.ww">ww</a></span>: value
+});
+  </pre></div></div></div></div></div>
+<p class="p">A CoglMatrix holds a 4x4 transform matrix. This is a single precision,
+column-major matrix which means it is compatible with what OpenGL expects.</p>
+<p class="p">A CoglMatrix can represent transforms such as, rotations, scaling,
+translation, sheering, and linear projections. You can combine these
+transforms by multiplying multiple matrices in the order you want them
+applied.</p>
+<p class="p">The transformation of a vertex (x, y, z, w) by a CoglMatrix is given by:</p>
+<p class="p">|[
+  x_new = xx * x + xy * y + xz * z + xw * w
+  y_new = yx * x + yy * y + yz * z + yw * w
+  z_new = zx * x + zy * y + zz * z + zw * w
+  w_new = wx * x + wy * y + wz * z + ww * w
+]|</p>
+<p class="p">Where w is normally 1</p>
+<p class="p">&lt;note&gt;You must consider the members of the CoglMatrix structure read only,
+and all matrix modifications must be done via the cogl_matrix API. This
+allows Cogl to annotate the matrices internally. Violation of this will give
+undefined results. If you need to initialize a matrix with a constant other
+than the identity matrix you can use <span class="link"><a href="Cogl.Matrix.init_from_array.html" title="Cogl.Matrix.prototype.init_from_array">Cogl.Matrix.prototype.init_from_array</a></span>.&lt;/note&gt;</p>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Cogl.Matrix.copy.html" title="Cogl.Matrix.prototype.copy">Cogl.Matrix.prototype.copy</a></li>
+<li class="links "><a href="Cogl.Matrix.free.html" title="Cogl.Matrix.prototype.free">Cogl.Matrix.prototype.free</a></li>
+<li class="links "><a href="Cogl.Matrix.frustum.html" title="Cogl.Matrix.prototype.frustum">Cogl.Matrix.prototype.frustum</a></li>
+<li class="links "><a href="Cogl.Matrix.get_array.html" title="Cogl.Matrix.prototype.get_array">Cogl.Matrix.prototype.get_array</a></li>
+<li class="links "><a href="Cogl.Matrix.get_inverse.html" title="Cogl.Matrix.prototype.get_inverse">Cogl.Matrix.prototype.get_inverse</a></li>
+<li class="links "><a href="Cogl.Matrix.init_from_array.html" title="Cogl.Matrix.prototype.init_from_array">Cogl.Matrix.prototype.init_from_array</a></li>
+<li class="links "><a href="Cogl.Matrix.init_from_euler.html" title="Cogl.Matrix.prototype.init_from_euler">Cogl.Matrix.prototype.init_from_euler</a></li>
+<li class="links "><a href="Cogl.Matrix.init_from_quaternion.html" title="Cogl.Matrix.prototype.init_from_quaternion">Cogl.Matrix.prototype.init_from_quaternion</a></li>
+<li class="links "><a href="Cogl.Matrix.init_identity.html" title="Cogl.Matrix.prototype.init_identity">Cogl.Matrix.prototype.init_identity</a></li>
+<li class="links "><a href="Cogl.Matrix.init_translation.html" title="Cogl.Matrix.prototype.init_translation">Cogl.Matrix.prototype.init_translation</a></li>
+<li class="links "><a href="Cogl.Matrix.is_identity.html" title="Cogl.Matrix.prototype.is_identity">Cogl.Matrix.prototype.is_identity</a></li>
+<li class="links "><a href="Cogl.Matrix.look_at.html" title="Cogl.Matrix.prototype.look_at">Cogl.Matrix.prototype.look_at</a></li>
+<li class="links "><a href="Cogl.Matrix.multiply.html" title="Cogl.Matrix.prototype.multiply">Cogl.Matrix.prototype.multiply</a></li>
+<li class="links "><a href="Cogl.Matrix.ortho.html" title="Cogl.Matrix.prototype.ortho">Cogl.Matrix.prototype.ortho</a></li>
+<li class="links "><a href="Cogl.Matrix.orthographic.html" title="Cogl.Matrix.prototype.orthographic">Cogl.Matrix.prototype.orthographic</a></li>
+<li class="links "><a href="Cogl.Matrix.perspective.html" title="Cogl.Matrix.prototype.perspective">Cogl.Matrix.prototype.perspective</a></li>
+<li class="links "><a href="Cogl.Matrix.project_points.html" title="Cogl.Matrix.prototype.project_points">Cogl.Matrix.prototype.project_points</a></li>
+<li class="links "><a href="Cogl.Matrix.rotate.html" title="Cogl.Matrix.prototype.rotate">Cogl.Matrix.prototype.rotate</a></li>
+<li class="links "><a href="Cogl.Matrix.rotate_euler.html" title="Cogl.Matrix.prototype.rotate_euler">Cogl.Matrix.prototype.rotate_euler</a></li>
+<li class="links "><a href="Cogl.Matrix.rotate_quaternion.html" title="Cogl.Matrix.prototype.rotate_quaternion">Cogl.Matrix.prototype.rotate_quaternion</a></li>
+<li class="links "><a href="Cogl.Matrix.scale.html" title="Cogl.Matrix.prototype.scale">Cogl.Matrix.prototype.scale</a></li>
+<li class="links "><a href="Cogl.Matrix.transform_point.html" title="Cogl.Matrix.prototype.transform_point">Cogl.Matrix.prototype.transform_point</a></li>
+<li class="links "><a href="Cogl.Matrix.transform_points.html" title="Cogl.Matrix.prototype.transform_points">Cogl.Matrix.prototype.transform_points</a></li>
+<li class="links "><a href="Cogl.Matrix.translate.html" title="Cogl.Matrix.prototype.translate">Cogl.Matrix.prototype.translate</a></li>
+<li class="links "><a href="Cogl.Matrix.transpose.html" title="Cogl.Matrix.prototype.transpose">Cogl.Matrix.prototype.transpose</a></li>
+<li class="links "><a href="Cogl.Matrix.view_2d_in_frustum.html" title="Cogl.Matrix.prototype.view_2d_in_frustum">Cogl.Matrix.prototype.view_2d_in_frustum</a></li>
+<li class="links "><a href="Cogl.Matrix.view_2d_in_perspective.html" title="Cogl.Matrix.prototype.view_2d_in_perspective">Cogl.Matrix.prototype.view_2d_in_perspective</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Static Functions</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.Matrix.equal.html" title="Cogl.Matrix.equal">Cogl.Matrix.equal</a></li></ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Fields</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Cogl.Matrix-ww.html" title="Cogl.Matrix.ww">ww</a></li>
+<li class="links "><a href="Cogl.Matrix-wx.html" title="Cogl.Matrix.wx">wx</a></li>
+<li class="links "><a href="Cogl.Matrix-wy.html" title="Cogl.Matrix.wy">wy</a></li>
+<li class="links "><a href="Cogl.Matrix-wz.html" title="Cogl.Matrix.wz">wz</a></li>
+<li class="links "><a href="Cogl.Matrix-xw.html" title="Cogl.Matrix.xw">xw</a></li>
+<li class="links "><a href="Cogl.Matrix-xx.html" title="Cogl.Matrix.xx">xx</a></li>
+<li class="links "><a href="Cogl.Matrix-xy.html" title="Cogl.Matrix.xy">xy</a></li>
+<li class="links "><a href="Cogl.Matrix-xz.html" title="Cogl.Matrix.xz">xz</a></li>
+<li class="links "><a href="Cogl.Matrix-yw.html" title="Cogl.Matrix.yw">yw</a></li>
+<li class="links "><a href="Cogl.Matrix-yx.html" title="Cogl.Matrix.yx">yx</a></li>
+<li class="links "><a href="Cogl.Matrix-yy.html" title="Cogl.Matrix.yy">yy</a></li>
+<li class="links "><a href="Cogl.Matrix-yz.html" title="Cogl.Matrix.yz">yz</a></li>
+<li class="links "><a href="Cogl.Matrix-zw.html" title="Cogl.Matrix.zw">zw</a></li>
+<li class="links "><a href="Cogl.Matrix-zx.html" title="Cogl.Matrix.zx">zx</a></li>
+<li class="links "><a href="Cogl.Matrix-zy.html" title="Cogl.Matrix.zy">zy</a></li>
+<li class="links "><a href="Cogl.Matrix-zz.html" title="Cogl.Matrix.zz">zz</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Cogl">Cogl</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

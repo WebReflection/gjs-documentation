@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gck.message_from_rv"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>gck_message_from_rv</api:name>
+      <api:arg>
+        <api:type>Number(gulong)</api:type>
+        <api:name>rv</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.message_from_rv</title>
+  <synopsis><code mime="text/x-gjs">
+function message_from_rv(rv: Number(gulong)): String {
+    // Gjs wrapper for gck_message_from_rv()
+}
+  </code></synopsis>
+  <p>Get a message for a PKCS\#11 return value or error code. Do not
+pass CKR_OK or other such non errors to this function.</p>
+
+<terms>
+<item>
+<title><code>rv</code></title>
+  <p>The PKCS\#11 return value to get a message for.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>The user readable message.</p>
+</item>
+</terms>
+
+</page>

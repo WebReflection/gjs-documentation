@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Cogl.handle_ref"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Handle</api:type>
+      </api:returns>
+      <api:name>cogl_handle_ref</api:name>
+      <api:arg>
+        <api:type>Cogl.Handle</api:type>
+        <api:name>handle</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.handle_ref</title>
+  <synopsis><code mime="text/x-gjs">
+function handle_ref(handle: <link xref="Cogl.Handle">Cogl.Handle</link>): <link xref="Cogl.Handle">Cogl.Handle</link> {
+    // Gjs wrapper for cogl_handle_ref()
+}
+  </code></synopsis>
+  <p>Increases the reference count of <code>handle</code> by 1</p>
+
+<terms>
+<item>
+<title><code>handle</code></title>
+  <p>a <link xref="Cogl.Handle"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the handle, with its reference count increased</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Cogl.is_texture_3d"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_is_texture_3d</api:name>
+      <api:arg>
+        <api:type>void</api:type>
+        <api:name>object</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.is_texture_3d</title>
+  <synopsis><code mime="text/x-gjs">
+function is_texture_3d(object: void): <link xref="Cogl.Bool">Cogl.Bool</link> {
+    // Gjs wrapper for cogl_is_texture_3d()
+}
+  </code></synopsis>
+  <p>Checks whether the given object references a <link xref="Cogl.Texture3D"/></p>
+  <p>Since 1.4</p>
+<terms>
+<item>
+<title><code>object</code></title>
+  <p>a <link xref="Cogl.Object"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if the passed object represents a 3D texture
+  and <code>false</code> otherwise</p>
+</item>
+</terms>
+
+</page>

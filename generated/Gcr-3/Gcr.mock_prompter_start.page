@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="Gcr.mock_prompter_start"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>gcr_mock_prompter_start</api:name>
+    </api:function>
+  </info>
+  <title>Gcr.mock_prompter_start</title>
+  <synopsis><code mime="text/x-gjs">
+function mock_prompter_start(): String {
+    // Gjs wrapper for gcr_mock_prompter_start()
+}
+  </code></synopsis>
+  <p>Start the mock prompter. This is often used from the
+&lt;literal&gt;setup&lt;!-- --&gt;()&lt;/literal&gt; function of tests.</p>  <p>Starts the mock prompter in an additional thread. Use the returned DBus bus
+name with <link xref="Gcr.SystemPrompt.open_for_prompter"/> to connect to this prompter.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the bus name that the mock prompter is listening on</p>
+</item>
+</terms>
+
+</page>

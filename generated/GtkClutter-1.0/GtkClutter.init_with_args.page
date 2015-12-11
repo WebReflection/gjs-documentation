@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<page id="GtkClutter.init_with_args"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.InitError</api:type>
+      </api:returns>
+      <api:name>gtk_clutter_init_with_args</api:name>
+      <api:arg>
+        <api:type>Array(String)</api:type>
+        <api:name>argv</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>parameter_string</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Array(GLib.OptionEntry)</api:type>
+        <api:name>entries</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>translation_domain</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GtkClutter.init_with_args</title>
+  <synopsis><code mime="text/x-gjs">
+function init_with_args(argv: Array(String), parameter_string: String, entries: Array(<link href="../GLib-2.0/GLib.OptionEntry.html">GLib.OptionEntry</link>), translation_domain: String): [return_value: <link href="../Clutter-1.0/Clutter.InitError.html">Clutter.InitError</link>, argv: Array(String)] {
+    // Gjs wrapper for gtk_clutter_init_with_args()
+}
+  </code></synopsis>
+  <p>This function should be called instead of clutter_init() and
+gtk_init_with_args().</p>
+
+<terms>
+<item>
+<title><code>argv</code></title>
+  <p>a pointer to the array
+  of command line arguments, or <code>null</code></p>
+</item>
+<item>
+<title><code>parameter_string</code></title>
+  <p>a string which is displayed in
+   the first line of &lt;option&gt;--help&lt;/option&gt; output, after
+   &lt;literal&gt;&lt;replaceable&gt;programname&lt;/replaceable&gt; [OPTION...]&lt;/literal&gt;</p>
+</item>
+<item>
+<title><code>entries</code></title>
+  <p>a
+   <code>null</code>-terminated array of <link href="../GLib-2.0/GLib.OptionEntry.html">GLib.OptionEntry</link>&lt;!-- --&gt;s describing the
+   options of your program</p>
+</item>
+<item>
+<title><code>translation_domain</code></title>
+  <p>a translation domain to use for
+   translating the &lt;option&gt;--help&lt;/option&gt; output for the options
+   in <code>entries</code> with gettext(), or <code>null</code></p>
+</item>
+<item>
+<title><code>return_value</code></title>
+  <p>%CLUTTER_INIT_SUCCESS on success, a negative integer
+  on failure.</p>
+</item>
+<item>
+<title><code>argv (out)</code></title>
+  <p>a pointer to the array
+  of command line arguments, or <code>null</code></p>
+</item>
+</terms>
+
+</page>

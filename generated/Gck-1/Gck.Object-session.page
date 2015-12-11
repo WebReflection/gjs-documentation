@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page id="Gck.Object-session"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Object" group="property" type="guide"/>
+    <title type="link" role="topic">session</title>
+  </info>
+  <title>Gck.Object.session</title>
+  <synopsis><code mime="text/x-gjs">
+Object.session: <link xref="Gck.Session">Gck.Session</link> (Read / Write / Construct Only)
+  </code></synopsis>
+  <p>The PKCS11 session to make calls on when this object needs to
+perform operations on itself.</p>  <p>If this is NULL then a new session is opened for each operation,
+such as <link xref="Gck.Object.get"/>, <link xref="Gck.Object.set"/> or <link xref="Gck.Object.destroy"/>.</p>
+
+</page>

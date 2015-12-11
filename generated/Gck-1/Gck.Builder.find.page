@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="Gck.Builder.find"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Builder" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.Attribute</api:type>
+      </api:returns>
+      <api:name>gck_builder_find</api:name>
+      <api:arg>
+        <api:type>Number(gulong)</api:type>
+        <api:name>attr_type</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Builder.prototype.find</title>
+  <synopsis><code mime="text/x-gjs">
+function find(attr_type: Number(gulong)): <link xref="Gck.Attribute">Gck.Attribute</link> {
+    // Gjs wrapper for gck_builder_find()
+}
+  </code></synopsis>
+  <p>Find an attribute in the builder. Both valid and invalid attributes (in
+the PKCS\#11 sense) are returned. If multiple attributes exist for the given
+attribute type, then the first one is returned.</p>  <p>The returned <link xref="Gck.Attribute"/> is owned by the builder and may not be modified
+in any way. It is only valid until another attribute is added to or set on
+the builder, or until the builder is cleared or unreferenced.</p>
+
+<terms>
+<item>
+<title><code>attr_type</code></title>
+  <p>the type of attribute to find</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the attribute or <code>null</code> if not found</p>
+</item>
+</terms>
+
+</page>

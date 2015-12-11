@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<page id="Gck.ObjectCache.update"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.ObjectCache" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gck_object_cache_update</api:name>
+      <api:arg>
+        <api:type>Array(Number(gulong))</api:type>
+        <api:name>attr_types</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.ObjectCache.prototype.update</title>
+  <synopsis><code mime="text/x-gjs">
+function update(attr_types: Array(Number(gulong)), cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>): Boolean {
+    // Gjs wrapper for gck_object_cache_update()
+}
+  </code></synopsis>
+  <p>Update the object cache with given attributes. If an attribute already
+exists in the cache, it will be updated, and if it doesn't it will be added.</p>  <p>This may block, use the asynchronous version when this is not desirable</p>
+
+<terms>
+<item>
+<title><code>attr_types</code></title>
+  <p>the types of attributes to update</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional cancellation object</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>whether the cache update was successful</p>
+</item>
+</terms>
+
+</page>

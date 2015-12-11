@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Gcr.Certificate.get_expiry_date"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Certificate" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GLib.Date</api:type>
+      </api:returns>
+      <api:name>gcr_certificate_get_expiry_date</api:name>
+    </api:function>
+  </info>
+  <title>Gcr.Certificate.prototype.get_expiry_date</title>
+  <synopsis><code mime="text/x-gjs">
+function get_expiry_date(): <link href="../GLib-2.0/GLib.Date.html">GLib.Date</link> {
+    // Gjs wrapper for gcr_certificate_get_expiry_date()
+}
+  </code></synopsis>
+  <p>Get the expiry date of this certificate.</p>  <p>The <link href="../GLib-2.0/GLib.Date.html">GLib.Date</link> returned should be freed by the caller using
+g_date_free() when no longer required.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>An allocated expiry date of this certificate.</p>
+</item>
+</terms>
+
+</page>

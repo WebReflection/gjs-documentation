@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="GWeather.Location.get_level"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Location" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GWeather.LocationLevel</api:type>
+      </api:returns>
+      <api:name>gweather_location_get_level</api:name>
+    </api:function>
+  </info>
+  <title>GWeather.Location.prototype.get_level</title>
+  <synopsis><code mime="text/x-gjs">
+function get_level(): <link xref="GWeather.LocationLevel">GWeather.LocationLevel</link> {
+    // Gjs wrapper for gweather_location_get_level()
+}
+  </code></synopsis>
+  <p>Gets <code>loc</code>'s level, from <link xref="GWeather.LocationLevel"/>.world, to
+<link xref="GWeather.LocationLevel"/>.weather_station.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>loc</code>'s level</p>
+</item>
+</terms>
+
+</page>

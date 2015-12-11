@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Notify.Notification.close"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Notify.Notification" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>notify_notification_close</api:name>
+    </api:function>
+  </info>
+  <title>Notify.Notification.prototype.close</title>
+  <synopsis><code mime="text/x-gjs">
+function close(): Boolean {
+    // Gjs wrapper for notify_notification_close()
+}
+  </code></synopsis>
+  <p>Synchronously tells the notification server to hide the notification on the screen.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> on success, or <code>false</code> on error with @error filled in</p>
+</item>
+</terms>
+
+</page>

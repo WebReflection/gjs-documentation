@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="Cogl.OnscreenTemplate.set_samples_per_pixel"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.OnscreenTemplate" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_onscreen_template_set_samples_per_pixel</api:name>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>n</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.OnscreenTemplate.prototype.set_samples_per_pixel</title>
+  <synopsis><code mime="text/x-gjs">
+function set_samples_per_pixel(n: Number(gint)): void {
+    // Gjs wrapper for cogl_onscreen_template_set_samples_per_pixel()
+}
+  </code></synopsis>
+  <p>Requires that any future CoglOnscreen framebuffers derived from
+this template must support making at least <code>n</code> samples per pixel
+which will all contribute to the final resolved color for that
+pixel.</p>  <p>By default this value is usually set to 0 and that is referred to
+as "single-sample" rendering. A value of 1 or greater is referred
+to as "multisample" rendering.</p>  <p>&lt;note&gt;There are some semantic differences between single-sample
+rendering and multisampling with just 1 point sample such as it
+being redundant to use the <link xref="Cogl.Framebuffer.resolve_samples"/> and
+<link xref="Cogl.Framebuffer.resolve_samples_region"/> apis with single-sample
+rendering.&lt;/note&gt;</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>n</code></title>
+  <p>The minimum number of samples per pixel</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Notify.get_server_caps"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(String)</api:type>
+      </api:returns>
+      <api:name>notify_get_server_caps</api:name>
+    </api:function>
+  </info>
+  <title>Notify.get_server_caps</title>
+  <synopsis><code mime="text/x-gjs">
+function get_server_caps(): Array(String) {
+    // Gjs wrapper for notify_get_server_caps()
+}
+  </code></synopsis>
+  <p>Synchronously queries the server for its capabilities and returns them in a <link href="../GLib-2.0/GLib.List.html">GLib.List</link>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link href="../GLib-2.0/GLib.List.html">GLib.List</link> of server capability strings. Free
+  the list elements with g_free() and the list itself with g_list_free().</p>
+</item>
+</terms>
+
+</page>

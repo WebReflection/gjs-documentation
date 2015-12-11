@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<page id="Gck.Session.find_handles"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Session" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(Number(gulong))</api:type>
+      </api:returns>
+      <api:name>gck_session_find_handles</api:name>
+      <api:arg>
+        <api:type>Gck.Attributes</api:type>
+        <api:name>match</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Session.prototype.find_handles</title>
+  <synopsis><code mime="text/x-gjs">
+function find_handles(match: <link xref="Gck.Attributes">Gck.Attributes</link>, cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>): [return_value: Array(Number(gulong)), n_handles: Number(gulong)] {
+    // Gjs wrapper for gck_session_find_handles()
+}
+  </code></synopsis>
+  <p>Find the objects matching the passed attributes. This call may
+block for an indefinite period.</p>  <p>If the <code>match</code> <link xref="Gck.Attributes"/> is floating, it is consumed.</p>
+
+<terms>
+<item>
+<title><code>match</code></title>
+  <p>the attributes to match against objects</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional cancellation object or <code>null</code></p>
+</item>
+<item>
+<title><code>return_value</code></title>
+  <p>a list of
+         the matching objects, which may be empty</p>
+</item>
+<item>
+<title><code>n_handles</code></title>
+  <p>location to return number of handles</p>
+</item>
+</terms>
+
+</page>

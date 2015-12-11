@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="Gck.Builder.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Builder" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.Builder</api:type>
+      </api:returns>
+      <api:name>gck_builder_new</api:name>
+      <api:arg>
+        <api:type>Gck.BuilderFlags</api:type>
+        <api:name>flags</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Builder.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(flags: <link xref="Gck.BuilderFlags">Gck.BuilderFlags</link>): <link xref="Gck.Builder">Gck.Builder</link> {
+    // Gjs wrapper for gck_builder_new()
+}
+  </code></synopsis>
+  <p>Create a new <link xref="Gck.Builder"/> not allocated on the stack, so it can be shared
+across a single scope, and referenced / unreferenced.</p>  <p>Normally a <link xref="Gck.Builder"/> is created on the stack, and simply initialized.</p>  <p>If the <link xref="Gck.BuilderFlags"/>.secure_memory flag is specified then non-pageable memory
+will be used for the various values of the attributes in the builder</p>
+
+<terms>
+<item>
+<title><code>flags</code></title>
+  <p>flags for the new builder</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a new builder, to be freed with <link xref="Gck.builder_unref"/></p>
+</item>
+</terms>
+
+</page>

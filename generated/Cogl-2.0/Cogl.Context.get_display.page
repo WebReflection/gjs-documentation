@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Cogl.Context.get_display"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Context" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Display</api:type>
+      </api:returns>
+      <api:name>cogl_context_get_display</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Context.prototype.get_display</title>
+  <synopsis><code mime="text/x-gjs">
+function get_display(): <link xref="Cogl.Display">Cogl.Display</link> {
+    // Gjs wrapper for cogl_context_get_display()
+}
+  </code></synopsis>
+  <p>Retrieves the <link xref="Cogl.Display"/> that is internally associated with the
+given <code>context</code>. This will return the same <link xref="Cogl.Display"/> that was
+passed to <link xref="Cogl.Context.new"/> or if <code>null</code> was passed to
+<link xref="Cogl.Context.new"/> then this function returns a pointer to the
+display that was automatically setup internally.</p>
+  <p>Since 1.8</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>The <link xref="Cogl.Display"/> associated with the
+              given <code>context</code>.</p>
+</item>
+</terms>
+
+</page>

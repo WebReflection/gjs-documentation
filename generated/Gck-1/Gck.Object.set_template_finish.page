@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gck.Object.set_template_finish"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Object" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gck_object_set_template_finish</api:name>
+      <api:arg>
+        <api:type>Gio.AsyncResult</api:type>
+        <api:name>result</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Object.prototype.set_template_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function set_template_finish(result: <link href="../Gio-2.0/Gio.AsyncResult.html">Gio.AsyncResult</link>): Boolean {
+    // Gjs wrapper for gck_object_set_template_finish()
+}
+  </code></synopsis>
+  <p>Get the result of an operation to set attribute template on
+an object.</p>
+
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>The result passed to the callback.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>TRUE if the operation succeeded.</p>
+</item>
+</terms>
+
+</page>

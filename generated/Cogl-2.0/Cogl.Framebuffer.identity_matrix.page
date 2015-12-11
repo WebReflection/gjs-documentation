@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<page id="Cogl.Framebuffer.identity_matrix"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Framebuffer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_framebuffer_identity_matrix</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Framebuffer.prototype.identity_matrix</title>
+  <synopsis><code mime="text/x-gjs">
+function identity_matrix(): void {
+    // Gjs wrapper for cogl_framebuffer_identity_matrix()
+}
+  </code></synopsis>
+  <p>Resets the current model-view matrix to the identity matrix.</p>
+  <p>Since 1.10</p>
+
+</page>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Cogl.VertexP2T2C4-s"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.VertexP2T2C4" group="field" type="guide"/>
+    <title type="link" role="topic">s</title>
+  </info>
+  <title>Cogl.VertexP2T2C4.s</title>
+  <synopsis><code mime="text/x-gjs">
+VertexP2T2C4.s: Number(gfloat) (Read / Write)
+  </code></synopsis>
+  <p>The s component of a texture coordinate attribute</p>
+
+</page>

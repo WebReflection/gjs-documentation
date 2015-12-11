@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<page id="Gck.modules_enumerate_uri"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.Enumerator</api:type>
+      </api:returns>
+      <api:name>gck_modules_enumerate_uri</api:name>
+      <api:arg>
+        <api:type>Array(Gck.Module)</api:type>
+        <api:name>modules</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>uri</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gck.SessionOptions</api:type>
+        <api:name>session_options</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.modules_enumerate_uri</title>
+  <synopsis><code mime="text/x-gjs">
+function modules_enumerate_uri(modules: Array(<link xref="Gck.Module">Gck.Module</link>), uri: String, session_options: <link xref="Gck.SessionOptions">Gck.SessionOptions</link>): <link xref="Gck.Enumerator">Gck.Enumerator</link> {
+    // Gjs wrapper for gck_modules_enumerate_uri()
+}
+  </code></synopsis>
+  <p>Enumerate objects that match a URI.</p>  <p>This call will not block. Use the <link xref="Gck.Enumerator"/> functions in order to
+get at the actual objects that match.</p>
+
+<terms>
+<item>
+<title><code>modules</code></title>
+  <p>The modules</p>
+</item>
+<item>
+<title><code>uri</code></title>
+  <p>The URI that the enumerator will match</p>
+</item>
+<item>
+<title><code>session_options</code></title>
+  <p>Options from GckSessionOptions</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>A new <link xref="Gck.Enumerator"/>, or <code>null</code> if an error occurs.</p>
+</item>
+</terms>
+
+</page>

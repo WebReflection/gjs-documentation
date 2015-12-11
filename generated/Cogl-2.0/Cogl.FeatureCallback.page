@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<page id="Cogl.FeatureCallback"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Cogl.FeatureCallback</title>
+  <synopsis><code mime="text/x-gjs">
+function onFeatureCallback(feature: <link xref="Cogl.FeatureID">Cogl.FeatureID</link>): void {
+}
+  </code></synopsis>
+  <p>A callback used with <link xref="Cogl.foreach_feature"/> for enumerating all
+context level features supported by Cogl.</p>
+  <p>Since 0.10</p>
+<terms>
+<item>
+<title><code>feature</code></title>
+  <p>A single feature currently supported by Cogl</p>
+</item>
+</terms>
+
+</page>

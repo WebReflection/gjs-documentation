@@ -1,0 +1,95 @@
+<?xml version="1.0"?>
+<page id="GWeather.ConditionQualifier"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>GWeather.ConditionQualifier</title>
+  <p>An additional modifier applied to a <link xref="GWeather.ConditionPhenomenon"/> to
+describe the current or forecasted weather conditions.
+The exact meaning of each qualifier is described at
+http://www.weather.com/glossary/ and
+http://www.crh.noaa.gov/arx/wx.tbl.php</p>
+
+<terms>
+<item>
+<title><code>ConditionQualifier.INVALID</code></title>
+  <p>value not available</p>
+</item>
+<item>
+<title><code>ConditionQualifier.NONE</code></title>
+  <p>no qualifier for the phenomenon</p>
+</item>
+<item>
+<title><code>ConditionQualifier.VICINITY</code></title>
+  <p>phenomenon happening in the proximity
+                              of the location, not in the actual location</p>
+</item>
+<item>
+<title><code>ConditionQualifier.LIGHT</code></title>
+  <p>phenomenon is light or predicted to be light</p>
+</item>
+<item>
+<title><code>ConditionQualifier.MODERATE</code></title>
+  <p>phenomenon is moderate or predicted to be
+                              moderate</p>
+</item>
+<item>
+<title><code>ConditionQualifier.HEAVY</code></title>
+  <p>phenomenon is heavy or predicted to be heavy</p>
+</item>
+<item>
+<title><code>ConditionQualifier.SHALLOW</code></title>
+  <p>shallow fog (only valid with
+                             <link xref="GWeather.ConditionPhenomenon"/>.fog)</p>
+</item>
+<item>
+<title><code>ConditionQualifier.PATCHES</code></title>
+  <p>patches of fog (only valid with
+                             <link xref="GWeather.ConditionPhenomenon"/>.fog)</p>
+</item>
+<item>
+<title><code>ConditionQualifier.PARTIAL</code></title>
+  <p>partial fog (only valid with
+                            <link xref="GWeather.ConditionPhenomenon"/>.fog)</p>
+</item>
+<item>
+<title><code>ConditionQualifier.THUNDERSTORM</code></title>
+  <p>phenomenon will be a thunderstorm
+                                  and/or will include lightning</p>
+</item>
+<item>
+<title><code>ConditionQualifier.BLOWING</code></title>
+  <p>phenomenon is blowing (valid with
+                             <link xref="GWeather.ConditionPhenomenon"/>.snow, <link xref="GWeather.ConditionPhenomenon"/>.sand,
+                             <link xref="GWeather.ConditionPhenomenon"/>.spray, <link xref="GWeather.ConditionPhenomenon"/>.dust)</p>
+</item>
+<item>
+<title><code>ConditionQualifier.SHOWERS</code></title>
+  <p>phenomenon is heavy and involves showers</p>
+</item>
+<item>
+<title><code>ConditionQualifier.DRIFTING</code></title>
+  <p>phenomenon is moving across (valid
+                              with <link xref="GWeather.ConditionPhenomenon"/>.sand and
+                              <link xref="GWeather.ConditionPhenomenon"/>.dust)</p>
+</item>
+<item>
+<title><code>ConditionQualifier.FREEZING</code></title>
+  <p>phenomenon is freezing and involves ice</p>
+</item>
+<item>
+<title><code>ConditionQualifier.LAST</code></title>
+  <p>maximum value of the enumeration.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="Gck.Builder.add_invalid"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Builder" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gck_builder_add_invalid</api:name>
+      <api:arg>
+        <api:type>Number(gulong)</api:type>
+        <api:name>attr_type</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Builder.prototype.add_invalid</title>
+  <synopsis><code mime="text/x-gjs">
+function add_invalid(attr_type: Number(gulong)): void {
+    // Gjs wrapper for gck_builder_add_invalid()
+}
+  </code></synopsis>
+  <p>Add a new attribute to the builder that is invalid in the PKCS\#11 sense.
+Unconditionally adds a new attribute, even if one with the same <code>attr_type</code>
+already exists.</p>
+
+<terms>
+<item>
+<title><code>attr_type</code></title>
+  <p>the new attribute type</p>
+</item>
+</terms>
+
+</page>

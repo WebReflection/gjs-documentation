@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Cogl.Color.get_alpha"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Color" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gfloat)</api:type>
+      </api:returns>
+      <api:name>cogl_color_get_alpha</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Color.prototype.get_alpha</title>
+  <synopsis><code mime="text/x-gjs">
+function get_alpha(): Number(gfloat) {
+    // Gjs wrapper for cogl_color_get_alpha()
+}
+  </code></synopsis>
+  <p>Retrieves the alpha channel of <code>color</code> as a fixed point
+value between 0 and 1.0.</p>
+  <p>Since 1.0</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the alpha channel of the passed color</p>
+</item>
+</terms>
+
+</page>

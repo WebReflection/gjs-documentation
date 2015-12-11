@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<page id="Cogl.Matrix.transform_point"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Matrix" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_matrix_transform_point</api:name>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>y</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>z</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>w</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Matrix.prototype.transform_point</title>
+  <synopsis><code mime="text/x-gjs">
+function transform_point(x: Number(gfloat), y: Number(gfloat), z: Number(gfloat), w: Number(gfloat)): [x: Number(gfloat), y: Number(gfloat), z: Number(gfloat), w: Number(gfloat)] {
+    // Gjs wrapper for cogl_matrix_transform_point()
+}
+  </code></synopsis>
+  <p>Transforms a point whos position is given and returned as four float
+components.</p>
+
+<terms>
+<item>
+<title><code>x</code></title>
+  <p>The X component of your points position</p>
+</item>
+<item>
+<title><code>y</code></title>
+  <p>The Y component of your points position</p>
+</item>
+<item>
+<title><code>z</code></title>
+  <p>The Z component of your points position</p>
+</item>
+<item>
+<title><code>w</code></title>
+  <p>The W component of your points position</p>
+</item>
+<item>
+<title><code>x (out)</code></title>
+  <p>The X component of your points position</p>
+</item>
+<item>
+<title><code>y (out)</code></title>
+  <p>The Y component of your points position</p>
+</item>
+<item>
+<title><code>z (out)</code></title>
+  <p>The Z component of your points position</p>
+</item>
+<item>
+<title><code>w (out)</code></title>
+  <p>The W component of your points position</p>
+</item>
+</terms>
+
+</page>

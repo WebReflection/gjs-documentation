@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="GWeather.TimezoneMenu.set_tzid"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.TimezoneMenu" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gweather_timezone_menu_set_tzid</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>tzid</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GWeather.TimezoneMenu.prototype.set_tzid</title>
+  <synopsis><code mime="text/x-gjs">
+function set_tzid(tzid: String): void {
+    // Gjs wrapper for gweather_timezone_menu_set_tzid()
+}
+  </code></synopsis>
+  <p>Sets <code>menu</code> to the given <code>tzid</code>. If <code>tzid</code> is <code>null</code>, sets <code>menu</code> to
+"Unknown".</p>
+
+<terms>
+<item>
+<title><code>tzid</code></title>
+  <p>a tzdata id (eg, "America/New_York")</p>
+</item>
+</terms>
+
+</page>

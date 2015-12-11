@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="Cogl.OnscreenTemplate.set_swap_throttled"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.OnscreenTemplate" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_onscreen_template_set_swap_throttled</api:name>
+      <api:arg>
+        <api:type>Cogl.Bool</api:type>
+        <api:name>throttled</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.OnscreenTemplate.prototype.set_swap_throttled</title>
+  <synopsis><code mime="text/x-gjs">
+function set_swap_throttled(throttled: <link xref="Cogl.Bool">Cogl.Bool</link>): void {
+    // Gjs wrapper for cogl_onscreen_template_set_swap_throttled()
+}
+  </code></synopsis>
+  <p>Requests that any future <link xref="Cogl.Onscreen"/> framebuffers derived from this
+template should enable or disable swap throttling according to the given
+<code>throttled</code> argument.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>throttled</code></title>
+  <p>Whether throttling should be enabled</p>
+</item>
+</terms>
+
+</page>

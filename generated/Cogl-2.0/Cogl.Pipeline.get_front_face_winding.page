@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.get_front_face_winding"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Winding</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_get_front_face_winding</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.get_front_face_winding</title>
+  <synopsis><code mime="text/x-gjs">
+function get_front_face_winding(): <link xref="Cogl.Winding">Cogl.Winding</link> {
+    // Gjs wrapper for cogl_pipeline_get_front_face_winding()
+}
+  </code></synopsis>
+  <p>The order of the vertices within a primitive specifies whether it
+is considered to be front or back facing. This function specifies
+which order is considered to be the front
+faces. <link xref="Cogl.Winding"/>.counter_clockwise sets the front faces to
+primitives with vertices in a counter-clockwise order and
+<link xref="Cogl.Winding"/>.clockwise sets them to be clockwise. The default is
+<link xref="Cogl.Winding"/>.counter_clockwise.</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>The <code>pipeline</code> front face winding</p>  <p>Status: Unstable</p>
+</item>
+</terms>
+
+</page>

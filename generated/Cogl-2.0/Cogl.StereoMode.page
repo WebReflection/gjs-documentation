@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="Cogl.StereoMode"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Cogl.StereoMode</title>
+  <p>Represents how draw should affect the two buffers
+of a stereo framebuffer. See <link xref="Cogl.Framebuffer.set_stereo_mode"/>.</p>
+
+<terms>
+<item>
+<title><code>StereoMode.BOTH</code></title>
+  <p>draw to both stereo buffers</p>
+</item>
+<item>
+<title><code>StereoMode.LEFT</code></title>
+  <p>draw only to the left stereo buffer</p>
+</item>
+<item>
+<title><code>StereoMode.RIGHT</code></title>
+  <p>draw only to the left stereo buffer</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

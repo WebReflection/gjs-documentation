@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Cogl.Renderer.set_driver"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Renderer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_renderer_set_driver</api:name>
+      <api:arg>
+        <api:type>Cogl.Driver</api:type>
+        <api:name>driver</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Renderer.prototype.set_driver</title>
+  <synopsis><code mime="text/x-gjs">
+function set_driver(driver: <link xref="Cogl.Driver">Cogl.Driver</link>): void {
+    // Gjs wrapper for cogl_renderer_set_driver()
+}
+  </code></synopsis>
+  <p>Requests that Cogl should try to use a specific underlying driver
+for rendering.</p>  <p>If you select an unsupported driver then <link xref="Cogl.Renderer.connect"/>
+will fail and report an error. Most applications should not
+explicitly select a driver and should rely on Cogl automatically
+choosing the driver.</p>  <p>This may only be called on an un-connected <link xref="Cogl.Renderer"/>.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>driver</code></title>
+
+</item>
+</terms>
+
+</page>

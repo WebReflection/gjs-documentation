@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<page id="Cogl.Matrix.orthographic"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Matrix" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_matrix_orthographic</api:name>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>x_1</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>y_1</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>x_2</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>y_2</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>near</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>far</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Matrix.prototype.orthographic</title>
+  <synopsis><code mime="text/x-gjs">
+function orthographic(x_1: Number(gfloat), y_1: Number(gfloat), x_2: Number(gfloat), y_2: Number(gfloat), near: Number(gfloat), far: Number(gfloat)): void {
+    // Gjs wrapper for cogl_matrix_orthographic()
+}
+  </code></synopsis>
+  <p>Multiplies <code>matrix</code> by a parallel projection matrix.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>x_1</code></title>
+  <p>The x coordinate for the first vertical clipping plane</p>
+</item>
+<item>
+<title><code>y_1</code></title>
+  <p>The y coordinate for the first horizontal clipping plane</p>
+</item>
+<item>
+<title><code>x_2</code></title>
+  <p>The x coordinate for the second vertical clipping plane</p>
+</item>
+<item>
+<title><code>y_2</code></title>
+  <p>The y coordinate for the second horizontal clipping plane</p>
+</item>
+<item>
+<title><code>near</code></title>
+  <p>The &lt;emphasis&gt;distance&lt;/emphasis&gt; to the near clipping
+  plane (will be &lt;emphasis&gt;negative&lt;/emphasis&gt; if the plane is
+  behind the viewer)</p>
+</item>
+<item>
+<title><code>far</code></title>
+  <p>The &lt;emphasis&gt;distance&lt;/emphasis&gt; to the far clipping
+  plane (will be &lt;emphasis&gt;negative&lt;/emphasis&gt; if the plane is
+  behind the viewer)</p>
+</item>
+</terms>
+
+</page>

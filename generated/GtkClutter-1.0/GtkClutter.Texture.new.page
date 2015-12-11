@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="GtkClutter.Texture.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GtkClutter.Texture" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Actor</api:type>
+      </api:returns>
+      <api:name>gtk_clutter_texture_new</api:name>
+    </api:function>
+  </info>
+  <title>GtkClutter.Texture.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(): <link href="../Clutter-1.0/Clutter.Actor.html">Clutter.Actor</link> {
+    // Gjs wrapper for gtk_clutter_texture_new()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="GtkClutter.Texture"/> actor.</p>
+  <p>Since 1.0</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the newly created <link xref="GtkClutter.Texture"/>
+  instance</p>
+</item>
+</terms>
+
+</page>

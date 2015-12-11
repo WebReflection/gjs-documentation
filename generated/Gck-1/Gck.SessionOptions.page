@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gck.SessionOptions"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Gck.SessionOptions</title>
+  <p>Options for creating sessions.</p>
+
+<terms>
+<item>
+<title><code>SessionOptions.READ_ONLY</code></title>
+  <p>Open session as read only</p>
+</item>
+<item>
+<title><code>SessionOptions.READ_WRITE</code></title>
+  <p>Open sessions as read/write</p>
+</item>
+<item>
+<title><code>SessionOptions.LOGIN_USER</code></title>
+  <p>Login as user on new sessions</p>
+</item>
+<item>
+<title><code>SessionOptions.AUTHENTICATE</code></title>
+  <p>Authenticate as necessary</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

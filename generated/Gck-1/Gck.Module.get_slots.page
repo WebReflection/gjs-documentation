@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gck.Module.get_slots"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Module" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(Gck.Slot)</api:type>
+      </api:returns>
+      <api:name>gck_module_get_slots</api:name>
+      <api:arg>
+        <api:type>Boolean</api:type>
+        <api:name>token_present</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Module.prototype.get_slots</title>
+  <synopsis><code mime="text/x-gjs">
+function get_slots(token_present: Boolean): Array(<link xref="Gck.Slot">Gck.Slot</link>) {
+    // Gjs wrapper for gck_module_get_slots()
+}
+  </code></synopsis>
+  <p>Get the GckSlot objects for a given module.</p>
+
+<terms>
+<item>
+<title><code>token_present</code></title>
+  <p>Whether to limit only to slots with a token present.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>The possibly empty
+              list of slots. Release this with <link xref="Gck.list_unref_free"/>.</p>
+</item>
+</terms>
+
+</page>

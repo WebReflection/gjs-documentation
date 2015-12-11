@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<page id="Gcr.FilterCollectionFunc"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Gcr.FilterCollectionFunc</title>
+  <synopsis><code mime="text/x-gjs">
+function onFilterCollectionFunc(object: <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link>): Boolean {
+}
+  </code></synopsis>
+  <p>A function which is called by <link xref="Gcr.FilterCollection"/> in order to determine
+whether an object should show through the filter or not.</p>
+
+<terms>
+<item>
+<title><code>object</code></title>
+  <p>object to filter</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if an object should be included in the filtered collection</p>
+</item>
+</terms>
+
+</page>

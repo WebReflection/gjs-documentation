@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="Gck.modules_initialize_registered_finish"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(Gck.Module)</api:type>
+      </api:returns>
+      <api:name>gck_modules_initialize_registered_finish</api:name>
+      <api:arg>
+        <api:type>Gio.AsyncResult</api:type>
+        <api:name>result</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.modules_initialize_registered_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function modules_initialize_registered_finish(result: <link href="../Gio-2.0/Gio.AsyncResult.html">Gio.AsyncResult</link>): Array(<link xref="Gck.Module">Gck.Module</link>) {
+    // Gjs wrapper for gck_modules_initialize_registered_finish()
+}
+  </code></synopsis>
+  <p>Finishes the asynchronous operation to initialize the registered
+PKCS\#11 modules.</p>
+
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>the asynchronous result</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a list of newly
+initialized <link xref="Gck.Module"/> objects</p>
+</item>
+</terms>
+
+</page>

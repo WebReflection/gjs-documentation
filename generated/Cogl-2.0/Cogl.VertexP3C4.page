@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<page id="Cogl.VertexP3C4"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>Cogl.VertexP3C4</title>
+  <synopsis><code>
+const Cogl = imports.gi.Cogl;
+
+let vertexP3C4 = new Cogl.VertexP3C4({
+    <link xref='Cogl.VertexP3C4-x'>x</link>: value
+    <link xref='Cogl.VertexP3C4-y'>y</link>: value
+    <link xref='Cogl.VertexP3C4-z'>z</link>: value
+    <link xref='Cogl.VertexP3C4-r'>r</link>: value
+    <link xref='Cogl.VertexP3C4-g'>g</link>: value
+    <link xref='Cogl.VertexP3C4-b'>b</link>: value
+    <link xref='Cogl.VertexP3C4-a'>a</link>: value
+});
+  </code></synopsis>
+  <p>A convenience vertex definition that can be used with
+<link xref="Cogl.Primitive.new_p3c4"/>.</p>
+  <p>Since 1.6</p>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

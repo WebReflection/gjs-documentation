@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<page id="GdkX11.x11_get_xatom_name_for_display"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>gdk_x11_get_xatom_name_for_display</api:name>
+      <api:arg>
+        <api:type>GdkX11.X11Display</api:type>
+        <api:name>display</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>xlib.Atom</api:type>
+        <api:name>xatom</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GdkX11.x11_get_xatom_name_for_display</title>
+  <synopsis><code mime="text/x-gjs">
+function x11_get_xatom_name_for_display(display: <link xref="GdkX11.X11Display">GdkX11.X11Display</link>, xatom: <link href="../xlib-2.0/xlib.Atom.html">xlib.Atom</link>): String {
+    // Gjs wrapper for gdk_x11_get_xatom_name_for_display()
+}
+  </code></synopsis>
+  <p>Returns the name of an X atom for its display. This
+function is meant mainly for debugging, so for convenience, unlike
+XAtomName() and gdk_atom_name(), the result doesn’t need to
+be freed.</p>
+  <p>Since 2.2</p>
+<terms>
+<item>
+<title><code>display</code></title>
+  <p>the <link href="../Gdk-3.0/Gdk.Display.html">Gdk.Display</link> where <code>xatom</code> is defined</p>
+</item>
+<item>
+<title><code>xatom</code></title>
+  <p>an X atom</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>name of the X atom; this string is owned by GDK,
+  so it shouldn’t be modifed or freed.</p>
+</item>
+</terms>
+
+</page>

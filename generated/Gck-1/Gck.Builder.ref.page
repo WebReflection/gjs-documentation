@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="Gck.Builder.ref"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Builder" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.Builder</api:type>
+      </api:returns>
+      <api:name>gck_builder_ref</api:name>
+    </api:function>
+  </info>
+  <title>Gck.Builder.prototype.ref</title>
+  <synopsis><code mime="text/x-gjs">
+function ref(): <link xref="Gck.Builder">Gck.Builder</link> {
+    // Gjs wrapper for gck_builder_ref()
+}
+  </code></synopsis>
+  <p>Add a reference to a builder that was created with <link xref="Gck.Builder.new"/>. The
+builder must later be unreferenced again with <link xref="Gck.builder_unref"/>.</p>  <p>It is an error to use this function on builders that were allocated on the
+stack.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the builder</p>
+</item>
+</terms>
+
+</page>

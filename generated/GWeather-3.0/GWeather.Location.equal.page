@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<page id="GWeather.Location.equal"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Location" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gweather_location_equal</api:name>
+      <api:arg>
+        <api:type>GWeather.Location</api:type>
+        <api:name>two</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GWeather.Location.prototype.equal</title>
+  <synopsis><code mime="text/x-gjs">
+function equal(two: <link xref="GWeather.Location">GWeather.Location</link>): Boolean {
+    // Gjs wrapper for gweather_location_equal()
+}
+  </code></synopsis>
+  <p>Compares two <link xref="GWeather.Location"/> and sees if they represent the same
+place.
+It is only legal to call this for cities, weather stations or
+detached locations.
+Note that this function only checks for geographical characteristics,
+such as coordinates and METAR code. It is still possible that the two
+locations belong to different worlds (in which case care must be
+taken when passing them GWeatherLocationEntry and GWeatherInfo), or
+if one is them is detached it could have a custom name.</p>
+
+<terms>
+<item>
+<title><code>two</code></title>
+  <p>another <link xref="GWeather.Location"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if the two locations represent the same place as
+         far as libgweather can tell, and <code>false</code> otherwise.</p>
+</item>
+</terms>
+
+</page>

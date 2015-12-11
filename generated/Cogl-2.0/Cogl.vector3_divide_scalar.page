@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="Cogl.vector3_divide_scalar"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_vector3_divide_scalar</api:name>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>vector</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>scalar</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.vector3_divide_scalar</title>
+  <synopsis><code mime="text/x-gjs">
+function vector3_divide_scalar(vector: Number(gfloat), scalar: Number(gfloat)): void {
+    // Gjs wrapper for cogl_vector3_divide_scalar()
+}
+  </code></synopsis>
+  <p>Divides each of the <code>vector</code> components by the given scalar.</p>
+  <p>Since 1.4</p>
+<terms>
+<item>
+<title><code>vector</code></title>
+  <p>The 3 component vector you want to manipulate</p>
+</item>
+<item>
+<title><code>scalar</code></title>
+  <p>The scalar you want to divide the vector components by</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Gcr.Certificate.get_der_data"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Certificate" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>ByteArray</api:type>
+      </api:returns>
+      <api:name>gcr_certificate_get_der_data</api:name>
+    </api:function>
+  </info>
+  <title>Gcr.Certificate.prototype.get_der_data</title>
+  <synopsis><code mime="text/x-gjs">
+function get_der_data(): [return_value: ByteArray, n_data: Number(gsize)] {
+    // Gjs wrapper for gcr_certificate_get_der_data()
+}
+  </code></synopsis>
+  <p>Gets the raw DER data for an X.509 certificate.</p>
+
+<terms>
+<item>
+<title><code>return_value</code></title>
+  <p>raw DER data of the X.509 certificate</p>
+</item>
+<item>
+<title><code>n_data</code></title>
+  <p>a pointer to a location to store the size of the resulting DER data.</p>
+</item>
+</terms>
+
+</page>

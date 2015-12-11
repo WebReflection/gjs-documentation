@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Gck.Builder.add_attribute"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Builder" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gck_builder_add_attribute</api:name>
+      <api:arg>
+        <api:type>Gck.Attribute</api:type>
+        <api:name>attr</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Builder.prototype.add_attribute</title>
+  <synopsis><code mime="text/x-gjs">
+function add_attribute(attr: <link xref="Gck.Attribute">Gck.Attribute</link>): void {
+    // Gjs wrapper for gck_builder_add_attribute()
+}
+  </code></synopsis>
+  <p>Add an attribute to the builder. The attribute is added unconditionally whether
+or not an attribute with the same type already exists on the builder.</p>  <p>The <code>attr</code> attribute must have been created or owned by the Gck library.
+If you call this function on an arbitrary <link xref="Gck.Attribute"/> that is allocated on
+the stack or elsewhere, then this will result in undefined behavior.</p>  <p>As an optimization, the attribute memory value is automatically shared
+between the attribute and the builder.</p>
+
+<terms>
+<item>
+<title><code>attr</code></title>
+  <p>the attribute to add</p>
+</item>
+</terms>
+
+</page>

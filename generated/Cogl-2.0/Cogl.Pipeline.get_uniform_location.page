@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.get_uniform_location"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gint)</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_get_uniform_location</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>uniform_name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.get_uniform_location</title>
+  <synopsis><code mime="text/x-gjs">
+function get_uniform_location(uniform_name: String): Number(gint) {
+    // Gjs wrapper for cogl_pipeline_get_uniform_location()
+}
+  </code></synopsis>
+  <p>This is used to get an integer representing the uniform with the
+name <code>uniform_name</code>. The integer can be passed to functions such as
+<link xref="Cogl.Pipeline.set_uniform_1f"/> to set the value of a uniform.</p>  <p>This function will always return a valid integer. Ie, unlike
+OpenGL, it does not return -1 if the uniform is not available in
+this pipeline so it can not be used to test whether uniforms are
+present. It is not necessary to set the program on the pipeline
+before calling this function.</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>uniform_name</code></title>
+  <p>The name of a uniform</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>A integer representing the location of the given uniform.</p>
+</item>
+</terms>
+
+</page>

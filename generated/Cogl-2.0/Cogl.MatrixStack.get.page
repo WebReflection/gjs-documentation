@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<page id="Cogl.MatrixStack.get"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.MatrixStack" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Matrix</api:type>
+      </api:returns>
+      <api:name>cogl_matrix_stack_get</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.MatrixStack.prototype.get</title>
+  <synopsis><code mime="text/x-gjs">
+function get(): [return_value: <link xref="Cogl.Matrix">Cogl.Matrix</link>, matrix: <link xref="Cogl.Matrix">Cogl.Matrix</link>] {
+    // Gjs wrapper for cogl_matrix_stack_get()
+}
+  </code></synopsis>
+  <p>Resolves the current <code>stack</code> transform into a <link xref="Cogl.Matrix"/> by
+combining the operations that have been applied to build up the
+current transform.</p>  <p>There are two possible ways that this function may return its
+result depending on whether the stack is able to directly point
+to an internal <link xref="Cogl.Matrix"/> or whether the result needs to be
+composed of multiple operations.</p>  <p>If an internal matrix contains the required result then this
+function will directly return a pointer to that matrix, otherwise
+if the function returns <code>null</code> then <code>matrix</code> will be initialized
+to match the current transform of <code>stack</code>.</p>  <p>&lt;note&gt;<code>matrix</code> will be left untouched if a direct pointer is
+returned.&lt;/note&gt;</p>
+
+<terms>
+<item>
+<title><code>return_value</code></title>
+  <p>A direct pointer to the current transform or <code>null</code>
+              and in that case <code>matrix</code> will be initialized with
+              the value of the current transform.</p>
+</item>
+<item>
+<title><code>matrix</code></title>
+  <p>The potential destination for the current matrix</p>
+</item>
+</terms>
+
+</page>

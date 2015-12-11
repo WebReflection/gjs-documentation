@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Cogl.GLES2Vtable.glPolygonOffset"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Cogl.GLES2Vtable.glPolygonOffset</title>
+  <synopsis><code mime="text/x-gjs">
+function onglPolygonOffset(factor: <link href="../GL-1.0/GL.float.html">GL.float</link>, units: <link href="../GL-1.0/GL.float.html">GL.float</link>): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>factor</code></title>
+
+</item>
+<item>
+<title><code>units</code></title>
+
+</item>
+</terms>
+
+</page>

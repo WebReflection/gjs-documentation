@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<page id="Cogl.Matrix.scale"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Matrix" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_matrix_scale</api:name>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>sx</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>sy</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>sz</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Matrix.prototype.scale</title>
+  <synopsis><code mime="text/x-gjs">
+function scale(sx: Number(gfloat), sy: Number(gfloat), sz: Number(gfloat)): void {
+    // Gjs wrapper for cogl_matrix_scale()
+}
+  </code></synopsis>
+  <p>Multiplies <code>matrix</code> with a transform matrix that scales along the X,
+Y and Z axis.</p>
+
+<terms>
+<item>
+<title><code>sx</code></title>
+  <p>The X scale factor</p>
+</item>
+<item>
+<title><code>sy</code></title>
+  <p>The Y scale factor</p>
+</item>
+<item>
+<title><code>sz</code></title>
+  <p>The Z scale factor</p>
+</item>
+</terms>
+
+</page>

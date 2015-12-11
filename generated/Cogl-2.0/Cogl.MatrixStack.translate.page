@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<page id="Cogl.MatrixStack.translate"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.MatrixStack" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_matrix_stack_translate</api:name>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>y</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>z</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.MatrixStack.prototype.translate</title>
+  <synopsis><code mime="text/x-gjs">
+function translate(x: Number(gfloat), y: Number(gfloat), z: Number(gfloat)): void {
+    // Gjs wrapper for cogl_matrix_stack_translate()
+}
+  </code></synopsis>
+  <p>Multiplies the current matrix by one that translates along all
+three axes according to the given values.</p>
+
+<terms>
+<item>
+<title><code>x</code></title>
+  <p>Distance to translate along the x-axis</p>
+</item>
+<item>
+<title><code>y</code></title>
+  <p>Distance to translate along the y-axis</p>
+</item>
+<item>
+<title><code>z</code></title>
+  <p>Distance to translate along the z-axis</p>
+</item>
+</terms>
+
+</page>

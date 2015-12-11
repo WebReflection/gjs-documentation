@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<page id="Cogl.Primitive.texture_set_auto_mipmap"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Primitive" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_primitive_texture_set_auto_mipmap</api:name>
+      <api:arg>
+        <api:type>Cogl.PrimitiveTexture</api:type>
+        <api:name>primitive_texture</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.Bool</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Primitive.texture_set_auto_mipmap</title>
+  <synopsis><code mime="text/x-gjs">
+function texture_set_auto_mipmap(primitive_texture: <link xref="Cogl.PrimitiveTexture">Cogl.PrimitiveTexture</link>, value: <link xref="Cogl.Bool">Cogl.Bool</link>): void {
+    // Gjs wrapper for cogl_primitive_texture_set_auto_mipmap()
+}
+  </code></synopsis>
+  <p>Sets whether the texture will automatically update the smaller
+mipmap levels after any part of level 0 is updated. The update will
+only occur whenever the texture is used for drawing with a texture
+filter that requires the lower mipmap levels. An application should
+disable this if it wants to upload its own data for the other
+levels. By default auto mipmapping is enabled.</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>primitive_texture</code></title>
+  <p>A <link xref="Cogl.PrimitiveTexture"/></p>
+</item>
+<item>
+<title><code>value</code></title>
+  <p>The new value for whether to auto mipmap</p>
+</item>
+</terms>
+
+</page>

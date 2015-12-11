@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Cogl.RendererError.quark"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.RendererError" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(guint32)</api:type>
+      </api:returns>
+      <api:name>cogl_renderer_error_quark</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.RendererError.quark</title>
+  <synopsis><code mime="text/x-gjs">
+function quark(): Number(guint32) {
+    // Gjs wrapper for cogl_renderer_error_quark()
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gck.UriData-any_unrecognized"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.UriData" group="field" type="guide"/>
+    <title type="link" role="topic">any_unrecognized</title>
+  </info>
+  <title>Gck.UriData.any_unrecognized</title>
+  <synopsis><code mime="text/x-gjs">
+UriData.any_unrecognized: Boolean (Read / Write)
+  </code></synopsis>
+  <p>whether any parts of the PKCS\#11 URI were unsupported or unrecognized.</p>
+
+</page>

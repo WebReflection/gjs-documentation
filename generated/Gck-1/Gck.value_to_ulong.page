@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<page id="Gck.value_to_ulong"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gck_value_to_ulong</api:name>
+      <api:arg>
+        <api:type>ByteArray</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gulong)</api:type>
+        <api:name>result</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.value_to_ulong</title>
+  <synopsis><code mime="text/x-gjs">
+function value_to_ulong(value: ByteArray, result: Number(gulong)): Boolean {
+    // Gjs wrapper for gck_value_to_ulong()
+}
+  </code></synopsis>
+  <p>Convert CK_ULONG type memory to a boolean.</p>
+
+<terms>
+<item>
+<title><code>value</code></title>
+  <p>memory to convert</p>
+</item>
+<item>
+<title><code>result</code></title>
+  <p>A location to store the result</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>Whether the conversion was successful.</p>
+</item>
+</terms>
+
+</page>

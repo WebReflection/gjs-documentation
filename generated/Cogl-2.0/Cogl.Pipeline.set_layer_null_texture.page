@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.set_layer_null_texture"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_set_layer_null_texture</api:name>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>layer_index</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.TextureType</api:type>
+        <api:name>texture_type</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.set_layer_null_texture</title>
+  <synopsis><code mime="text/x-gjs">
+function set_layer_null_texture(layer_index: Number(gint), texture_type: <link xref="Cogl.TextureType">Cogl.TextureType</link>): void {
+    // Gjs wrapper for cogl_pipeline_set_layer_null_texture()
+}
+  </code></synopsis>
+  <p>Sets the texture for this layer to be the default texture for the
+given type. This is equivalent to calling
+<link xref="Cogl.Pipeline.set_layer_texture"/> with <code>null</code> for the texture
+argument except that you can also specify the type of default
+texture to use. The default texture is a 1x1 pixel white texture.</p>  <p>This function is mostly useful if you want to create a base
+pipeline that you want to create multiple copies from using
+<link xref="Cogl.Pipeline.copy"/>. In that case this function can be used to
+specify the texture type so that any pipeline copies can share the
+internal texture type state for efficiency.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>layer_index</code></title>
+  <p>The layer number to modify</p>
+</item>
+<item>
+<title><code>texture_type</code></title>
+  <p>The type of the default texture to use</p>
+</item>
+</terms>
+
+</page>

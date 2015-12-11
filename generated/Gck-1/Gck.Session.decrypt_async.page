@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<page id="Gck.Session.decrypt_async"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Session" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gck_session_decrypt_async</api:name>
+      <api:arg>
+        <api:type>Gck.Object</api:type>
+        <api:name>key</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gck.Mechanism</api:type>
+        <api:name>mechanism</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>ByteArray</api:type>
+        <api:name>input</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.AsyncReadyCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Session.prototype.decrypt_async</title>
+  <synopsis><code mime="text/x-gjs">
+function decrypt_async(key: <link xref="Gck.Object">Gck.Object</link>, mechanism: <link xref="Gck.Mechanism">Gck.Mechanism</link>, input: ByteArray, cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>, callback: <link href="../Gio-2.0/Gio.AsyncReadyCallback.html">Gio.AsyncReadyCallback</link>): void {
+    // Gjs wrapper for gck_session_decrypt_async()
+}
+  </code></synopsis>
+  <p>Decrypt data in a mechanism specific manner. This call will
+return immediately and complete asynchronously.</p>
+
+<terms>
+<item>
+<title><code>key</code></title>
+  <p>The key to decrypt with.</p>
+</item>
+<item>
+<title><code>mechanism</code></title>
+  <p>The mechanism type and parameters to use for decryption.</p>
+</item>
+<item>
+<title><code>input</code></title>
+  <p>data to decrypt</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>A GCancellable which can be used to cancel the operation.</p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>Called when the operation completes.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="GtkClutter.Actor.new_with_contents"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GtkClutter.Actor" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Clutter.Actor</api:type>
+      </api:returns>
+      <api:name>gtk_clutter_actor_new_with_contents</api:name>
+      <api:arg>
+        <api:type>Gtk.Widget</api:type>
+        <api:name>contents</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GtkClutter.Actor.new_with_contents</title>
+  <synopsis><code mime="text/x-gjs">
+function new_with_contents(contents: <link href="../Gtk-3.0/Gtk.Widget.html">Gtk.Widget</link>): <link href="../Clutter-1.0/Clutter.Actor.html">Clutter.Actor</link> {
+    // Gjs wrapper for gtk_clutter_actor_new_with_contents()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="GtkClutter.Actor"/> widget. This widget can be
+used to embed a Gtk widget into a clutter scene.</p>  <p>This function is the logical equivalent of:</p>  <p>|[
+ClutterActor *actor = gtk_clutter_actor_new ();
+GtkWidget *bin = gtk_clutter_actor_get_widget (GTK_CLUTTER_ACTOR (actor));</p>  <p>gtk_container_add (GTK_CONTAINER (bin), contents);
+]|</p>
+
+<terms>
+<item>
+<title><code>contents</code></title>
+  <p>a <link href="../Gtk-3.0/Gtk.Widget.html">Gtk.Widget</link> to pack into this <link href="../Clutter-1.0/Clutter.Actor.html">Clutter.Actor</link></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the newly created <link xref="GtkClutter.Actor"/></p>
+</item>
+</terms>
+
+</page>

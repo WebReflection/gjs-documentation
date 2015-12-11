@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<page id="Cogl.Matrix.translate"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Matrix" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_matrix_translate</api:name>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>y</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>z</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Matrix.prototype.translate</title>
+  <synopsis><code mime="text/x-gjs">
+function translate(x: Number(gfloat), y: Number(gfloat), z: Number(gfloat)): void {
+    // Gjs wrapper for cogl_matrix_translate()
+}
+  </code></synopsis>
+  <p>Multiplies <code>matrix</code> with a transform matrix that translates along
+the X, Y and Z axis.</p>
+
+<terms>
+<item>
+<title><code>x</code></title>
+  <p>The X translation you want to apply</p>
+</item>
+<item>
+<title><code>y</code></title>
+  <p>The Y translation you want to apply</p>
+</item>
+<item>
+<title><code>z</code></title>
+  <p>The Z translation you want to apply</p>
+</item>
+</terms>
+
+</page>

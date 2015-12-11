@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<page id="Cogl.Attribute.new_const_1f"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Attribute" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Attribute</api:type>
+      </api:returns>
+      <api:name>cogl_attribute_new_const_1f</api:name>
+      <api:arg>
+        <api:type>Cogl.Context</api:type>
+        <api:name>context</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>name</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>value</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Attribute.new_const_1f</title>
+  <synopsis><code mime="text/x-gjs">
+function new_const_1f(context: <link xref="Cogl.Context">Cogl.Context</link>, name: String, value: Number(gfloat)): <link xref="Cogl.Attribute">Cogl.Attribute</link> {
+    // Gjs wrapper for cogl_attribute_new_const_1f()
+}
+  </code></synopsis>
+  <p>Creates a new, single component, attribute whose value remains
+constant across all the vertices of a primitive without needing to
+duplicate the value for each vertex.</p>  <p>The constant <code>value</code> is a single precision floating point scalar
+which should have a corresponding declaration in GLSL code like:</p>  <p>[|
+attribute float name;
+|]</p>
+
+<terms>
+<item>
+<title><code>context</code></title>
+  <p>A <link xref="Cogl.Context"/></p>
+</item>
+<item>
+<title><code>name</code></title>
+  <p>The name of the attribute (used to reference it from GLSL)</p>
+</item>
+<item>
+<title><code>value</code></title>
+  <p>The constant value for the attribute</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>A newly allocated <link xref="Cogl.Attribute"/>
+         representing the given constant <code>value</code>.</p>
+</item>
+</terms>
+
+</page>

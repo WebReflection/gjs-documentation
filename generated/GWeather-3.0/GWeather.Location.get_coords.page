@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="GWeather.Location.get_coords"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Location" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gweather_location_get_coords</api:name>
+    </api:function>
+  </info>
+  <title>GWeather.Location.prototype.get_coords</title>
+  <synopsis><code mime="text/x-gjs">
+function get_coords(): [latitude: Number(gdouble), longitude: Number(gdouble)] {
+    // Gjs wrapper for gweather_location_get_coords()
+}
+  </code></synopsis>
+  <p>Gets <code>loc</code>'s coordinates; you must check
+<link xref="GWeather.Location.has_coords"/> before calling this.</p>
+
+<terms>
+<item>
+<title><code>latitude</code></title>
+  <p>on return will contain <code>loc</code>'s latitude</p>
+</item>
+<item>
+<title><code>longitude</code></title>
+  <p>on return will contain <code>loc</code>'s longitude</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gck.TokenInfo-free_public_memory"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.TokenInfo" group="field" type="guide"/>
+    <title type="link" role="topic">free_public_memory</title>
+  </info>
+  <title>Gck.TokenInfo.free_public_memory</title>
+  <synopsis><code mime="text/x-gjs">
+TokenInfo.free_public_memory: Number(glong) (Read / Write)
+  </code></synopsis>
+  <p>The available amount of memory on this token for storing public objects.</p>
+
+</page>

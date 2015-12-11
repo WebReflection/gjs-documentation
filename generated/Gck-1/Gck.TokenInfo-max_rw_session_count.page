@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gck.TokenInfo-max_rw_session_count"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.TokenInfo" group="field" type="guide"/>
+    <title type="link" role="topic">max_rw_session_count</title>
+  </info>
+  <title>Gck.TokenInfo.max_rw_session_count</title>
+  <synopsis><code mime="text/x-gjs">
+TokenInfo.max_rw_session_count: Number(glong) (Read / Write)
+  </code></synopsis>
+  <p>The maximum number of read/write sessions allowed on this token.</p>
+
+</page>

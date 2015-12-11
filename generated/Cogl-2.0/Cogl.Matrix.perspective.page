@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<page id="Cogl.Matrix.perspective"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Matrix" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_matrix_perspective</api:name>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>fov_y</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>aspect</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>z_near</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>z_far</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Matrix.prototype.perspective</title>
+  <synopsis><code mime="text/x-gjs">
+function perspective(fov_y: Number(gfloat), aspect: Number(gfloat), z_near: Number(gfloat), z_far: Number(gfloat)): void {
+    // Gjs wrapper for cogl_matrix_perspective()
+}
+  </code></synopsis>
+  <p>Multiplies <code>matrix</code> by the described perspective matrix</p>  <p>&lt;note&gt;You should be careful not to have to great a <code>z_far</code> / <code>z_near</code>
+ratio since that will reduce the effectiveness of depth testing
+since there wont be enough precision to identify the depth of
+objects near to each other.&lt;/note&gt;</p>
+
+<terms>
+<item>
+<title><code>fov_y</code></title>
+  <p>Vertical field of view angle in degrees.</p>
+</item>
+<item>
+<title><code>aspect</code></title>
+  <p>The (width over height) aspect ratio for display</p>
+</item>
+<item>
+<title><code>z_near</code></title>
+  <p>The distance to the near clipping plane (Must be positive,
+  and must not be 0)</p>
+</item>
+<item>
+<title><code>z_far</code></title>
+  <p>The distance to the far clipping plane (Must be positive)</p>
+</item>
+</terms>
+
+</page>

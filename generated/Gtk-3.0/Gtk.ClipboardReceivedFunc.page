@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Gtk.ClipboardReceivedFunc"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Gtk.ClipboardReceivedFunc</title>
+  <synopsis><code mime="text/x-gjs">
+function onClipboardReceivedFunc(clipboard: <link xref="Gtk.Clipboard">Gtk.Clipboard</link>, selection_data: <link xref="Gtk.SelectionData">Gtk.SelectionData</link>): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>clipboard</code></title>
+
+</item>
+<item>
+<title><code>selection_data</code></title>
+
+</item>
+</terms>
+
+</page>

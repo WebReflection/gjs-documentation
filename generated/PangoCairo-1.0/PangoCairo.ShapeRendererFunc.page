@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="PangoCairo.ShapeRendererFunc"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>PangoCairo.ShapeRendererFunc</title>
+  <synopsis><code mime="text/x-gjs">
+function onShapeRendererFunc(cr: <link href="../cairo-1.0/cairo.Context.html">cairo.Context</link>, attr: <link href="../Pango-1.0/Pango.AttrShape.html">Pango.AttrShape</link>, do_path: Boolean, data: void): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>cr</code></title>
+
+</item>
+<item>
+<title><code>attr</code></title>
+
+</item>
+<item>
+<title><code>do_path</code></title>
+
+</item>
+<item>
+<title><code>data</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Cogl.Quaternion.init_from_z_rotation"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Quaternion" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_quaternion_init_from_z_rotation</api:name>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>angle</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Quaternion.prototype.init_from_z_rotation</title>
+  <synopsis><code mime="text/x-gjs">
+function init_from_z_rotation(angle: Number(gfloat)): void {
+    // Gjs wrapper for cogl_quaternion_init_from_z_rotation()
+}
+  </code></synopsis>
+
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>angle</code></title>
+  <p>The angle to rotate around the z axis</p>
+</item>
+</terms>
+
+</page>

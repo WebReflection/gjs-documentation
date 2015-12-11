@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="GWeather.Location.get_city_name"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Location" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>gweather_location_get_city_name</api:name>
+    </api:function>
+  </info>
+  <title>GWeather.Location.prototype.get_city_name</title>
+  <synopsis><code mime="text/x-gjs">
+function get_city_name(): String {
+    // Gjs wrapper for gweather_location_get_city_name()
+}
+  </code></synopsis>
+  <p>For a <link xref="GWeather.LocationLevel"/>.city or <link xref="GWeather.LocationLevel"/>.detached location,
+this is equivalent to <link xref="GWeather.Location.get_name"/>.
+For a <link xref="GWeather.LocationLevel"/>.weather_station location, it is equivalent to
+calling <link xref="GWeather.Location.get_name"/> on the location's parent. For
+other locations it will return <code>null</code>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>loc</code>'s city name, or <code>null</code></p>
+</item>
+</terms>
+
+</page>

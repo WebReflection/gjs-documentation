@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="Cogl.Renderer.set_winsys_id"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Renderer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_renderer_set_winsys_id</api:name>
+      <api:arg>
+        <api:type>Cogl.WinsysID</api:type>
+        <api:name>winsys_id</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Renderer.prototype.set_winsys_id</title>
+  <synopsis><code mime="text/x-gjs">
+function set_winsys_id(winsys_id: <link xref="Cogl.WinsysID">Cogl.WinsysID</link>): void {
+    // Gjs wrapper for cogl_renderer_set_winsys_id()
+}
+  </code></synopsis>
+  <p>This allows you to explicitly select a winsys backend to use instead
+of letting Cogl automatically select a backend.</p>  <p>if you select an unsupported backend then <link xref="Cogl.Renderer.connect"/>
+will fail and report an error.</p>  <p>This may only be called on an un-connected <link xref="Cogl.Renderer"/>.</p>
+
+<terms>
+<item>
+<title><code>winsys_id</code></title>
+  <p>An ID of the winsys you explicitly want to use.</p>
+</item>
+</terms>
+
+</page>

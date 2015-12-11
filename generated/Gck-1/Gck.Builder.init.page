@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Gck.Builder.init"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Builder" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gck_builder_init</api:name>
+    </api:function>
+  </info>
+  <title>Gck.Builder.prototype.init</title>
+  <synopsis><code mime="text/x-gjs">
+function init(): void {
+    // Gjs wrapper for gck_builder_init()
+}
+  </code></synopsis>
+  <p>Initialize a stack allocated builder, with the default flags.</p>  <p>This is equivalent to initializing a builder variable with the
+%GCK_BUILDER_INIT constant, or setting it to zeroed memory.</p>  <p>&lt;informalexample&gt;&lt;programlisting&gt;
+/&lt;!-- --&gt;* Equivalent ways of initializing a GckBuilder *&lt;!-- --&gt;/
+GckBuilder builder = GCK_BUILDER_INIT;
+GckBuilder builder2;
+GckBuilder builder3;</p>  <p>gck_builder_init (&amp;builder2);</p>  <p>memset (&amp;builder3, 0, sizeof (builder3));
+&lt;/programlisting&gt;&lt;/informalexample&gt;</p>
+
+
+</page>

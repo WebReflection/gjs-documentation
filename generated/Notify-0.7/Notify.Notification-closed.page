@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page id="Notify.Notification-closed"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Notify.Notification" group="signal" type="guide"/>
+    <title type="link" role="topic">closed</title>
+  </info>
+  <title>Notify.Notification::closed</title>
+  <synopsis><code mime="text/x-gjs">
+connect('closed', function (notification, ): void);
+  </code></synopsis>
+  <p>Emitted when the notification is closed.</p>
+
+<terms>
+<item>
+<title><code>notification</code></title>
+<p>instance of <link xref="Notify.Notification"/> that is emitting the signal</p>
+</item>
+</terms>
+
+</page>

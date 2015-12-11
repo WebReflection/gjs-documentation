@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="Cogl.Output.get_subpixel_order"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Output" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.SubpixelOrder</api:type>
+      </api:returns>
+      <api:name>cogl_output_get_subpixel_order</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Output.prototype.get_subpixel_order</title>
+  <synopsis><code mime="text/x-gjs">
+function get_subpixel_order(): <link xref="Cogl.SubpixelOrder">Cogl.SubpixelOrder</link> {
+    // Gjs wrapper for cogl_output_get_subpixel_order()
+}
+  </code></synopsis>
+  <p>For an output device where each pixel is made up of smaller components
+with different colors, returns the layout of the subpixel
+components.</p>
+  <p>Since 1.14</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the order of subpixel components for the output device</p>
+</item>
+</terms>
+
+</page>

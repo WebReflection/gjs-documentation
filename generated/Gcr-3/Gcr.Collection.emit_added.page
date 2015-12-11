@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Gcr.Collection.emit_added"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Collection" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gcr_collection_emit_added</api:name>
+      <api:arg>
+        <api:type>GObject.Object</api:type>
+        <api:name>object</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.Collection.prototype.emit_added</title>
+  <synopsis><code mime="text/x-gjs">
+function emit_added(object: <link href="../GObject-2.0/GObject.Object.html">GObject.Object</link>): void {
+    // Gjs wrapper for gcr_collection_emit_added()
+}
+  </code></synopsis>
+  <p>Emit the <link xref="Gcr.Collection-added"/> signal for the given object. This function
+is used by implementors of this interface.</p>
+
+<terms>
+<item>
+<title><code>object</code></title>
+  <p>The object that was added</p>
+</item>
+</terms>
+
+</page>

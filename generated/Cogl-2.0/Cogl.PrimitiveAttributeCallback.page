@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="Cogl.PrimitiveAttributeCallback"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Cogl.PrimitiveAttributeCallback</title>
+  <synopsis><code mime="text/x-gjs">
+function onPrimitiveAttributeCallback(primitive: <link xref="Cogl.Primitive">Cogl.Primitive</link>, attribute: <link xref="Cogl.Attribute">Cogl.Attribute</link>): <link xref="Cogl.Bool">Cogl.Bool</link> {
+}
+  </code></synopsis>
+  <p>The callback prototype used with <link xref="Cogl.Primitive.foreach_attribute"/>
+for iterating all the attributes of a <link xref="Cogl.Primitive"/>.</p>  <p>The function should return TRUE to continue iteration or FALSE to
+stop.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>primitive</code></title>
+  <p>The <link xref="Cogl.Primitive"/> whose attributes are being iterated</p>
+</item>
+<item>
+<title><code>attribute</code></title>
+  <p>The <link xref="Cogl.Attribute"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

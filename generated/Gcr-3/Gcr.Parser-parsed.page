@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<page id="Gcr.Parser-parsed"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Parser" group="signal" type="guide"/>
+    <title type="link" role="topic">parsed</title>
+  </info>
+  <title>Gcr.Parser::parsed</title>
+  <synopsis><code mime="text/x-gjs">
+connect('parsed', function (parser, ): void);
+  </code></synopsis>
+  <p>This signal is emitted when an item is sucessfully parsed. To access
+the information about the item use the <link xref="Gcr.Parser.get_parsed_label"/>,
+<link xref="Gcr.Parser.get_parsed_attributes"/> and <link xref="Gcr.Parser.get_parsed_description"/>
+functions.</p>
+
+<terms>
+<item>
+<title><code>parser</code></title>
+<p>instance of <link xref="Gcr.Parser"/> that is emitting the signal</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="Cogl.Onscreen.remove_frame_callback"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Onscreen" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_onscreen_remove_frame_callback</api:name>
+      <api:arg>
+        <api:type>Cogl.FrameClosure</api:type>
+        <api:name>closure</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Onscreen.prototype.remove_frame_callback</title>
+  <synopsis><code mime="text/x-gjs">
+function remove_frame_callback(closure: <link xref="Cogl.FrameClosure">Cogl.FrameClosure</link>): void {
+    // Gjs wrapper for cogl_onscreen_remove_frame_callback()
+}
+  </code></synopsis>
+  <p>Removes a callback and associated user data that were previously
+registered using <link xref="Cogl.Onscreen.add_frame_callback"/>.</p>  <p>If a destroy callback was passed to
+<link xref="Cogl.Onscreen.add_frame_callback"/> to destroy the user data then
+this will get called.</p>
+  <p>Since 1.14</p>
+<terms>
+<item>
+<title><code>closure</code></title>
+  <p>A <link xref="Cogl.FrameClosure"/> returned from
+          <link xref="Cogl.Onscreen.add_frame_callback"/></p>
+</item>
+</terms>
+
+</page>

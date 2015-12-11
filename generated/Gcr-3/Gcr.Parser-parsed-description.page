@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="Gcr.Parser-parsed-description"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Parser" group="property" type="guide"/>
+    <title type="link" role="topic">parsed-description</title>
+  </info>
+  <title>Gcr.Parser.parsed_description</title>
+  <synopsis><code mime="text/x-gjs">
+Parser.parsed_description: String (Read)
+  </code></synopsis>
+  <p>The description of the type of the currently parsed item. This is generally
+only valid during a <link xref="Gcr.Parser-parsed"/> signal.</p>
+
+</page>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page id="Atk.EventListener"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Atk.EventListener</title>
+  <synopsis><code mime="text/x-gjs">
+function onEventListener(obj: <link xref="Atk.Object">Atk.Object</link>): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>obj</code></title>
+
+</item>
+</terms>
+
+</page>

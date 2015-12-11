@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<page id="Cogl.AttributeBuffer.new_with_size"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.AttributeBuffer" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.AttributeBuffer</api:type>
+      </api:returns>
+      <api:name>cogl_attribute_buffer_new_with_size</api:name>
+      <api:arg>
+        <api:type>Cogl.Context</api:type>
+        <api:name>context</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gsize)</api:type>
+        <api:name>bytes</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.AttributeBuffer.new_with_size</title>
+  <synopsis><code mime="text/x-gjs">
+function new_with_size(context: <link xref="Cogl.Context">Cogl.Context</link>, bytes: Number(gsize)): <link xref="Cogl.AttributeBuffer">Cogl.AttributeBuffer</link> {
+    // Gjs wrapper for cogl_attribute_buffer_new_with_size()
+}
+  </code></synopsis>
+  <p>Describes a new <link xref="Cogl.AttributeBuffer"/> of @size bytes to contain
+arrays of vertex attribute data. Afterwards data can be set using
+<link xref="Cogl.buffer_set_data"/> or by mapping it into the application's
+address space using <link xref="Cogl.buffer_map"/>.</p>  <p>The underlying storage of this buffer isn't allocated by this
+function so that you have an opportunity to use the
+<link xref="Cogl.buffer_set_update_hint"/> and cogl_buffer_set_usage_hint()
+functions which may influence how the storage is allocated. The
+storage will be allocated once you upload data to the buffer.</p>  <p>Note: You can assume this function always succeeds and won't return
+<code>null</code></p>
+
+<terms>
+<item>
+<title><code>context</code></title>
+  <p>A <link xref="Cogl.Context"/></p>
+</item>
+<item>
+<title><code>bytes</code></title>
+  <p>The number of bytes to allocate for vertex attribute data.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>A newly allocated <link xref="Cogl.AttributeBuffer"/>. Never <code>null</code>.</p>
+</item>
+</terms>
+
+</page>

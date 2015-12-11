@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="GWeather.TemperatureUnit.to_real"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.TemperatureUnit" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GWeather.TemperatureUnit</api:type>
+      </api:returns>
+      <api:name>gweather_temperature_unit_to_real</api:name>
+      <api:arg>
+        <api:type>GWeather.TemperatureUnit</api:type>
+        <api:name>unit</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GWeather.TemperatureUnit.to_real</title>
+  <synopsis><code mime="text/x-gjs">
+function to_real(unit: <link xref="GWeather.TemperatureUnit">GWeather.TemperatureUnit</link>): <link xref="GWeather.TemperatureUnit">GWeather.TemperatureUnit</link> {
+    // Gjs wrapper for gweather_temperature_unit_to_real()
+}
+  </code></synopsis>
+  <p>Resolve <code>unit</code> into a real temperature unit, potentially considering
+locale defaults.</p>
+
+<terms>
+<item>
+<title><code>unit</code></title>
+  <p>a tempeature unit, or <link xref="GWeather.TemperatureUnit"/>.default</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

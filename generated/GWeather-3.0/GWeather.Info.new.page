@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<page id="GWeather.Info.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Info" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GWeather.Info</api:type>
+      </api:returns>
+      <api:name>gweather_info_new</api:name>
+      <api:arg>
+        <api:type>GWeather.Location</api:type>
+        <api:name>location</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>GWeather.ForecastType</api:type>
+        <api:name>type</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>GWeather.Info.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(location: <link xref="GWeather.Location">GWeather.Location</link>, type: <link xref="GWeather.ForecastType">GWeather.ForecastType</link>): <link xref="GWeather.Info">GWeather.Info</link> {
+    // Gjs wrapper for gweather_info_new()
+}
+  </code></synopsis>
+  <p>Builds a new <link xref="GWeather.Info"/> that will provide weather information about
+<code>location</code>.</p>
+
+<terms>
+<item>
+<title><code>location</code></title>
+  <p>the desidered <link xref="GWeather.Location"/> (<code>null</code> for default)</p>
+</item>
+<item>
+<title><code>type</code></title>
+  <p>deprecated and ignored</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a new <link xref="GWeather.Info"/></p>
+</item>
+</terms>
+
+</page>

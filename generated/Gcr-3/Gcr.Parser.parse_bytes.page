@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gcr.Parser.parse_bytes"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Parser" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gcr_parser_parse_bytes</api:name>
+      <api:arg>
+        <api:type>ByteArray</api:type>
+        <api:name>data</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.Parser.prototype.parse_bytes</title>
+  <synopsis><code mime="text/x-gjs">
+function parse_bytes(data: ByteArray): Boolean {
+    // Gjs wrapper for gcr_parser_parse_bytes()
+}
+  </code></synopsis>
+  <p>Parse the data. The <link xref="Gcr.Parser-parsed"/> and <link xref="Gcr.Parser-authenticate"/> signals
+may fire during the parsing.</p>
+
+<terms>
+<item>
+<title><code>data</code></title>
+  <p>the data to parse</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>Whether the data was parsed successfully or not.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,85 @@
+<?xml version="1.0"?>
+<page id="Cogl.Bitmap.new_for_data"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Bitmap" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bitmap</api:type>
+      </api:returns>
+      <api:name>cogl_bitmap_new_for_data</api:name>
+      <api:arg>
+        <api:type>Cogl.Context</api:type>
+        <api:name>context</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>width</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>height</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.PixelFormat</api:type>
+        <api:name>format</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>rowstride</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint8)</api:type>
+        <api:name>data</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Bitmap.new_for_data</title>
+  <synopsis><code mime="text/x-gjs">
+function new_for_data(context: <link xref="Cogl.Context">Cogl.Context</link>, width: Number(gint), height: Number(gint), format: <link xref="Cogl.PixelFormat">Cogl.PixelFormat</link>, rowstride: Number(gint), data: Number(guint8)): <link xref="Cogl.Bitmap">Cogl.Bitmap</link> {
+    // Gjs wrapper for cogl_bitmap_new_for_data()
+}
+  </code></synopsis>
+  <p>Creates a bitmap using some existing data. The data is not copied
+so the application must keep the buffer alive for the lifetime of
+the <link xref="Cogl.Bitmap"/>. This can be used for example with
+<link xref="Cogl.Framebuffer.read_pixels_into_bitmap"/> to read data directly
+into an application buffer with the specified rowstride.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>context</code></title>
+  <p>A <link xref="Cogl.Context"/></p>
+</item>
+<item>
+<title><code>width</code></title>
+  <p>The width of the bitmap.</p>
+</item>
+<item>
+<title><code>height</code></title>
+  <p>The height of the bitmap.</p>
+</item>
+<item>
+<title><code>format</code></title>
+  <p>The format of the pixel data.</p>
+</item>
+<item>
+<title><code>rowstride</code></title>
+  <p>The rowstride of the bitmap (the number of bytes from
+  the start of one row of the bitmap to the next).</p>
+</item>
+<item>
+<title><code>data</code></title>
+  <p>A pointer to the data. The bitmap will take ownership of this data.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>A new <link xref="Cogl.Bitmap"/>.</p>
+</item>
+</terms>
+
+</page>

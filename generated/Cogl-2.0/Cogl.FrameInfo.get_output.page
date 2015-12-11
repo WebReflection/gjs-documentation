@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Cogl.FrameInfo.get_output"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.FrameInfo" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Output</api:type>
+      </api:returns>
+      <api:name>cogl_frame_info_get_output</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.FrameInfo.prototype.get_output</title>
+  <synopsis><code mime="text/x-gjs">
+function get_output(): <link xref="Cogl.Output">Cogl.Output</link> {
+    // Gjs wrapper for cogl_frame_info_get_output()
+}
+  </code></synopsis>
+  <p>Gets the <link xref="Cogl.Output"/> that the swapped frame was presented to.</p>
+  <p>Since 1.14</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>The <link xref="Cogl.Output"/> that the frame was
+       presented to, or <code>null</code> if this could not be determined.</p>
+</item>
+</terms>
+
+</page>

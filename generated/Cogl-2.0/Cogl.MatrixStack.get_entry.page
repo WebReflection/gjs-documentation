@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="Cogl.MatrixStack.get_entry"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.MatrixStack" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.MatrixEntry</api:type>
+      </api:returns>
+      <api:name>cogl_matrix_stack_get_entry</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.MatrixStack.prototype.get_entry</title>
+  <synopsis><code mime="text/x-gjs">
+function get_entry(): <link xref="Cogl.MatrixEntry">Cogl.MatrixEntry</link> {
+    // Gjs wrapper for cogl_matrix_stack_get_entry()
+}
+  </code></synopsis>
+  <p>Gets a reference to the current transform represented by a
+<link xref="Cogl.MatrixEntry"/> pointer.</p>  <p>&lt;note&gt;The transform represented by a <link xref="Cogl.MatrixEntry"/> is
+immutable.&lt;/note&gt;</p>  <p>&lt;note&gt;<link xref="Cogl.MatrixEntry"/>&lt;!-- --&gt;s are reference counted using
+<link xref="Cogl.MatrixEntry.ref"/> and <link xref="Cogl.MatrixEntry.unref"/> and you
+should call <link xref="Cogl.MatrixEntry.unref"/> when you are finished with
+and entry you get via <link xref="Cogl.MatrixStack.get_entry"/>.&lt;/note&gt;</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>A pointer to the <link xref="Cogl.MatrixEntry"/>
+              representing the current matrix stack transform.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Gcr.CertificateRequest.complete"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.CertificateRequest" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>gcr_certificate_request_complete</api:name>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.CertificateRequest.prototype.complete</title>
+  <synopsis><code mime="text/x-gjs">
+function complete(cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>): Boolean {
+    // Gjs wrapper for gcr_certificate_request_complete()
+}
+  </code></synopsis>
+  <p>Complete and sign a certificate request, so that it can be encoded
+and sent to a certificate authority.</p>  <p>This call may block as it signs the request using the private key.</p>
+
+<terms>
+<item>
+<title><code>cancellable</code></title>
+  <p>a cancellation object</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>whether certificate request was successfully completed or not</p>
+</item>
+</terms>
+
+</page>

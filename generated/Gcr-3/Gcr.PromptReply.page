@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="Gcr.PromptReply"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Gcr.PromptReply</title>
+  <p>Various replies returned by <link xref="Gcr.Prompt.confirm"/> and friends.</p>
+
+<terms>
+<item>
+<title><code>PromptReply.CANCEL</code></title>
+  <p>the prompt was cancelled</p>
+</item>
+<item>
+<title><code>PromptReply.CONTINUE</code></title>
+  <p>the user replied with 'ok'</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

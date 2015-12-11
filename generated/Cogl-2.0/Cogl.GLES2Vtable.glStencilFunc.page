@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Cogl.GLES2Vtable.glStencilFunc"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Cogl.GLES2Vtable.glStencilFunc</title>
+  <synopsis><code mime="text/x-gjs">
+function onglStencilFunc(func: <link href="../GL-1.0/GL.enum.html">GL.enum</link>, ref: <link href="../GL-1.0/GL.int.html">GL.int</link>, mask: <link href="../GL-1.0/GL.uint.html">GL.uint</link>): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>func</code></title>
+
+</item>
+<item>
+<title><code>ref</code></title>
+
+</item>
+<item>
+<title><code>mask</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<page id="Gcr.Prompt-prompt_close"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Prompt" group="vfunc" type="guide"/>
+  </info>
+  <title>Gcr.Prompt::prompt_close</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_prompt_close(): void {
+}
+  </code></synopsis>
+
+
+<terms>
+</terms>
+
+</page>

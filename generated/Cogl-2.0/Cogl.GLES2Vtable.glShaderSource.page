@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="Cogl.GLES2Vtable.glShaderSource"
+      type="topic"
+      style="callback"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="callback" type="guide"/>
+  </info>
+  <title>Cogl.GLES2Vtable.glShaderSource</title>
+  <synopsis><code mime="text/x-gjs">
+function onglShaderSource(shader: <link href="../GL-1.0/GL.uint.html">GL.uint</link>, count: <link href="../GL-1.0/GL.sizei.html">GL.sizei</link>, string: String, length: <link href="../GL-1.0/GL.int.html">GL.int</link>): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>shader</code></title>
+
+</item>
+<item>
+<title><code>count</code></title>
+
+</item>
+<item>
+<title><code>string</code></title>
+
+</item>
+<item>
+<title><code>length</code></title>
+
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<page id="Cogl.wayland_renderer_get_display"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_wayland_renderer_get_display</api:name>
+      <api:arg>
+        <api:type>Cogl.Renderer</api:type>
+        <api:name>renderer</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.wayland_renderer_get_display</title>
+  <synopsis><code mime="text/x-gjs">
+function wayland_renderer_get_display(renderer: <link xref="Cogl.Renderer">Cogl.Renderer</link>): void {
+    // Gjs wrapper for cogl_wayland_renderer_get_display()
+}
+  </code></synopsis>
+  <p>Retrieves the Wayland display that Cogl is using. If a foreign
+display has been specified using
+<link xref="Cogl.wayland_renderer_set_foreign_display"/> then that display will
+be returned. If no foreign display has been specified then the
+display that Cogl creates internally will be returned unless the
+renderer has not yet been connected (either implicitly or explicitly by
+calling <link xref="Cogl.Renderer.connect"/>) in which case <code>null</code> is returned.</p>
+  <p>Since 1.8</p>
+<terms>
+<item>
+<title><code>renderer</code></title>
+  <p>A <link xref="Cogl.Renderer"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>The wayland display currently associated with <code>renderer</code>,
+         or <code>null</code> if the renderer hasn't yet been connected and no
+         foreign display has been specified.</p>
+</item>
+</terms>
+
+</page>

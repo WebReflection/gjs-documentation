@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<page id="Cogl.Onscreen.swap_region"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Onscreen" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_onscreen_swap_region</api:name>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>rectangles</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>n_rectangles</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Onscreen.prototype.swap_region</title>
+  <synopsis><code mime="text/x-gjs">
+function swap_region(rectangles: Number(gint), n_rectangles: Number(gint)): void {
+    // Gjs wrapper for cogl_onscreen_swap_region()
+}
+  </code></synopsis>
+  <p>Swaps a region of the back buffer being rendered too, to the front for
+display.  <code>rectangles</code> represents the region as array of <code>n_rectangles</code> each
+defined by 4 sequential (x, y, width, height) integers.</p>  <p>This function also implicitly discards the contents of the color, depth and
+stencil buffers as if <link xref="Cogl.Framebuffer.discard_buffers"/> were used. The
+significance of the discard is that you should not expect to be able to
+start a new frame that incrementally builds on the contents of the previous
+frame.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>rectangles</code></title>
+  <p>An array of integer 4-tuples representing rectangles as
+             (x, y, width, height) tuples.</p>
+</item>
+<item>
+<title><code>n_rectangles</code></title>
+  <p>The number of 4-tuples to be read from <code>rectangles</code></p>
+</item>
+</terms>
+
+</page>

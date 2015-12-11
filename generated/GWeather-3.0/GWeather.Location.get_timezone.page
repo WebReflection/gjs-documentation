@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="GWeather.Location.get_timezone"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Location" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>GWeather.Timezone</api:type>
+      </api:returns>
+      <api:name>gweather_location_get_timezone</api:name>
+    </api:function>
+  </info>
+  <title>GWeather.Location.prototype.get_timezone</title>
+  <synopsis><code mime="text/x-gjs">
+function get_timezone(): <link xref="GWeather.Timezone">GWeather.Timezone</link> {
+    // Gjs wrapper for gweather_location_get_timezone()
+}
+  </code></synopsis>
+  <p>Gets the timezone associated with <code>loc</code>, if known.</p>  <p>The timezone is owned either by <code>loc</code> or by one of its parents.
+FIXME.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>loc</code>'s timezone, or
+<code>null</code></p>
+</item>
+</terms>
+
+</page>

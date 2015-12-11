@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Cogl.VertexP2-x"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.VertexP2" group="field" type="guide"/>
+    <title type="link" role="topic">x</title>
+  </info>
+  <title>Cogl.VertexP2.x</title>
+  <synopsis><code mime="text/x-gjs">
+VertexP2.x: Number(gfloat) (Read / Write)
+  </code></synopsis>
+  <p>The x component of a position attribute</p>
+
+</page>

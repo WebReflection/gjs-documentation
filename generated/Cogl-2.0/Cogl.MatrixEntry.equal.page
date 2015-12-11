@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="Cogl.MatrixEntry.equal"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.MatrixEntry" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_matrix_entry_equal</api:name>
+      <api:arg>
+        <api:type>Cogl.MatrixEntry</api:type>
+        <api:name>entry1</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.MatrixEntry.prototype.equal</title>
+  <synopsis><code mime="text/x-gjs">
+function equal(entry1: <link xref="Cogl.MatrixEntry">Cogl.MatrixEntry</link>): <link xref="Cogl.Bool">Cogl.Bool</link> {
+    // Gjs wrapper for cogl_matrix_entry_equal()
+}
+  </code></synopsis>
+  <p>Compares two arbitrary <link xref="Cogl.MatrixEntry"/> transforms for equality
+returning <code>true</code> if they are equal or <code>false</code> otherwise.</p>  <p>&lt;note&gt;In many cases it is unnecessary to use this api and instead
+direct pointer comparisons of entries are good enough and much
+cheaper too.&lt;/note&gt;</p>
+
+<terms>
+<item>
+<title><code>entry1</code></title>
+  <p>A second <link xref="Cogl.MatrixEntry"/> to compare</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if <code>entry0</code> represents the same transform as
+              <code>entry1</code>, otherwise <code>false</code>.</p>
+</item>
+</terms>
+
+</page>

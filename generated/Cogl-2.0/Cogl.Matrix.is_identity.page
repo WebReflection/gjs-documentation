@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="Cogl.Matrix.is_identity"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Matrix" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bool</api:type>
+      </api:returns>
+      <api:name>cogl_matrix_is_identity</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Matrix.prototype.is_identity</title>
+  <synopsis><code mime="text/x-gjs">
+function is_identity(): <link xref="Cogl.Bool">Cogl.Bool</link> {
+    // Gjs wrapper for cogl_matrix_is_identity()
+}
+  </code></synopsis>
+  <p>Determines if the given matrix is an identity matrix.</p>
+  <p>Since 1.8</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if <code>matrix</code> is an identity matrix else <code>false</code></p>
+</item>
+</terms>
+
+</page>

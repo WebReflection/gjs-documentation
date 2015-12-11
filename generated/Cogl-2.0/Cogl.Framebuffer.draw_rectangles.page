@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<page id="Cogl.Framebuffer.draw_rectangles"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Framebuffer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_framebuffer_draw_rectangles</api:name>
+      <api:arg>
+        <api:type>Cogl.Pipeline</api:type>
+        <api:name>pipeline</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Array(Number(gfloat))</api:type>
+        <api:name>coordinates</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint)</api:type>
+        <api:name>n_rectangles</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Framebuffer.prototype.draw_rectangles</title>
+  <synopsis><code mime="text/x-gjs">
+function draw_rectangles(pipeline: <link xref="Cogl.Pipeline">Cogl.Pipeline</link>, coordinates: Array(Number(gfloat)), n_rectangles: Number(guint)): void {
+    // Gjs wrapper for cogl_framebuffer_draw_rectangles()
+}
+  </code></synopsis>
+  <p>Draws a series of rectangles to <code>framebuffer</code> with the given
+<code>pipeline</code> state in the same way that
+<link xref="Cogl.Framebuffer.draw_rectangle"/> does.</p>  <p>The top left corner of the first rectangle is positioned at
+(coordinates[0], coordinates[1]) and the bottom right corner is
+positioned at (coordinates[2], coordinates[3]). The positions for
+the second rectangle are (coordinates[4], coordinates[5]) and
+(coordinates[6], coordinates[7]) and so on...</p>  <p>&lt;note&gt;The position is the position before the rectangle has been
+transformed by the model-view matrix and the projection
+matrix.&lt;/note&gt;</p>  <p>As a general rule for better performance its recommended to use
+this this API instead of calling
+<link xref="Cogl.Framebuffer.draw_textured_rectangle"/> separately for multiple
+rectangles if all of the rectangles will be drawn together with the
+same <code>pipeline</code> state.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>pipeline</code></title>
+  <p>A <link xref="Cogl.Pipeline"/> state object</p>
+</item>
+<item>
+<title><code>coordinates</code></title>
+  <p>an array of coordinates
+  containing groups of 4 float values: [x_1, y_1, x_2, y_2] that are
+  interpreted as two position coordinates; one for the top left of
+  the rectangle (x1, y1), and one for the bottom right of the
+  rectangle (x2, y2).</p>
+</item>
+<item>
+<title><code>n_rectangles</code></title>
+  <p>number of rectangles defined in <code>coordinates</code>.</p>
+</item>
+</terms>
+
+</page>

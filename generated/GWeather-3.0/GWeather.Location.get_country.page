@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="GWeather.Location.get_country"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Location" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>gweather_location_get_country</api:name>
+    </api:function>
+  </info>
+  <title>GWeather.Location.prototype.get_country</title>
+  <synopsis><code mime="text/x-gjs">
+function get_country(): String {
+    // Gjs wrapper for gweather_location_get_country()
+}
+  </code></synopsis>
+  <p>Gets the ISO 3166 country code of <code>loc</code> (or <code>null</code> if <code>loc</code> is a
+region- or world-level location)</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>loc</code>'s country code (or <code>null</code> if <code>loc</code>
+is a region- or world-level location)</p>
+</item>
+</terms>
+
+</page>

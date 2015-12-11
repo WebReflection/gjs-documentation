@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<page id="Gck.Object.cache_lookup"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Object" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.Attributes</api:type>
+      </api:returns>
+      <api:name>gck_object_cache_lookup</api:name>
+      <api:arg>
+        <api:type>Array(Number(gulong))</api:type>
+        <api:name>attr_types</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gck.Object.prototype.cache_lookup</title>
+  <synopsis><code mime="text/x-gjs">
+function cache_lookup(attr_types: Array(Number(gulong)), cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>): <link xref="Gck.Attributes">Gck.Attributes</link> {
+    // Gjs wrapper for gck_object_cache_lookup()
+}
+  </code></synopsis>
+  <p>Lookup attributes in the cache, or retrieve them from the object if necessary.</p>  <p>If <code>object</code> is a <link xref="Gck.ObjectCache"/> then this will lookup the attributes there
+first if available, otherwise will read them from the object and update
+the cache.</p>  <p>If <code>object</code> is not a <link xref="Gck.ObjectCache"/>, then the attributes will simply be
+read from the object.</p>  <p>This may block, use the asynchronous version when this is not desirable</p>
+
+<terms>
+<item>
+<title><code>attr_types</code></title>
+  <p>the types of attributes to update</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional cancellation object</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the attributes retrieved or <code>null</code> on failure</p>
+</item>
+</terms>
+
+</page>

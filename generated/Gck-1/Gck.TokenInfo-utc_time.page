@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gck.TokenInfo-utc_time"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.TokenInfo" group="field" type="guide"/>
+    <title type="link" role="topic">utc_time</title>
+  </info>
+  <title>Gck.TokenInfo.utc_time</title>
+  <synopsis><code mime="text/x-gjs">
+TokenInfo.utc_time: Number(gint64) (Read / Write)
+  </code></synopsis>
+  <p>If the token has a hardware clock, this is set to the number of seconds since the epoch.</p>
+
+</page>

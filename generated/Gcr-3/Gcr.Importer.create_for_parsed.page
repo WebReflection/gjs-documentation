@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="Gcr.Importer.create_for_parsed"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Importer" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(Gcr.Importer)</api:type>
+      </api:returns>
+      <api:name>gcr_importer_create_for_parsed</api:name>
+      <api:arg>
+        <api:type>Gcr.Parsed</api:type>
+        <api:name>parsed</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.Importer.create_for_parsed</title>
+  <synopsis><code mime="text/x-gjs">
+function create_for_parsed(parsed: <link xref="Gcr.Parsed">Gcr.Parsed</link>): Array(<link xref="Gcr.Importer">Gcr.Importer</link>) {
+    // Gjs wrapper for gcr_importer_create_for_parsed()
+}
+  </code></synopsis>
+  <p>Create a set of importers which can import this parsed item.
+The parsed item is represented by the state of the GcrParser at the
+time of calling this method.</p>
+
+<terms>
+<item>
+<title><code>parsed</code></title>
+  <p>a parser with a parsed item to import</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a list of importers
+         which can import the parsed item, which should be freed with
+         g_object_unref(), or <code>null</code> if no types of importers can be created</p>
+</item>
+</terms>
+
+</page>

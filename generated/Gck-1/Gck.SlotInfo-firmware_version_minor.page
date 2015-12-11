@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Gck.SlotInfo-firmware_version_minor"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.SlotInfo" group="field" type="guide"/>
+    <title type="link" role="topic">firmware_version_minor</title>
+  </info>
+  <title>Gck.SlotInfo.firmware_version_minor</title>
+  <synopsis><code mime="text/x-gjs">
+SlotInfo.firmware_version_minor: Number(guint8) (Read / Write)
+  </code></synopsis>
+  <p>The minor version of the firmware.</p>
+
+</page>

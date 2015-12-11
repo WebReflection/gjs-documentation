@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<page id="Cogl.PixelBuffer.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.PixelBuffer" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.PixelBuffer</api:type>
+      </api:returns>
+      <api:name>cogl_pixel_buffer_new</api:name>
+      <api:arg>
+        <api:type>Cogl.Context</api:type>
+        <api:name>context</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gsize)</api:type>
+        <api:name>size</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>void</api:type>
+        <api:name>data</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.PixelBuffer.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(context: <link xref="Cogl.Context">Cogl.Context</link>, size: Number(gsize), data: void): <link xref="Cogl.PixelBuffer">Cogl.PixelBuffer</link> {
+    // Gjs wrapper for cogl_pixel_buffer_new()
+}
+  </code></synopsis>
+  <p>Declares a new <link xref="Cogl.PixelBuffer"/> of <code>size</code> bytes to contain arrays of
+pixels. Once declared, data can be set using <link xref="Cogl.buffer_set_data"/>
+or by mapping it into the application's address space using
+<link xref="Cogl.buffer_map"/>.</p>  <p>If <code>data</code> isn't <code>null</code> then <code>size</code> bytes will be read from <code>data</code> and
+immediately copied into the new buffer.</p>
+  <p>Since 1.10</p>
+<terms>
+<item>
+<title><code>context</code></title>
+  <p>A <link xref="Cogl.Context"/></p>
+</item>
+<item>
+<title><code>size</code></title>
+  <p>The number of bytes to allocate for the pixel data.</p>
+</item>
+<item>
+<title><code>data</code></title>
+  <p>An optional pointer to vertex data to upload immediately</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a newly allocated <link xref="Cogl.PixelBuffer"/></p>
+</item>
+</terms>
+
+</page>

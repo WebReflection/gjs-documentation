@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="Cogl.Bitmap.new_from_file"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Bitmap" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Bitmap</api:type>
+      </api:returns>
+      <api:name>cogl_bitmap_new_from_file</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>filename</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Bitmap.new_from_file</title>
+  <synopsis><code mime="text/x-gjs">
+function new_from_file(filename: String): <link xref="Cogl.Bitmap">Cogl.Bitmap</link> {
+    // Gjs wrapper for cogl_bitmap_new_from_file()
+}
+  </code></synopsis>
+  <p>Loads an image file from disk. This function can be safely called from
+within a thread.</p>
+  <p>Since 1.0</p>
+<terms>
+<item>
+<title><code>filename</code></title>
+  <p>the file to load.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link xref="Cogl.Bitmap"/> to the new loaded
+              image data, or <code>null</code> if loading the image failed.</p>
+</item>
+</terms>
+
+</page>

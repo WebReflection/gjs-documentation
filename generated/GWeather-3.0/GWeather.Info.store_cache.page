@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<page id="GWeather.Info.store_cache"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Info" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gweather_info_store_cache</api:name>
+    </api:function>
+  </info>
+  <title>GWeather.Info.store_cache</title>
+  <synopsis><code mime="text/x-gjs">
+function store_cache(): void {
+    // Gjs wrapper for gweather_info_store_cache()
+}
+  </code></synopsis>
+  <p>Ensures that any data cached from the network is stored to disk.
+Calling this is not necessary, as the cache will be saved when
+the last reference to a <link xref="GWeather.Info"/> will be dropped.
+On the other hand, it must be called if there is any chance that
+the application will be closed without unreffing all objects, such
+as when using a language binding that employs a GC.</p>
+
+
+</page>

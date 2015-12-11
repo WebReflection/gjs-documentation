@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Cogl.Color.set_blue_float"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Color" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_color_set_blue_float</api:name>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>blue</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Color.prototype.set_blue_float</title>
+  <synopsis><code mime="text/x-gjs">
+function set_blue_float(blue: Number(gfloat)): void {
+    // Gjs wrapper for cogl_color_set_blue_float()
+}
+  </code></synopsis>
+  <p>Sets the blue channel of <code>color</code> to <code>blue</code>.</p>
+  <p>Since 1.4</p>
+<terms>
+<item>
+<title><code>blue</code></title>
+  <p>a float value between 0.0f and 1.0f</p>
+</item>
+</terms>
+
+</page>

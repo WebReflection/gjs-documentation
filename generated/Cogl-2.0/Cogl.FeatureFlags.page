@@ -1,0 +1,134 @@
+<?xml version="1.0"?>
+<page id="Cogl.FeatureFlags"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>Cogl.FeatureFlags</title>
+  <p>Flags for the supported features.</p>
+  <p>Since 0.8</p>
+<terms>
+<item>
+<title><code>FeatureFlags.TEXTURE_RECTANGLE</code></title>
+  <p>ARB_texture_rectangle support</p>
+</item>
+<item>
+<title><code>FeatureFlags.TEXTURE_NPOT</code></title>
+  <p>Non power of two textures are supported
+   by the hardware. This is a equivalent to the
+   <link xref="Cogl.FeatureFlags"/>.texture_npot_basic, <link xref="Cogl.FeatureFlags"/>.texture_npot_mipmap
+   and <link xref="Cogl.FeatureFlags"/>.texture_npot_repeat features combined.</p>
+</item>
+<item>
+<title><code>FeatureFlags.TEXTURE_YUV</code></title>
+  <p>ycbcr conversion support</p>
+</item>
+<item>
+<title><code>FeatureFlags.TEXTURE_READ_PIXELS</code></title>
+  <p>glReadPixels() support</p>
+</item>
+<item>
+<title><code>FeatureFlags.SHADERS_GLSL</code></title>
+  <p>GLSL support</p>
+</item>
+<item>
+<title><code>FeatureFlags.OFFSCREEN</code></title>
+  <p>FBO support</p>
+</item>
+<item>
+<title><code>FeatureFlags.OFFSCREEN_MULTISAMPLE</code></title>
+  <p>Multisample support on FBOs</p>
+</item>
+<item>
+<title><code>FeatureFlags.OFFSCREEN_BLIT</code></title>
+  <p>Blit support on FBOs</p>
+</item>
+<item>
+<title><code>FeatureFlags.FOUR_CLIP_PLANES</code></title>
+  <p>At least 4 clip planes available</p>
+</item>
+<item>
+<title><code>FeatureFlags.STENCIL_BUFFER</code></title>
+  <p>Stencil buffer support</p>
+</item>
+<item>
+<title><code>FeatureFlags.VBOS</code></title>
+  <p>VBO support</p>
+</item>
+<item>
+<title><code>FeatureFlags.PBOS</code></title>
+  <p>PBO support</p>
+</item>
+<item>
+<title><code>FeatureFlags.UNSIGNED_INT_INDICES</code></title>
+  <p>Set if
+    <link xref="Cogl.IndicesType"/>.int is supported in
+    cogl_vertex_buffer_indices_new().</p>
+</item>
+<item>
+<title><code>FeatureFlags.DEPTH_RANGE</code></title>
+  <p>cogl_material_set_depth_range() support</p>
+</item>
+<item>
+<title><code>FeatureFlags.TEXTURE_NPOT_BASIC</code></title>
+  <p>The hardware supports non power
+    of two textures, but you also need to check the
+    <link xref="Cogl.FeatureFlags"/>.texture_npot_mipmap and <link xref="Cogl.FeatureFlags"/>.texture_npot_repeat
+    features to know if the hardware supports npot texture mipmaps
+    or repeat modes other than
+    <link xref="Cogl.PipelineWrapMode"/>.clamp_to_edge respectively.</p>
+</item>
+<item>
+<title><code>FeatureFlags.TEXTURE_NPOT_MIPMAP</code></title>
+  <p>Mipmapping is supported in
+    conjuntion with non power of two textures.</p>
+</item>
+<item>
+<title><code>FeatureFlags.TEXTURE_NPOT_REPEAT</code></title>
+  <p>Repeat modes other than
+    <link xref="Cogl.PipelineWrapMode"/>.clamp_to_edge are supported by the
+    hardware.</p>
+</item>
+<item>
+<title><code>FeatureFlags.POINT_SPRITE</code></title>
+  <p>Whether
+    cogl_material_set_layer_point_sprite_coords_enabled() is supported.</p>
+</item>
+<item>
+<title><code>FeatureFlags.TEXTURE_3D</code></title>
+  <p>3D texture support</p>
+</item>
+<item>
+<title><code>FeatureFlags.SHADERS_ARBFP</code></title>
+  <p>ARBFP support</p>
+</item>
+<item>
+<title><code>FeatureFlags.MAP_BUFFER_FOR_READ</code></title>
+  <p>Whether <link xref="Cogl.buffer_map"/> is
+    supported with CoglBufferAccess including read support.</p>
+</item>
+<item>
+<title><code>FeatureFlags.MAP_BUFFER_FOR_WRITE</code></title>
+  <p>Whether <link xref="Cogl.buffer_map"/> is
+    supported with CoglBufferAccess including write support.</p>
+</item>
+<item>
+<title><code>FeatureFlags.ONSCREEN_MULTIPLE</code></title>
+
+</item>
+<item>
+<title><code>FeatureFlags.DEPTH_TEXTURE</code></title>
+  <p>Whether <link xref="Cogl.Framebuffer"/> support rendering the
+    depth buffer to a texture.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

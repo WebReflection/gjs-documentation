@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="Gcr.Parser-parsed-attributes"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Parser" group="property" type="guide"/>
+    <title type="link" role="topic">parsed-attributes</title>
+  </info>
+  <title>Gcr.Parser.parsed_attributes</title>
+  <synopsis><code mime="text/x-gjs">
+Parser.parsed_attributes: <link href="../Gck-1/Gck.Attributes.html">Gck.Attributes</link> (Read)
+  </code></synopsis>
+  <p>Get the attributes that make up the currently parsed item. This is
+generally only valid during a <link xref="Gcr.Parser-parsed"/> signal.</p>
+
+</page>

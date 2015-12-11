@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<page id="GWeather.Provider"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>GWeather.Provider</title>
+
+
+<terms>
+<item>
+<title><code>Provider.NONE</code></title>
+  <p>no provider, no weather information available</p>
+</item>
+<item>
+<title><code>Provider.METAR</code></title>
+  <p>METAR office, providing current conditions worldwide</p>
+</item>
+<item>
+<title><code>Provider.IWIN</code></title>
+  <p>US weather office, providing 7 days of forecast</p>
+</item>
+<item>
+<title><code>Provider.YAHOO</code></title>
+  <p>Yahoo Weather Service, worldwide but non commercial only</p>
+</item>
+<item>
+<title><code>Provider.YR_NO</code></title>
+  <p>Yr.no service, worldwide but requires attribution</p>
+</item>
+<item>
+<title><code>Provider.OWM</code></title>
+  <p>OpenWeatherMap, worldwide and possibly more reliable, but requires attribution and is limited in the number of queries</p>
+</item>
+<item>
+<title><code>Provider.ALL</code></title>
+  <p>enable all available providers</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

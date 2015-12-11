@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Gcr.ImportInteraction-supplement"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.ImportInteraction" group="vfunc" type="guide"/>
+  </info>
+  <title>Gcr.ImportInteraction::supplement</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_supplement(builder: <link href="../Gck-1/Gck.Builder.html">Gck.Builder</link>, cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>): <link href="../Gio-2.0/Gio.TlsInteractionResult.html">Gio.TlsInteractionResult</link> {
+}
+  </code></synopsis>
+  <p>Supplement attributes before import. This means prompting the user for
+things like labels and the like. The needed attributes will have been passed
+to <link xref="Gcr.ImportInteraction.supplement_prep"/>.</p>  <p>This method prompts the user and fills in the attributes. If the user or
+cancellable cancels the operation the error should be set with %G_IO_ERROR_CANCELLED.</p>
+
+<terms>
+<item>
+<title><code>builder</code></title>
+  <p>supplemented attributes</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional cancellable object</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>%G_TLS_INTERACTION_HANDLED if successful or %G_TLS_INTERACTION_FAILED</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="GWeather.Timezone.get_name"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="GWeather.Timezone" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>gweather_timezone_get_name</api:name>
+    </api:function>
+  </info>
+  <title>GWeather.Timezone.prototype.get_name</title>
+  <synopsis><code mime="text/x-gjs">
+function get_name(): String {
+    // Gjs wrapper for gweather_timezone_get_name()
+}
+  </code></synopsis>
+  <p>Gets <code>zone</code>'s name; a translated, user-presentable string.</p>  <p>Note that the returned name might not be unique among timezones,
+and may not make sense to the user unless it is presented along
+with the timezone's country's name (or in some context where the
+country is obvious).</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>zone</code>'s name</p>
+</item>
+</terms>
+
+</page>

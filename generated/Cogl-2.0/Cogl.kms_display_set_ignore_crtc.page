@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<page id="Cogl.kms_display_set_ignore_crtc"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_kms_display_set_ignore_crtc</api:name>
+      <api:arg>
+        <api:type>Cogl.Display</api:type>
+        <api:name>display</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint32)</api:type>
+        <api:name>id</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.Bool</api:type>
+        <api:name>ignore</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.kms_display_set_ignore_crtc</title>
+  <synopsis><code mime="text/x-gjs">
+function kms_display_set_ignore_crtc(display: <link xref="Cogl.Display">Cogl.Display</link>, id: Number(guint32), ignore: <link xref="Cogl.Bool">Cogl.Bool</link>): void {
+    // Gjs wrapper for cogl_kms_display_set_ignore_crtc()
+}
+  </code></synopsis>
+  <p>Tells cogl to ignore (or stop ignoring) a ctrc which means
+it never flips buffers at this crtc.</p>
+
+<terms>
+<item>
+<title><code>display</code></title>
+
+</item>
+<item>
+<title><code>id</code></title>
+  <p>KMS output id</p>
+</item>
+<item>
+<title><code>ignore</code></title>
+  <p>Ignore ouput or not</p>
+</item>
+</terms>
+
+</page>

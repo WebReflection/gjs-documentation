@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.set_alpha_test_function"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_set_alpha_test_function</api:name>
+      <api:arg>
+        <api:type>Cogl.PipelineAlphaFunc</api:type>
+        <api:name>alpha_func</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>alpha_reference</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.set_alpha_test_function</title>
+  <synopsis><code mime="text/x-gjs">
+function set_alpha_test_function(alpha_func: <link xref="Cogl.PipelineAlphaFunc">Cogl.PipelineAlphaFunc</link>, alpha_reference: Number(gfloat)): void {
+    // Gjs wrapper for cogl_pipeline_set_alpha_test_function()
+}
+  </code></synopsis>
+  <p>Before a primitive is blended with the framebuffer, it goes through an
+alpha test stage which lets you discard fragments based on the current
+alpha value. This function lets you change the function used to evaluate
+the alpha channel, and thus determine which fragments are discarded
+and which continue on to the blending stage.</p>  <p>The default is <link xref="Cogl.PipelineAlphaFunc"/>.always</p>
+  <p>Since 2.0</p>
+<terms>
+<item>
+<title><code>alpha_func</code></title>
+  <p>A @CoglPipelineAlphaFunc constant</p>
+</item>
+<item>
+<title><code>alpha_reference</code></title>
+  <p>A reference point that the chosen alpha function uses
+  to compare incoming fragments to.</p>
+</item>
+</terms>
+
+</page>

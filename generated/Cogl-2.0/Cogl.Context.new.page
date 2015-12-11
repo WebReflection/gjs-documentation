@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="Cogl.Context.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Context" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Cogl.Context</api:type>
+      </api:returns>
+      <api:name>cogl_context_new</api:name>
+      <api:arg>
+        <api:type>Cogl.Display</api:type>
+        <api:name>display</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Context.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(display: <link xref="Cogl.Display">Cogl.Display</link>): <link xref="Cogl.Context">Cogl.Context</link> {
+    // Gjs wrapper for cogl_context_new()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="Cogl.Context"/> which acts as an application sandbox
+for any state objects that are allocated.</p>
+  <p>Since 1.8</p>
+<terms>
+<item>
+<title><code>display</code></title>
+  <p>A <link xref="Cogl.Display"/> pointer</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>A newly allocated <link xref="Cogl.Context"/></p>
+</item>
+</terms>
+
+</page>

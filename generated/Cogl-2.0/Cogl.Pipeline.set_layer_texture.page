@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="Cogl.Pipeline.set_layer_texture"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Pipeline" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_pipeline_set_layer_texture</api:name>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>layer_index</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Cogl.Texture</api:type>
+        <api:name>texture</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Pipeline.prototype.set_layer_texture</title>
+  <synopsis><code mime="text/x-gjs">
+function set_layer_texture(layer_index: Number(gint), texture: <link xref="Cogl.Texture">Cogl.Texture</link>): void {
+    // Gjs wrapper for cogl_pipeline_set_layer_texture()
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>layer_index</code></title>
+
+</item>
+<item>
+<title><code>texture</code></title>
+
+</item>
+</terms>
+
+</page>

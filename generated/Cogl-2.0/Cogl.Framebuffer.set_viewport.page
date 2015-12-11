@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<page id="Cogl.Framebuffer.set_viewport"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Framebuffer" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_framebuffer_set_viewport</api:name>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>x</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>y</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>width</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gfloat)</api:type>
+        <api:name>height</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.Framebuffer.prototype.set_viewport</title>
+  <synopsis><code mime="text/x-gjs">
+function set_viewport(x: Number(gfloat), y: Number(gfloat), width: Number(gfloat), height: Number(gfloat)): void {
+    // Gjs wrapper for cogl_framebuffer_set_viewport()
+}
+  </code></synopsis>
+  <p>Defines a scale and offset for everything rendered relative to the
+top-left of the destination framebuffer.</p>  <p>By default the viewport has an origin of (0,0) and width and height
+that match the framebuffer's size. Assuming a default projection and
+modelview matrix then you could translate the contents of a window
+down and right by leaving the viewport size unchanged by moving the
+offset to (10,10). The viewport coordinates are measured in pixels.
+If you left the x and y origin as (0,0) you could scale the windows
+contents down by specify and width and height that's half the real
+size of the framebuffer.</p>  <p>&lt;note&gt;Although the function takes floating point arguments, existing
+drivers only allow the use of integer values. In the future floating
+point values will be exposed via a checkable feature.&lt;/note&gt;</p>
+  <p>Since 1.8</p>
+<terms>
+<item>
+<title><code>x</code></title>
+  <p>The top-left x coordinate of the viewport origin (only integers
+    supported currently)</p>
+</item>
+<item>
+<title><code>y</code></title>
+  <p>The top-left y coordinate of the viewport origin (only integers
+    supported currently)</p>
+</item>
+<item>
+<title><code>width</code></title>
+  <p>The width of the viewport (only integers supported currently)</p>
+</item>
+<item>
+<title><code>height</code></title>
+  <p>The height of the viewport (only integers supported currently)</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="Cogl._QuaternionSizeCheck-compile_time_assert_CoglQuaternion_size"
+      type="topic"
+      style="field"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl._QuaternionSizeCheck" group="field" type="guide"/>
+    <title type="link" role="topic">compile_time_assert_CoglQuaternion_size</title>
+  </info>
+  <title>Cogl._QuaternionSizeCheck.compile_time_assert__Cogl_Quaternion_size</title>
+  <synopsis><code mime="text/x-gjs">
+_QuaternionSizeCheck.compile_time_assert__Cogl_Quaternion_size: Array(Number(gchar)) (Read / Write)
+  </code></synopsis>
+
+
+</page>

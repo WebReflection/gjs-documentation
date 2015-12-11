@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="Gcr.Parser.format_enable"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.Parser" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>gcr_parser_format_enable</api:name>
+      <api:arg>
+        <api:type>Gcr.DataFormat</api:type>
+        <api:name>format</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Gcr.Parser.prototype.format_enable</title>
+  <synopsis><code mime="text/x-gjs">
+function format_enable(format: <link xref="Gcr.DataFormat">Gcr.DataFormat</link>): void {
+    // Gjs wrapper for gcr_parser_format_enable()
+}
+  </code></synopsis>
+  <p>Enable parsing of the given format. Use <link xref="Gcr.DataFormat"/>.all to enable all the formats.</p>
+
+<terms>
+<item>
+<title><code>format</code></title>
+  <p>The format identifier</p>
+</item>
+</terms>
+
+</page>

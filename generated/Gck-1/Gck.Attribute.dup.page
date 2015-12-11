@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="Gck.Attribute.dup"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gck.Attribute" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gck.Attribute</api:type>
+      </api:returns>
+      <api:name>gck_attribute_dup</api:name>
+    </api:function>
+  </info>
+  <title>Gck.Attribute.prototype.dup</title>
+  <synopsis><code mime="text/x-gjs">
+function dup(): <link xref="Gck.Attribute">Gck.Attribute</link> {
+    // Gjs wrapper for gck_attribute_dup()
+}
+  </code></synopsis>
+  <p>Duplicate the PKCS\#11 attribute. All value memory is
+also copied.</p>  <p>The <code>attr</code> must have been allocated or initialized by a Gck function or
+the results of this function are undefined.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the duplicated attribute; use <link xref="Gck.Attribute.free"/>
+         to free it</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="Cogl.Texture.get_max_waste"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Cogl.Texture" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gint)</api:type>
+      </api:returns>
+      <api:name>cogl_texture_get_max_waste</api:name>
+    </api:function>
+  </info>
+  <title>Cogl.Texture.prototype.get_max_waste</title>
+  <synopsis><code mime="text/x-gjs">
+function get_max_waste(): Number(gint) {
+    // Gjs wrapper for cogl_texture_get_max_waste()
+}
+  </code></synopsis>
+  <p>Queries the maximum wasted (unused) pixels in one dimension of a GPU side
+texture.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the maximum waste</p>
+</item>
+</terms>
+
+</page>

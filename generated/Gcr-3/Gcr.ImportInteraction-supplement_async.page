@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="Gcr.ImportInteraction-supplement_async"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="Gcr.ImportInteraction" group="vfunc" type="guide"/>
+  </info>
+  <title>Gcr.ImportInteraction::supplement_async</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_supplement_async(builder: <link href="../Gck-1/Gck.Builder.html">Gck.Builder</link>, cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>, callback: <link href="../Gio-2.0/Gio.AsyncReadyCallback.html">Gio.AsyncReadyCallback</link>): void {
+}
+  </code></synopsis>
+  <p>Asynchronously supplement attributes before import. This means prompting the
+user for things like labels and the like. The needed attributes will have
+been passed to <link xref="Gcr.ImportInteraction.supplement_prep"/>.</p>  <p>This method prompts the user and fills in the attributes.</p>
+
+<terms>
+<item>
+<title><code>builder</code></title>
+  <p>supplemented attributes</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>optional cancellable object</p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>called when the operation completes</p>
+</item>
+</terms>
+
+</page>

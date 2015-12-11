@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<page id="Cogl.wayland_onscreen_set_foreign_surface"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>cogl_wayland_onscreen_set_foreign_surface</api:name>
+      <api:arg>
+        <api:type>Cogl.Onscreen</api:type>
+        <api:name>onscreen</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>void</api:type>
+        <api:name>surface</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>Cogl.wayland_onscreen_set_foreign_surface</title>
+  <synopsis><code mime="text/x-gjs">
+function wayland_onscreen_set_foreign_surface(onscreen: <link xref="Cogl.Onscreen">Cogl.Onscreen</link>, surface: void): void {
+    // Gjs wrapper for cogl_wayland_onscreen_set_foreign_surface()
+}
+  </code></synopsis>
+  <p>Allows you to explicitly notify Cogl of an existing Wayland surface to use,
+which prevents Cogl from allocating a surface and shell surface for the
+<code>onscreen</code>. An allocated surface will not be destroyed when the <code>onscreen</code> is
+freed.</p>  <p>This function must be called before <code>onscreen</code> is allocated.</p>
+  <p>Since 1.16</p>
+<terms>
+<item>
+<title><code>onscreen</code></title>
+  <p>An unallocated framebuffer.
+<code>surface</code> A Wayland surface to associate with the <code>onscreen</code>.</p>
+</item>
+<item>
+<title><code>surface</code></title>
+
+</item>
+</terms>
+
+</page>
