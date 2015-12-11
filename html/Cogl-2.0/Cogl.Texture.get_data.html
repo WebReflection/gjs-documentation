@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.Texture.prototype.get_data</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » <a class="trail" href="Cogl.Texture.html" title="Cogl.Texture">Cogl.Texture</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.Texture.prototype.get_data</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function get_data(format: <span class="link"><a href="Cogl.PixelFormat.html" title="Cogl.PixelFormat">Cogl.PixelFormat</a></span>, rowstride: Number(guint), data: Number(guint8)): Number(gint) {
+    // Gjs wrapper for cogl_texture_get_data()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Copies the pixel data from a cogl texture to system memory.</p>
+<p class="p">&lt;note&gt;Don't pass the value of cogl_texture_get_rowstride() as the
+<span class="code">rowstride</span> argument, the rowstride should be the rowstride you
+want for the destination <span class="code">data</span> buffer not the rowstride of the
+source texture&lt;/note&gt;</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">format</span></dt>
+<dd class="terms"><p class="p">the <span class="link"><a href="Cogl.PixelFormat.html" title="Cogl.PixelFormat">Cogl.PixelFormat</a></span> to store the texture as.</p></dd>
+<dt class="terms"><span class="code">rowstride</span></dt>
+<dd class="terms"><p class="p">the rowstride of <span class="code">data</span> in bytes or pass 0 to calculate
+            from the bytes-per-pixel of <span class="code">format</span> multiplied by the
+            <span class="code">texture</span> width.</p></dd>
+<dt class="terms"><span class="code">data</span></dt>
+<dd class="terms"><p class="p">memory location to write the <span class="code">texture</span>'s contents, or <span class="code">null</span>
+to only query the data size through the return value.</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">the size of the texture data in bytes</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.Texture.html" title="Cogl.Texture">Cogl.Texture</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

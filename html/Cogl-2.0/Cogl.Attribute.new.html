@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.Attribute.new</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » <a class="trail" href="Cogl.Attribute.html" title="Cogl.Attribute">Cogl.Attribute</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.Attribute.new</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function new(attribute_buffer: <span class="link"><a href="Cogl.AttributeBuffer.html" title="Cogl.AttributeBuffer">Cogl.AttributeBuffer</a></span>, name: String, stride: Number(gsize), offset: Number(gsize), components: Number(gint), type: <span class="link"><a href="Cogl.AttributeType.html" title="Cogl.AttributeType">Cogl.AttributeType</a></span>): <span class="link"><a href="Cogl.Attribute.html" title="Cogl.Attribute">Cogl.Attribute</a></span> {
+    // Gjs wrapper for cogl_attribute_new()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Describes the layout for a list of vertex attribute values (For
+example, a list of texture coordinates or colors).</p>
+<p class="p">The <span class="code">name</span> is used to access the attribute inside a GLSL vertex
+shader and there are some special names you should use if they are
+applicable:
+ &lt;itemizedlist&gt;
+   &lt;listitem&gt;"cogl_position_in" (used for vertex positions)&lt;/listitem&gt;
+   &lt;listitem&gt;"cogl_color_in" (used for vertex colors)&lt;/listitem&gt;
+   &lt;listitem&gt;"cogl_tex_coord0_in", "cogl_tex_coord1", ...
+(used for vertex texture coordinates)&lt;/listitem&gt;
+   &lt;listitem&gt;"cogl_normal_in" (used for vertex normals)&lt;/listitem&gt;
+   &lt;listitem&gt;"cogl_point_size_in" (used to set the size of points
+   per-vertex. Note this can only be used if
+   %COGL_FEATURE_ID_POINT_SIZE_ATTRIBUTE is advertised and
+   <span class="link"><a href="Cogl.Pipeline.set_per_vertex_point_size.html" title="Cogl.Pipeline.prototype.set_per_vertex_point_size">Cogl.Pipeline.prototype.set_per_vertex_point_size</a></span> is called on the pipeline.
+   &lt;/listitem&gt;
+ &lt;/itemizedlist&gt;</p>
+<p class="p">The attribute values corresponding to different vertices can either
+be tightly packed or interleaved with other attribute values. For
+example it's common to define a structure for a single vertex like:
+|[
+typedef struct
+{
+  float x, y, z; /&lt;!-- --&gt;* position attribute *&lt;!-- --&gt;/
+  float s, t; /&lt;!-- --&gt;* texture coordinate attribute *&lt;!-- --&gt;/
+} MyVertex;
+]|</p>
+<p class="p">And then create an array of vertex data something like:
+|[
+MyVertex vertices[100] = { .... }
+]|</p>
+<p class="p">In this case, to describe either the position or texture coordinate
+attribute you have to move &lt;literal&gt;sizeof (MyVertex)&lt;/literal&gt; bytes to
+move from one vertex to the next.  This is called the attribute
+<span class="code">stride</span>. If you weren't interleving attributes and you instead had
+a packed array of float x, y pairs then the attribute stride would
+be &lt;literal&gt;(2 * sizeof (float))&lt;/literal&gt;. So the <span class="code">stride</span> is the number of
+bytes to move to find the attribute value of the next vertex.</p>
+<p class="p">Normally a list of attributes starts at the beginning of an array.
+So for the &lt;literal&gt;MyVertex&lt;/literal&gt; example above the <span class="code">offset</span> is the
+offset inside the &lt;literal&gt;MyVertex&lt;/literal&gt; structure to the first
+component of the attribute. For the texture coordinate attribute
+the offset would be &lt;literal&gt;offsetof (MyVertex, s)&lt;/literal&gt; or instead of
+using the offsetof macro you could use &lt;literal&gt;sizeof (float) *
+3&lt;/literal&gt;.  If you've divided your @array into blocks of non-interleved
+attributes then you will need to calculate the <span class="code">offset</span> as the number of
+bytes in blocks preceding the attribute you're describing.</p>
+<p class="p">An attribute often has more than one component. For example a color
+is often comprised of 4 red, green, blue and alpha <span class="code">components</span>, and a
+position may be comprised of 2 x and y <span class="code">components</span>. You should aim
+to keep the number of components to a minimum as more components
+means more data needs to be mapped into the GPU which can be a
+bottlneck when dealing with a large number of vertices.</p>
+<p class="p">Finally you need to specify the component data type. Here you
+should aim to use the smallest type that meets your precision
+requirements. Again the larger the type then more data needs to be
+mapped into the GPU which can be a bottlneck when dealing with
+a large number of vertices.</p>
+<p class="p">Since 1.4</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">attribute_buffer</span></dt>
+<dd class="terms"><p class="p">The <span class="link"><a href="Cogl.AttributeBuffer.html" title="Cogl.AttributeBuffer">Cogl.AttributeBuffer</a></span> containing the actual
+                   attribute data</p></dd>
+<dt class="terms"><span class="code">name</span></dt>
+<dd class="terms"><p class="p">The name of the attribute (used to reference it from GLSL)</p></dd>
+<dt class="terms"><span class="code">stride</span></dt>
+<dd class="terms"><p class="p">The number of bytes to jump to get to the next attribute
+         value for the next vertex. (Usually
+         &lt;literal&gt;sizeof (MyVertex)&lt;/literal&gt;)</p></dd>
+<dt class="terms"><span class="code">offset</span></dt>
+<dd class="terms"><p class="p">The byte offset from the start of <span class="code">attribute_buffer</span> for
+         the first attribute value. (Usually
+         &lt;literal&gt;offsetof (MyVertex, component0)&lt;/literal&gt;</p></dd>
+<dt class="terms"><span class="code">components</span></dt>
+<dd class="terms"><p class="p">The number of components (e.g. 4 for an rgba color or
+             3 for and (x,y,z) position)</p></dd>
+<dt class="terms"><span class="code">type</span></dt>
+<dd class="terms"><p class="p">FIXME</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">A newly allocated <span class="link"><a href="Cogl.Attribute.html" title="Cogl.Attribute">Cogl.Attribute</a></span>
+         describing the layout for a list of attribute values
+         stored in @array.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.Attribute.html" title="Cogl.Attribute">Cogl.Attribute</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

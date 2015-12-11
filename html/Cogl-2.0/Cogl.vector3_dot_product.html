@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.vector3_dot_product</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.vector3_dot_product</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function vector3_dot_product(a: Number(gfloat), b: Number(gfloat)): Number(gfloat) {
+    // Gjs wrapper for cogl_vector3_dot_product()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Calculates the dot product of the two 3 component vectors. This
+can be used to determine the magnitude of one vector projected onto
+another. (for example a surface normal)</p>
+<p class="p">For example if you have a polygon with a given normal vector and
+some other point for which you want to calculate its distance from
+the polygon, you can create a vector between one of the polygon
+vertices and that point and use the dot product to calculate the
+magnitude for that vector but projected onto the normal of the
+polygon. This way you don't just get the distance from the point to
+the edge of the polygon you get the distance from the point to the
+nearest part of the polygon.</p>
+<p class="p">&lt;note&gt;If you don't use a unit length normal in the above example
+then you would then also have to divide the result by the magnitude
+of the normal&lt;/note&gt;</p>
+<p class="p">The dot product is calculated as:
+|[
+ (a-&gt;x * b-&gt;x + a-&gt;y * b-&gt;y + a-&gt;z * b-&gt;z)
+]|</p>
+<p class="p">For reference, the dot product can also be calculated from the
+angle between two vectors as:
+|[
+ |a||b|cos𝜃
+]|</p>
+<p class="p">Since 1.4</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">a</span></dt>
+<dd class="terms"><p class="p">Your first 3 component vector</p></dd>
+<dt class="terms"><span class="code">b</span></dt>
+<dd class="terms"><p class="p">Your second 3 component vector</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">The dot product of two vectors.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Cogl">Cogl</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

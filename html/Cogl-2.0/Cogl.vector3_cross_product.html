@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.vector3_cross_product</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.vector3_cross_product</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function vector3_cross_product(result: Number(gfloat), u: Number(gfloat), v: Number(gfloat)): void {
+    // Gjs wrapper for cogl_vector3_cross_product()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Calculates the cross product between the two vectors <span class="code">u</span> and <span class="code">v</span>.</p>
+<p class="p">The cross product is a vector perpendicular to both <span class="code">u</span> and <span class="code">v</span>. This
+can be useful for calculating the normal of a polygon by creating
+two vectors in its plane using the polygons vertices and taking
+their cross product.</p>
+<p class="p">If the two vectors are parallel then the cross product is 0.</p>
+<p class="p">You can use a right hand rule to determine which direction the
+perpendicular vector will point: If you place the two vectors tail,
+to tail and imagine grabbing the perpendicular line that extends
+through the common tail with your right hand such that you fingers
+rotate in the direction from <span class="code">u</span> to <span class="code">v</span> then the resulting vector
+points along your extended thumb.</p>
+<p class="p">Since 1.4</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">result</span></dt>
+<dd class="terms"><p class="p">Where you want the result written</p></dd>
+<dt class="terms"><span class="code">u</span></dt>
+<dd class="terms"><p class="p">Your first 3 component vector</p></dd>
+<dt class="terms"><span class="code">v</span></dt>
+<dd class="terms"><p class="p">Your second 3 component vector</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Cogl">Cogl</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

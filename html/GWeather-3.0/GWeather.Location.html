@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GWeather.Location</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GWeather">GWeather</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GWeather.Location</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const GWeather = imports.gi.GWeather;
+
+let location = new GWeather.Location(name: String, icao: String, latitude: Number(gdouble), longitude: Number(gdouble));
+  </pre></div></div></div></div></div>
+<p class="p">A <span class="link"><a href="GWeather.Location.html" title="GWeather.Location">GWeather.Location</a></span> represents a "location" of some type known to
+libgweather; anything from a single weather station to the entire
+world. See <span class="link"><a href="GWeather.LocationLevel.html" title="GWeather.LocationLevel">GWeather.LocationLevel</a></span> for information about how the
+hierarchy of locations works.</p>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="GWeather.Location.new_detached.html" title="GWeather.Location.new_detached">GWeather.Location.new_detached</a></li>
+<li class="links "><a href="GWeather.Location.new_world.html" title="GWeather.Location.new_world">GWeather.Location.new_world</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="GWeather.Location.deserialize.html" title="GWeather.Location.prototype.deserialize">GWeather.Location.prototype.deserialize</a></li>
+<li class="links "><a href="GWeather.Location.detect_nearest_city.html" title="GWeather.Location.prototype.detect_nearest_city">GWeather.Location.prototype.detect_nearest_city</a></li>
+<li class="links "><a href="GWeather.Location.equal.html" title="GWeather.Location.prototype.equal">GWeather.Location.prototype.equal</a></li>
+<li class="links "><a href="GWeather.Location.find_by_station_code.html" title="GWeather.Location.prototype.find_by_station_code">GWeather.Location.prototype.find_by_station_code</a></li>
+<li class="links "><a href="GWeather.Location.find_nearest_city.html" title="GWeather.Location.prototype.find_nearest_city">GWeather.Location.prototype.find_nearest_city</a></li>
+<li class="links "><a href="GWeather.Location.find_nearest_city_full.html" title="GWeather.Location.prototype.find_nearest_city_full">GWeather.Location.prototype.find_nearest_city_full</a></li>
+<li class="links "><a href="GWeather.Location.free_timezones.html" title="GWeather.Location.prototype.free_timezones">GWeather.Location.prototype.free_timezones</a></li>
+<li class="links "><a href="GWeather.Location.get_children.html" title="GWeather.Location.prototype.get_children">GWeather.Location.prototype.get_children</a></li>
+<li class="links "><a href="GWeather.Location.get_city_name.html" title="GWeather.Location.prototype.get_city_name">GWeather.Location.prototype.get_city_name</a></li>
+<li class="links "><a href="GWeather.Location.get_code.html" title="GWeather.Location.prototype.get_code">GWeather.Location.prototype.get_code</a></li>
+<li class="links "><a href="GWeather.Location.get_coords.html" title="GWeather.Location.prototype.get_coords">GWeather.Location.prototype.get_coords</a></li>
+<li class="links "><a href="GWeather.Location.get_country.html" title="GWeather.Location.prototype.get_country">GWeather.Location.prototype.get_country</a></li>
+<li class="links "><a href="GWeather.Location.get_country_name.html" title="GWeather.Location.prototype.get_country_name">GWeather.Location.prototype.get_country_name</a></li>
+<li class="links "><a href="GWeather.Location.get_distance.html" title="GWeather.Location.prototype.get_distance">GWeather.Location.prototype.get_distance</a></li>
+<li class="links "><a href="GWeather.Location.get_level.html" title="GWeather.Location.prototype.get_level">GWeather.Location.prototype.get_level</a></li>
+<li class="links "><a href="GWeather.Location.get_name.html" title="GWeather.Location.prototype.get_name">GWeather.Location.prototype.get_name</a></li>
+<li class="links "><a href="GWeather.Location.get_parent.html" title="GWeather.Location.prototype.get_parent">GWeather.Location.prototype.get_parent</a></li>
+<li class="links "><a href="GWeather.Location.get_sort_name.html" title="GWeather.Location.prototype.get_sort_name">GWeather.Location.prototype.get_sort_name</a></li>
+<li class="links "><a href="GWeather.Location.get_timezone.html" title="GWeather.Location.prototype.get_timezone">GWeather.Location.prototype.get_timezone</a></li>
+<li class="links "><a href="GWeather.Location.get_timezones.html" title="GWeather.Location.prototype.get_timezones">GWeather.Location.prototype.get_timezones</a></li>
+<li class="links "><a href="GWeather.Location.has_coords.html" title="GWeather.Location.prototype.has_coords">GWeather.Location.prototype.has_coords</a></li>
+<li class="links "><a href="GWeather.Location.ref.html" title="GWeather.Location.prototype.ref">GWeather.Location.prototype.ref</a></li>
+<li class="links "><a href="GWeather.Location.serialize.html" title="GWeather.Location.prototype.serialize">GWeather.Location.prototype.serialize</a></li>
+<li class="links "><a href="GWeather.Location.unref.html" title="GWeather.Location.prototype.unref">GWeather.Location.prototype.unref</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Static Functions</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="GWeather.Location.detect_nearest_city_finish.html" title="GWeather.Location.detect_nearest_city_finish">GWeather.Location.detect_nearest_city_finish</a></li>
+<li class="links "><a href="GWeather.Location.get_world.html" title="GWeather.Location.get_world">GWeather.Location.get_world</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="GWeather">GWeather</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.Texture2DSliced.new_from_file</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » <a class="trail" href="Cogl.Texture2DSliced.html" title="Cogl.Texture2DSliced">Cogl.Texture2DSliced</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.Texture2DSliced.new_from_file</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function new_from_file(ctx: <span class="link"><a href="Cogl.Context.html" title="Cogl.Context">Cogl.Context</a></span>, filename: String, max_waste: Number(gint)): <span class="link"><a href="Cogl.Texture2DSliced.html" title="Cogl.Texture2DSliced">Cogl.Texture2DSliced</a></span> {
+    // Gjs wrapper for cogl_texture_2d_sliced_new_from_file()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Creates a <span class="link"><a href="Cogl.Texture2DSliced.html" title="Cogl.Texture2DSliced">Cogl.Texture2DSliced</a></span> from an image file.</p>
+<p class="p">A <span class="link"><a href="Cogl.Texture2DSliced.html" title="Cogl.Texture2DSliced">Cogl.Texture2DSliced</a></span> may internally be comprised of 1 or more
+<span class="link"><a href="Cogl.Texture2D.html" title="Cogl.Texture2D">Cogl.Texture2D</a></span> textures depending on GPU limitations.  For example
+if the GPU only supports power-of-two sized textures then a sliced
+texture will turn a non-power-of-two size into a combination of
+smaller power-of-two sized textures. If the requested texture size
+is larger than is supported by the hardware then the texture will
+be sliced into smaller textures that can be accessed by the
+hardware.</p>
+<p class="p"><span class="code">max_waste</span> is used as a threshold for recursively slicing the
+right-most or bottom-most slices into smaller sizes until the
+wasted padding at the bottom and right of the textures is less than
+specified. A negative <span class="code">max_waste</span> will disable slicing.</p>
+<p class="p">The storage for the texture is not allocated before this function
+returns. You can call <span class="link"><a href="Cogl.Texture.allocate.html" title="Cogl.Texture.prototype.allocate">Cogl.Texture.prototype.allocate</a></span> to explicitly
+allocate the underlying storage or let Cogl automatically allocate
+storage lazily.</p>
+<p class="p">&lt;note&gt;It's possible for the allocation of a sliced texture to fail
+later due to impossible slicing constraints if a negative
+<span class="code">max_waste</span> value is given. If the given virtual texture size is
+larger than is supported by the hardware but slicing is disabled
+the texture size would be too large to handle.&lt;/note&gt;</p>
+<p class="p">Since 1.16</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">ctx</span></dt>
+<dd class="terms"><p class="p">A <span class="link"><a href="Cogl.Context.html" title="Cogl.Context">Cogl.Context</a></span></p></dd>
+<dt class="terms"><span class="code">filename</span></dt>
+<dd class="terms"><p class="p">the file to load</p></dd>
+<dt class="terms"><span class="code">max_waste</span></dt>
+<dd class="terms"><p class="p">The threshold of how wide a strip of wasted texels
+            are allowed along the right and bottom textures before
+            they must be sliced to reduce the amount of waste. A
+            negative can be passed to disable slicing.</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">A newly created <span class="link"><a href="Cogl.Texture2DSliced.html" title="Cogl.Texture2DSliced">Cogl.Texture2DSliced</a></span>
+              or <span class="code">null</span> on failure and @error will be updated.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.Texture2DSliced.html" title="Cogl.Texture2DSliced">Cogl.Texture2DSliced</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

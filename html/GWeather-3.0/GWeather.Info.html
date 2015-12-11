@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GWeather.Info</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GWeather">GWeather</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GWeather.Info</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const GWeather = imports.gi.GWeather;
+
+let info = new GWeather.Info({
+    <span class="link"><a href="GWeather.Info-location.html" title="GWeather.Info.location">location</a></span>: value,
+});
+  </pre></div></div></div></div></div>
+<p class="p"><span class="link"><a href="GWeather.Info.html" title="GWeather.Info">GWeather.Info</a></span> provides a handy way to access weather conditions
+and forecasts from a <span class="link"><a href="GWeather.Location.html" title="GWeather.Location">GWeather.Location</a></span>, aggregating multiple
+different web services.</p>
+<p class="p">It includes also astronomical data such as sunrise times and
+moon phases.</p>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
+<div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
+<div>
+        <span class="code">GObject.Object</span>
+      
+      </div>
+<ul class="tree"><li class="tree"><div>
+        <span class="code">GWeather.Info</span>
+      </div></li></ul>
+</li></ul></div></div></div></div></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
+<div class="region"><ul><li class="links "><a href="GWeather.Info.new.html" title="GWeather.Info.new">GWeather.Info.new</a></li></ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="GWeather.Info.abort.html" title="GWeather.Info.prototype.abort">GWeather.Info.prototype.abort</a></li>
+<li class="links "><a href="GWeather.Info.get_apparent.html" title="GWeather.Info.prototype.get_apparent">GWeather.Info.prototype.get_apparent</a></li>
+<li class="links "><a href="GWeather.Info.get_attribution.html" title="GWeather.Info.prototype.get_attribution">GWeather.Info.prototype.get_attribution</a></li>
+<li class="links "><a href="GWeather.Info.get_conditions.html" title="GWeather.Info.prototype.get_conditions">GWeather.Info.prototype.get_conditions</a></li>
+<li class="links "><a href="GWeather.Info.get_dew.html" title="GWeather.Info.prototype.get_dew">GWeather.Info.prototype.get_dew</a></li>
+<li class="links "><a href="GWeather.Info.get_enabled_providers.html" title="GWeather.Info.prototype.get_enabled_providers">GWeather.Info.prototype.get_enabled_providers</a></li>
+<li class="links "><a href="GWeather.Info.get_forecast.html" title="GWeather.Info.prototype.get_forecast">GWeather.Info.prototype.get_forecast</a></li>
+<li class="links "><a href="GWeather.Info.get_forecast_list.html" title="GWeather.Info.prototype.get_forecast_list">GWeather.Info.prototype.get_forecast_list</a></li>
+<li class="links "><a href="GWeather.Info.get_humidity.html" title="GWeather.Info.prototype.get_humidity">GWeather.Info.prototype.get_humidity</a></li>
+<li class="links "><a href="GWeather.Info.get_icon_name.html" title="GWeather.Info.prototype.get_icon_name">GWeather.Info.prototype.get_icon_name</a></li>
+<li class="links "><a href="GWeather.Info.get_location.html" title="GWeather.Info.prototype.get_location">GWeather.Info.prototype.get_location</a></li>
+<li class="links "><a href="GWeather.Info.get_location_name.html" title="GWeather.Info.prototype.get_location_name">GWeather.Info.prototype.get_location_name</a></li>
+<li class="links "><a href="GWeather.Info.get_pressure.html" title="GWeather.Info.prototype.get_pressure">GWeather.Info.prototype.get_pressure</a></li>
+<li class="links "><a href="GWeather.Info.get_radar.html" title="GWeather.Info.prototype.get_radar">GWeather.Info.prototype.get_radar</a></li>
+<li class="links "><a href="GWeather.Info.get_sky.html" title="GWeather.Info.prototype.get_sky">GWeather.Info.prototype.get_sky</a></li>
+<li class="links "><a href="GWeather.Info.get_sunrise.html" title="GWeather.Info.prototype.get_sunrise">GWeather.Info.prototype.get_sunrise</a></li>
+<li class="links "><a href="GWeather.Info.get_sunset.html" title="GWeather.Info.prototype.get_sunset">GWeather.Info.prototype.get_sunset</a></li>
+<li class="links "><a href="GWeather.Info.get_symbolic_icon_name.html" title="GWeather.Info.prototype.get_symbolic_icon_name">GWeather.Info.prototype.get_symbolic_icon_name</a></li>
+<li class="links "><a href="GWeather.Info.get_temp.html" title="GWeather.Info.prototype.get_temp">GWeather.Info.prototype.get_temp</a></li>
+<li class="links "><a href="GWeather.Info.get_temp_max.html" title="GWeather.Info.prototype.get_temp_max">GWeather.Info.prototype.get_temp_max</a></li>
+<li class="links "><a href="GWeather.Info.get_temp_min.html" title="GWeather.Info.prototype.get_temp_min">GWeather.Info.prototype.get_temp_min</a></li>
+<li class="links "><a href="GWeather.Info.get_temp_summary.html" title="GWeather.Info.prototype.get_temp_summary">GWeather.Info.prototype.get_temp_summary</a></li>
+<li class="links "><a href="GWeather.Info.get_upcoming_moonphases.html" title="GWeather.Info.prototype.get_upcoming_moonphases">GWeather.Info.prototype.get_upcoming_moonphases</a></li>
+<li class="links "><a href="GWeather.Info.get_update.html" title="GWeather.Info.prototype.get_update">GWeather.Info.prototype.get_update</a></li>
+<li class="links "><a href="GWeather.Info.get_value_apparent.html" title="GWeather.Info.prototype.get_value_apparent">GWeather.Info.prototype.get_value_apparent</a></li>
+<li class="links "><a href="GWeather.Info.get_value_conditions.html" title="GWeather.Info.prototype.get_value_conditions">GWeather.Info.prototype.get_value_conditions</a></li>
+<li class="links "><a href="GWeather.Info.get_value_dew.html" title="GWeather.Info.prototype.get_value_dew">GWeather.Info.prototype.get_value_dew</a></li>
+<li class="links "><a href="GWeather.Info.get_value_moonphase.html" title="GWeather.Info.prototype.get_value_moonphase">GWeather.Info.prototype.get_value_moonphase</a></li>
+<li class="links "><a href="GWeather.Info.get_value_pressure.html" title="GWeather.Info.prototype.get_value_pressure">GWeather.Info.prototype.get_value_pressure</a></li>
+<li class="links "><a href="GWeather.Info.get_value_sky.html" title="GWeather.Info.prototype.get_value_sky">GWeather.Info.prototype.get_value_sky</a></li>
+<li class="links "><a href="GWeather.Info.get_value_sunrise.html" title="GWeather.Info.prototype.get_value_sunrise">GWeather.Info.prototype.get_value_sunrise</a></li>
+<li class="links "><a href="GWeather.Info.get_value_sunset.html" title="GWeather.Info.prototype.get_value_sunset">GWeather.Info.prototype.get_value_sunset</a></li>
+<li class="links "><a href="GWeather.Info.get_value_temp.html" title="GWeather.Info.prototype.get_value_temp">GWeather.Info.prototype.get_value_temp</a></li>
+<li class="links "><a href="GWeather.Info.get_value_temp_max.html" title="GWeather.Info.prototype.get_value_temp_max">GWeather.Info.prototype.get_value_temp_max</a></li>
+<li class="links "><a href="GWeather.Info.get_value_temp_min.html" title="GWeather.Info.prototype.get_value_temp_min">GWeather.Info.prototype.get_value_temp_min</a></li>
+<li class="links "><a href="GWeather.Info.get_value_update.html" title="GWeather.Info.prototype.get_value_update">GWeather.Info.prototype.get_value_update</a></li>
+<li class="links "><a href="GWeather.Info.get_value_visibility.html" title="GWeather.Info.prototype.get_value_visibility">GWeather.Info.prototype.get_value_visibility</a></li>
+<li class="links "><a href="GWeather.Info.get_value_wind.html" title="GWeather.Info.prototype.get_value_wind">GWeather.Info.prototype.get_value_wind</a></li>
+<li class="links "><a href="GWeather.Info.get_visibility.html" title="GWeather.Info.prototype.get_visibility">GWeather.Info.prototype.get_visibility</a></li>
+<li class="links "><a href="GWeather.Info.get_weather_summary.html" title="GWeather.Info.prototype.get_weather_summary">GWeather.Info.prototype.get_weather_summary</a></li>
+<li class="links "><a href="GWeather.Info.get_wind.html" title="GWeather.Info.prototype.get_wind">GWeather.Info.prototype.get_wind</a></li>
+<li class="links "><a href="GWeather.Info.is_daytime.html" title="GWeather.Info.prototype.is_daytime">GWeather.Info.prototype.is_daytime</a></li>
+<li class="links "><a href="GWeather.Info.is_valid.html" title="GWeather.Info.prototype.is_valid">GWeather.Info.prototype.is_valid</a></li>
+<li class="links "><a href="GWeather.Info.network_error.html" title="GWeather.Info.prototype.network_error">GWeather.Info.prototype.network_error</a></li>
+<li class="links "><a href="GWeather.Info.next_sun_event.html" title="GWeather.Info.prototype.next_sun_event">GWeather.Info.prototype.next_sun_event</a></li>
+<li class="links "><a href="GWeather.Info.set_enabled_providers.html" title="GWeather.Info.prototype.set_enabled_providers">GWeather.Info.prototype.set_enabled_providers</a></li>
+<li class="links "><a href="GWeather.Info.set_location.html" title="GWeather.Info.prototype.set_location">GWeather.Info.prototype.set_location</a></li>
+<li class="links "><a href="GWeather.Info.update.html" title="GWeather.Info.prototype.update">GWeather.Info.prototype.update</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Static Functions</span></h2></div>
+<div class="region"><ul><li class="links "><a href="GWeather.Info.store_cache.html" title="GWeather.Info.store_cache">GWeather.Info.store_cache</a></li></ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Properties</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="GWeather.Info-enabled-providers.html" title="GWeather.Info.enabled_providers">enabled-providers</a></li>
+<li class="links "><a href="GWeather.Info-location.html" title="GWeather.Info.location">location</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Signals</span></h2></div>
+<div class="region"><ul><li class="links "><a href="GWeather.Info-updated.html" title="GWeather.Info::updated">updated</a></li></ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="GWeather">GWeather</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

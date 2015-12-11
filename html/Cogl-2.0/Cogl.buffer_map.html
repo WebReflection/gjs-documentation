@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.buffer_map</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.buffer_map</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function buffer_map(buffer: <span class="link"><a href="Cogl.Buffer.html" title="Cogl.Buffer">Cogl.Buffer</a></span>, access: <span class="link"><a href="Cogl.BufferAccess.html" title="Cogl.BufferAccess">Cogl.BufferAccess</a></span>, hints: <span class="link"><a href="Cogl.BufferMapHint.html" title="Cogl.BufferMapHint">Cogl.BufferMapHint</a></span>): void {
+    // Gjs wrapper for cogl_buffer_map()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Maps the buffer into the application address space for direct
+access. This is equivalent to calling <span class="link"><a href="Cogl.buffer_map_range.html" title="Cogl.buffer_map_range">Cogl.buffer_map_range</a></span> with
+zero as the offset and the size of the entire buffer as the size.</p>
+<p class="p">It is strongly recommended that you pass
+<span class="link"><a href="Cogl.BufferMapHint.html" title="Cogl.BufferMapHint">Cogl.BufferMapHint</a></span>. as a hint if you are going to replace
+all the buffer's data. This way if the buffer is currently being
+used by the GPU then the driver won't have to stall the CPU and
+wait for the hardware to finish because it can instead allocate a
+new buffer to map.</p>
+<p class="p">The behaviour is undefined if you access the buffer in a way
+conflicting with the <span class="code">access</span> mask you pass. It is also an error to
+release your last reference while the buffer is mapped.</p>
+<p class="p">Since 1.2</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">buffer</span></dt>
+<dd class="terms"><p class="p">a buffer object</p></dd>
+<dt class="terms"><span class="code">access</span></dt>
+<dd class="terms"><p class="p">how the mapped buffer will be used by the application</p></dd>
+<dt class="terms"><span class="code">hints</span></dt>
+<dd class="terms"><p class="p">A mask of <span class="link"><a href="Cogl.BufferMapHint.html" title="Cogl.BufferMapHint">Cogl.BufferMapHint</a></span>&lt;!-- --&gt;s that tell Cogl how
+  the data will be modified once mapped.</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">A pointer to the mapped memory or
+       <span class="code">null</span> is the call fails</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Cogl">Cogl</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

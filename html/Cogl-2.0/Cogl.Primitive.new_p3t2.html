@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.Primitive.new_p3t2</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » <a class="trail" href="Cogl.Primitive.html" title="Cogl.Primitive">Cogl.Primitive</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.Primitive.new_p3t2</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function new_p3t2(context: <span class="link"><a href="Cogl.Context.html" title="Cogl.Context">Cogl.Context</a></span>, mode: <span class="link"><a href="Cogl.VerticesMode.html" title="Cogl.VerticesMode">Cogl.VerticesMode</a></span>, data: Array(<span class="link"><a href="Cogl.VertexP3T2.html" title="Cogl.VertexP3T2">Cogl.VertexP3T2</a></span>)): <span class="link"><a href="Cogl.Primitive.html" title="Cogl.Primitive">Cogl.Primitive</a></span> {
+    // Gjs wrapper for cogl_primitive_new_p3t2()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Provides a convenient way to describe a primitive, such as a single
+triangle strip or a triangle fan, that will internally allocate the
+necessary <span class="link"><a href="Cogl.AttributeBuffer.html" title="Cogl.AttributeBuffer">Cogl.AttributeBuffer</a></span> storage, describe the position and
+texture coordinate attributes with <span class="link"><a href="Cogl.Attribute.html" title="Cogl.Attribute">Cogl.Attribute</a></span>&lt;!-- --&gt;s and
+upload your data.</p>
+<p class="p">For example to draw a convex polygon with texture mapping you can
+do:
+|[
+CoglVertexP3T2 triangle[] =
+{
+  { 0,   300, 0,  0.0, 1.0},
+  { 150, 0,   0,  0.5, 0.0},
+  { 300, 300, 0,  1.0, 1.0}
+};
+prim = cogl_primitive_new_p3t2 (COGL_VERTICES_MODE_TRIANGLE_FAN,
+                                3, triangle);
+cogl_primitive_draw (prim);
+]|</p>
+<p class="p">The value passed as <span class="code">n_vertices</span> is initially used to determine how
+much can be read from <span class="code">data</span> but it will also be used to update the
+<span class="link"><a href="Cogl.Primitive.html" title="Cogl.Primitive">Cogl.Primitive</a></span> &lt;structfield&gt;n_vertices&lt;/structfield&gt; property as if
+<span class="link"><a href="Cogl.Primitive.set_n_vertices.html" title="Cogl.Primitive.prototype.set_n_vertices">Cogl.Primitive.prototype.set_n_vertices</a></span> were called. This property defines
+the number of vertices to read when drawing.</p>
+<p class="p">&lt;note&gt;The primitive API doesn't support drawing with sliced
+textures (since switching between slices implies changing state and
+so that implies multiple primitives need to be submitted). You
+should pass the <span class="link"><a href="Cogl.TextureFlags.html" title="Cogl.TextureFlags">Cogl.TextureFlags</a></span>.no_slicing flag to all textures that
+might be used while drawing with this API. If your hardware doesn't
+support non-power of two textures (For example you are using GLES
+1.1) then you will need to make sure your assets are resized to a
+power-of-two size (though they don't have to be square)&lt;/note&gt;</p>
+<p class="p">Since 1.6</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">context</span></dt>
+<dd class="terms"><p class="p">A <span class="link"><a href="Cogl.Context.html" title="Cogl.Context">Cogl.Context</a></span></p></dd>
+<dt class="terms"><span class="code">mode</span></dt>
+<dd class="terms"><p class="p">A <span class="link"><a href="Cogl.VerticesMode.html" title="Cogl.VerticesMode">Cogl.VerticesMode</a></span> defining how to draw the vertices</p></dd>
+<dt class="terms"><span class="code">data</span></dt>
+<dd class="terms"><p class="p">(type Cogl.VertexP3T2): An array
+       of <span class="link"><a href="Cogl.VertexP3T2.html" title="Cogl.VertexP3T2">Cogl.VertexP3T2</a></span> vertices</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">A newly allocated <span class="link"><a href="Cogl.Primitive.html" title="Cogl.Primitive">Cogl.Primitive</a></span>
+with a reference of 1. This can be freed using <span class="link"><a href="Cogl.Object.unref.html" title="Cogl.Object.unref">Cogl.Object.unref</a></span>.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.Primitive.html" title="Cogl.Primitive">Cogl.Primitive</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

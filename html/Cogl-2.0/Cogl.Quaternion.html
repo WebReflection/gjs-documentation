@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.Quaternion</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.Quaternion</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Cogl = imports.gi.Cogl;
+
+let quaternion = new Cogl.Quaternion({
+    <span class="link"><a href="Cogl.Quaternion-w.html" title="Cogl.Quaternion.w">w</a></span>: value
+    <span class="link"><a href="Cogl.Quaternion-x.html" title="Cogl.Quaternion.x">x</a></span>: value
+    <span class="link"><a href="Cogl.Quaternion-y.html" title="Cogl.Quaternion.y">y</a></span>: value
+    <span class="link"><a href="Cogl.Quaternion-z.html" title="Cogl.Quaternion.z">z</a></span>: value
+});
+  </pre></div></div></div></div></div>
+<p class="p">A quaternion is comprised of a scalar component and a 3D vector
+component. The scalar component is normally referred to as w and the
+vector might either be referred to as v or a (for axis) or expanded
+with the individual components: (x, y, z) A full quaternion would
+then be written as &lt;literal&gt;[w (x, y, z)]&lt;/literal&gt;.</p>
+<p class="p">Quaternions can be considered to represent an axis and angle
+pair although sadly these numbers are buried somewhat under some
+maths...</p>
+<p class="p">For the curious you can see here that a given axis (a) and angle (𝜃)
+pair are represented in a quaternion as follows:
+|[
+[w=cos(𝜃/2) ( x=sin(𝜃/2)*a.x, y=sin(𝜃/2)*a.y, z=sin(𝜃/2)*a.x )]
+]|</p>
+<p class="p">Unit Quaternions:
+When using Quaternions to represent spatial orientations for 3D
+graphics it's always assumed you have a unit quaternion. The
+magnitude of a quaternion is defined as:
+|[
+sqrt (w² + x² + y² + z²)
+]|
+and a unit quaternion satisfies this equation:
+|[
+w² + x² + y² + z² = 1
+]|</p>
+<p class="p">Thankfully most of the time we don't actually have to worry about
+the maths that goes on behind the scenes but if you are curious to
+learn more here are some external references:</p>
+<p class="p">&lt;itemizedlist&gt;
+&lt;listitem&gt;
+&lt;ulink url="http://mathworld.wolfram.com/Quaternion.html"/&gt;
+&lt;/listitem&gt;
+&lt;listitem&gt;
+&lt;ulink url="http://www.gamedev.net/reference/articles/article1095.asp"/&gt;
+&lt;/listitem&gt;
+&lt;listitem&gt;
+&lt;ulink url="http://www.cprogramming.com/tutorial/3d/quaternions.html"/&gt;
+&lt;/listitem&gt;
+&lt;listitem&gt;
+&lt;ulink url="http://www.isner.com/tutorials/quatSpells/quaternion_spells_12.htm"/&gt;
+&lt;/listitem&gt;
+&lt;listitem&gt;
+3D Maths Primer for Graphics and Game Development ISBN-10: 1556229119
+&lt;/listitem&gt;
+&lt;listitem&gt;
+&lt;ulink url="http://www.cs.caltech.edu/courses/cs171/quatut.pdf"/&gt;
+&lt;/listitem&gt;
+&lt;listitem&gt;
+&lt;ulink url="http://www.j3d.org/matrix_faq/matrfaq_latest.html#Q56"/&gt;
+&lt;/listitem&gt;
+&lt;/itemizedlist&gt;</p>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Cogl.Quaternion.copy.html" title="Cogl.Quaternion.prototype.copy">Cogl.Quaternion.prototype.copy</a></li>
+<li class="links "><a href="Cogl.Quaternion.dot_product.html" title="Cogl.Quaternion.prototype.dot_product">Cogl.Quaternion.prototype.dot_product</a></li>
+<li class="links "><a href="Cogl.Quaternion.free.html" title="Cogl.Quaternion.prototype.free">Cogl.Quaternion.prototype.free</a></li>
+<li class="links "><a href="Cogl.Quaternion.get_rotation_angle.html" title="Cogl.Quaternion.prototype.get_rotation_angle">Cogl.Quaternion.prototype.get_rotation_angle</a></li>
+<li class="links "><a href="Cogl.Quaternion.get_rotation_axis.html" title="Cogl.Quaternion.prototype.get_rotation_axis">Cogl.Quaternion.prototype.get_rotation_axis</a></li>
+<li class="links "><a href="Cogl.Quaternion.init.html" title="Cogl.Quaternion.prototype.init">Cogl.Quaternion.prototype.init</a></li>
+<li class="links "><a href="Cogl.Quaternion.init_from_angle_vector.html" title="Cogl.Quaternion.prototype.init_from_angle_vector">Cogl.Quaternion.prototype.init_from_angle_vector</a></li>
+<li class="links "><a href="Cogl.Quaternion.init_from_array.html" title="Cogl.Quaternion.prototype.init_from_array">Cogl.Quaternion.prototype.init_from_array</a></li>
+<li class="links "><a href="Cogl.Quaternion.init_from_euler.html" title="Cogl.Quaternion.prototype.init_from_euler">Cogl.Quaternion.prototype.init_from_euler</a></li>
+<li class="links "><a href="Cogl.Quaternion.init_from_matrix.html" title="Cogl.Quaternion.prototype.init_from_matrix">Cogl.Quaternion.prototype.init_from_matrix</a></li>
+<li class="links "><a href="Cogl.Quaternion.init_from_quaternion.html" title="Cogl.Quaternion.prototype.init_from_quaternion">Cogl.Quaternion.prototype.init_from_quaternion</a></li>
+<li class="links "><a href="Cogl.Quaternion.init_from_x_rotation.html" title="Cogl.Quaternion.prototype.init_from_x_rotation">Cogl.Quaternion.prototype.init_from_x_rotation</a></li>
+<li class="links "><a href="Cogl.Quaternion.init_from_y_rotation.html" title="Cogl.Quaternion.prototype.init_from_y_rotation">Cogl.Quaternion.prototype.init_from_y_rotation</a></li>
+<li class="links "><a href="Cogl.Quaternion.init_from_z_rotation.html" title="Cogl.Quaternion.prototype.init_from_z_rotation">Cogl.Quaternion.prototype.init_from_z_rotation</a></li>
+<li class="links "><a href="Cogl.Quaternion.init_identity.html" title="Cogl.Quaternion.prototype.init_identity">Cogl.Quaternion.prototype.init_identity</a></li>
+<li class="links "><a href="Cogl.Quaternion.invert.html" title="Cogl.Quaternion.prototype.invert">Cogl.Quaternion.prototype.invert</a></li>
+<li class="links "><a href="Cogl.Quaternion.multiply.html" title="Cogl.Quaternion.prototype.multiply">Cogl.Quaternion.prototype.multiply</a></li>
+<li class="links "><a href="Cogl.Quaternion.nlerp.html" title="Cogl.Quaternion.prototype.nlerp">Cogl.Quaternion.prototype.nlerp</a></li>
+<li class="links "><a href="Cogl.Quaternion.normalize.html" title="Cogl.Quaternion.prototype.normalize">Cogl.Quaternion.prototype.normalize</a></li>
+<li class="links "><a href="Cogl.Quaternion.pow.html" title="Cogl.Quaternion.prototype.pow">Cogl.Quaternion.prototype.pow</a></li>
+<li class="links "><a href="Cogl.Quaternion.slerp.html" title="Cogl.Quaternion.prototype.slerp">Cogl.Quaternion.prototype.slerp</a></li>
+<li class="links "><a href="Cogl.Quaternion.squad.html" title="Cogl.Quaternion.prototype.squad">Cogl.Quaternion.prototype.squad</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Static Functions</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.Quaternion.equal.html" title="Cogl.Quaternion.equal">Cogl.Quaternion.equal</a></li></ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Fields</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Cogl.Quaternion-w.html" title="Cogl.Quaternion.w">w</a></li>
+<li class="links "><a href="Cogl.Quaternion-x.html" title="Cogl.Quaternion.x">x</a></li>
+<li class="links "><a href="Cogl.Quaternion-y.html" title="Cogl.Quaternion.y">y</a></li>
+<li class="links "><a href="Cogl.Quaternion-z.html" title="Cogl.Quaternion.z">z</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Cogl">Cogl</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

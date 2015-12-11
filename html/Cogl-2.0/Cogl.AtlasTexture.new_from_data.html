@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.AtlasTexture.new_from_data</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » <a class="trail" href="Cogl.AtlasTexture.html" title="Cogl.AtlasTexture">Cogl.AtlasTexture</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.AtlasTexture.new_from_data</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function new_from_data(ctx: <span class="link"><a href="Cogl.Context.html" title="Cogl.Context">Cogl.Context</a></span>, width: Number(gint), height: Number(gint), format: <span class="link"><a href="Cogl.PixelFormat.html" title="Cogl.PixelFormat">Cogl.PixelFormat</a></span>, rowstride: Number(gint), data: Number(guint8)): <span class="link"><a href="Cogl.AtlasTexture.html" title="Cogl.AtlasTexture">Cogl.AtlasTexture</a></span> {
+    // Gjs wrapper for cogl_atlas_texture_new_from_data()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Creates a new <span class="link"><a href="Cogl.AtlasTexture.html" title="Cogl.AtlasTexture">Cogl.AtlasTexture</a></span> texture based on data residing in
+memory. A <span class="link"><a href="Cogl.AtlasTexture.html" title="Cogl.AtlasTexture">Cogl.AtlasTexture</a></span> represents a sub-region within one of
+Cogl's shared texture atlases.</p>
+<p class="p">&lt;note&gt;This api will always immediately allocate GPU memory for the
+texture and upload the given data so that the <span class="code">data</span> pointer does
+not need to remain valid once this function returns. This means it
+is not possible to configure the texture before it is allocated. If
+you do need to configure the texture before allocation (to specify
+constraints on the internal format for example) then you can
+instead create a <span class="link"><a href="Cogl.Bitmap.html" title="Cogl.Bitmap">Cogl.Bitmap</a></span> for your data and use
+<span class="link"><a href="Cogl.AtlasTexture.new_from_bitmap.html" title="Cogl.AtlasTexture.new_from_bitmap">Cogl.AtlasTexture.new_from_bitmap</a></span> or use
+<span class="link"><a href="Cogl.AtlasTexture.new_with_size.html" title="Cogl.AtlasTexture.new_with_size">Cogl.AtlasTexture.new_with_size</a></span> and then upload data using
+<span class="link"><a href="Cogl.Texture.set_data.html" title="Cogl.Texture.prototype.set_data">Cogl.Texture.prototype.set_data</a></span>&lt;/note&gt;</p>
+<p class="p">&lt;note&gt;Allocate call can fail if Cogl considers the internal
+format to be incompatible with the format of its internal
+atlases.&lt;/note&gt;</p>
+<p class="p">&lt;note&gt;The returned <span class="link"><a href="Cogl.AtlasTexture.html" title="Cogl.AtlasTexture">Cogl.AtlasTexture</a></span> is a high-level
+meta-texture with some limitations. See the documentation for
+<span class="link"><a href="Cogl.MetaTexture.html" title="Cogl.MetaTexture">Cogl.MetaTexture</a></span> for more details.&lt;/note&gt;</p>
+<p class="p">Since 1.16</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">ctx</span></dt>
+<dd class="terms"><p class="p">A <span class="link"><a href="Cogl.Context.html" title="Cogl.Context">Cogl.Context</a></span></p></dd>
+<dt class="terms"><span class="code">width</span></dt>
+<dd class="terms"><p class="p">width of texture in pixels</p></dd>
+<dt class="terms"><span class="code">height</span></dt>
+<dd class="terms"><p class="p">height of texture in pixels</p></dd>
+<dt class="terms"><span class="code">format</span></dt>
+<dd class="terms"><p class="p">the <span class="link"><a href="Cogl.PixelFormat.html" title="Cogl.PixelFormat">Cogl.PixelFormat</a></span> the buffer is stored in in RAM</p></dd>
+<dt class="terms"><span class="code">rowstride</span></dt>
+<dd class="terms"><p class="p">the memory offset in bytes between the start of each
+   row in <span class="code">data</span>. A value of 0 will make Cogl automatically
+   calculate <span class="code">rowstride</span> from <span class="code">width</span> and <span class="code">format</span>.</p></dd>
+<dt class="terms"><span class="code">data</span></dt>
+<dd class="terms"><p class="p">pointer to the memory region where the source buffer resides</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">A new <span class="link"><a href="Cogl.AtlasTexture.html" title="Cogl.AtlasTexture">Cogl.AtlasTexture</a></span> object or
+         <span class="code">null</span> on failure and @error will be updated.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.AtlasTexture.html" title="Cogl.AtlasTexture">Cogl.AtlasTexture</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.Display.prototype.setup</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » <a class="trail" href="Cogl.Display.html" title="Cogl.Display">Cogl.Display</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.Display.prototype.setup</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function setup(): <span class="link"><a href="Cogl.Bool.html" title="Cogl.Bool">Cogl.Bool</a></span> {
+    // Gjs wrapper for cogl_display_setup()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Explicitly sets up the given <span class="code">display</span> object. Use of this api is
+optional since Cogl will internally setup the display if not done
+explicitly.</p>
+<p class="p">When a display is first allocated via <span class="link"><a href="Cogl.Display.new.html" title="Cogl.Display.new">Cogl.Display.new</a></span> it is in a
+mutable configuration mode. This allows us to extend the apis
+available for configuring a display without requiring huge numbers
+of constructor arguments.</p>
+<p class="p">Its possible to request a configuration that might not be
+supportable on the current system and so this api provides a means
+to apply the configuration explicitly but if it fails then an
+exception will be returned so you can handle the error gracefully
+and perhaps fall back to an alternative configuration.</p>
+<p class="p">If you instead rely on Cogl implicitly calling <span class="link"><a href="Cogl.Display.setup.html" title="Cogl.Display.prototype.setup">Cogl.Display.prototype.setup</a></span>
+for you then if there is an error with the configuration you won't
+get an opportunity to handle that and the application may abort
+with a message.  For simple applications that don't have any
+fallback options this behaviour may be fine.</p>
+<p class="p">Since 1.10</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">Returns <span class="code">true</span> if there was no error, else it returns
+              <span class="code">false</span> and returns an exception via @error.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.Display.html" title="Cogl.Display">Cogl.Display</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

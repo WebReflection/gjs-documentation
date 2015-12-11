@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.Matrix.prototype.project_points</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » <a class="trail" href="Cogl.Matrix.html" title="Cogl.Matrix">Cogl.Matrix</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.Matrix.prototype.project_points</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function project_points(n_components: Number(gint), stride_in: Number(gsize), points_in: void, stride_out: Number(gsize), points_out: void, n_points: Number(gint)): void {
+    // Gjs wrapper for cogl_matrix_project_points()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Projects an array of input points and writes the result to another
+array of output points. The input points can either have 2, 3 or 4
+components each. The output points always have 4 components (known
+as homogenous coordinates). The output array can simply point to
+the input array to do the transform in-place.</p>
+<p class="p">Here's an example with differing input/output strides:
+|[
+typedef struct {
+  float x,y;
+  uint8_t r,g,b,a;
+  float s,t,p;
+} MyInVertex;
+typedef struct {
+  uint8_t r,g,b,a;
+  float x,y,z;
+} MyOutVertex;
+MyInVertex vertices[N_VERTICES];
+MyOutVertex results[N_VERTICES];
+CoglMatrix matrix;</p>
+<p class="p">my_load_vertices (vertices);
+my_get_matrix (&amp;matrix);</p>
+<p class="p">cogl_matrix_project_points (&amp;matrix,
+                            2,
+                            sizeof (MyInVertex),
+                            &amp;vertices[0].x,
+                            sizeof (MyOutVertex),
+                            &amp;results[0].x,
+                            N_VERTICES);
+]|</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">n_components</span></dt>
+<dd class="terms"><p class="p">The number of position components for each input point.
+               (either 2, 3 or 4)</p></dd>
+<dt class="terms"><span class="code">stride_in</span></dt>
+<dd class="terms"><p class="p">The stride in bytes between input points.</p></dd>
+<dt class="terms"><span class="code">points_in</span></dt>
+<dd class="terms"><p class="p">A pointer to the first component of the first input point.</p></dd>
+<dt class="terms"><span class="code">stride_out</span></dt>
+<dd class="terms"><p class="p">The stride in bytes between output points.</p></dd>
+<dt class="terms"><span class="code">points_out</span></dt>
+<dd class="terms"><p class="p">A pointer to the first component of the first output point.</p></dd>
+<dt class="terms"><span class="code">n_points</span></dt>
+<dd class="terms"><p class="p">The number of points to transform.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.Matrix.html" title="Cogl.Matrix">Cogl.Matrix</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

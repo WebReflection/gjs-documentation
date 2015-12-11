@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.wayland_onscreen_resize</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.wayland_onscreen_resize</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function wayland_onscreen_resize(onscreen: <span class="link"><a href="Cogl.Onscreen.html" title="Cogl.Onscreen">Cogl.Onscreen</a></span>, width: Number(gint), height: Number(gint), offset_x: Number(gint), offset_y: Number(gint)): void {
+    // Gjs wrapper for cogl_wayland_onscreen_resize()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Resizes the backbuffer of the given <span class="code">onscreen</span> framebuffer to the
+given size. Since a buffer is usually conceptually scaled with a
+center point the <span class="code">offset_x</span> and <span class="code">offset_y</span> arguments allow the newly
+allocated buffer to be positioned relative to the old buffer size.</p>
+<p class="p">For example a buffer that is being resized by moving the bottom right
+corner, and the top left corner is remaining static would use x and y
+offsets of (0, 0) since the top-left of the new buffer should have the same
+position as the old buffer. If the center of the old buffer is being zoomed
+into then all the corners of the new buffer move out from the center and the x
+and y offsets would be (-half_x_size_increase, -half_y_size_increase) where
+x/y_size_increase is how many pixels bigger the buffer is on the x and y
+axis.</p>
+<p class="p">Note that if some drawing commands have been applied to the
+framebuffer since the last swap buffers then the resize will be
+queued and will only take effect in the next swap buffers.</p>
+<p class="p">If multiple calls to <span class="link"><a href="Cogl.wayland_onscreen_resize.html" title="Cogl.wayland_onscreen_resize">Cogl.wayland_onscreen_resize</a></span> get queued
+before the next swap buffers request then the relative x and y
+offsets accumulate instead of being replaced. The <span class="code">width</span> and
+<span class="code">height</span> values superseed the old values.</p>
+<p class="p">Since 1.10</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">onscreen</span></dt>
+<dd class="terms"><p class="p">A <span class="link"><a href="Cogl.Onscreen.html" title="Cogl.Onscreen">Cogl.Onscreen</a></span> framebuffer</p></dd>
+<dt class="terms"><span class="code">width</span></dt>
+<dd class="terms"><p class="p">The desired width of the framebuffer</p></dd>
+<dt class="terms"><span class="code">height</span></dt>
+<dd class="terms"><p class="p">The desired height of the framebuffer</p></dd>
+<dt class="terms"><span class="code">offset_x</span></dt>
+<dd class="terms"><p class="p">A relative x offset for the new framebuffer</p></dd>
+<dt class="terms"><span class="code">offset_y</span></dt>
+<dd class="terms"><p class="p">A relative y offset for the new framebuffer</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Cogl">Cogl</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

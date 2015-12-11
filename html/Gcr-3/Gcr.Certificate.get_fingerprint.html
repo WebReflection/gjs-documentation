@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gcr.Certificate.prototype.get_fingerprint</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gcr">Gcr</a> » <a class="trail" href="Gcr.Certificate.html" title="Gcr.Certificate">Gcr.Certificate</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gcr.Certificate.prototype.get_fingerprint</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function get_fingerprint(type: <span class="link"><a href="../GLib-2.0/GLib.ChecksumType.html" title="../GLib-2.0/GLib.ChecksumType.html">GLib.ChecksumType</a></span>): [return_value: ByteArray, n_length: Number(gsize)] {
+    // Gjs wrapper for gcr_certificate_get_fingerprint()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Calculate the fingerprint for this certificate.</p>
+<p class="p">You can pass G_CHECKSUM_SHA1 or G_CHECKSUM_MD5 as the <span class="code">type</span>
+parameter.</p>
+<p class="p">The caller should free the returned data using g_free() when
+it is no longer required.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">type</span></dt>
+<dd class="terms"><p class="p">the type of algorithm for the fingerprint.</p></dd>
+<dt class="terms"><span class="code">return_value</span></dt>
+<dd class="terms"><p class="p">the raw binary fingerprint</p></dd>
+<dt class="terms"><span class="code">n_length</span></dt>
+<dd class="terms"><p class="p">The length of the resulting fingerprint.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gcr.Certificate.html" title="Gcr.Certificate">Gcr.Certificate</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

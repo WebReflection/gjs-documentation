@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gck.Session</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gck">Gck</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gck.Session</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gck = imports.gi.Gck;
+
+let session = new Gck.Session({
+    <span class="link"><a href="Gck.Session-app-data.html" title="Gck.Session.app_data">app_data</a></span>: value,
+    <span class="link"><a href="Gck.Session-handle.html" title="Gck.Session.handle">handle</a></span>: value,
+    <span class="link"><a href="Gck.Session-opening-flags.html" title="Gck.Session.opening_flags">opening_flags</a></span>: value,
+    <span class="link"><a href="Gck.Session-options.html" title="Gck.Session.options">options</a></span>: value,
+    <span class="link"><a href="Gck.Session-slot.html" title="Gck.Session.slot">slot</a></span>: value,
+});
+  </pre></div></div></div></div></div>
+<p class="p">Represents an open PKCS11 session.</p>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
+<div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
+<div>
+        <span class="code">GObject.Object</span>
+      
+      </div>
+<ul class="tree"><li class="tree"><div>
+        <span class="code">Gck.Session</span>
+      </div></li></ul>
+</li></ul></div></div></div></div></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gck.Session.create_object.html" title="Gck.Session.prototype.create_object">Gck.Session.prototype.create_object</a></li>
+<li class="links "><a href="Gck.Session.create_object_async.html" title="Gck.Session.prototype.create_object_async">Gck.Session.prototype.create_object_async</a></li>
+<li class="links "><a href="Gck.Session.create_object_finish.html" title="Gck.Session.prototype.create_object_finish">Gck.Session.prototype.create_object_finish</a></li>
+<li class="links "><a href="Gck.Session.decrypt.html" title="Gck.Session.prototype.decrypt">Gck.Session.prototype.decrypt</a></li>
+<li class="links "><a href="Gck.Session.decrypt_async.html" title="Gck.Session.prototype.decrypt_async">Gck.Session.prototype.decrypt_async</a></li>
+<li class="links "><a href="Gck.Session.decrypt_finish.html" title="Gck.Session.prototype.decrypt_finish">Gck.Session.prototype.decrypt_finish</a></li>
+<li class="links "><a href="Gck.Session.decrypt_full.html" title="Gck.Session.prototype.decrypt_full">Gck.Session.prototype.decrypt_full</a></li>
+<li class="links "><a href="Gck.Session.derive_key.html" title="Gck.Session.prototype.derive_key">Gck.Session.prototype.derive_key</a></li>
+<li class="links "><a href="Gck.Session.derive_key_async.html" title="Gck.Session.prototype.derive_key_async">Gck.Session.prototype.derive_key_async</a></li>
+<li class="links "><a href="Gck.Session.derive_key_finish.html" title="Gck.Session.prototype.derive_key_finish">Gck.Session.prototype.derive_key_finish</a></li>
+<li class="links "><a href="Gck.Session.derive_key_full.html" title="Gck.Session.prototype.derive_key_full">Gck.Session.prototype.derive_key_full</a></li>
+<li class="links "><a href="Gck.Session.encrypt.html" title="Gck.Session.prototype.encrypt">Gck.Session.prototype.encrypt</a></li>
+<li class="links "><a href="Gck.Session.encrypt_async.html" title="Gck.Session.prototype.encrypt_async">Gck.Session.prototype.encrypt_async</a></li>
+<li class="links "><a href="Gck.Session.encrypt_finish.html" title="Gck.Session.prototype.encrypt_finish">Gck.Session.prototype.encrypt_finish</a></li>
+<li class="links "><a href="Gck.Session.encrypt_full.html" title="Gck.Session.prototype.encrypt_full">Gck.Session.prototype.encrypt_full</a></li>
+<li class="links "><a href="Gck.Session.enumerate_objects.html" title="Gck.Session.prototype.enumerate_objects">Gck.Session.prototype.enumerate_objects</a></li>
+<li class="links "><a href="Gck.Session.find_handles.html" title="Gck.Session.prototype.find_handles">Gck.Session.prototype.find_handles</a></li>
+<li class="links "><a href="Gck.Session.find_handles_async.html" title="Gck.Session.prototype.find_handles_async">Gck.Session.prototype.find_handles_async</a></li>
+<li class="links "><a href="Gck.Session.find_handles_finish.html" title="Gck.Session.prototype.find_handles_finish">Gck.Session.prototype.find_handles_finish</a></li>
+<li class="links "><a href="Gck.Session.find_objects.html" title="Gck.Session.prototype.find_objects">Gck.Session.prototype.find_objects</a></li>
+<li class="links "><a href="Gck.Session.find_objects_async.html" title="Gck.Session.prototype.find_objects_async">Gck.Session.prototype.find_objects_async</a></li>
+<li class="links "><a href="Gck.Session.find_objects_finish.html" title="Gck.Session.prototype.find_objects_finish">Gck.Session.prototype.find_objects_finish</a></li>
+<li class="links "><a href="Gck.Session.generate_key_pair.html" title="Gck.Session.prototype.generate_key_pair">Gck.Session.prototype.generate_key_pair</a></li>
+<li class="links "><a href="Gck.Session.generate_key_pair_async.html" title="Gck.Session.prototype.generate_key_pair_async">Gck.Session.prototype.generate_key_pair_async</a></li>
+<li class="links "><a href="Gck.Session.generate_key_pair_finish.html" title="Gck.Session.prototype.generate_key_pair_finish">Gck.Session.prototype.generate_key_pair_finish</a></li>
+<li class="links "><a href="Gck.Session.generate_key_pair_full.html" title="Gck.Session.prototype.generate_key_pair_full">Gck.Session.prototype.generate_key_pair_full</a></li>
+<li class="links "><a href="Gck.Session.get_handle.html" title="Gck.Session.prototype.get_handle">Gck.Session.prototype.get_handle</a></li>
+<li class="links "><a href="Gck.Session.get_info.html" title="Gck.Session.prototype.get_info">Gck.Session.prototype.get_info</a></li>
+<li class="links "><a href="Gck.Session.get_interaction.html" title="Gck.Session.prototype.get_interaction">Gck.Session.prototype.get_interaction</a></li>
+<li class="links "><a href="Gck.Session.get_module.html" title="Gck.Session.prototype.get_module">Gck.Session.prototype.get_module</a></li>
+<li class="links "><a href="Gck.Session.get_options.html" title="Gck.Session.prototype.get_options">Gck.Session.prototype.get_options</a></li>
+<li class="links "><a href="Gck.Session.get_slot.html" title="Gck.Session.prototype.get_slot">Gck.Session.prototype.get_slot</a></li>
+<li class="links "><a href="Gck.Session.get_state.html" title="Gck.Session.prototype.get_state">Gck.Session.prototype.get_state</a></li>
+<li class="links "><a href="Gck.Session.init_pin.html" title="Gck.Session.prototype.init_pin">Gck.Session.prototype.init_pin</a></li>
+<li class="links "><a href="Gck.Session.init_pin_async.html" title="Gck.Session.prototype.init_pin_async">Gck.Session.prototype.init_pin_async</a></li>
+<li class="links "><a href="Gck.Session.init_pin_finish.html" title="Gck.Session.prototype.init_pin_finish">Gck.Session.prototype.init_pin_finish</a></li>
+<li class="links "><a href="Gck.Session.login.html" title="Gck.Session.prototype.login">Gck.Session.prototype.login</a></li>
+<li class="links "><a href="Gck.Session.login_async.html" title="Gck.Session.prototype.login_async">Gck.Session.prototype.login_async</a></li>
+<li class="links "><a href="Gck.Session.login_finish.html" title="Gck.Session.prototype.login_finish">Gck.Session.prototype.login_finish</a></li>
+<li class="links "><a href="Gck.Session.login_interactive.html" title="Gck.Session.prototype.login_interactive">Gck.Session.prototype.login_interactive</a></li>
+<li class="links "><a href="Gck.Session.login_interactive_async.html" title="Gck.Session.prototype.login_interactive_async">Gck.Session.prototype.login_interactive_async</a></li>
+<li class="links "><a href="Gck.Session.login_interactive_finish.html" title="Gck.Session.prototype.login_interactive_finish">Gck.Session.prototype.login_interactive_finish</a></li>
+<li class="links "><a href="Gck.Session.logout.html" title="Gck.Session.prototype.logout">Gck.Session.prototype.logout</a></li>
+<li class="links "><a href="Gck.Session.logout_async.html" title="Gck.Session.prototype.logout_async">Gck.Session.prototype.logout_async</a></li>
+<li class="links "><a href="Gck.Session.logout_finish.html" title="Gck.Session.prototype.logout_finish">Gck.Session.prototype.logout_finish</a></li>
+<li class="links "><a href="Gck.Session.set_interaction.html" title="Gck.Session.prototype.set_interaction">Gck.Session.prototype.set_interaction</a></li>
+<li class="links "><a href="Gck.Session.set_pin.html" title="Gck.Session.prototype.set_pin">Gck.Session.prototype.set_pin</a></li>
+<li class="links "><a href="Gck.Session.set_pin_async.html" title="Gck.Session.prototype.set_pin_async">Gck.Session.prototype.set_pin_async</a></li>
+<li class="links "><a href="Gck.Session.set_pin_finish.html" title="Gck.Session.prototype.set_pin_finish">Gck.Session.prototype.set_pin_finish</a></li>
+<li class="links "><a href="Gck.Session.sign.html" title="Gck.Session.prototype.sign">Gck.Session.prototype.sign</a></li>
+<li class="links "><a href="Gck.Session.sign_async.html" title="Gck.Session.prototype.sign_async">Gck.Session.prototype.sign_async</a></li>
+<li class="links "><a href="Gck.Session.sign_finish.html" title="Gck.Session.prototype.sign_finish">Gck.Session.prototype.sign_finish</a></li>
+<li class="links "><a href="Gck.Session.sign_full.html" title="Gck.Session.prototype.sign_full">Gck.Session.prototype.sign_full</a></li>
+<li class="links "><a href="Gck.Session.unwrap_key.html" title="Gck.Session.prototype.unwrap_key">Gck.Session.prototype.unwrap_key</a></li>
+<li class="links "><a href="Gck.Session.unwrap_key_async.html" title="Gck.Session.prototype.unwrap_key_async">Gck.Session.prototype.unwrap_key_async</a></li>
+<li class="links "><a href="Gck.Session.unwrap_key_finish.html" title="Gck.Session.prototype.unwrap_key_finish">Gck.Session.prototype.unwrap_key_finish</a></li>
+<li class="links "><a href="Gck.Session.unwrap_key_full.html" title="Gck.Session.prototype.unwrap_key_full">Gck.Session.prototype.unwrap_key_full</a></li>
+<li class="links "><a href="Gck.Session.verify.html" title="Gck.Session.prototype.verify">Gck.Session.prototype.verify</a></li>
+<li class="links "><a href="Gck.Session.verify_async.html" title="Gck.Session.prototype.verify_async">Gck.Session.prototype.verify_async</a></li>
+<li class="links "><a href="Gck.Session.verify_finish.html" title="Gck.Session.prototype.verify_finish">Gck.Session.prototype.verify_finish</a></li>
+<li class="links "><a href="Gck.Session.verify_full.html" title="Gck.Session.prototype.verify_full">Gck.Session.prototype.verify_full</a></li>
+<li class="links "><a href="Gck.Session.wrap_key.html" title="Gck.Session.prototype.wrap_key">Gck.Session.prototype.wrap_key</a></li>
+<li class="links "><a href="Gck.Session.wrap_key_async.html" title="Gck.Session.prototype.wrap_key_async">Gck.Session.prototype.wrap_key_async</a></li>
+<li class="links "><a href="Gck.Session.wrap_key_finish.html" title="Gck.Session.prototype.wrap_key_finish">Gck.Session.prototype.wrap_key_finish</a></li>
+<li class="links "><a href="Gck.Session.wrap_key_full.html" title="Gck.Session.prototype.wrap_key_full">Gck.Session.prototype.wrap_key_full</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Static Functions</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gck.Session.from_handle.html" title="Gck.Session.from_handle">Gck.Session.from_handle</a></li>
+<li class="links "><a href="Gck.Session.open.html" title="Gck.Session.open">Gck.Session.open</a></li>
+<li class="links "><a href="Gck.Session.open_async.html" title="Gck.Session.open_async">Gck.Session.open_async</a></li>
+<li class="links "><a href="Gck.Session.open_finish.html" title="Gck.Session.open_finish">Gck.Session.open_finish</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Properties</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gck.Session-app-data.html" title="Gck.Session.app_data">app-data</a></li>
+<li class="links "><a href="Gck.Session-handle.html" title="Gck.Session.handle">handle</a></li>
+<li class="links "><a href="Gck.Session-interaction.html" title="Gck.Session.interaction">interaction</a></li>
+<li class="links "><a href="Gck.Session-module.html" title="Gck.Session.module">module</a></li>
+<li class="links "><a href="Gck.Session-opening-flags.html" title="Gck.Session.opening_flags">opening-flags</a></li>
+<li class="links "><a href="Gck.Session-options.html" title="Gck.Session.options">options</a></li>
+<li class="links "><a href="Gck.Session-slot.html" title="Gck.Session.slot">slot</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Signals</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gck.Session-discard-handle.html" title="Gck.Session::discard-handle">discard-handle</a></li></ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gck">Gck</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

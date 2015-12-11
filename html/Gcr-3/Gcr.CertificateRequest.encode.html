@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gcr.CertificateRequest.prototype.encode</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gcr">Gcr</a> » <a class="trail" href="Gcr.CertificateRequest.html" title="Gcr.CertificateRequest">Gcr.CertificateRequest</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gcr.CertificateRequest.prototype.encode</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function encode(textual: Boolean): [return_value: ByteArray, length: Number(gsize)] {
+    // Gjs wrapper for gcr_certificate_request_encode()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Encode the certificate request. It must have been completed with
+<span class="link"><a href="Gcr.CertificateRequest.complete.html" title="Gcr.CertificateRequest.prototype.complete">Gcr.CertificateRequest.prototype.complete</a></span> or <span class="link"><a href="Gcr.CertificateRequest.complete_async.html" title="Gcr.CertificateRequest.prototype.complete_async">Gcr.CertificateRequest.prototype.complete_async</a></span></p>
+<p class="p">If <span class="code">textual</span> is <span class="code">false</span>, the output is a DER encoded certificate request.</p>
+<p class="p">If <span class="code">textual</span> is <span class="code">true</span>, the output is encoded as text. For PKCS\#10 requests this
+is done using the OpenSSL style PEM encoding.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">textual</span></dt>
+<dd class="terms"><p class="p">whether to encode output as text</p></dd>
+<dt class="terms"><span class="code">return_value</span></dt>
+<dd class="terms"><p class="p">the encoded certificate request</p></dd>
+<dt class="terms"><span class="code">length</span></dt>
+<dd class="terms"><p class="p">location to place length of returned data</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gcr.CertificateRequest.html" title="Gcr.CertificateRequest">Gcr.CertificateRequest</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

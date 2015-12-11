@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.Texture.prototype.set_components</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » <a class="trail" href="Cogl.Texture.html" title="Cogl.Texture">Cogl.Texture</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.Texture.prototype.set_components</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function set_components(components: <span class="link"><a href="Cogl.TextureComponents.html" title="Cogl.TextureComponents">Cogl.TextureComponents</a></span>): void {
+    // Gjs wrapper for cogl_texture_set_components()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Affects the internal storage format for this texture by specifying
+what components will be required for sampling later.</p>
+<p class="p">This api affects how data is uploaded to the GPU since unused
+components can potentially be discarded from source data.</p>
+<p class="p">For textures created by the ‘_with_size’ constructors the default
+is <span class="link"><a href="Cogl.TextureComponents.html" title="Cogl.TextureComponents">Cogl.TextureComponents</a></span>.rgba. The other constructors which take
+a %CoglBitmap or a data pointer default to the same components as
+the pixel format of the data.</p>
+<p class="p">Note that the <span class="link"><a href="Cogl.TextureComponents.html" title="Cogl.TextureComponents">Cogl.TextureComponents</a></span>.rg format is not available
+on all drivers. The availability can be determined by checking for
+the <span class="link"><a href="Cogl.FeatureID.html" title="Cogl.FeatureID">Cogl.FeatureID</a></span>.ogl_feature_id_texture_rg feature. If this format is used on
+a driver where it is not available then <span class="link"><a href="Cogl.TextureError.html" title="Cogl.TextureError">Cogl.TextureError</a></span>.format
+will be raised when the texture is allocated. Even if the feature
+is not available then <span class="link"><a href="Cogl.PixelFormat.html" title="Cogl.PixelFormat">Cogl.PixelFormat</a></span>.rg_88 can still be used as
+an image format as long as <span class="link"><a href="Cogl.TextureComponents.html" title="Cogl.TextureComponents">Cogl.TextureComponents</a></span>.rg isn't used
+as the texture's components.</p>
+<p class="p">Since 1.18</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">components</span></dt>
+<dd class="terms"></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.Texture.html" title="Cogl.Texture">Cogl.Texture</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

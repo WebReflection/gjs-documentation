@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gcr.Prompt</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gcr">Gcr</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gcr.Prompt</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gcr = imports.gi.Gcr;
+
+let prompt = new Gcr.Prompt({
+    <span class="link"><a href="Gcr.Prompt-caller-window.html" title="Gcr.Prompt-caller-window">caller_window</a></span>: value,
+    <span class="link"><a href="Gcr.Prompt-cancel-label.html" title="Gcr.Prompt-cancel-label">cancel_label</a></span>: value,
+    <span class="link"><a href="Gcr.Prompt-choice-label.html" title="Gcr.Prompt-choice-label">choice_label</a></span>: value,
+    <span class="link"><a href="Gcr.Prompt-continue-label.html" title="Gcr.Prompt-continue-label">continue_label</a></span>: value,
+    <span class="link"><a href="Gcr.Prompt-description.html" title="Gcr.Prompt-description">description</a></span>: value,
+    <span class="link"><a href="Gcr.Prompt-message.html" title="Gcr.Prompt-message">message</a></span>: value,
+    <span class="link"><a href="Gcr.Prompt-title.html" title="Gcr.Prompt-title">title</a></span>: value,
+    <span class="link"><a href="Gcr.Prompt-warning.html" title="Gcr.Prompt-warning">warning</a></span>: value,
+});
+  </pre></div></div></div></div></div>
+<p class="p">Represents a <span class="link"><a href="Gcr.Prompt.html" title="Gcr.Prompt">Gcr.Prompt</a></span> displayed to the user.</p>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Prerequisites</span></h2></div>
+<div class="region"><div class="contents"><p class="p">Prompt requires GObject.Object</p></div></div>
+</div></div>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Known Implementations</span></h2></div>
+<div class="region"><div class="contents"><p class="p">Prompt is implemented by SystemPrompt</p></div></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gcr.Prompt.close.html" title="Gcr.Prompt.prototype.close">Gcr.Prompt.prototype.close</a></li>
+<li class="links "><a href="Gcr.Prompt.confirm.html" title="Gcr.Prompt.prototype.confirm">Gcr.Prompt.prototype.confirm</a></li>
+<li class="links "><a href="Gcr.Prompt.confirm_async.html" title="Gcr.Prompt.prototype.confirm_async">Gcr.Prompt.prototype.confirm_async</a></li>
+<li class="links "><a href="Gcr.Prompt.confirm_finish.html" title="Gcr.Prompt.prototype.confirm_finish">Gcr.Prompt.prototype.confirm_finish</a></li>
+<li class="links "><a href="Gcr.Prompt.confirm_run.html" title="Gcr.Prompt.prototype.confirm_run">Gcr.Prompt.prototype.confirm_run</a></li>
+<li class="links "><a href="Gcr.Prompt.get_caller_window.html" title="Gcr.Prompt.prototype.get_caller_window">Gcr.Prompt.prototype.get_caller_window</a></li>
+<li class="links "><a href="Gcr.Prompt.get_cancel_label.html" title="Gcr.Prompt.prototype.get_cancel_label">Gcr.Prompt.prototype.get_cancel_label</a></li>
+<li class="links "><a href="Gcr.Prompt.get_choice_chosen.html" title="Gcr.Prompt.prototype.get_choice_chosen">Gcr.Prompt.prototype.get_choice_chosen</a></li>
+<li class="links "><a href="Gcr.Prompt.get_choice_label.html" title="Gcr.Prompt.prototype.get_choice_label">Gcr.Prompt.prototype.get_choice_label</a></li>
+<li class="links "><a href="Gcr.Prompt.get_continue_label.html" title="Gcr.Prompt.prototype.get_continue_label">Gcr.Prompt.prototype.get_continue_label</a></li>
+<li class="links "><a href="Gcr.Prompt.get_description.html" title="Gcr.Prompt.prototype.get_description">Gcr.Prompt.prototype.get_description</a></li>
+<li class="links "><a href="Gcr.Prompt.get_message.html" title="Gcr.Prompt.prototype.get_message">Gcr.Prompt.prototype.get_message</a></li>
+<li class="links "><a href="Gcr.Prompt.get_password_new.html" title="Gcr.Prompt.prototype.get_password_new">Gcr.Prompt.prototype.get_password_new</a></li>
+<li class="links "><a href="Gcr.Prompt.get_password_strength.html" title="Gcr.Prompt.prototype.get_password_strength">Gcr.Prompt.prototype.get_password_strength</a></li>
+<li class="links "><a href="Gcr.Prompt.get_title.html" title="Gcr.Prompt.prototype.get_title">Gcr.Prompt.prototype.get_title</a></li>
+<li class="links "><a href="Gcr.Prompt.get_warning.html" title="Gcr.Prompt.prototype.get_warning">Gcr.Prompt.prototype.get_warning</a></li>
+<li class="links "><a href="Gcr.Prompt.password.html" title="Gcr.Prompt.prototype.password">Gcr.Prompt.prototype.password</a></li>
+<li class="links "><a href="Gcr.Prompt.password_async.html" title="Gcr.Prompt.prototype.password_async">Gcr.Prompt.prototype.password_async</a></li>
+<li class="links "><a href="Gcr.Prompt.password_finish.html" title="Gcr.Prompt.prototype.password_finish">Gcr.Prompt.prototype.password_finish</a></li>
+<li class="links "><a href="Gcr.Prompt.password_run.html" title="Gcr.Prompt.prototype.password_run">Gcr.Prompt.prototype.password_run</a></li>
+<li class="links "><a href="Gcr.Prompt.reset.html" title="Gcr.Prompt.prototype.reset">Gcr.Prompt.prototype.reset</a></li>
+<li class="links "><a href="Gcr.Prompt.set_caller_window.html" title="Gcr.Prompt.prototype.set_caller_window">Gcr.Prompt.prototype.set_caller_window</a></li>
+<li class="links "><a href="Gcr.Prompt.set_cancel_label.html" title="Gcr.Prompt.prototype.set_cancel_label">Gcr.Prompt.prototype.set_cancel_label</a></li>
+<li class="links "><a href="Gcr.Prompt.set_choice_chosen.html" title="Gcr.Prompt.prototype.set_choice_chosen">Gcr.Prompt.prototype.set_choice_chosen</a></li>
+<li class="links "><a href="Gcr.Prompt.set_choice_label.html" title="Gcr.Prompt.prototype.set_choice_label">Gcr.Prompt.prototype.set_choice_label</a></li>
+<li class="links "><a href="Gcr.Prompt.set_continue_label.html" title="Gcr.Prompt.prototype.set_continue_label">Gcr.Prompt.prototype.set_continue_label</a></li>
+<li class="links "><a href="Gcr.Prompt.set_description.html" title="Gcr.Prompt.prototype.set_description">Gcr.Prompt.prototype.set_description</a></li>
+<li class="links "><a href="Gcr.Prompt.set_message.html" title="Gcr.Prompt.prototype.set_message">Gcr.Prompt.prototype.set_message</a></li>
+<li class="links "><a href="Gcr.Prompt.set_password_new.html" title="Gcr.Prompt.prototype.set_password_new">Gcr.Prompt.prototype.set_password_new</a></li>
+<li class="links "><a href="Gcr.Prompt.set_title.html" title="Gcr.Prompt.prototype.set_title">Gcr.Prompt.prototype.set_title</a></li>
+<li class="links "><a href="Gcr.Prompt.set_warning.html" title="Gcr.Prompt.prototype.set_warning">Gcr.Prompt.prototype.set_warning</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Signals</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gcr.Prompt-prompt-close.html" title="Gcr.Prompt::prompt-close">prompt-close</a></li></ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Virtual functions</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gcr.Prompt-prompt_close.html" title="Gcr.Prompt::prompt_close">Gcr.Prompt::prompt_close</a></li>
+<li class="links "><a href="Gcr.Prompt-prompt_confirm_async.html" title="Gcr.Prompt::prompt_confirm_async">Gcr.Prompt::prompt_confirm_async</a></li>
+<li class="links "><a href="Gcr.Prompt-prompt_confirm_finish.html" title="Gcr.Prompt::prompt_confirm_finish">Gcr.Prompt::prompt_confirm_finish</a></li>
+<li class="links "><a href="Gcr.Prompt-prompt_password_async.html" title="Gcr.Prompt::prompt_password_async">Gcr.Prompt::prompt_password_async</a></li>
+<li class="links "><a href="Gcr.Prompt-prompt_password_finish.html" title="Gcr.Prompt::prompt_password_finish">Gcr.Prompt::prompt_password_finish</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gcr">Gcr</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

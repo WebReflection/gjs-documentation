@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.Onscreen.prototype.add_swap_buffers_callback</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » <a class="trail" href="Cogl.Onscreen.html" title="Cogl.Onscreen">Cogl.Onscreen</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.Onscreen.prototype.add_swap_buffers_callback</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function add_swap_buffers_callback(callback: <span class="link"><a href="Cogl.SwapBuffersNotify.html" title="Cogl.SwapBuffersNotify">Cogl.SwapBuffersNotify</a></span>): Number(guint) {
+    // Gjs wrapper for cogl_onscreen_add_swap_buffers_callback()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Installs a <span class="code">callback</span> function that should be called whenever a swap buffers
+request (made using <span class="link"><a href="Cogl.Onscreen.swap_buffers.html" title="Cogl.Onscreen.prototype.swap_buffers">Cogl.Onscreen.prototype.swap_buffers</a></span>) for the given
+<span class="code">onscreen</span> completes.</p>
+<p class="p">&lt;note&gt;Applications should check for the <span class="link"><a href="Cogl.FeatureID.html" title="Cogl.FeatureID">Cogl.FeatureID</a></span>.ogl_feature_id_swap_buffers_event
+feature before using this API. It's currently undefined when and if
+registered callbacks will be called if this feature is not supported.&lt;/note&gt;</p>
+<p class="p">We recommend using this mechanism when available to manually throttle your
+applications (in conjunction with  <span class="link"><a href="Cogl.Onscreen.set_swap_throttled.html" title="Cogl.Onscreen.prototype.set_swap_throttled">Cogl.Onscreen.prototype.set_swap_throttled</a></span>) so
+your application will be able to avoid long blocks in the driver caused by
+throttling when you request to swap buffers too quickly.</p>
+<p class="p">Since 1.10</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">callback</span></dt>
+<dd class="terms"><p class="p">A callback function to call when a swap
+           has completed</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">a unique identifier that can be used to remove to remove
+              the callback later.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.Onscreen.html" title="Cogl.Onscreen">Cogl.Onscreen</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.Framebuffer.prototype.set_samples_per_pixel</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » <a class="trail" href="Cogl.Framebuffer.html" title="Cogl.Framebuffer">Cogl.Framebuffer</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.Framebuffer.prototype.set_samples_per_pixel</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function set_samples_per_pixel(samples_per_pixel: Number(gint)): void {
+    // Gjs wrapper for cogl_framebuffer_set_samples_per_pixel()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Requires that when rendering to <span class="code">framebuffer</span> then @n point samples
+should be made per pixel which will all contribute to the final
+resolved color for that pixel. The idea is that the hardware aims
+to get quality similar to what you would get if you rendered
+everything twice as big (for 4 samples per pixel) and then scaled
+that image back down with filtering. It can effectively remove the
+jagged edges of polygons and should be more efficient than if you
+were to manually render at a higher resolution and downscale
+because the hardware is often able to take some shortcuts. For
+example the GPU may only calculate a single texture sample for all
+points of a single pixel, and for tile based architectures all the
+extra sample data (such as depth and stencil samples) may be
+handled on-chip and so avoid increased demand on system memory
+bandwidth.</p>
+<p class="p">By default this value is usually set to 0 and that is referred to
+as "single-sample" rendering. A value of 1 or greater is referred
+to as "multisample" rendering.</p>
+<p class="p">&lt;note&gt;There are some semantic differences between single-sample
+rendering and multisampling with just 1 point sample such as it
+being redundant to use the <span class="link"><a href="Cogl.Framebuffer.resolve_samples.html" title="Cogl.Framebuffer.prototype.resolve_samples">Cogl.Framebuffer.prototype.resolve_samples</a></span> and
+<span class="link"><a href="Cogl.Framebuffer.resolve_samples_region.html" title="Cogl.Framebuffer.prototype.resolve_samples_region">Cogl.Framebuffer.prototype.resolve_samples_region</a></span> apis with single-sample
+rendering.&lt;/note&gt;</p>
+<p class="p">&lt;note&gt;It's recommended that
+<span class="link"><a href="Cogl.Framebuffer.resolve_samples_region.html" title="Cogl.Framebuffer.prototype.resolve_samples_region">Cogl.Framebuffer.prototype.resolve_samples_region</a></span> be explicitly used at the
+end of rendering to a point sample buffer to minimize the number of
+samples that get resolved. By default Cogl will implicitly resolve
+all framebuffer samples but if only a small region of a
+framebuffer has changed this can lead to redundant work being
+done.&lt;/note&gt;</p>
+<p class="p">Since 1.8</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">samples_per_pixel</span></dt>
+<dd class="terms"><p class="p">The minimum number of samples per pixel</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.Framebuffer.html" title="Cogl.Framebuffer">Cogl.Framebuffer</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.Pipeline.prototype.set_point_size</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » <a class="trail" href="Cogl.Pipeline.html" title="Cogl.Pipeline">Cogl.Pipeline</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.Pipeline.prototype.set_point_size</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function set_point_size(point_size: Number(gfloat)): void {
+    // Gjs wrapper for cogl_pipeline_set_point_size()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Changes the size of points drawn when <span class="link"><a href="Cogl.VerticesMode.html" title="Cogl.VerticesMode">Cogl.VerticesMode</a></span>.points is
+used with the attribute buffer API. Note that typically the GPU
+will only support a limited minimum and maximum range of point
+sizes. If the chosen point size is outside that range then the
+nearest value within that range will be used instead. The size of a
+point is in screen space so it will be the same regardless of any
+transformations.</p>
+<p class="p">If the point size is set to 0.0 then drawing points with the
+pipeline will have undefined results. This is the default value so
+if an application wants to draw points it must make sure to use a
+pipeline that has an explicit point size set on it.</p>
+<p class="p">Since 2.0</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">point_size</span></dt>
+<dd class="terms"><p class="p">the new point size.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.Pipeline.html" title="Cogl.Pipeline">Cogl.Pipeline</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

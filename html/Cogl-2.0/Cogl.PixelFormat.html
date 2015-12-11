@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.PixelFormat</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.PixelFormat</span></h1></div>
+<div class="region">
+<div class="contents">
+<p class="p">Pixel formats used by Cogl. For the formats with a byte per
+component, the order of the components specify the order in
+increasing memory addresses. So for example
+<span class="link"><a href="Cogl.PixelFormat.html" title="Cogl.PixelFormat">Cogl.PixelFormat</a></span>.rgb_888 would have the red component in the
+lowest address, green in the next address and blue after that
+regardless of the endianness of the system.</p>
+<p class="p">For the formats with non byte aligned components the component
+order specifies the order within a 16-bit or 32-bit number from
+most significant bit to least significant. So for
+<span class="link"><a href="Cogl.PixelFormat.html" title="Cogl.PixelFormat">Cogl.PixelFormat</a></span>.rgb_565, the red component would be in bits
+11-15, the green component would be in 6-11 and the blue component
+would be in 1-5. Therefore the order in memory depends on the
+endianness of the system.</p>
+<p class="p">When uploading a texture <span class="link"><a href="Cogl.PixelFormat.html" title="Cogl.PixelFormat">Cogl.PixelFormat</a></span>.any can be used as the
+internal format. Cogl will try to pick the best format to use
+internally and convert the texture data if necessary.</p>
+<p class="p">Since 0.8</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">PixelFormat.ANY</span></dt>
+<dd class="terms"><p class="p">Any format</p></dd>
+<dt class="terms"><span class="code">PixelFormat.A_8</span></dt>
+<dd class="terms"><p class="p">8 bits alpha mask</p></dd>
+<dt class="terms"><span class="code">PixelFormat.RGB_565</span></dt>
+<dd class="terms"><p class="p">RGB, 16 bits</p></dd>
+<dt class="terms"><span class="code">PixelFormat.RGBA_4444</span></dt>
+<dd class="terms"><p class="p">RGBA, 16 bits</p></dd>
+<dt class="terms"><span class="code">PixelFormat.RGBA_5551</span></dt>
+<dd class="terms"><p class="p">RGBA, 16 bits</p></dd>
+<dt class="terms"><span class="code">PixelFormat.YUV</span></dt>
+<dd class="terms"><p class="p">Not currently supported</p></dd>
+<dt class="terms"><span class="code">PixelFormat.G_8</span></dt>
+<dd class="terms"><p class="p">Single luminance component</p></dd>
+<dt class="terms"><span class="code">PixelFormat.RG_88</span></dt>
+<dd class="terms"><p class="p">RG, 16 bits. Note that red-green textures
+  are only available if <span class="link"><a href="Cogl.FeatureID.html" title="Cogl.FeatureID">Cogl.FeatureID</a></span>.ogl_feature_id_texture_rg is advertised.
+  See <span class="link"><a href="Cogl.Texture.set_components.html" title="Cogl.Texture.prototype.set_components">Cogl.Texture.prototype.set_components</a></span> for details.</p></dd>
+<dt class="terms"><span class="code">PixelFormat.RGB_888</span></dt>
+<dd class="terms"><p class="p">RGB, 24 bits</p></dd>
+<dt class="terms"><span class="code">PixelFormat.BGR_888</span></dt>
+<dd class="terms"><p class="p">BGR, 24 bits</p></dd>
+<dt class="terms"><span class="code">PixelFormat.RGBA_8888</span></dt>
+<dd class="terms"><p class="p">RGBA, 32 bits</p></dd>
+<dt class="terms"><span class="code">PixelFormat.BGRA_8888</span></dt>
+<dd class="terms"><p class="p">BGRA, 32 bits</p></dd>
+<dt class="terms"><span class="code">PixelFormat.ARGB_8888</span></dt>
+<dd class="terms"><p class="p">ARGB, 32 bits</p></dd>
+<dt class="terms"><span class="code">PixelFormat.ABGR_8888</span></dt>
+<dd class="terms"><p class="p">ABGR, 32 bits</p></dd>
+<dt class="terms"><span class="code">PixelFormat.RGBA_1010102</span></dt>
+<dd class="terms"><p class="p">RGBA, 32 bits, 10 bpc</p></dd>
+<dt class="terms"><span class="code">PixelFormat.BGRA_1010102</span></dt>
+<dd class="terms"><p class="p">BGRA, 32 bits, 10 bpc</p></dd>
+<dt class="terms"><span class="code">PixelFormat.ARGB_2101010</span></dt>
+<dd class="terms"><p class="p">ARGB, 32 bits, 10 bpc</p></dd>
+<dt class="terms"><span class="code">PixelFormat.ABGR_2101010</span></dt>
+<dd class="terms"><p class="p">ABGR, 32 bits, 10 bpc</p></dd>
+<dt class="terms"><span class="code">PixelFormat.RGBA_8888_PRE</span></dt>
+<dd class="terms"><p class="p">Premultiplied RGBA, 32 bits</p></dd>
+<dt class="terms"><span class="code">PixelFormat.BGRA_8888_PRE</span></dt>
+<dd class="terms"><p class="p">Premultiplied BGRA, 32 bits</p></dd>
+<dt class="terms"><span class="code">PixelFormat.ARGB_8888_PRE</span></dt>
+<dd class="terms"><p class="p">Premultiplied ARGB, 32 bits</p></dd>
+<dt class="terms"><span class="code">PixelFormat.ABGR_8888_PRE</span></dt>
+<dd class="terms"><p class="p">Premultiplied ABGR, 32 bits</p></dd>
+<dt class="terms"><span class="code">PixelFormat.RGBA_4444_PRE</span></dt>
+<dd class="terms"><p class="p">Premultiplied RGBA, 16 bits</p></dd>
+<dt class="terms"><span class="code">PixelFormat.RGBA_5551_PRE</span></dt>
+<dd class="terms"><p class="p">Premultiplied RGBA, 16 bits</p></dd>
+<dt class="terms"><span class="code">PixelFormat.RGBA_1010102_PRE</span></dt>
+<dd class="terms"><p class="p">Premultiplied RGBA, 32 bits, 10 bpc</p></dd>
+<dt class="terms"><span class="code">PixelFormat.BGRA_1010102_PRE</span></dt>
+<dd class="terms"><p class="p">Premultiplied BGRA, 32 bits, 10 bpc</p></dd>
+<dt class="terms"><span class="code">PixelFormat.ARGB_2101010_PRE</span></dt>
+<dd class="terms"><p class="p">Premultiplied ARGB, 32 bits, 10 bpc</p></dd>
+<dt class="terms"><span class="code">PixelFormat.ABGR_2101010_PRE</span></dt>
+<dd class="terms"><p class="p">Premultiplied ABGR, 32 bits, 10 bpc</p></dd>
+<dt class="terms"><span class="code">PixelFormat.DEPTH_16</span></dt>
+<dd class="terms"></dd>
+<dt class="terms"><span class="code">PixelFormat.DEPTH_32</span></dt>
+<dd class="terms"></dd>
+<dt class="terms"><span class="code">PixelFormat.DEPTH_24_STENCIL_8</span></dt>
+<dd class="terms"></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Cogl">Cogl</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

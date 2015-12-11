@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gcr.SystemPrompter.new</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gcr">Gcr</a> » <a class="trail" href="Gcr.SystemPrompter.html" title="Gcr.SystemPrompter">Gcr.SystemPrompter</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gcr.SystemPrompter.new</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function new(mode: <span class="link"><a href="Gcr.SystemPrompterMode.html" title="Gcr.SystemPrompterMode">Gcr.SystemPrompterMode</a></span>, prompt_type: GObject.Type): <span class="link"><a href="Gcr.SystemPrompter.html" title="Gcr.SystemPrompter">Gcr.SystemPrompter</a></span> {
+    // Gjs wrapper for gcr_system_prompter_new()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Create a new system prompter service. This prompter won't do anything unless
+you connect to its signals and show appropriate prompts.</p>
+<p class="p">If <span class="code">prompt_type</span> is zero, then the new-prompt signal must be handled and
+return a valid prompt object implementing the <span class="link"><a href="Gcr.Prompt.html" title="Gcr.Prompt">Gcr.Prompt</a></span> interface.</p>
+<p class="p">If <span class="code">prompt_type</span> is non-zero then the <span class="link"><a href="../GLib-2.0/GLib.Type.html" title="../GLib-2.0/GLib.Type.html">GLib.Type</a></span> must implement the <span class="link"><a href="Gcr.Prompt.html" title="Gcr.Prompt">Gcr.Prompt</a></span>
+interface.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">mode</span></dt>
+<dd class="terms"><p class="p">the mode for the prompt</p></dd>
+<dt class="terms"><span class="code">prompt_type</span></dt>
+<dd class="terms"><p class="p">the gobject type for prompts created by this prompter</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">a new prompter service</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gcr.SystemPrompter.html" title="Gcr.SystemPrompter">Gcr.SystemPrompter</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

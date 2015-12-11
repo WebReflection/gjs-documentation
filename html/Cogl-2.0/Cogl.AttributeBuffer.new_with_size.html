@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.AttributeBuffer.new_with_size</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » <a class="trail" href="Cogl.AttributeBuffer.html" title="Cogl.AttributeBuffer">Cogl.AttributeBuffer</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.AttributeBuffer.new_with_size</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function new_with_size(context: <span class="link"><a href="Cogl.Context.html" title="Cogl.Context">Cogl.Context</a></span>, bytes: Number(gsize)): <span class="link"><a href="Cogl.AttributeBuffer.html" title="Cogl.AttributeBuffer">Cogl.AttributeBuffer</a></span> {
+    // Gjs wrapper for cogl_attribute_buffer_new_with_size()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Describes a new <span class="link"><a href="Cogl.AttributeBuffer.html" title="Cogl.AttributeBuffer">Cogl.AttributeBuffer</a></span> of @size bytes to contain
+arrays of vertex attribute data. Afterwards data can be set using
+<span class="link"><a href="Cogl.buffer_set_data.html" title="Cogl.buffer_set_data">Cogl.buffer_set_data</a></span> or by mapping it into the application's
+address space using <span class="link"><a href="Cogl.buffer_map.html" title="Cogl.buffer_map">Cogl.buffer_map</a></span>.</p>
+<p class="p">The underlying storage of this buffer isn't allocated by this
+function so that you have an opportunity to use the
+<span class="link"><a href="Cogl.buffer_set_update_hint.html" title="Cogl.buffer_set_update_hint">Cogl.buffer_set_update_hint</a></span> and cogl_buffer_set_usage_hint()
+functions which may influence how the storage is allocated. The
+storage will be allocated once you upload data to the buffer.</p>
+<p class="p">Note: You can assume this function always succeeds and won't return
+<span class="code">null</span></p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">context</span></dt>
+<dd class="terms"><p class="p">A <span class="link"><a href="Cogl.Context.html" title="Cogl.Context">Cogl.Context</a></span></p></dd>
+<dt class="terms"><span class="code">bytes</span></dt>
+<dd class="terms"><p class="p">The number of bytes to allocate for vertex attribute data.</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">A newly allocated <span class="link"><a href="Cogl.AttributeBuffer.html" title="Cogl.AttributeBuffer">Cogl.AttributeBuffer</a></span>. Never <span class="code">null</span>.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.AttributeBuffer.html" title="Cogl.AttributeBuffer">Cogl.AttributeBuffer</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

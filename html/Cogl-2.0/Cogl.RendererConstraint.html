@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.RendererConstraint</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.RendererConstraint</span></h1></div>
+<div class="region">
+<div class="contents">
+<p class="p">These constraint flags are hard-coded features of the different renderer
+backends. Sometimes a platform may support multiple rendering options which
+Cogl will usually choose from automatically. Some of these features are
+important to higher level applications and frameworks though, such as
+whether a renderer is X11 based because an application might only support
+X11 based input handling. An application might also need to ensure EGL is
+used internally too if they depend on access to an EGLDisplay for some
+purpose.</p>
+<p class="p">Applications should ideally minimize how many of these constraints
+they depend on to ensure maximum portability.</p>
+<p class="p">Since 1.10</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">RendererConstraint.USES_X11</span></dt>
+<dd class="terms"><p class="p">Require the renderer to be X11 based</p></dd>
+<dt class="terms"><span class="code">RendererConstraint.USES_XLIB</span></dt>
+<dd class="terms"><p class="p">Require the renderer to be X11
+                                     based and use Xlib</p></dd>
+<dt class="terms"><span class="code">RendererConstraint.USES_EGL</span></dt>
+<dd class="terms"><p class="p">Require the renderer to be EGL based</p></dd>
+<dt class="terms"><span class="code">RendererConstraint.SUPPORTS_COGL_GLES2</span></dt>
+<dd class="terms"><p class="p">Require that the
+   renderer supports creating a <span class="link"><a href="Cogl.GLES2Context.html" title="Cogl.GLES2Context">Cogl.GLES2Context</a></span> via
+   <span class="link"><a href="Cogl.GLES2Context.new.html" title="Cogl.GLES2Context.new">Cogl.GLES2Context.new</a></span>. This can be used to integrate GLES 2.0
+   code into Cogl based applications.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Cogl">Cogl</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

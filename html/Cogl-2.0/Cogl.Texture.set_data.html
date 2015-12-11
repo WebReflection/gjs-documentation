@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.Texture.prototype.set_data</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » <a class="trail" href="Cogl.Texture.html" title="Cogl.Texture">Cogl.Texture</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.Texture.prototype.set_data</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function set_data(format: <span class="link"><a href="Cogl.PixelFormat.html" title="Cogl.PixelFormat">Cogl.PixelFormat</a></span>, rowstride: Number(gint), data: Number(guint8), level: Number(gint)): <span class="link"><a href="Cogl.Bool.html" title="Cogl.Bool">Cogl.Bool</a></span> {
+    // Gjs wrapper for cogl_texture_set_data()
+}
+  </pre></div></div></div></div></div>
+<p class="p"><span class="code">texture</span> a <span class="link"><a href="Cogl.Texture.html" title="Cogl.Texture">Cogl.Texture</a></span>.
+Sets all the pixels for a given mipmap <span class="code">level</span> by copying the pixel
+data pointed to by the <span class="code">data</span> argument into the given <span class="code">texture</span>.</p>
+<p class="p"><span class="code">data</span> should point to the first pixel to copy corresponding
+to the top left of the mipmap <span class="code">level</span> being set.</p>
+<p class="p">If <span class="code">rowstride</span> equals 0 then it will be automatically calculated
+from the width of the mipmap level and the bytes-per-pixel for the
+given <span class="code">format</span>.</p>
+<p class="p">A mipmap <span class="code">level</span> of 0 corresponds to the largest, base image of a
+texture and <span class="code">level</span> 1 is half the width and height of level 0. If
+dividing any dimension of the previous level by two results in a
+fraction then round the number down (floor()), but clamp to 1
+something like this:</p>
+<p class="p">|[
+ next_width = MAX (1, floor (prev_width));
+]|</p>
+<p class="p">You can determine the number of mipmap levels for a given texture
+like this:</p>
+<p class="p">|[
+ n_levels = 1 + floor (log2 (max_dimension));
+]|</p>
+<p class="p">Where %max_dimension is the larger of <span class="link"><a href="Cogl.Texture.get_width.html" title="Cogl.Texture.prototype.get_width">Cogl.Texture.prototype.get_width</a></span> and
+<span class="link"><a href="Cogl.Texture.get_height.html" title="Cogl.Texture.prototype.get_height">Cogl.Texture.prototype.get_height</a></span>.</p>
+<p class="p">It is an error to pass a <span class="code">level</span> number &gt;= the number of levels that
+<span class="code">texture</span> can have according to the above calculation.</p>
+<p class="p">&lt;note&gt;Since the storage for a <span class="link"><a href="Cogl.Texture.html" title="Cogl.Texture">Cogl.Texture</a></span> is allocated lazily then
+if the given <span class="code">texture</span> has not previously been allocated then this
+api can return <span class="code">false</span> and throw an exceptional @error if there is
+not enough memory to allocate storage for <span class="code">texture</span>.&lt;/note&gt;</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">format</span></dt>
+<dd class="terms"><p class="p">the <span class="link"><a href="Cogl.PixelFormat.html" title="Cogl.PixelFormat">Cogl.PixelFormat</a></span> used in the source <span class="code">data</span> buffer.</p></dd>
+<dt class="terms"><span class="code">rowstride</span></dt>
+<dd class="terms"><p class="p">rowstride of the source <span class="code">data</span> buffer (computed from
+            the texture width and <span class="code">format</span> if it equals 0)</p></dd>
+<dt class="terms"><span class="code">data</span></dt>
+<dd class="terms"><p class="p">the source data, pointing to the first top-left pixel to set</p></dd>
+<dt class="terms"><span class="code">level</span></dt>
+<dd class="terms"><p class="p">The mipmap level to update (Normally 0 for the largest,
+        base texture)</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> if the data upload was successful, and
+              <span class="code">false</span> otherwise</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Cogl.Texture.html" title="Cogl.Texture">Cogl.Texture</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

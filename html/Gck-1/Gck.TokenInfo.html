@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gck.TokenInfo</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gck">Gck</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gck.TokenInfo</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gck = imports.gi.Gck;
+
+let tokenInfo = new Gck.TokenInfo({
+    <span class="link"><a href="Gck.TokenInfo-flags.html" title="Gck.TokenInfo.flags">flags</a></span>: value
+    <span class="link"><a href="Gck.TokenInfo-max_session_count.html" title="Gck.TokenInfo.max_session_count">max_session_count</a></span>: value
+    <span class="link"><a href="Gck.TokenInfo-session_count.html" title="Gck.TokenInfo.session_count">session_count</a></span>: value
+    <span class="link"><a href="Gck.TokenInfo-max_rw_session_count.html" title="Gck.TokenInfo.max_rw_session_count">max_rw_session_count</a></span>: value
+    <span class="link"><a href="Gck.TokenInfo-rw_session_count.html" title="Gck.TokenInfo.rw_session_count">rw_session_count</a></span>: value
+    <span class="link"><a href="Gck.TokenInfo-max_pin_len.html" title="Gck.TokenInfo.max_pin_len">max_pin_len</a></span>: value
+    <span class="link"><a href="Gck.TokenInfo-min_pin_len.html" title="Gck.TokenInfo.min_pin_len">min_pin_len</a></span>: value
+    <span class="link"><a href="Gck.TokenInfo-total_public_memory.html" title="Gck.TokenInfo.total_public_memory">total_public_memory</a></span>: value
+    <span class="link"><a href="Gck.TokenInfo-free_public_memory.html" title="Gck.TokenInfo.free_public_memory">free_public_memory</a></span>: value
+    <span class="link"><a href="Gck.TokenInfo-total_private_memory.html" title="Gck.TokenInfo.total_private_memory">total_private_memory</a></span>: value
+    <span class="link"><a href="Gck.TokenInfo-free_private_memory.html" title="Gck.TokenInfo.free_private_memory">free_private_memory</a></span>: value
+    <span class="link"><a href="Gck.TokenInfo-hardware_version_major.html" title="Gck.TokenInfo.hardware_version_major">hardware_version_major</a></span>: value
+    <span class="link"><a href="Gck.TokenInfo-hardware_version_minor.html" title="Gck.TokenInfo.hardware_version_minor">hardware_version_minor</a></span>: value
+    <span class="link"><a href="Gck.TokenInfo-firmware_version_major.html" title="Gck.TokenInfo.firmware_version_major">firmware_version_major</a></span>: value
+    <span class="link"><a href="Gck.TokenInfo-firmware_version_minor.html" title="Gck.TokenInfo.firmware_version_minor">firmware_version_minor</a></span>: value
+    <span class="link"><a href="Gck.TokenInfo-utc_time.html" title="Gck.TokenInfo.utc_time">utc_time</a></span>: value
+});
+  </pre></div></div></div></div></div>
+<p class="p">Represents information about a PKCS11 token.</p>
+<p class="p">This is analogous to a CK_TOKEN_INFO structure, but the
+strings are far more usable.</p>
+<p class="p">When you're done with this structure it should be released with
+<span class="link"><a href="Gck.TokenInfo.free.html" title="Gck.TokenInfo.prototype.free">Gck.TokenInfo.prototype.free</a></span>.</p>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gck.TokenInfo.copy.html" title="Gck.TokenInfo.prototype.copy">Gck.TokenInfo.prototype.copy</a></li>
+<li class="links "><a href="Gck.TokenInfo.free.html" title="Gck.TokenInfo.prototype.free">Gck.TokenInfo.prototype.free</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Fields</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gck.TokenInfo-firmware_version_major.html" title="Gck.TokenInfo.firmware_version_major">firmware_version_major</a></li>
+<li class="links "><a href="Gck.TokenInfo-firmware_version_minor.html" title="Gck.TokenInfo.firmware_version_minor">firmware_version_minor</a></li>
+<li class="links "><a href="Gck.TokenInfo-flags.html" title="Gck.TokenInfo.flags">flags</a></li>
+<li class="links "><a href="Gck.TokenInfo-free_private_memory.html" title="Gck.TokenInfo.free_private_memory">free_private_memory</a></li>
+<li class="links "><a href="Gck.TokenInfo-free_public_memory.html" title="Gck.TokenInfo.free_public_memory">free_public_memory</a></li>
+<li class="links "><a href="Gck.TokenInfo-hardware_version_major.html" title="Gck.TokenInfo.hardware_version_major">hardware_version_major</a></li>
+<li class="links "><a href="Gck.TokenInfo-hardware_version_minor.html" title="Gck.TokenInfo.hardware_version_minor">hardware_version_minor</a></li>
+<li class="links "><a href="Gck.TokenInfo-label.html" title="Gck.TokenInfo.label">label</a></li>
+<li class="links "><a href="Gck.TokenInfo-manufacturer_id.html" title="Gck.TokenInfo.manufacturer_id">manufacturer_id</a></li>
+<li class="links "><a href="Gck.TokenInfo-max_pin_len.html" title="Gck.TokenInfo.max_pin_len">max_pin_len</a></li>
+<li class="links "><a href="Gck.TokenInfo-max_rw_session_count.html" title="Gck.TokenInfo.max_rw_session_count">max_rw_session_count</a></li>
+<li class="links "><a href="Gck.TokenInfo-max_session_count.html" title="Gck.TokenInfo.max_session_count">max_session_count</a></li>
+<li class="links "><a href="Gck.TokenInfo-min_pin_len.html" title="Gck.TokenInfo.min_pin_len">min_pin_len</a></li>
+<li class="links "><a href="Gck.TokenInfo-model.html" title="Gck.TokenInfo.model">model</a></li>
+<li class="links "><a href="Gck.TokenInfo-rw_session_count.html" title="Gck.TokenInfo.rw_session_count">rw_session_count</a></li>
+<li class="links "><a href="Gck.TokenInfo-serial_number.html" title="Gck.TokenInfo.serial_number">serial_number</a></li>
+<li class="links "><a href="Gck.TokenInfo-session_count.html" title="Gck.TokenInfo.session_count">session_count</a></li>
+<li class="links "><a href="Gck.TokenInfo-total_private_memory.html" title="Gck.TokenInfo.total_private_memory">total_private_memory</a></li>
+<li class="links "><a href="Gck.TokenInfo-total_public_memory.html" title="Gck.TokenInfo.total_public_memory">total_public_memory</a></li>
+<li class="links "><a href="Gck.TokenInfo-utc_time.html" title="Gck.TokenInfo.utc_time">utc_time</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gck">Gck</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

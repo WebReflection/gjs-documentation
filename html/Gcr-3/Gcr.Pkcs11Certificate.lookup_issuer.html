@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gcr.Pkcs11Certificate.lookup_issuer</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gcr">Gcr</a> » <a class="trail" href="Gcr.Pkcs11Certificate.html" title="Gcr.Pkcs11Certificate">Gcr.Pkcs11Certificate</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gcr.Pkcs11Certificate.lookup_issuer</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function lookup_issuer(certificate: <span class="link"><a href="Gcr.Certificate.html" title="Gcr.Certificate">Gcr.Certificate</a></span>, cancellable: <span class="link"><a href="../Gio-2.0/Gio.Cancellable.html" title="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</a></span>): <span class="link"><a href="Gcr.Certificate.html" title="Gcr.Certificate">Gcr.Certificate</a></span> {
+    // Gjs wrapper for gcr_pkcs11_certificate_lookup_issuer()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Lookup a the issuer of a <span class="code">certificate</span> in the PKCS\#11 storage. The
+lookup is done using the issuer DN of the certificate. No certificate chain
+verification is done. Use a crypto library to make trust decisions.</p>
+<p class="p">This call may block, see <span class="link"><a href="Gcr.Pkcs11Certificate.lookup_issuer.html" title="Gcr.Pkcs11Certificate.lookup_issuer">Gcr.Pkcs11Certificate.lookup_issuer</a></span> for the
+non-blocking version.</p>
+<p class="p">Will return <span class="code">null</span> if no issuer certificate is found. Use @error to determine
+if an error occurred.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">certificate</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="Gcr.Certificate.html" title="Gcr.Certificate">Gcr.Certificate</a></span></p></dd>
+<dt class="terms"><span class="code">cancellable</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="../Gio-2.0/Gio.Cancellable.html" title="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</a></span></p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">a new <span class="link"><a href="Gcr.Pkcs11Certificate.html" title="Gcr.Pkcs11Certificate">Gcr.Pkcs11Certificate</a></span>, or <span class="code">null</span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gcr.Pkcs11Certificate.html" title="Gcr.Pkcs11Certificate">Gcr.Pkcs11Certificate</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

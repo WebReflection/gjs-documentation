@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gck.Builder.prototype.take_data</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gck">Gck</a> » <a class="trail" href="Gck.Builder.html" title="Gck.Builder">Gck.Builder</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gck.Builder.prototype.take_data</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function take_data(attr_type: Number(gulong), value: Number(guint8), length: Number(gsize)): void {
+    // Gjs wrapper for gck_builder_take_data()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Add a new attribute to the builder with an arbitrary value. Unconditionally
+adds a new attribute, even if one with the same <span class="code">attr_type</span> already exists.</p>
+<p class="p">Ownership of the <span class="code">value</span> memory is taken by the builder, may be reallocated,
+and is eventually freed with g_free(). The memory must have been allocated
+using the standard GLib memory allocation routines.</p>
+<p class="p"><span class="code">null</span> may be specified for the <span class="code">value</span> argument, in which case an empty
+attribute is created. GCK_INVALID may be specified for the length, in
+which case an invalid attribute is created in the PKCS\#11 style.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">attr_type</span></dt>
+<dd class="terms"><p class="p">the new attribute type</p></dd>
+<dt class="terms"><span class="code">value</span></dt>
+<dd class="terms"><p class="p">(array length=length): (allow-none): the new
+        attribute memory</p></dd>
+<dt class="terms"><span class="code">length</span></dt>
+<dd class="terms"><p class="p">the length of the memory</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gck.Builder.html" title="Gck.Builder">Gck.Builder</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

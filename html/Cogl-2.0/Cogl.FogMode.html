@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Cogl.FogMode</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Cogl">Cogl</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Cogl.FogMode</span></h1></div>
+<div class="region">
+<div class="contents">
+<p class="p">The fog mode determines the equation used to calculate the fogging blend
+factor while fogging is enabled. The simplest <span class="link"><a href="Cogl.FogMode.html" title="Cogl.FogMode">Cogl.FogMode</a></span>.linear mode
+determines f as:</p>
+<p class="p">|[
+  f = end - eye_distance / end - start
+]|</p>
+<p class="p">Where eye_distance is the distance of the current fragment in eye
+coordinates from the origin.</p>
+<p class="p">Since 1.0</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">FogMode.LINEAR</span></dt>
+<dd class="terms"><p class="p">Calculates the fog blend factor as:
+|[
+  f = end - eye_distance / end - start
+]|</p></dd>
+<dt class="terms"><span class="code">FogMode.EXPONENTIAL</span></dt>
+<dd class="terms"><p class="p">Calculates the fog blend factor as:
+|[
+  f = e ^ -(density * eye_distance)
+]|</p></dd>
+<dt class="terms"><span class="code">FogMode.EXPONENTIAL_SQUARED</span></dt>
+<dd class="terms"><p class="p">Calculates the fog blend factor as:
+|[
+  f = e ^ -(density * eye_distance)^2
+]|</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Cogl">Cogl</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>
