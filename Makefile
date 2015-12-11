@@ -63,6 +63,17 @@ html/%: $(outdir)/generated/%
 upload: all
 	rsync -av --delete html/ master.gnome.org:public_html/docs/
 
+pages:
+	git pull --rebase
+	mkdir -p ~/tmp-gjs-documentation
+	cp -r ./html/* ~/tmp-gjs-documentation
+	git checkout gh-pages
+	cp -r ~/tmp-gjs-documentation/* ./
+	git add .
+	git commit -m 'updated documentation'
+	git push
+	git checkout master
+
 clean:
 	-rm -fr $(HTMLS)
 maintainerclean:
