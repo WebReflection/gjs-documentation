@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.Volume</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.Volume</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
+
+let volume = new Gio.Volume();
+  </pre></div></div></div></div></div>
+<p class="p">The <span class="link"><a href="Gio.Volume.html" title="Gio.Volume">Gio.Volume</a></span> interface represents user-visible objects that can be
+mounted. Note, when porting from GnomeVFS, <span class="link"><a href="Gio.Volume.html" title="Gio.Volume">Gio.Volume</a></span> is the moral
+equivalent of #GnomeVFSDrive.</p>
+<p class="p">Mounting a <span class="link"><a href="Gio.Volume.html" title="Gio.Volume">Gio.Volume</a></span> instance is an asynchronous operation. For more
+information about asynchronous operations, see <span class="link"><a href="Gio.AsyncResult.html" title="Gio.AsyncResult">Gio.AsyncResult</a></span> and
+<span class="link"><a href="Gio.Task.html" title="Gio.Task">Gio.Task</a></span>. To mount a <span class="link"><a href="Gio.Volume.html" title="Gio.Volume">Gio.Volume</a></span>, first call <span class="link"><a href="Gio.Volume.mount.html" title="Gio.Volume.prototype.mount">Gio.Volume.prototype.mount</a></span> with (at
+least) the <span class="link"><a href="Gio.Volume.html" title="Gio.Volume">Gio.Volume</a></span> instance, optionally a <span class="link"><a href="Gio.MountOperation.html" title="Gio.MountOperation">Gio.MountOperation</a></span> object
+and a <span class="link"><a href="Gio.AsyncReadyCallback.html" title="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</a></span>.</p>
+<p class="p">Typically, one will only want to pass <span class="code">null</span> for the
+<span class="link"><a href="Gio.MountOperation.html" title="Gio.MountOperation">Gio.MountOperation</a></span> if automounting all volumes when a desktop session
+starts since it's not desirable to put up a lot of dialogs asking
+for credentials.</p>
+<p class="p">The callback will be fired when the operation has resolved (either
+with success or failure), and a #GAsyncReady structure will be
+passed to the callback.  That callback should then call
+<span class="link"><a href="Gio.Volume.mount_finish.html" title="Gio.Volume.prototype.mount_finish">Gio.Volume.prototype.mount_finish</a></span> with the <span class="link"><a href="Gio.Volume.html" title="Gio.Volume">Gio.Volume</a></span> instance and the
+#GAsyncReady data to see if the operation was completed
+successfully.  If an @error is present when <span class="link"><a href="Gio.Volume.mount_finish.html" title="Gio.Volume.prototype.mount_finish">Gio.Volume.prototype.mount_finish</a></span>
+is called, then it will be filled with any error information.</p>
+<p class="p">## Volume Identifiers # {#volume-identifier}</p>
+<p class="p">It is sometimes necessary to directly access the underlying
+operating system object behind a volume (e.g. for passing a volume
+to an application via the commandline). For this purpose, GIO
+allows to obtain an 'identifier' for the volume. There can be
+different kinds of identifiers, such as Hal UDIs, filesystem labels,
+traditional Unix devices (e.g. `/dev/sda2`), UUIDs. GIO uses predefined
+strings as names for the different kinds of identifiers:
+#G_VOLUME_IDENTIFIER_KIND_HAL_UDI, #G_VOLUME_IDENTIFIER_KIND_LABEL, etc.
+Use <span class="link"><a href="Gio.Volume.get_identifier.html" title="Gio.Volume.prototype.get_identifier">Gio.Volume.prototype.get_identifier</a></span> to obtain an identifier for a volume.</p>
+<p class="p">
+Note that #G_VOLUME_IDENTIFIER_KIND_HAL_UDI will only be available
+when the gvfs hal volume monitor is in use. Other volume monitors
+will generally be able to provide the #G_VOLUME_IDENTIFIER_KIND_UNIX_DEVICE
+identifier, which can be used to obtain a hal device by means of
+libhal_manager_find_device_string_match().</p>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Prerequisites</span></h2></div>
+<div class="region"><div class="contents"><p class="p">Volume requires GObject.Object</p></div></div>
+</div></div>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Known Implementations</span></h2></div>
+<div class="region"><div class="contents"><p class="p">None</p></div></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.Volume.can_eject.html" title="Gio.Volume.prototype.can_eject">Gio.Volume.prototype.can_eject</a></li>
+<li class="links "><a href="Gio.Volume.can_mount.html" title="Gio.Volume.prototype.can_mount">Gio.Volume.prototype.can_mount</a></li>
+<li class="links "><a href="Gio.Volume.eject.html" title="Gio.Volume.prototype.eject">Gio.Volume.prototype.eject</a></li>
+<li class="links "><a href="Gio.Volume.eject_finish.html" title="Gio.Volume.prototype.eject_finish">Gio.Volume.prototype.eject_finish</a></li>
+<li class="links "><a href="Gio.Volume.eject_with_operation.html" title="Gio.Volume.prototype.eject_with_operation">Gio.Volume.prototype.eject_with_operation</a></li>
+<li class="links "><a href="Gio.Volume.eject_with_operation_finish.html" title="Gio.Volume.prototype.eject_with_operation_finish">Gio.Volume.prototype.eject_with_operation_finish</a></li>
+<li class="links "><a href="Gio.Volume.enumerate_identifiers.html" title="Gio.Volume.prototype.enumerate_identifiers">Gio.Volume.prototype.enumerate_identifiers</a></li>
+<li class="links "><a href="Gio.Volume.get_activation_root.html" title="Gio.Volume.prototype.get_activation_root">Gio.Volume.prototype.get_activation_root</a></li>
+<li class="links "><a href="Gio.Volume.get_drive.html" title="Gio.Volume.prototype.get_drive">Gio.Volume.prototype.get_drive</a></li>
+<li class="links "><a href="Gio.Volume.get_icon.html" title="Gio.Volume.prototype.get_icon">Gio.Volume.prototype.get_icon</a></li>
+<li class="links "><a href="Gio.Volume.get_identifier.html" title="Gio.Volume.prototype.get_identifier">Gio.Volume.prototype.get_identifier</a></li>
+<li class="links "><a href="Gio.Volume.get_mount.html" title="Gio.Volume.prototype.get_mount">Gio.Volume.prototype.get_mount</a></li>
+<li class="links "><a href="Gio.Volume.get_name.html" title="Gio.Volume.prototype.get_name">Gio.Volume.prototype.get_name</a></li>
+<li class="links "><a href="Gio.Volume.get_sort_key.html" title="Gio.Volume.prototype.get_sort_key">Gio.Volume.prototype.get_sort_key</a></li>
+<li class="links "><a href="Gio.Volume.get_symbolic_icon.html" title="Gio.Volume.prototype.get_symbolic_icon">Gio.Volume.prototype.get_symbolic_icon</a></li>
+<li class="links "><a href="Gio.Volume.get_uuid.html" title="Gio.Volume.prototype.get_uuid">Gio.Volume.prototype.get_uuid</a></li>
+<li class="links "><a href="Gio.Volume.mount.html" title="Gio.Volume.prototype.mount">Gio.Volume.prototype.mount</a></li>
+<li class="links "><a href="Gio.Volume.mount_finish.html" title="Gio.Volume.prototype.mount_finish">Gio.Volume.prototype.mount_finish</a></li>
+<li class="links "><a href="Gio.Volume.should_automount.html" title="Gio.Volume.prototype.should_automount">Gio.Volume.prototype.should_automount</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Signals</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.Volume-changed.html" title="Gio.Volume::changed">changed</a></li>
+<li class="links "><a href="Gio.Volume-removed.html" title="Gio.Volume::removed">removed</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Virtual functions</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.Volume-can_eject.html" title="Gio.Volume::can_eject">Gio.Volume::can_eject</a></li>
+<li class="links "><a href="Gio.Volume-can_mount.html" title="Gio.Volume::can_mount">Gio.Volume::can_mount</a></li>
+<li class="links "><a href="Gio.Volume-eject.html" title="Gio.Volume::eject">Gio.Volume::eject</a></li>
+<li class="links "><a href="Gio.Volume-eject_finish.html" title="Gio.Volume::eject_finish">Gio.Volume::eject_finish</a></li>
+<li class="links "><a href="Gio.Volume-eject_with_operation.html" title="Gio.Volume::eject_with_operation">Gio.Volume::eject_with_operation</a></li>
+<li class="links "><a href="Gio.Volume-eject_with_operation_finish.html" title="Gio.Volume::eject_with_operation_finish">Gio.Volume::eject_with_operation_finish</a></li>
+<li class="links "><a href="Gio.Volume-enumerate_identifiers.html" title="Gio.Volume::enumerate_identifiers">Gio.Volume::enumerate_identifiers</a></li>
+<li class="links "><a href="Gio.Volume-get_activation_root.html" title="Gio.Volume::get_activation_root">Gio.Volume::get_activation_root</a></li>
+<li class="links "><a href="Gio.Volume-get_drive.html" title="Gio.Volume::get_drive">Gio.Volume::get_drive</a></li>
+<li class="links "><a href="Gio.Volume-get_icon.html" title="Gio.Volume::get_icon">Gio.Volume::get_icon</a></li>
+<li class="links "><a href="Gio.Volume-get_identifier.html" title="Gio.Volume::get_identifier">Gio.Volume::get_identifier</a></li>
+<li class="links "><a href="Gio.Volume-get_mount.html" title="Gio.Volume::get_mount">Gio.Volume::get_mount</a></li>
+<li class="links "><a href="Gio.Volume-get_name.html" title="Gio.Volume::get_name">Gio.Volume::get_name</a></li>
+<li class="links "><a href="Gio.Volume-get_sort_key.html" title="Gio.Volume::get_sort_key">Gio.Volume::get_sort_key</a></li>
+<li class="links "><a href="Gio.Volume-get_symbolic_icon.html" title="Gio.Volume::get_symbolic_icon">Gio.Volume::get_symbolic_icon</a></li>
+<li class="links "><a href="Gio.Volume-get_uuid.html" title="Gio.Volume::get_uuid">Gio.Volume::get_uuid</a></li>
+<li class="links "><a href="Gio.Volume-mount_finish.html" title="Gio.Volume::mount_finish">Gio.Volume::mount_finish</a></li>
+<li class="links "><a href="Gio.Volume-mount_fn.html" title="Gio.Volume::mount_fn">Gio.Volume::mount_fn</a></li>
+<li class="links "><a href="Gio.Volume-should_automount.html" title="Gio.Volume::should_automount">Gio.Volume::should_automount</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gio">Gio</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

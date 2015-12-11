@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.SimpleAsyncResult.prototype.complete_in_idle</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.SimpleAsyncResult.html" title="Gio.SimpleAsyncResult">Gio.SimpleAsyncResult</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.SimpleAsyncResult.prototype.complete_in_idle</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function complete_in_idle(): void {
+    // Gjs wrapper for g_simple_async_result_complete_in_idle()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Completes an asynchronous function in an idle handler in the
+[thread-default main context][g-main-context-push-thread-default]
+of the thread that <span class="code">simple</span> was initially created in
+(and re-pushes that context around the invocation of the callback).</p>
+<p class="p">Calling this function takes a reference to <span class="code">simple</span> for as long as
+is needed to complete the call.</p>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.SimpleAsyncResult.html" title="Gio.SimpleAsyncResult">Gio.SimpleAsyncResult</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

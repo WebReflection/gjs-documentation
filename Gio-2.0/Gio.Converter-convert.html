@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.Converter::convert</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.Converter.html" title="Gio.Converter">Gio.Converter</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.Converter::convert</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function vfunc_convert(inbuf: ByteArray, outbuf: void, outbuf_size: Number(gsize), flags: <span class="link"><a href="Gio.ConverterFlags.html" title="Gio.ConverterFlags">Gio.ConverterFlags</a></span>): [return_value: <span class="link"><a href="Gio.ConverterResult.html" title="Gio.ConverterResult">Gio.ConverterResult</a></span>, bytes_read: Number(gsize), bytes_written: Number(gsize)] {
+}
+  </pre></div></div></div></div></div>
+<p class="p">This is the main operation used when converting data. It is to be called
+multiple times in a loop, and each time it will do some work, i.e.
+producing some output (in <span class="code">outbuf</span>) or consuming some input (from <span class="code">inbuf</span>) or
+both. If its not possible to do any work an error is returned.</p>
+<p class="p">Note that a single call may not consume all input (or any input at all).
+Also a call may produce output even if given no input, due to state stored
+in the converter producing output.</p>
+<p class="p">If any data was either produced or consumed, and then an error happens, then
+only the successful conversion is reported and the error is returned on the
+next call.</p>
+<p class="p">A full conversion loop involves calling this method repeatedly, each time
+giving it new input and space output space. When there is no more input
+data after the data in <span class="code">inbuf</span>, the flag <span class="link"><a href="Gio.ConverterFlags.html" title="Gio.ConverterFlags">Gio.ConverterFlags</a></span>.input_at_end must be set.
+The loop will be (unless some error happens) returning <span class="link"><a href="Gio.ConverterResult.html" title="Gio.ConverterResult">Gio.ConverterResult</a></span>.converted
+each time until all data is consumed and all output is produced, then
+<span class="link"><a href="Gio.ConverterResult.html" title="Gio.ConverterResult">Gio.ConverterResult</a></span>.finished is returned instead. Note, that <span class="link"><a href="Gio.ConverterResult.html" title="Gio.ConverterResult">Gio.ConverterResult</a></span>.finished
+may be returned even if <span class="link"><a href="Gio.ConverterFlags.html" title="Gio.ConverterFlags">Gio.ConverterFlags</a></span>.input_at_end is not set, for instance
+in a decompression converter where the end of data is detectable from the
+data (and there might even be other data after the end of the compressed data).</p>
+<p class="p">When some data has successfully been converted <span class="code">bytes_read</span> and is set to
+the number of bytes read from <span class="code">inbuf</span>, and <span class="code">bytes_written</span> is set to indicate
+how many bytes was written to <span class="code">outbuf</span>. If there are more data to output
+or consume (i.e. unless the <span class="link"><a href="Gio.ConverterFlags.html" title="Gio.ConverterFlags">Gio.ConverterFlags</a></span>.input_at_end is specified) then
+<span class="link"><a href="Gio.ConverterResult.html" title="Gio.ConverterResult">Gio.ConverterResult</a></span>.converted is returned, and if no more data is to be output
+then <span class="link"><a href="Gio.ConverterResult.html" title="Gio.ConverterResult">Gio.ConverterResult</a></span>.finished is returned.</p>
+<p class="p">On error <span class="link"><a href="Gio.ConverterResult.html" title="Gio.ConverterResult">Gio.ConverterResult</a></span>.error is returned and @error is set accordingly.
+Some errors need special handling:</p>
+<p class="p"><span class="link"><a href="Gio.IOErrorEnum.html" title="Gio.IOErrorEnum">Gio.IOErrorEnum</a></span>.no_space is returned if there is not enough space
+to write the resulting converted data, the application should
+call the function again with a larger <span class="code">outbuf</span> to continue.</p>
+<p class="p"><span class="link"><a href="Gio.IOErrorEnum.html" title="Gio.IOErrorEnum">Gio.IOErrorEnum</a></span>.partial_input is returned if there is not enough
+input to fully determine what the conversion should produce,
+and the <span class="link"><a href="Gio.ConverterFlags.html" title="Gio.ConverterFlags">Gio.ConverterFlags</a></span>.input_at_end flag is not set. This happens for
+example with an incomplete multibyte sequence when converting text,
+or when a regexp matches up to the end of the input (and may match
+further input). It may also happen when <span class="code">inbuf_size</span> is zero and
+there is no more data to produce.</p>
+<p class="p">When this happens the application should read more input and then
+call the function again. If further input shows that there is no
+more data call the function again with the same data but with
+the <span class="link"><a href="Gio.ConverterFlags.html" title="Gio.ConverterFlags">Gio.ConverterFlags</a></span>.input_at_end flag set. This may cause the conversion
+to finish as e.g. in the regexp match case (or, to fail again with
+<span class="link"><a href="Gio.IOErrorEnum.html" title="Gio.IOErrorEnum">Gio.IOErrorEnum</a></span>.partial_input in e.g. a charset conversion where the
+input is actually partial).</p>
+<p class="p">After <span class="link"><a href="Gio.Converter.convert.html" title="Gio.Converter.prototype.convert">Gio.Converter.prototype.convert</a></span> has returned <span class="link"><a href="Gio.ConverterResult.html" title="Gio.ConverterResult">Gio.ConverterResult</a></span>.finished the
+converter object is in an invalid state where its not allowed
+to call <span class="link"><a href="Gio.Converter.convert.html" title="Gio.Converter.prototype.convert">Gio.Converter.prototype.convert</a></span> anymore. At this time you can only
+free the object or call <span class="link"><a href="Gio.Converter.reset.html" title="Gio.Converter.prototype.reset">Gio.Converter.prototype.reset</a></span> to reset it to the
+initial state.</p>
+<p class="p">If the flag <span class="link"><a href="Gio.ConverterFlags.html" title="Gio.ConverterFlags">Gio.ConverterFlags</a></span>.flush is set then conversion is modified
+to try to write out all internal state to the output. The application
+has to call the function multiple times with the flag set, and when
+the available input has been consumed and all internal state has
+been produced then <span class="link"><a href="Gio.ConverterResult.html" title="Gio.ConverterResult">Gio.ConverterResult</a></span>.flushed (or <span class="link"><a href="Gio.ConverterResult.html" title="Gio.ConverterResult">Gio.ConverterResult</a></span>.finished if
+really at the end) is returned instead of <span class="link"><a href="Gio.ConverterResult.html" title="Gio.ConverterResult">Gio.ConverterResult</a></span>.converted.
+This is somewhat similar to what happens at the end of the input stream,
+but done in the middle of the data.</p>
+<p class="p">This has different meanings for different conversions. For instance
+in a compression converter it would mean that we flush all the
+compression state into output such that if you uncompress the
+compressed data you get back all the input data. Doing this may
+make the final file larger due to padding though. Another example
+is a regexp conversion, where if you at the end of the flushed data
+have a match, but there is also a potential longer match. In the
+non-flushed case we would ask for more input, but when flushing we
+treat this as the end of input and do the match.</p>
+<p class="p">Flushing is not always possible (like if a charset converter flushes
+at a partial multibyte sequence). Converters are supposed to try
+to produce as much output as possible and then return an error
+(typically <span class="link"><a href="Gio.IOErrorEnum.html" title="Gio.IOErrorEnum">Gio.IOErrorEnum</a></span>.partial_input).</p>
+<p class="p">Since 2.24</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">inbuf</span></dt>
+<dd class="terms"><p class="p">the buffer
+        containing the data to convert.</p></dd>
+<dt class="terms"><span class="code">outbuf</span></dt>
+<dd class="terms"><p class="p">a buffer to write converted data in.</p></dd>
+<dt class="terms"><span class="code">outbuf_size</span></dt>
+<dd class="terms"><p class="p">the number of bytes in <span class="code">outbuf</span>, must be at least one</p></dd>
+<dt class="terms"><span class="code">flags</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="Gio.ConverterFlags.html" title="Gio.ConverterFlags">Gio.ConverterFlags</a></span> controlling the conversion details</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="Gio.ConverterResult.html" title="Gio.ConverterResult">Gio.ConverterResult</a></span>, <span class="link"><a href="Gio.ConverterResult.html" title="Gio.ConverterResult">Gio.ConverterResult</a></span>.error on error.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.Converter.html" title="Gio.Converter">Gio.Converter</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

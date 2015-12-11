@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.VariantDict.prototype.clear</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » <a class="trail" href="GLib.VariantDict.html" title="GLib.VariantDict">GLib.VariantDict</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.VariantDict.prototype.clear</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function clear(): void {
+    // Gjs wrapper for g_variant_dict_clear()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Releases all memory associated with a <span class="link"><a href="GLib.VariantDict.html" title="GLib.VariantDict">GLib.VariantDict</a></span> without freeing
+the <span class="link"><a href="GLib.VariantDict.html" title="GLib.VariantDict">GLib.VariantDict</a></span> structure itself.</p>
+<p class="p">It typically only makes sense to do this on a stack-allocated
+<span class="link"><a href="GLib.VariantDict.html" title="GLib.VariantDict">GLib.VariantDict</a></span> if you want to abort building the value part-way
+through.  This function need not be called if you call
+<span class="link"><a href="GLib.VariantDict.end.html" title="GLib.VariantDict.prototype.end">GLib.VariantDict.prototype.end</a></span> and it also doesn't need to be called on dicts
+allocated with g_variant_dict_new (see <span class="link"><a href="GLib.VariantDict.unref.html" title="GLib.VariantDict.prototype.unref">GLib.VariantDict.prototype.unref</a></span> for
+that).</p>
+<p class="p">It is valid to call this function on either an initialised
+<span class="link"><a href="GLib.VariantDict.html" title="GLib.VariantDict">GLib.VariantDict</a></span> or one that was previously cleared by an earlier call
+to <span class="link"><a href="GLib.VariantDict.clear.html" title="GLib.VariantDict.prototype.clear">GLib.VariantDict.prototype.clear</a></span> but it is not valid to call this function
+on uninitialised memory.</p>
+<p class="p">Since 2.40</p>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="GLib.VariantDict.html" title="GLib.VariantDict">GLib.VariantDict</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

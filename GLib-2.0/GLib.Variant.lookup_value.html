@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.Variant.prototype.lookup_value</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » <a class="trail" href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.Variant.prototype.lookup_value</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function lookup_value(key: String, expected_type: <span class="link"><a href="GLib.VariantType.html" title="GLib.VariantType">GLib.VariantType</a></span>): <span class="link"><a href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a></span> {
+    // Gjs wrapper for g_variant_lookup_value()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Looks up a value in a dictionary <span class="link"><a href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a></span>.</p>
+<p class="p">This function works with dictionaries of the type a{s*} (and equally
+well with type a{o*}, but we only further discuss the string case
+for sake of clarity).</p>
+<p class="p">In the event that <span class="code">dictionary</span> has the type a{sv}, the <span class="code">expected_type</span>
+string specifies what type of value is expected to be inside of the
+variant. If the value inside the variant has a different type then
+<span class="code">null</span> is returned. In the event that <span class="code">dictionary</span> has a value type other
+than v then <span class="code">expected_type</span> must directly match the key type and it is
+used to unpack the value directly or an error occurs.</p>
+<p class="p">In either case, if <span class="code">key</span> is not found in <span class="code">dictionary</span>, <span class="code">null</span> is returned.</p>
+<p class="p">If the key is found and the value has the correct type, it is
+returned.  If <span class="code">expected_type</span> was specified then any non-<span class="code">null</span> return
+value will have this type.</p>
+<p class="p">This function is currently implemented with a linear scan.  If you
+plan to do many lookups then <span class="link"><a href="GLib.VariantDict.html" title="GLib.VariantDict">GLib.VariantDict</a></span> may be more efficient.</p>
+<p class="p">Since 2.28</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">key</span></dt>
+<dd class="terms"><p class="p">the key to lookup in the dictionary</p></dd>
+<dt class="terms"><span class="code">expected_type</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="GLib.VariantType.html" title="GLib.VariantType">GLib.VariantType</a></span>, or <span class="code">null</span></p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">the value of the dictionary key, or <span class="code">null</span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

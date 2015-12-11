@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GdkX11.x11_register_standard_event_type</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GdkX11">GdkX11</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GdkX11.x11_register_standard_event_type</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function x11_register_standard_event_type(display: <span class="link"><a href="GdkX11.X11Display.html" title="GdkX11.X11Display">GdkX11.X11Display</a></span>, event_base: Number(gint), n_events: Number(gint)): void {
+    // Gjs wrapper for gdk_x11_register_standard_event_type()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Registers interest in receiving extension events with type codes
+between <span class="code">event_base</span> and `event_base + n_events - 1`.
+The registered events must have the window field in the same place
+as core X events (this is not the case for e.g. XKB extension events).</p>
+<p class="p">If an event type is registered, events of this type will go through
+global and window-specific filters (see gdk_window_add_filter()).
+Unregistered events will only go through global filters.
+GDK may register the events of some X extensions on its own.</p>
+<p class="p">This function should only be needed in unusual circumstances, e.g.
+when filtering XInput extension events on the root window.</p>
+<p class="p">Since 2.4</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">display</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="../Gdk-3.0/Gdk.Display.html" title="../Gdk-3.0/Gdk.Display.html">Gdk.Display</a></span></p></dd>
+<dt class="terms"><span class="code">event_base</span></dt>
+<dd class="terms"><p class="p">first event type code to register</p></dd>
+<dt class="terms"><span class="code">n_events</span></dt>
+<dd class="terms"><p class="p">number of event type codes to register</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="GdkX11">GdkX11</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

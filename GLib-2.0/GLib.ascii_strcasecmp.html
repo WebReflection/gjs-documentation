@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.ascii_strcasecmp</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.ascii_strcasecmp</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function ascii_strcasecmp(s1: String, s2: String): Number(gint) {
+    // Gjs wrapper for g_ascii_strcasecmp()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Compare two strings, ignoring the case of ASCII characters.</p>
+<p class="p">Unlike the BSD strcasecmp() function, this only recognizes standard
+ASCII letters and ignores the locale, treating all non-ASCII
+bytes as if they are not letters.</p>
+<p class="p">This function should be used only on strings that are known to be
+in encodings where the bytes corresponding to ASCII letters always
+represent themselves. This includes UTF-8 and the ISO-8859-*
+charsets, but not for instance double-byte encodings like the
+Windows Codepage 932, where the trailing bytes of double-byte
+characters include all ASCII letters. If you compare two CP932
+strings using this function, you will get false matches.</p>
+<p class="p">Both <span class="code">s1</span> and <span class="code">s2</span> must be non-<span class="code">null</span>.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">s1</span></dt>
+<dd class="terms"><p class="p">string to compare with <span class="code">s2</span></p></dd>
+<dt class="terms"><span class="code">s2</span></dt>
+<dd class="terms"><p class="p">string to compare with <span class="code">s1</span></p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">0 if the strings match, a negative value if <span class="code">s1</span> &lt; <span class="code">s2</span>,
+    or a positive value if <span class="code">s1</span> &gt; <span class="code">s2</span>.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="GLib">GLib</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

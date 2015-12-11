@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.ApplicationCommandLine.prototype.get_options_dict</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.ApplicationCommandLine.html" title="Gio.ApplicationCommandLine">Gio.ApplicationCommandLine</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.ApplicationCommandLine.prototype.get_options_dict</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function get_options_dict(): <span class="link"><a href="../GLib-2.0/GLib.VariantDict.html" title="../GLib-2.0/GLib.VariantDict.html">GLib.VariantDict</a></span> {
+    // Gjs wrapper for g_application_command_line_get_options_dict()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Gets the options there were passed to g_application_command_line().</p>
+<p class="p">If you did not override local_command_line() then these are the same
+options that were parsed according to the #GOptionEntrys added to the
+application with <span class="link"><a href="Gio.Application.add_main_option_entries.html" title="Gio.Application.prototype.add_main_option_entries">Gio.Application.prototype.add_main_option_entries</a></span> and possibly
+modified from your GApplication::handle-local-options handler.</p>
+<p class="p">If no options were sent then an empty dictionary is returned so that
+you don't need to check for <span class="code">null</span>.</p>
+<p class="p">Since 2.40</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="../GLib-2.0/GLib.VariantDict.html" title="../GLib-2.0/GLib.VariantDict.html">GLib.VariantDict</a></span> with the options</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.ApplicationCommandLine.html" title="Gio.ApplicationCommandLine">Gio.ApplicationCommandLine</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

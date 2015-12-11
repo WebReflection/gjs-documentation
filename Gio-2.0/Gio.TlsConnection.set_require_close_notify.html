@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.TlsConnection.prototype.set_require_close_notify</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.TlsConnection.html" title="Gio.TlsConnection">Gio.TlsConnection</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.TlsConnection.prototype.set_require_close_notify</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function set_require_close_notify(require_close_notify: Boolean): void {
+    // Gjs wrapper for g_tls_connection_set_require_close_notify()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Sets whether or not <span class="code">conn</span> expects a proper TLS close notification
+before the connection is closed. If this is <span class="code">true</span> (the default),
+then <span class="code">conn</span> will expect to receive a TLS close notification from its
+peer before the connection is closed, and will return a
+<span class="link"><a href="Gio.TlsError.html" title="Gio.TlsError">Gio.TlsError</a></span>.eof error if the connection is closed without proper
+notification (since this may indicate a network error, or
+man-in-the-middle attack).</p>
+<p class="p">In some protocols, the application will know whether or not the
+connection was closed cleanly based on application-level data
+(because the application-level data includes a length field, or is
+somehow self-delimiting); in this case, the close notify is
+redundant and sometimes omitted. (TLS 1.1 explicitly allows this;
+in TLS 1.0 it is technically an error, but often done anyway.) You
+can use <span class="link"><a href="Gio.TlsConnection.set_require_close_notify.html" title="Gio.TlsConnection.prototype.set_require_close_notify">Gio.TlsConnection.prototype.set_require_close_notify</a></span> to tell <span class="code">conn</span>
+to allow an "unannounced" connection close, in which case the close
+will show up as a 0-length read, as in a non-TLS
+<span class="link"><a href="Gio.SocketConnection.html" title="Gio.SocketConnection">Gio.SocketConnection</a></span>, and it is up to the application to check that
+the data has been fully received.</p>
+<p class="p">Note that this only affects the behavior when the peer closes the
+connection; when the application calls <span class="link"><a href="Gio.IOStream.close.html" title="Gio.IOStream.prototype.close">Gio.IOStream.prototype.close</a></span> itself
+on <span class="code">conn</span>, this will send a close notification regardless of the
+setting of this property. If you explicitly want to do an unclean
+close, you can close <span class="code">conn</span>'s <span class="link"><a href="Gio.TlsConnection-base-io-stream.html" title="Gio.TlsConnection.base_io_stream">Gio.TlsConnection.base_io_stream</a></span> rather
+than closing <span class="code">conn</span> itself.</p>
+<p class="p">Since 2.28</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">require_close_notify</span></dt>
+<dd class="terms"><p class="p">whether or not to require close notification</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.TlsConnection.html" title="Gio.TlsConnection">Gio.TlsConnection</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

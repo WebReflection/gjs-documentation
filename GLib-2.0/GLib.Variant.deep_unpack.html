@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.Variant.prototype.deep_unpack</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » <a class="trail" href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.Variant.prototype.deep_unpack</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function deep_unpack(): Any {
+    // Gjs wrapper for g_variant_get()
+}
+  </pre></div></div></div></div></div>
+<p class="p">This method operates like <span class="link"><a href="GLib.Variant.deep_unpack.html" title="GLib.Variant.prototype.deep_unpack">GLib.Variant.prototype.deep_unpack</a></span>
+  but also unpacks recursively in case of maybe types, arrays,
+  tuples and dictionary entries.
+  </p>
+<p class="p">Thus for example, on a <span class="link"><a href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a></span> of type <span class="code">au</span>,
+  <span class="link"><a href="GLib.Variant.unpack.html" title="GLib.Variant.prototype.unpack">GLib.Variant.prototype.unpack</a></span> will return an array of variants
+  holding <span class="code">u</span>, while this methods returns an array of numbers.</p>
+<p class="p">Similarly, on a <span class="link"><a href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a></span> of type <span class="code">ms</span>,
+  this method returns a string or <span class="code">null</span>, while <span class="link"><a href="GLib.Variant.unpack.html" title="GLib.Variant.prototype.unpack">GLib.Variant.prototype.unpack</a></span>
+  returns <span class="code">null</span> or a variant holding a string.</p>
+<p class="p">Note though that this method operates identically to <span class="link"><a href="GLib.Variant.unpack.html" title="GLib.Variant.prototype.unpack">GLib.Variant.prototype.unpack</a></span>
+  for variants holding <span class="code">v</span>, so on the common <span class="code">a{sv}</span>
+  case, calling <span class="code">deep_unpack()</span> will return an object whose
+  property names are the dictionary keys (as JS strings) and whose
+  property values are <span class="link"><a href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a></span>s. For comparison,
+  <span class="link"><a href="GLib.Variant.unpack.html" title="GLib.Variant.prototype.unpack">GLib.Variant.prototype.unpack</a></span> on the same variant would return
+  an object whose property names are the same, but whose values are
+  variant holding <span class="code">v</span>.</p>
+<p class="p">In practice, this means you should always use this method and
+  never <span class="link"><a href="GLib.Variant.unpack.html" title="GLib.Variant.prototype.unpack">GLib.Variant.prototype.unpack</a></span>, unless the type information
+  is important to you.</p>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

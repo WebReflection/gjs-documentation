@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GObject.type_next_base</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GObject">GObject</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GObject.type_next_base</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function type_next_base(leaf_type: GObject.Type, root_type: GObject.Type): GObject.Type {
+    // Gjs wrapper for g_type_next_base()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Given a <span class="code">leaf_type</span> and a <span class="code">root_type</span> which is contained in its
+anchestry, return the type that <span class="code">root_type</span> is the immediate parent
+of. In other words, this function determines the type that is
+derived directly from <span class="code">root_type</span> which is also a base class of
+<span class="code">leaf_type</span>.  Given a root type and a leaf type, this function can
+be used to determine the types and order in which the leaf type is
+descended from the root type.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">leaf_type</span></dt>
+<dd class="terms"><p class="p">descendant of <span class="code">root_type</span> and the type to be returned</p></dd>
+<dt class="terms"><span class="code">root_type</span></dt>
+<dd class="terms"><p class="p">immediate parent of the returned type</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">immediate child of <span class="code">root_type</span> and anchestor of <span class="code">leaf_type</span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="GObject">GObject</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

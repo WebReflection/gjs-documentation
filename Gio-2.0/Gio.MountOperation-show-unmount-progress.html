@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.MountOperation::show-unmount-progress</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.MountOperation.html" title="Gio.MountOperation">Gio.MountOperation</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.MountOperation::show-unmount-progress</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">connect('show-unmount-progress', function (mountOperation, message: String, time_left: Number(gint64), bytes_left: Number(gint64), ): void);
+  </pre></div></div></div></div></div>
+<p class="p">Emitted when an unmount operation has been busy for more than some time
+(typically 1.5 seconds).</p>
+<p class="p">When unmounting or ejecting a volume, the kernel might need to flush
+pending data in its buffers to the volume stable storage, and this operation
+can take a considerable amount of time. This signal may be emitted several
+times as long as the unmount operation is outstanding, and then one
+last time when the operation is completed, with <span class="code">bytes_left</span> set to zero.</p>
+<p class="p">Implementations of GMountOperation should handle this signal by
+showing an UI notification, and then dismiss it, or show another notification
+of completion, when <span class="code">bytes_left</span> reaches zero.</p>
+<p class="p">If the message contains a line break, the first line should be
+presented as a heading. For example, it may be used as the
+primary text in a #GtkMessageDialog.</p>
+<p class="p">Since 2.34</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">mountOperation</span></dt>
+<dd class="terms"><p class="p">instance of <span class="link"><a href="Gio.MountOperation.html" title="Gio.MountOperation">Gio.MountOperation</a></span> that is emitting the signal</p></dd>
+<dt class="terms"><span class="code">message</span></dt>
+<dd class="terms"><p class="p">string containing a mesage to display to the user</p></dd>
+<dt class="terms"><span class="code">time_left</span></dt>
+<dd class="terms"><p class="p">the estimated time left before the operation completes,
+    in microseconds, or -1</p></dd>
+<dt class="terms"><span class="code">bytes_left</span></dt>
+<dd class="terms"><p class="p">the amount of bytes to be written before the operation
+    completes (or -1 if such amount is not known), or zero if the operation
+    is completed</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.MountOperation.html" title="Gio.MountOperation">Gio.MountOperation</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

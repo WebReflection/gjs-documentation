@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.TlsConnection.prototype.set_database</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.TlsConnection.html" title="Gio.TlsConnection">Gio.TlsConnection</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.TlsConnection.prototype.set_database</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function set_database(database: <span class="link"><a href="Gio.TlsDatabase.html" title="Gio.TlsDatabase">Gio.TlsDatabase</a></span>): void {
+    // Gjs wrapper for g_tls_connection_set_database()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Sets the certificate database that is used to verify peer certificates.
+This is set to the default database by default. See
+<span class="link"><a href="Gio.TlsBackend.get_default_database.html" title="Gio.TlsBackend.prototype.get_default_database">Gio.TlsBackend.prototype.get_default_database</a></span>. If set to <span class="code">null</span>, then
+peer certificate validation will always set the
+<span class="link"><a href="Gio.TlsCertificateFlags.html" title="Gio.TlsCertificateFlags">Gio.TlsCertificateFlags</a></span>.unknown_ca error (meaning
+<span class="link"><a href="Gio.TlsConnection-accept-certificate.html" title="Gio.TlsConnection::accept-certificate">Gio.TlsConnection::accept-certificate</a></span> will always be emitted on
+client-side connections, unless that bit is not set in
+<span class="link"><a href="Gio.TlsClientConnection-validation-flags.html" title="Gio.TlsClientConnection-validation-flags">Gio.TlsClientConnection-validation-flags</a></span>).</p>
+<p class="p">Since 2.30</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">database</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="Gio.TlsDatabase.html" title="Gio.TlsDatabase">Gio.TlsDatabase</a></span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.TlsConnection.html" title="Gio.TlsConnection">Gio.TlsConnection</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

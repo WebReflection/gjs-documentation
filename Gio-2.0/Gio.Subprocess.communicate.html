@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.Subprocess.prototype.communicate</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.Subprocess.html" title="Gio.Subprocess">Gio.Subprocess</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.Subprocess.prototype.communicate</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function communicate(stdin_buf: ByteArray, cancellable: <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span>): [ok: Boolean, stdout_buf: ByteArray, stderr_buf: ByteArray] {
+    // Gjs wrapper for g_subprocess_communicate()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Communicate with the subprocess until it terminates, and all input
+and output has been completed.</p>
+<p class="p">If <span class="code">stdin_buf</span> is given, the subprocess must have been created with
+<span class="link"><a href="Gio.SubprocessFlags.html" title="Gio.SubprocessFlags">Gio.SubprocessFlags</a></span>.stdin_pipe.  The given data is fed to the
+stdin of the subprocess and the pipe is closed (ie: EOF).</p>
+<p class="p">At the same time (as not to cause blocking when dealing with large
+amounts of data), if <span class="link"><a href="Gio.SubprocessFlags.html" title="Gio.SubprocessFlags">Gio.SubprocessFlags</a></span>.stdout_pipe or
+<span class="link"><a href="Gio.SubprocessFlags.html" title="Gio.SubprocessFlags">Gio.SubprocessFlags</a></span>.stderr_pipe were used, reads from those
+streams.  The data that was read is returned in @stdout and/or
+the @stderr.</p>
+<p class="p">If the subprocess was created with <span class="link"><a href="Gio.SubprocessFlags.html" title="Gio.SubprocessFlags">Gio.SubprocessFlags</a></span>.stdout_pipe,
+<span class="code">stdout_buf</span> will contain the data read from stdout.  Otherwise, for
+subprocesses not created with <span class="link"><a href="Gio.SubprocessFlags.html" title="Gio.SubprocessFlags">Gio.SubprocessFlags</a></span>.stdout_pipe,
+<span class="code">stdout_buf</span> will be set to <span class="code">null</span>.  Similar provisions apply to
+<span class="code">stderr_buf</span> and <span class="link"><a href="Gio.SubprocessFlags.html" title="Gio.SubprocessFlags">Gio.SubprocessFlags</a></span>.stderr_pipe.</p>
+<p class="p">As usual, any output variable may be given as <span class="code">null</span> to ignore it.</p>
+<p class="p">If you desire the stdout and stderr data to be interleaved, create
+the subprocess with <span class="link"><a href="Gio.SubprocessFlags.html" title="Gio.SubprocessFlags">Gio.SubprocessFlags</a></span>.stdout_pipe and
+<span class="link"><a href="Gio.SubprocessFlags.html" title="Gio.SubprocessFlags">Gio.SubprocessFlags</a></span>.stderr_merge.  The merged result will be returned
+in <span class="code">stdout_buf</span> and <span class="code">stderr_buf</span> will be set to <span class="code">null</span>.</p>
+<p class="p">In case of any error (including cancellation), <span class="code">false</span> will be
+returned with @error set.  Some or all of the stdin data may have
+been written.  Any stdout or stderr data that has been read will be
+discarded. None of the out variables (aside from @error) will have
+been set to anything in particular and should not be inspected.</p>
+<p class="p">In the case that <span class="code">true</span> is returned, the subprocess has exited and the
+exit status inspection APIs (eg: <span class="link"><a href="Gio.Subprocess.get_if_exited.html" title="Gio.Subprocess.prototype.get_if_exited">Gio.Subprocess.prototype.get_if_exited</a></span>,
+<span class="link"><a href="Gio.Subprocess.get_exit_status.html" title="Gio.Subprocess.prototype.get_exit_status">Gio.Subprocess.prototype.get_exit_status</a></span>) may be used.</p>
+<p class="p">You should not attempt to use any of the subprocess pipes after
+starting this function, since they may be left in strange states,
+even if the operation was cancelled.  You should especially not
+attempt to interact with the pipes while the operation is in progress
+(either from another thread or if using the asynchronous version).</p>
+<p class="p">Since 2.40</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">stdin_buf</span></dt>
+<dd class="terms"><p class="p">data to send to the stdin of the subprocess, or <span class="code">null</span></p></dd>
+<dt class="terms"><span class="code">cancellable</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span></p></dd>
+<dt class="terms"><span class="code">ok</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> if successful</p></dd>
+<dt class="terms"><span class="code">stdout_buf</span></dt>
+<dd class="terms"><p class="p">data read from the subprocess stdout</p></dd>
+<dt class="terms"><span class="code">stderr_buf</span></dt>
+<dd class="terms"><p class="p">data read from the subprocess stderr</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.Subprocess.html" title="Gio.Subprocess">Gio.Subprocess</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

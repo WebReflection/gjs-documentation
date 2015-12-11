@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.SubprocessLauncher</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.SubprocessLauncher</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
+
+let subprocessLauncher = new Gio.SubprocessLauncher({
+    <span class="link"><a href="Gio.SubprocessLauncher-flags.html" title="Gio.SubprocessLauncher.flags">flags</a></span>: value,
+});
+  </pre></div></div></div></div></div>
+<p class="p">This class contains a set of options for launching child processes,
+such as where its standard input and output will be directed, the
+argument list, the environment, and more.</p>
+<p class="p">While the <span class="link"><a href="Gio.Subprocess.html" title="Gio.Subprocess">Gio.Subprocess</a></span> class has high level functions covering
+popular cases, use of this class allows access to more advanced
+options.  It can also be used to launch multiple subprocesses with
+a similar configuration.</p>
+<p class="p">Since 2.36</p>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
+<div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
+<div>
+        <span class="code">GObject.Object</span>
+      
+      </div>
+<ul class="tree"><li class="tree"><div>
+        <span class="code">Gio.SubprocessLauncher</span>
+      </div></li></ul>
+</li></ul></div></div></div></div></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.SubprocessLauncher.new.html" title="Gio.SubprocessLauncher.new">Gio.SubprocessLauncher.new</a></li></ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.SubprocessLauncher.getenv.html" title="Gio.SubprocessLauncher.prototype.getenv">Gio.SubprocessLauncher.prototype.getenv</a></li>
+<li class="links "><a href="Gio.SubprocessLauncher.set_child_setup.html" title="Gio.SubprocessLauncher.prototype.set_child_setup">Gio.SubprocessLauncher.prototype.set_child_setup</a></li>
+<li class="links "><a href="Gio.SubprocessLauncher.set_cwd.html" title="Gio.SubprocessLauncher.prototype.set_cwd">Gio.SubprocessLauncher.prototype.set_cwd</a></li>
+<li class="links "><a href="Gio.SubprocessLauncher.set_environ.html" title="Gio.SubprocessLauncher.prototype.set_environ">Gio.SubprocessLauncher.prototype.set_environ</a></li>
+<li class="links "><a href="Gio.SubprocessLauncher.set_flags.html" title="Gio.SubprocessLauncher.prototype.set_flags">Gio.SubprocessLauncher.prototype.set_flags</a></li>
+<li class="links "><a href="Gio.SubprocessLauncher.set_stderr_file_path.html" title="Gio.SubprocessLauncher.prototype.set_stderr_file_path">Gio.SubprocessLauncher.prototype.set_stderr_file_path</a></li>
+<li class="links "><a href="Gio.SubprocessLauncher.set_stdin_file_path.html" title="Gio.SubprocessLauncher.prototype.set_stdin_file_path">Gio.SubprocessLauncher.prototype.set_stdin_file_path</a></li>
+<li class="links "><a href="Gio.SubprocessLauncher.set_stdout_file_path.html" title="Gio.SubprocessLauncher.prototype.set_stdout_file_path">Gio.SubprocessLauncher.prototype.set_stdout_file_path</a></li>
+<li class="links "><a href="Gio.SubprocessLauncher.setenv.html" title="Gio.SubprocessLauncher.prototype.setenv">Gio.SubprocessLauncher.prototype.setenv</a></li>
+<li class="links "><a href="Gio.SubprocessLauncher.spawnv.html" title="Gio.SubprocessLauncher.prototype.spawnv">Gio.SubprocessLauncher.prototype.spawnv</a></li>
+<li class="links "><a href="Gio.SubprocessLauncher.take_fd.html" title="Gio.SubprocessLauncher.prototype.take_fd">Gio.SubprocessLauncher.prototype.take_fd</a></li>
+<li class="links "><a href="Gio.SubprocessLauncher.take_stderr_fd.html" title="Gio.SubprocessLauncher.prototype.take_stderr_fd">Gio.SubprocessLauncher.prototype.take_stderr_fd</a></li>
+<li class="links "><a href="Gio.SubprocessLauncher.take_stdin_fd.html" title="Gio.SubprocessLauncher.prototype.take_stdin_fd">Gio.SubprocessLauncher.prototype.take_stdin_fd</a></li>
+<li class="links "><a href="Gio.SubprocessLauncher.take_stdout_fd.html" title="Gio.SubprocessLauncher.prototype.take_stdout_fd">Gio.SubprocessLauncher.prototype.take_stdout_fd</a></li>
+<li class="links "><a href="Gio.SubprocessLauncher.unsetenv.html" title="Gio.SubprocessLauncher.prototype.unsetenv">Gio.SubprocessLauncher.prototype.unsetenv</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Properties</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.SubprocessLauncher-flags.html" title="Gio.SubprocessLauncher.flags">flags</a></li></ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gio">Gio</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

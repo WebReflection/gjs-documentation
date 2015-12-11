@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.IOErrorEnum</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.IOErrorEnum</span></h1></div>
+<div class="region">
+<div class="contents">
+<p class="p">Error codes returned by GIO functions.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">IOErrorEnum.FAILED</span></dt>
+<dd class="terms"><p class="p">Generic error condition for when any operation fails.</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.NOT_FOUND</span></dt>
+<dd class="terms"><p class="p">File not found.</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.EXISTS</span></dt>
+<dd class="terms"><p class="p">File already exists.</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.IS_DIRECTORY</span></dt>
+<dd class="terms"><p class="p">File is a directory.</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.NOT_DIRECTORY</span></dt>
+<dd class="terms"><p class="p">File is not a directory.</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.NOT_EMPTY</span></dt>
+<dd class="terms"><p class="p">File is a directory that isn't empty.</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.NOT_REGULAR_FILE</span></dt>
+<dd class="terms"><p class="p">File is not a regular file.</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.NOT_SYMBOLIC_LINK</span></dt>
+<dd class="terms"><p class="p">File is not a symbolic link.</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.NOT_MOUNTABLE_FILE</span></dt>
+<dd class="terms"><p class="p">File cannot be mounted.</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.FILENAME_TOO_LONG</span></dt>
+<dd class="terms"><p class="p">Filename is too many characters.</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.INVALID_FILENAME</span></dt>
+<dd class="terms"><p class="p">Filename is invalid or contains invalid characters.</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.TOO_MANY_LINKS</span></dt>
+<dd class="terms"><p class="p">File contains too many symbolic links.</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.NO_SPACE</span></dt>
+<dd class="terms"><p class="p">No space left on drive.</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.INVALID_ARGUMENT</span></dt>
+<dd class="terms"><p class="p">Invalid argument.</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.PERMISSION_DENIED</span></dt>
+<dd class="terms"><p class="p">Permission denied.</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.NOT_SUPPORTED</span></dt>
+<dd class="terms"><p class="p">Operation not supported for the current backend.</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.NOT_MOUNTED</span></dt>
+<dd class="terms"><p class="p">File isn't mounted.</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.ALREADY_MOUNTED</span></dt>
+<dd class="terms"><p class="p">File is already mounted.</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.CLOSED</span></dt>
+<dd class="terms"><p class="p">File was closed.</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.CANCELLED</span></dt>
+<dd class="terms"><p class="p">Operation was cancelled. See <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span>.</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.PENDING</span></dt>
+<dd class="terms"><p class="p">Operations are still pending.</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.READ_ONLY</span></dt>
+<dd class="terms"><p class="p">File is read only.</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.CANT_CREATE_BACKUP</span></dt>
+<dd class="terms"><p class="p">Backup couldn't be created.</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.WRONG_ETAG</span></dt>
+<dd class="terms"><p class="p">File's Entity Tag was incorrect.</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.TIMED_OUT</span></dt>
+<dd class="terms"><p class="p">Operation timed out.</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.WOULD_RECURSE</span></dt>
+<dd class="terms"><p class="p">Operation would be recursive.</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.BUSY</span></dt>
+<dd class="terms"><p class="p">File is busy.</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.WOULD_BLOCK</span></dt>
+<dd class="terms"><p class="p">Operation would block.</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.HOST_NOT_FOUND</span></dt>
+<dd class="terms"><p class="p">Host couldn't be found (remote operations).</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.WOULD_MERGE</span></dt>
+<dd class="terms"><p class="p">Operation would merge files.</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.FAILED_HANDLED</span></dt>
+<dd class="terms"><p class="p">Operation failed and a helper program has
+    already interacted with the user. Do not display any error dialog.</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.TOO_MANY_OPEN_FILES</span></dt>
+<dd class="terms"><p class="p">The current process has too many files
+    open and can't open any more. Duplicate descriptors do count toward
+    this limit. Since 2.20</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.NOT_INITIALIZED</span></dt>
+<dd class="terms"><p class="p">The object has not been initialized. Since 2.22</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.ADDRESS_IN_USE</span></dt>
+<dd class="terms"><p class="p">The requested address is already in use. Since 2.22</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.PARTIAL_INPUT</span></dt>
+<dd class="terms"><p class="p">Need more input to finish operation. Since 2.24</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.INVALID_DATA</span></dt>
+<dd class="terms"><p class="p">The input data was invalid. Since 2.24</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.DBUS_ERROR</span></dt>
+<dd class="terms"><p class="p">A remote object generated an error that
+    doesn't correspond to a locally registered <span class="link"><a href="../GLib-2.0/GLib.Error.html" title="../GLib-2.0/GLib.Error.html">GLib.Error</a></span> error
+    domain. Use <span class="link"><a href="Gio.dbus_error_get_remote_error.html" title="Gio.dbus_error_get_remote_error">Gio.dbus_error_get_remote_error</a></span> to extract the D-Bus
+    error name and <span class="link"><a href="Gio.dbus_error_strip_remote_error.html" title="Gio.dbus_error_strip_remote_error">Gio.dbus_error_strip_remote_error</a></span> to fix up the
+    message so it matches what was received on the wire. Since 2.26.</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.HOST_UNREACHABLE</span></dt>
+<dd class="terms"><p class="p">Host unreachable. Since 2.26</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.NETWORK_UNREACHABLE</span></dt>
+<dd class="terms"><p class="p">Network unreachable. Since 2.26</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.CONNECTION_REFUSED</span></dt>
+<dd class="terms"><p class="p">Connection refused. Since 2.26</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.PROXY_FAILED</span></dt>
+<dd class="terms"><p class="p">Connection to proxy server failed. Since 2.26</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.PROXY_AUTH_FAILED</span></dt>
+<dd class="terms"><p class="p">Proxy authentication failed. Since 2.26</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.PROXY_NEED_AUTH</span></dt>
+<dd class="terms"><p class="p">Proxy server needs authentication. Since 2.26</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.PROXY_NOT_ALLOWED</span></dt>
+<dd class="terms"><p class="p">Proxy connection is not allowed by ruleset.
+    Since 2.26</p></dd>
+<dt class="terms"><span class="code">IOErrorEnum.BROKEN_PIPE</span></dt>
+<dd class="terms"><p class="p">Broken pipe. Since 2.36</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gio">Gio</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

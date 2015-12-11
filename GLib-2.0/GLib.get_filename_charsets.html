@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.get_filename_charsets</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.get_filename_charsets</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function get_filename_charsets(charsets: String): Boolean {
+    // Gjs wrapper for g_get_filename_charsets()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Determines the preferred character sets used for filenames.
+The first character set from the <span class="code">charsets</span> is the filename encoding, the
+subsequent character sets are used when trying to generate a displayable
+representation of a filename, see <span class="link"><a href="GLib.filename_display_name.html" title="GLib.filename_display_name">GLib.filename_display_name</a></span>.</p>
+<p class="p">On Unix, the character sets are determined by consulting the
+environment variables `G_FILENAME_ENCODING` and `G_BROKEN_FILENAMES`.
+On Windows, the character set used in the GLib API is always UTF-8
+and said environment variables have no effect.</p>
+<p class="p">`G_FILENAME_ENCODING` may be set to a comma-separated list of
+character set names. The special token "&amp;commat;locale" is taken
+to  mean the character set for the [current locale][setlocale].
+If `G_FILENAME_ENCODING` is not set, but `G_BROKEN_FILENAMES` is,
+the character set of the current locale is taken as the filename
+encoding. If neither environment variable  is set, UTF-8 is taken
+as the filename encoding, but the character set of the current locale
+is also put in the list of encodings.</p>
+<p class="p">The returned <span class="code">charsets</span> belong to GLib and must not be freed.</p>
+<p class="p">Note that on Unix, regardless of the locale character set or
+`G_FILENAME_ENCODING` value, the actual file names present
+on a system might be in any random encoding or just gibberish.</p>
+<p class="p">Since 2.6</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">charsets</span></dt>
+<dd class="terms"><p class="p">return location for the <span class="code">null</span>-terminated list of encoding names</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> if the filename encoding is UTF-8.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="GLib">GLib</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

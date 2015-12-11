@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.Subprocess</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.Subprocess</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
+
+let subprocess = new Gio.Subprocess({
+    <span class="link"><a href="Gio.Subprocess-argv.html" title="Gio.Subprocess.argv">argv</a></span>: value,
+    <span class="link"><a href="Gio.Subprocess-flags.html" title="Gio.Subprocess.flags">flags</a></span>: value,
+});
+  </pre></div></div></div></div></div>
+<p class="p"><span class="link"><a href="Gio.Subprocess.html" title="Gio.Subprocess">Gio.Subprocess</a></span> allows the creation of and interaction with child
+processes.</p>
+<p class="p">Processes can be communicated with using standard GIO-style APIs (ie:
+<span class="link"><a href="Gio.InputStream.html" title="Gio.InputStream">Gio.InputStream</a></span>, <span class="link"><a href="Gio.OutputStream.html" title="Gio.OutputStream">Gio.OutputStream</a></span>).  There are GIO-style APIs to wait for
+process termination (ie: cancellable and with an asynchronous
+variant).</p>
+<p class="p">There is an API to force a process to terminate, as well as a
+race-free API for sending UNIX signals to a subprocess.</p>
+<p class="p">One major advantage that GIO brings over the core GLib library is
+comprehensive API for asynchronous I/O, such
+<span class="link"><a href="Gio.OutputStream.splice_async.html" title="Gio.OutputStream.prototype.splice_async">Gio.OutputStream.prototype.splice_async</a></span>.  This makes GSubprocess
+significantly more powerful and flexible than equivalent APIs in
+some other languages such as the `subprocess.py`
+included with Python.  For example, using <span class="link"><a href="Gio.Subprocess.html" title="Gio.Subprocess">Gio.Subprocess</a></span> one could
+create two child processes, reading standard output from the first,
+processing it, and writing to the input stream of the second, all
+without blocking the main loop.</p>
+<p class="p">A powerful <span class="link"><a href="Gio.Subprocess.communicate.html" title="Gio.Subprocess.prototype.communicate">Gio.Subprocess.prototype.communicate</a></span> API is provided similar to the
+`communicate()` method of `subprocess.py`. This enables very easy
+interaction with a subprocess that has been opened with pipes.</p>
+<p class="p"><span class="link"><a href="Gio.Subprocess.html" title="Gio.Subprocess">Gio.Subprocess</a></span> defaults to tight control over the file descriptors open
+in the child process, avoiding dangling-fd issues that are caused by
+a simple fork()/exec().  The only open file descriptors in the
+spawned process are ones that were explicitly specified by the
+<span class="link"><a href="Gio.Subprocess.html" title="Gio.Subprocess">Gio.Subprocess</a></span> API (unless <span class="link"><a href="Gio.SubprocessFlags.html" title="Gio.SubprocessFlags">Gio.SubprocessFlags</a></span>.inherit_fds was
+specified).</p>
+<p class="p"><span class="link"><a href="Gio.Subprocess.html" title="Gio.Subprocess">Gio.Subprocess</a></span> will quickly reap all child processes as they exit,
+avoiding "zombie processes" remaining around for long periods of
+time.  <span class="link"><a href="Gio.Subprocess.wait.html" title="Gio.Subprocess.prototype.wait">Gio.Subprocess.prototype.wait</a></span> can be used to wait for this to happen,
+but it will happen even without the call being explicitly made.</p>
+<p class="p">As a matter of principle, <span class="link"><a href="Gio.Subprocess.html" title="Gio.Subprocess">Gio.Subprocess</a></span> has no API that accepts
+shell-style space-separated strings.  It will, however, match the
+typical shell behaviour of searching the PATH for executables that do
+not contain a directory separator in their name.</p>
+<p class="p"><span class="link"><a href="Gio.Subprocess.html" title="Gio.Subprocess">Gio.Subprocess</a></span> attempts to have a very simple API for most uses (ie:
+spawning a subprocess with arguments and support for most typical
+kinds of input and output redirection).  See <span class="link"><a href="Gio.Subprocess.new.html" title="Gio.Subprocess.new">Gio.Subprocess.new</a></span>. The
+<span class="link"><a href="Gio.SubprocessLauncher.html" title="Gio.SubprocessLauncher">Gio.SubprocessLauncher</a></span> API is provided for more complicated cases
+(advanced types of redirection, environment variable manipulation,
+change of working directory, child setup functions, etc).</p>
+<p class="p">A typical use of <span class="link"><a href="Gio.Subprocess.html" title="Gio.Subprocess">Gio.Subprocess</a></span> will involve calling
+<span class="link"><a href="Gio.Subprocess.new.html" title="Gio.Subprocess.new">Gio.Subprocess.new</a></span>, followed by <span class="link"><a href="Gio.Subprocess.wait_async.html" title="Gio.Subprocess.prototype.wait_async">Gio.Subprocess.prototype.wait_async</a></span> or
+<span class="link"><a href="Gio.Subprocess.wait.html" title="Gio.Subprocess.prototype.wait">Gio.Subprocess.prototype.wait</a></span>.  After the process exits, the status can be
+checked using functions such as <span class="link"><a href="Gio.Subprocess.get_if_exited.html" title="Gio.Subprocess.prototype.get_if_exited">Gio.Subprocess.prototype.get_if_exited</a></span> (which
+are similar to the familiar WIFEXITED-style POSIX macros).</p>
+<p class="p">Since 2.40</p>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
+<div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
+<div>
+        <span class="code">GObject.Object</span>
+      
+      </div>
+<ul class="tree"><li class="tree"><div>
+        <span class="code">Gio.Subprocess</span>
+      </div></li></ul>
+</li></ul></div></div></div></div></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.Subprocess.new.html" title="Gio.Subprocess.new">Gio.Subprocess.new</a></li></ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.Subprocess.communicate.html" title="Gio.Subprocess.prototype.communicate">Gio.Subprocess.prototype.communicate</a></li>
+<li class="links "><a href="Gio.Subprocess.communicate_async.html" title="Gio.Subprocess.prototype.communicate_async">Gio.Subprocess.prototype.communicate_async</a></li>
+<li class="links "><a href="Gio.Subprocess.communicate_finish.html" title="Gio.Subprocess.prototype.communicate_finish">Gio.Subprocess.prototype.communicate_finish</a></li>
+<li class="links "><a href="Gio.Subprocess.communicate_utf8.html" title="Gio.Subprocess.prototype.communicate_utf8">Gio.Subprocess.prototype.communicate_utf8</a></li>
+<li class="links "><a href="Gio.Subprocess.communicate_utf8_async.html" title="Gio.Subprocess.prototype.communicate_utf8_async">Gio.Subprocess.prototype.communicate_utf8_async</a></li>
+<li class="links "><a href="Gio.Subprocess.communicate_utf8_finish.html" title="Gio.Subprocess.prototype.communicate_utf8_finish">Gio.Subprocess.prototype.communicate_utf8_finish</a></li>
+<li class="links "><a href="Gio.Subprocess.force_exit.html" title="Gio.Subprocess.prototype.force_exit">Gio.Subprocess.prototype.force_exit</a></li>
+<li class="links "><a href="Gio.Subprocess.get_exit_status.html" title="Gio.Subprocess.prototype.get_exit_status">Gio.Subprocess.prototype.get_exit_status</a></li>
+<li class="links "><a href="Gio.Subprocess.get_identifier.html" title="Gio.Subprocess.prototype.get_identifier">Gio.Subprocess.prototype.get_identifier</a></li>
+<li class="links "><a href="Gio.Subprocess.get_if_exited.html" title="Gio.Subprocess.prototype.get_if_exited">Gio.Subprocess.prototype.get_if_exited</a></li>
+<li class="links "><a href="Gio.Subprocess.get_if_signaled.html" title="Gio.Subprocess.prototype.get_if_signaled">Gio.Subprocess.prototype.get_if_signaled</a></li>
+<li class="links "><a href="Gio.Subprocess.get_status.html" title="Gio.Subprocess.prototype.get_status">Gio.Subprocess.prototype.get_status</a></li>
+<li class="links "><a href="Gio.Subprocess.get_stderr_pipe.html" title="Gio.Subprocess.prototype.get_stderr_pipe">Gio.Subprocess.prototype.get_stderr_pipe</a></li>
+<li class="links "><a href="Gio.Subprocess.get_stdin_pipe.html" title="Gio.Subprocess.prototype.get_stdin_pipe">Gio.Subprocess.prototype.get_stdin_pipe</a></li>
+<li class="links "><a href="Gio.Subprocess.get_stdout_pipe.html" title="Gio.Subprocess.prototype.get_stdout_pipe">Gio.Subprocess.prototype.get_stdout_pipe</a></li>
+<li class="links "><a href="Gio.Subprocess.get_successful.html" title="Gio.Subprocess.prototype.get_successful">Gio.Subprocess.prototype.get_successful</a></li>
+<li class="links "><a href="Gio.Subprocess.get_term_sig.html" title="Gio.Subprocess.prototype.get_term_sig">Gio.Subprocess.prototype.get_term_sig</a></li>
+<li class="links "><a href="Gio.Subprocess.send_signal.html" title="Gio.Subprocess.prototype.send_signal">Gio.Subprocess.prototype.send_signal</a></li>
+<li class="links "><a href="Gio.Subprocess.wait.html" title="Gio.Subprocess.prototype.wait">Gio.Subprocess.prototype.wait</a></li>
+<li class="links "><a href="Gio.Subprocess.wait_async.html" title="Gio.Subprocess.prototype.wait_async">Gio.Subprocess.prototype.wait_async</a></li>
+<li class="links "><a href="Gio.Subprocess.wait_check.html" title="Gio.Subprocess.prototype.wait_check">Gio.Subprocess.prototype.wait_check</a></li>
+<li class="links "><a href="Gio.Subprocess.wait_check_async.html" title="Gio.Subprocess.prototype.wait_check_async">Gio.Subprocess.prototype.wait_check_async</a></li>
+<li class="links "><a href="Gio.Subprocess.wait_check_finish.html" title="Gio.Subprocess.prototype.wait_check_finish">Gio.Subprocess.prototype.wait_check_finish</a></li>
+<li class="links "><a href="Gio.Subprocess.wait_finish.html" title="Gio.Subprocess.prototype.wait_finish">Gio.Subprocess.prototype.wait_finish</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Properties</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.Subprocess-argv.html" title="Gio.Subprocess.argv">argv</a></li>
+<li class="links "><a href="Gio.Subprocess-flags.html" title="Gio.Subprocess.flags">flags</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gio">Gio</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.ResolverRecordType</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.ResolverRecordType</span></h1></div>
+<div class="region">
+<div class="contents">
+<p class="p">The type of record that <span class="link"><a href="Gio.Resolver.lookup_records.html" title="Gio.Resolver.prototype.lookup_records">Gio.Resolver.prototype.lookup_records</a></span> or
+<span class="link"><a href="Gio.Resolver.lookup_records_async.html" title="Gio.Resolver.prototype.lookup_records_async">Gio.Resolver.prototype.lookup_records_async</a></span> should retrieve. The records are returned
+as lists of <span class="link"><a href="../GLib-2.0/GLib.Variant.html" title="../GLib-2.0/GLib.Variant.html">GLib.Variant</a></span> tuples. Each record type has different values in
+the variant tuples returned.</p>
+<p class="p"><span class="link"><a href="Gio.ResolverRecordType.html" title="Gio.ResolverRecordType">Gio.ResolverRecordType</a></span>.srv records are returned as variants with the signature
+'(qqqs)', containing a guint16 with the priority, a guint16 with the
+weight, a guint16 with the port, and a string of the hostname.</p>
+<p class="p"><span class="link"><a href="Gio.ResolverRecordType.html" title="Gio.ResolverRecordType">Gio.ResolverRecordType</a></span>.mx records are returned as variants with the signature
+'(qs)', representing a guint16 with the preference, and a string containing
+the mail exchanger hostname.</p>
+<p class="p"><span class="link"><a href="Gio.ResolverRecordType.html" title="Gio.ResolverRecordType">Gio.ResolverRecordType</a></span>.txt records are returned as variants with the signature
+'(as)', representing an array of the strings in the text record.</p>
+<p class="p"><span class="link"><a href="Gio.ResolverRecordType.html" title="Gio.ResolverRecordType">Gio.ResolverRecordType</a></span>.soa records are returned as variants with the signature
+'(ssuuuuu)', representing a string containing the primary name server, a
+string containing the administrator, the serial as a guint32, the refresh
+interval as guint32, the retry interval as a guint32, the expire timeout
+as a guint32, and the ttl as a guint32.</p>
+<p class="p"><span class="link"><a href="Gio.ResolverRecordType.html" title="Gio.ResolverRecordType">Gio.ResolverRecordType</a></span>.ns records are returned as variants with the signature
+'(s)', representing a string of the hostname of the name server.</p>
+<p class="p">Since 2.34</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">ResolverRecordType.SRV</span></dt>
+<dd class="terms"><p class="p">lookup DNS SRV records for a domain</p></dd>
+<dt class="terms"><span class="code">ResolverRecordType.MX</span></dt>
+<dd class="terms"><p class="p">lookup DNS MX records for a domain</p></dd>
+<dt class="terms"><span class="code">ResolverRecordType.TXT</span></dt>
+<dd class="terms"><p class="p">lookup DNS TXT records for a name</p></dd>
+<dt class="terms"><span class="code">ResolverRecordType.SOA</span></dt>
+<dd class="terms"><p class="p">lookup DNS SOA records for a zone</p></dd>
+<dt class="terms"><span class="code">ResolverRecordType.NS</span></dt>
+<dd class="terms"><p class="p">lookup DNS NS records for a domain</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gio">Gio</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

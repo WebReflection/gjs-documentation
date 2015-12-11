@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GdkX11.X11Display.prototype.error_trap_pop</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GdkX11">GdkX11</a> » <a class="trail" href="GdkX11.X11Display.html" title="GdkX11.X11Display">GdkX11.X11Display</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GdkX11.X11Display.prototype.error_trap_pop</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function error_trap_pop(): Number(gint) {
+    // Gjs wrapper for gdk_x11_display_error_trap_pop()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Pops the error trap pushed by <span class="link"><a href="GdkX11.X11Display.error_trap_push.html" title="GdkX11.X11Display.prototype.error_trap_push">GdkX11.X11Display.prototype.error_trap_push</a></span>.
+Will XSync() if necessary and will always block until
+the error is known to have occurred or not occurred,
+so the error code can be returned.</p>
+<p class="p">If you don’t need to use the return value,
+<span class="link"><a href="GdkX11.X11Display.error_trap_pop_ignored.html" title="GdkX11.X11Display.prototype.error_trap_pop_ignored">GdkX11.X11Display.prototype.error_trap_pop_ignored</a></span> would be more efficient.</p>
+<p class="p">See gdk_error_trap_pop() for the all-displays-at-once
+equivalent.</p>
+<p class="p">Since 3.0</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">X error code or 0 on success</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="GdkX11.X11Display.html" title="GdkX11.X11Display">GdkX11.X11Display</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

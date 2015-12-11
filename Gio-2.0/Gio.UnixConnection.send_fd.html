@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.UnixConnection.prototype.send_fd</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.UnixConnection.html" title="Gio.UnixConnection">Gio.UnixConnection</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.UnixConnection.prototype.send_fd</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function send_fd(fd: Number(gint), cancellable: <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span>): Boolean {
+    // Gjs wrapper for g_unix_connection_send_fd()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Passes a file descriptor to the receiving side of the
+connection. The receiving end has to call <span class="link"><a href="Gio.UnixConnection.receive_fd.html" title="Gio.UnixConnection.prototype.receive_fd">Gio.UnixConnection.prototype.receive_fd</a></span>
+to accept the file descriptor.</p>
+<p class="p">As well as sending the fd this also writes a single byte to the
+stream, as this is required for fd passing to work on some
+implementations.</p>
+<p class="p">Since 2.22</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">fd</span></dt>
+<dd class="terms"><p class="p">a file descriptor</p></dd>
+<dt class="terms"><span class="code">cancellable</span></dt>
+<dd class="terms"><p class="p">optional <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span> object, <span class="code">null</span> to ignore.</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">a <span class="code">true</span> on success, <span class="code">null</span> on error.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.UnixConnection.html" title="Gio.UnixConnection">Gio.UnixConnection</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

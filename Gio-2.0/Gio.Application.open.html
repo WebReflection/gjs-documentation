@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.Application.prototype.open</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.Application.html" title="Gio.Application">Gio.Application</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.Application.prototype.open</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function open(files: Array(<span class="link"><a href="Gio.File.html" title="Gio.File">Gio.File</a></span>), hint: String): void {
+    // Gjs wrapper for g_application_open()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Opens the given files.</p>
+<p class="p">In essence, this results in the <span class="link"><a href="Gio.Application-open.html" title="Gio.Application::open">Gio.Application::open</a></span> signal being emitted
+in the primary instance.</p>
+<p class="p"><span class="code">n_files</span> must be greater than zero.</p>
+<p class="p"><span class="code">hint</span> is simply passed through to the ::open signal.  It is
+intended to be used by applications that have multiple modes for
+opening files (eg: "view" vs "edit", etc).  Unless you have a need
+for this functionality, you should use "".</p>
+<p class="p">The application must be registered before calling this function
+and it must have the <span class="link"><a href="Gio.ApplicationFlags.html" title="Gio.ApplicationFlags">Gio.ApplicationFlags</a></span>.handles_open flag set.</p>
+<p class="p">Since 2.28</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">files</span></dt>
+<dd class="terms"><p class="p">an array of #GFiles to open</p></dd>
+<dt class="terms"><span class="code">hint</span></dt>
+<dd class="terms"><p class="p">a hint (or ""), but never <span class="code">null</span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.Application.html" title="Gio.Application">Gio.Application</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

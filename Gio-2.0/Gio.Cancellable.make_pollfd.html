@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.Cancellable.prototype.make_pollfd</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.Cancellable.prototype.make_pollfd</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function make_pollfd(pollfd: <span class="link"><a href="../GLib-2.0/GLib.PollFD.html" title="../GLib-2.0/GLib.PollFD.html">GLib.PollFD</a></span>): Boolean {
+    // Gjs wrapper for g_cancellable_make_pollfd()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Creates a <span class="link"><a href="../GLib-2.0/GLib.PollFD.html" title="../GLib-2.0/GLib.PollFD.html">GLib.PollFD</a></span> corresponding to <span class="code">cancellable</span>; this can be passed
+to <span class="link"><a href="../GLib-2.0/GLib.poll.html" title="../GLib-2.0/GLib.poll.html">GLib.poll</a></span> and used to poll for cancellation. This is useful both
+for unix systems without a native poll and for portability to
+windows.</p>
+<p class="p">When this function returns <span class="code">true</span>, you should use
+<span class="link"><a href="Gio.Cancellable.release_fd.html" title="Gio.Cancellable.prototype.release_fd">Gio.Cancellable.prototype.release_fd</a></span> to free up resources allocated for the
+<span class="code">pollfd</span>. After a <span class="code">false</span> return, do not call <span class="link"><a href="Gio.Cancellable.release_fd.html" title="Gio.Cancellable.prototype.release_fd">Gio.Cancellable.prototype.release_fd</a></span>.</p>
+<p class="p">If this function returns <span class="code">false</span>, either no <span class="code">cancellable</span> was given or
+resource limits prevent this function from allocating the necessary
+structures for polling. (On Linux, you will likely have reached
+the maximum number of file descriptors.) The suggested way to handle
+these cases is to ignore the <span class="code">cancellable</span>.</p>
+<p class="p">You are not supposed to read from the fd yourself, just check for
+readable status. Reading to unset the readable status is done
+with <span class="link"><a href="Gio.Cancellable.reset.html" title="Gio.Cancellable.prototype.reset">Gio.Cancellable.prototype.reset</a></span>.</p>
+<p class="p">Since 2.22</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">pollfd</span></dt>
+<dd class="terms"><p class="p">a pointer to a <span class="link"><a href="../GLib-2.0/GLib.PollFD.html" title="../GLib-2.0/GLib.PollFD.html">GLib.PollFD</a></span></p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> if <span class="code">pollfd</span> was successfully initialized, <span class="code">false</span> on
+         failure to prepare the cancellable.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.ActionGroup::query_action</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.ActionGroup.html" title="Gio.ActionGroup">Gio.ActionGroup</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.ActionGroup::query_action</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function vfunc_query_action(action_name: String): [ok: Boolean, enabled: Boolean, parameter_type: <span class="link"><a href="../GLib-2.0/GLib.VariantType.html" title="../GLib-2.0/GLib.VariantType.html">GLib.VariantType</a></span>, state_type: <span class="link"><a href="../GLib-2.0/GLib.VariantType.html" title="../GLib-2.0/GLib.VariantType.html">GLib.VariantType</a></span>, state_hint: <span class="link"><a href="../GLib-2.0/GLib.Variant.html" title="../GLib-2.0/GLib.Variant.html">GLib.Variant</a></span>, state: <span class="link"><a href="../GLib-2.0/GLib.Variant.html" title="../GLib-2.0/GLib.Variant.html">GLib.Variant</a></span>] {
+}
+  </pre></div></div></div></div></div>
+<p class="p">Queries all aspects of the named action within an <span class="code">action_group</span>.</p>
+<p class="p">This function acquires the information available from
+<span class="link"><a href="Gio.ActionGroup.has_action.html" title="Gio.ActionGroup.prototype.has_action">Gio.ActionGroup.prototype.has_action</a></span>, <span class="link"><a href="Gio.ActionGroup.get_action_enabled.html" title="Gio.ActionGroup.prototype.get_action_enabled">Gio.ActionGroup.prototype.get_action_enabled</a></span>,
+<span class="link"><a href="Gio.ActionGroup.get_action_parameter_type.html" title="Gio.ActionGroup.prototype.get_action_parameter_type">Gio.ActionGroup.prototype.get_action_parameter_type</a></span>,
+<span class="link"><a href="Gio.ActionGroup.get_action_state_type.html" title="Gio.ActionGroup.prototype.get_action_state_type">Gio.ActionGroup.prototype.get_action_state_type</a></span>,
+<span class="link"><a href="Gio.ActionGroup.get_action_state_hint.html" title="Gio.ActionGroup.prototype.get_action_state_hint">Gio.ActionGroup.prototype.get_action_state_hint</a></span> and
+<span class="link"><a href="Gio.ActionGroup.get_action_state.html" title="Gio.ActionGroup.prototype.get_action_state">Gio.ActionGroup.prototype.get_action_state</a></span> with a single function call.</p>
+<p class="p">This provides two main benefits.</p>
+<p class="p">The first is the improvement in efficiency that comes with not having
+to perform repeated lookups of the action in order to discover
+different things about it.  The second is that implementing
+<span class="link"><a href="Gio.ActionGroup.html" title="Gio.ActionGroup">Gio.ActionGroup</a></span> can now be done by only overriding this one virtual
+function.</p>
+<p class="p">The interface provides a default implementation of this function that
+calls the individual functions, as required, to fetch the
+information.  The interface also provides default implementations of
+those functions that call this function.  All implementations,
+therefore, must override either this function or all of the others.</p>
+<p class="p">If the action exists, <span class="code">true</span> is returned and any of the requested
+fields (as indicated by having a non-<span class="code">null</span> reference passed in) are
+filled.  If the action doesn't exist, <span class="code">false</span> is returned and the
+fields may or may not have been modified.</p>
+<p class="p">Since 2.32</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">action_name</span></dt>
+<dd class="terms"><p class="p">the name of an action in the group</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> if the action exists, else <span class="code">false</span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.ActionGroup.html" title="Gio.ActionGroup">Gio.ActionGroup</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

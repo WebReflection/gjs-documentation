@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.DBusAuthObserver</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.DBusAuthObserver</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
+
+let dBusAuthObserver = new Gio.DBusAuthObserver();
+  </pre></div></div></div></div></div>
+<p class="p">The <span class="link"><a href="Gio.DBusAuthObserver.html" title="Gio.DBusAuthObserver">Gio.DBusAuthObserver</a></span> type provides a mechanism for participating
+in how a <span class="link"><a href="Gio.DBusServer.html" title="Gio.DBusServer">Gio.DBusServer</a></span> (or a <span class="link"><a href="Gio.DBusConnection.html" title="Gio.DBusConnection">Gio.DBusConnection</a></span>) authenticates remote
+peers. Simply instantiate a <span class="link"><a href="Gio.DBusAuthObserver.html" title="Gio.DBusAuthObserver">Gio.DBusAuthObserver</a></span> and connect to the
+signals you are interested in. Note that new signals may be added
+in the future</p>
+<p class="p">## Controlling Authentication # {#auth-observer}</p>
+<p class="p">For example, if you only want to allow D-Bus connections from
+processes owned by the same uid as the server, you would use a
+signal handler like the following:</p>
+<p class="p">|[
+static gboolean
+on_authorize_authenticated_peer (GDBusAuthObserver *observer,
+                                 GIOStream         *stream,
+                                 GCredentials      *credentials,
+                                 gpointer           user_data)
+{
+  gboolean authorized;</p>
+<p class="p">  authorized = FALSE;
+  if (credentials != NULL)
+    {
+      GCredentials *own_credentials;
+      own_credentials = g_credentials_new ();
+      if (g_credentials_is_same_user (credentials, own_credentials, NULL))
+        authorized = TRUE;
+      g_object_unref (own_credentials);
+    }</p>
+<p class="p">  return authorized;
+}
+]|</p>
+<p class="p">Since 2.26</p>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
+<div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
+<div>
+        <span class="code">GObject.Object</span>
+      
+      </div>
+<ul class="tree"><li class="tree"><div>
+        <span class="code">Gio.DBusAuthObserver</span>
+      </div></li></ul>
+</li></ul></div></div></div></div></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.DBusAuthObserver.new.html" title="Gio.DBusAuthObserver.new">Gio.DBusAuthObserver.new</a></li></ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.DBusAuthObserver.allow_mechanism.html" title="Gio.DBusAuthObserver.prototype.allow_mechanism">Gio.DBusAuthObserver.prototype.allow_mechanism</a></li>
+<li class="links "><a href="Gio.DBusAuthObserver.authorize_authenticated_peer.html" title="Gio.DBusAuthObserver.prototype.authorize_authenticated_peer">Gio.DBusAuthObserver.prototype.authorize_authenticated_peer</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Signals</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.DBusAuthObserver-allow-mechanism.html" title="Gio.DBusAuthObserver::allow-mechanism">allow-mechanism</a></li>
+<li class="links "><a href="Gio.DBusAuthObserver-authorize-authenticated-peer.html" title="Gio.DBusAuthObserver::authorize-authenticated-peer">authorize-authenticated-peer</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gio">Gio</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

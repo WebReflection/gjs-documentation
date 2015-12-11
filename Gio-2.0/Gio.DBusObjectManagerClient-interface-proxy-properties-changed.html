@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.DBusObjectManagerClient::interface-proxy-properties-changed</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.DBusObjectManagerClient.html" title="Gio.DBusObjectManagerClient">Gio.DBusObjectManagerClient</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.DBusObjectManagerClient::interface-proxy-properties-changed</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">connect('interface-proxy-properties-changed', function (dBusObjectManagerClient, object_proxy: <span class="link"><a href="Gio.DBusObjectProxy.html" title="Gio.DBusObjectProxy">Gio.DBusObjectProxy</a></span>, interface_proxy: <span class="link"><a href="Gio.DBusProxy.html" title="Gio.DBusProxy">Gio.DBusProxy</a></span>, changed_properties: <span class="link"><a href="../GLib-2.0/GLib.Variant.html" title="../GLib-2.0/GLib.Variant.html">GLib.Variant</a></span>, invalidated_properties: Array(String), ): void);
+  </pre></div></div></div></div></div>
+<p class="p">Emitted when one or more D-Bus properties on proxy changes. The
+local cache has already been updated when this signal fires. Note
+that both <span class="code">changed_properties</span> and <span class="code">invalidated_properties</span> are
+guaranteed to never be <span class="code">null</span> (either may be empty though).</p>
+<p class="p">This signal exists purely as a convenience to avoid having to
+connect signals to all interface proxies managed by @manager.</p>
+<p class="p">This signal is emitted in the
+[thread-default main context][g-main-context-push-thread-default]
+that @manager was constructed in.</p>
+<p class="p">Since 2.30</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">dBusObjectManagerClient</span></dt>
+<dd class="terms"><p class="p">instance of <span class="link"><a href="Gio.DBusObjectManagerClient.html" title="Gio.DBusObjectManagerClient">Gio.DBusObjectManagerClient</a></span> that is emitting the signal</p></dd>
+<dt class="terms"><span class="code">object_proxy</span></dt>
+<dd class="terms"><p class="p">The <span class="link"><a href="Gio.DBusObjectProxy.html" title="Gio.DBusObjectProxy">Gio.DBusObjectProxy</a></span> on which an interface has properties that are changing.</p></dd>
+<dt class="terms"><span class="code">interface_proxy</span></dt>
+<dd class="terms"><p class="p">The <span class="link"><a href="Gio.DBusProxy.html" title="Gio.DBusProxy">Gio.DBusProxy</a></span> that has properties that are changing.</p></dd>
+<dt class="terms"><span class="code">changed_properties</span></dt>
+<dd class="terms"><p class="p">A <span class="link"><a href="../GLib-2.0/GLib.Variant.html" title="../GLib-2.0/GLib.Variant.html">GLib.Variant</a></span> containing the properties that changed.</p></dd>
+<dt class="terms"><span class="code">invalidated_properties</span></dt>
+<dd class="terms"><p class="p">A <span class="code">null</span> terminated array of properties that was invalidated.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.DBusObjectManagerClient.html" title="Gio.DBusObjectManagerClient">Gio.DBusObjectManagerClient</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

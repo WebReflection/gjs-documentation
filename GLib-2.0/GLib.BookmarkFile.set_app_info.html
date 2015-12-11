@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.BookmarkFile.prototype.set_app_info</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » <a class="trail" href="GLib.BookmarkFile.html" title="GLib.BookmarkFile">GLib.BookmarkFile</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.BookmarkFile.prototype.set_app_info</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function set_app_info(uri: String, name: String, exec: String, count: Number(gint), stamp: Number(glong)): Boolean {
+    // Gjs wrapper for g_bookmark_file_set_app_info()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Sets the meta-data of application <span class="code">name</span> inside the list of
+applications that have registered a bookmark for <span class="code">uri</span> inside
+<span class="code">bookmark</span>.</p>
+<p class="p">You should rarely use this function; use <span class="link"><a href="GLib.BookmarkFile.add_application.html" title="GLib.BookmarkFile.prototype.add_application">GLib.BookmarkFile.prototype.add_application</a></span>
+and <span class="link"><a href="GLib.BookmarkFile.remove_application.html" title="GLib.BookmarkFile.prototype.remove_application">GLib.BookmarkFile.prototype.remove_application</a></span> instead.</p>
+<p class="p"><span class="code">name</span> can be any UTF-8 encoded string used to identify an
+application.
+<span class="code">exec</span> can have one of these two modifiers: "\%f", which will
+be expanded as the local file name retrieved from the bookmark's
+URI; "\%u", which will be expanded as the bookmark's URI.
+The expansion is done automatically when retrieving the stored
+command line using the <span class="link"><a href="GLib.BookmarkFile.get_app_info.html" title="GLib.BookmarkFile.prototype.get_app_info">GLib.BookmarkFile.prototype.get_app_info</a></span> function.
+<span class="code">count</span> is the number of times the application has registered the
+bookmark; if is &lt; 0, the current registration count will be increased
+by one, if is 0, the application with <span class="code">name</span> will be removed from
+the list of registered applications.
+<span class="code">stamp</span> is the Unix time of the last registration; if it is -1, the
+current time will be used.</p>
+<p class="p">If you try to remove an application by setting its registration count to
+zero, and no bookmark for <span class="code">uri</span> is found, <span class="code">false</span> is returned and
+@error is set to #G_BOOKMARK_FILE_ERROR_URI_NOT_FOUND; similarly,
+in the event that no application <span class="code">name</span> has registered a bookmark
+for <span class="code">uri</span>,  <span class="code">false</span> is returned and error is set to
+#G_BOOKMARK_FILE_ERROR_APP_NOT_REGISTERED.  Otherwise, if no bookmark
+for <span class="code">uri</span> is found, one is created.</p>
+<p class="p">Since 2.12</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">uri</span></dt>
+<dd class="terms"><p class="p">a valid URI</p></dd>
+<dt class="terms"><span class="code">name</span></dt>
+<dd class="terms"><p class="p">an application's name</p></dd>
+<dt class="terms"><span class="code">exec</span></dt>
+<dd class="terms"><p class="p">an application's command line</p></dd>
+<dt class="terms"><span class="code">count</span></dt>
+<dd class="terms"><p class="p">the number of registrations done for this application</p></dd>
+<dt class="terms"><span class="code">stamp</span></dt>
+<dd class="terms"><p class="p">the time of the last registration for this application</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> if the application's meta-data was successfully
+  changed.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="GLib.BookmarkFile.html" title="GLib.BookmarkFile">GLib.BookmarkFile</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

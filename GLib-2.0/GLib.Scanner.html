@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.Scanner</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.Scanner</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const GLib = imports.gi.GLib;
+
+let scanner = new GLib.Scanner({
+    <span class="link"><a href="GLib.Scanner-max_parse_errors.html" title="GLib.Scanner.max_parse_errors">max_parse_errors</a></span>: value
+    <span class="link"><a href="GLib.Scanner-parse_errors.html" title="GLib.Scanner.parse_errors">parse_errors</a></span>: value
+    <span class="link"><a href="GLib.Scanner-token.html" title="GLib.Scanner.token">token</a></span>: value
+    <span class="link"><a href="GLib.Scanner-line.html" title="GLib.Scanner.line">line</a></span>: value
+    <span class="link"><a href="GLib.Scanner-position.html" title="GLib.Scanner.position">position</a></span>: value
+    <span class="link"><a href="GLib.Scanner-next_token.html" title="GLib.Scanner.next_token">next_token</a></span>: value
+    <span class="link"><a href="GLib.Scanner-next_line.html" title="GLib.Scanner.next_line">next_line</a></span>: value
+    <span class="link"><a href="GLib.Scanner-next_position.html" title="GLib.Scanner.next_position">next_position</a></span>: value
+});
+  </pre></div></div></div></div></div>
+<p class="p">The data structure representing a lexical scanner.</p>
+<p class="p">You should set @input_name after creating the scanner, since
+it is used by the default message handler when displaying
+warnings and errors. If you are scanning a file, the filename
+would be a good choice.</p>
+<p class="p">The @user_data and @max_parse_errors fields are not used.
+If you need to associate extra data with the scanner you
+can place them here.</p>
+<p class="p">If you want to use your own message handler you can set the
+@msg_handler field. The type of the message handler function
+is declared by <span class="link"><a href="GLib.ScannerMsgFunc.html" title="GLib.ScannerMsgFunc">GLib.ScannerMsgFunc</a></span>.</p>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="GLib.Scanner.cur_line.html" title="GLib.Scanner.prototype.cur_line">GLib.Scanner.prototype.cur_line</a></li>
+<li class="links "><a href="GLib.Scanner.cur_position.html" title="GLib.Scanner.prototype.cur_position">GLib.Scanner.prototype.cur_position</a></li>
+<li class="links "><a href="GLib.Scanner.cur_token.html" title="GLib.Scanner.prototype.cur_token">GLib.Scanner.prototype.cur_token</a></li>
+<li class="links "><a href="GLib.Scanner.destroy.html" title="GLib.Scanner.prototype.destroy">GLib.Scanner.prototype.destroy</a></li>
+<li class="links "><a href="GLib.Scanner.eof.html" title="GLib.Scanner.prototype.eof">GLib.Scanner.prototype.eof</a></li>
+<li class="links "><a href="GLib.Scanner.get_next_token.html" title="GLib.Scanner.prototype.get_next_token">GLib.Scanner.prototype.get_next_token</a></li>
+<li class="links "><a href="GLib.Scanner.input_file.html" title="GLib.Scanner.prototype.input_file">GLib.Scanner.prototype.input_file</a></li>
+<li class="links "><a href="GLib.Scanner.input_text.html" title="GLib.Scanner.prototype.input_text">GLib.Scanner.prototype.input_text</a></li>
+<li class="links "><a href="GLib.Scanner.peek_next_token.html" title="GLib.Scanner.prototype.peek_next_token">GLib.Scanner.prototype.peek_next_token</a></li>
+<li class="links "><a href="GLib.Scanner.scope_add_symbol.html" title="GLib.Scanner.prototype.scope_add_symbol">GLib.Scanner.prototype.scope_add_symbol</a></li>
+<li class="links "><a href="GLib.Scanner.scope_remove_symbol.html" title="GLib.Scanner.prototype.scope_remove_symbol">GLib.Scanner.prototype.scope_remove_symbol</a></li>
+<li class="links "><a href="GLib.Scanner.set_scope.html" title="GLib.Scanner.prototype.set_scope">GLib.Scanner.prototype.set_scope</a></li>
+<li class="links "><a href="GLib.Scanner.sync_file_offset.html" title="GLib.Scanner.prototype.sync_file_offset">GLib.Scanner.prototype.sync_file_offset</a></li>
+<li class="links "><a href="GLib.Scanner.unexp_token.html" title="GLib.Scanner.prototype.unexp_token">GLib.Scanner.prototype.unexp_token</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Fields</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="GLib.Scanner-config.html" title="GLib.Scanner.config">config</a></li>
+<li class="links "><a href="GLib.Scanner-input_name.html" title="GLib.Scanner.input_name">input_name</a></li>
+<li class="links "><a href="GLib.Scanner-line.html" title="GLib.Scanner.line">line</a></li>
+<li class="links "><a href="GLib.Scanner-max_parse_errors.html" title="GLib.Scanner.max_parse_errors">max_parse_errors</a></li>
+<li class="links "><a href="GLib.Scanner-msg_handler.html" title="GLib.Scanner.msg_handler">msg_handler</a></li>
+<li class="links "><a href="GLib.Scanner-next_line.html" title="GLib.Scanner.next_line">next_line</a></li>
+<li class="links "><a href="GLib.Scanner-next_position.html" title="GLib.Scanner.next_position">next_position</a></li>
+<li class="links "><a href="GLib.Scanner-next_token.html" title="GLib.Scanner.next_token">next_token</a></li>
+<li class="links "><a href="GLib.Scanner-next_value.html" title="GLib.Scanner.next_value">next_value</a></li>
+<li class="links "><a href="GLib.Scanner-parse_errors.html" title="GLib.Scanner.parse_errors">parse_errors</a></li>
+<li class="links "><a href="GLib.Scanner-position.html" title="GLib.Scanner.position">position</a></li>
+<li class="links "><a href="GLib.Scanner-qdata.html" title="GLib.Scanner.qdata">qdata</a></li>
+<li class="links "><a href="GLib.Scanner-token.html" title="GLib.Scanner.token">token</a></li>
+<li class="links "><a href="GLib.Scanner-user_data.html" title="GLib.Scanner.user_data">user_data</a></li>
+<li class="links "><a href="GLib.Scanner-value.html" title="GLib.Scanner.value">value</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="GLib">GLib</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

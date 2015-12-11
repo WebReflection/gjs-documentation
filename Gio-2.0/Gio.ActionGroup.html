@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.ActionGroup</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.ActionGroup</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
+
+let action_group = new Gio.ActionGroup();
+  </pre></div></div></div></div></div>
+<p class="p"><span class="link"><a href="Gio.ActionGroup.html" title="Gio.ActionGroup">Gio.ActionGroup</a></span> represents a group of actions. Actions can be used to
+expose functionality in a structured way, either from one part of a
+program to another, or to the outside world. Action groups are often
+used together with a <span class="link"><a href="Gio.MenuModel.html" title="Gio.MenuModel">Gio.MenuModel</a></span> that provides additional
+representation data for displaying the actions to the user, e.g. in
+a menu.</p>
+<p class="p">The main way to interact with the actions in a GActionGroup is to
+activate them with <span class="link"><a href="Gio.ActionGroup.activate_action.html" title="Gio.ActionGroup.prototype.activate_action">Gio.ActionGroup.prototype.activate_action</a></span>. Activating an
+action may require a <span class="link"><a href="../GLib-2.0/GLib.Variant.html" title="../GLib-2.0/GLib.Variant.html">GLib.Variant</a></span> parameter. The required type of the
+parameter can be inquired with <span class="link"><a href="Gio.ActionGroup.get_action_parameter_type.html" title="Gio.ActionGroup.prototype.get_action_parameter_type">Gio.ActionGroup.prototype.get_action_parameter_type</a></span>.
+Actions may be disabled, see <span class="link"><a href="Gio.ActionGroup.get_action_enabled.html" title="Gio.ActionGroup.prototype.get_action_enabled">Gio.ActionGroup.prototype.get_action_enabled</a></span>.
+Activating a disabled action has no effect.</p>
+<p class="p">Actions may optionally have a state in the form of a <span class="link"><a href="../GLib-2.0/GLib.Variant.html" title="../GLib-2.0/GLib.Variant.html">GLib.Variant</a></span>. The
+current state of an action can be inquired with
+<span class="link"><a href="Gio.ActionGroup.get_action_state.html" title="Gio.ActionGroup.prototype.get_action_state">Gio.ActionGroup.prototype.get_action_state</a></span>. Activating a stateful action may
+change its state, but it is also possible to set the state by calling
+<span class="link"><a href="Gio.ActionGroup.change_action_state.html" title="Gio.ActionGroup.prototype.change_action_state">Gio.ActionGroup.prototype.change_action_state</a></span>.</p>
+<p class="p">As typical example, consider a text editing application which has an
+option to change the current font to 'bold'. A good way to represent
+this would be a stateful action, with a boolean state. Activating the
+action would toggle the state.</p>
+<p class="p">Each action in the group has a unique name (which is a string).  All
+method calls, except <span class="link"><a href="Gio.ActionGroup.list_actions.html" title="Gio.ActionGroup.prototype.list_actions">Gio.ActionGroup.prototype.list_actions</a></span> take the name of
+an action as an argument.</p>
+<p class="p">The <span class="link"><a href="Gio.ActionGroup.html" title="Gio.ActionGroup">Gio.ActionGroup</a></span> API is meant to be the 'public' API to the action
+group.  The calls here are exactly the interaction that 'external
+forces' (eg: UI, incoming D-Bus messages, etc.) are supposed to have
+with actions.  'Internal' APIs (ie: ones meant only to be accessed by
+the action group implementation) are found on subclasses.  This is
+why you will find - for example - <span class="link"><a href="Gio.ActionGroup.get_action_enabled.html" title="Gio.ActionGroup.prototype.get_action_enabled">Gio.ActionGroup.prototype.get_action_enabled</a></span>
+but not an equivalent set() call.</p>
+<p class="p">Signals are emitted on the action group in response to state changes
+on individual actions.</p>
+<p class="p">Implementations of <span class="link"><a href="Gio.ActionGroup.html" title="Gio.ActionGroup">Gio.ActionGroup</a></span> should provide implementations for
+the virtual functions <span class="link"><a href="Gio.ActionGroup.list_actions.html" title="Gio.ActionGroup.prototype.list_actions">Gio.ActionGroup.prototype.list_actions</a></span> and
+<span class="link"><a href="Gio.ActionGroup.query_action.html" title="Gio.ActionGroup.prototype.query_action">Gio.ActionGroup.prototype.query_action</a></span>.  The other virtual functions should
+not be implemented - their "wrappers" are actually implemented with
+calls to <span class="link"><a href="Gio.ActionGroup.query_action.html" title="Gio.ActionGroup.prototype.query_action">Gio.ActionGroup.prototype.query_action</a></span>.</p>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Prerequisites</span></h2></div>
+<div class="region"><div class="contents"><p class="p">ActionGroup requires GObject.Object</p></div></div>
+</div></div>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Known Implementations</span></h2></div>
+<div class="region"><div class="contents"><p class="p">ActionGroup is implemented by Application, DBusActionGroup and SimpleActionGroup</p></div></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.ActionGroup.action_added.html" title="Gio.ActionGroup.prototype.action_added">Gio.ActionGroup.prototype.action_added</a></li>
+<li class="links "><a href="Gio.ActionGroup.action_enabled_changed.html" title="Gio.ActionGroup.prototype.action_enabled_changed">Gio.ActionGroup.prototype.action_enabled_changed</a></li>
+<li class="links "><a href="Gio.ActionGroup.action_removed.html" title="Gio.ActionGroup.prototype.action_removed">Gio.ActionGroup.prototype.action_removed</a></li>
+<li class="links "><a href="Gio.ActionGroup.action_state_changed.html" title="Gio.ActionGroup.prototype.action_state_changed">Gio.ActionGroup.prototype.action_state_changed</a></li>
+<li class="links "><a href="Gio.ActionGroup.activate_action.html" title="Gio.ActionGroup.prototype.activate_action">Gio.ActionGroup.prototype.activate_action</a></li>
+<li class="links "><a href="Gio.ActionGroup.change_action_state.html" title="Gio.ActionGroup.prototype.change_action_state">Gio.ActionGroup.prototype.change_action_state</a></li>
+<li class="links "><a href="Gio.ActionGroup.get_action_enabled.html" title="Gio.ActionGroup.prototype.get_action_enabled">Gio.ActionGroup.prototype.get_action_enabled</a></li>
+<li class="links "><a href="Gio.ActionGroup.get_action_parameter_type.html" title="Gio.ActionGroup.prototype.get_action_parameter_type">Gio.ActionGroup.prototype.get_action_parameter_type</a></li>
+<li class="links "><a href="Gio.ActionGroup.get_action_state.html" title="Gio.ActionGroup.prototype.get_action_state">Gio.ActionGroup.prototype.get_action_state</a></li>
+<li class="links "><a href="Gio.ActionGroup.get_action_state_hint.html" title="Gio.ActionGroup.prototype.get_action_state_hint">Gio.ActionGroup.prototype.get_action_state_hint</a></li>
+<li class="links "><a href="Gio.ActionGroup.get_action_state_type.html" title="Gio.ActionGroup.prototype.get_action_state_type">Gio.ActionGroup.prototype.get_action_state_type</a></li>
+<li class="links "><a href="Gio.ActionGroup.has_action.html" title="Gio.ActionGroup.prototype.has_action">Gio.ActionGroup.prototype.has_action</a></li>
+<li class="links "><a href="Gio.ActionGroup.list_actions.html" title="Gio.ActionGroup.prototype.list_actions">Gio.ActionGroup.prototype.list_actions</a></li>
+<li class="links "><a href="Gio.ActionGroup.query_action.html" title="Gio.ActionGroup.prototype.query_action">Gio.ActionGroup.prototype.query_action</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Signals</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.ActionGroup-action-added.html" title="Gio.ActionGroup::action-added">action-added</a></li>
+<li class="links "><a href="Gio.ActionGroup-action-enabled-changed.html" title="Gio.ActionGroup::action-enabled-changed">action-enabled-changed</a></li>
+<li class="links "><a href="Gio.ActionGroup-action-removed.html" title="Gio.ActionGroup::action-removed">action-removed</a></li>
+<li class="links "><a href="Gio.ActionGroup-action-state-changed.html" title="Gio.ActionGroup::action-state-changed">action-state-changed</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Virtual functions</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.ActionGroup-action_added.html" title="Gio.ActionGroup::action_added">Gio.ActionGroup::action_added</a></li>
+<li class="links "><a href="Gio.ActionGroup-action_enabled_changed.html" title="Gio.ActionGroup::action_enabled_changed">Gio.ActionGroup::action_enabled_changed</a></li>
+<li class="links "><a href="Gio.ActionGroup-action_removed.html" title="Gio.ActionGroup::action_removed">Gio.ActionGroup::action_removed</a></li>
+<li class="links "><a href="Gio.ActionGroup-action_state_changed.html" title="Gio.ActionGroup::action_state_changed">Gio.ActionGroup::action_state_changed</a></li>
+<li class="links "><a href="Gio.ActionGroup-activate_action.html" title="Gio.ActionGroup::activate_action">Gio.ActionGroup::activate_action</a></li>
+<li class="links "><a href="Gio.ActionGroup-change_action_state.html" title="Gio.ActionGroup::change_action_state">Gio.ActionGroup::change_action_state</a></li>
+<li class="links "><a href="Gio.ActionGroup-get_action_enabled.html" title="Gio.ActionGroup::get_action_enabled">Gio.ActionGroup::get_action_enabled</a></li>
+<li class="links "><a href="Gio.ActionGroup-get_action_parameter_type.html" title="Gio.ActionGroup::get_action_parameter_type">Gio.ActionGroup::get_action_parameter_type</a></li>
+<li class="links "><a href="Gio.ActionGroup-get_action_state.html" title="Gio.ActionGroup::get_action_state">Gio.ActionGroup::get_action_state</a></li>
+<li class="links "><a href="Gio.ActionGroup-get_action_state_hint.html" title="Gio.ActionGroup::get_action_state_hint">Gio.ActionGroup::get_action_state_hint</a></li>
+<li class="links "><a href="Gio.ActionGroup-get_action_state_type.html" title="Gio.ActionGroup::get_action_state_type">Gio.ActionGroup::get_action_state_type</a></li>
+<li class="links "><a href="Gio.ActionGroup-has_action.html" title="Gio.ActionGroup::has_action">Gio.ActionGroup::has_action</a></li>
+<li class="links "><a href="Gio.ActionGroup-list_actions.html" title="Gio.ActionGroup::list_actions">Gio.ActionGroup::list_actions</a></li>
+<li class="links "><a href="Gio.ActionGroup-query_action.html" title="Gio.ActionGroup::query_action">Gio.ActionGroup::query_action</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gio">Gio</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

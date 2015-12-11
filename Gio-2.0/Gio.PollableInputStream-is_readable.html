@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.PollableInputStream::is_readable</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.PollableInputStream.html" title="Gio.PollableInputStream">Gio.PollableInputStream</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.PollableInputStream::is_readable</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function vfunc_is_readable(): Boolean {
+}
+  </pre></div></div></div></div></div>
+<p class="p">Checks if <span class="code">stream</span> can be read.</p>
+<p class="p">Note that some stream types may not be able to implement this 100%
+reliably, and it is possible that a call to <span class="link"><a href="Gio.InputStream.read.html" title="Gio.InputStream.prototype.read">Gio.InputStream.prototype.read</a></span>
+after this returns <span class="code">true</span> would still block. To guarantee
+non-blocking behavior, you should always use
+<span class="link"><a href="Gio.PollableInputStream.read_nonblocking.html" title="Gio.PollableInputStream.prototype.read_nonblocking">Gio.PollableInputStream.prototype.read_nonblocking</a></span>, which will return a
+<span class="link"><a href="Gio.IOErrorEnum.html" title="Gio.IOErrorEnum">Gio.IOErrorEnum</a></span>.would_block error rather than blocking.</p>
+<p class="p">Since 2.28</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> if <span class="code">stream</span> is readable, <span class="code">false</span> if not. If an error
+  has occurred on <span class="code">stream</span>, this will result in
+  <span class="link"><a href="Gio.PollableInputStream.is_readable.html" title="Gio.PollableInputStream.prototype.is_readable">Gio.PollableInputStream.prototype.is_readable</a></span> returning <span class="code">true</span>, and the
+  next attempt to read will return the error.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.PollableInputStream.html" title="Gio.PollableInputStream">Gio.PollableInputStream</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

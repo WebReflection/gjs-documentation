@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.FileEnumerator.prototype.next_file</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.FileEnumerator.html" title="Gio.FileEnumerator">Gio.FileEnumerator</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.FileEnumerator.prototype.next_file</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function next_file(cancellable: <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span>): <span class="link"><a href="Gio.FileInfo.html" title="Gio.FileInfo">Gio.FileInfo</a></span> {
+    // Gjs wrapper for g_file_enumerator_next_file()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Returns information for the next file in the enumerated object.
+Will block until the information is available. The <span class="link"><a href="Gio.FileInfo.html" title="Gio.FileInfo">Gio.FileInfo</a></span>
+returned from this function will contain attributes that match the
+attribute string that was passed when the <span class="link"><a href="Gio.FileEnumerator.html" title="Gio.FileEnumerator">Gio.FileEnumerator</a></span> was created.</p>
+<p class="p">See the documentation of <span class="link"><a href="Gio.FileEnumerator.html" title="Gio.FileEnumerator">Gio.FileEnumerator</a></span> for information about the
+order of returned files.</p>
+<p class="p">On error, returns <span class="code">null</span> and sets @error to the error. If the
+enumerator is at the end, <span class="code">null</span> will be returned and @error will
+be unset.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">cancellable</span></dt>
+<dd class="terms"><p class="p">optional <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span> object, <span class="code">null</span> to ignore.</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">A <span class="link"><a href="Gio.FileInfo.html" title="Gio.FileInfo">Gio.FileInfo</a></span> or <span class="code">null</span> on error or end of enumerator.
+   Free the returned object with <span class="link"><a href="../GObject-2.0/GObject.Object.unref.html" title="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</a></span> when no longer needed.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.FileEnumerator.html" title="Gio.FileEnumerator">Gio.FileEnumerator</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

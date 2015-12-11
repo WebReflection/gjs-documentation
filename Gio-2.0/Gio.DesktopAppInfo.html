@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.DesktopAppInfo</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.DesktopAppInfo</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
+
+let desktopAppInfo = new Gio.DesktopAppInfo({
+    <span class="link"><a href="Gio.DesktopAppInfo-filename.html" title="Gio.DesktopAppInfo.filename">filename</a></span>: value,
+});
+  </pre></div></div></div></div></div>
+<p class="p"><span class="link"><a href="Gio.DesktopAppInfo.html" title="Gio.DesktopAppInfo">Gio.DesktopAppInfo</a></span> is an implementation of <span class="link"><a href="Gio.AppInfo.html" title="Gio.AppInfo">Gio.AppInfo</a></span> based on
+desktop files.</p>
+<p class="p">Note that `&lt;gio/gdesktopappinfo.h&gt;` belongs to the UNIX-specific
+GIO interfaces, thus you have to use the `gio-unix-2.0.pc` pkg-config
+file when using it.</p>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
+<div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
+<div>
+        <span class="code">GObject.Object</span>
+      
+      </div>
+<ul class="tree"><li class="tree"><div>
+        <span class="code">Gio.DesktopAppInfo</span>
+      </div></li></ul>
+</li></ul></div></div></div></div></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.DesktopAppInfo.new.html" title="Gio.DesktopAppInfo.new">Gio.DesktopAppInfo.new</a></li>
+<li class="links "><a href="Gio.DesktopAppInfo.new_from_filename.html" title="Gio.DesktopAppInfo.new_from_filename">Gio.DesktopAppInfo.new_from_filename</a></li>
+<li class="links "><a href="Gio.DesktopAppInfo.new_from_keyfile.html" title="Gio.DesktopAppInfo.new_from_keyfile">Gio.DesktopAppInfo.new_from_keyfile</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.DesktopAppInfo.get_action_name.html" title="Gio.DesktopAppInfo.prototype.get_action_name">Gio.DesktopAppInfo.prototype.get_action_name</a></li>
+<li class="links "><a href="Gio.DesktopAppInfo.get_boolean.html" title="Gio.DesktopAppInfo.prototype.get_boolean">Gio.DesktopAppInfo.prototype.get_boolean</a></li>
+<li class="links "><a href="Gio.DesktopAppInfo.get_categories.html" title="Gio.DesktopAppInfo.prototype.get_categories">Gio.DesktopAppInfo.prototype.get_categories</a></li>
+<li class="links "><a href="Gio.DesktopAppInfo.get_filename.html" title="Gio.DesktopAppInfo.prototype.get_filename">Gio.DesktopAppInfo.prototype.get_filename</a></li>
+<li class="links "><a href="Gio.DesktopAppInfo.get_generic_name.html" title="Gio.DesktopAppInfo.prototype.get_generic_name">Gio.DesktopAppInfo.prototype.get_generic_name</a></li>
+<li class="links "><a href="Gio.DesktopAppInfo.get_is_hidden.html" title="Gio.DesktopAppInfo.prototype.get_is_hidden">Gio.DesktopAppInfo.prototype.get_is_hidden</a></li>
+<li class="links "><a href="Gio.DesktopAppInfo.get_keywords.html" title="Gio.DesktopAppInfo.prototype.get_keywords">Gio.DesktopAppInfo.prototype.get_keywords</a></li>
+<li class="links "><a href="Gio.DesktopAppInfo.get_nodisplay.html" title="Gio.DesktopAppInfo.prototype.get_nodisplay">Gio.DesktopAppInfo.prototype.get_nodisplay</a></li>
+<li class="links "><a href="Gio.DesktopAppInfo.get_show_in.html" title="Gio.DesktopAppInfo.prototype.get_show_in">Gio.DesktopAppInfo.prototype.get_show_in</a></li>
+<li class="links "><a href="Gio.DesktopAppInfo.get_startup_wm_class.html" title="Gio.DesktopAppInfo.prototype.get_startup_wm_class">Gio.DesktopAppInfo.prototype.get_startup_wm_class</a></li>
+<li class="links "><a href="Gio.DesktopAppInfo.get_string.html" title="Gio.DesktopAppInfo.prototype.get_string">Gio.DesktopAppInfo.prototype.get_string</a></li>
+<li class="links "><a href="Gio.DesktopAppInfo.has_key.html" title="Gio.DesktopAppInfo.prototype.has_key">Gio.DesktopAppInfo.prototype.has_key</a></li>
+<li class="links "><a href="Gio.DesktopAppInfo.launch_action.html" title="Gio.DesktopAppInfo.prototype.launch_action">Gio.DesktopAppInfo.prototype.launch_action</a></li>
+<li class="links "><a href="Gio.DesktopAppInfo.launch_uris_as_manager.html" title="Gio.DesktopAppInfo.prototype.launch_uris_as_manager">Gio.DesktopAppInfo.prototype.launch_uris_as_manager</a></li>
+<li class="links "><a href="Gio.DesktopAppInfo.list_actions.html" title="Gio.DesktopAppInfo.prototype.list_actions">Gio.DesktopAppInfo.prototype.list_actions</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Static Functions</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.DesktopAppInfo.search.html" title="Gio.DesktopAppInfo.search">Gio.DesktopAppInfo.search</a></li>
+<li class="links "><a href="Gio.DesktopAppInfo.set_desktop_env.html" title="Gio.DesktopAppInfo.set_desktop_env">Gio.DesktopAppInfo.set_desktop_env</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Properties</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.DesktopAppInfo-filename.html" title="Gio.DesktopAppInfo.filename">filename</a></li></ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gio">Gio</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.OptionGroup</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.OptionGroup</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const GLib = imports.gi.GLib;
+
+let optionGroup = new GLib.OptionGroup();
+  </pre></div></div></div></div></div>
+<p class="p">A &lt;structname&gt;GOptionGroup&lt;/structname&gt; struct defines the options in a single
+group. The struct has only private fields and should not be directly accessed.</p>
+<p class="p">All options in a group share the same translation function. Libraries which
+need to parse commandline options are expected to provide a function for
+getting a &lt;structname&gt;GOptionGroup&lt;/structname&gt; holding their options, which
+the application can then add to its <span class="link"><a href="GLib.OptionContext.html" title="GLib.OptionContext">GLib.OptionContext</a></span>.</p>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="GLib.OptionGroup.add_entries.html" title="GLib.OptionGroup.prototype.add_entries">GLib.OptionGroup.prototype.add_entries</a></li>
+<li class="links "><a href="GLib.OptionGroup.free.html" title="GLib.OptionGroup.prototype.free">GLib.OptionGroup.prototype.free</a></li>
+<li class="links "><a href="GLib.OptionGroup.set_translate_func.html" title="GLib.OptionGroup.prototype.set_translate_func">GLib.OptionGroup.prototype.set_translate_func</a></li>
+<li class="links "><a href="GLib.OptionGroup.set_translation_domain.html" title="GLib.OptionGroup.prototype.set_translation_domain">GLib.OptionGroup.prototype.set_translation_domain</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="GLib">GLib</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

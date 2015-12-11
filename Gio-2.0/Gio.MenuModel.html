@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.MenuModel</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.MenuModel</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
+
+let menuModel = new Gio.MenuModel();
+  </pre></div></div></div></div></div>
+<p class="p"><span class="link"><a href="Gio.MenuModel.html" title="Gio.MenuModel">Gio.MenuModel</a></span> represents the contents of a menu -- an ordered list of
+menu items. The items are associated with actions, which can be
+activated through them. Items can be grouped in sections, and may
+have submenus associated with them. Both items and sections usually
+have some representation data, such as labels or icons. The type of
+the associated action (ie whether it is stateful, and what kind of
+state it has) can influence the representation of the item.</p>
+<p class="p">The conceptual model of menus in <span class="link"><a href="Gio.MenuModel.html" title="Gio.MenuModel">Gio.MenuModel</a></span> is hierarchical:
+sections and submenus are again represented by #GMenuModels.
+Menus themselves do not define their own roles. Rather, the role
+of a particular <span class="link"><a href="Gio.MenuModel.html" title="Gio.MenuModel">Gio.MenuModel</a></span> is defined by the item that references
+it (or, in the case of the 'root' menu, is defined by the context
+in which it is used).</p>
+<p class="p">As an example, consider the visible portions of this menu:</p>
+<p class="p">## An example menu # {#menu-example}</p>
+<p class="p">![](menu-example.png)</p>
+<p class="p">There are 8 "menus" visible in the screenshot: one menubar, two
+submenus and 5 sections:</p>
+<p class="p">- the toplevel menubar (containing 4 items)
+- the View submenu (containing 3 sections)
+- the first section of the View submenu (containing 2 items)
+- the second section of the View submenu (containing 1 item)
+- the final section of the View submenu (containing 1 item)
+- the Highlight Mode submenu (containing 2 sections)
+- the Sources section (containing 2 items)
+- the Markup section (containing 2 items)</p>
+<p class="p">The [example][menu-model] illustrates the conceptual connection between
+these 8 menus. Each large block in the figure represents a menu and the
+smaller blocks within the large block represent items in that menu. Some
+items contain references to other menus.</p>
+<p class="p">## A menu example # {#menu-model}</p>
+<p class="p">![](menu-model.png)</p>
+<p class="p">Notice that the separators visible in the [example][menu-example]
+appear nowhere in the [menu model][menu-model]. This is because
+separators are not explicitly represented in the menu model. Instead,
+a separator is inserted between any two non-empty sections of a menu.
+Section items can have labels just like any other item. In that case,
+a display system may show a section header instead of a separator.</p>
+<p class="p">The motivation for this abstract model of application controls is
+that modern user interfaces tend to make these controls available
+outside the application. Examples include global menus, jumplists,
+dash boards, etc. To support such uses, it is necessary to 'export'
+information about actions and their representation in menus, which
+is exactly what the [GActionGroup exporter][gio-GActionGroup-exporter]
+and the [GMenuModel exporter][gio-GMenuModel-exporter] do for
+<span class="link"><a href="Gio.ActionGroup.html" title="Gio.ActionGroup">Gio.ActionGroup</a></span> and <span class="link"><a href="Gio.MenuModel.html" title="Gio.MenuModel">Gio.MenuModel</a></span>. The client-side counterparts to
+make use of the exported information are <span class="link"><a href="Gio.DBusActionGroup.html" title="Gio.DBusActionGroup">Gio.DBusActionGroup</a></span> and
+<span class="link"><a href="Gio.DBusMenuModel.html" title="Gio.DBusMenuModel">Gio.DBusMenuModel</a></span>.</p>
+<p class="p">The API of <span class="link"><a href="Gio.MenuModel.html" title="Gio.MenuModel">Gio.MenuModel</a></span> is very generic, with iterators for the
+attributes and links of an item, see <span class="link"><a href="Gio.MenuModel.iterate_item_attributes.html" title="Gio.MenuModel.prototype.iterate_item_attributes">Gio.MenuModel.prototype.iterate_item_attributes</a></span>
+and <span class="link"><a href="Gio.MenuModel.iterate_item_links.html" title="Gio.MenuModel.prototype.iterate_item_links">Gio.MenuModel.prototype.iterate_item_links</a></span>. The 'standard' attributes and
+link types have predefined names: %G_MENU_ATTRIBUTE_LABEL,
+%G_MENU_ATTRIBUTE_ACTION, %G_MENU_ATTRIBUTE_TARGET, %G_MENU_LINK_SECTION
+and %G_MENU_LINK_SUBMENU.</p>
+<p class="p">Items in a <span class="link"><a href="Gio.MenuModel.html" title="Gio.MenuModel">Gio.MenuModel</a></span> represent active controls if they refer to
+an action that can get activated when the user interacts with the
+menu item. The reference to the action is encoded by the string id
+in the %G_MENU_ATTRIBUTE_ACTION attribute. An action id uniquely
+identifies an action in an action group. Which action group(s) provide
+actions depends on the context in which the menu model is used.
+E.g. when the model is exported as the application menu of a
+#GtkApplication, actions can be application-wide or window-specific
+(and thus come from two different action groups). By convention, the
+application-wide actions have names that start with "app.", while the
+names of window-specific actions start with "win.".</p>
+<p class="p">While a wide variety of stateful actions is possible, the following
+is the minimum that is expected to be supported by all users of exported
+menu information:
+- an action with no parameter type and no state
+- an action with no parameter type and boolean state
+- an action with string parameter type and string state</p>
+<p class="p">## Stateless</p>
+<p class="p">A stateless action typically corresponds to an ordinary menu item.</p>
+<p class="p">Selecting such a menu item will activate the action (with no parameter).</p>
+<p class="p">## Boolean State</p>
+<p class="p">An action with a boolean state will most typically be used with a "toggle"
+or "switch" menu item. The state can be set directly, but activating the
+action (with no parameter) results in the state being toggled.</p>
+<p class="p">Selecting a toggle menu item will activate the action. The menu item should
+be rendered as "checked" when the state is true.</p>
+<p class="p">## String Parameter and State</p>
+<p class="p">Actions with string parameters and state will most typically be used to
+represent an enumerated choice over the items available for a group of
+radio menu items. Activating the action with a string parameter is
+equivalent to setting that parameter as the state.</p>
+<p class="p">Radio menu items, in addition to being associated with the action, will
+have a target value. Selecting that menu item will result in activation
+of the action with the target value as the parameter. The menu item should
+be rendered as "selected" when the state of the action is equal to the
+target value of the menu item.</p>
+<p class="p">Since 2.32</p>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
+<div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
+<div>
+        <span class="code">GObject.Object</span>
+      
+      </div>
+<ul class="tree"><li class="tree"><div>
+        <span class="code">Gio.MenuModel</span>
+      </div></li></ul>
+</li></ul></div></div></div></div></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.MenuModel.get_item_attribute_value.html" title="Gio.MenuModel.prototype.get_item_attribute_value">Gio.MenuModel.prototype.get_item_attribute_value</a></li>
+<li class="links "><a href="Gio.MenuModel.get_item_link.html" title="Gio.MenuModel.prototype.get_item_link">Gio.MenuModel.prototype.get_item_link</a></li>
+<li class="links "><a href="Gio.MenuModel.get_n_items.html" title="Gio.MenuModel.prototype.get_n_items">Gio.MenuModel.prototype.get_n_items</a></li>
+<li class="links "><a href="Gio.MenuModel.is_mutable.html" title="Gio.MenuModel.prototype.is_mutable">Gio.MenuModel.prototype.is_mutable</a></li>
+<li class="links "><a href="Gio.MenuModel.items_changed.html" title="Gio.MenuModel.prototype.items_changed">Gio.MenuModel.prototype.items_changed</a></li>
+<li class="links "><a href="Gio.MenuModel.iterate_item_attributes.html" title="Gio.MenuModel.prototype.iterate_item_attributes">Gio.MenuModel.prototype.iterate_item_attributes</a></li>
+<li class="links "><a href="Gio.MenuModel.iterate_item_links.html" title="Gio.MenuModel.prototype.iterate_item_links">Gio.MenuModel.prototype.iterate_item_links</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Signals</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.MenuModel-items-changed.html" title="Gio.MenuModel::items-changed">items-changed</a></li></ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Virtual functions</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.MenuModel-get_item_attribute_value.html" title="Gio.MenuModel::get_item_attribute_value">Gio.MenuModel::get_item_attribute_value</a></li>
+<li class="links "><a href="Gio.MenuModel-get_item_attributes.html" title="Gio.MenuModel::get_item_attributes">Gio.MenuModel::get_item_attributes</a></li>
+<li class="links "><a href="Gio.MenuModel-get_item_link.html" title="Gio.MenuModel::get_item_link">Gio.MenuModel::get_item_link</a></li>
+<li class="links "><a href="Gio.MenuModel-get_n_items.html" title="Gio.MenuModel::get_n_items">Gio.MenuModel::get_n_items</a></li>
+<li class="links "><a href="Gio.MenuModel-is_mutable.html" title="Gio.MenuModel::is_mutable">Gio.MenuModel::is_mutable</a></li>
+<li class="links "><a href="Gio.MenuModel-iterate_item_attributes.html" title="Gio.MenuModel::iterate_item_attributes">Gio.MenuModel::iterate_item_attributes</a></li>
+<li class="links "><a href="Gio.MenuModel-iterate_item_links.html" title="Gio.MenuModel::iterate_item_links">Gio.MenuModel::iterate_item_links</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gio">Gio</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

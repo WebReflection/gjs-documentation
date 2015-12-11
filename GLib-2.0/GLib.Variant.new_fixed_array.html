@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.Variant.new_fixed_array</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » <a class="trail" href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.Variant.new_fixed_array</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function new_fixed_array(element_type: <span class="link"><a href="GLib.VariantType.html" title="GLib.VariantType">GLib.VariantType</a></span>, elements: void, n_elements: Number(gsize), element_size: Number(gsize)): <span class="link"><a href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a></span> {
+    // Gjs wrapper for g_variant_new_fixed_array()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Provides access to the serialised data for an array of fixed-sized
+items.</p>
+<p class="p">@value must be an array with fixed-sized elements.  Numeric types are
+fixed-size as are tuples containing only other fixed-sized types.</p>
+<p class="p"><span class="code">element_size</span> must be the size of a single element in the array.
+For example, if calling this function for an array of 32-bit integers,
+you might say sizeof(gint32). This value isn't used except for the purpose
+of a double-check that the form of the serialised data matches the caller's
+expectation.</p>
+<p class="p"><span class="code">n_elements</span>, which must be non-<span class="code">null</span> is set equal to the number of
+items in the array.</p>
+<p class="p">Since 2.32</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">element_type</span></dt>
+<dd class="terms"><p class="p">the <span class="link"><a href="GLib.VariantType.html" title="GLib.VariantType">GLib.VariantType</a></span> of each element</p></dd>
+<dt class="terms"><span class="code">elements</span></dt>
+<dd class="terms"><p class="p">a pointer to the fixed array of contiguous elements</p></dd>
+<dt class="terms"><span class="code">n_elements</span></dt>
+<dd class="terms"><p class="p">the number of elements</p></dd>
+<dt class="terms"><span class="code">element_size</span></dt>
+<dd class="terms"><p class="p">the size of each element</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">a floating reference to a new array <span class="link"><a href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a></span> instance</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

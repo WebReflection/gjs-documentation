@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.Menu</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.Menu</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
+
+let menu = new Gio.Menu();
+  </pre></div></div></div></div></div>
+<p class="p"><span class="link"><a href="Gio.Menu.html" title="Gio.Menu">Gio.Menu</a></span> is a simple implementation of <span class="link"><a href="Gio.MenuModel.html" title="Gio.MenuModel">Gio.MenuModel</a></span>.
+You populate a <span class="link"><a href="Gio.Menu.html" title="Gio.Menu">Gio.Menu</a></span> by adding <span class="link"><a href="Gio.MenuItem.html" title="Gio.MenuItem">Gio.MenuItem</a></span> instances to it.</p>
+<p class="p">There are some convenience functions to allow you to directly
+add items (avoiding <span class="link"><a href="Gio.MenuItem.html" title="Gio.MenuItem">Gio.MenuItem</a></span>) for the common cases. To add
+a regular item, use <span class="link"><a href="Gio.Menu.insert.html" title="Gio.Menu.prototype.insert">Gio.Menu.prototype.insert</a></span>. To add a section, use
+<span class="link"><a href="Gio.Menu.insert_section.html" title="Gio.Menu.prototype.insert_section">Gio.Menu.prototype.insert_section</a></span>. To add a submenu, use
+<span class="link"><a href="Gio.Menu.insert_submenu.html" title="Gio.Menu.prototype.insert_submenu">Gio.Menu.prototype.insert_submenu</a></span>.</p>
+<p class="p">Since 2.32</p>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
+<div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
+<div>
+        <span class="code">GObject.Object</span>
+      
+      </div>
+<ul class="tree"><li class="tree">
+<div>
+        <span class="code">Gio.MenuModel</span>
+      
+      </div>
+<ul class="tree"><li class="tree"><div>
+        <span class="code">Gio.Menu</span>
+      </div></li></ul>
+</li></ul>
+</li></ul></div></div></div></div></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.Menu.new.html" title="Gio.Menu.new">Gio.Menu.new</a></li></ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.Menu.append.html" title="Gio.Menu.prototype.append">Gio.Menu.prototype.append</a></li>
+<li class="links "><a href="Gio.Menu.append_item.html" title="Gio.Menu.prototype.append_item">Gio.Menu.prototype.append_item</a></li>
+<li class="links "><a href="Gio.Menu.append_section.html" title="Gio.Menu.prototype.append_section">Gio.Menu.prototype.append_section</a></li>
+<li class="links "><a href="Gio.Menu.append_submenu.html" title="Gio.Menu.prototype.append_submenu">Gio.Menu.prototype.append_submenu</a></li>
+<li class="links "><a href="Gio.Menu.freeze.html" title="Gio.Menu.prototype.freeze">Gio.Menu.prototype.freeze</a></li>
+<li class="links "><a href="Gio.Menu.insert.html" title="Gio.Menu.prototype.insert">Gio.Menu.prototype.insert</a></li>
+<li class="links "><a href="Gio.Menu.insert_item.html" title="Gio.Menu.prototype.insert_item">Gio.Menu.prototype.insert_item</a></li>
+<li class="links "><a href="Gio.Menu.insert_section.html" title="Gio.Menu.prototype.insert_section">Gio.Menu.prototype.insert_section</a></li>
+<li class="links "><a href="Gio.Menu.insert_submenu.html" title="Gio.Menu.prototype.insert_submenu">Gio.Menu.prototype.insert_submenu</a></li>
+<li class="links "><a href="Gio.Menu.prepend.html" title="Gio.Menu.prototype.prepend">Gio.Menu.prototype.prepend</a></li>
+<li class="links "><a href="Gio.Menu.prepend_item.html" title="Gio.Menu.prototype.prepend_item">Gio.Menu.prototype.prepend_item</a></li>
+<li class="links "><a href="Gio.Menu.prepend_section.html" title="Gio.Menu.prototype.prepend_section">Gio.Menu.prototype.prepend_section</a></li>
+<li class="links "><a href="Gio.Menu.prepend_submenu.html" title="Gio.Menu.prototype.prepend_submenu">Gio.Menu.prototype.prepend_submenu</a></li>
+<li class="links "><a href="Gio.Menu.remove.html" title="Gio.Menu.prototype.remove">Gio.Menu.prototype.remove</a></li>
+<li class="links "><a href="Gio.Menu.remove_all.html" title="Gio.Menu.prototype.remove_all">Gio.Menu.prototype.remove_all</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gio">Gio</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

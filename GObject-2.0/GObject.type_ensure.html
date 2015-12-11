@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GObject.type_ensure</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GObject">GObject</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GObject.type_ensure</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function type_ensure(type: GObject.Type): void {
+    // Gjs wrapper for g_type_ensure()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Ensures that the indicated <span class="code">type</span> has been registered with the
+type system, and its _class_init() method has been run.</p>
+<p class="p">In theory, simply calling the type's _get_type() method (or using
+the corresponding macro) is supposed take care of this. However,
+_get_type() methods are often marked %G_GNUC_CONST for performance
+reasons, even though this is technically incorrect (since
+%G_GNUC_CONST requires that the function not have side effects,
+which _get_type() methods do on the first call). As a result, if
+you write a bare call to a _get_type() macro, it may get optimized
+out by the compiler. Using <span class="link"><a href="GObject.type_ensure.html" title="GObject.type_ensure">GObject.type_ensure</a></span> guarantees that the
+type's _get_type() method is called.</p>
+<p class="p">Since 2.34</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">type</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="../GLib-2.0/GLib.Type.html" title="../GLib-2.0/GLib.Type.html">GLib.Type</a></span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="GObject">GObject</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

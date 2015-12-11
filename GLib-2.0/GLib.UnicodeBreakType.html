@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.UnicodeBreakType</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.UnicodeBreakType</span></h1></div>
+<div class="region">
+<div class="contents">
+<p class="p">These are the possible line break classifications.</p>
+<p class="p">Since new unicode versions may add new types here, applications should be ready
+to handle unknown values. They may be regarded as <span class="link"><a href="GLib.UnicodeBreakType.html" title="GLib.UnicodeBreakType">GLib.UnicodeBreakType</a></span>.unknown.</p>
+<p class="p">See &lt;ulink url="http://www.unicode.org/unicode/reports/tr14/"&gt;http://www.unicode.org/unicode/reports/tr14/&lt;/ulink&gt;.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">UnicodeBreakType.MANDATORY</span></dt>
+<dd class="terms"><p class="p">Mandatory Break (BK)</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.CARRIAGE_RETURN</span></dt>
+<dd class="terms"><p class="p">Carriage Return (CR)</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.LINE_FEED</span></dt>
+<dd class="terms"><p class="p">Line Feed (LF)</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.COMBINING_MARK</span></dt>
+<dd class="terms"><p class="p">Attached Characters and Combining Marks (CM)</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.SURROGATE</span></dt>
+<dd class="terms"><p class="p">Surrogates (SG)</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.ZERO_WIDTH_SPACE</span></dt>
+<dd class="terms"><p class="p">Zero Width Space (ZW)</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.INSEPARABLE</span></dt>
+<dd class="terms"><p class="p">Inseparable (IN)</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.NON_BREAKING_GLUE</span></dt>
+<dd class="terms"><p class="p">Non-breaking ("Glue") (GL)</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.CONTINGENT</span></dt>
+<dd class="terms"><p class="p">Contingent Break Opportunity (CB)</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.SPACE</span></dt>
+<dd class="terms"><p class="p">Space (SP)</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.AFTER</span></dt>
+<dd class="terms"><p class="p">Break Opportunity After (BA)</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.BEFORE</span></dt>
+<dd class="terms"><p class="p">Break Opportunity Before (BB)</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.BEFORE_AND_AFTER</span></dt>
+<dd class="terms"><p class="p">Break Opportunity Before and After (B2)</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.HYPHEN</span></dt>
+<dd class="terms"><p class="p">Hyphen (HY)</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.NON_STARTER</span></dt>
+<dd class="terms"><p class="p">Nonstarter (NS)</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.OPEN_PUNCTUATION</span></dt>
+<dd class="terms"><p class="p">Opening Punctuation (OP)</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.CLOSE_PUNCTUATION</span></dt>
+<dd class="terms"><p class="p">Closing Punctuation (CL)</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.QUOTATION</span></dt>
+<dd class="terms"><p class="p">Ambiguous Quotation (QU)</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.EXCLAMATION</span></dt>
+<dd class="terms"><p class="p">Exclamation/Interrogation (EX)</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.IDEOGRAPHIC</span></dt>
+<dd class="terms"><p class="p">Ideographic (ID)</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.NUMERIC</span></dt>
+<dd class="terms"><p class="p">Numeric (NU)</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.INFIX_SEPARATOR</span></dt>
+<dd class="terms"><p class="p">Infix Separator (Numeric) (IS)</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.SYMBOL</span></dt>
+<dd class="terms"><p class="p">Symbols Allowing Break After (SY)</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.ALPHABETIC</span></dt>
+<dd class="terms"><p class="p">Ordinary Alphabetic and Symbol Characters (AL)</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.PREFIX</span></dt>
+<dd class="terms"><p class="p">Prefix (Numeric) (PR)</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.POSTFIX</span></dt>
+<dd class="terms"><p class="p">Postfix (Numeric) (PO)</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.COMPLEX_CONTEXT</span></dt>
+<dd class="terms"><p class="p">Complex Content Dependent (South East Asian) (SA)</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.AMBIGUOUS</span></dt>
+<dd class="terms"><p class="p">Ambiguous (Alphabetic or Ideographic) (AI)</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.UNKNOWN</span></dt>
+<dd class="terms"><p class="p">Unknown (XX)</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.NEXT_LINE</span></dt>
+<dd class="terms"><p class="p">Next Line (NL)</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.WORD_JOINER</span></dt>
+<dd class="terms"><p class="p">Word Joiner (WJ)</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.HANGUL_L_JAMO</span></dt>
+<dd class="terms"><p class="p">Hangul L Jamo (JL)</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.HANGUL_V_JAMO</span></dt>
+<dd class="terms"><p class="p">Hangul V Jamo (JV)</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.HANGUL_T_JAMO</span></dt>
+<dd class="terms"><p class="p">Hangul T Jamo (JT)</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.HANGUL_LV_SYLLABLE</span></dt>
+<dd class="terms"><p class="p">Hangul LV Syllable (H2)</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.HANGUL_LVT_SYLLABLE</span></dt>
+<dd class="terms"><p class="p">Hangul LVT Syllable (H3)</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.CLOSE_PARANTHESIS</span></dt>
+<dd class="terms"><p class="p">Closing Parenthesis (CP). Since 2.28</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.CONDITIONAL_JAPANESE_STARTER</span></dt>
+<dd class="terms"><p class="p">Conditional Japanese Starter (CJ). Since: 2.32</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.HEBREW_LETTER</span></dt>
+<dd class="terms"><p class="p">Hebrew Letter (HL). Since: 2.32</p></dd>
+<dt class="terms"><span class="code">UnicodeBreakType.REGIONAL_INDICATOR</span></dt>
+<dd class="terms"><p class="p">Regional Indicator (RI). Since: 2.36</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="GLib">GLib</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

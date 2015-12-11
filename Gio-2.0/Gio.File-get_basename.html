@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.File::get_basename</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.File.html" title="Gio.File">Gio.File</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.File::get_basename</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function vfunc_get_basename(): String {
+}
+  </pre></div></div></div></div></div>
+<p class="p">Gets the base name (the last component of the path) for a given <span class="link"><a href="Gio.File.html" title="Gio.File">Gio.File</a></span>.</p>
+<p class="p">If called for the top level of a system (such as the filesystem root
+or a uri like sftp://host/) it will return a single directory separator
+(and on Windows, possibly a drive letter).</p>
+<p class="p">The base name is a byte string (not UTF-8). It has no defined encoding
+or rules other than it may not contain zero bytes.  If you want to use
+filenames in a user interface you should use the display name that you
+can get by requesting the %G_FILE_ATTRIBUTE_STANDARD_DISPLAY_NAME
+attribute with <span class="link"><a href="Gio.File.query_info.html" title="Gio.File.prototype.query_info">Gio.File.prototype.query_info</a></span>.</p>
+<p class="p">This call does no blocking I/O.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">string containing the <span class="link"><a href="Gio.File.html" title="Gio.File">Gio.File</a></span>'s base name, or <span class="code">null</span>
+    if given <span class="link"><a href="Gio.File.html" title="Gio.File">Gio.File</a></span> is invalid. The returned string should be
+    freed with <span class="link"><a href="../GLib-2.0/GLib.free.html" title="../GLib-2.0/GLib.free.html">GLib.free</a></span> when no longer needed.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.File.html" title="Gio.File">Gio.File</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.TlsDatabase</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.TlsDatabase</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
+
+let tlsDatabase = new Gio.TlsDatabase();
+  </pre></div></div></div></div></div>
+<p class="p"><span class="link"><a href="Gio.TlsDatabase.html" title="Gio.TlsDatabase">Gio.TlsDatabase</a></span> is used to lookup certificates and other information
+from a certificate or key store. It is an abstract base class which
+TLS library specific subtypes override.</p>
+<p class="p">Most common client applications will not directly interact with
+<span class="link"><a href="Gio.TlsDatabase.html" title="Gio.TlsDatabase">Gio.TlsDatabase</a></span>. It is used internally by <span class="link"><a href="Gio.TlsConnection.html" title="Gio.TlsConnection">Gio.TlsConnection</a></span>.</p>
+<p class="p">Since 2.30</p>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
+<div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
+<div>
+        <span class="code">GObject.Object</span>
+      
+      </div>
+<ul class="tree"><li class="tree"><div>
+        <span class="code">Gio.TlsDatabase</span>
+      </div></li></ul>
+</li></ul></div></div></div></div></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.TlsDatabase.create_certificate_handle.html" title="Gio.TlsDatabase.prototype.create_certificate_handle">Gio.TlsDatabase.prototype.create_certificate_handle</a></li>
+<li class="links "><a href="Gio.TlsDatabase.lookup_certificate_for_handle.html" title="Gio.TlsDatabase.prototype.lookup_certificate_for_handle">Gio.TlsDatabase.prototype.lookup_certificate_for_handle</a></li>
+<li class="links "><a href="Gio.TlsDatabase.lookup_certificate_for_handle_async.html" title="Gio.TlsDatabase.prototype.lookup_certificate_for_handle_async">Gio.TlsDatabase.prototype.lookup_certificate_for_handle_async</a></li>
+<li class="links "><a href="Gio.TlsDatabase.lookup_certificate_for_handle_finish.html" title="Gio.TlsDatabase.prototype.lookup_certificate_for_handle_finish">Gio.TlsDatabase.prototype.lookup_certificate_for_handle_finish</a></li>
+<li class="links "><a href="Gio.TlsDatabase.lookup_certificate_issuer.html" title="Gio.TlsDatabase.prototype.lookup_certificate_issuer">Gio.TlsDatabase.prototype.lookup_certificate_issuer</a></li>
+<li class="links "><a href="Gio.TlsDatabase.lookup_certificate_issuer_async.html" title="Gio.TlsDatabase.prototype.lookup_certificate_issuer_async">Gio.TlsDatabase.prototype.lookup_certificate_issuer_async</a></li>
+<li class="links "><a href="Gio.TlsDatabase.lookup_certificate_issuer_finish.html" title="Gio.TlsDatabase.prototype.lookup_certificate_issuer_finish">Gio.TlsDatabase.prototype.lookup_certificate_issuer_finish</a></li>
+<li class="links "><a href="Gio.TlsDatabase.lookup_certificates_issued_by.html" title="Gio.TlsDatabase.prototype.lookup_certificates_issued_by">Gio.TlsDatabase.prototype.lookup_certificates_issued_by</a></li>
+<li class="links "><a href="Gio.TlsDatabase.lookup_certificates_issued_by_async.html" title="Gio.TlsDatabase.prototype.lookup_certificates_issued_by_async">Gio.TlsDatabase.prototype.lookup_certificates_issued_by_async</a></li>
+<li class="links "><a href="Gio.TlsDatabase.lookup_certificates_issued_by_finish.html" title="Gio.TlsDatabase.prototype.lookup_certificates_issued_by_finish">Gio.TlsDatabase.prototype.lookup_certificates_issued_by_finish</a></li>
+<li class="links "><a href="Gio.TlsDatabase.verify_chain.html" title="Gio.TlsDatabase.prototype.verify_chain">Gio.TlsDatabase.prototype.verify_chain</a></li>
+<li class="links "><a href="Gio.TlsDatabase.verify_chain_async.html" title="Gio.TlsDatabase.prototype.verify_chain_async">Gio.TlsDatabase.prototype.verify_chain_async</a></li>
+<li class="links "><a href="Gio.TlsDatabase.verify_chain_finish.html" title="Gio.TlsDatabase.prototype.verify_chain_finish">Gio.TlsDatabase.prototype.verify_chain_finish</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Virtual functions</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.TlsDatabase-create_certificate_handle.html" title="Gio.TlsDatabase::create_certificate_handle">Gio.TlsDatabase::create_certificate_handle</a></li>
+<li class="links "><a href="Gio.TlsDatabase-lookup_certificate_for_handle.html" title="Gio.TlsDatabase::lookup_certificate_for_handle">Gio.TlsDatabase::lookup_certificate_for_handle</a></li>
+<li class="links "><a href="Gio.TlsDatabase-lookup_certificate_for_handle_async.html" title="Gio.TlsDatabase::lookup_certificate_for_handle_async">Gio.TlsDatabase::lookup_certificate_for_handle_async</a></li>
+<li class="links "><a href="Gio.TlsDatabase-lookup_certificate_for_handle_finish.html" title="Gio.TlsDatabase::lookup_certificate_for_handle_finish">Gio.TlsDatabase::lookup_certificate_for_handle_finish</a></li>
+<li class="links "><a href="Gio.TlsDatabase-lookup_certificate_issuer.html" title="Gio.TlsDatabase::lookup_certificate_issuer">Gio.TlsDatabase::lookup_certificate_issuer</a></li>
+<li class="links "><a href="Gio.TlsDatabase-lookup_certificate_issuer_async.html" title="Gio.TlsDatabase::lookup_certificate_issuer_async">Gio.TlsDatabase::lookup_certificate_issuer_async</a></li>
+<li class="links "><a href="Gio.TlsDatabase-lookup_certificate_issuer_finish.html" title="Gio.TlsDatabase::lookup_certificate_issuer_finish">Gio.TlsDatabase::lookup_certificate_issuer_finish</a></li>
+<li class="links "><a href="Gio.TlsDatabase-lookup_certificates_issued_by.html" title="Gio.TlsDatabase::lookup_certificates_issued_by">Gio.TlsDatabase::lookup_certificates_issued_by</a></li>
+<li class="links "><a href="Gio.TlsDatabase-lookup_certificates_issued_by_async.html" title="Gio.TlsDatabase::lookup_certificates_issued_by_async">Gio.TlsDatabase::lookup_certificates_issued_by_async</a></li>
+<li class="links "><a href="Gio.TlsDatabase-lookup_certificates_issued_by_finish.html" title="Gio.TlsDatabase::lookup_certificates_issued_by_finish">Gio.TlsDatabase::lookup_certificates_issued_by_finish</a></li>
+<li class="links "><a href="Gio.TlsDatabase-verify_chain.html" title="Gio.TlsDatabase::verify_chain">Gio.TlsDatabase::verify_chain</a></li>
+<li class="links "><a href="Gio.TlsDatabase-verify_chain_async.html" title="Gio.TlsDatabase::verify_chain_async">Gio.TlsDatabase::verify_chain_async</a></li>
+<li class="links "><a href="Gio.TlsDatabase-verify_chain_finish.html" title="Gio.TlsDatabase::verify_chain_finish">Gio.TlsDatabase::verify_chain_finish</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gio">Gio</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

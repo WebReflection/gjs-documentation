@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GObject.Object.prototype.notify_by_pspec</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GObject">GObject</a> » <a class="trail" href="GObject.Object.html" title="GObject.Object">GObject.Object</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GObject.Object.prototype.notify_by_pspec</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function notify_by_pspec(pspec: <span class="link"><a href="GObject.ParamSpec.html" title="GObject.ParamSpec">GObject.ParamSpec</a></span>): void {
+    // Gjs wrapper for g_object_notify_by_pspec()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Emits a "notify" signal for the property specified by <span class="code">pspec</span> on <span class="code">object</span>.</p>
+<p class="p">This function omits the property name lookup, hence it is faster than
+<span class="link"><a href="GObject.Object.notify.html" title="GObject.Object.prototype.notify">GObject.Object.prototype.notify</a></span>.</p>
+<p class="p">One way to avoid using <span class="link"><a href="GObject.Object.notify.html" title="GObject.Object.prototype.notify">GObject.Object.prototype.notify</a></span> from within the
+class that registered the properties, and using <span class="link"><a href="GObject.Object.notify_by_pspec.html" title="GObject.Object.prototype.notify_by_pspec">GObject.Object.prototype.notify_by_pspec</a></span>
+instead, is to store the GParamSpec used with
+<span class="link"><a href="GObject.ObjectClass.install_property.html" title="GObject.ObjectClass.install_property">GObject.ObjectClass.install_property</a></span> inside a static array, e.g.:</p>
+<p class="p">|[&lt;!-- language="C" --&gt;
+  enum
+  {
+    PROP_0,
+    PROP_FOO,
+    PROP_LAST
+  };</p>
+<p class="p">  static GParamSpec *properties[PROP_LAST];</p>
+<p class="p">  static void
+  my_object_class_init (MyObjectClass *klass)
+  {
+    properties[PROP_FOO] = g_param_spec_int ("foo", "Foo", "The foo",
+                                             0, 100,
+                                             50,
+                                             G_PARAM_READWRITE);
+    g_object_class_install_property (gobject_class,
+                                     PROP_FOO,
+                                     properties[PROP_FOO]);
+  }
+]|</p>
+<p class="p">and then notify a change on the "foo" property with:</p>
+<p class="p">|[&lt;!-- language="C" --&gt;
+  g_object_notify_by_pspec (self, properties[PROP_FOO]);
+]|</p>
+<p class="p">Since 2.26</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">pspec</span></dt>
+<dd class="terms"><p class="p">the <span class="link"><a href="GObject.ParamSpec.html" title="GObject.ParamSpec">GObject.ParamSpec</a></span> of a property installed on the class of <span class="code">object</span>.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="GObject.Object.html" title="GObject.Object">GObject.Object</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

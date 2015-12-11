@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.find_program_in_path</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.find_program_in_path</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function find_program_in_path(program: String): String {
+    // Gjs wrapper for g_find_program_in_path()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Locates the first executable named <span class="code">program</span> in the user's path, in the
+same way that execvp() would locate it. Returns an allocated string
+with the absolute path name, or <span class="code">null</span> if the program is not found in
+the path. If <span class="code">program</span> is already an absolute path, returns a copy of
+<span class="code">program</span> if <span class="code">program</span> exists and is executable, and <span class="code">null</span> otherwise.
+ 
+On Windows, if <span class="code">program</span> does not have a file type suffix, tries
+with the suffixes .exe, .cmd, .bat and .com, and the suffixes in
+the `PATHEXT` environment variable.</p>
+<p class="p">On Windows, it looks for the file in the same way as CreateProcess()
+would. This means first in the directory where the executing
+program was loaded from, then in the current directory, then in the
+Windows 32-bit system directory, then in the Windows directory, and
+finally in the directories in the `PATH` environment variable. If
+the program is found, the return value contains the full name
+including the type suffix.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">program</span></dt>
+<dd class="terms"><p class="p">a program name in the GLib file name encoding</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">a newly-allocated string with the absolute path, or <span class="code">null</span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="GLib">GLib</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

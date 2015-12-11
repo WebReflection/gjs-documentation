@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GObject.signal_handler_find</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GObject">GObject</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GObject.signal_handler_find</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function signal_handler_find(instance: <span class="link"><a href="GObject.Object.html" title="GObject.Object">GObject.Object</a></span>, mask: <span class="link"><a href="GObject.SignalMatchType.html" title="GObject.SignalMatchType">GObject.SignalMatchType</a></span>, signal_id: Number(guint), detail: <span class="link"><a href="../GLib-2.0/GLib.Quark.html" title="../GLib-2.0/GLib.Quark.html">GLib.Quark</a></span>, closure: Function, func: void, data: void): Number(gulong) {
+    // Gjs wrapper for g_signal_handler_find()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Finds the first signal handler that matches certain selection criteria.
+The criteria mask is passed as an OR-ed combination of <span class="link"><a href="GObject.SignalMatchType.html" title="GObject.SignalMatchType">GObject.SignalMatchType</a></span>
+flags, and the criteria values are passed as arguments.
+The match <span class="code">mask</span> has to be non-0 for successful matches.
+If no handler was found, 0 is returned.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">instance</span></dt>
+<dd class="terms"><p class="p">The instance owning the signal handler to be found.</p></dd>
+<dt class="terms"><span class="code">mask</span></dt>
+<dd class="terms"><p class="p">Mask indicating which of <span class="code">signal_id</span>, <span class="code">detail</span>, <span class="code">closure</span>, <span class="code">func</span>
+ and/or <span class="code">data</span> the handler has to match.</p></dd>
+<dt class="terms"><span class="code">signal_id</span></dt>
+<dd class="terms"><p class="p">Signal the handler has to be connected to.</p></dd>
+<dt class="terms"><span class="code">detail</span></dt>
+<dd class="terms"><p class="p">Signal detail the handler has to be connected to.</p></dd>
+<dt class="terms"><span class="code">closure</span></dt>
+<dd class="terms"><p class="p">The closure the handler will invoke.</p></dd>
+<dt class="terms"><span class="code">func</span></dt>
+<dd class="terms"><p class="p">The C closure callback of the handler (useless for non-C closures).</p></dd>
+<dt class="terms"><span class="code">data</span></dt>
+<dd class="terms"><p class="p">The closure data of the handler's closure.</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">A valid non-0 signal handler id for a successful match.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="GObject">GObject</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

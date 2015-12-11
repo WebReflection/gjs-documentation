@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.VolumeMonitor</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.VolumeMonitor</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
+
+let volumeMonitor = new Gio.VolumeMonitor();
+  </pre></div></div></div></div></div>
+<p class="p"><span class="link"><a href="Gio.VolumeMonitor.html" title="Gio.VolumeMonitor">Gio.VolumeMonitor</a></span> is for listing the user interesting devices and volumes
+on the computer. In other words, what a file selector or file manager
+would show in a sidebar.</p>
+<p class="p"><span class="link"><a href="Gio.VolumeMonitor.html" title="Gio.VolumeMonitor">Gio.VolumeMonitor</a></span> is not
+[thread-default-context aware][g-main-context-push-thread-default],
+and so should not be used other than from the main thread, with no
+thread-default-context active.</p>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
+<div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
+<div>
+        <span class="code">GObject.Object</span>
+      
+      </div>
+<ul class="tree"><li class="tree"><div>
+        <span class="code">Gio.VolumeMonitor</span>
+      </div></li></ul>
+</li></ul></div></div></div></div></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.VolumeMonitor.get_connected_drives.html" title="Gio.VolumeMonitor.prototype.get_connected_drives">Gio.VolumeMonitor.prototype.get_connected_drives</a></li>
+<li class="links "><a href="Gio.VolumeMonitor.get_mount_for_uuid.html" title="Gio.VolumeMonitor.prototype.get_mount_for_uuid">Gio.VolumeMonitor.prototype.get_mount_for_uuid</a></li>
+<li class="links "><a href="Gio.VolumeMonitor.get_mounts.html" title="Gio.VolumeMonitor.prototype.get_mounts">Gio.VolumeMonitor.prototype.get_mounts</a></li>
+<li class="links "><a href="Gio.VolumeMonitor.get_volume_for_uuid.html" title="Gio.VolumeMonitor.prototype.get_volume_for_uuid">Gio.VolumeMonitor.prototype.get_volume_for_uuid</a></li>
+<li class="links "><a href="Gio.VolumeMonitor.get_volumes.html" title="Gio.VolumeMonitor.prototype.get_volumes">Gio.VolumeMonitor.prototype.get_volumes</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Static Functions</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.VolumeMonitor.adopt_orphan_mount.html" title="Gio.VolumeMonitor.adopt_orphan_mount">Gio.VolumeMonitor.adopt_orphan_mount</a></li>
+<li class="links "><a href="Gio.VolumeMonitor.get.html" title="Gio.VolumeMonitor.get">Gio.VolumeMonitor.get</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Signals</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.VolumeMonitor-drive-changed.html" title="Gio.VolumeMonitor::drive-changed">drive-changed</a></li>
+<li class="links "><a href="Gio.VolumeMonitor-drive-connected.html" title="Gio.VolumeMonitor::drive-connected">drive-connected</a></li>
+<li class="links "><a href="Gio.VolumeMonitor-drive-disconnected.html" title="Gio.VolumeMonitor::drive-disconnected">drive-disconnected</a></li>
+<li class="links "><a href="Gio.VolumeMonitor-drive-eject-button.html" title="Gio.VolumeMonitor::drive-eject-button">drive-eject-button</a></li>
+<li class="links "><a href="Gio.VolumeMonitor-drive-stop-button.html" title="Gio.VolumeMonitor::drive-stop-button">drive-stop-button</a></li>
+<li class="links "><a href="Gio.VolumeMonitor-mount-added.html" title="Gio.VolumeMonitor::mount-added">mount-added</a></li>
+<li class="links "><a href="Gio.VolumeMonitor-mount-changed.html" title="Gio.VolumeMonitor::mount-changed">mount-changed</a></li>
+<li class="links "><a href="Gio.VolumeMonitor-mount-pre-unmount.html" title="Gio.VolumeMonitor::mount-pre-unmount">mount-pre-unmount</a></li>
+<li class="links "><a href="Gio.VolumeMonitor-mount-removed.html" title="Gio.VolumeMonitor::mount-removed">mount-removed</a></li>
+<li class="links "><a href="Gio.VolumeMonitor-volume-added.html" title="Gio.VolumeMonitor::volume-added">volume-added</a></li>
+<li class="links "><a href="Gio.VolumeMonitor-volume-changed.html" title="Gio.VolumeMonitor::volume-changed">volume-changed</a></li>
+<li class="links "><a href="Gio.VolumeMonitor-volume-removed.html" title="Gio.VolumeMonitor::volume-removed">volume-removed</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Virtual functions</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.VolumeMonitor-drive_changed.html" title="Gio.VolumeMonitor::drive_changed">Gio.VolumeMonitor::drive_changed</a></li>
+<li class="links "><a href="Gio.VolumeMonitor-drive_connected.html" title="Gio.VolumeMonitor::drive_connected">Gio.VolumeMonitor::drive_connected</a></li>
+<li class="links "><a href="Gio.VolumeMonitor-drive_disconnected.html" title="Gio.VolumeMonitor::drive_disconnected">Gio.VolumeMonitor::drive_disconnected</a></li>
+<li class="links "><a href="Gio.VolumeMonitor-drive_eject_button.html" title="Gio.VolumeMonitor::drive_eject_button">Gio.VolumeMonitor::drive_eject_button</a></li>
+<li class="links "><a href="Gio.VolumeMonitor-drive_stop_button.html" title="Gio.VolumeMonitor::drive_stop_button">Gio.VolumeMonitor::drive_stop_button</a></li>
+<li class="links "><a href="Gio.VolumeMonitor-get_connected_drives.html" title="Gio.VolumeMonitor::get_connected_drives">Gio.VolumeMonitor::get_connected_drives</a></li>
+<li class="links "><a href="Gio.VolumeMonitor-get_mount_for_uuid.html" title="Gio.VolumeMonitor::get_mount_for_uuid">Gio.VolumeMonitor::get_mount_for_uuid</a></li>
+<li class="links "><a href="Gio.VolumeMonitor-get_mounts.html" title="Gio.VolumeMonitor::get_mounts">Gio.VolumeMonitor::get_mounts</a></li>
+<li class="links "><a href="Gio.VolumeMonitor-get_volume_for_uuid.html" title="Gio.VolumeMonitor::get_volume_for_uuid">Gio.VolumeMonitor::get_volume_for_uuid</a></li>
+<li class="links "><a href="Gio.VolumeMonitor-get_volumes.html" title="Gio.VolumeMonitor::get_volumes">Gio.VolumeMonitor::get_volumes</a></li>
+<li class="links "><a href="Gio.VolumeMonitor-mount_added.html" title="Gio.VolumeMonitor::mount_added">Gio.VolumeMonitor::mount_added</a></li>
+<li class="links "><a href="Gio.VolumeMonitor-mount_changed.html" title="Gio.VolumeMonitor::mount_changed">Gio.VolumeMonitor::mount_changed</a></li>
+<li class="links "><a href="Gio.VolumeMonitor-mount_pre_unmount.html" title="Gio.VolumeMonitor::mount_pre_unmount">Gio.VolumeMonitor::mount_pre_unmount</a></li>
+<li class="links "><a href="Gio.VolumeMonitor-mount_removed.html" title="Gio.VolumeMonitor::mount_removed">Gio.VolumeMonitor::mount_removed</a></li>
+<li class="links "><a href="Gio.VolumeMonitor-volume_added.html" title="Gio.VolumeMonitor::volume_added">Gio.VolumeMonitor::volume_added</a></li>
+<li class="links "><a href="Gio.VolumeMonitor-volume_changed.html" title="Gio.VolumeMonitor::volume_changed">Gio.VolumeMonitor::volume_changed</a></li>
+<li class="links "><a href="Gio.VolumeMonitor-volume_removed.html" title="Gio.VolumeMonitor::volume_removed">Gio.VolumeMonitor::volume_removed</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gio">Gio</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

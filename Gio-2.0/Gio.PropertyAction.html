@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.PropertyAction</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.PropertyAction</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
+
+let propertyAction = new Gio.PropertyAction({
+    <span class="link"><a href="Gio.PropertyAction-name.html" title="Gio.PropertyAction.name">name</a></span>: value,
+    <span class="link"><a href="Gio.PropertyAction-object.html" title="Gio.PropertyAction.object">object</a></span>: value,
+    <span class="link"><a href="Gio.PropertyAction-property-name.html" title="Gio.PropertyAction.property_name">property_name</a></span>: value,
+});
+  </pre></div></div></div></div></div>
+<p class="p">A <span class="link"><a href="Gio.PropertyAction.html" title="Gio.PropertyAction">Gio.PropertyAction</a></span> is a way to get a <span class="link"><a href="Gio.Action.html" title="Gio.Action">Gio.Action</a></span> with a state value
+reflecting and controlling the value of a <span class="link"><a href="../GObject-2.0/GObject.Object.html" title="../GObject-2.0/GObject.Object.html">GObject.Object</a></span> property.</p>
+<p class="p">The state of the action will correspond to the value of the property.
+Changing it will change the property (assuming the requested value
+matches the requirements as specified in the <span class="link"><a href="../GObject-2.0/GObject.ParamSpec.html" title="../GObject-2.0/GObject.ParamSpec.html">GObject.ParamSpec</a></span>).</p>
+<p class="p">Only the most common types are presently supported.  Booleans are
+mapped to booleans, strings to strings, signed/unsigned integers to
+int32/uint32 and floats and doubles to doubles.</p>
+<p class="p">If the property is an enum then the state will be string-typed and
+conversion will automatically be performed between the enum value and
+"nick" string as per the <span class="link"><a href="../GObject-2.0/GObject.EnumValue.html" title="../GObject-2.0/GObject.EnumValue.html">GObject.EnumValue</a></span> table.</p>
+<p class="p">Flags types are not currently supported.</p>
+<p class="p">Properties of object types, boxed types and pointer types are not
+supported and probably never will be.</p>
+<p class="p">Properties of <span class="link"><a href="../GLib-2.0/GLib.Variant.html" title="../GLib-2.0/GLib.Variant.html">GLib.Variant</a></span> types are not currently supported.</p>
+<p class="p">If the property is boolean-valued then the action will have a NULL
+parameter type, and activating the action (with no parameter) will
+toggle the value of the property.</p>
+<p class="p">In all other cases, the parameter type will correspond to the type of
+the property.</p>
+<p class="p">The general idea here is to reduce the number of locations where a
+particular piece of state is kept (and therefore has to be synchronised
+between). <span class="link"><a href="Gio.PropertyAction.html" title="Gio.PropertyAction">Gio.PropertyAction</a></span> does not have a separate state that is kept
+in sync with the property value -- its state is the property value.</p>
+<p class="p">For example, it might be useful to create a <span class="link"><a href="Gio.Action.html" title="Gio.Action">Gio.Action</a></span> corresponding to
+the "visible-child-name" property of a #GtkStack so that the current
+page can be switched from a menu.  The active radio indication in the
+menu is then directly determined from the active page of the
+#GtkStack.</p>
+<p class="p">An anti-example would be binding the "active-id" property on a
+#GtkComboBox.  This is because the state of the combobox itself is
+probably uninteresting and is actually being used to control
+something else.</p>
+<p class="p">Another anti-example would be to bind to the "visible-child-name"
+property of a #GtkStack if this value is actually stored in
+<span class="link"><a href="Gio.Settings.html" title="Gio.Settings">Gio.Settings</a></span>.  In that case, the real source of the value is
+<span class="link"><a href="Gio.Settings.html" title="Gio.Settings">Gio.Settings</a></span>.  If you want a <span class="link"><a href="Gio.Action.html" title="Gio.Action">Gio.Action</a></span> to control a setting stored in
+<span class="link"><a href="Gio.Settings.html" title="Gio.Settings">Gio.Settings</a></span>, see <span class="link"><a href="Gio.Settings.create_action.html" title="Gio.Settings.prototype.create_action">Gio.Settings.prototype.create_action</a></span> instead, and possibly
+combine its use with <span class="link"><a href="Gio.Settings.bind.html" title="Gio.Settings.prototype.bind">Gio.Settings.prototype.bind</a></span>.</p>
+<p class="p">Since 2.38</p>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
+<div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
+<div>
+        <span class="code">GObject.Object</span>
+      
+      </div>
+<ul class="tree"><li class="tree"><div>
+        <span class="code">Gio.PropertyAction</span>
+      </div></li></ul>
+</li></ul></div></div></div></div></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.PropertyAction.new.html" title="Gio.PropertyAction.new">Gio.PropertyAction.new</a></li></ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Properties</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.PropertyAction-enabled.html" title="Gio.PropertyAction.enabled">enabled</a></li>
+<li class="links "><a href="Gio.PropertyAction-name.html" title="Gio.PropertyAction.name">name</a></li>
+<li class="links "><a href="Gio.PropertyAction-object.html" title="Gio.PropertyAction.object">object</a></li>
+<li class="links "><a href="Gio.PropertyAction-parameter-type.html" title="Gio.PropertyAction.parameter_type">parameter-type</a></li>
+<li class="links "><a href="Gio.PropertyAction-property-name.html" title="Gio.PropertyAction.property_name">property-name</a></li>
+<li class="links "><a href="Gio.PropertyAction-state.html" title="Gio.PropertyAction.state">state</a></li>
+<li class="links "><a href="Gio.PropertyAction-state-type.html" title="Gio.PropertyAction.state_type">state-type</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gio">Gio</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

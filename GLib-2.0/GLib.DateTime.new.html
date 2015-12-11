@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.DateTime.new</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » <a class="trail" href="GLib.DateTime.html" title="GLib.DateTime">GLib.DateTime</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.DateTime.new</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function new(tz: <span class="link"><a href="GLib.TimeZone.html" title="GLib.TimeZone">GLib.TimeZone</a></span>, year: Number(gint), month: Number(gint), day: Number(gint), hour: Number(gint), minute: Number(gint), seconds: Number(gdouble)): <span class="link"><a href="GLib.DateTime.html" title="GLib.DateTime">GLib.DateTime</a></span> {
+    // Gjs wrapper for g_date_time_new()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Creates a new <span class="link"><a href="GLib.DateTime.html" title="GLib.DateTime">GLib.DateTime</a></span> corresponding to the given date and time in
+the time zone <span class="code">tz</span>.</p>
+<p class="p">The <span class="code">year</span> must be between 1 and 9999, <span class="code">month</span> between 1 and 12 and <span class="code">day</span>
+between 1 and 28, 29, 30 or 31 depending on the month and the year.</p>
+<p class="p"><span class="code">hour</span> must be between 0 and 23 and <span class="code">minute</span> must be between 0 and 59.</p>
+<p class="p"><span class="code">seconds</span> must be at least 0.0 and must be strictly less than 60.0.
+It will be rounded down to the nearest microsecond.</p>
+<p class="p">If the given time is not representable in the given time zone (for
+example, 02:30 on March 14th 2010 in Toronto, due to daylight savings
+time) then the time will be rounded up to the nearest existing time
+(in this case, 03:00).  If this matters to you then you should verify
+the return value for containing the same as the numbers you gave.</p>
+<p class="p">In the case that the given time is ambiguous in the given time zone
+(for example, 01:30 on November 7th 2010 in Toronto, due to daylight
+savings time) then the time falling within standard (ie:
+non-daylight) time is taken.</p>
+<p class="p">It not considered a programmer error for the values to this function
+to be out of range, but in the case that they are, the function will
+return <span class="code">null</span>.</p>
+<p class="p">You should release the return value by calling <span class="link"><a href="GLib.DateTime.unref.html" title="GLib.DateTime.prototype.unref">GLib.DateTime.prototype.unref</a></span>
+when you are done with it.</p>
+<p class="p">Since 2.26</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">tz</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="GLib.TimeZone.html" title="GLib.TimeZone">GLib.TimeZone</a></span></p></dd>
+<dt class="terms"><span class="code">year</span></dt>
+<dd class="terms"><p class="p">the year component of the date</p></dd>
+<dt class="terms"><span class="code">month</span></dt>
+<dd class="terms"><p class="p">the month component of the date</p></dd>
+<dt class="terms"><span class="code">day</span></dt>
+<dd class="terms"><p class="p">the day component of the date</p></dd>
+<dt class="terms"><span class="code">hour</span></dt>
+<dd class="terms"><p class="p">the hour component of the date</p></dd>
+<dt class="terms"><span class="code">minute</span></dt>
+<dd class="terms"><p class="p">the minute component of the date</p></dd>
+<dt class="terms"><span class="code">seconds</span></dt>
+<dd class="terms"><p class="p">the number of seconds past the minute</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">a new <span class="link"><a href="GLib.DateTime.html" title="GLib.DateTime">GLib.DateTime</a></span>, or <span class="code">null</span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="GLib.DateTime.html" title="GLib.DateTime">GLib.DateTime</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

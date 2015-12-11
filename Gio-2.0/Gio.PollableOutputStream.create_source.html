@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.PollableOutputStream.prototype.create_source</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.PollableOutputStream.html" title="Gio.PollableOutputStream">Gio.PollableOutputStream</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.PollableOutputStream.prototype.create_source</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function create_source(cancellable: <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span>): <span class="link"><a href="../GLib-2.0/GLib.Source.html" title="../GLib-2.0/GLib.Source.html">GLib.Source</a></span> {
+    // Gjs wrapper for g_pollable_output_stream_create_source()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Creates a <span class="link"><a href="../GLib-2.0/GLib.Source.html" title="../GLib-2.0/GLib.Source.html">GLib.Source</a></span> that triggers when <span class="code">stream</span> can be written, or
+<span class="code">cancellable</span> is triggered or an error occurs. The callback on the
+source is of the <span class="link"><a href="Gio.PollableSourceFunc.html" title="Gio.PollableSourceFunc">Gio.PollableSourceFunc</a></span> type.</p>
+<p class="p">As with <span class="link"><a href="Gio.PollableOutputStream.is_writable.html" title="Gio.PollableOutputStream.prototype.is_writable">Gio.PollableOutputStream.prototype.is_writable</a></span>, it is possible that
+the stream may not actually be writable even after the source
+triggers, so you should use <span class="link"><a href="Gio.PollableOutputStream.write_nonblocking.html" title="Gio.PollableOutputStream.prototype.write_nonblocking">Gio.PollableOutputStream.prototype.write_nonblocking</a></span>
+rather than <span class="link"><a href="Gio.OutputStream.write.html" title="Gio.OutputStream.prototype.write">Gio.OutputStream.prototype.write</a></span> from the callback.</p>
+<p class="p">Since 2.28</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">cancellable</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span>, or <span class="code">null</span></p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">a new <span class="link"><a href="../GLib-2.0/GLib.Source.html" title="../GLib-2.0/GLib.Source.html">GLib.Source</a></span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.PollableOutputStream.html" title="Gio.PollableOutputStream">Gio.PollableOutputStream</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

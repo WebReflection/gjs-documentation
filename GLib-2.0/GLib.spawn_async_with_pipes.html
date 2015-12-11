@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.spawn_async_with_pipes</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.spawn_async_with_pipes</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function spawn_async_with_pipes(working_directory: String, argv: Array(String), envp: Array(String), flags: <span class="link"><a href="GLib.SpawnFlags.html" title="GLib.SpawnFlags">GLib.SpawnFlags</a></span>, child_setup: <span class="link"><a href="GLib.SpawnChildSetupFunc.html" title="GLib.SpawnChildSetupFunc">GLib.SpawnChildSetupFunc</a></span>): [ok: Boolean, child_pid: <span class="link"><a href="GLib.Pid.html" title="GLib.Pid">GLib.Pid</a></span>, standard_input: Number(gint), standard_output: Number(gint), standard_error: Number(gint)] {
+    // Gjs wrapper for g_spawn_async_with_pipes()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Executes a child program asynchronously (your program will not
+block waiting for the child to exit). The child program is
+specified by the only argument that must be provided, <span class="code">argv</span>.
+<span class="code">argv</span> should be a <span class="code">null</span>-terminated array of strings, to be passed
+as the argument vector for the child. The first string in <span class="code">argv</span>
+is of course the name of the program to execute. By default, the
+name of the program must be a full path. If <span class="code">flags</span> contains the
+<span class="link"><a href="GLib.SpawnFlags.html" title="GLib.SpawnFlags">GLib.SpawnFlags</a></span>.search_path flag, the `PATH` environment variable is
+used to search for the executable. If <span class="code">flags</span> contains the
+<span class="link"><a href="GLib.SpawnFlags.html" title="GLib.SpawnFlags">GLib.SpawnFlags</a></span>.search_path_from_envp flag, the `PATH` variable from
+<span class="code">envp</span> is used to search for the executable. If both the
+<span class="link"><a href="GLib.SpawnFlags.html" title="GLib.SpawnFlags">GLib.SpawnFlags</a></span>.search_path and <span class="link"><a href="GLib.SpawnFlags.html" title="GLib.SpawnFlags">GLib.SpawnFlags</a></span>.search_path_from_envp flags
+are set, the `PATH` variable from <span class="code">envp</span> takes precedence over
+the environment variable.</p>
+<p class="p">If the program name is not a full path and <span class="link"><a href="GLib.SpawnFlags.html" title="GLib.SpawnFlags">GLib.SpawnFlags</a></span>.search_path flag is not
+used, then the program will be run from the current directory (or
+<span class="code">working_directory</span>, if specified); this might be unexpected or even
+dangerous in some cases when the current directory is world-writable.</p>
+<p class="p">On Windows, note that all the string or string vector arguments to
+this function and the other g_spawn*() functions are in UTF-8, the
+GLib file name encoding. Unicode characters that are not part of
+the system codepage passed in these arguments will be correctly
+available in the spawned program only if it uses wide character API
+to retrieve its command line. For C programs built with Microsoft's
+tools it is enough to make the program have a wmain() instead of
+main(). wmain() has a wide character argument vector as parameter.</p>
+<p class="p">At least currently, mingw doesn't support wmain(), so if you use
+mingw to develop the spawned program, it will have to call the
+undocumented function __wgetmainargs() to get the wide character
+argument vector and environment. See gspawn-win32-helper.c in the
+GLib sources or init.c in the mingw runtime sources for a prototype
+for that function. Alternatively, you can retrieve the Win32 system
+level wide character command line passed to the spawned program
+using the GetCommandLineW() function.</p>
+<p class="p">On Windows the low-level child process creation API CreateProcess()
+doesn't use argument vectors, but a command line. The C runtime
+library's spawn*() family of functions (which <span class="link"><a href="GLib.spawn_async_with_pipes.html" title="GLib.spawn_async_with_pipes">GLib.spawn_async_with_pipes</a></span>
+eventually calls) paste the argument vector elements together into
+a command line, and the C runtime startup code does a corresponding
+reconstruction of an argument vector from the command line, to be
+passed to main(). Complications arise when you have argument vector
+elements that contain spaces of double quotes. The spawn*() functions
+don't do any quoting or escaping, but on the other hand the startup
+code does do unquoting and unescaping in order to enable receiving
+arguments with embedded spaces or double quotes. To work around this
+asymmetry, <span class="link"><a href="GLib.spawn_async_with_pipes.html" title="GLib.spawn_async_with_pipes">GLib.spawn_async_with_pipes</a></span> will do quoting and escaping on
+argument vector elements that need it before calling the C runtime
+spawn() function.</p>
+<p class="p">The returned <span class="code">child_pid</span> on Windows is a handle to the child
+process, not its identifier. Process handles and process
+identifiers are different concepts on Windows.</p>
+<p class="p"><span class="code">envp</span> is a <span class="code">null</span>-terminated array of strings, where each string
+has the form `KEY=VALUE`. This will become the child's environment.
+If <span class="code">envp</span> is <span class="code">null</span>, the child inherits its parent's environment.</p>
+<p class="p"><span class="code">flags</span> should be the bitwise OR of any flags you want to affect the
+function's behaviour. The <span class="link"><a href="GLib.SpawnFlags.html" title="GLib.SpawnFlags">GLib.SpawnFlags</a></span>.do_not_reap_child means that the
+child will not automatically be reaped; you must use a child watch to
+be notified about the death of the child process. Eventually you must
+call <span class="link"><a href="GLib.spawn_close_pid.html" title="GLib.spawn_close_pid">GLib.spawn_close_pid</a></span> on the <span class="code">child_pid</span>, in order to free
+resources which may be associated with the child process. (On Unix,
+using a child watch is equivalent to calling waitpid() or handling
+the %SIGCHLD signal manually. On Windows, calling <span class="link"><a href="GLib.spawn_close_pid.html" title="GLib.spawn_close_pid">GLib.spawn_close_pid</a></span>
+is equivalent to calling CloseHandle() on the process handle returned
+in <span class="code">child_pid</span>). See <span class="link"><a href="GLib.child_watch_add.html" title="GLib.child_watch_add">GLib.child_watch_add</a></span>.</p>
+<p class="p"><span class="link"><a href="GLib.SpawnFlags.html" title="GLib.SpawnFlags">GLib.SpawnFlags</a></span>.leave_descriptors_open means that the parent's open file
+descriptors will be inherited by the child; otherwise all descriptors
+except stdin/stdout/stderr will be closed before calling exec() in
+the child. <span class="link"><a href="GLib.SpawnFlags.html" title="GLib.SpawnFlags">GLib.SpawnFlags</a></span>.search_path means that <span class="code">argv</span>[0] need not be an
+absolute path, it will be looked for in the `PATH` environment
+variable. <span class="link"><a href="GLib.SpawnFlags.html" title="GLib.SpawnFlags">GLib.SpawnFlags</a></span>.search_path_from_envp means need not be an
+absolute path, it will be looked for in the `PATH` variable from
+<span class="code">envp</span>. If both <span class="link"><a href="GLib.SpawnFlags.html" title="GLib.SpawnFlags">GLib.SpawnFlags</a></span>.search_path and <span class="link"><a href="GLib.SpawnFlags.html" title="GLib.SpawnFlags">GLib.SpawnFlags</a></span>.search_path_from_envp
+are used, the value from <span class="code">envp</span> takes precedence over the environment.
+<span class="link"><a href="GLib.SpawnFlags.html" title="GLib.SpawnFlags">GLib.SpawnFlags</a></span>.stdout_to_dev_null means that the child's standard output
+will be discarded, instead of going to the same location as the parent's
+standard output. If you use this flag, <span class="code">standard_output</span> must be <span class="code">null</span>.
+<span class="link"><a href="GLib.SpawnFlags.html" title="GLib.SpawnFlags">GLib.SpawnFlags</a></span>.stderr_to_dev_null means that the child's standard error
+will be discarded, instead of going to the same location as the parent's
+standard error. If you use this flag, <span class="code">standard_error</span> must be <span class="code">null</span>.
+<span class="link"><a href="GLib.SpawnFlags.html" title="GLib.SpawnFlags">GLib.SpawnFlags</a></span>.child_inherits_stdin means that the child will inherit the parent's
+standard input (by default, the child's standard input is attached to
+/dev/null). If you use this flag, <span class="code">standard_input</span> must be <span class="code">null</span>.
+<span class="link"><a href="GLib.SpawnFlags.html" title="GLib.SpawnFlags">GLib.SpawnFlags</a></span>.file_and_argv_zero means that the first element of <span class="code">argv</span> is
+the file to execute, while the remaining elements are the actual
+argument vector to pass to the file. Normally <span class="link"><a href="GLib.spawn_async_with_pipes.html" title="GLib.spawn_async_with_pipes">GLib.spawn_async_with_pipes</a></span>
+uses <span class="code">argv</span>[0] as the file to execute, and passes all of <span class="code">argv</span> to the child.</p>
+<p class="p"><span class="code">child_setup</span> and <span class="code">user_data</span> are a function and user data. On POSIX
+platforms, the function is called in the child after GLib has
+performed all the setup it plans to perform (including creating
+pipes, closing file descriptors, etc.) but before calling exec().
+That is, <span class="code">child_setup</span> is called just before calling exec() in the
+child. Obviously actions taken in this function will only affect
+the child, not the parent.</p>
+<p class="p">On Windows, there is no separate fork() and exec() functionality.
+Child processes are created and run with a single API call,
+CreateProcess(). There is no sensible thing <span class="code">child_setup</span>
+could be used for on Windows so it is ignored and not called.</p>
+<p class="p">If non-<span class="code">null</span>, <span class="code">child_pid</span> will on Unix be filled with the child's
+process ID. You can use the process ID to send signals to the child,
+or to use <span class="link"><a href="GLib.child_watch_add.html" title="GLib.child_watch_add">GLib.child_watch_add</a></span> (or waitpid()) if you specified the
+<span class="link"><a href="GLib.SpawnFlags.html" title="GLib.SpawnFlags">GLib.SpawnFlags</a></span>.do_not_reap_child flag. On Windows, <span class="code">child_pid</span> will be
+filled with a handle to the child process only if you specified the
+<span class="link"><a href="GLib.SpawnFlags.html" title="GLib.SpawnFlags">GLib.SpawnFlags</a></span>.do_not_reap_child flag. You can then access the child
+process using the Win32 API, for example wait for its termination
+with the WaitFor*() functions, or examine its exit code with
+GetExitCodeProcess(). You should close the handle with CloseHandle()
+or <span class="link"><a href="GLib.spawn_close_pid.html" title="GLib.spawn_close_pid">GLib.spawn_close_pid</a></span> when you no longer need it.</p>
+<p class="p">If non-<span class="code">null</span>, the <span class="code">standard_input</span>, <span class="code">standard_output</span>, <span class="code">standard_error</span>
+locations will be filled with file descriptors for writing to the child's
+standard input or reading from its standard output or standard error.
+The caller of <span class="link"><a href="GLib.spawn_async_with_pipes.html" title="GLib.spawn_async_with_pipes">GLib.spawn_async_with_pipes</a></span> must close these file descriptors
+when they are no longer in use. If these parameters are <span class="code">null</span>, the
+corresponding pipe won't be created.</p>
+<p class="p">If <span class="code">standard_input</span> is NULL, the child's standard input is attached to
+/dev/null unless <span class="link"><a href="GLib.SpawnFlags.html" title="GLib.SpawnFlags">GLib.SpawnFlags</a></span>.child_inherits_stdin is set.</p>
+<p class="p">If <span class="code">standard_error</span> is NULL, the child's standard error goes to the same
+location as the parent's standard error unless <span class="link"><a href="GLib.SpawnFlags.html" title="GLib.SpawnFlags">GLib.SpawnFlags</a></span>.stderr_to_dev_null
+is set.</p>
+<p class="p">If <span class="code">standard_output</span> is NULL, the child's standard output goes to the same
+location as the parent's standard output unless <span class="link"><a href="GLib.SpawnFlags.html" title="GLib.SpawnFlags">GLib.SpawnFlags</a></span>.stdout_to_dev_null
+is set.</p>
+<p class="p">@error can be <span class="code">null</span> to ignore errors, or non-<span class="code">null</span> to report errors.
+If an error is set, the function returns <span class="code">false</span>. Errors are reported
+even if they occur in the child (for example if the executable in
+<span class="code">argv</span>[0] is not found). Typically the `message` field of returned
+errors should be displayed to users. Possible errors are those from
+the #G_SPAWN_ERROR domain.</p>
+<p class="p">If an error occurs, <span class="code">child_pid</span>, <span class="code">standard_input</span>, <span class="code">standard_output</span>,
+and <span class="code">standard_error</span> will not be filled with valid values.</p>
+<p class="p">If <span class="code">child_pid</span> is not <span class="code">null</span> and an error does not occur then the returned
+process reference must be closed using <span class="link"><a href="GLib.spawn_close_pid.html" title="GLib.spawn_close_pid">GLib.spawn_close_pid</a></span>.</p>
+<p class="p">If you are writing a GTK+ application, and the program you
+are spawning is a graphical application, too, then you may
+want to use gdk_spawn_on_screen_with_pipes() instead to ensure that
+the spawned program opens its windows on the right screen.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">working_directory</span></dt>
+<dd class="terms"><p class="p">child's current working directory, or <span class="code">null</span> to inherit parent's, in the GLib file name encoding</p></dd>
+<dt class="terms"><span class="code">argv</span></dt>
+<dd class="terms"><p class="p">child's argument vector, in the GLib file name encoding</p></dd>
+<dt class="terms"><span class="code">envp</span></dt>
+<dd class="terms"><p class="p">child's environment, or <span class="code">null</span> to inherit parent's, in the GLib file name encoding</p></dd>
+<dt class="terms"><span class="code">flags</span></dt>
+<dd class="terms"><p class="p">flags from <span class="link"><a href="GLib.SpawnFlags.html" title="GLib.SpawnFlags">GLib.SpawnFlags</a></span></p></dd>
+<dt class="terms"><span class="code">child_setup</span></dt>
+<dd class="terms"><p class="p">function to run in the child just before exec()</p></dd>
+<dt class="terms"><span class="code">ok</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> on success, <span class="code">false</span> if an error was set</p></dd>
+<dt class="terms"><span class="code">child_pid</span></dt>
+<dd class="terms"><p class="p">return location for child process ID, or <span class="code">null</span></p></dd>
+<dt class="terms"><span class="code">standard_input</span></dt>
+<dd class="terms"><p class="p">return location for file descriptor to write to child's stdin, or <span class="code">null</span></p></dd>
+<dt class="terms"><span class="code">standard_output</span></dt>
+<dd class="terms"><p class="p">return location for file descriptor to read child's stdout, or <span class="code">null</span></p></dd>
+<dt class="terms"><span class="code">standard_error</span></dt>
+<dd class="terms"><p class="p">return location for file descriptor to read child's stderr, or <span class="code">null</span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="GLib">GLib</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

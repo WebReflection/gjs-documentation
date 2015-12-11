@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.ThreadedSocketService::run</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.ThreadedSocketService.html" title="Gio.ThreadedSocketService">Gio.ThreadedSocketService</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.ThreadedSocketService::run</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">connect('run', function (threadedSocketService, connection: <span class="link"><a href="Gio.SocketConnection.html" title="Gio.SocketConnection">Gio.SocketConnection</a></span>, source_object: <span class="link"><a href="../GObject-2.0/GObject.Object.html" title="../GObject-2.0/GObject.Object.html">GObject.Object</a></span>, ): Boolean);
+  </pre></div></div></div></div></div>
+<p class="p">The ::run signal is emitted in a worker thread in response to an
+incoming connection. This thread is dedicated to handling
+<span class="code">connection</span> and may perform blocking IO. The signal handler need
+not return until the connection is closed.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">threadedSocketService</span></dt>
+<dd class="terms"><p class="p">instance of <span class="link"><a href="Gio.ThreadedSocketService.html" title="Gio.ThreadedSocketService">Gio.ThreadedSocketService</a></span> that is emitting the signal</p></dd>
+<dt class="terms"><span class="code">connection</span></dt>
+<dd class="terms"><p class="p">a new <span class="link"><a href="Gio.SocketConnection.html" title="Gio.SocketConnection">Gio.SocketConnection</a></span> object.</p></dd>
+<dt class="terms"><span class="code">source_object</span></dt>
+<dd class="terms"><p class="p">the source_object passed to <span class="link"><a href="Gio.SocketListener.add_address.html" title="Gio.SocketListener.prototype.add_address">Gio.SocketListener.prototype.add_address</a></span>.</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> to stop further signal handlers from being called</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.ThreadedSocketService.html" title="Gio.ThreadedSocketService">Gio.ThreadedSocketService</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.VolumeMonitor.adopt_orphan_mount</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.VolumeMonitor.html" title="Gio.VolumeMonitor">Gio.VolumeMonitor</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.VolumeMonitor.adopt_orphan_mount</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function adopt_orphan_mount(mount: <span class="link"><a href="Gio.Mount.html" title="Gio.Mount">Gio.Mount</a></span>): <span class="link"><a href="Gio.Volume.html" title="Gio.Volume">Gio.Volume</a></span> {
+    // Gjs wrapper for g_volume_monitor_adopt_orphan_mount()
+}
+  </pre></div></div></div></div></div>
+<p class="p">This function should be called by any <span class="link"><a href="Gio.VolumeMonitor.html" title="Gio.VolumeMonitor">Gio.VolumeMonitor</a></span>
+implementation when a new <span class="link"><a href="Gio.Mount.html" title="Gio.Mount">Gio.Mount</a></span> object is created that is not
+associated with a <span class="link"><a href="Gio.Volume.html" title="Gio.Volume">Gio.Volume</a></span> object. It must be called just before
+emitting the @mount_added signal.</p>
+<p class="p">If the return value is not <span class="code">null</span>, the caller must associate the
+returned <span class="link"><a href="Gio.Volume.html" title="Gio.Volume">Gio.Volume</a></span> object with the <span class="link"><a href="Gio.Mount.html" title="Gio.Mount">Gio.Mount</a></span>. This involves returning
+it in its <span class="link"><a href="Gio.Mount.get_volume.html" title="Gio.Mount.prototype.get_volume">Gio.Mount.prototype.get_volume</a></span> implementation. The caller must
+also listen for the "removed" signal on the returned object
+and give up its reference when handling that signal</p>
+<p class="p">Similary, if implementing <span class="link"><a href="Gio.VolumeMonitor.adopt_orphan_mount.html" title="Gio.VolumeMonitor.adopt_orphan_mount">Gio.VolumeMonitor.adopt_orphan_mount</a></span>,
+the implementor must take a reference to <span class="code">mount</span> and return it in
+its <span class="link"><a href="Gio.Volume.get_mount.html" title="Gio.Volume.prototype.get_mount">Gio.Volume.prototype.get_mount</a></span> implemented. Also, the implementor must
+listen for the "unmounted" signal on <span class="code">mount</span> and give up its
+reference upon handling that signal.</p>
+<p class="p">There are two main use cases for this function.</p>
+<p class="p">One is when implementing a user space file system driver that reads
+blocks of a block device that is already represented by the native
+volume monitor (for example a CD Audio file system driver). Such
+a driver will generate its own <span class="link"><a href="Gio.Mount.html" title="Gio.Mount">Gio.Mount</a></span> object that needs to be
+associated with the <span class="link"><a href="Gio.Volume.html" title="Gio.Volume">Gio.Volume</a></span> object that represents the volume.</p>
+<p class="p">The other is for implementing a <span class="link"><a href="Gio.VolumeMonitor.html" title="Gio.VolumeMonitor">Gio.VolumeMonitor</a></span> whose sole purpose
+is to return <span class="link"><a href="Gio.Volume.html" title="Gio.Volume">Gio.Volume</a></span> objects representing entries in the users
+"favorite servers" list or similar.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">mount</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="Gio.Mount.html" title="Gio.Mount">Gio.Mount</a></span> object to find a parent for</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">the <span class="link"><a href="Gio.Volume.html" title="Gio.Volume">Gio.Volume</a></span> object that is the parent for <span class="code">mount</span> or <span class="code">null</span>
+if no wants to adopt the <span class="link"><a href="Gio.Mount.html" title="Gio.Mount">Gio.Mount</a></span>.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.VolumeMonitor.html" title="Gio.VolumeMonitor">Gio.VolumeMonitor</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

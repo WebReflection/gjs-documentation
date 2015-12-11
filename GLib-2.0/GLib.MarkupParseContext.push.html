@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.MarkupParseContext.prototype.push</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » <a class="trail" href="GLib.MarkupParseContext.html" title="GLib.MarkupParseContext">GLib.MarkupParseContext</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.MarkupParseContext.prototype.push</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function push(parser: <span class="link"><a href="GLib.MarkupParser.html" title="GLib.MarkupParser">GLib.MarkupParser</a></span>, user_data: void): void {
+    // Gjs wrapper for g_markup_parse_context_push()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Temporarily redirects markup data to a sub-parser.</p>
+<p class="p">This function may only be called from the start_element handler of
+a <span class="link"><a href="GLib.MarkupParser.html" title="GLib.MarkupParser">GLib.MarkupParser</a></span>. It must be matched with a corresponding call to
+<span class="link"><a href="GLib.MarkupParseContext.pop.html" title="GLib.MarkupParseContext.pop">GLib.MarkupParseContext.pop</a></span> in the matching end_element handler
+(except in the case that the parser aborts due to an error).</p>
+<p class="p">All tags, text and other data between the matching tags is
+redirected to the subparser given by <span class="code">parser</span>. <span class="code">user_data</span> is used
+as the user_data for that parser. <span class="code">user_data</span> is also passed to the
+error callback in the event that an error occurs. This includes
+errors that occur in subparsers of the subparser.</p>
+<p class="p">The end tag matching the start tag for which this call was made is
+handled by the previous parser (which is given its own user_data)
+which is why <span class="link"><a href="GLib.MarkupParseContext.pop.html" title="GLib.MarkupParseContext.pop">GLib.MarkupParseContext.pop</a></span> is provided to allow "one
+last access" to the <span class="code">user_data</span> provided to this function. In the
+case of error, the <span class="code">user_data</span> provided here is passed directly to
+the error callback of the subparser and <span class="link"><a href="GLib.MarkupParseContext.pop.html" title="GLib.MarkupParseContext.pop">GLib.MarkupParseContext.pop</a></span>
+should not be called. In either case, if <span class="code">user_data</span> was allocated
+then it ought to be freed from both of these locations.</p>
+<p class="p">This function is not intended to be directly called by users
+interested in invoking subparsers. Instead, it is intended to be
+used by the subparsers themselves to implement a higher-level
+interface.</p>
+<p class="p">As an example, see the following implementation of a simple
+parser that counts the number of tags encountered.</p>
+<p class="p">|[&lt;!-- language="C" --&gt;
+typedef struct
+{
+  gint tag_count;
+} CounterData;</p>
+<p class="p">static void
+counter_start_element (GMarkupParseContext  *context,
+                       const gchar          *element_name,
+                       const gchar         **attribute_names,
+                       const gchar         **attribute_values,
+                       gpointer              user_data,
+                       GError              **error)
+{
+  CounterData *data = user_data;</p>
+<p class="p">  data-&gt;tag_count++;
+}</p>
+<p class="p">static void
+counter_error (GMarkupParseContext *context,
+               GError              *error,
+               gpointer             user_data)
+{
+  CounterData *data = user_data;</p>
+<p class="p">  g_slice_free (CounterData, data);
+}</p>
+<p class="p">static GMarkupParser counter_subparser =
+{
+  counter_start_element,
+  NULL,
+  NULL,
+  NULL,
+  counter_error
+};
+]|</p>
+<p class="p">In order to allow this parser to be easily used as a subparser, the
+following interface is provided:</p>
+<p class="p">|[&lt;!-- language="C" --&gt;
+void
+start_counting (GMarkupParseContext *context)
+{
+  CounterData *data = g_slice_new (CounterData);</p>
+<p class="p">  data-&gt;tag_count = 0;
+  g_markup_parse_context_push (context, &amp;counter_subparser, data);
+}</p>
+<p class="p">gint
+end_counting (GMarkupParseContext *context)
+{
+  CounterData *data = g_markup_parse_context_pop (context);
+  int result;</p>
+<p class="p">  result = data-&gt;tag_count;
+  g_slice_free (CounterData, data);</p>
+<p class="p">  return result;
+}
+]|</p>
+<p class="p">The subparser would then be used as follows:</p>
+<p class="p">|[&lt;!-- language="C" --&gt;
+static void start_element (context, element_name, ...)
+{
+  if (strcmp (element_name, "count-these") == 0)
+    start_counting (context);</p>
+<p class="p">  // else, handle other tags...
+}</p>
+<p class="p">static void end_element (context, element_name, ...)
+{
+  if (strcmp (element_name, "count-these") == 0)
+    g_print ("Counted %d tags\n", end_counting (context));</p>
+<p class="p">  // else, handle other tags...
+}
+]|</p>
+<p class="p">Since 2.18</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">parser</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="GLib.MarkupParser.html" title="GLib.MarkupParser">GLib.MarkupParser</a></span></p></dd>
+<dt class="terms"><span class="code">user_data</span></dt>
+<dd class="terms"><p class="p">user data to pass to <span class="link"><a href="GLib.MarkupParser.html" title="GLib.MarkupParser">GLib.MarkupParser</a></span> functions</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="GLib.MarkupParseContext.html" title="GLib.MarkupParseContext">GLib.MarkupParseContext</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

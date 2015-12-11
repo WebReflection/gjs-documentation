@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.ActionEntry</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.ActionEntry</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
+
+let actionEntry = new Gio.ActionEntry();
+  </pre></div></div></div></div></div>
+<p class="p">This struct defines a single action.  It is for use with
+<span class="link"><a href="Gio.ActionMap.add_action_entries.html" title="Gio.ActionMap.prototype.add_action_entries">Gio.ActionMap.prototype.add_action_entries</a></span>.</p>
+<p class="p">The order of the items in the structure are intended to reflect
+frequency of use.  It is permissible to use an incomplete initialiser
+in order to leave some of the later values as <span class="code">null</span>.  All values
+after @name are optional.  Additional optional fields may be added in
+the future.</p>
+<p class="p">See <span class="link"><a href="Gio.ActionMap.add_action_entries.html" title="Gio.ActionMap.prototype.add_action_entries">Gio.ActionMap.prototype.add_action_entries</a></span> for an example.</p>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Fields</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.ActionEntry-name.html" title="Gio.ActionEntry.name">name</a></li>
+<li class="links "><a href="Gio.ActionEntry-parameter_type.html" title="Gio.ActionEntry.parameter_type">parameter_type</a></li>
+<li class="links "><a href="Gio.ActionEntry-state.html" title="Gio.ActionEntry.state">state</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gio">Gio</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

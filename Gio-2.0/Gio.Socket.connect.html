@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.Socket.prototype.connect</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.Socket.html" title="Gio.Socket">Gio.Socket</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.Socket.prototype.connect</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function connect(address: <span class="link"><a href="Gio.SocketAddress.html" title="Gio.SocketAddress">Gio.SocketAddress</a></span>, cancellable: <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span>): Boolean {
+    // Gjs wrapper for g_socket_connect()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Connect the socket to the specified remote address.</p>
+<p class="p">For connection oriented socket this generally means we attempt to make
+a connection to the <span class="code">address</span>. For a connection-less socket it sets
+the default address for <span class="link"><a href="Gio.Socket.send.html" title="Gio.Socket.prototype.send">Gio.Socket.prototype.send</a></span> and discards all incoming datagrams
+from other sources.</p>
+<p class="p">Generally connection oriented sockets can only connect once, but
+connection-less sockets can connect multiple times to change the
+default address.</p>
+<p class="p">If the connect call needs to do network I/O it will block, unless
+non-blocking I/O is enabled. Then <span class="link"><a href="Gio.IOErrorEnum.html" title="Gio.IOErrorEnum">Gio.IOErrorEnum</a></span>.pending is returned
+and the user can be notified of the connection finishing by waiting
+for the G_IO_OUT condition. The result of the connection must then be
+checked with <span class="link"><a href="Gio.Socket.check_connect_result.html" title="Gio.Socket.prototype.check_connect_result">Gio.Socket.prototype.check_connect_result</a></span>.</p>
+<p class="p">Since 2.22</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">address</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="Gio.SocketAddress.html" title="Gio.SocketAddress">Gio.SocketAddress</a></span> specifying the remote address.</p></dd>
+<dt class="terms"><span class="code">cancellable</span></dt>
+<dd class="terms"><p class="p">a %GCancellable or <span class="code">null</span></p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> if connected, <span class="code">false</span> on error.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.Socket.html" title="Gio.Socket">Gio.Socket</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

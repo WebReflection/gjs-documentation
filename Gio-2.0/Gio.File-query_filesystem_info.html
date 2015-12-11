@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.File::query_filesystem_info</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.File.html" title="Gio.File">Gio.File</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.File::query_filesystem_info</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function vfunc_query_filesystem_info(attributes: String, cancellable: <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span>): <span class="link"><a href="Gio.FileInfo.html" title="Gio.FileInfo">Gio.FileInfo</a></span> {
+}
+  </pre></div></div></div></div></div>
+<p class="p">Similar to <span class="link"><a href="Gio.File.query_info.html" title="Gio.File.prototype.query_info">Gio.File.prototype.query_info</a></span>, but obtains information
+about the filesystem the <span class="code">file</span> is on, rather than the file itself.
+For instance the amount of space available and the type of
+the filesystem.</p>
+<p class="p">The <span class="code">attributes</span> value is a string that specifies the attributes
+that should be gathered. It is not an error if it's not possible
+to read a particular requested attribute from a file - it just
+won't be set. <span class="code">attributes</span> should be a comma-separated list of
+attributes or attribute wildcards. The wildcard "*" means all
+attributes, and a wildcard like "filesystem::*" means all attributes
+in the filesystem namespace. The standard namespace for filesystem
+attributes is "filesystem". Common attributes of interest are
+#G_FILE_ATTRIBUTE_FILESYSTEM_SIZE (the total size of the filesystem
+in bytes), #G_FILE_ATTRIBUTE_FILESYSTEM_FREE (number of bytes available),
+and #G_FILE_ATTRIBUTE_FILESYSTEM_TYPE (type of the filesystem).</p>
+<p class="p">If <span class="code">cancellable</span> is not <span class="code">null</span>, then the operation can be cancelled
+by triggering the cancellable object from another thread. If the
+operation was cancelled, the error <span class="link"><a href="Gio.IOErrorEnum.html" title="Gio.IOErrorEnum">Gio.IOErrorEnum</a></span>.cancelled will be
+returned.</p>
+<p class="p">If the file does not exist, the <span class="link"><a href="Gio.IOErrorEnum.html" title="Gio.IOErrorEnum">Gio.IOErrorEnum</a></span>.not_found error will
+be returned. Other errors are possible too, and depend on what
+kind of filesystem the file is on.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">attributes</span></dt>
+<dd class="terms"><p class="p">an attribute query string</p></dd>
+<dt class="terms"><span class="code">cancellable</span></dt>
+<dd class="terms"><p class="p">optional <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span> object,
+    <span class="code">null</span> to ignore</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="Gio.FileInfo.html" title="Gio.FileInfo">Gio.FileInfo</a></span> or <span class="code">null</span> if there was an error.
+    Free the returned object with <span class="link"><a href="../GObject-2.0/GObject.Object.unref.html" title="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</a></span>.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.File.html" title="Gio.File">Gio.File</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

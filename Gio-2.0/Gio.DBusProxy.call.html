@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.DBusProxy.prototype.call</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.DBusProxy.html" title="Gio.DBusProxy">Gio.DBusProxy</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.DBusProxy.prototype.call</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function call(method_name: String, parameters: <span class="link"><a href="../GLib-2.0/GLib.Variant.html" title="../GLib-2.0/GLib.Variant.html">GLib.Variant</a></span>, flags: <span class="link"><a href="Gio.DBusCallFlags.html" title="Gio.DBusCallFlags">Gio.DBusCallFlags</a></span>, timeout_msec: Number(gint), cancellable: <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span>, callback: <span class="link"><a href="Gio.AsyncReadyCallback.html" title="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</a></span>): void {
+    // Gjs wrapper for g_dbus_proxy_call()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Asynchronously invokes the <span class="code">method_name</span> method on <span class="code">proxy</span>.</p>
+<p class="p">If <span class="code">method_name</span> contains any dots, then @name is split into interface and
+method name parts. This allows using <span class="code">proxy</span> for invoking methods on
+other interfaces.</p>
+<p class="p">If the <span class="link"><a href="Gio.DBusConnection.html" title="Gio.DBusConnection">Gio.DBusConnection</a></span> associated with <span class="code">proxy</span> is closed then
+the operation will fail with <span class="link"><a href="Gio.IOErrorEnum.html" title="Gio.IOErrorEnum">Gio.IOErrorEnum</a></span>.closed. If
+<span class="code">cancellable</span> is canceled, the operation will fail with
+<span class="link"><a href="Gio.IOErrorEnum.html" title="Gio.IOErrorEnum">Gio.IOErrorEnum</a></span>.cancelled. If <span class="code">parameters</span> contains a value not
+compatible with the D-Bus protocol, the operation fails with
+<span class="link"><a href="Gio.IOErrorEnum.html" title="Gio.IOErrorEnum">Gio.IOErrorEnum</a></span>.invalid_argument.</p>
+<p class="p">If the <span class="code">parameters</span> <span class="link"><a href="../GLib-2.0/GLib.Variant.html" title="../GLib-2.0/GLib.Variant.html">GLib.Variant</a></span> is floating, it is consumed. This allows
+convenient 'inline' use of <span class="link"><a href="../GLib-2.0/GLib.Variant.new.html" title="../GLib-2.0/GLib.Variant.new.html">GLib.Variant.new</a></span>, e.g.:
+|[&lt;!-- language="C" --&gt;
+ g_dbus_proxy_call (proxy,
+                    "TwoStrings",
+                    g_variant_new ("(ss)",
+                                   "Thing One",
+                                   "Thing Two"),
+                    G_DBUS_CALL_FLAGS_NONE,
+                    -1,
+                    NULL,
+                    (GAsyncReadyCallback) two_strings_done,
+                    &amp;data);
+]|</p>
+<p class="p">If <span class="code">proxy</span> has an expected interface (see
+<span class="link"><a href="Gio.DBusProxy-g-interface-info.html" title="Gio.DBusProxy.g_interface_info">Gio.DBusProxy.g_interface_info</a></span>) and <span class="code">method_name</span> is referenced by it,
+then the return value is checked against the return type.</p>
+<p class="p">This is an asynchronous method. When the operation is finished,
+<span class="code">callback</span> will be invoked in the
+[thread-default main context][g-main-context-push-thread-default]
+of the thread you are calling this method from.
+You can then call <span class="link"><a href="Gio.DBusProxy.call_finish.html" title="Gio.DBusProxy.prototype.call_finish">Gio.DBusProxy.prototype.call_finish</a></span> to get the result of
+the operation. See <span class="link"><a href="Gio.DBusProxy.call_sync.html" title="Gio.DBusProxy.prototype.call_sync">Gio.DBusProxy.prototype.call_sync</a></span> for the synchronous
+version of this method.</p>
+<p class="p">If <span class="code">callback</span> is <span class="code">null</span> then the D-Bus method call message will be sent with
+the <span class="link"><a href="Gio.DBusMessageFlags.html" title="Gio.DBusMessageFlags">Gio.DBusMessageFlags</a></span>.no_reply_expected flag set.</p>
+<p class="p">Since 2.26</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">method_name</span></dt>
+<dd class="terms"><p class="p">Name of method to invoke.</p></dd>
+<dt class="terms"><span class="code">parameters</span></dt>
+<dd class="terms"><p class="p">A <span class="link"><a href="../GLib-2.0/GLib.Variant.html" title="../GLib-2.0/GLib.Variant.html">GLib.Variant</a></span> tuple with parameters for the signal or <span class="code">null</span> if not passing parameters.</p></dd>
+<dt class="terms"><span class="code">flags</span></dt>
+<dd class="terms"><p class="p">Flags from the <span class="link"><a href="Gio.DBusCallFlags.html" title="Gio.DBusCallFlags">Gio.DBusCallFlags</a></span> enumeration.</p></dd>
+<dt class="terms"><span class="code">timeout_msec</span></dt>
+<dd class="terms"><p class="p">The timeout in milliseconds (with %G_MAXINT meaning
+               "infinite") or -1 to use the proxy default timeout.</p></dd>
+<dt class="terms"><span class="code">cancellable</span></dt>
+<dd class="terms"><p class="p">A <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span> or <span class="code">null</span>.</p></dd>
+<dt class="terms"><span class="code">callback</span></dt>
+<dd class="terms"><p class="p">A <span class="link"><a href="Gio.AsyncReadyCallback.html" title="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</a></span> to call when the request is satisfied or <span class="code">null</span> if you don't
+care about the result of the method invocation.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.DBusProxy.html" title="Gio.DBusProxy">Gio.DBusProxy</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

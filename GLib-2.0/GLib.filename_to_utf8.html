@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.filename_to_utf8</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.filename_to_utf8</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function filename_to_utf8(opsysstring: String, len: Number(gssize), bytes_read: Number(gsize), bytes_written: Number(gsize)): String {
+    // Gjs wrapper for g_filename_to_utf8()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Converts a string which is in the encoding used by GLib for
+filenames into a UTF-8 string. Note that on Windows GLib uses UTF-8
+for filenames; on other platforms, this function indirectly depends on
+the [current locale][setlocale].</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">opsysstring</span></dt>
+<dd class="terms"><p class="p">a string in the encoding for filenames</p></dd>
+<dt class="terms"><span class="code">len</span></dt>
+<dd class="terms"><p class="p">the length of the string, or -1 if the string is
+                nul-terminated (Note that some encodings may allow nul
+                bytes to occur inside strings. In that case, using -1
+                for the <span class="code">len</span> parameter is unsafe)</p></dd>
+<dt class="terms"><span class="code">bytes_read</span></dt>
+<dd class="terms"><p class="p">location to store the number of bytes in the
+                input string that were successfully converted, or <span class="code">null</span>.
+                Even if the conversion was successful, this may be
+                less than <span class="code">len</span> if there were partial characters
+                at the end of the input. If the error
+                #G_CONVERT_ERROR_ILLEGAL_SEQUENCE occurs, the value
+                stored will the byte offset after the last valid
+                input sequence.</p></dd>
+<dt class="terms"><span class="code">bytes_written</span></dt>
+<dd class="terms"><p class="p">the number of bytes stored in the output buffer (not
+                including the terminating nul).</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">The converted string, or <span class="code">null</span> on an error.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="GLib">GLib</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.Cancellable::cancelled</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.Cancellable::cancelled</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">connect('cancelled', function (cancellable, ): void);
+  </pre></div></div></div></div></div>
+<p class="p">Emitted when the operation has been cancelled.</p>
+<p class="p">Can be used by implementations of cancellable operations. If the
+operation is cancelled from another thread, the signal will be
+emitted in the thread that cancelled the operation, not the
+thread that is running the operation.</p>
+<p class="p">Note that disconnecting from this signal (or any signal) in a
+multi-threaded program is prone to race conditions. For instance
+it is possible that a signal handler may be invoked even after
+a call to <span class="link"><a href="../GObject-2.0/GObject.signal_handler_disconnect.html" title="../GObject-2.0/GObject.signal_handler_disconnect.html">GObject.signal_handler_disconnect</a></span> for that handler has
+already returned.</p>
+<p class="p">There is also a problem when cancellation happens right before
+connecting to the signal. If this happens the signal will
+unexpectedly not be emitted, and checking before connecting to
+the signal leaves a race condition where this is still happening.</p>
+<p class="p">In order to make it safe and easy to connect handlers there
+are two helper functions: <span class="link"><a href="Gio.Cancellable.connect.html" title="Gio.Cancellable.prototype.connect">Gio.Cancellable.prototype.connect</a></span> and
+<span class="link"><a href="Gio.Cancellable.disconnect.html" title="Gio.Cancellable.prototype.disconnect">Gio.Cancellable.prototype.disconnect</a></span> which protect against problems
+like this.</p>
+<p class="p">An example of how to us this:
+|[&lt;!-- language="C" --&gt;
+    // Make sure we don't do unnecessary work if already cancelled
+    if (g_cancellable_set_error_if_cancelled (cancellable, error))
+      return;</p>
+<p class="p">    // Set up all the data needed to be able to handle cancellation
+    // of the operation
+    my_data = my_data_new (...);</p>
+<p class="p">    id = 0;
+    if (cancellable)
+      id = g_cancellable_connect (cancellable,
+    			      G_CALLBACK (cancelled_handler)
+    			      data, NULL);</p>
+<p class="p">    // cancellable operation here...</p>
+<p class="p">    g_cancellable_disconnect (cancellable, id);</p>
+<p class="p">    // cancelled_handler is never called after this, it is now safe
+    // to free the data
+    my_data_free (my_data);
+]|</p>
+<p class="p">Note that the cancelled signal is emitted in the thread that
+the user cancelled from, which may be the main thread. So, the
+cancellable signal should not do something that can block.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">cancellable</span></dt>
+<dd class="terms"><p class="p">instance of <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span> that is emitting the signal</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

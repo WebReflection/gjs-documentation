@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.InetAddress</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.InetAddress</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
+
+let inetAddress = new Gio.InetAddress({
+    <span class="link"><a href="Gio.InetAddress-bytes.html" title="Gio.InetAddress.bytes">bytes</a></span>: value,
+    <span class="link"><a href="Gio.InetAddress-family.html" title="Gio.InetAddress.family">family</a></span>: value,
+});
+  </pre></div></div></div></div></div>
+<p class="p"><span class="link"><a href="Gio.InetAddress.html" title="Gio.InetAddress">Gio.InetAddress</a></span> represents an IPv4 or IPv6 internet address. Use
+<span class="link"><a href="Gio.Resolver.lookup_by_name.html" title="Gio.Resolver.prototype.lookup_by_name">Gio.Resolver.prototype.lookup_by_name</a></span> or <span class="link"><a href="Gio.Resolver.lookup_by_name_async.html" title="Gio.Resolver.prototype.lookup_by_name_async">Gio.Resolver.prototype.lookup_by_name_async</a></span> to
+look up the <span class="link"><a href="Gio.InetAddress.html" title="Gio.InetAddress">Gio.InetAddress</a></span> for a hostname. Use
+<span class="link"><a href="Gio.Resolver.lookup_by_address.html" title="Gio.Resolver.prototype.lookup_by_address">Gio.Resolver.prototype.lookup_by_address</a></span> or
+<span class="link"><a href="Gio.Resolver.lookup_by_address_async.html" title="Gio.Resolver.prototype.lookup_by_address_async">Gio.Resolver.prototype.lookup_by_address_async</a></span> to look up the hostname for a
+<span class="link"><a href="Gio.InetAddress.html" title="Gio.InetAddress">Gio.InetAddress</a></span>.</p>
+<p class="p">To actually connect to a remote host, you will need a
+<span class="link"><a href="Gio.InetSocketAddress.html" title="Gio.InetSocketAddress">Gio.InetSocketAddress</a></span> (which includes a <span class="link"><a href="Gio.InetAddress.html" title="Gio.InetAddress">Gio.InetAddress</a></span> as well as a
+port number).</p>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
+<div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
+<div>
+        <span class="code">GObject.Object</span>
+      
+      </div>
+<ul class="tree"><li class="tree"><div>
+        <span class="code">Gio.InetAddress</span>
+      </div></li></ul>
+</li></ul></div></div></div></div></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.InetAddress.new_any.html" title="Gio.InetAddress.new_any">Gio.InetAddress.new_any</a></li>
+<li class="links "><a href="Gio.InetAddress.new_from_bytes.html" title="Gio.InetAddress.new_from_bytes">Gio.InetAddress.new_from_bytes</a></li>
+<li class="links "><a href="Gio.InetAddress.new_from_string.html" title="Gio.InetAddress.new_from_string">Gio.InetAddress.new_from_string</a></li>
+<li class="links "><a href="Gio.InetAddress.new_loopback.html" title="Gio.InetAddress.new_loopback">Gio.InetAddress.new_loopback</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.InetAddress.equal.html" title="Gio.InetAddress.prototype.equal">Gio.InetAddress.prototype.equal</a></li>
+<li class="links "><a href="Gio.InetAddress.get_family.html" title="Gio.InetAddress.prototype.get_family">Gio.InetAddress.prototype.get_family</a></li>
+<li class="links "><a href="Gio.InetAddress.get_is_any.html" title="Gio.InetAddress.prototype.get_is_any">Gio.InetAddress.prototype.get_is_any</a></li>
+<li class="links "><a href="Gio.InetAddress.get_is_link_local.html" title="Gio.InetAddress.prototype.get_is_link_local">Gio.InetAddress.prototype.get_is_link_local</a></li>
+<li class="links "><a href="Gio.InetAddress.get_is_loopback.html" title="Gio.InetAddress.prototype.get_is_loopback">Gio.InetAddress.prototype.get_is_loopback</a></li>
+<li class="links "><a href="Gio.InetAddress.get_is_mc_global.html" title="Gio.InetAddress.prototype.get_is_mc_global">Gio.InetAddress.prototype.get_is_mc_global</a></li>
+<li class="links "><a href="Gio.InetAddress.get_is_mc_link_local.html" title="Gio.InetAddress.prototype.get_is_mc_link_local">Gio.InetAddress.prototype.get_is_mc_link_local</a></li>
+<li class="links "><a href="Gio.InetAddress.get_is_mc_node_local.html" title="Gio.InetAddress.prototype.get_is_mc_node_local">Gio.InetAddress.prototype.get_is_mc_node_local</a></li>
+<li class="links "><a href="Gio.InetAddress.get_is_mc_org_local.html" title="Gio.InetAddress.prototype.get_is_mc_org_local">Gio.InetAddress.prototype.get_is_mc_org_local</a></li>
+<li class="links "><a href="Gio.InetAddress.get_is_mc_site_local.html" title="Gio.InetAddress.prototype.get_is_mc_site_local">Gio.InetAddress.prototype.get_is_mc_site_local</a></li>
+<li class="links "><a href="Gio.InetAddress.get_is_multicast.html" title="Gio.InetAddress.prototype.get_is_multicast">Gio.InetAddress.prototype.get_is_multicast</a></li>
+<li class="links "><a href="Gio.InetAddress.get_is_site_local.html" title="Gio.InetAddress.prototype.get_is_site_local">Gio.InetAddress.prototype.get_is_site_local</a></li>
+<li class="links "><a href="Gio.InetAddress.get_native_size.html" title="Gio.InetAddress.prototype.get_native_size">Gio.InetAddress.prototype.get_native_size</a></li>
+<li class="links "><a href="Gio.InetAddress.to_string.html" title="Gio.InetAddress.prototype.to_string">Gio.InetAddress.prototype.to_string</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Properties</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.InetAddress-bytes.html" title="Gio.InetAddress.bytes">bytes</a></li>
+<li class="links "><a href="Gio.InetAddress-family.html" title="Gio.InetAddress.family">family</a></li>
+<li class="links "><a href="Gio.InetAddress-is-any.html" title="Gio.InetAddress.is_any">is-any</a></li>
+<li class="links "><a href="Gio.InetAddress-is-link-local.html" title="Gio.InetAddress.is_link_local">is-link-local</a></li>
+<li class="links "><a href="Gio.InetAddress-is-loopback.html" title="Gio.InetAddress.is_loopback">is-loopback</a></li>
+<li class="links "><a href="Gio.InetAddress-is-mc-global.html" title="Gio.InetAddress.is_mc_global">is-mc-global</a></li>
+<li class="links "><a href="Gio.InetAddress-is-mc-link-local.html" title="Gio.InetAddress.is_mc_link_local">is-mc-link-local</a></li>
+<li class="links "><a href="Gio.InetAddress-is-mc-node-local.html" title="Gio.InetAddress.is_mc_node_local">is-mc-node-local</a></li>
+<li class="links "><a href="Gio.InetAddress-is-mc-org-local.html" title="Gio.InetAddress.is_mc_org_local">is-mc-org-local</a></li>
+<li class="links "><a href="Gio.InetAddress-is-mc-site-local.html" title="Gio.InetAddress.is_mc_site_local">is-mc-site-local</a></li>
+<li class="links "><a href="Gio.InetAddress-is-multicast.html" title="Gio.InetAddress.is_multicast">is-multicast</a></li>
+<li class="links "><a href="Gio.InetAddress-is-site-local.html" title="Gio.InetAddress.is_site_local">is-site-local</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Virtual functions</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.InetAddress-to_string.html" title="Gio.InetAddress::to_string">Gio.InetAddress::to_string</a></li></ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gio">Gio</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

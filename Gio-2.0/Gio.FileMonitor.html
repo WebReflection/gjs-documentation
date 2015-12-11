@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.FileMonitor</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.FileMonitor</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
+
+let fileMonitor = new Gio.FileMonitor({
+    <span class="link"><a href="Gio.FileMonitor-context.html" title="Gio.FileMonitor.context">context</a></span>: value,
+});
+  </pre></div></div></div></div></div>
+<p class="p">Monitors a file or directory for changes.</p>
+<p class="p">To obtain a <span class="link"><a href="Gio.FileMonitor.html" title="Gio.FileMonitor">Gio.FileMonitor</a></span> for a file or directory, use
+<span class="link"><a href="Gio.File.monitor.html" title="Gio.File.prototype.monitor">Gio.File.prototype.monitor</a></span>, <span class="link"><a href="Gio.File.monitor_file.html" title="Gio.File.prototype.monitor_file">Gio.File.prototype.monitor_file</a></span>, or
+<span class="link"><a href="Gio.File.monitor_directory.html" title="Gio.File.prototype.monitor_directory">Gio.File.prototype.monitor_directory</a></span>.</p>
+<p class="p">To get informed about changes to the file or directory you are
+monitoring, connect to the <span class="link"><a href="Gio.FileMonitor-changed.html" title="Gio.FileMonitor::changed">Gio.FileMonitor::changed</a></span> signal. The
+signal will be emitted in the
+[thread-default main context][g-main-context-push-thread-default]
+of the thread that the monitor was created in
+(though if the global default main context is blocked, this may
+cause notifications to be blocked even if the thread-default
+context is still running).</p>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
+<div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
+<div>
+        <span class="code">GObject.Object</span>
+      
+      </div>
+<ul class="tree"><li class="tree"><div>
+        <span class="code">Gio.FileMonitor</span>
+      </div></li></ul>
+</li></ul></div></div></div></div></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.FileMonitor.cancel.html" title="Gio.FileMonitor.prototype.cancel">Gio.FileMonitor.prototype.cancel</a></li>
+<li class="links "><a href="Gio.FileMonitor.emit_event.html" title="Gio.FileMonitor.prototype.emit_event">Gio.FileMonitor.prototype.emit_event</a></li>
+<li class="links "><a href="Gio.FileMonitor.is_cancelled.html" title="Gio.FileMonitor.prototype.is_cancelled">Gio.FileMonitor.prototype.is_cancelled</a></li>
+<li class="links "><a href="Gio.FileMonitor.set_rate_limit.html" title="Gio.FileMonitor.prototype.set_rate_limit">Gio.FileMonitor.prototype.set_rate_limit</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Properties</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.FileMonitor-cancelled.html" title="Gio.FileMonitor.cancelled">cancelled</a></li>
+<li class="links "><a href="Gio.FileMonitor-context.html" title="Gio.FileMonitor.context">context</a></li>
+<li class="links "><a href="Gio.FileMonitor-rate-limit.html" title="Gio.FileMonitor.rate_limit">rate-limit</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Signals</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.FileMonitor-changed.html" title="Gio.FileMonitor::changed">changed</a></li></ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Virtual functions</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.FileMonitor-cancel.html" title="Gio.FileMonitor::cancel">Gio.FileMonitor::cancel</a></li></ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gio">Gio</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

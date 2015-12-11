@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GObject.Class</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GObject">GObject</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GObject.Class</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const GObject = imports.gi.GObject;
+
+const MyClass = new GObject.Class({
+    Name: 'MyClass',
+    Extends: Some.GObjectClass,
+    Signals: { 'my-signal': { param_types: [ GObject.TYPE_INT ] },
+    Properties: { 'frobby': GObject.ParamSpec.bool('frobby', 'Frobby', 'Fill a description here',
+                                                   GObject.ParamFlags.READABLE, false) },
+
+    _init: function(params) {
+        this.parent(params);
+
+        ...
+    },
+
+    vfunc_virtual_function: function() {
+        // override virtual_function() with something else
+        this.parent();
+    },
+
+    get frobby() {
+        return true;
+    }
+});
+  </pre></div></div></div></div></div>
+<p class="p">
+    GObject.Class is a metaclass, or a class representing all GObject derived types.
+    It is used to define new custom classes.
+  </p>
+<p class="p">
+    The constructor for GObject.Class, like Lang.Class, requires a name for the class
+    and a class to inherit from (which must be another GObject derived type), plus
+    an initializer (_init) and public methods.
+  </p>
+<p class="p">
+    In addition to that, GObject.Class allows to define signals and properties for the
+    new type, as well as the implemented interfaces.
+  </p>
+<p class="p">
+    "Implements", if provided, must be an array of interfaces which will be implemented
+    by the new class.
+  </p>
+<p class="p">
+    "Signals", if provided, must be an object mapping signal names to signal descriptors,
+    which are objects holding at least the parameter types (param_types), but optionally
+    flags (choosing from GObject.SignalFlags), accumulator (of type GObject.AccumulatorType) and return_type.
+  </p>
+<p class="p">
+    "Properties", if provided, must be an object mapping property names to
+    GObject.ParamSpecs. You can optionally provide an accessor to handle
+    property gets and sets.
+  </p>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="GObject">GObject</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

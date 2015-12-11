@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.FileReadMoreCallback</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.FileReadMoreCallback</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function onFileReadMoreCallback(file_contents: String, file_size: Number(gint64), callback_data: void): Boolean {
+}
+  </pre></div></div></div></div></div>
+<p class="p">When loading the partial contents of a file with <span class="link"><a href="Gio.File.load_partial_contents_async.html" title="Gio.File.load_partial_contents_async">Gio.File.load_partial_contents_async</a></span>,
+it may become necessary to determine if any more data from the file should be loaded.
+A <span class="link"><a href="Gio.FileReadMoreCallback.html" title="Gio.FileReadMoreCallback">Gio.FileReadMoreCallback</a></span> function facilitates this by returning <span class="code">true</span> if more data
+should be read, or <span class="code">false</span> otherwise.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">file_contents</span></dt>
+<dd class="terms"><p class="p">the data as currently read.</p></dd>
+<dt class="terms"><span class="code">file_size</span></dt>
+<dd class="terms"><p class="p">the size of the data currently read.</p></dd>
+<dt class="terms"><span class="code">callback_data</span></dt>
+<dd class="terms"><p class="p">data passed to the callback.</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> if more data should be read back. <span class="code">false</span> otherwise.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gio">Gio</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

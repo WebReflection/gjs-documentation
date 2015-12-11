@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.SettingsSchema</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.SettingsSchema</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
+
+let settingsSchema = new Gio.SettingsSchema();
+  </pre></div></div></div></div></div>
+<p class="p">The <span class="link"><a href="Gio.SettingsSchemaSource.html" title="Gio.SettingsSchemaSource">Gio.SettingsSchemaSource</a></span> and <span class="link"><a href="Gio.SettingsSchema.html" title="Gio.SettingsSchema">Gio.SettingsSchema</a></span> APIs provide a
+mechanism for advanced control over the loading of schemas and a
+mechanism for introspecting their content.</p>
+<p class="p">Plugin loading systems that wish to provide plugins a way to access
+settings face the problem of how to make the schemas for these
+settings visible to GSettings.  Typically, a plugin will want to ship
+the schema along with itself and it won't be installed into the
+standard system directories for schemas.</p>
+<p class="p"><span class="link"><a href="Gio.SettingsSchemaSource.html" title="Gio.SettingsSchemaSource">Gio.SettingsSchemaSource</a></span> provides a mechanism for dealing with this by
+allowing the creation of a new 'schema source' from which schemas can
+be acquired.  This schema source can then become part of the metadata
+associated with the plugin and queried whenever the plugin requires
+access to some settings.</p>
+<p class="p">Consider the following example:</p>
+<p class="p">|[&lt;!-- language="C" --&gt;
+typedef struct
+{
+   ...
+   GSettingsSchemaSource *schema_source;
+   ...
+} Plugin;</p>
+<p class="p">Plugin *
+initialise_plugin (const gchar *dir)
+{
+  Plugin *plugin;</p>
+<p class="p">  ...</p>
+<p class="p">  plugin-&gt;schema_source =
+    g_settings_new_schema_source_from_directory (dir,
+      g_settings_schema_source_get_default (), FALSE, NULL);</p>
+<p class="p">  ...</p>
+<p class="p">  return plugin;
+}</p>
+<p class="p">...</p>
+<p class="p">GSettings *
+plugin_get_settings (Plugin      *plugin,
+                     const gchar *schema_id)
+{
+  GSettingsSchema *schema;</p>
+<p class="p">  if (schema_id == NULL)
+    schema_id = plugin-&gt;identifier;</p>
+<p class="p">  schema = g_settings_schema_source_lookup (plugin-&gt;schema_source,
+                                            schema_id, FALSE);</p>
+<p class="p">  if (schema == NULL)
+    {
+      ... disable the plugin or abort, etc ...
+    }</p>
+<p class="p">  return g_settings_new_full (schema, NULL, NULL);
+}
+]|</p>
+<p class="p">The code above shows how hooks should be added to the code that
+initialises (or enables) the plugin to create the schema source and
+how an API can be added to the plugin system to provide a convenient
+way for the plugin to access its settings, using the schemas that it
+ships.</p>
+<p class="p">From the standpoint of the plugin, it would need to ensure that it
+ships a gschemas.compiled file as part of itself, and then simply do
+the following:</p>
+<p class="p">|[&lt;!-- language="C" --&gt;
+{
+  GSettings *settings;
+  gint some_value;</p>
+<p class="p">  settings = plugin_get_settings (self, NULL);
+  some_value = g_settings_get_int (settings, "some-value");
+  ...
+}
+]|</p>
+<p class="p">It's also possible that the plugin system expects the schema source
+files (ie: .gschema.xml files) instead of a gschemas.compiled file.
+In that case, the plugin loading system must compile the schemas for
+itself before attempting to create the settings source.</p>
+<p class="p">Since 2.32</p>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.SettingsSchema.get_id.html" title="Gio.SettingsSchema.prototype.get_id">Gio.SettingsSchema.prototype.get_id</a></li>
+<li class="links "><a href="Gio.SettingsSchema.get_key.html" title="Gio.SettingsSchema.prototype.get_key">Gio.SettingsSchema.prototype.get_key</a></li>
+<li class="links "><a href="Gio.SettingsSchema.get_path.html" title="Gio.SettingsSchema.prototype.get_path">Gio.SettingsSchema.prototype.get_path</a></li>
+<li class="links "><a href="Gio.SettingsSchema.has_key.html" title="Gio.SettingsSchema.prototype.has_key">Gio.SettingsSchema.prototype.has_key</a></li>
+<li class="links "><a href="Gio.SettingsSchema.ref.html" title="Gio.SettingsSchema.prototype.ref">Gio.SettingsSchema.prototype.ref</a></li>
+<li class="links "><a href="Gio.SettingsSchema.unref.html" title="Gio.SettingsSchema.prototype.unref">Gio.SettingsSchema.prototype.unref</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gio">Gio</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

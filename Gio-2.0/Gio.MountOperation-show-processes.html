@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.MountOperation::show-processes</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.MountOperation.html" title="Gio.MountOperation">Gio.MountOperation</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.MountOperation::show-processes</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">connect('show-processes', function (mountOperation, message: String, processes: Array(<span class="link"><a href="../GLib-2.0/GLib.Pid.html" title="../GLib-2.0/GLib.Pid.html">GLib.Pid</a></span>), choices: Array(String), ): void);
+  </pre></div></div></div></div></div>
+<p class="p">Emitted when one or more processes are blocking an operation
+e.g. unmounting/ejecting a <span class="link"><a href="Gio.Mount.html" title="Gio.Mount">Gio.Mount</a></span> or stopping a <span class="link"><a href="Gio.Drive.html" title="Gio.Drive">Gio.Drive</a></span>.</p>
+<p class="p">Note that this signal may be emitted several times to update the
+list of blocking processes as processes close files. The
+application should only respond with <span class="link"><a href="Gio.MountOperation.reply.html" title="Gio.MountOperation.prototype.reply">Gio.MountOperation.prototype.reply</a></span> to
+the latest signal (setting <span class="link"><a href="Gio.MountOperation-choice.html" title="Gio.MountOperation.choice">Gio.MountOperation.choice</a></span> to the choice
+the user made).</p>
+<p class="p">If the message contains a line break, the first line should be
+presented as a heading. For example, it may be used as the
+primary text in a #GtkMessageDialog.</p>
+<p class="p">Since 2.22</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">mountOperation</span></dt>
+<dd class="terms"><p class="p">instance of <span class="link"><a href="Gio.MountOperation.html" title="Gio.MountOperation">Gio.MountOperation</a></span> that is emitting the signal</p></dd>
+<dt class="terms"><span class="code">message</span></dt>
+<dd class="terms"><p class="p">string containing a message to display to the user.</p></dd>
+<dt class="terms"><span class="code">processes</span></dt>
+<dd class="terms"><p class="p">an array of <span class="link"><a href="../GLib-2.0/GLib.Pid.html" title="../GLib-2.0/GLib.Pid.html">GLib.Pid</a></span> for processes
+  blocking the operation.</p></dd>
+<dt class="terms"><span class="code">choices</span></dt>
+<dd class="terms"><p class="p">an array of strings for each possible choice.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.MountOperation.html" title="Gio.MountOperation">Gio.MountOperation</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

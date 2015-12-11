@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.FileInputStream</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.FileInputStream</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
+
+let fileInputStream = new Gio.FileInputStream();
+  </pre></div></div></div></div></div>
+<p class="p">GFileInputStream provides input streams that take their
+content from a file.</p>
+<p class="p">GFileInputStream implements <span class="link"><a href="Gio.Seekable.html" title="Gio.Seekable">Gio.Seekable</a></span>, which allows the input
+stream to jump to arbitrary positions in the file, provided the
+filesystem of the file allows it. To find the position of a file
+input stream, use <span class="link"><a href="Gio.Seekable.tell.html" title="Gio.Seekable.prototype.tell">Gio.Seekable.prototype.tell</a></span>. To find out if a file input
+stream supports seeking, use <span class="link"><a href="Gio.Seekable.can_seek.html" title="Gio.Seekable.prototype.can_seek">Gio.Seekable.prototype.can_seek</a></span>.
+To position a file input stream, use <span class="link"><a href="Gio.Seekable.seek.html" title="Gio.Seekable.prototype.seek">Gio.Seekable.prototype.seek</a></span>.</p>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
+<div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
+<div>
+        <span class="code">GObject.Object</span>
+      
+      </div>
+<ul class="tree"><li class="tree">
+<div>
+        <span class="code">Gio.InputStream</span>
+      
+      </div>
+<ul class="tree"><li class="tree"><div>
+        <span class="code">Gio.FileInputStream</span>
+      </div></li></ul>
+</li></ul>
+</li></ul></div></div></div></div></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.FileInputStream.query_info.html" title="Gio.FileInputStream.prototype.query_info">Gio.FileInputStream.prototype.query_info</a></li>
+<li class="links "><a href="Gio.FileInputStream.query_info_async.html" title="Gio.FileInputStream.prototype.query_info_async">Gio.FileInputStream.prototype.query_info_async</a></li>
+<li class="links "><a href="Gio.FileInputStream.query_info_finish.html" title="Gio.FileInputStream.prototype.query_info_finish">Gio.FileInputStream.prototype.query_info_finish</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Virtual functions</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.FileInputStream-can_seek.html" title="Gio.FileInputStream::can_seek">Gio.FileInputStream::can_seek</a></li>
+<li class="links "><a href="Gio.FileInputStream-query_info.html" title="Gio.FileInputStream::query_info">Gio.FileInputStream::query_info</a></li>
+<li class="links "><a href="Gio.FileInputStream-query_info_async.html" title="Gio.FileInputStream::query_info_async">Gio.FileInputStream::query_info_async</a></li>
+<li class="links "><a href="Gio.FileInputStream-query_info_finish.html" title="Gio.FileInputStream::query_info_finish">Gio.FileInputStream::query_info_finish</a></li>
+<li class="links "><a href="Gio.FileInputStream-seek.html" title="Gio.FileInputStream::seek">Gio.FileInputStream::seek</a></li>
+<li class="links "><a href="Gio.FileInputStream-tell.html" title="Gio.FileInputStream::tell">Gio.FileInputStream::tell</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gio">Gio</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

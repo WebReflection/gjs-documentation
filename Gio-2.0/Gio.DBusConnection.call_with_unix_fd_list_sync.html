@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.DBusConnection.prototype.call_with_unix_fd_list_sync</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.DBusConnection.html" title="Gio.DBusConnection">Gio.DBusConnection</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.DBusConnection.prototype.call_with_unix_fd_list_sync</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function call_with_unix_fd_list_sync(bus_name: String, object_path: String, interface_name: String, method_name: String, parameters: <span class="link"><a href="../GLib-2.0/GLib.Variant.html" title="../GLib-2.0/GLib.Variant.html">GLib.Variant</a></span>, reply_type: <span class="link"><a href="../GLib-2.0/GLib.VariantType.html" title="../GLib-2.0/GLib.VariantType.html">GLib.VariantType</a></span>, flags: <span class="link"><a href="Gio.DBusCallFlags.html" title="Gio.DBusCallFlags">Gio.DBusCallFlags</a></span>, timeout_msec: Number(gint), fd_list: <span class="link"><a href="Gio.UnixFDList.html" title="Gio.UnixFDList">Gio.UnixFDList</a></span>, cancellable: <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span>): [return_value: <span class="link"><a href="../GLib-2.0/GLib.Variant.html" title="../GLib-2.0/GLib.Variant.html">GLib.Variant</a></span>, out_fd_list: <span class="link"><a href="Gio.UnixFDList.html" title="Gio.UnixFDList">Gio.UnixFDList</a></span>] {
+    // Gjs wrapper for g_dbus_connection_call_with_unix_fd_list_sync()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Like <span class="link"><a href="Gio.DBusConnection.call_sync.html" title="Gio.DBusConnection.prototype.call_sync">Gio.DBusConnection.prototype.call_sync</a></span> but also takes and returns <span class="link"><a href="Gio.UnixFDList.html" title="Gio.UnixFDList">Gio.UnixFDList</a></span> objects.</p>
+<p class="p">This method is only available on UNIX.</p>
+<p class="p">Since 2.30</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">bus_name</span></dt>
+<dd class="terms"><p class="p">a unique or well-known bus name or <span class="code">null</span>
+    if <span class="code">connection</span> is not a message bus connection</p></dd>
+<dt class="terms"><span class="code">object_path</span></dt>
+<dd class="terms"><p class="p">path of remote object</p></dd>
+<dt class="terms"><span class="code">interface_name</span></dt>
+<dd class="terms"><p class="p">D-Bus interface to invoke method on</p></dd>
+<dt class="terms"><span class="code">method_name</span></dt>
+<dd class="terms"><p class="p">the name of the method to invoke</p></dd>
+<dt class="terms"><span class="code">parameters</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="../GLib-2.0/GLib.Variant.html" title="../GLib-2.0/GLib.Variant.html">GLib.Variant</a></span> tuple with parameters for
+    the method or <span class="code">null</span> if not passing parameters</p></dd>
+<dt class="terms"><span class="code">reply_type</span></dt>
+<dd class="terms"><p class="p">the expected type of the reply, or <span class="code">null</span></p></dd>
+<dt class="terms"><span class="code">flags</span></dt>
+<dd class="terms"><p class="p">flags from the <span class="link"><a href="Gio.DBusCallFlags.html" title="Gio.DBusCallFlags">Gio.DBusCallFlags</a></span> enumeration</p></dd>
+<dt class="terms"><span class="code">timeout_msec</span></dt>
+<dd class="terms"><p class="p">the timeout in milliseconds, -1 to use the default
+    timeout or %G_MAXINT for no timeout</p></dd>
+<dt class="terms"><span class="code">fd_list</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="Gio.UnixFDList.html" title="Gio.UnixFDList">Gio.UnixFDList</a></span> or <span class="code">null</span></p></dd>
+<dt class="terms"><span class="code">cancellable</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span> or <span class="code">null</span></p></dd>
+<dt class="terms"><span class="code">return_value</span></dt>
+<dd class="terms"><p class="p"><span class="code">null</span> if @error is set. Otherwise a <span class="link"><a href="../GLib-2.0/GLib.Variant.html" title="../GLib-2.0/GLib.Variant.html">GLib.Variant</a></span> tuple with
+    return values. Free with <span class="link"><a href="../GLib-2.0/GLib.Variant.unref.html" title="../GLib-2.0/GLib.Variant.unref.html">GLib.Variant.prototype.unref</a></span>.</p></dd>
+<dt class="terms"><span class="code">out_fd_list</span></dt>
+<dd class="terms"><p class="p">return location for a <span class="link"><a href="Gio.UnixFDList.html" title="Gio.UnixFDList">Gio.UnixFDList</a></span> or <span class="code">null</span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.DBusConnection.html" title="Gio.DBusConnection">Gio.DBusConnection</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

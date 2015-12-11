@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.Application.prototype.send_notification</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.Application.html" title="Gio.Application">Gio.Application</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.Application.prototype.send_notification</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function send_notification(id: String, notification: <span class="link"><a href="Gio.Notification.html" title="Gio.Notification">Gio.Notification</a></span>): void {
+    // Gjs wrapper for g_application_send_notification()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Sends a notification on behalf of <span class="code">application</span> to the desktop shell.
+There is no guarantee that the notification is displayed immediately,
+or even at all.</p>
+<p class="p">Notifications may persist after the application exits. It will be
+D-Bus-activated when the notification or one of its actions is
+activated.</p>
+<p class="p">Modifying <span class="code">notification</span> after this call has no effect. However, the
+object can be reused for a later call to this function.</p>
+<p class="p"><span class="code">id</span> may be any string that uniquely identifies the event for the
+application. It does not need to be in any special format. For
+example, "new-message" might be appropriate for a notification about
+new messages.</p>
+<p class="p">If a previous notification was sent with the same <span class="code">id</span>, it will be
+replaced with <span class="code">notification</span> and shown again as if it was a new
+notification. This works even for notifications sent from a previous
+execution of the application, as long as <span class="code">id</span> is the same string.</p>
+<p class="p"><span class="code">id</span> may be <span class="code">null</span>, but it is impossible to replace or withdraw
+notifications without an id.</p>
+<p class="p">If <span class="code">notification</span> is no longer relevant, it can be withdrawn with
+<span class="link"><a href="Gio.Application.withdraw_notification.html" title="Gio.Application.prototype.withdraw_notification">Gio.Application.prototype.withdraw_notification</a></span>.</p>
+<p class="p">Since 2.40</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">id</span></dt>
+<dd class="terms"><p class="p">id of the notification, or <span class="code">null</span></p></dd>
+<dt class="terms"><span class="code">notification</span></dt>
+<dd class="terms"><p class="p">the <span class="link"><a href="Gio.Notification.html" title="Gio.Notification">Gio.Notification</a></span> to send</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.Application.html" title="Gio.Application">Gio.Application</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

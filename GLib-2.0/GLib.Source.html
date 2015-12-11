@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.Source</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.Source</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const GLib = imports.gi.GLib;
+
+let source = new GLib.Source(source_funcs: GLib.SourceFuncs, struct_size: Number(guint));
+  </pre></div></div></div></div></div>
+<p class="p">The &lt;structname&gt;GSource&lt;/structname&gt; struct is an opaque data type
+representing an event source.</p>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
+<div class="region"><ul><li class="links "><a href="GLib.Source.new.html" title="GLib.Source.new">GLib.Source.new</a></li></ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="GLib.Source.add_child_source.html" title="GLib.Source.prototype.add_child_source">GLib.Source.prototype.add_child_source</a></li>
+<li class="links "><a href="GLib.Source.add_poll.html" title="GLib.Source.prototype.add_poll">GLib.Source.prototype.add_poll</a></li>
+<li class="links "><a href="GLib.Source.attach.html" title="GLib.Source.prototype.attach">GLib.Source.prototype.attach</a></li>
+<li class="links "><a href="GLib.Source.destroy.html" title="GLib.Source.prototype.destroy">GLib.Source.prototype.destroy</a></li>
+<li class="links "><a href="GLib.Source.get_can_recurse.html" title="GLib.Source.prototype.get_can_recurse">GLib.Source.prototype.get_can_recurse</a></li>
+<li class="links "><a href="GLib.Source.get_context.html" title="GLib.Source.prototype.get_context">GLib.Source.prototype.get_context</a></li>
+<li class="links "><a href="GLib.Source.get_current_time.html" title="GLib.Source.prototype.get_current_time">GLib.Source.prototype.get_current_time</a></li>
+<li class="links "><a href="GLib.Source.get_id.html" title="GLib.Source.prototype.get_id">GLib.Source.prototype.get_id</a></li>
+<li class="links "><a href="GLib.Source.get_name.html" title="GLib.Source.prototype.get_name">GLib.Source.prototype.get_name</a></li>
+<li class="links "><a href="GLib.Source.get_priority.html" title="GLib.Source.prototype.get_priority">GLib.Source.prototype.get_priority</a></li>
+<li class="links "><a href="GLib.Source.get_ready_time.html" title="GLib.Source.prototype.get_ready_time">GLib.Source.prototype.get_ready_time</a></li>
+<li class="links "><a href="GLib.Source.get_time.html" title="GLib.Source.prototype.get_time">GLib.Source.prototype.get_time</a></li>
+<li class="links "><a href="GLib.Source.is_destroyed.html" title="GLib.Source.prototype.is_destroyed">GLib.Source.prototype.is_destroyed</a></li>
+<li class="links "><a href="GLib.Source.modify_unix_fd.html" title="GLib.Source.prototype.modify_unix_fd">GLib.Source.prototype.modify_unix_fd</a></li>
+<li class="links "><a href="GLib.Source.query_unix_fd.html" title="GLib.Source.prototype.query_unix_fd">GLib.Source.prototype.query_unix_fd</a></li>
+<li class="links "><a href="GLib.Source.ref.html" title="GLib.Source.prototype.ref">GLib.Source.prototype.ref</a></li>
+<li class="links "><a href="GLib.Source.remove_child_source.html" title="GLib.Source.prototype.remove_child_source">GLib.Source.prototype.remove_child_source</a></li>
+<li class="links "><a href="GLib.Source.remove_poll.html" title="GLib.Source.prototype.remove_poll">GLib.Source.prototype.remove_poll</a></li>
+<li class="links "><a href="GLib.Source.remove_unix_fd.html" title="GLib.Source.prototype.remove_unix_fd">GLib.Source.prototype.remove_unix_fd</a></li>
+<li class="links "><a href="GLib.Source.set_callback.html" title="GLib.Source.prototype.set_callback">GLib.Source.prototype.set_callback</a></li>
+<li class="links "><a href="GLib.Source.set_callback_indirect.html" title="GLib.Source.prototype.set_callback_indirect">GLib.Source.prototype.set_callback_indirect</a></li>
+<li class="links "><a href="GLib.Source.set_can_recurse.html" title="GLib.Source.prototype.set_can_recurse">GLib.Source.prototype.set_can_recurse</a></li>
+<li class="links "><a href="GLib.Source.set_name.html" title="GLib.Source.prototype.set_name">GLib.Source.prototype.set_name</a></li>
+<li class="links "><a href="GLib.Source.set_priority.html" title="GLib.Source.prototype.set_priority">GLib.Source.prototype.set_priority</a></li>
+<li class="links "><a href="GLib.Source.set_ready_time.html" title="GLib.Source.prototype.set_ready_time">GLib.Source.prototype.set_ready_time</a></li>
+<li class="links "><a href="GLib.Source.unref.html" title="GLib.Source.prototype.unref">GLib.Source.prototype.unref</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Static Functions</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="GLib.Source.remove.html" title="GLib.Source.remove">GLib.Source.remove</a></li>
+<li class="links "><a href="GLib.Source.remove_by_user_data.html" title="GLib.Source.remove_by_user_data">GLib.Source.remove_by_user_data</a></li>
+<li class="links "><a href="GLib.Source.set_name_by_id.html" title="GLib.Source.set_name_by_id">GLib.Source.set_name_by_id</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="GLib">GLib</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

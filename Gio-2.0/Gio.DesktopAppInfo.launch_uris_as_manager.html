@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.DesktopAppInfo.prototype.launch_uris_as_manager</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.DesktopAppInfo.html" title="Gio.DesktopAppInfo">Gio.DesktopAppInfo</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.DesktopAppInfo.prototype.launch_uris_as_manager</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function launch_uris_as_manager(uris: Array(String), launch_context: <span class="link"><a href="Gio.AppLaunchContext.html" title="Gio.AppLaunchContext">Gio.AppLaunchContext</a></span>, spawn_flags: <span class="link"><a href="../GLib-2.0/GLib.SpawnFlags.html" title="../GLib-2.0/GLib.SpawnFlags.html">GLib.SpawnFlags</a></span>): Boolean {
+    // Gjs wrapper for g_desktop_app_info_launch_uris_as_manager()
+}
+  </pre></div></div></div></div></div>
+<p class="p">This function performs the equivalent of <span class="link"><a href="Gio.AppInfo.launch_uris.html" title="Gio.AppInfo.prototype.launch_uris">Gio.AppInfo.prototype.launch_uris</a></span>,
+but is intended primarily for operating system components that
+launch applications.  Ordinary applications should use
+<span class="link"><a href="Gio.AppInfo.launch_uris.html" title="Gio.AppInfo.prototype.launch_uris">Gio.AppInfo.prototype.launch_uris</a></span>.</p>
+<p class="p">If the application is launched via traditional UNIX fork()/exec()
+then <span class="code">spawn_flags</span>, <span class="code">user_setup</span> and <span class="code">user_setup_data</span> are used for the
+call to <span class="link"><a href="../GLib-2.0/GLib.spawn_async.html" title="../GLib-2.0/GLib.spawn_async.html">GLib.spawn_async</a></span>.  Additionally, <span class="code">pid_callback</span> (with
+<span class="code">pid_callback_data</span>) will be called to inform about the PID of the
+created process.</p>
+<p class="p">If application launching occurs via some other mechanism (eg: D-Bus
+activation) then <span class="code">spawn_flags</span>, <span class="code">user_setup</span>, <span class="code">user_setup_data</span>,
+<span class="code">pid_callback</span> and <span class="code">pid_callback_data</span> are ignored.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">uris</span></dt>
+<dd class="terms"><p class="p">List of URIs</p></dd>
+<dt class="terms"><span class="code">launch_context</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="Gio.AppLaunchContext.html" title="Gio.AppLaunchContext">Gio.AppLaunchContext</a></span></p></dd>
+<dt class="terms"><span class="code">spawn_flags</span></dt>
+<dd class="terms"><p class="p"><span class="link"><a href="../GLib-2.0/GLib.SpawnFlags.html" title="../GLib-2.0/GLib.SpawnFlags.html">GLib.SpawnFlags</a></span>, used for each process</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> on successful launch, <span class="code">false</span> otherwise.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.DesktopAppInfo.html" title="Gio.DesktopAppInfo">Gio.DesktopAppInfo</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

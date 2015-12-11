@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.DBusObjectManagerClient</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.DBusObjectManagerClient</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
+
+let dBusObjectManagerClient = new Gio.DBusObjectManagerClient({
+    <span class="link"><a href="Gio.DBusObjectManagerClient-bus-type.html" title="Gio.DBusObjectManagerClient.bus_type">bus_type</a></span>: value,
+    <span class="link"><a href="Gio.DBusObjectManagerClient-connection.html" title="Gio.DBusObjectManagerClient.connection">connection</a></span>: value,
+    <span class="link"><a href="Gio.DBusObjectManagerClient-flags.html" title="Gio.DBusObjectManagerClient.flags">flags</a></span>: value,
+    <span class="link"><a href="Gio.DBusObjectManagerClient-get-proxy-type-destroy-notify.html" title="Gio.DBusObjectManagerClient.get_proxy_type_destroy_notify">get_proxy_type_destroy_notify</a></span>: value,
+    <span class="link"><a href="Gio.DBusObjectManagerClient-get-proxy-type-func.html" title="Gio.DBusObjectManagerClient.get_proxy_type_func">get_proxy_type_func</a></span>: value,
+    <span class="link"><a href="Gio.DBusObjectManagerClient-get-proxy-type-user-data.html" title="Gio.DBusObjectManagerClient.get_proxy_type_user_data">get_proxy_type_user_data</a></span>: value,
+    <span class="link"><a href="Gio.DBusObjectManagerClient-name.html" title="Gio.DBusObjectManagerClient.name">name</a></span>: value,
+    <span class="link"><a href="Gio.DBusObjectManagerClient-object-path.html" title="Gio.DBusObjectManagerClient.object_path">object_path</a></span>: value,
+});
+  </pre></div></div></div></div></div>
+<p class="p"><span class="link"><a href="Gio.DBusObjectManagerClient.html" title="Gio.DBusObjectManagerClient">Gio.DBusObjectManagerClient</a></span> is used to create, monitor and delete object
+proxies for remote objects exported by a <span class="link"><a href="Gio.DBusObjectManagerServer.html" title="Gio.DBusObjectManagerServer">Gio.DBusObjectManagerServer</a></span> (or any
+code implementing the
+[org.freedesktop.DBus.ObjectManager](http://dbus.freedesktop.org/doc/dbus-specification.html#standard-interfaces-objectmanager)
+interface).</p>
+<p class="p">Once an instance of this type has been created, you can connect to
+the <span class="link"><a href="Gio.DBusObjectManager-object-added.html" title="Gio.DBusObjectManager::object-added">Gio.DBusObjectManager::object-added</a></span> and
+<span class="link"><a href="Gio.DBusObjectManager-object-removed.html" title="Gio.DBusObjectManager::object-removed">Gio.DBusObjectManager::object-removed</a></span> signals and inspect the
+<span class="link"><a href="Gio.DBusObjectProxy.html" title="Gio.DBusObjectProxy">Gio.DBusObjectProxy</a></span> objects returned by
+<span class="link"><a href="Gio.DBusObjectManager.get_objects.html" title="Gio.DBusObjectManager.prototype.get_objects">Gio.DBusObjectManager.prototype.get_objects</a></span>.</p>
+<p class="p">If the name for a <span class="link"><a href="Gio.DBusObjectManagerClient.html" title="Gio.DBusObjectManagerClient">Gio.DBusObjectManagerClient</a></span> is not owned by anyone at
+object construction time, the default behavior is to request the
+message bus to launch an owner for the name. This behavior can be
+disabled using the <span class="link"><a href="Gio.DBusObjectManagerClientFlags.html" title="Gio.DBusObjectManagerClientFlags">Gio.DBusObjectManagerClientFlags</a></span>.do_not_auto_start
+flag. It's also worth noting that this only works if the name of
+interest is activatable in the first place. E.g. in some cases it
+is not possible to launch an owner for the requested name. In this
+case, <span class="link"><a href="Gio.DBusObjectManagerClient.html" title="Gio.DBusObjectManagerClient">Gio.DBusObjectManagerClient</a></span> object construction still succeeds but
+there will be no object proxies
+(e.g. <span class="link"><a href="Gio.DBusObjectManager.get_objects.html" title="Gio.DBusObjectManager.prototype.get_objects">Gio.DBusObjectManager.prototype.get_objects</a></span> returns the empty list) and
+the <span class="link"><a href="Gio.DBusObjectManagerClient-name-owner.html" title="Gio.DBusObjectManagerClient.name_owner">Gio.DBusObjectManagerClient.name_owner</a></span> property is <span class="code">null</span>.</p>
+<p class="p">The owner of the requested name can come and go (for example
+consider a system service being restarted) – <span class="link"><a href="Gio.DBusObjectManagerClient.html" title="Gio.DBusObjectManagerClient">Gio.DBusObjectManagerClient</a></span>
+handles this case too; simply connect to the <span class="link"><a href="../GObject-2.0/GObject.Object-notify.html" title="../GObject-2.0/GObject.Object-notify.html">GObject.Object::notify</a></span>
+signal to watch for changes on the <span class="link"><a href="Gio.DBusObjectManagerClient-name-owner.html" title="Gio.DBusObjectManagerClient.name_owner">Gio.DBusObjectManagerClient.name_owner</a></span>
+property. When the name owner vanishes, the behavior is that
+<span class="link"><a href="Gio.DBusObjectManagerClient-name-owner.html" title="Gio.DBusObjectManagerClient.name_owner">Gio.DBusObjectManagerClient.name_owner</a></span> is set to <span class="code">null</span> (this includes
+emission of the <span class="link"><a href="../GObject-2.0/GObject.Object-notify.html" title="../GObject-2.0/GObject.Object-notify.html">GObject.Object::notify</a></span> signal) and then
+<span class="link"><a href="Gio.DBusObjectManager-object-removed.html" title="Gio.DBusObjectManager::object-removed">Gio.DBusObjectManager::object-removed</a></span> signals are synthesized
+for all currently existing object proxies. Since
+<span class="link"><a href="Gio.DBusObjectManagerClient-name-owner.html" title="Gio.DBusObjectManagerClient.name_owner">Gio.DBusObjectManagerClient.name_owner</a></span> is <span class="code">null</span> when this happens, you can
+use this information to disambiguate a synthesized signal from a
+genuine signal caused by object removal on the remote
+<span class="link"><a href="Gio.DBusObjectManager.html" title="Gio.DBusObjectManager">Gio.DBusObjectManager</a></span>. Similarly, when a new name owner appears,
+<span class="link"><a href="Gio.DBusObjectManager-object-added.html" title="Gio.DBusObjectManager::object-added">Gio.DBusObjectManager::object-added</a></span> signals are synthesized
+while <span class="link"><a href="Gio.DBusObjectManagerClient-name-owner.html" title="Gio.DBusObjectManagerClient.name_owner">Gio.DBusObjectManagerClient.name_owner</a></span> is still <span class="code">null</span>. Only when all
+object proxies have been added, the <span class="link"><a href="Gio.DBusObjectManagerClient-name-owner.html" title="Gio.DBusObjectManagerClient.name_owner">Gio.DBusObjectManagerClient.name_owner</a></span>
+is set to the new name owner (this includes emission of the
+<span class="link"><a href="../GObject-2.0/GObject.Object-notify.html" title="../GObject-2.0/GObject.Object-notify.html">GObject.Object::notify</a></span> signal).  Furthermore, you are guaranteed that
+<span class="link"><a href="Gio.DBusObjectManagerClient-name-owner.html" title="Gio.DBusObjectManagerClient.name_owner">Gio.DBusObjectManagerClient.name_owner</a></span> will alternate between a name owner
+(e.g. `:1.42`) and <span class="code">null</span> even in the case where
+the name of interest is atomically replaced</p>
+<p class="p">Ultimately, <span class="link"><a href="Gio.DBusObjectManagerClient.html" title="Gio.DBusObjectManagerClient">Gio.DBusObjectManagerClient</a></span> is used to obtain <span class="link"><a href="Gio.DBusProxy.html" title="Gio.DBusProxy">Gio.DBusProxy</a></span>
+instances. All signals (including the
+org.freedesktop.DBus.Properties::PropertiesChanged signal)
+delivered to <span class="link"><a href="Gio.DBusProxy.html" title="Gio.DBusProxy">Gio.DBusProxy</a></span> instances are guaranteed to originate
+from the name owner. This guarantee along with the behavior
+described above, means that certain race conditions including the
+"half the proxy is from the old owner and the other half is from
+the new owner" problem cannot happen.</p>
+<p class="p">To avoid having the application connect to signals on the returned
+<span class="link"><a href="Gio.DBusObjectProxy.html" title="Gio.DBusObjectProxy">Gio.DBusObjectProxy</a></span> and <span class="link"><a href="Gio.DBusProxy.html" title="Gio.DBusProxy">Gio.DBusProxy</a></span> objects, the
+<span class="link"><a href="Gio.DBusObject-interface-added.html" title="Gio.DBusObject::interface-added">Gio.DBusObject::interface-added</a></span>,
+<span class="link"><a href="Gio.DBusObject-interface-removed.html" title="Gio.DBusObject::interface-removed">Gio.DBusObject::interface-removed</a></span>,
+<span class="link"><a href="Gio.DBusProxy-g-properties-changed.html" title="Gio.DBusProxy::g-properties-changed">Gio.DBusProxy::g-properties-changed</a></span> and
+<span class="link"><a href="Gio.DBusProxy-g-signal.html" title="Gio.DBusProxy::g-signal">Gio.DBusProxy::g-signal</a></span> signals
+are also emitted on the <span class="link"><a href="Gio.DBusObjectManagerClient.html" title="Gio.DBusObjectManagerClient">Gio.DBusObjectManagerClient</a></span> instance managing these
+objects. The signals emitted are
+<span class="link"><a href="Gio.DBusObjectManager-interface-added.html" title="Gio.DBusObjectManager::interface-added">Gio.DBusObjectManager::interface-added</a></span>,
+<span class="link"><a href="Gio.DBusObjectManager-interface-removed.html" title="Gio.DBusObjectManager::interface-removed">Gio.DBusObjectManager::interface-removed</a></span>,
+<span class="link"><a href="Gio.DBusObjectManagerClient-interface-proxy-properties-changed.html" title="Gio.DBusObjectManagerClient::interface-proxy-properties-changed">Gio.DBusObjectManagerClient::interface-proxy-properties-changed</a></span> and
+<span class="link"><a href="Gio.DBusObjectManagerClient-interface-proxy-signal.html" title="Gio.DBusObjectManagerClient::interface-proxy-signal">Gio.DBusObjectManagerClient::interface-proxy-signal</a></span>.</p>
+<p class="p">Note that all callbacks and signals are emitted in the
+[thread-default main context][g-main-context-push-thread-default]
+that the <span class="link"><a href="Gio.DBusObjectManagerClient.html" title="Gio.DBusObjectManagerClient">Gio.DBusObjectManagerClient</a></span> object was constructed
+in. Additionally, the <span class="link"><a href="Gio.DBusObjectProxy.html" title="Gio.DBusObjectProxy">Gio.DBusObjectProxy</a></span> and <span class="link"><a href="Gio.DBusProxy.html" title="Gio.DBusProxy">Gio.DBusProxy</a></span> objects
+originating from the <span class="link"><a href="Gio.DBusObjectManagerClient.html" title="Gio.DBusObjectManagerClient">Gio.DBusObjectManagerClient</a></span> object will be created in
+the same context and, consequently, will deliver signals in the
+same main loop.</p>
+<p class="p">Since 2.30</p>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
+<div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
+<div>
+        <span class="code">GObject.Object</span>
+      
+      </div>
+<ul class="tree"><li class="tree"><div>
+        <span class="code">Gio.DBusObjectManagerClient</span>
+      </div></li></ul>
+</li></ul></div></div></div></div></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.DBusObjectManagerClient.new_finish.html" title="Gio.DBusObjectManagerClient.new_finish">Gio.DBusObjectManagerClient.new_finish</a></li>
+<li class="links "><a href="Gio.DBusObjectManagerClient.new_for_bus_finish.html" title="Gio.DBusObjectManagerClient.new_for_bus_finish">Gio.DBusObjectManagerClient.new_for_bus_finish</a></li>
+<li class="links "><a href="Gio.DBusObjectManagerClient.new_for_bus_sync.html" title="Gio.DBusObjectManagerClient.new_for_bus_sync">Gio.DBusObjectManagerClient.new_for_bus_sync</a></li>
+<li class="links "><a href="Gio.DBusObjectManagerClient.new_sync.html" title="Gio.DBusObjectManagerClient.new_sync">Gio.DBusObjectManagerClient.new_sync</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.DBusObjectManagerClient.get_connection.html" title="Gio.DBusObjectManagerClient.prototype.get_connection">Gio.DBusObjectManagerClient.prototype.get_connection</a></li>
+<li class="links "><a href="Gio.DBusObjectManagerClient.get_flags.html" title="Gio.DBusObjectManagerClient.prototype.get_flags">Gio.DBusObjectManagerClient.prototype.get_flags</a></li>
+<li class="links "><a href="Gio.DBusObjectManagerClient.get_name.html" title="Gio.DBusObjectManagerClient.prototype.get_name">Gio.DBusObjectManagerClient.prototype.get_name</a></li>
+<li class="links "><a href="Gio.DBusObjectManagerClient.get_name_owner.html" title="Gio.DBusObjectManagerClient.prototype.get_name_owner">Gio.DBusObjectManagerClient.prototype.get_name_owner</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Static Functions</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.DBusObjectManagerClient.new.html" title="Gio.DBusObjectManagerClient.new">Gio.DBusObjectManagerClient.new</a></li>
+<li class="links "><a href="Gio.DBusObjectManagerClient.new_for_bus.html" title="Gio.DBusObjectManagerClient.new_for_bus">Gio.DBusObjectManagerClient.new_for_bus</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Properties</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.DBusObjectManagerClient-bus-type.html" title="Gio.DBusObjectManagerClient.bus_type">bus-type</a></li>
+<li class="links "><a href="Gio.DBusObjectManagerClient-connection.html" title="Gio.DBusObjectManagerClient.connection">connection</a></li>
+<li class="links "><a href="Gio.DBusObjectManagerClient-flags.html" title="Gio.DBusObjectManagerClient.flags">flags</a></li>
+<li class="links "><a href="Gio.DBusObjectManagerClient-get-proxy-type-destroy-notify.html" title="Gio.DBusObjectManagerClient.get_proxy_type_destroy_notify">get-proxy-type-destroy-notify</a></li>
+<li class="links "><a href="Gio.DBusObjectManagerClient-get-proxy-type-func.html" title="Gio.DBusObjectManagerClient.get_proxy_type_func">get-proxy-type-func</a></li>
+<li class="links "><a href="Gio.DBusObjectManagerClient-get-proxy-type-user-data.html" title="Gio.DBusObjectManagerClient.get_proxy_type_user_data">get-proxy-type-user-data</a></li>
+<li class="links "><a href="Gio.DBusObjectManagerClient-name.html" title="Gio.DBusObjectManagerClient.name">name</a></li>
+<li class="links "><a href="Gio.DBusObjectManagerClient-name-owner.html" title="Gio.DBusObjectManagerClient.name_owner">name-owner</a></li>
+<li class="links "><a href="Gio.DBusObjectManagerClient-object-path.html" title="Gio.DBusObjectManagerClient.object_path">object-path</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Signals</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.DBusObjectManagerClient-interface-proxy-properties-changed.html" title="Gio.DBusObjectManagerClient::interface-proxy-properties-changed">interface-proxy-properties-changed</a></li>
+<li class="links "><a href="Gio.DBusObjectManagerClient-interface-proxy-signal.html" title="Gio.DBusObjectManagerClient::interface-proxy-signal">interface-proxy-signal</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Virtual functions</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.DBusObjectManagerClient-interface_proxy_properties_changed.html" title="Gio.DBusObjectManagerClient::interface_proxy_properties_changed">Gio.DBusObjectManagerClient::interface_proxy_properties_changed</a></li>
+<li class="links "><a href="Gio.DBusObjectManagerClient-interface_proxy_signal.html" title="Gio.DBusObjectManagerClient::interface_proxy_signal">Gio.DBusObjectManagerClient::interface_proxy_signal</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gio">Gio</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

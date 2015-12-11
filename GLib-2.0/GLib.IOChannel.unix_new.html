@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.IOChannel.unix_new</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » <a class="trail" href="GLib.IOChannel.html" title="GLib.IOChannel">GLib.IOChannel</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.IOChannel.unix_new</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function unix_new(fd: Number(gint)): <span class="link"><a href="GLib.IOChannel.html" title="GLib.IOChannel">GLib.IOChannel</a></span> {
+    // Gjs wrapper for g_io_channel_unix_new()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Creates a new <span class="link"><a href="GLib.IOChannel.html" title="GLib.IOChannel">GLib.IOChannel</a></span> given a file descriptor. On UNIX systems
+this works for plain files, pipes, and sockets.</p>
+<p class="p">The returned <span class="link"><a href="GLib.IOChannel.html" title="GLib.IOChannel">GLib.IOChannel</a></span> has a reference count of 1.</p>
+<p class="p">The default encoding for <span class="link"><a href="GLib.IOChannel.html" title="GLib.IOChannel">GLib.IOChannel</a></span> is UTF-8. If your application
+is reading output from a command using via pipe, you may need to set
+the encoding to the encoding of the current locale (see
+<span class="link"><a href="GLib.get_charset.html" title="GLib.get_charset">GLib.get_charset</a></span>) with the <span class="link"><a href="GLib.IOChannel.set_encoding.html" title="GLib.IOChannel.prototype.set_encoding">GLib.IOChannel.prototype.set_encoding</a></span> function.</p>
+<p class="p">If you want to read raw binary data without interpretation, then
+call the <span class="link"><a href="GLib.IOChannel.set_encoding.html" title="GLib.IOChannel.prototype.set_encoding">GLib.IOChannel.prototype.set_encoding</a></span> function with <span class="code">null</span> for the
+encoding argument.</p>
+<p class="p">This function is available in GLib on Windows, too, but you should
+avoid using it on Windows. The domain of file descriptors and
+sockets overlap. There is no way for GLib to know which one you mean
+in case the argument you pass to this function happens to be both a
+valid file descriptor and socket. If that happens a warning is
+issued, and GLib assumes that it is the file descriptor you mean.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">fd</span></dt>
+<dd class="terms"><p class="p">a file descriptor.</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">a new <span class="link"><a href="GLib.IOChannel.html" title="GLib.IOChannel">GLib.IOChannel</a></span>.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="GLib.IOChannel.html" title="GLib.IOChannel">GLib.IOChannel</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

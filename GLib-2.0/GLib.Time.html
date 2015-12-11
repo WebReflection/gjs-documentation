@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.Time</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.Time</span></h1></div>
+<div class="region">
+<div class="contents">
+<p class="p">Simply a replacement for time_t. It has been deprecated
+since it is not equivalent to time_t on 64-bit platforms
+with a 64-bit time_t. Unrelated to <span class="link"><a href="GLib.Timer.html" title="GLib.Timer">GLib.Timer</a></span>.</p>
+<p class="p">Note that <span class="link"><a href="GLib.Time.html" title="GLib.Time">GLib.Time</a></span> is defined to always be a 32-bit integer,
+unlike time_t which may be 64-bit on some systems. Therefore,
+<span class="link"><a href="GLib.Time.html" title="GLib.Time">GLib.Time</a></span> will overflow in the year 2038, and you cannot use the
+address of a <span class="link"><a href="GLib.Time.html" title="GLib.Time">GLib.Time</a></span> variable as argument to the UNIX time()
+function.</p>
+<p class="p">Instead, do the following:
+|[&lt;!-- language="C" --&gt;
+time_t ttime;
+GTime gtime;</p>
+<p class="p">time (&amp;ttime);
+gtime = (GTime)ttime;
+]|</p>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="GLib">GLib</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

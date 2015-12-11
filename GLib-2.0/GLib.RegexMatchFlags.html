@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.RegexMatchFlags</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.RegexMatchFlags</span></h1></div>
+<div class="region">
+<div class="contents">
+<p class="p">Flags specifying match-time options.</p>
+<p class="p">Since 2.14</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">RegexMatchFlags.ANCHORED</span></dt>
+<dd class="terms"><p class="p">The pattern is forced to be "anchored", that is,
+    it is constrained to match only at the first matching point in the
+    string that is being searched. This effect can also be achieved by
+    appropriate constructs in the pattern itself such as the "^"
+    metacharater.</p></dd>
+<dt class="terms"><span class="code">RegexMatchFlags.NOTBOL</span></dt>
+<dd class="terms"><p class="p">Specifies that first character of the string is
+    not the beginning of a line, so the circumflex metacharacter should
+    not match before it. Setting this without #G_REGEX_MULTILINE (at
+    compile time) causes circumflex never to match. This option affects
+    only the behaviour of the circumflex metacharacter, it does not
+    affect "\A".</p></dd>
+<dt class="terms"><span class="code">RegexMatchFlags.NOTEOL</span></dt>
+<dd class="terms"><p class="p">Specifies that the end of the subject string is
+    not the end of a line, so the dollar metacharacter should not match
+    it nor (except in multiline mode) a newline immediately before it.
+    Setting this without #G_REGEX_MULTILINE (at compile time) causes
+    dollar never to match. This option affects only the behaviour of
+    the dollar metacharacter, it does not affect "\Z" or "\z".</p></dd>
+<dt class="terms"><span class="code">RegexMatchFlags.NOTEMPTY</span></dt>
+<dd class="terms"><p class="p">An empty string is not considered to be a valid
+    match if this option is set. If there are alternatives in the pattern,
+    they are tried. If all the alternatives match the empty string, the
+    entire match fails. For example, if the pattern "a?b?" is applied to
+    a string not beginning with "a" or "b", it matches the empty string
+    at the start of the string. With this flag set, this match is not
+    valid, so GRegex searches further into the string for occurrences
+    of "a" or "b".</p></dd>
+<dt class="terms"><span class="code">RegexMatchFlags.PARTIAL</span></dt>
+<dd class="terms"><p class="p">Turns on the partial matching feature, for more
+    documentation on partial matching see <span class="link"><a href="GLib.MatchInfo.is_partial_match.html" title="GLib.MatchInfo.prototype.is_partial_match">GLib.MatchInfo.prototype.is_partial_match</a></span>.</p></dd>
+<dt class="terms"><span class="code">RegexMatchFlags.NEWLINE_CR</span></dt>
+<dd class="terms"><p class="p">Overrides the newline definition set when
+    creating a new <span class="link"><a href="GLib.Regex.html" title="GLib.Regex">GLib.Regex</a></span>, setting the '\r' character as line terminator.</p></dd>
+<dt class="terms"><span class="code">RegexMatchFlags.NEWLINE_LF</span></dt>
+<dd class="terms"><p class="p">Overrides the newline definition set when
+    creating a new <span class="link"><a href="GLib.Regex.html" title="GLib.Regex">GLib.Regex</a></span>, setting the '\n' character as line terminator.</p></dd>
+<dt class="terms"><span class="code">RegexMatchFlags.NEWLINE_CRLF</span></dt>
+<dd class="terms"><p class="p">Overrides the newline definition set when
+    creating a new <span class="link"><a href="GLib.Regex.html" title="GLib.Regex">GLib.Regex</a></span>, setting the '\r\n' characters sequence as line terminator.</p></dd>
+<dt class="terms"><span class="code">RegexMatchFlags.NEWLINE_ANY</span></dt>
+<dd class="terms"><p class="p">Overrides the newline definition set when
+    creating a new <span class="link"><a href="GLib.Regex.html" title="GLib.Regex">GLib.Regex</a></span>, any Unicode newline sequence
+    is recognised as a newline. These are '\r', '\n' and '\rn', and the
+    single characters U+000B LINE TABULATION, U+000C FORM FEED (FF),
+    U+0085 NEXT LINE (NEL), U+2028 LINE SEPARATOR and
+    U+2029 PARAGRAPH SEPARATOR.</p></dd>
+<dt class="terms"><span class="code">RegexMatchFlags.NEWLINE_ANYCRLF</span></dt>
+<dd class="terms"><p class="p">Overrides the newline definition set when
+    creating a new <span class="link"><a href="GLib.Regex.html" title="GLib.Regex">GLib.Regex</a></span>; any '\r', '\n', or '\r\n' character sequence
+    is recognized as a newline. Since: 2.34</p></dd>
+<dt class="terms"><span class="code">RegexMatchFlags.BSR_ANYCRLF</span></dt>
+<dd class="terms"><p class="p">Overrides the newline definition for "\R" set when
+    creating a new <span class="link"><a href="GLib.Regex.html" title="GLib.Regex">GLib.Regex</a></span>; only '\r', '\n', or '\r\n' character sequences
+    are recognized as a newline by "\R". Since: 2.34</p></dd>
+<dt class="terms"><span class="code">RegexMatchFlags.BSR_ANY</span></dt>
+<dd class="terms"><p class="p">Overrides the newline definition for "\R" set when
+    creating a new <span class="link"><a href="GLib.Regex.html" title="GLib.Regex">GLib.Regex</a></span>; any Unicode newline character or character sequence
+    are recognized as a newline by "\R". These are '\r', '\n' and '\rn', and the
+    single characters U+000B LINE TABULATION, U+000C FORM FEED (FF),
+    U+0085 NEXT LINE (NEL), U+2028 LINE SEPARATOR and
+    U+2029 PARAGRAPH SEPARATOR. Since: 2.34</p></dd>
+<dt class="terms"><span class="code">RegexMatchFlags.PARTIAL_SOFT</span></dt>
+<dd class="terms"><p class="p">An alias for #G_REGEX_MATCH_PARTIAL. Since: 2.34</p></dd>
+<dt class="terms"><span class="code">RegexMatchFlags.PARTIAL_HARD</span></dt>
+<dd class="terms"><p class="p">Turns on the partial matching feature. In contrast to
+    to #G_REGEX_MATCH_PARTIAL_SOFT, this stops matching as soon as a partial match
+    is found, without continuing to search for a possible complete match. See
+    <span class="link"><a href="GLib.MatchInfo.is_partial_match.html" title="GLib.MatchInfo.prototype.is_partial_match">GLib.MatchInfo.prototype.is_partial_match</a></span> for more information. Since: 2.34</p></dd>
+<dt class="terms"><span class="code">RegexMatchFlags.NOTEMPTY_ATSTART</span></dt>
+<dd class="terms"><p class="p">Like #G_REGEX_MATCH_NOTEMPTY, but only applied to
+    the start of the matched string. For anchored
+    patterns this can only happen for pattern containing "\K". Since: 2.34</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="GLib">GLib</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.TestDBus</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.TestDBus</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
+
+let testDBus = new Gio.TestDBus({
+    <span class="link"><a href="Gio.TestDBus-flags.html" title="Gio.TestDBus.flags">flags</a></span>: value,
+});
+  </pre></div></div></div></div></div>
+<p class="p">A helper class for testing code which uses D-Bus without touching the user's
+session bus.</p>
+<p class="p">Note that <span class="link"><a href="Gio.TestDBus.html" title="Gio.TestDBus">Gio.TestDBus</a></span> modifies the user’s environment, calling setenv().
+This is not thread-safe, so all <span class="link"><a href="Gio.TestDBus.html" title="Gio.TestDBus">Gio.TestDBus</a></span> calls should be completed before
+threads are spawned, or should have appropriate locking to ensure no access
+conflicts to environment variables shared between <span class="link"><a href="Gio.TestDBus.html" title="Gio.TestDBus">Gio.TestDBus</a></span> and other
+threads.</p>
+<p class="p">## Creating unit tests using GTestDBus</p>
+<p class="p">Testing of D-Bus services can be tricky because normally we only ever run
+D-Bus services over an existing instance of the D-Bus daemon thus we
+usually don't activate D-Bus services that are not yet installed into the
+target system. The <span class="link"><a href="Gio.TestDBus.html" title="Gio.TestDBus">Gio.TestDBus</a></span> object makes this easier for us by taking care
+of the lower level tasks such as running a private D-Bus daemon and looking
+up uninstalled services in customizable locations, typically in your source
+code tree.</p>
+<p class="p">The first thing you will need is a separate service description file for the
+D-Bus daemon. Typically a `services` subdirectory of your `tests` directory
+is a good place to put this file.</p>
+<p class="p">The service file should list your service along with an absolute path to the
+uninstalled service executable in your source tree. Using autotools we would
+achieve this by adding a file such as `my-server.service.in` in the services
+directory and have it processed by configure.
+|[
+    [D-BUS Service]
+    Name=org.gtk.GDBus.Examples.ObjectManager
+    Exec=@abs_top_builddir@/gio/tests/gdbus-example-objectmanager-server
+]|
+You will also need to indicate this service directory in your test
+fixtures, so you will need to pass the path while compiling your
+test cases. Typically this is done with autotools with an added
+preprocessor flag specified to compile your tests such as:
+|[
+    -DTEST_SERVICES=\""$(abs_top_builddir)/tests/services"\"
+]|
+    Once you have a service definition file which is local to your source tree,
+you can proceed to set up a GTest fixture using the <span class="link"><a href="Gio.TestDBus.html" title="Gio.TestDBus">Gio.TestDBus</a></span> scaffolding.</p>
+<p class="p">An example of a test fixture for D-Bus services can be found
+here:
+[gdbus-test-fixture.c](https://git.gnome.org/browse/glib/tree/gio/tests/gdbus-test-fixture.c)</p>
+<p class="p">Note that these examples only deal with isolating the D-Bus aspect of your
+service. To successfully run isolated unit tests on your service you may need
+some additional modifications to your test case fixture. For example; if your
+service uses GSettings and installs a schema then it is important that your test service
+not load the schema in the ordinary installed location (chances are that your service
+and schema files are not yet installed, or worse; there is an older version of the
+schema file sitting in the install location).</p>
+<p class="p">Most of the time we can work around these obstacles using the
+environment. Since the environment is inherited by the D-Bus daemon
+created by <span class="link"><a href="Gio.TestDBus.html" title="Gio.TestDBus">Gio.TestDBus</a></span> and then in turn inherited by any services the
+D-Bus daemon activates, using the setup routine for your fixture is
+a practical place to help sandbox your runtime environment. For the
+rather typical GSettings case we can work around this by setting
+`GSETTINGS_SCHEMA_DIR` to the in tree directory holding your schemas
+in the above fixture_setup() routine.</p>
+<p class="p">The GSettings schemas need to be locally pre-compiled for this to work. This can be achieved
+by compiling the schemas locally as a step before running test cases, an autotools setup might
+do the following in the directory holding schemas:
+|[
+    all-am:
+            $(GLIB_COMPILE_SCHEMAS) .</p>
+<p class="p">    CLEANFILES += gschemas.compiled
+]|</p>
+<p class="p">Since 2.34</p>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
+<div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
+<div>
+        <span class="code">GObject.Object</span>
+      
+      </div>
+<ul class="tree"><li class="tree"><div>
+        <span class="code">Gio.TestDBus</span>
+      </div></li></ul>
+</li></ul></div></div></div></div></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.TestDBus.new.html" title="Gio.TestDBus.new">Gio.TestDBus.new</a></li></ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.TestDBus.add_service_dir.html" title="Gio.TestDBus.prototype.add_service_dir">Gio.TestDBus.prototype.add_service_dir</a></li>
+<li class="links "><a href="Gio.TestDBus.down.html" title="Gio.TestDBus.prototype.down">Gio.TestDBus.prototype.down</a></li>
+<li class="links "><a href="Gio.TestDBus.get_bus_address.html" title="Gio.TestDBus.prototype.get_bus_address">Gio.TestDBus.prototype.get_bus_address</a></li>
+<li class="links "><a href="Gio.TestDBus.get_flags.html" title="Gio.TestDBus.prototype.get_flags">Gio.TestDBus.prototype.get_flags</a></li>
+<li class="links "><a href="Gio.TestDBus.stop.html" title="Gio.TestDBus.prototype.stop">Gio.TestDBus.prototype.stop</a></li>
+<li class="links "><a href="Gio.TestDBus.up.html" title="Gio.TestDBus.prototype.up">Gio.TestDBus.prototype.up</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Static Functions</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.TestDBus.unset.html" title="Gio.TestDBus.unset">Gio.TestDBus.unset</a></li></ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Properties</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.TestDBus-flags.html" title="Gio.TestDBus.flags">flags</a></li></ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gio">Gio</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

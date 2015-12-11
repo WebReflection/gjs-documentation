@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.TimeZone.prototype.find_interval</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » <a class="trail" href="GLib.TimeZone.html" title="GLib.TimeZone">GLib.TimeZone</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.TimeZone.prototype.find_interval</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function find_interval(type: <span class="link"><a href="GLib.TimeType.html" title="GLib.TimeType">GLib.TimeType</a></span>, time_: Number(gint64)): Number(gint) {
+    // Gjs wrapper for g_time_zone_find_interval()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Finds an the interval within <span class="code">tz</span> that corresponds to the given <span class="code">time_</span>.
+The meaning of <span class="code">time_</span> depends on <span class="code">type</span>.</p>
+<p class="p">If <span class="code">type</span> is <span class="link"><a href="GLib.TimeType.html" title="GLib.TimeType">GLib.TimeType</a></span>.universal then this function will always
+succeed (since universal time is monotonic and continuous).</p>
+<p class="p">Otherwise <span class="code">time_</span> is treated is local time.  The distinction between
+<span class="link"><a href="GLib.TimeType.html" title="GLib.TimeType">GLib.TimeType</a></span>.standard and <span class="link"><a href="GLib.TimeType.html" title="GLib.TimeType">GLib.TimeType</a></span>.daylight is ignored except in
+the case that the given <span class="code">time_</span> is ambiguous.  In Toronto, for example,
+01:30 on November 7th 2010 occurred twice (once inside of daylight
+savings time and the next, an hour later, outside of daylight savings
+time).  In this case, the different value of <span class="code">type</span> would result in a
+different interval being returned.</p>
+<p class="p">It is still possible for this function to fail.  In Toronto, for
+example, 02:00 on March 14th 2010 does not exist (due to the leap
+forward to begin daylight savings time).  -1 is returned in that
+case.</p>
+<p class="p">Since 2.26</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">type</span></dt>
+<dd class="terms"><p class="p">the <span class="link"><a href="GLib.TimeType.html" title="GLib.TimeType">GLib.TimeType</a></span> of <span class="code">time_</span></p></dd>
+<dt class="terms"><span class="code">time_</span></dt>
+<dd class="terms"><p class="p">a number of seconds since January 1, 1970</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">the interval containing <span class="code">time_</span>, or -1 in case of failure</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="GLib.TimeZone.html" title="GLib.TimeZone">GLib.TimeZone</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.MatchInfo.prototype.expand_references</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » <a class="trail" href="GLib.MatchInfo.html" title="GLib.MatchInfo">GLib.MatchInfo</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.MatchInfo.prototype.expand_references</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function expand_references(string_to_expand: String): String {
+    // Gjs wrapper for g_match_info_expand_references()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Returns a new string containing the text in <span class="code">string_to_expand</span> with
+references and escape sequences expanded. References refer to the last
+match done with @string against @regex and have the same syntax used by
+<span class="link"><a href="GLib.Regex.replace.html" title="GLib.Regex.prototype.replace">GLib.Regex.prototype.replace</a></span>.</p>
+<p class="p">The <span class="code">string_to_expand</span> must be UTF-8 encoded even if #G_REGEX_RAW was
+passed to <span class="link"><a href="GLib.Regex.new.html" title="GLib.Regex.new">GLib.Regex.new</a></span>.</p>
+<p class="p">The backreferences are extracted from the string passed to the match
+function, so you cannot call this function after freeing the string.</p>
+<p class="p"><span class="code">match_info</span> may be <span class="code">null</span> in which case <span class="code">string_to_expand</span> must not
+contain references. For instance "foo\n" does not refer to an actual
+pattern and '\n' merely will be replaced with \n character,
+while to expand "\0" (whole match) one needs the result of a match.
+Use <span class="link"><a href="GLib.regex_check_replacement.html" title="GLib.regex_check_replacement">GLib.regex_check_replacement</a></span> to find out whether <span class="code">string_to_expand</span>
+contains references.</p>
+<p class="p">Since 2.14</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">string_to_expand</span></dt>
+<dd class="terms"><p class="p">the string to expand</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">the expanded string, or <span class="code">null</span> if an error occurred</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="GLib.MatchInfo.html" title="GLib.MatchInfo">GLib.MatchInfo</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>
