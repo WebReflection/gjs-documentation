@@ -67,14 +67,7 @@ pages:
 	git pull --rebase
 	mkdir -p ~/tmp-gjs-documentation
 	cp -r ./html/* ~/tmp-gjs-documentation
-	if [ ! -f ~/tmp-gjs-documentation/index.html ]; then
-		INDEX_HTML='<!DOCTYPE html><html><head><title>Updated GJS Documentation</title></head><body><main><h1>Updated GJS Documentation</h1><ul>'
-		for folder in `ls html`; do
-			INDEX_HTML="${INDEX_HTML}<li><a href='${folder}'>${folder}</a></li>"
-		done
-		INDEX_HTML="</ul></main></body></html>"
-		echo "$INDEX_HTML">~/tmp-gjs-documentation/index.html
-	fi
+	sh generate-index-html
 	git checkout gh-pages
 	cp -r ~/tmp-gjs-documentation/* ./
 	rm -rf ~/tmp-gjs-documentation
