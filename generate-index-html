@@ -1,21 +1,36 @@
 #!/usr/bin/env bash
 if [ ! -f ~/tmp-gjs-documentation/index.html ]; then
-  INDEX_HTML="<!DOCTYPE html>
+  INDEX_HTML='<!DOCTYPE html>
 <html>
   <head>
-    <title>Updated GJS Documentation</title>
+    <title>GJS Modules Documentation</title>
+    <link rel="stylesheet" type="text/css" href="Gtk-3.0/C.css">
   </head>
   <body>
-    <main>
-      <h1>Updated GJS Documentation</h1>
-      <ul>"
+    <div class="page" role="main">
+      <div class="body">
+        <div class="hgroup">
+          <h1 class="title"><span class="title">GJS Modules Documentation</span></h1>
+        </div>
+        <div class="region">
+          <div class="contents">
+            <div class="links topiclinks">
+              <div class="inner">
+                <div class="region">
+                  <ul>'
   for folder in `ls html`; do
     INDEX_HTML="${INDEX_HTML}
-        <li><a href='${folder}'>${folder}</a></li>"
+                      <li class='links'><a href='${folder}' title='${folder}'>${folder}</a></li>"
   done
   INDEX_HTML="${INDEX_HTML}
-      </ul>
-    </main>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class='clear'></div>
+    </div>
   </body>
 </html>"
   echo "$INDEX_HTML">~/tmp-gjs-documentation/index.html
