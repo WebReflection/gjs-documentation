@@ -1,11 +1,22 @@
 #!/usr/bin/env bash
 if [ ! -f ~/tmp-gjs-documentation/index.html ]; then
-  INDEX_HTML="<!DOCTYPE html>"
-  INDEX_HTML="${INDEX_HTML}<html><head><title>Updated GJS Documentation</title></head>"
-  INDEX_HTML="${INDEX_HTML}<body><main><h1>Updated GJS Documentation</h1><ul>"
+  INDEX_HTML="<!DOCTYPE html>
+<html>
+  <head>
+    <title>Updated GJS Documentation</title>
+  </head>
+  <body>
+    <main>
+      <h1>Updated GJS Documentation</h1>
+      <ul>"
   for folder in `ls html`; do
-    INDEX_HTML="${INDEX_HTML}<li><a href='${folder}'>${folder}</a></li>"
+    INDEX_HTML="${INDEX_HTML}
+        <li><a href='${folder}'>${folder}</a></li>"
   done
-  INDEX_HTML="${INDEX_HTML}</ul></main></body></html>"
+  INDEX_HTML="${INDEX_HTML}
+      </ul>
+    </main>
+  </body>
+</html>"
   echo "$INDEX_HTML">~/tmp-gjs-documentation/index.html
 fi
