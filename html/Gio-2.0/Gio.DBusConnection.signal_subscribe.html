@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.DBusConnection.prototype.signal_subscribe</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.DBusConnection.html" title="Gio.DBusConnection">Gio.DBusConnection</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.DBusConnection.prototype.signal_subscribe</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function signal_subscribe(sender: String, interface_name: String, member: String, object_path: String, arg0: String, flags: <span class="link"><a href="Gio.DBusSignalFlags.html" title="Gio.DBusSignalFlags">Gio.DBusSignalFlags</a></span>, callback: <span class="link"><a href="Gio.DBusSignalCallback.html" title="Gio.DBusSignalCallback">Gio.DBusSignalCallback</a></span>): Number(guint) {
+    // Gjs wrapper for g_dbus_connection_signal_subscribe()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Subscribes to signals on <span class="code">connection</span> and invokes <span class="code">callback</span> with a whenever
+the signal is received. Note that <span class="code">callback</span> will be invoked in the
+[thread-default main context][g-main-context-push-thread-default]
+of the thread you are calling this method from.</p>
+<p class="p">If <span class="code">connection</span> is not a message bus connection, <span class="code">sender</span> must be
+<span class="code">null</span>.</p>
+<p class="p">If <span class="code">sender</span> is a well-known name note that <span class="code">callback</span> is invoked with
+the unique name for the owner of <span class="code">sender</span>, not the well-known name
+as one would expect. This is because the message bus rewrites the
+name. As such, to avoid certain race conditions, users should be
+tracking the name owner of the well-known name and use that when
+processing the received signal.</p>
+<p class="p">If one of <span class="link"><a href="Gio.DBusSignalFlags.html" title="Gio.DBusSignalFlags">Gio.DBusSignalFlags</a></span>.match_arg0_namespace or
+<span class="link"><a href="Gio.DBusSignalFlags.html" title="Gio.DBusSignalFlags">Gio.DBusSignalFlags</a></span>.match_arg0_path are given, <span class="code">arg0</span> is
+interpreted as part of a namespace or path.  The first argument
+of a signal is matched against that part as specified by D-Bus.</p>
+<p class="p">Since 2.26</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">sender</span></dt>
+<dd class="terms"><p class="p">sender name to match on (unique or well-known name)
+    or <span class="code">null</span> to listen from all senders</p></dd>
+<dt class="terms"><span class="code">interface_name</span></dt>
+<dd class="terms"><p class="p">D-Bus interface name to match on or <span class="code">null</span> to
+    match on all interfaces</p></dd>
+<dt class="terms"><span class="code">member</span></dt>
+<dd class="terms"><p class="p">D-Bus signal name to match on or <span class="code">null</span> to match on
+    all signals</p></dd>
+<dt class="terms"><span class="code">object_path</span></dt>
+<dd class="terms"><p class="p">object path to match on or <span class="code">null</span> to match on
+    all object paths</p></dd>
+<dt class="terms"><span class="code">arg0</span></dt>
+<dd class="terms"><p class="p">contents of first string argument to match on or <span class="code">null</span>
+    to match on all kinds of arguments</p></dd>
+<dt class="terms"><span class="code">flags</span></dt>
+<dd class="terms"><p class="p">flags describing how to subscribe to the signal (currently unused)</p></dd>
+<dt class="terms"><span class="code">callback</span></dt>
+<dd class="terms"><p class="p">callback to invoke when there is a signal matching the requested data</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">a subscription identifier that can be used with <span class="link"><a href="Gio.DBusConnection.signal_unsubscribe.html" title="Gio.DBusConnection.prototype.signal_unsubscribe">Gio.DBusConnection.prototype.signal_unsubscribe</a></span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.DBusConnection.html" title="Gio.DBusConnection">Gio.DBusConnection</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

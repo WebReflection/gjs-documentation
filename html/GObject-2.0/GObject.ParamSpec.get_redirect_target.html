@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GObject.ParamSpec.prototype.get_redirect_target</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GObject">GObject</a> » <a class="trail" href="GObject.ParamSpec.html" title="GObject.ParamSpec">GObject.ParamSpec</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GObject.ParamSpec.prototype.get_redirect_target</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function get_redirect_target(): <span class="link"><a href="GObject.ParamSpec.html" title="GObject.ParamSpec">GObject.ParamSpec</a></span> {
+    // Gjs wrapper for g_param_spec_get_redirect_target()
+}
+  </pre></div></div></div></div></div>
+<p class="p">If the paramspec redirects operations to another paramspec,
+returns that paramspec. Redirect is used typically for
+providing a new implementation of a property in a derived
+type while preserving all the properties from the parent
+type. Redirection is established by creating a property
+of type <span class="link"><a href="GObject.ParamSpecOverride.html" title="GObject.ParamSpecOverride">GObject.ParamSpecOverride</a></span>. See <span class="link"><a href="GObject.ObjectClass.override_property.html" title="GObject.ObjectClass.override_property">GObject.ObjectClass.override_property</a></span>
+for an example of the use of this capability.</p>
+<p class="p">Since 2.4</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">paramspec to which requests on this
+         paramspec should be redirected, or <span class="code">null</span> if none.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="GObject.ParamSpec.html" title="GObject.ParamSpec">GObject.ParamSpec</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

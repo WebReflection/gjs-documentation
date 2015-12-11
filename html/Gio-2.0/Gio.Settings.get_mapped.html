@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.Settings.prototype.get_mapped</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.Settings.html" title="Gio.Settings">Gio.Settings</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.Settings.prototype.get_mapped</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function get_mapped(key: String, mapping: <span class="link"><a href="Gio.SettingsGetMapping.html" title="Gio.SettingsGetMapping">Gio.SettingsGetMapping</a></span>): void {
+    // Gjs wrapper for g_settings_get_mapped()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Gets the value that is stored at <span class="code">key</span> in <span class="code">settings</span>, subject to
+application-level validation/mapping.</p>
+<p class="p">You should use this function when the application needs to perform
+some processing on the value of the key (for example, parsing).  The
+<span class="code">mapping</span> function performs that processing.  If the function
+indicates that the processing was unsuccessful (due to a parse error,
+for example) then the mapping is tried again with another value.</p>
+<p class="p">This allows a robust 'fall back to defaults' behaviour to be
+implemented somewhat automatically.</p>
+<p class="p">The first value that is tried is the user's setting for the key.  If
+the mapping function fails to map this value, other values may be
+tried in an unspecified order (system or site defaults, translated
+schema default values, untranslated schema default values, etc).</p>
+<p class="p">If the mapping function fails for all possible values, one additional
+attempt is made: the mapping function is called with a <span class="code">null</span> value.
+If the mapping function still indicates failure at this point then
+the application will be aborted.</p>
+<p class="p">The result parameter for the <span class="code">mapping</span> function is pointed to a
+#gpointer which is initially set to <span class="code">null</span>.  The same pointer is given
+to each invocation of <span class="code">mapping</span>.  The final value of that #gpointer is
+what is returned by this function.  <span class="code">null</span> is valid; it is returned
+just as any other value would be.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">key</span></dt>
+<dd class="terms"><p class="p">the key to get the value for</p></dd>
+<dt class="terms"><span class="code">mapping</span></dt>
+<dd class="terms"><p class="p">the function to map the value in the
+          settings database to the value used by the application</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">the result, which may be <span class="code">null</span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.Settings.html" title="Gio.Settings">Gio.Settings</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

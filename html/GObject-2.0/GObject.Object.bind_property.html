@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GObject.Object.prototype.bind_property</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GObject">GObject</a> » <a class="trail" href="GObject.Object.html" title="GObject.Object">GObject.Object</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GObject.Object.prototype.bind_property</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function bind_property(source_property: String, target: <span class="link"><a href="GObject.Object.html" title="GObject.Object">GObject.Object</a></span>, target_property: String, flags: <span class="link"><a href="GObject.BindingFlags.html" title="GObject.BindingFlags">GObject.BindingFlags</a></span>): <span class="link"><a href="GObject.Binding.html" title="GObject.Binding">GObject.Binding</a></span> {
+    // Gjs wrapper for g_object_bind_property()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Creates a binding between <span class="code">source_property</span> on <span class="code">source</span> and <span class="code">target_property</span>
+on <span class="code">target</span>. Whenever the <span class="code">source_property</span> is changed the <span class="code">target_property</span> is
+updated using the same value. For instance:</p>
+<p class="p">|[
+  g_object_bind_property (action, "active", widget, "sensitive", 0);
+]|</p>
+<p class="p">Will result in the "sensitive" property of the widget <span class="link"><a href="GObject.Object.html" title="GObject.Object">GObject.Object</a></span> instance to be
+updated with the same value of the "active" property of the action <span class="link"><a href="GObject.Object.html" title="GObject.Object">GObject.Object</a></span>
+instance.</p>
+<p class="p">If <span class="code">flags</span> contains <span class="link"><a href="GObject.BindingFlags.html" title="GObject.BindingFlags">GObject.BindingFlags</a></span>.bidirectional then the binding will be mutual:
+if <span class="code">target_property</span> on <span class="code">target</span> changes then the <span class="code">source_property</span> on <span class="code">source</span>
+will be updated as well.</p>
+<p class="p">The binding will automatically be removed when either the <span class="code">source</span> or the
+<span class="code">target</span> instances are finalized. To remove the binding without affecting the
+<span class="code">source</span> and the <span class="code">target</span> you can just call <span class="link"><a href="GObject.Object.unref.html" title="GObject.Object.unref">GObject.Object.unref</a></span> on the returned
+<span class="link"><a href="GObject.Binding.html" title="GObject.Binding">GObject.Binding</a></span> instance.</p>
+<p class="p">A <span class="link"><a href="GObject.Object.html" title="GObject.Object">GObject.Object</a></span> can have multiple bindings.</p>
+<p class="p">Since 2.26</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">source_property</span></dt>
+<dd class="terms"><p class="p">the property on <span class="code">source</span> to bind</p></dd>
+<dt class="terms"><span class="code">target</span></dt>
+<dd class="terms"><p class="p">the target <span class="link"><a href="GObject.Object.html" title="GObject.Object">GObject.Object</a></span></p></dd>
+<dt class="terms"><span class="code">target_property</span></dt>
+<dd class="terms"><p class="p">the property on <span class="code">target</span> to bind</p></dd>
+<dt class="terms"><span class="code">flags</span></dt>
+<dd class="terms"><p class="p">flags to pass to <span class="link"><a href="GObject.Binding.html" title="GObject.Binding">GObject.Binding</a></span></p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">the <span class="link"><a href="GObject.Binding.html" title="GObject.Binding">GObject.Binding</a></span> instance representing the
+    binding between the two <span class="link"><a href="GObject.Object.html" title="GObject.Object">GObject.Object</a></span> instances. The binding is released
+    whenever the <span class="link"><a href="GObject.Binding.html" title="GObject.Binding">GObject.Binding</a></span> reference count reaches zero.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="GObject.Object.html" title="GObject.Object">GObject.Object</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

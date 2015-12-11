@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.DBusServer.new_sync</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.DBusServer.html" title="Gio.DBusServer">Gio.DBusServer</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.DBusServer.new_sync</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function new_sync(address: String, flags: <span class="link"><a href="Gio.DBusServerFlags.html" title="Gio.DBusServerFlags">Gio.DBusServerFlags</a></span>, guid: String, observer: <span class="link"><a href="Gio.DBusAuthObserver.html" title="Gio.DBusAuthObserver">Gio.DBusAuthObserver</a></span>, cancellable: <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span>): <span class="link"><a href="Gio.DBusServer.html" title="Gio.DBusServer">Gio.DBusServer</a></span> {
+    // Gjs wrapper for g_dbus_server_new_sync()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Creates a new D-Bus server that listens on the first address in
+<span class="code">address</span> that works.</p>
+<p class="p">Once constructed, you can use <span class="link"><a href="Gio.DBusServer.get_client_address.html" title="Gio.DBusServer.prototype.get_client_address">Gio.DBusServer.prototype.get_client_address</a></span> to
+get a D-Bus address string that clients can use to connect.</p>
+<p class="p">Connect to the <span class="link"><a href="Gio.DBusServer-new-connection.html" title="Gio.DBusServer::new-connection">Gio.DBusServer::new-connection</a></span> signal to handle
+incoming connections.</p>
+<p class="p">The returned <span class="link"><a href="Gio.DBusServer.html" title="Gio.DBusServer">Gio.DBusServer</a></span> isn't active - you have to start it with
+<span class="link"><a href="Gio.DBusServer.start.html" title="Gio.DBusServer.prototype.start">Gio.DBusServer.prototype.start</a></span>.</p>
+<p class="p"><span class="link"><a href="Gio.DBusServer.html" title="Gio.DBusServer">Gio.DBusServer</a></span> is used in this [example][gdbus-peer-to-peer].</p>
+<p class="p">This is a synchronous failable constructor. See
+g_dbus_server_new() for the asynchronous version.</p>
+<p class="p">Since 2.26</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">address</span></dt>
+<dd class="terms"><p class="p">A D-Bus address.</p></dd>
+<dt class="terms"><span class="code">flags</span></dt>
+<dd class="terms"><p class="p">Flags from the <span class="link"><a href="Gio.DBusServerFlags.html" title="Gio.DBusServerFlags">Gio.DBusServerFlags</a></span> enumeration.</p></dd>
+<dt class="terms"><span class="code">guid</span></dt>
+<dd class="terms"><p class="p">A D-Bus GUID.</p></dd>
+<dt class="terms"><span class="code">observer</span></dt>
+<dd class="terms"><p class="p">A <span class="link"><a href="Gio.DBusAuthObserver.html" title="Gio.DBusAuthObserver">Gio.DBusAuthObserver</a></span> or <span class="code">null</span>.</p></dd>
+<dt class="terms"><span class="code">cancellable</span></dt>
+<dd class="terms"><p class="p">A <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span> or <span class="code">null</span>.</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">A <span class="link"><a href="Gio.DBusServer.html" title="Gio.DBusServer">Gio.DBusServer</a></span> or <span class="code">null</span> if @error is set. Free with
+<span class="link"><a href="../GObject-2.0/GObject.Object.unref.html" title="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</a></span>.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.DBusServer.html" title="Gio.DBusServer">Gio.DBusServer</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

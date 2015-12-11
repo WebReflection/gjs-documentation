@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.FileEnumerator.prototype.next_files_async</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.FileEnumerator.html" title="Gio.FileEnumerator">Gio.FileEnumerator</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.FileEnumerator.prototype.next_files_async</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function next_files_async(num_files: Number(gint), io_priority: Number(gint), cancellable: <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span>, callback: <span class="link"><a href="Gio.AsyncReadyCallback.html" title="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</a></span>): void {
+    // Gjs wrapper for g_file_enumerator_next_files_async()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Request information for a number of files from the enumerator asynchronously.
+When all i/o for the operation is finished the <span class="code">callback</span> will be called with
+the requested information.</p>
+<p class="p">See the documentation of <span class="link"><a href="Gio.FileEnumerator.html" title="Gio.FileEnumerator">Gio.FileEnumerator</a></span> for information about the
+order of returned files.</p>
+<p class="p">The callback can be called with less than <span class="code">num_files</span> files in case of error
+or at the end of the enumerator. In case of a partial error the callback will
+be called with any succeeding items and no error, and on the next request the
+error will be reported. If a request is cancelled the callback will be called
+with <span class="link"><a href="Gio.IOErrorEnum.html" title="Gio.IOErrorEnum">Gio.IOErrorEnum</a></span>.cancelled.</p>
+<p class="p">During an async request no other sync and async calls are allowed, and will
+result in <span class="link"><a href="Gio.IOErrorEnum.html" title="Gio.IOErrorEnum">Gio.IOErrorEnum</a></span>.pending errors.</p>
+<p class="p">Any outstanding i/o request with higher priority (lower numerical value) will
+be executed before an outstanding request with lower priority. Default
+priority is %G_PRIORITY_DEFAULT.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">num_files</span></dt>
+<dd class="terms"><p class="p">the number of file info objects to request</p></dd>
+<dt class="terms"><span class="code">io_priority</span></dt>
+<dd class="terms"><p class="p">the [I/O priority][io-priority] of the request</p></dd>
+<dt class="terms"><span class="code">cancellable</span></dt>
+<dd class="terms"><p class="p">optional <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span> object, <span class="code">null</span> to ignore.</p></dd>
+<dt class="terms"><span class="code">callback</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="Gio.AsyncReadyCallback.html" title="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</a></span> to call when the request is satisfied</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.FileEnumerator.html" title="Gio.FileEnumerator">Gio.FileEnumerator</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

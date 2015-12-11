@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.TlsConnection::accept-certificate</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.TlsConnection.html" title="Gio.TlsConnection">Gio.TlsConnection</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.TlsConnection::accept-certificate</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">connect('accept-certificate', function (tlsConnection, peer_cert: <span class="link"><a href="Gio.TlsCertificate.html" title="Gio.TlsCertificate">Gio.TlsCertificate</a></span>, errors: <span class="link"><a href="Gio.TlsCertificateFlags.html" title="Gio.TlsCertificateFlags">Gio.TlsCertificateFlags</a></span>, ): Boolean);
+  </pre></div></div></div></div></div>
+<p class="p">Emitted during the TLS handshake after the peer certificate has
+been received. You can examine <span class="code">peer_cert</span>'s certification path by
+calling <span class="link"><a href="Gio.TlsCertificate.get_issuer.html" title="Gio.TlsCertificate.prototype.get_issuer">Gio.TlsCertificate.prototype.get_issuer</a></span> on it.</p>
+<p class="p">For a client-side connection, <span class="code">peer_cert</span> is the server's
+certificate, and the signal will only be emitted if the
+certificate was not acceptable according to @conn's
+#GTlsClientConnection:validation_flags. If you would like the
+certificate to be accepted despite <span class="code">errors</span>, return <span class="code">true</span> from the
+signal handler. Otherwise, if no handler accepts the certificate,
+the handshake will fail with <span class="link"><a href="Gio.TlsError.html" title="Gio.TlsError">Gio.TlsError</a></span>.bad_certificate.</p>
+<p class="p">For a server-side connection, <span class="code">peer_cert</span> is the certificate
+presented by the client, if this was requested via the server's
+#GTlsServerConnection:authentication_mode. On the server side,
+the signal is always emitted when the client presents a
+certificate, and the certificate will only be accepted if a
+handler returns <span class="code">true</span>.</p>
+<p class="p">Note that if this signal is emitted as part of asynchronous I/O
+in the main thread, then you should not attempt to interact with
+the user before returning from the signal handler. If you want to
+let the user decide whether or not to accept the certificate, you
+would have to return <span class="code">false</span> from the signal handler on the first
+attempt, and then after the connection attempt returns a
+<span class="link"><a href="Gio.TlsError.html" title="Gio.TlsError">Gio.TlsError</a></span>.handshake, you can interact with the user, and if
+the user decides to accept the certificate, remember that fact,
+create a new connection, and return <span class="code">true</span> from the signal handler
+the next time.</p>
+<p class="p">If you are doing I/O in another thread, you do not
+need to worry about this, and can simply block in the signal
+handler until the UI thread returns an answer.</p>
+<p class="p">Since 2.28</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">tlsConnection</span></dt>
+<dd class="terms"><p class="p">instance of <span class="link"><a href="Gio.TlsConnection.html" title="Gio.TlsConnection">Gio.TlsConnection</a></span> that is emitting the signal</p></dd>
+<dt class="terms"><span class="code">peer_cert</span></dt>
+<dd class="terms"><p class="p">the peer's <span class="link"><a href="Gio.TlsCertificate.html" title="Gio.TlsCertificate">Gio.TlsCertificate</a></span></p></dd>
+<dt class="terms"><span class="code">errors</span></dt>
+<dd class="terms"><p class="p">the problems with <span class="code">peer_cert</span>.</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> to accept <span class="code">peer_cert</span> (which will also
+immediately end the signal emission). <span class="code">false</span> to allow the signal
+emission to continue, which will cause the handshake to fail if
+no one else overrides it.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.TlsConnection.html" title="Gio.TlsConnection">Gio.TlsConnection</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

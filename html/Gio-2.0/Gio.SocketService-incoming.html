@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.SocketService::incoming</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.SocketService.html" title="Gio.SocketService">Gio.SocketService</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.SocketService::incoming</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">connect('incoming', function (socketService, connection: <span class="link"><a href="Gio.SocketConnection.html" title="Gio.SocketConnection">Gio.SocketConnection</a></span>, source_object: <span class="link"><a href="../GObject-2.0/GObject.Object.html" title="../GObject-2.0/GObject.Object.html">GObject.Object</a></span>, ): Boolean);
+  </pre></div></div></div></div></div>
+<p class="p">The ::incoming signal is emitted when a new incoming connection
+to @service needs to be handled. The handler must initiate the
+handling of <span class="code">connection</span>, but may not block; in essence,
+asynchronous operations must be used.</p>
+<p class="p"><span class="code">connection</span> will be unreffed once the signal handler returns,
+so you need to ref it yourself if you are planning to use it.</p>
+<p class="p">Since 2.22</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">socketService</span></dt>
+<dd class="terms"><p class="p">instance of <span class="link"><a href="Gio.SocketService.html" title="Gio.SocketService">Gio.SocketService</a></span> that is emitting the signal</p></dd>
+<dt class="terms"><span class="code">connection</span></dt>
+<dd class="terms"><p class="p">a new <span class="link"><a href="Gio.SocketConnection.html" title="Gio.SocketConnection">Gio.SocketConnection</a></span> object</p></dd>
+<dt class="terms"><span class="code">source_object</span></dt>
+<dd class="terms"><p class="p">the source_object passed to
+    <span class="link"><a href="Gio.SocketListener.add_address.html" title="Gio.SocketListener.prototype.add_address">Gio.SocketListener.prototype.add_address</a></span></p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> to stop other handlers from being called</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.SocketService.html" title="Gio.SocketService">Gio.SocketService</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

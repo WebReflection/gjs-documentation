@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.File::get_child_for_display_name</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.File.html" title="Gio.File">Gio.File</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.File::get_child_for_display_name</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function vfunc_get_child_for_display_name(display_name: String): <span class="link"><a href="Gio.File.html" title="Gio.File">Gio.File</a></span> {
+}
+  </pre></div></div></div></div></div>
+<p class="p">Gets the child of <span class="code">file</span> for a given <span class="code">display_name</span> (i.e. a UTF-8
+version of the name). If this function fails, it returns <span class="code">null</span>
+and @error will be set. This is very useful when constructing a
+<span class="link"><a href="Gio.File.html" title="Gio.File">Gio.File</a></span> for a new file and the user entered the filename in the
+user interface, for instance when you select a directory and
+type a filename in the file selector.</p>
+<p class="p">This call does no blocking I/O.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">display_name</span></dt>
+<dd class="terms"><p class="p">string to a possible child</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="Gio.File.html" title="Gio.File">Gio.File</a></span> to the specified child, or
+    <span class="code">null</span> if the display name couldn't be converted.
+    Free the returned object with <span class="link"><a href="../GObject-2.0/GObject.Object.unref.html" title="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</a></span>.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.File.html" title="Gio.File">Gio.File</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

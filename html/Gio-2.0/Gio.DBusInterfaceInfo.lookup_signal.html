@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.DBusInterfaceInfo.prototype.lookup_signal</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.DBusInterfaceInfo.html" title="Gio.DBusInterfaceInfo">Gio.DBusInterfaceInfo</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.DBusInterfaceInfo.prototype.lookup_signal</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function lookup_signal(name: String): <span class="link"><a href="Gio.DBusSignalInfo.html" title="Gio.DBusSignalInfo">Gio.DBusSignalInfo</a></span> {
+    // Gjs wrapper for g_dbus_interface_info_lookup_signal()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Looks up information about a signal.</p>
+<p class="p">The cost of this function is O(n) in number of signals unless
+<span class="link"><a href="Gio.DBusInterfaceInfo.cache_build.html" title="Gio.DBusInterfaceInfo.prototype.cache_build">Gio.DBusInterfaceInfo.prototype.cache_build</a></span> has been used on <span class="code">info</span>.</p>
+<p class="p">Since 2.26</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">name</span></dt>
+<dd class="terms"><p class="p">A D-Bus signal name (typically in CamelCase)</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">A <span class="link"><a href="Gio.DBusSignalInfo.html" title="Gio.DBusSignalInfo">Gio.DBusSignalInfo</a></span> or <span class="code">null</span> if not found. Do not free, it is owned by <span class="code">info</span>.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.DBusInterfaceInfo.html" title="Gio.DBusInterfaceInfo">Gio.DBusInterfaceInfo</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

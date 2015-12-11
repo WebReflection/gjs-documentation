@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.SocketClient.prototype.connect</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.SocketClient.html" title="Gio.SocketClient">Gio.SocketClient</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.SocketClient.prototype.connect</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function connect(connectable: <span class="link"><a href="Gio.SocketConnectable.html" title="Gio.SocketConnectable">Gio.SocketConnectable</a></span>, cancellable: <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span>): <span class="link"><a href="Gio.SocketConnection.html" title="Gio.SocketConnection">Gio.SocketConnection</a></span> {
+    // Gjs wrapper for g_socket_client_connect()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Tries to resolve the <span class="code">connectable</span> and make a network connection to it.</p>
+<p class="p">Upon a successful connection, a new <span class="link"><a href="Gio.SocketConnection.html" title="Gio.SocketConnection">Gio.SocketConnection</a></span> is constructed
+and returned.  The caller owns this new object and must drop their
+reference to it when finished with it.</p>
+<p class="p">The type of the <span class="link"><a href="Gio.SocketConnection.html" title="Gio.SocketConnection">Gio.SocketConnection</a></span> object returned depends on the type of
+the underlying socket that is used. For instance, for a TCP/IP connection
+it will be a <span class="link"><a href="Gio.TcpConnection.html" title="Gio.TcpConnection">Gio.TcpConnection</a></span>.</p>
+<p class="p">The socket created will be the same family as the address that the
+<span class="code">connectable</span> resolves to, unless family is set with <span class="link"><a href="Gio.SocketClient.set_family.html" title="Gio.SocketClient.prototype.set_family">Gio.SocketClient.prototype.set_family</a></span>
+or indirectly via <span class="link"><a href="Gio.SocketClient.set_local_address.html" title="Gio.SocketClient.prototype.set_local_address">Gio.SocketClient.prototype.set_local_address</a></span>. The socket type
+defaults to <span class="link"><a href="Gio.SocketType.html" title="Gio.SocketType">Gio.SocketType</a></span>.stream but can be set with
+<span class="link"><a href="Gio.SocketClient.set_socket_type.html" title="Gio.SocketClient.prototype.set_socket_type">Gio.SocketClient.prototype.set_socket_type</a></span>.</p>
+<p class="p">If a local address is specified with <span class="link"><a href="Gio.SocketClient.set_local_address.html" title="Gio.SocketClient.prototype.set_local_address">Gio.SocketClient.prototype.set_local_address</a></span> the
+socket will be bound to this address before connecting.</p>
+<p class="p">Since 2.22</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">connectable</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="Gio.SocketConnectable.html" title="Gio.SocketConnectable">Gio.SocketConnectable</a></span> specifying the remote address.</p></dd>
+<dt class="terms"><span class="code">cancellable</span></dt>
+<dd class="terms"><p class="p">optional <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span> object, <span class="code">null</span> to ignore.</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="Gio.SocketConnection.html" title="Gio.SocketConnection">Gio.SocketConnection</a></span> on success, <span class="code">null</span> on error.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.SocketClient.html" title="Gio.SocketClient">Gio.SocketClient</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

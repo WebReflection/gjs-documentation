@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.SocketClient.prototype.add_application_proxy</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.SocketClient.html" title="Gio.SocketClient">Gio.SocketClient</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.SocketClient.prototype.add_application_proxy</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function add_application_proxy(protocol: String): void {
+    // Gjs wrapper for g_socket_client_add_application_proxy()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Enable proxy protocols to be handled by the application. When the
+indicated proxy protocol is returned by the <span class="link"><a href="Gio.ProxyResolver.html" title="Gio.ProxyResolver">Gio.ProxyResolver</a></span>,
+<span class="link"><a href="Gio.SocketClient.html" title="Gio.SocketClient">Gio.SocketClient</a></span> will consider this protocol as supported but will
+not try to find a <span class="link"><a href="Gio.Proxy.html" title="Gio.Proxy">Gio.Proxy</a></span> instance to handle handshaking. The
+application must check for this case by calling
+<span class="link"><a href="Gio.SocketConnection.get_remote_address.html" title="Gio.SocketConnection.prototype.get_remote_address">Gio.SocketConnection.prototype.get_remote_address</a></span> on the returned
+<span class="link"><a href="Gio.SocketConnection.html" title="Gio.SocketConnection">Gio.SocketConnection</a></span>, and seeing if it's a <span class="link"><a href="Gio.ProxyAddress.html" title="Gio.ProxyAddress">Gio.ProxyAddress</a></span> of the
+appropriate type, to determine whether or not it needs to handle
+the proxy handshaking itself.</p>
+<p class="p">This should be used for proxy protocols that are dialects of
+another protocol such as HTTP proxy. It also allows cohabitation of
+proxy protocols that are reused between protocols. A good example
+is HTTP. It can be used to proxy HTTP, FTP and Gopher and can also
+be use as generic socket proxy through the HTTP CONNECT method.</p>
+<p class="p">When the proxy is detected as being an application proxy, TLS handshake
+will be skipped. This is required to let the application do the proxy
+specific handshake.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">protocol</span></dt>
+<dd class="terms"><p class="p">The proxy protocol</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.SocketClient.html" title="Gio.SocketClient">Gio.SocketClient</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

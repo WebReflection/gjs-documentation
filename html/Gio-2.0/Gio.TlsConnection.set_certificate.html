@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.TlsConnection.prototype.set_certificate</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.TlsConnection.html" title="Gio.TlsConnection">Gio.TlsConnection</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.TlsConnection.prototype.set_certificate</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function set_certificate(certificate: <span class="link"><a href="Gio.TlsCertificate.html" title="Gio.TlsCertificate">Gio.TlsCertificate</a></span>): void {
+    // Gjs wrapper for g_tls_connection_set_certificate()
+}
+  </pre></div></div></div></div></div>
+<p class="p">This sets the certificate that <span class="code">conn</span> will present to its peer
+during the TLS handshake. For a <span class="link"><a href="Gio.TlsServerConnection.html" title="Gio.TlsServerConnection">Gio.TlsServerConnection</a></span>, it is
+mandatory to set this, and that will normally be done at construct
+time.</p>
+<p class="p">For a <span class="link"><a href="Gio.TlsClientConnection.html" title="Gio.TlsClientConnection">Gio.TlsClientConnection</a></span>, this is optional. If a handshake fails
+with <span class="link"><a href="Gio.TlsError.html" title="Gio.TlsError">Gio.TlsError</a></span>.certificate_required, that means that the server
+requires a certificate, and if you try connecting again, you should
+call this method first. You can call
+<span class="link"><a href="Gio.TlsClientConnection.get_accepted_cas.html" title="Gio.TlsClientConnection.prototype.get_accepted_cas">Gio.TlsClientConnection.prototype.get_accepted_cas</a></span> on the failed connection
+to get a list of Certificate Authorities that the server will
+accept certificates from.</p>
+<p class="p">(It is also possible that a server will allow the connection with
+or without a certificate; in that case, if you don't provide a
+certificate, you can tell that the server requested one by the fact
+that <span class="link"><a href="Gio.TlsClientConnection.get_accepted_cas.html" title="Gio.TlsClientConnection.prototype.get_accepted_cas">Gio.TlsClientConnection.prototype.get_accepted_cas</a></span> will return
+non-<span class="code">null</span>.)</p>
+<p class="p">Since 2.28</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">certificate</span></dt>
+<dd class="terms"><p class="p">the certificate to use for <span class="code">conn</span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.TlsConnection.html" title="Gio.TlsConnection">Gio.TlsConnection</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

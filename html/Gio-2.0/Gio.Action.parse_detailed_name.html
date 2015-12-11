@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.Action.parse_detailed_name</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.Action.html" title="Gio.Action">Gio.Action</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.Action.parse_detailed_name</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function parse_detailed_name(detailed_name: String): [ok: Boolean, action_name: String, target_value: <span class="link"><a href="../GLib-2.0/GLib.Variant.html" title="../GLib-2.0/GLib.Variant.html">GLib.Variant</a></span>] {
+    // Gjs wrapper for g_action_parse_detailed_name()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Parses a detailed action name into its separate name and target
+components.</p>
+<p class="p">Detailed action names can have three formats.</p>
+<p class="p">The first format is used to represent an action name with no target
+value and consists of just an action name containing no whitespace
+nor the characters ':', '(' or ')'.  For example: "app.action".</p>
+<p class="p">The second format is used to represent an action with a target value
+that is a non-empty string consisting only of alphanumerics, plus '-'
+and '.'.  In that case, the action name and target value are
+separated by a double colon ("::").  For example:
+"app.action::target".</p>
+<p class="p">The third format is used to represent an action with any type of
+target value, including strings.  The target value follows the action
+name, surrounded in parens.  For example: "app.action(42)".  The
+target value is parsed using <span class="link"><a href="../GLib-2.0/GLib.variant_parse.html" title="../GLib-2.0/GLib.variant_parse.html">GLib.variant_parse</a></span>.  If a tuple-typed
+value is desired, it must be specified in the same way, resulting in
+two sets of parens, for example: "app.action((1,2,3))".  A string
+target can be specified this way as well: "app.action('target')".
+For strings, this third format must be used if * target value is
+empty or contains characters other than alphanumerics, '-' and '.'.</p>
+<p class="p">Since 2.38</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">detailed_name</span></dt>
+<dd class="terms"><p class="p">a detailed action name</p></dd>
+<dt class="terms"><span class="code">ok</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> if successful, else <span class="code">false</span> with @error set</p></dd>
+<dt class="terms"><span class="code">action_name</span></dt>
+<dd class="terms"><p class="p">the action name</p></dd>
+<dt class="terms"><span class="code">target_value</span></dt>
+<dd class="terms"><p class="p">the target value, or <span class="code">null</span> for no target</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.Action.html" title="Gio.Action">Gio.Action</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

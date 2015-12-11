@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.SocketClient.prototype.set_tls</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.SocketClient.html" title="Gio.SocketClient">Gio.SocketClient</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.SocketClient.prototype.set_tls</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function set_tls(tls: Boolean): void {
+    // Gjs wrapper for g_socket_client_set_tls()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Sets whether <span class="code">client</span> creates TLS (aka SSL) connections. If <span class="code">tls</span> is
+<span class="code">true</span>, <span class="code">client</span> will wrap its connections in a <span class="link"><a href="Gio.TlsClientConnection.html" title="Gio.TlsClientConnection">Gio.TlsClientConnection</a></span>
+and perform a TLS handshake when connecting.</p>
+<p class="p">Note that since <span class="link"><a href="Gio.SocketClient.html" title="Gio.SocketClient">Gio.SocketClient</a></span> must return a <span class="link"><a href="Gio.SocketConnection.html" title="Gio.SocketConnection">Gio.SocketConnection</a></span>,
+but <span class="link"><a href="Gio.TlsClientConnection.html" title="Gio.TlsClientConnection">Gio.TlsClientConnection</a></span> is not a <span class="link"><a href="Gio.SocketConnection.html" title="Gio.SocketConnection">Gio.SocketConnection</a></span>, this
+actually wraps the resulting <span class="link"><a href="Gio.TlsClientConnection.html" title="Gio.TlsClientConnection">Gio.TlsClientConnection</a></span> in a
+<span class="link"><a href="Gio.TcpWrapperConnection.html" title="Gio.TcpWrapperConnection">Gio.TcpWrapperConnection</a></span> when returning it. You can use
+<span class="link"><a href="Gio.TcpWrapperConnection.get_base_io_stream.html" title="Gio.TcpWrapperConnection.prototype.get_base_io_stream">Gio.TcpWrapperConnection.prototype.get_base_io_stream</a></span> on the return value
+to extract the <span class="link"><a href="Gio.TlsClientConnection.html" title="Gio.TlsClientConnection">Gio.TlsClientConnection</a></span>.</p>
+<p class="p">If you need to modify the behavior of the TLS handshake (eg, by
+setting a client-side certificate to use, or connecting to the
+<span class="link"><a href="Gio.TlsConnection-accept-certificate.html" title="Gio.TlsConnection::accept-certificate">Gio.TlsConnection::accept-certificate</a></span> signal), you can connect to
+<span class="code">client</span>'s <span class="link"><a href="Gio.SocketClient-event.html" title="Gio.SocketClient::event">Gio.SocketClient::event</a></span> signal and wait for it to be
+emitted with <span class="link"><a href="Gio.SocketClientEvent.html" title="Gio.SocketClientEvent">Gio.SocketClientEvent</a></span>.tls_handshaking, which will give you
+a chance to see the <span class="link"><a href="Gio.TlsClientConnection.html" title="Gio.TlsClientConnection">Gio.TlsClientConnection</a></span> before the handshake
+starts.</p>
+<p class="p">Since 2.28</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">tls</span></dt>
+<dd class="terms"><p class="p">whether to use TLS</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.SocketClient.html" title="Gio.SocketClient">Gio.SocketClient</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

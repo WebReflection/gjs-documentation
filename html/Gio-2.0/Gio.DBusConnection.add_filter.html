@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.DBusConnection.prototype.add_filter</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.DBusConnection.html" title="Gio.DBusConnection">Gio.DBusConnection</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.DBusConnection.prototype.add_filter</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function add_filter(filter_function: <span class="link"><a href="Gio.DBusMessageFilterFunction.html" title="Gio.DBusMessageFilterFunction">Gio.DBusMessageFilterFunction</a></span>): Number(guint) {
+    // Gjs wrapper for g_dbus_connection_add_filter()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Adds a message filter. Filters are handlers that are run on all
+incoming and outgoing messages, prior to standard dispatch. Filters
+are run in the order that they were added.  The same handler can be
+added as a filter more than once, in which case it will be run more
+than once.  Filters added during a filter callback won't be run on
+the message being processed. Filter functions are allowed to modify
+and even drop messages.</p>
+<p class="p">Note that filters are run in a dedicated message handling thread so
+they can't block and, generally, can't do anything but signal a
+worker thread. Also note that filters are rarely needed - use API
+such as <span class="link"><a href="Gio.DBusConnection.send_message_with_reply.html" title="Gio.DBusConnection.prototype.send_message_with_reply">Gio.DBusConnection.prototype.send_message_with_reply</a></span>,
+<span class="link"><a href="Gio.DBusConnection.signal_subscribe.html" title="Gio.DBusConnection.prototype.signal_subscribe">Gio.DBusConnection.prototype.signal_subscribe</a></span> or <span class="link"><a href="Gio.DBusConnection.call.html" title="Gio.DBusConnection.prototype.call">Gio.DBusConnection.prototype.call</a></span> instead.</p>
+<p class="p">If a filter consumes an incoming message the message is not
+dispatched anywhere else - not even the standard dispatch machinery
+(that API such as <span class="link"><a href="Gio.DBusConnection.signal_subscribe.html" title="Gio.DBusConnection.prototype.signal_subscribe">Gio.DBusConnection.prototype.signal_subscribe</a></span> and
+<span class="link"><a href="Gio.DBusConnection.send_message_with_reply.html" title="Gio.DBusConnection.prototype.send_message_with_reply">Gio.DBusConnection.prototype.send_message_with_reply</a></span> relies on) will see the
+message. Similary, if a filter consumes an outgoing message, the
+message will not be sent to the other peer.</p>
+<p class="p">Since 2.26</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">filter_function</span></dt>
+<dd class="terms"><p class="p">a filter function</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">a filter identifier that can be used with
+    <span class="link"><a href="Gio.DBusConnection.remove_filter.html" title="Gio.DBusConnection.prototype.remove_filter">Gio.DBusConnection.prototype.remove_filter</a></span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.DBusConnection.html" title="Gio.DBusConnection">Gio.DBusConnection</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.TlsConnection</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.TlsConnection</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
+
+let tlsConnection = new Gio.TlsConnection({
+    <span class="link"><a href="Gio.TlsConnection-base-io-stream.html" title="Gio.TlsConnection.base_io_stream">base_io_stream</a></span>: value,
+    <span class="link"><a href="Gio.TlsConnection-rehandshake-mode.html" title="Gio.TlsConnection.rehandshake_mode">rehandshake_mode</a></span>: value,
+    <span class="link"><a href="Gio.TlsConnection-require-close-notify.html" title="Gio.TlsConnection.require_close_notify">require_close_notify</a></span>: value,
+    <span class="link"><a href="Gio.TlsConnection-use-system-certdb.html" title="Gio.TlsConnection.use_system_certdb">use_system_certdb</a></span>: value,
+});
+  </pre></div></div></div></div></div>
+<p class="p"><span class="link"><a href="Gio.TlsConnection.html" title="Gio.TlsConnection">Gio.TlsConnection</a></span> is the base TLS connection class type, which wraps
+a <span class="link"><a href="Gio.IOStream.html" title="Gio.IOStream">Gio.IOStream</a></span> and provides TLS encryption on top of it. Its
+subclasses, <span class="link"><a href="Gio.TlsClientConnection.html" title="Gio.TlsClientConnection">Gio.TlsClientConnection</a></span> and <span class="link"><a href="Gio.TlsServerConnection.html" title="Gio.TlsServerConnection">Gio.TlsServerConnection</a></span>,
+implement client-side and server-side TLS, respectively.</p>
+<p class="p">Since 2.28</p>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
+<div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
+<div>
+        <span class="code">GObject.Object</span>
+      
+      </div>
+<ul class="tree"><li class="tree">
+<div>
+        <span class="code">Gio.IOStream</span>
+      
+      </div>
+<ul class="tree"><li class="tree"><div>
+        <span class="code">Gio.TlsConnection</span>
+      </div></li></ul>
+</li></ul>
+</li></ul></div></div></div></div></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.TlsConnection.emit_accept_certificate.html" title="Gio.TlsConnection.prototype.emit_accept_certificate">Gio.TlsConnection.prototype.emit_accept_certificate</a></li>
+<li class="links "><a href="Gio.TlsConnection.get_certificate.html" title="Gio.TlsConnection.prototype.get_certificate">Gio.TlsConnection.prototype.get_certificate</a></li>
+<li class="links "><a href="Gio.TlsConnection.get_database.html" title="Gio.TlsConnection.prototype.get_database">Gio.TlsConnection.prototype.get_database</a></li>
+<li class="links "><a href="Gio.TlsConnection.get_interaction.html" title="Gio.TlsConnection.prototype.get_interaction">Gio.TlsConnection.prototype.get_interaction</a></li>
+<li class="links "><a href="Gio.TlsConnection.get_peer_certificate.html" title="Gio.TlsConnection.prototype.get_peer_certificate">Gio.TlsConnection.prototype.get_peer_certificate</a></li>
+<li class="links "><a href="Gio.TlsConnection.get_peer_certificate_errors.html" title="Gio.TlsConnection.prototype.get_peer_certificate_errors">Gio.TlsConnection.prototype.get_peer_certificate_errors</a></li>
+<li class="links "><a href="Gio.TlsConnection.get_rehandshake_mode.html" title="Gio.TlsConnection.prototype.get_rehandshake_mode">Gio.TlsConnection.prototype.get_rehandshake_mode</a></li>
+<li class="links "><a href="Gio.TlsConnection.get_require_close_notify.html" title="Gio.TlsConnection.prototype.get_require_close_notify">Gio.TlsConnection.prototype.get_require_close_notify</a></li>
+<li class="links "><a href="Gio.TlsConnection.get_use_system_certdb.html" title="Gio.TlsConnection.prototype.get_use_system_certdb">Gio.TlsConnection.prototype.get_use_system_certdb</a></li>
+<li class="links "><a href="Gio.TlsConnection.handshake.html" title="Gio.TlsConnection.prototype.handshake">Gio.TlsConnection.prototype.handshake</a></li>
+<li class="links "><a href="Gio.TlsConnection.handshake_async.html" title="Gio.TlsConnection.prototype.handshake_async">Gio.TlsConnection.prototype.handshake_async</a></li>
+<li class="links "><a href="Gio.TlsConnection.handshake_finish.html" title="Gio.TlsConnection.prototype.handshake_finish">Gio.TlsConnection.prototype.handshake_finish</a></li>
+<li class="links "><a href="Gio.TlsConnection.set_certificate.html" title="Gio.TlsConnection.prototype.set_certificate">Gio.TlsConnection.prototype.set_certificate</a></li>
+<li class="links "><a href="Gio.TlsConnection.set_database.html" title="Gio.TlsConnection.prototype.set_database">Gio.TlsConnection.prototype.set_database</a></li>
+<li class="links "><a href="Gio.TlsConnection.set_interaction.html" title="Gio.TlsConnection.prototype.set_interaction">Gio.TlsConnection.prototype.set_interaction</a></li>
+<li class="links "><a href="Gio.TlsConnection.set_rehandshake_mode.html" title="Gio.TlsConnection.prototype.set_rehandshake_mode">Gio.TlsConnection.prototype.set_rehandshake_mode</a></li>
+<li class="links "><a href="Gio.TlsConnection.set_require_close_notify.html" title="Gio.TlsConnection.prototype.set_require_close_notify">Gio.TlsConnection.prototype.set_require_close_notify</a></li>
+<li class="links "><a href="Gio.TlsConnection.set_use_system_certdb.html" title="Gio.TlsConnection.prototype.set_use_system_certdb">Gio.TlsConnection.prototype.set_use_system_certdb</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Properties</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.TlsConnection-base-io-stream.html" title="Gio.TlsConnection.base_io_stream">base-io-stream</a></li>
+<li class="links "><a href="Gio.TlsConnection-certificate.html" title="Gio.TlsConnection.certificate">certificate</a></li>
+<li class="links "><a href="Gio.TlsConnection-database.html" title="Gio.TlsConnection.database">database</a></li>
+<li class="links "><a href="Gio.TlsConnection-interaction.html" title="Gio.TlsConnection.interaction">interaction</a></li>
+<li class="links "><a href="Gio.TlsConnection-peer-certificate.html" title="Gio.TlsConnection.peer_certificate">peer-certificate</a></li>
+<li class="links "><a href="Gio.TlsConnection-peer-certificate-errors.html" title="Gio.TlsConnection.peer_certificate_errors">peer-certificate-errors</a></li>
+<li class="links "><a href="Gio.TlsConnection-rehandshake-mode.html" title="Gio.TlsConnection.rehandshake_mode">rehandshake-mode</a></li>
+<li class="links "><a href="Gio.TlsConnection-require-close-notify.html" title="Gio.TlsConnection.require_close_notify">require-close-notify</a></li>
+<li class="links "><a href="Gio.TlsConnection-use-system-certdb.html" title="Gio.TlsConnection.use_system_certdb">use-system-certdb</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Signals</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.TlsConnection-accept-certificate.html" title="Gio.TlsConnection::accept-certificate">accept-certificate</a></li></ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Virtual functions</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.TlsConnection-accept_certificate.html" title="Gio.TlsConnection::accept_certificate">Gio.TlsConnection::accept_certificate</a></li>
+<li class="links "><a href="Gio.TlsConnection-handshake.html" title="Gio.TlsConnection::handshake">Gio.TlsConnection::handshake</a></li>
+<li class="links "><a href="Gio.TlsConnection-handshake_async.html" title="Gio.TlsConnection::handshake_async">Gio.TlsConnection::handshake_async</a></li>
+<li class="links "><a href="Gio.TlsConnection-handshake_finish.html" title="Gio.TlsConnection::handshake_finish">Gio.TlsConnection::handshake_finish</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gio">Gio</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

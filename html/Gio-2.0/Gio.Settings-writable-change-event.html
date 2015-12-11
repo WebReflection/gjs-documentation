@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.Settings::writable-change-event</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.Settings.html" title="Gio.Settings">Gio.Settings</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.Settings::writable-change-event</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">connect('writable-change-event', function (settings, key: Number(guint), ): Boolean);
+  </pre></div></div></div></div></div>
+<p class="p">The "writable-change-event" signal is emitted once per writability
+change event that affects this settings object.  You should connect
+to this signal if you are interested in viewing groups of changes
+before they are split out into multiple emissions of the
+"writable-changed" signal.  For most use cases it is more
+appropriate to use the "writable-changed" signal.</p>
+<p class="p">In the event that the writability change applies only to a single
+key, <span class="code">key</span> will be set to the <span class="link"><a href="../GLib-2.0/GLib.Quark.html" title="../GLib-2.0/GLib.Quark.html">GLib.Quark</a></span> for that key.  In the event
+that the writability change affects the entire settings object,
+<span class="code">key</span> will be 0.</p>
+<p class="p">The default handler for this signal invokes the "writable-changed"
+and "changed" signals for each affected key.  This is done because
+changes in writability might also imply changes in value (if for
+example, a new mandatory setting is introduced).  If any other
+connected handler returns <span class="code">true</span> then this default functionality
+will be suppressed.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">settings</span></dt>
+<dd class="terms"><p class="p">instance of <span class="link"><a href="Gio.Settings.html" title="Gio.Settings">Gio.Settings</a></span> that is emitting the signal</p></dd>
+<dt class="terms"><span class="code">key</span></dt>
+<dd class="terms"><p class="p">the quark of the key, or 0</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> to stop other handlers from being invoked for the
+         event. FALSE to propagate the event further.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.Settings.html" title="Gio.Settings">Gio.Settings</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

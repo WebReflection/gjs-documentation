@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.UnixFDMessage.prototype.steal_fds</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.UnixFDMessage.html" title="Gio.UnixFDMessage">Gio.UnixFDMessage</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.UnixFDMessage.prototype.steal_fds</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function steal_fds(): [return_value: Array(Number(gint)), length: Number(gint)] {
+    // Gjs wrapper for g_unix_fd_message_steal_fds()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Returns the array of file descriptors that is contained in this
+object.</p>
+<p class="p">After this call, the descriptors are no longer contained in
+<span class="code">message</span>. Further calls will return an empty list (unless more
+descriptors have been added).</p>
+<p class="p">The return result of this function must be freed with <span class="link"><a href="../GLib-2.0/GLib.free.html" title="../GLib-2.0/GLib.free.html">GLib.free</a></span>.
+The caller is also responsible for closing all of the file
+descriptors.</p>
+<p class="p">If <span class="code">length</span> is non-<span class="code">null</span> then it is set to the number of file
+descriptors in the returned array. The returned array is also
+terminated with -1.</p>
+<p class="p">This function never returns <span class="code">null</span>. In case there are no file
+descriptors contained in <span class="code">message</span>, an empty array is returned.</p>
+<p class="p">Since 2.22</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">return_value</span></dt>
+<dd class="terms"><p class="p">an array of file
+    descriptors</p></dd>
+<dt class="terms"><span class="code">length</span></dt>
+<dd class="terms"><p class="p">pointer to the length of the returned
+    array, or <span class="code">null</span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.UnixFDMessage.html" title="Gio.UnixFDMessage">Gio.UnixFDMessage</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

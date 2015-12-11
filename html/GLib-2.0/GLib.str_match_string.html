@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.str_match_string</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.str_match_string</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function str_match_string(search_term: String, potential_hit: String, accept_alternates: Boolean): Boolean {
+    // Gjs wrapper for g_str_match_string()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Checks if a search conducted for <span class="code">search_term</span> should match
+<span class="code">potential_hit</span>.</p>
+<p class="p">This function calls <span class="link"><a href="GLib.str_tokenize_and_fold.html" title="GLib.str_tokenize_and_fold">GLib.str_tokenize_and_fold</a></span> on both
+<span class="code">search_term</span> and <span class="code">potential_hit</span>.  ASCII alternates are never taken
+for <span class="code">search_term</span> but will be taken for <span class="code">potential_hit</span> according to
+the value of <span class="code">accept_alternates</span>.</p>
+<p class="p">A hit occurs when each folded token in <span class="code">search_term</span> is a prefix of a
+folded token from <span class="code">potential_hit</span>.</p>
+<p class="p">Depending on how you're performing the search, it will typically be
+faster to call <span class="link"><a href="GLib.str_tokenize_and_fold.html" title="GLib.str_tokenize_and_fold">GLib.str_tokenize_and_fold</a></span> on each string in
+your corpus and build an index on the returned folded tokens, then
+call <span class="link"><a href="GLib.str_tokenize_and_fold.html" title="GLib.str_tokenize_and_fold">GLib.str_tokenize_and_fold</a></span> on the search term and
+perform lookups into that index.</p>
+<p class="p">As some examples, searching for "fred" would match the potential hit
+"Smith, Fred" and also "Frédéric".  Searching for "Fréd" would match
+"Frédéric" but not "Frederic" (due to the one-directional nature of
+accent matching).  Searching "fo" would match "Foo" and "Bar Foo
+Baz", but not "SFO" (because no word as "fo" as a prefix).</p>
+<p class="p">Since 2.40</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">search_term</span></dt>
+<dd class="terms"><p class="p">the search term from the user</p></dd>
+<dt class="terms"><span class="code">potential_hit</span></dt>
+<dd class="terms"><p class="p">the text that may be a hit</p></dd>
+<dt class="terms"><span class="code">accept_alternates</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> to accept ASCII alternates</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> if <span class="code">potential_hit</span> is a hit</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="GLib">GLib</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

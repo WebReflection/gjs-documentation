@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.DBusConnection.prototype.send_message_with_reply_sync</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.DBusConnection.html" title="Gio.DBusConnection">Gio.DBusConnection</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.DBusConnection.prototype.send_message_with_reply_sync</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function send_message_with_reply_sync(message: <span class="link"><a href="Gio.DBusMessage.html" title="Gio.DBusMessage">Gio.DBusMessage</a></span>, flags: <span class="link"><a href="Gio.DBusSendMessageFlags.html" title="Gio.DBusSendMessageFlags">Gio.DBusSendMessageFlags</a></span>, timeout_msec: Number(gint), cancellable: <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span>): [return_value: <span class="link"><a href="Gio.DBusMessage.html" title="Gio.DBusMessage">Gio.DBusMessage</a></span>, out_serial: Number(guint32)] {
+    // Gjs wrapper for g_dbus_connection_send_message_with_reply_sync()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Synchronously sends <span class="code">message</span> to the peer represented by <span class="code">connection</span>
+and blocks the calling thread until a reply is received or the
+timeout is reached. See <span class="link"><a href="Gio.DBusConnection.send_message_with_reply.html" title="Gio.DBusConnection.prototype.send_message_with_reply">Gio.DBusConnection.prototype.send_message_with_reply</a></span>
+for the asynchronous version of this method.</p>
+<p class="p">Unless <span class="code">flags</span> contain the
+<span class="link"><a href="Gio.DBusSendMessageFlags.html" title="Gio.DBusSendMessageFlags">Gio.DBusSendMessageFlags</a></span>.preserve_serial flag, the serial number
+will be assigned by <span class="code">connection</span> and set on <span class="code">message</span> via
+<span class="link"><a href="Gio.DBusMessage.set_serial.html" title="Gio.DBusMessage.prototype.set_serial">Gio.DBusMessage.prototype.set_serial</a></span>. If <span class="code">out_serial</span> is not <span class="code">null</span>, then the
+serial number used will be written to this location prior to
+submitting the message to the underlying transport.</p>
+<p class="p">If <span class="code">connection</span> is closed then the operation will fail with
+<span class="link"><a href="Gio.IOErrorEnum.html" title="Gio.IOErrorEnum">Gio.IOErrorEnum</a></span>.closed. If <span class="code">cancellable</span> is canceled, the operation will
+fail with <span class="link"><a href="Gio.IOErrorEnum.html" title="Gio.IOErrorEnum">Gio.IOErrorEnum</a></span>.cancelled. If <span class="code">message</span> is not well-formed,
+the operation fails with <span class="link"><a href="Gio.IOErrorEnum.html" title="Gio.IOErrorEnum">Gio.IOErrorEnum</a></span>.invalid_argument.</p>
+<p class="p">Note that @error is only set if a local in-process error
+occurred. That is to say that the returned <span class="link"><a href="Gio.DBusMessage.html" title="Gio.DBusMessage">Gio.DBusMessage</a></span> object may
+be of type <span class="link"><a href="Gio.DBusMessageType.html" title="Gio.DBusMessageType">Gio.DBusMessageType</a></span>.error. Use
+<span class="link"><a href="Gio.DBusMessage.to_gerror.html" title="Gio.DBusMessage.prototype.to_gerror">Gio.DBusMessage.prototype.to_gerror</a></span> to transcode this to a <span class="link"><a href="../GLib-2.0/GLib.Error.html" title="../GLib-2.0/GLib.Error.html">GLib.Error</a></span>.</p>
+<p class="p">See this [server][gdbus-server] and [client][gdbus-unix-fd-client]
+for an example of how to use this low-level API to send and receive
+UNIX file descriptors.</p>
+<p class="p">Note that <span class="code">message</span> must be unlocked, unless <span class="code">flags</span> contain the
+<span class="link"><a href="Gio.DBusSendMessageFlags.html" title="Gio.DBusSendMessageFlags">Gio.DBusSendMessageFlags</a></span>.preserve_serial flag.</p>
+<p class="p">Since 2.26</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">message</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="Gio.DBusMessage.html" title="Gio.DBusMessage">Gio.DBusMessage</a></span></p></dd>
+<dt class="terms"><span class="code">flags</span></dt>
+<dd class="terms"><p class="p">flags affecting how the message is sent.</p></dd>
+<dt class="terms"><span class="code">timeout_msec</span></dt>
+<dd class="terms"><p class="p">the timeout in milliseconds, -1 to use the default
+    timeout or %G_MAXINT for no timeout</p></dd>
+<dt class="terms"><span class="code">cancellable</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span> or <span class="code">null</span></p></dd>
+<dt class="terms"><span class="code">return_value</span></dt>
+<dd class="terms"><p class="p">a locked <span class="link"><a href="Gio.DBusMessage.html" title="Gio.DBusMessage">Gio.DBusMessage</a></span> that is the reply
+    to <span class="code">message</span> or <span class="code">null</span> if @error is set</p></dd>
+<dt class="terms"><span class="code">out_serial</span></dt>
+<dd class="terms"><p class="p">return location for serial number
+    assigned to <span class="code">message</span> when sending it or <span class="code">null</span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.DBusConnection.html" title="Gio.DBusConnection">Gio.DBusConnection</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

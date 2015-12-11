@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.File::replace</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.File.html" title="Gio.File">Gio.File</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.File::replace</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function vfunc_replace(etag: String, make_backup: Boolean, flags: <span class="link"><a href="Gio.FileCreateFlags.html" title="Gio.FileCreateFlags">Gio.FileCreateFlags</a></span>, cancellable: <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span>): <span class="link"><a href="Gio.FileOutputStream.html" title="Gio.FileOutputStream">Gio.FileOutputStream</a></span> {
+}
+  </pre></div></div></div></div></div>
+<p class="p">Returns an output stream for overwriting the file, possibly
+creating a backup copy of the file first. If the file doesn't exist,
+it will be created.</p>
+<p class="p">This will try to replace the file in the safest way possible so
+that any errors during the writing will not affect an already
+existing copy of the file. For instance, for local files it
+may write to a temporary file and then atomically rename over
+the destination when the stream is closed.</p>
+<p class="p">By default files created are generally readable by everyone,
+but if you pass #G_FILE_CREATE_PRIVATE in <span class="code">flags</span> the file
+will be made readable only to the current user, to the level that
+is supported on the target filesystem.</p>
+<p class="p">If <span class="code">cancellable</span> is not <span class="code">null</span>, then the operation can be cancelled
+by triggering the cancellable object from another thread. If the
+operation was cancelled, the error <span class="link"><a href="Gio.IOErrorEnum.html" title="Gio.IOErrorEnum">Gio.IOErrorEnum</a></span>.cancelled will be
+returned.</p>
+<p class="p">If you pass in a non-<span class="code">null</span> <span class="code">etag</span> value, then this value is
+compared to the current entity tag of the file, and if they differ
+an <span class="link"><a href="Gio.IOErrorEnum.html" title="Gio.IOErrorEnum">Gio.IOErrorEnum</a></span>.wrong_etag error is returned. This generally means
+that the file has been changed since you last read it. You can get
+the new etag from <span class="link"><a href="Gio.FileOutputStream.get_etag.html" title="Gio.FileOutputStream.prototype.get_etag">Gio.FileOutputStream.prototype.get_etag</a></span> after you've
+finished writing and closed the <span class="link"><a href="Gio.FileOutputStream.html" title="Gio.FileOutputStream">Gio.FileOutputStream</a></span>. When you load
+a new file you can use <span class="link"><a href="Gio.FileInputStream.query_info.html" title="Gio.FileInputStream.prototype.query_info">Gio.FileInputStream.prototype.query_info</a></span> to get
+the etag of the file.</p>
+<p class="p">If <span class="code">make_backup</span> is <span class="code">true</span>, this function will attempt to make a
+backup of the current file before overwriting it. If this fails
+a <span class="link"><a href="Gio.IOErrorEnum.html" title="Gio.IOErrorEnum">Gio.IOErrorEnum</a></span>.cant_create_backup error will be returned. If you
+want to replace anyway, try again with <span class="code">make_backup</span> set to <span class="code">false</span>.</p>
+<p class="p">If the file is a directory the <span class="link"><a href="Gio.IOErrorEnum.html" title="Gio.IOErrorEnum">Gio.IOErrorEnum</a></span>.is_directory error will
+be returned, and if the file is some other form of non-regular file
+then a <span class="link"><a href="Gio.IOErrorEnum.html" title="Gio.IOErrorEnum">Gio.IOErrorEnum</a></span>.not_regular_file error will be returned. Some
+file systems don't allow all file names, and may return an
+<span class="link"><a href="Gio.IOErrorEnum.html" title="Gio.IOErrorEnum">Gio.IOErrorEnum</a></span>.invalid_filename error, and if the name is to long
+<span class="link"><a href="Gio.IOErrorEnum.html" title="Gio.IOErrorEnum">Gio.IOErrorEnum</a></span>.filename_too_long will be returned. Other errors are
+possible too, and depend on what kind of filesystem the file is on.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">etag</span></dt>
+<dd class="terms"><p class="p">an optional [entity tag][gfile-etag]
+    for the current <span class="link"><a href="Gio.File.html" title="Gio.File">Gio.File</a></span>, or #NULL to ignore</p></dd>
+<dt class="terms"><span class="code">make_backup</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> if a backup should be created</p></dd>
+<dt class="terms"><span class="code">flags</span></dt>
+<dd class="terms"><p class="p">a set of <span class="link"><a href="Gio.FileCreateFlags.html" title="Gio.FileCreateFlags">Gio.FileCreateFlags</a></span></p></dd>
+<dt class="terms"><span class="code">cancellable</span></dt>
+<dd class="terms"><p class="p">optional <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span> object,
+    <span class="code">null</span> to ignore</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="Gio.FileOutputStream.html" title="Gio.FileOutputStream">Gio.FileOutputStream</a></span> or <span class="code">null</span> on error.
+    Free the returned object with <span class="link"><a href="../GObject-2.0/GObject.Object.unref.html" title="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</a></span>.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.File.html" title="Gio.File">Gio.File</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

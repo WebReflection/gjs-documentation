@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.Application::handle-local-options</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.Application.html" title="Gio.Application">Gio.Application</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.Application::handle-local-options</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">connect('handle-local-options', function (application, options: <span class="link"><a href="../GLib-2.0/GLib.VariantDict.html" title="../GLib-2.0/GLib.VariantDict.html">GLib.VariantDict</a></span>, ): Number(gint));
+  </pre></div></div></div></div></div>
+<p class="p">The ::handle-local-options signal is emitted on the local instance
+after the parsing of the commandline options has occurred.</p>
+<p class="p">You can add options to be recognised during commandline option
+parsing using <span class="link"><a href="Gio.Application.add_main_option_entries.html" title="Gio.Application.prototype.add_main_option_entries">Gio.Application.prototype.add_main_option_entries</a></span> and
+<span class="link"><a href="Gio.Application.add_option_group.html" title="Gio.Application.prototype.add_option_group">Gio.Application.prototype.add_option_group</a></span>.</p>
+<p class="p">Signal handlers can inspect <span class="code">options</span> (along with values pointed to
+from the @arg_data of an installed #GOptionEntrys) in order to
+decide to perform certain actions, including direct local handling
+(which may be useful for options like --version).</p>
+<p class="p">If the options have been "handled" then a non-negative value should
+be returned.   In this case, the return value is the exit status: 0
+for success and a positive value for failure.  -1 means to continue
+normal processing.</p>
+<p class="p">In the event that the application is marked
+<span class="link"><a href="Gio.ApplicationFlags.html" title="Gio.ApplicationFlags">Gio.ApplicationFlags</a></span>.handles_command_line the "normal processing" will
+send the @option dictionary to the primary instance where it can be
+read with g_application_command_line_get_options().  The signal
+handler can modify the dictionary before returning, and the
+modified dictionary will be sent.</p>
+<p class="p">In the event that <span class="link"><a href="Gio.ApplicationFlags.html" title="Gio.ApplicationFlags">Gio.ApplicationFlags</a></span>.handles_command_line is not set,
+"normal processing" will treat the remaining uncollected command
+line arguments as filenames or URIs.  If there are no arguments,
+the application is activated by <span class="link"><a href="Gio.Application.activate.html" title="Gio.Application.prototype.activate">Gio.Application.prototype.activate</a></span>.  One or
+more arguments results in a call to <span class="link"><a href="Gio.Application.open.html" title="Gio.Application.prototype.open">Gio.Application.prototype.open</a></span>.</p>
+<p class="p">If you want to handle the local commandline arguments for yourself
+by converting them to calls to <span class="link"><a href="Gio.Application.open.html" title="Gio.Application.prototype.open">Gio.Application.prototype.open</a></span> or
+<span class="link"><a href="Gio.ActionGroup.activate_action.html" title="Gio.ActionGroup.prototype.activate_action">Gio.ActionGroup.prototype.activate_action</a></span> then you must be sure to register
+the application first.  You should probably not call
+<span class="link"><a href="Gio.Application.activate.html" title="Gio.Application.prototype.activate">Gio.Application.prototype.activate</a></span> for yourself, however: just return -1 and
+allow the default handler to do it for you.  This will ensure that
+the `--gapplication-service` switch works properly (i.e. no activation
+in that case).</p>
+<p class="p">Note that this signal is emitted from the default implementation of
+local_command_line().  If you override that function and don't
+chain up then this signal will never be emitted.</p>
+<p class="p">You can override local_command_line() if you need more powerful
+capabilities than what is provided here, but this should not
+normally be required.</p>
+<p class="p">Since 2.40</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">application</span></dt>
+<dd class="terms"><p class="p">instance of <span class="link"><a href="Gio.Application.html" title="Gio.Application">Gio.Application</a></span> that is emitting the signal</p></dd>
+<dt class="terms"><span class="code">options</span></dt>
+<dd class="terms"><p class="p">the options dictionary</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.Application.html" title="Gio.Application">Gio.Application</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

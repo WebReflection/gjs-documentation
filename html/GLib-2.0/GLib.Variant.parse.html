@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.Variant.parse</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » <a class="trail" href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.Variant.parse</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function parse(type: <span class="link"><a href="GLib.VariantType.html" title="GLib.VariantType">GLib.VariantType</a></span>, text: String, limit: String, endptr: String): <span class="link"><a href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a></span> {
+    // Gjs wrapper for g_variant_parse()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Parses a <span class="link"><a href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a></span> from a text representation.</p>
+<p class="p">A single <span class="link"><a href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a></span> is parsed from the content of <span class="code">text</span>.</p>
+<p class="p">The format is described [here][gvariant-text].</p>
+<p class="p">The memory at <span class="code">limit</span> will never be accessed and the parser behaves as
+if the character at <span class="code">limit</span> is the nul terminator.  This has the
+effect of bounding <span class="code">text</span>.</p>
+<p class="p">If <span class="code">endptr</span> is non-<span class="code">null</span> then <span class="code">text</span> is permitted to contain data
+following the value that this function parses and <span class="code">endptr</span> will be
+updated to point to the first character past the end of the text
+parsed by this function.  If <span class="code">endptr</span> is <span class="code">null</span> and there is extra data
+then an error is returned.</p>
+<p class="p">If <span class="code">type</span> is non-<span class="code">null</span> then the value will be parsed to have that
+type.  This may result in additional parse errors (in the case that
+the parsed value doesn't fit the type) but may also result in fewer
+errors (in the case that the type would have been ambiguous, such as
+with empty arrays).</p>
+<p class="p">In the event that the parsing is successful, the resulting <span class="link"><a href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a></span>
+is returned.</p>
+<p class="p">In case of any error, <span class="code">null</span> will be returned.  If @error is non-<span class="code">null</span>
+then it will be set to reflect the error that occurred.</p>
+<p class="p">Officially, the language understood by the parser is "any string
+produced by <span class="link"><a href="GLib.Variant.print.html" title="GLib.Variant.prototype.print">GLib.Variant.prototype.print</a></span>".</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">type</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="GLib.VariantType.html" title="GLib.VariantType">GLib.VariantType</a></span>, or <span class="code">null</span></p></dd>
+<dt class="terms"><span class="code">text</span></dt>
+<dd class="terms"><p class="p">a string containing a GVariant in text form</p></dd>
+<dt class="terms"><span class="code">limit</span></dt>
+<dd class="terms"><p class="p">a pointer to the end of <span class="code">text</span>, or <span class="code">null</span></p></dd>
+<dt class="terms"><span class="code">endptr</span></dt>
+<dd class="terms"><p class="p">a location to store the end pointer, or <span class="code">null</span></p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">a reference to a <span class="link"><a href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a></span>, or <span class="code">null</span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

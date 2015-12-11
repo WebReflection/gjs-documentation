@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.unichar_compose</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.unichar_compose</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function unichar_compose(a: String, b: String, ch: String): Boolean {
+    // Gjs wrapper for g_unichar_compose()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Performs a single composition step of the
+Unicode canonical composition algorithm.</p>
+<p class="p">This function includes algorithmic Hangul Jamo composition,
+but it is not exactly the inverse of <span class="link"><a href="GLib.unichar_decompose.html" title="GLib.unichar_decompose">GLib.unichar_decompose</a></span>.
+No composition can have either of <span class="code">a</span> or <span class="code">b</span> equal to zero.
+To be precise, this function composes if and only if
+there exists a Primary Composite P which is canonically
+equivalent to the sequence &lt;<span class="code">a</span>,<span class="code">b</span>&gt;.  See the Unicode
+Standard for the definition of Primary Composite.</p>
+<p class="p">If <span class="code">a</span> and <span class="code">b</span> do not compose a new character, <span class="code">ch</span> is set to zero.</p>
+<p class="p">See
+[UAX#15](http://unicode.org/reports/tr15/)
+for details.</p>
+<p class="p">Since 2.30</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">a</span></dt>
+<dd class="terms"><p class="p">a Unicode character</p></dd>
+<dt class="terms"><span class="code">b</span></dt>
+<dd class="terms"><p class="p">a Unicode character</p></dd>
+<dt class="terms"><span class="code">ch</span></dt>
+<dd class="terms"><p class="p">return location for the composed character</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> if the characters could be composed</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="GLib">GLib</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

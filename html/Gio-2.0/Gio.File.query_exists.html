@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.File.prototype.query_exists</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.File.html" title="Gio.File">Gio.File</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.File.prototype.query_exists</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function query_exists(cancellable: <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span>): Boolean {
+    // Gjs wrapper for g_file_query_exists()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Utility function to check if a particular file exists. This is
+implemented using <span class="link"><a href="Gio.File.query_info.html" title="Gio.File.prototype.query_info">Gio.File.prototype.query_info</a></span> and as such does blocking I/O.</p>
+<p class="p">Note that in many cases it is racy to first check for file existence
+and then execute something based on the outcome of that, because the
+file might have been created or removed in between the operations. The
+general approach to handling that is to not check, but just do the
+operation and handle the errors as they come.</p>
+<p class="p">As an example of race-free checking, take the case of reading a file,
+and if it doesn't exist, creating it. There are two racy versions: read
+it, and on error create it; and: check if it exists, if not create it.
+These can both result in two processes creating the file (with perhaps
+a partially written file as the result). The correct approach is to
+always try to create the file with <span class="link"><a href="Gio.File.create.html" title="Gio.File.prototype.create">Gio.File.prototype.create</a></span> which will either
+atomically create the file or fail with a <span class="link"><a href="Gio.IOErrorEnum.html" title="Gio.IOErrorEnum">Gio.IOErrorEnum</a></span>.exists error.</p>
+<p class="p">However, in many cases an existence check is useful in a user interface,
+for instance to make a menu item sensitive/insensitive, so that you don't
+have to fool users that something is possible and then just show an error
+dialog. If you do this, you should make sure to also handle the errors
+that can happen due to races when you execute the operation.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">cancellable</span></dt>
+<dd class="terms"><p class="p">optional <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span> object,
+    <span class="code">null</span> to ignore</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> if the file exists (and can be detected without error),
+    <span class="code">false</span> otherwise (or if cancelled).</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.File.html" title="Gio.File">Gio.File</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

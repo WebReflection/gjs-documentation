@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.SocketService.prototype.stop</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.SocketService.html" title="Gio.SocketService">Gio.SocketService</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.SocketService.prototype.stop</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function stop(): void {
+    // Gjs wrapper for g_socket_service_stop()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Stops the service, i.e. stops accepting connections
+from the added sockets when the mainloop runs.</p>
+<p class="p">This call is thread-safe, so it may be called from a thread
+handling an incoming client request.</p>
+<p class="p">Note that this only stops accepting new connections; it does not
+close the listening sockets, and you can call
+<span class="link"><a href="Gio.SocketService.start.html" title="Gio.SocketService.prototype.start">Gio.SocketService.prototype.start</a></span> again later to begin listening again. To
+close the listening sockets, call <span class="link"><a href="Gio.SocketListener.close.html" title="Gio.SocketListener.prototype.close">Gio.SocketListener.prototype.close</a></span>. (This
+will happen automatically when the <span class="link"><a href="Gio.SocketService.html" title="Gio.SocketService">Gio.SocketService</a></span> is finalized.)</p>
+<p class="p">Since 2.22</p>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.SocketService.html" title="Gio.SocketService">Gio.SocketService</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

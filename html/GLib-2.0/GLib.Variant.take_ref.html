@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.Variant.prototype.take_ref</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » <a class="trail" href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.Variant.prototype.take_ref</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function take_ref(): <span class="link"><a href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a></span> {
+    // Gjs wrapper for g_variant_take_ref()
+}
+  </pre></div></div></div></div></div>
+<p class="p">If <span class="code">value</span> is floating, sink it.  Otherwise, do nothing.</p>
+<p class="p">Typically you want to use <span class="link"><a href="GLib.Variant.ref_sink.html" title="GLib.Variant.prototype.ref_sink">GLib.Variant.prototype.ref_sink</a></span> in order to
+automatically do the correct thing with respect to floating or
+non-floating references, but there is one specific scenario where
+this function is helpful.</p>
+<p class="p">The situation where this function is helpful is when creating an API
+that allows the user to provide a callback function that returns a
+<span class="link"><a href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a></span>.  We certainly want to allow the user the flexibility to
+return a non-floating reference from this callback (for the case
+where the value that is being returned already exists).</p>
+<p class="p">At the same time, the style of the <span class="link"><a href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a></span> API makes it likely that
+for newly-created <span class="link"><a href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a></span> instances, the user can be saved some
+typing if they are allowed to return a <span class="link"><a href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a></span> with a floating
+reference.</p>
+<p class="p">Using this function on the return value of the user's callback allows
+the user to do whichever is more convenient for them.  The caller
+will alway receives exactly one full reference to the value: either
+the one that was returned in the first place, or a floating reference
+that has been converted to a full reference.</p>
+<p class="p">This function has an odd interaction when combined with
+<span class="link"><a href="GLib.Variant.ref_sink.html" title="GLib.Variant.prototype.ref_sink">GLib.Variant.prototype.ref_sink</a></span> running at the same time in another thread on
+the same <span class="link"><a href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a></span> instance.  If <span class="link"><a href="GLib.Variant.ref_sink.html" title="GLib.Variant.prototype.ref_sink">GLib.Variant.prototype.ref_sink</a></span> runs first then
+the result will be that the floating reference is converted to a hard
+reference.  If <span class="link"><a href="GLib.Variant.take_ref.html" title="GLib.Variant.prototype.take_ref">GLib.Variant.prototype.take_ref</a></span> runs first then the result will
+be that the floating reference is converted to a hard reference and
+an additional reference on top of that one is added.  It is best to
+avoid this situation.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">the same <span class="code">value</span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

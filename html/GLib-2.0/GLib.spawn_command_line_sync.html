@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.spawn_command_line_sync</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.spawn_command_line_sync</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function spawn_command_line_sync(command_line: String): [ok: Boolean, standard_output: ByteArray, standard_error: ByteArray, exit_status: Number(gint)] {
+    // Gjs wrapper for g_spawn_command_line_sync()
+}
+  </pre></div></div></div></div></div>
+<p class="p">A simple version of <span class="link"><a href="GLib.spawn_sync.html" title="GLib.spawn_sync">GLib.spawn_sync</a></span> with little-used parameters
+removed, taking a command line instead of an argument vector.  See
+<span class="link"><a href="GLib.spawn_sync.html" title="GLib.spawn_sync">GLib.spawn_sync</a></span> for full details. <span class="code">command_line</span> will be parsed by
+<span class="link"><a href="GLib.shell_parse_argv.html" title="GLib.shell_parse_argv">GLib.shell_parse_argv</a></span>. Unlike <span class="link"><a href="GLib.spawn_sync.html" title="GLib.spawn_sync">GLib.spawn_sync</a></span>, the <span class="link"><a href="GLib.SpawnFlags.html" title="GLib.SpawnFlags">GLib.SpawnFlags</a></span>.search_path flag
+is enabled. Note that <span class="link"><a href="GLib.SpawnFlags.html" title="GLib.SpawnFlags">GLib.SpawnFlags</a></span>.search_path can have security
+implications, so consider using <span class="link"><a href="GLib.spawn_sync.html" title="GLib.spawn_sync">GLib.spawn_sync</a></span> directly if
+appropriate. Possible errors are those from <span class="link"><a href="GLib.spawn_sync.html" title="GLib.spawn_sync">GLib.spawn_sync</a></span> and those
+from <span class="link"><a href="GLib.shell_parse_argv.html" title="GLib.shell_parse_argv">GLib.shell_parse_argv</a></span>.</p>
+<p class="p">If <span class="code">exit_status</span> is non-<span class="code">null</span>, the platform-specific exit status of
+the child is stored there; see the documentation of
+<span class="link"><a href="GLib.spawn_check_exit_status.html" title="GLib.spawn_check_exit_status">GLib.spawn_check_exit_status</a></span> for how to use and interpret this.</p>
+<p class="p">On Windows, please note the implications of <span class="link"><a href="GLib.shell_parse_argv.html" title="GLib.shell_parse_argv">GLib.shell_parse_argv</a></span>
+parsing <span class="code">command_line</span>. Parsing is done according to Unix shell rules, not
+Windows command interpreter rules.
+Space is a separator, and backslashes are
+special. Thus you cannot simply pass a <span class="code">command_line</span> containing
+canonical Windows paths, like "c:\\program files\\app\\app.exe", as
+the backslashes will be eaten, and the space will act as a
+separator. You need to enclose such paths with single quotes, like
+"'c:\\program files\\app\\app.exe' 'e:\\folder\\argument.txt'".</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">command_line</span></dt>
+<dd class="terms"><p class="p">a command line</p></dd>
+<dt class="terms"><span class="code">ok</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> on success, <span class="code">false</span> if an error was set</p></dd>
+<dt class="terms"><span class="code">standard_output</span></dt>
+<dd class="terms"><p class="p">return location for child output</p></dd>
+<dt class="terms"><span class="code">standard_error</span></dt>
+<dd class="terms"><p class="p">return location for child errors</p></dd>
+<dt class="terms"><span class="code">exit_status</span></dt>
+<dd class="terms"><p class="p">return location for child exit status, as returned by waitpid()</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="GLib">GLib</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

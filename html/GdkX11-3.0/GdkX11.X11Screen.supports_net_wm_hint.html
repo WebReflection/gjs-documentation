@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GdkX11.X11Screen.prototype.supports_net_wm_hint</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GdkX11">GdkX11</a> » <a class="trail" href="GdkX11.X11Screen.html" title="GdkX11.X11Screen">GdkX11.X11Screen</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GdkX11.X11Screen.prototype.supports_net_wm_hint</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function supports_net_wm_hint(property: <span class="link"><a href="../Gdk-3.0/Gdk.Atom.html" title="../Gdk-3.0/Gdk.Atom.html">Gdk.Atom</a></span>): Boolean {
+    // Gjs wrapper for gdk_x11_screen_supports_net_wm_hint()
+}
+  </pre></div></div></div></div></div>
+<p class="p">This function is specific to the X11 backend of GDK, and indicates
+whether the window manager supports a certain hint from the
+[Extended Window Manager Hints](http://www.freedesktop.org/Standards/wm-spec) specification.</p>
+<p class="p">When using this function, keep in mind that the window manager
+can change over time; so you shouldn’t use this function in
+a way that impacts persistent application state. A common bug
+is that your application can start up before the window manager
+does when the user logs in, and before the window manager starts
+<span class="link"><a href="GdkX11.X11Screen.supports_net_wm_hint.html" title="GdkX11.X11Screen.prototype.supports_net_wm_hint">GdkX11.X11Screen.prototype.supports_net_wm_hint</a></span> will return <span class="code">false</span> for every property.
+You can monitor the window_manager_changed signal on <span class="link"><a href="../Gdk-3.0/Gdk.Screen.html" title="../Gdk-3.0/Gdk.Screen.html">Gdk.Screen</a></span> to detect
+a window manager change.</p>
+<p class="p">Since 2.2</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">property</span></dt>
+<dd class="terms"><p class="p">a property atom.</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> if the window manager supports <span class="code">property</span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="GdkX11.X11Screen.html" title="GdkX11.X11Screen">GdkX11.X11Screen</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

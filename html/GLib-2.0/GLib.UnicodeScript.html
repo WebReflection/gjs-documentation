@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.UnicodeScript</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.UnicodeScript</span></h1></div>
+<div class="region">
+<div class="contents">
+<p class="p">The <span class="link"><a href="GLib.UnicodeScript.html" title="GLib.UnicodeScript">GLib.UnicodeScript</a></span> enumeration identifies different writing
+systems. The values correspond to the names as defined in the
+Unicode standard. The enumeration has been added in GLib 2.14,
+and is interchangeable with #PangoScript.</p>
+<p class="p">Note that new types may be added in the future. Applications
+should be ready to handle unknown values.
+See &lt;ulink
+url="http://www.unicode.org/reports/tr24/"&gt;Unicode Standard Annex
+#24: Script names&lt;/ulink&gt;.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">UnicodeScript.INVALID_CODE</span></dt>
+<dd class="terms"><p class="p">a value never returned from <span class="link"><a href="GLib.unichar_get_script.html" title="GLib.unichar_get_script">GLib.unichar_get_script</a></span></p></dd>
+<dt class="terms"><span class="code">UnicodeScript.COMMON</span></dt>
+<dd class="terms"><p class="p">a character used by multiple different scripts</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.INHERITED</span></dt>
+<dd class="terms"><p class="p">a mark glyph that takes its script from the
+i                             base glyph to which it is attached</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.ARABIC</span></dt>
+<dd class="terms"><p class="p">Arabic</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.ARMENIAN</span></dt>
+<dd class="terms"><p class="p">Armenian</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.BENGALI</span></dt>
+<dd class="terms"><p class="p">Bengali</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.BOPOMOFO</span></dt>
+<dd class="terms"><p class="p">Bopomofo</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.CHEROKEE</span></dt>
+<dd class="terms"><p class="p">Cherokee</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.COPTIC</span></dt>
+<dd class="terms"><p class="p">Coptic</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.CYRILLIC</span></dt>
+<dd class="terms"><p class="p">Cyrillic</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.DESERET</span></dt>
+<dd class="terms"><p class="p">Deseret</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.DEVANAGARI</span></dt>
+<dd class="terms"><p class="p">Devanagari</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.ETHIOPIC</span></dt>
+<dd class="terms"><p class="p">Ethiopic</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.GEORGIAN</span></dt>
+<dd class="terms"><p class="p">Georgian</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.GOTHIC</span></dt>
+<dd class="terms"><p class="p">Gothic</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.GREEK</span></dt>
+<dd class="terms"><p class="p">Greek</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.GUJARATI</span></dt>
+<dd class="terms"><p class="p">Gujarati</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.GURMUKHI</span></dt>
+<dd class="terms"><p class="p">Gurmukhi</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.HAN</span></dt>
+<dd class="terms"><p class="p">Han</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.HANGUL</span></dt>
+<dd class="terms"><p class="p">Hangul</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.HEBREW</span></dt>
+<dd class="terms"><p class="p">Hebrew</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.HIRAGANA</span></dt>
+<dd class="terms"><p class="p">Hiragana</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.KANNADA</span></dt>
+<dd class="terms"><p class="p">Kannada</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.KATAKANA</span></dt>
+<dd class="terms"><p class="p">Katakana</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.KHMER</span></dt>
+<dd class="terms"><p class="p">Khmer</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.LAO</span></dt>
+<dd class="terms"><p class="p">Lao</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.LATIN</span></dt>
+<dd class="terms"><p class="p">Latin</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.MALAYALAM</span></dt>
+<dd class="terms"><p class="p">Malayalam</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.MONGOLIAN</span></dt>
+<dd class="terms"><p class="p">Mongolian</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.MYANMAR</span></dt>
+<dd class="terms"><p class="p">Myanmar</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.OGHAM</span></dt>
+<dd class="terms"><p class="p">Ogham</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.OLD_ITALIC</span></dt>
+<dd class="terms"><p class="p">Old Italic</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.ORIYA</span></dt>
+<dd class="terms"><p class="p">Oriya</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.RUNIC</span></dt>
+<dd class="terms"><p class="p">Runic</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.SINHALA</span></dt>
+<dd class="terms"><p class="p">Sinhala</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.SYRIAC</span></dt>
+<dd class="terms"><p class="p">Syriac</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.TAMIL</span></dt>
+<dd class="terms"><p class="p">Tamil</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.TELUGU</span></dt>
+<dd class="terms"><p class="p">Telugu</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.THAANA</span></dt>
+<dd class="terms"><p class="p">Thaana</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.THAI</span></dt>
+<dd class="terms"><p class="p">Thai</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.TIBETAN</span></dt>
+<dd class="terms"><p class="p">Tibetan</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.CANADIAN_ABORIGINAL</span></dt>
+<dd class="terms"><p class="p">Canadian Aboriginal</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.YI</span></dt>
+<dd class="terms"><p class="p">Yi</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.TAGALOG</span></dt>
+<dd class="terms"><p class="p">Tagalog</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.HANUNOO</span></dt>
+<dd class="terms"><p class="p">Hanunoo</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.BUHID</span></dt>
+<dd class="terms"><p class="p">Buhid</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.TAGBANWA</span></dt>
+<dd class="terms"><p class="p">Tagbanwa</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.BRAILLE</span></dt>
+<dd class="terms"><p class="p">Braille</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.CYPRIOT</span></dt>
+<dd class="terms"><p class="p">Cypriot</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.LIMBU</span></dt>
+<dd class="terms"><p class="p">Limbu</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.OSMANYA</span></dt>
+<dd class="terms"><p class="p">Osmanya</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.SHAVIAN</span></dt>
+<dd class="terms"><p class="p">Shavian</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.LINEAR_B</span></dt>
+<dd class="terms"><p class="p">Linear B</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.TAI_LE</span></dt>
+<dd class="terms"><p class="p">Tai Le</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.UGARITIC</span></dt>
+<dd class="terms"><p class="p">Ugaritic</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.NEW_TAI_LUE</span></dt>
+<dd class="terms"><p class="p">New Tai Lue</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.BUGINESE</span></dt>
+<dd class="terms"><p class="p">Buginese</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.GLAGOLITIC</span></dt>
+<dd class="terms"><p class="p">Glagolitic</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.TIFINAGH</span></dt>
+<dd class="terms"><p class="p">Tifinagh</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.SYLOTI_NAGRI</span></dt>
+<dd class="terms"><p class="p">Syloti Nagri</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.OLD_PERSIAN</span></dt>
+<dd class="terms"><p class="p">Old Persian</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.KHAROSHTHI</span></dt>
+<dd class="terms"><p class="p">Kharoshthi</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.UNKNOWN</span></dt>
+<dd class="terms"><p class="p">an unassigned code point</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.BALINESE</span></dt>
+<dd class="terms"><p class="p">Balinese</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.CUNEIFORM</span></dt>
+<dd class="terms"><p class="p">Cuneiform</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.PHOENICIAN</span></dt>
+<dd class="terms"><p class="p">Phoenician</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.PHAGS_PA</span></dt>
+<dd class="terms"><p class="p">Phags-pa</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.NKO</span></dt>
+<dd class="terms"><p class="p">N'Ko</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.KAYAH_LI</span></dt>
+<dd class="terms"><p class="p">Kayah Li. Since 2.16.3</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.LEPCHA</span></dt>
+<dd class="terms"><p class="p">Lepcha. Since 2.16.3</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.REJANG</span></dt>
+<dd class="terms"><p class="p">Rejang. Since 2.16.3</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.SUNDANESE</span></dt>
+<dd class="terms"><p class="p">Sundanese. Since 2.16.3</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.SAURASHTRA</span></dt>
+<dd class="terms"><p class="p">Saurashtra. Since 2.16.3</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.CHAM</span></dt>
+<dd class="terms"><p class="p">Cham. Since 2.16.3</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.OL_CHIKI</span></dt>
+<dd class="terms"><p class="p">Ol Chiki. Since 2.16.3</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.VAI</span></dt>
+<dd class="terms"><p class="p">Vai. Since 2.16.3</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.CARIAN</span></dt>
+<dd class="terms"><p class="p">Carian. Since 2.16.3</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.LYCIAN</span></dt>
+<dd class="terms"><p class="p">Lycian. Since 2.16.3</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.LYDIAN</span></dt>
+<dd class="terms"><p class="p">Lydian. Since 2.16.3</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.AVESTAN</span></dt>
+<dd class="terms"><p class="p">Avestan. Since 2.26</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.BAMUM</span></dt>
+<dd class="terms"><p class="p">Bamum. Since 2.26</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.EGYPTIAN_HIEROGLYPHS</span></dt>
+<dd class="terms"><p class="p">Egyptian Hieroglpyhs. Since 2.26</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.IMPERIAL_ARAMAIC</span></dt>
+<dd class="terms"><p class="p">Imperial Aramaic. Since 2.26</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.INSCRIPTIONAL_PAHLAVI</span></dt>
+<dd class="terms"><p class="p">Inscriptional Pahlavi. Since 2.26</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.INSCRIPTIONAL_PARTHIAN</span></dt>
+<dd class="terms"><p class="p">Inscriptional Parthian. Since 2.26</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.JAVANESE</span></dt>
+<dd class="terms"><p class="p">Javanese. Since 2.26</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.KAITHI</span></dt>
+<dd class="terms"><p class="p">Kaithi. Since 2.26</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.LISU</span></dt>
+<dd class="terms"><p class="p">Lisu. Since 2.26</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.MEETEI_MAYEK</span></dt>
+<dd class="terms"><p class="p">Meetei Mayek. Since 2.26</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.OLD_SOUTH_ARABIAN</span></dt>
+<dd class="terms"><p class="p">Old South Arabian. Since 2.26</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.OLD_TURKIC</span></dt>
+<dd class="terms"><p class="p">Old Turkic. Since 2.28</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.SAMARITAN</span></dt>
+<dd class="terms"><p class="p">Samaritan. Since 2.26</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.TAI_THAM</span></dt>
+<dd class="terms"><p class="p">Tai Tham. Since 2.26</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.TAI_VIET</span></dt>
+<dd class="terms"><p class="p">Tai Viet. Since 2.26</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.BATAK</span></dt>
+<dd class="terms"><p class="p">Batak. Since 2.28</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.BRAHMI</span></dt>
+<dd class="terms"><p class="p">Brahmi. Since 2.28</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.MANDAIC</span></dt>
+<dd class="terms"><p class="p">Mandaic. Since 2.28</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.CHAKMA</span></dt>
+<dd class="terms"><p class="p">Chakma. Since: 2.32</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.MEROITIC_CURSIVE</span></dt>
+<dd class="terms"><p class="p">Meroitic Cursive. Since: 2.32</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.MEROITIC_HIEROGLYPHS</span></dt>
+<dd class="terms"><p class="p">Meroitic Hieroglyphs. Since: 2.32</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.MIAO</span></dt>
+<dd class="terms"><p class="p">Miao. Since: 2.32</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.SHARADA</span></dt>
+<dd class="terms"><p class="p">Sharada. Since: 2.32</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.SORA_SOMPENG</span></dt>
+<dd class="terms"><p class="p">Sora Sompeng. Since: 2.32</p></dd>
+<dt class="terms"><span class="code">UnicodeScript.TAKRI</span></dt>
+<dd class="terms"><p class="p">Takri. Since: 2.32</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="GLib">GLib</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

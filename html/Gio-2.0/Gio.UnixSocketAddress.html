@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.UnixSocketAddress</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.UnixSocketAddress</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
+
+let unixSocketAddress = new Gio.UnixSocketAddress({
+    <span class="link"><a href="Gio.UnixSocketAddress-abstract.html" title="Gio.UnixSocketAddress.abstract">abstract</a></span>: value,
+    <span class="link"><a href="Gio.UnixSocketAddress-address-type.html" title="Gio.UnixSocketAddress.address_type">address_type</a></span>: value,
+    <span class="link"><a href="Gio.UnixSocketAddress-path.html" title="Gio.UnixSocketAddress.path">path</a></span>: value,
+    <span class="link"><a href="Gio.UnixSocketAddress-path-as-array.html" title="Gio.UnixSocketAddress.path_as_array">path_as_array</a></span>: value,
+});
+  </pre></div></div></div></div></div>
+<p class="p">Support for UNIX-domain (also known as local) sockets.</p>
+<p class="p">UNIX domain sockets are generally visible in the filesystem.
+However, some systems support abstract socket names which are not
+visible in the filesystem and not affected by the filesystem
+permissions, visibility, etc. Currently this is only supported
+under Linux. If you attempt to use abstract sockets on other
+systems, function calls may return <span class="link"><a href="Gio.IOErrorEnum.html" title="Gio.IOErrorEnum">Gio.IOErrorEnum</a></span>.not_supported
+errors. You can use <span class="link"><a href="Gio.UnixSocketAddress.abstract_names_supported.html" title="Gio.UnixSocketAddress.abstract_names_supported">Gio.UnixSocketAddress.abstract_names_supported</a></span>
+to see if abstract names are supported.</p>
+<p class="p">Note that `&lt;gio/gunixsocketaddress.h&gt;` belongs to the UNIX-specific GIO
+interfaces, thus you have to use the `gio-unix-2.0.pc` pkg-config file
+when using it.</p>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
+<div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
+<div>
+        <span class="code">GObject.Object</span>
+      
+      </div>
+<ul class="tree"><li class="tree">
+<div>
+        <span class="code">Gio.SocketAddress</span>
+      
+      </div>
+<ul class="tree"><li class="tree"><div>
+        <span class="code">Gio.UnixSocketAddress</span>
+      </div></li></ul>
+</li></ul>
+</li></ul></div></div></div></div></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.UnixSocketAddress.new.html" title="Gio.UnixSocketAddress.new">Gio.UnixSocketAddress.new</a></li>
+<li class="links "><a href="Gio.UnixSocketAddress.new_abstract.html" title="Gio.UnixSocketAddress.new_abstract">Gio.UnixSocketAddress.new_abstract</a></li>
+<li class="links "><a href="Gio.UnixSocketAddress.new_with_type.html" title="Gio.UnixSocketAddress.new_with_type">Gio.UnixSocketAddress.new_with_type</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.UnixSocketAddress.get_address_type.html" title="Gio.UnixSocketAddress.prototype.get_address_type">Gio.UnixSocketAddress.prototype.get_address_type</a></li>
+<li class="links "><a href="Gio.UnixSocketAddress.get_is_abstract.html" title="Gio.UnixSocketAddress.prototype.get_is_abstract">Gio.UnixSocketAddress.prototype.get_is_abstract</a></li>
+<li class="links "><a href="Gio.UnixSocketAddress.get_path.html" title="Gio.UnixSocketAddress.prototype.get_path">Gio.UnixSocketAddress.prototype.get_path</a></li>
+<li class="links "><a href="Gio.UnixSocketAddress.get_path_len.html" title="Gio.UnixSocketAddress.prototype.get_path_len">Gio.UnixSocketAddress.prototype.get_path_len</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Static Functions</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.UnixSocketAddress.abstract_names_supported.html" title="Gio.UnixSocketAddress.abstract_names_supported">Gio.UnixSocketAddress.abstract_names_supported</a></li></ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Properties</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.UnixSocketAddress-abstract.html" title="Gio.UnixSocketAddress.abstract">abstract</a></li>
+<li class="links "><a href="Gio.UnixSocketAddress-address-type.html" title="Gio.UnixSocketAddress.address_type">address-type</a></li>
+<li class="links "><a href="Gio.UnixSocketAddress-path.html" title="Gio.UnixSocketAddress.path">path</a></li>
+<li class="links "><a href="Gio.UnixSocketAddress-path-as-array.html" title="Gio.UnixSocketAddress.path_as_array">path-as-array</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gio">Gio</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

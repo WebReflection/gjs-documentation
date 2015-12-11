@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.DBusError.new_for_dbus_error</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.DBusError.html" title="Gio.DBusError">Gio.DBusError</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.DBusError.new_for_dbus_error</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function new_for_dbus_error(dbus_error_name: String, dbus_error_message: String): <span class="link"><a href="../GLib-2.0/GLib.Error.html" title="../GLib-2.0/GLib.Error.html">GLib.Error</a></span> {
+    // Gjs wrapper for g_dbus_error_new_for_dbus_error()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Creates a <span class="link"><a href="../GLib-2.0/GLib.Error.html" title="../GLib-2.0/GLib.Error.html">GLib.Error</a></span> based on the contents of <span class="code">dbus_error_name</span> and
+<span class="code">dbus_error_message</span>.</p>
+<p class="p">Errors registered with <span class="link"><a href="Gio.dbus_error_register_error.html" title="Gio.dbus_error_register_error">Gio.dbus_error_register_error</a></span> will be looked
+up using <span class="code">dbus_error_name</span> and if a match is found, the error domain
+and code is used. Applications can use <span class="link"><a href="Gio.dbus_error_get_remote_error.html" title="Gio.dbus_error_get_remote_error">Gio.dbus_error_get_remote_error</a></span>
+to recover <span class="code">dbus_error_name</span>.</p>
+<p class="p">If a match against a registered error is not found and the D-Bus
+error name is in a form as returned by <span class="link"><a href="Gio.dbus_error_encode_gerror.html" title="Gio.dbus_error_encode_gerror">Gio.dbus_error_encode_gerror</a></span>
+the error domain and code encoded in the name is used to
+create the <span class="link"><a href="../GLib-2.0/GLib.Error.html" title="../GLib-2.0/GLib.Error.html">GLib.Error</a></span>. Also, <span class="code">dbus_error_name</span> is added to the error message
+such that it can be recovered with <span class="link"><a href="Gio.dbus_error_get_remote_error.html" title="Gio.dbus_error_get_remote_error">Gio.dbus_error_get_remote_error</a></span>.</p>
+<p class="p">Otherwise, a <span class="link"><a href="../GLib-2.0/GLib.Error.html" title="../GLib-2.0/GLib.Error.html">GLib.Error</a></span> with the error code <span class="link"><a href="Gio.IOErrorEnum.html" title="Gio.IOErrorEnum">Gio.IOErrorEnum</a></span>.dbus_error
+in the #G_IO_ERROR error domain is returned. Also, <span class="code">dbus_error_name</span> is
+added to the error message such that it can be recovered with
+<span class="link"><a href="Gio.dbus_error_get_remote_error.html" title="Gio.dbus_error_get_remote_error">Gio.dbus_error_get_remote_error</a></span>.</p>
+<p class="p">In all three cases, <span class="code">dbus_error_name</span> can always be recovered from the
+returned <span class="link"><a href="../GLib-2.0/GLib.Error.html" title="../GLib-2.0/GLib.Error.html">GLib.Error</a></span> using the <span class="link"><a href="Gio.dbus_error_get_remote_error.html" title="Gio.dbus_error_get_remote_error">Gio.dbus_error_get_remote_error</a></span> function
+(unless <span class="link"><a href="Gio.dbus_error_strip_remote_error.html" title="Gio.dbus_error_strip_remote_error">Gio.dbus_error_strip_remote_error</a></span> hasn't been used on the returned error).</p>
+<p class="p">This function is typically only used in object mappings to prepare
+<span class="link"><a href="../GLib-2.0/GLib.Error.html" title="../GLib-2.0/GLib.Error.html">GLib.Error</a></span> instances for applications. Regular applications should not use
+it.</p>
+<p class="p">Since 2.26</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">dbus_error_name</span></dt>
+<dd class="terms"><p class="p">D-Bus error name.</p></dd>
+<dt class="terms"><span class="code">dbus_error_message</span></dt>
+<dd class="terms"><p class="p">D-Bus error message.</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">An allocated <span class="link"><a href="../GLib-2.0/GLib.Error.html" title="../GLib-2.0/GLib.Error.html">GLib.Error</a></span>. Free with <span class="link"><a href="../GLib-2.0/GLib.Error.free.html" title="../GLib-2.0/GLib.Error.free.html">GLib.Error.prototype.free</a></span>.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.DBusError.html" title="Gio.DBusError">Gio.DBusError</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

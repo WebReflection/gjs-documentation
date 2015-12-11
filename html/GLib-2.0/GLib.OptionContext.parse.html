@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.OptionContext.prototype.parse</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » <a class="trail" href="GLib.OptionContext.html" title="GLib.OptionContext">GLib.OptionContext</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.OptionContext.prototype.parse</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function parse(argv: Array(String)): [ok: Boolean, argv: Array(String)] {
+    // Gjs wrapper for g_option_context_parse()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Parses the command line arguments, recognizing options
+which have been added to <span class="code">context</span>. A side-effect of
+calling this function is that <span class="link"><a href="GLib.set_prgname.html" title="GLib.set_prgname">GLib.set_prgname</a></span> will be
+called.</p>
+<p class="p">If the parsing is successful, any parsed arguments are
+removed from the array and <span class="code">argc</span> and <span class="code">argv</span> are updated
+accordingly. A '--' option is stripped from <span class="code">argv</span>
+unless there are unparsed options before and after it,
+or some of the options after it start with '-'. In case
+of an error, <span class="code">argc</span> and <span class="code">argv</span> are left unmodified.</p>
+<p class="p">If automatic `--help` support is enabled
+(see <span class="link"><a href="GLib.OptionContext.set_help_enabled.html" title="GLib.OptionContext.prototype.set_help_enabled">GLib.OptionContext.prototype.set_help_enabled</a></span>), and the
+<span class="code">argv</span> array contains one of the recognized help options,
+this function will produce help output to stdout and
+call `exit (0)`.</p>
+<p class="p">Note that function depends on the [current locale][setlocale] for
+automatic character set conversion of string and filename
+arguments.</p>
+<p class="p">Since 2.6</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">argv</span></dt>
+<dd class="terms"><p class="p">a pointer to the array of command line arguments</p></dd>
+<dt class="terms"><span class="code">ok</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> if the parsing was successful,
+              <span class="code">false</span> if an error occurred</p></dd>
+<dt class="terms"><span class="code">argv (out)</span></dt>
+<dd class="terms"><p class="p">a pointer to the array of command line arguments</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="GLib.OptionContext.html" title="GLib.OptionContext">GLib.OptionContext</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

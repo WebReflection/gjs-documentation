@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.Resource.prototype.get_info</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.Resource.html" title="Gio.Resource">Gio.Resource</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.Resource.prototype.get_info</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function get_info(path: String, lookup_flags: <span class="link"><a href="Gio.ResourceLookupFlags.html" title="Gio.ResourceLookupFlags">Gio.ResourceLookupFlags</a></span>): [ok: Boolean, size: Number(gsize), flags: Number(guint32)] {
+    // Gjs wrapper for g_resource_get_info()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Looks for a file at the specified <span class="code">path</span> in the resource and
+if found returns information about it.</p>
+<p class="p"><span class="code">lookup_flags</span> controls the behaviour of the lookup.</p>
+<p class="p">Since 2.32</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">path</span></dt>
+<dd class="terms"><p class="p">A pathname inside the resource</p></dd>
+<dt class="terms"><span class="code">lookup_flags</span></dt>
+<dd class="terms"><p class="p">A <span class="link"><a href="Gio.ResourceLookupFlags.html" title="Gio.ResourceLookupFlags">Gio.ResourceLookupFlags</a></span></p></dd>
+<dt class="terms"><span class="code">ok</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> if the file was found. <span class="code">false</span> if there were errors</p></dd>
+<dt class="terms"><span class="code">size</span></dt>
+<dd class="terms"><p class="p">a location to place the length of the contents of the file,
+   or <span class="code">null</span> if the length is not needed</p></dd>
+<dt class="terms"><span class="code">flags</span></dt>
+<dd class="terms"><p class="p">a location to place the flags about the file,
+   or <span class="code">null</span> if the length is not needed</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.Resource.html" title="Gio.Resource">Gio.Resource</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.AppInfo::launch</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.AppInfo.html" title="Gio.AppInfo">Gio.AppInfo</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.AppInfo::launch</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function vfunc_launch(files: Array(<span class="link"><a href="Gio.File.html" title="Gio.File">Gio.File</a></span>), launch_context: <span class="link"><a href="Gio.AppLaunchContext.html" title="Gio.AppLaunchContext">Gio.AppLaunchContext</a></span>): Boolean {
+}
+  </pre></div></div></div></div></div>
+<p class="p">Launches the application. Passes <span class="code">files</span> to the launched application
+as arguments, using the optional <span class="code">launch_context</span> to get information
+about the details of the launcher (like what screen it is on).
+On error, @error will be set accordingly.</p>
+<p class="p">To launch the application without arguments pass a <span class="code">null</span> <span class="code">files</span> list.</p>
+<p class="p">Note that even if the launch is successful the application launched
+can fail to start if it runs into problems during startup. There is
+no way to detect this.</p>
+<p class="p">Some URIs can be changed when passed through a GFile (for instance
+unsupported URIs with strange formats like mailto:), so if you have
+a textual URI you want to pass in as argument, consider using
+<span class="link"><a href="Gio.AppInfo.launch_uris.html" title="Gio.AppInfo.prototype.launch_uris">Gio.AppInfo.prototype.launch_uris</a></span> instead.</p>
+<p class="p">The launched application inherits the environment of the launching
+process, but it can be modified with <span class="link"><a href="Gio.AppLaunchContext.setenv.html" title="Gio.AppLaunchContext.prototype.setenv">Gio.AppLaunchContext.prototype.setenv</a></span>
+and <span class="link"><a href="Gio.AppLaunchContext.unsetenv.html" title="Gio.AppLaunchContext.prototype.unsetenv">Gio.AppLaunchContext.prototype.unsetenv</a></span>.</p>
+<p class="p">On UNIX, this function sets the `GIO_LAUNCHED_DESKTOP_FILE`
+environment variable with the path of the launched desktop file and
+`GIO_LAUNCHED_DESKTOP_FILE_PID` to the process id of the launched
+process. This can be used to ignore `GIO_LAUNCHED_DESKTOP_FILE`,
+should it be inherited by further processes. The `DISPLAY` and
+`DESKTOP_STARTUP_ID` environment variables are also set, based
+on information provided in <span class="code">launch_context</span>.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">files</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="../GLib-2.0/GLib.List.html" title="../GLib-2.0/GLib.List.html">GLib.List</a></span> of <span class="link"><a href="Gio.File.html" title="Gio.File">Gio.File</a></span> objects</p></dd>
+<dt class="terms"><span class="code">launch_context</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="Gio.AppLaunchContext.html" title="Gio.AppLaunchContext">Gio.AppLaunchContext</a></span> or <span class="code">null</span></p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> on successful launch, <span class="code">false</span> otherwise.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.AppInfo.html" title="Gio.AppInfo">Gio.AppInfo</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

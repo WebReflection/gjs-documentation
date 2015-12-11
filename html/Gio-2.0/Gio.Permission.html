@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.Permission</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.Permission</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
+
+let permission = new Gio.Permission({
+});
+  </pre></div></div></div></div></div>
+<p class="p">A <span class="link"><a href="Gio.Permission.html" title="Gio.Permission">Gio.Permission</a></span> represents the status of the caller's permission to
+perform a certain action.</p>
+<p class="p">You can query if the action is currently allowed and if it is
+possible to acquire the permission so that the action will be allowed
+in the future.</p>
+<p class="p">There is also an API to actually acquire the permission and one to
+release it.</p>
+<p class="p">As an example, a <span class="link"><a href="Gio.Permission.html" title="Gio.Permission">Gio.Permission</a></span> might represent the ability for the
+user to write to a <span class="link"><a href="Gio.Settings.html" title="Gio.Settings">Gio.Settings</a></span> object.  This <span class="link"><a href="Gio.Permission.html" title="Gio.Permission">Gio.Permission</a></span> object could
+then be used to decide if it is appropriate to show a "Click here to
+unlock" button in a dialog and to provide the mechanism to invoke
+when that button is clicked.</p>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
+<div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
+<div>
+        <span class="code">GObject.Object</span>
+      
+      </div>
+<ul class="tree"><li class="tree"><div>
+        <span class="code">Gio.Permission</span>
+      </div></li></ul>
+</li></ul></div></div></div></div></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.Permission.acquire.html" title="Gio.Permission.prototype.acquire">Gio.Permission.prototype.acquire</a></li>
+<li class="links "><a href="Gio.Permission.acquire_async.html" title="Gio.Permission.prototype.acquire_async">Gio.Permission.prototype.acquire_async</a></li>
+<li class="links "><a href="Gio.Permission.acquire_finish.html" title="Gio.Permission.prototype.acquire_finish">Gio.Permission.prototype.acquire_finish</a></li>
+<li class="links "><a href="Gio.Permission.get_allowed.html" title="Gio.Permission.prototype.get_allowed">Gio.Permission.prototype.get_allowed</a></li>
+<li class="links "><a href="Gio.Permission.get_can_acquire.html" title="Gio.Permission.prototype.get_can_acquire">Gio.Permission.prototype.get_can_acquire</a></li>
+<li class="links "><a href="Gio.Permission.get_can_release.html" title="Gio.Permission.prototype.get_can_release">Gio.Permission.prototype.get_can_release</a></li>
+<li class="links "><a href="Gio.Permission.impl_update.html" title="Gio.Permission.prototype.impl_update">Gio.Permission.prototype.impl_update</a></li>
+<li class="links "><a href="Gio.Permission.release.html" title="Gio.Permission.prototype.release">Gio.Permission.prototype.release</a></li>
+<li class="links "><a href="Gio.Permission.release_async.html" title="Gio.Permission.prototype.release_async">Gio.Permission.prototype.release_async</a></li>
+<li class="links "><a href="Gio.Permission.release_finish.html" title="Gio.Permission.prototype.release_finish">Gio.Permission.prototype.release_finish</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Properties</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.Permission-allowed.html" title="Gio.Permission.allowed">allowed</a></li>
+<li class="links "><a href="Gio.Permission-can-acquire.html" title="Gio.Permission.can_acquire">can-acquire</a></li>
+<li class="links "><a href="Gio.Permission-can-release.html" title="Gio.Permission.can_release">can-release</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Virtual functions</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.Permission-acquire.html" title="Gio.Permission::acquire">Gio.Permission::acquire</a></li>
+<li class="links "><a href="Gio.Permission-acquire_async.html" title="Gio.Permission::acquire_async">Gio.Permission::acquire_async</a></li>
+<li class="links "><a href="Gio.Permission-acquire_finish.html" title="Gio.Permission::acquire_finish">Gio.Permission::acquire_finish</a></li>
+<li class="links "><a href="Gio.Permission-release.html" title="Gio.Permission::release">Gio.Permission::release</a></li>
+<li class="links "><a href="Gio.Permission-release_async.html" title="Gio.Permission::release_async">Gio.Permission::release_async</a></li>
+<li class="links "><a href="Gio.Permission-release_finish.html" title="Gio.Permission::release_finish">Gio.Permission::release_finish</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gio">Gio</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

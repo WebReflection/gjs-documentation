@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.FileEnumerator::close_finish</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.FileEnumerator.html" title="Gio.FileEnumerator">Gio.FileEnumerator</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.FileEnumerator::close_finish</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function vfunc_close_finish(result: <span class="link"><a href="Gio.AsyncResult.html" title="Gio.AsyncResult">Gio.AsyncResult</a></span>): Boolean {
+}
+  </pre></div></div></div></div></div>
+<p class="p">Finishes closing a file enumerator, started from <span class="link"><a href="Gio.FileEnumerator.close_async.html" title="Gio.FileEnumerator.prototype.close_async">Gio.FileEnumerator.prototype.close_async</a></span>.</p>
+<p class="p">If the file enumerator was already closed when <span class="link"><a href="Gio.FileEnumerator.close_async.html" title="Gio.FileEnumerator.prototype.close_async">Gio.FileEnumerator.prototype.close_async</a></span>
+was called, then this function will report <span class="link"><a href="Gio.IOErrorEnum.html" title="Gio.IOErrorEnum">Gio.IOErrorEnum</a></span>.closed in @error, and
+return <span class="code">false</span>. If the file enumerator had pending operation when the close
+operation was started, then this function will report <span class="link"><a href="Gio.IOErrorEnum.html" title="Gio.IOErrorEnum">Gio.IOErrorEnum</a></span>.pending, and
+return <span class="code">false</span>.  If @cancellable was not <span class="code">null</span>, then the operation may have been
+cancelled by triggering the cancellable object from another thread. If the operation
+was cancelled, the error <span class="link"><a href="Gio.IOErrorEnum.html" title="Gio.IOErrorEnum">Gio.IOErrorEnum</a></span>.cancelled will be set, and <span class="code">false</span> will be
+returned.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">result</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="Gio.AsyncResult.html" title="Gio.AsyncResult">Gio.AsyncResult</a></span>.</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> if the close operation has finished successfully.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.FileEnumerator.html" title="Gio.FileEnumerator">Gio.FileEnumerator</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

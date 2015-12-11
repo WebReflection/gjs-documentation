@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.DBusInterfaceSkeleton::g-authorize-method</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.DBusInterfaceSkeleton.html" title="Gio.DBusInterfaceSkeleton">Gio.DBusInterfaceSkeleton</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.DBusInterfaceSkeleton::g-authorize-method</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">connect('g-authorize-method', function (dBusInterfaceSkeleton, invocation: <span class="link"><a href="Gio.DBusMethodInvocation.html" title="Gio.DBusMethodInvocation">Gio.DBusMethodInvocation</a></span>, ): Boolean);
+  </pre></div></div></div></div></div>
+<p class="p">Emitted when a method is invoked by a remote caller and used to
+determine if the method call is authorized.</p>
+<p class="p">Note that this signal is emitted in a thread dedicated to
+handling the method call so handlers are allowed to perform
+blocking IO. This means that it is appropriate to call e.g.
+[polkit_authority_check_authorization_sync()](http://hal.freedesktop.org/docs/polkit/PolkitAuthority.html#polkit-authority-check-authorization-sync)
+with the
+[POLKIT_CHECK_AUTHORIZATION_FLAGS_ALLOW_USER_INTERACTION](http://hal.freedesktop.org/docs/polkit/PolkitAuthority.html#POLKIT-CHECK-AUTHORIZATION-FLAGS-ALLOW-USER-INTERACTION:CAPS)
+flag set.</p>
+<p class="p">If <span class="code">false</span> is returned then no further handlers are run and the
+signal handler must take a reference to <span class="code">invocation</span> and finish
+handling the call (e.g. return an error via
+<span class="link"><a href="Gio.DBusMethodInvocation.return_error.html" title="Gio.DBusMethodInvocation.return_error">Gio.DBusMethodInvocation.return_error</a></span>).</p>
+<p class="p">Otherwise, if <span class="code">true</span> is returned, signal emission continues. If no
+handlers return <span class="code">false</span>, then the method is dispatched. If
+@interface has an enclosing <span class="link"><a href="Gio.DBusObjectSkeleton.html" title="Gio.DBusObjectSkeleton">Gio.DBusObjectSkeleton</a></span>, then the
+<span class="link"><a href="Gio.DBusObjectSkeleton-authorize-method.html" title="Gio.DBusObjectSkeleton::authorize-method">Gio.DBusObjectSkeleton::authorize-method</a></span> signal handlers run before
+the handlers for this signal.</p>
+<p class="p">The default class handler just returns <span class="code">true</span>.</p>
+<p class="p">Please note that the common case is optimized: if no signals
+handlers are connected and the default class handler isn't
+overridden (for both @interface and the enclosing
+<span class="link"><a href="Gio.DBusObjectSkeleton.html" title="Gio.DBusObjectSkeleton">Gio.DBusObjectSkeleton</a></span>, if any) and <span class="link"><a href="Gio.DBusInterfaceSkeleton-g-flags.html" title="Gio.DBusInterfaceSkeleton.g_flags">Gio.DBusInterfaceSkeleton.g_flags</a></span> does
+not have the
+<span class="link"><a href="Gio.DBusInterfaceSkeletonFlags.html" title="Gio.DBusInterfaceSkeletonFlags">Gio.DBusInterfaceSkeletonFlags</a></span>.handle_method_invocations_in_thread
+flags set, no dedicated thread is ever used and the call will be
+handled in the same thread as the object that @interface belongs
+to was exported in.</p>
+<p class="p">Since 2.30</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">dBusInterfaceSkeleton</span></dt>
+<dd class="terms"><p class="p">instance of <span class="link"><a href="Gio.DBusInterfaceSkeleton.html" title="Gio.DBusInterfaceSkeleton">Gio.DBusInterfaceSkeleton</a></span> that is emitting the signal</p></dd>
+<dt class="terms"><span class="code">invocation</span></dt>
+<dd class="terms"><p class="p">A <span class="link"><a href="Gio.DBusMethodInvocation.html" title="Gio.DBusMethodInvocation">Gio.DBusMethodInvocation</a></span>.</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> if the call is authorized, <span class="code">false</span> otherwise.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.DBusInterfaceSkeleton.html" title="Gio.DBusInterfaceSkeleton">Gio.DBusInterfaceSkeleton</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

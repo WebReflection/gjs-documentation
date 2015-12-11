@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.MountOperation</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.MountOperation</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
+
+let mountOperation = new Gio.MountOperation({
+});
+  </pre></div></div></div></div></div>
+<p class="p"><span class="link"><a href="Gio.MountOperation.html" title="Gio.MountOperation">Gio.MountOperation</a></span> provides a mechanism for interacting with the user.
+It can be used for authenticating mountable operations, such as loop
+mounting files, hard drive partitions or server locations. It can
+also be used to ask the user questions or show a list of applications
+preventing unmount or eject operations from completing.</p>
+<p class="p">Note that <span class="link"><a href="Gio.MountOperation.html" title="Gio.MountOperation">Gio.MountOperation</a></span> is used for more than just <span class="link"><a href="Gio.Mount.html" title="Gio.Mount">Gio.Mount</a></span>
+objects – for example it is also used in <span class="link"><a href="Gio.Drive.start.html" title="Gio.Drive.prototype.start">Gio.Drive.prototype.start</a></span> and
+<span class="link"><a href="Gio.Drive.stop.html" title="Gio.Drive.prototype.stop">Gio.Drive.prototype.stop</a></span>.</p>
+<p class="p">Users should instantiate a subclass of this that implements all the
+various callbacks to show the required dialogs, such as
+#GtkMountOperation. If no user interaction is desired (for example
+when automounting filesystems at login time), usually <span class="code">null</span> can be
+passed, see each method taking a <span class="link"><a href="Gio.MountOperation.html" title="Gio.MountOperation">Gio.MountOperation</a></span> for details.</p>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
+<div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
+<div>
+        <span class="code">GObject.Object</span>
+      
+      </div>
+<ul class="tree"><li class="tree"><div>
+        <span class="code">Gio.MountOperation</span>
+      </div></li></ul>
+</li></ul></div></div></div></div></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.MountOperation.new.html" title="Gio.MountOperation.new">Gio.MountOperation.new</a></li></ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.MountOperation.get_anonymous.html" title="Gio.MountOperation.prototype.get_anonymous">Gio.MountOperation.prototype.get_anonymous</a></li>
+<li class="links "><a href="Gio.MountOperation.get_choice.html" title="Gio.MountOperation.prototype.get_choice">Gio.MountOperation.prototype.get_choice</a></li>
+<li class="links "><a href="Gio.MountOperation.get_domain.html" title="Gio.MountOperation.prototype.get_domain">Gio.MountOperation.prototype.get_domain</a></li>
+<li class="links "><a href="Gio.MountOperation.get_password.html" title="Gio.MountOperation.prototype.get_password">Gio.MountOperation.prototype.get_password</a></li>
+<li class="links "><a href="Gio.MountOperation.get_password_save.html" title="Gio.MountOperation.prototype.get_password_save">Gio.MountOperation.prototype.get_password_save</a></li>
+<li class="links "><a href="Gio.MountOperation.get_username.html" title="Gio.MountOperation.prototype.get_username">Gio.MountOperation.prototype.get_username</a></li>
+<li class="links "><a href="Gio.MountOperation.reply.html" title="Gio.MountOperation.prototype.reply">Gio.MountOperation.prototype.reply</a></li>
+<li class="links "><a href="Gio.MountOperation.set_anonymous.html" title="Gio.MountOperation.prototype.set_anonymous">Gio.MountOperation.prototype.set_anonymous</a></li>
+<li class="links "><a href="Gio.MountOperation.set_choice.html" title="Gio.MountOperation.prototype.set_choice">Gio.MountOperation.prototype.set_choice</a></li>
+<li class="links "><a href="Gio.MountOperation.set_domain.html" title="Gio.MountOperation.prototype.set_domain">Gio.MountOperation.prototype.set_domain</a></li>
+<li class="links "><a href="Gio.MountOperation.set_password.html" title="Gio.MountOperation.prototype.set_password">Gio.MountOperation.prototype.set_password</a></li>
+<li class="links "><a href="Gio.MountOperation.set_password_save.html" title="Gio.MountOperation.prototype.set_password_save">Gio.MountOperation.prototype.set_password_save</a></li>
+<li class="links "><a href="Gio.MountOperation.set_username.html" title="Gio.MountOperation.prototype.set_username">Gio.MountOperation.prototype.set_username</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Properties</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.MountOperation-anonymous.html" title="Gio.MountOperation.anonymous">anonymous</a></li>
+<li class="links "><a href="Gio.MountOperation-choice.html" title="Gio.MountOperation.choice">choice</a></li>
+<li class="links "><a href="Gio.MountOperation-domain.html" title="Gio.MountOperation.domain">domain</a></li>
+<li class="links "><a href="Gio.MountOperation-password.html" title="Gio.MountOperation.password">password</a></li>
+<li class="links "><a href="Gio.MountOperation-password-save.html" title="Gio.MountOperation.password_save">password-save</a></li>
+<li class="links "><a href="Gio.MountOperation-username.html" title="Gio.MountOperation.username">username</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Signals</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.MountOperation-aborted.html" title="Gio.MountOperation::aborted">aborted</a></li>
+<li class="links "><a href="Gio.MountOperation-ask-password.html" title="Gio.MountOperation::ask-password">ask-password</a></li>
+<li class="links "><a href="Gio.MountOperation-ask-question.html" title="Gio.MountOperation::ask-question">ask-question</a></li>
+<li class="links "><a href="Gio.MountOperation-reply.html" title="Gio.MountOperation::reply">reply</a></li>
+<li class="links "><a href="Gio.MountOperation-show-processes.html" title="Gio.MountOperation::show-processes">show-processes</a></li>
+<li class="links "><a href="Gio.MountOperation-show-unmount-progress.html" title="Gio.MountOperation::show-unmount-progress">show-unmount-progress</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Virtual functions</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.MountOperation-ask_password.html" title="Gio.MountOperation::ask_password">Gio.MountOperation::ask_password</a></li>
+<li class="links "><a href="Gio.MountOperation-ask_question.html" title="Gio.MountOperation::ask_question">Gio.MountOperation::ask_question</a></li>
+<li class="links "><a href="Gio.MountOperation-show_unmount_progress.html" title="Gio.MountOperation::show_unmount_progress">Gio.MountOperation::show_unmount_progress</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gio">Gio</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

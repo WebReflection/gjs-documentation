@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.FileOutputStream</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.FileOutputStream</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
+
+let fileOutputStream = new Gio.FileOutputStream();
+  </pre></div></div></div></div></div>
+<p class="p">GFileOutputStream provides output streams that write their
+content to a file.</p>
+<p class="p">GFileOutputStream implements <span class="link"><a href="Gio.Seekable.html" title="Gio.Seekable">Gio.Seekable</a></span>, which allows the output
+stream to jump to arbitrary positions in the file and to truncate
+the file, provided the filesystem of the file supports these
+operations.</p>
+<p class="p">To find the position of a file output stream, use <span class="link"><a href="Gio.Seekable.tell.html" title="Gio.Seekable.prototype.tell">Gio.Seekable.prototype.tell</a></span>.
+To find out if a file output stream supports seeking, use
+<span class="link"><a href="Gio.Seekable.can_seek.html" title="Gio.Seekable.prototype.can_seek">Gio.Seekable.prototype.can_seek</a></span>.To position a file output stream, use
+<span class="link"><a href="Gio.Seekable.seek.html" title="Gio.Seekable.prototype.seek">Gio.Seekable.prototype.seek</a></span>. To find out if a file output stream supports
+truncating, use <span class="link"><a href="Gio.Seekable.can_truncate.html" title="Gio.Seekable.prototype.can_truncate">Gio.Seekable.prototype.can_truncate</a></span>. To truncate a file output
+stream, use <span class="link"><a href="Gio.Seekable.truncate.html" title="Gio.Seekable.prototype.truncate">Gio.Seekable.prototype.truncate</a></span>.</p>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
+<div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
+<div>
+        <span class="code">GObject.Object</span>
+      
+      </div>
+<ul class="tree"><li class="tree">
+<div>
+        <span class="code">Gio.OutputStream</span>
+      
+      </div>
+<ul class="tree"><li class="tree"><div>
+        <span class="code">Gio.FileOutputStream</span>
+      </div></li></ul>
+</li></ul>
+</li></ul></div></div></div></div></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.FileOutputStream.get_etag.html" title="Gio.FileOutputStream.prototype.get_etag">Gio.FileOutputStream.prototype.get_etag</a></li>
+<li class="links "><a href="Gio.FileOutputStream.query_info.html" title="Gio.FileOutputStream.prototype.query_info">Gio.FileOutputStream.prototype.query_info</a></li>
+<li class="links "><a href="Gio.FileOutputStream.query_info_async.html" title="Gio.FileOutputStream.prototype.query_info_async">Gio.FileOutputStream.prototype.query_info_async</a></li>
+<li class="links "><a href="Gio.FileOutputStream.query_info_finish.html" title="Gio.FileOutputStream.prototype.query_info_finish">Gio.FileOutputStream.prototype.query_info_finish</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Virtual functions</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.FileOutputStream-can_seek.html" title="Gio.FileOutputStream::can_seek">Gio.FileOutputStream::can_seek</a></li>
+<li class="links "><a href="Gio.FileOutputStream-can_truncate.html" title="Gio.FileOutputStream::can_truncate">Gio.FileOutputStream::can_truncate</a></li>
+<li class="links "><a href="Gio.FileOutputStream-get_etag.html" title="Gio.FileOutputStream::get_etag">Gio.FileOutputStream::get_etag</a></li>
+<li class="links "><a href="Gio.FileOutputStream-query_info.html" title="Gio.FileOutputStream::query_info">Gio.FileOutputStream::query_info</a></li>
+<li class="links "><a href="Gio.FileOutputStream-query_info_async.html" title="Gio.FileOutputStream::query_info_async">Gio.FileOutputStream::query_info_async</a></li>
+<li class="links "><a href="Gio.FileOutputStream-query_info_finish.html" title="Gio.FileOutputStream::query_info_finish">Gio.FileOutputStream::query_info_finish</a></li>
+<li class="links "><a href="Gio.FileOutputStream-seek.html" title="Gio.FileOutputStream::seek">Gio.FileOutputStream::seek</a></li>
+<li class="links "><a href="Gio.FileOutputStream-tell.html" title="Gio.FileOutputStream::tell">Gio.FileOutputStream::tell</a></li>
+<li class="links "><a href="Gio.FileOutputStream-truncate_fn.html" title="Gio.FileOutputStream::truncate_fn">Gio.FileOutputStream::truncate_fn</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gio">Gio</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

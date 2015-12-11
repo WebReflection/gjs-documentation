@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.MainContext.prototype.acquire</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » <a class="trail" href="GLib.MainContext.html" title="GLib.MainContext">GLib.MainContext</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.MainContext.prototype.acquire</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function acquire(): Boolean {
+    // Gjs wrapper for g_main_context_acquire()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Tries to become the owner of the specified context.
+If some other thread is the owner of the context,
+returns <span class="code">false</span> immediately. Ownership is properly
+recursive: the owner can require ownership again
+and will release ownership when <span class="link"><a href="GLib.MainContext.release.html" title="GLib.MainContext.prototype.release">GLib.MainContext.prototype.release</a></span>
+is called as many times as <span class="link"><a href="GLib.MainContext.acquire.html" title="GLib.MainContext.prototype.acquire">GLib.MainContext.prototype.acquire</a></span>.</p>
+<p class="p">You must be the owner of a context before you
+can call <span class="link"><a href="GLib.MainContext.prepare.html" title="GLib.MainContext.prototype.prepare">GLib.MainContext.prototype.prepare</a></span>, <span class="link"><a href="GLib.MainContext.query.html" title="GLib.MainContext.prototype.query">GLib.MainContext.prototype.query</a></span>,
+<span class="link"><a href="GLib.MainContext.check.html" title="GLib.MainContext.prototype.check">GLib.MainContext.prototype.check</a></span>, <span class="link"><a href="GLib.MainContext.dispatch.html" title="GLib.MainContext.prototype.dispatch">GLib.MainContext.prototype.dispatch</a></span>.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> if the operation succeeded, and
+  this thread is now the owner of <span class="code">context</span>.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="GLib.MainContext.html" title="GLib.MainContext">GLib.MainContext</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

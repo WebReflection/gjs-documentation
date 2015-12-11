@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.RegexError</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.RegexError</span></h1></div>
+<div class="region">
+<div class="contents">
+<p class="p">Error codes returned by regular expressions functions.</p>
+<p class="p">Since 2.14</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">RegexError.COMPILE</span></dt>
+<dd class="terms"><p class="p">Compilation of the regular expression failed.</p></dd>
+<dt class="terms"><span class="code">RegexError.OPTIMIZE</span></dt>
+<dd class="terms"><p class="p">Optimization of the regular expression failed.</p></dd>
+<dt class="terms"><span class="code">RegexError.REPLACE</span></dt>
+<dd class="terms"><p class="p">Replacement failed due to an ill-formed replacement
+    string.</p></dd>
+<dt class="terms"><span class="code">RegexError.MATCH</span></dt>
+<dd class="terms"><p class="p">The match process failed.</p></dd>
+<dt class="terms"><span class="code">RegexError.INTERNAL</span></dt>
+<dd class="terms"><p class="p">Internal error of the regular expression engine.
+    Since 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.STRAY_BACKSLASH</span></dt>
+<dd class="terms"><p class="p">"\\" at end of pattern. Since 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.MISSING_CONTROL_CHAR</span></dt>
+<dd class="terms"><p class="p">"\\c" at end of pattern. Since 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.UNRECOGNIZED_ESCAPE</span></dt>
+<dd class="terms"><p class="p">Unrecognized character follows "\\".
+    Since 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.QUANTIFIERS_OUT_OF_ORDER</span></dt>
+<dd class="terms"><p class="p">Numbers out of order in "{}"
+    quantifier. Since 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.QUANTIFIER_TOO_BIG</span></dt>
+<dd class="terms"><p class="p">Number too big in "{}" quantifier.
+    Since 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.UNTERMINATED_CHARACTER_CLASS</span></dt>
+<dd class="terms"><p class="p">Missing terminating "]" for
+    character class. Since 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.INVALID_ESCAPE_IN_CHARACTER_CLASS</span></dt>
+<dd class="terms"><p class="p">Invalid escape sequence
+    in character class. Since 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.RANGE_OUT_OF_ORDER</span></dt>
+<dd class="terms"><p class="p">Range out of order in character class.
+    Since 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.NOTHING_TO_REPEAT</span></dt>
+<dd class="terms"><p class="p">Nothing to repeat. Since 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.UNRECOGNIZED_CHARACTER</span></dt>
+<dd class="terms"><p class="p">Unrecognized character after "(?",
+    "(?&amp;lt;" or "(?P". Since 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.POSIX_NAMED_CLASS_OUTSIDE_CLASS</span></dt>
+<dd class="terms"><p class="p">POSIX named classes are
+    supported only within a class. Since 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.UNMATCHED_PARENTHESIS</span></dt>
+<dd class="terms"><p class="p">Missing terminating ")" or ")"
+    without opening "(". Since 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.INEXISTENT_SUBPATTERN_REFERENCE</span></dt>
+<dd class="terms"><p class="p">Reference to non-existent
+    subpattern. Since 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.UNTERMINATED_COMMENT</span></dt>
+<dd class="terms"><p class="p">Missing terminating ")" after comment.
+    Since 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.EXPRESSION_TOO_LARGE</span></dt>
+<dd class="terms"><p class="p">Regular expression too large.
+    Since 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.MEMORY_ERROR</span></dt>
+<dd class="terms"><p class="p">Failed to get memory. Since 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.VARIABLE_LENGTH_LOOKBEHIND</span></dt>
+<dd class="terms"><p class="p">Lookbehind assertion is not
+    fixed length. Since 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.MALFORMED_CONDITION</span></dt>
+<dd class="terms"><p class="p">Malformed number or name after "(?(".
+    Since 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.TOO_MANY_CONDITIONAL_BRANCHES</span></dt>
+<dd class="terms"><p class="p">Conditional group contains
+    more than two branches. Since 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.ASSERTION_EXPECTED</span></dt>
+<dd class="terms"><p class="p">Assertion expected after "(?(".
+    Since 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.UNKNOWN_POSIX_CLASS_NAME</span></dt>
+<dd class="terms"><p class="p">Unknown POSIX class name.
+    Since 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.POSIX_COLLATING_ELEMENTS_NOT_SUPPORTED</span></dt>
+<dd class="terms"><p class="p">POSIX collating
+    elements are not supported. Since 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.HEX_CODE_TOO_LARGE</span></dt>
+<dd class="terms"><p class="p">Character value in "\\x{...}" sequence
+    is too large. Since 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.INVALID_CONDITION</span></dt>
+<dd class="terms"><p class="p">Invalid condition "(?(0)". Since 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.SINGLE_BYTE_MATCH_IN_LOOKBEHIND</span></dt>
+<dd class="terms"><p class="p">\\C not allowed in
+    lookbehind assertion. Since 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.INFINITE_LOOP</span></dt>
+<dd class="terms"><p class="p">Recursive call could loop indefinitely.
+    Since 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.MISSING_SUBPATTERN_NAME_TERMINATOR</span></dt>
+<dd class="terms"><p class="p">Missing terminator
+    in subpattern name. Since 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.DUPLICATE_SUBPATTERN_NAME</span></dt>
+<dd class="terms"><p class="p">Two named subpatterns have
+    the same name. Since 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.MALFORMED_PROPERTY</span></dt>
+<dd class="terms"><p class="p">Malformed "\\P" or "\\p" sequence.
+    Since 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.UNKNOWN_PROPERTY</span></dt>
+<dd class="terms"><p class="p">Unknown property name after "\\P" or
+    "\\p". Since 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.SUBPATTERN_NAME_TOO_LONG</span></dt>
+<dd class="terms"><p class="p">Subpattern name is too long
+    (maximum 32 characters). Since 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.TOO_MANY_SUBPATTERNS</span></dt>
+<dd class="terms"><p class="p">Too many named subpatterns (maximum
+    10,000). Since 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.INVALID_OCTAL_VALUE</span></dt>
+<dd class="terms"><p class="p">Octal value is greater than "\\377".
+    Since 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.TOO_MANY_BRANCHES_IN_DEFINE</span></dt>
+<dd class="terms"><p class="p">"DEFINE" group contains more
+    than one branch. Since 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.DEFINE_REPETION</span></dt>
+<dd class="terms"><p class="p">Repeating a "DEFINE" group is not allowed.
+    This error is never raised. Since: 2.16 Deprecated: 2.34</p></dd>
+<dt class="terms"><span class="code">RegexError.INCONSISTENT_NEWLINE_OPTIONS</span></dt>
+<dd class="terms"><p class="p">Inconsistent newline options.
+    Since 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.MISSING_BACK_REFERENCE</span></dt>
+<dd class="terms"><p class="p">"\\g" is not followed by a braced,
+     angle-bracketed, or quoted name or number, or by a plain number. Since: 2.16</p></dd>
+<dt class="terms"><span class="code">RegexError.INVALID_RELATIVE_REFERENCE</span></dt>
+<dd class="terms"><p class="p">relative reference must not be zero. Since: 2.34</p></dd>
+<dt class="terms"><span class="code">RegexError.BACKTRACKING_CONTROL_VERB_ARGUMENT_FORBIDDEN</span></dt>
+<dd class="terms"><p class="p">the backtracing
+    control verb used does not allow an argument. Since: 2.34</p></dd>
+<dt class="terms"><span class="code">RegexError.UNKNOWN_BACKTRACKING_CONTROL_VERB</span></dt>
+<dd class="terms"><p class="p">unknown backtracing
+    control verb. Since: 2.34</p></dd>
+<dt class="terms"><span class="code">RegexError.NUMBER_TOO_BIG</span></dt>
+<dd class="terms"><p class="p">number is too big in escape sequence. Since: 2.34</p></dd>
+<dt class="terms"><span class="code">RegexError.MISSING_SUBPATTERN_NAME</span></dt>
+<dd class="terms"><p class="p">Missing subpattern name. Since: 2.34</p></dd>
+<dt class="terms"><span class="code">RegexError.MISSING_DIGIT</span></dt>
+<dd class="terms"><p class="p">Missing digit. Since 2.34</p></dd>
+<dt class="terms"><span class="code">RegexError.INVALID_DATA_CHARACTER</span></dt>
+<dd class="terms"><p class="p">In JavaScript compatibility mode,
+    "[" is an invalid data character. Since: 2.34</p></dd>
+<dt class="terms"><span class="code">RegexError.EXTRA_SUBPATTERN_NAME</span></dt>
+<dd class="terms"><p class="p">different names for subpatterns of the
+    same number are not allowed. Since: 2.34</p></dd>
+<dt class="terms"><span class="code">RegexError.BACKTRACKING_CONTROL_VERB_ARGUMENT_REQUIRED</span></dt>
+<dd class="terms"><p class="p">the backtracing control
+    verb requires an argument. Since: 2.34</p></dd>
+<dt class="terms"><span class="code">RegexError.INVALID_CONTROL_CHAR</span></dt>
+<dd class="terms"><p class="p">"\\c" must be followed by an ASCII
+    character. Since: 2.34</p></dd>
+<dt class="terms"><span class="code">RegexError.MISSING_NAME</span></dt>
+<dd class="terms"><p class="p">"\\k" is not followed by a braced, angle-bracketed, or
+    quoted name. Since: 2.34</p></dd>
+<dt class="terms"><span class="code">RegexError.NOT_SUPPORTED_IN_CLASS</span></dt>
+<dd class="terms"><p class="p">"\\N" is not supported in a class. Since: 2.34</p></dd>
+<dt class="terms"><span class="code">RegexError.TOO_MANY_FORWARD_REFERENCES</span></dt>
+<dd class="terms"><p class="p">too many forward references. Since: 2.34</p></dd>
+<dt class="terms"><span class="code">RegexError.NAME_TOO_LONG</span></dt>
+<dd class="terms"><p class="p">the name is too long in "(*MARK)", "(*PRUNE)",
+    "(*SKIP)", or "(*THEN)". Since: 2.34</p></dd>
+<dt class="terms"><span class="code">RegexError.CHARACTER_VALUE_TOO_LARGE</span></dt>
+<dd class="terms"><p class="p">the character value in the \\u sequence is
+    too large. Since: 2.34</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="GLib">GLib</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

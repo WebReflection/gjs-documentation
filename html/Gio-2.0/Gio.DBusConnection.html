@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.DBusConnection</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.DBusConnection</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
+
+let dBusConnection = new Gio.DBusConnection({
+    <span class="link"><a href="Gio.DBusConnection-address.html" title="Gio.DBusConnection.address">address</a></span>: value,
+    <span class="link"><a href="Gio.DBusConnection-authentication-observer.html" title="Gio.DBusConnection.authentication_observer">authentication_observer</a></span>: value,
+    <span class="link"><a href="Gio.DBusConnection-flags.html" title="Gio.DBusConnection.flags">flags</a></span>: value,
+    <span class="link"><a href="Gio.DBusConnection-guid.html" title="Gio.DBusConnection.guid">guid</a></span>: value,
+    <span class="link"><a href="Gio.DBusConnection-stream.html" title="Gio.DBusConnection.stream">stream</a></span>: value,
+});
+  </pre></div></div></div></div></div>
+<p class="p">The <span class="link"><a href="Gio.DBusConnection.html" title="Gio.DBusConnection">Gio.DBusConnection</a></span> type is used for D-Bus connections to remote
+peers such as a message buses. It is a low-level API that offers a
+lot of flexibility. For instance, it lets you establish a connection
+over any transport that can by represented as an <span class="link"><a href="Gio.IOStream.html" title="Gio.IOStream">Gio.IOStream</a></span>.</p>
+<p class="p">This class is rarely used directly in D-Bus clients. If you are writing
+an D-Bus client, it is often easier to use the <span class="link"><a href="Gio.bus_own_name.html" title="Gio.bus_own_name">Gio.bus_own_name</a></span>,
+<span class="link"><a href="Gio.bus_watch_name.html" title="Gio.bus_watch_name">Gio.bus_watch_name</a></span> or <span class="link"><a href="Gio.DBusProxy.new_for_bus.html" title="Gio.DBusProxy.new_for_bus">Gio.DBusProxy.new_for_bus</a></span> APIs.</p>
+<p class="p">As an exception to the usual GLib rule that a particular object must not
+be used by two threads at the same time, <span class="link"><a href="Gio.DBusConnection.html" title="Gio.DBusConnection">Gio.DBusConnection</a></span>'s methods may be
+called from any thread. This is so that <span class="link"><a href="Gio.bus_get.html" title="Gio.bus_get">Gio.bus_get</a></span> and <span class="link"><a href="Gio.bus_get_sync.html" title="Gio.bus_get_sync">Gio.bus_get_sync</a></span>
+can safely return the same <span class="link"><a href="Gio.DBusConnection.html" title="Gio.DBusConnection">Gio.DBusConnection</a></span> when called from any thread.</p>
+<p class="p">Most of the ways to obtain a <span class="link"><a href="Gio.DBusConnection.html" title="Gio.DBusConnection">Gio.DBusConnection</a></span> automatically initialize it
+(i.e. connect to D-Bus): for instance, <span class="link"><a href="Gio.DBusConnection.new.html" title="Gio.DBusConnection.new">Gio.DBusConnection.new</a></span> and
+<span class="link"><a href="Gio.bus_get.html" title="Gio.bus_get">Gio.bus_get</a></span>, and the synchronous versions of those methods, give you an
+initialized connection. Language bindings for GIO should use
+<span class="link"><a href="Gio.Initable.new.html" title="Gio.Initable.new">Gio.Initable.new</a></span> or <span class="link"><a href="Gio.AsyncInitable.new_async.html" title="Gio.AsyncInitable.new_async">Gio.AsyncInitable.new_async</a></span>, which also initialize the
+connection.</p>
+<p class="p">If you construct an uninitialized <span class="link"><a href="Gio.DBusConnection.html" title="Gio.DBusConnection">Gio.DBusConnection</a></span>, such as via
+<span class="link"><a href="../GObject-2.0/GObject.Object.new.html" title="../GObject-2.0/GObject.Object.new.html">GObject.Object.new</a></span>, you must initialize it via <span class="link"><a href="Gio.Initable.init.html" title="Gio.Initable.prototype.init">Gio.Initable.prototype.init</a></span> or
+<span class="link"><a href="Gio.AsyncInitable.init_async.html" title="Gio.AsyncInitable.prototype.init_async">Gio.AsyncInitable.prototype.init_async</a></span> before using its methods or properties.
+Calling methods or accessing properties on a <span class="link"><a href="Gio.DBusConnection.html" title="Gio.DBusConnection">Gio.DBusConnection</a></span> that has not
+completed initialization successfully is considered to be invalid, and leads
+to undefined behaviour. In particular, if initialization fails with a
+<span class="link"><a href="../GLib-2.0/GLib.Error.html" title="../GLib-2.0/GLib.Error.html">GLib.Error</a></span>, the only valid thing you can do with that <span class="link"><a href="Gio.DBusConnection.html" title="Gio.DBusConnection">Gio.DBusConnection</a></span> is to
+free it with <span class="link"><a href="../GObject-2.0/GObject.Object.unref.html" title="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</a></span>.</p>
+<p class="p">## An example D-Bus server # {#gdbus-server}</p>
+<p class="p">Here is an example for a D-Bus server:
+[gdbus-example-server.c](https://git.gnome.org/browse/glib/tree/gio/tests/gdbus-example-server.c)</p>
+<p class="p">## An example for exporting a subtree # {#gdbus-subtree-server}</p>
+<p class="p">Here is an example for exporting a subtree:
+[gdbus-example-subtree.c](https://git.gnome.org/browse/glib/tree/gio/tests/gdbus-example-subtree.c)</p>
+<p class="p">## An example for file descriptor passing # {#gdbus-unix-fd-client}</p>
+<p class="p">Here is an example for passing UNIX file descriptors:
+[gdbus-unix-fd-client.c](https://git.gnome.org/browse/glib/tree/gio/tests/gdbus-unix-fd-client.c)</p>
+<p class="p">## An example for exporting a GObject # {#gdbus-export}</p>
+<p class="p">Here is an example for exporting a <span class="link"><a href="../GObject-2.0/GObject.Object.html" title="../GObject-2.0/GObject.Object.html">GObject.Object</a></span>:
+[gdbus-example-export.c](https://git.gnome.org/browse/glib/tree/gio/tests/gdbus-example-export.c)</p>
+<p class="p">Since 2.26</p>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
+<div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
+<div>
+        <span class="code">GObject.Object</span>
+      
+      </div>
+<ul class="tree"><li class="tree"><div>
+        <span class="code">Gio.DBusConnection</span>
+      </div></li></ul>
+</li></ul></div></div></div></div></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.DBusConnection.new_finish.html" title="Gio.DBusConnection.new_finish">Gio.DBusConnection.new_finish</a></li>
+<li class="links "><a href="Gio.DBusConnection.new_for_address_finish.html" title="Gio.DBusConnection.new_for_address_finish">Gio.DBusConnection.new_for_address_finish</a></li>
+<li class="links "><a href="Gio.DBusConnection.new_for_address_sync.html" title="Gio.DBusConnection.new_for_address_sync">Gio.DBusConnection.new_for_address_sync</a></li>
+<li class="links "><a href="Gio.DBusConnection.new_sync.html" title="Gio.DBusConnection.new_sync">Gio.DBusConnection.new_sync</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.DBusConnection.add_filter.html" title="Gio.DBusConnection.prototype.add_filter">Gio.DBusConnection.prototype.add_filter</a></li>
+<li class="links "><a href="Gio.DBusConnection.call.html" title="Gio.DBusConnection.prototype.call">Gio.DBusConnection.prototype.call</a></li>
+<li class="links "><a href="Gio.DBusConnection.call_finish.html" title="Gio.DBusConnection.prototype.call_finish">Gio.DBusConnection.prototype.call_finish</a></li>
+<li class="links "><a href="Gio.DBusConnection.call_sync.html" title="Gio.DBusConnection.prototype.call_sync">Gio.DBusConnection.prototype.call_sync</a></li>
+<li class="links "><a href="Gio.DBusConnection.call_with_unix_fd_list.html" title="Gio.DBusConnection.prototype.call_with_unix_fd_list">Gio.DBusConnection.prototype.call_with_unix_fd_list</a></li>
+<li class="links "><a href="Gio.DBusConnection.call_with_unix_fd_list_finish.html" title="Gio.DBusConnection.prototype.call_with_unix_fd_list_finish">Gio.DBusConnection.prototype.call_with_unix_fd_list_finish</a></li>
+<li class="links "><a href="Gio.DBusConnection.call_with_unix_fd_list_sync.html" title="Gio.DBusConnection.prototype.call_with_unix_fd_list_sync">Gio.DBusConnection.prototype.call_with_unix_fd_list_sync</a></li>
+<li class="links "><a href="Gio.DBusConnection.close.html" title="Gio.DBusConnection.prototype.close">Gio.DBusConnection.prototype.close</a></li>
+<li class="links "><a href="Gio.DBusConnection.close_finish.html" title="Gio.DBusConnection.prototype.close_finish">Gio.DBusConnection.prototype.close_finish</a></li>
+<li class="links "><a href="Gio.DBusConnection.close_sync.html" title="Gio.DBusConnection.prototype.close_sync">Gio.DBusConnection.prototype.close_sync</a></li>
+<li class="links "><a href="Gio.DBusConnection.emit_signal.html" title="Gio.DBusConnection.prototype.emit_signal">Gio.DBusConnection.prototype.emit_signal</a></li>
+<li class="links "><a href="Gio.DBusConnection.export_action_group.html" title="Gio.DBusConnection.prototype.export_action_group">Gio.DBusConnection.prototype.export_action_group</a></li>
+<li class="links "><a href="Gio.DBusConnection.export_menu_model.html" title="Gio.DBusConnection.prototype.export_menu_model">Gio.DBusConnection.prototype.export_menu_model</a></li>
+<li class="links "><a href="Gio.DBusConnection.flush.html" title="Gio.DBusConnection.prototype.flush">Gio.DBusConnection.prototype.flush</a></li>
+<li class="links "><a href="Gio.DBusConnection.flush_finish.html" title="Gio.DBusConnection.prototype.flush_finish">Gio.DBusConnection.prototype.flush_finish</a></li>
+<li class="links "><a href="Gio.DBusConnection.flush_sync.html" title="Gio.DBusConnection.prototype.flush_sync">Gio.DBusConnection.prototype.flush_sync</a></li>
+<li class="links "><a href="Gio.DBusConnection.get_capabilities.html" title="Gio.DBusConnection.prototype.get_capabilities">Gio.DBusConnection.prototype.get_capabilities</a></li>
+<li class="links "><a href="Gio.DBusConnection.get_exit_on_close.html" title="Gio.DBusConnection.prototype.get_exit_on_close">Gio.DBusConnection.prototype.get_exit_on_close</a></li>
+<li class="links "><a href="Gio.DBusConnection.get_guid.html" title="Gio.DBusConnection.prototype.get_guid">Gio.DBusConnection.prototype.get_guid</a></li>
+<li class="links "><a href="Gio.DBusConnection.get_last_serial.html" title="Gio.DBusConnection.prototype.get_last_serial">Gio.DBusConnection.prototype.get_last_serial</a></li>
+<li class="links "><a href="Gio.DBusConnection.get_peer_credentials.html" title="Gio.DBusConnection.prototype.get_peer_credentials">Gio.DBusConnection.prototype.get_peer_credentials</a></li>
+<li class="links "><a href="Gio.DBusConnection.get_stream.html" title="Gio.DBusConnection.prototype.get_stream">Gio.DBusConnection.prototype.get_stream</a></li>
+<li class="links "><a href="Gio.DBusConnection.get_unique_name.html" title="Gio.DBusConnection.prototype.get_unique_name">Gio.DBusConnection.prototype.get_unique_name</a></li>
+<li class="links "><a href="Gio.DBusConnection.is_closed.html" title="Gio.DBusConnection.prototype.is_closed">Gio.DBusConnection.prototype.is_closed</a></li>
+<li class="links "><a href="Gio.DBusConnection.register_object.html" title="Gio.DBusConnection.prototype.register_object">Gio.DBusConnection.prototype.register_object</a></li>
+<li class="links "><a href="Gio.DBusConnection.register_subtree.html" title="Gio.DBusConnection.prototype.register_subtree">Gio.DBusConnection.prototype.register_subtree</a></li>
+<li class="links "><a href="Gio.DBusConnection.remove_filter.html" title="Gio.DBusConnection.prototype.remove_filter">Gio.DBusConnection.prototype.remove_filter</a></li>
+<li class="links "><a href="Gio.DBusConnection.send_message.html" title="Gio.DBusConnection.prototype.send_message">Gio.DBusConnection.prototype.send_message</a></li>
+<li class="links "><a href="Gio.DBusConnection.send_message_with_reply.html" title="Gio.DBusConnection.prototype.send_message_with_reply">Gio.DBusConnection.prototype.send_message_with_reply</a></li>
+<li class="links "><a href="Gio.DBusConnection.send_message_with_reply_finish.html" title="Gio.DBusConnection.prototype.send_message_with_reply_finish">Gio.DBusConnection.prototype.send_message_with_reply_finish</a></li>
+<li class="links "><a href="Gio.DBusConnection.send_message_with_reply_sync.html" title="Gio.DBusConnection.prototype.send_message_with_reply_sync">Gio.DBusConnection.prototype.send_message_with_reply_sync</a></li>
+<li class="links "><a href="Gio.DBusConnection.set_exit_on_close.html" title="Gio.DBusConnection.prototype.set_exit_on_close">Gio.DBusConnection.prototype.set_exit_on_close</a></li>
+<li class="links "><a href="Gio.DBusConnection.signal_subscribe.html" title="Gio.DBusConnection.prototype.signal_subscribe">Gio.DBusConnection.prototype.signal_subscribe</a></li>
+<li class="links "><a href="Gio.DBusConnection.signal_unsubscribe.html" title="Gio.DBusConnection.prototype.signal_unsubscribe">Gio.DBusConnection.prototype.signal_unsubscribe</a></li>
+<li class="links "><a href="Gio.DBusConnection.start_message_processing.html" title="Gio.DBusConnection.prototype.start_message_processing">Gio.DBusConnection.prototype.start_message_processing</a></li>
+<li class="links "><a href="Gio.DBusConnection.unexport_action_group.html" title="Gio.DBusConnection.prototype.unexport_action_group">Gio.DBusConnection.prototype.unexport_action_group</a></li>
+<li class="links "><a href="Gio.DBusConnection.unexport_menu_model.html" title="Gio.DBusConnection.prototype.unexport_menu_model">Gio.DBusConnection.prototype.unexport_menu_model</a></li>
+<li class="links "><a href="Gio.DBusConnection.unregister_object.html" title="Gio.DBusConnection.prototype.unregister_object">Gio.DBusConnection.prototype.unregister_object</a></li>
+<li class="links "><a href="Gio.DBusConnection.unregister_subtree.html" title="Gio.DBusConnection.prototype.unregister_subtree">Gio.DBusConnection.prototype.unregister_subtree</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Static Functions</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.DBusConnection.new.html" title="Gio.DBusConnection.new">Gio.DBusConnection.new</a></li>
+<li class="links "><a href="Gio.DBusConnection.new_for_address.html" title="Gio.DBusConnection.new_for_address">Gio.DBusConnection.new_for_address</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Properties</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.DBusConnection-address.html" title="Gio.DBusConnection.address">address</a></li>
+<li class="links "><a href="Gio.DBusConnection-authentication-observer.html" title="Gio.DBusConnection.authentication_observer">authentication-observer</a></li>
+<li class="links "><a href="Gio.DBusConnection-capabilities.html" title="Gio.DBusConnection.capabilities">capabilities</a></li>
+<li class="links "><a href="Gio.DBusConnection-closed.html" title="Gio.DBusConnection.closed">closed</a></li>
+<li class="links "><a href="Gio.DBusConnection-exit-on-close.html" title="Gio.DBusConnection.exit_on_close">exit-on-close</a></li>
+<li class="links "><a href="Gio.DBusConnection-flags.html" title="Gio.DBusConnection.flags">flags</a></li>
+<li class="links "><a href="Gio.DBusConnection-guid.html" title="Gio.DBusConnection.guid">guid</a></li>
+<li class="links "><a href="Gio.DBusConnection-stream.html" title="Gio.DBusConnection.stream">stream</a></li>
+<li class="links "><a href="Gio.DBusConnection-unique-name.html" title="Gio.DBusConnection.unique_name">unique-name</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gio">Gio</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

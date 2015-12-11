@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GObject.Binding</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GObject">GObject</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GObject.Binding</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const GObject = imports.gi.GObject;
+
+let binding = new GObject.Binding({
+    <span class="link"><a href="GObject.Binding-flags.html" title="GObject.Binding.flags">flags</a></span>: value,
+    <span class="link"><a href="GObject.Binding-source.html" title="GObject.Binding.source">source</a></span>: value,
+    <span class="link"><a href="GObject.Binding-source-property.html" title="GObject.Binding.source_property">source_property</a></span>: value,
+    <span class="link"><a href="GObject.Binding-target.html" title="GObject.Binding.target">target</a></span>: value,
+    <span class="link"><a href="GObject.Binding-target-property.html" title="GObject.Binding.target_property">target_property</a></span>: value,
+});
+  </pre></div></div></div></div></div>
+<p class="p"><span class="link"><a href="GObject.Binding.html" title="GObject.Binding">GObject.Binding</a></span> is the representation of a binding between a property on a
+<span class="link"><a href="GObject.Object.html" title="GObject.Object">GObject.Object</a></span> instance (or source) and another property on another <span class="link"><a href="GObject.Object.html" title="GObject.Object">GObject.Object</a></span>
+instance (or target). Whenever the source property changes, the same
+value is applied to the target property; for instance, the following
+binding:</p>
+<p class="p">|[&lt;!-- language="C" --&gt;
+  g_object_bind_property (object1, "property-a",
+                          object2, "property-b",
+                          G_BINDING_DEFAULT);
+]|</p>
+<p class="p">will cause the property named "property-b" of @object2 to be updated
+every time <span class="link"><a href="GObject.Object.set.html" title="GObject.Object.set">GObject.Object.set</a></span> or the specific accessor changes the value of
+the property "property-a" of @object1.</p>
+<p class="p">It is possible to create a bidirectional binding between two properties
+of two <span class="link"><a href="GObject.Object.html" title="GObject.Object">GObject.Object</a></span> instances, so that if either property changes, the
+other is updated as well, for instance:</p>
+<p class="p">|[&lt;!-- language="C" --&gt;
+  g_object_bind_property (object1, "property-a",
+                          object2, "property-b",
+                          G_BINDING_BIDIRECTIONAL);
+]|</p>
+<p class="p">will keep the two properties in sync.</p>
+<p class="p">It is also possible to set a custom transformation function (in both
+directions, in case of a bidirectional binding) to apply a custom
+transformation from the source value to the target value before
+applying it; for instance, the following binding:</p>
+<p class="p">|[&lt;!-- language="C" --&gt;
+  g_object_bind_property_full (adjustment1, "value",
+                               adjustment2, "value",
+                               G_BINDING_BIDIRECTIONAL,
+                               celsius_to_fahrenheit,
+                               fahrenheit_to_celsius,
+                               NULL, NULL);
+]|</p>
+<p class="p">will keep the "value" property of the two adjustments in sync; the
+@celsius_to_fahrenheit function will be called whenever the "value"
+property of @adjustment1 changes and will transform the current value
+of the property before applying it to the "value" property of @adjustment2.</p>
+<p class="p">Vice versa, the @fahrenheit_to_celsius function will be called whenever
+the "value" property of @adjustment2 changes, and will transform the
+current value of the property before applying it to the "value" property
+of @adjustment1.</p>
+<p class="p">Note that <span class="link"><a href="GObject.Binding.html" title="GObject.Binding">GObject.Binding</a></span> does not resolve cycles by itself; a cycle like</p>
+<p class="p">|[
+  object1:propertyA -&gt; object2:propertyB
+  object2:propertyB -&gt; object3:propertyC
+  object3:propertyC -&gt; object1:propertyA
+]|</p>
+<p class="p">might lead to an infinite loop. The loop, in this particular case,
+can be avoided if the objects emit the <span class="link"><a href="GObject.Object-notify.html" title="GObject.Object::notify">GObject.Object::notify</a></span> signal only
+if the value has effectively been changed. A binding is implemented
+using the <span class="link"><a href="GObject.Object-notify.html" title="GObject.Object::notify">GObject.Object::notify</a></span> signal, so it is susceptible to all the
+various ways of blocking a signal emission, like <span class="link"><a href="GObject.signal_stop_emission.html" title="GObject.signal_stop_emission">GObject.signal_stop_emission</a></span>
+or <span class="link"><a href="GObject.signal_handler_block.html" title="GObject.signal_handler_block">GObject.signal_handler_block</a></span>.</p>
+<p class="p">A binding will be severed, and the resources it allocates freed, whenever
+either one of the <span class="link"><a href="GObject.Object.html" title="GObject.Object">GObject.Object</a></span> instances it refers to are finalized, or when
+the <span class="link"><a href="GObject.Binding.html" title="GObject.Binding">GObject.Binding</a></span> instance loses its last reference.</p>
+<p class="p">Bindings for languages with garbage collection can use
+<span class="link"><a href="GObject.Binding.unbind.html" title="GObject.Binding.prototype.unbind">GObject.Binding.prototype.unbind</a></span> to explicitly release a binding between the source
+and target properties, instead of relying on the last reference on the
+binding, source, and target instances to drop.</p>
+<p class="p"><span class="link"><a href="GObject.Binding.html" title="GObject.Binding">GObject.Binding</a></span> is available since GObject 2.26</p>
+<p class="p">Since 2.26</p>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
+<div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
+<div>
+        <span class="code">GObject.Object</span>
+      
+      </div>
+<ul class="tree"><li class="tree"><div>
+        <span class="code">GObject.Binding</span>
+      </div></li></ul>
+</li></ul></div></div></div></div></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="GObject.Binding.get_flags.html" title="GObject.Binding.prototype.get_flags">GObject.Binding.prototype.get_flags</a></li>
+<li class="links "><a href="GObject.Binding.get_source.html" title="GObject.Binding.prototype.get_source">GObject.Binding.prototype.get_source</a></li>
+<li class="links "><a href="GObject.Binding.get_source_property.html" title="GObject.Binding.prototype.get_source_property">GObject.Binding.prototype.get_source_property</a></li>
+<li class="links "><a href="GObject.Binding.get_target.html" title="GObject.Binding.prototype.get_target">GObject.Binding.prototype.get_target</a></li>
+<li class="links "><a href="GObject.Binding.get_target_property.html" title="GObject.Binding.prototype.get_target_property">GObject.Binding.prototype.get_target_property</a></li>
+<li class="links "><a href="GObject.Binding.unbind.html" title="GObject.Binding.prototype.unbind">GObject.Binding.prototype.unbind</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Properties</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="GObject.Binding-flags.html" title="GObject.Binding.flags">flags</a></li>
+<li class="links "><a href="GObject.Binding-source.html" title="GObject.Binding.source">source</a></li>
+<li class="links "><a href="GObject.Binding-source-property.html" title="GObject.Binding.source_property">source-property</a></li>
+<li class="links "><a href="GObject.Binding-target.html" title="GObject.Binding.target">target</a></li>
+<li class="links "><a href="GObject.Binding-target-property.html" title="GObject.Binding.target_property">target-property</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="GObject">GObject</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

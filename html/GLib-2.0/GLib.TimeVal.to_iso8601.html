@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.TimeVal.prototype.to_iso8601</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » <a class="trail" href="GLib.TimeVal.html" title="GLib.TimeVal">GLib.TimeVal</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.TimeVal.prototype.to_iso8601</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function to_iso8601(): String {
+    // Gjs wrapper for g_time_val_to_iso8601()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Converts <span class="code">time_</span> into an RFC 3339 encoded string, relative to the
+Coordinated Universal Time (UTC). This is one of the many formats
+allowed by ISO 8601.</p>
+<p class="p">ISO 8601 allows a large number of date/time formats, with or without
+punctuation and optional elements. The format returned by this function
+is a complete date and time, with optional punctuation included, the
+UTC time zone represented as "Z", and the @tv_usec part included if
+and only if it is nonzero, i.e. either
+"YYYY-MM-DDTHH:MM:SSZ" or "YYYY-MM-DDTHH:MM:SS.fffffZ".</p>
+<p class="p">This corresponds to the Internet date/time format defined by
+[RFC 3339](https://www.ietf.org/rfc/rfc3339.txt),
+and to either of the two most-precise formats defined by
+the W3C Note
+[Date and Time Formats](http://www.w3.org/TR/NOTE-datetime-19980827).
+Both of these documents are profiles of ISO 8601.</p>
+<p class="p">Use <span class="link"><a href="GLib.DateTime.format.html" title="GLib.DateTime.prototype.format">GLib.DateTime.prototype.format</a></span> or <span class="link"><a href="GLib.strdup_printf.html" title="GLib.strdup_printf">GLib.strdup_printf</a></span> if a different
+variation of ISO 8601 format is required.</p>
+<p class="p">Since 2.12</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">a newly allocated string containing an ISO 8601 date</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="GLib.TimeVal.html" title="GLib.TimeVal">GLib.TimeVal</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

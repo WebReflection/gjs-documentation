@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.Task.prototype.set_return_on_cancel</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.Task.html" title="Gio.Task">Gio.Task</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.Task.prototype.set_return_on_cancel</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function set_return_on_cancel(return_on_cancel: Boolean): Boolean {
+    // Gjs wrapper for g_task_set_return_on_cancel()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Sets or clears <span class="code">task</span>'s return-on-cancel flag. This is only
+meaningful for tasks run via <span class="link"><a href="Gio.Task.run_in_thread.html" title="Gio.Task.run_in_thread">Gio.Task.run_in_thread</a></span> or
+<span class="link"><a href="Gio.Task.run_in_thread_sync.html" title="Gio.Task.run_in_thread_sync">Gio.Task.run_in_thread_sync</a></span>.</p>
+<p class="p">If <span class="code">return_on_cancel</span> is <span class="code">true</span>, then cancelling <span class="code">task</span>'s
+<span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span> will immediately cause it to return, as though the
+task's <span class="link"><a href="Gio.TaskThreadFunc.html" title="Gio.TaskThreadFunc">Gio.TaskThreadFunc</a></span> had called
+<span class="link"><a href="Gio.Task.return_error_if_cancelled.html" title="Gio.Task.prototype.return_error_if_cancelled">Gio.Task.prototype.return_error_if_cancelled</a></span> and then returned.</p>
+<p class="p">This allows you to create a cancellable wrapper around an
+uninterruptable function. The <span class="link"><a href="Gio.TaskThreadFunc.html" title="Gio.TaskThreadFunc">Gio.TaskThreadFunc</a></span> just needs to be
+careful that it does not modify any externally-visible state after
+it has been cancelled. To do that, the thread should call
+<span class="link"><a href="Gio.Task.set_return_on_cancel.html" title="Gio.Task.prototype.set_return_on_cancel">Gio.Task.prototype.set_return_on_cancel</a></span> again to (atomically) set
+return-on-cancel <span class="code">false</span> before making externally-visible changes;
+if the task gets cancelled before the return-on-cancel flag could
+be changed, <span class="link"><a href="Gio.Task.set_return_on_cancel.html" title="Gio.Task.prototype.set_return_on_cancel">Gio.Task.prototype.set_return_on_cancel</a></span> will indicate this by
+returning <span class="code">false</span>.</p>
+<p class="p">You can disable and re-enable this flag multiple times if you wish.
+If the task's <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span> is cancelled while return-on-cancel is
+<span class="code">false</span>, then calling <span class="link"><a href="Gio.Task.set_return_on_cancel.html" title="Gio.Task.prototype.set_return_on_cancel">Gio.Task.prototype.set_return_on_cancel</a></span> to set it <span class="code">true</span>
+again will cause the task to be cancelled at that point.</p>
+<p class="p">If the task's <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span> is already cancelled before you call
+<span class="link"><a href="Gio.Task.run_in_thread.html" title="Gio.Task.run_in_thread">Gio.Task.run_in_thread</a></span>/<span class="link"><a href="Gio.Task.run_in_thread_sync.html" title="Gio.Task.run_in_thread_sync">Gio.Task.run_in_thread_sync</a></span>, then the
+<span class="link"><a href="Gio.TaskThreadFunc.html" title="Gio.TaskThreadFunc">Gio.TaskThreadFunc</a></span> will still be run (for consistency), but the task
+will also be completed right away.</p>
+<p class="p">Since 2.36</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">return_on_cancel</span></dt>
+<dd class="terms"><p class="p">whether the task returns automatically when
+  it is cancelled.</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> if <span class="code">task</span>'s return-on-cancel flag was changed to
+  match <span class="code">return_on_cancel</span>. <span class="code">false</span> if <span class="code">task</span> has already been
+  cancelled.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.Task.html" title="Gio.Task">Gio.Task</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

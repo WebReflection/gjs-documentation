@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.DateTime.new_from_unix_utc</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » <a class="trail" href="GLib.DateTime.html" title="GLib.DateTime">GLib.DateTime</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.DateTime.new_from_unix_utc</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function new_from_unix_utc(t: Number(gint64)): <span class="link"><a href="GLib.DateTime.html" title="GLib.DateTime">GLib.DateTime</a></span> {
+    // Gjs wrapper for g_date_time_new_from_unix_utc()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Creates a <span class="link"><a href="GLib.DateTime.html" title="GLib.DateTime">GLib.DateTime</a></span> corresponding to the given Unix time <span class="code">t</span> in UTC.</p>
+<p class="p">Unix time is the number of seconds that have elapsed since 1970-01-01
+00:00:00 UTC.</p>
+<p class="p">This call can fail (returning <span class="code">null</span>) if <span class="code">t</span> represents a time outside
+of the supported range of <span class="link"><a href="GLib.DateTime.html" title="GLib.DateTime">GLib.DateTime</a></span>.</p>
+<p class="p">You should release the return value by calling <span class="link"><a href="GLib.DateTime.unref.html" title="GLib.DateTime.prototype.unref">GLib.DateTime.prototype.unref</a></span>
+when you are done with it.</p>
+<p class="p">Since 2.26</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">t</span></dt>
+<dd class="terms"><p class="p">the Unix time</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">a new <span class="link"><a href="GLib.DateTime.html" title="GLib.DateTime">GLib.DateTime</a></span>, or <span class="code">null</span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="GLib.DateTime.html" title="GLib.DateTime">GLib.DateTime</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

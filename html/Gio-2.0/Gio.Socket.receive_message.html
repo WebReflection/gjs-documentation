@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.Socket.prototype.receive_message</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.Socket.html" title="Gio.Socket">Gio.Socket</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.Socket.prototype.receive_message</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function receive_message(vectors: Array(<span class="link"><a href="Gio.InputVector.html" title="Gio.InputVector">Gio.InputVector</a></span>), messages: Array(<span class="link"><a href="Gio.SocketControlMessage.html" title="Gio.SocketControlMessage">Gio.SocketControlMessage</a></span>), flags: Number(gint), cancellable: <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span>): [return_value: Number(gssize), address: <span class="link"><a href="Gio.SocketAddress.html" title="Gio.SocketAddress">Gio.SocketAddress</a></span>] {
+    // Gjs wrapper for g_socket_receive_message()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Receive data from a socket.  This is the most complicated and
+fully-featured version of this call. For easier use, see
+<span class="link"><a href="Gio.Socket.receive.html" title="Gio.Socket.prototype.receive">Gio.Socket.prototype.receive</a></span> and <span class="link"><a href="Gio.Socket.receive_from.html" title="Gio.Socket.prototype.receive_from">Gio.Socket.prototype.receive_from</a></span>.</p>
+<p class="p">If <span class="code">address</span> is non-<span class="code">null</span> then <span class="code">address</span> will be set equal to the
+source address of the received packet.
+<span class="code">address</span> is owned by the caller.</p>
+<p class="p">@vector must point to an array of <span class="link"><a href="Gio.InputVector.html" title="Gio.InputVector">Gio.InputVector</a></span> structs and
+<span class="code">num_vectors</span> must be the length of this array.  These structs
+describe the buffers that received data will be scattered into.
+If <span class="code">num_vectors</span> is -1, then <span class="code">vectors</span> is assumed to be terminated
+by a <span class="link"><a href="Gio.InputVector.html" title="Gio.InputVector">Gio.InputVector</a></span> with a <span class="code">null</span> buffer pointer.</p>
+<p class="p">As a special case, if <span class="code">num_vectors</span> is 0 (in which case, <span class="code">vectors</span>
+may of course be <span class="code">null</span>), then a single byte is received and
+discarded. This is to facilitate the common practice of sending a
+single '\0' byte for the purposes of transferring ancillary data.</p>
+<p class="p"><span class="code">messages</span>, if non-<span class="code">null</span>, will be set to point to a newly-allocated
+array of <span class="link"><a href="Gio.SocketControlMessage.html" title="Gio.SocketControlMessage">Gio.SocketControlMessage</a></span> instances or <span class="code">null</span> if no such
+messages was received. These correspond to the control messages
+received from the kernel, one <span class="link"><a href="Gio.SocketControlMessage.html" title="Gio.SocketControlMessage">Gio.SocketControlMessage</a></span> per message
+from the kernel. This array is <span class="code">null</span>-terminated and must be freed
+by the caller using <span class="link"><a href="../GLib-2.0/GLib.free.html" title="../GLib-2.0/GLib.free.html">GLib.free</a></span> after calling <span class="link"><a href="../GObject-2.0/GObject.Object.unref.html" title="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</a></span> on each
+element. If <span class="code">messages</span> is <span class="code">null</span>, any control messages received will
+be discarded.</p>
+<p class="p"><span class="code">num_messages</span>, if non-<span class="code">null</span>, will be set to the number of control
+messages received.</p>
+<p class="p">If both <span class="code">messages</span> and <span class="code">num_messages</span> are non-<span class="code">null</span>, then
+<span class="code">num_messages</span> gives the number of <span class="link"><a href="Gio.SocketControlMessage.html" title="Gio.SocketControlMessage">Gio.SocketControlMessage</a></span> instances
+in <span class="code">messages</span> (ie: not including the <span class="code">null</span> terminator).</p>
+<p class="p"><span class="code">flags</span> is an in/out parameter. The commonly available arguments
+for this are available in the <span class="link"><a href="Gio.SocketMsgFlags.html" title="Gio.SocketMsgFlags">Gio.SocketMsgFlags</a></span> enum, but the
+values there are the same as the system values, and the flags
+are passed in as-is, so you can pass in system-specific flags too
+(and <span class="link"><a href="Gio.Socket.receive_message.html" title="Gio.Socket.prototype.receive_message">Gio.Socket.prototype.receive_message</a></span> may pass system-specific flags out).</p>
+<p class="p">As with <span class="link"><a href="Gio.Socket.receive.html" title="Gio.Socket.prototype.receive">Gio.Socket.prototype.receive</a></span>, data may be discarded if <span class="code">socket</span> is
+<span class="link"><a href="Gio.SocketType.html" title="Gio.SocketType">Gio.SocketType</a></span>.datagram or <span class="link"><a href="Gio.SocketType.html" title="Gio.SocketType">Gio.SocketType</a></span>.seqpacket and you do not
+provide enough buffer space to read a complete message. You can pass
+<span class="link"><a href="Gio.SocketMsgFlags.html" title="Gio.SocketMsgFlags">Gio.SocketMsgFlags</a></span>.peek in <span class="code">flags</span> to peek at the current message without
+removing it from the receive queue, but there is no portable way to find
+out the length of the message other than by reading it into a
+sufficiently-large buffer.</p>
+<p class="p">If the socket is in blocking mode the call will block until there
+is some data to receive, the connection is closed, or there is an
+error. If there is no data available and the socket is in
+non-blocking mode, a <span class="link"><a href="Gio.IOErrorEnum.html" title="Gio.IOErrorEnum">Gio.IOErrorEnum</a></span>.would_block error will be
+returned. To be notified when data is available, wait for the
+<span class="link"><a href="../GLib-2.0/GLib.IOCondition.html" title="../GLib-2.0/GLib.IOCondition.html">GLib.IOCondition</a></span>.in condition.</p>
+<p class="p">On error -1 is returned and @error is set accordingly.</p>
+<p class="p">Since 2.22</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">vectors</span></dt>
+<dd class="terms"><p class="p">an array of <span class="link"><a href="Gio.InputVector.html" title="Gio.InputVector">Gio.InputVector</a></span> structs</p></dd>
+<dt class="terms"><span class="code">messages</span></dt>
+<dd class="terms"><p class="p">a pointer which
+   may be filled with an array of #GSocketControlMessages, or <span class="code">null</span></p></dd>
+<dt class="terms"><span class="code">flags</span></dt>
+<dd class="terms"><p class="p">a pointer to an int containing <span class="link"><a href="Gio.SocketMsgFlags.html" title="Gio.SocketMsgFlags">Gio.SocketMsgFlags</a></span> flags</p></dd>
+<dt class="terms"><span class="code">cancellable</span></dt>
+<dd class="terms"><p class="p">a %GCancellable or <span class="code">null</span></p></dd>
+<dt class="terms"><span class="code">return_value</span></dt>
+<dd class="terms"><p class="p">Number of bytes read, or 0 if the connection was closed by
+the peer, or -1 on error</p></dd>
+<dt class="terms"><span class="code">address</span></dt>
+<dd class="terms"><p class="p">a pointer to a <span class="link"><a href="Gio.SocketAddress.html" title="Gio.SocketAddress">Gio.SocketAddress</a></span>
+    pointer, or <span class="code">null</span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.Socket.html" title="Gio.Socket">Gio.Socket</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.spawn_check_exit_status</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.spawn_check_exit_status</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function spawn_check_exit_status(exit_status: Number(gint)): Boolean {
+    // Gjs wrapper for g_spawn_check_exit_status()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Set @error if <span class="code">exit_status</span> indicates the child exited abnormally
+(e.g. with a nonzero exit code, or via a fatal signal).</p>
+<p class="p">The <span class="link"><a href="GLib.spawn_sync.html" title="GLib.spawn_sync">GLib.spawn_sync</a></span> and <span class="link"><a href="GLib.child_watch_add.html" title="GLib.child_watch_add">GLib.child_watch_add</a></span> family of APIs return an
+exit status for subprocesses encoded in a platform-specific way.
+On Unix, this is guaranteed to be in the same format waitpid() returns,
+and on Windows it is guaranteed to be the result of GetExitCodeProcess().</p>
+<p class="p">Prior to the introduction of this function in GLib 2.34, interpreting
+<span class="code">exit_status</span> required use of platform-specific APIs, which is problematic
+for software using GLib as a cross-platform layer.</p>
+<p class="p">Additionally, many programs simply want to determine whether or not
+the child exited successfully, and either propagate a <span class="link"><a href="GLib.Error.html" title="GLib.Error">GLib.Error</a></span> or
+print a message to standard error. In that common case, this function
+can be used. Note that the error message in @error will contain
+human-readable information about the exit status.</p>
+<p class="p">The @domain and @code of @error have special semantics in the case
+where the process has an "exit code", as opposed to being killed by
+a signal. On Unix, this happens if WIFEXITED() would be true of
+<span class="code">exit_status</span>. On Windows, it is always the case.</p>
+<p class="p">The special semantics are that the actual exit code will be the
+code set in @error, and the domain will be %G_SPAWN_EXIT_ERROR.
+This allows you to differentiate between different exit codes.</p>
+<p class="p">If the process was terminated by some means other than an exit
+status, the domain will be %G_SPAWN_ERROR, and the code will be
+<span class="link"><a href="GLib.SpawnError.html" title="GLib.SpawnError">GLib.SpawnError</a></span>.failed.</p>
+<p class="p">This function just offers convenience; you can of course also check
+the available platform via a macro such as %G_OS_UNIX, and use
+WIFEXITED() and WEXITSTATUS() on <span class="code">exit_status</span> directly. Do not attempt
+to scan or parse the error message string; it may be translated and/or
+change in future versions of GLib.</p>
+<p class="p">Since 2.34</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">exit_status</span></dt>
+<dd class="terms"><p class="p">An exit code as returned from <span class="link"><a href="GLib.spawn_sync.html" title="GLib.spawn_sync">GLib.spawn_sync</a></span></p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> if child exited successfully, <span class="code">false</span> otherwise (and
+    @error will be set)</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="GLib">GLib</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

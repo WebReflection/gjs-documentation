@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.File</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.File</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
+
+let file = new Gio.File();
+  </pre></div></div></div></div></div>
+<p class="p"><span class="link"><a href="Gio.File.html" title="Gio.File">Gio.File</a></span> is a high level abstraction for manipulating files on a
+virtual file system. #GFiles are lightweight, immutable objects
+that do no I/O upon creation. It is necessary to understand that
+<span class="link"><a href="Gio.File.html" title="Gio.File">Gio.File</a></span> objects do not represent files, merely an identifier for a
+file. All file content I/O is implemented as streaming operations
+(see <span class="link"><a href="Gio.InputStream.html" title="Gio.InputStream">Gio.InputStream</a></span> and <span class="link"><a href="Gio.OutputStream.html" title="Gio.OutputStream">Gio.OutputStream</a></span>).</p>
+<p class="p">To construct a <span class="link"><a href="Gio.File.html" title="Gio.File">Gio.File</a></span>, you can use:
+- <span class="link"><a href="Gio.file_new_for_path.html" title="Gio.file_new_for_path">Gio.file_new_for_path</a></span> if you have a path.
+- <span class="link"><a href="Gio.file_new_for_uri.html" title="Gio.file_new_for_uri">Gio.file_new_for_uri</a></span> if you have a URI.
+- <span class="link"><a href="Gio.file_new_for_commandline_arg.html" title="Gio.file_new_for_commandline_arg">Gio.file_new_for_commandline_arg</a></span> for a command line argument.
+- <span class="link"><a href="Gio.file_new_tmp.html" title="Gio.file_new_tmp">Gio.file_new_tmp</a></span> to create a temporary file from a template.
+- <span class="link"><a href="Gio.file_parse_name.html" title="Gio.file_parse_name">Gio.file_parse_name</a></span> from a UTF-8 string gotten from <span class="link"><a href="Gio.File.get_parse_name.html" title="Gio.File.prototype.get_parse_name">Gio.File.prototype.get_parse_name</a></span>.</p>
+<p class="p">One way to think of a <span class="link"><a href="Gio.File.html" title="Gio.File">Gio.File</a></span> is as an abstraction of a pathname. For
+normal files the system pathname is what is stored internally, but as
+#GFiles are extensible it could also be something else that corresponds
+to a pathname in a userspace implementation of a filesystem.</p>
+<p class="p">#GFiles make up hierarchies of directories and files that correspond to
+the files on a filesystem. You can move through the file system with
+<span class="link"><a href="Gio.File.html" title="Gio.File">Gio.File</a></span> using <span class="link"><a href="Gio.File.get_parent.html" title="Gio.File.prototype.get_parent">Gio.File.prototype.get_parent</a></span> to get an identifier for the parent
+directory, <span class="link"><a href="Gio.File.get_child.html" title="Gio.File.prototype.get_child">Gio.File.prototype.get_child</a></span> to get a child within a directory,
+<span class="link"><a href="Gio.File.resolve_relative_path.html" title="Gio.File.prototype.resolve_relative_path">Gio.File.prototype.resolve_relative_path</a></span> to resolve a relative path between two
+#GFiles. There can be multiple hierarchies, so you may not end up at
+the same root if you repeatedly call <span class="link"><a href="Gio.File.get_parent.html" title="Gio.File.prototype.get_parent">Gio.File.prototype.get_parent</a></span> on two different
+files.</p>
+<p class="p">All #GFiles have a basename (get with <span class="link"><a href="Gio.File.get_basename.html" title="Gio.File.prototype.get_basename">Gio.File.prototype.get_basename</a></span>). These names
+are byte strings that are used to identify the file on the filesystem
+(relative to its parent directory) and there is no guarantees that they
+have any particular charset encoding or even make any sense at all. If
+you want to use filenames in a user interface you should use the display
+name that you can get by requesting the
+%G_FILE_ATTRIBUTE_STANDARD_DISPLAY_NAME attribute with <span class="link"><a href="Gio.File.query_info.html" title="Gio.File.prototype.query_info">Gio.File.prototype.query_info</a></span>.
+This is guaranteed to be in UTF-8 and can be used in a user interface.
+But always store the real basename or the <span class="link"><a href="Gio.File.html" title="Gio.File">Gio.File</a></span> to use to actually
+access the file, because there is no way to go from a display name to
+the actual name.</p>
+<p class="p">Using <span class="link"><a href="Gio.File.html" title="Gio.File">Gio.File</a></span> as an identifier has the same weaknesses as using a path
+in that there may be multiple aliases for the same file. For instance,
+hard or soft links may cause two different #GFiles to refer to the same
+file. Other possible causes for aliases are: case insensitive filesystems,
+short and long names on FAT/NTFS, or bind mounts in Linux. If you want to
+check if two #GFiles point to the same file you can query for the
+%G_FILE_ATTRIBUTE_ID_FILE attribute. Note that <span class="link"><a href="Gio.File.html" title="Gio.File">Gio.File</a></span> does some trivial
+canonicalization of pathnames passed in, so that trivial differences in
+the path string used at creation (duplicated slashes, slash at end of
+path, "." or ".." path segments, etc) does not create different #GFiles.</p>
+<p class="p">Many <span class="link"><a href="Gio.File.html" title="Gio.File">Gio.File</a></span> operations have both synchronous and asynchronous versions
+to suit your application. Asynchronous versions of synchronous functions
+simply have _async() appended to their function names. The asynchronous
+I/O functions call a <span class="link"><a href="Gio.AsyncReadyCallback.html" title="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</a></span> which is then used to finalize
+the operation, producing a GAsyncResult which is then passed to the
+function's matching _finish() operation.</p>
+<p class="p">Some <span class="link"><a href="Gio.File.html" title="Gio.File">Gio.File</a></span> operations do not have synchronous analogs, as they may
+take a very long time to finish, and blocking may leave an application
+unusable. Notable cases include:
+- <span class="link"><a href="Gio.File.mount_mountable.html" title="Gio.File.prototype.mount_mountable">Gio.File.prototype.mount_mountable</a></span> to mount a mountable file.
+- <span class="link"><a href="Gio.File.unmount_mountable_with_operation.html" title="Gio.File.prototype.unmount_mountable_with_operation">Gio.File.prototype.unmount_mountable_with_operation</a></span> to unmount a mountable file.
+- <span class="link"><a href="Gio.File.eject_mountable_with_operation.html" title="Gio.File.prototype.eject_mountable_with_operation">Gio.File.prototype.eject_mountable_with_operation</a></span> to eject a mountable file.</p>
+<p class="p">## Entity Tags # {#gfile-etag}</p>
+<p class="p">One notable feature of #GFiles are entity tags, or "etags" for
+short. Entity tags are somewhat like a more abstract version of the
+traditional mtime, and can be used to quickly determine if the file
+has been modified from the version on the file system. See the
+HTTP 1.1
+[specification](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html)
+for HTTP Etag headers, which are a very similar concept.</p>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Prerequisites</span></h2></div>
+<div class="region"><div class="contents"><p class="p">File requires GObject.Object</p></div></div>
+</div></div>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Known Implementations</span></h2></div>
+<div class="region"><div class="contents"><p class="p">None</p></div></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.File.append_to.html" title="Gio.File.prototype.append_to">Gio.File.prototype.append_to</a></li>
+<li class="links "><a href="Gio.File.append_to_async.html" title="Gio.File.prototype.append_to_async">Gio.File.prototype.append_to_async</a></li>
+<li class="links "><a href="Gio.File.append_to_finish.html" title="Gio.File.prototype.append_to_finish">Gio.File.prototype.append_to_finish</a></li>
+<li class="links "><a href="Gio.File.copy.html" title="Gio.File.prototype.copy">Gio.File.prototype.copy</a></li>
+<li class="links "><a href="Gio.File.copy_attributes.html" title="Gio.File.prototype.copy_attributes">Gio.File.prototype.copy_attributes</a></li>
+<li class="links "><a href="Gio.File.copy_finish.html" title="Gio.File.prototype.copy_finish">Gio.File.prototype.copy_finish</a></li>
+<li class="links "><a href="Gio.File.create.html" title="Gio.File.prototype.create">Gio.File.prototype.create</a></li>
+<li class="links "><a href="Gio.File.create_async.html" title="Gio.File.prototype.create_async">Gio.File.prototype.create_async</a></li>
+<li class="links "><a href="Gio.File.create_finish.html" title="Gio.File.prototype.create_finish">Gio.File.prototype.create_finish</a></li>
+<li class="links "><a href="Gio.File.create_readwrite.html" title="Gio.File.prototype.create_readwrite">Gio.File.prototype.create_readwrite</a></li>
+<li class="links "><a href="Gio.File.create_readwrite_async.html" title="Gio.File.prototype.create_readwrite_async">Gio.File.prototype.create_readwrite_async</a></li>
+<li class="links "><a href="Gio.File.create_readwrite_finish.html" title="Gio.File.prototype.create_readwrite_finish">Gio.File.prototype.create_readwrite_finish</a></li>
+<li class="links "><a href="Gio.File.delete.html" title="Gio.File.prototype.delete">Gio.File.prototype.delete</a></li>
+<li class="links "><a href="Gio.File.delete_async.html" title="Gio.File.prototype.delete_async">Gio.File.prototype.delete_async</a></li>
+<li class="links "><a href="Gio.File.delete_finish.html" title="Gio.File.prototype.delete_finish">Gio.File.prototype.delete_finish</a></li>
+<li class="links "><a href="Gio.File.dup.html" title="Gio.File.prototype.dup">Gio.File.prototype.dup</a></li>
+<li class="links "><a href="Gio.File.eject_mountable.html" title="Gio.File.prototype.eject_mountable">Gio.File.prototype.eject_mountable</a></li>
+<li class="links "><a href="Gio.File.eject_mountable_finish.html" title="Gio.File.prototype.eject_mountable_finish">Gio.File.prototype.eject_mountable_finish</a></li>
+<li class="links "><a href="Gio.File.eject_mountable_with_operation.html" title="Gio.File.prototype.eject_mountable_with_operation">Gio.File.prototype.eject_mountable_with_operation</a></li>
+<li class="links "><a href="Gio.File.eject_mountable_with_operation_finish.html" title="Gio.File.prototype.eject_mountable_with_operation_finish">Gio.File.prototype.eject_mountable_with_operation_finish</a></li>
+<li class="links "><a href="Gio.File.enumerate_children.html" title="Gio.File.prototype.enumerate_children">Gio.File.prototype.enumerate_children</a></li>
+<li class="links "><a href="Gio.File.enumerate_children_async.html" title="Gio.File.prototype.enumerate_children_async">Gio.File.prototype.enumerate_children_async</a></li>
+<li class="links "><a href="Gio.File.enumerate_children_finish.html" title="Gio.File.prototype.enumerate_children_finish">Gio.File.prototype.enumerate_children_finish</a></li>
+<li class="links "><a href="Gio.File.equal.html" title="Gio.File.prototype.equal">Gio.File.prototype.equal</a></li>
+<li class="links "><a href="Gio.File.find_enclosing_mount.html" title="Gio.File.prototype.find_enclosing_mount">Gio.File.prototype.find_enclosing_mount</a></li>
+<li class="links "><a href="Gio.File.find_enclosing_mount_async.html" title="Gio.File.prototype.find_enclosing_mount_async">Gio.File.prototype.find_enclosing_mount_async</a></li>
+<li class="links "><a href="Gio.File.find_enclosing_mount_finish.html" title="Gio.File.prototype.find_enclosing_mount_finish">Gio.File.prototype.find_enclosing_mount_finish</a></li>
+<li class="links "><a href="Gio.File.get_basename.html" title="Gio.File.prototype.get_basename">Gio.File.prototype.get_basename</a></li>
+<li class="links "><a href="Gio.File.get_child.html" title="Gio.File.prototype.get_child">Gio.File.prototype.get_child</a></li>
+<li class="links "><a href="Gio.File.get_child_for_display_name.html" title="Gio.File.prototype.get_child_for_display_name">Gio.File.prototype.get_child_for_display_name</a></li>
+<li class="links "><a href="Gio.File.get_parent.html" title="Gio.File.prototype.get_parent">Gio.File.prototype.get_parent</a></li>
+<li class="links "><a href="Gio.File.get_parse_name.html" title="Gio.File.prototype.get_parse_name">Gio.File.prototype.get_parse_name</a></li>
+<li class="links "><a href="Gio.File.get_path.html" title="Gio.File.prototype.get_path">Gio.File.prototype.get_path</a></li>
+<li class="links "><a href="Gio.File.get_relative_path.html" title="Gio.File.prototype.get_relative_path">Gio.File.prototype.get_relative_path</a></li>
+<li class="links "><a href="Gio.File.get_uri.html" title="Gio.File.prototype.get_uri">Gio.File.prototype.get_uri</a></li>
+<li class="links "><a href="Gio.File.get_uri_scheme.html" title="Gio.File.prototype.get_uri_scheme">Gio.File.prototype.get_uri_scheme</a></li>
+<li class="links "><a href="Gio.File.has_parent.html" title="Gio.File.prototype.has_parent">Gio.File.prototype.has_parent</a></li>
+<li class="links "><a href="Gio.File.has_prefix.html" title="Gio.File.prototype.has_prefix">Gio.File.prototype.has_prefix</a></li>
+<li class="links "><a href="Gio.File.has_uri_scheme.html" title="Gio.File.prototype.has_uri_scheme">Gio.File.prototype.has_uri_scheme</a></li>
+<li class="links "><a href="Gio.File.hash.html" title="Gio.File.prototype.hash">Gio.File.prototype.hash</a></li>
+<li class="links "><a href="Gio.File.is_native.html" title="Gio.File.prototype.is_native">Gio.File.prototype.is_native</a></li>
+<li class="links "><a href="Gio.File.load_contents.html" title="Gio.File.prototype.load_contents">Gio.File.prototype.load_contents</a></li>
+<li class="links "><a href="Gio.File.load_contents_async.html" title="Gio.File.prototype.load_contents_async">Gio.File.prototype.load_contents_async</a></li>
+<li class="links "><a href="Gio.File.load_contents_finish.html" title="Gio.File.prototype.load_contents_finish">Gio.File.prototype.load_contents_finish</a></li>
+<li class="links "><a href="Gio.File.load_partial_contents_finish.html" title="Gio.File.prototype.load_partial_contents_finish">Gio.File.prototype.load_partial_contents_finish</a></li>
+<li class="links "><a href="Gio.File.make_directory.html" title="Gio.File.prototype.make_directory">Gio.File.prototype.make_directory</a></li>
+<li class="links "><a href="Gio.File.make_directory_async.html" title="Gio.File.prototype.make_directory_async">Gio.File.prototype.make_directory_async</a></li>
+<li class="links "><a href="Gio.File.make_directory_finish.html" title="Gio.File.prototype.make_directory_finish">Gio.File.prototype.make_directory_finish</a></li>
+<li class="links "><a href="Gio.File.make_directory_with_parents.html" title="Gio.File.prototype.make_directory_with_parents">Gio.File.prototype.make_directory_with_parents</a></li>
+<li class="links "><a href="Gio.File.make_symbolic_link.html" title="Gio.File.prototype.make_symbolic_link">Gio.File.prototype.make_symbolic_link</a></li>
+<li class="links "><a href="Gio.File.measure_disk_usage_finish.html" title="Gio.File.prototype.measure_disk_usage_finish">Gio.File.prototype.measure_disk_usage_finish</a></li>
+<li class="links "><a href="Gio.File.monitor.html" title="Gio.File.prototype.monitor">Gio.File.prototype.monitor</a></li>
+<li class="links "><a href="Gio.File.monitor_directory.html" title="Gio.File.prototype.monitor_directory">Gio.File.prototype.monitor_directory</a></li>
+<li class="links "><a href="Gio.File.monitor_file.html" title="Gio.File.prototype.monitor_file">Gio.File.prototype.monitor_file</a></li>
+<li class="links "><a href="Gio.File.mount_enclosing_volume.html" title="Gio.File.prototype.mount_enclosing_volume">Gio.File.prototype.mount_enclosing_volume</a></li>
+<li class="links "><a href="Gio.File.mount_enclosing_volume_finish.html" title="Gio.File.prototype.mount_enclosing_volume_finish">Gio.File.prototype.mount_enclosing_volume_finish</a></li>
+<li class="links "><a href="Gio.File.mount_mountable.html" title="Gio.File.prototype.mount_mountable">Gio.File.prototype.mount_mountable</a></li>
+<li class="links "><a href="Gio.File.mount_mountable_finish.html" title="Gio.File.prototype.mount_mountable_finish">Gio.File.prototype.mount_mountable_finish</a></li>
+<li class="links "><a href="Gio.File.move.html" title="Gio.File.prototype.move">Gio.File.prototype.move</a></li>
+<li class="links "><a href="Gio.File.open_readwrite.html" title="Gio.File.prototype.open_readwrite">Gio.File.prototype.open_readwrite</a></li>
+<li class="links "><a href="Gio.File.open_readwrite_async.html" title="Gio.File.prototype.open_readwrite_async">Gio.File.prototype.open_readwrite_async</a></li>
+<li class="links "><a href="Gio.File.open_readwrite_finish.html" title="Gio.File.prototype.open_readwrite_finish">Gio.File.prototype.open_readwrite_finish</a></li>
+<li class="links "><a href="Gio.File.poll_mountable.html" title="Gio.File.prototype.poll_mountable">Gio.File.prototype.poll_mountable</a></li>
+<li class="links "><a href="Gio.File.poll_mountable_finish.html" title="Gio.File.prototype.poll_mountable_finish">Gio.File.prototype.poll_mountable_finish</a></li>
+<li class="links "><a href="Gio.File.query_default_handler.html" title="Gio.File.prototype.query_default_handler">Gio.File.prototype.query_default_handler</a></li>
+<li class="links "><a href="Gio.File.query_exists.html" title="Gio.File.prototype.query_exists">Gio.File.prototype.query_exists</a></li>
+<li class="links "><a href="Gio.File.query_file_type.html" title="Gio.File.prototype.query_file_type">Gio.File.prototype.query_file_type</a></li>
+<li class="links "><a href="Gio.File.query_filesystem_info.html" title="Gio.File.prototype.query_filesystem_info">Gio.File.prototype.query_filesystem_info</a></li>
+<li class="links "><a href="Gio.File.query_filesystem_info_async.html" title="Gio.File.prototype.query_filesystem_info_async">Gio.File.prototype.query_filesystem_info_async</a></li>
+<li class="links "><a href="Gio.File.query_filesystem_info_finish.html" title="Gio.File.prototype.query_filesystem_info_finish">Gio.File.prototype.query_filesystem_info_finish</a></li>
+<li class="links "><a href="Gio.File.query_info.html" title="Gio.File.prototype.query_info">Gio.File.prototype.query_info</a></li>
+<li class="links "><a href="Gio.File.query_info_async.html" title="Gio.File.prototype.query_info_async">Gio.File.prototype.query_info_async</a></li>
+<li class="links "><a href="Gio.File.query_info_finish.html" title="Gio.File.prototype.query_info_finish">Gio.File.prototype.query_info_finish</a></li>
+<li class="links "><a href="Gio.File.query_settable_attributes.html" title="Gio.File.prototype.query_settable_attributes">Gio.File.prototype.query_settable_attributes</a></li>
+<li class="links "><a href="Gio.File.query_writable_namespaces.html" title="Gio.File.prototype.query_writable_namespaces">Gio.File.prototype.query_writable_namespaces</a></li>
+<li class="links "><a href="Gio.File.read.html" title="Gio.File.prototype.read">Gio.File.prototype.read</a></li>
+<li class="links "><a href="Gio.File.read_async.html" title="Gio.File.prototype.read_async">Gio.File.prototype.read_async</a></li>
+<li class="links "><a href="Gio.File.read_finish.html" title="Gio.File.prototype.read_finish">Gio.File.prototype.read_finish</a></li>
+<li class="links "><a href="Gio.File.replace.html" title="Gio.File.prototype.replace">Gio.File.prototype.replace</a></li>
+<li class="links "><a href="Gio.File.replace_async.html" title="Gio.File.prototype.replace_async">Gio.File.prototype.replace_async</a></li>
+<li class="links "><a href="Gio.File.replace_contents.html" title="Gio.File.prototype.replace_contents">Gio.File.prototype.replace_contents</a></li>
+<li class="links "><a href="Gio.File.replace_contents_async.html" title="Gio.File.prototype.replace_contents_async">Gio.File.prototype.replace_contents_async</a></li>
+<li class="links "><a href="Gio.File.replace_contents_bytes_async.html" title="Gio.File.prototype.replace_contents_bytes_async">Gio.File.prototype.replace_contents_bytes_async</a></li>
+<li class="links "><a href="Gio.File.replace_contents_finish.html" title="Gio.File.prototype.replace_contents_finish">Gio.File.prototype.replace_contents_finish</a></li>
+<li class="links "><a href="Gio.File.replace_finish.html" title="Gio.File.prototype.replace_finish">Gio.File.prototype.replace_finish</a></li>
+<li class="links "><a href="Gio.File.replace_readwrite.html" title="Gio.File.prototype.replace_readwrite">Gio.File.prototype.replace_readwrite</a></li>
+<li class="links "><a href="Gio.File.replace_readwrite_async.html" title="Gio.File.prototype.replace_readwrite_async">Gio.File.prototype.replace_readwrite_async</a></li>
+<li class="links "><a href="Gio.File.replace_readwrite_finish.html" title="Gio.File.prototype.replace_readwrite_finish">Gio.File.prototype.replace_readwrite_finish</a></li>
+<li class="links "><a href="Gio.File.resolve_relative_path.html" title="Gio.File.prototype.resolve_relative_path">Gio.File.prototype.resolve_relative_path</a></li>
+<li class="links "><a href="Gio.File.set_attribute.html" title="Gio.File.prototype.set_attribute">Gio.File.prototype.set_attribute</a></li>
+<li class="links "><a href="Gio.File.set_attribute_byte_string.html" title="Gio.File.prototype.set_attribute_byte_string">Gio.File.prototype.set_attribute_byte_string</a></li>
+<li class="links "><a href="Gio.File.set_attribute_int32.html" title="Gio.File.prototype.set_attribute_int32">Gio.File.prototype.set_attribute_int32</a></li>
+<li class="links "><a href="Gio.File.set_attribute_int64.html" title="Gio.File.prototype.set_attribute_int64">Gio.File.prototype.set_attribute_int64</a></li>
+<li class="links "><a href="Gio.File.set_attribute_string.html" title="Gio.File.prototype.set_attribute_string">Gio.File.prototype.set_attribute_string</a></li>
+<li class="links "><a href="Gio.File.set_attribute_uint32.html" title="Gio.File.prototype.set_attribute_uint32">Gio.File.prototype.set_attribute_uint32</a></li>
+<li class="links "><a href="Gio.File.set_attribute_uint64.html" title="Gio.File.prototype.set_attribute_uint64">Gio.File.prototype.set_attribute_uint64</a></li>
+<li class="links "><a href="Gio.File.set_attributes_async.html" title="Gio.File.prototype.set_attributes_async">Gio.File.prototype.set_attributes_async</a></li>
+<li class="links "><a href="Gio.File.set_attributes_finish.html" title="Gio.File.prototype.set_attributes_finish">Gio.File.prototype.set_attributes_finish</a></li>
+<li class="links "><a href="Gio.File.set_attributes_from_info.html" title="Gio.File.prototype.set_attributes_from_info">Gio.File.prototype.set_attributes_from_info</a></li>
+<li class="links "><a href="Gio.File.set_display_name.html" title="Gio.File.prototype.set_display_name">Gio.File.prototype.set_display_name</a></li>
+<li class="links "><a href="Gio.File.set_display_name_async.html" title="Gio.File.prototype.set_display_name_async">Gio.File.prototype.set_display_name_async</a></li>
+<li class="links "><a href="Gio.File.set_display_name_finish.html" title="Gio.File.prototype.set_display_name_finish">Gio.File.prototype.set_display_name_finish</a></li>
+<li class="links "><a href="Gio.File.start_mountable.html" title="Gio.File.prototype.start_mountable">Gio.File.prototype.start_mountable</a></li>
+<li class="links "><a href="Gio.File.start_mountable_finish.html" title="Gio.File.prototype.start_mountable_finish">Gio.File.prototype.start_mountable_finish</a></li>
+<li class="links "><a href="Gio.File.stop_mountable.html" title="Gio.File.prototype.stop_mountable">Gio.File.prototype.stop_mountable</a></li>
+<li class="links "><a href="Gio.File.stop_mountable_finish.html" title="Gio.File.prototype.stop_mountable_finish">Gio.File.prototype.stop_mountable_finish</a></li>
+<li class="links "><a href="Gio.File.supports_thread_contexts.html" title="Gio.File.prototype.supports_thread_contexts">Gio.File.prototype.supports_thread_contexts</a></li>
+<li class="links "><a href="Gio.File.trash.html" title="Gio.File.prototype.trash">Gio.File.prototype.trash</a></li>
+<li class="links "><a href="Gio.File.trash_async.html" title="Gio.File.prototype.trash_async">Gio.File.prototype.trash_async</a></li>
+<li class="links "><a href="Gio.File.trash_finish.html" title="Gio.File.prototype.trash_finish">Gio.File.prototype.trash_finish</a></li>
+<li class="links "><a href="Gio.File.unmount_mountable.html" title="Gio.File.prototype.unmount_mountable">Gio.File.prototype.unmount_mountable</a></li>
+<li class="links "><a href="Gio.File.unmount_mountable_finish.html" title="Gio.File.prototype.unmount_mountable_finish">Gio.File.prototype.unmount_mountable_finish</a></li>
+<li class="links "><a href="Gio.File.unmount_mountable_with_operation.html" title="Gio.File.prototype.unmount_mountable_with_operation">Gio.File.prototype.unmount_mountable_with_operation</a></li>
+<li class="links "><a href="Gio.File.unmount_mountable_with_operation_finish.html" title="Gio.File.prototype.unmount_mountable_with_operation_finish">Gio.File.prototype.unmount_mountable_with_operation_finish</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Static Functions</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.File.new_for_commandline_arg.html" title="Gio.File.new_for_commandline_arg">Gio.File.new_for_commandline_arg</a></li>
+<li class="links "><a href="Gio.File.new_for_commandline_arg_and_cwd.html" title="Gio.File.new_for_commandline_arg_and_cwd">Gio.File.new_for_commandline_arg_and_cwd</a></li>
+<li class="links "><a href="Gio.File.new_for_path.html" title="Gio.File.new_for_path">Gio.File.new_for_path</a></li>
+<li class="links "><a href="Gio.File.new_for_uri.html" title="Gio.File.new_for_uri">Gio.File.new_for_uri</a></li>
+<li class="links "><a href="Gio.File.new_tmp.html" title="Gio.File.new_tmp">Gio.File.new_tmp</a></li>
+<li class="links "><a href="Gio.File.parse_name.html" title="Gio.File.parse_name">Gio.File.parse_name</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Virtual functions</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.File-append_to.html" title="Gio.File::append_to">Gio.File::append_to</a></li>
+<li class="links "><a href="Gio.File-append_to_async.html" title="Gio.File::append_to_async">Gio.File::append_to_async</a></li>
+<li class="links "><a href="Gio.File-append_to_finish.html" title="Gio.File::append_to_finish">Gio.File::append_to_finish</a></li>
+<li class="links "><a href="Gio.File-copy.html" title="Gio.File::copy">Gio.File::copy</a></li>
+<li class="links "><a href="Gio.File-copy_finish.html" title="Gio.File::copy_finish">Gio.File::copy_finish</a></li>
+<li class="links "><a href="Gio.File-create.html" title="Gio.File::create">Gio.File::create</a></li>
+<li class="links "><a href="Gio.File-create_async.html" title="Gio.File::create_async">Gio.File::create_async</a></li>
+<li class="links "><a href="Gio.File-create_finish.html" title="Gio.File::create_finish">Gio.File::create_finish</a></li>
+<li class="links "><a href="Gio.File-create_readwrite.html" title="Gio.File::create_readwrite">Gio.File::create_readwrite</a></li>
+<li class="links "><a href="Gio.File-create_readwrite_async.html" title="Gio.File::create_readwrite_async">Gio.File::create_readwrite_async</a></li>
+<li class="links "><a href="Gio.File-create_readwrite_finish.html" title="Gio.File::create_readwrite_finish">Gio.File::create_readwrite_finish</a></li>
+<li class="links "><a href="Gio.File-delete_file.html" title="Gio.File::delete_file">Gio.File::delete_file</a></li>
+<li class="links "><a href="Gio.File-delete_file_async.html" title="Gio.File::delete_file_async">Gio.File::delete_file_async</a></li>
+<li class="links "><a href="Gio.File-delete_file_finish.html" title="Gio.File::delete_file_finish">Gio.File::delete_file_finish</a></li>
+<li class="links "><a href="Gio.File-dup.html" title="Gio.File::dup">Gio.File::dup</a></li>
+<li class="links "><a href="Gio.File-eject_mountable.html" title="Gio.File::eject_mountable">Gio.File::eject_mountable</a></li>
+<li class="links "><a href="Gio.File-eject_mountable_finish.html" title="Gio.File::eject_mountable_finish">Gio.File::eject_mountable_finish</a></li>
+<li class="links "><a href="Gio.File-eject_mountable_with_operation.html" title="Gio.File::eject_mountable_with_operation">Gio.File::eject_mountable_with_operation</a></li>
+<li class="links "><a href="Gio.File-eject_mountable_with_operation_finish.html" title="Gio.File::eject_mountable_with_operation_finish">Gio.File::eject_mountable_with_operation_finish</a></li>
+<li class="links "><a href="Gio.File-enumerate_children.html" title="Gio.File::enumerate_children">Gio.File::enumerate_children</a></li>
+<li class="links "><a href="Gio.File-enumerate_children_async.html" title="Gio.File::enumerate_children_async">Gio.File::enumerate_children_async</a></li>
+<li class="links "><a href="Gio.File-enumerate_children_finish.html" title="Gio.File::enumerate_children_finish">Gio.File::enumerate_children_finish</a></li>
+<li class="links "><a href="Gio.File-equal.html" title="Gio.File::equal">Gio.File::equal</a></li>
+<li class="links "><a href="Gio.File-find_enclosing_mount.html" title="Gio.File::find_enclosing_mount">Gio.File::find_enclosing_mount</a></li>
+<li class="links "><a href="Gio.File-find_enclosing_mount_async.html" title="Gio.File::find_enclosing_mount_async">Gio.File::find_enclosing_mount_async</a></li>
+<li class="links "><a href="Gio.File-find_enclosing_mount_finish.html" title="Gio.File::find_enclosing_mount_finish">Gio.File::find_enclosing_mount_finish</a></li>
+<li class="links "><a href="Gio.File-get_basename.html" title="Gio.File::get_basename">Gio.File::get_basename</a></li>
+<li class="links "><a href="Gio.File-get_child_for_display_name.html" title="Gio.File::get_child_for_display_name">Gio.File::get_child_for_display_name</a></li>
+<li class="links "><a href="Gio.File-get_parent.html" title="Gio.File::get_parent">Gio.File::get_parent</a></li>
+<li class="links "><a href="Gio.File-get_parse_name.html" title="Gio.File::get_parse_name">Gio.File::get_parse_name</a></li>
+<li class="links "><a href="Gio.File-get_path.html" title="Gio.File::get_path">Gio.File::get_path</a></li>
+<li class="links "><a href="Gio.File-get_relative_path.html" title="Gio.File::get_relative_path">Gio.File::get_relative_path</a></li>
+<li class="links "><a href="Gio.File-get_uri.html" title="Gio.File::get_uri">Gio.File::get_uri</a></li>
+<li class="links "><a href="Gio.File-get_uri_scheme.html" title="Gio.File::get_uri_scheme">Gio.File::get_uri_scheme</a></li>
+<li class="links "><a href="Gio.File-has_uri_scheme.html" title="Gio.File::has_uri_scheme">Gio.File::has_uri_scheme</a></li>
+<li class="links "><a href="Gio.File-hash.html" title="Gio.File::hash">Gio.File::hash</a></li>
+<li class="links "><a href="Gio.File-is_native.html" title="Gio.File::is_native">Gio.File::is_native</a></li>
+<li class="links "><a href="Gio.File-make_directory.html" title="Gio.File::make_directory">Gio.File::make_directory</a></li>
+<li class="links "><a href="Gio.File-make_directory_async.html" title="Gio.File::make_directory_async">Gio.File::make_directory_async</a></li>
+<li class="links "><a href="Gio.File-make_directory_finish.html" title="Gio.File::make_directory_finish">Gio.File::make_directory_finish</a></li>
+<li class="links "><a href="Gio.File-make_symbolic_link.html" title="Gio.File::make_symbolic_link">Gio.File::make_symbolic_link</a></li>
+<li class="links "><a href="Gio.File-measure_disk_usage_finish.html" title="Gio.File::measure_disk_usage_finish">Gio.File::measure_disk_usage_finish</a></li>
+<li class="links "><a href="Gio.File-monitor_dir.html" title="Gio.File::monitor_dir">Gio.File::monitor_dir</a></li>
+<li class="links "><a href="Gio.File-monitor_file.html" title="Gio.File::monitor_file">Gio.File::monitor_file</a></li>
+<li class="links "><a href="Gio.File-mount_enclosing_volume.html" title="Gio.File::mount_enclosing_volume">Gio.File::mount_enclosing_volume</a></li>
+<li class="links "><a href="Gio.File-mount_enclosing_volume_finish.html" title="Gio.File::mount_enclosing_volume_finish">Gio.File::mount_enclosing_volume_finish</a></li>
+<li class="links "><a href="Gio.File-mount_mountable.html" title="Gio.File::mount_mountable">Gio.File::mount_mountable</a></li>
+<li class="links "><a href="Gio.File-mount_mountable_finish.html" title="Gio.File::mount_mountable_finish">Gio.File::mount_mountable_finish</a></li>
+<li class="links "><a href="Gio.File-move.html" title="Gio.File::move">Gio.File::move</a></li>
+<li class="links "><a href="Gio.File-open_readwrite.html" title="Gio.File::open_readwrite">Gio.File::open_readwrite</a></li>
+<li class="links "><a href="Gio.File-open_readwrite_async.html" title="Gio.File::open_readwrite_async">Gio.File::open_readwrite_async</a></li>
+<li class="links "><a href="Gio.File-open_readwrite_finish.html" title="Gio.File::open_readwrite_finish">Gio.File::open_readwrite_finish</a></li>
+<li class="links "><a href="Gio.File-poll_mountable.html" title="Gio.File::poll_mountable">Gio.File::poll_mountable</a></li>
+<li class="links "><a href="Gio.File-poll_mountable_finish.html" title="Gio.File::poll_mountable_finish">Gio.File::poll_mountable_finish</a></li>
+<li class="links "><a href="Gio.File-prefix_matches.html" title="Gio.File::prefix_matches">Gio.File::prefix_matches</a></li>
+<li class="links "><a href="Gio.File-query_filesystem_info.html" title="Gio.File::query_filesystem_info">Gio.File::query_filesystem_info</a></li>
+<li class="links "><a href="Gio.File-query_filesystem_info_async.html" title="Gio.File::query_filesystem_info_async">Gio.File::query_filesystem_info_async</a></li>
+<li class="links "><a href="Gio.File-query_filesystem_info_finish.html" title="Gio.File::query_filesystem_info_finish">Gio.File::query_filesystem_info_finish</a></li>
+<li class="links "><a href="Gio.File-query_info.html" title="Gio.File::query_info">Gio.File::query_info</a></li>
+<li class="links "><a href="Gio.File-query_info_async.html" title="Gio.File::query_info_async">Gio.File::query_info_async</a></li>
+<li class="links "><a href="Gio.File-query_info_finish.html" title="Gio.File::query_info_finish">Gio.File::query_info_finish</a></li>
+<li class="links "><a href="Gio.File-query_settable_attributes.html" title="Gio.File::query_settable_attributes">Gio.File::query_settable_attributes</a></li>
+<li class="links "><a href="Gio.File-query_writable_namespaces.html" title="Gio.File::query_writable_namespaces">Gio.File::query_writable_namespaces</a></li>
+<li class="links "><a href="Gio.File-read_async.html" title="Gio.File::read_async">Gio.File::read_async</a></li>
+<li class="links "><a href="Gio.File-read_finish.html" title="Gio.File::read_finish">Gio.File::read_finish</a></li>
+<li class="links "><a href="Gio.File-read_fn.html" title="Gio.File::read_fn">Gio.File::read_fn</a></li>
+<li class="links "><a href="Gio.File-replace.html" title="Gio.File::replace">Gio.File::replace</a></li>
+<li class="links "><a href="Gio.File-replace_async.html" title="Gio.File::replace_async">Gio.File::replace_async</a></li>
+<li class="links "><a href="Gio.File-replace_finish.html" title="Gio.File::replace_finish">Gio.File::replace_finish</a></li>
+<li class="links "><a href="Gio.File-replace_readwrite.html" title="Gio.File::replace_readwrite">Gio.File::replace_readwrite</a></li>
+<li class="links "><a href="Gio.File-replace_readwrite_async.html" title="Gio.File::replace_readwrite_async">Gio.File::replace_readwrite_async</a></li>
+<li class="links "><a href="Gio.File-replace_readwrite_finish.html" title="Gio.File::replace_readwrite_finish">Gio.File::replace_readwrite_finish</a></li>
+<li class="links "><a href="Gio.File-resolve_relative_path.html" title="Gio.File::resolve_relative_path">Gio.File::resolve_relative_path</a></li>
+<li class="links "><a href="Gio.File-set_attribute.html" title="Gio.File::set_attribute">Gio.File::set_attribute</a></li>
+<li class="links "><a href="Gio.File-set_attributes_async.html" title="Gio.File::set_attributes_async">Gio.File::set_attributes_async</a></li>
+<li class="links "><a href="Gio.File-set_attributes_finish.html" title="Gio.File::set_attributes_finish">Gio.File::set_attributes_finish</a></li>
+<li class="links "><a href="Gio.File-set_attributes_from_info.html" title="Gio.File::set_attributes_from_info">Gio.File::set_attributes_from_info</a></li>
+<li class="links "><a href="Gio.File-set_display_name.html" title="Gio.File::set_display_name">Gio.File::set_display_name</a></li>
+<li class="links "><a href="Gio.File-set_display_name_async.html" title="Gio.File::set_display_name_async">Gio.File::set_display_name_async</a></li>
+<li class="links "><a href="Gio.File-set_display_name_finish.html" title="Gio.File::set_display_name_finish">Gio.File::set_display_name_finish</a></li>
+<li class="links "><a href="Gio.File-start_mountable.html" title="Gio.File::start_mountable">Gio.File::start_mountable</a></li>
+<li class="links "><a href="Gio.File-start_mountable_finish.html" title="Gio.File::start_mountable_finish">Gio.File::start_mountable_finish</a></li>
+<li class="links "><a href="Gio.File-stop_mountable.html" title="Gio.File::stop_mountable">Gio.File::stop_mountable</a></li>
+<li class="links "><a href="Gio.File-stop_mountable_finish.html" title="Gio.File::stop_mountable_finish">Gio.File::stop_mountable_finish</a></li>
+<li class="links "><a href="Gio.File-trash.html" title="Gio.File::trash">Gio.File::trash</a></li>
+<li class="links "><a href="Gio.File-trash_async.html" title="Gio.File::trash_async">Gio.File::trash_async</a></li>
+<li class="links "><a href="Gio.File-trash_finish.html" title="Gio.File::trash_finish">Gio.File::trash_finish</a></li>
+<li class="links "><a href="Gio.File-unmount_mountable.html" title="Gio.File::unmount_mountable">Gio.File::unmount_mountable</a></li>
+<li class="links "><a href="Gio.File-unmount_mountable_finish.html" title="Gio.File::unmount_mountable_finish">Gio.File::unmount_mountable_finish</a></li>
+<li class="links "><a href="Gio.File-unmount_mountable_with_operation.html" title="Gio.File::unmount_mountable_with_operation">Gio.File::unmount_mountable_with_operation</a></li>
+<li class="links "><a href="Gio.File-unmount_mountable_with_operation_finish.html" title="Gio.File::unmount_mountable_with_operation_finish">Gio.File::unmount_mountable_with_operation_finish</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gio">Gio</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

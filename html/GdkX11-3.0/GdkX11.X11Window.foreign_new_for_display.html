@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GdkX11.X11Window.foreign_new_for_display</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GdkX11">GdkX11</a> » <a class="trail" href="GdkX11.X11Window.html" title="GdkX11.X11Window">GdkX11.X11Window</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GdkX11.X11Window.foreign_new_for_display</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function foreign_new_for_display(display: <span class="link"><a href="GdkX11.X11Display.html" title="GdkX11.X11Display">GdkX11.X11Display</a></span>, window: <span class="link"><a href="../xlib-2.0/xlib.Window.html" title="../xlib-2.0/xlib.Window.html">xlib.Window</a></span>): <span class="link"><a href="../Gdk-3.0/Gdk.Window.html" title="../Gdk-3.0/Gdk.Window.html">Gdk.Window</a></span> {
+    // Gjs wrapper for gdk_x11_window_foreign_new_for_display()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Wraps a native window in a <span class="link"><a href="../Gdk-3.0/Gdk.Window.html" title="../Gdk-3.0/Gdk.Window.html">Gdk.Window</a></span>. The function will try to
+look up the window using <span class="link"><a href="GdkX11.X11Window.lookup_for_display.html" title="GdkX11.X11Window.lookup_for_display">GdkX11.X11Window.lookup_for_display</a></span> first.
+If it does not find it there, it will create a new window.</p>
+<p class="p">This may fail if the window has been destroyed. If the window
+was already known to GDK, a new reference to the existing
+<span class="link"><a href="../Gdk-3.0/Gdk.Window.html" title="../Gdk-3.0/Gdk.Window.html">Gdk.Window</a></span> is returned.</p>
+<p class="p">Since 2.24</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">display</span></dt>
+<dd class="terms"><p class="p">the <span class="link"><a href="../Gdk-3.0/Gdk.Display.html" title="../Gdk-3.0/Gdk.Display.html">Gdk.Display</a></span> where the window handle comes from.</p></dd>
+<dt class="terms"><span class="code">window</span></dt>
+<dd class="terms"><p class="p">an Xlib Window</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="../Gdk-3.0/Gdk.Window.html" title="../Gdk-3.0/Gdk.Window.html">Gdk.Window</a></span> wrapper for the native
+  window, or <span class="code">null</span> if the window has been destroyed. The wrapper
+  will be newly created, if one doesn’t exist already.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="GdkX11.X11Window.html" title="GdkX11.X11Window">GdkX11.X11Window</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

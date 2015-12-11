@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.ProxyResolver::lookup</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.ProxyResolver.html" title="Gio.ProxyResolver">Gio.ProxyResolver</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.ProxyResolver::lookup</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function vfunc_lookup(uri: String, cancellable: <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span>): Array(String) {
+}
+  </pre></div></div></div></div></div>
+<p class="p">Looks into the system proxy configuration to determine what proxy,
+if any, to use to connect to <span class="code">uri</span>. The returned proxy URIs are of
+the form `&lt;protocol&gt;://[user[:password]@]host:port` or
+`direct://`, where &lt;protocol&gt; could be http, rtsp, socks
+or other proxying protocol.</p>
+<p class="p">If you don't know what network protocol is being used on the
+socket, you should use `none` as the URI protocol.
+In this case, the resolver might still return a generic proxy type
+(such as SOCKS), but would not return protocol-specific proxy types
+(such as http).</p>
+<p class="p">`direct://` is used when no proxy is needed.
+Direct connection should not be attempted unless it is part of the
+returned array of proxies.</p>
+<p class="p">Since 2.26</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">uri</span></dt>
+<dd class="terms"><p class="p">a URI representing the destination to connect to</p></dd>
+<dt class="terms"><span class="code">cancellable</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span>, or <span class="code">null</span></p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">A
+              NULL-terminated array of proxy URIs. Must be freed
+              with <span class="link"><a href="../GLib-2.0/GLib.strfreev.html" title="../GLib-2.0/GLib.strfreev.html">GLib.strfreev</a></span>.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.ProxyResolver.html" title="Gio.ProxyResolver">Gio.ProxyResolver</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

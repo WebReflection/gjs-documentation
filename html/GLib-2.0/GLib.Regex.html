@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.Regex</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.Regex</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const GLib = imports.gi.GLib;
+
+let regex = new GLib.Regex(pattern: String, compile_options: GLib.RegexCompileFlags, match_options: GLib.RegexMatchFlags);
+  </pre></div></div></div></div></div>
+<p class="p">The g_regex_*() functions implement regular
+expression pattern matching using syntax and semantics similar to
+Perl regular expression.</p>
+<p class="p">Some functions accept a @start_position argument, setting it differs
+from just passing over a shortened string and setting #G_REGEX_MATCH_NOTBOL
+in the case of a pattern that begins with any kind of lookbehind assertion.
+For example, consider the pattern "\Biss\B" which finds occurrences of "iss"
+in the middle of words. ("\B" matches only if the current position in the
+subject is not a word boundary.) When applied to the string "Mississipi"
+from the fourth byte, namely "issipi", it does not match, because "\B" is
+always false at the start of the subject, which is deemed to be a word
+boundary. However, if the entire string is passed , but with
+@start_position set to 4, it finds the second occurrence of "iss" because
+it is able to look behind the starting point to discover that it is
+preceded by a letter.</p>
+<p class="p">Note that, unless you set the #G_REGEX_RAW flag, all the strings passed
+to these functions must be encoded in UTF-8. The lengths and the positions
+inside the strings are in bytes and not in characters, so, for instance,
+"\xc3\xa0" (i.e. "&amp;agrave;") is two bytes long but it is treated as a
+single character. If you set #G_REGEX_RAW the strings can be non-valid
+UTF-8 strings and a byte is treated as a character, so "\xc3\xa0" is two
+bytes and two characters long.</p>
+<p class="p">When matching a pattern, "\n" matches only against a "\n" character in
+the string, and "\r" matches only a "\r" character. To match any newline
+sequence use "\R". This particular group matches either the two-character
+sequence CR + LF ("\r\n"), or one of the single characters LF (linefeed,
+U+000A, "\n"), VT vertical tab, U+000B, "\v"), FF (formfeed, U+000C, "\f"),
+CR (carriage return, U+000D, "\r"), NEL (next line, U+0085), LS (line
+separator, U+2028), or PS (paragraph separator, U+2029).</p>
+<p class="p">The behaviour of the dot, circumflex, and dollar metacharacters are
+affected by newline characters, the default is to recognize any newline
+character (the same characters recognized by "\R"). This can be changed
+with #G_REGEX_NEWLINE_CR, #G_REGEX_NEWLINE_LF and #G_REGEX_NEWLINE_CRLF
+compile options, and with #G_REGEX_MATCH_NEWLINE_ANY,
+#G_REGEX_MATCH_NEWLINE_CR, #G_REGEX_MATCH_NEWLINE_LF and
+#G_REGEX_MATCH_NEWLINE_CRLF match options. These settings are also
+relevant when compiling a pattern if #G_REGEX_EXTENDED is set, and an
+unescaped "#" outside a character class is encountered. This indicates
+a comment that lasts until after the next newline.</p>
+<p class="p">When setting the <span class="link"><a href="GLib.RegexCompileFlags.html" title="GLib.RegexCompileFlags">GLib.RegexCompileFlags</a></span>.javascript_compat flag, pattern syntax and pattern
+matching is changed to be compatible with the way that regular expressions
+work in JavaScript. More precisely, a lonely ']' character in the pattern
+is a syntax error; the '\x' escape only allows 0 to 2 hexadecimal digits, and
+you must use the '\u' escape sequence with 4 hex digits to specify a unicode
+codepoint instead of '\x' or 'x{....}'. If '\x' or '\u' are not followed by
+the specified number of hex digits, they match 'x' and 'u' literally; also
+'\U' always matches 'U' instead of being an error in the pattern. Finally,
+pattern matching is modified so that back references to an unset subpattern
+group produces a match with the empty string instead of an error. See
+pcreapi(3) for more information.</p>
+<p class="p">Creating and manipulating the same <span class="link"><a href="GLib.Regex.html" title="GLib.Regex">GLib.Regex</a></span> structure from different
+threads is not a problem as <span class="link"><a href="GLib.Regex.html" title="GLib.Regex">GLib.Regex</a></span> does not modify its internal
+state between creation and destruction, on the other hand <span class="link"><a href="GLib.MatchInfo.html" title="GLib.MatchInfo">GLib.MatchInfo</a></span>
+is not threadsafe.</p>
+<p class="p">The regular expressions low-level functionalities are obtained through
+the excellent
+[PCRE](http://www.pcre.org/)
+library written by Philip Hazel.</p>
+<p class="p">Since 2.14</p>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
+<div class="region"><ul><li class="links "><a href="GLib.Regex.new.html" title="GLib.Regex.new">GLib.Regex.new</a></li></ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="GLib.Regex.get_capture_count.html" title="GLib.Regex.prototype.get_capture_count">GLib.Regex.prototype.get_capture_count</a></li>
+<li class="links "><a href="GLib.Regex.get_compile_flags.html" title="GLib.Regex.prototype.get_compile_flags">GLib.Regex.prototype.get_compile_flags</a></li>
+<li class="links "><a href="GLib.Regex.get_has_cr_or_lf.html" title="GLib.Regex.prototype.get_has_cr_or_lf">GLib.Regex.prototype.get_has_cr_or_lf</a></li>
+<li class="links "><a href="GLib.Regex.get_match_flags.html" title="GLib.Regex.prototype.get_match_flags">GLib.Regex.prototype.get_match_flags</a></li>
+<li class="links "><a href="GLib.Regex.get_max_backref.html" title="GLib.Regex.prototype.get_max_backref">GLib.Regex.prototype.get_max_backref</a></li>
+<li class="links "><a href="GLib.Regex.get_max_lookbehind.html" title="GLib.Regex.prototype.get_max_lookbehind">GLib.Regex.prototype.get_max_lookbehind</a></li>
+<li class="links "><a href="GLib.Regex.get_pattern.html" title="GLib.Regex.prototype.get_pattern">GLib.Regex.prototype.get_pattern</a></li>
+<li class="links "><a href="GLib.Regex.get_string_number.html" title="GLib.Regex.prototype.get_string_number">GLib.Regex.prototype.get_string_number</a></li>
+<li class="links "><a href="GLib.Regex.match.html" title="GLib.Regex.prototype.match">GLib.Regex.prototype.match</a></li>
+<li class="links "><a href="GLib.Regex.match_all.html" title="GLib.Regex.prototype.match_all">GLib.Regex.prototype.match_all</a></li>
+<li class="links "><a href="GLib.Regex.match_all_full.html" title="GLib.Regex.prototype.match_all_full">GLib.Regex.prototype.match_all_full</a></li>
+<li class="links "><a href="GLib.Regex.match_full.html" title="GLib.Regex.prototype.match_full">GLib.Regex.prototype.match_full</a></li>
+<li class="links "><a href="GLib.Regex.ref.html" title="GLib.Regex.prototype.ref">GLib.Regex.prototype.ref</a></li>
+<li class="links "><a href="GLib.Regex.replace.html" title="GLib.Regex.prototype.replace">GLib.Regex.prototype.replace</a></li>
+<li class="links "><a href="GLib.Regex.replace_literal.html" title="GLib.Regex.prototype.replace_literal">GLib.Regex.prototype.replace_literal</a></li>
+<li class="links "><a href="GLib.Regex.split.html" title="GLib.Regex.prototype.split">GLib.Regex.prototype.split</a></li>
+<li class="links "><a href="GLib.Regex.split_full.html" title="GLib.Regex.prototype.split_full">GLib.Regex.prototype.split_full</a></li>
+<li class="links "><a href="GLib.Regex.unref.html" title="GLib.Regex.prototype.unref">GLib.Regex.prototype.unref</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Static Functions</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="GLib.Regex.check_replacement.html" title="GLib.Regex.check_replacement">GLib.Regex.check_replacement</a></li>
+<li class="links "><a href="GLib.Regex.error_quark.html" title="GLib.Regex.error_quark">GLib.Regex.error_quark</a></li>
+<li class="links "><a href="GLib.Regex.escape_nul.html" title="GLib.Regex.escape_nul">GLib.Regex.escape_nul</a></li>
+<li class="links "><a href="GLib.Regex.escape_string.html" title="GLib.Regex.escape_string">GLib.Regex.escape_string</a></li>
+<li class="links "><a href="GLib.Regex.match_simple.html" title="GLib.Regex.match_simple">GLib.Regex.match_simple</a></li>
+<li class="links "><a href="GLib.Regex.split_simple.html" title="GLib.Regex.split_simple">GLib.Regex.split_simple</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="GLib">GLib</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

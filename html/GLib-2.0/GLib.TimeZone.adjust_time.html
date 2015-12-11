@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.TimeZone.prototype.adjust_time</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » <a class="trail" href="GLib.TimeZone.html" title="GLib.TimeZone">GLib.TimeZone</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.TimeZone.prototype.adjust_time</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function adjust_time(type: <span class="link"><a href="GLib.TimeType.html" title="GLib.TimeType">GLib.TimeType</a></span>, time_: Number(gint64)): Number(gint) {
+    // Gjs wrapper for g_time_zone_adjust_time()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Finds an interval within <span class="code">tz</span> that corresponds to the given <span class="code">time_</span>,
+possibly adjusting <span class="code">time_</span> if required to fit into an interval.
+The meaning of <span class="code">time_</span> depends on <span class="code">type</span>.</p>
+<p class="p">This function is similar to <span class="link"><a href="GLib.TimeZone.find_interval.html" title="GLib.TimeZone.prototype.find_interval">GLib.TimeZone.prototype.find_interval</a></span>, with the
+difference that it always succeeds (by making the adjustments
+described below).</p>
+<p class="p">In any of the cases where <span class="link"><a href="GLib.TimeZone.find_interval.html" title="GLib.TimeZone.prototype.find_interval">GLib.TimeZone.prototype.find_interval</a></span> succeeds then
+this function returns the same value, without modifying <span class="code">time_</span>.</p>
+<p class="p">This function may, however, modify <span class="code">time_</span> in order to deal with
+non-existent times.  If the non-existent local <span class="code">time_</span> of 02:30 were
+requested on March 14th 2010 in Toronto then this function would
+adjust <span class="code">time_</span> to be 03:00 and return the interval containing the
+adjusted time.</p>
+<p class="p">Since 2.26</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">type</span></dt>
+<dd class="terms"><p class="p">the <span class="link"><a href="GLib.TimeType.html" title="GLib.TimeType">GLib.TimeType</a></span> of <span class="code">time_</span></p></dd>
+<dt class="terms"><span class="code">time_</span></dt>
+<dd class="terms"><p class="p">a pointer to a number of seconds since January 1, 1970</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">the interval containing <span class="code">time_</span>, never -1</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="GLib.TimeZone.html" title="GLib.TimeZone">GLib.TimeZone</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.TestFileType</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.TestFileType</span></h1></div>
+<div class="region">
+<div class="contents">
+<p class="p">The type of file to return the filename for, when used with
+<span class="link"><a href="GLib.test_build_filename.html" title="GLib.test_build_filename">GLib.test_build_filename</a></span>.</p>
+<p class="p">These two options correspond rather directly to the 'dist' and
+'built' terminology that automake uses and are explicitly used to
+distinguish between the 'srcdir' and 'builddir' being separate.  All
+files in your project should either be dist (in the
+`DIST_EXTRA` or `dist_schema_DATA`
+sense, in which case they will always be in the srcdir) or built (in
+the `BUILT_SOURCES` sense, in which case they will
+always be in the builddir).</p>
+<p class="p">Note: as a general rule of automake, files that are generated only as
+part of the build-from-git process (but then are distributed with the
+tarball) always go in srcdir (even if doing a srcdir != builddir
+build from git) and are considered as distributed files.</p>
+<p class="p">Since 2.38</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">TestFileType.DIST</span></dt>
+<dd class="terms"><p class="p">a file that was included in the distribution tarball</p></dd>
+<dt class="terms"><span class="code">TestFileType.BUILT</span></dt>
+<dd class="terms"><p class="p">a file that was built on the compiling machine</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="GLib">GLib</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

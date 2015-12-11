@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.DBusMethodInvocation</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.DBusMethodInvocation</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
+
+let dBusMethodInvocation = new Gio.DBusMethodInvocation();
+  </pre></div></div></div></div></div>
+<p class="p">Instances of the <span class="link"><a href="Gio.DBusMethodInvocation.html" title="Gio.DBusMethodInvocation">Gio.DBusMethodInvocation</a></span> class are used when
+handling D-Bus method calls. It provides a way to asynchronously
+return results and errors.</p>
+<p class="p">The normal way to obtain a <span class="link"><a href="Gio.DBusMethodInvocation.html" title="Gio.DBusMethodInvocation">Gio.DBusMethodInvocation</a></span> object is to receive
+it as an argument to the handle_method_call() function in a
+<span class="link"><a href="Gio.DBusInterfaceVTable.html" title="Gio.DBusInterfaceVTable">Gio.DBusInterfaceVTable</a></span> that was passed to <span class="link"><a href="Gio.DBusConnection.register_object.html" title="Gio.DBusConnection.prototype.register_object">Gio.DBusConnection.prototype.register_object</a></span>.</p>
+<p class="p">Since 2.26</p>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
+<div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
+<div>
+        <span class="code">GObject.Object</span>
+      
+      </div>
+<ul class="tree"><li class="tree"><div>
+        <span class="code">Gio.DBusMethodInvocation</span>
+      </div></li></ul>
+</li></ul></div></div></div></div></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.DBusMethodInvocation.get_connection.html" title="Gio.DBusMethodInvocation.prototype.get_connection">Gio.DBusMethodInvocation.prototype.get_connection</a></li>
+<li class="links "><a href="Gio.DBusMethodInvocation.get_interface_name.html" title="Gio.DBusMethodInvocation.prototype.get_interface_name">Gio.DBusMethodInvocation.prototype.get_interface_name</a></li>
+<li class="links "><a href="Gio.DBusMethodInvocation.get_message.html" title="Gio.DBusMethodInvocation.prototype.get_message">Gio.DBusMethodInvocation.prototype.get_message</a></li>
+<li class="links "><a href="Gio.DBusMethodInvocation.get_method_info.html" title="Gio.DBusMethodInvocation.prototype.get_method_info">Gio.DBusMethodInvocation.prototype.get_method_info</a></li>
+<li class="links "><a href="Gio.DBusMethodInvocation.get_method_name.html" title="Gio.DBusMethodInvocation.prototype.get_method_name">Gio.DBusMethodInvocation.prototype.get_method_name</a></li>
+<li class="links "><a href="Gio.DBusMethodInvocation.get_object_path.html" title="Gio.DBusMethodInvocation.prototype.get_object_path">Gio.DBusMethodInvocation.prototype.get_object_path</a></li>
+<li class="links "><a href="Gio.DBusMethodInvocation.get_parameters.html" title="Gio.DBusMethodInvocation.prototype.get_parameters">Gio.DBusMethodInvocation.prototype.get_parameters</a></li>
+<li class="links "><a href="Gio.DBusMethodInvocation.get_property_info.html" title="Gio.DBusMethodInvocation.prototype.get_property_info">Gio.DBusMethodInvocation.prototype.get_property_info</a></li>
+<li class="links "><a href="Gio.DBusMethodInvocation.get_sender.html" title="Gio.DBusMethodInvocation.prototype.get_sender">Gio.DBusMethodInvocation.prototype.get_sender</a></li>
+<li class="links "><a href="Gio.DBusMethodInvocation.return_dbus_error.html" title="Gio.DBusMethodInvocation.prototype.return_dbus_error">Gio.DBusMethodInvocation.prototype.return_dbus_error</a></li>
+<li class="links "><a href="Gio.DBusMethodInvocation.return_error_literal.html" title="Gio.DBusMethodInvocation.prototype.return_error_literal">Gio.DBusMethodInvocation.prototype.return_error_literal</a></li>
+<li class="links "><a href="Gio.DBusMethodInvocation.return_gerror.html" title="Gio.DBusMethodInvocation.prototype.return_gerror">Gio.DBusMethodInvocation.prototype.return_gerror</a></li>
+<li class="links "><a href="Gio.DBusMethodInvocation.return_value.html" title="Gio.DBusMethodInvocation.prototype.return_value">Gio.DBusMethodInvocation.prototype.return_value</a></li>
+<li class="links "><a href="Gio.DBusMethodInvocation.return_value_with_unix_fd_list.html" title="Gio.DBusMethodInvocation.prototype.return_value_with_unix_fd_list">Gio.DBusMethodInvocation.prototype.return_value_with_unix_fd_list</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gio">Gio</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

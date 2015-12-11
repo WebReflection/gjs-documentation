@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.TlsInteraction</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.TlsInteraction</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
+
+let tlsInteraction = new Gio.TlsInteraction();
+  </pre></div></div></div></div></div>
+<p class="p"><span class="link"><a href="Gio.TlsInteraction.html" title="Gio.TlsInteraction">Gio.TlsInteraction</a></span> provides a mechanism for the TLS connection and database
+code to interact with the user. It can be used to ask the user for passwords.</p>
+<p class="p">To use a <span class="link"><a href="Gio.TlsInteraction.html" title="Gio.TlsInteraction">Gio.TlsInteraction</a></span> with a TLS connection use
+<span class="link"><a href="Gio.TlsConnection.set_interaction.html" title="Gio.TlsConnection.prototype.set_interaction">Gio.TlsConnection.prototype.set_interaction</a></span>.</p>
+<p class="p">Callers should instantiate a derived class that implements the various
+interaction methods to show the required dialogs.</p>
+<p class="p">Callers should use the 'invoke' functions like
+<span class="link"><a href="Gio.TlsInteraction.invoke_ask_password.html" title="Gio.TlsInteraction.prototype.invoke_ask_password">Gio.TlsInteraction.prototype.invoke_ask_password</a></span> to run interaction methods. These
+functions make sure that the interaction is invoked in the main loop
+and not in the current thread, if the current thread is not running the
+main loop.</p>
+<p class="p">Derived classes can choose to implement whichever interactions methods they'd
+like to support by overriding those virtual methods in their class
+initialization function. Any interactions not implemented will return
+<span class="link"><a href="Gio.TlsInteractionResult.html" title="Gio.TlsInteractionResult">Gio.TlsInteractionResult</a></span>.unhandled. If a derived class implements an async method,
+it must also implement the corresponding finish method.</p>
+<p class="p">Since 2.30</p>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
+<div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
+<div>
+        <span class="code">GObject.Object</span>
+      
+      </div>
+<ul class="tree"><li class="tree"><div>
+        <span class="code">Gio.TlsInteraction</span>
+      </div></li></ul>
+</li></ul></div></div></div></div></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.TlsInteraction.ask_password.html" title="Gio.TlsInteraction.prototype.ask_password">Gio.TlsInteraction.prototype.ask_password</a></li>
+<li class="links "><a href="Gio.TlsInteraction.ask_password_async.html" title="Gio.TlsInteraction.prototype.ask_password_async">Gio.TlsInteraction.prototype.ask_password_async</a></li>
+<li class="links "><a href="Gio.TlsInteraction.ask_password_finish.html" title="Gio.TlsInteraction.prototype.ask_password_finish">Gio.TlsInteraction.prototype.ask_password_finish</a></li>
+<li class="links "><a href="Gio.TlsInteraction.invoke_ask_password.html" title="Gio.TlsInteraction.prototype.invoke_ask_password">Gio.TlsInteraction.prototype.invoke_ask_password</a></li>
+<li class="links "><a href="Gio.TlsInteraction.invoke_request_certificate.html" title="Gio.TlsInteraction.prototype.invoke_request_certificate">Gio.TlsInteraction.prototype.invoke_request_certificate</a></li>
+<li class="links "><a href="Gio.TlsInteraction.request_certificate.html" title="Gio.TlsInteraction.prototype.request_certificate">Gio.TlsInteraction.prototype.request_certificate</a></li>
+<li class="links "><a href="Gio.TlsInteraction.request_certificate_async.html" title="Gio.TlsInteraction.prototype.request_certificate_async">Gio.TlsInteraction.prototype.request_certificate_async</a></li>
+<li class="links "><a href="Gio.TlsInteraction.request_certificate_finish.html" title="Gio.TlsInteraction.prototype.request_certificate_finish">Gio.TlsInteraction.prototype.request_certificate_finish</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Virtual functions</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.TlsInteraction-ask_password.html" title="Gio.TlsInteraction::ask_password">Gio.TlsInteraction::ask_password</a></li>
+<li class="links "><a href="Gio.TlsInteraction-ask_password_async.html" title="Gio.TlsInteraction::ask_password_async">Gio.TlsInteraction::ask_password_async</a></li>
+<li class="links "><a href="Gio.TlsInteraction-ask_password_finish.html" title="Gio.TlsInteraction::ask_password_finish">Gio.TlsInteraction::ask_password_finish</a></li>
+<li class="links "><a href="Gio.TlsInteraction-request_certificate.html" title="Gio.TlsInteraction::request_certificate">Gio.TlsInteraction::request_certificate</a></li>
+<li class="links "><a href="Gio.TlsInteraction-request_certificate_async.html" title="Gio.TlsInteraction::request_certificate_async">Gio.TlsInteraction::request_certificate_async</a></li>
+<li class="links "><a href="Gio.TlsInteraction-request_certificate_finish.html" title="Gio.TlsInteraction::request_certificate_finish">Gio.TlsInteraction::request_certificate_finish</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gio">Gio</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

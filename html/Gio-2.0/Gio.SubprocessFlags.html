@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.SubprocessFlags</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.SubprocessFlags</span></h1></div>
+<div class="region">
+<div class="contents">
+<p class="p">Flags to define the behaviour of a <span class="link"><a href="Gio.Subprocess.html" title="Gio.Subprocess">Gio.Subprocess</a></span>.</p>
+<p class="p">Note that the default for stdin is to redirect from /dev/null.  For
+stdout and stderr the default are for them to inherit the
+corresponding descriptor from the calling process.</p>
+<p class="p">Note that it is a programmer error to mix 'incompatible' flags.  For
+example, you may not request both <span class="link"><a href="Gio.SubprocessFlags.html" title="Gio.SubprocessFlags">Gio.SubprocessFlags</a></span>.stdout_pipe and
+<span class="link"><a href="Gio.SubprocessFlags.html" title="Gio.SubprocessFlags">Gio.SubprocessFlags</a></span>.stdout_silence.</p>
+<p class="p">Since 2.40</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">SubprocessFlags.NONE</span></dt>
+<dd class="terms"><p class="p">No flags.</p></dd>
+<dt class="terms"><span class="code">SubprocessFlags.STDIN_PIPE</span></dt>
+<dd class="terms"><p class="p">create a pipe for the stdin of the
+  spawned process that can be accessed with
+  <span class="link"><a href="Gio.Subprocess.get_stdin_pipe.html" title="Gio.Subprocess.prototype.get_stdin_pipe">Gio.Subprocess.prototype.get_stdin_pipe</a></span>.</p></dd>
+<dt class="terms"><span class="code">SubprocessFlags.STDIN_INHERIT</span></dt>
+<dd class="terms"><p class="p">stdin is inherited from the
+  calling process.</p></dd>
+<dt class="terms"><span class="code">SubprocessFlags.STDOUT_PIPE</span></dt>
+<dd class="terms"><p class="p">create a pipe for the stdout of the
+  spawned process that can be accessed with
+  <span class="link"><a href="Gio.Subprocess.get_stdout_pipe.html" title="Gio.Subprocess.prototype.get_stdout_pipe">Gio.Subprocess.prototype.get_stdout_pipe</a></span>.</p></dd>
+<dt class="terms"><span class="code">SubprocessFlags.STDOUT_SILENCE</span></dt>
+<dd class="terms"><p class="p">silence the stdout of the spawned
+  process (ie: redirect to /dev/null).</p></dd>
+<dt class="terms"><span class="code">SubprocessFlags.STDERR_PIPE</span></dt>
+<dd class="terms"><p class="p">create a pipe for the stderr of the
+  spawned process that can be accessed with
+  <span class="link"><a href="Gio.Subprocess.get_stderr_pipe.html" title="Gio.Subprocess.prototype.get_stderr_pipe">Gio.Subprocess.prototype.get_stderr_pipe</a></span>.</p></dd>
+<dt class="terms"><span class="code">SubprocessFlags.STDERR_SILENCE</span></dt>
+<dd class="terms"><p class="p">silence the stderr of the spawned
+  process (ie: redirect to /dev/null).</p></dd>
+<dt class="terms"><span class="code">SubprocessFlags.STDERR_MERGE</span></dt>
+<dd class="terms"><p class="p">merge the stderr of the spawned
+  process with whatever the stdout happens to be.  This is a good way
+  of directing both streams to a common log file, for example.</p></dd>
+<dt class="terms"><span class="code">SubprocessFlags.INHERIT_FDS</span></dt>
+<dd class="terms"><p class="p">spawned processes will inherit the
+  file descriptors of their parent, unless those descriptors have
+  been explicitly marked as close-on-exec.  This flag has no effect
+  over the "standard" file descriptors (stdin, stdout, stderr).</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gio">Gio</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.MarkupCollectType</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.MarkupCollectType</span></h1></div>
+<div class="region">
+<div class="contents">
+<p class="p">A mixed enumerated type and flags field. You must specify one type
+(string, strdup, boolean, tristate).  Additionally, you may  optionally
+bitwise OR the type with the flag <span class="link"><a href="GLib.MarkupCollectType.html" title="GLib.MarkupCollectType">GLib.MarkupCollectType</a></span>.optional.</p>
+<p class="p">It is likely that this enum will be extended in the future to
+support other types.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">MarkupCollectType.INVALID</span></dt>
+<dd class="terms"><p class="p">used to terminate the list of attributes
+    to collect</p></dd>
+<dt class="terms"><span class="code">MarkupCollectType.STRING</span></dt>
+<dd class="terms"><p class="p">collect the string pointer directly from
+    the attribute_values[] array. Expects a parameter of type (const
+    char **). If <span class="link"><a href="GLib.MarkupCollectType.html" title="GLib.MarkupCollectType">GLib.MarkupCollectType</a></span>.optional is specified and the
+    attribute isn't present then the pointer will be set to <span class="code">null</span></p></dd>
+<dt class="terms"><span class="code">MarkupCollectType.STRDUP</span></dt>
+<dd class="terms"><p class="p">as with <span class="link"><a href="GLib.MarkupCollectType.html" title="GLib.MarkupCollectType">GLib.MarkupCollectType</a></span>.string, but
+    expects a parameter of type (char **) and <span class="link"><a href="GLib.strdup.html" title="GLib.strdup">GLib.strdup</a></span>s the
+    returned pointer. The pointer must be freed with <span class="link"><a href="GLib.free.html" title="GLib.free">GLib.free</a></span></p></dd>
+<dt class="terms"><span class="code">MarkupCollectType.BOOLEAN</span></dt>
+<dd class="terms"><p class="p">expects a parameter of type (gboolean *)
+    and parses the attribute value as a boolean. Sets <span class="code">false</span> if the
+    attribute isn't present. Valid boolean values consist of
+    (case-insensitive) "false", "f", "no", "n", "0" and "true", "t",
+    "yes", "y", "1"</p></dd>
+<dt class="terms"><span class="code">MarkupCollectType.TRISTATE</span></dt>
+<dd class="terms"><p class="p">as with <span class="link"><a href="GLib.MarkupCollectType.html" title="GLib.MarkupCollectType">GLib.MarkupCollectType</a></span>.boolean, but
+    in the case of a missing attribute a value is set that compares
+    equal to neither <span class="code">false</span> nor <span class="code">true</span> G_MARKUP_COLLECT_OPTIONAL is
+    implied</p></dd>
+<dt class="terms"><span class="code">MarkupCollectType.OPTIONAL</span></dt>
+<dd class="terms"><p class="p">can be bitwise ORed with the other fields.
+    If present, allows the attribute not to appear. A default value
+    is set depending on what value type is used</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="GLib">GLib</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

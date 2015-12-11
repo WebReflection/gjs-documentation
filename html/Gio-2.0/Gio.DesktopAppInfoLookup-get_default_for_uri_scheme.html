@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.DesktopAppInfoLookup::get_default_for_uri_scheme</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.DesktopAppInfoLookup.html" title="Gio.DesktopAppInfoLookup">Gio.DesktopAppInfoLookup</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.DesktopAppInfoLookup::get_default_for_uri_scheme</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function vfunc_get_default_for_uri_scheme(uri_scheme: String): <span class="link"><a href="Gio.AppInfo.html" title="Gio.AppInfo">Gio.AppInfo</a></span> {
+}
+  </pre></div></div></div></div></div>
+<p class="p">Gets the default application for launching applications
+using this URI scheme for a particular GDesktopAppInfoLookup
+implementation.</p>
+<p class="p">The GDesktopAppInfoLookup interface and this function is used
+to implement <span class="link"><a href="Gio.app_info_get_default_for_uri_scheme.html" title="Gio.app_info_get_default_for_uri_scheme">Gio.app_info_get_default_for_uri_scheme</a></span> backends
+in a GIO module. There is no reason for applications to use it
+directly. Applications should use <span class="link"><a href="Gio.app_info_get_default_for_uri_scheme.html" title="Gio.app_info_get_default_for_uri_scheme">Gio.app_info_get_default_for_uri_scheme</a></span>.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">uri_scheme</span></dt>
+<dd class="terms"><p class="p">a string containing a URI scheme.</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p"><span class="link"><a href="Gio.AppInfo.html" title="Gio.AppInfo">Gio.AppInfo</a></span> for given <span class="code">uri_scheme</span> or <span class="code">null</span> on error.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.DesktopAppInfoLookup.html" title="Gio.DesktopAppInfoLookup">Gio.DesktopAppInfoLookup</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

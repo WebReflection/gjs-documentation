@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.on_error_query</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.on_error_query</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function on_error_query(prg_name: String): void {
+    // Gjs wrapper for g_on_error_query()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Prompts the user with
+`[E]xit, [H]alt, show [S]tack trace or [P]roceed`.
+This function is intended to be used for debugging use only.
+The following example shows how it can be used together with
+the <span class="link"><a href="GLib.log.html" title="GLib.log">GLib.log</a></span> functions.</p>
+<p class="p">|[&lt;!-- language="C" --&gt;
+#include &lt;glib.h&gt;</p>
+<p class="p">static void
+log_handler (const gchar   *log_domain,
+             GLogLevelFlags log_level,
+             const gchar   *message,
+             gpointer       user_data)
+{
+  g_log_default_handler (log_domain, log_level, message, user_data);</p>
+<p class="p">  g_on_error_query (MY_PROGRAM_NAME);
+}</p>
+<p class="p">int
+main (int argc, char *argv[])
+{
+  g_log_set_handler (MY_LOG_DOMAIN,
+                     G_LOG_LEVEL_WARNING |
+                     G_LOG_LEVEL_ERROR |
+                     G_LOG_LEVEL_CRITICAL,
+                     log_handler,
+                     NULL);
+  ...
+]|</p>
+<p class="p">If "[E]xit" is selected, the application terminates with a call
+to _exit(0).</p>
+<p class="p">If "[S]tack" trace is selected, <span class="link"><a href="GLib.on_error_stack_trace.html" title="GLib.on_error_stack_trace">GLib.on_error_stack_trace</a></span> is called.
+This invokes gdb, which attaches to the current process and shows
+a stack trace. The prompt is then shown again.</p>
+<p class="p">If "[P]roceed" is selected, the function returns.</p>
+<p class="p">This function may cause different actions on non-UNIX platforms.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">prg_name</span></dt>
+<dd class="terms"><p class="p">the program name, needed by gdb for the "[S]tack trace"
+    option. If <span class="code">prg_name</span> is <span class="code">null</span>, <span class="link"><a href="GLib.get_prgname.html" title="GLib.get_prgname">GLib.get_prgname</a></span> is called to get
+    the program name (which will work correctly if gdk_init() or
+    gtk_init() has been called)</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="GLib">GLib</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

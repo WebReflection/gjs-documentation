@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.FileInfo</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.FileInfo</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
+
+let fileInfo = new Gio.FileInfo();
+  </pre></div></div></div></div></div>
+<p class="p">Functionality for manipulating basic metadata for files. <span class="link"><a href="Gio.FileInfo.html" title="Gio.FileInfo">Gio.FileInfo</a></span>
+implements methods for getting information that all files should
+contain, and allows for manipulation of extended attributes.</p>
+<p class="p">See [GFileAttribute][gio-GFileAttribute for more information on how
+GIO handles file attributes.</p>
+<p class="p">To obtain a <span class="link"><a href="Gio.FileInfo.html" title="Gio.FileInfo">Gio.FileInfo</a></span> for a <span class="link"><a href="Gio.File.html" title="Gio.File">Gio.File</a></span>, use <span class="link"><a href="Gio.File.query_info.html" title="Gio.File.prototype.query_info">Gio.File.prototype.query_info</a></span> (or its
+async variant). To obtain a <span class="link"><a href="Gio.FileInfo.html" title="Gio.FileInfo">Gio.FileInfo</a></span> for a file input or output
+stream, use <span class="link"><a href="Gio.FileInputStream.query_info.html" title="Gio.FileInputStream.prototype.query_info">Gio.FileInputStream.prototype.query_info</a></span> or
+<span class="link"><a href="Gio.FileOutputStream.query_info.html" title="Gio.FileOutputStream.prototype.query_info">Gio.FileOutputStream.prototype.query_info</a></span> (or their async variants).</p>
+<p class="p">To change the actual attributes of a file, you should then set the
+attribute in the <span class="link"><a href="Gio.FileInfo.html" title="Gio.FileInfo">Gio.FileInfo</a></span> and call <span class="link"><a href="Gio.File.set_attributes_from_info.html" title="Gio.File.prototype.set_attributes_from_info">Gio.File.prototype.set_attributes_from_info</a></span>
+or <span class="link"><a href="Gio.File.set_attributes_async.html" title="Gio.File.prototype.set_attributes_async">Gio.File.prototype.set_attributes_async</a></span> on a GFile.</p>
+<p class="p">However, not all attributes can be changed in the file. For instance,
+the actual size of a file cannot be changed via <span class="link"><a href="Gio.FileInfo.set_size.html" title="Gio.FileInfo.prototype.set_size">Gio.FileInfo.prototype.set_size</a></span>.
+You may call <span class="link"><a href="Gio.File.query_settable_attributes.html" title="Gio.File.prototype.query_settable_attributes">Gio.File.prototype.query_settable_attributes</a></span> and
+<span class="link"><a href="Gio.File.query_writable_namespaces.html" title="Gio.File.prototype.query_writable_namespaces">Gio.File.prototype.query_writable_namespaces</a></span> to discover the settable attributes
+of a particular file at runtime.</p>
+<p class="p"><span class="link"><a href="Gio.FileAttributeMatcher.html" title="Gio.FileAttributeMatcher">Gio.FileAttributeMatcher</a></span> allows for searching through a <span class="link"><a href="Gio.FileInfo.html" title="Gio.FileInfo">Gio.FileInfo</a></span> for
+attributes.</p>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
+<div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
+<div>
+        <span class="code">GObject.Object</span>
+      
+      </div>
+<ul class="tree"><li class="tree"><div>
+        <span class="code">Gio.FileInfo</span>
+      </div></li></ul>
+</li></ul></div></div></div></div></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.FileInfo.new.html" title="Gio.FileInfo.new">Gio.FileInfo.new</a></li></ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.FileInfo.clear_status.html" title="Gio.FileInfo.prototype.clear_status">Gio.FileInfo.prototype.clear_status</a></li>
+<li class="links "><a href="Gio.FileInfo.copy_into.html" title="Gio.FileInfo.prototype.copy_into">Gio.FileInfo.prototype.copy_into</a></li>
+<li class="links "><a href="Gio.FileInfo.dup.html" title="Gio.FileInfo.prototype.dup">Gio.FileInfo.prototype.dup</a></li>
+<li class="links "><a href="Gio.FileInfo.get_attribute_as_string.html" title="Gio.FileInfo.prototype.get_attribute_as_string">Gio.FileInfo.prototype.get_attribute_as_string</a></li>
+<li class="links "><a href="Gio.FileInfo.get_attribute_boolean.html" title="Gio.FileInfo.prototype.get_attribute_boolean">Gio.FileInfo.prototype.get_attribute_boolean</a></li>
+<li class="links "><a href="Gio.FileInfo.get_attribute_byte_string.html" title="Gio.FileInfo.prototype.get_attribute_byte_string">Gio.FileInfo.prototype.get_attribute_byte_string</a></li>
+<li class="links "><a href="Gio.FileInfo.get_attribute_data.html" title="Gio.FileInfo.prototype.get_attribute_data">Gio.FileInfo.prototype.get_attribute_data</a></li>
+<li class="links "><a href="Gio.FileInfo.get_attribute_int32.html" title="Gio.FileInfo.prototype.get_attribute_int32">Gio.FileInfo.prototype.get_attribute_int32</a></li>
+<li class="links "><a href="Gio.FileInfo.get_attribute_int64.html" title="Gio.FileInfo.prototype.get_attribute_int64">Gio.FileInfo.prototype.get_attribute_int64</a></li>
+<li class="links "><a href="Gio.FileInfo.get_attribute_object.html" title="Gio.FileInfo.prototype.get_attribute_object">Gio.FileInfo.prototype.get_attribute_object</a></li>
+<li class="links "><a href="Gio.FileInfo.get_attribute_status.html" title="Gio.FileInfo.prototype.get_attribute_status">Gio.FileInfo.prototype.get_attribute_status</a></li>
+<li class="links "><a href="Gio.FileInfo.get_attribute_string.html" title="Gio.FileInfo.prototype.get_attribute_string">Gio.FileInfo.prototype.get_attribute_string</a></li>
+<li class="links "><a href="Gio.FileInfo.get_attribute_stringv.html" title="Gio.FileInfo.prototype.get_attribute_stringv">Gio.FileInfo.prototype.get_attribute_stringv</a></li>
+<li class="links "><a href="Gio.FileInfo.get_attribute_type.html" title="Gio.FileInfo.prototype.get_attribute_type">Gio.FileInfo.prototype.get_attribute_type</a></li>
+<li class="links "><a href="Gio.FileInfo.get_attribute_uint32.html" title="Gio.FileInfo.prototype.get_attribute_uint32">Gio.FileInfo.prototype.get_attribute_uint32</a></li>
+<li class="links "><a href="Gio.FileInfo.get_attribute_uint64.html" title="Gio.FileInfo.prototype.get_attribute_uint64">Gio.FileInfo.prototype.get_attribute_uint64</a></li>
+<li class="links "><a href="Gio.FileInfo.get_content_type.html" title="Gio.FileInfo.prototype.get_content_type">Gio.FileInfo.prototype.get_content_type</a></li>
+<li class="links "><a href="Gio.FileInfo.get_deletion_date.html" title="Gio.FileInfo.prototype.get_deletion_date">Gio.FileInfo.prototype.get_deletion_date</a></li>
+<li class="links "><a href="Gio.FileInfo.get_display_name.html" title="Gio.FileInfo.prototype.get_display_name">Gio.FileInfo.prototype.get_display_name</a></li>
+<li class="links "><a href="Gio.FileInfo.get_edit_name.html" title="Gio.FileInfo.prototype.get_edit_name">Gio.FileInfo.prototype.get_edit_name</a></li>
+<li class="links "><a href="Gio.FileInfo.get_etag.html" title="Gio.FileInfo.prototype.get_etag">Gio.FileInfo.prototype.get_etag</a></li>
+<li class="links "><a href="Gio.FileInfo.get_file_type.html" title="Gio.FileInfo.prototype.get_file_type">Gio.FileInfo.prototype.get_file_type</a></li>
+<li class="links "><a href="Gio.FileInfo.get_icon.html" title="Gio.FileInfo.prototype.get_icon">Gio.FileInfo.prototype.get_icon</a></li>
+<li class="links "><a href="Gio.FileInfo.get_is_backup.html" title="Gio.FileInfo.prototype.get_is_backup">Gio.FileInfo.prototype.get_is_backup</a></li>
+<li class="links "><a href="Gio.FileInfo.get_is_hidden.html" title="Gio.FileInfo.prototype.get_is_hidden">Gio.FileInfo.prototype.get_is_hidden</a></li>
+<li class="links "><a href="Gio.FileInfo.get_is_symlink.html" title="Gio.FileInfo.prototype.get_is_symlink">Gio.FileInfo.prototype.get_is_symlink</a></li>
+<li class="links "><a href="Gio.FileInfo.get_modification_time.html" title="Gio.FileInfo.prototype.get_modification_time">Gio.FileInfo.prototype.get_modification_time</a></li>
+<li class="links "><a href="Gio.FileInfo.get_name.html" title="Gio.FileInfo.prototype.get_name">Gio.FileInfo.prototype.get_name</a></li>
+<li class="links "><a href="Gio.FileInfo.get_size.html" title="Gio.FileInfo.prototype.get_size">Gio.FileInfo.prototype.get_size</a></li>
+<li class="links "><a href="Gio.FileInfo.get_sort_order.html" title="Gio.FileInfo.prototype.get_sort_order">Gio.FileInfo.prototype.get_sort_order</a></li>
+<li class="links "><a href="Gio.FileInfo.get_symbolic_icon.html" title="Gio.FileInfo.prototype.get_symbolic_icon">Gio.FileInfo.prototype.get_symbolic_icon</a></li>
+<li class="links "><a href="Gio.FileInfo.get_symlink_target.html" title="Gio.FileInfo.prototype.get_symlink_target">Gio.FileInfo.prototype.get_symlink_target</a></li>
+<li class="links "><a href="Gio.FileInfo.has_attribute.html" title="Gio.FileInfo.prototype.has_attribute">Gio.FileInfo.prototype.has_attribute</a></li>
+<li class="links "><a href="Gio.FileInfo.has_namespace.html" title="Gio.FileInfo.prototype.has_namespace">Gio.FileInfo.prototype.has_namespace</a></li>
+<li class="links "><a href="Gio.FileInfo.list_attributes.html" title="Gio.FileInfo.prototype.list_attributes">Gio.FileInfo.prototype.list_attributes</a></li>
+<li class="links "><a href="Gio.FileInfo.remove_attribute.html" title="Gio.FileInfo.prototype.remove_attribute">Gio.FileInfo.prototype.remove_attribute</a></li>
+<li class="links "><a href="Gio.FileInfo.set_attribute.html" title="Gio.FileInfo.prototype.set_attribute">Gio.FileInfo.prototype.set_attribute</a></li>
+<li class="links "><a href="Gio.FileInfo.set_attribute_boolean.html" title="Gio.FileInfo.prototype.set_attribute_boolean">Gio.FileInfo.prototype.set_attribute_boolean</a></li>
+<li class="links "><a href="Gio.FileInfo.set_attribute_byte_string.html" title="Gio.FileInfo.prototype.set_attribute_byte_string">Gio.FileInfo.prototype.set_attribute_byte_string</a></li>
+<li class="links "><a href="Gio.FileInfo.set_attribute_int32.html" title="Gio.FileInfo.prototype.set_attribute_int32">Gio.FileInfo.prototype.set_attribute_int32</a></li>
+<li class="links "><a href="Gio.FileInfo.set_attribute_int64.html" title="Gio.FileInfo.prototype.set_attribute_int64">Gio.FileInfo.prototype.set_attribute_int64</a></li>
+<li class="links "><a href="Gio.FileInfo.set_attribute_mask.html" title="Gio.FileInfo.prototype.set_attribute_mask">Gio.FileInfo.prototype.set_attribute_mask</a></li>
+<li class="links "><a href="Gio.FileInfo.set_attribute_object.html" title="Gio.FileInfo.prototype.set_attribute_object">Gio.FileInfo.prototype.set_attribute_object</a></li>
+<li class="links "><a href="Gio.FileInfo.set_attribute_status.html" title="Gio.FileInfo.prototype.set_attribute_status">Gio.FileInfo.prototype.set_attribute_status</a></li>
+<li class="links "><a href="Gio.FileInfo.set_attribute_string.html" title="Gio.FileInfo.prototype.set_attribute_string">Gio.FileInfo.prototype.set_attribute_string</a></li>
+<li class="links "><a href="Gio.FileInfo.set_attribute_stringv.html" title="Gio.FileInfo.prototype.set_attribute_stringv">Gio.FileInfo.prototype.set_attribute_stringv</a></li>
+<li class="links "><a href="Gio.FileInfo.set_attribute_uint32.html" title="Gio.FileInfo.prototype.set_attribute_uint32">Gio.FileInfo.prototype.set_attribute_uint32</a></li>
+<li class="links "><a href="Gio.FileInfo.set_attribute_uint64.html" title="Gio.FileInfo.prototype.set_attribute_uint64">Gio.FileInfo.prototype.set_attribute_uint64</a></li>
+<li class="links "><a href="Gio.FileInfo.set_content_type.html" title="Gio.FileInfo.prototype.set_content_type">Gio.FileInfo.prototype.set_content_type</a></li>
+<li class="links "><a href="Gio.FileInfo.set_display_name.html" title="Gio.FileInfo.prototype.set_display_name">Gio.FileInfo.prototype.set_display_name</a></li>
+<li class="links "><a href="Gio.FileInfo.set_edit_name.html" title="Gio.FileInfo.prototype.set_edit_name">Gio.FileInfo.prototype.set_edit_name</a></li>
+<li class="links "><a href="Gio.FileInfo.set_file_type.html" title="Gio.FileInfo.prototype.set_file_type">Gio.FileInfo.prototype.set_file_type</a></li>
+<li class="links "><a href="Gio.FileInfo.set_icon.html" title="Gio.FileInfo.prototype.set_icon">Gio.FileInfo.prototype.set_icon</a></li>
+<li class="links "><a href="Gio.FileInfo.set_is_hidden.html" title="Gio.FileInfo.prototype.set_is_hidden">Gio.FileInfo.prototype.set_is_hidden</a></li>
+<li class="links "><a href="Gio.FileInfo.set_is_symlink.html" title="Gio.FileInfo.prototype.set_is_symlink">Gio.FileInfo.prototype.set_is_symlink</a></li>
+<li class="links "><a href="Gio.FileInfo.set_modification_time.html" title="Gio.FileInfo.prototype.set_modification_time">Gio.FileInfo.prototype.set_modification_time</a></li>
+<li class="links "><a href="Gio.FileInfo.set_name.html" title="Gio.FileInfo.prototype.set_name">Gio.FileInfo.prototype.set_name</a></li>
+<li class="links "><a href="Gio.FileInfo.set_size.html" title="Gio.FileInfo.prototype.set_size">Gio.FileInfo.prototype.set_size</a></li>
+<li class="links "><a href="Gio.FileInfo.set_sort_order.html" title="Gio.FileInfo.prototype.set_sort_order">Gio.FileInfo.prototype.set_sort_order</a></li>
+<li class="links "><a href="Gio.FileInfo.set_symbolic_icon.html" title="Gio.FileInfo.prototype.set_symbolic_icon">Gio.FileInfo.prototype.set_symbolic_icon</a></li>
+<li class="links "><a href="Gio.FileInfo.set_symlink_target.html" title="Gio.FileInfo.prototype.set_symlink_target">Gio.FileInfo.prototype.set_symlink_target</a></li>
+<li class="links "><a href="Gio.FileInfo.unset_attribute_mask.html" title="Gio.FileInfo.prototype.unset_attribute_mask">Gio.FileInfo.prototype.unset_attribute_mask</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gio">Gio</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

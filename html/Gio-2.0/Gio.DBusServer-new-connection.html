@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.DBusServer::new-connection</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.DBusServer.html" title="Gio.DBusServer">Gio.DBusServer</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.DBusServer::new-connection</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">connect('new-connection', function (dBusServer, connection: <span class="link"><a href="Gio.DBusConnection.html" title="Gio.DBusConnection">Gio.DBusConnection</a></span>, ): Boolean);
+  </pre></div></div></div></div></div>
+<p class="p">Emitted when a new authenticated connection has been made. Use
+<span class="link"><a href="Gio.DBusConnection.get_peer_credentials.html" title="Gio.DBusConnection.prototype.get_peer_credentials">Gio.DBusConnection.prototype.get_peer_credentials</a></span> to figure out what
+identity (if any), was authenticated.</p>
+<p class="p">If you want to accept the connection, take a reference to the
+<span class="code">connection</span> object and return <span class="code">true</span>. When you are done with the
+connection call <span class="link"><a href="Gio.DBusConnection.close.html" title="Gio.DBusConnection.prototype.close">Gio.DBusConnection.prototype.close</a></span> and give up your
+reference. Note that the other peer may disconnect at any time -
+a typical thing to do when accepting a connection is to listen to
+the <span class="link"><a href="Gio.DBusConnection-closed.html" title="Gio.DBusConnection.closed">Gio.DBusConnection.closed</a></span> signal.</p>
+<p class="p">If <span class="link"><a href="Gio.DBusServer-flags.html" title="Gio.DBusServer.flags">Gio.DBusServer.flags</a></span> contains <span class="link"><a href="Gio.DBusServerFlags.html" title="Gio.DBusServerFlags">Gio.DBusServerFlags</a></span>.run_in_thread
+then the signal is emitted in a new thread dedicated to the
+connection. Otherwise the signal is emitted in the
+[thread-default main context][g-main-context-push-thread-default]
+of the thread that @server was constructed in.</p>
+<p class="p">You are guaranteed that signal handlers for this signal runs
+before incoming messages on <span class="code">connection</span> are processed. This means
+that it's suitable to call <span class="link"><a href="Gio.DBusConnection.register_object.html" title="Gio.DBusConnection.prototype.register_object">Gio.DBusConnection.prototype.register_object</a></span> or
+similar from the signal handler.</p>
+<p class="p">Since 2.26</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">dBusServer</span></dt>
+<dd class="terms"><p class="p">instance of <span class="link"><a href="Gio.DBusServer.html" title="Gio.DBusServer">Gio.DBusServer</a></span> that is emitting the signal</p></dd>
+<dt class="terms"><span class="code">connection</span></dt>
+<dd class="terms"><p class="p">A <span class="link"><a href="Gio.DBusConnection.html" title="Gio.DBusConnection">Gio.DBusConnection</a></span> for the new connection.</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> to claim <span class="code">connection</span>, <span class="code">false</span> to let other handlers
+run.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.DBusServer.html" title="Gio.DBusServer">Gio.DBusServer</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

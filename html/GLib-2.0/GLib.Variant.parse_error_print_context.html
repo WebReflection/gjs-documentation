@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.Variant.parse_error_print_context</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » <a class="trail" href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.Variant.parse_error_print_context</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function parse_error_print_context(error: <span class="link"><a href="GLib.Error.html" title="GLib.Error">GLib.Error</a></span>, source_str: String): String {
+    // Gjs wrapper for g_variant_parse_error_print_context()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Pretty-prints a message showing the context of a <span class="link"><a href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a></span> parse
+error within the string for which parsing was attempted.</p>
+<p class="p">The resulting string is suitable for output to the console or other
+monospace media where newlines are treated in the usual way.</p>
+<p class="p">The message will typically look something like one of the following:</p>
+<p class="p">|[
+unterminated string constant:
+  (1, 2, 3, 'abc
+            ^^^^
+]|</p>
+<p class="p">or</p>
+<p class="p">|[
+unable to find a common type:
+  [1, 2, 3, 'str']
+   ^        ^^^^^
+]|</p>
+<p class="p">The format of the message may change in a future version.</p>
+<p class="p"><span class="code">error</span> must have come from a failed attempt to <span class="link"><a href="GLib.variant_parse.html" title="GLib.variant_parse">GLib.variant_parse</a></span> and
+<span class="code">source_str</span> must be exactly the same string that caused the error.
+If <span class="code">source_str</span> was not nul-terminated when you passed it to
+<span class="link"><a href="GLib.variant_parse.html" title="GLib.variant_parse">GLib.variant_parse</a></span> then you must add nul termination before using this
+function.</p>
+<p class="p">Since 2.40</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">error</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="GLib.Error.html" title="GLib.Error">GLib.Error</a></span> from the <span class="link"><a href="GLib.VariantParseError.html" title="GLib.VariantParseError">GLib.VariantParseError</a></span> domain</p></dd>
+<dt class="terms"><span class="code">source_str</span></dt>
+<dd class="terms"><p class="p">the string that was given to the parser</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">the printed message</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

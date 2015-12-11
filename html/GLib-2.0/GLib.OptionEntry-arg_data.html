@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.OptionEntry.arg_data</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » <a class="trail" href="GLib.OptionEntry.html" title="GLib.OptionEntry">GLib.OptionEntry</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.OptionEntry.arg_data</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">OptionEntry.arg_data: void (Read)
+  </pre></div></div></div></div></div>
+<p class="p">If the @arg type is <span class="link"><a href="GLib.OptionArg.html" title="GLib.OptionArg">GLib.OptionArg</a></span>.callback, then @arg_data must
+ point to a <span class="link"><a href="GLib.OptionArgFunc.html" title="GLib.OptionArgFunc">GLib.OptionArgFunc</a></span> callback function, which will be called to handle
+ the extra argument. Otherwise, @arg_data is a pointer to a location to store
+ the value, the required type of the location depends on the @arg type:
+ &lt;variablelist&gt;
+ &lt;varlistentry&gt;
+ &lt;term&gt;<span class="link"><a href="GLib.OptionArg.html" title="GLib.OptionArg">GLib.OptionArg</a></span>.none&lt;/term&gt;
+ &lt;listitem&gt;&lt;para&gt;%gboolean&lt;/para&gt;&lt;/listitem&gt;
+ &lt;/varlistentry&gt;
+ &lt;varlistentry&gt;
+ &lt;term&gt;<span class="link"><a href="GLib.OptionArg.html" title="GLib.OptionArg">GLib.OptionArg</a></span>.string&lt;/term&gt;
+ &lt;listitem&gt;&lt;para&gt;%gchar*&lt;/para&gt;&lt;/listitem&gt;
+ &lt;/varlistentry&gt;
+ &lt;varlistentry&gt;
+ &lt;term&gt;<span class="link"><a href="GLib.OptionArg.html" title="GLib.OptionArg">GLib.OptionArg</a></span>.int&lt;/term&gt;
+ &lt;listitem&gt;&lt;para&gt;%gint&lt;/para&gt;&lt;/listitem&gt;
+ &lt;/varlistentry&gt;
+ &lt;varlistentry&gt;
+ &lt;term&gt;<span class="link"><a href="GLib.OptionArg.html" title="GLib.OptionArg">GLib.OptionArg</a></span>.filename&lt;/term&gt;
+ &lt;listitem&gt;&lt;para&gt;%gchar*&lt;/para&gt;&lt;/listitem&gt;
+ &lt;/varlistentry&gt;
+ &lt;varlistentry&gt;
+ &lt;term&gt;<span class="link"><a href="GLib.OptionArg.html" title="GLib.OptionArg">GLib.OptionArg</a></span>.string_array&lt;/term&gt;
+ &lt;listitem&gt;&lt;para&gt;%gchar**&lt;/para&gt;&lt;/listitem&gt;
+ &lt;/varlistentry&gt;
+ &lt;varlistentry&gt;
+ &lt;term&gt;<span class="link"><a href="GLib.OptionArg.html" title="GLib.OptionArg">GLib.OptionArg</a></span>.filename_array&lt;/term&gt;
+ &lt;listitem&gt;&lt;para&gt;%gchar**&lt;/para&gt;&lt;/listitem&gt;
+ &lt;/varlistentry&gt;
+ &lt;varlistentry&gt;
+ &lt;term&gt;<span class="link"><a href="GLib.OptionArg.html" title="GLib.OptionArg">GLib.OptionArg</a></span>.double&lt;/term&gt;
+ &lt;listitem&gt;&lt;para&gt;%gdouble&lt;/para&gt;&lt;/listitem&gt;
+ &lt;/varlistentry&gt;
+ &lt;/variablelist&gt;
+ If @arg type is <span class="link"><a href="GLib.OptionArg.html" title="GLib.OptionArg">GLib.OptionArg</a></span>.string or <span class="link"><a href="GLib.OptionArg.html" title="GLib.OptionArg">GLib.OptionArg</a></span>.filename the location
+ will contain a newly allocated string if the option was given. That string
+ needs to be freed by the callee using <span class="link"><a href="GLib.free.html" title="GLib.free">GLib.free</a></span>. Likewise if @arg type is
+ <span class="link"><a href="GLib.OptionArg.html" title="GLib.OptionArg">GLib.OptionArg</a></span>.string_array or <span class="link"><a href="GLib.OptionArg.html" title="GLib.OptionArg">GLib.OptionArg</a></span>.filename_array, the data should
+ be freed using <span class="link"><a href="GLib.strfreev.html" title="GLib.strfreev">GLib.strfreev</a></span>.</p>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="GLib.OptionEntry.html" title="GLib.OptionEntry">GLib.OptionEntry</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

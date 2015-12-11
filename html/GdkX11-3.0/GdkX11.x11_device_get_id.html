@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GdkX11.x11_device_get_id</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GdkX11">GdkX11</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GdkX11.x11_device_get_id</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function x11_device_get_id(device: <span class="link"><a href="GdkX11.X11DeviceCore.html" title="GdkX11.X11DeviceCore">GdkX11.X11DeviceCore</a></span>): Number(gint) {
+    // Gjs wrapper for gdk_x11_device_get_id()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Returns the device ID as seen by XInput2.</p>
+<p class="p">&gt; If gdk_disable_multidevice() has been called, this function
+&gt; will respectively return 2/3 for the core pointer and keyboard,
+&gt; (matching the IDs for the Virtual Core Pointer and Keyboard in
+&gt; XInput 2), but calling this function on any slave devices (i.e.
+&gt; those managed via XInput 1.x), will return 0.</p>
+<p class="p">Since 3.2</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">device</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="../Gdk-3.0/Gdk.Device.html" title="../Gdk-3.0/Gdk.Device.html">Gdk.Device</a></span></p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">the XInput2 device ID.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="GdkX11">GdkX11</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

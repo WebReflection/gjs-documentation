@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.File.prototype.query_settable_attributes</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.File.html" title="Gio.File">Gio.File</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.File.prototype.query_settable_attributes</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function query_settable_attributes(cancellable: <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span>): <span class="link"><a href="Gio.FileAttributeInfoList.html" title="Gio.FileAttributeInfoList">Gio.FileAttributeInfoList</a></span> {
+    // Gjs wrapper for g_file_query_settable_attributes()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Obtain the list of settable attributes for the file.</p>
+<p class="p">Returns the type and full attribute name of all the attributes
+that can be set on this file. This doesn't mean setting it will
+always succeed though, you might get an access failure, or some
+specific file may not support a specific attribute.</p>
+<p class="p">If <span class="code">cancellable</span> is not <span class="code">null</span>, then the operation can be cancelled by
+triggering the cancellable object from another thread. If the operation
+was cancelled, the error <span class="link"><a href="Gio.IOErrorEnum.html" title="Gio.IOErrorEnum">Gio.IOErrorEnum</a></span>.cancelled will be returned.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">cancellable</span></dt>
+<dd class="terms"><p class="p">optional <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span> object,
+    <span class="code">null</span> to ignore</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="Gio.FileAttributeInfoList.html" title="Gio.FileAttributeInfoList">Gio.FileAttributeInfoList</a></span> describing the settable attributes.
+    When you are done with it, release it with
+    <span class="link"><a href="Gio.FileAttributeInfoList.unref.html" title="Gio.FileAttributeInfoList.prototype.unref">Gio.FileAttributeInfoList.prototype.unref</a></span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.File.html" title="Gio.File">Gio.File</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

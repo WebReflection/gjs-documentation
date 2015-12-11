@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.Icon</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.Icon</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
+
+let icon = new Gio.Icon();
+  </pre></div></div></div></div></div>
+<p class="p"><span class="link"><a href="Gio.Icon.html" title="Gio.Icon">Gio.Icon</a></span> is a very minimal interface for icons. It provides functions
+for checking the equality of two icons, hashing of icons and
+serializing an icon to and from strings.</p>
+<p class="p"><span class="link"><a href="Gio.Icon.html" title="Gio.Icon">Gio.Icon</a></span> does not provide the actual pixmap for the icon as this is out
+of GIO's scope, however implementations of <span class="link"><a href="Gio.Icon.html" title="Gio.Icon">Gio.Icon</a></span> may contain the name
+of an icon (see <span class="link"><a href="Gio.ThemedIcon.html" title="Gio.ThemedIcon">Gio.ThemedIcon</a></span>), or the path to an icon (see <span class="link"><a href="Gio.LoadableIcon.html" title="Gio.LoadableIcon">Gio.LoadableIcon</a></span>).</p>
+<p class="p">To obtain a hash of a <span class="link"><a href="Gio.Icon.html" title="Gio.Icon">Gio.Icon</a></span>, see <span class="link"><a href="Gio.icon_hash.html" title="Gio.icon_hash">Gio.icon_hash</a></span>.</p>
+<p class="p">To check if two #GIcons are equal, see <span class="link"><a href="Gio.Icon.equal.html" title="Gio.Icon.prototype.equal">Gio.Icon.prototype.equal</a></span>.</p>
+<p class="p">For serializing a <span class="link"><a href="Gio.Icon.html" title="Gio.Icon">Gio.Icon</a></span>, use <span class="link"><a href="Gio.Icon.serialize.html" title="Gio.Icon.prototype.serialize">Gio.Icon.prototype.serialize</a></span> and
+<span class="link"><a href="Gio.icon_deserialize.html" title="Gio.icon_deserialize">Gio.icon_deserialize</a></span>.</p>
+<p class="p">If you want to consume <span class="link"><a href="Gio.Icon.html" title="Gio.Icon">Gio.Icon</a></span> (for example, in a toolkit) you must
+be prepared to handle at least the three following cases:
+<span class="link"><a href="Gio.LoadableIcon.html" title="Gio.LoadableIcon">Gio.LoadableIcon</a></span>, <span class="link"><a href="Gio.ThemedIcon.html" title="Gio.ThemedIcon">Gio.ThemedIcon</a></span> and <span class="link"><a href="Gio.EmblemedIcon.html" title="Gio.EmblemedIcon">Gio.EmblemedIcon</a></span>.  It may also make
+sense to have fast-paths for other cases (like handling #GdkPixbuf
+directly, for example) but all compliant <span class="link"><a href="Gio.Icon.html" title="Gio.Icon">Gio.Icon</a></span> implementations
+outside of GIO must implement <span class="link"><a href="Gio.LoadableIcon.html" title="Gio.LoadableIcon">Gio.LoadableIcon</a></span>.</p>
+<p class="p">If your application or library provides one or more <span class="link"><a href="Gio.Icon.html" title="Gio.Icon">Gio.Icon</a></span>
+implementations you need to ensure that your new implementation also
+implements <span class="link"><a href="Gio.LoadableIcon.html" title="Gio.LoadableIcon">Gio.LoadableIcon</a></span>.  Additionally, you must provide an
+implementation of <span class="link"><a href="Gio.Icon.serialize.html" title="Gio.Icon.prototype.serialize">Gio.Icon.prototype.serialize</a></span> that gives a result that is
+understood by <span class="link"><a href="Gio.icon_deserialize.html" title="Gio.icon_deserialize">Gio.icon_deserialize</a></span>, yielding one of the built-in icon
+types.</p>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Prerequisites</span></h2></div>
+<div class="region"><div class="contents"><p class="p">Icon requires GObject.Object</p></div></div>
+</div></div>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Known Implementations</span></h2></div>
+<div class="region"><div class="contents"><p class="p">Icon is implemented by BytesIcon, Emblem, EmblemedIcon, FileIcon and ThemedIcon</p></div></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.Icon.equal.html" title="Gio.Icon.prototype.equal">Gio.Icon.prototype.equal</a></li>
+<li class="links "><a href="Gio.Icon.serialize.html" title="Gio.Icon.prototype.serialize">Gio.Icon.prototype.serialize</a></li>
+<li class="links "><a href="Gio.Icon.to_string.html" title="Gio.Icon.prototype.to_string">Gio.Icon.prototype.to_string</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Static Functions</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.Icon.deserialize.html" title="Gio.Icon.deserialize">Gio.Icon.deserialize</a></li>
+<li class="links "><a href="Gio.Icon.hash.html" title="Gio.Icon.hash">Gio.Icon.hash</a></li>
+<li class="links "><a href="Gio.Icon.new_for_string.html" title="Gio.Icon.new_for_string">Gio.Icon.new_for_string</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Virtual functions</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.Icon-equal.html" title="Gio.Icon::equal">Gio.Icon::equal</a></li>
+<li class="links "><a href="Gio.Icon-hash.html" title="Gio.Icon::hash">Gio.Icon::hash</a></li>
+<li class="links "><a href="Gio.Icon-serialize.html" title="Gio.Icon::serialize">Gio.Icon::serialize</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gio">Gio</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

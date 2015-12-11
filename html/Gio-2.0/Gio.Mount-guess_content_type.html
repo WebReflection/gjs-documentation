@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.Mount::guess_content_type</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.Mount.html" title="Gio.Mount">Gio.Mount</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.Mount::guess_content_type</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function vfunc_guess_content_type(force_rescan: Boolean, cancellable: <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span>, callback: <span class="link"><a href="Gio.AsyncReadyCallback.html" title="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</a></span>): void {
+}
+  </pre></div></div></div></div></div>
+<p class="p">Tries to guess the type of content stored on <span class="code">mount</span>. Returns one or
+more textual identifiers of well-known content types (typically
+prefixed with "x-content/"), e.g. x-content/image-dcf for camera
+memory cards. See the
+[shared-mime-info](http://www.freedesktop.org/wiki/Specifications/shared-mime-info-spec)
+specification for more on x-content types.</p>
+<p class="p">This is an asynchronous operation (see
+<span class="link"><a href="Gio.Mount.guess_content_type_sync.html" title="Gio.Mount.prototype.guess_content_type_sync">Gio.Mount.prototype.guess_content_type_sync</a></span> for the synchronous version), and
+is finished by calling <span class="link"><a href="Gio.Mount.guess_content_type_finish.html" title="Gio.Mount.prototype.guess_content_type_finish">Gio.Mount.prototype.guess_content_type_finish</a></span> with the
+<span class="code">mount</span> and <span class="link"><a href="Gio.AsyncResult.html" title="Gio.AsyncResult">Gio.AsyncResult</a></span> data returned in the <span class="code">callback</span>.</p>
+<p class="p">Since 2.18</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">force_rescan</span></dt>
+<dd class="terms"><p class="p">Whether to force a rescan of the content.
+    Otherwise a cached result will be used if available</p></dd>
+<dt class="terms"><span class="code">cancellable</span></dt>
+<dd class="terms"><p class="p">optional <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span> object, <span class="code">null</span> to ignore</p></dd>
+<dt class="terms"><span class="code">callback</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="Gio.AsyncReadyCallback.html" title="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</a></span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.Mount.html" title="Gio.Mount">Gio.Mount</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

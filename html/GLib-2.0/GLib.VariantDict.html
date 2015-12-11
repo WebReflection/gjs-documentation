@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.VariantDict</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.VariantDict</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const GLib = imports.gi.GLib;
+
+let variantDict = new GLib.VariantDict(from_asv: GLib.Variant);
+  </pre></div></div></div></div></div>
+<p class="p"><span class="link"><a href="GLib.VariantDict.html" title="GLib.VariantDict">GLib.VariantDict</a></span> is a mutable interface to <span class="link"><a href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a></span> dictionaries.</p>
+<p class="p">It can be used for doing a sequence of dictionary lookups in an
+efficient way on an existing <span class="link"><a href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a></span> dictionary or it can be used
+to construct new dictionaries with a hashtable-like interface.  It
+can also be used for taking existing dictionaries and modifying them
+in order to create new ones.</p>
+<p class="p"><span class="link"><a href="GLib.VariantDict.html" title="GLib.VariantDict">GLib.VariantDict</a></span> can only be used with %G_VARIANT_TYPE_VARDICT
+dictionaries.</p>
+<p class="p">It is possible to use <span class="link"><a href="GLib.VariantDict.html" title="GLib.VariantDict">GLib.VariantDict</a></span> allocated on the stack or on the
+heap.  When using a stack-allocated <span class="link"><a href="GLib.VariantDict.html" title="GLib.VariantDict">GLib.VariantDict</a></span>, you begin with a
+call to <span class="link"><a href="GLib.VariantDict.init.html" title="GLib.VariantDict.init">GLib.VariantDict.init</a></span> and free the resources with a call to
+<span class="link"><a href="GLib.VariantDict.clear.html" title="GLib.VariantDict.prototype.clear">GLib.VariantDict.prototype.clear</a></span>.</p>
+<p class="p">Heap-allocated <span class="link"><a href="GLib.VariantDict.html" title="GLib.VariantDict">GLib.VariantDict</a></span> follows normal refcounting rules: you
+allocate it with <span class="link"><a href="GLib.VariantDict.new.html" title="GLib.VariantDict.new">GLib.VariantDict.new</a></span> and use <span class="link"><a href="GLib.VariantDict.ref.html" title="GLib.VariantDict.prototype.ref">GLib.VariantDict.prototype.ref</a></span>
+and <span class="link"><a href="GLib.VariantDict.unref.html" title="GLib.VariantDict.prototype.unref">GLib.VariantDict.prototype.unref</a></span>.</p>
+<p class="p"><span class="link"><a href="GLib.VariantDict.end.html" title="GLib.VariantDict.prototype.end">GLib.VariantDict.prototype.end</a></span> is used to convert the <span class="link"><a href="GLib.VariantDict.html" title="GLib.VariantDict">GLib.VariantDict</a></span> back into a
+dictionary-type <span class="link"><a href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a></span>.  When used with stack-allocated instances,
+this also implicitly frees all associated memory, but for
+heap-allocated instances, you must still call <span class="link"><a href="GLib.VariantDict.unref.html" title="GLib.VariantDict.prototype.unref">GLib.VariantDict.prototype.unref</a></span>
+afterwards.</p>
+<p class="p">You will typically want to use a heap-allocated <span class="link"><a href="GLib.VariantDict.html" title="GLib.VariantDict">GLib.VariantDict</a></span> when
+you expose it as part of an API.  For most other uses, the
+stack-allocated form will be more convenient.</p>
+<p class="p">Consider the following two examples that do the same thing in each
+style: take an existing dictionary and look up the "count" uint32
+key, adding 1 to it if it is found, or returning an error if the
+key is not found.  Each returns the new dictionary as a floating
+<span class="link"><a href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a></span>.</p>
+<p class="p">## Using a stack-allocated GVariantDict</p>
+<p class="p">|[
+  GVariant *
+  add_to_count (GVariant  *orig,
+                GError   **error)
+  {
+    GVariantDict dict;
+    guint32 count;</p>
+<p class="p">    g_variant_dict_init (&amp;dict, orig);
+    if (!g_variant_dict_lookup (&amp;dict, "count", "u", &amp;count))
+      {
+        g_set_error (...);
+        g_variant_dict_clear (&amp;dict);
+        return NULL;
+      }</p>
+<p class="p">    g_variant_dict_insert (&amp;dict, "count", "u", count + 1);</p>
+<p class="p">    return g_variant_dict_end (&amp;dict);
+  }
+]|</p>
+<p class="p">## Using heap-allocated GVariantDict</p>
+<p class="p">|[
+  GVariant *
+  add_to_count (GVariant  *orig,
+                GError   **error)
+  {
+    GVariantDict *dict;
+    GVariant *result;
+    guint32 count;</p>
+<p class="p">    dict = g_variant_dict_new (orig);</p>
+<p class="p">    if (g_variant_dict_lookup (dict, "count", "u", &amp;count))
+      {
+        g_variant_dict_insert (dict, "count", "u", count + 1);
+        result = g_variant_dict_end (dict);
+      }
+    else
+      {
+        g_set_error (...);
+        result = NULL;
+      }</p>
+<p class="p">    g_variant_dict_unref (dict);</p>
+<p class="p">    return result;
+  }
+]|</p>
+<p class="p">Since 2.40</p>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
+<div class="region"><ul><li class="links "><a href="GLib.VariantDict.new.html" title="GLib.VariantDict.new">GLib.VariantDict.new</a></li></ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="GLib.VariantDict.clear.html" title="GLib.VariantDict.prototype.clear">GLib.VariantDict.prototype.clear</a></li>
+<li class="links "><a href="GLib.VariantDict.contains.html" title="GLib.VariantDict.prototype.contains">GLib.VariantDict.prototype.contains</a></li>
+<li class="links "><a href="GLib.VariantDict.end.html" title="GLib.VariantDict.prototype.end">GLib.VariantDict.prototype.end</a></li>
+<li class="links "><a href="GLib.VariantDict.insert_value.html" title="GLib.VariantDict.prototype.insert_value">GLib.VariantDict.prototype.insert_value</a></li>
+<li class="links "><a href="GLib.VariantDict.lookup_value.html" title="GLib.VariantDict.prototype.lookup_value">GLib.VariantDict.prototype.lookup_value</a></li>
+<li class="links "><a href="GLib.VariantDict.ref.html" title="GLib.VariantDict.prototype.ref">GLib.VariantDict.prototype.ref</a></li>
+<li class="links "><a href="GLib.VariantDict.remove.html" title="GLib.VariantDict.prototype.remove">GLib.VariantDict.prototype.remove</a></li>
+<li class="links "><a href="GLib.VariantDict.unref.html" title="GLib.VariantDict.prototype.unref">GLib.VariantDict.prototype.unref</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="GLib">GLib</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

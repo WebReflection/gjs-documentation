@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.Variant.prototype.ref_sink</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » <a class="trail" href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.Variant.prototype.ref_sink</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function ref_sink(): <span class="link"><a href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a></span> {
+    // Gjs wrapper for g_variant_ref_sink()
+}
+  </pre></div></div></div></div></div>
+<p class="p"><span class="link"><a href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a></span> uses a floating reference count system.  All functions with
+names starting with `g_variant_new_` return floating
+references.</p>
+<p class="p">Calling <span class="link"><a href="GLib.Variant.ref_sink.html" title="GLib.Variant.prototype.ref_sink">GLib.Variant.prototype.ref_sink</a></span> on a <span class="link"><a href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a></span> with a floating reference
+will convert the floating reference into a full reference.  Calling
+<span class="link"><a href="GLib.Variant.ref_sink.html" title="GLib.Variant.prototype.ref_sink">GLib.Variant.prototype.ref_sink</a></span> on a non-floating <span class="link"><a href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a></span> results in an
+additional normal reference being added.</p>
+<p class="p">In other words, if the <span class="code">value</span> is floating, then this call "assumes
+ownership" of the floating reference, converting it to a normal
+reference.  If the <span class="code">value</span> is not floating, then this call adds a
+new normal reference increasing the reference count by one.</p>
+<p class="p">All calls that result in a <span class="link"><a href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a></span> instance being inserted into a
+container will call <span class="link"><a href="GLib.Variant.ref_sink.html" title="GLib.Variant.prototype.ref_sink">GLib.Variant.prototype.ref_sink</a></span> on the instance.  This means
+that if the value was just created (and has only its floating
+reference) then the container will assume sole ownership of the value
+at that point and the caller will not need to unreference it.  This
+makes certain common styles of programming much easier while still
+maintaining normal refcounting semantics in situations where values
+are not floating.</p>
+<p class="p">Since 2.24</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">the same <span class="code">value</span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="GLib.Variant.html" title="GLib.Variant">GLib.Variant</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

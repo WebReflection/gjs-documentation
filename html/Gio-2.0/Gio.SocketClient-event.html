@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.SocketClient::event</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.SocketClient.html" title="Gio.SocketClient">Gio.SocketClient</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.SocketClient::event</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">connect('event', function (socketClient, event: <span class="link"><a href="Gio.SocketClientEvent.html" title="Gio.SocketClientEvent">Gio.SocketClientEvent</a></span>, connectable: <span class="link"><a href="Gio.SocketConnectable.html" title="Gio.SocketConnectable">Gio.SocketConnectable</a></span>, connection: <span class="link"><a href="Gio.IOStream.html" title="Gio.IOStream">Gio.IOStream</a></span>, ): void);
+  </pre></div></div></div></div></div>
+<p class="p">Emitted when @client's activity on <span class="code">connectable</span> changes state.
+Among other things, this can be used to provide progress
+information about a network connection in the UI. The meanings of
+the different <span class="code">event</span> values are as follows:</p>
+<p class="p">- <span class="link"><a href="Gio.SocketClientEvent.html" title="Gio.SocketClientEvent">Gio.SocketClientEvent</a></span>.resolving: @client is about to look up <span class="code">connectable</span>
+  in DNS. <span class="code">connection</span> will be <span class="code">null</span>.</p>
+<p class="p">- <span class="link"><a href="Gio.SocketClientEvent.html" title="Gio.SocketClientEvent">Gio.SocketClientEvent</a></span>.resolved:  @client has successfully resolved
+  <span class="code">connectable</span> in DNS. <span class="code">connection</span> will be <span class="code">null</span>.</p>
+<p class="p">- <span class="link"><a href="Gio.SocketClientEvent.html" title="Gio.SocketClientEvent">Gio.SocketClientEvent</a></span>.connecting: @client is about to make a connection
+  to a remote host; either a proxy server or the destination server
+  itself. <span class="code">connection</span> is the <span class="link"><a href="Gio.SocketConnection.html" title="Gio.SocketConnection">Gio.SocketConnection</a></span>, which is not yet
+  connected.  Since GLib 2.40, you can access the remote
+  address via <span class="link"><a href="Gio.SocketConnection.get_remote_address.html" title="Gio.SocketConnection.prototype.get_remote_address">Gio.SocketConnection.prototype.get_remote_address</a></span>.</p>
+<p class="p">- <span class="link"><a href="Gio.SocketClientEvent.html" title="Gio.SocketClientEvent">Gio.SocketClientEvent</a></span>.connected: @client has successfully connected
+  to a remote host. <span class="code">connection</span> is the connected <span class="link"><a href="Gio.SocketConnection.html" title="Gio.SocketConnection">Gio.SocketConnection</a></span>.</p>
+<p class="p">- <span class="link"><a href="Gio.SocketClientEvent.html" title="Gio.SocketClientEvent">Gio.SocketClientEvent</a></span>.proxy_negotiating: @client is about to negotiate
+  with a proxy to get it to connect to <span class="code">connectable</span>. <span class="code">connection</span> is
+  the <span class="link"><a href="Gio.SocketConnection.html" title="Gio.SocketConnection">Gio.SocketConnection</a></span> to the proxy server.</p>
+<p class="p">- <span class="link"><a href="Gio.SocketClientEvent.html" title="Gio.SocketClientEvent">Gio.SocketClientEvent</a></span>.proxy_negotiated: @client has negotiated a
+  connection to <span class="code">connectable</span> through a proxy server. <span class="code">connection</span> is
+  the stream returned from <span class="link"><a href="Gio.Proxy.connect.html" title="Gio.Proxy.prototype.connect">Gio.Proxy.prototype.connect</a></span>, which may or may not
+  be a <span class="link"><a href="Gio.SocketConnection.html" title="Gio.SocketConnection">Gio.SocketConnection</a></span>.</p>
+<p class="p">- <span class="link"><a href="Gio.SocketClientEvent.html" title="Gio.SocketClientEvent">Gio.SocketClientEvent</a></span>.tls_handshaking: @client is about to begin a TLS
+  handshake. <span class="code">connection</span> is a <span class="link"><a href="Gio.TlsClientConnection.html" title="Gio.TlsClientConnection">Gio.TlsClientConnection</a></span>.</p>
+<p class="p">- <span class="link"><a href="Gio.SocketClientEvent.html" title="Gio.SocketClientEvent">Gio.SocketClientEvent</a></span>.tls_handshaked: @client has successfully completed
+  the TLS handshake. <span class="code">connection</span> is a <span class="link"><a href="Gio.TlsClientConnection.html" title="Gio.TlsClientConnection">Gio.TlsClientConnection</a></span>.</p>
+<p class="p">- <span class="link"><a href="Gio.SocketClientEvent.html" title="Gio.SocketClientEvent">Gio.SocketClientEvent</a></span>.complete: @client has either successfully connected
+  to <span class="code">connectable</span> (in which case <span class="code">connection</span> is the <span class="link"><a href="Gio.SocketConnection.html" title="Gio.SocketConnection">Gio.SocketConnection</a></span>
+  that it will be returning to the caller) or has failed (in which
+  case <span class="code">connection</span> is <span class="code">null</span> and the client is about to return an error).</p>
+<p class="p">Each event except <span class="link"><a href="Gio.SocketClientEvent.html" title="Gio.SocketClientEvent">Gio.SocketClientEvent</a></span>.complete may be emitted
+multiple times (or not at all) for a given connectable (in
+particular, if @client ends up attempting to connect to more than
+one address). However, if @client emits the <span class="link"><a href="Gio.SocketClient-event.html" title="Gio.SocketClient::event">Gio.SocketClient::event</a></span>
+signal at all for a given connectable, that it will always emit
+it with <span class="link"><a href="Gio.SocketClientEvent.html" title="Gio.SocketClientEvent">Gio.SocketClientEvent</a></span>.complete when it is done.</p>
+<p class="p">Note that there may be additional <span class="link"><a href="Gio.SocketClientEvent.html" title="Gio.SocketClientEvent">Gio.SocketClientEvent</a></span> values in
+the future; unrecognized <span class="code">event</span> values should be ignored.</p>
+<p class="p">Since 2.32</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">socketClient</span></dt>
+<dd class="terms"><p class="p">instance of <span class="link"><a href="Gio.SocketClient.html" title="Gio.SocketClient">Gio.SocketClient</a></span> that is emitting the signal</p></dd>
+<dt class="terms"><span class="code">event</span></dt>
+<dd class="terms"><p class="p">the event that is occurring</p></dd>
+<dt class="terms"><span class="code">connectable</span></dt>
+<dd class="terms"><p class="p">the <span class="link"><a href="Gio.SocketConnectable.html" title="Gio.SocketConnectable">Gio.SocketConnectable</a></span> that <span class="code">event</span> is occurring on</p></dd>
+<dt class="terms"><span class="code">connection</span></dt>
+<dd class="terms"><p class="p">the current representation of the connection</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.SocketClient.html" title="Gio.SocketClient">Gio.SocketClient</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

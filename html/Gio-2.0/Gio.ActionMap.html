@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.ActionMap</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.ActionMap</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
+
+let action_map = new Gio.ActionMap();
+  </pre></div></div></div></div></div>
+<p class="p">The GActionMap interface is implemented by <span class="link"><a href="Gio.ActionGroup.html" title="Gio.ActionGroup">Gio.ActionGroup</a></span>
+implementations that operate by containing a number of
+named <span class="link"><a href="Gio.Action.html" title="Gio.Action">Gio.Action</a></span> instances, such as <span class="link"><a href="Gio.SimpleActionGroup.html" title="Gio.SimpleActionGroup">Gio.SimpleActionGroup</a></span>.</p>
+<p class="p">One useful application of this interface is to map the
+names of actions from various action groups to unique,
+prefixed names (e.g. by prepending "app." or "win.").
+This is the motivation for the 'Map' part of the interface
+name.</p>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Prerequisites</span></h2></div>
+<div class="region"><div class="contents"><p class="p">ActionMap requires GObject.Object</p></div></div>
+</div></div>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Known Implementations</span></h2></div>
+<div class="region"><div class="contents"><p class="p">ActionMap is implemented by Application and SimpleActionGroup</p></div></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.ActionMap.add_action.html" title="Gio.ActionMap.prototype.add_action">Gio.ActionMap.prototype.add_action</a></li>
+<li class="links "><a href="Gio.ActionMap.add_action_entries.html" title="Gio.ActionMap.prototype.add_action_entries">Gio.ActionMap.prototype.add_action_entries</a></li>
+<li class="links "><a href="Gio.ActionMap.lookup_action.html" title="Gio.ActionMap.prototype.lookup_action">Gio.ActionMap.prototype.lookup_action</a></li>
+<li class="links "><a href="Gio.ActionMap.remove_action.html" title="Gio.ActionMap.prototype.remove_action">Gio.ActionMap.prototype.remove_action</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Virtual functions</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.ActionMap-add_action.html" title="Gio.ActionMap::add_action">Gio.ActionMap::add_action</a></li>
+<li class="links "><a href="Gio.ActionMap-lookup_action.html" title="Gio.ActionMap::lookup_action">Gio.ActionMap::lookup_action</a></li>
+<li class="links "><a href="Gio.ActionMap-remove_action.html" title="Gio.ActionMap::remove_action">Gio.ActionMap::remove_action</a></li>
+</ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gio">Gio</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

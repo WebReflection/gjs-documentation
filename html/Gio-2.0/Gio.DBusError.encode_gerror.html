@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.DBusError.encode_gerror</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.DBusError.html" title="Gio.DBusError">Gio.DBusError</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.DBusError.encode_gerror</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function encode_gerror(error: <span class="link"><a href="../GLib-2.0/GLib.Error.html" title="../GLib-2.0/GLib.Error.html">GLib.Error</a></span>): String {
+    // Gjs wrapper for g_dbus_error_encode_gerror()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Creates a D-Bus error name to use for <span class="code">error</span>. If <span class="code">error</span> matches
+a registered error (cf. <span class="link"><a href="Gio.dbus_error_register_error.html" title="Gio.dbus_error_register_error">Gio.dbus_error_register_error</a></span>), the corresponding
+D-Bus error name will be returned.</p>
+<p class="p">Otherwise the a name of the form
+`org.gtk.GDBus.UnmappedGError.Quark._ESCAPED_QUARK_NAME.Code_ERROR_CODE`
+will be used. This allows other GDBus applications to map the error
+on the wire back to a <span class="link"><a href="../GLib-2.0/GLib.Error.html" title="../GLib-2.0/GLib.Error.html">GLib.Error</a></span> using <span class="link"><a href="Gio.dbus_error_new_for_dbus_error.html" title="Gio.dbus_error_new_for_dbus_error">Gio.dbus_error_new_for_dbus_error</a></span>.</p>
+<p class="p">This function is typically only used in object mappings to put a
+<span class="link"><a href="../GLib-2.0/GLib.Error.html" title="../GLib-2.0/GLib.Error.html">GLib.Error</a></span> on the wire. Regular applications should not use it.</p>
+<p class="p">Since 2.26</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">error</span></dt>
+<dd class="terms"><p class="p">A <span class="link"><a href="../GLib-2.0/GLib.Error.html" title="../GLib-2.0/GLib.Error.html">GLib.Error</a></span>.</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">A D-Bus error name (never <span class="code">null</span>). Free with <span class="link"><a href="../GLib-2.0/GLib.free.html" title="../GLib-2.0/GLib.free.html">GLib.free</a></span>.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.DBusError.html" title="Gio.DBusError">Gio.DBusError</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.Scanner.prototype.unexp_token</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » <a class="trail" href="GLib.Scanner.html" title="GLib.Scanner">GLib.Scanner</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.Scanner.prototype.unexp_token</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function unexp_token(expected_token: <span class="link"><a href="GLib.TokenType.html" title="GLib.TokenType">GLib.TokenType</a></span>, identifier_spec: String, symbol_spec: String, symbol_name: String, message: String, is_error: Number(gint)): void {
+    // Gjs wrapper for g_scanner_unexp_token()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Outputs a message through the scanner's msg_handler,
+resulting from an unexpected token in the input stream.
+Note that you should not call <span class="link"><a href="GLib.Scanner.peek_next_token.html" title="GLib.Scanner.prototype.peek_next_token">GLib.Scanner.prototype.peek_next_token</a></span>
+followed by <span class="link"><a href="GLib.Scanner.unexp_token.html" title="GLib.Scanner.prototype.unexp_token">GLib.Scanner.prototype.unexp_token</a></span> without an intermediate
+call to <span class="link"><a href="GLib.Scanner.get_next_token.html" title="GLib.Scanner.prototype.get_next_token">GLib.Scanner.prototype.get_next_token</a></span>, as <span class="link"><a href="GLib.Scanner.unexp_token.html" title="GLib.Scanner.prototype.unexp_token">GLib.Scanner.prototype.unexp_token</a></span>
+evaluates the scanner's current token (not the peeked token)
+to construct part of the message.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">expected_token</span></dt>
+<dd class="terms"><p class="p">the expected token</p></dd>
+<dt class="terms"><span class="code">identifier_spec</span></dt>
+<dd class="terms"><p class="p">a string describing how the scanner's user
+    refers to identifiers (<span class="code">null</span> defaults to "identifier").
+    This is used if <span class="code">expected_token</span> is <span class="link"><a href="GLib.TokenType.html" title="GLib.TokenType">GLib.TokenType</a></span>.identifier or
+    <span class="link"><a href="GLib.TokenType.html" title="GLib.TokenType">GLib.TokenType</a></span>.identifier_null.</p></dd>
+<dt class="terms"><span class="code">symbol_spec</span></dt>
+<dd class="terms"><p class="p">a string describing how the scanner's user refers
+    to symbols (<span class="code">null</span> defaults to "symbol"). This is used if
+    <span class="code">expected_token</span> is <span class="link"><a href="GLib.TokenType.html" title="GLib.TokenType">GLib.TokenType</a></span>.symbol or any token value greater
+    than %G_TOKEN_LAST.</p></dd>
+<dt class="terms"><span class="code">symbol_name</span></dt>
+<dd class="terms"><p class="p">the name of the symbol, if the scanner's current
+    token is a symbol.</p></dd>
+<dt class="terms"><span class="code">message</span></dt>
+<dd class="terms"><p class="p">a message string to output at the end of the
+    warning/error, or <span class="code">null</span>.</p></dd>
+<dt class="terms"><span class="code">is_error</span></dt>
+<dd class="terms"><p class="p">if <span class="code">true</span> it is output as an error. If <span class="code">false</span> it is
+    output as a warning.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="GLib.Scanner.html" title="GLib.Scanner">GLib.Scanner</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.SocketClient</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.SocketClient</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
+
+let socketClient = new Gio.SocketClient({
+    <span class="link"><a href="Gio.SocketClient-enable-proxy.html" title="Gio.SocketClient.enable_proxy">enable_proxy</a></span>: value,
+    <span class="link"><a href="Gio.SocketClient-family.html" title="Gio.SocketClient.family">family</a></span>: value,
+    <span class="link"><a href="Gio.SocketClient-local-address.html" title="Gio.SocketClient.local_address">local_address</a></span>: value,
+    <span class="link"><a href="Gio.SocketClient-protocol.html" title="Gio.SocketClient.protocol">protocol</a></span>: value,
+    <span class="link"><a href="Gio.SocketClient-proxy-resolver.html" title="Gio.SocketClient.proxy_resolver">proxy_resolver</a></span>: value,
+    <span class="link"><a href="Gio.SocketClient-timeout.html" title="Gio.SocketClient.timeout">timeout</a></span>: value,
+    <span class="link"><a href="Gio.SocketClient-tls.html" title="Gio.SocketClient.tls">tls</a></span>: value,
+    <span class="link"><a href="Gio.SocketClient-tls-validation-flags.html" title="Gio.SocketClient.tls_validation_flags">tls_validation_flags</a></span>: value,
+    <span class="link"><a href="Gio.SocketClient-type.html" title="Gio.SocketClient.type">type</a></span>: value,
+});
+  </pre></div></div></div></div></div>
+<p class="p"><span class="link"><a href="Gio.SocketClient.html" title="Gio.SocketClient">Gio.SocketClient</a></span> is a lightweight high-level utility class for connecting to
+a network host using a connection oriented socket type.</p>
+<p class="p">You create a <span class="link"><a href="Gio.SocketClient.html" title="Gio.SocketClient">Gio.SocketClient</a></span> object, set any options you want, and then
+call a sync or async connect operation, which returns a <span class="link"><a href="Gio.SocketConnection.html" title="Gio.SocketConnection">Gio.SocketConnection</a></span>
+subclass on success.</p>
+<p class="p">The type of the <span class="link"><a href="Gio.SocketConnection.html" title="Gio.SocketConnection">Gio.SocketConnection</a></span> object returned depends on the type of
+the underlying socket that is in use. For instance, for a TCP/IP connection
+it will be a <span class="link"><a href="Gio.TcpConnection.html" title="Gio.TcpConnection">Gio.TcpConnection</a></span>.</p>
+<p class="p">As <span class="link"><a href="Gio.SocketClient.html" title="Gio.SocketClient">Gio.SocketClient</a></span> is a lightweight object, you don't need to cache it. You
+can just create a new one any time you need one.</p>
+<p class="p">Since 2.22</p>
+<div class="synopsis"><div class="inner">
+<div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
+<div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
+<div>
+        <span class="code">GObject.Object</span>
+      
+      </div>
+<ul class="tree"><li class="tree"><div>
+        <span class="code">Gio.SocketClient</span>
+      </div></li></ul>
+</li></ul></div></div></div></div></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.SocketClient.new.html" title="Gio.SocketClient.new">Gio.SocketClient.new</a></li></ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.SocketClient.add_application_proxy.html" title="Gio.SocketClient.prototype.add_application_proxy">Gio.SocketClient.prototype.add_application_proxy</a></li>
+<li class="links "><a href="Gio.SocketClient.connect.html" title="Gio.SocketClient.prototype.connect">Gio.SocketClient.prototype.connect</a></li>
+<li class="links "><a href="Gio.SocketClient.connect_async.html" title="Gio.SocketClient.prototype.connect_async">Gio.SocketClient.prototype.connect_async</a></li>
+<li class="links "><a href="Gio.SocketClient.connect_finish.html" title="Gio.SocketClient.prototype.connect_finish">Gio.SocketClient.prototype.connect_finish</a></li>
+<li class="links "><a href="Gio.SocketClient.connect_to_host.html" title="Gio.SocketClient.prototype.connect_to_host">Gio.SocketClient.prototype.connect_to_host</a></li>
+<li class="links "><a href="Gio.SocketClient.connect_to_host_async.html" title="Gio.SocketClient.prototype.connect_to_host_async">Gio.SocketClient.prototype.connect_to_host_async</a></li>
+<li class="links "><a href="Gio.SocketClient.connect_to_host_finish.html" title="Gio.SocketClient.prototype.connect_to_host_finish">Gio.SocketClient.prototype.connect_to_host_finish</a></li>
+<li class="links "><a href="Gio.SocketClient.connect_to_service.html" title="Gio.SocketClient.prototype.connect_to_service">Gio.SocketClient.prototype.connect_to_service</a></li>
+<li class="links "><a href="Gio.SocketClient.connect_to_service_async.html" title="Gio.SocketClient.prototype.connect_to_service_async">Gio.SocketClient.prototype.connect_to_service_async</a></li>
+<li class="links "><a href="Gio.SocketClient.connect_to_service_finish.html" title="Gio.SocketClient.prototype.connect_to_service_finish">Gio.SocketClient.prototype.connect_to_service_finish</a></li>
+<li class="links "><a href="Gio.SocketClient.connect_to_uri.html" title="Gio.SocketClient.prototype.connect_to_uri">Gio.SocketClient.prototype.connect_to_uri</a></li>
+<li class="links "><a href="Gio.SocketClient.connect_to_uri_async.html" title="Gio.SocketClient.prototype.connect_to_uri_async">Gio.SocketClient.prototype.connect_to_uri_async</a></li>
+<li class="links "><a href="Gio.SocketClient.connect_to_uri_finish.html" title="Gio.SocketClient.prototype.connect_to_uri_finish">Gio.SocketClient.prototype.connect_to_uri_finish</a></li>
+<li class="links "><a href="Gio.SocketClient.get_enable_proxy.html" title="Gio.SocketClient.prototype.get_enable_proxy">Gio.SocketClient.prototype.get_enable_proxy</a></li>
+<li class="links "><a href="Gio.SocketClient.get_family.html" title="Gio.SocketClient.prototype.get_family">Gio.SocketClient.prototype.get_family</a></li>
+<li class="links "><a href="Gio.SocketClient.get_local_address.html" title="Gio.SocketClient.prototype.get_local_address">Gio.SocketClient.prototype.get_local_address</a></li>
+<li class="links "><a href="Gio.SocketClient.get_protocol.html" title="Gio.SocketClient.prototype.get_protocol">Gio.SocketClient.prototype.get_protocol</a></li>
+<li class="links "><a href="Gio.SocketClient.get_proxy_resolver.html" title="Gio.SocketClient.prototype.get_proxy_resolver">Gio.SocketClient.prototype.get_proxy_resolver</a></li>
+<li class="links "><a href="Gio.SocketClient.get_socket_type.html" title="Gio.SocketClient.prototype.get_socket_type">Gio.SocketClient.prototype.get_socket_type</a></li>
+<li class="links "><a href="Gio.SocketClient.get_timeout.html" title="Gio.SocketClient.prototype.get_timeout">Gio.SocketClient.prototype.get_timeout</a></li>
+<li class="links "><a href="Gio.SocketClient.get_tls.html" title="Gio.SocketClient.prototype.get_tls">Gio.SocketClient.prototype.get_tls</a></li>
+<li class="links "><a href="Gio.SocketClient.get_tls_validation_flags.html" title="Gio.SocketClient.prototype.get_tls_validation_flags">Gio.SocketClient.prototype.get_tls_validation_flags</a></li>
+<li class="links "><a href="Gio.SocketClient.set_enable_proxy.html" title="Gio.SocketClient.prototype.set_enable_proxy">Gio.SocketClient.prototype.set_enable_proxy</a></li>
+<li class="links "><a href="Gio.SocketClient.set_family.html" title="Gio.SocketClient.prototype.set_family">Gio.SocketClient.prototype.set_family</a></li>
+<li class="links "><a href="Gio.SocketClient.set_local_address.html" title="Gio.SocketClient.prototype.set_local_address">Gio.SocketClient.prototype.set_local_address</a></li>
+<li class="links "><a href="Gio.SocketClient.set_protocol.html" title="Gio.SocketClient.prototype.set_protocol">Gio.SocketClient.prototype.set_protocol</a></li>
+<li class="links "><a href="Gio.SocketClient.set_proxy_resolver.html" title="Gio.SocketClient.prototype.set_proxy_resolver">Gio.SocketClient.prototype.set_proxy_resolver</a></li>
+<li class="links "><a href="Gio.SocketClient.set_socket_type.html" title="Gio.SocketClient.prototype.set_socket_type">Gio.SocketClient.prototype.set_socket_type</a></li>
+<li class="links "><a href="Gio.SocketClient.set_timeout.html" title="Gio.SocketClient.prototype.set_timeout">Gio.SocketClient.prototype.set_timeout</a></li>
+<li class="links "><a href="Gio.SocketClient.set_tls.html" title="Gio.SocketClient.prototype.set_tls">Gio.SocketClient.prototype.set_tls</a></li>
+<li class="links "><a href="Gio.SocketClient.set_tls_validation_flags.html" title="Gio.SocketClient.prototype.set_tls_validation_flags">Gio.SocketClient.prototype.set_tls_validation_flags</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Properties</span></h2></div>
+<div class="region"><ul>
+<li class="links "><a href="Gio.SocketClient-enable-proxy.html" title="Gio.SocketClient.enable_proxy">enable-proxy</a></li>
+<li class="links "><a href="Gio.SocketClient-family.html" title="Gio.SocketClient.family">family</a></li>
+<li class="links "><a href="Gio.SocketClient-local-address.html" title="Gio.SocketClient.local_address">local-address</a></li>
+<li class="links "><a href="Gio.SocketClient-protocol.html" title="Gio.SocketClient.protocol">protocol</a></li>
+<li class="links "><a href="Gio.SocketClient-proxy-resolver.html" title="Gio.SocketClient.proxy_resolver">proxy-resolver</a></li>
+<li class="links "><a href="Gio.SocketClient-timeout.html" title="Gio.SocketClient.timeout">timeout</a></li>
+<li class="links "><a href="Gio.SocketClient-tls.html" title="Gio.SocketClient.tls">tls</a></li>
+<li class="links "><a href="Gio.SocketClient-tls-validation-flags.html" title="Gio.SocketClient.tls_validation_flags">tls-validation-flags</a></li>
+<li class="links "><a href="Gio.SocketClient-type.html" title="Gio.SocketClient.type">type</a></li>
+</ul></div>
+</div></div>
+<div class="links topiclinks"><div class="inner">
+<div class="title title-links"><h2><span class="title">Signals</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.SocketClient-event.html" title="Gio.SocketClient::event">event</a></li></ul></div>
+</div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="Gio">Gio</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

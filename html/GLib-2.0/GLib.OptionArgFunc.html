@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.OptionArgFunc</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.OptionArgFunc</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function onOptionArgFunc(option_name: String, value: String, data: void): Boolean {
+}
+  </pre></div></div></div></div></div>
+<p class="p">The type of function to be passed as callback for <span class="link"><a href="GLib.OptionArg.html" title="GLib.OptionArg">GLib.OptionArg</a></span>.callback
+options.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">option_name</span></dt>
+<dd class="terms"><p class="p">The name of the option being parsed. This will be either a
+ single dash followed by a single letter (for a short name) or two dashes
+ followed by a long option name.</p></dd>
+<dt class="terms"><span class="code">value</span></dt>
+<dd class="terms"><p class="p">The value to be parsed.</p></dd>
+<dt class="terms"><span class="code">data</span></dt>
+<dd class="terms"><p class="p">User data added to the <span class="link"><a href="GLib.OptionGroup.html" title="GLib.OptionGroup">GLib.OptionGroup</a></span> containing the option when it
+ was created with <span class="link"><a href="GLib.OptionGroup.new.html" title="GLib.OptionGroup.new">GLib.OptionGroup.new</a></span></p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> if the option was successfully parsed, <span class="code">false</span> if an error
+ occurred, in which case @error should be set with <span class="link"><a href="GLib.set_error.html" title="GLib.set_error">GLib.set_error</a></span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="GLib">GLib</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

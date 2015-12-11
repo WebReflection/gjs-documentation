@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.test_trap_subprocess</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.test_trap_subprocess</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function test_trap_subprocess(test_path: String, usec_timeout: Number(guint64), test_flags: <span class="link"><a href="GLib.TestSubprocessFlags.html" title="GLib.TestSubprocessFlags">GLib.TestSubprocessFlags</a></span>): void {
+    // Gjs wrapper for g_test_trap_subprocess()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Respawns the test program to run only <span class="code">test_path</span> in a subprocess.
+This can be used for a test case that might not return, or that
+might abort.</p>
+<p class="p">If <span class="code">test_path</span> is <span class="code">null</span> then the same test is re-run in a subprocess.
+You can use <span class="link"><a href="GLib.test_subprocess.html" title="GLib.test_subprocess">GLib.test_subprocess</a></span> to determine whether the test is in
+a subprocess or not.</p>
+<p class="p"><span class="code">test_path</span> can also be the name of the parent test, followed by
+"`/subprocess/`" and then a name for the specific subtest (or just
+ending with "`/subprocess`" if the test only has one child test);
+tests with names of this form will automatically be skipped in the
+parent process.</p>
+<p class="p">If <span class="code">usec_timeout</span> is non-0, the test subprocess is aborted and
+considered failing if its run time exceeds it.</p>
+<p class="p">The subprocess behavior can be configured with the
+<span class="link"><a href="GLib.TestSubprocessFlags.html" title="GLib.TestSubprocessFlags">GLib.TestSubprocessFlags</a></span> flags.</p>
+<p class="p">You can use methods such as g_test_trap_assert_passed(),
+g_test_trap_assert_failed(), and g_test_trap_assert_stderr() to
+check the results of the subprocess. (But note that
+g_test_trap_assert_stdout() and g_test_trap_assert_stderr()
+cannot be used if <span class="code">test_flags</span> specifies that the child should
+inherit the parent stdout/stderr.)</p>
+<p class="p">If your `main ()` needs to behave differently in
+the subprocess, you can call <span class="link"><a href="GLib.test_subprocess.html" title="GLib.test_subprocess">GLib.test_subprocess</a></span> (after calling
+<span class="link"><a href="GLib.test_init.html" title="GLib.test_init">GLib.test_init</a></span>) to see whether you are in a subprocess.</p>
+<p class="p">The following example tests that calling
+`my_object_new(1000000)` will abort with an error
+message.</p>
+<p class="p">|[&lt;!-- language="C" --&gt;
+  static void
+  test_create_large_object_subprocess (void)
+  {
+    if (g_test_subprocess ())
+      {
+        my_object_new (1000000);
+        return;
+      }</p>
+<p class="p">    // Reruns this same test in a subprocess
+    g_test_trap_subprocess (NULL, 0, 0);
+    g_test_trap_assert_failed ();
+    g_test_trap_assert_stderr ("*ERROR*too large*");
+  }</p>
+<p class="p">  int
+  main (int argc, char **argv)
+  {
+    g_test_init (&amp;argc, &amp;argv, NULL);</p>
+<p class="p">    g_test_add_func ("/myobject/create_large_object",
+                     test_create_large_object);
+    return g_test_run ();
+  }
+]|</p>
+<p class="p">Since 2.38</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">test_path</span></dt>
+<dd class="terms"><p class="p">Test to run in a subprocess</p></dd>
+<dt class="terms"><span class="code">usec_timeout</span></dt>
+<dd class="terms"><p class="p">Timeout for the subprocess test in micro seconds.</p></dd>
+<dt class="terms"><span class="code">test_flags</span></dt>
+<dd class="terms"><p class="p">Flags to modify subprocess behaviour.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="GLib">GLib</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

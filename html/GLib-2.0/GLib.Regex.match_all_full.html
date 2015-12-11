@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.Regex.prototype.match_all_full</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » <a class="trail" href="GLib.Regex.html" title="GLib.Regex">GLib.Regex</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.Regex.prototype.match_all_full</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function match_all_full(string: Array(String), start_position: Number(gint), match_options: <span class="link"><a href="GLib.RegexMatchFlags.html" title="GLib.RegexMatchFlags">GLib.RegexMatchFlags</a></span>): [ok: Boolean, match_info: <span class="link"><a href="GLib.MatchInfo.html" title="GLib.MatchInfo">GLib.MatchInfo</a></span>] {
+    // Gjs wrapper for g_regex_match_all_full()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Using the standard algorithm for regular expression matching only
+the longest match in the string is retrieved, it is not possible
+to obtain all the available matches. For instance matching
+"&lt;a&gt; &lt;b&gt; &lt;c&gt;" against the pattern "&lt;.*&gt;"
+you get "&lt;a&gt; &lt;b&gt; &lt;c&gt;".</p>
+<p class="p">This function uses a different algorithm (called DFA, i.e. deterministic
+finite automaton), so it can retrieve all the possible matches, all
+starting at the same point in the string. For instance matching
+"&lt;a&gt; &lt;b&gt; &lt;c&gt;" against the pattern "&lt;.*&gt;;"
+you would obtain three matches: "&lt;a&gt; &lt;b&gt; &lt;c&gt;",
+"&lt;a&gt; &lt;b&gt;" and "&lt;a&gt;".</p>
+<p class="p">The number of matched strings is retrieved using
+<span class="link"><a href="GLib.MatchInfo.get_match_count.html" title="GLib.MatchInfo.prototype.get_match_count">GLib.MatchInfo.prototype.get_match_count</a></span>. To obtain the matched strings and
+their position you can use, respectively, <span class="link"><a href="GLib.MatchInfo.fetch.html" title="GLib.MatchInfo.prototype.fetch">GLib.MatchInfo.prototype.fetch</a></span> and
+<span class="link"><a href="GLib.MatchInfo.fetch_pos.html" title="GLib.MatchInfo.prototype.fetch_pos">GLib.MatchInfo.prototype.fetch_pos</a></span>. Note that the strings are returned in
+reverse order of length; that is, the longest matching string is
+given first.</p>
+<p class="p">Note that the DFA algorithm is slower than the standard one and it
+is not able to capture substrings, so backreferences do not work.</p>
+<p class="p">Setting <span class="code">start_position</span> differs from just passing over a shortened
+string and setting #G_REGEX_MATCH_NOTBOL in the case of a pattern
+that begins with any kind of lookbehind assertion, such as "\b".</p>
+<p class="p">A <span class="link"><a href="GLib.MatchInfo.html" title="GLib.MatchInfo">GLib.MatchInfo</a></span> structure, used to get information on the match, is
+stored in <span class="code">match_info</span> if not <span class="code">null</span>. Note that if <span class="code">match_info</span> is
+not <span class="code">null</span> then it is created even if the function returns <span class="code">false</span>,
+i.e. you must free it regardless if regular expression actually
+matched.</p>
+<p class="p"><span class="code">string</span> is not copied and is used in <span class="link"><a href="GLib.MatchInfo.html" title="GLib.MatchInfo">GLib.MatchInfo</a></span> internally. If
+you use any <span class="link"><a href="GLib.MatchInfo.html" title="GLib.MatchInfo">GLib.MatchInfo</a></span> method (except <span class="link"><a href="GLib.MatchInfo.free.html" title="GLib.MatchInfo.prototype.free">GLib.MatchInfo.prototype.free</a></span>) after
+freeing or modifying <span class="code">string</span> then the behaviour is undefined.</p>
+<p class="p">Since 2.14</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">string</span></dt>
+<dd class="terms"><p class="p">the string to scan for matches</p></dd>
+<dt class="terms"><span class="code">start_position</span></dt>
+<dd class="terms"><p class="p">starting index of the string to match</p></dd>
+<dt class="terms"><span class="code">match_options</span></dt>
+<dd class="terms"><p class="p">match options</p></dd>
+<dt class="terms"><span class="code">ok</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> is the string matched, <span class="code">false</span> otherwise</p></dd>
+<dt class="terms"><span class="code">match_info</span></dt>
+<dd class="terms"><p class="p">pointer to location where to store
+    the <span class="link"><a href="GLib.MatchInfo.html" title="GLib.MatchInfo">GLib.MatchInfo</a></span>, or <span class="code">null</span> if you do not need it</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="GLib.Regex.html" title="GLib.Regex">GLib.Regex</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GObject.Object.prototype.connect</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GObject">GObject</a> » <a class="trail" href="GObject.Object.html" title="GObject.Object">GObject.Object</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GObject.Object.prototype.connect</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function connect(signal_name: String, handler: Function): Number(gint) {
+    // Gjs wrapper for g_signal_connect()
+}
+  </pre></div></div></div></div></div>
+<p class="p">
+    Connects <span class="code">handler</span> to <span class="code">signal_name</span> on the
+    object on which this method is invoked, and returns an integer ID
+    different than 0 that can be passed to <span class="link"><a href="GObject.Object.disconnect.html" title="GObject.Object.prototype.disconnect">GObject.Object.prototype.disconnect</a></span>
+  </p>
+<p class="p">
+    <span class="code">handler</span> must have the proper signature for <span class="code">signal_name</span>,
+    as described in the individual signal documentations, although this
+    is not checked until the signal is first emitted.
+  </p>
+<p class="p">
+    When the signal is emitted by the object implementation, <span class="code">handler</span>
+    will be invoked, with a null <span class="code">this</span> object and the emitting object
+    as the first argument always.
+  </p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">signal_name</span></dt>
+<dd class="terms"><p class="p">the signal to connect to</p></dd>
+<dt class="terms"><span class="code">handler</span></dt>
+<dd class="terms"><p class="p">the function handling the signal</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">the signal connection ID</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="GObject.Object.html" title="GObject.Object">GObject.Object</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

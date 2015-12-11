@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.DBusActionGroup.get</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.DBusActionGroup.html" title="Gio.DBusActionGroup">Gio.DBusActionGroup</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.DBusActionGroup.get</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function get(connection: <span class="link"><a href="Gio.DBusConnection.html" title="Gio.DBusConnection">Gio.DBusConnection</a></span>, bus_name: String, object_path: String): <span class="link"><a href="Gio.DBusActionGroup.html" title="Gio.DBusActionGroup">Gio.DBusActionGroup</a></span> {
+    // Gjs wrapper for g_dbus_action_group_get()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Obtains a <span class="link"><a href="Gio.DBusActionGroup.html" title="Gio.DBusActionGroup">Gio.DBusActionGroup</a></span> for the action group which is exported at
+the given <span class="code">bus_name</span> and <span class="code">object_path</span>.</p>
+<p class="p">The thread default main context is taken at the time of this call.
+All signals on the menu model (and any linked models) are reported
+with respect to this context.  All calls on the returned menu model
+(and linked models) must also originate from this same context, with
+the thread default main context unchanged.</p>
+<p class="p">This call is non-blocking.  The returned action group may or may not
+already be filled in.  The correct thing to do is connect the signals
+for the action group to monitor for changes and then to call
+<span class="link"><a href="Gio.ActionGroup.list_actions.html" title="Gio.ActionGroup.prototype.list_actions">Gio.ActionGroup.prototype.list_actions</a></span> to get the initial list.</p>
+<p class="p">Since 2.32</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">connection</span></dt>
+<dd class="terms"><p class="p">A <span class="link"><a href="Gio.DBusConnection.html" title="Gio.DBusConnection">Gio.DBusConnection</a></span></p></dd>
+<dt class="terms"><span class="code">bus_name</span></dt>
+<dd class="terms"><p class="p">the bus name which exports the action group</p></dd>
+<dt class="terms"><span class="code">object_path</span></dt>
+<dd class="terms"><p class="p">the object path at which the action group is exported</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="Gio.DBusActionGroup.html" title="Gio.DBusActionGroup">Gio.DBusActionGroup</a></span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.DBusActionGroup.html" title="Gio.DBusActionGroup">Gio.DBusActionGroup</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

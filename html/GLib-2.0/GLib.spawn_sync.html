@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>GLib.spawn_sync</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="GLib">GLib</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">GLib.spawn_sync</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function spawn_sync(working_directory: String, argv: Array(String), envp: Array(String), flags: <span class="link"><a href="GLib.SpawnFlags.html" title="GLib.SpawnFlags">GLib.SpawnFlags</a></span>, child_setup: <span class="link"><a href="GLib.SpawnChildSetupFunc.html" title="GLib.SpawnChildSetupFunc">GLib.SpawnChildSetupFunc</a></span>): [ok: Boolean, standard_output: ByteArray, standard_error: ByteArray, exit_status: Number(gint)] {
+    // Gjs wrapper for g_spawn_sync()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Executes a child synchronously (waits for the child to exit before returning).
+All output from the child is stored in <span class="code">standard_output</span> and <span class="code">standard_error</span>,
+if those parameters are non-<span class="code">null</span>. Note that you must set the
+<span class="link"><a href="GLib.SpawnFlags.html" title="GLib.SpawnFlags">GLib.SpawnFlags</a></span>.stdout_to_dev_null and <span class="link"><a href="GLib.SpawnFlags.html" title="GLib.SpawnFlags">GLib.SpawnFlags</a></span>.stderr_to_dev_null flags when
+passing <span class="code">null</span> for <span class="code">standard_output</span> and <span class="code">standard_error</span>.</p>
+<p class="p">If <span class="code">exit_status</span> is non-<span class="code">null</span>, the platform-specific exit status of
+the child is stored there; see the documentation of
+<span class="link"><a href="GLib.spawn_check_exit_status.html" title="GLib.spawn_check_exit_status">GLib.spawn_check_exit_status</a></span> for how to use and interpret this.
+Note that it is invalid to pass <span class="link"><a href="GLib.SpawnFlags.html" title="GLib.SpawnFlags">GLib.SpawnFlags</a></span>.do_not_reap_child in
+<span class="code">flags</span>.</p>
+<p class="p">If an error occurs, no data is returned in <span class="code">standard_output</span>,
+<span class="code">standard_error</span>, or <span class="code">exit_status</span>.</p>
+<p class="p">This function calls <span class="link"><a href="GLib.spawn_async_with_pipes.html" title="GLib.spawn_async_with_pipes">GLib.spawn_async_with_pipes</a></span> internally; see that
+function for full details on the other parameters and details on
+how these functions work on Windows.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">working_directory</span></dt>
+<dd class="terms"><p class="p">child's current working directory, or <span class="code">null</span> to inherit parent's</p></dd>
+<dt class="terms"><span class="code">argv</span></dt>
+<dd class="terms"><p class="p">child's argument vector</p></dd>
+<dt class="terms"><span class="code">envp</span></dt>
+<dd class="terms"><p class="p">child's environment, or <span class="code">null</span> to inherit parent's</p></dd>
+<dt class="terms"><span class="code">flags</span></dt>
+<dd class="terms"><p class="p">flags from <span class="link"><a href="GLib.SpawnFlags.html" title="GLib.SpawnFlags">GLib.SpawnFlags</a></span></p></dd>
+<dt class="terms"><span class="code">child_setup</span></dt>
+<dd class="terms"><p class="p">function to run in the child just before exec()</p></dd>
+<dt class="terms"><span class="code">ok</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> on success, <span class="code">false</span> if an error was set</p></dd>
+<dt class="terms"><span class="code">standard_output</span></dt>
+<dd class="terms"><p class="p">return location for child output, or <span class="code">null</span></p></dd>
+<dt class="terms"><span class="code">standard_error</span></dt>
+<dd class="terms"><p class="p">return location for child error messages, or <span class="code">null</span></p></dd>
+<dt class="terms"><span class="code">exit_status</span></dt>
+<dd class="terms"><p class="p">return location for child exit status, as returned by waitpid(), or <span class="code">null</span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="GLib">GLib</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

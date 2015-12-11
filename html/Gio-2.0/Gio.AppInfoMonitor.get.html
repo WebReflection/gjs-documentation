@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.AppInfoMonitor.get</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.AppInfoMonitor.html" title="Gio.AppInfoMonitor">Gio.AppInfoMonitor</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.AppInfoMonitor.get</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function get(): <span class="link"><a href="Gio.AppInfoMonitor.html" title="Gio.AppInfoMonitor">Gio.AppInfoMonitor</a></span> {
+    // Gjs wrapper for g_app_info_monitor_get()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Gets the <span class="link"><a href="Gio.AppInfoMonitor.html" title="Gio.AppInfoMonitor">Gio.AppInfoMonitor</a></span> for the current thread-default main
+context.</p>
+<p class="p">The <span class="link"><a href="Gio.AppInfoMonitor.html" title="Gio.AppInfoMonitor">Gio.AppInfoMonitor</a></span> will emit a "changed" signal in the
+thread-default main context whenever the list of installed
+applications (as reported by <span class="link"><a href="Gio.app_info_get_all.html" title="Gio.app_info_get_all">Gio.app_info_get_all</a></span>) may have changed.</p>
+<p class="p">You must only call <span class="link"><a href="../GObject-2.0/GObject.Object.unref.html" title="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</a></span> on the return value from under
+the same main context as you created it.</p>
+<p class="p">Since 2.40</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">a reference to a <span class="link"><a href="Gio.AppInfoMonitor.html" title="Gio.AppInfoMonitor">Gio.AppInfoMonitor</a></span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.AppInfoMonitor.html" title="Gio.AppInfoMonitor">Gio.AppInfoMonitor</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

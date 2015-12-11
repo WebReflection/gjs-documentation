@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.SimpleAction::change-state</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.SimpleAction.html" title="Gio.SimpleAction">Gio.SimpleAction</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.SimpleAction::change-state</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">connect('change-state', function (simpleAction, value: <span class="link"><a href="../GLib-2.0/GLib.Variant.html" title="../GLib-2.0/GLib.Variant.html">GLib.Variant</a></span>, ): void);
+  </pre></div></div></div></div></div>
+<p class="p">Indicates that the action just received a request to change its
+state.</p>
+<p class="p"><span class="code">value</span> will always be of the correct state type.  In the event that
+an incorrect type was given, no signal will be emitted.</p>
+<p class="p">If no handler is connected to this signal then the default
+behaviour is to call <span class="link"><a href="Gio.SimpleAction.set_state.html" title="Gio.SimpleAction.prototype.set_state">Gio.SimpleAction.prototype.set_state</a></span> to set the state
+to the requested value. If you connect a signal handler then no
+default action is taken. If the state should change then you must
+call <span class="link"><a href="Gio.SimpleAction.set_state.html" title="Gio.SimpleAction.prototype.set_state">Gio.SimpleAction.prototype.set_state</a></span> from the handler.</p>
+<p class="p">An example of a 'change-state' handler:
+|[&lt;!-- language="C" --&gt;
+static void
+change_volume_state (GSimpleAction *action,
+                     GVariant      *value,
+                     gpointer       user_data)
+{
+  gint requested;</p>
+<p class="p">  requested = g_variant_get_int32 (value);</p>
+<p class="p">  // Volume only goes from 0 to 10
+  if (0 &lt;= requested &amp;&amp; requested &lt;= 10)
+    g_simple_action_set_state (action, value);
+}
+]|</p>
+<p class="p">The handler need not set the state to the requested value.
+It could set it to any value at all, or take some other action.</p>
+<p class="p">Since 2.30</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">simpleAction</span></dt>
+<dd class="terms"><p class="p">instance of <span class="link"><a href="Gio.SimpleAction.html" title="Gio.SimpleAction">Gio.SimpleAction</a></span> that is emitting the signal</p></dd>
+<dt class="terms"><span class="code">value</span></dt>
+<dd class="terms"><p class="p">the requested value for the state</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.SimpleAction.html" title="Gio.SimpleAction">Gio.SimpleAction</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

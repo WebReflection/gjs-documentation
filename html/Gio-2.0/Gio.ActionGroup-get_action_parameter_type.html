@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.ActionGroup::get_action_parameter_type</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.ActionGroup.html" title="Gio.ActionGroup">Gio.ActionGroup</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.ActionGroup::get_action_parameter_type</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function vfunc_get_action_parameter_type(action_name: String): <span class="link"><a href="../GLib-2.0/GLib.VariantType.html" title="../GLib-2.0/GLib.VariantType.html">GLib.VariantType</a></span> {
+}
+  </pre></div></div></div></div></div>
+<p class="p">Queries the type of the parameter that must be given when activating
+the named action within <span class="code">action_group</span>.</p>
+<p class="p">When activating the action using <span class="link"><a href="Gio.ActionGroup.activate_action.html" title="Gio.ActionGroup.prototype.activate_action">Gio.ActionGroup.prototype.activate_action</a></span>,
+the <span class="link"><a href="../GLib-2.0/GLib.Variant.html" title="../GLib-2.0/GLib.Variant.html">GLib.Variant</a></span> given to that function must be of the type returned
+by this function.</p>
+<p class="p">In the case that this function returns <span class="code">null</span>, you must not give any
+<span class="link"><a href="../GLib-2.0/GLib.Variant.html" title="../GLib-2.0/GLib.Variant.html">GLib.Variant</a></span>, but <span class="code">null</span> instead.</p>
+<p class="p">The parameter type of a particular action will never change but it is
+possible for an action to be removed and for a new action to be added
+with the same name but a different parameter type.</p>
+<p class="p">Since 2.28</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">action_name</span></dt>
+<dd class="terms"><p class="p">the name of the action to query</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">the parameter type</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.ActionGroup.html" title="Gio.ActionGroup">Gio.ActionGroup</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

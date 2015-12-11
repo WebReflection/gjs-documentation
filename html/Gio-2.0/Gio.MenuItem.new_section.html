@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.MenuItem.new_section</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.MenuItem.html" title="Gio.MenuItem">Gio.MenuItem</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.MenuItem.new_section</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function new_section(label: String, section: <span class="link"><a href="Gio.MenuModel.html" title="Gio.MenuModel">Gio.MenuModel</a></span>): <span class="link"><a href="Gio.MenuItem.html" title="Gio.MenuItem">Gio.MenuItem</a></span> {
+    // Gjs wrapper for g_menu_item_new_section()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Creates a new <span class="link"><a href="Gio.MenuItem.html" title="Gio.MenuItem">Gio.MenuItem</a></span> representing a section.</p>
+<p class="p">This is a convenience API around <span class="link"><a href="Gio.MenuItem.new.html" title="Gio.MenuItem.new">Gio.MenuItem.new</a></span> and
+<span class="link"><a href="Gio.MenuItem.set_section.html" title="Gio.MenuItem.prototype.set_section">Gio.MenuItem.prototype.set_section</a></span>.</p>
+<p class="p">The effect of having one menu appear as a section of another is
+exactly as it sounds: the items from <span class="code">section</span> become a direct part of
+the menu that @menu_item is added to.</p>
+<p class="p">Visual separation is typically displayed between two non-empty
+sections.  If <span class="code">label</span> is non-<span class="code">null</span> then it will be encorporated into
+this visual indication.  This allows for labeled subsections of a
+menu.</p>
+<p class="p">As a simple example, consider a typical "Edit" menu from a simple
+program.  It probably contains an "Undo" and "Redo" item, followed by
+a separator, followed by "Cut", "Copy" and "Paste".</p>
+<p class="p">This would be accomplished by creating three <span class="link"><a href="Gio.Menu.html" title="Gio.Menu">Gio.Menu</a></span> instances.  The
+first would be populated with the "Undo" and "Redo" items, and the
+second with the "Cut", "Copy" and "Paste" items.  The first and
+second menus would then be added as submenus of the third.  In XML
+format, this would look something like the following:
+|[
+&lt;menu id='edit-menu'&gt;
+  &lt;section&gt;
+    &lt;item label='Undo'/&gt;
+    &lt;item label='Redo'/&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+    &lt;item label='Cut'/&gt;
+    &lt;item label='Copy'/&gt;
+    &lt;item label='Paste'/&gt;
+  &lt;/section&gt;
+&lt;/menu&gt;
+]|</p>
+<p class="p">The following example is exactly equivalent.  It is more illustrative
+of the exact relationship between the menus and items (keeping in
+mind that the 'link' element defines a new menu that is linked to the
+containing one).  The style of the second example is more verbose and
+difficult to read (and therefore not recommended except for the
+purpose of understanding what is really going on).
+|[
+&lt;menu id='edit-menu'&gt;
+  &lt;item&gt;
+    &lt;link name='section'&gt;
+      &lt;item label='Undo'/&gt;
+      &lt;item label='Redo'/&gt;
+    &lt;/link&gt;
+  &lt;/item&gt;
+  &lt;item&gt;
+    &lt;link name='section'&gt;
+      &lt;item label='Cut'/&gt;
+      &lt;item label='Copy'/&gt;
+      &lt;item label='Paste'/&gt;
+    &lt;/link&gt;
+  &lt;/item&gt;
+&lt;/menu&gt;
+]|</p>
+<p class="p">Since 2.32</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">label</span></dt>
+<dd class="terms"><p class="p">the section label, or <span class="code">null</span></p></dd>
+<dt class="terms"><span class="code">section</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="Gio.MenuModel.html" title="Gio.MenuModel">Gio.MenuModel</a></span> with the items of the section</p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">a new <span class="link"><a href="Gio.MenuItem.html" title="Gio.MenuItem">Gio.MenuItem</a></span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.MenuItem.html" title="Gio.MenuItem">Gio.MenuItem</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

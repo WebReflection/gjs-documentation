@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Gio.DBusConnection.new_for_address</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="Gio">Gio</a> » <a class="trail" href="Gio.DBusConnection.html" title="Gio.DBusConnection">Gio.DBusConnection</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">Gio.DBusConnection.new_for_address</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function new_for_address(address: String, flags: <span class="link"><a href="Gio.DBusConnectionFlags.html" title="Gio.DBusConnectionFlags">Gio.DBusConnectionFlags</a></span>, observer: <span class="link"><a href="Gio.DBusAuthObserver.html" title="Gio.DBusAuthObserver">Gio.DBusAuthObserver</a></span>, cancellable: <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span>, callback: <span class="link"><a href="Gio.AsyncReadyCallback.html" title="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</a></span>): void {
+    // Gjs wrapper for g_dbus_connection_new_for_address()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Asynchronously connects and sets up a D-Bus client connection for
+exchanging D-Bus messages with an endpoint specified by <span class="code">address</span>
+which must be in the D-Bus address format.</p>
+<p class="p">This constructor can only be used to initiate client-side
+connections - use <span class="link"><a href="Gio.DBusConnection.new.html" title="Gio.DBusConnection.new">Gio.DBusConnection.new</a></span> if you need to act as the
+server. In particular, <span class="code">flags</span> cannot contain the
+<span class="link"><a href="Gio.DBusConnectionFlags.html" title="Gio.DBusConnectionFlags">Gio.DBusConnectionFlags</a></span>.authentication_server or
+<span class="link"><a href="Gio.DBusConnectionFlags.html" title="Gio.DBusConnectionFlags">Gio.DBusConnectionFlags</a></span>.authentication_allow_anonymous flags.</p>
+<p class="p">When the operation is finished, <span class="code">callback</span> will be invoked. You can
+then call <span class="link"><a href="Gio.DBusConnection.new_finish.html" title="Gio.DBusConnection.new_finish">Gio.DBusConnection.new_finish</a></span> to get the result of the
+operation.</p>
+<p class="p">If <span class="code">observer</span> is not <span class="code">null</span> it may be used to control the
+authentication process.</p>
+<p class="p">This is a asynchronous failable constructor. See
+<span class="link"><a href="Gio.DBusConnection.new_for_address_sync.html" title="Gio.DBusConnection.new_for_address_sync">Gio.DBusConnection.new_for_address_sync</a></span> for the synchronous
+version.</p>
+<p class="p">Since 2.26</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">address</span></dt>
+<dd class="terms"><p class="p">a D-Bus address</p></dd>
+<dt class="terms"><span class="code">flags</span></dt>
+<dd class="terms"><p class="p">flags describing how to make the connection</p></dd>
+<dt class="terms"><span class="code">observer</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="Gio.DBusAuthObserver.html" title="Gio.DBusAuthObserver">Gio.DBusAuthObserver</a></span> or <span class="code">null</span></p></dd>
+<dt class="terms"><span class="code">cancellable</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span> or <span class="code">null</span></p></dd>
+<dt class="terms"><span class="code">callback</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="Gio.AsyncReadyCallback.html" title="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</a></span> to call when the request is satisfied</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="Gio.DBusConnection.html" title="Gio.DBusConnection">Gio.DBusConnection</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>
