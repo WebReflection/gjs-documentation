@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView.load_html"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_web_view_load_html</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>content</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>base_uri</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.WebView.prototype.load_html</title>
+  <synopsis><code mime="text/x-gjs">
+function load_html(content: String, base_uri: String): void {
+    // Gjs wrapper for webkit_web_view_load_html()
+}
+  </code></synopsis>
+  <p>Load the given <code>content</code> string with the specified <code>base_uri</code>.
+If <code>base_uri</code> is not <code>null</code>, relative URLs in the <code>content</code> will be
+resolved against <code>base_uri</code> and absolute local paths must be children of the <code>base_uri</code>.
+For security reasons absolute local paths that are not children of <code>base_uri</code>
+will cause the web process to terminate.
+If you need to include URLs in <code>content</code> that are local paths in a different
+directory than <code>base_uri</code> you can build a data URI for them. When <code>base_uri</code> is <code>null</code>,
+it defaults to "about:blank". The mime type of the document will be "text/html".
+You can monitor the load operation by connecting to <link xref="WebKit2.WebView-load-changed"/> signal.</p>
+
+<terms>
+<item>
+<title><code>content</code></title>
+  <p>The HTML string to load</p>
+</item>
+<item>
+<title><code>base_uri</code></title>
+  <p>The base URI for relative locations or <code>null</code></p>
+</item>
+</terms>
+
+</page>

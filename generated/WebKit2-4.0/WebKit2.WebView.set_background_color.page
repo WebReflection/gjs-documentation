@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView.set_background_color"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_web_view_set_background_color</api:name>
+      <api:arg>
+        <api:type>Gdk.RGBA</api:type>
+        <api:name>rgba</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.WebView.prototype.set_background_color</title>
+  <synopsis><code mime="text/x-gjs">
+function set_background_color(rgba: <link href="../Gdk-3.0/Gdk.RGBA.html">Gdk.RGBA</link>): void {
+    // Gjs wrapper for webkit_web_view_set_background_color()
+}
+  </code></synopsis>
+  <p>Sets the color that will be used to draw the <code>web_view</code> background before
+the actual contents are rendered. Note that if the web page loaded in <code>web_view</code>
+specifies a background color, it will take precedence over the <code>rgba</code> color.
+By default the <code>web_view</code> background color is opaque white.
+If the <code>rgba</code> color is not fully opaque, the parent window must have a RGBA visual and
+#GtkWidget:app-paintable property set to <code>true</code>, for the transparencies to work.</p>  <p>&lt;informalexample&gt;&lt;programlisting&gt;
+static void browser_window_set_background_color (BrowserWindow *window,
+                                                 const GdkRGBA *rgba)
+{
+    WebKitWebView *web_view;</p>  <p>    if (rgba-&gt;alpha &lt; 1) {
+        GdkScreen *screen = gtk_window_get_screen (GTK_WINDOW (window));
+        GdkVisual *rgba_visual = gdk_screen_get_rgba_visual (screen);</p>  <p>        if (!rgba_visual)
+             return;</p>  <p>        gtk_widget_set_visual (GTK_WIDGET (window), rgba_visual);
+        gtk_widget_set_app_paintable (GTK_WIDGET (window), TRUE);
+    }</p>  <p>    web_view = browser_window_get_web_view (window);
+    webkit_web_view_set_background_color (web_view, rgba);
+}
+&lt;/programlisting&gt;&lt;/informalexample&gt;</p>
+  <p>Since 2.8</p>
+<terms>
+<item>
+<title><code>rgba</code></title>
+  <p>a <link href="../Gdk-3.0/Gdk.RGBA.html">Gdk.RGBA</link></p>
+</item>
+</terms>
+
+</page>

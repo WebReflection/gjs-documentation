@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebContext.download_uri"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebContext" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>WebKit2.Download</api:type>
+      </api:returns>
+      <api:name>webkit_web_context_download_uri</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>uri</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.WebContext.prototype.download_uri</title>
+  <synopsis><code mime="text/x-gjs">
+function download_uri(uri: String): <link xref="WebKit2.Download">WebKit2.Download</link> {
+    // Gjs wrapper for webkit_web_context_download_uri()
+}
+  </code></synopsis>
+  <p>Requests downloading of the specified URI string. The download operation
+will not be associated to any <link xref="WebKit2.WebView"/>, if you are interested in
+starting a download from a particular <link xref="WebKit2.WebView"/> use
+<link xref="WebKit2.WebView.download_uri"/> instead.</p>
+
+<terms>
+<item>
+<title><code>uri</code></title>
+  <p>the URI to download</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a new <link xref="WebKit2.Download"/> representing the
+   the download operation.</p>
+</item>
+</terms>
+
+</page>

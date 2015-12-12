@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView-decide_policy"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="vfunc" type="guide"/>
+  </info>
+  <title>WebKit2.WebView::decide_policy</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_decide_policy(decision: <link xref="WebKit2.PolicyDecision">WebKit2.PolicyDecision</link>, type: <link xref="WebKit2.PolicyDecisionType">WebKit2.PolicyDecisionType</link>): Boolean {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>decision</code></title>
+
+</item>
+<item>
+<title><code>type</code></title>
+
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

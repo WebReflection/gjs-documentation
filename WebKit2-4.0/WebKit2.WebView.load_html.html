@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>WebKit2.WebView.prototype.load_html</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="WebKit2">WebKit2</a> » <a class="trail" href="WebKit2.WebView.html" title="WebKit2.WebView">WebKit2.WebView</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">WebKit2.WebView.prototype.load_html</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function load_html(content: String, base_uri: String): void {
+    // Gjs wrapper for webkit_web_view_load_html()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Load the given <span class="code">content</span> string with the specified <span class="code">base_uri</span>.
+If <span class="code">base_uri</span> is not <span class="code">null</span>, relative URLs in the <span class="code">content</span> will be
+resolved against <span class="code">base_uri</span> and absolute local paths must be children of the <span class="code">base_uri</span>.
+For security reasons absolute local paths that are not children of <span class="code">base_uri</span>
+will cause the web process to terminate.
+If you need to include URLs in <span class="code">content</span> that are local paths in a different
+directory than <span class="code">base_uri</span> you can build a data URI for them. When <span class="code">base_uri</span> is <span class="code">null</span>,
+it defaults to "about:blank". The mime type of the document will be "text/html".
+You can monitor the load operation by connecting to <span class="link"><a href="WebKit2.WebView-load-changed.html" title="WebKit2.WebView::load-changed">WebKit2.WebView::load-changed</a></span> signal.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">content</span></dt>
+<dd class="terms"><p class="p">The HTML string to load</p></dd>
+<dt class="terms"><span class="code">base_uri</span></dt>
+<dd class="terms"><p class="p">The base URI for relative locations or <span class="code">null</span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="WebKit2.WebView.html" title="WebKit2.WebView">WebKit2.WebView</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

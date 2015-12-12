@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="WebKit2.FaviconDatabase-favicon-changed"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.FaviconDatabase" group="signal" type="guide"/>
+    <title type="link" role="topic">favicon-changed</title>
+  </info>
+  <title>WebKit2.FaviconDatabase::favicon-changed</title>
+  <synopsis><code mime="text/x-gjs">
+connect('favicon-changed', function (faviconDatabase, page_uri: String, favicon_uri: String, ): void);
+  </code></synopsis>
+  <p>This signal is emitted when the favicon URI of <code>page_uri</code> has
+been changed to <code>favicon_uri</code> in the database. You can connect
+to this signal and call <link xref="WebKit2.FaviconDatabase.get_favicon"/>
+to get the favicon. If you are interested in the favicon of a
+<link xref="WebKit2.WebView"/> it's easier to use the <link xref="WebKit2.WebView-favicon"/>
+property. See <link xref="WebKit2.WebView.get_favicon"/> for more details.</p>
+
+<terms>
+<item>
+<title><code>faviconDatabase</code></title>
+<p>instance of <link xref="WebKit2.FaviconDatabase"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>page_uri</code></title>
+  <p>the URI of the Web page containing the icon</p>
+</item>
+<item>
+<title><code>favicon_uri</code></title>
+  <p>the URI of the favicon</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebContext.get_plugins_finish"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebContext" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(WebKit2.Plugin)</api:type>
+      </api:returns>
+      <api:name>webkit_web_context_get_plugins_finish</api:name>
+      <api:arg>
+        <api:type>Gio.AsyncResult</api:type>
+        <api:name>result</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.WebContext.prototype.get_plugins_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function get_plugins_finish(result: <link href="../Gio-2.0/Gio.AsyncResult.html">Gio.AsyncResult</link>): Array(<link xref="WebKit2.Plugin">WebKit2.Plugin</link>) {
+    // Gjs wrapper for webkit_web_context_get_plugins_finish()
+}
+  </code></synopsis>
+  <p>Finish an asynchronous operation started with webkit_web_context_get_plugins.</p>
+
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>a <link href="../Gio-2.0/Gio.AsyncResult.html">Gio.AsyncResult</link></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link href="../GLib-2.0/GLib.List.html">GLib.List</link> of <link xref="WebKit2.Plugin"/>. You must free the <link href="../GLib-2.0/GLib.List.html">GLib.List</link> with
+   g_list_free() and unref the <link xref="WebKit2.Plugin"/>&lt;!-- --&gt;s with g_object_unref() when you're done with them.</p>
+</item>
+</terms>
+
+</page>

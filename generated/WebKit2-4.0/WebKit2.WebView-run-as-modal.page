@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView-run-as-modal"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="signal" type="guide"/>
+    <title type="link" role="topic">run-as-modal</title>
+  </info>
+  <title>WebKit2.WebView::run-as-modal</title>
+  <synopsis><code mime="text/x-gjs">
+connect('run-as-modal', function (webView, ): void);
+  </code></synopsis>
+  <p>Emitted after <link xref="WebKit2.WebView-ready-to-show"/> on the newly
+created <link xref="WebKit2.WebView"/> when JavaScript code calls
+&lt;function&gt;window.showModalDialog&lt;/function&gt;. The purpose of
+this signal is to allow the client application to prepare the
+new view to behave as modal. Once the signal is emitted a new
+mainloop will be run to block user interaction in the parent
+<link xref="WebKit2.WebView"/> until the new dialog is closed.</p>
+
+<terms>
+<item>
+<title><code>webView</code></title>
+<p>instance of <link xref="WebKit2.WebView"/> that is emitting the signal</p>
+</item>
+</terms>
+
+</page>

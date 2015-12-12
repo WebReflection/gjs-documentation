@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView-is-loading"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="property" type="guide"/>
+    <title type="link" role="topic">is-loading</title>
+  </info>
+  <title>WebKit2.WebView.is_loading</title>
+  <synopsis><code mime="text/x-gjs">
+WebView.is_loading: Boolean (Read)
+  </code></synopsis>
+  <p>Whether the <link xref="WebKit2.WebView"/> is currently loading a page. This property becomes
+<code>true</code> as soon as a new load operation is requested and before the
+<link xref="WebKit2.WebView-load-changed"/> signal is emitted with <link xref="WebKit2.LoadEvent"/>.started and
+at that point the active URI is the requested one.
+When the load operation finishes the property is set to <code>false</code> before
+<link xref="WebKit2.WebView-load-changed"/> is emitted with <link xref="WebKit2.LoadEvent"/>.finished.</p>
+
+</page>

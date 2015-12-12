@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="WebKit2.FileChooserRequest.get_selected_files"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.FileChooserRequest" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(String)</api:type>
+      </api:returns>
+      <api:name>webkit_file_chooser_request_get_selected_files</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.FileChooserRequest.prototype.get_selected_files</title>
+  <synopsis><code mime="text/x-gjs">
+function get_selected_files(): Array(String) {
+    // Gjs wrapper for webkit_file_chooser_request_get_selected_files()
+}
+  </code></synopsis>
+  <p>Get the list of selected files currently associated to the
+request. Initially, the return value of this method contains any
+files selected in previous file chooser requests for this HTML
+input element. Once webkit_file_chooser_request_select_files, the
+value will reflect whatever files are given.</p>  <p>This function should normally be called only before presenting the
+file chooser dialog to the user, to decide whether to perform some
+extra action, like pre-selecting the files from a previous request.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a
+<code>null</code>-terminated array of strings if there are selected files
+associated with the request or <code>null</code> otherwise. This array and its
+contents are owned by WebKitGTK+ and should not be modified or
+freed.</p>
+</item>
+</terms>
+
+</page>

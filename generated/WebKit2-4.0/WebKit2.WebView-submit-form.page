@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView-submit-form"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="signal" type="guide"/>
+    <title type="link" role="topic">submit-form</title>
+  </info>
+  <title>WebKit2.WebView::submit-form</title>
+  <synopsis><code mime="text/x-gjs">
+connect('submit-form', function (webView, request: <link xref="WebKit2.FormSubmissionRequest">WebKit2.FormSubmissionRequest</link>, ): void);
+  </code></synopsis>
+  <p>This signal is emitted when a form is about to be submitted. The <code>request</code>
+argument passed contains information about the text fields of the form. This
+is typically used to store login information that can be used later to
+pre-fill the form.
+The form will not be submitted until <link xref="WebKit2.FormSubmissionRequest.submit"/> is called.</p>  <p>It is possible to handle the form submission request asynchronously, by
+simply calling g_object_ref() on the <code>request</code> argument and calling
+<link xref="WebKit2.FormSubmissionRequest.submit"/> when done to continue with the form submission.
+If the last reference is removed on a <link xref="WebKit2.FormSubmissionRequest"/> and the
+form has not been submitted, <link xref="WebKit2.FormSubmissionRequest.submit"/> will be called.</p>
+
+<terms>
+<item>
+<title><code>webView</code></title>
+<p>instance of <link xref="WebKit2.WebView"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>request</code></title>
+  <p>a <link xref="WebKit2.FormSubmissionRequest"/></p>
+</item>
+</terms>
+
+</page>

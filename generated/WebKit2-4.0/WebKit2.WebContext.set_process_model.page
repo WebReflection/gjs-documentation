@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebContext.set_process_model"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebContext" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_web_context_set_process_model</api:name>
+      <api:arg>
+        <api:type>WebKit2.ProcessModel</api:type>
+        <api:name>process_model</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.WebContext.prototype.set_process_model</title>
+  <synopsis><code mime="text/x-gjs">
+function set_process_model(process_model: <link xref="WebKit2.ProcessModel">WebKit2.ProcessModel</link>): void {
+    // Gjs wrapper for webkit_web_context_set_process_model()
+}
+  </code></synopsis>
+  <p>Specifies a process model for WebViews, which WebKit will use to
+determine how auxiliary processes are handled. The default setting
+(<link xref="WebKit2.ProcessModel"/>.shared_secondary_process) is suitable for most
+applications which embed a small amount of WebViews, or are used to
+display documents which are considered safe — like local files.</p>  <p>Applications which may potentially use a large amount of WebViews
+—for example a multi-tabbed web browser— may want to use
+<link xref="WebKit2.ProcessModel"/>.multiple_secondary_processes, which will use
+one process per view most of the time, while still allowing for web
+views to share a process when needed (for example when different
+views interact with each other). Using this model, when a process
+hangs or crashes, only the WebViews using it stop working, while
+the rest of the WebViews in the application will still function
+normally.</p>  <p>This method **must be called before any web process has been created**,
+as early as possible in your application. Calling it later will make
+your application crash.</p>
+  <p>Since 2.4</p>
+<terms>
+<item>
+<title><code>process_model</code></title>
+  <p>a <link xref="WebKit2.ProcessModel"/></p>
+</item>
+</terms>
+
+</page>

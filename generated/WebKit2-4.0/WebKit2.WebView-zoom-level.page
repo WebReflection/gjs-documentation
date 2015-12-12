@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView-zoom-level"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="property" type="guide"/>
+    <title type="link" role="topic">zoom-level</title>
+  </info>
+  <title>WebKit2.WebView.zoom_level</title>
+  <synopsis><code mime="text/x-gjs">
+WebView.zoom_level: Number(gdouble) (Read / Write)
+  </code></synopsis>
+  <p>The zoom level of the <link xref="WebKit2.WebView"/> content.
+See <link xref="WebKit2.WebView.set_zoom_level"/> for more details.</p>
+
+</page>

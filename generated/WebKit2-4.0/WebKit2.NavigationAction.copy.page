@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="WebKit2.NavigationAction.copy"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.NavigationAction" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>WebKit2.NavigationAction</api:type>
+      </api:returns>
+      <api:name>webkit_navigation_action_copy</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.NavigationAction.prototype.copy</title>
+  <synopsis><code mime="text/x-gjs">
+function copy(): <link xref="WebKit2.NavigationAction">WebKit2.NavigationAction</link> {
+    // Gjs wrapper for webkit_navigation_action_copy()
+}
+  </code></synopsis>
+  <p>Make a copy of <code>navigation</code>.</p>
+  <p>Since 2.6</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>A copy of passed in <link xref="WebKit2.NavigationAction"/></p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Settings-media-playback-allows-inline"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Settings" group="property" type="guide"/>
+    <title type="link" role="topic">media-playback-allows-inline</title>
+  </info>
+  <title>WebKit2.Settings.media_playback_allows_inline</title>
+  <synopsis><code mime="text/x-gjs">
+Settings.media_playback_allows_inline: Boolean (Read / Write / Construct)
+  </code></synopsis>
+  <p>Whether media playback is full-screen only or inline playback is allowed.
+This is <code>true</code> by default, so media playback can be inline. Setting it to
+<code>false</code> allows specifying that media playback should be always fullscreen.</p>
+
+</page>

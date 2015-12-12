@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView.run_javascript_from_gresource_finish"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>WebKit2.JavascriptResult</api:type>
+      </api:returns>
+      <api:name>webkit_web_view_run_javascript_from_gresource_finish</api:name>
+      <api:arg>
+        <api:type>Gio.AsyncResult</api:type>
+        <api:name>result</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.WebView.prototype.run_javascript_from_gresource_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function run_javascript_from_gresource_finish(result: <link href="../Gio-2.0/Gio.AsyncResult.html">Gio.AsyncResult</link>): <link xref="WebKit2.JavascriptResult">WebKit2.JavascriptResult</link> {
+    // Gjs wrapper for webkit_web_view_run_javascript_from_gresource_finish()
+}
+  </code></synopsis>
+  <p>Finish an asynchronous operation started with <link xref="WebKit2.WebView.run_javascript_from_gresource"/>.</p>  <p>Check <link xref="WebKit2.WebView.run_javascript_finish"/> for a usage example.</p>
+
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>a <link href="../Gio-2.0/Gio.AsyncResult.html">Gio.AsyncResult</link></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link xref="WebKit2.JavascriptResult"/> with the result of the last executed statement in @script
+   or <code>null</code> in case of error</p>
+</item>
+</terms>
+
+</page>

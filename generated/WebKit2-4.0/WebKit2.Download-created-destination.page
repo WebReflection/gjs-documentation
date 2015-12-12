@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Download-created-destination"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Download" group="signal" type="guide"/>
+    <title type="link" role="topic">created-destination</title>
+  </info>
+  <title>WebKit2.Download::created-destination</title>
+  <synopsis><code mime="text/x-gjs">
+connect('created-destination', function (download, destination: String, ): void);
+  </code></synopsis>
+  <p>This signal is emitted after <link xref="WebKit2.Download-decide-destination"/> and before
+<link xref="WebKit2.Download-received-data"/> to notify that destination file has been
+created successfully at <code>destination</code>.</p>
+
+<terms>
+<item>
+<title><code>download</code></title>
+<p>instance of <link xref="WebKit2.Download"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>destination</code></title>
+  <p>the destination URI</p>
+</item>
+</terms>
+
+</page>

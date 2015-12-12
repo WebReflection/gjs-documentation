@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Settings-enable-frame-flattening"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Settings" group="property" type="guide"/>
+    <title type="link" role="topic">enable-frame-flattening</title>
+  </info>
+  <title>WebKit2.Settings.enable_frame_flattening</title>
+  <synopsis><code mime="text/x-gjs">
+Settings.enable_frame_flattening: Boolean (Read / Write / Construct)
+  </code></synopsis>
+  <p>Whether to enable the frame flattening. With this setting each subframe is expanded
+to its contents, which will flatten all the frames to become one scrollable page.
+On touch devices scrollable subframes on a page can result in a confusing user experience.</p>
+
+</page>

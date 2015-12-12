@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="WebKit2.NavigationAction.get_navigation_type"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.NavigationAction" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>WebKit2.NavigationType</api:type>
+      </api:returns>
+      <api:name>webkit_navigation_action_get_navigation_type</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.NavigationAction.prototype.get_navigation_type</title>
+  <synopsis><code mime="text/x-gjs">
+function get_navigation_type(): <link xref="WebKit2.NavigationType">WebKit2.NavigationType</link> {
+    // Gjs wrapper for webkit_navigation_action_get_navigation_type()
+}
+  </code></synopsis>
+  <p>Return the type of action that triggered the navigation.</p>
+  <p>Since 2.6</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link xref="WebKit2.NavigationType"/></p>
+</item>
+</terms>
+
+</page>

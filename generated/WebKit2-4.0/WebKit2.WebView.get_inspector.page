@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView.get_inspector"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>WebKit2.WebInspector</api:type>
+      </api:returns>
+      <api:name>webkit_web_view_get_inspector</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.WebView.prototype.get_inspector</title>
+  <synopsis><code mime="text/x-gjs">
+function get_inspector(): <link xref="WebKit2.WebInspector">WebKit2.WebInspector</link> {
+    // Gjs wrapper for webkit_web_view_get_inspector()
+}
+  </code></synopsis>
+  <p>Get the <link xref="WebKit2.WebInspector"/> associated to <code>web_view</code></p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the <link xref="WebKit2.WebInspector"/> of <code>web_view</code></p>
+</item>
+</terms>
+
+</page>

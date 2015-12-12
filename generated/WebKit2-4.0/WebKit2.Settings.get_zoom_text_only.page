@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Settings.get_zoom_text_only"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Settings" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>webkit_settings_get_zoom_text_only</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.Settings.prototype.get_zoom_text_only</title>
+  <synopsis><code mime="text/x-gjs">
+function get_zoom_text_only(): Boolean {
+    // Gjs wrapper for webkit_settings_get_zoom_text_only()
+}
+  </code></synopsis>
+  <p>Get the <link xref="WebKit2.Settings-zoom-text-only"/> property.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> If zoom level of the view should only affect the text
+   or <code>false</code> if all view contents should be scaled.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebContext.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebContext" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>WebKit2.WebContext</api:type>
+      </api:returns>
+      <api:name>webkit_web_context_new</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.WebContext.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(): <link xref="WebKit2.WebContext">WebKit2.WebContext</link> {
+    // Gjs wrapper for webkit_web_context_new()
+}
+  </code></synopsis>
+  <p>Create a new <link xref="WebKit2.WebContext"/></p>
+  <p>Since 2.8</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a newly created <link xref="WebKit2.WebContext"/></p>
+</item>
+</terms>
+
+</page>

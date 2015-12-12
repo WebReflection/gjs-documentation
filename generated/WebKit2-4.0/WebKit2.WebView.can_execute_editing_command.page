@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView.can_execute_editing_command"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_web_view_can_execute_editing_command</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>command</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.AsyncReadyCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.WebView.prototype.can_execute_editing_command</title>
+  <synopsis><code mime="text/x-gjs">
+function can_execute_editing_command(command: String, cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>, callback: <link href="../Gio-2.0/Gio.AsyncReadyCallback.html">Gio.AsyncReadyCallback</link>): void {
+    // Gjs wrapper for webkit_web_view_can_execute_editing_command()
+}
+  </code></synopsis>
+  <p>Asynchronously execute the given editing command.</p>  <p>When the operation is finished, <code>callback</code> will be called. You can then call
+<link xref="WebKit2.WebView.can_execute_editing_command_finish"/> to get the result of the operation.</p>
+
+<terms>
+<item>
+<title><code>command</code></title>
+  <p>the command to check</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>a <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link> or <code>null</code> to ignore</p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>a <link href="../Gio-2.0/Gio.AsyncReadyCallback.html">Gio.AsyncReadyCallback</link> to call when the request is satisfied</p>
+</item>
+</terms>
+
+</page>

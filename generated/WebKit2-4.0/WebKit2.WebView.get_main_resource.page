@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView.get_main_resource"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>WebKit2.WebResource</api:type>
+      </api:returns>
+      <api:name>webkit_web_view_get_main_resource</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.WebView.prototype.get_main_resource</title>
+  <synopsis><code mime="text/x-gjs">
+function get_main_resource(): <link xref="WebKit2.WebResource">WebKit2.WebResource</link> {
+    // Gjs wrapper for webkit_web_view_get_main_resource()
+}
+  </code></synopsis>
+  <p>Return the main resource of <code>web_view</code>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the main <link xref="WebKit2.WebResource"/> of the view
+   or <code>null</code> if nothing has been loaded.</p>
+</item>
+</terms>
+
+</page>

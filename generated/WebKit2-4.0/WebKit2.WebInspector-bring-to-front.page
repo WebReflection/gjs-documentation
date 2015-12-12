@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebInspector-bring-to-front"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebInspector" group="signal" type="guide"/>
+    <title type="link" role="topic">bring-to-front</title>
+  </info>
+  <title>WebKit2.WebInspector::bring-to-front</title>
+  <synopsis><code mime="text/x-gjs">
+connect('bring-to-front', function (webInspector, ): Boolean);
+  </code></synopsis>
+  <p>Emitted when the inspector should be shown.</p>  <p>If the inspector is not attached the inspector window should be shown
+on top of any other windows.
+If the inspector is attached the inspector view should be made visible.
+For example, if the inspector view is attached using a tab in a browser
+window, the browser window should be raised and the tab containing the
+inspector view should be the active one.
+In both cases, if this signal is not handled, the default implementation
+calls gtk_window_present() on the current toplevel <link href="../Gtk-3.0/Gtk.Window.html">Gtk.Window</link> of the
+inspector view.</p>
+
+<terms>
+<item>
+<title><code>webInspector</code></title>
+<p>instance of <link xref="WebKit2.WebInspector"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> to stop other handlers from being invoked for the event.
+   <code>false</code> to propagate the event further.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView-resource-load-started"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="signal" type="guide"/>
+    <title type="link" role="topic">resource-load-started</title>
+  </info>
+  <title>WebKit2.WebView::resource-load-started</title>
+  <synopsis><code mime="text/x-gjs">
+connect('resource-load-started', function (webView, resource: <link xref="WebKit2.WebResource">WebKit2.WebResource</link>, request: <link xref="WebKit2.URIRequest">WebKit2.URIRequest</link>, ): void);
+  </code></synopsis>
+  <p>Emitted when a new resource is going to be loaded. The <code>request</code> parameter
+contains the <link xref="WebKit2.URIRequest"/> that will be sent to the server.
+You can monitor the load operation by connecting to the different signals
+of <code>resource</code>.</p>
+
+<terms>
+<item>
+<title><code>webView</code></title>
+<p>instance of <link xref="WebKit2.WebView"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>resource</code></title>
+  <p>a <link xref="WebKit2.WebResource"/></p>
+</item>
+<item>
+<title><code>request</code></title>
+  <p>a <link xref="WebKit2.URIRequest"/></p>
+</item>
+</terms>
+
+</page>

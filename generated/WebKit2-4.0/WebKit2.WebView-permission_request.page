@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView-permission_request"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="vfunc" type="guide"/>
+  </info>
+  <title>WebKit2.WebView::permission_request</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_permission_request(permission_request: <link xref="WebKit2.PermissionRequest">WebKit2.PermissionRequest</link>): Boolean {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>permission_request</code></title>
+
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

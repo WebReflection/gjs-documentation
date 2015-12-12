@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebInspector-detach"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebInspector" group="signal" type="guide"/>
+    <title type="link" role="topic">detach</title>
+  </info>
+  <title>WebKit2.WebInspector::detach</title>
+  <synopsis><code mime="text/x-gjs">
+connect('detach', function (webInspector, ): Boolean);
+  </code></synopsis>
+  <p>Emitted when the inspector is requested to be detached from the window
+it is currently attached to. The inspector is detached when the inspector page
+is about to be closed, and this signal is emitted right before
+<link xref="WebKit2.WebInspector-closed"/>, or when the user clicks on the detach button
+in the inspector view to show the inspector in a separate window. In this case
+the signal <link xref="WebKit2.WebInspector-open-window"/> is emitted after this one.</p>  <p>To prevent the inspector vew from being detached you can connect to this
+signal and simply return <code>true</code>.</p>
+
+<terms>
+<item>
+<title><code>webInspector</code></title>
+<p>instance of <link xref="WebKit2.WebInspector"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> to stop other handlers from being invoked for the event.
+   <code>false</code> to propagate the event further.</p>
+</item>
+</terms>
+
+</page>

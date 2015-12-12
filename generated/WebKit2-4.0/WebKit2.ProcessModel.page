@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="WebKit2.ProcessModel"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>WebKit2.ProcessModel</title>
+  <p>Enum values used for determining the <link xref="WebKit2.WebContext"/> process model.</p>
+  <p>Since 2.4</p>
+<terms>
+<item>
+<title><code>ProcessModel.SHARED_SECONDARY_PROCESS</code></title>
+  <p>Use a single process to
+  perform content rendering. The process is shared among all the
+  <link xref="WebKit2.WebView"/> instances created by the application: if the process
+  hangs or crashes all the web views in the application will be affected.
+  This is the default process model, and it should suffice for most cases.</p>
+</item>
+<item>
+<title><code>ProcessModel.MULTIPLE_SECONDARY_PROCESSES</code></title>
+  <p>Use one process
+  for each <link xref="WebKit2.WebView"/>, while still allowing for some of them to
+  share a process in certain situations. The main advantage
+  of this process model is that the rendering process for a web view
+  can crash while the rest of the views keep working normally. This
+  process model is indicated for applications which may use a number
+  of web views and the content of in each must not interfere with the
+  rest — for example a full-fledged web browser with support for
+  multiple tabs.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

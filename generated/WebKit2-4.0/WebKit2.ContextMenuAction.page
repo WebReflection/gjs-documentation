@@ -1,0 +1,202 @@
+<?xml version="1.0"?>
+<page id="WebKit2.ContextMenuAction"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>WebKit2.ContextMenuAction</title>
+  <p>Enum values used to denote the stock actions for
+<link xref="WebKit2.ContextMenuItem"/>&lt;!-- --&gt;s</p>
+
+<terms>
+<item>
+<title><code>ContextMenuAction.NO_ACTION</code></title>
+  <p>No action, used by separator menu items.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.OPEN_LINK</code></title>
+  <p>Open current link.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.OPEN_LINK_IN_NEW_WINDOW</code></title>
+  <p>Open current link in a new window.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.DOWNLOAD_LINK_TO_DISK</code></title>
+  <p>Download link destination.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.COPY_LINK_TO_CLIPBOARD</code></title>
+  <p>Copy link location to the clipboard.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.OPEN_IMAGE_IN_NEW_WINDOW</code></title>
+  <p>Open current image in a new window.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.DOWNLOAD_IMAGE_TO_DISK</code></title>
+  <p>Download current image.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.COPY_IMAGE_TO_CLIPBOARD</code></title>
+  <p>Copy current image to the clipboard.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.COPY_IMAGE_URL_TO_CLIPBOARD</code></title>
+  <p>Copy curent image location to the clipboard.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.OPEN_FRAME_IN_NEW_WINDOW</code></title>
+  <p>Open current frame in a new window.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.GO_BACK</code></title>
+  <p>Load the previous history item.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.GO_FORWARD</code></title>
+  <p>Load the next history item.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.STOP</code></title>
+  <p>Stop any ongoing loading operation.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.RELOAD</code></title>
+  <p>Reload the conents of current view.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.COPY</code></title>
+  <p>Copy current selection the clipboard.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.CUT</code></title>
+  <p>Cut current selection to the clipboard.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.PASTE</code></title>
+  <p>Paste clipboard contents.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.DELETE</code></title>
+  <p>Delete current selection.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.SELECT_ALL</code></title>
+  <p>Select all text.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.INPUT_METHODS</code></title>
+  <p>Input methods menu.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.UNICODE</code></title>
+  <p>Unicode menu.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.SPELLING_GUESS</code></title>
+  <p>A proposed replacement for a misspelled word.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.NO_GUESSES_FOUND</code></title>
+  <p>An indicator that spellchecking found no proposed replacements.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.IGNORE_SPELLING</code></title>
+  <p>Causes the spellchecker to ignore the word for this session.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.LEARN_SPELLING</code></title>
+  <p>Causes the spellchecker to add the word to the dictionary.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.IGNORE_GRAMMAR</code></title>
+  <p>Ignore grammar.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.FONT_MENU</code></title>
+  <p>Font options menu.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.BOLD</code></title>
+  <p>Bold.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.ITALIC</code></title>
+  <p>Italic.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.UNDERLINE</code></title>
+  <p>Underline.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.OUTLINE</code></title>
+  <p>Outline.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.INSPECT_ELEMENT</code></title>
+  <p>Open current element in the inspector.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.OPEN_VIDEO_IN_NEW_WINDOW</code></title>
+  <p>Open current video element in a new window.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.OPEN_AUDIO_IN_NEW_WINDOW</code></title>
+  <p>Open current audio element in a new window.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.COPY_VIDEO_LINK_TO_CLIPBOARD</code></title>
+  <p>Copy video link location in to the clipboard.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.COPY_AUDIO_LINK_TO_CLIPBOARD</code></title>
+  <p>Copy audio link location in to the clipboard.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.TOGGLE_MEDIA_CONTROLS</code></title>
+  <p>Enable or disable media controls.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.TOGGLE_MEDIA_LOOP</code></title>
+  <p>Enable or disable media loop.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.ENTER_VIDEO_FULLSCREEN</code></title>
+  <p>Show current video element in fullscreen mode.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.MEDIA_PLAY</code></title>
+  <p>Play current media element.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.MEDIA_PAUSE</code></title>
+  <p>Pause current media element.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.MEDIA_MUTE</code></title>
+  <p>Mute current media element.</p>
+</item>
+<item>
+<title><code>ContextMenuAction.DOWNLOAD_VIDEO_TO_DISK</code></title>
+  <p>Download video to disk. Since 2.2</p>
+</item>
+<item>
+<title><code>ContextMenuAction.DOWNLOAD_AUDIO_TO_DISK</code></title>
+  <p>Download audio to disk. Since 2.2</p>
+</item>
+<item>
+<title><code>ContextMenuAction.CUSTOM</code></title>
+  <p>Custom action defined by applications.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

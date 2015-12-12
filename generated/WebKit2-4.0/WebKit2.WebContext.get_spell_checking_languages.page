@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebContext.get_spell_checking_languages"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebContext" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(String)</api:type>
+      </api:returns>
+      <api:name>webkit_web_context_get_spell_checking_languages</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.WebContext.prototype.get_spell_checking_languages</title>
+  <synopsis><code mime="text/x-gjs">
+function get_spell_checking_languages(): Array(String) {
+    // Gjs wrapper for webkit_web_context_get_spell_checking_languages()
+}
+  </code></synopsis>
+  <p>Get the the list of spell checking languages associated with
+<code>context</code>, or <code>null</code> if no languages have been previously set.</p>  <p>See <link xref="WebKit2.WebContext.set_spell_checking_languages"/> for more
+details on the format of the languages in the list.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>A <code>null</code>-terminated
+   array of languages if available, or <code>null</code> otherwise.</p>
+</item>
+</terms>
+
+</page>

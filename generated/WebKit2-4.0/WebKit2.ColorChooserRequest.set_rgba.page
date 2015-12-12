@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="WebKit2.ColorChooserRequest.set_rgba"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.ColorChooserRequest" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_color_chooser_request_set_rgba</api:name>
+      <api:arg>
+        <api:type>Gdk.RGBA</api:type>
+        <api:name>rgba</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.ColorChooserRequest.prototype.set_rgba</title>
+  <synopsis><code mime="text/x-gjs">
+function set_rgba(rgba: <link href="../Gdk-3.0/Gdk.RGBA.html">Gdk.RGBA</link>): void {
+    // Gjs wrapper for webkit_color_chooser_request_set_rgba()
+}
+  </code></synopsis>
+  <p>Sets the current <link href="../Gdk-3.0/Gdk.RGBA.html">Gdk.RGBA</link> color of <code>request</code></p>
+  <p>Since 2.8</p>
+<terms>
+<item>
+<title><code>rgba</code></title>
+  <p>a pointer <link href="../Gdk-3.0/Gdk.RGBA.html">Gdk.RGBA</link></p>
+</item>
+</terms>
+
+</page>

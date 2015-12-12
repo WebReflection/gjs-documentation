@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<page id="WebKit2.FindOptions"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>WebKit2.FindOptions</title>
+  <p>Enum values used to specify search options.</p>
+
+<terms>
+<item>
+<title><code>FindOptions.NONE</code></title>
+  <p>no search flags, this means a case
+  sensitive, no wrap, forward only search.</p>
+</item>
+<item>
+<title><code>FindOptions.CASE_INSENSITIVE</code></title>
+  <p>case insensitive search.</p>
+</item>
+<item>
+<title><code>FindOptions.AT_WORD_STARTS</code></title>
+  <p>search text only at the
+  begining of the words.</p>
+</item>
+<item>
+<title><code>FindOptions.TREAT_MEDIAL_CAPITAL_AS_WORD_START</code></title>
+  <p>treat
+  capital letters in the middle of words as word start.</p>
+</item>
+<item>
+<title><code>FindOptions.BACKWARDS</code></title>
+  <p>search backwards.</p>
+</item>
+<item>
+<title><code>FindOptions.WRAP_AROUND</code></title>
+  <p>if not present search will stop
+  at the end of the document.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

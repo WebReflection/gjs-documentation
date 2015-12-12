@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebResource-finished"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebResource" group="signal" type="guide"/>
+    <title type="link" role="topic">finished</title>
+  </info>
+  <title>WebKit2.WebResource::finished</title>
+  <synopsis><code mime="text/x-gjs">
+connect('finished', function (webResource, ): void);
+  </code></synopsis>
+  <p>This signal is emitted when the resource load finishes successfully
+or due to an error. In case of errors <link xref="WebKit2.WebResource-failed"/> signal
+is emitted before this one.</p>
+
+<terms>
+<item>
+<title><code>webResource</code></title>
+<p>instance of <link xref="WebKit2.WebResource"/> that is emitting the signal</p>
+</item>
+</terms>
+
+</page>

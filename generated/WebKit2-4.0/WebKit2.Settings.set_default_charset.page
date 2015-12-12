@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Settings.set_default_charset"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Settings" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_settings_set_default_charset</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>default_charset</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.Settings.prototype.set_default_charset</title>
+  <synopsis><code mime="text/x-gjs">
+function set_default_charset(default_charset: String): void {
+    // Gjs wrapper for webkit_settings_set_default_charset()
+}
+  </code></synopsis>
+  <p>Set the <link xref="WebKit2.Settings-default-charset"/> property.</p>
+
+<terms>
+<item>
+<title><code>default_charset</code></title>
+  <p>default charset to be set</p>
+</item>
+</terms>
+
+</page>

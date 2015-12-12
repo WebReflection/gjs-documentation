@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Settings"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>WebKit2.Settings</title>
+  <synopsis><code>
+const WebKit2 = imports.gi.WebKit2;
+
+let settings = new WebKit2.Settings({
+    <link xref='WebKit2.Settings-allow-file-access-from-file-urls'>allow_file_access_from_file_urls</link>: value,
+    <link xref='WebKit2.Settings-allow-modal-dialogs'>allow_modal_dialogs</link>: value,
+    <link xref='WebKit2.Settings-auto-load-images'>auto_load_images</link>: value,
+    <link xref='WebKit2.Settings-cursive-font-family'>cursive_font_family</link>: value,
+    <link xref='WebKit2.Settings-default-charset'>default_charset</link>: value,
+    <link xref='WebKit2.Settings-default-font-family'>default_font_family</link>: value,
+    <link xref='WebKit2.Settings-default-font-size'>default_font_size</link>: value,
+    <link xref='WebKit2.Settings-default-monospace-font-size'>default_monospace_font_size</link>: value,
+    <link xref='WebKit2.Settings-draw-compositing-indicators'>draw_compositing_indicators</link>: value,
+    <link xref='WebKit2.Settings-enable-accelerated-2d-canvas'>enable_accelerated_2d_canvas</link>: value,
+    <link xref='WebKit2.Settings-enable-caret-browsing'>enable_caret_browsing</link>: value,
+    <link xref='WebKit2.Settings-enable-developer-extras'>enable_developer_extras</link>: value,
+    <link xref='WebKit2.Settings-enable-dns-prefetching'>enable_dns_prefetching</link>: value,
+    <link xref='WebKit2.Settings-enable-frame-flattening'>enable_frame_flattening</link>: value,
+    <link xref='WebKit2.Settings-enable-fullscreen'>enable_fullscreen</link>: value,
+    <link xref='WebKit2.Settings-enable-html5-database'>enable_html5_database</link>: value,
+    <link xref='WebKit2.Settings-enable-html5-local-storage'>enable_html5_local_storage</link>: value,
+    <link xref='WebKit2.Settings-enable-hyperlink-auditing'>enable_hyperlink_auditing</link>: value,
+    <link xref='WebKit2.Settings-enable-java'>enable_java</link>: value,
+    <link xref='WebKit2.Settings-enable-javascript'>enable_javascript</link>: value,
+    <link xref='WebKit2.Settings-enable-media-stream'>enable_media_stream</link>: value,
+    <link xref='WebKit2.Settings-enable-mediasource'>enable_mediasource</link>: value,
+    <link xref='WebKit2.Settings-enable-offline-web-application-cache'>enable_offline_web_application_cache</link>: value,
+    <link xref='WebKit2.Settings-enable-page-cache'>enable_page_cache</link>: value,
+    <link xref='WebKit2.Settings-enable-plugins'>enable_plugins</link>: value,
+    <link xref='WebKit2.Settings-enable-private-browsing'>enable_private_browsing</link>: value,
+    <link xref='WebKit2.Settings-enable-resizable-text-areas'>enable_resizable_text_areas</link>: value,
+    <link xref='WebKit2.Settings-enable-site-specific-quirks'>enable_site_specific_quirks</link>: value,
+    <link xref='WebKit2.Settings-enable-smooth-scrolling'>enable_smooth_scrolling</link>: value,
+    <link xref='WebKit2.Settings-enable-spatial-navigation'>enable_spatial_navigation</link>: value,
+    <link xref='WebKit2.Settings-enable-tabs-to-links'>enable_tabs_to_links</link>: value,
+    <link xref='WebKit2.Settings-enable-webaudio'>enable_webaudio</link>: value,
+    <link xref='WebKit2.Settings-enable-webgl'>enable_webgl</link>: value,
+    <link xref='WebKit2.Settings-enable-write-console-messages-to-stdout'>enable_write_console_messages_to_stdout</link>: value,
+    <link xref='WebKit2.Settings-enable-xss-auditor'>enable_xss_auditor</link>: value,
+    <link xref='WebKit2.Settings-fantasy-font-family'>fantasy_font_family</link>: value,
+    <link xref='WebKit2.Settings-javascript-can-access-clipboard'>javascript_can_access_clipboard</link>: value,
+    <link xref='WebKit2.Settings-javascript-can-open-windows-automatically'>javascript_can_open_windows_automatically</link>: value,
+    <link xref='WebKit2.Settings-load-icons-ignoring-image-load-setting'>load_icons_ignoring_image_load_setting</link>: value,
+    <link xref='WebKit2.Settings-media-playback-allows-inline'>media_playback_allows_inline</link>: value,
+    <link xref='WebKit2.Settings-media-playback-requires-user-gesture'>media_playback_requires_user_gesture</link>: value,
+    <link xref='WebKit2.Settings-minimum-font-size'>minimum_font_size</link>: value,
+    <link xref='WebKit2.Settings-monospace-font-family'>monospace_font_family</link>: value,
+    <link xref='WebKit2.Settings-pictograph-font-family'>pictograph_font_family</link>: value,
+    <link xref='WebKit2.Settings-print-backgrounds'>print_backgrounds</link>: value,
+    <link xref='WebKit2.Settings-sans-serif-font-family'>sans_serif_font_family</link>: value,
+    <link xref='WebKit2.Settings-serif-font-family'>serif_font_family</link>: value,
+    <link xref='WebKit2.Settings-user-agent'>user_agent</link>: value,
+    <link xref='WebKit2.Settings-zoom-text-only'>zoom_text_only</link>: value,
+});
+  </code></synopsis>
+
+
+  <synopsis>
+    <title>Hierarchy</title>
+    <tree>
+      <item>
+        <code>GObject.Object</code>
+      <item>
+        <code>WebKit2.Settings</code>
+      </item>
+      </item>
+    </tree>
+  </synopsis>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="property" style="linklist">
+    <title>Properties</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="signal" style="linklist">
+    <title>Signals</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="vfunc" style="linklist">
+    <title>Virtual functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

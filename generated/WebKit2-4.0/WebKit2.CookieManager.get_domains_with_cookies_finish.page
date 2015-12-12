@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<page id="WebKit2.CookieManager.get_domains_with_cookies_finish"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.CookieManager" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(String)</api:type>
+      </api:returns>
+      <api:name>webkit_cookie_manager_get_domains_with_cookies_finish</api:name>
+      <api:arg>
+        <api:type>Gio.AsyncResult</api:type>
+        <api:name>result</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.CookieManager.prototype.get_domains_with_cookies_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function get_domains_with_cookies_finish(result: <link href="../Gio-2.0/Gio.AsyncResult.html">Gio.AsyncResult</link>): Array(String) {
+    // Gjs wrapper for webkit_cookie_manager_get_domains_with_cookies_finish()
+}
+  </code></synopsis>
+  <p>Finish an asynchronous operation started with <link xref="WebKit2.CookieManager.get_domains_with_cookies"/>.
+The return value is a <code>null</code> terminated list of strings which should
+be released with g_strfreev().</p>
+
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>a <link href="../Gio-2.0/Gio.AsyncResult.html">Gio.AsyncResult</link></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>A <code>null</code> terminated array of domain names
+   or <code>null</code> in case of error.</p>
+</item>
+</terms>
+
+</page>

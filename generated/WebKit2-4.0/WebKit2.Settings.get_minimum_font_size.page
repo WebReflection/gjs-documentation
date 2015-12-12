@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Settings.get_minimum_font_size"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Settings" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(guint32)</api:type>
+      </api:returns>
+      <api:name>webkit_settings_get_minimum_font_size</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.Settings.prototype.get_minimum_font_size</title>
+  <synopsis><code mime="text/x-gjs">
+function get_minimum_font_size(): Number(guint32) {
+    // Gjs wrapper for webkit_settings_get_minimum_font_size()
+}
+  </code></synopsis>
+  <p>Gets the <link xref="WebKit2.Settings-minimum-font-size"/> property.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>Minimum font size.</p>
+</item>
+</terms>
+
+</page>

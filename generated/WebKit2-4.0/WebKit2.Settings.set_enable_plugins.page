@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Settings.set_enable_plugins"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Settings" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_settings_set_enable_plugins</api:name>
+      <api:arg>
+        <api:type>Boolean</api:type>
+        <api:name>enabled</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.Settings.prototype.set_enable_plugins</title>
+  <synopsis><code mime="text/x-gjs">
+function set_enable_plugins(enabled: Boolean): void {
+    // Gjs wrapper for webkit_settings_set_enable_plugins()
+}
+  </code></synopsis>
+  <p>Set the <link xref="WebKit2.Settings-enable-plugins"/> property.</p>
+
+<terms>
+<item>
+<title><code>enabled</code></title>
+  <p>Value to be set</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="WebKit2.PrintError"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>WebKit2.PrintError</title>
+  <p>Enum values used to denote the various print errors.</p>
+
+<terms>
+<item>
+<title><code>PrintError.GENERAL</code></title>
+  <p>Unspecified error during a print operation</p>
+</item>
+<item>
+<title><code>PrintError.PRINTER_NOT_FOUND</code></title>
+  <p>Selected printer cannot be found</p>
+</item>
+<item>
+<title><code>PrintError.INVALID_PAGE_RANGE</code></title>
+  <p>Invalid page range</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

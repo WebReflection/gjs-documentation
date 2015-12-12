@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<page id="WebKit2.NavigationPolicyDecision-modifiers"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.NavigationPolicyDecision" group="property" type="guide"/>
+    <title type="link" role="topic">modifiers</title>
+  </info>
+  <title>WebKit2.NavigationPolicyDecision.modifiers</title>
+  <synopsis><code mime="text/x-gjs">
+NavigationPolicyDecision.modifiers: Number(guint) (Read)
+  </code></synopsis>
+  <p>If the navigation associated with this policy decision was originally
+triggered by a mouse event, this property contains a bitmask of various
+<link href="../Gdk-3.0/Gdk.ModifierType.html">Gdk.ModifierType</link> values describing the modifiers used for that click.
+If the navigation was not triggered by a mouse event or no modifiers
+were active, the value of this property will be zero.</p>
+
+</page>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Download-estimated-progress"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Download" group="property" type="guide"/>
+    <title type="link" role="topic">estimated-progress</title>
+  </info>
+  <title>WebKit2.Download.estimated_progress</title>
+  <synopsis><code mime="text/x-gjs">
+Download.estimated_progress: Number(gdouble) (Read)
+  </code></synopsis>
+  <p>An estimate of the percent completion for the download operation.
+This value will range from 0.0 to 1.0. The value is an estimate
+based on the total number of bytes expected to be received for
+a download.
+If you need a more accurate progress information you can connect to
+<link xref="WebKit2.Download-received-data"/> signal to track the progress.</p>
+
+</page>

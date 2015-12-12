@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Download.get_web_view"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Download" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>WebKit2.WebView</api:type>
+      </api:returns>
+      <api:name>webkit_download_get_web_view</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.Download.prototype.get_web_view</title>
+  <synopsis><code mime="text/x-gjs">
+function get_web_view(): <link xref="WebKit2.WebView">WebKit2.WebView</link> {
+    // Gjs wrapper for webkit_download_get_web_view()
+}
+  </code></synopsis>
+  <p>Get the <link xref="WebKit2.WebView"/> that initiated the download.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the <link xref="WebKit2.WebView"/> that initiated <code>download</code>,
+   or <code>null</code> if <code>download</code> was not initiated by a <link xref="WebKit2.WebView"/>.</p>
+</item>
+</terms>
+
+</page>

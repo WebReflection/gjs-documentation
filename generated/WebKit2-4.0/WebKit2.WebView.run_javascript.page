@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView.run_javascript"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_web_view_run_javascript</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>script</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.AsyncReadyCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.WebView.prototype.run_javascript</title>
+  <synopsis><code mime="text/x-gjs">
+function run_javascript(script: String, cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>, callback: <link href="../Gio-2.0/Gio.AsyncReadyCallback.html">Gio.AsyncReadyCallback</link>): void {
+    // Gjs wrapper for webkit_web_view_run_javascript()
+}
+  </code></synopsis>
+  <p>Asynchronously run <code>script</code> in the context of the current page in <code>web_view</code>. If
+WebKitWebSettings:enable-javascript is FALSE, this method will do nothing.</p>  <p>When the operation is finished, <code>callback</code> will be called. You can then call
+<link xref="WebKit2.WebView.run_javascript_finish"/> to get the result of the operation.</p>
+
+<terms>
+<item>
+<title><code>script</code></title>
+  <p>the script to run</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>a <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link> or <code>null</code> to ignore</p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>a <link href="../Gio-2.0/Gio.AsyncReadyCallback.html">Gio.AsyncReadyCallback</link> to call when the script finished</p>
+</item>
+</terms>
+
+</page>

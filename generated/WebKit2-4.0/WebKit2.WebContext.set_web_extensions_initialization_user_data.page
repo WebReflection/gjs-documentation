@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebContext.set_web_extensions_initialization_user_data"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebContext" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_web_context_set_web_extensions_initialization_user_data</api:name>
+      <api:arg>
+        <api:type>GLib.Variant</api:type>
+        <api:name>user_data</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.WebContext.prototype.set_web_extensions_initialization_user_data</title>
+  <synopsis><code mime="text/x-gjs">
+function set_web_extensions_initialization_user_data(user_data: <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link>): void {
+    // Gjs wrapper for webkit_web_context_set_web_extensions_initialization_user_data()
+}
+  </code></synopsis>
+  <p>Set user data to be passed to Web Extensions on initialization.
+The data will be passed to the
+#WebKitWebExtensionInitializeWithUserDataFunction.
+This method must be called before loading anything in this context,
+otherwise it will not have any effect. You can connect to
+<link xref="WebKit2.WebContext-initialize-web-extensions"/> to call this method
+before anything is loaded.</p>
+  <p>Since 2.4</p>
+<terms>
+<item>
+<title><code>user_data</code></title>
+  <p>a <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link></p>
+</item>
+</terms>
+
+</page>

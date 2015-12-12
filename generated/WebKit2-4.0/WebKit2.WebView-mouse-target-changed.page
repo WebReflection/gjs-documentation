@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView-mouse-target-changed"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="signal" type="guide"/>
+    <title type="link" role="topic">mouse-target-changed</title>
+  </info>
+  <title>WebKit2.WebView::mouse-target-changed</title>
+  <synopsis><code mime="text/x-gjs">
+connect('mouse-target-changed', function (webView, hit_test_result: <link xref="WebKit2.HitTestResult">WebKit2.HitTestResult</link>, modifiers: Number(guint), ): void);
+  </code></synopsis>
+  <p>This signal is emitted when the mouse cursor moves over an
+element such as a link, image or a media element. To determine
+what type of element the mouse cursor is over, a Hit Test is performed
+on the current mouse coordinates and the result is passed in the
+<code>hit_test_result</code> argument. The <code>modifiers</code> argument is a bitmask of
+<link href="../Gdk-3.0/Gdk.ModifierType.html">Gdk.ModifierType</link> flags indicating the state of modifier keys.
+The signal is emitted again when the mouse is moved out of the
+current element with a new <code>hit_test_result</code>.</p>
+
+<terms>
+<item>
+<title><code>webView</code></title>
+<p>instance of <link xref="WebKit2.WebView"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>hit_test_result</code></title>
+  <p>a <link xref="WebKit2.HitTestResult"/></p>
+</item>
+<item>
+<title><code>modifiers</code></title>
+  <p>a bitmask of <link href="../Gdk-3.0/Gdk.ModifierType.html">Gdk.ModifierType</link></p>
+</item>
+</terms>
+
+</page>

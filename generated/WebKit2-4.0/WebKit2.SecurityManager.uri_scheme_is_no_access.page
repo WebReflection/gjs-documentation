@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="WebKit2.SecurityManager.uri_scheme_is_no_access"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.SecurityManager" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>webkit_security_manager_uri_scheme_is_no_access</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>scheme</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.SecurityManager.prototype.uri_scheme_is_no_access</title>
+  <synopsis><code mime="text/x-gjs">
+function uri_scheme_is_no_access(scheme: String): Boolean {
+    // Gjs wrapper for webkit_security_manager_uri_scheme_is_no_access()
+}
+  </code></synopsis>
+  <p>Whether <code>scheme</code> is considered as a no-access scheme.
+See also <link xref="WebKit2.SecurityManager.register_uri_scheme_as_no_access"/>.</p>
+
+<terms>
+<item>
+<title><code>scheme</code></title>
+  <p>a URI scheme</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if <code>scheme</code> is a no-access scheme or <code>false</code> otherwise.</p>
+</item>
+</terms>
+
+</page>

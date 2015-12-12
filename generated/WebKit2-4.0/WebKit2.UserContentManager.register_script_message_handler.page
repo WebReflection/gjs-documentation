@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<page id="WebKit2.UserContentManager.register_script_message_handler"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.UserContentManager" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>webkit_user_content_manager_register_script_message_handler</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>name</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.UserContentManager.prototype.register_script_message_handler</title>
+  <synopsis><code mime="text/x-gjs">
+function register_script_message_handler(name: String): Boolean {
+    // Gjs wrapper for webkit_user_content_manager_register_script_message_handler()
+}
+  </code></synopsis>
+  <p>Registers a new user script message handler. After it is registered,
+scripts can use `window.webkit.messageHandlers.&amp;lt;name&amp;gt;.postMessage(value)`
+to send messages. Those messages are received by connecting handlers
+to the <link xref="WebKit2.UserContentManager-script-message-received"/> signal. The
+handler name is used as the detail of the signal. To avoid race
+conditions between registering the handler name, and starting to
+receive the signals, it is recommended to connect to the signal
+*before* registering the handler name:</p>  <p>&lt;informalexample&gt;&lt;programlisting&gt;
+WebKitWebView *view = webkit_web_view_new ();
+WebKitUserContentManager *manager = webkit_web_view_get_user_content_manager ();
+g_signal_connect (manager, "script-message-received::foobar",
+                  G_CALLBACK (handle_script_message), NULL);
+webkit_user_content_manager_register_script_message_handler (manager, "foobar");
+&lt;/programlisting&gt;&lt;/informalexample&gt;</p>  <p>Registering a script message handler will fail if the requested
+name has been already registered before.</p>
+  <p>Since 2.8</p>
+<terms>
+<item>
+<title><code>name</code></title>
+  <p>Name of the script message channel</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if message handler was registered successfully, or <code>false</code> otherwise.</p>
+</item>
+</terms>
+
+</page>

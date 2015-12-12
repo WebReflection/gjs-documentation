@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView-related-view"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="property" type="guide"/>
+    <title type="link" role="topic">related-view</title>
+  </info>
+  <title>WebKit2.WebView.related_view</title>
+  <synopsis><code mime="text/x-gjs">
+WebView.related_view: <link xref="WebKit2.WebView">WebKit2.WebView</link> (Write / Construct Only)
+  </code></synopsis>
+  <p>The related <link xref="WebKit2.WebView"/> used when creating the view to share the
+same web process. This property is not readable because the related
+web view is only valid during the object construction.</p>
+  <p>Since 2.4</p>
+</page>

@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<page id="WebKit2.CookieManager.set_persistent_storage"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.CookieManager" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_cookie_manager_set_persistent_storage</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>filename</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>WebKit2.CookiePersistentStorage</api:type>
+        <api:name>storage</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.CookieManager.prototype.set_persistent_storage</title>
+  <synopsis><code mime="text/x-gjs">
+function set_persistent_storage(filename: String, storage: <link xref="WebKit2.CookiePersistentStorage">WebKit2.CookiePersistentStorage</link>): void {
+    // Gjs wrapper for webkit_cookie_manager_set_persistent_storage()
+}
+  </code></synopsis>
+  <p>Set the <code>filename</code> where non-session cookies are stored persistently using
+<code>storage</code> as the format to read/write the cookies.
+Cookies are initially read from <code>filename</code> to create an initial set of cookies.
+Then, non-session cookies will be written to <code>filename</code> when the WebKitCookieManager::changed
+signal is emitted.
+By default, <code>cookie_manager</code> doesn't store the cookies persistenly, so you need to call this
+method to keep cookies saved across sessions.</p>
+
+<terms>
+<item>
+<title><code>filename</code></title>
+  <p>the filename to read to/write from</p>
+</item>
+<item>
+<title><code>storage</code></title>
+  <p>a <link xref="WebKit2.CookiePersistentStorage"/></p>
+</item>
+</terms>
+
+</page>

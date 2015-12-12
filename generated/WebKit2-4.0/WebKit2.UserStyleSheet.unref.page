@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="WebKit2.UserStyleSheet.unref"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.UserStyleSheet" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_user_style_sheet_unref</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.UserStyleSheet.prototype.unref</title>
+  <synopsis><code mime="text/x-gjs">
+function unref(): void {
+    // Gjs wrapper for webkit_user_style_sheet_unref()
+}
+  </code></synopsis>
+  <p>Atomically decrements the reference count of <code>user_style_sheet</code> by one.
+If the reference count drops to 0, all memory allocated by
+<link xref="WebKit2.UserStyleSheet"/> is released. This function is MT-safe and may be
+called from any thread.</p>
+  <p>Since 2.6</p>
+
+</page>

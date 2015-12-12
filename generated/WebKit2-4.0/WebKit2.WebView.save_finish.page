@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView.save_finish"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gio.InputStream</api:type>
+      </api:returns>
+      <api:name>webkit_web_view_save_finish</api:name>
+      <api:arg>
+        <api:type>Gio.AsyncResult</api:type>
+        <api:name>result</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.WebView.prototype.save_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function save_finish(result: <link href="../Gio-2.0/Gio.AsyncResult.html">Gio.AsyncResult</link>): <link href="../Gio-2.0/Gio.InputStream.html">Gio.InputStream</link> {
+    // Gjs wrapper for webkit_web_view_save_finish()
+}
+  </code></synopsis>
+  <p>Finish an asynchronous operation started with <link xref="WebKit2.WebView.save"/>.</p>
+
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>a <link href="../Gio-2.0/Gio.AsyncResult.html">Gio.AsyncResult</link></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link href="../Gio-2.0/Gio.InputStream.html">Gio.InputStream</link> with the result of saving
+   the current web page or <code>null</code> in case of error.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView-decide-policy"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="signal" type="guide"/>
+    <title type="link" role="topic">decide-policy</title>
+  </info>
+  <title>WebKit2.WebView::decide-policy</title>
+  <synopsis><code mime="text/x-gjs">
+connect('decide-policy', function (webView, decision: <link xref="WebKit2.PolicyDecision">WebKit2.PolicyDecision</link>, decision_type: <link xref="WebKit2.PolicyDecisionType">WebKit2.PolicyDecisionType</link>, ): Boolean);
+  </code></synopsis>
+  <p>This signal is emitted when WebKit is requesting the client to decide a policy
+decision, such as whether to navigate to a page, open a new window or whether or
+not to download a resource. The <link xref="WebKit2.NavigationPolicyDecision"/> passed in the
+<code>decision</code> argument is a generic type, but should be casted to a more
+specific type when making the decision. For example:</p>  <p>&lt;informalexample&gt;&lt;programlisting&gt;
+static gboolean
+decide_policy_cb (WebKitWebView *web_view,
+                  WebKitPolicyDecision *decision,
+                  WebKitPolicyDecisionType type)
+{
+    switch (type) {
+    case WEBKIT_POLICY_DECISION_TYPE_NAVIGATION_ACTION:
+        WebKitNavigationPolicyDecision *navigation_decision = WEBKIT_NAVIGATION_POLICY_DECISION (decision);
+        /&lt;!-- --&gt;* Make a policy decision here. *&lt;!-- --&gt;/
+        break;
+    case WEBKIT_POLICY_DECISION_TYPE_NEW_WINDOW_ACTION:
+        WebKitNavigationPolicyDecision *navigation_decision = WEBKIT_NAVIGATION_POLICY_DECISION (decision);
+        /&lt;!-- --&gt;* Make a policy decision here. *&lt;!-- --&gt;/
+        break;
+    case WEBKIT_POLICY_DECISION_TYPE_RESPONSE:
+        WebKitResponsePolicyDecision *response = WEBKIT_RESPONSE_POLICY_DECISION (decision);
+        /&lt;!-- --&gt;* Make a policy decision here. *&lt;!-- --&gt;/
+        break;
+    default:
+        /&lt;!-- --&gt;* Making no decision results in <link xref="WebKit2.PolicyDecision.use"/>. *&lt;!-- --&gt;/
+        return FALSE;
+    }
+    return TRUE;
+}
+&lt;/programlisting&gt;&lt;/informalexample&gt;</p>  <p>It is possible to make policy decision asynchronously, by simply calling g_object_ref()
+on the <code>decision</code> argument and returning <code>true</code> to block the default signal handler.
+If the last reference is removed on a <link xref="WebKit2.PolicyDecision"/> and no decision has been
+made explicitly, <link xref="WebKit2.PolicyDecision.use"/> will be the default policy decision. The
+default signal handler will simply call <link xref="WebKit2.PolicyDecision.use"/>. Only the first
+policy decision chosen for a given <link xref="WebKit2.PolicyDecision"/> will have any affect.</p>
+
+<terms>
+<item>
+<title><code>webView</code></title>
+<p>instance of <link xref="WebKit2.WebView"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>decision</code></title>
+  <p>the <link xref="WebKit2.PolicyDecision"/></p>
+</item>
+<item>
+<title><code>decision_type</code></title>
+  <p>a <link xref="WebKit2.PolicyDecisionType"/> denoting the type of <code>decision</code></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> to stop other handlers from being invoked for the event.
+  <code>false</code> to propagate the event further.</p>
+</item>
+</terms>
+
+</page>

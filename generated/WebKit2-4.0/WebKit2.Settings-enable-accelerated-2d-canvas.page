@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Settings-enable-accelerated-2d-canvas"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Settings" group="property" type="guide"/>
+    <title type="link" role="topic">enable-accelerated-2d-canvas</title>
+  </info>
+  <title>WebKit2.Settings.enable_accelerated_2d_canvas</title>
+  <synopsis><code mime="text/x-gjs">
+Settings.enable_accelerated_2d_canvas: Boolean (Read / Write / Construct)
+  </code></synopsis>
+  <p>Enable or disable accelerated 2D canvas. Accelerated 2D canvas is only available
+if WebKitGTK+ was compiled with a version of Cairo including the unstable CairoGL API.
+When accelerated 2D canvas is enabled, WebKit may render some 2D canvas content
+using hardware accelerated drawing operations.</p>
+  <p>Since 2.2</p>
+</page>

@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebContext.set_favicon_database_directory"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebContext" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_web_context_set_favicon_database_directory</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>path</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.WebContext.prototype.set_favicon_database_directory</title>
+  <synopsis><code mime="text/x-gjs">
+function set_favicon_database_directory(path: String): void {
+    // Gjs wrapper for webkit_web_context_set_favicon_database_directory()
+}
+  </code></synopsis>
+  <p>Set the directory path to be used to store the favicons database
+for <code>context</code> on disk. Passing <code>null</code> as <code>path</code> means using the
+default directory for the platform (see g_get_user_data_dir()).</p>  <p>Calling this method also means enabling the favicons database for
+its use from the applications, so that's why it's expected to be
+called only once. Further calls for the same instance of
+<link xref="WebKit2.WebContext"/> won't cause any effect.</p>
+
+<terms>
+<item>
+<title><code>path</code></title>
+  <p>an absolute path to the icon database
+directory or <code>null</code> to use the defaults</p>
+</item>
+</terms>
+
+</page>

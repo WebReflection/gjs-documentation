@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page id="WebKit2.FileChooserRequest-filter"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.FileChooserRequest" group="property" type="guide"/>
+    <title type="link" role="topic">filter</title>
+  </info>
+  <title>WebKit2.FileChooserRequest.filter</title>
+  <synopsis><code mime="text/x-gjs">
+FileChooserRequest.filter: <link href="../Gtk-3.0/Gtk.FileFilter.html">Gtk.FileFilter</link> (Read)
+  </code></synopsis>
+  <p>The filter currently associated with the request. See
+<link xref="WebKit2.FileChooserRequest.get_mime_types_filter"/> for more
+details.</p>
+
+</page>

@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<page id="WebKit2.PrintOperation.run_dialog"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.PrintOperation" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>WebKit2.PrintOperationResponse</api:type>
+      </api:returns>
+      <api:name>webkit_print_operation_run_dialog</api:name>
+      <api:arg>
+        <api:type>Gtk.Window</api:type>
+        <api:name>parent</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.PrintOperation.prototype.run_dialog</title>
+  <synopsis><code mime="text/x-gjs">
+function run_dialog(parent: <link href="../Gtk-3.0/Gtk.Window.html">Gtk.Window</link>): <link xref="WebKit2.PrintOperationResponse">WebKit2.PrintOperationResponse</link> {
+    // Gjs wrapper for webkit_print_operation_run_dialog()
+}
+  </code></synopsis>
+  <p>Run the print dialog and start printing using the options selected by
+the user. This method returns when the print dialog is closed.
+If the print dialog is cancelled <link xref="WebKit2.PrintOperationResponse"/>.cancel
+is returned. If the user clicks on the print button, <link xref="WebKit2.PrintOperationResponse"/>.print
+is returned and the print operation starts. In this case, the <link xref="WebKit2.PrintOperation-finished"/>
+signal is emitted when the operation finishes. If an error occurs while printing, the signal
+<link xref="WebKit2.PrintOperation-failed"/> is emitted before <link xref="WebKit2.PrintOperation-finished"/>.
+If the print dialog is not cancelled current print settings and page setup of <code>print_operation</code>
+are updated with options selected by the user when Print button is pressed in print dialog.
+You can get the updated print settings and page setup by calling
+<link xref="WebKit2.PrintOperation.get_print_settings"/> and <link xref="WebKit2.PrintOperation.get_page_setup"/>
+after this method.</p>
+
+<terms>
+<item>
+<title><code>parent</code></title>
+  <p>transient parent of the print dialog</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the <link xref="WebKit2.PrintOperationResponse"/> of the print dialog</p>
+</item>
+</terms>
+
+</page>

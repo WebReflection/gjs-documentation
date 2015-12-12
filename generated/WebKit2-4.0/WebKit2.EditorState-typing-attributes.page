@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="WebKit2.EditorState-typing-attributes"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.EditorState" group="property" type="guide"/>
+    <title type="link" role="topic">typing-attributes</title>
+  </info>
+  <title>WebKit2.EditorState.typing_attributes</title>
+  <synopsis><code mime="text/x-gjs">
+EditorState.typing_attributes: Number(guint) (Read)
+  </code></synopsis>
+  <p>Bitmask of <link xref="WebKit2.EditorTypingAttributes"/> flags.
+See <link xref="WebKit2.EditorState.get_typing_attributes"/> for more information.</p>
+  <p>Since 2.10</p>
+</page>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="WebKit2.AuthenticationRequest.get_scheme"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.AuthenticationRequest" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>WebKit2.AuthenticationScheme</api:type>
+      </api:returns>
+      <api:name>webkit_authentication_request_get_scheme</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.AuthenticationRequest.prototype.get_scheme</title>
+  <synopsis><code mime="text/x-gjs">
+function get_scheme(): <link xref="WebKit2.AuthenticationScheme">WebKit2.AuthenticationScheme</link> {
+    // Gjs wrapper for webkit_authentication_request_get_scheme()
+}
+  </code></synopsis>
+  <p>Get the authentication scheme of the authentication challenge.</p>
+  <p>Since 2.2</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>The <link xref="WebKit2.AuthenticationScheme"/> of <code>request</code>.</p>
+</item>
+</terms>
+
+</page>

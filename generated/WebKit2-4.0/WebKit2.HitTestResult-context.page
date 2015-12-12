@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="WebKit2.HitTestResult-context"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.HitTestResult" group="property" type="guide"/>
+    <title type="link" role="topic">context</title>
+  </info>
+  <title>WebKit2.HitTestResult.context</title>
+  <synopsis><code mime="text/x-gjs">
+HitTestResult.context: Number(guint) (Read / Write / Construct Only)
+  </code></synopsis>
+  <p>Bitmask of <link xref="WebKit2.HitTestResultContext"/> flags representing
+the context of the <link xref="WebKit2.HitTestResult"/>.</p>
+
+</page>

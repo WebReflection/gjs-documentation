@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="WebKit2.UserStyleSheet.ref"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.UserStyleSheet" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>WebKit2.UserStyleSheet</api:type>
+      </api:returns>
+      <api:name>webkit_user_style_sheet_ref</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.UserStyleSheet.prototype.ref</title>
+  <synopsis><code mime="text/x-gjs">
+function ref(): <link xref="WebKit2.UserStyleSheet">WebKit2.UserStyleSheet</link> {
+    // Gjs wrapper for webkit_user_style_sheet_ref()
+}
+  </code></synopsis>
+  <p>Atomically increments the reference count of <code>user_style_sheet</code> by one.
+This function is MT-safe and may be called from any thread.</p>
+  <p>Since 2.6</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>The passed <link xref="WebKit2.UserStyleSheet"/></p>
+</item>
+</terms>
+
+</page>

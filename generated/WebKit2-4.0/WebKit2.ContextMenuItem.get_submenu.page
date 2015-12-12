@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="WebKit2.ContextMenuItem.get_submenu"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.ContextMenuItem" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>WebKit2.ContextMenu</api:type>
+      </api:returns>
+      <api:name>webkit_context_menu_item_get_submenu</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.ContextMenuItem.prototype.get_submenu</title>
+  <synopsis><code mime="text/x-gjs">
+function get_submenu(): <link xref="WebKit2.ContextMenu">WebKit2.ContextMenu</link> {
+    // Gjs wrapper for webkit_context_menu_item_get_submenu()
+}
+  </code></synopsis>
+  <p>Gets the submenu of <code>item</code>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the <link xref="WebKit2.ContextMenu"/> representing the submenu of
+   <code>item</code> or <code>null</code> if <code>item</code> doesn't have a submenu.</p>
+</item>
+</terms>
+
+</page>

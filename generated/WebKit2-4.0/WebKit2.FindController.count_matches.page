@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<page id="WebKit2.FindController.count_matches"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.FindController" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_find_controller_count_matches</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>search_text</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint32)</api:type>
+        <api:name>find_options</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(guint)</api:type>
+        <api:name>max_match_count</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.FindController.prototype.count_matches</title>
+  <synopsis><code mime="text/x-gjs">
+function count_matches(search_text: String, find_options: Number(guint32), max_match_count: Number(guint)): void {
+    // Gjs wrapper for webkit_find_controller_count_matches()
+}
+  </code></synopsis>
+  <p>Counts the number of matches for <code>search_text</code> found in the
+<link xref="WebKit2.WebView"/> with the provided <code>find_options</code>. The number of
+matches will be provided by the
+<link xref="WebKit2.FindController-counted-matches"/> signal.</p>
+
+<terms>
+<item>
+<title><code>search_text</code></title>
+  <p>the text to look for</p>
+</item>
+<item>
+<title><code>find_options</code></title>
+  <p>a bitmask with the <link xref="WebKit2.FindOptions"/> used in the search</p>
+</item>
+<item>
+<title><code>max_match_count</code></title>
+  <p>the maximum number of matches allowed in the search</p>
+</item>
+</terms>
+
+</page>

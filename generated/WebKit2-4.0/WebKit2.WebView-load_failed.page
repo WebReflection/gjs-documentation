@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView-load_failed"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="vfunc" type="guide"/>
+  </info>
+  <title>WebKit2.WebView::load_failed</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_load_failed(load_event: <link xref="WebKit2.LoadEvent">WebKit2.LoadEvent</link>, failing_uri: String, error: <link href="../GLib-2.0/GLib.Error.html">GLib.Error</link>): Boolean {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>load_event</code></title>
+
+</item>
+<item>
+<title><code>failing_uri</code></title>
+
+</item>
+<item>
+<title><code>error</code></title>
+
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

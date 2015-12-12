@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WindowProperties.get_statusbar_visible"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WindowProperties" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>webkit_window_properties_get_statusbar_visible</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.WindowProperties.prototype.get_statusbar_visible</title>
+  <synopsis><code mime="text/x-gjs">
+function get_statusbar_visible(): Boolean {
+    // Gjs wrapper for webkit_window_properties_get_statusbar_visible()
+}
+  </code></synopsis>
+  <p>Get whether the window should have the statusbar visible or not.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if statusbar should be visible or <code>false</code> otherwise.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Settings-enable-site-specific-quirks"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Settings" group="property" type="guide"/>
+    <title type="link" role="topic">enable-site-specific-quirks</title>
+  </info>
+  <title>WebKit2.Settings.enable_site_specific_quirks</title>
+  <synopsis><code mime="text/x-gjs">
+Settings.enable_site_specific_quirks: Boolean (Read / Write / Construct)
+  </code></synopsis>
+  <p>Whether to turn on site-specific quirks. Turning this on will
+tell WebKit to use some site-specific workarounds for
+better web compatibility. For example, older versions of
+MediaWiki will incorrectly send to WebKit a css file with KHTML
+workarounds. By turning on site-specific quirks, WebKit will
+special-case this and other cases to make some specific sites work.</p>
+
+</page>

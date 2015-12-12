@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="WebKit2.URIResponse-suggested-filename"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.URIResponse" group="property" type="guide"/>
+    <title type="link" role="topic">suggested-filename</title>
+  </info>
+  <title>WebKit2.URIResponse.suggested_filename</title>
+  <synopsis><code mime="text/x-gjs">
+URIResponse.suggested_filename: String (Read)
+  </code></synopsis>
+  <p>The suggested filename for the URI response.</p>
+
+</page>

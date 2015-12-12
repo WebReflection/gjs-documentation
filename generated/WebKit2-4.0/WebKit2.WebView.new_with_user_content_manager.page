@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView.new_with_user_content_manager"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gtk.Widget</api:type>
+      </api:returns>
+      <api:name>webkit_web_view_new_with_user_content_manager</api:name>
+      <api:arg>
+        <api:type>WebKit2.UserContentManager</api:type>
+        <api:name>user_content_manager</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.WebView.new_with_user_content_manager</title>
+  <synopsis><code mime="text/x-gjs">
+function new_with_user_content_manager(user_content_manager: <link xref="WebKit2.UserContentManager">WebKit2.UserContentManager</link>): <link href="../Gtk-3.0/Gtk.Widget.html">Gtk.Widget</link> {
+    // Gjs wrapper for webkit_web_view_new_with_user_content_manager()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="WebKit2.WebView"/> with the given <link xref="WebKit2.UserContentManager"/>.
+The content loaded in the view may be affected by the content injected
+in the view by the user content manager.</p>
+  <p>Since 2.6</p>
+<terms>
+<item>
+<title><code>user_content_manager</code></title>
+  <p>a <link xref="WebKit2.UserContentManager"/>.</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>The newly created <link xref="WebKit2.WebView"/> widget</p>
+</item>
+</terms>
+
+</page>

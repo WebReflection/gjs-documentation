@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebContext.new_with_website_data_manager"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebContext" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>WebKit2.WebContext</api:type>
+      </api:returns>
+      <api:name>webkit_web_context_new_with_website_data_manager</api:name>
+      <api:arg>
+        <api:type>WebKit2.WebsiteDataManager</api:type>
+        <api:name>manager</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.WebContext.new_with_website_data_manager</title>
+  <synopsis><code mime="text/x-gjs">
+function new_with_website_data_manager(manager: <link xref="WebKit2.WebsiteDataManager">WebKit2.WebsiteDataManager</link>): <link xref="WebKit2.WebContext">WebKit2.WebContext</link> {
+    // Gjs wrapper for webkit_web_context_new_with_website_data_manager()
+}
+  </code></synopsis>
+  <p>Create a new <link xref="WebKit2.WebContext"/> with a <link xref="WebKit2.WebsiteDataManager"/>.</p>
+  <p>Since 2.10</p>
+<terms>
+<item>
+<title><code>manager</code></title>
+  <p>a <link xref="WebKit2.WebsiteDataManager"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a newly created <link xref="WebKit2.WebContext"/></p>
+</item>
+</terms>
+
+</page>

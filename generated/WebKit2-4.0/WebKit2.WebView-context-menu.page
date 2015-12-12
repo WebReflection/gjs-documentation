@@ -1,0 +1,70 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView-context-menu"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="signal" type="guide"/>
+    <title type="link" role="topic">context-menu</title>
+  </info>
+  <title>WebKit2.WebView::context-menu</title>
+  <synopsis><code mime="text/x-gjs">
+connect('context-menu', function (webView, context_menu: <link xref="WebKit2.ContextMenu">WebKit2.ContextMenu</link>, event: <link href="../Gdk-3.0/Gdk.Event.html">Gdk.Event</link>, hit_test_result: <link xref="WebKit2.HitTestResult">WebKit2.HitTestResult</link>, ): Boolean);
+  </code></synopsis>
+  <p>Emmited when a context menu is about to be displayed to give the application
+a chance to customize the proposed menu, prevent the menu from being displayed
+or build its own context menu.
+&lt;itemizedlist&gt;
+&lt;listitem&gt;&lt;para&gt;
+ To customize the proposed menu you can use <link xref="WebKit2.ContextMenu.prepend"/>,
+ <link xref="WebKit2.ContextMenu.append"/> or <link xref="WebKit2.ContextMenu.insert"/> to add new
+ <link xref="WebKit2.ContextMenuItem"/>&lt;!-- --&gt;s to <code>context_menu</code>, <link xref="WebKit2.ContextMenu.move_item"/>
+ to reorder existing items, or <link xref="WebKit2.ContextMenu.remove"/> to remove an
+ existing item. The signal handler should return <code>false</code>, and the menu represented
+ by <code>context_menu</code> will be shown.
+&lt;/para&gt;&lt;/listitem&gt;
+&lt;listitem&gt;&lt;para&gt;
+ To prevent the menu from being displayed you can just connect to this signal
+ and return <code>true</code> so that the proposed menu will not be shown.
+&lt;/para&gt;&lt;/listitem&gt;
+&lt;listitem&gt;&lt;para&gt;
+ To build your own menu, you can remove all items from the proposed menu with
+ <link xref="WebKit2.ContextMenu.remove_all"/>, add your own items and return <code>false</code> so
+ that the menu will be shown. You can also ignore the proposed <link xref="WebKit2.ContextMenu"/>,
+ build your own <link href="../Gtk-3.0/Gtk.Menu.html">Gtk.Menu</link> and return <code>true</code> to prevent the proposed menu from being shown.
+&lt;/para&gt;&lt;/listitem&gt;
+&lt;listitem&gt;&lt;para&gt;
+ If you just want the default menu to be shown always, simply don't connect to this
+ signal because showing the proposed context menu is the default behaviour.
+&lt;/para&gt;&lt;/listitem&gt;
+&lt;/itemizedlist&gt;</p>  <p>If the signal handler returns <code>false</code> the context menu represented by <code>context_menu</code>
+will be shown, if it return <code>true</code> the context menu will not be shown.</p>  <p>The proposed <link xref="WebKit2.ContextMenu"/> passed in <code>context_menu</code> argument is only valid
+during the signal emission.</p>
+
+<terms>
+<item>
+<title><code>webView</code></title>
+<p>instance of <link xref="WebKit2.WebView"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>context_menu</code></title>
+  <p>the proposed <link xref="WebKit2.ContextMenu"/></p>
+</item>
+<item>
+<title><code>event</code></title>
+  <p>the <link href="../Gdk-3.0/Gdk.Event.html">Gdk.Event</link> that triggered the context menu</p>
+</item>
+<item>
+<title><code>hit_test_result</code></title>
+  <p>a <link xref="WebKit2.HitTestResult"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> to stop other handlers from being invoked for the event.
+   <code>false</code> to propagate the event further.</p>
+</item>
+</terms>
+
+</page>

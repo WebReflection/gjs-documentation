@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="WebKit2.EDITING_COMMAND_CREATE_LINK"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>WebKit2.EDITING_COMMAND_CREATE_LINK</title>
+  <p>The create link command. Creates a link elment thst is inserted at
+the current cursor position. If there's a selection, the selected text
+will be used as the link text, otherwise the URL itself will be used.
+It receives the link URL as argument. This command should be executed
+with <link xref="WebKit2.WebView.execute_editing_command_with_argument"/></p>
+  <p>Since 2.10</p>
+</page>

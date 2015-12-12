@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="WebKit2.UserContentManager.add_script"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.UserContentManager" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_user_content_manager_add_script</api:name>
+      <api:arg>
+        <api:type>WebKit2.UserScript</api:type>
+        <api:name>script</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.UserContentManager.prototype.add_script</title>
+  <synopsis><code mime="text/x-gjs">
+function add_script(script: <link xref="WebKit2.UserScript">WebKit2.UserScript</link>): void {
+    // Gjs wrapper for webkit_user_content_manager_add_script()
+}
+  </code></synopsis>
+  <p>Adds a <link xref="WebKit2.UserScript"/> to the given <link xref="WebKit2.UserContentManager"/>.
+The same <link xref="WebKit2.UserScript"/> can be reused with multiple
+<link xref="WebKit2.UserContentManager"/> instances.</p>
+  <p>Since 2.6</p>
+<terms>
+<item>
+<title><code>script</code></title>
+  <p>A <link xref="WebKit2.UserScript"/></p>
+</item>
+</terms>
+
+</page>

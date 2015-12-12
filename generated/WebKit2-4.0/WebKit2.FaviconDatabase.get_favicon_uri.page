@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="WebKit2.FaviconDatabase.get_favicon_uri"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.FaviconDatabase" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>webkit_favicon_database_get_favicon_uri</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>page_uri</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.FaviconDatabase.prototype.get_favicon_uri</title>
+  <synopsis><code mime="text/x-gjs">
+function get_favicon_uri(page_uri: String): String {
+    // Gjs wrapper for webkit_favicon_database_get_favicon_uri()
+}
+  </code></synopsis>
+  <p>Obtains the URI of the favicon for the given <code>page_uri</code>.</p>
+
+<terms>
+<item>
+<title><code>page_uri</code></title>
+  <p>URI of the page containing the icon</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a newly allocated URI for the favicon, or <code>null</code> if the
+database doesn't have a favicon for <code>page_uri</code>.</p>
+</item>
+</terms>
+
+</page>

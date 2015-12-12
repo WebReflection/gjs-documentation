@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Settings-enable-fullscreen"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Settings" group="property" type="guide"/>
+    <title type="link" role="topic">enable-fullscreen</title>
+  </info>
+  <title>WebKit2.Settings.enable_fullscreen</title>
+  <synopsis><code mime="text/x-gjs">
+Settings.enable_fullscreen: Boolean (Read / Write / Construct)
+  </code></synopsis>
+  <p>Whether to enable the Javascript Fullscreen API. The API
+allows any HTML element to request fullscreen display. See also
+the current draft of the spec:
+http://www.w3.org/TR/fullscreen/</p>
+
+</page>

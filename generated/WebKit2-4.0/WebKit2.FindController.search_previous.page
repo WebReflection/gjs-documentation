@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="WebKit2.FindController.search_previous"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.FindController" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_find_controller_search_previous</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.FindController.prototype.search_previous</title>
+  <synopsis><code mime="text/x-gjs">
+function search_previous(): void {
+    // Gjs wrapper for webkit_find_controller_search_previous()
+}
+  </code></synopsis>
+  <p>Looks for the previous occurrence of the search text.</p>  <p>Calling this method before <link xref="WebKit2.FindController.search"/> or
+<link xref="WebKit2.FindController.count_matches"/> is a programming error.</p>
+
+
+</page>

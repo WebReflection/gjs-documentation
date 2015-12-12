@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebsiteDataManager-local-storage-directory"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebsiteDataManager" group="property" type="guide"/>
+    <title type="link" role="topic">local-storage-directory</title>
+  </info>
+  <title>WebKit2.WebsiteDataManager.local_storage_directory</title>
+  <synopsis><code mime="text/x-gjs">
+WebsiteDataManager.local_storage_directory: String (Read / Write / Construct Only)
+  </code></synopsis>
+  <p>The directory where local storage data will be stored.</p>
+  <p>Since 2.10</p>
+</page>

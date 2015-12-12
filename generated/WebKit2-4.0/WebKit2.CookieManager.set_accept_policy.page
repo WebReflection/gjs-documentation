@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="WebKit2.CookieManager.set_accept_policy"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.CookieManager" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_cookie_manager_set_accept_policy</api:name>
+      <api:arg>
+        <api:type>WebKit2.CookieAcceptPolicy</api:type>
+        <api:name>policy</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.CookieManager.prototype.set_accept_policy</title>
+  <synopsis><code mime="text/x-gjs">
+function set_accept_policy(policy: <link xref="WebKit2.CookieAcceptPolicy">WebKit2.CookieAcceptPolicy</link>): void {
+    // Gjs wrapper for webkit_cookie_manager_set_accept_policy()
+}
+  </code></synopsis>
+  <p>Set the cookie acceptance policy of <code>cookie_manager</code> as <code>policy</code>.</p>
+
+<terms>
+<item>
+<title><code>policy</code></title>
+  <p>a <link xref="WebKit2.CookieAcceptPolicy"/></p>
+</item>
+</terms>
+
+</page>

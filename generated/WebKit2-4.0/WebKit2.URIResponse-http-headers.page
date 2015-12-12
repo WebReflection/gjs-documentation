@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="WebKit2.URIResponse-http-headers"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.URIResponse" group="property" type="guide"/>
+    <title type="link" role="topic">http-headers</title>
+  </info>
+  <title>WebKit2.URIResponse.http_headers</title>
+  <synopsis><code mime="text/x-gjs">
+URIResponse.http_headers: <link href="../Soup-2.4/Soup.MessageHeaders.html">Soup.MessageHeaders</link> (Read)
+  </code></synopsis>
+  <p>The HTTP headers of the response, or <code>null</code> if the response is not an HTTP response.</p>
+  <p>Since 2.6</p>
+</page>

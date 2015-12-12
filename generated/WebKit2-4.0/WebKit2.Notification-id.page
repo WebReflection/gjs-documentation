@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Notification-id"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Notification" group="property" type="guide"/>
+    <title type="link" role="topic">id</title>
+  </info>
+  <title>WebKit2.Notification.id</title>
+  <synopsis><code mime="text/x-gjs">
+Notification.id: Number(guint64) (Read)
+  </code></synopsis>
+  <p>The unique id for the notification.</p>
+  <p>Since 2.8</p>
+</page>

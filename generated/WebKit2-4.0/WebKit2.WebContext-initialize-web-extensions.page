@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebContext-initialize-web-extensions"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebContext" group="signal" type="guide"/>
+    <title type="link" role="topic">initialize-web-extensions</title>
+  </info>
+  <title>WebKit2.WebContext::initialize-web-extensions</title>
+  <synopsis><code mime="text/x-gjs">
+connect('initialize-web-extensions', function (webContext, ): void);
+  </code></synopsis>
+  <p>This signal is emitted when a new web process is about to be
+launched. It signals the most appropriate moment to use
+<link xref="WebKit2.WebContext.set_web_extensions_initialization_user_data"/>
+and <link xref="WebKit2.WebContext.set_web_extensions_directory"/>.</p>
+  <p>Since 2.4</p>
+<terms>
+<item>
+<title><code>webContext</code></title>
+<p>instance of <link xref="WebKit2.WebContext"/> that is emitting the signal</p>
+</item>
+</terms>
+
+</page>

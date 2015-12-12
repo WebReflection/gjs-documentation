@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="WebKit2.FindController-failed-to-find-text"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.FindController" group="signal" type="guide"/>
+    <title type="link" role="topic">failed-to-find-text</title>
+  </info>
+  <title>WebKit2.FindController::failed-to-find-text</title>
+  <synopsis><code mime="text/x-gjs">
+connect('failed-to-find-text', function (findController, ): void);
+  </code></synopsis>
+  <p>This signal is emitted when a search operation does not find
+any result for the given text. It will be issued if the text
+is not found asynchronously after a call to
+<link xref="WebKit2.FindController.search"/>, <link xref="WebKit2.FindController.search_next"/>
+or <link xref="WebKit2.FindController.search_previous"/>.</p>
+
+<terms>
+<item>
+<title><code>findController</code></title>
+<p>instance of <link xref="WebKit2.FindController"/> that is emitting the signal</p>
+</item>
+</terms>
+
+</page>

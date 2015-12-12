@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<page id="WebKit2.ContextMenuItem.new_from_stock_action_with_label"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.ContextMenuItem" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>WebKit2.ContextMenuItem</api:type>
+      </api:returns>
+      <api:name>webkit_context_menu_item_new_from_stock_action_with_label</api:name>
+      <api:arg>
+        <api:type>WebKit2.ContextMenuAction</api:type>
+        <api:name>action</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>label</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.ContextMenuItem.new_from_stock_action_with_label</title>
+  <synopsis><code mime="text/x-gjs">
+function new_from_stock_action_with_label(action: <link xref="WebKit2.ContextMenuAction">WebKit2.ContextMenuAction</link>, label: String): <link xref="WebKit2.ContextMenuItem">WebKit2.ContextMenuItem</link> {
+    // Gjs wrapper for webkit_context_menu_item_new_from_stock_action_with_label()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="WebKit2.ContextMenuItem"/> for the given stock action using the given <code>label</code>.
+Stock actions have a predefined label, this method can be used to create a
+<link xref="WebKit2.ContextMenuItem"/> for a <link xref="WebKit2.ContextMenuAction"/> but using a custom label.</p>
+
+<terms>
+<item>
+<title><code>action</code></title>
+  <p>a <link xref="WebKit2.ContextMenuAction"/> stock action</p>
+</item>
+<item>
+<title><code>label</code></title>
+  <p>a custom label text to use instead of the predefined one</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the newly created <link xref="WebKit2.ContextMenuItem"/> object.</p>
+</item>
+</terms>
+
+</page>

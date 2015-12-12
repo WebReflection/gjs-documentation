@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<page id="WebKit2.PolicyDecisionType"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>WebKit2.PolicyDecisionType</title>
+  <p>Enum values used for determining the type of a policy decision during
+<link xref="WebKit2.WebView-decide-policy"/>.</p>
+
+<terms>
+<item>
+<title><code>PolicyDecisionType.NAVIGATION_ACTION</code></title>
+  <p>This type of policy decision
+  is requested when WebKit is about to navigate to a new page in either the
+  main frame or a subframe. Acceptable policy decisions are either
+  <link xref="WebKit2.PolicyDecision.use"/> or <link xref="WebKit2.PolicyDecision.ignore"/>. This
+  type of policy decision is always a <link xref="WebKit2.NavigationPolicyDecision"/>.</p>
+</item>
+<item>
+<title><code>PolicyDecisionType.NEW_WINDOW_ACTION</code></title>
+  <p>This type of policy decision
+  is requested when WebKit is about to create a new window. Acceptable policy
+  decisions are either <link xref="WebKit2.PolicyDecision.use"/> or
+  <link xref="WebKit2.PolicyDecision.ignore"/>. This type of policy decision is always
+  a <link xref="WebKit2.NavigationPolicyDecision"/>. These decisions are useful for implementing
+  special actions for new windows, such as forcing the new window to open
+  in a tab when a keyboard modifier is active or handling a special
+  target attribute on &amp;lt;a&amp;gt; elements.</p>
+</item>
+<item>
+<title><code>PolicyDecisionType.RESPONSE</code></title>
+  <p>This type of decision is used when WebKit has
+  received a response for a network resource and is about to start the load.
+  Note that these resources include all subresources of a page such as images
+  and stylesheets as well as main documents. Appropriate policy responses to
+  this decision are <link xref="WebKit2.PolicyDecision.use"/>, <link xref="WebKit2.PolicyDecision.ignore"/>,
+  or <link xref="WebKit2.PolicyDecision.download"/>. This type of policy decision is always
+  a <link xref="WebKit2.ResponsePolicyDecision"/>. This decision is useful for forcing
+  some types of resources to be downloaded rather than rendered in the WebView
+  or to block the transfer of resources entirely.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

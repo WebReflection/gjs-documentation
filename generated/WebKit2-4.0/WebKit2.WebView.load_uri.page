@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView.load_uri"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_web_view_load_uri</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>uri</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.WebView.prototype.load_uri</title>
+  <synopsis><code mime="text/x-gjs">
+function load_uri(uri: String): void {
+    // Gjs wrapper for webkit_web_view_load_uri()
+}
+  </code></synopsis>
+  <p>Requests loading of the specified URI string.
+You can monitor the load operation by connecting to
+<link xref="WebKit2.WebView-load-changed"/> signal.</p>
+
+<terms>
+<item>
+<title><code>uri</code></title>
+  <p>an URI string</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView-print"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="signal" type="guide"/>
+    <title type="link" role="topic">print</title>
+  </info>
+  <title>WebKit2.WebView::print</title>
+  <synopsis><code mime="text/x-gjs">
+connect('print', function (webView, print_operation: <link xref="WebKit2.PrintOperation">WebKit2.PrintOperation</link>, ): Boolean);
+  </code></synopsis>
+  <p>Emitted when printing is requested on @web_view, usually by a javascript call,
+before the print dialog is shown. This signal can be used to set the initial
+print settings and page setup of <code>print_operation</code> to be used as default values in
+the print dialog. You can call <link xref="WebKit2.PrintOperation.set_print_settings"/> and
+<link xref="WebKit2.PrintOperation.set_page_setup"/> and then return <code>false</code> to propagate the
+event so that the print dialog is shown.</p>  <p>You can connect to this signal and return <code>true</code> to cancel the print operation
+or implement your own print dialog.</p>
+
+<terms>
+<item>
+<title><code>webView</code></title>
+<p>instance of <link xref="WebKit2.WebView"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>print_operation</code></title>
+  <p>the <link xref="WebKit2.PrintOperation"/> that will handle the print request</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> to stop other handlers from being invoked for the event.
+   <code>false</code> to propagate the event further.</p>
+</item>
+</terms>
+
+</page>

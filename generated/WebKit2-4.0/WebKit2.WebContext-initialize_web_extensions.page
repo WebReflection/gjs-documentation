@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebContext-initialize_web_extensions"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebContext" group="vfunc" type="guide"/>
+  </info>
+  <title>WebKit2.WebContext::initialize_web_extensions</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_initialize_web_extensions(): void {
+}
+  </code></synopsis>
+
+
+<terms>
+</terms>
+
+</page>

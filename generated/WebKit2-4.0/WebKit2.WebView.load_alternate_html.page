@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView.load_alternate_html"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_web_view_load_alternate_html</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>content</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>content_uri</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>base_uri</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.WebView.prototype.load_alternate_html</title>
+  <synopsis><code mime="text/x-gjs">
+function load_alternate_html(content: String, content_uri: String, base_uri: String): void {
+    // Gjs wrapper for webkit_web_view_load_alternate_html()
+}
+  </code></synopsis>
+  <p>Load the given <code>content</code> string for the URI <code>content_uri</code>.
+This allows clients to display page-loading errors in the <link xref="WebKit2.WebView"/> itself.
+When this method is called from <link xref="WebKit2.WebView-load-failed"/> signal to show an
+error page, the the back-forward list is maintained appropriately.
+For everything else this method works the same way as <link xref="WebKit2.WebView.load_html"/>.</p>
+
+<terms>
+<item>
+<title><code>content</code></title>
+  <p>the new content to display as the main page of the <code>web_view</code></p>
+</item>
+<item>
+<title><code>content_uri</code></title>
+  <p>the URI for the alternate page content</p>
+</item>
+<item>
+<title><code>base_uri</code></title>
+  <p>the base URI for relative locations or <code>null</code></p>
+</item>
+</terms>
+
+</page>

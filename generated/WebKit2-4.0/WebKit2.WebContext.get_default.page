@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebContext.get_default"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebContext" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>WebKit2.WebContext</api:type>
+      </api:returns>
+      <api:name>webkit_web_context_get_default</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.WebContext.get_default</title>
+  <synopsis><code mime="text/x-gjs">
+function get_default(): <link xref="WebKit2.WebContext">WebKit2.WebContext</link> {
+    // Gjs wrapper for webkit_web_context_get_default()
+}
+  </code></synopsis>
+  <p>Gets the default web context</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link xref="WebKit2.WebContext"/></p>
+</item>
+</terms>
+
+</page>

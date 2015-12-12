@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="WebKit2.ContextMenu.remove"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.ContextMenu" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_context_menu_remove</api:name>
+      <api:arg>
+        <api:type>WebKit2.ContextMenuItem</api:type>
+        <api:name>item</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.ContextMenu.prototype.remove</title>
+  <synopsis><code mime="text/x-gjs">
+function remove(item: <link xref="WebKit2.ContextMenuItem">WebKit2.ContextMenuItem</link>): void {
+    // Gjs wrapper for webkit_context_menu_remove()
+}
+  </code></synopsis>
+  <p>Removes <code>item</code> from the <code>menu</code>.
+See also <link xref="WebKit2.ContextMenu.remove_all"/> to remove all items.</p>
+
+<terms>
+<item>
+<title><code>item</code></title>
+  <p>the <link xref="WebKit2.ContextMenuItem"/> to remove</p>
+</item>
+</terms>
+
+</page>

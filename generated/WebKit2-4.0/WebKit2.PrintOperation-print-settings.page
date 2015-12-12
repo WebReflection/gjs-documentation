@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="WebKit2.PrintOperation-print-settings"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.PrintOperation" group="property" type="guide"/>
+    <title type="link" role="topic">print-settings</title>
+  </info>
+  <title>WebKit2.PrintOperation.print_settings</title>
+  <synopsis><code mime="text/x-gjs">
+PrintOperation.print_settings: <link href="../Gtk-3.0/Gtk.PrintSettings.html">Gtk.PrintSettings</link> (Read / Write)
+  </code></synopsis>
+  <p>The initial <link href="../Gtk-3.0/Gtk.PrintSettings.html">Gtk.PrintSettings</link> for the print operation.</p>
+
+</page>

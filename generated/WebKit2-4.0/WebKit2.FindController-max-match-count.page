@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="WebKit2.FindController-max-match-count"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.FindController" group="property" type="guide"/>
+    <title type="link" role="topic">max-match-count</title>
+  </info>
+  <title>WebKit2.FindController.max_match_count</title>
+  <synopsis><code mime="text/x-gjs">
+FindController.max_match_count: Number(guint) (Read)
+  </code></synopsis>
+  <p>The maximum number of matches to report for a given search.</p>
+
+</page>

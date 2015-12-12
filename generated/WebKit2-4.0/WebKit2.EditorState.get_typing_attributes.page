@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="WebKit2.EditorState.get_typing_attributes"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.EditorState" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(guint)</api:type>
+      </api:returns>
+      <api:name>webkit_editor_state_get_typing_attributes</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.EditorState.prototype.get_typing_attributes</title>
+  <synopsis><code mime="text/x-gjs">
+function get_typing_attributes(): Number(guint) {
+    // Gjs wrapper for webkit_editor_state_get_typing_attributes()
+}
+  </code></synopsis>
+  <p>Gets the typing attributes at the current cursor position.
+If there is a selection, this returns the typing attributes
+of the the selected text. Note that in case of a selection,
+typing attributes are considered active only when they are
+present throughout the selection.</p>
+  <p>Since 2.10</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a bitmask of <link xref="WebKit2.EditorTypingAttributes"/> flags</p>
+</item>
+</terms>
+
+</page>

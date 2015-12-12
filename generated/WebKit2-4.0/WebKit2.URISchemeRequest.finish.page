@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<page id="WebKit2.URISchemeRequest.finish"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.URISchemeRequest" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_uri_scheme_request_finish</api:name>
+      <api:arg>
+        <api:type>Gio.InputStream</api:type>
+        <api:name>stream</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint64)</api:type>
+        <api:name>stream_length</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>mime_type</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.URISchemeRequest.prototype.finish</title>
+  <synopsis><code mime="text/x-gjs">
+function finish(stream: <link href="../Gio-2.0/Gio.InputStream.html">Gio.InputStream</link>, stream_length: Number(gint64), mime_type: String): void {
+    // Gjs wrapper for webkit_uri_scheme_request_finish()
+}
+  </code></synopsis>
+  <p>Finish a <link xref="WebKit2.URISchemeRequest"/> by setting the contents of the request and its mime type.</p>
+
+<terms>
+<item>
+<title><code>stream</code></title>
+  <p>a <link href="../Gio-2.0/Gio.InputStream.html">Gio.InputStream</link> to read the contents of the request</p>
+</item>
+<item>
+<title><code>stream_length</code></title>
+  <p>the length of the stream or -1 if not known</p>
+</item>
+<item>
+<title><code>mime_type</code></title>
+  <p>the content type of the stream or <code>null</code> if not known</p>
+</item>
+</terms>
+
+</page>

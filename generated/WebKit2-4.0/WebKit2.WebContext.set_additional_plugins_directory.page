@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebContext.set_additional_plugins_directory"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebContext" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_web_context_set_additional_plugins_directory</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>directory</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.WebContext.prototype.set_additional_plugins_directory</title>
+  <synopsis><code mime="text/x-gjs">
+function set_additional_plugins_directory(directory: String): void {
+    // Gjs wrapper for webkit_web_context_set_additional_plugins_directory()
+}
+  </code></synopsis>
+  <p>Set an additional directory where WebKit will look for plugins.</p>
+
+<terms>
+<item>
+<title><code>directory</code></title>
+  <p>the directory to add</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="WebKit2.ResponsePolicyDecision.is_mime_type_supported"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.ResponsePolicyDecision" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>webkit_response_policy_decision_is_mime_type_supported</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.ResponsePolicyDecision.prototype.is_mime_type_supported</title>
+  <synopsis><code mime="text/x-gjs">
+function is_mime_type_supported(): Boolean {
+    // Gjs wrapper for webkit_response_policy_decision_is_mime_type_supported()
+}
+  </code></synopsis>
+  <p>Gets whether the MIME type of the response can be displayed in the <link xref="WebKit2.WebView"/>
+that triggered this policy decision request. See also <link xref="WebKit2.WebView.can_show_mime_type"/>.</p>
+  <p>Since 2.4</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if the MIME type of the response is supported or <code>false</code> otherwise</p>
+</item>
+</terms>
+
+</page>

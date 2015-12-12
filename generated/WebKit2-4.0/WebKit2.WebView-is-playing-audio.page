@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView-is-playing-audio"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="property" type="guide"/>
+    <title type="link" role="topic">is-playing-audio</title>
+  </info>
+  <title>WebKit2.WebView.is_playing_audio</title>
+  <synopsis><code mime="text/x-gjs">
+WebView.is_playing_audio: Boolean (Read)
+  </code></synopsis>
+  <p>Whether the <link xref="WebKit2.WebView"/> is currently playing audio from a page.
+This property becomes <code>true</code> as soon as web content starts playing any
+kind of audio. When a page is no longer playing any kind of sound,
+the property is set back to <code>false</code>.</p>
+  <p>Since 2.8</p>
+</page>

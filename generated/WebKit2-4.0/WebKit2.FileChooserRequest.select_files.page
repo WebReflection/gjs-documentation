@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="WebKit2.FileChooserRequest.select_files"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.FileChooserRequest" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_file_chooser_request_select_files</api:name>
+      <api:arg>
+        <api:type>Array(String)</api:type>
+        <api:name>files</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.FileChooserRequest.prototype.select_files</title>
+  <synopsis><code mime="text/x-gjs">
+function select_files(files: Array(String)): void {
+    // Gjs wrapper for webkit_file_chooser_request_select_files()
+}
+  </code></synopsis>
+  <p>Ask WebKit to select local files for upload and complete the
+request.</p>
+
+<terms>
+<item>
+<title><code>files</code></title>
+  <p>a
+<code>null</code>-terminated array of strings, containing paths to local files.</p>
+</item>
+</terms>
+
+</page>

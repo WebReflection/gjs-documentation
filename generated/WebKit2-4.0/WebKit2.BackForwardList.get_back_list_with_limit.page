@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="WebKit2.BackForwardList.get_back_list_with_limit"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.BackForwardList" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(WebKit2.BackForwardListItem)</api:type>
+      </api:returns>
+      <api:name>webkit_back_forward_list_get_back_list_with_limit</api:name>
+      <api:arg>
+        <api:type>Number(guint)</api:type>
+        <api:name>limit</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.BackForwardList.prototype.get_back_list_with_limit</title>
+  <synopsis><code mime="text/x-gjs">
+function get_back_list_with_limit(limit: Number(guint)): Array(<link xref="WebKit2.BackForwardListItem">WebKit2.BackForwardListItem</link>) {
+    // Gjs wrapper for webkit_back_forward_list_get_back_list_with_limit()
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>limit</code></title>
+  <p>the number of items to retrieve</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link href="../GLib-2.0/GLib.List.html">GLib.List</link> of
+   items preceding the current item limited by <code>limit</code>.</p>
+</item>
+</terms>
+
+</page>

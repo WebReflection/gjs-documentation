@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="WebKit2.HitTestResult.context_is_scrollbar"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.HitTestResult" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>webkit_hit_test_result_context_is_scrollbar</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.HitTestResult.prototype.context_is_scrollbar</title>
+  <synopsis><code mime="text/x-gjs">
+function context_is_scrollbar(): Boolean {
+    // Gjs wrapper for webkit_hit_test_result_context_is_scrollbar()
+}
+  </code></synopsis>
+  <p>Gets whether <link xref="WebKit2.HitTestResultContext"/>.scrollbar flag is present in
+<link xref="WebKit2.HitTestResult-context"/>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if there's a scrollbar element at the coordinates of the <code>hit_test_result</code>,
+   or <code>false</code> otherwise</p>
+</item>
+</terms>
+
+</page>

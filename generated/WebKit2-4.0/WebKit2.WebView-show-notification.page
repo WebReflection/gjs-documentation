@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView-show-notification"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="signal" type="guide"/>
+    <title type="link" role="topic">show-notification</title>
+  </info>
+  <title>WebKit2.WebView::show-notification</title>
+  <synopsis><code mime="text/x-gjs">
+connect('show-notification', function (webView, notification: <link xref="WebKit2.Notification">WebKit2.Notification</link>, ): Boolean);
+  </code></synopsis>
+  <p>This signal is emitted when a notification should be presented to the
+user. The <code>notification</code> is kept alive until either: 1) the web page cancels it
+or 2) a navigation happens.</p>  <p>The default handler will emit a notification using libnotify, if built with
+support for it.</p>
+  <p>Since 2.8</p>
+<terms>
+<item>
+<title><code>webView</code></title>
+<p>instance of <link xref="WebKit2.WebView"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>notification</code></title>
+  <p>a <link xref="WebKit2.Notification"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> to stop other handlers from being invoked. <code>false</code> otherwise.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="WebKit2.PrintOperation.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.PrintOperation" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>WebKit2.PrintOperation</api:type>
+      </api:returns>
+      <api:name>webkit_print_operation_new</api:name>
+      <api:arg>
+        <api:type>WebKit2.WebView</api:type>
+        <api:name>web_view</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.PrintOperation.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(web_view: <link xref="WebKit2.WebView">WebKit2.WebView</link>): <link xref="WebKit2.PrintOperation">WebKit2.PrintOperation</link> {
+    // Gjs wrapper for webkit_print_operation_new()
+}
+  </code></synopsis>
+  <p>Create a new <link xref="WebKit2.PrintOperation"/> to print <code>web_view</code> contents.</p>
+
+<terms>
+<item>
+<title><code>web_view</code></title>
+  <p>a <link xref="WebKit2.WebView"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a new <link xref="WebKit2.PrintOperation"/>.</p>
+</item>
+</terms>
+
+</page>

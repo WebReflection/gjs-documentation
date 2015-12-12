@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<page id="WebKit2.PrintOperation-failed"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.PrintOperation" group="signal" type="guide"/>
+    <title type="link" role="topic">failed</title>
+  </info>
+  <title>WebKit2.PrintOperation::failed</title>
+  <synopsis><code mime="text/x-gjs">
+connect('failed', function (printOperation, error: void, ): void);
+  </code></synopsis>
+  <p>Emitted when an error occurs while printing. The given <code>error</code>, of the domain
+%WEBKIT_PRINT_ERROR, contains further details of the failure.
+The <link xref="WebKit2.PrintOperation-finished"/> signal is emitted after this one.</p>
+
+<terms>
+<item>
+<title><code>printOperation</code></title>
+<p>instance of <link xref="WebKit2.PrintOperation"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>error</code></title>
+  <p>the <link href="../GLib-2.0/GLib.Error.html">GLib.Error</link> that was triggered</p>
+</item>
+</terms>
+
+</page>

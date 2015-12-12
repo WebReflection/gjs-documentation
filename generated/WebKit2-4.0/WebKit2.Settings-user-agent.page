@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Settings-user-agent"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Settings" group="property" type="guide"/>
+    <title type="link" role="topic">user-agent</title>
+  </info>
+  <title>WebKit2.Settings.user_agent</title>
+  <synopsis><code mime="text/x-gjs">
+Settings.user_agent: String (Read / Write / Construct)
+  </code></synopsis>
+  <p>The user-agent string used by WebKit. Unusual user-agent strings may cause web
+content to render incorrectly or fail to run, as many web pages are written to
+parse the user-agent strings of only the most popular browsers. Therefore, it's
+typically better to not completely override the standard user-agent, but to use
+<link xref="WebKit2.Settings.set_user_agent_with_application_details"/> instead.</p>  <p>If this property is set to the empty string or <code>null</code>, it will revert to the standard
+user-agent.</p>
+
+</page>

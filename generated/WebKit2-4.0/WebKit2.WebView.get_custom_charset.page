@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView.get_custom_charset"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>webkit_web_view_get_custom_charset</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.WebView.prototype.get_custom_charset</title>
+  <synopsis><code mime="text/x-gjs">
+function get_custom_charset(): String {
+    // Gjs wrapper for webkit_web_view_get_custom_charset()
+}
+  </code></synopsis>
+  <p>Returns the current custom character encoding name of <code>web_view</code>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the current custom character encoding name or <code>null</code> if no
+   custom character encoding has been set.</p>
+</item>
+</terms>
+
+</page>

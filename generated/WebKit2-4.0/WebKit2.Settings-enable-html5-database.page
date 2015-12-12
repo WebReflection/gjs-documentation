@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Settings-enable-html5-database"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Settings" group="property" type="guide"/>
+    <title type="link" role="topic">enable-html5-database</title>
+  </info>
+  <title>WebKit2.Settings.enable_html5_database</title>
+  <synopsis><code mime="text/x-gjs">
+Settings.enable_html5_database: Boolean (Read / Write / Construct)
+  </code></synopsis>
+  <p>Whether to enable HTML5 client-side SQL database support. Client-side
+SQL database allows web pages to store structured data and be able to
+use SQL to manipulate that data asynchronously.</p>  <p>HTML5 database specification is available at
+http://www.w3.org/TR/webdatabase/.</p>
+
+</page>

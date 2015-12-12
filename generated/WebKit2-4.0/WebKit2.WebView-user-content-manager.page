@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView-user-content-manager"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="property" type="guide"/>
+    <title type="link" role="topic">user-content-manager</title>
+  </info>
+  <title>WebKit2.WebView.user_content_manager</title>
+  <synopsis><code mime="text/x-gjs">
+WebView.user_content_manager: <link xref="WebKit2.UserContentManager">WebKit2.UserContentManager</link> (Read / Write / Construct Only)
+  </code></synopsis>
+  <p>The <link xref="WebKit2.UserContentManager"/> of the view.</p>
+  <p>Since 2.6</p>
+</page>

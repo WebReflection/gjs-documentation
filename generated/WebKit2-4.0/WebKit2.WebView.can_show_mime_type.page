@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView.can_show_mime_type"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>webkit_web_view_can_show_mime_type</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>mime_type</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.WebView.prototype.can_show_mime_type</title>
+  <synopsis><code mime="text/x-gjs">
+function can_show_mime_type(mime_type: String): Boolean {
+    // Gjs wrapper for webkit_web_view_can_show_mime_type()
+}
+  </code></synopsis>
+  <p>Whether or not a MIME type can be displayed in <code>web_view</code>.</p>
+
+<terms>
+<item>
+<title><code>mime_type</code></title>
+  <p>a MIME type</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if the MIME type <code>mime_type</code> can be displayed or <code>false</code> otherwise</p>
+</item>
+</terms>
+
+</page>

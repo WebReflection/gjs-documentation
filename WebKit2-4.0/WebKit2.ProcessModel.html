@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>WebKit2.ProcessModel</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="WebKit2">WebKit2</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">WebKit2.ProcessModel</span></h1></div>
+<div class="region">
+<div class="contents">
+<p class="p">Enum values used for determining the <span class="link"><a href="WebKit2.WebContext.html" title="WebKit2.WebContext">WebKit2.WebContext</a></span> process model.</p>
+<p class="p">Since 2.4</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">ProcessModel.SHARED_SECONDARY_PROCESS</span></dt>
+<dd class="terms"><p class="p">Use a single process to
+  perform content rendering. The process is shared among all the
+  <span class="link"><a href="WebKit2.WebView.html" title="WebKit2.WebView">WebKit2.WebView</a></span> instances created by the application: if the process
+  hangs or crashes all the web views in the application will be affected.
+  This is the default process model, and it should suffice for most cases.</p></dd>
+<dt class="terms"><span class="code">ProcessModel.MULTIPLE_SECONDARY_PROCESSES</span></dt>
+<dd class="terms"><p class="p">Use one process
+  for each <span class="link"><a href="WebKit2.WebView.html" title="WebKit2.WebView">WebKit2.WebView</a></span>, while still allowing for some of them to
+  share a process in certain situations. The main advantage
+  of this process model is that the rendering process for a web view
+  can crash while the rest of the views keep working normally. This
+  process model is indicated for applications which may use a number
+  of web views and the content of in each must not interfere with the
+  rest — for example a full-fledged web browser with support for
+  multiple tabs.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="index.html" title="WebKit2">WebKit2</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebsiteDataManager.get_offline_application_cache_directory"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebsiteDataManager" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>webkit_website_data_manager_get_offline_application_cache_directory</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.WebsiteDataManager.prototype.get_offline_application_cache_directory</title>
+  <synopsis><code mime="text/x-gjs">
+function get_offline_application_cache_directory(): String {
+    // Gjs wrapper for webkit_website_data_manager_get_offline_application_cache_directory()
+}
+  </code></synopsis>
+  <p>Get the <link xref="WebKit2.WebsiteDataManager-offline-application-cache-directory"/> property.</p>
+  <p>Since 2.10</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the directory where offline web application cache is stored.</p>
+</item>
+</terms>
+
+</page>

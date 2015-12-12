@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="WebKit2.ContextMenuItem.set_submenu"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.ContextMenuItem" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_context_menu_item_set_submenu</api:name>
+      <api:arg>
+        <api:type>WebKit2.ContextMenu</api:type>
+        <api:name>submenu</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.ContextMenuItem.prototype.set_submenu</title>
+  <synopsis><code mime="text/x-gjs">
+function set_submenu(submenu: <link xref="WebKit2.ContextMenu">WebKit2.ContextMenu</link>): void {
+    // Gjs wrapper for webkit_context_menu_item_set_submenu()
+}
+  </code></synopsis>
+  <p>Sets or replaces the <code>item</code> submenu. If <code>submenu</code> is <code>null</code> the current
+submenu of <code>item</code> is removed.</p>
+
+<terms>
+<item>
+<title><code>submenu</code></title>
+  <p>a <link xref="WebKit2.ContextMenu"/></p>
+</item>
+</terms>
+
+</page>

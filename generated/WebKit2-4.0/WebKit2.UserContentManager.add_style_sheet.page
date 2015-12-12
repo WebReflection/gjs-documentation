@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="WebKit2.UserContentManager.add_style_sheet"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.UserContentManager" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_user_content_manager_add_style_sheet</api:name>
+      <api:arg>
+        <api:type>WebKit2.UserStyleSheet</api:type>
+        <api:name>stylesheet</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.UserContentManager.prototype.add_style_sheet</title>
+  <synopsis><code mime="text/x-gjs">
+function add_style_sheet(stylesheet: <link xref="WebKit2.UserStyleSheet">WebKit2.UserStyleSheet</link>): void {
+    // Gjs wrapper for webkit_user_content_manager_add_style_sheet()
+}
+  </code></synopsis>
+  <p>Adds a <link xref="WebKit2.UserStyleSheet"/> to the given <link xref="WebKit2.UserContentManager"/>.
+The same <link xref="WebKit2.UserStyleSheet"/> can be reused with multiple
+<link xref="WebKit2.UserContentManager"/> instances.</p>
+  <p>Since 2.6</p>
+<terms>
+<item>
+<title><code>stylesheet</code></title>
+  <p>A <link xref="WebKit2.UserStyleSheet"/></p>
+</item>
+</terms>
+
+</page>

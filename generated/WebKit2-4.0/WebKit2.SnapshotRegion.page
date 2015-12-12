@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<page id="WebKit2.SnapshotRegion"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>WebKit2.SnapshotRegion</title>
+  <p>Enum values used to specify the region from which to get a <link xref="WebKit2.WebView"/>
+snapshot</p>
+
+<terms>
+<item>
+<title><code>SnapshotRegion.VISIBLE</code></title>
+  <p>Specifies a snapshot only for the area that is
+visible in the webview</p>
+</item>
+<item>
+<title><code>SnapshotRegion.FULL_DOCUMENT</code></title>
+  <p>A snapshot of the entire document.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

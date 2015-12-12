@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="WebKit2.NavigationAction.is_user_gesture"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.NavigationAction" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>webkit_navigation_action_is_user_gesture</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.NavigationAction.prototype.is_user_gesture</title>
+  <synopsis><code mime="text/x-gjs">
+function is_user_gesture(): Boolean {
+    // Gjs wrapper for webkit_navigation_action_is_user_gesture()
+}
+  </code></synopsis>
+  <p>Return whether the navigation was triggered by a user gesture like a mouse click.</p>
+  <p>Since 2.6</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>whether navigation action is a user gesture</p>
+</item>
+</terms>
+
+</page>

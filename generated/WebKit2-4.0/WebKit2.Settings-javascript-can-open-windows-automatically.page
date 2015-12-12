@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Settings-javascript-can-open-windows-automatically"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Settings" group="property" type="guide"/>
+    <title type="link" role="topic">javascript-can-open-windows-automatically</title>
+  </info>
+  <title>WebKit2.Settings.javascript_can_open_windows_automatically</title>
+  <synopsis><code mime="text/x-gjs">
+Settings.javascript_can_open_windows_automatically: Boolean (Read / Write / Construct)
+  </code></synopsis>
+  <p>Whether JavaScript can open popup windows automatically without user
+intervention.</p>
+
+</page>

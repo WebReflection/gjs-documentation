@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="WebKit2.AuthenticationRequest.is_for_proxy"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.AuthenticationRequest" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>webkit_authentication_request_is_for_proxy</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.AuthenticationRequest.prototype.is_for_proxy</title>
+  <synopsis><code mime="text/x-gjs">
+function is_for_proxy(): Boolean {
+    // Gjs wrapper for webkit_authentication_request_is_for_proxy()
+}
+  </code></synopsis>
+  <p>Determine whether the authentication challenge is associated with a proxy server rather than an "origin" server.</p>
+  <p>Since 2.2</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if authentication is for a proxy or <code>false</code> otherwise.</p>
+</item>
+</terms>
+
+</page>

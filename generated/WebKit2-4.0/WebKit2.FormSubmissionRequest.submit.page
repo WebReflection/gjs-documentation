@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<page id="WebKit2.FormSubmissionRequest.submit"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.FormSubmissionRequest" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_form_submission_request_submit</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.FormSubmissionRequest.prototype.submit</title>
+  <synopsis><code mime="text/x-gjs">
+function submit(): void {
+    // Gjs wrapper for webkit_form_submission_request_submit()
+}
+  </code></synopsis>
+  <p>Continue the form submission.</p>
+
+
+</page>

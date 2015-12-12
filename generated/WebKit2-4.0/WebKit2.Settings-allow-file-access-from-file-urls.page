@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Settings-allow-file-access-from-file-urls"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Settings" group="property" type="guide"/>
+    <title type="link" role="topic">allow-file-access-from-file-urls</title>
+  </info>
+  <title>WebKit2.Settings.allow_file_access_from_file_urls</title>
+  <synopsis><code mime="text/x-gjs">
+Settings.allow_file_access_from_file_urls: Boolean (Read / Write / Construct)
+  </code></synopsis>
+  <p>Whether file access is allowed from file URLs. By default, when
+something is loaded in a <link xref="WebKit2.WebView"/> using a file URI, cross
+origin requests to other file resources are not allowed. This
+setting allows you to change that behaviour, so that it would be
+possible to do a XMLHttpRequest of a local file, for example.</p>
+  <p>Since 2.10</p>
+</page>

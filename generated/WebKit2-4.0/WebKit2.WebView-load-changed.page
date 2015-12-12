@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView-load-changed"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="signal" type="guide"/>
+    <title type="link" role="topic">load-changed</title>
+  </info>
+  <title>WebKit2.WebView::load-changed</title>
+  <synopsis><code mime="text/x-gjs">
+connect('load-changed', function (webView, load_event: <link xref="WebKit2.LoadEvent">WebKit2.LoadEvent</link>, ): void);
+  </code></synopsis>
+  <p>Emitted when the a load operation in @web_view changes.
+The signal is always emitted with <link xref="WebKit2.LoadEvent"/>.started when a
+new load request is made and <link xref="WebKit2.LoadEvent"/>.finished when the load
+finishes successfully or due to an error. When the ongoing load
+operation fails <link xref="WebKit2.WebView-load-failed"/> signal is emitted
+before <link xref="WebKit2.WebView-load-changed"/> is emitted with
+<link xref="WebKit2.LoadEvent"/>.finished.
+If a redirection is received from the server, this signal is emitted
+with <link xref="WebKit2.LoadEvent"/>.redirected after the initial emission with
+<link xref="WebKit2.LoadEvent"/>.started and before <link xref="WebKit2.LoadEvent"/>.committed.
+When the page content starts arriving the signal is emitted with
+<link xref="WebKit2.LoadEvent"/>.committed event.</p>  <p>You can handle this signal and use a switch to track any ongoing
+load operation.</p>  <p>&lt;informalexample&gt;&lt;programlisting&gt;
+static void web_view_load_changed (WebKitWebView  *web_view,
+                                   WebKitLoadEvent load_event,
+                                   gpointer        user_data)
+{
+    switch (load_event) {
+    case WEBKIT_LOAD_STARTED:
+        /&lt;!-- --&gt;* New load, we have now a provisional URI *&lt;!-- --&gt;/
+        provisional_uri = webkit_web_view_get_uri (web_view);
+        /&lt;!-- --&gt;* Here we could start a spinner or update the
+         &lt;!-- --&gt;* location bar with the provisional URI *&lt;!-- --&gt;/
+        break;
+    case WEBKIT_LOAD_REDIRECTED:
+        redirected_uri = webkit_web_view_get_uri (web_view);
+        break;
+    case WEBKIT_LOAD_COMMITTED:
+        /&lt;!-- --&gt;* The load is being performed. Current URI is
+         &lt;!-- --&gt;* the final one and it won't change unless a new
+         &lt;!-- --&gt;* load is requested or a navigation within the
+         &lt;!-- --&gt;* same page is performed *&lt;!-- --&gt;/
+        uri = webkit_web_view_get_uri (web_view);
+        break;
+    case WEBKIT_LOAD_FINISHED:
+        /&lt;!-- --&gt;* Load finished, we can now stop the spinner *&lt;!-- --&gt;/
+        break;
+    }
+}
+&lt;/programlisting&gt;&lt;/informalexample&gt;</p>
+
+<terms>
+<item>
+<title><code>webView</code></title>
+<p>instance of <link xref="WebKit2.WebView"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>load_event</code></title>
+  <p>the <link xref="WebKit2.LoadEvent"/></p>
+</item>
+</terms>
+
+</page>

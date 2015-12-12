@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="WebKit2.URIResponse.get_content_length"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.URIResponse" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(guint64)</api:type>
+      </api:returns>
+      <api:name>webkit_uri_response_get_content_length</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.URIResponse.prototype.get_content_length</title>
+  <synopsis><code mime="text/x-gjs">
+function get_content_length(): Number(guint64) {
+    // Gjs wrapper for webkit_uri_response_get_content_length()
+}
+  </code></synopsis>
+  <p>Get the expected content length of the <link xref="WebKit2.URIResponse"/>. It can
+be 0 if the server provided an incorrect or missing Content-Length.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the expected content length of <code>response</code>.</p>
+</item>
+</terms>
+
+</page>

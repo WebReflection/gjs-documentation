@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="WebKit2.NavigationAction.get_modifiers"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.NavigationAction" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(guint)</api:type>
+      </api:returns>
+      <api:name>webkit_navigation_action_get_modifiers</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.NavigationAction.prototype.get_modifiers</title>
+  <synopsis><code mime="text/x-gjs">
+function get_modifiers(): Number(guint) {
+    // Gjs wrapper for webkit_navigation_action_get_modifiers()
+}
+  </code></synopsis>
+  <p>Return a bitmask of <link href="../Gdk-3.0/Gdk.ModifierType.html">Gdk.ModifierType</link> values describing the modifier keys that were in effect
+when the navigation was requested</p>
+  <p>Since 2.6</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the modifier keys</p>
+</item>
+</terms>
+
+</page>

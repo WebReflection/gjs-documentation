@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView.is_loading"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>webkit_web_view_is_loading</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.WebView.prototype.is_loading</title>
+  <synopsis><code mime="text/x-gjs">
+function is_loading(): Boolean {
+    // Gjs wrapper for webkit_web_view_is_loading()
+}
+  </code></synopsis>
+  <p>Gets the value of the <link xref="WebKit2.WebView-is-loading"/> property.
+You can monitor when a <link xref="WebKit2.WebView"/> is loading a page by connecting to
+notify::is-loading signal of <code>web_view</code>. This is useful when you are
+interesting in knowing when the view is loding something but not in the
+details about the status of the load operation, for example to start a spinner
+when the view is loading a page and stop it when it finishes.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if <code>web_view</code> is loading a page or <code>false</code> otherwise.</p>
+</item>
+</terms>
+
+</page>

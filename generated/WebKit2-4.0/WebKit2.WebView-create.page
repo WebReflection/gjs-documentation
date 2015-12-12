@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView-create"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="signal" type="guide"/>
+    <title type="link" role="topic">create</title>
+  </info>
+  <title>WebKit2.WebView::create</title>
+  <synopsis><code mime="text/x-gjs">
+connect('create', function (webView, navigation_action: <link xref="WebKit2.NavigationAction">WebKit2.NavigationAction</link>, ): <link href="../Gtk-3.0/Gtk.Widget.html">Gtk.Widget</link>);
+  </code></synopsis>
+  <p>Emitted when the creation of a new <link xref="WebKit2.WebView"/> is requested.
+If this signal is handled the signal handler should return the
+newly created <link xref="WebKit2.WebView"/>.</p>  <p>The <link xref="WebKit2.NavigationAction"/> parameter contains information about the
+navigation action that triggered this signal.</p>  <p>When using <link xref="WebKit2.ProcessModel"/>.multiple_secondary_processes
+process model, the new <link xref="WebKit2.WebView"/> should be related to
+@web_view to share the same web process, see <link xref="WebKit2.WebView.new_with_related_view"/>
+for more details.</p>  <p>The new <link xref="WebKit2.WebView"/> should not be displayed to the user
+until the <link xref="WebKit2.WebView-ready-to-show"/> signal is emitted.</p>
+
+<terms>
+<item>
+<title><code>webView</code></title>
+<p>instance of <link xref="WebKit2.WebView"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>navigation_action</code></title>
+  <p>a <link xref="WebKit2.NavigationAction"/></p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebResource.get_data_finish"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebResource" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>ByteArray</api:type>
+      </api:returns>
+      <api:name>webkit_web_resource_get_data_finish</api:name>
+      <api:arg>
+        <api:type>Gio.AsyncResult</api:type>
+        <api:name>result</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.WebResource.prototype.get_data_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function get_data_finish(result: <link href="../Gio-2.0/Gio.AsyncResult.html">Gio.AsyncResult</link>): [return_value: ByteArray, length: Number(gsize)] {
+    // Gjs wrapper for webkit_web_resource_get_data_finish()
+}
+  </code></synopsis>
+  <p>Finish an asynchronous operation started with <link xref="WebKit2.WebResource.get_data"/>.</p>
+
+<terms>
+<item>
+<title><code>result</code></title>
+  <p>a <link href="../Gio-2.0/Gio.AsyncResult.html">Gio.AsyncResult</link></p>
+</item>
+<item>
+<title><code>return_value</code></title>
+  <p>a
+   string with the data of <code>resource</code>, or <code>null</code> in case of error. if <code>length</code>
+   is not <code>null</code>, the size of the data will be assigned to it.</p>
+</item>
+<item>
+<title><code>length</code></title>
+  <p>return location for the length of the resource data</p>
+</item>
+</terms>
+
+</page>

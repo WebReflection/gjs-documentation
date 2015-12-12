@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Settings.get_javascript_can_open_windows_automatically"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Settings" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>webkit_settings_get_javascript_can_open_windows_automatically</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.Settings.prototype.get_javascript_can_open_windows_automatically</title>
+  <synopsis><code mime="text/x-gjs">
+function get_javascript_can_open_windows_automatically(): Boolean {
+    // Gjs wrapper for webkit_settings_get_javascript_can_open_windows_automatically()
+}
+  </code></synopsis>
+  <p>Get the <link xref="WebKit2.Settings-javascript-can-open-windows-automatically"/> property.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> If JavaScript can open window automatically or <code>false</code> otherwise.</p>
+</item>
+</terms>
+
+</page>

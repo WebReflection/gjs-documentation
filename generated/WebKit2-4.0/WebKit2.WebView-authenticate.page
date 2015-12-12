@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView-authenticate"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="signal" type="guide"/>
+    <title type="link" role="topic">authenticate</title>
+  </info>
+  <title>WebKit2.WebView::authenticate</title>
+  <synopsis><code mime="text/x-gjs">
+connect('authenticate', function (webView, request: <link xref="WebKit2.AuthenticationRequest">WebKit2.AuthenticationRequest</link>, ): Boolean);
+  </code></synopsis>
+  <p>This signal is emitted when the user is challenged with HTTP
+authentication. To let the  application access or supply
+the credentials as well as to allow the client application
+to either cancel the request or perform the authentication,
+the signal will pass an instance of the
+<link xref="WebKit2.AuthenticationRequest"/> in the <code>request</code> argument.
+To handle this signal asynchronously you should keep a ref
+of the request and return <code>true</code>. To disable HTTP authentication
+entirely, connect to this signal and simply return <code>true</code>.</p>  <p>The default signal handler will run a default authentication
+dialog asynchronously for the user to interact with.</p>
+  <p>Since 2.2</p>
+<terms>
+<item>
+<title><code>webView</code></title>
+<p>instance of <link xref="WebKit2.WebView"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>request</code></title>
+  <p>a <link xref="WebKit2.AuthenticationRequest"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> to stop other handlers from being invoked for the event.
+  <code>false</code> to propagate the event further.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="WebKit2.FindController-options"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.FindController" group="property" type="guide"/>
+    <title type="link" role="topic">options</title>
+  </info>
+  <title>WebKit2.FindController.options</title>
+  <synopsis><code mime="text/x-gjs">
+FindController.options: <link xref="WebKit2.FindOptions">WebKit2.FindOptions</link> (Read)
+  </code></synopsis>
+  <p>The options to be used in the search operation.</p>
+
+</page>

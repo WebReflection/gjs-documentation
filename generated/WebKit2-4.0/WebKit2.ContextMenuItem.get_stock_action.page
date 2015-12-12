@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="WebKit2.ContextMenuItem.get_stock_action"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.ContextMenuItem" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>WebKit2.ContextMenuAction</api:type>
+      </api:returns>
+      <api:name>webkit_context_menu_item_get_stock_action</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.ContextMenuItem.prototype.get_stock_action</title>
+  <synopsis><code mime="text/x-gjs">
+function get_stock_action(): <link xref="WebKit2.ContextMenuAction">WebKit2.ContextMenuAction</link> {
+    // Gjs wrapper for webkit_context_menu_item_get_stock_action()
+}
+  </code></synopsis>
+  <p>Gets the <link xref="WebKit2.ContextMenuAction"/> of <code>item</code>. If the <link xref="WebKit2.ContextMenuItem"/> was not
+created for a stock action <link xref="WebKit2.ContextMenuAction"/>.custom will be
+returned. If the <link xref="WebKit2.ContextMenuItem"/> is a separator <link xref="WebKit2.ContextMenuAction"/>.no_action
+will be returned.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the <link xref="WebKit2.ContextMenuAction"/> of <code>item</code></p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebInspector-attached-height"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebInspector" group="property" type="guide"/>
+    <title type="link" role="topic">attached-height</title>
+  </info>
+  <title>WebKit2.WebInspector.attached_height</title>
+  <synopsis><code mime="text/x-gjs">
+WebInspector.attached_height: Number(guint) (Read)
+  </code></synopsis>
+  <p>The height that the inspector view should have when it is attached.</p>
+
+</page>

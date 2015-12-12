@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<page id="WebKit2.NavigationPolicyDecision-mouse-button"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.NavigationPolicyDecision" group="property" type="guide"/>
+    <title type="link" role="topic">mouse-button</title>
+  </info>
+  <title>WebKit2.NavigationPolicyDecision.mouse_button</title>
+  <synopsis><code mime="text/x-gjs">
+NavigationPolicyDecision.mouse_button: Number(guint) (Read)
+  </code></synopsis>
+  <p>If the navigation associated with this policy decision was originally
+triggered by a mouse event, this property contains non-zero button number
+of the button triggering that event. The button numbers match those from GDK.
+If the navigation was not triggered by a mouse event, the value of this
+property will be 0.</p>
+
+</page>

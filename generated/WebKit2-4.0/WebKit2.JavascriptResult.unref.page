@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="WebKit2.JavascriptResult.unref"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.JavascriptResult" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_javascript_result_unref</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.JavascriptResult.prototype.unref</title>
+  <synopsis><code mime="text/x-gjs">
+function unref(): void {
+    // Gjs wrapper for webkit_javascript_result_unref()
+}
+  </code></synopsis>
+  <p>Atomically decrements the reference count of <code>js_result</code> by one. If the
+reference count drops to 0, all memory allocated by the <link xref="WebKit2.JavascriptResult"/> is
+released. This function is MT-safe and may be called from any
+thread.</p>
+
+
+</page>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Settings-enable-html5-local-storage"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Settings" group="property" type="guide"/>
+    <title type="link" role="topic">enable-html5-local-storage</title>
+  </info>
+  <title>WebKit2.Settings.enable_html5_local_storage</title>
+  <synopsis><code mime="text/x-gjs">
+Settings.enable_html5_local_storage: Boolean (Read / Write / Construct)
+  </code></synopsis>
+  <p>Whether to enable HTML5 local storage support. Local storage provides
+simple synchronous storage access.</p>  <p>HTML5 local storage specification is available at
+http://dev.w3.org/html5/webstorage/.</p>
+
+</page>

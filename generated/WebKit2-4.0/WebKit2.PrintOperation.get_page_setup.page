@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="WebKit2.PrintOperation.get_page_setup"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.PrintOperation" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gtk.PageSetup</api:type>
+      </api:returns>
+      <api:name>webkit_print_operation_get_page_setup</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.PrintOperation.prototype.get_page_setup</title>
+  <synopsis><code mime="text/x-gjs">
+function get_page_setup(): <link href="../Gtk-3.0/Gtk.PageSetup.html">Gtk.PageSetup</link> {
+    // Gjs wrapper for webkit_print_operation_get_page_setup()
+}
+  </code></synopsis>
+  <p>Return the current page setup of <code>print_operation</code>. It returns <code>null</code> until
+either <link xref="WebKit2.PrintOperation.set_page_setup"/> or <link xref="WebKit2.PrintOperation.run_dialog"/>
+have been called.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the current <link href="../Gtk-3.0/Gtk.PageSetup.html">Gtk.PageSetup</link> of <code>print_operation</code>.</p>
+</item>
+</terms>
+
+</page>

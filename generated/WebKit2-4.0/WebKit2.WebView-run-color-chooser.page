@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView-run-color-chooser"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="signal" type="guide"/>
+    <title type="link" role="topic">run-color-chooser</title>
+  </info>
+  <title>WebKit2.WebView::run-color-chooser</title>
+  <synopsis><code mime="text/x-gjs">
+connect('run-color-chooser', function (webView, request: <link xref="WebKit2.ColorChooserRequest">WebKit2.ColorChooserRequest</link>, ): Boolean);
+  </code></synopsis>
+  <p>This signal is emitted when the user interacts with a &amp;lt;input
+type='color' /&amp;gt; HTML element, requesting from WebKit to show
+a dialog to select a color. To let the application know the details of
+the color chooser, as well as to allow the client application to either
+cancel the request or perform an actual color selection, the signal will
+pass an instance of the <link xref="WebKit2.ColorChooserRequest"/> in the <code>request</code>
+argument.</p>  <p>It is possible to handle this request asynchronously by increasing the
+reference count of the request.</p>  <p>The default signal handler will asynchronously run a regular
+<link href="../Gtk-3.0/Gtk.ColorChooser.html">Gtk.ColorChooser</link> for the user to interact with.</p>
+  <p>Since 2.8</p>
+<terms>
+<item>
+<title><code>webView</code></title>
+<p>instance of <link xref="WebKit2.WebView"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>request</code></title>
+  <p>a <link xref="WebKit2.ColorChooserRequest"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> to stop other handlers from being invoked for the event.
+  <code>false</code> to propagate the event further.</p>
+</item>
+</terms>
+
+</page>

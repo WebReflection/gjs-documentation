@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView-load-failed"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="signal" type="guide"/>
+    <title type="link" role="topic">load-failed</title>
+  </info>
+  <title>WebKit2.WebView::load-failed</title>
+  <synopsis><code mime="text/x-gjs">
+connect('load-failed', function (webView, load_event: <link xref="WebKit2.LoadEvent">WebKit2.LoadEvent</link>, failing_uri: String, error: void, ): Boolean);
+  </code></synopsis>
+  <p>Emitted when an error occurs during a load operation.
+If the error happened when starting to load data for a page
+<code>load_event</code> will be <link xref="WebKit2.LoadEvent"/>.started. If it happened while
+loading a committed data source <code>load_event</code> will be <link xref="WebKit2.LoadEvent"/>.committed.
+Since a load error causes the load operation to finish, the signal
+WebKitWebView::load-changed will always be emitted with
+<link xref="WebKit2.LoadEvent"/>.finished event right after this one.</p>  <p>By default, if the signal is not handled, a stock error page will be displayed.
+You need to handle the signal if you want to provide your own error page.</p>
+
+<terms>
+<item>
+<title><code>webView</code></title>
+<p>instance of <link xref="WebKit2.WebView"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>load_event</code></title>
+  <p>the <link xref="WebKit2.LoadEvent"/> of the load operation</p>
+</item>
+<item>
+<title><code>failing_uri</code></title>
+  <p>the URI that failed to load</p>
+</item>
+<item>
+<title><code>error</code></title>
+  <p>the <link href="../GLib-2.0/GLib.Error.html">GLib.Error</link> that was triggered</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> to stop other handlers from being invoked for the event.
+   <code>false</code> to propagate the event further.</p>
+</item>
+</terms>
+
+</page>

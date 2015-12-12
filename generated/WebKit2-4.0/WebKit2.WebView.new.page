@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gtk.Widget</api:type>
+      </api:returns>
+      <api:name>webkit_web_view_new</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.WebView.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(): <link href="../Gtk-3.0/Gtk.Widget.html">Gtk.Widget</link> {
+    // Gjs wrapper for webkit_web_view_new()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="WebKit2.WebView"/> with the default <link xref="WebKit2.WebContext"/> and
+no <link xref="WebKit2.UserContentManager"/> associated with it.
+See also <link xref="WebKit2.WebView.new_with_context"/>,
+<link xref="WebKit2.WebView.new_with_user_content_manager"/>, and
+<link xref="WebKit2.WebView.new_with_settings"/>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>The newly created <link xref="WebKit2.WebView"/> widget</p>
+</item>
+</terms>
+
+</page>

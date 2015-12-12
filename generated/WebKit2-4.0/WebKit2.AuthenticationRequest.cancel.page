@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="WebKit2.AuthenticationRequest.cancel"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.AuthenticationRequest" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_authentication_request_cancel</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.AuthenticationRequest.prototype.cancel</title>
+  <synopsis><code mime="text/x-gjs">
+function cancel(): void {
+    // Gjs wrapper for webkit_authentication_request_cancel()
+}
+  </code></synopsis>
+  <p>Cancel the authentication challenge. This will also cancel the page loading and result in a
+<link xref="WebKit2.WebView-load-failed"/> signal with a <link xref="WebKit2.NetworkError"/> of type <link xref="WebKit2.NetworkError"/>.cancelled being emitted.</p>
+  <p>Since 2.2</p>
+
+</page>

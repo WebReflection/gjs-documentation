@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView.set_custom_charset"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_web_view_set_custom_charset</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>charset</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.WebView.prototype.set_custom_charset</title>
+  <synopsis><code mime="text/x-gjs">
+function set_custom_charset(charset: String): void {
+    // Gjs wrapper for webkit_web_view_set_custom_charset()
+}
+  </code></synopsis>
+  <p>Sets the current custom character encoding override of <code>web_view</code>. The custom
+character encoding will override any text encoding detected via HTTP headers or
+META tags. Calling this method will stop any current load operation and reload the
+current page. Setting the custom character encoding to <code>null</code> removes the character
+encoding override.</p>
+
+<terms>
+<item>
+<title><code>charset</code></title>
+  <p>a character encoding name or <code>null</code></p>
+</item>
+</terms>
+
+</page>

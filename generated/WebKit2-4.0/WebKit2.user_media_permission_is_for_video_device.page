@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="WebKit2.user_media_permission_is_for_video_device"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>webkit_user_media_permission_is_for_video_device</api:name>
+      <api:arg>
+        <api:type>WebKit2.UserMediaPermissionRequest</api:type>
+        <api:name>request</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.user_media_permission_is_for_video_device</title>
+  <synopsis><code mime="text/x-gjs">
+function user_media_permission_is_for_video_device(request: <link xref="WebKit2.UserMediaPermissionRequest">WebKit2.UserMediaPermissionRequest</link>): Boolean {
+    // Gjs wrapper for webkit_user_media_permission_is_for_video_device()
+}
+  </code></synopsis>
+
+  <p>Since 2.8</p>
+<terms>
+<item>
+<title><code>request</code></title>
+  <p>a <link xref="WebKit2.UserMediaPermissionRequest"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if access to a video device was requested.</p>
+</item>
+</terms>
+
+</page>

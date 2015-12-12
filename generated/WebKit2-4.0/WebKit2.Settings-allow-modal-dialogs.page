@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Settings-allow-modal-dialogs"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Settings" group="property" type="guide"/>
+    <title type="link" role="topic">allow-modal-dialogs</title>
+  </info>
+  <title>WebKit2.Settings.allow_modal_dialogs</title>
+  <synopsis><code mime="text/x-gjs">
+Settings.allow_modal_dialogs: Boolean (Read / Write / Construct)
+  </code></synopsis>
+  <p>Determine whether it's allowed to create and run modal dialogs
+from a <link xref="WebKit2.WebView"/> through JavaScript with
+&lt;function&gt;window.showModalDialog&lt;/function&gt;. If it's set to
+<code>false</code>, the associated <link xref="WebKit2.WebView"/> won't be able to create
+new modal dialogs, so not even the <link xref="WebKit2.WebView-create"/>
+signal will be emitted.</p>
+
+</page>

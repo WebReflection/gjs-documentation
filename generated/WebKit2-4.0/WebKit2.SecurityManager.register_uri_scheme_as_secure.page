@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="WebKit2.SecurityManager.register_uri_scheme_as_secure"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.SecurityManager" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_security_manager_register_uri_scheme_as_secure</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>scheme</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.SecurityManager.prototype.register_uri_scheme_as_secure</title>
+  <synopsis><code mime="text/x-gjs">
+function register_uri_scheme_as_secure(scheme: String): void {
+    // Gjs wrapper for webkit_security_manager_register_uri_scheme_as_secure()
+}
+  </code></synopsis>
+  <p>Register <code>scheme</code> as a secure scheme. This means that mixed
+content warnings won't be generated for this scheme when
+included by an HTTPS page.</p>
+
+<terms>
+<item>
+<title><code>scheme</code></title>
+  <p>a URI scheme</p>
+</item>
+</terms>
+
+</page>

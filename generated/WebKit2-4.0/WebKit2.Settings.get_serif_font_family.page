@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Settings.get_serif_font_family"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Settings" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>webkit_settings_get_serif_font_family</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.Settings.prototype.get_serif_font_family</title>
+  <synopsis><code mime="text/x-gjs">
+function get_serif_font_family(): String {
+    // Gjs wrapper for webkit_settings_get_serif_font_family()
+}
+  </code></synopsis>
+  <p>Gets the <link xref="WebKit2.Settings-serif-font-family"/> property.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>The default font family used to display content marked with serif font.</p>
+</item>
+</terms>
+
+</page>

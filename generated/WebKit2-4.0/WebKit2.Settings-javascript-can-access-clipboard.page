@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Settings-javascript-can-access-clipboard"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Settings" group="property" type="guide"/>
+    <title type="link" role="topic">javascript-can-access-clipboard</title>
+  </info>
+  <title>WebKit2.Settings.javascript_can_access_clipboard</title>
+  <synopsis><code mime="text/x-gjs">
+Settings.javascript_can_access_clipboard: Boolean (Read / Write / Construct)
+  </code></synopsis>
+  <p>Whether JavaScript can access the clipboard. The default value is <code>false</code>. If
+set to <code>true</code>, document.execCommand() allows cut, copy and paste commands.</p>
+
+</page>

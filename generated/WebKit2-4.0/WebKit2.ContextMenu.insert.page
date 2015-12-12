@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<page id="WebKit2.ContextMenu.insert"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.ContextMenu" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_context_menu_insert</api:name>
+      <api:arg>
+        <api:type>WebKit2.ContextMenuItem</api:type>
+        <api:name>item</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>position</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.ContextMenu.prototype.insert</title>
+  <synopsis><code mime="text/x-gjs">
+function insert(item: <link xref="WebKit2.ContextMenuItem">WebKit2.ContextMenuItem</link>, position: Number(gint)): void {
+    // Gjs wrapper for webkit_context_menu_insert()
+}
+  </code></synopsis>
+  <p>Inserts <code>item</code> into the <code>menu</code> at the given position.
+If <code>position</code> is negative, or is larger than the number of items
+in the <link xref="WebKit2.ContextMenu"/>, the item is added on to the end of
+the <code>menu</code>. The first position is 0.</p>
+
+<terms>
+<item>
+<title><code>item</code></title>
+  <p>the <link xref="WebKit2.ContextMenuItem"/> to add</p>
+</item>
+<item>
+<title><code>position</code></title>
+  <p>the position to insert the item</p>
+</item>
+</terms>
+
+</page>

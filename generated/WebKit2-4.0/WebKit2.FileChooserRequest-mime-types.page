@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page id="WebKit2.FileChooserRequest-mime-types"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.FileChooserRequest" group="property" type="guide"/>
+    <title type="link" role="topic">mime-types</title>
+  </info>
+  <title>WebKit2.FileChooserRequest.mime_types</title>
+  <synopsis><code mime="text/x-gjs">
+FileChooserRequest.mime_types: Array(String) (Read)
+  </code></synopsis>
+  <p>A <code>null</code>-terminated array of strings containing the list of MIME
+types the file chooser dialog should handle. See
+<link xref="WebKit2.FileChooserRequest.get_mime_types"/> for more details.</p>
+
+</page>

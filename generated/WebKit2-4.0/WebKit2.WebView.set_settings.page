@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView.set_settings"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_web_view_set_settings</api:name>
+      <api:arg>
+        <api:type>WebKit2.Settings</api:type>
+        <api:name>settings</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.WebView.prototype.set_settings</title>
+  <synopsis><code mime="text/x-gjs">
+function set_settings(settings: <link xref="WebKit2.Settings">WebKit2.Settings</link>): void {
+    // Gjs wrapper for webkit_web_view_set_settings()
+}
+  </code></synopsis>
+  <p>Sets the <link xref="WebKit2.Settings"/> to be applied to <code>web_view</code>. The
+existing <link xref="WebKit2.Settings"/> of <code>web_view</code> will be replaced by
+<code>settings</code>. New settings are applied immediately on <code>web_view</code>.
+The same <link xref="WebKit2.Settings"/> object can be shared
+by multiple <link xref="WebKit2.WebView"/>&lt;!-- --&gt;s.</p>
+
+<terms>
+<item>
+<title><code>settings</code></title>
+  <p>a <link xref="WebKit2.Settings"/></p>
+</item>
+</terms>
+
+</page>

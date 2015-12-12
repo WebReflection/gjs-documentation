@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView-script_dialog"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="vfunc" type="guide"/>
+  </info>
+  <title>WebKit2.WebView::script_dialog</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_script_dialog(dialog: <link xref="WebKit2.ScriptDialog">WebKit2.ScriptDialog</link>): Boolean {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>dialog</code></title>
+
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

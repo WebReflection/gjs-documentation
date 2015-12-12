@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="WebKit2.MimeInfo.get_mime_type"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.MimeInfo" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>webkit_mime_info_get_mime_type</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.MimeInfo.prototype.get_mime_type</title>
+  <synopsis><code mime="text/x-gjs">
+function get_mime_type(): String {
+    // Gjs wrapper for webkit_mime_info_get_mime_type()
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the MIME type of <code>info</code></p>
+</item>
+</terms>
+
+</page>

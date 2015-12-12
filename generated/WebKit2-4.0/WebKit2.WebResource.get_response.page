@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebResource.get_response"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebResource" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>WebKit2.URIResponse</api:type>
+      </api:returns>
+      <api:name>webkit_web_resource_get_response</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.WebResource.prototype.get_response</title>
+  <synopsis><code mime="text/x-gjs">
+function get_response(): <link xref="WebKit2.URIResponse">WebKit2.URIResponse</link> {
+    // Gjs wrapper for webkit_web_resource_get_response()
+}
+  </code></synopsis>
+  <p>Retrieves the <link xref="WebKit2.URIResponse"/> of the resource load operation.
+This method returns <code>null</code> if called before the response
+is received from the server. You can connect to notify::response
+signal to be notified when the response is received.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the <link xref="WebKit2.URIResponse"/>, or <code>null</code> if
+    the response hasn't been received yet.</p>
+</item>
+</terms>
+
+</page>

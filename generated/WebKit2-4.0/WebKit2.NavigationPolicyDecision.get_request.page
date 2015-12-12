@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="WebKit2.NavigationPolicyDecision.get_request"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.NavigationPolicyDecision" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>WebKit2.URIRequest</api:type>
+      </api:returns>
+      <api:name>webkit_navigation_policy_decision_get_request</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.NavigationPolicyDecision.prototype.get_request</title>
+  <synopsis><code mime="text/x-gjs">
+function get_request(): <link xref="WebKit2.URIRequest">WebKit2.URIRequest</link> {
+    // Gjs wrapper for webkit_navigation_policy_decision_get_request()
+}
+  </code></synopsis>
+  <p>Gets the value of the <link xref="WebKit2.NavigationPolicyDecision-request"/> property.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>The URI request that is associated with this navigation</p>
+</item>
+</terms>
+
+</page>

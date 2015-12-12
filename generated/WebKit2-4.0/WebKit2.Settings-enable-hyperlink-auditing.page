@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Settings-enable-hyperlink-auditing"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Settings" group="property" type="guide"/>
+    <title type="link" role="topic">enable-hyperlink-auditing</title>
+  </info>
+  <title>WebKit2.Settings.enable_hyperlink_auditing</title>
+  <synopsis><code mime="text/x-gjs">
+Settings.enable_hyperlink_auditing: Boolean (Read / Write / Construct)
+  </code></synopsis>
+  <p>Determines whether or not hyperlink auditing is enabled.</p>  <p>The hyperlink auditing specification is available at
+http://www.whatwg.org/specs/web-apps/current-work/multipage/links.html#hyperlink-auditing.</p>
+
+</page>

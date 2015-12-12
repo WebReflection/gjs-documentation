@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebsiteDataManager"
+      type="guide"
+      style="class"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="class" type="guide"/>
+  </info>
+  <title>WebKit2.WebsiteDataManager</title>
+  <synopsis><code>
+const WebKit2 = imports.gi.WebKit2;
+
+let websiteDataManager = new WebKit2.WebsiteDataManager({
+    <link xref='WebKit2.WebsiteDataManager-base-cache-directory'>base_cache_directory</link>: value,
+    <link xref='WebKit2.WebsiteDataManager-base-data-directory'>base_data_directory</link>: value,
+    <link xref='WebKit2.WebsiteDataManager-disk-cache-directory'>disk_cache_directory</link>: value,
+    <link xref='WebKit2.WebsiteDataManager-indexeddb-directory'>indexeddb_directory</link>: value,
+    <link xref='WebKit2.WebsiteDataManager-local-storage-directory'>local_storage_directory</link>: value,
+    <link xref='WebKit2.WebsiteDataManager-offline-application-cache-directory'>offline_application_cache_directory</link>: value,
+    <link xref='WebKit2.WebsiteDataManager-websql-directory'>websql_directory</link>: value,
+});
+  </code></synopsis>
+
+
+  <synopsis>
+    <title>Hierarchy</title>
+    <tree>
+      <item>
+        <code>GObject.Object</code>
+      <item>
+        <code>WebKit2.WebsiteDataManager</code>
+      </item>
+      </item>
+    </tree>
+  </synopsis>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="constructor" style="linklist">
+    <title>Constructors</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="method" style="linklist">
+    <title>Methods</title>
+  </links>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Static Functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="property" style="linklist">
+    <title>Properties</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="signal" style="linklist">
+    <title>Signals</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="vfunc" style="linklist">
+    <title>Virtual functions</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="field" style="linklist">
+    <title>Fields</title>
+  </links>
+  <links type="topic" ui:expanded="true" groups="#first #default #last" style="linklist">
+    <title>Other</title>
+  </links>
+</page>

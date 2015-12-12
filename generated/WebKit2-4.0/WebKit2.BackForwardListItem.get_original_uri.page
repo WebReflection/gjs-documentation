@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="WebKit2.BackForwardListItem.get_original_uri"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.BackForwardListItem" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>webkit_back_forward_list_item_get_original_uri</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.BackForwardListItem.prototype.get_original_uri</title>
+  <synopsis><code mime="text/x-gjs">
+function get_original_uri(): String {
+    // Gjs wrapper for webkit_back_forward_list_item_get_original_uri()
+}
+  </code></synopsis>
+  <p>See also <link xref="WebKit2.BackForwardListItem.get_uri"/>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the original URI of <code>list_item</code> or <code>null</code>
+   when the original URI is empty.</p>
+</item>
+</terms>
+
+</page>

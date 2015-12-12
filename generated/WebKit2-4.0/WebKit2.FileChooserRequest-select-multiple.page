@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<page id="WebKit2.FileChooserRequest-select-multiple"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.FileChooserRequest" group="property" type="guide"/>
+    <title type="link" role="topic">select-multiple</title>
+  </info>
+  <title>WebKit2.FileChooserRequest.select_multiple</title>
+  <synopsis><code mime="text/x-gjs">
+FileChooserRequest.select_multiple: Boolean (Read)
+  </code></synopsis>
+  <p>Whether the file chooser should allow selecting multiple
+files. See
+<link xref="WebKit2.FileChooserRequest.get_select_multiple"/> for
+more details.</p>
+
+</page>

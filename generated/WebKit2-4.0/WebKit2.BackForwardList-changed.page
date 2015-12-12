@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="WebKit2.BackForwardList-changed"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.BackForwardList" group="signal" type="guide"/>
+    <title type="link" role="topic">changed</title>
+  </info>
+  <title>WebKit2.BackForwardList::changed</title>
+  <synopsis><code mime="text/x-gjs">
+connect('changed', function (backForwardList, item_added: <link xref="WebKit2.BackForwardListItem">WebKit2.BackForwardListItem</link>, items_removed: void, ): void);
+  </code></synopsis>
+  <p>This signal is emitted when @back_forward_list changes. This happens
+when the current item is updated, a new item is added or one or more
+items are removed. Note that both <code>item_added</code> and <code>items_removed</code> can
+<code>null</code> when only the current item is updated. Items are only removed
+when the list is cleared or the maximum items limit is reached.</p>
+
+<terms>
+<item>
+<title><code>backForwardList</code></title>
+<p>instance of <link xref="WebKit2.BackForwardList"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>item_added</code></title>
+  <p>the <link xref="WebKit2.BackForwardListItem"/> added or <code>null</code></p>
+</item>
+<item>
+<title><code>items_removed</code></title>
+  <p>a <link href="../GLib-2.0/GLib.List.html">GLib.List</link> of <link xref="WebKit2.BackForwardListItem"/>&lt;!-- --&gt;s</p>
+</item>
+</terms>
+
+</page>

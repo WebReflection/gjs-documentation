@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="WebKit2.get_micro_version"
+      type="topic"
+      style="function"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="function" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(guint)</api:type>
+      </api:returns>
+      <api:name>webkit_get_micro_version</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.get_micro_version</title>
+  <synopsis><code mime="text/x-gjs">
+function get_micro_version(): Number(guint) {
+    // Gjs wrapper for webkit_get_micro_version()
+}
+  </code></synopsis>
+  <p>Returns the micro version number of the WebKit library.
+(e.g. in WebKit version 1.8.3 this is 3.)</p>  <p>This function is in the library, so it represents the WebKit library
+your code is running against. Contrast with the #WEBKIT_MICRO_VERSION
+macro, which represents the micro version of the WebKit headers you
+have included when compiling your code.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the micro version number of the WebKit library</p>
+</item>
+</terms>
+
+</page>

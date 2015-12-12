@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebContext.register_uri_scheme"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebContext" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_web_context_register_uri_scheme</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>scheme</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>WebKit2.URISchemeRequestCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.WebContext.prototype.register_uri_scheme</title>
+  <synopsis><code mime="text/x-gjs">
+function register_uri_scheme(scheme: String, callback: <link xref="WebKit2.URISchemeRequestCallback">WebKit2.URISchemeRequestCallback</link>): void {
+    // Gjs wrapper for webkit_web_context_register_uri_scheme()
+}
+  </code></synopsis>
+  <p>Register <code>scheme</code> in <code>context</code>, so that when an URI request with <code>scheme</code> is made in the
+<link xref="WebKit2.WebContext"/>, the <link xref="WebKit2.URISchemeRequestCallback"/> registered will be called with a
+<link xref="WebKit2.URISchemeRequest"/>.
+It is possible to handle URI scheme requests asynchronously, by calling g_object_ref() on the
+<link xref="WebKit2.URISchemeRequest"/> and calling <link xref="WebKit2.URISchemeRequest.finish"/> later
+when the data of the request is available or
+<link xref="WebKit2.URISchemeRequest.finish_error"/> in case of error.</p>  <p>&lt;informalexample&gt;&lt;programlisting&gt;
+static void
+about_uri_scheme_request_cb (WebKitURISchemeRequest *request,
+                             gpointer                user_data)
+{
+    GInputStream *stream;
+    gsize         stream_length;
+    const gchar  *path;</p>  <p>    path = webkit_uri_scheme_request_get_path (request);
+    if (!g_strcmp0 (path, "plugins")) {
+        /&lt;!-- --&gt;* Create a GInputStream with the contents of plugins about page, and set its length to stream_length *&lt;!-- --&gt;/
+    } else if (!g_strcmp0 (path, "memory")) {
+        /&lt;!-- --&gt;* Create a GInputStream with the contents of memory about page, and set its length to stream_length *&lt;!-- --&gt;/
+    } else if (!g_strcmp0 (path, "applications")) {
+        /&lt;!-- --&gt;* Create a GInputStream with the contents of applications about page, and set its length to stream_length *&lt;!-- --&gt;/
+    } else if (!g_strcmp0 (path, "example")) {
+        gchar *contents;</p>  <p>        contents = g_strdup_printf ("&amp;lt;html&amp;gt;&amp;lt;body&amp;gt;&amp;lt;p&amp;gt;Example about page&amp;lt;/p&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;");
+        stream_length = strlen (contents);
+        stream = g_memory_input_stream_new_from_data (contents, stream_length, g_free);
+    } else {
+        GError *error;</p>  <p>        error = g_error_new (ABOUT_HANDLER_ERROR, ABOUT_HANDLER_ERROR_INVALID, "Invalid about:%s page.", path);
+        webkit_uri_scheme_request_finish_error (request, error);
+        g_error_free (error);
+        return;
+    }
+    webkit_uri_scheme_request_finish (request, stream, stream_length, "text/html");
+    g_object_unref (stream);
+}
+&lt;/programlisting&gt;&lt;/informalexample&gt;</p>
+
+<terms>
+<item>
+<title><code>scheme</code></title>
+  <p>the network scheme to register</p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>a <link xref="WebKit2.URISchemeRequestCallback"/></p>
+</item>
+</terms>
+
+</page>

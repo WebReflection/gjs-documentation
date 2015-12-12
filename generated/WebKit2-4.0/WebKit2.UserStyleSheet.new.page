@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<page id="WebKit2.UserStyleSheet.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.UserStyleSheet" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>WebKit2.UserStyleSheet</api:type>
+      </api:returns>
+      <api:name>webkit_user_style_sheet_new</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>source</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>WebKit2.UserContentInjectedFrames</api:type>
+        <api:name>injected_frames</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>WebKit2.UserStyleLevel</api:type>
+        <api:name>level</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Array(String)</api:type>
+        <api:name>whitelist</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Array(String)</api:type>
+        <api:name>blacklist</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.UserStyleSheet.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(source: String, injected_frames: <link xref="WebKit2.UserContentInjectedFrames">WebKit2.UserContentInjectedFrames</link>, level: <link xref="WebKit2.UserStyleLevel">WebKit2.UserStyleLevel</link>, whitelist: Array(String), blacklist: Array(String)): <link xref="WebKit2.UserStyleSheet">WebKit2.UserStyleSheet</link> {
+    // Gjs wrapper for webkit_user_style_sheet_new()
+}
+  </code></synopsis>
+  <p>Creates a new user style sheet. Style sheets can be applied to some URIs
+only by passing non-null values for <code>whitelist</code> or <code>blacklist</code>. Passing a
+<code>null</code> whitelist implies that all URIs are on the whitelist. The style
+sheet is applied if an URI matches the whitelist and not the blacklist.
+URI patterns must be of the form `[protocol]://[host]/[path]`, where the
+*host* and *path* components can contain the wildcard character (`*`) to
+represent zero or more other characters.</p>
+  <p>Since 2.6</p>
+<terms>
+<item>
+<title><code>source</code></title>
+  <p>Source code of the user style sheet.</p>
+</item>
+<item>
+<title><code>injected_frames</code></title>
+  <p>A <link xref="WebKit2.UserContentInjectedFrames"/> value</p>
+</item>
+<item>
+<title><code>level</code></title>
+  <p>A <link xref="WebKit2.UserStyleLevel"/></p>
+</item>
+<item>
+<title><code>whitelist</code></title>
+  <p>A whitelist of URI patterns or <code>null</code></p>
+</item>
+<item>
+<title><code>blacklist</code></title>
+  <p>A blacklist of URI patterns or <code>null</code></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>A new <link xref="WebKit2.UserStyleSheet"/></p>
+</item>
+</terms>
+
+</page>

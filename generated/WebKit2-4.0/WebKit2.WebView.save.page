@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView.save"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_web_view_save</api:name>
+      <api:arg>
+        <api:type>WebKit2.SaveMode</api:type>
+        <api:name>save_mode</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.Cancellable</api:type>
+        <api:name>cancellable</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>Gio.AsyncReadyCallback</api:type>
+        <api:name>callback</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.WebView.prototype.save</title>
+  <synopsis><code mime="text/x-gjs">
+function save(save_mode: <link xref="WebKit2.SaveMode">WebKit2.SaveMode</link>, cancellable: <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link>, callback: <link href="../Gio-2.0/Gio.AsyncReadyCallback.html">Gio.AsyncReadyCallback</link>): void {
+    // Gjs wrapper for webkit_web_view_save()
+}
+  </code></synopsis>
+  <p>Asynchronously save the current web page associated to the
+<link xref="WebKit2.WebView"/> into a self-contained format using the mode
+specified in <code>save_mode</code>.</p>  <p>When the operation is finished, <code>callback</code> will be called. You can
+then call <link xref="WebKit2.WebView.save_finish"/> to get the result of the
+operation.</p>
+
+<terms>
+<item>
+<title><code>save_mode</code></title>
+  <p>the <link xref="WebKit2.SaveMode"/> specifying how the web page should be saved.</p>
+</item>
+<item>
+<title><code>cancellable</code></title>
+  <p>a <link href="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</link> or <code>null</code> to ignore</p>
+</item>
+<item>
+<title><code>callback</code></title>
+  <p>a <link href="../Gio-2.0/Gio.AsyncReadyCallback.html">Gio.AsyncReadyCallback</link> to call when the request is satisfied</p>
+</item>
+</terms>
+
+</page>

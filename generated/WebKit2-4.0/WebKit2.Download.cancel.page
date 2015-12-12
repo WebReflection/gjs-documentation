@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Download.cancel"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Download" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_download_cancel</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.Download.prototype.cancel</title>
+  <synopsis><code mime="text/x-gjs">
+function cancel(): void {
+    // Gjs wrapper for webkit_download_cancel()
+}
+  </code></synopsis>
+  <p>Cancels the download. When the ongoing download
+operation is effectively cancelled the signal
+<link xref="WebKit2.Download-failed"/> is emitted with
+<link xref="WebKit2.DownloadError"/>.cancelled_by_user error.</p>
+
+
+</page>

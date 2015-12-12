@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Settings-enable-tabs-to-links"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Settings" group="property" type="guide"/>
+    <title type="link" role="topic">enable-tabs-to-links</title>
+  </info>
+  <title>WebKit2.Settings.enable_tabs_to_links</title>
+  <synopsis><code mime="text/x-gjs">
+Settings.enable_tabs_to_links: Boolean (Read / Write / Construct)
+  </code></synopsis>
+  <p>Determines whether the tab key cycles through the elements on the page.
+When this setting is enabled, users will be able to focus the next element
+in the page by pressing the tab key. If the selected element is editable,
+then pressing tab key will insert the tab character.</p>
+
+</page>

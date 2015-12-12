@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Settings-enable-mediasource"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Settings" group="property" type="guide"/>
+    <title type="link" role="topic">enable-mediasource</title>
+  </info>
+  <title>WebKit2.Settings.enable_mediasource</title>
+  <synopsis><code mime="text/x-gjs">
+Settings.enable_mediasource: Boolean (Read / Write / Construct)
+  </code></synopsis>
+  <p>Enable or disable support for MediaSource on pages. MediaSource is an
+experimental proposal which extends HTMLMediaElement to allow
+JavaScript to generate media streams for playback.  The standard is
+currently a work-in-progress by the W3C HTML Media Task Force.</p>  <p>See also http://www.w3.org/TR/media-source/</p>
+  <p>Since 2.4</p>
+</page>

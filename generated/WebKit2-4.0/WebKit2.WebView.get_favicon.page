@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView.get_favicon"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>cairo.Surface</api:type>
+      </api:returns>
+      <api:name>webkit_web_view_get_favicon</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.WebView.prototype.get_favicon</title>
+  <synopsis><code mime="text/x-gjs">
+function get_favicon(): <link href="../cairo-1.0/cairo.Surface.html">cairo.Surface</link> {
+    // Gjs wrapper for webkit_web_view_get_favicon()
+}
+  </code></synopsis>
+  <p>Returns favicon currently associated to <code>web_view</code>, if any. You can
+connect to notify::favicon signal of <code>web_view</code> to be notified when
+the favicon is available.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a pointer to a #cairo_surface_t with the
+   favicon or <code>null</code> if there's no icon associated with <code>web_view</code>.</p>
+</item>
+</terms>
+
+</page>

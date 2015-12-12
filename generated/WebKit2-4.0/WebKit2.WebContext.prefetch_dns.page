@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebContext.prefetch_dns"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebContext" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_web_context_prefetch_dns</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>hostname</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.WebContext.prototype.prefetch_dns</title>
+  <synopsis><code mime="text/x-gjs">
+function prefetch_dns(hostname: String): void {
+    // Gjs wrapper for webkit_web_context_prefetch_dns()
+}
+  </code></synopsis>
+  <p>Resolve the domain name of the given <code>hostname</code> in advance, so that if a URI
+of <code>hostname</code> is requested the load will be performed more quickly.</p>
+
+<terms>
+<item>
+<title><code>hostname</code></title>
+  <p>a hostname to be resolved</p>
+</item>
+</terms>
+
+</page>

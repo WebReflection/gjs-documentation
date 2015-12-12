@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebInspector-closed"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebInspector" group="signal" type="guide"/>
+    <title type="link" role="topic">closed</title>
+  </info>
+  <title>WebKit2.WebInspector::closed</title>
+  <synopsis><code mime="text/x-gjs">
+connect('closed', function (webInspector, ): void);
+  </code></synopsis>
+  <p>Emitted when the inspector page is closed. If you are using your own
+inspector window, you should connect to this signal and destroy your
+window.</p>
+
+<terms>
+<item>
+<title><code>webInspector</code></title>
+<p>instance of <link xref="WebKit2.WebInspector"/> that is emitting the signal</p>
+</item>
+</terms>
+
+</page>

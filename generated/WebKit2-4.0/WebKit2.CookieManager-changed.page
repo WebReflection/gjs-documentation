@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<page id="WebKit2.CookieManager-changed"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.CookieManager" group="signal" type="guide"/>
+    <title type="link" role="topic">changed</title>
+  </info>
+  <title>WebKit2.CookieManager::changed</title>
+  <synopsis><code mime="text/x-gjs">
+connect('changed', function (cookieManager, ): void);
+  </code></synopsis>
+  <p>This signal is emitted when cookies are added, removed or modified.</p>
+
+<terms>
+<item>
+<title><code>cookieManager</code></title>
+<p>instance of <link xref="WebKit2.CookieManager"/> that is emitting the signal</p>
+</item>
+</terms>
+
+</page>

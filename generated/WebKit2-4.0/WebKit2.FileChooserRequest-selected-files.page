@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page id="WebKit2.FileChooserRequest-selected-files"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.FileChooserRequest" group="property" type="guide"/>
+    <title type="link" role="topic">selected-files</title>
+  </info>
+  <title>WebKit2.FileChooserRequest.selected_files</title>
+  <synopsis><code mime="text/x-gjs">
+FileChooserRequest.selected_files: Array(String) (Read)
+  </code></synopsis>
+  <p>A <code>null</code>-terminated array of strings containing the list of
+selected files associated to the current request. See
+<link xref="WebKit2.FileChooserRequest.get_selected_files"/> for more details.</p>
+
+</page>

@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="WebKit2.CookieManager.delete_cookies_for_domain"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.CookieManager" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_cookie_manager_delete_cookies_for_domain</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>domain</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.CookieManager.prototype.delete_cookies_for_domain</title>
+  <synopsis><code mime="text/x-gjs">
+function delete_cookies_for_domain(domain: String): void {
+    // Gjs wrapper for webkit_cookie_manager_delete_cookies_for_domain()
+}
+  </code></synopsis>
+  <p>Remove all cookies of <code>cookie_manager</code> for the given <code>domain</code>.</p>
+
+<terms>
+<item>
+<title><code>domain</code></title>
+  <p>a domain name</p>
+</item>
+</terms>
+
+</page>

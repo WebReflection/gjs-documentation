@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page id="WebKit2.NavigationPolicyDecision-navigation-type"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.NavigationPolicyDecision" group="property" type="guide"/>
+    <title type="link" role="topic">navigation-type</title>
+  </info>
+  <title>WebKit2.NavigationPolicyDecision.navigation_type</title>
+  <synopsis><code mime="text/x-gjs">
+NavigationPolicyDecision.navigation_type: <link xref="WebKit2.NavigationType">WebKit2.NavigationType</link> (Read)
+  </code></synopsis>
+  <p>The type of navigation that triggered this policy decision. This is
+useful for enacting different policies depending on what type of user
+action caused the navigation.</p>
+
+</page>

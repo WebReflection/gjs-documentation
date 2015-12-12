@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView.stop_loading"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_web_view_stop_loading</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.WebView.prototype.stop_loading</title>
+  <synopsis><code mime="text/x-gjs">
+function stop_loading(): void {
+    // Gjs wrapper for webkit_web_view_stop_loading()
+}
+  </code></synopsis>
+  <p>Stops any ongoing loading operation in <code>web_view</code>.
+This method does nothing if no content is being loaded.
+If there is a loading operation in progress, it will be cancelled and
+<link xref="WebKit2.WebView-load-failed"/> signal will be emitted with
+<link xref="WebKit2.NetworkError"/>.cancelled error.</p>
+
+
+</page>

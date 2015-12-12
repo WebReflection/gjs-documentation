@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="WebKit2.SecurityManager.register_uri_scheme_as_cors_enabled"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.SecurityManager" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_security_manager_register_uri_scheme_as_cors_enabled</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>scheme</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.SecurityManager.prototype.register_uri_scheme_as_cors_enabled</title>
+  <synopsis><code mime="text/x-gjs">
+function register_uri_scheme_as_cors_enabled(scheme: String): void {
+    // Gjs wrapper for webkit_security_manager_register_uri_scheme_as_cors_enabled()
+}
+  </code></synopsis>
+  <p>Register <code>scheme</code> as a CORS (Cross-origin resource sharing) enabled scheme.
+This means that CORS requests are allowed. See W3C CORS specification
+http://www.w3.org/TR/cors/.</p>
+
+<terms>
+<item>
+<title><code>scheme</code></title>
+  <p>a URI scheme</p>
+</item>
+</terms>
+
+</page>

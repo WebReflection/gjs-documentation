@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebContext.get_spell_checking_enabled"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebContext" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>webkit_web_context_get_spell_checking_enabled</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.WebContext.prototype.get_spell_checking_enabled</title>
+  <synopsis><code mime="text/x-gjs">
+function get_spell_checking_enabled(): Boolean {
+    // Gjs wrapper for webkit_web_context_get_spell_checking_enabled()
+}
+  </code></synopsis>
+  <p>Get whether spell checking feature is currently enabled.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> If spell checking is enabled, or <code>false</code> otherwise.</p>
+</item>
+</terms>
+
+</page>

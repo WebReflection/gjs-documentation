@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="WebKit2.NavigationPolicyDecision-navigation-action"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.NavigationPolicyDecision" group="property" type="guide"/>
+    <title type="link" role="topic">navigation-action</title>
+  </info>
+  <title>WebKit2.NavigationPolicyDecision.navigation_action</title>
+  <synopsis><code mime="text/x-gjs">
+NavigationPolicyDecision.navigation_action: <link xref="WebKit2.NavigationAction">WebKit2.NavigationAction</link> (Read)
+  </code></synopsis>
+  <p>The <link xref="WebKit2.NavigationAction"/> that triggered this policy decision.</p>
+  <p>Since 2.6</p>
+</page>

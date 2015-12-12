@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="WebKit2.URIRequest.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.URIRequest" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>WebKit2.URIRequest</api:type>
+      </api:returns>
+      <api:name>webkit_uri_request_new</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>uri</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.URIRequest.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(uri: String): <link xref="WebKit2.URIRequest">WebKit2.URIRequest</link> {
+    // Gjs wrapper for webkit_uri_request_new()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="WebKit2.URIRequest"/> for the given URI.</p>
+
+<terms>
+<item>
+<title><code>uri</code></title>
+  <p>an URI</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>a new <link xref="WebKit2.URIRequest"/></p>
+</item>
+</terms>
+
+</page>

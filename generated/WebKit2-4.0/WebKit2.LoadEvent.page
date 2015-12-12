@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="WebKit2.LoadEvent"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>WebKit2.LoadEvent</title>
+  <p>Enum values used to denote the different events that happen during a
+<link xref="WebKit2.WebView"/> load operation.</p>
+
+<terms>
+<item>
+<title><code>LoadEvent.STARTED</code></title>
+  <p>A new load request has been made.
+No data has been received yet, empty structures have
+been allocated to perform the load; the load may still
+fail due to transport issues such as not being able to
+resolve a name, or connect to a port.</p>
+</item>
+<item>
+<title><code>LoadEvent.REDIRECTED</code></title>
+  <p>A provisional data source received
+a server redirect.</p>
+</item>
+<item>
+<title><code>LoadEvent.COMMITTED</code></title>
+  <p>The content started arriving for a page load.
+The necessary transport requirements are stabilished, and the
+load is being performed.</p>
+</item>
+<item>
+<title><code>LoadEvent.FINISHED</code></title>
+  <p>Load completed. All resources are done loading
+or there was an error during the load operation.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

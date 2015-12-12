@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Settings-enable-write-console-messages-to-stdout"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Settings" group="property" type="guide"/>
+    <title type="link" role="topic">enable-write-console-messages-to-stdout</title>
+  </info>
+  <title>WebKit2.Settings.enable_write_console_messages_to_stdout</title>
+  <synopsis><code mime="text/x-gjs">
+Settings.enable_write_console_messages_to_stdout: Boolean (Read / Write / Construct)
+  </code></synopsis>
+  <p>Enable or disable writing console messages to stdout. These are messages
+sent to the console with console.log and related methods.</p>
+  <p>Since 2.2</p>
+</page>

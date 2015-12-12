@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView-close"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="signal" type="guide"/>
+    <title type="link" role="topic">close</title>
+  </info>
+  <title>WebKit2.WebView::close</title>
+  <synopsis><code mime="text/x-gjs">
+connect('close', function (webView, ): void);
+  </code></synopsis>
+  <p>Emitted when closing a <link xref="WebKit2.WebView"/> is requested. This occurs when a
+call is made from JavaScript's &lt;function&gt;window.close&lt;/function&gt; function.
+It is the owner's responsibility to handle this signal to hide or
+destroy the <link xref="WebKit2.WebView"/>, if necessary.</p>
+
+<terms>
+<item>
+<title><code>webView</code></title>
+<p>instance of <link xref="WebKit2.WebView"/> that is emitting the signal</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebInspector.is_attached"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebInspector" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>webkit_web_inspector_is_attached</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.WebInspector.prototype.is_attached</title>
+  <synopsis><code mime="text/x-gjs">
+function is_attached(): Boolean {
+    // Gjs wrapper for webkit_web_inspector_is_attached()
+}
+  </code></synopsis>
+  <p>Whether the <code>inspector</code> view is currently attached to the same window that contains
+the inspected view.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if <code>inspector</code> is currently attached or <code>false</code> otherwise</p>
+</item>
+</terms>
+
+</page>

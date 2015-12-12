@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="WebKit2.URIResponse-status-code"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.URIResponse" group="property" type="guide"/>
+    <title type="link" role="topic">status-code</title>
+  </info>
+  <title>WebKit2.URIResponse.status_code</title>
+  <synopsis><code mime="text/x-gjs">
+URIResponse.status_code: Number(guint) (Read)
+  </code></synopsis>
+  <p>The status code of the response as returned by the server.</p>
+
+</page>

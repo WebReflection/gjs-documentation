@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="WebKit2.ContextMenu.get_items"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.ContextMenu" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Array(WebKit2.ContextMenuItem)</api:type>
+      </api:returns>
+      <api:name>webkit_context_menu_get_items</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.ContextMenu.prototype.get_items</title>
+  <synopsis><code mime="text/x-gjs">
+function get_items(): Array(<link xref="WebKit2.ContextMenuItem">WebKit2.ContextMenuItem</link>) {
+    // Gjs wrapper for webkit_context_menu_get_items()
+}
+  </code></synopsis>
+  <p>Returns the item list of <code>menu</code>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link href="../GLib-2.0/GLib.List.html">GLib.List</link> of
+   <link xref="WebKit2.ContextMenuItem"/>&lt;!-- --&gt;s</p>
+</item>
+</terms>
+
+</page>

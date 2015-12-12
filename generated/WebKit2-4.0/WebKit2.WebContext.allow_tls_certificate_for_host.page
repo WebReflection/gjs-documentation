@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebContext.allow_tls_certificate_for_host"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebContext" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_web_context_allow_tls_certificate_for_host</api:name>
+      <api:arg>
+        <api:type>Gio.TlsCertificate</api:type>
+        <api:name>certificate</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>host</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.WebContext.prototype.allow_tls_certificate_for_host</title>
+  <synopsis><code mime="text/x-gjs">
+function allow_tls_certificate_for_host(certificate: <link href="../Gio-2.0/Gio.TlsCertificate.html">Gio.TlsCertificate</link>, host: String): void {
+    // Gjs wrapper for webkit_web_context_allow_tls_certificate_for_host()
+}
+  </code></synopsis>
+  <p>Ignore further TLS errors on the <code>host</code> for the certificate present in @info.</p>
+  <p>Since 2.6</p>
+<terms>
+<item>
+<title><code>certificate</code></title>
+  <p>a <link href="../Gio-2.0/Gio.TlsCertificate.html">Gio.TlsCertificate</link></p>
+</item>
+<item>
+<title><code>host</code></title>
+  <p>the host for which a certificate is to be allowed</p>
+</item>
+</terms>
+
+</page>

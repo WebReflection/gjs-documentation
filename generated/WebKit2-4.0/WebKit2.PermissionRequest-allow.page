@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<page id="WebKit2.PermissionRequest-allow"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.PermissionRequest" group="vfunc" type="guide"/>
+  </info>
+  <title>WebKit2.PermissionRequest::allow</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_allow(): void {
+}
+  </code></synopsis>
+  <p>Allow the action which triggered this request.</p>
+
+<terms>
+</terms>
+
+</page>

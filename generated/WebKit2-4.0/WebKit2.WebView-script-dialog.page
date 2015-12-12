@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView-script-dialog"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="signal" type="guide"/>
+    <title type="link" role="topic">script-dialog</title>
+  </info>
+  <title>WebKit2.WebView::script-dialog</title>
+  <synopsis><code mime="text/x-gjs">
+connect('script-dialog', function (webView, dialog: <link xref="WebKit2.ScriptDialog">WebKit2.ScriptDialog</link>, ): Boolean);
+  </code></synopsis>
+  <p>Emitted when JavaScript code calls &lt;function&gt;window.alert&lt;/function&gt;,
+&lt;function&gt;window.confirm&lt;/function&gt; or &lt;function&gt;window.prompt&lt;/function&gt;.
+The <code>dialog</code> parameter should be used to build the dialog.
+If the signal is not handled a different dialog will be built and shown depending
+on the dialog type:
+&lt;itemizedlist&gt;
+&lt;listitem&gt;&lt;para&gt;
+ <link xref="WebKit2.ScriptDialogType"/>.alert: message dialog with a single Close button.
+&lt;/para&gt;&lt;/listitem&gt;
+&lt;listitem&gt;&lt;para&gt;
+ <link xref="WebKit2.ScriptDialogType"/>.confirm: message dialog with OK and Cancel buttons.
+&lt;/para&gt;&lt;/listitem&gt;
+&lt;listitem&gt;&lt;para&gt;
+ <link xref="WebKit2.ScriptDialogType"/>.prompt: message dialog with OK and Cancel buttons and
+ a text entry with the default text.
+&lt;/para&gt;&lt;/listitem&gt;
+&lt;/itemizedlist&gt;</p>
+
+<terms>
+<item>
+<title><code>webView</code></title>
+<p>instance of <link xref="WebKit2.WebView"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>dialog</code></title>
+  <p>the <link xref="WebKit2.ScriptDialog"/> to show</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> to stop other handlers from being invoked for the event.
+   <code>false</code> to propagate the event further.</p>
+</item>
+</terms>
+
+</page>

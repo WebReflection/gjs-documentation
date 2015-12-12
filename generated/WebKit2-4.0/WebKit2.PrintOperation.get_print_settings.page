@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="WebKit2.PrintOperation.get_print_settings"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.PrintOperation" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gtk.PrintSettings</api:type>
+      </api:returns>
+      <api:name>webkit_print_operation_get_print_settings</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.PrintOperation.prototype.get_print_settings</title>
+  <synopsis><code mime="text/x-gjs">
+function get_print_settings(): <link href="../Gtk-3.0/Gtk.PrintSettings.html">Gtk.PrintSettings</link> {
+    // Gjs wrapper for webkit_print_operation_get_print_settings()
+}
+  </code></synopsis>
+  <p>Return the current print settings of <code>print_operation</code>. It returns <code>null</code> until
+either <link xref="WebKit2.PrintOperation.set_print_settings"/> or <link xref="WebKit2.PrintOperation.run_dialog"/>
+have been called.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the current <link href="../Gtk-3.0/Gtk.PrintSettings.html">Gtk.PrintSettings</link> of <code>print_operation</code>.</p>
+</item>
+</terms>
+
+</page>

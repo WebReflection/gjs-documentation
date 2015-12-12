@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebsiteDataManager-base-cache-directory"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebsiteDataManager" group="property" type="guide"/>
+    <title type="link" role="topic">base-cache-directory</title>
+  </info>
+  <title>WebKit2.WebsiteDataManager.base_cache_directory</title>
+  <synopsis><code mime="text/x-gjs">
+WebsiteDataManager.base_cache_directory: String (Read / Write / Construct Only)
+  </code></synopsis>
+  <p>The base directory for Website cache. This is used as a base directory
+for any Website cache when no specific cache directory has been provided.</p>
+  <p>Since 2.10</p>
+</page>

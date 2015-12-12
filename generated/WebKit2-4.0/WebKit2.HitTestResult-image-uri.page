@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="WebKit2.HitTestResult-image-uri"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.HitTestResult" group="property" type="guide"/>
+    <title type="link" role="topic">image-uri</title>
+  </info>
+  <title>WebKit2.HitTestResult.image_uri</title>
+  <synopsis><code mime="text/x-gjs">
+HitTestResult.image_uri: String (Read / Write / Construct Only)
+  </code></synopsis>
+  <p>The URI of the image if flag <link xref="WebKit2.HitTestResultContext"/>.image
+is present in <link xref="WebKit2.HitTestResult-context"/></p>
+
+</page>

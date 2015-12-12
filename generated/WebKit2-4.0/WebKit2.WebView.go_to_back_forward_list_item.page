@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView.go_to_back_forward_list_item"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_web_view_go_to_back_forward_list_item</api:name>
+      <api:arg>
+        <api:type>WebKit2.BackForwardListItem</api:type>
+        <api:name>list_item</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.WebView.prototype.go_to_back_forward_list_item</title>
+  <synopsis><code mime="text/x-gjs">
+function go_to_back_forward_list_item(list_item: <link xref="WebKit2.BackForwardListItem">WebKit2.BackForwardListItem</link>): void {
+    // Gjs wrapper for webkit_web_view_go_to_back_forward_list_item()
+}
+  </code></synopsis>
+  <p>Loads the specific history item <code>list_item</code>.
+You can monitor the load operation by connecting to
+<link xref="WebKit2.WebView-load-changed"/> signal.</p>
+
+<terms>
+<item>
+<title><code>list_item</code></title>
+  <p>a <link xref="WebKit2.BackForwardListItem"/></p>
+</item>
+</terms>
+
+</page>

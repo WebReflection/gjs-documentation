@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView-run-file-chooser"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="signal" type="guide"/>
+    <title type="link" role="topic">run-file-chooser</title>
+  </info>
+  <title>WebKit2.WebView::run-file-chooser</title>
+  <synopsis><code mime="text/x-gjs">
+connect('run-file-chooser', function (webView, request: <link xref="WebKit2.FileChooserRequest">WebKit2.FileChooserRequest</link>, ): Boolean);
+  </code></synopsis>
+  <p>This signal is emitted when the user interacts with a &amp;lt;input
+type='file' /&amp;gt; HTML element, requesting from WebKit to show
+a dialog to select one or more files to be uploaded. To let the
+application know the details of the file chooser, as well as to
+allow the client application to either cancel the request or
+perform an actual selection of files, the signal will pass an
+instance of the <link xref="WebKit2.FileChooserRequest"/> in the <code>request</code>
+argument.</p>  <p>The default signal handler will asynchronously run a regular
+<link href="../Gtk-3.0/Gtk.FileChooserDialog.html">Gtk.FileChooserDialog</link> for the user to interact with.</p>
+
+<terms>
+<item>
+<title><code>webView</code></title>
+<p>instance of <link xref="WebKit2.WebView"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>request</code></title>
+  <p>a <link xref="WebKit2.FileChooserRequest"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> to stop other handlers from being invoked for the event.
+  <code>false</code> to propagate the event further.</p>
+</item>
+</terms>
+
+</page>

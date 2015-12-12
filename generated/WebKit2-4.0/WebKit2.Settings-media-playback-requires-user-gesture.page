@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Settings-media-playback-requires-user-gesture"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Settings" group="property" type="guide"/>
+    <title type="link" role="topic">media-playback-requires-user-gesture</title>
+  </info>
+  <title>WebKit2.Settings.media_playback_requires_user_gesture</title>
+  <synopsis><code mime="text/x-gjs">
+Settings.media_playback_requires_user_gesture: Boolean (Read / Write / Construct)
+  </code></synopsis>
+  <p>Whether a user gesture (such as clicking the play button)
+would be required to start media playback or load media. This is off
+by default, so media playback could start automatically.
+Setting it on requires a gesture by the user to start playback, or to
+load the media.</p>
+
+</page>

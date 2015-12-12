@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Settings-enable-webaudio"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Settings" group="property" type="guide"/>
+    <title type="link" role="topic">enable-webaudio</title>
+  </info>
+  <title>WebKit2.Settings.enable_webaudio</title>
+  <synopsis><code mime="text/x-gjs">
+Settings.enable_webaudio: Boolean (Read / Write / Construct)
+  </code></synopsis>
+  <p>Enable or disable support for WebAudio on pages. WebAudio is an
+experimental proposal for allowing web pages to generate Audio
+WAVE data from JavaScript. The standard is currently a
+work-in-progress by the W3C Audio Working Group.</p>  <p>See also https://dvcs.w3.org/hg/audio/raw-file/tip/webaudio/specification.html</p>
+
+</page>

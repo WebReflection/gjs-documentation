@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebContext.set_web_process_count_limit"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebContext" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_web_context_set_web_process_count_limit</api:name>
+      <api:arg>
+        <api:type>Number(guint)</api:type>
+        <api:name>limit</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.WebContext.prototype.set_web_process_count_limit</title>
+  <synopsis><code mime="text/x-gjs">
+function set_web_process_count_limit(limit: Number(guint)): void {
+    // Gjs wrapper for webkit_web_context_set_web_process_count_limit()
+}
+  </code></synopsis>
+  <p>Sets the maximum number of web processes that can be created at the same time for the <code>context</code>.
+The default value is 0 and means no limit.</p>  <p>This method **must be called before any web process has been created**,
+as early as possible in your application. Calling it later will make
+your application crash.</p>
+  <p>Since 2.10</p>
+<terms>
+<item>
+<title><code>limit</code></title>
+  <p>the maximum number of web processes</p>
+</item>
+</terms>
+
+</page>

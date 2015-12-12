@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="WebKit2.FileChooserRequest.get_select_multiple"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.FileChooserRequest" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>webkit_file_chooser_request_get_select_multiple</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.FileChooserRequest.prototype.get_select_multiple</title>
+  <synopsis><code mime="text/x-gjs">
+function get_select_multiple(): Boolean {
+    // Gjs wrapper for webkit_file_chooser_request_get_select_multiple()
+}
+  </code></synopsis>
+  <p>Determine whether the file chooser associated to this
+<link xref="WebKit2.FileChooserRequest"/> should allow selecting multiple files,
+which depends on the HTML input element having a 'multiple'
+attribute defined.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if the file chooser should allow selecting multiple files or <code>false</code> otherwise.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView-permission-request"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="signal" type="guide"/>
+    <title type="link" role="topic">permission-request</title>
+  </info>
+  <title>WebKit2.WebView::permission-request</title>
+  <synopsis><code mime="text/x-gjs">
+connect('permission-request', function (webView, request: <link xref="WebKit2.PermissionRequest">WebKit2.PermissionRequest</link>, ): Boolean);
+  </code></synopsis>
+  <p>This signal is emitted when WebKit is requesting the client to
+decide about a permission request, such as allowing the browser
+to switch to fullscreen mode, sharing its location or similar
+operations.</p>  <p>A possible way to use this signal could be through a dialog
+allowing the user decide what to do with the request:</p>  <p>&lt;informalexample&gt;&lt;programlisting&gt;
+static gboolean permission_request_cb (WebKitWebView *web_view,
+                                       WebKitPermissionRequest *request,
+                                       GtkWindow *parent_window)
+{
+    GtkWidget *dialog = gtk_message_dialog_new (parent_window,
+                                                GTK_DIALOG_MODAL,
+                                                GTK_MESSAGE_QUESTION,
+                                                GTK_BUTTONS_YES_NO,
+                                                "Allow Permission Request?");
+    gtk_widget_show (dialog);
+    gint result = gtk_dialog_run (GTK_DIALOG (dialog));</p>  <p>    switch (result) {
+    case GTK_RESPONSE_YES:
+        webkit_permission_request_allow (request);
+        break;
+    default:
+        webkit_permission_request_deny (request);
+        break;
+    }
+    gtk_widget_destroy (dialog);</p>  <p>    return TRUE;
+}
+&lt;/programlisting&gt;&lt;/informalexample&gt;</p>  <p>It is possible to handle permission requests asynchronously, by
+simply calling g_object_ref() on the <code>request</code> argument and
+returning <code>true</code> to block the default signal handler.  If the
+last reference is removed on a <link xref="WebKit2.PermissionRequest"/> and the
+request has not been handled, <link xref="WebKit2.PermissionRequest.deny"/>
+will be the default action.</p>  <p>If the signal is not handled, the <code>request</code> will be completed automatically
+by the specific <link xref="WebKit2.PermissionRequest"/> that could allow or deny it. Check the
+documentation of classes implementing <link xref="WebKit2.PermissionRequest"/> interface to know
+their default action.</p>
+
+<terms>
+<item>
+<title><code>webView</code></title>
+<p>instance of <link xref="WebKit2.WebView"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>request</code></title>
+  <p>the <link xref="WebKit2.PermissionRequest"/></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> to stop other handlers from being invoked for the event.
+  <code>false</code> to propagate the event further.</p>
+</item>
+</terms>
+
+</page>

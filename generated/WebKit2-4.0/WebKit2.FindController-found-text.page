@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="WebKit2.FindController-found-text"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.FindController" group="signal" type="guide"/>
+    <title type="link" role="topic">found-text</title>
+  </info>
+  <title>WebKit2.FindController::found-text</title>
+  <synopsis><code mime="text/x-gjs">
+connect('found-text', function (findController, match_count: Number(guint), ): void);
+  </code></synopsis>
+  <p>This signal is emitted when a given text is found in the web
+page text. It will be issued if the text is found
+asynchronously after a call to <link xref="WebKit2.FindController.search"/>,
+<link xref="WebKit2.FindController.search_next"/> or
+<link xref="WebKit2.FindController.search_previous"/>.</p>
+
+<terms>
+<item>
+<title><code>findController</code></title>
+<p>instance of <link xref="WebKit2.FindController"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>match_count</code></title>
+  <p>the number of matches found of the search text</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebResource-uri"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebResource" group="property" type="guide"/>
+    <title type="link" role="topic">uri</title>
+  </info>
+  <title>WebKit2.WebResource.uri</title>
+  <synopsis><code mime="text/x-gjs">
+WebResource.uri: String (Read)
+  </code></synopsis>
+  <p>The current active URI of the <link xref="WebKit2.WebResource"/>.
+See <link xref="WebKit2.WebResource.get_uri"/> for more details.</p>
+
+</page>

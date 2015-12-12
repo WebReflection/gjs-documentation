@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="WebKit2.URIResponse-content-length"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.URIResponse" group="property" type="guide"/>
+    <title type="link" role="topic">content-length</title>
+  </info>
+  <title>WebKit2.URIResponse.content_length</title>
+  <synopsis><code mime="text/x-gjs">
+URIResponse.content_length: Number(guint64) (Read)
+  </code></synopsis>
+  <p>The expected content length of the response.</p>
+
+</page>

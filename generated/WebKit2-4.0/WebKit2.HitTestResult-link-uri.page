@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="WebKit2.HitTestResult-link-uri"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.HitTestResult" group="property" type="guide"/>
+    <title type="link" role="topic">link-uri</title>
+  </info>
+  <title>WebKit2.HitTestResult.link_uri</title>
+  <synopsis><code mime="text/x-gjs">
+HitTestResult.link_uri: String (Read / Write / Construct Only)
+  </code></synopsis>
+  <p>The URI of the link if flag <link xref="WebKit2.HitTestResultContext"/>.link
+is present in <link xref="WebKit2.HitTestResult-context"/></p>
+
+</page>

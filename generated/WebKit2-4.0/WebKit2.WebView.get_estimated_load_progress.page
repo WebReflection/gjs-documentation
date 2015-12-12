@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView.get_estimated_load_progress"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gdouble)</api:type>
+      </api:returns>
+      <api:name>webkit_web_view_get_estimated_load_progress</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.WebView.prototype.get_estimated_load_progress</title>
+  <synopsis><code mime="text/x-gjs">
+function get_estimated_load_progress(): Number(gdouble) {
+    // Gjs wrapper for webkit_web_view_get_estimated_load_progress()
+}
+  </code></synopsis>
+  <p>Gets the value of the <link xref="WebKit2.WebView-estimated-load-progress"/> property.
+You can monitor the estimated progress of a load operation by
+connecting to the notify::estimated-load-progress signal of <code>web_view</code>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>an estimate of the of the percent complete for a document
+    load as a range from 0.0 to 1.0.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView-ready-to-show"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="signal" type="guide"/>
+    <title type="link" role="topic">ready-to-show</title>
+  </info>
+  <title>WebKit2.WebView::ready-to-show</title>
+  <synopsis><code mime="text/x-gjs">
+connect('ready-to-show', function (webView, ): void);
+  </code></synopsis>
+  <p>Emitted after <link xref="WebKit2.WebView-create"/> on the newly created <link xref="WebKit2.WebView"/>
+when it should be displayed to the user. When this signal is emitted
+all the information about how the window should look, including
+size, position, whether the location, status and scrollbars
+should be displayed, is already set on the <link xref="WebKit2.WindowProperties"/>
+of @web_view. See also <link xref="WebKit2.WebView.get_window_properties"/>.</p>
+
+<terms>
+<item>
+<title><code>webView</code></title>
+<p>instance of <link xref="WebKit2.WebView"/> that is emitting the signal</p>
+</item>
+</terms>
+
+</page>

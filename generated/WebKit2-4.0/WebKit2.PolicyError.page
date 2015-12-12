@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="WebKit2.PolicyError"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>WebKit2.PolicyError</title>
+  <p>Enum values used to denote the various policy errors.</p>
+
+<terms>
+<item>
+<title><code>PolicyError.FAILED</code></title>
+  <p>Generic load failure due to policy error</p>
+</item>
+<item>
+<title><code>PolicyError.CANNOT_SHOW_MIME_TYPE</code></title>
+  <p>Load failure due to unsupported mime type</p>
+</item>
+<item>
+<title><code>PolicyError.CANNOT_SHOW_URI</code></title>
+  <p>Load failure due to URI that can not be shown</p>
+</item>
+<item>
+<title><code>PolicyError.FRAME_LOAD_INTERRUPTED_BY_POLICY_CHANGE</code></title>
+  <p>Load failure due to frame load interruption by policy change</p>
+</item>
+<item>
+<title><code>PolicyError.CANNOT_USE_RESTRICTED_PORT</code></title>
+  <p>Load failure due to port restriction</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

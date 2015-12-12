@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="WebKit2.PrintOperation.set_page_setup"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.PrintOperation" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_print_operation_set_page_setup</api:name>
+      <api:arg>
+        <api:type>Gtk.PageSetup</api:type>
+        <api:name>page_setup</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.PrintOperation.prototype.set_page_setup</title>
+  <synopsis><code mime="text/x-gjs">
+function set_page_setup(page_setup: <link href="../Gtk-3.0/Gtk.PageSetup.html">Gtk.PageSetup</link>): void {
+    // Gjs wrapper for webkit_print_operation_set_page_setup()
+}
+  </code></synopsis>
+  <p>Set the current page setup of <code>print_operation</code>. Current page setup is used for the
+initial values of the print dialog when <link xref="WebKit2.PrintOperation.run_dialog"/> is called.</p>
+
+<terms>
+<item>
+<title><code>page_setup</code></title>
+  <p>a <link href="../Gtk-3.0/Gtk.PageSetup.html">Gtk.PageSetup</link> to set</p>
+</item>
+</terms>
+
+</page>

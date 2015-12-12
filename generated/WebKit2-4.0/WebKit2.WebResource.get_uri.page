@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebResource.get_uri"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebResource" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>webkit_web_resource_get_uri</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.WebResource.prototype.get_uri</title>
+  <synopsis><code mime="text/x-gjs">
+function get_uri(): String {
+    // Gjs wrapper for webkit_web_resource_get_uri()
+}
+  </code></synopsis>
+  <p>Returns the current active URI of <code>resource</code>. The active URI might change during
+a load operation:</p>  <p>&lt;orderedlist&gt;
+&lt;listitem&gt;&lt;para&gt;
+  When the resource load starts, the active URI is the requested URI
+&lt;/para&gt;&lt;/listitem&gt;
+&lt;listitem&gt;&lt;para&gt;
+  When the initial request is sent to the server, <link xref="WebKit2.WebResource-sent-request"/>
+  signal is emitted without a redirected response, the active URI is the URI of
+  the request sent to the server.
+&lt;/para&gt;&lt;/listitem&gt;
+&lt;listitem&gt;&lt;para&gt;
+  In case of a server redirection, <link xref="WebKit2.WebResource-sent-request"/> signal
+  is emitted again with a redirected response, the active URI is the URI the request
+  was redirected to.
+&lt;/para&gt;&lt;/listitem&gt;
+&lt;listitem&gt;&lt;para&gt;
+  When the response is received from the server, the active URI is the final
+  one and it will not change again.
+&lt;/para&gt;&lt;/listitem&gt;
+&lt;/orderedlist&gt;</p>  <p>You can monitor the active URI by connecting to the notify::uri
+signal of <code>resource</code>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the current active URI of <code>resource</code></p>
+</item>
+</terms>
+
+</page>

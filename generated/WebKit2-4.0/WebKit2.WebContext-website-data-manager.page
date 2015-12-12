@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebContext-website-data-manager"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebContext" group="property" type="guide"/>
+    <title type="link" role="topic">website-data-manager</title>
+  </info>
+  <title>WebKit2.WebContext.website_data_manager</title>
+  <synopsis><code mime="text/x-gjs">
+WebContext.website_data_manager: <link xref="WebKit2.WebsiteDataManager">WebKit2.WebsiteDataManager</link> (Read / Write / Construct Only)
+  </code></synopsis>
+  <p>The <link xref="WebKit2.WebsiteDataManager"/> associated with this context.</p>
+  <p>Since 2.10</p>
+</page>

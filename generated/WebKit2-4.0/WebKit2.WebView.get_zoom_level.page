@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView.get_zoom_level"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(gdouble)</api:type>
+      </api:returns>
+      <api:name>webkit_web_view_get_zoom_level</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.WebView.prototype.get_zoom_level</title>
+  <synopsis><code mime="text/x-gjs">
+function get_zoom_level(): Number(gdouble) {
+    // Gjs wrapper for webkit_web_view_get_zoom_level()
+}
+  </code></synopsis>
+  <p>Get the zoom level of <code>web_view</code>, i.e. the factor by which the
+view contents are scaled with respect to their original size.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the current zoom level of <code>web_view</code></p>
+</item>
+</terms>
+
+</page>

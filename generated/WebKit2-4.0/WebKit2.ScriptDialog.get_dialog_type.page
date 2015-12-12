@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="WebKit2.ScriptDialog.get_dialog_type"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.ScriptDialog" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>WebKit2.ScriptDialogType</api:type>
+      </api:returns>
+      <api:name>webkit_script_dialog_get_dialog_type</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.ScriptDialog.prototype.get_dialog_type</title>
+  <synopsis><code mime="text/x-gjs">
+function get_dialog_type(): <link xref="WebKit2.ScriptDialogType">WebKit2.ScriptDialogType</link> {
+    // Gjs wrapper for webkit_script_dialog_get_dialog_type()
+}
+  </code></synopsis>
+  <p>Get the dialog type of a <link xref="WebKit2.ScriptDialog"/>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the <link xref="WebKit2.ScriptDialogType"/> of <code>dialog</code></p>
+</item>
+</terms>
+
+</page>

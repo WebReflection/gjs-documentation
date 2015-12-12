@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView-enter-fullscreen"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="signal" type="guide"/>
+    <title type="link" role="topic">enter-fullscreen</title>
+  </info>
+  <title>WebKit2.WebView::enter-fullscreen</title>
+  <synopsis><code mime="text/x-gjs">
+connect('enter-fullscreen', function (webView, ): Boolean);
+  </code></synopsis>
+  <p>Emitted when JavaScript code calls
+&lt;function&gt;element.webkitRequestFullScreen&lt;/function&gt;. If the
+signal is not handled the <link xref="WebKit2.WebView"/> will proceed to full screen
+its top level window. This signal can be used by client code to
+request permission to the user prior doing the full screen
+transition and eventually prepare the top-level window
+(e.g. hide some widgets that would otherwise be part of the
+full screen window).</p>
+
+<terms>
+<item>
+<title><code>webView</code></title>
+<p>instance of <link xref="WebKit2.WebView"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> to stop other handlers from being invoked for the event.
+   <code>false</code> to continue emission of the event.</p>
+</item>
+</terms>
+
+</page>

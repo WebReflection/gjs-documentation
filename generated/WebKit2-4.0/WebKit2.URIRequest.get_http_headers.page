@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="WebKit2.URIRequest.get_http_headers"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.URIRequest" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Soup.MessageHeaders</api:type>
+      </api:returns>
+      <api:name>webkit_uri_request_get_http_headers</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.URIRequest.prototype.get_http_headers</title>
+  <synopsis><code mime="text/x-gjs">
+function get_http_headers(): <link href="../Soup-2.4/Soup.MessageHeaders.html">Soup.MessageHeaders</link> {
+    // Gjs wrapper for webkit_uri_request_get_http_headers()
+}
+  </code></synopsis>
+  <p>Get the HTTP headers of a <link xref="WebKit2.URIRequest"/> as a <link href="../Soup-2.4/Soup.MessageHeaders.html">Soup.MessageHeaders</link>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link href="../Soup-2.4/Soup.MessageHeaders.html">Soup.MessageHeaders</link> with the HTTP headers of <code>request</code>
+   or <code>null</code> if <code>request</code> is not an HTTP request.</p>
+</item>
+</terms>
+
+</page>

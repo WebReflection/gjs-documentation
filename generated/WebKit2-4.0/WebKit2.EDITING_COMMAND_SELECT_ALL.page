@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="WebKit2.EDITING_COMMAND_SELECT_ALL"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>WebKit2.EDITING_COMMAND_SELECT_ALL</title>
+  <p>The select all command. Selects all the content of the current text field in
+a <link xref="WebKit2.WebView"/>.
+It is always possible to select all text, no matter whether the
+<link xref="WebKit2.WebView"/> content is editable or not. You can still check it
+with <link xref="WebKit2.WebView.can_execute_editing_command"/>.</p>
+
+</page>

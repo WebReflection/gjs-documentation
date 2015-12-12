@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="WebKit2.FindController.search_finish"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.FindController" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_find_controller_search_finish</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.FindController.prototype.search_finish</title>
+  <synopsis><code mime="text/x-gjs">
+function search_finish(): void {
+    // Gjs wrapper for webkit_find_controller_search_finish()
+}
+  </code></synopsis>
+  <p>Finishes a find operation started by
+<link xref="WebKit2.FindController.search"/>. It will basically unhighlight
+every text match found.</p>  <p>This method will be typically called when the search UI is
+closed/hidden by the client application.</p>
+
+
+</page>

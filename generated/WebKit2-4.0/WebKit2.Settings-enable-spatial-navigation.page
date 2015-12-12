@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Settings-enable-spatial-navigation"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Settings" group="property" type="guide"/>
+    <title type="link" role="topic">enable-spatial-navigation</title>
+  </info>
+  <title>WebKit2.Settings.enable_spatial_navigation</title>
+  <synopsis><code mime="text/x-gjs">
+Settings.enable_spatial_navigation: Boolean (Read / Write / Construct)
+  </code></synopsis>
+  <p>Whether to enable Spatial Navigation. This feature consists in the ability
+to navigate between focusable elements in a Web page, such as hyperlinks
+and form controls, by using Left, Right, Up and Down arrow keys.
+For example, if an user presses the Right key, heuristics determine whether
+there is an element they might be trying to reach towards the right, and if
+there are multiple elements, which element they probably wants.</p>
+  <p>Since 2.3</p>
+</page>

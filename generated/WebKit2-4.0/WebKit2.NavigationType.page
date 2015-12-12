@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<page id="WebKit2.NavigationType"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>WebKit2.NavigationType</title>
+  <p>Enum values used to denote the various navigation types.</p>
+
+<terms>
+<item>
+<title><code>NavigationType.LINK_CLICKED</code></title>
+  <p>The navigation was triggered by clicking a link.</p>
+</item>
+<item>
+<title><code>NavigationType.FORM_SUBMITTED</code></title>
+  <p>The navigation was triggered by submitting a form.</p>
+</item>
+<item>
+<title><code>NavigationType.BACK_FORWARD</code></title>
+  <p>The navigation was triggered by navigating forward or backward.</p>
+</item>
+<item>
+<title><code>NavigationType.RELOAD</code></title>
+  <p>The navigation was triggered by reloading.</p>
+</item>
+<item>
+<title><code>NavigationType.FORM_RESUBMITTED</code></title>
+  <p>The navigation was triggered by resubmitting a form.</p>
+</item>
+<item>
+<title><code>NavigationType.OTHER</code></title>
+  <p>The navigation was triggered by some other action.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Settings.get_media_playback_requires_user_gesture"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Settings" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>webkit_settings_get_media_playback_requires_user_gesture</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.Settings.prototype.get_media_playback_requires_user_gesture</title>
+  <synopsis><code mime="text/x-gjs">
+function get_media_playback_requires_user_gesture(): Boolean {
+    // Gjs wrapper for webkit_settings_get_media_playback_requires_user_gesture()
+}
+  </code></synopsis>
+  <p>Get the <link xref="WebKit2.Settings-media-playback-requires-user-gesture"/> property.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> If an user gesture is needed to play or load media
+   or <code>false</code> if no user gesture is needed.</p>
+</item>
+</terms>
+
+</page>

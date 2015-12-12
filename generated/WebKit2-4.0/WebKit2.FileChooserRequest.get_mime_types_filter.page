@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="WebKit2.FileChooserRequest.get_mime_types_filter"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.FileChooserRequest" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gtk.FileFilter</api:type>
+      </api:returns>
+      <api:name>webkit_file_chooser_request_get_mime_types_filter</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.FileChooserRequest.prototype.get_mime_types_filter</title>
+  <synopsis><code mime="text/x-gjs">
+function get_mime_types_filter(): <link href="../Gtk-3.0/Gtk.FileFilter.html">Gtk.FileFilter</link> {
+    // Gjs wrapper for webkit_file_chooser_request_get_mime_types_filter()
+}
+  </code></synopsis>
+  <p>Get the filter currently associated with the request, ready to be
+used by <link href="../Gtk-3.0/Gtk.FileChooser.html">Gtk.FileChooser</link>. This function should normally be called
+before presenting the file chooser dialog to the user, to decide
+whether to apply a filter so the user would not be allowed to
+select files with other MIME types.</p>  <p>See <link xref="WebKit2.FileChooserRequest.get_mime_types"/> if you are
+interested in getting the list of accepted MIME types.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link href="../Gtk-3.0/Gtk.FileFilter.html">Gtk.FileFilter</link> if a list of accepted
+MIME types is defined or <code>null</code> otherwise. The returned object is
+owned by WebKitGTK+ should not be modified or freed.</p>
+</item>
+</terms>
+
+</page>

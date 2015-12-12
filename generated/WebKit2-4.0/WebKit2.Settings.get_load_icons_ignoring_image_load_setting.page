@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Settings.get_load_icons_ignoring_image_load_setting"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Settings" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>webkit_settings_get_load_icons_ignoring_image_load_setting</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.Settings.prototype.get_load_icons_ignoring_image_load_setting</title>
+  <synopsis><code mime="text/x-gjs">
+function get_load_icons_ignoring_image_load_setting(): Boolean {
+    // Gjs wrapper for webkit_settings_get_load_icons_ignoring_image_load_setting()
+}
+  </code></synopsis>
+  <p>Get the <link xref="WebKit2.Settings-load-icons-ignoring-image-load-setting"/> property.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> If site icon can be loaded irrespective of image loading preference or <code>false</code> otherwise.</p>
+</item>
+</terms>
+
+</page>

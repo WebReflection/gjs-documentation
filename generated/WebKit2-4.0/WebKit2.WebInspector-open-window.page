@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebInspector-open-window"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebInspector" group="signal" type="guide"/>
+    <title type="link" role="topic">open-window</title>
+  </info>
+  <title>WebKit2.WebInspector::open-window</title>
+  <synopsis><code mime="text/x-gjs">
+connect('open-window', function (webInspector, ): Boolean);
+  </code></synopsis>
+  <p>Emitted when the inspector is requested to open in a separate window.
+If this signal is not handled, a <link href="../Gtk-3.0/Gtk.Window.html">Gtk.Window</link> with the inspector will be
+created and shown, so you only need to handle this signal if you want
+to use your own window.
+This signal is emitted after <link xref="WebKit2.WebInspector-detach"/> to show
+the inspector in a separate window after being detached.</p>  <p>To prevent the inspector from being shown you can connect to this
+signal and simply return <code>true</code></p>
+
+<terms>
+<item>
+<title><code>webInspector</code></title>
+<p>instance of <link xref="WebKit2.WebInspector"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> to stop other handlers from being invoked for the event.
+   <code>false</code> to propagate the event further.</p>
+</item>
+</terms>
+
+</page>

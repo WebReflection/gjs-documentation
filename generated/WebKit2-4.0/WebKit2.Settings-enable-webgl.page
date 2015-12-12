@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Settings-enable-webgl"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Settings" group="property" type="guide"/>
+    <title type="link" role="topic">enable-webgl</title>
+  </info>
+  <title>WebKit2.Settings.enable_webgl</title>
+  <synopsis><code mime="text/x-gjs">
+Settings.enable_webgl: Boolean (Read / Write / Construct)
+  </code></synopsis>
+  <p>Enable or disable support for WebGL on pages. WebGL is an experimental
+proposal for allowing web pages to use OpenGL ES-like calls directly. The
+standard is currently a work-in-progress by the Khronos Group.</p>
+
+</page>

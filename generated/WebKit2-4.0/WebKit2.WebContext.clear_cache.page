@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebContext.clear_cache"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebContext" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_web_context_clear_cache</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.WebContext.prototype.clear_cache</title>
+  <synopsis><code mime="text/x-gjs">
+function clear_cache(): void {
+    // Gjs wrapper for webkit_web_context_clear_cache()
+}
+  </code></synopsis>
+  <p>Clears all resources currently cached.
+See also <link xref="WebKit2.WebContext.set_cache_model"/>.</p>
+
+
+</page>

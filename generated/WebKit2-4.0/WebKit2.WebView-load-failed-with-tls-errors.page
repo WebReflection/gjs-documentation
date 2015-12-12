@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView-load-failed-with-tls-errors"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="signal" type="guide"/>
+    <title type="link" role="topic">load-failed-with-tls-errors</title>
+  </info>
+  <title>WebKit2.WebView::load-failed-with-tls-errors</title>
+  <synopsis><code mime="text/x-gjs">
+connect('load-failed-with-tls-errors', function (webView, failing_uri: String, certificate: <link href="../Gio-2.0/Gio.TlsCertificate.html">Gio.TlsCertificate</link>, errors: <link href="../Gio-2.0/Gio.TlsCertificateFlags.html">Gio.TlsCertificateFlags</link>, ): Boolean);
+  </code></synopsis>
+  <p>Emitted when a TLS error occurs during a load operation.
+To allow an exception for this <code>certificate</code>
+and the host of <code>failing_uri</code> use <link xref="WebKit2.WebContext.allow_tls_certificate_for_host"/>.</p>  <p>To handle this signal asynchronously you should call g_object_ref() on <code>certificate</code>
+and return <code>true</code>.</p>  <p>If <code>false</code> is returned, <link xref="WebKit2.WebView-load-failed"/> will be emitted. The load
+will finish regardless of the returned value.</p>
+  <p>Since 2.6</p>
+<terms>
+<item>
+<title><code>webView</code></title>
+<p>instance of <link xref="WebKit2.WebView"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>failing_uri</code></title>
+  <p>the URI that failed to load</p>
+</item>
+<item>
+<title><code>certificate</code></title>
+  <p>a <link href="../Gio-2.0/Gio.TlsCertificate.html">Gio.TlsCertificate</link></p>
+</item>
+<item>
+<title><code>errors</code></title>
+  <p>a <link href="../Gio-2.0/Gio.TlsCertificateFlags.html">Gio.TlsCertificateFlags</link> with the verification status of <code>certificate</code></p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> to stop other handlers from being invoked for the event.
+  <code>false</code> to propagate the event further.</p>
+</item>
+</terms>
+
+</page>

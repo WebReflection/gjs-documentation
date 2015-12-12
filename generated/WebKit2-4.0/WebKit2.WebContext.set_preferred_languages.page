@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebContext.set_preferred_languages"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebContext" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_web_context_set_preferred_languages</api:name>
+      <api:arg>
+        <api:type>Array(String)</api:type>
+        <api:name>languages</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.WebContext.prototype.set_preferred_languages</title>
+  <synopsis><code mime="text/x-gjs">
+function set_preferred_languages(languages: Array(String)): void {
+    // Gjs wrapper for webkit_web_context_set_preferred_languages()
+}
+  </code></synopsis>
+  <p>Set the list of preferred languages, sorted from most desirable
+to least desirable. The list will be used to build the "Accept-Language"
+header that will be included in the network requests started by
+the <link xref="WebKit2.WebContext"/>.</p>
+
+<terms>
+<item>
+<title><code>languages</code></title>
+  <p>a <code>null</code>-terminated list of language identifiers</p>
+</item>
+</terms>
+
+</page>

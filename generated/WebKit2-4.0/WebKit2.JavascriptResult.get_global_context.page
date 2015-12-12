@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="WebKit2.JavascriptResult.get_global_context"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.JavascriptResult" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>JavaScriptCore.GlobalContext</api:type>
+      </api:returns>
+      <api:name>webkit_javascript_result_get_global_context</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.JavascriptResult.prototype.get_global_context</title>
+  <synopsis><code mime="text/x-gjs">
+function get_global_context(): <link href="../JavaScriptCore-4.0/JavaScriptCore.GlobalContext.html">JavaScriptCore.GlobalContext</link> {
+    // Gjs wrapper for webkit_javascript_result_get_global_context()
+}
+  </code></synopsis>
+  <p>Get the global Javascript context that should be used with the
+&lt;function&gt;JSValueRef&lt;/function&gt; returned by <link xref="WebKit2.JavascriptResult.get_value"/>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the &lt;function&gt;JSGlobalContextRef&lt;/function&gt; for the <link xref="WebKit2.JavascriptResult"/></p>
+</item>
+</terms>
+
+</page>

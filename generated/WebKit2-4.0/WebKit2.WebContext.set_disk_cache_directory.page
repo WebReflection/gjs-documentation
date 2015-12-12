@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebContext.set_disk_cache_directory"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebContext" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_web_context_set_disk_cache_directory</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>directory</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.WebContext.prototype.set_disk_cache_directory</title>
+  <synopsis><code mime="text/x-gjs">
+function set_disk_cache_directory(directory: String): void {
+    // Gjs wrapper for webkit_web_context_set_disk_cache_directory()
+}
+  </code></synopsis>
+  <p>Set the directory where disk cache files will be stored
+This method must be called before loading anything in this context, otherwise
+it will not have any effect.</p>  <p>Note that this method overrides the directory set in the <link xref="WebKit2.WebsiteDataManager"/>,
+but it doesn't change the value returned by <link xref="WebKit2.WebsiteDataManager.get_disk_cache_directory"/>
+since the <link xref="WebKit2.WebsiteDataManager"/> is immutable.</p>
+
+<terms>
+<item>
+<title><code>directory</code></title>
+  <p>the directory to set</p>
+</item>
+</terms>
+
+</page>

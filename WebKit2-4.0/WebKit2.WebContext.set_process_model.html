@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>WebKit2.WebContext.prototype.set_process_model</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="WebKit2">WebKit2</a> » <a class="trail" href="WebKit2.WebContext.html" title="WebKit2.WebContext">WebKit2.WebContext</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">WebKit2.WebContext.prototype.set_process_model</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function set_process_model(process_model: <span class="link"><a href="WebKit2.ProcessModel.html" title="WebKit2.ProcessModel">WebKit2.ProcessModel</a></span>): void {
+    // Gjs wrapper for webkit_web_context_set_process_model()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Specifies a process model for WebViews, which WebKit will use to
+determine how auxiliary processes are handled. The default setting
+(<span class="link"><a href="WebKit2.ProcessModel.html" title="WebKit2.ProcessModel">WebKit2.ProcessModel</a></span>.shared_secondary_process) is suitable for most
+applications which embed a small amount of WebViews, or are used to
+display documents which are considered safe — like local files.</p>
+<p class="p">Applications which may potentially use a large amount of WebViews
+—for example a multi-tabbed web browser— may want to use
+<span class="link"><a href="WebKit2.ProcessModel.html" title="WebKit2.ProcessModel">WebKit2.ProcessModel</a></span>.multiple_secondary_processes, which will use
+one process per view most of the time, while still allowing for web
+views to share a process when needed (for example when different
+views interact with each other). Using this model, when a process
+hangs or crashes, only the WebViews using it stop working, while
+the rest of the WebViews in the application will still function
+normally.</p>
+<p class="p">This method **must be called before any web process has been created**,
+as early as possible in your application. Calling it later will make
+your application crash.</p>
+<p class="p">Since 2.4</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">process_model</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="WebKit2.ProcessModel.html" title="WebKit2.ProcessModel">WebKit2.ProcessModel</a></span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="WebKit2.WebContext.html" title="WebKit2.WebContext">WebKit2.WebContext</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

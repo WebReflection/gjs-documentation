@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebInspector.attach"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebInspector" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_web_inspector_attach</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.WebInspector.prototype.attach</title>
+  <synopsis><code mime="text/x-gjs">
+function attach(): void {
+    // Gjs wrapper for webkit_web_inspector_attach()
+}
+  </code></synopsis>
+  <p>Request <code>inspector</code> to be attached. The signal <link xref="WebKit2.WebInspector-attach"/>
+will be emitted. If the inspector is already attached it does nothing.</p>
+
+
+</page>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="WebKit2.MimeInfo.ref"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.MimeInfo" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>WebKit2.MimeInfo</api:type>
+      </api:returns>
+      <api:name>webkit_mime_info_ref</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.MimeInfo.prototype.ref</title>
+  <synopsis><code mime="text/x-gjs">
+function ref(): <link xref="WebKit2.MimeInfo">WebKit2.MimeInfo</link> {
+    // Gjs wrapper for webkit_mime_info_ref()
+}
+  </code></synopsis>
+  <p>Atomically increments the reference count of <code>info</code> by one. This
+function is MT-safe and may be called from any thread.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>The passed in <link xref="WebKit2.MimeInfo"/></p>
+</item>
+</terms>
+
+</page>

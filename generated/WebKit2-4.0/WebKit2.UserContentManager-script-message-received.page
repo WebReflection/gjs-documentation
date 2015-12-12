@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="WebKit2.UserContentManager-script-message-received"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.UserContentManager" group="signal" type="guide"/>
+    <title type="link" role="topic">script-message-received</title>
+  </info>
+  <title>WebKit2.UserContentManager::script-message-received</title>
+  <synopsis><code mime="text/x-gjs">
+connect('script-message-received', function (userContentManager, js_result: <link xref="WebKit2.JavascriptResult">WebKit2.JavascriptResult</link>, ): void);
+  </code></synopsis>
+  <p>This signal is emitted when JavaScript in a web view calls
+&lt;code&gt;window.webkit.messageHandlers.&amp;lt;name&amp;gt;.postMessage()&lt;/code&gt;, after registering
+&lt;code&gt;&amp;lt;name&amp;gt;&lt;/code&gt; using
+<link xref="WebKit2.UserContentManager.register_script_message_handler"/></p>
+  <p>Since 2.8</p>
+<terms>
+<item>
+<title><code>userContentManager</code></title>
+<p>instance of <link xref="WebKit2.UserContentManager"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>js_result</code></title>
+  <p>the <link xref="WebKit2.JavascriptResult"/> holding the value received from the JavaScript world.</p>
+</item>
+</terms>
+
+</page>

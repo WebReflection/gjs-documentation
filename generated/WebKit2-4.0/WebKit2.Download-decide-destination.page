@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Download-decide-destination"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Download" group="signal" type="guide"/>
+    <title type="link" role="topic">decide-destination</title>
+  </info>
+  <title>WebKit2.Download::decide-destination</title>
+  <synopsis><code mime="text/x-gjs">
+connect('decide-destination', function (download, suggested_filename: String, ): Boolean);
+  </code></synopsis>
+  <p>This signal is emitted after response is received to
+decide a destination URI for the download. If this signal is not
+handled the file will be downloaded to %G_USER_DIRECTORY_DOWNLOAD
+directory using <code>suggested_filename</code>.</p>
+
+<terms>
+<item>
+<title><code>download</code></title>
+<p>instance of <link xref="WebKit2.Download"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>suggested_filename</code></title>
+  <p>the filename suggested for the download</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> to stop other handlers from being invoked for the event.
+  <code>false</code> to propagate the event further.</p>
+</item>
+</terms>
+
+</page>

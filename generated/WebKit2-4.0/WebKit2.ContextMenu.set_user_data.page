@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="WebKit2.ContextMenu.set_user_data"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.ContextMenu" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_context_menu_set_user_data</api:name>
+      <api:arg>
+        <api:type>GLib.Variant</api:type>
+        <api:name>user_data</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.ContextMenu.prototype.set_user_data</title>
+  <synopsis><code mime="text/x-gjs">
+function set_user_data(user_data: <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link>): void {
+    // Gjs wrapper for webkit_context_menu_set_user_data()
+}
+  </code></synopsis>
+  <p>Sets user data to <code>menu</code>.
+This function can be used from a Web Process extension to set user data
+that can be retrieved from the UI Process using <link xref="WebKit2.ContextMenu.get_user_data"/>.</p>
+  <p>Since 2.8</p>
+<terms>
+<item>
+<title><code>user_data</code></title>
+  <p>a <link href="../GLib-2.0/GLib.Variant.html">GLib.Variant</link></p>
+</item>
+</terms>
+
+</page>

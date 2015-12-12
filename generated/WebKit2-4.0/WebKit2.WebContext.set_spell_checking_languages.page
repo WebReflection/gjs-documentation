@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebContext.set_spell_checking_languages"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebContext" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_web_context_set_spell_checking_languages</api:name>
+      <api:arg>
+        <api:type>Array(String)</api:type>
+        <api:name>languages</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.WebContext.prototype.set_spell_checking_languages</title>
+  <synopsis><code mime="text/x-gjs">
+function set_spell_checking_languages(languages: Array(String)): void {
+    // Gjs wrapper for webkit_web_context_set_spell_checking_languages()
+}
+  </code></synopsis>
+  <p>Set the list of spell checking languages to be used for spell
+checking.</p>  <p>The locale string typically is in the form lang_COUNTRY, where lang
+is an ISO-639 language code, and COUNTRY is an ISO-3166 country code.
+For instance, sv_FI for Swedish as written in Finland or pt_BR
+for Portuguese as written in Brazil.</p>  <p>You need to call this function with a valid list of languages at
+least once in order to properly enable the spell checking feature
+in WebKit.</p>
+
+<terms>
+<item>
+<title><code>languages</code></title>
+  <p>a <code>null</code>-terminated list of spell checking languages</p>
+</item>
+</terms>
+
+</page>

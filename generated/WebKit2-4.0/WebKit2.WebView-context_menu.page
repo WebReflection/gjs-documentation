@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView-context_menu"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="vfunc" type="guide"/>
+  </info>
+  <title>WebKit2.WebView::context_menu</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_context_menu(context_menu: <link xref="WebKit2.ContextMenu">WebKit2.ContextMenu</link>, event: <link href="../Gdk-3.0/Gdk.Event.html">Gdk.Event</link>, hit_test_result: <link xref="WebKit2.HitTestResult">WebKit2.HitTestResult</link>): Boolean {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>context_menu</code></title>
+
+</item>
+<item>
+<title><code>event</code></title>
+
+</item>
+<item>
+<title><code>hit_test_result</code></title>
+
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

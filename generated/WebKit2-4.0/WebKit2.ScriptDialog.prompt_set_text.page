@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="WebKit2.ScriptDialog.prompt_set_text"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.ScriptDialog" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_script_dialog_prompt_set_text</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>text</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.ScriptDialog.prototype.prompt_set_text</title>
+  <synopsis><code mime="text/x-gjs">
+function prompt_set_text(text: String): void {
+    // Gjs wrapper for webkit_script_dialog_prompt_set_text()
+}
+  </code></synopsis>
+  <p>This method is used for <link xref="WebKit2.ScriptDialogType"/>.prompt dialogs when
+<link xref="WebKit2.WebView-script-dialog"/> signal is emitted to set the text
+entered by the user. The default implementation of <link xref="WebKit2.WebView-script-dialog"/>
+signal sets the text of the entry form when OK button is clicked, otherwise <code>null</code> is set.
+It's an error to use this method with a <link xref="WebKit2.ScriptDialog"/> that is not of type
+<link xref="WebKit2.ScriptDialogType"/>.prompt.</p>
+
+<terms>
+<item>
+<title><code>text</code></title>
+  <p>the text to set</p>
+</item>
+</terms>
+
+</page>

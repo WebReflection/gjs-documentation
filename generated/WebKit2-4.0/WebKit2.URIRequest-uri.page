@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="WebKit2.URIRequest-uri"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.URIRequest" group="property" type="guide"/>
+    <title type="link" role="topic">uri</title>
+  </info>
+  <title>WebKit2.URIRequest.uri</title>
+  <synopsis><code mime="text/x-gjs">
+URIRequest.uri: String (Read / Write / Construct)
+  </code></synopsis>
+  <p>The URI to which the request will be made.</p>
+
+</page>

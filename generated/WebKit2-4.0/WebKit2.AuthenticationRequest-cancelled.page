@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<page id="WebKit2.AuthenticationRequest-cancelled"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.AuthenticationRequest" group="signal" type="guide"/>
+    <title type="link" role="topic">cancelled</title>
+  </info>
+  <title>WebKit2.AuthenticationRequest::cancelled</title>
+  <synopsis><code mime="text/x-gjs">
+connect('cancelled', function (authenticationRequest, ): void);
+  </code></synopsis>
+  <p>This signal is emitted when the user authentication request is
+cancelled. It allows the application to dismiss its authentication
+dialog in case of page load failure for example.</p>
+  <p>Since 2.2</p>
+<terms>
+<item>
+<title><code>authenticationRequest</code></title>
+<p>instance of <link xref="WebKit2.AuthenticationRequest"/> that is emitting the signal</p>
+</item>
+</terms>
+
+</page>

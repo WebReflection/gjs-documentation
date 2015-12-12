@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebContext.get_favicon_database_directory"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebContext" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>webkit_web_context_get_favicon_database_directory</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.WebContext.prototype.get_favicon_database_directory</title>
+  <synopsis><code mime="text/x-gjs">
+function get_favicon_database_directory(): String {
+    // Gjs wrapper for webkit_web_context_get_favicon_database_directory()
+}
+  </code></synopsis>
+  <p>Get the directory path being used to store the favicons database
+for <code>context</code>, or <code>null</code> if
+<link xref="WebKit2.WebContext.set_favicon_database_directory"/> hasn't been
+called yet.</p>  <p>This function will always return the same path after having called
+<link xref="WebKit2.WebContext.set_favicon_database_directory"/> for the first
+time.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the path of the directory of the favicons
+database associated with <code>context</code>, or <code>null</code>.</p>
+</item>
+</terms>
+
+</page>

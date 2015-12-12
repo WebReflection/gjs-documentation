@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="WebKit2.UserContentManager.new"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.UserContentManager" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>WebKit2.UserContentManager</api:type>
+      </api:returns>
+      <api:name>webkit_user_content_manager_new</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.UserContentManager.new</title>
+  <synopsis><code mime="text/x-gjs">
+function new(): <link xref="WebKit2.UserContentManager">WebKit2.UserContentManager</link> {
+    // Gjs wrapper for webkit_user_content_manager_new()
+}
+  </code></synopsis>
+  <p>Creates a new user content manager.</p>
+  <p>Since 2.6</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>A <link xref="WebKit2.UserContentManager"/></p>
+</item>
+</terms>
+
+</page>

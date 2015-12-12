@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="WebKit2.ContextMenu.get_item_at_position"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.ContextMenu" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>WebKit2.ContextMenuItem</api:type>
+      </api:returns>
+      <api:name>webkit_context_menu_get_item_at_position</api:name>
+      <api:arg>
+        <api:type>Number(guint)</api:type>
+        <api:name>position</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.ContextMenu.prototype.get_item_at_position</title>
+  <synopsis><code mime="text/x-gjs">
+function get_item_at_position(position: Number(guint)): <link xref="WebKit2.ContextMenuItem">WebKit2.ContextMenuItem</link> {
+    // Gjs wrapper for webkit_context_menu_get_item_at_position()
+}
+  </code></synopsis>
+  <p>Gets the item at the given position in the <code>menu</code>.</p>
+
+<terms>
+<item>
+<title><code>position</code></title>
+  <p>the position of the item, counting from 0</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the <link xref="WebKit2.ContextMenuItem"/> at position <code>position</code> in <code>menu</code>,
+   or <code>null</code> if the position is off the end of the <code>menu</code>.</p>
+</item>
+</terms>
+
+</page>

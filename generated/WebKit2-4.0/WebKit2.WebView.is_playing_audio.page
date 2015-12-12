@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView.is_playing_audio"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>webkit_web_view_is_playing_audio</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.WebView.prototype.is_playing_audio</title>
+  <synopsis><code mime="text/x-gjs">
+function is_playing_audio(): Boolean {
+    // Gjs wrapper for webkit_web_view_is_playing_audio()
+}
+  </code></synopsis>
+  <p>Gets the value of the <link xref="WebKit2.WebView-is-playing-audio"/> property.
+You can monitor when a page in a <link xref="WebKit2.WebView"/> is playing audio by
+connecting to the notify::is-playing-audio signal of <code>web_view</code>. This
+is useful when the application wants to provide visual feedback when a
+page is producing sound.</p>
+  <p>Since 2.8</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> if a page in <code>web_view</code> is playing audio or <code>false</code> otherwise.</p>
+</item>
+</terms>
+
+</page>

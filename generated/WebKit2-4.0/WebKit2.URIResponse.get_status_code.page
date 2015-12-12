@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="WebKit2.URIResponse.get_status_code"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.URIResponse" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(guint)</api:type>
+      </api:returns>
+      <api:name>webkit_uri_response_get_status_code</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.URIResponse.prototype.get_status_code</title>
+  <synopsis><code mime="text/x-gjs">
+function get_status_code(): Number(guint) {
+    // Gjs wrapper for webkit_uri_response_get_status_code()
+}
+  </code></synopsis>
+  <p>Get the status code of the <link xref="WebKit2.URIResponse"/> as returned by
+the server. It will normally be a <link href="../Soup-2.4/Soup.KnownStatusCode.html">Soup.KnownStatusCode</link>, for
+example %SOUP_STATUS_OK, though the server can respond with any
+unsigned integer.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the status code of <code>response</code></p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Settings-auto-load-images"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Settings" group="property" type="guide"/>
+    <title type="link" role="topic">auto-load-images</title>
+  </info>
+  <title>WebKit2.Settings.auto_load_images</title>
+  <synopsis><code mime="text/x-gjs">
+Settings.auto_load_images: Boolean (Read / Write / Construct)
+  </code></synopsis>
+  <p>Determines whether images should be automatically loaded or not.
+On devices where network bandwidth is of concern, it might be
+useful to turn this property off.</p>
+
+</page>

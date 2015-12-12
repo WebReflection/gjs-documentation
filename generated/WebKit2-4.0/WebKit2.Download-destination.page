@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Download-destination"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Download" group="property" type="guide"/>
+    <title type="link" role="topic">destination</title>
+  </info>
+  <title>WebKit2.Download.destination</title>
+  <synopsis><code mime="text/x-gjs">
+Download.destination: String (Read)
+  </code></synopsis>
+  <p>The local URI to where the download will be saved.</p>
+
+</page>

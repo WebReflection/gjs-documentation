@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView-load_failed_with_tls_errors"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="vfunc" type="guide"/>
+  </info>
+  <title>WebKit2.WebView::load_failed_with_tls_errors</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_load_failed_with_tls_errors(failing_uri: String, certificate: <link href="../Gio-2.0/Gio.TlsCertificate.html">Gio.TlsCertificate</link>, errors: <link href="../Gio-2.0/Gio.TlsCertificateFlags.html">Gio.TlsCertificateFlags</link>): Boolean {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>failing_uri</code></title>
+
+</item>
+<item>
+<title><code>certificate</code></title>
+
+</item>
+<item>
+<title><code>errors</code></title>
+
+</item>
+<item>
+<title><code>Returns</code></title>
+
+</item>
+</terms>
+
+</page>

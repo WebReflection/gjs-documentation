@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView.get_context"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>WebKit2.WebContext</api:type>
+      </api:returns>
+      <api:name>webkit_web_view_get_context</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.WebView.prototype.get_context</title>
+  <synopsis><code mime="text/x-gjs">
+function get_context(): <link xref="WebKit2.WebContext">WebKit2.WebContext</link> {
+    // Gjs wrapper for webkit_web_view_get_context()
+}
+  </code></synopsis>
+  <p>Gets the web context of <code>web_view</code>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the <link xref="WebKit2.WebContext"/> of the view</p>
+</item>
+</terms>
+
+</page>

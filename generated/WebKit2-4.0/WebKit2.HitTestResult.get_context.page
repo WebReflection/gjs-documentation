@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="WebKit2.HitTestResult.get_context"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.HitTestResult" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Number(guint)</api:type>
+      </api:returns>
+      <api:name>webkit_hit_test_result_get_context</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.HitTestResult.prototype.get_context</title>
+  <synopsis><code mime="text/x-gjs">
+function get_context(): Number(guint) {
+    // Gjs wrapper for webkit_hit_test_result_get_context()
+}
+  </code></synopsis>
+  <p>Gets the value of the <link xref="WebKit2.HitTestResult-context"/> property.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a bitmask of <link xref="WebKit2.HitTestResultContext"/> flags</p>
+</item>
+</terms>
+
+</page>

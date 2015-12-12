@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView.load_bytes"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_web_view_load_bytes</api:name>
+      <api:arg>
+        <api:type>ByteArray</api:type>
+        <api:name>bytes</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>mime_type</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>encoding</api:name>
+      </api:arg>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>base_uri</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.WebView.prototype.load_bytes</title>
+  <synopsis><code mime="text/x-gjs">
+function load_bytes(bytes: ByteArray, mime_type: String, encoding: String, base_uri: String): void {
+    // Gjs wrapper for webkit_web_view_load_bytes()
+}
+  </code></synopsis>
+  <p>Load the specified <code>bytes</code> into <code>web_view</code> using the given <code>mime_type</code> and <code>encoding</code>.
+When <code>mime_type</code> is <code>null</code>, it defaults to "text/html".
+When <code>encoding</code> is <code>null</code>, it defaults to "UTF-8".
+When <code>base_uri</code> is <code>null</code>, it defaults to "about:blank".
+You can monitor the load operation by connecting to <link xref="WebKit2.WebView-load-changed"/> signal.</p>
+  <p>Since 2.6</p>
+<terms>
+<item>
+<title><code>bytes</code></title>
+  <p>input data to load</p>
+</item>
+<item>
+<title><code>mime_type</code></title>
+  <p>the MIME type of <code>bytes</code>, or <code>null</code></p>
+</item>
+<item>
+<title><code>encoding</code></title>
+  <p>the character encoding of <code>bytes</code>, or <code>null</code></p>
+</item>
+<item>
+<title><code>base_uri</code></title>
+  <p>the base URI for relative locations or <code>null</code></p>
+</item>
+</terms>
+
+</page>

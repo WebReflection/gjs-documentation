@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="WebKit2.ContextMenuItem.is_separator"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.ContextMenuItem" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Boolean</api:type>
+      </api:returns>
+      <api:name>webkit_context_menu_item_is_separator</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.ContextMenuItem.prototype.is_separator</title>
+  <synopsis><code mime="text/x-gjs">
+function is_separator(): Boolean {
+    // Gjs wrapper for webkit_context_menu_item_is_separator()
+}
+  </code></synopsis>
+  <p>Checks whether <code>item</code> is a separator.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> is <code>item</code> is a separator or <code>false</code> otherwise</p>
+</item>
+</terms>
+
+</page>

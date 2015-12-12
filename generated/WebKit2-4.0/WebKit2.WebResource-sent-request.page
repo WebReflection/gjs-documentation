@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebResource-sent-request"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebResource" group="signal" type="guide"/>
+    <title type="link" role="topic">sent-request</title>
+  </info>
+  <title>WebKit2.WebResource::sent-request</title>
+  <synopsis><code mime="text/x-gjs">
+connect('sent-request', function (webResource, request: <link xref="WebKit2.URIRequest">WebKit2.URIRequest</link>, redirected_response: <link xref="WebKit2.URIResponse">WebKit2.URIResponse</link>, ): void);
+  </code></synopsis>
+  <p>This signal is emitted when <code>request</code> has been sent to the
+server. In case of a server redirection this signal is
+emitted again with the <code>request</code> argument containing the new
+request sent to the server due to the redirection and the
+<code>redirected_response</code> parameter containing the response
+received by the server for the initial request.</p>
+
+<terms>
+<item>
+<title><code>webResource</code></title>
+<p>instance of <link xref="WebKit2.WebResource"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>request</code></title>
+  <p>a <link xref="WebKit2.URIRequest"/></p>
+</item>
+<item>
+<title><code>redirected_response</code></title>
+  <p>a <link xref="WebKit2.URIResponse"/>, or <code>null</code></p>
+</item>
+</terms>
+
+</page>

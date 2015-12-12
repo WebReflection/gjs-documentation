@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView-mouse_target_changed"
+      type="topic"
+      style="vfunc"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="vfunc" type="guide"/>
+  </info>
+  <title>WebKit2.WebView::mouse_target_changed</title>
+  <synopsis><code mime="text/x-gjs">
+function vfunc_mouse_target_changed(hit_test_result: <link xref="WebKit2.HitTestResult">WebKit2.HitTestResult</link>, modifiers: Number(guint)): void {
+}
+  </code></synopsis>
+
+
+<terms>
+<item>
+<title><code>hit_test_result</code></title>
+
+</item>
+<item>
+<title><code>modifiers</code></title>
+
+</item>
+</terms>
+
+</page>

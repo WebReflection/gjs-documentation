@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="WebKit2.BackForwardList.get_back_item"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.BackForwardList" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>WebKit2.BackForwardListItem</api:type>
+      </api:returns>
+      <api:name>webkit_back_forward_list_get_back_item</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.BackForwardList.prototype.get_back_item</title>
+  <synopsis><code mime="text/x-gjs">
+function get_back_item(): <link xref="WebKit2.BackForwardListItem">WebKit2.BackForwardListItem</link> {
+    // Gjs wrapper for webkit_back_forward_list_get_back_item()
+}
+  </code></synopsis>
+  <p>Returns the item that precedes the current item.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the <link xref="WebKit2.BackForwardListItem"/>
+   preceding the current item or <code>null</code>.</p>
+</item>
+</terms>
+
+</page>

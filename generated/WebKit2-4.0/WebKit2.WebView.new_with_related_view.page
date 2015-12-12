@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView.new_with_related_view"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>Gtk.Widget</api:type>
+      </api:returns>
+      <api:name>webkit_web_view_new_with_related_view</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.WebView.prototype.new_with_related_view</title>
+  <synopsis><code mime="text/x-gjs">
+function new_with_related_view(): <link href="../Gtk-3.0/Gtk.Widget.html">Gtk.Widget</link> {
+    // Gjs wrapper for webkit_web_view_new_with_related_view()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="WebKit2.WebView"/> sharing the same web process with <code>web_view</code>.
+This method doesn't have any effect when <link xref="WebKit2.ProcessModel"/>.shared_secondary_process
+process model is used, because a single web process is shared for all the web views in the
+same <link xref="WebKit2.WebContext"/>. When using <link xref="WebKit2.ProcessModel"/>.multiple_secondary_processes process model,
+this method should always be used when creating the <link xref="WebKit2.WebView"/> in the <link xref="WebKit2.WebView-create"/> signal.
+You can also use this method to implement other process models based on <link xref="WebKit2.ProcessModel"/>.multiple_secondary_processes,
+like for example, sharing the same web process for all the views in the same security domain.</p>  <p>The newly created <link xref="WebKit2.WebView"/> will also have the same <link xref="WebKit2.UserContentManager"/>
+and <link xref="WebKit2.Settings"/> as <code>web_view</code>.</p>
+  <p>Since 2.4</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>The newly created <link xref="WebKit2.WebView"/> widget</p>
+</item>
+</terms>
+
+</page>

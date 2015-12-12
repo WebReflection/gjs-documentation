@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebContext.set_tls_errors_policy"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebContext" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_web_context_set_tls_errors_policy</api:name>
+      <api:arg>
+        <api:type>WebKit2.TLSErrorsPolicy</api:type>
+        <api:name>policy</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.WebContext.prototype.set_tls_errors_policy</title>
+  <synopsis><code mime="text/x-gjs">
+function set_tls_errors_policy(policy: <link xref="WebKit2.TLSErrorsPolicy">WebKit2.TLSErrorsPolicy</link>): void {
+    // Gjs wrapper for webkit_web_context_set_tls_errors_policy()
+}
+  </code></synopsis>
+  <p>Set the TLS errors policy of <code>context</code> as <code>policy</code></p>
+
+<terms>
+<item>
+<title><code>policy</code></title>
+  <p>a <link xref="WebKit2.TLSErrorsPolicy"/></p>
+</item>
+</terms>
+
+</page>

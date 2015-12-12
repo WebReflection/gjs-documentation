@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="WebKit2.EDITING_COMMAND_REDO"
+      type="topic"
+      style="default"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="default" type="guide"/>
+  </info>
+  <title>WebKit2.EDITING_COMMAND_REDO</title>
+  <p>The redo command. Redoes a previously undone editing command in
+a <link xref="WebKit2.WebView"/>.
+You can check whether it's possible to execute the command with
+<link xref="WebKit2.WebView.can_execute_editing_command"/>. It's only possible
+to redo a command when it has been previously undone.</p>
+
+</page>

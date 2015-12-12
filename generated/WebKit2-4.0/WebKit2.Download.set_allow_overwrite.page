@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Download.set_allow_overwrite"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Download" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_download_set_allow_overwrite</api:name>
+      <api:arg>
+        <api:type>Boolean</api:type>
+        <api:name>allowed</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.Download.prototype.set_allow_overwrite</title>
+  <synopsis><code mime="text/x-gjs">
+function set_allow_overwrite(allowed: Boolean): void {
+    // Gjs wrapper for webkit_download_set_allow_overwrite()
+}
+  </code></synopsis>
+  <p>Sets the <link xref="WebKit2.Download-allow-overwrite"/> property, which determines whether
+the download may overwrite an existing file on disk, or if it will fail if
+the destination already exists.</p>
+  <p>Since 2.6</p>
+<terms>
+<item>
+<title><code>allowed</code></title>
+  <p>the new value for the <link xref="WebKit2.Download-allow-overwrite"/> property</p>
+</item>
+</terms>
+
+</page>

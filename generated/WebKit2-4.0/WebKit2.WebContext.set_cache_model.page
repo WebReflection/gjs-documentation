@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebContext.set_cache_model"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebContext" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_web_context_set_cache_model</api:name>
+      <api:arg>
+        <api:type>WebKit2.CacheModel</api:type>
+        <api:name>cache_model</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.WebContext.prototype.set_cache_model</title>
+  <synopsis><code mime="text/x-gjs">
+function set_cache_model(cache_model: <link xref="WebKit2.CacheModel">WebKit2.CacheModel</link>): void {
+    // Gjs wrapper for webkit_web_context_set_cache_model()
+}
+  </code></synopsis>
+  <p>Specifies a usage model for WebViews, which WebKit will use to
+determine its caching behavior. All web views follow the cache
+model. This cache model determines the RAM and disk space to use
+for caching previously viewed content .</p>  <p>Research indicates that users tend to browse within clusters of
+documents that hold resources in common, and to revisit previously
+visited documents. WebKit and the frameworks below it include
+built-in caches that take advantage of these patterns,
+substantially improving document load speed in browsing
+situations. The WebKit cache model controls the behaviors of all of
+these caches, including various WebCore caches.</p>  <p>Browsers can improve document load speed substantially by
+specifying <link xref="WebKit2.CacheModel"/>.web_browser. Applications without a
+browsing interface can reduce memory usage substantially by
+specifying <link xref="WebKit2.CacheModel"/>.document_viewer. The default value is
+<link xref="WebKit2.CacheModel"/>.web_browser.</p>
+
+<terms>
+<item>
+<title><code>cache_model</code></title>
+  <p>a <link xref="WebKit2.CacheModel"/></p>
+</item>
+</terms>
+
+</page>

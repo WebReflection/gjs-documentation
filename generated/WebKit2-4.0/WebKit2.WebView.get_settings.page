@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView.get_settings"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>WebKit2.Settings</api:type>
+      </api:returns>
+      <api:name>webkit_web_view_get_settings</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.WebView.prototype.get_settings</title>
+  <synopsis><code mime="text/x-gjs">
+function get_settings(): <link xref="WebKit2.Settings">WebKit2.Settings</link> {
+    // Gjs wrapper for webkit_web_view_get_settings()
+}
+  </code></synopsis>
+  <p>Gets the <link xref="WebKit2.Settings"/> currently applied to <code>web_view</code>.
+If no other <link xref="WebKit2.Settings"/> have been explicitly applied to
+<code>web_view</code> with <link xref="WebKit2.WebView.set_settings"/>, the default
+<link xref="WebKit2.Settings"/> will be returned. This method always returns
+a valid <link xref="WebKit2.Settings"/> object.
+To modify any of the <code>web_view</code> settings, you can either create
+a new <link xref="WebKit2.Settings"/> object with <link xref="WebKit2.Settings.new"/>, setting
+the desired preferences, and then replace the existing <code>web_view</code>
+settings with <link xref="WebKit2.WebView.set_settings"/> or get the existing
+<code>web_view</code> settings and update it directly. <link xref="WebKit2.Settings"/> objects
+can be shared by multiple <link xref="WebKit2.WebView"/>&lt;!-- --&gt;s, so modifying
+the settings of a <link xref="WebKit2.WebView"/> would affect other
+<link xref="WebKit2.WebView"/>&lt;!-- --&gt;s using the same <link xref="WebKit2.Settings"/>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the <link xref="WebKit2.Settings"/> attached to <code>web_view</code></p>
+</item>
+</terms>
+
+</page>

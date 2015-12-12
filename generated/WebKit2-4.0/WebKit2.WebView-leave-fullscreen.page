@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView-leave-fullscreen"
+      type="topic"
+      style="signal"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="signal" type="guide"/>
+    <title type="link" role="topic">leave-fullscreen</title>
+  </info>
+  <title>WebKit2.WebView::leave-fullscreen</title>
+  <synopsis><code mime="text/x-gjs">
+connect('leave-fullscreen', function (webView, ): Boolean);
+  </code></synopsis>
+  <p>Emitted when the <link xref="WebKit2.WebView"/> is about to restore its top level
+window out of its full screen state. This signal can be used by
+client code to restore widgets hidden during the
+<link xref="WebKit2.WebView-enter-fullscreen"/> stage for instance.</p>
+
+<terms>
+<item>
+<title><code>webView</code></title>
+<p>instance of <link xref="WebKit2.WebView"/> that is emitting the signal</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p><code>true</code> to stop other handlers from being invoked for the event.
+   <code>false</code> to continue emission of the event.</p>
+</item>
+</terms>
+
+</page>

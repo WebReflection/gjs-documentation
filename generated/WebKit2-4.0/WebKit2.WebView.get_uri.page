@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView.get_uri"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>webkit_web_view_get_uri</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.WebView.prototype.get_uri</title>
+  <synopsis><code mime="text/x-gjs">
+function get_uri(): String {
+    // Gjs wrapper for webkit_web_view_get_uri()
+}
+  </code></synopsis>
+  <p>Returns the current active URI of <code>web_view</code>. The active URI might change during
+a load operation:</p>  <p>&lt;orderedlist&gt;
+&lt;listitem&gt;&lt;para&gt;
+  When nothing has been loaded yet on <code>web_view</code> the active URI is <code>null</code>.
+&lt;/para&gt;&lt;/listitem&gt;
+&lt;listitem&gt;&lt;para&gt;
+  When a new load operation starts the active URI is the requested URI:
+  &lt;itemizedlist&gt;
+  &lt;listitem&gt;&lt;para&gt;
+    If the load operation was started by <link xref="WebKit2.WebView.load_uri"/>,
+    the requested URI is the given one.
+  &lt;/para&gt;&lt;/listitem&gt;
+  &lt;listitem&gt;&lt;para&gt;
+    If the load operation was started by <link xref="WebKit2.WebView.load_html"/>,
+    the requested URI is "about:blank".
+  &lt;/para&gt;&lt;/listitem&gt;
+  &lt;listitem&gt;&lt;para&gt;
+    If the load operation was started by <link xref="WebKit2.WebView.load_alternate_html"/>,
+    the requested URI is content URI provided.
+  &lt;/para&gt;&lt;/listitem&gt;
+  &lt;listitem&gt;&lt;para&gt;
+    If the load operation was started by <link xref="WebKit2.WebView.go_back"/> or
+    <link xref="WebKit2.WebView.go_forward"/>, the requested URI is the original URI
+    of the previous/next item in the <link xref="WebKit2.BackForwardList"/> of <code>web_view</code>.
+  &lt;/para&gt;&lt;/listitem&gt;
+  &lt;listitem&gt;&lt;para&gt;
+    If the load operation was started by
+    <link xref="WebKit2.WebView.go_to_back_forward_list_item"/>, the requested URI
+    is the opriginal URI of the given <link xref="WebKit2.BackForwardListItem"/>.
+  &lt;/para&gt;&lt;/listitem&gt;
+  &lt;/itemizedlist&gt;
+&lt;/para&gt;&lt;/listitem&gt;
+&lt;listitem&gt;&lt;para&gt;
+  If there is a server redirection during the load operation,
+  the active URI is the redirected URI. When the signal
+  <link xref="WebKit2.WebView-load-changed"/> is emitted with <link xref="WebKit2.LoadEvent"/>.redirected
+  event, the active URI is already updated to the redirected URI.
+&lt;/para&gt;&lt;/listitem&gt;
+&lt;listitem&gt;&lt;para&gt;
+  When the signal <link xref="WebKit2.WebView-load-changed"/> is emitted
+  with <link xref="WebKit2.LoadEvent"/>.committed event, the active URI is the final
+  one and it will not change unless a new load operation is started
+  or a navigation action within the same page is performed.
+&lt;/para&gt;&lt;/listitem&gt;
+&lt;/orderedlist&gt;</p>  <p>You can monitor the active URI by connecting to the notify::uri
+signal of <code>web_view</code>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the current active URI of <code>web_view</code> or <code>null</code>
+   if nothing has been loaded yet.</p>
+</item>
+</terms>
+
+</page>

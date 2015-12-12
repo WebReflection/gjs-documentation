@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="WebKit2.ColorChooserRequest.get_element_rectangle"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.ColorChooserRequest" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_color_chooser_request_get_element_rectangle</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.ColorChooserRequest.prototype.get_element_rectangle</title>
+  <synopsis><code mime="text/x-gjs">
+function get_element_rectangle(): <link href="../Gdk-3.0/Gdk.Rectangle.html">Gdk.Rectangle</link> {
+    // Gjs wrapper for webkit_color_chooser_request_get_element_rectangle()
+}
+  </code></synopsis>
+  <p>Gets the bounding box of the color input element.</p>
+  <p>Since 2.8</p>
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link href="../Gdk-3.0/Gdk.Rectangle.html">Gdk.Rectangle</link> to fill in with the element area</p>
+</item>
+</terms>
+
+</page>

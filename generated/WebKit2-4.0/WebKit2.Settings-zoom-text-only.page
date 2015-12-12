@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<page id="WebKit2.Settings-zoom-text-only"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.Settings" group="property" type="guide"/>
+    <title type="link" role="topic">zoom-text-only</title>
+  </info>
+  <title>WebKit2.Settings.zoom_text_only</title>
+  <synopsis><code mime="text/x-gjs">
+Settings.zoom_text_only: Boolean (Read / Write / Construct)
+  </code></synopsis>
+  <p>Whether <link xref="WebKit2.WebView-zoom-level"/> affects only the
+text of the page or all the contents. Other contents containing text
+like form controls will be also affected by zoom factor when
+this property is enabled.</p>
+
+</page>

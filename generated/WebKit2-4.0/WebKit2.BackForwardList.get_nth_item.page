@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<page id="WebKit2.BackForwardList.get_nth_item"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.BackForwardList" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>WebKit2.BackForwardListItem</api:type>
+      </api:returns>
+      <api:name>webkit_back_forward_list_get_nth_item</api:name>
+      <api:arg>
+        <api:type>Number(gint)</api:type>
+        <api:name>index</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.BackForwardList.prototype.get_nth_item</title>
+  <synopsis><code mime="text/x-gjs">
+function get_nth_item(index: Number(gint)): <link xref="WebKit2.BackForwardListItem">WebKit2.BackForwardListItem</link> {
+    // Gjs wrapper for webkit_back_forward_list_get_nth_item()
+}
+  </code></synopsis>
+  <p>Returns the item at a given index relative to the current item.</p>
+
+<terms>
+<item>
+<title><code>index</code></title>
+  <p>the index of the item</p>
+</item>
+<item>
+<title><code>Returns</code></title>
+  <p>the <link xref="WebKit2.BackForwardListItem"/>
+   located at the specified index relative to the current item.</p>
+</item>
+</terms>
+
+</page>

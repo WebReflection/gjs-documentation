@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<page id="WebKit2.URIRequest.set_uri"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.URIRequest" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>void</api:type>
+      </api:returns>
+      <api:name>webkit_uri_request_set_uri</api:name>
+      <api:arg>
+        <api:type>String</api:type>
+        <api:name>uri</api:name>
+      </api:arg>
+    </api:function>
+  </info>
+  <title>WebKit2.URIRequest.prototype.set_uri</title>
+  <synopsis><code mime="text/x-gjs">
+function set_uri(uri: String): void {
+    // Gjs wrapper for webkit_uri_request_set_uri()
+}
+  </code></synopsis>
+  <p>Set the URI of <code>request</code></p>
+
+<terms>
+<item>
+<title><code>uri</code></title>
+  <p>an URI</p>
+</item>
+</terms>
+
+</page>

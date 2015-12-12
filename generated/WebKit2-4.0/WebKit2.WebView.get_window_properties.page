@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView.get_window_properties"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>WebKit2.WindowProperties</api:type>
+      </api:returns>
+      <api:name>webkit_web_view_get_window_properties</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.WebView.prototype.get_window_properties</title>
+  <synopsis><code mime="text/x-gjs">
+function get_window_properties(): <link xref="WebKit2.WindowProperties">WebKit2.WindowProperties</link> {
+    // Gjs wrapper for webkit_web_view_get_window_properties()
+}
+  </code></synopsis>
+  <p>Get the <link xref="WebKit2.WindowProperties"/> object containing the properties
+that the window containing <code>web_view</code> should have.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the <link xref="WebKit2.WindowProperties"/> of <code>web_view</code></p>
+</item>
+</terms>
+
+</page>

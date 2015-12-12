@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<page id="WebKit2.FindController.get_search_text"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.FindController" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>String</api:type>
+      </api:returns>
+      <api:name>webkit_find_controller_get_search_text</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.FindController.prototype.get_search_text</title>
+  <synopsis><code mime="text/x-gjs">
+function get_search_text(): String {
+    // Gjs wrapper for webkit_find_controller_get_search_text()
+}
+  </code></synopsis>
+  <p>Gets the text that <code>find_controller</code> is currently searching
+for. This text is passed to either
+<link xref="WebKit2.FindController.search"/> or
+<link xref="WebKit2.FindController.count_matches"/>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the text to look for in the <link xref="WebKit2.WebView"/>.</p>
+</item>
+</terms>
+
+</page>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>WebKit2.WebView.prototype.run_javascript_finish</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="WebKit2">WebKit2</a> » <a class="trail" href="WebKit2.WebView.html" title="WebKit2.WebView">WebKit2.WebView</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">WebKit2.WebView.prototype.run_javascript_finish</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function run_javascript_finish(result: <span class="link"><a href="../Gio-2.0/Gio.AsyncResult.html" title="../Gio-2.0/Gio.AsyncResult.html">Gio.AsyncResult</a></span>): <span class="link"><a href="WebKit2.JavascriptResult.html" title="WebKit2.JavascriptResult">WebKit2.JavascriptResult</a></span> {
+    // Gjs wrapper for webkit_web_view_run_javascript_finish()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Finish an asynchronous operation started with <span class="link"><a href="WebKit2.WebView.run_javascript.html" title="WebKit2.WebView.prototype.run_javascript">WebKit2.WebView.prototype.run_javascript</a></span>.</p>
+<p class="p">This is an example of using <span class="link"><a href="WebKit2.WebView.run_javascript.html" title="WebKit2.WebView.prototype.run_javascript">WebKit2.WebView.prototype.run_javascript</a></span> with a script returning
+a string:</p>
+<p class="p">&lt;informalexample&gt;&lt;programlisting&gt;
+static void
+web_view_javascript_finished (GObject      *object,
+                              GAsyncResult *result,
+                              gpointer      user_data)
+{
+    WebKitJavascriptResult *js_result;
+    JSValueRef              value;
+    JSGlobalContextRef      context;
+    GError                 *error = NULL;</p>
+<p class="p">    js_result = webkit_web_view_run_javascript_finish (WEBKIT_WEB_VIEW (object), result, &amp;error);
+    if (!js_result) {
+        g_warning ("Error running javascript: %s", error-&gt;message);
+        g_error_free (error);
+        return;
+    }</p>
+<p class="p">    context = webkit_javascript_result_get_global_context (js_result);
+    value = webkit_javascript_result_get_value (js_result);
+    if (JSValueIsString (context, value)) {
+        JSStringRef js_str_value;
+        gchar      *str_value;
+        gsize       str_length;</p>
+<p class="p">        js_str_value = JSValueToStringCopy (context, value, NULL);
+        str_length = JSStringGetMaximumUTF8CStringSize (js_str_value);
+        str_value = (gchar *)g_malloc (str_length);
+        JSStringGetUTF8CString (js_str_value, str_value, str_length);
+        JSStringRelease (js_str_value);
+        g_print ("Script result: %s\n", str_value);
+        g_free (str_value);
+    } else {
+        g_warning ("Error running javascript: unexpected return value");
+    }
+    webkit_javascript_result_unref (js_result);
+}</p>
+<p class="p">static void
+web_view_get_link_url (WebKitWebView *web_view,
+                       const gchar   *link_id)
+{
+    gchar *script;</p>
+<p class="p">    script = g_strdup_printf ("window.document.getElementById('%s').href;", link_id);
+    webkit_web_view_run_javascript (web_view, script, NULL, web_view_javascript_finished, NULL);
+    g_free (script);
+}
+&lt;/programlisting&gt;&lt;/informalexample&gt;</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">result</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="../Gio-2.0/Gio.AsyncResult.html" title="../Gio-2.0/Gio.AsyncResult.html">Gio.AsyncResult</a></span></p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="WebKit2.JavascriptResult.html" title="WebKit2.JavascriptResult">WebKit2.JavascriptResult</a></span> with the result of the last executed statement in @script
+   or <span class="code">null</span> in case of error</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="WebKit2.WebView.html" title="WebKit2.WebView">WebKit2.WebView</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebContext.get_favicon_database"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebContext" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>WebKit2.FaviconDatabase</api:type>
+      </api:returns>
+      <api:name>webkit_web_context_get_favicon_database</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.WebContext.prototype.get_favicon_database</title>
+  <synopsis><code mime="text/x-gjs">
+function get_favicon_database(): <link xref="WebKit2.FaviconDatabase">WebKit2.FaviconDatabase</link> {
+    // Gjs wrapper for webkit_web_context_get_favicon_database()
+}
+  </code></synopsis>
+  <p>Get the <link xref="WebKit2.FaviconDatabase"/> associated with <code>context</code>.</p>  <p>To initialize the database you need to call
+<link xref="WebKit2.WebContext.set_favicon_database_directory"/>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the <link xref="WebKit2.FaviconDatabase"/> of <code>context</code>.</p>
+</item>
+</terms>
+
+</page>

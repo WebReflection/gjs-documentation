@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="WebKit2.ResponsePolicyDecision-response"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.ResponsePolicyDecision" group="property" type="guide"/>
+    <title type="link" role="topic">response</title>
+  </info>
+  <title>WebKit2.ResponsePolicyDecision.response</title>
+  <synopsis><code mime="text/x-gjs">
+ResponsePolicyDecision.response: <link xref="WebKit2.URIResponse">WebKit2.URIResponse</link> (Read)
+  </code></synopsis>
+  <p>This property contains the <link xref="WebKit2.URIResponse"/> associated with this
+policy decision.</p>
+
+</page>

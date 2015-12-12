@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<page id="WebKit2.WebView-favicon"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.WebView" group="property" type="guide"/>
+    <title type="link" role="topic">favicon</title>
+  </info>
+  <title>WebKit2.WebView.favicon</title>
+  <synopsis><code mime="text/x-gjs">
+WebView.favicon: void (Read)
+  </code></synopsis>
+  <p>The favicon currently associated to the <link xref="WebKit2.WebView"/>.
+See <link xref="WebKit2.WebView.get_favicon"/> for more details.</p>
+
+</page>

@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<page id="WebKit2.AuthenticationScheme"
+      type="guide"
+      style="enum"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="index" group="enum" type="guide"/>
+  </info>
+  <title>WebKit2.AuthenticationScheme</title>
+  <p>Enum values representing the authentication scheme.</p>
+  <p>Since 2.2</p>
+<terms>
+<item>
+<title><code>AuthenticationScheme.DEFAULT</code></title>
+  <p>The default authentication scheme of WebKit.</p>
+</item>
+<item>
+<title><code>AuthenticationScheme.HTTP_BASIC</code></title>
+  <p>Basic authentication scheme as defined in RFC 2617.</p>
+</item>
+<item>
+<title><code>AuthenticationScheme.HTTP_DIGEST</code></title>
+  <p>Digest authentication scheme as defined in RFC 2617.</p>
+</item>
+<item>
+<title><code>AuthenticationScheme.HTML_FORM</code></title>
+  <p>HTML Form authentication.</p>
+</item>
+<item>
+<title><code>AuthenticationScheme.NTLM</code></title>
+  <p>NTLM Microsoft proprietary authentication scheme.</p>
+</item>
+<item>
+<title><code>AuthenticationScheme.NEGOTIATE</code></title>
+  <p>Negotiate (or SPNEGO) authentication scheme as defined in RFC 4559.</p>
+</item>
+<item>
+<title><code>AuthenticationScheme.CLIENT_CERTIFICATE_REQUESTED</code></title>
+  <p>Client Certificate Authentication (see RFC 2246).</p>
+</item>
+<item>
+<title><code>AuthenticationScheme.SERVER_TRUST_EVALUATION_REQUESTED</code></title>
+  <p>Server Trust Authentication.</p>
+</item>
+<item>
+<title><code>AuthenticationScheme.UNKNOWN</code></title>
+  <p>Authentication scheme unknown.</p>
+</item>
+</terms>
+  <links type="topic" ui:expanded="true"
+         api:type="function" api:mime="text/x-gjs"
+         groups="function" style="linklist">
+    <title>Functions</title>
+  </links>
+</page>

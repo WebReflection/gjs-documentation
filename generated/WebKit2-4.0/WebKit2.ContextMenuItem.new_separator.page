@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<page id="WebKit2.ContextMenuItem.new_separator"
+      type="topic"
+      style="constructor"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.ContextMenuItem" group="constructor" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>WebKit2.ContextMenuItem</api:type>
+      </api:returns>
+      <api:name>webkit_context_menu_item_new_separator</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.ContextMenuItem.new_separator</title>
+  <synopsis><code mime="text/x-gjs">
+function new_separator(): <link xref="WebKit2.ContextMenuItem">WebKit2.ContextMenuItem</link> {
+    // Gjs wrapper for webkit_context_menu_item_new_separator()
+}
+  </code></synopsis>
+  <p>Creates a new <link xref="WebKit2.ContextMenuItem"/> representing a separator.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>the newly created <link xref="WebKit2.ContextMenuItem"/> object.</p>
+</item>
+</terms>
+
+</page>

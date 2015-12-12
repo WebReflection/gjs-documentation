@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page id="WebKit2.PrintOperation-page-setup"
+      type="topic"
+      style="property"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.PrintOperation" group="property" type="guide"/>
+    <title type="link" role="topic">page-setup</title>
+  </info>
+  <title>WebKit2.PrintOperation.page_setup</title>
+  <synopsis><code mime="text/x-gjs">
+PrintOperation.page_setup: <link href="../Gtk-3.0/Gtk.PageSetup.html">Gtk.PageSetup</link> (Read / Write)
+  </code></synopsis>
+  <p>The initial <link href="../Gtk-3.0/Gtk.PageSetup.html">Gtk.PageSetup</link> for the print operation.</p>
+
+</page>

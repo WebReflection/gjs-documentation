@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<page id="WebKit2.FormSubmissionRequest.get_text_fields"
+      type="topic"
+      style="method"
+      xmlns="http://projectmallard.org/1.0/"
+      xmlns:api="http://projectmallard.org/experimental/api/"
+      xmlns:ui="http://projectmallard.org/1.0/ui/">
+  <info>
+    <link xref="WebKit2.FormSubmissionRequest" group="method" type="guide"/>
+    <api:function>
+      <api:returns>
+        <api:type>{void: void}</api:type>
+      </api:returns>
+      <api:name>webkit_form_submission_request_get_text_fields</api:name>
+    </api:function>
+  </info>
+  <title>WebKit2.FormSubmissionRequest.prototype.get_text_fields</title>
+  <synopsis><code mime="text/x-gjs">
+function get_text_fields(): {void: void} {
+    // Gjs wrapper for webkit_form_submission_request_get_text_fields()
+}
+  </code></synopsis>
+  <p>Get a <link href="../GLib-2.0/GLib.HashTable.html">GLib.HashTable</link> with the values of the text fields contained in the form
+associated to <code>request</code>.</p>
+
+<terms>
+<item>
+<title><code>Returns</code></title>
+  <p>a <link href="../GLib-2.0/GLib.HashTable.html">GLib.HashTable</link> with the form text fields, or <code>null</code> if the
+   form doesn't contain text fields.</p>
+</item>
+</terms>
+
+</page>
