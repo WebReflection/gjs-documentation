@@ -30,7 +30,7 @@ GENERATED_NAMESPACES = \
 	Secret-1		\
 	Notify-0.7		\
 	GWeather-3.0		\
-	WebKit2-3.0
+	WebKit2-4.0
 
 NAMESPACES = $(STATIC_NAMESPACES) $(GENERATED_NAMESPACES)
 

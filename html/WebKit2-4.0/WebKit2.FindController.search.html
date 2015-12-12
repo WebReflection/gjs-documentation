@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>WebKit2.FindController.prototype.search</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="WebKit2">WebKit2</a> » <a class="trail" href="WebKit2.FindController.html" title="WebKit2.FindController">WebKit2.FindController</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">WebKit2.FindController.prototype.search</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function search(search_text: String, find_options: Number(guint32), max_match_count: Number(guint)): void {
+    // Gjs wrapper for webkit_find_controller_search()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Looks for <span class="code">search_text</span> in the <span class="link"><a href="WebKit2.WebView.html" title="WebKit2.WebView">WebKit2.WebView</a></span> associated with
+<span class="code">find_controller</span> since the beginning of the document highlighting
+up to <span class="code">max_match_count</span> matches. The outcome of the search will be
+asynchronously provided by the <span class="link"><a href="WebKit2.FindController-found-text.html" title="WebKit2.FindController::found-text">WebKit2.FindController::found-text</a></span>
+and <span class="link"><a href="WebKit2.FindController-failed-to-find-text.html" title="WebKit2.FindController::failed-to-find-text">WebKit2.FindController::failed-to-find-text</a></span> signals.</p>
+<p class="p">To look for the next or previous occurrences of the same text
+with the same find options use <span class="link"><a href="WebKit2.FindController.search_next.html" title="WebKit2.FindController.prototype.search_next">WebKit2.FindController.prototype.search_next</a></span>
+and/or <span class="link"><a href="WebKit2.FindController.search_previous.html" title="WebKit2.FindController.prototype.search_previous">WebKit2.FindController.prototype.search_previous</a></span>. The
+<span class="link"><a href="WebKit2.FindController.html" title="WebKit2.FindController">WebKit2.FindController</a></span> will use the same text and options for the
+following searches unless they are modified by another call to this
+method.</p>
+<p class="p">Note that if the number of matches is higher than <span class="code">max_match_count</span>
+then <span class="link"><a href="WebKit2.FindController-found-text.html" title="WebKit2.FindController::found-text">WebKit2.FindController::found-text</a></span> will report %G_MAXUINT matches
+instead of the actual number.</p>
+<p class="p">Callers should call <span class="link"><a href="WebKit2.FindController.search_finish.html" title="WebKit2.FindController.prototype.search_finish">WebKit2.FindController.prototype.search_finish</a></span> to
+finish the current search operation.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">search_text</span></dt>
+<dd class="terms"><p class="p">the text to look for</p></dd>
+<dt class="terms"><span class="code">find_options</span></dt>
+<dd class="terms"><p class="p">a bitmask with the <span class="link"><a href="WebKit2.FindOptions.html" title="WebKit2.FindOptions">WebKit2.FindOptions</a></span> used in the search</p></dd>
+<dt class="terms"><span class="code">max_match_count</span></dt>
+<dd class="terms"><p class="p">the maximum number of matches allowed in the search</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="WebKit2.FindController.html" title="WebKit2.FindController">WebKit2.FindController</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>WebKit2.WebView::decide-policy</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="WebKit2">WebKit2</a> » <a class="trail" href="WebKit2.WebView.html" title="WebKit2.WebView">WebKit2.WebView</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">WebKit2.WebView::decide-policy</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">connect('decide-policy', function (webView, decision: <span class="link"><a href="WebKit2.PolicyDecision.html" title="WebKit2.PolicyDecision">WebKit2.PolicyDecision</a></span>, decision_type: <span class="link"><a href="WebKit2.PolicyDecisionType.html" title="WebKit2.PolicyDecisionType">WebKit2.PolicyDecisionType</a></span>, ): Boolean);
+  </pre></div></div></div></div></div>
+<p class="p">This signal is emitted when WebKit is requesting the client to decide a policy
+decision, such as whether to navigate to a page, open a new window or whether or
+not to download a resource. The <span class="link"><a href="WebKit2.NavigationPolicyDecision.html" title="WebKit2.NavigationPolicyDecision">WebKit2.NavigationPolicyDecision</a></span> passed in the
+<span class="code">decision</span> argument is a generic type, but should be casted to a more
+specific type when making the decision. For example:</p>
+<p class="p">&lt;informalexample&gt;&lt;programlisting&gt;
+static gboolean
+decide_policy_cb (WebKitWebView *web_view,
+                  WebKitPolicyDecision *decision,
+                  WebKitPolicyDecisionType type)
+{
+    switch (type) {
+    case WEBKIT_POLICY_DECISION_TYPE_NAVIGATION_ACTION:
+        WebKitNavigationPolicyDecision *navigation_decision = WEBKIT_NAVIGATION_POLICY_DECISION (decision);
+        /&lt;!-- --&gt;* Make a policy decision here. *&lt;!-- --&gt;/
+        break;
+    case WEBKIT_POLICY_DECISION_TYPE_NEW_WINDOW_ACTION:
+        WebKitNavigationPolicyDecision *navigation_decision = WEBKIT_NAVIGATION_POLICY_DECISION (decision);
+        /&lt;!-- --&gt;* Make a policy decision here. *&lt;!-- --&gt;/
+        break;
+    case WEBKIT_POLICY_DECISION_TYPE_RESPONSE:
+        WebKitResponsePolicyDecision *response = WEBKIT_RESPONSE_POLICY_DECISION (decision);
+        /&lt;!-- --&gt;* Make a policy decision here. *&lt;!-- --&gt;/
+        break;
+    default:
+        /&lt;!-- --&gt;* Making no decision results in <span class="link"><a href="WebKit2.PolicyDecision.use.html" title="WebKit2.PolicyDecision.prototype.use">WebKit2.PolicyDecision.prototype.use</a></span>. *&lt;!-- --&gt;/
+        return FALSE;
+    }
+    return TRUE;
+}
+&lt;/programlisting&gt;&lt;/informalexample&gt;</p>
+<p class="p">It is possible to make policy decision asynchronously, by simply calling g_object_ref()
+on the <span class="code">decision</span> argument and returning <span class="code">true</span> to block the default signal handler.
+If the last reference is removed on a <span class="link"><a href="WebKit2.PolicyDecision.html" title="WebKit2.PolicyDecision">WebKit2.PolicyDecision</a></span> and no decision has been
+made explicitly, <span class="link"><a href="WebKit2.PolicyDecision.use.html" title="WebKit2.PolicyDecision.prototype.use">WebKit2.PolicyDecision.prototype.use</a></span> will be the default policy decision. The
+default signal handler will simply call <span class="link"><a href="WebKit2.PolicyDecision.use.html" title="WebKit2.PolicyDecision.prototype.use">WebKit2.PolicyDecision.prototype.use</a></span>. Only the first
+policy decision chosen for a given <span class="link"><a href="WebKit2.PolicyDecision.html" title="WebKit2.PolicyDecision">WebKit2.PolicyDecision</a></span> will have any affect.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">webView</span></dt>
+<dd class="terms"><p class="p">instance of <span class="link"><a href="WebKit2.WebView.html" title="WebKit2.WebView">WebKit2.WebView</a></span> that is emitting the signal</p></dd>
+<dt class="terms"><span class="code">decision</span></dt>
+<dd class="terms"><p class="p">the <span class="link"><a href="WebKit2.PolicyDecision.html" title="WebKit2.PolicyDecision">WebKit2.PolicyDecision</a></span></p></dd>
+<dt class="terms"><span class="code">decision_type</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="WebKit2.PolicyDecisionType.html" title="WebKit2.PolicyDecisionType">WebKit2.PolicyDecisionType</a></span> denoting the type of <span class="code">decision</span></p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> to stop other handlers from being invoked for the event.
+  <span class="code">false</span> to propagate the event further.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="WebKit2.WebView.html" title="WebKit2.WebView">WebKit2.WebView</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

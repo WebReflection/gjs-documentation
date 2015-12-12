@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>WebKit2.WebView::permission-request</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="WebKit2">WebKit2</a> » <a class="trail" href="WebKit2.WebView.html" title="WebKit2.WebView">WebKit2.WebView</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">WebKit2.WebView::permission-request</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">connect('permission-request', function (webView, request: <span class="link"><a href="WebKit2.PermissionRequest.html" title="WebKit2.PermissionRequest">WebKit2.PermissionRequest</a></span>, ): Boolean);
+  </pre></div></div></div></div></div>
+<p class="p">This signal is emitted when WebKit is requesting the client to
+decide about a permission request, such as allowing the browser
+to switch to fullscreen mode, sharing its location or similar
+operations.</p>
+<p class="p">A possible way to use this signal could be through a dialog
+allowing the user decide what to do with the request:</p>
+<p class="p">&lt;informalexample&gt;&lt;programlisting&gt;
+static gboolean permission_request_cb (WebKitWebView *web_view,
+                                       WebKitPermissionRequest *request,
+                                       GtkWindow *parent_window)
+{
+    GtkWidget *dialog = gtk_message_dialog_new (parent_window,
+                                                GTK_DIALOG_MODAL,
+                                                GTK_MESSAGE_QUESTION,
+                                                GTK_BUTTONS_YES_NO,
+                                                "Allow Permission Request?");
+    gtk_widget_show (dialog);
+    gint result = gtk_dialog_run (GTK_DIALOG (dialog));</p>
+<p class="p">    switch (result) {
+    case GTK_RESPONSE_YES:
+        webkit_permission_request_allow (request);
+        break;
+    default:
+        webkit_permission_request_deny (request);
+        break;
+    }
+    gtk_widget_destroy (dialog);</p>
+<p class="p">    return TRUE;
+}
+&lt;/programlisting&gt;&lt;/informalexample&gt;</p>
+<p class="p">It is possible to handle permission requests asynchronously, by
+simply calling g_object_ref() on the <span class="code">request</span> argument and
+returning <span class="code">true</span> to block the default signal handler.  If the
+last reference is removed on a <span class="link"><a href="WebKit2.PermissionRequest.html" title="WebKit2.PermissionRequest">WebKit2.PermissionRequest</a></span> and the
+request has not been handled, <span class="link"><a href="WebKit2.PermissionRequest.deny.html" title="WebKit2.PermissionRequest.prototype.deny">WebKit2.PermissionRequest.prototype.deny</a></span>
+will be the default action.</p>
+<p class="p">If the signal is not handled, the <span class="code">request</span> will be completed automatically
+by the specific <span class="link"><a href="WebKit2.PermissionRequest.html" title="WebKit2.PermissionRequest">WebKit2.PermissionRequest</a></span> that could allow or deny it. Check the
+documentation of classes implementing <span class="link"><a href="WebKit2.PermissionRequest.html" title="WebKit2.PermissionRequest">WebKit2.PermissionRequest</a></span> interface to know
+their default action.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">webView</span></dt>
+<dd class="terms"><p class="p">instance of <span class="link"><a href="WebKit2.WebView.html" title="WebKit2.WebView">WebKit2.WebView</a></span> that is emitting the signal</p></dd>
+<dt class="terms"><span class="code">request</span></dt>
+<dd class="terms"><p class="p">the <span class="link"><a href="WebKit2.PermissionRequest.html" title="WebKit2.PermissionRequest">WebKit2.PermissionRequest</a></span></p></dd>
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p"><span class="code">true</span> to stop other handlers from being invoked for the event.
+  <span class="code">false</span> to propagate the event further.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="WebKit2.WebView.html" title="WebKit2.WebView">WebKit2.WebView</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>WebKit2.WebView.prototype.set_background_color</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="WebKit2">WebKit2</a> » <a class="trail" href="WebKit2.WebView.html" title="WebKit2.WebView">WebKit2.WebView</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">WebKit2.WebView.prototype.set_background_color</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function set_background_color(rgba: <span class="link"><a href="../Gdk-3.0/Gdk.RGBA.html" title="../Gdk-3.0/Gdk.RGBA.html">Gdk.RGBA</a></span>): void {
+    // Gjs wrapper for webkit_web_view_set_background_color()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Sets the color that will be used to draw the <span class="code">web_view</span> background before
+the actual contents are rendered. Note that if the web page loaded in <span class="code">web_view</span>
+specifies a background color, it will take precedence over the <span class="code">rgba</span> color.
+By default the <span class="code">web_view</span> background color is opaque white.
+If the <span class="code">rgba</span> color is not fully opaque, the parent window must have a RGBA visual and
+#GtkWidget:app-paintable property set to <span class="code">true</span>, for the transparencies to work.</p>
+<p class="p">&lt;informalexample&gt;&lt;programlisting&gt;
+static void browser_window_set_background_color (BrowserWindow *window,
+                                                 const GdkRGBA *rgba)
+{
+    WebKitWebView *web_view;</p>
+<p class="p">    if (rgba-&gt;alpha &lt; 1) {
+        GdkScreen *screen = gtk_window_get_screen (GTK_WINDOW (window));
+        GdkVisual *rgba_visual = gdk_screen_get_rgba_visual (screen);</p>
+<p class="p">        if (!rgba_visual)
+             return;</p>
+<p class="p">        gtk_widget_set_visual (GTK_WIDGET (window), rgba_visual);
+        gtk_widget_set_app_paintable (GTK_WIDGET (window), TRUE);
+    }</p>
+<p class="p">    web_view = browser_window_get_web_view (window);
+    webkit_web_view_set_background_color (web_view, rgba);
+}
+&lt;/programlisting&gt;&lt;/informalexample&gt;</p>
+<p class="p">Since 2.8</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">rgba</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="../Gdk-3.0/Gdk.RGBA.html" title="../Gdk-3.0/Gdk.RGBA.html">Gdk.RGBA</a></span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="WebKit2.WebView.html" title="WebKit2.WebView">WebKit2.WebView</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

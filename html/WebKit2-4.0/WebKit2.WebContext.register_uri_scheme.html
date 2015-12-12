@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>WebKit2.WebContext.prototype.register_uri_scheme</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="WebKit2">WebKit2</a> » <a class="trail" href="WebKit2.WebContext.html" title="WebKit2.WebContext">WebKit2.WebContext</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">WebKit2.WebContext.prototype.register_uri_scheme</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function register_uri_scheme(scheme: String, callback: <span class="link"><a href="WebKit2.URISchemeRequestCallback.html" title="WebKit2.URISchemeRequestCallback">WebKit2.URISchemeRequestCallback</a></span>): void {
+    // Gjs wrapper for webkit_web_context_register_uri_scheme()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Register <span class="code">scheme</span> in <span class="code">context</span>, so that when an URI request with <span class="code">scheme</span> is made in the
+<span class="link"><a href="WebKit2.WebContext.html" title="WebKit2.WebContext">WebKit2.WebContext</a></span>, the <span class="link"><a href="WebKit2.URISchemeRequestCallback.html" title="WebKit2.URISchemeRequestCallback">WebKit2.URISchemeRequestCallback</a></span> registered will be called with a
+<span class="link"><a href="WebKit2.URISchemeRequest.html" title="WebKit2.URISchemeRequest">WebKit2.URISchemeRequest</a></span>.
+It is possible to handle URI scheme requests asynchronously, by calling g_object_ref() on the
+<span class="link"><a href="WebKit2.URISchemeRequest.html" title="WebKit2.URISchemeRequest">WebKit2.URISchemeRequest</a></span> and calling <span class="link"><a href="WebKit2.URISchemeRequest.finish.html" title="WebKit2.URISchemeRequest.prototype.finish">WebKit2.URISchemeRequest.prototype.finish</a></span> later
+when the data of the request is available or
+<span class="link"><a href="WebKit2.URISchemeRequest.finish_error.html" title="WebKit2.URISchemeRequest.prototype.finish_error">WebKit2.URISchemeRequest.prototype.finish_error</a></span> in case of error.</p>
+<p class="p">&lt;informalexample&gt;&lt;programlisting&gt;
+static void
+about_uri_scheme_request_cb (WebKitURISchemeRequest *request,
+                             gpointer                user_data)
+{
+    GInputStream *stream;
+    gsize         stream_length;
+    const gchar  *path;</p>
+<p class="p">    path = webkit_uri_scheme_request_get_path (request);
+    if (!g_strcmp0 (path, "plugins")) {
+        /&lt;!-- --&gt;* Create a GInputStream with the contents of plugins about page, and set its length to stream_length *&lt;!-- --&gt;/
+    } else if (!g_strcmp0 (path, "memory")) {
+        /&lt;!-- --&gt;* Create a GInputStream with the contents of memory about page, and set its length to stream_length *&lt;!-- --&gt;/
+    } else if (!g_strcmp0 (path, "applications")) {
+        /&lt;!-- --&gt;* Create a GInputStream with the contents of applications about page, and set its length to stream_length *&lt;!-- --&gt;/
+    } else if (!g_strcmp0 (path, "example")) {
+        gchar *contents;</p>
+<p class="p">        contents = g_strdup_printf ("&amp;lt;html&amp;gt;&amp;lt;body&amp;gt;&amp;lt;p&amp;gt;Example about page&amp;lt;/p&amp;gt;&amp;lt;/body&amp;gt;&amp;lt;/html&amp;gt;");
+        stream_length = strlen (contents);
+        stream = g_memory_input_stream_new_from_data (contents, stream_length, g_free);
+    } else {
+        GError *error;</p>
+<p class="p">        error = g_error_new (ABOUT_HANDLER_ERROR, ABOUT_HANDLER_ERROR_INVALID, "Invalid about:%s page.", path);
+        webkit_uri_scheme_request_finish_error (request, error);
+        g_error_free (error);
+        return;
+    }
+    webkit_uri_scheme_request_finish (request, stream, stream_length, "text/html");
+    g_object_unref (stream);
+}
+&lt;/programlisting&gt;&lt;/informalexample&gt;</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">scheme</span></dt>
+<dd class="terms"><p class="p">the network scheme to register</p></dd>
+<dt class="terms"><span class="code">callback</span></dt>
+<dd class="terms"><p class="p">a <span class="link"><a href="WebKit2.URISchemeRequestCallback.html" title="WebKit2.URISchemeRequestCallback">WebKit2.URISchemeRequestCallback</a></span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="WebKit2.WebContext.html" title="WebKit2.WebContext">WebKit2.WebContext</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

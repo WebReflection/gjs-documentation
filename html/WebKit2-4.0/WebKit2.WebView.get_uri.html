@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>WebKit2.WebView.prototype.get_uri</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="WebKit2">WebKit2</a> » <a class="trail" href="WebKit2.WebView.html" title="WebKit2.WebView">WebKit2.WebView</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">WebKit2.WebView.prototype.get_uri</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function get_uri(): String {
+    // Gjs wrapper for webkit_web_view_get_uri()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Returns the current active URI of <span class="code">web_view</span>. The active URI might change during
+a load operation:</p>
+<p class="p">&lt;orderedlist&gt;
+&lt;listitem&gt;&lt;para&gt;
+  When nothing has been loaded yet on <span class="code">web_view</span> the active URI is <span class="code">null</span>.
+&lt;/para&gt;&lt;/listitem&gt;
+&lt;listitem&gt;&lt;para&gt;
+  When a new load operation starts the active URI is the requested URI:
+  &lt;itemizedlist&gt;
+  &lt;listitem&gt;&lt;para&gt;
+    If the load operation was started by <span class="link"><a href="WebKit2.WebView.load_uri.html" title="WebKit2.WebView.prototype.load_uri">WebKit2.WebView.prototype.load_uri</a></span>,
+    the requested URI is the given one.
+  &lt;/para&gt;&lt;/listitem&gt;
+  &lt;listitem&gt;&lt;para&gt;
+    If the load operation was started by <span class="link"><a href="WebKit2.WebView.load_html.html" title="WebKit2.WebView.prototype.load_html">WebKit2.WebView.prototype.load_html</a></span>,
+    the requested URI is "about:blank".
+  &lt;/para&gt;&lt;/listitem&gt;
+  &lt;listitem&gt;&lt;para&gt;
+    If the load operation was started by <span class="link"><a href="WebKit2.WebView.load_alternate_html.html" title="WebKit2.WebView.prototype.load_alternate_html">WebKit2.WebView.prototype.load_alternate_html</a></span>,
+    the requested URI is content URI provided.
+  &lt;/para&gt;&lt;/listitem&gt;
+  &lt;listitem&gt;&lt;para&gt;
+    If the load operation was started by <span class="link"><a href="WebKit2.WebView.go_back.html" title="WebKit2.WebView.prototype.go_back">WebKit2.WebView.prototype.go_back</a></span> or
+    <span class="link"><a href="WebKit2.WebView.go_forward.html" title="WebKit2.WebView.prototype.go_forward">WebKit2.WebView.prototype.go_forward</a></span>, the requested URI is the original URI
+    of the previous/next item in the <span class="link"><a href="WebKit2.BackForwardList.html" title="WebKit2.BackForwardList">WebKit2.BackForwardList</a></span> of <span class="code">web_view</span>.
+  &lt;/para&gt;&lt;/listitem&gt;
+  &lt;listitem&gt;&lt;para&gt;
+    If the load operation was started by
+    <span class="link"><a href="WebKit2.WebView.go_to_back_forward_list_item.html" title="WebKit2.WebView.prototype.go_to_back_forward_list_item">WebKit2.WebView.prototype.go_to_back_forward_list_item</a></span>, the requested URI
+    is the opriginal URI of the given <span class="link"><a href="WebKit2.BackForwardListItem.html" title="WebKit2.BackForwardListItem">WebKit2.BackForwardListItem</a></span>.
+  &lt;/para&gt;&lt;/listitem&gt;
+  &lt;/itemizedlist&gt;
+&lt;/para&gt;&lt;/listitem&gt;
+&lt;listitem&gt;&lt;para&gt;
+  If there is a server redirection during the load operation,
+  the active URI is the redirected URI. When the signal
+  <span class="link"><a href="WebKit2.WebView-load-changed.html" title="WebKit2.WebView::load-changed">WebKit2.WebView::load-changed</a></span> is emitted with <span class="link"><a href="WebKit2.LoadEvent.html" title="WebKit2.LoadEvent">WebKit2.LoadEvent</a></span>.redirected
+  event, the active URI is already updated to the redirected URI.
+&lt;/para&gt;&lt;/listitem&gt;
+&lt;listitem&gt;&lt;para&gt;
+  When the signal <span class="link"><a href="WebKit2.WebView-load-changed.html" title="WebKit2.WebView::load-changed">WebKit2.WebView::load-changed</a></span> is emitted
+  with <span class="link"><a href="WebKit2.LoadEvent.html" title="WebKit2.LoadEvent">WebKit2.LoadEvent</a></span>.committed event, the active URI is the final
+  one and it will not change unless a new load operation is started
+  or a navigation action within the same page is performed.
+&lt;/para&gt;&lt;/listitem&gt;
+&lt;/orderedlist&gt;</p>
+<p class="p">You can monitor the active URI by connecting to the notify::uri
+signal of <span class="code">web_view</span>.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">the current active URI of <span class="code">web_view</span> or <span class="code">null</span>
+   if nothing has been loaded yet.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="WebKit2.WebView.html" title="WebKit2.WebView">WebKit2.WebView</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

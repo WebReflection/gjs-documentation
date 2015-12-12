@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>WebKit2.FaviconDatabase.prototype.get_favicon</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="WebKit2">WebKit2</a> » <a class="trail" href="WebKit2.FaviconDatabase.html" title="WebKit2.FaviconDatabase">WebKit2.FaviconDatabase</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">WebKit2.FaviconDatabase.prototype.get_favicon</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function get_favicon(page_uri: String, cancellable: <span class="link"><a href="../Gio-2.0/Gio.Cancellable.html" title="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</a></span>, callback: <span class="link"><a href="../Gio-2.0/Gio.AsyncReadyCallback.html" title="../Gio-2.0/Gio.AsyncReadyCallback.html">Gio.AsyncReadyCallback</a></span>): void {
+    // Gjs wrapper for webkit_favicon_database_get_favicon()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Asynchronously obtains a #cairo_surface_t of the favicon for the
+given page URI. It returns the cached icon if it's in the database
+asynchronously waiting for the icon to be read from the database.</p>
+<p class="p">This is an asynchronous method. When the operation is finished, callback will
+be invoked. You can then call <span class="link"><a href="WebKit2.FaviconDatabase.get_favicon_finish.html" title="WebKit2.FaviconDatabase.prototype.get_favicon_finish">WebKit2.FaviconDatabase.prototype.get_favicon_finish</a></span>
+to get the result of the operation.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">page_uri</span></dt>
+<dd class="terms"><p class="p">URI of the page for which we want to retrieve the favicon</p></dd>
+<dt class="terms"><span class="code">cancellable</span></dt>
+<dd class="terms"><p class="p">A <span class="link"><a href="../Gio-2.0/Gio.Cancellable.html" title="../Gio-2.0/Gio.Cancellable.html">Gio.Cancellable</a></span> or <span class="code">null</span>.</p></dd>
+<dt class="terms"><span class="code">callback</span></dt>
+<dd class="terms"><p class="p">A <span class="link"><a href="../Gio-2.0/Gio.AsyncReadyCallback.html" title="../Gio-2.0/Gio.AsyncReadyCallback.html">Gio.AsyncReadyCallback</a></span> to call when the request is
+           satisfied or <span class="code">null</span> if you don't care about the result.</p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="WebKit2.FaviconDatabase.html" title="WebKit2.FaviconDatabase">WebKit2.FaviconDatabase</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>WebKit2.WebResource.prototype.get_uri</title>
+<link rel="stylesheet" type="text/css" href="C.css">
+<script type="text/javascript" src="jquery.js"></script><script type="text/javascript" src="jquery.syntax.js"></script><script type="text/javascript" src="yelp.js"></script>
+</head>
+<body><div class="page" role="main">
+<div class="header"><div class="trails" role="navigation"><div class="trail">
+<a class="trail" href="index.html" title="WebKit2">WebKit2</a> » <a class="trail" href="WebKit2.WebResource.html" title="WebKit2.WebResource">WebKit2.WebResource</a> » </div></div></div>
+<div class="body">
+<div class="hgroup"><h1 class="title"><span class="title">WebKit2.WebResource.prototype.get_uri</span></h1></div>
+<div class="region">
+<div class="contents">
+<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function get_uri(): String {
+    // Gjs wrapper for webkit_web_resource_get_uri()
+}
+  </pre></div></div></div></div></div>
+<p class="p">Returns the current active URI of <span class="code">resource</span>. The active URI might change during
+a load operation:</p>
+<p class="p">&lt;orderedlist&gt;
+&lt;listitem&gt;&lt;para&gt;
+  When the resource load starts, the active URI is the requested URI
+&lt;/para&gt;&lt;/listitem&gt;
+&lt;listitem&gt;&lt;para&gt;
+  When the initial request is sent to the server, <span class="link"><a href="WebKit2.WebResource-sent-request.html" title="WebKit2.WebResource::sent-request">WebKit2.WebResource::sent-request</a></span>
+  signal is emitted without a redirected response, the active URI is the URI of
+  the request sent to the server.
+&lt;/para&gt;&lt;/listitem&gt;
+&lt;listitem&gt;&lt;para&gt;
+  In case of a server redirection, <span class="link"><a href="WebKit2.WebResource-sent-request.html" title="WebKit2.WebResource::sent-request">WebKit2.WebResource::sent-request</a></span> signal
+  is emitted again with a redirected response, the active URI is the URI the request
+  was redirected to.
+&lt;/para&gt;&lt;/listitem&gt;
+&lt;listitem&gt;&lt;para&gt;
+  When the response is received from the server, the active URI is the final
+  one and it will not change again.
+&lt;/para&gt;&lt;/listitem&gt;
+&lt;/orderedlist&gt;</p>
+<p class="p">You can monitor the active URI by connecting to the notify::uri
+signal of <span class="code">resource</span>.</p>
+<div class="terms"><div class="inner"><div class="region"><dl class="terms">
+<dt class="terms"><span class="code">Returns</span></dt>
+<dd class="terms"><p class="p">the current active URI of <span class="code">resource</span></p></dd>
+</dl></div></div></div>
+</div>
+<div class="sect sect-links" role="navigation">
+<div class="hgroup"></div>
+<div class="contents"><div class="links guidelinks"><div class="inner">
+<div class="title"><h2><span class="title">More Information</span></h2></div>
+<div class="region"><ul><li class="links "><a href="WebKit2.WebResource.html" title="WebKit2.WebResource">WebKit2.WebResource</a></li></ul></div>
+</div></div></div>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+<div class="footer"></div>
+</div></body>
+</html>
