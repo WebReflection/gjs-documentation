@@ -16,12 +16,8 @@
 <div class="contents">
 <div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
 
-let dBusMessage = new Gio.DBusMessage({
-});
+let dBusMessage = new Gio.DBusMessage();
   </pre></div></div></div></div></div>
-<p class="p">A type for representing D-Bus messages that can be sent or received
-on a <span class="link"><a href="Gio.DBusConnection.html" title="Gio.DBusConnection">Gio.DBusConnection</a></span>.</p>
-<p class="p">Since 2.26</p>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
 <div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
@@ -33,70 +29,6 @@ on a <span class="link"><a href="Gio.DBusConnection.html" title="Gio.DBusConnect
         <span class="code">Gio.DBusMessage</span>
       </div></li></ul>
 </li></ul></div></div></div></div></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.DBusMessage.new.html" title="Gio.DBusMessage.new">Gio.DBusMessage.new</a></li>
-<li class="links "><a href="Gio.DBusMessage.new_from_blob.html" title="Gio.DBusMessage.new_from_blob">Gio.DBusMessage.new_from_blob</a></li>
-<li class="links "><a href="Gio.DBusMessage.new_method_call.html" title="Gio.DBusMessage.new_method_call">Gio.DBusMessage.new_method_call</a></li>
-<li class="links "><a href="Gio.DBusMessage.new_signal.html" title="Gio.DBusMessage.new_signal">Gio.DBusMessage.new_signal</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.DBusMessage.copy.html" title="Gio.DBusMessage.prototype.copy">Gio.DBusMessage.prototype.copy</a></li>
-<li class="links "><a href="Gio.DBusMessage.get_arg0.html" title="Gio.DBusMessage.prototype.get_arg0">Gio.DBusMessage.prototype.get_arg0</a></li>
-<li class="links "><a href="Gio.DBusMessage.get_body.html" title="Gio.DBusMessage.prototype.get_body">Gio.DBusMessage.prototype.get_body</a></li>
-<li class="links "><a href="Gio.DBusMessage.get_byte_order.html" title="Gio.DBusMessage.prototype.get_byte_order">Gio.DBusMessage.prototype.get_byte_order</a></li>
-<li class="links "><a href="Gio.DBusMessage.get_destination.html" title="Gio.DBusMessage.prototype.get_destination">Gio.DBusMessage.prototype.get_destination</a></li>
-<li class="links "><a href="Gio.DBusMessage.get_error_name.html" title="Gio.DBusMessage.prototype.get_error_name">Gio.DBusMessage.prototype.get_error_name</a></li>
-<li class="links "><a href="Gio.DBusMessage.get_flags.html" title="Gio.DBusMessage.prototype.get_flags">Gio.DBusMessage.prototype.get_flags</a></li>
-<li class="links "><a href="Gio.DBusMessage.get_header.html" title="Gio.DBusMessage.prototype.get_header">Gio.DBusMessage.prototype.get_header</a></li>
-<li class="links "><a href="Gio.DBusMessage.get_header_fields.html" title="Gio.DBusMessage.prototype.get_header_fields">Gio.DBusMessage.prototype.get_header_fields</a></li>
-<li class="links "><a href="Gio.DBusMessage.get_interface.html" title="Gio.DBusMessage.prototype.get_interface">Gio.DBusMessage.prototype.get_interface</a></li>
-<li class="links "><a href="Gio.DBusMessage.get_locked.html" title="Gio.DBusMessage.prototype.get_locked">Gio.DBusMessage.prototype.get_locked</a></li>
-<li class="links "><a href="Gio.DBusMessage.get_member.html" title="Gio.DBusMessage.prototype.get_member">Gio.DBusMessage.prototype.get_member</a></li>
-<li class="links "><a href="Gio.DBusMessage.get_message_type.html" title="Gio.DBusMessage.prototype.get_message_type">Gio.DBusMessage.prototype.get_message_type</a></li>
-<li class="links "><a href="Gio.DBusMessage.get_num_unix_fds.html" title="Gio.DBusMessage.prototype.get_num_unix_fds">Gio.DBusMessage.prototype.get_num_unix_fds</a></li>
-<li class="links "><a href="Gio.DBusMessage.get_path.html" title="Gio.DBusMessage.prototype.get_path">Gio.DBusMessage.prototype.get_path</a></li>
-<li class="links "><a href="Gio.DBusMessage.get_reply_serial.html" title="Gio.DBusMessage.prototype.get_reply_serial">Gio.DBusMessage.prototype.get_reply_serial</a></li>
-<li class="links "><a href="Gio.DBusMessage.get_sender.html" title="Gio.DBusMessage.prototype.get_sender">Gio.DBusMessage.prototype.get_sender</a></li>
-<li class="links "><a href="Gio.DBusMessage.get_serial.html" title="Gio.DBusMessage.prototype.get_serial">Gio.DBusMessage.prototype.get_serial</a></li>
-<li class="links "><a href="Gio.DBusMessage.get_signature.html" title="Gio.DBusMessage.prototype.get_signature">Gio.DBusMessage.prototype.get_signature</a></li>
-<li class="links "><a href="Gio.DBusMessage.get_unix_fd_list.html" title="Gio.DBusMessage.prototype.get_unix_fd_list">Gio.DBusMessage.prototype.get_unix_fd_list</a></li>
-<li class="links "><a href="Gio.DBusMessage.lock.html" title="Gio.DBusMessage.prototype.lock">Gio.DBusMessage.prototype.lock</a></li>
-<li class="links "><a href="Gio.DBusMessage.new_method_error_literal.html" title="Gio.DBusMessage.prototype.new_method_error_literal">Gio.DBusMessage.prototype.new_method_error_literal</a></li>
-<li class="links "><a href="Gio.DBusMessage.new_method_reply.html" title="Gio.DBusMessage.prototype.new_method_reply">Gio.DBusMessage.prototype.new_method_reply</a></li>
-<li class="links "><a href="Gio.DBusMessage.print.html" title="Gio.DBusMessage.prototype.print">Gio.DBusMessage.prototype.print</a></li>
-<li class="links "><a href="Gio.DBusMessage.set_body.html" title="Gio.DBusMessage.prototype.set_body">Gio.DBusMessage.prototype.set_body</a></li>
-<li class="links "><a href="Gio.DBusMessage.set_byte_order.html" title="Gio.DBusMessage.prototype.set_byte_order">Gio.DBusMessage.prototype.set_byte_order</a></li>
-<li class="links "><a href="Gio.DBusMessage.set_destination.html" title="Gio.DBusMessage.prototype.set_destination">Gio.DBusMessage.prototype.set_destination</a></li>
-<li class="links "><a href="Gio.DBusMessage.set_error_name.html" title="Gio.DBusMessage.prototype.set_error_name">Gio.DBusMessage.prototype.set_error_name</a></li>
-<li class="links "><a href="Gio.DBusMessage.set_flags.html" title="Gio.DBusMessage.prototype.set_flags">Gio.DBusMessage.prototype.set_flags</a></li>
-<li class="links "><a href="Gio.DBusMessage.set_header.html" title="Gio.DBusMessage.prototype.set_header">Gio.DBusMessage.prototype.set_header</a></li>
-<li class="links "><a href="Gio.DBusMessage.set_interface.html" title="Gio.DBusMessage.prototype.set_interface">Gio.DBusMessage.prototype.set_interface</a></li>
-<li class="links "><a href="Gio.DBusMessage.set_member.html" title="Gio.DBusMessage.prototype.set_member">Gio.DBusMessage.prototype.set_member</a></li>
-<li class="links "><a href="Gio.DBusMessage.set_message_type.html" title="Gio.DBusMessage.prototype.set_message_type">Gio.DBusMessage.prototype.set_message_type</a></li>
-<li class="links "><a href="Gio.DBusMessage.set_num_unix_fds.html" title="Gio.DBusMessage.prototype.set_num_unix_fds">Gio.DBusMessage.prototype.set_num_unix_fds</a></li>
-<li class="links "><a href="Gio.DBusMessage.set_path.html" title="Gio.DBusMessage.prototype.set_path">Gio.DBusMessage.prototype.set_path</a></li>
-<li class="links "><a href="Gio.DBusMessage.set_reply_serial.html" title="Gio.DBusMessage.prototype.set_reply_serial">Gio.DBusMessage.prototype.set_reply_serial</a></li>
-<li class="links "><a href="Gio.DBusMessage.set_sender.html" title="Gio.DBusMessage.prototype.set_sender">Gio.DBusMessage.prototype.set_sender</a></li>
-<li class="links "><a href="Gio.DBusMessage.set_serial.html" title="Gio.DBusMessage.prototype.set_serial">Gio.DBusMessage.prototype.set_serial</a></li>
-<li class="links "><a href="Gio.DBusMessage.set_signature.html" title="Gio.DBusMessage.prototype.set_signature">Gio.DBusMessage.prototype.set_signature</a></li>
-<li class="links "><a href="Gio.DBusMessage.set_unix_fd_list.html" title="Gio.DBusMessage.prototype.set_unix_fd_list">Gio.DBusMessage.prototype.set_unix_fd_list</a></li>
-<li class="links "><a href="Gio.DBusMessage.to_blob.html" title="Gio.DBusMessage.prototype.to_blob">Gio.DBusMessage.prototype.to_blob</a></li>
-<li class="links "><a href="Gio.DBusMessage.to_gerror.html" title="Gio.DBusMessage.prototype.to_gerror">Gio.DBusMessage.prototype.to_gerror</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Static Functions</span></h2></div>
-<div class="region"><ul><li class="links "><a href="Gio.DBusMessage.bytes_needed.html" title="Gio.DBusMessage.bytes_needed">Gio.DBusMessage.bytes_needed</a></li></ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Properties</span></h2></div>
-<div class="region"><ul><li class="links "><a href="Gio.DBusMessage-locked.html" title="Gio.DBusMessage.locked">locked</a></li></ul></div>
 </div></div>
 </div>
 <div class="sect sect-links" role="navigation">

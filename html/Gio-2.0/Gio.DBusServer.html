@@ -16,23 +16,8 @@
 <div class="contents">
 <div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
 
-let dBusServer = new Gio.DBusServer({
-    <span class="link"><a href="Gio.DBusServer-address.html" title="Gio.DBusServer.address">address</a></span>: value,
-    <span class="link"><a href="Gio.DBusServer-authentication-observer.html" title="Gio.DBusServer.authentication_observer">authentication_observer</a></span>: value,
-    <span class="link"><a href="Gio.DBusServer-flags.html" title="Gio.DBusServer.flags">flags</a></span>: value,
-    <span class="link"><a href="Gio.DBusServer-guid.html" title="Gio.DBusServer.guid">guid</a></span>: value,
-});
+let dBusServer = new Gio.DBusServer();
   </pre></div></div></div></div></div>
-<p class="p"><span class="link"><a href="Gio.DBusServer.html" title="Gio.DBusServer">Gio.DBusServer</a></span> is a helper for listening to and accepting D-Bus
-connections. This can be used to create a new D-Bus server, allowing two
-peers to use the D-Bus protocol for their own specialized communication.
-A server instance provided in this way will not perform message routing or
-implement the org.freedesktop.DBus interface.</p>
-<p class="p">To just export an object on a well-known name on a message bus, such as the
-session or system bus, you should instead use <span class="link"><a href="Gio.bus_own_name.html" title="Gio.bus_own_name">Gio.bus_own_name</a></span>.</p>
-<p class="p">An example of peer-to-peer communication with G-DBus can be found
-in [gdbus-example-peer.c](https://git.gnome.org/browse/glib/tree/gio/tests/gdbus-example-peer.c).</p>
-<p class="p">Since 2.26</p>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
 <div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
@@ -44,36 +29,6 @@ in [gdbus-example-peer.c](https://git.gnome.org/browse/glib/tree/gio/tests/gdbus
         <span class="code">Gio.DBusServer</span>
       </div></li></ul>
 </li></ul></div></div></div></div></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
-<div class="region"><ul><li class="links "><a href="Gio.DBusServer.new_sync.html" title="Gio.DBusServer.new_sync">Gio.DBusServer.new_sync</a></li></ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.DBusServer.get_client_address.html" title="Gio.DBusServer.prototype.get_client_address">Gio.DBusServer.prototype.get_client_address</a></li>
-<li class="links "><a href="Gio.DBusServer.get_flags.html" title="Gio.DBusServer.prototype.get_flags">Gio.DBusServer.prototype.get_flags</a></li>
-<li class="links "><a href="Gio.DBusServer.get_guid.html" title="Gio.DBusServer.prototype.get_guid">Gio.DBusServer.prototype.get_guid</a></li>
-<li class="links "><a href="Gio.DBusServer.is_active.html" title="Gio.DBusServer.prototype.is_active">Gio.DBusServer.prototype.is_active</a></li>
-<li class="links "><a href="Gio.DBusServer.start.html" title="Gio.DBusServer.prototype.start">Gio.DBusServer.prototype.start</a></li>
-<li class="links "><a href="Gio.DBusServer.stop.html" title="Gio.DBusServer.prototype.stop">Gio.DBusServer.prototype.stop</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Properties</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.DBusServer-active.html" title="Gio.DBusServer.active">active</a></li>
-<li class="links "><a href="Gio.DBusServer-address.html" title="Gio.DBusServer.address">address</a></li>
-<li class="links "><a href="Gio.DBusServer-authentication-observer.html" title="Gio.DBusServer.authentication_observer">authentication-observer</a></li>
-<li class="links "><a href="Gio.DBusServer-client-address.html" title="Gio.DBusServer.client_address">client-address</a></li>
-<li class="links "><a href="Gio.DBusServer-flags.html" title="Gio.DBusServer.flags">flags</a></li>
-<li class="links "><a href="Gio.DBusServer-guid.html" title="Gio.DBusServer.guid">guid</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Signals</span></h2></div>
-<div class="region"><ul><li class="links "><a href="Gio.DBusServer-new-connection.html" title="Gio.DBusServer::new-connection">new-connection</a></li></ul></div>
 </div></div>
 </div>
 <div class="sect sect-links" role="navigation">

@@ -3,12 +3,10 @@ prefix ?= /opt/gnome
 datadir ?= $(prefix)/share
 girdir = $(datadir)/gir-1.0
 
-STATIC_NAMESPACES = \
+GENERATED_NAMESPACES = \
 	GLib-2.0		\
 	Gio-2.0			\
 	GObject-2.0		\
-
-GENERATED_NAMESPACES = \
 	cairo-1.0		\
 	Pango-1.0		\
 	PangoCairo-1.0		\
@@ -32,29 +30,21 @@ GENERATED_NAMESPACES = \
 	GWeather-3.0		\
 	WebKit2-4.0
 
-NAMESPACES = $(STATIC_NAMESPACES) $(GENERATED_NAMESPACES)
+NAMESPACES = $(GENERATED_NAMESPACES)
 
 GIRS = $(foreach g,$(NAMESPACES),$(girdir)/$(g).gir)
-STATIC_MALLARDS = $(foreach g,$(STATIC_NAMESPACES),$(outdir)/static/$(g))
 GENERATED_MALLARDS = $(foreach g,$(GENERATED_NAMESPACES),$(outdir)/generated/$(g))
-MALLARDS = $(STATIC_MALLARDS) $(GENERATED_MALLARDS)
+MALLARDS = $(GENERATED_MALLARDS)
 HTMLS = $(foreach g,$(NAMESPACES),html/$(g))
 
 all: $(HTMLS)
 
-$(outdir)/static/%: $(girdir)/%.gir
-	g-ir-doc-tool --language=Gjs -o $@ $<
-	touch $@
 $(outdir)/generated/%: $(girdir)/%.gir
 	g-ir-doc-tool --language=Gjs -o $@ $<
 	touch $@
 
 update-mallard: $(MALLARDS)
 
-html/%: $(outdir)/static/%
-	mkdir -p $@
-	yelp-build html -o $@ $<
-	touch $@
 html/%: $(outdir)/generated/%
 	mkdir -p $@
 	yelp-build html -o $@ $<

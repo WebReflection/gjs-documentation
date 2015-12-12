@@ -17,29 +17,15 @@
 <div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function onTaskThreadFunc(task: <span class="link"><a href="Gio.Task.html" title="Gio.Task">Gio.Task</a></span>, source_object: <span class="link"><a href="../GObject-2.0/GObject.Object.html" title="../GObject-2.0/GObject.Object.html">GObject.Object</a></span>, task_data: void, cancellable: <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span>): void {
 }
   </pre></div></div></div></div></div>
-<p class="p">The prototype for a task function to be run in a thread via
-<span class="link"><a href="Gio.Task.run_in_thread.html" title="Gio.Task.run_in_thread">Gio.Task.run_in_thread</a></span> or <span class="link"><a href="Gio.Task.run_in_thread_sync.html" title="Gio.Task.run_in_thread_sync">Gio.Task.run_in_thread_sync</a></span>.</p>
-<p class="p">If the return-on-cancel flag is set on <span class="code">task</span>, and <span class="code">cancellable</span> gets
-cancelled, then the <span class="link"><a href="Gio.Task.html" title="Gio.Task">Gio.Task</a></span> will be completed immediately (as though
-<span class="link"><a href="Gio.Task.return_error_if_cancelled.html" title="Gio.Task.prototype.return_error_if_cancelled">Gio.Task.prototype.return_error_if_cancelled</a></span> had been called), without
-waiting for the task function to complete. However, the task
-function will continue running in its thread in the background. The
-function therefore needs to be careful about how it uses
-externally-visible state in this case. See
-<span class="link"><a href="Gio.Task.set_return_on_cancel.html" title="Gio.Task.prototype.set_return_on_cancel">Gio.Task.prototype.set_return_on_cancel</a></span> for more details.</p>
-<p class="p">Other than in that case, <span class="code">task</span> will be completed when the
-<span class="link"><a href="Gio.TaskThreadFunc.html" title="Gio.TaskThreadFunc">Gio.TaskThreadFunc</a></span> returns, not when it calls a
-`g_task_return_` function.</p>
-<p class="p">Since 2.36</p>
 <div class="terms"><div class="inner"><div class="region"><dl class="terms">
 <dt class="terms"><span class="code">task</span></dt>
-<dd class="terms"><p class="p">the <span class="link"><a href="Gio.Task.html" title="Gio.Task">Gio.Task</a></span></p></dd>
+<dd class="terms"></dd>
 <dt class="terms"><span class="code">source_object</span></dt>
-<dd class="terms"><p class="p"><span class="code">task</span>'s source object</p></dd>
+<dd class="terms"></dd>
 <dt class="terms"><span class="code">task_data</span></dt>
-<dd class="terms"><p class="p"><span class="code">task</span>'s task data</p></dd>
+<dd class="terms"></dd>
 <dt class="terms"><span class="code">cancellable</span></dt>
-<dd class="terms"><p class="p"><span class="code">task</span>'s <span class="link"><a href="Gio.Cancellable.html" title="Gio.Cancellable">Gio.Cancellable</a></span>, or <span class="code">null</span></p></dd>
+<dd class="terms"></dd>
 </dl></div></div></div>
 </div>
 <div class="sect sect-links" role="navigation">

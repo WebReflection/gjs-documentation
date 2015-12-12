@@ -16,17 +16,8 @@
 <div class="contents">
 <div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
 
-let socketListener = new Gio.SocketListener({
-    <span class="link"><a href="Gio.SocketListener-listen-backlog.html" title="Gio.SocketListener.listen_backlog">listen_backlog</a></span>: value,
-});
+let socketListener = new Gio.SocketListener();
   </pre></div></div></div></div></div>
-<p class="p">A <span class="link"><a href="Gio.SocketListener.html" title="Gio.SocketListener">Gio.SocketListener</a></span> is an object that keeps track of a set
-of server sockets and helps you accept sockets from any of the
-socket, either sync or async.</p>
-<p class="p">If you want to implement a network server, also look at <span class="link"><a href="Gio.SocketService.html" title="Gio.SocketService">Gio.SocketService</a></span>
-and <span class="link"><a href="Gio.ThreadedSocketService.html" title="Gio.ThreadedSocketService">Gio.ThreadedSocketService</a></span> which are subclass of <span class="link"><a href="Gio.SocketListener.html" title="Gio.SocketListener">Gio.SocketListener</a></span>
-that makes this even easier.</p>
-<p class="p">Since 2.22</p>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
 <div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
@@ -38,35 +29,6 @@ that makes this even easier.</p>
         <span class="code">Gio.SocketListener</span>
       </div></li></ul>
 </li></ul></div></div></div></div></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
-<div class="region"><ul><li class="links "><a href="Gio.SocketListener.new.html" title="Gio.SocketListener.new">Gio.SocketListener.new</a></li></ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.SocketListener.accept.html" title="Gio.SocketListener.prototype.accept">Gio.SocketListener.prototype.accept</a></li>
-<li class="links "><a href="Gio.SocketListener.accept_async.html" title="Gio.SocketListener.prototype.accept_async">Gio.SocketListener.prototype.accept_async</a></li>
-<li class="links "><a href="Gio.SocketListener.accept_finish.html" title="Gio.SocketListener.prototype.accept_finish">Gio.SocketListener.prototype.accept_finish</a></li>
-<li class="links "><a href="Gio.SocketListener.accept_socket.html" title="Gio.SocketListener.prototype.accept_socket">Gio.SocketListener.prototype.accept_socket</a></li>
-<li class="links "><a href="Gio.SocketListener.accept_socket_async.html" title="Gio.SocketListener.prototype.accept_socket_async">Gio.SocketListener.prototype.accept_socket_async</a></li>
-<li class="links "><a href="Gio.SocketListener.accept_socket_finish.html" title="Gio.SocketListener.prototype.accept_socket_finish">Gio.SocketListener.prototype.accept_socket_finish</a></li>
-<li class="links "><a href="Gio.SocketListener.add_address.html" title="Gio.SocketListener.prototype.add_address">Gio.SocketListener.prototype.add_address</a></li>
-<li class="links "><a href="Gio.SocketListener.add_any_inet_port.html" title="Gio.SocketListener.prototype.add_any_inet_port">Gio.SocketListener.prototype.add_any_inet_port</a></li>
-<li class="links "><a href="Gio.SocketListener.add_inet_port.html" title="Gio.SocketListener.prototype.add_inet_port">Gio.SocketListener.prototype.add_inet_port</a></li>
-<li class="links "><a href="Gio.SocketListener.add_socket.html" title="Gio.SocketListener.prototype.add_socket">Gio.SocketListener.prototype.add_socket</a></li>
-<li class="links "><a href="Gio.SocketListener.close.html" title="Gio.SocketListener.prototype.close">Gio.SocketListener.prototype.close</a></li>
-<li class="links "><a href="Gio.SocketListener.set_backlog.html" title="Gio.SocketListener.prototype.set_backlog">Gio.SocketListener.prototype.set_backlog</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Properties</span></h2></div>
-<div class="region"><ul><li class="links "><a href="Gio.SocketListener-listen-backlog.html" title="Gio.SocketListener.listen_backlog">listen-backlog</a></li></ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Virtual functions</span></h2></div>
-<div class="region"><ul><li class="links "><a href="Gio.SocketListener-changed.html" title="Gio.SocketListener::changed">Gio.SocketListener::changed</a></li></ul></div>
 </div></div>
 </div>
 <div class="sect sect-links" role="navigation">

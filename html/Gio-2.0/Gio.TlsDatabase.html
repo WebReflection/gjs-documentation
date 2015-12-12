@@ -18,12 +18,6 @@
 
 let tlsDatabase = new Gio.TlsDatabase();
   </pre></div></div></div></div></div>
-<p class="p"><span class="link"><a href="Gio.TlsDatabase.html" title="Gio.TlsDatabase">Gio.TlsDatabase</a></span> is used to lookup certificates and other information
-from a certificate or key store. It is an abstract base class which
-TLS library specific subtypes override.</p>
-<p class="p">Most common client applications will not directly interact with
-<span class="link"><a href="Gio.TlsDatabase.html" title="Gio.TlsDatabase">Gio.TlsDatabase</a></span>. It is used internally by <span class="link"><a href="Gio.TlsConnection.html" title="Gio.TlsConnection">Gio.TlsConnection</a></span>.</p>
-<p class="p">Since 2.30</p>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
 <div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
@@ -35,42 +29,6 @@ TLS library specific subtypes override.</p>
         <span class="code">Gio.TlsDatabase</span>
       </div></li></ul>
 </li></ul></div></div></div></div></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.TlsDatabase.create_certificate_handle.html" title="Gio.TlsDatabase.prototype.create_certificate_handle">Gio.TlsDatabase.prototype.create_certificate_handle</a></li>
-<li class="links "><a href="Gio.TlsDatabase.lookup_certificate_for_handle.html" title="Gio.TlsDatabase.prototype.lookup_certificate_for_handle">Gio.TlsDatabase.prototype.lookup_certificate_for_handle</a></li>
-<li class="links "><a href="Gio.TlsDatabase.lookup_certificate_for_handle_async.html" title="Gio.TlsDatabase.prototype.lookup_certificate_for_handle_async">Gio.TlsDatabase.prototype.lookup_certificate_for_handle_async</a></li>
-<li class="links "><a href="Gio.TlsDatabase.lookup_certificate_for_handle_finish.html" title="Gio.TlsDatabase.prototype.lookup_certificate_for_handle_finish">Gio.TlsDatabase.prototype.lookup_certificate_for_handle_finish</a></li>
-<li class="links "><a href="Gio.TlsDatabase.lookup_certificate_issuer.html" title="Gio.TlsDatabase.prototype.lookup_certificate_issuer">Gio.TlsDatabase.prototype.lookup_certificate_issuer</a></li>
-<li class="links "><a href="Gio.TlsDatabase.lookup_certificate_issuer_async.html" title="Gio.TlsDatabase.prototype.lookup_certificate_issuer_async">Gio.TlsDatabase.prototype.lookup_certificate_issuer_async</a></li>
-<li class="links "><a href="Gio.TlsDatabase.lookup_certificate_issuer_finish.html" title="Gio.TlsDatabase.prototype.lookup_certificate_issuer_finish">Gio.TlsDatabase.prototype.lookup_certificate_issuer_finish</a></li>
-<li class="links "><a href="Gio.TlsDatabase.lookup_certificates_issued_by.html" title="Gio.TlsDatabase.prototype.lookup_certificates_issued_by">Gio.TlsDatabase.prototype.lookup_certificates_issued_by</a></li>
-<li class="links "><a href="Gio.TlsDatabase.lookup_certificates_issued_by_async.html" title="Gio.TlsDatabase.prototype.lookup_certificates_issued_by_async">Gio.TlsDatabase.prototype.lookup_certificates_issued_by_async</a></li>
-<li class="links "><a href="Gio.TlsDatabase.lookup_certificates_issued_by_finish.html" title="Gio.TlsDatabase.prototype.lookup_certificates_issued_by_finish">Gio.TlsDatabase.prototype.lookup_certificates_issued_by_finish</a></li>
-<li class="links "><a href="Gio.TlsDatabase.verify_chain.html" title="Gio.TlsDatabase.prototype.verify_chain">Gio.TlsDatabase.prototype.verify_chain</a></li>
-<li class="links "><a href="Gio.TlsDatabase.verify_chain_async.html" title="Gio.TlsDatabase.prototype.verify_chain_async">Gio.TlsDatabase.prototype.verify_chain_async</a></li>
-<li class="links "><a href="Gio.TlsDatabase.verify_chain_finish.html" title="Gio.TlsDatabase.prototype.verify_chain_finish">Gio.TlsDatabase.prototype.verify_chain_finish</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Virtual functions</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.TlsDatabase-create_certificate_handle.html" title="Gio.TlsDatabase::create_certificate_handle">Gio.TlsDatabase::create_certificate_handle</a></li>
-<li class="links "><a href="Gio.TlsDatabase-lookup_certificate_for_handle.html" title="Gio.TlsDatabase::lookup_certificate_for_handle">Gio.TlsDatabase::lookup_certificate_for_handle</a></li>
-<li class="links "><a href="Gio.TlsDatabase-lookup_certificate_for_handle_async.html" title="Gio.TlsDatabase::lookup_certificate_for_handle_async">Gio.TlsDatabase::lookup_certificate_for_handle_async</a></li>
-<li class="links "><a href="Gio.TlsDatabase-lookup_certificate_for_handle_finish.html" title="Gio.TlsDatabase::lookup_certificate_for_handle_finish">Gio.TlsDatabase::lookup_certificate_for_handle_finish</a></li>
-<li class="links "><a href="Gio.TlsDatabase-lookup_certificate_issuer.html" title="Gio.TlsDatabase::lookup_certificate_issuer">Gio.TlsDatabase::lookup_certificate_issuer</a></li>
-<li class="links "><a href="Gio.TlsDatabase-lookup_certificate_issuer_async.html" title="Gio.TlsDatabase::lookup_certificate_issuer_async">Gio.TlsDatabase::lookup_certificate_issuer_async</a></li>
-<li class="links "><a href="Gio.TlsDatabase-lookup_certificate_issuer_finish.html" title="Gio.TlsDatabase::lookup_certificate_issuer_finish">Gio.TlsDatabase::lookup_certificate_issuer_finish</a></li>
-<li class="links "><a href="Gio.TlsDatabase-lookup_certificates_issued_by.html" title="Gio.TlsDatabase::lookup_certificates_issued_by">Gio.TlsDatabase::lookup_certificates_issued_by</a></li>
-<li class="links "><a href="Gio.TlsDatabase-lookup_certificates_issued_by_async.html" title="Gio.TlsDatabase::lookup_certificates_issued_by_async">Gio.TlsDatabase::lookup_certificates_issued_by_async</a></li>
-<li class="links "><a href="Gio.TlsDatabase-lookup_certificates_issued_by_finish.html" title="Gio.TlsDatabase::lookup_certificates_issued_by_finish">Gio.TlsDatabase::lookup_certificates_issued_by_finish</a></li>
-<li class="links "><a href="Gio.TlsDatabase-verify_chain.html" title="Gio.TlsDatabase::verify_chain">Gio.TlsDatabase::verify_chain</a></li>
-<li class="links "><a href="Gio.TlsDatabase-verify_chain_async.html" title="Gio.TlsDatabase::verify_chain_async">Gio.TlsDatabase::verify_chain_async</a></li>
-<li class="links "><a href="Gio.TlsDatabase-verify_chain_finish.html" title="Gio.TlsDatabase::verify_chain_finish">Gio.TlsDatabase::verify_chain_finish</a></li>
-</ul></div>
 </div></div>
 </div>
 <div class="sect sect-links" role="navigation">

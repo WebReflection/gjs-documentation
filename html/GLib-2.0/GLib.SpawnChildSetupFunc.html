@@ -17,33 +17,6 @@
 <div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function onSpawnChildSetupFunc(): void {
 }
   </pre></div></div></div></div></div>
-<p class="p">Specifies the type of the setup function passed to <span class="link"><a href="GLib.spawn_async.html" title="GLib.spawn_async">GLib.spawn_async</a></span>,
-<span class="link"><a href="GLib.spawn_sync.html" title="GLib.spawn_sync">GLib.spawn_sync</a></span> and <span class="link"><a href="GLib.spawn_async_with_pipes.html" title="GLib.spawn_async_with_pipes">GLib.spawn_async_with_pipes</a></span>, which can, in very
-limited ways, be used to affect the child's execution.</p>
-<p class="p">On POSIX platforms, the function is called in the child after GLib
-has performed all the setup it plans to perform, but before calling
-exec(). Actions taken in this function will only affect the child,
-not the parent.</p>
-<p class="p">On Windows, the function is called in the parent. Its usefulness on
-Windows is thus questionable. In many cases executing the child setup
-function in the parent can have ill effects, and you should be very
-careful when porting software to Windows that uses child setup
-functions.</p>
-<p class="p">However, even on POSIX, you are extremely limited in what you can
-safely do from a <span class="link"><a href="GLib.SpawnChildSetupFunc.html" title="GLib.SpawnChildSetupFunc">GLib.SpawnChildSetupFunc</a></span>, because any mutexes that
-were held by other threads in the parent process at the time of the
-fork() will still be locked in the child process, and they will
-never be unlocked (since the threads that held them don't exist in
-the child). POSIX allows only async-signal-safe functions (see
-&lt;citerefentry&gt;&lt;refentrytitle&gt;signal&lt;/refentrytitle&gt;&lt;manvolnum&gt;7&lt;/manvolnum&gt;&lt;/citerefentry&gt;)
-to be called in the child between fork() and exec(), which
-drastically limits the usefulness of child setup functions.</p>
-<p class="p">In particular, it is not safe to call any function which may
-call malloc(), which includes POSIX functions such as setenv().
-If you need to set up the child environment differently from
-the parent, you should use <span class="link"><a href="GLib.get_environ.html" title="GLib.get_environ">GLib.get_environ</a></span>, <span class="link"><a href="GLib.environ_setenv.html" title="GLib.environ_setenv">GLib.environ_setenv</a></span>,
-and <span class="link"><a href="GLib.environ_unsetenv.html" title="GLib.environ_unsetenv">GLib.environ_unsetenv</a></span>, and then pass the complete environment
-list to the &lt;literal&gt;g_spawn...&lt;/literal&gt; function.</p>
 <div class="terms"><div class="inner"><div class="region"><dl class="terms"></dl></div></div></div>
 </div>
 <div class="sect sect-links" role="navigation">

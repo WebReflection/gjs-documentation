@@ -16,11 +16,8 @@
 <div class="contents">
 <div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
 
-let dataInputStream = new Gio.DataInputStream({
-});
+let dataInputStream = new Gio.DataInputStream();
   </pre></div></div></div></div></div>
-<p class="p">Data input stream implements <span class="link"><a href="Gio.InputStream.html" title="Gio.InputStream">Gio.InputStream</a></span> and includes functions for
-reading structured data directly from a binary input stream.</p>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
 <div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
@@ -50,44 +47,6 @@ reading structured data directly from a binary input stream.</p>
 </li></ul>
 </li></ul>
 </li></ul></div></div></div></div></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
-<div class="region"><ul><li class="links "><a href="Gio.DataInputStream.new.html" title="Gio.DataInputStream.new">Gio.DataInputStream.new</a></li></ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.DataInputStream.get_byte_order.html" title="Gio.DataInputStream.prototype.get_byte_order">Gio.DataInputStream.prototype.get_byte_order</a></li>
-<li class="links "><a href="Gio.DataInputStream.get_newline_type.html" title="Gio.DataInputStream.prototype.get_newline_type">Gio.DataInputStream.prototype.get_newline_type</a></li>
-<li class="links "><a href="Gio.DataInputStream.read_byte.html" title="Gio.DataInputStream.prototype.read_byte">Gio.DataInputStream.prototype.read_byte</a></li>
-<li class="links "><a href="Gio.DataInputStream.read_int16.html" title="Gio.DataInputStream.prototype.read_int16">Gio.DataInputStream.prototype.read_int16</a></li>
-<li class="links "><a href="Gio.DataInputStream.read_int32.html" title="Gio.DataInputStream.prototype.read_int32">Gio.DataInputStream.prototype.read_int32</a></li>
-<li class="links "><a href="Gio.DataInputStream.read_int64.html" title="Gio.DataInputStream.prototype.read_int64">Gio.DataInputStream.prototype.read_int64</a></li>
-<li class="links "><a href="Gio.DataInputStream.read_line.html" title="Gio.DataInputStream.prototype.read_line">Gio.DataInputStream.prototype.read_line</a></li>
-<li class="links "><a href="Gio.DataInputStream.read_line_async.html" title="Gio.DataInputStream.prototype.read_line_async">Gio.DataInputStream.prototype.read_line_async</a></li>
-<li class="links "><a href="Gio.DataInputStream.read_line_finish.html" title="Gio.DataInputStream.prototype.read_line_finish">Gio.DataInputStream.prototype.read_line_finish</a></li>
-<li class="links "><a href="Gio.DataInputStream.read_line_finish_utf8.html" title="Gio.DataInputStream.prototype.read_line_finish_utf8">Gio.DataInputStream.prototype.read_line_finish_utf8</a></li>
-<li class="links "><a href="Gio.DataInputStream.read_line_utf8.html" title="Gio.DataInputStream.prototype.read_line_utf8">Gio.DataInputStream.prototype.read_line_utf8</a></li>
-<li class="links "><a href="Gio.DataInputStream.read_uint16.html" title="Gio.DataInputStream.prototype.read_uint16">Gio.DataInputStream.prototype.read_uint16</a></li>
-<li class="links "><a href="Gio.DataInputStream.read_uint32.html" title="Gio.DataInputStream.prototype.read_uint32">Gio.DataInputStream.prototype.read_uint32</a></li>
-<li class="links "><a href="Gio.DataInputStream.read_uint64.html" title="Gio.DataInputStream.prototype.read_uint64">Gio.DataInputStream.prototype.read_uint64</a></li>
-<li class="links "><a href="Gio.DataInputStream.read_until.html" title="Gio.DataInputStream.prototype.read_until">Gio.DataInputStream.prototype.read_until</a></li>
-<li class="links "><a href="Gio.DataInputStream.read_until_async.html" title="Gio.DataInputStream.prototype.read_until_async">Gio.DataInputStream.prototype.read_until_async</a></li>
-<li class="links "><a href="Gio.DataInputStream.read_until_finish.html" title="Gio.DataInputStream.prototype.read_until_finish">Gio.DataInputStream.prototype.read_until_finish</a></li>
-<li class="links "><a href="Gio.DataInputStream.read_upto.html" title="Gio.DataInputStream.prototype.read_upto">Gio.DataInputStream.prototype.read_upto</a></li>
-<li class="links "><a href="Gio.DataInputStream.read_upto_async.html" title="Gio.DataInputStream.prototype.read_upto_async">Gio.DataInputStream.prototype.read_upto_async</a></li>
-<li class="links "><a href="Gio.DataInputStream.read_upto_finish.html" title="Gio.DataInputStream.prototype.read_upto_finish">Gio.DataInputStream.prototype.read_upto_finish</a></li>
-<li class="links "><a href="Gio.DataInputStream.set_byte_order.html" title="Gio.DataInputStream.prototype.set_byte_order">Gio.DataInputStream.prototype.set_byte_order</a></li>
-<li class="links "><a href="Gio.DataInputStream.set_newline_type.html" title="Gio.DataInputStream.prototype.set_newline_type">Gio.DataInputStream.prototype.set_newline_type</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Properties</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.DataInputStream-byte-order.html" title="Gio.DataInputStream.byte_order">byte-order</a></li>
-<li class="links "><a href="Gio.DataInputStream-newline-type.html" title="Gio.DataInputStream.newline_type">newline-type</a></li>
-</ul></div>
 </div></div>
 </div>
 <div class="sect sect-links" role="navigation">

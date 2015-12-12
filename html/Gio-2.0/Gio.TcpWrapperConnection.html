@@ -16,15 +16,8 @@
 <div class="contents">
 <div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
 
-let tcpWrapperConnection = new Gio.TcpWrapperConnection({
-    <span class="link"><a href="Gio.TcpWrapperConnection-base-io-stream.html" title="Gio.TcpWrapperConnection.base_io_stream">base_io_stream</a></span>: value,
-});
+let tcpWrapperConnection = new Gio.TcpWrapperConnection();
   </pre></div></div></div></div></div>
-<p class="p">A <span class="link"><a href="Gio.TcpWrapperConnection.html" title="Gio.TcpWrapperConnection">Gio.TcpWrapperConnection</a></span> can be used to wrap a <span class="link"><a href="Gio.IOStream.html" title="Gio.IOStream">Gio.IOStream</a></span> that is
-based on a <span class="link"><a href="Gio.Socket.html" title="Gio.Socket">Gio.Socket</a></span>, but which is not actually a
-<span class="link"><a href="Gio.SocketConnection.html" title="Gio.SocketConnection">Gio.SocketConnection</a></span>. This is used by <span class="link"><a href="Gio.SocketClient.html" title="Gio.SocketClient">Gio.SocketClient</a></span> so that it can
-always return a <span class="link"><a href="Gio.SocketConnection.html" title="Gio.SocketConnection">Gio.SocketConnection</a></span>, even when the connection it has
-actually created is not directly a <span class="link"><a href="Gio.SocketConnection.html" title="Gio.SocketConnection">Gio.SocketConnection</a></span>.</p>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
 <div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
@@ -54,18 +47,6 @@ actually created is not directly a <span class="link"><a href="Gio.SocketConnect
 </li></ul>
 </li></ul>
 </li></ul></div></div></div></div></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
-<div class="region"><ul><li class="links "><a href="Gio.TcpWrapperConnection.new.html" title="Gio.TcpWrapperConnection.new">Gio.TcpWrapperConnection.new</a></li></ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
-<div class="region"><ul><li class="links "><a href="Gio.TcpWrapperConnection.get_base_io_stream.html" title="Gio.TcpWrapperConnection.prototype.get_base_io_stream">Gio.TcpWrapperConnection.prototype.get_base_io_stream</a></li></ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Properties</span></h2></div>
-<div class="region"><ul><li class="links "><a href="Gio.TcpWrapperConnection-base-io-stream.html" title="Gio.TcpWrapperConnection.base_io_stream">base-io-stream</a></li></ul></div>
 </div></div>
 </div>
 <div class="sect sect-links" role="navigation">

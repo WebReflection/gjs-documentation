@@ -13,39 +13,7 @@
 <div class="body">
 <div class="hgroup"><h1 class="title"><span class="title">GLib.OptionFlags</span></h1></div>
 <div class="region">
-<div class="contents">
-<p class="p">Flags which modify individual options.</p>
-<div class="terms"><div class="inner"><div class="region"><dl class="terms">
-<dt class="terms"><span class="code">OptionFlags.HIDDEN</span></dt>
-<dd class="terms"><p class="p">The option doesn't appear in &lt;option&gt;--help&lt;/option&gt;
- output.</p></dd>
-<dt class="terms"><span class="code">OptionFlags.IN_MAIN</span></dt>
-<dd class="terms"><p class="p">The option appears in the main section of the
- &lt;option&gt;--help&lt;/option&gt; output, even if it is defined in a group.</p></dd>
-<dt class="terms"><span class="code">OptionFlags.REVERSE</span></dt>
-<dd class="terms"><p class="p">For options of the <span class="link"><a href="GLib.OptionArg.html" title="GLib.OptionArg">GLib.OptionArg</a></span>.none kind, this flag
- indicates that the sense of the option is reversed.</p></dd>
-<dt class="terms"><span class="code">OptionFlags.NO_ARG</span></dt>
-<dd class="terms"><p class="p">For options of the <span class="link"><a href="GLib.OptionArg.html" title="GLib.OptionArg">GLib.OptionArg</a></span>.callback kind,
- this flag indicates that the callback does not take any argument
- (like a <span class="link"><a href="GLib.OptionArg.html" title="GLib.OptionArg">GLib.OptionArg</a></span>.none option). Since 2.8</p></dd>
-<dt class="terms"><span class="code">OptionFlags.FILENAME</span></dt>
-<dd class="terms"><p class="p">For options of the <span class="link"><a href="GLib.OptionArg.html" title="GLib.OptionArg">GLib.OptionArg</a></span>.callback
- kind, this flag indicates that the argument should be passed to the
- callback in the GLib filename encoding rather than UTF-8. Since 2.8</p></dd>
-<dt class="terms"><span class="code">OptionFlags.OPTIONAL_ARG</span></dt>
-<dd class="terms"><p class="p">For options of the <span class="link"><a href="GLib.OptionArg.html" title="GLib.OptionArg">GLib.OptionArg</a></span>.callback
- kind, this flag indicates that the argument supply is optional. If no argument
- is given then data of %GOptionParseFunc will be set to NULL. Since 2.8</p></dd>
-<dt class="terms"><span class="code">OptionFlags.NOALIAS</span></dt>
-<dd class="terms"><p class="p">This flag turns off the automatic conflict resolution
- which prefixes long option names with &lt;literal&gt;groupname-&lt;/literal&gt; if
- there is a conflict. This option should only be used in situations where
- aliasing is necessary to model some legacy commandline interface. It is
- not safe to use this option, unless all option groups are under your
- direct control. Since 2.8.</p></dd>
-</dl></div></div></div>
-</div>
+<div class="contents"></div>
 <div class="sect sect-links" role="navigation">
 <div class="hgroup"></div>
 <div class="contents"><div class="links guidelinks"><div class="inner">

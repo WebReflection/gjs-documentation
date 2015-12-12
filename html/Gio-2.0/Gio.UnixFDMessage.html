@@ -16,21 +16,8 @@
 <div class="contents">
 <div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
 
-let unixFDMessage = new Gio.UnixFDMessage({
-    <span class="link"><a href="Gio.UnixFDMessage-fd-list.html" title="Gio.UnixFDMessage.fd_list">fd_list</a></span>: value,
-});
+let unixFDMessage = new Gio.UnixFDMessage();
   </pre></div></div></div></div></div>
-<p class="p">This <span class="link"><a href="Gio.SocketControlMessage.html" title="Gio.SocketControlMessage">Gio.SocketControlMessage</a></span> contains a <span class="link"><a href="Gio.UnixFDList.html" title="Gio.UnixFDList">Gio.UnixFDList</a></span>.
-It may be sent using <span class="link"><a href="Gio.Socket.send_message.html" title="Gio.Socket.prototype.send_message">Gio.Socket.prototype.send_message</a></span> and received using
-<span class="link"><a href="Gio.Socket.receive_message.html" title="Gio.Socket.prototype.receive_message">Gio.Socket.prototype.receive_message</a></span> over UNIX sockets (ie: sockets in the
-%G_SOCKET_ADDRESS_UNIX family). The file descriptors are copied
-between processes by the kernel.</p>
-<p class="p">For an easier way to send and receive file descriptors over
-stream-oriented UNIX sockets, see <span class="link"><a href="Gio.UnixConnection.send_fd.html" title="Gio.UnixConnection.prototype.send_fd">Gio.UnixConnection.prototype.send_fd</a></span> and
-<span class="link"><a href="Gio.UnixConnection.receive_fd.html" title="Gio.UnixConnection.prototype.receive_fd">Gio.UnixConnection.prototype.receive_fd</a></span>.</p>
-<p class="p">Note that `&lt;gio/gunixfdmessage.h&gt;` belongs to the UNIX-specific GIO
-interfaces, thus you have to use the `gio-unix-2.0.pc` pkg-config
-file when using it.</p>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
 <div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
@@ -48,25 +35,6 @@ file when using it.</p>
       </div></li></ul>
 </li></ul>
 </li></ul></div></div></div></div></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.UnixFDMessage.new.html" title="Gio.UnixFDMessage.new">Gio.UnixFDMessage.new</a></li>
-<li class="links "><a href="Gio.UnixFDMessage.new_with_fd_list.html" title="Gio.UnixFDMessage.new_with_fd_list">Gio.UnixFDMessage.new_with_fd_list</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.UnixFDMessage.append_fd.html" title="Gio.UnixFDMessage.prototype.append_fd">Gio.UnixFDMessage.prototype.append_fd</a></li>
-<li class="links "><a href="Gio.UnixFDMessage.get_fd_list.html" title="Gio.UnixFDMessage.prototype.get_fd_list">Gio.UnixFDMessage.prototype.get_fd_list</a></li>
-<li class="links "><a href="Gio.UnixFDMessage.steal_fds.html" title="Gio.UnixFDMessage.prototype.steal_fds">Gio.UnixFDMessage.prototype.steal_fds</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Properties</span></h2></div>
-<div class="region"><ul><li class="links "><a href="Gio.UnixFDMessage-fd-list.html" title="Gio.UnixFDMessage.fd_list">fd-list</a></li></ul></div>
 </div></div>
 </div>
 <div class="sect sect-links" role="navigation">

@@ -13,42 +13,7 @@
 <div class="body">
 <div class="hgroup"><h1 class="title"><span class="title">GObject.SignalFlags</span></h1></div>
 <div class="region">
-<div class="contents">
-<p class="p">The signal flags are used to specify a signal's behaviour, the overall
-signal description outlines how especially the RUN flags control the
-stages of a signal emission.</p>
-<div class="terms"><div class="inner"><div class="region"><dl class="terms">
-<dt class="terms"><span class="code">SignalFlags.RUN_FIRST</span></dt>
-<dd class="terms"><p class="p">Invoke the object method handler in the first emission stage.</p></dd>
-<dt class="terms"><span class="code">SignalFlags.RUN_LAST</span></dt>
-<dd class="terms"><p class="p">Invoke the object method handler in the third emission stage.</p></dd>
-<dt class="terms"><span class="code">SignalFlags.RUN_CLEANUP</span></dt>
-<dd class="terms"><p class="p">Invoke the object method handler in the last emission stage.</p></dd>
-<dt class="terms"><span class="code">SignalFlags.NO_RECURSE</span></dt>
-<dd class="terms"><p class="p">Signals being emitted for an object while currently being in
- emission for this very object will not be emitted recursively,
- but instead cause the first emission to be restarted.</p></dd>
-<dt class="terms"><span class="code">SignalFlags.DETAILED</span></dt>
-<dd class="terms"><p class="p">This signal supports "::detail" appendices to the signal name
- upon handler connections and emissions.</p></dd>
-<dt class="terms"><span class="code">SignalFlags.ACTION</span></dt>
-<dd class="terms"><p class="p">Action signals are signals that may freely be emitted on alive
- objects from user code via <span class="link"><a href="GObject.signal_emit.html" title="GObject.signal_emit">GObject.signal_emit</a></span> and friends, without
- the need of being embedded into extra code that performs pre or
- post emission adjustments on the object. They can also be thought
- of as object methods which can be called generically by
- third-party code.</p></dd>
-<dt class="terms"><span class="code">SignalFlags.NO_HOOKS</span></dt>
-<dd class="terms"><p class="p">No emissions hooks are supported for this signal.</p></dd>
-<dt class="terms"><span class="code">SignalFlags.MUST_COLLECT</span></dt>
-<dd class="terms"><p class="p">Varargs signal emission will always collect the
-  arguments, even if there are no signal handlers connected.  Since 2.30.</p></dd>
-<dt class="terms"><span class="code">SignalFlags.DEPRECATED</span></dt>
-<dd class="terms"><p class="p">The signal is deprecated and will be removed
-  in a future version. A warning will be generated if it is connected while
-  running with G_ENABLE_DIAGNOSTIC=1.  Since 2.32.</p></dd>
-</dl></div></div></div>
-</div>
+<div class="contents"></div>
 <div class="sect sect-links" role="navigation">
 <div class="hgroup"></div>
 <div class="contents"><div class="links guidelinks"><div class="inner">

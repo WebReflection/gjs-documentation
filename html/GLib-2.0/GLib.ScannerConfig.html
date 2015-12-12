@@ -13,69 +13,10 @@
 <div class="body">
 <div class="hgroup"><h1 class="title"><span class="title">GLib.ScannerConfig</span></h1></div>
 <div class="region">
-<div class="contents">
-<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const GLib = imports.gi.GLib;
+<div class="contents"><div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const GLib = imports.gi.GLib;
 
-let scannerConfig = new GLib.ScannerConfig({
-    <span class="link"><a href="GLib.ScannerConfig-case_sensitive.html" title="GLib.ScannerConfig.case_sensitive">case_sensitive</a></span>: value
-    <span class="link"><a href="GLib.ScannerConfig-skip_comment_multi.html" title="GLib.ScannerConfig.skip_comment_multi">skip_comment_multi</a></span>: value
-    <span class="link"><a href="GLib.ScannerConfig-skip_comment_single.html" title="GLib.ScannerConfig.skip_comment_single">skip_comment_single</a></span>: value
-    <span class="link"><a href="GLib.ScannerConfig-scan_comment_multi.html" title="GLib.ScannerConfig.scan_comment_multi">scan_comment_multi</a></span>: value
-    <span class="link"><a href="GLib.ScannerConfig-scan_identifier.html" title="GLib.ScannerConfig.scan_identifier">scan_identifier</a></span>: value
-    <span class="link"><a href="GLib.ScannerConfig-scan_identifier_1char.html" title="GLib.ScannerConfig.scan_identifier_1char">scan_identifier_1char</a></span>: value
-    <span class="link"><a href="GLib.ScannerConfig-scan_identifier_NULL.html" title="GLib.ScannerConfig.scan_identifier__NULL">scan_identifier_NULL</a></span>: value
-    <span class="link"><a href="GLib.ScannerConfig-scan_symbols.html" title="GLib.ScannerConfig.scan_symbols">scan_symbols</a></span>: value
-    <span class="link"><a href="GLib.ScannerConfig-scan_binary.html" title="GLib.ScannerConfig.scan_binary">scan_binary</a></span>: value
-    <span class="link"><a href="GLib.ScannerConfig-scan_octal.html" title="GLib.ScannerConfig.scan_octal">scan_octal</a></span>: value
-    <span class="link"><a href="GLib.ScannerConfig-scan_float.html" title="GLib.ScannerConfig.scan_float">scan_float</a></span>: value
-    <span class="link"><a href="GLib.ScannerConfig-scan_hex.html" title="GLib.ScannerConfig.scan_hex">scan_hex</a></span>: value
-    <span class="link"><a href="GLib.ScannerConfig-scan_hex_dollar.html" title="GLib.ScannerConfig.scan_hex_dollar">scan_hex_dollar</a></span>: value
-    <span class="link"><a href="GLib.ScannerConfig-scan_string_sq.html" title="GLib.ScannerConfig.scan_string_sq">scan_string_sq</a></span>: value
-    <span class="link"><a href="GLib.ScannerConfig-scan_string_dq.html" title="GLib.ScannerConfig.scan_string_dq">scan_string_dq</a></span>: value
-    <span class="link"><a href="GLib.ScannerConfig-numbers_2_int.html" title="GLib.ScannerConfig.numbers_2_int">numbers_2_int</a></span>: value
-    <span class="link"><a href="GLib.ScannerConfig-int_2_float.html" title="GLib.ScannerConfig.int_2_float">int_2_float</a></span>: value
-    <span class="link"><a href="GLib.ScannerConfig-identifier_2_string.html" title="GLib.ScannerConfig.identifier_2_string">identifier_2_string</a></span>: value
-    <span class="link"><a href="GLib.ScannerConfig-char_2_token.html" title="GLib.ScannerConfig.char_2_token">char_2_token</a></span>: value
-    <span class="link"><a href="GLib.ScannerConfig-symbol_2_token.html" title="GLib.ScannerConfig.symbol_2_token">symbol_2_token</a></span>: value
-    <span class="link"><a href="GLib.ScannerConfig-scope_0_fallback.html" title="GLib.ScannerConfig.scope_0_fallback">scope_0_fallback</a></span>: value
-    <span class="link"><a href="GLib.ScannerConfig-store_int64.html" title="GLib.ScannerConfig.store_int64">store_int64</a></span>: value
-});
-  </pre></div></div></div></div></div>
-<p class="p">Specifies the <span class="link"><a href="GLib.Scanner.html" title="GLib.Scanner">GLib.Scanner</a></span> parser configuration. Most settings can
-be changed during the parsing phase and will affect the lexical
-parsing of the next unpeeked token.</p>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Fields</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="GLib.ScannerConfig-case_sensitive.html" title="GLib.ScannerConfig.case_sensitive">case_sensitive</a></li>
-<li class="links "><a href="GLib.ScannerConfig-char_2_token.html" title="GLib.ScannerConfig.char_2_token">char_2_token</a></li>
-<li class="links "><a href="GLib.ScannerConfig-cpair_comment_single.html" title="GLib.ScannerConfig.cpair_comment_single">cpair_comment_single</a></li>
-<li class="links "><a href="GLib.ScannerConfig-cset_identifier_first.html" title="GLib.ScannerConfig.cset_identifier_first">cset_identifier_first</a></li>
-<li class="links "><a href="GLib.ScannerConfig-cset_identifier_nth.html" title="GLib.ScannerConfig.cset_identifier_nth">cset_identifier_nth</a></li>
-<li class="links "><a href="GLib.ScannerConfig-cset_skip_characters.html" title="GLib.ScannerConfig.cset_skip_characters">cset_skip_characters</a></li>
-<li class="links "><a href="GLib.ScannerConfig-identifier_2_string.html" title="GLib.ScannerConfig.identifier_2_string">identifier_2_string</a></li>
-<li class="links "><a href="GLib.ScannerConfig-int_2_float.html" title="GLib.ScannerConfig.int_2_float">int_2_float</a></li>
-<li class="links "><a href="GLib.ScannerConfig-numbers_2_int.html" title="GLib.ScannerConfig.numbers_2_int">numbers_2_int</a></li>
-<li class="links "><a href="GLib.ScannerConfig-scan_binary.html" title="GLib.ScannerConfig.scan_binary">scan_binary</a></li>
-<li class="links "><a href="GLib.ScannerConfig-scan_comment_multi.html" title="GLib.ScannerConfig.scan_comment_multi">scan_comment_multi</a></li>
-<li class="links "><a href="GLib.ScannerConfig-scan_float.html" title="GLib.ScannerConfig.scan_float">scan_float</a></li>
-<li class="links "><a href="GLib.ScannerConfig-scan_hex.html" title="GLib.ScannerConfig.scan_hex">scan_hex</a></li>
-<li class="links "><a href="GLib.ScannerConfig-scan_hex_dollar.html" title="GLib.ScannerConfig.scan_hex_dollar">scan_hex_dollar</a></li>
-<li class="links "><a href="GLib.ScannerConfig-scan_identifier.html" title="GLib.ScannerConfig.scan_identifier">scan_identifier</a></li>
-<li class="links "><a href="GLib.ScannerConfig-scan_identifier_1char.html" title="GLib.ScannerConfig.scan_identifier_1char">scan_identifier_1char</a></li>
-<li class="links "><a href="GLib.ScannerConfig-scan_identifier_NULL.html" title="GLib.ScannerConfig.scan_identifier__NULL">scan_identifier_NULL</a></li>
-<li class="links "><a href="GLib.ScannerConfig-scan_octal.html" title="GLib.ScannerConfig.scan_octal">scan_octal</a></li>
-<li class="links "><a href="GLib.ScannerConfig-scan_string_dq.html" title="GLib.ScannerConfig.scan_string_dq">scan_string_dq</a></li>
-<li class="links "><a href="GLib.ScannerConfig-scan_string_sq.html" title="GLib.ScannerConfig.scan_string_sq">scan_string_sq</a></li>
-<li class="links "><a href="GLib.ScannerConfig-scan_symbols.html" title="GLib.ScannerConfig.scan_symbols">scan_symbols</a></li>
-<li class="links "><a href="GLib.ScannerConfig-scope_0_fallback.html" title="GLib.ScannerConfig.scope_0_fallback">scope_0_fallback</a></li>
-<li class="links "><a href="GLib.ScannerConfig-skip_comment_multi.html" title="GLib.ScannerConfig.skip_comment_multi">skip_comment_multi</a></li>
-<li class="links "><a href="GLib.ScannerConfig-skip_comment_single.html" title="GLib.ScannerConfig.skip_comment_single">skip_comment_single</a></li>
-<li class="links "><a href="GLib.ScannerConfig-store_int64.html" title="GLib.ScannerConfig.store_int64">store_int64</a></li>
-<li class="links "><a href="GLib.ScannerConfig-symbol_2_token.html" title="GLib.ScannerConfig.symbol_2_token">symbol_2_token</a></li>
-</ul></div>
-</div></div>
-</div>
+let scannerConfig = new GLib.ScannerConfig();
+  </pre></div></div></div></div></div></div>
 <div class="sect sect-links" role="navigation">
 <div class="hgroup"></div>
 <div class="contents"><div class="links guidelinks"><div class="inner">

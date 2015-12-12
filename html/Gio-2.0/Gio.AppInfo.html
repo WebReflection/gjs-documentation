@@ -18,124 +18,13 @@
 
 let app_info = new Gio.AppInfo();
   </pre></div></div></div></div></div>
-<p class="p"><span class="link"><a href="Gio.AppInfo.html" title="Gio.AppInfo">Gio.AppInfo</a></span> and <span class="link"><a href="Gio.AppLaunchContext.html" title="Gio.AppLaunchContext">Gio.AppLaunchContext</a></span> are used for describing and launching
-applications installed on the system.</p>
-<p class="p">As of GLib 2.20, URIs will always be converted to POSIX paths
-(using <span class="link"><a href="Gio.File.get_path.html" title="Gio.File.prototype.get_path">Gio.File.prototype.get_path</a></span>) when using <span class="link"><a href="Gio.AppInfo.launch.html" title="Gio.AppInfo.prototype.launch">Gio.AppInfo.prototype.launch</a></span> even if
-the application requested an URI and not a POSIX path. For example
-for an desktop-file based application with Exec key `totem
-\%U` and a single URI, `sftp://foo/file.avi`, then
-`/home/user/.gvfs/sftp on foo/file.avi` will be passed. This will
-only work if a set of suitable GIO extensions (such as gvfs 2.26
-compiled with FUSE support), is available and operational; if this
-is not the case, the URI will be passed unmodified to the application.
-Some URIs, such as `mailto:`, of course cannot be mapped to a POSIX
-path (in gvfs there's no FUSE mount for it); such URIs will be
-passed unmodified to the application.</p>
-<p class="p">Specifically for gvfs 2.26 and later, the POSIX URI will be mapped
-back to the GIO URI in the <span class="link"><a href="Gio.File.html" title="Gio.File">Gio.File</a></span> constructors (since gvfs
-implements the <span class="link"><a href="Gio.Vfs.html" title="Gio.Vfs">Gio.Vfs</a></span> extension point). As such, if the application
-needs to examine the URI, it needs to use <span class="link"><a href="Gio.File.get_uri.html" title="Gio.File.prototype.get_uri">Gio.File.prototype.get_uri</a></span> or
-similar on <span class="link"><a href="Gio.File.html" title="Gio.File">Gio.File</a></span>. In other words, an application cannot assume
-that the URI passed to e.g. <span class="link"><a href="Gio.file_new_for_commandline_arg.html" title="Gio.file_new_for_commandline_arg">Gio.file_new_for_commandline_arg</a></span> is
-equal to the result of <span class="link"><a href="Gio.File.get_uri.html" title="Gio.File.prototype.get_uri">Gio.File.prototype.get_uri</a></span>. The following snippet
-illustrates this:</p>
-<p class="p">|[
-GFile *f;
-char *uri;</p>
-<p class="p">file = g_file_new_for_commandline_arg (uri_from_commandline);</p>
-<p class="p">uri = g_file_get_uri (file);
-strcmp (uri, uri_from_commandline) == 0;
-g_free (uri);</p>
-<p class="p">if (g_file_has_uri_scheme (file, "cdda"))
-  {
-    // do something special with uri
-  }
-g_object_unref (file);
-]|</p>
-<p class="p">This code will work when both `cdda://sr0/Track 1.wav` and
-`/home/user/.gvfs/cdda on sr0/Track 1.wav` is passed to the
-application. It should be noted that it's generally not safe
-for applications to rely on the format of a particular URIs.
-Different launcher applications (e.g. file managers) may have
-different ideas of what a given URI means.</p>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Prerequisites</span></h2></div>
 <div class="region"><div class="contents"><p class="p">AppInfo requires GObject.Object</p></div></div>
 </div></div>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Known Implementations</span></h2></div>
-<div class="region"><div class="contents"><p class="p">AppInfo is implemented by DesktopAppInfo</p></div></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.AppInfo.add_supports_type.html" title="Gio.AppInfo.prototype.add_supports_type">Gio.AppInfo.prototype.add_supports_type</a></li>
-<li class="links "><a href="Gio.AppInfo.can_delete.html" title="Gio.AppInfo.prototype.can_delete">Gio.AppInfo.prototype.can_delete</a></li>
-<li class="links "><a href="Gio.AppInfo.can_remove_supports_type.html" title="Gio.AppInfo.prototype.can_remove_supports_type">Gio.AppInfo.prototype.can_remove_supports_type</a></li>
-<li class="links "><a href="Gio.AppInfo.delete.html" title="Gio.AppInfo.prototype.delete">Gio.AppInfo.prototype.delete</a></li>
-<li class="links "><a href="Gio.AppInfo.dup.html" title="Gio.AppInfo.prototype.dup">Gio.AppInfo.prototype.dup</a></li>
-<li class="links "><a href="Gio.AppInfo.equal.html" title="Gio.AppInfo.prototype.equal">Gio.AppInfo.prototype.equal</a></li>
-<li class="links "><a href="Gio.AppInfo.get_commandline.html" title="Gio.AppInfo.prototype.get_commandline">Gio.AppInfo.prototype.get_commandline</a></li>
-<li class="links "><a href="Gio.AppInfo.get_description.html" title="Gio.AppInfo.prototype.get_description">Gio.AppInfo.prototype.get_description</a></li>
-<li class="links "><a href="Gio.AppInfo.get_display_name.html" title="Gio.AppInfo.prototype.get_display_name">Gio.AppInfo.prototype.get_display_name</a></li>
-<li class="links "><a href="Gio.AppInfo.get_executable.html" title="Gio.AppInfo.prototype.get_executable">Gio.AppInfo.prototype.get_executable</a></li>
-<li class="links "><a href="Gio.AppInfo.get_icon.html" title="Gio.AppInfo.prototype.get_icon">Gio.AppInfo.prototype.get_icon</a></li>
-<li class="links "><a href="Gio.AppInfo.get_id.html" title="Gio.AppInfo.prototype.get_id">Gio.AppInfo.prototype.get_id</a></li>
-<li class="links "><a href="Gio.AppInfo.get_name.html" title="Gio.AppInfo.prototype.get_name">Gio.AppInfo.prototype.get_name</a></li>
-<li class="links "><a href="Gio.AppInfo.get_supported_types.html" title="Gio.AppInfo.prototype.get_supported_types">Gio.AppInfo.prototype.get_supported_types</a></li>
-<li class="links "><a href="Gio.AppInfo.launch.html" title="Gio.AppInfo.prototype.launch">Gio.AppInfo.prototype.launch</a></li>
-<li class="links "><a href="Gio.AppInfo.launch_uris.html" title="Gio.AppInfo.prototype.launch_uris">Gio.AppInfo.prototype.launch_uris</a></li>
-<li class="links "><a href="Gio.AppInfo.remove_supports_type.html" title="Gio.AppInfo.prototype.remove_supports_type">Gio.AppInfo.prototype.remove_supports_type</a></li>
-<li class="links "><a href="Gio.AppInfo.set_as_default_for_extension.html" title="Gio.AppInfo.prototype.set_as_default_for_extension">Gio.AppInfo.prototype.set_as_default_for_extension</a></li>
-<li class="links "><a href="Gio.AppInfo.set_as_default_for_type.html" title="Gio.AppInfo.prototype.set_as_default_for_type">Gio.AppInfo.prototype.set_as_default_for_type</a></li>
-<li class="links "><a href="Gio.AppInfo.set_as_last_used_for_type.html" title="Gio.AppInfo.prototype.set_as_last_used_for_type">Gio.AppInfo.prototype.set_as_last_used_for_type</a></li>
-<li class="links "><a href="Gio.AppInfo.should_show.html" title="Gio.AppInfo.prototype.should_show">Gio.AppInfo.prototype.should_show</a></li>
-<li class="links "><a href="Gio.AppInfo.supports_files.html" title="Gio.AppInfo.prototype.supports_files">Gio.AppInfo.prototype.supports_files</a></li>
-<li class="links "><a href="Gio.AppInfo.supports_uris.html" title="Gio.AppInfo.prototype.supports_uris">Gio.AppInfo.prototype.supports_uris</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Static Functions</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.AppInfo.create_from_commandline.html" title="Gio.AppInfo.create_from_commandline">Gio.AppInfo.create_from_commandline</a></li>
-<li class="links "><a href="Gio.AppInfo.get_all.html" title="Gio.AppInfo.get_all">Gio.AppInfo.get_all</a></li>
-<li class="links "><a href="Gio.AppInfo.get_all_for_type.html" title="Gio.AppInfo.get_all_for_type">Gio.AppInfo.get_all_for_type</a></li>
-<li class="links "><a href="Gio.AppInfo.get_default_for_type.html" title="Gio.AppInfo.get_default_for_type">Gio.AppInfo.get_default_for_type</a></li>
-<li class="links "><a href="Gio.AppInfo.get_default_for_uri_scheme.html" title="Gio.AppInfo.get_default_for_uri_scheme">Gio.AppInfo.get_default_for_uri_scheme</a></li>
-<li class="links "><a href="Gio.AppInfo.get_fallback_for_type.html" title="Gio.AppInfo.get_fallback_for_type">Gio.AppInfo.get_fallback_for_type</a></li>
-<li class="links "><a href="Gio.AppInfo.get_recommended_for_type.html" title="Gio.AppInfo.get_recommended_for_type">Gio.AppInfo.get_recommended_for_type</a></li>
-<li class="links "><a href="Gio.AppInfo.launch_default_for_uri.html" title="Gio.AppInfo.launch_default_for_uri">Gio.AppInfo.launch_default_for_uri</a></li>
-<li class="links "><a href="Gio.AppInfo.reset_type_associations.html" title="Gio.AppInfo.reset_type_associations">Gio.AppInfo.reset_type_associations</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Virtual functions</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.AppInfo-add_supports_type.html" title="Gio.AppInfo::add_supports_type">Gio.AppInfo::add_supports_type</a></li>
-<li class="links "><a href="Gio.AppInfo-can_delete.html" title="Gio.AppInfo::can_delete">Gio.AppInfo::can_delete</a></li>
-<li class="links "><a href="Gio.AppInfo-can_remove_supports_type.html" title="Gio.AppInfo::can_remove_supports_type">Gio.AppInfo::can_remove_supports_type</a></li>
-<li class="links "><a href="Gio.AppInfo-do_delete.html" title="Gio.AppInfo::do_delete">Gio.AppInfo::do_delete</a></li>
-<li class="links "><a href="Gio.AppInfo-dup.html" title="Gio.AppInfo::dup">Gio.AppInfo::dup</a></li>
-<li class="links "><a href="Gio.AppInfo-equal.html" title="Gio.AppInfo::equal">Gio.AppInfo::equal</a></li>
-<li class="links "><a href="Gio.AppInfo-get_commandline.html" title="Gio.AppInfo::get_commandline">Gio.AppInfo::get_commandline</a></li>
-<li class="links "><a href="Gio.AppInfo-get_description.html" title="Gio.AppInfo::get_description">Gio.AppInfo::get_description</a></li>
-<li class="links "><a href="Gio.AppInfo-get_display_name.html" title="Gio.AppInfo::get_display_name">Gio.AppInfo::get_display_name</a></li>
-<li class="links "><a href="Gio.AppInfo-get_executable.html" title="Gio.AppInfo::get_executable">Gio.AppInfo::get_executable</a></li>
-<li class="links "><a href="Gio.AppInfo-get_icon.html" title="Gio.AppInfo::get_icon">Gio.AppInfo::get_icon</a></li>
-<li class="links "><a href="Gio.AppInfo-get_id.html" title="Gio.AppInfo::get_id">Gio.AppInfo::get_id</a></li>
-<li class="links "><a href="Gio.AppInfo-get_name.html" title="Gio.AppInfo::get_name">Gio.AppInfo::get_name</a></li>
-<li class="links "><a href="Gio.AppInfo-get_supported_types.html" title="Gio.AppInfo::get_supported_types">Gio.AppInfo::get_supported_types</a></li>
-<li class="links "><a href="Gio.AppInfo-launch.html" title="Gio.AppInfo::launch">Gio.AppInfo::launch</a></li>
-<li class="links "><a href="Gio.AppInfo-launch_uris.html" title="Gio.AppInfo::launch_uris">Gio.AppInfo::launch_uris</a></li>
-<li class="links "><a href="Gio.AppInfo-remove_supports_type.html" title="Gio.AppInfo::remove_supports_type">Gio.AppInfo::remove_supports_type</a></li>
-<li class="links "><a href="Gio.AppInfo-set_as_default_for_extension.html" title="Gio.AppInfo::set_as_default_for_extension">Gio.AppInfo::set_as_default_for_extension</a></li>
-<li class="links "><a href="Gio.AppInfo-set_as_default_for_type.html" title="Gio.AppInfo::set_as_default_for_type">Gio.AppInfo::set_as_default_for_type</a></li>
-<li class="links "><a href="Gio.AppInfo-set_as_last_used_for_type.html" title="Gio.AppInfo::set_as_last_used_for_type">Gio.AppInfo::set_as_last_used_for_type</a></li>
-<li class="links "><a href="Gio.AppInfo-should_show.html" title="Gio.AppInfo::should_show">Gio.AppInfo::should_show</a></li>
-<li class="links "><a href="Gio.AppInfo-supports_files.html" title="Gio.AppInfo::supports_files">Gio.AppInfo::supports_files</a></li>
-<li class="links "><a href="Gio.AppInfo-supports_uris.html" title="Gio.AppInfo::supports_uris">Gio.AppInfo::supports_uris</a></li>
-</ul></div>
+<div class="region"><div class="contents"><p class="p">None</p></div></div>
 </div></div>
 </div>
 <div class="sect sect-links" role="navigation">

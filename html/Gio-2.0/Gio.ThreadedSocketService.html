@@ -16,23 +16,8 @@
 <div class="contents">
 <div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
 
-let threadedSocketService = new Gio.ThreadedSocketService({
-    <span class="link"><a href="Gio.ThreadedSocketService-max-threads.html" title="Gio.ThreadedSocketService.max_threads">max_threads</a></span>: value,
-});
+let threadedSocketService = new Gio.ThreadedSocketService();
   </pre></div></div></div></div></div>
-<p class="p">A <span class="link"><a href="Gio.ThreadedSocketService.html" title="Gio.ThreadedSocketService">Gio.ThreadedSocketService</a></span> is a simple subclass of <span class="link"><a href="Gio.SocketService.html" title="Gio.SocketService">Gio.SocketService</a></span>
-that handles incoming connections by creating a worker thread and
-dispatching the connection to it by emitting the
-<span class="link"><a href="Gio.ThreadedSocketService-run.html" title="Gio.ThreadedSocketService::run">Gio.ThreadedSocketService::run</a></span> signal in the new thread.</p>
-<p class="p">The signal handler may perform blocking IO and need not return
-until the connection is closed.</p>
-<p class="p">The service is implemented using a thread pool, so there is a
-limited amount of threads available to serve incoming requests.
-The service automatically stops the <span class="link"><a href="Gio.SocketService.html" title="Gio.SocketService">Gio.SocketService</a></span> from accepting
-new connections when all threads are busy.</p>
-<p class="p">As with <span class="link"><a href="Gio.SocketService.html" title="Gio.SocketService">Gio.SocketService</a></span>, you may connect to <span class="link"><a href="Gio.ThreadedSocketService-run.html" title="Gio.ThreadedSocketService::run">Gio.ThreadedSocketService::run</a></span>,
-or subclass and override the default handler.</p>
-<p class="p">Since 2.22</p>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
 <div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
@@ -56,18 +41,6 @@ or subclass and override the default handler.</p>
 </li></ul>
 </li></ul>
 </li></ul></div></div></div></div></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
-<div class="region"><ul><li class="links "><a href="Gio.ThreadedSocketService.new.html" title="Gio.ThreadedSocketService.new">Gio.ThreadedSocketService.new</a></li></ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Properties</span></h2></div>
-<div class="region"><ul><li class="links "><a href="Gio.ThreadedSocketService-max-threads.html" title="Gio.ThreadedSocketService.max_threads">max-threads</a></li></ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Signals</span></h2></div>
-<div class="region"><ul><li class="links "><a href="Gio.ThreadedSocketService-run.html" title="Gio.ThreadedSocketService::run">run</a></li></ul></div>
 </div></div>
 </div>
 <div class="sect sect-links" role="navigation">

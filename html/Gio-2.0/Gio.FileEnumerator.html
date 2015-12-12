@@ -16,32 +16,8 @@
 <div class="contents">
 <div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
 
-let fileEnumerator = new Gio.FileEnumerator({
-    <span class="link"><a href="Gio.FileEnumerator-container.html" title="Gio.FileEnumerator.container">container</a></span>: value,
-});
+let fileEnumerator = new Gio.FileEnumerator();
   </pre></div></div></div></div></div>
-<p class="p"><span class="link"><a href="Gio.FileEnumerator.html" title="Gio.FileEnumerator">Gio.FileEnumerator</a></span> allows you to operate on a set of #GFiles,
-returning a <span class="link"><a href="Gio.FileInfo.html" title="Gio.FileInfo">Gio.FileInfo</a></span> structure for each file enumerated (e.g.
-<span class="link"><a href="Gio.File.enumerate_children.html" title="Gio.File.prototype.enumerate_children">Gio.File.prototype.enumerate_children</a></span> will return a <span class="link"><a href="Gio.FileEnumerator.html" title="Gio.FileEnumerator">Gio.FileEnumerator</a></span> for each
-of the children within a directory).</p>
-<p class="p">To get the next file's information from a <span class="link"><a href="Gio.FileEnumerator.html" title="Gio.FileEnumerator">Gio.FileEnumerator</a></span>, use
-<span class="link"><a href="Gio.FileEnumerator.next_file.html" title="Gio.FileEnumerator.prototype.next_file">Gio.FileEnumerator.prototype.next_file</a></span> or its asynchronous version,
-<span class="link"><a href="Gio.FileEnumerator.next_files_async.html" title="Gio.FileEnumerator.prototype.next_files_async">Gio.FileEnumerator.prototype.next_files_async</a></span>. Note that the asynchronous
-version will return a list of #GFileInfos, whereas the
-synchronous will only return the next file in the enumerator.</p>
-<p class="p">The ordering of returned files is unspecified for non-Unix
-platforms; for more information, see <span class="link"><a href="../GLib-2.0/GLib.Dir.read_name.html" title="../GLib-2.0/GLib.Dir.read_name.html">GLib.Dir.prototype.read_name</a></span>.  On Unix,
-when operating on local files, returned files will be sorted by
-inode number.  Effectively you can assume that the ordering of
-returned files will be stable between successive calls (and
-applications) assuming the directory is unchanged.</p>
-<p class="p">If your application needs a specific ordering, such as by name or
-modification time, you will have to implement that in your
-application code.</p>
-<p class="p">To close a <span class="link"><a href="Gio.FileEnumerator.html" title="Gio.FileEnumerator">Gio.FileEnumerator</a></span>, use <span class="link"><a href="Gio.FileEnumerator.close.html" title="Gio.FileEnumerator.prototype.close">Gio.FileEnumerator.prototype.close</a></span>, or
-its asynchronous version, <span class="link"><a href="Gio.FileEnumerator.close_async.html" title="Gio.FileEnumerator.prototype.close_async">Gio.FileEnumerator.prototype.close_async</a></span>. Once
-a <span class="link"><a href="Gio.FileEnumerator.html" title="Gio.FileEnumerator">Gio.FileEnumerator</a></span> is closed, no further actions may be performed
-on it, and it should be freed with <span class="link"><a href="../GObject-2.0/GObject.Object.unref.html" title="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</a></span>.</p>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
 <div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
@@ -53,37 +29,6 @@ on it, and it should be freed with <span class="link"><a href="../GObject-2.0/GO
         <span class="code">Gio.FileEnumerator</span>
       </div></li></ul>
 </li></ul></div></div></div></div></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.FileEnumerator.close.html" title="Gio.FileEnumerator.prototype.close">Gio.FileEnumerator.prototype.close</a></li>
-<li class="links "><a href="Gio.FileEnumerator.close_async.html" title="Gio.FileEnumerator.prototype.close_async">Gio.FileEnumerator.prototype.close_async</a></li>
-<li class="links "><a href="Gio.FileEnumerator.close_finish.html" title="Gio.FileEnumerator.prototype.close_finish">Gio.FileEnumerator.prototype.close_finish</a></li>
-<li class="links "><a href="Gio.FileEnumerator.get_child.html" title="Gio.FileEnumerator.prototype.get_child">Gio.FileEnumerator.prototype.get_child</a></li>
-<li class="links "><a href="Gio.FileEnumerator.get_container.html" title="Gio.FileEnumerator.prototype.get_container">Gio.FileEnumerator.prototype.get_container</a></li>
-<li class="links "><a href="Gio.FileEnumerator.has_pending.html" title="Gio.FileEnumerator.prototype.has_pending">Gio.FileEnumerator.prototype.has_pending</a></li>
-<li class="links "><a href="Gio.FileEnumerator.is_closed.html" title="Gio.FileEnumerator.prototype.is_closed">Gio.FileEnumerator.prototype.is_closed</a></li>
-<li class="links "><a href="Gio.FileEnumerator.next_file.html" title="Gio.FileEnumerator.prototype.next_file">Gio.FileEnumerator.prototype.next_file</a></li>
-<li class="links "><a href="Gio.FileEnumerator.next_files_async.html" title="Gio.FileEnumerator.prototype.next_files_async">Gio.FileEnumerator.prototype.next_files_async</a></li>
-<li class="links "><a href="Gio.FileEnumerator.next_files_finish.html" title="Gio.FileEnumerator.prototype.next_files_finish">Gio.FileEnumerator.prototype.next_files_finish</a></li>
-<li class="links "><a href="Gio.FileEnumerator.set_pending.html" title="Gio.FileEnumerator.prototype.set_pending">Gio.FileEnumerator.prototype.set_pending</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Properties</span></h2></div>
-<div class="region"><ul><li class="links "><a href="Gio.FileEnumerator-container.html" title="Gio.FileEnumerator.container">container</a></li></ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Virtual functions</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.FileEnumerator-close_async.html" title="Gio.FileEnumerator::close_async">Gio.FileEnumerator::close_async</a></li>
-<li class="links "><a href="Gio.FileEnumerator-close_finish.html" title="Gio.FileEnumerator::close_finish">Gio.FileEnumerator::close_finish</a></li>
-<li class="links "><a href="Gio.FileEnumerator-close_fn.html" title="Gio.FileEnumerator::close_fn">Gio.FileEnumerator::close_fn</a></li>
-<li class="links "><a href="Gio.FileEnumerator-next_file.html" title="Gio.FileEnumerator::next_file">Gio.FileEnumerator::next_file</a></li>
-<li class="links "><a href="Gio.FileEnumerator-next_files_async.html" title="Gio.FileEnumerator::next_files_async">Gio.FileEnumerator::next_files_async</a></li>
-<li class="links "><a href="Gio.FileEnumerator-next_files_finish.html" title="Gio.FileEnumerator::next_files_finish">Gio.FileEnumerator::next_files_finish</a></li>
-</ul></div>
 </div></div>
 </div>
 <div class="sect sect-links" role="navigation">

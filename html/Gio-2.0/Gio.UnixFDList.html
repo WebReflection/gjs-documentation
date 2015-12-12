@@ -18,14 +18,6 @@
 
 let unixFDList = new Gio.UnixFDList();
   </pre></div></div></div></div></div>
-<p class="p">A <span class="link"><a href="Gio.UnixFDList.html" title="Gio.UnixFDList">Gio.UnixFDList</a></span> contains a list of file descriptors.  It owns the file
-descriptors that it contains, closing them when finalized.</p>
-<p class="p">It may be wrapped in a <span class="link"><a href="Gio.UnixFDMessage.html" title="Gio.UnixFDMessage">Gio.UnixFDMessage</a></span> and sent over a <span class="link"><a href="Gio.Socket.html" title="Gio.Socket">Gio.Socket</a></span> in
-the %G_SOCKET_ADDRESS_UNIX family by using <span class="link"><a href="Gio.Socket.send_message.html" title="Gio.Socket.prototype.send_message">Gio.Socket.prototype.send_message</a></span>
-and received using <span class="link"><a href="Gio.Socket.receive_message.html" title="Gio.Socket.prototype.receive_message">Gio.Socket.prototype.receive_message</a></span>.</p>
-<p class="p">Note that `&lt;gio/gunixfdlist.h&gt;` belongs to the UNIX-specific GIO
-interfaces, thus you have to use the `gio-unix-2.0.pc` pkg-config
-file when using it.</p>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
 <div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
@@ -37,23 +29,6 @@ file when using it.</p>
         <span class="code">Gio.UnixFDList</span>
       </div></li></ul>
 </li></ul></div></div></div></div></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.UnixFDList.new.html" title="Gio.UnixFDList.new">Gio.UnixFDList.new</a></li>
-<li class="links "><a href="Gio.UnixFDList.new_from_array.html" title="Gio.UnixFDList.new_from_array">Gio.UnixFDList.new_from_array</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.UnixFDList.append.html" title="Gio.UnixFDList.prototype.append">Gio.UnixFDList.prototype.append</a></li>
-<li class="links "><a href="Gio.UnixFDList.get.html" title="Gio.UnixFDList.prototype.get">Gio.UnixFDList.prototype.get</a></li>
-<li class="links "><a href="Gio.UnixFDList.get_length.html" title="Gio.UnixFDList.prototype.get_length">Gio.UnixFDList.prototype.get_length</a></li>
-<li class="links "><a href="Gio.UnixFDList.peek_fds.html" title="Gio.UnixFDList.prototype.peek_fds">Gio.UnixFDList.prototype.peek_fds</a></li>
-<li class="links "><a href="Gio.UnixFDList.steal_fds.html" title="Gio.UnixFDList.prototype.steal_fds">Gio.UnixFDList.prototype.steal_fds</a></li>
-</ul></div>
 </div></div>
 </div>
 <div class="sect sect-links" role="navigation">

@@ -17,74 +17,15 @@
 <div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function onDBusMessageFilterFunction(connection: <span class="link"><a href="Gio.DBusConnection.html" title="Gio.DBusConnection">Gio.DBusConnection</a></span>, message: <span class="link"><a href="Gio.DBusMessage.html" title="Gio.DBusMessage">Gio.DBusMessage</a></span>, incoming: Boolean): <span class="link"><a href="Gio.DBusMessage.html" title="Gio.DBusMessage">Gio.DBusMessage</a></span> {
 }
   </pre></div></div></div></div></div>
-<p class="p">Signature for function used in <span class="link"><a href="Gio.DBusConnection.add_filter.html" title="Gio.DBusConnection.prototype.add_filter">Gio.DBusConnection.prototype.add_filter</a></span>.</p>
-<p class="p">A filter function is passed a <span class="link"><a href="Gio.DBusMessage.html" title="Gio.DBusMessage">Gio.DBusMessage</a></span> and expected to return
-a <span class="link"><a href="Gio.DBusMessage.html" title="Gio.DBusMessage">Gio.DBusMessage</a></span> too. Passive filter functions that don't modify the
-message can simply return the <span class="code">message</span> object:
-|[
-static GDBusMessage *
-passive_filter (GDBusConnection *connection
-                GDBusMessage    *message,
-                gboolean         incoming,
-                gpointer         user_data)
-{
-  /&lt;!-- --&gt;* inspect <span class="code">message</span> *&lt;!-- --&gt;/
-  return message;
-}
-]|
-Filter functions that wants to drop a message can simply return <span class="code">null</span>:
-|[
-static GDBusMessage *
-drop_filter (GDBusConnection *connection
-             GDBusMessage    *message,
-             gboolean         incoming,
-             gpointer         user_data)
-{
-  if (should_drop_message)
-    {
-      g_object_unref (message);
-      message = NULL;
-    }
-  return message;
-}
-]|
-Finally, a filter function may modify a message by copying it:
-|[
-static GDBusMessage *
-modifying_filter (GDBusConnection *connection
-                  GDBusMessage    *message,
-                  gboolean         incoming,
-                  gpointer         user_data)
-{
-  GDBusMessage *copy;
-  GError *error;</p>
-<p class="p">  error = NULL;
-  copy = g_dbus_message_copy (message, &amp;error);
-  /&lt;!-- --&gt;* handle @error being is set *&lt;!-- --&gt;/
-  g_object_unref (message);</p>
-<p class="p">  /&lt;!-- --&gt;* modify @copy *&lt;!-- --&gt;/</p>
-<p class="p">  return copy;
-}
-]|
-If the returned <span class="link"><a href="Gio.DBusMessage.html" title="Gio.DBusMessage">Gio.DBusMessage</a></span> is different from <span class="code">message</span> and cannot
-be sent on <span class="code">connection</span> (it could use features, such as file
-descriptors, not compatible with <span class="code">connection</span>), then a warning is
-logged to &lt;emphasis&gt;standard error&lt;/emphasis&gt;. Applications can
-check this ahead of time using <span class="link"><a href="Gio.DBusMessage.to_blob.html" title="Gio.DBusMessage.prototype.to_blob">Gio.DBusMessage.prototype.to_blob</a></span> passing a
-<span class="link"><a href="Gio.DBusCapabilityFlags.html" title="Gio.DBusCapabilityFlags">Gio.DBusCapabilityFlags</a></span> value obtained from <span class="code">connection</span>.</p>
-<p class="p">Since 2.26</p>
 <div class="terms"><div class="inner"><div class="region"><dl class="terms">
 <dt class="terms"><span class="code">connection</span></dt>
-<dd class="terms"><p class="p">A <span class="link"><a href="Gio.DBusConnection.html" title="Gio.DBusConnection">Gio.DBusConnection</a></span>.</p></dd>
+<dd class="terms"></dd>
 <dt class="terms"><span class="code">message</span></dt>
-<dd class="terms"><p class="p">A locked <span class="link"><a href="Gio.DBusMessage.html" title="Gio.DBusMessage">Gio.DBusMessage</a></span> that the filter function takes ownership of.</p></dd>
+<dd class="terms"></dd>
 <dt class="terms"><span class="code">incoming</span></dt>
-<dd class="terms"><p class="p"><span class="code">true</span> if it is a message received from the other peer, <span class="code">false</span> if it is
-a message to be sent to the other peer.</p></dd>
+<dd class="terms"></dd>
 <dt class="terms"><span class="code">Returns</span></dt>
-<dd class="terms"><p class="p">A <span class="link"><a href="Gio.DBusMessage.html" title="Gio.DBusMessage">Gio.DBusMessage</a></span> that will be freed with
-<span class="link"><a href="../GObject-2.0/GObject.Object.unref.html" title="../GObject-2.0/GObject.Object.unref.html">GObject.Object.prototype.unref</a></span> or <span class="code">null</span> to drop the message. Passive filter
-functions can simply return the passed <span class="code">message</span> object.</p></dd>
+<dd class="terms"></dd>
 </dl></div></div></div>
 </div>
 <div class="sect sect-links" role="navigation">

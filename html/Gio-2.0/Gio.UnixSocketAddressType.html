@@ -13,35 +13,7 @@
 <div class="body">
 <div class="hgroup"><h1 class="title"><span class="title">Gio.UnixSocketAddressType</span></h1></div>
 <div class="region">
-<div class="contents">
-<p class="p">The type of name used by a <span class="link"><a href="Gio.UnixSocketAddress.html" title="Gio.UnixSocketAddress">Gio.UnixSocketAddress</a></span>.
-<span class="link"><a href="Gio.UnixSocketAddressType.html" title="Gio.UnixSocketAddressType">Gio.UnixSocketAddressType</a></span>.path indicates a traditional unix domain
-socket bound to a filesystem path. <span class="link"><a href="Gio.UnixSocketAddressType.html" title="Gio.UnixSocketAddressType">Gio.UnixSocketAddressType</a></span>.anonymous
-indicates a socket not bound to any name (eg, a client-side socket,
-or a socket created with socketpair()).</p>
-<p class="p">For abstract sockets, there are two incompatible ways of naming
-them; the man pages suggest using the entire &lt;literal&gt;struct
-sockaddr_un&lt;/literal&gt; as the name, padding the unused parts of the
-%sun_path field with zeroes; this corresponds to
-<span class="link"><a href="Gio.UnixSocketAddressType.html" title="Gio.UnixSocketAddressType">Gio.UnixSocketAddressType</a></span>.abstract_padded. However, many programs
-instead just use a portion of %sun_path, and pass an appropriate
-smaller length to bind() or connect(). This is
-<span class="link"><a href="Gio.UnixSocketAddressType.html" title="Gio.UnixSocketAddressType">Gio.UnixSocketAddressType</a></span>.abstract.</p>
-<p class="p">Since 2.26</p>
-<div class="terms"><div class="inner"><div class="region"><dl class="terms">
-<dt class="terms"><span class="code">UnixSocketAddressType.INVALID</span></dt>
-<dd class="terms"><p class="p">invalid</p></dd>
-<dt class="terms"><span class="code">UnixSocketAddressType.ANONYMOUS</span></dt>
-<dd class="terms"><p class="p">anonymous</p></dd>
-<dt class="terms"><span class="code">UnixSocketAddressType.PATH</span></dt>
-<dd class="terms"><p class="p">a filesystem path</p></dd>
-<dt class="terms"><span class="code">UnixSocketAddressType.ABSTRACT</span></dt>
-<dd class="terms"><p class="p">an abstract name</p></dd>
-<dt class="terms"><span class="code">UnixSocketAddressType.ABSTRACT_PADDED</span></dt>
-<dd class="terms"><p class="p">an abstract name, 0-padded
-  to the full length of a unix socket name</p></dd>
-</dl></div></div></div>
-</div>
+<div class="contents"></div>
 <div class="sect sect-links" role="navigation">
 <div class="hgroup"></div>
 <div class="contents"><div class="links guidelinks"><div class="inner">

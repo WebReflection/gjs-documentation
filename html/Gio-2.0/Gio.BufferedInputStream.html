@@ -16,21 +16,8 @@
 <div class="contents">
 <div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
 
-let bufferedInputStream = new Gio.BufferedInputStream({
-    <span class="link"><a href="Gio.BufferedInputStream-buffer-size.html" title="Gio.BufferedInputStream.buffer_size">buffer_size</a></span>: value,
-});
+let bufferedInputStream = new Gio.BufferedInputStream();
   </pre></div></div></div></div></div>
-<p class="p">Buffered input stream implements <span class="link"><a href="Gio.FilterInputStream.html" title="Gio.FilterInputStream">Gio.FilterInputStream</a></span> and provides
-for buffered reads.</p>
-<p class="p">By default, <span class="link"><a href="Gio.BufferedInputStream.html" title="Gio.BufferedInputStream">Gio.BufferedInputStream</a></span>'s buffer size is set at 4 kilobytes.</p>
-<p class="p">To create a buffered input stream, use <span class="link"><a href="Gio.BufferedInputStream.new.html" title="Gio.BufferedInputStream.new">Gio.BufferedInputStream.new</a></span>,
-or <span class="link"><a href="Gio.BufferedInputStream.new_sized.html" title="Gio.BufferedInputStream.new_sized">Gio.BufferedInputStream.new_sized</a></span> to specify the buffer's size at
-construction.</p>
-<p class="p">To get the size of a buffer within a buffered input stream, use
-<span class="link"><a href="Gio.BufferedInputStream.get_buffer_size.html" title="Gio.BufferedInputStream.prototype.get_buffer_size">Gio.BufferedInputStream.prototype.get_buffer_size</a></span>. To change the size of a
-buffered input stream's buffer, use
-<span class="link"><a href="Gio.BufferedInputStream.set_buffer_size.html" title="Gio.BufferedInputStream.prototype.set_buffer_size">Gio.BufferedInputStream.prototype.set_buffer_size</a></span>. Note that the buffer's size
-cannot be reduced below the size of the data within the buffer.</p>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
 <div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
@@ -54,39 +41,6 @@ cannot be reduced below the size of the data within the buffer.</p>
 </li></ul>
 </li></ul>
 </li></ul></div></div></div></div></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.BufferedInputStream.new.html" title="Gio.BufferedInputStream.new">Gio.BufferedInputStream.new</a></li>
-<li class="links "><a href="Gio.BufferedInputStream.new_sized.html" title="Gio.BufferedInputStream.new_sized">Gio.BufferedInputStream.new_sized</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.BufferedInputStream.fill.html" title="Gio.BufferedInputStream.prototype.fill">Gio.BufferedInputStream.prototype.fill</a></li>
-<li class="links "><a href="Gio.BufferedInputStream.fill_async.html" title="Gio.BufferedInputStream.prototype.fill_async">Gio.BufferedInputStream.prototype.fill_async</a></li>
-<li class="links "><a href="Gio.BufferedInputStream.fill_finish.html" title="Gio.BufferedInputStream.prototype.fill_finish">Gio.BufferedInputStream.prototype.fill_finish</a></li>
-<li class="links "><a href="Gio.BufferedInputStream.get_available.html" title="Gio.BufferedInputStream.prototype.get_available">Gio.BufferedInputStream.prototype.get_available</a></li>
-<li class="links "><a href="Gio.BufferedInputStream.get_buffer_size.html" title="Gio.BufferedInputStream.prototype.get_buffer_size">Gio.BufferedInputStream.prototype.get_buffer_size</a></li>
-<li class="links "><a href="Gio.BufferedInputStream.peek.html" title="Gio.BufferedInputStream.prototype.peek">Gio.BufferedInputStream.prototype.peek</a></li>
-<li class="links "><a href="Gio.BufferedInputStream.peek_buffer.html" title="Gio.BufferedInputStream.prototype.peek_buffer">Gio.BufferedInputStream.prototype.peek_buffer</a></li>
-<li class="links "><a href="Gio.BufferedInputStream.read_byte.html" title="Gio.BufferedInputStream.prototype.read_byte">Gio.BufferedInputStream.prototype.read_byte</a></li>
-<li class="links "><a href="Gio.BufferedInputStream.set_buffer_size.html" title="Gio.BufferedInputStream.prototype.set_buffer_size">Gio.BufferedInputStream.prototype.set_buffer_size</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Properties</span></h2></div>
-<div class="region"><ul><li class="links "><a href="Gio.BufferedInputStream-buffer-size.html" title="Gio.BufferedInputStream.buffer_size">buffer-size</a></li></ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Virtual functions</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.BufferedInputStream-fill.html" title="Gio.BufferedInputStream::fill">Gio.BufferedInputStream::fill</a></li>
-<li class="links "><a href="Gio.BufferedInputStream-fill_async.html" title="Gio.BufferedInputStream::fill_async">Gio.BufferedInputStream::fill_async</a></li>
-<li class="links "><a href="Gio.BufferedInputStream-fill_finish.html" title="Gio.BufferedInputStream::fill_finish">Gio.BufferedInputStream::fill_finish</a></li>
-</ul></div>
 </div></div>
 </div>
 <div class="sect sect-links" role="navigation">

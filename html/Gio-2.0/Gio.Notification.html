@@ -18,24 +18,6 @@
 
 let notification = new Gio.Notification();
   </pre></div></div></div></div></div>
-<p class="p"><span class="link"><a href="Gio.Notification.html" title="Gio.Notification">Gio.Notification</a></span> is a mechanism for creating a notification to be shown
-to the user -- typically as a pop-up notification presented by the
-desktop environment shell.</p>
-<p class="p">The key difference between <span class="link"><a href="Gio.Notification.html" title="Gio.Notification">Gio.Notification</a></span> and other similar APIs is
-that, if supported by the desktop environment, notifications sent
-with <span class="link"><a href="Gio.Notification.html" title="Gio.Notification">Gio.Notification</a></span> will persist after the application has exited,
-and even across system reboots.</p>
-<p class="p">Since the user may click on a notification while the application is
-not running, applications using <span class="link"><a href="Gio.Notification.html" title="Gio.Notification">Gio.Notification</a></span> should be able to be
-started as a D-Bus service, using <span class="link"><a href="Gio.Application.html" title="Gio.Application">Gio.Application</a></span>.</p>
-<p class="p">User interaction with a notification (either the default action, or
-buttons) must be associated with actions on the application (ie:
-"app." actions).  It is not possible to route user interaction
-through the notification itself, because the object will not exist if
-the application is autostarted as a result of a notification being
-clicked.</p>
-<p class="p">A notification can be sent with <span class="link"><a href="Gio.Application.send_notification.html" title="Gio.Application.prototype.send_notification">Gio.Application.prototype.send_notification</a></span>.</p>
-<p class="p">Since 2.40</p>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
 <div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
@@ -47,23 +29,6 @@ clicked.</p>
         <span class="code">Gio.Notification</span>
       </div></li></ul>
 </li></ul></div></div></div></div></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
-<div class="region"><ul><li class="links "><a href="Gio.Notification.new.html" title="Gio.Notification.new">Gio.Notification.new</a></li></ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.Notification.add_button.html" title="Gio.Notification.prototype.add_button">Gio.Notification.prototype.add_button</a></li>
-<li class="links "><a href="Gio.Notification.add_button_with_target.html" title="Gio.Notification.prototype.add_button_with_target">Gio.Notification.prototype.add_button_with_target</a></li>
-<li class="links "><a href="Gio.Notification.set_body.html" title="Gio.Notification.prototype.set_body">Gio.Notification.prototype.set_body</a></li>
-<li class="links "><a href="Gio.Notification.set_default_action.html" title="Gio.Notification.prototype.set_default_action">Gio.Notification.prototype.set_default_action</a></li>
-<li class="links "><a href="Gio.Notification.set_default_action_and_target.html" title="Gio.Notification.prototype.set_default_action_and_target">Gio.Notification.prototype.set_default_action_and_target</a></li>
-<li class="links "><a href="Gio.Notification.set_icon.html" title="Gio.Notification.prototype.set_icon">Gio.Notification.prototype.set_icon</a></li>
-<li class="links "><a href="Gio.Notification.set_title.html" title="Gio.Notification.prototype.set_title">Gio.Notification.prototype.set_title</a></li>
-<li class="links "><a href="Gio.Notification.set_urgent.html" title="Gio.Notification.prototype.set_urgent">Gio.Notification.prototype.set_urgent</a></li>
-</ul></div>
 </div></div>
 </div>
 <div class="sect sect-links" role="navigation">

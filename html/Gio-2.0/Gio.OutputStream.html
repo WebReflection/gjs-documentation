@@ -18,12 +18,6 @@
 
 let outputStream = new Gio.OutputStream();
   </pre></div></div></div></div></div>
-<p class="p"><span class="link"><a href="Gio.OutputStream.html" title="Gio.OutputStream">Gio.OutputStream</a></span> has functions to write to a stream (<span class="link"><a href="Gio.OutputStream.write.html" title="Gio.OutputStream.prototype.write">Gio.OutputStream.prototype.write</a></span>),
-to close a stream (<span class="link"><a href="Gio.OutputStream.close.html" title="Gio.OutputStream.prototype.close">Gio.OutputStream.prototype.close</a></span>) and to flush pending writes
-(<span class="link"><a href="Gio.OutputStream.flush.html" title="Gio.OutputStream.prototype.flush">Gio.OutputStream.prototype.flush</a></span>).</p>
-<p class="p">To copy the content of an input stream to an output stream without
-manually handling the reads and writes, use <span class="link"><a href="Gio.OutputStream.splice.html" title="Gio.OutputStream.prototype.splice">Gio.OutputStream.prototype.splice</a></span>.</p>
-<p class="p">All of these functions have async variants too.</p>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
 <div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
@@ -35,49 +29,6 @@ manually handling the reads and writes, use <span class="link"><a href="Gio.Outp
         <span class="code">Gio.OutputStream</span>
       </div></li></ul>
 </li></ul></div></div></div></div></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.OutputStream.clear_pending.html" title="Gio.OutputStream.prototype.clear_pending">Gio.OutputStream.prototype.clear_pending</a></li>
-<li class="links "><a href="Gio.OutputStream.close.html" title="Gio.OutputStream.prototype.close">Gio.OutputStream.prototype.close</a></li>
-<li class="links "><a href="Gio.OutputStream.close_async.html" title="Gio.OutputStream.prototype.close_async">Gio.OutputStream.prototype.close_async</a></li>
-<li class="links "><a href="Gio.OutputStream.close_finish.html" title="Gio.OutputStream.prototype.close_finish">Gio.OutputStream.prototype.close_finish</a></li>
-<li class="links "><a href="Gio.OutputStream.flush.html" title="Gio.OutputStream.prototype.flush">Gio.OutputStream.prototype.flush</a></li>
-<li class="links "><a href="Gio.OutputStream.flush_async.html" title="Gio.OutputStream.prototype.flush_async">Gio.OutputStream.prototype.flush_async</a></li>
-<li class="links "><a href="Gio.OutputStream.flush_finish.html" title="Gio.OutputStream.prototype.flush_finish">Gio.OutputStream.prototype.flush_finish</a></li>
-<li class="links "><a href="Gio.OutputStream.has_pending.html" title="Gio.OutputStream.prototype.has_pending">Gio.OutputStream.prototype.has_pending</a></li>
-<li class="links "><a href="Gio.OutputStream.is_closed.html" title="Gio.OutputStream.prototype.is_closed">Gio.OutputStream.prototype.is_closed</a></li>
-<li class="links "><a href="Gio.OutputStream.is_closing.html" title="Gio.OutputStream.prototype.is_closing">Gio.OutputStream.prototype.is_closing</a></li>
-<li class="links "><a href="Gio.OutputStream.set_pending.html" title="Gio.OutputStream.prototype.set_pending">Gio.OutputStream.prototype.set_pending</a></li>
-<li class="links "><a href="Gio.OutputStream.splice.html" title="Gio.OutputStream.prototype.splice">Gio.OutputStream.prototype.splice</a></li>
-<li class="links "><a href="Gio.OutputStream.splice_async.html" title="Gio.OutputStream.prototype.splice_async">Gio.OutputStream.prototype.splice_async</a></li>
-<li class="links "><a href="Gio.OutputStream.splice_finish.html" title="Gio.OutputStream.prototype.splice_finish">Gio.OutputStream.prototype.splice_finish</a></li>
-<li class="links "><a href="Gio.OutputStream.write.html" title="Gio.OutputStream.prototype.write">Gio.OutputStream.prototype.write</a></li>
-<li class="links "><a href="Gio.OutputStream.write_all.html" title="Gio.OutputStream.prototype.write_all">Gio.OutputStream.prototype.write_all</a></li>
-<li class="links "><a href="Gio.OutputStream.write_async.html" title="Gio.OutputStream.prototype.write_async">Gio.OutputStream.prototype.write_async</a></li>
-<li class="links "><a href="Gio.OutputStream.write_bytes.html" title="Gio.OutputStream.prototype.write_bytes">Gio.OutputStream.prototype.write_bytes</a></li>
-<li class="links "><a href="Gio.OutputStream.write_bytes_async.html" title="Gio.OutputStream.prototype.write_bytes_async">Gio.OutputStream.prototype.write_bytes_async</a></li>
-<li class="links "><a href="Gio.OutputStream.write_bytes_finish.html" title="Gio.OutputStream.prototype.write_bytes_finish">Gio.OutputStream.prototype.write_bytes_finish</a></li>
-<li class="links "><a href="Gio.OutputStream.write_finish.html" title="Gio.OutputStream.prototype.write_finish">Gio.OutputStream.prototype.write_finish</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Virtual functions</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.OutputStream-close_async.html" title="Gio.OutputStream::close_async">Gio.OutputStream::close_async</a></li>
-<li class="links "><a href="Gio.OutputStream-close_finish.html" title="Gio.OutputStream::close_finish">Gio.OutputStream::close_finish</a></li>
-<li class="links "><a href="Gio.OutputStream-close_fn.html" title="Gio.OutputStream::close_fn">Gio.OutputStream::close_fn</a></li>
-<li class="links "><a href="Gio.OutputStream-flush.html" title="Gio.OutputStream::flush">Gio.OutputStream::flush</a></li>
-<li class="links "><a href="Gio.OutputStream-flush_async.html" title="Gio.OutputStream::flush_async">Gio.OutputStream::flush_async</a></li>
-<li class="links "><a href="Gio.OutputStream-flush_finish.html" title="Gio.OutputStream::flush_finish">Gio.OutputStream::flush_finish</a></li>
-<li class="links "><a href="Gio.OutputStream-splice.html" title="Gio.OutputStream::splice">Gio.OutputStream::splice</a></li>
-<li class="links "><a href="Gio.OutputStream-splice_async.html" title="Gio.OutputStream::splice_async">Gio.OutputStream::splice_async</a></li>
-<li class="links "><a href="Gio.OutputStream-splice_finish.html" title="Gio.OutputStream::splice_finish">Gio.OutputStream::splice_finish</a></li>
-<li class="links "><a href="Gio.OutputStream-write_async.html" title="Gio.OutputStream::write_async">Gio.OutputStream::write_async</a></li>
-<li class="links "><a href="Gio.OutputStream-write_finish.html" title="Gio.OutputStream::write_finish">Gio.OutputStream::write_finish</a></li>
-<li class="links "><a href="Gio.OutputStream-write_fn.html" title="Gio.OutputStream::write_fn">Gio.OutputStream::write_fn</a></li>
-</ul></div>
 </div></div>
 </div>
 <div class="sect sect-links" role="navigation">

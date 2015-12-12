@@ -13,40 +13,10 @@
 <div class="body">
 <div class="hgroup"><h1 class="title"><span class="title">Gio.SrvTarget</span></h1></div>
 <div class="region">
-<div class="contents">
-<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
+<div class="contents"><div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
 
-let srvTarget = new Gio.SrvTarget(hostname: String, port: Number(guint16), priority: Number(guint16), weight: Number(guint16));
-  </pre></div></div></div></div></div>
-<p class="p">SRV (service) records are used by some network protocols to provide
-service-specific aliasing and load-balancing. For example, XMPP
-(Jabber) uses SRV records to locate the XMPP server for a domain;
-rather than connecting directly to "example.com" or assuming a
-specific server hostname like "xmpp.example.com", an XMPP client
-would look up the "xmpp-client" SRV record for "example.com", and
-then connect to whatever host was pointed to by that record.</p>
-<p class="p">You can use <span class="link"><a href="Gio.Resolver.lookup_service.html" title="Gio.Resolver.prototype.lookup_service">Gio.Resolver.prototype.lookup_service</a></span> or
-<span class="link"><a href="Gio.Resolver.lookup_service_async.html" title="Gio.Resolver.prototype.lookup_service_async">Gio.Resolver.prototype.lookup_service_async</a></span> to find the #GSrvTargets
-for a given service. However, if you are simply planning to connect
-to the remote service, you can use <span class="link"><a href="Gio.NetworkService.html" title="Gio.NetworkService">Gio.NetworkService</a></span>'s
-<span class="link"><a href="Gio.SocketConnectable.html" title="Gio.SocketConnectable">Gio.SocketConnectable</a></span> interface and not need to worry about
-<span class="link"><a href="Gio.SrvTarget.html" title="Gio.SrvTarget">Gio.SrvTarget</a></span> at all.</p>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
-<div class="region"><ul><li class="links "><a href="Gio.SrvTarget.new.html" title="Gio.SrvTarget.new">Gio.SrvTarget.new</a></li></ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.SrvTarget.copy.html" title="Gio.SrvTarget.prototype.copy">Gio.SrvTarget.prototype.copy</a></li>
-<li class="links "><a href="Gio.SrvTarget.free.html" title="Gio.SrvTarget.prototype.free">Gio.SrvTarget.prototype.free</a></li>
-<li class="links "><a href="Gio.SrvTarget.get_hostname.html" title="Gio.SrvTarget.prototype.get_hostname">Gio.SrvTarget.prototype.get_hostname</a></li>
-<li class="links "><a href="Gio.SrvTarget.get_port.html" title="Gio.SrvTarget.prototype.get_port">Gio.SrvTarget.prototype.get_port</a></li>
-<li class="links "><a href="Gio.SrvTarget.get_priority.html" title="Gio.SrvTarget.prototype.get_priority">Gio.SrvTarget.prototype.get_priority</a></li>
-<li class="links "><a href="Gio.SrvTarget.get_weight.html" title="Gio.SrvTarget.prototype.get_weight">Gio.SrvTarget.prototype.get_weight</a></li>
-</ul></div>
-</div></div>
-</div>
+let srvTarget = new Gio.SrvTarget();
+  </pre></div></div></div></div></div></div>
 <div class="sect sect-links" role="navigation">
 <div class="hgroup"></div>
 <div class="contents"><div class="links guidelinks"><div class="inner">

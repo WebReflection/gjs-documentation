@@ -13,65 +13,10 @@
 <div class="body">
 <div class="hgroup"><h1 class="title"><span class="title">GLib.IOChannel</span></h1></div>
 <div class="region">
-<div class="contents">
-<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const GLib = imports.gi.GLib;
+<div class="contents"><div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const GLib = imports.gi.GLib;
 
-let iOChannel = new GLib.IOChannel(filename: String, mode: String);
-  </pre></div></div></div></div></div>
-<p class="p">A data structure representing an IO Channel. The fields should be
-considered private and should only be accessed with the following
-functions.</p>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="GLib.IOChannel.new_file.html" title="GLib.IOChannel.new_file">GLib.IOChannel.new_file</a></li>
-<li class="links "><a href="GLib.IOChannel.unix_new.html" title="GLib.IOChannel.unix_new">GLib.IOChannel.unix_new</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="GLib.IOChannel.close.html" title="GLib.IOChannel.prototype.close">GLib.IOChannel.prototype.close</a></li>
-<li class="links "><a href="GLib.IOChannel.flush.html" title="GLib.IOChannel.prototype.flush">GLib.IOChannel.prototype.flush</a></li>
-<li class="links "><a href="GLib.IOChannel.get_buffer_condition.html" title="GLib.IOChannel.prototype.get_buffer_condition">GLib.IOChannel.prototype.get_buffer_condition</a></li>
-<li class="links "><a href="GLib.IOChannel.get_buffer_size.html" title="GLib.IOChannel.prototype.get_buffer_size">GLib.IOChannel.prototype.get_buffer_size</a></li>
-<li class="links "><a href="GLib.IOChannel.get_buffered.html" title="GLib.IOChannel.prototype.get_buffered">GLib.IOChannel.prototype.get_buffered</a></li>
-<li class="links "><a href="GLib.IOChannel.get_close_on_unref.html" title="GLib.IOChannel.prototype.get_close_on_unref">GLib.IOChannel.prototype.get_close_on_unref</a></li>
-<li class="links "><a href="GLib.IOChannel.get_encoding.html" title="GLib.IOChannel.prototype.get_encoding">GLib.IOChannel.prototype.get_encoding</a></li>
-<li class="links "><a href="GLib.IOChannel.get_flags.html" title="GLib.IOChannel.prototype.get_flags">GLib.IOChannel.prototype.get_flags</a></li>
-<li class="links "><a href="GLib.IOChannel.get_line_term.html" title="GLib.IOChannel.prototype.get_line_term">GLib.IOChannel.prototype.get_line_term</a></li>
-<li class="links "><a href="GLib.IOChannel.init.html" title="GLib.IOChannel.prototype.init">GLib.IOChannel.prototype.init</a></li>
-<li class="links "><a href="GLib.IOChannel.read.html" title="GLib.IOChannel.prototype.read">GLib.IOChannel.prototype.read</a></li>
-<li class="links "><a href="GLib.IOChannel.read_chars.html" title="GLib.IOChannel.prototype.read_chars">GLib.IOChannel.prototype.read_chars</a></li>
-<li class="links "><a href="GLib.IOChannel.read_line.html" title="GLib.IOChannel.prototype.read_line">GLib.IOChannel.prototype.read_line</a></li>
-<li class="links "><a href="GLib.IOChannel.read_line_string.html" title="GLib.IOChannel.prototype.read_line_string">GLib.IOChannel.prototype.read_line_string</a></li>
-<li class="links "><a href="GLib.IOChannel.read_to_end.html" title="GLib.IOChannel.prototype.read_to_end">GLib.IOChannel.prototype.read_to_end</a></li>
-<li class="links "><a href="GLib.IOChannel.read_unichar.html" title="GLib.IOChannel.prototype.read_unichar">GLib.IOChannel.prototype.read_unichar</a></li>
-<li class="links "><a href="GLib.IOChannel.ref.html" title="GLib.IOChannel.prototype.ref">GLib.IOChannel.prototype.ref</a></li>
-<li class="links "><a href="GLib.IOChannel.seek.html" title="GLib.IOChannel.prototype.seek">GLib.IOChannel.prototype.seek</a></li>
-<li class="links "><a href="GLib.IOChannel.seek_position.html" title="GLib.IOChannel.prototype.seek_position">GLib.IOChannel.prototype.seek_position</a></li>
-<li class="links "><a href="GLib.IOChannel.set_buffer_size.html" title="GLib.IOChannel.prototype.set_buffer_size">GLib.IOChannel.prototype.set_buffer_size</a></li>
-<li class="links "><a href="GLib.IOChannel.set_buffered.html" title="GLib.IOChannel.prototype.set_buffered">GLib.IOChannel.prototype.set_buffered</a></li>
-<li class="links "><a href="GLib.IOChannel.set_close_on_unref.html" title="GLib.IOChannel.prototype.set_close_on_unref">GLib.IOChannel.prototype.set_close_on_unref</a></li>
-<li class="links "><a href="GLib.IOChannel.set_encoding.html" title="GLib.IOChannel.prototype.set_encoding">GLib.IOChannel.prototype.set_encoding</a></li>
-<li class="links "><a href="GLib.IOChannel.set_flags.html" title="GLib.IOChannel.prototype.set_flags">GLib.IOChannel.prototype.set_flags</a></li>
-<li class="links "><a href="GLib.IOChannel.set_line_term.html" title="GLib.IOChannel.prototype.set_line_term">GLib.IOChannel.prototype.set_line_term</a></li>
-<li class="links "><a href="GLib.IOChannel.shutdown.html" title="GLib.IOChannel.prototype.shutdown">GLib.IOChannel.prototype.shutdown</a></li>
-<li class="links "><a href="GLib.IOChannel.unix_get_fd.html" title="GLib.IOChannel.prototype.unix_get_fd">GLib.IOChannel.prototype.unix_get_fd</a></li>
-<li class="links "><a href="GLib.IOChannel.unref.html" title="GLib.IOChannel.prototype.unref">GLib.IOChannel.prototype.unref</a></li>
-<li class="links "><a href="GLib.IOChannel.write.html" title="GLib.IOChannel.prototype.write">GLib.IOChannel.prototype.write</a></li>
-<li class="links "><a href="GLib.IOChannel.write_chars.html" title="GLib.IOChannel.prototype.write_chars">GLib.IOChannel.prototype.write_chars</a></li>
-<li class="links "><a href="GLib.IOChannel.write_unichar.html" title="GLib.IOChannel.prototype.write_unichar">GLib.IOChannel.prototype.write_unichar</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Static Functions</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="GLib.IOChannel.error_from_errno.html" title="GLib.IOChannel.error_from_errno">GLib.IOChannel.error_from_errno</a></li>
-<li class="links "><a href="GLib.IOChannel.error_quark.html" title="GLib.IOChannel.error_quark">GLib.IOChannel.error_quark</a></li>
-</ul></div>
-</div></div>
-</div>
+let iOChannel = new GLib.IOChannel();
+  </pre></div></div></div></div></div></div>
 <div class="sect sect-links" role="navigation">
 <div class="hgroup"></div>
 <div class="contents"><div class="links guidelinks"><div class="inner">

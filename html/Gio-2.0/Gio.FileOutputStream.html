@@ -18,18 +18,6 @@
 
 let fileOutputStream = new Gio.FileOutputStream();
   </pre></div></div></div></div></div>
-<p class="p">GFileOutputStream provides output streams that write their
-content to a file.</p>
-<p class="p">GFileOutputStream implements <span class="link"><a href="Gio.Seekable.html" title="Gio.Seekable">Gio.Seekable</a></span>, which allows the output
-stream to jump to arbitrary positions in the file and to truncate
-the file, provided the filesystem of the file supports these
-operations.</p>
-<p class="p">To find the position of a file output stream, use <span class="link"><a href="Gio.Seekable.tell.html" title="Gio.Seekable.prototype.tell">Gio.Seekable.prototype.tell</a></span>.
-To find out if a file output stream supports seeking, use
-<span class="link"><a href="Gio.Seekable.can_seek.html" title="Gio.Seekable.prototype.can_seek">Gio.Seekable.prototype.can_seek</a></span>.To position a file output stream, use
-<span class="link"><a href="Gio.Seekable.seek.html" title="Gio.Seekable.prototype.seek">Gio.Seekable.prototype.seek</a></span>. To find out if a file output stream supports
-truncating, use <span class="link"><a href="Gio.Seekable.can_truncate.html" title="Gio.Seekable.prototype.can_truncate">Gio.Seekable.prototype.can_truncate</a></span>. To truncate a file output
-stream, use <span class="link"><a href="Gio.Seekable.truncate.html" title="Gio.Seekable.prototype.truncate">Gio.Seekable.prototype.truncate</a></span>.</p>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
 <div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
@@ -47,29 +35,6 @@ stream, use <span class="link"><a href="Gio.Seekable.truncate.html" title="Gio.S
       </div></li></ul>
 </li></ul>
 </li></ul></div></div></div></div></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.FileOutputStream.get_etag.html" title="Gio.FileOutputStream.prototype.get_etag">Gio.FileOutputStream.prototype.get_etag</a></li>
-<li class="links "><a href="Gio.FileOutputStream.query_info.html" title="Gio.FileOutputStream.prototype.query_info">Gio.FileOutputStream.prototype.query_info</a></li>
-<li class="links "><a href="Gio.FileOutputStream.query_info_async.html" title="Gio.FileOutputStream.prototype.query_info_async">Gio.FileOutputStream.prototype.query_info_async</a></li>
-<li class="links "><a href="Gio.FileOutputStream.query_info_finish.html" title="Gio.FileOutputStream.prototype.query_info_finish">Gio.FileOutputStream.prototype.query_info_finish</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Virtual functions</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.FileOutputStream-can_seek.html" title="Gio.FileOutputStream::can_seek">Gio.FileOutputStream::can_seek</a></li>
-<li class="links "><a href="Gio.FileOutputStream-can_truncate.html" title="Gio.FileOutputStream::can_truncate">Gio.FileOutputStream::can_truncate</a></li>
-<li class="links "><a href="Gio.FileOutputStream-get_etag.html" title="Gio.FileOutputStream::get_etag">Gio.FileOutputStream::get_etag</a></li>
-<li class="links "><a href="Gio.FileOutputStream-query_info.html" title="Gio.FileOutputStream::query_info">Gio.FileOutputStream::query_info</a></li>
-<li class="links "><a href="Gio.FileOutputStream-query_info_async.html" title="Gio.FileOutputStream::query_info_async">Gio.FileOutputStream::query_info_async</a></li>
-<li class="links "><a href="Gio.FileOutputStream-query_info_finish.html" title="Gio.FileOutputStream::query_info_finish">Gio.FileOutputStream::query_info_finish</a></li>
-<li class="links "><a href="Gio.FileOutputStream-seek.html" title="Gio.FileOutputStream::seek">Gio.FileOutputStream::seek</a></li>
-<li class="links "><a href="Gio.FileOutputStream-tell.html" title="Gio.FileOutputStream::tell">Gio.FileOutputStream::tell</a></li>
-<li class="links "><a href="Gio.FileOutputStream-truncate_fn.html" title="Gio.FileOutputStream::truncate_fn">Gio.FileOutputStream::truncate_fn</a></li>
-</ul></div>
 </div></div>
 </div>
 <div class="sect sect-links" role="navigation">

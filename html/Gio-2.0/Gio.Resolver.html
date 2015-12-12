@@ -18,13 +18,6 @@
 
 let resolver = new Gio.Resolver();
   </pre></div></div></div></div></div>
-<p class="p"><span class="link"><a href="Gio.Resolver.html" title="Gio.Resolver">Gio.Resolver</a></span> provides cancellable synchronous and asynchronous DNS
-resolution, for hostnames (<span class="link"><a href="Gio.Resolver.lookup_by_address.html" title="Gio.Resolver.prototype.lookup_by_address">Gio.Resolver.prototype.lookup_by_address</a></span>,
-<span class="link"><a href="Gio.Resolver.lookup_by_name.html" title="Gio.Resolver.prototype.lookup_by_name">Gio.Resolver.prototype.lookup_by_name</a></span> and their async variants) and SRV
-(service) records (<span class="link"><a href="Gio.Resolver.lookup_service.html" title="Gio.Resolver.prototype.lookup_service">Gio.Resolver.prototype.lookup_service</a></span>).</p>
-<p class="p"><span class="link"><a href="Gio.NetworkAddress.html" title="Gio.NetworkAddress">Gio.NetworkAddress</a></span> and <span class="link"><a href="Gio.NetworkService.html" title="Gio.NetworkService">Gio.NetworkService</a></span> provide wrappers around
-<span class="link"><a href="Gio.Resolver.html" title="Gio.Resolver">Gio.Resolver</a></span> functionality that also implement <span class="link"><a href="Gio.SocketConnectable.html" title="Gio.SocketConnectable">Gio.SocketConnectable</a></span>,
-making it easy to connect to a remote host/service.</p>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
 <div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
@@ -36,48 +29,6 @@ making it easy to connect to a remote host/service.</p>
         <span class="code">Gio.Resolver</span>
       </div></li></ul>
 </li></ul></div></div></div></div></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.Resolver.lookup_by_address.html" title="Gio.Resolver.prototype.lookup_by_address">Gio.Resolver.prototype.lookup_by_address</a></li>
-<li class="links "><a href="Gio.Resolver.lookup_by_address_async.html" title="Gio.Resolver.prototype.lookup_by_address_async">Gio.Resolver.prototype.lookup_by_address_async</a></li>
-<li class="links "><a href="Gio.Resolver.lookup_by_address_finish.html" title="Gio.Resolver.prototype.lookup_by_address_finish">Gio.Resolver.prototype.lookup_by_address_finish</a></li>
-<li class="links "><a href="Gio.Resolver.lookup_by_name.html" title="Gio.Resolver.prototype.lookup_by_name">Gio.Resolver.prototype.lookup_by_name</a></li>
-<li class="links "><a href="Gio.Resolver.lookup_by_name_async.html" title="Gio.Resolver.prototype.lookup_by_name_async">Gio.Resolver.prototype.lookup_by_name_async</a></li>
-<li class="links "><a href="Gio.Resolver.lookup_by_name_finish.html" title="Gio.Resolver.prototype.lookup_by_name_finish">Gio.Resolver.prototype.lookup_by_name_finish</a></li>
-<li class="links "><a href="Gio.Resolver.lookup_records.html" title="Gio.Resolver.prototype.lookup_records">Gio.Resolver.prototype.lookup_records</a></li>
-<li class="links "><a href="Gio.Resolver.lookup_records_async.html" title="Gio.Resolver.prototype.lookup_records_async">Gio.Resolver.prototype.lookup_records_async</a></li>
-<li class="links "><a href="Gio.Resolver.lookup_records_finish.html" title="Gio.Resolver.prototype.lookup_records_finish">Gio.Resolver.prototype.lookup_records_finish</a></li>
-<li class="links "><a href="Gio.Resolver.lookup_service.html" title="Gio.Resolver.prototype.lookup_service">Gio.Resolver.prototype.lookup_service</a></li>
-<li class="links "><a href="Gio.Resolver.lookup_service_async.html" title="Gio.Resolver.prototype.lookup_service_async">Gio.Resolver.prototype.lookup_service_async</a></li>
-<li class="links "><a href="Gio.Resolver.lookup_service_finish.html" title="Gio.Resolver.prototype.lookup_service_finish">Gio.Resolver.prototype.lookup_service_finish</a></li>
-<li class="links "><a href="Gio.Resolver.set_default.html" title="Gio.Resolver.prototype.set_default">Gio.Resolver.prototype.set_default</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Static Functions</span></h2></div>
-<div class="region"><ul><li class="links "><a href="Gio.Resolver.get_default.html" title="Gio.Resolver.get_default">Gio.Resolver.get_default</a></li></ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Signals</span></h2></div>
-<div class="region"><ul><li class="links "><a href="Gio.Resolver-reload.html" title="Gio.Resolver::reload">reload</a></li></ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Virtual functions</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.Resolver-lookup_by_address.html" title="Gio.Resolver::lookup_by_address">Gio.Resolver::lookup_by_address</a></li>
-<li class="links "><a href="Gio.Resolver-lookup_by_address_async.html" title="Gio.Resolver::lookup_by_address_async">Gio.Resolver::lookup_by_address_async</a></li>
-<li class="links "><a href="Gio.Resolver-lookup_by_address_finish.html" title="Gio.Resolver::lookup_by_address_finish">Gio.Resolver::lookup_by_address_finish</a></li>
-<li class="links "><a href="Gio.Resolver-lookup_by_name.html" title="Gio.Resolver::lookup_by_name">Gio.Resolver::lookup_by_name</a></li>
-<li class="links "><a href="Gio.Resolver-lookup_by_name_async.html" title="Gio.Resolver::lookup_by_name_async">Gio.Resolver::lookup_by_name_async</a></li>
-<li class="links "><a href="Gio.Resolver-lookup_by_name_finish.html" title="Gio.Resolver::lookup_by_name_finish">Gio.Resolver::lookup_by_name_finish</a></li>
-<li class="links "><a href="Gio.Resolver-lookup_records.html" title="Gio.Resolver::lookup_records">Gio.Resolver::lookup_records</a></li>
-<li class="links "><a href="Gio.Resolver-lookup_records_async.html" title="Gio.Resolver::lookup_records_async">Gio.Resolver::lookup_records_async</a></li>
-<li class="links "><a href="Gio.Resolver-lookup_records_finish.html" title="Gio.Resolver::lookup_records_finish">Gio.Resolver::lookup_records_finish</a></li>
-<li class="links "><a href="Gio.Resolver-lookup_service_async.html" title="Gio.Resolver::lookup_service_async">Gio.Resolver::lookup_service_async</a></li>
-<li class="links "><a href="Gio.Resolver-lookup_service_finish.html" title="Gio.Resolver::lookup_service_finish">Gio.Resolver::lookup_service_finish</a></li>
-</ul></div>
 </div></div>
 </div>
 <div class="sect sect-links" role="navigation">

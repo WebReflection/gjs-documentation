@@ -16,20 +16,8 @@
 <div class="contents">
 <div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
 
-let networkService = new Gio.NetworkService({
-    <span class="link"><a href="Gio.NetworkService-domain.html" title="Gio.NetworkService.domain">domain</a></span>: value,
-    <span class="link"><a href="Gio.NetworkService-protocol.html" title="Gio.NetworkService.protocol">protocol</a></span>: value,
-    <span class="link"><a href="Gio.NetworkService-service.html" title="Gio.NetworkService.service">service</a></span>: value,
-});
+let networkService = new Gio.NetworkService();
   </pre></div></div></div></div></div>
-<p class="p">Like <span class="link"><a href="Gio.NetworkAddress.html" title="Gio.NetworkAddress">Gio.NetworkAddress</a></span> does with hostnames, <span class="link"><a href="Gio.NetworkService.html" title="Gio.NetworkService">Gio.NetworkService</a></span>
-provides an easy way to resolve a SRV record, and then attempt to
-connect to one of the hosts that implements that service, handling
-service priority/weighting, multiple IP addresses, and multiple
-address families.</p>
-<p class="p">See <span class="link"><a href="Gio.SrvTarget.html" title="Gio.SrvTarget">Gio.SrvTarget</a></span> for more information about SRV records, and see
-<span class="link"><a href="Gio.SocketConnectable.html" title="Gio.SocketConnectable">Gio.SocketConnectable</a></span> for and example of using the connectable
-interface.</p>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
 <div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
@@ -41,29 +29,6 @@ interface.</p>
         <span class="code">Gio.NetworkService</span>
       </div></li></ul>
 </li></ul></div></div></div></div></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
-<div class="region"><ul><li class="links "><a href="Gio.NetworkService.new.html" title="Gio.NetworkService.new">Gio.NetworkService.new</a></li></ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.NetworkService.get_domain.html" title="Gio.NetworkService.prototype.get_domain">Gio.NetworkService.prototype.get_domain</a></li>
-<li class="links "><a href="Gio.NetworkService.get_protocol.html" title="Gio.NetworkService.prototype.get_protocol">Gio.NetworkService.prototype.get_protocol</a></li>
-<li class="links "><a href="Gio.NetworkService.get_scheme.html" title="Gio.NetworkService.prototype.get_scheme">Gio.NetworkService.prototype.get_scheme</a></li>
-<li class="links "><a href="Gio.NetworkService.get_service.html" title="Gio.NetworkService.prototype.get_service">Gio.NetworkService.prototype.get_service</a></li>
-<li class="links "><a href="Gio.NetworkService.set_scheme.html" title="Gio.NetworkService.prototype.set_scheme">Gio.NetworkService.prototype.set_scheme</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Properties</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.NetworkService-domain.html" title="Gio.NetworkService.domain">domain</a></li>
-<li class="links "><a href="Gio.NetworkService-protocol.html" title="Gio.NetworkService.protocol">protocol</a></li>
-<li class="links "><a href="Gio.NetworkService-scheme.html" title="Gio.NetworkService.scheme">scheme</a></li>
-<li class="links "><a href="Gio.NetworkService-service.html" title="Gio.NetworkService.service">service</a></li>
-</ul></div>
 </div></div>
 </div>
 <div class="sect sect-links" role="navigation">

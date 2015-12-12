@@ -13,102 +13,10 @@
 <div class="body">
 <div class="hgroup"><h1 class="title"><span class="title">GLib.Date</span></h1></div>
 <div class="region">
-<div class="contents">
-<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const GLib = imports.gi.GLib;
+<div class="contents"><div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const GLib = imports.gi.GLib;
 
-let date = new GLib.Date({
-    <span class="link"><a href="GLib.Date-julian_days.html" title="GLib.Date.julian_days">julian_days</a></span>: value
-    <span class="link"><a href="GLib.Date-julian.html" title="GLib.Date.julian">julian</a></span>: value
-    <span class="link"><a href="GLib.Date-dmy.html" title="GLib.Date.dmy">dmy</a></span>: value
-    <span class="link"><a href="GLib.Date-day.html" title="GLib.Date.day">day</a></span>: value
-    <span class="link"><a href="GLib.Date-month.html" title="GLib.Date.month">month</a></span>: value
-    <span class="link"><a href="GLib.Date-year.html" title="GLib.Date.year">year</a></span>: value
-});
-  </pre></div></div></div></div></div>
-<p class="p">Represents a day between January 1, Year 1 and a few thousand years in
-the future. None of its members should be accessed directly.</p>
-<p class="p">If the <span class="link"><a href="GLib.Date.html" title="GLib.Date">GLib.Date</a></span>-struct is obtained from <span class="link"><a href="GLib.Date.new.html" title="GLib.Date.new">GLib.Date.new</a></span>, it will be safe
-to mutate but invalid and thus not safe for calendrical computations.</p>
-<p class="p">If it's declared on the stack, it will contain garbage so must be
-initialized with <span class="link"><a href="GLib.Date.clear.html" title="GLib.Date.prototype.clear">GLib.Date.prototype.clear</a></span>. <span class="link"><a href="GLib.Date.clear.html" title="GLib.Date.prototype.clear">GLib.Date.prototype.clear</a></span> makes the date invalid
-but sane. An invalid date doesn't represent a day, it's "empty." A date
-becomes valid after you set it to a Julian day or you set a day, month,
-and year.</p>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="GLib.Date.new.html" title="GLib.Date.new">GLib.Date.new</a></li>
-<li class="links "><a href="GLib.Date.new_dmy.html" title="GLib.Date.new_dmy">GLib.Date.new_dmy</a></li>
-<li class="links "><a href="GLib.Date.new_julian.html" title="GLib.Date.new_julian">GLib.Date.new_julian</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="GLib.Date.add_days.html" title="GLib.Date.prototype.add_days">GLib.Date.prototype.add_days</a></li>
-<li class="links "><a href="GLib.Date.add_months.html" title="GLib.Date.prototype.add_months">GLib.Date.prototype.add_months</a></li>
-<li class="links "><a href="GLib.Date.add_years.html" title="GLib.Date.prototype.add_years">GLib.Date.prototype.add_years</a></li>
-<li class="links "><a href="GLib.Date.clamp.html" title="GLib.Date.prototype.clamp">GLib.Date.prototype.clamp</a></li>
-<li class="links "><a href="GLib.Date.clear.html" title="GLib.Date.prototype.clear">GLib.Date.prototype.clear</a></li>
-<li class="links "><a href="GLib.Date.compare.html" title="GLib.Date.prototype.compare">GLib.Date.prototype.compare</a></li>
-<li class="links "><a href="GLib.Date.days_between.html" title="GLib.Date.prototype.days_between">GLib.Date.prototype.days_between</a></li>
-<li class="links "><a href="GLib.Date.free.html" title="GLib.Date.prototype.free">GLib.Date.prototype.free</a></li>
-<li class="links "><a href="GLib.Date.get_day.html" title="GLib.Date.prototype.get_day">GLib.Date.prototype.get_day</a></li>
-<li class="links "><a href="GLib.Date.get_day_of_year.html" title="GLib.Date.prototype.get_day_of_year">GLib.Date.prototype.get_day_of_year</a></li>
-<li class="links "><a href="GLib.Date.get_iso8601_week_of_year.html" title="GLib.Date.prototype.get_iso8601_week_of_year">GLib.Date.prototype.get_iso8601_week_of_year</a></li>
-<li class="links "><a href="GLib.Date.get_julian.html" title="GLib.Date.prototype.get_julian">GLib.Date.prototype.get_julian</a></li>
-<li class="links "><a href="GLib.Date.get_monday_week_of_year.html" title="GLib.Date.prototype.get_monday_week_of_year">GLib.Date.prototype.get_monday_week_of_year</a></li>
-<li class="links "><a href="GLib.Date.get_month.html" title="GLib.Date.prototype.get_month">GLib.Date.prototype.get_month</a></li>
-<li class="links "><a href="GLib.Date.get_sunday_week_of_year.html" title="GLib.Date.prototype.get_sunday_week_of_year">GLib.Date.prototype.get_sunday_week_of_year</a></li>
-<li class="links "><a href="GLib.Date.get_weekday.html" title="GLib.Date.prototype.get_weekday">GLib.Date.prototype.get_weekday</a></li>
-<li class="links "><a href="GLib.Date.get_year.html" title="GLib.Date.prototype.get_year">GLib.Date.prototype.get_year</a></li>
-<li class="links "><a href="GLib.Date.is_first_of_month.html" title="GLib.Date.prototype.is_first_of_month">GLib.Date.prototype.is_first_of_month</a></li>
-<li class="links "><a href="GLib.Date.is_last_of_month.html" title="GLib.Date.prototype.is_last_of_month">GLib.Date.prototype.is_last_of_month</a></li>
-<li class="links "><a href="GLib.Date.order.html" title="GLib.Date.prototype.order">GLib.Date.prototype.order</a></li>
-<li class="links "><a href="GLib.Date.set_day.html" title="GLib.Date.prototype.set_day">GLib.Date.prototype.set_day</a></li>
-<li class="links "><a href="GLib.Date.set_dmy.html" title="GLib.Date.prototype.set_dmy">GLib.Date.prototype.set_dmy</a></li>
-<li class="links "><a href="GLib.Date.set_julian.html" title="GLib.Date.prototype.set_julian">GLib.Date.prototype.set_julian</a></li>
-<li class="links "><a href="GLib.Date.set_month.html" title="GLib.Date.prototype.set_month">GLib.Date.prototype.set_month</a></li>
-<li class="links "><a href="GLib.Date.set_parse.html" title="GLib.Date.prototype.set_parse">GLib.Date.prototype.set_parse</a></li>
-<li class="links "><a href="GLib.Date.set_time.html" title="GLib.Date.prototype.set_time">GLib.Date.prototype.set_time</a></li>
-<li class="links "><a href="GLib.Date.set_time_t.html" title="GLib.Date.prototype.set_time_t">GLib.Date.prototype.set_time_t</a></li>
-<li class="links "><a href="GLib.Date.set_time_val.html" title="GLib.Date.prototype.set_time_val">GLib.Date.prototype.set_time_val</a></li>
-<li class="links "><a href="GLib.Date.set_year.html" title="GLib.Date.prototype.set_year">GLib.Date.prototype.set_year</a></li>
-<li class="links "><a href="GLib.Date.subtract_days.html" title="GLib.Date.prototype.subtract_days">GLib.Date.prototype.subtract_days</a></li>
-<li class="links "><a href="GLib.Date.subtract_months.html" title="GLib.Date.prototype.subtract_months">GLib.Date.prototype.subtract_months</a></li>
-<li class="links "><a href="GLib.Date.subtract_years.html" title="GLib.Date.prototype.subtract_years">GLib.Date.prototype.subtract_years</a></li>
-<li class="links "><a href="GLib.Date.to_struct_tm.html" title="GLib.Date.prototype.to_struct_tm">GLib.Date.prototype.to_struct_tm</a></li>
-<li class="links "><a href="GLib.Date.valid.html" title="GLib.Date.prototype.valid">GLib.Date.prototype.valid</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Static Functions</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="GLib.Date.get_days_in_month.html" title="GLib.Date.get_days_in_month">GLib.Date.get_days_in_month</a></li>
-<li class="links "><a href="GLib.Date.get_monday_weeks_in_year.html" title="GLib.Date.get_monday_weeks_in_year">GLib.Date.get_monday_weeks_in_year</a></li>
-<li class="links "><a href="GLib.Date.get_sunday_weeks_in_year.html" title="GLib.Date.get_sunday_weeks_in_year">GLib.Date.get_sunday_weeks_in_year</a></li>
-<li class="links "><a href="GLib.Date.is_leap_year.html" title="GLib.Date.is_leap_year">GLib.Date.is_leap_year</a></li>
-<li class="links "><a href="GLib.Date.strftime.html" title="GLib.Date.strftime">GLib.Date.strftime</a></li>
-<li class="links "><a href="GLib.Date.valid_day.html" title="GLib.Date.valid_day">GLib.Date.valid_day</a></li>
-<li class="links "><a href="GLib.Date.valid_dmy.html" title="GLib.Date.valid_dmy">GLib.Date.valid_dmy</a></li>
-<li class="links "><a href="GLib.Date.valid_julian.html" title="GLib.Date.valid_julian">GLib.Date.valid_julian</a></li>
-<li class="links "><a href="GLib.Date.valid_month.html" title="GLib.Date.valid_month">GLib.Date.valid_month</a></li>
-<li class="links "><a href="GLib.Date.valid_weekday.html" title="GLib.Date.valid_weekday">GLib.Date.valid_weekday</a></li>
-<li class="links "><a href="GLib.Date.valid_year.html" title="GLib.Date.valid_year">GLib.Date.valid_year</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Fields</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="GLib.Date-day.html" title="GLib.Date.day">day</a></li>
-<li class="links "><a href="GLib.Date-dmy.html" title="GLib.Date.dmy">dmy</a></li>
-<li class="links "><a href="GLib.Date-julian.html" title="GLib.Date.julian">julian</a></li>
-<li class="links "><a href="GLib.Date-julian_days.html" title="GLib.Date.julian_days">julian_days</a></li>
-<li class="links "><a href="GLib.Date-month.html" title="GLib.Date.month">month</a></li>
-<li class="links "><a href="GLib.Date-year.html" title="GLib.Date.year">year</a></li>
-</ul></div>
-</div></div>
-</div>
+let date = new GLib.Date();
+  </pre></div></div></div></div></div></div>
 <div class="sect sect-links" role="navigation">
 <div class="hgroup"></div>
 <div class="contents"><div class="links guidelinks"><div class="inner">

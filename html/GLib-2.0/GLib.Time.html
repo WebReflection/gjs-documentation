@@ -13,23 +13,7 @@
 <div class="body">
 <div class="hgroup"><h1 class="title"><span class="title">GLib.Time</span></h1></div>
 <div class="region">
-<div class="contents">
-<p class="p">Simply a replacement for time_t. It has been deprecated
-since it is not equivalent to time_t on 64-bit platforms
-with a 64-bit time_t. Unrelated to <span class="link"><a href="GLib.Timer.html" title="GLib.Timer">GLib.Timer</a></span>.</p>
-<p class="p">Note that <span class="link"><a href="GLib.Time.html" title="GLib.Time">GLib.Time</a></span> is defined to always be a 32-bit integer,
-unlike time_t which may be 64-bit on some systems. Therefore,
-<span class="link"><a href="GLib.Time.html" title="GLib.Time">GLib.Time</a></span> will overflow in the year 2038, and you cannot use the
-address of a <span class="link"><a href="GLib.Time.html" title="GLib.Time">GLib.Time</a></span> variable as argument to the UNIX time()
-function.</p>
-<p class="p">Instead, do the following:
-|[&lt;!-- language="C" --&gt;
-time_t ttime;
-GTime gtime;</p>
-<p class="p">time (&amp;ttime);
-gtime = (GTime)ttime;
-]|</p>
-</div>
+<div class="contents"></div>
 <div class="sect sect-links" role="navigation">
 <div class="hgroup"></div>
 <div class="contents"><div class="links guidelinks"><div class="inner">

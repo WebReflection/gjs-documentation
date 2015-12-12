@@ -18,12 +18,6 @@
 
 let inputStream = new Gio.InputStream();
   </pre></div></div></div></div></div>
-<p class="p"><span class="link"><a href="Gio.InputStream.html" title="Gio.InputStream">Gio.InputStream</a></span> has functions to read from a stream (<span class="link"><a href="Gio.InputStream.read.html" title="Gio.InputStream.prototype.read">Gio.InputStream.prototype.read</a></span>),
-to close a stream (<span class="link"><a href="Gio.InputStream.close.html" title="Gio.InputStream.prototype.close">Gio.InputStream.prototype.close</a></span>) and to skip some content
-(<span class="link"><a href="Gio.InputStream.skip.html" title="Gio.InputStream.prototype.skip">Gio.InputStream.prototype.skip</a></span>).</p>
-<p class="p">To copy the content of an input stream to an output stream without
-manually handling the reads and writes, use <span class="link"><a href="Gio.OutputStream.splice.html" title="Gio.OutputStream.prototype.splice">Gio.OutputStream.prototype.splice</a></span>.</p>
-<p class="p">All of these functions have async variants too.</p>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
 <div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
@@ -35,42 +29,6 @@ manually handling the reads and writes, use <span class="link"><a href="Gio.Outp
         <span class="code">Gio.InputStream</span>
       </div></li></ul>
 </li></ul></div></div></div></div></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.InputStream.clear_pending.html" title="Gio.InputStream.prototype.clear_pending">Gio.InputStream.prototype.clear_pending</a></li>
-<li class="links "><a href="Gio.InputStream.close.html" title="Gio.InputStream.prototype.close">Gio.InputStream.prototype.close</a></li>
-<li class="links "><a href="Gio.InputStream.close_async.html" title="Gio.InputStream.prototype.close_async">Gio.InputStream.prototype.close_async</a></li>
-<li class="links "><a href="Gio.InputStream.close_finish.html" title="Gio.InputStream.prototype.close_finish">Gio.InputStream.prototype.close_finish</a></li>
-<li class="links "><a href="Gio.InputStream.has_pending.html" title="Gio.InputStream.prototype.has_pending">Gio.InputStream.prototype.has_pending</a></li>
-<li class="links "><a href="Gio.InputStream.is_closed.html" title="Gio.InputStream.prototype.is_closed">Gio.InputStream.prototype.is_closed</a></li>
-<li class="links "><a href="Gio.InputStream.read.html" title="Gio.InputStream.prototype.read">Gio.InputStream.prototype.read</a></li>
-<li class="links "><a href="Gio.InputStream.read_all.html" title="Gio.InputStream.prototype.read_all">Gio.InputStream.prototype.read_all</a></li>
-<li class="links "><a href="Gio.InputStream.read_async.html" title="Gio.InputStream.prototype.read_async">Gio.InputStream.prototype.read_async</a></li>
-<li class="links "><a href="Gio.InputStream.read_bytes.html" title="Gio.InputStream.prototype.read_bytes">Gio.InputStream.prototype.read_bytes</a></li>
-<li class="links "><a href="Gio.InputStream.read_bytes_async.html" title="Gio.InputStream.prototype.read_bytes_async">Gio.InputStream.prototype.read_bytes_async</a></li>
-<li class="links "><a href="Gio.InputStream.read_bytes_finish.html" title="Gio.InputStream.prototype.read_bytes_finish">Gio.InputStream.prototype.read_bytes_finish</a></li>
-<li class="links "><a href="Gio.InputStream.read_finish.html" title="Gio.InputStream.prototype.read_finish">Gio.InputStream.prototype.read_finish</a></li>
-<li class="links "><a href="Gio.InputStream.set_pending.html" title="Gio.InputStream.prototype.set_pending">Gio.InputStream.prototype.set_pending</a></li>
-<li class="links "><a href="Gio.InputStream.skip.html" title="Gio.InputStream.prototype.skip">Gio.InputStream.prototype.skip</a></li>
-<li class="links "><a href="Gio.InputStream.skip_async.html" title="Gio.InputStream.prototype.skip_async">Gio.InputStream.prototype.skip_async</a></li>
-<li class="links "><a href="Gio.InputStream.skip_finish.html" title="Gio.InputStream.prototype.skip_finish">Gio.InputStream.prototype.skip_finish</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Virtual functions</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.InputStream-close_async.html" title="Gio.InputStream::close_async">Gio.InputStream::close_async</a></li>
-<li class="links "><a href="Gio.InputStream-close_finish.html" title="Gio.InputStream::close_finish">Gio.InputStream::close_finish</a></li>
-<li class="links "><a href="Gio.InputStream-close_fn.html" title="Gio.InputStream::close_fn">Gio.InputStream::close_fn</a></li>
-<li class="links "><a href="Gio.InputStream-read_async.html" title="Gio.InputStream::read_async">Gio.InputStream::read_async</a></li>
-<li class="links "><a href="Gio.InputStream-read_finish.html" title="Gio.InputStream::read_finish">Gio.InputStream::read_finish</a></li>
-<li class="links "><a href="Gio.InputStream-read_fn.html" title="Gio.InputStream::read_fn">Gio.InputStream::read_fn</a></li>
-<li class="links "><a href="Gio.InputStream-skip.html" title="Gio.InputStream::skip">Gio.InputStream::skip</a></li>
-<li class="links "><a href="Gio.InputStream-skip_async.html" title="Gio.InputStream::skip_async">Gio.InputStream::skip_async</a></li>
-<li class="links "><a href="Gio.InputStream-skip_finish.html" title="Gio.InputStream::skip_finish">Gio.InputStream::skip_finish</a></li>
-</ul></div>
 </div></div>
 </div>
 <div class="sect sect-links" role="navigation">

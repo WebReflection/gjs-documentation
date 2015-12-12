@@ -13,70 +13,10 @@
 <div class="body">
 <div class="hgroup"><h1 class="title"><span class="title">GLib.KeyFile</span></h1></div>
 <div class="region">
-<div class="contents">
-<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const GLib = imports.gi.GLib;
+<div class="contents"><div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const GLib = imports.gi.GLib;
 
 let keyFile = new GLib.KeyFile();
-  </pre></div></div></div></div></div>
-<p class="p">The GKeyFile struct contains only private data
-and should not be accessed directly.</p>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
-<div class="region"><ul><li class="links "><a href="GLib.KeyFile.new.html" title="GLib.KeyFile.new">GLib.KeyFile.new</a></li></ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="GLib.KeyFile.get_boolean.html" title="GLib.KeyFile.prototype.get_boolean">GLib.KeyFile.prototype.get_boolean</a></li>
-<li class="links "><a href="GLib.KeyFile.get_boolean_list.html" title="GLib.KeyFile.prototype.get_boolean_list">GLib.KeyFile.prototype.get_boolean_list</a></li>
-<li class="links "><a href="GLib.KeyFile.get_comment.html" title="GLib.KeyFile.prototype.get_comment">GLib.KeyFile.prototype.get_comment</a></li>
-<li class="links "><a href="GLib.KeyFile.get_double.html" title="GLib.KeyFile.prototype.get_double">GLib.KeyFile.prototype.get_double</a></li>
-<li class="links "><a href="GLib.KeyFile.get_double_list.html" title="GLib.KeyFile.prototype.get_double_list">GLib.KeyFile.prototype.get_double_list</a></li>
-<li class="links "><a href="GLib.KeyFile.get_groups.html" title="GLib.KeyFile.prototype.get_groups">GLib.KeyFile.prototype.get_groups</a></li>
-<li class="links "><a href="GLib.KeyFile.get_int64.html" title="GLib.KeyFile.prototype.get_int64">GLib.KeyFile.prototype.get_int64</a></li>
-<li class="links "><a href="GLib.KeyFile.get_integer.html" title="GLib.KeyFile.prototype.get_integer">GLib.KeyFile.prototype.get_integer</a></li>
-<li class="links "><a href="GLib.KeyFile.get_integer_list.html" title="GLib.KeyFile.prototype.get_integer_list">GLib.KeyFile.prototype.get_integer_list</a></li>
-<li class="links "><a href="GLib.KeyFile.get_keys.html" title="GLib.KeyFile.prototype.get_keys">GLib.KeyFile.prototype.get_keys</a></li>
-<li class="links "><a href="GLib.KeyFile.get_locale_string.html" title="GLib.KeyFile.prototype.get_locale_string">GLib.KeyFile.prototype.get_locale_string</a></li>
-<li class="links "><a href="GLib.KeyFile.get_locale_string_list.html" title="GLib.KeyFile.prototype.get_locale_string_list">GLib.KeyFile.prototype.get_locale_string_list</a></li>
-<li class="links "><a href="GLib.KeyFile.get_start_group.html" title="GLib.KeyFile.prototype.get_start_group">GLib.KeyFile.prototype.get_start_group</a></li>
-<li class="links "><a href="GLib.KeyFile.get_string.html" title="GLib.KeyFile.prototype.get_string">GLib.KeyFile.prototype.get_string</a></li>
-<li class="links "><a href="GLib.KeyFile.get_string_list.html" title="GLib.KeyFile.prototype.get_string_list">GLib.KeyFile.prototype.get_string_list</a></li>
-<li class="links "><a href="GLib.KeyFile.get_uint64.html" title="GLib.KeyFile.prototype.get_uint64">GLib.KeyFile.prototype.get_uint64</a></li>
-<li class="links "><a href="GLib.KeyFile.get_value.html" title="GLib.KeyFile.prototype.get_value">GLib.KeyFile.prototype.get_value</a></li>
-<li class="links "><a href="GLib.KeyFile.has_group.html" title="GLib.KeyFile.prototype.has_group">GLib.KeyFile.prototype.has_group</a></li>
-<li class="links "><a href="GLib.KeyFile.load_from_data.html" title="GLib.KeyFile.prototype.load_from_data">GLib.KeyFile.prototype.load_from_data</a></li>
-<li class="links "><a href="GLib.KeyFile.load_from_data_dirs.html" title="GLib.KeyFile.prototype.load_from_data_dirs">GLib.KeyFile.prototype.load_from_data_dirs</a></li>
-<li class="links "><a href="GLib.KeyFile.load_from_dirs.html" title="GLib.KeyFile.prototype.load_from_dirs">GLib.KeyFile.prototype.load_from_dirs</a></li>
-<li class="links "><a href="GLib.KeyFile.load_from_file.html" title="GLib.KeyFile.prototype.load_from_file">GLib.KeyFile.prototype.load_from_file</a></li>
-<li class="links "><a href="GLib.KeyFile.remove_comment.html" title="GLib.KeyFile.prototype.remove_comment">GLib.KeyFile.prototype.remove_comment</a></li>
-<li class="links "><a href="GLib.KeyFile.remove_group.html" title="GLib.KeyFile.prototype.remove_group">GLib.KeyFile.prototype.remove_group</a></li>
-<li class="links "><a href="GLib.KeyFile.remove_key.html" title="GLib.KeyFile.prototype.remove_key">GLib.KeyFile.prototype.remove_key</a></li>
-<li class="links "><a href="GLib.KeyFile.save_to_file.html" title="GLib.KeyFile.prototype.save_to_file">GLib.KeyFile.prototype.save_to_file</a></li>
-<li class="links "><a href="GLib.KeyFile.set_boolean.html" title="GLib.KeyFile.prototype.set_boolean">GLib.KeyFile.prototype.set_boolean</a></li>
-<li class="links "><a href="GLib.KeyFile.set_boolean_list.html" title="GLib.KeyFile.prototype.set_boolean_list">GLib.KeyFile.prototype.set_boolean_list</a></li>
-<li class="links "><a href="GLib.KeyFile.set_comment.html" title="GLib.KeyFile.prototype.set_comment">GLib.KeyFile.prototype.set_comment</a></li>
-<li class="links "><a href="GLib.KeyFile.set_double.html" title="GLib.KeyFile.prototype.set_double">GLib.KeyFile.prototype.set_double</a></li>
-<li class="links "><a href="GLib.KeyFile.set_double_list.html" title="GLib.KeyFile.prototype.set_double_list">GLib.KeyFile.prototype.set_double_list</a></li>
-<li class="links "><a href="GLib.KeyFile.set_int64.html" title="GLib.KeyFile.prototype.set_int64">GLib.KeyFile.prototype.set_int64</a></li>
-<li class="links "><a href="GLib.KeyFile.set_integer.html" title="GLib.KeyFile.prototype.set_integer">GLib.KeyFile.prototype.set_integer</a></li>
-<li class="links "><a href="GLib.KeyFile.set_integer_list.html" title="GLib.KeyFile.prototype.set_integer_list">GLib.KeyFile.prototype.set_integer_list</a></li>
-<li class="links "><a href="GLib.KeyFile.set_list_separator.html" title="GLib.KeyFile.prototype.set_list_separator">GLib.KeyFile.prototype.set_list_separator</a></li>
-<li class="links "><a href="GLib.KeyFile.set_locale_string.html" title="GLib.KeyFile.prototype.set_locale_string">GLib.KeyFile.prototype.set_locale_string</a></li>
-<li class="links "><a href="GLib.KeyFile.set_locale_string_list.html" title="GLib.KeyFile.prototype.set_locale_string_list">GLib.KeyFile.prototype.set_locale_string_list</a></li>
-<li class="links "><a href="GLib.KeyFile.set_string.html" title="GLib.KeyFile.prototype.set_string">GLib.KeyFile.prototype.set_string</a></li>
-<li class="links "><a href="GLib.KeyFile.set_string_list.html" title="GLib.KeyFile.prototype.set_string_list">GLib.KeyFile.prototype.set_string_list</a></li>
-<li class="links "><a href="GLib.KeyFile.set_uint64.html" title="GLib.KeyFile.prototype.set_uint64">GLib.KeyFile.prototype.set_uint64</a></li>
-<li class="links "><a href="GLib.KeyFile.set_value.html" title="GLib.KeyFile.prototype.set_value">GLib.KeyFile.prototype.set_value</a></li>
-<li class="links "><a href="GLib.KeyFile.to_data.html" title="GLib.KeyFile.prototype.to_data">GLib.KeyFile.prototype.to_data</a></li>
-<li class="links "><a href="GLib.KeyFile.unref.html" title="GLib.KeyFile.prototype.unref">GLib.KeyFile.prototype.unref</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Static Functions</span></h2></div>
-<div class="region"><ul><li class="links "><a href="GLib.KeyFile.error_quark.html" title="GLib.KeyFile.error_quark">GLib.KeyFile.error_quark</a></li></ul></div>
-</div></div>
-</div>
+  </pre></div></div></div></div></div></div>
 <div class="sect sect-links" role="navigation">
 <div class="hgroup"></div>
 <div class="contents"><div class="links guidelinks"><div class="inner">

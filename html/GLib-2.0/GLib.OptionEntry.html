@@ -13,31 +13,10 @@
 <div class="body">
 <div class="hgroup"><h1 class="title"><span class="title">GLib.OptionEntry</span></h1></div>
 <div class="region">
-<div class="contents">
-<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const GLib = imports.gi.GLib;
+<div class="contents"><div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const GLib = imports.gi.GLib;
 
-let optionEntry = new GLib.OptionEntry({
-    <span class="link"><a href="GLib.OptionEntry-short_name.html" title="GLib.OptionEntry.short_name">short_name</a></span>: value
-    <span class="link"><a href="GLib.OptionEntry-flags.html" title="GLib.OptionEntry.flags">flags</a></span>: value
-    <span class="link"><a href="GLib.OptionEntry-arg.html" title="GLib.OptionEntry.arg">arg</a></span>: value
-});
-  </pre></div></div></div></div></div>
-<p class="p">A &lt;structname&gt;GOptionEntry&lt;/structname&gt; defines a single option.
-To have an effect, they must be added to a <span class="link"><a href="GLib.OptionGroup.html" title="GLib.OptionGroup">GLib.OptionGroup</a></span> with
-<span class="link"><a href="GLib.OptionContext.add_main_entries.html" title="GLib.OptionContext.prototype.add_main_entries">GLib.OptionContext.prototype.add_main_entries</a></span> or <span class="link"><a href="GLib.OptionGroup.add_entries.html" title="GLib.OptionGroup.prototype.add_entries">GLib.OptionGroup.prototype.add_entries</a></span>.</p>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Fields</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="GLib.OptionEntry-arg.html" title="GLib.OptionEntry.arg">arg</a></li>
-<li class="links "><a href="GLib.OptionEntry-arg_data.html" title="GLib.OptionEntry.arg_data">arg_data</a></li>
-<li class="links "><a href="GLib.OptionEntry-arg_description.html" title="GLib.OptionEntry.arg_description">arg_description</a></li>
-<li class="links "><a href="GLib.OptionEntry-description.html" title="GLib.OptionEntry.description">description</a></li>
-<li class="links "><a href="GLib.OptionEntry-flags.html" title="GLib.OptionEntry.flags">flags</a></li>
-<li class="links "><a href="GLib.OptionEntry-long_name.html" title="GLib.OptionEntry.long_name">long_name</a></li>
-<li class="links "><a href="GLib.OptionEntry-short_name.html" title="GLib.OptionEntry.short_name">short_name</a></li>
-</ul></div>
-</div></div>
-</div>
+let optionEntry = new GLib.OptionEntry();
+  </pre></div></div></div></div></div></div>
 <div class="sect sect-links" role="navigation">
 <div class="hgroup"></div>
 <div class="contents"><div class="links guidelinks"><div class="inner">

@@ -18,45 +18,13 @@
 
 let remote_action_group = new Gio.RemoteActionGroup();
   </pre></div></div></div></div></div>
-<p class="p">The GRemoteActionGroup interface is implemented by <span class="link"><a href="Gio.ActionGroup.html" title="Gio.ActionGroup">Gio.ActionGroup</a></span>
-instances that either transmit action invocations to other processes
-or receive action invocations in the local process from other
-processes.</p>
-<p class="p">The interface has `_full` variants of the two
-methods on <span class="link"><a href="Gio.ActionGroup.html" title="Gio.ActionGroup">Gio.ActionGroup</a></span> used to activate actions:
-<span class="link"><a href="Gio.ActionGroup.activate_action.html" title="Gio.ActionGroup.prototype.activate_action">Gio.ActionGroup.prototype.activate_action</a></span> and
-<span class="link"><a href="Gio.ActionGroup.change_action_state.html" title="Gio.ActionGroup.prototype.change_action_state">Gio.ActionGroup.prototype.change_action_state</a></span>. These variants allow a
-"platform data" <span class="link"><a href="../GLib-2.0/GLib.Variant.html" title="../GLib-2.0/GLib.Variant.html">GLib.Variant</a></span> to be specified: a dictionary providing
-context for the action invocation (for example: timestamps, startup
-notification IDs, etc).</p>
-<p class="p"><span class="link"><a href="Gio.DBusActionGroup.html" title="Gio.DBusActionGroup">Gio.DBusActionGroup</a></span> implements <span class="link"><a href="Gio.RemoteActionGroup.html" title="Gio.RemoteActionGroup">Gio.RemoteActionGroup</a></span>.  This provides a
-mechanism to send platform data for action invocations over D-Bus.</p>
-<p class="p">Additionally, <span class="link"><a href="Gio.DBusConnection.export_action_group.html" title="Gio.DBusConnection.prototype.export_action_group">Gio.DBusConnection.prototype.export_action_group</a></span> will check if
-the exported <span class="link"><a href="Gio.ActionGroup.html" title="Gio.ActionGroup">Gio.ActionGroup</a></span> implements <span class="link"><a href="Gio.RemoteActionGroup.html" title="Gio.RemoteActionGroup">Gio.RemoteActionGroup</a></span> and use the
-`_full` variants of the calls if available.  This
-provides a mechanism by which to receive platform data for action
-invocations that arrive by way of D-Bus.</p>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Prerequisites</span></h2></div>
-<div class="region"><div class="contents"><p class="p">RemoteActionGroup requires Gio.ActionGroup</p></div></div>
+<div class="region"><div class="contents"><p class="p">RemoteActionGroup requires GObject.Object</p></div></div>
 </div></div>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Known Implementations</span></h2></div>
-<div class="region"><div class="contents"><p class="p">RemoteActionGroup is implemented by DBusActionGroup</p></div></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.RemoteActionGroup.activate_action_full.html" title="Gio.RemoteActionGroup.prototype.activate_action_full">Gio.RemoteActionGroup.prototype.activate_action_full</a></li>
-<li class="links "><a href="Gio.RemoteActionGroup.change_action_state_full.html" title="Gio.RemoteActionGroup.prototype.change_action_state_full">Gio.RemoteActionGroup.prototype.change_action_state_full</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Virtual functions</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.RemoteActionGroup-activate_action_full.html" title="Gio.RemoteActionGroup::activate_action_full">Gio.RemoteActionGroup::activate_action_full</a></li>
-<li class="links "><a href="Gio.RemoteActionGroup-change_action_state_full.html" title="Gio.RemoteActionGroup::change_action_state_full">Gio.RemoteActionGroup::change_action_state_full</a></li>
-</ul></div>
+<div class="region"><div class="contents"><p class="p">None</p></div></div>
 </div></div>
 </div>
 <div class="sect sect-links" role="navigation">

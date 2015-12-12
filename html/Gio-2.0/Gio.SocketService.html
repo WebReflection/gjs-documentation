@@ -18,29 +18,6 @@
 
 let socketService = new Gio.SocketService();
   </pre></div></div></div></div></div>
-<p class="p">A <span class="link"><a href="Gio.SocketService.html" title="Gio.SocketService">Gio.SocketService</a></span> is an object that represents a service that
-is provided to the network or over local sockets.  When a new
-connection is made to the service the <span class="link"><a href="Gio.SocketService-incoming.html" title="Gio.SocketService::incoming">Gio.SocketService::incoming</a></span>
-signal is emitted.</p>
-<p class="p">A <span class="link"><a href="Gio.SocketService.html" title="Gio.SocketService">Gio.SocketService</a></span> is a subclass of <span class="link"><a href="Gio.SocketListener.html" title="Gio.SocketListener">Gio.SocketListener</a></span> and you need
-to add the addresses you want to accept connections on with the
-<span class="link"><a href="Gio.SocketListener.html" title="Gio.SocketListener">Gio.SocketListener</a></span> APIs.</p>
-<p class="p">There are two options for implementing a network service based on
-<span class="link"><a href="Gio.SocketService.html" title="Gio.SocketService">Gio.SocketService</a></span>. The first is to create the service using
-<span class="link"><a href="Gio.SocketService.new.html" title="Gio.SocketService.new">Gio.SocketService.new</a></span> and to connect to the <span class="link"><a href="Gio.SocketService-incoming.html" title="Gio.SocketService::incoming">Gio.SocketService::incoming</a></span>
-signal. The second is to subclass <span class="link"><a href="Gio.SocketService.html" title="Gio.SocketService">Gio.SocketService</a></span> and override the
-default signal handler implementation.</p>
-<p class="p">In either case, the handler must immediately return, or else it
-will block additional incoming connections from being serviced.
-If you are interested in writing connection handlers that contain
-blocking code then see <span class="link"><a href="Gio.ThreadedSocketService.html" title="Gio.ThreadedSocketService">Gio.ThreadedSocketService</a></span>.</p>
-<p class="p">The socket service runs on the main loop of the
-[thread-default context][g-main-context-push-thread-default-context]
-of the thread it is created in, and is not
-threadsafe in general. However, the calls to start and stop the
-service are thread-safe so these can be used from threads that
-handle incoming clients.</p>
-<p class="p">Since 2.22</p>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
 <div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
@@ -58,22 +35,6 @@ handle incoming clients.</p>
       </div></li></ul>
 </li></ul>
 </li></ul></div></div></div></div></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
-<div class="region"><ul><li class="links "><a href="Gio.SocketService.new.html" title="Gio.SocketService.new">Gio.SocketService.new</a></li></ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.SocketService.is_active.html" title="Gio.SocketService.prototype.is_active">Gio.SocketService.prototype.is_active</a></li>
-<li class="links "><a href="Gio.SocketService.start.html" title="Gio.SocketService.prototype.start">Gio.SocketService.prototype.start</a></li>
-<li class="links "><a href="Gio.SocketService.stop.html" title="Gio.SocketService.prototype.stop">Gio.SocketService.prototype.stop</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Signals</span></h2></div>
-<div class="region"><ul><li class="links "><a href="Gio.SocketService-incoming.html" title="Gio.SocketService::incoming">incoming</a></li></ul></div>
 </div></div>
 </div>
 <div class="sect sect-links" role="navigation">

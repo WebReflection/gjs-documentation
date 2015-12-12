@@ -18,28 +18,6 @@
 
 let drive = new Gio.Drive();
   </pre></div></div></div></div></div>
-<p class="p"><span class="link"><a href="Gio.Drive.html" title="Gio.Drive">Gio.Drive</a></span> - this represent a piece of hardware connected to the machine.
-It's generally only created for removable hardware or hardware with
-removable media.</p>
-<p class="p"><span class="link"><a href="Gio.Drive.html" title="Gio.Drive">Gio.Drive</a></span> is a container class for <span class="link"><a href="Gio.Volume.html" title="Gio.Volume">Gio.Volume</a></span> objects that stem from
-the same piece of media. As such, <span class="link"><a href="Gio.Drive.html" title="Gio.Drive">Gio.Drive</a></span> abstracts a drive with
-(or without) removable media and provides operations for querying
-whether media is available, determining whether media change is
-automatically detected and ejecting the media.</p>
-<p class="p">If the <span class="link"><a href="Gio.Drive.html" title="Gio.Drive">Gio.Drive</a></span> reports that media isn't automatically detected, one
-can poll for media; typically one should not do this periodically
-as a poll for media operation is potententially expensive and may
-spin up the drive creating noise.</p>
-<p class="p"><span class="link"><a href="Gio.Drive.html" title="Gio.Drive">Gio.Drive</a></span> supports starting and stopping drives with authentication
-support for the former. This can be used to support a diverse set
-of use cases including connecting/disconnecting iSCSI devices,
-powering down external disk enclosures and starting/stopping
-multi-disk devices such as RAID devices. Note that the actual
-semantics and side-effects of starting/stopping a <span class="link"><a href="Gio.Drive.html" title="Gio.Drive">Gio.Drive</a></span> may vary
-according to implementation. To choose the correct verbs in e.g. a
-file manager, use <span class="link"><a href="Gio.Drive.get_start_stop_type.html" title="Gio.Drive.prototype.get_start_stop_type">Gio.Drive.prototype.get_start_stop_type</a></span>.</p>
-<p class="p">For porting from GnomeVFS note that there is no equivalent of
-<span class="link"><a href="Gio.Drive.html" title="Gio.Drive">Gio.Drive</a></span> in that API.</p>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Prerequisites</span></h2></div>
 <div class="region"><div class="contents"><p class="p">Drive requires GObject.Object</p></div></div>
@@ -47,81 +25,6 @@ file manager, use <span class="link"><a href="Gio.Drive.get_start_stop_type.html
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Known Implementations</span></h2></div>
 <div class="region"><div class="contents"><p class="p">None</p></div></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.Drive.can_eject.html" title="Gio.Drive.prototype.can_eject">Gio.Drive.prototype.can_eject</a></li>
-<li class="links "><a href="Gio.Drive.can_poll_for_media.html" title="Gio.Drive.prototype.can_poll_for_media">Gio.Drive.prototype.can_poll_for_media</a></li>
-<li class="links "><a href="Gio.Drive.can_start.html" title="Gio.Drive.prototype.can_start">Gio.Drive.prototype.can_start</a></li>
-<li class="links "><a href="Gio.Drive.can_start_degraded.html" title="Gio.Drive.prototype.can_start_degraded">Gio.Drive.prototype.can_start_degraded</a></li>
-<li class="links "><a href="Gio.Drive.can_stop.html" title="Gio.Drive.prototype.can_stop">Gio.Drive.prototype.can_stop</a></li>
-<li class="links "><a href="Gio.Drive.eject.html" title="Gio.Drive.prototype.eject">Gio.Drive.prototype.eject</a></li>
-<li class="links "><a href="Gio.Drive.eject_finish.html" title="Gio.Drive.prototype.eject_finish">Gio.Drive.prototype.eject_finish</a></li>
-<li class="links "><a href="Gio.Drive.eject_with_operation.html" title="Gio.Drive.prototype.eject_with_operation">Gio.Drive.prototype.eject_with_operation</a></li>
-<li class="links "><a href="Gio.Drive.eject_with_operation_finish.html" title="Gio.Drive.prototype.eject_with_operation_finish">Gio.Drive.prototype.eject_with_operation_finish</a></li>
-<li class="links "><a href="Gio.Drive.enumerate_identifiers.html" title="Gio.Drive.prototype.enumerate_identifiers">Gio.Drive.prototype.enumerate_identifiers</a></li>
-<li class="links "><a href="Gio.Drive.get_icon.html" title="Gio.Drive.prototype.get_icon">Gio.Drive.prototype.get_icon</a></li>
-<li class="links "><a href="Gio.Drive.get_identifier.html" title="Gio.Drive.prototype.get_identifier">Gio.Drive.prototype.get_identifier</a></li>
-<li class="links "><a href="Gio.Drive.get_name.html" title="Gio.Drive.prototype.get_name">Gio.Drive.prototype.get_name</a></li>
-<li class="links "><a href="Gio.Drive.get_sort_key.html" title="Gio.Drive.prototype.get_sort_key">Gio.Drive.prototype.get_sort_key</a></li>
-<li class="links "><a href="Gio.Drive.get_start_stop_type.html" title="Gio.Drive.prototype.get_start_stop_type">Gio.Drive.prototype.get_start_stop_type</a></li>
-<li class="links "><a href="Gio.Drive.get_symbolic_icon.html" title="Gio.Drive.prototype.get_symbolic_icon">Gio.Drive.prototype.get_symbolic_icon</a></li>
-<li class="links "><a href="Gio.Drive.get_volumes.html" title="Gio.Drive.prototype.get_volumes">Gio.Drive.prototype.get_volumes</a></li>
-<li class="links "><a href="Gio.Drive.has_media.html" title="Gio.Drive.prototype.has_media">Gio.Drive.prototype.has_media</a></li>
-<li class="links "><a href="Gio.Drive.has_volumes.html" title="Gio.Drive.prototype.has_volumes">Gio.Drive.prototype.has_volumes</a></li>
-<li class="links "><a href="Gio.Drive.is_media_check_automatic.html" title="Gio.Drive.prototype.is_media_check_automatic">Gio.Drive.prototype.is_media_check_automatic</a></li>
-<li class="links "><a href="Gio.Drive.is_media_removable.html" title="Gio.Drive.prototype.is_media_removable">Gio.Drive.prototype.is_media_removable</a></li>
-<li class="links "><a href="Gio.Drive.poll_for_media.html" title="Gio.Drive.prototype.poll_for_media">Gio.Drive.prototype.poll_for_media</a></li>
-<li class="links "><a href="Gio.Drive.poll_for_media_finish.html" title="Gio.Drive.prototype.poll_for_media_finish">Gio.Drive.prototype.poll_for_media_finish</a></li>
-<li class="links "><a href="Gio.Drive.start.html" title="Gio.Drive.prototype.start">Gio.Drive.prototype.start</a></li>
-<li class="links "><a href="Gio.Drive.start_finish.html" title="Gio.Drive.prototype.start_finish">Gio.Drive.prototype.start_finish</a></li>
-<li class="links "><a href="Gio.Drive.stop.html" title="Gio.Drive.prototype.stop">Gio.Drive.prototype.stop</a></li>
-<li class="links "><a href="Gio.Drive.stop_finish.html" title="Gio.Drive.prototype.stop_finish">Gio.Drive.prototype.stop_finish</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Signals</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.Drive-changed.html" title="Gio.Drive::changed">changed</a></li>
-<li class="links "><a href="Gio.Drive-disconnected.html" title="Gio.Drive::disconnected">disconnected</a></li>
-<li class="links "><a href="Gio.Drive-eject-button.html" title="Gio.Drive::eject-button">eject-button</a></li>
-<li class="links "><a href="Gio.Drive-stop-button.html" title="Gio.Drive::stop-button">stop-button</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Virtual functions</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.Drive-can_eject.html" title="Gio.Drive::can_eject">Gio.Drive::can_eject</a></li>
-<li class="links "><a href="Gio.Drive-can_poll_for_media.html" title="Gio.Drive::can_poll_for_media">Gio.Drive::can_poll_for_media</a></li>
-<li class="links "><a href="Gio.Drive-can_start.html" title="Gio.Drive::can_start">Gio.Drive::can_start</a></li>
-<li class="links "><a href="Gio.Drive-can_start_degraded.html" title="Gio.Drive::can_start_degraded">Gio.Drive::can_start_degraded</a></li>
-<li class="links "><a href="Gio.Drive-can_stop.html" title="Gio.Drive::can_stop">Gio.Drive::can_stop</a></li>
-<li class="links "><a href="Gio.Drive-eject.html" title="Gio.Drive::eject">Gio.Drive::eject</a></li>
-<li class="links "><a href="Gio.Drive-eject_button.html" title="Gio.Drive::eject_button">Gio.Drive::eject_button</a></li>
-<li class="links "><a href="Gio.Drive-eject_finish.html" title="Gio.Drive::eject_finish">Gio.Drive::eject_finish</a></li>
-<li class="links "><a href="Gio.Drive-eject_with_operation.html" title="Gio.Drive::eject_with_operation">Gio.Drive::eject_with_operation</a></li>
-<li class="links "><a href="Gio.Drive-eject_with_operation_finish.html" title="Gio.Drive::eject_with_operation_finish">Gio.Drive::eject_with_operation_finish</a></li>
-<li class="links "><a href="Gio.Drive-enumerate_identifiers.html" title="Gio.Drive::enumerate_identifiers">Gio.Drive::enumerate_identifiers</a></li>
-<li class="links "><a href="Gio.Drive-get_icon.html" title="Gio.Drive::get_icon">Gio.Drive::get_icon</a></li>
-<li class="links "><a href="Gio.Drive-get_identifier.html" title="Gio.Drive::get_identifier">Gio.Drive::get_identifier</a></li>
-<li class="links "><a href="Gio.Drive-get_name.html" title="Gio.Drive::get_name">Gio.Drive::get_name</a></li>
-<li class="links "><a href="Gio.Drive-get_sort_key.html" title="Gio.Drive::get_sort_key">Gio.Drive::get_sort_key</a></li>
-<li class="links "><a href="Gio.Drive-get_start_stop_type.html" title="Gio.Drive::get_start_stop_type">Gio.Drive::get_start_stop_type</a></li>
-<li class="links "><a href="Gio.Drive-get_symbolic_icon.html" title="Gio.Drive::get_symbolic_icon">Gio.Drive::get_symbolic_icon</a></li>
-<li class="links "><a href="Gio.Drive-get_volumes.html" title="Gio.Drive::get_volumes">Gio.Drive::get_volumes</a></li>
-<li class="links "><a href="Gio.Drive-has_media.html" title="Gio.Drive::has_media">Gio.Drive::has_media</a></li>
-<li class="links "><a href="Gio.Drive-has_volumes.html" title="Gio.Drive::has_volumes">Gio.Drive::has_volumes</a></li>
-<li class="links "><a href="Gio.Drive-is_media_check_automatic.html" title="Gio.Drive::is_media_check_automatic">Gio.Drive::is_media_check_automatic</a></li>
-<li class="links "><a href="Gio.Drive-is_media_removable.html" title="Gio.Drive::is_media_removable">Gio.Drive::is_media_removable</a></li>
-<li class="links "><a href="Gio.Drive-poll_for_media.html" title="Gio.Drive::poll_for_media">Gio.Drive::poll_for_media</a></li>
-<li class="links "><a href="Gio.Drive-poll_for_media_finish.html" title="Gio.Drive::poll_for_media_finish">Gio.Drive::poll_for_media_finish</a></li>
-<li class="links "><a href="Gio.Drive-start.html" title="Gio.Drive::start">Gio.Drive::start</a></li>
-<li class="links "><a href="Gio.Drive-start_finish.html" title="Gio.Drive::start_finish">Gio.Drive::start_finish</a></li>
-<li class="links "><a href="Gio.Drive-stop.html" title="Gio.Drive::stop">Gio.Drive::stop</a></li>
-<li class="links "><a href="Gio.Drive-stop_button.html" title="Gio.Drive::stop_button">Gio.Drive::stop_button</a></li>
-<li class="links "><a href="Gio.Drive-stop_finish.html" title="Gio.Drive::stop_finish">Gio.Drive::stop_finish</a></li>
-</ul></div>
 </div></div>
 </div>
 <div class="sect sect-links" role="navigation">

@@ -18,22 +18,6 @@
 
 let fileIOStream = new Gio.FileIOStream();
   </pre></div></div></div></div></div>
-<p class="p">GFileIOStream provides io streams that both read and write to the same
-file handle.</p>
-<p class="p">GFileIOStream implements <span class="link"><a href="Gio.Seekable.html" title="Gio.Seekable">Gio.Seekable</a></span>, which allows the io
-stream to jump to arbitrary positions in the file and to truncate
-the file, provided the filesystem of the file supports these
-operations.</p>
-<p class="p">To find the position of a file io stream, use
-<span class="link"><a href="Gio.Seekable.tell.html" title="Gio.Seekable.prototype.tell">Gio.Seekable.prototype.tell</a></span>.</p>
-<p class="p">To find out if a file io stream supports seeking, use <span class="link"><a href="Gio.Seekable.can_seek.html" title="Gio.Seekable.prototype.can_seek">Gio.Seekable.prototype.can_seek</a></span>.
-To position a file io stream, use <span class="link"><a href="Gio.Seekable.seek.html" title="Gio.Seekable.prototype.seek">Gio.Seekable.prototype.seek</a></span>.
-To find out if a file io stream supports truncating, use
-<span class="link"><a href="Gio.Seekable.can_truncate.html" title="Gio.Seekable.prototype.can_truncate">Gio.Seekable.prototype.can_truncate</a></span>. To truncate a file io
-stream, use <span class="link"><a href="Gio.Seekable.truncate.html" title="Gio.Seekable.prototype.truncate">Gio.Seekable.prototype.truncate</a></span>.</p>
-<p class="p">The default implementation of all the <span class="link"><a href="Gio.FileIOStream.html" title="Gio.FileIOStream">Gio.FileIOStream</a></span> operations
-and the implementation of <span class="link"><a href="Gio.Seekable.html" title="Gio.Seekable">Gio.Seekable</a></span> just call into the same operations
-on the output stream.</p>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
 <div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
@@ -51,29 +35,6 @@ on the output stream.</p>
       </div></li></ul>
 </li></ul>
 </li></ul></div></div></div></div></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.FileIOStream.get_etag.html" title="Gio.FileIOStream.prototype.get_etag">Gio.FileIOStream.prototype.get_etag</a></li>
-<li class="links "><a href="Gio.FileIOStream.query_info.html" title="Gio.FileIOStream.prototype.query_info">Gio.FileIOStream.prototype.query_info</a></li>
-<li class="links "><a href="Gio.FileIOStream.query_info_async.html" title="Gio.FileIOStream.prototype.query_info_async">Gio.FileIOStream.prototype.query_info_async</a></li>
-<li class="links "><a href="Gio.FileIOStream.query_info_finish.html" title="Gio.FileIOStream.prototype.query_info_finish">Gio.FileIOStream.prototype.query_info_finish</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Virtual functions</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.FileIOStream-can_seek.html" title="Gio.FileIOStream::can_seek">Gio.FileIOStream::can_seek</a></li>
-<li class="links "><a href="Gio.FileIOStream-can_truncate.html" title="Gio.FileIOStream::can_truncate">Gio.FileIOStream::can_truncate</a></li>
-<li class="links "><a href="Gio.FileIOStream-get_etag.html" title="Gio.FileIOStream::get_etag">Gio.FileIOStream::get_etag</a></li>
-<li class="links "><a href="Gio.FileIOStream-query_info.html" title="Gio.FileIOStream::query_info">Gio.FileIOStream::query_info</a></li>
-<li class="links "><a href="Gio.FileIOStream-query_info_async.html" title="Gio.FileIOStream::query_info_async">Gio.FileIOStream::query_info_async</a></li>
-<li class="links "><a href="Gio.FileIOStream-query_info_finish.html" title="Gio.FileIOStream::query_info_finish">Gio.FileIOStream::query_info_finish</a></li>
-<li class="links "><a href="Gio.FileIOStream-seek.html" title="Gio.FileIOStream::seek">Gio.FileIOStream::seek</a></li>
-<li class="links "><a href="Gio.FileIOStream-tell.html" title="Gio.FileIOStream::tell">Gio.FileIOStream::tell</a></li>
-<li class="links "><a href="Gio.FileIOStream-truncate_fn.html" title="Gio.FileIOStream::truncate_fn">Gio.FileIOStream::truncate_fn</a></li>
-</ul></div>
 </div></div>
 </div>
 <div class="sect sect-links" role="navigation">

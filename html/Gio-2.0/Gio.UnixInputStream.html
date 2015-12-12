@@ -16,18 +16,8 @@
 <div class="contents">
 <div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
 
-let unixInputStream = new Gio.UnixInputStream({
-    <span class="link"><a href="Gio.UnixInputStream-fd.html" title="Gio.UnixInputStream.fd">fd</a></span>: value,
-});
+let unixInputStream = new Gio.UnixInputStream();
   </pre></div></div></div></div></div>
-<p class="p"><span class="link"><a href="Gio.UnixInputStream.html" title="Gio.UnixInputStream">Gio.UnixInputStream</a></span> implements <span class="link"><a href="Gio.InputStream.html" title="Gio.InputStream">Gio.InputStream</a></span> for reading from a UNIX
-file descriptor, including asynchronous operations. (If the file
-descriptor refers to a socket or pipe, this will use poll() to do
-asynchronous I/O. If it refers to a regular file, it will fall back
-to doing asynchronous I/O in another thread.)</p>
-<p class="p">Note that `&lt;gio/gunixinputstream.h&gt;` belongs to the UNIX-specific GIO
-interfaces, thus you have to use the `gio-unix-2.0.pc` pkg-config
-file when using it.</p>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
 <div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
@@ -45,25 +35,6 @@ file when using it.</p>
       </div></li></ul>
 </li></ul>
 </li></ul></div></div></div></div></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
-<div class="region"><ul><li class="links "><a href="Gio.UnixInputStream.new.html" title="Gio.UnixInputStream.new">Gio.UnixInputStream.new</a></li></ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.UnixInputStream.get_close_fd.html" title="Gio.UnixInputStream.prototype.get_close_fd">Gio.UnixInputStream.prototype.get_close_fd</a></li>
-<li class="links "><a href="Gio.UnixInputStream.get_fd.html" title="Gio.UnixInputStream.prototype.get_fd">Gio.UnixInputStream.prototype.get_fd</a></li>
-<li class="links "><a href="Gio.UnixInputStream.set_close_fd.html" title="Gio.UnixInputStream.prototype.set_close_fd">Gio.UnixInputStream.prototype.set_close_fd</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Properties</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.UnixInputStream-close-fd.html" title="Gio.UnixInputStream.close_fd">close-fd</a></li>
-<li class="links "><a href="Gio.UnixInputStream-fd.html" title="Gio.UnixInputStream.fd">fd</a></li>
-</ul></div>
 </div></div>
 </div>
 <div class="sect sect-links" role="navigation">

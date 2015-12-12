@@ -13,46 +13,7 @@
 <div class="body">
 <div class="hgroup"><h1 class="title"><span class="title">GLib.SpawnFlags</span></h1></div>
 <div class="region">
-<div class="contents">
-<p class="p">Flags passed to <span class="link"><a href="GLib.spawn_sync.html" title="GLib.spawn_sync">GLib.spawn_sync</a></span>, <span class="link"><a href="GLib.spawn_async.html" title="GLib.spawn_async">GLib.spawn_async</a></span> and <span class="link"><a href="GLib.spawn_async_with_pipes.html" title="GLib.spawn_async_with_pipes">GLib.spawn_async_with_pipes</a></span>.</p>
-<div class="terms"><div class="inner"><div class="region"><dl class="terms">
-<dt class="terms"><span class="code">SpawnFlags.DEFAULT</span></dt>
-<dd class="terms"><p class="p">no flags, default behaviour</p></dd>
-<dt class="terms"><span class="code">SpawnFlags.LEAVE_DESCRIPTORS_OPEN</span></dt>
-<dd class="terms"><p class="p">the parent's open file descriptors will be
-  inherited by the child; otherwise all descriptors except stdin/stdout/stderr
-  will be closed before calling exec() in the child.</p></dd>
-<dt class="terms"><span class="code">SpawnFlags.DO_NOT_REAP_CHILD</span></dt>
-<dd class="terms"><p class="p">the child will not be automatically reaped; you
-  must use <span class="link"><a href="GLib.child_watch_add.html" title="GLib.child_watch_add">GLib.child_watch_add</a></span> yourself (or call waitpid()
-  or handle &lt;literal&gt;SIGCHLD&lt;/literal&gt; yourself), or the child will become a zombie.</p></dd>
-<dt class="terms"><span class="code">SpawnFlags.SEARCH_PATH</span></dt>
-<dd class="terms"><p class="p">&lt;literal&gt;argv[0]&lt;/literal&gt; need not be an absolute path,
-  it will be looked for in the user's &lt;envar&gt;PATH&lt;/envar&gt;.</p></dd>
-<dt class="terms"><span class="code">SpawnFlags.STDOUT_TO_DEV_NULL</span></dt>
-<dd class="terms"><p class="p">the child's standard output will be discarded,
-  instead of going to the same location as the parent's standard output.</p></dd>
-<dt class="terms"><span class="code">SpawnFlags.STDERR_TO_DEV_NULL</span></dt>
-<dd class="terms"><p class="p">the child's standard error will be discarded.</p></dd>
-<dt class="terms"><span class="code">SpawnFlags.CHILD_INHERITS_STDIN</span></dt>
-<dd class="terms"><p class="p">the child will inherit the parent's standard
-  input (by default, the child's standard input is attached to
-  &lt;filename&gt;/dev/null&lt;/filename&gt;).</p></dd>
-<dt class="terms"><span class="code">SpawnFlags.FILE_AND_ARGV_ZERO</span></dt>
-<dd class="terms"><p class="p">the first element of &lt;literal&gt;argv&lt;/literal&gt; is
-  the file to execute, while the remaining elements are the actual argument
-  vector to pass to the file. Normally <span class="link"><a href="GLib.spawn_async_with_pipes.html" title="GLib.spawn_async_with_pipes">GLib.spawn_async_with_pipes</a></span> uses
-  &lt;literal&gt;argv[0]&lt;/literal&gt; as the file to execute, and passes all of
-  &lt;literal&gt;argv&lt;/literal&gt; to the child.</p></dd>
-<dt class="terms"><span class="code">SpawnFlags.SEARCH_PATH_FROM_ENVP</span></dt>
-<dd class="terms"><p class="p">if &lt;literal&gt;argv[0]&lt;/literal&gt; is not an abolute path,
-  it will be looked for in the &lt;envar&gt;PATH&lt;/envar&gt; from the passed child
-  environment. Since: 2.34</p></dd>
-<dt class="terms"><span class="code">SpawnFlags.CLOEXEC_PIPES</span></dt>
-<dd class="terms"><p class="p">create all pipes with the O_CLOEXEC flag set.
-  Since: 2.40.</p></dd>
-</dl></div></div></div>
-</div>
+<div class="contents"></div>
 <div class="sect sect-links" role="navigation">
 <div class="hgroup"></div>
 <div class="contents"><div class="links guidelinks"><div class="inner">

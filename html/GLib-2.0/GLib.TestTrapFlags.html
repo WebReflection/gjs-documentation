@@ -13,26 +13,7 @@
 <div class="body">
 <div class="hgroup"><h1 class="title"><span class="title">GLib.TestTrapFlags</span></h1></div>
 <div class="region">
-<div class="contents">
-<p class="p">Test traps are guards around forked tests.
-These flags determine what traps to set.</p>
-<div class="terms"><div class="inner"><div class="region"><dl class="terms">
-<dt class="terms"><span class="code">TestTrapFlags.SILENCE_STDOUT</span></dt>
-<dd class="terms"><p class="p">Redirect stdout of the test child to
-    `/dev/null` so it cannot be observed on the console during test
-    runs. The actual output is still captured though to allow later
-    tests with g_test_trap_assert_stdout().</p></dd>
-<dt class="terms"><span class="code">TestTrapFlags.SILENCE_STDERR</span></dt>
-<dd class="terms"><p class="p">Redirect stderr of the test child to
-    `/dev/null` so it cannot be observed on the console during test
-    runs. The actual output is still captured though to allow later
-    tests with g_test_trap_assert_stderr().</p></dd>
-<dt class="terms"><span class="code">TestTrapFlags.INHERIT_STDIN</span></dt>
-<dd class="terms"><p class="p">If this flag is given, stdin of the
-    child process is shared with stdin of its parent process.
-    It is redirected to `/dev/null` otherwise.</p></dd>
-</dl></div></div></div>
-</div>
+<div class="contents"></div>
 <div class="sect sect-links" role="navigation">
 <div class="hgroup"></div>
 <div class="contents"><div class="links guidelinks"><div class="inner">

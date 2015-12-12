@@ -18,44 +18,13 @@
 
 let seekable = new Gio.Seekable();
   </pre></div></div></div></div></div>
-<p class="p"><span class="link"><a href="Gio.Seekable.html" title="Gio.Seekable">Gio.Seekable</a></span> is implemented by streams (implementations of
-<span class="link"><a href="Gio.InputStream.html" title="Gio.InputStream">Gio.InputStream</a></span> or <span class="link"><a href="Gio.OutputStream.html" title="Gio.OutputStream">Gio.OutputStream</a></span>) that support seeking.</p>
-<p class="p">Seekable streams largely fall into two categories: resizable and
-fixed-size.</p>
-<p class="p"><span class="link"><a href="Gio.Seekable.html" title="Gio.Seekable">Gio.Seekable</a></span> on fixed-sized streams is approximately the same as POSIX
-lseek() on a block device (for example: attmepting to seek past the
-end of the device is an error).  Fixed streams typically cannot be
-truncated.</p>
-<p class="p"><span class="link"><a href="Gio.Seekable.html" title="Gio.Seekable">Gio.Seekable</a></span> on resizable streams is approximately the same as POSIX
-lseek() on a normal file.  Seeking past the end and writing data will
-usually cause the stream to resize by introducing zero bytes.</p>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Prerequisites</span></h2></div>
 <div class="region"><div class="contents"><p class="p">Seekable requires GObject.Object</p></div></div>
 </div></div>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Known Implementations</span></h2></div>
-<div class="region"><div class="contents"><p class="p">Seekable is implemented by BufferedInputStream, BufferedOutputStream, DataInputStream, DataOutputStream, FileIOStream, FileInputStream, FileOutputStream, MemoryInputStream and MemoryOutputStream</p></div></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.Seekable.can_seek.html" title="Gio.Seekable.prototype.can_seek">Gio.Seekable.prototype.can_seek</a></li>
-<li class="links "><a href="Gio.Seekable.can_truncate.html" title="Gio.Seekable.prototype.can_truncate">Gio.Seekable.prototype.can_truncate</a></li>
-<li class="links "><a href="Gio.Seekable.seek.html" title="Gio.Seekable.prototype.seek">Gio.Seekable.prototype.seek</a></li>
-<li class="links "><a href="Gio.Seekable.tell.html" title="Gio.Seekable.prototype.tell">Gio.Seekable.prototype.tell</a></li>
-<li class="links "><a href="Gio.Seekable.truncate.html" title="Gio.Seekable.prototype.truncate">Gio.Seekable.prototype.truncate</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Virtual functions</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.Seekable-can_seek.html" title="Gio.Seekable::can_seek">Gio.Seekable::can_seek</a></li>
-<li class="links "><a href="Gio.Seekable-can_truncate.html" title="Gio.Seekable::can_truncate">Gio.Seekable::can_truncate</a></li>
-<li class="links "><a href="Gio.Seekable-seek.html" title="Gio.Seekable::seek">Gio.Seekable::seek</a></li>
-<li class="links "><a href="Gio.Seekable-tell.html" title="Gio.Seekable::tell">Gio.Seekable::tell</a></li>
-<li class="links "><a href="Gio.Seekable-truncate_fn.html" title="Gio.Seekable::truncate_fn">Gio.Seekable::truncate_fn</a></li>
-</ul></div>
+<div class="region"><div class="contents"><p class="p">None</p></div></div>
 </div></div>
 </div>
 <div class="sect sect-links" role="navigation">

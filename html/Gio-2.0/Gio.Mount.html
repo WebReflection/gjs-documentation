@@ -18,23 +18,6 @@
 
 let mount = new Gio.Mount();
   </pre></div></div></div></div></div>
-<p class="p">The <span class="link"><a href="Gio.Mount.html" title="Gio.Mount">Gio.Mount</a></span> interface represents user-visible mounts. Note, when
-porting from GnomeVFS, <span class="link"><a href="Gio.Mount.html" title="Gio.Mount">Gio.Mount</a></span> is the moral equivalent of #GnomeVFSVolume.</p>
-<p class="p"><span class="link"><a href="Gio.Mount.html" title="Gio.Mount">Gio.Mount</a></span> is a "mounted" filesystem that you can access. Mounted is in
-quotes because it's not the same as a unix mount, it might be a gvfs
-mount, but you can still access the files on it if you use GIO. Might or
-might not be related to a volume object.</p>
-<p class="p">Unmounting a <span class="link"><a href="Gio.Mount.html" title="Gio.Mount">Gio.Mount</a></span> instance is an asynchronous operation. For
-more information about asynchronous operations, see <span class="link"><a href="Gio.AsyncResult.html" title="Gio.AsyncResult">Gio.AsyncResult</a></span>
-and <span class="link"><a href="Gio.Task.html" title="Gio.Task">Gio.Task</a></span>. To unmount a <span class="link"><a href="Gio.Mount.html" title="Gio.Mount">Gio.Mount</a></span> instance, first call
-<span class="link"><a href="Gio.Mount.unmount_with_operation.html" title="Gio.Mount.prototype.unmount_with_operation">Gio.Mount.prototype.unmount_with_operation</a></span> with (at least) the <span class="link"><a href="Gio.Mount.html" title="Gio.Mount">Gio.Mount</a></span> instance and a
-<span class="link"><a href="Gio.AsyncReadyCallback.html" title="Gio.AsyncReadyCallback">Gio.AsyncReadyCallback</a></span>.  The callback will be fired when the
-operation has resolved (either with success or failure), and a
-#GAsyncReady structure will be passed to the callback.  That
-callback should then call <span class="link"><a href="Gio.Mount.unmount_with_operation_finish.html" title="Gio.Mount.prototype.unmount_with_operation_finish">Gio.Mount.prototype.unmount_with_operation_finish</a></span> with the <span class="link"><a href="Gio.Mount.html" title="Gio.Mount">Gio.Mount</a></span>
-and the #GAsyncReady data to see if the operation was completed
-successfully.  If an @error is present when <span class="link"><a href="Gio.Mount.unmount_with_operation_finish.html" title="Gio.Mount.prototype.unmount_with_operation_finish">Gio.Mount.prototype.unmount_with_operation_finish</a></span>
-is called, then it will be filled with any error information.</p>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Prerequisites</span></h2></div>
 <div class="region"><div class="contents"><p class="p">Mount requires GObject.Object</p></div></div>
@@ -42,76 +25,6 @@ is called, then it will be filled with any error information.</p>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Known Implementations</span></h2></div>
 <div class="region"><div class="contents"><p class="p">None</p></div></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.Mount.can_eject.html" title="Gio.Mount.prototype.can_eject">Gio.Mount.prototype.can_eject</a></li>
-<li class="links "><a href="Gio.Mount.can_unmount.html" title="Gio.Mount.prototype.can_unmount">Gio.Mount.prototype.can_unmount</a></li>
-<li class="links "><a href="Gio.Mount.eject.html" title="Gio.Mount.prototype.eject">Gio.Mount.prototype.eject</a></li>
-<li class="links "><a href="Gio.Mount.eject_finish.html" title="Gio.Mount.prototype.eject_finish">Gio.Mount.prototype.eject_finish</a></li>
-<li class="links "><a href="Gio.Mount.eject_with_operation.html" title="Gio.Mount.prototype.eject_with_operation">Gio.Mount.prototype.eject_with_operation</a></li>
-<li class="links "><a href="Gio.Mount.eject_with_operation_finish.html" title="Gio.Mount.prototype.eject_with_operation_finish">Gio.Mount.prototype.eject_with_operation_finish</a></li>
-<li class="links "><a href="Gio.Mount.get_default_location.html" title="Gio.Mount.prototype.get_default_location">Gio.Mount.prototype.get_default_location</a></li>
-<li class="links "><a href="Gio.Mount.get_drive.html" title="Gio.Mount.prototype.get_drive">Gio.Mount.prototype.get_drive</a></li>
-<li class="links "><a href="Gio.Mount.get_icon.html" title="Gio.Mount.prototype.get_icon">Gio.Mount.prototype.get_icon</a></li>
-<li class="links "><a href="Gio.Mount.get_name.html" title="Gio.Mount.prototype.get_name">Gio.Mount.prototype.get_name</a></li>
-<li class="links "><a href="Gio.Mount.get_root.html" title="Gio.Mount.prototype.get_root">Gio.Mount.prototype.get_root</a></li>
-<li class="links "><a href="Gio.Mount.get_sort_key.html" title="Gio.Mount.prototype.get_sort_key">Gio.Mount.prototype.get_sort_key</a></li>
-<li class="links "><a href="Gio.Mount.get_symbolic_icon.html" title="Gio.Mount.prototype.get_symbolic_icon">Gio.Mount.prototype.get_symbolic_icon</a></li>
-<li class="links "><a href="Gio.Mount.get_uuid.html" title="Gio.Mount.prototype.get_uuid">Gio.Mount.prototype.get_uuid</a></li>
-<li class="links "><a href="Gio.Mount.get_volume.html" title="Gio.Mount.prototype.get_volume">Gio.Mount.prototype.get_volume</a></li>
-<li class="links "><a href="Gio.Mount.guess_content_type.html" title="Gio.Mount.prototype.guess_content_type">Gio.Mount.prototype.guess_content_type</a></li>
-<li class="links "><a href="Gio.Mount.guess_content_type_finish.html" title="Gio.Mount.prototype.guess_content_type_finish">Gio.Mount.prototype.guess_content_type_finish</a></li>
-<li class="links "><a href="Gio.Mount.guess_content_type_sync.html" title="Gio.Mount.prototype.guess_content_type_sync">Gio.Mount.prototype.guess_content_type_sync</a></li>
-<li class="links "><a href="Gio.Mount.is_shadowed.html" title="Gio.Mount.prototype.is_shadowed">Gio.Mount.prototype.is_shadowed</a></li>
-<li class="links "><a href="Gio.Mount.remount.html" title="Gio.Mount.prototype.remount">Gio.Mount.prototype.remount</a></li>
-<li class="links "><a href="Gio.Mount.remount_finish.html" title="Gio.Mount.prototype.remount_finish">Gio.Mount.prototype.remount_finish</a></li>
-<li class="links "><a href="Gio.Mount.shadow.html" title="Gio.Mount.prototype.shadow">Gio.Mount.prototype.shadow</a></li>
-<li class="links "><a href="Gio.Mount.unmount.html" title="Gio.Mount.prototype.unmount">Gio.Mount.prototype.unmount</a></li>
-<li class="links "><a href="Gio.Mount.unmount_finish.html" title="Gio.Mount.prototype.unmount_finish">Gio.Mount.prototype.unmount_finish</a></li>
-<li class="links "><a href="Gio.Mount.unmount_with_operation.html" title="Gio.Mount.prototype.unmount_with_operation">Gio.Mount.prototype.unmount_with_operation</a></li>
-<li class="links "><a href="Gio.Mount.unmount_with_operation_finish.html" title="Gio.Mount.prototype.unmount_with_operation_finish">Gio.Mount.prototype.unmount_with_operation_finish</a></li>
-<li class="links "><a href="Gio.Mount.unshadow.html" title="Gio.Mount.prototype.unshadow">Gio.Mount.prototype.unshadow</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Signals</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.Mount-changed.html" title="Gio.Mount::changed">changed</a></li>
-<li class="links "><a href="Gio.Mount-pre-unmount.html" title="Gio.Mount::pre-unmount">pre-unmount</a></li>
-<li class="links "><a href="Gio.Mount-unmounted.html" title="Gio.Mount::unmounted">unmounted</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Virtual functions</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.Mount-can_eject.html" title="Gio.Mount::can_eject">Gio.Mount::can_eject</a></li>
-<li class="links "><a href="Gio.Mount-can_unmount.html" title="Gio.Mount::can_unmount">Gio.Mount::can_unmount</a></li>
-<li class="links "><a href="Gio.Mount-eject.html" title="Gio.Mount::eject">Gio.Mount::eject</a></li>
-<li class="links "><a href="Gio.Mount-eject_finish.html" title="Gio.Mount::eject_finish">Gio.Mount::eject_finish</a></li>
-<li class="links "><a href="Gio.Mount-eject_with_operation.html" title="Gio.Mount::eject_with_operation">Gio.Mount::eject_with_operation</a></li>
-<li class="links "><a href="Gio.Mount-eject_with_operation_finish.html" title="Gio.Mount::eject_with_operation_finish">Gio.Mount::eject_with_operation_finish</a></li>
-<li class="links "><a href="Gio.Mount-get_default_location.html" title="Gio.Mount::get_default_location">Gio.Mount::get_default_location</a></li>
-<li class="links "><a href="Gio.Mount-get_drive.html" title="Gio.Mount::get_drive">Gio.Mount::get_drive</a></li>
-<li class="links "><a href="Gio.Mount-get_icon.html" title="Gio.Mount::get_icon">Gio.Mount::get_icon</a></li>
-<li class="links "><a href="Gio.Mount-get_name.html" title="Gio.Mount::get_name">Gio.Mount::get_name</a></li>
-<li class="links "><a href="Gio.Mount-get_root.html" title="Gio.Mount::get_root">Gio.Mount::get_root</a></li>
-<li class="links "><a href="Gio.Mount-get_sort_key.html" title="Gio.Mount::get_sort_key">Gio.Mount::get_sort_key</a></li>
-<li class="links "><a href="Gio.Mount-get_symbolic_icon.html" title="Gio.Mount::get_symbolic_icon">Gio.Mount::get_symbolic_icon</a></li>
-<li class="links "><a href="Gio.Mount-get_uuid.html" title="Gio.Mount::get_uuid">Gio.Mount::get_uuid</a></li>
-<li class="links "><a href="Gio.Mount-get_volume.html" title="Gio.Mount::get_volume">Gio.Mount::get_volume</a></li>
-<li class="links "><a href="Gio.Mount-guess_content_type.html" title="Gio.Mount::guess_content_type">Gio.Mount::guess_content_type</a></li>
-<li class="links "><a href="Gio.Mount-guess_content_type_finish.html" title="Gio.Mount::guess_content_type_finish">Gio.Mount::guess_content_type_finish</a></li>
-<li class="links "><a href="Gio.Mount-guess_content_type_sync.html" title="Gio.Mount::guess_content_type_sync">Gio.Mount::guess_content_type_sync</a></li>
-<li class="links "><a href="Gio.Mount-pre_unmount.html" title="Gio.Mount::pre_unmount">Gio.Mount::pre_unmount</a></li>
-<li class="links "><a href="Gio.Mount-remount.html" title="Gio.Mount::remount">Gio.Mount::remount</a></li>
-<li class="links "><a href="Gio.Mount-remount_finish.html" title="Gio.Mount::remount_finish">Gio.Mount::remount_finish</a></li>
-<li class="links "><a href="Gio.Mount-unmount.html" title="Gio.Mount::unmount">Gio.Mount::unmount</a></li>
-<li class="links "><a href="Gio.Mount-unmount_finish.html" title="Gio.Mount::unmount_finish">Gio.Mount::unmount_finish</a></li>
-<li class="links "><a href="Gio.Mount-unmount_with_operation.html" title="Gio.Mount::unmount_with_operation">Gio.Mount::unmount_with_operation</a></li>
-<li class="links "><a href="Gio.Mount-unmount_with_operation_finish.html" title="Gio.Mount::unmount_with_operation_finish">Gio.Mount::unmount_with_operation_finish</a></li>
-</ul></div>
 </div></div>
 </div>
 <div class="sect sect-links" role="navigation">

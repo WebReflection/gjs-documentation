@@ -16,16 +16,8 @@
 <div class="contents">
 <div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
 
-let simpleProxyResolver = new Gio.SimpleProxyResolver({
-});
+let simpleProxyResolver = new Gio.SimpleProxyResolver();
   </pre></div></div></div></div></div>
-<p class="p"><span class="link"><a href="Gio.SimpleProxyResolver.html" title="Gio.SimpleProxyResolver">Gio.SimpleProxyResolver</a></span> is a simple <span class="link"><a href="Gio.ProxyResolver.html" title="Gio.ProxyResolver">Gio.ProxyResolver</a></span> implementation
-that handles a single default proxy, multiple URI-scheme-specific
-proxies, and a list of hosts that proxies should not be used for.</p>
-<p class="p"><span class="link"><a href="Gio.SimpleProxyResolver.html" title="Gio.SimpleProxyResolver">Gio.SimpleProxyResolver</a></span> is never the default proxy resolver, but it
-can be used as the base class for another proxy resolver
-implementation, or it can be created and used manually, such as
-with <span class="link"><a href="Gio.SocketClient.set_proxy_resolver.html" title="Gio.SocketClient.prototype.set_proxy_resolver">Gio.SocketClient.prototype.set_proxy_resolver</a></span>.</p>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
 <div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
@@ -37,25 +29,6 @@ with <span class="link"><a href="Gio.SocketClient.set_proxy_resolver.html" title
         <span class="code">Gio.SimpleProxyResolver</span>
       </div></li></ul>
 </li></ul></div></div></div></div></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.SimpleProxyResolver.set_default_proxy.html" title="Gio.SimpleProxyResolver.prototype.set_default_proxy">Gio.SimpleProxyResolver.prototype.set_default_proxy</a></li>
-<li class="links "><a href="Gio.SimpleProxyResolver.set_ignore_hosts.html" title="Gio.SimpleProxyResolver.prototype.set_ignore_hosts">Gio.SimpleProxyResolver.prototype.set_ignore_hosts</a></li>
-<li class="links "><a href="Gio.SimpleProxyResolver.set_uri_proxy.html" title="Gio.SimpleProxyResolver.prototype.set_uri_proxy">Gio.SimpleProxyResolver.prototype.set_uri_proxy</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Static Functions</span></h2></div>
-<div class="region"><ul><li class="links "><a href="Gio.SimpleProxyResolver.new.html" title="Gio.SimpleProxyResolver.new">Gio.SimpleProxyResolver.new</a></li></ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Properties</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.SimpleProxyResolver-default-proxy.html" title="Gio.SimpleProxyResolver.default_proxy">default-proxy</a></li>
-<li class="links "><a href="Gio.SimpleProxyResolver-ignore-hosts.html" title="Gio.SimpleProxyResolver.ignore_hosts">ignore-hosts</a></li>
-</ul></div>
 </div></div>
 </div>
 <div class="sect sect-links" role="navigation">

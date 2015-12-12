@@ -13,48 +13,7 @@
 <div class="body">
 <div class="hgroup"><h1 class="title"><span class="title">Gio.ApplicationFlags</span></h1></div>
 <div class="region">
-<div class="contents">
-<p class="p">Flags used to define the behaviour of a <span class="link"><a href="Gio.Application.html" title="Gio.Application">Gio.Application</a></span>.</p>
-<p class="p">Since 2.28</p>
-<div class="terms"><div class="inner"><div class="region"><dl class="terms">
-<dt class="terms"><span class="code">ApplicationFlags.FLAGS_NONE</span></dt>
-<dd class="terms"><p class="p">Default</p></dd>
-<dt class="terms"><span class="code">ApplicationFlags.IS_SERVICE</span></dt>
-<dd class="terms"><p class="p">Run as a service. In this mode, registration
-     fails if the service is already running, and the application
-     will initially wait up to 10 seconds for an initial activation
-     message to arrive.</p></dd>
-<dt class="terms"><span class="code">ApplicationFlags.IS_LAUNCHER</span></dt>
-<dd class="terms"><p class="p">Don't try to become the primary instance.</p></dd>
-<dt class="terms"><span class="code">ApplicationFlags.HANDLES_OPEN</span></dt>
-<dd class="terms"><p class="p">This application handles opening files (in
-    the primary instance). Note that this flag only affects the default
-    implementation of local_command_line(), and has no effect if
-    <span class="link"><a href="Gio.ApplicationFlags.html" title="Gio.ApplicationFlags">Gio.ApplicationFlags</a></span>.handles_command_line is given.
-    See <span class="link"><a href="Gio.Application.run.html" title="Gio.Application.prototype.run">Gio.Application.prototype.run</a></span> for details.</p></dd>
-<dt class="terms"><span class="code">ApplicationFlags.HANDLES_COMMAND_LINE</span></dt>
-<dd class="terms"><p class="p">This application handles command line
-    arguments (in the primary instance). Note that this flag only affect
-    the default implementation of local_command_line().
-    See <span class="link"><a href="Gio.Application.run.html" title="Gio.Application.prototype.run">Gio.Application.prototype.run</a></span> for details.</p></dd>
-<dt class="terms"><span class="code">ApplicationFlags.SEND_ENVIRONMENT</span></dt>
-<dd class="terms"><p class="p">Send the environment of the
-    launching process to the primary instance. Set this flag if your
-    application is expected to behave differently depending on certain
-    environment variables. For instance, an editor might be expected
-    to use the &lt;envar&gt;GIT_COMMITTER_NAME&lt;/envar&gt; environment variable
-    when editing a git commit message. The environment is available
-    to the <span class="link"><a href="Gio.Application-command-line.html" title="Gio.Application::command-line">Gio.Application::command-line</a></span> signal handler, via
-    <span class="link"><a href="Gio.ApplicationCommandLine.getenv.html" title="Gio.ApplicationCommandLine.prototype.getenv">Gio.ApplicationCommandLine.prototype.getenv</a></span>.</p></dd>
-<dt class="terms"><span class="code">ApplicationFlags.NON_UNIQUE</span></dt>
-<dd class="terms"><p class="p">Make no attempts to do any of the typical
-    single-instance application negotiation, even if the application
-    ID is given.  The application neither attempts to become the
-    owner of the application ID nor does it check if an existing
-    owner already exists.  Everything occurs in the local process.
-    Since: 2.30.</p></dd>
-</dl></div></div></div>
-</div>
+<div class="contents"></div>
 <div class="sect sect-links" role="navigation">
 <div class="hgroup"></div>
 <div class="contents"><div class="links guidelinks"><div class="inner">

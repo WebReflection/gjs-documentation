@@ -18,22 +18,6 @@
 
 let socketControlMessage = new Gio.SocketControlMessage();
   </pre></div></div></div></div></div>
-<p class="p">A <span class="link"><a href="Gio.SocketControlMessage.html" title="Gio.SocketControlMessage">Gio.SocketControlMessage</a></span> is a special-purpose utility message that
-can be sent to or received from a <span class="link"><a href="Gio.Socket.html" title="Gio.Socket">Gio.Socket</a></span>. These types of
-messages are often called "ancillary data".</p>
-<p class="p">The message can represent some sort of special instruction to or
-information from the socket or can represent a special kind of
-transfer to the peer (for example, sending a file descriptor over
-a UNIX socket).</p>
-<p class="p">These messages are sent with <span class="link"><a href="Gio.Socket.send_message.html" title="Gio.Socket.prototype.send_message">Gio.Socket.prototype.send_message</a></span> and received
-with <span class="link"><a href="Gio.Socket.receive_message.html" title="Gio.Socket.prototype.receive_message">Gio.Socket.prototype.receive_message</a></span>.</p>
-<p class="p">To extend the set of control message that can be sent, subclass this
-class and override the get_size, get_level, get_type and serialize
-methods.</p>
-<p class="p">To extend the set of control messages that can be received, subclass
-this class and implement the deserialize method. Also, make sure your
-class is registered with the GType typesystem before calling
-<span class="link"><a href="Gio.Socket.receive_message.html" title="Gio.Socket.prototype.receive_message">Gio.Socket.prototype.receive_message</a></span> to read such a message.</p>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
 <div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
@@ -45,28 +29,6 @@ class is registered with the GType typesystem before calling
         <span class="code">Gio.SocketControlMessage</span>
       </div></li></ul>
 </li></ul></div></div></div></div></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.SocketControlMessage.get_level.html" title="Gio.SocketControlMessage.prototype.get_level">Gio.SocketControlMessage.prototype.get_level</a></li>
-<li class="links "><a href="Gio.SocketControlMessage.get_msg_type.html" title="Gio.SocketControlMessage.prototype.get_msg_type">Gio.SocketControlMessage.prototype.get_msg_type</a></li>
-<li class="links "><a href="Gio.SocketControlMessage.get_size.html" title="Gio.SocketControlMessage.prototype.get_size">Gio.SocketControlMessage.prototype.get_size</a></li>
-<li class="links "><a href="Gio.SocketControlMessage.serialize.html" title="Gio.SocketControlMessage.prototype.serialize">Gio.SocketControlMessage.prototype.serialize</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Static Functions</span></h2></div>
-<div class="region"><ul><li class="links "><a href="Gio.SocketControlMessage.deserialize.html" title="Gio.SocketControlMessage.deserialize">Gio.SocketControlMessage.deserialize</a></li></ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Virtual functions</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.SocketControlMessage-get_level.html" title="Gio.SocketControlMessage::get_level">Gio.SocketControlMessage::get_level</a></li>
-<li class="links "><a href="Gio.SocketControlMessage-get_size.html" title="Gio.SocketControlMessage::get_size">Gio.SocketControlMessage::get_size</a></li>
-<li class="links "><a href="Gio.SocketControlMessage-get_type.html" title="Gio.SocketControlMessage::get_type">Gio.SocketControlMessage::get_type</a></li>
-<li class="links "><a href="Gio.SocketControlMessage-serialize.html" title="Gio.SocketControlMessage::serialize">Gio.SocketControlMessage::serialize</a></li>
-</ul></div>
 </div></div>
 </div>
 <div class="sect sect-links" role="navigation">

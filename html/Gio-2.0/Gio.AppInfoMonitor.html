@@ -18,22 +18,6 @@
 
 let appInfoMonitor = new Gio.AppInfoMonitor();
   </pre></div></div></div></div></div>
-<p class="p"><span class="link"><a href="Gio.AppInfoMonitor.html" title="Gio.AppInfoMonitor">Gio.AppInfoMonitor</a></span> is a very simple object used for monitoring the app
-info database for changes (ie: newly installed or removed
-applications).</p>
-<p class="p">Call <span class="link"><a href="Gio.AppInfoMonitor.get.html" title="Gio.AppInfoMonitor.get">Gio.AppInfoMonitor.get</a></span> to get a <span class="link"><a href="Gio.AppInfoMonitor.html" title="Gio.AppInfoMonitor">Gio.AppInfoMonitor</a></span> and connect
-to the "changed" signal.</p>
-<p class="p">In the usual case, applications should try to make note of the change
-(doing things like invalidating caches) but not act on it.  In
-particular, applications should avoid making calls to <span class="link"><a href="Gio.AppInfo.html" title="Gio.AppInfo">Gio.AppInfo</a></span> APIs
-in response to the change signal, deferring these until the time that
-the data is actually required.  The exception to this case is when
-application information is actually being displayed on the screen
-(eg: during a search or when the list of all applications is shown).
-The reason for this is that changes to the list of installed
-applications often come in groups (like during system updates) and
-rescanning the list on every change is pointless and expensive.</p>
-<p class="p">Since 2.40</p>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
 <div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
@@ -45,14 +29,6 @@ rescanning the list on every change is pointless and expensive.</p>
         <span class="code">Gio.AppInfoMonitor</span>
       </div></li></ul>
 </li></ul></div></div></div></div></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Static Functions</span></h2></div>
-<div class="region"><ul><li class="links "><a href="Gio.AppInfoMonitor.get.html" title="Gio.AppInfoMonitor.get">Gio.AppInfoMonitor.get</a></li></ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Signals</span></h2></div>
-<div class="region"><ul><li class="links "><a href="Gio.AppInfoMonitor-changed.html" title="Gio.AppInfoMonitor::changed">changed</a></li></ul></div>
 </div></div>
 </div>
 <div class="sect sect-links" role="navigation">

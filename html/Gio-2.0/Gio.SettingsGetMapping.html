@@ -17,21 +17,13 @@
 <div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function onSettingsGetMapping(value: <span class="link"><a href="../GLib-2.0/GLib.Variant.html" title="../GLib-2.0/GLib.Variant.html">GLib.Variant</a></span>): [ok: Boolean, result: void] {
 }
   </pre></div></div></div></div></div>
-<p class="p">The type of the function that is used to convert from a value stored
-in a <span class="link"><a href="Gio.Settings.html" title="Gio.Settings">Gio.Settings</a></span> to a value that is useful to the application.</p>
-<p class="p">If the value is successfully mapped, the result should be stored at
-<span class="code">result</span> and <span class="code">true</span> returned.  If mapping fails (for example, if <span class="code">value</span>
-is not in the right format) then <span class="code">false</span> should be returned.</p>
-<p class="p">If <span class="code">value</span> is <span class="code">null</span> then it means that the mapping function is being
-given a "last chance" to successfully return a valid value.  <span class="code">true</span>
-must be returned in this case.</p>
 <div class="terms"><div class="inner"><div class="region"><dl class="terms">
 <dt class="terms"><span class="code">value</span></dt>
-<dd class="terms"><p class="p">the <span class="link"><a href="../GLib-2.0/GLib.Variant.html" title="../GLib-2.0/GLib.Variant.html">GLib.Variant</a></span> to map, or <span class="code">null</span></p></dd>
+<dd class="terms"></dd>
 <dt class="terms"><span class="code">ok</span></dt>
-<dd class="terms"><p class="p"><span class="code">true</span> if the conversion succeeded, <span class="code">false</span> in case of an error</p></dd>
+<dd class="terms"></dd>
 <dt class="terms"><span class="code">result</span></dt>
-<dd class="terms"><p class="p">the result of the mapping</p></dd>
+<dd class="terms"></dd>
 </dl></div></div></div>
 </div>
 <div class="sect sect-links" role="navigation">

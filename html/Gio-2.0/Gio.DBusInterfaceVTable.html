@@ -13,51 +13,10 @@
 <div class="body">
 <div class="hgroup"><h1 class="title"><span class="title">Gio.DBusInterfaceVTable</span></h1></div>
 <div class="region">
-<div class="contents">
-<div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
+<div class="contents"><div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
 
 let dBusInterfaceVTable = new Gio.DBusInterfaceVTable();
-  </pre></div></div></div></div></div>
-<p class="p">Virtual table for handling properties and method calls for a D-Bus
-interface.</p>
-<p class="p">Since 2.38, if you want to handle getting/setting D-Bus properties
-asynchronously, give <span class="code">null</span> as your get_property() or set_property()
-function.  The D-Bus call will be directed to your @method_call
-function, with the provided @interface_name set to
-&lt;literal&gt;"org.freedesktop.DBus.Properties"&lt;/literal&gt;.</p>
-<p class="p">The usual checks on the validity of the calls is performed.  For
-&lt;literal&gt;'Get'&lt;/literal&gt; calls, an error is automatically returned if
-the property does not exist or the permissions do not allow access.
-The same checks are performed for &lt;literal&gt;'Set'&lt;/literal&gt; calls, and
-the provided value is also checked for being the correct type.</p>
-<p class="p">For both &lt;literal&gt;'Get'&lt;/literal&gt; and &lt;literal&gt;'Set'&lt;/literal&gt; calls,
-the <span class="link"><a href="Gio.DBusMethodInvocation.html" title="Gio.DBusMethodInvocation">Gio.DBusMethodInvocation</a></span> passed to the method_call handler can be
-queried with <span class="link"><a href="Gio.DBusMethodInvocation.get_property_info.html" title="Gio.DBusMethodInvocation.prototype.get_property_info">Gio.DBusMethodInvocation.prototype.get_property_info</a></span> to get a
-pointer to the <span class="link"><a href="Gio.DBusPropertyInfo.html" title="Gio.DBusPropertyInfo">Gio.DBusPropertyInfo</a></span> of the property.</p>
-<p class="p">If you have readable properties specified in your interface info, you
-must ensure that you either provide a non-<span class="code">null</span> @get_property()
-function or provide implementations of both the
-&lt;literal&gt;'Get'&lt;/literal&gt; and &lt;literal&gt;'GetAll'&lt;/literal&gt; methods on
-the &lt;literal&gt;'org.freedesktop.DBus.Properties'&lt;/literal&gt; interface in
-your @method_call function.  Note that the required return type of
-the &lt;literal&gt;'Get'&lt;/literal&gt; call is &lt;literal&gt;(v)&lt;/literal&gt;, not the
-type of the property.  &lt;literal&gt;'GetAll'&lt;/literal&gt; expects a return
-value of type &lt;literal&gt;a{sv}&lt;/literal&gt;.</p>
-<p class="p">If you have writable properties specified in your interface info, you
-must ensure that you either provide a non-<span class="code">null</span> @set_property()
-function or provide an implementation of the &lt;literal&gt;'Set'&lt;/literal&gt;
-call.  If implementing the call, you must return the value of type
-%G_VARIANT_TYPE_UNIT.</p>
-<p class="p">Since 2.26</p>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Fields</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.DBusInterfaceVTable-get_property.html" title="Gio.DBusInterfaceVTable.get_property">get_property</a></li>
-<li class="links "><a href="Gio.DBusInterfaceVTable-method_call.html" title="Gio.DBusInterfaceVTable.method_call">method_call</a></li>
-<li class="links "><a href="Gio.DBusInterfaceVTable-set_property.html" title="Gio.DBusInterfaceVTable.set_property">set_property</a></li>
-</ul></div>
-</div></div>
-</div>
+  </pre></div></div></div></div></div></div>
 <div class="sect sect-links" role="navigation">
 <div class="hgroup"></div>
 <div class="contents"><div class="links guidelinks"><div class="inner">

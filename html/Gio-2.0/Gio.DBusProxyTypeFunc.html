@@ -17,24 +17,15 @@
 <div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function onDBusProxyTypeFunc(manager: <span class="link"><a href="Gio.DBusObjectManagerClient.html" title="Gio.DBusObjectManagerClient">Gio.DBusObjectManagerClient</a></span>, object_path: String, interface_name: String): GObject.Type {
 }
   </pre></div></div></div></div></div>
-<p class="p">Function signature for a function used to determine the <span class="link"><a href="../GLib-2.0/GLib.Type.html" title="../GLib-2.0/GLib.Type.html">GLib.Type</a></span> to
-use for an interface proxy (if <span class="code">interface_name</span> is not <span class="code">null</span>) or
-object proxy (if <span class="code">interface_name</span> is <span class="code">null</span>).</p>
-<p class="p">This function is called in the
-&lt;link linkend="g-main-context-push-thread-default"&gt;thread-default main loop&lt;/link&gt;
-that <span class="code">manager</span> was constructed in.</p>
-<p class="p">Since 2.30</p>
 <div class="terms"><div class="inner"><div class="region"><dl class="terms">
 <dt class="terms"><span class="code">manager</span></dt>
-<dd class="terms"><p class="p">A <span class="link"><a href="Gio.DBusObjectManagerClient.html" title="Gio.DBusObjectManagerClient">Gio.DBusObjectManagerClient</a></span>.</p></dd>
+<dd class="terms"></dd>
 <dt class="terms"><span class="code">object_path</span></dt>
-<dd class="terms"><p class="p">The object path of the remote object.</p></dd>
+<dd class="terms"></dd>
 <dt class="terms"><span class="code">interface_name</span></dt>
-<dd class="terms"><p class="p">The interface name of the remote object or <span class="code">null</span> if a <span class="link"><a href="Gio.DBusObjectProxy.html" title="Gio.DBusObjectProxy">Gio.DBusObjectProxy</a></span> <span class="link"><a href="../GLib-2.0/GLib.Type.html" title="../GLib-2.0/GLib.Type.html">GLib.Type</a></span> is requested.</p></dd>
+<dd class="terms"></dd>
 <dt class="terms"><span class="code">Returns</span></dt>
-<dd class="terms"><p class="p">A <span class="link"><a href="../GLib-2.0/GLib.Type.html" title="../GLib-2.0/GLib.Type.html">GLib.Type</a></span> to use for the remote object. The returned type
-  must be a <span class="link"><a href="Gio.DBusProxy.html" title="Gio.DBusProxy">Gio.DBusProxy</a></span>&lt;!-- --&gt;- or <span class="link"><a href="Gio.DBusObjectProxy.html" title="Gio.DBusObjectProxy">Gio.DBusObjectProxy</a></span>&lt;!-- --&gt;-derived
-  type.</p></dd>
+<dd class="terms"></dd>
 </dl></div></div></div>
 </div>
 <div class="sect sect-links" role="navigation">

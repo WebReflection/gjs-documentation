@@ -16,73 +16,15 @@
 <div class="contents">
 <div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
 
-let action = new Gio.Action({
-});
+let action = new Gio.Action();
   </pre></div></div></div></div></div>
-<p class="p"><span class="link"><a href="Gio.Action.html" title="Gio.Action">Gio.Action</a></span> represents a single named action.</p>
-<p class="p">The main interface to an action is that it can be activated with
-<span class="link"><a href="Gio.Action.activate.html" title="Gio.Action.prototype.activate">Gio.Action.prototype.activate</a></span>.  This results in the 'activate' signal being
-emitted.  An activation has a <span class="link"><a href="../GLib-2.0/GLib.Variant.html" title="../GLib-2.0/GLib.Variant.html">GLib.Variant</a></span> parameter (which may be
-<span class="code">null</span>).  The correct type for the parameter is determined by a static
-parameter type (which is given at construction time).</p>
-<p class="p">An action may optionally have a state, in which case the state may be
-set with <span class="link"><a href="Gio.Action.change_state.html" title="Gio.Action.prototype.change_state">Gio.Action.prototype.change_state</a></span>.  This call takes a <span class="link"><a href="../GLib-2.0/GLib.Variant.html" title="../GLib-2.0/GLib.Variant.html">GLib.Variant</a></span>.  The
-correct type for the state is determined by a static state type
-(which is given at construction time).</p>
-<p class="p">The state may have a hint associated with it, specifying its valid
-range.</p>
-<p class="p"><span class="link"><a href="Gio.Action.html" title="Gio.Action">Gio.Action</a></span> is merely the interface to the concept of an action, as
-described above.  Various implementations of actions exist, including
-<span class="link"><a href="Gio.SimpleAction.html" title="Gio.SimpleAction">Gio.SimpleAction</a></span>.</p>
-<p class="p">In all cases, the implementing class is responsible for storing the
-name of the action, the parameter type, the enabled state, the
-optional state type and the state and emitting the appropriate
-signals when these change.  The implementor responsible for filtering
-calls to <span class="link"><a href="Gio.Action.activate.html" title="Gio.Action.prototype.activate">Gio.Action.prototype.activate</a></span> and <span class="link"><a href="Gio.Action.change_state.html" title="Gio.Action.prototype.change_state">Gio.Action.prototype.change_state</a></span> for type
-safety and for the state being enabled.</p>
-<p class="p">Probably the only useful thing to do with a <span class="link"><a href="Gio.Action.html" title="Gio.Action">Gio.Action</a></span> is to put it
-inside of a <span class="link"><a href="Gio.SimpleActionGroup.html" title="Gio.SimpleActionGroup">Gio.SimpleActionGroup</a></span>.</p>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Prerequisites</span></h2></div>
 <div class="region"><div class="contents"><p class="p">Action requires GObject.Object</p></div></div>
 </div></div>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Known Implementations</span></h2></div>
-<div class="region"><div class="contents"><p class="p">Action is implemented by PropertyAction and SimpleAction</p></div></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.Action.activate.html" title="Gio.Action.prototype.activate">Gio.Action.prototype.activate</a></li>
-<li class="links "><a href="Gio.Action.change_state.html" title="Gio.Action.prototype.change_state">Gio.Action.prototype.change_state</a></li>
-<li class="links "><a href="Gio.Action.get_enabled.html" title="Gio.Action.prototype.get_enabled">Gio.Action.prototype.get_enabled</a></li>
-<li class="links "><a href="Gio.Action.get_name.html" title="Gio.Action.prototype.get_name">Gio.Action.prototype.get_name</a></li>
-<li class="links "><a href="Gio.Action.get_parameter_type.html" title="Gio.Action.prototype.get_parameter_type">Gio.Action.prototype.get_parameter_type</a></li>
-<li class="links "><a href="Gio.Action.get_state.html" title="Gio.Action.prototype.get_state">Gio.Action.prototype.get_state</a></li>
-<li class="links "><a href="Gio.Action.get_state_hint.html" title="Gio.Action.prototype.get_state_hint">Gio.Action.prototype.get_state_hint</a></li>
-<li class="links "><a href="Gio.Action.get_state_type.html" title="Gio.Action.prototype.get_state_type">Gio.Action.prototype.get_state_type</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Static Functions</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.Action.name_is_valid.html" title="Gio.Action.name_is_valid">Gio.Action.name_is_valid</a></li>
-<li class="links "><a href="Gio.Action.parse_detailed_name.html" title="Gio.Action.parse_detailed_name">Gio.Action.parse_detailed_name</a></li>
-<li class="links "><a href="Gio.Action.print_detailed_name.html" title="Gio.Action.print_detailed_name">Gio.Action.print_detailed_name</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Virtual functions</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.Action-activate.html" title="Gio.Action::activate">Gio.Action::activate</a></li>
-<li class="links "><a href="Gio.Action-change_state.html" title="Gio.Action::change_state">Gio.Action::change_state</a></li>
-<li class="links "><a href="Gio.Action-get_enabled.html" title="Gio.Action::get_enabled">Gio.Action::get_enabled</a></li>
-<li class="links "><a href="Gio.Action-get_name.html" title="Gio.Action::get_name">Gio.Action::get_name</a></li>
-<li class="links "><a href="Gio.Action-get_parameter_type.html" title="Gio.Action::get_parameter_type">Gio.Action::get_parameter_type</a></li>
-<li class="links "><a href="Gio.Action-get_state.html" title="Gio.Action::get_state">Gio.Action::get_state</a></li>
-<li class="links "><a href="Gio.Action-get_state_hint.html" title="Gio.Action::get_state_hint">Gio.Action::get_state_hint</a></li>
-<li class="links "><a href="Gio.Action-get_state_type.html" title="Gio.Action::get_state_type">Gio.Action::get_state_type</a></li>
-</ul></div>
+<div class="region"><div class="contents"><p class="p">None</p></div></div>
 </div></div>
 </div>
 <div class="sect sect-links" role="navigation">

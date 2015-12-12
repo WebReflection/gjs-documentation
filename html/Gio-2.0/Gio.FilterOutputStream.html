@@ -16,15 +16,8 @@
 <div class="contents">
 <div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
 
-let filterOutputStream = new Gio.FilterOutputStream({
-    <span class="link"><a href="Gio.FilterOutputStream-base-stream.html" title="Gio.FilterOutputStream.base_stream">base_stream</a></span>: value,
-    <span class="link"><a href="Gio.FilterOutputStream-close-base-stream.html" title="Gio.FilterOutputStream.close_base_stream">close_base_stream</a></span>: value,
-});
+let filterOutputStream = new Gio.FilterOutputStream();
   </pre></div></div></div></div></div>
-<p class="p">Base class for output stream implementations that perform some
-kind of filtering operation on a base stream. Typical examples
-of filtering operations are character set conversion, compression
-and byte order flipping.</p>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
 <div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
@@ -42,21 +35,6 @@ and byte order flipping.</p>
       </div></li></ul>
 </li></ul>
 </li></ul></div></div></div></div></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.FilterOutputStream.get_base_stream.html" title="Gio.FilterOutputStream.prototype.get_base_stream">Gio.FilterOutputStream.prototype.get_base_stream</a></li>
-<li class="links "><a href="Gio.FilterOutputStream.get_close_base_stream.html" title="Gio.FilterOutputStream.prototype.get_close_base_stream">Gio.FilterOutputStream.prototype.get_close_base_stream</a></li>
-<li class="links "><a href="Gio.FilterOutputStream.set_close_base_stream.html" title="Gio.FilterOutputStream.prototype.set_close_base_stream">Gio.FilterOutputStream.prototype.set_close_base_stream</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Properties</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.FilterOutputStream-base-stream.html" title="Gio.FilterOutputStream.base_stream">base-stream</a></li>
-<li class="links "><a href="Gio.FilterOutputStream-close-base-stream.html" title="Gio.FilterOutputStream.close_base_stream">close-base-stream</a></li>
-</ul></div>
 </div></div>
 </div>
 <div class="sect sect-links" role="navigation">

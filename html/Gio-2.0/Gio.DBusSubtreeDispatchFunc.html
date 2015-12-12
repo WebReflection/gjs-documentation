@@ -17,25 +17,21 @@
 <div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">function onDBusSubtreeDispatchFunc(connection: <span class="link"><a href="Gio.DBusConnection.html" title="Gio.DBusConnection">Gio.DBusConnection</a></span>, sender: String, object_path: String, interface_name: String, node: String, out_user_data: void): <span class="link"><a href="Gio.DBusInterfaceVTable.html" title="Gio.DBusInterfaceVTable">Gio.DBusInterfaceVTable</a></span> {
 }
   </pre></div></div></div></div></div>
-<p class="p">The type of the @dispatch function in <span class="link"><a href="Gio.DBusSubtreeVTable.html" title="Gio.DBusSubtreeVTable">Gio.DBusSubtreeVTable</a></span>.</p>
-<p class="p">Subtrees are flat.  <span class="code">node</span>, if non-<span class="code">null</span>, is always exactly one
-segment of the object path (ie: it never contains a slash).</p>
-<p class="p">Since 2.26</p>
 <div class="terms"><div class="inner"><div class="region"><dl class="terms">
 <dt class="terms"><span class="code">connection</span></dt>
-<dd class="terms"><p class="p">A <span class="link"><a href="Gio.DBusConnection.html" title="Gio.DBusConnection">Gio.DBusConnection</a></span>.</p></dd>
+<dd class="terms"></dd>
 <dt class="terms"><span class="code">sender</span></dt>
-<dd class="terms"><p class="p">The unique bus name of the remote caller.</p></dd>
+<dd class="terms"></dd>
 <dt class="terms"><span class="code">object_path</span></dt>
-<dd class="terms"><p class="p">The object path that was registered with <span class="link"><a href="Gio.DBusConnection.register_subtree.html" title="Gio.DBusConnection.prototype.register_subtree">Gio.DBusConnection.prototype.register_subtree</a></span>.</p></dd>
+<dd class="terms"></dd>
 <dt class="terms"><span class="code">interface_name</span></dt>
-<dd class="terms"><p class="p">The D-Bus interface name that the method call or property access is for.</p></dd>
+<dd class="terms"></dd>
 <dt class="terms"><span class="code">node</span></dt>
-<dd class="terms"><p class="p">A node that is a child of <span class="code">object_path</span> (relative to <span class="code">object_path</span>) or <span class="code">null</span> for the root of the subtree.</p></dd>
+<dd class="terms"></dd>
 <dt class="terms"><span class="code">out_user_data</span></dt>
-<dd class="terms"><p class="p">Return location for user data to pass to functions in the returned <span class="link"><a href="Gio.DBusInterfaceVTable.html" title="Gio.DBusInterfaceVTable">Gio.DBusInterfaceVTable</a></span> (never <span class="code">null</span>).</p></dd>
+<dd class="terms"></dd>
 <dt class="terms"><span class="code">Returns</span></dt>
-<dd class="terms"><p class="p">A <span class="link"><a href="Gio.DBusInterfaceVTable.html" title="Gio.DBusInterfaceVTable">Gio.DBusInterfaceVTable</a></span> or <span class="code">null</span> if you don't want to handle the methods.</p></dd>
+<dd class="terms"></dd>
 </dl></div></div></div>
 </div>
 <div class="sect sect-links" role="navigation">

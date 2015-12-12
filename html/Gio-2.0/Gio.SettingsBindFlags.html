@@ -13,30 +13,7 @@
 <div class="body">
 <div class="hgroup"><h1 class="title"><span class="title">Gio.SettingsBindFlags</span></h1></div>
 <div class="region">
-<div class="contents">
-<p class="p">Flags used when creating a binding. These flags determine in which
-direction the binding works. The default is to synchronize in both
-directions.</p>
-<div class="terms"><div class="inner"><div class="region"><dl class="terms">
-<dt class="terms"><span class="code">SettingsBindFlags.DEFAULT</span></dt>
-<dd class="terms"><p class="p">Equivalent to &lt;literal&gt;G_SETTINGS_BIND_GET|G_SETTINGS_BIND_SET&lt;/literal&gt;</p></dd>
-<dt class="terms"><span class="code">SettingsBindFlags.GET</span></dt>
-<dd class="terms"><p class="p">Update the <span class="link"><a href="../GObject-2.0/GObject.Object.html" title="../GObject-2.0/GObject.Object.html">GObject.Object</a></span> property when the setting changes.
-    It is an error to use this flag if the property is not writable.</p></dd>
-<dt class="terms"><span class="code">SettingsBindFlags.SET</span></dt>
-<dd class="terms"><p class="p">Update the setting when the <span class="link"><a href="../GObject-2.0/GObject.Object.html" title="../GObject-2.0/GObject.Object.html">GObject.Object</a></span> property changes.
-    It is an error to use this flag if the property is not readable.</p></dd>
-<dt class="terms"><span class="code">SettingsBindFlags.NO_SENSITIVITY</span></dt>
-<dd class="terms"><p class="p">Do not try to bind a "sensitivity" property to the writability of the setting</p></dd>
-<dt class="terms"><span class="code">SettingsBindFlags.GET_NO_CHANGES</span></dt>
-<dd class="terms"><p class="p">When set in addition to #G_SETTINGS_BIND_GET, set the <span class="link"><a href="../GObject-2.0/GObject.Object.html" title="../GObject-2.0/GObject.Object.html">GObject.Object</a></span> property
-    value initially from the setting, but do not listen for changes of the setting</p></dd>
-<dt class="terms"><span class="code">SettingsBindFlags.INVERT_BOOLEAN</span></dt>
-<dd class="terms"><p class="p">When passed to <span class="link"><a href="Gio.Settings.bind.html" title="Gio.Settings.prototype.bind">Gio.Settings.prototype.bind</a></span>, uses a pair of mapping functions that invert
-    the boolean value when mapping between the setting and the property.  The setting and property must both
-    be booleans.  You cannot pass this flag to <span class="link"><a href="Gio.Settings.bind_with_mapping.html" title="Gio.Settings.bind_with_mapping">Gio.Settings.bind_with_mapping</a></span>.</p></dd>
-</dl></div></div></div>
-</div>
+<div class="contents"></div>
 <div class="sect sect-links" role="navigation">
 <div class="hgroup"></div>
 <div class="contents"><div class="links guidelinks"><div class="inner">

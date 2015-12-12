@@ -16,53 +16,8 @@
 <div class="contents">
 <div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
 
-let socket = new Gio.Socket({
-    <span class="link"><a href="Gio.Socket-family.html" title="Gio.Socket.family">family</a></span>: value,
-    <span class="link"><a href="Gio.Socket-fd.html" title="Gio.Socket.fd">fd</a></span>: value,
-    <span class="link"><a href="Gio.Socket-protocol.html" title="Gio.Socket.protocol">protocol</a></span>: value,
-    <span class="link"><a href="Gio.Socket-type.html" title="Gio.Socket.type">type</a></span>: value,
-});
+let socket = new Gio.Socket();
   </pre></div></div></div></div></div>
-<p class="p">A <span class="link"><a href="Gio.Socket.html" title="Gio.Socket">Gio.Socket</a></span> is a low-level networking primitive. It is a more or less
-direct mapping of the BSD socket API in a portable GObject based API.
-It supports both the UNIX socket implementations and winsock2 on Windows.</p>
-<p class="p"><span class="link"><a href="Gio.Socket.html" title="Gio.Socket">Gio.Socket</a></span> is the platform independent base upon which the higher level
-network primitives are based. Applications are not typically meant to
-use it directly, but rather through classes like <span class="link"><a href="Gio.SocketClient.html" title="Gio.SocketClient">Gio.SocketClient</a></span>,
-<span class="link"><a href="Gio.SocketService.html" title="Gio.SocketService">Gio.SocketService</a></span> and <span class="link"><a href="Gio.SocketConnection.html" title="Gio.SocketConnection">Gio.SocketConnection</a></span>. However there may be cases where
-direct use of <span class="link"><a href="Gio.Socket.html" title="Gio.Socket">Gio.Socket</a></span> is useful.</p>
-<p class="p"><span class="link"><a href="Gio.Socket.html" title="Gio.Socket">Gio.Socket</a></span> implements the <span class="link"><a href="Gio.Initable.html" title="Gio.Initable">Gio.Initable</a></span> interface, so if it is manually constructed
-by e.g. <span class="link"><a href="../GObject-2.0/GObject.Object.new.html" title="../GObject-2.0/GObject.Object.new.html">GObject.Object.new</a></span> you must call <span class="link"><a href="Gio.Initable.init.html" title="Gio.Initable.prototype.init">Gio.Initable.prototype.init</a></span> and check the
-results before using the object. This is done automatically in
-<span class="link"><a href="Gio.Socket.new.html" title="Gio.Socket.new">Gio.Socket.new</a></span> and <span class="link"><a href="Gio.Socket.new_from_fd.html" title="Gio.Socket.new_from_fd">Gio.Socket.new_from_fd</a></span>, so these functions can return
-<span class="code">null</span>.</p>
-<p class="p">Sockets operate in two general modes, blocking or non-blocking. When
-in blocking mode all operations block until the requested operation
-is finished or there is an error. In non-blocking mode all calls that
-would block return immediately with a <span class="link"><a href="Gio.IOErrorEnum.html" title="Gio.IOErrorEnum">Gio.IOErrorEnum</a></span>.would_block error.
-To know when a call would successfully run you can call <span class="link"><a href="Gio.Socket.condition_check.html" title="Gio.Socket.prototype.condition_check">Gio.Socket.prototype.condition_check</a></span>,
-or <span class="link"><a href="Gio.Socket.condition_wait.html" title="Gio.Socket.prototype.condition_wait">Gio.Socket.prototype.condition_wait</a></span>. You can also use <span class="link"><a href="Gio.Socket.create_source.html" title="Gio.Socket.create_source">Gio.Socket.create_source</a></span> and
-attach it to a <span class="link"><a href="../GLib-2.0/GLib.MainContext.html" title="../GLib-2.0/GLib.MainContext.html">GLib.MainContext</a></span> to get callbacks when I/O is possible.
-Note that all sockets are always set to non blocking mode in the system, and
-blocking mode is emulated in GSocket.</p>
-<p class="p">When working in non-blocking mode applications should always be able to
-handle getting a <span class="link"><a href="Gio.IOErrorEnum.html" title="Gio.IOErrorEnum">Gio.IOErrorEnum</a></span>.would_block error even when some other
-function said that I/O was possible. This can easily happen in case
-of a race condition in the application, but it can also happen for other
-reasons. For instance, on Windows a socket is always seen as writable
-until a write returns <span class="link"><a href="Gio.IOErrorEnum.html" title="Gio.IOErrorEnum">Gio.IOErrorEnum</a></span>.would_block.</p>
-<p class="p">#GSockets can be either connection oriented or datagram based.
-For connection oriented types you must first establish a connection by
-either connecting to an address or accepting a connection from another
-address. For connectionless socket types the target/source address is
-specified or received in each I/O operation.</p>
-<p class="p">All socket file descriptors are set to be close-on-exec.</p>
-<p class="p">Note that creating a <span class="link"><a href="Gio.Socket.html" title="Gio.Socket">Gio.Socket</a></span> causes the signal %SIGPIPE to be
-ignored for the remainder of the program. If you are writing a
-command-line utility that uses <span class="link"><a href="Gio.Socket.html" title="Gio.Socket">Gio.Socket</a></span>, you may need to take into
-account the fact that your program will not automatically be killed
-if it tries to write to %stdout after it has been closed.</p>
-<p class="p">Since 2.22</p>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
 <div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
@@ -74,87 +29,6 @@ if it tries to write to %stdout after it has been closed.</p>
         <span class="code">Gio.Socket</span>
       </div></li></ul>
 </li></ul></div></div></div></div></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.Socket.new.html" title="Gio.Socket.new">Gio.Socket.new</a></li>
-<li class="links "><a href="Gio.Socket.new_from_fd.html" title="Gio.Socket.new_from_fd">Gio.Socket.new_from_fd</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.Socket.accept.html" title="Gio.Socket.prototype.accept">Gio.Socket.prototype.accept</a></li>
-<li class="links "><a href="Gio.Socket.bind.html" title="Gio.Socket.prototype.bind">Gio.Socket.prototype.bind</a></li>
-<li class="links "><a href="Gio.Socket.check_connect_result.html" title="Gio.Socket.prototype.check_connect_result">Gio.Socket.prototype.check_connect_result</a></li>
-<li class="links "><a href="Gio.Socket.close.html" title="Gio.Socket.prototype.close">Gio.Socket.prototype.close</a></li>
-<li class="links "><a href="Gio.Socket.condition_check.html" title="Gio.Socket.prototype.condition_check">Gio.Socket.prototype.condition_check</a></li>
-<li class="links "><a href="Gio.Socket.condition_timed_wait.html" title="Gio.Socket.prototype.condition_timed_wait">Gio.Socket.prototype.condition_timed_wait</a></li>
-<li class="links "><a href="Gio.Socket.condition_wait.html" title="Gio.Socket.prototype.condition_wait">Gio.Socket.prototype.condition_wait</a></li>
-<li class="links "><a href="Gio.Socket.connect.html" title="Gio.Socket.prototype.connect">Gio.Socket.prototype.connect</a></li>
-<li class="links "><a href="Gio.Socket.connection_factory_create_connection.html" title="Gio.Socket.prototype.connection_factory_create_connection">Gio.Socket.prototype.connection_factory_create_connection</a></li>
-<li class="links "><a href="Gio.Socket.get_available_bytes.html" title="Gio.Socket.prototype.get_available_bytes">Gio.Socket.prototype.get_available_bytes</a></li>
-<li class="links "><a href="Gio.Socket.get_blocking.html" title="Gio.Socket.prototype.get_blocking">Gio.Socket.prototype.get_blocking</a></li>
-<li class="links "><a href="Gio.Socket.get_broadcast.html" title="Gio.Socket.prototype.get_broadcast">Gio.Socket.prototype.get_broadcast</a></li>
-<li class="links "><a href="Gio.Socket.get_credentials.html" title="Gio.Socket.prototype.get_credentials">Gio.Socket.prototype.get_credentials</a></li>
-<li class="links "><a href="Gio.Socket.get_family.html" title="Gio.Socket.prototype.get_family">Gio.Socket.prototype.get_family</a></li>
-<li class="links "><a href="Gio.Socket.get_fd.html" title="Gio.Socket.prototype.get_fd">Gio.Socket.prototype.get_fd</a></li>
-<li class="links "><a href="Gio.Socket.get_keepalive.html" title="Gio.Socket.prototype.get_keepalive">Gio.Socket.prototype.get_keepalive</a></li>
-<li class="links "><a href="Gio.Socket.get_listen_backlog.html" title="Gio.Socket.prototype.get_listen_backlog">Gio.Socket.prototype.get_listen_backlog</a></li>
-<li class="links "><a href="Gio.Socket.get_local_address.html" title="Gio.Socket.prototype.get_local_address">Gio.Socket.prototype.get_local_address</a></li>
-<li class="links "><a href="Gio.Socket.get_multicast_loopback.html" title="Gio.Socket.prototype.get_multicast_loopback">Gio.Socket.prototype.get_multicast_loopback</a></li>
-<li class="links "><a href="Gio.Socket.get_multicast_ttl.html" title="Gio.Socket.prototype.get_multicast_ttl">Gio.Socket.prototype.get_multicast_ttl</a></li>
-<li class="links "><a href="Gio.Socket.get_option.html" title="Gio.Socket.prototype.get_option">Gio.Socket.prototype.get_option</a></li>
-<li class="links "><a href="Gio.Socket.get_protocol.html" title="Gio.Socket.prototype.get_protocol">Gio.Socket.prototype.get_protocol</a></li>
-<li class="links "><a href="Gio.Socket.get_remote_address.html" title="Gio.Socket.prototype.get_remote_address">Gio.Socket.prototype.get_remote_address</a></li>
-<li class="links "><a href="Gio.Socket.get_socket_type.html" title="Gio.Socket.prototype.get_socket_type">Gio.Socket.prototype.get_socket_type</a></li>
-<li class="links "><a href="Gio.Socket.get_timeout.html" title="Gio.Socket.prototype.get_timeout">Gio.Socket.prototype.get_timeout</a></li>
-<li class="links "><a href="Gio.Socket.get_ttl.html" title="Gio.Socket.prototype.get_ttl">Gio.Socket.prototype.get_ttl</a></li>
-<li class="links "><a href="Gio.Socket.is_closed.html" title="Gio.Socket.prototype.is_closed">Gio.Socket.prototype.is_closed</a></li>
-<li class="links "><a href="Gio.Socket.is_connected.html" title="Gio.Socket.prototype.is_connected">Gio.Socket.prototype.is_connected</a></li>
-<li class="links "><a href="Gio.Socket.join_multicast_group.html" title="Gio.Socket.prototype.join_multicast_group">Gio.Socket.prototype.join_multicast_group</a></li>
-<li class="links "><a href="Gio.Socket.leave_multicast_group.html" title="Gio.Socket.prototype.leave_multicast_group">Gio.Socket.prototype.leave_multicast_group</a></li>
-<li class="links "><a href="Gio.Socket.listen.html" title="Gio.Socket.prototype.listen">Gio.Socket.prototype.listen</a></li>
-<li class="links "><a href="Gio.Socket.receive.html" title="Gio.Socket.prototype.receive">Gio.Socket.prototype.receive</a></li>
-<li class="links "><a href="Gio.Socket.receive_from.html" title="Gio.Socket.prototype.receive_from">Gio.Socket.prototype.receive_from</a></li>
-<li class="links "><a href="Gio.Socket.receive_message.html" title="Gio.Socket.prototype.receive_message">Gio.Socket.prototype.receive_message</a></li>
-<li class="links "><a href="Gio.Socket.receive_with_blocking.html" title="Gio.Socket.prototype.receive_with_blocking">Gio.Socket.prototype.receive_with_blocking</a></li>
-<li class="links "><a href="Gio.Socket.send.html" title="Gio.Socket.prototype.send">Gio.Socket.prototype.send</a></li>
-<li class="links "><a href="Gio.Socket.send_message.html" title="Gio.Socket.prototype.send_message">Gio.Socket.prototype.send_message</a></li>
-<li class="links "><a href="Gio.Socket.send_to.html" title="Gio.Socket.prototype.send_to">Gio.Socket.prototype.send_to</a></li>
-<li class="links "><a href="Gio.Socket.send_with_blocking.html" title="Gio.Socket.prototype.send_with_blocking">Gio.Socket.prototype.send_with_blocking</a></li>
-<li class="links "><a href="Gio.Socket.set_blocking.html" title="Gio.Socket.prototype.set_blocking">Gio.Socket.prototype.set_blocking</a></li>
-<li class="links "><a href="Gio.Socket.set_broadcast.html" title="Gio.Socket.prototype.set_broadcast">Gio.Socket.prototype.set_broadcast</a></li>
-<li class="links "><a href="Gio.Socket.set_keepalive.html" title="Gio.Socket.prototype.set_keepalive">Gio.Socket.prototype.set_keepalive</a></li>
-<li class="links "><a href="Gio.Socket.set_listen_backlog.html" title="Gio.Socket.prototype.set_listen_backlog">Gio.Socket.prototype.set_listen_backlog</a></li>
-<li class="links "><a href="Gio.Socket.set_multicast_loopback.html" title="Gio.Socket.prototype.set_multicast_loopback">Gio.Socket.prototype.set_multicast_loopback</a></li>
-<li class="links "><a href="Gio.Socket.set_multicast_ttl.html" title="Gio.Socket.prototype.set_multicast_ttl">Gio.Socket.prototype.set_multicast_ttl</a></li>
-<li class="links "><a href="Gio.Socket.set_option.html" title="Gio.Socket.prototype.set_option">Gio.Socket.prototype.set_option</a></li>
-<li class="links "><a href="Gio.Socket.set_timeout.html" title="Gio.Socket.prototype.set_timeout">Gio.Socket.prototype.set_timeout</a></li>
-<li class="links "><a href="Gio.Socket.set_ttl.html" title="Gio.Socket.prototype.set_ttl">Gio.Socket.prototype.set_ttl</a></li>
-<li class="links "><a href="Gio.Socket.shutdown.html" title="Gio.Socket.prototype.shutdown">Gio.Socket.prototype.shutdown</a></li>
-<li class="links "><a href="Gio.Socket.speaks_ipv4.html" title="Gio.Socket.prototype.speaks_ipv4">Gio.Socket.prototype.speaks_ipv4</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Properties</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.Socket-blocking.html" title="Gio.Socket.blocking">blocking</a></li>
-<li class="links "><a href="Gio.Socket-broadcast.html" title="Gio.Socket.broadcast">broadcast</a></li>
-<li class="links "><a href="Gio.Socket-family.html" title="Gio.Socket.family">family</a></li>
-<li class="links "><a href="Gio.Socket-fd.html" title="Gio.Socket.fd">fd</a></li>
-<li class="links "><a href="Gio.Socket-keepalive.html" title="Gio.Socket.keepalive">keepalive</a></li>
-<li class="links "><a href="Gio.Socket-listen-backlog.html" title="Gio.Socket.listen_backlog">listen-backlog</a></li>
-<li class="links "><a href="Gio.Socket-local-address.html" title="Gio.Socket.local_address">local-address</a></li>
-<li class="links "><a href="Gio.Socket-multicast-loopback.html" title="Gio.Socket.multicast_loopback">multicast-loopback</a></li>
-<li class="links "><a href="Gio.Socket-multicast-ttl.html" title="Gio.Socket.multicast_ttl">multicast-ttl</a></li>
-<li class="links "><a href="Gio.Socket-protocol.html" title="Gio.Socket.protocol">protocol</a></li>
-<li class="links "><a href="Gio.Socket-remote-address.html" title="Gio.Socket.remote_address">remote-address</a></li>
-<li class="links "><a href="Gio.Socket-timeout.html" title="Gio.Socket.timeout">timeout</a></li>
-<li class="links "><a href="Gio.Socket-ttl.html" title="Gio.Socket.ttl">ttl</a></li>
-<li class="links "><a href="Gio.Socket-type.html" title="Gio.Socket.type">type</a></li>
-</ul></div>
 </div></div>
 </div>
 <div class="sect sect-links" role="navigation">

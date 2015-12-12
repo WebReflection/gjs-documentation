@@ -16,17 +16,8 @@
 <div class="contents">
 <div class="synopsis"><div class="inner"><div class="region"><div class="contents"><div class="code"><pre class="contents ">const Gio = imports.gi.Gio;
 
-let memoryOutputStream = new Gio.MemoryOutputStream({
-    <span class="link"><a href="Gio.MemoryOutputStream-data.html" title="Gio.MemoryOutputStream.data">data</a></span>: value,
-    <span class="link"><a href="Gio.MemoryOutputStream-destroy-function.html" title="Gio.MemoryOutputStream-destroy-function">destroy_function</a></span>: value,
-    <span class="link"><a href="Gio.MemoryOutputStream-realloc-function.html" title="Gio.MemoryOutputStream-realloc-function">realloc_function</a></span>: value,
-    <span class="link"><a href="Gio.MemoryOutputStream-size.html" title="Gio.MemoryOutputStream.size">size</a></span>: value,
-});
+let memoryOutputStream = new Gio.MemoryOutputStream();
   </pre></div></div></div></div></div>
-<p class="p"><span class="link"><a href="Gio.MemoryOutputStream.html" title="Gio.MemoryOutputStream">Gio.MemoryOutputStream</a></span> is a class for using arbitrary
-memory chunks as output for GIO streaming output operations.</p>
-<p class="p">As of GLib 2.34, <span class="link"><a href="Gio.MemoryOutputStream.html" title="Gio.MemoryOutputStream">Gio.MemoryOutputStream</a></span> trivially implements
-<span class="link"><a href="Gio.PollableOutputStream.html" title="Gio.PollableOutputStream">Gio.PollableOutputStream</a></span>: it always polls as ready.</p>
 <div class="synopsis"><div class="inner">
 <div class="title title-synopsis"><h2><span class="title">Hierarchy</span></h2></div>
 <div class="region"><div class="contents"><div class="tree"><div class="inner"><div class="region"><ul class="tree"><li class="tree">
@@ -44,28 +35,6 @@ memory chunks as output for GIO streaming output operations.</p>
       </div></li></ul>
 </li></ul>
 </li></ul></div></div></div></div></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Constructors</span></h2></div>
-<div class="region"><ul><li class="links "><a href="Gio.MemoryOutputStream.new_resizable.html" title="Gio.MemoryOutputStream.new_resizable">Gio.MemoryOutputStream.new_resizable</a></li></ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Methods</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.MemoryOutputStream.get_data.html" title="Gio.MemoryOutputStream.prototype.get_data">Gio.MemoryOutputStream.prototype.get_data</a></li>
-<li class="links "><a href="Gio.MemoryOutputStream.get_data_size.html" title="Gio.MemoryOutputStream.prototype.get_data_size">Gio.MemoryOutputStream.prototype.get_data_size</a></li>
-<li class="links "><a href="Gio.MemoryOutputStream.get_size.html" title="Gio.MemoryOutputStream.prototype.get_size">Gio.MemoryOutputStream.prototype.get_size</a></li>
-<li class="links "><a href="Gio.MemoryOutputStream.steal_as_bytes.html" title="Gio.MemoryOutputStream.prototype.steal_as_bytes">Gio.MemoryOutputStream.prototype.steal_as_bytes</a></li>
-<li class="links "><a href="Gio.MemoryOutputStream.steal_data.html" title="Gio.MemoryOutputStream.prototype.steal_data">Gio.MemoryOutputStream.prototype.steal_data</a></li>
-</ul></div>
-</div></div>
-<div class="links topiclinks"><div class="inner">
-<div class="title title-links"><h2><span class="title">Properties</span></h2></div>
-<div class="region"><ul>
-<li class="links "><a href="Gio.MemoryOutputStream-data.html" title="Gio.MemoryOutputStream.data">data</a></li>
-<li class="links "><a href="Gio.MemoryOutputStream-data-size.html" title="Gio.MemoryOutputStream.data_size">data-size</a></li>
-<li class="links "><a href="Gio.MemoryOutputStream-size.html" title="Gio.MemoryOutputStream.size">size</a></li>
-</ul></div>
 </div></div>
 </div>
 <div class="sect sect-links" role="navigation">
